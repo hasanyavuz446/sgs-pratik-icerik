@@ -1,0 +1,398 @@
+[
+  {
+    "id": "finmuh-stok-gen-0001",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Aralıklı (dönemsel) envanter yöntemi ile sürekli envanter yöntemi arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Sürekli envanterde satış anında satılan malın maliyeti kaydedilmez.",
+      "B": "Aralıklı envanterde her satışta '621 Satılan Ticari Malların Maliyeti' çalıştırılır.",
+      "C": "Sürekli envanterde her satışta hem satış hasılatı hem de satılan malın maliyeti kaydedilir.",
+      "D": "Aralıklı envanterde dönem içinde '153 Ticari Mallar' hesabı hiç kullanılmaz.",
+      "E": "İki yöntem de dönem sonunda aynı defter kayıt sayısını üretir."
+    },
+    "answer": "C",
+    "solution": "**Sürekli envanter** yönteminde her satışta iki kayıt yapılır: (1) hasılat kaydı, (2) satılan malın maliyeti kaydı (**621 (B) / 153 (A)**). **Aralıklı** yöntemde ise satılan malın maliyeti dönem sonunda toplu olarak hesaplanır (DBM + Alışlar − DSM).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Stok maliyetleme yöntemleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0002",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Aralıklı envanter yöntemini kullanan bir işletmenin dönem başı ticari mal mevcudu 40.000 ₺, dönem içi ticari mal alışları toplamı 260.000 ₺ ve fiilî sayımla belirlenen dönem sonu ticari mal mevcudu 55.000 ₺'dir.\n\nBuna göre dönemde satılan ticari malların maliyeti (SMM) kaç ₺'dir?",
+    "options": {
+      "A": "215.000",
+      "B": "245.000",
+      "C": "260.000",
+      "D": "300.000",
+      "E": "355.000"
+    },
+    "answer": "B",
+    "solution": "SMM = Dönem Başı Mevcut + Dönem Alışları − Dönem Sonu Mevcut = 40.000 + 260.000 − 55.000 = **245.000 ₺**. Aralıklı yöntemde bu tutar dönem sonunda **621 (B) / 153 (A)** kaydıyla maliyete alınır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - SMM hesaplaması (aralıklı envanter)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0003",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Sürekli envanter yöntemini uygulayan işletme, maliyeti 18.000 ₺ olan ticari malı 25.000 ₺ + %20 KDV bedelle veresiye satmıştır.\n\nBuna göre satışın maliyetine ilişkin yapılması gereken kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "621 Satılan Ticari Malların Maliyeti (B) 18.000 / 153 Ticari Mallar (A) 18.000",
+      "B": "153 Ticari Mallar (B) 18.000 / 621 Satılan Ticari Malların Maliyeti (A) 18.000",
+      "C": "621 Satılan Ticari Malların Maliyeti (B) 25.000 / 153 Ticari Mallar (A) 25.000",
+      "D": "600 Yurt İçi Satışlar (B) 25.000 / 153 Ticari Mallar (A) 25.000",
+      "E": "621 Satılan Ticari Malların Maliyeti (B) 30.000 / 153 Ticari Mallar (A) 30.000"
+    },
+    "answer": "A",
+    "solution": "Sürekli envanterde satış maliyeti, malın **maliyet bedeli** (18.000 ₺) üzerinden kaydedilir: **621 (B) 18.000 / 153 (A) 18.000**. Satış bedeli (25.000) ve KDV, ayrı hasılat kaydında (120/600/391) işlenir; maliyet kaydını etkilemez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 621 / 153 (sürekli envanter)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0004",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Bir ticari mal kaleminin dönem hareketleri şöyledir:\n\n| Tarih | İşlem | Miktar | Birim Maliyet |\n|---|---|---|---|\n| 01.03 | Dönem başı | 200 br | 20 ₺ |\n| 10.03 | Alış | 300 br | 24 ₺ |\n| 20.03 | Satış | 350 br | — |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre 20.03 satışının maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "7.000",
+      "B": "7.600",
+      "C": "7.840",
+      "D": "8.400",
+      "E": "11.200"
+    },
+    "answer": "B",
+    "solution": "FIFO'da önce giren stok önce satılır. 350 birimin maliyeti: 200 × 20 = 4.000 ve kalan 150 × 24 = 3.600 → **4.000 + 3.600 = 7.600 ₺**. Dönem sonu stok = 150 × 24 = 3.600 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-FIFO; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; 1 Sıra No'lu MSUGT - FIFO"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0005",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Bir önceki soruda verilen hareketlerin (DB 200 br × 20 ₺; Alış 300 br × 24 ₺; Satış 350 br) aynısı için tartılı (ağırlıklı) ortalama maliyet yöntemi kullanılsaydı, satışın maliyeti kaç ₺ olurdu?",
+    "options": {
+      "A": "7.000",
+      "B": "7.600",
+      "C": "7.840",
+      "D": "8.400",
+      "E": "3.360"
+    },
+    "answer": "C",
+    "solution": "Ortalama birim maliyet = Toplam maliyet ÷ Toplam miktar = (4.000 + 7.200) ÷ 500 = 11.200 ÷ 500 = **22,40 ₺**. Satışın maliyeti = 350 × 22,40 = **7.840 ₺**. (Dönem sonu stok = 150 × 22,40 = 3.360 ₺.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-ortalama; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; 1 Sıra No'lu MSUGT - Ağırlıklı ortalama"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0006",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Birim alış fiyatlarının sürekli yükseldiği (enflasyonist) bir dönemde, FIFO yöntemi tartılı ortalama yöntemine kıyasla dönem sonuçlarını nasıl etkiler?",
+    "options": {
+      "A": "Daha yüksek satılan malın maliyeti, daha düşük dönem kârı",
+      "B": "Daha düşük satılan malın maliyeti, daha yüksek dönem kârı ve daha yüksek dönem sonu stok değeri",
+      "C": "Maliyet ve kâr her iki yöntemde de aynı çıkar",
+      "D": "Daha düşük dönem sonu stok değeri",
+      "E": "Dönem kârını etkilemez, yalnızca KDV'yi değiştirir"
+    },
+    "answer": "B",
+    "solution": "Fiyatlar yükselirken FIFO'da satılan mallar **eski (ucuz)** birimlerden oluşur → **daha düşük SMM, daha yüksek kâr**; dönem sonu stok ise **yeni (pahalı)** birimlerden oluşur → **daha yüksek stok değeri**. Örnekte FIFO SMM 7.600 < ortalama 7.840'tır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-yorum; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar - maliyet akış varsayımlarının etkisi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0007",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Aşağıdakilerden hangisi satın alınan ticari malın stok maliyetine dâhil edilmez?",
+    "options": {
+      "A": "Malın alış bedeli",
+      "B": "İşletmeye taşıma (navlun) gideri",
+      "C": "Sigorta ve gümrük vergisi gibi alışla doğrudan ilgili giderler",
+      "D": "Vadeli alıştan kaynaklanan finansman (vade farkı) gideri",
+      "E": "Alışa ilişkin yükleme-boşaltma giderleri"
+    },
+    "answer": "D",
+    "solution": "Stok maliyetine; alış bedeli, navlun, sigorta, gümrük ve alışla doğrudan ilgili giderler **dâhildir**. Ancak **vadeli alıştan doğan finansman (vade farkı) gideri** stok maliyetine alınmaz; finansman gideri olarak sonuç hesaplarına yansıtılır (TMS 2).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; VUK md. 274 (stok maliyeti unsurları)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0008",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Sürekli envanter yöntemini kullanan işletme, tanesi KDV hariç 50.000 ₺ tutarında ticari malı %20 KDV ile veresiye satın almıştır.\n\nBu alış işleminde '191 İndirilecek KDV' hesabına yazılacak tutar ve tarafı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "10.000 ₺ borç",
+      "B": "10.000 ₺ alacak",
+      "C": "50.000 ₺ borç",
+      "D": "60.000 ₺ borç",
+      "E": "12.000 ₺ borç"
+    },
+    "answer": "A",
+    "solution": "KDV = 50.000 × %20 = 10.000 ₺ ve indirilecek KDV alışta **borç** yazılır. Kayıt: 153 Ticari Mallar (B) 50.000 + **191 İndirilecek KDV (B) 10.000** / 320 Satıcılar (A) 60.000.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDV Kanunu; 191 İndirilecek KDV; 2026 KDV %20"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0009",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Sürekli envanter yöntemini kullanan işletme, daha önce %20 KDV ile veresiye aldığı 8.000 ₺'lik (KDV hariç) ticari malı satıcısına iade etmiş; tutar borcundan düşülmüştür.\n\nBu iade işleminin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "153 Ticari Mallar (B) 8.000 + 191 İndirilecek KDV (B) 1.600 / 320 Satıcılar (A) 9.600",
+      "B": "320 Satıcılar (B) 9.600 / 153 Ticari Mallar (A) 8.000 + 191 İndirilecek KDV (A) 1.600",
+      "C": "610 Satıştan İadeler (B) 8.000 / 320 Satıcılar (A) 8.000",
+      "D": "320 Satıcılar (B) 8.000 / 153 Ticari Mallar (A) 8.000",
+      "E": "621 Satılan Ticari Malların Maliyeti (B) 9.600 / 320 Satıcılar (A) 9.600"
+    },
+    "answer": "B",
+    "solution": "Alış iadesinde ilk alış kaydı ters çevrilir: borç azaldığı için **320 Satıcılar (B) 9.600**; stok çıktığı için **153 (A) 8.000** ve daha önce indirilen KDV düzeltildiği için **191 İndirilecek KDV (A) 1.600**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-iade; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Alış iadesi (sürekli envanter); 3065 s. KDVK"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0010",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "İşletmenin dönem sonu stoklarının maliyet bedeli 120.000 ₺, net gerçekleşebilir değeri ise 104.000 ₺ olarak belirlenmiştir. Değer düşüklüğü için karşılık ayrılacaktır.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 153 Ticari Mallar (A) 16.000",
+      "B": "654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 16.000",
+      "C": "153 Ticari Mallar (B) 16.000 / 644 Konusu Kalmayan Karşılıklar (A) 16.000",
+      "D": "621 Satılan Ticari Malların Maliyeti (B) 104.000 / 153 Ticari Mallar (A) 104.000",
+      "E": "689 Diğer Olağandışı Gider (B) 120.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 120.000"
+    },
+    "answer": "B",
+    "solution": "Değer düşüklüğü = 120.000 − 104.000 = 16.000 ₺. Gider tahakkuk ettirilip karşılık ayrılır: **654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (-) (A) 16.000**. 158 aktifi düzenleyici hesaptır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt+hesaplama; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; 1 Sıra No'lu MSUGT - 158 / 654"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0011",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "TMS 2 Stoklar Standardı'na göre stoklar mali tablolarda hangi değerle gösterilir?",
+    "options": {
+      "A": "Her zaman maliyet bedeliyle",
+      "B": "Her zaman net gerçekleşebilir değerle",
+      "C": "Maliyet bedeli ile net gerçekleşebilir değerden düşük olanı ile",
+      "D": "Her zaman güncel satış fiyatıyla",
+      "E": "Yeniden değerlenmiş tutarla"
+    },
+    "answer": "C",
+    "solution": "TMS 2'ye göre stoklar, **maliyet ile net gerçekleşebilir değerden (NGD) düşük olanı** ile değerlenir. NGD, tahmini satış fiyatından tamamlanma ve satış giderleri düşüldükten sonra kalan tutardır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (standart-kavram; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar - ölçüm (maliyet/NGD düşüğü)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0012",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Sürekli envanter yöntemini uygulayan işletmede '153 Ticari Mallar' hesabının borç kalanı 90.000 ₺ iken, dönem sonu fiilî sayımda mevcut 84.000 ₺ olarak belirlenmiş ve noksanlığın nedeni araştırılmaya karar verilmiştir.\n\nNedeni henüz belirlenmemişken yapılması gereken kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "197 Sayım ve Tesellüm Noksanları (B) 6.000 / 153 Ticari Mallar (A) 6.000",
+      "B": "153 Ticari Mallar (B) 6.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
+      "C": "621 Satılan Ticari Malların Maliyeti (B) 6.000 / 153 Ticari Mallar (A) 6.000",
+      "D": "689 Diğer Olağandışı Gider (B) 84.000 / 153 Ticari Mallar (A) 84.000",
+      "E": "158 Stok Değer Düşüklüğü Karşılığı (B) 6.000 / 153 Ticari Mallar (A) 6.000"
+    },
+    "answer": "A",
+    "solution": "Kaydi mevcut (90.000) fiilî mevcuttan (84.000) **6.000 ₺ fazladır**; stok noksanı vardır. Nedeni bulunana kadar **197 Sayım ve Tesellüm Noksanları (B) 6.000 / 153 Ticari Mallar (A) 6.000** kaydıyla stok fiili duruma indirilir; neden belirlenince 197 kapatılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt+hesaplama; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 197 Sayım ve Tesellüm Noksanları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0013",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Bir işletme, satılmak üzere kendisine bırakılan (konsinye) malları satıcı işletme adına elinde bulundurmaktadır. Bu konsinye mallarla ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Malı elinde bulunduran (konsinyi) işletmenin stoklarında gösterilir.",
+      "B": "Mülkiyet devredilmediği için malı gönderen (konsinyatör) işletmenin stoklarında kalır.",
+      "C": "Her iki işletmenin de stoklarında ayrı ayrı gösterilir.",
+      "D": "Hiçbir işletmenin stoğunda gösterilmez.",
+      "E": "Malı elinde bulunduran işletmenin satışları arasında gösterilir."
+    },
+    "answer": "B",
+    "solution": "Konsinye malların **mülkiyeti** satılana kadar gönderen (konsinyatör) işletmededir; dolayısıyla malı elinde bulunduran işletmenin değil, **malı gönderen işletmenin stoklarında** izlenir. Bu, özün önceliği kavramıyla da uyumludur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; TTK - konsinye satış (mülkiyet)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0014",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Üretim işletmesinin stoklarıyla ilgili aşağıdaki hesap eşleştirmelerinden hangisi yanlıştır?",
+    "options": {
+      "A": "150 İlk Madde ve Malzeme — üretimde kullanılacak hammadde",
+      "B": "151 Yarı Mamuller — Üretim — henüz tamamlanmamış üretim",
+      "C": "152 Mamuller — üretilip satışa hazır ürünler",
+      "D": "153 Ticari Mallar — üretilmeden alınıp satılan mallar",
+      "E": "157 Diğer Stoklar — işletmenin ürettiği ana mamul"
+    },
+    "answer": "E",
+    "solution": "**157 Diğer Stoklar**, yukarıdaki gruplara girmeyen (hurda, artık vb.) stoklar içindir; işletmenin ürettiği **ana mamul 152 Mamuller** hesabında izlenir. Diğer eşleştirmeler doğrudur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Stoklar grubu (15) hesapları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0015",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Stokların değerlemesi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi Usul Kanunu'na göre satın alınan emtia maliyet bedeli ile değerlenir.\nII. Kıymeti düşen mallar emsal bedeli ile değerlenebilir.\nIII. Vadeli alıştaki finansman gideri zorunlu olarak stok maliyetine eklenir.\nIV. Alışa ilişkin navlun ve sigorta giderleri stok maliyetine dâhildir.",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "I, II ve IV",
+      "D": "II ve III",
+      "E": "I, II, III ve IV"
+    },
+    "answer": "C",
+    "solution": "**I, II ve IV doğrudur:** VUK'a göre emtia maliyet bedeliyle (md. 274), kıymeti düşenler emsal bedelle (md. 278) değerlenir; navlun/sigorta maliyete girer. **III yanlıştır:** vade farkı/finansman gideri stok maliyetine zorunlu olarak eklenmez (TMS 2), ayrı gider yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III doğru/yanlış; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 274, 278; TMS 2 Stoklar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0016",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Aralıklı envanter yöntemini kullanan işletme dönem içi alışlarını '153 Ticari Mallar' hesabının borcunda izlemektedir. Dönem sonunda satılan malın maliyetini belirlemek için yapılan işlem aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Her satışta 621 hesabı borçlandırılır.",
+      "B": "Dönem sonu fiilî sayımla belirlenen mevcut esas alınarak satılan malın maliyeti hesaplanır ve '621 (B) / 153 (A)' kaydı yapılır.",
+      "C": "153 hesabı hiç kullanılmaz, tüm alışlar doğrudan gider yazılır.",
+      "D": "Satılan malın maliyeti '600 Yurt İçi Satışlar' hesabından düşülür.",
+      "E": "Dönem sonu mevcut, maliyet yerine satış fiyatıyla değerlenir."
+    },
+    "answer": "B",
+    "solution": "Aralıklı yöntemde satılan malın maliyeti dönem sonunda **fiilî sayımla** belirlenen mevcuda göre hesaplanır (DBM + Alışlar − DSM) ve tek kayıtla maliyete alınır: **621 (B) / 153 (A)**. Dönem içi her satışta ayrı maliyet kaydı yapılmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Aralıklı envanterde dönem sonu maliyet kaydı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0017",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Stok maliyet akış yöntemlerinden 'hareketli ağırlıklı ortalama' yöntemi için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Yalnızca dönem sonunda tek bir ortalama maliyet hesaplanır.",
+      "B": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir.",
+      "C": "İlk giren ilk çıkar mantığıyla çalışır.",
+      "D": "Son giren ilk çıkar mantığıyla çalışır.",
+      "E": "Stok miktarını dikkate almadan basit ortalama alır."
+    },
+    "answer": "B",
+    "solution": "**Hareketli ağırlıklı ortalama**, her yeni alıştan sonra eldeki stokun toplam maliyetini toplam miktara bölerek ortalamayı **günceller**; satışlar o anki güncel ortalama ile maliyetlendirilir. Dönem sonunda tek ortalama hesaplayan yöntem ise 'tartılı (dönem sonu) ortalama'dır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; ağırlıklı ortalama yöntemleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0018",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Sürekli envanter yönteminde dönem sonunda '153 Ticari Mallar' hesabının kaydi kalanı ile fiilî sayım sonucu birbirine eşitse, bu durumla ilgili aşağıdakilerden hangisi söylenebilir?",
+    "options": {
+      "A": "Mutlaka stok değer düşüklüğü karşılığı ayrılmalıdır.",
+      "B": "Sayım noksanı/fazlası kaydı (197 veya 397) yapılmasına gerek yoktur.",
+      "C": "621 hesabı ters kayıtla kapatılmalıdır.",
+      "D": "Dönem içindeki tüm satış kayıtları hatalıdır.",
+      "E": "Ticari mallar bilançoda satış fiyatıyla gösterilir."
+    },
+    "answer": "B",
+    "solution": "Kaydi kalan ile fiilî mevcut eşitse stok farkı yoktur; bu nedenle **sayım noksanı (197) veya fazlası (397) kaydına gerek yoktur**. Değer düşüklüğü ise ayrı bir değerleme konusudur ve yalnızca NGD maliyetin altındaysa gündeme gelir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-yorum; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Sürekli envanterde dönem sonu kontrol"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]
