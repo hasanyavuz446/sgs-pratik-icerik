@@ -3,20 +3,20 @@
     "id": "finmuh-surec-gen-0001",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Tekdüzen Hesap Planı'nda aktif (varlık) nitelikli bir hesabın işleyişi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+    "stem": "Aşağıdaki hesaplardan hangisinin bakiyesi artırılırken hesabın alacak tarafına kayıt yapılır?",
     "options": {
-      "A": "Artışlar alacak, azalışlar borç tarafına kaydedilir; kalan alacak kalanı verir.",
-      "B": "Artışlar borç, azalışlar alacak tarafına kaydedilir; kalan borç kalanı verir.",
-      "C": "Hem artış hem azalış borç tarafına kaydedilir.",
-      "D": "Aktif hesaplar yalnızca dönem sonunda çalıştırılır.",
-      "E": "Aktif hesaplar her zaman alacak kalanı verir."
+      "A": "100 Kasa",
+      "B": "153 Ticari Mallar",
+      "C": "320 Satıcılar",
+      "D": "255 Demirbaşlar",
+      "E": "120 Alıcılar"
     },
-    "answer": "B",
-    "solution": "Varlık (aktif) hesaplarında **artışlar borç**, **azalışlar alacak** tarafına yazılır ve hesap normalde **borç kalanı** verir. Kaynak (pasif) hesaplarında ise tam tersidir.",
+    "answer": "C",
+    "solution": "**320 Satıcılar** bir kaynak (pasif) hesabıdır; pasif hesaplarda artışlar **alacak** tarafına yazılır. Diğer şıklar aktif (varlık) hesaptır ve artışları borç tarafına kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Tekdüzen Hesap Çerçevesi ve hesapların işleyişi"
+      "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hesapların işleyişi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "finmuh-surec-gen-0002",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir kaynak (pasif) hesabı olan '320 Satıcılar' hesabının bakiyesinin artması için yapılması gereken kayıt aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 24.000 | |\n| 600 YURT İÇİ SATIŞLAR | | 20.000 |\n| 391 HESAPLANAN KDV | | 4.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir? (KDV %20)",
     "options": {
-      "A": "Hesabın borç tarafına kayıt",
-      "B": "Hesabın alacak tarafına kayıt",
-      "C": "Hem borç hem alacak tarafına eşit kayıt",
-      "D": "Nazım hesaplara kayıt",
-      "E": "Yalnızca envanter defterine kayıt"
+      "A": "Peşin (nakit) mal satışı",
+      "B": "Veresiye mal satışı",
+      "C": "Peşin mal alışı",
+      "D": "Alacak senedinin tahsili",
+      "E": "Banka kredisi kullanımı"
     },
-    "answer": "B",
-    "solution": "Satıcılar hesabı bir **kaynak (pasif)** hesabıdır. Pasif hesaplarda artışlar **alacak** tarafına kaydedilir; dolayısıyla borcun (yükümlülüğün) artması hesabın alacaklandırılmasıyla olur.",
+    "answer": "A",
+    "solution": "Kasanın borçlanması nakit girişini, 600 ve 391'in alacaklanması ise satış hasılatı + hesaplanan KDV'yi gösterir. 20.000 × %20 = 4.000 KDV ile toplam 24.000 ₺ **nakit (peşin) satış** yapılmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Kaynak hesaplarının işleyişi (3'lü grup)"
+      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT; 3065 s. KDVK (peşin satış kaydı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -59,7 +59,7 @@
     "solution": "İşlemler önce **Yevmiye (Günlük) Defteri**ne tarih sırasıyla kaydedilir; oradan **Defter-i Kebir**e aktarılır. Mizan bir defter değil, hesap kalanlarının kontrol tablosudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
       "legislationRef": "VUK md. 183-184; TTK md. 64 vd. (ticari defterler)"
     },
     "validYear": 2026,
@@ -69,20 +69,20 @@
     "id": "finmuh-surec-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Yevmiye defterine yapılan kayıtların hesap bazında toplulaştırılarak izlendiği, her hesabın borç ve alacak hareketlerinin ayrı ayrı görülebildiği defter aşağıdakilerden hangisidir?",
+    "stem": "Genel geçici mizan ve genel kesin mizan ile ilgili aşağıdaki ifadelerden hangileri yanlıştır?\n\nI. Genel geçici mizan, dönem sonu envanter ve düzeltme kayıtlarından sonra düzenlenir.\nII. Genel kesin mizanın kalanlar sütunu, dönem sonu bilançosu ve gelir tablosu verilerini oluşturur.\nIII. Mizanda borç kalanları toplamı ile alacak kalanları toplamı eşit olmalıdır.\nIV. Aylık mizanlar dönem içinde hesapların kontrolü amacıyla düzenlenebilir.",
     "options": {
-      "A": "Yevmiye Defteri",
-      "B": "Defter-i Kebir (Büyük Defter)",
-      "C": "Envanter Defteri",
-      "D": "Yardımcı Defter",
-      "E": "Damga Vergisi Defteri"
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "III ve IV",
+      "E": "I, II ve IV"
     },
-    "answer": "B",
-    "solution": "**Defter-i Kebir (Büyük Defter)**, yevmiyedeki kayıtları hesap bazında toplar; her hesabın borç/alacak hareketleri ve kalanı buradan izlenir.",
+    "answer": "A",
+    "solution": "**Yalnız I yanlıştır:** genel geçici mizan, envanter ve düzeltme kayıtlarından **önce** düzenlenir; envanter sonrası düzenlenen **kesin mizan**dır. II, III ve IV doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "VUK md. 184 (defter-i kebir); TTK md. 64 vd."
+      "styleRef": "SGS Finansal Muhasebe (I-II-III-IV; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Mizan türleri; dönem sonu işlemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "finmuh-surec-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir mizanda aşağıdaki eşitliklerden hangisinin sağlanması, kayıtların matematiksel tutarlılığının bir göstergesidir?",
+    "stem": "Bir hesabın dönem içi borç toplamı 45.000 ₺, alacak toplamı 32.000 ₺'dir. Bu hesabın kalanı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Borç kalanları toplamı = Gelir toplamı",
-      "B": "Aktif toplamı = Gider toplamı",
-      "C": "Yevmiye borç toplamı = Alacak kalanları toplamı",
-      "D": "Borç toplamları = Alacak toplamları ve Borç kalanları toplamı = Alacak kalanları toplamı",
-      "E": "Kasa kalanı = Banka kalanı"
+      "A": "13.000 ₺ alacak kalanı",
+      "B": "13.000 ₺ borç kalanı",
+      "C": "77.000 ₺ borç kalanı",
+      "D": "Kalan vermez (kapalı hesap)",
+      "E": "32.000 ₺ borç kalanı"
     },
-    "answer": "D",
-    "solution": "Mizanda çift taraflı kayıt gereği **borç toplamları = alacak toplamları** ve **borç kalanları toplamı = alacak kalanları toplamı** olmalıdır. Bu eşitlik sağlanmıyorsa kayıtlarda hata vardır (ancak eşitlik her zaman hatasızlığı garanti etmez).",
+    "answer": "B",
+    "solution": "Kalan = Borç toplamı − Alacak toplamı = 45.000 − 32.000 = **13.000 ₺**. Borç tarafı büyük olduğundan hesap **13.000 ₺ borç kalanı** verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Muhasebe süreci; mizan"
+      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hesap kalanı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "finmuh-surec-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Tekdüzen Hesap Planı'na göre '255 Demirbaşlar' hesabı hangi hesap sınıfında yer alır?",
+    "stem": "Tekdüzen Hesap Planı'na göre aşağıdaki hesaplardan hangisi ait olduğu hesap sınıfıyla yanlış eşleştirilmiştir?",
     "options": {
-      "A": "1 - Dönen Varlıklar",
-      "B": "2 - Duran Varlıklar",
-      "C": "3 - Kısa Vadeli Yabancı Kaynaklar",
-      "D": "5 - Özkaynaklar",
-      "E": "6 - Gelir Tablosu Hesapları"
+      "A": "255 Demirbaşlar → 2 Duran Varlıklar",
+      "B": "320 Satıcılar → 3 Kısa Vadeli Yabancı Kaynaklar",
+      "C": "500 Sermaye → 5 Özkaynaklar",
+      "D": "600 Yurt İçi Satışlar → 6 Gelir Tablosu Hesapları",
+      "E": "153 Ticari Mallar → 2 Duran Varlıklar"
     },
-    "answer": "B",
-    "solution": "255 numarasının ilk rakamı **2**'dir; bu da hesabın **Duran Varlıklar** sınıfında (Maddi Duran Varlıklar grubu) olduğunu gösterir. TDHP'de sınıf, hesap kodunun ilk rakamından anlaşılır.",
+    "answer": "E",
+    "solution": "**153 Ticari Mallar**, kodun ilk rakamı **1** olduğundan **Dönen Varlıklar** sınıfındadır (Stoklar grubu), Duran Varlıklar değil. Bu nedenle **E yanlıştır**. Diğer eşleştirmeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Tekdüzen Hesap Planı hesap sınıfları"
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hesap sınıfları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,7 +135,7 @@
     "id": "finmuh-surec-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisi bir aktifi düzenleyici (kontr aktif) hesaptır ve normal koşullarda alacak kalanı verir?",
+    "stem": "Aşağıdaki hesaplardan hangisi bir aktifi düzenleyici (kontr aktif) hesaptır ve normalde alacak kalanı verir?",
     "options": {
       "A": "100 Kasa",
       "B": "153 Ticari Mallar",
@@ -144,10 +144,10 @@
       "E": "600 Yurt İçi Satışlar"
     },
     "answer": "C",
-    "solution": "**257 Birikmiş Amortismanlar (-)** bir aktifi düzenleyici hesaptır; bilançoda duran varlıkların altında eksi (-) olarak gösterilir ve **alacak kalanı** verir. İlgili maddi duran varlığın net defter değerini düşürür.",
+    "solution": "**257 Birikmiş Amortismanlar (-)** aktifi düzenleyici bir hesaptır; bilançoda duran varlığın altında eksi (-) gösterilir ve **alacak kalanı** verir; ilgili varlığın net defter değerini düşürür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - Aktifi düzenleyici hesaplar"
     },
     "validYear": 2026,
@@ -157,20 +157,20 @@
     "id": "finmuh-surec-gen-0008",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Temel muhasebe (bilanço) eşitliği aşağıdakilerden hangisidir?",
+    "stem": "İşletme, ortağı Ayşe Yıldız'a işletmeden 50.000 ₺ nakit borç para vermiştir. Bu işlemin yevmiye kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Varlıklar = Gelirler − Giderler",
-      "B": "Varlıklar = Kaynaklar (Yabancı Kaynaklar + Özkaynaklar)",
-      "C": "Özkaynaklar = Varlıklar + Borçlar",
-      "D": "Gelirler = Varlıklar + Özkaynaklar",
-      "E": "Borçlar = Varlıklar + Özkaynaklar"
+      "A": "131 Ortaklardan Alacaklar (B) 50.000 / 100 Kasa (A) 50.000",
+      "B": "100 Kasa (B) 50.000 / 131 Ortaklardan Alacaklar (A) 50.000",
+      "C": "331 Ortaklara Borçlar (B) 50.000 / 100 Kasa (A) 50.000",
+      "D": "500 Sermaye (B) 50.000 / 100 Kasa (A) 50.000",
+      "E": "770 Genel Yönetim Giderleri (B) 50.000 / 100 Kasa (A) 50.000"
     },
-    "answer": "B",
-    "solution": "Bilanço eşitliği **Varlıklar = Kaynaklar**, yani **Aktif = Yabancı Kaynaklar + Özkaynaklar** biçimindedir. İşletmenin sahip olduğu varlıklar, bu varlıkların finansman kaynağına eşittir.",
+    "answer": "A",
+    "solution": "İşletmenin ortağından alacağı doğar → **131 Ortaklardan Alacaklar** borçlanır; nakit çıktığı için **100 Kasa** alacaklanır. Ortağa borç para verme, gider ya da sermaye azalışı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço esasları"
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 131 Ortaklardan Alacaklar"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -191,8 +191,8 @@
     "solution": "Kasadan tahsilat için **tahsil fişi**, kasadan ödeme için **tediye fişi**, kasayı ilgilendirmeyen (ör. senetli mal alışı) işlemler için ise **mahsup fişi** düzenlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "Muhasebe belge ve fiş düzeni (tahsil/tediye/mahsup)"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "Muhasebe fiş düzeni (tahsil/tediye/mahsup)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "finmuh-surec-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Tekdüzen Hesap Planı'nda gelir tablosu hesapları hangi hesap sınıfında toplanır ve bu sınıftaki gelir hesapları normalde hangi tarafta kalan verir?",
+    "stem": "Tekdüzen Hesap Planı'nda gelir tablosu hesapları (6 sınıfı) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "6 numaralı sınıf; gelir hesapları alacak kalanı verir",
-      "B": "5 numaralı sınıf; gelir hesapları borç kalanı verir",
-      "C": "7 numaralı sınıf; gelir hesapları alacak kalanı verir",
-      "D": "3 numaralı sınıf; gelir hesapları borç kalanı verir",
-      "E": "9 numaralı sınıf; gelir hesapları alacak kalanı verir"
+      "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir.",
+      "B": "Gelir hesapları alacak, gider hesapları borç kalanı verir ve dönem sonunda 690'a devredilir.",
+      "C": "Tüm 6'lı hesaplar bilançoya devredilir.",
+      "D": "6'lı hesaplar aktifi düzenleyici hesaplardır.",
+      "E": "6'lı hesaplar yalnızca nazım hesaplarla çalışır."
     },
-    "answer": "A",
-    "solution": "Gelir tablosu hesapları **6 numaralı sınıfta** toplanır. Gelir/hasılat hesapları (ör. 600 Yurt İçi Satışlar) **alacak** kalanı, gider hesapları borç kalanı verir; dönem sonunda 690 Dönem Kârı veya Zararı'na aktarılır.",
+    "answer": "B",
+    "solution": "6'lı sınıfta **gelir/hasılat hesapları alacak**, **gider hesapları borç** kalanı verir. Dönem sonunda bu hesaplar **690 Dönem Kârı veya Zararı**na devredilerek kapatılır; kalanları bilançoya değil gelir tablosuna yansır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu hesapları (6'lı grup)"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu hesapları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "finmuh-surec-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Çift taraflı kayıt yönteminin temel ilkesi aşağıdakilerden hangisidir?",
+    "stem": "Çift taraflı kayıt yöntemi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Her işlem yalnızca tek bir hesaba kaydedilir.",
-      "B": "Her işlemde borç ve alacak tutarları birbirine eşittir.",
-      "C": "Gelirler kaydedilir, giderler kaydedilmez.",
-      "D": "Yalnızca nakit işlemler kaydedilir.",
-      "E": "Kayıtlar yılda bir kez yapılır."
+      "A": "Her işlem en az iki hesabı etkiler.",
+      "B": "Bir işlemde borç tutarları toplamı, alacak tutarları toplamına eşittir.",
+      "C": "Bilanço eşitliğinin korunmasını sağlar.",
+      "D": "Her işlem yalnızca tek bir hesaba tek taraflı kaydedilir.",
+      "E": "Yöntem, hesapların borç ve alacak taraflarının birlikte kullanılmasına dayanır."
     },
-    "answer": "B",
-    "solution": "Çift taraflı (muzaaf) kayıt yönteminde her işlem en az iki hesabı etkiler ve **borç tarafına yazılan toplam, alacak tarafına yazılan toplama eşittir**. Bu, bilanço eşitliğinin korunmasını sağlar.",
+    "answer": "D",
+    "solution": "**D yanlıştır.** Çift taraflı kayıtta her işlem en az iki hesabı etkiler ve borç = alacak eşitliği korunur; tek hesaba tek taraflı kayıt yapılmaz. Diğer ifadeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Çift taraflı kayıt esası"
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Çift taraflı kayıt"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "finmuh-surec-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir hesabın borç toplamı 45.000 TL, alacak toplamı 32.000 TL ise bu hesabın kalanı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme bankadaki mevduatından 20.000 ₺ çekerek kasasına koymuştur. Bu işlemin bilanço büyüklüğüne (aktif toplamına) etkisi nedir?",
     "options": {
-      "A": "13.000 TL alacak kalanı",
-      "B": "13.000 TL borç kalanı",
-      "C": "77.000 TL borç kalanı",
-      "D": "Kalan vermez (kapalı hesap)",
-      "E": "32.000 TL borç kalanı"
+      "A": "Aktif toplamı 20.000 ₺ artar",
+      "B": "Aktif toplamı 20.000 ₺ azalır",
+      "C": "Aktif toplamı değişmez, yalnızca varlık bileşimi değişir",
+      "D": "Pasif toplamı 20.000 ₺ artar",
+      "E": "Özkaynaklar 20.000 ₺ artar"
     },
-    "answer": "B",
-    "solution": "Kalan = Borç toplamı − Alacak toplamı = 45.000 − 32.000 = **13.000 TL**. Borç tarafı büyük olduğundan hesap **13.000 TL borç kalanı** verir.",
+    "answer": "C",
+    "solution": "Kayıt **100 Kasa (B) 20.000 / 102 Bankalar (A) 20.000**'dir. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlıkların bileşimi değişir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hesap kalanı hesaplaması"
+      "styleRef": "SGS Finansal Muhasebe (yorum-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço eşitliği; işlem etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-surec-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Tekdüzen Hesap Planı'nda '7 - Maliyet Hesapları' sınıfı hangi amaçla kullanılır?",
+    "stem": "Tekdüzen Hesap Planı'nda '7 - Maliyet Hesapları' sınıfı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin varlıklarını izlemek",
-      "B": "Uzun vadeli borçları izlemek",
-      "C": "Giderlerin çeşit ve/veya yerlerine göre izlenip maliyetlere yüklenmesini sağlamak",
-      "D": "Özkaynak hareketlerini izlemek",
-      "E": "Nazım (bilanço dışı) işlemleri izlemek"
+      "A": "İşletmenin uzun vadeli borçlarını izler.",
+      "B": "Giderlerin çeşit (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.",
+      "C": "Yalnızca ticaret işletmelerinde kullanılır.",
+      "D": "Özkaynak hareketlerini izler.",
+      "E": "Nazım hesaplarla aynı işlevi görür."
     },
-    "answer": "C",
-    "solution": "**7 numaralı Maliyet Hesapları**, giderlerin çeşitlerine (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesi için kullanılır. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.",
+    "answer": "B",
+    "solution": "**7 Maliyet Hesapları**, giderlerin çeşitlerine (7/A) veya gider yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesi içindir. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Maliyet hesapları (7/A ve 7/B)"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Maliyet hesapları (7/A-7/B)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "finmuh-surec-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletmenin bir varlığı artarken eşit tutarda bir başka varlığının azaldığı işlemlerde bilanço büyüklüğü (aktif toplamı) nasıl etkilenir?",
+    "stem": "İşletme, satıcısına olan 30.000 ₺'lik senetsiz ticari borcuna karşılık bir borç senedi (bono) düzenleyip vermiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Aktif toplamı artar",
-      "B": "Aktif toplamı azalır",
-      "C": "Aktif toplamı değişmez",
-      "D": "Pasif toplamı azalır, aktif değişmez",
-      "E": "Özkaynaklar artar"
+      "A": "320 Satıcılar (B) 30.000 / 321 Borç Senetleri (A) 30.000",
+      "B": "321 Borç Senetleri (B) 30.000 / 320 Satıcılar (A) 30.000",
+      "C": "120 Alıcılar (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
+      "D": "320 Satıcılar (B) 30.000 / 100 Kasa (A) 30.000",
+      "E": "321 Borç Senetleri (B) 30.000 / 100 Kasa (A) 30.000"
     },
-    "answer": "C",
-    "solution": "Bir varlık artarken eşit tutarda başka bir varlık azalıyorsa (ör. kasadan bankaya para yatırma) toplam **aktif değişmez**; yalnızca varlığın bileşimi değişir. Bilanço eşitliği korunur.",
+    "answer": "A",
+    "solution": "Senetsiz borç (320 Satıcılar) senetli borca (321 Borç Senetleri) dönüşür. Borç aynı kalır, yalnızca niteliği değişir: **320 Satıcılar (B) 30.000 / 321 Borç Senetleri (A) 30.000**. Nakit çıkışı yoktur (mahsup işlemi).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço eşitliği ve işlem etkileri"
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 320/321 (ticari borçlar)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -314,16 +314,16 @@
     "stem": "Aşağıdaki hesaplardan hangisi Tekdüzen Hesap Planı'nda '3 - Kısa Vadeli Yabancı Kaynaklar' sınıfında yer alır?",
     "options": {
       "A": "120 Alıcılar",
-      "B": "320 Satıcılar",
+      "B": "300 Banka Kredileri",
       "C": "500 Sermaye",
       "D": "255 Demirbaşlar",
       "E": "153 Ticari Mallar"
     },
     "answer": "B",
-    "solution": "**320 Satıcılar** hesabı, kod'un ilk rakamı **3** olduğundan Kısa Vadeli Yabancı Kaynaklar sınıfındadır (bir yıl içinde ödenecek ticari borç). 120 Alıcılar ve 153 aktif, 500 Sermaye özkaynaktır.",
+    "solution": "**300 Banka Kredileri**, kodun ilk rakamı **3** olduğundan Kısa Vadeli Yabancı Kaynaklar sınıfındadır (bir yıl içinde ödenecek kredi borcu). 120 ve 153 aktif, 500 özkaynak, 255 duran varlıktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (hesap sınıfı; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - Hesap sınıfları"
     },
     "validYear": 2026,
@@ -333,20 +333,20 @@
     "id": "finmuh-surec-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Muhasebe döngüsünde aşağıdaki işlemlerin doğru sıralaması hangisidir?\n\nI. Mali tabloların düzenlenmesi\nII. Yevmiye defterine kayıt\nIII. Defter-i kebire aktarma\nIV. Mizan düzenleme",
+    "stem": "Muhasebe döngüsünde aşağıdaki işlemlerin doğru sıralaması hangisidir?\n\nI. Mali tabloların düzenlenmesi\nII. Yevmiye defterine kayıt\nIII. Defter-i kebire aktarma\nIV. Genel geçici mizan düzenleme\nV. Dönem sonu envanter ve düzeltme kayıtları",
     "options": {
-      "A": "I → II → III → IV",
-      "B": "II → III → IV → I",
-      "C": "II → IV → III → I",
-      "D": "III → II → IV → I",
-      "E": "IV → III → II → I"
+      "A": "II → III → IV → V → I",
+      "B": "II → IV → III → V → I",
+      "C": "III → II → IV → V → I",
+      "D": "II → III → V → IV → I",
+      "E": "IV → III → II → V → I"
     },
-    "answer": "B",
-    "solution": "Doğru sıra: önce **yevmiye** kaydı (II), sonra **defter-i kebir**e aktarma (III), ardından **mizan** (IV) ve en son **mali tablolar** (I). Belge → yevmiye → büyük defter → mizan → tablolar akışı esastır.",
+    "answer": "A",
+    "solution": "Doğru akış: **Yevmiye (II) → Defter-i kebir (III) → Genel geçici mizan (IV) → Envanter ve düzeltme kayıtları (V) → Mali tablolar (I)**. Envanter/düzeltmeler geçici mizandan sonra, mali tablolardan öncedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Muhasebe süreci akışı"
+      "styleRef": "SGS Finansal Muhasebe (I-II-III sıralama; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Muhasebe süreci"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-surec-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme bankadaki mevduatından 20.000 TL çekerek kasasına koymuştur. Bu işlemin yevmiye kaydı aşağıdakilerden hangisidir?",
+    "stem": "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Kasa (B) 20.000 / Bankalar (A) 20.000",
-      "B": "Bankalar (B) 20.000 / Kasa (A) 20.000",
-      "C": "Kasa (B) 20.000 / Satıcılar (A) 20.000",
-      "D": "Bankalar (B) 20.000 / Sermaye (A) 20.000",
-      "E": "Kasa (B) 20.000 / Alıcılar (A) 20.000"
+      "A": "Dönem kârını doğrudan artırır.",
+      "B": "İşletmenin aktif-pasif yapısını doğrudan etkileyen işlemleri izler.",
+      "C": "İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izler ve kendi içinde borç-alacak dengesi kurulur.",
+      "D": "Yalnızca amortisman ayırmak için kullanılır.",
+      "E": "Gelir tablosuna devredilir."
     },
-    "answer": "A",
-    "solution": "Kasa (varlık) arttığı için **borç** (100 Kasa), banka mevduatı (varlık) azaldığı için **alacak** (102 Bankalar) çalışır: **Kasa (Borç) 20.000 / Bankalar (Alacak) 20.000**. İki aktif hesap arasında yer değiştirme; aktif toplamı değişmez.",
+    "answer": "C",
+    "solution": "**Nazım hesaplar (9)**, aktif-pasif yapısını doğrudan etkilemeyen fakat izlenmesi gereken kıymetleri (alınan/verilen teminatlar, emanetler vb.) gösterir; kendi içinde borç-alacak dengesi kurulur ve mali tablo sonucunu değiştirmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hazır değer hesaplarının işleyişi"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Nazım hesaplar"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "finmuh-surec-gen-0018",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' sınıfının işlevi aşağıdakilerden hangisidir?",
+    "stem": "Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 YURT İÇİ SATIŞLAR | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Dönem kârını hesaplamak",
-      "B": "Varlık ve kaynakları değerlemek",
-      "C": "Bilançonun aktif/pasif toplamını doğrudan etkileyen işlemleri izlemek",
-      "D": "İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izlemek",
-      "E": "Amortisman ayırmak"
+      "A": "Peşin mal satışının kaydedilmesi",
+      "B": "Gelir hesabının dönem sonunda 690 hesabına devredilerek kapatılması",
+      "C": "Satıştan iade işleminin kaydedilmesi",
+      "D": "Satış maliyetinin hesaplanması",
+      "E": "Kâr payı dağıtımı"
     },
-    "answer": "D",
-    "solution": "**Nazım hesaplar (9)**, işletmenin aktif-pasif yapısını doğrudan etkilemeyen fakat bilgi ve takip amacıyla izlenmesi gereken kıymetleri (alınan/verilen teminatlar, emanetler vb.) gösterir. Kendi içinde borç-alacak dengesi kurulur.",
+    "answer": "B",
+    "solution": "Bir gelir hesabı olan **600 Yurt İçi Satışlar** (alacak kalanı verir) dönem sonunda **borçlandırılarak** 690'a **devredilir** ve kapatılır. Bu, gelir hesaplarının dönem sonunda sonuç hesabına aktarılması işlemidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Nazım hesaplar (9'lu grup)"
+      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir hesaplarının kapatılması (690)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-surec-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Dönem sonunda envanter işlemlerinden önce çıkarılan ve düzeltme/ayarlama kayıtlarından önceki hesap kalanlarını gösteren mizana ne ad verilir?",
+    "stem": "Temel muhasebe (bilanço) eşitliği aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Kesin mizan",
-      "B": "Genel geçici mizan",
-      "C": "Kapanış mizanı",
-      "D": "Açılış mizanı",
-      "E": "Nazım mizan"
+      "A": "Varlıklar = Gelirler − Giderler",
+      "B": "Varlıklar = Yabancı Kaynaklar + Özkaynaklar",
+      "C": "Özkaynaklar = Varlıklar + Borçlar",
+      "D": "Gelirler = Varlıklar + Özkaynaklar",
+      "E": "Borçlar = Varlıklar + Özkaynaklar"
     },
     "answer": "B",
-    "solution": "Dönem sonu envanter ve düzeltme kayıtlarından **önce** düzenlenen mizan **genel geçici mizan**dır. Envanter ve ayarlama kayıtları yapıldıktan sonra düzenlenen ise **kesin mizan**dır.",
+    "solution": "Bilanço eşitliği **Varlıklar = Kaynaklar**, yani **Aktif = Yabancı Kaynaklar + Özkaynaklar**'dır. İşletmenin sahip olduğu varlıklar, bu varlıkların finansman kaynağına eşittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Dönem sonu işlemleri; mizan türleri"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço eşitliği"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "finmuh-surec-gen-0020",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesap gruplarından hangisi dönem sonunda kalanı bilançoya değil, gelir tablosuna aktarılan hesaplardan oluşur?",
+    "stem": "Genel kesin mizanla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kalanlar sütunundaki bilanço hesaplarının kalanları dönem sonu bilançosunu oluşturur.\nII. Gelir ve gider (6'lı) hesapların kalanları gelir tablosuna aktarılır.\nIII. Düzenleyici hesaplar kesin mizanda kalan verebilir.\nIV. Kesin mizanda borç kalanları toplamı ile alacak kalanları toplamı eşit olmalıdır.",
     "options": {
-      "A": "10 Hazır Değerler",
-      "B": "25 Maddi Duran Varlıklar",
-      "C": "32 Ticari Borçlar",
-      "D": "60 Brüt Satışlar ve 62 Satışların Maliyeti",
-      "E": "50 Ödenmiş Sermaye"
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve IV",
+      "E": "I, II, III ve IV"
     },
-    "answer": "D",
-    "solution": "**60 Brüt Satışlar** ve **62 Satışların Maliyeti** gibi 6'lı sınıf (gelir tablosu) hesapları dönem sonunda **690 Dönem Kârı veya Zararı**na devredilir; kalanları bilançoya değil gelir tablosuna yansır. Diğer seçeneklerdeki hesaplar bilanço hesaplarıdır.",
+    "answer": "E",
+    "solution": "**Hepsi doğrudur.** Kesin mizan; bilanço hesaplarının kalanlarıyla bilançoyu, 6'lı hesapların kalanlarıyla gelir tablosunu besler; düzenleyici hesaplar kalan verebilir ve borç kalanları toplamı = alacak kalanları toplamı olmalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu hesaplarının kapatılması"
+      "styleRef": "SGS Finansal Muhasebe (I-II-III-IV; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Genel kesin mizan"
     },
     "validYear": 2026,
     "mockExamId": null

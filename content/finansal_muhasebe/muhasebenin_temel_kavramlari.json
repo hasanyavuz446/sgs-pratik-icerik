@@ -3,7 +3,7 @@
     "id": "finmuh-temelkavram-gen-0001",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir mobilya imalatçısı olan gerçek kişi işletme sahibinin, eşi adına kayıtlı bir dairenin tapu harcını işletme kayıtlarına gider olarak yansıtmaması hangi muhasebe temel kavramı ile açıklanır?",
+    "stem": "Mobilya imalatı yapan gerçek kişi işletmesinin sahibi, eşi adına kayıtlı bir dairenin 40.000 ₺ tutarındaki tapu harcını işletmenin banka hesabından ödemiş; ancak bu tutarı işletme gideri yazmayıp sahibin işletmeden çektiği değer olarak izlemiştir.\n\nBu uygulama öncelikle hangi temel kavramla açıklanır?",
     "options": {
       "A": "Kişilik",
       "B": "Süreklilik",
@@ -12,11 +12,11 @@
       "E": "Tarafsızlık ve Belgelendirme"
     },
     "answer": "A",
-    "solution": "İşletme, sahip ve ortaklarından ayrı, bağımsız bir kişilik olarak ele alınır. Bu nedenle işletme sahibinin şahsi harcamaları ve varlıkları işletme kayıtlarına dahil edilemez. Bu, **Kişilik Kavramı**nın bir gereğidir.",
+    "solution": "İşletme, sahibinden ayrı ve bağımsız bir **kişilik** olarak ele alınır. Sahibin şahsi harcaması işletme gideri olamaz; sahibe çektirilen değer olarak izlenir. Bu, **Kişilik Kavramı**nın gereğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Muhasebenin Temel Kavramları (Kişilik)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "finmuh-temelkavram-gen-0002",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir işletmenin maddi duran varlıklarını, tasfiye halinde elde edilebilecek hurda değeri üzerinden değil, faaliyetine devam edeceği varsayımıyla defter değeri üzerinden değerlemesi hangi temel kavramla ilgilidir?",
+    "stem": "Aşağıdaki uygulamalardan hangileri Dönemsellik Kavramı ile ilişkilendirilebilir?\n\nI. Ekimde peşin ödenen 12 aylık kasko priminin yalnızca cari döneme düşen kısmının gider yazılması\nII. Tahakkuk etmiş ancak henüz tahsil edilmemiş kira gelirinin döneme gelir kaydedilmesi\nIII. Gelecek yıla ait peşin tahsil edilen kira gelirinin '380 Gelecek Aylara Ait Gelirler' hesabında izlenmesi\nIV. Duran varlığın maliyet bedeli üzerinden kayda alınması",
     "options": {
-      "A": "Dönemsellik",
-      "B": "Süreklilik",
-      "C": "Parayla Ölçülme",
-      "D": "Önemlilik",
-      "E": "Özün Önceliği"
+      "A": "Yalnız I",
+      "B": "I ve IV",
+      "C": "I, II ve III",
+      "D": "II ve IV",
+      "E": "I, II, III ve IV"
     },
-    "answer": "B",
-    "solution": "İşletmenin sınırsız bir ömre sahip olduğu ve faaliyetlerini sürdüreceği varsayımı **Süreklilik Kavramı**dır. Bu varsayım nedeniyle varlıklar tasfiye değeriyle değil, işletmenin faaliyetine devam edeceği kabulüne uygun ölçütlerle değerlenir.",
+    "answer": "C",
+    "solution": "**I, II ve III** dönemsellik (ve tahakkuk) ile ilgilidir: gelir ve giderler ait oldukları döneme yazılır; ait olmayan kısımlar 180/280 ya da 380/480'de bekletilir. **IV** ise **Maliyet Esası** kavramıyla ilgilidir; dönemsellikle doğrudan ilişkili değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (I-II-III; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "finmuh-temelkavram-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "İşletmenin Ekim ayında peşin ödediği 12 aylık kasko sigortası bedelinin, yalnızca cari döneme isabet eden kısmının gider yazılıp kalan kısmının 'Gelecek Aylara Ait Giderler' hesabında izlenmesi hangi temel kavramın gereğidir?",
+    "stem": "Bir işletmenin maddi duran varlıklarını tasfiye (hurda) değeriyle değil, faaliyetine devam edeceği varsayımıyla maliyet ve amortisman esasına göre değerlemesi hangi temel kavramın gereğidir?",
     "options": {
-      "A": "Tutarlılık",
-      "B": "İhtiyatlılık",
-      "C": "Dönemsellik",
-      "D": "Tam Açıklama",
-      "E": "Kişilik"
+      "A": "Dönemsellik",
+      "B": "Süreklilik",
+      "C": "Parayla Ölçülme",
+      "D": "Önemlilik",
+      "E": "Özün Önceliği"
     },
-    "answer": "C",
-    "solution": "**Dönemsellik Kavramı**, işletmenin sınırsız ömrünün belli dönemlere bölünmesini ve her dönemin faaliyet sonucunun diğer dönemlerden bağımsız olarak saptanmasını gerektirir. Peşin ödenen giderin ilgili olmadığı döneme ait kısmı, o dönemin gideri olarak kaydedilemez.",
+    "answer": "B",
+    "solution": "İşletmenin faaliyetlerini öngörülebilir gelecekte sürdüreceği varsayımı **Süreklilik Kavramı**dır. Bu nedenle varlıklar tasfiye değeriyle değil, işletmenin devamlılığına uygun ölçütlerle (maliyet, amortisman) değerlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Süreklilik (İşletmenin Sürekliliği)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,29 +69,7 @@
     "id": "finmuh-temelkavram-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir üretim işletmesinin, farklı ölçü birimleriyle (adet, kilogram, metre) izlenen stok kalemlerini mali tablolarında ortak bir ölçüye, yani Türk Lirası tutarına indirgeyerek raporlaması hangi temel kavramla ilgilidir?",
-    "options": {
-      "A": "Maliyet Esası",
-      "B": "Tarafsızlık ve Belgelendirme",
-      "C": "Sosyal Sorumluluk",
-      "D": "Parayla Ölçülme",
-      "E": "Özün Önceliği"
-    },
-    "answer": "D",
-    "solution": "**Parayla Ölçülme Kavramı**, işlemlerin ortak bir ölçü birimi olan ulusal para (TL) cinsinden ifade edilmesini öngörür.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0005",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "2024 yılında 800.000 TL'ye satın alınan bir arsanın, güncel piyasa değerinin 2026 yılı itibarıyla 1.400.000 TL'ye yükselmiş olmasına rağmen bilançoda hâlâ 800.000 TL üzerinden gösterilmesi hangi temel kavrama dayanır?",
+    "stem": "2024 yılında 800.000 ₺'ye satın alınan bir arsanın, güncel piyasa değeri 2026 başında 1.400.000 ₺'ye çıkmış olmasına rağmen (yeniden değerleme/enflasyon düzeltmesi gibi özel düzenlemeler dışında) bilançoda hâlâ 800.000 ₺ üzerinden gösterilmesi hangi kavrama dayanır?",
     "options": {
       "A": "Süreklilik",
       "B": "Önemlilik",
@@ -100,11 +78,33 @@
       "E": "Maliyet Esası"
     },
     "answer": "E",
-    "solution": "**Maliyet Esası Kavramı** gereği, varlık ve hizmetler işletmeye giriş anındaki edinme (maliyet) bedeli üzerinden muhasebeleştirilir; sonradan oluşan değer artışları, yeniden değerleme gibi istisnai düzenlemeler dışında defter değerini değiştirmez.",
+    "solution": "**Maliyet Esası Kavramı** gereği varlıklar edinme (maliyet) bedeliyle kaydedilir; sonradan oluşan piyasa değeri artışları, yeniden değerleme/enflasyon düzeltmesi gibi istisnalar dışında defter değerini kendiliğinden değiştirmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Maliyet Esası"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0005",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "İhtiyatlılık (Muhafazakârlık) Kavramı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": {
+      "A": "Muhtemel giderler ve zararlar için karşılık ayrılır.",
+      "B": "Gerçekleşmemiş gelirler ve kârlar kayda alınmaz.",
+      "C": "Şüpheli hâle gelen alacaklar için karşılık ayrılır.",
+      "D": "Stokun net gerçekleşebilir değeri maliyetin altına düşerse değer düşüklüğü karşılığı ayrılır.",
+      "E": "Duran varlığın piyasa değerindeki artış, gerçekleşmese de gelir olarak kaydedilir."
+    },
+    "answer": "E",
+    "solution": "İhtiyatlılık **simetrik değildir**: muhtemel gider/zararlar kaydedilir (A, C, D) ama **gerçekleşmemiş** gelir/değer artışları kaydedilmez. Bu nedenle **E yanlıştır** — gerçekleşmemiş değer artışının gelir yazılması ihtiyatlılığa aykırıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlıştır; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - İhtiyatlılık"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "finmuh-temelkavram-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Muhasebe kayıtlarının, işletme yönetiminin sözlü beyanına değil, düzenlenen fatura, sözleşme ve banka dekontu gibi objektif belgelere dayandırılması hangi temel kavramın bir gereğidir?",
+    "stem": "Toplam aktifi 40.000.000 ₺ olan bir işletmenin, 90 ₺'ye aldığı bir hesap makinesini amortismana tabi tutmak yerine doğrudan gider yazması hangi temel kavramla açıklanır?",
     "options": {
-      "A": "Tarafsızlık ve Belgelendirme",
+      "A": "Maliyet Esası",
       "B": "Tam Açıklama",
-      "C": "Tutarlılık",
-      "D": "Sosyal Sorumluluk",
-      "E": "Özün Önceliği"
+      "C": "Tarafsızlık ve Belgelendirme",
+      "D": "Süreklilik",
+      "E": "Önemlilik"
     },
-    "answer": "A",
-    "solution": "**Tarafsızlık ve Belgelendirme Kavramı**, muhasebe kayıtlarının gerçek durumu yansıtan ve usulüne uygun düzenlenmiş objektif belgelere dayandırılmasını öngörür.",
+    "answer": "E",
+    "solution": "**Önemlilik Kavramı**, bir bilginin gösterilmemesinin ya da farklı gösterilmesinin kullanıcı kararlarını etkileyip etkilemediğine bakar. İşletmenin ölçeği karşısında ihmal edilebilir tutarlar, kesin ilkelere birebir uyulmadan basitleştirilmiş biçimde işlem görebilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo-tutar; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Önemlilik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,95 +135,7 @@
     "id": "finmuh-temelkavram-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir işletmenin, stok değerleme yöntemini haklı bir neden olmaksızın her yıl değiştirerek bir yıl ağırlıklı ortalama maliyet, ertesi yıl ilk giren ilk çıkar (FIFO) yöntemini uygulaması hangi temel kavrama aykırılık oluşturur?",
-    "options": {
-      "A": "Dönemsellik",
-      "B": "Tutarlılık",
-      "C": "İhtiyatlılık",
-      "D": "Maliyet Esası",
-      "E": "Önemlilik"
-    },
-    "answer": "B",
-    "solution": "**Tutarlılık Kavramı**, seçilen muhasebe politika ve yöntemlerinin dönemler arasında değiştirilmeden uygulanmasını gerektirir; değişiklik ancak haklı bir nedene dayanıyorsa ve dipnotlarda açıklanıyorsa yapılabilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0008",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "İşletme aleyhine açılmış, sonucu belirsiz bir davanın tutarının bilançoya bir yükümlülük olarak yansıtılmasa da mali tablo dipnotlarında bilgi olarak sunulması hangi temel kavramla ilgilidir?",
-    "options": {
-      "A": "Önemlilik",
-      "B": "İhtiyatlılık",
-      "C": "Tam Açıklama",
-      "D": "Özün Önceliği",
-      "E": "Kişilik"
-    },
-    "answer": "C",
-    "solution": "**Tam Açıklama Kavramı**, mali tabloların kullanıcıların doğru karar vermesine yardımcı olacak nitelikte, yeterli, açık ve anlaşılır bilgi içermesini gerektirir. Kesinleşmemiş ancak bilgilendirici nitelikte hususlar dipnotlarla açıklanır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0009",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "İşletmenin elinde bulunan bir stok kaleminin net gerçekleşebilir değerinin maliyet bedelinin altına düşmesi durumunda karşılık ayrılırken, aynı dönemde başka bir stok kaleminin piyasa değerindeki artışın gelir olarak kaydedilmemesi hangi temel kavramla açıklanır?",
-    "options": {
-      "A": "Maliyet Esası",
-      "B": "Tutarlılık",
-      "C": "Dönemsellik",
-      "D": "İhtiyatlılık",
-      "E": "Sosyal Sorumluluk"
-    },
-    "answer": "D",
-    "solution": "**İhtiyatlılık Kavramı**, muhtemel giderlerin ve zararların kayıtlara alınmasını, buna karşılık henüz gerçekleşmemiş gelir ve kârların muhasebeleştirilmemesini gerektirir; bu kavram simetrik değildir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0010",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Toplam aktif büyüklüğü 40.000.000 TL olan bir işletmenin, tutarı 90 TL olan bir demirbaş alımını amortismana tabi tutmak yerine doğrudan gider olarak kaydetmesi hangi temel kavramla açıklanabilir?",
-    "options": {
-      "A": "Maliyet Esası",
-      "B": "Tam Açıklama",
-      "C": "Tarafsızlık ve Belgelendirme",
-      "D": "Süreklilik",
-      "E": "Önemlilik"
-    },
-    "answer": "E",
-    "solution": "**Önemlilik Kavramı**, bir bilginin gösterilmemesinin ya da yanlış gösterilmesinin mali tablo kullanıcılarının kararlarını etkileyip etkilemeyeceğine bakar. İşletmenin ölçeği karşısında ihmal edilebilir düzeydeki tutarlar, kesin muhasebe ilkelerine bağlı kalınmadan basitleştirilmiş biçimde işlem görebilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0011",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir finansal kiralama (leasing) sözleşmesi hukuken kiracıya mülkiyet hakkı tanımasa da, kiralanan varlığın ekonomik faydalarının ve risklerinin büyük ölçüde kiracıya geçmesi nedeniyle varlığın kiracının aktifinde bir duran varlık olarak gösterilmesi hangi temel kavrama dayanır?",
+    "stem": "Bir finansal kiralama (leasing) sözleşmesi hukuken kiracıya mülkiyet tanımasa da, kiralanan varlığın risk ve getirilerinin büyük ölçüde kiracıya geçmesi nedeniyle varlığın kiracının aktifinde izlenmesi hangi kavrama dayanır?",
     "options": {
       "A": "Özün Önceliği",
       "B": "Kişilik",
@@ -232,11 +144,99 @@
       "E": "Tarafsızlık ve Belgelendirme"
     },
     "answer": "A",
-    "solution": "**Özün Önceliği Kavramı**, işlemlerin muhasebeleştirilmesinde ve mali tablolara yansıtılmasında biçimden çok, olayın ekonomik özünün esas alınmasını gerektirir.",
+    "solution": "**Özün Önceliği Kavramı**, işlemlerin muhasebeleştirilmesinde hukuki biçimden çok **ekonomik özün** esas alınmasını gerektirir. Mülkiyet devri olmasa da risk-getiri kiracıya geçtiğinden varlık kiracıda izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Özün Önceliği; TMS/TFRS"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0008",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Muhasebe kayıtlarının, yönetimin sözlü beyanına değil; fatura, sözleşme, banka dekontu gibi objektif belgelere dayandırılması hangi temel kavramın gereğidir?",
+    "options": {
+      "A": "Tarafsızlık ve Belgelendirme",
+      "B": "Tam Açıklama",
+      "C": "Tutarlılık",
+      "D": "Sosyal Sorumluluk",
+      "E": "Özün Önceliği"
+    },
+    "answer": "A",
+    "solution": "**Tarafsızlık ve Belgelendirme Kavramı**, kayıtların gerçek durumu yansıtan, usulüne uygun düzenlenmiş objektif belgelere dayandırılmasını ve muhasebenin önyargısız (tarafsız) olmasını öngörür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Tarafsızlık ve Belgelendirme"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0009",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Bir işletmenin, stok değerleme yöntemini haklı bir neden olmaksızın her yıl değiştirerek bir yıl FIFO, ertesi yıl ağırlıklı ortalama uygulaması, mali tabloların dönemler arası karşılaştırılabilirliğini bozar.\n\nBu durum öncelikle hangi temel kavrama aykırıdır?",
+    "options": {
+      "A": "Dönemsellik",
+      "B": "Tutarlılık",
+      "C": "İhtiyatlılık",
+      "D": "Maliyet Esası",
+      "E": "Önemlilik"
+    },
+    "answer": "B",
+    "solution": "**Tutarlılık Kavramı**, seçilen muhasebe politika ve yöntemlerinin dönemler arası **değiştirilmeden** uygulanmasını ister; değişiklik ancak haklı bir nedene dayanır ve dipnotta açıklanırsa yapılabilir. Gerekçesiz yöntem değişikliği tutarlılığa aykırıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Tutarlılık"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0010",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "İşletme aleyhine açılmış, sonucu belirsiz bir davanın; henüz kesinleşmediği için bilançoya yükümlülük yazılmasa da mali tablo dipnotlarında açıklanması hangi temel kavramla ilgilidir?",
+    "options": {
+      "A": "Önemlilik",
+      "B": "İhtiyatlılık",
+      "C": "Tam Açıklama",
+      "D": "Özün Önceliği",
+      "E": "Kişilik"
+    },
+    "answer": "C",
+    "solution": "**Tam Açıklama Kavramı**, mali tabloların kullanıcıların doğru karar vermesine yetecek nitelikte açık ve anlaşılır bilgi içermesini gerektirir. Kesinleşmemiş ama bilgilendirici hususlar **dipnotlarla** açıklanır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Tam Açıklama"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0011",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Farklı ölçü birimleriyle (adet, kilogram, metre) izlenen stok kalemlerinin mali tablolarda ortak ölçü olan Türk Lirası cinsinden raporlanması hangi kavramla ilgilidir?",
+    "options": {
+      "A": "Maliyet Esası",
+      "B": "Tarafsızlık ve Belgelendirme",
+      "C": "Sosyal Sorumluluk",
+      "D": "Parayla Ölçülme",
+      "E": "Özün Önceliği"
+    },
+    "answer": "D",
+    "solution": "**Parayla Ölçülme Kavramı**, işlemlerin ortak ölçü birimi olan ulusal para (₺) cinsinden ifade edilmesini öngörür; böylece farklı nitelikteki kalemler toplanabilir ve karşılaştırılabilir hâle gelir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Parayla Ölçülme"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,7 +245,7 @@
     "id": "finmuh-temelkavram-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Muhasebenin, yalnızca işletme sahip ve ortaklarının değil; kredi verenler, çalışanlar, devlet ve diğer ilgili kesimlerin de doğru ve güvenilir bilgiye ulaşabilmesini sağlayacak şekilde tarafsız kayıt ve raporlama yapması hangi temel kavramla ilişkilidir?",
+    "stem": "Muhasebenin; işletme sahip ve ortaklarının yanı sıra kredi verenler, çalışanlar, devlet ve kamuoyunun da güvenilir bilgiye ulaşmasını gözetecek biçimde, toplum çıkarlarına duyarlı yürütülmesi hangi kavramla ilişkilidir?",
     "options": {
       "A": "Tam Açıklama",
       "B": "Sosyal Sorumluluk",
@@ -254,11 +254,11 @@
       "E": "Kişilik"
     },
     "answer": "B",
-    "solution": "**Sosyal Sorumluluk Kavramı**, muhasebenin işlevini yerine getirirken toplumun çeşitli kesimlerinin (yatırımcı, kredi kurumu, çalışan, devlet vb.) çıkarlarını da gözetmesini ve gerçeğe uygun, tarafsız bilgi üretmesini ifade eder.",
+    "solution": "**Sosyal Sorumluluk Kavramı**, muhasebenin işlevini yerine getirirken belirli kişi/grupların değil, toplumun tüm kesimlerinin çıkarlarını gözetmesini ve gerçeğe uygun, tarafsız bilgi üretmesini ifade eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Sosyal Sorumluluk"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-temelkavram-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Aşağıdaki uygulamalardan hangileri, İhtiyatlılık Kavramı ile ilişkilendirilebilir?\n\nI. Şüpheli hale gelen bir ticari alacak için karşılık ayrılması\nII. Dava sonucu belirsiz bir tazminat yükümlülüğü için gider karşılığı oluşturulması\nIII. Bir duran varlığın piyasa değerindeki artışın gelir olarak kaydedilmesi\nIV. Stokların net gerçekleşebilir değerinin maliyetin altına düşmesi durumunda değer düşüklüğü karşılığı ayrılması",
+    "stem": "'Bir işletmenin ömrünün sınırsız kabul edilmesi' ile 'bu sınırsız ömrün belirli dönemlere bölünerek her dönemin sonucunun ayrı saptanması' varsayımları sırasıyla hangi kavramlara karşılık gelir?",
     "options": {
-      "A": "Yalnız III",
-      "B": "I ve III",
-      "C": "I, II ve IV",
-      "D": "II ve III",
-      "E": "I, II, III ve IV"
+      "A": "Dönemsellik – Süreklilik",
+      "B": "Süreklilik – Dönemsellik",
+      "C": "Kişilik – Dönemsellik",
+      "D": "Süreklilik – Tutarlılık",
+      "E": "Parayla Ölçülme – Dönemsellik"
     },
-    "answer": "C",
-    "solution": "**İhtiyatlılık Kavramı**, muhtemel gider ve zararların karşılık ayrılarak kayıtlara alınmasını (I, II, IV) gerektirirken, gerçekleşmemiş değer artışlarının (III) gelir olarak kaydedilmesine izin vermez; bu nedenle III bu kavramın tersini temsil eder.",
+    "answer": "B",
+    "solution": "İşletmenin sınırsız ömrü **Süreklilik**; bu ömrün dönemlere bölünüp her dönemin sonucunun bağımsız saptanması **Dönemsellik** kavramıdır. İki kavram birbirini tamamlar: süreklilik olmasa dönemselliğe gerek kalmazdı.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (ayrım; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Süreklilik ve Dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,29 +289,7 @@
     "id": "finmuh-temelkavram-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir işletmenin, önceki yıllarda maliyet bedeli üzerinden ayırdığı amortismanı, bu yıl hiçbir teknik ya da ekonomik gerekçe göstermeksizin yeniden değerlenmiş tutarlar üzerinden hesaplamaya başlaması hangi temel kavrama aykırıdır?",
-    "options": {
-      "A": "Dönemsellik",
-      "B": "Maliyet Esası",
-      "C": "Önemlilik",
-      "D": "Tutarlılık",
-      "E": "Tam Açıklama"
-    },
-    "answer": "D",
-    "solution": "Seçilen muhasebe yönteminin gerekçesiz şekilde dönemler arasında değiştirilmemesi **Tutarlılık Kavramı**nın gereğidir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-temelkavram-gen-0015",
-    "ders": "finansal_muhasebe",
-    "konu": "muhasebenin_temel_kavramlari",
-    "stem": "Bir işletmenin yurt dışından ithal ettiği makineyi, işlem tarihindeki döviz kuru üzerinden TL'ye çevirerek ve edinme anındaki bedel üzerinden defterlerine kaydetmesi öncelikle hangi iki temel kavramla birlikte açıklanır?",
+    "stem": "İşletmenin yurt dışından ithal ettiği makineyi, işlem tarihindeki döviz kuru üzerinden TL'ye çevirip edinme bedeliyle kaydetmesi öncelikle hangi iki kavramla birlikte açıklanır?",
     "options": {
       "A": "Süreklilik ve Dönemsellik",
       "B": "Önemlilik ve Tam Açıklama",
@@ -320,11 +298,99 @@
       "E": "Parayla Ölçülme ve Maliyet Esası"
     },
     "answer": "E",
-    "solution": "Varlığın işlem tarihindeki kur üzerinden TL karşılığıyla kaydedilmesi **Parayla Ölçülme**, edinme anındaki maliyet bedeliyle kaydedilmesi ise **Maliyet Esası** kavramının bir örneğidir; bu iki kavram burada birlikte uygulanır.",
+    "solution": "İşlem tarihindeki kurla TL'ye çevirme **Parayla Ölçülme**, edinme (maliyet) bedeliyle kaydetme **Maliyet Esası** kavramının örneğidir; bu iki kavram burada birlikte uygulanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe testi biçimine yakın (temel kavram + senaryo sorusu karışık)",
-      "legislationRef": "1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği (MSUGT) - Muhasebenin Temel Kavramları"
+      "styleRef": "SGS Finansal Muhasebe (iki kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Parayla Ölçülme ve Maliyet Esası"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0015",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Aşağıdaki durumlardan hangisi Kişilik Kavramına aykırıdır?",
+    "options": {
+      "A": "İşletme sahibinin şahsi otomobilinin masraflarının işletme gideri yazılması",
+      "B": "İşletmenin ticari alacaklarının bilançoda gösterilmesi",
+      "C": "İşletmenin ortaklarına dağıtacağı kâr payının kayıtlara alınması",
+      "D": "İşletme adına düzenlenen faturaların kaydedilmesi",
+      "E": "İşletmenin banka mevduatının hazır değerlerde izlenmesi"
+    },
+    "answer": "A",
+    "solution": "İşletme, sahibinden ayrı bir **kişilik**tir; sahibin şahsi otomobil masrafı işletme gideri olamaz. Bu nedenle **A**, Kişilik Kavramına aykırıdır. Diğer şıklar işletmenin kendi işlemleridir ve kavrama uygundur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi aykırı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Kişilik"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0016",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "İşletme, üretimde kullandığı makineler için gelecekte katlanacağı büyük bakım-onarım harcamalarını, henüz gerçekleşmemiş ve belgeye bağlanmamışken erkenden gider yazmak istemektedir. Bir muhasebe uzmanı bunun doğru olmayacağını belirtmiştir.\n\nBu uyarı öncelikle hangi kavramların gereğidir?\n\nI. Dönemsellik\nII. Tarafsızlık ve Belgelendirme\nIII. Sosyal Sorumluluk",
+    "options": {
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "C",
+    "solution": "Henüz **gerçekleşmemiş ve belgeye dayanmayan** bir harcamanın erkenden gider yazılamaması; giderin ait olduğu dönemde (**Dönemsellik**) ve objektif belgeye dayanarak (**Tarafsızlık ve Belgelendirme**) kaydedilmesi gerektiğindendir. III bu durumla doğrudan ilgili değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo I-II-III; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Dönemsellik; Tarafsızlık ve Belgelendirme"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0017",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Net gerçekleşebilir değeri maliyetinin altına düşen stok için değer düşüklüğü karşılığı ayrılırken, aynı dönemde piyasa değeri artan başka bir stok için herhangi bir gelir/değer artışı kaydedilmemesi hangi kavramla açıklanır?",
+    "options": {
+      "A": "Maliyet Esası",
+      "B": "Tutarlılık",
+      "C": "Dönemsellik",
+      "D": "İhtiyatlılık",
+      "E": "Sosyal Sorumluluk"
+    },
+    "answer": "D",
+    "solution": "**İhtiyatlılık Kavramı** simetrik değildir: muhtemel değer düşüşü (zarar) için karşılık ayrılır, ancak gerçekleşmemiş değer artışı (kâr) kaydedilmez. Bu asimetri tam da ihtiyatlılığın gereğidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (senaryo; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - İhtiyatlılık; TMS 2"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-temelkavram-gen-0018",
+    "ders": "finansal_muhasebe",
+    "konu": "muhasebenin_temel_kavramlari",
+    "stem": "Muhasebenin temel kavramları ile ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+    "options": {
+      "A": "Süreklilik → İşletmenin faaliyetlerini öngörülebilir gelecekte sürdüreceği varsayımı",
+      "B": "Tutarlılık → Seçilen yöntemlerin haklı neden olmadıkça dönemler arası değiştirilmemesi",
+      "C": "Maliyet Esası → Varlıkların edinme bedeliyle kaydedilmesi",
+      "D": "İhtiyatlılık → Gerçekleşmemiş kârların da erkenden gelir yazılması",
+      "E": "Tam Açıklama → Mali tabloların yeterli ve anlaşılır bilgi içermesi"
+    },
+    "answer": "D",
+    "solution": "**D yanlıştır.** İhtiyatlılık, gerçekleşmemiş kârların gelir yazılmamasını gerektirir; erkenden gelir yazmak ihtiyatlılığa aykırıdır. Diğer eşleştirmeler doğrudur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlıştır; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Temel Kavramlar"
     },
     "validYear": 2026,
     "mockExamId": null

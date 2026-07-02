@@ -6,17 +6,17 @@
     "stem": "Tekdüzen Hesap Planı'nda '10 Hazır Değerler' grubu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
       "A": "Duran varlıklar içinde yer alır.",
-      "B": "İşletmenin en likit varlıklarını (nakit ve nakde kolayca dönüşebilen değerleri) kapsar.",
+      "B": "İşletmenin en likit varlıklarını (nakit ve nakde kolayca dönüşebilen değerleri) kapsar ve bilançoda dönen varlıkların başında yer alır.",
       "C": "Yalnızca banka kredilerini izler.",
       "D": "Kaynak (pasif) niteliğindedir.",
       "E": "Yalnızca yabancı para mevcudunu gösterir."
     },
     "answer": "B",
-    "solution": "**Hazır Değerler**, işletmenin nakit para ve istendiğinde değer kaybı olmadan paraya çevrilebilecek varlıklarını (kasa, banka, alınan çekler vb.) kapsar. Bilançoda **dönen varlıkların** en başında, en likit kalemler olarak yer alır.",
+    "solution": "**Hazır Değerler**, nakit ve istendiğinde değer kaybı olmadan paraya çevrilebilecek varlıkları (kasa, banka, alınan çekler vb.) kapsar; bilançoda **dönen varlıkların en başında**, en likit kalemler olarak yer alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hazır Değerler (10'lu grup)"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hazır Değerler"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "finmuh-hazirdeg-gen-0002",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme, tanesi KDV hariç 1.000 TL olan bir malı peşin olarak nakit satmıştır (KDV %20). Bu satışın yevmiye kaydında Kasa hesabına yazılacak tutar kaç TL'dir?",
+    "stem": "İşletme, KDV hariç 1.000 ₺'lik malı peşin (nakit) satmıştır (KDV %20). Bu satışın kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "1.000 TL",
-      "B": "1.200 TL",
-      "C": "800 TL",
-      "D": "1.180 TL",
-      "E": "200 TL"
+      "A": "Kasa hesabı 1.000 ₺ borçlandırılır.",
+      "B": "Kasa hesabı 1.200 ₺ borçlandırılır.",
+      "C": "Hesaplanan KDV hesabı 200 ₺ borçlandırılır.",
+      "D": "Yurt İçi Satışlar hesabı 1.200 ₺ alacaklandırılır.",
+      "E": "Kasa hesabı 800 ₺ borçlandırılır."
     },
     "answer": "B",
-    "solution": "Satış bedeli 1.000 TL, KDV = 1.000 × %20 = 200 TL. Müşteriden tahsil edilen toplam = **1.200 TL** kasaya girer: Kasa (B) 1.200 / Yurt İçi Satışlar (A) 1.000 + Hesaplanan KDV (A) 200.",
+    "solution": "KDV = 1.000 × %20 = 200 ₺; müşteriden tahsil edilen toplam 1.200 ₺ kasaya girer → **Kasa (B) 1.200**. Kayıt: 100 Kasa (B) 1.200 / 600 Yurt İçi Satışlar (A) 1.000 + 391 Hesaplanan KDV (A) 200.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "3065 s. KDV Kanunu; 2026 genel KDV oranı %20 (07.07.2023 düzenlemesi)"
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru-kayıt; sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK; 2026 KDV %20"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,19 +47,19 @@
     "id": "finmuh-hazirdeg-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "Gün sonu kasa sayımında, kayıtlı kasa mevcudu fiili mevcuttan 500 TL fazla çıkmıştır (kasada 500 TL eksik vardır) ve nedeni henüz bilinmemektedir. Yapılması gereken kayıt aşağıdakilerden hangisidir?",
+    "stem": "Gün sonu kasa sayımında kayıtlı kasa mevcudu, fiili mevcuttan 500 ₺ fazla çıkmıştır (kasada 500 ₺ eksik vardır) ve nedeni henüz bilinmemektedir.\n\nBuna göre yapılması gereken kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "100 Kasa (B) 500 / 397 Sayım ve Tesellüm Fazlaları (A) 500",
-      "B": "197 Sayım ve Tesellüm Noksanları (B) 500 / 100 Kasa (A) 500",
-      "C": "689 Diğer Olağandışı Gider (B) 500 / 100 Kasa (A) 500",
-      "D": "100 Kasa (B) 500 / 679 Diğer Olağandışı Gelir (A) 500",
-      "E": "320 Satıcılar (B) 500 / 100 Kasa (A) 500"
+      "A": "197 Sayım ve Tesellüm Noksanları hesabı 500 ₺ borçlandırılır.",
+      "B": "397 Sayım ve Tesellüm Fazlaları hesabı 500 ₺ borçlandırılır.",
+      "C": "100 Kasa hesabı 500 ₺ borçlandırılır.",
+      "D": "689 Diğer Olağandışı Gider hesabı 500 ₺ borçlandırılır.",
+      "E": "679 Diğer Olağandışı Gelir hesabı 500 ₺ alacaklandırılır."
     },
-    "answer": "B",
-    "solution": "Fiili kasa, kayıttan **az** (noksan) ise nedeni bulunana kadar **197 Sayım ve Tesellüm Noksanları** borçlandırılır, Kasa alacaklandırılarak kayıt fiili duruma indirilir: **197 (B) 500 / 100 Kasa (A) 500**. Sebep bulununca 197 kapatılır.",
+    "answer": "A",
+    "solution": "Fiili kasa, kayıttan **az** (noksan) olduğundan nedeni bulunana kadar **197 Sayım ve Tesellüm Noksanları (B) 500 / 100 Kasa (A) 500** kaydı yapılır; kasa fiili duruma indirilir. Neden bulununca 197 kapatılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru-kayıt; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 197 Sayım ve Tesellüm Noksanları"
     },
     "validYear": 2026,
@@ -69,20 +69,20 @@
     "id": "finmuh-hazirdeg-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "Kasa sayımında fiili mevcut, kayıtlı mevcuttan fazla çıkmış ve nedeni belirlenememiştir. Bu durumda alacaklandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin kasasında 2.000 USD bulunmakta olup bu tutar kayıtlara 30 ₺/USD kurundan alınmıştır. Dönem sonu değerleme günündeki kur 33 ₺/USD'dir.\n\nBuna göre yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "197 Sayım ve Tesellüm Noksanları",
-      "B": "397 Sayım ve Tesellüm Fazlaları",
-      "C": "600 Yurt İçi Satışlar",
-      "D": "679 Diğer Olağandışı Gelir ve Kârlar",
-      "E": "102 Bankalar"
+      "A": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
+      "B": "656 Kambiyo Zararları (B) 6.000 / 100 Kasa (A) 6.000",
+      "C": "100 Kasa (B) 66.000 / 646 Kambiyo Kârları (A) 66.000",
+      "D": "100 Kasa (B) 3.000 / 642 Faiz Gelirleri (A) 3.000",
+      "E": "646 Kambiyo Kârları (B) 6.000 / 100 Kasa (A) 6.000"
     },
-    "answer": "B",
-    "solution": "Kasa fazlasında Kasa borçlandırılır, nedeni bulunana kadar **397 Sayım ve Tesellüm Fazlaları** alacaklandırılır: 100 Kasa (B) / 397 (A). Neden belirlenince 397 ilgili hesaba devredilerek kapatılır.",
+    "answer": "A",
+    "solution": "Kur farkı = 2.000 × (33 − 30) = 2.000 × 3 = **6.000 ₺** lehte. Yabancı para kasası değer kazandığından **100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000** kaydı yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 397 Sayım ve Tesellüm Fazlaları"
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280 (YP değerleme); 646 Kambiyo Kârları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "finmuh-hazirdeg-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme, bir müşterisinden olan alacağına karşılık vadesi ileri tarihli bir çek almıştır. Bu işlemde borçlandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 102 BANKALAR | 10.000 | |\n| 101 ALINAN ÇEKLER | | 10.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "103 Verilen Çekler ve Ödeme Emirleri (-)",
-      "B": "101 Alınan Çekler",
-      "C": "320 Satıcılar",
-      "D": "102 Bankalar",
-      "E": "108 Diğer Hazır Değerler"
+      "A": "Müşteriden çek alınması",
+      "B": "İşletmenin satıcısına çek vermesi",
+      "C": "Daha önce alınan çekin bankada tahsil edilmesi",
+      "D": "Bankadan kredi kullanılması",
+      "E": "Kasadan bankaya para yatırılması"
     },
-    "answer": "B",
-    "solution": "İşletmenin **aldığı** çekler **101 Alınan Çekler** hesabında izlenir ve alındığında bu hesap borçlandırılır: 101 Alınan Çekler (B) / 120 Alıcılar (A). 103 ise işletmenin kendi düzenleyip **verdiği** çekler içindir.",
+    "answer": "C",
+    "solution": "Banka mevduatının artması (102 borç) ve elde tutulan çek varlığının azalması (101 alacak), daha önce **alınan çekin bankada tahsil edilmesi**ni gösterir. Çek alınırken 101 borçlanırdı; tahsilde ters yönde kapanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler"
+      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler / 102 Bankalar"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,19 +113,19 @@
     "id": "finmuh-hazirdeg-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme, satıcısına olan borcunu ödemek için kendi çekini düzenleyip vermiştir. Bu işlemde alacaklandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "İşletme, satıcısına olan borcunu ödemek için kendi çekini düzenleyip vermiştir. Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "101 Alınan Çekler",
-      "B": "100 Kasa",
-      "C": "103 Verilen Çekler ve Ödeme Emirleri (-)",
-      "D": "102 Bankalar",
-      "E": "320 Satıcılar"
+      "A": "101 Alınan Çekler hesabı alacaklandırılır.",
+      "B": "103 Verilen Çekler ve Ödeme Emirleri (-) hesabı alacaklandırılır.",
+      "C": "100 Kasa hesabı alacaklandırılır.",
+      "D": "102 Bankalar hesabı doğrudan alacaklandırılır.",
+      "E": "320 Satıcılar hesabı alacaklandırılır."
     },
-    "answer": "C",
-    "solution": "İşletmenin düzenleyip verdiği çekler **103 Verilen Çekler ve Ödeme Emirleri (-)** hesabında izlenir. Çek verildiğinde: 320 Satıcılar (B) / **103 Verilen Çekler ve Ödeme Emirleri (A)**. Çek bankadan ödendiğinde 103 borçlanır, 102 Bankalar alacaklanır.",
+    "answer": "B",
+    "solution": "İşletmenin düzenleyip verdiği çekler **103 Verilen Çekler ve Ödeme Emirleri (-)** hesabında izlenir. Çek verildiğinde: 320 Satıcılar (B) / **103 (A)**. Çek bankadan ödendiğinde 103 borçlanır, 102 Bankalar alacaklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 103 Verilen Çekler ve Ödeme Emirleri (-)"
     },
     "validYear": 2026,
@@ -137,17 +137,17 @@
     "konu": "hazir_degerler",
     "stem": "'103 Verilen Çekler ve Ödeme Emirleri (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Bir kaynak (pasif) hesabıdır, alacak kalanı verir.",
+      "A": "Bir kaynak (pasif) hesabıdır.",
       "B": "Bir gelir hesabıdır.",
       "C": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve bilançoda hazır değerlerden (-) düşülür.",
       "D": "Bir maliyet hesabıdır.",
       "E": "Nazım hesaptır."
     },
     "answer": "C",
-    "solution": "103, dönen varlıklar içinde yer alan bir **aktifi düzenleyici** hesaptır. Normalde **alacak kalanı** verir ve bilançoda hazır değerler tutarından **eksi (-)** olarak gösterilir; henüz bankadan ödenmemiş çek tutarını temsil eder.",
+    "solution": "103, dönen varlıklar içinde yer alan **aktifi düzenleyici** bir hesaptır; **alacak kalanı** verir ve bilançoda hazır değerler tutarından **eksi (-)** gösterilir; henüz bankadan ödenmemiş çek tutarını temsil eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - Aktifi düzenleyici hesaplar"
     },
     "validYear": 2026,
@@ -157,20 +157,20 @@
     "id": "finmuh-hazirdeg-gen-0008",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletmenin daha önce müşterisinden aldığı 10.000 TL'lik çek bankada tahsil edilmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin kasasında 5.000 USD bulunmakta olup bu tutar 34 ₺/USD kurundan kayıtlıdır. Dönem sonu değerleme kuru 31 ₺/USD'ye gerilemiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "101 Alınan Çekler (B) 10.000 / 102 Bankalar (A) 10.000",
-      "B": "102 Bankalar (B) 10.000 / 101 Alınan Çekler (A) 10.000",
-      "C": "100 Kasa (B) 10.000 / 101 Alınan Çekler (A) 10.000",
-      "D": "103 Verilen Çekler (B) 10.000 / 102 Bankalar (A) 10.000",
-      "E": "102 Bankalar (B) 10.000 / 600 Yurt İçi Satışlar (A) 10.000"
+      "A": "100 Kasa (B) 15.000 / 646 Kambiyo Kârları (A) 15.000",
+      "B": "656 Kambiyo Zararları (B) 15.000 / 100 Kasa (A) 15.000",
+      "C": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000",
+      "D": "100 Kasa (B) 15.000 / 656 Kambiyo Zararları (A) 15.000",
+      "E": "780 Finansman Giderleri (B) 15.000 / 100 Kasa (A) 15.000"
     },
     "answer": "B",
-    "solution": "Çek bankada tahsil edilince banka mevduatı (varlık) artar → **102 Bankalar (B)**; elde tutulan çek varlığı azalır → **101 Alınan Çekler (A)**. Kayıt: 102 Bankalar (B) 10.000 / 101 Alınan Çekler (A) 10.000.",
+    "solution": "Kur farkı = 5.000 × (34 − 31) = 5.000 × 3 = **15.000 ₺** aleyhte. Yabancı para kasası değer kaybettiğinden **656 Kambiyo Zararları (B) 15.000 / 100 Kasa (A) 15.000** kaydı yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler / 102 Bankalar işleyişi"
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 656 Kambiyo Zararları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,19 +179,19 @@
     "id": "finmuh-hazirdeg-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme kasasındaki 15.000 TL'yi bankadaki mevduat hesabına yatırmıştır. Bu işlemin yevmiye kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme kasasındaki 15.000 ₺'yi bankadaki mevduat hesabına yatırmıştır. Bu işlemin bilanço büyüklüğüne etkisi ve kaydı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "100 Kasa (B) 15.000 / 102 Bankalar (A) 15.000",
-      "B": "102 Bankalar (B) 15.000 / 100 Kasa (A) 15.000",
-      "C": "102 Bankalar (B) 15.000 / 600 Yurt İçi Satışlar (A) 15.000",
-      "D": "100 Kasa (B) 15.000 / 300 Banka Kredileri (A) 15.000",
-      "E": "108 Diğer Hazır Değerler (B) 15.000 / 100 Kasa (A) 15.000"
+      "A": "102 Bankalar borçlandırılır, 100 Kasa alacaklandırılır; aktif toplamı değişmez.",
+      "B": "100 Kasa borçlandırılır, 102 Bankalar alacaklandırılır; aktif toplamı artar.",
+      "C": "102 Bankalar borçlandırılır, 600 Yurt İçi Satışlar alacaklandırılır.",
+      "D": "300 Banka Kredileri alacaklandırılır; pasif artar.",
+      "E": "İşlem yalnızca nazım hesaplarda izlenir."
     },
-    "answer": "B",
-    "solution": "Banka mevduatı (varlık) arttığı için **102 Bankalar borç**, kasa (varlık) azaldığı için **100 Kasa alacak** çalışır: 102 Bankalar (B) 15.000 / 100 Kasa (A) 15.000. İki aktif hesap arası aktarım; aktif toplamı değişmez.",
+    "answer": "A",
+    "solution": "Banka mevduatı artar → **102 Bankalar (B)**; kasa azalır → **100 Kasa (A)**. İki aktif hesap arası aktarımda **aktif toplamı değişmez**, yalnızca bileşim değişir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru-kayıt; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa / 102 Bankalar"
     },
     "validYear": 2026,
@@ -201,19 +201,19 @@
     "id": "finmuh-hazirdeg-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletmenin bankadaki vadeli mevduatına dönem içinde 3.000 TL faiz tahakkuk edip hesaba geçmiştir. Bu faiz geliri için alacaklandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin bankadaki vadeli mevduatına dönem içinde 3.000 ₺ faiz tahakkuk edip hesaba geçmiştir (stopaj ihmal edilecektir). Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "642 Faiz Gelirleri",
-      "B": "660 Kısa Vadeli Borçlanma Giderleri",
-      "C": "646 Kambiyo Kârları",
-      "D": "600 Yurt İçi Satışlar",
-      "E": "649 Diğer Olağan Gelir ve Kârlar"
+      "A": "642 Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır.",
+      "B": "660 Kısa Vadeli Borçlanma Giderleri hesabı 3.000 ₺ borçlandırılır.",
+      "C": "646 Kambiyo Kârları hesabı 3.000 ₺ alacaklandırılır.",
+      "D": "600 Yurt İçi Satışlar hesabı 3.000 ₺ alacaklandırılır.",
+      "E": "102 Bankalar hesabı 3.000 ₺ alacaklandırılır."
     },
     "answer": "A",
-    "solution": "Mevduat faizi bir olağan finansal gelirdir ve **642 Faiz Gelirleri** hesabına alacak yazılır: 102 Bankalar (B) 3.000 / **642 Faiz Gelirleri (A) 3.000** (varsa stopaj ayrıca dikkate alınır).",
+    "solution": "Mevduat faizi olağan bir finansal gelirdir: **102 Bankalar (B) 3.000 / 642 Faiz Gelirleri (A) 3.000**. Dolayısıyla 642 Faiz Gelirleri alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 642 Faiz Gelirleri"
     },
     "validYear": 2026,
@@ -223,20 +223,20 @@
     "id": "finmuh-hazirdeg-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "Yabancı para cinsinden kasa mevcudu bulunan bir işletmede, dönem sonunda değerleme günündeki kur, kayıtlı kura göre yükselmiştir. Bu olumlu kur farkı için alacaklandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "Vergi Usul Kanunu'na göre değerleme ölçüleri ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
     "options": {
-      "A": "656 Kambiyo Zararları",
-      "B": "646 Kambiyo Kârları",
-      "C": "642 Faiz Gelirleri",
-      "D": "197 Sayım ve Tesellüm Noksanları",
-      "E": "780 Finansman Giderleri"
+      "A": "Kasadaki Türk Lirası → borsa rayici",
+      "B": "Kasadaki yabancı paralar → itibari (nominal) değer",
+      "C": "Kasadaki Türk Lirası → itibari (nominal) değer; yabancı paralar → borsa rayici/Maliye Bakanlığı kuru",
+      "D": "Kasadaki Türk Lirası → maliyet bedeli; yabancı paralar → emsal bedel",
+      "E": "Kasadaki yabancı paralar → tasfiye değeri"
     },
-    "answer": "B",
-    "solution": "Yabancı para değerlemesinde kur **yükselirse** işletme lehine kur farkı doğar; Kasa borçlandırılıp **646 Kambiyo Kârları** alacaklandırılır. Kur düşerse 656 Kambiyo Zararları borçlandırılır.",
+    "answer": "C",
+    "solution": "VUK'a göre Türk Lirası kasa mevcudu **itibari (nominal) değer** (md. 284) ile; yabancı paralar **borsa rayici**, yoksa **Maliye Bakanlığı'nca tespit edilen kur** (md. 280) ile değerlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "VUK md. 280 (YP değerlemesi); 646 Kambiyo Kârları"
+      "styleRef": "SGS Finansal Muhasebe (hangisi doğru; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280 ve 284"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,51 +245,7 @@
     "id": "finmuh-hazirdeg-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "Vergi Usul Kanunu'na göre işletmenin kasasındaki yabancı paralar değerleme gününde hangi ölçü ile değerlenir?",
-    "options": {
-      "A": "Maliyet bedeli",
-      "B": "Tasfiye değeri",
-      "C": "Borsa rayici; yoksa Maliye Bakanlığı'nca tespit ve ilan edilen kur (döviz kuru)",
-      "D": "İtibari (nominal) değer",
-      "E": "Emsal bedel"
-    },
-    "answer": "C",
-    "solution": "VUK'a göre yabancı paralar **borsa rayici** ile, borsa rayici yoksa **Maliye Bakanlığı'nca tespit edilen kur** ile değerlenir. Türk parası (kasa TL mevcudu) ise itibari (nominal) değerle değerlenir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "VUK md. 280 (yabancı paralar); md. 284 (kasa mevcudu)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-hazirdeg-gen-0013",
-    "ders": "finansal_muhasebe",
-    "konu": "hazir_degerler",
-    "stem": "Türk Lirası cinsinden kasa mevcudu (nakit para) Vergi Usul Kanunu'na göre hangi değerleme ölçüsü ile değerlenir?",
-    "options": {
-      "A": "İtibari (nominal) değer",
-      "B": "Maliyet bedeli",
-      "C": "Borsa rayici",
-      "D": "Mukayyet (kayıtlı) değer üzerinden reeskont",
-      "E": "Vergi değeri"
-    },
-    "answer": "A",
-    "solution": "Kasadaki Türk Lirası mevcudu **itibari (nominal) değer** ile değerlenir (VUK md. 284). Yani üzerinde yazılı değeriyle bilançoya alınır; bir değerleme farkı doğmaz.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "VUK md. 284 (itibari değer)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "finmuh-hazirdeg-gen-0014",
-    "ders": "finansal_muhasebe",
-    "konu": "hazir_degerler",
-    "stem": "İşletme daha önce satıcısına verdiği 8.000 TL'lik çek, satıcı tarafından bankaya ibraz edilerek işletmenin banka hesabından ödenmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme daha önce satıcısına verdiği 8.000 ₺'lik çek, satıcı tarafından bankaya ibraz edilerek işletmenin banka hesabından ödenmiştir.\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "102 Bankalar (B) 8.000 / 103 Verilen Çekler ve Ödeme Emirleri (A) 8.000",
       "B": "103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000",
@@ -298,17 +254,17 @@
       "E": "103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 320 Satıcılar (A) 8.000"
     },
     "answer": "B",
-    "solution": "Çek verildiğinde 103 alacaklanmıştı. Çek bankadan **ödenince**, düzenleyici hesap kapatılır: **103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000**. Banka mevduatı azalır.",
+    "solution": "Çek verildiğinde 103 alacaklanmıştı. Çek bankadan **ödenince** düzenleyici hesap kapatılır: **103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000**; banka mevduatı azalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 103 / 102 işleyişi"
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 103 / 102"
     },
     "validYear": 2026,
     "mockExamId": null
   },
   {
-    "id": "finmuh-hazirdeg-gen-0015",
+    "id": "finmuh-hazirdeg-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
     "stem": "Aşağıdakilerden hangisi '108 Diğer Hazır Değerler' hesabında izlenmeye en uygun kalemdir?",
@@ -320,11 +276,55 @@
       "E": "Stoktaki ticari mallar"
     },
     "answer": "B",
-    "solution": "**108 Diğer Hazır Değerler**, niteliği itibarıyla hazır değer sayılan ancak 100-103 hesaplarına girmeyen kalemleri (vadesi gelmiş kuponlar, tahsil edilmek üzere gönderilen havaleler, damgalı çekler vb.) izler.",
+    "solution": "**108 Diğer Hazır Değerler**, niteliği itibarıyla hazır değer sayılan ancak 100-103 hesaplarına girmeyen kalemleri (vadesi gelmiş kuponlar, tahsile gönderilen havaleler vb.) izler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 108 Diğer Hazır Değerler"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0014",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, müşterisinden aldığı 12.000 ₺'lik çeki bir satıcısına borcuna karşılık ciro etmiştir.\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "320 Satıcılar (B) 12.000 / 101 Alınan Çekler (A) 12.000",
+      "B": "101 Alınan Çekler (B) 12.000 / 320 Satıcılar (A) 12.000",
+      "C": "103 Verilen Çekler ve Ödeme Emirleri (B) 12.000 / 101 Alınan Çekler (A) 12.000",
+      "D": "320 Satıcılar (B) 12.000 / 102 Bankalar (A) 12.000",
+      "E": "100 Kasa (B) 12.000 / 101 Alınan Çekler (A) 12.000"
+    },
+    "answer": "A",
+    "solution": "Elde tutulan çek (101) ciro ile çıkar → **101 Alınan Çekler alacaklanır**; satıcıya olan borç azaldığı için **320 Satıcılar borçlanır**: 320 (B) 12.000 / 101 (A) 12.000. Ciro edilen çek işletmenin kendi çeki olmadığından 103 kullanılmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-ciro; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler (ciro)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0015",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Kasa sayımında fiili mevcut, kayıtlı mevcuttan 800 ₺ fazla çıkmış ve nedeni belirlenememiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "100 Kasa (B) 800 / 397 Sayım ve Tesellüm Fazlaları (A) 800",
+      "B": "197 Sayım ve Tesellüm Noksanları (B) 800 / 100 Kasa (A) 800",
+      "C": "100 Kasa (B) 800 / 679 Diğer Olağandışı Gelir (A) 800",
+      "D": "397 Sayım ve Tesellüm Fazlaları (B) 800 / 100 Kasa (A) 800",
+      "E": "100 Kasa (B) 800 / 642 Faiz Gelirleri (A) 800"
+    },
+    "answer": "A",
+    "solution": "Kasa fazlasında Kasa borçlanır, nedeni bulunana kadar **397 Sayım ve Tesellüm Fazlaları** alacaklanır: **100 Kasa (B) 800 / 397 (A) 800**. Neden belirlenince 397 ilgili hesaba devredilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 397 Sayım ve Tesellüm Fazlaları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "finmuh-hazirdeg-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme, KDV hariç 5.000 TL'lik ticari malı %20 KDV ile satın alıp bedelini nakit ödemiştir. Bu işlemde Kasa hesabına alacak yazılacak tutar kaç TL'dir?",
+    "stem": "'100 Kasa' hesabının işleyişi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "5.000 TL",
-      "B": "1.000 TL",
-      "C": "6.000 TL",
-      "D": "4.000 TL",
-      "E": "5.900 TL"
+      "A": "Nakit girişleri hesabın borç tarafına kaydedilir.",
+      "B": "Nakit çıkışları hesabın alacak tarafına kaydedilir.",
+      "C": "Hesap normalde borç kalanı verir.",
+      "D": "Hesap alacak kalanı vererek 'eksi kasa' durumu gösterebilir.",
+      "E": "Bir aktif (varlık) hesabıdır."
     },
-    "answer": "C",
-    "solution": "Mal 5.000 TL + KDV (5.000 × %20 = 1.000) = 6.000 TL nakit ödenir → Kasa **alacak 6.000 TL**. Kayıt: 153 Ticari Mallar (B) 5.000 + 191 İndirilecek KDV (B) 1.000 / 100 Kasa (A) 6.000.",
+    "answer": "D",
+    "solution": "**D yanlıştır.** Kasa hesabı **alacak kalanı veremez** (olmayan para ödenemez). Kaydi kasanın fiiliden yüksek olması genelde belgesiz/örtülü işlem işaretidir, ancak hesabın kendisi eksi kalan gösteremez. Diğer ifadeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "3065 s. KDV Kanunu; 191 İndirilecek KDV; 2026 KDV %20"
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa; kasa denetimi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-hazirdeg-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "'100 Kasa' hesabının borç kalanının, işletmenin fiili kasa mevcudundan sürekli fazla olması (kaydi kasanın şişmesi) çoğunlukla neyin göstergesi olarak yorumlanır?",
+    "stem": "İşletme, KDV hariç 50.000 ₺'lik ticari malı %20 KDV ile satın alıp bedelini nakit ödemiştir.\n\nBu işlemde Kasa hesabına yazılacak tutar ve tarafı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmenin çok kârlı olduğunun",
-      "B": "Kaydı yapılmamış ödemeler ya da belgesiz/örtülü işlemler bulunabileceğinin",
-      "C": "Amortisman ayrılmadığının",
-      "D": "Stokların değer kaybettiğinin",
-      "E": "Sermayenin azaldığının"
+      "A": "50.000 ₺ alacak",
+      "B": "60.000 ₺ alacak",
+      "C": "60.000 ₺ borç",
+      "D": "10.000 ₺ alacak",
+      "E": "50.000 ₺ borç"
     },
     "answer": "B",
-    "solution": "Kasa hesabı hiçbir zaman **alacak kalanı** veremez (olmayan para ödenemez) ve kaydi kasanın fiili mevcuttan sürekli yüksek olması genellikle **belgelendirilmemiş ödemeler / örtülü kazanç dağıtımı** gibi durumların işareti olarak değerlendirilir. Bu nedenle kasa denetimi önemlidir.",
+    "solution": "Toplam ödenen = 50.000 + (50.000 × %20 = 10.000) = 60.000 ₺ nakit çıkışı → **Kasa (A) 60.000**. Kayıt: 153 Ticari Mallar (B) 50.000 + 191 İndirilecek KDV (B) 10.000 / 100 Kasa (A) 60.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa; kasa denetimi ilkeleri"
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-kayıt; sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK; 191 İndirilecek KDV; 2026 KDV %20"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "finmuh-hazirdeg-gen-0018",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "Bilançoda hazır değerler grubu içindeki hesapların dizilişinde genel olarak esas alınan ölçüt aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 335 PERSONELE BORÇLAR | 12.000 | |\n| 100 KASA | | 12.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Hesap kodunun büyüklüğü (küçükten büyüğe likidite azalır varsayımı yerine) — likidite (paraya çevrilebilme hızı)",
-      "B": "Tutarların büyüklüğü",
-      "C": "Alfabetik sıra",
-      "D": "Vergi oranı",
-      "E": "İşlem tarihi"
+      "A": "Personele tahakkuk eden ücretin gider yazılması",
+      "B": "Daha önce tahakkuk ettirilmiş net ücretin personele nakden ödenmesi",
+      "C": "Personelden alacak doğması",
+      "D": "Kasaya nakit girişi",
+      "E": "Personel için sigorta priminin tahakkuku"
     },
-    "answer": "A",
-    "solution": "Bilanço aktifi genel olarak **likidite** (nakde dönüşme hızı) esasına göre sıralanır; en likit kalem olan hazır değerler en üstte yer alır ve grup içinde de nakde en yakın kalemler (kasa, bankalar) önce gösterilir.",
+    "answer": "B",
+    "solution": "Kasadan nakit çıkışı (100 alacak) ve personele olan borcun azalması (335 borç), daha önce tahakkuk ettirilmiş **net ücretin personele nakden ödenmesi**ni gösterir. Gider tahakkuku önceden yapıldığından burada gider hesabı çalışmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço aktifinin likidite esasına göre sıralanması"
+      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 335 Personele Borçlar / 100 Kasa"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-hazirdeg-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletme, personeline ödenmek üzere kasadan 12.000 TL ücret ödemesi yapmıştır (net ücret, ilgili tahakkuk daha önce yapılmıştır ve 335 Personele Borçlar hesabında izlenmektedir). Bu ödemede Kasa hesabı nasıl çalışır?",
+    "stem": "Bilançoda hazır değerler grubu içindeki hesapların dizilişinde esas alınan ölçüt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Borç 12.000 TL",
-      "B": "Alacak 12.000 TL",
-      "C": "Hem borç hem alacak 12.000 TL",
-      "D": "Kasa çalışmaz, yalnızca 770 Genel Yönetim Giderleri çalışır",
-      "E": "Borç 6.000 TL"
+      "A": "Likidite (paraya çevrilebilme hızı)",
+      "B": "Tutarların büyüklüğü",
+      "C": "Alfabetik sıra",
+      "D": "Vergi oranı",
+      "E": "İşlem tarihi"
     },
-    "answer": "B",
-    "solution": "Kasadan nakit **çıkışı** olduğu için Kasa (varlık) azalır → **alacak** 12.000 TL. Kayıt: 335 Personele Borçlar (B) 12.000 / 100 Kasa (A) 12.000. Gider tahakkuku daha önce yapıldığından bu aşamada gider hesabı çalışmaz.",
+    "answer": "A",
+    "solution": "Bilanço aktifi genel olarak **likidite** (nakde dönüşme hızı) esasına göre sıralanır; en likit grup olan hazır değerler en üstte, grup içinde de nakde en yakın kalemler (kasa, bankalar) önce gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa; 335 Personele Borçlar"
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço aktifinin likidite esası"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -430,11 +430,11 @@
       "E": "108 Diğer Hazır Değerler"
     },
     "answer": "D",
-    "solution": "**110 Hisse Senetleri**, '11 Menkul Kıymetler' grubunda yer alır; hazır değer değildir. Hazır Değerler grubu 100 Kasa, 101 Alınan Çekler, 102 Bankalar, 103 Verilen Çekler ve Ödeme Emirleri (-) ve 108 Diğer Hazır Değerler hesaplarından oluşur.",
+    "solution": "**110 Hisse Senetleri**, '11 Menkul Kıymetler' grubundadır; hazır değer değildir. Hazır Değerler grubu 100 Kasa, 101 Alınan Çekler, 102 Bankalar, 103 Verilen Çekler ve Ödeme Emirleri (-) ve 108 Diğer Hazır Değerler'den oluşur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe biçimine yakın (kavram + uygulama karışık)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hazır Değerler ve Menkul Kıymetler grupları"
+      "styleRef": "SGS Finansal Muhasebe (hangisi yer almaz; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hazır Değerler ve Menkul Kıymetler"
     },
     "validYear": 2026,
     "mockExamId": null
