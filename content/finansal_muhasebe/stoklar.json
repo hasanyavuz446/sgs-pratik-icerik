@@ -394,5 +394,49 @@
     },
     "validYear": 2026,
     "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0019",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Hareketli ağırlıklı ortalama maliyet yöntemini kullanan işletmenin bir ticari mal kalemine ilişkin hareketleri şöyledir:\n\n| Tarih | İşlem | Miktar | Birim Maliyet |\n|---|---|---|---|\n| 01.04 | Dönem başı | 100 br | 20 ₺ |\n| 08.04 | Alış | 300 br | 24 ₺ |\n| 15.04 | Satış | 150 br | — |\n\nBuna göre 15.04 satışının maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "3.000",
+      "B": "3.450",
+      "C": "3.600",
+      "D": "9.200",
+      "E": "5.750"
+    },
+    "answer": "B",
+    "solution": "08.04 alışından sonra güncel ortalama birim maliyet = (100 × 20 + 300 × 24) ÷ 400 = 9.200 ÷ 400 = **23 ₺**. 15.04 satışının maliyeti = 150 × 23 = **3.450 ₺**. Hareketli ortalamada her alıştan sonra ortalama güncellenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-hareketli ortalama; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar; hareketli ağırlıklı ortalama"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-stok-gen-0020",
+    "ders": "finansal_muhasebe",
+    "konu": "stoklar",
+    "stem": "Bir stok kaleminin maliyeti 90.000 ₺'dir. Bu stokun tahmini satış fiyatı 100.000 ₺, satışı tamamlamak için katlanılacak gider 8.000 ₺ ve tahmini satış gideri 12.000 ₺'dir.\n\nTMS 2'ye göre bu stok için ayrılması gereken değer düşüklüğü karşılığı kaç ₺'dir?",
+    "options": {
+      "A": "Karşılık ayrılmaz",
+      "B": "8.000",
+      "C": "10.000",
+      "D": "12.000",
+      "E": "20.000"
+    },
+    "answer": "C",
+    "solution": "Net gerçekleşebilir değer (NGD) = Tahmini satış fiyatı − tamamlama gideri − satış gideri = 100.000 − 8.000 − 12.000 = **80.000 ₺**. Maliyet (90.000) > NGD (80.000) olduğundan stok NGD ile değerlenir ve **90.000 − 80.000 = 10.000 ₺** değer düşüklüğü karşılığı ayrılır (654 Karşılık Giderleri / 158 Stok Değer Düşüklüğü Karşılığı).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-NGD; sınav stiline kalibre)",
+      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değer"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   }
 ]
