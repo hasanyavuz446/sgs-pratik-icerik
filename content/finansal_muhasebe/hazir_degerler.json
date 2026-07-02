@@ -438,5 +438,885 @@
     },
     "validYear": 2026,
     "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0021",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, satıcısına olan 40.000 ₺ borcunu banka havalesiyle ödemiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000",
+      "B": "102 Bankalar (B) 40.000 / 320 Satıcılar (A) 40.000",
+      "C": "320 Satıcılar (B) 40.000 / 100 Kasa (A) 40.000",
+      "D": "102 Bankalar (B) 40.000 / 100 Kasa (A) 40.000",
+      "E": "320 Satıcılar (B) 40.000 / 103 Verilen Çekler ve Ödeme Emirleri (A) 40.000"
+    },
+    "answer": "A",
+    "solution": "Borç azalır → **320 Satıcılar (B)**; banka mevduatı (varlık) azalır → **102 Bankalar (A)**. Kayıt: 320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar / 320 Satıcılar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0022",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin müşterisi, senetsiz ticari borcuna karşılık 18.000 ₺'yi EFT ile işletmenin banka hesabına göndermiştir. Bu tahsilatın kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "120 Alıcılar (B) 18.000 / 102 Bankalar (A) 18.000",
+      "B": "102 Bankalar (B) 18.000 / 120 Alıcılar (A) 18.000",
+      "C": "102 Bankalar (B) 18.000 / 600 Yurt İçi Satışlar (A) 18.000",
+      "D": "100 Kasa (B) 18.000 / 120 Alıcılar (A) 18.000",
+      "E": "102 Bankalar (B) 18.000 / 121 Alacak Senetleri (A) 18.000"
+    },
+    "answer": "B",
+    "solution": "Banka mevduatı artar → **102 Bankalar (B)**; alıcılardan alacak azalır → **120 Alıcılar (A)**. Kayıt: 102 Bankalar (B) 18.000 / 120 Alıcılar (A) 18.000.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar / 120 Alıcılar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0023",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, 10.000 ₺ + %20 KDV tutarındaki malı kredi kartıyla satmıştır. Tutar henüz banka hesabına geçmemiş, kredi kartından alacak olarak izlenmektedir. Bu satışta borçlandırılacak hazır değer hesabı ve tutarı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "108 Diğer Hazır Değerler — 12.000 ₺",
+      "B": "100 Kasa — 12.000 ₺",
+      "C": "102 Bankalar — 10.000 ₺",
+      "D": "101 Alınan Çekler — 12.000 ₺",
+      "E": "120 Alıcılar — 12.000 ₺"
+    },
+    "answer": "A",
+    "solution": "Kredi kartı satışında tutar banka hesabına geçene kadar **108 Diğer Hazır Değerler (Kredi Kartından Alacaklar)** hesabında izlenir: 108 (B) 12.000 / 600 (A) 10.000 + 391 (A) 2.000. Banka ödeyince 102/108 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-kredi kartı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 108 Diğer Hazır Değerler; 3065 s. KDVK"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0024",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin kasasında 3.000 USD bulunmakta olup 30 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 34 ₺/USD'dir. Bu değerlemede oluşan kur farkı ve kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "12.000 ₺ lehte; 100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
+      "B": "12.000 ₺ aleyhte; 656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000",
+      "C": "4.000 ₺ lehte; 100 Kasa (B) 4.000 / 646 Kambiyo Kârları (A) 4.000",
+      "D": "102.000 ₺ lehte; 100 Kasa (B) 102.000 / 646 Kambiyo Kârları (A) 102.000",
+      "E": "12.000 ₺ lehte; 100 Kasa (B) 12.000 / 642 Faiz Gelirleri (A) 12.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 3.000 × (34 − 30) = **12.000 ₺ lehte**. Yabancı para kasası değer kazandığından: **100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 646 Kambiyo Kârları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0025",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin kasasında 4.000 USD bulunmakta olup 36 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 33 ₺/USD'ye gerilemiştir. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
+      "B": "656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000",
+      "C": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000",
+      "D": "100 Kasa (B) 12.000 / 656 Kambiyo Zararları (A) 12.000",
+      "E": "780 Finansman Giderleri (B) 12.000 / 100 Kasa (A) 12.000"
+    },
+    "answer": "B",
+    "solution": "Kur farkı = 4.000 × (36 − 33) = **12.000 ₺ aleyhte**. Yabancı para kasası değer kaybettiğinden: **656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 656 Kambiyo Zararları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0026",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Kasa sayımında belirlenen 2.000 ₺'lik noksanlığın, kasadan sorumlu veznedarın dikkatsizliğinden kaynaklandığı ve kendisinden tahsil edileceği tespit edilmiştir. Daha önce '197 Sayım ve Tesellüm Noksanları'nda izlenen bu tutarın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "135 Personelden Alacaklar (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
+      "B": "197 Sayım ve Tesellüm Noksanları (B) 2.000 / 135 Personelden Alacaklar (A) 2.000",
+      "C": "770 Genel Yönetim Giderleri (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
+      "D": "100 Kasa (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
+      "E": "689 Diğer Olağandışı Gider (B) 2.000 / 135 Personelden Alacaklar (A) 2.000"
+    },
+    "answer": "A",
+    "solution": "Noksanlık sorumluya yükleneceğinden ondan alacak doğar → **135 Personelden Alacaklar (B) 2.000**; geçici hesap kapatılır → **197 Sayım ve Tesellüm Noksanları (A) 2.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 135 Personelden Alacaklar / 197"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0027",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Kasa sayımında belirlenen 6.000 ₺'lik fazlalığın, kaydı unutulmuş peşin bir mal satışından (KDV dâhil) kaynaklandığı anlaşılmıştır (KDV %20). '397 Sayım ve Tesellüm Fazlaları'nda izlenen tutarın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
+      "B": "600 Yurt İçi Satışlar (B) 6.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
+      "C": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 679 Diğer Olağandışı Gelir (A) 6.000",
+      "D": "100 Kasa (B) 6.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
+      "E": "397 Sayım ve Tesellüm Fazlaları (B) 5.000 / 600 Yurt İçi Satışlar (A) 5.000"
+    },
+    "answer": "A",
+    "solution": "Fazlalığın nedeni kaydı unutulan satıştır (6.000 = 5.000 satış + 1.000 KDV). Geçici hesap kapatılır: **397 (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 397; 3065 s. KDVK"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0028",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin bankası, hesap işletim ve havale masrafı olarak hesaptan 500 ₺ kesmiştir. Bu banka masrafının kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "653 Komisyon Giderleri (B) 500 / 102 Bankalar (A) 500",
+      "B": "102 Bankalar (B) 500 / 653 Komisyon Giderleri (A) 500",
+      "C": "642 Faiz Gelirleri (B) 500 / 102 Bankalar (A) 500",
+      "D": "102 Bankalar (B) 500 / 600 Yurt İçi Satışlar (A) 500",
+      "E": "770 Genel Yönetim Giderleri (B) 500 / 100 Kasa (A) 500"
+    },
+    "answer": "A",
+    "solution": "Banka masrafı/komisyonu bir olağan giderdir: **653 Komisyon Giderleri (B) 500 / 102 Bankalar (A) 500**. Banka mevduatı azalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 653 Komisyon Giderleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0029",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Perakende satış yapan işletme, gün sonunda ödeme kaydedici cihaz (yazar kasa) raporuna göre 5.000 ₺ + %20 KDV tutarında nakit hasılat elde etmiştir. Bu günlük hasılatın kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "100 Kasa (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
+      "B": "100 Kasa (B) 5.000 / 600 Yurt İçi Satışlar (A) 5.000",
+      "C": "600 Yurt İçi Satışlar (B) 6.000 / 100 Kasa (A) 6.000",
+      "D": "102 Bankalar (B) 6.000 / 600 Yurt İçi Satışlar (A) 6.000",
+      "E": "100 Kasa (B) 6.000 / 649 Diğer Olağan Gelir (A) 6.000"
+    },
+    "answer": "A",
+    "solution": "Nakit hasılat kasaya girer: **100 Kasa (B) 6.000** (5.000 + %20 KDV 1.000) / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT; VUK md. 233 (ÖKC fişi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0030",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, personeline bir iş için 3.000 ₺ nakit avans vermiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "196 Personel Avansları (B) 3.000 / 100 Kasa (A) 3.000",
+      "B": "100 Kasa (B) 3.000 / 196 Personel Avansları (A) 3.000",
+      "C": "770 Genel Yönetim Giderleri (B) 3.000 / 100 Kasa (A) 3.000",
+      "D": "335 Personele Borçlar (B) 3.000 / 100 Kasa (A) 3.000",
+      "E": "135 Personelden Alacaklar (B) 3.000 / 335 Personele Borçlar (A) 3.000"
+    },
+    "answer": "A",
+    "solution": "Verilen avans, kapatılana kadar bir alacak niteliğindedir: **196 Personel Avansları (B) 3.000 / 100 Kasa (A) 3.000**. Avans harcanıp belgelenince gider hesabına aktarılıp 196 kapatılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 196 Personel Avansları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0031",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "TMS 7 (Nakit Akış Tablosu) açısından 'nakit ve nakit benzerleri' ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Yalnızca kasadaki nakdi kapsar.",
+      "B": "Kasa, vadesiz banka mevduatı ve değeri kesine yakın, kısa vadeli, likit yatırımları kapsar.",
+      "C": "Maddi duran varlıkları kapsar.",
+      "D": "Ortaklardan alacakları kapsar.",
+      "E": "Uzun vadeli tahvil yatırımlarını kapsar."
+    },
+    "answer": "B",
+    "solution": "Nakit ve nakit benzerleri; **kasa, vadesiz mevduat** ve değeri belirli, kısa vadeli, kolayca nakde çevrilebilen **yüksek likiditeli yatırımları** kapsar. Uzun vadeli/riskli yatırımlar bu kapsama girmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (standart-kavram; sınav stiline kalibre)",
+      "legislationRef": "TMS 7 - nakit ve nakit benzerleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0032",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "'135 Personelden Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Bir kaynak (pasif) hesabıdır, alacak kalanı verir.",
+      "B": "Bir dönen varlık (aktif) hesabıdır; personelden olan alacakları izler, borç kalanı verir.",
+      "C": "Bir gelir tablosu hesabıdır.",
+      "D": "Aktifi düzenleyici bir hesaptır, alacak kalanı verir.",
+      "E": "Bir özkaynak hesabıdır."
+    },
+    "answer": "B",
+    "solution": "**135 Personelden Alacaklar**, işletmenin personelinden olan (avans dışı) alacaklarını izleyen bir **dönen varlık (aktif)** hesabıdır; normalde **borç kalanı** verir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 135 Personelden Alacaklar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0033",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Havale ve EFT arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Havale farklı bankalar arasında, EFT aynı banka içinde yapılır.",
+      "B": "Havale genellikle aynı banka içindeki hesaplar arasında, EFT ise farklı bankalar arasında para transferidir.",
+      "C": "İkisi de yalnızca nakit ile yapılır.",
+      "D": "Havale yalnızca yurt dışına yapılır.",
+      "E": "EFT yalnızca döviz transferidir."
+    },
+    "answer": "B",
+    "solution": "**Havale** genellikle aynı banka içindeki hesaplar arası, **EFT (Elektronik Fon Transferi)** ise farklı bankalar arasındaki para transferidir. İkisinde de banka mevduat hesabı (102) çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "Bankacılık işlemleri - havale/EFT"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0034",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin döviz cinsinden banka mevduatı bulunmaktadır: 2.000 EUR, 40 ₺/EUR kurundan kayıtlıdır. Değerleme günü kuru 43 ₺/EUR'dur. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "102 Bankalar (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
+      "B": "656 Kambiyo Zararları (B) 6.000 / 102 Bankalar (A) 6.000",
+      "C": "102 Bankalar (B) 6.000 / 642 Faiz Gelirleri (A) 6.000",
+      "D": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
+      "E": "102 Bankalar (B) 86.000 / 646 Kambiyo Kârları (A) 86.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 2.000 × (43 − 40) = **6.000 ₺ lehte**. Döviz banka hesabı değer kazandığından: **102 Bankalar (B) 6.000 / 646 Kambiyo Kârları (A) 6.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 646 Kambiyo Kârları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0035",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, personeline verdiği 3.000 ₺'lik iş avansının tamamının genel yönetim gideri niteliğindeki bir harcamayla belgelendirildiğini tespit etmiştir. Avansın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir? (KDV ihmal edilecektir.)",
+    "options": {
+      "A": "770 Genel Yönetim Giderleri (B) 3.000 / 196 Personel Avansları (A) 3.000",
+      "B": "196 Personel Avansları (B) 3.000 / 770 Genel Yönetim Giderleri (A) 3.000",
+      "C": "196 Personel Avansları (B) 3.000 / 100 Kasa (A) 3.000",
+      "D": "770 Genel Yönetim Giderleri (B) 3.000 / 100 Kasa (A) 3.000",
+      "E": "135 Personelden Alacaklar (B) 3.000 / 196 Personel Avansları (A) 3.000"
+    },
+    "answer": "A",
+    "solution": "Avans harcanıp belgelenince ilgili gider hesabına aktarılır ve avans hesabı kapatılır: **770 Genel Yönetim Giderleri (B) 3.000 / 196 Personel Avansları (A) 3.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 196 Personel Avansları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0036",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin banka hesabından, verdiği otomatik ödeme talimatı gereği elektrik faturası 1.500 ₺ (KDV ihmal) ödenmiştir. Bu ödemenin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "770 Genel Yönetim Giderleri (B) 1.500 / 102 Bankalar (A) 1.500",
+      "B": "102 Bankalar (B) 1.500 / 770 Genel Yönetim Giderleri (A) 1.500",
+      "C": "100 Kasa (B) 1.500 / 770 Genel Yönetim Giderleri (A) 1.500",
+      "D": "770 Genel Yönetim Giderleri (B) 1.500 / 100 Kasa (A) 1.500",
+      "E": "320 Satıcılar (B) 1.500 / 102 Bankalar (A) 1.500"
+    },
+    "answer": "A",
+    "solution": "Elektrik gideri gider hesabına yazılır ve banka mevduatı azalır: **770 Genel Yönetim Giderleri (B) 1.500 / 102 Bankalar (A) 1.500** (idari birim varsayımıyla).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar / gider hesabı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0037",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin kasasından çalınan 5.000 ₺'nin, sigortası bulunmadığından tazmin edilemeyeceği kesinleşmiştir. Bu kaybın kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "689 Diğer Olağandışı Gider ve Zararlar (B) 5.000 / 100 Kasa (A) 5.000",
+      "B": "100 Kasa (B) 5.000 / 689 Diğer Olağandışı Gider ve Zararlar (A) 5.000",
+      "C": "770 Genel Yönetim Giderleri (B) 5.000 / 397 Sayım ve Tesellüm Fazlaları (A) 5.000",
+      "D": "135 Personelden Alacaklar (B) 5.000 / 100 Kasa (A) 5.000",
+      "E": "100 Kasa (B) 5.000 / 679 Diğer Olağandışı Gelir (A) 5.000"
+    },
+    "answer": "A",
+    "solution": "Hırsızlık olağandışı bir zarardır ve tazmin edilemiyorsa: **689 Diğer Olağandışı Gider ve Zararlar (B) 5.000 / 100 Kasa (A) 5.000**. Kasa mevcudu fiilî duruma indirilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 689 Diğer Olağandışı Gider ve Zararlar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0038",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, kullandığı banka kredisine ilişkin 4.000 ₺ faizi banka hesabından ödemiştir. Bu faiz giderinin kaydı aşağıdakilerden hangisidir? (Dönemsellik/tahakkuk ayrımı ihmal edilecektir.)",
+    "options": {
+      "A": "780 Finansman Giderleri (B) 4.000 / 102 Bankalar (A) 4.000",
+      "B": "642 Faiz Gelirleri (B) 4.000 / 102 Bankalar (A) 4.000",
+      "C": "102 Bankalar (B) 4.000 / 780 Finansman Giderleri (A) 4.000",
+      "D": "300 Banka Kredileri (B) 4.000 / 102 Bankalar (A) 4.000",
+      "E": "653 Komisyon Giderleri (B) 4.000 / 100 Kasa (A) 4.000"
+    },
+    "answer": "A",
+    "solution": "Kredi faizi bir finansman gideridir: **780 Finansman Giderleri (B) 4.000 / 102 Bankalar (A) 4.000**. Anapara geri ödemesi ise 300 Banka Kredileri'ni ilgilendirir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 780 Finansman Giderleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0039",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Etkin bir kasa iç kontrolü için aşağıdakilerden hangisi en uygun uygulamadır?",
+    "options": {
+      "A": "Kasa işlemlerini yürüten kişi ile bu işlemleri muhasebeleştiren/kontrol eden kişinin farklı olması (görevler ayrılığı)",
+      "B": "Tüm kasa ve muhasebe işlemlerinin tek bir kişide toplanması",
+      "C": "Kasa sayımının hiç yapılmaması",
+      "D": "Kasa fazlalarının kayıt dışı bırakılması",
+      "E": "Belgesiz ödemelerin serbestçe yapılması"
+    },
+    "answer": "A",
+    "solution": "İç kontrolün temel ilkelerinden biri **görevler ayrılığı**dır: kasayı yürüten kişi ile kaydı yapan/kontrol eden kişi ayrı olmalıdır. Böylece hata ve suistimal riski azalır; düzenli kasa sayımı da yapılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "İç kontrol - görevler ayrılığı (kasa)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0040",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Kredi kartıyla yapılan satışta, bankanın hizmet karşılığında kestiği komisyon gideri (tutar banka hesabına net geçmiştir) aşağıdaki hesaplardan hangisine borç yazılır?",
+    "options": {
+      "A": "653 Komisyon Giderleri",
+      "B": "642 Faiz Gelirleri",
+      "C": "600 Yurt İçi Satışlar",
+      "D": "102 Bankalar",
+      "E": "108 Diğer Hazır Değerler"
+    },
+    "answer": "A",
+    "solution": "Kredi kartı (POS) işlemlerinde bankanın kestiği komisyon bir olağan giderdir ve **653 Komisyon Giderleri**ne borç yazılır; kalan net tutar bankaya/hazır değerlere geçer.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 653 Komisyon Giderleri (POS)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0041",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin döviz banka hesabında 5.000 USD bulunmakta ve 35 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 32 ₺/USD'ye gerilemiştir. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "656 Kambiyo Zararları (B) 15.000 / 102 Bankalar (A) 15.000",
+      "B": "102 Bankalar (B) 15.000 / 646 Kambiyo Kârları (A) 15.000",
+      "C": "656 Kambiyo Zararları (B) 3.000 / 102 Bankalar (A) 3.000",
+      "D": "780 Finansman Giderleri (B) 15.000 / 102 Bankalar (A) 15.000",
+      "E": "102 Bankalar (B) 15.000 / 656 Kambiyo Zararları (A) 15.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 5.000 × (35 − 32) = **15.000 ₺ aleyhte**. Döviz banka hesabı değer kaybettiğinden: **656 Kambiyo Zararları (B) 15.000 / 102 Bankalar (A) 15.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 656 Kambiyo Zararları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0042",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, elindeki bir alacak senedini vadesinden önce paraya çevirmek için bankaya iskonto (kırdırma) ettirmiştir. Banka, senet tutarından faiz (iskonto) keserek kalanı işletmenin hesabına geçirmiştir. Bu işlemde bankanın kestiği iskonto tutarı işletme açısından hangi hesaba yazılır?",
+    "options": {
+      "A": "642 Faiz Gelirleri",
+      "B": "780 Finansman Giderleri",
+      "C": "646 Kambiyo Kârları",
+      "D": "600 Yurt İçi Satışlar",
+      "E": "102 Bankalar"
+    },
+    "answer": "B",
+    "solution": "Senedin vadesinden önce kırdırılmasında bankanın kestiği iskonto (faiz) işletme için bir **finansman gideridir**: **780 Finansman Giderleri**ne borç yazılır. 102 Bankalar net tutarla, 121 Alacak Senetleri nominal tutarla çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 780 Finansman Giderleri (senet iskontosu)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0043",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin daha önce müşterisinden aldığı 15.000 ₺'lik çek, bankaya ibraz edildiğinde karşılıksız çıkmıştır. Çek bedelinin yeniden müşteriden (alıcıdan) alacak olarak izlenmesine ilişkin kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "120 Alıcılar (B) 15.000 / 101 Alınan Çekler (A) 15.000",
+      "B": "101 Alınan Çekler (B) 15.000 / 120 Alıcılar (A) 15.000",
+      "C": "102 Bankalar (B) 15.000 / 101 Alınan Çekler (A) 15.000",
+      "D": "689 Diğer Olağandışı Gider (B) 15.000 / 101 Alınan Çekler (A) 15.000",
+      "E": "103 Verilen Çekler ve Ödeme Emirleri (B) 15.000 / 101 Alınan Çekler (A) 15.000"
+    },
+    "answer": "A",
+    "solution": "Karşılıksız çıkan çek tahsil edilemediğinden çek portföyünden çıkarılır ve tutar yeniden alacak olarak izlenir: **120 Alıcılar (B) 15.000 / 101 Alınan Çekler (A) 15.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler (karşılıksız çek)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0044",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Çek ve senet (bono) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Çek bir kredi (vade) aracı, senet ise bir ödeme aracıdır.",
+      "B": "Çek esas olarak bir ödeme aracıdır; senet (bono) ise bir kredi (vade) aracıdır.",
+      "C": "İkisi de yalnızca nakit ödemede kullanılır.",
+      "D": "Çek yalnızca bankalar arasında düzenlenir.",
+      "E": "Senet yalnızca yabancı para cinsinden düzenlenir."
+    },
+    "answer": "B",
+    "solution": "**Çek** esas olarak bir **ödeme aracıdır** (bankaya hitaben, görüldüğünde ödenmek üzere). **Senet (bono)** ise belirli bir vadede ödeme taahhüdü içeren bir **kredi (vade) aracıdır**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "Kıymetli evrak - çek/bono ayrımı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0045",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Vergi Usul Kanunu'na göre yabancı paralar değerlenirken; borsa rayici yoksa hangi kur esas alınır?",
+    "options": {
+      "A": "İşletmenin belirlediği kur",
+      "B": "Maliye Bakanlığı'nca tespit ve ilan edilen kur",
+      "C": "Serbest piyasadaki en yüksek kur",
+      "D": "Bir önceki yılın ortalama kuru",
+      "E": "Satıcının faturada gösterdiği kur"
+    },
+    "answer": "B",
+    "solution": "VUK md. 280'e göre yabancı paralar **borsa rayici** ile; borsa rayici yoksa **Maliye Bakanlığı'nca tespit ve ilan edilen kur** ile değerlenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280 (yabancı para değerlemesi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0046",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, bankadaki mevduat hesabından 25.000 ₺ nakit çekerek kasasına almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "100 Kasa (B) 25.000 / 102 Bankalar (A) 25.000",
+      "B": "102 Bankalar (B) 25.000 / 100 Kasa (A) 25.000",
+      "C": "100 Kasa (B) 25.000 / 300 Banka Kredileri (A) 25.000",
+      "D": "100 Kasa (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000",
+      "E": "108 Diğer Hazır Değerler (B) 25.000 / 102 Bankalar (A) 25.000"
+    },
+    "answer": "A",
+    "solution": "Kasa (varlık) artar → **100 Kasa (B)**; banka mevduatı (varlık) azalır → **102 Bankalar (A)**. Kayıt: 100 Kasa (B) 25.000 / 102 Bankalar (A) 25.000. İki aktif hesap arası aktarım; aktif toplamı değişmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa / 102 Bankalar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0047",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Aşağıdakilerden hangisi nakit dışı bir ödeme/tahsilat aracı değildir?",
+    "options": {
+      "A": "Çek",
+      "B": "Havale",
+      "C": "EFT",
+      "D": "Kredi kartı",
+      "E": "Madenî para ve banknot"
+    },
+    "answer": "E",
+    "solution": "Çek, havale, EFT ve kredi kartı **nakit dışı** ödeme/tahsilat araçlarıdır. **Madenî para ve banknot** ise bizzat nakittir; nakit dışı araç değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "Ödeme araçları - nakit/nakit dışı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0048",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, kasasındaki 1.000 USD'yi (30 ₺/USD kurundan kayıtlı) bankaya 33 ₺/USD kurundan bozdurmuş ve TL karşılığı banka hesabına geçmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "102 Bankalar (B) 33.000 / 100 Kasa (A) 30.000 + 646 Kambiyo Kârları (A) 3.000",
+      "B": "102 Bankalar (B) 30.000 / 100 Kasa (A) 30.000",
+      "C": "100 Kasa (B) 33.000 / 102 Bankalar (A) 33.000",
+      "D": "102 Bankalar (B) 33.000 / 100 Kasa (A) 33.000",
+      "E": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000"
+    },
+    "answer": "A",
+    "solution": "Banka hesabına 1.000 × 33 = 33.000 ₺ girer; kasadan çıkan YP kayıtlı değeri 1.000 × 30 = 30.000 ₺; aradaki 3.000 ₺ lehte kur farkıdır: **102 Bankalar (B) 33.000 / 100 Kasa (A) 30.000 + 646 Kambiyo Kârları (A) 3.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz bozdurma; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 646 Kambiyo Kârları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0049",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, elindeki 20.000 ₺ nominal değerli alacak çekini bankaya tahsile vermiş; banka 200 ₺ tahsil komisyonu keserek kalanı hesaba geçirmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "102 Bankalar (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000",
+      "B": "102 Bankalar (B) 20.000 / 101 Alınan Çekler (A) 20.000",
+      "C": "101 Alınan Çekler (B) 20.000 / 102 Bankalar (A) 19.800 + 653 Komisyon Giderleri (A) 200",
+      "D": "102 Bankalar (B) 20.200 / 101 Alınan Çekler (A) 20.000 + 642 Faiz Gelirleri (A) 200",
+      "E": "100 Kasa (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000"
+    },
+    "answer": "A",
+    "solution": "Çek tahsil edilince portföyden çıkar (101 alacak 20.000); bankaya net 19.800 girer, 200 ₺ komisyon gider yazılır: **102 Bankalar (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler / 653 Komisyon Giderleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0050",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Aşağıdakilerden hangisi 'nakit ve nakit benzeri' kapsamında değerlendirilmez?",
+    "options": {
+      "A": "Kasadaki nakit para",
+      "B": "Vadesiz banka mevduatı",
+      "C": "Vadesine 3 aydan kısa süre kalan, değeri kesine yakın likit fon",
+      "D": "İşletmenin uzun vadeli tahvil yatırımı",
+      "E": "Bankadaki döviz tevdiat (vadesiz) hesabı"
+    },
+    "answer": "D",
+    "solution": "**Uzun vadeli tahvil yatırımı**, değeri dalgalanabilen ve kısa sürede nakde çevrilme amacı taşımayan bir yatırımdır; nakit benzeri sayılmaz. Diğerleri yüksek likiditeli, değeri belirli kalemlerdir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi değil; sınav stiline kalibre)",
+      "legislationRef": "TMS 7 - nakit benzerleri kapsamı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0051",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin vadeli mevduatına dönem sonu itibarıyla 4.000 ₺ faiz tahakkuk etmiş ancak henüz hesaba geçmemiştir (vade sonraki dönemdedir). Dönemsellik gereği yapılacak kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "181 Gelir Tahakkukları (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
+      "B": "642 Faiz Gelirleri (B) 4.000 / 181 Gelir Tahakkukları (A) 4.000",
+      "C": "102 Bankalar (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
+      "D": "180 Gelecek Aylara Ait Giderler (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
+      "E": "642 Faiz Gelirleri (B) 4.000 / 102 Bankalar (A) 4.000"
+    },
+    "answer": "A",
+    "solution": "Döneme ait olup henüz tahsil edilmemiş gelir tahakkuk ettirilir: **181 Gelir Tahakkukları (B) 4.000 / 642 Faiz Gelirleri (A) 4.000**. Faiz sonraki dönemde tahsil edilince 181 kapatılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-dönemsellik; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181 Gelir Tahakkukları; Dönemsellik"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0052",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin döviz banka hesabında 3.000 GBP bulunmakta ve 42 ₺/GBP kurundan kayıtlıdır. Değerleme günü kuru 39 ₺/GBP'ye gerilemiştir. Oluşan kur farkı kaç ₺ ve ne yöndedir?",
+    "options": {
+      "A": "9.000 ₺ aleyhte (zarar)",
+      "B": "9.000 ₺ lehte (kâr)",
+      "C": "3.000 ₺ aleyhte (zarar)",
+      "D": "117.000 ₺ lehte (kâr)",
+      "E": "Kur farkı oluşmaz"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 3.000 × (42 − 39) = **9.000 ₺ aleyhte**. Kur düştüğünden döviz mevduatı değer kaybeder; 656 Kambiyo Zararları (B) 9.000 / 102 Bankalar (A) 9.000 kaydı yapılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-döviz; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 656 Kambiyo Zararları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0053",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmelerin hazır değerlerinin yeterli düzeyde tutulmasının temel nedeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Daha az vergi ödemek",
+      "B": "Vadesi gelen borçları ve günlük harcamaları zamanında karşılayabilmek (likidite/ödeme gücü)",
+      "C": "Amortisman giderini artırmak",
+      "D": "Stok maliyetini düşürmek",
+      "E": "Sermayeyi azaltmak"
+    },
+    "answer": "B",
+    "solution": "Hazır değerler işletmenin **likiditesini (ödeme gücünü)** temsil eder; vadesi gelen borçların ve günlük harcamaların zamanında karşılanabilmesi için yeterli hazır değer bulundurmak gerekir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "Nakit/likidite yönetimi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0054",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin banka hesabına ilişkin kayıtları ile bankanın gönderdiği hesap özeti arasındaki farkların araştırılıp giderilmesi işlemine ne ad verilir?",
+    "options": {
+      "A": "Banka mutabakatı",
+      "B": "Amortisman",
+      "C": "Reeskont",
+      "D": "Konsolidasyon",
+      "E": "Envanter değerlemesi"
+    },
+    "answer": "A",
+    "solution": "İşletme kayıtları ile banka hesap özetinin karşılaştırılıp farkların (henüz işlenmemiş masraf, faiz, yoldaki havale vb.) giderilmesine **banka mutabakatı** denir. İç kontrolün önemli bir parçasıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "İç kontrol - banka mutabakatı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0055",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletme, satıcısına yaptığı 12.000 ₺'lik havale için bankaya 100 ₺ havale masrafı ödemiştir (masraf ayrıca banka hesabından kesilmiştir). Yalnızca havale masrafına ilişkin kayıt aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "653 Komisyon Giderleri (B) 100 / 102 Bankalar (A) 100",
+      "B": "320 Satıcılar (B) 100 / 102 Bankalar (A) 100",
+      "C": "102 Bankalar (B) 100 / 653 Komisyon Giderleri (A) 100",
+      "D": "780 Finansman Giderleri (B) 100 / 100 Kasa (A) 100",
+      "E": "600 Yurt İçi Satışlar (B) 100 / 102 Bankalar (A) 100"
+    },
+    "answer": "A",
+    "solution": "Havale masrafı bir hizmet gideridir: **653 Komisyon Giderleri (B) 100 / 102 Bankalar (A) 100**. Satıcıya olan borcun ödenmesi ise ayrı bir kayıtta 320/102 ile yapılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 653 Komisyon Giderleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0056",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "'102 Bankalar' hesabı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "options": {
+      "A": "Bir dönen varlık (aktif) hesabıdır.",
+      "B": "Bankaya para yatırıldığında borçlandırılır.",
+      "C": "Bankadan para çekildiğinde/ödeme yapıldığında alacaklandırılır.",
+      "D": "Normalde borç kalanı verir.",
+      "E": "Bir kaynak (pasif) hesabı olup alacak kalanı verir."
+    },
+    "answer": "E",
+    "solution": "**E yanlıştır.** 102 Bankalar bir **aktif (dönen varlık)** hesabıdır; para yatırılınca borçlanır, çekilince alacaklanır ve normalde **borç kalanı** verir. Kaynak (pasif) hesabı değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0057",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 7.000 | |\n| 101 ALINAN ÇEKLER | | 7.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "options": {
+      "A": "Müşteriden çek alınması",
+      "B": "İşletmenin çek düzenleyip vermesi",
+      "C": "Elde bulunan bir çekin nakden (kasa) tahsil edilmesi",
+      "D": "Çekin ciro edilmesi",
+      "E": "Karşılıksız çek çıkması"
+    },
+    "answer": "C",
+    "solution": "Kasaya nakit girişi (100 borç) ve elde tutulan çekin (101 alacak) azalması, **elde bulunan bir çekin nakden tahsil edilmesi**ni gösterir (ör. keşidecinin işletmeye nakit ödemesi).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 101 Alınan Çekler / 100 Kasa"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0058",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin bankadaki vadeli mevduatının vadesi dolmuş; anapara ve faizi vadesiz mevduat hesabına geçmiştir. Anapara 100.000 ₺, faiz 9.000 ₺'dir (stopaj ihmal edilecektir). Faize ilişkin kısım için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "642 Faiz Gelirleri hesabı 9.000 ₺ alacaklandırılır.",
+      "B": "780 Finansman Giderleri hesabı 9.000 ₺ borçlandırılır.",
+      "C": "600 Yurt İçi Satışlar hesabı 9.000 ₺ alacaklandırılır.",
+      "D": "102 Bankalar hesabı 9.000 ₺ alacaklandırılır.",
+      "E": "646 Kambiyo Kârları hesabı 9.000 ₺ alacaklandırılır."
+    },
+    "answer": "A",
+    "solution": "Anapara zaten işletmenindir (hesaplar arası aktarım). Kazanılan faiz ise gelirdir: **642 Faiz Gelirleri 9.000 ₺ alacaklandırılır** (102 Bankalar borçlanır).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 642 Faiz Gelirleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0059",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "İşletmenin bloke edilmiş (teminat olarak gösterilmiş, serbestçe kullanılamayan) banka mevduatı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Serbest mevduatla aynı şekilde, hiçbir ayrım yapılmadan izlenir ve dipnotta açıklanmaz.",
+      "B": "Serbestçe kullanılamadığından ayrı bir hesapta/alt hesapta izlenmesi ve durumun dipnotlarda açıklanması uygundur.",
+      "C": "Doğrudan gider yazılır.",
+      "D": "Bir kaynak (pasif) hesabında izlenir.",
+      "E": "Nazım hesaplarda takip edilmez ve bilançoda hiç gösterilmez."
+    },
+    "answer": "B",
+    "solution": "Bloke/teminat mevduatı serbestçe kullanılamadığından **ayrı bir alt hesapta** izlenir ve tam açıklama gereği **dipnotlarda** açıklanır. Böylece kullanıcılar likidite değerlendirmesinde yanılmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar; Tam Açıklama"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-hazirdeg-gen-0060",
+    "ders": "finansal_muhasebe",
+    "konu": "hazir_degerler",
+    "stem": "Tekdüzen Hesap Planı'nda '10 Hazır Değerler' grubunda yer alan hesaplarla ilgili aşağıdaki eşleştirmelerden hangisi yanlıştır?",
+    "options": {
+      "A": "100 Kasa → nakit mevcudu",
+      "B": "101 Alınan Çekler → tahsil için elde tutulan çekler",
+      "C": "102 Bankalar → banka mevduatı",
+      "D": "103 Verilen Çekler ve Ödeme Emirleri (-) → aktifi düzenleyici",
+      "E": "112 Kamu Kesimi Tahvil, Senet ve Bonoları → hazır değer"
+    },
+    "answer": "E",
+    "solution": "**112 Kamu Kesimi Tahvil, Senet ve Bonoları**, '11 Menkul Kıymetler' grubundadır; hazır değer değildir. Bu nedenle **E yanlıştır**. Hazır Değerler grubu 100, 101, 102, 103 ve 108 hesaplarından oluşur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Hazır Değerler / Menkul Kıymetler"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   }
 ]
