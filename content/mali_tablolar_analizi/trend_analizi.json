@@ -1,0 +1,562 @@
+[
+  {
+    "id": "mta-trend-gen-0001",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend (eğilim yüzdeleri) analizi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {"A": "Kalemleri toplam aktife oranlar.", "B": "Bir baz (temel) yıl seçilip, izleyen dönemlerdeki kalemlerin bu baz yıla göre yüzde değişiminin (eğiliminin) uzun döneme yayılarak incelenmesidir.", "C": "Kalemleri birbirine böler.", "D": "Yalnızca tek dönemi inceler.", "E": "Yalnızca vergi hesaplar."},
+    "answer": "B",
+    "solution": "**Trend (eğilim) analizi**; bir **baz yıl** seçilip izleyen dönemlerdeki kalemlerin bu baz yıla göre **yüzde eğiliminin** uzun döneme yayılarak incelenmesidir (dinamik).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0002",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizi genellikle uzun döneme (birçok yıla) yayıldığı ve dönemler arası gelişimi incelediği için hangi tür analiz sınıfına girer?",
+    "options": {"A": "Statik analiz", "B": "Dinamik analiz", "C": "Dikey analiz", "D": "Nokta analizi", "E": "Anlık analiz"},
+    "answer": "B",
+    "solution": "Trend analizi birden çok dönemi kapsayıp gelişimi (eğilimi) incelediğinden **dinamik analizdir**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-sınıf; sınav stiline kalibre)", "legislationRef": "Mali analiz - statik/dinamik"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0003",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde seçilen baz (temel) yılın trend yüzdesi kaç kabul edilir?",
+    "options": {"A": "%0", "B": "%50", "C": "%100", "D": "%200", "E": "Kaleme göre değişir"},
+    "answer": "C",
+    "solution": "Trend analizinde **baz yıl %100** kabul edilir; diğer yılların değerleri bu baz yıla göre yüzdelenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-baz; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0004",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde bir yılın trend yüzdesi nasıl hesaplanır?",
+    "options": {"A": "(İlgili Yıl Tutarı ÷ Baz Yıl Tutarı) × 100", "B": "(Baz Yıl Tutarı ÷ İlgili Yıl Tutarı) × 100", "C": "(İlgili Yıl − Önceki Yıl) ÷ Önceki Yıl", "D": "İlgili Yıl Tutarı ÷ Toplam Aktif", "E": "İlgili Yıl Tutarı − Baz Yıl Tutarı"},
+    "answer": "A",
+    "solution": "**Trend Yüzdesi = (İlgili Yıl Tutarı ÷ Baz Yıl Tutarı) × 100**. Baz yıl daima %100'dür.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (formül; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0005",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalem, ilerleyen bir yılda 480.000 ₺'ye çıkmıştır. Bu yılın trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%80", "D": "%125", "E": "%83"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (480.000 ÷ 400.000) × 100 = **%120**. Kalem baz yıla göre %20 artmıştır.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0006",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan net satışlar, izleyen bir yılda 600.000 ₺ olmuştur. Bu yılın trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%110", "E": "%125"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (600.000 ÷ 500.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0007",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir kalemin bir yıldaki trend yüzdesi %120 ise, bu ne anlama gelir?",
+    "options": {"A": "Kalem baz yıla göre %20 azalmıştır.", "B": "Kalem baz yıla göre %20 artmıştır.", "C": "Kalem baz yılın %120 katıdır (12 kat).", "D": "Kalem sıfırlanmıştır.", "E": "Kalem değişmemiştir."},
+    "answer": "B",
+    "solution": "Trend %120, kalemin baz yılın (%100) **%20 üzerinde** olduğunu, yani baz yıla göre **%20 arttığını** gösterir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0008",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalem, izleyen bir yılda 450.000 ₺ olmuştur. Bu yılın trend yüzdesi kaçtır?",
+    "options": {"A": "%90", "B": "%110", "C": "%10", "D": "%45", "E": "%111"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (450.000 ÷ 500.000) × 100 = **%90**. Kalem baz yıla göre %10 azalmıştır.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0009",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir kalemin bir yıldaki trend yüzdesi %90 ise, bu ne anlama gelir?",
+    "options": {"A": "Kalem baz yıla göre %10 azalmıştır.", "B": "Kalem baz yıla göre %90 artmıştır.", "C": "Kalem baz yıla göre %10 artmıştır.", "D": "Kalem baz yıla eşittir.", "E": "Kalem sıfırdır."},
+    "answer": "A",
+    "solution": "Trend %90, kalemin baz yılın (%100) **%10 altında** olduğunu, yani baz yıla göre **%10 azaldığını** gösterir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0010",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde baz yıl seçilirken tercih edilen özellik aşağıdakilerden hangisidir?",
+    "options": {"A": "En yüksek satışın olduğu olağandışı yıl", "B": "İşletme açısından normal/olağan (temsil edici) bir yılın seçilmesi", "C": "İşletmenin kurulmadığı bir yıl", "D": "Rakip işletmenin yılı", "E": "Rastgele herhangi bir yıl"},
+    "answer": "B",
+    "solution": "Baz yıl, işletme açısından **normal/olağan (temsil edici)** bir yıl olmalıdır; olağandışı (aşırı iyi/kötü) bir yıl baz alınırsa tüm trend yanıltıcı olur.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-baz seçimi; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0011",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 200.000 ₺ olan bir kalem, izleyen bir yılda 260.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%130", "B": "%30", "C": "%77", "D": "%126", "E": "%160"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (260.000 ÷ 200.000) × 100 = **%130** (baz yıla göre %30 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0012",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 1.000.000 ₺ olan bir kalem, izleyen bir yılda 1.200.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%12", "E": "%125"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (1.200.000 ÷ 1.000.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0013",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinin en anlamlı sonuç vermesi için genellikle nasıl bir dönem aralığı tercih edilir?",
+    "options": {"A": "Tek yıl", "B": "Uzun bir dönem (birbirini izleyen birçok yıl)", "C": "Yalnızca iki ay", "D": "Gelecek yıl tahmini", "E": "Dönem aralığı önemli değildir"},
+    "answer": "B",
+    "solution": "Trend analizi, eğilimi görebilmek için **birbirini izleyen birçok yıla (uzun döneme)** yayıldığında en anlamlı sonucu verir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0014",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizi ile karşılaştırmalı (yatay) analiz arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {"A": "İkisi de tek dönemi inceler.", "B": "Trend analizinde tüm yıllar SABİT bir baz yıla göre yüzdelenir; karşılaştırmalı analizde ise genellikle her dönem bir ÖNCEKİ döneme göre değerlendirilir.", "C": "Trend analizi statik, karşılaştırmalı analiz dikeydir.", "D": "İkisi de kalemleri toplam aktife oranlar.", "E": "İkisi arasında fark yoktur."},
+    "answer": "B",
+    "solution": "**Trend analizinde** tüm yıllar **sabit bir baz yıla** göre yüzdelenir (uzun dönem eğilim). **Karşılaştırmalı analizde** ise genellikle her dönem **bir önceki döneme** göre değerlendirilir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend/karşılaştırmalı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0015",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 300.000 ₺ olan bir kalem, izleyen bir yılda 240.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%80", "B": "%120", "C": "%20", "D": "%125", "E": "%60"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (240.000 ÷ 300.000) × 100 = **%80** (baz yıla göre %20 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0016",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde net satışların trendi %130'a, satışların maliyetinin trendi %150'ye ulaşmıştır (baz yıl %100). Bu eğilim en olası olarak neyi gösterir?",
+    "options": {"A": "Brüt kârlılığın güçlü biçimde arttığını", "B": "Maliyetlerin satışlardan daha hızlı bir eğilimle arttığını; brüt kârlılık üzerinde baskı oluştuğunu", "C": "Satışların azaldığını", "D": "Maliyetlerin azaldığını", "E": "İşletmenin faaliyeti durdurduğunu"},
+    "answer": "B",
+    "solution": "SMM trendi (%150), net satış trendinden (%130) **daha yüksek** ise maliyetler satışlardan daha hızlı bir eğilimle artmıştır → **brüt kârlılık üzerinde baskı** (olumsuz eğilim).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum-trend karşılaştırma; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0017",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalem, izleyen bir yılda 750.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%150", "B": "%50", "C": "%67", "D": "%15", "E": "%250"},
+    "answer": "A",
+    "solution": "Trend Yüzdesi = (750.000 ÷ 500.000) × 100 = **%150** (baz yıla göre %50 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0018",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %130'dur. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "options": {"A": "520.000", "B": "308.000", "C": "530.000", "D": "130.000", "E": "400.000"},
+    "answer": "A",
+    "solution": "İlgili Yıl Tutarı = Baz Yıl × (Trend % ÷ 100) = 400.000 × 1,30 = **520.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0019",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde her kalem için baz yıl yüzdesi nasıldır?",
+    "options": {"A": "Her kalem için baz yılın kendi değeri %100 kabul edilir; sonraki yıllar buna göre yüzdelenir.", "B": "Tüm kalemler için baz yıl %0'dır.", "C": "Baz yıl yalnızca net satışlar için %100'dür.", "D": "Baz yıl kalemleri birbirine oranlanır.", "E": "Baz yıl toplam aktife oranlanır."},
+    "answer": "A",
+    "solution": "Trend analizinde **her kalem için** baz yılın kendi tutarı **%100** kabul edilir; o kalemin izleyen yılları bu baz değere göre yüzdelenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0020",
+    "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend (eğilim) analizi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Baz yıl %100 kabul edilir.\nII. Trend yüzdesi = (İlgili Yıl ÷ Baz Yıl) × 100.\nIII. Dinamik, uzun döneme yayılan bir analizdir.",
+    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "answer": "E",
+    "solution": "Üç ifade de doğrudur: **I** baz yıl %100; **II** trend yüzdesi formülü; **III** dinamik, uzun dönemli analiz. Doğru cevap **I, II ve III**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0021", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 250.000 ₺ olan bir kalem, izleyen bir yılda 300.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%125", "E": "%150"},
+    "answer": "A",
+    "solution": "Trend = (300.000 ÷ 250.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0022", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 800.000 ₺ olan net satışlar, izleyen bir yılda 960.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%16", "E": "%125"},
+    "answer": "A",
+    "solution": "Trend = (960.000 ÷ 800.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0023", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 600.000 ₺ olan bir kalem, izleyen bir yılda 540.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%90", "B": "%110", "C": "%10", "D": "%54", "E": "%111"},
+    "answer": "A",
+    "solution": "Trend = (540.000 ÷ 600.000) × 100 = **%90** (baz yıla göre %10 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0024", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalem, izleyen bir yılda 500.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%125", "B": "%25", "C": "%80", "D": "%120", "E": "%150"},
+    "answer": "A",
+    "solution": "Trend = (500.000 ÷ 400.000) × 100 = **%125** (baz yıla göre %25 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0025", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %130'dur. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "options": {"A": "650.000", "B": "385.000", "C": "630.000", "D": "130.000", "E": "500.000"},
+    "answer": "A",
+    "solution": "İlgili Yıl = 500.000 × 1,30 = **650.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0026", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 1.000.000 ₺ olan bir kalem, izleyen bir yılda 1.300.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%130", "B": "%30", "C": "%77", "D": "%13", "E": "%230"},
+    "answer": "A",
+    "solution": "Trend = (1.300.000 ÷ 1.000.000) × 100 = **%130**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0027", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir kalemin trend yüzdesi %85 ise, bu ne anlama gelir?",
+    "options": {"A": "Kalem baz yıla göre %15 azalmıştır.", "B": "Kalem baz yıla göre %85 artmıştır.", "C": "Kalem baz yıla göre %15 artmıştır.", "D": "Kalem baz yıla eşittir.", "E": "Kalem 8,5 kat artmıştır."},
+    "answer": "A",
+    "solution": "Trend %85 < %100 olduğundan kalem baz yıla göre **%15 azalmıştır**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0028", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 200.000 ₺ olan bir kalem, izleyen bir yılda 300.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%150", "B": "%50", "C": "%67", "D": "%15", "E": "%130"},
+    "answer": "A",
+    "solution": "Trend = (300.000 ÷ 200.000) × 100 = **%150** (baz yıla göre %50 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0029", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde net satışların trendi %120'ye, dönem net kârının trendi %140'a ulaşmıştır. Bu eğilim en olası olarak neyi gösterir?",
+    "options": {"A": "Kârlılığın kötüleştiğini", "B": "Net kârın satışlardan daha güçlü bir eğilimle artması nedeniyle kârlılığın iyileşme eğiliminde olduğunu", "C": "Satışların azaldığını", "D": "İşletmenin zarar ettiğini", "E": "Borçların arttığını"},
+    "answer": "B",
+    "solution": "Net kâr trendi (%140), satış trendinden (%120) **daha yüksek** ise net kâr satışlardan daha güçlü büyümüştür → **kârlılık iyileşme eğilimindedir**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum-trend karşılaştırma; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0030", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 800.000 ₺ olan bir kalem, izleyen bir yılda 720.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%90", "B": "%110", "C": "%10", "D": "%72", "E": "%111"},
+    "answer": "A",
+    "solution": "Trend = (720.000 ÷ 800.000) × 100 = **%90**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0031", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir yıldaki kalem tutarı 480.000 ₺ ve bu yılın trend yüzdesi %120'dir. Baz yıl tutarı kaç ₺'dir?",
+    "options": {"A": "400.000", "B": "576.000", "C": "360.000", "D": "600.000", "E": "120.000"},
+    "answer": "A",
+    "solution": "Baz Yıl = İlgili Yıl ÷ (Trend % ÷ 100) = 480.000 ÷ 1,20 = **400.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0032", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 600.000 ₺ olan bir kalem, izleyen bir yılda 780.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%130", "B": "%30", "C": "%77", "D": "%13", "E": "%180"},
+    "answer": "A",
+    "solution": "Trend = (780.000 ÷ 600.000) × 100 = **%130**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0033", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 250.000 ₺ olan bir kalem, izleyen bir yılda 200.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%80", "B": "%125", "C": "%20", "D": "%50", "E": "%120"},
+    "answer": "A",
+    "solution": "Trend = (200.000 ÷ 250.000) × 100 = **%80** (baz yıla göre %20 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0034", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir kalemin bir yıldaki trend yüzdesi %100 ise, bu ne anlama gelir?",
+    "options": {"A": "Kalem baz yıla göre iki katına çıkmıştır.", "B": "Kalem baz yıl değeriyle aynıdır (değişmemiştir).", "C": "Kalem sıfırlanmıştır.", "D": "Kalem %100 artmıştır.", "E": "Kalem baz yıla göre %100 azalmıştır."},
+    "answer": "B",
+    "solution": "Trend %100, ilgili yıl tutarının **baz yıl tutarıyla aynı** olduğunu (değişmediğini) gösterir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0035", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalem, izleyen bir yılda 550.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%110", "B": "%10", "C": "%91", "D": "%150", "E": "%105"},
+    "answer": "A",
+    "solution": "Trend = (550.000 ÷ 500.000) × 100 = **%110** (baz yıla göre %10 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0036", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde ticari alacakların trendi %160'a, net satışların trendi %110'a ulaşmıştır. Bu eğilim en olası olarak neyi gösterir?",
+    "options": {"A": "Tahsilatın hızlandığını", "B": "Alacakların satışlardan çok daha hızlı büyüdüğünü; tahsilatta yavaşlama/vadeli satış artışı olabileceğini", "C": "Satışların düştüğünü", "D": "Stokların sıfırlandığını", "E": "Özkaynakların arttığını"},
+    "answer": "B",
+    "solution": "Alacak trendi (%160), satış trendinden (%110) **çok daha yüksek** ise alacaklar satışlardan hızlı büyümüştür → **tahsilatta yavaşlama/vadeli satış artışı** (olumsuz sinyal) olabilir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum-trend karşılaştırma; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0037", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalem, izleyen bir yılda 360.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%90", "B": "%110", "C": "%10", "D": "%36", "E": "%111"},
+    "answer": "A",
+    "solution": "Trend = (360.000 ÷ 400.000) × 100 = **%90**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0038", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 600.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %150'dir. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "options": {"A": "900.000", "B": "750.000", "C": "400.000", "D": "150.000", "E": "690.000"},
+    "answer": "A",
+    "solution": "İlgili Yıl = 600.000 × 1,50 = **900.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0039", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 1.000.000 ₺ olan bir kalem, izleyen bir yılda 850.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%85", "B": "%115", "C": "%15", "D": "%118", "E": "%150"},
+    "answer": "A",
+    "solution": "Trend = (850.000 ÷ 1.000.000) × 100 = **%85** (baz yıla göre %15 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0040", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizi aşağıdaki mali tablolardan hangisine/hangilerine uygulanabilir?",
+    "options": {"A": "Yalnızca bilançoya", "B": "Yalnızca gelir tablosuna", "C": "Hem bilanço hem gelir tablosu kalemlerine (uzun dönem eğilim için)", "D": "Yalnızca kâr dağıtım tablosuna", "E": "Hiçbirine"},
+    "answer": "C",
+    "solution": "Trend analizi **hem bilanço hem gelir tablosu** (ve diğer mali tablolar) kalemlerine, uzun dönem eğilimlerini görmek için uygulanabilir.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-kapsam; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0041", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalem, izleyen bir yılda 700.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%140", "B": "%40", "C": "%71", "D": "%14", "E": "%240"},
+    "answer": "A",
+    "solution": "Trend = (700.000 ÷ 500.000) × 100 = **%140** (baz yıla göre %40 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0042", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 300.000 ₺ olan bir kalem, izleyen bir yılda 360.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%16", "E": "%150"},
+    "answer": "A",
+    "solution": "Trend = (360.000 ÷ 300.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0043", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir yıldaki kalem tutarı 720.000 ₺ ve trend yüzdesi %120'dir. Baz yıl tutarı kaç ₺'dir?",
+    "options": {"A": "600.000", "B": "864.000", "C": "540.000", "D": "500.000", "E": "120.000"},
+    "answer": "A",
+    "solution": "Baz Yıl = 720.000 ÷ 1,20 = **600.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0044", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalem, izleyen bir yılda 320.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%80", "B": "%125", "C": "%20", "D": "%40", "E": "%120"},
+    "answer": "A",
+    "solution": "Trend = (320.000 ÷ 400.000) × 100 = **%80** (baz yıla göre %20 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0045", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 1.000.000 ₺ olan bir kalem, izleyen bir yılda 1.250.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%125", "B": "%25", "C": "%80", "D": "%12,5", "E": "%225"},
+    "answer": "A",
+    "solution": "Trend = (1.250.000 ÷ 1.000.000) × 100 = **%125**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0046", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir kalemin trend yüzdesi %140 ise, kalem baz yıla göre yüzde kaç artmıştır?",
+    "options": {"A": "%40", "B": "%140", "C": "%60", "D": "%14", "E": "%240"},
+    "answer": "A",
+    "solution": "Trend %140 → baz yıl %100'ün %40 üzerinde → kalem baz yıla göre **%40 artmıştır**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0047", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 800.000 ₺ olan bir kalem, izleyen bir yılda 1.000.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%125", "B": "%25", "C": "%80", "D": "%20", "E": "%250"},
+    "answer": "A",
+    "solution": "Trend = (1.000.000 ÷ 800.000) × 100 = **%125**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0048", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 300.000 ₺ olan bir kalem, izleyen bir yılda 450.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%150", "B": "%50", "C": "%67", "D": "%15", "E": "%130"},
+    "answer": "A",
+    "solution": "Trend = (450.000 ÷ 300.000) × 100 = **%150** (baz yıla göre %50 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0049", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizinde net satışların trendi %130, satışların maliyetinin trendi %120'dir. Bu eğilim en olası olarak neyi gösterir?",
+    "options": {"A": "Maliyet baskısının arttığını", "B": "Satışların maliyetten daha güçlü bir eğilimle artması nedeniyle brüt kârlılığın iyileşme eğiliminde olduğunu", "C": "Satışların düştüğünü", "D": "İşletmenin zarar ettiğini", "E": "Maliyetlerin arttığını"},
+    "answer": "B",
+    "solution": "Net satış trendi (%130) > SMM trendi (%120) ise satışlar maliyetten daha güçlü büyümüştür → **brüt kârlılık iyileşme eğilimindedir**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum-trend karşılaştırma; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yorumu"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0050", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 250.000 ₺ olan bir kalem, izleyen bir yılda 350.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%140", "B": "%40", "C": "%71", "D": "%14", "E": "%150"},
+    "answer": "A",
+    "solution": "Trend = (350.000 ÷ 250.000) × 100 = **%140** (baz yıla göre %40 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0051", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Bir yıldaki kalem tutarı 550.000 ₺ ve trend yüzdesi %110'dur. Baz yıl tutarı kaç ₺'dir?",
+    "options": {"A": "500.000", "B": "605.000", "C": "450.000", "D": "440.000", "E": "110.000"},
+    "answer": "A",
+    "solution": "Baz Yıl = 550.000 ÷ 1,10 = **500.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0052", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 400.000 ₺ olan bir kalem, izleyen bir yılda 480.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%48", "E": "%125"},
+    "answer": "A",
+    "solution": "Trend = (480.000 ÷ 400.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0053", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 600.000 ₺ olan bir kalem, izleyen bir yılda 660.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%110", "B": "%10", "C": "%91", "D": "%66", "E": "%160"},
+    "answer": "A",
+    "solution": "Trend = (660.000 ÷ 600.000) × 100 = **%110** (baz yıla göre %10 artış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0054", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend analizi ile karşılaştırmalı analizin ortak yönü aşağıdakilerden hangisidir?",
+    "options": {"A": "İkisi de statik analizdir.", "B": "İkisi de dinamik analizdir (birden fazla dönemi/gelişimi inceler).", "C": "İkisi de tek dönemi inceler.", "D": "İkisi de kalemleri toplam aktife oranlar.", "E": "İkisi de yalnızca oran üretir."},
+    "answer": "B",
+    "solution": "Hem trend hem karşılaştırmalı analiz birden fazla dönemi/gelişimi incelediğinden **dinamik analizdir**. (Dikey analiz ise statiktir.)",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-ortak; sınav stiline kalibre)", "legislationRef": "Mali analiz - dinamik analiz"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0055", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 200.000 ₺ olan bir kalem, izleyen bir yılda 240.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%120", "B": "%20", "C": "%83", "D": "%24", "E": "%140"},
+    "answer": "A",
+    "solution": "Trend = (240.000 ÷ 200.000) × 100 = **%120**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0056", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 500.000 ₺ olan bir kalem, izleyen bir yılda 400.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%80", "B": "%125", "C": "%20", "D": "%40", "E": "%120"},
+    "answer": "A",
+    "solution": "Trend = (400.000 ÷ 500.000) × 100 = **%80** (baz yıla göre %20 azalış).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0057", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 800.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %125'tir. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "options": {"A": "1.000.000", "B": "640.000", "C": "925.000", "D": "125.000", "E": "900.000"},
+    "answer": "A",
+    "solution": "İlgili Yıl = 800.000 × 1,25 = **1.000.000 ₺** (ters işlem).",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0058", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Baz yılda 1.000.000 ₺ olan bir kalem, izleyen bir yılda 1.100.000 ₺ olmuştur. Trend yüzdesi kaçtır?",
+    "options": {"A": "%110", "B": "%10", "C": "%91", "D": "%11", "E": "%210"},
+    "answer": "A",
+    "solution": "Trend = (1.100.000 ÷ 1.000.000) × 100 = **%110**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-trend; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend yüzdesi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0059", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Mali tablolar analizinin dört temel tekniği aşağıdakilerden hangisinde birlikte ve doğru verilmiştir?",
+    "options": {"A": "Karşılaştırmalı (yatay) analiz, dikey (yüzde) analiz, trend (eğilim) analizi, oran (rasyo) analizi", "B": "Kasa sayımı, stok sayımı, amortisman, reeskont", "C": "FIFO, LIFO, ortalama maliyet, standart maliyet", "D": "Bilanço, gelir tablosu, nakit akım, öz kaynak değişim", "E": "Vergi, SGK, damga, harç"},
+    "answer": "A",
+    "solution": "Mali tablolar analizinin dört temel tekniği: **karşılaştırmalı (yatay) analiz, dikey (yüzde) analiz, trend (eğilim) analizi ve oran (rasyo) analizidir**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-teknikler; sınav stiline kalibre)", "legislationRef": "Mali analiz - teknikler"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mta-trend-gen-0060", "ders": "mali_tablolar_analizi", "konu": "trend_analizi",
+    "stem": "Trend (eğilim) analizi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Seçilen baz yıl %100 kabul edilir.\nII. Trend yüzdesi = (İlgili Yıl ÷ Baz Yıl) × 100.\nIII. Baz yıl olarak işletme açısından normal/temsili bir yıl seçilmelidir.",
+    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "answer": "E",
+    "solution": "Üç ifade de doğrudur: **I** baz yıl %100; **II** trend yüzdesi formülü; **III** baz yıl normal/temsili bir yıl olmalıdır. Doğru cevap **I, II ve III**.",
+    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Mali analiz - trend analizi"},
+    "validYear": 2026, "mockExamId": null
+  }
+]
