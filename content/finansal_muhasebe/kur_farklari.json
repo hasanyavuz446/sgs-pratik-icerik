@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "finmuh-kur-gen-0001",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Dönem sonunda, yabancı para cinsinden kasa mevcudu ile döviz cinsinden alacak ve borçların değerlemesinde Vergi Usul Kanunu'na göre kural olarak hangi kur esas alınır?",
+    "options": {
+      "A": "T.C. Merkez Bankası döviz satış kuru",
+      "B": "T.C. Merkez Bankası döviz alış kuru (kasadaki efektifler için efektif alış kuru)",
+      "C": "İşletmenin belirlediği serbest kur",
+      "D": "İşlem gününün satış kuru",
+      "E": "Bir önceki yılın ortalama kuru"
+    },
+    "answer": "B",
+    "solution": "VUK md. 280 uyarınca dönem sonu değerlemede kural olarak **T.C. Merkez Bankası döviz ALIŞ kuru** kullanılır (kasadaki efektifler için efektif alış kuru). Satış kuru değil alış kuru esas alınır — sık yapılan hata budur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat-çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280 (yabancı paraların değerlemesi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0002",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Döviz cinsi bir işlemden doğan lehte (olumlu) kur farkı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "options": {
+      "A": "642 Faiz Gelirleri",
+      "B": "646 Kambiyo Kârları",
+      "C": "647 Reeskont Faiz Gelirleri",
+      "D": "649 Diğer Olağan Gelir ve Kârlar",
+      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
+    },
+    "answer": "B",
+    "solution": "Lehte kur farkı **646 Kambiyo Kârları** (64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar) hesabında izlenir. 642 faiz, 647 reeskont geliridir — kur farkı değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-çeldirici; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0003",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Döviz cinsi bir işlemden doğan aleyhte (olumsuz) kur farkı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "options": {
+      "A": "656 Kambiyo Zararları",
+      "B": "657 Reeskont Faiz Giderleri",
+      "C": "780 Finansman Giderleri",
+      "D": "659 Diğer Olağan Gider ve Zararlar",
+      "E": "689 Diğer Olağandışı Gider ve Zararlar"
+    },
+    "answer": "A",
+    "solution": "Aleyhte kur farkı **656 Kambiyo Zararları** (65 Diğer Faaliyetlerden Olağan Gider ve Zararlar) hesabında izlenir. 657 reeskont, 780 finansman gideridir — kur farkı zararı değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-çeldirici; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0004",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Döviz cinsinden bir ALACAĞI bulunan işletmede, işlem tarihinden tahsil/değerleme tarihine kadar döviz kuru YÜKSELMİŞSE oluşan kur farkının işletme açısından niteliği ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Kur farkı zararı — 656 Kambiyo Zararları",
+      "B": "Kur farkı kârı — 646 Kambiyo Kârları",
+      "C": "Etkisi yoktur",
+      "D": "Faiz gideri — 780 Finansman Giderleri",
+      "E": "Reeskont gideri — 657 Reeskont Faiz Giderleri"
+    },
+    "answer": "B",
+    "solution": "Alacak dövizdeyken kur YÜKSELİRSE, aynı döviz daha çok TL'ye karşılık gelir → işletme lehine **kur farkı kârı (646 Kambiyo Kârları)** doğar. (Borçta ise tersi olur.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646; VUK md. 280"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0005",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Döviz cinsinden bir BORCU bulunan işletmede, işlem tarihinden ödeme/değerleme tarihine kadar döviz kuru YÜKSELMİŞSE oluşan kur farkının niteliği ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Kur farkı kârı — 646 Kambiyo Kârları",
+      "B": "Kur farkı zararı — 656 Kambiyo Zararları",
+      "C": "Etkisi yoktur",
+      "D": "Faiz geliri — 642 Faiz Gelirleri",
+      "E": "Reeskont geliri — 647 Reeskont Faiz Gelirleri"
+    },
+    "answer": "B",
+    "solution": "Borç dövizdeyken kur YÜKSELİRSE, borcun TL karşılığı artar → işletme aleyhine **kur farkı zararı (656 Kambiyo Zararları)** doğar. Alacaktaki durumun tersidir; bu yön çeldiricisine dikkat.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-yön çeldirici; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656; VUK md. 280"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0006",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, 20.000 USD tutarındaki yurt dışı satışını, işlem günü kuru 30,00 ₺/USD iken kaydetmiştir. Alacağını, kurun 32,50 ₺/USD olduğu gün tahsil etmiştir. Bu işlemde oluşan kur farkı ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "50.000 ₺ kâr — 646 Kambiyo Kârları",
+      "B": "50.000 ₺ zarar — 656 Kambiyo Zararları",
+      "C": "25.000 ₺ kâr — 646 Kambiyo Kârları",
+      "D": "650.000 ₺ kâr — 646 Kambiyo Kârları",
+      "E": "50.000 ₺ kâr — 642 Faiz Gelirleri"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = Döviz tutarı × Kur değişimi = 20.000 × (32,50 − 30,00) = 20.000 × 2,50 = **50.000 ₺**. Alacak + kur yükselişi → **kâr (646 Kambiyo Kârları)**. (Tahsilat 650.000 ₺; kayıtlı alacak 600.000 ₺.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-alacak kur farkı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0007",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 15.000 EUR tutarındaki borcu, işlem günü kuru 35,00 ₺/EUR iken kaydedilmiştir. Borç, kurun 33,00 ₺/EUR olduğu gün ödenmiştir. Bu işlemde oluşan kur farkı ve niteliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "30.000 ₺ zarar",
+      "B": "30.000 ₺ kâr",
+      "C": "2.000 ₺ kâr",
+      "D": "495.000 ₺ zarar",
+      "E": "Kur farkı doğmaz"
+    },
+    "answer": "B",
+    "solution": "Kur farkı = 15.000 × (35,00 − 33,00) = 15.000 × 2,00 = **30.000 ₺**. Borç dövizdeyken kur DÜŞTÜĞÜ için borç daha az TL ile kapanır → işletme lehine **kâr (646)**. (Ödeme 495.000 ₺; kayıtlı borç 525.000 ₺.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-borç kur farkı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0008",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 10.000 USD tutarındaki borcu işlem günü 31,00 ₺/USD iken kaydedilmiş; kurun 34,00 ₺/USD olduğu gün ödenmiştir. Oluşan kur farkı ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "30.000 ₺ zarar — 656 Kambiyo Zararları",
+      "B": "30.000 ₺ kâr — 646 Kambiyo Kârları",
+      "C": "3.000 ₺ zarar — 656 Kambiyo Zararları",
+      "D": "340.000 ₺ zarar — 656 Kambiyo Zararları",
+      "E": "30.000 ₺ zarar — 780 Finansman Giderleri"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 10.000 × (34,00 − 31,00) = 10.000 × 3,00 = **30.000 ₺**. Borç + kur yükselişi → **zarar (656 Kambiyo Zararları)**. Finansman gideri (780) değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-borç kur farkı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0009",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin kasasında 8.000 USD bulunmaktadır; bu tutar 30,50 ₺/USD kayıtlı değerdedir. Dönem sonu MB döviz alış kuru 33,00 ₺/USD olduğuna göre, değerleme sonucu oluşacak kur farkı ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "20.000 ₺ kâr — 646 Kambiyo Kârları",
+      "B": "20.000 ₺ zarar — 656 Kambiyo Zararları",
+      "C": "2.500 ₺ kâr — 646 Kambiyo Kârları",
+      "D": "264.000 ₺ kâr — 646 Kambiyo Kârları",
+      "E": "20.000 ₺ kâr — 649 Diğer Olağan Gelir ve Kârlar"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 8.000 × (33,00 − 30,50) = 8.000 × 2,50 = **20.000 ₺**. Döviz mevcudu (bir varlık) + kur yükselişi → **kâr (646)**. Yeni değer 264.000 ₺, kayıtlı 244.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-değerleme; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0010",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kayıtlı değeri 600.000 ₺ (20.000 USD × 30,00) olan bir alacak, kurun 32,50 ₺/USD olduğu gün banka aracılığıyla tahsil edilmiştir. Bu tahsilatın kaydında aşağıdakilerden hangisi yer alır?",
+    "options": {
+      "A": "102 Bankalar (B) 650.000; 120 Alıcılar (A) 600.000 ve 646 Kambiyo Kârları (A) 50.000",
+      "B": "102 Bankalar (B) 650.000; 120 Alıcılar (A) 650.000",
+      "C": "102 Bankalar (B) 600.000; 120 Alıcılar (A) 600.000",
+      "D": "120 Alıcılar (B) 650.000; 102 Bankalar (A) 600.000 ve 646 Kambiyo Kârları (A) 50.000",
+      "E": "102 Bankalar (B) 650.000; 120 Alıcılar (A) 600.000 ve 656 Kambiyo Zararları (A) 50.000"
+    },
+    "answer": "A",
+    "solution": "Tahsil edilen = 20.000 × 32,50 = 650.000 ₺ → **102 Bankalar (B) 650.000**; kapanan alacak **120 Alıcılar (A) 600.000**; aradaki lehte fark **646 Kambiyo Kârları (A) 50.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-çok hesaplı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/120/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0011",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kayıtlı değeri 525.000 ₺ (15.000 EUR × 35,00) olan bir satıcı borcu, kurun 37,00 ₺/EUR olduğu gün banka aracılığıyla ödenmiştir. Bu ödemenin kaydında aşağıdakilerden hangisi yer alır?",
+    "options": {
+      "A": "320 Satıcılar (B) 525.000 ve 656 Kambiyo Zararları (B) 30.000; 102 Bankalar (A) 555.000",
+      "B": "320 Satıcılar (B) 555.000; 102 Bankalar (A) 555.000",
+      "C": "320 Satıcılar (B) 525.000 ve 646 Kambiyo Kârları (B) 30.000; 102 Bankalar (A) 555.000",
+      "D": "102 Bankalar (B) 555.000; 320 Satıcılar (A) 525.000 ve 646 Kambiyo Kârları (A) 30.000",
+      "E": "320 Satıcılar (B) 525.000 ve 780 Finansman Giderleri (B) 30.000; 102 Bankalar (A) 555.000"
+    },
+    "answer": "A",
+    "solution": "Ödenen = 15.000 × 37,00 = 555.000 ₺. Kur farkı = 15.000 × (37,00 − 35,00) = 30.000 ₺. Borç + kur yükselişi → **zarar**: **320 Satıcılar (B) 525.000; 656 Kambiyo Zararları (B) 30.000 / 102 Bankalar (A) 555.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-çok hesaplı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 320/656/102"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0012",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletme 18.000 USD tutarındaki alacağını tahsil ettiğinde 45.000 ₺ kur farkı kârı elde etmiştir. Buna göre, işlem tarihinden tahsil tarihine kadar USD kuru kaç ₺ artmıştır?",
+    "options": {
+      "A": "0,40",
+      "B": "2,50",
+      "C": "4,00",
+      "D": "25,00",
+      "E": "0,25"
+    },
+    "answer": "B",
+    "solution": "Kur artışı = Kur farkı ÷ Döviz tutarı = 45.000 ÷ 18.000 = **2,50 ₺**. (Ters/reverse soru: sonuçtan birim kur değişimine ulaşılır.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0013",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletme 12.000 USD tutarındaki alacağını tahsil ettiğinde 24.000 ₺ kur farkı ZARARI ile karşılaşmıştır. Buna göre USD kuru, işlem tarihinden tahsil tarihine kadar kaç ₺ değişmiştir ve yönü nedir?",
+    "options": {
+      "A": "2,00 ₺ düşmüştür",
+      "B": "2,00 ₺ yükselmiştir",
+      "C": "0,50 ₺ düşmüştür",
+      "D": "12,00 ₺ düşmüştür",
+      "E": "24,00 ₺ düşmüştür"
+    },
+    "answer": "A",
+    "solution": "Birim kur değişimi = 24.000 ÷ 12.000 = 2,00 ₺. Alacakta ZARAR oluştuğuna göre kur **düşmüştür** (alacak + kur düşüşü → zarar). Yani kur **2,00 ₺ düşmüştür**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0014",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 25.000 USD tutarındaki alacağı 33,00 ₺/USD kayıtlı değerdedir. Dönem sonu MB döviz alış kuru 31,80 ₺/USD olduğuna göre, değerlemede oluşacak kur farkı ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "30.000 ₺ zarar — 656 Kambiyo Zararları",
+      "B": "30.000 ₺ kâr — 646 Kambiyo Kârları",
+      "C": "1.200 ₺ zarar — 656 Kambiyo Zararları",
+      "D": "795.000 ₺ zarar — 656 Kambiyo Zararları",
+      "E": "30.000 ₺ zarar — 657 Reeskont Faiz Giderleri"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 25.000 × (33,00 − 31,80) = 25.000 × 1,20 = **30.000 ₺**. Alacak + kur DÜŞÜŞÜ → **zarar (656)**. Reeskont (657) değil kambiyo zararıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-değerleme çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0015",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 40.000 USD tutarındaki borcu 30,00 ₺/USD kayıtlı değerdedir. Dönem sonu MB döviz alış kuru 31,50 ₺/USD olduğuna göre, değerlemede oluşacak kur farkı ve hesabı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "60.000 ₺ zarar — 656 Kambiyo Zararları",
+      "B": "60.000 ₺ kâr — 646 Kambiyo Kârları",
+      "C": "1.500 ₺ zarar — 656 Kambiyo Zararları",
+      "D": "1.260.000 ₺ zarar — 656 Kambiyo Zararları",
+      "E": "60.000 ₺ kâr — 646 Kambiyo Kârları"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 40.000 × (31,50 − 30,00) = 40.000 × 1,50 = **60.000 ₺**. Borç + kur YÜKSELİŞİ → **zarar (656)**. Borcun TL karşılığı arttığı için aleyhtedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-değerleme; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0016",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, üretimde kullanacağı bir makineyi 50.000 USD'ye almış; işlem (fatura) günü kuru 30,00 ₺/USD'dir. Makine henüz aktifleştirilmeden (kullanıma hazır olmadan) önce, kurun 30,60 ₺/USD olduğu gün bedel ödenmiştir. Aradaki 30.000 ₺'lik kur farkı nasıl muhasebeleştirilir?",
+    "options": {
+      "A": "656 Kambiyo Zararları'na gider yazılır.",
+      "B": "253 Tesis, Makine ve Cihazlar'ın maliyetine eklenir (aktifleştirmeden önceki dönem kur farkı).",
+      "C": "646 Kambiyo Kârları'na gelir yazılır.",
+      "D": "780 Finansman Giderleri'ne yazılır.",
+      "E": "257 Birikmiş Amortismanlar'a eklenir."
+    },
+    "answer": "B",
+    "solution": "Kur farkı = 50.000 × (30,60 − 30,00) = 30.000 ₺. MDV'de, varlığın **aktifleştirildiği döneme kadar** oluşan kur farkları **maliyete eklenir** (253). Sonraki dönem kur farkları ise kambiyo gider/geliri yazılır. (VUK md. 280/163 s. Tebliğ.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat-uygulama; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; MDV kur farkı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0017",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kur farklarında 'gerçekleşmiş (realize)' ile 'gerçekleşmemiş (değerleme)' kur farkı ayrımı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "İkisi de yalnızca tahsilat/ödeme anında doğar.",
+      "B": "Gerçekleşmiş kur farkı tahsilat/ödeme (kapanış) anında; gerçekleşmemiş kur farkı ise henüz kapanmamış döviz kalemlerinin dönem sonu değerlemesiyle doğar.",
+      "C": "Gerçekleşmemiş kur farkı hiçbir zaman kayda alınmaz.",
+      "D": "Gerçekleşmiş kur farkı yalnızca dönem sonunda doğar.",
+      "E": "İkisi de bilanço hesabıdır, gelir tablosunu etkilemez."
+    },
+    "answer": "B",
+    "solution": "**Gerçekleşmiş** kur farkı, döviz alacağı/borcunun **tahsil/ödeme (kapanış)** anında; **gerçekleşmemiş** kur farkı ise henüz kapanmamış döviz kalemlerinin **dönem sonu değerlemesiyle** doğar. İkisi de 646/656 ile sonuç hesaplarına yansır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0018",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin kasasında bulunan efektif (nakit döviz) mevcudu dönem sonunda değerlenirken hangi kur kullanılır?",
+    "options": {
+      "A": "MB döviz satış kuru",
+      "B": "MB efektif alış kuru",
+      "C": "MB döviz satış kurunun iki katı",
+      "D": "İşlem günü kuru (değerleme yapılmaz)",
+      "E": "Serbest piyasa satış kuru"
+    },
+    "answer": "B",
+    "solution": "Kasadaki **efektif (nakit döviz)** mevcudu dönem sonunda **MB efektif alış kuru** ile değerlenir. (Banka mevduatı/alacak-borç için döviz alış kuru; efektif kasa için efektif alış kuru esas alınır.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat-nüans; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280 (efektif alış kuru)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0019",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Aşağıdaki durumlardan hangilerinde işletme lehine (kambiyo KÂRI, 646) kur farkı doğar?\nI. Döviz cinsi alacak varken kurun yükselmesi\nII. Döviz cinsi borç varken kurun düşmesi\nIII. Döviz cinsi borç varken kurun yükselmesi",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "B",
+    "solution": "**I** alacak + kur↑ → kâr; **II** borç + kur↓ → kâr; **III** borç + kur↑ → ZARAR (656). Lehte kur farkı yalnızca **I ve II**'de doğar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0020",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kambiyo kârları (646) ve kambiyo zararları (656) gelir tablosunda hangi bölümde yer alır?",
+    "options": {
+      "A": "Brüt satışlar / Satışların maliyeti içinde",
+      "B": "Diğer faaliyetlerden olağan gelir ve kârlar (64) / gider ve zararlar (65) içinde",
+      "C": "Finansman giderleri (66) içinde",
+      "D": "Olağandışı gelir (67) / gider (68) içinde",
+      "E": "Faaliyet giderleri (63) içinde"
+    },
+    "answer": "B",
+    "solution": "Kambiyo kârları **646** → 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar; kambiyo zararları **656** → 65 Diğer Faaliyetlerden Olağan Gider ve Zararlar. Finansman gideri (66) veya olağandışı (67/68) değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-grup çeldirici; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 64/65"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0021",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "25.000 USD tutarındaki alacağı 33,00 ₺/USD kayıtlı olan işletmede, dönem sonu MB döviz alış kuru 34,20 ₺/USD'dir. Bu değerlemenin dönem sonu kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "120 Alıcılar (B) 30.000 / 646 Kambiyo Kârları (A) 30.000",
+      "B": "656 Kambiyo Zararları (B) 30.000 / 120 Alıcılar (A) 30.000",
+      "C": "120 Alıcılar (B) 855.000 / 646 Kambiyo Kârları (A) 855.000",
+      "D": "646 Kambiyo Kârları (B) 30.000 / 120 Alıcılar (A) 30.000",
+      "E": "102 Bankalar (B) 30.000 / 646 Kambiyo Kârları (A) 30.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 25.000 × (34,20 − 33,00) = 30.000 ₺. Alacak + kur yükselişi → alacağın TL değeri artar: **120 Alıcılar (B) 30.000 / 646 Kambiyo Kârları (A) 30.000**. (Tahsilat değil, değerlemedir.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-değerleme; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 120/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0022",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "40.000 USD tutarındaki satıcı borcu 30,00 ₺/USD kayıtlı olan işletmede, dönem sonu MB döviz alış kuru 31,50 ₺/USD'dir. Bu değerlemenin dönem sonu kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "656 Kambiyo Zararları (B) 60.000 / 320 Satıcılar (A) 60.000",
+      "B": "320 Satıcılar (B) 60.000 / 646 Kambiyo Kârları (A) 60.000",
+      "C": "656 Kambiyo Zararları (B) 60.000 / 102 Bankalar (A) 60.000",
+      "D": "320 Satıcılar (B) 60.000 / 656 Kambiyo Zararları (A) 60.000",
+      "E": "780 Finansman Giderleri (B) 60.000 / 320 Satıcılar (A) 60.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 40.000 × (31,50 − 30,00) = 60.000 ₺. Borç + kur yükselişi → borcun TL değeri artar (zarar): **656 Kambiyo Zararları (B) 60.000 / 320 Satıcılar (A) 60.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-değerleme; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 656/320"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0023",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, 30.000 USD tutarındaki alacağını (işlem günü kuru 28,00 ₺/USD) kurun 30,50 ₺/USD olduğu gün banka aracılığıyla tahsil etmiştir. Banka hesabına giren toplam TL tutarı kaç ₺'dir?",
+    "options": {
+      "A": "840.000",
+      "B": "915.000",
+      "C": "75.000",
+      "D": "900.000",
+      "E": "1.755.000"
+    },
+    "answer": "B",
+    "solution": "Tahsil edilen = Döviz tutarı × Tahsilat günü kuru = 30.000 × 30,50 = **915.000 ₺**. (Kayıtlı alacak 30.000 × 28,00 = 840.000 ₺; kur farkı kârı 75.000 ₺.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-tahsil TL; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0024",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, 20.000 EUR tutarındaki borcunu (işlem günü kuru 36,00 ₺/EUR) kurun 34,50 ₺/EUR olduğu gün ödemiştir. Bu işlemde oluşan kur farkı ve niteliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "30.000 ₺ kâr (646)",
+      "B": "30.000 ₺ zarar (656)",
+      "C": "1,50 ₺ kâr",
+      "D": "690.000 ₺ kâr (646)",
+      "E": "Kur farkı doğmaz"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 20.000 × (36,00 − 34,50) = 20.000 × 1,50 = **30.000 ₺**. Borç + kur DÜŞÜŞÜ → borç daha az TL ile kapanır (kâr, 646). Ödenen 690.000 ₺; kayıtlı borç 720.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-borç kur farkı; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0025",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, 24.000 USD tutarındaki borcunu öderken 36.000 ₺ kambiyo ZARARI ile karşılaşmıştır. Buna göre USD kuru, işlem gününden ödeme gününe kadar kaç ₺ değişmiştir ve yönü nedir?",
+    "options": {
+      "A": "1,50 ₺ yükselmiştir",
+      "B": "1,50 ₺ düşmüştür",
+      "C": "0,67 ₺ yükselmiştir",
+      "D": "15,00 ₺ yükselmiştir",
+      "E": "3,00 ₺ yükselmiştir"
+    },
+    "answer": "A",
+    "solution": "Birim kur değişimi = 36.000 ÷ 24.000 = 1,50 ₺. Borçta ZARAR doğduğuna göre kur **yükselmiştir** (borç + kur↑ → zarar). Yani kur **1,50 ₺ yükselmiştir**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0026",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletme döviz cinsi alacağını tahsil ettiğinde, kur 2,00 ₺ yükselmiş ve 60.000 ₺ kambiyo kârı doğmuştur. Buna göre alacağın döviz tutarı kaç USD'dir?",
+    "options": {
+      "A": "120.000",
+      "B": "30.000",
+      "C": "15.000",
+      "D": "60.000",
+      "E": "12.000"
+    },
+    "answer": "B",
+    "solution": "Döviz tutarı = Kur farkı ÷ Birim kur değişimi = 60.000 ÷ 2,00 = **30.000 USD**. (Ters soru.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0027",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletmenin aynı anda 10.000 USD döviz alacağı ve 6.000 USD döviz borcu vardır (ikisi de 30,00 ₺/USD kayıtlı). Dönem sonu MB döviz alış kuru 32,00 ₺/USD olduğunda, kur farklarının dönem sonucuna NET etkisi nedir?",
+    "options": {
+      "A": "8.000 ₺ net kâr",
+      "B": "8.000 ₺ net zarar",
+      "C": "32.000 ₺ net kâr",
+      "D": "20.000 ₺ net kâr",
+      "E": "12.000 ₺ net zarar"
+    },
+    "answer": "A",
+    "solution": "Kur artışı 2,00 ₺. Alacak: 10.000 × 2,00 = 20.000 ₺ KÂR (646). Borç: 6.000 × 2,00 = 12.000 ₺ ZARAR (656). Net = 20.000 − 12.000 = **8.000 ₺ net kâr**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-net etki; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0028",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir makine döviz cinsi kredi ile alınıp AKTİFLEŞTİRİLDİKTEN (kullanıma hazır olduktan) SONRA, kredinin döviz kurundaki artıştan doğan kur farkları ile ilgili genel uygulama aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Makinenin (253) maliyetine eklenmeye devam edilir.",
+      "B": "Aktifleştirmeden sonraki döneme ait kur farkları, maliyete eklenmeyip dönemin kambiyo gideri/geliri (656/646) olarak yazılabilir.",
+      "C": "257 Birikmiş Amortismanlar'a eklenir.",
+      "D": "Doğrudan sermayeye eklenir.",
+      "E": "Hiç kaydedilmez."
+    },
+    "answer": "B",
+    "solution": "Kur farkları yalnızca **aktifleştirmeye kadar** maliyete eklenir. Aktifleştirmeden **sonraki** dönemlere ait kur farkları, maliyete eklenmeyip **kambiyo gideri/geliri (656/646)** olarak yazılabilir. (0016'daki durumun tersi — zamanlama belirleyicidir.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat-zamanlama trap; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; MDV kur farkı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0029",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kur farkı ile reeskont arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "İkisi de aynı işlemi ifade eder.",
+      "B": "Kur farkı, döviz cinsi kalemlerin kur değişiminden (646/656); reeskont ise senetli alacak/borçların vade (faiz) unsurunun bugünkü değere indirgenmesinden (647/657) doğar.",
+      "C": "Kur farkı yalnızca senetli işlemlerde doğar.",
+      "D": "Reeskont yalnızca döviz işlemlerinde doğar.",
+      "E": "İkisi de finansman gideri (66) grubundadır."
+    },
+    "answer": "B",
+    "solution": "**Kur farkı** döviz cinsi kalemlerin **kur değişiminden** doğar (646/656). **Reeskont** ise senetli alacak/borçların **vade farkının (faiz)** bugünkü değere indirgenmesinden doğar (647/657). İkisi farklı kavramlardır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280-281; 1 Sıra No'lu MSUGT"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0030",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Aşağıdaki durumlardan hangilerinde işletme aleyhine (kambiyo ZARARI, 656) kur farkı doğar?\nI. Döviz cinsi alacak varken kurun düşmesi\nII. Döviz cinsi borç varken kurun yükselmesi\nIII. Kasadaki döviz mevcudu varken kurun yükselmesi",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "B",
+    "solution": "**I** alacak + kur↓ → zarar; **II** borç + kur↑ → zarar; **III** döviz mevcudu (varlık) + kur↑ → KÂR (646). Aleyhte kur farkı yalnızca **I ve II**'de doğar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0031",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 15.000 USD alacağı işlem günü 30,00 ₺/USD ile kaydedilmiş; birinci dönem sonu MB alış kuru 31,00 ₺/USD ile değerlenmiştir. İkinci dönemde alacak, kur 29,00 ₺/USD iken tahsil edilmiştir. İKİNCİ dönemde oluşan kur farkı ve niteliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "30.000 ₺ zarar (656)",
+      "B": "30.000 ₺ kâr (646)",
+      "C": "15.000 ₺ zarar (656)",
+      "D": "15.000 ₺ kâr (646)",
+      "E": "45.000 ₺ zarar (656)"
+    },
+    "answer": "A",
+    "solution": "İkinci dönemin kur farkı, o dönemin BAŞ değeri (birinci dönem sonu 31,00) ile tahsilat kuru (29,00) arasındaki farktan hesaplanır: 15.000 × (29,00 − 31,00) = **−30.000 ₺ zarar (656)**. (Birinci dönemde 15.000 ₺ kâr yazılmıştı; iki dönem birlikte net 15.000 ₺ zarar = 30→29.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-iki dönem; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0032",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, bankadaki TL hesabından 10.000 USD satın alıp döviz tevdiat (banka döviz) hesabına aktarmıştır (kur 31,00 ₺/USD). Bu işlemin niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Döviz alımı anında mutlaka kambiyo kârı/zararı doğar.",
+      "B": "Yalnızca bir varlık (TL) başka bir varlığa (döviz) dönüşür; alım anında kur farkı doğmaz, kur farkı ancak sonraki değerleme/elden çıkarmada oluşur.",
+      "C": "İşlem gelir tablosunu doğrudan etkiler ve 646'ya kâr yazılır.",
+      "D": "Döviz alımı bir gider olarak 656'ya yazılır.",
+      "E": "Bu işlem hiç kaydedilmez."
+    },
+    "answer": "B",
+    "solution": "Döviz alımında sadece **varlık dönüşümü** olur (102 TL hesabı azalır, 102/108 döviz hesabı artar). Alım anında kur farkı **doğmaz**; kur farkı ancak dövizin **sonraki değerleme/elden çıkarılmasında** oluşur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 102/108"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0033",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kayıtlı değeri 700.000 ₺ (20.000 USD × 35,00) olan bir alacak, kurun 33,00 ₺/USD olduğu gün banka aracılığıyla tahsil edilmiştir. Bu tahsilatın kaydında aşağıdakilerden hangisi yer alır?",
+    "options": {
+      "A": "102 Bankalar (B) 660.000 ve 656 Kambiyo Zararları (B) 40.000; 120 Alıcılar (A) 700.000",
+      "B": "102 Bankalar (B) 700.000; 120 Alıcılar (A) 700.000",
+      "C": "102 Bankalar (B) 660.000 ve 646 Kambiyo Kârları (B) 40.000; 120 Alıcılar (A) 700.000",
+      "D": "120 Alıcılar (B) 700.000; 102 Bankalar (A) 660.000 ve 646 Kambiyo Kârları (A) 40.000",
+      "E": "102 Bankalar (B) 660.000; 120 Alıcılar (A) 660.000"
+    },
+    "answer": "A",
+    "solution": "Tahsil = 20.000 × 33,00 = 660.000 ₺. Kur farkı = 20.000 × (35,00 − 33,00) = 40.000 ₺. Alacak + kur DÜŞÜŞÜ → zarar: **102 Bankalar (B) 660.000; 656 Kambiyo Zararları (B) 40.000 / 120 Alıcılar (A) 700.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-tahsil zarar; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/656/120"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0034",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme döviz cinsi alacağını tahsil ederken 25.000 ₺ kambiyo kârı elde etmiş; bu sırada kur 1,25 ₺ yükselmiştir. Alacağın döviz tutarı kaç USD'dir?",
+    "options": {
+      "A": "31.250",
+      "B": "20.000",
+      "C": "15.000",
+      "D": "12.500",
+      "E": "25.000"
+    },
+    "answer": "B",
+    "solution": "Döviz tutarı = 25.000 ÷ 1,25 = **20.000 USD**. (Ters soru; alacak + kur↑ → kâr tutarlı.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0035",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, yurt dışından 10.000 USD tutarında ticari mal ithal etmiş (fatura günü kuru 30,00 ₺/USD, mal aynı gün işletmeye girmiştir). Borç, malın girişinden SONRA kurun 31,20 ₺/USD olduğu gün ödenmiştir. Ödeme sırasında oluşan 12.000 ₺'lik kur farkı nasıl muhasebeleştirilir?",
+    "options": {
+      "A": "153 Ticari Mallar'ın maliyetine eklenir.",
+      "B": "Malın girişinden sonra doğduğu için 656 Kambiyo Zararları'na gider yazılır.",
+      "C": "646 Kambiyo Kârları'na gelir yazılır.",
+      "D": "191 İndirilecek KDV'ye eklenir.",
+      "E": "320 Satıcılar'da bekletilir, sonuç hesabına yansımaz."
+    },
+    "answer": "B",
+    "solution": "Kur farkı = 10.000 × (31,20 − 30,00) = 12.000 ₺. Mal zaten işletmeye **girmiş** olduğundan (stok maliyeti kesinleşmiş), sonraki ödeme kur farkı **maliyete eklenmez**; borç + kur↑ olduğundan **656 Kambiyo Zararları**'na yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (mevzuat-zamanlama; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; stok kur farkı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0036",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletme döviz cinsi BORCUNU öderken kambiyo KÂRI elde etmiştir. Buna göre, işlem gününden ödeme gününe kadar döviz kuru ne yönde değişmiştir?",
+    "options": {
+      "A": "Yükselmiştir",
+      "B": "Düşmüştür",
+      "C": "Değişmemiştir",
+      "D": "Önce yükselip sonra aynı kalmıştır",
+      "E": "Yönü belirlenemez"
+    },
+    "answer": "B",
+    "solution": "Borçta kâr, ancak kurun **düşmesiyle** oluşur (borç daha az TL ile kapanır). Dolayısıyla kur **düşmüştür**. (Alacakta ise kâr için kurun yükselmesi gerekirdi — yön çeldiricisi.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0037",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 12.000 USD tutarındaki banka döviz mevduatı 32,00 ₺/USD kayıtlı değerdedir. Dönem sonu MB döviz alış kuru 30,50 ₺/USD olduğuna göre, değerlemede oluşacak kur farkı ve niteliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "18.000 ₺ zarar (656)",
+      "B": "18.000 ₺ kâr (646)",
+      "C": "1,50 ₺ zarar",
+      "D": "366.000 ₺ zarar (656)",
+      "E": "18.000 ₺ zarar (780)"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 12.000 × (32,00 − 30,50) = 12.000 × 1,50 = **18.000 ₺**. Döviz mevduatı (varlık) + kur DÜŞÜŞÜ → varlığın TL değeri azalır → **zarar (656)**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-değerleme varlık; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0038",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Dönem içinde 80.000 ₺ kambiyo kârı (646) ve 50.000 ₺ kambiyo zararı (656) doğan bir işletmede, kur farklarının dönem kârına net etkisi nedir?",
+    "options": {
+      "A": "130.000 ₺ artış",
+      "B": "30.000 ₺ artış",
+      "C": "30.000 ₺ azalış",
+      "D": "Etkisi yoktur (netleşir)",
+      "E": "50.000 ₺ azalış"
+    },
+    "answer": "B",
+    "solution": "646 (gelir) dönem kârını artırır, 656 (gider) azaltır. Net etki = 80.000 − 50.000 = **30.000 ₺ net artış** (kâr). İki hesap ayrı izlenir ama sonuca net etkisi kâr yönündedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-net etki; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0039",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme 5.000 USD efektifi kasasında 30,00 ₺/USD ile kayıtlı tutmaktadır. Bu efektifi, kurun 32,40 ₺/USD olduğu gün bankaya bozdurmuş (TL'ye çevirmiş)tir. Oluşan kur farkı ve niteliği aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "12.000 ₺ kâr (646)",
+      "B": "12.000 ₺ zarar (656)",
+      "C": "2,40 ₺ kâr",
+      "D": "162.000 ₺ kâr (646)",
+      "E": "12.000 ₺ kâr (642)"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 5.000 × (32,40 − 30,00) = 5.000 × 2,40 = **12.000 ₺**. Döviz (varlık) elden çıkarılırken kur YÜKSELMİŞ → **kâr (646)**. Kasadan çıkan 150.000 ₺, elde edilen 162.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-elden çıkarma; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0040",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kur farklarının muhasebeleştirilmesiyle ilgili aşağıdaki ifadelerden hangisi YANLIŞTIR?",
+    "options": {
+      "A": "Dönem sonu değerlemede kural olarak MB döviz alış kuru kullanılır.",
+      "B": "Lehte kur farkı 646, aleyhte kur farkı 656 hesabında izlenir.",
+      "C": "Döviz cinsi alacakta kur yükselirse kambiyo kârı doğar.",
+      "D": "Döviz cinsi borçta kur yükselirse kambiyo kârı doğar.",
+      "E": "MDV alımında aktifleştirmeye kadar oluşan kur farkı maliyete eklenir."
+    },
+    "answer": "D",
+    "solution": "**YANLIŞ olan D'dir:** Döviz cinsi BORÇTA kur yükselirse borcun TL karşılığı artar → kambiyo **ZARARI (656)** doğar, kâr değil. Diğer ifadeler doğrudur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hangisi YANLIŞ; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0041",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme, üretim makinesini 40.000 USD'ye döviz kredisiyle almıştır (fatura günü kuru 30,00 ₺/USD). Makine, kurun 30,50 ₺/USD olduğu gün kullanıma hazır hâle gelmiş (aktifleştirilmiş)tir. Aktifleştirmeye kadar oluşan kur farkı maliyete eklendiğine göre, makinenin '253' hesabındaki toplam maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "1.200.000",
+      "B": "1.220.000",
+      "C": "1.240.000",
+      "D": "20.000",
+      "E": "1.180.000"
+    },
+    "answer": "B",
+    "solution": "İlk maliyet = 40.000 × 30,00 = 1.200.000 ₺. Aktifleştirmeye kadar kur farkı = 40.000 × (30,50 − 30,00) = 20.000 ₺ (maliyete eklenir). Toplam maliyet = 1.200.000 + 20.000 = **1.220.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-maliyet+kur; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 253"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0042",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "50.000 USD tutarındaki alacak işlem günü 28,00 ₺/USD ile kaydedilmiş; birinci dönem sonu MB alış kuru 30,00 ₺/USD ile değerlenmiştir. Alacak, ikinci dönemde kur 31,50 ₺/USD iken tahsil edilmiştir. İKİNCİ dönemde oluşan kur farkı kârı kaç ₺'dir?",
+    "options": {
+      "A": "175.000",
+      "B": "100.000",
+      "C": "75.000",
+      "D": "150.000",
+      "E": "25.000"
+    },
+    "answer": "C",
+    "solution": "İkinci dönem kur farkı, dönem başı değeri (30,00) ile tahsilat kuru (31,50) arasından: 50.000 × (31,50 − 30,00) = 50.000 × 1,50 = **75.000 ₺ kâr**. (Birinci dönemde 50.000 × 2,00 = 100.000 ₺ kâr ayrıca yazılmıştı.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-iki dönem; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0043",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletmenin dönem sonunda 20.000 USD alacağı, 8.000 USD borcu ve kasasında 5.000 USD efektifi vardır (hepsi 30,00 ₺/USD kayıtlı). Dönem sonu MB alış kuru 31,00 ₺/USD olduğuna göre kur farklarının dönem sonucuna NET etkisi nedir?",
+    "options": {
+      "A": "17.000 ₺ net kâr",
+      "B": "17.000 ₺ net zarar",
+      "C": "33.000 ₺ net kâr",
+      "D": "25.000 ₺ net kâr",
+      "E": "8.000 ₺ net zarar"
+    },
+    "answer": "A",
+    "solution": "Kur artışı 1,00 ₺. Alacak: 20.000 KÂR. Kasa döviz (varlık): 5.000 KÂR. Borç: 8.000 ZARAR. Net = (20.000 + 5.000) − 8.000 = **17.000 ₺ net kâr**. Varlıklarda kur↑ → kâr, borçta kur↑ → zarar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-üç kalem net; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0044",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme 30.000 USD tutarındaki borcunu öderken 45.000 ₺ kambiyo KÂRI elde etmiştir. Buna göre kur, işlem gününden ödeme gününe kadar ne kadar ve ne yönde değişmiştir?",
+    "options": {
+      "A": "1,50 ₺ düşmüştür",
+      "B": "1,50 ₺ yükselmiştir",
+      "C": "0,67 ₺ düşmüştür",
+      "D": "15,00 ₺ düşmüştür",
+      "E": "3,00 ₺ düşmüştür"
+    },
+    "answer": "A",
+    "solution": "Birim kur değişimi = 45.000 ÷ 30.000 = 1,50 ₺. Borçta KÂR ancak kur DÜŞÜŞÜYLE oluşur. Yani kur **1,50 ₺ düşmüştür**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0045",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 5.000 USD döviz kasası 30,00 ₺/USD kayıtlıdır. Dönem sonu MB alış kuru 32,40 ₺/USD olduğunda yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
+      "B": "656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000",
+      "C": "100 Kasa (B) 162.000 / 646 Kambiyo Kârları (A) 162.000",
+      "D": "646 Kambiyo Kârları (B) 12.000 / 100 Kasa (A) 12.000",
+      "E": "100 Kasa (B) 12.000 / 642 Faiz Gelirleri (A) 12.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 5.000 × (32,40 − 30,00) = 12.000 ₺. Döviz kasası (varlık) + kur↑ → kasanın TL değeri artar: **100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-değerleme kasa; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 100/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0046",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kur farklarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Dönem sonu değerlemede kural olarak MB döviz alış kuru esas alınır.\nII. Döviz cinsi alacakta kur yükselirse kambiyo kârı (646) doğar.\nIII. MDV alımında aktifleştirmeden sonraki kur farkları maliyete eklenmeyip kambiyo gider/geliri yazılabilir.",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "E",
+    "solution": "Üç ifade de doğrudur: **I** VUK 280 → MB döviz alış kuru; **II** alacak + kur↑ → 646 kâr; **III** aktifleştirmeden sonraki kur farkları kambiyo gider/geliri (656/646) yazılabilir. Doğru cevap **I, II ve III**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0047",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme döviz cinsi bir alacağını tahsil ederken 21.000 ₺ kambiyo ZARARI ile karşılaşmıştır; bu sırada kur 1,50 ₺ değişmiştir. Alacağın döviz tutarı kaç USD'dir ve kur ne yönde değişmiştir?",
+    "options": {
+      "A": "14.000 USD — kur düşmüştür",
+      "B": "14.000 USD — kur yükselmiştir",
+      "C": "31.500 USD — kur düşmüştür",
+      "D": "10.500 USD — kur yükselmiştir",
+      "E": "1.400 USD — kur düşmüştür"
+    },
+    "answer": "A",
+    "solution": "Döviz tutarı = 21.000 ÷ 1,50 = **14.000 USD**. Alacakta ZARAR, kurun DÜŞMESİYLE oluşur → kur **düşmüştür**. (Ters + yön birlikte.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0048",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kambiyo kârı (646) ile menkul kıymet satış kârı (645) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "İkisi de döviz kurundaki değişimden doğar.",
+      "B": "646 döviz cinsi kalemlerin kur değişiminden; 645 ise menkul kıymetlerin (hisse senedi/tahvil) satış bedeli ile kayıtlı değeri arasındaki olumlu farktan doğar.",
+      "C": "646 bir gider, 645 bir gelir hesabıdır.",
+      "D": "İkisi de olağandışı gelir (67) grubundadır.",
+      "E": "645 kur farkı, 646 menkul kıymet kârıdır."
+    },
+    "answer": "B",
+    "solution": "**646 Kambiyo Kârları** döviz kalemlerinin **kur değişiminden**; **645 Menkul Kıymet Satış Kârları** ise menkul kıymetin **satış bedeli − kayıtlı değer** olumlu farkından doğar. İkisi de 64 grubunda ama kaynağı farklıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım çeldirici; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 645/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0049",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "30.000 USD alacak işlem günü 30,00 ₺/USD ile kaydedilmiş; birinci dönem sonu 31,00 ₺/USD ile değerlenip kur farkı kârı yazılmıştır. İkinci dönemde alacak, kur 32,00 ₺/USD iken tahsil edilmiştir. İkinci dönemde ek olarak yazılacak kambiyo kârı kaç ₺'dir?",
+    "options": {
+      "A": "60.000",
+      "B": "30.000",
+      "C": "90.000",
+      "D": "15.000",
+      "E": "0"
+    },
+    "answer": "B",
+    "solution": "Birinci dönemde 30→31 için 30.000 ₺ kâr yazıldı. İkinci dönemde ek kâr = dönem başı 31,00 ile tahsilat 32,00 arasından: 30.000 × (32,00 − 31,00) = **30.000 ₺**. (Toplam iki dönem 60.000 ₺.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-iki dönem; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0050",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Dönem sonu değerlemesinde 24.000 ₺ kambiyo zararı doğan bir döviz alacağında, kur 1,20 ₺ düşmüştür. Alacağın döviz tutarı kaç USD'dir?",
+    "options": {
+      "A": "28.800",
+      "B": "20.000",
+      "C": "12.000",
+      "D": "24.000",
+      "E": "2.000"
+    },
+    "answer": "B",
+    "solution": "Döviz tutarı = 24.000 ÷ 1,20 = **20.000 USD**. (Alacak + kur↓ → zarar tutarlı; ters soru.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (ters hesap; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0051",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletmede döviz kurundaki artış nedeniyle 40.000 ₺ kambiyo KÂRI doğmuştur ve ilgili döviz tutarı 20.000 USD'dir. Buna göre bu kâr aşağıdaki hangi kalemden kaynaklanıyor olabilir?",
+    "options": {
+      "A": "Döviz cinsi bir borçtan",
+      "B": "Döviz cinsi bir alacaktan (veya döviz mevcudundan)",
+      "C": "TL cinsi bir alacaktan",
+      "D": "TL cinsi bir borçtan",
+      "E": "Bir gider tahakkukundan"
+    },
+    "answer": "B",
+    "solution": "Kur ARTMIŞ ve KÂR doğmuşsa, kalem bir **döviz alacağı veya döviz mevcudu** (varlık) olmalıdır (varlık + kur↑ → kâr). Borçta kur↑ zarar doğururdu; TL kalemlerde kur farkı doğmaz. (Birim kur = 40.000/20.000 = 2,00 ₺ artış.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çıkarım-yön; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0052",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kayıtlı değeri 720.000 ₺ (20.000 EUR × 36,00) olan bir satıcı borcu, kurun 34,50 ₺/EUR olduğu gün banka aracılığıyla ödenmiştir. Bu ödemenin kaydında aşağıdakilerden hangisi yer alır?",
+    "options": {
+      "A": "320 Satıcılar (B) 720.000 / 102 Bankalar (A) 690.000 ve 646 Kambiyo Kârları (A) 30.000",
+      "B": "320 Satıcılar (B) 690.000 / 102 Bankalar (A) 690.000",
+      "C": "320 Satıcılar (B) 720.000 ve 656 Kambiyo Zararları (B) 30.000 / 102 Bankalar (A) 750.000",
+      "D": "102 Bankalar (B) 690.000 / 320 Satıcılar (A) 690.000",
+      "E": "320 Satıcılar (B) 720.000 / 102 Bankalar (A) 720.000"
+    },
+    "answer": "A",
+    "solution": "Ödenen = 20.000 × 34,50 = 690.000 ₺. Kur farkı = 20.000 × (36,00 − 34,50) = 30.000 ₺. Borç + kur DÜŞÜŞÜ → kâr: **320 Satıcılar (B) 720.000 / 102 Bankalar (A) 690.000; 646 Kambiyo Kârları (A) 30.000**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-borç ödeme kâr; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 320/102/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0053",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Dönem içinde 120.000 ₺ kambiyo kârı ve 95.000 ₺ kambiyo zararı doğan bir işletmede, kur farklarının dönem kârına net etkisi nedir?",
+    "options": {
+      "A": "215.000 ₺ artış",
+      "B": "25.000 ₺ artış",
+      "C": "25.000 ₺ azalış",
+      "D": "95.000 ₺ azalış",
+      "E": "Etkisi yoktur"
+    },
+    "answer": "B",
+    "solution": "Net etki = Kambiyo kârı − Kambiyo zararı = 120.000 − 95.000 = **25.000 ₺ net artış**. 646 kârı artırır, 656 azaltır; net sonuç kâr yönündedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-net etki; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0054",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Aşağıdaki kalemlerden hangileri dönem sonu değerlemesinde kur farkı doğurabilir?\nI. Döviz cinsi alıcılar (döviz alacağı)\nII. TL cinsi satıcılar (TL borcu)\nIII. Bankadaki döviz tevdiat hesabı",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "D",
+    "solution": "Kur farkı yalnızca **döviz (yabancı para) cinsi** kalemlerde doğar: **I** döviz alacağı ve **III** döviz mevduatı. **II** TL cinsi borç olduğundan kur farkı doğurmaz. Doğru cevap **I ve III**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0055",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme 16.000 USD tutarındaki alacağını (işlem günü 29,00 ₺/USD) kurun 31,25 ₺/USD olduğu gün tahsil etmiştir. Tahsil edilen toplam TL ile oluşan kambiyo kârı sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "500.000 ₺ tahsil — 36.000 ₺ kâr",
+      "B": "464.000 ₺ tahsil — 36.000 ₺ kâr",
+      "C": "500.000 ₺ tahsil — 500.000 ₺ kâr",
+      "D": "464.000 ₺ tahsil — 36.000 ₺ zarar",
+      "E": "36.000 ₺ tahsil — 500.000 ₺ kâr"
+    },
+    "answer": "A",
+    "solution": "Tahsil = 16.000 × 31,25 = 500.000 ₺. Kayıtlı alacak = 16.000 × 29,00 = 464.000 ₺. Kambiyo kârı = 500.000 − 464.000 = 36.000 ₺ (veya 16.000 × 2,25 = 36.000). Doğru: **500.000 ₺ tahsil, 36.000 ₺ kâr**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-iki değer; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0056",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletmenin 12.000 USD tutarındaki borcu 33,00 ₺/USD kayıtlıdır. Dönem sonu MB alış kuru 30,00 ₺/USD olduğunda yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "320 Satıcılar (B) 36.000 / 646 Kambiyo Kârları (A) 36.000",
+      "B": "656 Kambiyo Zararları (B) 36.000 / 320 Satıcılar (A) 36.000",
+      "C": "320 Satıcılar (B) 360.000 / 646 Kambiyo Kârları (A) 360.000",
+      "D": "646 Kambiyo Kârları (B) 36.000 / 320 Satıcılar (A) 36.000",
+      "E": "320 Satıcılar (B) 36.000 / 656 Kambiyo Zararları (A) 36.000"
+    },
+    "answer": "A",
+    "solution": "Kur farkı = 12.000 × (33,00 − 30,00) = 36.000 ₺. Borç + kur DÜŞÜŞÜ → borcun TL değeri azalır (lehte): borç **320 Satıcılar (B) 36.000** azaltılır, **646 Kambiyo Kârları (A) 36.000** yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kayıt-değerleme borç kâr; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 320/646"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0057",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Bir işletmenin dönem sonunda 30.000 USD döviz borcu (kayıt 30,00 ₺/USD) ve 30.000 USD döviz alacağı (kayıt 30,00 ₺/USD) vardır. Dönem sonu kur 32,00 ₺/USD olduğunda kur farklarının net etkisi nedir?",
+    "options": {
+      "A": "60.000 ₺ net kâr",
+      "B": "60.000 ₺ net zarar",
+      "C": "Net etki sıfırdır (alacak kârı ile borç zararı eşit)",
+      "D": "120.000 ₺ net kâr",
+      "E": "32.000 ₺ net zarar"
+    },
+    "answer": "C",
+    "solution": "Alacak: 30.000 × 2,00 = 60.000 ₺ KÂR. Borç: 30.000 × 2,00 = 60.000 ₺ ZARAR. Eşit tutarda döviz alacak ve borç aynı kur değişimine maruz kaldığından net etki = 60.000 − 60.000 = **0 (birbirini götürür)**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı-net sıfır; sınav stiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0058",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme 25.000 USD tutarındaki borcunu, işlem günü 30,00 ₺/USD iken kaydetmiş; ödeme günü kur 30,00 ₺/USD olarak değişmeden kalmıştır. Bu durumda kur farkı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "25.000 ₺ kâr doğar.",
+      "B": "Kur değişmediği için kur farkı doğmaz; 646/656 çalışmaz.",
+      "C": "750.000 ₺ zarar doğar.",
+      "D": "25.000 ₺ zarar doğar.",
+      "E": "Otomatik olarak kambiyo kârı yazılır."
+    },
+    "answer": "B",
+    "solution": "İşlem ve ödeme kuru aynı (30,00) olduğundan **kur farkı doğmaz**; borç kayıtlı değeriyle (750.000 ₺) kapanır, 646/656 çalışmaz. Kur farkı ancak kur DEĞİŞİRSE doğar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (kavram-çeldirici; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0059",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "İşletme 10.000 USD tutarında ticari malı, fatura ve mal giriş günü kuru 30,00 ₺/USD iken ithal etmiştir. '153 Ticari Mallar' hesabına kaydedilecek maliyet kaç ₺'dir? (Ödeme sonraki döneme bırakılmıştır.)",
+    "options": {
+      "A": "300.000",
+      "B": "Ödeme yapılmadığı için henüz kaydedilmez",
+      "C": "330.000",
+      "D": "270.000",
+      "E": "10.000"
+    },
+    "answer": "A",
+    "solution": "Mal, giriş günü kuruyla değerlenir: 10.000 × 30,00 = **300.000 ₺** → 153 Ticari Mallar. Ödeme sonraki dönemde farklı kurdan yapılırsa oluşacak kur farkı, mal girişi tamamlandığından maliyete değil kambiyo gider/geliri (656/646) hesabına yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (hesaplama-stok kur; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 153"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kur-gen-0060",
+    "ders": "finansal_muhasebe",
+    "konu": "kur_farklari",
+    "stem": "Kur farklarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Döviz cinsi borçta kur düşerse kambiyo kârı (646) doğar.\nII. Kambiyo kârı ve zararı gelir tablosunda diğer faaliyetlerden olağan gelir/gider (64/65) grubundadır.\nIII. TL cinsi alacak ve borçlarda kur farkı doğmaz.",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "E",
+    "solution": "Üç ifade de doğrudur: **I** borç + kur↓ → kâr (646); **II** 646/656 → 64/65 olağan gelir/gider; **III** kur farkı yalnız döviz kalemlerde doğar, TL kalemlerde doğmaz. Doğru cevap **I, II ve III**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
+      "legislationRef": "VUK md. 280; 1 Sıra No'lu MSUGT - 646/656"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]
