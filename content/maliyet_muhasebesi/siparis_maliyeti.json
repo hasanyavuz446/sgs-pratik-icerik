@@ -1,0 +1,602 @@
+[
+  {
+    "id": "mmuh-siparis-gen-0001",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sistemi aşağıdaki üretim biçimlerinden hangisinde kullanılır?",
+    "options": {"A": "Birbirinin aynı, sürekli ve kitle halinde üretim (şeker, çimento)", "B": "Birbirinden farklı, ayırt edilebilir, sipariş veya partiler halinde üretim (inşaat, gemi, mobilya, matbaa)", "C": "Yalnızca hizmet işletmelerinde", "D": "Yalnızca tarım işletmelerinde", "E": "Üretim olmayan işletmelerde"},
+    "answer": "B",
+    "solution": "**Sipariş maliyeti sistemi**, birbirinden farklı, ayırt edilebilir, **sipariş/parti** halinde üretim yapan işletmelerde kullanılır (inşaat, gemi, mobilya, matbaa, özel makine). Sürekli/kitle üretimde ise safha maliyeti kullanılır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-sipariş; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti sistemi"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0002",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Aşağıdaki işletmelerden hangisi tipik olarak sipariş maliyeti sistemini kullanır?",
+    "options": {"A": "Şeker fabrikası", "B": "Çimento fabrikası", "C": "Gemi inşa (tersane) işletmesi", "D": "Un fabrikası", "E": "Akaryakıt rafinerisi"},
+    "answer": "C",
+    "solution": "**Gemi inşa (tersane)** her siparişi ayrı, ayırt edilebilir üretim olduğundan sipariş maliyeti kullanır. Şeker, çimento, un, rafineri sürekli/kitle üretim → safha maliyeti.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (örnek-sektör; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0003",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Aşağıdaki üretim türlerinden hangisi sipariş maliyeti sistemine UYGUN DEĞİLDİR?",
+    "options": {"A": "Sipariş üzerine özel mobilya üretimi", "B": "Matbaada özel kitap baskısı", "C": "Köprü/bina inşaatı", "D": "Sürekli akışlı şeker üretimi", "E": "Özel tasarım makine imalatı"},
+    "answer": "D",
+    "solution": "Özel mobilya, kitap baskısı, inşaat, özel makine ayırt edilebilir siparişlerdir → sipariş maliyeti. **Sürekli akışlı şeker üretimi** birbirinin aynı kitle üretimdir → **safha maliyeti** kullanılır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0004",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde her siparişin maliyetinin ayrı ayrı izlendiği belge aşağıdakilerden hangisidir?",
+    "options": {"A": "Fatura", "B": "Sipariş (iş) maliyet kartı", "C": "Bordro", "D": "Amortisman tablosu", "E": "Mizan"},
+    "answer": "B",
+    "solution": "Sipariş maliyeti sisteminde her sipariş için ayrı bir **sipariş (iş) maliyet kartı** açılır; siparişe ait DİMM, DİG ve yüklenen GÜG bu kartta toplanır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-maliyet kartı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyet kartı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0005",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir siparişin maliyet kartında toplanan üç temel maliyet unsuru hangileridir?",
+    "options": {"A": "Satış + pazarlama + yönetim giderleri", "B": "Direkt ilk madde ve malzeme + direkt işçilik + (yüklenen) genel üretim giderleri", "C": "Faiz + vergi + amortisman", "D": "Alış + iade + iskonto", "E": "Kira + enerji + su"},
+    "answer": "B",
+    "solution": "Sipariş maliyet kartında **direkt ilk madde ve malzeme (DİMM) + direkt işçilik (DİG) + yüklenen genel üretim giderleri (GÜG)** toplanır. Bu üçünün toplamı siparişin üretim maliyetidir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-maliyet unsurları; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti unsurları"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0006",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir siparişin toplam üretim maliyeti nasıl hesaplanır?",
+    "options": {"A": "DİMM − DİG − GÜG", "B": "DİMM + DİG + Yüklenen GÜG", "C": "DİMM × DİG × GÜG", "D": "Yalnızca DİMM", "E": "Satış fiyatı − kâr"},
+    "answer": "B",
+    "solution": "Sipariş toplam üretim maliyeti = **Direkt ilk madde ve malzeme + Direkt işçilik + Yüklenen genel üretim giderleri**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (formül-toplam maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0007",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir siparişin birim maliyeti nasıl hesaplanır?",
+    "options": {"A": "Sipariş toplam maliyeti × sipariş adedi", "B": "Sipariş toplam maliyeti ÷ sipariş adedi", "C": "Sipariş adedi ÷ toplam maliyet", "D": "Toplam maliyet + sipariş adedi", "E": "Satış fiyatı ÷ adet"},
+    "answer": "B",
+    "solution": "Sipariş birim maliyeti = **Sipariş toplam üretim maliyeti ÷ Sipariş adedi (üretilen birim sayısı)**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (formül-birim maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0008",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "101 no'lu siparişin maliyet kartı: DİMM 50.000 ₺, DİG 30.000 ₺, yüklenen GÜG 20.000 ₺. Siparişin toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "100.000", "B": "80.000", "C": "70.000", "D": "50.000", "E": "120.000"},
+    "answer": "A",
+    "solution": "Toplam maliyet = 50.000 + 30.000 + 20.000 = **100.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0009",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "101 no'lu siparişin toplam maliyeti 100.000 ₺, siparişte 500 adet mamul üretilmiştir. Birim maliyet kaç ₺'dir?",
+    "options": {"A": "200", "B": "100", "C": "500", "D": "250", "E": "50"},
+    "answer": "A",
+    "solution": "Birim maliyet = 100.000 ÷ 500 = **200 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0010",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "102 no'lu siparişin maliyet kartı: DİMM 80.000 ₺, DİG 40.000 ₺, yüklenen GÜG 40.000 ₺. Toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "120.000", "B": "160.000", "C": "200.000", "D": "80.000", "E": "140.000"},
+    "answer": "B",
+    "solution": "Toplam maliyet = 80.000 + 40.000 + 40.000 = **160.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0011",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "102 no'lu siparişin toplam maliyeti 160.000 ₺, üretilen mamul 400 adettir. Birim maliyet kaç ₺'dir?",
+    "options": {"A": "200", "B": "400", "C": "160", "D": "40", "E": "640"},
+    "answer": "B",
+    "solution": "Birim maliyet = 160.000 ÷ 400 = **400 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0012",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde direkt ilk madde ve malzeme (DİMM) siparişe nasıl yüklenir?",
+    "options": {"A": "Tahmini bir oranla dağıtılarak", "B": "Malzeme istek fişleri ile siparişe doğrudan (direkt) izlenerek", "C": "Hiç yüklenmez", "D": "Yalnızca dönem sonunda tahminle", "E": "Satış tutarına göre"},
+    "answer": "B",
+    "solution": "DİMM, siparişe **doğrudan (direkt)** izlenebilir; malzeme istek fişleriyle hangi siparişte ne kadar kullanıldığı belirlenip o siparişe yüklenir. Dağıtım/tahmin gerekmez.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-DİMM izleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - direkt malzeme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0013",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde direkt işçilik (DİG) siparişe nasıl yüklenir?",
+    "options": {"A": "Tahmini oranla", "B": "İşçilik zaman kartları ile siparişte harcanan süreye göre doğrudan (direkt)", "C": "Malzeme miktarına göre", "D": "Hiç yüklenmez", "E": "Satış fiyatına göre"},
+    "answer": "B",
+    "solution": "Direkt işçilik, **işçilik zaman kartları** ile hangi siparişte ne kadar süre çalışıldığı belirlenip siparişe **doğrudan** yüklenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-DİG izleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - direkt işçilik"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0014",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde genel üretim giderleri (GÜG) siparişlere neden doğrudan değil, önceden belirlenen bir yükleme oranıyla yüklenir?",
+    "options": {"A": "GÜG hiç yüklenmediği için", "B": "GÜG endirekt ve ortak nitelikte olup tek siparişe doğrudan izlenemediği için", "C": "GÜG satış gideri olduğu için", "D": "GÜG vergiye tabi olmadığı için", "E": "GÜG her zaman sıfır olduğu için"},
+    "answer": "B",
+    "solution": "GÜG (kira, amortisman, endirekt malzeme/işçilik) **endirekt ve ortak** niteliktedir; tek bir siparişe doğrudan izlenemez. Bu nedenle önceden belirlenen **yükleme oranı** (tahmini GÜG ÷ tahmini ölçü) ile siparişlere yüklenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-GÜG yükleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0015",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde TAMAMLANAN bir siparişin maliyeti hangi hesaba aktarılır?",
+    "options": {"A": "151 YARI MAMULLER – ÜRETİM", "B": "152 MAMULLER", "C": "153 TİCARİ MALLAR", "D": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ", "E": "600 YURT İÇİ SATIŞLAR"},
+    "answer": "B",
+    "solution": "Tamamlanan siparişin üretim maliyeti **152 MAMULLER** hesabına aktarılır. Henüz tamamlanmamış siparişler ise 151 YARI MAMULLER – ÜRETİM hesabında izlenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-hesap; sınav stiline kalibre)", "legislationRef": "TDHP 152 Mamuller"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0016",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Dönem sonunda henüz TAMAMLANMAMIŞ (devam eden) siparişlerin maliyeti hangi hesapta izlenir?",
+    "options": {"A": "152 MAMULLER", "B": "151 YARI MAMULLER – ÜRETİM", "C": "153 TİCARİ MALLAR", "D": "620 SATILAN MAMULLER MALİYETİ", "E": "600 YURT İÇİ SATIŞLAR"},
+    "answer": "B",
+    "solution": "Dönem sonunda tamamlanmamış siparişlerin (devam eden işlerin) maliyeti **151 YARI MAMULLER – ÜRETİM** hesabında izlenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-hesap; sınav stiline kalibre)", "legislationRef": "TDHP 151 Yarı Mamuller"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0017",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti ile safha maliyeti sistemleri arasındaki temel fark aşağıdakilerden hangisidir?",
+    "options": {"A": "Sipariş maliyetinde maliyet unsuru yoktur", "B": "Sipariş maliyetinde maliyet her siparişe/işe göre; safha maliyetinde ise üretim aşamalarına (safhalara) göre toplanır", "C": "Safha maliyetinde birim maliyet hesaplanmaz", "D": "Sipariş maliyeti yalnızca hizmet işletmelerinde kullanılır", "E": "İkisi arasında hiçbir fark yoktur"},
+    "answer": "B",
+    "solution": "Temel fark maliyetin toplanma biriminde: **sipariş maliyetinde** maliyet her **sipariş/iş** için ayrı; **safha maliyetinde** ise üretim **aşamaları (safhalar)** itibarıyla toplanır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (karşılaştırma; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş vs safha"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0018",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir dönemde 101 (100.000 ₺) ve 102 (160.000 ₺) no'lu siparişler tamamlanmıştır. Tamamlanan siparişlerin 152 MAMULLER hesabına aktarılacak toplam maliyeti kaç ₺'dir?",
+    "options": {"A": "100.000", "B": "160.000", "C": "260.000", "D": "60.000", "E": "130.000"},
+    "answer": "C",
+    "solution": "Tamamlanan siparişlerin toplam maliyeti = 100.000 + 160.000 = **260.000 ₺** (152 MAMULLER'e aktarılır).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0019",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "103 no'lu siparişin maliyet kartı: DİMM 60.000 ₺, DİG 20.000 ₺, yüklenen GÜG 10.000 ₺; üretilen mamul 300 adettir. Siparişin birim maliyeti kaç ₺'dir?",
+    "options": {"A": "300", "B": "200", "C": "90.000", "D": "270", "E": "150"},
+    "answer": "A",
+    "solution": "Toplam maliyet = 60.000 + 20.000 + 10.000 = 90.000 ₺. Birim maliyet = 90.000 ÷ 300 = **300 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0020",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sistemi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Her sipariş için ayrı bir maliyet kartı açılır.\nII. DİMM ve DİG siparişe doğrudan, GÜG yükleme oranıyla yüklenir.\nIII. Sipariş birim maliyeti = sipariş toplam maliyeti ÷ sipariş adedi.",
+    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "answer": "E",
+    "solution": "Üçü de doğrudur: **I** her siparişe ayrı maliyet kartı; **II** DİMM/DİG direkt, GÜG yükleme oranıyla; **III** birim maliyet = toplam ÷ adet. Doğru cevap **I, II ve III**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0021",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Önceden belirlenen genel üretim gideri yükleme oranı nasıl hesaplanır?",
+    "options": {"A": "Fiili GÜG ÷ fiili ölçü", "B": "Tahmini (bütçelenen) GÜG ÷ tahmini (bütçelenen) dağıtım ölçüsü (makine saati, direkt işçilik saati/tutarı vb.)", "C": "Tahmini ölçü ÷ tahmini GÜG", "D": "Satış ÷ GÜG", "E": "GÜG × ölçü"},
+    "answer": "B",
+    "solution": "Önceden belirlenen yükleme oranı = **Tahmini (bütçelenen) GÜG ÷ Tahmini dağıtım ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.). Yıl başında belirlenir, yıl boyunca siparişlere uygulanır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (formül-yükleme oranı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme oranı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0022",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir işletmenin dönem için tahmini GÜG'ü 400.000 ₺, tahmini makine saati 20.000 saattir. Makine saati esaslı GÜG yükleme oranı kaç ₺'dir?",
+    "options": {"A": "20", "B": "2", "C": "200", "D": "0,05", "E": "50"},
+    "answer": "A",
+    "solution": "Yükleme oranı = tahmini GÜG ÷ tahmini makine saati = 400.000 ÷ 20.000 = **20 ₺/makine saati**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme oranı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme oranı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0023",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "GÜG yükleme oranı 20 ₺/makine saati olan işletmede, 101 no'lu sipariş 1.000 makine saati kullanmıştır. Bu siparişe yüklenecek GÜG kaç ₺'dir?",
+    "options": {"A": "20.000", "B": "1.000", "C": "50", "D": "400.000", "E": "2.000"},
+    "answer": "A",
+    "solution": "Siparişe yüklenen GÜG = yükleme oranı × siparişin makine saati = 20 × 1.000 = **20.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-siparişe yükleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0024",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "GÜG yükleme oranı 20 ₺/makine saati olan işletmede 102 no'lu sipariş 2.000 makine saati kullanmıştır. Bu siparişe yüklenecek GÜG kaç ₺'dir?",
+    "options": {"A": "20.000", "B": "40.000", "C": "2.000", "D": "100", "E": "80.000"},
+    "answer": "B",
+    "solution": "Yüklenen GÜG = 20 × 2.000 = **40.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-siparişe yükleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0025",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "105 no'lu siparişin verileri: DİMM 45.000 ₺, DİG 25.000 ₺, kullanılan makine saati 1.500. GÜG yükleme oranı 20 ₺/makine saatidir. Siparişin toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "70.000", "B": "100.000", "C": "30.000", "D": "90.000", "E": "115.000"},
+    "answer": "B",
+    "solution": "Yüklenen GÜG = 20 × 1.500 = 30.000 ₺. Toplam maliyet = DİMM 45.000 + DİG 25.000 + GÜG 30.000 = **100.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0026",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Tahmini GÜG 300.000 ₺, tahmini direkt işçilik saati 15.000 saattir. Direkt işçilik saati esaslı GÜG yükleme oranı kaç ₺'dir?",
+    "options": {"A": "20", "B": "15", "C": "2", "D": "0,05", "E": "45"},
+    "answer": "A",
+    "solution": "Yükleme oranı = 300.000 ÷ 15.000 = **20 ₺/direkt işçilik saati**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme oranı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme oranı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0027",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Tahmini GÜG 240.000 ₺, tahmini direkt işçilik TUTARI 480.000 ₺'dir. Direkt işçilik tutarı esaslı GÜG yükleme oranı yüzde kaçtır?",
+    "options": {"A": "%50", "B": "%200", "C": "%20", "D": "%24", "E": "%48"},
+    "answer": "A",
+    "solution": "Yükleme oranı = tahmini GÜG ÷ tahmini direkt işçilik tutarı = 240.000 ÷ 480.000 = 0,50 = **%50**. Her 100 ₺ direkt işçiliğe 50 ₺ GÜG yüklenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme oranı %; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme oranı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0028",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Direkt işçilik tutarı esaslı GÜG yükleme oranı %50 olan işletmede, bir siparişin direkt işçiliği 60.000 ₺'dir. Bu siparişe yüklenecek GÜG kaç ₺'dir?",
+    "options": {"A": "30.000", "B": "120.000", "C": "60.000", "D": "50.000", "E": "12.000"},
+    "answer": "A",
+    "solution": "Yüklenen GÜG = direkt işçilik × oran = 60.000 × %50 = 60.000 × 0,50 = **30.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-siparişe yükleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0029",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "110 no'lu sipariş: DİMM 100.000 ₺, DİG 60.000 ₺. GÜG, direkt işçiliğin %50'si oranında yüklenmektedir. Siparişin toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "160.000", "B": "190.000", "C": "210.000", "D": "240.000", "E": "180.000"},
+    "answer": "B",
+    "solution": "Yüklenen GÜG = 60.000 × %50 = 30.000 ₺. Toplam maliyet = 100.000 + 60.000 + 30.000 = **190.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0030",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "GÜG yükleme oranının, dönem başında TAHMİNİ verilerle önceden belirlenmesinin temel amacı aşağıdakilerden hangisidir?",
+    "options": {"A": "Vergi ödememek", "B": "Sipariş tamamlandığında fiili GÜG'ün dönem sonuna kadar beklenmeden, siparişin maliyetini zamanında hesaplayabilmek", "C": "GÜG'ü sıfırlamak", "D": "Satışları gizlemek", "E": "Direkt işçiliği artırmak"},
+    "answer": "B",
+    "solution": "Fiili GÜG ancak dönem sonunda kesinleşir. Önceden belirlenen yükleme oranı sayesinde, bir sipariş tamamlandığında **dönem sonu beklenmeden** siparişin maliyeti zamanında hesaplanabilir (fiyatlama, teslim vb. için).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-neden tahmini oran; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - önceden belirlenmiş yükleme oranı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0031",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir dönemde toplam yüklenen GÜG 400.000 ₺, fiili (gerçekleşen) GÜG 380.000 ₺'dir. Bu durumda genel üretim giderleri bakımından ne söylenir?",
+    "options": {"A": "20.000 ₺ eksik yükleme (az yüklenmiş GÜG)", "B": "20.000 ₺ fazla yükleme (aşırı yüklenmiş GÜG)", "C": "Yükleme farkı yoktur", "D": "780.000 ₺ fark vardır", "E": "GÜG sıfırdır"},
+    "answer": "B",
+    "solution": "Yüklenen (400.000) > Fiili (380.000) → **20.000 ₺ fazla (aşırı) yükleme**. Mamullere gereğinden fazla GÜG yüklenmiştir; fark dönem sonunda düzeltilir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme farkı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme farkı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0032",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir dönemde toplam yüklenen GÜG 400.000 ₺, fiili GÜG 415.000 ₺'dir. Genel üretim giderleri bakımından ne söylenir?",
+    "options": {"A": "15.000 ₺ fazla yükleme", "B": "15.000 ₺ eksik yükleme (az yüklenmiş GÜG)", "C": "Fark yoktur", "D": "815.000 ₺ fark vardır", "E": "GÜG sıfırdır"},
+    "answer": "B",
+    "solution": "Yüklenen (400.000) < Fiili (415.000) → **15.000 ₺ eksik (az) yükleme**. Mamullere fiili giderden daha az GÜG yüklenmiştir; fark dönem sonunda düzeltilir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme farkı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme farkı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0033",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Yükleme oranı 20 ₺/makine saati olan işletmede dönemde fiilen 21.000 makine saati çalışılmış, fiili GÜG 400.000 ₺ olmuştur. Yüklenen GÜG ile yükleme farkı sırasıyla kaç ₺'dir?",
+    "options": {"A": "Yüklenen 420.000; 20.000 fazla yükleme", "B": "Yüklenen 400.000; fark yok", "C": "Yüklenen 420.000; 20.000 eksik yükleme", "D": "Yüklenen 380.000; 20.000 eksik yükleme", "E": "Yüklenen 21.000; 379.000 fazla"},
+    "answer": "A",
+    "solution": "Yüklenen GÜG = 20 × 21.000 = 420.000 ₺. Fiili 400.000 ₺. Yüklenen > fiili → **420.000 yüklenmiş, 20.000 ₺ fazla (aşırı) yükleme**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yükleme farkı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme farkı"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0034",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "111 no'lu sipariş: DİMM 120.000 ₺, DİG 80.000 ₺, kullanılan makine saati 4.000, yükleme oranı 25 ₺/makine saati. Üretilen mamul 600 adettir. Birim maliyet kaç ₺'dir?",
+    "options": {"A": "500", "B": "400", "C": "300", "D": "600", "E": "450"},
+    "answer": "A",
+    "solution": "Yüklenen GÜG = 25 × 4.000 = 100.000 ₺. Toplam = 120.000 + 80.000 + 100.000 = 300.000 ₺. Birim = 300.000 ÷ 600 = **500 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0035",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyet kartında 'yüklenen GÜG' tutarı hangi verilerle hesaplanır?",
+    "options": {"A": "Siparişin satış fiyatı × adet", "B": "Önceden belirlenen yükleme oranı × siparişin fiili ölçüsü (makine/işçilik saati vb.)", "C": "Siparişin DİMM'i × 2", "D": "Fiili GÜG ÷ sipariş sayısı", "E": "Siparişin kâr marjı"},
+    "answer": "B",
+    "solution": "Siparişe yüklenen GÜG = **önceden belirlenen yükleme oranı × siparişin fiili ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-yüklenen GÜG; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0036",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir siparişin 'dönüştürme (işleme) maliyeti' aşağıdakilerden hangisidir?",
+    "options": {"A": "DİMM + DİG", "B": "DİMM + GÜG", "C": "Direkt işçilik + genel üretim giderleri (DİG + GÜG)", "D": "Yalnızca DİMM", "E": "Satış + yönetim gideri"},
+    "answer": "C",
+    "solution": "**Dönüştürme (işleme) maliyeti = Direkt işçilik + Genel üretim giderleri (DİG + GÜG)**; ilk maddeyi mamule dönüştürmek için katlanılan maliyettir. (DİMM + DİG ise 'birincil/asal maliyet'tir.)",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-dönüştürme maliyeti; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - dönüştürme maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0037",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir siparişin 'birincil (asal/temel) maliyeti' aşağıdakilerden hangisidir?",
+    "options": {"A": "Direkt ilk madde ve malzeme + direkt işçilik (DİMM + DİG)", "B": "DİG + GÜG", "C": "Yalnızca GÜG", "D": "DİMM + GÜG", "E": "Satış + pazarlama gideri"},
+    "answer": "A",
+    "solution": "**Birincil (asal/temel) maliyet = Direkt ilk madde ve malzeme + Direkt işçilik (DİMM + DİG)**; mamule doğrudan izlenebilen maliyetlerin toplamıdır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-asal maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - asal maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0038",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "112 no'lu sipariş: DİMM 70.000 ₺, DİG 50.000 ₺, yüklenen GÜG 30.000 ₺. Bu siparişin dönüştürme (işleme) maliyeti kaç ₺'dir?",
+    "options": {"A": "80.000", "B": "120.000", "C": "150.000", "D": "100.000", "E": "70.000"},
+    "answer": "A",
+    "solution": "Dönüştürme maliyeti = DİG + GÜG = 50.000 + 30.000 = **80.000 ₺**. (Asal maliyet ise DİMM + DİG = 70.000 + 50.000 = 120.000 ₺ olurdu.)",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-dönüştürme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - dönüştürme maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0039",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "112 no'lu sipariş: DİMM 70.000 ₺, DİG 50.000 ₺, yüklenen GÜG 30.000 ₺. Bu siparişin birincil (asal) maliyeti kaç ₺'dir?",
+    "options": {"A": "80.000", "B": "120.000", "C": "150.000", "D": "100.000", "E": "30.000"},
+    "answer": "B",
+    "solution": "Asal (birincil) maliyet = DİMM + DİG = 70.000 + 50.000 = **120.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-asal maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - asal maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0040",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "GÜG yükleme oranı ve yükleme farkı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Yükleme oranı dönem başında tahmini verilerle belirlenir.\nII. Yüklenen GÜG fiili GÜG'den fazlaysa fazla (aşırı) yükleme vardır.\nIII. Yüklenen GÜG = yükleme oranı × siparişin fiili ölçüsü.",
+    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "answer": "E",
+    "solution": "Üçü de doğrudur: **I** oran dönem başında tahmini belirlenir; **II** yüklenen > fiili → fazla yükleme; **III** yüklenen GÜG = oran × fiili ölçü. Doğru cevap **I, II ve III**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (I-II-III yükleme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - GÜG yükleme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0041",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde bir siparişe malzeme verildiğinde maliyet kaydında hangi hesap borçlandırılır?",
+    "options": {"A": "150 İLK MADDE VE MALZEME", "B": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ (7/A)", "C": "600 YURT İÇİ SATIŞLAR", "D": "320 SATICILAR", "E": "770 GENEL YÖNETİM GİDERLERİ"},
+    "answer": "B",
+    "solution": "Siparişe direkt malzeme verildiğinde 7/A'da **710 DİREKT İLK MADDE VE MALZEME GİDERLERİ** borçlandırılır (karşılığında 150 İLK MADDE VE MALZEME alacaklandırılır).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-kayıt; sınav stiline kalibre)", "legislationRef": "TDHP 710 Direkt İlk Madde ve Malzeme Giderleri"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0042",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "7/A maliyet hesaplama seçeneğinde direkt işçilik giderlerinin izlendiği hesap aşağıdakilerden hangisidir?",
+    "options": {"A": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ", "B": "720 DİREKT İŞÇİLİK GİDERLERİ", "C": "730 GENEL ÜRETİM GİDERLERİ", "D": "740 HİZMET ÜRETİM MALİYETİ", "E": "770 GENEL YÖNETİM GİDERLERİ"},
+    "answer": "B",
+    "solution": "7/A'da direkt işçilik giderleri **720 DİREKT İŞÇİLİK GİDERLERİ** hesabında izlenir.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-hesap; sınav stiline kalibre)", "legislationRef": "TDHP 720 Direkt İşçilik Giderleri"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0043",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde maliyeti oluşan tamamlanmış bir siparişin mamule dönüşmesi kaydında hangi hesap borçlandırılır?",
+    "options": {"A": "151 YARI MAMULLER – ÜRETİM", "B": "152 MAMULLER", "C": "620 SATILAN MAMULLER MALİYETİ", "D": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ", "E": "600 YURT İÇİ SATIŞLAR"},
+    "answer": "B",
+    "solution": "Tamamlanan sipariş mamule dönüştüğünde **152 MAMULLER** borçlandırılır (karşılığında 151 YARI MAMULLER – ÜRETİM veya ilgili üretim hesabı alacaklandırılır).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-kayıt; sınav stiline kalibre)", "legislationRef": "TDHP 152 Mamuller"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0044",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir sipariş tamamlanıp müşteriye satıldığında, siparişin üretim maliyeti hangi hesaba aktarılır?",
+    "options": {"A": "152 MAMULLER'de kalır", "B": "620 SATILAN MAMULLER MALİYETİ", "C": "151 YARI MAMULLER – ÜRETİM", "D": "153 TİCARİ MALLAR", "E": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ"},
+    "answer": "B",
+    "solution": "Sipariş satıldığında maliyeti 152 MAMULLER'den **620 SATILAN MAMULLER MALİYETİ** hesabına aktarılır (satış hasılatı ise 600 YURT İÇİ SATIŞLAR'a kaydedilir).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-satış maliyeti; sınav stiline kalibre)", "legislationRef": "TDHP 620 Satılan Mamuller Maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0045",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "120 no'lu sipariş 400 adet üretilmiş olup birim maliyeti 250 ₺'dir. Bu siparişin 300 adedi 350 ₺/adetten satılmıştır. Satılan mamullerin maliyeti (SMM) kaç ₺'dir?",
+    "options": {"A": "75.000", "B": "105.000", "C": "100.000", "D": "140.000", "E": "25.000"},
+    "answer": "A",
+    "solution": "Satılan mamul maliyeti = satılan adet × birim maliyet = 300 × 250 = **75.000 ₺**. (Satış hasılatı ise 300 × 350 = 105.000 ₺'dir; soru maliyeti sormaktadır.)",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-SMM; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - satılan mamul maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0046",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "120 no'lu siparişte 400 adet üretilmiş (birim maliyet 250 ₺), 300 adet satılmıştır. Dönem sonunda stokta kalan mamullerin (100 adet) maliyeti kaç ₺'dir?",
+    "options": {"A": "25.000", "B": "75.000", "C": "100.000", "D": "35.000", "E": "40.000"},
+    "answer": "A",
+    "solution": "Stokta kalan = 400 − 300 = 100 adet. Stok maliyeti = 100 × 250 = **25.000 ₺** (152 MAMULLER'de kalır).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-stok; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - mamul stoku"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0047",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "121 no'lu siparişin toplam maliyeti 180.000 ₺, üretilen 600 adettir. İşletme birim maliyet üzerine %40 kâr ekleyerek satış fiyatı belirlemektedir. Birim satış fiyatı kaç ₺'dir?",
+    "options": {"A": "300", "B": "420", "C": "180", "D": "120", "E": "500"},
+    "answer": "B",
+    "solution": "Birim maliyet = 180.000 ÷ 600 = 300 ₺. Satış fiyatı = birim maliyet × (1 + kâr oranı) = 300 × 1,40 = **420 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiyatlama; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - maliyete dayalı fiyatlama"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0048",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde dönem sonunda 'fazla (aşırı) yüklenmiş GÜG' bulunuyorsa, bu durum satılan mamul maliyeti üzerinde nasıl bir düzeltme gerektirir (basit yaklaşım)?",
+    "options": {"A": "Satılan mamul maliyetini artırır", "B": "Satılan mamul maliyetini azaltır (mamullere fazla yüklenen kısım geri düzeltilir)", "C": "Hiçbir etkisi yoktur", "D": "Satış hasılatını artırır", "E": "Direkt işçiliği azaltır"},
+    "answer": "B",
+    "solution": "**Fazla yüklenmiş GÜG**, mamullere fiili giderden daha fazla yüklendiğini gösterir; basit yaklaşımda bu fark satılan mamul maliyetinden düşülerek **SMM azaltılır** (maliyet gerçeğe getirilir).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-yükleme farkı düzeltme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme farkı düzeltme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0049",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Dönem sonunda 'eksik (az) yüklenmiş GÜG' bulunuyorsa, basit yaklaşımda satılan mamul maliyeti nasıl düzeltilir?",
+    "options": {"A": "Satılan mamul maliyeti azaltılır", "B": "Satılan mamul maliyeti artırılır (mamullere eksik yüklenen kısım eklenir)", "C": "Değişmez", "D": "Satış hasılatı azaltılır", "E": "GÜG sıfırlanır"},
+    "answer": "B",
+    "solution": "**Eksik yüklenmiş GÜG**, mamullere fiili giderden daha az yüklendiğini gösterir; basit yaklaşımda bu fark satılan mamul maliyetine eklenerek **SMM artırılır**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-yükleme farkı düzeltme; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yükleme farkı düzeltme"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0050",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "130 no'lu sipariş: DİMM 200.000 ₺, DİG 100.000 ₺, GÜG direkt işçiliğin %60'ı oranında yüklenmektedir. Siparişin toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "300.000", "B": "360.000", "C": "480.000", "D": "420.000", "E": "160.000"},
+    "answer": "B",
+    "solution": "Yüklenen GÜG = 100.000 × %60 = 60.000 ₺. Toplam maliyet = 200.000 + 100.000 + 60.000 = **360.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0051",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "130 no'lu siparişin toplam maliyeti 360.000 ₺, üretilen 900 adettir. Birim maliyet kaç ₺'dir?",
+    "options": {"A": "400", "B": "300", "C": "500", "D": "360", "E": "450"},
+    "answer": "A",
+    "solution": "Birim maliyet = 360.000 ÷ 900 = **400 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - birim maliyet"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0052",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Bir dönemde üç sipariş tamamlanmıştır: 101 (100.000 ₺), 102 (160.000 ₺), 103 (90.000 ₺). Dönemde 152 MAMULLER hesabına aktarılan toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "260.000", "B": "350.000", "C": "190.000", "D": "250.000", "E": "160.000"},
+    "answer": "B",
+    "solution": "Toplam mamul maliyeti = 100.000 + 160.000 + 90.000 = **350.000 ₺** (152 MAMULLER'e aktarılır).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam mamul; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - mamul maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0053",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde birim maliyetlerin siparişler arasında farklılık göstermesinin temel nedeni aşağıdakilerden hangisidir?",
+    "options": {"A": "Tüm siparişlerin aynı olması", "B": "Her siparişin farklı miktarda DİMM, DİG ve makine/işçilik saati (dolayısıyla GÜG) tüketmesi", "C": "Birim maliyetin hiç hesaplanmaması", "D": "Yalnızca satış fiyatının değişmesi", "E": "GÜG'ün her siparişte sıfır olması"},
+    "answer": "B",
+    "solution": "Sipariş maliyeti sisteminde her sipariş farklı özellikte olduğundan **farklı miktarda DİMM, DİG ve makine/işçilik saati** tüketir; bu da yüklenen GÜG'ü ve dolayısıyla birim maliyeti siparişten siparişe farklılaştırır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-birim farkı; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0054",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "140 no'lu sipariş: DİMM 90.000 ₺, DİG 60.000 ₺, kullanılan makine saati 2.500, yükleme oranı 24 ₺/makine saati. Siparişin toplam üretim maliyeti kaç ₺'dir?",
+    "options": {"A": "150.000", "B": "210.000", "C": "60.000", "D": "174.000", "E": "240.000"},
+    "answer": "B",
+    "solution": "Yüklenen GÜG = 24 × 2.500 = 60.000 ₺. Toplam = 90.000 + 60.000 + 60.000 = **210.000 ₺**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam maliyet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0055",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Aşağıdakilerden hangisi sipariş maliyeti sisteminin bir üstünlüğüdür?",
+    "options": {"A": "Kayıt ve izleme maliyetinin çok düşük olması", "B": "Her siparişin maliyetinin ayrı ayrı, ayrıntılı biçimde bilinebilmesi (özel fiyatlama ve kârlılık analizine olanak)", "C": "GÜG'ün hiç dağıtılmaması", "D": "Birim maliyetin hesaplanmasına gerek olmaması", "E": "Yalnızca tek tip mamulde kullanılabilmesi"},
+    "answer": "B",
+    "solution": "Sipariş maliyeti sisteminin üstünlüğü, **her siparişin maliyetinin ayrı ve ayrıntılı** izlenebilmesidir; bu, özel fiyatlama ve sipariş bazlı kârlılık analizine olanak sağlar. (Dezavantajı ise ayrıntılı kayıt yükünün fazla olmasıdır.)",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-üstünlük; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0056",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "141 no'lu sipariş: DİMM 150.000 ₺, DİG 90.000 ₺, yüklenen GÜG 60.000 ₺; üretilen 1.500 adettir. İşletme birim maliyetin %25 fazlasına satış yapmaktadır. Birim satış fiyatı kaç ₺'dir?",
+    "options": {"A": "200", "B": "250", "C": "160", "D": "300", "E": "225"},
+    "answer": "B",
+    "solution": "Toplam maliyet = 150.000 + 90.000 + 60.000 = 300.000 ₺. Birim maliyet = 300.000 ÷ 1.500 = 200 ₺. Satış fiyatı = 200 × 1,25 = **250 ₺/adet**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiyatlama; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - maliyete dayalı fiyatlama"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0057",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sisteminde dönem sonu üretim maliyetlerinin (7/A) 151 YARI MAMULLER veya 152 MAMULLER hesaplarına aktarılmasında köprü görevi gören yansıtma hesabı grubu aşağıdakilerden hangisidir?",
+    "options": {"A": "6XX Gelir tablosu hesapları", "B": "71X–73X Yansıtma hesapları (ör. 711, 721, 731 Yansıtma Hesapları)", "C": "1XX Dönen varlıklar", "D": "3XX Kısa vadeli yabancı kaynaklar", "E": "5XX Özkaynaklar"},
+    "answer": "B",
+    "solution": "7/A'da gider hesaplarında (710, 720, 730) biriken üretim maliyetleri, **71X–73X yansıtma hesapları** (711, 721, 731 …) aracılığıyla üretim/stok hesaplarına (151/152) aktarılır. Yansıtma hesapları köprü görevi görür.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (TDHP-yansıtma; sınav stiline kalibre)", "legislationRef": "TDHP 7/A yansıtma hesapları"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0058",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "150 no'lu sipariş yıl sonunda henüz tamamlanmamıştır. Kartında biriken DİMM 40.000 ₺, DİG 30.000 ₺, yüklenen GÜG 20.000 ₺'dir. Bu siparişin dönem sonunda 151 YARI MAMULLER hesabında görünecek maliyeti kaç ₺'dir?",
+    "options": {"A": "70.000", "B": "90.000", "C": "60.000", "D": "40.000", "E": "50.000"},
+    "answer": "B",
+    "solution": "Devam eden siparişin maliyeti = DİMM + DİG + yüklenen GÜG = 40.000 + 30.000 + 20.000 = **90.000 ₺** (151 YARI MAMULLER – ÜRETİM'de izlenir).",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yarı mamul; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - yarı mamul"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0059",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Aşağıdakilerden hangisi sipariş maliyeti sisteminin bir SAKINCASI (dezavantajı) olarak gösterilebilir?",
+    "options": {"A": "Sipariş bazlı kârlılık bilinemez", "B": "Her siparişe ait ayrıntılı kayıt tutma zorunluluğu, kayıt ve izleme maliyetini/iş yükünü artırır", "C": "Birim maliyet hiç hesaplanamaz", "D": "GÜG hiç yüklenemez", "E": "Yalnızca tek üründe kullanılabilir"},
+    "answer": "B",
+    "solution": "Sipariş maliyeti sisteminde her siparişe ait DİMM, DİG ve GÜG'ün ayrı ayrı izlenmesi gerektiğinden **ayrıntılı kayıt tutma** zorunluluğu iş yükünü ve maliyeti artırır; bu sistemin başlıca sakıncasıdır.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (kavram-dezavantaj; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  },
+  {
+    "id": "mmuh-siparis-gen-0060",
+    "ders": "maliyet_muhasebesi", "konu": "siparis_maliyeti",
+    "stem": "Sipariş maliyeti sistemi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Heterojen, ayırt edilebilir üretim yapan işletmeler için uygundur.\nII. Tamamlanan sipariş 152 MAMULLER, devam eden sipariş 151 YARI MAMULLER'de izlenir.\nIII. GÜG önceden belirlenen yükleme oranıyla siparişlere yüklenir.",
+    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "answer": "E",
+    "solution": "Üçü de doğrudur: **I** heterojen/ayırt edilebilir üretimde kullanılır; **II** tamamlanan 152, devam eden 151'de izlenir; **III** GÜG yükleme oranıyla yüklenir. Doğru cevap **I, II ve III**.",
+    "source": {"kind": "generated", "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Maliyet muhasebesi - sipariş maliyeti"},
+    "validYear": 2026, "mockExamId": null
+  }
+]
