@@ -5,11 +5,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sistemi aşağıdaki üretim biçimlerinden hangisinde kullanılır?",
     "options": {
-      "A": "Birbirinin aynı, sürekli ve kitle halinde üretim (şeker, çimento)",
-      "B": "Yalnızca tarım işletmelerinde",
-      "C": "Yalnızca hizmet işletmelerinde",
+      "A": "Birbirinin aynı olan mamullerin sürekli ve kitle halinde akış tipi üretimi (şeker, çimento, un, akaryakıt)",
+      "B": "Yalnızca tarımsal ürün yetiştiren ve hiç mamul üretmeyen işletmelerin dönem sonu üretiminde",
+      "C": "Yalnızca hizmet üreten, stok tutmayan işletmelerin standart maliyet hesaplamalarında",
       "D": "Birbirinden farklı, ayırt edilebilir, sipariş veya partiler halinde üretim (inşaat, gemi, mobilya, matbaa)",
-      "E": "Üretim olmayan işletmelerde"
+      "E": "Üretim faaliyeti bulunmayan, yalnızca alım satım yapan ticaret işletmelerinin tamamında"
     },
     "answer": "D",
     "solution": "**Sipariş maliyeti sistemi**, birbirinden farklı, ayırt edilebilir, **sipariş/parti** halinde üretim yapan işletmelerde kullanılır (inşaat, gemi, mobilya, matbaa, özel makine). Sürekli/kitle üretimde ise safha maliyeti kullanılır.",
@@ -28,10 +28,10 @@
     "stem": "Aşağıdaki işletmelerden hangisi tipik olarak sipariş maliyeti sistemini kullanır?",
     "options": {
       "A": "Gemi inşa (tersane) işletmesi",
-      "B": "Çimento fabrikası",
-      "C": "Şeker fabrikası",
-      "D": "Un fabrikası",
-      "E": "Akaryakıt rafinerisi"
+      "B": "Çimento üreten büyük fabrika",
+      "C": "Toz şeker işleyen büyük tesis",
+      "D": "Buğday öğüten un fabrikası",
+      "E": "Akaryakıt üreten büyük rafineri"
     },
     "answer": "A",
     "solution": "**Gemi inşa (tersane)** her siparişi ayrı, ayırt edilebilir üretim olduğundan sipariş maliyeti kullanır. Şeker, çimento, un, rafineri sürekli/kitle üretim → safha maliyeti.",
@@ -71,11 +71,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde her siparişin maliyetinin ayrı ayrı izlendiği belge aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Fatura",
-      "B": "Bordro",
+      "A": "Satış faturası belgesi",
+      "B": "Aylık ücret bordrosu",
       "C": "Sipariş (iş) maliyet kartı",
-      "D": "Amortisman tablosu",
-      "E": "Mizan"
+      "D": "Amortisman gider tablosu",
+      "E": "Genel geçici mizan cetveli"
     },
     "answer": "C",
     "solution": "Sipariş maliyeti sisteminde her sipariş için ayrı bir **sipariş (iş) maliyet kartı** açılır; siparişe ait DİMM, DİG ve yüklenen GÜG bu kartta toplanır.",
@@ -93,11 +93,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Bir siparişin maliyet kartında toplanan üç temel maliyet unsuru hangileridir?",
     "options": {
-      "A": "Satış + pazarlama + yönetim giderleri",
+      "A": "Satış giderleri + pazarlama satış dağıtım giderleri + genel yönetim giderleri toplamı",
       "B": "Direkt ilk madde ve malzeme + direkt işçilik + (yüklenen) genel üretim giderleri",
-      "C": "Faiz + vergi + amortisman",
-      "D": "Alış + iade + iskonto",
-      "E": "Kira + enerji + su"
+      "C": "Ödenen faiz giderleri + tahakkuk eden vergiler + duran varlık amortisman payları",
+      "D": "Dönem içi malzeme alışları + alıştan iadeler + satıcıdan alınan iskonto tutarları",
+      "E": "Fabrika binası kira gideri + tüketilen enerji gideri + kullanılan su gideri"
     },
     "answer": "B",
     "solution": "Sipariş maliyet kartında **direkt ilk madde ve malzeme (DİMM) + direkt işçilik (DİG) + yüklenen genel üretim giderleri (GÜG)** toplanır. Bu üçünün toplamı siparişin üretim maliyetidir.",
@@ -115,10 +115,10 @@
     "konu": "siparis_maliyeti",
     "stem": "Bir siparişin toplam üretim maliyeti nasıl hesaplanır?",
     "options": {
-      "A": "DİMM − DİG − GÜG",
-      "B": "Satış fiyatı − kâr",
-      "C": "DİMM × DİG × GÜG",
-      "D": "Yalnızca DİMM",
+      "A": "DİMM − DİG − Yüklenen GÜG farkı",
+      "B": "Satış fiyatı − birim kâr",
+      "C": "DİMM × DİG × GÜG çarpımı",
+      "D": "Yalnızca kullanılan DİMM",
       "E": "DİMM + DİG + Yüklenen GÜG"
     },
     "answer": "E",
@@ -248,10 +248,10 @@
     "stem": "Sipariş maliyeti sisteminde direkt ilk madde ve malzeme (DİMM) siparişe nasıl yüklenir?",
     "options": {
       "A": "Malzeme istek fişleri ile siparişe doğrudan (direkt) izlenerek",
-      "B": "Tahmini bir oranla dağıtılarak",
-      "C": "Hiç yüklenmez",
-      "D": "Yalnızca dönem sonunda tahminle",
-      "E": "Satış tutarına göre"
+      "B": "Dönem başında saptanan tahmini bir yükleme oranıyla siparişe dağıtılarak",
+      "C": "Siparişe hiç yüklenmez, doğrudan dönemin gideri olarak kaydedilerek",
+      "D": "Yalnızca dönem sonunda toplam malzemeden tahmini pay ayrılıp yüklenerek",
+      "E": "Siparişin satış tutarı içindeki payına göre orantılı biçimde bölüştürülerek"
     },
     "answer": "A",
     "solution": "DİMM, siparişe **doğrudan (direkt)** izlenebilir; malzeme istek fişleriyle hangi siparişte ne kadar kullanıldığı belirlenip o siparişe yüklenir. Dağıtım/tahmin gerekmez.",
@@ -269,10 +269,10 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde direkt işçilik (DİG) siparişe nasıl yüklenir?",
     "options": {
-      "A": "Tahmini oranla",
-      "B": "Satış fiyatına göre",
-      "C": "Malzeme miktarına göre",
-      "D": "Hiç yüklenmez",
+      "A": "Dönem başında saptanan tahmini bir işçilik yükleme oranıyla siparişlere paylaştırılarak",
+      "B": "Siparişin öngörülen satış fiyatı içindeki paya göre orantılı biçimde bölüştürülerek",
+      "C": "Siparişte kullanılan direkt ilk madde ve malzeme miktarıyla orantılı olarak dağıtılarak",
+      "D": "Siparişe hiç yüklenmez, tümüyle dönemin genel yönetim gideri olarak kaydedilerek",
       "E": "İşçilik zaman kartları ile siparişte harcanan süreye göre doğrudan (direkt)"
     },
     "answer": "E",
@@ -291,11 +291,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde genel üretim giderleri (GÜG) siparişlere neden doğrudan değil, önceden belirlenen bir yükleme oranıyla yüklenir?",
     "options": {
-      "A": "GÜG hiç yüklenmediği için",
+      "A": "GÜG hiçbir siparişe yüklenmediği ve tümüyle dönem gideri sayıldığı için",
       "B": "GÜG endirekt ve ortak nitelikte olup tek siparişe doğrudan izlenemediği için",
-      "C": "GÜG satış gideri olduğu için",
-      "D": "GÜG vergiye tabi olmadığı için",
-      "E": "GÜG her zaman sıfır olduğu için"
+      "C": "GÜG bir satış gideri niteliğinde olup üretim maliyetiyle ilişkilendirilemediği için",
+      "D": "GÜG vergiye tabi olmayan bir gider kalemi kabul edildiği için siparişe bölünmez",
+      "E": "GÜG tutarı üretimin her aşamasında sıfır olduğundan yükleme yapmaya gerek olmadığı için"
     },
     "answer": "B",
     "solution": "GÜG (kira, amortisman, endirekt malzeme/işçilik) **endirekt ve ortak** niteliktedir; tek bir siparişe doğrudan izlenemez. Bu nedenle önceden belirlenen **yükleme oranı** (tahmini GÜG ÷ tahmini ölçü) ile siparişlere yüklenir.",
@@ -357,11 +357,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti ile safha maliyeti sistemleri arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Sipariş maliyetinde maliyet unsuru yoktur",
+      "A": "Sipariş maliyetinde hiçbir maliyet unsuru bulunmaz; maliyet unsuru yalnızca safha maliyeti sisteminde ortaya çıkabilir",
       "B": "Sipariş maliyetinde maliyet her siparişe/işe göre; safha maliyetinde ise üretim aşamalarına (safhalara) göre toplanır",
-      "C": "Safha maliyetinde birim maliyet hesaplanmaz",
-      "D": "Sipariş maliyeti yalnızca hizmet işletmelerinde kullanılır",
-      "E": "İkisi arasında hiçbir fark yoktur"
+      "C": "Safha maliyeti sisteminde birim maliyet hesaplanmaz; birim maliyet yalnızca sipariş maliyetine özgü bir kavramdır",
+      "D": "Sipariş maliyeti yalnızca stok tutmayan hizmet işletmelerinde, safha maliyeti ise sanayi işletmelerinde kullanılır",
+      "E": "İki sistem arasında maliyetin toplanması bakımından hiçbir fark yoktur; adları dışında tümüyle aynıdırlar"
     },
     "answer": "B",
     "solution": "Temel fark maliyetin toplanma biriminde: **sipariş maliyetinde** maliyet her **sipariş/iş** için ayrı; **safha maliyetinde** ise üretim **aşamaları (safhalar)** itibarıyla toplanır.",
@@ -445,11 +445,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Önceden belirlenen genel üretim gideri yükleme oranı nasıl hesaplanır?",
     "options": {
-      "A": "Fiili GÜG ÷ fiili ölçü",
-      "B": "Satış ÷ GÜG",
-      "C": "Tahmini ölçü ÷ tahmini GÜG",
+      "A": "Dönem sonunda gerçekleşen fiili GÜG ÷ dönemde fiilen ulaşılan gerçekleşmiş dağıtım ölçüsü (makine saati, işçilik saati vb.)",
+      "B": "Dönemin toplam satış hasılatı ÷ dönemde gerçekleşen toplam genel üretim gideri tutarı",
+      "C": "Tahmini (bütçelenen) dağıtım ölçüsü ÷ tahmini (bütçelenen) genel üretim gideri tutarı",
       "D": "Tahmini (bütçelenen) GÜG ÷ tahmini (bütçelenen) dağıtım ölçüsü (makine saati, direkt işçilik saati/tutarı vb.)",
-      "E": "GÜG × ölçü"
+      "E": "Gerçekleşen genel üretim gideri × siparişte kullanılan makine saati ölçüsünün çarpımı"
     },
     "answer": "D",
     "solution": "Önceden belirlenen yükleme oranı = **Tahmini (bütçelenen) GÜG ÷ Tahmini dağıtım ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.). Yıl başında belirlenir, yıl boyunca siparişlere uygulanır.",
@@ -644,10 +644,10 @@
     "stem": "GÜG yükleme oranının, dönem başında TAHMİNİ verilerle önceden belirlenmesinin temel amacı aşağıdakilerden hangisidir?",
     "options": {
       "A": "Sipariş tamamlandığında fiili GÜG'ün dönem sonuna kadar beklenmeden, siparişin maliyetini zamanında hesaplayabilmek",
-      "B": "Vergi ödememek",
-      "C": "GÜG'ü sıfırlamak",
-      "D": "Satışları gizlemek",
-      "E": "Direkt işçiliği artırmak"
+      "B": "İşletmenin ödemesi gereken kurumlar vergisini yasal olmayan biçimde azaltıp ödenecek vergi yükünden büsbütün kurtulmak",
+      "C": "Genel üretim giderlerini muhasebe kayıtlarında sıfıra indirip üretim maliyetini olduğundan düşük göstermek",
+      "D": "Dönemin gerçek satış tutarını mali tablolarda gizleyerek kârlılığı olduğundan farklı biçimde sunmak",
+      "E": "Siparişe yüklenen direkt işçilik tutarını yapay biçimde artırıp birim maliyeti yükseltmiş göstermek"
     },
     "answer": "A",
     "solution": "Fiili GÜG ancak dönem sonunda kesinleşir. Önceden belirlenen yükleme oranı sayesinde, bir sipariş tamamlandığında **dönem sonu beklenmeden** siparişin maliyeti zamanında hesaplanabilir (fiyatlama, teslim vb. için).",
@@ -687,10 +687,10 @@
     "konu": "siparis_maliyeti",
     "stem": "Bir dönemde toplam yüklenen GÜG 400.000 ₺, fiili GÜG 415.000 ₺'dir. Genel üretim giderleri bakımından ne söylenir?",
     "options": {
-      "A": "15.000 ₺ fazla yükleme",
-      "B": "GÜG sıfırdır",
-      "C": "Fark yoktur",
-      "D": "815.000 ₺ fark vardır",
+      "A": "15.000 ₺ fazla yükleme (aşırı yüklenmiş GÜG)",
+      "B": "Yüklenen ile fiili eşit; yükleme farkı yok",
+      "C": "815.000 ₺ tutarında fazla yükleme farkı",
+      "D": "815.000 ₺ tutarında eksik yükleme farkı",
       "E": "15.000 ₺ eksik yükleme (az yüklenmiş GÜG)"
     },
     "answer": "E",
@@ -753,11 +753,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyet kartında 'yüklenen GÜG' tutarı hangi verilerle hesaplanır?",
     "options": {
-      "A": "Siparişin satış fiyatı × adet",
-      "B": "Fiili GÜG ÷ sipariş sayısı",
-      "C": "Siparişin DİMM'i × 2",
+      "A": "Siparişin birim satış fiyatı ile siparişte üretilen mamul adedinin çarpılması biçiminde",
+      "B": "Dönemin toplam fiili genel üretim gideri ÷ dönemdeki toplam sipariş sayısı olarak",
+      "C": "Siparişe yüklenen direkt ilk madde ve malzeme tutarının iki katının alınması yoluyla",
       "D": "Önceden belirlenen yükleme oranı × siparişin fiili ölçüsü (makine/işçilik saati vb.)",
-      "E": "Siparişin kâr marjı"
+      "E": "Siparişin satış fiyatına eklenen birim kâr marjı tutarının esas alınması yoluyla"
     },
     "answer": "D",
     "solution": "Siparişe yüklenen GÜG = **önceden belirlenen yükleme oranı × siparişin fiili ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.).",
@@ -775,11 +775,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Bir siparişin 'dönüştürme (işleme) maliyeti' aşağıdakilerden hangisidir?",
     "options": {
-      "A": "DİMM + DİG",
+      "A": "Direkt ilk madde ve malzeme + direkt işçilik (DİMM + DİG)",
       "B": "Direkt işçilik + genel üretim giderleri (DİG + GÜG)",
-      "C": "DİMM + GÜG",
-      "D": "Yalnızca DİMM",
-      "E": "Satış + yönetim gideri"
+      "C": "Direkt ilk madde ve malzeme + genel üretim gideri (DİMM + GÜG)",
+      "D": "Yalnızca kullanılan direkt ilk madde ve malzeme tutarı",
+      "E": "Pazarlama satış dağıtım gideri + genel yönetim gideri"
     },
     "answer": "B",
     "solution": "**Dönüştürme (işleme) maliyeti = Direkt işçilik + Genel üretim giderleri (DİG + GÜG)**; ilk maddeyi mamule dönüştürmek için katlanılan maliyettir. (DİMM + DİG ise 'birincil/asal maliyet'tir.)",
@@ -797,11 +797,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Bir siparişin 'birincil (asal/temel) maliyeti' aşağıdakilerden hangisidir?",
     "options": {
-      "A": "DİMM + GÜG",
-      "B": "DİG + GÜG",
-      "C": "Yalnızca GÜG",
+      "A": "Direkt ilk madde ve malzeme + genel üretim giderleri (DİMM + GÜG)",
+      "B": "Direkt işçilik + genel üretim giderleri (DİG + GÜG) toplamı",
+      "C": "Yalnızca siparişe yüklenen genel üretim giderleri (GÜG) tutarı",
       "D": "Direkt ilk madde ve malzeme + direkt işçilik (DİMM + DİG)",
-      "E": "Satış + pazarlama gideri"
+      "E": "Pazarlama satış dağıtım gideri + genel yönetim gideri toplamı"
     },
     "answer": "D",
     "solution": "**Birincil (asal/temel) maliyet = Direkt ilk madde ve malzeme + Direkt işçilik (DİMM + DİG)**; mamule doğrudan izlenebilen maliyetlerin toplamıdır.",
@@ -885,10 +885,10 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde bir siparişe malzeme verildiğinde maliyet kaydında hangi hesap borçlandırılır?",
     "options": {
-      "A": "150 İLK MADDE VE MALZEME",
-      "B": "770 GENEL YÖNETİM GİDERLERİ",
-      "C": "600 YURT İÇİ SATIŞLAR",
-      "D": "320 SATICILAR",
+      "A": "150 İLK MADDE VE MALZEME hesabı borçlandırılır",
+      "B": "770 GENEL YÖNETİM GİDERLERİ hesabı borçlandırılır",
+      "C": "600 YURT İÇİ SATIŞLAR hesabı borçlandırılır",
+      "D": "320 SATICILAR hesabı borçlandırılır",
       "E": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ (7/A)"
     },
     "answer": "E",
@@ -1039,10 +1039,10 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde dönem sonunda 'fazla (aşırı) yüklenmiş GÜG' bulunuyorsa, bu durum satılan mamul maliyeti üzerinde nasıl bir düzeltme gerektirir (basit yaklaşım)?",
     "options": {
-      "A": "Satılan mamul maliyetini artırır",
-      "B": "Direkt işçiliği azaltır",
-      "C": "Hiçbir etkisi yoktur",
-      "D": "Satış hasılatını artırır",
+      "A": "Satılan mamul maliyetini artırır; mamullere eksik yüklenen kısım sonradan eklenir",
+      "B": "Dönemin direkt işçilik giderini azaltır; fark işçilik hesabından geri çekilir",
+      "C": "Satılan mamul maliyeti üzerinde hiçbir düzeltme gerektirmez; fark yok sayılır",
+      "D": "Dönemin satış hasılatını artırır; fark 600 numaralı satış hesabına eklenir",
       "E": "Satılan mamul maliyetini azaltır (mamullere fazla yüklenen kısım geri düzeltilir)"
     },
     "answer": "E",
@@ -1061,11 +1061,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Dönem sonunda 'eksik (az) yüklenmiş GÜG' bulunuyorsa, basit yaklaşımda satılan mamul maliyeti nasıl düzeltilir?",
     "options": {
-      "A": "Satılan mamul maliyeti azaltılır",
-      "B": "Değişmez",
+      "A": "Satılan mamul maliyeti azaltılır; mamullere fazla yüklenen kısım geri çekilir",
+      "B": "Satılan mamul maliyeti değişmez; eksik yükleme farkı tümüyle yok sayılır",
       "C": "Satılan mamul maliyeti artırılır (mamullere eksik yüklenen kısım eklenir)",
-      "D": "Satış hasılatı azaltılır",
-      "E": "GÜG sıfırlanır"
+      "D": "Dönemin satış hasılatı azaltılır; fark 600 numaralı satış hesabından düşülür",
+      "E": "Genel üretim giderleri sıfırlanır; tüm yükleme kayıtları dönem sonunda iptal edilir"
     },
     "answer": "C",
     "solution": "**Eksik yüklenmiş GÜG**, mamullere fiili giderden daha az yüklendiğini gösterir; basit yaklaşımda bu fark satılan mamul maliyetine eklenerek **SMM artırılır**.",
@@ -1149,11 +1149,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde birim maliyetlerin siparişler arasında farklılık göstermesinin temel nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Tüm siparişlerin aynı olması",
-      "B": "Yalnızca satış fiyatının değişmesi",
-      "C": "Birim maliyetin hiç hesaplanmaması",
+      "A": "Bütün siparişlerin birbirinin tıpatıp aynısı olması ve aynı miktarda kaynak tüketmesi",
+      "B": "Yalnızca siparişlerin satış fiyatının değişmesi, tüketilen üretim kaynaklarının aynı kalması",
+      "C": "Sipariş maliyeti sisteminde birim maliyetin hiçbir zaman ayrı ayrı hesaplanmaması",
       "D": "Her siparişin farklı miktarda DİMM, DİG ve makine/işçilik saati (dolayısıyla GÜG) tüketmesi",
-      "E": "GÜG'ün her siparişte sıfır olması"
+      "E": "Her siparişte genel üretim giderlerinin sıfır olması ve maliyete hiç yansımaması"
     },
     "answer": "D",
     "solution": "Sipariş maliyeti sisteminde her sipariş farklı özellikte olduğundan **farklı miktarda DİMM, DİG ve makine/işçilik saati** tüketir; bu da yüklenen GÜG'ü ve dolayısıyla birim maliyeti siparişten siparişe farklılaştırır.",
@@ -1193,11 +1193,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Aşağıdakilerden hangisi sipariş maliyeti sisteminin bir üstünlüğüdür?",
     "options": {
-      "A": "Kayıt ve izleme maliyetinin çok düşük olması",
+      "A": "Ayrıntılı kayıt gerektirmediğinden kayıt ve izleme maliyetinin çok düşük düzeyde kalması ve iş yükünün oldukça az olması",
       "B": "Her siparişin maliyetinin ayrı ayrı, ayrıntılı biçimde bilinebilmesi (özel fiyatlama ve kârlılık analizine olanak)",
-      "C": "GÜG'ün hiç dağıtılmaması",
-      "D": "Birim maliyetin hesaplanmasına gerek olmaması",
-      "E": "Yalnızca tek tip mamulde kullanılabilmesi"
+      "C": "Genel üretim giderlerinin hiçbir siparişe dağıtılmaması ve tümüyle dönem gideri sayılması",
+      "D": "Birim maliyetin hiç hesaplanmasına gerek kalmadan siparişlerin doğrudan satılabilmesi",
+      "E": "Yalnızca tek tip, birbirinin aynı mamul üreten kitle üretiminde uygulanabilir olması"
     },
     "answer": "B",
     "solution": "Sipariş maliyeti sisteminin üstünlüğü, **her siparişin maliyetinin ayrı ve ayrıntılı** izlenebilmesidir; bu, özel fiyatlama ve sipariş bazlı kârlılık analizine olanak sağlar. (Dezavantajı ise ayrıntılı kayıt yükünün fazla olmasıdır.)",
@@ -1237,11 +1237,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Sipariş maliyeti sisteminde dönem sonu üretim maliyetlerinin (7/A) 151 YARI MAMULLER veya 152 MAMULLER hesaplarına aktarılmasında köprü görevi gören yansıtma hesabı grubu aşağıdakilerden hangisidir?",
     "options": {
-      "A": "6XX Gelir tablosu hesapları",
+      "A": "6XX Gelir tablosu hesapları (ör. 600, 620, 631 numaralı hesaplar)",
       "B": "71X–73X Yansıtma hesapları (ör. 711, 721, 731 Yansıtma Hesapları)",
-      "C": "1XX Dönen varlıklar",
-      "D": "3XX Kısa vadeli yabancı kaynaklar",
-      "E": "5XX Özkaynaklar"
+      "C": "1XX Dönen varlıklar hesapları (ör. 100, 120, 153 numaralı hesaplar)",
+      "D": "3XX Kısa vadeli yabancı kaynak hesapları (ör. 300, 320, 360)",
+      "E": "5XX Özkaynak hesapları (ör. 500, 540, 570 numaralı hesaplar)"
     },
     "answer": "B",
     "solution": "7/A'da gider hesaplarında (710, 720, 730) biriken üretim maliyetleri, **71X–73X yansıtma hesapları** (711, 721, 731 …) aracılığıyla üretim/stok hesaplarına (151/152) aktarılır. Yansıtma hesapları köprü görevi görür.",
@@ -1281,11 +1281,11 @@
     "konu": "siparis_maliyeti",
     "stem": "Aşağıdakilerden hangisi sipariş maliyeti sisteminin bir SAKINCASI (dezavantajı) olarak gösterilebilir?",
     "options": {
-      "A": "Sipariş bazlı kârlılık bilinemez",
-      "B": "Birim maliyet hiç hesaplanamaz",
+      "A": "Sipariş bazında kârlılığın hiçbir biçimde ölçülememesi ve hiçbir şekilde analiz edilememesi sorunu",
+      "B": "Tamamlanan siparişlerde birim maliyetin hiçbir zaman hesaplanamıyor olması",
       "C": "Her siparişe ait ayrıntılı kayıt tutma zorunluluğu, kayıt ve izleme maliyetini/iş yükünü artırır",
-      "D": "GÜG hiç yüklenemez",
-      "E": "Yalnızca tek üründe kullanılabilir"
+      "D": "Genel üretim giderlerinin siparişlere hiçbir yöntemle yüklenememesi sorunu",
+      "E": "Sistemin yalnızca tek tip mamul üreten kitle üretiminde uygulanabilmesi"
     },
     "answer": "C",
     "solution": "Sipariş maliyeti sisteminde her siparişe ait DİMM, DİG ve GÜG'ün ayrı ayrı izlenmesi gerektiğinden **ayrıntılı kayıt tutma** zorunluluğu iş yükünü ve maliyeti artırır; bu sistemin başlıca sakıncasıdır.",

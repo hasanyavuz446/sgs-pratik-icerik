@@ -5,11 +5,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı (yatay) tablolar analizi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Tek bir döneme ait tabloyu inceler.",
-      "B": "Kalemleri birbirine böler.",
-      "C": "Her kalemi toplam aktife oranlar.",
+      "A": "Yalnızca tek bir döneme ait mali tabloyu ele alır ve o dönemdeki kalemleri statik biçimde inceleyip dönemler arası değişimi hiç dikkate almaz.",
+      "B": "Bir dönemdeki her kalemi diğer bir kaleme bölerek oranlar üretir; tutar ve yüzde değişimini değil, kalemler arası ilişkiyi ölçmeyi amaçlar.",
+      "C": "Bilançoda her kalemi toplam aktife, gelir tablosunda ise net satışlara oranlayarak tek dönemin yüzde bileşimini gösteren dikey bir tekniktir.",
       "D": "Birbirini izleyen iki veya daha fazla döneme ait mali tablo kalemlerinin tutar ve yüzde olarak değişiminin (artış/azalış) incelenmesidir.",
-      "E": "Yalnızca vergi hesaplar."
+      "E": "Sadece dönemin vergi matrahını ve ödenecek vergiyi hesaplamayı amaçlayan, mali tablo kalemlerinin gelişimiyle ilgilenmeyen bir yöntemdir."
     },
     "answer": "D",
     "solution": "**Karşılaştırmalı (yatay) analiz**; ardışık iki veya daha fazla döneme ait kalemlerin **tutar ve yüzde olarak değişiminin** karşılaştırılmasıdır. Dinamik bir analizdir.",
@@ -137,11 +137,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde yüzde değişim hesaplanırken bölme işleminde payda (temel) olarak hangi dönem alınır?",
     "options": {
-      "A": "Cari (son) dönem",
+      "A": "Cari (son) dönem, çünkü değişim güncel duruma göre ölçülür",
       "B": "Önceki (baz/karşılaştırmaya esas) dönem",
-      "C": "İki dönemin ortalaması",
-      "D": "En yüksek tutarlı dönem",
-      "E": "Gelecek dönem tahmini"
+      "C": "İki dönem tutarının aritmetik ortalaması alınır",
+      "D": "Tutarı en yüksek olan dönem payda seçilir",
+      "E": "Bütçelenen gelecek dönem tahmini esas alınır"
     },
     "answer": "B",
     "solution": "Yüzde değişimde payda **önceki (baz) dönemdir**; değişim, karşılaştırmaya esas alınan önceki döneme göre ölçülür.",
@@ -247,11 +247,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analiz aşağıdaki mali tablolardan hangisine/hangilerine uygulanabilir?",
     "options": {
-      "A": "Yalnızca bilançoya",
-      "B": "Yalnızca gelir tablosuna",
-      "C": "Yalnızca kâr dağıtım tablosuna",
+      "A": "Yalnızca bilançoya uygulanır; gelir tablosu kalemlerinin dönemsel değişimi bu analizle ölçülemez",
+      "B": "Yalnızca gelir tablosuna uygulanır; bilanço kalemleri yatay analize konu edilemez",
+      "C": "Yalnızca kâr dağıtım tablosuna uygulanabilen, diğer mali tabloları kapsamayan özel bir tekniktir",
       "D": "Hem bilanço hem gelir tablosu (ve diğer mali tablolar) kalemlerine",
-      "E": "Hiçbir mali tabloya uygulanamaz"
+      "E": "Hiçbir mali tabloya uygulanamaz; sadece dipnotların yorumlanmasında kullanılır"
     },
     "answer": "D",
     "solution": "Karşılaştırmalı analiz **hem bilanço hem gelir tablosu** (ve diğer mali tablolar) kalemlerine uygulanabilir; her kalemin dönemler arası değişimi izlenir.",
@@ -270,10 +270,10 @@
     "stem": "Karşılaştırmalı analizde bir kalemin önceki dönem tutarı sıfır (0) ise yüzde değişimle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Payda sıfır olacağından anlamlı bir yüzde değişim hesaplanamaz; yalnızca tutar değişimi yorumlanır.",
-      "B": "Yüzde değişim her zaman %100'dür.",
-      "C": "Yüzde değişim sıfırdır.",
-      "D": "Yüzde değişim negatif çıkar.",
-      "E": "Yüzde değişim cari dönem tutarına eşittir."
+      "B": "Önceki dönem sıfır olsa bile yüzde değişim her zaman %100 olarak kabul edilir ve kalem tam arttı sayılır.",
+      "C": "Kalem yeni ortaya çıkmış olsa dahi yüzde değişim sıfır kabul edilir; dönemler arası hiçbir fark yokmuş gibi yorumlanır.",
+      "D": "Payda sıfır olduğunda formül gereği yüzde değişim daima negatif çıkar ve azalış olarak raporlanır.",
+      "E": "Yüzde değişim, doğrudan cari dönem tutarının kendisine eşit alınarak tutarla aynı sayı olarak gösterilir."
     },
     "answer": "A",
     "solution": "Yüzde değişimde payda (önceki dönem) **sıfırsa** bölme tanımsız olur; anlamlı bir yüzde hesaplanamaz. Bu durumda yalnızca **tutar değişimi** dikkate alınır.",
@@ -335,11 +335,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde bir kalemin hem tutar hem yüzde değişiminin birlikte değerlendirilmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Yüzde değişim her zaman yanlıştır.",
+      "A": "Yüzde değişim yanıltıcı bir ölçüdür ve karşılaştırmalı analizde hiçbir zaman dikkate alınmaz; yorumun yalnızca tutar değişimine dayandırılması hâlinde her koşulda doğru sonuca ulaşılır.",
       "B": "Küçük tutarlı bir kalemde yüzde değişim büyük görünebilir; büyük tutarlı bir kalemde küçük yüzde bile önemli tutar ifade edebilir. İkisi birlikte daha doğru yorum sağlar.",
-      "C": "Tutar değişimi hiçbir şey ifade etmez.",
-      "D": "Yüzde değişim yalnızca bilançoda geçerlidir.",
-      "E": "İkisi her zaman aynı sonucu verir."
+      "C": "Tutar değişimi tek başına hiçbir şey ifade etmez; kalemin büyüklüğü ne olursa olsun yalnızca yüzde değişime bakılarak kesin ve eksiksiz bir yorum yapılabilir.",
+      "D": "Yüzde değişim yalnızca bilanço kalemleri için geçerlidir; gelir tablosu kalemlerinde yüzde değil sadece tutar değişimi hesaplandığından ikisi birlikte kullanılamaz.",
+      "E": "Bir kalemin tutar değişimi ile yüzde değişimi her zaman aynı büyüklükte sonucu verdiğinden ikisinden yalnızca birini hesaplamak yeterlidir, diğeri gereksizdir."
     },
     "answer": "B",
     "solution": "Küçük bir kalemde yüzde değişim abartılı büyük; büyük bir kalemde küçük yüzde bile önemli tutar olabilir. Bu nedenle **tutar ve yüzde birlikte** değerlendirilerek daha sağlıklı yorum yapılır.",
@@ -402,10 +402,10 @@
     "stem": "Bir işletmenin net satışları %20, satışların maliyeti ise %35 artmıştır. Bu karşılaştırmalı analiz bulgusu en olası olarak neyi gösterir?",
     "options": {
       "A": "Maliyetlerin satışlardan daha hızlı arttığını; bunun brüt kâr marjını olumsuz etkileme eğiliminde olduğunu",
-      "B": "Brüt kârlılığın iyileştiğini",
-      "C": "İşletmenin hiç satış yapmadığını",
-      "D": "Stokların sıfırlandığını",
-      "E": "Özkaynakların arttığını"
+      "B": "Satışların maliyetlerden daha hızlı arttığını ve bu nedenle brüt kâr marjının belirgin biçimde iyileştiğini",
+      "C": "İşletmenin cari dönemde hiç satış yapmadığını, dolayısıyla brüt kârın oluşmadığını gösterdiğini",
+      "D": "Dönem sonunda stokların tamamen tükenerek sıfıra indiğini ve satın alma yapılmadığını",
+      "E": "Faaliyet dışı gelirlerin artması nedeniyle özkaynakların güçlendiğini ve borçluluğun azaldığını"
     },
     "answer": "A",
     "solution": "Satışların maliyeti (%35), net satışlardan (%20) **daha hızlı artmışsa**, maliyet baskısı brüt kâr marjını **olumsuz** etkileme eğilimindedir. Yatay analizde kalemlerin göreli büyüme hızları bu şekilde yorumlanır.",
@@ -665,11 +665,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin ticari alacakları %40 artarken net satışları %10 artmıştır. Bu karşılaştırmalı bulgu en olası olarak neyi düşündürür?",
     "options": {
-      "A": "Tahsilat performansının çok iyileştiğini",
-      "B": "Stokların azaldığını",
-      "C": "İşletmenin peşin satışa geçtiğini",
+      "A": "Alacaklar satışlardan hızlı büyüdüğü için tahsilat performansının belirgin biçimde iyileştiğini ve alacakların hızla nakde döndüğünü",
+      "B": "Ticari alacaklardaki artışın stokların eriyip azalmasından kaynaklandığını ve stok devir hızının yükseldiğini",
+      "C": "İşletmenin tüm satışlarını peşine çevirdiğini, bu nedenle ticari alacak bakiyesinin artık büyümediğini",
       "D": "Alacakların satışlardan çok daha hızlı büyüdüğünü; tahsilatta yavaşlama veya vadeli satış artışı olabileceğini",
-      "E": "Özkaynakların azaldığını"
+      "E": "Alacak artışının doğrudan özkaynakların azalması anlamına geldiğini ve sermayenin eridiğini"
     },
     "answer": "D",
     "solution": "Alacaklar (%40), satışlardan (%10) **çok daha hızlı** büyümüşse; bu, tahsilatta yavaşlama ya da vadeli satışların artışına işaret edebilir (olumsuz sinyal olarak değerlendirilir).",
@@ -731,11 +731,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "İki kalemden A kalemi 1.000.000 ₺'den 1.050.000 ₺'ye (%5), B kalemi 50.000 ₺'den 65.000 ₺'ye (%30) çıkmıştır. Bu bulgunun yorumu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "A kalemi hem tutar hem yüzde olarak daha çok artmıştır.",
+      "A": "A kalemi hem tutar hem de yüzde olarak B kaleminden daha çok artmıştır; bu nedenle A kalemindeki gelişme her açıdan B kaleminden daha güçlüdür ve öne çıkar.",
       "B": "B kalemi yüzde olarak çok daha fazla (%30) artmış; ancak tutar olarak A daha büyük bir artış (50.000 ₺ > 15.000 ₺) göstermiştir. Bu yüzden tutar ve yüzde birlikte yorumlanmalıdır.",
-      "C": "İki kalem de aynı oranda artmıştır.",
-      "D": "B kalemi tutar olarak daha çok artmıştır.",
-      "E": "Yüzde değişim anlamsızdır."
+      "C": "İki kalem de aynı oranda ve aynı tutarda artmıştır; dolayısıyla aralarında tutar ya da yüzde bakımından yorumlanacak herhangi bir fark bulunmamaktadır.",
+      "D": "B kalemi tutar olarak da A kaleminden daha çok artmıştır; hem yüzde hem de tutar bakımından en büyük artışı gösteren kalem B olduğundan yorumda yalnızca B kalemi dikkate alınıp değerlendirilmelidir.",
+      "E": "Yüzde değişim bu tür karşılaştırmalarda anlamsız bir ölçüdür; kalemler yalnızca tutar artışına göre sıralanır ve oranlar hiçbir biçimde dikkate alınmaz."
     },
     "answer": "B",
     "solution": "A: +50.000 ₺ (%5); B: +15.000 ₺ (%30). B **yüzde** olarak çok daha fazla artmış, ama A **tutar** olarak daha büyük artış göstermiştir. Bu, tutar ile yüzdenin birlikte değerlendirilmesi gerektiğini gösterir.",
@@ -841,11 +841,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin dönen varlıkları %30, kısa vadeli yabancı kaynakları %10 artmıştır. Bu karşılaştırmalı bulgu likidite açısından en olası olarak neyi gösterir?",
     "options": {
-      "A": "Likiditenin (cari oranın) zayıfladığını",
-      "B": "İşletmenin iflas ettiğini",
+      "A": "Kısa vadeli borçların dönen varlıklardan daha hızlı artması nedeniyle likiditenin (cari oranın) belirgin biçimde zayıfladığını",
+      "B": "Kısa vadeli borçların artmış olmasının işletmenin ödemelerini durdurup iflas ettiği anlamına geldiğini",
       "C": "Dönen varlıkların kısa vadeli borçlardan daha hızlı artması nedeniyle likiditenin (cari oranın) güçlenme eğiliminde olduğunu",
-      "D": "Stokların sıfırlandığını",
-      "E": "Kârlılığın düştüğünü"
+      "D": "Dönen varlıklar içindeki stokların tümüyle eriyip sıfıra indiğini ve nakde dönüştüğünü",
+      "E": "Dönen varlık artışının doğrudan dönem kârının düşmesinden kaynaklandığını ve kârlılığın gerilediğini"
     },
     "answer": "C",
     "solution": "Dönen varlıklar (%30), kısa vadeli borçlardan (%10) **daha hızlı** artmışsa cari oran (DV/KVYK) yükselme eğilimindedir → **likidite güçlenir**.",
@@ -863,11 +863,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde bir kalemin tutar olarak arttığı ancak yüzde olarak azaldığı söylenebilir mi?",
     "options": {
-      "A": "Evet; aynı kalemde tutar artarken yüzde azalabilir.",
-      "B": "Bu durum yalnızca bilançoda mümkündür.",
-      "C": "Evet; tutar ve yüzde her zaman ters yöndedir.",
+      "A": "Evet; aynı kalemde cari tutar önceki dönemi aşsa bile yüzde değişim pekâlâ eksi çıkabilir ve azalış olarak yorumlanır.",
+      "B": "Bu durum yalnızca bilanço kalemlerinde mümkündür; gelir tablosunda tutar artarken yüzdenin azalması hiçbir şekilde olamaz.",
+      "C": "Evet; bir kalemin tutar değişimi ile yüzde değişimi daima ters yönde hareket eder, biri artarken diğeri mutlaka azalır.",
       "D": "Hayır; bir kalem tutar olarak artıyorsa (cari > önceki), yüzde değişimi de mutlaka pozitiftir (artış).",
-      "E": "Bu durum yalnızca gelir tablosunda mümkündür."
+      "E": "Bu durum yalnızca gelir tablosu kalemlerinde ortaya çıkabilir; bilançoda tutar artışıyla yüzde azalışı bir arada görülmez."
     },
     "answer": "D",
     "solution": "Bir kalem **tutar olarak artıyorsa** (cari > önceki), değişim tutarı pozitiftir ve yüzde değişim de zorunlu olarak **pozitiftir (artış)**. Tutar artışı ile yüzde azalışı aynı kalemde mümkün değildir.",
@@ -973,11 +973,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin stokları %35 artarken net satışları neredeyse hiç değişmemiştir (%2). Bu karşılaştırmalı bulgu en olası olarak neyi gösterir?",
     "options": {
-      "A": "Stokların hızla satıldığını",
-      "B": "Kârlılığın kesin arttığını",
-      "C": "İşletmenin stoksuz çalıştığını",
+      "A": "Stokların çok hızlı satıldığını ve stok devir hızının yükselerek satışları desteklediğini",
+      "B": "Satışlar sabit kalsa da stok artışının dönem kârını kesin biçimde yükselttiğini gösterdiğini",
+      "C": "İşletmenin stoksuz (stok bulundurmadan) çalışmaya geçtiğini ve tüm mamulü anında sattığını",
       "D": "Satışlar artmadan stokların birikmesini; olası stok fazlalığı/satış yavaşlaması riskini",
-      "E": "Borçların azaldığını"
+      "E": "Stok artışının kısa vadeli borçların ödenip azalmasından kaynaklandığını gösterdiğini"
     },
     "answer": "D",
     "solution": "Satışlar sabitken (%2) stokların %35 artması, **stok birikmesine** (olası stok fazlalığı/satış yavaşlaması) işaret eder; bu genelde olumsuz bir sinyaldir.",
@@ -1061,11 +1061,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin özkaynakları %20 artarken toplam yabancı kaynakları %10 azalmıştır. Bu karşılaştırmalı bulgu mali yapı açısından neyi gösterir?",
     "options": {
-      "A": "Mali yapının zayıfladığını",
-      "B": "İşletmenin borç batağına girdiğini",
+      "A": "Yabancı kaynak ağırlığının artıp özkaynağın gerilemesiyle mali yapının zayıfladığını gösterdiğini",
+      "B": "Borçların hızla büyüyüp işletmenin ödeme güçlüğüne (borç batağına) girdiğini işaret ettiğini",
       "C": "Özkaynak ağırlığının arttığını, borçluluğun azaldığını; mali yapının güçlendiğini",
-      "D": "Likiditenin bozulduğunu",
-      "E": "Satışların düştüğünü"
+      "D": "Özkaynak artışının nakit çıkışına yol açarak işletmenin likiditesini bozduğunu gösterdiğini",
+      "E": "Özkaynaktaki artışın doğrudan net satışların düşmesinden kaynaklandığını ortaya koyduğunu"
     },
     "answer": "C",
     "solution": "Özkaynak artıp (%20) yabancı kaynak azalınca (%10), varlıklar içinde **özkaynak ağırlığı artar, borçluluk azalır** → mali yapı **güçlenir**.",
@@ -1171,11 +1171,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizin temel amacı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Tek dönemin kalemlerini toplam içinde yüzdelemek",
-      "B": "Kalemleri birbirine bölerek oran üretmek",
-      "C": "Yalnızca vergi matrahını bulmak",
+      "A": "Tek bir döneme ait mali tabloda her kalemi ait olduğu grup toplamına bölüp yüzdeleyerek o dönemin bileşimini (yapısını) ortaya koymak",
+      "B": "Aynı döneme ait kalemleri birbirine bölerek likidite, kârlılık ve mali yapı oranları üretmek ve bu oranlar üzerinden değerlendirme yapmak",
+      "C": "İşletmenin yalnızca dönem vergi matrahını ve ödenecek vergisini hesaplayarak beyanname için gerekli tutarları tespit etmek",
       "D": "İşletmenin kalemlerinin dönemler arası gelişimini (artış/azalış eğilimini) izleyerek performans ve mali durumdaki değişimi değerlendirmek",
-      "E": "Kâr dağıtımı yapmak"
+      "E": "Dönem kârını ortaklara ve yedeklere paylaştırarak kâr dağıtım tablosunu düzenlemek ve dağıtılacak tutarları belirlemek"
     },
     "answer": "D",
     "solution": "Karşılaştırmalı (yatay) analizin amacı; kalemlerin **dönemler arası gelişimini (artış/azalış)** izleyerek işletmenin performans ve mali durumundaki **değişimi** değerlendirmektir.",
@@ -1237,10 +1237,10 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analiz ile dikey analiz arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de tek dönemi inceler.",
-      "B": "İkisi arasında fark yoktur.",
-      "C": "Karşılaştırmalı analiz statik, dikey analiz dinamiktir.",
-      "D": "İkisi de kalemleri birbirine böler.",
+      "A": "İkisi de yalnızca tek bir döneme ait mali tabloyu inceler; aralarındaki tek fark, kullanılan tabloların bilanço veya gelir tablosu olmasıdır.",
+      "B": "İki teknik özünde aynı işlemi yapar; karşılaştırmalı analiz ile dikey analiz arasında yöntem, amaç veya sonuç bakımından herhangi bir fark bulunmaz.",
+      "C": "Karşılaştırmalı analiz tek dönemi ele aldığından statik, dikey analiz ise dönemler arası değişimi izlediğinden dinamik bir analiz türü olarak nitelenir.",
+      "D": "İkisi de kalemleri birbirine bölerek oran üretir; fark, karşılaştırmalının bilançoda, dikey analizin ise gelir tablosunda uygulanmasından ibarettir.",
       "E": "Karşılaştırmalı analiz dönemler arası değişimi (dinamik) incelerken; dikey analiz tek bir dönemde kalemlerin bir bütüne oranını (statik) inceler."
     },
     "answer": "E",
@@ -1281,11 +1281,11 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin net satışları %25 artarken dönem net kârı %60 artmıştır. Bu karşılaştırmalı bulgu en olası olarak neyi gösterir?",
     "options": {
-      "A": "Kârlılığın kötüleştiğini",
+      "A": "Net kârın net satışlardan daha yavaş büyümesi nedeniyle net kâr marjının gerilediğini ve kârlılığın kötüleştiğini",
       "B": "Net kârın satışlardan daha hızlı büyümesi nedeniyle kârlılığın (net kâr marjının) iyileşme eğiliminde olduğunu",
-      "C": "İşletmenin zarar ettiğini",
-      "D": "Satışların düştüğünü",
-      "E": "Borçların arttığını"
+      "C": "Giderlerin gelirleri aşması nedeniyle işletmenin cari dönemi net zararla kapattığını gösterdiğini",
+      "D": "Net satışların önceki döneme göre azaldığını ve bu daralmanın kârı düşürdüğünü ortaya koyduğunu",
+      "E": "Kâr artışının kaynağının borçlanmadaki yükseliş olduğunu ve mali yapının borç ağırlıklı hâle geldiğini"
     },
     "answer": "B",
     "solution": "Net kâr (%60), net satışlardan (%25) **daha hızlı** büyümüşse, net kâr marjı (net kâr/net satış) yükselme eğilimindedir → **kârlılık iyileşir**.",

@@ -137,11 +137,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Aşağıdaki hesaplardan hangisi bir aktifi düzenleyici (kontr aktif) hesaptır ve normalde alacak kalanı verir?",
     "options": {
-      "A": "100 Kasa",
-      "B": "153 Ticari Mallar",
+      "A": "100 Kasa; borç kalanı verir",
+      "B": "153 Ticari Mallar; aktif hesaptır",
       "C": "257 Birikmiş Amortismanlar (-)",
-      "D": "320 Satıcılar",
-      "E": "600 Yurt İçi Satışlar"
+      "D": "320 Satıcılar; borç kalanlı varlık",
+      "E": "600 Yurt İçi Satışlar; gider hesabı"
     },
     "answer": "C",
     "solution": "**257 Birikmiş Amortismanlar (-)** aktifi düzenleyici bir hesaptır; bilançoda duran varlığın altında eksi (-) gösterilir ve **alacak kalanı** verir; ilgili varlığın net defter değerini düşürür.",
@@ -203,10 +203,10 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tekdüzen Hesap Planı'nda gelir tablosu hesapları (6 sınıfı) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir.",
-      "B": "6'lı hesaplar yalnızca nazım hesaplarla çalışır.",
-      "C": "Tüm 6'lı hesaplar bilançoya devredilir.",
-      "D": "6'lı hesaplar aktifi düzenleyici hesaplardır.",
+      "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir; her ikisi de dönem sonunda bilançoda gösterilir.",
+      "B": "6'lı sınıftaki tüm hesaplar yalnızca nazım hesaplarla birlikte çalışan hesaplardır.",
+      "C": "Tüm 6'lı hesaplar dönem sonunda kapatılmayıp kalanlarıyla bilançoya devredilir.",
+      "D": "6'lı hesaplar aktifi düzenleyici hesaplar olup ilgili varlığın altında (-) gösterilir.",
       "E": "Gelir hesapları alacak, gider hesapları borç kalanı verir ve dönem sonunda 690'a devredilir."
     },
     "answer": "E",
@@ -247,11 +247,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme bankadaki mevduatından 20.000 ₺ çekerek kasasına koymuştur. Bu işlemin bilanço büyüklüğüne (aktif toplamına) etkisi nedir?",
     "options": {
-      "A": "Aktif toplamı 20.000 ₺ artar",
+      "A": "Aktif toplamı 20.000 ₺ artar, çünkü kasaya nakit girmiştir",
       "B": "Aktif toplamı değişmez, yalnızca varlık bileşimi değişir",
-      "C": "Aktif toplamı 20.000 ₺ azalır",
-      "D": "Pasif toplamı 20.000 ₺ artar",
-      "E": "Özkaynaklar 20.000 ₺ artar"
+      "C": "Aktif toplamı 20.000 ₺ azalır, çünkü bankadan para çıkmıştır",
+      "D": "Pasif toplamı 20.000 ₺ artar, çünkü yeni bir kaynak doğmuştur",
+      "E": "Özkaynaklar 20.000 ₺ artar, çünkü işletmeye değer eklenmiştir"
     },
     "answer": "B",
     "solution": "Kayıt **100 Kasa (B) 20.000 / 102 Bankalar (A) 20.000**'dir. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlıkların bileşimi değişir.",
@@ -269,11 +269,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tekdüzen Hesap Planı'nda '7 - Maliyet Hesapları' sınıfı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin uzun vadeli borçlarını izler.",
-      "B": "Yalnızca ticaret işletmelerinde kullanılır.",
+      "A": "İşletmenin uzun vadeli banka kredilerini ve çıkardığı tahvil borçlarını dönem boyunca ayrıntılı biçimde izleyen sınıftır.",
+      "B": "Yalnızca ticaret işletmelerinde kullanılır; üretim yapan sanayi işletmelerinde hiç açılmaz.",
       "C": "Giderlerin çeşit (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.",
-      "D": "Özkaynak hareketlerini izler.",
-      "E": "Nazım hesaplarla aynı işlevi görür."
+      "D": "İşletmenin özkaynak hareketlerini, sermaye artış ve azalışlarını izlemek için kullanılır.",
+      "E": "Nazım hesaplarla tümüyle aynı işlevi görür; mali tablo dengesini hiçbir biçimde etkilemez."
     },
     "answer": "C",
     "solution": "**7 Maliyet Hesapları**, giderlerin çeşitlerine (7/A) veya gider yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesi içindir. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.",
@@ -358,10 +358,10 @@
     "stem": "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izler ve kendi içinde borç-alacak dengesi kurulur.",
-      "B": "İşletmenin aktif-pasif yapısını doğrudan etkileyen işlemleri izler.",
-      "C": "Dönem kârını doğrudan artırır.",
-      "D": "Yalnızca amortisman ayırmak için kullanılır.",
-      "E": "Gelir tablosuna devredilir."
+      "B": "İşletmenin aktif ve pasif yapısını doğrudan değiştiren varlık ve kaynak işlemlerini kaydeden; kalanları dönem sonunda bilançoya aktarılan asıl (esas) hesap sınıfıdır.",
+      "C": "Yalnızca dönem kârını doğrudan artıran gelir ve hasılat işlemlerini izleyen; kalanı 690 hesabına devredilerek kapatılan sonuç hesabı niteliğindedir.",
+      "D": "Yalnızca duran varlıklar için amortisman ayırmak amacıyla kullanılan; her dönem sonunda ilgili gider hesabına devredilerek kapatılan hesaptır.",
+      "E": "Dönem sonunda gelir tablosuna devredilerek işletmenin faaliyet sonucunu (kâr veya zararı) belirleyen; kalan vermeyen bir sonuç hesabıdır."
     },
     "answer": "A",
     "solution": "**Nazım hesaplar (9)**, aktif-pasif yapısını doğrudan etkilemeyen fakat izlenmesi gereken kıymetleri (alınan/verilen teminatlar, emanetler vb.) gösterir; kendi içinde borç-alacak dengesi kurulur ve mali tablo sonucunu değiştirmez.",
@@ -379,11 +379,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 YURT İÇİ SATIŞLAR | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Peşin mal satışının kaydedilmesi",
-      "B": "Satıştan iade işleminin kaydedilmesi",
+      "A": "Peşin mal satışının kasa hesabı borçlandırılarak kaydedilmesi işlemidir",
+      "B": "Satıştan iadenin 610 hesabı kullanılarak kaydedilmesi işlemidir",
       "C": "Gelir hesabının dönem sonunda 690 hesabına devredilerek kapatılması",
-      "D": "Satış maliyetinin hesaplanması",
-      "E": "Kâr payı dağıtımı"
+      "D": "Satılan malın maliyetinin 621 hesabına aktarılması işlemidir",
+      "E": "Ortaklara dağıtılacak kâr payının 331 hesabında izlenmesidir"
     },
     "answer": "C",
     "solution": "Bir gelir hesabı olan **600 Yurt İçi Satışlar** (alacak kalanı verir) dönem sonunda **borçlandırılarak** 690'a **devredilir** ve kapatılır. Bu, gelir hesaplarının dönem sonunda sonuç hesabına aktarılması işlemidir.",
@@ -841,11 +841,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tek düzen hesap planında 'hesap çerçevesi', 'hesap grubu' ve 'hesap' kavramlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Hesap çerçevesi, hesapların en ayrıntılı (muavin) düzeyidir.",
-      "B": "Hesap kodlarının ilk rakamı hesabın muavinini gösterir.",
-      "C": "Her hesap grubu tek bir hesaptan oluşur.",
+      "A": "Hesap çerçevesi, hesapların en ayrıntılı düzeyi olan muavin (yardımcı) hesapları ifade eder.",
+      "B": "Hesap kodunun ilk rakamı hesabın muavinini, son rakamı ise hesap sınıfını göstermektedir.",
+      "C": "Her hesap grubu yalnızca tek bir ana hesaptan oluşur; alt hesaplara hiçbir zaman ayrılamaz.",
       "D": "Hesap sınıfları (1-9) en genel düzeydir; hesap grupları ve hesaplar giderek ayrıntılanır.",
-      "E": "Hesap planı yalnızca gelir tablosu hesaplarını kapsar."
+      "E": "Tekdüzen hesap planı yalnızca gelir tablosu hesaplarını kapsar; bilanço hesaplarını içermez."
     },
     "answer": "D",
     "solution": "TDHP'de en genel düzey **hesap sınıflarıdır (1-9)**; bunlar **hesap gruplarına**, gruplar da **ana hesaplara** ve **alt (muavin) hesaplara** ayrılarak giderek ayrıntılanır.",
@@ -885,11 +885,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Muhasebenin tanımı ile ilgili aşağıdakilerden hangisi en doğrudur?",
     "options": {
-      "A": "Yalnızca vergi hesaplayan bir uygulamadır.",
-      "B": "İşletmenin üretim planlamasını yapan mühendislik dalıdır.",
-      "C": "Yalnızca nakit hareketlerini izleyen bir kasa defteridir.",
+      "A": "İşletmenin yalnızca ödeyeceği vergileri hesaplayan, başka hiçbir mali işlemle ilgilenmeyen dar kapsamlı bir vergi uygulamasıdır.",
+      "B": "İşletmedeki üretim süreçlerini ve fabrika yerleşimini planlayan, mali kayıtla ilgisi bulunmayan bir mühendislik uygulamasıdır.",
+      "C": "Yalnızca kasaya giren ve kasadan çıkan nakit hareketlerini izleyen, diğer işlemleri hiç dikkate almayan basit bir kasa defteridir.",
       "D": "Mali nitelikli işlem ve olayları para birimiyle kaydeden, sınıflandıran, özetleyen ve sonuçlarını yorumlayan bir bilgi sistemidir.",
-      "E": "Sadece bordro hazırlama işlemidir."
+      "E": "Yalnızca çalışanların ücret bordrolarını hazırlayan, işletmenin diğer mali işlemlerini kapsamayan bir personel uygulamasıdır."
     },
     "answer": "D",
     "solution": "Muhasebe; **mali nitelikli işlem ve olayları** para birimiyle **kaydeden, sınıflandıran, özetleyen** ve sonuçlarını ilgililere **raporlayıp yorumlayan** bir bilgi sistemidir.",
@@ -995,10 +995,10 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tekdüzen Hesap Planı'nda bir varlığın 'dönen' mi yoksa 'duran' varlık mı olduğunu belirleyen temel ölçüt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Varlığın parasal büyüklüğü",
-      "B": "Varlığın yurt içinden mi yurt dışından mı alındığı",
-      "C": "Varlığın fiziki olup olmaması",
-      "D": "Varlığın sigortalı olup olmaması",
+      "A": "Varlığın parasal büyüklüğü; tutarı yüksek olan varlıklar duran, tutarı düşük kalan varlıklar ise dönen varlık sayılır",
+      "B": "Varlığın yurt içinden mi yoksa yurt dışından mı satın alındığı; ithal edilen varlıklar her hâlde duran varlık sayılır",
+      "C": "Varlığın fiziki bir yapısının olup olmadığı; elle tutulan varlıklar dönen, elle tutulamayan varlıklar duran sayılır",
+      "D": "Varlığın sigortalanmış olup olmadığı; sigortalı varlıklar duran, sigortasız olan varlıklar ise dönen varlık sayılır",
       "E": "Varlığın bir yıl (veya normal faaliyet dönemi) içinde paraya çevrilmesinin/tüketilmesinin beklenip beklenmemesi"
     },
     "answer": "E",
@@ -1040,10 +1040,10 @@
     "stem": "Dönem sonunda kâr/zararın belirlenmesi sürecinde aşağıdaki hesapların doğru akış sırası hangisidir?",
     "options": {
       "A": "690 Dönem Kârı veya Zararı → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-) → 692 Dönem Net Kârı veya Zararı",
-      "B": "692 → 691 → 690",
-      "C": "691 → 690 → 692",
-      "D": "690 → 692 → 691",
-      "E": "692 → 690 → 691"
+      "B": "692 Dönem Net Kârı veya Zararı → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-) → 690 Dönem Kârı veya Zararı",
+      "C": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-) → 690 Dönem Kârı veya Zararı → 692 Dönem Net Kârı veya Zararı",
+      "D": "690 Dönem Kârı veya Zararı → 692 Dönem Net Kârı veya Zararı → 691 Dönem Kârı Vergi Karşılıkları (-) sırasıyla ilerler",
+      "E": "692 Dönem Net Kârı veya Zararı → 690 Dönem Kârı veya Zararı → 691 Dönem Kârı Vergi Karşılıkları (-) biçiminde tamamlanır"
     },
     "answer": "A",
     "solution": "Önce gelir-giderler **690 Dönem Kârı veya Zararı**nda toplanır; hesaplanan vergi vb. yükümlülük **691 (-)** ile ayrılır; net sonuç **692 Dönem Net Kârı veya Zararı**na aktarılır.",
@@ -1127,11 +1127,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Bir ana hesabın ayrıntılarının (ör. her bir müşteri, her bir satıcı) ayrı ayrı izlendiği hesaplara ne ad verilir?",
     "options": {
-      "A": "Nazım hesaplar",
+      "A": "Nazım (izleme) hesapları",
       "B": "Muavin (yardımcı) hesaplar",
-      "C": "Düzenleyici hesaplar",
-      "D": "Geçici hesaplar",
-      "E": "Sonuç hesapları"
+      "C": "Düzenleyici (kontr) hesaplar",
+      "D": "Geçici (asma) hesaplar",
+      "E": "Sonuç (kâr/zarar) hesapları"
     },
     "answer": "B",
     "solution": "Bir ana hesabın ayrıntısını gösteren (ör. 120 Alıcılar altında her müşteri) hesaplar **muavin (yardımcı) hesaplar**dır; ana hesap bakiyesi, muavin hesapların toplamına eşittir.",
@@ -1149,10 +1149,10 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tekdüzen Muhasebe Sistemi'nin (MSUGT) temel amaçlarından biri aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmelerin daha az vergi ödemesini sağlamak",
-      "B": "Mali tablo düzenlemeyi zorunlu olmaktan çıkarmak",
-      "C": "Yalnızca büyük işletmelerin muhasebe tutmasını sağlamak",
-      "D": "İşletmelere serbestçe istedikleri hesap kodlarını kullandırmak",
+      "A": "İşletmelerin yasal yollarla daha az vergi ödemesini sağlayarak vergi yükünü en aza indirmek",
+      "B": "İşletmeleri mali tablo düzenleme zorunluluğundan kurtararak raporlama yükünü tümüyle kaldırmak",
+      "C": "Yalnızca büyük ölçekli işletmelerin muhasebe tutmasını sağlayıp küçük işletmeleri kapsam dışı bırakmak",
+      "D": "Her işletmeye kendi belirlediği hesap kodlarını serbestçe kullandırarak ortak bir plandan vazgeçmek",
       "E": "Muhasebe bilgilerinin tekdüze, tutarlı ve karşılaştırılabilir biçimde üretilmesini sağlamak"
     },
     "answer": "E",
@@ -1215,11 +1215,11 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 50.000 | |\n| 131 ORTAKLARDAN ALACAKLAR | | 50.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Ortağa işletmeden borç para verilmesi",
+      "A": "Ortağa işletme kasasından nakit borç para verilmesi işlemidir",
       "B": "Ortağın işletmeye olan borcunu nakden ödemesi (tahsilat)",
-      "C": "Ortağın işletmeye sermaye koyması",
-      "D": "İşletmenin ortağa kâr payı dağıtması",
-      "E": "Banka kredisi kullanılması"
+      "C": "Ortağın işletmeye nakit sermaye koyması (sermaye artışı)",
+      "D": "İşletmenin ortağına nakit olarak kâr payı dağıtması işlemi",
+      "E": "İşletmenin bankadan nakit kredi kullanması işlemidir"
     },
     "answer": "B",
     "solution": "Kasaya nakit girişi (100 borç) ve ortaklardan alacağın azalması (131 alacak), **ortağın işletmeye olan borcunu nakden ödemesi** (işletmenin tahsilatı) anlamına gelir.",
@@ -1303,10 +1303,10 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme, 100.000 ₺'lik bir ticari malı peşin bedelle nakit satın almıştır (KDV ihmal edilecektir). Bu işlemin bilanço büyüklüğüne etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Aktif toplamı 100.000 ₺ artar.",
-      "B": "Aktif toplamı 100.000 ₺ azalır.",
-      "C": "Özkaynaklar 100.000 ₺ azalır.",
-      "D": "Pasif toplamı 100.000 ₺ artar.",
+      "A": "Aktif toplamı 100.000 ₺ artar; çünkü işletmeye yeni bir ticari mal girişi olmuş, kasa aynı kalmıştır.",
+      "B": "Aktif toplamı 100.000 ₺ azalır; çünkü kasadan nakit çıkışı olmuş, mal girişi kaydedilmemiştir.",
+      "C": "Özkaynaklar 100.000 ₺ azalır; çünkü mal alımı doğrudan dönem gideri olarak kaydedilmiştir.",
+      "D": "Pasif toplamı 100.000 ₺ artar; çünkü mal alımı nedeniyle satıcıya karşı yeni bir borç doğmuştur.",
       "E": "Aktif toplamı değişmez; bir varlık (mal) artarken eşit tutarda başka bir varlık (kasa) azalır."
     },
     "answer": "E",

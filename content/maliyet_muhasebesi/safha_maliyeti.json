@@ -5,11 +5,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha (evre) maliyeti sistemi aşağıdaki üretim biçimlerinden hangisinde kullanılır?",
     "options": {
-      "A": "Birbirinden farklı, sipariş üzerine ayırt edilebilir üretim (gemi, özel mobilya)",
+      "A": "Birbirinden farklı, her biri müşteri siparişine göre ayrı ayrı ayırt edilebilen üretim (gemi, özel yat, özel mobilya)",
       "B": "Birbirinin aynı/benzer, sürekli ve kitle halinde, aşamalar (safhalar) izleyen üretim (şeker, çimento, un, tekstil)",
-      "C": "Yalnızca ticaret işletmelerinde",
-      "D": "Üretim olmayan işletmelerde",
-      "E": "Yalnızca tek bir birim üretilen işlerde"
+      "C": "Yalnızca alım-satım yapan, hiç üretim yürütmeyen ticaret işletmelerinin stok maliyetlemesinde",
+      "D": "Yalnızca hizmet üreten, fiziki mamul çıkarmayan işletmelerin dönem gideri dağıtımında",
+      "E": "Yalnızca proje başına tek bir birimin özel olarak üretildiği butik atölye işlerinde"
     },
     "answer": "B",
     "solution": "**Safha maliyeti sistemi**, birbirinin aynı/benzer, sürekli ve kitle halinde, ardışık **aşamalar (safhalar)** izleyen üretimde kullanılır (şeker, çimento, un, tekstil, kağıt, petrol).",
@@ -49,11 +49,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde maliyetler hangi birime göre toplanır?",
     "options": {
-      "A": "Her sipariş/işe göre ayrı ayrı",
-      "B": "Her satış faturasına göre",
-      "C": "Her müşteriye göre",
+      "A": "Her sipariş/iş ayrı ayrı; her işe ait maliyet kartında toplanıp o siparişin ürettiği adede bölünür",
+      "B": "Her satış faturası ayrı ayrı; faturada yazan tutar o partinin üretim maliyeti sayılır",
+      "C": "Her müşteri ayrı ayrı; bir müşteriye ait tüm giderler o müşterinin maliyeti olarak izlenir",
       "D": "Üretim aşamaları (safhalar) itibarıyla; her safhada toplanan maliyet o safhanın üretimine bölünür",
-      "E": "Maliyet hiç toplanmaz"
+      "E": "Maliyetler hiç toplanmaz; birim maliyet doğrudan satış fiyatından geriye giderek bulunur"
     },
     "answer": "D",
     "solution": "Safha maliyetinde maliyetler **üretim aşamaları (safhalar)** itibarıyla toplanır; her safhada biriken maliyet o safhanın üretim miktarına bölünerek birim maliyet bulunur.",
@@ -72,10 +72,10 @@
     "stem": "Safha maliyeti sisteminde bir safhanın çıktısı genellikle ne olur?",
     "options": {
       "A": "Bir sonraki safhaya girdi (yarı mamul) olarak aktarılır; son safha çıktısı mamuldür",
-      "B": "Doğrudan satılır, başka safhaya gitmez",
-      "C": "Stokta süresiz bekletilir",
-      "D": "İmha edilir",
-      "E": "Müşteriye iade edilir"
+      "B": "Doğrudan müşteriye satılır; hiçbir zaman bir sonraki safhaya girdi olarak aktarılmaz",
+      "C": "Süresiz olarak yarı mamul deposunda bekletilir; sonraki safhaya hiç geçmez",
+      "D": "Üretim kaybı sayılarak imha edilir; maliyeti tümüyle dönem zararına yazılır",
+      "E": "Kusurlu kabul edilip tedarikçiye iade edilir; maliyeti satıcı hesabına alınır"
     },
     "answer": "A",
     "solution": "Safha maliyetinde her safhanın çıktısı, tamamlanınca **bir sonraki safhaya girdi (yarı mamul)** olarak aktarılır; en son safhanın çıktısı bitmiş **mamul** olur.",
@@ -159,10 +159,10 @@
     "konu": "safha_maliyeti",
     "stem": "Sipariş maliyeti ile safha maliyeti sistemi arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Safha maliyetinde maliyet unsuru yoktur",
-      "B": "İkisi arasında hiçbir fark yoktur",
-      "C": "Safha maliyetinde birim maliyet hesaplanmaz",
-      "D": "Sipariş maliyeti yalnızca kitle üretimde kullanılır",
+      "A": "Safha maliyetinde direkt ilk madde, işçilik ve genel üretim giderleri gibi maliyet unsurlarının hiçbiri bulunmaz",
+      "B": "İki sistem arasında hiçbir fark yoktur; maliyetler her ikisinde de aynı biçimde toplanır",
+      "C": "Safha maliyetinde birim maliyet hesaplanmaz; yalnızca toplam üretim maliyeti raporlanır",
+      "D": "Sipariş maliyeti yalnızca sürekli ve birbirinin benzeri kitle üretim yapan işletmelerde kullanılabilir",
       "E": "Sipariş maliyetinde maliyet siparişe/işe; safha maliyetinde ise üretim aşamalarına (safhalara) göre toplanır"
     },
     "answer": "E",
@@ -181,11 +181,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde birim maliyet hesaplanırken, dönem sonunda tamamlanmamış (yarı mamul) birimlerin dikkate alınması için kullanılan kavram aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Reeskont",
+      "A": "Reeskont (senedi peşine indirme)",
       "B": "Eşdeğer ürün (eşdeğer birim)",
-      "C": "Amortisman",
-      "D": "Karşılık",
-      "E": "İskonto"
+      "C": "Amortisman (yıpranma payı)",
+      "D": "Karşılık (gider tahakkuku)",
+      "E": "İskonto (fiyat indirimi)"
     },
     "answer": "B",
     "solution": "Yarı mamullerin tamamlanma derecesine göre kaç tam birime eşdeğer olduğunu ifade eden kavram **eşdeğer ürün (eşdeğer birim)**dir. Birim maliyet, toplam maliyetin eşdeğer ürün miktarına bölünmesiyle bulunur.",
@@ -203,11 +203,11 @@
     "konu": "safha_maliyeti",
     "stem": "Eşdeğer ürün miktarı (tek tamamlanma derecesi varsayımıyla) nasıl hesaplanır?",
     "options": {
-      "A": "Tamamlanan birimler − yarı mamuller",
-      "B": "Tamamlanan birimler × yarı mamuller",
-      "C": "Yalnızca yarı mamuller",
+      "A": "Tamamlanan birimlerden dönem sonu yarı mamul miktarı düşülerek bulunur",
+      "B": "Tamamlanan birimler ile dönem sonu yarı mamul miktarının çarpımıyla bulunur",
+      "C": "Yalnızca dönem sonu yarı mamullerin tamamlanma derecesi dikkate alınarak bulunur",
       "D": "Tamamlanan birimler + (dönem sonu yarı mamul × tamamlanma derecesi)",
-      "E": "Yarı mamuller ÷ tamamlanma derecesi"
+      "E": "Dönem sonu yarı mamul miktarının tamamlanma derecesine bölünmesiyle bulunur"
     },
     "answer": "D",
     "solution": "Eşdeğer ürün = **Tamamlanan birimler + (Dönem sonu yarı mamul miktarı × Tamamlanma derecesi)**. Örneğin %50 tamamlanmış 2.000 yarı mamul = 1.000 eşdeğer tam birim.",
@@ -335,11 +335,11 @@
     "konu": "safha_maliyeti",
     "stem": "Aşağıdakilerden hangisi safha maliyeti sisteminin bir özelliğidir?",
     "options": {
-      "A": "Her mamulün maliyeti tek tek, birbirinden bağımsız izlenir",
+      "A": "Her mamulün maliyeti, ayrı bir sipariş kartında tek tek ve birbirinden tümüyle bağımsız izlenir",
       "B": "Birbirinin benzeri mamuller için maliyetler safhada toplanıp ortalama birim maliyet bulunur",
-      "C": "Birim maliyet hiç hesaplanmaz",
-      "D": "Yalnızca tek bir birim üretilir",
-      "E": "GÜG hiç oluşmaz"
+      "C": "Toplam maliyet safhada birikse de birim maliyet hiçbir aşamada hesaplanmaz",
+      "D": "Her safhada yalnızca tek bir birim üretilir; kitle halinde çıktı söz konusu değildir",
+      "E": "Üretimde genel üretim gideri hiç oluşmaz; yalnızca direkt malzeme ve işçilik vardır"
     },
     "answer": "B",
     "solution": "Safha maliyetinde mamuller birbirinin benzeri olduğundan maliyetler safhada toplanır ve **ortalama birim maliyet** (toplam ÷ eşdeğer ürün) hesaplanır; sipariş bazlı ayrı izleme yapılmaz.",
@@ -357,11 +357,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde 'tamamlanma derecesi' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Bir siparişin kâr oranı",
-      "B": "Amortisman oranı",
-      "C": "Satılan mamul oranı",
+      "A": "Bir siparişin tahmini satış tutarına göre hesaplanan kâr oranı",
+      "B": "Sabit kıymetlerde dönem içinde ayrılan amortismanın oranı",
+      "C": "Üretilen mamullerin dönem içinde satılan kısmının oranı",
       "D": "Dönem sonu yarı mamullerin ne ölçüde (yüzde) tamamlandığı",
-      "E": "İskonto oranı"
+      "E": "Peşin ödemede müşteriye tanınan nakit iskonto oranı"
     },
     "answer": "D",
     "solution": "**Tamamlanma derecesi**, dönem sonundaki yarı mamullerin üretim açısından **ne ölçüde (yüzde kaç) tamamlandığını** gösterir; eşdeğer ürün hesabında bu oran kullanılır.",
@@ -380,10 +380,10 @@
     "stem": "Genellikle direkt ilk madde ve malzeme (DİMM) safhanın başında topluca verilirken; direkt işçilik ve genel üretim giderleri (dönüştürme maliyeti) üretim süresince eşit yayılır. Bu durumda eşdeğer ürün hesabıyla ilgili doğru ifade hangisidir?",
     "options": {
       "A": "DİMM için yarı mamul genelde %100, dönüştürme için tamamlanma derecesi kadar hesaplandığından eşdeğer ürün miktarları farklı olabilir",
-      "B": "İki maliyet unsuru için de eşdeğer ürün aynıdır",
-      "C": "Eşdeğer ürün hiç hesaplanmaz",
-      "D": "DİMM için eşdeğer ürün her zaman sıfırdır",
-      "E": "Dönüştürme maliyeti eşdeğer ürüne dahil edilmez"
+      "B": "İki maliyet unsuru için de eşdeğer ürün miktarı her koşulda tümüyle aynı çıkar; bu yüzden ayrı ayrı hesap yapmaya hiçbir biçimde gerek kalmaz",
+      "C": "Yarı mamuller söz konusu olsa bile bu üretimde hiçbir maliyet unsuru için eşdeğer ürün hesaplanmaz",
+      "D": "DİMM safha başında verildiğinden yarı mamul için DİMM eşdeğer ürünü her zaman sıfır kabul edilir",
+      "E": "Dönüştürme maliyeti üretim süresine yayıldığından eşdeğer ürün hesabına hiçbir biçimde dahil edilmez"
     },
     "answer": "A",
     "solution": "DİMM safha başında verildiğinden yarı mamuller malzeme yönünden genelde **%100** tamamdır; dönüştürme (DİG+GÜG) ise **tamamlanma derecesi** kadar. Bu nedenle DİMM ve dönüştürme için **eşdeğer ürün miktarları farklı** hesaplanır.",
@@ -555,11 +555,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyetinde dönem toplam maliyetinin, tamamlanan birimler ile dönem sonu yarı mamuller arasında paylaştırılmasıyla ilgili doğru ifade hangisidir?",
     "options": {
-      "A": "Tüm maliyet yalnızca tamamlanan birimlere verilir",
-      "B": "Maliyet paylaştırılmaz",
-      "C": "Tüm maliyet yalnızca yarı mamullere verilir",
+      "A": "Dönem toplam maliyetinin tamamı yalnızca tamamlanan birimlere yüklenir; dönem sonu yarı mamullere hiçbir biçimde herhangi bir pay verilmez",
+      "B": "Toplam maliyet tamamlanan ve yarı mamuller arasında hiç paylaştırılmaz; tek tutar olarak bırakılır",
+      "C": "Dönem toplam maliyetinin tamamı yalnızca dönem sonu yarı mamullere yüklenir; tamamlananlara pay verilmez",
       "D": "Toplam maliyet, tamamlanan birimlerin maliyeti ile dönem sonu yarı mamul maliyetinin toplamına eşit olacak biçimde paylaştırılır",
-      "E": "Maliyet satışlara göre bölünür"
+      "E": "Toplam maliyet, dönemde satılan ve stokta kalan mamul tutarlarına göre satış üzerinden paylaştırılır"
     },
     "answer": "D",
     "solution": "Safha toplam maliyeti; **tamamlanan birimlerin maliyeti + dönem sonu yarı mamul maliyeti** olacak biçimde eşdeğer birim maliyet üzerinden paylaştırılır. İkisinin toplamı safha toplam maliyetine eşittir.",
@@ -599,10 +599,10 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde 'ortalama maliyet yöntemi' ile 'ilk giren ilk çıkar (FIFO) yöntemi' arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Ortalama yöntemde birim maliyet hiç hesaplanmaz",
-      "B": "Ortalama yöntemde eşdeğer ürün kullanılmaz",
-      "C": "İki yöntem tamamen aynıdır",
-      "D": "FIFO yalnızca ticaret işletmesinde kullanılır",
+      "A": "Ortalama yöntemde birim maliyet hiç hesaplanmaz; eşdeğer birim maliyet yalnızca FIFO yönteminde bulunur ve yalnızca dönem sonu yarı mamullere uygulanır",
+      "B": "Ortalama yöntemde eşdeğer ürün kullanılmaz; yarı mamuller doğrudan tamamlanmış birim gibi sayılarak birim maliyet bulunur",
+      "C": "İki yöntem tamamen aynıdır; dönem başı yarı mamulün maliyeti her ikisinde de aynı biçimde işleme alınır",
+      "D": "FIFO yöntemi yalnızca alım-satım yapan ticaret işletmelerinde, ortalama yöntem ise yalnızca sanayi işletmelerinde kullanılır",
       "E": "FIFO yönteminde dönem başı yarı mamullerin maliyeti ile dönem maliyetleri ayrı tutulur; ortalama yöntemde bunlar birleştirilerek ortalama alınır"
     },
     "answer": "E",
@@ -621,11 +621,11 @@
     "konu": "safha_maliyeti",
     "stem": "Direkt ilk madde ve malzemenin safha başında topluca verildiği bir üretimde, dönem sonu yarı mamuller MALZEME (DİMM) yönünden hangi tamamlanma derecesiyle eşdeğer ürüne dahil edilir?",
     "options": {
-      "A": "%0",
+      "A": "%0 (yarı mamule malzeme hiç verilmemiştir)",
       "B": "Genellikle %100 (malzeme tümüyle verilmiştir)",
-      "C": "Her zaman %50",
-      "D": "Dönüştürme derecesiyle aynı",
-      "E": "%25"
+      "C": "Her zaman tam olarak %50 oranında verilir",
+      "D": "Dönüştürme tamamlanma derecesiyle aynı orandadır",
+      "E": "%25 (malzemenin yalnızca çeyreği verilmiştir)"
     },
     "answer": "B",
     "solution": "DİMM safhanın başında topluca verildiğinden, yarı mamuller **malzeme yönünden genellikle %100** tamamlanmış sayılır ve eşdeğer ürüne tam olarak (miktarının %100'ü ile) dahil edilir.",
@@ -798,10 +798,10 @@
     "stem": "Yukarıdaki üretimde toplam maliyet (DİMM 360.000 + dönüştürme 400.000 = 760.000 ₺), tamamlananlara 560.000 ₺, yarı mamullere 200.000 ₺ dağıtılmıştır. Bu dağıtımla ilgili doğru ifade hangisidir?",
     "options": {
       "A": "Dağıtılan toplam (560.000 + 200.000 = 760.000 ₺) safha toplam maliyetine eşittir; dağıtım tutarlıdır",
-      "B": "Dağıtılan toplam, safha toplam maliyetinden fazladır",
-      "C": "Dağıtım hatalıdır, toplam tutmuyor",
-      "D": "Yarı mamullere hiç maliyet verilmemiştir",
-      "E": "Tamamlananlara maliyet verilmemiştir"
+      "B": "Dağıtılan toplam (760.000 ₺) safha toplam maliyetinden fazladır; bu nedenle bir maliyet aşımı doğmuştur",
+      "C": "Dağıtım hatalıdır; tamamlanan ve yarı mamul tutarlarının toplamı safha toplam maliyetini tutturmaz",
+      "D": "Yarı mamullere hiç maliyet verilmemiş, toplamın tümü yalnızca tamamlanan birimlere yüklenmiştir",
+      "E": "Tamamlanan birimlere hiç maliyet verilmemiş, toplamın tümü yalnızca yarı mamullere yüklenmiştir"
     },
     "answer": "A",
     "solution": "Dağıtılan toplam = tamamlananlar 560.000 + yarı mamuller 200.000 = 760.000 ₺ = safha toplam maliyeti. Dağıtım **tutarlıdır** (maliyet korunumu sağlanmıştır).",
@@ -819,11 +819,11 @@
     "konu": "safha_maliyeti",
     "stem": "Bir işletmede üç ayrı üretim safhası (I → II → III) bulunmaktadır. Safha maliyeti sisteminde maliyet akışı nasıl gerçekleşir?",
     "options": {
-      "A": "Her safha bağımsızdır, aralarında aktarım yoktur",
-      "B": "III. safhadan I. safhaya doğru akar",
+      "A": "Her safha birbirinden tümüyle bağımsız işler; safhalar arasında hiçbir biçimde maliyet ya da yarı mamul aktarımı gerçekleşmez",
+      "B": "Maliyet akışı geriye doğrudur; III. safhanın maliyeti II. safhaya, oradan da I. safhaya aktarılır",
       "C": "I. safhanın tamamlanan maliyeti II. safhaya, II. safhanın maliyeti III. safhaya devredilir; son safha çıktısı mamul olur",
-      "D": "Yalnızca son safhada maliyet oluşur",
-      "E": "Maliyetler mamulden safhaya geri döner"
+      "D": "Üretim maliyeti yalnızca son safhada oluşur; önceki safhalarda hiçbir maliyet biriktirilmez",
+      "E": "Tamamlanan mamullerin maliyeti üretimden safhalara geri döner; maliyet mamulden safhaya doğru akar"
     },
     "answer": "C",
     "solution": "Maliyet akışı ileriye doğrudur: **I. safhanın tamamlanan birim maliyeti II. safhaya**, II. safhanınki III. safhaya devredilir (devreden maliyet). Son safhanın çıktısı bitmiş mamul olarak 152 MAMULLER'e aktarılır.",
@@ -951,11 +951,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde 'fire (kayıp)' aşağıdakilerden hangisini ifade eder?",
     "options": {
-      "A": "Satış iadesi",
+      "A": "Satılan mamulün ayıplı çıkması nedeniyle müşteri tarafından işletmeye geri gönderilmesi durumu (satış iadesi)",
       "B": "Üretim sürecinde buharlaşma, kırılma, kesinti gibi nedenlerle miktarda meydana gelen azalma (üretim kaybı)",
-      "C": "Amortisman gideri",
-      "D": "Kâr payı",
-      "E": "Vergi indirimi"
+      "C": "Duran varlıkların yıpranma payının dönem üretim maliyetine yüklenen kısmı (amortisman gideri)",
+      "D": "Dönem sonunda dağıtılmak üzere ortaklara ayrılan kâr payının üretim maliyetine eklenen tutarı",
+      "E": "Devlete ödenen dolaylı vergilerin üretilen mamulün maliyetinden indirilen kısmı (vergi indirimi)"
     },
     "answer": "B",
     "solution": "**Fire (kayıp)**, üretim sürecinde buharlaşma, kırılma, kesinti, kuruma gibi nedenlerle üretim miktarında meydana gelen azalmadır. Normal fire maliyete yüklenir; anormal fire ise dönem gideri/zararı olarak ayrılabilir.",
@@ -973,10 +973,10 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde 'normal fire' ile 'anormal fire' arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İkisi de mamule yüklenir",
-      "B": "İkisi arasında fark yoktur",
-      "C": "İkisi de dönem gideridir",
-      "D": "Anormal fire mamul maliyetine, normal fire zarara yazılır",
+      "A": "Normal fire de anormal fire de kalan sağlam mamullerin maliyetine yüklenir; ikisi arasında herhangi bir işlem ya da kayıt farkı bulunmaz ve tümü sağlam mamule biner",
+      "B": "Normal fire ile anormal fire arasında hiçbir fark yoktur; her ikisi de aynı biçimde doğrudan mamul maliyetine dahil edilir ve stok değerini artırır",
+      "C": "Normal fire de anormal fire de doğrudan dönem gideri/zararı olarak yazılır; hiçbiri kalan sağlam mamulün maliyetine yüklenmez",
+      "D": "Anormal fire kalan sağlam mamulün maliyetine yüklenir; normal fire ise beklenmedik sayılıp dönem zararı olarak ayrılır",
       "E": "Normal fire üretimin doğası gereği kaçınılmazdır ve mamul maliyetine yüklenir; anormal fire beklenenin üzerindedir ve genellikle dönem gideri/zararı yazılır"
     },
     "answer": "E",
@@ -1039,11 +1039,11 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyeti sisteminde birden fazla mamulün aynı süreçten çıkması durumunda (ortak/birleşik maliyet), maliyetlerin mamullere dağıtımında kullanılabilen bir yöntem aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Reeskont yöntemi",
-      "B": "Amortisman yöntemi",
+      "A": "Alacak senetlerinin dönem sonunda peşin değerine indirgendiği reeskont (tenzil) yöntemi",
+      "B": "Duran varlığın yıpranma payını süreye yayan amortisman ayırma yöntemi",
       "C": "Satış değeri (piyasa fiyatı) esaslı dağıtım veya fiziki ölçü (miktar) esaslı dağıtım",
-      "D": "Değerleme günü kuru",
-      "E": "Vergi matrahı yöntemi"
+      "D": "Yabancı para tutarların dönem sonunda değerlendiği değerleme günü kuru yöntemi",
+      "E": "Kurum kazancının üzerinden verginin hesaplandığı matrah belirleme yöntemi"
     },
     "answer": "C",
     "solution": "Birleşik (ortak) üründe ayrım noktasına kadarki maliyetler mamullere; **satış değeri (piyasa fiyatı) esaslı** ya da **fiziki ölçü (miktar/ağırlık) esaslı** yöntemlerle dağıtılabilir.",
@@ -1062,10 +1062,10 @@
     "stem": "Safha maliyeti sisteminde 'yan ürün (yan mamul)' ile 'ana ürün' arasındaki fark aşağıdakilerden hangisidir?",
     "options": {
       "A": "Ana ürün üretimin temel amacı ve yüksek değerli olandır; yan ürün ise üretim sırasında ortaya çıkan, göreli olarak düşük değerli üründür",
-      "B": "Yan ürün ana üründen daha değerlidir",
-      "C": "İkisi de aynı değerdedir",
-      "D": "Yan ürün hiç satılamaz",
-      "E": "Ana ürün maliyetsizdir"
+      "B": "Yan ürün ana üründen daha yüksek değerlidir ve üretimin asıl amacını oluşturan çıktıdır; ana ürün ise onun yanında ikincil olarak elde edilir",
+      "C": "Ana ürün ile yan ürün her zaman aynı değerdedir; ikisi arasında değer ya da amaç bakımından hiçbir ayrım yapılmaz",
+      "D": "Yan ürün hiçbir koşulda satılamaz; yalnızca ana ürün satışa konu olur ve üretimin tüm maliyetini tek başına üstlenir",
+      "E": "Ana ürün maliyetsiz olarak elde edilir; üretimin tüm maliyeti yalnızca yan ürüne yüklenir ve ondan izlenir"
     },
     "answer": "A",
     "solution": "**Ana ürün** üretimin temel amacı ve yüksek değerli olandır; **yan ürün** üretim sırasında kaçınılmaz biçimde ortaya çıkan, göreli olarak **düşük değerli** üründür. Yan ürünün net değeri genellikle ana ürün maliyetinden düşülür.",
@@ -1193,10 +1193,10 @@
     "konu": "safha_maliyeti",
     "stem": "Aşağıdakilerden hangisi safha maliyeti sisteminin bir üstünlüğüdür?",
     "options": {
-      "A": "Her mamule ait ayrıntılı maliyet kartı tutma zorunluluğu",
-      "B": "GÜG'ün hiç oluşmaması",
-      "C": "Birim maliyetin hiç hesaplanamaması",
-      "D": "Yalnızca tek bir birim üretilebilmesi",
+      "A": "Üretilen her bir mamul için ayrıntılı bir maliyet kartının tek tek ve birbirinden ayrı olarak tutulmasının zorunlu olması",
+      "B": "Üretim sürecinde genel üretim giderinin hiç oluşmaması; yalnızca direkt maliyetlerin doğması",
+      "C": "Mamullerin benzer olması nedeniyle birim maliyetin hiçbir aşamada hesaplanamaması",
+      "D": "Her üretim safhasında yalnızca tek bir birimin üretilebilmesi; kitle üretime elverişsiz olması",
       "E": "Birbirinin benzeri kitle üretimde maliyet takibinin sipariş sistemine göre daha basit ve az maliyetli olması"
     },
     "answer": "E",

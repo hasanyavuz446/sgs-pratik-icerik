@@ -115,11 +115,11 @@
     "konu": "stoklar",
     "stem": "Birim alış fiyatlarının sürekli yükseldiği (enflasyonist) bir dönemde, FIFO yöntemi tartılı ortalama yöntemine kıyasla dönem sonuçlarını nasıl etkiler?",
     "options": {
-      "A": "Daha yüksek satılan malın maliyeti, daha düşük dönem kârı",
+      "A": "Daha yüksek satılan malın maliyeti, daha düşük dönem kârı ve daha düşük dönem sonu stok değeri",
       "B": "Daha düşük satılan malın maliyeti, daha yüksek dönem kârı ve daha yüksek dönem sonu stok değeri",
-      "C": "Maliyet ve kâr her iki yöntemde de aynı çıkar",
-      "D": "Daha düşük dönem sonu stok değeri",
-      "E": "Dönem kârını etkilemez, yalnızca KDV'yi değiştirir"
+      "C": "Satılan malın maliyeti, dönem kârı ve dönem sonu stok değeri her iki yöntemde de tamamen aynı çıkar",
+      "D": "Daha yüksek satılan malın maliyeti ile birlikte daha düşük dönem sonu stok değeri ortaya çıkar",
+      "E": "Dönem kârını ve stok değerini hiç etkilemez; yalnızca hesaplanan KDV tutarını değiştirir"
     },
     "answer": "B",
     "solution": "Fiyatlar yükselirken FIFO'da satılan mallar **eski (ucuz)** birimlerden oluşur → **daha düşük SMM, daha yüksek kâr**; dönem sonu stok ise **yeni (pahalı)** birimlerden oluşur → **daha yüksek stok değeri**. Örnekte FIFO SMM 7.600 < ortalama 7.840'tır.",
@@ -225,11 +225,11 @@
     "konu": "stoklar",
     "stem": "TMS 2 Stoklar Standardı'na göre stoklar mali tablolarda hangi değerle gösterilir?",
     "options": {
-      "A": "Her zaman maliyet bedeliyle",
-      "B": "Her zaman net gerçekleşebilir değerle",
+      "A": "Yalnızca güncel maliyet bedeli ile, değer düşüklüğüne bakılmadan",
+      "B": "Her zaman net gerçekleşebilir değerle, maliyet bedeline bakılmadan",
       "C": "Maliyet bedeli ile net gerçekleşebilir değerden düşük olanı ile",
-      "D": "Her zaman güncel satış fiyatıyla",
-      "E": "Yeniden değerlenmiş tutarla"
+      "D": "Her zaman güncel piyasa satış fiyatı ile, satış gideri düşülmeden",
+      "E": "Yeniden değerlenmiş tutar ile, maliyetin üzerine çıkacak biçimde"
     },
     "answer": "C",
     "solution": "TMS 2'ye göre stoklar, **maliyet ile net gerçekleşebilir değerden (NGD) düşük olanı** ile değerlenir. NGD, tahmini satış fiyatından tamamlanma ve satış giderleri düşüldükten sonra kalan tutardır.",
@@ -335,10 +335,10 @@
     "konu": "stoklar",
     "stem": "Aralıklı envanter yöntemini kullanan işletme dönem içi alışlarını '153 Ticari Mallar' hesabının borcunda izlemektedir. Dönem sonunda satılan malın maliyetini belirlemek için yapılan işlem aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Her satışta 621 hesabı borçlandırılır.",
-      "B": "Dönem sonu mevcut, maliyet yerine satış fiyatıyla değerlenir.",
-      "C": "153 hesabı hiç kullanılmaz, tüm alışlar doğrudan gider yazılır.",
-      "D": "Satılan malın maliyeti '600 Yurt İçi Satışlar' hesabından düşülür.",
+      "A": "Dönem içinde her satış anında satılan malın maliyeti '621 Satılan Ticari Malların Maliyeti (B) / 153 (A)' kaydıyla ayrı ayrı işlenir.",
+      "B": "Dönem sonu mevcut, maliyet bedeliyle değil güncel satış fiyatıyla değerlenir ve aradaki fark doğrudan gelir olarak yazılır.",
+      "C": "'153 Ticari Mallar' hesabı dönem içinde hiç kullanılmaz; yapılan tüm alışlar doğrudan gider olarak sonuç hesaplarına yazılır.",
+      "D": "Satılan malın maliyeti hesaplanmaz; tutar doğrudan '600 Yurt İçi Satışlar' hesabından indirilerek dönem sonucuna aktarılır.",
       "E": "Dönem sonu fiilî sayımla belirlenen mevcut esas alınarak satılan malın maliyeti hesaplanır ve '621 (B) / 153 (A)' kaydı yapılır."
     },
     "answer": "E",
@@ -357,11 +357,11 @@
     "konu": "stoklar",
     "stem": "Stok maliyet akış yöntemlerinden 'hareketli ağırlıklı ortalama' yöntemi için aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnızca dönem sonunda tek bir ortalama maliyet hesaplanır.",
-      "B": "Son giren ilk çıkar mantığıyla çalışır.",
-      "C": "İlk giren ilk çıkar mantığıyla çalışır.",
+      "A": "Dönem içinde satışlar maliyetlendirilmez; yalnızca dönem sonunda tek bir ortalama birim maliyet hesaplanarak uygulanır.",
+      "B": "En son giren birimler ilk çıkmış varsayılır ve satışlar en yeni alış fiyatları üzerinden maliyetlendirilir.",
+      "C": "İlk giren birimler ilk çıkmış varsayılır ve satışlar en eski alış fiyatları üzerinden maliyetlendirilir.",
       "D": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir.",
-      "E": "Stok miktarını dikkate almadan basit ortalama alır."
+      "E": "Stoktaki miktar dikkate alınmadan alış fiyatlarının basit aritmetik ortalaması alınarak maliyet bulunur."
     },
     "answer": "D",
     "solution": "**Hareketli ağırlıklı ortalama**, her yeni alıştan sonra eldeki stokun toplam maliyetini toplam miktara bölerek ortalamayı **günceller**; satışlar o anki güncel ortalama ile maliyetlendirilir. Dönem sonunda tek ortalama hesaplayan yöntem ise 'tartılı (dönem sonu) ortalama'dır.",
@@ -380,10 +380,10 @@
     "stem": "Sürekli envanter yönteminde dönem sonunda '153 Ticari Mallar' hesabının kaydi kalanı ile fiilî sayım sonucu birbirine eşitse, bu durumla ilgili aşağıdakilerden hangisi söylenebilir?",
     "options": {
       "A": "Sayım noksanı/fazlası kaydı (197 veya 397) yapılmasına gerek yoktur.",
-      "B": "Mutlaka stok değer düşüklüğü karşılığı ayrılmalıdır.",
-      "C": "621 hesabı ters kayıtla kapatılmalıdır.",
-      "D": "Dönem içindeki tüm satış kayıtları hatalıdır.",
-      "E": "Ticari mallar bilançoda satış fiyatıyla gösterilir."
+      "B": "Aradaki farka bakılmaksızın mutlaka stok değer düşüklüğü karşılığı ayrılır.",
+      "C": "'621 Satılan Ticari Malların Maliyeti' hesabı ters kayıtla kapatılmalıdır.",
+      "D": "Dönem içinde yapılan tüm satış kayıtlarının hatalı olduğu kabul edilir.",
+      "E": "Ticari mallar bilançoda maliyet yerine güncel satış fiyatıyla gösterilir."
     },
     "answer": "A",
     "solution": "Kaydi kalan ile fiilî mevcut eşitse stok farkı yoktur; bu nedenle **sayım noksanı (197) veya fazlası (397) kaydına gerek yoktur**. Değer düşüklüğü ise ayrı bir değerleme konusudur ve yalnızca NGD maliyetin altındaysa gündeme gelir.",
@@ -533,10 +533,10 @@
     "konu": "stoklar",
     "stem": "Üretim/stok sürecinde ortaya çıkan normal (kaçınılmaz) fire ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Doğrudan dönemin olağandışı gideri yazılır.",
-      "B": "Hiçbir muhasebe etkisi doğurmaz.",
-      "C": "Stok değer düşüklüğü karşılığı ile izlenir.",
-      "D": "Satıştan iade olarak kaydedilir.",
+      "A": "Doğrudan dönemin olağandışı gideri olarak '689 Diğer Olağandışı Gider' hesabında sonuca yazılır.",
+      "B": "Hiçbir muhasebe etkisi doğurmaz; miktar ve maliyet kayıtlarında herhangi bir değişiklik yapılmaz.",
+      "C": "Stok değer düşüklüğü karşılığı ('158' hesabı) ayrılarak dönem gideri olarak sonuca yazılır.",
+      "D": "Satıştan iade işlemi gibi kaydedilir ve ilgili hasılat '610 Satıştan İadeler' hesabında düzeltilir.",
       "E": "Kalan sağlam birimlerin birim maliyetini yükseltir; ayrıca stok maliyetinden çıkarılmaz."
     },
     "answer": "E",
@@ -555,11 +555,11 @@
     "konu": "stoklar",
     "stem": "İşletmenin deposunda çıkan yangın sonucu, sigortasız olan 30.000 ₺ maliyetli ticari mal tamamen kullanılamaz hâle gelmiştir. Bu anormal zayi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Kalan stokların maliyetine dağıtılır.",
+      "A": "Kalan sağlam stokların birim maliyetine dağıtılır ve ayrıca sonuç hesaplarına yansıtılmaz.",
       "B": "Olağandışı gider/zarar (ör. 689) olarak sonuç hesaplarına yansıtılır ve stok azaltılır.",
-      "C": "Stok değer düşüklüğü karşılığı ayrılır, stok çıkışı yapılmaz.",
-      "D": "Satılan malın maliyetine eklenir.",
-      "E": "Dönem kârına eklenir."
+      "C": "Stok değer düşüklüğü karşılığı ayrılır; ilgili malın stok çıkışı ise hiç yapılmaz.",
+      "D": "Zayi olan malın maliyeti dönemin satılan malın maliyetine eklenerek sonuca aktarılır.",
+      "E": "Herhangi bir gider yazılmadan doğrudan dönem kârına eklenerek kapatılır."
     },
     "answer": "B",
     "solution": "Yangın gibi **anormal (olağandışı) zayi**, faaliyetin normal sonucu değildir; kalan stoka dağıtılmaz. İlgili stok çıkarılır ve tutar **olağandışı gider/zarar** olarak (ör. 689) sonuç hesaplarına yansıtılır (sigorta varsa tazminat ayrıca dikkate alınır).",
@@ -798,10 +798,10 @@
     "stem": "Bir üretim işletmesinin ambardan üretime ilk madde ve malzeme sevk etmesi (7/A seçeneğinde) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "150 İlk Madde ve Malzeme hesabı alacaklandırılır; ilgili gider/maliyet hesabı borçlandırılır.",
-      "B": "150 İlk Madde ve Malzeme hesabı borçlandırılır.",
-      "C": "153 Ticari Mallar hesabı borçlandırılır.",
-      "D": "600 Yurt İçi Satışlar hesabı alacaklandırılır.",
-      "E": "Hiçbir kayıt yapılmaz."
+      "B": "150 İlk Madde ve Malzeme hesabı borçlandırılır; ilgili gider/maliyet hesabı alacaklandırılır.",
+      "C": "153 Ticari Mallar hesabı borçlandırılır; 150 İlk Madde ve Malzeme hesabı alacaklandırılır.",
+      "D": "600 Yurt İçi Satışlar hesabı alacaklandırılır; 150 İlk Madde ve Malzeme hesabı borçlandırılır.",
+      "E": "Sevk yalnızca miktar olarak izlenir; bu aşamada herhangi bir yevmiye kaydı yapılmaz."
     },
     "answer": "A",
     "solution": "Malzeme üretime verildiğinde stoktan çıkar: **150 İlk Madde ve Malzeme alacaklandırılır**; tutar ilgili maliyet/gider hesabına (ör. 710 Direkt İlk Madde ve Malzeme Giderleri) borç yazılır. Böylece hammadde maliyetlere aktarılır.",
@@ -819,11 +819,11 @@
     "konu": "stoklar",
     "stem": "İşletmenin satmak üzere başka bir işletmeden konsinye (satılmak üzere) olarak teslim aldığı mallarla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Teslim alan işletmenin 153 Ticari Mallar hesabında izlenir.",
-      "B": "Malı gönderen işletmenin stoklarından çıkarılır.",
-      "C": "Teslim alan işletmenin satışları arasında brüt olarak gösterilir.",
+      "A": "Teslim alındığı anda mülkiyet geçtiği için teslim alan işletmenin '153 Ticari Mallar' hesabında maliyet bedeliyle izlenir.",
+      "B": "Teslim alınmasıyla birlikte malı gönderen işletmenin stoklarından çıkarılıp doğrudan gider olarak yazılır.",
+      "C": "Satıldığında bedelin tamamı teslim alan işletmenin satış hasılatı içinde brüt tutarla gösterilir.",
       "D": "Mülkiyet devredilmediğinden teslim alan işletmenin stoklarına dâhil edilmez; satılınca komisyon geliri elde edilir.",
-      "E": "Her iki işletmenin stoklarında birlikte gösterilir."
+      "E": "Aynı mal hem gönderen hem de teslim alan işletmenin stoklarında birlikte ayrı ayrı gösterilir."
     },
     "answer": "D",
     "solution": "Konsinye malın **mülkiyeti** satılana kadar gönderendedir; teslim alan (konsinyi) işletme bu malı **kendi stoğuna almaz**, nazım hesaplarda izler ve sattığında yalnızca **komisyon geliri** elde eder.",
@@ -863,11 +863,11 @@
     "konu": "stoklar",
     "stem": "Aşağıdakilerden hangisi '157 Diğer Stoklar' hesabında izlenmeye en uygun kalemdir?",
     "options": {
-      "A": "Satışa hazır ticari mallar",
-      "B": "Üretimde kullanılacak ana hammadde",
+      "A": "Satışa hazır hâldeki ticari mallar ve mamuller",
+      "B": "Üretimde doğrudan kullanılacak ana hammadde ve malzeme",
       "C": "Üretim artığı, hurda ve ıskarta niteliğindeki maddeler",
-      "D": "Üretimi tamamlanmış mamuller",
-      "E": "Henüz tamamlanmamış yarı mamuller"
+      "D": "Üretimi tamamlanıp satışa hazır hâle gelmiş mamuller",
+      "E": "Üretimi henüz tamamlanmamış yarı mamul niteliğindeki ürünler"
     },
     "answer": "C",
     "solution": "**157 Diğer Stoklar**, 150-153 arasındaki hesapların kapsamına girmeyen; üretim artığı, hurda, ıskarta, deşe gibi maddeleri izler. Diğer şıklar ilgili özel stok hesaplarında (150/151/152/153) izlenir.",
@@ -1039,11 +1039,11 @@
     "konu": "stoklar",
     "stem": "Stok maliyet akış yöntemleriyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "TMS 2, son giren ilk çıkar (LIFO) yönteminin kullanılmasına izin verir.",
+      "A": "TMS 2, son giren ilk çıkar (LIFO) yönteminin bütün işletmelerce serbestçe kullanılmasına açıkça izin verir.",
       "B": "TMS 2, son giren ilk çıkar (LIFO) yöntemini kabul etmez; FIFO veya ağırlıklı ortalama kullanılabilir.",
-      "C": "TMS 2 yalnızca LIFO yöntemine izin verir.",
-      "D": "TMS 2 hiçbir maliyet akış varsayımına izin vermez.",
-      "E": "FIFO yöntemi TMS 2 tarafından yasaklanmıştır."
+      "C": "TMS 2 yalnızca son giren ilk çıkar (LIFO) yöntemine izin verir; diğer bütün yöntemleri yasaklamıştır.",
+      "D": "TMS 2 hiçbir maliyet akış varsayımına izin vermez; stoklar yalnızca gerçek parti maliyetiyle ölçülür.",
+      "E": "İlk giren ilk çıkar (FIFO) yöntemi, TMS 2 tarafından açıkça yasaklanmış bir maliyet yöntemidir."
     },
     "answer": "B",
     "solution": "**TMS 2, LIFO (son giren ilk çıkar) yöntemini kabul etmez.** Benzer nitelikli stoklar için **FIFO** veya **ağırlıklı ortalama** yöntemi kullanılabilir ve seçilen yöntem tutarlı biçimde uygulanır.",
@@ -1193,11 +1193,11 @@
     "konu": "stoklar",
     "stem": "TMS 2'ye göre, sonuçları gerçek maliyete yakın olması koşuluyla stok maliyetinin ölçümünde kolaylık sağlamak için kullanılabilecek yöntemler aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Son giren ilk çıkar (LIFO) yöntemi",
+      "A": "Son giren ilk çıkar (LIFO) maliyet yöntemi",
       "B": "Standart maliyet yöntemi ve perakende yöntemi",
-      "C": "Tasfiye değeri yöntemi",
-      "D": "Emsal bedel yöntemi",
-      "E": "İtibari değer yöntemi"
+      "C": "Tasfiye değeri ve net defter değeri yöntemi",
+      "D": "Emsal bedel ve itibari değer yöntemi",
+      "E": "Yeniden değerleme ve gerçeğe uygun değer yöntemi"
     },
     "answer": "B",
     "solution": "TMS 2, sonuçları gerçek maliyete yakınsa kolaylık amacıyla **standart maliyet** ve **perakende (perakende satış fiyatından geriye gidiş)** yöntemlerinin kullanılabileceğini belirtir. LIFO kabul edilmez.",

@@ -5,11 +5,11 @@
     "konu": "hazir_degerler",
     "stem": "Tekdüzen Hesap Planı'nda '10 Hazır Değerler' grubu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Duran varlıklar içinde yer alır.",
-      "B": "Yalnızca banka kredilerini izler.",
+      "A": "Duran varlıklar grubunda yer alır ve bilançoda maddi duran varlıklardan hemen sonra, aktifin en alt sıralarında likiditesi en düşük kalemler olarak raporlanır.",
+      "B": "Yalnızca işletmenin kullandığı kısa ve uzun vadeli banka kredilerini izleyen bir kaynak (pasif) grubudur.",
       "C": "İşletmenin en likit varlıklarını (nakit ve nakde kolayca dönüşebilen değerleri) kapsar ve bilançoda dönen varlıkların başında yer alır.",
-      "D": "Kaynak (pasif) niteliğindedir.",
-      "E": "Yalnızca yabancı para mevcudunu gösterir."
+      "D": "Bir gelir tablosu grubu olup dönem içinde elde edilen faiz ve kambiyo gelirlerinin toplandığı hesapları gösterir.",
+      "E": "Yalnızca kasadaki yabancı para mevcudunu izler; Türk Lirası nakit ile banka mevduatını bu grup kapsamaz."
     },
     "answer": "C",
     "solution": "**Hazır Değerler**, nakit ve istendiğinde değer kaybı olmadan paraya çevrilebilecek varlıkları (kasa, banka, alınan çekler vb.) kapsar; bilançoda **dönen varlıkların en başında**, en likit kalemler olarak yer alır.",
@@ -93,11 +93,11 @@
     "konu": "hazir_degerler",
     "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 102 BANKALAR | 10.000 | |\n| 101 ALINAN ÇEKLER | | 10.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Müşteriden çek alınması",
-      "B": "İşletmenin satıcısına çek vermesi",
-      "C": "Bankadan kredi kullanılması",
+      "A": "Bir mal satışı karşılığında müşteriden çek alınması işleminin kaydı",
+      "B": "İşletmenin satıcısına olan borcuna karşılık kendi çekini düzenleyip vermesi",
+      "C": "İşletmenin bankadan kısa vadeli nakit kredi kullanması işlemi",
       "D": "Daha önce alınan çekin bankada tahsil edilmesi",
-      "E": "Kasadan bankaya para yatırılması"
+      "E": "İşletmenin kasasındaki nakdin bankadaki mevduat hesabına yatırılması"
     },
     "answer": "D",
     "solution": "Banka mevduatının artması (102 borç) ve elde tutulan çek varlığının azalması (101 alacak), daha önce **alınan çekin bankada tahsil edilmesi**ni gösterir. Çek alınırken 101 borçlanırdı; tahsilde ters yönde kapanır.",
@@ -116,10 +116,10 @@
     "stem": "İşletme, satıcısına olan borcunu ödemek için kendi çekini düzenleyip vermiştir. Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "103 Verilen Çekler ve Ödeme Emirleri (-) hesabı alacaklandırılır.",
-      "B": "101 Alınan Çekler hesabı alacaklandırılır.",
-      "C": "100 Kasa hesabı alacaklandırılır.",
-      "D": "102 Bankalar hesabı doğrudan alacaklandırılır.",
-      "E": "320 Satıcılar hesabı alacaklandırılır."
+      "B": "Müşteriden alınmış bir çek gibi 101 Alınan Çekler hesabı borç yerine alacaklandırılır.",
+      "C": "Çek verildiği anda nakit çıkışı olduğundan 100 Kasa hesabı doğrudan alacaklandırılır.",
+      "D": "Bedel banka hesabından hemen düşeceği için 102 Bankalar hesabı doğrudan alacaklandırılır.",
+      "E": "Borç ödenmeyip arttığından karşı taraf olarak 320 Satıcılar hesabı alacaklandırılır."
     },
     "answer": "A",
     "solution": "İşletmenin düzenleyip verdiği çekler **103 Verilen Çekler ve Ödeme Emirleri (-)** hesabında izlenir. Çek verildiğinde: 320 Satıcılar (B) / **103 (A)**. Çek bankadan ödendiğinde 103 borçlanır, 102 Bankalar alacaklanır.",
@@ -137,11 +137,11 @@
     "konu": "hazir_degerler",
     "stem": "'103 Verilen Çekler ve Ödeme Emirleri (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Bir kaynak (pasif) hesabıdır.",
-      "B": "Bir gelir hesabıdır.",
+      "A": "Bilançonun pasifinde yer alan bir kaynak (borç) hesabıdır; borç kalanı verir ve kısa vadeli yabancı kaynaklar içinde gösterilir.",
+      "B": "Dönem içinde ödenen çek tutarlarını izleyen bir gider hesabıdır; borç kalanı verir ve gelir tablosuna aktarılır.",
       "C": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve bilançoda hazır değerlerden (-) düşülür.",
-      "D": "Bir maliyet hesabıdır.",
-      "E": "Nazım hesaptır."
+      "D": "Üretilen mamullere yüklenen çek ödemelerini toplayan bir maliyet hesabıdır; borç kalanı verir ve stok maliyetine eklenir.",
+      "E": "Bilanço ve gelir tablosu dışında sadece nazım hesaplarda izlenen ve mizanda yer almayan bir hesaptır."
     },
     "answer": "C",
     "solution": "103, dönen varlıklar içinde yer alan **aktifi düzenleyici** bir hesaptır; **alacak kalanı** verir ve bilançoda hazır değerler tutarından **eksi (-)** gösterilir; henüz bankadan ödenmemiş çek tutarını temsil eder.",
@@ -225,11 +225,11 @@
     "konu": "hazir_degerler",
     "stem": "Vergi Usul Kanunu'na göre değerleme ölçüleri ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
     "options": {
-      "A": "Kasadaki Türk Lirası → borsa rayici",
+      "A": "Kasadaki Türk Lirası → borsa rayici; kasadaki yabancı paralar → itibari (nominal) değer ile değerlenir",
       "B": "Kasadaki Türk Lirası → itibari (nominal) değer; yabancı paralar → borsa rayici/Maliye Bakanlığı kuru",
-      "C": "Kasadaki yabancı paralar → itibari (nominal) değer",
-      "D": "Kasadaki Türk Lirası → maliyet bedeli; yabancı paralar → emsal bedel",
-      "E": "Kasadaki yabancı paralar → tasfiye değeri"
+      "C": "Kasadaki yabancı paralar → itibari (nominal) değer; Türk Lirası kasa mevcudu → borsa rayici ile değerlenir",
+      "D": "Kasadaki Türk Lirası → maliyet bedeli; kasadaki yabancı paralar → emsal bedel ile değerlenir",
+      "E": "Kasadaki yabancı paralar → tasfiye değeri; Türk Lirası kasa mevcudu → rayiç bedel ile değerlenir"
     },
     "answer": "B",
     "solution": "VUK'a göre Türk Lirası kasa mevcudu **itibari (nominal) değer** (md. 284) ile; yabancı paralar **borsa rayici**, yoksa **Maliye Bakanlığı'nca tespit edilen kur** (md. 280) ile değerlenir.",
@@ -269,11 +269,11 @@
     "konu": "hazir_degerler",
     "stem": "Aşağıdakilerden hangisi '108 Diğer Hazır Değerler' hesabında izlenmeye en uygun kalemdir?",
     "options": {
-      "A": "İşletmenin kasasındaki nakit TL",
-      "B": "Ortaklardan alacaklar",
-      "C": "Satıcılara olan borçlar",
+      "A": "İşletmenin kasasında bulunan ve 100 Kasa hesabında izlenen nakit Türk Lirası mevcudu",
+      "B": "Ortaklardan olan ve 131 Ortaklardan Alacaklar hesabında izlenen ticari olmayan alacaklar",
+      "C": "Satıcılara olan ve 320 Satıcılar hesabında izlenen kısa vadeli ticari borçlar",
       "D": "Vadesi gelmiş kuponlar ile bankaca tahsil için gönderilmiş posta/banka havaleleri",
-      "E": "Stoktaki ticari mallar"
+      "E": "Satılmak üzere depoda bekleyen ve 153 Ticari Mallar hesabında izlenen stoklar"
     },
     "answer": "D",
     "solution": "**108 Diğer Hazır Değerler**, niteliği itibarıyla hazır değer sayılan ancak 100-103 hesaplarına girmeyen kalemleri (vadesi gelmiş kuponlar, tahsile gönderilen havaleler vb.) izler.",
@@ -379,11 +379,11 @@
     "konu": "hazir_degerler",
     "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 335 PERSONELE BORÇLAR | 12.000 | |\n| 100 KASA | | 12.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Personele tahakkuk eden ücretin gider yazılması",
+      "A": "Dönem içinde personele ait ücretin gider olarak tahakkuk ettirilmesi işleminin kaydı",
       "B": "Daha önce tahakkuk ettirilmiş net ücretin personele nakden ödenmesi",
-      "C": "Personelden alacak doğması",
-      "D": "Kasaya nakit girişi",
-      "E": "Personel için sigorta priminin tahakkuku"
+      "C": "Personele iş avansı verilerek işletmenin ondan alacaklı duruma gelmesi kaydı",
+      "D": "Bir tahsilat sonucu işletmenin kasasına nakit para girişi olması işlemi",
+      "E": "Personel ücretlerine ilişkin sigorta priminin işveren payının tahakkuk ettirilmesi"
     },
     "answer": "B",
     "solution": "Kasadan nakit çıkışı (100 alacak) ve personele olan borcun azalması (335 borç), daha önce tahakkuk ettirilmiş **net ücretin personele nakden ödenmesi**ni gösterir. Gider tahakkuku önceden yapıldığından burada gider hesabı çalışmaz.",
@@ -402,10 +402,10 @@
     "stem": "Bilançoda hazır değerler grubu içindeki hesapların dizilişinde esas alınan ölçüt aşağıdakilerden hangisidir?",
     "options": {
       "A": "Likidite (paraya çevrilebilme hızı)",
-      "B": "Tutarların büyüklüğü",
-      "C": "Alfabetik sıra",
-      "D": "Vergi oranı",
-      "E": "İşlem tarihi"
+      "B": "Hesaplardaki tutarların büyükten küçüğe doğru parasal büyüklüğü",
+      "C": "Hesap adlarının baş harfine göre alfabetik sıralama esası",
+      "D": "Kalemlere uygulanan katma değer vergisi oranının yüksekliği",
+      "E": "Hesaba ilk kaydın yapıldığı işlem tarihinin eskiden yeniye sırası"
     },
     "answer": "A",
     "solution": "Bilanço aktifi genel olarak **likidite** (nakde dönüşme hızı) esasına göre sıralanır; en likit grup olan hazır değerler en üstte, grup içinde de nakde en yakın kalemler (kasa, bankalar) önce gösterilir.",
@@ -578,10 +578,10 @@
     "stem": "Kasa sayımında belirlenen 6.000 ₺'lik fazlalığın, kaydı unutulmuş peşin bir mal satışından (KDV dâhil) kaynaklandığı anlaşılmıştır (KDV %20). '397 Sayım ve Tesellüm Fazlaları'nda izlenen tutarın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
       "A": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
-      "B": "600 Yurt İçi Satışlar (B) 6.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
-      "C": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 679 Diğer Olağandışı Gelir (A) 6.000",
-      "D": "100 Kasa (B) 6.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
-      "E": "397 Sayım ve Tesellüm Fazlaları (B) 5.000 / 600 Yurt İçi Satışlar (A) 5.000"
+      "B": "600 Yurt İçi Satışlar (B) 5.000 + 391 Hesaplanan KDV (B) 1.000 / 397 Sayım ve Tesellüm Fazlaları (A) 6.000",
+      "C": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 679 Diğer Olağandışı Gelir ve Kârlar (A) 6.000",
+      "D": "191 İndirilecek KDV (B) 1.000 / 600 Yurt İçi Satışlar (A) 1.000 (yalnızca KDV kısmı düzeltilir)",
+      "E": "397 Sayım ve Tesellüm Fazlaları (B) 6.000 / 600 Yurt İçi Satışlar (A) 6.000 (KDV ayrıştırılmaz)"
     },
     "answer": "A",
     "solution": "Fazlalığın nedeni kaydı unutulan satıştır (6.000 = 5.000 satış + 1.000 KDV). Geçici hesap kapatılır: **397 (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000**.",
@@ -621,10 +621,10 @@
     "konu": "hazir_degerler",
     "stem": "Perakende satış yapan işletme, gün sonunda ödeme kaydedici cihaz (yazar kasa) raporuna göre 5.000 ₺ + %20 KDV tutarında nakit hasılat elde etmiştir. Bu günlük hasılatın kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 6.000 / 649 Diğer Olağan Gelir (A) 6.000",
-      "B": "100 Kasa (B) 5.000 / 600 Yurt İçi Satışlar (A) 5.000",
-      "C": "600 Yurt İçi Satışlar (B) 6.000 / 100 Kasa (A) 6.000",
-      "D": "102 Bankalar (B) 6.000 / 600 Yurt İçi Satışlar (A) 6.000",
+      "A": "100 Kasa (B) 6.000 / 649 Diğer Olağan Gelir ve Kârlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
+      "B": "100 Kasa (B) 6.000 / 600 Yurt İçi Satışlar (A) 6.000 (KDV ayrıca hesaplanıp ayrıştırılmaz)",
+      "C": "600 Yurt İçi Satışlar (B) 5.000 + 391 Hesaplanan KDV (B) 1.000 / 100 Kasa (A) 6.000",
+      "D": "102 Bankalar (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
       "E": "100 Kasa (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000"
     },
     "answer": "E",
@@ -665,11 +665,11 @@
     "konu": "hazir_degerler",
     "stem": "TMS 7 (Nakit Akış Tablosu) açısından 'nakit ve nakit benzerleri' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnızca kasadaki nakdi kapsar.",
-      "B": "Ortaklardan alacakları kapsar.",
-      "C": "Maddi duran varlıkları kapsar.",
+      "A": "Yalnızca işletmenin kasasındaki nakit parayı kapsar; bankadaki vadesiz mevduat bu tanımın dışında tutulur.",
+      "B": "Ortaklardan ve personelden olan kısa vadeli ticari olmayan alacakları da nakit benzeri olarak kapsamına alır.",
+      "C": "İşletmenin sahip olduğu bina, makine ve taşıt gibi maddi duran varlıkları da nakde yakınlığı nedeniyle kapsar.",
       "D": "Kasa, vadesiz banka mevduatı ve değeri kesine yakın, kısa vadeli, likit yatırımları kapsar.",
-      "E": "Uzun vadeli tahvil yatırımlarını kapsar."
+      "E": "Vadesine yıllar bulunan ve değeri dalgalanan uzun vadeli tahvil ve hisse senedi yatırımlarını da kapsar."
     },
     "answer": "D",
     "solution": "Nakit ve nakit benzerleri; **kasa, vadesiz mevduat** ve değeri belirli, kısa vadeli, kolayca nakde çevrilebilen **yüksek likiditeli yatırımları** kapsar. Uzun vadeli/riskli yatırımlar bu kapsama girmez.",
@@ -687,11 +687,11 @@
     "konu": "hazir_degerler",
     "stem": "'135 Personelden Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Bir kaynak (pasif) hesabıdır, alacak kalanı verir.",
-      "B": "Bir gelir tablosu hesabıdır.",
+      "A": "Bir kaynak (pasif) hesabıdır; personele olan borçları izler ve normalde alacak kalanı verir.",
+      "B": "Bir gelir tablosu hesabıdır; personelden tahsil edilen tutarları gelir olarak izler ve alacak kalanı verir.",
       "C": "Bir dönen varlık (aktif) hesabıdır; personelden olan alacakları izler, borç kalanı verir.",
-      "D": "Aktifi düzenleyici bir hesaptır, alacak kalanı verir.",
-      "E": "Bir özkaynak hesabıdır."
+      "D": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve bilançoda varlıklardan (-) düşülür.",
+      "E": "Bir özkaynak hesabıdır; personele dağıtılacak kâr paylarını izler ve alacak kalanı verir."
     },
     "answer": "C",
     "solution": "**135 Personelden Alacaklar**, işletmenin personelinden olan (avans dışı) alacaklarını izleyen bir **dönen varlık (aktif)** hesabıdır; normalde **borç kalanı** verir.",
@@ -709,11 +709,11 @@
     "konu": "hazir_degerler",
     "stem": "Havale ve EFT arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Havale farklı bankalar arasında, EFT aynı banka içinde yapılır.",
+      "A": "Havale farklı bankalar arasında yapılan, EFT ise aynı banka içindeki hesaplar arasında yapılan bir transferdir.",
       "B": "Havale genellikle aynı banka içindeki hesaplar arasında, EFT ise farklı bankalar arasında para transferidir.",
-      "C": "İkisi de yalnızca nakit ile yapılır.",
-      "D": "Havale yalnızca yurt dışına yapılır.",
-      "E": "EFT yalnızca döviz transferidir."
+      "C": "Havale de EFT de yalnızca fiziki nakit para ile yapılabilen, banka hesabı gerektirmeyen transfer türleridir.",
+      "D": "Havale yalnızca yurt dışındaki hesaplara yapılabilir; EFT ise sadece yurt içi transferlerde kullanılan bir yöntemdir.",
+      "E": "EFT yalnızca yabancı para (döviz) transferinde, havale ise sadece Türk Lirası transferinde kullanılabilir."
     },
     "answer": "B",
     "solution": "**Havale** genellikle aynı banka içindeki hesaplar arası, **EFT (Elektronik Fon Transferi)** ise farklı bankalar arasındaki para transferidir. İkisinde de banka mevduat hesabı (102) çalışır.",
@@ -841,10 +841,10 @@
     "konu": "hazir_degerler",
     "stem": "Etkin bir kasa iç kontrolü için aşağıdakilerden hangisi en uygun uygulamadır?",
     "options": {
-      "A": "Belgesiz ödemelerin serbestçe yapılması",
-      "B": "Tüm kasa ve muhasebe işlemlerinin tek bir kişide toplanması",
-      "C": "Kasa sayımının hiç yapılmaması",
-      "D": "Kasa fazlalarının kayıt dışı bırakılması",
+      "A": "Hız kazanmak için ödemelerin belge aranmaksızın serbestçe yapılması ve sonradan da belgelenmemesi",
+      "B": "Sorumluluğu tek elde toplamak amacıyla tüm kasa, tahsilat, ödeme ve muhasebeleştirme işlemlerinin tek bir yetkili kişide birleştirilmesi",
+      "C": "Zaman kaybını önlemek amacıyla dönem içinde ve dönem sonunda hiçbir şekilde fiili kasa sayımı yapılmaması",
+      "D": "Kayıtları sade tutmak için kasa fazlalarının hiç kaydedilmeyip veznedarın uhdesinde bırakılması",
       "E": "Kasa işlemlerini yürüten kişi ile bu işlemleri muhasebeleştiren/kontrol eden kişinin farklı olması (görevler ayrılığı)"
     },
     "answer": "E",
@@ -951,11 +951,11 @@
     "konu": "hazir_degerler",
     "stem": "Çek ve senet (bono) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Çek bir kredi (vade) aracı, senet ise bir ödeme aracıdır.",
-      "B": "Çek yalnızca bankalar arasında düzenlenir.",
-      "C": "İkisi de yalnızca nakit ödemede kullanılır.",
+      "A": "Çek esas olarak bir kredi (vade) aracıdır; senet (bono) ise görüldüğünde ödenen bir ödeme aracıdır.",
+      "B": "Çek yalnızca bankaların kendi aralarında düzenleyebildiği, gerçek kişilerce kullanılamayan bir kıymetli evraktır.",
+      "C": "Çek de senet de yalnızca elden nakit para ödemesinde kullanılan, ciro edilemeyen belgelerdir.",
       "D": "Çek esas olarak bir ödeme aracıdır; senet (bono) ise bir kredi (vade) aracıdır.",
-      "E": "Senet yalnızca yabancı para cinsinden düzenlenir."
+      "E": "Senet (bono) yalnızca yabancı para cinsinden düzenlenebilir; Türk Lirası üzerinden senet düzenlenemez."
     },
     "answer": "D",
     "solution": "**Çek** esas olarak bir **ödeme aracıdır** (bankaya hitaben, görüldüğünde ödenmek üzere). **Senet (bono)** ise belirli bir vadede ödeme taahhüdü içeren bir **kredi (vade) aracıdır**.",
@@ -973,11 +973,11 @@
     "konu": "hazir_degerler",
     "stem": "Vergi Usul Kanunu'na göre yabancı paralar değerlenirken; borsa rayici yoksa hangi kur esas alınır?",
     "options": {
-      "A": "İşletmenin belirlediği kur",
-      "B": "Serbest piyasadaki en yüksek kur",
+      "A": "İşletmenin kendi muhasebe politikasına göre serbestçe belirlediği kur",
+      "B": "Değerleme günü serbest piyasada oluşan en yüksek döviz satış kuru",
       "C": "Maliye Bakanlığı'nca tespit ve ilan edilen kur",
-      "D": "Bir önceki yılın ortalama kuru",
-      "E": "Satıcının faturada gösterdiği kur"
+      "D": "Bir önceki hesap döneminin on iki aylık ortalama döviz kuru",
+      "E": "Dövizin edinildiği faturada satıcı tarafından gösterilen işlem kuru"
     },
     "answer": "C",
     "solution": "VUK md. 280'e göre yabancı paralar **borsa rayici** ile; borsa rayici yoksa **Maliye Bakanlığı'nca tespit ve ilan edilen kur** ile değerlenir.",
@@ -1040,10 +1040,10 @@
     "stem": "İşletme, kasasındaki 1.000 USD'yi (30 ₺/USD kurundan kayıtlı) bankaya 33 ₺/USD kurundan bozdurmuş ve TL karşılığı banka hesabına geçmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "102 Bankalar (B) 33.000 / 100 Kasa (A) 30.000 + 646 Kambiyo Kârları (A) 3.000",
-      "B": "102 Bankalar (B) 30.000 / 100 Kasa (A) 30.000",
-      "C": "100 Kasa (B) 33.000 / 102 Bankalar (A) 33.000",
-      "D": "102 Bankalar (B) 33.000 / 100 Kasa (A) 33.000",
-      "E": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000"
+      "B": "102 Bankalar (B) 30.000 / 100 Kasa (A) 27.000 + 646 Kambiyo Kârları (A) 3.000",
+      "C": "100 Kasa (B) 33.000 / 102 Bankalar (A) 30.000 + 646 Kambiyo Kârları (A) 3.000",
+      "D": "102 Bankalar (B) 33.000 / 100 Kasa (A) 30.000 + 642 Faiz Gelirleri (A) 3.000",
+      "E": "656 Kambiyo Zararları (B) 3.000 + 100 Kasa (B) 30.000 / 102 Bankalar (A) 33.000"
     },
     "answer": "A",
     "solution": "Banka hesabına 1.000 × 33 = 33.000 ₺ girer; kasadan çıkan YP kayıtlı değeri 1.000 × 30 = 30.000 ₺; aradaki 3.000 ₺ lehte kur farkıdır: **102 Bankalar (B) 33.000 / 100 Kasa (A) 30.000 + 646 Kambiyo Kârları (A) 3.000**.",
@@ -1150,10 +1150,10 @@
     "stem": "İşletmelerin hazır değerlerinin yeterli düzeyde tutulmasının temel nedeni aşağıdakilerden hangisidir?",
     "options": {
       "A": "Vadesi gelen borçları ve günlük harcamaları zamanında karşılayabilmek (likidite/ödeme gücü)",
-      "B": "Daha az vergi ödemek",
-      "C": "Amortisman giderini artırmak",
-      "D": "Stok maliyetini düşürmek",
-      "E": "Sermayeyi azaltmak"
+      "B": "Dönem kârını olduğundan düşük göstererek ödenecek kurumlar vergisini azaltmak ve vergi ertelemek",
+      "C": "Duran varlıklara ayrılan amortisman giderini artırarak dönem sonucunu aşağı çekmek ve kârı düşürmek",
+      "D": "Depoda tutulan ticari malların birim maliyetini düşürerek satılan malın maliyetini azaltmak",
+      "E": "İşletmenin ödenmiş sermayesini azaltarak ortaklara sermaye iadesi yapılmasını kolaylaştırmak"
     },
     "answer": "A",
     "solution": "Hazır değerler işletmenin **likiditesini (ödeme gücünü)** temsil eder; vadesi gelen borçların ve günlük harcamaların zamanında karşılanabilmesi için yeterli hazır değer bulundurmak gerekir.",
@@ -1237,11 +1237,11 @@
     "konu": "hazir_degerler",
     "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 7.000 | |\n| 101 ALINAN ÇEKLER | | 7.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Müşteriden çek alınması",
-      "B": "İşletmenin çek düzenleyip vermesi",
-      "C": "Çekin ciro edilmesi",
+      "A": "Bir mal satışı karşılığında müşteriden çek alınması işleminin kaydı",
+      "B": "İşletmenin borcuna karşılık kendi çekini düzenleyip satıcısına vermesi",
+      "C": "Elde bulunan çekin bir satıcıya borç karşılığı ciro edilerek devredilmesi",
       "D": "Elde bulunan bir çekin nakden (kasa) tahsil edilmesi",
-      "E": "Karşılıksız çek çıkması"
+      "E": "Tahsile verilen bir çekin karşılıksız çıkarak geri dönmesi işlemi"
     },
     "answer": "D",
     "solution": "Kasaya nakit girişi (100 borç) ve elde tutulan çekin (101 alacak) azalması, **elde bulunan bir çekin nakden tahsil edilmesi**ni gösterir (ör. keşidecinin işletmeye nakit ödemesi).",

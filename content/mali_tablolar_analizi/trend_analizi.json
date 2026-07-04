@@ -5,11 +5,11 @@
     "konu": "trend_analizi",
     "stem": "Trend (eğilim yüzdeleri) analizi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Kalemleri toplam aktife oranlar.",
-      "B": "Kalemleri birbirine böler.",
+      "A": "Aynı yıla ait her kalemi o dönemin toplam aktifine oranlayıp mali yapının dağılımını yalnızca tek bir dönem içinde yüzdesel olarak inceleyen statik bir tekniktir.",
+      "B": "Bilanço ve gelir tablosundaki kalemleri birbirine bölerek işletmenin likidite ve kârlılık oranlarını hesaplayan tekniktir.",
       "C": "Bir baz (temel) yıl seçilip, izleyen dönemlerdeki kalemlerin bu baz yıla göre yüzde değişiminin (eğiliminin) uzun döneme yayılarak incelenmesidir.",
-      "D": "Yalnızca tek dönemi inceler.",
-      "E": "Yalnızca vergi hesaplar."
+      "D": "Yalnızca cari döneme ait mali tabloları alıp önceki yıllarla hiçbir karşılaştırma yapmadan tek bir noktada değerlendiren analizdir.",
+      "E": "Dönem kârından ödenecek vergiyi ve yasal yükümlülükleri hesaplayıp mali tablolara yansıtmaya yönelik bir değerleme yöntemidir."
     },
     "answer": "C",
     "solution": "**Trend (eğilim) analizi**; bir **baz yıl** seçilip izleyen dönemlerdeki kalemlerin bu baz yıla göre **yüzde eğiliminin** uzun döneme yayılarak incelenmesidir (dinamik).",
@@ -203,10 +203,10 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinde baz yıl seçilirken tercih edilen özellik aşağıdakilerden hangisidir?",
     "options": {
-      "A": "En yüksek satışın olduğu olağandışı yıl",
-      "B": "Rastgele herhangi bir yıl",
-      "C": "İşletmenin kurulmadığı bir yıl",
-      "D": "Rakip işletmenin yılı",
+      "A": "Satışların en yüksek olduğu olağandışı yılın baz alınması gerekir",
+      "B": "Baz yıl her zaman en eski (ilk) yıl olacak biçimde seçilmelidir",
+      "C": "İşletmenin henüz kurulmadığı, faaliyetin bulunmadığı bir yıl seçilir",
+      "D": "Sektördeki rakip işletmenin en iyi performans gösterdiği yıl baz alınır",
       "E": "İşletme açısından normal/olağan (temsil edici) bir yılın seçilmesi"
     },
     "answer": "E",
@@ -269,11 +269,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinin en anlamlı sonuç vermesi için genellikle nasıl bir dönem aralığı tercih edilir?",
     "options": {
-      "A": "Tek yıl",
+      "A": "Yalnızca tek bir yılın verisi yeterli olur",
       "B": "Uzun bir dönem (birbirini izleyen birçok yıl)",
-      "C": "Yalnızca iki ay",
-      "D": "Gelecek yıl tahmini",
-      "E": "Dönem aralığı önemli değildir"
+      "C": "Yalnızca iki aylık kısa bir dönem tercih edilir",
+      "D": "Yalnızca gelecek yıla ait tahmini rakamlar alınır",
+      "E": "Seçilen dönemin uzunluğunun bir önemi bulunmaz"
     },
     "answer": "B",
     "solution": "Trend analizi, eğilimi görebilmek için **birbirini izleyen birçok yıla (uzun döneme)** yayıldığında en anlamlı sonucu verir.",
@@ -291,11 +291,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizi ile karşılaştırmalı (yatay) analiz arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de tek dönemi inceler.",
-      "B": "İkisi de kalemleri toplam aktife oranlar.",
-      "C": "Trend analizi statik, karşılaştırmalı analiz dikeydir.",
+      "A": "Trend analizinde de karşılaştırmalı analizde de yalnızca tek bir döneme ait mali tablo alınır ve o dönem başka yıllarla kıyaslanmadan kendi içinde yüzdesel olarak incelenir.",
+      "B": "Her iki teknikte de kalemler ilgili yılın toplam aktifine oranlanır ve mali yapı tek dönem içinde dikey yüzdelerle ortaya konulur.",
+      "C": "Trend analizi tek dönemi ele aldığı için statik, karşılaştırmalı analiz ise kalemleri toplam aktife oranladığı için dikey bir tekniktir.",
       "D": "Trend analizinde tüm yıllar SABİT bir baz yıla göre yüzdelenir; karşılaştırmalı analizde ise genellikle her dönem bir ÖNCEKİ döneme göre değerlendirilir.",
-      "E": "İkisi arasında fark yoktur."
+      "E": "Trend analizi ile karşılaştırmalı analiz aynı hesaplamayı yapar; ikisi arasında ne yöntem ne de baz alınan dönem açısından bir fark bulunur."
     },
     "answer": "D",
     "solution": "**Trend analizinde** tüm yıllar **sabit bir baz yıla** göre yüzdelenir (uzun dönem eğilim). **Karşılaştırmalı analizde** ise genellikle her dönem **bir önceki döneme** göre değerlendirilir.",
@@ -335,11 +335,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinde net satışların trendi %130'a, satışların maliyetinin trendi %150'ye ulaşmıştır (baz yıl %100). Bu eğilim en olası olarak neyi gösterir?",
     "options": {
-      "A": "Brüt kârlılığın güçlü biçimde arttığını",
-      "B": "Satışların azaldığını",
+      "A": "Satışlar maliyetten daha hızlı arttığı için brüt kârlılığın güçlü biçimde iyileştiğini ve marjın genişlediğini",
+      "B": "Net satışların baz yıla göre gerilediğini ve işletmenin satış hacmini giderek daralttığını gösterdiğini",
       "C": "Maliyetlerin satışlardan daha hızlı bir eğilimle arttığını; brüt kârlılık üzerinde baskı oluştuğunu",
-      "D": "Maliyetlerin azaldığını",
-      "E": "İşletmenin faaliyeti durdurduğunu"
+      "D": "Satışların maliyetinin baz yıla göre azaldığını ve maliyet üzerinde belirgin bir düşüş eğilimi bulunduğunu",
+      "E": "İşletmenin faaliyetlerini fiilen durdurduğunu ve satış ile maliyet kalemlerinin sıfıra indiğini"
     },
     "answer": "C",
     "solution": "SMM trendi (%150), net satış trendinden (%130) **daha yüksek** ise maliyetler satışlardan daha hızlı bir eğilimle artmıştır → **brüt kârlılık üzerinde baskı** (olumsuz eğilim).",
@@ -401,11 +401,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinde her kalem için baz yıl yüzdesi nasıldır?",
     "options": {
-      "A": "Baz yıl kalemleri birbirine oranlanır.",
-      "B": "Tüm kalemler için baz yıl %0'dır.",
-      "C": "Baz yıl yalnızca net satışlar için %100'dür.",
+      "A": "Aynı yıla ait bütün kalemler birbirine oranlanır ve baz yıl bu oranların ortalaması olarak belirlenir",
+      "B": "Bütün kalemler için baz yıl %0 kabul edilir ve sonraki yıllar bu sıfır değerine göre yüzdelenir",
+      "C": "Baz yıl yalnızca net satışlar için %100 sayılır; diğer kalemler için baz yıl toplam aktife oranlanır",
       "D": "Her kalem için baz yılın kendi değeri %100 kabul edilir; sonraki yıllar buna göre yüzdelenir.",
-      "E": "Baz yıl toplam aktife oranlanır."
+      "E": "Her kalem baz yılda kendi tutarı yerine ilgili yılın toplam aktifine oranlanarak yüzdelendirilir"
     },
     "answer": "D",
     "solution": "Trend analizinde **her kalem için** baz yılın kendi tutarı **%100** kabul edilir; o kalemin izleyen yılları bu baz değere göre yüzdelenir.",
@@ -622,10 +622,10 @@
     "stem": "Trend analizinde net satışların trendi %120'ye, dönem net kârının trendi %140'a ulaşmıştır. Bu eğilim en olası olarak neyi gösterir?",
     "options": {
       "A": "Net kârın satışlardan daha güçlü bir eğilimle artması nedeniyle kârlılığın iyileşme eğiliminde olduğunu",
-      "B": "Kârlılığın kötüleştiğini",
-      "C": "Satışların azaldığını",
-      "D": "İşletmenin zarar ettiğini",
-      "E": "Borçların arttığını"
+      "B": "Net kâr satışlardan daha güçlü artmış olsa da bunun kârlılığı kötüleştirdiğini ve marjı daralttığını gösterdiğini",
+      "C": "Net satış trendinin baz yılın altına indiğini ve işletmenin satışlarının azalma eğiliminde olduğunu",
+      "D": "Dönem net kârı trendinin %100ün altında kaldığını ve işletmenin bu dönemde zarar ettiğini gösterdiğini",
+      "E": "Yabancı kaynak trendinin yükseldiğini ve işletmenin borçluluğunun hızla arttığını ortaya koyduğunu"
     },
     "answer": "A",
     "solution": "Net kâr trendi (%140), satış trendinden (%120) **daha yüksek** ise net kâr satışlardan daha güçlü büyümüştür → **kârlılık iyileşme eğilimindedir**.",
@@ -775,11 +775,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinde ticari alacakların trendi %160'a, net satışların trendi %110'a ulaşmıştır. Bu eğilim en olası olarak neyi gösterir?",
     "options": {
-      "A": "Tahsilatın hızlandığını",
-      "B": "Stokların sıfırlandığını",
-      "C": "Satışların düştüğünü",
+      "A": "Alacaklar satışlardan daha yavaş büyüdüğü için tahsilatın hızlandığını ve alacak devir hızının yükseldiğini gösterir",
+      "B": "Ticari alacak trendinin baz yılın altına indiğini ve dönem içinde stokların tamamen eritildiğini gösterir",
+      "C": "Net satış trendinin baz yılın altına düştüğünü ve işletmenin satış hacminin belirgin biçimde daraldığını gösterir",
       "D": "Alacakların satışlardan çok daha hızlı büyüdüğünü; tahsilatta yavaşlama/vadeli satış artışı olabileceğini",
-      "E": "Özkaynakların arttığını"
+      "E": "Alacaklardaki artışın özkaynaklardan finanse edildiğini ve öz sermaye trendinin güçlü biçimde yükseldiğini gösterir"
     },
     "answer": "D",
     "solution": "Alacak trendi (%160), satış trendinden (%110) **çok daha yüksek** ise alacaklar satışlardan hızlı büyümüştür → **tahsilatta yavaşlama/vadeli satış artışı** (olumsuz sinyal) olabilir.",
@@ -863,10 +863,10 @@
     "konu": "trend_analizi",
     "stem": "Trend analizi aşağıdaki mali tablolardan hangisine/hangilerine uygulanabilir?",
     "options": {
-      "A": "Yalnızca bilançoya",
-      "B": "Yalnızca gelir tablosuna",
-      "C": "Hiçbirine",
-      "D": "Yalnızca kâr dağıtım tablosuna",
+      "A": "Yalnızca bilanço kalemlerine uygulanabilir, gelir tablosuna uygulanamaz",
+      "B": "Yalnızca gelir tablosu kalemlerine uygulanır, bilançoya uygulanamaz",
+      "C": "Hiçbir mali tabloya uygulanamayan yalnızca teorik bir tekniktir",
+      "D": "Sadece kâr dağıtım tablosuna uygulanabilen özel bir analiz türüdür",
       "E": "Hem bilanço hem gelir tablosu kalemlerine (uzun dönem eğilim için)"
     },
     "answer": "E",
@@ -1061,11 +1061,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizinde net satışların trendi %130, satışların maliyetinin trendi %120'dir. Bu eğilim en olası olarak neyi gösterir?",
     "options": {
-      "A": "Maliyet baskısının arttığını",
+      "A": "Satışların maliyetinin satışlardan daha hızlı artması nedeniyle maliyet baskısının yükseldiğini ve marjın daraldığını",
       "B": "Satışların maliyetten daha güçlü bir eğilimle artması nedeniyle brüt kârlılığın iyileşme eğiliminde olduğunu",
-      "C": "Satışların düştüğünü",
-      "D": "İşletmenin zarar ettiğini",
-      "E": "Maliyetlerin arttığını"
+      "C": "Net satış trendinin baz yılın altına indiğini ve işletmenin satış hacminin dönem boyunca düştüğünü gösterdiğini",
+      "D": "Satışların maliyeti trendinin %100ün altında kaldığını ve işletmenin bu dönemde faaliyet zararı yazdığını",
+      "E": "Satışların maliyetinin baz yıla göre iki katına çıktığını ve toplam maliyetlerin olağanüstü arttığını"
     },
     "answer": "B",
     "solution": "Net satış trendi (%130) > SMM trendi (%120) ise satışlar maliyetten daha güçlü büyümüştür → **brüt kârlılık iyileşme eğilimindedir**.",
@@ -1171,11 +1171,11 @@
     "konu": "trend_analizi",
     "stem": "Trend analizi ile karşılaştırmalı analizin ortak yönü aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İkisi de statik analizdir.",
-      "B": "İkisi de kalemleri toplam aktife oranlar.",
-      "C": "İkisi de tek dönemi inceler.",
+      "A": "İkisi de tek dönemi ele alan statik nitelikli analiz teknikleridir",
+      "B": "İkisi de her kalemi aynı yılın toplam aktifine oranlayarak yüzdeler",
+      "C": "İkisi de yalnızca cari döneme ait tek bir mali tabloyu inceler",
       "D": "İkisi de dinamik analizdir (birden fazla dönemi/gelişimi inceler).",
-      "E": "İkisi de yalnızca oran üretir."
+      "E": "İkisi de kalemleri birbirine bölerek yalnızca finansal oran üretir"
     },
     "answer": "D",
     "solution": "Hem trend hem karşılaştırmalı analiz birden fazla dönemi/gelişimi incelediğinden **dinamik analizdir**. (Dikey analiz ise statiktir.)",
@@ -1281,11 +1281,11 @@
     "konu": "trend_analizi",
     "stem": "Mali tablolar analizinin dört temel tekniği aşağıdakilerden hangisinde birlikte ve doğru verilmiştir?",
     "options": {
-      "A": "FIFO, LIFO, ortalama maliyet, standart maliyet",
-      "B": "Kasa sayımı, stok sayımı, amortisman, reeskont",
+      "A": "İlk giren ilk çıkar, son giren ilk çıkar, hareketli ağırlıklı ortalama ve standart maliyet yöntemi",
+      "B": "Kasa sayımı, stok sayımı, amortisman ayrılması ve şüpheli alacak reeskontu işlemleri",
       "C": "Karşılaştırmalı (yatay) analiz, dikey (yüzde) analiz, trend (eğilim) analizi, oran (rasyo) analizi",
-      "D": "Bilanço, gelir tablosu, nakit akım, öz kaynak değişim",
-      "E": "Vergi, SGK, damga, harç"
+      "D": "Bilanço, gelir tablosu, nakit akış tablosu ve öz kaynaklar değişim tablosu düzenlenmesi",
+      "E": "Katma değer vergisi, sosyal güvenlik primi, damga vergisi ve harç tahakkuku işlemleri"
     },
     "answer": "C",
     "solution": "Mali tablolar analizinin dört temel tekniği: **karşılaştırmalı (yatay) analiz, dikey (yüzde) analiz, trend (eğilim) analizi ve oran (rasyo) analizidir**.",

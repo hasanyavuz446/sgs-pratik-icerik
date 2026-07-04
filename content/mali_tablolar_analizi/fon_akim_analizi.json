@@ -5,11 +5,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin belirli bir andaki varlık yapısını gösterir.",
-      "B": "Yalnızca kasadaki nakdi sayar.",
-      "C": "Yalnızca kâr dağıtımını gösterir.",
+      "A": "İşletmenin belirli bir andaki varlık ve kaynak yapısını aktif-pasif olarak özetleyen statik bir durum tablosudur.",
+      "B": "Yalnızca kasa ve bankadaki mevcut nakit tutarını dönem sonu itibarıyla sayan bir çizelgedir.",
+      "C": "Yalnızca dönem içinde ortaklara dağıtılan kâr paylarını gösteren tek amaçlı bir listedir.",
       "D": "İşletmenin bir dönemde sağladığı fon kaynaklarını ve bu fonların kullanım yerlerini gösteren tablodur.",
-      "E": "Vergi beyannamesidir."
+      "E": "İşletmenin vergi matrahını ve ödenecek vergiyi hesaplamak amacıyla düzenlenen bir beyannamedir."
     },
     "answer": "D",
     "solution": "**Fon akım tablosu**; işletmenin bir dönemde **sağladığı fon kaynaklarını** ve bu fonların **kullanım yerlerini** gösteren, kaynak-kullanım dengesini ortaya koyan bir tablodur.",
@@ -28,10 +28,10 @@
     "stem": "Fon akım tablosunda 'fon' kavramı geniş anlamıyla neyi ifade eder?",
     "options": {
       "A": "İşletmenin tüm mali kaynaklarını (bütün kaynakları)",
-      "B": "Yalnızca kasadaki nakiti",
-      "C": "Yalnızca banka mevduatını",
-      "D": "Yalnızca stokları",
-      "E": "Yalnızca özkaynağı"
+      "B": "Yalnızca kasadaki hazır nakit tutarını (dar anlamı)",
+      "C": "Yalnızca bankadaki vadesiz mevduat bakiyesini",
+      "D": "Yalnızca stoklara bağlanan işletme sermayesini",
+      "E": "Yalnızca ortakların koyduğu özkaynak tutarını"
     },
     "answer": "A",
     "solution": "Fon, **geniş anlamda** işletmenin **tüm mali kaynaklarını** ifade eder. (Dar anlamda ise nakit veya net işletme sermayesi olarak da tanımlanabilir.)",
@@ -115,10 +115,10 @@
     "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunda 'faaliyetlerden sağlanan fon' hesaplanırken dönem net kârına aşağıdakilerden hangisi geri EKLENİR?",
     "options": {
-      "A": "Satış hasılatı",
-      "B": "Stok artışı",
-      "C": "Ödenen temettü",
-      "D": "Duran varlık alımı",
+      "A": "Dönem içinde peşin olarak tahsil edilen satış hasılatı tutarı",
+      "B": "Stoklardaki artıştan doğan ek fon kullanımı tutarı",
+      "C": "Ortaklara nakit olarak dağıtılan temettü tutarı",
+      "D": "Yeni bir duran varlık alımı için ödenen yatırım tutarı",
       "E": "Amortisman giderleri (fon çıkışı gerektirmeyen giderler)"
     },
     "answer": "E",
@@ -159,11 +159,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Amortisman giderinin fon akım tablosunda bir fon kaynağı gibi değerlendirilmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmeye nakit girişi sağlaması",
-      "B": "Bir gelir olması",
+      "A": "Dönem içinde işletmeye fiilen nakit girişi sağlayan ve kasaya tahsil edilen gerçek bir gelir unsuru olması",
+      "B": "Satış hasılatı gibi kârı doğrudan artıran ve işletmeye nakit yaratan bir gelir kalemi niteliğinde olması",
       "C": "Gider olarak kârı azaltması ancak dönem içinde fon (nakit) çıkışına yol açmaması; bu nedenle kâra geri eklenmesi",
-      "D": "Bir borç olması",
-      "E": "Sermayeyi artırması"
+      "D": "Vadesi gelince nakit çıkışıyla ödenmesi gereken kısa vadeli bir borç yükümlülüğü niteliği taşıması sebebiyle kâra eklenmesi",
+      "E": "Ortakların koyduğu sermayeyi ve dolayısıyla işletmenin özkaynak tutarını doğrudan artıran bir kalem olması"
     },
     "answer": "C",
     "solution": "Amortisman kârı azaltan bir giderdir ama **fon (nakit) çıkışına yol açmaz**. Bu nedenle faaliyetlerden sağlanan fon bulunurken dönem kârına geri eklenir; kaynak yaratmaz ama kârı düzeltir.",
@@ -379,11 +379,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunun temel amacı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmenin gelecekteki satışlarını tahmin etmek",
+      "A": "İşletmenin gelecek dönemlerdeki satış hasılatını ve kârını tahmin ederek yıllık bütçenin hazırlanmasına temel oluşturmak",
       "B": "İşletmenin dönem içinde hangi kaynaklardan fon sağladığını ve bu fonları nerelerde kullandığını göstererek fon hareketlerini analiz etmek",
-      "C": "Yalnızca vergi hesaplamak",
-      "D": "Kasadaki nakiti saymak",
-      "E": "Ortakları listelemek"
+      "C": "Yalnızca dönem sonunda ödenecek verginin matrahını ve tutarını hesaplayarak vergi beyannamesine esas veriyi üretmek",
+      "D": "Yalnızca kasa ve bankadaki mevcut nakit tutarını sayarak belirli bir andaki likit varlık durumunu ortaya koymak",
+      "E": "İşletmenin belirli bir tarihteki varlık ve kaynak yapısını aktif ve pasif kalemleri hâlinde ayrıntılı biçimde özetleyerek raporlama yapmak"
     },
     "answer": "B",
     "solution": "Fon akım tablosunun amacı; dönem içinde **hangi kaynaklardan fon sağlandığını ve bu fonların nerelerde kullanıldığını** göstererek işletmenin fon hareketlerini (finansal politikalarını) analiz etmektir.",
@@ -556,10 +556,10 @@
     "stem": "İşletmenin dönemi zararla kapatması (dönem zararı) fon akım tablosunda genel olarak nasıl değerlendirilir?",
     "options": {
       "A": "Fon kullanımı (fonları azaltan bir unsur)",
-      "B": "Fon kaynağı",
-      "C": "Bir gelir",
-      "D": "Amortisman",
-      "E": "Etkisizdir"
+      "B": "Fon kaynağı (fonları artıran olumlu bir unsur)",
+      "C": "İşletmeye nakit sağlayan bir gelir kalemi",
+      "D": "Nakit çıkışı olmayan bir amortisman gideri",
+      "E": "Fon dengesi üzerinde tamamen etkisiz kalem"
     },
     "answer": "A",
     "solution": "Dönem zararı işletmenin fonlarını azaltan bir unsurdur; fon akım tablosunda genel olarak **fon kullanımı** tarafında değerlendirilir (dönem kârı ise kaynak/faaliyetlerden fon).",
@@ -621,11 +621,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Bir işletmenin dönemde sağladığı fon kaynakları toplamı 800.000 ₺'dir. Fon kullanımları; duran varlık alımı 500.000 ₺ ve temettü ödemesi 200.000 ₺'dir. Denge gereği, kalan 100.000 ₺'lik fon en olası olarak nereye gitmiştir?",
     "options": {
-      "A": "Kaynaklar eksik hesaplanmıştır.",
+      "A": "Kaynaklar toplamı fazladan hesaplandığından, aslında dönemde 100.000 ₺ tutarında hiçbir fon sağlanmamış olmalıdır",
       "B": "Diğer bir fon kullanımına (ör. net işletme sermayesindeki/hazır değerlerdeki artışa) gitmiştir; çünkü kaynaklar = kullanımlar olmalıdır.",
-      "C": "Fon buharlaşmıştır.",
-      "D": "Gelir yazılmıştır.",
-      "E": "Sermayeye eklenmiştir ve kaynak olmuştur."
+      "C": "Kalan 100.000 ₺ tutarındaki fon herhangi bir yerde kullanılmadan işletme dışında kendiliğinden yok olmuş olmalıdır",
+      "D": "Kalan tutar bir fon kullanımı değil, doğrudan dönem gelir tablosuna hasılat (gelir) olarak kaydedilmiş olmalıdır",
+      "E": "Kalan 100.000 ₺ ortaklarca konulan sermayeye eklenmiş ve böylece dönemin yeni ve ilave bir öz kaynak niteliğinde fon kaynağına dönüşmüş olmalıdır"
     },
     "answer": "B",
     "solution": "Kaynaklar (800.000) = Kullanımlar olmalı. Bilinen kullanımlar 500.000 + 200.000 = 700.000; kalan **100.000 ₺** başka bir fon kullanımına (ör. dönen varlık/hazır değer artışı) gitmiş olmalıdır (denge esası).",
@@ -665,11 +665,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Karşılık giderlerinin faaliyetlerden sağlanan fon hesabında dönem kârına geri eklenmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Bir gelir olması",
-      "B": "Sermayeyi artırması",
-      "C": "Bir borç ödemesi olması",
+      "A": "İşletmeye dönem içinde nakit girişi sağlayan ve fiilen tahsil edilen bir gelir unsuru olması",
+      "B": "Ortakların koyduğu sermayeyi ve işletmenin özkaynağını doğrudan artıran bir kalem olması",
+      "C": "Vadesi gelen bir borcun nakit ödenmesiyle fon çıkışına yol açan bir işlem olması",
       "D": "Kârı azaltan ancak dönem içinde fon (nakit) çıkışına yol açmayan bir gider olması",
-      "E": "Satış hasılatı olması"
+      "E": "Dönem içinde peşin olarak tahsil edilen satış hasılatını temsil eden bir gelir kalemi olması"
     },
     "answer": "D",
     "solution": "Karşılık giderleri (ör. şüpheli alacak, kıdem tazminatı karşılığı) kârı azaltır ama o dönem **fon/nakit çıkışına yol açmaz**; bu nedenle faaliyetlerden fon bulunurken kâra geri eklenir.",
@@ -753,11 +753,11 @@
     "konu": "fon_akim_analizi",
     "stem": "'Faaliyetlerden sağlanan fon', işletmenin fon kaynakları arasında neden önemli kabul edilir?",
     "options": {
-      "A": "Dışarıdan borçlanmayı ifade ettiği için",
-      "B": "Ortaklardan alınan sermayeyi gösterdiği için",
+      "A": "Dışarıdan sağlanan uzun vadeli borçlanmayı ve buna bağlı faiz yükünü ifade ettiği için",
+      "B": "Ortakların koyduğu sermaye artışını, yani dış kaynaklı bir fonu gösterdiği için",
       "C": "İşletmenin esas faaliyetleriyle (öz gücüyle) yarattığı iç kaynağı gösterdiği için",
-      "D": "Duran varlık satışını gösterdiği için",
-      "E": "Vergi ödemesini gösterdiği için"
+      "D": "Duran varlık satışından elde edilen bir defaya mahsus fon girişini gösterdiği için",
+      "E": "Dönem içinde ödenen verginin işletmeye iadesini ve geri dönüşünü gösterdiği için"
     },
     "answer": "C",
     "solution": "Faaliyetlerden sağlanan fon, işletmenin **esas faaliyetleriyle (öz gücüyle) yarattığı iç kaynağı** gösterir; sürdürülebilirlik açısından en sağlıklı fon kaynağı sayılır.",
@@ -841,10 +841,10 @@
     "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu, işletmenin hangi kararlarının analizinde özellikle yararlıdır?",
     "options": {
-      "A": "Personel işe alım kararları",
-      "B": "Ofis düzeni",
-      "C": "Reklam metni seçimi",
-      "D": "Ürün rengi seçimi",
+      "A": "İşletmede hangi bölüme kaç personel alınacağına ve genel işe alım politikasına ilişkin kararların belirlenmesinde",
+      "B": "İşletme içindeki büro, masa ve çalışma alanlarının yerleşim düzeninin planlanmasına ilişkin kararların alınmasında",
+      "C": "Ürünlerin tanıtımında kullanılacak reklam metinlerinin, görsellerin ve sloganların seçilmesine ilişkin kararlarda",
+      "D": "İşletmenin ürettiği ürünlerin ambalaj rengi ve dış tasarımının belirlenmesine ilişkin kararların alınması sürecinde belirleyici olarak",
       "E": "İşletmenin yatırım (duran varlık) ve finansman (kaynak sağlama/ödeme) kararlarının ve fon politikasının değerlendirilmesinde"
     },
     "answer": "E",
@@ -1083,11 +1083,11 @@
     "konu": "fon_akim_analizi",
     "stem": "İşletmenin dönem içinde hem uzun vadeli borç ödemesi hem de temettü dağıtması, fon akım tablosunda ne anlama gelir?",
     "options": {
-      "A": "İşletmenin fonlarını yalnızca borçlanmaya ayırdığını",
-      "B": "İşletmenin zarar ettiğini",
-      "C": "İşletmenin hiç fon sağlamadığını",
+      "A": "İşletmenin dönemde sağladığı tüm fonları yalnızca yeni borçlanmaya ayırdığını ve hiç yatırım yapmadığını gösterdiğini",
+      "B": "İşletmenin dönemi zararla kapattığını ve bu nedenle hiçbir fon kaynağı yaratamadığını açıkça gösterdiğini",
+      "C": "İşletmenin dönem içinde hiç fon sağlayamadığını, dolayısıyla tüm ödemelerini ertelemek zorunda kaldığını gösterdiğini",
       "D": "Sağlanan fonların bir kısmının borç geri ödemesine ve ortaklara dağıtıma (fon kullanımlarına) yönlendirildiğini",
-      "E": "Amortismanın arttığını"
+      "E": "Ayrılan amortisman tutarının arttığını ve bu tutarın bir fon kaynağı olarak dönem kârına eklendiğini gösterdiğini"
     },
     "answer": "D",
     "solution": "Her iki işlem de **fon kullanımıdır**; sağlanan fonların bir kısmının **borç geri ödemesi ve temettü dağıtımına** yönlendirildiğini gösterir.",
@@ -1128,10 +1128,10 @@
     "stem": "Bir işletmenin fon ihtiyacını ağırlıkla 'faaliyetlerden sağlanan fon' ile karşılaması, dışarıdan borçlanmaya göre neden daha olumlu değerlendirilir?",
     "options": {
       "A": "İşletmenin öz gücüyle (esas faaliyetiyle) fon yaratabildiğini, dış kaynağa ve faiz yüküne bağımlılığın az olduğunu gösterdiği için",
-      "B": "Daha çok faiz ödemesi gerektirdiği için",
-      "C": "Sermayeyi azalttığı için",
-      "D": "Amortismanı sıfırladığı için",
-      "E": "Zararı artırdığı için"
+      "B": "İşletmenin faaliyetlerinden fon yaratamayıp daha çok dış borca ve dolayısıyla daha yüksek faiz ödemesine yöneldiğini gösterdiği için",
+      "C": "Faaliyetlerden fonla finansmanın işletmenin ödenmiş sermayesini ve özkaynak tutarını azaltan bir sonuç doğurduğu için",
+      "D": "Faaliyetlerden fon kullanımının dönemde ayrılan amortisman tutarını sıfırladığını ve gider yükünü kaldırdığını gösterdiği için",
+      "E": "Faaliyetlerden fonla finansmanın işletmenin dönem zararını büyüten olumsuz bir gösterge niteliği taşıdığı için"
     },
     "answer": "A",
     "solution": "Faaliyetlerden fonla finansman, işletmenin **öz gücüyle fon yaratabildiğini** ve **dış kaynağa/faiz yüküne bağımlılığının düşük** olduğunu gösterdiğinden daha sağlıklı/olumlu değerlendirilir.",
@@ -1171,11 +1171,11 @@
     "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu ile nakit akım tablosu arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de yalnızca nakiti izler.",
+      "A": "Fon akım tablosu da nakit akım tablosu da yalnızca kasa ve bankadaki nakit hareketlerini izler; ikisi arasında kapsam ve amaç bakımından hiçbir fark bulunmaz.",
       "B": "Fon akım tablosunda 'fon' genellikle geniş kapsamlıdır (tüm kaynaklar / net işletme sermayesi); nakit akım tablosu ise yalnızca nakit ve nakit benzeri giriş-çıkışlarını izler.",
-      "C": "Fon akım tablosu yalnızca nakiti, nakit akım tablosu tüm kaynakları izler.",
-      "D": "İkisi aynı tablodur.",
-      "E": "İkisi de bilançodur."
+      "C": "Fon akım tablosu yalnızca nakit ve nakit benzeri giriş-çıkışlarını izlerken, nakit akım tablosu işletmenin tüm mali kaynaklarını, yani en geniş kapsamlı fon kavramının tamamını izler.",
+      "D": "Fon akım tablosu ve nakit akım tablosu aslında aynı isimle anılan tek bir tablodur; yalnızca farklı hesap dönemleri için ayrı ayrı düzenlenmesi bakımından farklılaşır.",
+      "E": "Fon akım tablosu da nakit akım tablosu da belirli bir andaki varlık ve kaynak yapısını aktif-pasif olarak gösteren birer bilanço niteliği taşıyan tablodur."
     },
     "answer": "B",
     "solution": "**Fon akım tablosunda** 'fon' geniş kapsamlıdır (tüm mali kaynaklar / net işletme sermayesi). **Nakit akım tablosu** ise yalnızca **nakit ve nakit benzeri** giriş-çıkışlarını izler (daha dar kapsam).",
@@ -1193,10 +1193,10 @@
     "konu": "fon_akim_analizi",
     "stem": "Bir işletmenin toplam fon kaynağı 900.000 ₺'dir. Fon kullanımları duran varlık alımı 600.000 ₺ ve uzun vadeli borç ödemesi 300.000 ₺ ise bu tablo hakkında ne söylenebilir?",
     "options": {
-      "A": "Kaynaklar kullanımlardan büyüktür.",
-      "B": "Fon kaynağı yoktur.",
-      "C": "Kullanımlar kaynaklardan büyüktür.",
-      "D": "Tablo hatalıdır.",
+      "A": "Fon kaynağı kullanımlardan büyük olduğundan tabloda kullanılmayan bir fon fazlası vardır.",
+      "B": "İşletmenin dönemde hiçbir fon kaynağı sağlamadığı, tüm tutarın borç olduğu anlaşılmaktadır.",
+      "C": "Fon kullanımları kaynaklardan büyük olduğu için tablo açık, yani fon eksiği vermektedir.",
+      "D": "Kaynaklar ile kullanımlar birbirini tutmadığından tablo baştan hatalı düzenlenmiştir.",
       "E": "Kaynaklar (900.000) = Kullanımlar (600.000 + 300.000 = 900.000); tablo dengededir."
     },
     "answer": "E",
@@ -1237,10 +1237,10 @@
     "konu": "fon_akim_analizi",
     "stem": "Amortisman gideri faaliyetlerden fon hesabında dönem kârına eklendiğinde, bu ekleme amortismanın kendisinin bir 'nakit girişi' olduğu anlamına gelir mi?",
     "options": {
-      "A": "Evet; amortisman işletmeye nakit sağlar.",
-      "B": "Hayır; amortisman kâra eklenmez.",
-      "C": "Evet; amortisman bir gelirdir.",
-      "D": "Evet; amortisman bir borçlanmadır.",
+      "A": "Evet; amortisman işletmeye dönem içinde fiilen nakit girişi sağlayan bir kalem olduğu için dönem kârına bu tutar kadar gerçek nakit eklenmiş olur.",
+      "B": "Hayır; amortisman gideri faaliyetlerden fon hesabında dönem kârına hiçbir şekilde geri eklenmez, hesaplamada olduğu gibi kârdan düşülür.",
+      "C": "Evet; amortisman dönem içinde tahsil edilen bir gelir niteliği taşıdığından, elde edilen bu tutar kâra eklenerek fon toplamına dâhil edilmiş olur.",
+      "D": "Evet; amortisman işletmenin dışarıdan sağladığı uzun vadeli bir borçlanma tutarı olduğu için, sağlanan bu kaynak dönem kârına geri eklenerek toplam fona dâhil edilmiş olur.",
       "E": "Hayır; amortisman bir nakit girişi değildir. Sadece kârı azaltan ama nakit çıkışı olmayan bir gider olduğu için, gerçek fon tutarına ulaşmak amacıyla kâra geri eklenir."
     },
     "answer": "E",
@@ -1282,10 +1282,10 @@
     "stem": "Aşağıdakilerden hangisi hem fon akım hem de nakit akım analizinin ortak amacıdır?",
     "options": {
       "A": "İşletmenin dönem içindeki kaynak/nakit hareketlerini (nereden gelip nereye gittiğini) göstererek finansal politikayı değerlendirmek",
-      "B": "Kârı gizlemek",
-      "C": "Yalnızca vergi matrahını bulmak",
-      "D": "Ortakların adreslerini listelemek",
-      "E": "Ürün fiyatı belirlemek"
+      "B": "İşletmenin gerçek fon yaratımını olduğundan daha düşük göstererek dönem kârını dış kullanıcılardan gizlemeyi amaçlar",
+      "C": "Yalnızca dönem sonunda ödenecek verginin matrahını ve tutarını hesaplayarak vergi beyannamesine esas olacak veriyi sağlamayı amaçlar",
+      "D": "İşletmeye sermaye koyan ortakların ad, adres ve pay oranı bilgilerini bir liste hâlinde ayrıntılı olarak raporlamayı amaçlar",
+      "E": "İşletmenin ürettiği ürünlerin satış fiyatının maliyetlere ve rekabete göre belirlenmesine temel oluşturmayı amaçlar"
     },
     "answer": "A",
     "solution": "Her iki tablo da işletmenin dönem içindeki **kaynak/nakit hareketlerini** (nereden gelip nereye gittiğini) göstererek finansal politikanın değerlendirilmesini amaçlar.",

@@ -5,11 +5,11 @@
     "konu": "standart_maliyet",
     "stem": "'Standart maliyet' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Geçmişte fiilen gerçekleşmiş maliyet",
-      "B": "Rakip firmanın maliyeti",
-      "C": "Satış fiyatı",
+      "A": "Geçmiş dönemlerde muhasebe kayıtlarına göre fiilen gerçekleşmiş olan ortalama birim maliyet tutarı",
+      "B": "Aynı sektörde faaliyet gösteren rakip firmaların kamuya açıkladığı ürün maliyetlerinin ortalaması",
+      "C": "Ürünün piyasada satışa sunulduğu, kâr marjını da içeren güncel liste satış fiyatı",
       "D": "Belirli koşullarda, bilimsel/teknik esaslarla önceden belirlenen, olması gereken (hedef) maliyet",
-      "E": "Vergi matrahı"
+      "E": "Verginin üzerinden hesaplandığı, kanunen kabul edilmeyen giderleri de kapsayan matrah"
     },
     "answer": "D",
     "solution": "**Standart maliyet**, belirli üretim koşullarında bilimsel/teknik esaslarla önceden belirlenen, **olması gereken (hedef)** maliyettir. Fiili maliyetle karşılaştırılarak sapmalar bulunur.",
@@ -50,10 +50,10 @@
     "stem": "Standart maliyet sisteminde 'sapma (varyans)' nasıl tanımlanır?",
     "options": {
       "A": "Fiili maliyet ile standart maliyet arasındaki fark",
-      "B": "Fiili maliyet + standart maliyet",
-      "C": "Satış − maliyet",
-      "D": "Standart maliyet × 2",
-      "E": "Yalnızca fiili maliyet"
+      "B": "Fiili maliyet ile standart maliyetin toplanması",
+      "C": "Hasılattan toplam maliyetin düşülmesiyle kalan tutar",
+      "D": "Standart maliyetin iki katı olarak alınan sınır",
+      "E": "Standart göz ardı edilip yalnızca fiilinin alınması"
     },
     "answer": "A",
     "solution": "**Sapma (varyans) = Fiili maliyet − Standart maliyet**. Sapma analizi bu farkın nedenlerini (fiyat, miktar, süre vb.) ortaya koyar.",
@@ -115,11 +115,11 @@
     "konu": "standart_maliyet",
     "stem": "Standart maliyet, üretimin üç temel maliyet unsuru için ayrı ayrı belirlenir. Bunlar hangileridir?",
     "options": {
-      "A": "Satış, pazarlama, yönetim standartları",
-      "B": "Kira, enerji, su standartları",
-      "C": "Faiz, vergi, amortisman standartları",
+      "A": "Satış giderleri, pazarlama giderleri ve genel yönetim giderleri için standartlar",
+      "B": "Kira gideri, enerji tüketimi ve su tüketimi kalemleri için ayrı ayrı standartlar",
+      "C": "Finansman faizi, ödenecek vergiler ve dönem amortismanı için belirlenen standartlar",
       "D": "Direkt ilk madde ve malzeme, direkt işçilik ve genel üretim gideri standartları",
-      "E": "Alış, iade, iskonto standartları"
+      "E": "Malzeme alışı, alıştan iadeler ve alış iskontoları için oluşturulan standartlar"
     },
     "answer": "D",
     "solution": "Standart maliyet; **direkt ilk madde ve malzeme (DİMM), direkt işçilik (DİG) ve genel üretim gideri (GÜG)** unsurları için ayrı ayrı belirlenir; sapmalar da bu unsurlar bazında analiz edilir.",
@@ -181,10 +181,10 @@
     "konu": "standart_maliyet",
     "stem": "Sapma analizinin yapılmasının temel nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Yalnızca kayıt tutmak",
-      "B": "Amortisman hesaplamak",
-      "C": "Satış fiyatını gizlemek",
-      "D": "Vergi ödememek",
+      "A": "Yalnızca yasal defterlere kayıt tutup belgeleri arşivlemek ve bunun dışında hiçbir yönetsel amaç gütmemek",
+      "B": "Duran varlıkların dönem amortismanını hesaplayarak ilgili gider kayıtlarını oluşturmak",
+      "C": "Ürünün gerçek maliyetini müşteriden gizleyip satış fiyatını olduğundan yüksek göstermek",
+      "D": "Dönem kazancı üzerinden ödenecek kurumlar vergisini tümüyle ortadan kaldırmak",
       "E": "Fiili ile standart arasındaki farkın nedenini bulup sorumluları belirlemek ve düzeltici önlem almak"
     },
     "answer": "E",
@@ -203,11 +203,11 @@
     "konu": "standart_maliyet",
     "stem": "Standart maliyet ile 'tahmini maliyet' arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İkisi de geçmiş verilerdir",
+      "A": "Her ikisi de yalnızca geçmiş dönem fiili kayıtlarından türetilen tarihsel maliyet bilgileridir; gelecekle ilgili bir hedef veya norm niteliği taşımazlar",
       "B": "Standart maliyet bilimsel/teknik esaslarla belirlenen olması gereken maliyettir; tahmini maliyet ise daha çok geçmiş verilere dayalı bir öngörüdür",
-      "C": "Standart maliyet her zaman fiili maliyete eşittir",
-      "D": "Tahmini maliyet olması gereken maliyettir",
-      "E": "İkisi arasında hiçbir fark yoktur"
+      "C": "Standart maliyet, dönem sonunda hesaplanan fiili maliyete her koşulda birebir eşit çıkar ve bu nedenle aralarında sapma oluşması mümkün değildir",
+      "D": "Tahmini maliyet, bilimsel ve teknik analizlerle belirlenen olması gereken maliyettir; standart maliyet ise yalnızca kaba bir öngörüden ibarettir",
+      "E": "İkisi de aynı yöntemle hesaplanan, birbirinin yerine kullanılabilen eş anlamlı kavramlardır ve aralarında hiçbir kavramsal fark bulunmamaktadır"
     },
     "answer": "B",
     "solution": "**Standart maliyet** bilimsel/teknik analizle belirlenen **olması gereken** maliyettir (hedef/norm). **Tahmini maliyet** ise genellikle geçmiş verilere dayalı bir **öngörüdür**; kontrol standardı olma niteliği daha zayıftır.",
@@ -291,11 +291,11 @@
     "konu": "standart_maliyet",
     "stem": "Bir maliyet unsurunda 'lehte sapma' oluşması işletme açısından ne anlama gelir?",
     "options": {
-      "A": "Beklenenden fazla maliyete katlanılmıştır",
-      "B": "Üretim durmuştur",
+      "A": "Fiili maliyet standardın üzerinde gerçekleşmiş, işletme beklenenden daha fazla maliyete katlanmıştır",
+      "B": "Üretim faaliyeti tümüyle durmuş, dönem içinde hiçbir mamul imal edilememiştir",
       "C": "Fiili maliyet standarttan düşük gerçekleşmiştir; işletme lehine bir tasarruf söz konusudur",
-      "D": "Satış artmıştır",
-      "E": "Vergi artmıştır"
+      "D": "Ürünün satış hasılatı artmış, ancak bunun maliyet düzeyiyle doğrudan bir ilgisi bulunmamaktadır",
+      "E": "Dönem kazancı üzerinden ödenecek olan verginin tutarı öngörülenin üzerine çıkmıştır"
     },
     "answer": "C",
     "solution": "**Lehte sapma**, fiili maliyetin standarttan düşük gerçekleştiğini, dolayısıyla işletme lehine bir **maliyet tasarrufu** olduğunu gösterir.",
@@ -401,10 +401,10 @@
     "konu": "standart_maliyet",
     "stem": "Standart maliyet ve sapma analizinin 'sorumluluk muhasebesi' ile ilişkisi aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İlişkisi yoktur",
-      "B": "Sapmalar sorumluya bağlanamaz",
-      "C": "Yalnızca satışları ölçer",
-      "D": "Yalnızca vergi hesaplar",
+      "A": "Sapma analizi ile sorumluluk muhasebesi tümüyle bağımsız alanlardır; ikisi arasında herhangi bir bağ kurulamaz ve birlikte kullanılmaları anlamsızdır",
+      "B": "Ortaya çıkan sapmalar hiçbir bölüme ya da yöneticiye atfedilemez; yalnızca genel bir bilgi olarak raporlanır, hesap sorulmasına temel oluşturmaz",
+      "C": "Sapma analizi sadece dönem satış hasılatını ölçmeye yarar; maliyet kontrolü veya bölüm performansı ile herhangi bir ilişkisi bulunmamaktadır",
+      "D": "Sapma analizi yalnızca ödenecek verginin hesaplanmasında kullanılır; bölümlerin performansı veya sorumluluğu ile hiçbir biçimde ilgilenmez",
       "E": "Her sapma, ilgili bölüm/yöneticinin sorumluluğuyla ilişkilendirilerek performans değerlendirmesine ve hesap verebilirliğe olanak sağlar"
     },
     "answer": "E",
@@ -555,11 +555,11 @@
     "konu": "standart_maliyet",
     "stem": "DİMM fiyat sapmasından genellikle hangi bölüm sorumlu tutulur?",
     "options": {
-      "A": "Üretim bölümü",
+      "A": "Üretim (imalat) bölümü",
       "B": "Satın alma (tedarik) bölümü",
-      "C": "Pazarlama bölümü",
-      "D": "Muhasebe bölümü",
-      "E": "İnsan kaynakları"
+      "C": "Pazarlama ve satış bölümü",
+      "D": "Genel muhasebe ve raporlama",
+      "E": "İnsan kaynakları birimi"
     },
     "answer": "B",
     "solution": "DİMM **fiyat sapması** malzemenin alış fiyatıyla ilgili olduğundan genellikle **satın alma (tedarik) bölümünün** sorumluluğundadır.",
@@ -731,11 +731,11 @@
     "konu": "standart_maliyet",
     "stem": "DİMM fiyat sapması hesaplanırken miktar olarak hangisi kullanılır?",
     "options": {
-      "A": "Standart miktar",
+      "A": "Standart (olması gereken) miktar",
       "B": "Fiili (fiilen kullanılan) miktar",
-      "C": "Bütçelenen miktar",
-      "D": "Satılan miktar",
-      "E": "Hiçbiri"
+      "C": "Dönem için bütçelenen miktar",
+      "D": "Dönemde satılan mamul miktarı",
+      "E": "Bunların hiçbiri kullanılmaz"
     },
     "answer": "B",
     "solution": "DİMM fiyat sapmasında fiyat farkı **fiili (fiilen kullanılan) miktar** ile çarpılır: (Fiili fiyat − Standart fiyat) × Fiili miktar.",
@@ -819,11 +819,11 @@
     "konu": "standart_maliyet",
     "stem": "Toplam DİMM sapmasının fiyat ve miktar sapmalarına ayrılmasının temel yararı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Toplam sapmayı büyütmek",
-      "B": "Vergi matrahını değiştirmek",
+      "A": "Toplam sapmayı olduğundan daha büyük göstererek dönem kârını yapay biçimde düşürmeyi ve vergiyi ertelemeyi sağlar",
+      "B": "Ödenecek verginin hesaplanacağı matrahı değiştirir; böylece işletmenin kurumlar vergisi yükünü doğrudan azaltır",
       "C": "Sapmanın fiyattan mı yoksa kullanım (miktar) verimliliğinden mi kaynaklandığını ayırt ederek doğru sorumluya yönelmek",
-      "D": "Satış fiyatını belirlemek",
-      "E": "Hiçbir yararı yoktur"
+      "D": "Mamulün piyasadaki satış fiyatını ve uygulanacak kâr marjını hesaplamaya yönelik bir fiyatlandırma aracı işlevi görür",
+      "E": "Ayrıştırmanın herhangi bir yönetsel yararı yoktur; yalnızca ek kayıt yükü doğurur ve maliyet analizini zorlaştırır"
     },
     "answer": "C",
     "solution": "Toplam sapmayı **fiyat** ve **miktar** bileşenlerine ayırmak, sapmanın alış fiyatından mı yoksa üretimdeki kullanım verimliliğinden mi kaynaklandığını gösterir; böylece doğru bölüm (satın alma / üretim) sorumlu tutulur.",
@@ -995,11 +995,11 @@
     "konu": "standart_maliyet",
     "stem": "DİG ücret sapmasından genellikle hangi taraf/bölüm sorumlu tutulur?",
     "options": {
-      "A": "Üretim ustabaşı (verimlilikten)",
-      "B": "Satın alma",
+      "A": "Çalışma verimliliğinden sorumlu tutulan üretim ustabaşı",
+      "B": "Malzeme alış fiyatını görüşen satın alma (tedarik) bölümü",
       "C": "Ücret politikasını belirleyen insan kaynakları / yönetim",
-      "D": "Pazarlama",
-      "E": "Müşteri"
+      "D": "Ürünün tanıtımını yürüten pazarlama ve satış bölümü",
+      "E": "Mamulü teslim alan nihai müşteri ile bayi ağı"
     },
     "answer": "C",
     "solution": "DİG **ücret sapması** saat ücreti düzeyiyle ilgili olduğundan genellikle **ücret politikasını belirleyen insan kaynakları/yönetimin** sorumluluğundadır. (Süre/verimlilik sapması ise üretim yönetiminin sorumluluğundadır.)",
@@ -1018,10 +1018,10 @@
     "stem": "DİG süre (verimlilik) sapmasından genellikle hangi bölüm sorumlu tutulur?",
     "options": {
       "A": "Üretim bölümü (işçilik verimliliği)",
-      "B": "Satın alma bölümü",
-      "C": "Finansman bölümü",
-      "D": "Pazarlama bölümü",
-      "E": "Muhasebe bölümü"
+      "B": "Satın alma (tedarik) bölümü sorumludur",
+      "C": "Finansman (fon yönetimi) birimi",
+      "D": "Pazarlama ve satış bölümü sorumludur",
+      "E": "Genel muhasebe ve raporlama birimi"
     },
     "answer": "A",
     "solution": "DİG **süre (verimlilik) sapması** işçilerin bir mamulü ne kadar sürede ürettiğiyle ilgili olduğundan genellikle **üretim bölümünün** sorumluluğundadır.",
@@ -1039,11 +1039,11 @@
     "konu": "standart_maliyet",
     "stem": "Genel üretim gideri (GÜG) TOPLAM sapması en genel biçimde nasıl bulunur?",
     "options": {
-      "A": "Fiili GÜG + Standart yüklenen GÜG",
+      "A": "Fiili GÜG ile mamullere yüklenen GÜG'ün toplanması",
       "B": "Fiili GÜG − Mamullere yüklenen (standart) GÜG",
-      "C": "Yalnızca fiili GÜG",
-      "D": "Standart GÜG × 2",
-      "E": "Fiili GÜG × standart saat"
+      "C": "Yalnızca dönemin fiili GÜG tutarının alınması",
+      "D": "Standart GÜG tutarının iki katının hesaplanması",
+      "E": "Fiili GÜG ile standart çalışma saatinin çarpılması"
     },
     "answer": "B",
     "solution": "GÜG **toplam sapması = Fiili GÜG − Mamullere yüklenen (standart) GÜG**. Bu sapma genellikle bütçe (harcama) ve kapasite (hacim) sapmalarına ayrılır.",
@@ -1083,11 +1083,11 @@
     "konu": "standart_maliyet",
     "stem": "GÜG 'bütçe (harcama) sapması' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Fiili üretim miktarı ile bütçelenen üretim farkı",
-      "B": "Amortisman farkı",
-      "C": "Satış ile maliyet farkı",
+      "A": "Dönemde fiilen gerçekleşen üretim miktarı ile başlangıçta bütçelenen üretim miktarı arasındaki hacim farkı",
+      "B": "Duran varlıklar için ayrılan dönem amortismanı ile önceki dönemin amortismanı arasında oluşan tutar farkı",
+      "C": "Dönem satış hasılatı ile satılan mamullerin toplam maliyeti arasındaki brüt kâra ilişkin fark",
       "D": "Fiili GÜG ile fiili faaliyet düzeyine göre bütçelenmesi gereken GÜG arasındaki fark (harcama kontrolü)",
-      "E": "Kur farkı"
+      "E": "Yabancı para cinsinden borçların dönem sonu kur değerlemesinden doğan kur farkı tutarı"
     },
     "answer": "D",
     "solution": "GÜG **bütçe (harcama) sapması**, fiili GÜG ile fiili faaliyet düzeyine göre olması gereken (esnek bütçe) GÜG arasındaki farktır; **harcama kontrolünü** ifade eder.",
@@ -1105,10 +1105,10 @@
     "konu": "standart_maliyet",
     "stem": "GÜG 'kapasite (hacim) sapması' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşçilik ücret farkı",
-      "B": "Vergi farkı",
-      "C": "Malzeme fiyat farkı",
-      "D": "Satış iadesi",
+      "A": "İşçilere ödenen fiili saat ücreti ile bütçelenen standart saat ücreti arasındaki farktan doğan, işçilik giderine ilişkin ücret sapması",
+      "B": "Dönem kazancı üzerinden hesaplanan vergi ile önceki dönem vergisi arasındaki farkı gösteren bir vergi kalemi",
+      "C": "Malzemenin fiili alış fiyatı ile standart fiyatı arasındaki farktan doğan, ilk madde giderine ait fiyat sapması",
+      "D": "Satılan mamullerden dönem içinde geri alınanların hasılattan düşülmesiyle ortaya çıkan satış iadesi tutarı",
       "E": "Planlanan (normal) kapasite ile fiili kullanılan kapasite farkından doğan, sabit GÜG'ün eksik/fazla yüklenmesine ilişkin sapma"
     },
     "answer": "E",
@@ -1172,10 +1172,10 @@
     "stem": "Standart maliyet sisteminde üretim ve stok hesapları genellikle hangi değerle izlenir?",
     "options": {
       "A": "Standart maliyet üzerinden; fiili ile fark sapma hesaplarında toplanır",
-      "B": "Fiili maliyet üzerinden",
-      "C": "Satış fiyatı üzerinden",
-      "D": "Piyasa değeri üzerinden",
-      "E": "Vergi değeri üzerinden"
+      "B": "Fiili maliyet üzerinden; standart maliyet yalnızca dönem sonunda hesaba alınır",
+      "C": "Satış fiyatı üzerinden; maliyet ile fiyat farkı doğrudan gelire yazılır",
+      "D": "Güncel piyasa değeri üzerinden; oluşan değer farkı özkaynaklara aktarılır",
+      "E": "Vergi değeri üzerinden; standart ile fiili fark hiç kayda alınmaz"
     },
     "answer": "A",
     "solution": "Standart maliyet sisteminde üretim/stok hesapları **standart maliyet** üzerinden izlenir; fiili ile standart arasındaki fark ayrı **sapma hesaplarında** toplanır ve dönem sonunda kapatılır.",
@@ -1193,11 +1193,11 @@
     "konu": "standart_maliyet",
     "stem": "Dönem sonunda önemsiz (küçük) tutarlı sapmalar genellikle nasıl işleme tabi tutulur?",
     "options": {
-      "A": "Sonraki döneme devredilir",
-      "B": "Özkaynaklara eklenir",
+      "A": "Bir sonraki hesap dönemine olduğu gibi devredilir ve o dönemin sapmalarına eklenir",
+      "B": "Özkaynaklar içinde ayrı bir yedek hesabına aktarılarak dönem sonucu dışında bırakılır",
       "C": "Doğrudan dönemin satılan malın maliyetine/gelir tablosuna aktarılarak kapatılır",
-      "D": "Hiç kapatılmaz",
-      "E": "Kâr payı olarak dağıtılır"
+      "D": "Hiçbir işleme tabi tutulmadan sapma hesaplarında açık olarak bekletilir ve kapatılmaz",
+      "E": "Dönem kârından ortaklara dağıtılacak kâr payı olarak hesaplanıp temettü şeklinde ödenir"
     },
     "answer": "C",
     "solution": "Önemsiz tutarlı sapmalar genellikle dönem sonunda **satılan malın maliyetine / gelir tablosuna** aktarılarak kapatılır. (Önemli tutarlı sapmalar ise stok ve SMM arasında dağıtılabilir.)",

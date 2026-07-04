@@ -5,10 +5,10 @@
     "konu": "dikey_analiz",
     "stem": "Dikey (yüzde) analiz ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İki dönemin kalemlerini karşılaştırır.",
-      "B": "Uzun döneme yayılan eğilimleri ölçer.",
-      "C": "Kalemleri birbirine böler.",
-      "D": "Yalnızca vergi hesaplar.",
+      "A": "İki ya da daha fazla dönemin aynı kalemlerini karşılaştırıp tutar ve yüzde değişimini ölçen yatay analizdir.",
+      "B": "Bir baz yıl seçilip sonraki dönemlerin bu yıla oranlanmasıyla uzun döneme yayılan eğilimleri ölçen trend analizidir.",
+      "C": "Bilanço ve gelir tablosundaki kalemleri ikişer ikişer birbirine bölerek anlamlı finansal oranlar üreten oran analizi tekniğidir.",
+      "D": "Yalnızca dönem kârı üzerinden ödenecek verginin hesaplandığı, kalemlerin bütüne oranlanmadığı bir işlemdir.",
       "E": "Bir mali tablodaki her kalemin, seçilen bir bütüne (grup toplamı veya genel toplama) oranlanarak yüzde olarak ifade edilmesidir."
     },
     "answer": "E",
@@ -50,10 +50,10 @@
     "stem": "Bilançonun dikey analizinde, kalemlerin oranlandığı ve %100 kabul edilen büyüklük (baz) aşağıdakilerden hangisidir?",
     "options": {
       "A": "Toplam aktif (veya eşit olan toplam pasif)",
-      "B": "Net satışlar",
-      "C": "Dönem net kârı",
-      "D": "Özkaynaklar",
-      "E": "Kısa vadeli yabancı kaynaklar"
+      "B": "Gelir tablosundaki net satışlar toplamı",
+      "C": "Dönem net kârı ile brüt satış kârı toplamı",
+      "D": "Bilançodaki özkaynaklar grubunun toplamı",
+      "E": "Kısa vadeli yabancı kaynaklar toplamı"
     },
     "answer": "A",
     "solution": "Bilançonun dikey analizinde baz (**%100**) **toplam aktiftir** (bilanço denkliği gereği toplam pasife eşittir). Her kalem toplam aktife oranlanır.",
@@ -204,10 +204,10 @@
     "stem": "Dikey analizin en önemli üstünlüklerinden biri aşağıdakilerden hangisidir?",
     "options": {
       "A": "Kalemleri yüzdeye çevirdiği için, büyüklükleri farklı işletmelerin (veya dönemlerin) yapısal olarak karşılaştırılmasına imkân vermesi",
-      "B": "Yalnızca tek işletme için kullanılabilmesi",
-      "C": "Gelecek yılların kesin tahminini vermesi",
-      "D": "Vergi tutarını doğrudan hesaplaması",
-      "E": "Nakit mevcudunu artırması"
+      "B": "Yalnızca tek bir işletmenin verileriyle kullanılabilmesi, farklı büyüklükteki işletmelerin karşılaştırılmasına hiçbir biçimde imkân vermemesi",
+      "C": "Kalemleri yüzdeye çevirmeden gelecek yılların satış ve kâr tutarlarını kesin olarak önceden tahmin edebilmesi",
+      "D": "İşletmenin dönem sonunda ödeyeceği vergi tutarını ve vergi sonrası net kârı doğrudan hesaplayabilmesi",
+      "E": "Kasa ve bankadaki nakit mevcudunu fiilen artırarak işletmenin likiditesini ve ödeme gücünü yükseltmesi"
     },
     "answer": "A",
     "solution": "Dikey analiz kalemleri **yüzdeye** dönüştürdüğünden, **büyüklükleri farklı işletmelerin/dönemlerin yapısal karşılaştırmasına** imkân verir (mutlak tutar farkı sorun olmaz).",
@@ -665,11 +665,11 @@
     "konu": "dikey_analiz",
     "stem": "Dikey analiz, büyüklükleri çok farklı iki işletmenin karşılaştırılmasında neden mutlak tutarlardan daha kullanışlıdır?",
     "options": {
-      "A": "Tutarları büyüttüğü için",
-      "B": "Nakit yarattığı için",
-      "C": "Vergiyi düşürdüğü için",
+      "A": "Kalemlerin mutlak tutarlarını büyüterek küçük işletmeyi büyük işletme kadar önemli göstermesi ve iki işletmenin ölçeğini birbirine eşitlemesi sayesinde",
+      "B": "İşletmenin kasa ve bankadaki nakit mevcudunu fiilen artırarak iki işletmeyi aynı likidite düzeyine getirmesi sayesinde",
+      "C": "Ödenecek vergiyi düşürüp vergi sonrası kârı yükselttiği ve böylece iki işletmenin kârını eşitlediği için",
       "D": "Kalemleri ortak bir tabana (yüzdeye) indirgediği için, farklı ölçeklerdeki işletmelerin yapısal (oransal) karşılaştırması mümkün olur",
-      "E": "Dönem sayısını artırdığı için"
+      "E": "Analize dâhil edilen dönem sayısını artırarak iki işletmenin geçmiş verilerini tek bir tabloda topladığı için"
     },
     "answer": "D",
     "solution": "Dikey analiz kalemleri **yüzdeye** (ortak tabana) indirger; böylece büyüklükleri farklı işletmelerin **yapısal/oransal** karşılaştırması yapılabilir (mutlak tutar farkı yanıltmaz).",
@@ -775,11 +775,11 @@
     "konu": "dikey_analiz",
     "stem": "İki dönem karşılaştırıldığında, satışların maliyetinin net satışlara dikey oranı %60'tan %68'e çıkmıştır. Bu bulgu en olası olarak neyi gösterir?",
     "options": {
-      "A": "Brüt kârlılığın iyileştiğini",
-      "B": "Satışların sıfırlandığını",
+      "A": "Brüt kârlılığın iyileştiğini ve brüt kâr marjının yükseldiğini",
+      "B": "Net satışların tamamen durduğunu ve gelir yaratılamadığını",
       "C": "Maliyet baskısının arttığını; brüt kâr marjının (%40'tan %32'ye) düştüğünü",
-      "D": "Özkaynakların arttığını",
-      "E": "Likiditenin arttığını"
+      "D": "Özkaynakların arttığını ve borçluluğun azaldığını gösterir",
+      "E": "İşletmenin likiditesinin ve kısa vadeli borç ödeme gücünün belirgin biçimde arttığını"
     },
     "answer": "C",
     "solution": "SMM'nin dikey oranı %60'tan %68'e çıkmışsa brüt kâr marjı %40'tan %32'ye **düşmüştür** → **maliyet baskısı artmış**, brüt kârlılık zayıflamıştır.",
@@ -1017,11 +1017,11 @@
     "konu": "dikey_analiz",
     "stem": "Bir işletmenin dikey analizinde dönen varlıkların toplam aktife oranı %70 çıkmıştır. Bu yapı en olası olarak neyi gösterir?",
     "options": {
-      "A": "Varlıkların büyük kısmının duran varlık olduğunu",
+      "A": "Varlıkların büyük kısmının duran varlıklardan (özellikle MDV'den) oluştuğunu",
       "B": "Varlık yapısının dönen (kısa vadeli/likit) varlık ağırlıklı olduğunu",
-      "C": "İşletmenin hiç stoğu olmadığını",
-      "D": "Özkaynakların %70 olduğunu",
-      "E": "Net kârın %70 olduğunu"
+      "C": "İşletmenin hiç stoğunun ve ticari alacağının bulunmadığını",
+      "D": "Kaynak yapısında özkaynakların payının %70 olduğunu",
+      "E": "Net satışlar içinde dönem net kârının payının %70 olduğunu"
     },
     "answer": "B",
     "solution": "Dönen varlık %70 ise varlık yapısı **dönen (likit) varlık ağırlıklıdır** (duran varlık %30). Sektöre göre yorumlanır.",
@@ -1083,11 +1083,11 @@
     "konu": "dikey_analiz",
     "stem": "Bir işletmenin dikey analizinde özkaynaklar %70, toplam yabancı kaynaklar %30 çıkmıştır. Mali yapı açısından bu en olası olarak neyi gösterir?",
     "options": {
-      "A": "Aşırı borçlu, riskli bir yapıyı",
-      "B": "İşletmenin likit olmadığını",
+      "A": "Yabancı kaynak ağırlıklı, aşırı borçlu ve mali açıdan riskli bir yapıyı",
+      "B": "Dönen varlıkların yetersiz olduğu, likiditesi zayıf bir yapıyı",
       "C": "Özkaynak ağırlıklı, borçluluğu düşük ve göreli güçlü bir mali yapıyı",
-      "D": "Satışların düştüğünü",
-      "E": "Stok fazlalığını"
+      "D": "Net satışların gerilediği ve kârlılığın düştüğü bir dönemi",
+      "E": "Stokların toplam varlıklar içinde aşırı biriktiğini"
     },
     "answer": "C",
     "solution": "Özkaynak %70 > Yabancı kaynak %30 ise varlıklar ağırlıkla **özkaynakla** finanse edilmiştir → **düşük borçluluk, göreli güçlü mali yapı**.",
@@ -1193,11 +1193,11 @@
     "konu": "dikey_analiz",
     "stem": "Dikey analiz ile oran analizi arasındaki ilişki için aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi birbirinin yerine geçer, birlikte kullanılamaz.",
+      "A": "Birbirinin tam yerine geçen tekniklerdir; biri kullanıldığında diğerine hiçbir biçimde ihtiyaç kalmaz ve asla birlikte kullanılamazlar.",
       "B": "Birbirini tamamlayan tekniklerdir; dikey analiz kalemlerin bütün içindeki payını, oran analizi ise kalemler arası ilişkileri gösterir.",
-      "C": "İkisi de yalnızca tek kalemi inceler.",
-      "D": "Dikey analiz dinamik, oran analizi statiktir.",
-      "E": "İkisi de dönemler arası değişim ölçer."
+      "C": "İkisi de mali tablodaki yalnızca tek bir kalemi ele alır; kalemler arası ilişkiyi ya da bütün içindeki payı hiçbir şekilde göstermezler.",
+      "D": "Dikey analiz dönemler arası değişimi ölçen dinamik bir teknik, oran analizi ise tek dönemi inceleyen statik bir tekniktir.",
+      "E": "İkisi de yalnızca dönemler arası tutar değişimini ölçer; kalemin bütün içindeki payını ya da kalemler arası oranı vermezler."
     },
     "answer": "B",
     "solution": "Dikey analiz (kalemin bütündeki payı) ile oran analizi (kalemler arası ilişki) **birbirini tamamlar**; birlikte kullanıldıklarında daha bütünsel yorum sağlar.",
@@ -1281,11 +1281,11 @@
     "konu": "dikey_analiz",
     "stem": "Aşağıdakilerden hangisi dikey analiz için doğru, yatay (karşılaştırmalı) analiz için yanlıştır?",
     "options": {
-      "A": "En az iki dönem gerektirir.",
+      "A": "Uygulanabilmesi için en az iki döneme ait mali tabloya ihtiyaç duyar.",
       "B": "Tek döneme uygulanabilir ve kalemleri bir bütüne (toplam aktif/net satışlar) oranlar.",
-      "C": "Dönemler arası tutar değişimini ölçer.",
-      "D": "Eğilim (trend) yüzdesi hesaplar.",
-      "E": "Baz yıl seçilerek uzun döneme yayılır."
+      "C": "Kalemlerin dönemler arası tutar artış ve azalışını esas alarak ölçer.",
+      "D": "Bir baz yıl seçip sonraki dönemler için eğilim (trend) yüzdesi hesaplayarak uzun döneme yayar.",
+      "E": "Bir baz yıl belirleyerek analizi uzun bir döneme yayan tekniktir."
     },
     "answer": "B",
     "solution": "**Dikey analiz** tek döneme uygulanır ve kalemleri bir bütüne oranlar. Diğer seçenekler (iki dönem, tutar değişimi, trend, baz yıl) yatay/trend analiz özellikleridir.",

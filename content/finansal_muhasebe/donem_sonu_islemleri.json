@@ -6,10 +6,10 @@
     "stem": "Bir hesap döneminde muhasebe sürecinin genel işleyiş sırası aşağıdakilerden hangisidir?",
     "options": {
       "A": "Açılış kaydı → Dönem içi işlemler → Genel geçici mizan → Envanter işlemleri → Kesin mizan → Mali tablolar → Kapanış kaydı",
-      "B": "Kapanış kaydı → Açılış kaydı → Dönem içi işlemler → Mizan",
-      "C": "Mali tablolar → Açılış kaydı → Envanter → Dönem içi işlemler",
-      "D": "Envanter işlemleri → Açılış kaydı → Kapanış kaydı → Mizan",
-      "E": "Dönem içi işlemler → Kapanış kaydı → Açılış kaydı → Envanter"
+      "B": "Kapanış kaydı → Açılış kaydı → Kesin mizan → Envanter işlemleri → Dönem içi işlemler → Genel geçici mizan → Mali tablolar",
+      "C": "Mali tablolar → Kesin mizan → Açılış kaydı → Genel geçici mizan → Envanter işlemleri → Dönem içi işlemler → Kapanış kaydı",
+      "D": "Envanter işlemleri → Kesin mizan → Açılış kaydı → Mali tablolar → Dönem içi işlemler → Genel geçici mizan → Kapanış kaydı",
+      "E": "Dönem içi işlemler → Açılış kaydı → Kapanış kaydı → Genel geçici mizan → Envanter işlemleri → Mali tablolar → Kesin mizan"
     },
     "answer": "A",
     "solution": "Muhasebe süreci: **Açılış kaydı → Dönem içi işlemler → Genel geçici mizan → Envanter (düzeltme) işlemleri → Kesin mizan → Mali tablolar → Kapanış kaydı** sırasıyla işler.",
@@ -27,10 +27,10 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Bir işletmede dönem başında yapılan açılış kaydı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnızca gelir ve gider hesapları açılır.",
-      "B": "Gelir tablosu hesapları devredilir.",
-      "C": "Hiçbir hesap açılmaz.",
-      "D": "Yalnızca kasa hesabı açılır.",
+      "A": "Açılış kaydında yalnızca dönem içinde kapatılan gelir ve gider hesapları yeniden açılır; hiçbir bilanço hesabı yeni döneme aktarılmaz.",
+      "B": "Önceki dönemin gelir ve gider (gelir tablosu) hesapları, kalanlarıyla birlikte yeni döneme açılış kaydıyla aynen devredilerek yeniden açılır.",
+      "C": "Açılış kaydı yapılmaz; yeni dönemde hiçbir hesap açılmadan doğrudan dönem içi işlemlerin kaydedilmesine başlanır.",
+      "D": "Açılış kaydında yalnızca 100 Kasa hesabı açılır; diğer varlık, borç ve özkaynak hesapları açılış dışında bırakılır.",
       "E": "Önceki dönemin kapanış bilançosundaki varlık, borç ve özkaynak (bilanço) hesapları yeni dönemde açılış kaydıyla yeniden açılır."
     },
     "answer": "E",
@@ -49,11 +49,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "'Mizan' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnızca kasadaki parayı gösteren bir belgedir.",
-      "B": "İşletmenin ortaklarını listeleyen bir belgedir.",
+      "A": "Yalnızca dönem sonunda kasadaki nakit mevcudunu gösteren, hesapların borç ve alacak toplamları ile kalanlarını hiçbir şekilde içermeyen basit bir sayım belgesidir.",
+      "B": "İşletmenin ortaklarını ve sermaye paylarını listeleyen, hesap kalanlarıyla ilgisi bulunmayan resmî bir ortaklık belgesidir; mizan değildir.",
       "C": "Belirli bir tarihte hesapların borç-alacak toplamlarını ve kalanlarını topluca gösteren, kayıtların matematiksel doğruluğunu kontrol etmeye yarayan bir çizelgedir.",
-      "D": "Yalnızca satışları gösteren bir rapordur.",
-      "E": "Bir vergi beyannamesidir."
+      "D": "Yalnızca dönem içindeki satış hasılatını gösteren, borç ve alacak kalanlarını içermeyen bir satış raporu niteliğindeki çizelgedir.",
+      "E": "Belirli bir dönemde ödenecek vergiyi hesaplamak için vergi dairesine verilen resmî bir beyanname olup hesap kalanlarını göstermez."
     },
     "answer": "C",
     "solution": "**Mizan**; belirli bir tarihte hesapların **borç-alacak toplamları ve kalanlarını** topluca gösteren, kayıtların matematiksel doğruluğunu kontrol etmeye yarayan bir çizelgedir.",
@@ -71,11 +71,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Doğru düzenlenmiş bir mizanda aşağıdaki eşitliklerden hangisi sağlanır?",
     "options": {
-      "A": "Borç toplamı, alacak toplamının iki katıdır.",
-      "B": "Alacak toplamı, borç toplamından her zaman büyüktür.",
-      "C": "Borç kalanı her zaman sıfırdır.",
+      "A": "Mizanda borç sütunu toplamı, alacak sütunu toplamının her zaman tam iki katı olmak zorundadır.",
+      "B": "Mizanda alacak kalanları toplamı, borç kalanları toplamından her zaman daha büyük olmalıdır.",
+      "C": "Mizanda borç kalanları toplamı her koşulda sıfıra eşit çıkar; alacak tarafı bakiye vermez.",
       "D": "Borç sütunu toplamı = Alacak sütunu toplamı ve Borç kalanları toplamı = Alacak kalanları toplamı",
-      "E": "Mizanda eşitlik aranmaz."
+      "E": "Mizanda borç ve alacak sütunları arasında herhangi bir eşitlik aranmaz; toplamların tutması gerekmez."
     },
     "answer": "D",
     "solution": "Çift taraflı kayıt gereği mizanda **Borç toplamı = Alacak toplamı** ve **Borç kalanları toplamı = Alacak kalanları toplamı** eşitlikleri sağlanır. Eşitlik yoksa kayıt/aktarma hatası vardır.",
@@ -93,11 +93,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "'Muhasebe dışı envanter' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Hesap kalanlarının defterlerden okunması",
+      "A": "Hesap kalanlarının yalnızca yevmiye ve defterikebir kayıtlarından okunarak fiilî sayım yapılmaksızın tespit edilmesidir.",
       "B": "Dönem sonunda varlık ve borçların fiilî sayım, ölçüm, tartım ve değerleme yoluyla gerçek durumunun tespit edilmesi",
-      "C": "Yalnızca gelir tablosunun düzenlenmesi",
-      "D": "Yalnızca mizan çıkarılması",
-      "E": "Kapanış kaydının yapılması"
+      "C": "Dönem sonunda yalnızca gelir tablosunun düzenlenmesi olup varlık ve borçların fiilen sayılmasını kapsamayan bir işlemdir.",
+      "D": "Yalnızca genel geçici mizanın çıkarılması işlemi olup varlıkların fiilî sayım ve değerlemesini içermeyen bir aşamadır.",
+      "E": "Bilanço hesaplarının karşılıklı olarak kapatıldığı kapanış kaydının yapılması işlemidir; fiilî sayımla ilgisi yoktur."
     },
     "answer": "B",
     "solution": "**Muhasebe dışı envanter**; dönem sonunda varlık ve borçların **fiilî sayım, ölçüm, tartım ve değerleme** yoluyla gerçek durumunun tespit edilmesidir. Kayıtlardaki (muhasebe içi) durumla karşılaştırılıp farklar düzeltilir.",
@@ -115,11 +115,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "'Muhasebe içi envanter' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Malların depoda fiilen sayılması",
-      "B": "Yalnızca fatura kesilmesi",
-      "C": "İşletmenin reklam yapması",
+      "A": "Depodaki malların yalnızca fiilen elle sayılması işlemi olup, sonuçların düzeltme kayıtlarıyla defterlere yansıtılmasını kapsamaz.",
+      "B": "İşletmenin dönem içinde müşterilere fatura kesmesi işlemi olup, dönem sonu düzeltme kayıtlarıyla hiçbir bağlantısı bulunmaz.",
+      "C": "İşletmenin ürün ve hizmetleri için reklam ve tanıtım yapması olup, muhasebe defterlerine yapılan düzeltme kayıtlarıyla ilgisi yoktur.",
       "D": "Muhasebe dışı envanterle tespit edilen gerçek durumun, muhasebe kayıtlarına (düzeltme/envanter kayıtlarıyla) yansıtılması işlemidir.",
-      "E": "Banka hesabının açılması"
+      "E": "Yalnızca yeni bir banka hesabının açılması işlemi olup, fiilî envanter sonuçlarının kayıtlara aktarılmasıyla ilgisi bulunmaz."
     },
     "answer": "D",
     "solution": "**Muhasebe içi envanter**; muhasebe dışı envanterle (fiilî tespitle) belirlenen gerçek durumun, **düzeltme (envanter) kayıtlarıyla muhasebe kayıtlarına yansıtılması** işlemidir.",
@@ -138,10 +138,10 @@
     "stem": "Dönem sonu envanter işlemlerinin temel amacı aşağıdakilerden hangisidir?",
     "options": {
       "A": "İşletmenin dönem sonundaki gerçek varlık, borç ve öz durumunu ile dönem sonucunu (kâr/zarar) doğru biçimde belirlemek",
-      "B": "Satışları artırmak",
-      "C": "Yeni ortak bulmak",
-      "D": "Vergi ödememek",
-      "E": "Reklam bütçesi hazırlamak"
+      "B": "Dönem sonunda ürün satışlarını hızlandırıp cari dönemin satış hasılatını olabildiğince yükseltmek ve pazar payını artırmaktır.",
+      "C": "İşletmeye sermaye koyacak yeni ortaklar bulup özkaynağı güçlendirmek ve gelecek dönemin yatırımlarını finanse etmektir.",
+      "D": "Dönem sonucunu düşük göstererek işletmenin ödeyeceği vergiyi tamamen ortadan kaldırmak ve vergi yükünü sıfırlamaktır.",
+      "E": "Gelecek döneme ilişkin reklam ve tanıtım bütçesini hazırlayıp pazarlama harcamalarının planını önceden oluşturmaktır."
     },
     "answer": "A",
     "solution": "Envanter işlemlerinin amacı; işletmenin dönem sonundaki **gerçek durumunu** (varlık, borç, özkaynak) ve **dönem sonucunu (kâr/zarar)** doğru belirlemek, mali tabloların gerçeği yansıtmasını sağlamaktır.",
@@ -225,11 +225,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Dönem sonunda maddi duran varlıklar için ayrılan amortismanın kaydında hangi düzenleyici hesap alacaklandırılır?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "153 Ticari Mallar",
+      "A": "600 Yurt İçi Satışlar hesabı",
+      "B": "153 Ticari Mallar (stok) hesabı",
       "C": "257 Birikmiş Amortismanlar (-)",
-      "D": "320 Satıcılar",
-      "E": "102 Bankalar"
+      "D": "320 Satıcılar (borç) hesabı",
+      "E": "102 Bankalar (varlık) hesabı"
     },
     "answer": "C",
     "solution": "Dönem sonu amortisman kaydında ilgili gider hesabı (770/730 vb.) borçlandırılır; düzenleyici **257 Birikmiş Amortismanlar (-)** alacaklandırılır.",
@@ -292,10 +292,10 @@
     "stem": "Bu dönemde peşin ödenen ancak gelecek aylara/döneme ait olan giderler, dönem sonunda Tekdüzen Hesap Planı'nda hangi hesaba aktarılır?",
     "options": {
       "A": "180 Gelecek Aylara Ait Giderler (ve/veya 280 Gelecek Yıllara Ait Giderler)",
-      "B": "380 Gelecek Aylara Ait Gelirler",
-      "C": "381 Gider Tahakkukları",
-      "D": "600 Yurt İçi Satışlar",
-      "E": "320 Satıcılar"
+      "B": "380 Gelecek Aylara Ait Gelirler (ve/veya 480 Gelecek Yıllara Ait Gelirler)",
+      "C": "381 Gider Tahakkukları (ve/veya 481 Uzun Vadeli Gider Tahakkukları) hesabı",
+      "D": "600 Yurt İçi Satışlar (ve/veya 601 Yurt Dışı Satışlar) hasılat hesabı",
+      "E": "320 Satıcılar (ve/veya 321 Borç Senetleri) ticari borç hesabı"
     },
     "answer": "A",
     "solution": "Peşin ödenip gelecek dönem(ler)e ait olan giderler, dönemsellik gereği **180 Gelecek Aylara Ait Giderler** (bir yıldan uzun kısım 280 Gelecek Yıllara Ait Giderler) hesabına aktarılır; ait olduğu dönemde gidere dönüşür.",
@@ -313,11 +313,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Bu dönemde peşin tahsil edilen ancak gelecek aylara/döneme ait olan gelirler, dönem sonunda Tekdüzen Hesap Planı'nda hangi hesaba aktarılır?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler",
+      "A": "180 Gelecek Aylara Ait Giderler (ve/veya 280 Gelecek Yıllara Ait Giderler)",
       "B": "380 Gelecek Aylara Ait Gelirler (ve/veya 480 Gelecek Yıllara Ait Gelirler)",
-      "C": "181 Gelir Tahakkukları",
-      "D": "600 Yurt İçi Satışlar",
-      "E": "120 Alıcılar"
+      "C": "181 Gelir Tahakkukları (ve/veya 281 Uzun Vadeli Gelir Tahakkukları) hesabı",
+      "D": "600 Yurt İçi Satışlar (ve/veya 649 Diğer Olağan Gelir ve Kârlar) hesabı",
+      "E": "120 Alıcılar (ve/veya 121 Alacak Senetleri) ticari alacak hesabı"
     },
     "answer": "B",
     "solution": "Peşin tahsil edilip gelecek dönem(ler)e ait olan gelirler, **380 Gelecek Aylara Ait Gelirler** (bir yıldan uzun kısım 480 Gelecek Yıllara Ait Gelirler) hesabına aktarılır; ait olduğu dönemde gelire dönüşür.",
@@ -445,11 +445,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Bir mizanda borç toplamı ile alacak toplamının birbirine eşit olmaması ne anlama gelir?",
     "options": {
-      "A": "İşletme kâr etmiştir.",
-      "B": "İşletme zarar etmiştir.",
+      "A": "İşletmenin ilgili dönemde kâr ettiğini gösterir; borç toplamının fazlası doğrudan dönem kârına eşittir.",
+      "B": "İşletmenin ilgili dönemde zarar ettiğini gösterir; alacak toplamının fazlası doğrudan dönem zararını verir.",
       "C": "Kayıt, aktarma veya toplama aşamasında bir hata yapıldığını gösterir; eşitlik sağlanana kadar hata aranmalıdır.",
-      "D": "Mizanda eşitlik hiç aranmaz, normaldir.",
-      "E": "Dönem kârı doğru hesaplanmıştır."
+      "D": "Mizanda borç ve alacak toplamlarının eşit olmaması olağandır; çift taraflı kayıtta böyle bir eşitlik hiç aranmaz.",
+      "E": "Dönem kârının doğru hesaplandığını ve tüm envanter kayıtlarının eksiksiz yapıldığını kesin olarak kanıtlar."
     },
     "answer": "C",
     "solution": "Çift taraflı kayıt gereği borç ve alacak toplamları eşit olmalıdır. Eşit değilse **kayıt/aktarma/toplama hatası** vardır; eşitlik sağlanana dek hata aranır. (Eşitlik, her hatanın olmadığını garanti etmez ancak temel bir kontroldür.)",
@@ -621,10 +621,10 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Genel geçici mizan, muhasebe sürecinde ne zaman düzenlenir?",
     "options": {
-      "A": "Envanter (düzeltme) işlemlerinden sonra",
-      "B": "Mali tablolar düzenlendikten sonra",
-      "C": "Kapanış kaydından sonra",
-      "D": "Açılış kaydından hemen önce",
+      "A": "Envanter düzeltme işlemleri bitirilip kesin mizan çıkarıldıktan sonra yapılır.",
+      "B": "Mali tablolar düzenlenip dönem sonucu belirlendikten sonra düzenlenir.",
+      "C": "Kapanış kaydı yapılıp bütün bilanço hesapları kapatıldıktan sonra düzenlenir.",
+      "D": "Dönem başında açılış kaydından hemen önce, hiç işlem kaydedilmeden düzenlenir.",
       "E": "Dönem içi işlemler kaydedildikten sonra, envanter işlemlerinden önce"
     },
     "answer": "E",
@@ -819,10 +819,10 @@
     "konu": "donem_sonu_islemleri",
     "stem": "'180 Gelecek Aylara Ait Giderler' ile '280 Gelecek Yıllara Ait Giderler' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de bir gelir hesabıdır.",
-      "B": "İkisi de satış hasılatıdır.",
-      "C": "180 uzun vadeli, 280 kısa vadelidir.",
-      "D": "180 bir borç, 280 bir özkaynak hesabıdır.",
+      "A": "İki hesap da bir gelir hesabı olup, peşin tahsil edilen ve ait olduğu dönem beklenen hasılat tutarlarını izler; aralarındaki fark yalnızca vadelerinin uzunluğudur.",
+      "B": "İki hesap da satış hasılatı niteliğindedir; 180 dönem içi peşin satışları, 280 ise vadeli satışları izler ve ikisi de doğrudan gelir tablosunda raporlanır.",
+      "C": "180 bir yıldan uzun sürede gider olacak uzun vadeli peşin ödemeleri, 280 ise bir yıl içinde gider olacak kısa vadeli peşin ödemeleri izleyen hesaptır.",
+      "D": "180 işletmenin uzun vadeli bir borç hesabı, 280 ise özkaynaklar içinde yer alan bir sermaye yedeği hesabı olup peşin ödenen giderlerle ilgisi yoktur.",
       "E": "180 içinde bulunulan dönemi izleyen bir yıl (aylar) içinde gider olacak peşin ödemeleri; 280 ise bir yıldan uzun sürede gider olacak peşin ödemeleri izler."
     },
     "answer": "E",
@@ -841,11 +841,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Dönem sonunda gelir ve gider hesaplarının 690'a devredilmesinin sonucu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "6 grubu (gelir tablosu) hesapları bir sonraki döneme devreder.",
-      "B": "Hiçbir hesap kapatılmaz.",
-      "C": "Bilanço hesapları kapatılır, gelir tablosu hesapları devreder.",
+      "A": "Dönem sonunda 6 grubu (gelir tablosu) hesapları kapatılmaz; bakiyeleriyle birlikte bir sonraki döneme aynen devrederek kullanılır.",
+      "B": "Dönem sonunda 690'a hiçbir devir yapılmaz; gelir, gider ve bilanço hesaplarının tamamı bakiyeleriyle izleyen döneme aktarılır.",
+      "C": "Dönem sonunda bilanço hesapları 690'a devredilerek kapatılır; buna karşılık gelir tablosu hesapları izleyen döneme devreder.",
       "D": "6 grubu (gelir tablosu) hesapları kapatılır (bakiyeleri sıfırlanır); yalnızca bilanço hesapları izleyen döneme devreder.",
-      "E": "Yalnızca kasa hesabı kapatılır."
+      "E": "Dönem sonunda gelir ve gider hesapları içinde yalnızca 100 Kasa hesabı 690'a devredilerek kapatılır; kalan tüm hesaplar açık bırakılır."
     },
     "answer": "D",
     "solution": "Sonuç hesapları (6 grubu) dönem sonunda 690'a devredilerek **kapatılır** (bakiyeleri sıfırlanır). İzleyen döneme yalnızca **bilanço hesapları** (varlık, borç, özkaynak) devreder; bu nedenle her dönemin sonucu ayrı belirlenir.",
@@ -1017,11 +1017,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Muhasebe dışı envanter ile muhasebe içi envanter arasındaki ilişki ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi birbirinden bağımsızdır, karşılaştırılmaz.",
-      "B": "İkisi de yalnızca gelir tablosu düzenlemektir.",
-      "C": "Önce muhasebe içi envanter, sonra fiilî sayım yapılır ve fiilî sayım hiç dikkate alınmaz.",
+      "A": "Muhasebe dışı envanter ile muhasebe içi envanter birbirinden tümüyle bağımsız işlemlerdir; sonuçları hiçbir aşamada karşılaştırılmaz ve aralarındaki fark için düzeltme kaydı yapılmaz.",
+      "B": "Muhasebe dışı ve muhasebe içi envanterin ikisi de yalnızca gelir tablosunun düzenlenmesinden ibarettir; varlık ve borçların sayım ve değerlemesini kapsamaz.",
+      "C": "Önce muhasebe içi envanterle kayıtlı durum belirlenir, sonra fiilî sayım yapılır; ancak fiilî sayım sonuçları hiç dikkate alınmaz ve kayıtlar değiştirilmez.",
       "D": "Önce muhasebe dışı envanterle (fiilî sayım/değerleme) gerçek durum tespit edilir; sonra muhasebe içi envanterle (düzeltme kayıtları) bu durum kayıtlara yansıtılır.",
-      "E": "İkisi de kapanış kaydından sonra yapılır."
+      "E": "Muhasebe dışı ve muhasebe içi envanterin ikisi de ancak kapanış kaydı yapıldıktan sonra gerçekleştirilir; dönem içinde bunlara hiç başvurulmaz."
     },
     "answer": "D",
     "solution": "Önce **muhasebe dışı envanter** (fiilî sayım, ölçüm, değerleme) ile gerçek durum tespit edilir; sonra **muhasebe içi envanter** (düzeltme kayıtları) ile bu gerçek durum kayıtlara yansıtılır. İki envanter arasındaki fark düzeltilir.",
@@ -1039,10 +1039,10 @@
     "konu": "donem_sonu_islemleri",
     "stem": "'180 Gelecek Aylara Ait Giderler' ile '380 Gelecek Aylara Ait Gelirler' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de bir gider hesabıdır.",
-      "B": "İkisi de özkaynak hesabıdır.",
-      "C": "180 bir gelir, 380 bir gider hesabıdır.",
-      "D": "180 pasif, 380 aktiftir.",
+      "A": "İki hesap da bir gider hesabı olup; 180 peşin ödenen giderleri, 380 ise tahakkuk etmiş giderleri izler ve ikisi de doğrudan dönem giderine yazılır.",
+      "B": "İki hesap da özkaynaklar içinde yer alan yedek hesaplarıdır; 180 sermaye yedeklerini, 380 ise kâr yedeklerini izler ve gelir-giderle ilgisi bulunmaz.",
+      "C": "180 peşin tahsil edilen ama gelecek döneme ait bir gelir hesabı; 380 ise peşin ödenen ama gelecek döneme ait bir gider hesabı olup nitelikleri terstir.",
+      "D": "180 peşin tahsil edilmiş gelirleri izleyen bir pasif hesap; 380 ise peşin ödenmiş giderleri izleyen bir aktif hesap olup bilançodaki yerleri terstir.",
       "E": "180 peşin ödenmiş ama gelecek döneme ait giderleri (aktif); 380 ise peşin tahsil edilmiş ama gelecek döneme ait gelirleri (pasif) izler."
     },
     "answer": "E",
@@ -1084,10 +1084,10 @@
     "stem": "Dönem sonunda yapılan kapanış kaydının mantığı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Kalan bilanço hesapları; aktif (borç kalanı veren) hesaplar alacaklandırılıp pasif (alacak kalanı veren) hesaplar borçlandırılarak karşılıklı kapatılır.",
-      "B": "Gelir ve gider hesapları kapanış kaydıyla kapatılır.",
-      "C": "Yalnızca kasa hesabı kapatılır.",
-      "D": "Hiçbir hesap kapatılmaz, tümü devreder.",
-      "E": "Kapanış kaydı dönem başında yapılır."
+      "B": "Kapanış kaydında gelir ve gider hesapları karşılıklı borç-alacak yazılarak kapatılır; kalan bilanço hesaplarına ise hiç dokunulmaz ve bunlar açık bırakılır.",
+      "C": "Kapanış kaydında yalnızca 100 Kasa hesabı alacaklandırılarak kapatılır; diğer tüm varlık, borç ve özkaynak hesapları bakiyeleriyle bir sonraki döneme devreder.",
+      "D": "Kapanış kaydında hiçbir hesap kapatılmaz; varlık, borç ve özkaynak hesaplarının tamamı bakiyeleriyle birlikte hiç düzeltilmeden izleyen döneme aktarılır.",
+      "E": "Kapanış kaydı dönemin başında, açılış kaydından hemen önce yapılır; böylece önceki dönemin bilanço hesapları yeni dönemde tek kayıtla kapatılmış olur."
     },
     "answer": "A",
     "solution": "Kapanış kaydında kalan **bilanço hesapları** karşılıklı kapatılır: aktifler (borç kalanı) **alacaklandırılır**, pasifler (alacak kalanı) **borçlandırılır**. (Gelir/gider hesapları zaten daha önce 690'a devredilip kapatılmıştır.)",
@@ -1215,11 +1215,11 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Dönem sonu envanterinde varlık ve borçların değerlemesi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Tüm varlıklar her zaman satış fiyatıyla değerlenir.",
+      "A": "Dönem sonu envanterinde bütün varlıklar her koşulda güncel satış fiyatıyla değerlenir; maliyet bedeli, mukayyet değer gibi başka bir ölçü hiçbir kıymet için uygulanmaz.",
       "B": "Varlık ve borçlar, Vergi Usul Kanunu'nda her iktisadi kıymet için öngörülen değerleme ölçüleriyle (maliyet bedeli, mukayyet değer, borsa rayici vb.) değerlenir.",
-      "C": "Değerleme yapılmaz, kayıtlı değerler aynen bırakılır.",
-      "D": "Tüm varlıklar nominal değerle değerlenir.",
-      "E": "Değerleme yalnızca kasa için yapılır."
+      "C": "Dönem sonu envanterinde hiçbir varlık ve borç için değerleme yapılmaz; bütün iktisadi kıymetler defterlerdeki kayıtlı değerleriyle hiç değiştirilmeden aynen bırakılır.",
+      "D": "Dönem sonu envanterinde bütün varlıklar ayrımsız biçimde nominal (itibarî) değerle değerlenir; VUK'taki farklı değerleme ölçüleri hiçbir iktisadi kıymet için dikkate alınmaz.",
+      "E": "Dönem sonu envanterinde değerleme yalnızca 100 Kasa hesabı için yapılır; stoklar, alacaklar ve duran varlıklar dâhil diğer hiçbir kıymet için değerleme uygulanmaz."
     },
     "answer": "B",
     "solution": "Dönem sonu envanterinde varlık ve borçlar, **VUK'ta her iktisadi kıymet için öngörülen değerleme ölçüleriyle** (maliyet bedeli, mukayyet değer, borsa rayici, tasarruf değeri vb.) değerlenir; farklar düzeltme kayıtlarıyla yansıtılır.",
@@ -1281,10 +1281,10 @@
     "konu": "donem_sonu_islemleri",
     "stem": "Muhasebe sürecinde 'mali tabloların düzenlenmesi' hangi aşamadan sonra yapılır?",
     "options": {
-      "A": "Açılış kaydından hemen sonra",
-      "B": "Genel geçici mizandan önce",
-      "C": "Dönem içi ilk işlemden hemen sonra",
-      "D": "Kapanış kaydından sonra",
+      "A": "Dönem başında açılış kaydı yapıldıktan hemen sonra düzenlenir.",
+      "B": "Dönem içi işlemler kaydedilip genel geçici mizandan önce düzenlenir.",
+      "C": "Dönemin ilk işlemi kaydedildikten hemen sonra düzenlenir.",
+      "D": "Kapanış kaydı yapılıp bilanço hesapları kapatıldıktan sonra düzenlenir.",
       "E": "Envanter işlemleri tamamlanıp kesin mizan düzenlendikten sonra"
     },
     "answer": "E",

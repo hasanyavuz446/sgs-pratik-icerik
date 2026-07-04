@@ -5,11 +5,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Maliyet-Hacim-Kâr (MHK) analizi temel olarak neyi inceler?",
     "options": {
-      "A": "Yalnızca vergi tutarını",
+      "A": "Yalnızca dönem sonunda ödenecek kurumlar vergisinin tutarını ve dönemini",
       "B": "Satış hacmi, maliyetler (sabit/değişken) ve kâr arasındaki ilişkiyi",
-      "C": "Yalnızca stok sayımını",
-      "D": "Ortakların paylarını",
-      "E": "Reklam bütçesini"
+      "C": "Yalnızca dönem sonu stok sayımı ve değerleme yöntemini",
+      "D": "Ortakların sermaye payları ile temettü dağıtım oranını",
+      "E": "İşletmenin reklam ve tanıtım bütçesinin bölümler arası dağılımını"
     },
     "answer": "B",
     "solution": "**Maliyet-Hacim-Kâr analizi**; satış hacmi, maliyetler (sabit ve değişken) ve kâr arasındaki ilişkiyi inceleyerek başabaş noktası, hedef kâr gibi kararlara temel oluşturur.",
@@ -28,10 +28,10 @@
     "stem": "Sabit maliyetlerin üretim/faaliyet hacmiyle ilişkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Belirli bir faaliyet aralığında toplam sabit maliyet hacimden bağımsız olarak değişmez (sabit kalır).",
-      "B": "Toplam sabit maliyet, hacim arttıkça artar.",
-      "C": "Toplam sabit maliyet her zaman sıfırdır.",
-      "D": "Sabit maliyet yalnızca satış hacmine eşittir.",
-      "E": "Sabit maliyet birim başına her zaman artar."
+      "B": "Toplam sabit maliyet, üretim hacmi arttıkça onunla tam orantılı olarak sürekli ve düzenli biçimde artar.",
+      "C": "Toplam sabit maliyet her faaliyet düzeyinde sıfıra eşit olduğundan dikkate alınmaz.",
+      "D": "Toplam sabit maliyet, dönem içindeki satış hasılatı tutarına daima eşit kabul edilir.",
+      "E": "Birim başına sabit maliyet, üretim hacmi arttıkça sürekli ve orantılı biçimde artar."
     },
     "answer": "A",
     "solution": "**Toplam sabit maliyet**, belirli bir faaliyet aralığında üretim/satış hacminden **bağımsızdır** (değişmez). Örn. kira, sigorta, amortisman.",
@@ -49,11 +49,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Değişken maliyetlerin üretim/faaliyet hacmiyle ilişkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Toplam değişken maliyet hacimden bağımsızdır.",
-      "B": "Değişken maliyet yalnızca kira gideridir.",
-      "C": "Toplam değişken maliyet her zaman sabittir.",
+      "A": "Toplam değişken maliyet, üretim hacminden tamamen bağımsız olup her düzeyde sabit kalır.",
+      "B": "Değişken maliyet kalemi yalnızca kira ve amortisman gibi giderlerden oluşmaktadır.",
+      "C": "Toplam değişken maliyet, hacim değişse de dönem boyunca hep aynı tutarda sabit kalır.",
       "D": "Toplam değişken maliyet, üretim/satış hacmiyle orantılı olarak artar veya azalır.",
-      "E": "Değişken maliyet birim başına hacimle artar."
+      "E": "Birim başına değişken maliyet, üretim hacmi arttıkça onunla orantılı biçimde artar."
     },
     "answer": "D",
     "solution": "**Toplam değişken maliyet**, üretim/satış hacmiyle **orantılı** olarak değişir (artar/azalır). Örn. direkt ilk madde, direkt işçilik. Birim değişken maliyet ise (genelde) sabittir.",
@@ -93,10 +93,10 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Birim başına değişken maliyet, üretim hacmi değiştiğinde (belirli aralıkta) nasıl davranır?",
     "options": {
-      "A": "Hacimle birlikte artar",
-      "B": "İki katına çıkar",
-      "C": "Hacimle birlikte azalır",
-      "D": "Sıfırlanır",
+      "A": "Hacim arttıkça orantılı olarak sürekli artar",
+      "B": "Hacimden bağımsız olarak iki katına çıkar",
+      "C": "Hacim arttıkça giderek azalır ve düşer",
+      "D": "Belirli bir noktadan sonra sıfıra iner",
       "E": "Genellikle değişmez (birim başına sabittir)"
     },
     "answer": "E",
@@ -203,10 +203,10 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Başabaş (kâra geçiş) noktası ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin en çok kâr ettiği noktadır.",
-      "B": "Değişken maliyetin sıfır olduğu noktadır.",
-      "C": "İşletmenin iflas ettiği noktadır.",
-      "D": "Sabit maliyetin sıfır olduğu noktadır.",
+      "A": "Toplam katkı payının en yüksek düzeye ulaştığı, kârın da azami olduğu satış düzeyidir.",
+      "B": "Toplam değişken maliyetlerin sıfıra indiği ve yalnızca sabit maliyetin kaldığı düzeydir.",
+      "C": "İşletmenin borçlarını ödeyemeyip faaliyetini durdurarak tümüyle iflasa gittiği kritik satış düzeyidir.",
+      "D": "Toplam sabit maliyetlerin sıfıra indiği ve yalnızca değişken maliyetin kaldığı satış düzeyidir.",
       "E": "Toplam gelirlerin toplam maliyetlere eşit olduğu, kâr veya zararın sıfır olduğu satış düzeyidir."
     },
     "answer": "E",
@@ -511,11 +511,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Güvenlik marjı (emniyet payı) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Sabit maliyet ile değişken maliyet arasındaki farktır.",
-      "B": "Birim satış fiyatı ile birim değişken maliyet arasındaki farktır.",
+      "A": "Toplam sabit maliyetler ile toplam değişken maliyetler arasındaki farktır; işletmenin gider yapısını ve maliyetlerinin denge düzeyini gösterir.",
+      "B": "Birim satış fiyatı ile birim değişken maliyet arasındaki farktır; her bir birimin sabit maliyete yaptığı katkıyı doğrudan gösterir.",
       "C": "Fiili (veya beklenen) satışlar ile başabaş noktası satışları arasındaki farktır; satışların zarara düşmeden ne kadar azalabileceğini gösterir.",
-      "D": "Toplam katkı payıdır.",
-      "E": "Vergi sonrası kârdır."
+      "D": "Toplam satışlardan yalnızca toplam değişken maliyetin düşülmesiyle bulunan toplam katkı payı tutarının ta kendisidir.",
+      "E": "Dönem kârından hesaplanan vergi karşılığı düşüldükten sonra kalan, ortaklara dağıtılabilir net kâr tutarını ifade eder."
     },
     "answer": "C",
     "solution": "**Güvenlik marjı = Fiili (beklenen) Satışlar − Başabaş Satışları**. Satışların, zarara geçmeden (başabaşa inmeden) ne kadar azalabileceğini gösteren bir tampondur.",
@@ -732,10 +732,10 @@
     "stem": "Diğer koşullar sabitken toplam sabit maliyetin artması başabaş noktasını nasıl etkiler?",
     "options": {
       "A": "Başabaş noktasını yükseltir (daha çok satış gerekir).",
-      "B": "Başabaş noktasını düşürür.",
-      "C": "Başabaş noktasını etkilemez.",
-      "D": "Başabaş noktasını sıfırlar.",
-      "E": "Katkı payını artırır."
+      "B": "Başabaş noktasını düşürür; daha az satışla kâra geçilir.",
+      "C": "Başabaş noktasını hiç etkilemez; aynı düzeyde bırakır.",
+      "D": "Başabaş noktasını doğrudan sıfıra indirir ve kaldırır.",
+      "E": "Birim katkı payını artırarak başabaşı aşağı çeker."
     },
     "answer": "A",
     "solution": "Başabaş = Sabit Maliyet ÷ Birim Katkı Payı olduğundan, sabit maliyet artınca başabaş noktası **yükselir** (kâra geçmek için daha çok satış gerekir).",
@@ -753,11 +753,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Diğer koşullar sabitken birim değişken maliyetin artması başabaş noktasını nasıl etkiler?",
     "options": {
-      "A": "Katkı payını artırıp başabaşı düşürür.",
-      "B": "Başabaşı etkilemez.",
+      "A": "Birim katkı payını artırır; bu da başabaş noktasını aşağı çeker.",
+      "B": "Birim katkı payını da başabaş noktasını da hiç etkilemez.",
       "C": "Birim katkı payını azaltır; bu da başabaş noktasını yükseltir.",
-      "D": "Sabit maliyeti düşürür.",
-      "E": "Satış fiyatını artırır."
+      "D": "Toplam sabit maliyeti düşürerek başabaş noktasını azaltır.",
+      "E": "Birim satış fiyatını yükselterek katkı payını büyütür."
     },
     "answer": "C",
     "solution": "Birim değişken maliyet artınca **birim katkı payı azalır** (fiyat − değişken). Katkı payı azalınca başabaş (= sabit ÷ katkı) **yükselir**.",
@@ -1171,11 +1171,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Basit maliyet-hacim-kâr analizinin dayandığı varsayımlardan biri aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Satış fiyatı her birimde değişir.",
-      "B": "Sabit maliyetler her birimde artar.",
-      "C": "Değişken maliyetler hacimden bağımsızdır.",
+      "A": "Birim satış fiyatı, satılan her bir ürün için sürekli olarak farklı bir tutarda gerçekleşir.",
+      "B": "Toplam sabit maliyetler, üretilen her ek birimle birlikte orantılı olarak sürekli artar.",
+      "C": "Toplam değişken maliyetler, üretim hacmi ne olursa olsun hiç değişmeden sabit kalır.",
       "D": "Birim satış fiyatı ve birim değişken maliyet, ilgili faaliyet aralığında sabit kabul edilir.",
-      "E": "Kâr her zaman sıfırdır."
+      "E": "Dönem kârı, satış hacminden bağımsız olarak her koşulda sıfıra eşit kabul edilir."
     },
     "answer": "D",
     "solution": "Basit MHK analizinde; **birim satış fiyatı ve birim değişken maliyetin sabit** olduğu, sabit maliyetlerin ilgili aralıkta değişmediği, maliyetlerin sabit/değişken ayrılabildiği ve (tek ürün veya sabit satış karması) varsayımları geçerlidir.",
@@ -1281,11 +1281,11 @@
     "konu": "maliyet_hacim_kar",
     "stem": "Katkı payının işletme kararları açısından temel işlevi aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Yalnızca vergi hesaplamak",
+      "A": "Yalnızca dönem sonunda ödenecek olan kurumlar vergisi karşılığını hesaplamak amacıyla kullanılan tamamlayıcı bir orandır",
       "B": "Önce sabit maliyetleri karşılamak, sonra kâra katkı sağlamak; başabaş ve hedef kâr analizlerinin temelini oluşturmak",
-      "C": "Yalnızca stok saymak",
-      "D": "Ortaklara temettü dağıtmak",
-      "E": "Amortisman hesaplamak"
+      "C": "Yalnızca dönem sonu mal mevcudunu saymak ve stok değerlemesini yapmak amacıyla kullanılır",
+      "D": "Yalnızca ortaklara dağıtılacak temettü tutarını belirlemek amacıyla kullanılan bir ölçüttür",
+      "E": "Yalnızca duran varlıkların yıllık amortisman giderini hesaplamak için başvurulan bir yöntemdir"
     },
     "answer": "B",
     "solution": "Katkı payı; her birimin önce **sabit maliyetleri karşılamaya**, sonra **kâra** yaptığı katkıyı gösterir; başabaş noktası ve hedef kâr analizlerinin temelidir.",

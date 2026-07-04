@@ -5,11 +5,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "Muhasebede 'yabancı kaynaklar' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletme sahiplerinin işletmeye koyduğu sermaye",
-      "B": "İşletmenin kasasındaki nakit",
-      "C": "İşletmenin sahip olduğu maddi duran varlıklar",
+      "A": "İşletme sahiplerinin işletmeye tahsis ettiği ve geri ödeme yükümlülüğü bulunmayan sermaye ile yedekler",
+      "B": "İşletmenin kasa ve bankada tuttuğu, dilediği an kullanabileceği nakit ile nakit benzeri hazır değerler",
+      "C": "İşletmenin faaliyetinde kullanmak üzere edindiği bina, makine, taşıt gibi maddi duran varlıkların tümü",
       "D": "İşletmenin üçüncü kişilere (satıcılar, bankalar, personel, devlet vb.) olan borçları (yükümlülükleri)",
-      "E": "İşletmenin elde ettiği kâr"
+      "E": "İşletmenin dönem içindeki faaliyetlerinden elde ettiği ve özkaynağı artıran net dönem kârı ile gelirleri"
     },
     "answer": "D",
     "solution": "**Yabancı kaynaklar (borçlar)**; işletmenin üçüncü kişilere (satıcılar, bankalar, personel, devlet vb.) olan **borçlarını (yükümlülüklerini)** ifade eder. İşletme sahiplerinin hakkı ise özkaynaktır.",
@@ -27,11 +27,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "Yabancı kaynakların 'kısa vadeli (3 grubu)' ve 'uzun vadeli (4 grubu)' olarak ayrılmasında temel ölçüt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Borcun tutarı",
+      "A": "Borcun anapara tutarının işletmenin toplam özkaynağına oranla büyük mü küçük mü olduğu",
       "B": "Borcun vadesinin bilanço tarihinden itibaren bir yılın altında mı yoksa üstünde mi olduğu",
-      "C": "Alacaklının kim olduğu",
-      "D": "Borcun senetli olup olmadığı",
-      "E": "Borcun döviz cinsinden olup olmadığı"
+      "C": "Borcun karşı tarafının bir satıcı mı, banka mı yoksa işletmenin ortağı mı olduğunun tespiti",
+      "D": "Borcun bir senede (bono/poliçe) bağlanmış ve teminata alınmış olup olmadığının belirlenmesi",
+      "E": "Borcun Türk lirası cinsinden mi yoksa yabancı para (döviz) cinsinden mi doğduğunun ayrımı"
     },
     "answer": "B",
     "solution": "Ayrımın ölçütü **vadedir**: bilanço tarihinden itibaren **bir yıl içinde** ödenecek borçlar kısa vadeli (3 grubu), **bir yıldan uzun** vadeliler ise uzun vadeli (4 grubu) yabancı kaynaktır.",
@@ -247,11 +247,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "İşletmenin personelin ücretinden kestiği ve kendi işveren payıyla birlikte SGK'ya ödeyeceği sigorta primleri Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
-      "A": "360 Ödenecek Vergi ve Fonlar",
-      "B": "335 Personele Borçlar",
+      "A": "360 Ödenecek Vergi ve Fonlar (vergi dairesine)",
+      "B": "335 Personele Borçlar (ödenecek net ücret)",
       "C": "361 Ödenecek Sosyal Güvenlik Kesintileri",
-      "D": "770 Genel Yönetim Giderleri",
-      "E": "331 Ortaklara Borçlar"
+      "D": "770 Genel Yönetim Giderleri (dönem gideri)",
+      "E": "331 Ortaklara Borçlar (ortaklara olan borç)"
     },
     "answer": "C",
     "solution": "SGK'ya ödenecek (işçi + işveren payı) sigorta primleri **361 Ödenecek Sosyal Güvenlik Kesintileri** hesabında izlenir.",
@@ -490,10 +490,10 @@
     "stem": "Uzun vadeli bir banka kredisinin, anapara taksitlerinden ve faizlerinden vadesi bir yılın altına inen (bilanço tarihinden itibaren bir yıl içinde ödenecek) kısmı Tekdüzen Hesap Planı'nda hangi hesaba aktarılır?",
     "options": {
       "A": "303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri",
-      "B": "300 Banka Kredileri",
-      "C": "320 Satıcılar",
-      "D": "405 Çıkarılmış Tahviller",
-      "E": "400 Banka Kredileri"
+      "B": "300 Banka Kredileri (kısa vadeli olarak yeniden düzenlenen kredi)",
+      "C": "320 Satıcılar (ticari bir borca dönüştürülerek izlenen tutar)",
+      "D": "405 Çıkarılmış Tahviller (uzun vadeli tahvil borcuna aktarılan)",
+      "E": "400 Banka Kredileri (uzun vadede bırakılmaya devam eden kısım)"
     },
     "answer": "A",
     "solution": "Uzun vadeli kredilerin, vadesi bir yılın altına inen anapara taksiti ve faizleri **303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri** hesabına (kısa vadeli, 3 grubu) aktarılır.",
@@ -511,11 +511,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "İşletmenin borç senetleri için dönem sonunda yapılan reeskont işlemi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Reeskont, borç senetlerini artırır ve gider (657) doğurur.",
-      "B": "Reeskont borç senetlerinin nominal değerini yükseltir.",
-      "C": "Reeskont yalnızca alacak senetlerinde yapılır, borç senetlerinde yapılmaz.",
+      "A": "Reeskont, borç senetlerinin kayıtlı değerini artıran bir işlemdir; 322 Borç Senetleri Reeskontu hesabı alacaklandırılır ve karşılığında 657 Reeskont Faiz Giderleri hesabı borçlandırılır.",
+      "B": "Reeskont, borç senedinin üzerinde yazılı nominal (itibari) değeri yükselterek işletmenin gelecekte ödemek zorunda kalacağı toplam borç tutarını fiilen büyüten bir düzeltmedir.",
+      "C": "Reeskont işlemi yalnızca aktifte izlenen alacak senetleri için yapılabilir; pasifte yer alan borç senetleri için dönem sonunda herhangi bir reeskont hesaplaması yapılmaz.",
       "D": "Borç senetleri reeskontu, borcu bugünkü değerine indirger; 322 Borç Senetleri Reeskontu (-) hesabı borçlandırılır ve karşılığında 647 Reeskont Faiz Gelirleri doğar.",
-      "E": "Reeskont, 780 Finansman Giderleri'ne kaydedilir."
+      "E": "Reeskont bir finansman gideri olarak kabul edilir; hesaplanan tutar 780 Finansman Giderleri hesabına borç, 322 Borç Senetleri Reeskontu hesabına ise alacak kaydedilir."
     },
     "answer": "D",
     "solution": "Borç senetleri reeskontu borcu **bugünkü değerine** indirger: **322 Borç Senetleri Reeskontu (-) (B)** / **647 Reeskont Faiz Gelirleri (A)**. Borç azaldığı için işletme lehine **gelir** doğar. (Alacak senetleri reeskontu ise 657 gider doğurur.)",
@@ -842,10 +842,10 @@
     "stem": "'320 Satıcılar' hesabının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Bir pasif (kaynak) hesabıdır; borç doğduğunda alacaklandırılır, ödendiğinde borçlandırılır ve alacak kalanı verir.",
-      "B": "Bir aktif hesabıdır; borç kalanı verir.",
-      "C": "Bir gelir hesabıdır.",
-      "D": "Bir gider hesabıdır.",
-      "E": "Nazım hesaptır."
+      "B": "Bir aktif (varlık) hesabıdır; borç doğduğunda borçlandırılır, tahsil edildiğinde alacaklandırılır ve normalde borç kalanı verir.",
+      "C": "Bir gelir hesabıdır; dönem içinde alacaklandırılır, dönem sonunda 690 Dönem Kârı veya Zararı hesabına devredilerek kapatılır.",
+      "D": "Bir gider hesabıdır; oluştukça borçlandırılır, dönem sonunda sonuç hesaplarına aktarılarak kapatıldığından bilançoda kalan vermez.",
+      "E": "Bir nazım (kayıt dışı) hesaptır; bilanço toplamına dahil edilmez, yalnızca izleme amacıyla çift taraflı olarak çalıştırılan bir hesaptır."
     },
     "answer": "A",
     "solution": "**320 Satıcılar** bir **pasif (kaynak)** hesabıdır; ticari borç doğduğunda **alacaklandırılır (A)**, borç ödendiğinde **borçlandırılır (B)** ve normalde **alacak kalanı** verir.",
@@ -863,10 +863,10 @@
     "konu": "yabanci_kaynaklar",
     "stem": "'300 Banka Kredileri' ile '320 Satıcılar' arasındaki temel nitelik farkı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "300 bir varlık, 320 bir borçtur.",
-      "B": "İkisi de özkaynak hesabıdır.",
-      "C": "300 uzun vadeli, 320 ise her zaman uzun vadelidir.",
-      "D": "İkisi de gelir hesabıdır.",
+      "A": "300 Banka Kredileri bir aktif (varlık) hesabıdır; 320 Satıcılar ise işletmenin bir borcunu gösteren pasif hesaptır.",
+      "B": "İkisi de özkaynak grubunda yer alır; 300 ödenmiş sermayeyi, 320 ise dağıtılmamış geçmiş yıl kârlarını temsil eder.",
+      "C": "300 Banka Kredileri her zaman uzun vadelidir; 320 Satıcılar da vadesi bir yılı aşan uzun vadeli bir borçtur.",
+      "D": "İkisi de gelir hesabıdır; 300 elde edilen faiz gelirini, 320 ise satışlardan doğan hasılatı izlemekte kullanılır.",
       "E": "300 mali (finansal) bir borç (bankadan sağlanan kredi), 320 ise ticari bir borçtur (mal/hizmet alımından doğan)."
     },
     "answer": "E",
@@ -1061,10 +1061,10 @@
     "konu": "yabanci_kaynaklar",
     "stem": "'340 Alınan Sipariş Avansları' hesabının bir yabancı kaynak (borç) olarak nitelendirilmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmenin bir varlığı olduğu için",
-      "B": "Bir gider hesabı olduğu için",
-      "C": "İşletmenin sermayesini artırdığı için",
-      "D": "Bir gelir hesabı olduğu için",
+      "A": "İşletmenin kasasına giren nakdi temsil ettiği ve tahsil edilmiş bir varlık niteliği taşıdığı için",
+      "B": "Alınan tutarın doğrudan döneme ait bir gider olarak sonuç hesaplarına aktarılması gerektiği için",
+      "C": "İşletme sahiplerinin koyduğu sermayeyi artıran bir özkaynak unsuru olarak değerlendirildiği için",
+      "D": "Mal henüz teslim edilmese bile tahsilat anında satış geliri olarak kaydedilmesi gerektiği için",
       "E": "Avansı alan işletmenin, karşılığında mal/hizmet teslim etme yükümlülüğü (borcu) doğduğu için"
     },
     "answer": "E",
@@ -1083,11 +1083,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "İşletme, uzun vadeli olarak kullandığı 500.000 ₺'lik banka kredisinin 100.000 ₺'lik anapara taksidinin vadesinin bir yılın altına indiğini belirlemiştir. Dönem sonunda yapılması gereken işlem aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Hiçbir işlem yapılmaz.",
+      "A": "Vadenin bir yılın altına inmesi yalnızca bir tahmin sayıldığından, dönem sonunda herhangi bir sınıflama ya da hesaplar arası aktarma kaydı yapılmasına gerek yoktur.",
       "B": "Vadesi bir yılın altına inen 100.000 ₺, 400 Banka Kredileri'nden 303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri hesabına aktarılır.",
-      "C": "500.000 ₺'nin tamamı 300 Banka Kredileri'ne aktarılır.",
-      "D": "100.000 ₺ gelir yazılır.",
-      "E": "100.000 ₺ 320 Satıcılar'a aktarılır."
+      "C": "Kredinin yalnızca vadesi yaklaşan kısmı değil, 500.000 ₺'lik tamamı 400 Banka Kredileri'nden 300 Banka Kredileri hesabına aktarılarak kısa vadeye çekilir.",
+      "D": "Vadesi bir yılın altına inen 100.000 ₺'lik kısım, işletme lehine bir tutar sayılarak 647 Reeskont Faiz Gelirleri hesabına kaydedilir ve dönem geliri yazılır.",
+      "E": "Vadesi bir yılın altına inen 100.000 ₺'lik kısım, 400 Banka Kredileri'nden 320 Satıcılar hesabına aktarılarak ticari borç olarak izlenmeye başlanır."
     },
     "answer": "B",
     "solution": "Uzun vadeli kredinin vadesi bir yılın altına inen **100.000 ₺'lik kısmı**, 400 Banka Kredileri'nden kısa vadeli **303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri** hesabına aktarılır; kalan 400.000 ₺ uzun vadeli kalır.",
@@ -1105,11 +1105,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "Borç senetleri reeskontunun, alacak senetleri reeskontundan farklı olarak işletme açısından gelir (647) doğurmasının nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Borcun nominal değerinin artması",
-      "B": "Borcun tamamen silinmesi",
-      "C": "Reeskontun bir varlık yaratması",
+      "A": "Reeskont hesaplandığında borç senedinin üzerinde yazılı nominal değerinin artması ve bu artış nedeniyle işletmenin karşı tarafa ödeyeceği toplam yükümlülük tutarının büyümesi",
+      "B": "Reeskont kaydının yapılmasıyla birlikte senetli borcun tamamının ortadan kalkması; yani borcun bütünüyle silinerek işletmenin kayıtlarından tümden çıkarılıp kapatılmış olması",
+      "C": "Reeskontun pasif tarafta bir borç azalışı değil, aktif tarafta yeni bir varlık yaratması ve bu varlığın dönem sonunda doğrudan işletme lehine bir gelir olarak tabloya yansıtılması",
       "D": "Reeskontun, gelecekte ödenecek borcun bugünkü değerini düşürmesi; yani borcun bir kısmının (faiz kısmının) henüz gider olmaması nedeniyle işletme lehine bir tutar doğması",
-      "E": "İşletmenin senedi tahsil etmesi"
+      "E": "İşletmenin elinde bulundurduğu borç senedini vadesi gelmeden karşı tarafa ödeyerek, erken ödeme karşılığında kendisine tanınan peşin bir faiz indirimini gelir olarak elde etmesi"
     },
     "answer": "D",
     "solution": "Borç senedi reeskontu, gelecekte ödenecek borcun **bugünkü değerini düşürür**; borcun içindeki vade farkı (faiz) henüz oluşmadığından işletme lehine bir tutar (gelir) doğar → **647 Reeskont Faiz Gelirleri**. Alacak reeskontu ise tersine gider (657) doğurur.",
@@ -1127,11 +1127,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "İşletme, aldığı bir mal siparişi için daha önce 30.000 ₺ avans almış (340 Alınan Sipariş Avansları) ve şimdi malı teslim ederek 30.000 ₺'lik satışı gerçekleştirmiştir (KDV'yi dikkate almayınız). Avansın mahsubuna ilişkin kayıtta 340 hesabı nasıl işlem görür?",
     "options": {
-      "A": "340 Alınan Sipariş Avansları alacaklandırılır.",
-      "B": "340 Alınan Sipariş Avansları hiç kullanılmaz.",
+      "A": "340 Alınan Sipariş Avansları alacaklandırılır; karşılığında 600 Yurt İçi Satışlar hesabı borçlandırılarak kapatılır.",
+      "B": "340 Alınan Sipariş Avansları hiç kullanılmaz; satış doğrudan 120 Alıcılar borçlandırılarak kayda alınır.",
       "C": "340 Alınan Sipariş Avansları borçlandırılarak kapatılır; karşılığında 600 Yurt İçi Satışlar alacaklandırılır.",
-      "D": "340 Alınan Sipariş Avansları 780 Finansman Giderleri'ne aktarılır.",
-      "E": "340 Alınan Sipariş Avansları 153 Ticari Mallar'a aktarılır."
+      "D": "340 Alınan Sipariş Avansları borçlandırılır; karşılığında 780 Finansman Giderleri hesabına aktarılarak kapatılır.",
+      "E": "340 Alınan Sipariş Avansları borçlandırılır; karşılığında 153 Ticari Mallar hesabına aktarılarak kapatılır."
     },
     "answer": "C",
     "solution": "Mal teslim edilince avans borcu ortadan kalkar: **340 Alınan Sipariş Avansları (B) 30.000** borçlandırılarak kapatılır; satış geliri → **600 Yurt İçi Satışlar (A) 30.000**.",
@@ -1172,10 +1172,10 @@
     "stem": "'360 Ödenecek Vergi ve Fonlar' ile '370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "360 kesinleşmiş/ödenmesi gereken vergi ve fon borçlarını; 370 ise dönem kârı üzerinden hesaplanan ve henüz kesin ödeme aşamasına gelmemiş vergi karşılığını izler.",
-      "B": "İkisi de aynı hesaptır.",
-      "C": "360 uzun vadeli, 370 kısa vadelidir.",
-      "D": "360 bir varlık, 370 bir gelirdir.",
-      "E": "İkisi de özkaynak hesabıdır."
+      "B": "360 ile 370 birbirinin tamamen aynısı olan iki hesaptır; her ikisi de yalnızca ödenecek katma değer vergisini izlemek amacıyla çift kayıtlı biçimde ve aynı anda çalıştırılır.",
+      "C": "360 Ödenecek Vergi ve Fonlar uzun vadeli (4) grupta yer alan bir borçtur; 370 Dönem Kârı Karşılıkları ise kısa vadeli (3) grupta izlenen bir yabancı kaynak hesabıdır.",
+      "D": "360 Ödenecek Vergi ve Fonlar aktifte izlenen bir varlık hesabıdır; 370 Dönem Kârı Karşılıkları ise gelir tablosunda dönemin bir geliri olarak raporlanan bir sonuç hesabıdır.",
+      "E": "360 ile 370'in ikisi de özkaynak grubunda yer alan hesaplardır; 360 işletmenin ödenmiş sermayesini, 370 ise dağıtılmamış geçmiş dönem kârlarını temsil etmektedir."
     },
     "answer": "A",
     "solution": "**360 Ödenecek Vergi ve Fonlar** kesinleşmiş/ödenecek vergi-fon borçlarını; **370 Dönem Kârı Vergi... Karşılıkları** ise dönem kârı üzerinden hesaplanan ve karşılık olarak ayrılan vergi yükümlülüğünü izler. İkisi de kısa vadeli yabancı kaynaktır.",
@@ -1215,11 +1215,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "'405 Çıkarılmış Tahviller' ile '400 Banka Kredileri' arasındaki ortak ve farklı yön ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de kısa vadeli yabancı kaynaktır.",
-      "B": "405 bir varlık, 400 bir borçtur.",
+      "A": "İkisi de kısa vadeli (3) yabancı kaynaktır; 405 çıkarılan tahvilleri, 400 ise vadesi bir yılı geçmeyen kısa vadeli banka kredilerini izlemek için kullanılır.",
+      "B": "405 Çıkarılmış Tahviller aktifte izlenen bir menkul kıymet varlığıdır; 400 Banka Kredileri ise işletmenin pasifinde yer alan uzun vadeli bir borç hesabıdır.",
       "C": "İkisi de uzun vadeli yabancı kaynaktır; ancak 405 tahvil ihracından, 400 ise bankadan sağlanan uzun vadeli kredilerden doğan borcu izler.",
-      "D": "İkisi de özkaynak hesabıdır.",
-      "E": "405 kısa vadeli, 400 uzun vadelidir."
+      "D": "405 ile 400'ün ikisi de özkaynak grubunda yer alır; 405 işletmenin çıkardığı hisse senetlerini, 400 ise ödenmiş sermaye tutarını göstermek için kullanılır.",
+      "E": "405 Çıkarılmış Tahviller kısa vadeli (3), 400 Banka Kredileri ise uzun vadeli (4) yabancı kaynaklar grubunda izlenir; dolayısıyla vadeleri birbirinden farklıdır."
     },
     "answer": "C",
     "solution": "**Her ikisi de uzun vadeli (4) yabancı kaynaktır**. Fark: **405 Çıkarılmış Tahviller** tahvil ihracından, **400 Banka Kredileri** ise bankadan sağlanan uzun vadeli kredilerden doğan borcu izler.",
@@ -1281,11 +1281,11 @@
     "konu": "yabanci_kaynaklar",
     "stem": "İşletmenin '361 Ödenecek Sosyal Güvenlik Kesintileri' hesabında izlenen tutar aşağıdakilerden hangisini kapsar?",
     "options": {
-      "A": "Yalnızca işçiden kesilen sigorta primi",
+      "A": "Yalnızca işçinin brüt ücretinden kesilen sigorta primi işçi payını kapsar; işveren payı bu hesapta izlenmez",
       "B": "Hem işçiden kesilen sigorta primi payı hem de işverenin (işletmenin) ödeyeceği sigorta primi işveren payı",
-      "C": "Yalnızca gelir vergisi",
-      "D": "Yalnızca damga vergisi",
-      "E": "Personele ödenecek net ücret"
+      "C": "Yalnızca personelin ücretinden kesilen gelir vergisi stopajını kapsar; sigorta primleri bu hesaba dahil değildir",
+      "D": "Yalnızca ücret bordrosu üzerinden hesaplanan damga vergisi tutarını kapsar; sigorta primlerini içermez",
+      "E": "Personele bordro sonucunda ödenecek net ücret borcunu kapsar; SGK'ya ödenecek primler burada izlenmez"
     },
     "answer": "B",
     "solution": "**361 Ödenecek Sosyal Güvenlik Kesintileri**, SGK'ya ödenecek toplam primi (hem **işçi payı** hem **işveren payı**) izler.",

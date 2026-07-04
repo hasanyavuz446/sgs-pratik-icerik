@@ -5,10 +5,10 @@
     "konu": "kur_farklari",
     "stem": "Dönem sonunda, yabancı para cinsinden kasa mevcudu ile döviz cinsinden alacak ve borçların değerlemesinde Vergi Usul Kanunu'na göre kural olarak hangi kur esas alınır?",
     "options": {
-      "A": "T.C. Merkez Bankası döviz satış kuru",
-      "B": "Bir önceki yılın ortalama kuru",
-      "C": "İşletmenin belirlediği serbest kur",
-      "D": "İşlem gününün satış kuru",
+      "A": "T.C. Merkez Bankası döviz satış kuru (kasadaki efektifler için efektif satış kuru)",
+      "B": "İşlem gününde geçerli olan serbest piyasa döviz satış kuru esas alınır",
+      "C": "Bir önceki hesap döneminin yıllık ortalama döviz alış kuru esas alınır",
+      "D": "Bankalararası döviz piyasasında oluşan günlük kapanış satış kuru",
       "E": "T.C. Merkez Bankası döviz alış kuru (kasadaki efektifler için efektif alış kuru)"
     },
     "answer": "E",
@@ -335,10 +335,10 @@
     "konu": "kur_farklari",
     "stem": "İşletme, üretimde kullanacağı bir makineyi 50.000 USD'ye almış; işlem (fatura) günü kuru 30,00 ₺/USD'dir. Makine henüz aktifleştirilmeden (kullanıma hazır olmadan) önce, kurun 30,60 ₺/USD olduğu gün bedel ödenmiştir. Aradaki 30.000 ₺'lik kur farkı nasıl muhasebeleştirilir?",
     "options": {
-      "A": "656 Kambiyo Zararları'na gider yazılır.",
-      "B": "257 Birikmiş Amortismanlar'a eklenir.",
-      "C": "646 Kambiyo Kârları'na gelir yazılır.",
-      "D": "780 Finansman Giderleri'ne yazılır.",
+      "A": "656 Kambiyo Zararları hesabına doğrudan gider yazılır ve makinenin maliyetiyle hiçbir şekilde ilişkilendirilmez.",
+      "B": "780 Finansman Giderleri hesabına yazılıp dönem sonunda gelir tablosuna aktarılır.",
+      "C": "257 Birikmiş Amortismanlar hesabına eklenerek amortisman yoluyla itfa edilir.",
+      "D": "Tutarı önemsiz sayılıp hiç kaydedilmez; makine yalnızca fatura günü kuruyla değerlenir.",
       "E": "253 Tesis, Makine ve Cihazlar'ın maliyetine eklenir (aktifleştirmeden önceki dönem kur farkı)."
     },
     "answer": "E",
@@ -357,11 +357,11 @@
     "konu": "kur_farklari",
     "stem": "Kur farklarında 'gerçekleşmiş (realize)' ile 'gerçekleşmemiş (değerleme)' kur farkı ayrımı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de yalnızca tahsilat/ödeme anında doğar.",
-      "B": "Gerçekleşmemiş kur farkı hiçbir zaman kayda alınmaz.",
+      "A": "Gerçekleşmiş kur farkı yalnızca dönem sonu değerlemesinde, gerçekleşmemiş kur farkı ise tahsilat/ödeme anında doğar (tanımlar birbirinin yerine kullanılır).",
+      "B": "Gerçekleşmiş de gerçekleşmemiş de yalnızca döviz alacağının veya borcunun tahsil/ödeme anında ortaya çıkar; değerleme farkı hiçbir şekilde doğmaz.",
       "C": "Gerçekleşmiş kur farkı tahsilat/ödeme (kapanış) anında; gerçekleşmemiş kur farkı ise henüz kapanmamış döviz kalemlerinin dönem sonu değerlemesiyle doğar.",
-      "D": "Gerçekleşmiş kur farkı yalnızca dönem sonunda doğar.",
-      "E": "İkisi de bilanço hesabıdır, gelir tablosunu etkilemez."
+      "D": "Gerçekleşmemiş kur farkı hiçbir zaman kayda alınmaz; yalnızca bilanço dipnotlarında açıklanır ve dönem gelir tablosunu hiç etkilemez.",
+      "E": "Her iki kur farkı da bilanço hesabı olarak izlenir; dönem kâr veya zararına hiçbir biçimde yansıtılmaz, yalnızca özkaynakta gösterilir."
     },
     "answer": "C",
     "solution": "**Gerçekleşmiş** kur farkı, döviz alacağı/borcunun **tahsil/ödeme (kapanış)** anında; **gerçekleşmemiş** kur farkı ise henüz kapanmamış döviz kalemlerinin **dönem sonu değerlemesiyle** doğar. İkisi de 646/656 ile sonuç hesaplarına yansır.",
@@ -423,11 +423,11 @@
     "konu": "kur_farklari",
     "stem": "Kambiyo kârları (646) ve kambiyo zararları (656) gelir tablosunda hangi bölümde yer alır?",
     "options": {
-      "A": "Brüt satışlar / Satışların maliyeti içinde",
-      "B": "Olağandışı gelir (67) / gider (68) içinde",
-      "C": "Finansman giderleri (66) içinde",
+      "A": "Olağandışı gelir ve kârlar (67) ile olağandışı gider ve zararlar (68) grubu içinde",
+      "B": "Finansman giderleri (66) ile brüt satışlardan indirimler (61) grubu içinde",
+      "C": "Faaliyet giderleri (63) ile satışların maliyeti (62) grubu içinde yer alır",
       "D": "Diğer faaliyetlerden olağan gelir ve kârlar (64) / gider ve zararlar (65) içinde",
-      "E": "Faaliyet giderleri (63) içinde"
+      "E": "Net satışlar (60) ile satış indirimleri kaleminde netleştirilerek gösterilir"
     },
     "answer": "D",
     "solution": "Kambiyo kârları **646** → 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar; kambiyo zararları **656** → 65 Diğer Faaliyetlerden Olağan Gider ve Zararlar. Finansman gideri (66) veya olağandışı (67/68) değildir.",
@@ -599,11 +599,11 @@
     "konu": "kur_farklari",
     "stem": "Bir makine döviz cinsi kredi ile alınıp AKTİFLEŞTİRİLDİKTEN (kullanıma hazır olduktan) SONRA, kredinin döviz kurundaki artıştan doğan kur farkları ile ilgili genel uygulama aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Makinenin (253) maliyetine eklenmeye devam edilir.",
-      "B": "257 Birikmiş Amortismanlar'a eklenir.",
+      "A": "Aktifleştirmeden sonraki dönemlerde de kur farkları, makinenin (253) maliyetine kesintisiz olarak eklenmeye devam edilir ve amortismana tabi tutulur.",
+      "B": "Sonraki dönem kur farkları doğrudan 257 Birikmiş Amortismanlar hesabına eklenerek amortisman tutarını azaltır.",
       "C": "Aktifleştirmeden sonraki döneme ait kur farkları, maliyete eklenmeyip dönemin kambiyo gideri/geliri (656/646) olarak yazılabilir.",
-      "D": "Doğrudan sermayeye eklenir.",
-      "E": "Hiç kaydedilmez."
+      "D": "Bu kur farkları hiçbir hesaba yansıtılmaz; sermaye yedekleri içinde bilançoda bekletilir ve gösterilmez.",
+      "E": "Aktifleştirme sonrası kur farklarının tamamı 280 Gelecek Yıllara Ait Giderler hesabına aktarılır."
     },
     "answer": "C",
     "solution": "Kur farkları yalnızca **aktifleştirmeye kadar** maliyete eklenir. Aktifleştirmeden **sonraki** dönemlere ait kur farkları, maliyete eklenmeyip **kambiyo gideri/geliri (656/646)** olarak yazılabilir. (0016'daki durumun tersi — zamanlama belirleyicidir.)",
@@ -621,10 +621,10 @@
     "konu": "kur_farklari",
     "stem": "Kur farkı ile reeskont arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de aynı işlemi ifade eder.",
-      "B": "İkisi de finansman gideri (66) grubundadır.",
-      "C": "Kur farkı yalnızca senetli işlemlerde doğar.",
-      "D": "Reeskont yalnızca döviz işlemlerinde doğar.",
+      "A": "Kur farkı, senetli alacak ve borçların vade farkının bugünkü değere indirgenmesinden (647/657); reeskont ise yalnızca döviz kalemlerinin kur değişiminden (646/656) doğan, tümüyle tam tersi kavramlardır.",
+      "B": "Kur farkı da reeskont da aynı işlemi ifade eder; ikisi de senetli döviz işlemlerinde eşanlamlı olarak 646/656 hesaplarında birlikte izlenir.",
+      "C": "Kur farkı yalnızca senetli işlemlerde, reeskont ise yalnızca senetsiz (açık hesap) işlemlerde doğar; ikisi de finansman gideri sayılır.",
+      "D": "Reeskont yalnızca döviz cinsi işlemlerde doğar; kur farkı ise sadece TL cinsi senetli alacak ve borçların değerlemesinden kaynaklanır.",
       "E": "Kur farkı, döviz cinsi kalemlerin kur değişiminden (646/656); reeskont ise senetli alacak/borçların vade (faiz) unsurunun bugünkü değere indirgenmesinden (647/657) doğar."
     },
     "answer": "E",
@@ -687,10 +687,10 @@
     "konu": "kur_farklari",
     "stem": "İşletme, bankadaki TL hesabından 10.000 USD satın alıp döviz tevdiat (banka döviz) hesabına aktarmıştır (kur 31,00 ₺/USD). Bu işlemin niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Döviz alımı anında mutlaka kambiyo kârı/zararı doğar.",
-      "B": "Bu işlem hiç kaydedilmez.",
-      "C": "İşlem gelir tablosunu doğrudan etkiler ve 646'ya kâr yazılır.",
-      "D": "Döviz alımı bir gider olarak 656'ya yazılır.",
+      "A": "Döviz alımı anında, alış kuru ile satış kuru arasındaki fark kadar mutlaka kambiyo kârı ya da zararı doğar ve tutar 646 veya 656 hesabına kaydedilir.",
+      "B": "Döviz alım işlemi bir varlık dönüşümü olmadığından hiç kaydedilmez; yalnızca dövizin bozdurulduğu anda muhasebe kaydı yapılır.",
+      "C": "İşlem gelir tablosunu doğrudan etkiler; alınan dövizin TL karşılığı 646 Kambiyo Kârları hesabına gelir olarak kaydedilir.",
+      "D": "Satın alınan döviz bir varlık değil gider sayıldığından, ödenen TL tutarı 656 Kambiyo Zararları hesabına gider yazılır.",
       "E": "Yalnızca bir varlık (TL) başka bir varlığa (döviz) dönüşür; alım anında kur farkı doğmaz, kur farkı ancak sonraki değerleme/elden çıkarmada oluşur."
     },
     "answer": "E",
@@ -753,10 +753,10 @@
     "konu": "kur_farklari",
     "stem": "İşletme, yurt dışından 10.000 USD tutarında ticari mal ithal etmiş (fatura günü kuru 30,00 ₺/USD, mal aynı gün işletmeye girmiştir). Borç, malın girişinden SONRA kurun 31,20 ₺/USD olduğu gün ödenmiştir. Ödeme sırasında oluşan 12.000 ₺'lik kur farkı nasıl muhasebeleştirilir?",
     "options": {
-      "A": "153 Ticari Mallar'ın maliyetine eklenir.",
-      "B": "320 Satıcılar'da bekletilir, sonuç hesabına yansımaz.",
-      "C": "646 Kambiyo Kârları'na gelir yazılır.",
-      "D": "191 İndirilecek KDV'ye eklenir.",
+      "A": "Mal işletmeye girmiş olsa da bu fark 153 Ticari Mallar'ın maliyetine eklenir.",
+      "B": "Ödeme yapılana kadar 320 Satıcılar'da bekletilir, sonuç hesabına yansımaz.",
+      "C": "Lehte fark sayılıp 646 Kambiyo Kârları'na gelir olarak kaydedilir.",
+      "D": "İthalata ilişkin olduğu için 191 İndirilecek KDV hesabına eklenir.",
       "E": "Malın girişinden sonra doğduğu için 656 Kambiyo Zararları'na gider yazılır."
     },
     "answer": "E",
@@ -1039,11 +1039,11 @@
     "konu": "kur_farklari",
     "stem": "Kambiyo kârı (646) ile menkul kıymet satış kârı (645) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de döviz kurundaki değişimden doğar.",
-      "B": "İkisi de olağandışı gelir (67) grubundadır.",
-      "C": "646 bir gider, 645 bir gelir hesabıdır.",
+      "A": "646 menkul kıymetlerin satış bedeli ile kayıtlı değeri arasındaki farktan; 645 ise döviz kalemlerinin kur değişiminden doğan, kaynakları yer değiştirmiş kavramlardır.",
+      "B": "646 da 645 de döviz kurundaki değişimden kaynaklanır; ikisi de olağandışı gelir (67) grubunda birlikte izlenen eşdeğer hesaplardır.",
+      "C": "646 bir gider, 645 ise bir gelir hesabı olduğundan biri kambiyo zararını diğeri menkul kıymet satış kârını gösterir ve netleştirilir.",
       "D": "646 döviz cinsi kalemlerin kur değişiminden; 645 ise menkul kıymetlerin (hisse senedi/tahvil) satış bedeli ile kayıtlı değeri arasındaki olumlu farktan doğar.",
-      "E": "645 kur farkı, 646 menkul kıymet kârıdır."
+      "E": "645 döviz kurundaki değişimden doğan kur farkını, 646 ise menkul kıymet satış kârını ifade eden birbirine bağlı iki hesaptır."
     },
     "answer": "D",
     "solution": "**646 Kambiyo Kârları** döviz kalemlerinin **kur değişiminden**; **645 Menkul Kıymet Satış Kârları** ise menkul kıymetin **satış bedeli − kayıtlı değer** olumlu farkından doğar. İkisi de 64 grubunda ama kaynağı farklıdır.",
@@ -1105,11 +1105,11 @@
     "konu": "kur_farklari",
     "stem": "Bir işletmede döviz kurundaki artış nedeniyle 40.000 ₺ kambiyo KÂRI doğmuştur ve ilgili döviz tutarı 20.000 USD'dir. Buna göre bu kâr aşağıdaki hangi kalemden kaynaklanıyor olabilir?",
     "options": {
-      "A": "Döviz cinsi bir borçtan",
-      "B": "TL cinsi bir alacaktan",
+      "A": "Döviz cinsi bir borçtan (kurun yükselmesi nedeniyle)",
+      "B": "TL cinsi bir alacaktan (kur farkı doğmasa da)",
       "C": "Döviz cinsi bir alacaktan (veya döviz mevcudundan)",
-      "D": "TL cinsi bir borçtan",
-      "E": "Bir gider tahakkukundan"
+      "D": "TL cinsi bir borçtan (ödeme kolaylaştığı için)",
+      "E": "Bir dönem gideri tahakkukundan (kur etkisiyle)"
     },
     "answer": "C",
     "solution": "Kur ARTMIŞ ve KÂR doğmuşsa, kalem bir **döviz alacağı veya döviz mevcudu** (varlık) olmalıdır (varlık + kur↑ → kâr). Borçta kur↑ zarar doğururdu; TL kalemlerde kur farkı doğmaz. (Birim kur = 40.000/20.000 = 2,00 ₺ artış.)",
@@ -1237,10 +1237,10 @@
     "konu": "kur_farklari",
     "stem": "Bir işletmenin dönem sonunda 30.000 USD döviz borcu (kayıt 30,00 ₺/USD) ve 30.000 USD döviz alacağı (kayıt 30,00 ₺/USD) vardır. Dönem sonu kur 32,00 ₺/USD olduğunda kur farklarının net etkisi nedir?",
     "options": {
-      "A": "60.000 ₺ net kâr",
-      "B": "60.000 ₺ net zarar",
-      "C": "32.000 ₺ net zarar",
-      "D": "120.000 ₺ net kâr",
+      "A": "Net 60.000 ₺ kârdır (yalnızca alacak dikkate alınır)",
+      "B": "Net 60.000 ₺ zarardır (yalnız borç dikkate alınır)",
+      "C": "Net 120.000 ₺ kârdır (alacak ve borç toplanır)",
+      "D": "Net 32.000 ₺ zarardır (dönem sonu kur esas alınır)",
       "E": "Net etki sıfırdır (alacak kârı ile borç zararı eşit)"
     },
     "answer": "E",
@@ -1259,11 +1259,11 @@
     "konu": "kur_farklari",
     "stem": "İşletme 25.000 USD tutarındaki borcunu, işlem günü 30,00 ₺/USD iken kaydetmiş; ödeme günü kur 30,00 ₺/USD olarak değişmeden kalmıştır. Bu durumda kur farkı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "25.000 ₺ kâr doğar.",
-      "B": "750.000 ₺ zarar doğar.",
+      "A": "Kayıtlı borç tutarı kadar 646 Kambiyo Kârları yazılır.",
+      "B": "Ödenen tutar üzerinden 656 Kambiyo Zararları çalışır.",
       "C": "Kur değişmediği için kur farkı doğmaz; 646/656 çalışmaz.",
-      "D": "25.000 ₺ zarar doğar.",
-      "E": "Otomatik olarak kambiyo kârı yazılır."
+      "D": "Borcun tamamı için 780 Finansman Giderleri kaydedilir.",
+      "E": "Değişmese de otomatik olarak kambiyo kârı tahakkuk eder."
     },
     "answer": "C",
     "solution": "İşlem ve ödeme kuru aynı (30,00) olduğundan **kur farkı doğmaz**; borç kayıtlı değeriyle (750.000 ₺) kapanır, 646/656 çalışmaz. Kur farkı ancak kur DEĞİŞİRSE doğar.",

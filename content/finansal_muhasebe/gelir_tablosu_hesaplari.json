@@ -5,11 +5,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Gelir tablosu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin belirli bir andaki varlık ve kaynak yapısını gösterir.",
-      "B": "İşletmenin ortaklarının kimliklerini gösterir.",
-      "C": "Yalnızca işletmenin nakit hareketlerini gösterir.",
+      "A": "İşletmenin belirli bir andaki varlık, borç ve özkaynak yapısını ayrıntılı biçimde gösteren temel finansal tablodur.",
+      "B": "İşletmenin ortaklarının kimlik bilgilerini ve sermaye payı oranlarını gösteren, ticaret siciline tescil edilen resmî belgedir.",
+      "C": "Yalnızca işletmenin dönem içindeki nakit giriş ve çıkışlarını faaliyet türlerine göre sınıflandırarak gösteren tablodur.",
       "D": "İşletmenin bir hesap dönemine ait gelirlerini, giderlerini ve bunların sonucunda oluşan kâr veya zararı gösteren tablodur.",
-      "E": "İşletmenin yalnızca borçlarını gösterir."
+      "E": "İşletmenin yalnızca kısa ve uzun vadeli yabancı kaynaklarını (borçlarını) vade yapısına göre listeleyen çizelgedir."
     },
     "answer": "D",
     "solution": "**Gelir tablosu**; bir hesap dönemine ait **gelirleri, giderleri ve bunların sonucunda oluşan kâr/zararı** gösteren tablodur. (Belirli bir andaki durum ise bilançoda gösterilir.)",
@@ -71,11 +71,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "'61 Satış İndirimleri (-)' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Brüt satışları artıran bir gelir grubudur.",
-      "B": "İşletmenin maddi duran varlıklarını izler.",
+      "A": "Brüt satışları artıran ve yurt dışı satışlarla birlikte hasılata eklenen olağan bir gelir grubudur.",
+      "B": "İşletmenin maddi duran varlıklarının maliyet ve birikmiş amortisman tutarlarını izleyen bir bilanço grubudur.",
       "C": "Brüt satışlardan düşülen (satıştan iadeler, satış iskontoları vb.) negatif nitelikli hesapları içerir.",
-      "D": "İşletmenin borçlarını izler.",
-      "E": "Finansman giderlerini izler."
+      "D": "İşletmenin satıcılara ve kredi kurumlarına olan kısa vadeli ticari borçlarını izleyen bir pasif grubudur.",
+      "E": "Kullanılan kredilerin faizleri gibi borçlanma maliyetlerini kapsayan bir finansman gideri grubudur."
     },
     "answer": "C",
     "solution": "**61 Satış İndirimleri (-)**; brüt satışlardan düşülen (610 Satıştan İadeler, 611 Satış İskontoları, 612 Diğer İndirimler) **negatif nitelikli** hesapları içerir. Net satışlara ulaşmak için brüt satışlardan indirilir.",
@@ -159,11 +159,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Gelir tablosunda 'Net Satışlar' nasıl hesaplanır?",
     "options": {
-      "A": "Brüt Satışlar + Satış İndirimleri",
-      "B": "Brüt Satışlar − Faaliyet Giderleri",
-      "C": "Brüt Satışlar − Satışların Maliyeti",
+      "A": "Brüt Satışlar + Satış İndirimleri (satıştan iadeler, iskontolar vb.)",
+      "B": "Brüt Satışlar − Satışların Maliyeti − Faaliyet Giderleri",
+      "C": "Brüt Satışlar − Satışların Maliyeti (62 grubu, negatif)",
       "D": "Brüt Satışlar − Satış İndirimleri (satıştan iadeler, iskontolar vb.)",
-      "E": "Brüt Satışlar + Satışların Maliyeti"
+      "E": "Brüt Satışlar + Satışların Maliyeti + Faaliyet Giderleri"
     },
     "answer": "D",
     "solution": "**Net Satışlar = Brüt Satışlar − Satış İndirimleri** (satıştan iadeler + satış iskontoları + diğer indirimler).",
@@ -401,11 +401,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Gelir tablosunda kâr kademelerinin oluşum sırası aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Dönem Net Kârı → Faaliyet Kârı → Brüt Satış Kârı",
-      "B": "Faaliyet Kârı → Brüt Satış Kârı → Dönem Kârı",
-      "C": "Olağan Kâr → Brüt Satış Kârı → Faaliyet Kârı",
+      "A": "Dönem Net Kârı → Dönem Kârı → Faaliyet Kârı → Brüt Satış Kârı → Olağan Kâr",
+      "B": "Faaliyet Kârı → Brüt Satış Kârı → Olağan Kâr → Dönem Net Kârı → Dönem Kârı",
+      "C": "Olağan Kâr → Brüt Satış Kârı → Faaliyet Kârı → Dönem Kârı → Dönem Net Kârı",
       "D": "Brüt Satış Kârı → Faaliyet Kârı → Olağan Kâr → Dönem Kârı → Dönem Net Kârı",
-      "E": "Dönem Kârı → Brüt Satış Kârı → Faaliyet Kârı"
+      "E": "Dönem Kârı → Olağan Kâr → Faaliyet Kârı → Dönem Net Kârı → Brüt Satış Kârı"
     },
     "answer": "D",
     "solution": "Gelir tablosunda kâr kademeleri sırasıyla: **Brüt Satış Kârı → Faaliyet Kârı → Olağan Kâr → Dönem Kârı → Dönem Net Kârı** biçiminde oluşur.",
@@ -621,11 +621,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Gelir tablosu hesaplarının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir.",
-      "B": "Gelir tablosu hesapları hiç kapatılmaz.",
-      "C": "Tüm gelir tablosu hesapları bilançoda gösterilir.",
+      "A": "Gelir hesapları (60, 64, 67) borç, gider hesapları (62, 63, 66) alacak kalanı verir ve dönem sonunda 590 Dönem Net Kârı hesabına aktarılarak topluca kapatılır.",
+      "B": "Gelir ve gider hesapları dönem sonunda kapatılmayıp kalanlarıyla bilançoda gösterilir; sonuç ise 590 Dönem Net Kârı hesabında belirlenir.",
+      "C": "Tüm gelir ve gider hesapları önce 391 Hesaplanan KDV hesabına, ardından 690 Dönem Kârı veya Zararı hesabına devredilerek kapatılır.",
       "D": "Gelir hesapları (60, 64, 67) alacak; gider/maliyet hesapları (62, 63, 65, 66, 68) borç çalışır ve dönem sonunda 690 Dönem Kârı veya Zararı hesabına aktarılır.",
-      "E": "Gelir hesapları ile gider hesapları aynı yönde çalışır."
+      "E": "Gelir hesapları da gider hesapları da borç kalanı verir ve dönem sonunda doğrudan 692 Dönem Net Kârı veya Zararı hesabına aktarılır."
     },
     "answer": "D",
     "solution": "**Gelir hesapları (60, 64, 67) alacak**; **gider/maliyet hesapları (62, 63, 65, 66, 68) borç** çalışır. Dönem sonunda hepsi **690 Dönem Kârı veya Zararı**'na aktarılarak sonuç bulunur.",
@@ -666,10 +666,10 @@
     "stem": "Dönem kârı üzerinden hesaplanan vergi ve diğer yasal yükümlülük karşılıkları, dönem net kârının belirlenmesinde Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
-      "B": "690 Dönem Kârı veya Zararı",
-      "C": "692 Dönem Net Kârı veya Zararı",
-      "D": "360 Ödenecek Vergi ve Fonlar",
-      "E": "770 Genel Yönetim Giderleri (-)"
+      "B": "690 Dönem Kârı veya Zararı hesabında brüt kâr olarak izlenir.",
+      "C": "692 Dönem Net Kârı veya Zararı hesabında ayrıca izlenir.",
+      "D": "360 Ödenecek Vergi ve Fonlar hesabında bir gider olarak izlenir.",
+      "E": "770 Genel Yönetim Giderleri (-) hesabında gider yazılır."
     },
     "answer": "A",
     "solution": "Dönem kârı üzerinden hesaplanan vergi karşılığı, sonuç hesabı olarak **691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)** hesabında izlenir (690'dan düşülerek 692'ye ulaşılır).",
@@ -709,10 +709,10 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "İşletmenin dövizli işlemlerinden doğan kur farkı kârları (kambiyo kârları) ve zararları (kambiyo zararları) gelir tablosunda hangi gruplarda izlenir?",
     "options": {
-      "A": "Her ikisi de 60 Brüt Satışlar'da",
-      "B": "Her ikisi de 62 Satışların Maliyeti'nde",
-      "C": "Her ikisi de 66 Finansman Giderleri'nde",
-      "D": "Kambiyo kârları 67, kambiyo zararları 68 grubunda",
+      "A": "Kambiyo kârları 645 Menkul Kıymet Satış Kârları, kambiyo zararları ise 655 Menkul Kıymet Satış Zararları grubunda izlenir.",
+      "B": "Her ikisi de 66 Finansman Giderleri grubunda; kambiyo kârları 660, kambiyo zararları 661 hesabında izlenir.",
+      "C": "Kambiyo kârları 642 Faiz Gelirleri, kambiyo zararları ise 657 Reeskont Faiz Giderleri hesabında izlenir.",
+      "D": "Kambiyo kârları 679 Diğer Olağandışı Gelir ve Kârlar (67), kambiyo zararları ise 689 Diğer Olağandışı Gider (68) grubunda izlenir.",
       "E": "Kambiyo kârları 646 (64 Diğer Faaliyetlerden Olağan Gelir), kambiyo zararları 656 (65 Diğer Faaliyetlerden Olağan Gider) grubunda"
     },
     "answer": "E",
@@ -731,11 +731,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Reeskont işlemlerinden doğan faiz gelir ve giderleri gelir tablosunda hangi hesaplarda izlenir?",
     "options": {
-      "A": "Her ikisi de 600 Yurt İçi Satışlar'da",
-      "B": "Her ikisi de 66 Finansman Giderleri'nde",
+      "A": "Reeskont faiz gelirleri 600 Yurt İçi Satışlar, giderleri 621 Mallar Maliyeti hesabında izlenir.",
+      "B": "Her ikisi de 66 Finansman Giderleri grubunda; gelirler 660, giderler 661 hesabındadır.",
       "C": "Reeskont faiz gelirleri 647 (64 grubu), reeskont faiz giderleri 657 (65 grubu)",
-      "D": "Reeskont faiz gelirleri 67, giderleri 68 grubunda",
-      "E": "Her ikisi de 62 Satışların Maliyeti'nde"
+      "D": "Reeskont faiz gelirleri 679 (67 grubu), giderleri 689 (68 grubu) hesabında izlenir.",
+      "E": "Reeskont faiz gelirleri 642 Faiz Gelirleri, giderleri 653 Komisyon Giderleri hesabındadır."
     },
     "answer": "C",
     "solution": "**Reeskont faiz gelirleri → 647 Reeskont Faiz Gelirleri (64 grubu, olağan gelir)**; **reeskont faiz giderleri → 657 Reeskont Faiz Giderleri (65 grubu, olağan gider)**.",
@@ -753,11 +753,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "'631 Pazarlama, Satış ve Dağıtım Giderleri' ile '632 Genel Yönetim Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de satışların maliyetine dâhildir.",
-      "B": "İkisi de finansman gideridir.",
-      "C": "631 bir gelir, 632 bir borç hesabıdır.",
+      "A": "İkisi de satışların maliyetine (62 grubu) dâhildir ve brüt satış kârının hesaplanmasında net satışlardan doğrudan düşülerek gösterilir.",
+      "B": "631 satılan ürünlerin üretim maliyetini, 632 ise satın alınan ticari malların alış maliyetini izler; dolayısıyla her ikisi de 62 Satışların Maliyeti (-) grubunda yer alır.",
+      "C": "631 bir gelir, 632 ise bir borç hesabıdır; ikisi de dönem sonunda kapatılmadan kalanlarıyla bilançoda ayrı ayrı gösterilir.",
       "D": "631 ürünlerin pazarlanması-satışı-dağıtımıyla ilgili giderleri; 632 ise işletmenin genel yönetimiyle ilgili giderleri izler. İkisi de 63 Faaliyet Giderleri grubundadır.",
-      "E": "İkisi de olağandışı giderdir."
+      "E": "İkisi de 68 Olağandışı Gider ve Zararlar grubunda yer alır ve olağan kâr kademesinden sonra dönem kârından düşülerek raporlanır."
     },
     "answer": "D",
     "solution": "**631** ürünlerin pazarlanması, satışı ve dağıtımıyla ilgili giderleri; **632** işletmenin genel yönetimiyle ilgili giderleri izler. Her ikisi de **63 Faaliyet Giderleri (-)** grubundadır ve brüt satış kârından düşülür.",
@@ -819,11 +819,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "'Faaliyet kârı' ile 'olağan kâr' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi aynı şeydir.",
-      "B": "Olağan kâr her zaman faaliyet kârından büyüktür.",
+      "A": "İkisi de tamamen aynı kâr kademesidir; faaliyet kârı ile olağan kâr işletmede her koşulda birbirine tam olarak eşit tutarda gerçekleşir.",
+      "B": "Olağan kâr her zaman faaliyet kârından büyüktür; çünkü faaliyet kârına yalnızca gelir kalemleri eklenir, gider hiç düşülmez.",
       "C": "Faaliyet kârına diğer faaliyetlerden olağan gelirler eklenip, olağan giderler ve finansman giderleri düşülünce olağan kâra ulaşılır.",
-      "D": "Faaliyet kârı vergiden sonraki kârdır.",
-      "E": "Olağan kâr, satışların maliyetinden önce hesaplanır."
+      "D": "Faaliyet kârı vergiden sonraki net kârdır; olağan kâr ise vergi karşılığı düşülmeden önceki brüt satış kârıdır.",
+      "E": "Olağan kâr, satışların maliyeti düşülmeden önce brüt satışlar üzerinden hesaplanan bir ara kâr kademesidir."
     },
     "answer": "C",
     "solution": "**Olağan Kâr = Faaliyet Kârı + Diğer Faaliyetlerden Olağan Gelirler (64) − Diğer Faaliyetlerden Olağan Giderler (65) − Finansman Giderleri (66)**. İkisi farklı kâr kademeleridir.",
@@ -841,11 +841,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Satışların maliyeti hesaplarının (62 grubu) gelir tablosunda '(-)' negatif nitelikli olarak gösterilmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Bir gelir olması",
-      "B": "Bir özkaynak kalemi olması",
-      "C": "Bir varlık olması",
+      "A": "Net satışlara eklenerek brüt satış kârını artıran bir hasılat unsuru olması",
+      "B": "Bilançoda özkaynaklar içinde gösterilen bir dönem net kârı kalemi olması",
+      "C": "İşletmenin devreden stoklarını temsil eden bir dönen varlık kalemi olması",
       "D": "Net satışlardan düşülerek brüt satış kârına ulaşılmasını sağlayan bir gider/maliyet unsuru olması",
-      "E": "Bir borç olması"
+      "E": "İşletmenin satıcılara olan kısa vadeli ticari borcunu gösteren bir pasif (yabancı kaynak) kalemi olması"
     },
     "answer": "D",
     "solution": "**62 Satışların Maliyeti (-)**, satılan malların/hizmetlerin maliyetini gösteren bir gider unsurudur; net satışlardan **düşülerek** brüt satış kârına ulaşılmasını sağladığı için '(-)' negatif nitelikli gösterilir.",
@@ -1061,10 +1061,10 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Satıştan iadeler (610) ve satış iskontolarının (611) gelir tablosundaki etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Brüt satışları artırırlar.",
-      "B": "Özkaynakları artırırlar.",
-      "C": "Satışların maliyetini artırırlar.",
-      "D": "Doğrudan finansman gideri yazılırlar.",
+      "A": "Brüt satışlara eklenerek net satışları ve brüt satış kârını artıran gelir kalemleridir.",
+      "B": "Özkaynaklar içinde dönem kârını doğrudan artıran birer gelir kalemidir.",
+      "C": "Satışların maliyetine eklenerek brüt satış kârını azaltan gider unsurudur.",
+      "D": "Doğrudan 66 Finansman Giderleri grubunda gider olarak kaydedilirler.",
       "E": "Brüt satışlardan düşülerek net satışları azaltırlar (negatif nitelikli hesaplardır)."
     },
     "answer": "E",
@@ -1171,11 +1171,11 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "'660 Kısa Vadeli Borçlanma Giderleri' ile '661 Uzun Vadeli Borçlanma Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de bir gelir hesabıdır.",
-      "B": "İkisi de satışların maliyetine dâhildir.",
-      "C": "660 bir varlık, 661 bir borçtur.",
+      "A": "İkisi de birer faiz geliri hesabıdır ve 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar grubunda alacak çalışır.",
+      "B": "İkisi de satışların maliyetine dâhildir; 660 kısa vadeli, 661 uzun vadeli stok alımlarının maliyetini izler.",
+      "C": "660 bir dönen varlık, 661 ise bir uzun vadeli yabancı kaynak hesabıdır; ikisi de bilançoda gösterilir.",
       "D": "İkisi de 66 Finansman Giderleri grubundadır; 660 kısa vadeli, 661 uzun vadeli borçlanmaların finansman giderlerini izler.",
-      "E": "İkisi de olağandışı giderdir."
+      "E": "İkisi de 68 Olağandışı Gider ve Zararlar grubundadır; 660 kısa vadeli borçların, 661 ise uzun vadeli borçların olağandışı zararlarını izler."
     },
     "answer": "D",
     "solution": "Her ikisi de **66 Finansman Giderleri (-)** grubundadır. Fark vadededir: **660** kısa vadeli, **661** uzun vadeli borçlanmaların finansman (faiz vb.) giderlerini izler.",
