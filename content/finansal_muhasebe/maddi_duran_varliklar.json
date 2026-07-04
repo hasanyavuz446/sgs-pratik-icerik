@@ -6,12 +6,12 @@
     "stem": "Tekdüzen Hesap Planı'nda '25 Maddi Duran Varlıklar' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Bir yıl içinde paraya çevrilecek varlıkları izler.",
-      "B": "İşletme faaliyetlerinde kullanılmak üzere edinilen, bir yıldan uzun süre kullanılan ve satış amacı taşımayan fiziki varlıkları izler.",
+      "B": "Kısa vadeli menkul kıymetleri izler.",
       "C": "İşletmenin satmak için elde tuttuğu ticari malları izler.",
-      "D": "Kısa vadeli menkul kıymetleri izler.",
+      "D": "İşletme faaliyetlerinde kullanılmak üzere edinilen, bir yıldan uzun süre kullanılan ve satış amacı taşımayan fiziki varlıkları izler.",
       "E": "Satıcılara olan borçları izler."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**25 Maddi Duran Varlıklar**; işletme faaliyetlerinde kullanılmak üzere edinilen, bir yıldan uzun süre kullanılan ve satış amacı taşımayan **fiziki (maddi) varlıkları** (bina, makine, taşıt, demirbaş vb.) izler.",
     "source": {
       "kind": "generated",
@@ -27,13 +27,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "Aşağıdaki hesaplardan hangisi '25 Maddi Duran Varlıklar' grubunda yer almaz?",
     "options": {
-      "A": "252 Binalar",
+      "A": "153 Ticari Mallar",
       "B": "253 Tesis, Makine ve Cihazlar",
       "C": "254 Taşıtlar",
       "D": "255 Demirbaşlar",
-      "E": "153 Ticari Mallar"
+      "E": "252 Binalar"
     },
-    "answer": "E",
+    "answer": "A",
     "solution": "**153 Ticari Mallar**, '15 Stoklar' grubundadır (satmak için tutulur); maddi duran varlık değildir. Diğerleri (252, 253, 254, 255) 25 Maddi Duran Varlıklar grubundadır.",
     "source": {
       "kind": "generated",
@@ -50,12 +50,12 @@
     "stem": "Bir maddi duran varlığın maliyet bedeline aşağıdakilerden hangisi dâhil edilmez?",
     "options": {
       "A": "Varlığın alış (satın alma) bedeli",
-      "B": "Varlığı işletmeye getirme (nakliye) gideri",
+      "B": "İndirilecek KDV",
       "C": "Montaj ve kurulum gideri",
       "D": "Varlığı kullanıma hazır hâle getirmek için katlanılan gümrük vergisi",
-      "E": "İndirilecek KDV"
+      "E": "Varlığı işletmeye getirme (nakliye) gideri"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "MDV maliyetine; alış bedeli, nakliye, montaj/kurulum, gümrük gibi **kullanıma hazır hâle getirme** giderleri dâhildir. **İndirilecek KDV** ise maliyete girmez; '191 İndirilecek KDV' hesabında ayrı izlenir.",
     "source": {
       "kind": "generated",
@@ -73,11 +73,11 @@
     "options": {
       "A": "200.000",
       "B": "210.000",
-      "C": "215.000",
-      "D": "225.000",
+      "C": "225.000",
+      "D": "215.000",
       "E": "185.000"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "MDV maliyeti = Alış + nakliye + montaj = 200.000 + 10.000 + 15.000 = **225.000 ₺** (kullanıma hazır hâle getirme giderleri dâhil). KDV ayrı (191) izlenir.",
     "source": {
       "kind": "generated",
@@ -93,13 +93,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "İşletme, faaliyetinde kullanmak üzere 100.000 ₺ + %20 KDV bedelle peşin (nakit) bir demirbaş satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "255 Demirbaşlar (B) 100.000 + 191 İndirilecek KDV (B) 20.000 / 100 Kasa (A) 120.000",
+      "A": "255 Demirbaşlar (B) 100.000 + 391 Hesaplanan KDV (B) 20.000 / 100 Kasa (A) 120.000",
       "B": "255 Demirbaşlar (B) 120.000 / 100 Kasa (A) 120.000",
       "C": "153 Ticari Mallar (B) 100.000 + 191 İndirilecek KDV (B) 20.000 / 100 Kasa (A) 120.000",
       "D": "770 Genel Yönetim Giderleri (B) 120.000 / 100 Kasa (A) 120.000",
-      "E": "255 Demirbaşlar (B) 100.000 + 391 Hesaplanan KDV (B) 20.000 / 100 Kasa (A) 120.000"
+      "E": "255 Demirbaşlar (B) 100.000 + 191 İndirilecek KDV (B) 20.000 / 100 Kasa (A) 120.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Demirbaş bir MDV'dir → **255 Demirbaşlar (B) 100.000**; alışta KDV **191 İndirilecek KDV (B) 20.000**; nakit çıkışı **100 Kasa (A) 120.000**. Ticari mal (153) değildir; kullanım amaçlı alınmıştır.",
     "source": {
       "kind": "generated",
@@ -116,12 +116,12 @@
     "stem": "Aşağıdaki maddi duran varlıklardan hangisi (normal koşullarda) amortismana tabi tutulmaz?",
     "options": {
       "A": "252 Binalar",
-      "B": "253 Tesis, Makine ve Cihazlar",
+      "B": "250 Arazi ve Arsalar",
       "C": "254 Taşıtlar",
       "D": "255 Demirbaşlar",
-      "E": "250 Arazi ve Arsalar"
+      "E": "253 Tesis, Makine ve Cihazlar"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "**250 Arazi ve Arsalar** yıpranıp aşınmadığından (sınırsız ömür) amortismana tabi tutulmaz. Bina, makine, taşıt, demirbaş gibi yıpranan/aşınan MDV'ler amortismana tabidir.",
     "source": {
       "kind": "generated",
@@ -138,12 +138,12 @@
     "stem": "İşletmenin sahip olduğu ve faaliyetinde kullandığı fabrika binası Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "250 Arazi ve Arsalar",
-      "B": "252 Binalar",
+      "B": "255 Demirbaşlar",
       "C": "253 Tesis, Makine ve Cihazlar",
-      "D": "255 Demirbaşlar",
+      "D": "252 Binalar",
       "E": "258 Yapılmakta Olan Yatırımlar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Faaliyette kullanılan binalar **252 Binalar** hesabında izlenir. Üzerinde bulunduğu arsa 250 Arazi ve Arsalar'da ayrı izlenir (bina amortismana tabi, arsa değil).",
     "source": {
       "kind": "generated",
@@ -160,12 +160,12 @@
     "stem": "İşletmenin faaliyetinde kullandığı kamyon, otomobil gibi kara/deniz/hava ulaşım araçları Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "253 Tesis, Makine ve Cihazlar",
-      "B": "254 Taşıtlar",
-      "C": "255 Demirbaşlar",
+      "B": "255 Demirbaşlar",
+      "C": "254 Taşıtlar",
       "D": "256 Diğer Maddi Duran Varlıklar",
       "E": "252 Binalar"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "İşletmenin ulaşım/taşıma amacıyla kullandığı araçlar **254 Taşıtlar** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -184,10 +184,10 @@
       "A": "252 Binalar",
       "B": "253 Tesis, Makine ve Cihazlar",
       "C": "254 Taşıtlar",
-      "D": "255 Demirbaşlar",
-      "E": "150 İlk Madde ve Malzeme"
+      "D": "150 İlk Madde ve Malzeme",
+      "E": "255 Demirbaşlar"
     },
-    "answer": "D",
+    "answer": "E",
     "solution": "İşletmenin büro/iş yeri döşeme ve teçhizatı (masa, sandalye, bilgisayar vb.) **255 Demirbaşlar** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -203,13 +203,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "'257 Birikmiş Amortismanlar (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Bir gider hesabıdır.",
-      "B": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve maddi duran varlıklardan (-) düşülür.",
+      "A": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve maddi duran varlıklardan (-) düşülür.",
+      "B": "Bir gider hesabıdır.",
       "C": "Bir kaynak (pasif) hesabı olup borç kalanı verir.",
       "D": "Bir gelir hesabıdır.",
       "E": "Nazım hesaptır."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "**257 Birikmiş Amortismanlar (-)**, aktifi düzenleyici bir hesaptır; **alacak kalanı** verir ve bilançoda maddi duran varlıklardan **(-)** düşülerek net defter değerini gösterir.",
     "source": {
       "kind": "generated",
@@ -248,12 +248,12 @@
     "stem": "Vergi Usul Kanunu'nda yer alan başlıca amortisman yöntemleri aşağıdakilerden hangisidir?",
     "options": {
       "A": "FIFO ve ağırlıklı ortalama",
-      "B": "Normal (eşit tutarlı) amortisman ve azalan bakiyeler (hızlandırılmış) yöntemi",
-      "C": "İç iskonto ve dış iskonto",
+      "B": "İç iskonto ve dış iskonto",
+      "C": "Normal (eşit tutarlı) amortisman ve azalan bakiyeler (hızlandırılmış) yöntemi",
       "D": "Maliyet ve piyasa değeri yöntemi",
       "E": "Reeskont ve karşılık yöntemi"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "VUK'a göre başlıca amortisman yöntemleri **normal (eşit tutarlı) amortisman** ve **azalan bakiyeler (hızlandırılmış) yöntemi**dir (ayrıca madenlerde fevkalade amortisman gibi özel yöntemler vardır).",
     "source": {
       "kind": "generated",
@@ -270,12 +270,12 @@
     "stem": "Maliyet bedeli 150.000 ₺ olan bir makine, faydalı ömrü 5 yıl kabul edilerek normal (eşit tutarlı) amortisman yöntemine göre amortismana tabi tutulmaktadır. Yıllık amortisman tutarı kaç ₺'dir?",
     "options": {
       "A": "15.000",
-      "B": "30.000",
+      "B": "150.000",
       "C": "37.500",
       "D": "75.000",
-      "E": "150.000"
+      "E": "30.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Normal amortismanda yıllık tutar = Maliyet ÷ Faydalı ömür = 150.000 ÷ 5 = **30.000 ₺** (yani yıllık %20 oran). Her yıl eşit tutar ayrılır.",
     "source": {
       "kind": "generated",
@@ -293,11 +293,11 @@
     "options": {
       "A": "%10",
       "B": "%20",
-      "C": "%25",
-      "D": "%40",
+      "C": "%40",
+      "D": "%25",
       "E": "%50"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Normal amortisman oranı = 1 ÷ Faydalı ömür = 1 ÷ 4 = **%25**. Her yıl maliyetin %25'i amortisman ayrılır.",
     "source": {
       "kind": "generated",
@@ -337,11 +337,11 @@
     "options": {
       "A": "140.000",
       "B": "100.000",
-      "C": "60.000",
-      "D": "40.000",
+      "C": "40.000",
+      "D": "60.000",
       "E": "0"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Net defter değeri = Maliyet − Birikmiş amortisman = 100.000 − 40.000 = **60.000 ₺**. Bilançoda makine bu net değerle (253 − 257) gösterilir.",
     "source": {
       "kind": "generated",
@@ -358,12 +358,12 @@
     "stem": "Vergi Usul Kanunu'na göre 2026 yılında, iktisadi kıymetin değeri belirli bir sınırın altındaysa (2026 için 12.000 TL) amortismana tabi tutulmadan doğrudan gider yazılabilir. Bu düzenlemeyle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Sınır, KDV dâhil tutar üzerinden uygulanır.",
-      "B": "Değeri 2026 için 12.000 TL'yi (KDV hariç) aşmayan ve bir yıldan fazla kullanılan iktisadi kıymetler doğrudan gider yazılabilir; amortisman ayrılması zorunlu değildir.",
+      "B": "Sınırın altındaki tüm varlıklar zorunlu olarak amortismana tabi tutulur.",
       "C": "Bu sınır yalnızca binalar için geçerlidir.",
       "D": "Bu tutarın altındaki varlıklar hiç kaydedilmez.",
-      "E": "Sınırın altındaki tüm varlıklar zorunlu olarak amortismana tabi tutulur."
+      "E": "Değeri 2026 için 12.000 TL'yi (KDV hariç) aşmayan ve bir yıldan fazla kullanılan iktisadi kıymetler doğrudan gider yazılabilir; amortisman ayrılması zorunlu değildir."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "VUK md. 313'e göre, değeri belirlenen sınırı (2026 için **12.000 TL, KDV hariç**) aşmayan ve bir yıldan fazla kullanılan peştemallıklar ile alet-edevat, demirbaş vb. **doğrudan gider** yazılabilir; amortisman zorunlu değildir.",
     "source": {
       "kind": "generated",
@@ -380,12 +380,12 @@
     "stem": "İşletmenin kendi kullanımı için inşa/imal ettiği ve henüz tamamlanmamış (kullanıma hazır olmayan) maddi duran varlık yatırımları Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "252 Binalar",
-      "B": "253 Tesis, Makine ve Cihazlar",
-      "C": "258 Yapılmakta Olan Yatırımlar",
+      "B": "258 Yapılmakta Olan Yatırımlar",
+      "C": "253 Tesis, Makine ve Cihazlar",
       "D": "259 Verilen Avanslar",
       "E": "150 İlk Madde ve Malzeme"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Henüz tamamlanmamış (kullanıma hazır olmayan) maddi duran varlık yatırımları **258 Yapılmakta Olan Yatırımlar** hesabında izlenir; tamamlanıp kullanıma hazır olunca ilgili MDV hesabına (252/253 vb.) aktarılır.",
     "source": {
       "kind": "generated",
@@ -402,12 +402,12 @@
     "stem": "Dönem sonunda maddi duran varlıklar için amortisman ayrılmasının, işletmenin dönem kârına etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Dönem kârını artırır.",
-      "B": "Dönem kârını azaltır (gider yazıldığı için).",
-      "C": "Dönem kârını etkilemez.",
+      "B": "Dönem kârını etkilemez.",
+      "C": "Dönem kârını azaltır (gider yazıldığı için).",
       "D": "Yalnızca bilançoyu etkiler, gelir tablosunu etkilemez.",
       "E": "Sermayeyi doğrudan artırır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Amortisman bir **giderdir** (770/730/760 vb.); dönem kârını **azaltır**. Aynı zamanda 257 Birikmiş Amortismanlar aracılığıyla varlığın net defter değerini düşürür.",
     "source": {
       "kind": "generated",
@@ -423,13 +423,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "İşletmenin maddi duran varlıkları bilançoda hangi değerle (net) gösterilir?",
     "options": {
-      "A": "Maliyet bedeli + Birikmiş amortisman",
-      "B": "Maliyet bedeli − Birikmiş amortisman (257)",
+      "A": "Maliyet bedeli − Birikmiş amortisman (257)",
+      "B": "Maliyet bedeli + Birikmiş amortisman",
       "C": "Yalnızca birikmiş amortisman",
       "D": "Piyasa (satış) değeri",
       "E": "Nominal değer"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Maddi duran varlıklar bilançoda **Maliyet bedeli − 257 Birikmiş Amortismanlar (-)** biçiminde net defter değeriyle gösterilir; 257 aktifi düzenleyici olduğundan düşülür.",
     "source": {
       "kind": "generated",
@@ -446,12 +446,12 @@
     "stem": "Maliyet bedeli 240.000 ₺ olan bir makine, faydalı ömrü 8 yıl kabul edilerek normal amortisman yöntemiyle amortismana tabi tutulmaktadır. 2 tam yıl amortisman ayrıldıktan sonra makinenin net defter değeri kaç ₺'dir?",
     "options": {
       "A": "240.000",
-      "B": "210.000",
-      "C": "180.000",
+      "B": "180.000",
+      "C": "210.000",
       "D": "60.000",
       "E": "30.000"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Yıllık amortisman = 240.000 ÷ 8 = 30.000 ₺. 2 yıl → birikmiş = 2 × 30.000 = 60.000 ₺. Net defter değeri = 240.000 − 60.000 = **180.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -468,12 +468,12 @@
     "stem": "Azalan bakiyeler (hızlandırılmış) amortisman yöntemi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Her yıl maliyet bedeli üzerinden sabit tutar ayrılır.",
-      "B": "Uygulanacak oran normal amortisman oranının iki katıdır (VUK'a göre %50'yi geçemez) ve her yıl kalan net değer (net defter değeri) üzerinden hesaplanır.",
-      "C": "Amortisman oranı her yıl artar.",
+      "B": "Amortisman oranı her yıl artar.",
+      "C": "Uygulanacak oran normal amortisman oranının iki katıdır (VUK'a göre %50'yi geçemez) ve her yıl kalan net değer (net defter değeri) üzerinden hesaplanır.",
       "D": "Yalnızca arsa ve arazilerde uygulanır.",
       "E": "Amortisman tutarı her yıl birikmiş amortisman üzerinden hesaplanır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Azalan bakiyeler yönteminde oran, normal oranın **2 katıdır** (VUK'a göre en çok **%50**) ve her yıl **kalan net defter değeri** üzerinden uygulanır. Böylece ilk yıllarda daha yüksek amortisman ayrılır.",
     "source": {
       "kind": "generated",
@@ -491,11 +491,11 @@
     "options": {
       "A": "40.000",
       "B": "48.000",
-      "C": "80.000",
-      "D": "100.000",
+      "C": "100.000",
+      "D": "80.000",
       "E": "20.000"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Azalan bakiyeler oranı = Normal oran × 2 = %20 × 2 = %40. Birinci yıl amortisman = 200.000 × %40 = **80.000 ₺** (ilk yıl maliyet = net değer olduğundan onun üzerinden).",
     "source": {
       "kind": "generated",
@@ -512,12 +512,12 @@
     "stem": "Maliyet bedeli 200.000 ₺, faydalı ömrü 5 yıl olan bir makineye azalan bakiyeler yöntemi (oran %40) uygulanmaktadır. Birinci yıl 80.000 ₺ amortisman ayrılmıştır. İkinci yıl ayrılacak amortisman tutarı kaç ₺'dir?",
     "options": {
       "A": "80.000",
-      "B": "48.000",
+      "B": "24.000",
       "C": "40.000",
       "D": "32.000",
-      "E": "24.000"
+      "E": "48.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "İkinci yıl, kalan net değer üzerinden hesaplanır: Kalan = 200.000 − 80.000 = 120.000 ₺. İkinci yıl amortisman = 120.000 × %40 = **48.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -533,13 +533,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "İşletme, faaliyetinde kullanmak üzere 1 Temmuz'da 120.000 ₺'ye bir binek otomobil satın almıştır (faydalı ömür 5 yıl). Binek otomobillerde kıst amortisman uygulandığına göre, alındığı yıl için ayrılacak amortisman tutarı kaç ₺'dir? (Yıl sonuna kadar 6 ay)",
     "options": {
-      "A": "24.000",
-      "B": "12.000",
+      "A": "12.000",
+      "B": "24.000",
       "C": "6.000",
       "D": "48.000",
       "E": "120.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Yıllık amortisman = 120.000 ÷ 5 = 24.000 ₺. Binek otomobilde **kıst amortisman** uygulanır: yalnızca kullanılan aylar (6 ay) için ayrılır. 24.000 × 6/12 = **12.000 ₺** (ayrılmayan ilk yıl payı, varlığın satıldığı/son yıl amortismanına eklenir).",
     "source": {
       "kind": "generated",
@@ -556,12 +556,12 @@
     "stem": "Vergi Usul Kanunu'na göre amortisman yöntemleri arasında geçiş ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Normal yöntemden azalan bakiyeler yöntemine her zaman geçilebilir.",
-      "B": "Azalan bakiyeler yönteminden normal yönteme geçilebilir; ancak normal yöntemden azalan bakiyeler yöntemine geçilemez.",
+      "B": "Yöntem seçildikten sonra hiçbir şekilde değiştirilemez.",
       "C": "Her iki yönde de serbestçe geçiş yapılabilir.",
-      "D": "Yöntem seçildikten sonra hiçbir şekilde değiştirilemez.",
+      "D": "Azalan bakiyeler yönteminden normal yönteme geçilebilir; ancak normal yöntemden azalan bakiyeler yöntemine geçilemez.",
       "E": "Yöntem her yıl zorunlu olarak değiştirilir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "VUK'a göre **azalan bakiyeler yönteminden normal yönteme** geçiş serbesttir (mükellef isterse geçebilir); ancak **normal yöntemden azalan bakiyeler yöntemine geçilemez**.",
     "source": {
       "kind": "generated",
@@ -622,12 +622,12 @@
     "stem": "Bir maddi duran varlığın satışından doğan kâr veya zarar nasıl hesaplanır?",
     "options": {
       "A": "Satış bedeli − Maliyet bedeli",
-      "B": "Satış bedeli − Net defter değeri (Maliyet − Birikmiş amortisman)",
-      "C": "Maliyet bedeli − Birikmiş amortisman",
+      "B": "Maliyet bedeli − Birikmiş amortisman",
+      "C": "Satış bedeli − Net defter değeri (Maliyet − Birikmiş amortisman)",
       "D": "Satış bedeli − Birikmiş amortisman",
       "E": "Maliyet bedeli − Satış bedeli"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "MDV satış kâr/zararı = **Satış bedeli − Net defter değeri**; net defter değeri = Maliyet − Birikmiş amortisman (257). Satış > NDD ise kâr (679), satış < NDD ise zarar (689).",
     "source": {
       "kind": "generated",
@@ -645,11 +645,11 @@
     "options": {
       "A": "600 Yurt İçi Satışlar",
       "B": "649 Diğer Olağan Gelir ve Kârlar",
-      "C": "679 Diğer Olağandışı Gelir ve Kârlar",
+      "C": "689 Diğer Olağandışı Gider ve Zararlar",
       "D": "602 Diğer Gelirler",
-      "E": "689 Diğer Olağandışı Gider ve Zararlar"
+      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Maddi duran varlık satış **kârı**, olağandışı bir işlem sayılarak **679 Diğer Olağandışı Gelir ve Kârlar** hesabına alacak kaydedilir.",
     "source": {
       "kind": "generated",
@@ -665,13 +665,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "Bir maddi duran varlığın net defter değerinin altında bir bedelle satılması sonucu doğan zarar, Tekdüzen Hesap Planı'nda hangi hesaba kaydedilir?",
     "options": {
-      "A": "689 Diğer Olağandışı Gider ve Zararlar",
+      "A": "621 Satılan Ticari Mallar Maliyeti",
       "B": "679 Diğer Olağandışı Gelir ve Kârlar",
-      "C": "621 Satılan Ticari Mallar Maliyeti",
+      "C": "689 Diğer Olağandışı Gider ve Zararlar",
       "D": "654 Karşılık Giderleri",
       "E": "770 Genel Yönetim Giderleri"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Maddi duran varlık satış **zararı**, olağandışı bir işlem sayılarak **689 Diğer Olağandışı Gider ve Zararlar** hesabına borç kaydedilir.",
     "source": {
       "kind": "generated",
@@ -688,12 +688,12 @@
     "stem": "Azalan bakiyeler amortisman yönteminde, varlığın faydalı ömrünün son yılında amortisman nasıl ayrılır?",
     "options": {
       "A": "Son yıl amortisman ayrılmaz.",
-      "B": "Son yıl, kalan net defter değerinin tamamı amortisman olarak ayrılır.",
+      "B": "Son yıl maliyetin tamamı ayrılır.",
       "C": "Son yıl da yine %50 oran uygulanır.",
-      "D": "Son yıl maliyetin tamamı ayrılır.",
+      "D": "Son yıl, kalan net defter değerinin tamamı amortisman olarak ayrılır.",
       "E": "Son yıl birikmiş amortisman iptal edilir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Azalan bakiyeler yönteminde **son yıl**, o güne kadar itfa edilmemiş **kalan net defter değerinin tamamı** amortisman olarak ayrılır (aksi hâlde varlık hiç tükenmezdi).",
     "source": {
       "kind": "generated",
@@ -709,13 +709,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "İşletmenin, ileride teslim alacağı bir maddi duran varlık için satıcıya peşin olarak verdiği avanslar Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
-      "A": "159 Verilen Sipariş Avansları",
-      "B": "259 Verilen Avanslar",
+      "A": "259 Verilen Avanslar",
+      "B": "159 Verilen Sipariş Avansları",
       "C": "195 İş Avansları",
       "D": "126 Verilen Depozito ve Teminatlar",
       "E": "258 Yapılmakta Olan Yatırımlar"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Maddi duran varlık edinimi için verilen avanslar, 25 grubundaki **259 Verilen Avanslar** hesabında izlenir. (159 Verilen Sipariş Avansları ise stok/ticari mal alımı içindir.)",
     "source": {
       "kind": "generated",
@@ -754,12 +754,12 @@
     "stem": "Bir maddi duran varlığa edinildikten sonra yapılan harcamaların muhasebeleştirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Tüm harcamalar doğrudan gider yazılır.",
-      "B": "Varlığın değerini, kapasitesini veya faydalı ömrünü artıran harcamalar maliyete eklenir; olağan bakım-onarım giderleri ise dönem gideri yazılır.",
+      "B": "Harcamalar birikmiş amortismandan düşülür.",
       "C": "Tüm harcamalar varlığın maliyetine eklenir.",
       "D": "Olağan bakım giderleri de maliyete eklenir.",
-      "E": "Harcamalar birikmiş amortismandan düşülür."
+      "E": "Varlığın değerini, kapasitesini veya faydalı ömrünü artıran harcamalar maliyete eklenir; olağan bakım-onarım giderleri ise dönem gideri yazılır."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Varlığın **değerini/kapasitesini/faydalı ömrünü artıran** harcamalar maliyete (aktifleştirilir) eklenir; **olağan bakım-onarım** gibi harcamalar ise **dönem gideri** yazılır.",
     "source": {
       "kind": "generated",
@@ -775,13 +775,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "İşletme, üretimde kullandığı bir makinenin olağan (rutin) bakım-onarımı için 5.000 ₺ + %20 KDV nakit ödemiştir. Bu harcama nasıl kaydedilir?",
     "options": {
-      "A": "253 Tesis, Makine ve Cihazlar hesabına eklenir (aktifleştirilir).",
-      "B": "İlgili gider hesabına (ör. 730 Genel Üretim Giderleri) 5.000 ₺ gider olarak kaydedilir; 191 İndirilecek KDV 1.000 ₺.",
+      "A": "İlgili gider hesabına (ör. 730 Genel Üretim Giderleri) 5.000 ₺ gider olarak kaydedilir; 191 İndirilecek KDV 1.000 ₺.",
+      "B": "253 Tesis, Makine ve Cihazlar hesabına eklenir (aktifleştirilir).",
       "C": "257 Birikmiş Amortismanlar hesabından düşülür.",
       "D": "689 Diğer Olağandışı Gider ve Zararlar'a kaydedilir.",
       "E": "258 Yapılmakta Olan Yatırımlar'a kaydedilir."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Olağan bakım-onarım, varlığın değerini artırmadığından **maliyete eklenmez**; ilgili **gider hesabına** (üretimle ilgili olduğu için 730 Genel Üretim Giderleri) 5.000 ₺ yazılır, KDV 191'e (1.000 ₺) alınır.",
     "source": {
       "kind": "generated",
@@ -798,12 +798,12 @@
     "stem": "İşletme, mevcut bir makinesinin üretim kapasitesini kalıcı olarak artıran bir ilave (revizyon) için 40.000 ₺ + %20 KDV nakit harcama yapmıştır. Bu harcamanın 40.000 ₺'lik kısmı nasıl kaydedilir?",
     "options": {
       "A": "730 Genel Üretim Giderleri hesabına gider yazılır.",
-      "B": "253 Tesis, Makine ve Cihazlar hesabına eklenir (aktifleştirilir), çünkü varlığın kapasitesini/değerini artırmıştır.",
+      "B": "257 Birikmiş Amortismanlar hesabına alacak yazılır.",
       "C": "689 Diğer Olağandışı Gider ve Zararlar'a yazılır.",
-      "D": "257 Birikmiş Amortismanlar hesabına alacak yazılır.",
+      "D": "253 Tesis, Makine ve Cihazlar hesabına eklenir (aktifleştirilir), çünkü varlığın kapasitesini/değerini artırmıştır.",
       "E": "770 Genel Yönetim Giderleri'ne yazılır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Varlığın **kapasitesini/değerini kalıcı olarak artıran** harcama, olağan bakımdan farklı olarak **maliyete eklenir**: 253 Tesis, Makine ve Cihazlar (B) 40.000; 191 İndirilecek KDV (B) 8.000 / 100 Kasa (A) 48.000.",
     "source": {
       "kind": "generated",
@@ -820,12 +820,12 @@
     "stem": "Vergi Usul Kanunu'na göre, binek otomobiller dışındaki maddi duran varlıklarda amortisman ayrılmaya ne zaman başlanır?",
     "options": {
       "A": "Varlığın sipariş edildiği yıldan itibaren gün esasına göre.",
-      "B": "Varlığın işletmenin aktifine girdiği (envantere alındığı/kullanıma hazır olduğu) yıldan itibaren; ilk yıl için tam yıl amortisman ayrılır (kıst uygulanmaz).",
-      "C": "Yalnızca varlık tamamen ödendiğinde.",
+      "B": "Yalnızca varlık tamamen ödendiğinde.",
+      "C": "Varlığın işletmenin aktifine girdiği (envantere alındığı/kullanıma hazır olduğu) yıldan itibaren; ilk yıl için tam yıl amortisman ayrılır (kıst uygulanmaz).",
       "D": "Varlık satılana kadar hiç amortisman ayrılmaz.",
       "E": "Her zaman kullanılan ay sayısına (kıst) göre."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Binek otomobiller **dışındaki** MDV'lerde amortisman, varlığın **aktife girdiği (envantere alındığı) yıldan** başlar ve ilk yıl **tam yıl** amortisman ayrılır (gün/ay kıstı yapılmaz). Kıst amortisman yalnızca binek otomobillerde uygulanır.",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "İşletme, üzerinde bina bulunan bir gayrimenkulü toplam 500.000 ₺'ye satın almış; bunun 100.000 ₺'si arsaya, 400.000 ₺'si binaya isabet etmektedir. Bina 50 yıl faydalı ömürle normal amortismana tabi tutulacaktır. İlk yıl ayrılacak amortisman tutarı kaç ₺'dir?",
     "options": {
       "A": "10.000",
-      "B": "8.000",
+      "B": "12.500",
       "C": "2.000",
       "D": "20.000",
-      "E": "12.500"
+      "E": "8.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Arsa (250) amortismana tabi **değildir**; yalnızca bina amortismana tabidir. Bina oranı = 1/50 = %2. İlk yıl amortisman = 400.000 × %2 = **8.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -886,12 +886,12 @@
     "stem": "Azalan bakiyeler amortisman yönteminin, normal amortisman yöntemine göre en belirgin özelliği aşağıdakilerden hangisidir?",
     "options": {
       "A": "Toplamda daha az amortisman ayrılmasını sağlar.",
-      "B": "Varlığın ilk yıllarında daha yüksek, sonraki yıllarında daha düşük amortisman gideri ayrılmasını sağlar.",
+      "B": "Arsa ve arazilerin de amortismana tabi tutulmasını sağlar.",
       "C": "Her yıl eşit tutarda amortisman ayrılmasını sağlar.",
       "D": "Amortisman süresini uzatır.",
-      "E": "Arsa ve arazilerin de amortismana tabi tutulmasını sağlar."
+      "E": "Varlığın ilk yıllarında daha yüksek, sonraki yıllarında daha düşük amortisman gideri ayrılmasını sağlar."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Azalan bakiyeler (hızlandırılmış) yöntemi, **ilk yıllarda daha yüksek**, sonraki yıllarda daha düşük amortisman gideri doğurur. Toplam ayrılan amortisman her iki yöntemde de maliyete eşittir; yalnızca yıllara dağılımı farklıdır.",
     "source": {
       "kind": "generated",
@@ -908,12 +908,12 @@
     "stem": "İşletmeye bağış (karşılıksız) yoluyla intikal eden bir maddi duran varlık, Vergi Usul Kanunu'na göre hangi değerle kayıtlara alınır?",
     "options": {
       "A": "Nominal (itibari) değeriyle",
-      "B": "Rayiç (emsal) bedeliyle",
+      "B": "Yalnızca birikmiş amortismanı kadar",
       "C": "Sıfır değerle (kayda alınmaz)",
-      "D": "Yalnızca birikmiş amortismanı kadar",
+      "D": "Rayiç (emsal) bedeliyle",
       "E": "İz bedeliyle (1 ₺)"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Bedelsiz (bağış) olarak edinilen maddi duran varlıklar, bir bedelle satın alınmadığından **rayiç (emsal) bedeliyle** değerlenerek kayıtlara alınır ve bu değer üzerinden amortismana tabi tutulur.",
     "source": {
       "kind": "generated",
@@ -930,12 +930,12 @@
     "stem": "Maliyet bedeli 360.000 ₺, faydalı ömrü 6 yıl olan bir makine normal amortisman yöntemiyle amortismana tabi tutulmaktadır. 3 tam yıl sonunda '257 Birikmiş Amortismanlar' hesabının bakiyesi kaç ₺'dir?",
     "options": {
       "A": "60.000",
-      "B": "120.000",
-      "C": "180.000",
+      "B": "180.000",
+      "C": "120.000",
       "D": "240.000",
       "E": "360.000"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Yıllık amortisman = 360.000 ÷ 6 = 60.000 ₺. 3 yıl → Birikmiş amortisman = 3 × 60.000 = **180.000 ₺** (257 hesabının alacak bakiyesi).",
     "source": {
       "kind": "generated",
@@ -974,12 +974,12 @@
     "stem": "İşletme, faaliyetinde kullanmak üzere 1 Nisan'da 200.000 ₺'ye bir binek otomobil satın almıştır (faydalı ömür 5 yıl). Kıst amortisman uygulandığına göre, alındığı yıl için ayrılacak amortisman tutarı kaç ₺'dir? (Yıl sonuna kadar 9 ay)",
     "options": {
       "A": "40.000",
-      "B": "30.000",
-      "C": "20.000",
+      "B": "20.000",
+      "C": "30.000",
       "D": "10.000",
       "E": "45.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Yıllık amortisman = 200.000 ÷ 5 = 40.000 ₺. Binek otomobilde kıst uygulanır → 9 ay için: 40.000 × 9/12 = **30.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -1018,12 +1018,12 @@
     "stem": "Normal amortisman yönteminde yıllık amortisman tutarı aşağıdaki değerlerden hangisi üzerinden hesaplanır?",
     "options": {
       "A": "Her yıl kalan net defter değeri üzerinden",
-      "B": "Varlığın maliyet bedeli üzerinden (her yıl aynı tutar)",
-      "C": "Varlığın piyasa (satış) değeri üzerinden",
+      "B": "Varlığın piyasa (satış) değeri üzerinden",
+      "C": "Varlığın maliyet bedeli üzerinden (her yıl aynı tutar)",
       "D": "Birikmiş amortisman üzerinden",
       "E": "Varlığın hurda değeri üzerinden"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Normal (eşit tutarlı) amortismanda tutar her yıl **maliyet bedeli** üzerinden ve aynı miktarda hesaplanır. (Kalan net değer üzerinden hesaplama azalan bakiyeler yöntemine aittir.)",
     "source": {
       "kind": "generated",
@@ -1040,12 +1040,12 @@
     "stem": "Maddi duran varlıklarda 'iz bedeli' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
       "A": "Varlığın alış bedelidir.",
-      "B": "Tamamen amortize edilmiş ancak kullanımda olan bir varlığın kayıtlarda izlenmesi için bırakılan çok küçük (ör. 1 ₺) sembolik değerdir.",
+      "B": "Varlığın yıllık amortisman tutarıdır.",
       "C": "Varlığın birikmiş amortismanıdır.",
       "D": "Varlığın piyasa değeridir.",
-      "E": "Varlığın yıllık amortisman tutarıdır."
+      "E": "Tamamen amortize edilmiş ancak kullanımda olan bir varlığın kayıtlarda izlenmesi için bırakılan çok küçük (ör. 1 ₺) sembolik değerdir."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**İz bedeli**, tamamen amortize edilmiş fakat hâlâ kullanılan bir varlığın kayıtlardan tümüyle çıkmasını önlemek için bırakılan **sembolik değerdir** (genellikle 1 ₺). Varlığın varlığını kayıtlarda 'iz' olarak sürdürür.",
     "source": {
       "kind": "generated",
@@ -1106,12 +1106,12 @@
     "stem": "Maddi duran varlıkların faydalı ömürleri ve buna bağlı amortisman oranları ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Her işletme dilediği ömrü serbestçe belirler.",
-      "B": "İktisadi kıymet türlerine göre faydalı ömürler ve amortisman oranları, Hazine ve Maliye Bakanlığı'nca yayımlanan listelerle (VUK genel tebliğleri) belirlenir.",
-      "C": "Tüm varlıklar için ömür 5 yıldır.",
+      "B": "Tüm varlıklar için ömür 5 yıldır.",
+      "C": "İktisadi kıymet türlerine göre faydalı ömürler ve amortisman oranları, Hazine ve Maliye Bakanlığı'nca yayımlanan listelerle (VUK genel tebliğleri) belirlenir.",
       "D": "Amortisman oranı her yıl enflasyona göre değişir.",
       "E": "Faydalı ömrü satıcı firma belirler."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "VUK uyarınca iktisadi kıymetlerin faydalı ömürleri ve amortisman oranları, **Hazine ve Maliye Bakanlığı'nca yayımlanan amortisman listeleriyle** (VUK genel tebliğleri) belirlenir; işletmeler bu oranlarla bağlıdır.",
     "source": {
       "kind": "generated",
@@ -1150,12 +1150,12 @@
     "stem": "Kayıtlı maliyeti 150.000 ₺, birikmiş amortismanı 90.000 ₺ olan bir makine çıkan yangında tamamen kullanılamaz hâle gelmiş ve herhangi bir sigorta/hurda geliri elde edilememiştir. Bu makinenin kayıtlardan çıkarılmasında oluşan zarar kaç ₺'dir?",
     "options": {
       "A": "150.000",
-      "B": "90.000",
-      "C": "60.000",
+      "B": "60.000",
+      "C": "90.000",
       "D": "240.000",
       "E": "0"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Net defter değeri = 150.000 − 90.000 = 60.000 ₺. Varlık tamamen zayi olduğundan bu tutar zarar yazılır: 257 Bir. Amort. (B) 90.000; **689 Diğer Olağandışı Gider ve Zararlar (B) 60.000** / 253 (A) 150.000. Zarar = **60.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -1173,11 +1173,11 @@
     "options": {
       "A": "40.000",
       "B": "24.000",
-      "C": "14.400",
+      "C": "20.000",
       "D": "8.640",
-      "E": "20.000"
+      "E": "14.400"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "1. yıl: 100.000 × %40 = 40.000 → kalan 60.000. 2. yıl: 60.000 × %40 = 24.000 → kalan 36.000. 3. yıl: 36.000 × %40 = **14.400 ₺**.",
     "source": {
       "kind": "generated",
@@ -1193,13 +1193,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "Maliyet bedeli 100.000 ₺ olan bir makineye azalan bakiyeler yöntemi (oran %40) uygulanmakta; ilk üç yılda sırasıyla 40.000 ₺, 24.000 ₺ ve 14.400 ₺ amortisman ayrılmıştır. Üçüncü yılın sonunda makinenin net defter değeri kaç ₺'dir?",
     "options": {
-      "A": "78.400",
+      "A": "21.600",
       "B": "36.000",
-      "C": "21.600",
+      "C": "78.400",
       "D": "14.400",
       "E": "60.000"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Birikmiş amortisman = 40.000 + 24.000 + 14.400 = 78.400 ₺. Net defter değeri = 100.000 − 78.400 = **21.600 ₺**.",
     "source": {
       "kind": "generated",
@@ -1216,12 +1216,12 @@
     "stem": "Bir maddi duran varlığın satışına ilişkin muhasebe kaydında, o varlık için önceki dönemlerde ayrılmış olan '257 Birikmiş Amortismanlar' hesabı nasıl işlem görür?",
     "options": {
       "A": "Kayıtta hiç yer almaz.",
-      "B": "Borçlandırılarak kapatılır (ilgili varlık hesabıyla birlikte kayıtlardan çıkarılır).",
+      "B": "191 İndirilecek KDV'ye aktarılır.",
       "C": "Alacaklandırılarak artırılır.",
       "D": "679 hesabına devredilir.",
-      "E": "191 İndirilecek KDV'ye aktarılır."
+      "E": "Borçlandırılarak kapatılır (ilgili varlık hesabıyla birlikte kayıtlardan çıkarılır)."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "MDV satışında varlık kayıtlardan çıkarılırken, ona ait **257 Birikmiş Amortismanlar borçlandırılarak kapatılır**; varlık hesabı (253 vb.) alacaklandırılır. Aradaki fark, satış bedeliyle karşılaştırılarak kâr (679) / zarar (689) belirlenir.",
     "source": {
       "kind": "generated",
@@ -1238,12 +1238,12 @@
     "stem": "Aşağıdakilerden hangisi bir maddi duran varlığın maliyet bedeline dâhil edilmez?",
     "options": {
       "A": "Satın alma bedeli",
-      "B": "Nakliye ve sigorta gideri",
+      "B": "Varlıkla ilgisi olmayan genel yönetim giderlerinden pay",
       "C": "Montaj ve kurulum gideri",
-      "D": "Varlıkla ilgisi olmayan genel yönetim giderlerinden pay",
+      "D": "Nakliye ve sigorta gideri",
       "E": "Alışta ödenen ve maliyete eklenmesi gereken noter/tapu harçları"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "MDV maliyetine yalnızca varlığı **edinme ve kullanıma hazır hâle getirme** ile doğrudan ilgili giderler girer. Varlıkla doğrudan ilgisi olmayan **genel yönetim giderlerinden pay** maliyete eklenmez; dönem gideri yazılır.",
     "source": {
       "kind": "generated",
@@ -1260,12 +1260,12 @@
     "stem": "Maddi duran varlıklar için amortisman ayrılması, muhasebe süreci içinde genellikle ne zaman yapılan bir işlemdir?",
     "options": {
       "A": "Her satış işleminde",
-      "B": "Dönem sonunda (envanter/dönem sonu işlemleri sırasında)",
+      "B": "Her ay zorunlu olarak fiş kesilerek",
       "C": "Yalnızca varlık ilk alındığında",
-      "D": "Her ay zorunlu olarak fiş kesilerek",
+      "D": "Dönem sonunda (envanter/dönem sonu işlemleri sırasında)",
       "E": "Yalnızca varlık satıldığında"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Amortisman, dönemin gideri hesaplanırken **dönem sonu (envanter) işlemleri** sırasında ayrılır; böylece varlığın o döneme düşen yıpranma payı gidere yansıtılır (dönemsellik kavramı).",
     "source": {
       "kind": "generated",
@@ -1303,13 +1303,13 @@
     "konu": "maddi_duran_varliklar",
     "stem": "Maddi duran varlıklar ve amortisman ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Amortisman, amortismana tabi bir maddi duran varlığın maliyetinin faydalı ömrü boyunca gidere dönüştürülmesidir.\nII. Arsa ve araziler amortismana tabi değildir.\nIII. Maddi duran varlık satış kârı 679, satış zararı 689 hesabında izlenir.",
     "options": {
-      "A": "Yalnız I",
+      "A": "I, II ve III",
       "B": "I ve II",
       "C": "II ve III",
       "D": "I ve III",
-      "E": "I, II ve III"
+      "E": "Yalnız I"
     },
-    "answer": "E",
+    "answer": "A",
     "solution": "Üç ifade de doğrudur: **I** amortismanın tanımıdır; **II** arsa/araziler yıpranmadığından amortismana tabi değildir; **III** MDV satış kârı 679 Diğer Olağandışı Gelir ve Kârlar, satış zararı 689 Diğer Olağandışı Gider ve Zararlar'da izlenir. Doğru cevap **I, II ve III**.",
     "source": {
       "kind": "generated",

@@ -5,13 +5,13 @@
     "konu": "stoklar",
     "stem": "Aralıklı (dönemsel) envanter yöntemi ile sürekli envanter yöntemi arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Sürekli envanterde satış anında satılan malın maliyeti kaydedilmez.",
+      "A": "Sürekli envanterde her satışta hem satış hasılatı hem de satılan malın maliyeti kaydedilir.",
       "B": "Aralıklı envanterde her satışta '621 Satılan Ticari Malların Maliyeti' çalıştırılır.",
-      "C": "Sürekli envanterde her satışta hem satış hasılatı hem de satılan malın maliyeti kaydedilir.",
+      "C": "Sürekli envanterde satış anında satılan malın maliyeti kaydedilmez.",
       "D": "Aralıklı envanterde dönem içinde '153 Ticari Mallar' hesabı hiç kullanılmaz.",
       "E": "İki yöntem de dönem sonunda aynı defter kayıt sayısını üretir."
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "**Sürekli envanter** yönteminde her satışta iki kayıt yapılır: (1) hasılat kaydı, (2) satılan malın maliyeti kaydı (**621 (B) / 153 (A)**). **Aralıklı** yöntemde ise satılan malın maliyeti dönem sonunda toplu olarak hesaplanır (DBM + Alışlar − DSM).",
     "source": {
       "kind": "generated",
@@ -28,12 +28,12 @@
     "stem": "Aralıklı envanter yöntemini kullanan bir işletmenin dönem başı ticari mal mevcudu 40.000 ₺, dönem içi ticari mal alışları toplamı 260.000 ₺ ve fiilî sayımla belirlenen dönem sonu ticari mal mevcudu 55.000 ₺'dir.\n\nBuna göre dönemde satılan ticari malların maliyeti (SMM) kaç ₺'dir?",
     "options": {
       "A": "215.000",
-      "B": "245.000",
-      "C": "260.000",
+      "B": "260.000",
+      "C": "245.000",
       "D": "300.000",
       "E": "355.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "SMM = Dönem Başı Mevcut + Dönem Alışları − Dönem Sonu Mevcut = 40.000 + 260.000 − 55.000 = **245.000 ₺**. Aralıklı yöntemde bu tutar dönem sonunda **621 (B) / 153 (A)** kaydıyla maliyete alınır.",
     "source": {
       "kind": "generated",
@@ -49,13 +49,13 @@
     "konu": "stoklar",
     "stem": "Sürekli envanter yöntemini uygulayan işletme, maliyeti 18.000 ₺ olan ticari malı 25.000 ₺ + %20 KDV bedelle veresiye satmıştır.\n\nBuna göre satışın maliyetine ilişkin yapılması gereken kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "621 Satılan Ticari Malların Maliyeti (B) 18.000 / 153 Ticari Mallar (A) 18.000",
+      "A": "621 Satılan Ticari Malların Maliyeti (B) 30.000 / 153 Ticari Mallar (A) 30.000",
       "B": "153 Ticari Mallar (B) 18.000 / 621 Satılan Ticari Malların Maliyeti (A) 18.000",
       "C": "621 Satılan Ticari Malların Maliyeti (B) 25.000 / 153 Ticari Mallar (A) 25.000",
       "D": "600 Yurt İçi Satışlar (B) 25.000 / 153 Ticari Mallar (A) 25.000",
-      "E": "621 Satılan Ticari Malların Maliyeti (B) 30.000 / 153 Ticari Mallar (A) 30.000"
+      "E": "621 Satılan Ticari Malların Maliyeti (B) 18.000 / 153 Ticari Mallar (A) 18.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Sürekli envanterde satış maliyeti, malın **maliyet bedeli** (18.000 ₺) üzerinden kaydedilir: **621 (B) 18.000 / 153 (A) 18.000**. Satış bedeli (25.000) ve KDV, ayrı hasılat kaydında (120/600/391) işlenir; maliyet kaydını etkilemez.",
     "source": {
       "kind": "generated",
@@ -95,11 +95,11 @@
     "options": {
       "A": "7.000",
       "B": "7.600",
-      "C": "7.840",
-      "D": "8.400",
+      "C": "8.400",
+      "D": "7.840",
       "E": "3.360"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Ortalama birim maliyet = Toplam maliyet ÷ Toplam miktar = (4.000 + 7.200) ÷ 500 = 11.200 ÷ 500 = **22,40 ₺**. Satışın maliyeti = 350 × 22,40 = **7.840 ₺**. (Dönem sonu stok = 150 × 22,40 = 3.360 ₺.)",
     "source": {
       "kind": "generated",
@@ -137,13 +137,13 @@
     "konu": "stoklar",
     "stem": "Aşağıdakilerden hangisi satın alınan ticari malın stok maliyetine dâhil edilmez?",
     "options": {
-      "A": "Malın alış bedeli",
+      "A": "Vadeli alıştan kaynaklanan finansman (vade farkı) gideri",
       "B": "İşletmeye taşıma (navlun) gideri",
       "C": "Sigorta ve gümrük vergisi gibi alışla doğrudan ilgili giderler",
-      "D": "Vadeli alıştan kaynaklanan finansman (vade farkı) gideri",
+      "D": "Malın alış bedeli",
       "E": "Alışa ilişkin yükleme-boşaltma giderleri"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "Stok maliyetine; alış bedeli, navlun, sigorta, gümrük ve alışla doğrudan ilgili giderler **dâhildir**. Ancak **vadeli alıştan doğan finansman (vade farkı) gideri** stok maliyetine alınmaz; finansman gideri olarak sonuç hesaplarına yansıtılır (TMS 2).",
     "source": {
       "kind": "generated",
@@ -159,13 +159,13 @@
     "konu": "stoklar",
     "stem": "Sürekli envanter yöntemini kullanan işletme, tanesi KDV hariç 50.000 ₺ tutarında ticari malı %20 KDV ile veresiye satın almıştır.\n\nBu alış işleminde '191 İndirilecek KDV' hesabına yazılacak tutar ve tarafı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "10.000 ₺ borç",
+      "A": "60.000 ₺ borç",
       "B": "10.000 ₺ alacak",
       "C": "50.000 ₺ borç",
-      "D": "60.000 ₺ borç",
+      "D": "10.000 ₺ borç",
       "E": "12.000 ₺ borç"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "KDV = 50.000 × %20 = 10.000 ₺ ve indirilecek KDV alışta **borç** yazılır. Kayıt: 153 Ticari Mallar (B) 50.000 + **191 İndirilecek KDV (B) 10.000** / 320 Satıcılar (A) 60.000.",
     "source": {
       "kind": "generated",
@@ -182,12 +182,12 @@
     "stem": "Sürekli envanter yöntemini kullanan işletme, daha önce %20 KDV ile veresiye aldığı 8.000 ₺'lik (KDV hariç) ticari malı satıcısına iade etmiş; tutar borcundan düşülmüştür.\n\nBu iade işleminin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "153 Ticari Mallar (B) 8.000 + 191 İndirilecek KDV (B) 1.600 / 320 Satıcılar (A) 9.600",
-      "B": "320 Satıcılar (B) 9.600 / 153 Ticari Mallar (A) 8.000 + 191 İndirilecek KDV (A) 1.600",
-      "C": "610 Satıştan İadeler (B) 8.000 / 320 Satıcılar (A) 8.000",
+      "B": "610 Satıştan İadeler (B) 8.000 / 320 Satıcılar (A) 8.000",
+      "C": "320 Satıcılar (B) 9.600 / 153 Ticari Mallar (A) 8.000 + 191 İndirilecek KDV (A) 1.600",
       "D": "320 Satıcılar (B) 8.000 / 153 Ticari Mallar (A) 8.000",
       "E": "621 Satılan Ticari Malların Maliyeti (B) 9.600 / 320 Satıcılar (A) 9.600"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Alış iadesinde ilk alış kaydı ters çevrilir: borç azaldığı için **320 Satıcılar (B) 9.600**; stok çıktığı için **153 (A) 8.000** ve daha önce indirilen KDV düzeltildiği için **191 İndirilecek KDV (A) 1.600**.",
     "source": {
       "kind": "generated",
@@ -204,12 +204,12 @@
     "stem": "İşletmenin dönem sonu stoklarının maliyet bedeli 120.000 ₺, net gerçekleşebilir değeri ise 104.000 ₺ olarak belirlenmiştir. Değer düşüklüğü için karşılık ayrılacaktır.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
       "A": "158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 153 Ticari Mallar (A) 16.000",
-      "B": "654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 16.000",
+      "B": "689 Diğer Olağandışı Gider (B) 120.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 120.000",
       "C": "153 Ticari Mallar (B) 16.000 / 644 Konusu Kalmayan Karşılıklar (A) 16.000",
       "D": "621 Satılan Ticari Malların Maliyeti (B) 104.000 / 153 Ticari Mallar (A) 104.000",
-      "E": "689 Diğer Olağandışı Gider (B) 120.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 120.000"
+      "E": "654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 16.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Değer düşüklüğü = 120.000 − 104.000 = 16.000 ₺. Gider tahakkuk ettirilip karşılık ayrılır: **654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (-) (A) 16.000**. 158 aktifi düzenleyici hesaptır.",
     "source": {
       "kind": "generated",
@@ -315,11 +315,11 @@
     "options": {
       "A": "Yalnız I",
       "B": "I ve III",
-      "C": "I, II ve IV",
-      "D": "II ve III",
+      "C": "II ve III",
+      "D": "I, II ve IV",
       "E": "I, II, III ve IV"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "**I, II ve IV doğrudur:** VUK'a göre emtia maliyet bedeliyle (md. 274), kıymeti düşenler emsal bedelle (md. 278) değerlenir; navlun/sigorta maliyete girer. **III yanlıştır:** vade farkı/finansman gideri stok maliyetine zorunlu olarak eklenmez (TMS 2), ayrı gider yazılır.",
     "source": {
       "kind": "generated",
@@ -336,12 +336,12 @@
     "stem": "Aralıklı envanter yöntemini kullanan işletme dönem içi alışlarını '153 Ticari Mallar' hesabının borcunda izlemektedir. Dönem sonunda satılan malın maliyetini belirlemek için yapılan işlem aşağıdakilerden hangisidir?",
     "options": {
       "A": "Her satışta 621 hesabı borçlandırılır.",
-      "B": "Dönem sonu fiilî sayımla belirlenen mevcut esas alınarak satılan malın maliyeti hesaplanır ve '621 (B) / 153 (A)' kaydı yapılır.",
+      "B": "Dönem sonu mevcut, maliyet yerine satış fiyatıyla değerlenir.",
       "C": "153 hesabı hiç kullanılmaz, tüm alışlar doğrudan gider yazılır.",
       "D": "Satılan malın maliyeti '600 Yurt İçi Satışlar' hesabından düşülür.",
-      "E": "Dönem sonu mevcut, maliyet yerine satış fiyatıyla değerlenir."
+      "E": "Dönem sonu fiilî sayımla belirlenen mevcut esas alınarak satılan malın maliyeti hesaplanır ve '621 (B) / 153 (A)' kaydı yapılır."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Aralıklı yöntemde satılan malın maliyeti dönem sonunda **fiilî sayımla** belirlenen mevcuda göre hesaplanır (DBM + Alışlar − DSM) ve tek kayıtla maliyete alınır: **621 (B) / 153 (A)**. Dönem içi her satışta ayrı maliyet kaydı yapılmaz.",
     "source": {
       "kind": "generated",
@@ -358,12 +358,12 @@
     "stem": "Stok maliyet akış yöntemlerinden 'hareketli ağırlıklı ortalama' yöntemi için aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Yalnızca dönem sonunda tek bir ortalama maliyet hesaplanır.",
-      "B": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir.",
+      "B": "Son giren ilk çıkar mantığıyla çalışır.",
       "C": "İlk giren ilk çıkar mantığıyla çalışır.",
-      "D": "Son giren ilk çıkar mantığıyla çalışır.",
+      "D": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir.",
       "E": "Stok miktarını dikkate almadan basit ortalama alır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Hareketli ağırlıklı ortalama**, her yeni alıştan sonra eldeki stokun toplam maliyetini toplam miktara bölerek ortalamayı **günceller**; satışlar o anki güncel ortalama ile maliyetlendirilir. Dönem sonunda tek ortalama hesaplayan yöntem ise 'tartılı (dönem sonu) ortalama'dır.",
     "source": {
       "kind": "generated",
@@ -379,13 +379,13 @@
     "konu": "stoklar",
     "stem": "Sürekli envanter yönteminde dönem sonunda '153 Ticari Mallar' hesabının kaydi kalanı ile fiilî sayım sonucu birbirine eşitse, bu durumla ilgili aşağıdakilerden hangisi söylenebilir?",
     "options": {
-      "A": "Mutlaka stok değer düşüklüğü karşılığı ayrılmalıdır.",
-      "B": "Sayım noksanı/fazlası kaydı (197 veya 397) yapılmasına gerek yoktur.",
+      "A": "Sayım noksanı/fazlası kaydı (197 veya 397) yapılmasına gerek yoktur.",
+      "B": "Mutlaka stok değer düşüklüğü karşılığı ayrılmalıdır.",
       "C": "621 hesabı ters kayıtla kapatılmalıdır.",
       "D": "Dönem içindeki tüm satış kayıtları hatalıdır.",
       "E": "Ticari mallar bilançoda satış fiyatıyla gösterilir."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Kaydi kalan ile fiilî mevcut eşitse stok farkı yoktur; bu nedenle **sayım noksanı (197) veya fazlası (397) kaydına gerek yoktur**. Değer düşüklüğü ise ayrı bir değerleme konusudur ve yalnızca NGD maliyetin altındaysa gündeme gelir.",
     "source": {
       "kind": "generated",
@@ -467,13 +467,13 @@
     "konu": "stoklar",
     "stem": "Bir ticari mal kaleminin hareketleri şöyledir:\n\n| Tarih | İşlem | Miktar | Birim Maliyet |\n|---|---|---|---|\n| 01.05 | Dönem başı | 100 br | 15 ₺ |\n| 09.05 | Alış | 200 br | 18 ₺ |\n| 17.05 | Alış | 100 br | 20 ₺ |\n| 24.05 | Satış | 250 br | — |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
     "options": {
-      "A": "2.900",
+      "A": "3.000",
       "B": "4.200",
       "C": "2.500",
-      "D": "3.000",
+      "D": "2.900",
       "E": "7.100"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Toplam mevcut 400 br, maliyet 1.500 + 3.600 + 2.000 = 7.100 ₺. FIFO'da 250 br satılır (100×15 + 150×18). Kalan 150 br: 50×18 + 100×20 = 900 + 2.000 = **2.900 ₺**.",
     "source": {
       "kind": "generated",
@@ -512,12 +512,12 @@
     "stem": "Sürekli envanter yöntemini uygulayan işletmeye, daha önce sattığı maliyeti 4.000 ₺ olan mal müşteri tarafından iade edilmiştir. Bu iadenin maliyet yönünü ilgilendiren kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "621 Satılan Ticari Malların Maliyeti (B) 4.000 / 153 Ticari Mallar (A) 4.000",
-      "B": "153 Ticari Mallar (B) 4.000 / 621 Satılan Ticari Malların Maliyeti (A) 4.000",
-      "C": "610 Satıştan İadeler (B) 4.000 / 153 Ticari Mallar (A) 4.000",
+      "B": "610 Satıştan İadeler (B) 4.000 / 153 Ticari Mallar (A) 4.000",
+      "C": "153 Ticari Mallar (B) 4.000 / 621 Satılan Ticari Malların Maliyeti (A) 4.000",
       "D": "153 Ticari Mallar (B) 4.000 / 600 Yurt İçi Satışlar (A) 4.000",
       "E": "621 Satılan Ticari Malların Maliyeti (B) 4.000 / 620 Satılan Mamuller Maliyeti (A) 4.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Satıştan iadede mal stoğa geri döner ve satıştaki maliyet kaydı ters çevrilir: **153 Ticari Mallar (B) 4.000 / 621 Satılan Ticari Malların Maliyeti (A) 4.000**. (Hasılat tarafında ayrıca 610 Satıştan İadeler çalışır.)",
     "source": {
       "kind": "generated",
@@ -534,12 +534,12 @@
     "stem": "Üretim/stok sürecinde ortaya çıkan normal (kaçınılmaz) fire ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Doğrudan dönemin olağandışı gideri yazılır.",
-      "B": "Kalan sağlam birimlerin birim maliyetini yükseltir; ayrıca stok maliyetinden çıkarılmaz.",
+      "B": "Hiçbir muhasebe etkisi doğurmaz.",
       "C": "Stok değer düşüklüğü karşılığı ile izlenir.",
       "D": "Satıştan iade olarak kaydedilir.",
-      "E": "Hiçbir muhasebe etkisi doğurmaz."
+      "E": "Kalan sağlam birimlerin birim maliyetini yükseltir; ayrıca stok maliyetinden çıkarılmaz."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Normal fire** üretim/faaliyetin doğal bir sonucudur; ayrı bir zarar olarak yazılmaz, **kalan sağlam birimlere dağıtılarak** onların birim maliyetini yükseltir. Anormal (olağandışı) fire ise dönem gideri/zararı olarak yazılır.",
     "source": {
       "kind": "generated",
@@ -577,13 +577,13 @@
     "konu": "stoklar",
     "stem": "Önceki dönemde stokları için 16.000 ₺ değer düşüklüğü karşılığı ayıran işletme, bu dönem söz konusu stokların net gerçekleşebilir değerinin maliyetin üzerine çıktığını belirlemiş ve ayrılan karşılığın konusu kalmamıştır.\n\nKarşılığın iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 16.000",
-      "B": "158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 644 Konusu Kalmayan Karşılıklar (A) 16.000",
+      "A": "158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 644 Konusu Kalmayan Karşılıklar (A) 16.000",
+      "B": "654 Karşılık Giderleri (B) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (A) 16.000",
       "C": "153 Ticari Mallar (B) 16.000 / 600 Yurt İçi Satışlar (A) 16.000",
       "D": "689 Diğer Olağandışı Gider (B) 16.000 / 153 Ticari Mallar (A) 16.000",
       "E": "158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 153 Ticari Mallar (A) 16.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Konusu kalmayan karşılık, bir gelir olarak iptal edilir: **158 Stok Değer Düşüklüğü Karşılığı (B) 16.000 / 644 Konusu Kalmayan Karşılıklar (A) 16.000**. 644 bir gelir hesabıdır.",
     "source": {
       "kind": "generated",
@@ -600,12 +600,12 @@
     "stem": "Tartılı (ağırlıklı) ortalama maliyet yöntemini kullanan işletmenin hareketleri:\n\n| İşlem | Miktar | Birim Maliyet |\n|---|---|---|\n| Dönem başı | 100 br | 10 ₺ |\n| Alış | 200 br | 13 ₺ |\n| Alış | 100 br | 16 ₺ |\n\nDönemde 250 birim satılmıştır. Satılan malın maliyeti kaç ₺'dir?",
     "options": {
       "A": "2.950",
-      "B": "3.250",
+      "B": "3.900",
       "C": "2.500",
-      "D": "3.900",
+      "D": "3.250",
       "E": "5.200"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Ortalama birim maliyet = (100×10 + 200×13 + 100×16) ÷ 400 = (1.000 + 2.600 + 1.600) ÷ 400 = 5.200 ÷ 400 = **13 ₺**. Satılan malın maliyeti = 250 × 13 = **3.250 ₺**.",
     "source": {
       "kind": "generated",
@@ -621,13 +621,13 @@
     "konu": "stoklar",
     "stem": "Bir önceki soruda verilen aynı hareketler (DB 100×10; Alış 200×13; Alış 100×16; satış 250 br) için ilk giren ilk çıkar (FIFO) yöntemi kullanılsaydı satılan malın maliyeti kaç ₺ olurdu?",
     "options": {
-      "A": "2.950",
+      "A": "3.900",
       "B": "3.250",
       "C": "3.550",
       "D": "2.500",
-      "E": "3.900"
+      "E": "2.950"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "FIFO'da önce giren satılır: 100×10 + 150×13 = 1.000 + 1.950 = **2.950 ₺**. (Fiyatlar yükseldiği için FIFO maliyeti, ortalama maliyetten 3.250 ₺'den düşüktür.)",
     "source": {
       "kind": "generated",
@@ -644,12 +644,12 @@
     "stem": "Aşağıdakilerden hangileri satın alınan ticari malın stok maliyetine dâhil edilir?\n\nI. Alışa ilişkin navlun ve sigorta giderleri\nII. İthalatta ödenen gümrük vergisi\nIII. İşletmenin genel yönetim giderleri\nIV. Satış ve pazarlama giderleri",
     "options": {
       "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "I, II ve III",
+      "B": "I, II ve III",
+      "C": "I ve II",
       "D": "II ve IV",
       "E": "I, II, III ve IV"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Alışla **doğrudan** ilgili navlun, sigorta (I) ve gümrük vergisi (II) stok maliyetine girer. **Genel yönetim giderleri (III)** ve **satış/pazarlama giderleri (IV)** stok maliyetine alınmaz; dönem gideri yazılır (TMS 2).",
     "source": {
       "kind": "generated",
@@ -666,12 +666,12 @@
     "stem": "Bir üretim işletmesinde stoklarla ilgili aşağıdaki hesaplardan hangisi, üretimi tamamlanıp satışa hazır hâle gelmiş ürünleri izler?",
     "options": {
       "A": "150 İlk Madde ve Malzeme",
-      "B": "151 Yarı Mamuller - Üretim",
-      "C": "152 Mamuller",
+      "B": "152 Mamuller",
+      "C": "151 Yarı Mamuller - Üretim",
       "D": "153 Ticari Mallar",
       "E": "157 Diğer Stoklar"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Üretimi tamamlanıp satışa hazır ürünler **152 Mamuller** hesabında izlenir. 150 hammadde, 151 henüz tamamlanmamış üretim, 153 üretilmeden alınıp satılan ticari mallar içindir.",
     "source": {
       "kind": "generated",
@@ -688,12 +688,12 @@
     "stem": "Vergi Usul Kanunu'na göre satın alınan emtia (ticari mal) hangi değerleme ölçüsü ile değerlenir?",
     "options": {
       "A": "Emsal bedel",
-      "B": "Maliyet bedeli",
+      "B": "İtibari değer",
       "C": "Net gerçekleşebilir değer",
       "D": "Tasfiye değeri",
-      "E": "İtibari değer"
+      "E": "Maliyet bedeli"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "VUK md. 274'e göre satın alınan emtia **maliyet bedeli** ile değerlenir. Kıymeti düşen mallar ise emsal bedeliyle değerlenebilir (md. 278).",
     "source": {
       "kind": "generated",
@@ -732,12 +732,12 @@
     "stem": "Bir ticari mal kaleminde dönem başı mevcut 400 birim, dönem içi alışlar 1.200 birim ve dönem içi satışlar 1.300 birimdir (fire yoktur).\n\nDönem sonu stok mevcudu kaç birimdir?",
     "options": {
       "A": "100",
-      "B": "300",
+      "B": "900",
       "C": "500",
-      "D": "900",
+      "D": "300",
       "E": "1.300"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Miktar dengesi: Dönem sonu = Dönem başı + Alışlar − Satışlar = 400 + 1.200 − 1.300 = **300 birim**.",
     "source": {
       "kind": "generated",
@@ -754,12 +754,12 @@
     "stem": "İşletme, peşin fiyatı 100.000 ₺ olan bir ticari malı, 12 ay vade ile toplam 112.000 ₺'ye satın almıştır. Aradaki 12.000 ₺ vade farkıdır.\n\nTMS 2'ye göre bu malın stok maliyeti kaç ₺'dir?",
     "options": {
       "A": "88.000",
-      "B": "100.000",
-      "C": "106.000",
+      "B": "106.000",
+      "C": "100.000",
       "D": "112.000",
       "E": "124.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "TMS 2'ye göre vade farkı (finansman unsuru) stok maliyetine alınmaz; stok **peşin fiyatla** kaydedilir → **100.000 ₺**. 12.000 ₺ vade farkı, finansman gideri olarak ilgili dönemlere yansıtılır.",
     "source": {
       "kind": "generated",
@@ -775,13 +775,13 @@
     "konu": "stoklar",
     "stem": "Stokların net gerçekleşebilir değerinin maliyetiyle karşılaştırılması ile ilgili TMS 2 kapsamında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Karşılaştırma kural olarak her bir stok kalemi bazında yapılır.",
+      "A": "Karşılaştırma yapılmaz; stoklar daima maliyetle gösterilir.",
       "B": "Karşılaştırma yalnızca tüm stokların toplamı üzerinden yapılır.",
       "C": "Maliyet her zaman net gerçekleşebilir değerin üzerinde kabul edilir.",
       "D": "Net gerçekleşebilir değer, maliyetten büyükse maliyet o değere yükseltilir.",
-      "E": "Karşılaştırma yapılmaz; stoklar daima maliyetle gösterilir."
+      "E": "Karşılaştırma kural olarak her bir stok kalemi bazında yapılır."
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "TMS 2'ye göre maliyet ile NGD karşılaştırması kural olarak **kalem bazında (ya da benzer kalem gruplarında)** yapılır. NGD maliyetin altına düşerse stok NGD ile değerlenir; NGD maliyetin üzerine çıksa bile stok maliyetin üzerine yükseltilmez (ihtiyatlılık).",
     "source": {
       "kind": "generated",
@@ -797,13 +797,13 @@
     "konu": "stoklar",
     "stem": "Bir üretim işletmesinin ambardan üretime ilk madde ve malzeme sevk etmesi (7/A seçeneğinde) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "150 İlk Madde ve Malzeme hesabı borçlandırılır.",
-      "B": "150 İlk Madde ve Malzeme hesabı alacaklandırılır; ilgili gider/maliyet hesabı borçlandırılır.",
+      "A": "150 İlk Madde ve Malzeme hesabı alacaklandırılır; ilgili gider/maliyet hesabı borçlandırılır.",
+      "B": "150 İlk Madde ve Malzeme hesabı borçlandırılır.",
       "C": "153 Ticari Mallar hesabı borçlandırılır.",
       "D": "600 Yurt İçi Satışlar hesabı alacaklandırılır.",
       "E": "Hiçbir kayıt yapılmaz."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Malzeme üretime verildiğinde stoktan çıkar: **150 İlk Madde ve Malzeme alacaklandırılır**; tutar ilgili maliyet/gider hesabına (ör. 710 Direkt İlk Madde ve Malzeme Giderleri) borç yazılır. Böylece hammadde maliyetlere aktarılır.",
     "source": {
       "kind": "generated",
@@ -820,12 +820,12 @@
     "stem": "İşletmenin satmak üzere başka bir işletmeden konsinye (satılmak üzere) olarak teslim aldığı mallarla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Teslim alan işletmenin 153 Ticari Mallar hesabında izlenir.",
-      "B": "Mülkiyet devredilmediğinden teslim alan işletmenin stoklarına dâhil edilmez; satılınca komisyon geliri elde edilir.",
+      "B": "Malı gönderen işletmenin stoklarından çıkarılır.",
       "C": "Teslim alan işletmenin satışları arasında brüt olarak gösterilir.",
-      "D": "Malı gönderen işletmenin stoklarından çıkarılır.",
+      "D": "Mülkiyet devredilmediğinden teslim alan işletmenin stoklarına dâhil edilmez; satılınca komisyon geliri elde edilir.",
       "E": "Her iki işletmenin stoklarında birlikte gösterilir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Konsinye malın **mülkiyeti** satılana kadar gönderendedir; teslim alan (konsinyi) işletme bu malı **kendi stoğuna almaz**, nazım hesaplarda izler ve sattığında yalnızca **komisyon geliri** elde eder.",
     "source": {
       "kind": "generated",
@@ -841,13 +841,13 @@
     "konu": "stoklar",
     "stem": "Sürekli envanter yöntemini kullanan işletme, satın aldığı ticari mallar için nakliyeciye 5.000 ₺ navlun bedelini nakit ödemiştir. Bu navlun için yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "153 Ticari Mallar (B) 5.000 / 100 Kasa (A) 5.000",
-      "B": "770 Genel Yönetim Giderleri (B) 5.000 / 100 Kasa (A) 5.000",
+      "A": "770 Genel Yönetim Giderleri (B) 5.000 / 100 Kasa (A) 5.000",
+      "B": "153 Ticari Mallar (B) 5.000 / 100 Kasa (A) 5.000",
       "C": "621 Satılan Ticari Malların Maliyeti (B) 5.000 / 100 Kasa (A) 5.000",
       "D": "760 Pazarlama Satış Dağıtım Giderleri (B) 5.000 / 100 Kasa (A) 5.000",
       "E": "100 Kasa (B) 5.000 / 153 Ticari Mallar (A) 5.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Alışa ilişkin navlun stok maliyetine eklenir: **153 Ticari Mallar (B) 5.000 / 100 Kasa (A) 5.000**. Navlun bir dönem gideri değil, stok maliyet unsurudur.",
     "source": {
       "kind": "generated",
@@ -885,13 +885,13 @@
     "konu": "stoklar",
     "stem": "İşletme, ileride teslim alacağı ticari mallar için satıcısına 40.000 ₺ sipariş avansını banka yoluyla ödemiştir (mallar henüz teslim alınmamıştır).\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "159 Verilen Sipariş Avansları (B) 40.000 / 102 Bankalar (A) 40.000",
+      "A": "102 Bankalar (B) 40.000 / 159 Verilen Sipariş Avansları (A) 40.000",
       "B": "153 Ticari Mallar (B) 40.000 / 102 Bankalar (A) 40.000",
       "C": "320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000",
-      "D": "102 Bankalar (B) 40.000 / 159 Verilen Sipariş Avansları (A) 40.000",
+      "D": "159 Verilen Sipariş Avansları (B) 40.000 / 102 Bankalar (A) 40.000",
       "E": "159 Verilen Sipariş Avansları (B) 40.000 / 320 Satıcılar (A) 40.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Mal henüz teslim alınmadığından 153 çalışmaz. Verilen avans bir alacak niteliğindedir: **159 Verilen Sipariş Avansları (B) 40.000 / 102 Bankalar (A) 40.000**. Mallar geldiğinde 153 borçlanıp 159 kapatılır.",
     "source": {
       "kind": "generated",
@@ -908,12 +908,12 @@
     "stem": "Bir mal, satıcı işletmenin deposundan 'FOB yükleme (teslim) noktası' koşuluyla sevk edilmiş ve dönem sonunda hâlâ yoldadır. Bu yoldaki mal, dönem sonu stok sayımında kimin stoğuna dâhil edilir?",
     "options": {
       "A": "Satıcının stoğuna",
-      "B": "Alıcının stoğuna",
+      "B": "Her ikisinin stoğuna yarı yarıya",
       "C": "Nakliye firmasının stoğuna",
       "D": "Hiçbirinin stoğuna",
-      "E": "Her ikisinin stoğuna yarı yarıya"
+      "E": "Alıcının stoğuna"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**FOB yükleme (teslim) noktası** koşulunda mülkiyet ve riskler malın yüklendiği anda **alıcıya** geçer. Bu nedenle yoldaki mal, dönem sonunda **alıcının** stoklarına dâhil edilir (özün önceliği).",
     "source": {
       "kind": "generated",
@@ -929,13 +929,13 @@
     "konu": "stoklar",
     "stem": "Bir üretim işletmesinin imal ettiği mamulün stok maliyetine aşağıdakilerden hangileri dâhil edilir?\n\nI. Direkt ilk madde ve malzeme giderleri\nII. Direkt işçilik giderleri\nIII. Üretimle ilgili genel üretim giderleri\nIV. Satış ve pazarlama giderleri",
     "options": {
-      "A": "Yalnız I",
+      "A": "I, II ve III",
       "B": "I ve II",
-      "C": "I, II ve III",
+      "C": "Yalnız I",
       "D": "II ve IV",
       "E": "I, II, III ve IV"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "İmal edilen emtianın maliyetine **direkt ilk madde/malzeme (I)**, **direkt işçilik (II)** ve **genel üretim giderleri (III)** girer. **Satış ve pazarlama giderleri (IV)** üretim maliyetine alınmaz; dönem gideri yazılır (TMS 2; VUK md. 275).",
     "source": {
       "kind": "generated",
@@ -952,12 +952,12 @@
     "stem": "Bir ticari mal kaleminin hareketleri şöyledir:\n\n| İşlem | Miktar | Birim Maliyet |\n|---|---|---|\n| Dönem başı | 50 br | 40 ₺ |\n| Alış | 150 br | 44 ₺ |\n| Satış | 120 br | — |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre satılan malın maliyeti kaç ₺'dir?",
     "options": {
       "A": "4.800",
-      "B": "5.080",
-      "C": "5.280",
+      "B": "5.280",
+      "C": "5.080",
       "D": "3.520",
       "E": "8.600"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "FIFO'da önce giren satılır: 50×40 + 70×44 = 2.000 + 3.080 = **5.080 ₺**. (Dönem sonu stok = 80×44 = 3.520 ₺; toplam 8.600 ₺.)",
     "source": {
       "kind": "generated",
@@ -1018,12 +1018,12 @@
     "stem": "İşletme, satışını artırmak amacıyla müşterilerine bedelsiz olarak dağıttığı promosyon mallarının maliyetini hangi hesaba yansıtır?",
     "options": {
       "A": "621 Satılan Ticari Malların Maliyeti",
-      "B": "760 Pazarlama, Satış ve Dağıtım Giderleri",
-      "C": "770 Genel Yönetim Giderleri",
+      "B": "770 Genel Yönetim Giderleri",
+      "C": "760 Pazarlama, Satış ve Dağıtım Giderleri",
       "D": "153 Ticari Mallar",
       "E": "689 Diğer Olağandışı Gider ve Zararlar"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Satışı artırma amaçlı bedelsiz dağıtılan promosyon mallarının maliyeti bir **pazarlama gideridir**: **760 Pazarlama, Satış ve Dağıtım Giderleri**ne yazılır ve mal stoktan (153) çıkarılır (teslim KDV yönünden ayrıca değerlendirilir).",
     "source": {
       "kind": "generated",
@@ -1061,13 +1061,13 @@
     "konu": "stoklar",
     "stem": "Sürekli envanter yöntemini kullanan işletmede '153 Ticari Mallar' hesabının kaydi kalanı 60.000 ₺ iken, dönem sonu fiilî sayımda 63.000 ₺ mal tespit edilmiş ve fazlalığın nedeni belirlenememiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "153 Ticari Mallar (B) 3.000 / 397 Sayım ve Tesellüm Fazlaları (A) 3.000",
+      "A": "397 Sayım ve Tesellüm Fazlaları (B) 3.000 / 153 Ticari Mallar (A) 3.000",
       "B": "197 Sayım ve Tesellüm Noksanları (B) 3.000 / 153 Ticari Mallar (A) 3.000",
       "C": "621 Satılan Ticari Malların Maliyeti (B) 3.000 / 153 Ticari Mallar (A) 3.000",
       "D": "153 Ticari Mallar (B) 63.000 / 600 Yurt İçi Satışlar (A) 63.000",
-      "E": "397 Sayım ve Tesellüm Fazlaları (B) 3.000 / 153 Ticari Mallar (A) 3.000"
+      "E": "153 Ticari Mallar (B) 3.000 / 397 Sayım ve Tesellüm Fazlaları (A) 3.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Fiilî mevcut (63.000) kaydi mevcuttan (60.000) **3.000 ₺ fazladır**; stok fazlası vardır. Nedeni bulunana kadar: **153 Ticari Mallar (B) 3.000 / 397 Sayım ve Tesellüm Fazlaları (A) 3.000**. Neden belirlenince 397 kapatılır.",
     "source": {
       "kind": "generated",
@@ -1084,12 +1084,12 @@
     "stem": "İşletme, veresiye sattığı 5.000 ₺ + %20 KDV tutarındaki malın müşteri tarafından iade edilmesini kabul etmiştir. Bu iadenin hasılat (satış) yönünü ilgilendiren kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "610 Satıştan İadeler (B) 5.000 + 191 İndirilecek KDV (B) 1.000 / 120 Alıcılar (A) 6.000",
-      "B": "610 Satıştan İadeler (B) 5.000 + 391 Hesaplanan KDV (B) 1.000 / 120 Alıcılar (A) 6.000",
+      "B": "120 Alıcılar (B) 6.000 / 610 Satıştan İadeler (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
       "C": "600 Yurt İçi Satışlar (B) 6.000 / 120 Alıcılar (A) 6.000",
-      "D": "120 Alıcılar (B) 6.000 / 610 Satıştan İadeler (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
+      "D": "610 Satıştan İadeler (B) 5.000 + 391 Hesaplanan KDV (B) 1.000 / 120 Alıcılar (A) 6.000",
       "E": "610 Satıştan İadeler (B) 6.000 / 100 Kasa (A) 6.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Satıştan iadede satış geri alınır: **610 Satıştan İadeler (B) 5.000** ve daha önce hesaplanan KDV düzeltilir **391 Hesaplanan KDV (B) 1.000**; alıcının borcu azalır **120 Alıcılar (A) 6.000**. (Sürekli envanterde maliyet de ayrıca geri alınır: 153/621.)",
     "source": {
       "kind": "generated",
@@ -1127,13 +1127,13 @@
     "konu": "stoklar",
     "stem": "Birim alış fiyatlarının sürekli yükseldiği bir dönemde FIFO yönteminin kullanılmasının, ağırlıklı ortalamaya kıyasla vergi açısından olası etkisi nedir?",
     "options": {
-      "A": "Daha düşük dönem kârı, dolayısıyla daha düşük vergi",
-      "B": "Daha yüksek dönem kârı, dolayısıyla daha yüksek vergi",
+      "A": "Daha yüksek dönem kârı, dolayısıyla daha yüksek vergi",
+      "B": "Daha düşük dönem kârı, dolayısıyla daha düşük vergi",
       "C": "Kâr ve vergi üzerinde hiçbir etkisi olmaz",
       "D": "Yalnızca KDV'yi artırır, kârı etkilemez",
       "E": "Dönem zararına yol açar"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Fiyatlar yükselirken FIFO daha **düşük** satılan malın maliyeti verir → **daha yüksek dönem kârı** → **daha yüksek vergi**. Ortalama yöntem maliyeti daha yüksek hesapladığından kâr ve vergiyi görece azaltır.",
     "source": {
       "kind": "generated",
@@ -1151,11 +1151,11 @@
     "options": {
       "A": "İşletmenin deposunda bulunan, başka bir işletmeye ait konsinye mallar işletmenin stok sayımına dâhil edilir.",
       "B": "İşletmenin mülkiyetinde olup başka bir yerde (konsinye verdiği/yolda) bulunan malları sayıma dâhil edilmez.",
-      "C": "Mülkiyet esas alınır; işletmeye ait olup fiziken başka yerdeki mallar dâhil edilir, deposundaki başkasına ait mallar hariç tutulur.",
+      "C": "Sayımda mülkiyet ölçütü hiç dikkate alınmaz.",
       "D": "Yalnızca depoda fiziken bulunan tüm mallar, mülkiyetine bakılmaksızın dâhil edilir.",
-      "E": "Sayımda mülkiyet ölçütü hiç dikkate alınmaz."
+      "E": "Mülkiyet esas alınır; işletmeye ait olup fiziken başka yerdeki mallar dâhil edilir, deposundaki başkasına ait mallar hariç tutulur."
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Stok sayımında **mülkiyet** esastır: işletmeye ait olup fiziken başka yerde (yolda, konsinye verilmiş) bulunan mallar **dâhil edilir**; deposunda bulunsa da başkasına ait konsinye mallar **hariç** tutulur.",
     "source": {
       "kind": "generated",
@@ -1172,12 +1172,12 @@
     "stem": "Bir stok kaleminin maliyeti 50.000 ₺, net gerçekleşebilir değeri ise 58.000 ₺ olarak belirlenmiştir. TMS 2'ye göre bu stok bilançoda kaç ₺ ile gösterilir?",
     "options": {
       "A": "58.000",
-      "B": "50.000",
+      "B": "8.000",
       "C": "54.000",
-      "D": "8.000",
+      "D": "50.000",
       "E": "108.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Stoklar maliyet ile NGD'den **düşük olanı** ile değerlenir. Burada maliyet (50.000) < NGD (58.000) olduğundan stok **maliyet bedeli 50.000 ₺** ile gösterilir; değer artışı (ihtiyatlılık gereği) kaydedilmez.",
     "source": {
       "kind": "generated",
@@ -1193,13 +1193,13 @@
     "konu": "stoklar",
     "stem": "TMS 2'ye göre, sonuçları gerçek maliyete yakın olması koşuluyla stok maliyetinin ölçümünde kolaylık sağlamak için kullanılabilecek yöntemler aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Standart maliyet yöntemi ve perakende yöntemi",
-      "B": "Son giren ilk çıkar (LIFO) yöntemi",
+      "A": "Son giren ilk çıkar (LIFO) yöntemi",
+      "B": "Standart maliyet yöntemi ve perakende yöntemi",
       "C": "Tasfiye değeri yöntemi",
       "D": "Emsal bedel yöntemi",
       "E": "İtibari değer yöntemi"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "TMS 2, sonuçları gerçek maliyete yakınsa kolaylık amacıyla **standart maliyet** ve **perakende (perakende satış fiyatından geriye gidiş)** yöntemlerinin kullanılabileceğini belirtir. LIFO kabul edilmez.",
     "source": {
       "kind": "generated",
@@ -1218,10 +1218,10 @@
       "A": "150 İlk Madde ve Malzeme",
       "B": "151 Yarı Mamuller - Üretim",
       "C": "152 Mamuller",
-      "D": "153 Ticari Mallar",
-      "E": "710 Direkt İlk Madde ve Malzeme Giderleri"
+      "D": "710 Direkt İlk Madde ve Malzeme Giderleri",
+      "E": "153 Ticari Mallar"
     },
-    "answer": "D",
+    "answer": "E",
     "solution": "Ticaret işletmesi malları üretmeden alıp satar; bu mallar **153 Ticari Mallar** hesabında izlenir. 150-152 üretim işletmesinin stok hesaplarıdır, 710 ise bir maliyet hesabıdır.",
     "source": {
       "kind": "generated",
@@ -1237,13 +1237,13 @@
     "konu": "stoklar",
     "stem": "Bir ticari mal kaleminde dönem başı mevcut 100 birim, dönem içi alış 300 birim ve dönem içi satış 320 birimdir. Birim maliyet 25 ₺ ve fire yoktur.\n\nBuna göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
     "options": {
-      "A": "1.500",
-      "B": "2.000",
+      "A": "2.000",
+      "B": "1.500",
       "C": "2.500",
       "D": "8.000",
       "E": "500"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Dönem sonu miktar = 100 + 300 − 320 = 80 birim. Değeri = 80 × 25 = **2.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -1260,12 +1260,12 @@
     "stem": "'153 Ticari Mallar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Bir kaynak (pasif) hesabıdır, alacak kalanı verir.",
-      "B": "Bir dönen varlık (aktif) hesabıdır, normalde borç kalanı verir.",
-      "C": "Bir gelir tablosu hesabıdır.",
+      "B": "Bir gelir tablosu hesabıdır.",
+      "C": "Bir dönen varlık (aktif) hesabıdır, normalde borç kalanı verir.",
       "D": "Aktifi düzenleyici bir hesaptır, alacak kalanı verir.",
       "E": "Bir duran varlık hesabıdır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**153 Ticari Mallar**, Stoklar grubunda yer alan bir **dönen varlık (aktif)** hesabıdır; artışlar borca, azalışlar alacağa yazılır ve normalde **borç kalanı** verir. Bilançoda dönen varlıklar içinde gösterilir.",
     "source": {
       "kind": "generated",
@@ -1303,13 +1303,13 @@
     "konu": "stoklar",
     "stem": "Aşağıdaki maliyet akış yöntemlerinden hangisinde, dönem sonu stok değeri en güncel (son alış) fiyatlara en yakın olur?",
     "options": {
-      "A": "İlk giren ilk çıkar (FIFO)",
+      "A": "Basit ortalama",
       "B": "Son giren ilk çıkar (LIFO)",
       "C": "Ağırlıklı ortalama",
-      "D": "Basit ortalama",
+      "D": "İlk giren ilk çıkar (FIFO)",
       "E": "Standart maliyet"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "**FIFO** yönteminde önce giren birimler satıldığından dönem sonu stok, **en son (güncel) alış fiyatlarına** en yakın birimlerden oluşur. Bu nedenle bilançodaki stok değeri güncel maliyetleri daha iyi yansıtır.",
     "source": {
       "kind": "generated",

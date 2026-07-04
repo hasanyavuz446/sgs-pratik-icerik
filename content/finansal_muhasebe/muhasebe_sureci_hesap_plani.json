@@ -50,12 +50,12 @@
     "stem": "Muhasebe döngüsünde işlemlerin tarih sırasıyla ve ilk olarak kaydedildiği defter aşağıdakilerden hangisidir?",
     "options": {
       "A": "Defter-i Kebir (Büyük Defter)",
-      "B": "Envanter Defteri",
-      "C": "Yevmiye Defteri (Günlük Defter)",
+      "B": "Yevmiye Defteri (Günlük Defter)",
+      "C": "Envanter Defteri",
       "D": "Mizan",
       "E": "Karar Defteri"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "İşlemler önce **Yevmiye (Günlük) Defteri**ne tarih sırasıyla kaydedilir; oradan **Defter-i Kebir**e aktarılır. Mizan bir defter değil, hesap kalanlarının kontrol tablosudur.",
     "source": {
       "kind": "generated",
@@ -159,13 +159,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme, ortağı Ayşe Yıldız'a işletmeden 50.000 ₺ nakit borç para vermiştir. Bu işlemin yevmiye kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "131 Ortaklardan Alacaklar (B) 50.000 / 100 Kasa (A) 50.000",
+      "A": "500 Sermaye (B) 50.000 / 100 Kasa (A) 50.000",
       "B": "100 Kasa (B) 50.000 / 131 Ortaklardan Alacaklar (A) 50.000",
       "C": "331 Ortaklara Borçlar (B) 50.000 / 100 Kasa (A) 50.000",
-      "D": "500 Sermaye (B) 50.000 / 100 Kasa (A) 50.000",
+      "D": "131 Ortaklardan Alacaklar (B) 50.000 / 100 Kasa (A) 50.000",
       "E": "770 Genel Yönetim Giderleri (B) 50.000 / 100 Kasa (A) 50.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "İşletmenin ortağından alacağı doğar → **131 Ortaklardan Alacaklar** borçlanır; nakit çıktığı için **100 Kasa** alacaklanır. Ortağa borç para verme, gider ya da sermaye azalışı değildir.",
     "source": {
       "kind": "generated",
@@ -181,13 +181,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Kasayı ilgilendirmeyen (nakit giriş-çıkışı olmayan) muhasebe işlemleri için düzenlenen fiş türü aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Tahsil Fişi",
+      "A": "Mahsup Fişi",
       "B": "Tediye Fişi",
-      "C": "Mahsup Fişi",
+      "C": "Tahsil Fişi",
       "D": "İrsaliye",
       "E": "Gider Pusulası"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Kasadan tahsilat için **tahsil fişi**, kasadan ödeme için **tediye fişi**, kasayı ilgilendirmeyen (ör. senetli mal alışı) işlemler için ise **mahsup fişi** düzenlenir.",
     "source": {
       "kind": "generated",
@@ -204,12 +204,12 @@
     "stem": "Tekdüzen Hesap Planı'nda gelir tablosu hesapları (6 sınıfı) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir.",
-      "B": "Gelir hesapları alacak, gider hesapları borç kalanı verir ve dönem sonunda 690'a devredilir.",
+      "B": "6'lı hesaplar yalnızca nazım hesaplarla çalışır.",
       "C": "Tüm 6'lı hesaplar bilançoya devredilir.",
       "D": "6'lı hesaplar aktifi düzenleyici hesaplardır.",
-      "E": "6'lı hesaplar yalnızca nazım hesaplarla çalışır."
+      "E": "Gelir hesapları alacak, gider hesapları borç kalanı verir ve dönem sonunda 690'a devredilir."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "6'lı sınıfta **gelir/hasılat hesapları alacak**, **gider hesapları borç** kalanı verir. Dönem sonunda bu hesaplar **690 Dönem Kârı veya Zararı**na devredilerek kapatılır; kalanları bilançoya değil gelir tablosuna yansır.",
     "source": {
       "kind": "generated",
@@ -248,12 +248,12 @@
     "stem": "İşletme bankadaki mevduatından 20.000 ₺ çekerek kasasına koymuştur. Bu işlemin bilanço büyüklüğüne (aktif toplamına) etkisi nedir?",
     "options": {
       "A": "Aktif toplamı 20.000 ₺ artar",
-      "B": "Aktif toplamı 20.000 ₺ azalır",
-      "C": "Aktif toplamı değişmez, yalnızca varlık bileşimi değişir",
+      "B": "Aktif toplamı değişmez, yalnızca varlık bileşimi değişir",
+      "C": "Aktif toplamı 20.000 ₺ azalır",
       "D": "Pasif toplamı 20.000 ₺ artar",
       "E": "Özkaynaklar 20.000 ₺ artar"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Kayıt **100 Kasa (B) 20.000 / 102 Bankalar (A) 20.000**'dir. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlıkların bileşimi değişir.",
     "source": {
       "kind": "generated",
@@ -270,12 +270,12 @@
     "stem": "Tekdüzen Hesap Planı'nda '7 - Maliyet Hesapları' sınıfı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin uzun vadeli borçlarını izler.",
-      "B": "Giderlerin çeşit (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.",
-      "C": "Yalnızca ticaret işletmelerinde kullanılır.",
+      "B": "Yalnızca ticaret işletmelerinde kullanılır.",
+      "C": "Giderlerin çeşit (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.",
       "D": "Özkaynak hareketlerini izler.",
       "E": "Nazım hesaplarla aynı işlevi görür."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**7 Maliyet Hesapları**, giderlerin çeşitlerine (7/A) veya gider yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesi içindir. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.",
     "source": {
       "kind": "generated",
@@ -291,13 +291,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme, satıcısına olan 30.000 ₺'lik senetsiz ticari borcuna karşılık bir borç senedi (bono) düzenleyip vermiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "320 Satıcılar (B) 30.000 / 321 Borç Senetleri (A) 30.000",
-      "B": "321 Borç Senetleri (B) 30.000 / 320 Satıcılar (A) 30.000",
+      "A": "321 Borç Senetleri (B) 30.000 / 320 Satıcılar (A) 30.000",
+      "B": "320 Satıcılar (B) 30.000 / 321 Borç Senetleri (A) 30.000",
       "C": "120 Alıcılar (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
       "D": "320 Satıcılar (B) 30.000 / 100 Kasa (A) 30.000",
       "E": "321 Borç Senetleri (B) 30.000 / 100 Kasa (A) 30.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Senetsiz borç (320 Satıcılar) senetli borca (321 Borç Senetleri) dönüşür. Borç aynı kalır, yalnızca niteliği değişir: **320 Satıcılar (B) 30.000 / 321 Borç Senetleri (A) 30.000**. Nakit çıkışı yoktur (mahsup işlemi).",
     "source": {
       "kind": "generated",
@@ -314,12 +314,12 @@
     "stem": "Aşağıdaki hesaplardan hangisi Tekdüzen Hesap Planı'nda '3 - Kısa Vadeli Yabancı Kaynaklar' sınıfında yer alır?",
     "options": {
       "A": "120 Alıcılar",
-      "B": "300 Banka Kredileri",
+      "B": "255 Demirbaşlar",
       "C": "500 Sermaye",
-      "D": "255 Demirbaşlar",
+      "D": "300 Banka Kredileri",
       "E": "153 Ticari Mallar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**300 Banka Kredileri**, kodun ilk rakamı **3** olduğundan Kısa Vadeli Yabancı Kaynaklar sınıfındadır (bir yıl içinde ödenecek kredi borcu). 120 ve 153 aktif, 500 özkaynak, 255 duran varlıktır.",
     "source": {
       "kind": "generated",
@@ -335,13 +335,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Muhasebe döngüsünde aşağıdaki işlemlerin doğru sıralaması hangisidir?\n\nI. Mali tabloların düzenlenmesi\nII. Yevmiye defterine kayıt\nIII. Defter-i kebire aktarma\nIV. Genel geçici mizan düzenleme\nV. Dönem sonu envanter ve düzeltme kayıtları",
     "options": {
-      "A": "II → III → IV → V → I",
+      "A": "IV → III → II → V → I",
       "B": "II → IV → III → V → I",
       "C": "III → II → IV → V → I",
       "D": "II → III → V → IV → I",
-      "E": "IV → III → II → V → I"
+      "E": "II → III → IV → V → I"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Doğru akış: **Yevmiye (II) → Defter-i kebir (III) → Genel geçici mizan (IV) → Envanter ve düzeltme kayıtları (V) → Mali tablolar (I)**. Envanter/düzeltmeler geçici mizandan sonra, mali tablolardan öncedir.",
     "source": {
       "kind": "generated",
@@ -357,13 +357,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Dönem kârını doğrudan artırır.",
+      "A": "İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izler ve kendi içinde borç-alacak dengesi kurulur.",
       "B": "İşletmenin aktif-pasif yapısını doğrudan etkileyen işlemleri izler.",
-      "C": "İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izler ve kendi içinde borç-alacak dengesi kurulur.",
+      "C": "Dönem kârını doğrudan artırır.",
       "D": "Yalnızca amortisman ayırmak için kullanılır.",
       "E": "Gelir tablosuna devredilir."
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "**Nazım hesaplar (9)**, aktif-pasif yapısını doğrudan etkilemeyen fakat izlenmesi gereken kıymetleri (alınan/verilen teminatlar, emanetler vb.) gösterir; kendi içinde borç-alacak dengesi kurulur ve mali tablo sonucunu değiştirmez.",
     "source": {
       "kind": "generated",
@@ -380,12 +380,12 @@
     "stem": "Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 YURT İÇİ SATIŞLAR | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
       "A": "Peşin mal satışının kaydedilmesi",
-      "B": "Gelir hesabının dönem sonunda 690 hesabına devredilerek kapatılması",
-      "C": "Satıştan iade işleminin kaydedilmesi",
+      "B": "Satıştan iade işleminin kaydedilmesi",
+      "C": "Gelir hesabının dönem sonunda 690 hesabına devredilerek kapatılması",
       "D": "Satış maliyetinin hesaplanması",
       "E": "Kâr payı dağıtımı"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Bir gelir hesabı olan **600 Yurt İçi Satışlar** (alacak kalanı verir) dönem sonunda **borçlandırılarak** 690'a **devredilir** ve kapatılır. Bu, gelir hesaplarının dönem sonunda sonuç hesabına aktarılması işlemidir.",
     "source": {
       "kind": "generated",
@@ -402,12 +402,12 @@
     "stem": "Temel muhasebe (bilanço) eşitliği aşağıdakilerden hangisidir?",
     "options": {
       "A": "Varlıklar = Gelirler − Giderler",
-      "B": "Varlıklar = Yabancı Kaynaklar + Özkaynaklar",
+      "B": "Borçlar = Varlıklar + Özkaynaklar",
       "C": "Özkaynaklar = Varlıklar + Borçlar",
       "D": "Gelirler = Varlıklar + Özkaynaklar",
-      "E": "Borçlar = Varlıklar + Özkaynaklar"
+      "E": "Varlıklar = Yabancı Kaynaklar + Özkaynaklar"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Bilanço eşitliği **Varlıklar = Kaynaklar**, yani **Aktif = Yabancı Kaynaklar + Özkaynaklar**'dır. İşletmenin sahip olduğu varlıklar, bu varlıkların finansman kaynağına eşittir.",
     "source": {
       "kind": "generated",
@@ -424,12 +424,12 @@
     "stem": "Genel kesin mizanla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kalanlar sütunundaki bilanço hesaplarının kalanları dönem sonu bilançosunu oluşturur.\nII. Gelir ve gider (6'lı) hesapların kalanları gelir tablosuna aktarılır.\nIII. Düzenleyici hesaplar kesin mizanda kalan verebilir.\nIV. Kesin mizanda borç kalanları toplamı ile alacak kalanları toplamı eşit olmalıdır.",
     "options": {
       "A": "Yalnız I",
-      "B": "I ve II",
+      "B": "I, II, III ve IV",
       "C": "II ve III",
       "D": "I, II ve IV",
-      "E": "I, II, III ve IV"
+      "E": "I ve II"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "**Hepsi doğrudur.** Kesin mizan; bilanço hesaplarının kalanlarıyla bilançoyu, 6'lı hesapların kalanlarıyla gelir tablosunu besler; düzenleyici hesaplar kalan verebilir ve borç kalanları toplamı = alacak kalanları toplamı olmalıdır.",
     "source": {
       "kind": "generated",
@@ -445,13 +445,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Muhasebenin temel fonksiyonları ile ilgili aşağıdaki sıralamalardan hangisi doğrudur?",
     "options": {
-      "A": "Kaydetme → Sınıflandırma → Özetleme → Raporlama ve yorumlama",
+      "A": "Sınıflandırma → Kaydetme → Raporlama → Özetleme",
       "B": "Raporlama → Kaydetme → Sınıflandırma → Özetleme",
-      "C": "Sınıflandırma → Kaydetme → Raporlama → Özetleme",
+      "C": "Kaydetme → Sınıflandırma → Özetleme → Raporlama ve yorumlama",
       "D": "Özetleme → Kaydetme → Sınıflandırma → Raporlama",
       "E": "Yorumlama → Özetleme → Kaydetme → Sınıflandırma"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Muhasebe süreci; işlemlerin **kaydedilmesi**, benzer işlemlerin **sınıflandırılması**, dönem sonunda **özetlenmesi** ve mali tabloların **raporlanıp yorumlanması** biçiminde işler.",
     "source": {
       "kind": "generated",
@@ -467,13 +467,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Satılan mal veya yapılan iş karşılığında, satıcının alıcıya verdiği; miktar, tutar ve tarafların bilgilerini gösteren ticari belge aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Sevk irsaliyesi",
-      "B": "Fatura",
+      "A": "Fatura",
+      "B": "Sevk irsaliyesi",
       "C": "Gider pusulası",
       "D": "Müstahsil makbuzu",
       "E": "Serbest meslek makbuzu"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "**Fatura**, satılan mal/hizmet karşılığında satıcının alıcıya verdiği; tutar ve tarafların bilgilerini içeren temel ticari belgedir (VUK md. 229).",
     "source": {
       "kind": "generated",
@@ -490,12 +490,12 @@
     "stem": "Malın bir yerden başka bir yere taşınması (sevki) sırasında düzenlenen ve malın yanında bulunması gereken belge aşağıdakilerden hangisidir?",
     "options": {
       "A": "Fatura",
-      "B": "Sevk irsaliyesi",
+      "B": "Serbest meslek makbuzu",
       "C": "Gider pusulası",
-      "D": "Serbest meslek makbuzu",
+      "D": "Sevk irsaliyesi",
       "E": "Ödeme kaydedici cihaz fişi"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Sevk irsaliyesi**, malın sevki/taşınması sırasında düzenlenir ve malın yanında bulunur; malın hareketini belgeler (VUK md. 230).",
     "source": {
       "kind": "generated",
@@ -512,12 +512,12 @@
     "stem": "Vergiden muaf esnaftan veya belge düzenleme zorunluluğu bulunmayan kişilerden yapılan alımlar/ödemeler için, alıcı tarafından düzenlenen belge aşağıdakilerden hangisidir?",
     "options": {
       "A": "Fatura",
-      "B": "Gider pusulası",
+      "B": "Serbest meslek makbuzu",
       "C": "Müstahsil makbuzu",
       "D": "Sevk irsaliyesi",
-      "E": "Serbest meslek makbuzu"
+      "E": "Gider pusulası"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Gider pusulası**, belge veremeyen (vergiden muaf esnaf vb.) kişilerden yapılan alım/giderlerde, alan tarafından düzenlenen belgedir (VUK md. 234).",
     "source": {
       "kind": "generated",
@@ -556,12 +556,12 @@
     "stem": "Serbest meslek erbabının (avukat, mali müşavir, doktor vb.) mesleki faaliyeti karşılığında yaptığı tahsilatlar için düzenlediği belge aşağıdakilerden hangisidir?",
     "options": {
       "A": "Fatura",
-      "B": "Gider pusulası",
+      "B": "Serbest meslek makbuzu",
       "C": "Müstahsil makbuzu",
-      "D": "Serbest meslek makbuzu",
+      "D": "Gider pusulası",
       "E": "Sevk irsaliyesi"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "**Serbest meslek makbuzu**, serbest meslek erbabının mesleki faaliyeti karşılığı yaptığı tahsilatlar için düzenlediği belgedir (VUK md. 236).",
     "source": {
       "kind": "generated",
@@ -579,11 +579,11 @@
     "options": {
       "A": "Yevmiye defteri",
       "B": "Defter-i kebir",
-      "C": "Envanter defteri",
-      "D": "Damga vergisi defteri",
+      "C": "Damga vergisi defteri",
+      "D": "Envanter defteri",
       "E": "Karar defteri"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "**Envanter defteri**, dönem başı ve dönem sonu envanter (varlık-borç sayım/değerleme) bilgileri ile bilançonun kaydedildiği defterdir (VUK md. 185).",
     "source": {
       "kind": "generated",
@@ -622,12 +622,12 @@
     "stem": "İşletme sahibi, işletmeye kuruluş sermayesi olarak 500.000 ₺ nakit koymuş ve tutar işletme kasasına girmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "500 Sermaye (B) 500.000 / 100 Kasa (A) 500.000",
-      "B": "100 Kasa (B) 500.000 / 500 Sermaye (A) 500.000",
-      "C": "100 Kasa (B) 500.000 / 300 Banka Kredileri (A) 500.000",
+      "B": "100 Kasa (B) 500.000 / 300 Banka Kredileri (A) 500.000",
+      "C": "100 Kasa (B) 500.000 / 500 Sermaye (A) 500.000",
       "D": "131 Ortaklardan Alacaklar (B) 500.000 / 100 Kasa (A) 500.000",
       "E": "100 Kasa (B) 500.000 / 600 Yurt İçi Satışlar (A) 500.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Kasa (varlık) artar → **100 Kasa (B)**; işletmenin sahibine karşı sermaye kaynağı doğar → **500 Sermaye (A)**. Kayıt: 100 Kasa (B) 500.000 / 500 Sermaye (A) 500.000.",
     "source": {
       "kind": "generated",
@@ -666,12 +666,12 @@
     "stem": "İşletme, müşterisinden olan senetsiz ticari alacağını nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "120 Alıcılar (B) / 100 Kasa (A)",
-      "B": "100 Kasa (B) / 120 Alıcılar (A)",
+      "B": "100 Kasa (B) / 320 Satıcılar (A)",
       "C": "100 Kasa (B) / 600 Yurt İçi Satışlar (A)",
       "D": "121 Alacak Senetleri (B) / 120 Alıcılar (A)",
-      "E": "100 Kasa (B) / 320 Satıcılar (A)"
+      "E": "100 Kasa (B) / 120 Alıcılar (A)"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Kasa (varlık) artar → **100 Kasa (B)**; alıcılardan olan alacak (varlık) azalır → **120 Alıcılar (A)**. Kayıt: 100 Kasa (B) / 120 Alıcılar (A). Satış hasılatı bu aşamada tekrar kaydedilmez.",
     "source": {
       "kind": "generated",
@@ -709,13 +709,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Aşağıdaki hesaplardan hangisi bir gelir tablosu (6'lı sınıf) hesabı değildir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
+      "A": "320 Satıcılar",
       "B": "621 Satılan Ticari Malların Maliyeti",
       "C": "642 Faiz Gelirleri",
-      "D": "320 Satıcılar",
+      "D": "600 Yurt İçi Satışlar",
       "E": "660 Kısa Vadeli Borçlanma Giderleri"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "**320 Satıcılar**, kodun ilk rakamı **3** olan bir bilanço (Kısa Vadeli Yabancı Kaynaklar) hesabıdır; gelir tablosu hesabı değildir. Diğerleri 6'lı sınıf (gelir tablosu) hesaplarıdır.",
     "source": {
       "kind": "generated",
@@ -732,12 +732,12 @@
     "stem": "'T hesabı' düzeni ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Sol taraf alacak, sağ taraf borç tarafıdır.",
-      "B": "Sol taraf borç, sağ taraf alacak tarafıdır.",
+      "B": "Hesabın yalnızca tek tarafı kullanılır.",
       "C": "Her iki taraf da borç tarafıdır.",
-      "D": "Hesabın yalnızca tek tarafı kullanılır.",
+      "D": "Sol taraf borç, sağ taraf alacak tarafıdır.",
       "E": "Borç ve alacak tarafları hesabın türüne göre yer değiştirir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Muhasebede hesaplar 'T' biçiminde gösterilir: **sol taraf borç**, **sağ taraf alacak** tarafıdır. Bu, hesabın türünden bağımsız olarak sabittir.",
     "source": {
       "kind": "generated",
@@ -754,12 +754,12 @@
     "stem": "Bir hesabın dönem içi borç toplamı 78.000 ₺, alacak toplamı 90.000 ₺'dir. Bu hesabın kalanı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "12.000 ₺ borç kalanı",
-      "B": "12.000 ₺ alacak kalanı",
+      "B": "90.000 ₺ alacak kalanı",
       "C": "168.000 ₺ alacak kalanı",
       "D": "Kalan vermez",
-      "E": "90.000 ₺ alacak kalanı"
+      "E": "12.000 ₺ alacak kalanı"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Alacak toplamı borç toplamından büyük: 90.000 − 78.000 = **12.000 ₺ alacak kalanı**. Bu genellikle bir kaynak veya gelir hesabına işaret eder.",
     "source": {
       "kind": "generated",
@@ -775,13 +775,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Dönem sonunda gelir ve gider hesaplarının devredilerek dönem faaliyet sonucunun (kâr/zarar) belirlendiği hesap aşağıdakilerden hangisidir?",
     "options": {
-      "A": "590 Dönem Net Kârı",
-      "B": "690 Dönem Kârı veya Zararı",
+      "A": "690 Dönem Kârı veya Zararı",
+      "B": "590 Dönem Net Kârı",
       "C": "570 Geçmiş Yıllar Kârları",
       "D": "331 Ortaklara Borçlar",
       "E": "500 Sermaye"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Dönem sonunda gelir hesapları (6'lı) ve gider/maliyet hesapları **690 Dönem Kârı veya Zararı**na devredilir; bu hesabın kalanı dönem faaliyet sonucunu (kâr ya da zarar) gösterir.",
     "source": {
       "kind": "generated",
@@ -820,12 +820,12 @@
     "stem": "İşletmenin sahip veya ortaklarına dağıtmayı kararlaştırdığı kâr payı için doğan borç aşağıdaki hesaplardan hangisinde izlenir?",
     "options": {
       "A": "131 Ortaklardan Alacaklar",
-      "B": "331 Ortaklara Borçlar",
-      "C": "500 Sermaye",
+      "B": "500 Sermaye",
+      "C": "331 Ortaklara Borçlar",
       "D": "120 Alıcılar",
       "E": "770 Genel Yönetim Giderleri"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "İşletmenin ortaklarına olan borçları (dağıtılacak kâr payı, ortakların işletmeye verdiği borçlar vb.) **331 Ortaklara Borçlar** hesabında izlenir. 131 ise tersine, ortaklardan olan alacaklardır.",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "Tek düzen hesap planında 'hesap çerçevesi', 'hesap grubu' ve 'hesap' kavramlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Hesap çerçevesi, hesapların en ayrıntılı (muavin) düzeyidir.",
-      "B": "Hesap sınıfları (1-9) en genel düzeydir; hesap grupları ve hesaplar giderek ayrıntılanır.",
+      "B": "Hesap kodlarının ilk rakamı hesabın muavinini gösterir.",
       "C": "Her hesap grubu tek bir hesaptan oluşur.",
-      "D": "Hesap kodlarının ilk rakamı hesabın muavinini gösterir.",
+      "D": "Hesap sınıfları (1-9) en genel düzeydir; hesap grupları ve hesaplar giderek ayrıntılanır.",
       "E": "Hesap planı yalnızca gelir tablosu hesaplarını kapsar."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "TDHP'de en genel düzey **hesap sınıflarıdır (1-9)**; bunlar **hesap gruplarına**, gruplar da **ana hesaplara** ve **alt (muavin) hesaplara** ayrılarak giderek ayrıntılanır.",
     "source": {
       "kind": "generated",
@@ -886,12 +886,12 @@
     "stem": "Muhasebenin tanımı ile ilgili aşağıdakilerden hangisi en doğrudur?",
     "options": {
       "A": "Yalnızca vergi hesaplayan bir uygulamadır.",
-      "B": "Mali nitelikli işlem ve olayları para birimiyle kaydeden, sınıflandıran, özetleyen ve sonuçlarını yorumlayan bir bilgi sistemidir.",
+      "B": "İşletmenin üretim planlamasını yapan mühendislik dalıdır.",
       "C": "Yalnızca nakit hareketlerini izleyen bir kasa defteridir.",
-      "D": "İşletmenin üretim planlamasını yapan mühendislik dalıdır.",
+      "D": "Mali nitelikli işlem ve olayları para birimiyle kaydeden, sınıflandıran, özetleyen ve sonuçlarını yorumlayan bir bilgi sistemidir.",
       "E": "Sadece bordro hazırlama işlemidir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Muhasebe; **mali nitelikli işlem ve olayları** para birimiyle **kaydeden, sınıflandıran, özetleyen** ve sonuçlarını ilgililere **raporlayıp yorumlayan** bir bilgi sistemidir.",
     "source": {
       "kind": "generated",
@@ -907,13 +907,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme, yönetim biriminde kullanılan bir demirbaş için dönem sonunda 8.000 ₺ amortisman ayırmıştır (doğrudan yöntem/idari gider). Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri (B) 8.000 / 257 Birikmiş Amortismanlar (A) 8.000",
+      "A": "255 Demirbaşlar (B) 8.000 / 770 Genel Yönetim Giderleri (A) 8.000",
       "B": "257 Birikmiş Amortismanlar (B) 8.000 / 770 Genel Yönetim Giderleri (A) 8.000",
-      "C": "255 Demirbaşlar (B) 8.000 / 770 Genel Yönetim Giderleri (A) 8.000",
+      "C": "770 Genel Yönetim Giderleri (B) 8.000 / 257 Birikmiş Amortismanlar (A) 8.000",
       "D": "770 Genel Yönetim Giderleri (B) 8.000 / 255 Demirbaşlar (A) 8.000",
       "E": "689 Diğer Olağandışı Gider (B) 8.000 / 257 Birikmiş Amortismanlar (A) 8.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Amortisman bir giderdir → **770 Genel Yönetim Giderleri (B)**; varlığın değeri doğrudan azaltılmaz, düzenleyici hesap çalışır → **257 Birikmiş Amortismanlar (A)**. Kayıt: 770 (B) 8.000 / 257 (A) 8.000.",
     "source": {
       "kind": "generated",
@@ -930,12 +930,12 @@
     "stem": "İşletme, elindeki 25.000 ₺ nominal değerli bir alacak senedini vadesinde nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "121 Alacak Senetleri (B) 25.000 / 100 Kasa (A) 25.000",
-      "B": "100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000",
+      "B": "100 Kasa (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000",
       "C": "100 Kasa (B) 25.000 / 120 Alıcılar (A) 25.000",
       "D": "321 Borç Senetleri (B) 25.000 / 100 Kasa (A) 25.000",
-      "E": "100 Kasa (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000"
+      "E": "100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Kasa (varlık) artar → **100 Kasa (B)**; eldeki alacak senedi (varlık) tahsille çıkar → **121 Alacak Senetleri (A)**. Kayıt: 100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000.",
     "source": {
       "kind": "generated",
@@ -951,13 +951,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "İşletme yönetim biriminde kullanmak üzere 20.000 ₺ + %20 KDV bedelle peşin (nakit) demirbaş satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "255 Demirbaşlar (B) 20.000 + 191 İndirilecek KDV (B) 4.000 / 100 Kasa (A) 24.000",
-      "B": "255 Demirbaşlar (B) 24.000 / 100 Kasa (A) 24.000",
+      "A": "255 Demirbaşlar (B) 24.000 / 100 Kasa (A) 24.000",
+      "B": "255 Demirbaşlar (B) 20.000 + 191 İndirilecek KDV (B) 4.000 / 100 Kasa (A) 24.000",
       "C": "153 Ticari Mallar (B) 20.000 + 191 İndirilecek KDV (B) 4.000 / 100 Kasa (A) 24.000",
       "D": "770 Genel Yönetim Giderleri (B) 24.000 / 100 Kasa (A) 24.000",
       "E": "255 Demirbaşlar (B) 20.000 + 391 Hesaplanan KDV (B) 4.000 / 100 Kasa (A) 24.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Demirbaş bir duran varlıktır → **255 Demirbaşlar (B) 20.000**; alışta KDV **191 İndirilecek KDV (B) 4.000** (20.000×%20); nakit çıkışı **100 Kasa (A) 24.000**. Ticari mal (153) değildir; satış amacıyla değil kullanım amacıyla alınmıştır.",
     "source": {
       "kind": "generated",
@@ -996,12 +996,12 @@
     "stem": "Tekdüzen Hesap Planı'nda bir varlığın 'dönen' mi yoksa 'duran' varlık mı olduğunu belirleyen temel ölçüt aşağıdakilerden hangisidir?",
     "options": {
       "A": "Varlığın parasal büyüklüğü",
-      "B": "Varlığın bir yıl (veya normal faaliyet dönemi) içinde paraya çevrilmesinin/tüketilmesinin beklenip beklenmemesi",
+      "B": "Varlığın yurt içinden mi yurt dışından mı alındığı",
       "C": "Varlığın fiziki olup olmaması",
       "D": "Varlığın sigortalı olup olmaması",
-      "E": "Varlığın yurt içinden mi yurt dışından mı alındığı"
+      "E": "Varlığın bir yıl (veya normal faaliyet dönemi) içinde paraya çevrilmesinin/tüketilmesinin beklenip beklenmemesi"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Bir varlık, **bir yıl (veya normal faaliyet dönemi) içinde** paraya çevrilecek/tüketilecekse **dönen varlık**, daha uzun süre işletmede kalacaksa **duran varlık** sayılır.",
     "source": {
       "kind": "generated",
@@ -1019,11 +1019,11 @@
     "options": {
       "A": "257 Birikmiş Amortismanlar (-)",
       "B": "103 Verilen Çekler ve Ödeme Emirleri (-)",
-      "C": "501 Ödenmemiş Sermaye (-)",
-      "D": "320 Satıcılar",
+      "C": "320 Satıcılar",
+      "D": "501 Ödenmemiş Sermaye (-)",
       "E": "600 Yurt İçi Satışlar"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "**501 Ödenmemiş Sermaye (-)**, taahhüt edilip henüz ödenmemiş sermayeyi gösterir; **borç kalanı** verir ve özkaynaklar içinde 500 Sermaye'den **(-)** düşülür. 257 ve 103 ise aktifi düzenleyici hesaplardır.",
     "source": {
       "kind": "generated",
@@ -1083,13 +1083,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Bir hesap dönemi başında, önceki dönemden devreden bilanço kalemlerinin yevmiye defterine kaydedilmesi işlemine ne ad verilir?",
     "options": {
-      "A": "Kapanış kaydı",
-      "B": "Açılış kaydı",
+      "A": "Açılış kaydı",
+      "B": "Kapanış kaydı",
       "C": "Mahsup kaydı",
       "D": "Düzeltme kaydı",
       "E": "Virman kaydı"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Dönem başında, önceki dönem sonu bilançosundaki varlık ve kaynakların yevmiyeye aktarılmasına **açılış kaydı** denir. Aktif kalemler borç, pasif kalemler alacak tarafında yer alır.",
     "source": {
       "kind": "generated",
@@ -1106,12 +1106,12 @@
     "stem": "Bir borç ve birden fazla alacak (ya da birden fazla borç ve bir alacak) hesabından oluşan yevmiye maddesine ne ad verilir?",
     "options": {
       "A": "Basit madde",
-      "B": "Bileşik madde",
+      "B": "Açılış maddesi",
       "C": "Karma madde",
-      "D": "Açılış maddesi",
+      "D": "Bileşik madde",
       "E": "Nazım madde"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Bir tarafta tek, diğer tarafta birden fazla hesap bulunan yevmiye maddesi **bileşik madde**dir. Bir borç–bir alacaktan oluşan madde ise **basit madde**dir.",
     "source": {
       "kind": "generated",
@@ -1128,12 +1128,12 @@
     "stem": "Bir ana hesabın ayrıntılarının (ör. her bir müşteri, her bir satıcı) ayrı ayrı izlendiği hesaplara ne ad verilir?",
     "options": {
       "A": "Nazım hesaplar",
-      "B": "Düzenleyici hesaplar",
-      "C": "Muavin (yardımcı) hesaplar",
+      "B": "Muavin (yardımcı) hesaplar",
+      "C": "Düzenleyici hesaplar",
       "D": "Geçici hesaplar",
       "E": "Sonuç hesapları"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Bir ana hesabın ayrıntısını gösteren (ör. 120 Alıcılar altında her müşteri) hesaplar **muavin (yardımcı) hesaplar**dır; ana hesap bakiyesi, muavin hesapların toplamına eşittir.",
     "source": {
       "kind": "generated",
@@ -1150,12 +1150,12 @@
     "stem": "Tekdüzen Muhasebe Sistemi'nin (MSUGT) temel amaçlarından biri aşağıdakilerden hangisidir?",
     "options": {
       "A": "İşletmelerin daha az vergi ödemesini sağlamak",
-      "B": "Muhasebe bilgilerinin tekdüze, tutarlı ve karşılaştırılabilir biçimde üretilmesini sağlamak",
+      "B": "Mali tablo düzenlemeyi zorunlu olmaktan çıkarmak",
       "C": "Yalnızca büyük işletmelerin muhasebe tutmasını sağlamak",
       "D": "İşletmelere serbestçe istedikleri hesap kodlarını kullandırmak",
-      "E": "Mali tablo düzenlemeyi zorunlu olmaktan çıkarmak"
+      "E": "Muhasebe bilgilerinin tekdüze, tutarlı ve karşılaştırılabilir biçimde üretilmesini sağlamak"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Tekdüzen Muhasebe Sistemi'nin amacı; muhasebe bilgilerinin **tekdüze, tutarlı, gerçeğe uygun ve karşılaştırılabilir** biçimde üretilip sunulmasını sağlamaktır (ortak hesap planı ve ilkeler).",
     "source": {
       "kind": "generated",
@@ -1173,11 +1173,11 @@
     "options": {
       "A": "Perakende satış fişi",
       "B": "Ödeme kaydedici cihaz (yazar kasa) fişi",
-      "C": "Giriş ve yolcu taşıma bileti",
-      "D": "Sevk irsaliyesi",
+      "C": "Sevk irsaliyesi",
+      "D": "Giriş ve yolcu taşıma bileti",
       "E": "Perakende satış vesikası"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "Perakende satışlarda fatura yerine; **perakende satış fişi**, **yazar kasa fişi**, **giriş/yolcu taşıma bileti** düzenlenebilir (VUK md. 233). **Sevk irsaliyesi** ise bir satış belgesi değil, malın sevkini belgeleyen belgedir.",
     "source": {
       "kind": "generated",
@@ -1194,12 +1194,12 @@
     "stem": "İşletme, 30.000 ₺ + %20 KDV tutarındaki ticari malı, karşılığında müşteriden alacak senedi alarak (senetli) satmıştır. Bu satışın kaydında borçlandırılacak hesap aşağıdakilerden hangisidir?",
     "options": {
       "A": "120 Alıcılar",
-      "B": "121 Alacak Senetleri",
+      "B": "100 Kasa",
       "C": "321 Borç Senetleri",
-      "D": "100 Kasa",
+      "D": "121 Alacak Senetleri",
       "E": "600 Yurt İçi Satışlar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Senet karşılığı satışta işletmenin senetli alacağı doğar → **121 Alacak Senetleri (B) 36.000**. Karşılığında 600 Yurt İçi Satışlar (A) 30.000 ve 391 Hesaplanan KDV (A) 6.000 alacaklanır.",
     "source": {
       "kind": "generated",
@@ -1239,11 +1239,11 @@
     "options": {
       "A": "5 Özkaynaklar",
       "B": "6 Gelir Tablosu Hesapları",
-      "C": "7 Maliyet Hesapları",
-      "D": "9 Nazım Hesaplar",
+      "C": "9 Nazım Hesaplar",
+      "D": "7 Maliyet Hesapları",
       "E": "1 Dönen Varlıklar"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "İşletmenin varlık/kaynak yapısını doğrudan etkilemeyen; ancak izlenmesi gereken teminat, emanet vb. kıymetler **9 Nazım Hesaplar** sınıfında izlenir ve kendi içinde borç-alacak dengesi kurulur.",
     "source": {
       "kind": "generated",
@@ -1281,13 +1281,13 @@
     "konu": "muhasebe_sureci_hesap_plani",
     "stem": "Aşağıdakilerden hangisi muhasebenin bir dalı (bölümü) değildir?",
     "options": {
-      "A": "Genel (finansal) muhasebe",
+      "A": "İnşaat mühendisliği",
       "B": "Maliyet muhasebesi",
       "C": "Yönetim muhasebesi",
       "D": "Denetim ve inceleme",
-      "E": "İnşaat mühendisliği"
+      "E": "Genel (finansal) muhasebe"
     },
-    "answer": "E",
+    "answer": "A",
     "solution": "Muhasebenin dalları arasında genel (finansal) muhasebe, maliyet muhasebesi, yönetim muhasebesi ve denetim sayılabilir. **İnşaat mühendisliği** muhasebenin bir dalı değildir.",
     "source": {
       "kind": "generated",
@@ -1305,11 +1305,11 @@
     "options": {
       "A": "Aktif toplamı 100.000 ₺ artar.",
       "B": "Aktif toplamı 100.000 ₺ azalır.",
-      "C": "Aktif toplamı değişmez; bir varlık (mal) artarken eşit tutarda başka bir varlık (kasa) azalır.",
+      "C": "Özkaynaklar 100.000 ₺ azalır.",
       "D": "Pasif toplamı 100.000 ₺ artar.",
-      "E": "Özkaynaklar 100.000 ₺ azalır."
+      "E": "Aktif toplamı değişmez; bir varlık (mal) artarken eşit tutarda başka bir varlık (kasa) azalır."
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Kayıt: 153 Ticari Mallar (B) 100.000 / 100 Kasa (A) 100.000. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlık bileşimi değişir (bilanço eşitliği korunur).",
     "source": {
       "kind": "generated",

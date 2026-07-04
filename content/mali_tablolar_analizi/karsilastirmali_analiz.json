@@ -6,12 +6,12 @@
     "stem": "Karşılaştırmalı (yatay) tablolar analizi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Tek bir döneme ait tabloyu inceler.",
-      "B": "Birbirini izleyen iki veya daha fazla döneme ait mali tablo kalemlerinin tutar ve yüzde olarak değişiminin (artış/azalış) incelenmesidir.",
+      "B": "Kalemleri birbirine böler.",
       "C": "Her kalemi toplam aktife oranlar.",
-      "D": "Kalemleri birbirine böler.",
+      "D": "Birbirini izleyen iki veya daha fazla döneme ait mali tablo kalemlerinin tutar ve yüzde olarak değişiminin (artış/azalış) incelenmesidir.",
       "E": "Yalnızca vergi hesaplar."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Karşılaştırmalı (yatay) analiz**; ardışık iki veya daha fazla döneme ait kalemlerin **tutar ve yüzde olarak değişiminin** karşılaştırılmasıdır. Dinamik bir analizdir.",
     "source": {
       "kind": "generated",
@@ -28,12 +28,12 @@
     "stem": "Karşılaştırmalı analiz, dönemler arası değişimi incelediği için hangi tür analiz sınıfına girer?",
     "options": {
       "A": "Statik analiz",
-      "B": "Dinamik analiz",
+      "B": "Nokta analizi",
       "C": "Dikey analiz",
       "D": "Oran analizi",
-      "E": "Nokta analizi"
+      "E": "Dinamik analiz"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Karşılaştırmalı analiz birden fazla dönemi kapsayıp **dönemler arası değişimi** incelediğinden **dinamik analizdir**. (Tek dönemi inceleyen dikey analiz ise statiktir.)",
     "source": {
       "kind": "generated",
@@ -49,13 +49,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde bir kalemin değişim (fark) tutarı nasıl hesaplanır?",
     "options": {
-      "A": "Cari Dönem Tutarı − Önceki (baz) Dönem Tutarı",
+      "A": "Cari Dönem Tutarı ÷ Önceki Dönem Tutarı",
       "B": "Önceki Dönem Tutarı − Cari Dönem Tutarı",
-      "C": "Cari Dönem Tutarı ÷ Önceki Dönem Tutarı",
+      "C": "Cari Dönem Tutarı − Önceki (baz) Dönem Tutarı",
       "D": "Kalem Tutarı ÷ Toplam Aktif",
       "E": "Cari Dönem Tutarı × Önceki Dönem Tutarı"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "**Değişim (fark) Tutarı = Cari Dönem Tutarı − Önceki (baz) Dönem Tutarı**. Pozitifse artış, negatifse azalıştır.",
     "source": {
       "kind": "generated",
@@ -71,13 +71,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 500.000 ₺, cari dönemde 650.000 ₺'dir. Bu kalemin değişim tutarı kaç ₺'dir?",
     "options": {
-      "A": "1.150.000",
-      "B": "150.000",
+      "A": "150.000",
+      "B": "1.150.000",
       "C": "−150.000",
       "D": "30.000",
       "E": "650.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Değişim Tutarı = 650.000 − 500.000 = **150.000 ₺** (artış).",
     "source": {
       "kind": "generated",
@@ -93,13 +93,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde bir kalemin yüzde değişimi nasıl hesaplanır?",
     "options": {
-      "A": "(Değişim Tutarı ÷ Önceki Dönem Tutarı) × 100",
+      "A": "(Önceki Dönem ÷ Cari Dönem) × 100",
       "B": "(Değişim Tutarı ÷ Cari Dönem Tutarı) × 100",
       "C": "(Cari Dönem ÷ Önceki Dönem) − 100",
-      "D": "(Önceki Dönem ÷ Cari Dönem) × 100",
+      "D": "(Değişim Tutarı ÷ Önceki Dönem Tutarı) × 100",
       "E": "Değişim Tutarı ÷ Toplam Aktif"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "**Yüzde Değişim = (Değişim Tutarı ÷ Önceki Dönem Tutarı) × 100**. Baz her zaman önceki (temel alınan) dönemdir.",
     "source": {
       "kind": "generated",
@@ -115,13 +115,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 500.000 ₺, cari dönemde 650.000 ₺'dir. Bu kalemin yüzde değişimi kaçtır?",
     "options": {
-      "A": "%30",
+      "A": "%50",
       "B": "%23",
       "C": "%15",
       "D": "%130",
-      "E": "%50"
+      "E": "%30"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Yüzde Değişim = (150.000 ÷ 500.000) × 100 = **%30 artış**.",
     "source": {
       "kind": "generated",
@@ -160,12 +160,12 @@
     "stem": "Bir kalem önceki dönemde 400.000 ₺, cari dönemde 320.000 ₺'dir. Bu kalemin değişim tutarı ve yönü aşağıdakilerden hangisidir?",
     "options": {
       "A": "80.000 ₺ artış",
-      "B": "80.000 ₺ azalış",
-      "C": "720.000 ₺ artış",
+      "B": "720.000 ₺ artış",
+      "C": "80.000 ₺ azalış",
       "D": "20.000 ₺ azalış",
       "E": "Değişim yoktur"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Değişim Tutarı = 320.000 − 400.000 = −80.000 ₺ → **80.000 ₺ azalış** (kalem küçülmüştür).",
     "source": {
       "kind": "generated",
@@ -181,13 +181,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 400.000 ₺, cari dönemde 320.000 ₺'dir. Bu kalemin yüzde değişimi kaçtır?",
     "options": {
-      "A": "−%20",
-      "B": "−%25",
+      "A": "−%25",
+      "B": "−%20",
       "C": "+%20",
       "D": "−%80",
       "E": "−%8"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Yüzde Değişim = (−80.000 ÷ 400.000) × 100 = **−%20** (kalem %20 azalmıştır).",
     "source": {
       "kind": "generated",
@@ -204,12 +204,12 @@
     "stem": "Karşılaştırmalı analizin uygulanabilmesi için en az kaç döneme ait mali tablo gerekir?",
     "options": {
       "A": "Bir dönem yeterlidir",
-      "B": "En az iki dönem",
-      "C": "En az beş dönem",
+      "B": "En az beş dönem",
+      "C": "En az iki dönem",
       "D": "En az on dönem",
       "E": "Dönem sayısı önemli değildir"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Karşılaştırmalı analiz dönemler arası değişimi ölçtüğünden **en az iki döneme** ait mali tablo gerekir.",
     "source": {
       "kind": "generated",
@@ -225,13 +225,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 200.000 ₺, cari dönemde 260.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%30",
+      "A": "%13",
       "B": "%23",
       "C": "%60",
       "D": "%26",
-      "E": "%13"
+      "E": "%30"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 60.000 ₺. Yüzde Değişim = (60.000 ÷ 200.000) × 100 = **%30 artış**.",
     "source": {
       "kind": "generated",
@@ -249,11 +249,11 @@
     "options": {
       "A": "Yalnızca bilançoya",
       "B": "Yalnızca gelir tablosuna",
-      "C": "Hem bilanço hem gelir tablosu (ve diğer mali tablolar) kalemlerine",
-      "D": "Yalnızca kâr dağıtım tablosuna",
+      "C": "Yalnızca kâr dağıtım tablosuna",
+      "D": "Hem bilanço hem gelir tablosu (ve diğer mali tablolar) kalemlerine",
       "E": "Hiçbir mali tabloya uygulanamaz"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Karşılaştırmalı analiz **hem bilanço hem gelir tablosu** (ve diğer mali tablolar) kalemlerine uygulanabilir; her kalemin dönemler arası değişimi izlenir.",
     "source": {
       "kind": "generated",
@@ -269,13 +269,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı analizde bir kalemin önceki dönem tutarı sıfır (0) ise yüzde değişimle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yüzde değişim her zaman %100'dür.",
-      "B": "Payda sıfır olacağından anlamlı bir yüzde değişim hesaplanamaz; yalnızca tutar değişimi yorumlanır.",
+      "A": "Payda sıfır olacağından anlamlı bir yüzde değişim hesaplanamaz; yalnızca tutar değişimi yorumlanır.",
+      "B": "Yüzde değişim her zaman %100'dür.",
       "C": "Yüzde değişim sıfırdır.",
       "D": "Yüzde değişim negatif çıkar.",
       "E": "Yüzde değişim cari dönem tutarına eşittir."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Yüzde değişimde payda (önceki dönem) **sıfırsa** bölme tanımsız olur; anlamlı bir yüzde hesaplanamaz. Bu durumda yalnızca **tutar değişimi** dikkate alınır.",
     "source": {
       "kind": "generated",
@@ -291,13 +291,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 600.000 ₺, cari dönemde 750.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%25",
+      "A": "%30",
       "B": "%20",
       "C": "%15",
       "D": "%125",
-      "E": "%30"
+      "E": "%25"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 150.000 ₺. Yüzde Değişim = (150.000 ÷ 600.000) × 100 = **%25 artış**.",
     "source": {
       "kind": "generated",
@@ -357,13 +357,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 300.000 ₺, cari dönemde 390.000 ₺'dir. Değişim tutarı ve yüzdesi sırasıyla aşağıdakilerden hangisidir?",
     "options": {
-      "A": "90.000 ₺ — %30",
+      "A": "690.000 ₺ — %30",
       "B": "90.000 ₺ — %23",
-      "C": "690.000 ₺ — %30",
+      "C": "90.000 ₺ — %30",
       "D": "90.000 ₺ — %10",
       "E": "30.000 ₺ — %30"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Değişim = 390.000 − 300.000 = 90.000 ₺. Yüzde = (90.000 ÷ 300.000) × 100 = %30. Doğru: **90.000 ₺ — %30 artış**.",
     "source": {
       "kind": "generated",
@@ -379,13 +379,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 250.000 ₺, cari dönemde 300.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%20",
+      "A": "%50",
       "B": "%17",
       "C": "%25",
-      "D": "%50",
+      "D": "%20",
       "E": "%120"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Değişim = 50.000 ₺. Yüzde = (50.000 ÷ 250.000) × 100 = **%20 artış**.",
     "source": {
       "kind": "generated",
@@ -401,13 +401,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir işletmenin net satışları %20, satışların maliyeti ise %35 artmıştır. Bu karşılaştırmalı analiz bulgusu en olası olarak neyi gösterir?",
     "options": {
-      "A": "Brüt kârlılığın iyileştiğini",
-      "B": "Maliyetlerin satışlardan daha hızlı arttığını; bunun brüt kâr marjını olumsuz etkileme eğiliminde olduğunu",
+      "A": "Maliyetlerin satışlardan daha hızlı arttığını; bunun brüt kâr marjını olumsuz etkileme eğiliminde olduğunu",
+      "B": "Brüt kârlılığın iyileştiğini",
       "C": "İşletmenin hiç satış yapmadığını",
       "D": "Stokların sıfırlandığını",
       "E": "Özkaynakların arttığını"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Satışların maliyeti (%35), net satışlardan (%20) **daha hızlı artmışsa**, maliyet baskısı brüt kâr marjını **olumsuz** etkileme eğilimindedir. Yatay analizde kalemlerin göreli büyüme hızları bu şekilde yorumlanır.",
     "source": {
       "kind": "generated",
@@ -426,10 +426,10 @@
       "A": "Yalnız I",
       "B": "I ve II",
       "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "D": "I, II ve III",
+      "E": "I ve III"
     },
-    "answer": "E",
+    "answer": "D",
     "solution": "Üç ifade de doğrudur: **I** en az iki dönem; **II** değişim tutarı = cari − önceki; **III** yüzde değişimde payda önceki dönemdir. Doğru cevap **I, II ve III**.",
     "source": {
       "kind": "generated",
@@ -445,13 +445,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Toplam aktifi önceki dönemde 1.000.000 ₺, cari dönemde 1.200.000 ₺ olan bir işletmede toplam aktifin değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "200.000 ₺ — %20",
+      "A": "20.000 ₺ — %2",
       "B": "200.000 ₺ — %17",
       "C": "2.200.000 ₺ — %20",
       "D": "200.000 ₺ — %120",
-      "E": "20.000 ₺ — %2"
+      "E": "200.000 ₺ — %20"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 1.200.000 − 1.000.000 = 200.000 ₺. Yüzde = (200.000 ÷ 1.000.000) × 100 = %20. Doğru: **200.000 ₺ — %20 artış**.",
     "source": {
       "kind": "generated",
@@ -490,12 +490,12 @@
     "stem": "Önceki dönemde 400.000 ₺ olan bir kalem cari dönemde %25 artmıştır. Kalemin cari dönem tutarı kaç ₺'dir?",
     "options": {
       "A": "425.000",
-      "B": "500.000",
-      "C": "300.000",
+      "B": "300.000",
+      "C": "500.000",
       "D": "510.000",
       "E": "100.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Cari Dönem = 400.000 × 1,25 = **500.000 ₺**. (Artış tutarı 100.000 ₺.)",
     "source": {
       "kind": "generated",
@@ -512,12 +512,12 @@
     "stem": "Önceki dönemde 500.000 ₺ olan bir kalem cari dönemde %20 azalmıştır. Kalemin cari dönem tutarı kaç ₺'dir?",
     "options": {
       "A": "480.000",
-      "B": "400.000",
+      "B": "100.000",
       "C": "600.000",
-      "D": "100.000",
+      "D": "400.000",
       "E": "460.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Cari Dönem = 500.000 × (1 − 0,20) = 500.000 × 0,80 = **400.000 ₺**. (Azalış tutarı 100.000 ₺.)",
     "source": {
       "kind": "generated",
@@ -533,13 +533,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Özkaynakları önceki dönemde 450.000 ₺, cari dönemde 540.000 ₺ olan bir işletmede özkaynakların yüzde değişimi kaçtır?",
     "options": {
-      "A": "%20",
+      "A": "%15",
       "B": "%17",
       "C": "%25",
       "D": "%90",
-      "E": "%15"
+      "E": "%20"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 90.000 ₺. Yüzde = (90.000 ÷ 450.000) × 100 = **%20 artış**.",
     "source": {
       "kind": "generated",
@@ -599,13 +599,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Net satışları önceki dönemde 700.000 ₺, cari dönemde 840.000 ₺ olan bir işletmede net satışların değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "140.000 ₺ — %20",
-      "B": "140.000 ₺ — %17",
+      "A": "140.000 ₺ — %17",
+      "B": "140.000 ₺ — %20",
       "C": "1.540.000 ₺ — %20",
       "D": "140.000 ₺ — %25",
       "E": "14.000 ₺ — %2"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Değişim = 840.000 − 700.000 = 140.000 ₺. Yüzde = (140.000 ÷ 700.000) × 100 = %20. Doğru: **140.000 ₺ — %20 artış**.",
     "source": {
       "kind": "generated",
@@ -622,12 +622,12 @@
     "stem": "Cari dönemde 660.000 ₺ olan bir kalem, önceki döneme göre %10 artmıştır. Kalemin önceki dönem tutarı kaç ₺'dir?",
     "options": {
       "A": "594.000",
-      "B": "600.000",
-      "C": "726.000",
+      "B": "726.000",
+      "C": "600.000",
       "D": "650.000",
       "E": "66.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Önceki Dönem = Cari ÷ (1 + %10) = 660.000 ÷ 1,10 = **600.000 ₺**. (Ters soru: cari ve yüzdeden önceki tutara.)",
     "source": {
       "kind": "generated",
@@ -643,13 +643,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 240.000 ₺, cari dönemde 300.000 ₺'dir. Değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "60.000 ₺ — %25",
-      "B": "60.000 ₺ — %20",
+      "A": "60.000 ₺ — %20",
+      "B": "60.000 ₺ — %25",
       "C": "540.000 ₺ — %25",
       "D": "60.000 ₺ — %30",
       "E": "40.000 ₺ — %25"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Değişim = 300.000 − 240.000 = 60.000 ₺. Yüzde = (60.000 ÷ 240.000) × 100 = %25. Doğru: **60.000 ₺ — %25 artış**.",
     "source": {
       "kind": "generated",
@@ -666,12 +666,12 @@
     "stem": "Bir işletmenin ticari alacakları %40 artarken net satışları %10 artmıştır. Bu karşılaştırmalı bulgu en olası olarak neyi düşündürür?",
     "options": {
       "A": "Tahsilat performansının çok iyileştiğini",
-      "B": "Alacakların satışlardan çok daha hızlı büyüdüğünü; tahsilatta yavaşlama veya vadeli satış artışı olabileceğini",
+      "B": "Stokların azaldığını",
       "C": "İşletmenin peşin satışa geçtiğini",
-      "D": "Stokların azaldığını",
+      "D": "Alacakların satışlardan çok daha hızlı büyüdüğünü; tahsilatta yavaşlama veya vadeli satış artışı olabileceğini",
       "E": "Özkaynakların azaldığını"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Alacaklar (%40), satışlardan (%10) **çok daha hızlı** büyümüşse; bu, tahsilatta yavaşlama ya da vadeli satışların artışına işaret edebilir (olumsuz sinyal olarak değerlendirilir).",
     "source": {
       "kind": "generated",
@@ -687,13 +687,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 150.000 ₺, cari dönemde 180.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%20",
+      "A": "%25",
       "B": "%17",
       "C": "%30",
       "D": "%12",
-      "E": "%25"
+      "E": "%20"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 30.000 ₺. Yüzde = (30.000 ÷ 150.000) × 100 = **%20 artış**.",
     "source": {
       "kind": "generated",
@@ -753,13 +753,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 800.000 ₺, cari dönemde 600.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "−%25",
+      "A": "−%33",
       "B": "−%20",
-      "C": "−%33",
+      "C": "−%25",
       "D": "+%25",
       "E": "−%2,5"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Değişim = 600.000 − 800.000 = −200.000 ₺. Yüzde = (−200.000 ÷ 800.000) × 100 = **−%25**.",
     "source": {
       "kind": "generated",
@@ -775,13 +775,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Önceki dönemde 600.000 ₺ olan bir kalem cari dönemde %15 artmıştır. Kalemin cari dönem tutarı kaç ₺'dir?",
     "options": {
-      "A": "690.000",
-      "B": "615.000",
+      "A": "615.000",
+      "B": "690.000",
       "C": "510.000",
       "D": "660.000",
       "E": "90.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Cari = 600.000 × 1,15 = **690.000 ₺**. (Artış = 600.000 × 0,15 = 90.000 ₺.)",
     "source": {
       "kind": "generated",
@@ -797,13 +797,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Kısa vadeli yabancı kaynakları önceki dönemde 300.000 ₺, cari dönemde 375.000 ₺ olan bir işletmede bu kalemin yüzde değişimi kaçtır?",
     "options": {
-      "A": "%25",
+      "A": "%125",
       "B": "%20",
       "C": "%75",
       "D": "%15",
-      "E": "%125"
+      "E": "%25"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 75.000 ₺. Yüzde = (75.000 ÷ 300.000) × 100 = **%25 artış**.",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "Bir işletmenin dönen varlıkları %30, kısa vadeli yabancı kaynakları %10 artmıştır. Bu karşılaştırmalı bulgu likidite açısından en olası olarak neyi gösterir?",
     "options": {
       "A": "Likiditenin (cari oranın) zayıfladığını",
-      "B": "Dönen varlıkların kısa vadeli borçlardan daha hızlı artması nedeniyle likiditenin (cari oranın) güçlenme eğiliminde olduğunu",
-      "C": "İşletmenin iflas ettiğini",
+      "B": "İşletmenin iflas ettiğini",
+      "C": "Dönen varlıkların kısa vadeli borçlardan daha hızlı artması nedeniyle likiditenin (cari oranın) güçlenme eğiliminde olduğunu",
       "D": "Stokların sıfırlandığını",
       "E": "Kârlılığın düştüğünü"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Dönen varlıklar (%30), kısa vadeli borçlardan (%10) **daha hızlı** artmışsa cari oran (DV/KVYK) yükselme eğilimindedir → **likidite güçlenir**.",
     "source": {
       "kind": "generated",
@@ -864,12 +864,12 @@
     "stem": "Karşılaştırmalı analizde bir kalemin tutar olarak arttığı ancak yüzde olarak azaldığı söylenebilir mi?",
     "options": {
       "A": "Evet; aynı kalemde tutar artarken yüzde azalabilir.",
-      "B": "Hayır; bir kalem tutar olarak artıyorsa (cari > önceki), yüzde değişimi de mutlaka pozitiftir (artış).",
+      "B": "Bu durum yalnızca bilançoda mümkündür.",
       "C": "Evet; tutar ve yüzde her zaman ters yöndedir.",
-      "D": "Bu durum yalnızca bilançoda mümkündür.",
+      "D": "Hayır; bir kalem tutar olarak artıyorsa (cari > önceki), yüzde değişimi de mutlaka pozitiftir (artış).",
       "E": "Bu durum yalnızca gelir tablosunda mümkündür."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Bir kalem **tutar olarak artıyorsa** (cari > önceki), değişim tutarı pozitiftir ve yüzde değişim de zorunlu olarak **pozitiftir (artış)**. Tutar artışı ile yüzde azalışı aynı kalemde mümkün değildir.",
     "source": {
       "kind": "generated",
@@ -907,13 +907,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 320.000 ₺, cari dönemde 400.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%25",
+      "A": "%80",
       "B": "%20",
-      "C": "%80",
+      "C": "%25",
       "D": "%125",
       "E": "%8"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Değişim = 80.000 ₺. Yüzde = (80.000 ÷ 320.000) × 100 = **%25 artış**.",
     "source": {
       "kind": "generated",
@@ -929,13 +929,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Önceki dönemde 800.000 ₺ olan bir kalem cari dönemde %25 artmıştır. Kalemin cari dönem tutarı kaç ₺'dir?",
     "options": {
-      "A": "1.000.000",
+      "A": "200.000",
       "B": "825.000",
       "C": "600.000",
       "D": "1.025.000",
-      "E": "200.000"
+      "E": "1.000.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Cari = 800.000 × 1,25 = **1.000.000 ₺** (artış 200.000 ₺).",
     "source": {
       "kind": "generated",
@@ -951,13 +951,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 750.000 ₺, cari dönemde 600.000 ₺'dir. Değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "150.000 ₺ azalış — %20",
-      "B": "150.000 ₺ artış — %20",
+      "A": "150.000 ₺ artış — %20",
+      "B": "150.000 ₺ azalış — %20",
       "C": "150.000 ₺ azalış — %25",
       "D": "1.350.000 ₺ — %20",
       "E": "15.000 ₺ azalış — %2"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Değişim = 600.000 − 750.000 = −150.000 ₺ (azalış). Yüzde = (−150.000 ÷ 750.000) × 100 = −%20. Doğru: **150.000 ₺ azalış — %20**.",
     "source": {
       "kind": "generated",
@@ -974,12 +974,12 @@
     "stem": "Bir işletmenin stokları %35 artarken net satışları neredeyse hiç değişmemiştir (%2). Bu karşılaştırmalı bulgu en olası olarak neyi gösterir?",
     "options": {
       "A": "Stokların hızla satıldığını",
-      "B": "Satışlar artmadan stokların birikmesini; olası stok fazlalığı/satış yavaşlaması riskini",
+      "B": "Kârlılığın kesin arttığını",
       "C": "İşletmenin stoksuz çalıştığını",
-      "D": "Kârlılığın kesin arttığını",
+      "D": "Satışlar artmadan stokların birikmesini; olası stok fazlalığı/satış yavaşlaması riskini",
       "E": "Borçların azaldığını"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Satışlar sabitken (%2) stokların %35 artması, **stok birikmesine** (olası stok fazlalığı/satış yavaşlaması) işaret eder; bu genelde olumsuz bir sinyaldir.",
     "source": {
       "kind": "generated",
@@ -995,13 +995,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 400.000 ₺, cari dönemde 500.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%25",
-      "B": "%20",
+      "A": "%20",
+      "B": "%25",
       "C": "%125",
       "D": "%10",
       "E": "%40"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Değişim = 100.000 ₺. Yüzde = (100.000 ÷ 400.000) × 100 = **%25 artış**.",
     "source": {
       "kind": "generated",
@@ -1017,13 +1017,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Toplam varlıkları önceki dönemde 1.200.000 ₺, cari dönemde 1.500.000 ₺ olan bir işletmede toplam varlıkların değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "300.000 ₺ — %25",
+      "A": "30.000 ₺ — %2,5",
       "B": "300.000 ₺ — %20",
       "C": "2.700.000 ₺ — %25",
       "D": "300.000 ₺ — %30",
-      "E": "30.000 ₺ — %2,5"
+      "E": "300.000 ₺ — %25"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 1.500.000 − 1.200.000 = 300.000 ₺. Yüzde = (300.000 ÷ 1.200.000) × 100 = %25. Doğru: **300.000 ₺ — %25 artış**.",
     "source": {
       "kind": "generated",
@@ -1040,12 +1040,12 @@
     "stem": "Cari dönemde 800.000 ₺ olan bir kalem, önceki döneme göre %25 artmıştır. Kalemin önceki dönem tutarı kaç ₺'dir?",
     "options": {
       "A": "600.000",
-      "B": "640.000",
+      "B": "775.000",
       "C": "1.000.000",
-      "D": "775.000",
+      "D": "640.000",
       "E": "160.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Önceki = Cari ÷ (1 + %25) = 800.000 ÷ 1,25 = **640.000 ₺**. (Ters soru.)",
     "source": {
       "kind": "generated",
@@ -1062,12 +1062,12 @@
     "stem": "Bir işletmenin özkaynakları %20 artarken toplam yabancı kaynakları %10 azalmıştır. Bu karşılaştırmalı bulgu mali yapı açısından neyi gösterir?",
     "options": {
       "A": "Mali yapının zayıfladığını",
-      "B": "Özkaynak ağırlığının arttığını, borçluluğun azaldığını; mali yapının güçlendiğini",
-      "C": "İşletmenin borç batağına girdiğini",
+      "B": "İşletmenin borç batağına girdiğini",
+      "C": "Özkaynak ağırlığının arttığını, borçluluğun azaldığını; mali yapının güçlendiğini",
       "D": "Likiditenin bozulduğunu",
       "E": "Satışların düştüğünü"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Özkaynak artıp (%20) yabancı kaynak azalınca (%10), varlıklar içinde **özkaynak ağırlığı artar, borçluluk azalır** → mali yapı **güçlenir**.",
     "source": {
       "kind": "generated",
@@ -1105,13 +1105,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 550.000 ₺, cari dönemde 660.000 ₺'dir. Değişim tutarı ve yüzdesi sırasıyla kaçtır?",
     "options": {
-      "A": "110.000 ₺ — %20",
+      "A": "11.000 ₺ — %2",
       "B": "110.000 ₺ — %17",
       "C": "1.210.000 ₺ — %20",
       "D": "110.000 ₺ — %25",
-      "E": "11.000 ₺ — %2"
+      "E": "110.000 ₺ — %20"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Değişim = 660.000 − 550.000 = 110.000 ₺. Yüzde = (110.000 ÷ 550.000) × 100 = %20. Doğru: **110.000 ₺ — %20 artış**.",
     "source": {
       "kind": "generated",
@@ -1127,13 +1127,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Önceki dönemde 300.000 ₺ olan bir kalem cari dönemde %20 azalmıştır. Kalemin cari dönem tutarı kaç ₺'dir?",
     "options": {
-      "A": "240.000",
-      "B": "360.000",
+      "A": "360.000",
+      "B": "240.000",
       "C": "280.000",
       "D": "250.000",
       "E": "60.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Cari = 300.000 × (1 − 0,20) = 300.000 × 0,80 = **240.000 ₺** (azalış 60.000 ₺).",
     "source": {
       "kind": "generated",
@@ -1172,12 +1172,12 @@
     "stem": "Karşılaştırmalı analizin temel amacı aşağıdakilerden hangisidir?",
     "options": {
       "A": "Tek dönemin kalemlerini toplam içinde yüzdelemek",
-      "B": "İşletmenin kalemlerinin dönemler arası gelişimini (artış/azalış eğilimini) izleyerek performans ve mali durumdaki değişimi değerlendirmek",
+      "B": "Kalemleri birbirine bölerek oran üretmek",
       "C": "Yalnızca vergi matrahını bulmak",
-      "D": "Kalemleri birbirine bölerek oran üretmek",
+      "D": "İşletmenin kalemlerinin dönemler arası gelişimini (artış/azalış eğilimini) izleyerek performans ve mali durumdaki değişimi değerlendirmek",
       "E": "Kâr dağıtımı yapmak"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Karşılaştırmalı (yatay) analizin amacı; kalemlerin **dönemler arası gelişimini (artış/azalış)** izleyerek işletmenin performans ve mali durumundaki **değişimi** değerlendirmektir.",
     "source": {
       "kind": "generated",
@@ -1193,13 +1193,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 500.000 ₺, cari dönemde 550.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%10",
+      "A": "%5",
       "B": "%9",
-      "C": "%5",
+      "C": "%10",
       "D": "%11",
       "E": "%50"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Değişim = 50.000 ₺. Yüzde = (50.000 ÷ 500.000) × 100 = **%10 artış**.",
     "source": {
       "kind": "generated",
@@ -1215,13 +1215,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 300.000 ₺, cari dönemde 240.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "−%20",
+      "A": "−%60",
       "B": "−%25",
       "C": "+%20",
-      "D": "−%60",
+      "D": "−%20",
       "E": "−%6"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Değişim = 240.000 − 300.000 = −60.000 ₺. Yüzde = (−60.000 ÷ 300.000) × 100 = **−%20**.",
     "source": {
       "kind": "generated",
@@ -1238,12 +1238,12 @@
     "stem": "Karşılaştırmalı analiz ile dikey analiz arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İkisi de tek dönemi inceler.",
-      "B": "Karşılaştırmalı analiz dönemler arası değişimi (dinamik) incelerken; dikey analiz tek bir dönemde kalemlerin bir bütüne oranını (statik) inceler.",
+      "B": "İkisi arasında fark yoktur.",
       "C": "Karşılaştırmalı analiz statik, dikey analiz dinamiktir.",
       "D": "İkisi de kalemleri birbirine böler.",
-      "E": "İkisi arasında fark yoktur."
+      "E": "Karşılaştırmalı analiz dönemler arası değişimi (dinamik) incelerken; dikey analiz tek bir dönemde kalemlerin bir bütüne oranını (statik) inceler."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Karşılaştırmalı (yatay) analiz** dönemler arası değişimi inceler (**dinamik**); **dikey analiz** ise tek dönemde her kalemin bir bütüne (toplam aktif/net satışlar) oranını inceler (**statik**).",
     "source": {
       "kind": "generated",
@@ -1259,13 +1259,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Bir kalem önceki dönemde 450.000 ₺, cari dönemde 585.000 ₺'dir. Yüzde değişim kaçtır?",
     "options": {
-      "A": "%30",
+      "A": "%15",
       "B": "%23",
-      "C": "%15",
+      "C": "%30",
       "D": "%130",
       "E": "%35"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Değişim = 135.000 ₺. Yüzde = (135.000 ÷ 450.000) × 100 = **%30 artış**.",
     "source": {
       "kind": "generated",
@@ -1303,13 +1303,13 @@
     "konu": "karsilastirmali_analiz",
     "stem": "Karşılaştırmalı (yatay) analiz ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Dinamik bir analizdir (dönemler arası değişimi inceler).\nII. Yüzde değişim = (Değişim Tutarı ÷ Önceki Dönem) × 100.\nIII. Tutar ve yüzde değişim birlikte değerlendirildiğinde daha sağlıklı yorum yapılır.",
     "options": {
-      "A": "Yalnız I",
+      "A": "I, II ve III",
       "B": "I ve II",
       "C": "II ve III",
       "D": "I ve III",
-      "E": "I, II ve III"
+      "E": "Yalnız I"
     },
-    "answer": "E",
+    "answer": "A",
     "solution": "Üç ifade de doğrudur: **I** dinamik analiz; **II** yüzde değişim formülü; **III** tutar ve yüzdenin birlikte yorumu. Doğru cevap **I, II ve III**.",
     "source": {
       "kind": "generated",

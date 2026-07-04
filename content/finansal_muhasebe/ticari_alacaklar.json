@@ -6,12 +6,12 @@
     "stem": "Tekdüzen Hesap Planı'nda '12 Ticari Alacaklar' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin duran varlıklarını izler.",
-      "B": "İşletmenin ana faaliyet konusuyla (mal/hizmet satışı) ilgili, bir yıl içinde tahsil edilecek alacaklarını izler.",
-      "C": "İşletmenin satıcılara olan borçlarını izler.",
+      "B": "İşletmenin satıcılara olan borçlarını izler.",
+      "C": "İşletmenin ana faaliyet konusuyla (mal/hizmet satışı) ilgili, bir yıl içinde tahsil edilecek alacaklarını izler.",
       "D": "Yalnızca ortaklardan alacakları izler.",
       "E": "İşletmenin banka mevduatını izler."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**12 Ticari Alacaklar** grubu, işletmenin esas faaliyeti (mal/hizmet satışı) nedeniyle doğan ve bir yıl içinde tahsil edilecek alacaklarını (120 Alıcılar, 121 Alacak Senetleri vb.) izler.",
     "source": {
       "kind": "generated",
@@ -49,13 +49,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, alıcısından olan 30.000 ₺'lik senetsiz ticari alacağı karşılığında bir alacak senedi (bono) almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "121 Alacak Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000",
+      "A": "100 Kasa (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
       "B": "120 Alıcılar (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
       "C": "121 Alacak Senetleri (B) 30.000 / 600 Yurt İçi Satışlar (A) 30.000",
-      "D": "100 Kasa (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
+      "D": "121 Alacak Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000",
       "E": "321 Borç Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Senetsiz alacak senede bağlanınca alacağın niteliği değişir: **121 Alacak Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000**. Alacak tutarı aynı kalır, yalnızca senetli hâle gelir.",
     "source": {
       "kind": "generated",
@@ -71,13 +71,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, elindeki 25.000 ₺'lik alacak senedini vadesinde nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "121 Alacak Senetleri (B) 25.000 / 100 Kasa (A) 25.000",
-      "B": "100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000",
+      "A": "100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000",
+      "B": "121 Alacak Senetleri (B) 25.000 / 100 Kasa (A) 25.000",
       "C": "100 Kasa (B) 25.000 / 120 Alıcılar (A) 25.000",
       "D": "121 Alacak Senetleri (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000",
       "E": "100 Kasa (B) 25.000 / 642 Faiz Gelirleri (A) 25.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Kasa (varlık) artar → **100 Kasa (B)**; senetli alacak (varlık) tahsille çıkar → **121 Alacak Senetleri (A)**. Kayıt: 100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000.",
     "source": {
       "kind": "generated",
@@ -93,13 +93,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, elindeki 40.000 ₺'lik alacak senedini satıcısına olan borcuna karşılık ciro etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "320 Satıcılar (B) 40.000 / 121 Alacak Senetleri (A) 40.000",
+      "A": "321 Borç Senetleri (B) 40.000 / 121 Alacak Senetleri (A) 40.000",
       "B": "121 Alacak Senetleri (B) 40.000 / 320 Satıcılar (A) 40.000",
-      "C": "321 Borç Senetleri (B) 40.000 / 121 Alacak Senetleri (A) 40.000",
+      "C": "320 Satıcılar (B) 40.000 / 121 Alacak Senetleri (A) 40.000",
       "D": "320 Satıcılar (B) 40.000 / 100 Kasa (A) 40.000",
       "E": "121 Alacak Senetleri (B) 40.000 / 100 Kasa (A) 40.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Ciro ile senetli alacak çıkar → **121 Alacak Senetleri (A)**; satıcıya olan borç azalır → **320 Satıcılar (B)**. Kayıt: 320 Satıcılar (B) 40.000 / 121 Alacak Senetleri (A) 40.000.",
     "source": {
       "kind": "generated",
@@ -115,13 +115,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, KDV hariç 50.000 ₺'lik malı %20 KDV ile veresiye (senetsiz) satmıştır. Bu satıştan doğan ve '120 Alıcılar' hesabına yazılacak alacak tutarı kaç ₺'dir?",
     "options": {
-      "A": "50.000",
-      "B": "60.000",
+      "A": "60.000",
+      "B": "50.000",
       "C": "10.000",
       "D": "40.000",
       "E": "70.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Alıcının borcu KDV dâhil toplamdır: 50.000 + (50.000 × %20 = 10.000) = **60.000 ₺**. Kayıt: 120 Alıcılar (B) 60.000 / 600 Yurt İçi Satışlar (A) 50.000 + 391 Hesaplanan KDV (A) 10.000.",
     "source": {
       "kind": "generated",
@@ -138,12 +138,12 @@
     "stem": "'126 Verilen Depozito ve Teminatlar' hesabı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin aldığı teminatları izleyen bir kaynak hesabıdır.",
-      "B": "İşletmenin üçüncü kişilere geri alınmak üzere verdiği depozito ve teminatları izleyen bir alacak (aktif) hesabıdır.",
+      "B": "Şüpheli alacakları izler.",
       "C": "Bir gelir hesabıdır.",
-      "D": "Şüpheli alacakları izler.",
+      "D": "İşletmenin üçüncü kişilere geri alınmak üzere verdiği depozito ve teminatları izleyen bir alacak (aktif) hesabıdır.",
       "E": "Duran varlıkların amortismanını izler."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**126 Verilen Depozito ve Teminatlar**, işletmenin geri alınmak üzere üçüncü kişilere verdiği depozito/teminatları izleyen bir **alacak (aktif)** hesabıdır (ör. kira depozitosu).",
     "source": {
       "kind": "generated",
@@ -159,13 +159,13 @@
     "konu": "ticari_alacaklar",
     "stem": "'128 Şüpheli Ticari Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Tahsili şüpheli hâle gelmiş ticari alacakların izlendiği bir aktif hesaptır.",
-      "B": "Bir kaynak (pasif) hesabıdır.",
+      "A": "Bir kaynak (pasif) hesabıdır.",
+      "B": "Tahsili şüpheli hâle gelmiş ticari alacakların izlendiği bir aktif hesaptır.",
       "C": "Bir gelir hesabıdır.",
       "D": "Aktifi düzenleyici bir hesaptır, alacak kalanı verir.",
       "E": "Duran varlık hesabıdır."
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "**128 Şüpheli Ticari Alacaklar**, tahsili şüpheli hâle gelen ticari alacakların izlendiği bir **aktif** hesaptır; borç kalanı verir. Karşılığı ise 129'da (aktifi düzenleyici) takip edilir.",
     "source": {
       "kind": "generated",
@@ -182,12 +182,12 @@
     "stem": "'129 Şüpheli Ticari Alacaklar Karşılığı (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Bir gelir hesabıdır.",
-      "B": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve şüpheli alacaklardan (-) düşülür.",
+      "B": "Nazım hesaptır.",
       "C": "Bir kaynak (pasif) hesabı olup borç kalanı verir.",
       "D": "Bir maliyet hesabıdır.",
-      "E": "Nazım hesaptır."
+      "E": "Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve şüpheli alacaklardan (-) düşülür."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**129 Şüpheli Ticari Alacaklar Karşılığı (-)**, aktifi düzenleyici bir hesaptır; **alacak kalanı** verir ve bilançoda 128 Şüpheli Ticari Alacaklar'dan **(-)** düşülerek tahsili beklenen net tutarı gösterir.",
     "source": {
       "kind": "generated",
@@ -203,13 +203,13 @@
     "konu": "ticari_alacaklar",
     "stem": "'122 Alacak Senetleri Reeskontu (-)' hesabının işlevi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Vadeli alacak senetlerinin dönem sonunda peşin değerine indirgenmesinde kullanılan, aktifi düzenleyici bir hesaptır.",
-      "B": "Bir gelir hesabıdır.",
+      "A": "Bir gelir hesabıdır.",
+      "B": "Vadeli alacak senetlerinin dönem sonunda peşin değerine indirgenmesinde kullanılan, aktifi düzenleyici bir hesaptır.",
       "C": "Borç senetlerinin reeskontunu izler.",
       "D": "Bir kaynak (pasif) hesabıdır.",
       "E": "Şüpheli alacakların karşılığını izler."
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "**122 Alacak Senetleri Reeskontu (-)**, vadeli alacak senetlerinin dönem sonunda peşin (tasarruf) değerine indirgenmesinde kullanılan **aktifi düzenleyici** bir hesaptır; alacak senetlerinden (-) düşülür.",
     "source": {
       "kind": "generated",
@@ -225,13 +225,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 121 ALACAK SENETLERİ | 18.000 | |\n| 120 ALICILAR | | 18.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Alacak senedinin nakden tahsil edilmesi",
-      "B": "Senetsiz ticari alacağın karşılığında senet (bono) alınması",
+      "A": "Senetsiz ticari alacağın karşılığında senet (bono) alınması",
+      "B": "Alacak senedinin nakden tahsil edilmesi",
       "C": "Alacak senedinin ciro edilmesi",
       "D": "Şüpheli alacağın kaydedilmesi",
       "E": "Peşin mal satışı"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Senetli alacağın artması (121 borç) ve senetsiz alacağın azalması (120 alacak), **senetsiz ticari alacağın karşılığında senet alınması** işlemini gösterir.",
     "source": {
       "kind": "generated",
@@ -248,12 +248,12 @@
     "stem": "İşletmenin, esas faaliyeti dışındaki işlemlerden (ör. iştirak/personel dışı üçüncü kişilerden) doğan ve senede bağlı olmayan çeşitli alacakları öncelikle hangi grupta izlenir?",
     "options": {
       "A": "12 Ticari Alacaklar",
-      "B": "13 Diğer Alacaklar",
+      "B": "25 Maddi Duran Varlıklar",
       "C": "15 Stoklar",
-      "D": "25 Maddi Duran Varlıklar",
+      "D": "13 Diğer Alacaklar",
       "E": "32 Ticari Borçlar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Esas faaliyet dışı işlemlerden doğan alacaklar **13 Diğer Alacaklar** grubunda (ör. 136 Diğer Çeşitli Alacaklar) izlenir. Esas faaliyetten (mal/hizmet satışı) doğanlar ise 12 Ticari Alacaklar'dadır.",
     "source": {
       "kind": "generated",
@@ -270,12 +270,12 @@
     "stem": "Vadesine bir yıldan uzun süre kalan senetli ticari alacaklar Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "121 Alacak Senetleri",
-      "B": "221 Alacak Senetleri",
-      "C": "321 Borç Senetleri",
+      "B": "321 Borç Senetleri",
+      "C": "221 Alacak Senetleri",
       "D": "126 Verilen Depozito ve Teminatlar",
       "E": "136 Diğer Çeşitli Alacaklar"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Vadesi bir yıldan uzun senetli ticari alacaklar **221 Alacak Senetleri** (Uzun Vadeli/22 Ticari Alacaklar) hesabında izlenir. Bir yıl içindekiler ise 121'dedir.",
     "source": {
       "kind": "generated",
@@ -292,12 +292,12 @@
     "stem": "İşletme, elindeki bir alacak senedini vadesinden önce paraya çevirmek için bankaya iskonto ettirmiş (kırdırmış); banka faiz keserek kalanı hesaba geçirmiştir. Bankanın kestiği iskonto (faiz) işletme açısından hangi hesaba yazılır?",
     "options": {
       "A": "642 Faiz Gelirleri",
-      "B": "780 Finansman Giderleri",
+      "B": "600 Yurt İçi Satışlar",
       "C": "647 Reeskont Faiz Gelirleri",
-      "D": "600 Yurt İçi Satışlar",
+      "D": "780 Finansman Giderleri",
       "E": "121 Alacak Senetleri"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Senedin vadesinden önce kırdırılmasında bankanın kestiği faiz, işletme için bir **finansman gideridir**: **780 Finansman Giderleri**ne borç yazılır. 121 senet nominal tutarla alacaklanır, 102 net tutarla borçlanır.",
     "source": {
       "kind": "generated",
@@ -314,12 +314,12 @@
     "stem": "Bir müşteri, senetsiz ticari borcuna karşılık işletmeye bir çek vermiştir. İşletme açısından bu çek hangi hesapta izlenir ve bu hesap hangi gruptadır?",
     "options": {
       "A": "121 Alacak Senetleri — Ticari Alacaklar",
-      "B": "101 Alınan Çekler — Hazır Değerler",
+      "B": "108 Diğer Hazır Değerler — Hazır Değerler",
       "C": "103 Verilen Çekler ve Ödeme Emirleri — Hazır Değerler",
       "D": "120 Alıcılar — Ticari Alacaklar",
-      "E": "108 Diğer Hazır Değerler — Hazır Değerler"
+      "E": "101 Alınan Çekler — Hazır Değerler"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Alınan çekler **101 Alınan Çekler** hesabında ve **10 Hazır Değerler** grubunda izlenir (çek bir ödeme aracıdır). Senet ise 121 Alacak Senetleri (Ticari Alacaklar) grubundadır; ikisi karıştırılmamalıdır.",
     "source": {
       "kind": "generated",
@@ -336,12 +336,12 @@
     "stem": "İşletmenin bilançosunda senetli ticari alacakların net tutarı nasıl gösterilir?",
     "options": {
       "A": "121 Alacak Senetleri + 122 Alacak Senetleri Reeskontu",
-      "B": "121 Alacak Senetleri − 122 Alacak Senetleri Reeskontu (-)",
-      "C": "121 Alacak Senetleri + 129 Şüpheli Ticari Alacaklar Karşılığı",
+      "B": "121 Alacak Senetleri + 129 Şüpheli Ticari Alacaklar Karşılığı",
+      "C": "121 Alacak Senetleri − 122 Alacak Senetleri Reeskontu (-)",
       "D": "120 Alıcılar − 121 Alacak Senetleri",
       "E": "Yalnızca 122 Alacak Senetleri Reeskontu"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Senetli alacaklar bilançoda **121 Alacak Senetleri − 122 Alacak Senetleri Reeskontu (-)** biçiminde net (peşin/tasarruf değeriyle) gösterilir. 122 aktifi düzenleyici olduğundan (-) düşülür.",
     "source": {
       "kind": "generated",
@@ -379,13 +379,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, vadesi gelen 20.000 ₺'lik alacak senedini tahsil için bankaya vermiştir; senet henüz tahsil edilmemiştir. Tahsile verilen bu senetlerin izlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Senet artık işletmenin varlığı olmaktan çıkar, doğrudan gider yazılır.",
-      "B": "Senet hâlâ işletmenin alacağıdır; genellikle 121 Alacak Senetleri altında 'Tahsildeki Senetler' gibi bir alt hesapta izlenir, tahsil edilince 102 Bankalar'a aktarılır.",
+      "A": "Senet hâlâ işletmenin alacağıdır; genellikle 121 Alacak Senetleri altında 'Tahsildeki Senetler' gibi bir alt hesapta izlenir, tahsil edilince 102 Bankalar'a aktarılır.",
+      "B": "Senet artık işletmenin varlığı olmaktan çıkar, doğrudan gider yazılır.",
       "C": "Senet 103 Verilen Çekler ve Ödeme Emirleri'ne aktarılır.",
       "D": "Senet 320 Satıcılar'a aktarılır.",
       "E": "Senet nazım hesaplarda izlenir ve bilançoda gösterilmez."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Tahsile verilen senet hâlâ işletmenin **alacağıdır**; portföyden çıkıp genellikle 121'in bir alt hesabında (Tahsildeki Senetler) izlenir. Banka tahsil edince tutar **102 Bankalar**'a geçer.",
     "source": {
       "kind": "generated",
@@ -402,12 +402,12 @@
     "stem": "Aşağıdaki hesaplardan hangisi '12 Ticari Alacaklar' grubunda yer almaz?",
     "options": {
       "A": "120 Alıcılar",
-      "B": "121 Alacak Senetleri",
+      "B": "131 Ortaklardan Alacaklar",
       "C": "126 Verilen Depozito ve Teminatlar",
       "D": "128 Şüpheli Ticari Alacaklar",
-      "E": "131 Ortaklardan Alacaklar"
+      "E": "121 Alacak Senetleri"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "**131 Ortaklardan Alacaklar**, '13 Diğer Alacaklar' grubundadır; esas faaliyetten doğmadığı için Ticari Alacaklar değildir. Diğerleri 12 Ticari Alacaklar grubundadır.",
     "source": {
       "kind": "generated",
@@ -423,13 +423,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, kiraladığı işyeri için mal sahibine geri alınmak üzere 15.000 ₺ depozito ödemiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "126 Verilen Depozito ve Teminatlar (B) 15.000 / 100 Kasa (A) 15.000",
+      "A": "100 Kasa (B) 15.000 / 126 Verilen Depozito ve Teminatlar (A) 15.000",
       "B": "770 Genel Yönetim Giderleri (B) 15.000 / 100 Kasa (A) 15.000",
-      "C": "100 Kasa (B) 15.000 / 126 Verilen Depozito ve Teminatlar (A) 15.000",
+      "C": "126 Verilen Depozito ve Teminatlar (B) 15.000 / 100 Kasa (A) 15.000",
       "D": "320 Satıcılar (B) 15.000 / 100 Kasa (A) 15.000",
       "E": "336 Diğer Çeşitli Borçlar (B) 15.000 / 100 Kasa (A) 15.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Geri alınmak üzere verilen depozito bir alacaktır: **126 Verilen Depozito ve Teminatlar (B) 15.000 / 100 Kasa (A) 15.000**. Gider değildir; sözleşme sonunda geri alınır.",
     "source": {
       "kind": "generated",
@@ -446,12 +446,12 @@
     "stem": "Dönem sonunda vadeli alacak senetleri için reeskont yapılmasının temel amacı aşağıdakilerden hangisidir?",
     "options": {
       "A": "Senetlerin nominal değerini artırmak",
-      "B": "Vadeli senetleri, içerdikleri vade farkından arındırıp dönem sonu itibarıyla peşin (tasarruf) değerine indirgemek",
+      "B": "KDV'yi hesaplamak",
       "C": "Şüpheli alacakları izlemek",
       "D": "Senetleri bankaya tahsile vermek",
-      "E": "KDV'yi hesaplamak"
+      "E": "Vadeli senetleri, içerdikleri vade farkından arındırıp dönem sonu itibarıyla peşin (tasarruf) değerine indirgemek"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Reeskont**, henüz vadesi gelmemiş senetli alacak/borçların içerdikleri vade farkını (faizi) ayırarak dönem sonu itibarıyla **peşin (tasarruf) değerine** indirgenmesidir; dönemsellik ve ihtiyatlılık gereğidir.",
     "source": {
       "kind": "generated",
@@ -467,13 +467,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Nominal değeri 200.000 ₺, vadesine 100 gün kalan bir alacak senedi için yıllık %40 faiz oranıyla iç iskonto yöntemine göre reeskont tutarı kaç ₺'dir?\n\n(İç iskonto: Reeskont = Nominal × Faiz × Gün ÷ [36.000 + (Faiz × Gün)])",
     "options": {
-      "A": "22.000",
-      "B": "20.000",
+      "A": "20.000",
+      "B": "22.000",
       "C": "18.000",
       "D": "8.000",
       "E": "24.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Reeskont = 200.000 × 40 × 100 ÷ [36.000 + (40 × 100)] = 200.000 × 4.000 ÷ 40.000 = **20.000 ₺**. Senedin peşin (tasarruf) değeri = 200.000 − 20.000 = 180.000 ₺.",
     "source": {
       "kind": "generated",
@@ -491,11 +491,11 @@
     "options": {
       "A": "180.000",
       "B": "150.000",
-      "C": "120.000",
-      "D": "30.000",
+      "C": "30.000",
+      "D": "120.000",
       "E": "135.000"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Peşin (tasarruf) değer = Nominal − Reeskont = 150.000 − 30.000 = **120.000 ₺**. Bilançoda senet 121 (150.000) − 122 Reeskont (30.000) = net 120.000 ₺ ile gösterilir.",
     "source": {
       "kind": "generated",
@@ -511,13 +511,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, dönem sonunda alacak senetleri için 20.000 ₺ reeskont hesaplamıştır. Bu reeskontun cari dönemde kaydedilmesine ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "657 Reeskont Faiz Giderleri (B) 20.000 / 122 Alacak Senetleri Reeskontu (A) 20.000",
-      "B": "122 Alacak Senetleri Reeskontu (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000",
+      "A": "122 Alacak Senetleri Reeskontu (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000",
+      "B": "657 Reeskont Faiz Giderleri (B) 20.000 / 122 Alacak Senetleri Reeskontu (A) 20.000",
       "C": "121 Alacak Senetleri (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000",
       "D": "780 Finansman Giderleri (B) 20.000 / 121 Alacak Senetleri (A) 20.000",
       "E": "657 Reeskont Faiz Giderleri (B) 20.000 / 121 Alacak Senetleri (A) 20.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Alacak senetleri reeskontu cari dönem gelirini azalttığından **gider** yazılır: **657 Reeskont Faiz Giderleri (B) 20.000 / 122 Alacak Senetleri Reeskontu (-) (A) 20.000**. 122 aktifi düzenleyicidir.",
     "source": {
       "kind": "generated",
@@ -534,12 +534,12 @@
     "stem": "Bir önceki dönem sonunda alacak senetleri için 20.000 ₺ reeskont ayıran işletme, izleyen dönem başında bu reeskontu iptal edecektir. İptal kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "657 Reeskont Faiz Giderleri (B) 20.000 / 122 Alacak Senetleri Reeskontu (A) 20.000",
-      "B": "122 Alacak Senetleri Reeskontu (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000",
+      "B": "122 Alacak Senetleri Reeskontu (B) 20.000 / 121 Alacak Senetleri (A) 20.000",
       "C": "647 Reeskont Faiz Gelirleri (B) 20.000 / 122 Alacak Senetleri Reeskontu (A) 20.000",
-      "D": "122 Alacak Senetleri Reeskontu (B) 20.000 / 121 Alacak Senetleri (A) 20.000",
+      "D": "122 Alacak Senetleri Reeskontu (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000",
       "E": "121 Alacak Senetleri (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Önceki dönem gider yazılan reeskont, izleyen dönemde ters kayıtla **gelir** olarak iptal edilir: **122 Alacak Senetleri Reeskontu (B) 20.000 / 647 Reeskont Faiz Gelirleri (A) 20.000**.",
     "source": {
       "kind": "generated",
@@ -557,11 +557,11 @@
     "options": {
       "A": "Dönem sonu reeskont gideri → 647 Reeskont Faiz Gelirleri",
       "B": "İzleyen dönem reeskont iptali (gelir) → 657 Reeskont Faiz Giderleri",
-      "C": "Dönem sonu reeskont gideri → 657 Reeskont Faiz Giderleri; izleyen dönem iptali → 647 Reeskont Faiz Gelirleri",
+      "C": "Reeskont tutarı → 129 Şüpheli Ticari Alacaklar Karşılığı",
       "D": "Reeskont tutarı → 780 Finansman Giderleri",
-      "E": "Reeskont tutarı → 129 Şüpheli Ticari Alacaklar Karşılığı"
+      "E": "Dönem sonu reeskont gideri → 657 Reeskont Faiz Giderleri; izleyen dönem iptali → 647 Reeskont Faiz Gelirleri"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Dönem sonunda reeskont **gider** (657 Reeskont Faiz Giderleri), izleyen dönemde iptali **gelir** (647 Reeskont Faiz Gelirleri) olarak kaydedilir; karşı hesap her ikisinde 122'dir.",
     "source": {
       "kind": "generated",
@@ -578,12 +578,12 @@
     "stem": "Dönem sonunda alacak senetlerine reeskont uygulanmasının cari dönem kârına etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Cari dönem kârını artırır.",
-      "B": "Cari dönem kârını azaltır (gider yazıldığı için).",
-      "C": "Cari dönem kârını etkilemez.",
+      "B": "Cari dönem kârını etkilemez.",
+      "C": "Cari dönem kârını azaltır (gider yazıldığı için).",
       "D": "Yalnızca KDV'yi etkiler.",
       "E": "Sermayeyi doğrudan artırır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Alacak senetleri reeskontu **657 Reeskont Faiz Giderleri** ile gider yazıldığından cari dönem kârını **azaltır**. İzleyen dönemde iptali (647) o dönemin gelirini artırır.",
     "source": {
       "kind": "generated",
@@ -599,13 +599,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Vergi Usul Kanunu'na göre bir ticari alacağın 'şüpheli alacak' sayılıp karşılık ayrılabilmesi için aşağıdaki koşullardan hangisi gerekli değildir?",
     "options": {
-      "A": "Alacağın ticari veya zirai kazancın elde edilmesiyle ilgili olması",
+      "A": "Borçlunun kesin olarak iflas etmiş ve tüm alacağın tahsilinin imkânsız hâle gelmiş olması",
       "B": "Alacağın dava veya icra safhasında olması ya da protesto edilmiş/yazıyla birden fazla istenmiş olması",
       "C": "Alacağın teminatsız (teminata bağlanmamış) kısmının bulunması",
-      "D": "Borçlunun kesin olarak iflas etmiş ve tüm alacağın tahsilinin imkânsız hâle gelmiş olması",
+      "D": "Alacağın ticari veya zirai kazancın elde edilmesiyle ilgili olması",
       "E": "Alacağın belirli (tahakkuk etmiş) bir alacak olması"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "Şüpheli alacakta tahsilin **kesin imkânsızlığı aranmaz** — henüz belirsizlik/şüphe yeterlidir (dava/icra safhası vb.). Kesin olarak tahsili imkânsız hâle gelen alacak ise 'değersiz alacak'tır (VUK 322).",
     "source": {
       "kind": "generated",
@@ -621,13 +621,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletmenin 120 Alıcılar hesabında izlenen 24.000 ₺'lik (KDV dâhil) alacağı, borçlu hakkında icra takibi başlatılmasıyla şüpheli hâle gelmiştir. Alacağın şüpheli hesaba alınmasına ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "128 Şüpheli Ticari Alacaklar (B) 24.000 / 120 Alıcılar (A) 24.000",
-      "B": "654 Karşılık Giderleri (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
+      "A": "654 Karşılık Giderleri (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
+      "B": "128 Şüpheli Ticari Alacaklar (B) 24.000 / 120 Alıcılar (A) 24.000",
       "C": "120 Alıcılar (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
       "D": "689 Diğer Olağandışı Gider (B) 24.000 / 120 Alıcılar (A) 24.000",
       "E": "128 Şüpheli Ticari Alacaklar (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Alacak önce şüpheli hesaba alınır: **128 Şüpheli Ticari Alacaklar (B) 24.000 / 120 Alıcılar (A) 24.000**. Karşılık ayırma (654/129) bundan sonraki ayrı bir kayıttır.",
     "source": {
       "kind": "generated",
@@ -665,13 +665,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Daha önce şüpheli hâle gelip '128 Şüpheli Ticari Alacaklar'da izlenen ve tamamına karşılık ayrılan 24.000 ₺'lik alacak, beklenmedik biçimde borçlusundan nakden tahsil edilmiştir. Bu tahsilata ilişkin (alacağın kapatılması) kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
+      "A": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 100 Kasa (A) 24.000",
       "B": "128 Şüpheli Ticari Alacaklar (B) 24.000 / 100 Kasa (A) 24.000",
       "C": "100 Kasa (B) 24.000 / 120 Alıcılar (A) 24.000",
-      "D": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 100 Kasa (A) 24.000",
+      "D": "100 Kasa (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
       "E": "100 Kasa (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Tahsilatla şüpheli alacak kapanır: **100 Kasa (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000**. Ayrıca konusu kalmayan karşılık, ayrı bir kayıtla (129 / 644) gelir yazılarak iptal edilir.",
     "source": {
       "kind": "generated",
@@ -687,13 +687,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Şüpheli alacağın tahsil edilmesi üzerine, daha önce ayrılan ve artık konusu kalmayan 24.000 ₺'lik karşılığın iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000",
+      "A": "100 Kasa (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
       "B": "644 Konusu Kalmayan Karşılıklar (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
       "C": "654 Karşılık Giderleri (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
       "D": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
-      "E": "100 Kasa (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000"
+      "E": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Tahsil nedeniyle karşılığın konusu kalmaz; gelir yazılarak iptal edilir: **129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000**. 644 bir gelir hesabıdır.",
     "source": {
       "kind": "generated",
@@ -709,13 +709,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Şüpheli hâle gelip tamamına 24.000 ₺ karşılık ayrılan bir alacağın, sonunda tahsilinin kesin olarak imkânsız (değersiz) hâle geldiği anlaşılmıştır. Daha önce ayrılan karşılığın kullanılarak alacağın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
+      "A": "654 Karşılık Giderleri (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
       "B": "128 Şüpheli Ticari Alacaklar (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
-      "C": "654 Karşılık Giderleri (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
+      "C": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
       "D": "644 Konusu Kalmayan Karşılıklar (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
       "E": "689 Diğer Olağandışı Gider (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Karşılık daha önce ayrıldığından, alacak değersizleşince karşılık **kullanılır**: **129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000**. Böylece hem şüpheli alacak hem karşılık kapanır; ek gider yazılmaz.",
     "source": {
       "kind": "generated",
@@ -732,12 +732,12 @@
     "stem": "Vergi Usul Kanunu'na göre 'değersiz alacak' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Dava veya icra safhasında olan alacaktır.",
-      "B": "Kazai bir hükme veya kanaat verici bir vesikaya göre tahsiline artık imkân kalmayan alacaktır.",
+      "B": "Peşin tahsil edilen alacaktır.",
       "C": "Vadesi henüz gelmemiş senetli alacaktır.",
       "D": "İşletmenin ortaklarına olan borcudur.",
-      "E": "Peşin tahsil edilen alacaktır."
+      "E": "Kazai bir hükme veya kanaat verici bir vesikaya göre tahsiline artık imkân kalmayan alacaktır."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Değersiz alacak** (VUK 322), kazai bir hükme veya kanaat verici bir vesikaya göre **tahsiline artık imkân kalmayan** alacaktır; değersizleştiği dönemde zarar yazılır. Dava/icra safhasındaki alacak ise 'şüpheli' alacaktır.",
     "source": {
       "kind": "generated",
@@ -798,12 +798,12 @@
     "stem": "Nominal değeri 300.000 ₺, vadesine 80 gün kalan bir alacak senedi için yıllık %50 faiz oranıyla iç iskonto yöntemine göre reeskont tutarı kaç ₺'dir?\n\n(Reeskont = Nominal × Faiz × Gün ÷ [36.000 + (Faiz × Gün)])",
     "options": {
       "A": "27.000",
-      "B": "30.000",
+      "B": "33.000",
       "C": "36.000",
-      "D": "33.000",
+      "D": "30.000",
       "E": "13.500"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Faiz × Gün = 50 × 80 = 4.000. Reeskont = 300.000 × 4.000 ÷ (36.000 + 4.000) = 300.000 × 4.000 ÷ 40.000 = 300.000 × 0,1 = **30.000 ₺**. Peşin değer = 270.000 ₺.",
     "source": {
       "kind": "generated",
@@ -819,13 +819,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletmenin dava/icra safhasına gelmeksizin sadece bir kez sözlü olarak istediği, ancak henüz protesto edilmemiş veya yazıyla birden fazla istenmemiş bir alacağı için şüpheli alacak karşılığı ayırması aşağıdakilerden hangisi bakımından uygun değildir?",
     "options": {
-      "A": "Vergi Usul Kanunu'ndaki şüpheli alacak koşullarının henüz oluşmamış olması",
-      "B": "Alacağın ticari nitelikte olmaması",
+      "A": "Alacağın ticari nitelikte olmaması",
+      "B": "Vergi Usul Kanunu'ndaki şüpheli alacak koşullarının henüz oluşmamış olması",
       "C": "Alacağın peşin tahsil edilmiş olması",
       "D": "Alacağın bir duran varlık olması",
       "E": "Alacağın ortaklardan olması"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "VUK'a göre şüpheli alacak için ya **dava/icra safhası** ya da **protesto/yazıyla birden fazla isteme** koşulu aranır. Sadece bir kez sözlü isteme bu koşulları karşılamaz; bu nedenle karşılık ayrılması uygun değildir.",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "'654 Karşılık Giderleri' hesabı, gelir tablosunda hangi bölümde raporlanır?",
     "options": {
       "A": "Brüt satış kârı içinde",
-      "B": "Diğer Faaliyetlerden Olağan Gider ve Zararlar bölümünde",
+      "B": "Olağandışı gelir ve kârlar bölümünde",
       "C": "Satışların maliyeti satırında",
       "D": "Finansman giderleri bölümünde",
-      "E": "Olağandışı gelir ve kârlar bölümünde"
+      "E": "Diğer Faaliyetlerden Olağan Gider ve Zararlar bölümünde"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**654 Karşılık Giderleri** (şüpheli alacak, stok değer düşüklüğü vb. karşılıkları), gelir tablosunda **Diğer Faaliyetlerden Olağan Gider ve Zararlar** bölümünde raporlanır.",
     "source": {
       "kind": "generated",
@@ -864,12 +864,12 @@
     "stem": "Şüpheli hâle gelen bir ticari alacak için karşılık ayrılmasının hangi temel muhasebe kavramıyla ilişkili olduğu söylenebilir?",
     "options": {
       "A": "Maliyet Esası",
-      "B": "İhtiyatlılık",
+      "B": "Kişilik",
       "C": "Parayla Ölçülme",
-      "D": "Kişilik",
+      "D": "İhtiyatlılık",
       "E": "Sosyal Sorumluluk"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Muhtemel bir zararın (tahsil edilemeyebilecek alacağın) önceden gider yazılması **İhtiyatlılık Kavramı**nın gereğidir; bu, kâr ve varlıkların olduğundan yüksek gösterilmesini engeller.",
     "source": {
       "kind": "generated",
@@ -885,13 +885,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, 40.000 ₺ + %20 KDV tutarındaki malı, karşılığında alıcıdan senet alarak (senetli) satmıştır. Bu satışın kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "121 Alacak Senetleri (B) 48.000 / 600 Yurt İçi Satışlar (A) 40.000 + 391 Hesaplanan KDV (A) 8.000",
+      "A": "121 Alacak Senetleri (B) 40.000 / 600 Yurt İçi Satışlar (A) 40.000",
       "B": "120 Alıcılar (B) 48.000 / 600 Yurt İçi Satışlar (A) 40.000 + 391 Hesaplanan KDV (A) 8.000",
-      "C": "121 Alacak Senetleri (B) 40.000 / 600 Yurt İçi Satışlar (A) 40.000",
+      "C": "121 Alacak Senetleri (B) 48.000 / 600 Yurt İçi Satışlar (A) 40.000 + 391 Hesaplanan KDV (A) 8.000",
       "D": "600 Yurt İçi Satışlar (B) 48.000 / 121 Alacak Senetleri (A) 48.000",
       "E": "121 Alacak Senetleri (B) 48.000 / 600 Yurt İçi Satışlar (A) 48.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Senet karşılığı satışta senetli alacak KDV dâhil doğar: **121 Alacak Senetleri (B) 48.000** (40.000 + %20 KDV 8.000) / 600 Yurt İçi Satışlar (A) 40.000 + 391 Hesaplanan KDV (A) 8.000.",
     "source": {
       "kind": "generated",
@@ -929,13 +929,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Reeskont uygulaması ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Reeskont, vadesi gelmiş senetlere uygulanır.",
-      "B": "Reeskont, yalnızca senede bağlı ve vadesi gelecek döneme sarkan (vadeli) alacak/borçlara uygulanır.",
+      "A": "Reeskont, yalnızca senede bağlı ve vadesi gelecek döneme sarkan (vadeli) alacak/borçlara uygulanır.",
+      "B": "Reeskont, vadesi gelmiş senetlere uygulanır.",
       "C": "Reeskont, kasadaki nakde uygulanır.",
       "D": "Reeskont, peşin satışlara uygulanır.",
       "E": "Reeskont, duran varlıklara amortisman gibi uygulanır."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Reeskont, **senede bağlı** ve vadesi izleyen döneme sarkan (henüz vadesi gelmemiş) alacak ve borç senetlerine uygulanır; içerdikleri vade farkı ayrıştırılır. Vadesiz alacaklara/nakde uygulanmaz.",
     "source": {
       "kind": "generated",
@@ -953,11 +953,11 @@
     "options": {
       "A": "43.200",
       "B": "48.000",
-      "C": "40.000",
+      "C": "20.000",
       "D": "36.000",
-      "E": "20.000"
+      "E": "40.000"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Faiz × Gün = 36 × 200 = 7.200. Reeskont = 240.000 × 7.200 ÷ (36.000 + 7.200) = 240.000 × 7.200 ÷ 43.200 = 240.000 ÷ 6 = **40.000 ₺**. Peşin değer = 200.000 ₺.",
     "source": {
       "kind": "generated",
@@ -973,13 +973,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Vergi Usul Kanunu'na göre teminata (rehin, ipotek vb.) bağlanmış bir ticari alacak için şüpheli alacak karşılığı nasıl ayrılır?",
     "options": {
-      "A": "Alacağın tamamı için karşılık ayrılır.",
+      "A": "Karşılık, yalnızca alacağın teminatla karşılanamayan (açık) kısmı için ayrılabilir.",
       "B": "Teminatlı alacaklar için hiçbir şekilde karşılık ayrılamaz.",
-      "C": "Karşılık, yalnızca alacağın teminatla karşılanamayan (açık) kısmı için ayrılabilir.",
+      "C": "Alacağın tamamı için karşılık ayrılır.",
       "D": "Karşılık, teminat tutarı kadar ayrılır.",
       "E": "Teminatlı alacaklar için karşılık iki katı ayrılır."
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Teminata bağlı alacaklarda karşılık, alacağın **teminatla karşılanamayan (açık) kısmı** için ayrılabilir; teminatlı kısım tahsil güvencesi altında sayıldığından o kısma karşılık ayrılmaz.",
     "source": {
       "kind": "generated",
@@ -996,12 +996,12 @@
     "stem": "Bir işletmenin şüpheli hâle gelen alacağı için ayıracağı karşılık tutarı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Karşılık, alacağın yalnızca KDV hariç kısmı üzerinden ayrılır.",
-      "B": "Karşılık, tahsil edilemeyen alacağın (KDV dâhil) değeri üzerinden ayrılabilir.",
+      "B": "Karşılık, yalnızca senetli alacaklar için ayrılabilir.",
       "C": "Karşılık, alacağın iki katı üzerinden ayrılır.",
-      "D": "Karşılık, yalnızca senetli alacaklar için ayrılabilir.",
+      "D": "Karşılık, tahsil edilemeyen alacağın (KDV dâhil) değeri üzerinden ayrılabilir.",
       "E": "Karşılık, satış hasılatı üzerinden ayrılır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Tahsil edilemeyen alacak **KDV dâhil** tutardır (müşteri KDV dâhil borçludur); bu nedenle şüpheli alacak karşılığı KDV dâhil değer üzerinden ayrılabilir.",
     "source": {
       "kind": "generated",
@@ -1039,13 +1039,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletmenin elindeki 60.000 ₺'lik alacak senedinin, borçlunun talebiyle vadesi uzatılarak yeni bir senetle değiştirilmesi işleminde (faizsiz varsayımıyla) aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Eski senet (121) alacaklandırılıp yeni senet (121) borçlandırılarak senet yenilenir; alacak tutarı değişmez.",
-      "B": "İşlem sonucu 600 Yurt İçi Satışlar 60.000 ₺ alacaklandırılır.",
+      "A": "İşlem sonucu 600 Yurt İçi Satışlar 60.000 ₺ alacaklandırılır.",
+      "B": "Eski senet (121) alacaklandırılıp yeni senet (121) borçlandırılarak senet yenilenir; alacak tutarı değişmez.",
       "C": "İşlem 100 Kasa'yı 60.000 ₺ borçlandırır.",
       "D": "Eski senet doğrudan gider yazılır.",
       "E": "İşlem 320 Satıcılar'ı ilgilendirir."
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Senet yenilemede (faizsiz) eski senet çıkar, yeni senet girer: **121 (yeni) borç / 121 (eski) alacak**; alacağın senetli niteliği ve tutarı korunur. (Faiz eklenirse ayrıca faiz geliri kaydedilir.)",
     "source": {
       "kind": "generated",
@@ -1106,12 +1106,12 @@
     "stem": "İşletmenin, esas faaliyeti dışındaki bir işlemden doğan ve personelinden olan (ticari olmayan) senetsiz alacağı hangi hesapta izlenir?",
     "options": {
       "A": "120 Alıcılar",
-      "B": "135 Personelden Alacaklar",
+      "B": "128 Şüpheli Ticari Alacaklar",
       "C": "121 Alacak Senetleri",
-      "D": "128 Şüpheli Ticari Alacaklar",
+      "D": "135 Personelden Alacaklar",
       "E": "320 Satıcılar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Personelden olan ticari olmayan alacaklar **135 Personelden Alacaklar** (13 Diğer Alacaklar grubu) hesabında izlenir; 120 Alıcılar esas faaliyetten (satıştan) doğan ticari alacaklar içindir.",
     "source": {
       "kind": "generated",
@@ -1128,12 +1128,12 @@
     "stem": "Alacak senetleri reeskontunun temel muhasebe kavramlarıyla ilişkisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Yalnızca Kişilik kavramıyla ilgilidir.",
-      "B": "Dönemsellik ve İhtiyatlılık kavramlarıyla ilgilidir; vade farkı ilgili döneme yansıtılır ve alacak olduğundan yüksek gösterilmez.",
+      "B": "Yalnızca Parayla Ölçülme kavramıyla ilgilidir.",
       "C": "Yalnızca Sosyal Sorumluluk kavramıyla ilgilidir.",
       "D": "Hiçbir temel kavramla ilgisi yoktur.",
-      "E": "Yalnızca Parayla Ölçülme kavramıyla ilgilidir."
+      "E": "Dönemsellik ve İhtiyatlılık kavramlarıyla ilgilidir; vade farkı ilgili döneme yansıtılır ve alacak olduğundan yüksek gösterilmez."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Reeskont, senetteki vade farkını ait olduğu döneme yansıttığından **Dönemsellik**le; alacağı peşin değerine indirip olduğundan yüksek göstermediğinden **İhtiyatlılık**la ilişkilidir.",
     "source": {
       "kind": "generated",
@@ -1194,12 +1194,12 @@
     "stem": "Vadeli (kredili) bir mal satışında satış bedeline eklenen vade farkının, satışın finansman unsuru olarak ayrıştırılıp değerlendirilmesi öncelikle hangi kavramla ilişkilendirilir?",
     "options": {
       "A": "Kişilik",
-      "B": "Özün Önceliği",
+      "B": "Parayla Ölçülme",
       "C": "Sosyal Sorumluluk",
-      "D": "Parayla Ölçülme",
+      "D": "Özün Önceliği",
       "E": "Süreklilik"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Vadeli satıştaki vade farkı biçimen satış bedeline dâhil görünse de özü itibarıyla bir **finansman** unsurudur; bunun ayrıştırılıp buna göre değerlendirilmesi **Özün Önceliği** kavramıyla ilişkilidir.",
     "source": {
       "kind": "generated",
@@ -1216,12 +1216,12 @@
     "stem": "Senetli ticari alacak (121 Alacak Senetleri) ile senetsiz ticari alacak (120 Alıcılar) arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
       "A": "121 bir kaynak, 120 bir varlık hesabıdır.",
-      "B": "Her ikisi de ticari alacaktır; 121 kıymetli evraka (senede) bağlanmış, 120 ise senede bağlanmamış alacağı izler.",
-      "C": "120 duran varlık, 121 dönen varlıktır.",
+      "B": "120 duran varlık, 121 dönen varlıktır.",
+      "C": "Her ikisi de ticari alacaktır; 121 kıymetli evraka (senede) bağlanmış, 120 ise senede bağlanmamış alacağı izler.",
       "D": "121 gelir tablosu, 120 bilanço hesabıdır.",
       "E": "İkisi arasında hiçbir fark yoktur."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Her ikisi de ticari alacaktır (aktif). Fark, alacağın **senede (kıymetli evraka) bağlanıp bağlanmamasıdır**: 121 senetli, 120 senetsiz alacağı izler. Senetli alacak ciro/iskonto gibi işlemlere elverişlidir.",
     "source": {
       "kind": "generated",
@@ -1237,13 +1237,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Karşılık ayrılmamış bir alacağın değersiz hâle gelmesi durumunda, doğrudan zarar yazılması işletmenin dönem sonucunu nasıl etkiler?",
     "options": {
-      "A": "Dönem kârını artırır.",
-      "B": "Dönem kârını azaltır (gider/zarar yazıldığı için).",
+      "A": "Dönem kârını azaltır (gider/zarar yazıldığı için).",
+      "B": "Dönem kârını artırır.",
       "C": "Dönem sonucunu etkilemez.",
       "D": "Yalnızca KDV'yi artırır.",
       "E": "Sermayeyi doğrudan artırır."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Karşılık ayrılmamış değersiz alacak doğrudan **gider/zarar** (689) yazıldığından dönem kârını **azaltır**. (Karşılık daha önce ayrılmış olsaydı, zarar önceki dönemde tahakkuk etmiş olurdu.)",
     "source": {
       "kind": "generated",
@@ -1259,13 +1259,13 @@
     "konu": "ticari_alacaklar",
     "stem": "İşletme, alıcısından olan 12.000 ₺'lik senetsiz alacağını, alıcının işletmeye keşide ettiği bir çekle tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "101 Alınan Çekler (B) 12.000 / 120 Alıcılar (A) 12.000",
-      "B": "120 Alıcılar (B) 12.000 / 101 Alınan Çekler (A) 12.000",
+      "A": "120 Alıcılar (B) 12.000 / 101 Alınan Çekler (A) 12.000",
+      "B": "101 Alınan Çekler (B) 12.000 / 120 Alıcılar (A) 12.000",
       "C": "121 Alacak Senetleri (B) 12.000 / 120 Alıcılar (A) 12.000",
       "D": "100 Kasa (B) 12.000 / 120 Alıcılar (A) 12.000",
       "E": "103 Verilen Çekler ve Ödeme Emirleri (B) 12.000 / 120 Alıcılar (A) 12.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Alınan çek 101 Alınan Çekler'e (hazır değer) girer, senetsiz alacak kapanır: **101 Alınan Çekler (B) 12.000 / 120 Alıcılar (A) 12.000**. Çek senet değildir; 121 kullanılmaz.",
     "source": {
       "kind": "generated",
@@ -1303,13 +1303,13 @@
     "konu": "ticari_alacaklar",
     "stem": "Bir işletmenin dönem sonu itibarıyla 120 Alıcılar 400.000 ₺, 121 Alacak Senetleri 300.000 ₺, 122 Alacak Senetleri Reeskontu 30.000 ₺, 128 Şüpheli Ticari Alacaklar 50.000 ₺ ve 129 Şüpheli Ticari Alacaklar Karşılığı 50.000 ₺'dir. Bu verilere göre kısa vadeli ticari alacakların bilançodaki net tutarı kaç ₺'dir?",
     "options": {
-      "A": "670.000",
+      "A": "630.000",
       "B": "700.000",
       "C": "720.000",
       "D": "780.000",
-      "E": "630.000"
+      "E": "670.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Net ticari alacaklar = 120 (400.000) + 121 (300.000) − 122 (30.000) + 128 (50.000) − 129 (50.000) = 400.000 + 300.000 − 30.000 + 0 = **670.000 ₺**. Düzenleyici hesaplar (122, 129) düşülür.",
     "source": {
       "kind": "generated",

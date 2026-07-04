@@ -6,12 +6,12 @@
     "stem": "Tekdüzen Hesap Planı'nda '10 Hazır Değerler' grubu ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
       "A": "Duran varlıklar içinde yer alır.",
-      "B": "İşletmenin en likit varlıklarını (nakit ve nakde kolayca dönüşebilen değerleri) kapsar ve bilançoda dönen varlıkların başında yer alır.",
-      "C": "Yalnızca banka kredilerini izler.",
+      "B": "Yalnızca banka kredilerini izler.",
+      "C": "İşletmenin en likit varlıklarını (nakit ve nakde kolayca dönüşebilen değerleri) kapsar ve bilançoda dönen varlıkların başında yer alır.",
       "D": "Kaynak (pasif) niteliğindedir.",
       "E": "Yalnızca yabancı para mevcudunu gösterir."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**Hazır Değerler**, nakit ve istendiğinde değer kaybı olmadan paraya çevrilebilecek varlıkları (kasa, banka, alınan çekler vb.) kapsar; bilançoda **dönen varlıkların en başında**, en likit kalemler olarak yer alır.",
     "source": {
       "kind": "generated",
@@ -71,13 +71,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin kasasında 2.000 USD bulunmakta olup bu tutar kayıtlara 30 ₺/USD kurundan alınmıştır. Dönem sonu değerleme günündeki kur 33 ₺/USD'dir.\n\nBuna göre yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
-      "B": "656 Kambiyo Zararları (B) 6.000 / 100 Kasa (A) 6.000",
+      "A": "656 Kambiyo Zararları (B) 6.000 / 100 Kasa (A) 6.000",
+      "B": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
       "C": "100 Kasa (B) 66.000 / 646 Kambiyo Kârları (A) 66.000",
       "D": "100 Kasa (B) 3.000 / 642 Faiz Gelirleri (A) 3.000",
       "E": "646 Kambiyo Kârları (B) 6.000 / 100 Kasa (A) 6.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Kur farkı = 2.000 × (33 − 30) = 2.000 × 3 = **6.000 ₺** lehte. Yabancı para kasası değer kazandığından **100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000** kaydı yapılır.",
     "source": {
       "kind": "generated",
@@ -95,11 +95,11 @@
     "options": {
       "A": "Müşteriden çek alınması",
       "B": "İşletmenin satıcısına çek vermesi",
-      "C": "Daha önce alınan çekin bankada tahsil edilmesi",
-      "D": "Bankadan kredi kullanılması",
+      "C": "Bankadan kredi kullanılması",
+      "D": "Daha önce alınan çekin bankada tahsil edilmesi",
       "E": "Kasadan bankaya para yatırılması"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Banka mevduatının artması (102 borç) ve elde tutulan çek varlığının azalması (101 alacak), daha önce **alınan çekin bankada tahsil edilmesi**ni gösterir. Çek alınırken 101 borçlanırdı; tahsilde ters yönde kapanır.",
     "source": {
       "kind": "generated",
@@ -115,13 +115,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, satıcısına olan borcunu ödemek için kendi çekini düzenleyip vermiştir. Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "101 Alınan Çekler hesabı alacaklandırılır.",
-      "B": "103 Verilen Çekler ve Ödeme Emirleri (-) hesabı alacaklandırılır.",
+      "A": "103 Verilen Çekler ve Ödeme Emirleri (-) hesabı alacaklandırılır.",
+      "B": "101 Alınan Çekler hesabı alacaklandırılır.",
       "C": "100 Kasa hesabı alacaklandırılır.",
       "D": "102 Bankalar hesabı doğrudan alacaklandırılır.",
       "E": "320 Satıcılar hesabı alacaklandırılır."
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "İşletmenin düzenleyip verdiği çekler **103 Verilen Çekler ve Ödeme Emirleri (-)** hesabında izlenir. Çek verildiğinde: 320 Satıcılar (B) / **103 (A)**. Çek bankadan ödendiğinde 103 borçlanır, 102 Bankalar alacaklanır.",
     "source": {
       "kind": "generated",
@@ -160,12 +160,12 @@
     "stem": "İşletmenin kasasında 5.000 USD bulunmakta olup bu tutar 34 ₺/USD kurundan kayıtlıdır. Dönem sonu değerleme kuru 31 ₺/USD'ye gerilemiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
       "A": "100 Kasa (B) 15.000 / 646 Kambiyo Kârları (A) 15.000",
-      "B": "656 Kambiyo Zararları (B) 15.000 / 100 Kasa (A) 15.000",
+      "B": "100 Kasa (B) 15.000 / 656 Kambiyo Zararları (A) 15.000",
       "C": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000",
-      "D": "100 Kasa (B) 15.000 / 656 Kambiyo Zararları (A) 15.000",
+      "D": "656 Kambiyo Zararları (B) 15.000 / 100 Kasa (A) 15.000",
       "E": "780 Finansman Giderleri (B) 15.000 / 100 Kasa (A) 15.000"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Kur farkı = 5.000 × (34 − 31) = 5.000 × 3 = **15.000 ₺** aleyhte. Yabancı para kasası değer kaybettiğinden **656 Kambiyo Zararları (B) 15.000 / 100 Kasa (A) 15.000** kaydı yapılır.",
     "source": {
       "kind": "generated",
@@ -181,13 +181,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme kasasındaki 15.000 ₺'yi bankadaki mevduat hesabına yatırmıştır. Bu işlemin bilanço büyüklüğüne etkisi ve kaydı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "102 Bankalar borçlandırılır, 100 Kasa alacaklandırılır; aktif toplamı değişmez.",
+      "A": "İşlem yalnızca nazım hesaplarda izlenir.",
       "B": "100 Kasa borçlandırılır, 102 Bankalar alacaklandırılır; aktif toplamı artar.",
       "C": "102 Bankalar borçlandırılır, 600 Yurt İçi Satışlar alacaklandırılır.",
       "D": "300 Banka Kredileri alacaklandırılır; pasif artar.",
-      "E": "İşlem yalnızca nazım hesaplarda izlenir."
+      "E": "102 Bankalar borçlandırılır, 100 Kasa alacaklandırılır; aktif toplamı değişmez."
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Banka mevduatı artar → **102 Bankalar (B)**; kasa azalır → **100 Kasa (A)**. İki aktif hesap arası aktarımda **aktif toplamı değişmez**, yalnızca bileşim değişir.",
     "source": {
       "kind": "generated",
@@ -203,13 +203,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin bankadaki vadeli mevduatına dönem içinde 3.000 ₺ faiz tahakkuk edip hesaba geçmiştir (stopaj ihmal edilecektir). Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "642 Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır.",
+      "A": "646 Kambiyo Kârları hesabı 3.000 ₺ alacaklandırılır.",
       "B": "660 Kısa Vadeli Borçlanma Giderleri hesabı 3.000 ₺ borçlandırılır.",
-      "C": "646 Kambiyo Kârları hesabı 3.000 ₺ alacaklandırılır.",
+      "C": "642 Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır.",
       "D": "600 Yurt İçi Satışlar hesabı 3.000 ₺ alacaklandırılır.",
       "E": "102 Bankalar hesabı 3.000 ₺ alacaklandırılır."
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Mevduat faizi olağan bir finansal gelirdir: **102 Bankalar (B) 3.000 / 642 Faiz Gelirleri (A) 3.000**. Dolayısıyla 642 Faiz Gelirleri alacaklandırılır.",
     "source": {
       "kind": "generated",
@@ -226,12 +226,12 @@
     "stem": "Vergi Usul Kanunu'na göre değerleme ölçüleri ile ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
     "options": {
       "A": "Kasadaki Türk Lirası → borsa rayici",
-      "B": "Kasadaki yabancı paralar → itibari (nominal) değer",
-      "C": "Kasadaki Türk Lirası → itibari (nominal) değer; yabancı paralar → borsa rayici/Maliye Bakanlığı kuru",
+      "B": "Kasadaki Türk Lirası → itibari (nominal) değer; yabancı paralar → borsa rayici/Maliye Bakanlığı kuru",
+      "C": "Kasadaki yabancı paralar → itibari (nominal) değer",
       "D": "Kasadaki Türk Lirası → maliyet bedeli; yabancı paralar → emsal bedel",
       "E": "Kasadaki yabancı paralar → tasfiye değeri"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "VUK'a göre Türk Lirası kasa mevcudu **itibari (nominal) değer** (md. 284) ile; yabancı paralar **borsa rayici**, yoksa **Maliye Bakanlığı'nca tespit edilen kur** (md. 280) ile değerlenir.",
     "source": {
       "kind": "generated",
@@ -247,13 +247,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme daha önce satıcısına verdiği 8.000 ₺'lik çek, satıcı tarafından bankaya ibraz edilerek işletmenin banka hesabından ödenmiştir.\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "102 Bankalar (B) 8.000 / 103 Verilen Çekler ve Ödeme Emirleri (A) 8.000",
-      "B": "103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000",
+      "A": "103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000",
+      "B": "102 Bankalar (B) 8.000 / 103 Verilen Çekler ve Ödeme Emirleri (A) 8.000",
       "C": "320 Satıcılar (B) 8.000 / 102 Bankalar (A) 8.000",
       "D": "101 Alınan Çekler (B) 8.000 / 100 Kasa (A) 8.000",
       "E": "103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 320 Satıcılar (A) 8.000"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Çek verildiğinde 103 alacaklanmıştı. Çek bankadan **ödenince** düzenleyici hesap kapatılır: **103 Verilen Çekler ve Ödeme Emirleri (B) 8.000 / 102 Bankalar (A) 8.000**; banka mevduatı azalır.",
     "source": {
       "kind": "generated",
@@ -270,12 +270,12 @@
     "stem": "Aşağıdakilerden hangisi '108 Diğer Hazır Değerler' hesabında izlenmeye en uygun kalemdir?",
     "options": {
       "A": "İşletmenin kasasındaki nakit TL",
-      "B": "Vadesi gelmiş kuponlar ile bankaca tahsil için gönderilmiş posta/banka havaleleri",
+      "B": "Ortaklardan alacaklar",
       "C": "Satıcılara olan borçlar",
-      "D": "Ortaklardan alacaklar",
+      "D": "Vadesi gelmiş kuponlar ile bankaca tahsil için gönderilmiş posta/banka havaleleri",
       "E": "Stoktaki ticari mallar"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**108 Diğer Hazır Değerler**, niteliği itibarıyla hazır değer sayılan ancak 100-103 hesaplarına girmeyen kalemleri (vadesi gelmiş kuponlar, tahsile gönderilen havaleler vb.) izler.",
     "source": {
       "kind": "generated",
@@ -313,13 +313,13 @@
     "konu": "hazir_degerler",
     "stem": "Kasa sayımında fiili mevcut, kayıtlı mevcuttan 800 ₺ fazla çıkmış ve nedeni belirlenememiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 800 / 397 Sayım ve Tesellüm Fazlaları (A) 800",
+      "A": "100 Kasa (B) 800 / 679 Diğer Olağandışı Gelir (A) 800",
       "B": "197 Sayım ve Tesellüm Noksanları (B) 800 / 100 Kasa (A) 800",
-      "C": "100 Kasa (B) 800 / 679 Diğer Olağandışı Gelir (A) 800",
+      "C": "100 Kasa (B) 800 / 397 Sayım ve Tesellüm Fazlaları (A) 800",
       "D": "397 Sayım ve Tesellüm Fazlaları (B) 800 / 100 Kasa (A) 800",
       "E": "100 Kasa (B) 800 / 642 Faiz Gelirleri (A) 800"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Kasa fazlasında Kasa borçlanır, nedeni bulunana kadar **397 Sayım ve Tesellüm Fazlaları** alacaklanır: **100 Kasa (B) 800 / 397 (A) 800**. Neden belirlenince 397 ilgili hesaba devredilir.",
     "source": {
       "kind": "generated",
@@ -358,12 +358,12 @@
     "stem": "İşletme, KDV hariç 50.000 ₺'lik ticari malı %20 KDV ile satın alıp bedelini nakit ödemiştir.\n\nBu işlemde Kasa hesabına yazılacak tutar ve tarafı aşağıdakilerden hangisidir?",
     "options": {
       "A": "50.000 ₺ alacak",
-      "B": "60.000 ₺ alacak",
+      "B": "50.000 ₺ borç",
       "C": "60.000 ₺ borç",
       "D": "10.000 ₺ alacak",
-      "E": "50.000 ₺ borç"
+      "E": "60.000 ₺ alacak"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Toplam ödenen = 50.000 + (50.000 × %20 = 10.000) = 60.000 ₺ nakit çıkışı → **Kasa (A) 60.000**. Kayıt: 153 Ticari Mallar (B) 50.000 + 191 İndirilecek KDV (B) 10.000 / 100 Kasa (A) 60.000.",
     "source": {
       "kind": "generated",
@@ -445,13 +445,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, satıcısına olan 40.000 ₺ borcunu banka havalesiyle ödemiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000",
-      "B": "102 Bankalar (B) 40.000 / 320 Satıcılar (A) 40.000",
+      "A": "102 Bankalar (B) 40.000 / 320 Satıcılar (A) 40.000",
+      "B": "320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000",
       "C": "320 Satıcılar (B) 40.000 / 100 Kasa (A) 40.000",
       "D": "102 Bankalar (B) 40.000 / 100 Kasa (A) 40.000",
       "E": "320 Satıcılar (B) 40.000 / 103 Verilen Çekler ve Ödeme Emirleri (A) 40.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Borç azalır → **320 Satıcılar (B)**; banka mevduatı (varlık) azalır → **102 Bankalar (A)**. Kayıt: 320 Satıcılar (B) 40.000 / 102 Bankalar (A) 40.000.",
     "source": {
       "kind": "generated",
@@ -468,12 +468,12 @@
     "stem": "İşletmenin müşterisi, senetsiz ticari borcuna karşılık 18.000 ₺'yi EFT ile işletmenin banka hesabına göndermiştir. Bu tahsilatın kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "120 Alıcılar (B) 18.000 / 102 Bankalar (A) 18.000",
-      "B": "102 Bankalar (B) 18.000 / 120 Alıcılar (A) 18.000",
-      "C": "102 Bankalar (B) 18.000 / 600 Yurt İçi Satışlar (A) 18.000",
+      "B": "102 Bankalar (B) 18.000 / 600 Yurt İçi Satışlar (A) 18.000",
+      "C": "102 Bankalar (B) 18.000 / 120 Alıcılar (A) 18.000",
       "D": "100 Kasa (B) 18.000 / 120 Alıcılar (A) 18.000",
       "E": "102 Bankalar (B) 18.000 / 121 Alacak Senetleri (A) 18.000"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Banka mevduatı artar → **102 Bankalar (B)**; alıcılardan alacak azalır → **120 Alıcılar (A)**. Kayıt: 102 Bankalar (B) 18.000 / 120 Alıcılar (A) 18.000.",
     "source": {
       "kind": "generated",
@@ -489,13 +489,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, 10.000 ₺ + %20 KDV tutarındaki malı kredi kartıyla satmıştır. Tutar henüz banka hesabına geçmemiş, kredi kartından alacak olarak izlenmektedir. Bu satışta borçlandırılacak hazır değer hesabı ve tutarı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "108 Diğer Hazır Değerler — 12.000 ₺",
+      "A": "120 Alıcılar — 12.000 ₺",
       "B": "100 Kasa — 12.000 ₺",
       "C": "102 Bankalar — 10.000 ₺",
       "D": "101 Alınan Çekler — 12.000 ₺",
-      "E": "120 Alıcılar — 12.000 ₺"
+      "E": "108 Diğer Hazır Değerler — 12.000 ₺"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Kredi kartı satışında tutar banka hesabına geçene kadar **108 Diğer Hazır Değerler (Kredi Kartından Alacaklar)** hesabında izlenir: 108 (B) 12.000 / 600 (A) 10.000 + 391 (A) 2.000. Banka ödeyince 102/108 çalışır.",
     "source": {
       "kind": "generated",
@@ -511,13 +511,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin kasasında 3.000 USD bulunmakta olup 30 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 34 ₺/USD'dir. Bu değerlemede oluşan kur farkı ve kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "12.000 ₺ lehte; 100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
+      "A": "102.000 ₺ lehte; 100 Kasa (B) 102.000 / 646 Kambiyo Kârları (A) 102.000",
       "B": "12.000 ₺ aleyhte; 656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000",
       "C": "4.000 ₺ lehte; 100 Kasa (B) 4.000 / 646 Kambiyo Kârları (A) 4.000",
-      "D": "102.000 ₺ lehte; 100 Kasa (B) 102.000 / 646 Kambiyo Kârları (A) 102.000",
+      "D": "12.000 ₺ lehte; 100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
       "E": "12.000 ₺ lehte; 100 Kasa (B) 12.000 / 642 Faiz Gelirleri (A) 12.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Kur farkı = 3.000 × (34 − 30) = **12.000 ₺ lehte**. Yabancı para kasası değer kazandığından: **100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000**.",
     "source": {
       "kind": "generated",
@@ -534,12 +534,12 @@
     "stem": "İşletmenin kasasında 4.000 USD bulunmakta olup 36 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 33 ₺/USD'ye gerilemiştir. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "100 Kasa (B) 12.000 / 646 Kambiyo Kârları (A) 12.000",
-      "B": "656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000",
+      "B": "780 Finansman Giderleri (B) 12.000 / 100 Kasa (A) 12.000",
       "C": "656 Kambiyo Zararları (B) 3.000 / 100 Kasa (A) 3.000",
       "D": "100 Kasa (B) 12.000 / 656 Kambiyo Zararları (A) 12.000",
-      "E": "780 Finansman Giderleri (B) 12.000 / 100 Kasa (A) 12.000"
+      "E": "656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Kur farkı = 4.000 × (36 − 33) = **12.000 ₺ aleyhte**. Yabancı para kasası değer kaybettiğinden: **656 Kambiyo Zararları (B) 12.000 / 100 Kasa (A) 12.000**.",
     "source": {
       "kind": "generated",
@@ -555,13 +555,13 @@
     "konu": "hazir_degerler",
     "stem": "Kasa sayımında belirlenen 2.000 ₺'lik noksanlığın, kasadan sorumlu veznedarın dikkatsizliğinden kaynaklandığı ve kendisinden tahsil edileceği tespit edilmiştir. Daha önce '197 Sayım ve Tesellüm Noksanları'nda izlenen bu tutarın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "135 Personelden Alacaklar (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
+      "A": "770 Genel Yönetim Giderleri (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
       "B": "197 Sayım ve Tesellüm Noksanları (B) 2.000 / 135 Personelden Alacaklar (A) 2.000",
-      "C": "770 Genel Yönetim Giderleri (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
+      "C": "135 Personelden Alacaklar (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
       "D": "100 Kasa (B) 2.000 / 197 Sayım ve Tesellüm Noksanları (A) 2.000",
       "E": "689 Diğer Olağandışı Gider (B) 2.000 / 135 Personelden Alacaklar (A) 2.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Noksanlık sorumluya yükleneceğinden ondan alacak doğar → **135 Personelden Alacaklar (B) 2.000**; geçici hesap kapatılır → **197 Sayım ve Tesellüm Noksanları (A) 2.000**.",
     "source": {
       "kind": "generated",
@@ -599,13 +599,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin bankası, hesap işletim ve havale masrafı olarak hesaptan 500 ₺ kesmiştir. Bu banka masrafının kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "653 Komisyon Giderleri (B) 500 / 102 Bankalar (A) 500",
-      "B": "102 Bankalar (B) 500 / 653 Komisyon Giderleri (A) 500",
+      "A": "102 Bankalar (B) 500 / 653 Komisyon Giderleri (A) 500",
+      "B": "653 Komisyon Giderleri (B) 500 / 102 Bankalar (A) 500",
       "C": "642 Faiz Gelirleri (B) 500 / 102 Bankalar (A) 500",
       "D": "102 Bankalar (B) 500 / 600 Yurt İçi Satışlar (A) 500",
       "E": "770 Genel Yönetim Giderleri (B) 500 / 100 Kasa (A) 500"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Banka masrafı/komisyonu bir olağan giderdir: **653 Komisyon Giderleri (B) 500 / 102 Bankalar (A) 500**. Banka mevduatı azalır.",
     "source": {
       "kind": "generated",
@@ -621,13 +621,13 @@
     "konu": "hazir_degerler",
     "stem": "Perakende satış yapan işletme, gün sonunda ödeme kaydedici cihaz (yazar kasa) raporuna göre 5.000 ₺ + %20 KDV tutarında nakit hasılat elde etmiştir. Bu günlük hasılatın kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000",
+      "A": "100 Kasa (B) 6.000 / 649 Diğer Olağan Gelir (A) 6.000",
       "B": "100 Kasa (B) 5.000 / 600 Yurt İçi Satışlar (A) 5.000",
       "C": "600 Yurt İçi Satışlar (B) 6.000 / 100 Kasa (A) 6.000",
       "D": "102 Bankalar (B) 6.000 / 600 Yurt İçi Satışlar (A) 6.000",
-      "E": "100 Kasa (B) 6.000 / 649 Diğer Olağan Gelir (A) 6.000"
+      "E": "100 Kasa (B) 6.000 / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Nakit hasılat kasaya girer: **100 Kasa (B) 6.000** (5.000 + %20 KDV 1.000) / 600 Yurt İçi Satışlar (A) 5.000 + 391 Hesaplanan KDV (A) 1.000.",
     "source": {
       "kind": "generated",
@@ -666,12 +666,12 @@
     "stem": "TMS 7 (Nakit Akış Tablosu) açısından 'nakit ve nakit benzerleri' ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Yalnızca kasadaki nakdi kapsar.",
-      "B": "Kasa, vadesiz banka mevduatı ve değeri kesine yakın, kısa vadeli, likit yatırımları kapsar.",
+      "B": "Ortaklardan alacakları kapsar.",
       "C": "Maddi duran varlıkları kapsar.",
-      "D": "Ortaklardan alacakları kapsar.",
+      "D": "Kasa, vadesiz banka mevduatı ve değeri kesine yakın, kısa vadeli, likit yatırımları kapsar.",
       "E": "Uzun vadeli tahvil yatırımlarını kapsar."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Nakit ve nakit benzerleri; **kasa, vadesiz mevduat** ve değeri belirli, kısa vadeli, kolayca nakde çevrilebilen **yüksek likiditeli yatırımları** kapsar. Uzun vadeli/riskli yatırımlar bu kapsama girmez.",
     "source": {
       "kind": "generated",
@@ -688,12 +688,12 @@
     "stem": "'135 Personelden Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Bir kaynak (pasif) hesabıdır, alacak kalanı verir.",
-      "B": "Bir dönen varlık (aktif) hesabıdır; personelden olan alacakları izler, borç kalanı verir.",
-      "C": "Bir gelir tablosu hesabıdır.",
+      "B": "Bir gelir tablosu hesabıdır.",
+      "C": "Bir dönen varlık (aktif) hesabıdır; personelden olan alacakları izler, borç kalanı verir.",
       "D": "Aktifi düzenleyici bir hesaptır, alacak kalanı verir.",
       "E": "Bir özkaynak hesabıdır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**135 Personelden Alacaklar**, işletmenin personelinden olan (avans dışı) alacaklarını izleyen bir **dönen varlık (aktif)** hesabıdır; normalde **borç kalanı** verir.",
     "source": {
       "kind": "generated",
@@ -731,13 +731,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin döviz cinsinden banka mevduatı bulunmaktadır: 2.000 EUR, 40 ₺/EUR kurundan kayıtlıdır. Değerleme günü kuru 43 ₺/EUR'dur. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "102 Bankalar (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
+      "A": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
       "B": "656 Kambiyo Zararları (B) 6.000 / 102 Bankalar (A) 6.000",
       "C": "102 Bankalar (B) 6.000 / 642 Faiz Gelirleri (A) 6.000",
-      "D": "100 Kasa (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
+      "D": "102 Bankalar (B) 6.000 / 646 Kambiyo Kârları (A) 6.000",
       "E": "102 Bankalar (B) 86.000 / 646 Kambiyo Kârları (A) 86.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Kur farkı = 2.000 × (43 − 40) = **6.000 ₺ lehte**. Döviz banka hesabı değer kazandığından: **102 Bankalar (B) 6.000 / 646 Kambiyo Kârları (A) 6.000**.",
     "source": {
       "kind": "generated",
@@ -753,13 +753,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, personeline verdiği 3.000 ₺'lik iş avansının tamamının genel yönetim gideri niteliğindeki bir harcamayla belgelendirildiğini tespit etmiştir. Avansın kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir? (KDV ihmal edilecektir.)",
     "options": {
-      "A": "770 Genel Yönetim Giderleri (B) 3.000 / 196 Personel Avansları (A) 3.000",
+      "A": "196 Personel Avansları (B) 3.000 / 100 Kasa (A) 3.000",
       "B": "196 Personel Avansları (B) 3.000 / 770 Genel Yönetim Giderleri (A) 3.000",
-      "C": "196 Personel Avansları (B) 3.000 / 100 Kasa (A) 3.000",
+      "C": "770 Genel Yönetim Giderleri (B) 3.000 / 196 Personel Avansları (A) 3.000",
       "D": "770 Genel Yönetim Giderleri (B) 3.000 / 100 Kasa (A) 3.000",
       "E": "135 Personelden Alacaklar (B) 3.000 / 196 Personel Avansları (A) 3.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Avans harcanıp belgelenince ilgili gider hesabına aktarılır ve avans hesabı kapatılır: **770 Genel Yönetim Giderleri (B) 3.000 / 196 Personel Avansları (A) 3.000**.",
     "source": {
       "kind": "generated",
@@ -775,13 +775,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin banka hesabından, verdiği otomatik ödeme talimatı gereği elektrik faturası 1.500 ₺ (KDV ihmal) ödenmiştir. Bu ödemenin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri (B) 1.500 / 102 Bankalar (A) 1.500",
+      "A": "320 Satıcılar (B) 1.500 / 102 Bankalar (A) 1.500",
       "B": "102 Bankalar (B) 1.500 / 770 Genel Yönetim Giderleri (A) 1.500",
       "C": "100 Kasa (B) 1.500 / 770 Genel Yönetim Giderleri (A) 1.500",
       "D": "770 Genel Yönetim Giderleri (B) 1.500 / 100 Kasa (A) 1.500",
-      "E": "320 Satıcılar (B) 1.500 / 102 Bankalar (A) 1.500"
+      "E": "770 Genel Yönetim Giderleri (B) 1.500 / 102 Bankalar (A) 1.500"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Elektrik gideri gider hesabına yazılır ve banka mevduatı azalır: **770 Genel Yönetim Giderleri (B) 1.500 / 102 Bankalar (A) 1.500** (idari birim varsayımıyla).",
     "source": {
       "kind": "generated",
@@ -797,13 +797,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin kasasından çalınan 5.000 ₺'nin, sigortası bulunmadığından tazmin edilemeyeceği kesinleşmiştir. Bu kaybın kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "689 Diğer Olağandışı Gider ve Zararlar (B) 5.000 / 100 Kasa (A) 5.000",
-      "B": "100 Kasa (B) 5.000 / 689 Diğer Olağandışı Gider ve Zararlar (A) 5.000",
+      "A": "100 Kasa (B) 5.000 / 689 Diğer Olağandışı Gider ve Zararlar (A) 5.000",
+      "B": "689 Diğer Olağandışı Gider ve Zararlar (B) 5.000 / 100 Kasa (A) 5.000",
       "C": "770 Genel Yönetim Giderleri (B) 5.000 / 397 Sayım ve Tesellüm Fazlaları (A) 5.000",
       "D": "135 Personelden Alacaklar (B) 5.000 / 100 Kasa (A) 5.000",
       "E": "100 Kasa (B) 5.000 / 679 Diğer Olağandışı Gelir (A) 5.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Hırsızlık olağandışı bir zarardır ve tazmin edilemiyorsa: **689 Diğer Olağandışı Gider ve Zararlar (B) 5.000 / 100 Kasa (A) 5.000**. Kasa mevcudu fiilî duruma indirilir.",
     "source": {
       "kind": "generated",
@@ -841,13 +841,13 @@
     "konu": "hazir_degerler",
     "stem": "Etkin bir kasa iç kontrolü için aşağıdakilerden hangisi en uygun uygulamadır?",
     "options": {
-      "A": "Kasa işlemlerini yürüten kişi ile bu işlemleri muhasebeleştiren/kontrol eden kişinin farklı olması (görevler ayrılığı)",
+      "A": "Belgesiz ödemelerin serbestçe yapılması",
       "B": "Tüm kasa ve muhasebe işlemlerinin tek bir kişide toplanması",
       "C": "Kasa sayımının hiç yapılmaması",
       "D": "Kasa fazlalarının kayıt dışı bırakılması",
-      "E": "Belgesiz ödemelerin serbestçe yapılması"
+      "E": "Kasa işlemlerini yürüten kişi ile bu işlemleri muhasebeleştiren/kontrol eden kişinin farklı olması (görevler ayrılığı)"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "İç kontrolün temel ilkelerinden biri **görevler ayrılığı**dır: kasayı yürüten kişi ile kaydı yapan/kontrol eden kişi ayrı olmalıdır. Böylece hata ve suistimal riski azalır; düzenli kasa sayımı da yapılır.",
     "source": {
       "kind": "generated",
@@ -863,13 +863,13 @@
     "konu": "hazir_degerler",
     "stem": "Kredi kartıyla yapılan satışta, bankanın hizmet karşılığında kestiği komisyon gideri (tutar banka hesabına net geçmiştir) aşağıdaki hesaplardan hangisine borç yazılır?",
     "options": {
-      "A": "653 Komisyon Giderleri",
+      "A": "102 Bankalar",
       "B": "642 Faiz Gelirleri",
       "C": "600 Yurt İçi Satışlar",
-      "D": "102 Bankalar",
+      "D": "653 Komisyon Giderleri",
       "E": "108 Diğer Hazır Değerler"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Kredi kartı (POS) işlemlerinde bankanın kestiği komisyon bir olağan giderdir ve **653 Komisyon Giderleri**ne borç yazılır; kalan net tutar bankaya/hazır değerlere geçer.",
     "source": {
       "kind": "generated",
@@ -885,13 +885,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin döviz banka hesabında 5.000 USD bulunmakta ve 35 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 32 ₺/USD'ye gerilemiştir. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "656 Kambiyo Zararları (B) 15.000 / 102 Bankalar (A) 15.000",
+      "A": "656 Kambiyo Zararları (B) 3.000 / 102 Bankalar (A) 3.000",
       "B": "102 Bankalar (B) 15.000 / 646 Kambiyo Kârları (A) 15.000",
-      "C": "656 Kambiyo Zararları (B) 3.000 / 102 Bankalar (A) 3.000",
+      "C": "656 Kambiyo Zararları (B) 15.000 / 102 Bankalar (A) 15.000",
       "D": "780 Finansman Giderleri (B) 15.000 / 102 Bankalar (A) 15.000",
       "E": "102 Bankalar (B) 15.000 / 656 Kambiyo Zararları (A) 15.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Kur farkı = 5.000 × (35 − 32) = **15.000 ₺ aleyhte**. Döviz banka hesabı değer kaybettiğinden: **656 Kambiyo Zararları (B) 15.000 / 102 Bankalar (A) 15.000**.",
     "source": {
       "kind": "generated",
@@ -952,12 +952,12 @@
     "stem": "Çek ve senet (bono) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Çek bir kredi (vade) aracı, senet ise bir ödeme aracıdır.",
-      "B": "Çek esas olarak bir ödeme aracıdır; senet (bono) ise bir kredi (vade) aracıdır.",
+      "B": "Çek yalnızca bankalar arasında düzenlenir.",
       "C": "İkisi de yalnızca nakit ödemede kullanılır.",
-      "D": "Çek yalnızca bankalar arasında düzenlenir.",
+      "D": "Çek esas olarak bir ödeme aracıdır; senet (bono) ise bir kredi (vade) aracıdır.",
       "E": "Senet yalnızca yabancı para cinsinden düzenlenir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Çek** esas olarak bir **ödeme aracıdır** (bankaya hitaben, görüldüğünde ödenmek üzere). **Senet (bono)** ise belirli bir vadede ödeme taahhüdü içeren bir **kredi (vade) aracıdır**.",
     "source": {
       "kind": "generated",
@@ -974,12 +974,12 @@
     "stem": "Vergi Usul Kanunu'na göre yabancı paralar değerlenirken; borsa rayici yoksa hangi kur esas alınır?",
     "options": {
       "A": "İşletmenin belirlediği kur",
-      "B": "Maliye Bakanlığı'nca tespit ve ilan edilen kur",
-      "C": "Serbest piyasadaki en yüksek kur",
+      "B": "Serbest piyasadaki en yüksek kur",
+      "C": "Maliye Bakanlığı'nca tespit ve ilan edilen kur",
       "D": "Bir önceki yılın ortalama kuru",
       "E": "Satıcının faturada gösterdiği kur"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "VUK md. 280'e göre yabancı paralar **borsa rayici** ile; borsa rayici yoksa **Maliye Bakanlığı'nca tespit ve ilan edilen kur** ile değerlenir.",
     "source": {
       "kind": "generated",
@@ -995,13 +995,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, bankadaki mevduat hesabından 25.000 ₺ nakit çekerek kasasına almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 25.000 / 102 Bankalar (A) 25.000",
+      "A": "108 Diğer Hazır Değerler (B) 25.000 / 102 Bankalar (A) 25.000",
       "B": "102 Bankalar (B) 25.000 / 100 Kasa (A) 25.000",
       "C": "100 Kasa (B) 25.000 / 300 Banka Kredileri (A) 25.000",
       "D": "100 Kasa (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000",
-      "E": "108 Diğer Hazır Değerler (B) 25.000 / 102 Bankalar (A) 25.000"
+      "E": "100 Kasa (B) 25.000 / 102 Bankalar (A) 25.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Kasa (varlık) artar → **100 Kasa (B)**; banka mevduatı (varlık) azalır → **102 Bankalar (A)**. Kayıt: 100 Kasa (B) 25.000 / 102 Bankalar (A) 25.000. İki aktif hesap arası aktarım; aktif toplamı değişmez.",
     "source": {
       "kind": "generated",
@@ -1018,12 +1018,12 @@
     "stem": "Aşağıdakilerden hangisi nakit dışı bir ödeme/tahsilat aracı değildir?",
     "options": {
       "A": "Çek",
-      "B": "Havale",
+      "B": "Madenî para ve banknot",
       "C": "EFT",
       "D": "Kredi kartı",
-      "E": "Madenî para ve banknot"
+      "E": "Havale"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "Çek, havale, EFT ve kredi kartı **nakit dışı** ödeme/tahsilat araçlarıdır. **Madenî para ve banknot** ise bizzat nakittir; nakit dışı araç değildir.",
     "source": {
       "kind": "generated",
@@ -1061,13 +1061,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletme, elindeki 20.000 ₺ nominal değerli alacak çekini bankaya tahsile vermiş; banka 200 ₺ tahsil komisyonu keserek kalanı hesaba geçirmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "102 Bankalar (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000",
-      "B": "102 Bankalar (B) 20.000 / 101 Alınan Çekler (A) 20.000",
+      "A": "102 Bankalar (B) 20.000 / 101 Alınan Çekler (A) 20.000",
+      "B": "102 Bankalar (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000",
       "C": "101 Alınan Çekler (B) 20.000 / 102 Bankalar (A) 19.800 + 653 Komisyon Giderleri (A) 200",
       "D": "102 Bankalar (B) 20.200 / 101 Alınan Çekler (A) 20.000 + 642 Faiz Gelirleri (A) 200",
       "E": "100 Kasa (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Çek tahsil edilince portföyden çıkar (101 alacak 20.000); bankaya net 19.800 girer, 200 ₺ komisyon gider yazılır: **102 Bankalar (B) 19.800 + 653 Komisyon Giderleri (B) 200 / 101 Alınan Çekler (A) 20.000**.",
     "source": {
       "kind": "generated",
@@ -1085,11 +1085,11 @@
     "options": {
       "A": "Kasadaki nakit para",
       "B": "Vadesiz banka mevduatı",
-      "C": "Vadesine 3 aydan kısa süre kalan, değeri kesine yakın likit fon",
-      "D": "İşletmenin uzun vadeli tahvil yatırımı",
+      "C": "İşletmenin uzun vadeli tahvil yatırımı",
+      "D": "Vadesine 3 aydan kısa süre kalan, değeri kesine yakın likit fon",
       "E": "Bankadaki döviz tevdiat (vadesiz) hesabı"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "**Uzun vadeli tahvil yatırımı**, değeri dalgalanabilen ve kısa sürede nakde çevrilme amacı taşımayan bir yatırımdır; nakit benzeri sayılmaz. Diğerleri yüksek likiditeli, değeri belirli kalemlerdir.",
     "source": {
       "kind": "generated",
@@ -1105,13 +1105,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin vadeli mevduatına dönem sonu itibarıyla 4.000 ₺ faiz tahakkuk etmiş ancak henüz hesaba geçmemiştir (vade sonraki dönemdedir). Dönemsellik gereği yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "181 Gelir Tahakkukları (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
+      "A": "180 Gelecek Aylara Ait Giderler (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
       "B": "642 Faiz Gelirleri (B) 4.000 / 181 Gelir Tahakkukları (A) 4.000",
       "C": "102 Bankalar (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
-      "D": "180 Gelecek Aylara Ait Giderler (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
+      "D": "181 Gelir Tahakkukları (B) 4.000 / 642 Faiz Gelirleri (A) 4.000",
       "E": "642 Faiz Gelirleri (B) 4.000 / 102 Bankalar (A) 4.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Döneme ait olup henüz tahsil edilmemiş gelir tahakkuk ettirilir: **181 Gelir Tahakkukları (B) 4.000 / 642 Faiz Gelirleri (A) 4.000**. Faiz sonraki dönemde tahsil edilince 181 kapatılır.",
     "source": {
       "kind": "generated",
@@ -1127,13 +1127,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin döviz banka hesabında 3.000 GBP bulunmakta ve 42 ₺/GBP kurundan kayıtlıdır. Değerleme günü kuru 39 ₺/GBP'ye gerilemiştir. Oluşan kur farkı kaç ₺ ve ne yöndedir?",
     "options": {
-      "A": "9.000 ₺ aleyhte (zarar)",
+      "A": "Kur farkı oluşmaz",
       "B": "9.000 ₺ lehte (kâr)",
       "C": "3.000 ₺ aleyhte (zarar)",
       "D": "117.000 ₺ lehte (kâr)",
-      "E": "Kur farkı oluşmaz"
+      "E": "9.000 ₺ aleyhte (zarar)"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Kur farkı = 3.000 × (42 − 39) = **9.000 ₺ aleyhte**. Kur düştüğünden döviz mevduatı değer kaybeder; 656 Kambiyo Zararları (B) 9.000 / 102 Bankalar (A) 9.000 kaydı yapılır.",
     "source": {
       "kind": "generated",
@@ -1149,13 +1149,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmelerin hazır değerlerinin yeterli düzeyde tutulmasının temel nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Daha az vergi ödemek",
-      "B": "Vadesi gelen borçları ve günlük harcamaları zamanında karşılayabilmek (likidite/ödeme gücü)",
+      "A": "Vadesi gelen borçları ve günlük harcamaları zamanında karşılayabilmek (likidite/ödeme gücü)",
+      "B": "Daha az vergi ödemek",
       "C": "Amortisman giderini artırmak",
       "D": "Stok maliyetini düşürmek",
       "E": "Sermayeyi azaltmak"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Hazır değerler işletmenin **likiditesini (ödeme gücünü)** temsil eder; vadesi gelen borçların ve günlük harcamaların zamanında karşılanabilmesi için yeterli hazır değer bulundurmak gerekir.",
     "source": {
       "kind": "generated",
@@ -1171,13 +1171,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin banka hesabına ilişkin kayıtları ile bankanın gönderdiği hesap özeti arasındaki farkların araştırılıp giderilmesi işlemine ne ad verilir?",
     "options": {
-      "A": "Banka mutabakatı",
+      "A": "Reeskont",
       "B": "Amortisman",
-      "C": "Reeskont",
+      "C": "Banka mutabakatı",
       "D": "Konsolidasyon",
       "E": "Envanter değerlemesi"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "İşletme kayıtları ile banka hesap özetinin karşılaştırılıp farkların (henüz işlenmemiş masraf, faiz, yoldaki havale vb.) giderilmesine **banka mutabakatı** denir. İç kontrolün önemli bir parçasıdır.",
     "source": {
       "kind": "generated",
@@ -1239,11 +1239,11 @@
     "options": {
       "A": "Müşteriden çek alınması",
       "B": "İşletmenin çek düzenleyip vermesi",
-      "C": "Elde bulunan bir çekin nakden (kasa) tahsil edilmesi",
-      "D": "Çekin ciro edilmesi",
+      "C": "Çekin ciro edilmesi",
+      "D": "Elde bulunan bir çekin nakden (kasa) tahsil edilmesi",
       "E": "Karşılıksız çek çıkması"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Kasaya nakit girişi (100 borç) ve elde tutulan çekin (101 alacak) azalması, **elde bulunan bir çekin nakden tahsil edilmesi**ni gösterir (ör. keşidecinin işletmeye nakit ödemesi).",
     "source": {
       "kind": "generated",
@@ -1259,13 +1259,13 @@
     "konu": "hazir_degerler",
     "stem": "İşletmenin bankadaki vadeli mevduatının vadesi dolmuş; anapara ve faizi vadesiz mevduat hesabına geçmiştir. Anapara 100.000 ₺, faiz 9.000 ₺'dir (stopaj ihmal edilecektir). Faize ilişkin kısım için aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "642 Faiz Gelirleri hesabı 9.000 ₺ alacaklandırılır.",
+      "A": "646 Kambiyo Kârları hesabı 9.000 ₺ alacaklandırılır.",
       "B": "780 Finansman Giderleri hesabı 9.000 ₺ borçlandırılır.",
       "C": "600 Yurt İçi Satışlar hesabı 9.000 ₺ alacaklandırılır.",
       "D": "102 Bankalar hesabı 9.000 ₺ alacaklandırılır.",
-      "E": "646 Kambiyo Kârları hesabı 9.000 ₺ alacaklandırılır."
+      "E": "642 Faiz Gelirleri hesabı 9.000 ₺ alacaklandırılır."
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Anapara zaten işletmenindir (hesaplar arası aktarım). Kazanılan faiz ise gelirdir: **642 Faiz Gelirleri 9.000 ₺ alacaklandırılır** (102 Bankalar borçlanır).",
     "source": {
       "kind": "generated",

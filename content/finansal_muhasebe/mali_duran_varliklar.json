@@ -6,12 +6,12 @@
     "stem": "Tekdüzen Hesap Planı'nda '24 Mali Duran Varlıklar' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin bir yıl içinde paraya çevireceği menkul kıymetleri izler.",
-      "B": "İşletmenin uzun vadeli amaçlarla veya yasal zorunluluklarla elde tuttuğu, başka ortaklıklara ait pay/menkul kıymetler ile uzun vadeli finansal varlıkları izler.",
+      "B": "İşletmenin kısa vadeli banka kredilerini izler.",
       "C": "İşletmenin ticari mallarını izler.",
-      "D": "İşletmenin kısa vadeli banka kredilerini izler.",
+      "D": "İşletmenin uzun vadeli amaçlarla veya yasal zorunluluklarla elde tuttuğu, başka ortaklıklara ait pay/menkul kıymetler ile uzun vadeli finansal varlıkları izler.",
       "E": "İşletmenin maddi duran varlıklarını izler."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**24 Mali Duran Varlıklar**; işletmenin **uzun vadeli** amaçlarla elde tuttuğu, başka ortaklıklara ait pay senetleri/ortaklık payları (bağlı menkul kıymet, iştirak, bağlı ortaklık) ile diğer uzun vadeli finansal varlıkları izler.",
     "source": {
       "kind": "generated",
@@ -28,12 +28,12 @@
     "stem": "Aşağıdaki hesaplardan hangisi '24 Mali Duran Varlıklar' grubunda yer almaz?",
     "options": {
       "A": "240 Bağlı Menkul Kıymetler",
-      "B": "242 İştirakler",
+      "B": "110 Hisse Senetleri",
       "C": "245 Bağlı Ortaklıklar",
-      "D": "110 Hisse Senetleri",
+      "D": "242 İştirakler",
       "E": "248 Diğer Mali Duran Varlıklar"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "**110 Hisse Senetleri**, kısa vadeli (bir yıl içinde elden çıkarılmak üzere tutulan) menkul kıymetleri izler ve '11 Menkul Kıymetler' grubundadır. Diğerleri (240, 242, 245, 248) uzun vadeli olup 24 grubundadır.",
     "source": {
       "kind": "generated",
@@ -50,12 +50,12 @@
     "stem": "Tekdüzen Hesap Planı'na göre '242 İştirakler' hesabında izlenen ortaklık payları için sahiplik (sermaye payı) oranı genel olarak hangi aralıktadır?",
     "options": {
       "A": "%10'un altında",
-      "B": "%10 ile %50 arasında",
-      "C": "%50'nin üzerinde",
+      "B": "%50'nin üzerinde",
+      "C": "%10 ile %50 arasında",
       "D": "Her zaman %100",
       "E": "Sahiplik oranıyla ilgisi yoktur"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**İştirak**; işletmenin diğer bir ortaklığın yönetimine ve politikalarının belirlenmesine katılmak üzere edindiği, sermaye payı genellikle **%10 ile %50 arasında** olan ortaklık paylarını ifade eder (önemli etki).",
     "source": {
       "kind": "generated",
@@ -71,13 +71,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "Tekdüzen Hesap Planı'na göre '245 Bağlı Ortaklıklar' hesabında izlenen ortaklık payları için sahiplik (sermaye payı) oranı genel olarak nasıldır?",
     "options": {
-      "A": "%10'un altında",
+      "A": "%50'nin üzerinde (işletmenin kontrol/hâkimiyet sağladığı durumlar)",
       "B": "%10 ile %50 arasında",
-      "C": "%50'nin üzerinde (işletmenin kontrol/hâkimiyet sağladığı durumlar)",
+      "C": "%10'un altında",
       "D": "Her zaman %5",
       "E": "Sahiplik oranıyla ilgisi yoktur"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "**Bağlı ortaklık**; işletmenin sermaye payının **%50'nin üzerinde** olduğu (doğrudan/dolaylı olarak yönetimi ve politikaları kontrol ettiği, hâkimiyet sağladığı) ortaklıkları ifade eder.",
     "source": {
       "kind": "generated",
@@ -94,12 +94,12 @@
     "stem": "İştirak ve bağlı ortaklık kapsamına girmeyen, uzun vadeli amaçla elde tutulan ve sermaye payı %10'un altında olan menkul kıymetler Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "110 Hisse Senetleri",
-      "B": "240 Bağlı Menkul Kıymetler",
+      "B": "108 Diğer Hazır Değerler",
       "C": "242 İştirakler",
       "D": "245 Bağlı Ortaklıklar",
-      "E": "108 Diğer Hazır Değerler"
+      "E": "240 Bağlı Menkul Kıymetler"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "İştirak/bağlı ortaklık kapsamı dışında, **uzun vadeli** elde tutulan ve payı **%10'un altında** olan menkul kıymetler **240 Bağlı Menkul Kıymetler** hesabında izlenir (kısa vadeli olsaydı 110 Hisse Senetleri'nde izlenirdi).",
     "source": {
       "kind": "generated",
@@ -116,12 +116,12 @@
     "stem": "Bir hisse senedi yatırımının '11 Menkul Kıymetler' (kısa vadeli) grubunda mı yoksa '24 Mali Duran Varlıklar' (uzun vadeli) grubunda mı izleneceğini belirleyen temel ölçüt aşağıdakilerden hangisidir?",
     "options": {
       "A": "Hisse senedinin nominal değeri",
-      "B": "İşletmenin elde tutma amacı ve süresi (kısa vadeli kâr amaçlı mı, uzun vadeli/ortaklık amaçlı mı)",
+      "B": "Hisse senedini çıkaran şirketin adı",
       "C": "Hisse senedinin renkli olması",
-      "D": "Hisse senedini çıkaran şirketin adı",
+      "D": "İşletmenin elde tutma amacı ve süresi (kısa vadeli kâr amaçlı mı, uzun vadeli/ortaklık amaçlı mı)",
       "E": "Yalnızca satın alma bedeli"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Belirleyici ölçüt, işletmenin **elde tutma amacı ve süresidir**: kısa vadeli kâr amacıyla tutuluyorsa 11 Menkul Kıymetler; uzun vadeli/ortaklık amacıyla tutuluyorsa 24 Mali Duran Varlıklar grubunda izlenir.",
     "source": {
       "kind": "generated",
@@ -137,13 +137,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 500.000 ₺ olan bir anonim şirketin paylarının 100.000 ₺'lik kısmını uzun vadeli amaçla satın almıştır. Bu pay hangi hesapta izlenmelidir?",
     "options": {
-      "A": "110 Hisse Senetleri",
+      "A": "242 İştirakler",
       "B": "240 Bağlı Menkul Kıymetler",
-      "C": "242 İştirakler",
+      "C": "110 Hisse Senetleri",
       "D": "245 Bağlı Ortaklıklar",
       "E": "108 Diğer Hazır Değerler"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Sahiplik oranı = 100.000 ÷ 500.000 = **%20**. Bu oran %10–%50 aralığında olduğundan pay **242 İştirakler** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -161,11 +161,11 @@
     "options": {
       "A": "240 Bağlı Menkul Kıymetler",
       "B": "242 İştirakler",
-      "C": "245 Bağlı Ortaklıklar",
+      "C": "248 Diğer Mali Duran Varlıklar",
       "D": "110 Hisse Senetleri",
-      "E": "248 Diğer Mali Duran Varlıklar"
+      "E": "245 Bağlı Ortaklıklar"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Sahiplik oranı = 240.000 ÷ 400.000 = **%60**. %50'nin üzerinde olduğundan (kontrol/hâkimiyet) pay **245 Bağlı Ortaklıklar** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -181,13 +181,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 1.000.000 ₺ olan bir şirketin paylarının 50.000 ₺'lik kısmını uzun vadeli amaçla elde tutmaktadır. Bu pay hangi hesapta izlenmelidir?",
     "options": {
-      "A": "240 Bağlı Menkul Kıymetler",
+      "A": "245 Bağlı Ortaklıklar",
       "B": "242 İştirakler",
-      "C": "245 Bağlı Ortaklıklar",
+      "C": "240 Bağlı Menkul Kıymetler",
       "D": "300 Banka Kredileri",
       "E": "120 Alıcılar"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Sahiplik oranı = 50.000 ÷ 1.000.000 = **%5**. %10'un altında ve uzun vadeli tutulduğundan pay **240 Bağlı Menkul Kıymetler** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -225,13 +225,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, bir iştirak payını 300.000 ₺'ye peşin (banka havalesi ile) satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "242 İştirakler (B) 300.000 / 102 Bankalar (A) 300.000",
+      "A": "102 Bankalar (B) 300.000 / 242 İştirakler (A) 300.000",
       "B": "245 Bağlı Ortaklıklar (B) 300.000 / 102 Bankalar (A) 300.000",
       "C": "110 Hisse Senetleri (B) 300.000 / 102 Bankalar (A) 300.000",
-      "D": "102 Bankalar (B) 300.000 / 242 İştirakler (A) 300.000",
+      "D": "242 İştirakler (B) 300.000 / 102 Bankalar (A) 300.000",
       "E": "770 Genel Yönetim Giderleri (B) 300.000 / 102 Bankalar (A) 300.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "İştirak payı bir mali duran varlıktır → **242 İştirakler (B) 300.000**; banka çıkışı → **102 Bankalar (A) 300.000**.",
     "source": {
       "kind": "generated",
@@ -269,13 +269,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletmenin bağlı ortaklıklarından elde ettiği kâr payı (temettü) gelirleri Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
-      "A": "640 İştiraklerden Temettü Gelirleri",
-      "B": "641 Bağlı Ortaklıklardan Temettü Gelirleri",
+      "A": "641 Bağlı Ortaklıklardan Temettü Gelirleri",
+      "B": "640 İştiraklerden Temettü Gelirleri",
       "C": "642 Faiz Gelirleri",
       "D": "600 Yurt İçi Satışlar",
       "E": "645 Menkul Kıymet Satış Kârları"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Bağlı ortaklıklardan elde edilen kâr payları **641 Bağlı Ortaklıklardan Temettü Gelirleri** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -292,12 +292,12 @@
     "stem": "İşletmenin iştirak paylarında meydana gelen kalıcı değer düşüklükleri için ayrılan karşılık Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "242 İştirakler",
-      "B": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)",
+      "B": "243 İştiraklere Sermaye Taahhütleri (-)",
       "C": "640 İştiraklerden Temettü Gelirleri",
       "D": "119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)",
-      "E": "243 İştiraklere Sermaye Taahhütleri (-)"
+      "E": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "İştirak paylarındaki değer düşüklüğü için ayrılan karşılık, aktifi düzenleyici (kontr aktif) nitelikteki **244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -314,12 +314,12 @@
     "stem": "İşletmenin iştirak edeceği şirkete taahhüt ettiği ancak henüz ödemediği sermaye tutarı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "242 İştirakler",
-      "B": "243 İştiraklere Sermaye Taahhütleri (-)",
-      "C": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)",
+      "B": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)",
+      "C": "243 İştiraklere Sermaye Taahhütleri (-)",
       "D": "501 Ödenmemiş Sermaye (-)",
       "E": "331 Ortaklara Borçlar"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "İştirake taahhüt edilip henüz ödenmeyen sermaye tutarı, aktifi düzenleyici **243 İştiraklere Sermaye Taahhütleri (-)** hesabında izlenir; ödeme yapıldıkça bu hesap kapatılır.",
     "source": {
       "kind": "generated",
@@ -336,12 +336,12 @@
     "stem": "Mali duran varlıklar (iştirakler, bağlı ortaklıklar) ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Maddi duran varlıklar gibi her dönem amortismana tabi tutulurlar.",
-      "B": "Finansal (parasal olmayan pay) varlıklar oldukları için amortismana tabi tutulmazlar; ancak kalıcı değer düşüklüğü için karşılık ayrılabilir.",
+      "B": "Kısa vadeli borç niteliğindedirler.",
       "C": "Her dönem sonunda gelir yazılırlar.",
-      "D": "Kısa vadeli borç niteliğindedirler.",
+      "D": "Finansal (parasal olmayan pay) varlıklar oldukları için amortismana tabi tutulmazlar; ancak kalıcı değer düşüklüğü için karşılık ayrılabilir.",
       "E": "Stok gibi değerlenirler."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "İştirak ve bağlı ortaklık payları **amortismana tabi tutulmaz** (yıpranan varlık değildir); değerlerinde kalıcı düşüş olursa **değer düşüklüğü karşılığı** (244/247) ayrılır.",
     "source": {
       "kind": "generated",
@@ -357,13 +357,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 800.000 ₺ olan bir şirketin paylarının 400.000 ₺'lik kısmına sahiptir. Bu pay hangi hesapta izlenmelidir?",
     "options": {
-      "A": "240 Bağlı Menkul Kıymetler",
-      "B": "242 İştirakler",
+      "A": "242 İştirakler",
+      "B": "240 Bağlı Menkul Kıymetler",
       "C": "245 Bağlı Ortaklıklar",
       "D": "110 Hisse Senetleri",
       "E": "108 Diğer Hazır Değerler"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Sahiplik oranı = 400.000 ÷ 800.000 = **%50**. %10–%50 aralığında (üst sınır dâhil) olduğundan pay **242 İştirakler** hesabında izlenir; %50'yi aşmadığından bağlı ortaklık sayılmaz.",
     "source": {
       "kind": "generated",
@@ -380,12 +380,12 @@
     "stem": "Mali duran varlıklar bilançoda hangi değerle (net) gösterilir?",
     "options": {
       "A": "Maliyet bedeli + Değer düşüklüğü karşılığı",
-      "B": "Maliyet (kayıtlı) bedeli − Ayrılan değer düşüklüğü karşılığı (244/247 vb.)",
+      "B": "Temettü geliri kadar",
       "C": "Yalnızca değer düşüklüğü karşılığı",
       "D": "Nominal değer",
-      "E": "Temettü geliri kadar"
+      "E": "Maliyet (kayıtlı) bedeli − Ayrılan değer düşüklüğü karşılığı (244/247 vb.)"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Mali duran varlıklar bilançoda **kayıtlı (maliyet) bedelinden ayrılan değer düşüklüğü karşılığı (244/247 vb.) düşülerek** net değerle gösterilir; karşılık hesapları aktifi düzenleyicidir.",
     "source": {
       "kind": "generated",
@@ -403,11 +403,11 @@
     "options": {
       "A": "Uzun vadeli amaçla alınan iştirak payı",
       "B": "Bağlı ortaklık payı",
-      "C": "Uzun vadeli elde tutulan bağlı menkul kıymet",
-      "D": "İşletmenin üretimde kullandığı makine",
+      "C": "İşletmenin üretimde kullandığı makine",
+      "D": "Uzun vadeli elde tutulan bağlı menkul kıymet",
       "E": "Diğer uzun vadeli menkul kıymet yatırımı"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "İşletmenin üretimde kullandığı **makine**, fiziki bir **maddi duran varlıktır** (253); mali duran varlık değildir. Diğerleri uzun vadeli finansal yatırımlardır (24 grubu).",
     "source": {
       "kind": "generated",
@@ -424,12 +424,12 @@
     "stem": "Bir şirketin sermayesindeki payı %50'yi aşan (kontrol sağlayan) ortaklıklara ne ad verilir?",
     "options": {
       "A": "İştirak",
-      "B": "Bağlı menkul kıymet",
-      "C": "Bağlı ortaklık",
+      "B": "Bağlı ortaklık",
+      "C": "Bağlı menkul kıymet",
       "D": "Serbest menkul kıymet",
       "E": "Ticari alacak"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Sermaye payı **%50'yi aşan** ve işletmenin kontrol/hâkimiyet sağladığı ortaklıklara **bağlı ortaklık** denir (245 Bağlı Ortaklıklar).",
     "source": {
       "kind": "generated",
@@ -446,12 +446,12 @@
     "stem": "İşletme, ödenmiş sermayesi 600.000 ₺ olan bir şirketin paylarının 90.000 ₺'lik kısmını uzun vadeli amaçla, yönetime katılmak üzere edinmiştir. Bu pay hangi hesapta izlenmelidir?",
     "options": {
       "A": "240 Bağlı Menkul Kıymetler",
-      "B": "242 İştirakler",
+      "B": "110 Hisse Senetleri",
       "C": "245 Bağlı Ortaklıklar",
-      "D": "110 Hisse Senetleri",
+      "D": "242 İştirakler",
       "E": "108 Diğer Hazır Değerler"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Sahiplik oranı = 90.000 ÷ 600.000 = **%15**. %10–%50 aralığında olduğundan pay **242 İştirakler** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -467,13 +467,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 2.000.000 ₺ olan bir şirketin paylarının 120.000 ₺'lik kısmını uzun vadeli amaçla elinde tutmaktadır. Bu pay hangi hesapta izlenmelidir?",
     "options": {
-      "A": "240 Bağlı Menkul Kıymetler",
+      "A": "245 Bağlı Ortaklıklar",
       "B": "242 İştirakler",
-      "C": "245 Bağlı Ortaklıklar",
+      "C": "240 Bağlı Menkul Kıymetler",
       "D": "110 Hisse Senetleri",
       "E": "111 Özel Kesim Tahvil, Senet ve Bonoları"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Sahiplik oranı = 120.000 ÷ 2.000.000 = **%6**. %10'un altında ve uzun vadeli tutulduğundan pay **240 Bağlı Menkul Kıymetler** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -489,13 +489,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, iştiraki olan şirketin dağıttığı kâr payından payına düşen 40.000 ₺'yi banka hesabına tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "102 Bankalar (B) 40.000 / 640 İştiraklerden Temettü Gelirleri (A) 40.000",
+      "A": "102 Bankalar (B) 40.000 / 600 Yurt İçi Satışlar (A) 40.000",
       "B": "640 İştiraklerden Temettü Gelirleri (B) 40.000 / 102 Bankalar (A) 40.000",
       "C": "102 Bankalar (B) 40.000 / 242 İştirakler (A) 40.000",
       "D": "242 İştirakler (B) 40.000 / 102 Bankalar (A) 40.000",
-      "E": "102 Bankalar (B) 40.000 / 600 Yurt İçi Satışlar (A) 40.000"
+      "E": "102 Bankalar (B) 40.000 / 640 İştiraklerden Temettü Gelirleri (A) 40.000"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Banka girişi → **102 Bankalar (B) 40.000**; iştirakten elde edilen kâr payı bir gelirdir → **640 İştiraklerden Temettü Gelirleri (A) 40.000**.",
     "source": {
       "kind": "generated",
@@ -511,13 +511,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, iştirak payında oluşan 30.000 ₺'lik kalıcı değer düşüklüğü için karşılık ayırmıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "654 Karşılık Giderleri (B) 30.000 / 244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (A) 30.000",
-      "B": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (B) 30.000 / 654 Karşılık Giderleri (A) 30.000",
+      "A": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (B) 30.000 / 654 Karşılık Giderleri (A) 30.000",
+      "B": "654 Karşılık Giderleri (B) 30.000 / 244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (A) 30.000",
       "C": "242 İştirakler (B) 30.000 / 654 Karşılık Giderleri (A) 30.000",
       "D": "654 Karşılık Giderleri (B) 30.000 / 242 İştirakler (A) 30.000",
       "E": "640 İştiraklerden Temettü Gelirleri (B) 30.000 / 244 ... Karşılığı (A) 30.000"
     },
-    "answer": "A",
+    "answer": "B",
     "solution": "Değer düşüklüğü bir giderdir → **654 Karşılık Giderleri (B) 30.000**; varlık doğrudan azaltılmaz, düzenleyici hesap çalışır → **244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (A) 30.000**.",
     "source": {
       "kind": "generated",
@@ -533,13 +533,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, kayıtlı değeri 200.000 ₺ olan bir iştirak payını 260.000 ₺'ye peşin satmıştır (değer düşüklüğü karşılığı yoktur). Bu satıştan doğan kâr kaç ₺'dir?",
     "options": {
-      "A": "460.000",
+      "A": "60.000",
       "B": "260.000",
       "C": "200.000",
-      "D": "60.000",
+      "D": "460.000",
       "E": "0"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "Satış kârı = Satış bedeli − Kayıtlı (net) değer = 260.000 − 200.000 = **60.000 ₺**. Bu tutar ilgili gelir hesabına (649 Diğer Olağan Gelir ve Kârlar) alacak yazılır.",
     "source": {
       "kind": "generated",
@@ -578,12 +578,12 @@
     "stem": "İşletme kısa vadeli amaçla aldığı ve '110 Hisse Senetleri'nde izlediği bir yatırımı, artık uzun vadeli/ortaklık amacıyla elde tutmaya karar vermiştir (pay %30). Bu durumda ne yapılır?",
     "options": {
       "A": "Hiçbir işlem yapılmaz.",
-      "B": "Yatırım, uzun vadeli ve %10–%50 pay niteliğine geçtiğinden 110 Hisse Senetleri'nden çıkarılıp 242 İştirakler hesabına aktarılır.",
+      "B": "Yatırım 153 Ticari Mallar'a aktarılır.",
       "C": "Yatırım 245 Bağlı Ortaklıklar'a aktarılır.",
-      "D": "Yatırım 153 Ticari Mallar'a aktarılır.",
+      "D": "Yatırım, uzun vadeli ve %10–%50 pay niteliğine geçtiğinden 110 Hisse Senetleri'nden çıkarılıp 242 İştirakler hesabına aktarılır.",
       "E": "Yatırım doğrudan gider yazılır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Elde tutma amacı kısa vadeliden uzun vadeliye (ve pay %10–%50'ye) dönüştüğünden yatırım **110 Hisse Senetleri'nden 242 İştirakler**'e aktarılır. Sınıflama, amaç ve orana göre belirlenir.",
     "source": {
       "kind": "generated",
@@ -599,13 +599,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 250.000 ₺ olan bir şirketin paylarının 100.000 ₺'lik kısmına sahiptir. Sahiplik oranı ve sınıflama aşağıdakilerden hangisidir?",
     "options": {
-      "A": "%40 – İştirak (242)",
+      "A": "%25 – Bağlı Menkul Kıymet (240)",
       "B": "%40 – Bağlı Ortaklık (245)",
-      "C": "%25 – Bağlı Menkul Kıymet (240)",
+      "C": "%40 – İştirak (242)",
       "D": "%60 – Bağlı Ortaklık (245)",
       "E": "%4 – Bağlı Menkul Kıymet (240)"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Sahiplik oranı = 100.000 ÷ 250.000 = **%40**. %10–%50 aralığında olduğundan **İştirak (242)** olarak sınıflandırılır.",
     "source": {
       "kind": "generated",
@@ -621,13 +621,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 500.000 ₺ olan bir şirketin paylarının 300.000 ₺'lik kısmına sahiptir. Sahiplik oranı ve sınıflama aşağıdakilerden hangisidir?",
     "options": {
-      "A": "%60 – İştirak (242)",
-      "B": "%60 – Bağlı Ortaklık (245)",
+      "A": "%60 – Bağlı Ortaklık (245)",
+      "B": "%60 – İştirak (242)",
       "C": "%40 – İştirak (242)",
       "D": "%30 – Bağlı Menkul Kıymet (240)",
       "E": "%6 – Bağlı Menkul Kıymet (240)"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Sahiplik oranı = 300.000 ÷ 500.000 = **%60**. %50'yi aştığından **Bağlı Ortaklık (245)** olarak sınıflandırılır.",
     "source": {
       "kind": "generated",
@@ -644,12 +644,12 @@
     "stem": "İştirakler ve bağlı ortaklıklar için ayrılan değer düşüklüğü karşılığı hesaplarının (244, 247) ortak niteliği aşağıdakilerden hangisidir?",
     "options": {
       "A": "Gelir hesabıdırlar.",
-      "B": "Aktifi düzenleyici (kontr aktif) hesaplardır; alacak kalanı verir ve ilgili mali duran varlıktan (-) düşülür.",
+      "B": "Maliyet hesabıdırlar.",
       "C": "Kısa vadeli borç hesabıdırlar.",
       "D": "Özkaynak hesabıdırlar.",
-      "E": "Maliyet hesabıdırlar."
+      "E": "Aktifi düzenleyici (kontr aktif) hesaplardır; alacak kalanı verir ve ilgili mali duran varlıktan (-) düşülür."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**244 ve 247** değer düşüklüğü karşılıkları, aktifi düzenleyici (kontr aktif) hesaplardır; **alacak kalanı** verir ve ilgili iştirak/bağlı ortaklık tutarından **(-)** düşülerek net değeri gösterir.",
     "source": {
       "kind": "generated",
@@ -688,12 +688,12 @@
     "stem": "İştirak payı satın alınırken ödenen aracı kurum komisyonu ve diğer alım giderleri ile ilgili genel uygulama aşağıdakilerden hangisidir?",
     "options": {
       "A": "Doğrudan 640 İştiraklerden Temettü Gelirleri'ne yazılır.",
-      "B": "İştirak payının maliyetine eklenerek (242 İştirakler) izlenir ya da işletme politikasına göre dönem gideri yazılabilir.",
-      "C": "Her zaman 244 Değer Düşüklüğü Karşılığı'na yazılır.",
+      "B": "Her zaman 244 Değer Düşüklüğü Karşılığı'na yazılır.",
+      "C": "İştirak payının maliyetine eklenerek (242 İştirakler) izlenir ya da işletme politikasına göre dönem gideri yazılabilir.",
       "D": "Sermaye taahhüdü olarak 243'e yazılır.",
       "E": "Hiç kaydedilmez."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "İştirak payı alımına ilişkin komisyon vb. giderler, edinim maliyetinin bir parçası olarak **242 İştirakler**'in maliyetine eklenebilir (uygulamaya göre dönem gideri de yazılabilir). Temettü geliriyle ilgisi yoktur.",
     "source": {
       "kind": "generated",
@@ -732,12 +732,12 @@
     "stem": "'240 Bağlı Menkul Kıymetler' ile '110 Hisse Senetleri' arasındaki temel fark aşağıdakilerden hangisidir?",
     "options": {
       "A": "İkisi de aynı hesaptır, fark yoktur.",
-      "B": "240 uzun vadeli (duran varlık) amaçla, 110 ise kısa vadeli (bir yıl içinde elden çıkarma) amaçla tutulan menkul kıymetleri izler.",
+      "B": "240 bir borç hesabı, 110 bir gelir hesabıdır.",
       "C": "240 kısa vadeli, 110 uzun vadelidir.",
-      "D": "240 bir borç hesabı, 110 bir gelir hesabıdır.",
+      "D": "240 uzun vadeli (duran varlık) amaçla, 110 ise kısa vadeli (bir yıl içinde elden çıkarma) amaçla tutulan menkul kıymetleri izler.",
       "E": "240 yalnızca tahvil, 110 yalnızca kâr payı içindir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**240 Bağlı Menkul Kıymetler** uzun vadeli (duran varlık) amaçla; **110 Hisse Senetleri** ise kısa vadeli (bir yıl içinde elden çıkarma) amaçla tutulan menkul kıymetleri izler. Temel fark **vade/amaç**tır.",
     "source": {
       "kind": "generated",
@@ -753,13 +753,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, bir bağlı ortaklığın 400.000 ₺'lik paylarını satın almayı taahhüt etmiş; bu tutarın 250.000 ₺'sini peşin ödemiş, kalanını sonra ödeyecektir. Kalan ödenmemiş taahhüt tutarı hangi hesapta ve kaç ₺ olarak izlenir?",
     "options": {
-      "A": "246 Bağlı Ortaklıklara Sermaye Taahhütleri (-) — 150.000 ₺",
+      "A": "501 Ödenmemiş Sermaye (-) — 150.000 ₺",
       "B": "245 Bağlı Ortaklıklar — 150.000 ₺",
       "C": "247 Bağlı Ortaklıklar Değer Düşüklüğü Karşılığı (-) — 250.000 ₺",
       "D": "331 Ortaklara Borçlar — 400.000 ₺",
-      "E": "501 Ödenmemiş Sermaye (-) — 150.000 ₺"
+      "E": "246 Bağlı Ortaklıklara Sermaye Taahhütleri (-) — 150.000 ₺"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Ödenmemiş taahhüt = 400.000 − 250.000 = 150.000 ₺. Bu tutar, bağlı ortaklık payını düzenleyen **246 Bağlı Ortaklıklara Sermaye Taahhütleri (-)** hesabında **150.000 ₺** olarak izlenir; ödendikçe kapanır.",
     "source": {
       "kind": "generated",
@@ -776,12 +776,12 @@
     "stem": "Aşağıdakilerden hangisi Tekdüzen Hesap Planı'nda '248 Diğer Mali Duran Varlıklar' hesabının kapsamına en uygun kalemdir?",
     "options": {
       "A": "İşletmenin bir yıl içinde satacağı hisse senetleri",
-      "B": "240–247 hesaplarının kapsamına girmeyen, uzun vadeli diğer mali (finansal) duran varlıklar",
-      "C": "İşletmenin ticari malları",
+      "B": "İşletmenin ticari malları",
+      "C": "240–247 hesaplarının kapsamına girmeyen, uzun vadeli diğer mali (finansal) duran varlıklar",
       "D": "İşletmenin kısa vadeli banka borçları",
       "E": "İşletmenin demirbaşları"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**248 Diğer Mali Duran Varlıklar**; 240–247 hesaplarının kapsamına girmeyen, uzun vadeli **diğer mali (finansal) duran varlıkları** izlemek için kullanılır.",
     "source": {
       "kind": "generated",
@@ -819,13 +819,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "Kayıtlı (maliyet) değeri 300.000 ₺ olan bir iştirak için 40.000 ₺ değer düşüklüğü karşılığı (244) ayrılmıştır. İştirakin bilançoda görüneceği net değer kaç ₺'dir?",
     "options": {
-      "A": "340.000",
+      "A": "260.000",
       "B": "300.000",
-      "C": "260.000",
+      "C": "340.000",
       "D": "40.000",
       "E": "0"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Net değer = Kayıtlı değer − Değer düşüklüğü karşılığı = 300.000 − 40.000 = **260.000 ₺** (242 − 244).",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "Bir işletmenin başka bir şirketin sermayesine %55 oranında ortak olması, bağlı ortaklık ilişkisi açısından ne ifade eder?",
     "options": {
       "A": "İşletmenin bu şirket üzerinde hiçbir etkisi yoktur.",
-      "B": "İşletme %50'yi aşan payla bu şirketi kontrol eder (hâkimiyet sağlar); şirket işletmenin bağlı ortaklığıdır.",
+      "B": "Şirket işletmenin ticari borçlusudur.",
       "C": "Şirket işletmenin kısa vadeli menkul kıymetidir.",
-      "D": "Şirket işletmenin ticari borçlusudur.",
+      "D": "İşletme %50'yi aşan payla bu şirketi kontrol eder (hâkimiyet sağlar); şirket işletmenin bağlı ortaklığıdır.",
       "E": "Bu bir maddi duran varlıktır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**%55 > %50** olduğundan işletme bu şirketi **kontrol eder (hâkimiyet sağlar)** ve şirket işletmenin **bağlı ortaklığıdır** (245 Bağlı Ortaklıklar).",
     "source": {
       "kind": "generated",
@@ -864,12 +864,12 @@
     "stem": "İştirak payında daha önce ayrılan değer düşüklüğü karşılığının, değer düşüklüğünün ortadan kalkması nedeniyle iptal edilmesi durumunda oluşan gelir Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "640 İştiraklerden Temettü Gelirleri",
-      "B": "644 Konusu Kalmayan Karşılıklar",
+      "B": "242 İştirakler",
       "C": "600 Yurt İçi Satışlar",
       "D": "654 Karşılık Giderleri",
-      "E": "242 İştirakler"
+      "E": "644 Konusu Kalmayan Karşılıklar"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Daha önce ayrılan karşılığın konusunun kalmaması nedeniyle iptalinde oluşan gelir **644 Konusu Kalmayan Karşılıklar** hesabına alacak yazılır (244 borçlandırılarak kapatılır).",
     "source": {
       "kind": "generated",
@@ -909,11 +909,11 @@
     "options": {
       "A": "500.000",
       "B": "250.000",
-      "C": "100.000",
+      "C": "20.000",
       "D": "50.000",
-      "E": "20.000"
+      "E": "100.000"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Payına düşen temettü = %20 × 500.000 = **100.000 ₺** → 640 İştiraklerden Temettü Gelirleri.",
     "source": {
       "kind": "generated",
@@ -929,13 +929,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, %60 oranında sahip olduğu bağlı ortaklığının dağıttığı toplam 200.000 ₺ kâr payından payına düşen tutarı tahsil edecektir. Elde edilecek temettü geliri kaç ₺'dir ve hangi hesapta izlenir?",
     "options": {
-      "A": "120.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
+      "A": "200.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
       "B": "80.000 ₺ – 640 İştiraklerden Temettü Gelirleri",
-      "C": "200.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
+      "C": "120.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
       "D": "120.000 ₺ – 600 Yurt İçi Satışlar",
       "E": "60.000 ₺ – 642 Faiz Gelirleri"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Payına düşen temettü = %60 × 200.000 = **120.000 ₺**. Bağlı ortaklıktan elde edildiğinden **641 Bağlı Ortaklıklardan Temettü Gelirleri** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -973,13 +973,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, kayıtlı değeri 180.000 ₺ olan bir iştirak payını 230.000 ₺'ye peşin satmıştır (değer düşüklüğü karşılığı yoktur). Bu satıştan doğan kâr kaç ₺'dir?",
     "options": {
-      "A": "410.000",
+      "A": "50.000",
       "B": "230.000",
       "C": "180.000",
-      "D": "50.000",
+      "D": "410.000",
       "E": "0"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "Satış kârı = 230.000 − 180.000 = **50.000 ₺** → ilgili gelir hesabına (649 Diğer Olağan Gelir ve Kârlar) alacak yazılır.",
     "source": {
       "kind": "generated",
@@ -996,12 +996,12 @@
     "stem": "Sahiplik oranlarına göre uzun vadeli pay yatırımlarının sınıflandırılmasıyla ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
     "options": {
       "A": "%5 → İştirak; %30 → Bağlı Ortaklık; %70 → Bağlı Menkul Kıymet",
-      "B": "%5 → Bağlı Menkul Kıymet (240); %30 → İştirak (242); %70 → Bağlı Ortaklık (245)",
+      "B": "Hepsi İştirak (242) olarak izlenir.",
       "C": "%5 → Bağlı Ortaklık; %30 → Bağlı Menkul Kıymet; %70 → İştirak",
-      "D": "Hepsi İştirak (242) olarak izlenir.",
+      "D": "%5 → Bağlı Menkul Kıymet (240); %30 → İştirak (242); %70 → Bağlı Ortaklık (245)",
       "E": "Hepsi Bağlı Ortaklık (245) olarak izlenir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Doğru eşleştirme: **%5 → 240 Bağlı Menkul Kıymet** (<%10), **%30 → 242 İştirak** (%10–%50), **%70 → 245 Bağlı Ortaklık** (>%50).",
     "source": {
       "kind": "generated",
@@ -1018,12 +1018,12 @@
     "stem": "Aşağıdakilerden hangisi maddi duran varlık (25), maddi olmayan duran varlık (26) ve mali duran varlık (24) ayrımı bakımından doğrudur?",
     "options": {
       "A": "İştirak payı bir maddi duran varlıktır.",
-      "B": "Bina bir maddi duran varlık (25), patent bir maddi olmayan duran varlık (26), iştirak payı ise bir mali duran varlıktır (24).",
-      "C": "Patent bir mali duran varlıktır.",
+      "B": "Patent bir mali duran varlıktır.",
+      "C": "Bina bir maddi duran varlık (25), patent bir maddi olmayan duran varlık (26), iştirak payı ise bir mali duran varlıktır (24).",
       "D": "Bina bir mali duran varlıktır.",
       "E": "İştirak payı bir maddi olmayan duran varlıktır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**Bina** fiziki varlıktır → 25 Maddi Duran Varlık; **patent** fiziki olmayan bir haktır → 26 Maddi Olmayan Duran Varlık; **iştirak payı** uzun vadeli finansal yatırımdır → 24 Mali Duran Varlık.",
     "source": {
       "kind": "generated",
@@ -1083,13 +1083,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İşletme, ödenmiş sermayesi 900.000 ₺ olan bir şirketin paylarının 540.000 ₺'lik kısmına sahiptir. Sahiplik oranı yüzde kaçtır ve pay hangi hesapta izlenir?",
     "options": {
-      "A": "%60 – 245 Bağlı Ortaklıklar",
+      "A": "%54 – 240 Bağlı Menkul Kıymetler",
       "B": "%40 – 242 İştirakler",
       "C": "%60 – 242 İştirakler",
       "D": "%6 – 240 Bağlı Menkul Kıymetler",
-      "E": "%54 – 240 Bağlı Menkul Kıymetler"
+      "E": "%60 – 245 Bağlı Ortaklıklar"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "Sahiplik oranı = 540.000 ÷ 900.000 = **%60** → %50'yi aştığından **245 Bağlı Ortaklıklar**.",
     "source": {
       "kind": "generated",
@@ -1106,12 +1106,12 @@
     "stem": "İştirak payında ayrılan değer düşüklüğü karşılığının kaydında borçlandırılan (gider) hesap aşağıdakilerden hangisidir?",
     "options": {
       "A": "244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (-)",
-      "B": "654 Karşılık Giderleri",
-      "C": "640 İştiraklerden Temettü Gelirleri",
+      "B": "640 İştiraklerden Temettü Gelirleri",
+      "C": "654 Karşılık Giderleri",
       "D": "242 İştirakler",
       "E": "644 Konusu Kalmayan Karşılıklar"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Değer düşüklüğü karşılığı ayrılırken gider hesabı **654 Karşılık Giderleri** borçlandırılır; karşılık hesabı **244** alacaklandırılır.",
     "source": {
       "kind": "generated",
@@ -1127,13 +1127,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "İştirak edilen bir şirketin yönetiminde 'önemli etkiye' sahip olmak, iştirak kavramı bakımından ne anlama gelir?",
     "options": {
-      "A": "Şirketin tüm kararlarını tek başına belirlemek",
-      "B": "Genellikle %10–%50 arası bir payla, şirketin finansal ve faaliyet politikalarına katılabilmek (ancak tek başına kontrol edememek)",
+      "A": "Genellikle %10–%50 arası bir payla, şirketin finansal ve faaliyet politikalarına katılabilmek (ancak tek başına kontrol edememek)",
+      "B": "Şirketin tüm kararlarını tek başına belirlemek",
       "C": "Şirketle hiçbir ilişkisi olmamak",
       "D": "Şirkete kısa vadeli borç vermek",
       "E": "Şirketin tüm varlıklarına sahip olmak"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "İştirakte **önemli etki**; genellikle %10–%50 arası payla, şirketin finansal/faaliyet **politikalarına katılabilmek** anlamına gelir. Tek başına kontrol (>%50) ise bağlı ortaklık ilişkisidir.",
     "source": {
       "kind": "generated",
@@ -1151,11 +1151,11 @@
     "options": {
       "A": "800.000",
       "B": "400.000",
-      "C": "200.000",
+      "C": "25.000",
       "D": "100.000",
-      "E": "25.000"
+      "E": "200.000"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Payına düşen temettü = %25 × 800.000 = **200.000 ₺** → 640 İştiraklerden Temettü Gelirleri.",
     "source": {
       "kind": "generated",
@@ -1172,12 +1172,12 @@
     "stem": "İştirak ve bağlı ortaklık paylarının değerlemesi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Her dönem sonunda amortismana tabi tutulur ve maliyetleri azaltılır.",
-      "B": "Kural olarak maliyet (alış) bedeliyle izlenir; değerinde kalıcı düşüş olursa değer düşüklüğü karşılığı ayrılarak net değer bilançoda gösterilir.",
+      "B": "Stok gibi FIFO yöntemiyle değerlenir.",
       "C": "Her dönem piyasa değerine yükseltilip aradaki fark gelir yazılır.",
-      "D": "Stok gibi FIFO yöntemiyle değerlenir.",
+      "D": "Kural olarak maliyet (alış) bedeliyle izlenir; değerinde kalıcı düşüş olursa değer düşüklüğü karşılığı ayrılarak net değer bilançoda gösterilir.",
       "E": "Reeskonta tabi tutulur."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "İştirak/bağlı ortaklık payları kural olarak **maliyet bedeliyle** izlenir; **amortismana tabi tutulmaz**. Değerlerinde kalıcı düşüş olursa **değer düşüklüğü karşılığı** (244/247) ayrılır ve net değer gösterilir.",
     "source": {
       "kind": "generated",
@@ -1217,11 +1217,11 @@
     "options": {
       "A": "690.000",
       "B": "600.000",
-      "C": "510.000",
+      "C": "0",
       "D": "90.000",
-      "E": "0"
+      "E": "510.000"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Net değer = 600.000 − 90.000 = **510.000 ₺** (245 Bağlı Ortaklıklar − 247 Değer Düşüklüğü Karşılığı).",
     "source": {
       "kind": "generated",
@@ -1238,12 +1238,12 @@
     "stem": "Aşağıdakilerden hangisi mali duran varlıkların ortak özelliklerinden biri değildir?",
     "options": {
       "A": "Uzun vadeli (bir yıldan uzun) amaçlarla elde tutulurlar.",
-      "B": "Finansal nitelikli varlıklardır (pay/menkul kıymet, ortaklık payı).",
+      "B": "İşletmenin bir yıl içinde satmak için elde tuttuğu ticari mallardır.",
       "C": "Genellikle amortismana tabi tutulmazlar.",
-      "D": "İşletmenin bir yıl içinde satmak için elde tuttuğu ticari mallardır.",
+      "D": "Finansal nitelikli varlıklardır (pay/menkul kıymet, ortaklık payı).",
       "E": "Değerlerinde kalıcı düşüş olursa karşılık ayrılabilir."
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "Mali duran varlıklar **ticari mal (stok) değildir**; uzun vadeli finansal yatırımlardır. Diğer seçenekler mali duran varlıkların ortak özellikleridir.",
     "source": {
       "kind": "generated",
@@ -1260,12 +1260,12 @@
     "stem": "İşletme, bir iştirakine olan 400.000 ₺'lik sermaye taahhüdünün kalan son 120.000 ₺'lik kısmını bankadan ödemiştir. Bu ödeme kaydında hangi hesap borçlandırılır (kapatılır)?",
     "options": {
       "A": "102 Bankalar",
-      "B": "243 İştiraklere Sermaye Taahhütleri (-)",
-      "C": "640 İştiraklerden Temettü Gelirleri",
+      "B": "640 İştiraklerden Temettü Gelirleri",
+      "C": "243 İştiraklere Sermaye Taahhütleri (-)",
       "D": "242 İştirakler",
       "E": "654 Karşılık Giderleri"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "Taahhüt ödemesinde, ödenmemiş taahhüdü gösteren düzenleyici hesap **243 İştiraklere Sermaye Taahhütleri (-) borçlandırılarak kapatılır**; karşılığında 102 Bankalar alacaklandırılır.",
     "source": {
       "kind": "generated",
@@ -1281,13 +1281,13 @@
     "konu": "mali_duran_varliklar",
     "stem": "Bir işletmenin başka bir şirkete uzun vadeli olarak %35 oranında ortak olması durumunda bu ilişki nasıl adlandırılır ve hangi hesapta izlenir?",
     "options": {
-      "A": "Bağlı ortaklık – 245 Bağlı Ortaklıklar",
-      "B": "İştirak – 242 İştirakler",
+      "A": "İştirak – 242 İştirakler",
+      "B": "Bağlı ortaklık – 245 Bağlı Ortaklıklar",
       "C": "Bağlı menkul kıymet – 240 Bağlı Menkul Kıymetler",
       "D": "Kısa vadeli yatırım – 110 Hisse Senetleri",
       "E": "Ticari alacak – 120 Alıcılar"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "%35 oranı %10–%50 aralığında olduğundan bu bir **iştirak** ilişkisidir ve **242 İştirakler** hesabında izlenir.",
     "source": {
       "kind": "generated",
@@ -1306,10 +1306,10 @@
       "A": "Yalnız I",
       "B": "I ve II",
       "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "D": "I, II ve III",
+      "E": "I ve III"
     },
-    "answer": "E",
+    "answer": "D",
     "solution": "Üç ifade de doğrudur: **I** <%10 uzun vadeli → 240; **II** %10–%50 → 242 İştirakler; **III** >%50 (kontrol) → 245 Bağlı Ortaklıklar. Doğru cevap **I, II ve III**.",
     "source": {
       "kind": "generated",

@@ -6,12 +6,12 @@
     "stem": "Gelir tablosu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletmenin belirli bir andaki varlık ve kaynak yapısını gösterir.",
-      "B": "İşletmenin bir hesap dönemine ait gelirlerini, giderlerini ve bunların sonucunda oluşan kâr veya zararı gösteren tablodur.",
+      "B": "İşletmenin ortaklarının kimliklerini gösterir.",
       "C": "Yalnızca işletmenin nakit hareketlerini gösterir.",
-      "D": "İşletmenin ortaklarının kimliklerini gösterir.",
+      "D": "İşletmenin bir hesap dönemine ait gelirlerini, giderlerini ve bunların sonucunda oluşan kâr veya zararı gösteren tablodur.",
       "E": "İşletmenin yalnızca borçlarını gösterir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Gelir tablosu**; bir hesap dönemine ait **gelirleri, giderleri ve bunların sonucunda oluşan kâr/zararı** gösteren tablodur. (Belirli bir andaki durum ise bilançoda gösterilir.)",
     "source": {
       "kind": "generated",
@@ -27,13 +27,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "İşletmenin esas faaliyeti çerçevesinde yaptığı mal ve hizmet satışlarının brüt tutarı Tekdüzen Hesap Planı'nda hangi hesap grubunda izlenir?",
     "options": {
-      "A": "60 Brüt Satışlar",
+      "A": "67 Olağandışı Gelir ve Kârlar",
       "B": "61 Satış İndirimleri (-)",
       "C": "62 Satışların Maliyeti (-)",
       "D": "64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar",
-      "E": "67 Olağandışı Gelir ve Kârlar"
+      "E": "60 Brüt Satışlar"
     },
-    "answer": "A",
+    "answer": "E",
     "solution": "İşletmenin esas faaliyetinden doğan mal/hizmet satışlarının brüt tutarı **60 Brüt Satışlar** grubunda (600 Yurt İçi Satışlar, 601 Yurt Dışı Satışlar, 602 Diğer Gelirler) izlenir.",
     "source": {
       "kind": "generated",
@@ -72,12 +72,12 @@
     "stem": "'61 Satış İndirimleri (-)' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Brüt satışları artıran bir gelir grubudur.",
-      "B": "Brüt satışlardan düşülen (satıştan iadeler, satış iskontoları vb.) negatif nitelikli hesapları içerir.",
-      "C": "İşletmenin maddi duran varlıklarını izler.",
+      "B": "İşletmenin maddi duran varlıklarını izler.",
+      "C": "Brüt satışlardan düşülen (satıştan iadeler, satış iskontoları vb.) negatif nitelikli hesapları içerir.",
       "D": "İşletmenin borçlarını izler.",
       "E": "Finansman giderlerini izler."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**61 Satış İndirimleri (-)**; brüt satışlardan düşülen (610 Satıştan İadeler, 611 Satış İskontoları, 612 Diğer İndirimler) **negatif nitelikli** hesapları içerir. Net satışlara ulaşmak için brüt satışlardan indirilir.",
     "source": {
       "kind": "generated",
@@ -116,12 +116,12 @@
     "stem": "İşletmenin, satış tutarı üzerinden müşterilerine sonradan (ör. erken ödeme, ciro primi nedeniyle) yaptığı iskontolar Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "610 Satıştan İadeler (-)",
-      "B": "611 Satış İskontoları (-)",
+      "B": "632 Genel Yönetim Giderleri (-)",
       "C": "600 Yurt İçi Satışlar",
       "D": "653 Komisyon Giderleri",
-      "E": "632 Genel Yönetim Giderleri (-)"
+      "E": "611 Satış İskontoları (-)"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Satış tutarı üzerinden sonradan yapılan iskontolar **611 Satış İskontoları (-)** hesabında izlenir ve brüt satışlardan düşülür. (Kasa/peşin iskontosunun burada izlendiği kabul edilir.)",
     "source": {
       "kind": "generated",
@@ -138,12 +138,12 @@
     "stem": "İşletmenin sattığı ticari malların maliyeti Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
       "A": "153 Ticari Mallar",
-      "B": "600 Yurt İçi Satışlar",
-      "C": "621 Satılan Ticari Mallar Maliyeti (-)",
+      "B": "621 Satılan Ticari Mallar Maliyeti (-)",
+      "C": "600 Yurt İçi Satışlar",
       "D": "632 Genel Yönetim Giderleri (-)",
       "E": "610 Satıştan İadeler (-)"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Satılan ticari malların maliyeti **621 Satılan Ticari Mallar Maliyeti (-)** hesabında izlenir (negatif nitelikli sonuç hesabı). Net satışlardan düşülerek brüt satış kârına ulaşılır.",
     "source": {
       "kind": "generated",
@@ -160,12 +160,12 @@
     "stem": "Gelir tablosunda 'Net Satışlar' nasıl hesaplanır?",
     "options": {
       "A": "Brüt Satışlar + Satış İndirimleri",
-      "B": "Brüt Satışlar − Satış İndirimleri (satıştan iadeler, iskontolar vb.)",
+      "B": "Brüt Satışlar − Faaliyet Giderleri",
       "C": "Brüt Satışlar − Satışların Maliyeti",
-      "D": "Brüt Satışlar − Faaliyet Giderleri",
+      "D": "Brüt Satışlar − Satış İndirimleri (satıştan iadeler, iskontolar vb.)",
       "E": "Brüt Satışlar + Satışların Maliyeti"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Net Satışlar = Brüt Satışlar − Satış İndirimleri** (satıştan iadeler + satış iskontoları + diğer indirimler).",
     "source": {
       "kind": "generated",
@@ -183,11 +183,11 @@
     "options": {
       "A": "550.000",
       "B": "500.000",
-      "C": "470.000",
-      "D": "450.000",
+      "C": "450.000",
+      "D": "470.000",
       "E": "50.000"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "Net Satışlar = Brüt Satışlar − (İadeler + İskontolar) = 500.000 − (30.000 + 20.000) = **450.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -203,13 +203,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Gelir tablosunda 'Brüt Satış Kârı (veya Zararı)' nasıl bulunur?",
     "options": {
-      "A": "Net Satışlar + Satışların Maliyeti",
-      "B": "Net Satışlar − Satışların Maliyeti",
+      "A": "Net Satışlar − Satışların Maliyeti",
+      "B": "Net Satışlar + Satışların Maliyeti",
       "C": "Brüt Satışlar − Faaliyet Giderleri",
       "D": "Net Satışlar − Faaliyet Giderleri",
       "E": "Faaliyet Kârı − Finansman Giderleri"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "**Brüt Satış Kârı/Zararı = Net Satışlar − Satışların Maliyeti (62)**. Sonuç pozitifse brüt satış kârı, negatifse brüt satış zararıdır.",
     "source": {
       "kind": "generated",
@@ -226,12 +226,12 @@
     "stem": "Bir işletmenin net satışları 450.000 ₺, satışların maliyeti (621) 300.000 ₺'dir. İşletmenin brüt satış kârı kaç ₺'dir?",
     "options": {
       "A": "750.000",
-      "B": "450.000",
+      "B": "150.000",
       "C": "300.000",
-      "D": "150.000",
+      "D": "450.000",
       "E": "0"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti = 450.000 − 300.000 = **150.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -247,13 +247,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "İşletmenin pazarlama, satış-dağıtım ve genel yönetim gibi esas faaliyetle ilgili giderleri Tekdüzen Hesap Planı'nda hangi hesap grubunda izlenir?",
     "options": {
-      "A": "62 Satışların Maliyeti (-)",
-      "B": "63 Faaliyet Giderleri (-)",
+      "A": "63 Faaliyet Giderleri (-)",
+      "B": "62 Satışların Maliyeti (-)",
       "C": "66 Finansman Giderleri (-)",
       "D": "68 Olağandışı Gider ve Zararlar (-)",
       "E": "60 Brüt Satışlar"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Pazarlama-satış-dağıtım (631) ve genel yönetim (632) gibi esas faaliyet giderleri **63 Faaliyet Giderleri (-)** grubunda izlenir; brüt satış kârından düşülerek faaliyet kârına ulaşılır.",
     "source": {
       "kind": "generated",
@@ -270,12 +270,12 @@
     "stem": "Gelir tablosunda 'Faaliyet Kârı (veya Zararı)' nasıl bulunur?",
     "options": {
       "A": "Brüt Satış Kârı + Faaliyet Giderleri",
-      "B": "Brüt Satış Kârı − Faaliyet Giderleri (63)",
+      "B": "Dönem Kârı − Vergi",
       "C": "Net Satışlar − Satışların Maliyeti",
       "D": "Faaliyet Kârı + Finansman Giderleri",
-      "E": "Dönem Kârı − Vergi"
+      "E": "Brüt Satış Kârı − Faaliyet Giderleri (63)"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Faaliyet Kârı/Zararı = Brüt Satış Kârı − Faaliyet Giderleri (63)**. Esas faaliyetin kârlılığını gösterir.",
     "source": {
       "kind": "generated",
@@ -292,12 +292,12 @@
     "stem": "Aşağıdakilerden hangisi '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubunda yer alır?",
     "options": {
       "A": "600 Yurt İçi Satışlar",
-      "B": "642 Faiz Gelirleri",
+      "B": "660 Kısa Vadeli Borçlanma Giderleri (-)",
       "C": "621 Satılan Ticari Mallar Maliyeti (-)",
-      "D": "660 Kısa Vadeli Borçlanma Giderleri (-)",
+      "D": "642 Faiz Gelirleri",
       "E": "689 Diğer Olağandışı Gider ve Zararlar (-)"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**642 Faiz Gelirleri**, esas faaliyet dışı ama olağan nitelikli gelirlerdendir → **64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar** grubundadır (645 Menkul Kıymet Satış Kârları, 646 Kambiyo Kârları, 647 Reeskont Faiz Gelirleri de bu gruptadır).",
     "source": {
       "kind": "generated",
@@ -314,12 +314,12 @@
     "stem": "Aşağıdakilerden hangisi '65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)' grubunda yer alır?",
     "options": {
       "A": "642 Faiz Gelirleri",
-      "B": "654 Karşılık Giderleri (-)",
-      "C": "600 Yurt İçi Satışlar",
+      "B": "600 Yurt İçi Satışlar",
+      "C": "654 Karşılık Giderleri (-)",
       "D": "679 Diğer Olağandışı Gelir ve Kârlar",
       "E": "631 Pazarlama, Satış ve Dağıtım Giderleri (-)"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**654 Karşılık Giderleri (-)**, esas faaliyet dışı olağan giderlerdendir → **65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)** grubundadır (655 Menkul Kıymet Satış Zararları, 656 Kambiyo Zararları, 657 Reeskont Faiz Giderleri de bu gruptadır).",
     "source": {
       "kind": "generated",
@@ -337,11 +337,11 @@
     "options": {
       "A": "63 Faaliyet Giderleri (-)",
       "B": "65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)",
-      "C": "66 Finansman Giderleri (-)",
+      "C": "62 Satışların Maliyeti (-)",
       "D": "68 Olağandışı Gider ve Zararlar (-)",
-      "E": "62 Satışların Maliyeti (-)"
+      "E": "66 Finansman Giderleri (-)"
     },
-    "answer": "C",
+    "answer": "E",
     "solution": "Kredi faizleri gibi borçlanma maliyetleri **66 Finansman Giderleri (-)** grubunda (660 Kısa Vadeli, 661 Uzun Vadeli Borçlanma Giderleri) izlenir.",
     "source": {
       "kind": "generated",
@@ -380,12 +380,12 @@
     "stem": "Maddi duran varlık satış zararı gibi arızi (olağandışı) giderler Tekdüzen Hesap Planı'nda hangi hesap grubunda izlenir?",
     "options": {
       "A": "63 Faaliyet Giderleri (-)",
-      "B": "65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)",
+      "B": "68 Olağandışı Gider ve Zararlar (-)",
       "C": "66 Finansman Giderleri (-)",
-      "D": "68 Olağandışı Gider ve Zararlar (-)",
+      "D": "65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)",
       "E": "62 Satışların Maliyeti (-)"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "Arızi/olağandışı giderler (ör. 689 Diğer Olağandışı Gider ve Zararlar, 681 Önceki Dönem Giderleri) **68 Olağandışı Gider ve Zararlar (-)** grubunda izlenir.",
     "source": {
       "kind": "generated",
@@ -402,12 +402,12 @@
     "stem": "Gelir tablosunda kâr kademelerinin oluşum sırası aşağıdakilerden hangisidir?",
     "options": {
       "A": "Dönem Net Kârı → Faaliyet Kârı → Brüt Satış Kârı",
-      "B": "Brüt Satış Kârı → Faaliyet Kârı → Olağan Kâr → Dönem Kârı → Dönem Net Kârı",
+      "B": "Faaliyet Kârı → Brüt Satış Kârı → Dönem Kârı",
       "C": "Olağan Kâr → Brüt Satış Kârı → Faaliyet Kârı",
-      "D": "Faaliyet Kârı → Brüt Satış Kârı → Dönem Kârı",
+      "D": "Brüt Satış Kârı → Faaliyet Kârı → Olağan Kâr → Dönem Kârı → Dönem Net Kârı",
       "E": "Dönem Kârı → Brüt Satış Kârı → Faaliyet Kârı"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Gelir tablosunda kâr kademeleri sırasıyla: **Brüt Satış Kârı → Faaliyet Kârı → Olağan Kâr → Dönem Kârı → Dönem Net Kârı** biçiminde oluşur.",
     "source": {
       "kind": "generated",
@@ -423,13 +423,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Aşağıdaki hesaplardan hangisi bir gelir tablosu (sonuç) hesabı değildir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
+      "A": "320 Satıcılar",
       "B": "621 Satılan Ticari Mallar Maliyeti (-)",
       "C": "632 Genel Yönetim Giderleri (-)",
-      "D": "320 Satıcılar",
+      "D": "600 Yurt İçi Satışlar",
       "E": "642 Faiz Gelirleri"
     },
-    "answer": "D",
+    "answer": "A",
     "solution": "**320 Satıcılar** bir bilanço (pasif/borç) hesabıdır, gelir tablosu hesabı değildir. Diğerleri (600, 621, 632, 642) gelir tablosu (sonuç) hesaplarıdır.",
     "source": {
       "kind": "generated",
@@ -445,13 +445,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "İşletme, 100.000 ₺ + %20 KDV tutarında ticari malı peşin (nakit) satmıştır. Bu satışın hasılat kaydı aşağıdakilerden hangisidir? (Maliyet kaydı ayrıca yapılır.)",
     "options": {
-      "A": "100 Kasa (B) 120.000 / 600 Yurt İçi Satışlar (A) 100.000, 391 Hesaplanan KDV (A) 20.000",
+      "A": "120 Alıcılar (B) 120.000 / 600 Yurt İçi Satışlar (A) 120.000",
       "B": "100 Kasa (B) 120.000 / 600 Yurt İçi Satışlar (A) 120.000",
       "C": "600 Yurt İçi Satışlar (B) 100.000, 391 Hesaplanan KDV (B) 20.000 / 100 Kasa (A) 120.000",
-      "D": "120 Alıcılar (B) 120.000 / 600 Yurt İçi Satışlar (A) 120.000",
+      "D": "100 Kasa (B) 120.000 / 600 Yurt İçi Satışlar (A) 100.000, 391 Hesaplanan KDV (A) 20.000",
       "E": "100 Kasa (B) 120.000 / 649 Diğer Olağan Gelir ve Kârlar (A) 100.000, 391 Hesaplanan KDV (A) 20.000"
     },
-    "answer": "A",
+    "answer": "D",
     "solution": "Peşin satışta nakit girişi **100 Kasa (B) 120.000**; satış hasılatı **600 Yurt İçi Satışlar (A) 100.000**; satış üzerinden hesaplanan KDV **391 Hesaplanan KDV (A) 20.000**.",
     "source": {
       "kind": "generated",
@@ -467,13 +467,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Daha önce peşin satılan maldan 10.000 ₺ + %20 KDV tutarındaki kısım müşteri tarafından iade edilmiş ve bedeli nakit geri ödenmiştir. Bu iadenin kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "610 Satıştan İadeler (-) (B) 10.000, 391 Hesaplanan KDV (B) 2.000 / 100 Kasa (A) 12.000",
+      "A": "600 Yurt İçi Satışlar (B) 10.000 / 100 Kasa (A) 10.000",
       "B": "100 Kasa (B) 12.000 / 610 Satıştan İadeler (-) (A) 10.000, 391 Hesaplanan KDV (A) 2.000",
-      "C": "600 Yurt İçi Satışlar (B) 10.000 / 100 Kasa (A) 10.000",
+      "C": "610 Satıştan İadeler (-) (B) 10.000, 391 Hesaplanan KDV (B) 2.000 / 100 Kasa (A) 12.000",
       "D": "610 Satıştan İadeler (-) (B) 12.000 / 100 Kasa (A) 12.000",
       "E": "153 Ticari Mallar (B) 10.000 / 100 Kasa (A) 10.000"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Satış iadesinde **610 Satıştan İadeler (-) (B) 10.000** (brüt satışı azaltacak negatif hesap); daha önce hesaplanan KDV düzeltilir **391 Hesaplanan KDV (B) 2.000**; nakit çıkışı **100 Kasa (A) 12.000**.",
     "source": {
       "kind": "generated",
@@ -490,12 +490,12 @@
     "stem": "Bir işletmenin brüt satışları 800.000 ₺, satıştan iadeleri 50.000 ₺, satış iskontoları 30.000 ₺'dir. Net satışlar kaç ₺'dir?",
     "options": {
       "A": "880.000",
-      "B": "800.000",
+      "B": "720.000",
       "C": "750.000",
-      "D": "720.000",
+      "D": "800.000",
       "E": "680.000"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "Net Satışlar = 800.000 − (50.000 + 30.000) = 800.000 − 80.000 = **720.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -514,10 +514,10 @@
       "A": "1.120.000",
       "B": "720.000",
       "C": "400.000",
-      "D": "320.000",
-      "E": "0"
+      "D": "0",
+      "E": "320.000"
     },
-    "answer": "D",
+    "answer": "E",
     "solution": "Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti = 720.000 − 400.000 = **320.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -533,13 +533,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Brüt satış kârı 320.000 ₺ olan bir işletmenin faaliyet giderleri; pazarlama-satış-dağıtım 80.000 ₺ ve genel yönetim 60.000 ₺'dir. İşletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "460.000",
+      "A": "180.000",
       "B": "320.000",
-      "C": "180.000",
+      "C": "460.000",
       "D": "140.000",
       "E": "240.000"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Faaliyet giderleri toplamı = 80.000 + 60.000 = 140.000 ₺. Faaliyet Kârı = Brüt Satış Kârı − Faaliyet Giderleri = 320.000 − 140.000 = **180.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -556,12 +556,12 @@
     "stem": "Faaliyet kârı 180.000 ₺ olan bir işletmenin diğer faaliyetlerden olağan geliri 40.000 ₺, diğer faaliyetlerden olağan gideri 20.000 ₺ ve finansman gideri 30.000 ₺'dir. İşletmenin olağan kârı kaç ₺'dir?",
     "options": {
       "A": "270.000",
-      "B": "180.000",
-      "C": "170.000",
+      "B": "170.000",
+      "C": "180.000",
       "D": "150.000",
       "E": "90.000"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Olağan Kâr = Faaliyet Kârı + Diğer Olağan Gelir − Diğer Olağan Gider − Finansman Giderleri = 180.000 + 40.000 − 20.000 − 30.000 = **170.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -580,10 +580,10 @@
       "A": "200.000",
       "B": "180.000",
       "C": "170.000",
-      "D": "160.000",
-      "E": "140.000"
+      "D": "140.000",
+      "E": "160.000"
     },
-    "answer": "D",
+    "answer": "E",
     "solution": "Dönem Kârı = Olağan Kâr + Olağandışı Gelir − Olağandışı Gider = 170.000 + 10.000 − 20.000 = **160.000 ₺** (vergi öncesi kâr).",
     "source": {
       "kind": "generated",
@@ -599,13 +599,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Vergi öncesi dönem kârı 160.000 ₺ olan bir işletmede, dönem kârı vergi ve diğer yasal yükümlülük karşılığı %25 oranında hesaplanmaktadır. İşletmenin dönem net kârı kaç ₺'dir?",
     "options": {
-      "A": "160.000",
+      "A": "120.000",
       "B": "135.000",
-      "C": "120.000",
+      "C": "160.000",
       "D": "40.000",
       "E": "200.000"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Vergi karşılığı = 160.000 × %25 = 40.000 ₺. Dönem Net Kârı = Dönem Kârı − Vergi Karşılığı = 160.000 − 40.000 = **120.000 ₺** (692 Dönem Net Kârı).",
     "source": {
       "kind": "generated",
@@ -622,12 +622,12 @@
     "stem": "Gelir tablosu hesaplarının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Gelir hesapları borç, gider hesapları alacak kalanı verir.",
-      "B": "Gelir hesapları (60, 64, 67) alacak; gider/maliyet hesapları (62, 63, 65, 66, 68) borç çalışır ve dönem sonunda 690 Dönem Kârı veya Zararı hesabına aktarılır.",
+      "B": "Gelir tablosu hesapları hiç kapatılmaz.",
       "C": "Tüm gelir tablosu hesapları bilançoda gösterilir.",
-      "D": "Gelir tablosu hesapları hiç kapatılmaz.",
+      "D": "Gelir hesapları (60, 64, 67) alacak; gider/maliyet hesapları (62, 63, 65, 66, 68) borç çalışır ve dönem sonunda 690 Dönem Kârı veya Zararı hesabına aktarılır.",
       "E": "Gelir hesapları ile gider hesapları aynı yönde çalışır."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**Gelir hesapları (60, 64, 67) alacak**; **gider/maliyet hesapları (62, 63, 65, 66, 68) borç** çalışır. Dönem sonunda hepsi **690 Dönem Kârı veya Zararı**'na aktarılarak sonuç bulunur.",
     "source": {
       "kind": "generated",
@@ -643,13 +643,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Dönem sonunda tüm gelir ve gider hesaplarının aktarıldığı, dönemin vergi öncesi kâr/zararının belirlendiği hesap Tekdüzen Hesap Planı'nda hangisidir?",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı",
+      "A": "590 Dönem Net Kârı",
       "B": "692 Dönem Net Kârı veya Zararı",
-      "C": "590 Dönem Net Kârı",
+      "C": "690 Dönem Kârı veya Zararı",
       "D": "600 Yurt İçi Satışlar",
       "E": "391 Hesaplanan KDV"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "Dönem sonunda tüm gelir (alacak) ve gider (borç) hesapları **690 Dönem Kârı veya Zararı** hesabına aktarılır; bu hesabın kalanı dönemin **vergi öncesi** kâr/zararını verir.",
     "source": {
       "kind": "generated",
@@ -665,13 +665,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Dönem kârı üzerinden hesaplanan vergi ve diğer yasal yükümlülük karşılıkları, dönem net kârının belirlenmesinde Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı",
-      "B": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
+      "A": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
+      "B": "690 Dönem Kârı veya Zararı",
       "C": "692 Dönem Net Kârı veya Zararı",
       "D": "360 Ödenecek Vergi ve Fonlar",
       "E": "770 Genel Yönetim Giderleri (-)"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Dönem kârı üzerinden hesaplanan vergi karşılığı, sonuç hesabı olarak **691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)** hesabında izlenir (690'dan düşülerek 692'ye ulaşılır).",
     "source": {
       "kind": "generated",
@@ -688,12 +688,12 @@
     "stem": "Vergi karşılığı düşüldükten sonra kalan ve bilançodaki 590 Dönem Net Kârı'na aktarılacak sonuç Tekdüzen Hesap Planı'nda hangi hesapta belirlenir?",
     "options": {
       "A": "690 Dönem Kârı veya Zararı",
-      "B": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
-      "C": "692 Dönem Net Kârı veya Zararı",
+      "B": "692 Dönem Net Kârı veya Zararı",
+      "C": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
       "D": "600 Yurt İçi Satışlar",
       "E": "570 Geçmiş Yıllar Kârları"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "690'dan 691 (vergi karşılığı) düşüldükten sonra kalan tutar **692 Dönem Net Kârı veya Zararı** hesabında belirlenir ve bilançodaki **590 Dönem Net Kârı**'na aktarılır.",
     "source": {
       "kind": "generated",
@@ -710,12 +710,12 @@
     "stem": "İşletmenin dövizli işlemlerinden doğan kur farkı kârları (kambiyo kârları) ve zararları (kambiyo zararları) gelir tablosunda hangi gruplarda izlenir?",
     "options": {
       "A": "Her ikisi de 60 Brüt Satışlar'da",
-      "B": "Kambiyo kârları 646 (64 Diğer Faaliyetlerden Olağan Gelir), kambiyo zararları 656 (65 Diğer Faaliyetlerden Olağan Gider) grubunda",
+      "B": "Her ikisi de 62 Satışların Maliyeti'nde",
       "C": "Her ikisi de 66 Finansman Giderleri'nde",
       "D": "Kambiyo kârları 67, kambiyo zararları 68 grubunda",
-      "E": "Her ikisi de 62 Satışların Maliyeti'nde"
+      "E": "Kambiyo kârları 646 (64 Diğer Faaliyetlerden Olağan Gelir), kambiyo zararları 656 (65 Diğer Faaliyetlerden Olağan Gider) grubunda"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**Kambiyo kârları → 646 Kambiyo Kârları (64 grubu, olağan gelir)**; **kambiyo zararları → 656 Kambiyo Zararları (65 grubu, olağan gider)**.",
     "source": {
       "kind": "generated",
@@ -731,13 +731,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Reeskont işlemlerinden doğan faiz gelir ve giderleri gelir tablosunda hangi hesaplarda izlenir?",
     "options": {
-      "A": "Reeskont faiz gelirleri 647 (64 grubu), reeskont faiz giderleri 657 (65 grubu)",
+      "A": "Her ikisi de 600 Yurt İçi Satışlar'da",
       "B": "Her ikisi de 66 Finansman Giderleri'nde",
-      "C": "Her ikisi de 600 Yurt İçi Satışlar'da",
+      "C": "Reeskont faiz gelirleri 647 (64 grubu), reeskont faiz giderleri 657 (65 grubu)",
       "D": "Reeskont faiz gelirleri 67, giderleri 68 grubunda",
       "E": "Her ikisi de 62 Satışların Maliyeti'nde"
     },
-    "answer": "A",
+    "answer": "C",
     "solution": "**Reeskont faiz gelirleri → 647 Reeskont Faiz Gelirleri (64 grubu, olağan gelir)**; **reeskont faiz giderleri → 657 Reeskont Faiz Giderleri (65 grubu, olağan gider)**.",
     "source": {
       "kind": "generated",
@@ -754,12 +754,12 @@
     "stem": "'631 Pazarlama, Satış ve Dağıtım Giderleri' ile '632 Genel Yönetim Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İkisi de satışların maliyetine dâhildir.",
-      "B": "631 ürünlerin pazarlanması-satışı-dağıtımıyla ilgili giderleri; 632 ise işletmenin genel yönetimiyle ilgili giderleri izler. İkisi de 63 Faaliyet Giderleri grubundadır.",
+      "B": "İkisi de finansman gideridir.",
       "C": "631 bir gelir, 632 bir borç hesabıdır.",
-      "D": "İkisi de finansman gideridir.",
+      "D": "631 ürünlerin pazarlanması-satışı-dağıtımıyla ilgili giderleri; 632 ise işletmenin genel yönetimiyle ilgili giderleri izler. İkisi de 63 Faaliyet Giderleri grubundadır.",
       "E": "İkisi de olağandışı giderdir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**631** ürünlerin pazarlanması, satışı ve dağıtımıyla ilgili giderleri; **632** işletmenin genel yönetimiyle ilgili giderleri izler. Her ikisi de **63 Faaliyet Giderleri (-)** grubundadır ve brüt satış kârından düşülür.",
     "source": {
       "kind": "generated",
@@ -798,12 +798,12 @@
     "stem": "Bir işletmenin net satışları 300.000 ₺, satışların maliyeti 340.000 ₺'dir. Buna göre işletmenin brüt satış sonucu aşağıdakilerden hangisidir?",
     "options": {
       "A": "40.000 ₺ brüt satış kârı",
-      "B": "40.000 ₺ brüt satış zararı",
+      "B": "Sonuç sıfırdır",
       "C": "640.000 ₺ brüt satış kârı",
       "D": "300.000 ₺ brüt satış kârı",
-      "E": "Sonuç sıfırdır"
+      "E": "40.000 ₺ brüt satış zararı"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Brüt Satış Sonucu = Net Satışlar − Satışların Maliyeti = 300.000 − 340.000 = **−40.000 ₺** → 40.000 ₺ **brüt satış zararı** (maliyet net satışı aştı).",
     "source": {
       "kind": "generated",
@@ -820,12 +820,12 @@
     "stem": "'Faaliyet kârı' ile 'olağan kâr' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İkisi aynı şeydir.",
-      "B": "Faaliyet kârına diğer faaliyetlerden olağan gelirler eklenip, olağan giderler ve finansman giderleri düşülünce olağan kâra ulaşılır.",
-      "C": "Olağan kâr her zaman faaliyet kârından büyüktür.",
+      "B": "Olağan kâr her zaman faaliyet kârından büyüktür.",
+      "C": "Faaliyet kârına diğer faaliyetlerden olağan gelirler eklenip, olağan giderler ve finansman giderleri düşülünce olağan kâra ulaşılır.",
       "D": "Faaliyet kârı vergiden sonraki kârdır.",
       "E": "Olağan kâr, satışların maliyetinden önce hesaplanır."
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**Olağan Kâr = Faaliyet Kârı + Diğer Faaliyetlerden Olağan Gelirler (64) − Diğer Faaliyetlerden Olağan Giderler (65) − Finansman Giderleri (66)**. İkisi farklı kâr kademeleridir.",
     "source": {
       "kind": "generated",
@@ -842,12 +842,12 @@
     "stem": "Satışların maliyeti hesaplarının (62 grubu) gelir tablosunda '(-)' negatif nitelikli olarak gösterilmesinin nedeni aşağıdakilerden hangisidir?",
     "options": {
       "A": "Bir gelir olması",
-      "B": "Net satışlardan düşülerek brüt satış kârına ulaşılmasını sağlayan bir gider/maliyet unsuru olması",
+      "B": "Bir özkaynak kalemi olması",
       "C": "Bir varlık olması",
-      "D": "Bir özkaynak kalemi olması",
+      "D": "Net satışlardan düşülerek brüt satış kârına ulaşılmasını sağlayan bir gider/maliyet unsuru olması",
       "E": "Bir borç olması"
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "**62 Satışların Maliyeti (-)**, satılan malların/hizmetlerin maliyetini gösteren bir gider unsurudur; net satışlardan **düşülerek** brüt satış kârına ulaşılmasını sağladığı için '(-)' negatif nitelikli gösterilir.",
     "source": {
       "kind": "generated",
@@ -863,13 +863,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Vergi öncesi dönem kârı 200.000 ₺ olan bir işletmede vergi ve diğer yasal yükümlülük karşılığı %25 hesaplanmıştır. Ayrılacak vergi karşılığı (691) tutarı kaç ₺'dir?",
     "options": {
-      "A": "200.000",
+      "A": "50.000",
       "B": "150.000",
-      "C": "50.000",
+      "C": "200.000",
       "D": "40.000",
       "E": "25.000"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Vergi karşılığı = Vergi öncesi kâr × oran = 200.000 × %25 = **50.000 ₺** → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-).",
     "source": {
       "kind": "generated",
@@ -887,11 +887,11 @@
     "options": {
       "A": "650.000",
       "B": "600.000",
-      "C": "560.000",
-      "D": "550.000",
+      "C": "550.000",
+      "D": "560.000",
       "E": "500.000"
     },
-    "answer": "D",
+    "answer": "C",
     "solution": "Net Satışlar = 600.000 − (40.000 + 10.000) = **550.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -908,12 +908,12 @@
     "stem": "Net satışları 550.000 ₺, satışların maliyeti 350.000 ₺ olan bir işletmenin brüt satış kârı kaç ₺'dir?",
     "options": {
       "A": "900.000",
-      "B": "550.000",
+      "B": "200.000",
       "C": "350.000",
-      "D": "200.000",
+      "D": "550.000",
       "E": "150.000"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "Brüt Satış Kârı = 550.000 − 350.000 = **200.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -931,11 +931,11 @@
     "options": {
       "A": "270.000",
       "B": "200.000",
-      "C": "130.000",
-      "D": "70.000",
+      "C": "70.000",
+      "D": "130.000",
       "E": "0"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "Faaliyet Kârı = Brüt Satış Kârı − Faaliyet Giderleri = 200.000 − 70.000 = **130.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -954,10 +954,10 @@
       "A": "150.000",
       "B": "140.000",
       "C": "130.000",
-      "D": "120.000",
-      "E": "110.000"
+      "D": "110.000",
+      "E": "120.000"
     },
-    "answer": "D",
+    "answer": "E",
     "solution": "Dönem Kârı = Olağan Kâr + Olağandışı Gelir − Olağandışı Gider = 130.000 + 5.000 − 15.000 = **120.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -973,13 +973,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Vergi öncesi dönem kârı 120.000 ₺ olan bir işletmede vergi karşılığı %25 hesaplanmıştır. Dönem net kârı kaç ₺'dir?",
     "options": {
-      "A": "120.000",
+      "A": "90.000",
       "B": "100.000",
-      "C": "90.000",
+      "C": "120.000",
       "D": "30.000",
       "E": "80.000"
     },
-    "answer": "C",
+    "answer": "A",
     "solution": "Vergi karşılığı = 120.000 × %25 = 30.000 ₺. Dönem Net Kârı = 120.000 − 30.000 = **90.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -996,12 +996,12 @@
     "stem": "Aşağıdaki hesaplardan hangileri '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubunda yer alır?\nI. 642 Faiz Gelirleri\nII. 645 Menkul Kıymet Satış Kârları\nIII. 646 Kambiyo Kârları",
     "options": {
       "A": "Yalnız I",
-      "B": "I ve II",
+      "B": "I, II ve III",
       "C": "II ve III",
       "D": "I ve III",
-      "E": "I, II ve III"
+      "E": "I ve II"
     },
-    "answer": "E",
+    "answer": "B",
     "solution": "Üçü de **64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar** grubundadır: **642** Faiz Gelirleri, **645** Menkul Kıymet Satış Kârları, **646** Kambiyo Kârları. Doğru cevap **I, II ve III**.",
     "source": {
       "kind": "generated",
@@ -1039,13 +1039,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Ticaret işletmesinde 'Satılan Ticari Mallar Maliyeti (621)' aşağıdaki hangi yolla hesaplanır?",
     "options": {
-      "A": "Dönem Başı Mal Mevcudu + Dönem İçi Alışlar + Dönem Sonu Mal Mevcudu",
-      "B": "Dönem Başı Mal Mevcudu + Dönem İçi Alışlar − Dönem Sonu Mal Mevcudu",
+      "A": "Dönem Başı Mal Mevcudu + Dönem İçi Alışlar − Dönem Sonu Mal Mevcudu",
+      "B": "Dönem Başı Mal Mevcudu + Dönem İçi Alışlar + Dönem Sonu Mal Mevcudu",
       "C": "Dönem Sonu Mal Mevcudu − Dönem İçi Alışlar",
       "D": "Net Satışlar − Faaliyet Giderleri",
       "E": "Dönem İçi Alışlar − Dönem Başı Mal Mevcudu"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Satılan Ticari Mallar Maliyeti = **Dönem Başı Mal Mevcudu + Dönem İçi Alışlar − Dönem Sonu Mal Mevcudu**. Örn: 80.000 + 400.000 − 90.000 = 390.000 ₺.",
     "source": {
       "kind": "generated",
@@ -1062,12 +1062,12 @@
     "stem": "Satıştan iadeler (610) ve satış iskontolarının (611) gelir tablosundaki etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Brüt satışları artırırlar.",
-      "B": "Brüt satışlardan düşülerek net satışları azaltırlar (negatif nitelikli hesaplardır).",
+      "B": "Özkaynakları artırırlar.",
       "C": "Satışların maliyetini artırırlar.",
       "D": "Doğrudan finansman gideri yazılırlar.",
-      "E": "Özkaynakları artırırlar."
+      "E": "Brüt satışlardan düşülerek net satışları azaltırlar (negatif nitelikli hesaplardır)."
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "**610 Satıştan İadeler (-)** ve **611 Satış İskontoları (-)** negatif nitelikli hesaplardır; brüt satışlardan **düşülerek net satışları azaltırlar**.",
     "source": {
       "kind": "generated",
@@ -1085,11 +1085,11 @@
     "options": {
       "A": "Yalnız I",
       "B": "I ve II",
-      "C": "I ve III",
-      "D": "II ve III",
+      "C": "II ve III",
+      "D": "I ve III",
       "E": "I, II ve III"
     },
-    "answer": "C",
+    "answer": "D",
     "solution": "**I (600 Yurt İçi Satışlar)** ve **III (632 Genel Yönetim Giderleri)** gelir tablosu (sonuç) hesaplarıdır. **II (320 Satıcılar)** ise bir bilanço (borç) hesabıdır. Doğru cevap **I ve III**.",
     "source": {
       "kind": "generated",
@@ -1128,12 +1128,12 @@
     "stem": "Vergi öncesi dönem kârı 120.000 ₺ olan bir işletmede vergi karşılığı %25 hesaplanmıştır. Ayrılacak vergi karşılığı (691) kaç ₺'dir?",
     "options": {
       "A": "90.000",
-      "B": "60.000",
-      "C": "30.000",
+      "B": "30.000",
+      "C": "60.000",
       "D": "25.000",
       "E": "12.000"
     },
-    "answer": "C",
+    "answer": "B",
     "solution": "Vergi karşılığı = 120.000 × %25 = **30.000 ₺** → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-).",
     "source": {
       "kind": "generated",
@@ -1149,13 +1149,13 @@
     "konu": "gelir_tablosu_hesaplari",
     "stem": "Brüt satış kârı 90.000 ₺, toplam faaliyet giderleri 120.000 ₺ olan bir işletmenin faaliyet sonucu aşağıdakilerden hangisidir?",
     "options": {
-      "A": "210.000 ₺ faaliyet kârı",
-      "B": "30.000 ₺ faaliyet zararı",
+      "A": "30.000 ₺ faaliyet zararı",
+      "B": "210.000 ₺ faaliyet kârı",
       "C": "30.000 ₺ faaliyet kârı",
       "D": "90.000 ₺ faaliyet kârı",
       "E": "120.000 ₺ faaliyet zararı"
     },
-    "answer": "B",
+    "answer": "A",
     "solution": "Faaliyet Sonucu = Brüt Satış Kârı − Faaliyet Giderleri = 90.000 − 120.000 = **−30.000 ₺** → 30.000 ₺ **faaliyet zararı**.",
     "source": {
       "kind": "generated",
@@ -1172,12 +1172,12 @@
     "stem": "'660 Kısa Vadeli Borçlanma Giderleri' ile '661 Uzun Vadeli Borçlanma Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İkisi de bir gelir hesabıdır.",
-      "B": "İkisi de 66 Finansman Giderleri grubundadır; 660 kısa vadeli, 661 uzun vadeli borçlanmaların finansman giderlerini izler.",
+      "B": "İkisi de satışların maliyetine dâhildir.",
       "C": "660 bir varlık, 661 bir borçtur.",
-      "D": "İkisi de satışların maliyetine dâhildir.",
+      "D": "İkisi de 66 Finansman Giderleri grubundadır; 660 kısa vadeli, 661 uzun vadeli borçlanmaların finansman giderlerini izler.",
       "E": "İkisi de olağandışı giderdir."
     },
-    "answer": "B",
+    "answer": "D",
     "solution": "Her ikisi de **66 Finansman Giderleri (-)** grubundadır. Fark vadededir: **660** kısa vadeli, **661** uzun vadeli borçlanmaların finansman (faiz vb.) giderlerini izler.",
     "source": {
       "kind": "generated",
@@ -1194,12 +1194,12 @@
     "stem": "Dönem sonunda belirlenen dönem net kârı (692), bilançoda hangi hesaba aktarılır?",
     "options": {
       "A": "570 Geçmiş Yıllar Kârları",
-      "B": "590 Dönem Net Kârı",
+      "B": "600 Yurt İçi Satışlar",
       "C": "540 Yasal Yedekler",
       "D": "500 Sermaye",
-      "E": "600 Yurt İçi Satışlar"
+      "E": "590 Dönem Net Kârı"
     },
-    "answer": "B",
+    "answer": "E",
     "solution": "Gelir tablosunda belirlenen **692 Dönem Net Kârı**, bilançodaki özkaynaklar içinde yer alan **590 Dönem Net Kârı** hesabına aktarılır.",
     "source": {
       "kind": "generated",
@@ -1216,12 +1216,12 @@
     "stem": "Bir ticaret işletmesinde dönem başı mal mevcudu 80.000 ₺, dönem içi alışlar 400.000 ₺, dönem sonu mal mevcudu 90.000 ₺'dir. Satılan ticari mallar maliyeti (621) kaç ₺'dir?",
     "options": {
       "A": "570.000",
-      "B": "480.000",
+      "B": "390.000",
       "C": "410.000",
-      "D": "390.000",
+      "D": "480.000",
       "E": "320.000"
     },
-    "answer": "D",
+    "answer": "B",
     "solution": "SMM = Dönem Başı Mal + Alışlar − Dönem Sonu Mal = 80.000 + 400.000 − 90.000 = **390.000 ₺**.",
     "source": {
       "kind": "generated",
@@ -1238,12 +1238,12 @@
     "stem": "Gelir tablosunda, esas faaliyetin kârlılığını en iyi gösteren ve yalnızca esas faaliyet gelir/giderlerini içeren kâr kademesi aşağıdakilerden hangisidir?",
     "options": {
       "A": "Brüt satış kârı",
-      "B": "Faaliyet kârı",
-      "C": "Olağan kâr",
+      "B": "Olağan kâr",
+      "C": "Faaliyet kârı",
       "D": "Dönem kârı",
       "E": "Dönem net kârı"
     },
-    "answer": "B",
+    "answer": "C",
     "solution": "**Faaliyet kârı**, net satışlardan satışların maliyeti ve faaliyet giderleri düşülerek bulunur; yalnızca **esas faaliyet** gelir/giderlerini içerdiğinden esas faaliyetin kârlılığını gösterir. (Diğer olağan ve olağandışı kalemler sonraki kademelerde eklenir.)",
     "source": {
       "kind": "generated",

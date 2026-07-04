@@ -1,562 +1,1322 @@
 [
   {
     "id": "mta-fon-gen-0001",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu ile ilgili aşağıdakilerden hangisi doğrudur?",
-    "options": {"A": "İşletmenin belirli bir andaki varlık yapısını gösterir.", "B": "İşletmenin bir dönemde sağladığı fon kaynaklarını ve bu fonların kullanım yerlerini gösteren tablodur.", "C": "Yalnızca kâr dağıtımını gösterir.", "D": "Yalnızca kasadaki nakdi sayar.", "E": "Vergi beyannamesidir."},
-    "answer": "B",
+    "options": {
+      "A": "İşletmenin belirli bir andaki varlık yapısını gösterir.",
+      "B": "Yalnızca kasadaki nakdi sayar.",
+      "C": "Yalnızca kâr dağıtımını gösterir.",
+      "D": "İşletmenin bir dönemde sağladığı fon kaynaklarını ve bu fonların kullanım yerlerini gösteren tablodur.",
+      "E": "Vergi beyannamesidir."
+    },
+    "answer": "D",
     "solution": "**Fon akım tablosu**; işletmenin bir dönemde **sağladığı fon kaynaklarını** ve bu fonların **kullanım yerlerini** gösteren, kaynak-kullanım dengesini ortaya koyan bir tablodur.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0002",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunda 'fon' kavramı geniş anlamıyla neyi ifade eder?",
-    "options": {"A": "Yalnızca kasadaki nakiti", "B": "İşletmenin tüm mali kaynaklarını (bütün kaynakları)", "C": "Yalnızca banka mevduatını", "D": "Yalnızca stokları", "E": "Yalnızca özkaynağı"},
-    "answer": "B",
+    "options": {
+      "A": "İşletmenin tüm mali kaynaklarını (bütün kaynakları)",
+      "B": "Yalnızca kasadaki nakiti",
+      "C": "Yalnızca banka mevduatını",
+      "D": "Yalnızca stokları",
+      "E": "Yalnızca özkaynağı"
+    },
+    "answer": "A",
     "solution": "Fon, **geniş anlamda** işletmenin **tüm mali kaynaklarını** ifade eder. (Dar anlamda ise nakit veya net işletme sermayesi olarak da tanımlanabilir.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kavramı"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kavramı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0003",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunda kaynaklar ve kullanımlar arasındaki ilişki nasıldır?",
-    "options": {"A": "Kaynaklar toplamı kullanımlar toplamından her zaman büyüktür.", "B": "Dönemde sağlanan fon kaynakları toplamı, fon kullanımları toplamına eşittir.", "C": "İkisi arasında ilişki yoktur.", "D": "Kullanımlar toplamı her zaman sıfırdır.", "E": "Kaynaklar her zaman negatiftir."},
-    "answer": "B",
+    "options": {
+      "A": "Kaynaklar toplamı kullanımlar toplamından her zaman büyüktür.",
+      "B": "Kaynaklar her zaman negatiftir.",
+      "C": "İkisi arasında ilişki yoktur.",
+      "D": "Kullanımlar toplamı her zaman sıfırdır.",
+      "E": "Dönemde sağlanan fon kaynakları toplamı, fon kullanımları toplamına eşittir."
+    },
+    "answer": "E",
     "solution": "Fon akım tablosunda **Fon Kaynakları Toplamı = Fon Kullanımları Toplamı**'dır (denge esası). Sağlanan tüm fonlar bir yerde kullanılır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-denge; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-denge; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0004",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi bir fon KAYNAĞIdır (fon girişi)?",
-    "options": {"A": "Duran varlık satın alınması", "B": "Uzun vadeli borç ödenmesi", "C": "Nakit sermaye artırımı yapılması", "D": "Ortaklara temettü ödenmesi", "E": "Sermayenin azaltılması"},
-    "answer": "C",
+    "options": {
+      "A": "Duran varlık satın alınması",
+      "B": "Nakit sermaye artırımı yapılması",
+      "C": "Uzun vadeli borç ödenmesi",
+      "D": "Ortaklara temettü ödenmesi",
+      "E": "Sermayenin azaltılması"
+    },
+    "answer": "B",
     "solution": "**Nakit sermaye artırımı** işletmeye kaynak (fon) sağlar → fon kaynağıdır. Diğer seçenekler (duran varlık alımı, borç ödeme, temettü, sermaye azaltımı) fon kullanımıdır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0005",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi bir fon KULLANIMIdır (fon çıkışı)?",
-    "options": {"A": "Uzun vadeli kredi kullanılması (borçlanma)", "B": "Duran varlık (maddi duran varlık) satın alınması", "C": "Nakit sermaye artırımı", "D": "Duran varlık satılması", "E": "Dönem kârı elde edilmesi"},
-    "answer": "B",
+    "options": {
+      "A": "Uzun vadeli kredi kullanılması (borçlanma)",
+      "B": "Nakit sermaye artırımı",
+      "C": "Duran varlık (maddi duran varlık) satın alınması",
+      "D": "Duran varlık satılması",
+      "E": "Dönem kârı elde edilmesi"
+    },
+    "answer": "C",
     "solution": "**Duran varlık satın alınması** (yatırım) fon çıkışı gerektirir → fon kullanımıdır. Diğerleri (borçlanma, sermaye artışı, duran varlık satışı, dönem kârı) fon kaynağıdır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0006",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunda 'faaliyetlerden sağlanan fon' hesaplanırken dönem net kârına aşağıdakilerden hangisi geri EKLENİR?",
-    "options": {"A": "Satış hasılatı", "B": "Amortisman giderleri (fon çıkışı gerektirmeyen giderler)", "C": "Ödenen temettü", "D": "Duran varlık alımı", "E": "Stok artışı"},
-    "answer": "B",
+    "options": {
+      "A": "Satış hasılatı",
+      "B": "Stok artışı",
+      "C": "Ödenen temettü",
+      "D": "Duran varlık alımı",
+      "E": "Amortisman giderleri (fon çıkışı gerektirmeyen giderler)"
+    },
+    "answer": "E",
     "solution": "**Amortisman** gibi **fon çıkışı gerektirmeyen giderler**, kârı azalttıkları ama fon çıkışına yol açmadıkları için faaliyetlerden sağlanan fon hesaplanırken dönem kârına **geri eklenir**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0007",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 200.000 ₺, dönemin amortisman gideri 50.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon (başka düzeltme yoksa) kaç ₺'dir?",
-    "options": {"A": "150.000", "B": "200.000", "C": "250.000", "D": "50.000", "E": "10.000.000"},
-    "answer": "C",
+    "options": {
+      "A": "150.000",
+      "B": "250.000",
+      "C": "200.000",
+      "D": "50.000",
+      "E": "10.000.000"
+    },
+    "answer": "B",
     "solution": "Faaliyetlerden Sağlanan Fon = Dönem Net Kârı + Amortisman = 200.000 + 50.000 = **250.000 ₺** (amortisman fon çıkışı gerektirmediğinden geri eklenir).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0008",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Amortisman giderinin fon akım tablosunda bir fon kaynağı gibi değerlendirilmesinin nedeni aşağıdakilerden hangisidir?",
-    "options": {"A": "İşletmeye nakit girişi sağlaması", "B": "Gider olarak kârı azaltması ancak dönem içinde fon (nakit) çıkışına yol açmaması; bu nedenle kâra geri eklenmesi", "C": "Bir gelir olması", "D": "Bir borç olması", "E": "Sermayeyi artırması"},
-    "answer": "B",
+    "options": {
+      "A": "İşletmeye nakit girişi sağlaması",
+      "B": "Bir gelir olması",
+      "C": "Gider olarak kârı azaltması ancak dönem içinde fon (nakit) çıkışına yol açmaması; bu nedenle kâra geri eklenmesi",
+      "D": "Bir borç olması",
+      "E": "Sermayeyi artırması"
+    },
+    "answer": "C",
     "solution": "Amortisman kârı azaltan bir giderdir ama **fon (nakit) çıkışına yol açmaz**. Bu nedenle faaliyetlerden sağlanan fon bulunurken dönem kârına geri eklenir; kaynak yaratmaz ama kârı düzeltir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - amortisman/fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - amortisman/fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0009",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi fon kaynağı DEĞİLDİR?",
-    "options": {"A": "Duran varlık satışı", "B": "Uzun vadeli borçlanma", "C": "Nakit sermaye artırımı", "D": "Faaliyetlerden sağlanan fon (dönem kârı + amortisman)", "E": "Ortaklara kâr payı (temettü) ödenmesi"},
-    "answer": "E",
+    "options": {
+      "A": "Ortaklara kâr payı (temettü) ödenmesi",
+      "B": "Uzun vadeli borçlanma",
+      "C": "Nakit sermaye artırımı",
+      "D": "Faaliyetlerden sağlanan fon (dönem kârı + amortisman)",
+      "E": "Duran varlık satışı"
+    },
+    "answer": "A",
     "solution": "**Ortaklara temettü ödenmesi** bir fon **kullanımıdır** (fon çıkışı), kaynak değildir. Diğerleri fon kaynağıdır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hangisi değil; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynak/kullanım"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hangisi değil; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynak/kullanım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0010",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin bir maddi duran varlığı satması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Ne kaynak ne kullanım", "D": "Bir gider", "E": "Bir borç"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kullanımı",
+      "B": "Bir gider",
+      "C": "Ne kaynak ne kullanım",
+      "D": "Fon kaynağı",
+      "E": "Bir borç"
+    },
+    "answer": "D",
     "solution": "Duran varlık satışı işletmeye **fon girişi** sağladığından bir **fon kaynağıdır**. (Alımı ise fon kullanımıdır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0011",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin uzun vadeli banka kredisi kullanması (borçlanması) fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Bir gider", "D": "Bir gelir", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Fon kullanımı",
+      "C": "Bir gider",
+      "D": "Bir gelir",
+      "E": "Etkisizdir"
+    },
+    "answer": "A",
     "solution": "Uzun vadeli borçlanma işletmeye **kaynak (fon) sağlar** → fon kaynağıdır. (Borcun ödenmesi ise fon kullanımıdır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0012",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin ortaklarına nakit kâr payı (temettü) dağıtması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı", "C": "Bir gelir", "D": "Faaliyetlerden fon", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Bir gelir",
+      "C": "Fon kullanımı",
+      "D": "Faaliyetlerden fon",
+      "E": "Etkisizdir"
+    },
+    "answer": "C",
     "solution": "Temettü ödemesi işletmeden **fon çıkışına** yol açtığından bir **fon kullanımıdır**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0013",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin uzun vadeli borcunun anaparasını ödemesi fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı", "C": "Bir gelir", "D": "Amortisman", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Amortisman",
+      "C": "Bir gelir",
+      "D": "Fon kullanımı",
+      "E": "Etkisizdir"
+    },
+    "answer": "D",
     "solution": "Uzun vadeli borç anaparasının ödenmesi işletmeden **fon çıkışıdır** → fon kullanımıdır. (Borçlanma ise kaynaktır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0014",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 300.000 ₺, amortisman gideri 80.000 ₺, karşılık gideri (fon çıkışı gerektirmeyen) 20.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "300.000", "B": "380.000", "C": "400.000", "D": "200.000", "E": "100.000"},
-    "answer": "C",
+    "options": {
+      "A": "300.000",
+      "B": "380.000",
+      "C": "100.000",
+      "D": "200.000",
+      "E": "400.000"
+    },
+    "answer": "E",
     "solution": "Faaliyetlerden Sağlanan Fon = Net Kâr + Amortisman + Karşılık = 300.000 + 80.000 + 20.000 = **400.000 ₺** (fon çıkışı gerektirmeyen giderler kâra geri eklenir).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0015",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi 'fon çıkışı gerektirmeyen gider' örneğidir ve faaliyetlerden fon hesaplanırken kâra geri eklenir?",
-    "options": {"A": "Personele nakit ödenen ücret", "B": "Amortisman ve tükenme payları", "C": "Nakit ödenen kira", "D": "Nakit ödenen faiz", "E": "Peşin alınan mal bedeli"},
+    "options": {
+      "A": "Personele nakit ödenen ücret",
+      "B": "Amortisman ve tükenme payları",
+      "C": "Nakit ödenen kira",
+      "D": "Nakit ödenen faiz",
+      "E": "Peşin alınan mal bedeli"
+    },
     "answer": "B",
     "solution": "**Amortisman ve tükenme payları** (ayrıca karşılık giderleri, itfa payları) fon/nakit çıkışı gerektirmeyen giderlerdir; faaliyetlerden fon bulunurken kâra geri eklenir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-örnek; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon çıkışı gerektirmeyen gider"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-örnek; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon çıkışı gerektirmeyen gider"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0016",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin nakit sermaye artırımı yapması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Bir gider", "D": "Amortisman", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kullanımı",
+      "B": "Bir gider",
+      "C": "Fon kaynağı",
+      "D": "Amortisman",
+      "E": "Etkisizdir"
+    },
+    "answer": "C",
     "solution": "Nakit sermaye artırımı ortaklardan işletmeye **kaynak (fon) girişi** sağlar → fon kaynağıdır. (Sermaye azaltımı/geri ödeme ise kullanımdır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0017",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 120.000 ₺, amortisman gideri 40.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "80.000", "B": "120.000", "C": "160.000", "D": "40.000", "E": "200.000"},
-    "answer": "C",
+    "options": {
+      "A": "80.000",
+      "B": "120.000",
+      "C": "200.000",
+      "D": "40.000",
+      "E": "160.000"
+    },
+    "answer": "E",
     "solution": "Faaliyetlerden Sağlanan Fon = 120.000 + 40.000 = **160.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0018",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosunun temel amacı aşağıdakilerden hangisidir?",
-    "options": {"A": "İşletmenin gelecekteki satışlarını tahmin etmek", "B": "İşletmenin dönem içinde hangi kaynaklardan fon sağladığını ve bu fonları nerelerde kullandığını göstererek fon hareketlerini analiz etmek", "C": "Yalnızca vergi hesaplamak", "D": "Kasadaki nakiti saymak", "E": "Ortakları listelemek"},
+    "options": {
+      "A": "İşletmenin gelecekteki satışlarını tahmin etmek",
+      "B": "İşletmenin dönem içinde hangi kaynaklardan fon sağladığını ve bu fonları nerelerde kullandığını göstererek fon hareketlerini analiz etmek",
+      "C": "Yalnızca vergi hesaplamak",
+      "D": "Kasadaki nakiti saymak",
+      "E": "Ortakları listelemek"
+    },
     "answer": "B",
     "solution": "Fon akım tablosunun amacı; dönem içinde **hangi kaynaklardan fon sağlandığını ve bu fonların nerelerde kullanıldığını** göstererek işletmenin fon hareketlerini (finansal politikalarını) analiz etmektir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-amaç; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-amaç; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0019",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdaki işlemlerden hangileri fon KAYNAĞIdır?\nI. Uzun vadeli borçlanma\nII. Duran varlık satışı\nIII. Duran varlık alımı",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
-    "answer": "B",
+    "options": {
+      "A": "I ve II",
+      "B": "Yalnız I",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
+    "answer": "A",
     "solution": "**I (UV borçlanma)** ve **II (duran varlık satışı)** işletmeye fon sağlar → kaynaktır. **III (duran varlık alımı)** ise fon kullanımıdır. Doğru cevap **I ve II**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynak/kullanım"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynak/kullanım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
     "id": "mta-fon-gen-0020",
-    "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdaki işlemlerden hangileri fon KULLANIMIdır?\nI. Ortaklara temettü ödenmesi\nII. Uzun vadeli borç anaparasının ödenmesi\nIII. Nakit sermaye artırımı",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
-    "answer": "B",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
+    },
+    "answer": "D",
     "solution": "**I (temettü ödemesi)** ve **II (UV borç ödemesi)** fon çıkışıdır → kullanımdır. **III (nakit sermaye artırımı)** ise fon kaynağıdır. Doğru cevap **I ve II**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynak/kullanım"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynak/kullanım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0021", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0021",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 250.000 ₺, amortisman gideri 60.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "190.000", "B": "250.000", "C": "310.000", "D": "60.000", "E": "150.000"},
+    "options": {
+      "A": "190.000",
+      "B": "250.000",
+      "C": "310.000",
+      "D": "60.000",
+      "E": "150.000"
+    },
     "answer": "C",
     "solution": "Faaliyetlerden Sağlanan Fon = 250.000 + 60.000 = **310.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0022", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0022",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin uzun vadeli amaçla bir iştirak payı satın alması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı", "C": "Bir gelir", "D": "Amortisman", "E": "Etkisizdir"},
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Fon kullanımı",
+      "C": "Bir gelir",
+      "D": "Amortisman",
+      "E": "Etkisizdir"
+    },
     "answer": "B",
     "solution": "İştirak (mali duran varlık) alımı fon çıkışı gerektirir → **fon kullanımıdır**. (Satışı ise kaynaktır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0023", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0023",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin elindeki bir iştirak payını satması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Bir gider", "D": "Amortisman", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Fon kullanımı",
+      "C": "Bir gider",
+      "D": "Amortisman",
+      "E": "Etkisizdir"
+    },
+    "answer": "A",
     "solution": "İştirak satışı işletmeye fon girişi sağlar → **fon kaynağıdır**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0024", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0024",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin sermayesini azaltarak ortaklara ödeme yapması fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı", "C": "Bir gelir", "D": "Faaliyetlerden fon", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Faaliyetlerden fon",
+      "C": "Bir gelir",
+      "D": "Fon kullanımı",
+      "E": "Etkisizdir"
+    },
+    "answer": "D",
     "solution": "Sermaye azaltımıyla ortaklara ödeme işletmeden **fon çıkışıdır** → fon kullanımıdır. (Sermaye artırımı ise kaynaktır.)",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0025", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0025",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net zararı 50.000 ₺ (zarar), amortisman gideri 80.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "130.000", "B": "30.000", "C": "−30.000", "D": "80.000", "E": "50.000"},
-    "answer": "B",
+    "options": {
+      "A": "130.000",
+      "B": "50.000",
+      "C": "−30.000",
+      "D": "80.000",
+      "E": "30.000"
+    },
+    "answer": "E",
     "solution": "Faaliyetlerden Fon = Dönem Sonucu + Amortisman = (−50.000) + 80.000 = **30.000 ₺**. Zarara rağmen amortisman (fon çıkışsız gider) geri eklendiğinden faaliyetlerden pozitif fon doğabilir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-zarar+amortisman; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-zarar+amortisman; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0026", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0026",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin dönemi zararla kapatması (dönem zararı) fon akım tablosunda genel olarak nasıl değerlendirilir?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı (fonları azaltan bir unsur)", "C": "Bir gelir", "D": "Amortisman", "E": "Etkisizdir"},
-    "answer": "B",
+    "options": {
+      "A": "Fon kullanımı (fonları azaltan bir unsur)",
+      "B": "Fon kaynağı",
+      "C": "Bir gelir",
+      "D": "Amortisman",
+      "E": "Etkisizdir"
+    },
+    "answer": "A",
     "solution": "Dönem zararı işletmenin fonlarını azaltan bir unsurdur; fon akım tablosunda genel olarak **fon kullanımı** tarafında değerlendirilir (dönem kârı ise kaynak/faaliyetlerden fon).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0027", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0027",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangileri 'fon çıkışı gerektirmeyen gider' niteliğindedir?\nI. Amortisman giderleri\nII. Karşılık giderleri\nIII. Maddi olmayan duran varlık itfa payları",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
     "answer": "E",
     "solution": "Üçü de **fon/nakit çıkışı gerektirmeyen giderlerdir**: amortisman, karşılık ve itfa payları. Faaliyetlerden fon bulunurken kâra geri eklenir. Doğru cevap **I, II ve III**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon çıkışı gerektirmeyen gider"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon çıkışı gerektirmeyen gider"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0028", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0028",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 400.000 ₺, amortisman gideri 100.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "300.000", "B": "400.000", "C": "500.000", "D": "100.000", "E": "600.000"},
-    "answer": "C",
+    "options": {
+      "A": "300.000",
+      "B": "400.000",
+      "C": "100.000",
+      "D": "500.000",
+      "E": "600.000"
+    },
+    "answer": "D",
     "solution": "Faaliyetlerden Sağlanan Fon = 400.000 + 100.000 = **500.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0029", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0029",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Bir işletmenin dönemde sağladığı fon kaynakları toplamı 800.000 ₺'dir. Fon kullanımları; duran varlık alımı 500.000 ₺ ve temettü ödemesi 200.000 ₺'dir. Denge gereği, kalan 100.000 ₺'lik fon en olası olarak nereye gitmiştir?",
-    "options": {"A": "Kaynaklar eksik hesaplanmıştır.", "B": "Diğer bir fon kullanımına (ör. net işletme sermayesindeki/hazır değerlerdeki artışa) gitmiştir; çünkü kaynaklar = kullanımlar olmalıdır.", "C": "Fon buharlaşmıştır.", "D": "Gelir yazılmıştır.", "E": "Sermayeye eklenmiştir ve kaynak olmuştur."},
+    "options": {
+      "A": "Kaynaklar eksik hesaplanmıştır.",
+      "B": "Diğer bir fon kullanımına (ör. net işletme sermayesindeki/hazır değerlerdeki artışa) gitmiştir; çünkü kaynaklar = kullanımlar olmalıdır.",
+      "C": "Fon buharlaşmıştır.",
+      "D": "Gelir yazılmıştır.",
+      "E": "Sermayeye eklenmiştir ve kaynak olmuştur."
+    },
     "answer": "B",
     "solution": "Kaynaklar (800.000) = Kullanımlar olmalı. Bilinen kullanımlar 500.000 + 200.000 = 700.000; kalan **100.000 ₺** başka bir fon kullanımına (ör. dönen varlık/hazır değer artışı) gitmiş olmalıdır (denge esası).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-denge; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım dengesi"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-denge; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım dengesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0030", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0030",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin yeni bir üretim makinesi (maddi duran varlık) satın alması fon akım tablosunda nasıl sınıflandırılır?",
-    "options": {"A": "Fon kaynağı", "B": "Fon kullanımı (yatırım)", "C": "Faaliyetlerden fon", "D": "Bir gelir", "E": "Amortisman"},
-    "answer": "B",
-    "solution": "Maddi duran varlık (makine) alımı bir yatırımdır ve fon çıkışı gerektirir → **fon kullanımıdır**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0031", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Karşılık giderlerinin faaliyetlerden sağlanan fon hesabında dönem kârına geri eklenmesinin nedeni aşağıdakilerden hangisidir?",
-    "options": {"A": "Bir gelir olması", "B": "Kârı azaltan ancak dönem içinde fon (nakit) çıkışına yol açmayan bir gider olması", "C": "Bir borç ödemesi olması", "D": "Sermayeyi artırması", "E": "Satış hasılatı olması"},
-    "answer": "B",
-    "solution": "Karşılık giderleri (ör. şüpheli alacak, kıdem tazminatı karşılığı) kârı azaltır ama o dönem **fon/nakit çıkışına yol açmaz**; bu nedenle faaliyetlerden fon bulunurken kâra geri eklenir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)", "legislationRef": "Mali analiz - karşılık/fon"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0032", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Dönem net kârı 220.000 ₺, amortisman gideri 55.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "165.000", "B": "220.000", "C": "275.000", "D": "55.000", "E": "300.000"},
+    "options": {
+      "A": "Fon kaynağı",
+      "B": "Faaliyetlerden fon",
+      "C": "Fon kullanımı (yatırım)",
+      "D": "Bir gelir",
+      "E": "Amortisman"
+    },
     "answer": "C",
-    "solution": "Faaliyetlerden Sağlanan Fon = 220.000 + 55.000 = **275.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "solution": "Maddi duran varlık (makine) alımı bir yatırımdır ve fon çıkışı gerektirir → **fon kullanımıdır**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0033", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0031",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Karşılık giderlerinin faaliyetlerden sağlanan fon hesabında dönem kârına geri eklenmesinin nedeni aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Bir gelir olması",
+      "B": "Sermayeyi artırması",
+      "C": "Bir borç ödemesi olması",
+      "D": "Kârı azaltan ancak dönem içinde fon (nakit) çıkışına yol açmayan bir gider olması",
+      "E": "Satış hasılatı olması"
+    },
+    "answer": "D",
+    "solution": "Karşılık giderleri (ör. şüpheli alacak, kıdem tazminatı karşılığı) kârı azaltır ama o dönem **fon/nakit çıkışına yol açmaz**; bu nedenle faaliyetlerden fon bulunurken kâra geri eklenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - karşılık/fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0032",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Dönem net kârı 220.000 ₺, amortisman gideri 55.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
+    "options": {
+      "A": "275.000",
+      "B": "220.000",
+      "C": "165.000",
+      "D": "55.000",
+      "E": "300.000"
+    },
+    "answer": "A",
+    "solution": "Faaliyetlerden Sağlanan Fon = 220.000 + 55.000 = **275.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0033",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin uzun vadeli kaynak sağlamak için tahvil ihraç etmesi fon akım tablosunda nasıl değerlendirilir?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Bir gider", "D": "Amortisman", "E": "Etkisizdir"},
+    "options": {
+      "A": "Fon kullanımı",
+      "B": "Fon kaynağı",
+      "C": "Bir gider",
+      "D": "Amortisman",
+      "E": "Etkisizdir"
+    },
     "answer": "B",
     "solution": "Tahvil ihracı (uzun vadeli borçlanma) işletmeye kaynak sağlar → **fon kaynağıdır**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0034", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0034",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdaki işlemlerden hangileri fon KAYNAĞIdır?\nI. Nakit sermaye artırımı\nII. Tahvil ihracı (UV borçlanma)\nIII. Maddi duran varlık satışı",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
     "answer": "E",
     "solution": "Üçü de işletmeye fon sağlar → **kaynak**: nakit sermaye artırımı, tahvil ihracı (UV borçlanma) ve maddi duran varlık satışı. Doğru cevap **I, II ve III**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0035", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0035",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "'Faaliyetlerden sağlanan fon', işletmenin fon kaynakları arasında neden önemli kabul edilir?",
-    "options": {"A": "Dışarıdan borçlanmayı ifade ettiği için", "B": "İşletmenin esas faaliyetleriyle (öz gücüyle) yarattığı iç kaynağı gösterdiği için", "C": "Ortaklardan alınan sermayeyi gösterdiği için", "D": "Duran varlık satışını gösterdiği için", "E": "Vergi ödemesini gösterdiği için"},
-    "answer": "B",
+    "options": {
+      "A": "Dışarıdan borçlanmayı ifade ettiği için",
+      "B": "Ortaklardan alınan sermayeyi gösterdiği için",
+      "C": "İşletmenin esas faaliyetleriyle (öz gücüyle) yarattığı iç kaynağı gösterdiği için",
+      "D": "Duran varlık satışını gösterdiği için",
+      "E": "Vergi ödemesini gösterdiği için"
+    },
+    "answer": "C",
     "solution": "Faaliyetlerden sağlanan fon, işletmenin **esas faaliyetleriyle (öz gücüyle) yarattığı iç kaynağı** gösterir; sürdürülebilirlik açısından en sağlıklı fon kaynağı sayılır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-önem; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-önem; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0036", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0036",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 150.000 ₺, amortisman gideri 30.000 ₺, karşılık gideri 20.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "150.000", "B": "180.000", "C": "200.000", "D": "100.000", "E": "50.000"},
-    "answer": "C",
+    "options": {
+      "A": "200.000",
+      "B": "180.000",
+      "C": "150.000",
+      "D": "100.000",
+      "E": "50.000"
+    },
+    "answer": "A",
     "solution": "Faaliyetlerden Fon = 150.000 + 30.000 + 20.000 = **200.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0037", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0037",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 500.000 ₺, amortisman gideri 120.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "380.000", "B": "500.000", "C": "620.000", "D": "120.000", "E": "700.000"},
-    "answer": "C",
+    "options": {
+      "A": "380.000",
+      "B": "620.000",
+      "C": "500.000",
+      "D": "120.000",
+      "E": "700.000"
+    },
+    "answer": "B",
     "solution": "Faaliyetlerden Sağlanan Fon = 500.000 + 120.000 = **620.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0038", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0038",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi fon kullanımı DEĞİLDİR?",
-    "options": {"A": "Duran varlık alımı", "B": "Uzun vadeli borç ödemesi", "C": "Temettü ödemesi", "D": "Uzun vadeli borçlanma (kredi kullanımı)", "E": "Sermaye azaltımıyla ortaklara ödeme"},
-    "answer": "D",
+    "options": {
+      "A": "Duran varlık alımı",
+      "B": "Uzun vadeli borç ödemesi",
+      "C": "Uzun vadeli borçlanma (kredi kullanımı)",
+      "D": "Temettü ödemesi",
+      "E": "Sermaye azaltımıyla ortaklara ödeme"
+    },
+    "answer": "C",
     "solution": "**Uzun vadeli borçlanma (kredi kullanımı)** işletmeye kaynak sağlar → fon **kaynağıdır**, kullanım değildir. Diğerleri fon kullanımıdır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hangisi değil; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynak/kullanım"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hangisi değil; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynak/kullanım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0039", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0039",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu, işletmenin hangi kararlarının analizinde özellikle yararlıdır?",
-    "options": {"A": "Personel işe alım kararları", "B": "İşletmenin yatırım (duran varlık) ve finansman (kaynak sağlama/ödeme) kararlarının ve fon politikasının değerlendirilmesinde", "C": "Reklam metni seçimi", "D": "Ürün rengi seçimi", "E": "Ofis düzeni"},
-    "answer": "B",
-    "solution": "Fon akım tablosu, işletmenin **yatırım (duran varlık) ve finansman (kaynak sağlama/ödeme) kararlarının** ve genel fon politikasının değerlendirilmesinde özellikle yararlıdır.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0040", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Fon akım tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Kaynaklar toplamı kullanımlar toplamına eşittir.\nII. Faaliyetlerden fon = Dönem kârı + Amortisman + fon çıkışı gerektirmeyen diğer giderler.\nIII. Duran varlık alımı bir fon kullanımıdır.",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
+    "options": {
+      "A": "Personel işe alım kararları",
+      "B": "Ofis düzeni",
+      "C": "Reklam metni seçimi",
+      "D": "Ürün rengi seçimi",
+      "E": "İşletmenin yatırım (duran varlık) ve finansman (kaynak sağlama/ödeme) kararlarının ve fon politikasının değerlendirilmesinde"
+    },
     "answer": "E",
-    "solution": "Üç ifade de doğrudur: **I** kaynaklar = kullanımlar; **II** faaliyetlerden fon kâra fon çıkışsız giderlerin eklenmesiyle bulunur; **III** duran varlık alımı fon kullanımıdır. Doğru cevap **I, II ve III**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
+    "solution": "Fon akım tablosu, işletmenin **yatırım (duran varlık) ve finansman (kaynak sağlama/ödeme) kararlarının** ve genel fon politikasının değerlendirilmesinde özellikle yararlıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-yorum; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0041", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Dönem net kârı 320.000 ₺, amortisman gideri 70.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "250.000", "B": "320.000", "C": "390.000", "D": "70.000", "E": "450.000"},
-    "answer": "C",
-    "solution": "Faaliyetlerden Fon = 320.000 + 70.000 = **390.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0042", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Dönem net kârı 100.000 ₺, amortisman gideri 90.000 ₺, karşılık gideri 10.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "100.000", "B": "190.000", "C": "200.000", "D": "110.000", "E": "90.000"},
-    "answer": "C",
-    "solution": "Faaliyetlerden Fon = 100.000 + 90.000 + 10.000 = **200.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0043", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "İşletmenin bir binasını (maddi duran varlık) nakit karşılığı satması fon akım tablosunda nasıl sınıflandırılır?",
-    "options": {"A": "Fon kullanımı", "B": "Fon kaynağı", "C": "Amortisman", "D": "Bir gider", "E": "Etkisizdir"},
-    "answer": "B",
-    "solution": "Bina (maddi duran varlık) satışı işletmeye fon girişi sağlar → **fon kaynağıdır**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynakları"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0044", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Bir işletmenin dönemdeki fon kaynakları: faaliyetlerden fon 400.000 ₺ ve uzun vadeli borçlanma 200.000 ₺'dir. Toplam fon kaynağı kaç ₺'dir?",
-    "options": {"A": "200.000", "B": "400.000", "C": "600.000", "D": "800.000", "E": "100.000"},
-    "answer": "C",
-    "solution": "Toplam Fon Kaynağı = 400.000 + 200.000 = **600.000 ₺** (bu tutar dönemdeki fon kullanımları toplamına eşit olur).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-toplam kaynak; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0045", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Dönem net zararı 80.000 ₺ (zarar), amortisman gideri 100.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "180.000", "B": "20.000", "C": "−20.000", "D": "100.000", "E": "80.000"},
-    "answer": "B",
-    "solution": "Faaliyetlerden Fon = (−80.000) + 100.000 = **20.000 ₺**. Amortisman (fon çıkışsız gider) zarara rağmen geri eklendiğinden pozitif fon doğmuştur.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-zarar+amortisman; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0046", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Aşağıdaki giderlerden hangisi fon (nakit) çıkışı GEREKTİRİR ve faaliyetlerden fon hesabında kâra geri eklenmez?",
-    "options": {"A": "Amortisman gideri", "B": "Karşılık gideri", "C": "İtfa payı", "D": "Nakit ödenen personel ücreti", "E": "Yeniden değerleme kaynaklı gider"},
+    "id": "mta-fon-gen-0040",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Fon akım tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Kaynaklar toplamı kullanımlar toplamına eşittir.\nII. Faaliyetlerden fon = Dönem kârı + Amortisman + fon çıkışı gerektirmeyen diğer giderler.\nIII. Duran varlık alımı bir fon kullanımıdır.",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III",
+      "E": "I ve III"
+    },
     "answer": "D",
+    "solution": "Üç ifade de doğrudur: **I** kaynaklar = kullanımlar; **II** faaliyetlerden fon kâra fon çıkışsız giderlerin eklenmesiyle bulunur; **III** duran varlık alımı fon kullanımıdır. Doğru cevap **I, II ve III**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0041",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Dönem net kârı 320.000 ₺, amortisman gideri 70.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
+    "options": {
+      "A": "390.000",
+      "B": "320.000",
+      "C": "250.000",
+      "D": "70.000",
+      "E": "450.000"
+    },
+    "answer": "A",
+    "solution": "Faaliyetlerden Fon = 320.000 + 70.000 = **390.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0042",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Dönem net kârı 100.000 ₺, amortisman gideri 90.000 ₺, karşılık gideri 10.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
+    "options": {
+      "A": "100.000",
+      "B": "200.000",
+      "C": "190.000",
+      "D": "110.000",
+      "E": "90.000"
+    },
+    "answer": "B",
+    "solution": "Faaliyetlerden Fon = 100.000 + 90.000 + 10.000 = **200.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0043",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "İşletmenin bir binasını (maddi duran varlık) nakit karşılığı satması fon akım tablosunda nasıl sınıflandırılır?",
+    "options": {
+      "A": "Fon kullanımı",
+      "B": "Bir gider",
+      "C": "Amortisman",
+      "D": "Fon kaynağı",
+      "E": "Etkisizdir"
+    },
+    "answer": "D",
+    "solution": "Bina (maddi duran varlık) satışı işletmeye fon girişi sağlar → **fon kaynağıdır**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynakları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0044",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Bir işletmenin dönemdeki fon kaynakları: faaliyetlerden fon 400.000 ₺ ve uzun vadeli borçlanma 200.000 ₺'dir. Toplam fon kaynağı kaç ₺'dir?",
+    "options": {
+      "A": "200.000",
+      "B": "400.000",
+      "C": "100.000",
+      "D": "800.000",
+      "E": "600.000"
+    },
+    "answer": "E",
+    "solution": "Toplam Fon Kaynağı = 400.000 + 200.000 = **600.000 ₺** (bu tutar dönemdeki fon kullanımları toplamına eşit olur).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-toplam kaynak; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0045",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Dönem net zararı 80.000 ₺ (zarar), amortisman gideri 100.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
+    "options": {
+      "A": "180.000",
+      "B": "−20.000",
+      "C": "20.000",
+      "D": "100.000",
+      "E": "80.000"
+    },
+    "answer": "C",
+    "solution": "Faaliyetlerden Fon = (−80.000) + 100.000 = **20.000 ₺**. Amortisman (fon çıkışsız gider) zarara rağmen geri eklendiğinden pozitif fon doğmuştur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-zarar+amortisman; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0046",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Aşağıdaki giderlerden hangisi fon (nakit) çıkışı GEREKTİRİR ve faaliyetlerden fon hesabında kâra geri eklenmez?",
+    "options": {
+      "A": "Amortisman gideri",
+      "B": "Karşılık gideri",
+      "C": "İtfa payı",
+      "D": "Yeniden değerleme kaynaklı gider",
+      "E": "Nakit ödenen personel ücreti"
+    },
+    "answer": "E",
     "solution": "**Nakit ödenen personel ücreti** fiilen fon (nakit) çıkışı gerektirir; kâra geri eklenmez. Amortisman/karşılık/itfa ise fon çıkışsız giderler olup geri eklenir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon çıkışı gerektiren gider"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon çıkışı gerektiren gider"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0047", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0047",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 280.000 ₺, amortisman gideri 65.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "215.000", "B": "280.000", "C": "345.000", "D": "65.000", "E": "400.000"},
-    "answer": "C",
+    "options": {
+      "A": "215.000",
+      "B": "345.000",
+      "C": "280.000",
+      "D": "65.000",
+      "E": "400.000"
+    },
+    "answer": "B",
     "solution": "Faaliyetlerden Fon = 280.000 + 65.000 = **345.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0048", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0048",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdaki işlemlerden hangileri fon KULLANIMIdır?\nI. Duran varlık alımı\nII. Sermaye azaltımıyla ortaklara ödeme\nIII. Maddi duran varlık satışı",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
-    "answer": "B",
-    "solution": "**I (duran varlık alımı)** ve **II (sermaye azaltımı ödemesi)** fon çıkışıdır → kullanım. **III (duran varlık satışı)** ise fon kaynağıdır. Doğru cevap **I ve II**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kaynak/kullanım"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0049", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Dönem net kârı 600.000 ₺, amortisman gideri 150.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "450.000", "B": "600.000", "C": "750.000", "D": "150.000", "E": "900.000"},
+    "options": {
+      "A": "Yalnız I",
+      "B": "II ve III",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "I, II ve III"
+    },
     "answer": "C",
+    "solution": "**I (duran varlık alımı)** ve **II (sermaye azaltımı ödemesi)** fon çıkışıdır → kullanım. **III (duran varlık satışı)** ise fon kaynağıdır. Doğru cevap **I ve II**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kaynak/kullanım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0049",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Dönem net kârı 600.000 ₺, amortisman gideri 150.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
+    "options": {
+      "A": "750.000",
+      "B": "600.000",
+      "C": "450.000",
+      "D": "150.000",
+      "E": "900.000"
+    },
+    "answer": "A",
     "solution": "Faaliyetlerden Fon = 600.000 + 150.000 = **750.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0050", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0050",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "İşletmenin dönem içinde hem uzun vadeli borç ödemesi hem de temettü dağıtması, fon akım tablosunda ne anlama gelir?",
-    "options": {"A": "İşletmenin fonlarını yalnızca borçlanmaya ayırdığını", "B": "Sağlanan fonların bir kısmının borç geri ödemesine ve ortaklara dağıtıma (fon kullanımlarına) yönlendirildiğini", "C": "İşletmenin hiç fon sağlamadığını", "D": "İşletmenin zarar ettiğini", "E": "Amortismanın arttığını"},
-    "answer": "B",
+    "options": {
+      "A": "İşletmenin fonlarını yalnızca borçlanmaya ayırdığını",
+      "B": "İşletmenin zarar ettiğini",
+      "C": "İşletmenin hiç fon sağlamadığını",
+      "D": "Sağlanan fonların bir kısmının borç geri ödemesine ve ortaklara dağıtıma (fon kullanımlarına) yönlendirildiğini",
+      "E": "Amortismanın arttığını"
+    },
+    "answer": "D",
     "solution": "Her iki işlem de **fon kullanımıdır**; sağlanan fonların bir kısmının **borç geri ödemesi ve temettü dağıtımına** yönlendirildiğini gösterir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon kullanımları"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon kullanımları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0051", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0051",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 180.000 ₺, amortisman gideri 40.000 ₺, karşılık gideri 30.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "180.000", "B": "220.000", "C": "250.000", "D": "110.000", "E": "70.000"},
+    "options": {
+      "A": "180.000",
+      "B": "220.000",
+      "C": "250.000",
+      "D": "110.000",
+      "E": "70.000"
+    },
     "answer": "C",
     "solution": "Faaliyetlerden Fon = 180.000 + 40.000 + 30.000 = **250.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0052", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0052",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Bir işletmenin fon ihtiyacını ağırlıkla 'faaliyetlerden sağlanan fon' ile karşılaması, dışarıdan borçlanmaya göre neden daha olumlu değerlendirilir?",
-    "options": {"A": "Daha çok faiz ödemesi gerektirdiği için", "B": "İşletmenin öz gücüyle (esas faaliyetiyle) fon yaratabildiğini, dış kaynağa ve faiz yüküne bağımlılığın az olduğunu gösterdiği için", "C": "Sermayeyi azalttığı için", "D": "Amortismanı sıfırladığı için", "E": "Zararı artırdığı için"},
-    "answer": "B",
+    "options": {
+      "A": "İşletmenin öz gücüyle (esas faaliyetiyle) fon yaratabildiğini, dış kaynağa ve faiz yüküne bağımlılığın az olduğunu gösterdiği için",
+      "B": "Daha çok faiz ödemesi gerektirdiği için",
+      "C": "Sermayeyi azalttığı için",
+      "D": "Amortismanı sıfırladığı için",
+      "E": "Zararı artırdığı için"
+    },
+    "answer": "A",
     "solution": "Faaliyetlerden fonla finansman, işletmenin **öz gücüyle fon yaratabildiğini** ve **dış kaynağa/faiz yüküne bağımlılığının düşük** olduğunu gösterdiğinden daha sağlıklı/olumlu değerlendirilir.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0053", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0053",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 240.000 ₺, amortisman gideri 60.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "180.000", "B": "240.000", "C": "300.000", "D": "60.000", "E": "360.000"},
-    "answer": "C",
+    "options": {
+      "A": "180.000",
+      "B": "240.000",
+      "C": "60.000",
+      "D": "300.000",
+      "E": "360.000"
+    },
+    "answer": "D",
     "solution": "Faaliyetlerden Fon = 240.000 + 60.000 = **300.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0054", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0054",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım tablosu ile nakit akım tablosu arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
-    "options": {"A": "İkisi de yalnızca nakiti izler.", "B": "Fon akım tablosunda 'fon' genellikle geniş kapsamlıdır (tüm kaynaklar / net işletme sermayesi); nakit akım tablosu ise yalnızca nakit ve nakit benzeri giriş-çıkışlarını izler.", "C": "Fon akım tablosu yalnızca nakiti, nakit akım tablosu tüm kaynakları izler.", "D": "İkisi aynı tablodur.", "E": "İkisi de bilançodur."},
+    "options": {
+      "A": "İkisi de yalnızca nakiti izler.",
+      "B": "Fon akım tablosunda 'fon' genellikle geniş kapsamlıdır (tüm kaynaklar / net işletme sermayesi); nakit akım tablosu ise yalnızca nakit ve nakit benzeri giriş-çıkışlarını izler.",
+      "C": "Fon akım tablosu yalnızca nakiti, nakit akım tablosu tüm kaynakları izler.",
+      "D": "İkisi aynı tablodur.",
+      "E": "İkisi de bilançodur."
+    },
     "answer": "B",
     "solution": "**Fon akım tablosunda** 'fon' geniş kapsamlıdır (tüm mali kaynaklar / net işletme sermayesi). **Nakit akım tablosu** ise yalnızca **nakit ve nakit benzeri** giriş-çıkışlarını izler (daha dar kapsam).",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon/nakit akım"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon/nakit akım"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0055", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0055",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Bir işletmenin toplam fon kaynağı 900.000 ₺'dir. Fon kullanımları duran varlık alımı 600.000 ₺ ve uzun vadeli borç ödemesi 300.000 ₺ ise bu tablo hakkında ne söylenebilir?",
-    "options": {"A": "Kaynaklar kullanımlardan büyüktür.", "B": "Kaynaklar (900.000) = Kullanımlar (600.000 + 300.000 = 900.000); tablo dengededir.", "C": "Kullanımlar kaynaklardan büyüktür.", "D": "Tablo hatalıdır.", "E": "Fon kaynağı yoktur."},
-    "answer": "B",
+    "options": {
+      "A": "Kaynaklar kullanımlardan büyüktür.",
+      "B": "Fon kaynağı yoktur.",
+      "C": "Kullanımlar kaynaklardan büyüktür.",
+      "D": "Tablo hatalıdır.",
+      "E": "Kaynaklar (900.000) = Kullanımlar (600.000 + 300.000 = 900.000); tablo dengededir."
+    },
+    "answer": "E",
     "solution": "Kullanımlar = 600.000 + 300.000 = 900.000 ₺ = Kaynaklar (900.000). **Kaynaklar = Kullanımlar** olduğundan tablo **dengededir**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-denge; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım dengesi"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-denge; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım dengesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0056", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0056",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 90.000 ₺, amortisman gideri 50.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "40.000", "B": "90.000", "C": "140.000", "D": "50.000", "E": "180.000"},
-    "answer": "C",
-    "solution": "Faaliyetlerden Fon = 90.000 + 50.000 = **140.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
-  },
-  {
-    "id": "mta-fon-gen-0057", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
-    "stem": "Amortisman gideri faaliyetlerden fon hesabında dönem kârına eklendiğinde, bu ekleme amortismanın kendisinin bir 'nakit girişi' olduğu anlamına gelir mi?",
-    "options": {"A": "Evet; amortisman işletmeye nakit sağlar.", "B": "Hayır; amortisman bir nakit girişi değildir. Sadece kârı azaltan ama nakit çıkışı olmayan bir gider olduğu için, gerçek fon tutarına ulaşmak amacıyla kâra geri eklenir.", "C": "Evet; amortisman bir gelirdir.", "D": "Evet; amortisman bir borçlanmadır.", "E": "Hayır; amortisman kâra eklenmez."},
+    "options": {
+      "A": "40.000",
+      "B": "140.000",
+      "C": "90.000",
+      "D": "50.000",
+      "E": "180.000"
+    },
     "answer": "B",
-    "solution": "Amortisman bir **nakit girişi değildir**. Kârı azaltan ama nakit/fon çıkışı olmayan bir gider olduğundan, işletmenin gerçek fon yaratımına ulaşmak için dönem kârına **geri eklenir** (düzeltme). Kendi başına kaynak yaratmaz.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-yanlış anlama; sınav stiline kalibre)", "legislationRef": "Mali analiz - amortisman/fon"},
-    "validYear": 2026, "mockExamId": null
+    "solution": "Faaliyetlerden Fon = 90.000 + 50.000 = **140.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0058", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0057",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
+    "stem": "Amortisman gideri faaliyetlerden fon hesabında dönem kârına eklendiğinde, bu ekleme amortismanın kendisinin bir 'nakit girişi' olduğu anlamına gelir mi?",
+    "options": {
+      "A": "Evet; amortisman işletmeye nakit sağlar.",
+      "B": "Hayır; amortisman kâra eklenmez.",
+      "C": "Evet; amortisman bir gelirdir.",
+      "D": "Evet; amortisman bir borçlanmadır.",
+      "E": "Hayır; amortisman bir nakit girişi değildir. Sadece kârı azaltan ama nakit çıkışı olmayan bir gider olduğu için, gerçek fon tutarına ulaşmak amacıyla kâra geri eklenir."
+    },
+    "answer": "E",
+    "solution": "Amortisman bir **nakit girişi değildir**. Kârı azaltan ama nakit/fon çıkışı olmayan bir gider olduğundan, işletmenin gerçek fon yaratımına ulaşmak için dönem kârına **geri eklenir** (düzeltme). Kendi başına kaynak yaratmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-yanlış anlama; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - amortisman/fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-fon-gen-0058",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Dönem net kârı 350.000 ₺, amortisman gideri 90.000 ₺, karşılık gideri 60.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
-    "options": {"A": "350.000", "B": "440.000", "C": "500.000", "D": "200.000", "E": "150.000"},
+    "options": {
+      "A": "350.000",
+      "B": "440.000",
+      "C": "500.000",
+      "D": "200.000",
+      "E": "150.000"
+    },
     "answer": "C",
     "solution": "Faaliyetlerden Fon = 350.000 + 90.000 + 60.000 = **500.000 ₺**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)", "legislationRef": "Mali analiz - faaliyetlerden fon"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-faaliyet fonu; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - faaliyetlerden fon"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0059", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0059",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Aşağıdakilerden hangisi hem fon akım hem de nakit akım analizinin ortak amacıdır?",
-    "options": {"A": "Kârı gizlemek", "B": "İşletmenin dönem içindeki kaynak/nakit hareketlerini (nereden gelip nereye gittiğini) göstererek finansal politikayı değerlendirmek", "C": "Yalnızca vergi matrahını bulmak", "D": "Ortakların adreslerini listelemek", "E": "Ürün fiyatı belirlemek"},
-    "answer": "B",
+    "options": {
+      "A": "İşletmenin dönem içindeki kaynak/nakit hareketlerini (nereden gelip nereye gittiğini) göstererek finansal politikayı değerlendirmek",
+      "B": "Kârı gizlemek",
+      "C": "Yalnızca vergi matrahını bulmak",
+      "D": "Ortakların adreslerini listelemek",
+      "E": "Ürün fiyatı belirlemek"
+    },
+    "answer": "A",
     "solution": "Her iki tablo da işletmenin dönem içindeki **kaynak/nakit hareketlerini** (nereden gelip nereye gittiğini) göstererek finansal politikanın değerlendirilmesini amaçlar.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (kavram-ortak amaç; sınav stiline kalibre)", "legislationRef": "Mali analiz - akım analizleri"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (kavram-ortak amaç; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - akım analizleri"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   },
   {
-    "id": "mta-fon-gen-0060", "ders": "mali_tablolar_analizi", "konu": "fon_akim_analizi",
+    "id": "mta-fon-gen-0060",
+    "ders": "mali_tablolar_analizi",
+    "konu": "fon_akim_analizi",
     "stem": "Fon akım analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\nI. Fon kaynakları toplamı fon kullanımları toplamına eşittir.\nII. Amortisman, faaliyetlerden fon bulunurken dönem kârına geri eklenir.\nIII. Uzun vadeli borçlanma bir fon kaynağı, borcun ödenmesi bir fon kullanımıdır.",
-    "options": {"A": "Yalnız I", "B": "I ve II", "C": "II ve III", "D": "I ve III", "E": "I, II ve III"},
-    "answer": "E",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "I, II ve III",
+      "E": "I ve III"
+    },
+    "answer": "D",
     "solution": "Üç ifade de doğrudur: **I** kaynaklar = kullanımlar; **II** amortisman kâra geri eklenir; **III** UV borçlanma kaynak, ödeme kullanımdır. Doğru cevap **I, II ve III**.",
-    "source": {"kind": "generated", "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)", "legislationRef": "Mali analiz - fon akım tablosu"},
-    "validYear": 2026, "mockExamId": null
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
+      "legislationRef": "Mali analiz - fon akım tablosu"
+    },
+    "validYear": 2026,
+    "mockExamId": null
   }
 ]
