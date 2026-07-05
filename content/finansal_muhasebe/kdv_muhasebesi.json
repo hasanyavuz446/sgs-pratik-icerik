@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "finmuh-kdv-gen-0001",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "191 İNDİRİLECEK KDV hesabı için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Satışlarda müşteriden tahsil edilen KDV'yi izleyen pasif nitelikli bir hesaptır.",
+      "B": "Mal ve hizmet alışları sırasında satıcıya ödenen, hesaplanan KDV'den indirilecek KDV'yi izleyen aktif nitelikli hesaptır.",
+      "C": "Dönem sonunda indirilemeyip sonraki döneme aktarılan KDV'yi gösteren hesaptır.",
+      "D": "Vergi dairesine ödenecek net KDV borcunu izleyen bir yabancı kaynak hesabıdır.",
+      "E": "Yalnızca ihracat ve diğer istisna işlemlerinde kullanılan, iadesi talep edilen yüklenilen KDV'yi izleyen özel bir hesaptır."
+    },
+    "answer": "B",
+    "solution": "**191 İNDİRİLECEK KDV**, alışlarda yüklenilen (satıcıya ödenen) KDV'yi izler; aktif niteliklidir ve dönem içinde borç tarafında birikir. Satışta tahsil edilen KDV **391 HESAPLANAN KDV**'de, sonraki döneme aktarılan **190 DEVREDEN KDV**'de, ödenecek borç ise **360**'ta izlenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 (indirim) / TDHP 191"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0002",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "391 HESAPLANAN KDV hesabı ne için kullanılır?",
+    "options": {
+      "A": "Yapılan teslim ve hizmetler üzerinden hesaplanıp müşteriden tahsil edilen KDV'yi izlemek için.",
+      "B": "Alışlarda satıcıya ödenen ve indirim konusu yapılacak KDV'yi izlemek için.",
+      "C": "İndirilemeyip ertesi döneme devreden KDV tutarını izlemek için.",
+      "D": "Peşin ödenen ve gelecek dönemlere ait giderleri izlemek için.",
+      "E": "İşletmenin ödediği damga vergisi ve harçları izlemek için."
+    },
+    "answer": "A",
+    "solution": "**391 HESAPLANAN KDV**, satış (teslim/hizmet) üzerinden hesaplanan ve alıcıdan tahsil edilen KDV'dir; pasif niteliklidir, satışta alacak tarafında birikir. Alışta ödenen KDV ise 191'de izlenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrah) / TDHP 391"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0003",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir dönemde indirilecek KDV, hesaplanan KDV'den fazla olduğunda aradaki fark hangi hesaba aktarılır?",
+    "options": {
+      "A": "360 ÖDENECEK VERGİ VE FONLAR",
+      "B": "190 DEVREDEN KDV",
+      "C": "689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR",
+      "D": "391 HESAPLANAN KDV",
+      "E": "770 GENEL YÖNETİM GİDERLERİ"
+    },
+    "answer": "B",
+    "solution": "İndirilecek KDV (191) hesaplanan KDV'den (391) fazlaysa fark o dönem ödenemez; **190 DEVREDEN KDV**'ye aktarılıp sonraki dönemde indirim konusu yapılır. Ödeme çıkmaz. Tersine 391 > 191 olsaydı fark 360'a (ödenecek KDV) yazılırdı.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2 / TDHP 190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0004",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Ay sonu mahsup sonrası hesaplanan KDV indirilecek KDV'den fazlaysa, ödenecek net KDV hangi hesapta izlenir?",
+    "options": {
+      "A": "190 DEVREDEN KDV hesabının borcunda",
+      "B": "191 İNDİRİLECEK KDV hesabının borcunda",
+      "C": "360 ÖDENECEK VERGİ VE FONLAR hesabının alacağında",
+      "D": "600 YURTİÇİ SATIŞLAR hesabının alacağında",
+      "E": "102 BANKALAR hesabının borcunda"
+    },
+    "answer": "C",
+    "solution": "391 > 191 ise aradaki fark o dönemin ödenecek KDV'sidir ve **360 ÖDENECEK VERGİ VE FONLAR** hesabının alacağına yazılır (pasif; vergi dairesine borç). Ödeme yapıldığında 360 borçlandırılıp 102/100 alacaklandırılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 360 / KDVK md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0005",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Katma değer vergisinde indirim mekanizması aşağıdakilerden hangisiyle doğru ifade edilir?",
+    "options": {
+      "A": "Dönemin tüm alışları doğrudan gider yazılır, KDV ayrıca hesaplanmaz.",
+      "B": "Satışların KDV'si, alışların KDV'sine eklenerek toplam vergi bulunur.",
+      "C": "Ödenecek KDV = Hesaplanan KDV − İndirilecek KDV; mükellef aradaki farkı öder.",
+      "D": "Hesaplanan KDV her ay olduğu gibi vergi dairesine ödenir, indirim yapılmaz.",
+      "E": "İndirilecek KDV, satış bedelinin maliyetine eklenerek indirilir."
+    },
+    "answer": "C",
+    "solution": "KDV'de mükellef, satışları üzerinden **hesapladığı** KDV'den (391), alışlarında **yüklendiği** KDV'yi (191) indirir; kalan pozitif farkı (**Hesaplanan − İndirilecek**) vergi dairesine öder. Böylece vergi yalnızca eklenen değer üzerinden alınır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0006",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Aşağıdakilerden hangisi verginin konusuna giren bir işlem olarak KDV doğurur?",
+    "options": {
+      "A": "Geçmiş yıl kârının ortaklara dağıtılmayıp olağanüstü yedeklere aktarılması işlemi",
+      "B": "Ortağın işletmeye koyduğu nakit sermaye",
+      "C": "Bankadan alınan kredinin işletme hesabına geçmesi",
+      "D": "Personele net ücretin banka aracılığıyla ödenmesi",
+      "E": "İşletmenin ticari faaliyeti kapsamında yaptığı mal teslimi ve hizmet ifası"
+    },
+    "answer": "E",
+    "solution": "KDV'nin konusu, Türkiye'de ticari/sınai/zirai faaliyet ve serbest meslek kapsamında yapılan **teslim ve hizmetler**dir. Sermaye koyma, kredi kullanımı, ücret ödemesi ve yedek ayırma bir teslim/hizmet olmadığından KDV doğurmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 1"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0007",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "3065 sayılı Kanuna göre binek otomobil alışında yüklenilen KDV ile ilgili aşağıdakilerden hangisi doğrudur? (Faaliyeti araç kiralama/işletme olmayan bir işletme için)",
+    "options": {
+      "A": "Kural olarak indirilemez; taşıtın maliyetine eklenir veya gider yazılır.",
+      "B": "Tamamı 191 İNDİRİLECEK KDV'ye alınıp hesaplanan KDV'den indirilir.",
+      "C": "Doğrudan 391 HESAPLANAN KDV hesabına alacak kaydedilir.",
+      "D": "190 DEVREDEN KDV'ye alınarak sonraki dönemde indirilir.",
+      "E": "Yarısı indirilir, yarısı 689 hesabına gider yazılır."
+    },
+    "answer": "A",
+    "solution": "KDVK md 30'a göre faaliyeti binek oto kiralama/işletme olmayan mükelleflerde **binek otomobilin alış KDV'si indirilemez**; bu KDV taşıtın maliyetine eklenir ya da gider yazılır. Dolayısıyla 191'e alınıp indirilmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 30/b (indirilemeyen KDV)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0008",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İndirilemeyen KDV ile ilgili aşağıdakilerden hangisi yanlıştır?",
+    "options": {
+      "A": "İndirim hakkı tanınmayan KDV, ilgili mal/hizmetin maliyetine veya gidere eklenebilir.",
+      "B": "Belgeye (faturaya) dayanmayan KDV indirim konusu yapılamaz.",
+      "C": "İndirilemeyen KDV, indirilecek KDV hesabına alınmaz.",
+      "D": "Kanunen indirimi kabul edilmeyen KDV 191 hesabında bekletilip her zaman indirilir.",
+      "E": "Gelir/kurumlar vergisi açısından gider kabul edilmeyen harcamaların KDV'si de indirilemez."
+    },
+    "answer": "D",
+    "solution": "İndirim hakkı tanınmayan KDV **191'e alınıp sürekli bekletilerek indirilemez**; maliyete/gidere aktarılır (indirilemez kalır). Belgesiz KDV ve KKEG niteliğindeki harcamaların KDV'si indirilemez — diğer öncüller doğrudur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 30 / md 34"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0009",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV'de vergilendirme dönemi ve beyan ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Vergilendirme dönemi takvim yılıdır; KDV beyannamesi yılda yalnızca bir kez, izleyen yılın başında verilir.",
+      "B": "KDV yalnızca tahsil edildikçe, dönemsiz biçimde ödenir.",
+      "C": "Vergilendirme dönemi haftalıktır; her hafta beyan verilir.",
+      "D": "Beyanname verilmez; vergi dairesi tarhiyatı resen yapar.",
+      "E": "Gerçek usulde vergilendirme dönemi kural olarak birer aylık dönemlerdir; beyan izleyen ay verilir."
+    },
+    "answer": "E",
+    "solution": "Gerçek usulde KDV'de vergilendirme dönemi kural olarak **birer aylık** takvim ayıdır; mükellef her ayın KDV'sini **izleyen ay** beyan edip öder. Yıllık/haftalık dönem ya da beyansız ödeme söz konusu değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 39-41"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0010",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "\"KDV dahil\" ve \"KDV hariç\" tutar kavramları için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "KDV dahil tutar, matrahın altında bir tutardır.",
+      "B": "KDV hariç tutar (matrah) ile KDV her zaman birbirine eşittir.",
+      "C": "KDV hariç tutar, dahil tutardan KDV'nin iki katı çıkarılarak bulunur.",
+      "D": "KDV dahil tutar = matrah değildir; matrah + hesaplanan KDV'dir.",
+      "E": "KDV dahil tutar yalnızca ithalatta kullanılır, yurtiçinde kullanılmaz."
+    },
+    "answer": "D",
+    "solution": "**KDV hariç tutar = matrah**; **KDV dahil tutar = matrah + hesaplanan KDV**. Dahil tutardan matraha inmek için dahil tutar (1 + oran)'a bölünür. Dolayısıyla dahil tutar matrahtan büyüktür ve matraha eşit değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrah)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0011",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Yüklenilen (indirilebilen) KDV'nin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "İndirilebilen KDV, satın alınan malın maliyetine eklenir.",
+      "B": "İndirilebilen KDV, doğrudan dönem gideri olarak 770 hesabına yazılır.",
+      "C": "İndirilebilen KDV, 391 HESAPLANAN KDV hesabının borcuna yazılır.",
+      "D": "İndirilebilen KDV, doğrudan özkaynaklardan düşülür.",
+      "E": "İndirilebilen KDV, ayrı olarak 191 İNDİRİLECEK KDV'ye alınır; maliyete girmez."
+    },
+    "answer": "E",
+    "solution": "İndirim hakkı bulunan KDV **maliyet unsuru değildir**; malın/hizmetin bedelinden ayrı olarak **191 İNDİRİLECEK KDV**'ye alınır ve hesaplanan KDV'den indirilir. Yalnızca indirilemeyen KDV maliyete/gidere eklenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 191"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0012",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "190 DEVREDEN KDV hesabı için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Satışlarda hesaplanan KDV'nin izlendiği pasif hesaptır.",
+      "B": "Vergi dairesine ödenecek net KDV borcunun izlendiği pasif nitelikli bir hesaptır.",
+      "C": "Bir dönemde indirilemeyip sonraki döneme aktarılan KDV'nin izlendiği aktif hesaptır.",
+      "D": "İhracattan doğan alacakların izlendiği hesaptır.",
+      "E": "Personelden kesilen gelir vergisinin izlendiği hesaptır."
+    },
+    "answer": "C",
+    "solution": "**190 DEVREDEN KDV**, indirilecek KDV'nin hesaplanan KDV'yi aştığı dönemlerde indirilemeyen kısmın sonraki döneme taşındığı **aktif** nitelikli hesaptır. Hesaplanan KDV 391'de, ödenecek KDV 360'ta izlenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 190 / KDVK md 29/2"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0013",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Tam istisna kapsamındaki (ör. ihracat) bir teslimde yüklenilen KDV bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Teslim KDV'den istisnadır; ilgili yüklenilen KDV indirim ve iade konusu yapılabilir.",
+      "B": "Teslim istisna olduğu için yüklenilen KDV kesinlikle dikkate alınmaz, gider yazılır.",
+      "C": "İhracat tesliminde ayrıca %20 hesaplanan KDV doğar.",
+      "D": "Yüklenilen KDV yalnızca özkaynaklara aktarılır.",
+      "E": "İstisna teslimlerde KDV beyannamesi hiç verilmez."
+    },
+    "answer": "A",
+    "solution": "İhracat gibi **tam istisna** kapsamı teslimlerde teslim KDV'den istisnadır; ancak bu işlemler için **yüklenilen KDV indirilebilir ve indirilemeyen kısım iade** alınabilir. (Kısmi istisnada ise yüklenilen KDV indirilemez, gider/maliyet olur.)",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 32 (tam istisnada indirim/iade)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0014",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir dönemde 391 HESAPLANAN KDV = 191 İNDİRİLECEK KDV olduğunda ay sonu mahsup kaydının sonucu ne olur?",
+    "options": {
+      "A": "Fark 360'a ödenecek KDV olarak yazılır.",
+      "B": "İki hesap da karşılıklı kapanır; ne ödenecek KDV ne de devreden KDV doğar.",
+      "C": "Fark 190 DEVREDEN KDV'ye aktarılır.",
+      "D": "Hesaplanan KDV 600 YURTİÇİ SATIŞLAR'a devredilir.",
+      "E": "İndirilecek KDV gelir olarak yazılıp 649 DİĞER OLAĞAN GELİR VE KÂRLAR hesabına aktarılır."
+    },
+    "answer": "B",
+    "solution": "391 = 191 olduğunda mahsup kaydında 391 (B) ile 191 (A) **birbirini tam kapatır**; aradaki fark sıfır olduğundan ne 360 (ödenecek) ne de 190 (devreden) çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 191-391-360-190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0015",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir işletme 20.000 ₺ tutarında ticari malı %20 KDV ile peşin (kasadan) satın almıştır. Yapılacak muhasebe kaydı aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "770 GENEL YÖNETİM GİD. 20.000 ₺ (B) / 191 İNDİRİLECEK KDV 4.000 ₺ (B) / 100 KASA 24.000 ₺ (A)",
+      "B": "153 TİCARİ MALLAR 24.000 ₺ (B) / 100 KASA 24.000 ₺ (A)",
+      "C": "153 TİCARİ MALLAR 20.000 ₺ (B) / 391 HESAPLANAN KDV 4.000 ₺ (A) / 100 KASA 20.000 ₺ (A)",
+      "D": "153 TİCARİ MALLAR 20.000 ₺ (B) / 191 İNDİRİLECEK KDV 4.000 ₺ (B) / 100 KASA 24.000 ₺ (A)",
+      "E": "153 TİCARİ MALLAR 4.000 ₺ (B) / 191 İNDİRİLECEK KDV 20.000 ₺ (B) / 100 KASA 24.000 ₺ (A)"
+    },
+    "answer": "D",
+    "solution": "Mal bedeli malın maliyetine (**153 (B) 20.000 ₺**), yüklenilen KDV ayrıca **191 (B) 4.000 ₺**, ödenen toplam **100 (A) 24.000 ₺** yazılır. KDV maliyete eklenmez; alışta 391 değil 191 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 153-191-100"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0016",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "50.000 ₺ tutarındaki ticari mal %10 KDV ile veresiye (senetsiz) satın alınmıştır. Doğru kayıt hangisidir?",
+    "options": {
+      "A": "153 TİCARİ MALLAR 55.000 ₺ (B) / 320 SATICILAR 55.000 ₺ (A)",
+      "B": "153 TİCARİ MALLAR 50.000 ₺ (B) / 391 HESAPLANAN KDV 5.000 ₺ (B) / 320 SATICILAR 55.000 ₺ (A)",
+      "C": "153 TİCARİ MALLAR 50.000 ₺ (B) / 191 İNDİRİLECEK KDV 5.000 ₺ (B) / 100 KASA 55.000 ₺ (A)",
+      "D": "153 TİCARİ MALLAR 50.000 ₺ (B) / 191 İNDİRİLECEK KDV 5.000 ₺ (B) / 320 SATICILAR 55.000 ₺ (A)",
+      "E": "320 SATICILAR 55.000 ₺ (B) / 153 TİCARİ MALLAR 50.000 ₺ (A) / 191 İNDİRİLECEK KDV 5.000 ₺ (A)"
+    },
+    "answer": "D",
+    "solution": "Veresiye alışta borç **320 SATICILAR (A) 55.000 ₺** olur. Mal **153 (B) 50.000 ₺**, KDV **191 (B) 5.000 ₺**. Peşin olmadığından 100 çalışmaz; alışta hesaplanan KDV (391) değil indirilecek KDV (191) kaydedilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 153-191-320"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0017",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İşletme büroda kullanmak üzere 30.000 ₺ + %20 KDV bedelle demirbaş satın almış, bedeli banka havalesiyle ödemiştir. Doğru kayıt hangisidir?",
+    "options": {
+      "A": "255 DEMİRBAŞLAR 36.000 ₺ (B) / 102 BANKALAR 36.000 ₺ (A)",
+      "B": "255 DEMİRBAŞLAR 30.000 ₺ (B) / 391 HESAPLANAN KDV 6.000 ₺ (A) / 102 BANKALAR 30.000 ₺ (A)",
+      "C": "255 DEMİRBAŞLAR 30.000 ₺ (B) / 191 İNDİRİLECEK KDV 6.000 ₺ (B) / 102 BANKALAR 36.000 ₺ (A)",
+      "D": "153 TİCARİ MALLAR 30.000 ₺ (B) / 191 İNDİRİLECEK KDV 6.000 ₺ (B) / 102 BANKALAR 36.000 ₺ (A)",
+      "E": "255 DEMİRBAŞLAR 30.000 ₺ (B) / 191 İNDİRİLECEK KDV 6.000 ₺ (B) / 100 KASA 36.000 ₺ (A)"
+    },
+    "answer": "C",
+    "solution": "Duran varlık **255 DEMİRBAŞLAR (B) 30.000 ₺**, indirilebilen KDV **191 (B) 6.000 ₺**, banka ödemesi **102 (A) 36.000 ₺**. Demirbaş mal olmadığından 153'e, ödeme banka olduğundan 100'e yazılmaz; alışta 191 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 255-191-102"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0018",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İşletme 8.000 ₺ + %20 KDV tutarında danışmanlık (yönetim) hizmeti almış, bedeli henüz ödememiştir. Doğru kayıt hangisidir?",
+    "options": {
+      "A": "770 GENEL YÖNETİM GİD. 8.000 ₺ (B) / 391 HESAPLANAN KDV 1.600 ₺ (A) / 320 SATICILAR 8.000 ₺ (A)",
+      "B": "153 TİCARİ MALLAR 8.000 ₺ (B) / 191 İNDİRİLECEK KDV 1.600 ₺ (B) / 320 SATICILAR 9.600 ₺ (A)",
+      "C": "770 GENEL YÖNETİM GİD. 9.600 ₺ (B) / 320 SATICILAR 9.600 ₺ (A)",
+      "D": "770 GENEL YÖNETİM GİD. 8.000 ₺ (B) / 191 İNDİRİLECEK KDV 1.600 ₺ (B) / 320 SATICILAR 9.600 ₺ (A)",
+      "E": "320 SATICILAR 9.600 ₺ (B) / 770 GENEL YÖNETİM GİD. 8.000 ₺ (A) / 191 İND. KDV 1.600 ₺ (A)"
+    },
+    "answer": "D",
+    "solution": "Hizmet gideri **770 (B) 8.000 ₺**, yüklenilen KDV **191 (B) 1.600 ₺**, ödenmediği için **320 SATICILAR (A) 9.600 ₺**. KDV giderle birleştirilip 770'e yazılmaz (indirilebilir), alışta 391 değil 191 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 770-191-320"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0019",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "45.000 ₺ (KDV hariç) tutarındaki bir mal alışında KDV oranı %20 ise, 191 İNDİRİLECEK KDV hesabına yazılacak tutar kaç ₺'dir?",
+    "options": {
+      "A": "9.000 ₺",
+      "B": "10.000 ₺",
+      "C": "9.500 ₺",
+      "D": "54.000 ₺",
+      "E": "7.200 ₺"
+    },
+    "answer": "A",
+    "solution": "İndirilecek KDV = matrah × oran = 45.000 × %20 = **9.000 ₺**. Bu tutar 191'in borcuna yazılır; 54.000 ₺ ise KDV dahil toplam (matrah + KDV) olurdu.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20/28"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0020",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Faaliyeti araç kiralama olmayan bir işletme 400.000 ₺ + %20 KDV bedelle binek otomobil almıştır (bedel bankadan ödenmiştir). 3065 sayılı Kanun md 30 uyarınca doğru kayıt hangisidir?",
+    "options": {
+      "A": "254 TAŞITLAR 480.000 ₺ (B) / 102 BANKALAR 480.000 ₺ (A)",
+      "B": "254 TAŞITLAR 400.000 ₺ (B) / 191 İNDİRİLECEK KDV 80.000 ₺ (B) / 102 BANKALAR 480.000 ₺ (A)",
+      "C": "153 TİCARİ MALLAR 400.000 ₺ (B) / 191 İNDİRİLECEK KDV 80.000 ₺ (B) / 102 BANKALAR 480.000 ₺ (A)",
+      "D": "254 TAŞITLAR 400.000 ₺ (B) / 391 HESAPLANAN KDV 80.000 ₺ (A) / 102 BANKALAR 400.000 ₺ (A)",
+      "E": "770 GENEL YÖNETİM GİD. 80.000 ₺ (B) / 254 TAŞITLAR 400.000 ₺ (B) / 102 BANKALAR 480.000 ₺ (A)"
+    },
+    "answer": "A",
+    "solution": "Binek oto alış KDV'si indirilemediğinden (md 30/b) **taşıtın maliyetine eklenir**: 254 TAŞITLAR (B) 480.000 ₺ / 102 (A) 480.000 ₺. KDV ayrı 191'e alınıp indirilmez; alışta 391 çalışmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 30/b / TDHP 254"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0021",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "%1 KDV'ye tabi 100.000 ₺ tutarında mal peşin alınmıştır. Bu alışta 191 İNDİRİLECEK KDV'ye yazılacak tutar kaç ₺'dir?",
+    "options": {
+      "A": "10.000 ₺",
+      "B": "1.000 ₺",
+      "C": "2.000 ₺",
+      "D": "101.000 ₺",
+      "E": "500 ₺"
+    },
+    "answer": "B",
+    "solution": "İndirilecek KDV = 100.000 × %1 = **1.000 ₺**. Oran soruda verildiğinden mekanik hesap: matrah × oran. 101.000 ₺ KDV dahil toplam olurdu.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 28 (oran) / TDHP 191"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0022",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İşletme maliyeti kayıtlı ticari malı 40.000 ₺ + %20 KDV bedelle peşin (kasaya) satmıştır. Satış hasılatı kaydı hangisidir? (maliyet kaydı hariç)",
+    "options": {
+      "A": "100 KASA 40.000 ₺ (B) / 191 İNDİRİLECEK KDV 8.000 ₺ (B) / 600 YURTİÇİ SATIŞLAR 48.000 ₺ (A)",
+      "B": "100 KASA 48.000 ₺ (B) / 600 YURTİÇİ SATIŞLAR 48.000 ₺ (A)",
+      "C": "100 KASA 48.000 ₺ (B) / 600 YURTİÇİ SATIŞLAR 40.000 ₺ (A) / 391 HESAPLANAN KDV 8.000 ₺ (A)",
+      "D": "600 YURTİÇİ SATIŞLAR 48.000 ₺ (B) / 100 KASA 40.000 ₺ (A) / 391 HESAPLANAN KDV 8.000 ₺ (A)",
+      "E": "120 ALICILAR 48.000 ₺ (B) / 600 YURTİÇİ SATIŞLAR 40.000 ₺ (A) / 391 HESAPLANAN KDV 8.000 ₺ (A)"
+    },
+    "answer": "C",
+    "solution": "Peşin tahsilat **100 KASA (B) 48.000 ₺**; hasılat **600 (A) 40.000 ₺**; satışta hesaplanan KDV **391 (A) 8.000 ₺**. KDV hasılata dahil edilip 600'e yazılmaz; satışta 191 değil 391 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 / TDHP 100-600-391"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0023",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "25.000 ₺ + %10 KDV tutarında mal veresiye satılmıştır. Doğru hasılat kaydı hangisidir?",
+    "options": {
+      "A": "120 ALICILAR 27.500 ₺ (B) / 600 YURTİÇİ SATIŞLAR 27.500 ₺ (A)",
+      "B": "100 KASA 27.500 ₺ (B) / 600 YURTİÇİ SATIŞLAR 25.000 ₺ (A) / 391 HESAPLANAN KDV 2.500 ₺ (A)",
+      "C": "120 ALICILAR 27.500 ₺ (B) / 600 YURTİÇİ SATIŞLAR 25.000 ₺ (A) / 391 HESAPLANAN KDV 2.500 ₺ (A)",
+      "D": "120 ALICILAR 25.000 ₺ (B) / 191 İNDİRİLECEK KDV 2.500 ₺ (B) / 600 YURTİÇİ SATIŞLAR 27.500 ₺ (A)",
+      "E": "600 YURTİÇİ SATIŞLAR 25.000 ₺ (B) / 391 HESAPLANAN KDV 2.500 ₺ (B) / 120 ALICILAR 27.500 ₺ (A)"
+    },
+    "answer": "C",
+    "solution": "Veresiye satışta borç **120 ALICILAR (B) 27.500 ₺**; hasılat **600 (A) 25.000 ₺**; hesaplanan KDV **391 (A) 2.500 ₺**. Peşin olmadığından 100 çalışmaz; satışta 391 (191 değil) kaydedilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 / TDHP 120-600-391"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0024",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "60.000 ₺ (KDV hariç) tutarında %20 KDV'li satışta 391 HESAPLANAN KDV hesabına yazılacak tutar kaç ₺'dir?",
+    "options": {
+      "A": "12.000 ₺",
+      "B": "72.000 ₺",
+      "C": "10.000 ₺",
+      "D": "6.000 ₺",
+      "E": "50.000 ₺"
+    },
+    "answer": "A",
+    "solution": "Hesaplanan KDV = 60.000 × %20 = **12.000 ₺** (391'in alacağı). 72.000 ₺ dahil toplam, 50.000 ₺ ise dahil tutardan yanlış geri hesap olurdu.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20/28"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0025",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "15.000 ₺ + %20 KDV'li veresiye satışta alıcıdan tahsil edilecek (120 ALICILAR'a yazılacak) toplam tutar kaç ₺'dir?",
+    "options": {
+      "A": "15.300 ₺",
+      "B": "3.000 ₺",
+      "C": "18.000 ₺",
+      "D": "16.500 ₺",
+      "E": "12.000 ₺"
+    },
+    "answer": "C",
+    "solution": "Alıcının borcu KDV dahil tutardır: 15.000 + (15.000 × %20 = 3.000) = **18.000 ₺**. 120 ALICILAR bu tutarla borçlandırılır; 600'e 15.000, 391'e 3.000 yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 / TDHP 120"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0026",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "%1 KDV'ye tabi 200.000 ₺ tutarında mal satışında hesaplanan KDV kaç ₺'dir?",
+    "options": {
+      "A": "4.000 ₺",
+      "B": "20.000 ₺",
+      "C": "202.000 ₺",
+      "D": "2.000 ₺",
+      "E": "1.000 ₺"
+    },
+    "answer": "D",
+    "solution": "Hesaplanan KDV = 200.000 × %1 = **2.000 ₺**. Oran soruda verildiğinden matrah × oran ile bulunur; 202.000 ₺ dahil toplamdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 28 / TDHP 391"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0027",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Peşin mal satışında (KDV dahil bedel kasaya tahsil ediliyor) hesapların çalışma yönü ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "600 YURTİÇİ SATIŞLAR borçlandırılır, 100 KASA alacaklandırılır.",
+      "B": "120 ALICILAR borçlandırılır, 100 KASA alacaklandırılır.",
+      "C": "191 İNDİRİLECEK KDV borçlandırılır, 391 HESAPLANAN KDV alacaklandırılır.",
+      "D": "100 KASA ve 391 HESAPLANAN KDV borçlandırılır, 600 alacaklandırılır.",
+      "E": "100 KASA borçlandırılır; 600 YURTİÇİ SATIŞLAR ve 391 HESAPLANAN KDV alacaklandırılır."
+    },
+    "answer": "E",
+    "solution": "Peşin satışta tahsil edilen KDV dahil bedel **100 KASA (B)**; hasılat **600 (A)** ve satış KDV'si **391 (A)**. Satışta indirilecek KDV (191) değil hesaplanan KDV (391) çalışır; 600 alacaklı taraftadır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 100-600-391"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0028",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir mal KDV dahil 36.000 ₺ bedelle (%20 KDV) satılmıştır. 600 YURTİÇİ SATIŞLAR'a yazılacak hasılat (matrah) kaç ₺'dir?",
+    "options": {
+      "A": "36.000 ₺",
+      "B": "6.000 ₺",
+      "C": "30.000 ₺",
+      "D": "7.200 ₺",
+      "E": "43.200 ₺"
+    },
+    "answer": "C",
+    "solution": "KDV dahil tutar (1 + oran)'a bölünür: 36.000 ₺ ÷ 1,20 = **30.000 ₺** (matrah = 600'e yazılır). Hesaplanan KDV = 36.000 ₺ − 30.000 ₺ = 6.000 ₺ (391).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (iç yüzde)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0029",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV dahil 24.000 ₺ olan bir fatura %20 KDV'ye tabidir. KDV hariç tutar (matrah) ve KDV sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "Matrah 24.000 ₺ — KDV 4.000 ₺",
+      "B": "Matrah 20.000 ₺ — KDV 4.000 ₺",
+      "C": "Matrah 20.000 ₺ — KDV 4.800 ₺",
+      "D": "Matrah 19.200 ₺ — KDV 4.800 ₺",
+      "E": "Matrah 4.000 ₺ — KDV 20.000 ₺"
+    },
+    "answer": "B",
+    "solution": "İç yüzde: matrah = dahil ÷ (1 + oran) = 24.000 ₺ ÷ 1.20 = **20.000 ₺**; KDV = dahil − matrah = **4.000 ₺**. KDV'yi dahil tutar × oran (4.800 ₺) ile bulmak yaygın hatadır (matrah × oran olmalı).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrahtan iç yüzde)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0030",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV dahil 33.000 ₺ olan bir fatura %10 KDV'ye tabidir. KDV hariç tutar (matrah) ve KDV sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "Matrah 33.000 ₺ — KDV 3.000 ₺",
+      "B": "Matrah 30.000 ₺ — KDV 3.300 ₺",
+      "C": "Matrah 30.000 ₺ — KDV 3.000 ₺",
+      "D": "Matrah 29.700 ₺ — KDV 3.300 ₺",
+      "E": "Matrah 3.000 ₺ — KDV 30.000 ₺"
+    },
+    "answer": "C",
+    "solution": "İç yüzde: matrah = dahil ÷ (1 + oran) = 33.000 ₺ ÷ 1.10 = **30.000 ₺**; KDV = dahil − matrah = **3.000 ₺**. KDV'yi dahil tutar × oran (3.300 ₺) ile bulmak yaygın hatadır (matrah × oran olmalı).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrahtan iç yüzde)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0031",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV dahil 60.500 ₺ olan bir fatura %10 KDV'ye tabidir. KDV hariç tutar (matrah) ve KDV sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "Matrah 60.500 ₺ — KDV 5.500 ₺",
+      "B": "Matrah 55.000 ₺ — KDV 6.050 ₺",
+      "C": "Matrah 55.000 ₺ — KDV 5.500 ₺",
+      "D": "Matrah 54.450 ₺ — KDV 6.050 ₺",
+      "E": "Matrah 5.500 ₺ — KDV 55.000 ₺"
+    },
+    "answer": "C",
+    "solution": "İç yüzde: matrah = dahil ÷ (1 + oran) = 60.500 ₺ ÷ 1.10 = **55.000 ₺**; KDV = dahil − matrah = **5.500 ₺**. KDV'yi dahil tutar × oran (6.050 ₺) ile bulmak yaygın hatadır (matrah × oran olmalı).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrahtan iç yüzde)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0032",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV dahil 60.000 ₺ olan bir fatura %20 KDV'ye tabidir. KDV hariç tutar (matrah) ve KDV sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "Matrah 60.000 ₺ — KDV 10.000 ₺",
+      "B": "Matrah 10.000 ₺ — KDV 50.000 ₺",
+      "C": "Matrah 50.000 ₺ — KDV 12.000 ₺",
+      "D": "Matrah 48.000 ₺ — KDV 12.000 ₺",
+      "E": "Matrah 50.000 ₺ — KDV 10.000 ₺"
+    },
+    "answer": "E",
+    "solution": "İç yüzde: matrah = dahil ÷ (1 + oran) = 60.000 ₺ ÷ 1.20 = **50.000 ₺**; KDV = dahil − matrah = **10.000 ₺**. KDV'yi dahil tutar × oran (12.000 ₺) ile bulmak yaygın hatadır (matrah × oran olmalı).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 20 (matrahtan iç yüzde)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0033",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir dönem sonunda 391 HESAPLANAN KDV 18.000 ₺, 191 İNDİRİLECEK KDV 11.000 ₺'dir. Ay sonu mahsup kaydı hangisidir?",
+    "options": {
+      "A": "360 ÖDENECEK VERGİ VE FONLAR 18.000 ₺ (B) / 391 HESAPLANAN KDV 18.000 ₺ (A)",
+      "B": "391 HESAPLANAN KDV 18.000 ₺ (B) / 190 DEVREDEN KDV 7.000 ₺ (B) / 191 İNDİRİLECEK KDV 11.000 ₺ (A)",
+      "C": "191 İNDİRİLECEK KDV 11.000 ₺ (B) / 391 HESAPLANAN KDV 18.000 ₺ (A) / 360 ÖDENECEK V.F. 7.000 ₺ (A)",
+      "D": "391 HESAPLANAN KDV 18.000 ₺ (B) / 191 İNDİRİLECEK KDV 11.000 ₺ (A) / 360 ÖDENECEK VERGİ VE FONLAR 7.000 ₺ (A)",
+      "E": "391 HESAPLANAN KDV 18.000 ₺ (B) / 191 İNDİRİLECEK KDV 11.000 ₺ (A) / 649 DİĞER OL. GELİR 7.000 ₺ (A)"
+    },
+    "answer": "D",
+    "solution": "391 > 191 olduğundan fark **ödenecek KDV**'dir: 391 (B) 18.000 ₺ kapatılır, 191 (A) 11.000 ₺ kapatılır, aradaki **7.000 ₺** → 360 (A). Fark 190'a yazılmaz (devreden ancak 191 > 391 iken doğar).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 391-191-360 / KDVK md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0034",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Dönem sonunda 391 HESAPLANAN KDV 9.000 ₺, 191 İNDİRİLECEK KDV 14.000 ₺'dir. Ay sonu mahsup kaydı hangisidir?",
+    "options": {
+      "A": "391 HESAPLANAN KDV 9.000 ₺ (B) / 191 İNDİRİLECEK KDV 14.000 ₺ (A) / 360 ÖDENECEK V.F. 5.000 ₺ (A)",
+      "B": "391 HESAPLANAN KDV 14.000 ₺ (B) / 191 İNDİRİLECEK KDV 9.000 ₺ (A)",
+      "C": "190 DEVREDEN KDV 5.000 ₺ (B) / 360 ÖDENECEK V.F. 5.000 ₺ (A)",
+      "D": "191 İNDİRİLECEK KDV 14.000 ₺ (B) / 391 HESAPLANAN KDV 9.000 ₺ (A) / 190 DEVREDEN KDV 5.000 ₺ (A)",
+      "E": "391 HESAPLANAN KDV 9.000 ₺ (B) / 190 DEVREDEN KDV 5.000 ₺ (B) / 191 İNDİRİLECEK KDV 14.000 ₺ (A)"
+    },
+    "answer": "E",
+    "solution": "191 > 391 olduğundan o dönem ödeme çıkmaz; 391 (B) 9.000 ₺ ile 191 (A) 14.000 ₺ karşılaştırılır, indirilemeyen **5.000 ₺** → **190 DEVREDEN KDV (B)** olarak sonraki döneme taşınır. 360 çalışmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 391-191-190 / KDVK md 29/2"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0035",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Ay sonu KDV mahsubunda hesaplanan KDV ile indirilecek KDV birbirine eşitse kayıt nasıl olur?",
+    "options": {
+      "A": "391 HESAPLANAN KDV (B) ve 190 DEVREDEN KDV (A) çalışır; aradaki fark sonraki döneme devreder.",
+      "B": "391 HESAPLANAN KDV (B) ile 191 İNDİRİLECEK KDV (A) birbirini kapatır; 360 ve 190 çalışmaz.",
+      "C": "360'a ödenecek KDV yazılır.",
+      "D": "İki hesap da alacak tarafında birikir.",
+      "E": "Kayıt yapılmaz, tutarlar bir sonraki yıla aktarılır."
+    },
+    "answer": "B",
+    "solution": "Eşitlikte 391 (B) ve 191 (A) karşılıklı **tam kapanır**; ödenecek fark (360) veya devreden fark (190) doğmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 391-191"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0036",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir ayda hesaplanan KDV 30.000 ₺, indirilecek KDV 22.000 ₺ ise ödenecek KDV kaç ₺'dir?",
+    "options": {
+      "A": "52.000 ₺",
+      "B": "22.000 ₺",
+      "C": "8.000 ₺",
+      "D": "30.000 ₺",
+      "E": "0 ₺"
+    },
+    "answer": "C",
+    "solution": "Ödenecek KDV = Hesaplanan − İndirilecek = 30.000 ₺ − 22.000 ₺ = **8.000 ₺** (391 > 191 olduğundan 360'a yazılır).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 / TDHP 360"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0037",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir ayda indirilecek KDV 40.000 ₺, hesaplanan KDV 28.000 ₺ ise sonraki döneme devreden KDV kaç ₺'dir?",
+    "options": {
+      "A": "0 ₺",
+      "B": "28.000 ₺",
+      "C": "40.000 ₺",
+      "D": "12.000 ₺",
+      "E": "68.000 ₺"
+    },
+    "answer": "D",
+    "solution": "191 > 391 olduğundan ödeme çıkmaz; devreden KDV = İndirilecek − Hesaplanan = 40.000 ₺ − 28.000 ₺ = **12.000 ₺** (190 DEVREDEN KDV).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2 / TDHP 190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0038",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Ay sonu KDV mahsup kaydında 190 DEVREDEN KDV hesabı hangi tarafta yer alır?",
+    "options": {
+      "A": "Borç tarafında; indirilemeyen KDV aktif nitelikli olarak sonraki döneme taşınır.",
+      "B": "Alacak tarafında; çünkü indirilemeyen KDV vergi dairesine ödenecek bir borç niteliği taşır.",
+      "C": "Hem borç hem alacak tarafında eşit yazılır.",
+      "D": "Gelir tablosunda 649 hesabının alacağında.",
+      "E": "Özkaynaklar altında 549 hesabının borcunda."
+    },
+    "answer": "A",
+    "solution": "İndirilecek KDV hesaplanan KDV'yi aştığında fark, aktif nitelikli **190 DEVREDEN KDV**'nin **borcuna** yazılır ve ertesi dönem indirilecek KDV'lere eklenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0039",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Hesaplanan KDV'nin indirilecek KDV'yi aştığı bir ayda 360 ÖDENECEK VERGİ VE FONLAR hesabına yazılan tutar neyi ifade eder?",
+    "options": {
+      "A": "İşletmenin o ay tahsil ettiği toplam hasılatı",
+      "B": "Alışlarda ödenen toplam KDV'yi",
+      "C": "Hesaplanan ile indirilecek KDV arasındaki farkı, yani o ay ödenecek net KDV'yi",
+      "D": "Malın maliyetine eklenen KDV'yi",
+      "E": "İki hesabın toplamını, yani hesaplanan ile indirilecek KDV'nin birlikte toplamını ifade eder."
+    },
+    "answer": "C",
+    "solution": "360'a yazılan tutar **Hesaplanan − İndirilecek** farkıdır; bu, o dönem vergi dairesine ödenecek net KDV'dir. Toplam değil, farktır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 360 / KDVK md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0040",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir ayda hesaplanan KDV 50.000 ₺, indirilecek KDV 35.000 ₺ ve önceki dönemden gelen 190 DEVREDEN KDV 5.000 ₺'dir. Bu ay ödenecek KDV kaç ₺'dir?",
+    "options": {
+      "A": "15.000 ₺",
+      "B": "40.000 ₺",
+      "C": "50.000 ₺",
+      "D": "10.000 ₺",
+      "E": "0 ₺"
+    },
+    "answer": "D",
+    "solution": "Önceki dönem devreden KDV bu ayın indirilecekleri gibi düşülür: 50.000 ₺ − 35.000 ₺ − 5.000 ₺ = **10.000 ₺**. Devreden dikkate alınmazsa yanlışlıkla 15.000 ₺ bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2 / TDHP 190-360"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0041",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Ay sonu KDV mahsup kaydı yapıldıktan sonra 191 İNDİRİLECEK KDV ve 391 HESAPLANAN KDV hesaplarının durumu ne olur?",
+    "options": {
+      "A": "İkisi de borç kalanı verecek şekilde devam eder.",
+      "B": "391 alacak, 191 borç kalanı vererek bilançoya taşınır.",
+      "C": "İkisi birleşip 190 DEVREDEN KDV'ye dönüşür ve her ay artarak büyümeye devam eder.",
+      "D": "İkisi de kapanır (kalan bakiye sıfırlanır); fark 360 veya 190'a aktarılmıştır.",
+      "E": "İkisi de gelir tablosuna gelir/gider olarak aktarılır."
+    },
+    "answer": "D",
+    "solution": "Mahsup kaydında 391 borçlandırılıp 191 alacaklandırıldığından her ikisi de **kapanır**; net fark ödenecekse 360'a, devredecekse 190'a taşınmıştır. Bu hesaplar gelir tablosu hesabı değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 191-391-360-190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0042",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Önceki dönemden devreden KDV 6.000 ₺'dir. Bu ay hesaplanan KDV 20.000 ₺, indirilecek KDV 9.000 ₺'dir. Bu ay ödenecek KDV kaç ₺'dir?",
+    "options": {
+      "A": "11.000 ₺",
+      "B": "0 ₺",
+      "C": "6.000 ₺",
+      "D": "20.000 ₺",
+      "E": "5.000 ₺"
+    },
+    "answer": "E",
+    "solution": "Devreden KDV bu dönemin indirilecekleriyle birlikte düşülür: 20.000 ₺ − (9.000 ₺ + 6.000 ₺) = **5.000 ₺** ödenecek KDV (360).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0043",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Önceki dönemden devreden KDV, izleyen dönem KDV hesabında nasıl dikkate alınır?",
+    "options": {
+      "A": "O dönemin hesaplanan KDV'sine eklenerek vergi dairesine ödenecek tutar artırılır.",
+      "B": "İzleyen dönemde indirilecek KDV gibi dikkate alınır; hesaplanan KDV'den düşülür.",
+      "C": "Dönem gideri olarak 770 hesabına yazılır.",
+      "D": "Doğrudan gelir yazılarak 649 hesabına aktarılır.",
+      "E": "Sermayeye eklenerek özkaynak artırılır."
+    },
+    "answer": "B",
+    "solution": "Devreden KDV kaybolmaz; **ertesi dönem indirilecek KDV gibi** hesaplanan KDV'den düşülür. Gelir/gider ya da sermaye unsuru değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2 / TDHP 190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0044",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Önceki dönem devreden KDV 10.000 ₺, bu ay hesaplanan KDV 12.000 ₺, indirilecek KDV 8.000 ₺'dir. Bu ay sonunda sonraki döneme devreden KDV kaç ₺ olur?",
+    "options": {
+      "A": "6.000 ₺",
+      "B": "10.000 ₺",
+      "C": "4.000 ₺",
+      "D": "0 ₺",
+      "E": "8.000 ₺"
+    },
+    "answer": "A",
+    "solution": "Toplam indirilebilir = 8.000 ₺ + 10.000 ₺ = 18.000 ₺; hesaplanan 12.000 ₺ bundan küçük olduğundan ödeme çıkmaz. Yeni devreden = 18.000 ₺ − 12.000 ₺ = **6.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2 / TDHP 190"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0045",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Devreden KDV (190) ile ilgili aşağıdakilerden hangisi kural olarak doğrudur?",
+    "options": {
+      "A": "Yalnızca yıl sonunda bir kez hesaplanır.",
+      "B": "Her dönem sonunda mutlaka nakden iade alınır.",
+      "C": "Ödenecek KDV ile aynı hesapta (360) izlenir.",
+      "D": "İndirim yoluyla giderilir; kural olarak (istisna halleri dışında) nakden iade edilmez, sonraki dönemlere taşınır.",
+      "E": "İndirilebilir niteliği bulunmadığından gelir tablosunda doğrudan dönem gideri olarak raporlanır."
+    },
+    "answer": "D",
+    "solution": "Devreden KDV kural olarak **indirim yoluyla** giderilir ve sonraki dönemlere aktarılır; tam istisna (ör. ihracat) gibi özel haller dışında nakden iade edilmez. 360 ödenecek KDV'den ayrı, aktif bir hesaptır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2, md 32"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0046",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Daha önce veresiye alınan maldan 5.000 ₺ + %20 KDV tutarındaki kısım satıcıya iade edilmiştir (alış iadesi). Doğru kayıt hangisidir?",
+    "options": {
+      "A": "610 SATIŞTAN İADELER 5.000 ₺ (B) / 191 İND. KDV 1.000 ₺ (B) / 320 SATICILAR 6.000 ₺ (A)",
+      "B": "153 TİCARİ MALLAR 5.000 ₺ (B) / 191 İNDİRİLECEK KDV 1.000 ₺ (B) / 320 SATICILAR 6.000 ₺ (A)",
+      "C": "320 SATICILAR 6.000 ₺ (B) / 153 TİCARİ MALLAR 5.000 ₺ (A) / 391 HESAPLANAN KDV 1.000 ₺ (A)",
+      "D": "320 SATICILAR 6.000 ₺ (B) / 153 TİCARİ MALLAR 5.000 ₺ (A) / 191 İNDİRİLECEK KDV 1.000 ₺ (A)",
+      "E": "320 SATICILAR 5.000 ₺ (B) / 153 TİCARİ MALLAR 6.000 ₺ (A)"
+    },
+    "answer": "D",
+    "solution": "Alış iadesi ilk kaydı ters çevirir: borç azaldığından **320 (B) 6.000 ₺**; mal çıkışı **153 (A) 5.000 ₺**; daha önce yüklenilen KDV geri alınır **191 (A) 1.000 ₺**. Alış iadesinde 391 değil 191 ters çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 35 (matrahta değişiklik) / TDHP 320-153-191"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0047",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Peşin satılan maldan 10.000 ₺ + %20 KDV tutarındaki kısım müşteri tarafından iade edilmiş, bedel kasadan ödenmiştir (satış iadesi). Doğru kayıt hangisidir?",
+    "options": {
+      "A": "600 YURTİÇİ SATIŞLAR 10.000 ₺ (B) / 391 HESAPLANAN KDV 2.000 ₺ (B) / 100 KASA 12.000 ₺ (A)",
+      "B": "610 SATIŞTAN İADELER 10.000 ₺ (B) / 391 HESAPLANAN KDV 2.000 ₺ (B) / 100 KASA 12.000 ₺ (A)",
+      "C": "100 KASA 12.000 ₺ (B) / 610 SATIŞTAN İADELER 10.000 ₺ (A) / 391 HESAPLANAN KDV 2.000 ₺ (A)",
+      "D": "610 SATIŞTAN İADELER 10.000 ₺ (B) / 191 İNDİRİLECEK KDV 2.000 ₺ (B) / 100 KASA 12.000 ₺ (A)",
+      "E": "153 TİCARİ MALLAR 10.000 ₺ (B) / 191 İND. KDV 2.000 ₺ (B) / 100 KASA 12.000 ₺ (A)"
+    },
+    "answer": "B",
+    "solution": "Satış iadesi **610 SATIŞTAN İADELER (B) 10.000 ₺** (hasılatı düzelten (–) hesap) ile izlenir; daha önce hesaplanan KDV geri verilir **391 (B) 2.000 ₺**; ödenen bedel **100 (A) 12.000 ₺**. İade 600'ün borcuna yazılmaz, 610 kullanılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 35 / TDHP 610-391-100"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0048",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Alış iadesinde (daha önce indirilecek KDV kaydedilmiş bir alışın iadesi) 191 İNDİRİLECEK KDV hesabı hangi tarafta çalışır?",
+    "options": {
+      "A": "Alacak tarafında; önce yüklenilen (indirilecek) KDV geri çıkarılır.",
+      "B": "Borç tarafında; KDV yeniden yüklenilir.",
+      "C": "Hiç çalışmaz; yalnızca 391 düzeltilir.",
+      "D": "Borç tarafında; ancak iade tutarı KDV ile birlikte iki katı olarak yazılır.",
+      "E": "Gelir olarak 649'a aktarılır."
+    },
+    "answer": "A",
+    "solution": "Alış iadesinde ilk alış kaydı geri alınır; alışta 191 borçlandırılmıştı, iadede **191 alacaklandırılarak** azaltılır. Alışla ilgili hesap 391 değil 191'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 191 / KDVK md 35"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0049",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Satış iadesinde 391 HESAPLANAN KDV hesabı hangi tarafta çalışır?",
+    "options": {
+      "A": "Alacak tarafında; KDV yeniden hesaplanır.",
+      "B": "Hiç çalışmaz; iade yalnızca 191'i etkiler.",
+      "C": "Doğrudan 360 ÖDENECEK V.F. borcuna yazılır.",
+      "D": "Alacak tarafında; iade nedeniyle hesaplanan KDV yeniden doğar ve tutar iki katına çıkar.",
+      "E": "Borç tarafında; satışta alacak yazılan hesaplanan KDV iade oranında geri alınır (azaltılır)."
+    },
+    "answer": "E",
+    "solution": "Satışta 391 alacaklandırılmıştı; iade edilen tutar kadar **391 borçlandırılarak** azaltılır. Satışla ilgili KDV hesabı 191 değil 391'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 391 / KDVK md 35"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0050",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Ay sonu mahsup sonrası 360 ÖDENECEK VERGİ VE FONLAR hesabında izlenen 7.000 ₺ KDV borcu bankadan ödenmiştir. Doğru kayıt hangisidir?",
+    "options": {
+      "A": "102 BANKALAR 7.000 ₺ (B) / 360 ÖDENECEK VERGİ VE FONLAR 7.000 ₺ (A)",
+      "B": "360 ÖDENECEK VERGİ VE FONLAR 7.000 ₺ (B) / 102 BANKALAR 7.000 ₺ (A)",
+      "C": "391 HESAPLANAN KDV 7.000 ₺ (B) / 102 BANKALAR 7.000 ₺ (A)",
+      "D": "360 ÖDENECEK VERGİ VE FONLAR 7.000 ₺ (B) / 191 İNDİRİLECEK KDV 7.000 ₺ (A)",
+      "E": "770 GENEL YÖNETİM GİDERLERİ 7.000 ₺ (B) / 102 BANKALAR 7.000 ₺ (A)"
+    },
+    "answer": "B",
+    "solution": "Vergi borcunun ödenmesi pasifi azaltır: **360 (B) 7.000 ₺** / **102 (A) 7.000 ₺**. Ödeme gider (770) değildir; 360 ay sonu alacaklandırılmış, ödemede borçlandırılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 360-102"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0051",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "360 ÖDENECEK VERGİ VE FONLAR hesabının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Ay sonu KDV tahakkukunda alacaklandırılır, ödeme yapıldığında borçlandırılarak kapanır.",
+      "B": "Ay sonu vergi tahakkukunda borçlandırılır, borç ödendiğinde ise alacaklandırılarak kapanır.",
+      "C": "Bir aktif hesap olup borç kalanı verir.",
+      "D": "Yalnızca satışlarda alacaklandırılır, hiç borçlandırılmaz.",
+      "E": "Devreden KDV ile aynı hesaptır."
+    },
+    "answer": "A",
+    "solution": "360 pasif bir hesaptır: ödenecek KDV/vergi tahakkukunda **alacaklandırılır**, ilgili borç ödendiğinde **borçlandırılarak** kapanır. Devreden KDV (190) ayrı bir aktif hesaptır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP 360"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0052",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV'nin yansıması (mükellef ile yüklenici ilişkisi) bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "KDV'nin gerçek yükü daima satıcı işletmenin üzerindedir; işletme yüklendiği vergiyi hiçbir şekilde indiremez, doğrudan gider yazar.",
+      "B": "İşletme (mükellef) satışta hesapladığı KDV'yi beyan eder; alışta yüklendiğini indirir. Verginin gerçek yükü kural olarak nihai tüketicidedir.",
+      "C": "Nihai tüketici KDV'yi indirir, işletme öder.",
+      "D": "KDV yalnızca üreticiden bir kez alınır, sonraki aşamalarda alınmaz.",
+      "E": "KDV işletmenin bir gideri olup gelir tablosunda gösterilir."
+    },
+    "answer": "B",
+    "solution": "İşletme aracı konumundadır: satışta hesapladığı KDV'yi (391) beyan eder, alışta yüklendiğini (191) indirir; aradaki farkı devlete öder. Verginin nihai yükü zincirin sonundaki **tüketicidedir**. İndirilebilen KDV işletmenin gideri değildir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 8/29 (mükellef/indirim)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0053",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İndirilemeyen bir KDV (ör. faaliyetle ilgili olmakla birlikte kanunen indirimi kabul edilmeyen bir gidere ait KDV) muhasebede nasıl işlenir?",
+    "options": {
+      "A": "191 İNDİRİLECEK KDV hesabında bekletilir ve herhangi bir sınırlama olmadan sonraki dönemlerde indirim konusu yapılır.",
+      "B": "İlgili giderin/malın maliyetine eklenir ya da doğrudan gider (kanunen kabul edilmeyen gider olabilir) yazılır.",
+      "C": "391 HESAPLANAN KDV'ye alacak yazılır.",
+      "D": "190 DEVREDEN KDV'ye aktarılıp iade alınır.",
+      "E": "Doğrudan sermayeden düşülür."
+    },
+    "answer": "B",
+    "solution": "İndirim hakkı olmayan KDV **191'e alınıp indirilemez**; ilgili gider/maliyetin bir parçası olur (duruma göre KKEG). 391 satış KDV'si, 190 devreden KDV içindir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 30 / VUK"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0054",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İndirilebilen KDV'nin malın maliyetine eklenmemesinin temel gerekçesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "KDV bir finansman gideri olduğu için doğrudan 660 hesabına yazılır.",
+      "B": "KDV her zaman satış fiyatının içinde gösterildiği için ayrı izlenmez.",
+      "C": "İndirilecek KDV yalnızca ihracat işlemlerinde ortaya çıktığından yurtiçi mal maliyetiyle hiçbir ilgisi bulunmaz.",
+      "D": "KDV özkaynak niteliğinde olduğu için maliyete girmez.",
+      "E": "İndirilebilen KDV işletme için nihai bir maliyet değildir; hesaplanan KDV'den indirileceğinden 191'de ayrı izlenir."
+    },
+    "answer": "E",
+    "solution": "İndirilebilen KDV, satışta hesaplanan KDV'den düşüleceğinden işletmeye **kalıcı bir maliyet yüklemez**; bu nedenle mal/hizmet bedelinden ayrı olarak 191'de izlenir ve maliyete eklenmez. Yalnızca indirilemeyen KDV maliyet/gider olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/58"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0055",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir mal imalatçıdan 100.000 ₺ + %20 KDV ile alınıp, 150.000 ₺ + %20 KDV ile satılmıştır. İşletmenin bu iki işlem sonucu vergi dairesine ödeyeceği net KDV kaç ₺'dir?",
+    "options": {
+      "A": "30.000 ₺",
+      "B": "10.000 ₺",
+      "C": "50.000 ₺",
+      "D": "5.000 ₺",
+      "E": "20.000 ₺"
+    },
+    "answer": "B",
+    "solution": "Hesaplanan KDV = 150.000 × %20 = 30.000; indirilecek KDV = 100.000 × %20 = 20.000. Ödenecek = 30.000 − 20.000 = **10.000 ₺** — bu, eklenen değerin (150.000 − 100.000 = 50.000) %20'sidir. KDV yalnızca katma değer üzerinden alınır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29 (katma değer)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0056",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Yurt dışından ithal edilen ticari mal için gümrükte ödenen KDV ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Gümrükte ödenen KDV 191 İNDİRİLECEK KDV'ye alınır ve hesaplanan KDV'den indirilir.",
+      "B": "Gümrükte ödenen KDV doğrudan malın satış fiyatına eklenir, ayrıca kaydedilmez.",
+      "C": "Gümrükte ödenen KDV 391 HESAPLANAN KDV'ye alacak yazılır.",
+      "D": "İthalatta KDV doğmaz; yalnızca gümrük vergisi ödenir.",
+      "E": "İthalatta yüklenilen KDV yalnızca ihracat yapılırsa indirilebilir."
+    },
+    "answer": "A",
+    "solution": "Mal ithali KDV'nin konusuna girer; gümrükte ödenen KDV belgeye dayanarak **191 İNDİRİLECEK KDV**'ye alınır ve genel esaslara göre hesaplanan KDV'den indirilir. İthalatta 391 değil 191 çalışır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 1/2, md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0057",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV hesaplarının (191, 391, 190, 360) mali tablolarla ilişkisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Hepsi gelir tablosu hesabıdır ve tahakkuk ettikçe dönem kârını doğrudan oluşturur.",
+      "B": "191 ve 391 gelir tablosunda hasılat olarak raporlanır.",
+      "C": "360 bir gelir hesabı olup 649'a devredilir.",
+      "D": "190 DEVREDEN KDV bir dönem gideridir.",
+      "E": "Bunlar bilanço hesaplarıdır; indirilebilen KDV kural olarak dönem kâr/zararını etkilemez."
+    },
+    "answer": "E",
+    "solution": "191 ve 190 aktif, 391 ve 360 pasif → hepsi **bilanço hesabı**dır. İndirilebilen KDV gelir/gider değildir, dönem sonucuna aktarılmaz; yalnızca indirilemeyen KDV gider/maliyet olarak sonucu etkiler.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "TDHP (1/2/3. gruplar)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0058",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "İşletme 12.000 ₺ + %20 KDV bedelle danışmanlık hizmeti almış, bedeli banka ile ödemiştir (tevkifat yoktur). 191 İNDİRİLECEK KDV'ye alınacak tutar kaç ₺'dir?",
+    "options": {
+      "A": "2.400 ₺",
+      "B": "14.400 ₺",
+      "C": "1.200 ₺",
+      "D": "12.000 ₺",
+      "E": "2.000 ₺"
+    },
+    "answer": "A",
+    "solution": "Yüklenilen KDV = matrah × oran = 12.000 × %20 = **2.400 ₺** (191'in borcuna). 14.400 ₺ KDV dahil ödenen toplamdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 4 (hizmet), md 29"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0059",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "KDV'nin belgelendirilmesi ve indirimi bakımından aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "KDV faturada hiç gösterilmez, yalnızca deftere yazılır.",
+      "B": "KDV mal bedeline eklenerek faturada tek bir tutar biçiminde yazılır ve matrahtan hiçbir zaman ayrıştırılmaz.",
+      "C": "Fatura olmasa da yüklenilen KDV her durumda indirilebilir.",
+      "D": "KDV yalnızca perakende satışta gösterilir, toptan satışta gösterilmez.",
+      "E": "KDV, matrahtan ayrı bir satır olarak faturada gösterilir ve alıcı bu KDV'yi belgeye dayanarak indirir."
+    },
+    "answer": "E",
+    "solution": "KDV faturada mal/hizmet bedelinden (matrah) **ayrı** gösterilir; indirim hakkı **belgeye (faturaya) dayanır** (md 34). Belgesiz KDV indirilemez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 34 / VUK md 230"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "finmuh-kdv-gen-0060",
+    "ders": "finansal_muhasebe",
+    "konu": "kdv_muhasebesi",
+    "stem": "Bir ayda satışlar üzerinden hesaplanan KDV 45.000 ₺, alışlar üzerinden indirilecek KDV 32.000 ₺, önceki dönemden devreden KDV 4.000 ₺'dir. Bu ay ödenecek KDV kaç ₺'dir?",
+    "options": {
+      "A": "13.000 ₺",
+      "B": "45.000 ₺",
+      "C": "32.000 ₺",
+      "D": "77.000 ₺",
+      "E": "9.000 ₺"
+    },
+    "answer": "E",
+    "solution": "Ödenecek KDV = Hesaplanan − (İndirilecek + Devreden) = 45.000 − (32.000 + 4.000) = **9.000 ₺**. Önceki dönem devreden KDV bu ayın indirilecekleri gibi düşülür; ihmal edilirse yanlışlıkla 13.000 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Finansal Muhasebe — KDV muhasebesi (sınav stiline kalibre)",
+      "legislationRef": "3065 s. KDVK md 29/2"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]
