@@ -201,7 +201,7 @@
     "id": "den-kanit-gen-0010",
     "ders": "denetim",
     "konu": "denetim_kaniti",
-    "stem": "Denetim kanıtı ve teknikleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yeterlilik kanıtın miktarını, uygunluk ise kalitesini ifade eder.\n\nII. İşletme dışı bağımsız kaynaklı kanıt genelde daha güvenilirdir.\n\nIII. Denetçi görüşünü desteklemek için yeterli ve uygun kanıt toplamalıdır.",
+    "stem": "Denetim kanıtı ve teknikleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yeterlilik kanıtın miktarını, uygunluk ise kalitesini ifade eder.\n\nII. İşletme içi kaynaktan elde edilen kanıt, işletme dışı bağımsız kaynaktan elde edilenden daha güvenilirdir.\n\nIII. Denetçi görüşünü desteklemek için yeterli ve uygun kanıt toplamalıdır.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -209,8 +209,8 @@
       "D": "I, II ve III (her üç ifade de doğrudur)",
       "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "D",
-    "solution": "Üçü de doğrudur: **I** yeterlilik=miktar, uygunluk=kalite; **II** dış bağımsız kaynak daha güvenilir; **III** yeterli VE uygun kanıt aranır. Doğru cevap: her üçü de.",
+    "answer": "E",
+    "solution": "**II yanlıştır:** bağımsız işletme DIŞI kaynaktan elde edilen kanıt, işletme içi kaynaktan elde edilene göre daha güvenilirdir (BDS 500). **I** yeterlilik=miktar, uygunluk=kalite ve **III** yeterli VE uygun kanıt aranması doğrudur. Doğru cevap: **I ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III özet; sınav stiline kalibre)",
@@ -421,7 +421,7 @@
     "id": "den-kanit-gen-0020",
     "ders": "denetim",
     "konu": "denetim_kaniti",
-    "stem": "Denetim teknikleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Teyit (dış doğrulama), üçüncü kişilerden doğrudan yazılı yanıt almaktır.\n\nII. Yeniden hesaplama, tutarların matematiksel doğruluğunun kontrolüdür.\n\nIII. Gözlem, bir sürecin başkalarınca yürütülüşünün izlenmesidir.",
+    "stem": "Denetim teknikleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Teyit (dış doğrulama), işletmenin kendi personelinden sözlü olarak bilgi alınması tekniğidir.\n\nII. Yeniden hesaplama, tutarların matematiksel doğruluğunun kontrolüdür.\n\nIII. Gözlem, bir sürecin başkalarınca yürütülüşünün izlenmesidir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I, II ve III (her üç ifade de doğrudur)",
@@ -429,8 +429,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I ve II (birinci ve ikinci ifadeler doğrudur)"
     },
-    "answer": "B",
-    "solution": "Üçü de doğrudur: **I** teyit=üçüncü kişiden doğrudan yazılı yanıt; **II** yeniden hesaplama=matematiksel doğruluk; **III** gözlem=başkalarınca yürütülen sürecin izlenmesi. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I yanlıştır:** teyit (dış doğrulama), üçüncü kişilerden DOĞRUDAN yazılı yanıt alınmasıdır; işletmenin kendi personelinden sözlü bilgi alma ise 'bilgi toplama/soruşturma' tekniğidir (BDS 500/505). **II** yeniden hesaplama=matematiksel doğruluk ve **III** gözlem=başkalarınca yürütülen sürecin izlenmesi doğrudur. Doğru cevap: **II ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III teknik; sınav stiline kalibre)",
@@ -861,7 +861,7 @@
     "id": "den-kanit-gen-0040",
     "ders": "denetim",
     "konu": "denetim_kaniti",
-    "stem": "Kanıt kaynağı ve güvenilirlik ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Asıl (orijinal) belge, fotokopisinden daha güvenilirdir.\n\nII. Yazılı kanıt, sözlü kanıttan daha güvenilirdir.\n\nIII. Güçlü iç kontrol altında üretilen kanıt, zayıf ortamda üretilenden daha güvenilirdir.",
+    "stem": "Kanıt kaynağı ve güvenilirlik ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Asıl (orijinal) belge, fotokopisinden daha güvenilirdir.\n\nII. Sözlü olarak elde edilen kanıt, yazılı biçimdeki kanıttan daha güvenilirdir.\n\nIII. Güçlü iç kontrol altında üretilen kanıt, zayıf ortamda üretilenden daha güvenilirdir.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -869,8 +869,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** asıl > fotokopi; **II** yazılı > sözlü; **III** güçlü iç kontrol altında üretilen > zayıf ortamda üretilen. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**II yanlıştır:** yazılı biçimdeki kanıt, sözlü kanıttan daha güvenilirdir; sözlü kanıt yazılıdan daha zayıftır. **I** asıl belge > fotokopi ve **III** güçlü iç kontrol altında üretilen kanıt > zayıf ortamda üretilen doğrudur. Doğru cevap: **I ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III güvenilirlik; sınav stiline kalibre)",

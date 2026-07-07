@@ -179,7 +179,7 @@
     "id": "mal-gelirgider-gen-0009",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi karşılıksız ve cebri bir kamu geliridir.\n\nII. Harç belirli bir kamu hizmeti karşılığında alınır.\n\nIII. Transfer harcamaları karşılıksız (mal-hizmet karşılığı olmayan) ödemelerdir.",
+    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi karşılıksız ve cebri bir kamu geliridir.\n\nII. Harç, herhangi bir kamu hizmeti karşılığı olmaksızın, tamamen karşılıksız olarak alınır.\n\nIII. Transfer harcamaları karşılıksız (mal-hizmet karşılığı olmayan) ödemelerdir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -187,8 +187,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I, II ve III (her üç ifade de doğrudur)"
     },
-    "answer": "E",
-    "solution": "Üçü de doğrudur: **I** vergi=karşılıksız+cebri; **II** harç=hizmet karşılığı; **III** transfer harcaması=karşılıksız ödeme. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**II YANLIŞ:** harç, **belirli bir kamu hizmetinden yararlanma karşılığında** alınır (ör. yargı, tapu, noter harcı); karşılıksız değildir. Karşılıksız ve cebri olan vergidir. **I** doğru (vergi karşılıksız+cebri), **III** doğru (transfer harcamaları karşılıksızdır). Doğru cevap: **I ve III (D)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III gelir/gider; sınav stiline kalibre)",
@@ -333,7 +333,7 @@
     "id": "mal-gelirgider-gen-0016",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Vergilendirme ve tarife türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Artan oranlı tarifede matrah arttıkça oran artar.\n\nII. Düz oranlı tarifede oran sabittir.\n\nIII. Ödeme gücü ilkesi, mali gücü yüksek olanların daha fazla vergi ödemesini öngörür.",
+    "stem": "Vergilendirme ve tarife türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Artan oranlı tarifede matrah arttıkça uygulanan vergi oranı düşer.\n\nII. Düz oranlı tarifede oran sabittir.\n\nIII. Ödeme gücü ilkesi, mali gücü yüksek olanların daha fazla vergi ödemesini öngörür.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -341,8 +341,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** artan oranlı→matrah↑ oran↑; **II** düz oranlı→sabit oran; **III** ödeme gücü→mali güce göre vergi. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I YANLIŞ:** artan oranlı tarifede matrah **arttıkça vergi oranı da artar**; matrah arttıkça oranın düşmesi azalan (tersine artan) oranlı tarifedir. **II** doğru (düz oranlı tarifede oran sabittir), **III** doğru (ödeme gücü ilkesi). Doğru cevap: **II ve III (C)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III tarife/ilke; sınav stiline kalibre)",
@@ -421,7 +421,7 @@
     "id": "mal-gelirgider-gen-0020",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi, harç ve resim kamu gelirlerindendir.\n\nII. Parafiskal gelirler vergiye benzer zorunlu ödemelerdir.\n\nIII. Borçlanma, geri ödeme yükümlülüğü olan bir finansman kaynağıdır.",
+    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi, harç ve resim kamu gelirlerindendir.\n\nII. Parafiskal gelirler vergiye benzer zorunlu ödemelerdir.\n\nIII. Borçlanma, geri ödeme yükümlülüğü bulunmayan, karşılıksız ve olağan bir kamu geliridir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -429,8 +429,8 @@
       "D": "I, II ve III (her üç ifade de doğrudur)",
       "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "D",
-    "solution": "Üçü de doğrudur: **I** vergi/harç/resim=kamu geliri; **II** parafiskal gelir=zorunlu ödeme; **III** borçlanma=geri ödemeli finansman. Doğru cevap: her üçü de.",
+    "answer": "B",
+    "solution": "**III YANLIŞ:** borçlanma **anapara ve faiziyle geri ödenmesi gereken** bir finansman kaynağıdır ve olağanüstü niteliktedir; karşılıksız/olağan bir gelir değildir. **I** doğru (vergi/harç/resim kamu gelirlerindendir), **II** doğru (parafiskal gelirler vergiye benzer zorunlu ödemelerdir). Doğru cevap: **I ve II (B)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III kamu gelirleri; sınav stiline kalibre)",
@@ -575,7 +575,7 @@
     "id": "mal-gelirgider-gen-0027",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergiden kaçınma yasal, vergi kaçakçılığı yasa dışıdır.\n\nII. Dolaysız vergiler gelir-servet, dolaylı vergiler harcama üzerinden alınır.\n\nIII. Verginin yansımasıyla mükellef ile taşıyıcı farklılaşabilir.",
+    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergiden kaçınma, tıpkı vergi kaçakçılığı gibi kanuna aykırıdır ve suç oluşturur.\n\nII. Dolaysız vergiler gelir-servet, dolaylı vergiler harcama üzerinden alınır.\n\nIII. Verginin yansımasıyla mükellef ile taşıyıcı farklılaşabilir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -583,8 +583,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I, II ve III (her üç ifade de doğrudur)"
     },
-    "answer": "E",
-    "solution": "Üçü de doğrudur: **I** kaçınma yasal/kaçakçılık yasa dışı; **II** dolaysız=gelir-servet/dolaylı=harcama; **III** yansıma→mükellef≠taşıyıcı. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I YANLIŞ:** vergiden **kaçınma yasaldır** (vergiyi doğuran olaya hiç girmeyerek ya da yasal boşluklardan yararlanarak vergi dışı kalma); suç oluşturan ve yasa dışı olan vergi kaçakçılığıdır. **II** doğru (dolaysız=gelir-servet, dolaylı=harcama üzerinden), **III** doğru (yansıma→mükellef≠taşıyıcı). Doğru cevap: **II ve III (C)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III vergi; sınav stiline kalibre)",
@@ -685,7 +685,7 @@
     "id": "mal-gelirgider-gen-0032",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mülk ve teşebbüs gelirleri, devletin mal varlığı ve işletmelerinden elde ettiği gelirlerdir.\n\nII. Şerefiye, kamu yatırımı nedeniyle değeri artan taşınmazlardan alınır.\n\nIII. Vergi cezaları da bir kamu geliri olabilir.",
+    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mülk ve teşebbüs gelirleri, devletin mal varlığı ve işletmelerinden elde ettiği gelirlerdir.\n\nII. Şerefiye, kamu yatırımı nedeniyle değeri düşen taşınmazlardan alınır.\n\nIII. Vergi cezaları da bir kamu geliri olabilir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I, II ve III (her üç ifade de doğrudur)",
@@ -693,8 +693,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I ve II (birinci ve ikinci ifadeler doğrudur)"
     },
-    "answer": "B",
-    "solution": "Üçü de doğrudur: **I** mülk/teşebbüs geliri=devletin mal varlığı geliri; **II** şerefiye=değer artışından; **III** vergi cezaları da kamu geliri. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**II YANLIŞ:** şerefiye (değerlenme resmi), kamu yatırımı (yol, metro vb.) nedeniyle değeri **artan** taşınmazlardan alınır; değeri düşenlerden değil. **I** doğru (mülk ve teşebbüs gelirleri), **III** doğru (vergi cezaları da bir kamu geliridir). Doğru cevap: **I ve III (D)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III kamu gelirleri; sınav stiline kalibre)",
@@ -751,7 +751,7 @@
     "id": "mal-gelirgider-gen-0035",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Verginin temel amacı kamu giderlerini finanse etmektir.\n\nII. Vergi ayrıca gelir dağılımını düzeltme gibi amaçlarla da kullanılabilir.\n\nIII. Zararlı malların tüketimini caydırmak için vergi kullanılabilir.",
+    "stem": "Kamu gelir ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Verginin temel amacı kamu giderlerini finanse etmektir.\n\nII. Vergi ayrıca gelir dağılımını düzeltme gibi amaçlarla da kullanılabilir.\n\nIII. Vergiler yalnızca gelir sağlama amacı taşır; zararlı malların tüketimini caydırmak gibi amaçlarla kullanılamaz.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -759,8 +759,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "II ve III (ikinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "C",
-    "solution": "Üçü de doğrudur: **I** verginin temel amacı finansman; **II** gelir dağılımını düzeltme amacı; **III** zararlı malları caydırma (ekstra-fiskal). Doğru cevap: her üçü de.",
+    "answer": "B",
+    "solution": "**III YANLIŞ:** vergiler mali (gelir) amacının yanında **zararlı (demerit) malların tüketimini caydırmak** gibi mali olmayan (ekstra-fiskal) amaçlarla da kullanılabilir (ör. alkol/tütün üzerindeki yüksek vergiler). **I** doğru (verginin temel amacı finansmandır), **II** doğru (gelir dağılımını düzeltme amacı). Doğru cevap: **I ve II (B)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III verginin amaçları; sınav stiline kalibre)",
@@ -839,7 +839,7 @@
     "id": "mal-gelirgider-gen-0039",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelirleri ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sübvansiyon bir transfer harcamasıdır.\n\nII. Cari harcamalar kısa dönemde tüketilen mal-hizmetlere yöneliktir.\n\nIII. Yatırım harcamaları uzun ömürlü sermaye mallarına yöneliktir.",
+    "stem": "Kamu gelirleri ve giderleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sübvansiyon, karşılığında devlete mal veya hizmet sağlanan gerçek (reel) bir harcamadır.\n\nII. Cari harcamalar kısa dönemde tüketilen mal-hizmetlere yöneliktir.\n\nIII. Yatırım harcamaları uzun ömürlü sermaye mallarına yöneliktir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I, II ve III (her üç ifade de doğrudur)",
@@ -847,8 +847,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I ve II (birinci ve ikinci ifadeler doğrudur)"
     },
-    "answer": "B",
-    "solution": "Üçü de doğrudur: **I** sübvansiyon=transfer harcaması; **II** cari harcama=kısa dönem tüketim; **III** yatırım harcaması=uzun ömürlü sermaye. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I YANLIŞ:** sübvansiyon (mali yardım) karşılığında bir mal/hizmet alınmayan **karşılıksız transfer harcamasıdır**; gerçek (reel) harcama değildir. **II** doğru (cari harcama=kısa dönemde tüketilen mal-hizmet), **III** doğru (yatırım harcaması=uzun ömürlü sermaye malı). Doğru cevap: **II ve III (C)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III harcamalar; sınav stiline kalibre)",
@@ -971,7 +971,7 @@
     "id": "mal-gelirgider-gen-0045",
     "ders": "maliye",
     "konu": "kamu_gelir_gider",
-    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergiler olağan (düzenli) kamu gelirlerindendir.\n\nII. Borçlanma olağanüstü bir finansman kaynağı olarak değerlendirilebilir.\n\nIII. Adam Smith'in vergileme ilkeleri arasında adalet, belirlilik, uygunluk ve iktisadilik yer alır.",
+    "stem": "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergiler olağan (düzenli) kamu gelirlerindendir.\n\nII. Borçlanma, vergiler gibi devletin olağan (düzenli/normal) kamu gelirlerinden biridir.\n\nIII. Adam Smith'in vergileme ilkeleri arasında adalet, belirlilik, uygunluk ve iktisadilik yer alır.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -979,8 +979,8 @@
       "D": "I, II ve III (her üç ifade de doğrudur)",
       "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "D",
-    "solution": "Üçü de doğrudur: **I** vergiler=olağan gelir; **II** borçlanma=olağanüstü kaynak; **III** Smith ilkeleri (adalet-belirlilik-uygunluk-iktisadilik). Doğru cevap: her üçü de.",
+    "answer": "E",
+    "solution": "**II YANLIŞ:** borçlanma, geri ödeme gerektiren **olağanüstü** bir finansman kaynağıdır; olağan (düzenli) bir kamu geliri değildir (asıl olağan gelir vergilerdir). **I** doğru (vergiler olağan kamu gelirlerindendir), **III** doğru (Smith'in ilkeleri: adalet, belirlilik, uygunluk, iktisadilik). Doğru cevap: **I ve III (E)**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliye (I-II-III gelir/ilke; sınav stiline kalibre)",

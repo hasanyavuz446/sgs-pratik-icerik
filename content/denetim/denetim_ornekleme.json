@@ -201,7 +201,7 @@
     "id": "den-ornek-gen-0010",
     "ders": "denetim",
     "konu": "denetim_ornekleme",
-    "stem": "Denetim örneklemesi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Örnekleme, kütlenin %100'ünden azını inceleyip bütüne ilişkin sonuç çıkarmadır.\n\nII. Örnekleme riski, örneklem büyüklüğü artırılarak azaltılabilir.\n\nIII. Örnekleme dışı risk, eğitim, planlama ve gözetimle azaltılır.",
+    "stem": "Denetim örneklemesi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Örneklemede ana kütlenin tamamı (%100'ü) incelenerek sonuca ulaşılır.\n\nII. Örnekleme riski, örneklem büyüklüğü artırılarak azaltılabilir.\n\nIII. Örnekleme dışı risk, eğitim, planlama ve gözetimle azaltılır.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -209,8 +209,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** örnekleme=kütlenin bir kısmından bütüne sonuç; **II** örnekleme riski örneklem büyüklüğüyle azalır; **III** örnekleme dışı risk eğitim/planlama/gözetimle azaltılır. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I yanlıştır:** örnekleme, ana kütlenin %100'ünden AZINI inceleyip bütüne ilişkin sonuç çıkarmadır; kütlenin tamamının incelenmesi örnekleme değildir. **II** örnekleme riski örneklem büyüklüğüyle azalır ve **III** örnekleme dışı risk eğitim/planlama/gözetimle azaltılır doğrudur. Doğru cevap: **II ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III örnekleme; sınav stiline kalibre)",
@@ -421,7 +421,7 @@
     "id": "den-ornek-gen-0020",
     "ders": "denetim",
     "konu": "denetim_ornekleme",
-    "stem": "Örnekleme yöntemleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Rastgele seçimde her birime eşit seçilme şansı verilir.\n\nII. Sistematik seçim sabit aralıkla birim seçme yöntemidir.\n\nIII. Tabakalama, kütleyi benzer gruplara ayırarak örneklemin etkinliğini artırır.",
+    "stem": "Örnekleme yöntemleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Rastgele seçimde her birime eşit seçilme şansı verilir.\n\nII. Sistematik seçim sabit aralıkla birim seçme yöntemidir.\n\nIII. Tabakalama, ana kütleyi hiç alt gruplara ayırmadan tek bir homojen bütün olarak ele alma yöntemidir.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -429,8 +429,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** rastgele=eşit şans; **II** sistematik=sabit aralık; **III** tabakalama=benzer gruplara ayırıp etkinliği artırma. Doğru cevap: her üçü de.",
+    "answer": "B",
+    "solution": "**III yanlıştır:** tabakalama, ana kütleyi benzer özellikteki ALT gruplara (tabakalara) ayırarak örneklemin etkinliğini artırır; kütleyi hiç ayırmadan tek bütün olarak ele almak tabakalama değildir. **I** rastgele seçim=eşit şans ve **II** sistematik seçim=sabit aralık doğrudur. Doğru cevap: **I ve II**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III yöntem; sınav stiline kalibre)",
@@ -597,7 +597,7 @@
     "id": "den-ornek-gen-0028",
     "ders": "denetim",
     "konu": "denetim_ornekleme",
-    "stem": "Örnekleme riski ve örneklem büyüklüğü ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kabul edilebilir örnekleme riski düştükçe örneklem büyüklüğü artar.\n\nII. Tolere edilebilir hata oranı düştükçe örneklem büyüklüğü artar.\n\nIII. Örneklem büyüklüğü arttıkça örnekleme riski azalır.",
+    "stem": "Örnekleme riski ve örneklem büyüklüğü ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kabul edilebilir örnekleme riski düştükçe örneklem büyüklüğü artar.\n\nII. Tolere edilebilir hata oranı düştükçe örneklem büyüklüğü artar.\n\nIII. Örneklem büyüklüğü arttıkça örnekleme riski de artar.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -605,8 +605,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I, II ve III (her üç ifade de doğrudur)"
     },
-    "answer": "E",
-    "solution": "Üçü de doğrudur: **I** düşük risk→büyük örneklem; **II** düşük tolerans→büyük örneklem; **III** büyük örneklem→düşük örnekleme riski. Doğru cevap: her üçü de.",
+    "answer": "B",
+    "solution": "**III yanlıştır:** örneklem büyüklüğü arttıkça örnekleme riski ARTMAZ, AZALIR; daha çok birim incelendikçe kütle hakkında yanlış sonuç çıkarma riski düşer (ters yönlü ilişki). **I** düşük kabul edilebilir risk→büyük örneklem ve **II** düşük tolere edilebilir hata→büyük örneklem doğrudur. Doğru cevap: **I ve II**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III risk/büyüklük; sınav stiline kalibre)",
@@ -861,7 +861,7 @@
     "id": "den-ornek-gen-0040",
     "ders": "denetim",
     "konu": "denetim_ornekleme",
-    "stem": "Çalışma kâğıtları ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Çalışma kâğıtları denetçinin görüşüne dayanak oluşturur.\n\nII. Çalışma kâğıtları denetçiye/denetim kuruluşuna aittir ve gizlidir.\n\nIII. Sürekli dosya birden çok dönemi ilgilendiren kalıcı bilgileri içerir.",
+    "stem": "Çalışma kâğıtları ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Çalışma kâğıtları denetçinin görüşüne dayanak oluşturur.\n\nII. Çalışma kâğıtları denetim tamamlanınca müşteri işletmeye (mükellefe) teslim edilir ve denetçide kalmaz.\n\nIII. Sürekli dosya birden çok dönemi ilgilendiren kalıcı bilgileri içerir.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -869,8 +869,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** çalışma kâğıtları görüşe dayanak; **II** denetçiye ait ve gizli; **III** sürekli dosya kalıcı/çok dönemli bilgileri içerir. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**II yanlıştır:** çalışma kâğıtları denetçinin/denetim kuruluşunun mülkiyetindedir, gizlidir ve mevzuatta öngörülen süre boyunca denetçide saklanır; müşteri işletmeye teslim edilmez (BDS 230). **I** çalışma kâğıtları görüşe dayanak oluşturur ve **III** sürekli dosya çok dönemli kalıcı bilgileri içerir doğrudur. Doğru cevap: **I ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III çalışma kâğıdı; sınav stiline kalibre)",

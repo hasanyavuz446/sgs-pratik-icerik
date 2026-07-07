@@ -201,7 +201,7 @@
     "id": "den-risk-gen-0010",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Denetim riski ve bileşenleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. DR = Yapısal risk × Kontrol riski × Tespit riski.\n\nII. Önemli yanlışlık riski = Yapısal risk × Kontrol riski.\n\nIII. Denetçi doğrudan yalnızca tespit riskini yönetebilir.",
+    "stem": "Denetim riski ve bileşenleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Denetim riski (DR), yalnızca tespit (bulgu) riskinden ibarettir.\n\nII. Önemli yanlışlık riski = Yapısal risk × Kontrol riski.\n\nIII. Denetçi doğrudan yalnızca tespit riskini yönetebilir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I, II ve III (her üç ifade de doğrudur)",
@@ -209,8 +209,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I ve II (birinci ve ikinci ifadeler doğrudur)"
     },
-    "answer": "B",
-    "solution": "Üçü de doğrudur: **I** DR = YR×KR×TR; **II** ÖYR = YR×KR; **III** denetçi doğrudan yalnızca tespit riskini (kanıtla) yönetir. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I yanlıştır:** denetim riski yalnızca tespit riskinden ibaret değildir; DR = Yapısal risk × Kontrol riski × Tespit riski şeklinde üç bileşenin çarpımıdır. **II** Önemli yanlışlık riski = Yapısal risk × Kontrol riski ve **III** denetçinin doğrudan yalnızca tespit riskini (kanıt miktarıyla) yönetebilmesi doğrudur. Doğru cevap: **II ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III model; sınav stiline kalibre)",
@@ -861,7 +861,7 @@
     "id": "den-risk-gen-0040",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Önemlilik ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Önemliliğin hem nicel hem nitel boyutu vardır.\n\nII. Önemlilik eşiği düştükçe daha çok kanıt gerekir.\n\nIII. Performans önemliliği, önemlilik düzeyinden daha düşük belirlenir.",
+    "stem": "Önemlilik ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Önemlilik (materyalite) yalnızca nicel (tutar) esaslıdır; işlemin niteliği/mahiyeti dikkate alınmaz.\n\nII. Önemlilik eşiği düştükçe daha çok kanıt gerekir.\n\nIII. Performans önemliliği, önemlilik düzeyinden daha düşük belirlenir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -869,8 +869,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "II ve III (ikinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "C",
-    "solution": "Üçü de doğrudur: **I** önemliliğin nicel+nitel boyutu; **II** eşik düştükçe daha çok kanıt; **III** performans önemliliği, önemlilik düzeyinden düşüktür. Doğru cevap: her üçü de.",
+    "answer": "E",
+    "solution": "**I yanlıştır:** önemlilik yalnızca nicel (tutar) esaslı değildir; bir yanlışlık tutar olarak küçük olsa bile niteliği/mahiyeti (örn. yasaya aykırılık, yönlü sonuç) nedeniyle önemli sayılabilir. **II** eşik düştükçe daha çok kanıt gerekmesi ve **III** performans önemliliğinin önemlilik düzeyinden düşük belirlenmesi doğrudur. Doğru cevap: **II ve III**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (I-II-III önemlilik; sınav stiline kalibre)",

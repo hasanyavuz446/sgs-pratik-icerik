@@ -399,7 +399,7 @@
     "id": "tic-kiymetli-gen-0019",
     "ders": "ticaret_hukuku",
     "konu": "kiymetli_evrak",
-    "stem": "Kıymetli evrak türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Hamiline yazılı senet, teslimle devredilir.\n\nII. Emre yazılı senet, ciro ve teslimle devredilir.\n\nIII. Nama yazılı senet, temlik ve teslimle devredilir.",
+    "stem": "Kıymetli evrak türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Hamiline yazılı senet, teslimle devredilir.\n\nII. Emre yazılı senet, yalnızca senedin teslimiyle (elden ele) devredilir.\n\nIII. Nama yazılı senet, temlik ve teslimle devredilir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -407,8 +407,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I, II ve III (her üç ifade de doğrudur)"
     },
-    "answer": "E",
-    "solution": "Üçü de doğrudur: **I** hamiline=teslim; **II** emre=ciro+teslim; **III** nama=temlik+teslim. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**I** doğru: hamiline yazılı senet, teslim (zilyetliğin devri) ile devredilir. **II** YANLIŞ: emre yazılı senet yalnız teslimle devredilmez; ciro VE teslim ile devredilir; yalnız teslim onu devretmeye yetmez (TTK 647). **III** doğru: nama yazılı senet alacağın temliki ve teslim ile devredilir. Buna göre yalnız II yanlış olup doğru cevap I ve III'tür.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Ticaret Hukuku (I-II-III devir; sınav stiline kalibre)",
@@ -641,7 +641,7 @@
     "id": "tic-kiymetli-gen-0030",
     "ders": "ticaret_hukuku",
     "konu": "kiymetli_evrak",
-    "stem": "Kambiyo senetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Poliçe bir havale (ödeme emri) niteliğindedir.\n\nII. Bono düzenleyenin bizzat ödeme vaadini içerir.\n\nIII. Çekte muhatap yalnızca bir banka olabilir.",
+    "stem": "Kambiyo senetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Poliçe, düzenleyenin bizzat ödeme vaadini içeren bir senettir.\n\nII. Bono düzenleyenin bizzat ödeme vaadini içerir.\n\nIII. Çekte muhatap yalnızca bir banka olabilir.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I, II ve III (her üç ifade de doğrudur)",
@@ -649,8 +649,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "I ve II (birinci ve ikinci ifadeler doğrudur)"
     },
-    "answer": "B",
-    "solution": "Üçü de doğrudur: **I** poliçe=havale; **II** bono=ödeme vaadi; **III** çekte muhatap=banka. Doğru cevap: her üçü de.",
+    "answer": "C",
+    "solution": "**I** YANLIŞ: poliçe bir havale (ödeme emri) niteliğindedir; bizzat ödeme vaadini içeren senet ise bonodur (TTK 671). **II** doğru: bono düzenleyenin kendi ödeme vaadini içerir. **III** doğru: çekte muhatap yalnızca bir banka olabilir. Buna göre yalnız I yanlış olup doğru cevap II ve III'tür.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Ticaret Hukuku (I-II-III kambiyo; sınav stiline kalibre)",
@@ -817,7 +817,7 @@
     "id": "tic-kiymetli-gen-0038",
     "ders": "ticaret_hukuku",
     "konu": "kiymetli_evrak",
-    "stem": "Ciro türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Temlik cirosu senetteki hakkı tam olarak devreder.\n\nII. Tahsil cirosu yalnızca tahsil (temsil) yetkisi verir.\n\nIII. Rehin cirosu senedi teminat olarak rehnetmeye yarar.",
+    "stem": "Ciro türleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Temlik cirosu senetteki hakkı tam olarak devreder.\n\nII. Tahsil cirosu, senetteki hakkı ciro edilene tam olarak (mülkiyetiyle) devreder.\n\nIII. Rehin cirosu senedi teminat olarak rehnetmeye yarar.",
     "options": {
       "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -825,8 +825,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "II ve III (ikinci ve üçüncü ifadeler doğrudur)"
     },
-    "answer": "C",
-    "solution": "Üçü de doğrudur: **I** temlik cirosu=tam devir; **II** tahsil cirosu=tahsil yetkisi; **III** rehin cirosu=teminat/rehin. Doğru cevap: her üçü de.",
+    "answer": "D",
+    "solution": "**I** doğru: temlik cirosu senetteki hakkı ciro edilene tam olarak devreder. **II** YANLIŞ: tahsil cirosu hakkı/mülkiyeti devretmez; yalnızca tahsil (temsil) yetkisi verir; hakkı tam devreden ciro temlik cirosudur (TTK 688). **III** doğru: rehin cirosu senedi teminat olarak rehnetmeye yarar. Buna göre yalnız II yanlış olup doğru cevap I ve III'tür.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Ticaret Hukuku (I-II-III ciro türleri; sınav stiline kalibre)",
@@ -1081,7 +1081,7 @@
     "id": "tic-kiymetli-gen-0050",
     "ders": "ticaret_hukuku",
     "konu": "kiymetli_evrak",
-    "stem": "Kıymetli evrak ve kambiyo senetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Aval, kambiyo senedindeki bedelin ödenmesini teminat altına alır.\n\nII. Protesto, senedin ödenmemesi/kabul edilmemesi durumunun resmen tespitidir.\n\nIII. Çek kabule elverişli değildir.",
+    "stem": "Kıymetli evrak ve kambiyo senetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Aval, kambiyo senedindeki bedelin ödenmesini teminat altına alır.\n\nII. Protesto, senedin ödenmemesi/kabul edilmemesi durumunun resmen tespitidir.\n\nIII. Çek, poliçe gibi kabule elverişlidir; muhatap banka çeki kabul ederek asıl borçlu olur.",
     "options": {
       "A": "I, II ve III (her üç ifade de doğrudur)",
       "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
@@ -1089,8 +1089,8 @@
       "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
       "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
     },
-    "answer": "A",
-    "solution": "Üçü de doğrudur: **I** aval=bedelin teminatı; **II** protesto=ödememe/kabul etmeme tespiti; **III** çek kabule elverişli değildir. Doğru cevap: her üçü de.",
+    "answer": "B",
+    "solution": "**I** doğru: aval, kambiyo senedindeki bedelin ödenmesini teminat altına alır. **II** doğru: protesto, senedin ödenmemesi/kabul edilmemesi durumunun resmen tespitidir. **III** YANLIŞ: çek kabule elverişli DEĞİLDİR; çeke yazılan kabul şerhi yazılmamış sayılır (TTK 784). Buna göre yalnız III yanlış olup doğru cevap I ve II'dir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Ticaret Hukuku (I-II-III aval/protesto/çek; sınav stiline kalibre)",
