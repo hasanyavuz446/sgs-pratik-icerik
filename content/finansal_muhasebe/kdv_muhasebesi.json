@@ -755,9 +755,9 @@
     "options": {
       "A": "391 HESAPLANAN KDV (B) ve 190 DEVREDEN KDV (A) çalışır; aradaki fark sonraki döneme devreder.",
       "B": "391 HESAPLANAN KDV (B) ile 191 İNDİRİLECEK KDV (A) birbirini kapatır; 360 ve 190 çalışmaz.",
-      "C": "360'a ödenecek KDV yazılır.",
-      "D": "İki hesap da alacak tarafında birikir.",
-      "E": "Kayıt yapılmaz, tutarlar bir sonraki yıla aktarılır."
+      "C": "391 HESAPLANAN KDV (B) ile 360 ÖDENECEK VERGİ VE FONLAR (A) çalışır; aradaki fark vergi dairesine ödenecek KDV olarak kaydedilir.",
+      "D": "Mahsupta 391 HESAPLANAN KDV ile 191 İNDİRİLECEK KDV'nin ikisi de alacak tarafında yazılarak karşılıklı kapatılır.",
+      "E": "Hesaplanan ile indirilecek KDV eşit olduğunda herhangi bir mahsup kaydı yapılmaz; tutarlar olduğu gibi bir sonraki yıla aktarılır."
     },
     "answer": "B",
     "solution": "Eşitlikte 391 (B) ve 191 (A) karşılıklı **tam kapanır**; ödenecek fark (360) veya devreden fark (190) doğmaz.",
@@ -821,9 +821,9 @@
     "options": {
       "A": "Borç tarafında; indirilemeyen KDV aktif nitelikli olarak sonraki döneme taşınır.",
       "B": "Alacak tarafında; çünkü indirilemeyen KDV vergi dairesine ödenecek bir borç niteliği taşır.",
-      "C": "Hem borç hem alacak tarafında eşit yazılır.",
-      "D": "Gelir tablosunda 649 hesabının alacağında.",
-      "E": "Özkaynaklar altında 549 hesabının borcunda."
+      "C": "Hem borç hem alacak tarafına eşit tutarda yazılır; böylece hesap her dönem sonunda kendiliğinden ve otomatik olarak kapanır.",
+      "D": "Bir bilanço değil gelir tablosu hesabı olduğundan 649 DİĞER OLAĞAN GELİR VE KÂRLAR hesabının alacağına kaydedilir.",
+      "E": "Bir özkaynak kalemi sayıldığından 549 ÖZEL FONLAR hesabının borç tarafında izlenir ve dönem sonunda sermayeye eklenir."
     },
     "answer": "A",
     "solution": "İndirilecek KDV hesaplanan KDV'yi aştığında fark, aktif nitelikli **190 DEVREDEN KDV**'nin **borcuna** yazılır ve ertesi dönem indirilecek KDV'lere eklenir.",
@@ -841,10 +841,10 @@
     "konu": "kdv_muhasebesi",
     "stem": "Hesaplanan KDV'nin indirilecek KDV'yi aştığı bir ayda 360 ÖDENECEK VERGİ VE FONLAR hesabına yazılan tutar neyi ifade eder?",
     "options": {
-      "A": "İşletmenin o ay tahsil ettiği toplam hasılatı",
-      "B": "Alışlarda ödenen toplam KDV'yi",
+      "A": "İşletmenin o ay içinde yaptığı satışlardan tahsil ettiği, KDV dâhil toplam hasılatı (dönem cirosu) ifade eder.",
+      "B": "O dönem alışlarda satıcılara ödenen ve 191 İNDİRİLECEK KDV hesabında izlenen toplam indirilecek KDV tutarını ifade eder.",
       "C": "Hesaplanan ile indirilecek KDV arasındaki farkı, yani o ay ödenecek net KDV'yi",
-      "D": "Malın maliyetine eklenen KDV'yi",
+      "D": "İndirilemediği için malın stok maliyetine eklenen ve dönem gideri olarak yazılan toplam KDV tutarını ifade eder.",
       "E": "İki hesabın toplamını, yani hesaplanan ile indirilecek KDV'nin birlikte toplamını ifade eder."
     },
     "answer": "C",
@@ -973,9 +973,9 @@
     "konu": "kdv_muhasebesi",
     "stem": "Devreden KDV (190) ile ilgili aşağıdakilerden hangisi kural olarak doğrudur?",
     "options": {
-      "A": "Yalnızca yıl sonunda bir kez hesaplanır.",
-      "B": "Her dönem sonunda mutlaka nakden iade alınır.",
-      "C": "Ödenecek KDV ile aynı hesapta (360) izlenir.",
+      "A": "Yalnızca yıl sonu envanter işlemlerinde bir kez hesaplanır; ay içi mahsup işlemlerinde dikkate alınmaz.",
+      "B": "Her vergilendirme dönemi sonunda mükellefe mutlaka nakden veya mahsuben iade edilmesi kanunen zorunludur.",
+      "C": "Ödenecek KDV ile aynı nitelikte pasif bir hesap olup 360 ÖDENECEK VERGİ VE FONLAR hesabında birlikte izlenir.",
       "D": "İndirim yoluyla giderilir; kural olarak (istisna halleri dışında) nakden iade edilmez, sonraki dönemlere taşınır.",
       "E": "İndirilebilir niteliği bulunmadığından gelir tablosunda doğrudan dönem gideri olarak raporlanır."
     },
@@ -1040,10 +1040,10 @@
     "stem": "Alış iadesinde (daha önce indirilecek KDV kaydedilmiş bir alışın iadesi) 191 İNDİRİLECEK KDV hesabı hangi tarafta çalışır?",
     "options": {
       "A": "Alacak tarafında; önce yüklenilen (indirilecek) KDV geri çıkarılır.",
-      "B": "Borç tarafında; KDV yeniden yüklenilir.",
-      "C": "Hiç çalışmaz; yalnızca 391 düzeltilir.",
+      "B": "Borç tarafında çalışır; çünkü iade sırasında mal üzerindeki KDV yeniden yüklenilerek indirilecek KDV artırılır.",
+      "C": "191 hiç çalışmaz; alış iadesi yalnızca satış tarafındaki 391 HESAPLANAN KDV hesabı üzerinden düzeltilir.",
       "D": "Borç tarafında; ancak iade tutarı KDV ile birlikte iki katı olarak yazılır.",
-      "E": "Gelir olarak 649'a aktarılır."
+      "E": "İade edilen KDV bir gelir sayılarak 649 DİĞER OLAĞAN GELİR VE KÂRLAR hesabının alacağına aktarılır."
     },
     "answer": "A",
     "solution": "Alış iadesinde ilk alış kaydı geri alınır; alışta 191 borçlandırılmıştı, iadede **191 alacaklandırılarak** azaltılır. Alışla ilgili hesap 391 değil 191'dir.",
@@ -1061,9 +1061,9 @@
     "konu": "kdv_muhasebesi",
     "stem": "Satış iadesinde 391 HESAPLANAN KDV hesabı hangi tarafta çalışır?",
     "options": {
-      "A": "Alacak tarafında; KDV yeniden hesaplanır.",
-      "B": "Hiç çalışmaz; iade yalnızca 191'i etkiler.",
-      "C": "Doğrudan 360 ÖDENECEK V.F. borcuna yazılır.",
+      "A": "Alacak tarafında çalışır; iade nedeniyle satış üzerinden KDV yeniden hesaplanarak 391 HESAPLANAN KDV artırılır.",
+      "B": "391 hiç çalışmaz; satış iadesi yalnızca alış tarafındaki 191 İNDİRİLECEK KDV hesabı üzerinden düzeltilir.",
+      "C": "İade tutarı 391 yerine doğrudan 360 ÖDENECEK VERGİ VE FONLAR hesabının borç tarafına yazılarak düzeltilir.",
       "D": "Alacak tarafında; iade nedeniyle hesaplanan KDV yeniden doğar ve tutar iki katına çıkar.",
       "E": "Borç tarafında; satışta alacak yazılan hesaplanan KDV iade oranında geri alınır (azaltılır)."
     },
@@ -1129,9 +1129,9 @@
     "options": {
       "A": "KDV'nin gerçek yükü daima satıcı işletmenin üzerindedir; işletme yüklendiği vergiyi hiçbir şekilde indiremez, doğrudan gider yazar.",
       "B": "İşletme (mükellef) satışta hesapladığı KDV'yi beyan eder; alışta yüklendiğini indirir. Verginin gerçek yükü kural olarak nihai tüketicidedir.",
-      "C": "Nihai tüketici KDV'yi indirir, işletme öder.",
-      "D": "KDV yalnızca üreticiden bir kez alınır, sonraki aşamalarda alınmaz.",
-      "E": "KDV işletmenin bir gideri olup gelir tablosunda gösterilir."
+      "C": "Nihai tüketici yüklendiği KDV'yi beyanname ile indirir; verginin gerçek yükü ise satıcı işletmenin üzerinde kalır.",
+      "D": "KDV yalnızca ilk üreticiden bir kez tahsil edilir; toptancı ve perakendeci aşamalarında yeniden hesaplanmaz.",
+      "E": "İndirilebilir KDV işletmenin bir gideri olup dönem sonunda gelir tablosunda faaliyet gideri olarak raporlanır."
     },
     "answer": "B",
     "solution": "İşletme aracı konumundadır: satışta hesapladığı KDV'yi (391) beyan eder, alışta yüklendiğini (191) indirir; aradaki farkı devlete öder. Verginin nihai yükü zincirin sonundaki **tüketicidedir**. İndirilebilen KDV işletmenin gideri değildir.",
@@ -1151,9 +1151,9 @@
     "options": {
       "A": "191 İNDİRİLECEK KDV hesabında bekletilir ve herhangi bir sınırlama olmadan sonraki dönemlerde indirim konusu yapılır.",
       "B": "İlgili giderin/malın maliyetine eklenir ya da doğrudan gider (kanunen kabul edilmeyen gider olabilir) yazılır.",
-      "C": "391 HESAPLANAN KDV'ye alacak yazılır.",
-      "D": "190 DEVREDEN KDV'ye aktarılıp iade alınır.",
-      "E": "Doğrudan sermayeden düşülür."
+      "C": "İndirilemeyen tutar bir satış KDV'si gibi kabul edilerek 391 HESAPLANAN KDV hesabının alacağına yazılır.",
+      "D": "İndirilemeyen KDV 190 DEVREDEN KDV hesabına aktarılır ve izleyen dönemde vergi dairesinden nakden iade alınır.",
+      "E": "İşletmeye yüklenen bir maliyet sayılarak doğrudan 500 SERMAYE hesabından düşülür ve özkaynağı azaltır."
     },
     "answer": "B",
     "solution": "İndirim hakkı olmayan KDV **191'e alınıp indirilemez**; ilgili gider/maliyetin bir parçası olur (duruma göre KKEG). 391 satış KDV'si, 190 devreden KDV içindir.",

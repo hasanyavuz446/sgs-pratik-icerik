@@ -29,9 +29,9 @@
     "options": {
       "A": "Hak senede bağlıdır; hakkı ileri sürebilmek ve devredebilmek için kural olarak senedin varlığı (zilyetliği) gereklidir",
       "B": "Hak ile senet birbirinden tümüyle bağımsızdır; hak, senet olmadan da serbestçe devredilir ve taraflar bunun aksini sözleşmeyle dahi hiçbir biçimde kararlaştıramaz",
-      "C": "Senet yalnızca bir hatırlatma notudur; hiçbir hukuki değeri yoktur",
-      "D": "Hak, yalnızca senet yırtıldığında doğar",
-      "E": "Senet, hakkın varlığını hiçbir biçimde etkilemez"
+      "C": "Senet yalnızca ispat amacı taşıyan bir hatırlatma notudur; içerdiği hakkın doğması, ileri sürülmesi veya devri bakımından hiçbir hukuki değeri bulunmaz",
+      "D": "Senetteki hak, ancak senedin fiziki olarak yırtılması veya iptal edilmesi anında doğar; senet mevcut olduğu sürece herhangi bir haktan söz edilemez",
+      "E": "Senedin varlığı ya da yokluğu hakkın varlığını hiçbir biçimde etkilemez; hak tümüyle senet dışındaki temel ilişkiye dayanır ve senetten bağımsız yaşar"
     },
     "answer": "A",
     "solution": "Kıymetli evrakta **hak senede bağlıdır**: hakkı **ileri sürebilmek ve devredebilmek** için kural olarak **senedin varlığı/zilyetliği** gereklidir. Hak senetten bağımsız değildir; senet salt hatırlatma notu da değildir.",
@@ -159,10 +159,10 @@
     "konu": "kiymetli_evrak",
     "stem": "Kambiyo senetlerinin (poliçe, bono, çek) hukuki niteliği bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Kambiyo senetleri kural olarak hamiline yazılı senetlerdir",
+      "A": "Kambiyo senetleri kural olarak hamiline yazılı senetler olup, üzerlerine lehtar yazılması veya 'emre' kaydı konulması senedi geçersiz kılar",
       "B": "Kambiyo senetleri kanunen emre yazılı senetlerdir; senede 'emre değildir (nama yazılı)' kaydı konularak nama yazılı hâle getirilebilirler",
-      "C": "Kambiyo senetleri hiçbir biçimde devredilemez",
-      "D": "Kambiyo senetleri yalnızca sözlü olarak düzenlenebilir",
+      "C": "Kambiyo senetleri kişiye sıkı sıkıya bağlı senetler olduğundan hiçbir biçimde devredilemez; ciro veya teslim yoluyla el değiştirmeleri mümkün değildir",
+      "D": "Kambiyo senetleri herhangi bir şekle tabi olmayıp yalnızca sözlü irade beyanıyla dahi geçerli biçimde düzenlenebilir; yazılı metin ve imza aranmaz",
       "E": "Kambiyo senetleri yalnızca kamu kurumlarınca çıkarılabilir ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz"
     },
     "answer": "B",
@@ -203,11 +203,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Poliçenin hukuki niteliği bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Poliçe, düzenleyenin bizzat ödeme vaadini içeren bir senettir",
+      "A": "Poliçe, düzenleyenin muhataba ödeme emri vermeyip bedeli bizzat kendisinin ödeyeceğine ilişkin vaadini içeren ikili ilişkili bir senettir",
       "B": "Poliçe, yalnızca bir bankanın çıkarabileceği bir mevduat belgesidir; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
       "C": "Poliçe, düzenleyenin muhataba, lehtara belirli bir bedeli ödemesi için verdiği havale (ödeme emri) niteliğinde bir senettir",
-      "D": "Poliçe, taşınan malı temsil eden bir taşıma senedidir",
-      "E": "Poliçe, bir şirketteki ortaklık payını gösteren senettir"
+      "D": "Poliçe, taşıyıcıya teslim edilen malı temsil eden ve malın teslimini talep hakkı veren bir taşıma senedi (konşimento) niteliğindedir",
+      "E": "Poliçe, sahibine bir anonim şirkette ortaklık payı ile birlikte kâr payı ve oy hakkı sağlayan bir menkul kıymet (pay senedi) niteliğindedir"
     },
     "answer": "C",
     "solution": "**Poliçe**, düzenleyenin **muhataba**, lehtara belirli bir bedeli **ödemesi için verdiği havale (ödeme emri)** niteliğindedir. Bizzat ödeme vaadi **bonoya** özgüdür; poliçe mevduat, taşıma veya ortaklık senedi değildir.",
@@ -225,10 +225,10 @@
     "konu": "kiymetli_evrak",
     "stem": "Poliçede 'kabul' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Lehtarın poliçeyi bir başkasına ciro etmesi",
-      "B": "Bir üçüncü kişinin poliçeye aval vermesi",
+      "A": "Lehtarın, poliçeden doğan hakkını bir başkasına ciro yoluyla devrederek onu senedin yeni alacaklısı (yeni hamili) hâline getirmesi işlemi",
+      "B": "Bir üçüncü kişinin, poliçe bedelinin ödenmesini teminat altına almak amacıyla senede kefil sıfatıyla imza koyarak aval vermesi işlemi",
       "C": "Düzenleyenin poliçeyi imzalayarak tedavüle çıkarması; söz konusu durum yalnızca tacirler arasındaki ticari ilişkilerde geçerli sayılabilir",
-      "D": "Hamilin poliçeyi bankaya tahsile vermesi",
+      "D": "Hamilin, poliçe bedelini kendisi adına tahsil etmesi için senedi bir bankaya tahsil cirosuyla teslim ederek tahsile vermesi işlemi",
       "E": "Muhatabın, poliçe bedelini vadesinde ödemeyi kabul ettiğini imzasıyla senet üzerinde beyan etmesi ve böylece asıl poliçe borçlusu hâline gelmesi"
     },
     "answer": "E",
@@ -291,11 +291,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Poliçe ile bono arasındaki temel fark bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Poliçe ikili, bono üçlü ilişkiye dayanır",
-      "B": "Poliçe emre yazılı, bono ise hamiline yazılı olmak zorundadır",
+      "A": "Poliçe düzenleyen ile lehtar arasında ikili ilişkiye, bono ise düzenleyen, muhatap ve lehtar arasında üçlü ilişkiye dayanır",
+      "B": "Poliçe kanunen emre yazılı olduğu hâlde, bono yalnızca hamiline yazılı olarak düzenlenebilir ve emre ya da nama yazılı hâle getirilemez",
       "C": "Poliçe yalnızca banka, bono yalnızca gerçek kişi tarafından düzenlenir; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar",
       "D": "Poliçe bir ödeme emri (havale) niteliğinde ve üçlü ilişkiliyken; bono düzenleyenin bizzat ödeme vaadini içeren, ikili ilişkili bir senettir",
-      "E": "Poliçe ve bono aynı senet olup aralarında hiçbir fark yoktur"
+      "E": "Poliçe ile bono her yönüyle aynı senet olup taraf sayısı, düzenlenme biçimi ve hukuki niteliği bakımından aralarında hiçbir fark bulunmaz"
     },
     "answer": "D",
     "solution": "**Poliçe** bir **ödeme emri (havale)** niteliğinde ve **üçlü** ilişkilidir (düzenleyen-muhatap-lehtar); **bono** ise düzenleyenin **bizzat ödeme vaadini** içeren **ikili** ilişkili senettir (düzenleyen-lehtar). A şıkkı ilişkileri ters vermiştir.",
@@ -423,11 +423,11 @@
     "konu": "kiymetli_evrak",
     "stem": "'Ciro' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Bir kıymetli evrakın bedelinin muhatap tarafından ödenmesi",
+      "A": "Bir kıymetli evrakın vadesinde ibraz edilmesi üzerine bedelinin muhatap tarafından ödenmesi ve senedin borçtan kurtularak tedavülden kalkması",
       "B": "Bir senedin bedelinin bir kişi tarafından teminat altına alınması; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
-      "C": "Bir senedin noterce onaylanması",
+      "C": "Bir senedin geçerlilik kazanabilmesi için düzenlenme tarihi ve imzasının noter huzurunda onaylanarak senede resmiyet kazandırılması işlemi",
       "D": "Emre yazılı bir senedin, üzerine yazılan bir beyan ve teslim ile bir başkasına devredilmesini sağlayan işlem",
-      "E": "Bir senedin ödenmemesi durumunun resmi olarak tespiti"
+      "E": "Bir senedin vadesinde ödenmemesi veya kabul edilmemesi durumunun noter aracılığıyla resmi olarak tespit ettirilmesi işlemi"
     },
     "answer": "D",
     "solution": "**Ciro**, emre yazılı bir senedin **üzerine yazılan bir beyan ve teslim** ile bir başkasına **devredilmesini** sağlayan işlemdir. Bedel ödeme, noter onayı, teminat (aval) ve ödememenin tespiti (protesto) ciro değildir.",
@@ -468,10 +468,10 @@
     "stem": "'Tahsil cirosu' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
       "A": "Senetteki hakkı mülkiyetiyle birlikte tam olarak devreden ciro ve taraflar bunun aksini sözleşmeyle dahi hiçbir biçimde kararlaştıramaz",
-      "B": "Senedi bir borcun teminatı (rehni) olarak veren ciro",
+      "B": "Senedi, ciro edenin bir başka borcunun teminatı olarak rehnetmek amacıyla yapılan ve ciro edilene sınırlı bir rehin hakkı sağlayan ciro",
       "C": "Ciro edilene senetteki hakkı devretmeyip yalnızca senet bedelini tahsil etme (temsil) yetkisi veren ciro",
-      "D": "Senedi hamiline yazılı hâle getiren ciro",
-      "E": "Senedin düzenlenme tarihini değiştiren ciro"
+      "D": "Emre yazılı bir senedi ciro yoluyla hamiline yazılı senede dönüştüren ve artık yalnızca teslimle devrini sağlayan ciro",
+      "E": "Senedin üzerindeki düzenlenme (keşide) tarihini sonraki bir tarihe çekerek vade ve ibraz sürelerini yeniden başlatan ciro"
     },
     "answer": "C",
     "solution": "**Tahsil cirosu**, ciro edilene senetteki hakkı **devretmez**; yalnızca senet bedelini **tahsil etme (temsil/vekâlet)** yetkisi verir (ör. 'bedeli tahsil içindir' kaydı). Tam devir temlik cirosu, teminat rehin cirosudur.",
@@ -490,10 +490,10 @@
     "stem": "'Rehin cirosu' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
       "A": "Senedi, bir alacağın teminatı olarak rehnetmek amacıyla yapılan ve ciro edilene sınırlı bir hak sağlayan ciro",
-      "B": "Senetteki hakkı tam olarak devreden ciro",
+      "B": "Senetteki hakkı, mülkiyetiyle birlikte ciro edilene tam ve kesin olarak devreden; ciro edileni senedin yeni ve tek hak sahibi kılan ciro",
       "C": "Yalnızca senet bedelini tahsil yetkisi veren ciro ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "D": "Senedi iptal eden ciro",
-      "E": "Senedin bedelini artıran ciro"
+      "D": "Senedi hukuken hükümsüz kılarak iptal eden ve üzerindeki tüm hak ve borçları sona erdirip senedi tedavülden kaldıran ciro",
+      "E": "Her el değiştirmede senet üzerinde yazılı bedeli belirli bir oranda artırarak ciranta sayısına göre borcu büyüten ciro"
     },
     "answer": "A",
     "solution": "**Rehin cirosu**, senedi bir alacağın **teminatı olarak rehnetmek** amacıyla yapılan ve ciro edilene **sınırlı bir hak** (rehin hakkı) sağlayan cirodur (ör. 'bedeli teminattır/rehindir' kaydı). Tam devir temlik, salt tahsil ise tahsil cirosudur.",
@@ -511,11 +511,11 @@
     "konu": "kiymetli_evrak",
     "stem": "'Beyaz ciro' ile 'tam (dolu) ciro' arasındaki fark bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Tam ciroda ciro edilenin adı yazılmazken beyaz ciroda mutlaka yazılır",
+      "A": "Tam (dolu) ciroda lehine ciro yapılanın adı hiçbir zaman yazılmazken, beyaz ciroda ciro edilenin adının açıkça yazılması zorunludur",
       "B": "Tam ciroda lehine ciro yapılan kişinin adı yazılır; beyaz ciroda ise ciro edilenin adı yazılmaz (çoğu kez yalnızca ciro edenin imzası bulunur) ve senet fiilen elden ele dolaşabilir",
       "C": "Beyaz ciro yalnızca çeklerde, tam ciro yalnızca bonolarda yapılabilir; bu husus yalnızca yetkili mahkemenin kararıyla ve resmi bir belgeyle belirlenebilir",
-      "D": "Beyaz ciro senedi geçersiz kılar",
-      "E": "Tam ciro ile beyaz ciro aynı olup aralarında hiçbir fark yoktur"
+      "D": "Beyaz ciro, lehtarın adını taşımadığından senedi baştan itibaren geçersiz kılar ve senet üzerindeki tüm önceki ciroları da hükümsüz bırakır",
+      "E": "Tam ciro ile beyaz ciro tümüyle aynı işlem olup, ciro edilenin adının yazılıp yazılmaması dâhil aralarında hiçbir fark bulunmaz"
     },
     "answer": "B",
     "solution": "**Tam (dolu) ciroda** lehine ciro yapılanın **adı yazılır**; **beyaz ciroda** ciro edilenin adı **yazılmaz** (çoğu kez yalnızca ciro edenin imzası bulunur) ve senet fiilen **elden ele dolaşabilir**. A şıkkı ilişkiyi ters vermiştir; beyaz ciro senedi geçersiz kılmaz.",
@@ -534,10 +534,10 @@
     "stem": "'Aval' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
       "A": "Bir kambiyo senedinin bir başkasına ciro yoluyla devredilmesi; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "B": "Senedin ödenmemesi durumunun resmi olarak tespit edilmesi",
-      "C": "Muhatabın poliçeyi ödemeyi kabul etmesi",
+      "B": "Senedin vadesinde ödenmemesi veya muhatapça kabul edilmemesi durumunun noter aracılığıyla belgelenerek resmen tespit edilmesi işlemi",
+      "C": "Muhatabın, poliçe bedelini vadesinde ödemeyi imzasıyla üstlenerek senedin asıl borçlusu hâline gelmesini sağlayan kabul beyanı",
       "D": "Bir kambiyo senedinde yer alan bedelin ödenmesinin, bir kişi tarafından kısmen veya tamamen teminat altına alınması (kambiyo senetlerine özgü bir tür kefalet)",
-      "E": "Senedin bedelinin muhatap bankaca tahsil edilmesi"
+      "E": "Senedin muhatap bankaya ibraz edilmesi üzerine bedelinin banka tarafından hesaptan ödenerek hamile tahsil edilmesi işlemi"
     },
     "answer": "D",
     "solution": "**Aval**, bir kambiyo senedindeki bedelin ödenmesinin **bir kişi tarafından kısmen/tamamen teminat altına alınmasıdır** (kambiyo senetlerine özgü kefalet benzeri). Ciro (devir), kabul (muhatabın taahhüdü), protesto (ödememe tespiti) ve tahsil aval değildir.",
@@ -556,9 +556,9 @@
     "stem": "Aval veren kişinin sorumluluğu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "Aval veren, kimin için (lehine) aval verdiyse tıpkı onun gibi ve onunla birlikte senet bedelinden sorumlu olur",
-      "B": "Aval veren hiçbir sorumluluk taşımaz; imzası yalnızca şeklidir",
-      "C": "Aval veren yalnızca senedin yarısından sorumlu olur",
-      "D": "Aval veren yalnızca muhatap banka iflas ederse sorumlu olur",
+      "B": "Aval veren, senede yalnızca tanık sıfatıyla imza koyduğundan hiçbir ödeme sorumluluğu taşımaz; imzası tümüyle şeklî ve hukuken etkisizdir",
+      "C": "Aval veren, lehine aval verdiği kişiyle birlikte senedin her hâlde yalnızca yarısı tutarında sorumlu olur; kalan yarıdan sorumlu tutulamaz",
+      "D": "Aval verenin sorumluluğu ancak muhatap bankanın iflas etmesi koşuluna bağlı olup, banka ödeme gücünü koruduğu sürece hiçbir sorumluluğu doğmaz",
       "E": "Aval veren sorumluluğu yalnızca lehtara karşı doğar, hamile karşı doğmaz; söz konusu durum yalnızca tacirler arasındaki ticari ilişkilerde geçerli sayılabilir"
     },
     "answer": "A",
@@ -577,10 +577,10 @@
     "konu": "kiymetli_evrak",
     "stem": "'Protesto' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Senedin bir başkasına ciro edilmesi işlemi",
-      "B": "Senedin bedelinin bankada bloke edilmesi",
+      "A": "Emre yazılı bir senedin üzerine yazılan beyan ve teslim ile bir başkasına ciro edilerek devredilmesi ve yeni hamile geçirilmesi işlemi",
+      "B": "Senet bedelinin, ödeme gününe kadar muhatap bankada ayrı bir hesapta bloke edilerek hamil lehine güvence altında tutulması işlemi",
       "C": "Senetteki bedelin bir kişi tarafından teminat altına alınması ve bu nedenle karşı tarafın rızası veya onayı hiçbir biçimde aranmaz",
-      "D": "Muhatabın poliçeyi ödemeyi kabul etmesi",
+      "D": "Muhatabın, poliçe bedelini vadesinde ödemeyi senet üzerinde imzasıyla üstlenerek asıl borçlu hâline gelmesini sağlayan kabul beyanı",
       "E": "Senedin kabul edilmemesi veya vadesinde ödenmemesi durumunun, kanunda öngörülen biçimde (kural olarak noter aracılığıyla) resmen tespit edilmesi"
     },
     "answer": "E",
@@ -599,9 +599,9 @@
     "konu": "kiymetli_evrak",
     "stem": "'Müracaat (başvurma) hakkı' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Muhatabın, poliçeyi kabul etmeyi reddetme hakkı",
-      "B": "Muhatabın, senedi istediği zaman iptal etme hakkı",
-      "C": "Düzenleyenin, senedi geri çağırma hakkı",
+      "A": "Muhatabın, kendisine ibraz edilen poliçeyi kabul etmeyi reddederek ödeme yükümlülüğü altına girmekten kaçınma ve senedi geri çevirme hakkı",
+      "B": "Muhatabın, bir kez kabul ettiği poliçeyi vadesinden önce dilediği zaman tek taraflı olarak iptal ederek borçtan kurtulma hakkı",
+      "C": "Düzenleyenin, tedavüle çıkardığı senedi vade gelmeden hamilden geri çağırarak kendi ödeme yükümlülüğünü ortadan kaldırma hakkı",
       "D": "Senet vadesinde ödenmediğinde (koşulları gerçekleşince) hamilin; cirantalara, düzenleyene ve aval verenlere başvurarak senet bedelini isteme hakkı",
       "E": "Lehtarın, senet bedelini iki katı olarak isteme hakkı; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar"
     },
@@ -689,9 +689,9 @@
     "options": {
       "A": "Muhatap kabul etmese dahi senet kendiliğinden geçersiz olur ve hamil hiçbir hak talep edemez; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
       "B": "Kabul etmeme kural olarak protesto ile tespit edilir; hamil, koşulları gerçekleşince düzenleyen, cirantalar ve aval verenlere müracaat (başvurma) hakkını kullanabilir",
-      "C": "Hamil yalnızca muhataptan tahsil edebilir; başka kimseye başvuramaz",
-      "D": "Hamil senedi yeniden düzenlemek zorundadır",
-      "E": "Muhatap kabul etmezse hamil senet bedelinin iki katını isteyebilir"
+      "C": "Muhatap kabul etmese dahi hamil, bedeli yalnızca muhataptan talep edebilir; düzenleyen, cirantalar ve aval verenlere hiçbir biçimde başvuramaz",
+      "D": "Muhatap kabul etmediğinde hamil, hakkını koruyabilmek için senedi baştan yeniden düzenleyip tüm cirantalara yeniden imzalatmak zorundadır",
+      "E": "Muhatabın kabulden kaçınması hâlinde hamil, uğradığı güvensizlik nedeniyle senet bedelinin iki katını cezaî tazminat olarak talep edebilir"
     },
     "answer": "B",
     "solution": "Muhatap poliçeyi **kabul etmezse**, bu durum kural olarak **protesto** ile tespit edilir; hamil koşulları gerçekleşince **düzenleyen, cirantalar ve aval verenlere** karşı **müracaat hakkını** kullanabilir. Senet geçersiz olmaz; başvuru yalnız muhatapla sınırlı değildir.",
@@ -776,10 +776,10 @@
     "stem": "Kambiyo senetlerinde zorunlu şekil şartlarından birinin eksik olmasının sonucu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "Eksiklik hiçbir sonuç doğurmaz; senet her hâlde kambiyo senedi olarak geçerlidir ve taraflar bunun aksini sözleşmeyle dahi hiçbir biçimde kararlaştıramaz",
-      "B": "Eksiklik yalnızca senedin bedelini yarıya indirir",
-      "C": "Eksik senet otomatik olarak hamiline yazılı senede dönüşür",
+      "B": "Zorunlu şekil şartlarından birinin eksikliği senedin geçerliliğini etkilemez; yalnızca üzerinde yazılı bedelin yarıya indirilmesi sonucunu doğurur",
+      "C": "Şekil şartı eksik olan senet kambiyo senedi olmaktan çıkar ve kendiliğinden hamiline yazılı bir kıymetli evraka dönüşerek teslimle devredilebilir",
       "D": "Kanunun zorunlu tuttuğu şekil şartlarından biri eksikse (kanunun izin verdiği tamamlayıcı hükümler dışında) senet kambiyo senedi olarak geçersiz sayılır",
-      "E": "Eksik senet yalnızca bir mahkeme kararıyla geçerli hâle getirilebilir"
+      "E": "Şekil şartı eksik olan senet başlangıçta geçersiz olsa da, açılacak bir dava sonucunda mahkeme kararıyla sonradan geçerli bir kambiyo senedine dönüştürülebilir"
     },
     "answer": "D",
     "solution": "Kambiyo senetleri **sıkı şekle** bağlıdır: kanunun zorunlu tuttuğu şekil şartlarından biri **eksikse** (kanunun öngördüğü tamamlayıcı/adi hükümler dışında) senet **kambiyo senedi olarak geçersiz** sayılır. Eksiklik sonuçsuz kalmaz, senedi hamiline çevirmez.",
@@ -841,11 +841,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Bir çekin karşılığı (banka hesabında yeterli tutar) bulunmadığında, ibraz eden hamilin durumu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Karşılıksız çekte hamilin hiçbir hakkı yoktur; çek geçersiz sayılır",
+      "A": "Çekin karşılığı bulunmaması hâlinde hamilin başvurabileceği hiçbir hakkı kalmaz; çek kendiliğinden geçersiz sayılır ve düzenleyen borçtan kurtulur",
       "B": "Hamil, çekin karşılıksız olduğunu (kısmen veya tamamen ödenmediğini) usulüne uygun tespit ettirerek düzenleyen ve cirantalara başvurabilir; ayrıca kanunda öngörülen sonuçlar doğar",
       "C": "Karşılıksız çekin bedelini yalnızca muhatap banka kendi malvarlığından ödemek zorundadır ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "D": "Karşılıksız çekte hamil bedeli yalnızca lehtardan isteyebilir",
-      "E": "Karşılıksız çek düzenleyeni hiçbir sorumluluk taşımaz"
+      "D": "Karşılıksız çekte hamil, bedeli yalnızca senetteki ilk lehtardan talep edebilir; düzenleyene ve araya giren cirantalara hiçbir biçimde başvuramaz",
+      "E": "Çekin karşılıksız çıkması hâlinde düzenleyen, hesabı muhatap banka yönettiği için hiçbir hukuki veya cezaî sorumluluk taşımaz"
     },
     "answer": "B",
     "solution": "Çek karşılıksız çıkarsa hamil, çekin **kısmen/tamamen ödenmediğini** usulüne uygun **tespit ettirerek** düzenleyen ve cirantalara **başvurabilir**; ayrıca kanunda öngörülen (karşılıksız çeke ilişkin) sonuçlar doğar. Çek geçersiz olmaz; muhatap banka kendi parasından ödemek zorunda değildir.",
@@ -863,10 +863,10 @@
     "konu": "kiymetli_evrak",
     "stem": "Kambiyo senetlerinde cirantaların ve düzenleyenin hamile karşı sorumluluğu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Yalnızca son ciranta hamile karşı sorumludur; diğerleri sorumlu değildir",
-      "B": "Hamil, bedeli ancak tüm cirantalara aynı anda dava açarsa isteyebilir",
+      "A": "Hamile karşı yalnızca senedi kendisine devreden son ciranta sorumlu olup, düzenleyen ve önceki cirantalar senetten hiçbir biçimde sorumlu tutulamaz",
+      "B": "Hamil, senet bedelini ancak düzenleyen ve tüm cirantalara aynı anda ve birlikte dava açmak koşuluyla talep edebilir; tek bir borçluya başvuramaz",
       "C": "Hamil bedeli yalnızca senedi düzenleyenden isteyebilir; cirantalara başvuramaz; bu husus yalnızca yetkili mahkemenin kararıyla ve resmi bir belgeyle belirlenebilir",
-      "D": "Cirantalar sorumlu değildir; sorumluluk yalnızca aval verene aittir",
+      "D": "Senedi ciro eden cirantalar hamile karşı hiçbir sorumluluk taşımaz; senet bedelinden sorumluluk yalnızca aval veren kişiye aittir",
       "E": "Senedi düzenleyen ve ciro edenlerin tümü, hamile karşı senet bedelinden müteselsilen sorumludur; hamil bunlardan dilediğine başvurabilir"
     },
     "answer": "E",
@@ -885,10 +885,10 @@
     "konu": "kiymetli_evrak",
     "stem": "Emre yazılı bir senede 'emre değildir' (menfi emre) kaydının konulmasının sonucu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Senet geçersiz hâle gelir ve hiçbir biçimde devredilemez",
+      "A": "Senede 'emre değildir' kaydı konulması senedi baştan geçersiz kılar; senet artık ne ciro ne de temlik yoluyla hiçbir biçimde devredilemez",
       "B": "Senet, artık ancak nama yazılı senedin devrine ilişkin hükümlere (alacağın temliki) göre devredilebilir hâle gelir",
-      "C": "Senet hamiline yazılı senede dönüşür ve teslimle devredilir",
-      "D": "Senet, yalnızca ciro ile devredilebilir hâlde kalır",
+      "C": "'Emre değildir' kaydı senedi hamiline yazılı bir senede dönüştürür ve senet bundan sonra yalnızca teslimle (elden ele) devredilebilir hâle gelir",
+      "D": "'Emre değildir' kaydına rağmen senet yine yalnızca ciro ve teslim yoluyla devredilebilir hâlde kalır; alacağın temliki hükümleri uygulanmaz",
       "E": "Kayıt hiçbir sonuç doğurmaz; senet yine ciro ile devredilir; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz"
     },
     "answer": "B",
@@ -908,10 +908,10 @@
     "stem": "Çek ile bono/poliçe arasındaki temel fark bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "Çek görüldüğünde ödenen ve muhatabı yalnızca banka olan bir ödeme aracıyken; poliçe ve bono kural olarak vadeli düzenlenebilen kredi araçlarıdır",
-      "B": "Çek bir kredi (vade) aracı iken bono ve poliçe ödeme araçlarıdır",
+      "B": "Çek ileri bir vadeye bağlanan bir kredi aracıyken, bono ve poliçe görüldüğünde ödenen ve vade taşımayan birer ödeme aracıdır",
       "C": "Çekte muhatap herhangi bir kişi olabilirken poliçede muhatap yalnızca bankadır; söz konusu durum yalnızca tacirler arasındaki ticari ilişkilerde geçerli sayılabilir",
-      "D": "Çek kabule tabi iken poliçe hiçbir zaman kabul edilemez",
-      "E": "Çek, poliçe ve bono arasında hiçbir fark yoktur"
+      "D": "Çek muhatap bankaca kabul edilmek zorunda olduğu hâlde, poliçe hiçbir zaman kabule tabi tutulamaz ve muhatabı ödemeyi taahhüt edemez",
+      "E": "Çek, poliçe ve bono işlev, muhatap ve vade bakımından tümüyle aynı olup aralarında hiçbir hukuki fark bulunmaz"
     },
     "answer": "A",
     "solution": "**Çek**, **görüldüğünde ödenen** ve **muhatabı yalnızca banka** olan bir **ödeme aracıdır**; **poliçe ve bono** ise kural olarak **vadeli** düzenlenebilen **kredi araçlarıdır**. A ve C şıkları nitelikleri/muhatabı ters vermiş; kabul yasağı çeke aittir (poliçe kabule tabidir).",
@@ -930,9 +930,9 @@
     "stem": "Aşağıdakilerden hangisi hamiline yazılı olarak düzenlenebilen bir kıymetli evraka örnektir?",
     "options": {
       "A": "Bono (her durumda yalnızca nama yazılı düzenlenir) ve bu nedenle karşı tarafın rızası veya onayı hiçbir biçimde aranmaz",
-      "B": "Ticari defter",
-      "C": "Poliçe (yalnızca hamiline düzenlenebilir)",
-      "D": "Tapu senedi",
+      "B": "Ticari defter (tacirin tuttuğu ve hamiline yazılı olarak devredilebilen bir kıymetli evrak niteliğindedir)",
+      "C": "Poliçe (kambiyo senedi olmakla birlikte kanunen hamiline yazılı düzenlenir ve teslimle devredilir)",
+      "D": "Tapu senedi (taşınmaz mülkiyetini temsil eden, hamiline yazılı ve teslimle devredilebilen bir kıymetli evraktır)",
       "E": "Hamiline yazılı çek (lehtar gösterilmeksizin veya hamiline kaydıyla düzenlenen çek)"
     },
     "answer": "E",
@@ -951,11 +951,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Kıymetli evrakta 'zilyetlik (senedin elde bulundurulması)' bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Kıymetli evrakta zilyetliğin hiçbir önemi yoktur; hak senetten bağımsızdır",
+      "A": "Kıymetli evrakta senedin zilyetliğinin hiçbir önemi yoktur; hak senetten tümüyle bağımsız olduğundan senedi elde bulundurmayan kişi de hakkı ileri sürebilir",
       "B": "Senedin zilyetliği yalnızca hamiline senetlerde önemlidir; emre ve nama senetlerde önemsizdir; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar",
       "C": "Kıymetli evrakta hakkı ileri sürebilmek için kural olarak senedin zilyetliğine (senedi elde bulundurmaya ve ibraz etmeye) sahip olmak gerekir",
-      "D": "Zilyetlik yalnızca senedin bedelini belirlemeye yarar",
-      "E": "Zilyetlik yalnızca senedin düzenlenme tarihini gösterir"
+      "D": "Senedin zilyetliği hakkın ileri sürülmesiyle ilgisiz olup, yalnızca senet üzerinde yazılı bedelin ne kadar olduğunu belirlemeye yarar",
+      "E": "Senedin zilyetliği hak sahipliğini etkilemez; yalnızca senedin hangi tarihte düzenlendiğini ve tedavüle çıkarıldığını gösteren bir karinedir"
     },
     "answer": "C",
     "solution": "Kıymetli evrakta hakkı ileri sürebilmek için kural olarak **senedin zilyetliğine** (senedi elde bulundurmaya ve **ibraz etmeye**) sahip olmak gerekir (hak-senet bağı). Zilyetlik yalnızca hamiline senede özgü değildir ve bedel/tarih göstergesi değildir.",
@@ -997,9 +997,9 @@
     "options": {
       "A": "Kambiyo senetlerinden doğan talepler hiçbir zaman zamanaşımına uğramaz; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
       "B": "Kambiyo senetlerinden doğan talepler için, genel borç zamanaşımından farklı olarak kanunda özel (kısa) zamanaşımı süreleri öngörülmüştür",
-      "C": "Kambiyo senetlerinde zamanaşımı her durumda genel 10 yıllık süredir",
-      "D": "Kambiyo senetlerinde zamanaşımı yalnızca sözleşmeyle belirlenir",
-      "E": "Kambiyo senetlerinde zamanaşımı yalnızca çekler için öngörülmüştür"
+      "C": "Kambiyo senetlerinden doğan tüm talepler, senet türü ve borçlu ayrımı gözetilmeksizin her durumda genel 10 yıllık zamanaşımı süresine tabidir",
+      "D": "Kambiyo senetlerinde zamanaşımı süreleri kanunda düzenlenmemiş olup, yalnızca taraflarca senet üzerinde serbestçe kararlaştırılarak belirlenir",
+      "E": "Kambiyo senetlerinde özel zamanaşımı yalnızca çekler için öngörülmüş olup, poliçe ve bonodan doğan talepler hiçbir zamanaşımına tabi değildir"
     },
     "answer": "B",
     "solution": "Kambiyo senetlerinden doğan talepler için, genel borç zamanaşımından **farklı olarak** kanunda **özel (kısa) zamanaşımı süreleri** öngörülmüştür (senet türüne ve borçluya göre değişir). Bu talepler zamanaşımına uğrar; süre 10 yıl değil, sözleşmeyle serbestçe belirlenemez.",
@@ -1018,9 +1018,9 @@
     "stem": "Kıymetli evrakın 'kamu güveni / soyutluk' özelliği bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "Kıymetli evrak, altında yatan (temel) ilişkiye tümüyle bağlı olup temel ilişki geçersizse senet de her hâlde geçersizdir ve taraflar bunun aksini sözleşmeyle dahi hiçbir biçimde kararlaştıramaz",
-      "B": "Kıymetli evrakın hiçbir hak içermemesi",
-      "C": "Kıymetli evrakın hiç kimse tarafından devredilememesi",
-      "D": "Kıymetli evrakın yalnızca bir kamu kurumu tarafından çıkarılabilmesi",
+      "B": "Kıymetli evrakın herhangi bir hak içermemesi ve yalnızca temel ilişkinin varlığını ispata yarayan, hak doğurmayan sıradan bir belge olması",
+      "C": "Kıymetli evrakın kamu güvenine tabi olması nedeniyle hiç kimse tarafından ve hiçbir yöntemle bir başkasına devredilememesi",
+      "D": "Kıymetli evrakın taşıdığı kamu güveni gereği yalnızca yetkili bir kamu kurumu tarafından çıkarılabilmesi ve özel kişilerce düzenlenememesi",
       "E": "Kambiyo senetleri gibi soyut kıymetli evrakta senetteki borç, altında yatan temel ilişkiden bağımsız kabul edilir; bu, senede duyulan güveni ve tedavül kabiliyetini artırır"
     },
     "answer": "E",
@@ -1040,10 +1040,10 @@
     "stem": "Bir poliçede muhatabın kabulden sonraki hukuki durumu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "Muhatap kabulden sonra da hiçbir sorumluluk taşımaz; ödemekle yükümlü değildir ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "B": "Muhatap kabulden sonra yalnızca aval veren gibi sorumlu olur",
+      "B": "Muhatap poliçeyi kabul etse dahi asıl borçlu olmaz; yalnızca bir aval veren gibi ikinci derecede ve fer'î olarak sorumlu tutulabilir",
       "C": "Muhatap poliçeyi kabul ettikten sonra, poliçe bedelini vadesinde ödemekle yükümlü asıl (birinci derece) borçlu hâline gelir",
-      "D": "Muhatap kabulden sonra senedi istediği zaman iptal edebilir",
-      "E": "Muhatap kabulle birlikte lehtar hâline gelir"
+      "D": "Muhatap, poliçeyi kabul ettikten sonra dahi dilediği zaman kabul beyanını geri alarak senedi tek taraflı iptal edebilir ve borçtan kurtulur",
+      "E": "Muhatap, poliçeyi kabul etmesiyle birlikte senedin lehtarı hâline gelir ve bedeli kendi lehine tahsil etme hakkını kazanır"
     },
     "answer": "C",
     "solution": "Muhatap poliçeyi **kabul ettikten sonra**, poliçe bedelini vadesinde **ödemekle yükümlü asıl (birinci derece) borçlu** hâline gelir. Kabulden önce sorumlu değilken, kabul onu poliçenin esas borçlusu yapar.",
@@ -1105,11 +1105,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Bir kişi, borcuna karşılık düzenlediği bonoyu alacaklısına vermiştir. Bonoyu düzenleyenin bu senetteki konumu bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Düzenleyen yalnızca aracıdır; senetten hiçbir sorumluluğu doğmaz",
+      "A": "Bonoyu düzenleyen yalnızca alacaklı ile borçlu arasında aracı konumunda olup, senetten kendisine ait hiçbir ödeme sorumluluğu doğmaz",
       "B": "Düzenleyen yalnızca muhatap sıfatı taşır; ödemekle yükümlü değildir; bu husus yalnızca yetkili mahkemenin kararıyla ve resmi bir belgeyle belirlenebilir",
       "C": "Bonoyu düzenleyen, kendi ödeme vaadini içeren senedin asıl (birinci derece) borçlusudur ve bedeli vadesinde ödemekle yükümlüdür",
-      "D": "Düzenleyen, senedi imzalasa dahi ödemeden her zaman cayabilir",
-      "E": "Düzenleyen yalnızca senet ciro edilirse sorumlu olur"
+      "D": "Bonoyu düzenleyen kişi, senedi imzalayıp lehtara vermiş olsa dahi ödeme yükümlülüğünden her zaman tek taraflı olarak cayabilir",
+      "E": "Bonoyu düzenleyenin sorumluluğu ancak senedin bir başkasına ciro edilmesi hâlinde doğar; senet ciro edilmezse düzenleyen sorumlu olmaz"
     },
     "answer": "C",
     "solution": "Bonoyu **düzenleyen**, kendi **ödeme vaadini** içeren senedin **asıl (birinci derece) borçlusudur** ve bedeli vadesinde ödemekle yükümlüdür. Bonoda muhatap yoktur; düzenleyen ödemeden serbestçe cayamaz, sorumluluğu ciroya bağlı değildir.",
@@ -1215,11 +1215,11 @@
     "konu": "kiymetli_evrak",
     "stem": "Hamilin müracaat (başvurma) haklarını koruyabilmesi için senedi süresinde ibraz etmesi ve gereğinde protesto çekmesinin önemi bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İbraz ve protesto tümüyle gereksizdir; hamil her durumda tüm haklarını korur",
+      "A": "Senedin süresinde ibrazı ve protesto çekilmesi tümüyle gereksiz formalitelerdir; hamil bu işlemleri yapmasa da her durumda tüm başvuru haklarını korur",
       "B": "Hamil, senedi süresinde ibraz etmez veya gerekli protestoyu çekmezse, kural olarak cirantalar ve düzenleyene karşı müracaat (başvurma) haklarını kaybedebilir",
       "C": "İbraz ve protesto yalnızca asıl borçluya karşı hakları etkiler; başvuru haklarını hiç etkilemez; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "D": "Süresinde ibraz edilmeyen senet kendiliğinden hamiline yazılı senede dönüşür",
-      "E": "Protesto çekmek senedin bedelini artırır"
+      "D": "Süresinde ibraz edilmeyen senet kambiyo senedi olmaktan çıkarak kendiliğinden hamiline yazılı bir senede dönüşür ve yalnızca teslimle devredilir",
+      "E": "Protesto çekilmesi, senetteki asıl bedele kanunî bir ek yükleyerek borçlunun ödeyeceği tutarı belirli bir oranda kendiliğinden artırır"
     },
     "answer": "B",
     "solution": "Hamil senedi **süresinde ibraz etmez** veya gerekli **protestoyu çekmezse**, kural olarak **cirantalar ve düzenleyene** karşı **müracaat (başvurma) haklarını kaybedebilir** (başvuru borçlularına karşı hak kaybı). Bu işlemler önemlidir; senedi hamiline çevirmez, bedeli artırmaz.",
@@ -1237,10 +1237,10 @@
     "konu": "kiymetli_evrak",
     "stem": "Poliçe, bono ve çekin ortak özelliği bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Üçünde de muhatap yalnızca bir banka olmak zorundadır",
-      "B": "Üçü de bir ortaklık payını temsil eder",
+      "A": "Üçünde de ödeme yapacak muhatabın yalnızca bir banka olması zorunlu olup, banka dışındaki kişiler üzerine bu senetler düzenlenemez",
+      "B": "Üçü de sahibine bir anonim şirkette ortaklık payı ile birlikte kâr payı ve oy hakkı sağlayan birer menkul kıymet niteliğindedir",
       "C": "Üçü de yalnızca hamiline yazılı olarak düzenlenebilir; söz konusu durum yalnızca tacirler arasındaki ticari ilişkilerde geçerli sayılabilir",
-      "D": "Üçünde de kabul zorunlu bir unsurdur",
+      "D": "Üçünde de muhatabın senedi kabul etmesi geçerlilik için zorunlu bir unsur olup, kabul edilmeyen poliçe, bono veya çek geçersiz sayılır",
       "E": "Üçü de kambiyo senedidir; kanunen emre yazılıdır, belirli bir bedelin kayıtsız şartsız ödenmesine ilişkindir ve düzenleyenin imzasını taşır"
     },
     "answer": "E",
@@ -1282,10 +1282,10 @@
     "stem": "'İbraz süresi geçtikten sonra' çek bakımından doğru ifade aşağıdakilerden hangisidir?",
     "options": {
       "A": "İbraz süresi geçen çek her hâlde tümüyle geçersiz olur ve hiçbir hak talep edilemez ve bu nedenle karşı tarafın rızası veya onayı hiçbir biçimde aranmaz",
-      "B": "İbraz süresi geçen çek kendiliğinden bir bonoya dönüşür",
+      "B": "İbraz süresi geçen çek, kambiyo niteliğini kaybederek kendiliğinden bir bonoya dönüşür ve düzenleyenini bono borçlusu gibi sorumlu kılar",
       "C": "İbraz süresi geçse de çek belirli koşullarla muhatap bankaca ödenebilir; ancak hamil, süresinde ibraz etmediğinden cirantalara başvuru haklarını kaybedebilir",
-      "D": "İbraz süresi geçen çekin bedeli iki katına çıkar",
-      "E": "İbraz süresi geçen çek yalnızca noter aracılığıyla ödenebilir"
+      "D": "İbraz süresi geçen çekin bedeli, hamilin uğradığı gecikme nedeniyle kanunen iki katına çıkar ve düzenleyen bu artan tutardan sorumlu olur",
+      "E": "İbraz süresi geçen çek muhatap bankaca artık ödenemez; bedeli yalnızca noter aracılığıyla ve düzenleyenin yeniden onayı alınarak tahsil edilebilir"
     },
     "answer": "C",
     "solution": "İbraz süresi geçse de çek, belirli koşullarla (ör. düzenleyen ödemeden men etmemişse) muhatap bankaca **ödenebilir**; ancak hamil süresinde ibraz etmediğinden **cirantalara başvuru haklarını kaybedebilir**. Çek geçersiz olmaz, bonoya dönüşmez, bedeli artmaz.",
