@@ -105,10 +105,14 @@ def audit(path):
         if qid in seen_ids:
             out.append(("FATAL", "şema", f"{qid}: id tekrarlanıyor"))
         seen_ids[qid] = 1
-        key = re.sub(r"\W+", "", q["stem"]).lower()
-        if key in seen_stems:
-            out.append(("FATAL", "şema", f"{qid}: soru kökü {seen_stems[key]} ile aynı"))
-        seen_stems[key] = qid
+        # Tekrar = kök VE şıklar aynı. Yalnız kökün aynı olması tekrar DEĞİLDİR:
+        # "Aşağıdakilerden hangisi ... değildir?" gibi jenerik kökler farklı şık
+        # kümeleriyle meşru biçimde tekrar kullanılır (içerik şıklarda).
+        stem_key = re.sub(r"\W+", "", q["stem"]).lower()
+        full_key = (stem_key, tuple(sorted(re.sub(r"\W+", "", v).lower() for v in q["opts"].values())))
+        if full_key in seen_stems:
+            out.append(("FATAL", "şema", f"{qid}: {seen_stems[full_key]} ile birebir aynı soru"))
+        seen_stems[full_key] = qid
 
         # çözüm-harf senkronu
         m = SOLLETTER.search(q["sol"])
