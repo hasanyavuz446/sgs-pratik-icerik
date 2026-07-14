@@ -1227,17 +1227,17 @@
     "question": "Müşteri, daha önce kredili aldığı KDV hariç 10.000 TL tutarındaki malın tamamını iade etmiştir. KDV oranı %20'dir. Satış iadesi kaydı hangisidir?",
     "choices": {
       "A": "610 Satıştan İadeler 12.000 borç; 120 Alıcılar 12.000 alacak",
-      "B": "610 Satıştan İadeler 10.000 ve 391 Hesaplanan KDV 2.000 borç; 120 Alıcılar 12.000 alacak",
+      "B": "610 Satıştan İadeler 10.000 ve 191 İndirilecek KDV 2.000 borç; 120 Alıcılar 12.000 alacak",
       "C": "153 Ticari Mallar 10.000 ve 191 İndirilecek KDV 2.000 borç; 320 Satıcılar 12.000 alacak",
       "D": "120 Alıcılar 12.000 borç; 610 Satıştan İadeler 10.000 ve 391 Hesaplanan KDV 2.000 alacak",
-      "E": "610 Satıştan İadeler 10.000 ve 191 İndirilecek KDV 2.000 borç; 120 Alıcılar 12.000 alacak"
+      "E": "610 Satıştan İadeler 10.000 ve 391 Hesaplanan KDV 2.000 borç; 120 Alıcılar 12.000 alacak"
     },
     "correctAnswer": "E",
-    "explanation": "Satıcı bakımından iade edilen malın bedeli 610 Satıştan İadeler hesabına, iadeye ilişkin KDV ise indirim konusu yapılmak üzere 191 İndirilecek KDV hesabına borç; müşteriden alacak toplam 12.000 TL alacak kaydedilir.",
+    "explanation": "Satış iadesinde, satış anında 391 Hesaplanan KDV hesabının alacağına yazılan KDV ters çevrilir; bu nedenle iade edilen malın bedeli 610 Satıştan İadeler, iadeye ilişkin KDV ise 391 Hesaplanan KDV hesabına borç kaydedilir. Müşteriden olan alacağın azalması 120 Alıcılar hesabına 12.000 TL alacak yazılır. 191 İndirilecek KDV alıcının indirim hakkını gösterir; satıcı bir alım yapmadığı için burada kullanılmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "KDV Genel Uygulama Tebliği ve 1 Sıra No.lu MSUGT - 191 ve 610 hesapları"
+      "legislationRef": "KDV Kanunu m.35 ve 1 Sıra No.lu MSUGT - 391 ve 610 hesapları"
     },
     "tags": [
       "Demo Soru",
