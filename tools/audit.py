@@ -37,9 +37,15 @@ def load(path):
     return d if isinstance(d, list) else d.get("questions", [])
 
 
+# Yıla bağlı oran kuralı YALNIZ bu derslerde uygulanır (vergi mevzuatı).
+VERGI_DERSLERI = {"vergi_hukuku", "vergi_usul_kanunu", "turk_vergi_sistemi",
+                  "gelir_vergisi", "kurumlar_vergisi", "katma_deger_vergisi"}
+
 def norm(q):
     """İki şemayı tek biçime indirger."""
+    ders = q.get("lessonId") or q.get("ders") or ""
     return {
+        "vergi": ders in VERGI_DERSLERI,
         "id": q.get("id"),
         "stem": q.get("question") or q.get("stem") or "",
         "opts": q.get("choices") or q.get("options") or {},
@@ -129,13 +135,17 @@ def audit(path):
                (s[1] >= 1.7 * s[2] and s[1] >= 45 and a >= s[1]):
                 out.append(("UYARI", "length-tell", f"{qid}: doğru şık {a} kr, 2.uzun {s[1]} kr"))
 
-        # Yıla bağlı oran/eşik. DİKKAT: oranın soru KÖKÜNDE verilmesi güvenlidir
-        # ("5.000 TL + %20 KDV" → ölçülen şey kayıt, oran değil; oran değişse
-        # soru yine kendi içinde tutarlı). İhlal, oranın CEVAP olmasıdır ya da
-        # kökün oranı vermeyip öğrencinin bilmesini beklemesidir.
+        # Yıla bağlı oran/eşik — YALNIZ VERGİ derslerinde anlamlı.
+        # Kural vergi konuları için kondu: KDV %20, gelir dilimleri, istisna
+        # hadleri her yıl değişir. Oran analizi/ekonomi/matematik sorularında
+        # yüzde CEVABIN KENDİSİDİR (net kâr marjı %10) ve bayatlamaz — orada
+        # bu kuralı uygulamak kategori hatasıdır.
         opts_blob = " ".join(q["opts"].values())
         blob = q["stem"] + " " + opts_blob
-        if RATE.search(opts_blob):
+        if not q["vergi"]:
+            if CALC.search(blob):
+                out.append(("BİLGİ", "hesap", f"{qid}: aritmetik — elle doğrulama gerek"))
+        elif RATE.search(opts_blob):
             out.append(("UYARI", "yıla-bağlı", f"{qid}: oran ŞIKTA — oranın kendisi sorulmuş"))
         elif THRESHOLD.search(blob):
             out.append(("UYARI", "yıla-bağlı", f"{qid}: had/tarife/dilim geçiyor — güncellik riski"))
