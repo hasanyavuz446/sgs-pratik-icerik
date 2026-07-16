@@ -12,7 +12,7 @@ bakınca ortaya çıkan riskleri arar:
   3. Çakışma      — dosyalar arası kök tekrarı + konu×bölüm havuzu kesişmesi
   4. Konu sınırı  — soru atandığı konunun kapsamında mı (dayanak tutarlılığı)
   5. Kaynak dağ.  — bir konunun soruları tek maddeye yığılmış mı
-  6. Denge        — hesap/kavramsal oranı derse uygun mu, öncüllü sayısı
+  6. Denge        — konu paketini kota zorlamadan raporlar; ders havuzunu ayrıca ölçer
   7. Örneklem     — elle okunacak soruları konu başına seçer
 """
 import json, os, re, sys, random, collections
@@ -34,7 +34,11 @@ def main():
     # curriculum: beklenen konular
     c = json.load(open(f"{APP}/assets/content/curriculum.json", encoding="utf-8"))
     prog = [p for p in c["programs"] if p["id"] == "yeterlilik"][0]
-    les2sec = {l: s["name"] for s in prog["sections"] for l in s["lessonIds"]}
+    les2sec = {
+        lesson_id: section["name"]
+        for section in prog["sections"]
+        for lesson_id in section.get("subLessonIds", section.get("lessonIds", []))
+    }
     beklenen = {}
     for l in c["lessons"]:
         for t in l.get("topics", []):
@@ -106,17 +110,41 @@ def main():
         refs = collections.Counter((q.get("source", {}).get("legislationRef") or "?").split(" - ")[0] for q in qs)
         top = refs.most_common(1)[0]
         flags = []
-        if not (6 <= len(onc) <= 10): flags.append("önc")
-        if onc and not (0.15 <= hepsi/len(onc) <= 0.35): flags.append("hepsi")
-        # DİKKAT: bir konunun sorularının çoğunun aynı standarda dayanması NORMALDİR
-        # (finansal_stoklar → TMS 2). Sorun, 60 sorunun çok az sayıda farklı
-        # dayanağa sıkışması, yani konunun dar işlenmesidir.
-        if len(refs) < 5: flags.append(f"dar-kaynak({len(refs)})")
+        if onc:
+            combos = collections.Counter(
+                q["choices"][q["correctAnswer"]].strip() for q in onc
+            )
+            if len(onc) >= 4 and combos.most_common(1)[0][1] / len(onc) > 0.50:
+                flags.append("öncül-kalıbı")
+        # Öncüllü/hesap soru sayısı ve kaynak çeşidi konu doğasına bağlıdır.
+        # Tek dönemlik sınav profilini her 60 soruluk alt konuya kota olarak
+        # uygulamak yapay soru üretir; burada yalnız görünür raporlanır.
         mark = "🔴" if flags else "  "
         print(f"{mark}{tid[:30]:30} {hesap:6} {len(onc):5} {hepsi:6}  {len(refs):14}  {top[0][:16]:>18} ({top[1]})")
         if flags: warn.append(f"{tid}: {', '.join(flags)}")
 
-    # 4. örneklem
+    # 4. Bölüm havuzunun sınav-biçimi özeti. 2026/1 tek dönem olduğu için
+    # sayılar bir yayın engeli değil, insan incelemesi için karşılaştırmadır.
+    print("\n═══ BÖLÜM HAVUZU BİÇİM ÖZETİ ═══")
+    section_rows = collections.defaultdict(list)
+    for q, base in bolum:
+        section_rows[les2sec.get(q.get("lessonId"), "Bilinmeyen bölüm")].append(q)
+    for section_name, qs in sorted(section_rows.items()):
+        premise = sum(1 for q in qs if len(MARK.findall(q["question"])) >= 2)
+        negative = sum(
+            1 for q in qs
+            if re.search(r"\b(?:yanlıştır|değildir|beklenmez)\b", q["question"], re.I)
+        )
+        calc = sum(
+            1 for q in qs
+            if CALC.search(q["question"] + " " + " ".join(q["choices"].values()))
+        )
+        print(
+            f"  {section_name[:44]:44} {len(qs):3} soru | "
+            f"hesap/veri {calc:2} | negatif {negative:2} | öncüllü {premise:2}"
+        )
+
+    # 5. örneklem
     print("\n═══ ELLE OKUNACAK ÖRNEKLEM ═══")
     random.seed(7)
     for (lid, tid), items in sorted(konu.items())[:0]:  # başlık; asıl liste aşağıda

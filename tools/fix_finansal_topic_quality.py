@@ -271,12 +271,12 @@ PREMISES = {
         "Mamul için yapılan reklam harcamasına ilişkin ifadeleri değerlendiriniz.",
         [
             "Satış ve pazarlama gideri niteliğindedir.",
-            "Stoku mevcut konum ve durumuna getirmediği için stok maliyetine alınmaz.",
-            "Normal kapasite esas alınarak mamullere genel üretim gideri olarak dağıtılır.",
+            "Mamul satışından önce yapıldığı için stok maliyetine alınır.",
+            "Üretim maliyetine değil, gerçekleştiği dönemin sonucuna yansır.",
         ],
-        "I ve II",
-        "Reklam harcaması üretim maliyeti değil satış ve pazarlama gideridir; mamulün stok "
-        "maliyetine yüklenmez.",
+        "I ve III",
+        "Reklam harcaması satış ve pazarlama gideridir; satıştan önce yapılması onu stok "
+        "maliyetine dönüştürmez ve gerçekleştiği dönemde giderleştirilir.",
     ),
     "topic-finansal-stok-013": premise(
         "Stokların dönüştürme maliyetlerine ilişkin ifadeleri değerlendiriniz.",
@@ -293,12 +293,12 @@ PREMISES = {
         "Ortak üretim maliyetlerinin dağıtımına ilişkin ifadeleri değerlendiriniz.",
         [
             "Dağıtım makul ve tutarlı bir temele dayanmalıdır.",
-            "Ürünlerin nispi satış değerleri uygun bir dağıtım anahtarı olabilir.",
+            "Ürünlerin nispi satış değerleri dağıtım anahtarı olarak kullanılamaz.",
             "Ortak maliyetin tamamı her durumda en yüksek miktarlı ürüne yüklenir.",
         ],
-        "I ve II",
-        "Ayrışma noktasına kadar ayrı belirlenemeyen ortak maliyetler nispi satış değeri gibi "
-        "makul ve tutarlı bir temelle ürünlere dağıtılır.",
+        "Yalnız I",
+        "Ortak maliyet makul ve tutarlı bir temelle dağıtılır. Nispi satış değeri uygun bir "
+        "anahtar olabilir; maliyetin tamamını tek ürüne yüklemek kural değildir.",
     ),
     "topic-finansal-stok-020": premise(
         "Olağan kredi koşullarını aşan vadeli stok alımına ilişkin ifadeleri değerlendiriniz.",

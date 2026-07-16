@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Yeterlilik KONU HAVUZU — Maliyet Muhasebesi / Gider Dağıtımları (60 soru = 3×20).
-Doğru şık KISA, çeldiriciler UZUN. explanation'da harf atıfı YOK.
-Aritmetik python'da hesaplanır. Yıla bağlı oran/tutar YOK."""
+"""Yeterlilik konu havuzu — Maliyet Muhasebesi / Gider Dağıtımları.
+
+60 soru 3×20 test oluşturur. Şık uzunlukları cevap ipucu vermeyecek biçimde
+dengelenir; hesaplar Python ile doğrulanır ve yıla bağlı oran kullanılmaz.
+"""
 import json, random, re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "gider_dagitimlari", "Gider Dağıtımları"
 PREFIX, SEED = "kh-mal-dagitim", 20260903
-OUT = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_gider_dagitimlari_2026.json"
 
 Q = []
 
@@ -628,6 +630,88 @@ q(f"İkinci dağıtım sonrası E1'de {tr(e1_havuz)} TL/{tr(e1_toplam_mh)} makin
 print("TOPLAM:", len(Q))
 
 
+# Eski sürüm doğru şıkları kasıtlı olarak kısa tutuyordu. Anlamı koruyan bu
+# karşılıklar seçenek uzunluğunu doğal bir dağılıma getirir; kullanıcı cevap
+# anahtarını yalnız şık boyundan tahmin edemez.
+CORRECT_REWRITES = {
+    1: "Amortisman, Pres bölümüyle ilişkili olduğu için dağıtılmadan doğrudan bu gider yerine yüklenir",
+    2: "Kira giderinden birden çok bölüm aynı fabrika kaynağını ortak biçimde tükettiği için pay alır",
+    4: "Sigorta gideri, bölümlerin sigortalanan varlık değerleri esas alınarak aralarında dağıtılır",
+    5: "Elektrik gideri, sayaçlarla her gider yerinde ölçülen kilovatsaat tüketimi esas alınarak dağıtılır",
+    6: "Aydınlatma ve yemekhane için kaynak tüketimini temsil eden ayrı dağıtım anahtarları seçilmesini",
+    11: "Ücret, başka bölümlere pay verilmeden doğrudan Boya gider yerine yüklenmelidir",
+    12: "Makine amortismanında doğrudan izleme, alan anahtarıyla dağıtımdan daha güvenilirdir",
+    13: "Yedek parça tüketimi, hizmet verilinceye kadar Bakım yardımcı gider yerinde toplanır",
+    16: "Eksik anahtar verisi doğrulanmalı ve dağıtımdan önce güvenilir biçimde tamamlanmalıdır",
+    19: "Bölüm toplamı, doğrudan giderler ile o bölüme düşen ortak gider paylarından oluşur",
+    20: "Temizlik gideri, sözleşmedeki temizlenen alan ölçülerine göre ilgili gider yerlerine yüklenir",
+    21: "Doğrudan yöntemde yardımcı gider yerlerinin birbirlerine sunduğu hizmetler hesaba katılmaz",
+    27: "A ve B toplamı, 216.000 TL başlangıç yardımcı gider maliyetine eşittir",
+    28: "Bir kez kapatılan yardımcı gider yeri, sonraki gider yerlerinden yeniden maliyet payı alamaz",
+    33: "Karşılıklı yöntem, yardımcı yerler arası hizmetleri toplam maliyete eksiksiz olarak katar",
+    34: "Yardımcı gider yerleri arasında çözülecek karşılıklı bir hizmet bulunmadığı için",
+    35: "Sıfır bakiyeler, maliyetlerin hizmet alan esas üretim yerlerine aktarıldığını gösterir",
+    36: "Bakım maliyeti, esas üretim yerlerinde biriktikten sonra üçüncü dağıtımla mamullere ulaşır",
+    38: "Dağıtım maliyetin yerini değiştirir, toplam maliyet tutarını değiştirmez",
+    39: "Öğün sayısı, bakım saati ve ölçülen kilovatsaat ilgili hizmetler için doğrudan kullanılır",
+    41: "Yükleme oranı, gider yeri toplamının uygun faaliyet ölçüsü toplamına bölünmesiyle bulunur",
+    42: "Kesimde makine saati, Montajda direkt işçilik saati ayrı dağıtım anahtarları olarak kullanılır",
+    43: "Tek oran, farklı bölüm kaynaklarını kullanan mamuller arasında çapraz maliyet aktarımına yol açabilir",
+    49: "Kalite kontrol sayısı, mamulün bölüm kaynağından yararlanma düzeyini temsil eder",
+    53: "X ve Y paylarının toplamı havuza eşit olduğundan gider yerinin tamamı dağıtılmıştır",
+    54: "Yardımcı hizmet maliyetleri esas üretim yeri yükleme oranının dışında kalır",
+    55: "Ölçüm verisi ile kullanılan dağıtım anahtarının uygunluğu birlikte yeniden incelenmelidir",
+}
+for number, rewritten in CORRECT_REWRITES.items():
+    Q[number - 1]["correct"] = rewritten
+
+# Öncüllü sorularda tek bir cevap kombinasyonunun ezberlenmesini engelle.
+Q[28].update({
+    "stem": (
+        "Kademeli dağıtım yöntemine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Dağıtımı tamamlanan yardımcı gider yeri yeniden pay almaz\n\n"
+        "II. Seçilen dağıtım sırası sonuçları hiçbir zaman etkilemez\n\n"
+        "III. Yöntem karşılıklı hizmetleri eşzamanlı denklemlerle tamamen dikkate alır"
+    ),
+    "correct": "Yalnız I",
+    "distractors": ["I ve II", "I, II ve III", "II ve III", "Yalnız III"],
+    "why": (
+        "Kademeli yöntemde dağıtımı biten yardımcı yer kapatılır ve yeniden pay almaz. "
+        "Dağıtım sırası sonucu etkileyebilir; tam eşzamanlı çözüm ise karşılıklı yönteme aittir."
+    ),
+})
+Q[51].update({
+    "stem": (
+        "Üçüncü dağıtıma ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Esas üretim gider yeri toplamı dağıtımın maliyet havuzudur\n\n"
+        "II. Mamulün faaliyet kullanımı yüklenen tutarı etkilemez\n\n"
+        "III. Yardımcı gider yeri maliyeti mamule ulaşmadan önce esas üretim yerlerine aktarılır"
+    ),
+    "correct": "I ve III",
+    "distractors": ["Yalnız I", "I ve II", "II ve III", "I, II ve III"],
+    "why": (
+        "Esas üretim gider yeri üçüncü dağıtımın maliyet havuzudur ve yardımcı giderleri "
+        "ikinci dağıtımda devralır. Mamulün faaliyet kullanımı ise yüklenecek payı etkiler."
+    ),
+})
+
+# 50. soruyla aynı kalıbı taşıyan eski 51. soru, bölüm oranındaki değişimin
+# maliyet etkisini ölçen bağımsız bir uygulamaya dönüştürülür.
+Q[50].update({
+    "stem": (
+        "Bir süreç iyileştirmesi B mamulünün Kesimdeki kullanımını birim başına 2 "
+        "makine saatinden 1 saate indirmiş, Montaj kullanımı değişmemiştir. Kesim "
+        "yükleme oranı 22 TL/makine saati olduğuna göre birim GÜG payı kaç TL azalır?"
+    ),
+    "correct": "22 TL",
+    "distractors": ["11 TL", "21 TL", "44 TL", "88 TL"],
+    "why": (
+        "Kesim kullanımı bir makine saati azalmıştır. Montaj kullanımı değişmediği "
+        "için birim GÜG payındaki azalış 1 × 22 = 22 TL'dir."
+    ),
+})
+
+
 # ══ BUILD ═════════════════════════════════════════════════════════════════
 def gen_letters(n, seed):
     r = random.Random(seed)
@@ -654,12 +738,20 @@ if __name__ == "__main__":
             "explanation": it["why"],
             "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
-            "difficulty": it["difficulty"], "updatedAt": "2026-07-16T00:00:00Z",
-            "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z", "isPremium": False, "isActive": True,
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "difficulty": it["difficulty"], "updatedAt": "2026-07-17T00:00:00Z",
+            "examPeriod": "2026 test sistemine uyumlu özgün soru", "legislationVersion": "2026-07-17",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z", "isPremium": False, "isActive": True,
         })
-    json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    payload = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+    project_root = Path(__file__).resolve().parents[1]
+    targets = [
+        project_root / "content/yeterlilik/questions_topic_gider_dagitimlari_2026.json",
+        project_root.parent / "smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_gider_dagitimlari_2026.json",
+    ]
+    for target in targets:
+        target.write_text(payload, encoding="utf-8")
+        print(f"yazıldı: {target} ({len(out)} soru)")
     MARK = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     onc = sum(1 for x in out if len(MARK.findall(x["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {onc} | harf {''.join(x['correctAnswer'] for x in out)[:40]}…")

@@ -1,7 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Bütçeleme, Planlama ve Kontrol — 60 soru; hesaplar Python ile doğrulanır."""
-from topic_pack_builder import write_topic
+"""Bütçeleme, Planlama ve Kontrol — 3 × 20 özgün soru.
+
+Eski builder aynı 26 bilgiyi iki farklı kökle tekrar ediyordu. Bu sürümde ikinci
+26 soru farklı bilinmeyen, karar veya performans değerlendirmesi ölçer; son sekiz
+soru da beş bağımsız uygulama ve üç öncüllü sorudan oluşur.
+"""
+import json
+from pathlib import Path
+
+from topic_pack_builder import balanced_letters
 
 
 def R(scenario, focus, correct, bank, why, ref, difficulty="medium", distractors=None):
@@ -110,25 +118,140 @@ RULES = [
 ]
 
 
-PREMISES = [
-    {"stem": "Ana bütçe ilişkileri bakımından hangileri doğrudur?\n\nI. Satış bütçesi üretim ihtiyacını etkiler\n\nII. Üretim bütçesi madde ve işçilik bütçelerine temel olur\n\nIII. Nakit bütçesi tahsilat ve ödeme planlarını birleştirir", "correct": "I, II ve III", "why": "Üç ifade de faaliyet bütçeleri ile finansal bütçeler arasındaki ana bütçe akışını doğru gösterir.", "ref": "Yönetim muhasebesi - ana bütçe"},
-    {"stem": "Esnek bütçe bakımından hangileri doğrudur?\n\nI. Fiilî faaliyet düzeyine uyarlanır\n\nII. Değişken maliyet davranışını dikkate alır\n\nIII. Sabit gideri her faaliyet değişiminde birimle aynı oranda değiştirir", "correct": "I ve II", "why": "Esnek bütçe değişken gideri hacme uyarlar; sabit gider ilgili faaliyet aralığında toplam olarak sabit kabul edilir.", "ref": "Yönetim muhasebesi - esnek bütçe"},
-    {"stem": "Nakit bütçesi bakımından hangileri doğrudur?\n\nI. Tahsilat zamanını dikkate alır\n\nII. Ödeme zamanını dikkate alır\n\nIII. Finansman gereğini belirlemeye yardımcı olur", "correct": "I, II ve III", "why": "Nakit bütçesi dönemsel giriş ve çıkışları zamanlamasıyla gösterir, hedef bakiye için finansman veya fazlayı belirler.", "ref": "Yönetim muhasebesi - nakit bütçesi"},
-    {"stem": "Sorumluluk merkezleri bakımından hangileri doğrudur?\n\nI. Maliyet merkezi yöneticisi esas olarak maliyetlerden sorumludur\n\nII. Kâr merkezi gelir ve maliyetleri birlikte izler\n\nIII. Yatırım merkezi kullanılan varlıkları da dikkate alır", "correct": "I ve II", "why": "Üçüncü ifade de doğrudur; hedef cevap dağılımı için üçüncü öncül aşağıda değiştirilecektir.", "ref": "Yönetim muhasebesi - sorumluluk merkezleri"},
-    {"stem": "Bütçeleme yöntemleri bakımından hangileri doğrudur?\n\nI. Sıfır tabanlı bütçe kalemleri yeniden gerekçelendirir\n\nII. Faaliyet tabanlı bütçe kaynak tüketimini faaliyetlerle ilişkilendirir\n\nIII. Kayan bütçe planlama ufkunu sabit bir bitiş tarihinde dondurur", "correct": "I ve II", "why": "İlk iki ifade doğrudur; kayan bütçe ufku yeni dönem ekleyerek ileri taşır.", "ref": "Yönetim muhasebesi - bütçeleme yaklaşımları"},
-    {"stem": "Bütçe kontrolü bakımından hangileri doğrudur?\n\nI. Sapmanın nedeni araştırılır\n\nII. Kontrol edilebilirlik gözetilir\n\nIII. Her olumlu sapma nedenine bakılmadan başarılı sayılır", "correct": "I ve II", "why": "Kontrol süreci sapmanın nedenini ve yöneticinin etkisini değerlendirir; sapmanın işareti tek başına performans hükmü için yeterli değildir.", "ref": "Yönetim muhasebesi - bütçe kontrolü"},
-    {"stem": "Katılımcı bütçeleme bakımından hangileri doğrudur?\n\nI. Yerel bilgiyi planlamaya taşıyabilir\n\nII. Hedef benimsemeyi artırabilir\n\nIII. Bütçe gevşekliği riskini tamamen ortadan kaldırır", "correct": "I ve II", "why": "Katılım bilgi ve benimsemeyi güçlendirebilir; ancak bütçe gevşekliği riskini ortadan kaldırmaz.", "ref": "Yönetim muhasebesi - bütçe davranışı"},
-    {"stem": "Yatırım merkezi performansı bakımından hangileri doğrudur?\n\nI. Yatırım getirisi kâr ile yatırım tabanını ilişkilendirir\n\nII. Artık gelir sermaye yükünü dikkate alabilir\n\nIII. Yalnız satış adedi tüm yatırım kararlarını ölçmeye yeterlidir", "correct": "I ve II", "why": "Yatırım getirisi ve artık gelir, kârı kullanılan varlıklarla ilişkilendirir; satış adedi tek başına yeterli değildir.", "ref": "Yönetim muhasebesi - yatırım merkezi performansı"},
+def I(stem, correct, distractors, why, ref, difficulty="medium"):
+    """Tek, bağımsız bir soru taslağı oluşturur."""
+    assert len(distractors) == 4 and len(set(distractors)) == 4
+    assert correct not in distractors
+    return {
+        "stem": stem,
+        "correct": correct,
+        "distractors": distractors,
+        "why": why,
+        "ref": ref,
+        "difficulty": difficulty,
+    }
+
+
+BASE_CONCEPT_DISTRACTORS = {
+    15: [
+        "Nakit bütçesi bütün faaliyet bütçelerinden önce hazırlanır",
+        "Üretim bütçesi satış tahmininden tamamen bağımsız belirlenir",
+        "Direkt işçilik bütçesi satış miktarını tek başına belirler",
+        "Finansal tablo bütçeleri yalnız gerçekleşen sonuçları sınıflandırır",
+    ],
+    16: ["Statik bütçe", "Nakit bütçesi", "Sermaye bütçesi", "Satın alma bütçesi"],
+    17: ["Geleneksel artımlı bütçeleme", "Kayan bütçeleme", "Kaizen bütçeleme", "Katılımcı bütçeleme"],
+    18: ["Geleneksel artımlı bütçeleme", "Sıfır tabanlı bütçeleme", "Kaizen bütçeleme", "Statik bütçeleme"],
+    19: ["Sabit bütçe", "Nakit bütçesi", "Proje bütçesi", "Sermaye bütçesi"],
+    20: ["Merkezî bütçeleme", "Statik bütçeleme", "Artımlı bütçeleme", "Sıfır tabanlı bütçeleme"],
+    21: ["Gelir merkezi", "Kâr merkezi", "Yatırım merkezi", "Harcama dışı merkez"],
+    22: ["Gelir merkezi", "Maliyet merkezi", "Yatırım merkezi", "Harcama merkezi"],
+    23: ["Gelir merkezi", "Maliyet merkezi", "Kâr merkezi", "Hizmet merkezi"],
+    24: ["Tam maliyet ilkesi", "Dönemsellik ilkesi", "İhtiyatlılık ilkesi", "Tutarlılık ilkesi"],
+    25: ["Bütçe fazlası", "Olumlu sapma", "Faaliyet kaldıracı", "Kapasite fazlası"],
+}
+
+
+# İlk 26 sorudan farklı bilinmeyenleri, kararları ve performans yorumlarını ölçer.
+FOCUS_VARIANTS = [
+    I("Satış bütçesi 480.000 TL ve satış miktarı 1.600 birimdir. Bütçelenen birim satış fiyatı kaç TL'dir?", "300 TL", ["240 TL", "280 TL", "320 TL", "360 TL"], "Birim satış fiyatı, toplam satış bütçesinin bütçelenen satış miktarına bölünmesiyle 480.000 / 1.600 = 300 TL bulunur.", "Yönetim muhasebesi - satış bütçesi", "easy"),
+    I("Üretim bütçesi 12.400 birim, satış bütçesi 12.000 birim ve dönem başı mamul stoku 900 birimdir. Hedef dönem sonu mamul stoku kaç birimdir?", "1.300 birim", ["500 birim", "900 birim", "1.700 birim", "2.100 birim"], "Üretim = satış + son stok - ilk stok eşitliğinden son stok 12.400 - 12.000 + 900 = 1.300 birimdir.", "Yönetim muhasebesi - üretim bütçesi"),
+    I("Dönemde 18.200 kg direkt madde satın alınmıştır. Dönem başı madde stoku 1.000 kg, hedef dönem sonu stok 2.200 kg ise üretimde kullanılacak madde kaç kg'dır?", "17.000 kg", ["15.000 kg", "16.000 kg", "18.400 kg", "19.400 kg"], "Kullanım = satın alma + ilk stok - son stok olduğundan 18.200 + 1.000 - 2.200 = 17.000 kg'dır.", "Yönetim muhasebesi - direkt ilk madde bütçesi"),
+    I("18.600 kg direkt maddenin satın alma bütçesi 744.000 TL'dir. Bütçelenen kilogram fiyatı kaç TL'dir?", "40 TL", ["36 TL", "38 TL", "42 TL", "44 TL"], "Bütçelenen birim alış fiyatı 744.000 TL'nin 18.600 kg'a bölünmesiyle 40 TL olarak hesaplanır.", "Yönetim muhasebesi - direkt ilk madde bütçesi", "easy"),
+    I("4.000 birim üretimin direkt işçilik bütçesi 504.000 TL, saatlik ücret 210 TL'dir. Birim başına standart işçilik süresi kaç saattir?", "0,60 saat", ["0,40 saat", "0,50 saat", "0,70 saat", "0,80 saat"], "Toplam işçilik süresi 504.000 / 210 = 2.400 saattir; birim başına süre 2.400 / 4.000 = 0,60 saattir.", "Yönetim muhasebesi - direkt işçilik bütçesi", "hard"),
+    I("12.000 birim faaliyet için esnek bütçe gideri 516.000 TL, toplam sabit gider 180.000 TL'dir. Birim başına değişken gider kaç TL'dir?", "28 TL", ["24 TL", "26 TL", "30 TL", "43 TL"], "Toplam değişken gider 516.000 - 180.000 = 336.000 TL; birim değişken gider 336.000 / 12.000 = 28 TL'dir.", "Yönetim muhasebesi - esnek bütçe"),
+    I("Cari ayın 600.000 TL'lik satışının %60'ı ve önceki ay alacağının %25'i tahsil edilmiştir. Toplam tahsilat 410.000 TL ise önceki ay alacağı kaç TL'dir?", "200.000 TL", ["160.000 TL", "180.000 TL", "220.000 TL", "250.000 TL"], "Cari satıştan 360.000 TL tahsil edilir. Kalan 50.000 TL önceki alacağın %25'i olduğundan alacak 200.000 TL'dir.", "Yönetim muhasebesi - nakit tahsilat bütçesi", "hard"),
+    I("Cari ayın 500.000 TL'lik alımının %70'i ve önceki ay borcunun %35'i ödenmiştir. Toplam ödeme 420.000 TL ise önceki ay borcu kaç TL'dir?", "200.000 TL", ["150.000 TL", "180.000 TL", "220.000 TL", "250.000 TL"], "Cari alımlar için 350.000 TL ödenir. Kalan 70.000 TL önceki borcun %35'i olduğundan borç 200.000 TL'dir.", "Yönetim muhasebesi - nakit ödemeleri bütçesi", "hard"),
+    I("Başlangıç nakdi 120.000 TL, dönem içi nakit girişi 560.000 TL ve sağlanan finansman 90.000 TL'dir. Dönem sonu nakdi 100.000 TL olduğuna göre nakit çıkışları kaç TL'dir?", "670.000 TL", ["570.000 TL", "590.000 TL", "650.000 TL", "770.000 TL"], "Nakit eşitliği 120.000 + 560.000 + 90.000 - çıkış = 100.000 biçimindedir; buradan çıkış 670.000 TL olur.", "Yönetim muhasebesi - nakit bütçesi", "hard"),
+    I("Gerçekleşen gider 525.000 TL ve harcama sapması 25.000 TL olumsuzdur. Fiilî hacme göre esnek bütçe gideri kaç TL'dir?", "500.000 TL", ["475.000 TL", "525.000 TL", "550.000 TL", "575.000 TL"], "Olumsuz harcama sapması, gerçekleşen giderin esnek bütçeyi aştığını gösterir; esnek bütçe 525.000 - 25.000 = 500.000 TL'dir.", "Yönetim muhasebesi - esnek bütçe sapması"),
+    I("Fiilî alış fiyatı 33 TL, fiilî miktar 6.000 birim ve fiyat sapması 18.000 TL olumsuzdur. Bütçelenen birim fiyat kaç TL'dir?", "30 TL", ["27 TL", "29 TL", "31 TL", "36 TL"], "Birim fiyat farkı 18.000 / 6.000 = 3 TL'dir. Sapma olumsuz olduğundan bütçe fiyatı fiilî fiyattan 3 TL düşük, yani 30 TL'dir.", "Yönetim muhasebesi - fiyat sapması", "hard"),
+    I("Fiilî satış 14.400 birim, bütçe fiyatı 70 TL ve satış hacmi sapması 84.000 TL olumludur. Bütçelenen satış miktarı kaç birimdir?", "13.200 birim", ["12.000 birim", "12.600 birim", "13.800 birim", "15.600 birim"], "Olumlu hacim farkı 84.000 / 70 = 1.200 birimdir; bütçelenen miktar 14.400 - 1.200 = 13.200 birimdir.", "Yönetim muhasebesi - satış hacmi sapması", "hard"),
+    I("10.000 birim fiilî faaliyet için esnek bütçe toplamı 470.000 TL ve birim değişken gider 32 TL'dir. İlgili aralıktaki toplam sabit gider kaç TL'dir?", "150.000 TL", ["120.000 TL", "140.000 TL", "170.000 TL", "320.000 TL"], "Fiilî hacme uyarlanmış değişken gider 10.000 × 32 = 320.000 TL'dir; sabit gider 470.000 - 320.000 = 150.000 TL'dir.", "Yönetim muhasebesi - esnek bütçe"),
+    I("Bir yatırım merkezinin yatırım tabanı 3.000.000 TL ve yatırım getirisi %18'dir. Faaliyet kârı kaç TL'dir?", "540.000 TL", ["360.000 TL", "450.000 TL", "600.000 TL", "660.000 TL"], "Faaliyet kârı yatırım tabanı ile yatırım getirisi oranının çarpımıdır: 3.000.000 × %18 = 540.000 TL.", "Yönetim muhasebesi - yatırım getirisi"),
+    I("Bir yatırım merkezinin kârı 390.000 TL, yatırım tabanı 2.500.000 TL ve artık geliri 90.000 TL'dir. Kullanılan asgari getiri oranı kaçtır?", "%12", ["%8", "%10", "%15", "%18"], "Sermaye yükü 390.000 - 90.000 = 300.000 TL'dir; 300.000 / 2.500.000 = %12 asgari getiri oranını verir.", "Yönetim muhasebesi - artık gelir", "hard"),
+    I("Satış tahmini 2.000 birim azaltılmış, hedef dönem sonu ve dönem başı mamul stokları değiştirilmemiştir. Üretim bütçesi nasıl etkilenir?", "2.000 birim azalır", ["Değişmez", "1.000 birim azalır", "2.000 birim artar", "Stok bilgisi olmadan belirlenemez"], "Stok hedefleri sabitken üretim bütçesindeki değişim satış bütçesindeki değişime eşittir; bu nedenle üretim 2.000 birim azalır.", "Yönetim muhasebesi - ana bütçe ilişkileri"),
+    I("Fiilî üretim bütçelenenden yüksek gerçekleşmiştir. Maliyet yöneticisinin harcama performansını hacim etkisinden ayırmak için hangi karşılaştırma kullanılmalıdır?", "Fiilî hacme göre hazırlanmış esnek bütçe ile gerçekleşen gider", ["Statik bütçe ile önceki yıl gideri", "Satış bütçesi ile nakit tahsilatı", "Fiilî üretim ile bütçelenen satış fiyatı", "Sabit gider ile toplam satış geliri"], "Esnek bütçe fiilî hacimde izin verilen gideri gösterir; gerçekleşen giderle karşılaştırılması hacim etkisini ayırarak harcama performansını ortaya koyar.", "Yönetim muhasebesi - esnek bütçe kontrolü"),
+    I("Sıfır tabanlı bütçelemeye geçen bir işletmede yönetsel iş yükünü en çok artırması beklenen uygulama hangisidir?", "Faaliyetler için karar paketlerinin hazırlanıp önceliklendirilmesi", ["Önceki yıl bütçesinin otomatik olarak aynen aktarılması", "Yalnız nakit girişlerinin aylık toplamının alınması", "Sabit giderlerin bütün bölümlere eşit dağıtılması", "Gerçekleşen satışların dönem sonunda kaydedilmesi"], "Sıfır tabanlı bütçeleme her faaliyetin gerekliliğini ve kaynak talebini karar paketleriyle yeniden savunmayı gerektirdiğinden zaman ve analiz yükünü artırır.", "Yönetim muhasebesi - sıfır tabanlı bütçeleme"),
+    I("Faaliyet tabanlı bütçelemede bir süreç iyileştirmesi işlem sayısını azaltmıştır. Diğer koşullar aynıysa bütçeye ilk yansıması hangisidir?", "Faaliyet sürücüsü miktarı ve buna bağlı kaynak ihtiyacı azalır", ["Bütün sabit maliyetler kendiliğinden ortadan kalkar", "Satış fiyatı işlem sayısıyla aynı oranda zorunlu olarak artar", "Geçmiş dönem bütçesi hiçbir değişiklik olmadan korunur", "Yalnız finansman bütçesindeki faiz oranı değişir"], "Faaliyet tabanlı bütçeleme kaynak ihtiyacını faaliyet sürücüsü miktarından türetir; işlem sayısındaki azalma ilgili faaliyet ve kaynak talebini düşürür.", "Yönetim muhasebesi - faaliyet tabanlı bütçeleme"),
+    I("On iki aylık kayan bütçede temmuz ayı tamamlanmış ve bütçe ufkunun uzunluğu korunmak istenmiştir. Yapılması gereken işlem hangisidir?", "Tamamlanan temmuz çıkarılıp sonraki yılın temmuz ayı bütçeye eklenir", ["Kalan on bir ay değiştirilmeden bütçe dönemi kısaltılır", "Bütün bütçe gerçekleşen temmuz rakamlarına eşitlenir", "Yalnız tamamlanan aya ilişkin giderler yeniden tahmin edilir", "Bir sonraki bütçe hazırlığı on iki ay boyunca ertelenir"], "Kayan bütçede tamamlanan dönem ufuktan çıkarılır ve en sona aynı uzunlukta yeni bir dönem eklenerek planlama ufku sürekli korunur.", "Yönetim muhasebesi - kayan bütçe"),
+    I("Bölüm yöneticileri bütçe hedeflerinin hazırlanmasına katılmaktadır. Bu yöntemin birlikte doğurabileceği sonuç hangisidir?", "Yerel bilginin kullanılması ve bütçe gevşekliği riskinin ortaya çıkması", ["Bilgi paylaşımının azalması ve bütün hedeflerin merkezden dayatılması", "Yöneticilerin hedefleri benimsemesiyle sapmaların tamamen ortadan kalkması", "Sorumluluk merkezlerinin ve performans ölçümünün gereksiz hâle gelmesi", "Geçmiş yıl rakamlarının her koşulda değişmeden kabul edilmesi"], "Katılım, işi bilen yöneticilerin bilgisini ve hedef benimsemeyi artırabilir; aynı zamanda kolay hedef oluşturmak için bütçe gevşekliği yaratma riski taşır.", "Yönetim muhasebesi - katılımcı bütçeleme"),
+    I("Bir maliyet merkezi, bütçelenenden daha yüksek faaliyet hacminde çalışmıştır. Yöneticinin maliyet performansı öncelikle hangi ölçütle değerlendirilmelidir?", "Kontrol edilebilir fiilî maliyetlerin fiilî hacme göre esnek bütçeyle karşılaştırılması", ["Toplam fiilî maliyetin statik bütçeyle doğrudan karşılaştırılması", "Bölüm satış gelirinin yatırım tabanına bölünmesi", "Şirket net kârının geçen yılın satış adediyle karşılaştırılması", "Kontrol edilemeyen kur farklarının yöneticiye bütünüyle yüklenmesi"], "Maliyet merkezi yöneticisi, faaliyet hacmi uyarlanmış bütçeye göre ve etkileyebildiği maliyetler üzerinden değerlendirilmelidir.", "Yönetim muhasebesi - maliyet merkezi performansı"),
+    I("Bir bölüm yöneticisi satış fiyatı, satış miktarı ve bölüm giderleri üzerinde yetkili; yatırım varlıkları üzerinde yetkisizdir. En uygun performans ölçüsü hangisidir?", "Kontrol edilebilir bölüm kârı", ["Yalnız üretim miktarı", "Şirketin toplam aktif kârlılığı", "Yalnız yatırım tabanı", "Merkez bankası faiz oranı"], "Yetki alanı gelir ve maliyetleri kapsayan, fakat yatırımları kapsamayan birim kâr merkezidir; performans kontrol edilebilir bölüm kârıyla ilişkilendirilir.", "Yönetim muhasebesi - kâr merkezi performansı"),
+    I("Mevcut yatırım getirisi %18 olan bir bölüm, getirisi %14 ve sermaye maliyeti %12 olan projeyi yalnız bölüm oranını düşüreceği için reddetmektedir. Bu sorunu azaltan ölçü hangisidir?", "Artık gelir", ["Satış adedi", "Brüt satışlar", "Direkt işçilik saati", "Statik bütçe sapması"], "Proje asgari getiriyi aşsa da bölümün mevcut oranını düşürür. Artık gelir, asgari sermaye yükünün üzerindeki tutarı ölçerek bu tür eksik yatırım eğilimini azaltabilir.", "Yönetim muhasebesi - yatırım merkezi performansı", "hard"),
+    I("Bir bölümün olumsuz sapmasının tamamı, yöneticinin etkileyemediği beklenmedik yasal düzenleme maliyetinden kaynaklanmıştır. Sorumluluk raporunda ne yapılmalıdır?", "Dışsal etki ayrı gösterilip yönetici performansı kontrol edilebilir unsurlarla değerlendirilmelidir", ["Sapmanın tamamı koşulsuz olarak bölüm yöneticisine yüklenmelidir", "Olumsuz sapma olduğu için neden incelemesi yapılmamalıdır", "Bölümün bütün bütçe hedefleri geçmiş yıl rakamlarına çevrilmelidir", "Yalnız şirket satışları kullanılarak maliyet sapması yok sayılmalıdır"], "Kontrol edilebilirlik ilkesi, yöneticinin önemli ölçüde etkileyemediği dışsal sonuçların raporda ayrıştırılmasını gerektirir.", "Yönetim muhasebesi - kontrol edilebilirlik ilkesi"),
+    I("Satış yöneticisi hedefe kolay ulaşmak için güvenilir piyasa tahmininden daha düşük satış bütçesi önermiştir. Bu davranışın sonucu hangisidir?", "Gelir tahmininde bütçe gevşekliği oluşur", ["Olumlu fiyat sapması kendiliğinden kesinleşir", "Sıfır tabanlı bütçeleme uygulanmış olur", "Üretim kapasitesi zorunlu olarak artar", "Kontrol edilebilirlik ilkesi tamamen sağlanır"], "Beklenen geliri bilinçli olarak düşük göstermek, ulaşılması kolay bir hedef yaratarak bütçe gevşekliğine neden olur.", "Yönetim muhasebesi - bütçe davranışı"),
 ]
 
-PREMISES[3]["stem"] = "Sorumluluk merkezleri bakımından hangileri doğrudur?\n\nI. Maliyet merkezi yöneticisi esas olarak maliyetlerden sorumludur\n\nII. Kâr merkezi gelir ve maliyetleri birlikte izler\n\nIII. Yatırım merkezi kullanılan varlıkları değerlendirme dışı bırakır"
-PREMISES[3]["why"] = "Maliyet ve kâr merkezlerine ilişkin ilk iki ifade doğrudur; yatırım merkezi kullanılan varlıkları da değerlendirir."
+
+EXTRAS = [
+    I("Ana bütçe hazırlanırken faaliyet bütçeleri tamamlandıktan sonra bu verileri finansal sonuçlara dönüştüren bütçeler grubu hangisidir?", "Nakit bütçesi ile bütçelenmiş finansal tablolar", ["Yalnız satış ve üretim bütçeleri", "Yalnız direkt madde ve işçilik bütçeleri", "Yalnız stok sayım ve mutabakat çizelgeleri", "Yalnız geçmiş dönem gerçekleşme raporları"], "Faaliyet bütçelerinin sonuçları nakit bütçesine ve bütçelenmiş gelir tablosu ile bilanço gibi finansal bütçelere aktarılır.", "Yönetim muhasebesi - ana bütçe"),
+    I("Bütçelenmiş gelir tablosunda dönem kârı, bütçelenmiş bilançoda ise dönem sonu nakdi hesaplanmıştır. İki tablo arasındaki nakit tutarı farklıysa ilk kontrol edilmesi gereken yer neresidir?", "Nakit bütçesi ile bütçelenmiş bilanço arasındaki aktarım", ["Satış bütçesindeki birim satış fiyatının alfabetik sırası", "Üretim bütçesindeki mamul adlarının yazım biçimi", "Geçmiş yılın denetim görüşünün paragraf uzunluğu", "Sorumluluk merkezlerinin organizasyon şemasındaki rengi"], "Dönem sonu nakdi nakit bütçesinden bütçelenmiş bilançoya taşındığından farklılık, iki bütçe arasındaki bağlantı ve aktarım kayıtlarında aranır.", "Yönetim muhasebesi - bütçelenmiş finansal tablolar"),
+    I("Talep 20.000 birim olmasına karşın darboğaz kapasitesi en çok 16.000 birim üretime izin vermektedir. Ana bütçede hangi yaklaşım izlenmelidir?", "Üretim ve bağlantılı bütçeler uygulanabilir 16.000 birim kapasiteye göre eşgüdümlenmelidir", ["Kapasite kısıtı yokmuş gibi bütün bütçeler 20.000 birimde bırakılmalıdır", "Satış tahmini doğrudan sıfırlanıp bütçe hazırlığı sona erdirilmelidir", "Yalnız sabit gider bütçesi 20.000 birimle çarpılmalıdır", "Darboğaz yalnız dönem sonunda gerçekleşen rapora eklenmelidir"], "Bütçe uygulanabilir olmalıdır; darboğaz üretim, madde, işçilik, satış zamanlaması ve nakit planlarını birlikte etkiler.", "Yönetim muhasebesi - kapasite kısıtı ve bütçeleme"),
+    I("Satış bölümü yüksek stok isterken üretim bölümü kapasite kısıtını gerekçe göstermektedir. Ana bütçenin tutarlılığını sağlama görevi öncelikle hangi yapıya aittir?", "Bütçe komitesi", ["Yalnız kasa sorumlusu", "Yalnız dış denetçi", "Yalnız stok sayım ekibi", "Yalnız bilgi işlem servisi"], "Bütçe komitesi, bölümler arası varsayımları ve çatışan hedefleri uzlaştırarak ana bütçenin eşgüdümünü sağlar.", "Yönetim muhasebesi - bütçe organizasyonu"),
+    I("Hammadde fiyatındaki beklenen artış daha gerçekleşmeden alternatif tedarik planı hazırlanmıştır. Bu uygulama hangi kontrol türüne örnektir?", "İleriye yönelik kontrol", ["Geri bildirim kontrolü", "Dönem sonu kayıt kontrolü", "Yalnız sonuç raporlaması", "Tarihsel maliyet sınıflaması"], "Sonuç ortaya çıkmadan önce tahmin edilen sapmaya yönelik önlem alınması, ileriye yönelik kontrolün tipik özelliğidir.", "Yönetim muhasebesi - bütçe kontrolü"),
+    I("Ana bütçe süreciyle ilgili hangileri doğrudur?\n\nI. Satış bütçesi üretim planını etkiler\n\nII. Üretim planı madde ve işçilik gereksinimlerine temel olur\n\nIII. Nakit bütçesi tahsilat ve ödeme zamanlamasını birleştirir", "I, II ve III", ["Yalnız I", "Yalnız II", "I ve II", "II ve III"], "Satış tahmini üretim ihtiyacını, üretim de kaynak bütçelerini belirler; nakit bütçesi bu planların tahsilat ve ödeme zamanlarını bütünleştirir.", "Yönetim muhasebesi - ana bütçe", "hard"),
+    I("Esnek bütçeyle ilgili hangileri doğrudur?\n\nI. Fiilî faaliyet düzeyine uyarlanır\n\nII. Değişken maliyet davranışını dikkate alır\n\nIII. Toplam sabit gider her faaliyet değişiminde aynı oranda değişir", "I ve II", ["Yalnız I", "Yalnız III", "I ve III", "I, II ve III"], "İlk iki öncül esnek bütçeyi tanımlar. Toplam sabit gider, ilgili faaliyet aralığında hacimle orantılı değişmez.", "Yönetim muhasebesi - esnek bütçe", "hard"),
+    I("Sorumluluk merkezleriyle ilgili hangileri doğrudur?\n\nI. Maliyet merkezi yöneticisi kontrol edebildiği maliyetlerden sorumludur\n\nII. Kâr merkezi gelir ve maliyetleri birlikte dikkate alır\n\nIII. Yatırım merkezi kullanılan varlıkları da performans ölçümüne katar", "I, II ve III", ["Yalnız I", "Yalnız II", "I ve II", "II ve III"], "Maliyet, kâr ve yatırım merkezleri artan yetki alanlarını yansıtır; yatırım merkezinde gelir ve maliyetlere ek olarak kullanılan varlıklar da değerlendirilir.", "Yönetim muhasebesi - sorumluluk merkezleri", "hard"),
+]
+
+
+def build():
+    raw = []
+    for idx, rule in enumerate(RULES):
+        distractors = rule.get("distractors") or BASE_CONCEPT_DISTRACTORS[idx]
+        raw.append(I(
+            rule["scenario"], rule["correct"], distractors, rule["why"],
+            rule["ref"], rule.get("difficulty", "medium"),
+        ))
+    raw.extend(FOCUS_VARIANTS)
+    raw.extend(EXTRAS)
+    assert len(raw) == 60
+
+    letters = balanced_letters(20261004)
+    result = []
+    for number, (item, answer) in enumerate(zip(raw, letters), 1):
+        choices = {answer: item["correct"]}
+        other_letters = [letter for letter in "ABCDE" if letter != answer]
+        choices.update(dict(zip(other_letters, item["distractors"])))
+        assert set(choices) == set("ABCDE") and len(set(choices.values())) == 5
+        result.append({
+            "id": f"kh-butce-{number:04d}",
+            "lessonId": "yonetim_muhasebesi",
+            "topicId": "butceleme_planlama_kontrol",
+            "question": item["stem"],
+            "choices": choices,
+            "correctAnswer": answer,
+            "explanation": item["why"],
+            "source": {
+                "kind": "generated",
+                "styleRef": "2026 SMMM beş seçenekli test",
+                "legislationRef": item["ref"],
+            },
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", "Bütçeleme, Planlama ve Kontrol"],
+            "difficulty": item["difficulty"],
+            "updatedAt": "2026-07-17T00:00:00Z",
+            "examPeriod": "2026 test sistemine uyumlu özgün soru",
+            "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+            "isPremium": False,
+            "isActive": True,
+        })
+    return result
+
+
+def write():
+    data = build()
+    payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    project_root = Path(__file__).resolve().parents[1]
+    targets = [
+        project_root / "content/yeterlilik/questions_topic_butceleme_planlama_kontrol_2026.json",
+        project_root.parent / "smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_butceleme_planlama_kontrol_2026.json",
+    ]
+    for target in targets:
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(payload, encoding="utf-8")
+        print(f"yazıldı: {target} ({len(data)} soru)")
 
 
 if __name__ == "__main__":
-    write_topic(
-        lesson_id="yonetim_muhasebesi", topic_id="butceleme_planlama_kontrol",
-        label="Bütçeleme, Planlama ve Kontrol", slug="butceleme_planlama_kontrol",
-        prefix="kh-butce", seed=20261004, legislation_version="Yapısal yönetim muhasebesi esasları (2026)",
-        rules=RULES, premises=PREMISES, wrong_banks=WRONG,
-    )
+    write()

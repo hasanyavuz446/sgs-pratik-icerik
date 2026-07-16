@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-"""Yeterlilik KONU HAVUZU — Maliyet Muhasebesi / Maliyet Temelleri (60 soru = 3×20).
-Doğru şık KISA, çeldiriciler UZUN. explanation'da harf atıfı YOK.
-Aritmetik python'da hesaplanır. Yıla bağlı oran/tutar YOK."""
+"""Yeterlilik konu havuzu — Maliyet Muhasebesi / Maliyet Temelleri.
+
+60 soru 3×20 test oluşturur. Doğru ve yanlış seçeneklerin uzunlukları cevap
+ipucu vermeyecek biçimde dengelenir; yıla bağlı oran veya tutar kullanılmaz.
+"""
 import json, random, re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "maliyet_temelleri", "Maliyet Temelleri"
 PREFIX, SEED = "kh-mal-temel", 20260901
-OUT = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_temelleri_2026.json"
 
 Q = []
 def q(stem, correct, distractors, why, ref, difficulty="medium"):
@@ -522,6 +524,53 @@ q("Gider yerleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI
 
 print("TOPLAM:", len(Q))
 
+
+# Eski üretimde bazı doğru seçenekler sistematik biçimde tek en uzun veya tek en
+# kısaydı. Anlamı değiştirmeyen daha doğal karşılıklarla bu cevap ipucu giderilir.
+CORRECT_REWRITES = {
+    3: "Hasılat için tüketilen ve ilgili dönemin sonucuna gider olarak yansıtılan bir maliyet unsurudur",
+    6: "Maliyet muhasebesi çoğunlukla iç, finansal muhasebe ise çoğunlukla dış kullanıcılara bilgi sunar",
+    7: "Maliyeti ayrıca ölçülmek istenen mamul, hizmet, müşteri, bölüm veya faaliyet maliyet nesnesidir",
+    8: "Üretim maliyetleri satışa kadar stokta, satış sonrasında satılan mamul maliyetinde izlenir",
+    13: "İlgili faaliyet aralığında toplamı sabit kalır, üretim arttıkça birim tutarı azalan maliyettir",
+    14: "Toplam tutarı üretim hacmiyle orantılı değişirken birim başına tutarı sabit kalan maliyettir",
+    15: "Sabit taban tutarı yanında faaliyet hacmiyle birlikte değişen bir unsur da içeren maliyettir",
+    16: "Belli faaliyet aralıklarında sabit kalıp aralık aşıldığında yeni bir düzeye sıçrayan maliyettir",
+    18: "Ürün maliyeti satışa kadar stokta izlenirken dönem gideri oluştuğu dönemde sonuca yansıtılır",
+    19: "Maliyetler üretim, araştırma-geliştirme, pazarlama, genel yönetim ve finansman işlevlerine ayrılır",
+    20: "Bir maliyetin kontrol edilebilirliği, ilgili yöneticinin maliyet üzerindeki yetkisine göre belirlenir",
+}
+for number, rewritten in CORRECT_REWRITES.items():
+    Q[number - 1]["correct"] = rewritten
+
+# Öncüllü sorularda aynı doğru kombinasyonunun ezberlenmesini engelle.
+Q[21].update({
+    "stem": (
+        "Aşağıdakilerden hangileri maliyetlerin DAVRANIŞLARINA göre "
+        "sınıflandırılmasında yer alır?\n\nI. Sabit maliyet\n\nII. Değişken maliyet\n\nIII. Karma maliyet"
+    ),
+    "correct": "I, II ve III",
+    "distractors": ["Yalnız I", "Yalnız II", "I ve II", "II ve III"],
+    "why": (
+        "Sabit, değişken ve karma maliyetlerin üçü de faaliyet hacmindeki değişime "
+        "karşı gösterdikleri davranışa göre yapılan sınıflandırmada yer alır."
+    ),
+})
+Q[48].update({
+    "stem": (
+        "Karar analizinde aşağıdakilerden hangileri ilgisiz maliyet sayılır?\n\n"
+        "I. Geçmişte katlanılmış batmış maliyet\n\n"
+        "II. Seçenekler arasında farklılık gösteren gelecekteki maliyet\n\n"
+        "III. Bir seçenek seçildiğinde vazgeçilen fırsat maliyeti"
+    ),
+    "correct": "Yalnız I",
+    "distractors": ["I ve II", "I ve III", "II ve III", "I, II ve III"],
+    "why": (
+        "Batmış maliyet geçmişte oluştuğu ve kararla değişmediği için ilgisizdir. "
+        "Seçeneklere göre değişen gelecek maliyeti ile fırsat maliyeti karar açısından ilgilidir."
+    ),
+})
+
 # ══ BUILD ═════════════════════════════════════════════════════════════════
 def gen_letters(n, seed):
     r = random.Random(seed)
@@ -547,12 +596,20 @@ if __name__ == "__main__":
             "explanation": it["why"],
             "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
-            "difficulty": it["difficulty"], "updatedAt": "2026-07-16T00:00:00Z",
-            "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z", "isPremium": False, "isActive": True,
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "difficulty": it["difficulty"], "updatedAt": "2026-07-17T00:00:00Z",
+            "examPeriod": "2026 test sistemine uyumlu özgün soru", "legislationVersion": "2026-07-17",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z", "isPremium": False, "isActive": True,
         })
-    json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    payload = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+    project_root = Path(__file__).resolve().parents[1]
+    targets = [
+        project_root / "content/yeterlilik/questions_topic_maliyet_temelleri_2026.json",
+        project_root.parent / "smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_temelleri_2026.json",
+    ]
+    for target in targets:
+        target.write_text(payload, encoding="utf-8")
+        print(f"yazıldı: {target} ({len(out)} soru)")
     MARK = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     onc = sum(1 for x in out if len(MARK.findall(x["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {onc} | harf {''.join(x['correctAnswer'] for x in out)[:40]}…")

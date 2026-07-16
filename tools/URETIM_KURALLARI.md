@@ -1,406 +1,465 @@
-# SMMM Yeterlilik — soru üretim kuralları
+# SMMM Yeterlilik — soru üretim ve kalite standardı
 
-Bu belge, SMMM Yeterlilik soru paketleri üretilirken uyulacak kuralları tanımlar.
-Kurallar teorik değil: her biri gerçek bir hatadan öğrenildi ve gerekçesi yazılı.
+Bu belge, SMMM Yeterlilik için üretilecek bölüm ve konu sorularının bağlayıcı
+standardıdır. Amaç yalnızca şemaya uyan JSON üretmek değil; **özgün, güncel,
+müfredata bağlı, tek doğru cevaplı ve gerçek sınavın düşünme biçimine yakın** bir
+soru bankası oluşturmaktır.
 
-**Teslim kapısı:** ürettiğin her paket şu denetimden geçmek zorunda:
+Otomatik denetim alan uzmanı incelemesinin yerini tutmaz. Bir paketin yayıma hazır
+sayılması için aşağıdaki üç kapının da geçilmesi gerekir:
+
+1. Builder ve aritmetik kontrolleri,
+2. Otomatik içerik denetimi,
+3. Cevap, dayanak ve sınav uygunluğu için insan incelemesi.
+
+## 0. Teslim kapısı
+
+Yeni veya değiştirilen paket için:
 
 ```bash
-python3 tools/audit.py content/yeterlilik/<dosyan>.json
+python3 tools/audit.py content/yeterlilik/<dosya>.json
 ```
 
-**FATAL varsa paket yayına gidemez.** UYARI'ları da sıfırlamayı hedefle.
-Denetimi sen çalıştır; "sonra bakılır" diye teslim etme.
+Manifestteki bütün Yeterlilik paketleriyle çapraz kontrol için:
+
+```bash
+python3 tools/audit.py --manifest content/v2/manifest.json
+```
+
+Konu paketi uygulama deposuna da kopyalandıysa:
+
+```bash
+python3 tools/verify_konu.py <dosya_adı>.json
+```
+
+- **FATAL:** Paket yayıma gidemez.
+- **UYARI:** Ya düzeltilir ya da neden güvenli olduğu inceleme notuna yazılır.
+- **BİLGİ:** Otomasyonun doğrulayamadığı, insan kontrolü isteyen içeriktir.
+
+Yalnız `FATAL 0` görmek kalite onayı değildir. Denetim; mevzuat yorumunun doğruluğunu,
+çeldiricilerin alan bilgisi bakımından makullüğünü veya bir sorunun gerçekten özgün
+olduğunu tek başına kanıtlayamaz.
 
 ---
 
-## 0. SINAV STİL PROFİLİ — neyi üreteceğini bu belirler
+## 1. Resmî sınav sözleşmesi ve 2026 biçimi
 
-Diğer tüm kurallar "nasıl üretilir"i anlatır. Bu bölüm **ne üretileceğini** anlatır ve
-tahmine değil, gerçek kitapçığa dayanır.
+14.01.2026 tarihli değişiklik işlenmiş TESMER yönergesine göre SMMM Yeterlilik:
 
-### Sınav 2026/1'de klasikten çoktan seçmeliye geçti
+- sekiz resmî sınav konusundan oluşur,
+- her konu için ayrı **20 soruluk** sınav uygulanır,
+- her soru **A–E olmak üzere beş seçeneklidir**,
+- her dersin süresi **45 dakikadır**.
 
-TESMER'in 14 Ocak 2026 kararıyla sınav tipi kökten değişti:
+Birincil biçim kaynağı:
+[TESMER 2026 Staj ve Sınavlara İlişkin Uygulama Yönergesi](https://www.tesmer.org.tr/wp-content/uploads/2026/01/TESMER-Staj-ve-Sinavlara-Iliskin-Uygulama-Yonergesi-2026.pdf)
 
-| Dönem | Format |
+### 2026/1 kitapçığı nasıl kullanılacak?
+
+2026/1, yeni test biçimindeki ilk ve şu an için tek çıkmış dönemdir. Sekiz kitapçık
+ve 160 soru çok değerlidir; ancak tek dönem olduğu için kesin ve kalıcı yüzde üretmez.
+
+2026/1'de gözlenen belirgin biçim özellikleri şunlardır:
+
+| Resmî ders | 2026/1'de gözlenen belirgin özellik |
 |---|---|
-| 2024/1 – 2025/3 (6 dönem) | **KLASİK** — açık uçlu, soru başına 10 puan |
-| **2026/1** | **TEST** — 5 şıklı A-E çoktan seçmeli |
+| Finansal Muhasebe | 20 sorunun 11'i kayıt/yevmiye ağırlıklı; negatif ve öncüllü kök yok |
+| Finansal Tablolar ve Analizi | Ortak tablo/veri üzerinden yorum ve hesaplama ağırlığı yüksek |
+| Maliyet Muhasebesi | Kavram ile sayısal uygulama birlikte; öncüllü kök yok |
+| Muhasebe Denetimi | 3 negatif kök, öncüllü kök yok |
+| Hukuk | 2 negatif kök, 1 öncüllü soru |
+| Vergi Mevzuatı ve Uygulaması | 3 negatif kök, 1 öncüllü soru |
+| Sermaye Piyasası Mevzuatı | 6 negatif kök, 3 öncüllü soru |
+| Meslek Hukuku | 1 negatif kök, 1 öncüllü soru |
 
-⚠️ **Yeni formatta tek çıkmış dönem var: 2026/1 (8 kitapçık / 160 soru).** Aşağıdaki
-oranlar o tek dönemden ölçüldü → **küçük örneklem**. Nokta değer değil, hedef aralık
-olarak kullan. 2024-2025'in 48 klasik kitapçığı soru BİÇİMİ için kullanılamaz; ama
-hangi konunun ne sıklıkla sorulduğu için değerlidir.
+Bu sayılar yalnız **ders/bölüm havuzunun toplam biçim dengesi** için referanstır.
+Her konu paketi, kendi doğasına göre üretilir. Örneğin Finansal Muhasebe içindeki
+“Temel Kavramlar” paketinin yarısını yapay biçimde yevmiye sorusuna çevirmek veya her
+hukuk alt konusunda aynı sayıda öncüllü soru zorlamak doğru değildir.
 
-Kaynak: `~/Downloads/smmm-yeterlilik-sinavi-2026-1-*.pdf`
+Yeni test dönemleri yayımlandıkça profil yeniden ölçülür. Tek dönemde görülmeyen bir
+soru türü “sınavda hiçbir zaman çıkmaz” şeklinde kalıcı yasak sayılmaz.
 
-### Ders bazında soru tipi dağılımı (2026/1, 160 soru — ölçülmüş)
+### Klasik sınavlardan yararlanma sınırı
 
-| Ders | yevmiye | hesap | negatif kök | öncüllü | kavramsal |
-|---|---|---|---|---|---|
-| **Finansal Muhasebe** | **11/20 (%55)** | 0 | 0 | **0** | 9 (%45) |
-| **Finansal Tablolar ve Analizi** | 0 | **8/20 (%40)** | 0 | **0** | 12 (%60) |
-| **Maliyet Muhasebesi** | 0 | **5/20 (%25)** | 0 | **0** | 15 (%75) |
-| **Muhasebe Denetimi** | 0 | 0 | 3/20 (%15) | **0** | 17 (%85) |
-| **Hukuk** | 0 | 0 | 2/20 (%10) | 1/20 (%5) | 17 (%85) |
-| **Vergi Mevzuatı** | 0 | 3/20 (%15) | 3/20 (%15) | 1/20 (%5) | 13 (%65) |
-| **SPK Mevzuatı** | 0 | 0 | **6/20 (%30)** | 3/20 (%15) | 11 (%55) |
-| **Meslek Hukuku** | 0 | 0 | 1/20 (%5) | 1/20 (%5) | 18 (%90) |
-| **TOPLAM** | 11 (%7) | 16 (%10) | 15 (%9) | **6 (%4)** | 112 (%70) |
-
-**Dersin karakterine uy.** Yevmiye yalnız FM'de, hesap FM dışındaki sayısal derslerde,
-negatif kök ağırlıklı SPK'da, öncüllü yalnız 4 hukuk/mevzuat dersinde.
-
-### 🔴 Mevcut içeriğimiz bu profilden sapıyor (2026-07-16 ölçümü, 1740 soru)
-
-| Ölçüt | GERÇEK | BİZDE | Yapılacak |
-|---|---|---|---|
-| FM'de yevmiye kaydı | **%55** | **%1** | FM'yi yevmiye ağırlıklı yeniden yaz |
-| Öncüllü (genel) | **%4** | **%13** | ~3 kat azalt |
-| FM·Maliyet·Denetim·Fin.Tablolar'da öncüllü | **0** | %13-14 | **tamamen kaldır** |
-| Negatif kök ("hangisi yanlıştır") | **15 soru** | **0** | ekle |
-| Öncül sayısı | **3–6** | hepsi 3 | 4-5-6 öncüllü de üret |
-| Maliyet'te hesap | %25-30 | %26 | ✅ tutuyor, koru |
-
-### Soru tipi 1 — YEVMİYE (yalnız Finansal Muhasebe, ~%55)
-
-İki alt biçim var, ikisini de üret:
-
-**(a) Tablo şıklı** (~4/20). Şıklar yevmiye kaydının kendisi. Gerçek örnek:
-
-> **1.** İşletme, kredili olarak satın aldığı ticari mallarla ilgili 4.000 ₺ + KDV(%20)
-> tutarındaki taşıma gideri için nakliye şirketine satıcı adına nakit ödeme yapmıştır.
-> **Bu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?**
->
-> **A)** `320 SATICILAR 4.800 / 100 KASA 4.800` ✔
-> **B)** `320 SATICILAR 4.000 · 191 İNDİRİLECEK KDV 800 / 100 KASA 4.800`
-> **C)** `153 TİCARİ MALLAR 4.000 · 191 İNDİRİLECEK KDV 800 / 320 SATICILAR 4.800`
-
-Şema `stimulus`/markdown tablo destekliyor; hesap adları **BÜYÜK HARF + kod**, ₺ sembolü.
-
-**(b) Metin şıklı** (~7/20). Şıklar kaydı cümleyle anlatır. Gerçek örnek:
-
-> **14.** İşletme, yaptığı kasa sayımı sonucunda kasada 12.000 ₺ bulunduğunu saptamıştır.
-> Aynı anda Kasa hesabının borç kalanı 13.000 ₺'dir. Aradaki farkın, satıcılara ödendiği
-> hâlde kayıtlara geçirilmeyen bir ödemeden kaynaklandığı saptanmıştır.
-> **Buna göre yapılacak günlük defter kaydıyla ilgili aşağıdakilerden hangisi doğrudur?**
->
-> **A)** Satıcılar hesabına 1.000 ₺ borç kayıt yapılır. ✔
-> **B)** Kasa hesabına 1.000 ₺ borç kayıt yapılır.
-> **C)** Sayım ve Tesellüm Fazlaları hesabına 1.000 ₺ borç kayıt yapılır.
-
-⚠️ (b) biçiminde şıklar **doğal olarak kısa ve benzer boyda** — length-tell kuralına
-(bkz. §3) uymak kolay. Bu yüzden yevmiye sorusu üretmek kaliteyi de yükseltir.
-
-### Soru tipi 2 — NEGATİF KÖK (bizde SIFIR, gerçekte 15 soru)
-
-"aşağıdakilerden hangisi **yanlıştır** / **değildir**" — ayrı bir beceri; adayın hiç
-pratiği olmuyor. Ağırlık: SPK %30, Denetim %15, Vergi %15, Hukuk %10, Meslek H. %5.
-FM · Maliyet · Fin.Tablolar'da **yok**.
-
-⚠️ Negatif kökte **length-tell tersine döner**: doğru şık = YANLIŞ ifade. Kısa-doğru
-kuralını buna göre uygula → *yanlış olan* şık kısa, *doğru olan 4 çeldirici* uzun.
-
-### Soru tipi 3 — HESAP
-
-FM'de **yok** (oradaki sayısal iş yevmiyeye gömülü). Fin.Tablolar %40 (oran/analiz),
-Maliyet %25, Vergi %15. Kalıp: `… kaç ₺'dir?` → şıklar tek satır sayı.
-Gerçek örnekte şıklar tek satıra diziliyor: `A) 18.000  B) 34.000  C) 42.000  D) 42.500  E) 60.000`
+2024–2025 klasik kitapçıkları konu kapsamı, önem sırası ve kullanılan mesleki dil için
+yararlıdır. Beş seçenekli soru biçimi, şık yapısı veya süre baskısı için örnek alınmaz.
+Çıkmış hiçbir soru, şık ya da çözüm metni kopyalanmaz.
 
 ---
 
-## 1. ALTIN KURAL: elle JSON yazma, builder yaz
+## 2. Üretimden önce soru planı hazırla
 
-Soruları doğrudan JSON'a yazma. Bir `build_<konu>.py` üret, JSON'u o üretsin.
+60 soruluk bir konu paketi, sonradan kelimeleri ve sayıları değiştirilmiş 20 sorunun
+üç kopyası değildir. Yazmaya başlamadan önce bir üretim matrisi hazırlanır. Her satırda
+en az şu bilgiler bulunur:
 
-Sebebi mekanik: harf ataması, şık yerleşimi ve çözüm metni **tek geçişte birlikte**
-üretilirse, aralarında tutarsızlık çıkması *imkânsız* hâle gelir. Elle yazılan
-JSON'da bu tutarsızlıklar kaçınılmaz olarak birikiyor.
+- kazanım veya alt kapsam,
+- soru türü: kavram, uygulama, hesap, kayıt, istisna, karşılaştırma vb.,
+- ölçülen bilişsel işlem: bilme, ayırt etme, uygulama, yorumlama,
+- zorluk,
+- doğru cevabın dayanağı,
+- çeldiricilerin temsil ettiği makul hata veya kavram yanılgısı.
 
-### Kopyala-kullan iskelet
+Kurallar:
+
+- Üç testin her biri 20 sorudur; her test kendi içinde kapsam ve zorluk dengesi taşır.
+- Aynı bilgi farklı sorularda ancak **farklı bir zihinsel işlem** ölçüyorsa tekrar
+  kullanılabilir. Eş anlamlı kelime, kişi adı veya sayı değişikliği yeni soru sayılmaz.
+- Aynı kök kalıbı, aynı çözüm ve aynı çeldirici mantığı seri üretimde kullanılmaz.
+- Konu havuzu ile bölüm havuzu birbirinden bağımsızdır. Kullanıcı konu testinde
+  gördüğü soruyu bölüm testinde yeniden görmez.
+- Bölüm sorusu dersin farklı alt konularını karıştırabilir; fakat kendisi özgün olur.
+
+---
+
+## 3. Builder kullan; JSON'u elle yazma
+
+Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve
+JSON bu dosyadan üretilir. Böylece doğru metin, harf ataması, şıklar, çözüm ve kaynak
+tek geçişte birlikte oluşturulur.
+
+### Önerilen iskelet
 
 ```python
 # -*- coding: utf-8 -*-
-"""<Konu adı> — 60 soru. Doğru şık KISA, çeldiriciler UZUN."""
+"""<Konu adı> — 3 test × 20 özgün soru."""
 import json, random
 
 Q = []
-def q(stem, correct, distractors, why, ref, difficulty="medium"):
-    """correct = doğru şıkkın METNİ (harf DEĞİL). distractors = 4 yanlış metin."""
-    assert len(distractors) == 4, stem[:40]
-    Q.append({"stem": stem, "correct": correct, "distractors": distractors,
-              "why": why, "ref": ref, "difficulty": difficulty})
 
-# ── Sorular ────────────────────────────────────────────────────────────────
-q("TMS 2'ye göre aşağıdakilerden hangisi stok tanımına girer?",
-  "Olağan iş akışında satılmak üzere elde tutulan ticari mallar",          # KISA
-  ["İşletmenin yönetim faaliyetlerinde kullanılmak üzere edinilen hizmet binası",  # UZUN
-   "Uzun vadeli değer artışı beklentisiyle yatırım amacıyla satın alınan arsa",
-   "Çalışanlara verilen ve ileride tahsil edilecek olan personel avansları",
-   "İşletmenin ortaklarına karşı yükümlülüğünü gösteren ihraç edilmiş sermaye"],
-  "Olağan faaliyet kapsamında satılmak üzere elde tutulan varlıklar stoktur. "
-  "Yönetim binası ve yatırım amaçlı arsa farklı standartların kapsamındadır.",
-  "TMS 2 Stoklar - stok tanımı", difficulty="easy")
+def q(stem, correct, distractors, why, ref, outcome,
+      qtype="concept", difficulty="medium"):
+    assert len(distractors) == 4
+    assert correct.strip()
+    assert all(d.strip() for d in distractors)
+    assert len({correct.strip(), *(d.strip() for d in distractors)}) == 5
+    Q.append({
+        "stem": stem,
+        "correct": correct,
+        "distractors": distractors,
+        "why": why,
+        "ref": ref,
+        "outcome": outcome,
+        "qtype": qtype,
+        "difficulty": difficulty,
+    })
 
-# ── Harf dizisi: seed'li DENGELİ KARIŞIM (round-robin DEĞİL) ───────────────
-def gen_letters(n_each=12, seed=20260715):
-    """Her harften n_each tane, aynı harf en fazla 2 kez ardışık, örüntüsüz."""
+q(
+    "TMS 2'ye göre aşağıdaki varlıklardan hangisi stok tanımına girer?",
+    "Olağan iş akışında satılmak üzere elde tutulan ticari mallar",
+    [
+        "İdari faaliyetlerde kullanılmak üzere işletmenin edindiği hizmet binası",
+        "Uzun vadeli değer artışı amacıyla elde tutulan yatırım amaçlı arsa",
+        "Çalışana verilmiş ve daha sonra tahsil edilecek personel avansı",
+        "İşletmenin ortaklarına karşı hakkı temsil eden ödenmiş sermaye payı",
+    ],
+    "Olağan faaliyet içinde satılmak üzere elde tutulan varlıklar TMS 2 kapsamında "
+    "stoktur. Diğer seçenekler stok tanımındaki satış, üretim veya tüketim amacını taşımaz.",
+    "TMS 2 Stoklar, par. 6",
+    "Stok tanımındaki üç kullanım amacını ayırt eder.",
+    difficulty="easy",
+)
+
+def gen_letters(n, seed):
+    """Dengeli fakat periyodik olmayan cevap dizisi üretir."""
     r = random.Random(seed)
+    base = list("ABCDE") * (n // 5) + list("ABCDE")[: n % 5]
     while True:
-        seq = list("ABCDE") * n_each
-        r.shuffle(seq)
-        if all(not (seq[i] == seq[i-1] == seq[i-2]) for i in range(2, len(seq))):
-            return seq
+        r.shuffle(base)
+        if all(not (base[i] == base[i-1] == base[i-2] == base[i-3])
+               for i in range(3, len(base))):
+            return base[:]
 
 def build():
-    assert len(Q) == 60, f"60 olmalı, şu an {len(Q)}"
-    letters = gen_letters()
+    assert len(Q) == 60, f"60 soru olmalı; şu an {len(Q)}"
+    letters = gen_letters(len(Q), seed=20260717)  # her pakette farklı seed
     out = []
     for i, item in enumerate(Q):
-        ans = letters[i]
-        choices = {ans: item["correct"]}
-        for k, d in zip([k for k in "ABCDE" if k != ans], item["distractors"]):
-            choices[k] = d
+        answer = letters[i]
+        choices = {answer: item["correct"]}
+        for key, value in zip(
+            [key for key in "ABCDE" if key != answer], item["distractors"]
+        ):
+            choices[key] = value
         out.append({
             "id": f"topic-<kisaltma>-{i+1:04d}",
-            "lessonId": "<curriculum.json'daki lessonId>",
-            "topicId": "<curriculum.json'daki topicId>",
+            "lessonId": "<curriculum.json lessonId>",
+            "topicId": "<curriculum.json topicId>",
             "question": item["stem"],
             "choices": choices,
-            "correctAnswer": ans,
-            "explanation": item["why"],          # ← harfe ATIF YOK (bkz. §4)
-            "source": {"kind": "generated",
-                       "styleRef": "2026 SMMM beş seçenekli test",
-                       "legislationRef": item["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", "<Konu etiketi>"],
+            "correctAnswer": answer,
+            "explanation": item["why"],
+            "source": {
+                "kind": "generated",
+                "styleRef": "2026 SMMM beş seçenekli test",
+                "legislationRef": item["ref"],
+            },
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", "<konu>"],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-15T00:00:00Z",
+            "updatedAt": "2026-07-17T00:00:00Z",
             "examPeriod": "2026 test sistemine uyumlu özgün soru",
-            "legislationVersion": "TFRS 2026 Seti",
-            "sourceUpdatedAt": "2026-07-15T00:00:00Z",
+            "legislationVersion": "<kontrol edilen kaynak ve sürüm>",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z",
             "isPremium": False,
             "isActive": True,
         })
     return out
 
 if __name__ == "__main__":
-    F = "content/yeterlilik/questions_topic_<konu>_2026.json"
-    json.dump(build(), open(F, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    print("yazıldı:", F)
+    path = "content/yeterlilik/questions_topic_<konu>_2026.json"
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(build(), f, ensure_ascii=False, indent=2)
+    print("yazıldı:", path)
 ```
 
-Her yeni konuda `seed` değerini **değiştir** (yoksa tüm dosyalar aynı harf dizisini
-paylaşır → dosyalar arası örüntü doğar).
+Builder da paketle birlikte saklanır. Yeni pakette farklı `seed`, farklı kimlik ön eki
+ve gerçek kaynak kontrol tarihi kullanılır.
 
 ---
 
-## 2. HARF DİZİSİ — FATAL
+## 4. Soru kökü standardı
 
-Doğru cevap harfleri **seed'li dengeli karışım** olmalı. Yani:
+- Soru tek, açık ve tartışmasız bir görev ister.
+- Adayın çözüm için ihtiyaç duyduğu veri kökte veya bağlı uyaranda bulunur.
+- Gereksiz öykü ve yapay uzunluk eklenmez; ancak gerçek sınavdaki uygulama ve yorum
+  düzeyini kaybettirecek kadar çıplak tanım sorularına da yığılma yapılmaz.
+- “Hangisi doğrudur?” gibi jenerik kök kullanılabilir; ayırt edici içerik bu durumda
+  seçeneklerde bulunmalıdır.
+- Olumsuz kökler yalnız dersin doğası ve sınav profili gerektiriyorsa kullanılır.
+  `değildir`, `yanlıştır` veya `beklenmez` ifadesi görünür ve tek anlamlı olmalıdır.
+- Bir soruda iki olumsuzluk, belirsiz zaman ifadesi veya cevabı etkileyen eksik varsayım
+  bulunmaz.
+- Gerçek sınavın mesleki dili kullanılır; ders kitabı tanımını ezberden tamamlatan yapay
+  cümleler yerine bilgi uygulaması ve ayırt etme ölçülür.
 
-- 60 soruda her harften 12 tane (±%25 tolerans)
-- Aynı harf en fazla **2 kez** ardışık
-- **Hiçbir örüntü yok**: rotasyon, sabit adım, kısa periyot
-
-### ❌ Bunu yapma
-
-```
-ABCDEABCDEABCDEABCDE...   ← her harften tam 12 tane, ardışık tekrar yok, AMA FATAL
-```
-
-**Gerçekten üretildi.** 240 sorunun tamamı bu diziydi. "Kusursuz dağılım" gibi
-görünüyor, aslında felaket: 10 soru çözen aday örüntüyü fark eder ve kalan 50 soruyu
-**okumadan** işaretler. Rastgele atmaktan beterdir, çünkü rastgelede %20 tutturur,
-burada %100.
-
-`gen_letters()` kullan. Kendi harf sıranı uydurma.
-
-> Not: eski dedektörümüz "12'şer + ardışık≤2" kontrolü yapıyordu ve bu diziyi
-> **onaylıyordu**. `tools/audit.py` artık rotasyon, periyot ve bigram çeşitliliğine
-> bakıyor. Bu yüzden bu kural artık FATAL.
+Kök uzunluğu tek başına kalite ölçütü değildir. Paket genelinde çok sayıda 1–2 cümlelik
+çıplak tanım oluşması veya resmî sınava kıyasla belirgin biçimde kısa kalınması uyarıdır;
+çözüm, anlamsız kelime eklemek değil daha gerçekçi görev üretmektir.
 
 ---
 
-## 3. ŞIK UZUNLUĞU — en yüksek getirili kural
+## 5. Şıklar ve doğru cevap sızıntısını önleme
 
-**Doğru şıkkı KISA yaz (≤ ~110 karakter). Çeldiricileri UZUN yaz (~90–115 karakter).**
+### Temel ilke
 
-Sebebi: doğru cevap genelde bir tanım olduğu için doğal olarak uzun yazılır;
-çeldiriciler ise "yanlış" diye kısa geçilir. Sonuç: aday şıkları okumadan, sadece
-en uzunu seçerek soruyu çözer. Uygulamanın sahibi bu kusuru bizzat şöyle bildirdi:
-*"iki uzun cümleli şık var, cevap genelde onlardan biri, diğerlerine bakmadan
-çözülüyor."*
+**Doğru cevap kısa ya da uzun olacak diye yazılmaz.** Beş seçenek aynı dilbilgisel
+yapıda, aynı kavramsal düzeyde ve doğal uzunlukta olmalıdır. Doğru cevabın uzunluk
+sırası paket boyunca farklı konumlara dağılmalıdır.
 
-### Kanıt
+- Doğru şık sürekli en kısa veya en uzun olamaz.
+- Olumsuz kökte de yanlış ifade özellikle kısa ya da uzun yapılmaz.
+- Bir seçenek, diğerlerinden belirgin ölçüde ayrıntılı veya kesin yazılarak işaret
+  vermez.
+- Seçenekler aynı kategoriye ait olur: hesap adıyla süre, kurumla yaptırım veya oranla
+  tanım karıştırılmaz.
+- Dilbilgisel uyum, noktalama, birim, büyük/küçük harf ve kesinlik düzeyi cevap hakkında
+  ipucu vermez.
+- “Her zaman”, “yalnızca”, “kesinlikle” gibi mutlak ifadeler ancak içerik gerektiriyorsa
+  kullanılır; yalnız yanlış şıklara serpiştirilmez.
+- Beş seçenek birbirinden farklıdır ve yalnız biri tam doğrudur.
 
-| Yaklaşım | Sonuç |
-|---|---|
-| Doğru şık uzun tanım olarak yazıldı | **42 length-tell** + 3 tur elle düzeltme |
-| Aynı oturumda kısa-doğru / uzun-çeldirici kuralıyla yazıldı | **ilk çalıştırmada 0**, düzeltme yok |
+Denetim paket genelinde doğru cevabın benzersiz en kısa/en uzun olma oranını ve uzunluk
+sırasını ölçer. Hedef, resmî sınavdaki gibi belirgin yönsel kalıp oluşmamasıdır; yapay
+olarak her şıkkı aynı karakter sayısına getirmek değildir.
 
-Yani bu kural sana sonradan saatler kazandırıyor. Builder'ın en başına yaz.
+### Çeldirici standardı
 
-### Ölçüt
+Her çeldirici:
 
-Denetim şunu işaretler: doğru şık tek başına en uzunsa ve 2. en uzunun 1,5 katıysa;
-ya da "2 uzun + 3 kısa" deseni varsa. Pratik hedef: beş şıkkın uzunlukları
-birbirine yakın olsun, doğru şık **ortalarda** kalsın.
+- konuya ait gerçek bir kavram yanılgısını,
+- hesap sorusunda makul bir işlem hatasını,
+- mevzuat sorusunda yakın fakat farklı bir yetki, süre veya şartı,
+- kayıt sorusunda makul bir hesap/taraf/borç-alacak hatasını
 
----
-
-## 4. ÇÖZÜMDE HARF GEÇMESİN
-
-`explanation` içinde **"Doğru cevap A"** gibi bir harf atıfı YAZMA. Çözüm, doğru
-cevabı *içerik olarak* anlatsın.
-
-Sebebi: SGS tarafında bu atıf yazılıyordu ve şıklar sonradan permüte edilince
-46 soruda çözüm harfi cevapla uyumsuz kaldı — sınav uygulamasında bundan daha
-güven kırıcı bir hata yok. Yeterlilik şeması bu atfı hiç kullanmıyor; **bu iyi bir
-kural, koru.** Harften bahsetmeyen çözüm, permütasyondan etkilenmez.
+temsil eder. Rastgele sayı, alakasız kurum ve açıkça saçma ifade kullanılmaz.
 
 ---
 
-## 5. ÖNCÜLLÜ SORULAR (I / II / III …)
+## 6. Cevap harfleri
 
-> 🔴 **BU KURAL 2026-07-17'DE DÜZELTİLDİ.** Eskiden "her 60'lık pakette 6–9 öncüllü
-> soru (~%10–15)" yazıyordu ve bu **yanlıştı** — gerçek sınav ölçülmeden, tahminle
-> yazılmıştı. 2026/1 kitapçıkları ölçüldüğünde gerçek oranın **%4** olduğu ve dört
-> derste **hiç bulunmadığı** görüldü. Bu yanlış kurala uyularak üretilen 228 öncüllü
-> soru (bizde %13) fazladır ve azaltılacaktır.
+- Harfler seed'li ve örüntüsüz karıştırılır.
+- `ABCDEABCDE...`, sabit adım ve kısa periyot kesinlikle yasaktır.
+- Dengeli dağılım amaçlanır; adayın fark edebileceği mekanik rotasyon üretilmez.
+- Aynı harfin dört veya daha fazla kez art arda gelmesinden kaçınılır.
+- Şıkların harfleri sonradan değişse bile çözüm bozulmamalıdır.
 
-**Ders bazında hedef** (2026/1'den ölçülmüş, bkz. §0):
-
-| Ders | 60 soruluk pakette öncüllü |
-|---|---|
-| Finansal Muhasebe · Maliyet · Muhasebe Denetimi · Finansal Tablolar | **0 — hiç üretme** |
-| Hukuk · Vergi · Meslek Hukuku | **~3** (%5) |
-| SPK Mevzuatı | **~9** (%15) |
-
-Kurallar:
-
-- **Öncül sayısı 3 değil, 3–6.** Gerçek sınavda dağılım: 3, 4, 5 ve **6** öncül.
-  Bizim 228 öncüllü sorunun tamamı 3 öncüllü — bu monotonluk. 6 öncüllü gerçek örnek
-  (Hukuk 2026/1, s.18): *I. Kooperatif · II. Kollektif · III. Adi Komandit ·
-  IV. Sermayesi Paylara Bölünmüş Komandit · V. Limited · VI. Anonim →
-  "hangileri sermaye şirketidir?"* → cevap **D) III, IV ve VI**.
-- Kök kalıbı iki türlü: `…hangileri` veya `…hangisi/hangileri doğrudur?` (ikisi de gerçek).
-- Öncülleri `\n\n` ile ayır. **Tek `\n` markdown'da satır başı YAPMAZ**, öncüller
-  tek paragrafa yapışır ve soru okunamaz hâle gelir.
-- Cevabı çeşitlendir: **"hepsi" oranı ~%20–30** olsun. Sık sık bir öncülü kesin-yanlış
-  yap → cevap alt küme olsun ("I ve II" gibi).
-- Bir dönem bu oran %75'e çıkmıştı; aday "şüpheye düşersen hepsini işaretle"
-  stratejisiyle soruları çözüyordu. 152 soru elle düzeltildi.
-- 4+ öncülde şık biçimi: `A) Yalnız I`, `B) I ve III`, `C) II ve IV`, `D) III, IV ve VI`.
-
-```python
-q("Aşağıdakilerden hangileri TMS 2'ye göre stok maliyetine dâhildir?"
-  "\n\nI. Satın alma bedeli\n\nII. Dönüştürme maliyetleri"
-  "\n\nIII. Depolama sonrası genel yönetim giderleri",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Satın alma bedeli ve dönüştürme maliyetleri stok maliyetine girer; "
-  "genel yönetim giderleri stok maliyetine alınmaz, dönem gideridir.",
-  "TMS 2 - stok maliyeti")
-```
+Çözüm metninde “Doğru cevap A'dır” gibi harf atfı kullanılmaz. Çözüm doğru cevabı
+içerik üzerinden açıklar.
 
 ---
 
-## 6. YILA BAĞLI ORAN / TUTAR
+## 7. Öncüllü ve olumsuz köklü sorular
 
-Amaç: soru bir oran değişince **bayatlamasın**.
+Öncüllü soru sırf çeşitlilik kotası doldurmak için üretilmez. Konu birden fazla hükmü
+birlikte sınıflandırmayı gerektiriyorsa kullanılır.
 
-| Durum | Karar |
-|---|---|
-| Oran soru **kökünde veriliyor** — "5.000 TL **+ %20 KDV**" | ✅ **GÜVENLİ**. Ölçülen şey kayıt (191 mi 391 mi), oran değil. Oran değişse soru kendi içinde tutarlı kalır. |
-| Senaryo tutarı — "Maliyeti 210.000 TL, ömrü 6 yıl" | ✅ serbest |
-| Oran **şıkta**, yani cevabın kendisi — "KDV oranı kaçtır? A) %18 B) %20" | ❌ **İHLAL** |
-| Kök oranı vermiyor, bilinmesini bekliyor — "genel oranda KDV'ye tabi" | ❌ **İHLAL** |
-| İstisna haddi, gelir vergisi dilimi, yeniden değerleme oranı, asgari ücret | ❌ **İHLAL** (her yıl değişir) |
-| Kanunda sabit yapısal sayı — 50 ortak sınırı, YK 3 yıl, çekte 10 gün ibraz | ✅ serbest |
+- Öncül sayısı doğal gereksinime göre 3–6 olabilir.
+- Öncüller `\n\n` ile ayrılır.
+- Doğru kombinasyon aynı kalıba yığılmaz; “hepsi” için yapay sabit yüzde konmaz.
+- Kombinasyon seçenekleri çakışmaz ve doğru küme seçeneklerde tam olarak bulunur.
+- Bir öncül yalnız dilinden veya uzunluğundan yanlış olduğu anlaşılan tuzak olmaz.
 
-Kısacası: **oranı sen ver, adaydan isteme.**
+2026/1'de öncüllü sorular hukuk/mevzuat derslerinde görülmüştür. Bu gözlem ders
+havuzu için referanstır; her hukuk alt konusuna öncüllü soru yerleştirme zorunluluğu
+değildir.
 
----
-
-## 7. ARİTMETİĞİ PYTHON İLE DOĞRULA
-
-Hesap içeren her soruda sayıları builder içinde hesapla; kafadan yazma.
-
-```python
-maliyet, kalinti, omur = 210_000, 30_000, 6
-yillik = (maliyet - kalinti) // omur          # 30.000
-q(f"Maliyeti {maliyet:,} TL, kalıntı değeri {kalinti:,} TL ve yararlı ömrü {omur} yıl "
-  f"olan varlığın doğrusal yöntemle yıllık amortismanı kaç TL'dir?".replace(",", "."),
-  f"{yillik:,} TL".replace(",", "."),
-  [...],
-  f"Amortismana tabi tutar {maliyet-kalinti:,} TL'dir; {omur} yıla bölününce "
-  f"yıllık {yillik:,} TL bulunur.".replace(",", "."),
-  "TMS 16 - doğrusal amortisman")
-```
-
-Çeldiriciler **makul hata sonuçları** olsun (kalıntı değeri düşmeyi unutmak,
-yanlış ömre bölmek gibi) — rastgele sayı değil.
+Olumsuz kökteki doğru seçenek yanlış ifadeyi taşır; fakat diğer dört seçenekten
+uzunluk, ayrıntı veya dil bakımından ayrılmaz.
 
 ---
 
-## 8. TELİF — sorular ÖZGÜN olacak
+## 8. Hesap, tablo ve yevmiye soruları
 
-TESMER soru kitapçığından, çıkmış sınavdan veya üçüncü taraf soru bankasından
-metin, şık veya çözüm **kopyalama**. Gerçek sınav yalnız *biçim, süre ve konu
-dağılımı* için referanstır. Gerçek kişi/şirket adı kullanma, kurgusal ad ve veri üret.
+### Hesap
 
-`source.kind` daima `"generated"` olacak (denetim başka değer kabul etmez).
+- Bütün ara sonuçlar builder içinde hesaplanır.
+- Para ve oran hesaplarında gerektiğinde `Decimal` kullanılır; kayan nokta sonucu veya
+  bilinçsiz `//` yuvarlaması kullanılmaz.
+- Yuvarlama yöntemi kökte belirtilir veya mevzuat/standarttaki yönteme dayanır.
+- Doğru sonuç tek olmalı; aynı değeri veren iki seçenek bulunmamalıdır.
+- Çeldiriciler belgelenebilir hata sonuçlarıdır.
+
+### Tablo ve ortak uyaran
+
+- Tablo, grafik veya ortak finansal veri okunabilir ve tek başına yeterlidir.
+- Birim, dönem, para birimi ve varsa yuvarlama açıklanır.
+- Aynı uyaran birden çok soruda kullanılıyorsa sorular farklı bilgi veya işlem ölçer.
+
+### Yevmiye
+
+- Hesap kodu ve adı birlikte kullanılıyorsa Tekdüzen Hesap Planına uygun olur.
+- Borç ve alacak toplamları builder assertion'ı ile eşitlenir.
+- KDV ve diğer oranlar ya senaryoda verilir ya da açık dönemli mevzuat sorusudur.
+- Metin şıklı ve kayıt/tablo şıklı biçimler ders havuzunda dengeli kullanılır.
 
 ---
 
-## 9. ŞEMA VE MÜFREDAT BAĞI
+## 9. Mevzuat ve standart güncelliği
 
-- `lessonId` ve `topicId` **`smmm_sgs_pratik/assets/content/curriculum.json`'da
-  tanımlı olmak zorunda.** Uydurma; yoksa denetim `unknown_lesson` verir.
-- `tags` içinde **`Demo Soru`** zorunlu (validator arıyor).
-- `2026 Formatı` etiketi varsa `examPeriod` ve `sourceUpdatedAt` dolu olmalı.
-- Havuz ayrımı — bir soru ikisinden **yalnız birine** ait:
-  - `Konu Havuzu` → konu testlerinde çıkar
-  - etiketsiz → bölüm havuzu, ders testlerinde çıkar
-  - Aynı soru iki test türünde görünmemeli.
-- `id` ve soru kökü **tekrarsız** olacak (paketler arası da).
-- Beş şık A–E, hepsi dolu, `correctAnswer` şıklardan biri.
+`sourceUpdatedAt` alanına tarih yazmak, kaynak kontrolü yapıldığı anlamına gelmez.
+Her sorunun doğru cevabı üretim tarihinde birincil kaynaktan doğrulanır.
 
-Yeni paketi manifest'e ekle:
+Kaynak önceliği:
+
+1. Resmî Gazete ve Mevzuat Bilgi Sistemi,
+2. KGK'nın yürürlükteki TMS/TFRS ve denetim standartları,
+3. SPK, TESMER, TÜRMOB ve ilgili kamu kurumlarının resmî metinleri,
+4. Yalnız açıklama için ikincil kaynak; doğru cevabın tek dayanağı olamaz.
+
+`source.legislationRef` genel başlık değil, mümkün olduğunca madde/paragraf düzeyinde
+olur: `TMS 2 par. 16`, `6102 sayılı TTK m. 124` gibi. `legislationVersion` kontrol
+edilen seti veya yürürlük tarihini, `sourceUpdatedAt` ise **gerçek kontrol tarihini**
+gösterir.
+
+### Değişken oran, tutar ve süreler
+
+- Hesaplama becerisi ölçülüyorsa değişken oran kökte verilir.
+- Güncel oranın/haddin kendisi müfredat gereği ölçülüyorsa soru açık dönem taşır:
+  “2026 takvim yılında...” gibi. Dayanak ve kontrol tarihi zorunludur.
+- “Cari oran”, “yürürlükteki tutar” veya “bugünkü had” gibi dönem belirtmeyen kökler
+  kullanılmaz.
+- İstisna tutarı, vergi tarifesi, asgari ücret ve yeniden değerleme oranı gibi sorular
+  güncellik listesine eklenir ve mevzuat değişikliğinde yeniden doğrulanır.
+- Kanunda sabit görünen sayılar da madde değişikliğine karşı kaynakla doğrulanır.
+
+---
+
+## 10. Çözüm standardı
+
+Çözüm:
+
+- doğru ilke, işlem veya maddeyi açıklar,
+- hesap sorusunda ara adımları gösterir,
+- gerekli olduğunda yakın çeldiricinin neden yanlış olduğunu ayırt eder,
+- soru ve şıklardaki bilgiyi aynen tekrar etmekle yetinmez,
+- cevap harfi içermez,
+- başka bir soruyla aynı şablon çözümün sayı/kelime değiştirilmiş kopyası olmaz,
+- `Demo açıklama`, yer tutucu, yarım cümle veya içi doldurulmamış şablon içermez.
+
+Çözümün uzunluğu konuya göre değişebilir; fakat adayın neden doğru yaptığını öğrenmesini
+sağlayacak kadar gerekçeli olmalıdır.
+
+---
+
+## 11. Özgünlük ve telif
+
+- TESMER kitapçığından veya üçüncü taraf soru bankasından kök, seçenek ya da çözüm
+  kopyalanmaz.
+- Çıkmış sorular yalnız biçim, kapsam ve bilişsel düzey analizi için kullanılır.
+- Kurgusal kişi/işletme ve özgün sayılar kullanılır.
+- Kaynak metindeki bir cümleyi seçenek yapmak zorunluysa kısa ve gerekli kısmı yeniden
+  ifade edilir; soru bütünü özgün bir ölçme görevi olur.
+- `source.kind` daima `generated` olur. Bu etiket tek başına özgünlük kanıtı değildir.
+
+Otomatik denetim birebir, şablon ve yüksek benzerlikli tekrarları arar. Telif ve gerçek
+anlamsal özgünlük ayrıca insan tarafından kontrol edilir.
+
+---
+
+## 12. Şema, etiket ve havuz ayrımı
+
+- `lessonId` ve `topicId`, uygulamadaki `assets/content/curriculum.json` ile eşleşir.
+- Beş seçenek A–E eksiksizdir; seçenek metinleri benzersizdir.
+- `correctAnswer` mevcut bir seçenektir.
+- `id`, soru kökü ve soru fikri paketler arasında da benzersizdir.
+- Yeni üretimde soru veya çözüm metnine **Demo Soru / Demo açıklama** yazılmaz.
+- Yeni üretimde `Demo Soru` etiketi kullanılmaz; bunun yerine `Özgün Soru` kullanılır.
+- Konu sorusu `Konu Havuzu` etiketi taşır.
+- Bölüm sorusu `Konu Havuzu` etiketi taşımaz; isterse `Bölüm Havuzu` etiketi taşır.
+- Bir soru iki havuza birden ait olamaz.
+- `2026 Formatı` varsa `examPeriod` ve `sourceUpdatedAt` doludur.
+
+Yeni paket iki manifestte de kayıtlı olur ve sürümler aynı artırılır:
 
 ```json
 {"file": "yeterlilik/questions_topic_<konu>_2026.json", "programIds": ["yeterlilik"]}
 ```
 
-ve `content/v2/manifest.json` içindeki `version` değerini **artır**.
+---
+
+## 13. İnsan incelemesi
+
+Yayımdan önce paketteki **her soru** en az bir kez içerik açısından okunur. Mevzuat,
+standart, yevmiye ve hesap soruları ayrıca dayanağı üzerinden doğrulanır.
+
+İnceleyen kişi şunları onaylar:
+
+- yalnız bir doğru cevap bulunduğunu,
+- çeldiricilerin makul fakat yanlış olduğunu,
+- dayanağın yürürlükte ve soruyla ilgili olduğunu,
+- çözüm ile doğru cevabın uyumlu olduğunu,
+- sorunun atandığı konu sınırında kaldığını,
+- çıkmış soru veya başka paketle anlam bakımından tekrar olmadığını,
+- zorluk ve dilin gerçek sınava uygun olduğunu.
 
 ---
 
-## 10. TESLİM ÖNCESİ KONTROL LİSTESİ
+## 14. Teslim kontrol listesi
 
-**Stil (§0 — sınav sadakati):**
+### İçerik
 
-- [ ] Dersin soru tipi dağılımı §0'daki tabloya uyuyor
-- [ ] **Finansal Muhasebe ise:** soruların ~yarısı yevmiye (tablo + metin şıklı karışık)
-- [ ] **FM · Maliyet · Denetim · Fin.Tablolar ise:** öncüllü soru **SIFIR**
-- [ ] **Hukuk/Vergi/Meslek ~3, SPK ~9** öncüllü; öncül sayıları 3-6 arasında değişiyor
-- [ ] Negatif kök ("hangisi yanlıştır/değildir") dersin oranınca var — ve o sorularda
-      length-tell TERS uygulandı (yanlış olan şık kısa)
+- [ ] 3 test × 20 soru ve üretim matrisi tamamlandı
+- [ ] Her soru özgün bir görev veya farklı bilişsel işlem ölçüyor
+- [ ] Bölüm ve konu havuzu kesişmiyor
+- [ ] Tek doğru cevap ve dört makul çeldirici var
+- [ ] Doğru cevap uzunluk/dil ipucuyla ayırt edilemiyor
+- [ ] Çözümler özgün, gerekçeli ve harf atıfsız
+- [ ] Hesaplar builder ile doğrulandı
+- [ ] Mevzuat/standart dayanakları birincil kaynaktan kontrol edildi
+- [ ] Kullanıcıya görünen metinde demo veya şablon artığı yok
 
-**Mekanik:**
+### Teknik
 
-- [ ] `python3 tools/audit.py content/yeterlilik/<dosya>.json` → **FATAL 0**
-- [ ] UYARI'lar sıfır ya da gerekçeli
-- [ ] Harf dizisi `gen_letters()` ile üretildi, seed bu konuya özel
-- [ ] Doğru şıklar kısa, çeldiriciler uzun (negatif kökte tersi)
-- [ ] "hepsi" oranı ~%20–30
-- [ ] `explanation` içinde harf atıfı yok
-- [ ] Hesap soruları python ile doğrulandı, çeldiriciler makul hata sonuçları
-- [ ] `lessonId`/`topicId` curriculum.json'da mevcut
-- [ ] manifest'e eklendi + `version` artırıldı
-- [ ] Builder (`build_<konu>.py`) da commit edildi — sonraki konu onu kopyalayacak
+- [ ] `audit.py <paket>` → FATAL 0
+- [ ] `audit.py --manifest ...` → yeni çapraz tekrar yok
+- [ ] Uyarılar düzeltildi veya inceleme notunda gerekçelendirildi
+- [ ] `lessonId`/`topicId` müfredatta mevcut
+- [ ] `Konu Havuzu` / bölüm havuzu ayrımı doğru
+- [ ] Builder, JSON ve iki manifest birlikte güncellendi
+- [ ] OTA ve uygulama kopyaları özdeş
+- [ ] İnsan incelemesi tamamlandı
 
-> Bu kuralların hiçbiri stil tercihi değil. Her biri, yayına gitmiş ya da gitmek
-> üzere olan gerçek bir kusurdan çıkarıldı. Uymadığın bir kural varsa gerekçesini
-> yaz — sessizce atlama.
+Bu standarttaki sayısal eşikler, adayın fark edebileceği mekanik kusurları yakalamak
+içindir. Eşiği geçmek amacıyla anlamsız kelime eklemek, soruyu yapay biçimde uzatmak
+veya aynı fikri yüzeysel olarak yeniden yazmak ayrıca kalite ihlalidir.
