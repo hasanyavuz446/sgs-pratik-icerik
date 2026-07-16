@@ -2,68 +2,69 @@
   {
     "id": "demo-finansal-021",
     "lessonId": "finansal_muhasebe",
-    "topicId": "temel_kavramlar",
-    "question": "Varlıkları 420.000 TL, borçları 170.000 TL olan işletmenin temel denklemine ilişkin ifadeleri değerlendiriniz.\n\nI. Öz kaynak 250.000 TL'dir.\n\nII. Temel denklem Varlıklar = Borçlar + Öz Kaynaklar biçimindedir.\n\nIII. 420.000 = 170.000 + 250.000 eşitliği sağlanır.\n\nBuna göre hangileri doğrudur?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "Varlıkları 420.000 TL, borçları 170.000 TL olan işletmenin özkaynakları kaç TL'dir?",
     "choices": {
-      "A": "I ve III",
-      "B": "Yalnız II",
-      "C": "I ve II",
-      "D": "I, II ve III",
-      "E": "Yalnız I"
+      "A": "170.000 TL",
+      "B": "420.000 TL",
+      "C": "590.000 TL",
+      "D": "714.000 TL",
+      "E": "250.000 TL"
     },
-    "correctAnswer": "D",
-    "explanation": "Öz kaynak 420.000 - 170.000 = 250.000 TL'dir ve temel muhasebe denklemi dengededir.",
+    "correctAnswer": "E",
+    "explanation": "Temel muhasebe denklemi Varlıklar = Borçlar + Özkaynaklar biçimindedir. Özkaynaklar 420.000 − 170.000 = 250.000 TL'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "Muhasebe temel denklemi"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "Finansal Raporlamaya İlişkin Kavramsal Çerçeve, varlık-borç-özkaynak tanımları"
     },
+    "topicId": "temel_kavramlar",
+    "difficulty": "easy",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "hesaplama"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   },
   {
     "id": "demo-finansal-022",
     "lessonId": "finansal_muhasebe",
-    "topicId": "temel_kavramlar",
-    "question": "Aralık ayında tamamlanan bir danışmanlık hizmetinin bedeli ocak ayında tahsil edilecektir. Tahakkuk esasına göre gelir hangi dönemde kaydedilir?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "İşletme aralık ayında tamamladığı 45.000 TL tutarındaki danışmanlık hizmetini henüz faturalandırmamış ve tahsil etmemiştir. 31 Aralık tahakkuk kaydı hangisidir?",
     "choices": {
-      "A": "Müşteri istediğinde",
-      "B": "Hizmetin tamamlandığı aralık ayında",
-      "C": "Sözleşme imzalandığında her durumda",
-      "D": "Bir sonraki yıl sonunda",
-      "E": "Nakit tahsil edildiğinde"
+      "A": "```text\n102 BANKALAR              45.000\n    600 YURT İÇİ SATIŞLAR         45.000\n```",
+      "B": "```text\n181 GELİR TAHAKKUKLARI     45.000\n    600 YURT İÇİ SATIŞLAR         45.000\n```",
+      "C": "```text\n600 YURT İÇİ SATIŞLAR     45.000\n    181 GELİR TAHAKKUKLARI        45.000\n```",
+      "D": "```text\n120 ALICILAR              45.000\n    340 ALINAN SİPARİŞ AVANSLARI  45.000\n```",
+      "E": "```text\n180 GELECEK AYLARA AİT GİD. 45.000\n    102 BANKALAR                  45.000\n```"
     },
     "correctAnswer": "B",
-    "explanation": "Tahakkuk esası gelirin nakit hareketinden bağımsız olarak kazanıldığı, yani hizmetin yerine getirildiği dönemde kaydedilmesini gerektirir.",
+    "explanation": "Hizmet aralık ayında tamamlandığı için gelir tahakkuk etmiştir. Henüz fatura ve tahsilat bulunmadığından 181 Gelir Tahakkukları borç, 600 Yurt İçi Satışlar alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "Finansal Raporlamaya İlişkin Kavramsal Çerçeve"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "Tekdüzen Hesap Planı: 181 ve 600 hesapları; tahakkuk esası"
     },
+    "topicId": "donem_sonu_islemleri",
+    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "tahakkuk"
+      "kayıt"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   },
   {
     "id": "demo-finansal-023",
@@ -81,20 +82,20 @@
     "explanation": "Kullanıcı kararlarını etkileyebilecek eksiklik veya yanlışlık önemlidir; önemlilik işletmeye özgü nicel ve nitel değerlendirme gerektirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 1 ve Kavramsal Çerçeve - Önemlilik"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "önemlilik"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -104,30 +105,31 @@
     "topicId": "muhasebe_kayitlari",
     "question": "İşletme üretimde kullanmak üzere 80.000 TL tutarında makineyi banka hesabından ödeyerek satın almıştır. KDV dikkate alınmayacaktır. Temel kayıt hangisidir?",
     "choices": {
-      "A": "Banka borç, Tesis Makine alacak",
-      "B": "Tesis Makine ve Cihazlar borç, Bankalar alacak",
-      "C": "Bankalar borç, Sermaye alacak",
-      "D": "Genel Yönetim Gideri borç, Banka alacak",
-      "E": "Ticari Mallar borç, Banka alacak"
+      "A": "Bankalar borç, Tesis Makine ve Cihazlar alacak",
+      "B": "Genel Yönetim Giderleri borç, Bankalar alacak",
+      "C": "Ticari Mallar borç, Bankalar alacak",
+      "D": "Tesis Makine ve Cihazlar borç, Bankalar alacak",
+      "E": "Tesis Makine ve Cihazlar borç, Sermaye alacak"
     },
-    "correctAnswer": "B",
+    "correctAnswer": "D",
     "explanation": "Bir dönemden uzun kullanılacak üretim makinesi maddi duran varlıktır; ilgili varlık hesabı borçlandırılır, banka çıkışı alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tekdüzen Hesap Planı ve TMS 16"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
       "kayıt"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -139,28 +141,29 @@
     "choices": {
       "A": "Sermaye borç, Bankalar alacak",
       "B": "Kasa borç, Satışlar alacak",
-      "C": "Bankalar borç, Sermaye alacak",
-      "D": "Bankalar borç, Diğer Gelirler alacak",
-      "E": "Bankalar borç, Ticari Borçlar alacak"
+      "C": "Bankalar borç, Diğer Gelirler alacak",
+      "D": "Bankalar borç, Ticari Borçlar alacak",
+      "E": "Bankalar borç, Sermaye alacak"
     },
-    "correctAnswer": "C",
+    "correctAnswer": "E",
     "explanation": "İşletmeye konulan değer banka varlığını ve öz kaynak niteliğindeki sermayeyi aynı tutarda artırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "sermaye"
+      "kayıt"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -170,30 +173,31 @@
     "topicId": "muhasebe_kayitlari",
     "question": "Satıcıya olan 24.000 TL ticari borç banka hesabından ödenmiştir. Doğru kayıt hangisidir?",
     "choices": {
-      "A": "Bankalar borç 24.000; Satıcılar alacak 24.000",
-      "B": "Ticari Mallar borç 24.000; Bankalar alacak 24.000",
-      "C": "Satıcılar borç 24.000; Kasa alacak 24.000",
-      "D": "Bankalar borç 24.000; Satışlar alacak 24.000",
-      "E": "Satıcılar borç 24.000; Bankalar alacak 24.000"
+      "A": "Satıcılar borç 24.000; Bankalar alacak 24.000",
+      "B": "Bankalar borç 24.000; Satıcılar alacak 24.000",
+      "C": "Ticari Mallar borç 24.000; Bankalar alacak 24.000",
+      "D": "Satıcılar borç 24.000; Kasa alacak 24.000",
+      "E": "Bankalar borç 24.000; Satışlar alacak 24.000"
     },
-    "correctAnswer": "E",
+    "correctAnswer": "A",
     "explanation": "Borcun ödenmesi Satıcılar hesabını borçlandırarak borcu azaltır; banka varlığındaki azalış Bankalar hesabının alacağına kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "ticari borç"
+      "kayıt"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -205,28 +209,29 @@
     "choices": {
       "A": "Kasa borç, Ticari Mallar alacak",
       "B": "Ticari Mallar borç, Kasa alacak",
-      "C": "Satıştan İadeler borç, Alıcılar alacak",
-      "D": "Satıcılar borç, Ticari Mallar alacak",
+      "C": "Satıcılar borç, Ticari Mallar alacak",
+      "D": "Satıştan İadeler borç, Alıcılar alacak",
       "E": "Ticari Mallar borç, Satıcılar alacak"
     },
-    "correctAnswer": "D",
+    "correctAnswer": "C",
     "explanation": "Alış iadesi ticari malı azaltır ve satıcıya olan borcu ortadan kaldırır; Satıcılar borç, Ticari Mallar alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "alış iadesi"
+      "kayıt"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -238,28 +243,29 @@
     "choices": {
       "A": "Finansman Gideri borç, Bankalar alacak",
       "B": "Bankalar borç, Satışlar alacak",
-      "C": "Banka Kredileri borç, Bankalar alacak",
-      "D": "Kasa borç, Sermaye alacak",
-      "E": "Bankalar borç, Banka Kredileri alacak"
+      "C": "Bankalar borç, Banka Kredileri alacak",
+      "D": "Banka Kredileri borç, Bankalar alacak",
+      "E": "Kasa borç, Sermaye alacak"
     },
-    "correctAnswer": "E",
+    "correctAnswer": "C",
     "explanation": "Krediyle banka varlığı ve finansal borç birlikte artar; Bankalar borç, kısa vadeli Banka Kredileri alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "kredi"
+      "kayıt"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -269,65 +275,67 @@
     "topicId": "donem_sonu_islemleri",
     "question": "Üretimde kullanılan makine için 18.000 TL dönem amortismanı hesaplanmıştır. Doğru kayıt mantığı hangisidir?",
     "choices": {
-      "A": "Üretimle ilgili gider hesabı borç, Birikmiş Amortisman alacak",
-      "B": "Makine borç, Bankalar alacak",
+      "A": "Makine borç, Bankalar alacak",
+      "B": "Üretimle ilgili gider hesabı borç, Birikmiş Amortisman alacak",
       "C": "Birikmiş Amortisman borç, Genel Yönetim Gideri alacak",
       "D": "Bankalar borç, Amortisman Geliri alacak",
       "E": "Birikmiş Amortisman borç, Makine alacak"
     },
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Amortisman kullanılan fonksiyona ait gideri artırır; varlığın birikmiş amortismanı düzenleyici hesapta alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 16 ve Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "amortisman"
+      "kayıt"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
   {
     "id": "demo-finansal-030",
     "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Gelecek ay verilecek hizmet için bu ay tahsil edilen 40.000 TL'ye ilişkin ifadeleri değerlendiriniz.\n\nI. Hizmet edimi henüz yerine getirilmemiştir.\n\nII. Tahsilat, alınan avans niteliğinde bir yükümlülük doğurur.\n\nIII. Tutar tahsil edildiği anda koşulsuz olarak hasılat kaydedilir.\n\nBuna göre hangileri doğrudur?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "İşletme gelecek ay teslim edeceği mallar için müşteriden banka yoluyla 40.000 TL avans almıştır. Tahsilat tarihinde yapılacak kayıt hangisidir?",
     "choices": {
-      "A": "I ve II",
-      "B": "Yalnız I",
-      "C": "I ve III",
-      "D": "Yalnız II",
-      "E": "I, II ve III"
+      "A": "```text\n102 BANKALAR              40.000\n    340 ALINAN SİPARİŞ AVANSLARI  40.000\n```",
+      "B": "```text\n102 BANKALAR              40.000\n    600 YURT İÇİ SATIŞLAR         40.000\n```",
+      "C": "```text\n340 ALINAN SİPARİŞ AVANSLARI 40.000\n    102 BANKALAR                  40.000\n```",
+      "D": "```text\n120 ALICILAR              40.000\n    600 YURT İÇİ SATIŞLAR         40.000\n```",
+      "E": "```text\n153 TİCARİ MALLAR         40.000\n    102 BANKALAR                  40.000\n```"
     },
     "correctAnswer": "A",
-    "explanation": "Hizmet henüz verilmediği için gelir kazanılmamıştır; tutar hizmet sunulana kadar müşteriye karşı yükümlülüktür.",
+    "explanation": "Mal henüz teslim edilmediğinden hasılat doğmamıştır. Banka mevcudu artarken müşteriye karşı teslim yükümlülüğü 340 Alınan Sipariş Avansları hesabında izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "TFRS 15 ve Tekdüzen Hesap Planı"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "TFRS 15, edim yükümlülüğü ilkesi; Tekdüzen Hesap Planı: 102 ve 340 hesapları"
     },
+    "topicId": "muhasebe_kayitlari",
+    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "alınan avans"
+      "kayıt"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   },
   {
     "id": "demo-finansal-031",
@@ -335,30 +343,30 @@
     "topicId": "finansal_stoklar",
     "question": "Dönem başında 40 birim stok 20 TL'den, dönemde 60 birim stok 25 TL'den alınmıştır. 70 birim satılmıştır. FIFO yöntemine göre dönem sonu stok kaç TL'dir?",
     "choices": {
-      "A": "1.550 TL",
-      "B": "750 TL",
+      "A": "750 TL",
+      "B": "1.550 TL",
       "C": "700 TL",
       "D": "1.250 TL",
       "E": "600 TL"
     },
-    "correctAnswer": "B",
+    "correctAnswer": "A",
     "explanation": "FIFO'da 40 eski ve 30 yeni birim satılır; kalan 30 yeni birimin maliyeti 30 × 25 = 750 TL'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 2 Stoklar"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "FIFO"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -378,20 +386,20 @@
     "explanation": "Ortalama birim maliyet (800 + 1.200) / 200 = 10 TL; satılan 150 birimin maliyeti 1.500 TL'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 2 Stoklar"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "ortalama maliyet"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -401,30 +409,30 @@
     "topicId": "finansal_stoklar",
     "question": "Bir stok kaleminin maliyeti 48.000 TL, net gerçekleşebilir değeri 43.000 TL'dir. TMS 2'ye göre dönem sonu ölçümü hangisidir?",
     "choices": {
-      "A": "5.000 TL varlık",
-      "B": "48.000 TL, zarar yok",
-      "C": "43.000 TL ve 5.000 TL değer düşüklüğü",
-      "D": "Sıfır",
-      "E": "91.000 TL"
+      "A": "48.000 TL üzerinden ölçülür ve değer düşüklüğü kaydı yapılmaz",
+      "B": "43.000 TL ve 5.000 TL değer düşüklüğü",
+      "C": "43.000 TL üzerinden ölçülür fakat değer düşüklüğü kaydı yapılmaz",
+      "D": "48.000 TL üzerinden ölçülür ve 5.000 TL değer düşüklüğü ayrılır",
+      "E": "5.000 TL üzerinden ölçülür ve 43.000 TL değer düşüklüğü ayrılır"
     },
-    "correctAnswer": "C",
+    "correctAnswer": "B",
     "explanation": "Stoklar maliyet ve net gerçekleşebilir değerin düşük olanıyla ölçülür; 48.000 - 43.000 = 5.000 TL değer düşüklüğü kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 2 Stoklar"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "değer düşüklüğü"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -434,30 +442,30 @@
     "topicId": "finansal_stoklar",
     "question": "TMS 2'ye göre aşağıdakilerden hangisi stok maliyetine dâhil edilmeyip oluştuğu dönemde gider yazılır?",
     "choices": {
-      "A": "Stoku mevcut konumuna getiren taşıma",
-      "B": "Normalin üzerindeki fire ve üretim kayıpları",
-      "C": "Satın alma fiyatı",
-      "D": "İade edilmeyen alış vergileri",
-      "E": "Dönüştürme maliyetleri"
+      "A": "Normalin üzerindeki fire ve üretim kayıpları",
+      "B": "Normal kapasiteye göre dağıtılan sabit genel üretim giderleri",
+      "C": "Stokları mevcut konumuna getiren doğrudan taşıma giderleri",
+      "D": "Üretimle doğrudan ilişkili ilk madde ve işçilik giderleri",
+      "E": "Üretimin zorunlu parçası olan değişken genel üretim giderleri"
     },
-    "correctAnswer": "B",
+    "correctAnswer": "A",
     "explanation": "Normalin üzerindeki fire, işçilik ve diğer üretim maliyetleri stok maliyetine yüklenmez; gerçekleştiği dönemde giderleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 2 Stoklar"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "stok maliyeti"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -467,30 +475,30 @@
     "topicId": "finansal_stoklar",
     "question": "Dönem başı stok 30.000 TL, net alışlar 120.000 TL ve dönem sonu stok 45.000 TL'dir. Satılan ticari malların maliyeti kaç TL'dir?",
     "choices": {
-      "A": "105.000 TL",
-      "B": "90.000 TL",
+      "A": "90.000 TL",
+      "B": "105.000 TL",
       "C": "75.000 TL",
       "D": "150.000 TL",
       "E": "120.000 TL"
     },
-    "correctAnswer": "A",
+    "correctAnswer": "B",
     "explanation": "Satılan malın maliyeti = 30.000 + 120.000 - 45.000 = 105.000 TL'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Dönemsel stok maliyeti hesabı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "hesaplama"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
@@ -503,95 +511,98 @@
       "A": "Kayıt yapılmaz",
       "B": "Banka borç, ücret geliri alacak",
       "C": "Gider tahakkuku borç, banka alacak",
-      "D": "Gelecek aylara ait gider borç, kasa alacak",
-      "E": "Ücret gideri borç, gider tahakkuku alacak"
+      "D": "Ücret gideri borç, gider tahakkuku alacak",
+      "E": "Gelecek aylara ait gider borç, kasa alacak"
     },
-    "correctAnswer": "E",
+    "correctAnswer": "D",
     "explanation": "Ücret aralık döneminde doğmuştur; ödeme yapılmasa da gider ve buna karşılık kısa vadeli yükümlülük tahakkuk ettirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "Tahakkuk esası ve Tekdüzen Hesap Planı"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "gider tahakkuku"
+      "kayıt"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
   {
     "id": "demo-finansal-037",
     "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "1 Ekim'de bir yıllık sigorta için ödenen 24.000 TL'nin tamamı peşin ödenmiş gider olarak kaydedilmiştir. 31 Aralık'ta döneme ait sigorta gideri kaç TL'dir?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "İşletme 1 Ekim'de bir yıllık yönetim binası sigortası için 24.000 TL ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir. 31 Aralık düzeltme kaydı hangisidir?",
     "choices": {
-      "A": "24.000 TL",
-      "B": "8.000 TL",
-      "C": "2.000 TL",
-      "D": "6.000 TL",
-      "E": "18.000 TL"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 24.000\n    180 GELECEK AYLARA AİT GİD.  24.000\n```",
+      "B": "```text\n180 GELECEK AYLARA AİT GİD.  6.000\n    770 GENEL YÖNETİM GİDERLERİ   6.000\n```",
+      "C": "```text\n280 GELECEK YILLARA AİT GİD. 18.000\n    180 GELECEK AYLARA AİT GİD.  18.000\n```",
+      "D": "```text\n770 GENEL YÖNETİM GİDERLERİ  2.000\n    102 BANKALAR                   2.000\n```",
+      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ  6.000\n    180 GELECEK AYLARA AİT GİD.   6.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Ekim-Aralık üç aylık kullanım vardır; aylık 2.000 TL × 3 = 6.000 TL dönemin gideridir, kalan 18.000 TL gelecek döneme aittir.",
+    "correctAnswer": "E",
+    "explanation": "Aylık sigorta gideri 24.000 / 12 = 2.000 TL'dir. Ekim-aralık dönemine ait 6.000 TL giderleştirilir; 180 hesap aynı tutarda azaltılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "Dönemsellik ve tahakkuk esası"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "Tekdüzen Hesap Planı: 180 ve 770 hesapları; dönemsellik kavramı"
     },
+    "topicId": "donem_sonu_islemleri",
+    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "peşin ödenen gider"
+      "kayıt"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   },
   {
     "id": "demo-finansal-038",
     "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Ticari alacaklar 90.000 TL, şüpheli ticari alacaklar 10.000 TL ve bunlar için ayrılmış karşılık 10.000 TL'dir. Bu kalemlerin net toplamı kaç TL'dir?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "İşletme, 10.000 TL tutarındaki ticari alacağını şüpheli ticari alacak hesabına aktarmış ve tamamı için karşılık ayırmıştır. Birbirini izleyen iki kayıt hangisidir?",
     "choices": {
-      "A": "90.000 TL",
-      "B": "110.000 TL",
-      "C": "10.000 TL",
-      "D": "80.000 TL",
-      "E": "100.000 TL"
+      "A": "```text\n120 ALICILAR              10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n    654 KARŞILIK GİDERLERİ      10.000\n```",
+      "B": "```text\n128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n    120 ALICILAR                10.000\n100 KASA                    10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n```",
+      "C": "```text\n654 KARŞILIK GİDERLERİ    10.000\n    120 ALICILAR                 10.000\n```",
+      "D": "```text\n129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n```",
+      "E": "```text\n128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n    120 ALICILAR                    10.000\n654 KARŞILIK GİDERLERİ       10.000\n    129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "90.000 + 10.000 brüt alacaktan 10.000 karşılık düşülür; net alacak 90.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "Önce ticari alacak 120 hesaptan 128 hesaba aktarılır. Ardından gider 654 hesaba borç, varlığı düzenleyen karşılık 129 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "TFRS 9 ve Tekdüzen Hesap Planı"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "Tekdüzen Hesap Planı: 120, 128, 129 ve 654 hesapları"
     },
+    "topicId": "donem_sonu_islemleri",
+    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
+      "Bölüm Havuzu",
       "Finansal Muhasebe",
-      "karşılık"
+      "kayıt"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   },
   {
     "id": "demo-finansal-039",
@@ -601,62 +612,62 @@
     "choices": {
       "A": "İşletmenin seçtiği sabit kurla",
       "B": "Bir önceki yılın ortalama kuruyla",
-      "C": "Kapanış kuruyla",
-      "D": "İşlemin ilk günündeki kurla değişmeden",
+      "C": "İşlemin ilk günündeki kurla değişmeden",
+      "D": "Kapanış kuruyla",
       "E": "Sadece vergi dairesinin belirlediği maliyetle"
     },
-    "correctAnswer": "C",
+    "correctAnswer": "D",
     "explanation": "Yabancı para cinsinden parasal kalemler raporlama dönemi sonunda kapanış kuru kullanılarak çevrilir ve kur farkı ilgili hükümlere göre muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
+      "styleRef": "2026/1 beş seçenekli test biçimi",
       "legislationRef": "TMS 21 Kur Değişiminin Etkileri"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "yabancı para"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
     "isPremium": true,
     "isActive": true
   },
   {
     "id": "demo-finansal-040",
     "lessonId": "finansal_muhasebe",
-    "topicId": "tms_tfrs",
-    "question": "TMS 16'nın önemli maddi duran varlık parçalarına yaklaşımına ilişkin ifadeleri değerlendiriniz.\n\nI. Toplam maliyete göre önemli parça ayrı belirlenir.\n\nII. Yararlı ömrü farklı önemli parça kendi yararlı ömrü üzerinden amorti edilir.\n\nIII. Bütün parçaların zorunlu olarak tek amortisman oranı kullanması gerekir.\n\nBuna göre hangileri doğrudur?",
+    "isPremium": true,
+    "isActive": true,
+    "question": "TMS 16'ya göre toplam maliyeti içinde önemli olan ve yararlı ömrü ana varlıktan farklı bulunan bir parçanın amortismanında hangi yaklaşım uygulanır?",
     "choices": {
-      "A": "I, II ve III",
-      "B": "I ve III",
-      "C": "Yalnız I",
-      "D": "Yalnız II",
-      "E": "I ve II"
+      "A": "Bütün parçalar önemine bakılmadan ana varlığın tek oranıyla amorti edilir.",
+      "B": "Önemli parça varlıktan ayrılır ancak hiçbir dönemde amortisman ayrılmaz.",
+      "C": "Önemli parça ayrı amortismana tabi tutulur ve kendi yararlı ömrü esas alınır.",
+      "D": "Parçanın yararlı ömrü yerine yalnız ana varlığın kalıntı değeri esas alınır.",
+      "E": "Farklı yararlı ömür yalnız vergi matrahında izlenir, finansal raporlamaya yansımaz."
     },
-    "correctAnswer": "E",
-    "explanation": "Bileşen yaklaşımında önemli ve farklı yararlı ömürlü parçalar ayrı amortismana tabi tutulur; tek oran zorunluluğu yoktur.",
+    "correctAnswer": "C",
+    "explanation": "Bir maddi duran varlık kaleminin toplam maliyetine göre önemli her parçası ayrı amortismana tabi tutulur. Böylece tüketim biçimi ve yararlı ömür farklılığı finansal tablolara yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 test biçimi",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar"
+      "styleRef": "2026/1 beş seçenekli test biçimi",
+      "legislationRef": "TMS 16 Maddi Duran Varlıklar, par. 43-47"
     },
+    "topicId": "tms_tfrs",
+    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
-      "Finansal Muhasebe",
-      "bileşen amortismanı"
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
+    "updatedAt": "2026-07-17T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
+    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
   }
 ]

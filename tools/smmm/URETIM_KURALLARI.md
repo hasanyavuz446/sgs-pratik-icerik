@@ -23,7 +23,7 @@ python3 tools/smmm/audit/audit.py content/yeterlilik/<dosya>.json
 Manifestteki bütün Yeterlilik paketleriyle çapraz kontrol için:
 
 ```bash
-python3 tools/smmm/audit/audit.py --manifest content/v2/manifest.json
+python3 tools/smmm/audit/audit.py --manifest content/v2/manifests/smmm.json
 ```
 
 Konu paketi uygulama deposuna da kopyalandıysa:

@@ -4,7 +4,7 @@
 
 Kullanım:
     python3 tools/smmm/audit/audit.py content/yeterlilik/questions_topic_*.json
-    python3 tools/smmm/audit/audit.py --manifest content/v2/manifest.json
+    python3 tools/smmm/audit/audit.py --manifest content/v2/manifests/smmm.json
 
 Araç geriye dönük okuma için iki şemayı tanıyabilir; ancak bu giriş noktası yalnız
 `programIds=["yeterlilik"]` kapsamını denetlemek için kullanılır.
@@ -575,18 +575,32 @@ def audit(path):
 def manifest_paths(manifest_path, program_id="yeterlilik"):
     with open(manifest_path, encoding="utf-8") as handle:
         manifest = json.load(handle)
-    base = os.path.dirname(manifest_path)
+    base = os.path.abspath(os.path.dirname(manifest_path))
+    search_roots = []
+    current = base
+    while True:
+        search_roots.append(current)
+        parent = os.path.dirname(current)
+        if parent == current:
+            break
+        current = parent
     result = []
+    missing = []
     for pack in manifest.get("packs", []):
         if program_id and program_id not in pack.get("programIds", []):
             continue
-        for candidate in (
-            os.path.join(base, pack["file"]),
-            os.path.join(os.path.dirname(base), pack["file"]),
-        ):
+        for root in search_roots:
+            candidate = os.path.join(root, pack["file"])
             if os.path.exists(candidate):
                 result.append(candidate)
                 break
+        else:
+            missing.append(pack["file"])
+    if missing:
+        raise FileNotFoundError(
+            f"Manifestte kayıtlı {len(missing)} paket bulunamadı: "
+            + ", ".join(missing)
+        )
     return result
 
 
@@ -649,7 +663,11 @@ def main():
         if not paths:
             print("--manifest için manifest yolu gerekli.")
             return 2
-        paths = manifest_paths(paths[0], program_id="yeterlilik")
+        try:
+            paths = manifest_paths(paths[0], program_id="yeterlilik")
+        except (OSError, ValueError) as error:
+            print(f"SMMM manifesti okunamadı: {error}")
+            return 2
     if not paths:
         print(__doc__)
         return 2

@@ -10,7 +10,7 @@ Bu klasör yalnız SMMM Yeterlilik sınavı içindir.
 - Testler: `tools/smmm/tests/`
 
 ```bash
-python3 tools/smmm/audit/audit.py --manifest content/v2/manifest.json
+python3 tools/smmm/audit/audit.py --manifest content/v2/manifests/smmm.json
 python3 -m unittest tools/smmm/tests/test_audit.py
 ```
 

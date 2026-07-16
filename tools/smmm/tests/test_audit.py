@@ -101,6 +101,46 @@ def run_audit(items):
 
 
 class AuditTest(unittest.TestCase):
+    def test_split_source_manifest_resolves_content_packages(self):
+        with tempfile.TemporaryDirectory() as root:
+            content = os.path.join(root, "content")
+            package_dir = os.path.join(content, "yeterlilik")
+            manifest_dir = os.path.join(content, "v2", "manifests")
+            os.makedirs(package_dir)
+            os.makedirs(manifest_dir)
+
+            package_path = os.path.join(package_dir, "questions.json")
+            with open(package_path, "w", encoding="utf-8") as handle:
+                json.dump([], handle)
+
+            manifest_path = os.path.join(manifest_dir, "smmm.json")
+            with open(manifest_path, "w", encoding="utf-8") as handle:
+                json.dump({
+                    "packs": [{
+                        "file": "yeterlilik/questions.json",
+                        "programIds": ["yeterlilik"],
+                    }],
+                }, handle)
+
+            self.assertEqual(
+                audit.manifest_paths(manifest_path),
+                [package_path],
+            )
+
+    def test_manifest_rejects_missing_package(self):
+        with tempfile.TemporaryDirectory() as root:
+            manifest_path = os.path.join(root, "smmm.json")
+            with open(manifest_path, "w", encoding="utf-8") as handle:
+                json.dump({
+                    "packs": [{
+                        "file": "yeterlilik/missing.json",
+                        "programIds": ["yeterlilik"],
+                    }],
+                }, handle)
+
+            with self.assertRaisesRegex(FileNotFoundError, "missing.json"):
+                audit.manifest_paths(manifest_path)
+
     def test_clean_pack_has_no_fatal(self):
         issues = run_audit(clean_pack())
         self.assertFalse([issue for issue in issues if issue[0] == "FATAL"], issues)
