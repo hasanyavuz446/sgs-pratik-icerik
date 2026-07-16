@@ -14,6 +14,102 @@ Denetimi sen çalıştır; "sonra bakılır" diye teslim etme.
 
 ---
 
+## 0. SINAV STİL PROFİLİ — neyi üreteceğini bu belirler
+
+Diğer tüm kurallar "nasıl üretilir"i anlatır. Bu bölüm **ne üretileceğini** anlatır ve
+tahmine değil, gerçek kitapçığa dayanır.
+
+### Sınav 2026/1'de klasikten çoktan seçmeliye geçti
+
+TESMER'in 14 Ocak 2026 kararıyla sınav tipi kökten değişti:
+
+| Dönem | Format |
+|---|---|
+| 2024/1 – 2025/3 (6 dönem) | **KLASİK** — açık uçlu, soru başına 10 puan |
+| **2026/1** | **TEST** — 5 şıklı A-E çoktan seçmeli |
+
+⚠️ **Yeni formatta tek çıkmış dönem var: 2026/1 (8 kitapçık / 160 soru).** Aşağıdaki
+oranlar o tek dönemden ölçüldü → **küçük örneklem**. Nokta değer değil, hedef aralık
+olarak kullan. 2024-2025'in 48 klasik kitapçığı soru BİÇİMİ için kullanılamaz; ama
+hangi konunun ne sıklıkla sorulduğu için değerlidir.
+
+Kaynak: `~/Downloads/smmm-yeterlilik-sinavi-2026-1-*.pdf`
+
+### Ders bazında soru tipi dağılımı (2026/1, 160 soru — ölçülmüş)
+
+| Ders | yevmiye | hesap | negatif kök | öncüllü | kavramsal |
+|---|---|---|---|---|---|
+| **Finansal Muhasebe** | **11/20 (%55)** | 0 | 0 | **0** | 9 (%45) |
+| **Finansal Tablolar ve Analizi** | 0 | **8/20 (%40)** | 0 | **0** | 12 (%60) |
+| **Maliyet Muhasebesi** | 0 | **5/20 (%25)** | 0 | **0** | 15 (%75) |
+| **Muhasebe Denetimi** | 0 | 0 | 3/20 (%15) | **0** | 17 (%85) |
+| **Hukuk** | 0 | 0 | 2/20 (%10) | 1/20 (%5) | 17 (%85) |
+| **Vergi Mevzuatı** | 0 | 3/20 (%15) | 3/20 (%15) | 1/20 (%5) | 13 (%65) |
+| **SPK Mevzuatı** | 0 | 0 | **6/20 (%30)** | 3/20 (%15) | 11 (%55) |
+| **Meslek Hukuku** | 0 | 0 | 1/20 (%5) | 1/20 (%5) | 18 (%90) |
+| **TOPLAM** | 11 (%7) | 16 (%10) | 15 (%9) | **6 (%4)** | 112 (%70) |
+
+**Dersin karakterine uy.** Yevmiye yalnız FM'de, hesap FM dışındaki sayısal derslerde,
+negatif kök ağırlıklı SPK'da, öncüllü yalnız 4 hukuk/mevzuat dersinde.
+
+### 🔴 Mevcut içeriğimiz bu profilden sapıyor (2026-07-16 ölçümü, 1740 soru)
+
+| Ölçüt | GERÇEK | BİZDE | Yapılacak |
+|---|---|---|---|
+| FM'de yevmiye kaydı | **%55** | **%1** | FM'yi yevmiye ağırlıklı yeniden yaz |
+| Öncüllü (genel) | **%4** | **%13** | ~3 kat azalt |
+| FM·Maliyet·Denetim·Fin.Tablolar'da öncüllü | **0** | %13-14 | **tamamen kaldır** |
+| Negatif kök ("hangisi yanlıştır") | **15 soru** | **0** | ekle |
+| Öncül sayısı | **3–6** | hepsi 3 | 4-5-6 öncüllü de üret |
+| Maliyet'te hesap | %25-30 | %26 | ✅ tutuyor, koru |
+
+### Soru tipi 1 — YEVMİYE (yalnız Finansal Muhasebe, ~%55)
+
+İki alt biçim var, ikisini de üret:
+
+**(a) Tablo şıklı** (~4/20). Şıklar yevmiye kaydının kendisi. Gerçek örnek:
+
+> **1.** İşletme, kredili olarak satın aldığı ticari mallarla ilgili 4.000 ₺ + KDV(%20)
+> tutarındaki taşıma gideri için nakliye şirketine satıcı adına nakit ödeme yapmıştır.
+> **Bu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?**
+>
+> **A)** `320 SATICILAR 4.800 / 100 KASA 4.800` ✔
+> **B)** `320 SATICILAR 4.000 · 191 İNDİRİLECEK KDV 800 / 100 KASA 4.800`
+> **C)** `153 TİCARİ MALLAR 4.000 · 191 İNDİRİLECEK KDV 800 / 320 SATICILAR 4.800`
+
+Şema `stimulus`/markdown tablo destekliyor; hesap adları **BÜYÜK HARF + kod**, ₺ sembolü.
+
+**(b) Metin şıklı** (~7/20). Şıklar kaydı cümleyle anlatır. Gerçek örnek:
+
+> **14.** İşletme, yaptığı kasa sayımı sonucunda kasada 12.000 ₺ bulunduğunu saptamıştır.
+> Aynı anda Kasa hesabının borç kalanı 13.000 ₺'dir. Aradaki farkın, satıcılara ödendiği
+> hâlde kayıtlara geçirilmeyen bir ödemeden kaynaklandığı saptanmıştır.
+> **Buna göre yapılacak günlük defter kaydıyla ilgili aşağıdakilerden hangisi doğrudur?**
+>
+> **A)** Satıcılar hesabına 1.000 ₺ borç kayıt yapılır. ✔
+> **B)** Kasa hesabına 1.000 ₺ borç kayıt yapılır.
+> **C)** Sayım ve Tesellüm Fazlaları hesabına 1.000 ₺ borç kayıt yapılır.
+
+⚠️ (b) biçiminde şıklar **doğal olarak kısa ve benzer boyda** — length-tell kuralına
+(bkz. §3) uymak kolay. Bu yüzden yevmiye sorusu üretmek kaliteyi de yükseltir.
+
+### Soru tipi 2 — NEGATİF KÖK (bizde SIFIR, gerçekte 15 soru)
+
+"aşağıdakilerden hangisi **yanlıştır** / **değildir**" — ayrı bir beceri; adayın hiç
+pratiği olmuyor. Ağırlık: SPK %30, Denetim %15, Vergi %15, Hukuk %10, Meslek H. %5.
+FM · Maliyet · Fin.Tablolar'da **yok**.
+
+⚠️ Negatif kökte **length-tell tersine döner**: doğru şık = YANLIŞ ifade. Kısa-doğru
+kuralını buna göre uygula → *yanlış olan* şık kısa, *doğru olan 4 çeldirici* uzun.
+
+### Soru tipi 3 — HESAP
+
+FM'de **yok** (oradaki sayısal iş yevmiyeye gömülü). Fin.Tablolar %40 (oran/analiz),
+Maliyet %25, Vergi %15. Kalıp: `… kaç ₺'dir?` → şıklar tek satır sayı.
+Gerçek örnekte şıklar tek satıra diziliyor: `A) 18.000  B) 34.000  C) 42.000  D) 42.500  E) 60.000`
+
+---
+
 ## 1. ALTIN KURAL: elle JSON yazma, builder yaz
 
 Soruları doğrudan JSON'a yazma. Bir `build_<konu>.py` üret, JSON'u o üretsin.
@@ -165,20 +261,37 @@ kural, koru.** Harften bahsetmeyen çözüm, permütasyondan etkilenmez.
 
 ---
 
-## 5. ÖNCÜLLÜ SORULAR (I / II / III)
+## 5. ÖNCÜLLÜ SORULAR (I / II / III …)
 
-Her 60 soruluk pakette **6–9 öncüllü soru** olsun (~%10–15). Şu an üretilen
-Yeterlilik paketlerinde **sıfır** tane var — bu monotonluk, gerçek sınavda bu tip
-soru çıkıyor.
+> 🔴 **BU KURAL 2026-07-17'DE DÜZELTİLDİ.** Eskiden "her 60'lık pakette 6–9 öncüllü
+> soru (~%10–15)" yazıyordu ve bu **yanlıştı** — gerçek sınav ölçülmeden, tahminle
+> yazılmıştı. 2026/1 kitapçıkları ölçüldüğünde gerçek oranın **%4** olduğu ve dört
+> derste **hiç bulunmadığı** görüldü. Bu yanlış kurala uyularak üretilen 228 öncüllü
+> soru (bizde %13) fazladır ve azaltılacaktır.
+
+**Ders bazında hedef** (2026/1'den ölçülmüş, bkz. §0):
+
+| Ders | 60 soruluk pakette öncüllü |
+|---|---|
+| Finansal Muhasebe · Maliyet · Muhasebe Denetimi · Finansal Tablolar | **0 — hiç üretme** |
+| Hukuk · Vergi · Meslek Hukuku | **~3** (%5) |
+| SPK Mevzuatı | **~9** (%15) |
 
 Kurallar:
 
+- **Öncül sayısı 3 değil, 3–6.** Gerçek sınavda dağılım: 3, 4, 5 ve **6** öncül.
+  Bizim 228 öncüllü sorunun tamamı 3 öncüllü — bu monotonluk. 6 öncüllü gerçek örnek
+  (Hukuk 2026/1, s.18): *I. Kooperatif · II. Kollektif · III. Adi Komandit ·
+  IV. Sermayesi Paylara Bölünmüş Komandit · V. Limited · VI. Anonim →
+  "hangileri sermaye şirketidir?"* → cevap **D) III, IV ve VI**.
+- Kök kalıbı iki türlü: `…hangileri` veya `…hangisi/hangileri doğrudur?` (ikisi de gerçek).
 - Öncülleri `\n\n` ile ayır. **Tek `\n` markdown'da satır başı YAPMAZ**, öncüller
   tek paragrafa yapışır ve soru okunamaz hâle gelir.
-- Cevabı çeşitlendir: **"I, II ve III" (hepsi) oranı ~%20–30** olsun. Sık sık bir
-  öncülü kesin-yanlış yap → cevap alt küme olsun ("I ve II" gibi).
+- Cevabı çeşitlendir: **"hepsi" oranı ~%20–30** olsun. Sık sık bir öncülü kesin-yanlış
+  yap → cevap alt küme olsun ("I ve II" gibi).
 - Bir dönem bu oran %75'e çıkmıştı; aday "şüpheye düşersen hepsini işaretle"
   stratejisiyle soruları çözüyordu. 152 soru elle düzeltildi.
+- 4+ öncülde şık biçimi: `A) Yalnız I`, `B) I ve III`, `C) II ve IV`, `D) III, IV ve VI`.
 
 ```python
 q("Aşağıdakilerden hangileri TMS 2'ye göre stok maliyetine dâhildir?"
@@ -266,11 +379,22 @@ ve `content/v2/manifest.json` içindeki `version` değerini **artır**.
 
 ## 10. TESLİM ÖNCESİ KONTROL LİSTESİ
 
+**Stil (§0 — sınav sadakati):**
+
+- [ ] Dersin soru tipi dağılımı §0'daki tabloya uyuyor
+- [ ] **Finansal Muhasebe ise:** soruların ~yarısı yevmiye (tablo + metin şıklı karışık)
+- [ ] **FM · Maliyet · Denetim · Fin.Tablolar ise:** öncüllü soru **SIFIR**
+- [ ] **Hukuk/Vergi/Meslek ~3, SPK ~9** öncüllü; öncül sayıları 3-6 arasında değişiyor
+- [ ] Negatif kök ("hangisi yanlıştır/değildir") dersin oranınca var — ve o sorularda
+      length-tell TERS uygulandı (yanlış olan şık kısa)
+
+**Mekanik:**
+
 - [ ] `python3 tools/audit.py content/yeterlilik/<dosya>.json` → **FATAL 0**
 - [ ] UYARI'lar sıfır ya da gerekçeli
 - [ ] Harf dizisi `gen_letters()` ile üretildi, seed bu konuya özel
-- [ ] Doğru şıklar kısa, çeldiriciler uzun
-- [ ] 6–9 öncüllü soru var, "hepsi" oranı ~%20–30
+- [ ] Doğru şıklar kısa, çeldiriciler uzun (negatif kökte tersi)
+- [ ] "hepsi" oranı ~%20–30
 - [ ] `explanation` içinde harf atıfı yok
 - [ ] Hesap soruları python ile doğrulandı, çeldiriciler makul hata sonuçları
 - [ ] `lessonId`/`topicId` curriculum.json'da mevcut
