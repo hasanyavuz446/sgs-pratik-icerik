@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""SGS/SMMM Yeterlilik içerik kalite denetimi.
+"""SMMM Yeterlilik içerik kalite denetimi.
 
 Kullanım:
-    python3 tools/audit.py content/yeterlilik/questions_topic_*.json
-    python3 tools/audit.py --manifest content/v2/manifest.json
-    python3 tools/audit.py --manifest --all-programs content/v2/manifest.json
+    python3 tools/smmm/audit/audit.py content/yeterlilik/questions_topic_*.json
+    python3 tools/smmm/audit/audit.py --manifest content/v2/manifest.json
 
-Araç iki şemayı da okuyabilir:
-  SGS:         {ders, konu, stem, options, answer, solution}
-  Yeterlilik:  {lessonId, topicId, question, choices, correctAnswer, explanation}
+Araç geriye dönük okuma için iki şemayı tanıyabilir; ancak bu giriş noktası yalnız
+`programIds=["yeterlilik"]` kapsamını denetlemek için kullanılır.
 
 Başlıca kontroller:
   FATAL  şema/metadata       A-E, tekil şıklar, cevap, kaynak ve 2026 alanları
@@ -643,16 +641,27 @@ def cross_file_issues(paths):
 
 def main():
     args = sys.argv[1:]
+    if "--all-programs" in args:
+        print("SMMM denetimi --all-programs kabul etmez; SGS için tools/sgs/audit.py kullanın.")
+        return 2
     paths = [arg for arg in args if not arg.startswith("--")]
     if "--manifest" in args:
         if not paths:
             print("--manifest için manifest yolu gerekli.")
             return 2
-        program_id = None if "--all-programs" in args else "yeterlilik"
-        paths = manifest_paths(paths[0], program_id=program_id)
+        paths = manifest_paths(paths[0], program_id="yeterlilik")
     if not paths:
         print(__doc__)
         return 2
+
+    allowed_root = os.path.realpath(os.path.join(
+        os.path.dirname(__file__), "..", "..", "..", "content", "yeterlilik"
+    ))
+    for path in paths:
+        resolved = os.path.realpath(path)
+        if os.path.commonpath((allowed_root, resolved)) != allowed_root:
+            print(f"SMMM kapsamı dışında dosya reddedildi: {path}")
+            return 2
 
     grand = collections.Counter()
     fatal_files = []

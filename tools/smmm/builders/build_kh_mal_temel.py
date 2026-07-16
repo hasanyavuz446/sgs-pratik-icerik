@@ -602,7 +602,7 @@ if __name__ == "__main__":
             "sourceUpdatedAt": "2026-07-17T00:00:00Z", "isPremium": False, "isActive": True,
         })
     payload = json.dumps(out, ensure_ascii=False, indent=2) + "\n"
-    project_root = Path(__file__).resolve().parents[1]
+    project_root = Path(__file__).resolve().parents[3]
     targets = [
         project_root / "content/yeterlilik/questions_topic_maliyet_temelleri_2026.json",
         project_root.parent / "smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_temelleri_2026.json",

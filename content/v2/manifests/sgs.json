@@ -1,0 +1,799 @@
+{
+  "revision": "105",
+  "schemaVersion": 2,
+  "program": "sgs",
+  "packs": [
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "muhasebenin_temel_kavramlari",
+      "file": "finansal_muhasebe/muhasebenin_temel_kavramlari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "muhasebe_sureci_hesap_plani",
+      "file": "finansal_muhasebe/muhasebe_sureci_hesap_plani.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "hazir_degerler",
+      "file": "finansal_muhasebe/hazir_degerler.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "stoklar",
+      "file": "finansal_muhasebe/stoklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "ticari_alacaklar",
+      "file": "finansal_muhasebe/ticari_alacaklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "menkul_kiymetler",
+      "file": "finansal_muhasebe/menkul_kiymetler.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "maddi_duran_varliklar",
+      "file": "finansal_muhasebe/maddi_duran_varliklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "maddi_olmayan_duran_varliklar",
+      "file": "finansal_muhasebe/maddi_olmayan_duran_varliklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "mali_duran_varliklar",
+      "file": "finansal_muhasebe/mali_duran_varliklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "yabanci_kaynaklar",
+      "file": "finansal_muhasebe/yabanci_kaynaklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "ozkaynaklar",
+      "file": "finansal_muhasebe/ozkaynaklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "gelir_tablosu_hesaplari",
+      "file": "finansal_muhasebe/gelir_tablosu_hesaplari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "maliyet_hesaplari",
+      "file": "finansal_muhasebe/maliyet_hesaplari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "donem_sonu_islemleri",
+      "file": "finansal_muhasebe/donem_sonu_islemleri.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "kur_farklari",
+      "file": "finansal_muhasebe/kur_farklari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "finansal_muhasebe",
+      "konu": "kdv_muhasebesi",
+      "file": "finansal_muhasebe/kdv_muhasebesi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "oran_analizi",
+      "file": "mali_tablolar_analizi/oran_analizi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "karsilastirmali_analiz",
+      "file": "mali_tablolar_analizi/karsilastirmali_analiz.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "dikey_analiz",
+      "file": "mali_tablolar_analizi/dikey_analiz.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "trend_analizi",
+      "file": "mali_tablolar_analizi/trend_analizi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "fon_akim_analizi",
+      "file": "mali_tablolar_analizi/fon_akim_analizi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "mali_tablolar_analizi",
+      "konu": "nakit_akim_analizi",
+      "file": "mali_tablolar_analizi/nakit_akim_analizi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "maliyet_hacim_kar",
+      "file": "maliyet_muhasebesi/maliyet_hacim_kar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "gider_dagitimi",
+      "file": "maliyet_muhasebesi/gider_dagitimi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "siparis_maliyeti",
+      "file": "maliyet_muhasebesi/siparis_maliyeti.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "safha_maliyeti",
+      "file": "maliyet_muhasebesi/safha_maliyeti.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "standart_maliyet",
+      "file": "maliyet_muhasebesi/standart_maliyet.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliyet_muhasebesi",
+      "konu": "birlesik_maliyet",
+      "file": "maliyet_muhasebesi/birlesik_maliyet.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_kavrami",
+      "file": "denetim/denetim_kavrami.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_standartlari_etik",
+      "file": "denetim/denetim_standartlari_etik.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "ic_kontrol",
+      "file": "denetim/ic_kontrol.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_kaniti",
+      "file": "denetim/denetim_kaniti.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_riski",
+      "file": "denetim/denetim_riski.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_raporu",
+      "file": "denetim/denetim_raporu.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "denetim",
+      "konu": "denetim_ornekleme",
+      "file": "denetim/denetim_ornekleme.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "kavramsal_cerceve",
+      "file": "muhasebe_standartlari/kavramsal_cerceve.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_1_sunulus",
+      "file": "muhasebe_standartlari/tms_1_sunulus.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_2_stoklar",
+      "file": "muhasebe_standartlari/tms_2_stoklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_7_nakit_akis",
+      "file": "muhasebe_standartlari/tms_7_nakit_akis.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_8_politikalar",
+      "file": "muhasebe_standartlari/tms_8_politikalar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_16_mdv",
+      "file": "muhasebe_standartlari/tms_16_mdv.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_38_modv",
+      "file": "muhasebe_standartlari/tms_38_modv.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tfrs_16_kiralamalar",
+      "file": "muhasebe_standartlari/tfrs_16_kiralamalar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_20_devlet_tesvik",
+      "file": "muhasebe_standartlari/tms_20_devlet_tesvik.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_37_karsiliklar",
+      "file": "muhasebe_standartlari/tms_37_karsiliklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_36_deger_dusuklugu",
+      "file": "muhasebe_standartlari/tms_36_deger_dusuklugu.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_40_yatirim_amacli",
+      "file": "muhasebe_standartlari/tms_40_yatirim_amacli.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tms_12_gelir_vergileri",
+      "file": "muhasebe_standartlari/tms_12_gelir_vergileri.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "muhasebe_standartlari",
+      "konu": "tfrs_9_finansal_arac",
+      "file": "muhasebe_standartlari/tfrs_9_finansal_arac.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "borc_iliskisi_kaynaklari",
+      "file": "borclar_hukuku/borc_iliskisi_kaynaklari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "sozlesmenin_kurulmasi",
+      "file": "borclar_hukuku/sozlesmenin_kurulmasi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "borcun_ifasi_sona_ermesi",
+      "file": "borclar_hukuku/borcun_ifasi_sona_ermesi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "temerrut_tazminat",
+      "file": "borclar_hukuku/temerrut_tazminat.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "ozel_durumlar",
+      "file": "borclar_hukuku/ozel_durumlar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "haksiz_fiil",
+      "file": "borclar_hukuku/haksiz_fiil.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "borclar_hukuku",
+      "konu": "sebepsiz_zenginlesme",
+      "file": "borclar_hukuku/sebepsiz_zenginlesme.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "ticari_isletme_tacir",
+      "file": "ticaret_hukuku/ticari_isletme_tacir.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "ticaret_sirketleri",
+      "file": "ticaret_hukuku/ticaret_sirketleri.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "kiymetli_evrak",
+      "file": "ticaret_hukuku/kiymetli_evrak.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "haksiz_rekabet",
+      "file": "ticaret_hukuku/haksiz_rekabet.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "anonim_sirket",
+      "file": "ticaret_hukuku/anonim_sirket.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "limited_sahis_sirketleri",
+      "file": "ticaret_hukuku/limited_sahis_sirketleri.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ticaret_hukuku",
+      "konu": "kambiyo_senetleri",
+      "file": "ticaret_hukuku/kambiyo_senetleri.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "meslek_hukuku",
+      "konu": "meslek_hukuku_esaslari",
+      "file": "meslek_hukuku/meslek_hukuku_esaslari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "meslek_hukuku",
+      "konu": "meslek_orgutu_disiplin",
+      "file": "meslek_hukuku/meslek_orgutu_disiplin.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "meslek_hukuku",
+      "konu": "mesleki_degerler_etik",
+      "file": "meslek_hukuku/mesleki_degerler_etik.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "meslek_hukuku",
+      "konu": "staj_ve_sinavlar",
+      "file": "meslek_hukuku/staj_ve_sinavlar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "meslek_hukuku",
+      "konu": "sorumluluk_ve_yasaklar",
+      "file": "meslek_hukuku/sorumluluk_ve_yasaklar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "is_ve_sosyal_guvenlik_hukuku",
+      "konu": "is_hukuku_is_sozlesmesi",
+      "file": "is_ve_sosyal_guvenlik_hukuku/is_hukuku_is_sozlesmesi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "is_ve_sosyal_guvenlik_hukuku",
+      "konu": "is_sozlesmesinin_sona_ermesi",
+      "file": "is_ve_sosyal_guvenlik_hukuku/is_sozlesmesinin_sona_ermesi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "is_ve_sosyal_guvenlik_hukuku",
+      "konu": "sosyal_guvenlik_hukuku",
+      "file": "is_ve_sosyal_guvenlik_hukuku/sosyal_guvenlik_hukuku.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "vergi_hukuku_temel_kavramlar",
+      "file": "vergi_hukuku/vergi_hukuku_temel_kavramlar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "vergilendirme_sureci",
+      "file": "vergi_hukuku/vergilendirme_sureci.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "vergi_denetimi_ceza_uyusmazlik",
+      "file": "vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "kdv",
+      "file": "vergi_hukuku/kdv.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "gelir_vergisi",
+      "file": "vergi_hukuku/gelir_vergisi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "emlak_vergisi",
+      "file": "vergi_hukuku/emlak_vergisi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "damga_vergisi",
+      "file": "vergi_hukuku/damga_vergisi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "mtv",
+      "file": "vergi_hukuku/mtv.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "kurumlar_vergisi",
+      "file": "vergi_hukuku/kurumlar_vergisi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "vergi_hukuku",
+      "konu": "amme_alacaklari",
+      "file": "vergi_hukuku/amme_alacaklari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ekonomi",
+      "konu": "mikroekonomi",
+      "file": "ekonomi/mikroekonomi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ekonomi",
+      "konu": "makroekonomi",
+      "file": "ekonomi/makroekonomi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ekonomi",
+      "konu": "para_banka_dis_ekonomi",
+      "file": "ekonomi/para_banka_dis_ekonomi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliye",
+      "konu": "kamu_maliyesi_temel",
+      "file": "maliye/kamu_maliyesi_temel.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliye",
+      "konu": "kamu_gelir_gider",
+      "file": "maliye/kamu_gelir_gider.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "maliye",
+      "konu": "butce_maliye_politikasi",
+      "file": "maliye/butce_maliye_politikasi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "turkce",
+      "konu": "sozcukte_cumlede_anlam",
+      "file": "turkce/sozcukte_cumlede_anlam.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "turkce",
+      "konu": "dil_bilgisi",
+      "file": "turkce/dil_bilgisi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "turkce",
+      "konu": "yazim_noktalama_anlatim",
+      "file": "turkce/yazim_noktalama_anlatim.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "matematik",
+      "konu": "sayilar_temel_islemler",
+      "file": "matematik/sayilar_temel_islemler.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "matematik",
+      "konu": "oran_oranti_yuzde_problemler",
+      "file": "matematik/oran_oranti_yuzde_problemler.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "matematik",
+      "konu": "denklem_esitsizlik_problemler",
+      "file": "matematik/denklem_esitsizlik_problemler.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ataturk_ilkeleri",
+      "konu": "kurtulus_savasi",
+      "file": "ataturk_ilkeleri/kurtulus_savasi.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ataturk_ilkeleri",
+      "konu": "ataturk_inkilaplari",
+      "file": "ataturk_ilkeleri/ataturk_inkilaplari.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "ataturk_ilkeleri",
+      "konu": "ataturk_ilkeleri_dis_politika",
+      "file": "ataturk_ilkeleri/ataturk_ilkeleri_dis_politika.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "yabanci_dil",
+      "konu": "grammar",
+      "file": "yabanci_dil/grammar.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "yabanci_dil",
+      "konu": "vocabulary",
+      "file": "yabanci_dil/vocabulary.json",
+      "programIds": [
+        "sgs"
+      ]
+    },
+    {
+      "ders": "yabanci_dil",
+      "konu": "reading_cloze",
+      "file": "yabanci_dil/reading_cloze.json",
+      "programIds": [
+        "sgs"
+      ]
+    }
+  ]
+}

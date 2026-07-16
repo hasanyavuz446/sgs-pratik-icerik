@@ -12,8 +12,8 @@ Soru, şık, cevap, çözümün geri kalanı ve kaynak alanları değiştirilmez
 mevcut satır düzeni korunur; dosyanın tamamı yeniden biçimlendirilmez.
 
 Kullanım:
-    python3 tools/cleanup_legacy_yeterlilik.py --check
-    python3 tools/cleanup_legacy_yeterlilik.py
+    python3 tools/smmm/fixers/cleanup_legacy_yeterlilik.py --check
+    python3 tools/smmm/fixers/cleanup_legacy_yeterlilik.py
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ import re
 from pathlib import Path
 
 
-REPO = Path(__file__).resolve().parents[1]
+REPO = Path(__file__).resolve().parents[3]
 DEFAULT_ROOTS = (
     REPO / "content" / "yeterlilik",
     REPO.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik",

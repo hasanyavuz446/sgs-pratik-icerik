@@ -12,7 +12,8 @@ import random
 from pathlib import Path
 
 
-APP_ROOT = Path("/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik")
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = CONTENT_ROOT.parent / "smmm_sgs_pratik"
 
 
 def balanced_letters(seed: int) -> list[str]:

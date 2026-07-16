@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Konu havuzunun TAMAMI için toplu denetim (61 konu × 60 soru).
 
-    python3 tools/verify_all_konu.py
+    python3 tools/smmm/audit/verify_all_konu.py
 
 audit.py mekanik kaliteye, verify_konu.py tek pakete bakar. Bu alet TOPLU
 bakınca ortaya çıkan riskleri arar:
@@ -156,7 +156,7 @@ def main():
         if hesaplilar: picks.append((tid, random.choice(hesaplilar), "hesap"))
         picks.append((tid, random.choice(qs), "kavram"))
     print(f"  toplam {len(picks)} örnek seçildi (konu başına 1 hesap + 1 kavram)")
-    print(f"  → tam liste için: python3 tools/verify_all_konu.py --ornek")
+    print(f"  → tam liste için: python3 tools/smmm/audit/verify_all_konu.py --ornek")
     if "--ornek" in sys.argv:
         for tid, q, tip in picks:
             print(f"\n[{tid} · {tip}] {q['question'][:100]}")

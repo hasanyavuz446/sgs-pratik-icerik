@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""tools/audit.py için davranış testleri."""
+"""SMMM audit.py için davranış testleri."""
 
 import json
 import importlib.util
@@ -10,7 +10,7 @@ import tempfile
 import unittest
 
 
-AUDIT_PATH = os.path.join(os.path.dirname(__file__), "audit.py")
+AUDIT_PATH = os.path.join(os.path.dirname(__file__), "..", "audit", "audit.py")
 SPEC = importlib.util.spec_from_file_location("content_audit", AUDIT_PATH)
 audit = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(audit)

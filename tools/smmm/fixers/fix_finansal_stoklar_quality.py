@@ -9,7 +9,7 @@ from pathlib import Path
 from fix_finansal_topic_quality import BASELINE, PREMISES
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 FILENAME = "questions_topic_finansal_stoklar_2026.json"
 TARGETS = [
     ROOT / "content/yeterlilik" / FILENAME,

@@ -17,9 +17,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 CONTENT = ROOT / "content" / "yeterlilik"
-BASELINE = ROOT / "tools" / "finansal_answer_baseline.json"
+BASELINE = ROOT / "tools" / "smmm" / "baselines" / "finansal_answer_baseline.json"
 FILES = sorted(CONTENT.glob("questions_topic_finansal_*.json"))
 
 

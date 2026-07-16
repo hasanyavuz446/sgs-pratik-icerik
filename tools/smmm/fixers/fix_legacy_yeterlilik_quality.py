@@ -25,9 +25,9 @@ import random
 import re
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[3]
 CONTENT = ROOT / "content" / "yeterlilik"
-BASELINE = ROOT / "tools" / "legacy_yeterlilik_answer_baseline.json"
+BASELINE = ROOT / "tools" / "smmm" / "baselines" / "legacy_yeterlilik_answer_baseline.json"
 
 FILES = {
     "questions_finansal_muhasebe_2026.json": (18, 20260731),

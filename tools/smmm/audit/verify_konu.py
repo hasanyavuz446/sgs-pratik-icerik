@@ -3,7 +3,7 @@
 """Konu havuzu paketi için tam denetim: audit.py'nin görmediklerine bakar.
 
 Kullanım:
-    python3 tools/verify_konu.py questions_topic_maliyet_unsurlari_2026.json
+    python3 tools/smmm/audit/verify_konu.py questions_topic_maliyet_unsurlari_2026.json
 
 audit.py mekanik kaliteyi (harf örüntüsü, length-tell, şema) denetler.
 Bu alet onun ÜSTÜNE bakar:
