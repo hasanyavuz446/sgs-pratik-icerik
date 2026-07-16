@@ -197,6 +197,24 @@ def main():
                     break
     grand = collections.Counter()
     fatal_files = []
+    # Dosyalar ARASI tekrar: audit() yalnız dosya içine bakar. Konu havuzu ile
+    # bölüm havuzunun kesişmemesi ve aynı sorunun iki pakette bulunmaması bu
+    # kontrolle yakalanır.
+    xid, xstem = {}, {}
+    xdup = []
+    for path in paths:
+        for raw in load(path):
+            q = norm(raw)
+            base = os.path.basename(path)
+            if q["id"] in xid and xid[q["id"]] != base:
+                xdup.append(("id", q["id"], xid[q["id"]], base))
+            xid[q["id"]] = base
+            key = (re.sub(r"\W+", "", q["stem"]).lower(),
+                   tuple(sorted(re.sub(r"\W+", "", v).lower() for v in q["opts"].values())))
+            if key in xstem and xstem[key][1] != base:
+                xdup.append(("soru", q["id"], f"{xstem[key][0]} ({xstem[key][1]})", base))
+            xstem[key] = (q["id"], base)
+
     for path in paths:
         n, onc, issues = audit(path)
         sev = collections.Counter(i[0] for i in issues)
@@ -210,6 +228,11 @@ def main():
         for s, code, msg in issues:
             if s in ("FATAL", "UYARI"):
                 print(f"      [{s}] {code}: {msg}")
+    if xdup:
+        print(f"\n❌ DOSYALAR ARASI TEKRAR: {len(xdup)}")
+        for tip, qid, nerede, base in xdup[:10]:
+            print(f"      [FATAL] {tip}-tekrarı: {qid} ({base}) ↔ {nerede}")
+        grand["FATAL"] += len(xdup)
     print(f"\nTOPLAM: FATAL {grand['FATAL']} | UYARI {grand['UYARI']} | "
           f"elle doğrulanacak hesap sorusu {grand['BİLGİ']}")
     if fatal_files:
