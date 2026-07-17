@@ -2,8 +2,9 @@
 """Yeterlilik — Finansal Tablolar ve Analizi Test 2 + Test 3 (2×20 = 40 soru).
 TÜM ARİTMETİK PYTHON'DA HESAPLANIR — kafadan sayı yazılmaz.
 Çeldiriciler makul hata sonuçlarıdır (yanlış payda, ters oran, stok düşmeyi unutmak…).
-Doğru şık KISA, çeldiriciler UZUN. explanation'da harf atıfı YOK."""
+Şıklar aynı kavramsal düzeyde ve doğal uzunlukta tutulur. Açıklamada harf atfı YOK."""
 import json, random, re
+from pathlib import Path
 
 L = "mali_tablolar_analizi"
 STIM = "yet-analiz-ghi-001"
@@ -290,7 +291,7 @@ k_, t_ = 360, 1200
 q("dikey_analiz", "Dikey (Yüzde) Analiz",
   f"Toplam varlıkları {tr(t_)} bin TL olan bir işletmede stoklar {tr(k_)} bin TL'dir. Dikey analize göre stokların payı yüzde kaçtır?",
   yuzde(k_/t_), [yuzde(t_/k_), yuzde(k_/(t_-k_)), yuzde((t_-k_)/t_), yuzde(k_/t_/2)],
-  f"Dikey analizde bilanço kalemleri toplam varlıklara oranlanır: {tr(k_)} / {tr(t_)} = {yuzde(k_/t_)}.",
+  f"Stokların toplam varlıklar içindeki payı {tr(k_)} / {tr(t_)} = {k_/t_:.2f} hesabıyla bulunur; bu oran {yuzde(k_/t_)}'tir.",
   "Dikey analiz - yüzde pay")
 
 q("dikey_analiz", "Dikey (Yüzde) Analiz",
@@ -330,7 +331,7 @@ q("nakit_akim_analizi", "Nakit Akım Analizi",
 
 q("nakit_akim_analizi", "Nakit Akım Analizi",
   "Maddi duran varlık satın alınması bakımından nakit akış tablosunda hangi bölümde raporlanır?",
-  "Yatırım faaliyetlerinden nakit çıkışı olarak raporlanır",
+  "Maddi duran varlık alımı, yatırım faaliyetlerinden kaynaklanan nakit çıkışı olarak raporlanır",
   ["İşletme faaliyetlerinden nakit çıkışı olarak raporlanır; yatırım bölümüyle ilgisi bulunmamaktadır",
    "Finansman faaliyetlerinden nakit çıkışı olarak raporlanır; yatırım faaliyeti sayılmamaktadır",
    "Nakit akış tablosunda hiç raporlanmaz; yalnızca bilançoda gösterilmesi yeterli görülmektedir",
@@ -340,7 +341,7 @@ q("nakit_akim_analizi", "Nakit Akım Analizi",
 
 q("nakit_akim_analizi", "Nakit Akım Analizi",
   "İşletmenin kredi kullanması ve kredi anaparası ödemesi bakımından nakit akış tablosunda hangi bölümde raporlanır?",
-  "Finansman faaliyetlerinde raporlanır",
+  "Kredi kullanımı nakit girişi, anapara ödemesi nakit çıkışı olarak finansman faaliyetlerinde raporlanır",
   ["İşletme faaliyetlerinde raporlanır; borçlanma işletmenin olağan faaliyeti sayılmaktadır",
    "Yatırım faaliyetlerinde raporlanır; kredi kullanımı bir yatırım hareketi kabul edilmektedir",
    "Nakit akış tablosunda gösterilmez; yalnızca dipnotlarda açıklanması yeterli görülmektedir",
@@ -399,7 +400,7 @@ def emit(items, prefix, seed):
             "explanation": it["why"],
             "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", it["label"]],
+            "tags": ["Özgün Soru", "2026 Formatı", "Bölüm Havuzu", it["label"]],
             "difficulty": it["difficulty"], "updatedAt": "2026-07-15T00:00:00Z",
             "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-15",
             "sourceUpdatedAt": "2026-07-15T00:00:00Z", "isPremium": False, "isActive": True,
@@ -410,16 +411,22 @@ def emit(items, prefix, seed):
 
 if __name__ == "__main__":
     assert len(Q) == 40, f"40 olmalı, şu an {len(Q)}"
-    APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik"
+    root = Path(__file__).resolve().parents[3]
+    targets = (
+        root / "content" / "yeterlilik",
+        root.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik",
+    )
 
-    # stimulus'u ekle/güncelle
-    SP = f"{APP}/stimuli.json"
-    st = json.load(open(SP, encoding="utf-8"))
-    st = [s for s in st if s["id"] != STIM]
-    st.append({"id": STIM, "title": "GHI İşletmesi — Karşılaştırmalı Finansal Veriler",
-               "kind": "table", "bodyMarkdown": STIM_BODY,
-               "caption": "Tutarlar bin TL'dir.", "updatedAt": "2026-07-15T00:00:00Z"})
-    json.dump(st, open(SP, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    # stimulus'u iki içerik kopyasında da ekle/güncelle
+    for target in targets:
+        target.mkdir(parents=True, exist_ok=True)
+        stimulus_path = target / "stimuli.json"
+        st = json.loads(stimulus_path.read_text(encoding="utf-8"))
+        st = [s for s in st if s["id"] != STIM]
+        st.append({"id": STIM, "title": "GHI İşletmesi — Karşılaştırmalı Finansal Veriler",
+                   "kind": "table", "bodyMarkdown": STIM_BODY,
+                   "caption": "Tutarlar bin TL'dir.", "updatedAt": "2026-07-15T00:00:00Z"})
+        stimulus_path.write_text(json.dumps(st, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"stimulus yazıldı: {STIM} ({len(st)} stimulus)")
 
     MARK = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
@@ -431,6 +438,7 @@ if __name__ == "__main__":
     for items, name, prefix, seed in ((t2, "questions_analiz_test2_2026.json", "analiz-t2", 20260805),
                                       (t3, "questions_analiz_test3_2026.json", "analiz-t3", 20260806)):
         data = emit(items, prefix, seed)
-        json.dump(data, open(f"{APP}/{name}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        for target in targets:
+            (target / name).write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         ns = sum(1 for x in data if x.get("stimulusId"))
         print(f"{name}: {len(data)} soru ({ns} ortak tabloya bağlı) | harf {''.join(x['correctAnswer'] for x in data)}")

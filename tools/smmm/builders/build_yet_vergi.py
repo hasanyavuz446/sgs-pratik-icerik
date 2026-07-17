@@ -3,8 +3,9 @@
 6 alt ders: VUK · Vergi Hukuku · Türk Vergi Sistemi · GV · KV · KDV.
 ⚠️ YILA BAĞLI ORAN/HAD/TARİFE/TUTAR YOK — yalnız kanunda sabit yapısal-kavramsal
 (mükellef, vergiyi doğuran olay, istisna TÜRÜ, beyan usulü, süre yapısı).
-Doğru şık KISA, çeldiriciler UZUN. explanation'da harf atıfı YOK."""
+Şıklar aynı kavramsal düzeyde ve doğal uzunlukta tutulur. Açıklamada harf atfı YOK."""
 import json, random, re
+from pathlib import Path
 
 Q = []
 def q(lesson, topic, label, stem, correct, distractors, why, ref, difficulty="medium"):
@@ -18,7 +19,7 @@ GV, KV, KDV = "gelir_vergisi", "kurumlar_vergisi", "katma_deger_vergisi"
 
 # ══ VERGİ USUL KANUNU (8) ═════════════════════════════════════════════════
 q(VUK, "vergilendirme_sureci", "Vergilendirme Süreci",
-  "Vergiyi doğuran olay bakımından aşağıdakilerden hangisi doğrudur?",
+  "Kanunda vergiye bağlanan hukuki durum tamamlanmış, ancak idare henüz tarh ve tebliğ işlemlerini yapmamıştır. Vergiyi doğuran olay bakımından aşağıdakilerden hangisi doğrudur?",
   "Vergi kanunlarının vergiyi bağladıkları olayın vuku bulması veya hukuki durumun tamamlanmasıyla doğar",
   ["Vergiyi doğuran olay, ancak verginin mükellef tarafından fiilen ödenmesiyle ortaya çıkmış sayılır",
    "Vergiyi doğuran olay, verginin idare tarafından tarh edilip mükellefe tebliğ edilmesiyle gerçekleşir",
@@ -29,7 +30,7 @@ q(VUK, "vergilendirme_sureci", "Vergilendirme Süreci",
 
 q(VUK, "vergilendirme_sureci", "Vergilendirme Süreci",
   "Verginin tarhı bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergi alacağının kanunda gösterilen matrah ve oranlar üzerinden idarece hesaplanarak miktarının belirlenmesidir",
+  "Tarh, verginin kanuni matrah ve oranlar üzerinden idarece hesaplanıp miktarının belirlenmesidir",
   ["Verginin mükellef tarafından vergi dairesi veznesine fiilen ödenmesi işlemini ifade etmektedir",
    "Vergilendirmeyi ilgilendiren belgelerin mükellefe yazılı olarak bildirilmesi işlemini ifade eder",
    "Mükellefin defter ve belgelerinin idare tarafından incelenmesi sürecini ifade eden bir aşamadır",
@@ -38,8 +39,8 @@ q(VUK, "vergilendirme_sureci", "Vergilendirme Süreci",
   "213 sayılı VUK m.20")
 
 q(VUK, "vergilendirme_sureci", "Vergilendirme Süreci",
-  "Tebliğ bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergilendirmeyi ilgilendiren ve hüküm ifade eden belgelerin yetkili makamlarca ilgiliye yazı ile bildirilmesidir",
+  "Vergi dairesi, vergilendirmeye ilişkin hüküm ifade eden bir belgeyi mükellefe yazıyla bildirmiştir. Bu işlem tebliğ bakımından nasıl değerlendirilir?",
+  "Vergilendirmeye ilişkin hüküm doğuran hususların yetkili makamca ilgiliye yazılı bildirimidir",
   ["Vergi alacağının matrah üzerinden hesaplanarak miktarının idarece belirlenmesi işlemini ifade eder",
    "Verginin mükellef tarafından vergi dairesine ödenerek vergi borcunun sona erdirilmesi işlemidir",
    "Vergiyi doğuran olayın gerçekleşmesiyle vergi alacağının kendiliğinden doğması aşamasını ifade eder",
@@ -65,8 +66,8 @@ q(VUK, "mukellef_odevleri", "Mükellef Ödevleri",
   "213 sayılı VUK m.8")
 
 q(VUK, "mukellef_odevleri", "Mükellef Ödevleri",
-  "Mükellefin ödevleri bakımından aşağıdakilerden hangisi doğrudur?",
-  "Bildirimde bulunma, defter tutma, belge düzenleme ve muhafaza-ibraz ödevleri mükellefin şekli ödevlerindendir",
+  "Yeni işe başlayan bir mükellef, bildirim, defter tutma, belge düzenleme ve belgeleri saklama yükümlülüklerini değerlendirmektedir. Mükellefin ödevleri bakımından hangisi doğrudur?",
+  "Bildirim, defter tutma, belge düzenleme, muhafaza ve ibraz mükellefin şekli ödevleri arasındadır",
   ["Mükellefin tek ödevi vergiyi ödemek olup defter tutma ve belge düzenlemeyle ilgili bir yükümlülüğü yoktur",
    "Defter tutma ve belge düzenleme yalnızca vergi idaresinin ödevi olup mükellefi hiç ilgilendirmemektedir",
    "Mükellefin muhafaza ve ibraz ödevi yoktur; belgeler düzenlendiği anda idareye teslim edilmektedir",
@@ -76,7 +77,7 @@ q(VUK, "mukellef_odevleri", "Mükellef Ödevleri",
 
 q(VUK, "vergi_cezalari", "Vergi Cezaları",
   "Vergi ziyaı bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergilendirme ödevlerinin zamanında yerine getirilmemesi yüzünden verginin zamanında veya tam tahakkuk ettirilememesidir",
+  "Vergi ziyaı, ödevlerin zamanında yapılmaması nedeniyle verginin zamanında veya tam tahakkuk etmemesidir",
   ["Mükellefin vergisini zamanında ve tam olarak ödemesine rağmen idarece ceza kesilmesi durumunu ifade eder",
    "Vergi idaresinin bir hesaplama hatası yapması sonucu mükellef aleyhine fazla vergi tahakkuk ettirmesidir",
    "Mükellefin vergiye ilişkin bir uyuşmazlığı yargıya taşıması hâlinde doğan yargılama giderini ifade eder",
@@ -85,9 +86,9 @@ q(VUK, "vergi_cezalari", "Vergi Cezaları",
   "213 sayılı VUK m.341")
 
 q(VUK, "vergi_cezalari", "Vergi Cezaları",
-  "Vergi cezalarının türleri bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergi ziyaı cezası ile usulsüzlük cezaları idari; kaçakçılık suçlarına ilişkin cezalar ise adli niteliktedir",
-  ["Bütün vergi cezaları adli nitelikte olup yalnızca ceza mahkemeleri tarafından hükmedilebilmektedir",
+  "Bir incelemede vergi ziyaı ve usulsüzlük fiilleriyle birlikte kaçakçılık suçuna ilişkin bulgular saptanmıştır. Bu yaptırımların niteliği bakımından hangisi doğrudur?",
+  "Vergi ziyaı ve usulsüzlük cezaları idari, kaçakçılık suçunun cezası adli niteliktedir",
+  ["Bütün vergi cezaları adlidir ve yalnız ceza mahkemesince verilir",
    "Bütün vergi cezaları idari nitelikte olup hiçbiri için ceza mahkemesine başvurulması söz konusu değildir",
    "Vergi cezaları yalnızca para cezasından ibaret olup hapis cezası hiçbir hâlde söz konusu olamamaktadır",
    "Usulsüzlük cezaları adli, kaçakçılık cezaları ise idari nitelikte olup bu yönüyle birbirinin tersidir"],
@@ -96,8 +97,8 @@ q(VUK, "vergi_cezalari", "Vergi Cezaları",
 
 q(VUK, "mukellef_odevleri", "Mükellef Ödevleri",
   "Defter ve belgelerin muhafaza ve ibraz ödevi bakımından aşağıdakilerden hangisi doğrudur?",
-  "Mükellef, tuttuğu defter ve düzenlediği belgeleri kanunda öngörülen süre boyunca saklamak ve yetkili makamlara ibraz etmekle yükümlüdür",
-  ["Mükellefin defter ve belgeleri saklama yükümlülüğü bulunmayıp bunları dilediği zaman imha edebilmektedir",
+  "Mükellef, defter ve belgelerini kanuni süresince saklayıp istendiğinde yetkili makama ibraz etmelidir",
+  ["Defter ve belgeleri saklama yükümlülüğü mükellefe değil vergi dairesine aittir",
    "Defter ve belgeler yalnızca ilgili hesap dönemi kapanana kadar saklanır; sonrasında ibraz yükümlülüğü düşer",
    "Defter ve belgeleri saklama ödevi mükellefe değil, doğrudan vergi dairesine ait olan bir yükümlülüktür",
    "Mükellef defterlerini saklamakla yükümlüyse de bunları hiçbir hâlde idareye ibraz etmek zorunda değildir"],
@@ -106,7 +107,7 @@ q(VUK, "mukellef_odevleri", "Mükellef Ödevleri",
 
 # ══ VERGİ HUKUKU (7) ══════════════════════════════════════════════════════
 q(VH, "vergi_hukuku_ilkeleri", "Vergi Hukuku İlkeleri",
-  "Verginin kanuniliği ilkesi bakımından aşağıdakilerden hangisi doğrudur?",
+  "İdare, kanuni dayanak olmadan yeni bir mali yükümlülük getiren düzenleyici işlem tesis etmiştir. Verginin kanuniliği ilkesi bakımından hangisi doğrudur?",
   "Vergi, resim, harç ve benzeri mali yükümlülükler kanunla konulur, değiştirilir veya kaldırılır",
   ["Vergiler idarenin çıkardığı yönetmelik ve tebliğlerle serbestçe konulabilir; kanun şartı aranmamaktadır",
    "Vergiler yalnızca Cumhurbaşkanlığı kararnamesiyle konulur; yasama organının bu konuda yetkisi yoktur",
@@ -126,8 +127,8 @@ q(VH, "vergi_hukuku_ilkeleri", "Vergi Hukuku İlkeleri",
   "Anayasa m.73 - mali güce göre vergilendirme")
 
 q(VH, "vergi_hukuku_ilkeleri", "Vergi Hukuku İlkeleri",
-  "Vergi kanunlarının yorumu bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergi kanunları lafzı ve ruhu ile hüküm ifade eder; lafzın açık olmadığı hâllerde konuluş amacı dikkate alınır",
+  "Vergi kanunundaki bir hükmün lafzı açık olmadığından uygulayıcı hükmün sistem içindeki yerini ve konuluş amacını incelemektedir. Yorum bakımından hangisi doğrudur?",
+  "Vergi kanunları lafzı ve ruhuyla uygulanır; lafız açık değilse hükmün konuluş amacı gözetilir",
   ["Vergi kanunları yalnızca lafzıyla uygulanır; hiçbir hâlde amaca veya ruha başvurulamamaktadır",
    "Vergi kanunları kıyas yoluyla genişletilerek uygulanır; benzer olaylara aynı hüküm uygulanabilmektedir",
    "Vergi kanunlarının yorumu tümüyle mükellefin lehine yapılır; şüphe her hâlde mükellef lehine çözülür",
@@ -154,7 +155,7 @@ q(VH, "vergi_uyusmazliklari", "Vergi Uyuşmazlıkları",
 
 q(VH, "vergi_uyusmazliklari", "Vergi Uyuşmazlıkları",
   "Vergi hatası bakımından aşağıdakilerden hangisi doğrudur?",
-  "Vergiye ilişkin hesaplarda veya vergilendirmede yapılan hatalar yüzünden haksız yere fazla veya eksik vergi istenmesi ya da alınmasıdır",
+  "Hesap veya vergilendirme yanlışı nedeniyle haksız yere fazla ya da eksik vergi istenmesi veya alınmasıdır",
   ["Vergi hatası yalnızca mükellefin beyanındaki hataları kapsar; idarenin yaptığı hatalar bu kapsama girmez",
    "Vergi hatası ancak dava açılarak düzeltilebilir; idareye başvuruyla düzeltme hiçbir hâlde mümkün değildir",
    "Vergi hatası kavramı yalnızca hukuki uyuşmazlıkları ifade eder; hesap hataları bu kapsamda değildir",
@@ -175,7 +176,7 @@ q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
 
 q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
   "Dolaysız ve dolaylı vergi ayrımı bakımından aşağıdakilerden hangisi doğrudur?",
-  "Dolaysız vergilerde vergiyi ödeyen ile yüklenen kural olarak aynı kişiyken, dolaylı vergilerde farklı kişilerdir",
+  "Dolaysız vergide ödeyen ve yüklenen genellikle aynı, dolaylı vergide ise farklı kişilerdir",
   ["Dolaysız vergilerde vergiyi ödeyen ile yüklenen farklı kişiler; dolaylı vergilerde ise aynı kişidir",
    "Dolaysız ve dolaylı vergiler arasında yansıma bakımından hiçbir fark bulunmamaktadır",
    "Dolaysız vergiler yalnızca tüzel kişilerden, dolaylı vergiler ise yalnızca gerçek kişilerden alınır",
@@ -192,8 +193,8 @@ q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
 
 q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
   "Servet üzerinden alınan vergiler bakımından aşağıdakilerden hangisi doğrudur?",
-  "Emlak vergisi, motorlu taşıtlar vergisi ile veraset ve intikal vergisi servet üzerinden alınan vergilerdendir",
-  ["Servet üzerinden alınan tek vergi gelir vergisi olup başka bir servet vergisi bulunmamaktadır",
+  "Emlak, motorlu taşıtlar ile veraset ve intikal vergileri servet üzerinden alınır",
+  ["Gelir vergisi servet üzerinden alınan tek vergidir",
    "Motorlu taşıtlar vergisi harcama üzerinden alınan bir vergi olup servet vergisi kapsamında değildir",
    "Servet üzerinden vergi alınması Anayasaya aykırı olduğundan Türk vergi sisteminde yer almamaktadır",
    "Veraset ve intikal vergisi gelir üzerinden alınan bir vergi olup servet vergisi sayılmamaktadır"],
@@ -202,7 +203,7 @@ q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
 
 q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
   "Verginin konusu ve matrahı kavramları bakımından aşağıdakilerden hangisi doğrudur?",
-  "Verginin konusu üzerine vergi konulan iktisadi unsur; matrah ise verginin hesaplanmasına esas alınan değer veya miktardır",
+  "Konu vergilendirilen iktisadi unsur, matrah verginin hesaplandığı değer veya miktardır",
   ["Verginin konusu ile matrahı her hâlde aynı kavram olup aralarında hiçbir fark bulunmamaktadır",
    "Matrah üzerine vergi konulan iktisadi unsur; konu ise verginin hesaplandığı değer veya miktardır",
    "Verginin konusu ve matrahı kanunda düzenlenmemiş olup idarenin serbestçe belirlediği kavramlardır",
@@ -214,8 +215,8 @@ q(TVS, "vergi_sistemi_yapisi", "Vergi Sistemi Yapısı",
 q(GV, "gelir_unsurlari", "Gelir Unsurları",
   "Gelir vergisinde gelirin unsurları bakımından aşağıdakilerden hangisi doğrudur?",
   "Ticari, zirai ve serbest meslek kazançları ile ücretler, gayrimenkul ve menkul sermaye iratları ve diğer kazanç ve iratlar gelirin unsurlarıdır",
-  ["Gelir vergisinde yalnızca ücretler vergilendirilir; diğer kazanç türleri gelir sayılmamaktadır",
-   "Gelirin unsurları kanunda sayılmamış olup idare her türlü kazancı takdiren gelir sayabilmektedir",
+  ["Gelir vergisinde yalnızca işverene bağlı çalışma karşılığında elde edilen ücretler vergilendirilir; ticari, zirai ve serbest meslek faaliyetlerinden doğan kazançlar gelir sayılmaz",
+   "Gelirin unsurları kanunda sınırlı olarak sayılmamıştır; vergi idaresi her takvim yılında ekonomik koşullara göre dilediği kazanç ve iradı gelir unsuru olarak belirleyebilir",
    "Gelir vergisinde yalnızca ticari kazanç vergilendirilir; serbest meslek kazancı kapsam dışındadır",
    "Menkul ve gayrimenkul sermaye iratları gelir sayılmaz; yalnızca emekle elde edilen kazançlar gelirdir"],
   "GVK m.2: gelire giren kazanç ve iratlar yedi bentte sayılmıştır: ticari kazançlar, zirai kazançlar, ücretler, serbest meslek kazançları, gayrimenkul sermaye iratları, menkul sermaye iratları, diğer kazanç ve iratlar.",
@@ -223,7 +224,7 @@ q(GV, "gelir_unsurlari", "Gelir Unsurları",
 
 q(GV, "gelir_unsurlari", "Gelir Unsurları",
   "Gelir vergisinde tam ve dar mükellefiyet ayrımı bakımından aşağıdakilerden hangisi doğrudur?",
-  "Tam mükellefler yurt içi ve dışı tüm kazançları, dar mükellefler yalnızca Türkiye'deki kazançları üzerinden vergilendirilir",
+  "Tam mükellef tüm kazançları, dar mükellef yalnız Türkiye'deki kazançları üzerinden vergilendirilir",
   ["Tam mükellefler yalnızca Türkiye'deki, dar mükellefler ise dünya genelindeki kazançları üzerinden vergilendirilir",
    "Tam ve dar mükellefiyet arasında vergilendirilecek kazançlar bakımından hiçbir fark bulunmamaktadır",
    "Tam mükellefiyet yalnızca kurumlara, dar mükellefiyet yalnızca gerçek kişilere uygulanabilmektedir",
@@ -233,7 +234,7 @@ q(GV, "gelir_unsurlari", "Gelir Unsurları",
 
 q(GV, "gelir_unsurlari", "Gelir Unsurları",
   "Ticari kazançta gerçek usul ve basit usul ayrımı bakımından aşağıdakilerden hangisi doğrudur?",
-  "Gerçek usulde kazanç defter kayıtlarına göre; basit usulde ise kanuni koşulları taşıyanlarda daha yalın esaslarla tespit edilir",
+  "Gerçek usulde kayıtlar, basit usulde kanuni koşullara bağlı daha yalın esaslar kullanılır",
   ["Gerçek usul ve basit usul arasında kazancın tespiti bakımından hiçbir fark bulunmamaktadır",
    "Basit usulde kazanç defter kayıtlarına göre, gerçek usulde ise yalın esaslara göre tespit edilir",
    "Ticari kazanç yalnızca basit usulde tespit edilir; gerçek usul diye bir yöntem bulunmamaktadır",
@@ -243,7 +244,7 @@ q(GV, "gelir_unsurlari", "Gelir Unsurları",
 
 q(GV, "beyan_ve_tespit", "Beyan ve Tespit",
   "Gelir vergisinde beyan esası bakımından aşağıdakilerden hangisi doğrudur?",
-  "Gelir vergisi kural olarak mükellefin beyanı üzerine tarh olunur; gelir, yıllık beyanname ile beyan edilir",
+  "Gelir vergisi kural olarak yıllık beyannameyle beyan edilen gelir üzerinden tarh edilir",
   ["Gelir vergisi hiçbir hâlde beyanname gerektirmez; vergi tümüyle idarece resen tarh edilmektedir",
    "Gelir vergisinde beyan esası bulunmaz; vergi yalnızca kaynakta kesinti yoluyla tahsil edilmektedir",
    "Yıllık beyanname yalnızca kurumlar vergisi mükelleflerince verilir; gerçek kişiler beyanname vermez",
@@ -271,9 +272,9 @@ q(GV, "beyan_ve_tespit", "Beyan ve Tespit",
 # ══ KURUMLAR VERGİSİ (6) ══════════════════════════════════════════════════
 q(KV, "kurumlar_mukellefiyeti", "Kurumlar Mükellefiyeti",
   "Kurumlar vergisinin mükellefleri bakımından aşağıdakilerden hangisi doğrudur?",
-  "Sermaye şirketleri, kooperatifler, iktisadi kamu kuruluşları ve dernek-vakıf iktisadi işletmeleri kurumlar vergisi mükellefidir",
-  ["Kurumlar vergisinin mükellefi yalnızca gerçek kişiler olup tüzel kişiler bu verginin konusuna girmez",
-   "Kurumlar vergisi yalnızca anonim şirketlerden alınır; limited şirket ve kooperatifler kapsam dışıdır",
+  "Sermaye şirketleri, kooperatifler, iktisadi kamu kuruluşları, dernek-vakıf iktisadi işletmeleri ve iş ortaklıkları kurumlar vergisi mükellefidir",
+  ["Kurumlar vergisinin mükellefi yalnızca ticari faaliyet yürüten gerçek kişilerdir; sermaye şirketleri ile diğer tüzel kişi ve kuruluşlar bu verginin konusuna girmez",
+   "Kurumlar vergisi yalnızca payları borsada işlem gören anonim şirketlerden alınır; limited şirketler, kooperatifler, iktisadi kuruluşlar ve iş ortaklıkları kapsam dışıdır",
    "Dernek ve vakıflar her hâlde kurumlar vergisi mükellefidir; iktisadi işletme koşulu aranmamaktadır",
    "Kurumlar vergisinin mükellefleri kanunda sayılmamış olup idare dilediği kuruluşu mükellef sayabilir"],
   "KVK m.1: sermaye şirketleri, kooperatifler, iktisadi kamu kuruluşları, dernek veya vakıflara ait iktisadi işletmeler ve iş ortaklıkları kurumlar vergisi mükellefidir. Kurum kazancı gelir vergisi konusuna giren gelir unsurlarından oluşur.",
@@ -291,7 +292,7 @@ q(KV, "kurumlar_mukellefiyeti", "Kurumlar Mükellefiyeti",
 
 q(KV, "kurum_kazanci", "Kurum Kazancı",
   "Kurum kazancının niteliği bakımından aşağıdakilerden hangisi doğrudur?",
-  "Kurum kazancı, gelir vergisinin konusuna giren gelir unsurlarından oluşur ve bir bütün olarak vergilendirilir",
+  "Kurum kazancı, gelir vergisine giren unsurların toplamından oluşur ve bir bütün olarak vergilenir",
   ["Kurum kazancı yalnızca ticari kazançtan oluşur; kurumun diğer gelir unsurları kazanca dâhil edilmez",
    "Kurum kazancı her gelir unsuru için ayrı ayrı ve farklı oranlarla vergilendirilen bir kazanç türüdür",
    "Kurum kazancının nasıl belirleneceği kanunda düzenlenmemiş olup idarenin takdirine bırakılmıştır",
@@ -430,7 +431,7 @@ def emit(items, prefix, seed):
             "explanation": it["why"],
             "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", it["label"]],
+            "tags": ["Özgün Soru", "2026 Formatı", "Bölüm Havuzu", it["label"]],
             "difficulty": it["difficulty"], "updatedAt": "2026-07-16T00:00:00Z",
             "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-16",
             "sourceUpdatedAt": "2026-07-16T00:00:00Z", "isPremium": False, "isActive": True,
@@ -445,9 +446,17 @@ if __name__ == "__main__":
     t2 = [x for i, x in enumerate(duz) if i % 2 == 0] + [x for i, x in enumerate(onc) if i % 2 == 0]
     t3 = [x for i, x in enumerate(duz) if i % 2 == 1] + [x for i, x in enumerate(onc) if i % 2 == 1]
     print(f"öncüllü {len(onc)} → t2:{len([x for x in t2 if x in onc])} t3:{len([x for x in t3 if x in onc])}")
-    APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik"
+    root = Path(__file__).resolve().parents[3]
+    targets = (
+        root / "content" / "yeterlilik",
+        root.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik",
+    )
     for items, name, prefix, seed in ((t2, "questions_vergi_test2_2026.json", "vergi-t2", 20260809),
                                       (t3, "questions_vergi_test3_2026.json", "vergi-t3", 20260810)):
         data = emit(items, prefix, seed)
-        json.dump(data, open(f"{APP}/{name}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        for target in targets:
+            target.mkdir(parents=True, exist_ok=True)
+            with (target / name).open("w", encoding="utf-8") as handle:
+                json.dump(data, handle, ensure_ascii=False, indent=2)
+                handle.write("\n")
         print(f"{name}: {len(data)} soru | harf {''.join(x['correctAnswer'] for x in data)}")

@@ -271,9 +271,9 @@
     "choices": {
       "A": "Sermayeye eklenir.",
       "B": "Yalnız satış olduğunda kaydedilir.",
-      "C": "Anormal kayıp tutarı gelecek dönemlere ait gider kabul edilerek aktifte bekletilir.",
+      "C": "Anormal kaybın tamamı normal üretim maliyeti sayılarak satılıncaya kadar stokta izlenir.",
       "D": "Gerçekleştiği dönemde gider olarak muhasebeleştirilir.",
-      "E": "Anormal kaybın tamamı normal üretim maliyeti sayılarak satılıncaya kadar stokta izlenir."
+      "E": "Anormal kayıp tutarı gelecek dönemlere ait gider kabul edilerek aktifte bekletilir."
     },
     "correctAnswer": "D",
     "explanation": "Anormal fire ve kayıplar stokları mevcut konum ve durumuna getiren normal maliyetlerden değildir; oluştukları dönemde giderleştirilir.",
@@ -303,10 +303,10 @@
     "question": "Üretimin bir sonraki aşaması için zorunlu olmayan mamul depolama giderleri TMS 2'ye göre kural olarak nasıl değerlendirilir?",
     "choices": {
       "A": "Stok maliyetine alınmaz, dönem gideri olur.",
-      "B": "Üretimin sonraki aşaması için zorunlu olmasa da her durumda stok maliyetine eklenir.",
-      "C": "Depolama gideri stokun net gerçekleşebilir değerine eklenerek değer düşüklüğünü azaltır.",
-      "D": "Satın alma iskontosudur.",
-      "E": "Duran varlık maliyetidir."
+      "B": "Duran varlık maliyetidir.",
+      "C": "Satın alma iskontosudur.",
+      "D": "Üretimin sonraki aşaması için zorunlu olmasa da her durumda stok maliyetine eklenir.",
+      "E": "Depolama gideri stokun net gerçekleşebilir değerine eklenerek değer düşüklüğünü azaltır."
     },
     "correctAnswer": "A",
     "explanation": "Üretim sürecinde bir sonraki aşamaya geçiş için zorunlu olmayan depolama maliyetleri stok maliyetinin dışında bırakılır ve giderleştirilir.",
@@ -368,11 +368,11 @@
     "topicId": "finansal_stoklar",
     "question": "Mamul için yapılan reklam harcamasına ilişkin ifadeleri değerlendiriniz.\n\nI. Satış ve pazarlama gideri niteliğindedir.\n\nII. Mamul satışından önce yapıldığı için stok maliyetine alınır.\n\nIII. Üretim maliyetine değil, gerçekleştiği dönemin sonucuna yansır.\n\nBuna göre hangileri doğrudur?",
     "choices": {
-      "E": "I ve III",
-      "A": "Yalnız I",
-      "B": "Yalnız II",
-      "C": "Yalnız III",
-      "D": "I ve II"
+      "A": "Yalnız II",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "Yalnız III",
+      "E": "I ve III"
     },
     "correctAnswer": "E",
     "explanation": "Reklam harcaması satış ve pazarlama gideridir; satıştan önce yapılması onu stok maliyetine dönüştürmez ve gerçekleştiği dönemde giderleştirilir.",
@@ -468,10 +468,10 @@
     "question": "Sabit genel üretim giderlerinin mamullere dağıtımında TMS 2'ye göre temel alınan kapasite hangisidir?",
     "choices": {
       "A": "Üretim tesislerinin normal kapasitesi",
-      "B": "Satış kapasitesi",
-      "C": "Dönemde gerçekleşen düşük üretim düzeyi ve kullanılmayan kapasite toplamı",
-      "D": "Bütçelenen satış adedi",
-      "E": "Hiç duruş yaşanmadığı varsayımıyla hesaplanan azami teorik üretim kapasitesi"
+      "B": "Hiç duruş yaşanmadığı varsayımıyla hesaplanan azami teorik üretim kapasitesi",
+      "C": "Satış kapasitesi",
+      "D": "Dönemde gerçekleşen düşük üretim düzeyi ve kullanılmayan kapasite toplamı",
+      "E": "Bütçelenen satış adedi"
     },
     "correctAnswer": "A",
     "explanation": "Sabit genel üretim giderleri normal kapasite esas alınarak dağıtılır; böylece düşük üretim stok birim maliyetini yapay biçimde yükseltmez.",
@@ -533,10 +533,10 @@
     "topicId": "finansal_stoklar",
     "question": "Fiilî üretim olağan dışı derecede yüksek olduğunda birim başına dağıtılan sabit genel üretim gideri için hangi uygulama yapılır?",
     "choices": {
-      "A": "Olağan dışı yüksek üretimin yarattığı farkın tamamı doğrudan özkaynak hesaplarında izlenir.",
+      "A": "Üretim düzeyine bakılmadan sabit genel üretim giderlerinin tamamı dönem gideri yapılır.",
       "B": "Birim başına tutar artırılır.",
-      "C": "Üretim düzeyine bakılmadan sabit genel üretim giderlerinin tamamı dönem gideri yapılır.",
-      "D": "Normal kapasite dikkate alınmaz ve giderler satışa yüklenir.",
+      "C": "Normal kapasite dikkate alınmaz ve giderler satışa yüklenir.",
+      "D": "Olağan dışı yüksek üretimin yarattığı farkın tamamı doğrudan özkaynak hesaplarında izlenir.",
       "E": "Stokların maliyet üstünde ölçülmemesi için birim başına tutar azaltılır."
     },
     "correctAnswer": "E",
@@ -566,10 +566,10 @@
     "topicId": "finansal_stoklar",
     "question": "Ortak üretim maliyetlerinin dağıtımına ilişkin ifadeleri değerlendiriniz.\n\nI. Dağıtım makul ve tutarlı bir temele dayanmalıdır.\n\nII. Ürünlerin nispi satış değerleri dağıtım anahtarı olarak kullanılamaz.\n\nIII. Ortak maliyetin tamamı her durumda en yüksek miktarlı ürüne yüklenir.\n\nBuna göre hangileri doğrudur?",
     "choices": {
-      "C": "Yalnız I",
       "A": "Yalnız II",
-      "B": "Yalnız III",
-      "D": "I ve II",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "Yalnız III",
       "E": "I ve III"
     },
     "correctAnswer": "C",
@@ -667,9 +667,9 @@
     "choices": {
       "A": "Maliyetlerin özel olarak belirlenmesi",
       "B": "Hareketli ağırlıklı ortalama maliyet yöntemi",
-      "C": "Son giren ilk çıkar",
-      "D": "Perakende satış fiyatı yöntemi",
-      "E": "Satış fiyatı yöntemi"
+      "C": "Satış fiyatı yöntemi",
+      "D": "Son giren ilk çıkar",
+      "E": "Perakende satış fiyatı yöntemi"
     },
     "correctAnswer": "A",
     "explanation": "Birbirleriyle ikame edilemeyen stoklar ile özel proje için üretilen veya ayrılan kalemlerin maliyeti tek tek özel maliyetleri belirlenerek saptanır.",
@@ -700,8 +700,8 @@
     "choices": {
       "A": "Stok hareketinin olmadığı",
       "B": "İlk alınan veya üretilen stokların önce satıldığı",
-      "C": "Satın alma tarihine bakılmadan birim maliyeti en yüksek stok kaleminin önce satıldığı",
-      "D": "Dönem içinde en son alınan veya üretilen stok kalemlerinin önce satışa konu edildiği",
+      "C": "Dönem içinde en son alınan veya üretilen stok kalemlerinin önce satışa konu edildiği",
+      "D": "Satın alma tarihine bakılmadan birim maliyeti en yüksek stok kaleminin önce satıldığı",
       "E": "Bütün stokların aynı anda satıldığı"
     },
     "correctAnswer": "B",

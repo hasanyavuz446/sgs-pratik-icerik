@@ -339,10 +339,10 @@ PREMISES = {
         "TMS 16'da amortismanın başlamasına ilişkin ifadeleri değerlendiriniz.",
         [
             "Varlık yönetimin amaçladığı kullanıma hazır olduğunda amortisman başlar.",
-            "Bedelin tamamen ödenmiş olması başlangıç için zorunlu değildir.",
             "Siparişin verildiği tarihte varlık kullanıma hazır olmasa da amortisman başlar.",
+            "Bedelin tamamen ödenmiş olması başlangıç için zorunlu değildir.",
         ],
-        "I ve II",
+        "I ve III",
         "Amortisman, varlık amaçlanan yer ve durumda kullanıma hazır olduğunda başlar; "
         "ödeme veya sipariş tarihi tek başına belirleyici değildir.",
     ),
@@ -361,10 +361,10 @@ PREMISES = {
         "257 Birikmiş Amortismanlar hesabına ilişkin ifadeleri değerlendiriniz.",
         [
             "Maddi duran varlıkları düzenleyici aktif karakterli bir hesaptır.",
-            "Kural olarak alacak bakiyesi verir.",
             "Varlık hesabı gibi artışlarında borçlandırılır.",
+            "Kural olarak alacak bakiyesi verir.",
         ],
-        "I ve II",
+        "I ve III",
         "Birikmiş amortisman varlığın maliyetinden düşülen düzenleyici hesaptır ve normal "
         "koşullarda alacak bakiyesi verir.",
     ),
@@ -440,10 +440,10 @@ PREMISES = {
         "TMS 16'ya göre makinenin ilk maliyetine ilişkin ifadeleri değerlendiriniz.",
         [
             "Ticari iskontolar düşüldükten sonraki satın alma bedeli maliyete dâhildir.",
-            "Makineyi gerekli yere ve çalışabilir duruma getiren doğrudan giderler maliyete dâhildir.",
             "Kullanıma hazır olduktan sonraki olağan bakım giderleri ilk maliyete eklenir.",
+            "Makineyi gerekli yere ve çalışabilir duruma getiren doğrudan giderler maliyete dâhildir.",
         ],
-        "I ve II",
+        "I ve III",
         "Satın alma bedeli ile varlığı gerekli yer ve duruma getiren doğrudan giderler ilk "
         "maliyettir; kullanıma hazır olduktan sonraki olağan bakım dönem gideridir.",
     ),
@@ -462,10 +462,10 @@ PREMISES = {
         "TMS 37'de koşullu yükümlülüğe ilişkin ifadeleri değerlendiriniz.",
         [
             "Karşılık kaydı koşulları oluşmadığında finansal tablolara yükümlülük olarak alınmaz.",
-            "Kaynak çıkışı ihtimali uzak değilse dipnotlarda açıklanır.",
             "Her koşullu yükümlülük için kesin borç kaydı yapılır.",
+            "Kaynak çıkışı ihtimali uzak değilse dipnotlarda açıklanır.",
         ],
-        "I ve II",
+        "I ve III",
         "Karşılık koşulları oluşmamış olası yükümlülük kaydedilmez; çıkış ihtimali uzak "
         "değilse niteliği ve mümkünse finansal etkisi açıklanır.",
     ),
@@ -537,6 +537,71 @@ PAD_SUFFIXES = [
     "ilgili hesap veya kalem bu esasa göre belirlenir",
 ]
 
+# Denetim eşiklerini geçmek için anlamsız dolgu kullanmak yerine soru bağlamına
+# özgü, elle yazılmış yakın çeldiriciler ve kısa hesap kodu seçenekleri kullanılır.
+CURATED_REPLACEMENTS = {
+    "topic-finansal-temel-002": {
+        "Önemlilik": "İşletmenin sürekliliği",
+    },
+    "topic-finansal-temel-005": {
+        "Tutarlılık": "Sosyal sorumluluk",
+    },
+    "topic-finansal-temel-013": {
+        "Süreklilik": "İşletmenin sürekliliği",
+    },
+    "topic-finansal-temel-028": {
+        "Süreklilik": "İşletmenin sürekliliği",
+    },
+    "topic-finansal-temel-041": {
+        "Süreklilik": "İşletmenin sürekliliği",
+    },
+    "topic-finansal-kayit-043": {
+        "591 Dönem Net Zararı": "591 hesabı",
+        "692 Dönem Net Kârı veya Zararı": "692 hesabı",
+        "590 Dönem Net Kârı": "590 hesabı",
+        "570 Geçmiş Yıllar Kârları": "570 hesabı",
+        "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları": "691 hesabı",
+    },
+    "topic-finansal-donem-005": {
+        "En azından her hesap dönemi sonunda": "Her hesap dönemi sonunda",
+    },
+    "topic-finansal-donem-030": {
+        "Gelecek dönem gelirini artırmak için": "Gelecek dönemin gelir ve kârını artırmak için",
+        "Elektriği duran varlık yapmak için": "Elektrik bedelini maddi duran varlık maliyetine aktarmak için",
+    },
+    "topic-finansal-donem-036": {
+        "Varlıkları azaltır, borçları artırır.": "Varlıkları azaltıp finansal borçları ve dönem giderini artırır.",
+        "Finansal tabloları etkilemez.": "Tahsilat yapılmadığı için finansal tablolarda hiçbir etki doğurmaz.",
+    },
+    "topic-finansal-donem-041": {
+        "Alacak azalır, kambiyo zararı doğar.": "Ticari alacak azalır ve 14.000 TL kambiyo zararı doğar.",
+        "Stok maliyeti artar.": "Stok maliyeti ve dönem gideri 14.000 TL artar.",
+    },
+    "topic-finansal-donem-042": {
+        "Borç azalır, gelir artar.": "Borç azalır ve kambiyo geliri artar.",
+        "Borç ve kambiyo kârı artar.": "Borç artar ve kambiyo kârı doğar.",
+    },
+    "topic-finansal-donem-045": {
+        "Daha önce ayrılan değer düşüklüğü ve maliyet sınırı": "Daha önce ayrılan 10.000 TL",
+    },
+    "topic-finansal-tfrs-015": {
+        "Yıllık rapordaki bütün dipnotların aynen tekrarlanması zorunludur.": "Ara dönem raporunda yıllık finansal rapordaki bütün tablo ve dipnotların değişmeden tekrarlanması zorunludur.",
+        "Sadece yönetim kurulu faaliyet raporu yeterlidir.": "Ara dönem için yalnız yönetim kurulu faaliyet raporunun yayımlanması finansal raporlama bakımından yeterlidir.",
+    },
+    "topic-finansal-tfrs-018": {
+        "Süresiz ömürlü varlık kaydetmek": "Süresiz yararlı ömürlü maddi olmayan duran varlık olarak aktifleştirmek",
+        "Şerefiye olarak aktifleştirmek": "İşletme birleşmesinden doğan şerefiye olarak aktifleştirmek",
+    },
+    "topic-finansal-tfrs-026": {
+        "Daima finansal varlığın maliyetine eklenir.": "İşlem maliyetlerini finansal varlığın ilk defter değerine ekleyip vadesi boyunca itfa etmek",
+        "Özkaynakta süresiz bekletilir.": "İşlem maliyetlerini özkaynakta ayrı bir yedek hesabında süresiz olarak bekletmek",
+    },
+    "topic-finansal-tfrs-047": {
+        "Hizmet koşulu önemsenmez ve bütün gider korunur.": "Hizmet koşulunun gerçekleşmemesi hak kazanmayı etkilemez; çalışan ayrılsa da önceki ve gelecekteki tüm hizmet giderleri korunur.",
+        "Gider yalnız vergi beyannamesine yazılır.": "Çalışanın ayrılması yalnız vergi beyannamesini etkiler; TFRS 2 kapsamında kümülatif giderlerde düzeltme yapılmaz.",
+    },
+}
+
 
 def gen_letters(seed: int, n_each: int = 12) -> list[str]:
     """Her harften 12; run en fazla 2; kısa periyot ve düşük bigram yok."""
@@ -604,6 +669,24 @@ def strip_generated_padding(text: str) -> str:
                 break
         if not matched:
             return text
+
+
+def apply_curated_replacements(question: dict) -> None:
+    replacements = CURATED_REPLACEMENTS.get(question["id"], {})
+    for old, new in replacements.items():
+        matching = [
+            letter for letter, text in question["choices"].items()
+            if text == old
+        ]
+        if matching:
+            assert len(matching) == 1, (question["id"], old, matching)
+            question["choices"][matching[0]] = new
+            continue
+        if new in question["choices"].values():
+            continue
+        raise AssertionError(
+            f"{question['id']}: hedef seçenek bulunamadı: {old!r}"
+        )
 
 
 def balance_distractor_lengths(question: dict) -> None:
@@ -713,11 +796,17 @@ def verify(packages: dict[str, list[dict]]) -> None:
 
 
 def write_packages(packages: dict[str, list[dict]]) -> None:
-    for filename, questions in packages.items():
-        (CONTENT / filename).write_text(
-            json.dumps(questions, ensure_ascii=False, indent=2) + "\n",
-            encoding="utf-8",
-        )
+    roots = (
+        CONTENT,
+        ROOT.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik",
+    )
+    for root in roots:
+        root.mkdir(parents=True, exist_ok=True)
+        for filename, questions in packages.items():
+            (root / filename).write_text(
+                json.dumps(questions, ensure_ascii=False, indent=2) + "\n",
+                encoding="utf-8",
+            )
 
 
 def main() -> None:
@@ -736,6 +825,7 @@ def main() -> None:
                 for letter, text in question["choices"].items()
             }
             apply_premise(question)
+            apply_curated_replacements(question)
 
     pre_shuffle_answers = {
         question["id"]: question.get(

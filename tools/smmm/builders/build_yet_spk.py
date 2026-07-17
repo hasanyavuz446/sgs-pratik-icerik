@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 """Yeterlilik — Sermaye Piyasası Mevzuatı Test 2 + Test 3 (2×19 = 38 soru).
-6362 sayılı SPKn. Doğru şık KISA, çeldiriciler UZUN.
+6362 sayılı SPKn. Şıklar aynı kavramsal düzeyde ve doğal uzunlukta tutulur.
 Yıla bağlı tutar/oran YOK (idari para cezaları her yıl değişir — sorulmadı).
 explanation'da harf atıfı YOK."""
 import json, random, re
+from pathlib import Path
 
 L = "sermaye_piyasasi_ve_finans"
 Q = []
@@ -16,7 +17,7 @@ def q(topic, label, stem, correct, distractors, why, ref, difficulty="medium"):
 q("spk_ve_duzenleme", "SPK ve Düzenleme",
   "6362 sayılı Sermaye Piyasası Kanunu'nun amacı bakımından aşağıdakilerden hangisi doğrudur?",
   "Sermaye piyasasının güvenilir, şeffaf, etkin, istikrarlı ve rekabetçi biçimde işleyişini sağlamak ve yatırımcıların hak ve menfaatlerini korumaktır",
-  ["Yalnızca ihraççı şirketlerin kâr payı dağıtımını artırmayı ve ortaklara azami getiri sağlamayı amaçlar",
+  ["Yalnızca ihraççı şirketlerin kâr payı dağıtımını düzenlemeyi, şirketlerin finansman maliyetini azaltmayı ve ortaklara azami getiri sağlanmasını güvence altına almayı amaçlar",
    "Sermaye piyasasında işlem yapan yatırımcıların kâr etmesini devlet güvencesi altına almayı hedeflemektedir",
    "Bankacılık sisteminin denetimini düzenlemek ve mevduat toplama faaliyetini kurala bağlamak amacını taşır",
    "Yalnızca kamu iktisadi teşebbüslerinin özelleştirilmesine ilişkin usulleri belirlemek üzere düzenlenmiştir"],
@@ -56,7 +57,7 @@ q("spk_ve_duzenleme", "SPK ve Düzenleme",
 q("spk_ve_duzenleme", "SPK ve Düzenleme",
   "Yatırımcı Tazmin Merkezi bakımından aşağıdakilerden hangisi doğrudur?",
   "Yatırım kuruluşlarının nakit ödeme veya araç teslim yükümlülüğünü yerine getirememesi hâlinde tazminle görevli kamu tüzel kişisidir",
-  ["Yatırımcıların borsada uğradığı her türlü fiyat kaybını ve zararını karşılamakla görevli bir fondur",
+  ["Yatırımcıların borsada uğradığı her türlü fiyat kaybını karşılamak ve her yatırımcının anaparasıyla beklenen getirisini güvence altına almakla görevli bir fondur",
    "Yatırım kuruluşlarının kârlarından pay alarak ortaklarına dağıtan bir portföy yönetim kuruluşudur",
    "Yalnızca bankaların mevduat sahiplerine karşı yükümlülüklerini güvence altına alan bir kuruluştur",
    "İhraççı şirketlerin kâr payı dağıtmaması hâlinde ortaklara tazminat ödemekle yükümlü bir merkezdir"],
@@ -122,7 +123,7 @@ q("sermaye_piyasasi_araclari", "Sermaye Piyasası Araçları",
 q("ihrac_ve_halka_arz", "İhraç ve Halka Arz",
   "İzahnamenin işlevi bakımından aşağıdakilerden hangisi doğrudur?",
   "Yatırımcıların ihraççıyı ve sermaye piyasası aracını değerlendirebilmesi için gerekli bilgileri içeren kamuyu aydınlatma belgesidir",
-  ["İhraççının Kurula sunduğu ve yatırımcılara hiçbir biçimde açıklanmayan gizli bir iç değerlendirme raporudur",
+  ["İhraççının yalnız Kurula sunduğu, yatırımcılara hiçbir biçimde açıklanmayan ve ihraç tamamlandıktan sonra da sürekli gizli tutulması gereken bir iç değerlendirme raporudur",
    "Sermaye piyasası aracının gelecekteki fiyatını ve getirisini Kurulca garanti eden resmî bir taahhütnamedir",
    "İhraççının vergi dairesine sunmakla yükümlü olduğu ve mali durumu gösteren bir beyanname niteliğindedir",
    "Yalnızca borsanın iç işleyişini düzenleyen ve yatırımcıları ilgilendirmeyen teknik bir yönerge metnidir"],
@@ -133,7 +134,7 @@ q("ihrac_ve_halka_arz", "İhraç ve Halka Arz",
   "İzahnamenin Kurulca onaylanmasının anlamı bakımından aşağıdakilerden hangisi doğrudur?",
   "Onay, izahnamedeki bilgilerin tutarlı, anlaşılabilir ve mevzuata uygun olduğunun incelenmesidir; yatırımın kârlılığına ilişkin bir güvence değildir",
   ["Onay, Kurulun sermaye piyasası aracının kârlı bir yatırım olduğunu tasdik ettiği anlamına gelmektedir",
-   "Onay, ihraççının gelecekteki mali başarısının Kurul tarafından garanti edildiğini gösteren bir belgedir",
+   "Onay, ihraççının gelecekteki mali başarısının ve aracın vade sonuna kadar sağlayacağı asgari getirinin Kurul tarafından garanti edildiğini gösteren bir belgedir",
    "Onay, izahnamedeki bilgilerin doğruluğundan ihraççının değil doğrudan Kurulun sorumlu olduğu sonucunu doğurur",
    "Onay, aracın borsada belirli bir fiyatın altına düşmeyeceğine ilişkin resmî bir taahhüt niteliğindedir"],
   "6362 sayılı SPKn m.6: izahnamenin Kurulca onaylanması, izahnamede yer alan bilgilerin tutarlı, anlaşılabilir ve mevzuata uygun olduğunun incelenmesi anlamına gelir; aracın veya ihraççının tekeffülü ya da yatırımın reklamı sayılmaz.",
@@ -190,7 +191,7 @@ q("kamuyu_aydinlatma", "Kamuyu Aydınlatma",
 q("kamuyu_aydinlatma", "Kamuyu Aydınlatma",
   "İçsel bilgi kavramı bakımından aşağıdakilerden hangisi doğrudur?",
   "Henüz kamuya açıklanmamış, açıklandığında sermaye piyasası aracının fiyatını etkileyebilecek nitelikteki kesin bilgidir",
-  ["Kamuya çoktan açıklanmış ve piyasada herkes tarafından bilinen her türlü genel nitelikli bilgidir",
+  ["Daha önce KAP'ta açıklanmış, piyasadaki bütün yatırımcıların erişimine açılmış ve fiyat üzerindeki etkisini tamamen göstermiş her türlü genel nitelikli bilgidir",
    "İhraççının fiyat üzerinde hiçbir etkisi bulunmayan ve önemsiz kabul edilen sıradan iç yazışmalarıdır",
    "Yalnızca gelecekte gerçekleşmesi belirsiz olan söylenti ve tahminleri ifade eden bir bilgi türüdür",
    "İhraççının vergi dairesine bildirdiği ve kamuoyuyla hiçbir ilgisi bulunmayan mali kayıtlarıdır"],
@@ -201,7 +202,7 @@ q("kamuyu_aydinlatma", "Kamuyu Aydınlatma",
   "İçsel bilginin açıklanmasının ertelenmesi bakımından aşağıdakilerden hangisi doğrudur?",
   "İhraççı, meşru menfaatlerinin zarar görmemesi için sorumluluğu kendisine ait olmak üzere ve yatırımcıları yanıltmamak koşuluyla açıklamayı erteleyebilir",
   ["İçsel bilginin açıklanması hiçbir hâlde ertelenemez; her bilgi öğrenildiği anda derhâl açıklanmalıdır",
-   "İhraççı içsel bilgiyi dilediği kadar ve hiçbir koşula bağlı olmaksızın süresiz olarak erteleyebilmektedir",
+   "İhraççı içsel bilgiyi, fiyat üzerindeki etkisi tümüyle ortadan kalkıncaya kadar hiçbir kayıt veya bildirim yükümlülüğü olmaksızın süresiz olarak erteleyebilmektedir",
    "Erteleme kararını yalnızca Kurul verebilir; ihraççının bu konuda hiçbir takdir yetkisi bulunmamaktadır",
    "Erteleme hâlinde ihraççının hiçbir sorumluluğu doğmaz; sorumluluk tümüyle Kurula geçmiş sayılır"],
   "İhraççılar, meşru menfaatlerinin zarar görmemesi için, yatırımcıların yanıltılmasına yol açmamak ve bilginin gizliliğini sağlamak koşuluyla, sorumluluğu kendilerine ait olmak üzere içsel bilginin açıklanmasını erteleyebilir.",
@@ -248,7 +249,7 @@ q("kolektif_yatirim", "Kolektif Yatırım Kuruluşları",
 q("kolektif_yatirim", "Kolektif Yatırım Kuruluşları",
   "Yatırım fonunun hukuki niteliği bakımından aşağıdakilerden hangisi doğrudur?",
   "Katılma payı sahiplerinin hesabına, inançlı mülkiyet esaslarına göre portföy işletmek amacıyla oluşturulan malvarlığıdır",
-  ["Ortaklarına ortaklık hakkı veren ve genel kurulu bulunan bir anonim ortaklık türü olarak kurulmaktadır",
+  ["Ortaklarına genel kurulda oy hakkı veren ve pay sahiplerine portföydeki varlıklar üzerinde doğrudan mülkiyet sağlayan bir anonim ortaklık türü olarak kurulmaktadır",
    "Bankaların topladığı mevduatı yönetmek amacıyla kurulan ve mevduat garantisi taşıyan bir kuruluştur",
    "Kurucusunun kendi malvarlığıyla tümüyle birleşen ve ondan ayrılamayan bir hesap kalemi niteliğindedir",
    "Yalnızca gayrimenkul alım satımı yapmak üzere kurulabilen ve menkul kıymete yatırım yapamayan bir yapıdır"],
@@ -347,7 +348,7 @@ q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
   "Piyasa dolandırıcılığı suçu bakımından aşağıdakilerden hangisi doğrudur?",
   "Sermaye piyasası araçlarının fiyatına veya işlem hacmine ilişkin yapay görünüm oluşturacak işlem ve eylemlerle işlenir",
-  ["Yalnızca yatırımcının zarar etmesi hâlinde oluşan ve zarar doğmazsa hiç işlenmemiş sayılan bir suçtur",
+  ["Yalnızca yatırımcının fiilen zarar etmesi ve failin bu zarardan doğrudan ekonomik yarar sağlaması hâlinde oluşan; zarar doğmazsa işlenmemiş sayılan bir suçtur",
    "Sermaye piyasasında kâr elde edilmesi hâlinde kendiliğinden oluşan ve kastı aranmayan bir suç türüdür",
    "Yalnızca aracı kurumlar tarafından işlenebilen ve gerçek kişileri hiçbir biçimde kapsamayan bir suçtur",
    "İhraççının izahname düzenlememesi hâlinde oluşan ve piyasa işlemleriyle ilgisi bulunmayan bir suçtur"],
@@ -406,7 +407,7 @@ def emit(items, prefix, seed):
             "explanation": it["why"],
             "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", it["label"]],
+            "tags": ["Özgün Soru", "2026 Formatı", "Bölüm Havuzu", it["label"]],
             "difficulty": it["difficulty"], "updatedAt": "2026-07-15T00:00:00Z",
             "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-15",
             "sourceUpdatedAt": "2026-07-15T00:00:00Z", "isPremium": False, "isActive": True,
@@ -421,9 +422,17 @@ if __name__ == "__main__":
     t2 = [x for i, x in enumerate(duz) if i % 2 == 0] + [x for i, x in enumerate(onc) if i % 2 == 0]
     t3 = [x for i, x in enumerate(duz) if i % 2 == 1] + [x for i, x in enumerate(onc) if i % 2 == 1]
     print(f"öncüllü {len(onc)} → t2:{len([x for x in t2 if x in onc])} t3:{len([x for x in t3 if x in onc])}")
-    APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik"
+    root = Path(__file__).resolve().parents[3]
+    targets = (
+        root / "content" / "yeterlilik",
+        root.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik",
+    )
     for items, name, prefix, seed in ((t2, "questions_sermaye_piyasasi_test2_2026.json", "spk-t2", 20260803),
                                       (t3, "questions_sermaye_piyasasi_test3_2026.json", "spk-t3", 20260804)):
         data = emit(items, prefix, seed)
-        json.dump(data, open(f"{APP}/{name}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        for target in targets:
+            target.mkdir(parents=True, exist_ok=True)
+            with (target / name).open("w", encoding="utf-8") as handle:
+                json.dump(data, handle, ensure_ascii=False, indent=2)
+                handle.write("\n")
         print(f"{name}: {len(data)} soru | harf {''.join(x['correctAnswer'] for x in data)}")
