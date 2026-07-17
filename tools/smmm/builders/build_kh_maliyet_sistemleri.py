@@ -3,18 +3,27 @@
 
 60 özgün soru = 3×20. Sipariş ve safha maliyetleme uygulamaları birlikte,
 ancak mevcut SGS sipariş/safha havuzlarından farklı vaka ve ölçüm düzeyinde.
-Doğru şık KISA, çeldiriciler UZUN; çözümde harf atfı yoktur.
+Seçenekler doğal uzunlukta ve aynı kavramsal düzeydedir; çözümde harf atfı yoktur.
 """
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "maliyet_sistemleri", "Maliyetleme Sistemleri"
 PREFIX, SEED = "kh-mal-sistem", 20260904
-OUTS = [
-    "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_sistemleri_2026.json",
-    "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/yeterlilik/questions_topic_maliyet_sistemleri_2026.json",
-]
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_maliyet_sistemleri_2026.json"
+OUTS = (
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = (
+    "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; "
+    "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+)
 
 Q = []
 
@@ -394,7 +403,7 @@ q("Safha maliyetlemede eşdeğer üretim hesabına ilişkin aşağıdaki ifadele
   "I ve II",
   ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
   "Malzeme ile dönüştürme farklı aşamalarda eklenebilir. Ağırlıklı ortalama maliyetleri birleştirir; FIFO cari dönem birim maliyetini ayrı hesaplar.",
-  "TMS 2 par. 25 ve 27 - maliyet formüllerinin tutarlı uygulanması; safha eşdeğer üretimi")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - safha maliyetleme ve eşdeğer üretim")
 
 beg_units, started, completed, end_units = 1_000, 9_000, 8_200, 1_800
 assert beg_units + started == completed + end_units
@@ -407,7 +416,7 @@ q(f"Ağırlıklı ortalama yönteminde dönem başı {tr(beg_units)} birim, baş
    f"{tr(end_units)} birim yalnız dönem sonu yarı mamulün malzeme eşdeğeri sayıldığı miktar",
    f"{tr(completed+end_units*0.40)} birim dönüştürme derecesinin malzemeye de uygulandığı miktar"],
   f"Malzeme başlangıçta eklendiği için tamamlanan {tr(completed)} ve son stoktaki {tr(end_units)} birimin tümü malzeme yönünden tamdır: {tr(wa_mat_eu)} eşdeğer birim.",
-  "TMS 2 par. 12 ve 27 - safha maliyetlerinin sistematik ölçümü; ağırlıklı ortalama")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama eşdeğer üretim")
 
 end_conv = 0.40
 wa_conv_eu = completed + end_units * end_conv
@@ -419,7 +428,7 @@ q(f"Aynı safhada {tr(completed)} birim tamamlanmış, dönem sonu {tr(end_units
    f"{tr(end_units*end_conv)} birim yalnız dönem sonu yarı mamulün eşdeğer üretim sayıldığı miktar",
    f"{tr((completed+end_units)*end_conv)} birim tamamlananlara da yüzde kırk uygulandığı miktar"],
   f"Dönüştürme eşdeğer birimi {tr(completed)} + {tr(end_units)} × %{int(end_conv*100)} = {tr(wa_conv_eu)} birimdir.",
-  "TMS 2 par. 12 ve 27 - dönüştürme maliyetlerinin eşdeğer birimlere dağıtımı")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - dönüştürme eşdeğer üretimi")
 
 beg_mat_cost, current_mat_cost = 30_000, 170_000
 wa_mat_cost = (beg_mat_cost + current_mat_cost) / wa_mat_eu
@@ -431,7 +440,7 @@ q(f"Dönem başı yarı mamulde {tr(beg_mat_cost)} TL malzeme maliyeti, cari dö
    f"{tr((beg_mat_cost+current_mat_cost)/completed)} TL/birim yalnız tamamlananların paydaya alındığı sonuç",
    f"{tr((beg_mat_cost+current_mat_cost)/end_units)} TL/birim yalnız dönem sonu miktarının paydaya alındığı sonuç"],
   f"Ağırlıklı ortalamada maliyetler birleştirilir: ({tr(beg_mat_cost)} + {tr(current_mat_cost)}) / {tr(wa_mat_eu)} = {tr(wa_mat_cost)} TL/birim.",
-  "TMS 2 par. 25 ve 27 - ağırlıklı ortalama maliyet formülü")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama birim maliyeti")
 
 beg_conv_cost, current_conv_cost = 16_000, 162_400
 wa_conv_cost = (beg_conv_cost + current_conv_cost) / wa_conv_eu
@@ -443,7 +452,7 @@ q(f"Dönem başı yarı mamulde {tr(beg_conv_cost)} TL, cari dönemde {tr(curren
    f"{tr((beg_conv_cost+current_conv_cost)/wa_mat_eu)} TL/birim malzeme eşdeğer biriminin kullanıldığı sonuç",
    f"{tr((beg_conv_cost+current_conv_cost)/completed)} TL/birim yarı mamul eşdeğerinin dışlandığı sonuç"],
   f"Toplam dönüştürme maliyeti {tr(beg_conv_cost+current_conv_cost)} TL'dir. {tr(wa_conv_eu)} eşdeğer birime bölününce {tr(wa_conv_cost)} TL/birim bulunur.",
-  "TMS 2 par. 25 ve 27 - ağırlıklı ortalama maliyet formülü")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama birim maliyeti")
 
 wa_full_unit = wa_mat_cost + wa_conv_cost
 completed_cost = completed * wa_full_unit
@@ -483,7 +492,7 @@ q("Ağırlıklı ortalama yöntemine ilişkin aşağıdaki ifadelerden hangileri
   "I, II ve III",
   ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
   "Ağırlıklı ortalamada dönem başı ve cari maliyetler birleşir; maliyet unsurlarının tamamlanma dereceleri ayrı ölçülebilir ve devredilen birimler tamdır.",
-  "TMS 2 par. 25 ve 27 - ağırlıklı ortalama formülünün tutarlı uygulanması")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama yöntemi")
 
 d2_completed, d2_ending = 7_000, 1_500
 trans_eu = d2_completed + d2_ending
@@ -558,7 +567,7 @@ q(f"FIFO safha maliyetinde dönem başı yarı mamul {tr(fifo_beg)} birim, döne
    f"{tr(fifo_beg)} birim yalnız dönem başı yarı mamullerin başlanıp tamamlandığı kabulü",
    f"{tr(fifo_completed+fifo_beg)} birim dönem başı yarı mamulün tamamlananlara ikinci kez eklendiği miktar"],
   f"Tamamlanan {tr(fifo_completed)} birimin {tr(fifo_beg)} birimi dönem başından gelir. Cari dönemde başlanıp tamamlanan = {tr(fifo_completed)} − {tr(fifo_beg)} = {tr(started_completed)} birimdir.",
-  "TMS 2 par. 27 - FIFO formülünün safha maliyetinde uygulanması")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - safha maliyetleme (FIFO yöntemi)")
 
 beg_conv_degree, end_fifo_conv = 0.30, 0.50
 finish_beg_conv_eu = fifo_beg*(1-beg_conv_degree)
@@ -572,13 +581,13 @@ q(f"FIFO yönteminde dönem başı {tr(fifo_beg)} birim dönüştürme yönünde
    f"{tr(finish_beg_conv_eu+started_completed)} birim dönem sonu yarı mamul emeğinin dışlandığı miktar",
    f"{tr(fifo_beg+started_completed+fifo_end)} birim bütün birimlerin tamamlanma derecesiz toplandığı miktar"],
   f"Dönem başını tamamlama {tr(fifo_beg)} × %70 = {tr(finish_beg_conv_eu)}; başlanıp tamamlanan {tr(started_completed)}; son stok {tr(fifo_end)} × %50 = {tr(end_fifo_conv_eu)} eşdeğer birimdir. Toplam {tr(fifo_conv_eu)} olur.",
-  "TMS 2 par. 27 - FIFO cari dönem eşdeğer üretimi", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO eşdeğer üretimi", "hard")
 
 q("FIFO safha maliyetine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem başı yarı mamulü tamamlamak için cari dönemde yapılan iş ayrı ölçülür\n\nII. Dönemde başlanıp tamamlanan birimler cari dönem eşdeğer üretimine tam girer\n\nIII. Dönem başı maliyeti cari dönem birim maliyeti hesabına dâhil edilir",
   "I ve II",
   ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
   "FIFO cari dönemin işini ayırır; dönem başı maliyeti cari dönem eşdeğer birim maliyetinin payına katılmaz.",
-  "TMS 2 par. 27 - FIFO maliyet formülünün tutarlı uygulanması")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO yönteminin dönem ayrımı")
 
 fifo_mat_eu = started_completed + fifo_end
 assert fifo_mat_eu == 8_800
@@ -589,7 +598,7 @@ q(f"FIFO yönteminde malzeme safha başında eklenmektedir. Dönem başı {tr(fi
    f"{tr(fifo_completed+fifo_end)} birim tamamlanan dönem başı birimlerin cari malzemeye katıldığı miktar",
    f"{tr(fifo_started+fifo_beg)} birim dönem başı miktarın dönemde başlanana ikinci kez eklendiği miktar"],
   f"Dönem başı birimler malzemeyi önceki dönemde almıştır. Cari malzeme eşdeğeri {tr(started_completed)} + {tr(fifo_end)} = {tr(fifo_mat_eu)} birimdir.",
-  "TMS 2 par. 27 - FIFO malzeme eşdeğer üretimi", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO malzeme eşdeğer üretimi", "hard")
 
 fifo_current_mat, fifo_current_conv = 176_000, 182_800
 fifo_mat_unit = fifo_current_mat/fifo_mat_eu
@@ -602,7 +611,7 @@ q(f"FIFO yönteminde cari malzeme maliyeti {tr(fifo_current_mat)} TL/{tr(fifo_ma
    f"{tr(fifo_current_mat/fifo_completed)} TL ve {tr(fifo_current_conv/fifo_completed)} TL yalnız tamamlananların paydaya alındığı sonuç",
    f"{tr(fifo_mat_eu/fifo_current_mat)} TL ve {tr(fifo_conv_eu/fifo_current_conv)} TL maliyet ve birimlerin ters bölündüğü sonuç"],
   f"Malzeme {tr(fifo_current_mat)} / {tr(fifo_mat_eu)} = {tr(fifo_mat_unit)} TL; dönüştürme {tr(fifo_current_conv)} / {tr(fifo_conv_eu)} = {tr(fifo_conv_unit)} TL/birimdir.",
-  "TMS 2 par. 27 - FIFO cari dönem eşdeğer birim maliyeti", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO cari dönem birim maliyeti", "hard")
 
 finish_beg_cost = finish_beg_conv_eu*fifo_conv_unit
 assert finish_beg_cost == 16_800
@@ -613,7 +622,7 @@ q(f"Dönem başı {tr(fifo_beg)} birim dönüştürme yönünden %30 tamamdır. 
    f"{tr(started_completed*fifo_conv_unit)} TL dönemde başlanıp tamamlananların maliyetinin dönem başına verildiği tutar",
    f"{tr(fifo_end*end_fifo_conv*fifo_conv_unit)} TL dönem sonu yarı mamul dönüşümünün dönem başına yüklendiği tutar"],
   f"Cari dönemde kalan iş %70'tir: {tr(fifo_beg)} × %70 × {tr(fifo_conv_unit)} = {tr(finish_beg_cost)} TL.",
-  "TMS 2 par. 27 - FIFO dönem başı yarı mamulü tamamlama maliyeti", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO dönem başı yarı mamul maliyeti", "hard")
 
 started_completed_cost = started_completed*(fifo_mat_unit+fifo_conv_unit)
 assert started_completed_cost == 312_000
@@ -624,7 +633,7 @@ q(f"FIFO yönteminde dönemde başlanıp tamamlanan {tr(started_completed)} biri
    f"{tr((fifo_started)*(fifo_mat_unit+fifo_conv_unit))} TL dönem sonu yarı mamulün de tamamlandığı varsayımı",
    f"{tr((fifo_completed)*(fifo_mat_unit+fifo_conv_unit))} TL dönem başı birimlere cari malzemenin yeniden yüklendiği tutar"],
   f"Tam cari birim maliyeti {tr(fifo_mat_unit+fifo_conv_unit)} TL'dir. {tr(started_completed)} × {tr(fifo_mat_unit+fifo_conv_unit)} = {tr(started_completed_cost)} TL olur.",
-  "TMS 2 par. 27 - FIFO dönemde başlanıp tamamlanan birim maliyeti")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO başlanıp tamamlanan birim maliyeti")
 
 fifo_end_cost = fifo_end*fifo_mat_unit + fifo_end*end_fifo_conv*fifo_conv_unit
 assert fifo_end_cost == 30_000
@@ -635,7 +644,7 @@ q(f"FIFO dönem sonu {tr(fifo_end)} birim malzeme yönünden tam, dönüştürme
    f"{tr(fifo_end*fifo_mat_unit)} TL yalnız malzeme payının yarı mamul maliyeti sayıldığı tutar",
    f"{tr(fifo_end*end_fifo_conv*fifo_conv_unit)} TL yalnız dönüştürme payının yarı mamul maliyeti sayıldığı tutar"],
   f"Malzeme {tr(fifo_end*fifo_mat_unit)} TL, dönüştürme {tr(fifo_end*end_fifo_conv*fifo_conv_unit)} TL'dir; toplam {tr(fifo_end_cost)} TL olur.",
-  "TMS 2 par. 10 ve 27 - FIFO dönem sonu yarı mamul maliyeti")
+  "TMS 2 par. 10-13; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO yarı mamul maliyeti")
 
 beg_total_cost = 39_600
 completed_beg_cost = beg_total_cost + finish_beg_cost
@@ -649,13 +658,13 @@ q(f"FIFO raporunda dönem başı maliyeti {tr(beg_total_cost)} TL, bu birimleri 
    f"{tr(completed_beg_cost+fifo_end_cost)} TL başlanıp tamamlanan birimlerin maliyetinin dışlandığı tutar",
    f"{tr(beg_total_cost+finish_beg_cost+started_completed_cost)} TL dönem sonu yarı mamul maliyetinin dışlandığı tutar"],
   f"Dönem başından tamamlananların maliyeti {tr(beg_total_cost)} + {tr(finish_beg_cost)} = {tr(completed_beg_cost)} TL'dir. Buna {tr(started_completed_cost)} ve {tr(fifo_end_cost)} eklenince {tr(fifo_allocated)} TL bulunur.",
-  "TMS 2 par. 27 - FIFO maliyet uzlaştırması", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO maliyet uzlaştırması", "hard")
 
 q("Ağırlıklı ortalama ile FIFO karşılaştırmasına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Fiyatlar değiştiğinde iki yöntemin birim maliyetleri farklılaşabilir\n\nII. FIFO cari dönem performansını önceki dönem maliyetinden daha çok ayırır\n\nIII. Dönem başı yarı mamul yokken yöntemler mutlaka farklı sonuç verir",
   "I ve II",
   ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
   "Maliyet düzeyi değiştiğinde havuzlama fark yaratabilir ve FIFO cari dönemi ayırır. Dönem başı yarı mamul yoksa yöntem sonuçları aynılaşabilir.",
-  "TMS 2 par. 25 ve 27 - ağırlıklı ortalama ve FIFO formüllerinin tutarlı uygulanması", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama ve FIFO karşılaştırması", "hard")
 
 q("Dönem başı yarı mamulün birim maliyeti cari dönem maliyetinden belirgin düşükse, diğer veriler aynı olmak üzere ağırlıklı ortalama yönteminin cari dönem FIFO maliyetine göre genel etkisi ne olabilir?",
   "Birim maliyeti aşağı doğru yumuşatabilir",
@@ -664,8 +673,225 @@ q("Dönem başı yarı mamulün birim maliyeti cari dönem maliyetinden belirgin
    "Cari dönem maliyetini kullanmadığı için tüm tamamlanan birimleri yalnız dönem başı maliyetiyle değerler",
    "Yarı mamul tamamlanma derecelerini kaldırdığı için maliyet uzlaştırmasını matematiksel olarak imkânsız yapar"],
   "Ağırlıklı ortalama düşük dönem başı maliyetini daha yüksek cari maliyetle birleştirdiğinden, birleşik birim maliyet cari dönem FIFO maliyetinin altında kalabilir.",
-  "TMS 2 par. 25 ve 27 - ağırlıklı ortalama ile FIFO maliyet davranışı", "hard")
+  "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama ve FIFO maliyet davranışı", "hard")
 
+
+# Seçenekler, ilk taslaktaki sistematik "doğru şık kısa" kalıbını kaldırmak
+# üzere aynı kavramsal düzeyde yeniden kurulmuştur. Sayısal sorularda gerekçe
+# metni seçeneğe değil çözüme bırakılır; böylece seçenekler gerçek sınavdaki
+# gibi yalnız sonuçları karşılaştırır.
+CHOICE_OVERRIDES = {
+    1: (
+        "Sipariş maliyetleme sistemi",
+        ["Safha maliyetleme sistemi", "Karma maliyetleme sistemi",
+         "İşlem maliyetleme sistemi", "Standart maliyetleme sistemi"],
+    ),
+    2: (
+        "Safha maliyetleme sistemi",
+        ["Sipariş maliyetleme sistemi", "Karma maliyetleme sistemi",
+         "Proje maliyetleme sistemi", "Parti maliyetleme sistemi"],
+    ),
+    3: (
+        "Belirli sipariş veya üretim partisi",
+        ["Üretim bölümünün dönemlik gider toplamı",
+         "Tedarikçiye göre gruplanan hammadde alımları",
+         "İşletmenin dönemlik toplam satış hacmi",
+         "Dönem sonundaki bütün stokların toplamı"],
+    ),
+    5: (
+        "Ortak süreç ve modele özgü maliyetleri birleştiren karma maliyetleme",
+        ["Bütün üretimi tek safha ortalamasıyla ölçen safha maliyetleme",
+         "Her ayakkabı teki için ayrı kart açan sipariş maliyetleme",
+         "Üretim giderlerini yalnız satış bölümünde toplayan dönem yaklaşımı",
+         "Bütün üretim maliyetlerini doğrudan giderleştiren dönem yaklaşımı"],
+    ),
+    6: (
+        "İşe yüklenen üç maliyet unsurunu bir kayıtta toplamak",
+        ["Satışları tahsilat vadelerine göre sınıflandırmak",
+         "Yarı mamulleri doğrudan mamul kabul etmek",
+         "Finansman giderlerini işlere eşit dağıtmak",
+         "Genel yönetim giderlerini ürünlere yüklemek"],
+    ),
+    7: (
+        "Birim ve maliyet akışının eksiksizliğini doğrulamak",
+        ["Satış fiyatlarındaki değişimi dönem kârına aktarmak",
+         "Yarı mamulleri tamamlanmış birim kabul etmek",
+         "Bütün maliyet unsurlarında aynı tamamlanma oranını kullanmak",
+         "Devralınan maliyeti sonraki safhadan ayrı tutmak"],
+    ),
+    8: (
+        "Stok maliyetinin üretim ve satış akışını",
+        ["Üretim giderlerinin doğrudan dönem giderine aktarılmasını",
+         "Maliyetlerin satış hasılatıyla netleştirilmesini",
+         "Genel yönetim giderlerinin mamullere yüklenmesini",
+         "Üretim maliyetlerinin kasa hesabında izlenmesini"],
+    ),
+    9: (
+        "Devralınan maliyet olarak ikinci safhaya taşınır",
+        ["Birinci safhanın dönem gideri olarak kaydedilir",
+         "İkinci safhanın direkt işçilik maliyetinden düşülür",
+         "Doğrudan satılan mamul maliyetine aktarılır",
+         "Finansman maliyeti olarak dönem sonucuna yüklenir"],
+    ),
+    10: (
+        "Benzer birimlerin ortak kaynak tüketimine",
+        ["Maliyetlerin güvenilir biçimde ölçülememesine",
+         "Birimlerin müşteri talebine göre farklılaşmasına",
+         "Direkt işçiliğin dönem gideri kabul edilmesine",
+         "Yarı mamul miktarlarının dönemler boyunca eşit kalmasına"],
+    ),
+    11: (
+        "Parti düzeyinde",
+        ["Birim düzeyinde", "Bölüm düzeyinde", "İşletme düzeyinde", "Tedarikçi düzeyinde"],
+    ),
+    13: (
+        "İşlerin ayırt edilebilir olması",
+        ["Makinelerin aynı özellikte olması", "Satış vadelerinin benzer olması",
+         "Siparişlerin aynı gün tamamlanması", "Üretimin tek bölümde yürütülmesi"],
+    ),
+    14: (
+        "Bölümlerin farklı kaynak tüketimini yansıtır",
+        ["Direkt maliyetleri üretim maliyetinden çıkarır",
+         "Her siparişe aynı tutarda genel gider yükler",
+         "Yarı mamul tamamlanma derecesini gereksiz kılar",
+         "Satış fiyatı yüksek siparişin maliyetini düşürür"],
+    ),
+    15: (
+        "Aynı işletmede farklı üretim yapıları bulunabilir",
+        ["Sektör bilgisi maliyetlemede kullanılamayabilir",
+         "Bütün sektörlerde yalnız sipariş sistemi uygulanabilir",
+         "Safha sistemi yalnız hizmet işletmelerine uygun olabilir",
+         "Üretim akışı maliyet nesnesini her zaman etkilemeyebilir"],
+    ),
+    16: (
+        "20 TL/makine saati ve 20 TL/işçilik saati",
+        ["33,33 TL/makine saati ve 12 TL/işçilik saati",
+         "20 TL/makine saati ve 12 TL/işçilik saati",
+         "40 TL/makine saati ve 20 TL/işçilik saati",
+         "12 TL/makine saati ve 33,33 TL/işçilik saati"],
+    ),
+    17: ("15.000 TL", ["9.000 TL", "6.000 TL", "30.000 TL", "7.500 TL"]),
+    18: ("142.000 TL", ["127.000 TL", "100.000 TL", "57.000 TL", "112.000 TL"]),
+    19: ("355 TL", ["284 TL", "317,50 TL", "473,33 TL", "392,50 TL"]),
+    21: ("110.000 TL", ["62.000 TL", "48.000 TL", "14.000 TL", "220.000 TL"]),
+    22: ("228.000 TL", ["132.000 TL", "96.000 TL", "36.000 TL", "456.000 TL"]),
+    23: ("120.000 TL", ["40.000 TL", "160.000 TL", "280.000 TL", "213.333,33 TL"]),
+    24: (
+        "120.000 TL / 84.000 TL",
+        ["108.000 TL / 48.000 TL", "84.000 TL / 120.000 TL",
+         "156.000 TL / 48.000 TL", "72.000 TL / 156.000 TL"],
+    ),
+    25: ("28.000 TL", ["20 TL", "685,71 TL", "28.020 TL", "0 TL"]),
+    26: (
+        "10.000 TL eksik yükleme",
+        ["10.000 TL fazla yükleme", "1.040.000 TL eksik yükleme",
+         "1.050.000 TL fazla yükleme", "2.090.000 TL eksik yükleme"],
+    ),
+    27: ("18.000 TL", ["10.000 TL", "4.500 TL", "7.500 TL", "45.000 TL"]),
+    29: ("78.000 TL", ["90.000 TL", "98.000 TL", "86.000 TL", "20.000 TL"]),
+    30: ("38.400 TL", ["41.600 TL", "3.200 TL", "35.200 TL", "44.800 TL"]),
+    31: (
+        "151'den 152 Mamuller hesabına aktarılmalıdır",
+        ["151 Yarı Mamuller hesabında bırakılmalıdır",
+         "620 Satılan Mamuller Maliyetine aktarılmalıdır",
+         "770 Genel Yönetim Giderlerine aktarılmalıdır",
+         "120 Alıcılar hesabında izlenmelidir"],
+    ),
+    32: ("16.200 TL", ["21.000 TL", "12.600 TL", "33.600 TL", "9.000 TL"]),
+    33: (
+        "65.000 TL kâr",
+        ["185.000 TL kâr", "250.000 TL kâr", "435.000 TL kâr", "65.000 TL zarar"],
+    ),
+    34: (
+        "Ortak işlem maliyetleri ortalanır, özgü malzeme modele yüklenir",
+        ["Bütün maliyetler satış fiyatına göre müşterilere dağıtılır",
+         "Modele özgü malzeme bütün ürünlere eşit ortalanır",
+         "Ortak işlem maliyetleri giderleştirilip yalnız malzeme stoklanır",
+         "Her mamul birimi için bağımsız bir sipariş maliyet kartı açılır"],
+    ),
+    35: (
+        "Maliyetin yanlış işe veya döneme yüklenmesi",
+        ["Siparişlerin aynı ürüne dönüşmesi", "Satış hasılatının üretime eşitlenmesi",
+         "Yarı mamullerin stok olarak raporlanamaması",
+         "Genel giderlerin direkt malzeme niteliği kazanması"],
+    ),
+    37: ("10.000", ["8.200", "9.000", "1.800", "8.920"]),
+    38: ("8.920", ["10.000", "8.200", "720", "4.000"]),
+    39: ("20 TL", ["17 TL", "3 TL", "24,39 TL", "111,11 TL"]),
+    40: ("20 TL", ["18,21 TL", "1,79 TL", "17,84 TL", "21,76 TL"]),
+    41: ("328.000 TL", ["164.000 TL", "40 TL", "400.000 TL", "378.400 TL"]),
+    42: ("50.400 TL", ["72.000 TL", "28.800 TL", "36.000 TL", "14.400 TL"]),
+    43: (
+        "Maliyetlerin tamamı dağıtılmıştır",
+        ["50.400 TL dağıtılmadan kalmıştır", "328.000 TL fazla dağıtılmıştır",
+         "Yalnız tamamlanan birimler uzlaştırılmıştır",
+         "Yarı mamul maliyeti dönem giderine aktarılmıştır"],
+    ),
+    45: ("8.500", ["7.000", "1.500", "7.750", "4.250"]),
+    46: ("30 TL", ["36,43 TL", "170 TL", "0,03 TL", "32,90 TL"]),
+    47: ("60 TL", ["30 TL", "42 TL", "48 TL", "378 TL"]),
+    48: ("420.000 TL", ["210.000 TL", "60 TL", "510.000 TL", "496.500 TL"]),
+    49: ("76.500 TL", ["90.000 TL", "45.000 TL", "63.000 TL", "27.000 TL"]),
+    50: ("7.800", ["9.000", "8.800", "1.200", "10.200"]),
+    51: ("9.140", ["9.500", "8.300", "8.640", "10.000"]),
+    53: ("8.800", ["10.000", "7.800", "9.000", "1.000"]),
+    54: (
+        "20 TL / 20 TL",
+        ["19,26 TL / 20,77 TL", "40,77 TL / 40,77 TL",
+         "19,56 TL / 20,31 TL", "0,05 TL / 0,05 TL"],
+    ),
+    55: ("16.800 TL", ["24.000 TL", "7.200 TL", "156.000 TL", "10.000 TL"]),
+    56: ("312.000 TL", ["156.000 TL", "352.000 TL", "360.000 TL", "342.000 TL"]),
+    57: ("30.000 TL", ["40.000 TL", "20.000 TL", "10.000 TL", "50.000 TL"]),
+    58: ("398.400 TL", ["342.000 TL", "381.600 TL", "86.400 TL", "368.400 TL"]),
+    60: (
+        "Birim maliyeti aşağı doğru yumuşatabilir",
+        ["Birim maliyeti cari FIFO maliyetine eşitleyebilir",
+         "Üretim maliyetini zorunlu olarak artırabilir",
+         "Tamamlananları yalnız dönem başı maliyetiyle değerleyebilir",
+         "Maliyet uzlaştırmasını matematiksel olarak engelleyebilir"],
+    ),
+}
+
+STEM_OVERRIDES = {
+    36: (
+        "Safha maliyetlemede eşdeğer üretim hesabına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Malzeme ve dönüştürme için ayrı tamamlanma derecesi kullanılabilir\n\n"
+        "II. Ağırlıklı ortalama yöntemi dönem başı ile cari dönem maliyetlerini birleştirir\n\n"
+        "III. FIFO cari dönemin birim maliyetini dönem başı maliyetinden ayırır"
+    ),
+    52: (
+        "FIFO safha maliyetine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Dönem başı yarı mamulü tamamlamak için cari dönemde yapılan iş ayrı ölçülür\n\n"
+        "II. Dönemde başlanıp tamamlanan birimler cari dönem eşdeğer üretimine tam girer\n\n"
+        "III. Dönem başı maliyeti cari dönem eşdeğer birim maliyetinin payına alınmaz"
+    ),
+}
+
+PREMISE_OVERRIDES = {
+    36: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "Malzeme ve dönüştürme farklı tamamlanma derecelerinde olabilir; ağırlıklı ortalama maliyetleri birleştirirken FIFO cari dönem maliyetini önceki dönemden ayırır.",
+    ),
+    52: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "FIFO cari dönemin işini ve maliyetini ayırır; dönem başı maliyeti cari dönem eşdeğer birim maliyetinin payına katılmaz.",
+    ),
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+for number, stem in STEM_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+
+for number, (correct, distractors, why) in PREMISE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+    Q[number - 1]["why"] = why
 
 print("TOPLAM:", len(Q))
 
@@ -699,20 +925,25 @@ if __name__ == "__main__":
             "explanation": item["why"],
             "source": {
                 "kind": "generated",
-                "styleRef": "2026/1 test biçimi",
+                "styleRef": "2026/1 beş seçenekli test biçimi",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": UPDATED_AT,
             "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT,
             "isPremium": False,
             "isActive": True,
         })
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
     for output_path in OUTS:
-        json.dump(out, open(output_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            json.dump(out, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premises = sum(1 for item in out if len(marker.findall(item["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {premises} | harf {''.join(item['correctAnswer'] for item in out)[:40]}…")
