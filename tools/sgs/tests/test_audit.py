@@ -94,6 +94,24 @@ class SgsAuditTest(unittest.TestCase):
         self.assertTrue(any("yinelenen soru" in f and "q2" in f for f in fatals), fatals)
 
 
+class CozumHarfiTest(unittest.TestCase):
+    def test_cozum_harfi_cevapla_uyusmuyorsa_fatal(self):
+        q = soru("q1", "Kök?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
+        q["solution"] = "Gerekçe burada. Doğru cevap B."
+        self.assertTrue(any("çözüm" in f for f in audit_et([q])), audit_et([q]))
+
+    def test_cozum_harfi_uyusuyorsa_temiz(self):
+        q = soru("q1", "Kök?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
+        q["solution"] = "Gerekçe burada. Doğru cevap C."
+        self.assertEqual([f for f in audit_et([q]) if "çözüm" in f], [])
+
+    def test_kucuk_harfli_bu_kelimesi_cevap_harfi_sanilmaz(self):
+        """`re.I` ile arayan bir regex 'Doğru seçenek bu…' içindeki b'yi B sanar."""
+        q = soru("q1", "Kök?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
+        q["solution"] = "Doğru seçenek bu nedenle kapanış kuruna dayanır."
+        self.assertEqual([f for f in audit_et([q]) if "çözüm" in f], [])
+
+
 class KorOgrenciTest(unittest.TestCase):
     """Şıkların içerikten bağımsız örüntü sızdırması — soru okumadan çözülebilirlik."""
 

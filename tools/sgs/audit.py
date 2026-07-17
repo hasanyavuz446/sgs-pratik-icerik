@@ -17,6 +17,9 @@ import sys
 
 LETTERS = set("ABCDE")
 DEMO = re.compile(r"demo\s+(?:soru|açıklama)", re.IGNORECASE)
+# "Doğru cevap B." — büyük harf + sınır ara. `re.I` ile aramak "Doğru seçenek bu…"
+# içindeki b'yi cevap harfi sanar.
+SOLUTION_LETTER = re.compile(r"Doğru\s+(?:cevap|seçenek)\s+([A-E])\b")
 
 # Çeldiricileri şişirmek için kullanılan dolgu kalıpları. Yalnız çeldiricilerde
 # görünürlerse kalıbın kendisi güvenilir bir "yanlış" işaretine dönüşür.
@@ -140,6 +143,13 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         visible = f"{question['stem']} {question['solution']}"
         if DEMO.search(visible):
             issues.append(("FATAL", f"{qid}: kullanıcıya görünen demo ifadesi"))
+
+        # Çözümdeki harf atfı, şık harfleriyle kırılgan biçimde eşleşir: harf ataması
+        # sonradan değişince çözüm sessizce yanlış kalır (bir konuda 46 soru böyle
+        # bozulmuştu). Hedef harf ATIFSIZ çözüm; atıf varsa hiç değilse tutarlı olmalı.
+        harf = SOLUTION_LETTER.search(question["solution"])
+        if harf and harf.group(1) != answer:
+            issues.append(("FATAL", f"{qid}: çözüm “{harf.group(1)}” diyor, cevap “{answer}”"))
 
         source = question.get("source")
         if not isinstance(source, dict) or not str(source.get("legislationRef", "")).strip():
