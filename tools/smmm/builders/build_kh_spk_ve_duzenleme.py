@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""SMMM Sermaye Piyasası Mevzuatı — SPK ve Düzenleme, 3×20.
+
+Dayanaklar, 17.07.2026 tarihinde SPK'nın güncel kurumsal sayfaları, 6362 sayılı
+Kanunun 117–128 inci maddeleri ve 19.11.2025 tarihli SPK Teşkilat Yönetmeliği
+üzerinden doğrulanmıştır.
+"""
+from topic_pack_builder import write_topic
+
+
+def r(scenario, focus, correct, distractors, why, focus_why, ref, difficulty="medium"):
+    return {
+        "scenario": scenario, "focus": focus, "correct": correct,
+        "distractors": distractors,
+        "focus_distractors": distractors[2:] + distractors[:2],
+        "why": why, "focus_why": focus_why, "ref": ref,
+        "difficulty": difficulty,
+    }
+
+
+RULES = [
+    r(
+        "Bir sermaye piyasası kuruluşu, SPK'nın yalnızca Bakanlık içindeki bir danışma birimi olduğunu ve ayrı tüzel kişiliğinin bulunmadığını ileri sürmektedir. Bu görüş doğru mudur?",
+        "Sermaye Piyasası Kurulunun hukuki statüsü nedir?",
+        "Hayır; SPK kamu tüzel kişiliğine sahip bir düzenleyici kurumdur",
+        ["Evet; Hazine ve Maliye Bakanlığının tüzel kişiliksiz dairesidir", "Evet; özel hukuk hükümlerine tabi bir anonim ortaklıktır", "Hayır; fakat yalnız borsanın iç komitesi olarak faaliyet gösterir", "Evet; yatırım kuruluşlarının kurduğu gönüllü meslek birliğidir"],
+        "6362 sayılı Kanun m.117 ve SPK'nın güncel kurumsal açıklaması, Kurulu kamu tüzel kişiliğine sahip bir kurum olarak tanımlar.",
+        "Kurulun bir Bakanlıkla ilgili olması, ayrı kamu tüzel kişiliğini ortadan kaldırmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.117; SPK Kurumsal Yapı", "easy",
+    ),
+    r(
+        "Bir kamu idaresi, SPK'nın bütün teknik kararlarını önceden onaylamadıkça uygulayamayacağını bildirmiştir. Kurulun özerkliği bakımından temel sonuç nedir?",
+        "SPK görev ve yetkilerini hangi kurumsal güvence altında kullanır?",
+        "Özerk biçimde ve kendi sorumluluğu altında bağımsız kullanır",
+        ["Her teknik karar için özel şirketlerden izin alarak kullanır", "Yalnız borsa yönetiminin yazılı talimatıyla kullanabilir", "Mali özerkliği bulunmadan sadece tavsiye niteliğinde kullanır", "Görevlerini yatırımcıların oy çokluğuyla ve süreli vekâletle yürütür"],
+        "Kanun m.117, Kurulun idari ve mali özerkliğini ve görev ile yetkilerini kendi sorumluluğu altında bağımsız kullanmasını güvence altına alır.",
+        "İlgili Bakanlık bağlantısı idari vesayet niteliğinde sınırsız bir ön onay yetkisi yaratmaz; Kurul kanuni görevlerinde bağımsızdır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.117", "medium",
+    ),
+    r(
+        "Kurulun güncel kurumsal bağlantısı sorulduğunda iki adaydan biri Ticaret Bakanlığını, diğeri Hazine ve Maliye Bakanlığını belirtmiştir. Hangisi doğrudur?",
+        "Sermaye Piyasası Kurulunun ilgili olduğu bakanlık hangisidir?",
+        "Hazine ve Maliye Bakanlığıdır",
+        ["Ticaret Bakanlığıdır ve başka bağlantı kurulamaz", "Adalet Bakanlığıdır ve yargı teşkilatında yer alır", "Çalışma ve Sosyal Güvenlik Bakanlığıdır", "Hiçbir bakanlıkla kurumsal bağlantısı bulunmaz"],
+        "SPK'nın 2026 tarihli güncel kurumsal açıklamasına göre Kurulun ilgili olduğu bakanlık Hazine ve Maliye Bakanlığıdır.",
+        "İlgili bakanlık bağlantısı Hazine ve Maliye Bakanlığıyladır; bu bağlantı Kurulun idari ve mali özerkliğini kaldırmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.117; SPK Kurumsal Yapı", "easy",
+    ),
+    r(
+        "Bir mevzuat çalışmasında Kanundaki merkez ile fiilen kullanılan geçiş merkezi birbirine karıştırılmıştır. Doğru ifade hangisidir?",
+        "SPK'nın kanuni merkezi ve taşınma tamamlanıncaya kadar uygulanan geçiş kuralı nedir?",
+        "Kanuni merkez İstanbul, geçiş merkezi Ankara'dır",
+        ["Kanuni merkez Ankara, geçiş merkezi yalnız İzmir'dir", "Kanuni merkez Bursa, geçiş merkezi İstanbul'dur", "Kurulun merkezi yoktur; yalnız çevrim içi çalışır", "Merkezi her yıl yatırım kuruluşları dönüşümlü belirler"],
+        "Kanun m.117 Kurul merkezini İstanbul olarak belirler; geçici hüküm, İstanbul'a taşınma işlemleri tamamlanıncaya kadar merkezin Ankara olduğunu düzenler.",
+        "Kanuni merkez ile taşınma sürecindeki fiilî merkez birlikte ifade edilmelidir; biri diğerini hükümsüz kılmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.117 ve geçici hüküm", "medium",
+    ),
+    r(
+        "Yeni bir çalışan, SPK'nın yalnız Kurul Karar Organından ibaret olduğunu ve Başkanlığa bağlı bir teşkilat bulunmadığını düşünmektedir. Bu doğru mudur?",
+        "Sermaye Piyasası Kurulu hangi iki ana kurumsal unsurdan oluşur?",
+        "Kurul Karar Organı ile Başkana bağlı teşkilattan oluşur",
+        ["Yalnız bağımsız denetim şirketlerinden oluşur", "Borsa şirketi ile yatırım fonlarından oluşur", "Sadece Bakanlık müfettişlerinden oluşan geçici kuruldur", "Yatırımcı temsilcileri ile halka açık şirket ortaklarından oluşur"],
+        "SPK'nın güncel organizasyon açıklamasına göre kurum, Kurul Karar Organı ve Başkana bağlı olarak faaliyetleri yürüten teşkilattan oluşur.",
+        "Karar alma işlevi ile idari teşkilat birbirinden ayrılmış, fakat aynı kurumsal yapı içinde düzenlenmiştir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.118; SPK Teşkilat Yönetmeliği", "easy",
+    ),
+    r(
+        "Kurul Karar Organında başkan ve ikinci başkan dâhil toplam altı üye bulunduğu varsayılmıştır. Bu sayı güncel yapıya uygun mudur?",
+        "Kurul Karar Organının üye sayısı ve başkanlık yapısı nasıldır?",
+        "Başkan ve ikinci başkan dâhil yedi üyeden oluşur",
+        ["Biri başkan olmak üzere toplam üç üyeden oluşur", "Başkan bulunmaksızın on iki üyeden oluşur", "Yalnız iki bakan yardımcısından oluşan bir organdır", "Üye sayısını her halka arzda ihraççı belirler"],
+        "SPK'nın güncel kurumsal yapısında Kurul Karar Organı, biri başkan ve biri ikinci başkan olmak üzere yedi üyeden oluşur.",
+        "Başkan ile ikinci başkan yedi kişilik toplam sayıya dâhildir; ayrıca sayılmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "easy",
+    ),
+    r(
+        "Kurul başkanı, ikinci başkan, başkan vekili ve üyelerin atamasını meslek birliklerinin yaptığı ileri sürülmektedir. Güncel atama usulü nedir?",
+        "SPK'nın başkan, ikinci başkan, başkan vekili ve üyeleri kim tarafından atanır?",
+        "Cumhurbaşkanı tarafından atanırlar",
+        ["Yalnız Borsa İstanbul genel kurulu tarafından seçilirler", "Türkiye Sermaye Piyasaları Birliği tarafından atanırlar", "Halka açık ortaklıkların oybirliğiyle göreve gelirler", "Kurul personelinin kendi arasında yaptığı kura ile belirlenirler"],
+        "Güncel kurumsal düzenlemeye göre başkan, ikinci başkan, başkan vekili ve Kurul üyeleri Cumhurbaşkanınca atanır.",
+        "Atama yetkisi meslek birliklerine veya borsa şirketine değil Cumhurbaşkanına aittir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "easy",
+    ),
+    r(
+        "Kurul Başkanı, karar organındaki görevinin Başkanlık teşkilatının yönetiminden ayrı olduğunu savunmuştur. Kurumsal yapı bakımından doğru sonuç nedir?",
+        "Kurul Başkanının karar organı ve teşkilat bakımından konumu nedir?",
+        "Kurul Karar Organına başkanlık eder ve Başkanlık teşkilatının başıdır",
+        ["Yalnız danışma birimlerini yönetir, karar organına katılamaz", "Sadece Bakanlık adına gözlemci olarak toplantıya girer", "Karar organında oy kullanır fakat teşkilatla hiçbir bağı yoktur", "Başkanlık teşkilatını yatırım kuruluşları adına geçici olarak denetler"],
+        "SPK organizasyonunda Kurul Başkanı hem Karar Organının başkanı hem de Başkanlık teşkilatının başıdır.",
+        "Karar organı başkanlığı ile teşkilatın üst yönetimi aynı kişide birleşmiştir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "medium",
+    ),
+    r(
+        "Başkanın görevde bulunmadığı bir dönemde hem ikinci başkan hem başkan vekili görev başındadır. Başkanlığa öncelikle kim vekâlet eder?",
+        "Başkanın yokluğu veya üyeliğinin düşmesi hâlinde vekâlet sırası nasıldır?",
+        "Önce ikinci başkan, o da yoksa başkan vekili vekâlet eder",
+        ["Önce en kıdemsiz Kurul uzmanı vekâlet eder", "Doğrudan ilgili Bakanlık müsteşarı görevi üstlenir", "Başkan vekili her durumda ikinci başkandan önce gelir", "Vekâlet mümkün olmadığından bütün Kurul faaliyetleri sona erer"],
+        "Güncel SPK kurumsal açıklaması, başkana önce ikinci başkanın; onun da bulunmaması hâlinde başkan vekilinin vekâlet edeceğini belirtir.",
+        "İkinci başkan görevdeyse başkan vekili öncelikli değildir; kanuni sıra izlenir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "medium",
+    ),
+    r(
+        "Başkan, beş Kurul başkan yardımcısını tek başına ve Kurul kararı olmadan atamıştır. Güncel teşkilat düzenine göre eksik unsur nedir?",
+        "Kurul başkan yardımcıları hangi usulle ve kaç kişi olarak atanır?",
+        "Başkan önerisi ve Kurul kararıyla beş yardımcı atanır",
+        ["Borsa genel müdürünün önerisiyle sınırsız sayıda atanır", "Yalnız Bakanlık kararıyla bir başkan yardımcısı atanır", "Başkan yardımcıları dış denetçiler arasında kurayla belirlenir", "Her hizmet birimi kendi başkan yardımcısını doğrudan seçer"],
+        "19.11.2025 tarihli güncel teşkilat düzeninde, Başkanın önerisi ve Kurul kararıyla beş Kurul başkan yardımcısı atanır.",
+        "Başkanın önerisi gerekli olmakla birlikte tek başına yeterli değildir; Kurul kararı da aranır.",
+        "SPK Teşkilat Yönetmeliği (19.11.2025); SPK Kurumsal Yapı", "medium",
+    ),
+    r(
+        "Teşkilat şemasında bütün daireler tek bir hizmet türünde gösterilmiştir. 2025 tarihli güncel Yönetmelik hangi sınıflandırmayı benimser?",
+        "SPK hizmet birimleri hangi üç ana grupta teşkilatlanmıştır?",
+        "Ana hizmet, danışma ve yardımcı hizmet gruplarıdır",
+        ["Yalnız merkez ve taşra teşkilatı şeklinde ikiye ayrılır", "Sadece gelir ve gider birimleri olarak sınıflanır", "Borsa, banka ve sigorta birimleri olarak üçe ayrılır", "Herhangi bir hizmet birimi sınıflandırması bulunmaz"],
+        "19.11.2025 tarihli SPK Teşkilat Yönetmeliği hizmet birimlerini ana hizmet, danışma ve yardımcı hizmet birimleri olarak üç grupta düzenler.",
+        "Yeni sınıflandırma, daire başkanlıklarının işlevsel konumunu üç ana hizmet grubunda gösterir.",
+        "SPK Teşkilat Yönetmeliği, RG 19.11.2025/33082", "easy",
+    ),
+    r(
+        "Finansal Teknolojiler Dairesi danışma, Hukuk İşleri Dairesi ana hizmet, Bilgi Sistemleri Dairesi ise yardımcı olmayan bağımsız kurum olarak gösterilmiştir. Doğru sınıflandırma hangisidir?",
+        "Güncel SPK teşkilatında Finansal Teknolojiler, Hukuk İşleri ve Bilgi Sistemleri daireleri hangi gruplardadır?",
+        "Ana hizmet, danışma ve yardımcı hizmet sırasındadır",
+        ["Sırasıyla danışma, yardımcı ve ana hizmet birimleridir", "Üçü de Kurul dışındaki bağımsız kamu kurumlarıdır", "Üçü de yalnız geçici çalışma grubu niteliğindedir", "Sırasıyla yardımcı, ana hizmet ve danışma birimleridir"],
+        "2025 tarihli Yönetmelik Finansal Teknolojileri ana hizmet, Hukuk İşlerini danışma, Bilgi Sistemlerini yardımcı hizmet birimi olarak sayar.",
+        "Daire adından hareketle değil Yönetmelikteki açık gruplandırmaya göre sınıflandırma yapılır.",
+        "SPK Teşkilat Yönetmeliği, RG 19.11.2025/33082", "medium",
+    ),
+    r(
+        "Kurul, yatırımcı haklarını korumanın kendi amacı dışında olduğunu, yalnız ihraççılara fon sağlamakla görevli bulunduğunu açıklamıştır. Bu yaklaşım Kanunun amacıyla bağdaşır mı?",
+        "SPK düzenleme ve denetiminin temel piyasa amacı nedir?",
+        "Hayır; amaç adil piyasa ve yatırımcı haklarının korunmasıdır",
+        ["Evet; yatırımcı korunması yalnız özel sigorta şirketlerine aittir", "Evet; Kurul yalnız şirketlerin kârını artırmak için kurulmuştur", "Hayır; fakat tek amacı vergi tahsilatını hızlandırmaktır", "Evet; piyasanın adil çalışması Kurulun görev alanı dışındadır"],
+        "SPK'nın güncel kurumsal açıklaması, piyasaların adil ve etkin çalışmasını ve yatırımcıların hak ve yararlarının korunmasını temel amaçlar arasında sayar.",
+        "Fon kullanan şirketlerin piyasadan yararlanması düzenlenirken yatırımcı korunması ve piyasa bütünlüğü göz ardı edilemez.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.1 ve m.117; SPK Kurumsal Yapı", "easy",
+    ),
+    r(
+        "Kurulun yalnız bireysel izin kararları alabileceği, genel nitelikte düzenleme yapamayacağı ileri sürülmüştür. Bu doğru mudur?",
+        "SPK sermaye piyasasının işleyiş kurallarını hangi düzenleyici araçlarla belirler?",
+        "Hayır; Kanuna dayanarak genel ve özel kararlar alabilir",
+        ["Evet; hiçbir düzenleyici işlem yapma yetkisi yoktur", "Evet; yalnız mahkeme kararı metni hazırlayabilir", "Hayır; fakat düzenleme yetkisi yalnız özel şirket sözleşmesiyle doğar", "Evet; bütün kuralları yatırımcı anketiyle belirlemek zorundadır"],
+        "Kurul, Kanunun verdiği yetkiyle ikincil düzenlemeler yapar ve kamunun doğru aydınlatılması gibi amaçlarla genel veya özel nitelikte kararlar alır.",
+        "Kurulun yetkisi tekil izinlerden ibaret değildir; düzenleme, gözetim, denetim, tedbir ve yaptırım işlevlerini de kapsar.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128; SPK Görev Yetki ve Sorumluluklar", "medium",
+    ),
+    r(
+        "Bir borsa, öz düzenleyici kuruluş sıfatı nedeniyle SPK'nın mevzuata uyum denetiminin dışında kaldığını savunmaktadır. Değerlendirme nedir?",
+        "SPK'nın mevzuata uyum kontrolü, gözetim ve denetim kapsamına hangi kuruluşlar girer?",
+        "Borsalar ve öz düzenleyici kuruluşlar da denetim kapsamındadır",
+        ["Yalnız gerçek kişi yatırımcılar denetlenebilir", "Borsalar her türlü kamu denetiminden muaftır", "Sadece halka açık olmayan limited şirketler denetlenir", "Öz düzenleyici kuruluşları yalnız yabancı otoriteler denetleyebilir"],
+        "Kurulun görevleri; sermaye piyasası kurumları, halka açık ortaklıklar, borsalar ve öz düzenleyici kuruluşların işlemlerinin mevzuata uyumunu kontrol, gözetim ve denetimi kapsar.",
+        "Öz düzenleyici nitelik, SPK'nın kanuni gözetim ve denetim yetkisini ortadan kaldırmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-b", "medium",
+    ),
+    r(
+        "Piyasada önemli bir gelişme yaşanmış, ancak Kurul kamunun zamanında bilgilendirilmesini kendi görevi dışında görmüştür. Kanuni görev bakımından sonuç nedir?",
+        "Kamunun aydınlatılmasına ilişkin SPK görevinin nitelik ölçütleri nelerdir?",
+        "Zamanında, yeterli ve doğru aydınlatmayı sağlamak görevidir",
+        ["Bilginin yalnız ihraççı yöneticilerine gizlice verilmesini sağlar", "Açıklamayı doğruluk aramadan sınırsız süre ertelemekle görevlidir", "Yalnız geçmiş yıl fiyatlarını açıklayıp güncel bilgiyi saklar", "Kamunun aydınlatılması bütünüyle Kurulun görev alanı dışındadır"],
+        "Kanun m.128, kamunun zamanında, yeterli ve doğru olarak aydınlatılmasını sağlamak amacıyla genel ve özel nitelikte kararlar almayı Kurulun görevi sayar.",
+        "Aydınlatma yalnız bilginin yayımlanması değil; zamanlılık, yeterlilik ve doğruluk ölçütlerinin birlikte sağlanmasıdır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-c", "easy",
+    ),
+    r(
+        "Kurul, değerleme kuruluşlarını listeleyebileceğini; ancak bağımsız denetim ve derecelendirme faaliyet koşullarını belirleyemeyeceğini düşünmektedir. Bu görüş doğru mudur?",
+        "SPK hangi uzmanlık faaliyetlerinin şartlarını ve çalışma esaslarını belirleyip uygun kuruluşları ilan eder?",
+        "Sayılan dört uzmanlık alanının tümünde yetkilidir",
+        ["Yalnız noterlik faaliyetinin çalışma saatlerini belirler", "Sadece vergi incelemesi yapan memurları listeler", "Bağımsız denetim dışındaki hiçbir uzmanlık alanına karışamaz", "Yalnız şirketlerin insan kaynakları politikasını belirler"],
+        "Kanun m.128, bağımsız denetim, derecelendirme, değerleme ve bilgi sistemleri denetiminin şartları ile çalışma esaslarını belirleme ve uygunları listeleme görevini Kurula verir.",
+        "Yetki dört faaliyet alanını birlikte kapsar; yalnız birinin varlığı diğerlerini dışlamaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-ç", "medium",
+    ),
+    r(
+        "Finansal istikrarı ilgilendiren ortak bir riskte SPK'nın diğer düzenleyici kurumlarla bilgi paylaşamayacağı ileri sürülmüştür. Bu doğru mudur?",
+        "SPK'nın yurt içindeki diğer finansal düzenleyici ve denetleyici kurumlarla ilişkisi nasıldır?",
+        "Finansal istikrar için iş birliği ve bilgi alışverişi yapabilir",
+        ["Her türlü temas ve bilgi alışverişi mutlak biçimde yasaktır", "Yalnız ticari reklam kampanyalarında birlikte çalışabilir", "Sadece yabancı borsalarla, yurt içi kurumları dışlayarak çalışır", "İş birliği ancak özel şirketlerin oybirliğiyle kurulabilir"],
+        "Kurul, finansal istikrar ile ulusal veya uluslararası mevzuat gerekleri için diğer finansal düzenleyici ve denetleyici kurumlarla iş birliği ve bilgi alışverişi yapar.",
+        "Düzenleyici kurumlar arası koordinasyon Kurulun görev alanındadır; mutlak bir iletişim yasağı yoktur.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-d", "medium",
+    ),
+    r(
+        "Yabancı sermaye piyasası otoritesi karşılıklı bilgi paylaşımı önermiş, ancak mesleki sırrın korunmasına ilişkin güvence sunmamıştır. SPK bakımından hangi ilke eksiktir?",
+        "SPK'nın yabancı muadil kurumlarla bilgi alışverişinin iki temel güvencesi nedir?",
+        "Karşılıklılık ve mesleki sırrın korunması aranır",
+        ["Yalnız reklam geliri ve piyasa payı ölçütleri aranır", "Hiçbir ilke veya güvence aranmadan bütün bilgi aktarılır", "Sadece yabancı ihraççının kâr etmesi koşulu aranır", "Bilgi paylaşımı her durumda ve istisnasız yasaktır"],
+        "Kanun m.128, yabancı muadil düzenleyici kurumlarla bilgi alışverişini karşılıklılık ve mesleki sırrın korunması ilkelerine bağlar.",
+        "Uluslararası iş birliği mümkündür; ancak mesleki sır güvencesi ve karşılıklılık göz ardı edilemez.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-e", "hard",
+    ),
+    r(
+        "Piyasada daha önce düzenlenmemiş yeni bir araç ortaya çıkmıştır. Kurul, yeni araçlara ilişkin usul ve esas koyma yetkisinin bulunmadığını savunmaktadır. Bu doğru mudur?",
+        "SPK'nın yeni sermaye piyasası kurumları ve araçlarına ilişkin yetkisi nedir?",
+        "Yeni kurum ve araçları düzenleyip denetleyebilir",
+        ["Yeni araçları yalnız vergi dairesi düzenleyebilir", "Kurul yalnız 1981'de mevcut araçları denetleyebilir", "Yeni araçlar hiçbir kamu kuralına tabi tutulamaz", "Yetki sadece ihraççının iç yönergesinden doğabilir"],
+        "Kanun m.128, sermaye piyasalarının gelişmesi amacıyla yeni sermaye piyasası kurum ve araçlarının usul ve esaslarını düzenleme ve denetleme görevini Kurula verir.",
+        "Piyasadaki yenilik, Kurulun düzenleme alanını kendiliğinden ortadan kaldırmaz; Kanun açık bir uyarlama yetkisi tanır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-f", "medium",
+    ),
+    r(
+        "Bir yatırım kuruluşu, çalışanlarının mesleki yeterlilik ölçütlerini yalnız kendi belirleyebileceğini ve SPK'nın sertifikasyon esaslarına karışamayacağını ileri sürmektedir. Sonuç nedir?",
+        "Sermaye piyasası çalışanlarının eğitim, yeterlilik ve ehliyet belgelerine ilişkin esasları kim belirler?",
+        "Esasları SPK belirler; bu amaçla merkez veya şirket de kurabilir",
+        ["Her çalışan ölçütleri kendisi belirleyip kendi belgesini düzenler", "Yalnız halka açık ortaklığın müşterileri sertifika verir", "Borsa fiyatı yükseldiğinde yeterlilik belgesi kendiliğinden oluşur", "Bu alanda hiçbir kurumun kural koyma yetkisi bulunmaz"],
+        "Kanun m.128, ilgili yönetici ve çalışanların mesleki eğitim, yeterlilik ve ehliyet sertifikalarına ilişkin esasları belirleme; bu amaçla merkez veya şirket kurma yetkisini SPK'ya verir.",
+        "Mesleki yeterlilik sistemi yalnız kuruluş içi tercihe bırakılmamış, Kurulun düzenleyici çerçevesine bağlanmıştır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-g", "medium",
+    ),
+    r(
+        "Sosyal medya üzerinden yatırım tavsiyesi veren bir kuruluş, sermaye piyasasında tavsiye sunanların uyacağı ilkeleri SPK'nın belirleyemeyeceğini iddia etmektedir. Bu doğru mudur?",
+        "Yatırımcı ve tasarruf sahiplerine yatırım tavsiyesi sunanların ilke ve esaslarını kim belirler?",
+        "Bu kişi ve kuruluşların uyacağı ilkeleri SPK belirler",
+        ["İlkeleri yalnız tavsiye alan yatırımcı tek başına belirler", "Tavsiye faaliyeti hiçbir ilke veya esasa bağlanamaz", "Kuralları yalnız reklam platformu ve takipçi sayısı belirler", "Yalnız ihraççı şirket kendi payına ilişkin kuralları koyar"],
+        "Kanun m.128, sermaye piyasasında yatırımcı ve tasarruf sahiplerine yönelik yatırım tavsiyesinde bulunacak kişi ve kuruluşların uyacağı ilke ve esasları belirleme görevini Kurula verir.",
+        "İletişim kanalının sosyal medya olması, faaliyetin niteliğine göre uygulanacak sermaye piyasası ilkelerini kendiliğinden ortadan kaldırmaz.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-ğ", "medium",
+    ),
+    r(
+        "Bir ihraççı, KAP'ın çalışma düzenini borsadan bağımsız olarak kendisinin belirleyebileceğini; Kurula yapılacak başvurularda da ortak bir usul bulunmadığını savunmaktadır. Doğru yaklaşım nedir?",
+        "KAP ile Kurula yapılacak bildirim ve başvuruların usul esaslarını belirleme görevi kime aittir?",
+        "KAP ve başvuru usullerini belirleme görevi SPK'ya aittir",
+        ["Her ihraççı kendi KAP sistemini ve kurallarını kurar", "Bu usulleri yalnız vergi dairesi belirleyebilir", "Bildirim ve başvurular hiçbir biçim kuralına tabi değildir", "Görev sadece bağımsız denetim şirketlerine aittir"],
+        "Kanun m.128, KAP'ın işletim ve çalışma esasları ile Kurula yapılacak bildirim ve başvuruların usul ve esaslarını belirlemeyi SPK'nın görevi sayar.",
+        "KAP ve Kurul başvuruları, her ihraççının serbestçe oluşturacağı farklı usullere bırakılmamıştır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-h", "easy",
+    ),
+    r(
+        "Halka açık şirket, bilgi sistemlerinin işletimi ve denetiminin sermaye piyasası mevzuatıyla ilgisiz olduğunu ileri sürmüştür. Kurulun yetkisi nedir?",
+        "SPK hangi piyasa aktörlerinin bilgi sistemleri işletimi ve denetimine ilişkin esasları belirler?",
+        "Kurum, halka açık şirket, borsa ve öz düzenleyici kuruluşları kapsar",
+        ["Yalnız Kurul personelinin kişisel bilgisayarlarını kapsar", "Sadece halka açık olmayan aile işletmelerini kapsar", "Borsaları ve öz düzenleyici kuruluşları açıkça kapsam dışında bırakır", "Bilgi sistemleri hiçbir sermaye piyasası denetimine tabi değildir"],
+        "Kanun m.128, sermaye piyasası kurumları, halka açık şirketler, borsalar ve öz düzenleyici kuruluşların bilgi sistemlerinin işletim ve denetim esaslarını belirleme görevini Kurula verir.",
+        "Bilgi sistemleri piyasa altyapısının parçasıdır; sayılan kurumlar bakımından Kurulun düzenleme alanına girer.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-ı", "medium",
+    ),
+    r(
+        "Kurul, gelecekteki bir düzenleme tercihini değerlendirmek için üniversiteden bilimsel araştırma istemiştir. Böyle bir çalışma yaptırma yetkisi var mıdır?",
+        "SPK düzenleme tercihlerine temel oluşturmak üzere kimlere araştırma yaptırabilir?",
+        "Akademisyen ve uygulamacılara araştırma yaptırabilir",
+        ["Yalnız ihraççının yönetim kurulu üyelerine yaptırabilir", "Bilimsel araştırma yaptırması her durumda yasaktır", "Sadece Kurul üyelerinin akrabalarına görev verebilir", "Araştırmayı yalnız halka açık şirket müşterileri yürütebilir"],
+        "Kanun m.128, mevcut veya gelecekteki düzenleme tercihlerine dayanak olmak üzere yerli ya da yabancı akademisyen ve uygulamacılara ulusal veya uluslararası araştırma yaptırmaya izin verir.",
+        "Araştırma yetkisi yalnız Kurul personeliyle sınırlı değildir; uzman dış bilgiye başvurulabilir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-i", "medium",
+    ),
+    r(
+        "SPK, üyesi bulunduğu uluslararası kuruluşun ortak projesine katılmak istemektedir. Kurulun yalnız ulusal faaliyet yürütebileceği gerekçesiyle bu katılım reddedilmiştir. Sonuç nedir?",
+        "SPK'nın uluslararası kuruluşlarla çalışma ve üyelik yetkisinin kapsamı nedir?",
+        "Çalışmalara katılabilir, proje geliştirebilir ve üye olabilir",
+        ["Yalnız yabancı şirketlerin reklamlarına izin verebilir", "Hiçbir uluslararası kuruluşa katılamaz veya üye olamaz", "Sadece Türkiye'de kurulmuş derneklerle proje yapabilir", "Uluslararası çalışma için bütün yatırımcıların oybirliği şarttır"],
+        "Kanun m.128, Kurulun ilgili uluslararası kuruluşların çalışmalarına katılmasını, ortak projeler geliştirmesini, katkı sunmasını ve görev alanındaki kuruluşlara üye olmasını öngörür.",
+        "Kurulun uluslararası faaliyeti yalnız bilgi alışverişiyle sınırlı değildir; proje ve üyelik boyutlarını da kapsar.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.128/1-j ve k", "medium",
+    ),
+]
+
+
+PREMISES = [
+    {
+        "stem": "SPK'nın kurumsal statüsü bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kamu tüzel kişiliğine sahiptir\n\nII. İdari ve mali özerkliği vardır\n\nIII. Yetkilerini kendi sorumluluğu altında bağımsız kullanır",
+        "correct": "I, II ve III",
+        "why": "6362 sayılı Kanun m.117, Kurulun kamu tüzel kişiliğini, idari ve mali özerkliğini ve görevlerini kendi sorumluluğu altında bağımsız yürütmesini birlikte düzenler.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.117", "difficulty": "medium",
+    },
+    {
+        "stem": "Kurul Karar Organı bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Biri başkan olmak üzere yedi üyeden oluşur\n\nII. Üyeleri Türkiye Sermaye Piyasaları Birliği seçer\n\nIII. Başkan, ikinci başkan, başkan vekili ve üyeler Cumhurbaşkanınca atanır",
+        "correct": "I ve III",
+        "why": "Karar Organı yedi üyeden oluşur ve sayılan görevliler Cumhurbaşkanınca atanır. Meslek birliğinin seçim yetkisi bulunmadığından II yanlıştır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "difficulty": "medium",
+    },
+    {
+        "stem": "Başkana vekâlet bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İkinci başkan öncelikle vekâlet eder\n\nII. İkinci başkan da yoksa başkan vekili vekâlet eder\n\nIII. Her durumda en kıdemsiz Kurul uzmanı vekâlet eder",
+        "correct": "I ve II",
+        "why": "Güncel sıra önce ikinci başkan, onun da yokluğunda başkan vekilidir. Kurul uzmanına otomatik vekâlet öngörülmediği için III yanlıştır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.119; SPK Kurumsal Yapı", "difficulty": "medium",
+    },
+    {
+        "stem": "2025 tarihli SPK Teşkilat Yönetmeliğine göre aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Finansal Teknolojiler Dairesi ana hizmet birimidir\n\nII. Hukuk İşleri Dairesi danışma birimidir\n\nIII. Bilgi Sistemleri Dairesi yardımcı hizmet birimidir",
+        "correct": "I, II ve III",
+        "why": "Güncel Yönetmelikte üç daire sırasıyla ana hizmet, danışma ve yardımcı hizmet gruplarında açıkça sayılmıştır.",
+        "ref": "SPK Teşkilat Yönetmeliği, RG 19.11.2025/33082", "difficulty": "hard",
+    },
+    {
+        "stem": "SPK'nın görevleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Borsaların mevzuata uyumunu gözetip denetleyebilir\n\nII. Yargı organı sıfatıyla her özel hukuk uyuşmazlığında hüküm kurar\n\nIII. Yeni sermaye piyasası araçlarının usul ve esaslarını düzenleyebilir",
+        "correct": "I ve III",
+        "why": "Kurul borsaları gözetip denetler ve yeni araçların esaslarını düzenleyebilir. Genel görevleri, Kurula bütün özel hukuk uyuşmazlıklarında mahkeme sıfatı vermez; II yanlıştır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.128", "difficulty": "hard",
+    },
+    {
+        "stem": "Kamunun aydınlatılması bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilginin gecikmesi önemli değildir\n\nII. Bilginin yeterli olması gözetilir\n\nIII. Bilginin doğru olması gözetilir",
+        "correct": "II ve III",
+        "why": "Kurulun görevi kamunun zamanında, yeterli ve doğru aydınlatılmasını sağlamaktır. Gecikmeyi önemsiz sayan I bu nedenle yanlıştır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.128/1-c", "difficulty": "easy",
+    },
+    {
+        "stem": "SPK'nın yabancı muadil kurumlarla ilişkisi bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Karşılıklılık ilkesi gözetilir\n\nII. Mesleki sırların korunması aranmaz\n\nIII. İkili veya çok taraflı mutabakat zabıtları imzalanabilir",
+        "correct": "I ve III",
+        "why": "Uluslararası iş birliğinde karşılıklılık ve mesleki sırların korunması gözetilir; mutabakat zabıtları imzalanabilir. II bu nedenle yanlıştır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.128/1-e", "difficulty": "hard",
+    },
+    {
+        "stem": "KAP ve Kurula başvuru usulleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Her ihraççı KAP'ın çalışma esasını tek başına belirler\n\nII. KAP'ın işletim ve çalışma esaslarını SPK belirler\n\nIII. Kurula başvurular hiçbir usule bağlanamaz",
+        "correct": "Yalnız II",
+        "why": "KAP'ın işletim ve çalışma esasları ile Kurula bildirim ve başvuruların usulü SPK tarafından belirlenir. İhraççının tek taraflı belirleme yetkisi ve usulsüz başvuru kuralı yoktur.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.128/1-h", "difficulty": "medium",
+    },
+]
+
+
+if __name__ == "__main__":
+    write_topic(
+        lesson_id="sermaye_piyasasi_ve_finans",
+        topic_id="spk_ve_duzenleme",
+        label="SPK ve Düzenleme",
+        slug="spk_ve_duzenleme",
+        prefix="topic-spkd",
+        seed=2026071735,
+        legislation_version=(
+            "6362 sayılı Sermaye Piyasası Kanunu m.117-128 ve 19.11.2025 "
+            "tarihli SPK Teşkilat Yönetmeliği (17.07.2026 kontrolü)"
+        ),
+        rules=RULES,
+        premises=PREMISES,
+        wrong_banks={},
+    )

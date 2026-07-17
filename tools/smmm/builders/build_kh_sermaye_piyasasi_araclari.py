@@ -1,0 +1,328 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""SMMM Sermaye Piyasası Mevzuatı — Sermaye Piyasası Araçları, 3×20.
+
+Dayanaklar, 17.07.2026 tarihinde SPK'nın güncel mevzuat sistemi ve resmî
+konsolide tebliğ metinlerinden doğrulanmıştır. İhraç usulü, kamuyu aydınlatma,
+kaydî sistem ve kolektif yatırım ayrıntıları kendi konu havuzlarına bırakılmıştır.
+"""
+from topic_pack_builder import write_topic
+
+
+def r(scenario, focus, correct, distractors, why, focus_why, ref, difficulty="medium"):
+    return {
+        "scenario": scenario, "focus": focus, "correct": correct,
+        "distractors": distractors,
+        "focus_distractors": distractors[2:] + distractors[:2],
+        "why": why, "focus_why": focus_why, "ref": ref,
+        "difficulty": difficulty,
+    }
+
+
+RULES = [
+    r(
+        "Bir sözleşmenin yatırım sözleşmesi niteliği taşıdığı ve Kurulca sermaye piyasası aracı kapsamında belirlendiği kabul edilmiştir. Menkul kıymet veya türev araç adı taşımaması, bu sözleşmenin kapsam dışında kalması için yeterli midir?",
+        "6362 sayılı Kanunda sermaye piyasası araçlarının kapsamı nasıl belirlenmiştir?",
+        "Hayır; Kurulca belirlenen diğer araçlar da kapsamdadır",
+        ["Evet; yalnız paylar sermaye piyasası aracıdır", "Evet; menkul kıymet dışında hiçbir sözleşme kapsama giremez", "Hayır; fakat kapsama alma yetkisi yalnız borsaya aittir", "Evet; yalnız kamu tüzel kişilerinin ihraç ettiği araçlar kapsamdadır"],
+        "6362 sayılı Kanun m.3, menkul kıymetler ve türev araçların yanında yatırım sözleşmeleri dâhil Kurulca bu kapsamda olduğu belirlenen diğer araçları da sermaye piyasası aracı sayar.",
+        "Kanundaki tanım kapalı bir liste değildir; Kurulun niteliğine göre kapsamda belirlediği diğer araçları da içerir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.3/1-ş", "easy",
+    ),
+    r(
+        "Bir yatırımcı, çek ile ortaklık payının Kanunda aynı biçimde menkul kıymet sayıldığını ileri sürmektedir. Bu değerlendirme doğru mudur?",
+        "6362 sayılı Kanundaki menkul kıymet tanımı bakımından hangisi kapsam dışında bırakılmıştır?",
+        "Çek, poliçe ve bono menkul kıymet kapsamının dışındadır",
+        ["Paylar ve pay benzeri kıymetler kapsam dışında tutulmuştur", "Borçlanma araçları hiçbir zaman menkul kıymet değildir", "Depo sertifikaları yalnız kıymetli evrak sayılır", "Varlığa dayalı menkul kıymetler tanımdan çıkarılmıştır"],
+        "Kanun m.3; para, çek, poliçe ve bonoyu menkul kıymet tanımının dışında tutarken payları, borçlanma araçlarını ve bunlara ilişkin depo sertifikalarını menkul kıymetler arasında sayar.",
+        "Ticari senet olan bono ile sermaye piyasası borçlanma aracı aynı kavram değildir; Kanundaki açık istisna dikkate alınır.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.3/1-o", "medium",
+    ),
+    r(
+        "Anonim ortaklığın çıkardığı bir araç, ortaklığın sermayesini temsil etmekte ve sahibine ortaklık hakkı vermektedir. Araç hangi temel türün tanımına uyar?",
+        "Payın ayırt edici iki temel unsuru nedir?",
+        "Sermayeyi temsil etmesi ve ortaklık hakkı sağlaması",
+        ["İhraççıya karşı yalnız sabit faizli alacak hakkı vermesi", "Vadesinde belirli miktar kıymetli maden ödemesi taahhüdü taşıması", "Dayanak göstergenin değerine göre nakavt olması", "Sahibine yalnız kiraya veren sıfatı sağlaması"],
+        "Pay Tebliği m.4, payı ortaklığın sermayesini temsil eden ve sahibine ortaklık hakkı veren menkul kıymet olarak tanımlar.",
+        "Pay, borçlanma aracından farklı olarak yatırımcıyı alacaklı değil ortak konumuna bağlar.",
+        "Pay Tebliği (VII-128.1) m.4/1-p", "easy",
+    ),
+    r(
+        "Bir araç sermayede temsil edilmiyor, sabit getiri taahhüdü taşımıyor ve sahibine pay sahipliği haklarından bir bölümünü veriyor. Kurul da bu niteliği kabul etmiştir. Araç nasıl sınıflandırılır?",
+        "Pay benzeri menkul kıymetin tanımında hangi özellikler birlikte bulunur?",
+        "Sabit getirisiz biçimde pay sahipliği hakkı vermesi",
+        ["Mutlaka sermayeyi temsil etmesi ve sabit faiz ödemesi", "Yalnız kamu borcunu temsil edip ortaklık hakkı vermemesi", "Vadesi en çok 364 gün olan ticari senet olması", "Sadece bankaların mevduat karşılığı düzenlediği belge olması"],
+        "Pay Tebliği m.4, pay benzeri menkul kıymeti sermayede temsil edilmesi zorunlu olmayan, sabit getiri taahhüdü barındırmayan ve pay sahipliği haklarından birini veya bir kısmını veren kıymet olarak tanımlar.",
+        "Sermaye payı olmamak tek başına yeterli değildir; sabit getiri taşımama, pay sahipliği haklarından yararlanma ve Kurulca kabul birlikte değerlendirilir.",
+        "Pay Tebliği (VII-128.1) m.4/1-r", "medium",
+    ),
+    r(
+        "Bir ortaklık, nakit karşılığı satılan ve sahibine net kârdan pay alma ile tasfiye bakiyesine katılma hakkı veren bir araç çıkarmıştır. Araç ortaklık sermayesini temsil etmemektedir. Bu araç hangisidir?",
+        "Katılma intifa senedine tanınabilecek haklar arasında hangileri yer alır?",
+        "KİS'tir; kâr, tasfiye ve koşullu yeni pay hakkı verebilir",
+        ["Finansman bonosudur; yalnız 30-364 gün vadeli alacak hakkı verir", "Tahvildir; sahibini kendiliğinden şirket ortağı yapar", "Kira sertifikasıdır; yalnız taşınmaz mülkiyetini temsil eder", "Varanttır; kullanım zorunluluğu doğuran vadeli borç sözleşmesidir"],
+        "Pay Tebliği m.4 ve m.36, KİS'in nakit karşılığı çıkarılan; net kârdan pay, tasfiye bakiyesi veya halka açık olmayan ortaklıkta yeni pay alma haklarından birini ya da birkaçını verebilen pay benzeri kıymet olduğunu düzenler.",
+        "KİS'in verebileceği haklar sınırlı biçimde tanımlanmıştır; araç sermaye payı değil pay benzeri menkul kıymettir.",
+        "Pay Tebliği (VII-128.1) m.4/1-k ve m.36", "medium",
+    ),
+    r(
+        "Halka açık ortaklık, çıkaracağı katılma intifa senedine sermaye artırımıyla çıkarılacak yeni payları alma hakkı tanımak istemektedir. Bu mümkün müdür?",
+        "Katılma intifa senedine yeni pay alma hakkı tanınmasında halka açık ve halka açık olmayan ortaklık ayrımı nedir?",
+        "Halka açıkta yasak, halka açık olmayanda koşulludur",
+        ["Her iki ortaklık türünde de koşulsuz tanınır", "Her iki ortaklık türünde de kesinlikle yasaktır", "Yalnız halka açık ortaklıkta yönetim kurulu kararıyla tanınır", "Yalnız kamu ortaklıklarında Kurul kararı olmadan tanınır"],
+        "Pay Tebliği m.38, halka açık ortaklık KİS'ine yeni pay alma hakkı tanınmasını yasaklar; halka açık olmayan ortaklıkta ise esas sözleşme hükmü bulunmasını arar.",
+        "KİS'in pay benzeri niteliği, her ihraççı bakımından aynı yeni pay alma hakkının verilebileceği anlamına gelmez.",
+        "Pay Tebliği (VII-128.1) m.38", "hard",
+    ),
+    r(
+        "İhraççı, nominal değeri vade sonunda geri ödenecek 240 gün vadeli bir borçlanma aracı düzenlemiştir. Diğer koşulların da sağlandığı durumda araç hangi türdür?",
+        "Finansman bonosunun Tebliğdeki vade aralığı nedir?",
+        "Finansman bonosudur; vadesi 30-364 gün arasındadır",
+        ["Tahvildir; her tahvilin vadesi 30-364 gündür", "Paya dönüştürülebilir tahvildir; vadesi en çok 240 gündür", "Katılma intifa senedidir; vade zorunluluğu 240 gündür", "Kira sertifikasıdır; bütün kira sertifikaları 240 gün vadelidir"],
+        "Borçlanma Araçları Tebliği m.3, finansman bonosunu nominal değerin geri ödenmesi taahhüdünü içeren ve vadesi 30-364 gün aralığında olan borçlanma aracı olarak tanımlar.",
+        "240 günlük araç vade bakımından finansman bonosu aralığındadır; doğru sınıflandırma için ihraççının borçlu sıfatı ve geri ödeme taahhüdü de aranır.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-b", "easy",
+    ),
+    r(
+        "Bir ortaklık, nominal değeri vade tarihinde ödenecek 540 gün vadeli borçlanma aracı çıkarmıştır. Dönüştürme veya değiştirme hakkı yoktur. Araç nasıl adlandırılır?",
+        "Tahvil ile finansman bonosunu vade yönünden ayıran sınır nedir?",
+        "Tahvildir; vadesi 365 gün veya daha uzun olur",
+        ["Finansman bonosudur; bu aracın vadesi en az 365 gündür", "Kıymetli maden bonosudur; her 540 günlük araç bu adı alır", "Paydır; uzun vade ortaklık hakkı doğurur", "Türev araçtır; vadenin 365 günü aşması tek başına yeterlidir"],
+        "Borçlanma Araçları Tebliği m.3, tahvili 365 gün veya daha uzun vadeli; finansman bonosunu ise en çok 364 gün vadeli borçlanma aracı olarak ayırır.",
+        "Vadesi 540 gün olan ve özel bir dönüştürme ya da değiştirme özelliği taşımayan araç, Tebliğdeki tahvil tanımına girer.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-b ve m.3/1-m", "easy",
+    ),
+    r(
+        "İhraççı, 364 gün vadeli araç ile 365 gün vadeli aracı aynı türde sınıflandırmak istemektedir. Diğer şartlar aynıysa doğru ayrım hangisidir?",
+        "Vade sınırındaki 364 ve 365 günlük borçlanma araçları nasıl sınıflandırılır?",
+        "364 günlük araç finansman bonosu, 365 günlük araç tahvildir",
+        ["Her iki araç da finansman bonosu olarak sınıflandırılır", "Her iki araç da tahvil olarak sınıflandırılır", "364 günlük araç tahvil, 365 günlük araç finansman bonosudur", "Her iki araç da yalnız vadesi nedeniyle ortaklık payı sayılır"],
+        "Tebliğde finansman bonosunun üst sınırı 364 gün, tahvilin alt sınırı 365 gündür; sınır günleri farklı araç türlerine girer.",
+        "Bir günlük fark sınıflandırmayı değiştirir: 364 gün finansman bonosunun son, 365 gün tahvilin ilk vade günüdür.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-b ve m.3/1-m", "medium",
+    ),
+    r(
+        "Kıymetli maden aracı kurumu, 180 gün vadeli ve belirli miktar altın cinsinden nominal değerin vade sonunda ödenmesini öngören araç ihraç etmektedir. Araç hangisidir?",
+        "Kıymetli maden bonosunu diğer kısa vadeli borçlanma araçlarından ayıran özellik nedir?",
+        "Kıymetli maden cinsinden çıkarılan bonodur",
+        ["Paydır; altın cinsi ihraç ortaklık hakkı verir", "Tahvildir; kıymetli maden bonosu en az 365 gün vadeli olur", "KİS'tir; yalnız net kârdan pay hakkı verir", "Depo sertifikasıdır; yabancı payı temsil etmesi zorunludur"],
+        "Tebliğ m.3, kıymetli maden bonosunu ilgili borsaya üye kıymetli maden aracı kurumunun belli miktar kıymetli maden cinsinden çıkardığı 30-364 gün vadeli araç olarak tanımlar.",
+        "Aracın ayırt edici unsurları ihraççının ilgili borsa üyeliği, kıymetli maden cinsi ve 30-364 günlük vadedir.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-ı", "medium",
+    ),
+    r(
+        "Bir tahvil, ihraççı ortaklığın sermaye artırımıyla çıkaracağı kendi paylarına dönüştürme hakkı vermektedir. Bu araç hangisidir?",
+        "Paya dönüştürülebilir tahvilde dönüşümün konusu hangi paylardır?",
+        "PDT'dir; ihraççının kendi paylarına dönüşüm hakkı verir",
+        ["Değiştirilebilir tahvildir; mutlaka başka ortaklığın payına çevrilir", "Finansman bonosudur; sahibine her zaman oy hakkı verir", "Kira sertifikasıdır; VKŞ payına dönüşür", "İskontolu sertifikadır; dönüşüm zorunlu olarak endekse yapılır"],
+        "Tebliğ m.3, PDT'yi ihraççı ortaklığın sermaye artırımıyla çıkaracağı veya belirlenen esaslarla temin edilen kendi paylarına dönüştürme hakkı veren borçlanma aracı olarak tanımlar.",
+        "PDT'de dönüşümün hedefi ihraççının payıdır; başka ortaklığın payı DET'in konusunu oluşturur.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-l", "easy",
+    ),
+    r(
+        "İhraç edilen tahvil, sahibine ihraççıdan farklı ve payları borsada işlem gören bir ortaklığın paylarıyla değiştirme hakkı vermektedir. Araç hangisidir?",
+        "Değiştirilebilir tahvilde yatırımcıya verilebilecek payın niteliği nedir?",
+        "DET'tir; başka bir borsa ortaklığının payıyla değişim hakkı verir",
+        ["Paya dönüştürülebilir tahvildir; yalnız ihraççının kendi payına dönüşür", "Katılma intifa senedidir; hiçbir payla ilişkilendirilemez", "Finansman bonosudur; 365 gün ve üzeri vadeli olmak zorundadır", "Ortaklık varantıdır; yalnız ilgili araca faiz kuponu ekler"],
+        "Tebliğ m.3, DET'i ihraççı tarafından çıkarılan ve payları borsada işlem gören diğer ortaklıklara ait paylarla değiştirme hakkı veren araç olarak tanımlar.",
+        "DET'in hedefi ihraççının kendi payı değil, borsada işlem gören başka ortaklığın payıdır.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3/1-d", "easy",
+    ),
+    r(
+        "Aynı ihraççı biri kendi payına, diğeri başka bir borsa ortaklığının payına bağlanan iki tahvil çıkarmıştır. Doğru adlandırma hangisidir?",
+        "PDT ile DET arasındaki temel ayrım hangi payın teslim edileceğine göre yapılır?",
+        "Kendi payına bağlanan PDT, başka ortaklığın payına bağlanan DET'tir",
+        ["Kendi payına bağlanan DET, başka ortaklığın payına bağlanan PDT'dir", "Her ikisi de yalnız finansman bonosu sayılır", "Her ikisi de paydır ve borçlanma aracı niteliği taşımaz", "Kendi payına bağlanan kira sertifikası, diğeri KİS'tir"],
+        "PDT ihraççı ortaklığın payına dönüşür; DET ise payları borsada işlem gören diğer ortaklığın payıyla değiştirilir.",
+        "Araçların ikisi de borçlanma aracı olmakla birlikte dönüşümde kullanılacak payın ihraççıya ait olup olmaması adlandırmayı değiştirir.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.3, m.17 ve m.24", "medium",
+    ),
+    r(
+        "PDT sahibi, vade başlangıcından 200 gün sonra dönüştürme talep etmiştir. İhraç belgesinde de daha erken bir tarih öngörülmüştür. Talep uygulanabilir mi?",
+        "PDT'nin paya dönüştürülmesi ve DET'in payla değiştirilmesi en erken ne zaman yapılabilir?",
+        "Hayır; en erken vade başlangıcından 365 gün sonra yapılır",
+        ["Evet; her iki işlem ilk gün zorunlu olarak yapılır", "Evet; yalnız 30 günlük bekleme süresi vardır", "Hayır; dönüştürme veya değiştirme hiçbir zaman mümkün değildir", "Evet; ihraç belgesi kanuni alt sınırı her durumda kaldırır"],
+        "Tebliğ m.17 ve m.24, hem PDT'nin dönüşümünü hem DET'in değişimini vade başlangıcından itibaren en erken 365 gün sonrasına bağlar.",
+        "İzahname veya ihraç belgesi, Tebliğdeki 365 günlük asgari süreyi daha kısa belirleyemez.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.17/2 ve m.24/2", "medium",
+    ),
+    r(
+        "İhraççı, tahvilini iskontolu ve kupon ödemeli satıp nominal değeri vade içinde taksitlerle geri ödemek istemektedir. Tebliğ buna izin verir mi?",
+        "Tahvilin satış ve nominal değer ödeme biçimleri bakımından hangisi mümkündür?",
+        "Evet; her iki işlem de mümkündür",
+        ["Hayır; tahvil yalnız nominal değerden ve kuponsuz satılabilir", "Hayır; nominal değer mutlaka ihraç gününde tek seferde ödenir", "Evet; ancak bu durumda araç kendiliğinden paya dönüşür", "Hayır; tahvilde yalnız aynî ödeme yapılabilir"],
+        "Tebliğ m.14, tahvillerin iskontolu, primli ve/veya kupon ödemeli satılmasına; nominal değerin vadede bir defada veya vade içinde taksitle ödenmesine izin verir.",
+        "Satış fiyatının veya kupon yapısının farklı olması tahvil niteliğini ortadan kaldırmaz; geri ödeme planı tek sefer veya taksit olabilir.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.14/1", "medium",
+    ),
+    r(
+        "Yurt içinde ihraç edilecek tahvilin, yatırımcının talebine bağlı olarak vadesinden önce kısmen itfa edilebilmesi planlanmıştır. Bu özellik geçerli biçimde kurulabilir mi?",
+        "Erken itfa edilebilir tahviller bakımından Tebliğ hangi seçeneklere izin verir?",
+        "Evet; ihraççı veya yatırımcı için erken itfa mümkündür",
+        ["Hayır; tahvil hiçbir koşulda vadesinden önce itfa edilemez", "Yalnız Kurulun yatırımcı yerine talepte bulunmasıyla itfa edilir", "Yalnız tamamı itfa edilebilir; kısmi itfa yasaktır", "Erken itfa aracı kendiliğinden katılma intifa senedine çevirir"],
+        "Tebliğ m.15, tahvilin ihraççı veya yatırımcı talebine bağlı olarak kısmen ya da tamamen erken itfa edilebilir nitelikte çıkarılmasına izin verir.",
+        "Yurt içi ihraçta erken itfa esaslarının izahname veya ihraç belgesinde gösterilmesi gerekir; özellik yalnız ihraççı lehine kurulmak zorunda değildir.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.15", "medium",
+    ),
+    r(
+        "Esas sözleşmesinde bu konuda hüküm bulunan ihraççı, tahvil sahibine faiz yanında kârdan pay vermek istemektedir. Bu yapı mümkün müdür?",
+        "Tahvillere kârdan pay verilmesinin temel koşulu nedir?",
+        "Evet; esas sözleşme veya özel mevzuat hükmüyle mümkündür",
+        ["Hayır; tahvil sahibine hiçbir biçimde kârdan pay verilemez", "Yalnız tahvil sahibinin ortak olması koşuluyla mümkündür", "Yalnız faiz tamamen yasaklanırsa ve vade kaldırılırsa mümkündür", "Evet; fakat esas sözleşme hükmü bulunması kesinlikle yasaktır"],
+        "Tebliğ m.16, esas sözleşmede veya özel mevzuatta hüküm bulunmak şartıyla tahvillere faiz yanında, faizle karşılaştırmalı veya faiz öngörülmeden kârdan pay verilmesine izin verir.",
+        "Kârdan pay verilmesi tahvili paya dönüştürmez; Tebliğde izin verilen getiri düzenlerinden biridir.",
+        "Borçlanma Araçları Tebliği (VII-128.8) m.16", "medium",
+    ),
+    r(
+        "Bir vadeli işlem sözleşmesinin değeri döviz kuruna, bir opsiyonun değeri ise pay fiyatına bağlıdır. Bu araçların ortak sınıfı hangisidir?",
+        "Türev aracın değerini ve sonucunu belirleyen temel bağlantı nedir?",
+        "Türev araçtır; değeri belirlenen dayanaktan türetilir",
+        ["Paydır; her durumda ihraççı sermayesini temsil eder", "KİS'tir; yalnız net kârdan pay verir", "Finansman bonosudur; vadesi 30-364 gün olmak zorundadır", "Mevduattır; yalnız banka bilançosunda izlenir"],
+        "6362 sayılı Kanun m.3; menkul kıymet satın alma-satma veya birbirleriyle değiştirme hakkı veren türevleri ve değeri varlık, fiyat, oran ya da göstergelere bağlı sözleşmeleri kapsar.",
+        "Türev aracın ekonomik değeri bağımsız bir ortaklık payından değil, belirlenen dayanak varlık veya göstergenin hareketinden türetilir.",
+        "6362 sayılı Sermaye Piyasası Kanunu m.3/1-u", "easy",
+    ),
+    r(
+        "Bir yatırım kuruluşu varantı, yatırımcıya belirli payı önceden belirlenmiş fiyattan vade tarihine kadar alma hakkı tanımaktadır. Yatırımcı bu hakkı kullanmak zorunda mıdır?",
+        "Yatırım kuruluşu varantının sahibine sağladığı temel yetki ve uzlaşı biçimi nedir?",
+        "Hayır; hak verir, kullanım zorunluluğu doğurmaz",
+        ["Evet; yatırımcı dayanak varlığı her durumda almak zorundadır", "Hayır; çünkü varant sahibine hiçbir hak vermez", "Evet; varant yalnız ortaklık payının zorunlu teslim sözleşmesidir", "Hayır; fakat hak yalnız fiziki senet teslimiyle kullanılabilir"],
+        "Varantlar Tebliği m.3, yatırım kuruluşu varantını dayanak varlığı veya göstergeyi belirli fiyattan belirli tarihte ya da tarihe kadar alma veya satma hakkı veren araç olarak tanımlar.",
+        "Varant bir hak sağlar, kullanma yükümlülüğü doğurmaz; hakkın sonucu kaydî teslimat veya nakdî uzlaşı olabilir.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3/1-r", "easy",
+    ),
+    r(
+        "Aynı dayanak pay için biri alım, diğeri satım yönlü iki yatırım kuruluşu varantı çıkarılmıştır. Piyasa fiyatı kullanım fiyatının altına düşerse hangi hakların yönü doğrudur?",
+        "Alım ve satım varantlarının yatırımcıya verdiği hak nasıl ayrılır?",
+        "Alım varantı alma, satım varantı satma hakkı verir",
+        ["Alım varantı satma, satım varantı alma zorunluluğu verir", "Her ikisi de ihraççı ortaklığın genel kurulunda oy hakkı verir", "Her ikisi de yalnız sabit faiz alacağı doğurur", "Alım ve satım ayrımı sadece aracın vadesini değiştirir"],
+        "Tebliğdeki yatırım kuruluşu varantı tanımı hem alma hem satma hakkını kapsar; yön, yatırımcının dayanak üzerindeki hakkının niteliğini belirler.",
+        "Alım varantı fiyat artışı, satım varantı fiyat düşüşü beklentisine bağlı hak sağlar; ikisi de kullanma zorunluluğu değildir.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3/1-r", "medium",
+    ),
+    r(
+        "Payları borsada işlem gören ortaklık, başka bir sermaye piyasası aracının halka arzı sırasında yatırımcıya kendi payları üzerinde uzlaşı isteme hakkı veren araç da çıkarmıştır. Bu ikinci araç hangisidir?",
+        "Ortaklık varantını yatırım kuruluşu varantından ayıran ihraç bağlantısı nedir?",
+        "Ortaklık varantıdır; ilgili aracın halka arzıyla birlikte çıkarılır",
+        ["Finansman bonosudur; yalnız kısa vadeli borç hakkı verir", "Yatırım fonu payıdır; başka aracın halka arzına bağlanması zorunludur", "Kira sertifikasıdır; mutlaka VKŞ tarafından çıkarılır", "İskontolu sertifikadır; sadece endekse yatırım imkânı verir"],
+        "Tebliğ m.3, ortaklık varantını payları borsada işlem gören veya görecek ihraççının, ilgili sermaye piyasası aracının halka arzı sırasında çıkardığı ve paylar üzerinde uzlaşı isteme hakkı veren araç olarak tanımlar.",
+        "Ortaklık varantının belirgin özelliği, ihraççı ortaklık ve eş zamanlı halka arz edilen ilgili sermaye piyasası aracıyla olan bağlantısıdır.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3/1-l", "hard",
+    ),
+    r(
+        "Bir sertifika, yatırımcıya dayanak göstergeye piyasa değerine göre indirimli katılım sağlamakta; bunun karşılığında belirlenen tavanı aşan yükselişten vazgeçirmektedir. Araç hangisidir?",
+        "İskontolu yatırım kuruluşu sertifikasında yatırımcının üstlendiği temel değiş tokuş nedir?",
+        "İskontolu sertifikadır; tavan üstü kazanç bırakılır",
+        ["Turbo sertifikadır; her durumda sınırsız yükseliş getirisi sağlar", "Paydır; iskonto karşılığında ortaklık hakkı sona erer", "Tahvildir; vade boyunca sabit faiz ödenmesi zorunludur", "KİS'tir; yatırımcının tek hakkı tasfiye bakiyesidir"],
+        "Tebliğ m.3, iskontolu sertifikayı dayanağa iskontolu yatırım imkânı veren; bu iskonto karşılığında tavanın üzerindeki yukarı yönlü performanstan feragat edilen araç olarak tanımlar.",
+        "İndirim bir karşılıksız avantaj değildir; yatırımcının dayanağın önceden belirlenmiş tavanı aşan kazancına katılmamasıyla dengelenir.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3/1-ğ", "medium",
+    ),
+    r(
+        "Sertifika, dayanak varlığın nihai değeri ile önceden açıklanan kullanım fiyatı arasındaki farka göre geri ödeme hakkı sağlamaktadır. Araç hangisidir?",
+        "Turbo yatırım kuruluşu sertifikasının geri ödeme tutarı hangi iki değer arasındaki bağlantıya dayanır?",
+        "Turbo sertifikadır; ödeme fiyat farkına dayanır",
+        ["KİS'tir; yalnız ortaklığın net kârına dayanır", "Paydır; geri ödeme yerine sürekli sabit faiz verir", "Finansman bonosudur; dayanak değerle ilişkisi bulunmaz", "Sahipliğe dayalı kira sertifikasıdır; yalnız kira gelirini temsil eder"],
+        "Tebliğ m.3, turbo sertifikayı dayanak varlık veya göstergenin nihai değeri ile önceden açıklanan kullanım fiyatı arasındaki fark üzerinden geri ödeme hakkı sağlayan araç olarak tanımlar.",
+        "Turbo sertifikanın getirisi ortaklık kârından ya da sabit faizden değil, dayanak ile kullanım fiyatı arasındaki farktan türetilir.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3/1-o", "medium",
+    ),
+    r(
+        "Nakavt özellikli sertifikanın dayanak değeri, vade içinde önceden belirlenen bariyere ulaşmıştır. İzahnamede artık değer öngörülmüştür. Temel sonuç nedir?",
+        "Nakavt ve bariyer kavramları yatırım kuruluşu varantı veya sertifikasında nasıl işler?",
+        "Araç geçersiz olur; öngörülmüşse artık değerle sona erdirilir",
+        ["Araç otomatik olarak ortaklık payına dönüşür", "Bariyer yalnız vade bittikten sonra sonuç doğurur", "Araç sınırsız süreyle ve aynı koşullarla devam eder", "İhraççı yatırımcıya mutlaka dayanağın tüm piyasa değerini öder"],
+        "Tebliğ m.3 ve m.15, bariyere ulaşılması veya aşılmasıyla nakavt özellikli aracın geçersiz olabileceğini; araçta değer ödenmeden ya da öngörülen sıfıra yakın artık değerle sona ermeyi düzenler.",
+        "Bariyer bir fiyat veya değer eşiğidir; gerçekleşmesi, nakavt özellikli aracın vadesini beklemeden ekonomik değerini yitirmesine yol açabilir.",
+        "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3 ve m.15", "hard",
+    ),
+    r(
+        "Münhasıran kira sertifikası ihraç etmek üzere anonim şirket olarak kurulan kuruluş, dayanak varlıktan elde edilen gelirleri sertifika sahiplerine payları oranında aktaracaktır. Kuruluş ve araç hangileridir?",
+        "Kira sertifikası yapısında VKŞ'nin niteliği ve yatırımcının gelir hakkı nedir?",
+        "VKŞ ve kira sertifikasıdır; gelir paylaştırılır",
+        ["Kuruluş yatırım fonu, araç paydır; gelir yalnız kurucuya aittir", "Kuruluş banka, araç mevduattır; yatırımcı dayanakta ortak olur", "Kuruluş borsa, araç finansman bonosudur; gelir Kurula aktarılır", "Kuruluş MKK, araç KİS'tir; dayanak gelir yatırımcıya verilemez"],
+        "Kira Sertifikaları Tebliği m.3 ve m.4, VKŞ'yi münhasıran kira sertifikası ihraç eden anonim şirket; yatırımcıyı da dayanak varlık ve hak gelirlerinde payı oranında hak sahibi olarak düzenler.",
+        "VKŞ özel amaçlı sermaye piyasası kurumudur; kira sertifikası sahibinin ekonomik hakkı ihraç dayanağından elde edilen gelire bağlanır.",
+        "Kira Sertifikaları Tebliği (III-61.1) m.3/1-ö ve m.4/4", "medium",
+    ),
+    r(
+        "VKŞ, tek program içinde sahipliğe ve ortaklığa dayalı unsurları birlikte kullanarak kira sertifikası ihraç etmek istemektedir. Tebliğ buna izin verir mi?",
+        "Kira sertifikaları hangi beş dayanak türüne göre veya nasıl birleştirilerek çıkarılabilir?",
+        "Evet; Tebliğdeki beş dayanak türü birlikte kullanılabilir",
+        ["Hayır; yalnız sahipliğe dayalı tür mümkündür", "Hayır; her ihraç mutlaka tahvile dönüştürülmelidir", "Evet; fakat yalnız mevduat ve çek birlikte kullanılabilir", "Hayır; ortaklığa ve eser sözleşmesine dayalı türler yasaktır"],
+        "Kira Sertifikaları Tebliği m.4, beş dayanak türünü sayar ve bu türlerin birlikte kullanılması suretiyle de kira sertifikası ihraç edilebileceğini kabul eder.",
+        "Sayılan türler birbirini dışlayan zorunlu kalıplar değildir; uygun yapıda karma ihraç mümkündür.",
+        "Kira Sertifikaları Tebliği (III-61.1) m.4/1", "medium",
+    ),
+]
+
+
+PREMISES = [
+    {
+        "stem": "6362 sayılı Kanundaki araç sınıflandırması bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Paylar menkul kıymet niteliğindedir\n\nII. Türev araçlar sermaye piyasası aracı kapsamındadır\n\nIII. Çek, Kanundaki menkul kıymet tanımının dışında tutulmuştur",
+        "correct": "I, II ve III",
+        "why": "Pay menkul kıymettir; türev araçlar sermaye piyasası araçlarının ana sınıflarından biridir; para, çek, poliçe ve bono ise Kanundaki menkul kıymet tanımının açıkça dışındadır.",
+        "ref": "6362 sayılı Sermaye Piyasası Kanunu m.3", "difficulty": "medium",
+    },
+    {
+        "stem": "Pay ve pay benzeri menkul kıymetler bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Pay, ortaklık sermayesini temsil eder\n\nII. Pay benzeri kıymet sabit getiri taahhüdü taşıyabilir\n\nIII. Pay benzeri kıymetin sermayede temsil edilmesi zorunlu değildir",
+        "correct": "I ve III",
+        "why": "Pay sermayeyi temsil eder. Pay benzeri kıymetin sermayede temsil edilmesi zorunlu değildir ve sabit getiri taahhüdü barındırmaz. Bu nedenle II yanlıştır.",
+        "ref": "Pay Tebliği (VII-128.1) m.4", "difficulty": "medium",
+    },
+    {
+        "stem": "Borçlanma araçlarının vadesi bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Finansman bonosunun vadesi en az 365 gündür\n\nII. Tahvilin vadesi 365 gün veya daha uzundur\n\nIII. Kıymetli maden bonosu 30-364 gün vadeli olabilir",
+        "correct": "II ve III",
+        "why": "Tahvil en az 365 gün, kıymetli maden bonosu 30-364 gün vadelidir. Finansman bonosunun vadesi de 30-364 gün olduğundan I yanlıştır.",
+        "ref": "Borçlanma Araçları Tebliği (VII-128.8) m.3", "difficulty": "medium",
+    },
+    {
+        "stem": "PDT ve DET bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. PDT ihraççının kendi paylarına dönüşüm hakkı verir\n\nII. DET başka bir borsa ortaklığının paylarıyla değişim hakkı verir\n\nIII. Her iki işlem de vade başlangıcından en erken 365 gün sonra yapılabilir",
+        "correct": "I, II ve III",
+        "why": "PDT ile DET dönüşümün hedefindeki pay bakımından ayrılır. Tebliğ hem PDT dönüşümü hem DET değişimi için vade başlangıcından itibaren 365 günlük asgari süre öngörür.",
+        "ref": "Borçlanma Araçları Tebliği (VII-128.8) m.3, m.17 ve m.24", "difficulty": "hard",
+    },
+    {
+        "stem": "Yatırım kuruluşu varantları bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sahibine dayanağı belirli fiyattan alma veya satma hakkı verebilir\n\nII. Hak yalnız fiziki teslimle kullanılabilir\n\nIII. Varant sahibi hakkını kullanmak zorunda değildir",
+        "correct": "I ve III",
+        "why": "Varant alma veya satma hakkı verir ve kullanım zorunluluğu doğurmaz. Uzlaşı kaydî teslimat ya da nakdî olabilir; yalnız fiziki teslim şartı bulunmadığından II yanlıştır.",
+        "ref": "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3", "difficulty": "medium",
+    },
+    {
+        "stem": "Yatırım kuruluşu sertifikaları bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İskontolu sertifikada yatırımcı tavan üstü performansa mutlaka katılır\n\nII. Turbo sertifikanın geri ödemesi nihai değer ile kullanım fiyatı farkına bağlanabilir\n\nIII. Nakavt özelliğinde bariyerin gerçekleşmesi aracı geçersiz kılabilir",
+        "correct": "II ve III",
+        "why": "Turbo sertifika ve nakavta ilişkin II ile III doğrudur. İskontolu sertifikada yatırımcı indirim karşılığında tavanın üzerindeki performanstan vazgeçtiği için I yanlıştır.",
+        "ref": "Varantlar ve Yatırım Kuruluşu Sertifikaları Tebliği (VII-128.3) m.3 ve m.15", "difficulty": "hard",
+    },
+    {
+        "stem": "Kira sertifikaları bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. VKŞ münhasıran kira sertifikası ihraç etmek üzere anonim şirket biçiminde kurulur\n\nII. Dayanak gelirlerin tümü yalnız VKŞ'ye aittir\n\nIII. Kira sertifikası beş dayanak türünün birlikte kullanılmasıyla çıkarılabilir",
+        "correct": "I ve III",
+        "why": "VKŞ'nin niteliği ve türlerin birlikte kullanılabilmesi doğrudur. Sertifika sahipleri dayanak gelirlerde payları oranında hak sahibi olduğundan II yanlıştır.",
+        "ref": "Kira Sertifikaları Tebliği (III-61.1) m.3-4", "difficulty": "medium",
+    },
+    {
+        "stem": "Katılma intifa senetleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Net kârdan pay alma hakkı verebilir\n\nII. Her durumda sabit getiri taahhüdü taşır\n\nIII. Halka açık ortaklık KİS'ine yeni pay alma hakkı tanınabilir",
+        "correct": "Yalnız I",
+        "why": "KİS net kârdan pay alma hakkı verebilir; pay benzeri kıymet olarak sabit getiri taahhüdü taşımaz. Halka açık ortaklık KİS'ine yeni pay alma hakkı da tanınamaz.",
+        "ref": "Pay Tebliği (VII-128.1) m.36 ve m.38", "difficulty": "hard",
+    },
+]
+
+
+if __name__ == "__main__":
+    write_topic(
+        lesson_id="sermaye_piyasasi_ve_finans",
+        topic_id="sermaye_piyasasi_araclari",
+        label="Sermaye Piyasası Araçları",
+        slug="sermaye_piyasasi_araclari",
+        prefix="topic-spa",
+        seed=2026071734,
+        legislation_version=(
+            "6362 sayılı SPKn m.3; Pay Tebliği VII-128.1; Borçlanma Araçları "
+            "Tebliği VII-128.8; Kira Sertifikaları Tebliği III-61.1; Varantlar ve "
+            "Yatırım Kuruluşu Sertifikaları Tebliği VII-128.3 (17.07.2026)"
+        ),
+        rules=RULES,
+        premises=PREMISES,
+        wrong_banks={},
+    )

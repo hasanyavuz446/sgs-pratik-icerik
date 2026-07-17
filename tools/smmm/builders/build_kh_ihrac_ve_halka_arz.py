@@ -1,0 +1,327 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""SMMM Sermaye Piyasası Mevzuatı — İhraç ve Halka Arz, 3×20.
+
+Dayanaklar, 17.07.2026 tarihinde SPK'nın güncel mevzuat sistemindeki II-5.1 ve
+II-5.2 sayılı konsolide tebliğler ile 6362 sayılı Kanun üzerinden doğrulanmıştır.
+"""
+from topic_pack_builder import write_topic
+
+
+def r(scenario, focus, correct, distractors, why, focus_why, ref, difficulty="medium"):
+    return {
+        "scenario": scenario, "focus": focus, "correct": correct,
+        "distractors": distractors,
+        "focus_distractors": distractors[2:] + distractors[:2],
+        "why": why, "focus_why": focus_why, "ref": ref,
+        "difficulty": difficulty,
+    }
+
+
+RULES = [
+    r(
+        "Bir ortaklık, paylarını satın almaları için internet üzerinden belirsiz sayıdaki kişiye genel çağrı yapmış ve çağrı sonunda satış gerçekleştirmiştir. İşlem nasıl nitelendirilir?",
+        "Sermaye piyasası mevzuatında halka arz hangi iki unsuru kapsar?",
+        "Genel satın alma çağrısı ve onu izleyen satış halka arzdır",
+        ["Yalnız ortaklar arasındaki kapalı pay devri halka arzdır", "Sadece şirketin iç yazışması halka arz sayılır", "Genel çağrı yapılsa bile hiçbir satış halka arz oluşturmaz", "Halka arz yalnız borsanın pay satın almasıyla gerçekleşir"],
+        "II-5.1 sayılı Tebliğ m.4, halka arzı sermaye piyasası araçlarının satın alınması için her türlü yoldan yapılan genel çağrı ve bu çağrı devamındaki satış olarak tanımlar.",
+        "Çağrının internetten yapılması niteliği değiştirmez; genel çağrı ile onu izleyen satış birlikte halka arzı oluşturur.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.4/1-e", "easy",
+    ),
+    r(
+        "Sermaye piyasası aracı halka arz edilmeksizin belirli yatırımcılara satılmıştır. Halka arz bulunmadığı için işlemin ihraç olmadığı ileri sürülmektedir. Bu görüş doğru mudur?",
+        "İhraç kavramı halka arz edilerek ve edilmeksizin satışları nasıl kapsar?",
+        "Hayır; halka arz edilmeyen satış da ihraç kapsamındadır",
+        ["Evet; yalnız halka arz yoluyla satış ihraç sayılır", "Evet; tahsisli satışta hiçbir ihraç işlemi oluşmaz", "Hayır; fakat ihraç yalnız yatırımcının aracı geri satmasıdır", "Evet; ihraç sadece borsanın kurulduğu günü ifade eder"],
+        "Tebliğ m.4, ihracı araçların ihraççı tarafından çıkarılıp halka arz edilerek veya halka arz edilmeksizin satılması olarak tanımlar.",
+        "Halka arz edilmeksizin satış, halka arz değildir; ancak ihraç kavramının içinde yer alır.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.4/1-g", "easy",
+    ),
+    r(
+        "Gerçek kişi ortak, sahip olduğu mevcut payları halka arz etmek üzere Kurula başvurmuştur. Ortak ihraççı değilse hangi sıfatı taşır?",
+        "Halka arz eden ile ihraççı arasındaki temel ayrım nedir?",
+        "Mevcut aracını sunan kişi halka arz eden sıfatını taşır",
+        ["Aracı çıkaran her durumda yalnız yatırımcı sayılır", "Mevcut pay sahibi doğrudan borsa sıfatını kazanır", "Başvuru yapan gerçek kişi otomatik olarak MKK olur", "Payını satan kişi hiçbir mevzuat sıfatı taşımaz"],
+        "Halka arz eden, sahip olduğu sermaye piyasası araçlarını halka arz etmek üzere Kurula başvuran gerçek veya tüzel kişidir; ihraççı ise aracı çıkaran ya da aracı halka arz edilen tüzel kişidir.",
+        "Ortaklığın mevcut payını satan gerçek kişi yeni araç çıkarmasa da halka arz eden sıfatıyla sürece katılır.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.4/1-f ve h", "medium",
+    ),
+    r(
+        "Bir sermaye piyasası aracının halka arz edilmesi ve ardından borsada işlem görmesi planlanmaktadır. Kurulca onaylı hangi temel belge gerekir?",
+        "Halka arz olunacak veya borsada işlem görecek araç için hangi belge hazırlanır?",
+        "İzahname hazırlanır ve Kurulca onaylanır",
+        ["Yalnız şirket içi görev tanımı hazırlanır", "Onaysız reklam metni yeterli kabul edilir", "Sadece vergi beyannamesi düzenlenmesi gerekir", "Halka arzda hiçbir kamuyu aydınlatma belgesi aranmaz"],
+        "II-5.1 sayılı Tebliğ m.5 uyarınca sermaye piyasası aracının halka arzı veya borsada işlem görmesi için izahname hazırlanıp Kurulca onaylanmalıdır.",
+        "İzahname yatırımcının ihraççıyı, aracı ve riskleri değerlendirmesine hizmet eden temel kamuyu aydınlatma belgesidir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.5/1", "easy",
+    ),
+    r(
+        "İhraççı, sermaye piyasası aracını halka arz etmeksizin yurt içinde nitelikli yatırımcılara satacaktır. İzahname düzenlenmeyen bu ihraçta temel belge hangisidir?",
+        "İzahname hazırlanmaksızın halka arz edilmeyen ihraçta hangi belge esas alınır?",
+        "İhraç belgesi hazırlanıp Kurulca onaylanır",
+        ["Her durumda halka arz izahnamesi hazırlanır", "Yalnız yatırımcının sözlü beyanı yeterlidir", "Kurul onayı bulunmayan tanıtım broşürü kullanılır", "Hiçbir belge veya onay süreci uygulanmaz"],
+        "Tebliğ m.5, izahname hazırlanmaksızın gerçekleştirilen halka arz edilmeyen ihraçlarda, sayılan istisnalar dışında ihraç belgesini ve Kurul onayını zorunlu tutar.",
+        "İhraç belgesi aracın nitelikleri ve satış şartlarına ilişkin bilgileri içerir; izahnamenin halka arza özgü işleviyle karıştırılmaz.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.5/2 ve m.12", "easy",
+    ),
+    r(
+        "Kurul düzenlemesi gereği borsada işlem görmesi zorunlu bir araç için yalnız SPK'ya izahname onayı başvurusu yapılmış, borsaya başvurulmamıştır. Süreç tamam mıdır?",
+        "Borsada işlem görmesi zorunlu araçta Kurul onay başvurusuna hangi başvuru eklenir?",
+        "Hayır; işlem görme için ayrıca borsaya başvuru gerekir",
+        ["Evet; borsa başvurusu hiçbir araçta yapılamaz", "Hayır; bunun yerine yalnız vergi dairesine başvurulur", "Evet; Kurul başvurusu borsa kotasyonunu kendiliğinden tamamlar", "Hayır; yatırımcıların oybirliğiyle borsa kurulması gerekir"],
+        "Tebliğ m.5/4, borsada işlem görmesi zorunlu araçlarda Kurula onay başvurusunun yanında borsaya da işlem görme başvurusu yapılmasını gerektirir.",
+        "İzahnamenin Kurulca incelenmesi ile aracın borsada işlem görme başvurusu farklı süreçlerdir; biri diğerinin yerine geçmez.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.5/4", "medium",
+    ),
+    r(
+        "Sermaye piyasası araçları yalnız profesyonel müşteri niteliğindeki yatırımcılara satılacaktır. İzahname muafiyetinin anlamı sorulmaktadır. Doğru ifade hangisidir?",
+        "Nitelikli yatırımcıya satış veya tahsisli satışta izahname yükümlülüğünün durumu nedir?",
+        "Bu halka arz edilmeyen satışlarda izahname hazırlanması gerekmez",
+        ["Her iki satışta da halka açık çağrı ve izahname zorunludur", "Muafiyet ihraç belgesi dâhil bütün belgeleri kendiliğinden kaldırır", "Yalnız niteliksiz yatırımcıların onayıyla muafiyet doğar", "Tahsisli satış her durumda halka arz sayıldığı için muafiyet olamaz"],
+        "II-5.1 m.6, yalnız nitelikli yatırımcılara ve tahsisli satışlarda izahname hazırlanmasını gerektirmeyen durumları düzenler; gerekli ihraç belgesi rejimi ayrıca uygulanır.",
+        "İzahname muafiyeti, halka arz edilmeyen ihracın tüm kamuyu aydınlatma ve onay kurallarından bağışık olduğu anlamına gelmez.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.6/2", "medium",
+    ),
+    r(
+        "İhraççı izahnameyi, ihraççı ve araca ilişkin bütün bilgileri tek metinde toplayarak hazırlamak istemektedir. Bunun yerine üç ayrı belge hazırlaması her durumda zorunlu mudur?",
+        "İzahname tek belge veya birden fazla belge biçiminde hazırlanabilir mi?",
+        "Tek belge de mümkündür; Kurul niteliğe göre biçimi zorunlu tutabilir",
+        ["İzahname yalnız üç yüz ayrı belgeden oluşabilir", "Tek belge kullanılması bütün halka arzlarda yasaktır", "Belge sayısını yalnız yatırımcıların kura sonucu belirlemesi gerekir", "İzahname biçimi hiçbir zaman Kurul değerlendirmesine tabi değildir"],
+        "Tebliğ m.13, izahnamenin tek veya birden fazla belge olarak hazırlanmasına izin verir; Kurul ihraç ve aracın niteliğine göre belirli biçimi zorunlu tutabilir.",
+        "Esneklik sınırsız değildir; Kurul uygun kamuyu aydınlatma yapısının tek veya çok belgeli olmasını isteyebilir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.13/1", "medium",
+    ),
+    r(
+        "Çok belgeli izahnamede ihraççının sermayesi, yönetimi, faaliyetleri, finansal durumu ve sorumlu kişileri açıklanacaktır. Bu bilgiler hangi bölümde yer alır?",
+        "Çok belgeli izahnamede ihraççı bilgi dokümanının temel kapsamı nedir?",
+        "İhraççı bilgi dokümanında yer alır",
+        ["Yalnız sermaye piyasası aracı notunda yer alır", "Sadece satış sonrası dağıtım listesinde yer alır", "Borsa emir defterinde gizli tutulması gerekir", "Hiçbir izahname belgesinde açıklanamaz"],
+        "Tebliğ m.13, ihraççı ve varsa garantörün sermayesi, yönetimi, faaliyetleri, finansal durumu ve sorumlu kişileri ihraççı bilgi dokümanının kapsamına verir.",
+        "İhraççı bilgi dokümanı şirket tarafındaki kurumsal ve finansal değerlendirmeyi mümkün kılar.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.13/2-a", "easy",
+    ),
+    r(
+        "Çok belgeli izahnamede aracın özellikleri, yatırımcıya sağladığı haklar, yükümlülükler, riskler ve borsada işlem görme bilgileri açıklanacaktır. Doğru belge hangisidir?",
+        "Sermaye piyasası aracı notu hangi bilgi grubunu içerir?",
+        "Sermaye piyasası aracı notunda yer alır",
+        ["Yalnız ihraççının personel dosyasında saklanır", "İhraççı bilgi dokümanında riskler kesinlikle açıklanamaz", "Sadece halka arz bittikten sonra reklamda yayımlanır", "Aracın hak ve riskleri hiçbir belgede gösterilmez"],
+        "Tebliğ m.13, aracın özellikleri, hakları, yükümlülükleri, riskleri ile halka arz ve borsada işlem bilgilerini sermaye piyasası aracı notuna bağlar.",
+        "Aracı değerlendirmeye ilişkin bilgiler, ihraççının kurumsal bilgilerinden ayrılarak aracı notunda toplanır.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.13/2-b", "easy",
+    ),
+    r(
+        "İzahnamenin özeti, yüzlerce sayfalık belgenin yerine geçecek tek yatırım kaynağı ve kesin getiri taahhüdü olarak hazırlanmıştır. Bu yaklaşım doğru mudur?",
+        "İzahname özetinin işlevi ve yatırım kararındaki yeri nedir?",
+        "Hayır; özet destekler, karar bütün izahnameyle verilir",
+        ["Evet; özet kesin getiri garantisi veren bağımsız sözleşmedir", "Evet; özet dışındaki izahname bölümleri yatırımcıdan saklanır", "Hayır; fakat özette risk açıklanması kesinlikle yasaktır", "Evet; özet yalnız ihraççının reklam sloganlarını içerir"],
+        "Tebliğ m.13, özeti temel özellik ve riskleri anlaşılır ve karşılaştırılabilir biçimde sunan giriş olarak düzenler; yatırım kararı izahnamenin bütünü incelenerek verilmelidir.",
+        "Özet karar desteğidir, izahnamenin yerine geçen garanti belgesi değildir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.13/10-11", "medium",
+    ),
+    r(
+        "Kurul, izahnamede yer alan bilgilerin tutarlı ve anlaşılabilir olduğunu, ayrıca belirlenen standartlara göre eksiksiz bulunduğunu saptamıştır. Onay ölçütü sağlanmış mıdır?",
+        "Kurulun izahname veya ihraç belgesi onayında aradığı üç temel bilgi ölçütü nedir?",
+        "Tutarlılık, anlaşılabilirlik ve standartlara göre eksiksizliktir",
+        ["Yalnız ihraççının yüksek kâr açıklaması yeterlidir", "Belgenin yatırımcıya kapalı ve gizli tutulması gerekir", "Sadece reklam bütçesinin yüksekliği dikkate alınır", "Aracın fiyatının hiç düşmeyeceğinin taahhüt edilmesi gerekir"],
+        "Tebliğ m.22, onayı belgedeki bilgilerin tutarlı, anlaşılabilir ve Kurul standartlarına göre eksiksiz olmasına bağlar; Kurul ilave bilgi de isteyebilir.",
+        "Onay incelemesi yatırımın ticari başarısını değil kamuyu aydınlatma belgesinin bilgi kalitesini değerlendirir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.22/1", "easy",
+    ),
+    r(
+        "İhraççı, SPK onayını reklamda 'Kurul aracımızın doğruluğunu ve getirisini garanti etmiştir' şeklinde kullanmak istemektedir. Bu ifade uygun mudur?",
+        "İzahnamenin Kurulca onaylanması hangi anlamlara gelmez?",
+        "Onay tekeffül veya yatırım tavsiyesi anlamına gelmez",
+        ["Onay her yatırımcıya sabit getiri garantisi verir", "Onay ihraççının bütün gelecekteki borçlarını Kurula geçirir", "Onay aracın fiyatının hiç düşmeyeceğini kesinleştirir", "Onay belgedeki bütün tahminleri devlet borcuna dönüştürür"],
+        "Tebliğ m.22/3, onayın araç, ihraççı veya bilgiler bakımından Kurul tekeffülü olmadığını; reklam amacıyla kullanılamayacağını ve tavsiye sayılamayacağını açıkça belirtir.",
+        "Kurul onayı açıklamanın biçim ve bütünlüğüne ilişkindir; yatırım riskini Kurula devreden garanti değildir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.22/3", "medium",
+    ),
+    r(
+        "Güncelliği Tebliğe uygun korunan izahname ilk kez 1 Eylül 2026'da yayımlanmıştır. Genel geçerlilik süresi hangi tarihten ve ne kadar işler?",
+        "İzahnamenin geçerlilik süresi hangi olayla başlar ve ne kadardır?",
+        "İlk yayım tarihinden başlayarak on iki ay geçerlidir",
+        ["Kuruluş tarihinden başlayarak süresiz geçerlidir", "Son satıştan sonra yalnız bir takvim günü geçerlidir", "Kurul başvurusundan önceki beş yıl için geçerlidir", "İhraççının istediği tarihte başlayıp sınırsız devam eder"],
+        "Tebliğ m.17, güncelliğinin korunması kaydıyla izahnameyi ilk yayım tarihinden itibaren on iki ay boyunca yapılacak ihraçlar için geçerli sayar.",
+        "Çok belgeli izahnamede süre, Kurulca onaylanan ihraççı bilgi dokümanının ilk yayım tarihinde başlar.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.17", "easy",
+    ),
+    r(
+        "Ortaklık hakkı vermeyen araçların halka arz edilmeksizin satışına ilişkin ihraç belgesi Kurul kararına bağlanmıştır. Belgenin geçerliliği hangi esasa tabidir?",
+        "İhraç tavanı içeren ihraç belgesi hangi tarihten itibaren ne kadar süre geçerlidir?",
+        "Kurul karar tarihinden itibaren bir yıl geçerlidir",
+        ["İlk yatırımcı talebinden itibaren yalnız iki gün geçerlidir", "Şirket kurulmadan önce sınırsız süre geçerlidir", "Onaydan bağımsız olarak her zaman yenilenmeden kullanılabilir", "Yalnız halka arz tamamlandıktan sonraki beş yıl geçerlidir"],
+        "Tebliğ m.18, ortaklık hakkı vermeyen araçlar için ihraç tavanını içeren ihraç belgesini, onay kararının verildiği Kurul karar tarihinden itibaren bir yıllık ihraçlar için geçerli sayar.",
+        "İzahnamenin ilk yayım tarihi esasından farklı olarak ihraç belgesinde Kurul karar tarihi başlangıçtır.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.18", "medium",
+    ),
+    r(
+        "Eksiksiz izahname ve gerekli belgeler Kurula sunulmuştur. Başvuru ilk halka arz değildir. Tebliğdeki genel karar süresi nedir?",
+        "İzahnamenin veya ihraç belgesinin onay başvurusunda genel ve ilk halka arz karar süreleri nelerdir?",
+        "Genel süre on, ilk halka arzda yirmi iş günüdür",
+        ["Bütün başvurularda aynı gün karar verilmek zorundadır", "Genel süre bir yıl, ilk halka arzda iki yıldır", "Süre yalnız ihraççının dilediği tarihte başlar", "Kurul başvuruyu hiçbir zaman karara bağlayamaz"],
+        "Tebliğ m.19, eksiksiz başvuruyu genel olarak on iş gününde; payların ilk defa halka arzında yirmi iş gününde karara bağlama esasını düzenler.",
+        "Eksik bilgi ve belgeler tamamlandığında süreler yeniden başlar; süre hesabı eksiksiz dosya esasına dayanır.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.19/1-2", "medium",
+    ),
+    r(
+        "Kurul, öngörülen süre içinde başvuru hakkında karar vermemiştir. İhraççı bunun zımni onay olduğunu ileri sürerek satışa başlamak istemektedir. Sonuç nedir?",
+        "Onay süresinde karar alınmaması zımni kabul veya ret sonucu doğurur mu?",
+        "Hayır; sessizlik onay veya ret anlamına gelmez",
+        ["Evet; her durumda kesin onay verilmiş sayılır", "Evet; araç Kurul garantisine geçmiş sayılır", "Hayır; fakat başvuru kendiliğinden halka arzı tamamlar", "Evet; yatırımcılar otomatik olarak pay sahibi olur"],
+        "Tebliğ m.19/4, süre içinde karar alınmamış olmasının izahname veya ihraç belgesinin onaylandığı ya da onaylanmadığı anlamına gelmeyeceğini düzenler.",
+        "Satışa başlamak için açık Kurul onayı gerekir; sessizlik zımni izin oluşturmaz.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.19/4", "easy",
+    ),
+    r(
+        "İzahname yayımlandıktan sonra yatırım kararını etkileyebilecek yeni bir risk ortaya çıkmıştır. İhraççı bu hususu satış sonuna kadar gizlemek istemektedir. Doğru işlem nedir?",
+        "Satıştan önce veya satış sırasında yatırım kararını etkileyen yeni husus çıkarsa ne yapılır?",
+        "Kurula bildirilir ve gerekirse satış süreci durdurulur",
+        ["Risk yalnız şirket çalışanlarına açıklanıp satış sürdürülür", "İzahname değişikliği hiçbir koşulda yapılamaz", "Yeni husus yatırımcılardan özellikle saklanmalıdır", "Kurulun satış sürecini durdurma yetkisi bulunmaz"],
+        "Tebliğ m.24, yatırım kararını etkileyebilecek değişiklik veya yeni hususun derhal Kurula bildirilmesini; satışın ilgililerce veya gerekli durumda Kurulca durdurulabilmesini öngörür.",
+        "Güncellik, izahnamenin onay anıyla sınırlı değildir; satış sürecinde önemli yeni bilgi ortaya çıkarsa belge güncellenir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.24/1-2", "hard",
+    ),
+    r(
+        "Yatırımcı talepte bulunduktan sonra izahnamede önemli değişiklik yayımlanmıştır. Yatırımcı ertesi iş günü talebini geri almak istemektedir. Hakkı var mıdır?",
+        "İzahname değişikliği öncesinde talepte bulunan yatırımcının geri alma süresi nedir?",
+        "Evet; iki iş günü içinde talebini geri alabilir",
+        ["Hayır; talep hiçbir koşulda geri alınamaz", "Evet; yalnız on yıl sonra geri alabilir", "Hayır; değişiklik yatırımcıya hiçbir hak sağlamaz", "Evet; fakat yalnız ihraççının iflasından sonra kullanabilir"],
+        "Tebliğ m.24, değişiklik veya yeni hususun yayımlanmasından önce talepte bulunan yatırımcıya, yayımı izleyen iki iş günü içinde talebi geri alma hakkı verir.",
+        "İhraççı veya halka arz eden, izahnamede bilgi vermek koşuluyla iki günlük süreyi daha uzun belirleyebilir.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.24/4", "medium",
+    ),
+    r(
+        "İzahnamedeki yanlış bilgi yatırımcı zararına yol açmıştır. İhraççı bütün sorumluluğun belgeyi onaylayan Kurula ait olduğunu savunmaktadır. Doğru sorumluluk sırası nedir?",
+        "İzahnamedeki yanlış, yanıltıcı veya eksik bilgiden doğan zararda öncelikli sorumlu kimdir?",
+        "Öncelikle ihraççı, koşuluyla diğer kişiler sorumludur",
+        ["Yalnız Kurul yatırım zararını tazmin etmek zorundadır", "Hiç kimse kamuyu aydınlatma belgesinden sorumlu değildir", "Sadece yatırımcı kendi zararından sorumludur", "Yalnız borsa şirketi her bilgi için kusursuz sorumludur"],
+        "Tebliğ m.25 ve Kanun m.10 uyarınca izahnamedeki yanlış, yanıltıcı veya eksik bilgiden doğan zararda ihraççı öncelikle sorumludur; tazmin edilememe hâlinde sayılan kişiler kusurları ölçüsünde sorumlu olabilir.",
+        "Kurul onayı ihraççının doğru ve eksiksiz bilgi verme sorumluluğunu ortadan kaldırmaz.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.25; 6362 sayılı Kanun m.10", "hard",
+    ),
+    r(
+        "Bağımsız değerleme kuruluşunun izahnamede kullanılmak üzere hazırladığı raporda yanıltıcı bilgi vardır. Kuruluş yalnız ihraççının sorumlu olduğunu ileri sürmektedir. Sonuç nedir?",
+        "İzahnamede kullanılmak üzere rapor hazırlayan denetim, derecelendirme ve değerleme kuruluşlarının sorumluluğu nedir?",
+        "Kendi raporlarındaki yanlış ve eksik bilgiden sorumludurlar",
+        ["Rapor hazırlayanlar hiçbir durumda sorumlu tutulamaz", "Sorumluluk yalnız reklam ajansına aktarılır", "Raporun izahnamede kullanılması bütün sorumluluğu Kurula geçirir", "Yalnız yatırımcı raporun doğruluğunu garanti etmek zorundadır"],
+        "Tebliğ m.25/2, izahnamede yer almak üzere rapor hazırlayan bağımsız denetim, derecelendirme ve değerleme kişi veya kurumlarını kendi raporlarındaki yanlış, yanıltıcı ve eksik bilgilerden sorumlu tutar.",
+        "Uzman raporunun izahnameye alınması, raporu hazırlayanın kendi mesleki sorumluluğunu kaldırmaz.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.25/2", "medium",
+    ),
+    r(
+        "Halka arz reklamında riskler saklanmış, kesin kazanç vaadi verilmiş ve yatırım kararının yalnız reklama göre alınması istenmiştir. Bu reklam uygun mudur?",
+        "Halka arza ilişkin tanıtım ve reklamların içerik ve izahname bağlantısı nasıl olmalıdır?",
+        "Hayır; reklam doğru ve izahnameyle tutarlı olmalıdır",
+        ["Evet; reklamda izahnamenin tersine bilgi verilebilir", "Evet; kesin kazanç vaadi bütün risk açıklamalarının yerini alır", "Hayır; fakat reklamın izahnameyle tutarlı olması yasaktır", "Evet; yatırımcıdan izahnameyi incelememesi özellikle istenir"],
+        "Tebliğ m.27, tanıtım ve reklamların yanlış, yanıltıcı, temelsiz, abartılı veya eksik olmamasını, izahnameyle tutarlı olmasını ve yatırım kararının izahname incelenerek verilmesi uyarısını şart koşar.",
+        "Reklam izahnamenin yerine geçmez; riskleri gizleyen kesin kazanç dili kamuyu aydınlatma ilkeleriyle bağdaşmaz.",
+        "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.27", "easy",
+    ),
+    r(
+        "İhraççı, araçlarını halka arz etmeksizin yalnız belirlediği iki kişiye borsa dışında satmak istemektedir. Satış biçimi hangisidir?",
+        "II-5.2 sayılı Tebliğe göre sermaye piyasası araçlarının temel satış şekilleri nelerdir?",
+        "Tahsisli satıştır; diğer şekiller halka arz ve nitelikli satıştır",
+        ["Yalnız halka arz mümkündür; başka satış şekli yoktur", "Bu işlem zorunlu olarak borsada halka arz sayılır", "Satış yalnız yatırım fonu katılma payına dönüştürülerek yapılır", "İki kişiye satış kendiliğinden kamu ihalesi sayılır"],
+        "II-5.2 sayılı Tebliğ m.6, halka arz yoluyla satış ile halka arz edilmeksizin tahsisli ve nitelikli yatırımcılara satış şekillerini düzenler.",
+        "Belirli kişilere borsa dışında doğrudan satış tahsisli satış niteliğindedir; genel çağrı içermez.",
+        "Sermaye Piyasası Araçlarının Satışı Tebliği (II-5.2) m.4 ve m.6", "medium",
+    ),
+    r(
+        "Ortaklık halka arzda yatırımcı taleplerini toplayıp önceden belirlenen dağıtım esaslarına göre karşılanan kısmı satacaktır. Hangi satış yöntemi uygulanmaktadır?",
+        "Halka arz yoluyla satışta kullanılabilecek üç temel yöntem hangileridir?",
+        "Talep toplamadır; ayrıca talepsiz ve borsada satış vardır",
+        ["Yalnız kapalı artırma yöntemi kullanılabilir", "Bu işlem tahsisli satış yöntemidir ve halka arz değildir", "Sadece vergi dairesinde fiziki teslim yöntemi uygulanır", "Halka arzda hiçbir satış yöntemi belirlenemez"],
+        "II-5.2 sayılı Tebliğ m.13-14, talep toplama, talep toplanmaksızın satış ve borsada satış yöntemlerini düzenler; örnekte talepler toplanıp dağıtıldığı için ilk yöntem uygulanır.",
+        "Talep toplama yönteminin ayırt edici unsuru, yatırımcı taleplerinin önceden açıklanan esaslarla karşılanan bölümüne satış yapılmasıdır.",
+        "Sermaye Piyasası Araçlarının Satışı Tebliği (II-5.2) m.13-14", "easy",
+    ),
+    r(
+        "İhraççı halka arz yoluyla satış süresini bir iş günü olarak belirlemek istemektedir. Tebliğdeki genel süre aralığına uygun mudur?",
+        "Halka arz yoluyla satışın genel süresi hangi iş günü aralığında belirlenir?",
+        "Hayır; genel satış süresi iki ile yirmi iş günü arasındadır",
+        ["Evet; genel alt sınır bulunmadığından bir saat yeterlidir", "Hayır; her halka arz tam bir takvim yılı sürmelidir", "Evet; satış süresi yalnız yatırımcının yaşına göre belirlenir", "Hayır; bütün halka arzlar tek günde tamamlanmak zorundadır"],
+        "II-5.2 sayılı Tebliğ m.10, halka arz yoluyla satış süresini iki iş gününden az ve yirmi iş gününden fazla olmayacak şekilde belirler.",
+        "Bir iş günlük genel satış süresi alt sınırın altındadır; özel borsada satış hükümleri ayrıca değerlendirilir.",
+        "Sermaye Piyasası Araçlarının Satışı Tebliği (II-5.2) m.10/7", "easy",
+    ),
+    r(
+        "Nitelikli yatırımcılara satılmak üzere çıkarılan araç, borsada bütün yatırımcı grupları arasında işlem görmeye açılmak istenmektedir. Bu mümkün müdür?",
+        "Nitelikli yatırımcıya ve tahsisli satışa konu araçların borsada işlem esası nedir?",
+        "Nitelikli araç sınırlı, tahsisli araç kural olarak işlemsizdir",
+        ["Her iki araç da sınırsız biçimde bütün yatırımcılara satılır", "Nitelikli yatırımcı aracı hiçbir borsada işlem göremez", "Tahsisli araç mutlaka halka arz pazarında işlem görür", "Satış şeklinin ikincil işleme hiçbir etkisi yoktur"],
+        "II-5.2 sayılı Tebliğ m.7, nitelikli yatırımcıya satılan aracın borsada yalnız nitelikli yatırımcılar arasında işlem görebileceğini; tahsisli aracın işlem görmemesinin esas olduğunu düzenler.",
+        "Halka arz edilmeyen iki satış biçiminin ikincil işlem rejimleri aynı değildir.",
+        "Sermaye Piyasası Araçlarının Satışı Tebliği (II-5.2) m.7/1", "hard",
+    ),
+]
+
+
+PREMISES = [
+    {
+        "stem": "İhraç ve halka arz kavramları bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Halka arz genel satın alma çağrısını ve onu izleyen satışı kapsar\n\nII. İhraç yalnız halka arz yoluyla yapılan satıştır\n\nIII. Halka arz eden gerçek veya tüzel kişi olabilir",
+        "correct": "I ve III",
+        "why": "Halka arz genel çağrı ile devamındaki satıştır ve halka arz eden gerçek ya da tüzel kişi olabilir. İhraç, halka arz edilmeksizin satışı da kapsadığından II yanlıştır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.4", "difficulty": "medium",
+    },
+    {
+        "stem": "Kamuyu aydınlatma belgeleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Halka arz veya borsada işlem için izahname gerekir\n\nII. Halka arz edilmeyen ihraçta kural olarak ihraç belgesi kullanılır\n\nIII. Her iki belge de gerekli durumda Kurul onayına tabidir",
+        "correct": "I, II ve III",
+        "why": "II-5.1 sayılı Tebliğ, halka arz ve borsada işlem için izahnameyi; halka arz edilmeyen ihraç için ihraç belgesini düzenler ve her ikisinde Kurul onayını esas alır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.5", "difficulty": "easy",
+    },
+    {
+        "stem": "Çok belgeli izahname bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İhraççı bilgi dokümanı şirketin kurumsal ve finansal bilgilerini içerir\n\nII. Sermaye piyasası aracı notu yalnız ihraççının personel bilgilerini içerir\n\nIII. Özet, ihraççı ve aracın temel özellikleri ile risklerini içerir",
+        "correct": "I ve III",
+        "why": "İhraççı bilgi dokümanı kurumsal ve finansal bilgileri, özet temel özellik ve riskleri taşır. Aracı notu ise aracın hak, yükümlülük ve risklerini içerdiğinden II yanlıştır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.13", "difficulty": "medium",
+    },
+    {
+        "stem": "Kurul onayı bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yalnız ihraççının yüksek kâr açıklaması onay için yeterlidir\n\nII. Bilgilerin anlaşılabilir ve standartlara göre eksiksiz olması aranır\n\nIII. Onay, aracın getirisini Kurulun garanti ettiği anlamına gelmez",
+        "correct": "II ve III",
+        "why": "Onay bilgi kalitesi ölçütlerine dayanır ve Kurul tekeffülü ya da getiri garantisi oluşturmaz. Yüksek kâr açıklaması tek başına yeterli olmadığından I yanlıştır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.22", "difficulty": "medium",
+    },
+    {
+        "stem": "İzahname değişikliği bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yatırım kararını etkileyen yeni husus Kurula bildirilir\n\nII. Gerekli durumda satış süreci durdurulabilir\n\nIII. Değişiklik öncesi talepte bulunan yatırımcı iki iş günü içinde talebini geri alabilir",
+        "correct": "I, II ve III",
+        "why": "Tebliğ m.24, önemli yeni hususun bildirilmesi, satışın gerektiğinde durdurulması ve değişiklik öncesi talep sahibinin iki iş günlük geri alma hakkını birlikte düzenler.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.24", "difficulty": "hard",
+    },
+    {
+        "stem": "İzahnameden doğan sorumluluk bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İhraççı öncelikli sorumludur\n\nII. Uzman raporu hazırlayan kuruluş hiçbir durumda sorumlu olmaz\n\nIII. Kurul onayı özel hukuk sorumluluğunu Kurula geçirmez",
+        "correct": "I ve III",
+        "why": "İhraççı öncelikli sorumludur ve Kurul onayı bu sorumluluğu Kurula aktarmaz. Rapor hazırlayan uzman kuruluş kendi raporundaki yanlış bilgiden sorumlu olabildiği için II yanlıştır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.25", "difficulty": "hard",
+    },
+    {
+        "stem": "Satış şekil ve yöntemleri bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tahsisli satış mutlaka halka arz yoluyla yapılır\n\nII. Halka arzda talep toplama yöntemi kullanılabilir\n\nIII. Halka arz yoluyla genel satış süresi en az iki iş günüdür",
+        "correct": "II ve III",
+        "why": "Halka arzda talep toplama kullanılabilir ve genel satış süresi en az iki iş günüdür. Tahsisli satış halka arz edilmeksizin yapıldığı için I yanlıştır.",
+        "ref": "Sermaye Piyasası Araçlarının Satışı Tebliği (II-5.2) m.6, m.10 ve m.13", "difficulty": "medium",
+    },
+    {
+        "stem": "İzahname ve ihraç belgesinin geçerliliği bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İzahname ilk yayımından itibaren yalnız altı ay geçerlidir\n\nII. İhraç tavanlı ihraç belgesi Kurul karar tarihinden itibaren bir yıl geçerlidir\n\nIII. Kurulun süresinde sessiz kalması belgeyi zımnen onaylamaz",
+        "correct": "II ve III",
+        "why": "İhraç belgesinin bir yıllık süresi ve sessizliğin zımni onay yaratmaması doğrudur. İzahname güncelliği korunursa ilk yayımından itibaren on iki ay geçerli olduğundan I yanlıştır.",
+        "ref": "İzahname ve İhraç Belgesi Tebliği (II-5.1) m.17-19", "difficulty": "hard",
+    },
+]
+
+
+if __name__ == "__main__":
+    write_topic(
+        lesson_id="sermaye_piyasasi_ve_finans",
+        topic_id="ihrac_ve_halka_arz",
+        label="İhraç ve Halka Arz",
+        slug="ihrac_ve_halka_arz",
+        prefix="topic-iha",
+        seed=2026071736,
+        legislation_version=(
+            "6362 sayılı Sermaye Piyasası Kanunu; İzahname ve İhraç Belgesi "
+            "Tebliği II-5.1; Sermaye Piyasası Araçlarının Satışı Tebliği II-5.2 "
+            "(17.07.2026 kontrolü)"
+        ),
+        rules=RULES,
+        premises=PREMISES,
+        wrong_banks={},
+    )

@@ -294,8 +294,8 @@ q("kaydi_sistem", "Kaydi Sistem ve MKK",
    "İhraççı şirketlerin bağımsız denetimini yapmakla görevli ve Kurula bağlı bir denetim kuruluşudur",
    "Yatırımcıların uğradığı her türlü zararı tazmin etmekle yükümlü bir güvence fonu niteliğindedir",
    "Yalnızca kâğıt üzerinde basılı pay senetlerini fiziki olarak arşivleyen bir depolama merkezidir"],
-  "6362 sayılı SPKn m.81: Merkezi Kayıt Kuruluşu, kaydileştirilen sermaye piyasası araçlarını ve bunlara ilişkin hakları, ihraççılar ve hak sahipleri itibarıyla kayden izleyen merkezi saklama kuruluşudur.",
-  "6362 sayılı SPKn m.81")
+  "6362 sayılı SPKn m.80: Merkezi Kayıt Kuruluşu, kaydileştirilen sermaye piyasası araçlarını ve bunlara ilişkin hakları, üyeler ve hak sahipleri itibarıyla kayden izleyen merkezi saklama kuruluşudur.",
+  "6362 sayılı SPKn m.80")
 
 q("kaydi_sistem", "Kaydi Sistem ve MKK",
   "Kaydileştirme bakımından aşağıdakilerden hangisi doğrudur?",
@@ -314,8 +314,8 @@ q("kaydi_sistem", "Kaydi Sistem ve MKK",
    "Hak sahipliği yalnızca ihraççının vereceği bir yazıyla ispatlanır; MKK kayıtları dikkate alınmaz",
    "Kaydi sistemde hak sahipliği hiçbir biçimde ispat edilemez; bu nedenle uyuşmazlıklar çözümsüz kalır",
    "Hak sahipliği yalnızca noterde düzenlenen bir tespit tutanağıyla ve mahkeme kararıyla belirlenebilir"],
-  "6362 sayılı SPKn m.13, 81: kaydileştirilen araçlarda hak sahipliği Merkezi Kayıt Sistemindeki kayıtlarla tespit edilir; kayıtlar hak sahipliğinin ispatına esas alınır.",
-  "6362 sayılı SPKn m.13, 81")
+  "6362 sayılı SPKn m.13 ve m.80: kaydileştirilen araçlarda hak sahipliği Merkezi Kayıt Sistemindeki kayıtlarla tespit edilir; kayıtlar hak sahipliğinin ispatına esas alınır.",
+  "6362 sayılı SPKn m.13 ve m.80")
 
 q("kaydi_sistem", "Kaydi Sistem ve MKK",
   "Kaydi sistemin sağladığı yarar bakımından aşağıdakilerden hangisi doğrudur?",
@@ -332,28 +332,28 @@ q("kaydi_sistem", "Kaydi Sistem ve MKK",
   "I ve II",
   ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
   "Kaydileştirilen araçlar senede bağlanmaksızın kayden ihraç edilir (I) ve hak sahipliği MKS kayıtlarıyla tespit edilir (II). Kaydi sistemin özü fiziki senedin bulunmamasıdır; bu nedenle III yanlıştır.",
-  "6362 sayılı SPKn m.13, 81")
+  "6362 sayılı SPKn m.13 ve m.80")
 
 # ══ PİYASA SUÇLARI (5) ════════════════════════════════════════════════════
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
   "Bilgi suistimali (içeriden öğrenenlerin ticareti) suçu bakımından aşağıdakilerden hangisi doğrudur?",
-  "İçsel bilgiye sahip kişilerin bu bilgiyi kullanarak sermaye piyasası aracında işlem yapmasıyla oluşur",
+  "Kamuya açıklanmamış etkili bilgiyi sermaye piyasası işleminde kullanıp menfaat sağlanmasıyla oluşur",
   ["Kamuya açıklanmış ve herkesin bildiği bilgilere dayanarak işlem yapılmasıyla oluşan bir suç türüdür",
    "Yalnızca ihraççının yönetim kurulu başkanı tarafından işlenebilen ve diğer kişileri kapsamayan bir suçtur",
    "Sermaye piyasası aracının fiyatının düşmesi hâlinde kendiliğinden oluştuğu kabul edilen bir suçtur",
    "Yalnızca yabancı yatırımcıların işleyebileceği ve yerli yatırımcıları hiç ilgilendirmeyen bir fiildir"],
-  "6362 sayılı SPKn m.106: doğrudan veya dolaylı olarak içsel bilgiye sahip olan kişilerin, bu bilgiye dayalı olarak sermaye piyasası araçlarında kendisi veya başkası hesabına menfaat sağlamak amacıyla işlem yapması bilgi suistimali suçunu oluşturur.",
-  "6362 sayılı SPKn m.106")
+  "6362 sayılı SPKn m.105: araç veya ihraççı hakkında fiyatı, değeri ya da yatırımcı kararını etkileyebilecek ve henüz kamuya duyurulmamış bilgiyi kullanarak menfaat sağlamak bilgi suistimali suçudur.",
+  "6362 sayılı SPKn m.105")
 
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
   "Piyasa dolandırıcılığı suçu bakımından aşağıdakilerden hangisi doğrudur?",
-  "Sermaye piyasası araçlarının fiyatına veya işlem hacmine ilişkin yapay görünüm oluşturacak işlem ve eylemlerle işlenir",
+  "Fiyat, arz veya talep hakkında yanıltıcı görünüm yaratan işlem, emir veya hesap hareketleriyle işlenebilir",
   ["Yalnızca yatırımcının fiilen zarar etmesi ve failin bu zarardan doğrudan ekonomik yarar sağlaması hâlinde oluşan; zarar doğmazsa işlenmemiş sayılan bir suçtur",
    "Sermaye piyasasında kâr elde edilmesi hâlinde kendiliğinden oluşan ve kastı aranmayan bir suç türüdür",
    "Yalnızca aracı kurumlar tarafından işlenebilen ve gerçek kişileri hiçbir biçimde kapsamayan bir suçtur",
    "İhraççının izahname düzenlememesi hâlinde oluşan ve piyasa işlemleriyle ilgisi bulunmayan bir suçtur"],
-  "6362 sayılı SPKn m.107: sermaye piyasası araçlarının fiyatlarına, fiyat değişimlerine, arz ve taleplerine ilişkin yanlış veya yanıltıcı izlenim uyandırmak amacıyla işlem yapmak, emir vermek veya yalan bilgi yaymak piyasa dolandırıcılığı suçunu oluşturur.",
-  "6362 sayılı SPKn m.107")
+  "6362 sayılı SPKn m.106: meşru gerekçe olmadan fiyat, fiyat değişimi, arz veya talep hakkında yanlış ya da yanıltıcı izlenim yaratacak işlem, emir, emir iptali ve hesap hareketleri piyasa dolandırıcılığı kapsamında olabilir.",
+  "6362 sayılı SPKn m.106")
 
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
   "Piyasa bozucu eylem bakımından aşağıdakilerden hangisi doğrudur?",
@@ -362,8 +362,8 @@ q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
    "Piyasa bozucu eylemlerin hiçbir yaptırımı bulunmayıp yalnızca etik bir sorun olarak değerlendirilir",
    "Piyasa bozucu eylem yalnızca ihraççılar bakımından söz konusu olup yatırımcıları hiç kapsamamaktadır",
    "Piyasa bozucu eylemler yalnızca borsa tarafından tespit edilir; Kurulun bu konuda yetkisi yoktur"],
-  "6362 sayılı SPKn m.104: makul bir ekonomik veya finansal gerekçeyle açıklanamayan, borsanın güven, açıklık ve istikrar içinde çalışmasını bozacak nitelikteki eylemler suç oluşturmamak kaydıyla piyasa bozucu eylem sayılır ve idari para cezası uygulanır.",
-  "6362 sayılı SPKn m.104")
+  "6362 sayılı SPKn m.103: meşru bir ekonomik veya finansal gerekçeyle açıklanamayan, borsanın güven, açıklık ve istikrar içinde çalışmasını bozacak eylemler suç oluşturmamak kaydıyla piyasa bozucu sayılır ve idari para cezası uygulanır.",
+  "6362 sayılı SPKn m.103")
 
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
   "Sermaye piyasasında güveni kötüye kullanma suçu bakımından aşağıdakilerden hangisi doğrudur?",
@@ -372,15 +372,15 @@ q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
    "Sermaye piyasası araçlarının borsada fiyatının düşmesi hâlinde kendiliğinden oluşmuş kabul edilir",
    "Yalnızca ihraççı şirketin ortakları tarafından işlenebilen ve aracı kurumları kapsamayan bir suçtur",
    "İzahnamenin geç düzenlenmesi hâlinde oluşan ve varlıkların kullanımıyla ilgisi bulunmayan bir fiildir"],
-  "6362 sayılı SPKn m.110: sermaye piyasası kurumlarına ait veya bu kurumlar nezdindeki yatırımcılara ait varlıkları, görevleri veya konumları nedeniyle zilyetliğinde bulunduran kişilerin bunları kendisi veya başkası yararına kullanması güveni kötüye kullanma suçunu oluşturur.",
-  "6362 sayılı SPKn m.110")
+  "6362 sayılı SPKn m.109: yatırım kuruluşuna veya Kanunda sayılan diğer sorumlulara teslim edilen sermaye piyasası aracı, nakit ve diğer kıymetleri kendisi ya da başkası menfaatine kullanmak güveni kötüye kullanma suçunu oluşturur.",
+  "6362 sayılı SPKn m.109")
 
 q("piyasa_suclari", "Piyasa Suçları ve Bozucu Eylemler",
-  "Piyasa suçları ve bozucu eylemlere ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilgi suistimali içsel bilgiye dayalı işlem yapılmasıyla oluşur\n\nII. Piyasa bozucu eylem, suç oluşturmamak kaydıyla idari yaptırıma tabidir\n\nIII. Piyasa dolandırıcılığı için yatırımcının fiilen zarar etmiş olması şarttır",
+  "Piyasa suçları ve bozucu eylemlere ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilgi suistimali kamuya açıklanmamış etkili bilginin kullanılmasıyla menfaat sağlanmasını gerektirir\n\nII. Piyasa bozucu eylem, suç oluşturmamak kaydıyla idari yaptırıma tabidir\n\nIII. Piyasa dolandırıcılığı için yatırımcının fiilen zarar etmiş olması şarttır",
   "I ve II",
   ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Bilgi suistimali içsel bilgiye dayalı işlemle oluşur (I) ve piyasa bozucu eylem suç oluşturmamak kaydıyla idari para cezasına tabidir (II). Piyasa dolandırıcılığı ise yanıltıcı izlenim oluşturan işlem ve eylemlerle oluşur; yatırımcının fiilen zarar etmesi şart değildir, bu nedenle III yanlıştır.",
-  "6362 sayılı SPKn m.104, 106, 107")
+  "Bilgi suistimali nitelikli bilginin kullanılmasıyla menfaat sağlanmasını gerektirir; piyasa bozucu eylem suç oluşturmamak kaydıyla idari para cezasına tabidir. Piyasa dolandırıcılığında yatırımcının fiilen zarar etmesi şart olmadığından III yanlıştır.",
+  "6362 sayılı SPKn m.103, m.105 ve m.106")
 
 print("TOPLAM:", len(Q))
 
