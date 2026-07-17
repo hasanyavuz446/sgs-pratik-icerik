@@ -32,12 +32,18 @@ ONCUL = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
 def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     """Soruyu HİÇ OKUMADAN alınabilen EN İYİ puan (%) ve onu veren strateji.
 
-    Rastgele taban %20'dir. Yüksek çıkması, şıkların içerikten bağımsız bir
-    örüntü sızdırdığı anlamına gelir — öğrenci soruyu okumadan çözebiliyordur.
-
     ⚠ Ölçüt İKİ YÖNLÜ olmalı. İlk sürümü yalnız "en kısayı seç" deniyordu ve
     "doğru hep en UZUN" yazılmış dersleri temiz gösteriyordu; oysa öğrencinin
     öğreneceği kural hangi yönde olursa olsun aynı derecede zararlıdır.
+
+    ⚠⚠ TABAN %20 DEĞİL, ~%23. Dört stratejinin EN İYİSİ alındığı için şans
+    kayırılır. 60 soruluk tamamen rastgele paketlerle ölçüldü (400 deneme):
+    ortalama %23, %5–%95 aralığı %16–%30, en yüksek %38. Bu yüzden:
+      · %35 FATAL  → rastgele paketlerin yalnız %1'i aşar; kalibre.
+      · %31 UYARI  → 95. yüzdelik. (Önce %28 demiştim; rastgelenin %14'ü
+                     aşıyordu, yani her yedi temiz dosyadan biri boşuna
+                     uyarı alacaktı — gürültü, uyarıyı önemsizleştirir.)
+    Hedef "~%20" yazmak da yanlıştı: ulaşılamaz. Gerçekçi hedef ≤%30.
     """
     if not questions:
         return 0, "-"
@@ -332,10 +338,11 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
 
         kor, strateji = kor_ogrenci(saglam)
         if kor >= 35:
-            issues.append(("FATAL", f"kör öğrenci soruyu okumadan %{kor} alıyor (taban %20) — "
-                                    f"strateji: “{strateji}”"))
-        elif kor >= 28:
-            issues.append(("UYARI", f"kör öğrenci %{kor} alıyor (taban %20) — “{strateji}”"))
+            issues.append(("FATAL", f"kör öğrenci soruyu okumadan %{kor} alıyor "
+                                    f"(rastgele taban ~%23) — strateji: “{strateji}”"))
+        elif kor >= 31:
+            issues.append(("UYARI", f"kör öğrenci %{kor} alıyor (rastgele taban ~%23) "
+                                    f"— “{strateji}”"))
 
         uzun, kisa, olcum = boy_egilimi(saglam)
         if olcum >= 20 and max(uzun, kisa) >= 45:
