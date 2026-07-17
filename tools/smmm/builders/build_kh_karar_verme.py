@@ -8,13 +8,19 @@ Aritmetik Python'da hesaplanır; çözümde harf atfı yoktur.
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "yonetim_muhasebesi", "karar_verme", "Karar Verme"
 PREFIX, SEED = "kh-yon-karar", 20260907
-OUTS = [
-    "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_karar_verme_2026.json",
-    "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/yeterlilik/questions_topic_karar_verme_2026.json",
-]
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_karar_verme_2026.json"
+OUTS = (
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı"
 
 Q = []
 
@@ -715,6 +721,161 @@ q(f"İşletmenin {tr(300)} birim atıl kapasitesi vardır. {tr(units)} birim öz
   "Yönetim muhasebesi - kısmen atıl kapasitede özel sipariş ve yer değiştiren satış", "hard")
 
 
+CHOICE_OVERRIDES = {
+    1: (
+        "Gelecekte doğması ve seçenekler arasında farklılaşması",
+        ["Geçmişte kayda alınması ve seçeneklere eşit yüklenmesi",
+         "Sabit gider sayılması ve nakit çıkışı yaratmaması",
+         "Üretim hacmiyle değişmesi ve direkt nitelik taşıması",
+         "Bütçede yer alması ve bütün seçeneklerde değişmemesi"],
+    ),
+    2: (
+        "Batmış maliyet sayılarak karar dışında bırakılır",
+        ["Yeni makinenin edinme maliyetine eklenir",
+         "Kalan ömrüne bölünerek gelecekteki gider sayılır",
+         "Tamamı eski makinenin fırsat maliyeti sayılır",
+         "Yeni makinenin faaliyet tasarrufuna eklenir"],
+    ),
+    3: ("30.600 TL", ["48.600 TL", "133.200 TL", "120.600 TL", "66.600 TL"]),
+    5: ("4.800 TL artar", ["25.600 TL artar", "20.800 TL azalır", "46.400 TL artar", "68.800 TL azalır"]),
+    6: ("70 TL", ["51 TL", "67 TL", "22 TL", "32 TL"]),
+    7: ("30.000 TL", ["115.000 TL", "85.000 TL", "200.000 TL", "12 TL"]),
+    8: ("11.200 TL artar", ["18.200 TL artar", "25.200 TL artar", "89.600 TL azalır", "86.800 TL artar"]),
+    10: ("7.200 TL artar", ["23.400 TL artar", "16.200 TL azalır", "39.600 TL artar", "18 TL artar"]),
+    11: ("7.800 TL artar", ["28.800 TL artar", "16.800 TL artar", "70.200 TL azalır", "69.000 TL artar"]),
+    12: ("18.000 TL", ["70.000 TL", "0 TL", "36.000 TL", "88.000 TL"]),
+    13: ("24.800 TL", ["44.800 TL", "39.800 TL", "20.000 TL", "64.800 TL"]),
+    15: ("60 TL", ["45 TL", "51 TL", "54 TL", "15 TL"]),
+    16: ("204.000 TL", ["156.000 TL", "48.000 TL", "252.000 TL", "288.000 TL"]),
+    17: (
+        "Satın alma 18.000 TL avantajlıdır",
+        ["Üretim 12.000 TL avantajlıdır",
+         "Satın alma 30.000 TL avantajlıdır",
+         "Üretim 48.000 TL avantajlıdır",
+         "İki seçenek eşit maliyetlidir"],
+    ),
+    19: (
+        "Tedarikçinin kritik kaliteyi güvence altına alamaması",
+        ["Ortak yönetim giderinin iki seçenekte de sürmesi",
+         "Geçmiş üretim maliyetinin seçeneklerden etkilenmemesi",
+         "Makinenin geçmiş edinme bedelinin kayıtlarda bulunması",
+         "Kaçınılabilir maliyetlerin dış alımda ortadan kalkması"],
+    ),
+    20: (
+        "Satın alma 7.000 TL avantajlıdır",
+        ["Üretim 15.000 TL avantajlıdır",
+         "Satın alma 22.000 TL avantajlıdır",
+         "Üretim 29.000 TL avantajlıdır",
+         "İki seçenek eşit maliyetlidir"],
+    ),
+    21: ("30 TL", ["24 TL", "25 TL", "20 TL", "11 TL"]),
+    22: ("12.000 TL", ["40.000 TL", "24.000 TL", "28.000 TL", "228.000 TL"]),
+    23: ("250.000 TL", ["180.000 TL", "220.000 TL", "275.000 TL", "95.000 TL"]),
+    24: (
+        "Kâr 12.000 TL artar",
+        ["Kâr 16.000 TL azalır", "Kâr 28.000 TL artar", "Kâr 40.000 TL azalır", "Kâr değişmez"],
+    ),
+    26: ("25.000 TL", ["60.000 TL", "15.000 TL maliyet artışı", "695.000 TL", "75.000 TL"]),
+    27: ("44.000 TL", ["70.000 TL", "26.000 TL", "114.000 TL", "0 TL"]),
+    28: (
+        "İki seçenekte değişmediği için karar açısından ilgisizdir",
+        ["Üretim bırakılınca bütünüyle tasarruf edilen maliyettir",
+         "Dış alım fiyatına eklenecek ilgili bir maliyettir",
+         "Defter değeriyle birlikte hesaplanacak fırsat maliyetidir",
+         "Sabit olduğu için her durumda üretim lehine değerlendirilir"],
+    ),
+    29: ("27 TL", ["22 TL", "23 TL", "19 TL", "9 TL"]),
+    30: ("84 TL", ["68 TL", "74 TL", "30.058 TL", "52 TL"]),
+    31: ("40.000 TL", ["110.000 TL", "150.000 TL", "85.000 TL", "0 TL"]),
+    32: (
+        "Toplam işletme giderini değiştirmediği için dışlanır",
+        ["Kapatma seçeneğinde gider tasarrufu kabul edilir",
+         "Bölümün bütünüyle kaçınılabilir gideri sayılır",
+         "Bölümün kaybedilecek katkı payına eklenir",
+         "Kapatma kararının tek belirleyicisi kabul edilir"],
+    ),
+    34: ("30.000 TL artar", ["50.000 TL azalır", "80.000 TL artar", "130.000 TL azalır", "150.000 TL artar"]),
+    35: ("37.000 TL azalır", ["85.000 TL azalır", "2.000 TL azalır", "83.000 TL artar", "2.000 TL artar"]),
+    36: ("29.000 TL", ["104.000 TL", "75.000 TL", "8.000 TL", "179.000 TL"]),
+    37: (
+        "Karar anına kadar iki seçenekte de katlanılmış olması",
+        ["Ortak maliyetlerin stok maliyetine hiç alınmaması",
+         "İleri işlemde ortak maliyetin nakden geri alınması",
+         "Ortak maliyetin ayrılma sonrasında ortaya çıkması",
+         "Ek işlem maliyetlerinin de ortak maliyet sayılması"],
+    ),
+    38: (
+        "Her iki ürün de ileri işlenmelidir",
+        ["Yalnız A ürünü ileri işlenmelidir",
+         "Yalnız B ürünü ileri işlenmelidir",
+         "İki ürün de ayrılma noktasında satılmalıdır",
+         "Ortak maliyeti düşük olan ürün işlenmelidir"],
+    ),
+    40: (
+        "Eski makineyi tutmak 20.000 TL avantajlıdır",
+        ["Yeni makineyi almak 20.000 TL avantajlıdır",
+         "Yeni makineyi almak 200.000 TL avantajlıdır",
+         "Eski makineyi tutmak 220.000 TL avantajlıdır",
+         "İki seçenek eşit maliyetlidir"],
+    ),
+    41: (
+        "Eski ekipmanı tutmak 30.000 TL avantajlıdır",
+        ["Yeni ekipmanı almak 150.000 TL avantajlıdır",
+         "Eski ekipmanı tutmak 50.000 TL avantajlıdır",
+         "Yeni ekipmanı almak 60.000 TL avantajlıdır",
+         "İki seçenek eşit maliyetlidir"],
+    ),
+    42: ("50.000 TL", ["60.000 TL", "10.000 TL", "70.000 TL", "250.000 TL"]),
+    43: ("25.000 TL artar", ["50.000 TL artar", "25.000 TL azalır", "260.000 TL artar", "235.000 TL azalır"]),
+    44: ("65.000 TL artar", ["110.000 TL artar", "135.000 TL artar", "115.000 TL azalır", "205.000 TL artar"]),
+    46: ("24 TL", ["168 TL", "192 TL", "8 TL", "360 TL"]),
+    47: ("27.000 TL", ["25.200 TL", "28.800 TL", "14.400 TL", "26.400 TL"]),
+    48: (
+        "D ürününe öncelik verilmelidir",
+        ["C ürününe öncelik verilmelidir",
+         "İki ürün aynı öncelikte üretilmelidir",
+         "Malzemeyi çok kullanan ürüne öncelik verilmelidir",
+         "Satış fiyatı yüksek ürüne öncelik verilmelidir"],
+    ),
+    50: ("2.000 TL", ["6.400 TL", "4.400 TL", "10.800 TL", "5 TL"]),
+    51: ("16 TL", ["32 TL", "5 TL", "11 TL", "0 TL"]),
+    52: ("22.400 TL", ["14.400 TL", "26.400 TL", "17.600 TL", "21.600 TL"]),
+    53: ("78.000 TL kâr", ["90.000 TL kâr", "102.000 TL kâr", "120.000 TL kâr", "12.000 TL zarar"]),
+    54: (
+        "Y seçeneği 6.000 TL üstündür",
+        ["X seçeneği 60.000 TL üstündür",
+         "Y seçeneği 50.000 TL üstündür",
+         "X seçeneği 6.000 TL üstündür",
+         "İki seçeneğin beklenen değeri eşittir"],
+    ),
+    55: ("58 TL", ["52 TL", "70 TL", "82 TL", "12 TL"]),
+    56: (
+        "Kritik varsayımlardaki değişimin sonuca etkisini göstermek",
+        ["Belirsizliği kaldırıp olasılıkları kesin olarak belirlemek",
+         "Batmış maliyetleri gelecekteki nakit akışına dönüştürmek",
+         "Bütün değişkenleri sabitleyip tek sonuç bulmak",
+         "En yüksek gelirli seçeneği koşulsuz olarak seçmek"],
+    ),
+    57: (
+        "Optimal çözümde kaynağın tamamen kullanıldığını",
+        ["Optimal çözümde kaynağın hiç kullanılmadığını",
+         "Bütün ürün katkılarının birbirine eşit olduğunu",
+         "Ek kapasitenin ekonomik değer taşımadığını",
+         "Bütün talep sınırlarının kaldırıldığını"],
+    ),
+    58: (
+        "Kâr 2.400 TL azalır",
+        ["Kâr 400 TL artar", "Kâr 5.600 TL artar", "Kâr 8.000 TL azalır", "Kâr değişmez"],
+    ),
+    59: ("20.000 TL", ["120.000 TL", "100.000 TL", "95.000 TL", "5.000 TL"]),
+    60: ("3.200 TL artar", ["8.000 TL artar", "4.800 TL azalır", "5.200 TL artar", "12.800 TL artar"]),
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -747,21 +908,25 @@ if __name__ == "__main__":
             "explanation": item["why"],
             "source": {
                 "kind": "generated",
-                "styleRef": "2026/1 test biçimi",
+                "styleRef": "2026/1 beş seçenekli test biçimi",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": UPDATED_AT,
             "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT,
             "isPremium": False,
             "isActive": True,
         })
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
     for output_path in OUTS:
-        with open(output_path, "w", encoding="utf-8") as fh:
-            json.dump(out, fh, ensure_ascii=False, indent=2)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            json.dump(out, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premises = sum(1 for item in out if len(marker.findall(item["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {premises} | harf {''.join(item['correctAnswer'] for item in out)[:40]}…")
