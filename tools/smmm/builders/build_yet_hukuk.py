@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """Yeterlilik — Hukuk Test 2 + Test 3 (2×20 = 40 soru).
-Ticaret + Borçlar + İş/SGK. Doğru şık KISA, çeldiriciler UZUN.
-Yıla bağlı tutar YOK (asgari ücret vb.); kanunda sabit yapısal sayı serbest.
-explanation'da harf atıfı YOK (permütasyondan etkilenmesin)."""
-import json, random
+
+Ticaret + Borçlar + İş/SGK. Yıla bağlı tutar kullanılmaz; kanunda sabit
+yapısal sayılar kullanılabilir. Şık uzunlukları soru bazında dengelenir.
+"""
+import json
+import random
+from pathlib import Path
 
 Q = []
 def q(lesson, topic, label, stem, correct, distractors, why, ref, difficulty="medium"):
@@ -410,27 +413,105 @@ def gen_letters(n, seed):
         if all(not (base[i] == base[i-1] == base[i-2]) for i in range(2, len(base))):
             return base
 
+
+BALANCE_SUFFIXES = [
+    "belirtilen olayda hukuki değerlendirme bu yöndedir",
+    "bu sonuç sorudaki varsayımlar altında uygulanır",
+    "ilgili hükmün olaydaki sonucu bu şekilde ortaya çıkar",
+    "verilen bilgiler bakımından hukuki nitelendirme bu yöndedir",
+    "somutlaştırılan durumda düzenlemenin sonucu bu biçimde uygulanır",
+]
+
+CONTEXTS = {
+    T: [
+        "Bir ticari uyuşmazlıkta uygulanacak kural belirlenirken",
+        "Tacirin işletmesine ilişkin işlemler incelenirken",
+        "Türk Ticaret Kanunu kapsamındaki olay değerlendirilirken",
+    ],
+    B: [
+        "Taraflar arasındaki borç ilişkisi değerlendirilirken",
+        "Bir sözleşme ve borçlar hukuku uyuşmazlığında",
+        "Alacaklı ile borçlu arasındaki olay çözümlenirken",
+    ],
+    I: [
+        "İşçi ile işveren arasındaki uyuşmazlık değerlendirilirken",
+        "Bir işyerindeki uygulamanın hukuka uygunluğu incelenirken",
+        "İş ve sosyal güvenlik yükümlülükleri belirlenirken",
+    ],
+}
+
+
+def extend_above(text, threshold, salt):
+    """Anlamı değiştirmeyen, değişken bir bağlam cümlesiyle eşiği aşar."""
+    candidates = []
+    for offset in range(len(BALANCE_SUFFIXES)):
+        suffix = BALANCE_SUFFIXES[(salt + offset) % len(BALANCE_SUFFIXES)]
+        candidates.append(f"{text}; {suffix}")
+    eligible = [candidate for candidate in candidates if len(candidate) > threshold]
+    if eligible:
+        return eligible[0]
+    first = BALANCE_SUFFIXES[salt % len(BALANCE_SUFFIXES)]
+    second = BALANCE_SUFFIXES[(salt + 2) % len(BALANCE_SUFFIXES)]
+    return f"{text}; {first}; {second}"
+
+
+def balanced_item(item, salt):
+    """Doğru cevabı iki kısa ve iki uzun çeldiricinin arasına yerleştirir."""
+    correct = item["correct"]
+    distractors = list(item["distractors"])
+    ordered = sorted(range(4), key=lambda index: len(distractors[index]))
+    shorter_indices = set(ordered[:2])
+    second_shortest = len(distractors[ordered[1]])
+    if len(correct) <= second_shortest:
+        correct = extend_above(correct, second_shortest, salt)
+    for offset, index in enumerate(ordered[2:], 1):
+        if len(distractors[index]) <= len(correct):
+            distractors[index] = extend_above(
+                distractors[index], len(correct), salt + offset
+            )
+    assert sum(len(value) < len(correct) for value in distractors) == 2
+    assert sum(len(value) > len(correct) for value in distractors) == 2
+    assert all(
+        (index in shorter_indices) == (len(value) < len(correct))
+        for index, value in enumerate(distractors)
+    )
+    return correct, distractors
+
+
+def contextualized_stem(item, salt):
+    stem = item["stem"]
+    if "\n\nI." in stem or len(stem) >= 90:
+        return stem
+    intro = CONTEXTS[item["lesson"]][salt % len(CONTEXTS[item["lesson"]])]
+    return f"{intro}, {stem[0].lower()}{stem[1:]}"
+
 def emit(items, prefix, seed):
     letters = gen_letters(len(items), seed)
     out = []
     for i, it in enumerate(items):
         ans = letters[i]
-        choices = {ans: it["correct"]}
-        for k, d in zip([k for k in "ABCDE" if k != ans], it["distractors"]):
+        is_premise = "\n\nI." in it["stem"]
+        if is_premise:
+            correct, distractors = it["correct"], list(it["distractors"])
+        else:
+            correct, distractors = balanced_item(it, seed + i)
+        choices = {ans: correct}
+        for k, d in zip([k for k in "ABCDE" if k != ans], distractors):
             choices[k] = d
         out.append({
             "id": f"{prefix}-{i+1:04d}",
             "lessonId": it["lesson"], "topicId": it["topic"],
-            "question": it["stem"], "choices": choices, "correctAnswer": ans,
+            "question": contextualized_stem(it, seed + i),
+            "choices": choices, "correctAnswer": ans,
             "explanation": it["why"],
-            "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
+            "source": {"kind": "generated", "styleRef": "2026 SMMM beş seçenekli test",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", it["label"]],
+            "tags": ["Özgün Soru", "2026 Formatı", it["label"]],
             "difficulty": it["difficulty"],
-            "updatedAt": "2026-07-15T00:00:00Z",
-            "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-15",
-            "sourceUpdatedAt": "2026-07-15T00:00:00Z",
+            "updatedAt": "2026-07-17T00:00:00Z",
+            "examPeriod": "2026 test sistemine uyumlu özgün soru",
+            "legislationVersion": "6102, 6098, 4857 ve 5510 sayılı Kanunlar (17.07.2026)",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z",
             "isPremium": False, "isActive": True,
         })
     return out
@@ -447,10 +528,18 @@ if __name__ == "__main__":
     t2 = [x for i, x in enumerate(duz) if i % 2 == 0] + [x for i, x in enumerate(onc) if i % 2 == 0]
     t3 = [x for i, x in enumerate(duz) if i % 2 == 1] + [x for i, x in enumerate(onc) if i % 2 == 1]
     print(f"öncüllü toplam {len(onc)} → t2:{sum(1 for x in t2 if x in onc)} t3:{sum(1 for x in t3 if x in onc)}")
-    APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik"
+    content_root = Path(__file__).resolve().parents[3]
+    app_root = content_root.parent / "smmm_sgs_pratik"
+    targets = (
+        content_root / "content/yeterlilik",
+        app_root / "assets/content/yeterlilik",
+    )
     for items, name, prefix, seed in ((t2, "questions_hukuk_test2_2026.json", "hukuk-t2", 20260801),
                                       (t3, "questions_hukuk_test3_2026.json", "hukuk-t3", 20260802)):
         data = emit(items, prefix, seed)
-        json.dump(data, open(f"{APP}/{name}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+        for target_dir in targets:
+            target_dir.mkdir(parents=True, exist_ok=True)
+            (target_dir / name).write_text(payload, encoding="utf-8")
         seq = "".join(x["correctAnswer"] for x in data)
-        print(f"{name}: {len(data)} soru | harf {seq}")
+        print(f"{name}: {len(data)} soru | harf {seq} | iki depoya yazıldı")
