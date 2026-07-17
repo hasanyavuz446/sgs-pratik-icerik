@@ -145,3 +145,36 @@ işaretleri silmek (“−%10” ile “%10” aynı sanılıyordu → 4 sahte F
 İkisini de denetim değil, düzeltme yamalarının kendi assertion'ları yakaladı.
 
 **Kalan iş: şık örüntüsü** (kör öğrenci) — 53 dosya, yukarıdaki tablolar geçerli.
+
+---
+
+## Çalışma planı — şık örüntüsü temizliği (2026-07-17'de kuruldu)
+
+**Hedef (ölçülebilir):** her SGS dosyasında kör öğrenci **≤%30** (FATAL eşiği %35,
+rastgele taban ~%23). Ek koşullar: her dosyada `kök/çözüm/doğru şık/cevap harfi`
+değişimi **0/0/0/0**, dolgu kalıbı dengeli, `flutter test` yeşil.
+
+**Başlangıç:** 46 dosya FATAL, SGS havuzu %31.
+**Biten:** vergi_hukuku 7 dosya (%68 → %20) · temerrut_tazminat (%80 → %26).
+
+### Sıra (dersin toplam etkisine göre)
+
+| # | ders | dosya | ders % | not |
+|---|---|---:|---:|---|
+| 1 | borclar_hukuku | 6 | 56 | ⚠ boy + **ifade çeşitlendirme** birlikte gerekiyor |
+| 2 | muhasebe_standartlari | 17 | 52 | en büyük; **gerçek dolgu** kusuru burada |
+| 3 | meslek_hukuku | 3 | 50 | staj_ve_sinavlar %91 — havuzun en kötüsü |
+| 4 | ticaret_hukuku | 5 | 49 | |
+| 5 | turkce | 2 | 41 | |
+| 6 | denetim | 5 | 34 | |
+| 7 | dağınık tekler | 8 | ≤28 | ekonomi · atatürk · iş hukuku · mali tablolar · vergi kalanı · maliyet |
+
+### İki ayrı kusur türü — karıştırma
+
+- **Gerçek dolgu** (muhasebe_standartlari): "…zorunda bulunmaktadır" çeldiriciyi
+  şişirmek için eklenmiş. Çözüm: dolguyu at, çeldiriciyi içerikle yaz.
+- **Anlamı izleyen doğal dil** (borclar_hukuku): "ispat etmek zorundadır" doğal
+  hukuk Türkçesi; çeldirici YANLIŞ BİR YÜKÜMLÜLÜK iddia ettiği için öyle diyor.
+  Çözüm: ifadeyi ÇEŞİTLENDİR (tek yeni kelimeye kaçmadan), anlamı koru.
+
+Reçetenin tamamı: `URETIM_KURALLARI.md` §5.
