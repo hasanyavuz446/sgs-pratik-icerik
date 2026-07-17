@@ -374,16 +374,32 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         # Aynı çeldiricinin dosya boyunca tekrarı ("bu husus standartta düzenlenmemiştir"
         # gibi atma-şıkları): her seferinde yanlış olduğu için tek başına öğrenilir.
         # Öncül seçicileri ("Yalnız I", "II ve III") meşru olarak tekrar eder — sayma.
+        #
+        # ⚠ UZUNLUK EŞİĞİ ŞART. Eşiksiz ilk sürüm matematik'te “12”yi atma-şıkkı
+        # sandı: sayısal şıklar (“12”, “400.000 TL”) doğal olarak tekrar eder ve
+        # hiçbir şey ele vermez — ipucu ancak metin bir İDDİA taşıyorsa doğar.
+        #
+        # ⚠ “hep yanlış” İDDİASI ÖLÇÜLMELİ, varsayılmamalı: metin bir soruda doğru
+        # bir başkasında çeldiriciyse öğrenilebilir kural YOKTUR. İlk sürüm yalnız
+        # çeldirici geçişlerini sayıyor, doğru geçişlerine hiç bakmıyordu.
+        #
+        # ⚠ most_common(3) YETMEZ: tms_40'ta bu ailenin 45 üyesi var, ilk üçü
+        # göstermek kusurun boyunu gizliyordu. Aile üye üye değil, TOPLAM raporlanır.
         secici = re.compile(r"^(yalnız\s+)?(i{1,3}|iv|v)(\s*(,|ve)\s*(i{1,3}|iv|v))*$", re.I)
-        celdirici = collections.Counter(
-            re.sub(r"\s+", " ", v).strip().casefold()
-            for q in saglam for k, v in q["options"].items()
-            if k != q["answer"] and not secici.match(re.sub(r"\s+", " ", v).strip())
-        )
-        for metin, adet in celdirici.most_common(3):
-            if adet >= max(6, len(saglam) * 0.15):
-                issues.append(("UYARI", f"atma-şıkkı {adet} kez tekrarlanmış (hep yanlış): "
-                                        f"“{metin[:58]}…”"))
+        nerede: dict[str, list[bool]] = {}
+        for q in saglam:
+            for k, v in q["options"].items():
+                d = re.sub(r"\s+", " ", v).strip()
+                if len(d) <= 40 or secici.match(d):
+                    continue
+                nerede.setdefault(d.casefold(), []).append(k == q["answer"])
+        for metin, gecisler in sorted(nerede.items(), key=lambda t: -len(t[1]))[:5]:
+            adet = len(gecisler)
+            if any(gecisler) or adet < max(5, len(saglam) * 0.08):
+                continue
+            duzey = "FATAL" if adet >= max(8, len(saglam) * 0.15) else "UYARI"
+            issues.append((duzey, f"atma-şıkkı {adet} kez tekrarlanmış (hepsinde yanlış) "
+                                  f"— standardı bilmeden elenir: “{metin[:56]}…”"))
 
     return len(questions), issues
 
