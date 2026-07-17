@@ -1,18 +1,27 @@
 # -*- coding: utf-8 -*-
 """Yeterlilik KONU HAVUZU — Hukuk / Ticari İşletme (60 soru = 3×20).
 
-Doğru şık KISA, çeldiriciler UZUN. Açıklamada harf atfı YOK.
-Sorular 16.07.2026 tarihinde doğrulanan 6102 sayılı TTK ve 6098 sayılı TBK
+Şıklar doğal uzunlukta ve cevap anahtarını ele vermeyecek biçimdedir.
+Sorular 17.07.2026 tarihinde doğrulanan 6102 sayılı TTK ve 6098 sayılı TBK
 hükümlerine dayanır. Bölüm havuzu ile SGS havuzundaki temel tanım sorularından
 kaçınmak için ağırlık uygulama, ayrım ve sonuç sorularındadır.
 """
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "ticaret_hukuku", "ticari_isletme", "Ticari İşletme"
 PREFIX, SEED = "kh-tic-isletme", 20260910
-OUT = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_ticari_isletme_2026.json"
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_ticari_isletme_2026.json"
+OUTS = (
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = "6102 sayılı TTK ve 6098 sayılı TBK – 17.07.2026 güncel metin"
 
 Q = []
 
@@ -838,6 +847,480 @@ q(
 )
 
 
+CHOICE_OVERRIDES = {
+    1: (
+        "Önce ticari örf ve âdet uygulanır",
+        ["Doğrudan genel hükümlere başvurulur",
+         "Yalnız meslek kuruluşu kararı uygulanır",
+         "Taraflardan birinin iç uygulaması esas alınır",
+         "Sadece hakkaniyet kuralına göre karar verilir"],
+    ),
+    2: (
+        "İrade açıklamalarının yorumunda dikkate alınabilir",
+        ["Bağlayıcı hukuk kuralı olarak doğrudan uygulanır",
+         "Açık kanun hükmünün yerine öncelikle geçer",
+         "Sözleşmenin yorumunda da dikkate alınamaz",
+         "Sicile ilan edilince kanun gücü kazanır"],
+    ),
+    3: (
+        "Bölgesel ticari örf ve âdet uygulanır",
+        ["Genel ticari örf ve âdet uygulanır",
+         "İki uygulama da hükümsüz kabul edilir",
+         "Yalnız mahkemenin bulunduğu yer uygulaması seçilir",
+         "Ticaret odasının son görüşü uygulanır"],
+    ),
+    4: (
+        "İfa yerindeki ticari örf ve âdet uygulanır",
+        ["Davacının merkezindeki uygulama uygulanır",
+         "Davalının yerleşim yerindeki uygulama uygulanır",
+         "Sözleşmenin imzalandığı yerdeki teamül uygulanır",
+         "Taraflar farklı bölgedeyse örf ve âdet uygulanmaz"],
+    ),
+    5: (
+        "Tacir olmayanın bunu bilmesi veya bilmesinin gerekmesi",
+        ["Örf ve âdetin ayrı bir sözleşmede tekrarlanması",
+         "Tacir olmayanın ticaret siciline tescil edilmesi",
+         "Uyuşmazlığın iki tacir arasında ortaya çıkması",
+         "Uygulamanın yalnız yerel teamül olarak kalması"],
+    ),
+    7: (
+        "Ticari hüküm niteliğindedir",
+        ["Yalnız genel hüküm niteliğindedir",
+         "Taraflar tacir değilse uygulanamaz",
+         "Tescille ticari hükme dönüşür",
+         "Başka kanundaki her hüküm ticaridir"],
+    ),
+    8: (
+        "Taraf sıfatından bağımsız olarak ticari iştir",
+        ["Yalnız iki taraf da tacirse ticari iştir",
+         "İki ticari işletmeyle ilgiliyse ticari iştir",
+         "Gerçek kişi taraf varsa tüketici işlemidir",
+         "Dava açılınca ticari iş niteliği kazanır"],
+    ),
+    9: (
+        "Ticari işletmeyi ilgilendirdiği için ticari iştir",
+        ["TTK'da adı geçmediği için adi iştir",
+         "Mahkeme kararı verilince ticari iş olur",
+         "Sicilde ilan edilince ticari iş olur",
+         "Sözleşmeye dayanmadığı için adi iştir"],
+    ),
+    10: (
+        "Genel hükümlere göre karar verir",
+        ["Hukuki boşluk gerekçesiyle davayı reddeder",
+         "Ticaret odasının tavsiye kararını uygular",
+         "Taraflardan birinin iç yönetmeliğini uygular",
+         "Yalnız hakkaniyet ölçüsünü uygular"],
+    ),
+    11: (
+        "Sözleşme iradesinin yorumunda yararlanılabilir",
+        ["Kanun hükmünün yerine doğrudan uygulanabilir",
+         "Hukuki değerlendirmede hiç kullanılamaz",
+         "Ceza normunun yerine kaynak oluşturabilir",
+         "Sicil kaydını kendiliğinden değiştirebilir"],
+    ),
+    12: (
+        "Ticari işletmeyi ilgilendiren işlem veya fiile özgü olması",
+        ["Kanunun başlığında ticaret sözcüğünün bulunması",
+         "Her özel hukuk hükmünün ticari kabul edilmesi",
+         "Daha önce ticaret mahkemesince uygulanmış olması",
+         "Bütün tarafların ticaret şirketi olması"],
+    ),
+    13: (
+        "İşletmeyi ilgilendiren bir fiil olduğu için ticari iştir",
+        ["Haksız fiil olduğu için mutlaka adi iştir",
+         "Zarar gören de tacirse ticari iştir",
+         "Yalnız kasten işlenmişse ticari iştir",
+         "TTK'da ayrıca sayılmışsa ticari iştir"],
+    ),
+    15: (
+        "Özel ticari örf ve âdetin genel olana üstünlüğü",
+        ["Genel ticari örf ve âdetin mutlak üstünlüğü",
+         "Örf ve âdetler arasında kapsam farkı bulunmaması",
+         "Her sektörel davranışın ticari hüküm sayılması",
+         "Tek taraflı iç talimatın bağlayıcı olması"],
+    ),
+    16: (
+        "Her iki işletmeyle ilgili nispi ticari davadır",
+        ["Taraflar tacir olsa da adi hukuk davasıdır",
+         "Tedarik sözleşmesi çekişmesiz yargı işidir",
+         "Yalnız bedel ödenmişse ticari davadır",
+         "Vergi mahkemesinin görevindeki idari davadır"],
+    ),
+    17: (
+        "Taraf sıfatından bağımsız mutlak ticari davadır",
+        ["Taraflar tacir olmadığından adi davadır",
+         "Bir taraf sicile kayıtlıysa ticari davadır",
+         "İki işletmeyle ilgiliyse ticari davadır",
+         "Taraf sıfatı nedeniyle idari davadır"],
+    ),
+    18: (
+        "TBK m.202'de sayıldığı için mutlak ticari davadır",
+        ["Taraflar tacir olmadığından adi davadır",
+         "Devralan anonim şirketse ticari davadır",
+         "TBK'dan doğduğu için genel hukuk davasıdır",
+         "Yalnız taşınmaz devri varsa ticari davadır"],
+    ),
+    19: (
+        "Dava açılmadan önce arabulucuya başvurulur",
+        ["Ticaret sicilinden uygunluk belgesi alınır",
+         "Alacağın tamamı mahkeme veznesine yatırılır",
+         "Uyuşmazlık önce zorunlu tahkime götürülür",
+         "Alacak noter senedine bağlanır"],
+    ),
+    20: (
+        "Dava öncesi arabuluculuk dava şartıdır",
+        ["Menfi tespit davası doğrudan açılır",
+         "Arabuluculuk yalnız davalının talebiyle gerekir",
+         "Dava yalnız icra mahkemesinde açılır",
+         "Dava şartı yalnız aynen ifa talebinde aranır"],
+    ),
+    22: (
+        "Altı hafta; zorunlu hâlde en çok iki hafta daha",
+        ["Dört hafta; her durumda dört hafta daha",
+         "Sekiz hafta; sınırsız sekiz haftalık uzatmalar",
+         "İki hafta; mahkeme kararıyla altı ay daha",
+         "Bir ay; sicil izniyle süresiz uzatma"],
+    ),
+    23: (
+        "Görev kuralına dayanılmamışsa davaya devam eder",
+        ["Davayı görev yönünden kesin olarak reddeder",
+         "Dosyayı en yakın vergi mahkemesine gönderir",
+         "Uyuşmazlığı kendiliğinden tahkime sevk eder",
+         "Her durumda görevsizlik kararı verir"],
+    ),
+    24: (
+        "Mahkemeler arasındaki ilişki görev ilişkisidir",
+        ["Mahkemeler arasındaki ilişki iş bölümü ilişkisidir",
+         "Mahkemeler arasındaki ilişki kesin yetki ilişkisidir",
+         "Mahkemeler arasındaki ilişki idari vesayet ilişkisidir",
+         "Mahkemeler arasındaki ilişki tahkim ilişkisidir"],
+    ),
+    25: (
+        "Kanunda izin yoksa sözleşmeyle değiştirilemez",
+        ["Taraflarca sınırsız biçimde değiştirilebilir",
+         "Noter onayıyla yalnız yarıya indirilebilir",
+         "Taraflardan biri tacirse iki katına çıkar",
+         "Sicilde ilan edilirse tamamen kaldırılabilir"],
+    ),
+    26: (
+        "Aksi öngörülmedikçe müteselsilen sorumludurlar",
+        ["Her borçlu yalnız kendi payından sorumludur",
+         "Yalnız tacir borçlu borcun tamamından sorumludur",
+         "Alacaklı önce tacir olmayanlara başvurmalıdır",
+         "Teselsül için işin herkes yönünden ticari olması gerekir"],
+    ),
+    27: (
+        "İhbar yapılmadan kefile temerrüt faizi yürütülemez",
+        ["İhbar yapılmadan asıl borç muaccel olamaz",
+         "İhbar yapılmazsa kefalet kesin hükümsüzdür",
+         "İhbar yapılmazsa sözleşme faizi silinir",
+         "İhbar yapılmazsa bütün teminatlar sona erer"],
+    ),
+    28: (
+        "Asıl borçlu-kefil ve kefiller arasında uygulanır",
+        ["Yalnız alacaklı ile asıl borçlu arasında uygulanır",
+         "Yalnız birden fazla kefilin kendi arasında uygulanır",
+         "Sadece tacir olmayan kefiller bakımından uygulanır",
+         "Ticari kefalette teselsül karinesi uygulanmaz"],
+    ),
+    29: (
+        "Tarafları tacir olan, en az üç aylık dönemli cari hesapta",
+        ["Tarafları tacir olmayan aylık tüketim ödüncünde",
+         "İki aylık dönemli bir tüketici işleminde",
+         "İki taraf için de adi olan haftalık ödünçte",
+         "Cari hesap dışındaki her sözleşmede"],
+    ),
+    31: (
+        "Esnaf sınırını aşan düzeyde gelir sağlama hedefi",
+        ["Faaliyetin anonim şirketçe yürütülmesi koşulu",
+         "Her yıl ortaklara kâr dağıtılması koşulu",
+         "İşletmenin taşınmaz sahibi olması koşulu",
+         "Kamu makamınca kurulmuş olması koşulu"],
+    ),
+    32: (
+        "Faaliyetin bağımsız yürütülmesi unsuru yoktur",
+        ["Ayrı ticaret unvanı bulunmadığı için gelir hedefi yoktur",
+         "Şirket içindeki birim ticari işletme olamaz",
+         "Kanundaki asgari çalışan sayısına ulaşmamıştır",
+         "Kiralanan yerde faaliyet yürütülemez"],
+    ),
+    33: (
+        "Faaliyetin devamlı yürütülmesi unsuru yoktur",
+        ["Satış noter huzurunda yapılmadığı için yetersizdir",
+         "Satıcı tüzel kişi olmadığı için yetersizdir",
+         "Mal taşınır olduğu için yetersizdir",
+         "Satış peşin olduğu için yetersizdir"],
+    ),
+    35: (
+        "Sınır Cumhurbaşkanı kararıyla belirlenir",
+        ["Sınır belediye meclislerince belirlenir",
+         "Sınır her uyuşmazlıkta Yargıtayca belirlenir",
+         "Sınır ticaret sicili müdürünce belirlenir",
+         "Sınır tarafların sözleşmesiyle belirlenir"],
+    ),
+    36: (
+        "Ayrı tasarruf işlemlerinin yapılması gerekmez",
+        ["Her unsur için ayrı bir sözleşme gerekir",
+         "Yalnız taşınırlar topluca devredilebilir",
+         "Bütünlük ilkesi yalnız kamu işletmelerine uygulanır",
+         "Devralan tacirse ayrı işlemler zorunludur"],
+    ),
+    37: (
+        "Aksi öngörülmemişse işletme değeri kapsamdadır",
+        ["Devredenin kişisel konutu kapsamdadır",
+         "Gelecekte kuracağı işletmelerin hakları kapsamdadır",
+         "İşletmeye özgülenmemiş yatırımları kapsamdadır",
+         "Aile bireylerinin kişisel borçları kapsamdadır"],
+    ),
+    38: (
+        "İşletme niteliği korunuyorsa açıkça kapsam dışı bırakılabilir",
+        ["Özgülenen hiçbir unsur kapsam dışında bırakılamaz",
+         "Yalnız devralan tacir değilse kapsam daraltılabilir",
+         "Kapsam dışı bırakmak için devir sözlü yapılmalıdır",
+         "Kapsamı yalnız sicil müdürü değiştirebilir"],
+    ),
+    39: (
+        "Yazılı yapılır, ticaret siciline tescil ve ilan edilir",
+        ["Sözlü yapılır, tescil ve ilan gerekmez",
+         "Noterde düzenlenir ve tapu siciline kaydedilir",
+         "Yalnız elektronik postayla yapılabilir",
+         "Ticaret odası kararıyla sözleşmesiz kurulur"],
+    ),
+    40: (
+        "Ticari işletme diğer hukuki işlemlere de konu olabilir",
+        ["Ticari işletme yalnız satış yoluyla devredilebilir",
+         "Bu olanak yalnız kamu işletmeleri için geçerlidir",
+         "Önce bütün unsurların tüzel kişilik kazanması gerekir",
+         "Önce işletme faaliyeti tamamen sona ermelidir"],
+    ),
+    41: (
+        "Aksi kararlaştırılmamışsa devir kapsamındadır",
+        ["Hiçbir durumda işletmeyle birlikte devredilemez",
+         "Devirle kendiliğinden sona erer",
+         "Her durumda devredenin kişisel hakkı olarak kalır",
+         "Sözleşmede hüküm yoksa belediyeye geçer"],
+    ),
+    42: (
+        "Alacaklıya bildirim veya Ticaret Sicili Gazetesi ilanıyla",
+        ["Devir görüşmelerinin başlamasıyla",
+         "Bütün alacaklıların noter onayıyla",
+         "İşletmenin sicilden silinmesiyle",
+         "Devirden beş yıl sonra kendiliğinden"],
+    ),
+    43: (
+        "Devralanla birlikte iki yıl müteselsil sorumlu kalır",
+        ["Devir sözleşmesiyle bütün borçlardan hemen kurtulur",
+         "Süresiz ve tek başına sorumlu kalır",
+         "Yalnız devralan ödemezse tali sorumlu olur",
+         "Bildirimden bağımsız olarak bir ay sorumlu kalır"],
+    ),
+    44: (
+        "İki yıllık süre borcun muaccel olduğu tarihte başlar",
+        ["Süre her durumda devir görüşmesi tarihinde başlar",
+         "Süre işletme sicilden silindiğinde başlar",
+         "Süre alacaklının dava açtığı tarihte başlar",
+         "Süre devralanın ilk kâr ettiği tarihte başlar"],
+    ),
+    46: (
+        "Kısmen de olsa kendi adına işlettiği için tacirdir",
+        ["İşletmenin tamamını tek başına işletmediği için tacir değildir",
+         "Çalışan sayısı eşiğini aşarsa tacirdir",
+         "Tescil yapılmadığı için yalnız esnaftır",
+         "Ortaklık ilişkisi nedeniyle yalnız tüketicidir"],
+    ),
+    47: (
+        "Fiilen başlamamış olsa bile tacir sayılır",
+        ["İlk satış gerçekleşinceye kadar tacir sayılmaz",
+         "Yalnız ticaret şirketine dönüşürse tacir sayılır",
+         "Halka duyuru nedeniyle yalnız esnaf sayılır",
+         "Beş yıl faaliyetten sonra tacir sayılır"],
+    ),
+    48: (
+        "Tescil ve ilan nedeniyle tacir sayılır",
+        ["Fiilî faaliyet başlamadığı için tacir sayılmaz",
+         "Tescil yalnız vergi mükellefiyeti doğurur",
+         "Tescille yalnız tacir yardımcısı sayılır",
+         "İlk faturadan sonra tacir sayılır"],
+    ),
+    49: (
+        "İyi niyetli üçüncü kişilere karşı tacir gibi sorumlu olur",
+        ["Yalnız var olmayan şirket sorumlu tutulur",
+         "Tam tacir olur ve kötü niyetlilere karşı sorumludur",
+         "İşlem yok sayılır ve hiçbir sorumluluk doğmaz",
+         "Yalnız ticaret sicili müdürlüğü sorumlu olur"],
+    ),
+    51: (
+        "İşletme sahibi tacirdir; veli tacir değildir",
+        ["Veli tacirdir; işletme sahibi tacir değildir",
+         "İşletme sahibi ile veli ayrı ayrı tacirdir",
+         "İşletme sahibi ile veli tacir değildir",
+         "Tacir sıfatı vesayet makamına aittir"],
+    ),
+    52: (
+        "Ceza hükümleri yönünden tacir gibi sorumludur",
+        ["Tacir olmadığı için ceza hükümlerinden sorumsuzdur",
+         "Yalnız özel hukuk borçlarından sınırsız sorumludur",
+         "Küçüğün talimatıyla tacir sıfatını kazanır",
+         "Ceza sorumluluğu sicil müdürüne geçer"],
+    ),
+    53: (
+        "Yasağa rağmen işletmeyi işlettiği için tacir sayılır",
+        ["Yasak nedeniyle ticari işletme yok sayılır",
+         "Yasağa rağmen yalnız esnaf sayılır",
+         "Tacirlik ancak yasağın kaldırılmasıyla doğar",
+         "İşletme bütün borçlarıyla Devlete geçer"],
+    ),
+    54: (
+        "Tacir sayılır; hukuki, cezai ve disiplin sorumluluğu saklıdır",
+        ["İzin bulunmadığı için tacir sayılmaz ve sorumlu olmaz",
+         "Yalnız disiplin sorumluluğu doğar",
+         "İzin alınırsa yalnız esnaf sıfatı kazanır",
+         "Tacir sıfatı izin veren makama geçer"],
+    ),
+    55: (
+        "Gelir sınırı ve bedenî çalışma koşullarıyla esnaftır",
+        ["Gelir sınırına bakılmaksızın her durumda tacirdir",
+         "Yalnız sabit dükkânda çalışırsa esnaftır",
+         "Sermayesi bulunduğu için ticaret şirketidir",
+         "Yalnız kamu görevlileri esnaf olabilir"],
+    ),
+    56: (
+        "TTK m.20 hükmü esnafa da uygulanır",
+        ["Tacire özgü hiçbir hüküm esnafa uygulanmaz",
+         "Yalnız tacir olarak tescil edilirse uygulanır",
+         "Hüküm yalnız kamu yararına derneklere uygulanır",
+         "Esnaf yalnız yazılı sözleşmeyle ücret isteyebilir"],
+    ),
+    57: (
+        "Hayır; ticaret şirketi kanun gereği tacirdir",
+        ["Evet; en az bir yıl faaliyet göstermesi gerekir",
+         "Evet; yalnız gerçek kişiler tacir olabilir",
+         "Şirket yalnız bütün ortakları tacirse tacirdir",
+         "Şirket yalnız kamu kurumu işletirse tacirdir"],
+    ),
+    58: (
+        "Kamu yararına çalışma istisnası olmadığından tacirdir",
+        ["Dernekler hiçbir koşulda tacir sayılamaz",
+         "Yalnız derneğin üyeleri tacir sayılır",
+         "Dernek yalnız işletme zarar ederse tacirdir",
+         "Tacir sıfatı kendiliğinden belediyeye geçer"],
+    ),
+    59: (
+        "Özel hukuk hükümlerine göre işletilen kurum tacir sayılır",
+        ["Belediye kurduğu için kurum tacir sayılamaz",
+         "Kurum yerine doğrudan belediye tacir sayılır",
+         "Yalnız gerçek kişi ortakları varsa tacir sayılır",
+         "Özel hukuk yönetimi kurumu esnaf yapar"],
+    ),
+}
+
+PREMISE_OVERRIDES = {
+    6: (
+        Q[5]["stem"], "I ve III",
+        ["I, II ve III", "Yalnız I", "I ve II", "Yalnız III"], Q[5]["why"],
+    ),
+    14: (
+        Q[13]["stem"], "I ve II",
+        ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"], Q[13]["why"],
+    ),
+    21: (
+        Q[20]["stem"], "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"], Q[20]["why"],
+    ),
+    30: (
+        "Ticari işlerde faiz hakkında aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Faiz oranı, tüketiciyi koruyan hükümler saklı kalmak üzere serbestçe belirlenebilir\n\n"
+        "II. Tarafları tacir olan cari hesapta en az üç aylık dönemlerle bileşik faiz kararlaştırılabilir\n\n"
+        "III. Vade yoksa faiz, ihtara gerek olmadan sözleşme tarihinde işlemeye başlar",
+        "I ve II",
+        ["I, II ve III", "Yalnız I", "I ve III", "II ve III"],
+        "Ticari faiz oranı kural olarak serbesttir. Tacirler arasındaki cari hesapta bileşik faiz en az üç aylık dönemlerle kararlaştırılabilir. Vadesiz borçta faiz, aksi kararlaştırılmadıkça ihtar gününde başlar.",
+    ),
+    34: (
+        Q[33]["stem"], "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"], Q[33]["why"],
+    ),
+    45: (
+        Q[44]["stem"], "I ve III",
+        ["I, II ve III", "Yalnız I", "I ve II", "Yalnız III"], Q[44]["why"],
+    ),
+    50: (
+        "Gerçek kişilerde tacir sıfatı hakkında aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. İşletmeyi kısmen kendi adına işleten kişi tacirdir\n\n"
+        "II. İşletmeyi kurup açtığını halka bildiren kişi fiilen başlamasa da tacir sayılır\n\n"
+        "III. Hukuken var olmayan şirket adına işlem yapan kişi iyi niyetli üçüncü kişilere karşı sorumsuzdur",
+        "I ve II",
+        ["I, II ve III", "Yalnız I", "I ve III", "II ve III"],
+        "İşletmeyi kısmen kendi adına işletmek tacirlik için yeterlidir. Kurup açtığını halka bildiren kişi fiilen başlamadan da tacir sayılır. Var olmayan şirket adına işlem yapan kişi iyi niyetli üçüncü kişilere karşı tacir gibi sorumludur.",
+    ),
+    60: (
+        Q[59]["stem"], "I ve III",
+        ["I, II ve III", "Yalnız I", "I ve II", "Yalnız III"], Q[59]["why"],
+    ),
+}
+
+STEM_OVERRIDES = {
+    44: (
+        "İşletme devri alacaklılara bildirilmiş veya ilan edilmiştir. Devir tarihinde henüz "
+        "muaccel olmayan bir borç bakımından önceki borçlunun iki yıllık müteselsil sorumluluk "
+        "süresi ne zaman başlar?"
+    ),
+    47: (
+        "Bir kişi ticari işletmesini kurup açtığını ilan araçlarıyla halka bildirmiş, fakat henüz "
+        "fiilen faaliyete başlamamıştır. Tacir sıfatı bakımından sonuç nedir?"
+    ),
+}
+
+BALANCE_OVERRIDES = {
+    2: (0, "Bağlayıcı hukuk kuralı olarak uyuşmazlığa doğrudan uygulanır"),
+    5: (0, "Örf ve âdet hükmünün ayrı bir yazılı sözleşmede aynen tekrarlanması"),
+    8: (0, "Yalnız iki taraf da tacirse işlem ticari iş niteliği kazanır"),
+    9: (0, "TTK'da adıyla ayrıca düzenlenmediği için işlem adi iş sayılır"),
+    11: (0, "Açık kanun hükmünün yerine geçecek biçimde doğrudan uygulanabilir"),
+    12: (0, "Kanunun başlığında mutlaka ticaret sözcüğünün açıkça bulunması"),
+    13: (0, "Sözleşmeye dayanmadığı için her durumda adi iş olarak değerlendirilir"),
+    16: (0, "Taraflar tacir olsa da uyuşmazlık adi hukuk davası olarak görülür"),
+    17: (0, "Tarafların ikisi de tacir olmadığından uyuşmazlık adi dava sayılır"),
+    18: (0, "Taraflar tacir olmadığından uyuşmazlık genel hukuk davası sayılır"),
+    21: (1, "Yalnız I ve II"),
+    22: (1, "Sekiz hafta; zorunlu hâl aranmadan yeniden uzatılabilir"),
+    23: (0, "Asliye ticaret mahkemesi bulunmadığı için davayı görev yönünden reddeder"),
+    25: (0, "Tacirler arasında sözleşmeyle herhangi bir sınırlama olmadan değiştirilebilir"),
+    27: (0, "İhbar yapılmadan asıl borç muaccel hâle gelemez ve talep edilemez"),
+    29: (0, "Tarafları tacir olmayan, bir aylık dönemli adi tüketim ödüncünde"),
+    31: (0, "Faaliyetin mutlaka anonim şirket tüzel kişisi tarafından yürütülmesi"),
+    34: (1, "Yalnız I ve II"),
+    38: (0, "İşletmeye özgülenen hiçbir malvarlığı unsuru kapsam dışında bırakılamaz"),
+    39: (1, "Yalnız noterde düzenleme biçiminde yapılır ve tapu siciline kaydedilir"),
+    40: (0, "Ticari işletme yalnız satış sözleşmesi yoluyla bir bütün olarak devredilebilir"),
+    42: (1, "Yalnız bütün alacaklıların noter huzurunda ayrı ayrı onay vermesiyle"),
+    43: (0, "Devir sözleşmesi imzalanınca devreden bütün borçlardan hemen kurtulur"),
+    44: (0, "Süre her durumda devir sözleşmesinin görüşülmeye başladığı tarihte başlar"),
+    49: (1, "Tam tacir olur ve yalnız kötü niyetli üçüncü kişilere karşı sorumludur"),
+    53: (0, "Yasak nedeniyle ticari işletme ve bütün işlemleri hukuken yok sayılır"),
+    54: (0, "İzin bulunmadığı için tacir sayılmaz ve üçüncü kişilere karşı sorumlu olmaz"),
+    55: (0, "Gelir sınırına ve bedenî çalışmaya bakılmaksızın her durumda tacirdir"),
+    58: (0, "Dernekler ticari işletme işletse bile hiçbir koşulda tacir sayılamaz"),
+    59: (0, "Belediye tarafından kurulduğu için kurum hiçbir koşulda tacir sayılamaz"),
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+for number, (stem, correct, distractors, why) in PREMISE_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+    Q[number - 1]["why"] = why
+
+for number, stem in STEM_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+
+for number, (index, distractor) in BALANCE_OVERRIDES.items():
+    Q[number - 1]["distractors"][index] = distractor
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -874,21 +1357,26 @@ if __name__ == "__main__":
                 "explanation": it["why"],
                 "source": {
                     "kind": "generated",
-                    "styleRef": "2026/1 test biçimi",
+                    "styleRef": "2026/1 beş seçenekli test biçimi",
                     "legislationRef": it["ref"],
                 },
-                "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+                "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
                 "difficulty": it["difficulty"],
-                "updatedAt": "2026-07-16T00:00:00Z",
+                "updatedAt": UPDATED_AT,
                 "examPeriod": "2026/1 formatına uyumlu",
-                "legislationVersion": "6102 sayılı TTK ve 6098 sayılı TBK - 16.07.2026",
-                "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+                "legislationVersion": LEGISLATION_VERSION,
+                "sourceUpdatedAt": UPDATED_AT,
                 "isPremium": False,
                 "isActive": True,
             }
         )
-    with open(OUT, "w", encoding="utf-8") as output_file:
-        json.dump(out, output_file, ensure_ascii=False, indent=2)
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
+    for output_path in OUTS:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as output_file:
+            json.dump(out, output_file, ensure_ascii=False, indent=2)
+            output_file.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premise_count = sum(
         1 for item in out if len(marker.findall(item["question"])) >= 2
