@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
 """Yeterlilik — Meslek Hukuku Test 2 + Test 3 (2×20 = 40 soru).
-3568 sayılı Kanun + TÜRMOB/TESMER + Etik. Doğru şık KISA, çeldiriciler UZUN.
-⚠️ Ücret tarifesi TUTARI, staj süresi dışındaki yıla bağlı değerler YOK.
-explanation'da harf atıfı YOK."""
-import json, random, re
+
+3568 sayılı Kanun, güncel TÜRMOB/TESMER düzenlemeleri ve meslek etiği
+kapsanır. Yıla bağlı parasal tutarlar kullanılmaz; şık uzunlukları soru
+bazında dengelenir.
+"""
+import json
+import random
+import re
+from pathlib import Path
 
 L = "meslek_hukuku"
 Q = []
@@ -103,7 +108,7 @@ q("ruhsat_ve_staj", "Ruhsat, Sınav ve Staj",
   "3568 sayılı Kanun m.9")
 
 q("ruhsat_ve_staj", "Ruhsat, Sınav ve Staj",
-  "TESMER'in görevi bakımından aşağıdakilerden hangisi doğrudur?",
+  "2026 yılında yürürlükte olan meslek mevzuatına göre TESMER'in görevi bakımından aşağıdakilerden hangisi doğrudur?",
   "Staj, sınav ve mesleki eğitim faaliyetlerini yürütmek üzere TÜRMOB bünyesinde kurulmuş bir merkezdir",
   ["Meslek mensuplarının disiplin soruşturmasını yürüten ve ceza veren bağımsız bir kuruldur",
    "Meslek mensuplarının ücret tarifesini belirleyip yürürlüğe koyan bir kamu kurumu niteliğindedir",
@@ -167,8 +172,8 @@ q("mesleki_sorumluluk", "Mesleki Sorumluluklar",
    "Sır saklama yükümlülüğü yalnızca meslek mensubunu bağlar; yanında çalışanlar bu yükümlülüğün dışındadır",
    "Sır saklama yükümlülüğü müşteri ilişkisi sona erdiğinde kendiliğinden ortadan kalkmış olmaktadır",
    "Sır saklama yalnızca yazılı bilgileri kapsar; sözlü öğrenilen bilgiler bu kapsamda değerlendirilmez"],
-  "3568 sayılı Kanun m.43: meslek mensupları ve yanlarında çalışanlar, işleri dolayısıyla öğrendikleri bilgi ve sırları ifşa edemezler; adli ve idari her türlü işlemde tanıklıktan çekinebilirler. Kanunen açıkça bilgi verme yükümlülüğü bulunan hâller saklıdır.",
-  "3568 sayılı Kanun m.43")
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.7'ye göre meslek mensupları ve yanlarında çalışanlar, mesleki faaliyet dolayısıyla öğrendikleri bilgi ve sırları faaliyet sona erse bile açıklayamaz. Adli veya idari inceleme ve soruşturmalar bu kuralın dışındadır; tanıklık da sırrın ifşası sayılmaz.",
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.7")
 
 q("mesleki_sorumluluk", "Mesleki Sorumluluklar",
   "Meslek mensubuna getirilen yasaklar bakımından aşağıdakilerden hangisi doğrudur?",
@@ -189,17 +194,17 @@ q("mesleki_sorumluluk", "Mesleki Sorumluluklar",
 
 # ══ ÇALIŞMA USUL VE ESASLARI (5) ══════════════════════════════════════════
 q("calisma_usulleri", "Çalışma Usul ve Esasları",
-  "Meslek mensubu ile müşteri arasındaki sözleşme bakımından aşağıdakilerden hangisi doğrudur?",
-  "Meslek mensubu ile müşteri arasında yazılı sözleşme yapılması esastır",
+  "Meslek mensubu ile iş sahibi arasındaki sözleşme bakımından aşağıdakilerden hangisi doğrudur?",
+  "Defter tutma, sürekli müşavirlik, inceleme-denetim ve YMM tasdik işlerinde sözleşme yapılması zorunludur",
   ["Meslek mensubu ile müşteri arasında sözleşme yapılması gerekmez; sözlü anlaşma her hâlde yeterlidir",
    "Sözleşme yalnızca yeminli mali müşavirlerle yapılır; serbest muhasebeci mali müşavirlerle yapılmaz",
    "Sözleşmenin geçerliliği için noterde resmî senet düzenlenmesi ve odaya tescili zorunlu tutulmuştur",
    "Sözleşmeyi meslek mensubu değil, doğrudan bağlı bulunduğu oda müşteriyle imzalamak zorundadır"],
-  "3568 sayılı Kanun ve ilgili yönetmelik: meslek mensubu ile iş sahibi arasında yazılı sözleşme yapılması esastır; sözleşmede işin konusu, süresi ve ücreti gibi hususlar belirtilir.",
-  "3568 sayılı Kanun - sözleşme")
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.24'e göre defter tutma, süreklilik arz eden müşavirlik, inceleme-tahlil-denetim ve bunlara ilişkin raporlama ile YMM tasdik işlerinde sözleşme yapılması zorunludur.",
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.24")
 
 q("calisma_usulleri", "Çalışma Usul ve Esasları",
-  "Ücret tarifesi bakımından aşağıdakilerden hangisi doğrudur?",
+  "2026 yılında yürürlükte olan 3568 sayılı Kanuna göre asgari ücret tarifesinin hazırlanması bakımından aşağıdakilerden hangisi doğrudur?",
   "Meslek mensuplarının uygulayacağı asgari ücret tarifesi TÜRMOB'ca hazırlanıp ilgili Bakanlığın onayıyla yürürlüğe girer",
   ["Meslek mensupları ücretlerini hiçbir sınır olmaksızın ve tarifeye bağlı kalmadan serbestçe belirler",
    "Ücret tarifesini her meslek mensubu kendisi belirleyip bağlı bulunduğu odaya bildirmekle yetinir",
@@ -209,14 +214,14 @@ q("calisma_usulleri", "Çalışma Usul ve Esasları",
   "3568 sayılı Kanun m.46")
 
 q("calisma_usulleri", "Çalışma Usul ve Esasları",
-  "Meslek mensubunun işi bırakması bakımından aşağıdakilerden hangisi doğrudur?",
-  "Meslek mensubu haklı sebep olmaksızın işi bırakarak müşteriyi zarara uğratamaz; işi bırakırken devir ve bilgilendirme yükümlülüğü vardır",
-  ["Meslek mensubu dilediği zaman ve hiçbir bildirimde bulunmaksızın işi bırakabilir; sorumluluğu doğmaz",
-   "Meslek mensubu işi hiçbir hâlde bırakamaz; sözleşme ömür boyu devam etmek zorunda tutulmaktadır",
-   "İşi bırakma yalnızca müşterinin onayıyla mümkün olup meslek mensubunun kendi iradesi yeterli değildir",
-   "İşi bırakan meslek mensubu belge ve bilgileri imha etmek zorunda olup devretmesi kanunen yasaktır"],
-  "3568 sayılı Kanun ve meslek kuralları: meslek mensubu, haklı bir sebep olmaksızın işi yarıda bırakarak müşteriyi zarara uğratamaz; ilişkiyi sonlandırırken müşterinin mağdur olmaması için belge ve bilgilerin devrine özen gösterir.",
-  "3568 sayılı Kanun - işi bırakma")
+  "Mesleki sözleşmenin taraflarca feshedilmesi hâlinde iş sahibinin defter ve belgelerinin teslimi bakımından aşağıdakilerden hangisi doğrudur?",
+  "Defter ve belgeler devir ve teslim tutanağı düzenlenerek otuz gün içinde iş sahibine teslim edilmelidir",
+  ["Defter ve belgeler herhangi bir tutanak düzenlenmeden süresiz olarak meslek mensubunda tutulabilir",
+   "Teslim yükümlülüğü yalnız sözleşmenin meslek mensubu tarafından feshedilmesi hâlinde doğar",
+   "Defter ve belgeler iş sahibine değil, her durumda doğrudan vergi dairesine teslim edilir",
+   "Sözleşmenin sona ermesi defter ve belgelerin imha edilmesini gerektirir; teslim yapılmaz"],
+  "Disiplin Yönetmeliği m.5 uyarınca sözleşmenin taraflarca feshedilmesi hâlinde iş sahibinin defter ve belgelerinin devir ve teslim tutanağı düzenlenerek otuz gün içinde teslim edilmemesi uyarma cezasını gerektirir. Teslimin gerçekleşemediğinin odaya bildirilmesi hâli saklıdır.",
+  "Disiplin Yönetmeliği m.5/a")
 
 q("calisma_usulleri", "Çalışma Usul ve Esasları",
   "Meslek mensubunun büro açması bakımından aşağıdakilerden hangisi doğrudur?",
@@ -229,14 +234,14 @@ q("calisma_usulleri", "Çalışma Usul ve Esasları",
   "3568 sayılı Kanun - büro açma")
 
 q("calisma_usulleri", "Çalışma Usul ve Esasları",
-  "Meslek mensubunun defter ve belgeleri saklaması bakımından aşağıdakilerden hangisi doğrudur?",
-  "Meslek mensubu, kendisine teslim edilen ve düzenlediği belgeleri kanunda öngörülen süre boyunca saklamakla yükümlüdür",
-  ["Meslek mensubunun belge saklama yükümlülüğü bulunmayıp belgeleri dilediği zaman imha edebilir",
-   "Belge saklama yükümlülüğü yalnızca müşteriye ait olup meslek mensubunu hiç ilgilendirmemektedir",
-   "Meslek mensubu belgeleri işi bitirdiği gün müşteriye iade eder; saklama süresi söz konusu değildir",
-   "Belgeler yalnızca bağlı bulunulan oda arşivinde saklanır; meslek mensubunun bir görevi bulunmaz"],
-  "Meslek mensubu, mesleki faaliyeti kapsamında kendisine teslim edilen ve düzenlediği defter/belgeleri mevzuatta öngörülen süre boyunca muhafaza etmek ve talep hâlinde ibraz etmekle yükümlüdür.",
-  "3568 sayılı Kanun - muhafaza yükümlülüğü")
+  "Serbest muhasebeci mali müşavirin tuttuğu defterler ve bunlarla ilgili belgeler bakımından aşağıdakilerden hangisi doğrudur?",
+  "Serbest muhasebeci mali müşavir tuttuğu defterleri ve ilgili belgeleri özenle muhafaza etmek zorundadır",
+  ["Defter ve belgeler meslek mensubunca istenildiği anda herhangi bir bildirim yapılmadan imha edilebilir",
+   "Muhafaza yükümlülüğü yalnız iş sahibine ait olduğundan meslek mensubunun hiçbir sorumluluğu bulunmaz",
+   "Belgelerin tamamı yalnız bağlı bulunulan oda arşivinde tutulur; meslek mensubu kayıt saklayamaz",
+   "Meslek mensubu defterleri tutabilir ancak bunların dayanağı olan belgeleri muhafaza edemez"],
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.20, serbest muhasebeci mali müşavirlerin tuttukları defterleri ve bunlarla ilgili belgeleri özenli biçimde muhafaza etmelerini zorunlu tutar.",
+  "Çalışma Usul ve Esasları Hakkında Yönetmelik m.20")
 
 # ══ ODALAR VE TÜRMOB (5) ══════════════════════════════════════════════════
 q("oda_ve_turmob", "Odalar ve TÜRMOB",
@@ -386,13 +391,13 @@ q("disiplin", "Disiplin Hükümleri",
 
 q("disiplin", "Disiplin Hükümleri",
   "Disiplin soruşturması ile ceza kovuşturması ilişkisi bakımından aşağıdakilerden hangisi doğrudur?",
-  "Bir fiil hem disiplin hem ceza sorumluluğu doğurabilir; disiplin soruşturması ceza kovuşturmasından bağımsız yürütülebilir",
+  "Ceza kovuşturması disiplin işlemlerini engellemez; aynı eylem için ceza davası açılmışsa disiplin kovuşturması davanın sonuna kadar bekletilebilir",
   ["Bir fiil ya disiplin ya ceza sorumluluğu doğurur; ikisi hiçbir hâlde birlikte söz konusu olamaz",
    "Disiplin soruşturması ancak ceza davası kesinleştikten sonra başlatılabilir; öncesinde mümkün değildir",
    "Ceza kovuşturması başlatıldığında disiplin soruşturması kendiliğinden ve kesin olarak düşmektedir",
    "Disiplin ve ceza sorumluluğu aynı kurum tarafından ve tek bir kararla birlikte hükme bağlanmaktadır"],
-  "Disiplin sorumluluğu ile cezai sorumluluk farklı hukuki temellere dayanır; aynı fiil hem meslek kurallarına aykırılık hem suç oluşturabilir. Disiplin soruşturması kural olarak ceza kovuşturmasından bağımsız yürütülür.",
-  "3568 sayılı Kanun - disiplin/ceza ilişkisi")
+  "Disiplin sorumluluğu ile cezai sorumluluk farklı hukuki temellere dayanır; aynı fiil her ikisini de doğurabilir. Ceza kovuşturması disiplin işlemlerini kendiliğinden düşürmez. Bununla birlikte aynı eylem nedeniyle ceza davası açılmışsa disiplin kovuşturması 2026 düzenlemesi uyarınca davanın sonuna kadar bekletilebilir.",
+  "Disiplin Yönetmeliği m.30 (14.01.2026 değişikliği)")
 
 q("disiplin", "Disiplin Hükümleri",
   "Aşağıdakilerden hangileri 3568 sayılı Kanun'a göre disiplin cezalarındandır?\n\nI. Uyarma\n\nII. Kınama\n\nIII. Geçici olarak mesleki faaliyetten alıkoyma",
@@ -412,25 +417,127 @@ def gen_letters(n, seed):
         if all(not (base[i] == base[i-1] == base[i-2]) for i in range(2, len(base))):
             return base
 
+
+BALANCE_SUFFIXES = [
+    "belirtilen olayda mesleki değerlendirme bu yöndedir",
+    "bu sonuç sorudaki varsayımlar altında uygulanır",
+    "ilgili düzenlemenin olaydaki sonucu bu şekilde ortaya çıkar",
+    "verilen bilgiler bakımından mesleki nitelendirme bu yöndedir",
+    "somutlaştırılan durumda düzenlemenin sonucu bu biçimde uygulanır",
+]
+
+CONTEXTS = {
+    "meslek_ve_unvanlar": [
+        "Bir mesleki yetki uyuşmazlığı değerlendirilirken",
+        "3568 sayılı Kanunun meslek unvanlarına ilişkin hükümleri uygulanırken",
+        "Bir işletmeye sunulabilecek hizmetin kapsamı belirlenirken",
+    ],
+    "ruhsat_ve_staj": [
+        "Bir adayın ruhsat ve staj koşulları incelenirken",
+        "2026 yılında yürürlükte olan staj düzeni uygulanırken",
+        "Mesleğe kabul sürecindeki koşullar değerlendirilirken",
+    ],
+    "mesleki_sorumluluk": [
+        "Bir meslek mensubunun hukuki konumu değerlendirilirken",
+        "Sunulan mesleki hizmetten doğan sorumluluk belirlenirken",
+        "Meslek mensubunun yükümlülükleri somut olayda uygulanırken",
+    ],
+    "calisma_usulleri": [
+        "Bir mesleki hizmet ilişkisinin usule uygunluğu incelenirken",
+        "Çalışma Usul ve Esasları Hakkında Yönetmelik uygulanırken",
+        "Serbest çalışan bir meslek mensubunun yükümlülükleri belirlenirken",
+    ],
+    "oda_ve_turmob": [
+        "Meslek örgütlenmesindeki görev ve yetkiler belirlenirken",
+        "Oda ile Birlik arasındaki kurumsal yapı incelenirken",
+        "3568 sayılı Kanundaki meslek kuruluşları değerlendirilirken",
+    ],
+    "mesleki_etik": [
+        "Bir mesleki hizmette temel etik ilkeler uygulanırken",
+        "Meslek mensubunun etik davranışı değerlendirilirken",
+        "Etik ilkelere yönelik bir tehdit incelenirken",
+    ],
+    "disiplin": [
+        "Bir disiplin dosyasında uygulanacak hüküm belirlenirken",
+        "2026 yılında yürürlükte olan disiplin düzeni uygulanırken",
+        "Meslek mensubunun disiplin sorumluluğu incelenirken",
+    ],
+}
+
+
+def extend_above(text, threshold, salt):
+    """Anlamı değiştirmeyen, değişken bir bağlamla uzunluk eşiğini aşar."""
+    candidates = []
+    for offset in range(len(BALANCE_SUFFIXES)):
+        suffix = BALANCE_SUFFIXES[(salt + offset) % len(BALANCE_SUFFIXES)]
+        candidates.append(f"{text}; {suffix}")
+    eligible = [candidate for candidate in candidates if len(candidate) > threshold]
+    if eligible:
+        return eligible[0]
+    first = BALANCE_SUFFIXES[salt % len(BALANCE_SUFFIXES)]
+    second = BALANCE_SUFFIXES[(salt + 2) % len(BALANCE_SUFFIXES)]
+    return f"{text}; {first}; {second}"
+
+
+def balanced_item(item, salt):
+    """Doğru cevabı iki kısa ve iki uzun çeldiricinin arasına yerleştirir."""
+    correct = item["correct"]
+    distractors = list(item["distractors"])
+    ordered = sorted(range(4), key=lambda index: len(distractors[index]))
+    shorter_indices = set(ordered[:2])
+    longest = max(len(value) for value in distractors)
+    threshold = max(len(distractors[ordered[1]]), (longest + 1) // 2)
+    if len(correct) <= threshold:
+        correct = extend_above(correct, threshold, salt)
+    for offset, index in enumerate(ordered[2:], 1):
+        if len(distractors[index]) <= len(correct):
+            distractors[index] = extend_above(
+                distractors[index], len(correct), salt + offset
+            )
+    assert sum(len(value) < len(correct) for value in distractors) == 2
+    assert sum(len(value) > len(correct) for value in distractors) == 2
+    assert all(
+        (index in shorter_indices) == (len(value) < len(correct))
+        for index, value in enumerate(distractors)
+    )
+    return correct, distractors
+
+
+def contextualized_stem(item, salt):
+    stem = item["stem"]
+    if "\n\nI." in stem or len(stem) >= 110:
+        return stem
+    intros = CONTEXTS[item["topic"]]
+    intro = intros[salt % len(intros)]
+    stem_start = stem if stem[:2].isupper() else stem[0].lower() + stem[1:]
+    return f"{intro}, {stem_start}"
+
 def emit(items, prefix, seed):
     letters = gen_letters(len(items), seed)
     out = []
     for i, it in enumerate(items):
         ans = letters[i]
-        ch = {ans: it["correct"]}
-        for k, d in zip([k for k in "ABCDE" if k != ans], it["distractors"]):
+        is_premise = "\n\nI." in it["stem"]
+        if is_premise:
+            correct, distractors = it["correct"], list(it["distractors"])
+        else:
+            correct, distractors = balanced_item(it, seed + i)
+        ch = {ans: correct}
+        for k, d in zip([k for k in "ABCDE" if k != ans], distractors):
             ch[k] = d
         assert len(set(ch.values())) == 5, f"{prefix}-{i+1}: şık tekrarı"
         out.append({
             "id": f"{prefix}-{i+1:04d}", "lessonId": L, "topicId": it["topic"],
-            "question": it["stem"], "choices": ch, "correctAnswer": ans,
+            "question": contextualized_stem(it, seed + i),
+            "choices": ch, "correctAnswer": ans,
             "explanation": it["why"],
-            "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
+            "source": {"kind": "generated", "styleRef": "2026 SMMM beş seçenekli test",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", it["label"]],
-            "difficulty": it["difficulty"], "updatedAt": "2026-07-16T00:00:00Z",
-            "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z", "isPremium": False, "isActive": True,
+            "tags": ["Özgün Soru", "2026 Formatı", it["label"]],
+            "difficulty": it["difficulty"], "updatedAt": "2026-07-17T00:00:00Z",
+            "examPeriod": "2026 test sistemine uyumlu özgün soru",
+            "legislationVersion": "3568 sayılı Kanun ve ilgili yönetmelikler (17.07.2026)",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z", "isPremium": False, "isActive": True,
         })
     return out
 
@@ -442,9 +549,28 @@ if __name__ == "__main__":
     t2 = [x for i, x in enumerate(duz) if i % 2 == 0] + [x for i, x in enumerate(onc) if i % 2 == 0]
     t3 = [x for i, x in enumerate(duz) if i % 2 == 1] + [x for i, x in enumerate(onc) if i % 2 == 1]
     print(f"öncüllü {len(onc)} → t2:{len([x for x in t2 if x in onc])} t3:{len([x for x in t3 if x in onc])}")
-    APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik"
+    content_root = Path(__file__).resolve().parents[3]
+    app_root = content_root.parent / "smmm_sgs_pratik"
+    targets = (
+        content_root / "content/yeterlilik",
+        app_root / "assets/content/yeterlilik",
+    )
+    base_name = "questions_meslek_hukuku_2026.json"
+    base_data = json.loads((targets[0] / base_name).read_text(encoding="utf-8"))
+    base_payload = json.dumps(base_data, ensure_ascii=False, indent=2) + "\n"
+    for target_dir in targets:
+        target_dir.mkdir(parents=True, exist_ok=True)
+        (target_dir / base_name).write_text(base_payload, encoding="utf-8")
+    print(f"{base_name}: {len(base_data)} soru | iki depoya yazıldı")
+
     for items, name, prefix, seed in ((t2, "questions_meslek_hukuku_test2_2026.json", "mh-t2", 20260811),
                                       (t3, "questions_meslek_hukuku_test3_2026.json", "mh-t3", 20260812)):
         data = emit(items, prefix, seed)
-        json.dump(data, open(f"{APP}/{name}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-        print(f"{name}: {len(data)} soru | harf {''.join(x['correctAnswer'] for x in data)}")
+        payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+        for target_dir in targets:
+            target_dir.mkdir(parents=True, exist_ok=True)
+            (target_dir / name).write_text(payload, encoding="utf-8")
+        print(
+            f"{name}: {len(data)} soru | "
+            f"harf {''.join(x['correctAnswer'] for x in data)} | iki depoya yazıldı"
+        )
