@@ -6,7 +6,7 @@
     "stem": "Damga vergisinin konusu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Kanuna ekli (1) sayılı tabloda yazılı kağıtlar damga vergisine tabidir",
-      "A": "Kişilerin bir yıl içinde elde ettiği gelirler damga vergisine tabidir",
+      "A": "Kişilerin bir takvim yılı içinde elde ettiği kazanç ve iratlar damga vergisine tabidir",
       "B": "Her türlü mal ve hizmet teslimi damga vergisine tabidir",
       "D": "Sahip olunan gayrimenkuller damga vergisine tabidir",
       "E": "Motorlu taşıtlar damga vergisine tabidir"
@@ -28,10 +28,10 @@
     "stem": "Damga Vergisi Kanunu bakımından 'kağıt' kavramı aşağıdakilerden hangisiyle ifade edilir?",
     "options": {
       "B": "Bir hususu ispat veya belli etmek için ibraz edilebilecek, yazılıp imzalanan belgelerdir",
-      "A": "Yalnızca resmi daireler tarafından basılan matbu evraktır",
-      "C": "Yalnızca üzerinde para tutarı yazılı olan ticari senetlerdir",
-      "D": "Yalnızca noterde düzenlenen resmi senetlerdir",
-      "E": "Yalnızca elle yazılmış ve imzasız olan özel notlardır"
+      "A": "Yalnızca resmî daireler tarafından bastırılan matbu evrak; özel kişilerin düzenlediği kâğıtlar kapsam dışıdır",
+      "C": "Yalnızca üzerinde belli bir para tutarı yazılı olan ticari senetler; tutar içermeyen kâğıtlar kapsam dışında kalır",
+      "D": "Yalnızca noter huzurunda düzenlenen resmî senetler; adi yazılı belgeler kâğıt sayılmaz ve vergiye tabi olmaz",
+      "E": "Yalnızca elle yazılmış ve imza taşımayan özel notlar; imzalı ve basılı belgeler bu kapsama girmez"
     },
     "answer": "B",
     "solution": "488 DVK m.1: kağıt; yazılıp imzalanan veya imza yerine geçen işaret konan, bir hususu ispat/belli etmek için ibraz edilebilecek belgeleri (elektronik veriler dâhil) ifade eder. Doğru cevap B.",
@@ -52,7 +52,7 @@
       "B": "Damga vergisi, hukuki işlemleri belgeleyen kağıtlar üzerinden alınan bir işlem (muamele) vergisidir",
       "A": "Damga vergisi, kişilerin geliri üzerinden alınan bir gelir vergisidir",
       "C": "Damga vergisi, sahip olunan servet üzerinden alınan bir servet vergisidir",
-      "D": "Damga vergisi, mal ve hizmet tüketimi üzerinden alınan bir harcama vergisidir",
+      "D": "Damga vergisi, mal ve hizmet tüketimi üzerinden alınan bir harcama vergisidir; her teslimde matrah üzerinden hesaplanır",
       "E": "Damga vergisi, yalnızca gayrimenkul satışında alınan bir vergidir"
     },
     "answer": "B",
@@ -72,10 +72,10 @@
     "stem": "Aşağıdakilerden hangisi damga vergisine tabi olabilecek bir kağıttır?",
     "options": {
       "C": "Taraflar arasında düzenlenip imzalanan bir sözleşme (mukavelename)",
-      "A": "Henüz imzalanmamış ve taslak hâlinde bulunan bir metin",
-      "B": "Kişinin kendi kendine tuttuğu, kimseye ibraz edilmeyen özel notlar",
-      "D": "Bir malın fiziki tesliminin kendisi",
-      "E": "Sözlü olarak yapılan ve hiçbir belgeye bağlanmayan bir anlaşma"
+      "A": "Henüz imzalanmamış, taslak hâlinde bulunan ve taraflarca kabul edilmemiş bir metin",
+      "B": "Kişinin kendi kendine tuttuğu, kimseye ibraz edilmeyen ve hüküm doğurmayan özel notlar",
+      "D": "Bir malın fiziki tesliminin kendisi; teslime ilişkin hiçbir belge düzenlenmemiş olması",
+      "E": "Sözlü olarak yapılan, hiçbir belgeye bağlanmayan ve ispatı tanıkla sağlanan anlaşma"
     },
     "answer": "C",
     "solution": "488 DVK m.1: düzenlenip imzalanan sözleşmeler (1) sayılı tabloda yer alan kağıtlardandır; damga vergisine tabidir. Doğru cevap C.",
@@ -116,8 +116,8 @@
     "stem": "Damga vergisi bakımından, elektronik ortamda düzenlenen belgeler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Elektronik imzayla manyetik ortamda ve elektronik veri şeklinde oluşturulan belgeler de kağıt kapsamındadır",
-      "A": "Elektronik ortamdaki belgeler hiçbir hâlde damga vergisine tabi değildir",
-      "C": "Yalnızca kağıda basılıp ıslak imza atılan belgeler damga vergisine tabidir",
+      "A": "Elektronik ortamdaki belgeler hiçbir hâlde damga vergisine tabi değildir; vergi yalnızca fiziki kâğıtta doğar",
+      "C": "Yalnızca kâğıda basılıp ıslak imza atılan belgeler damga vergisine tabidir; elektronik imza vergiyi doğurmaz",
       "D": "Elektronik belgeler yalnızca resmi kurumlar düzenlerse vergiye tabidir",
       "E": "Elektronik belgeler damga vergisi yerine yalnızca KDV'ye tabidir"
     },
@@ -160,8 +160,8 @@
     "stem": "Resmi dairelerle kişiler arasında düzenlenen kağıtların damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Resmi dairelerle kişiler arasındaki işlemlere ait kağıtların damga vergisini kişiler öder",
-      "A": "Resmi dairelerle kişiler arasındaki kağıtların vergisini her hâlde resmi daire öder",
-      "B": "Resmi dairelerle kişiler arasındaki kağıtlar her hâlde damga vergisinden istisnadır",
+      "A": "Resmî dairelerle kişiler arasındaki kâğıtların vergisini her hâlde resmî daire öder; kişinin bir yükümlülüğü doğmaz",
+      "B": "Resmî dairelerle kişiler arasında düzenlenen kâğıtlar her hâlde damga vergisinden istisnadır; taraflardan vergi aranmaz",
       "C": "Bu kağıtların vergisini resmi daire ile kişi yarı yarıya öder",
       "E": "Bu kağıtların vergisi hiç alınmaz; resmi işlemler vergi dışıdır"
     },
@@ -182,10 +182,10 @@
     "stem": "Damga Vergisi Kanunu bakımından 'resmi daire' kavramı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Belediyeler, il özel idareleri ve köyler gibi idareler resmi daire sayılır",
-      "B": "Yalnızca özel şirketler resmi daire sayılır",
-      "C": "Yalnızca bankalar resmi daire sayılır",
-      "D": "Sermaye şirketleri de her hâlde resmi daire sayılır",
-      "E": "Resmi daire kavramı yalnızca mahkemeleri kapsar"
+      "B": "Yalnızca özel hukuk hükümlerine göre kurulan şirketler resmî daire sayılır",
+      "C": "Yalnızca bankalar ve finans kuruluşları resmî daire kapsamında değerlendirilir",
+      "D": "Sermaye şirketleri, kamu payı bulunmasa bile her hâlde resmî daire sayılır",
+      "E": "Resmî daire kavramı yalnızca mahkemeleri ve yargı organlarını kapsar"
     },
     "answer": "A",
     "solution": "488 DVK m.8: genel/özel bütçeli idareler, il özel idareleri, belediyeler ve köyler resmi daire sayılır. Doğru cevap A.",
@@ -205,7 +205,7 @@
     "options": {
       "E": "Vergisi ödenmemiş kağıdı kullananlar ile onu işleme koyan noter ve resmi daireler sorumlu olabilir",
       "A": "Vergisi ödenmemiş kağıdın hiçbir sonucu olmaz; kimse sorumlu tutulamaz",
-      "B": "Vergisi ödenmemiş kağıttan yalnızca onu ilk düzenleyen resmi daire sorumludur",
+      "B": "Vergisi ödenmemiş kâğıttan yalnızca onu ilk düzenleyen resmî daire sorumludur; imzalayan kişilere gidilemez",
       "C": "Vergisi ödenmemiş kağıttan yalnızca devlet sorumludur",
       "D": "Vergisi ödenmemiş kağıt kendiliğinden geçersiz sayılır ve vergi aranmaz"
     },
@@ -227,7 +227,7 @@
     "options": {
       "A": "Damga vergisi, kağıtta yazılı belli para üzerinden nispi olarak veya her kağıt için maktu (sabit) olarak alınır",
       "B": "Damga vergisi yalnızca maktu (sabit tutar) olarak alınır; nispi vergi yoktur",
-      "C": "Damga vergisi yalnızca nispi olarak alınır; maktu vergi yoktur",
+      "C": "Damga vergisi yalnızca nispi, yani kâğıtta yazılı tutarın binde oranı olarak alınır; maktu vergi uygulaması bulunmaz",
       "D": "Damga vergisi kağıdın ağırlığına göre alınır",
       "E": "Damga vergisi kağıdın sayfa sayısına göre maktu alınır"
     },
@@ -248,10 +248,10 @@
     "stem": "Nispi damga vergisinde matrah bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Nispi vergide matrah, kağıtta yazılı belli para tutarı üzerinden hesaplanır",
-      "A": "Nispi vergide matrah, kağıdı imzalayan kişi sayısıdır",
-      "C": "Nispi vergide matrah, kağıdın düzenlendiği tarihtir",
-      "D": "Nispi vergide matrah, kağıdın sayfa sayısıdır",
-      "E": "Nispi vergide matrah, mükellefin yıllık geliridir"
+      "A": "Nispi vergide matrah, kâğıdı imzalayan kişi sayısıdır; kâğıtta yazılı tutar dikkate alınmaz",
+      "C": "Nispi vergide matrah, kâğıdın düzenlendiği tarihteki yeniden değerleme oranıdır",
+      "D": "Nispi vergide matrah, kâğıdın sayfa ve nüsha sayısının çarpımıyla bulunur",
+      "E": "Nispi vergide matrah, mükellefin o yılki beyan ettiği toplam geliridir"
     },
     "answer": "B",
     "solution": "488 DVK m.10-11: nispi damga vergisinde matrah, kağıtta yazılı belli para tutarıdır. Doğru cevap B.",
@@ -272,7 +272,7 @@
       "A": "Nispi vergiye tabi kağıtlarda, işlem konusu belli edilebiliyorsa buna ilişkin para tutarının kağıtta gösterilmesi gerekir",
       "B": "Kağıtlarda hiçbir hâlde para tutarı gösterilmez",
       "C": "Para tutarı yalnızca maktu vergiye tabi kağıtlarda gösterilir",
-      "D": "Para tutarını göstermek tümüyle tarafların isteğine bırakılmıştır ve vergiyi etkilemez",
+      "D": "Kâğıtta para tutarını göstermek tümüyle tarafların isteğine bırakılmıştır; gösterilse de gösterilmese de vergiyi etkilemez",
       "E": "Kağıtta para tutarı gösterilirse kağıt damga vergisinden istisna olur"
     },
     "answer": "A",
@@ -292,8 +292,8 @@
     "stem": "Bir kağıtta birden fazla kişinin imzasının bulunması hâlinde damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Bir kağıtta birden fazla imza bulunsa da damga vergisi o kağıt için bir kez alınır",
-      "A": "Kağıttaki her imza için ayrı ayrı damga vergisi alınır",
-      "C": "İmza sayısı ikiden fazlaysa damga vergisi iki katına çıkar",
+      "A": "Kâğıttaki her imza için ayrı ayrı damga vergisi alınır; imza sayısı arttıkça vergi katlanarak artar",
+      "C": "İmza sayısı ikiden fazlaysa damga vergisi iki katına çıkar; ikiye kadar olan imzalarda tek vergi alınır",
       "D": "Birden fazla imzalı kağıtlar damga vergisinden istisnadır",
       "E": "Vergi, imza sayısının karesi kadar artar"
     },
@@ -316,7 +316,7 @@
       "D": "Nispi vergiye tabi kağıtlarda birden fazla nüsha düzenlense de damga vergisi tek nüsha üzerinden alınır",
       "A": "Her nüsha için ayrı ayrı tam nispi damga vergisi alınır",
       "B": "Nüsha sayısı ne olursa olsun kağıttan hiç damga vergisi alınmaz",
-      "C": "Yalnızca en son düzenlenen nüsha için vergi alınır, öncekiler iade edilir",
+      "C": "Yalnızca en son düzenlenen nüsha için vergi alınır; önceki nüshalar için ödenen tutar mükellefe iade edilir",
       "E": "Nüsha sayısı kadar kağıt maktu vergiye dönüşür"
     },
     "answer": "D",
@@ -336,10 +336,10 @@
     "stem": "Bir kağıtta, birbiriyle ilgili birden fazla işlem (akit) bulunması hâlinde damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "İlgili işlemlerde vergi, en yüksek vergiyi gerektiren işlem üzerinden alınır",
-      "A": "Her işlem için ayrı ayrı vergi alınır ve bunlar toplanır",
-      "B": "Bu durumda kağıt damga vergisinden istisna olur",
-      "C": "Vergi, en düşük vergi gerektiren işlem üzerinden alınır",
-      "E": "Vergi, işlem sayısına bölünerek hesaplanır"
+      "A": "Her işlem için ayrı ayrı vergi hesaplanır ve bulunan tutarlar toplanarak tahsil edilir",
+      "B": "Birden fazla işlem içeren kâğıt, karmaşıklığı nedeniyle damga vergisinden istisna tutulur",
+      "C": "Vergi, kâğıttaki en düşük vergiyi gerektiren işlem üzerinden hesaplanarak alınır",
+      "E": "Vergi, kâğıttaki toplam tutarın işlem sayısına bölünmesiyle bulunan ortalamadan alınır"
     },
     "answer": "D",
     "solution": "488 DVK m.6: bir kağıtta birbiriyle ilgili birden fazla işlem varsa, en yüksek vergi alınmasını gerektiren işlem üzerinden damga vergisi alınır. Doğru cevap D.",
@@ -358,7 +358,7 @@
     "stem": "Bir kağıtta, birbirinden tamamen bağımsız birden fazla işlem bulunması hâlinde damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Bir kağıtta bağımsız birden fazla işlem varsa, her işlemden ayrı ayrı damga vergisi alınır",
-      "A": "Bağımsız işlemler olsa da vergi yalnızca bir işlem üzerinden alınır",
+      "A": "Kâğıtta birbirinden bağımsız işlemler bulunsa da vergi yalnızca tek bir işlem üzerinden alınır",
       "B": "Bağımsız işlemler bulunan kağıt damga vergisinden istisnadır",
       "C": "Vergi, işlemlerin ortalaması üzerinden alınır",
       "D": "Vergi, yalnızca en düşük işlem üzerinden alınır"
@@ -380,7 +380,7 @@
     "stem": "Bir asıl kağıda bağlı olarak düzenlenen ve onun hükmünü kuvvetlendiren kefalet, rehin gibi işlemler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Asıl işlemi kuvvetlendiren kefalet/rehin gibi işlemler ayrıca vergiye tabi tutulmaz",
-      "A": "Kefalet ve rehin her hâlde asıl işlemden ayrı ve ek vergiye tabidir",
+      "A": "Kefalet ve rehin, asıl işlemden ayrı sayılarak her hâlde ek bir damga vergisine tabi tutulur",
       "B": "Kefalet ve rehin içeren kağıtlar tümüyle vergiden istisnadır",
       "C": "Asıl işlem değil yalnızca kefalet/rehin vergilendirilir",
       "D": "Bu tür kağıtlarda vergi iki katına çıkar"
@@ -446,7 +446,7 @@
     "stem": "Aşağıdakilerden hangisi damga vergisinden istisna edilen kağıtlara örnektir?",
     "options": {
       "B": "Resmi dairelerin kendi aralarında kullandığı, kanunda istisna sayılan bazı kağıtlar",
-      "A": "Kişiler arasında düzenlenen ve belli para içeren ticari sözleşmeler",
+      "A": "Kişiler arasında düzenlenen ve belli bir para tutarı içeren ticari nitelikteki sözleşmeler",
       "C": "Kişiler arasında düzenlenen kefalet ve rehin senetleri",
       "D": "Taraflar arasında imzalanan kira sözleşmeleri",
       "E": "Bir işin yapılmasını üstlenen taahhütnameler"
@@ -469,7 +469,7 @@
     "options": {
       "E": "Damga vergisi işlemi belgeleyen kağıdı vergilendirir; bu yüzden mükerrer vergilemeyi önleyen kurallar vardır",
       "A": "Damga vergisinde mükerrer vergilemeyi önleyen hiçbir kural yoktur",
-      "B": "Aynı işlem için düzenlenen her belge sınırsız biçimde ayrı ayrı vergilendirilir",
+      "B": "Aynı işlem için düzenlenen her belge, sayısına bakılmaksızın sınırsız biçimde ayrı ayrı vergilendirilir ve vergiler toplanır",
       "C": "Damga vergisi işlemi değil yalnızca imzalayan kişiyi vergilendirir",
       "D": "Damga vergisi aynı işlemi her yıl yeniden vergilendirir"
     },
@@ -512,7 +512,7 @@
     "stem": "Damga vergisinde vergiyi doğuran olay bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Vergiyi doğuran olay, kağıdın düzenlenip imzalanarak (tekemmül ederek) hukuken var olmasıdır",
-      "A": "Vergiyi doğuran olay, kağıdın konusu olan malın teslim edilmesidir",
+      "A": "Vergiyi doğuran olay, kâğıdın konusunu oluşturan malın alıcıya fiilen teslim edilmesidir; kâğıdın imzalanması yeterli değildir",
       "B": "Vergiyi doğuran olay, kağıttaki bedelin tahsil edilmesidir",
       "C": "Vergiyi doğuran olay, kağıdın bir resmi daireye ibraz edilmesidir",
       "D": "Vergiyi doğuran olay, kağıdın düzenlendiği takvim yılının sonudur"
@@ -534,10 +534,10 @@
     "stem": "Damga vergisinin ödenme şekilleri bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Damga vergisi basılı damga, makbuz karşılığı veya istihkaktan kesinti ile ödenebilir",
-      "A": "Damga vergisi yalnızca kağıda pul yapıştırılarak ödenir",
-      "B": "Damga vergisi yalnızca yıl sonunda beyanname ile ödenir",
-      "C": "Damga vergisi yalnızca gayrimenkul satışında tapuda ödenir",
-      "E": "Damga vergisi hiçbir hâlde nakden ödenemez"
+      "A": "Damga vergisi yalnızca kâğıda pul yapıştırılarak ödenir; makbuz karşılığı veya istihkaktan kesinti yoluyla ödeme yapılamaz",
+      "B": "Damga vergisi yalnızca takvim yılı sonunda verilen tek bir beyanname ile toplu olarak ödenir; aylık beyan söz konusu değildir",
+      "C": "Damga vergisi yalnızca gayrimenkul satışlarında ve tapu müdürlüğüne yapılan ödemeyle tahsil edilir; diğer kâğıtlarda alınmaz",
+      "E": "Damga vergisi hiçbir hâlde nakden ödenemez; ödeme yalnızca pul veya damga kullanılarak gerçekleştirilebilir"
     },
     "answer": "D",
     "solution": "488 DVK m.15 vd.: damga vergisi basılı damga konulması, makbuz karşılığı veya istihkaktan kesinti şekillerinde ödenebilir. Doğru cevap D.",
@@ -558,7 +558,7 @@
       "C": "Ücret ödemelerine ilişkin kağıtlar damga vergisine tabi olup, vergi kural olarak istihkaktan kesinti yoluyla ödenir",
       "A": "Ücret ödemelerine ilişkin kağıtlardan hiçbir hâlde damga vergisi alınmaz",
       "B": "Ücret bordrolarının damga vergisi yalnızca yıl sonunda tek seferde ödenir",
-      "D": "Ücret bordrolarından damga vergisi yalnızca işçi tarafından beyanname ile ödenir",
+      "D": "Ücret bordrolarından doğan damga vergisi yalnızca işçinin kendisi tarafından yıllık beyanname verilerek ödenir; işverenin sorumluluğu bulunmaz",
       "E": "Ücret ödemeleri damga vergisi yerine yalnızca KDV'ye tabidir"
     },
     "answer": "C",
@@ -580,7 +580,7 @@
       "A": "Kira sözleşmesi (1) sayılı tabloda yer alan bir kağıt olduğundan düzenlenip imzalanmasıyla vergiye tabidir",
       "B": "Kira sözleşmeleri damga vergisinden istisnadır",
       "C": "Kira sözleşmesinden damga vergisi yalnızca kira fiilen ödenince alınır",
-      "D": "Kira sözleşmesinden damga vergisi yalnızca kiralanan taşınmaz satılırsa alınır",
+      "D": "Kira sözleşmesinden damga vergisi yalnızca kiralanan taşınmaz üçüncü bir kişiye satılırsa ve sözleşme devredilirse alınır",
       "E": "Kira sözleşmesi sözlü de yapılsa damga vergisine tabidir"
     },
     "answer": "A",
@@ -600,10 +600,10 @@
     "stem": "Bir sözleşmenin damga vergisine tabi olması için kağıdın imzalanması gerektiği bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "İmzalanmamış taslak metin kağıt sayılmaz; vergi ancak kağıt imzalanınca doğar",
-      "A": "Taslak metinler de imzalanmadan damga vergisine tabidir",
-      "B": "İmza kağıdın vergilendirilmesinde hiçbir rol oynamaz",
-      "D": "Sözlü anlaşmalar da damga vergisine tabidir",
-      "E": "Kağıt imzalanmasa da tarafların niyeti vergiyi doğurur"
+      "A": "Taslak hâlindeki metinler de, taraflarca imzalanmamış olsalar bile düzenlendikleri anda damga vergisine tabi olur",
+      "B": "İmza, kâğıdın vergilendirilmesinde hiçbir rol oynamaz; vergi kâğıdın yalnızca yazılı hâle gelmesiyle doğar",
+      "D": "Sözlü olarak yapılan anlaşmalar da taraflar arasında hüküm doğurduğundan damga vergisine tabi tutulur",
+      "E": "Kâğıt imzalanmasa bile tarafların anlaşma yönündeki niyeti tek başına vergiyi doğurmaya yeter"
     },
     "answer": "C",
     "solution": "488 DVK m.1: vergi, kağıdın imzalanarak tekemmül etmesiyle doğar; imzalanmamış taslak kağıt sayılmaz. Doğru cevap C.",
@@ -622,7 +622,7 @@
     "stem": "Bir resmi daire ile bir kişi arasında bir taahhütname düzenlenmiştir. Damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Resmi daire ile kişi arasındaki bu kağıdın damga vergisini kişi öder",
-      "A": "Bu kağıdın damga vergisini resmi daire öder",
+      "A": "Bu kâğıdın damga vergisini, işleme taraf olan resmî daire kendi bütçesinden öder; kişiden vergi aranmaz",
       "B": "Bu kağıt her hâlde damga vergisinden istisnadır",
       "C": "Vergiyi resmi daire ile kişi yarı yarıya öder",
       "D": "Bu kağıttan damga vergisi hiç alınmaz"
@@ -644,7 +644,7 @@
     "stem": "Damga vergisinin bir 'objektif vergi' olması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Damga vergisi, mükellefin kişisel durumuna bakılmaksızın kağıdın niteliğine ve içeriğine göre alınan objektif bir vergidir",
-      "A": "Damga vergisi, mükellefin ailevi ve kişisel durumuna göre belirlenen şahsi bir vergidir",
+      "A": "Damga vergisi, mükellefin ailevi ve kişisel durumu göz önüne alınarak belirlenen şahsi nitelikte bir vergidir",
       "B": "Damga vergisi, mükellefin yıllık gelirine göre artan oranlı olarak alınır",
       "C": "Damga vergisi, mükellefin servetine göre belirlenir",
       "E": "Damga vergisinde mükellefin medeni hâli vergiyi belirler"
@@ -668,7 +668,7 @@
       "E": "Belli para gösterilmişse nispi vergi o tutar üzerinden; gösterilmemişse kağıt maktu vergiye tabi olabilir",
       "A": "Kağıtta para gösterilmesi damga vergisini tümüyle ortadan kaldırır",
       "B": "Belli para gösterilse de vergi her hâlde maktu alınır",
-      "C": "Para tutarı yalnızca gelir vergisini etkiler, damga vergisiyle ilgisi yoktur",
+      "C": "Kâğıtta yazılı para tutarı yalnızca gelir vergisi matrahını etkiler; damga vergisinin hesabıyla hiçbir ilgisi bulunmaz",
       "D": "Kağıtta para gösterilirse vergi iki katına çıkar"
     },
     "answer": "E",
@@ -689,7 +689,7 @@
     "options": {
       "D": "Belli para içeren bu sözleşme (1) sayılı tabloda yer aldığından, bedel üzerinden nispi damga vergisine tabidir",
       "A": "Tacirler arasındaki sözleşmeler her hâlde damga vergisinden istisnadır",
-      "B": "Bu sözleşmeden yalnızca maktu ve çok düşük bir vergi alınır; bedel önemli değildir",
+      "B": "Bu sözleşmeden yalnızca maktu ve çok düşük tutarlı bir vergi alınır; sözleşmede yazılı bedelin büyüklüğü sonucu değiştirmez",
       "C": "Bu sözleşmeden damga vergisi yalnızca mal teslim edilince alınır",
       "E": "Tacirler arası sözleşmelerden KDV alındığı için damga vergisi alınmaz"
     },
@@ -710,10 +710,10 @@
     "stem": "Aynı sözleşmenin biri satıcıda biri alıcıda kalmak üzere iki nüsha düzenlenmesi hâlinde (yürürlükteki kurala göre) damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Nispi vergiye tabi sözleşmede iki nüsha düzenlense de damga vergisi tek nüshadan alınır",
-      "A": "Her iki nüsha için ayrı ayrı tam damga vergisi alınır",
-      "B": "İki nüsha düzenlendiği için kağıt vergiden istisna olur",
-      "C": "Yalnızca alıcıdaki nüsha vergiye tabidir; satıcıdaki muaftır",
-      "E": "İki nüsha nedeniyle vergi yarı yarıya azaltılır"
+      "A": "Her iki nüsha için de ayrı ayrı tam damga vergisi hesaplanır ve iki tutar toplanarak tahsil edilir",
+      "B": "İki nüsha düzenlendiği için kâğıt mükerrer vergilemeye girmemek adına tümüyle vergiden istisna tutulur",
+      "C": "Yalnızca alıcıda kalan nüsha vergiye tabidir; satıcıdaki nüsha için hiçbir vergi doğmaz ve aranmaz",
+      "E": "İki nüsha düzenlenmesi nedeniyle her nüshaya düşen vergi yarı yarıya azaltılarak hesaplanır"
     },
     "answer": "D",
     "solution": "488 DVK (6728 değişikliği): nispi vergiye tabi kağıtta birden fazla nüsha düzenlense de vergi tek nüshadan alınır. Doğru cevap D.",
@@ -732,7 +732,7 @@
     "stem": "Bir sözleşmede hem bir mal satışı hem de bu satışla ilgili bir kefalet taahhüdü aynı kağıtta yer almaktadır. Damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "İlgili işlemlerde vergi, en yüksek vergili işlem üzerinden bir kez alınır",
-      "A": "Satış ve kefalet için ayrı ayrı tam vergi alınıp toplanır",
+      "A": "Satış ve kefalet ayrı işlemler sayılarak her biri için tam vergi hesaplanır ve bulunan tutarlar toplanır",
       "B": "Bu kağıt iki işlem içerdiği için vergiden istisna olur",
       "C": "Vergi, iki işlemin ortalaması üzerinden alınır",
       "D": "Yalnızca kefalet vergilendirilir; satış vergi dışıdır"
@@ -754,10 +754,10 @@
     "stem": "Damga vergisi ile katma değer vergisi karşılaştırıldığında aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Damga vergisi kağıtlar üzerinden; KDV ise mal ve hizmet teslimleri üzerinden alınır",
-      "B": "İkisi de aynı mal teslimleri üzerinden alınan özdeş vergilerdir",
-      "C": "Damga vergisi mal teslimlerinden, KDV ise kağıtlardan alınır",
-      "D": "İkisi de kişilerin geliri üzerinden alınan dolaysız vergilerdir",
-      "E": "Damga vergisi bir servet, KDV ise bir gelir vergisidir"
+      "B": "İkisi de mal ve hizmet teslimleri üzerinden alınan, matrahı ve konusu bakımından özdeş vergilerdir",
+      "C": "Damga vergisi mal teslimlerinden, katma değer vergisi ise düzenlenen kâğıtlardan alınır",
+      "D": "İkisi de kişilerin geliri üzerinden alınan ve yansıtılamayan dolaysız nitelikte vergilerdir",
+      "E": "Damga vergisi bir servet vergisi, katma değer vergisi ise bir gelir vergisi niteliğindedir"
     },
     "answer": "A",
     "solution": "Damga vergisi kağıtlar (belgeler) üzerinden; KDV mal/hizmet teslimleri üzerinden alınır. Konuları farklıdır. Doğru cevap A.",
@@ -779,7 +779,7 @@
       "A": "Belli para içermeyen kağıtlardan hiçbir hâlde damga vergisi alınmaz",
       "B": "Belli para içermeyen kağıtlardan da her hâlde nispi vergi alınır",
       "C": "Belli para içermeyen kağıtlar otomatik olarak istisna kapsamına girer",
-      "D": "Belli para içermeyen kağıtlar için vergi mükellefin gelirine göre alınır"
+      "D": "Belli para içermeyen kâğıtlar için vergi, mükellefin o yılki beyan ettiği geliriyle orantılı olarak hesaplanır"
     },
     "answer": "E",
     "solution": "488 DVK m.10: belli parayı içermeyen kağıtlar, kanunda öngörüldüğü ölçüde maktu damga vergisine tabi olur. Doğru cevap E.",
@@ -821,7 +821,7 @@
     "options": {
       "E": "Noterler, önlerinde düzenlenen kağıtların damga vergisinin ödenmesinden sorumludur",
       "A": "Noterlerin damga vergisiyle hiçbir ilgisi ve sorumluluğu yoktur",
-      "B": "Noterde düzenlenen kağıtlar her hâlde damga vergisinden istisnadır",
+      "B": "Noterde düzenlenen kâğıtlar resmî nitelik kazandığından her hâlde damga vergisinden istisna tutulur",
       "C": "Noterde düzenlenen kağıtların vergisini yalnızca devlet karşılar",
       "D": "Noterde düzenlenen kağıtların vergisi hiçbir zaman alınmaz"
     },
@@ -843,7 +843,7 @@
     "options": {
       "D": "Nispi vergide aynı işlem için birden fazla nüsha düzenlense de vergi tek nüshadan alınır",
       "A": "Aynı işlem için kaç belge düzenlenirse o kadar kez tam vergi alınır",
-      "B": "Aynı işlem için düzenlenen belge sayısı vergiyi hiç etkilemez ve vergi hiç alınmaz",
+      "B": "Aynı işlem için düzenlenen belge sayısı vergiyi hiç etkilemez; belge kaç olursa olsun vergi hiç alınmaz",
       "C": "Aynı işlem için yalnızca sözlü beyan yeterlidir; belge gerekmez",
       "E": "Aynı işlem her belge için farklı oranlarda vergilendirilir"
     },
@@ -864,7 +864,7 @@
     "stem": "Bir kağıdın hem düzenlendiği hem de imzalandığı yerin damga vergisi yönünden önemi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Yabancı ülkede düzenlenen kağıtlar, Türkiye'de ibraz edilir veya hükmünden yararlanılırsa damga vergisine tabi olur",
-      "A": "Yabancı ülkede düzenlenen kağıtlar Türkiye'de hiçbir hâlde vergiye tabi olmaz",
+      "A": "Yabancı ülkede düzenlenen kâğıtlar, Türkiye'de resmî daireye ibraz edilse veya hüküm ifade etse bile vergiye tabi olmaz",
       "C": "Türkiye'de düzenlenen kağıtlar damga vergisinden istisnadır",
       "D": "Kağıdın düzenlendiği yerin damga vergisiyle hiçbir ilgisi yoktur",
       "E": "Yalnızca yurt dışında düzenlenen kağıtlar Türk damga vergisine tabidir"
@@ -887,7 +887,7 @@
     "options": {
       "C": "Ayrı bir kağıtta bağımsız olarak düzenlenen kefalet işlemi, kendi başına damga vergisine tabi bir kağıt oluşturur",
       "A": "Ayrı kağıtta düzenlense de kefaletten hiçbir hâlde vergi alınmaz",
-      "B": "Kefalet ayrı kağıtta olsa bile asıl sözleşmenin vergisi hiç değişmez ve kefalet vergi dışıdır",
+      "B": "Kefalet ayrı bir kâğıtta düzenlense bile asıl sözleşmenin vergisi hiç değişmez; kefalet kâğıdı vergi dışında kalır",
       "D": "Kefalet kağıdı yalnızca noterde düzenlenirse vergiye tabidir",
       "E": "Kefalet kağıdından vergi yalnızca borç ödenmezse alınır"
     },
@@ -910,7 +910,7 @@
       "D": "Kağıdı imzalayanlar damga vergisinden birlikte sorumludur; vergi kağıt başına bir kez doğar",
       "A": "Kağıdı imzalayan her taraf için ayrı ayrı ve bağımsız tam vergi doğar",
       "B": "Kağıdı imzalayanların damga vergisiyle hiçbir ilgisi yoktur",
-      "C": "Damga vergisi yalnızca kağıdı ilk imzalayan kişiden alınır, diğerleri hiç ilgilenmez",
+      "C": "Damga vergisi yalnızca kâğıdı ilk imzalayan kişiden alınır; sonradan imza atanların bir sorumluluğu doğmaz",
       "E": "Kağıdı imzalayanlar vergiyi ancak kağıt bir mahkemeye sunulursa öder"
     },
     "answer": "D",
@@ -932,7 +932,7 @@
       "A": "Bir işlem, teslim yönüyle KDV'ye, belgeleyen kağıt yönüyle damga vergisine ayrı ayrı tabi olabilir",
       "B": "Bir işlem KDV'ye tabiyse damga vergisine tabi olamaz; ikisi birbirini dışlar",
       "C": "Bir işlemden yalnızca damga vergisi alınır; KDV hiçbir hâlde alınmaz",
-      "D": "KDV ve damga vergisi her zaman aynı matrah üzerinden tek bir vergi olarak alınır",
+      "D": "Katma değer vergisi ve damga vergisi her zaman aynı matrah üzerinden hesaplanıp tek bir vergi olarak birlikte tahsil edilir",
       "E": "Bir işlem damga vergisine tabiyse KDV'den istisna olur"
     },
     "answer": "A",
@@ -974,10 +974,10 @@
     "stem": "Damga vergisinin geliri ve türü bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Damga vergisi, geliri genel bütçeye ait olan bir merkezi yönetim (Hazine) vergisidir",
-      "A": "Damga vergisi, geliri belediyeye ait bir mahalli idare vergisidir",
-      "C": "Damga vergisi, geliri köy tüzel kişiliğine ait bir vergidir",
-      "D": "Damga vergisinin geliri yalnızca il özel idaresine aittir",
-      "E": "Damga vergisi hiçbir kamu idaresine gelir sağlamaz"
+      "A": "Damga vergisi, geliri belediyelere ait olan ve belediyelerce tarh edilen bir mahalli idare vergisidir",
+      "C": "Damga vergisi, geliri köy tüzel kişiliğine bırakılan ve muhtarlıkça toplanan bir vergidir",
+      "D": "Damga vergisinin geliri yalnızca il özel idarelerine aittir; genel bütçeye bir aktarım yapılmaz",
+      "E": "Damga vergisi hiçbir kamu idaresine gelir sağlamaz; yalnızca kâğıtların hukuki geçerliliğini sağlar"
     },
     "answer": "B",
     "solution": "Damga vergisi, geliri genel bütçeye ait bir merkezi yönetim vergisidir (emlak/MTV gibi mahalli değildir). Doğru cevap B.",
@@ -998,7 +998,7 @@
       "E": "Belli parayı artıran ek kağıtlar (zeyilname), artan tutar üzerinden damga vergisine tabi olabilir",
       "A": "Zeyilnameler hiçbir hâlde damga vergisine tabi değildir",
       "B": "Zeyilname düzenlenirse asıl sözleşmenin vergisi iade edilir",
-      "C": "Zeyilname yalnızca sözleşmeyi tümüyle iptal ederse vergilendirilir",
+      "C": "Zeyilname yalnızca asıl sözleşmeyi tümüyle iptal ettiği hâllerde vergilendirilir; tutar artıran ekler vergi dışıdır",
       "D": "Zeyilname yalnızca noterde düzenlenirse vergiye tabidir"
     },
     "answer": "E",
@@ -1018,7 +1018,7 @@
     "stem": "Damga vergisinde verginin, kağıdın düzenlendiği anda doğması ilkesinin sonucu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Kağıt imzalanınca vergi doğar; işlemin sonradan yerine getirilmemesi doğmuş vergiyi geri getirmez",
-      "A": "Kağıttaki işlem yerine getirilmezse doğmuş damga vergisi her hâlde iade edilir",
+      "A": "Kâğıttaki işlem yerine getirilmezse doğmuş olan damga vergisi her hâlde mükellefe geri verilir ve iade edilir",
       "C": "Damga vergisi ancak kağıttaki işlem tamamen ifa edilince doğar",
       "D": "Kağıt imzalansa da işlem yapılmazsa vergi hiç doğmaz",
       "E": "Damga vergisi her yıl kağıt için yeniden doğar"
@@ -1040,10 +1040,10 @@
     "stem": "Bir memura yapılan maaş ödemesine ilişkin bordronun damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Ücret/maaş ödemesine ilişkin bordro damga vergisine tabidir; vergi istihkaktan kesinti yoluyla ödenir",
-      "B": "Maaş bordrosundan damga vergisi alınmaz; ücretler tümüyle vergi dışıdır",
-      "C": "Maaş bordrosunun damga vergisini memur yıl sonunda beyanname ile öder",
-      "D": "Maaş bordrosu yalnızca özel sektörde damga vergisine tabidir",
-      "E": "Maaş bordrosundan yalnızca KDV alınır"
+      "B": "Maaş bordrosundan damga vergisi alınmaz; ücret ödemeleri kâğıt sayılmadığından tümüyle vergi dışında kalır",
+      "C": "Maaş bordrosunun damga vergisini, ücreti alan memur yıl sonunda beyanname vererek kendisi öder",
+      "D": "Maaş bordrosu yalnızca özel sektörde damga vergisine tabidir; kamu kurumlarının bordroları istisnadır",
+      "E": "Maaş bordrosundan damga vergisi değil, ödenen ücret üzerinden yalnızca katma değer vergisi alınır"
     },
     "answer": "A",
     "solution": "488 DVK: maaş/ücret ödeme bordroları damga vergisine tabidir; vergi istihkaktan (ödemeden) kesinti yoluyla alınır. Doğru cevap A.",
@@ -1084,7 +1084,7 @@
     "stem": "Kağıtların damga vergisi bakımından 'birbirine bağlı asıl-fer'i işlem' değerlendirmesinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Asıl işlemi kuvvetlendirmek için aynı kağıda konan kefalet, rehin, teminat gibi işlemler ayrıca vergilendirilmez",
-      "A": "Asıl işlemin yanındaki kefalet ve rehinden her zaman ayrıca tam vergi alınır",
+      "A": "Asıl işlemin yanında yer alan kefalet ve rehin gibi fer'i işlemlerden her zaman ayrıca ve tam olarak vergi alınır",
       "B": "Fer'i işlem içeren kağıt her hâlde vergiden istisnadır",
       "C": "Yalnızca fer'i işlem vergilendirilir, asıl işlem vergi dışıdır",
       "D": "Fer'i işlemler vergiyi üç katına çıkarır"
@@ -1106,10 +1106,10 @@
     "stem": "Bir sözleşmenin taraflarından yalnızca birinin resmi daire olması hâlinde, kağıdın damga vergisinin kimin tarafından ödeneceği bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Resmi daire ile kişi arasındaki kağıtlarda damga vergisini kişi öder",
-      "A": "Resmi daire taraf olduğunda vergiyi tümüyle resmi daire öder",
-      "B": "Resmi daire taraf olduğunda kağıt vergiden istisnadır",
-      "D": "Vergiyi resmi daire ile kişi eşit olarak böler",
-      "E": "Resmi daire taraf olduğunda vergi iki katına çıkar"
+      "A": "Resmî daire taraf olduğunda kâğıdın vergisini tümüyle resmî daire kendi bütçesinden karşılar",
+      "B": "Resmî daire taraf olduğunda düzenlenen kâğıt niteliği gereği damga vergisinden istisna sayılır",
+      "D": "Vergiyi resmî daire ile karşı taraftaki kişi eşit paylarla bölüşerek öder ve ayrı ayrı öderler",
+      "E": "Resmî daire taraf olduğunda kâğıdın resmî niteliği nedeniyle vergi iki katına çıkarılarak alınır"
     },
     "answer": "C",
     "solution": "488 DVK m.3: resmi dairelerle kişiler arasındaki kağıtların damga vergisini kişiler öder. Doğru cevap C.",
@@ -1129,7 +1129,7 @@
     "options": {
       "C": "İşlem bir belgeye bağlanmadıkça damga vergisi doğmaz; çünkü vergi kağıt üzerinden alınır",
       "A": "Sözlü yapılan işlemlerden de her hâlde damga vergisi alınır",
-      "B": "Sözlü işlem, tarafların niyeti nedeniyle yazılı kağıt gibi vergilendirilir",
+      "B": "Sözlü olarak yapılan işlem, tarafların anlaşma niyeti nedeniyle yazılı bir kâğıt gibi kabul edilerek vergilendirilir",
       "D": "Sözlü işlemler damga vergisi yerine iki katı KDV'ye tabidir",
       "E": "Sözlü işlemler için damga vergisi mükellefin beyanıyla doğar"
     },
@@ -1150,7 +1150,7 @@
     "stem": "Nispi damga vergisinde, kağıtta yazılı yüksek tutarlar bakımından bir üst sınır bulunması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Her kağıttan alınacak nispi damga vergisi için kanunda bir azami tutar öngörülmüştür",
-      "B": "Nispi damga vergisinde hiçbir üst sınır yoktur; tutar sınırsız artabilir",
+      "B": "Nispi damga vergisinde herhangi bir üst sınır bulunmaz; kâğıttaki tutar büyüdükçe vergi sınırsız biçimde artar",
       "C": "Nispi damga vergisi her hâlde maktu ve sabit alınır",
       "D": "Üst sınır yalnızca resmi dairelerin taraf olduğu kağıtlarda uygulanır",
       "E": "Üst sınır, kağıttaki tutarın iki katıdır"
@@ -1175,7 +1175,7 @@
       "A": "İhale kararları hiçbir hâlde damga vergisine tabi değildir",
       "B": "İhale kararlarından yalnızca ihaleyi kaybeden taraf vergi öder",
       "D": "İhale kararları yalnızca özel ihalelerde vergiye tabidir",
-      "E": "İhale kararlarından damga vergisi yalnızca sözleşme imzalanınca alınır"
+      "E": "İhale kararlarından damga vergisi yalnızca ihale sonrası sözleşme imzalanırsa alınır; kararın kendisi vergi doğurmaz"
     },
     "answer": "C",
     "solution": "488 DVK (1) sayılı tablo: ihale kararları damga vergisine tabi kağıtlardandır. Doğru cevap C.",
@@ -1194,7 +1194,7 @@
     "stem": "Vergisi hiç ödenmemiş veya eksik ödenmiş bir kağıdın tespiti hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Vergisi ödenmemiş/eksik kağıtta, alınmayan vergiyle birlikte genel hükümlere göre vergi ziyaı cezası doğabilir",
-      "A": "Vergisi ödenmemiş kağıt için hiçbir ceza uygulanmaz; yalnızca kağıt geçersiz sayılır",
+      "A": "Vergisi ödenmemiş kâğıt için hiçbir ceza uygulanmaz; kâğıt geçersiz sayılır ve taraflardan vergi aranmaz",
       "B": "Eksik ödenen vergi hiçbir hâlde tamamlanamaz; kalan kısım silinir",
       "C": "Ödenmemiş vergi için yalnızca kağıdı ibraz eden kişi ceza öder, vergi aranmaz",
       "E": "Ödenmemiş vergi kağıdın on yıl sonra geçerli olmasıyla düşer"
@@ -1217,7 +1217,7 @@
     "options": {
       "C": "Öngörülen mükellefler, düzenledikleri kağıtların vergisini damga vergisi beyannamesiyle öder",
       "A": "Damga vergisi hiçbir hâlde beyanname ile beyan edilmez",
-      "B": "Damga vergisi yalnızca yıllık gelir vergisi beyannamesinde beyan edilir",
+      "B": "Damga vergisi ayrı bir beyanname ile değil, yalnızca yıllık gelir vergisi beyannamesinin bir satırında beyan edilir",
       "D": "Damga vergisi mükellefiyeti diye bir kavram yoktur",
       "E": "Damga vergisi yalnızca gayrimenkul beyannamesiyle beyan edilir"
     },
@@ -1238,7 +1238,7 @@
     "stem": "Bir sözleşmenin fotokopisi veya sureti bakımından damga vergisi yönünden aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Aslı gibi hüküm ifade etmeyen basit örnek/fotokopiler kural olarak ayrı vergiye konu olmaz",
-      "B": "Her fotokopi için asıl kağıtla aynı tam nispi vergi ayrıca alınır",
+      "B": "Alınan her fotokopi ve suret için, asıl kâğıtla aynı tutarda tam nispi damga vergisi ayrıca hesaplanır",
       "C": "Suret alınması asıl kağıdın vergisini iki katına çıkarır",
       "D": "Suret alınırsa asıl kağıttan hiç vergi alınmaz",
       "E": "Fotokopiler damga vergisi yerine KDV'ye tabidir"
@@ -1262,7 +1262,7 @@
       "B": "Damga vergisi merkezi yönetim vergisidir; Hazine ve Maliye'ye bağlı vergi dairelerince idare edilir",
       "A": "Damga vergisi belediyeler tarafından idare edilir",
       "C": "Damga vergisi köy tüzel kişiliklerince idare edilir",
-      "D": "Damga vergisi hiçbir kurum tarafından idare edilmez, kendiliğinden işler",
+      "D": "Damga vergisi hiçbir kurum tarafından idare edilmez; mükellefler vergiyi kendiliğinden hesaplayıp öder",
       "E": "Damga vergisi yalnızca noterlerce idare edilir"
     },
     "answer": "B",
@@ -1304,7 +1304,7 @@
     "stem": "Bir kağıttaki işlemin, tarafların iradesiyle sonradan değiştirilmesi (tadili) hâlinde damga vergisi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Belli parayı artıran tadiller artan tutardan vergilenir; azaltıcı değişiklikte yeni vergi doğmaz",
-      "B": "Her tadil, kağıdın tamamı için baştan tam vergi alınmasını gerektirir",
+      "B": "Kâğıtta yapılan her tadil, kâğıdın tamamı için baştan yeniden tam vergi hesaplanmasını gerektirir",
       "C": "Tadiller hiçbir hâlde damga vergisini etkilemez",
       "D": "Parayı azaltan tadiller de artan tutar gibi vergilendirilir",
       "E": "Tadil yapılırsa asıl kağıdın vergisi her hâlde iade edilir"
