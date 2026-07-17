@@ -158,17 +158,30 @@ def oncul_dagilimi(questions: list[dict]) -> list[tuple[str, str]]:
                                 "doğru değil — öğrenci iki şıkkı okumadan eler (taban %20 → %33); "
                                 "tek öncülü doğru soru yazılmalı"))
 
+    # ⚠ ÖLÇÜT YÜZDE DEĞİL, GERÇEK İSTİSMAR (fazladan bedava soru sayısı).
+    # Salt yüzde küçük örnekte yanıltıyor: tfrs_9'da yalnız 8 öncüllü soru var ve
+    # şablon "tam 2 öncül doğru + {Yalnız I, Yalnız III, I ve II, II ve III,
+    # hepsi}" olduğundan ulaşılabilir 2'li bileşim sadece ikidir — permütasyon en
+    # iyi %50 verir, yani kusursuz dengelenmiş bir dosya bile "%50 → FATAL"
+    # alıyordu. Ama 4/60 soru, öğrencinin bütün testte kazandığı ~2 fazladan puan
+    # demek; dosyanın kör-öğrenci skoru (%23) bundan etkilenmiyor.
+    #
+    # Doğru ölçü: fazla = baskın bileşimin adedi − rastgele beklenti (öncül/5).
+    # Bu, "okumadan işaretleyen kaç FAZLADAN soru kazanır"ı verir; dosya boyutuna
+    # ve öncül sayısına göre kendiliğinden ölçeklenir. Genel bias hâlâ yakalanır
+    # (30 öncüllü soruda 20 baskınsa fazla=14 → FATAL), küçük örnek bloke olmaz.
     dagilim = collections.Counter(
         re.sub(r"\s+", " ", q["options"][q["answer"]]).strip().casefold() for q in oncullu
     )
     metin, adet = dagilim.most_common(1)[0]
-    oran = adet * 100 // len(oncullu)
-    if oran >= 40:
+    fazla = adet - len(oncullu) / 5  # rastgele beklentinin üstündeki fazlalık
+    if fazla >= 3:
+        oran = adet * 100 // len(oncullu)
         kalanlar = ", ".join(f"“{t}” %{n * 100 // len(oncullu)}"
                              for t, n in dagilim.most_common()[1:3])
-        issues.append(("FATAL" if oran >= 50 else "UYARI",
+        issues.append(("FATAL" if fazla >= 5 else "UYARI",
                        f"öncüllü soruların %{oran}'inde cevap “{metin}” "
-                       f"({adet}/{len(oncullu)}) — okumadan işaretlenir"
+                       f"({adet}/{len(oncullu)}, ~{fazla:.0f} fazladan) — okumadan işaretlenir"
                        f"{'; sonraki: ' + kalanlar if kalanlar else ''}"))
     return issues
 

@@ -205,8 +205,8 @@ def temizle(path: str, atma_yerine=None, atma_ozel=None, uzat=None,
         for harf, v in list(q["options"].items()):
             if harf == q["answer"]:
                 continue
-            if atma_yerine and ATMA.search(v):
-                q["options"][harf] = _atma_sec(atma_yerine, q, sira, atma_ozel)
+            if (atma_yerine or atma_ozel) and ATMA.search(v):
+                q["options"][harf] = _atma_sec(atma_yerine or [], q, sira, atma_ozel)
                 sira += 1
                 atma_sayi += 1
                 continue

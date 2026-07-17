@@ -168,9 +168,144 @@ TMS12_UZAT = {
     "std-tms12-gen-0054": {"A": "Yalnızca geçmiş dönemlerde fiilen elde edilmiş kârlar dikkate alınır; gelecekteki kâr beklentisi ve mevcut vergiye tabi farklar değerlendirmeye girmez"},
 }
 
+# ── TMS 21 · Kur Değişimi ─────────────────────────────────────────────────────
+# 34 soruda atma-şıkkı; her biri ayrı alt konu olduğu için tek tek yanılgı
+# yazıldı (anahtar-kelime havuzu yerine soru-başına, çakışma riski sıfır).
+# Her metin TMS 21'in gerçek bir karışıklığı: parasal↔parasal olmayan · işlem
+# tarihi↔kapanış kuru · kâr-zarar↔diğer kapsamlı gelir · çevrim yönü.
+TMS21_OZEL = {
+    "std-tms21-gen-0001": "İşletmenin kayıtlı bulunduğu ülkenin resmî para birimidir",
+    "std-tms21-gen-0002": "Her hâlde işletmenin geçerli para birimiyle aynı olmak zorundadır",
+    "std-tms21-gen-0003": "İşletmenin bulunduğu ülke dışındaki tüm ülkelerin para birimleridir",
+    "std-tms21-gen-0006": "En yüksek işlem hacmine sahip para birimi kendiliğinden geçerli sayılır",
+    "std-tms21-gen-0007": "Değişiklik geriye dönük uygulanır ve önceki dönemler yeniden düzenlenir",
+    "std-tms21-gen-0008": "Gelecekte mal veya hizmet olarak alınacak tüm kalemleri kapsar",
+    "std-tms21-gen-0013": "Her hâlde ana ortaklığın geçerli para birimi esas alınır",
+    "std-tms21-gen-0016": "Geçmiş dönem karşılaştırmalı tutarları da yeni para birimine çevrilir",
+    "std-tms21-gen-0017": "İşlem tarihindeki değil, raporlama dönemi sonundaki kapanış kuru uygulanır",
+    "std-tms21-gen-0018": "Her hâlde raporlama dönemi sonundaki kapanış kuru kullanılır",
+    "std-tms21-gen-0019": "İşlem tarihindeki tarihî kur kullanılarak çevrilir ve değişmez",
+    "std-tms21-gen-0020": "Raporlama dönemi sonundaki kapanış kuru kullanılarak çevrilir",
+    "std-tms21-gen-0021": "İşlem tarihindeki tarihî kur kullanılarak çevrilir",
+    "std-tms21-gen-0023": "İlgili kur farkı her hâlde kâr veya zarara yansıtılır",
+    "std-tms21-gen-0027": "Makine parasal kalem sayılır; kapanış kuruyla çevrilir ve kur farkı doğar",
+    "std-tms21-gen-0029": "Doğrudan dönemin kâr veya zararında muhasebeleştirilir",
+    "std-tms21-gen-0030": "Yalnızca yabancı para cinsinden nakit tahsilat ve ödemeleri kapsar",
+    "std-tms21-gen-0031": "İşlem tarihindeki tarihî kurlarla çevrilir",
+    "std-tms21-gen-0032": "Kapanış kuru kullanılarak çevrilir",
+    "std-tms21-gen-0033": "Doğrudan dönemin kâr veya zararında muhasebeleştirilir",
+    "std-tms21-gen-0034": "Özkaynakta biriken kur farkları özkaynakta kalır; kâr veya zarara aktarılmaz",
+    "std-tms21-gen-0035": "Şerefiye raporlayan işletmenin para biriminde sabitlenir; çevrilmez",
+    "std-tms21-gen-0037": "İşletme geçerli para birimini raporlama para birimine eşitlemek zorundadır",
+    "std-tms21-gen-0038": "Düzeltme yapılmadan doğrudan kapanış kuruyla çevrilir",
+    "std-tms21-gen-0041": "Gerçekleşen kur farkı doğrudan özkaynakta muhasebeleştirilir",
+    "std-tms21-gen-0043": "TFRS 9 kapsamındaki türev işlemler de dâhil tüm yabancı para kalemlerini kapsar",
+    "std-tms21-gen-0048": "Alacak ve borç netleştirilir; net tutar üzerinden tek kur farkı hesaplanır",
+    "std-tms21-gen-0049": "Parasal kalemdir; kapanış kuruyla çevrilir ve kur farkı doğar",
+    "std-tms21-gen-0050": "Parasal kalemdir; her dönem sonu kapanış kuruyla yeniden çevrilir",
+    "std-tms21-gen-0053": "Yine de tüm kalemler kapanış kuruyla yeniden çevrilir",
+    "std-tms21-gen-0054": "Ödemenin fiilen yapıldığı tarihteki kur esas alınır",
+    "std-tms21-gen-0056": "İşlem tarihindeki tarihî kurla çevrilir; kur farkı doğmaz",
+    "std-tms21-gen-0058": "TMS 21 kur farklarının ilgili varlığın maliyetine eklenmesini zorunlu kılar",
+    "std-tms21-gen-0060": "Bağlı ortaklığın tabloları çevrilmez; ana ortaklığın para biriminde düzenlenir",
+}
+
+# 18 soruda doğru tek başına en uzun; ~11'i uzatılıp 7'si en uzun bırakılıyor
+# (hedef ~%20). Uzatmalar DOLGU SÖZCÜĞÜ İÇERMEZ — yoksa "dolguyu ele, en uzunu
+# seç" stratejisi onları atar ve boy dengesi kâğıt üstünde kalır.
+TMS21_UZAT = {
+    "std-tms21-gen-0005": {"A": "Geçerli para birimi belirlenirken yalnızca finansman faaliyetlerinden sağlanan fonların hangi para biriminde olduğuna bakılır; satış fiyatları ve maliyet göstergeleri hiç dikkate alınmaz"},
+    "std-tms21-gen-0007": {"C": "Geçerli para birimi bir kez belirlendikten sonra hiçbir hâlde değiştirilemez; temel ekonomik çevre değişse dahi ilk belirleme kalıcı olarak geçerli kalır"},
+    "std-tms21-gen-0008": {"D": "İşletmenin gelecekte mal veya hizmet olarak teslim edeceği ya da teslim alacağı, tutarı sözleşmeyle önceden belirlenmiş bütün varlık ve borçları kapsayan geniş bir tanımdır"},
+    "std-tms21-gen-0016": {"B": "Değişiklik hâlinde geçmişe dönük tam bir yeniden düzenleme yapılır; önceki tüm dönemlerin tutarları yeni geçerli para birimi cinsinden baştan hesaplanır"},
+    "std-tms21-gen-0032": {"B": "Gelir ve giderler her hâlde dönem başındaki açılış kuru kullanılarak çevrilir; işlem tarihleri ve dönemin ortalama kuru bu çevrimde hiç dikkate alınmaz"},
+    "std-tms21-gen-0037": {"D": "İşletme bu durumda geçerli para birimini terk eder ve tüm kayıtlarını raporlama para birimi üzerinden yeniden oluşturarak karşılaştırmalı dönemleri de bu birime göre düzeltir"},
+    "std-tms21-gen-0039": {"E": "Yabancı para kredinin vadesinde ödenmesi sırasında ortaya çıkan kur farkı, kredinin finanse ettiği varlığın maliyetine eklenir ve dönemin giderlerine hiç yansıtılmaz"},
+    "std-tms21-gen-0048": {"C": "Alacak ve borç eşit tutarda olduğundan birbirini tümüyle götürür; hiçbir kur farkı doğmaz ve finansal tablolara herhangi bir etki yansımaz"},
+    "std-tms21-gen-0056": {"B": "Yeniden değerleme modeliyle ölçülen arsa her hâlde ilk işlem tarihindeki tarihî kur ile çevrilir; değerlemeden doğan kur farkı hiçbir zaman muhasebeleştirilmez"},
+    "std-tms21-gen-0058": {"B": "Ortaya çıkan tüm kur farkları, tutarı ne olursa olsun ilgili varlığın maliyetine eklenir ve hiçbir hâlde doğrudan dönemin kâr veya zararına yansıtılmaz"},
+    "std-tms21-gen-0060": {"C": "Bağlı ortaklığın finansal tabloları hiçbir çevrime tabi tutulmadan, doğrudan ana ortaklığın geçerli para birimi cinsinden yeni baştan düzenlenerek konsolide edilir"},
+}
+
+# ── TFRS 9 · Finansal Araçlar ─────────────────────────────────────────────────
+# 41 soruda atma-şıkkı; alt konular tümüyle ayrı (sınıflandırma · ölçüm · etkin
+# faiz · beklenen kredi zararı · bilanço dışı bırakma · korunma) → soru-başına
+# gerçek TFRS 9 yanılgısı. Sık karışıklıklar: gerçekleşmiş↔beklenen kredi zararı
+# modeli · brüt↔net defter değeri · kâr-zarar↔diğer kapsamlı gelir · özkaynak
+# GUDDKG'de kâr-zarara yeniden sınıflandırma YOK.
+TFRS9_OZEL = {
+    "std-tfrs9-gen-0001": "Yalnızca borsada işlem gören menkul kıymetleri kapsayan dar bir kavramdır",
+    "std-tfrs9-gen-0003": "İşletmenin gelecekte mal veya hizmet sunma yükümlülüklerini de kapsar",
+    "std-tfrs9-gen-0004": "Finansal varlık ancak nakit ödemesi fiilen yapıldığında muhasebeleştirilir",
+    "std-tfrs9-gen-0005": "Her sınıfta işlem maliyetleri gider yazılır; hiçbir hâlde maliyete eklenmez",
+    "std-tfrs9-gen-0006": "İşlem maliyetleri finansal varlığın maliyetine eklenir ve sonradan itfa edilir",
+    "std-tfrs9-gen-0007": "Yalnızca yönetimin varlığı elde tutma süresi ile kalan vade dikkate alınır",
+    "std-tfrs9-gen-0008": "İtfa edilmiş maliyet ve gerçeğe uygun değer olmak üzere yalnızca iki ölçüm sınıfı vardır",
+    "std-tfrs9-gen-0009": "İş modeline bakılmaksızın tüm borçlanma araçları itfa edilmiş maliyetle ölçülür",
+    "std-tfrs9-gen-0010": "Yalnızca ticari amaçla elde tutulan varlıklar için uygulanır",
+    "std-tfrs9-gen-0011": "Yalnızca özkaynağa dayalı finansal araçlar bu sınıfa girer",
+    "std-tfrs9-gen-0014": "Nakit akışlarının sabit bir getiri sağlaması yeterlidir; anapara ve faiz olması aranmaz",
+    "std-tfrs9-gen-0015": "Faiz geliri, etkin faiz oranı net defter değerine uygulanarak hesaplanır",
+    "std-tfrs9-gen-0016": "Sözleşmedeki nominal faiz oranıdır; tahmini nakit akışları dikkate alınmaz",
+    "std-tfrs9-gen-0017": "Değer değişimi doğrudan dönemin kâr veya zararında muhasebeleştirilir",
+    "std-tfrs9-gen-0018": "Diğer kapsamlı gelirde biriken tutar özkaynakta kalır; kâr veya zarara aktarılmaz",
+    "std-tfrs9-gen-0019": "Kural olarak itfa edilmiş maliyetle ölçülür",
+    "std-tfrs9-gen-0020": "Her raporlama döneminde serbestçe geri alınabilen bir tercihtir",
+    "std-tfrs9-gen-0021": "Diğer kapsamlı gelirde biriken tutar satışta kâr veya zarara yeniden sınıflandırılır",
+    "std-tfrs9-gen-0022": "Kâr payları özkaynakta biriktirilir ve varlık satıldığında kâr veya zarara aktarılır",
+    "std-tfrs9-gen-0023": "Tüm finansal borçlar gerçeğe uygun değer farkı kâr veya zarara yansıtılarak ölçülür",
+    "std-tfrs9-gen-0024": "Kendi kredi riskindeki değişimden kaynaklanan kısım doğrudan kâr veya zarara yansıtılır",
+    "std-tfrs9-gen-0030": "Gerçekleşmiş kredi zararı modelidir; karşılık ancak zarar fiilen doğduğunda ayrılır",
+    "std-tfrs9-gen-0031": "En kötü senaryoda ortaya çıkabilecek azami kredi zararı tutarıdır",
+    "std-tfrs9-gen-0032": "Yalnızca geçmiş temerrüt verilerinin basit ortalaması alınır; paranın zaman değeri göz ardı edilir",
+    "std-tfrs9-gen-0033": "Aşamalar yalnızca varlık fiilen temerrüde düştükten sonra uygulanmaya başlar",
+    "std-tfrs9-gen-0034": "Raporlama tarihinden sonraki 12 ay içinde ödenmesi beklenen faiz tutarıdır",
+    "std-tfrs9-gen-0035": "Yalnızca varlık fiilen temerrüde düştüğünde kredi riskinde önemli artış kabul edilir",
+    "std-tfrs9-gen-0036": "Ticari alacaklara genel üç aşamalı model uygulanır; basitleştirilmiş yaklaşım kullanılamaz",
+    "std-tfrs9-gen-0037": "GUDFK ile ölçülen finansal varlıklar da dâhil tüm varlıklara uygulanır",
+    "std-tfrs9-gen-0038": "Zarar karşılığı diğer kapsamlı gelire yansıtılır ve varlığın defter değeri azaltılır",
+    "std-tfrs9-gen-0041": "Etkin faiz oranı brüt defter değerine uygulanmaya devam eder",
+    "std-tfrs9-gen-0042": "Yalnızca vadesi geçmiş ticari alacaklar için zarar karşılığı ayrılır",
+    "std-tfrs9-gen-0045": "Yalnızca varlık fiziksel olarak devredildiğinde bilanço dışı bırakılır",
+    "std-tfrs9-gen-0046": "Risk ve getiriler elde tutulsa dahi sözleşme devredilmişse bilanço dışı bırakılır",
+    "std-tfrs9-gen-0047": "Borcun defter değeri önemli ölçüde değiştiğinde bilanço dışı bırakılır",
+    "std-tfrs9-gen-0048": "Yönetim gerekli gördüğünde her dönem serbestçe yeniden sınıflandırılabilir",
+    "std-tfrs9-gen-0049": "İş modeli değiştiğinde finansal borçlar da yeniden sınıflandırılır",
+    "std-tfrs9-gen-0050": "Koşullar sağlandığında riskten korunma muhasebesinin uygulanması zorunludur",
+    "std-tfrs9-gen-0052": "Yalnızca gerçeğe uygun değer ve nakit akış riskinden korunma olmak üzere iki tür vardır",
+    "std-tfrs9-gen-0058": "Alacaklar devredildiğinden her hâlde bilanço dışı bırakılır; risk ve getiri dikkate alınmaz",
+    "std-tfrs9-gen-0060": "Açıklama hükümleri TFRS 9'un kendi metninde düzenlenmiştir",
+}
+
+# TFRS 9 doğru şıkları uzun (ort 82); 28 soruda doğru en uzundu. 18'inde
+# çeldirici içerikle doğrunun üstüne çıkarıldı, 10'u en uzun bırakıldı (~%20).
+# Hepsi dolgusuz — "dolguyu ele, en uzunu seç" stratejisini de kırar.
+TFRS9_UZAT = {
+    "std-tfrs9-gen-0009": {"E": "İş modeline ve nakit akışı özelliklerine bakılmaksızın tüm borçlanma araçları itfa edilmiş maliyetle ölçülür; sınıflandırmada yalnızca varlığın hukuki biçimi ve vadesi belirleyicidir"},
+    "std-tfrs9-gen-0052": {"B": "Yalnızca nakit akış riskinden korunma bulunur; gerçeğe uygun değer riskinden korunma ile yurtdışı işletmedeki net yatırım riskinden korunma TFRS 9 kapsamında tanınmaz"},
+    "std-tfrs9-gen-0010": {"C": "Yalnızca yönetimin bu yönde karar verdiği varlıklar bu sınıfta ölçülür; iş modeli ve sözleşmeye bağlı nakit akışı özellikleri sınıflandırmada hiç rol oynamaz"},
+    "std-tfrs9-gen-0034": {"A": "Yalnızca gelecek 12 ayda tahsil edilemeyecek anaparanın tamamını ifade eder; temerrüt olasılığı ve paranın zaman değeri bu tutarın belirlenmesinde dikkate alınmaz"},
+    "std-tfrs9-gen-0045": {"C": "Yalnızca vergi idaresi izin verdiğinde bilanço dışı bırakılabilir; sözleşmeye bağlı hakların sona ermesi ya da varlığın devredilmesi tek başına yeterli sayılmaz"},
+    "std-tfrs9-gen-0033": {"A": "Tüm finansal varlıklar için her hâlde ömür boyu beklenen kredi zararı ayrılır; kredi riskinde önemli artış olup olmadığına dair aşamalı bir değerlendirme yapılmaz"},
+    "std-tfrs9-gen-0019": {"D": "Her hâlde maliyet bedeliyle ölçülür; gerçeğe uygun değer hiç kullanılmaz ve piyasa fiyatındaki değişimler finansal tablolara hiçbir biçimde yansıtılmaz"},
+    "std-tfrs9-gen-0014": {"D": "Nakit akışı özellikleri hiçbir hâlde dikkate alınmaz; sınıflandırmada yalnızca iş modeli esas alınır ve anapara ile faiz ölçütü hiç uygulanmaz"},
+    "std-tfrs9-gen-0017": {"D": "Hiçbir değer değişimi kayda alınmaz; değişimler yalnızca dipnotlarda açıklanır ve finansal durum tablosuna hiçbir biçimde yansıtılmaz"},
+    "std-tfrs9-gen-0021": {"E": "Diğer kapsamlı gelirde biriken tutar satışta kâr veya zarara yeniden sınıflandırılır ve gerçekleşen kazanç dönemin sonucuna dâhil edilir"},
+    "std-tfrs9-gen-0024": {"E": "Kendi kredi riskindeki değişimden kaynaklanan kısım doğrudan kâr veya zarara yansıtılır; diğer kapsamlı gelirde gösterim hiçbir hâlde söz konusu olmaz"},
+    "std-tfrs9-gen-0036": {"E": "Ticari alacaklara genel üç aşamalı model uygulanır; basitleştirilmiş yaklaşım kullanılmaz ve her alacak için kredi riski aşaması ayrı ayrı izlenir"},
+    "std-tfrs9-gen-0001": {"B": "Yalnızca borsada işlem gören hisse senetlerini kapsayan dar bir kavramdır; sözleşmeye dayalı alacak ve borçlar finansal araç tanımının dışında kalır"},
+    "std-tfrs9-gen-0047": {"D": "Borç, işletmenin dilediği zaman bilanço dışı bırakabileceği bir kalemdir; yükümlülüğün ortadan kalkması ya da ifa edilmesi koşulu hiç aranmaz"},
+    "std-tfrs9-gen-0032": {"E": "Yalnızca geçmiş temerrüt verilerinin basit ortalaması alınır; paranın zaman değeri ve geleceğe yönelik makroekonomik tahminler ölçüme hiç dâhil edilmez"},
+    "std-tfrs9-gen-0037": {"D": "Hiçbir finansal varlığa uygulanmayan, yalnızca biçimsel nitelikte kalan ve uygulamada karşılığı bulunmayan hükümlerdir; ölçüm sınıflarıyla ilişkisi yoktur"},
+    "std-tfrs9-gen-0046": {"D": "Devredilen varlıklar hiçbir hâlde bilanço dışı bırakılamaz; risk ve getiriler devredilmiş olsa dahi varlık süresiz olarak kayıtlarda kalır"},
+    "std-tfrs9-gen-0053": {"C": "Yalnızca finansal borçların ölçümünü değiştirir; finansal varlıkların sınıflandırma ve ölçüm esaslarına hiçbir biçimde dokunmamıştır"},
+}
+
 KONFIG: dict[str, dict] = {
     "tms_12_gelir_vergileri": {"atma": TMS12_ATMA, "atma_ozel": TMS12_OZEL,
                                "uzat": TMS12_UZAT},
+    "tms_21_kur_degisimi": {"atma_ozel": TMS21_OZEL, "uzat": TMS21_UZAT},
+    "tfrs_9_finansal_arac": {"atma_ozel": TFRS9_OZEL, "uzat": TFRS9_UZAT},
 }
 
 
