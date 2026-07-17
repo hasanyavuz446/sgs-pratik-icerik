@@ -172,7 +172,13 @@ def _atma_sec(kurallar, question: dict, sira: int, ozel=None) -> str:
     """
     if ozel and question["id"] in ozel:
         return ozel[question["id"]]
-    if kurallar and isinstance(kurallar[0], str):
+    # Havuz boşsa (yalnız atma_ozel verilmiş) ve bu soru ozel'de yoksa: ATMA
+    # eşleşen ama karşılığı yazılmamış bir soru var demektir. Sessizce çökmek
+    # yerine None döndür — çağıran şıkkı DEĞİŞTİRMEDEN bırakır ve uyarır.
+    # (kavramsal'da "1 atma" sandığım dosyada 2. bir eşleşme böyle yakalandı.)
+    if not kurallar:
+        return None
+    if isinstance(kurallar[0], str):
         return kurallar[sira % len(kurallar)]
     # ⚠ Çakışma gerçek çıktı. tms_12/0016'da "YÜKSEK olması" yanılgım o sorunun
     # A şıkkıyla birebir aynıydı — çünkü A KIRPILDIKTAN SONRA benim cümleme
@@ -206,7 +212,12 @@ def temizle(path: str, atma_yerine=None, atma_ozel=None, uzat=None,
             if harf == q["answer"]:
                 continue
             if (atma_yerine or atma_ozel) and ATMA.search(v):
-                q["options"][harf] = _atma_sec(atma_yerine or [], q, sira, atma_ozel)
+                yerine = _atma_sec(atma_yerine or [], q, sira, atma_ozel)
+                if yerine is None:
+                    print(f"⚠ {q['id']}/{harf}: ATMA-şıkkı ama karşılığı yok — atma_ozel'e ekle:"
+                          f"\n    «{v[:70]}»")
+                    continue
+                q["options"][harf] = yerine
                 sira += 1
                 atma_sayi += 1
                 continue
