@@ -1,12 +1,25 @@
 # -*- coding: utf-8 -*-
-"""Yeterlilik KONU HAVUZU — Maliyet Muhasebesi / Maliyet Unsurları (60 soru = 3×20).
-Doğru şık KISA, çeldiriciler UZUN. explanation'da harf atıfı YOK.
-Aritmetik python'da hesaplanır. Yıla bağlı oran/tutar YOK."""
+"""Yeterlilik KONU HAVUZU — Maliyet Muhasebesi / Maliyet Unsurları (3×20).
+
+Şıklar aynı kavramsal ve dilbilgisel düzeyde kurulur; doğru cevabın uzunluğu ipucu
+vermez. Aritmetik Python'da hesaplanır ve yıla bağlı oran/tutar kullanılmaz.
+"""
 import json, random, re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "maliyet_unsurlari", "Maliyet Unsurları"
 PREFIX, SEED = "kh-mal-unsur", 20260902
-OUT = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_unsurlari_2026.json"
+ROOT = Path(__file__).resolve().parents[3]
+FILENAME = "questions_topic_maliyet_unsurlari_2026.json"
+OUT_PATHS = (
+    ROOT / "content" / "yeterlilik" / FILENAME,
+    ROOT.parent / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = (
+    "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; "
+    "yürürlükteki Tekdüzen Hesap Planı"
+)
 
 Q = []
 
@@ -19,8 +32,12 @@ def q(stem, correct, distractors, why, ref, difficulty="medium"):
 
 
 def tr(v):
-    if isinstance(v, float) and abs(v - round(v)) < 1e-9:
-        v = round(v)
+    if isinstance(v, float):
+        if abs(v - round(v)) < 1e-9:
+            v = round(v)
+        else:
+            text = f"{v:,.2f}".rstrip("0").rstrip(".")
+            return text.replace(",", "\x00").replace(".", ",").replace("\x00", ".")
     return f"{v:,}".replace(",", ".")
 
 
@@ -379,11 +396,11 @@ q("Bir üretim işçisine yalnız belirli siparişin teknik güçlüğü nedeniy
   "Prim yalnız belirli siparişin üretimi nedeniyle doğmuş ve o siparişe doğrudan izlenebilmiştir. Bu nedenle siparişin direkt işçilik maliyetine dâhil edilir.",
   "TMS 2 par. 12 - üretimle doğrudan ilişkili işçilik")
 
-q("Direkt işçilik maliyetlerinin mamule yüklenmesine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yükleme, mamul için harcanan süreye dayanabilir\n\nII. Saatlik maliyet, işverenin katlandığı ilgili payları da içerebilir\n\nIII. Belirli mamule izlenemeyen ustabaşı ücreti her durumda direkt işçiliktir",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Mamul için harcanan süre ve bu süreye ilişkin kapsamlı saatlik maliyet direkt yüklemede kullanılabilir. Belirli mamule izlenemeyen ustabaşı ücreti ise endirekt işçiliktir.",
-  "TMS 2 par. 12 - direkt işçilik ve dolaylı üretim maliyetleri")
+q("Direkt işçilik maliyetlerinin mamule yüklenmesine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yükleme, mamul için harcanan süreye dayanabilir\n\nII. Saatlik maliyet, işverenin katlandığı ilgili payları da içerebilir\n\nIII. Normalin üstündeki boş işçilik maliyeti oluştuğu dönemde giderleştirilir",
+  "I, II ve III",
+  ["I ve II", "Yalnız I", "II ve III", "Yalnız III"],
+  "Mamul için harcanan süre ve bu süreye ilişkin kapsamlı saatlik maliyet direkt yüklemede kullanılabilir. Normalin üstündeki boş işçilik maliyeti ise stoklara yüklenmez; oluştuğu dönemde giderleştirilir.",
+  "TMS 2 par. 12 ve 16(a) - direkt işçilik ile normalin üstündeki üretim maliyetleri")
 
 q("Fabrika güvenlik görevlisinin yalnız üretim tesisine hizmet eden ve mamul bazında izlenemeyen ücreti nasıl ele alınır?",
   "Sabit genel üretim gideri içinde endirekt işçilik",
@@ -615,6 +632,206 @@ q(f"Bir dönemde direkt ilk madde {tr(dimm3)} TL, direkt işçilik {tr(dig3)} TL
   "TMS 2 par. 10, 12 ve 16(a),(d) - üretim maliyetleri ile maliyete alınmayan kalemler", "hard")
 
 
+# Eski üretimde çeldiriciler açıklama cümlesine dönüştürülmüş, doğru seçenekler ise
+# kısa bırakılmıştı. Aşağıdaki editoryal düzeltmeler her seçeneği aynı kavramsal
+# düzeye getirir; anlamsız uzunluk eklemeden cevap sızıntısını kaldırır.
+DISTRACTOR_OVERRIDES = {
+    1: [
+        "Endirekt malzeme gideri",
+        "Direkt işçilik gideri",
+        "Genel yönetim gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+    ],
+    2: [
+        "Direkt ilk madde ve malzeme gideri olarak mamule yüklenir",
+        "Pazarlama, satış ve dağıtım giderleri içinde izlenir",
+        "Genel yönetim gideri olarak dönem sonucuna alınır",
+        "Finansman gideri olarak dönemle ilişkilendirilir",
+    ],
+    4: [
+        "İade alınamayan vergi gibi satın alma maliyetine eklenir",
+        "Değişken genel üretim giderine aktarılır",
+        "Finansman gideri olarak aktifleştirilir",
+        "Doğrudan dönem gideri yazılır",
+    ],
+    5: [
+        "Peşin fiyatla birlikte hammadde maliyetine eklenerek",
+        "Satın alma tarihinde genel üretim gideri olarak",
+        "Direkt işçilik maliyetine eklenerek",
+        "Hammadde kullanılıncaya kadar ertelenerek",
+    ],
+    7: [
+        "720 Direkt İşçilik Giderleri",
+        "730 Genel Üretim Giderleri",
+        "760 Pazarlama Satış ve Dağıtım Giderleri",
+        "770 Genel Yönetim Giderleri",
+    ],
+    8: [
+        "Sipariş maliyetinde bırakılarak mamul maliyetine dâhil edilir",
+        "Direkt işçilik giderine dönüştürülerek siparişe yüklenir",
+        "İade tutarı ortak genel üretim giderlerine yeniden dağıtılır",
+        "Stok ve maliyet kayıtlarında herhangi bir düzeltme yapılmaz",
+    ],
+    12: [
+        "Sabit genel üretim giderine alınır",
+        "Pazarlama gideri olarak kaydedilir",
+        "Finansman gideri olarak dönemleştirilir",
+        "Genel yönetim giderine aktarılır",
+    ],
+    14: [
+        "Direkt ilk madde ve malzeme gideri olarak mamullere yüklenir",
+        "Fabrikaya ait genel yönetim gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+        "Finansman gideri",
+    ],
+    15: [
+        "Malzemenin işletme içinde üretilmesi gerektiğinden",
+        "Maliyetin üretim hacminden bağımsız olması gerektiğinden",
+        "Malzemenin satıştan sonra tüketilmesi gerektiğinden",
+        "Bedelinin üretimden önce ödenmesi gerektiğinden",
+    ],
+    17: [
+        "Tüketim doğrudan satılan mamuller maliyetine aktarılır",
+        "Tüketim genel yönetim gideri olarak kaydedilir",
+        "Tüketim finansman gideri olarak dönemleştirilir",
+        "Tüketim ortak genel üretim giderine dönüştürülür",
+    ],
+    19: [
+        "Borçlanılan hammaddenin tamamı finansman gideri sayılır",
+        "Nakit alınmayan hammadde stoklara kaydedilmez",
+        "Vadeli alınan malzeme her zaman endirekt sayılır",
+        "Ödeme yapılıncaya kadar malzeme maliyeti oluşmaz",
+    ],
+    21: [
+        "Endirekt işçilik gideri",
+        "Sabit genel üretim gideri",
+        "Genel yönetim personeli gideri",
+        "Finansman gideri",
+    ],
+    26: [
+        "Direkt işçilik olarak mamule yüklenir",
+        "Pazarlama, satış ve dağıtım giderine aktarılır",
+        "Normalin üstündeki işçilik olarak giderleştirilir",
+        "Finansman gideri olarak kaydedilir",
+    ],
+    27: [
+        "Normal kapasite üzerinden stoklara dağıtılır",
+        "Gelecek dönem maliyeti olarak aktifleştirilir",
+        "Direkt işçilik olarak mamullere yüklenir",
+        "Üretim maliyetine alınır",
+    ],
+    28: [
+        "Tüm siparişlere ortak endirekt işçilik maliyeti olarak dağıtılır",
+        "Pazarlama, satış ve dağıtım giderine kaydedilir",
+        "Normalin üstündeki işçilik kaybı olarak giderleştirilir",
+        "Direkt ilk madde ve malzeme maliyetine eklenir",
+    ],
+    30: [
+        "Direkt ilk madde ve malzeme giderine aktarılır",
+        "Pazarlama personeli gideri olarak kaydedilir",
+        "Her mamule doğrudan izlenen işçilik olarak yüklenir",
+        "Üretim yapılmayan döneme ait normal üstü işçilik olarak giderleştirilir",
+    ],
+    31: [
+        "Ödemenin yapıldığı tarihe ve işletmenin nakit durumuna",
+        "İşveren payının brüt ücrete oranına",
+        "İşçinin kıdem süresine",
+        "Yükümlülüğün yasal niteliğine",
+    ],
+    33: [
+        "Her mamule doğrudan yüklenen direkt işçilik gideri",
+        "Pazarlama personeli gideri",
+        "Genel yönetim personeli gideri",
+        "Finansman gideri",
+    ],
+    35: [
+        "Mevzuatın bütün işletmeler için zorunlu tuttuğu tek anahtar olması",
+        "Tüm dolaylı giderleri direkt maliyete dönüştürmesi",
+        "Sabit giderleri stok maliyetinden çıkarması",
+        "Her dönemde aynı maliyet yüklemesini sağlaması",
+    ],
+    36: [
+        "Fabrika geneline dağıtılacak sabit genel üretim gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+        "Finansman gideri",
+        "Direkt ilk madde ve malzeme gideri",
+    ],
+    38: [
+        "Üretimden bağımsız genel yönetim personeli gideri",
+        "Mamullere doğrudan yüklenen direkt işçilik gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+        "Finansman gideri",
+    ],
+    39: [
+        "Yönetici unvanı nedeniyle genel yönetim gideri",
+        "Tek mamule yüklenen direkt işçilik gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+        "Finansman gideri",
+    ],
+    41: [
+        "Üretim tamamlandığı anda satılan mamuller maliyetine aktarılır",
+        "Genel yönetim gideri olarak dönem sonucuna alınır",
+        "Finansman gideri hesabına aktarılır",
+        "Çalışanlardan alacak hesabında aktifleştirilir",
+    ],
+    42: [
+        "Direkt ilk madde ve malzeme gideri olmaları",
+        "Pazarlama, satış ve dağıtım gideri olmaları",
+        "Finansman gideri olmaları",
+        "Genel yönetim gideri olmaları",
+    ],
+    43: [
+        "Mamule giren ana hammadde tüketim maliyeti",
+        "Doğrudan üretim işçisinin ücret maliyeti",
+        "Satış temsilcisi primi ve dağıtım maliyeti",
+        "Merkezdeki insan kaynakları biriminin personel maliyeti",
+    ],
+    44: [
+        "Direkt ilk madde ve malzeme gideri",
+        "Sabit genel üretim gideri",
+        "Genel yönetim gideri",
+        "Pazarlama, satış ve dağıtım gideri",
+    ],
+    46: [
+        "Tüm sabit giderleri fiilî üretimdeki stoklara yüklemek",
+        "Değişken giderleri satış miktarına göre dağıtmak",
+        "Düşük üretimde dağıtılmayan sabit giderleri gelecek dönem stoklarına ertelemek",
+        "Direkt maliyetleri üretim maliyetinden çıkarmak",
+    ],
+    48: [
+        f"{tr(dagitilmayan)} TL stoklara aktarılır",
+        f"{tr(dusuk_sabit)} TL fiilî üretime dağıtılır",
+        f"{tr(dusuk_yuklenen)} TL gider, {tr(dagitilmayan)} TL stok maliyeti yapılır",
+        f"{tr(dagitilmayan)} TL maddi duran varlık maliyetine eklenir",
+    ],
+    49: [
+        "Sabit genel üretim giderlerini genel yönetim giderine dönüştürmek için",
+        "Değişken üretim giderlerini satış miktarına göre dağıtmak için",
+        "Yüksek üretimde mamullere hiçbir sabit üretim gideri yüklememek için",
+        "Yüksek üretimde sabit giderlerin tamamını gelecek dönem stoklarına ertelemek için",
+    ],
+    56: [
+        "Giderleri üretimle ilişki kurmadan satış fiyatlarına göre dağıtmak",
+        "Giderleri yalnız direkt malzeme tutarına göre dağıtmak",
+        "Giderleri genel yönetim gideri olarak raporlamak",
+        "Dolaylı maliyetleri dağıtım anahtarı olmadan eşit bölmek",
+    ],
+    57: [
+        "Tüm genel üretim giderlerinin doğrudan maliyete dönüşmesi",
+        "Her bölümde aynı dağıtım anahtarının zorunlu hâle gelmesi ve hesabın tek biçime inmesi",
+        "Sabit giderlerin normal kapasite kuralından çıkarılması",
+        "Stokların yalnız satış fiyatlarına göre değerlenmesi",
+    ],
+}
+
+assert len(Q) == 60
+for number, distractors in DISTRACTOR_OVERRIDES.items():
+    assert len(distractors) == 4
+    assert len(set(distractors)) == 4
+    assert Q[number - 1]["correct"] not in distractors
+    Q[number - 1]["distractors"] = distractors
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -642,14 +859,22 @@ if __name__ == "__main__":
             "id": f"{PREFIX}-{i+1:04d}", "lessonId": L, "topicId": T,
             "question": it["stem"], "choices": ch, "correctAnswer": ans,
             "explanation": it["why"],
-            "source": {"kind": "generated", "styleRef": "2026/1 test biçimi",
+            "source": {"kind": "generated", "styleRef": "2026/1 beş seçenekli test biçimi",
                        "legislationRef": it["ref"]},
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
-            "difficulty": it["difficulty"], "updatedAt": "2026-07-16T00:00:00Z",
-            "examPeriod": "2026/1 formatına uyumlu", "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z", "isPremium": False, "isActive": True,
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "difficulty": it["difficulty"], "updatedAt": UPDATED_AT,
+            "examPeriod": "2026 test sistemine uyumlu özgün soru",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT, "isPremium": False, "isActive": True,
         })
-    json.dump(out, open(OUT, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+    assert all("demo" not in item["question"].casefold() for item in out)
+    assert all("demo" not in item["explanation"].casefold() for item in out)
+    for path in OUT_PATHS:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(
+            json.dumps(out, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
     MARK = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     onc = sum(1 for x in out if len(MARK.findall(x["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {onc} | harf {''.join(x['correctAnswer'] for x in out)[:40]}…")
