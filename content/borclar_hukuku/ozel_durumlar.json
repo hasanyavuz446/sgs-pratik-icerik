@@ -7,7 +7,7 @@
     "options": {
       "E": "Borçlulardan her biri alacaklıya karşı borcun tamamından sorumlu olmayı kabul ettiğini bildirdiğinde veya kanunda öngörülen hâllerde müteselsil borçluluk doğar",
       "A": "Müteselsil borçluluk yalnızca hâkimin kararıyla kurulabilir; tarafların iradesiyle doğması mümkün değildir",
-      "B": "Birden çok borçlunun bulunduğu her borç ilişkisi, ayrıca bir bildirime gerek olmaksızın kendiliğinden müteselsildir",
+      "B": "Birden çok borçlunun bulunduğu her borç ilişkisi, taraflar ayrıca kararlaştırmasa ve kanunda bir hüküm bulunmasa dahi kendiliğinden müteselsil borçluluk sayılır",
       "C": "Müteselsil borçluluk yalnızca borçluların tamamının tacir sıfatını taşıması hâlinde doğabilir",
       "D": "Müteselsil borçluluğun doğması için borçluların her birinin ayrı ayrı senet düzenlemiş olması şarttır"
     },
@@ -29,8 +29,8 @@
     "options": {
       "D": "Alacaklı, borcun tamamen veya kısmen ifasını borçluların ister hepsinden ister yalnızca birinden isteyebilir; borç tamamen ödenene kadar borçluların hepsi sorumlu kalır",
       "A": "Alacaklı, borcun tamamını yalnızca borçluların hepsine birlikte başvurarak isteyebilir; birine tek başına başvuramaz",
-      "B": "Alacaklı, borcu her bir borçludan yalnızca onun iç ilişkideki payı oranında isteyebilir; tamamını bir borçludan isteyemez",
-      "C": "Alacaklı, tazminatın tamamını yalnızca borçlulardan en varlıklı olanından istemek zorundadır",
+      "B": "Alacaklı, borcu her bir borçludan yalnızca onun iç ilişkideki payı oranında isteyebilir; borcun tamamını tek bir borçludan talep etme hakkı hiçbir hâlde bulunmaz",
+      "C": "Alacaklı, tazminatın tamamını yalnızca borçlulardan en varlıklı olanından istemesi gerekir",
       "E": "Alacaklı, borçlulardan birini seçtiğinde diğerlerine karşı olan haklarını, borç ödenmese dahi tümüyle yitirir"
     },
     "answer": "D",
@@ -74,7 +74,7 @@
       "A": "Borçlu, borcun konusundan veya doğumundan kaynaklanan ortak def'ileri her borçlu ileri sürebilirken; yalnızca kendisine ilişkin kişisel def'ileri ise sadece o borçlu ileri sürebilir",
       "B": "Müteselsil borçlu, borç ilişkisinden doğan hiçbir def'i ileri süremez; alacaklının istemini olduğu gibi kabul eder",
       "C": "Borçlulardan birinin sahip olduğu kişisel def'i, ilişkideki bütün borçlular tarafından da ileri sürülebilir",
-      "D": "Müteselsil borçlu yalnızca kendi kişisel def'ilerini ileri sürebilir; borcun doğumuna ilişkin ortak def'ileri ileri süremez",
+      "D": "Müteselsil borçlu yalnızca kendi kişisel def'ilerini ileri sürebilir; borcun doğumuna, geçersizliğine veya sona ermesine ilişkin ortak def'ileri alacaklıya karşı hiç ileri süremez",
       "E": "Def'iler yalnızca alacaklı ile ilk borçlu arasındaki ilişkide geçerlidir; diğer borçlular hiçbir def'i kullanamaz"
     },
     "answer": "A",
@@ -96,7 +96,7 @@
       "B": "Aksi kararlaştırılmadıkça borçlular iç ilişkide borcu eşit paylaşır; borcun tamamını ödeyen borçlu, her birine kendi payı oranında rücu edebilir",
       "A": "Borcun tamamını ödeyen borçlunun diğerlerine karşı hiçbir rücu hakkı bulunmaz; ödediğini kesin olarak yüklenir",
       "C": "Ödeyen borçlu, diğerlerinin her birinden ödediği borcun tamamını ayrı ayrı geri isteyebilir",
-      "D": "İç ilişkideki paylaşım her hâlde alacaklının belirlediği oranlara göre yapılır; borçluların iradesi dikkate alınmaz",
+      "D": "İç ilişkideki paylaşım her hâlde alacaklının tek taraflı belirlediği oranlara göre yapılır; borçluların aralarındaki anlaşma ve iradeleri hiç dikkate alınmaz",
       "E": "Ödeyen borçlu, ancak alacaklının kendisine bu yönde açık bir yetki vermesi hâlinde diğerlerine rücu edebilir"
     },
     "answer": "B",
@@ -138,7 +138,7 @@
     "stem": "Müteselsil alacaklılık bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Alacaklılardan her biri borcun tamamının kendisine ifasını isteyebilir; borçlu, alacaklılardan birine yaptığı ifayla borcun tamamından kurtulur",
-      "A": "Müteselsil alacaklılıkta borçlu, borcu ancak alacaklıların hepsine birlikte ifa ederek borçtan kurtulabilir",
+      "A": "Müteselsil alacaklılıkta borçlu, borcu ancak alacaklıların hepsine birlikte ifa ederek borçtan kurtulabilir; tek alacaklıya yapılan ödeme sonuç doğurmaz",
       "B": "Alacaklılardan her biri borcun yalnızca kendi payına düşen kısmını borçludan isteyebilir",
       "C": "Borçlu, alacaklılardan hangisine ifa edeceğini seçemez; ifa edilecek alacaklıyı her zaman hâkim belirler",
       "E": "Müteselsil alacaklılık, ancak tüm alacaklıların tacir sıfatını taşıması hâlinde geçerli olabilir"
@@ -182,7 +182,7 @@
     "stem": "(K) ile (L), (M)'ye karşı müteselsil borçludur. (M) alacağın tamamını (K)'den istemiş; (K) ise borcun yalnızca kendi payına düşen kısmını ödemek istediğini belirtmiştir. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "(M) borcun tamamını (K)'den isteyebilir; (K), borcun tamamı ödenmeden yalnızca kendi payını ödeyerek alacaklıya karşı sorumluluktan kurtulamaz",
-      "A": "(K), yalnızca kendi payını ödeyerek (M)'ye karşı borçtan kurtulur; (M) kalanı (L)'den istemek zorundadır",
+      "A": "(K), yalnızca kendi payını ödeyerek (M)'ye karşı borçtan tümüyle kurtulur; (M) kalan kısım için ayrıca (L)'ye başvurur ve ondan talep eder",
       "B": "(M), borcu ancak (K) ve (L)'den paylarına göre ayrı ayrı isteyebilir; tamamını (K)'den isteyemez",
       "C": "(K) borcun tamamını ödemek zorunda değildir; müteselsil borçlu her hâlde yalnızca payından sorumludur",
       "E": "(M), (K)'yi seçtiği için (L)'ye karşı olan alacak hakkını, borç ödenmeden önce tümüyle kaybeder"
@@ -204,7 +204,7 @@
     "stem": "Bir borcun 'geciktirici (taliki) şarta' bağlanması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Sözleşmenin hükmü, gerçekleşip gerçekleşmeyeceği bilinmeyen gelecekteki bir olguya bağlanır; şart gerçekleşince sözleşme hüküm doğurur",
-      "A": "Sözleşme baştan itibaren tüm hükümlerini doğurur; şart gerçekleşince ise sözleşme kendiliğinden sona erer",
+      "A": "Sözleşme baştan itibaren bütün hükümlerini doğurur; şart gerçekleştiğinde ise sözleşme kendiliğinden ve geçmişe etkili biçimde sona erer",
       "B": "Geciktirici şart, gerçekleşmesi tarafların iradesine bağlı olmayan geçmişteki bir olguyu ifade eder",
       "C": "Geciktirici şarta bağlı sözleşme, şart gerçekleşmese dahi her hâlde hüküm doğurmaya devam eder",
       "D": "Geciktirici şart, sözleşmenin geçerliliğini değil yalnızca ifa yerini belirleyen bir kayıttır"
@@ -249,7 +249,7 @@
     "options": {
       "C": "Borçlu, şartın gerçekleşmesi hâlinde alacaklıya geçecek olan hakkı zedeleyecek her türlü davranıştan kaçınmakla yükümlüdür",
       "A": "Borçlu, şart henüz gerçekleşmediğinden askı döneminde dilediği gibi davranmakta tümüyle serbesttir",
-      "B": "Borçlu, askı döneminde borcun konusunu üçüncü kişilere devrederek borç ilişkisini istediği zaman sona erdirebilir",
+      "B": "Borçlu, askı döneminde borcun konusunu üçüncü kişilere devrederek borç ilişkisini istediği zaman tek taraflı olarak sona erdirebilir",
       "D": "Borçlunun askı dönemindeki davranışları önemsizdir; şart gerçekleşse bile alacaklının hakkı doğmaz",
       "E": "Askı döneminde borçlu, alacaklının hakkını korumak yerine yalnızca kendi menfaatini gözetmekle yükümlüdür"
     },
@@ -270,7 +270,7 @@
     "stem": "Bir tarafın, dürüstlük kurallarına aykırı olarak şartın gerçekleşmesine engel olması hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Şartın gerçekleşmesine dürüstlük kurallarına aykırı biçimde engel olan tarafın aleyhine, şart gerçekleşmiş sayılır",
-      "A": "Şart gerçekleşmediğinden sözleşme hüküm doğurmaz; engel olan tarafın davranışının hiçbir sonucu olmaz",
+      "A": "Şart gerçekleşmediğinden sözleşme hüküm doğurmaz; şartın gerçekleşmesine dürüstlük kuralına aykırı biçimde engel olan tarafın davranışı sonucu değiştirmez",
       "B": "Engel olan taraf yalnızca karşı tarafın uğradığı zararı tazmin eder; şart yine gerçekleşmemiş sayılır",
       "C": "Şartın gerçekleşmesine engel olmak serbesttir; taraflar diledikleri gibi şartı etkileyebilir",
       "D": "Bu durumda sözleşme kesin olarak hükümsüz hâle gelir; taraflar birbirinden hiçbir talepte bulunamaz"
@@ -316,7 +316,7 @@
       "C": "Araba borcu, gerçekleşmesi bilinmeyen bir olguya (sınavı kazanma) bağlandığından geciktirici (taliki) şarta bağlıdır; şart gerçekleşince hüküm doğar",
       "A": "Bu taahhüt bozucu şarta bağlı bir borçtur; borç baştan doğar ve sınav kazanılınca sona erer",
       "B": "Bu taahhüt hiçbir hüküm doğurmayan bir vaat olup, şart gerçekleşse dahi (N) bağlı olmaz",
-      "D": "Bu taahhüt kesin (şartsız) bir borç olup, (N) sınav sonucuna bakılmaksızın arabayı vermek zorundadır",
+      "D": "Bu taahhüt kesin ve şartsız bir borç niteliğindedir; (N) sınav sonucu ne olursa olsun ve şart gerçekleşmese bile arabayı devretmekle yükümlü kalır",
       "E": "Bu taahhüt geçmişteki bir olguya bağlı olduğundan, şart hukuken hiçbir sonuç doğurmaz"
     },
     "answer": "C",
@@ -336,7 +336,7 @@
     "stem": "Borç hiç veya gereği gibi ifa edilmezse ödenmek üzere kararlaştırılan 'seçimlik cezai şart' bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Alacaklı ya borcun ifasını ya da kararlaştırılan cezayı isteyebilir; kural olarak ikisini birlikte isteyemez",
-      "A": "Alacaklı, hem borcun aynen ifasını hem de kararlaştırılan cezayı her hâlde birlikte istemek zorundadır",
+      "A": "Alacaklı, hem borcun aynen ifasını hem de kararlaştırılan cezayı her hâlde birlikte istemesi gerekir",
       "B": "Alacaklı yalnızca cezayı isteyebilir; borcun aynen ifasını talep etme hakkını cezai şartla yitirir",
       "C": "Alacaklı yalnızca borcun aynen ifasını isteyebilir; kararlaştırılan ceza ancak dava sonunda gündeme gelir",
       "E": "Cezayı isteyip istememeye alacaklı değil, borcu ifa etmeyen borçlu karar verir"
@@ -361,7 +361,7 @@
       "A": "Alacaklı bu hâlde de yalnızca ifa veya cezadan birini seçmek zorundadır; ikisini birlikte isteyemez",
       "C": "Alacaklı yalnızca gecikme cezasını isteyebilir; borcun aynen ifasını isteme hakkını yitirmiş olur",
       "D": "Alacaklı bu cezayı ancak borcu hiç ifa edilmediği hâllerde isteyebilir; gecikmeli ifada isteyemez",
-      "E": "Gecikme cezası yalnızca taraflar tacir olduğunda birlikte istenebilir; adi işlerde tek başına ifa istenir"
+      "E": "Gecikme cezası yalnızca tarafların her ikisi de tacir olduğunda ifa ile birlikte istenebilir; adi işlerde alacaklı yalnızca ifayı talep edebilir"
     },
     "answer": "B",
     "solution": "TBK m.179/2: ifaya ekli (gecikme) cezai şartta alacaklı, hakkından feragat etmedikçe hem aynen ifayı hem cezayı birlikte isteyebilir. Doğru cevap B.",
@@ -403,7 +403,7 @@
     "options": {
       "A": "Cezai şart asıl borca bağlı fer'i bir borçtur; asıl borç geçerli değilse veya borçlunun sorumlu tutulamayacağı bir sebeple imkânsızlaşmışsa ceza istenemez",
       "B": "Cezai şart asıl borçtan bağımsız bir borçtur; asıl borç geçersiz olsa dahi ceza her hâlde istenebilir",
-      "C": "Cezai şart, asıl borç geçersiz olduğunda kendiliğinden asıl borcun yerine geçen bağımsız bir edime dönüşür",
+      "C": "Cezai şart, asıl borç geçersiz olduğunda kendiliğinden asıl borcun yerine geçen ve ondan bağımsız olarak istenebilen ayrı bir edime dönüşür",
       "D": "Asıl borç kusursuz imkânsızlaşsa bile alacaklı, kararlaştırılan cezanın tamamını her hâlde isteyebilir",
       "E": "Cezai şartın geçerliliği asıl borca değil, yalnızca alacaklının bir zarara uğramış olmasına bağlıdır"
     },
@@ -424,10 +424,10 @@
     "stem": "Alacaklının, cezai şartı isteyebilmesi için bir zarara uğramış olması gerekip gerekmediği bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Alacaklı zarara uğramasa da cezayı isteyebilir; zararı cezayı aşarsa aşan kısmı ancak borçlunun kusurunu ispatla isteyebilir",
-      "A": "Alacaklı, cezayı isteyebilmek için her hâlde ceza tutarı kadar bir zarara uğradığını ispat etmek zorundadır",
+      "A": "Alacaklı, cezayı isteyebilmek için her hâlde ceza tutarı kadar bir zarara uğradığını ispatı ona düşer",
       "B": "Alacaklı bir zarara uğramamışsa cezayı hiç isteyemez; ceza yalnızca gerçek zararın karşılığıdır",
       "C": "Alacaklının zararı cezadan az ise, alacaklı yalnızca gerçek zararı kadar tutarı isteyebilir; fazlasını isteyemez",
-      "E": "Alacaklı, zararı cezayı aşsa bile yalnızca kararlaştırılan ceza ile yetinmek zorundadır; aşan zararı hiç isteyemez"
+      "E": "Alacaklı, uğradığı zarar kararlaştırılan cezayı aşsa bile yalnızca ceza ile yetinir; cezayı aşan zararını hiçbir koşulda talep edemez"
     },
     "answer": "D",
     "solution": "TBK m.180: alacaklı zarara uğramasa da cezayı isteyebilir; zararı cezayı aşarsa aşan kısmı ancak borçlunun kusurunu ispatla ister. Doğru cevap D.",
@@ -447,7 +447,7 @@
     "options": {
       "B": "Taraflar cezanın miktarını serbestçe belirleyebilir; kararlaştırılan ceza asıl alacak tutarından fazla olsa da kural olarak istenebilir",
       "A": "Kararlaştırılan ceza hiçbir hâlde asıl alacak tutarını aşamaz; aşan kısım kendiliğinden geçersiz olur",
-      "C": "Cezanın miktarı taraflarca belirlenemez; her hâlde asıl alacağın kanunda belirlenmiş bir yüzdesi olarak hesaplanır",
+      "C": "Cezanın miktarı taraflarca serbestçe belirlenemez; ceza her hâlde asıl alacağın kanunda önceden belirlenmiş bir yüzdesi olarak hesaplanır",
       "D": "Ceza yalnızca asıl alacağa eşit olduğunda geçerlidir; ondan az ya da fazla kararlaştırılan ceza istenemez",
       "E": "Cezanın asıl alacaktan fazla olması, taraflar arasındaki sözleşmeyi baştan itibaren hükümsüz kılar"
     },
@@ -536,7 +536,7 @@
       "D": "Bu, ifaya ekli (gecikme) cezasıdır; iş sahibi, gecikmeli de olsa işin aynen tamamlanmasını ve ayrıca gecikme cezasını birlikte isteyebilir",
       "A": "Bu, seçimlik cezai şart olduğundan iş sahibi ya işin tamamlanmasını ya da cezayı seçmek zorundadır",
       "B": "Bu bir dönme cezası olduğundan, yüklenici bu tutarı ödeyerek sözleşmeden dönme hakkını kullanabilir",
-      "C": "İş sahibi bu cezayı ancak işin hiç tamamlanmaması hâlinde isteyebilir; gecikmede ceza gündeme gelmez",
+      "C": "İş sahibi bu cezayı ancak işin hiç tamamlanmaması hâlinde isteyebilir; işin gecikmeli olarak tamamlanması hâlinde ceza hiçbir biçimde gündeme gelmez",
       "E": "Bu ceza yalnızca iş sahibinin gecikme yüzünden zarara uğradığını ispat etmesi hâlinde istenebilir"
     },
     "answer": "D",
@@ -559,7 +559,7 @@
       "A": "Bağlanma parası, veren tarafa sözleşmeden dilediği zaman dönme hakkı sağlayan bir cayma bedelidir",
       "B": "Bağlanma parası, sözleşme ifa edilse dahi asıl edimden düşülmez; her hâlde ayrıca geri verilir",
       "D": "Bağlanma parası kararlaştırıldığında sözleşme henüz kurulmuş sayılmaz; yalnızca bir ön anlaşma niteliğindedir",
-      "E": "Bağlanma parası, verildiği anda karşı tarafın mülkiyetine geçmeyen, yalnızca güvence amacıyla bloke edilen bir tutardır"
+      "E": "Bağlanma parası, verildiği anda karşı tarafın mülkiyetine geçmeyen ve yalnızca güvence amacıyla bloke edilerek tutulan bir para niteliğindedir"
     },
     "answer": "C",
     "solution": "TBK m.177: bağlanma parası (pey akçesi) sözleşmenin yapıldığının kanıtıdır; cezai şart kararlaştırılmadıkça dönme hakkı vermez, ifa hâlinde asıl edimden düşülür. Doğru cevap C.",
@@ -578,7 +578,7 @@
     "stem": "Sözleşmeden dönme hakkı karşılığında ödenen 'cayma parası' bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Cayma parası taraflara sözleşmeden dönme hakkı verir; parayı veren dönerse verdiğini bırakır, alan dönerse aldığını geri verip ayrıca aynı tutarı öder",
-      "A": "Cayma parası hiçbir tarafa dönme hakkı vermez; sözleşmenin yapıldığını kanıtlayan bir bağlanma parasıdır",
+      "A": "Cayma parası taraflardan hiçbirine sözleşmeden dönme hakkı vermez; yalnızca sözleşmenin kurulduğunu kanıtlayan bir bağlanma parası işlevi görür ve iade edilir",
       "B": "Cayma parasını veren taraf sözleşmeden dönerse, verdiği parayı olduğu gibi geri alma hakkına sahiptir",
       "D": "Cayma parasını alan taraf sözleşmeden dönerse, yalnızca aldığı parayı geri vermekle yükümlü olur",
       "E": "Cayma parası kararlaştırılsa dahi taraflar sözleşmeden dönemez; para yalnızca bir güvence işlevi görür"
@@ -602,7 +602,7 @@
       "E": "Bağlanma parası sözleşmenin yapıldığını kanıtlar ve kural olarak dönme hakkı vermezken; cayma parası taraflara sözleşmeden dönme hakkı sağlar",
       "A": "İkisi arasında hiçbir fark yoktur; her ikisi de tarafları sözleşmeye kesin olarak bağlayan güvence bedelleridir",
       "B": "Bağlanma parası dönme hakkı verirken; cayma parası yalnızca sözleşmenin kurulduğunu kanıtlayan bir bedeldir",
-      "C": "Bağlanma parası yalnızca taşınmaz satışlarında, cayma parası ise yalnızca taşınır satışlarında kararlaştırılabilir",
+      "C": "Bağlanma parası yalnızca taşınmaz satışlarında, cayma parası ise yalnızca taşınır satışlarında kararlaştırılabilir; başka sözleşmelerde geçersizdir",
       "D": "Bağlanma parası her hâlde geri verilirken; cayma parası hiçbir koşulda geri verilmeyen bir cezadır"
     },
     "answer": "E",
@@ -666,7 +666,7 @@
     "stem": "Temsil yetkisi ile bu yetkinin dayandığı temel ilişki (örneğin vekâlet) arasındaki fark bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Temsil yetkisi, temsilcinin dışa karşı işlem yapma yetkisini; vekâlet gibi temel ilişki ise iç ilişkiyi düzenler; ikisi birbirinden bağımsızdır",
-      "A": "Temsil yetkisi ile vekâlet aynı şeydir; temsil yetkisi olmadan vekâlet, vekâlet olmadan temsil yetkisi düşünülemez",
+      "A": "Temsil yetkisi ile vekâlet aynı hukuki kurumdur; temsil yetkisi olmadan vekâlet, vekâlet olmadan da temsil yetkisi düşünülemez ve ikisi hep birlikte doğar",
       "B": "Temsil yetkisi iç ilişkiyi, vekâlet ise temsilcinin dışa karşı yetkisini düzenler; işlevleri budur",
       "C": "Temsil yetkisi yalnızca vekâletten doğabilir; vekâlet dışında bir ilişkiye dayanan temsil geçerli değildir",
       "D": "Temsil yetkisi verildiğinde vekâlet kendiliğinden sona erer; ikisi bir arada bulunamaz"
@@ -778,7 +778,7 @@
       "E": "İyiniyetli karşı taraf, yetkisiz temsilciden uğradığı zararın (menfi zararının) giderilmesini isteyebilir; yetkisiz temsilci kusurluysa hâkim müspet zarara da hükmedebilir",
       "A": "İşlem onanmadığından karşı taraf hiçbir talepte bulunamaz; uğradığı zarar tümüyle kendi üzerinde kalır",
       "B": "Karşı taraf yalnızca temsil olunana başvurabilir; yetkisiz temsilciden hiçbir tazminat isteyemez",
-      "C": "Karşı taraf, işlem onanmasa da temsil olunanı işlemi aynen ifaya zorlayabilir; tazminatla yetinmek zorunda değildir",
+      "C": "Karşı taraf, işlem temsil olunan tarafından onanmasa dahi onu işlemi aynen ifaya zorlayabilir; yetkisiz temsilciden tazminat istemekle yetinmesi gerekmez",
       "D": "Karşı taraf yetkisiz temsilciden yalnızca sözleşme ifa edilseydi elde edeceği tüm kazancı her hâlde isteyebilir"
     },
     "answer": "E",
@@ -800,7 +800,7 @@
       "B": "Sözleşme (T) onamadıkça onu bağlamaz; (T) onarsa işlem baştan geçerli olur, onamazsa iyiniyetli (Ü), yetkisiz temsilci (S)'ye başvurabilir",
       "A": "Sözleşme (T)'yi doğrudan bağlar; (T)'nin haberinin olup olmaması ve onaması sonucu değiştirmez",
       "C": "Sözleşme baştan itibaren kesin hükümsüz olduğundan (T) onasa dahi hiçbir zaman geçerli hâle gelmez",
-      "D": "Sözleşme yalnızca (S) ile (Ü) arasında hüküm doğurur; (T)'nin onaması bu ilişkiyi hiçbir biçimde etkilemez",
+      "D": "Sözleşme yalnızca (S) ile (Ü) arasında hüküm doğurur; (T)'nin sonradan verdiği onama bu ilişkiyi hiçbir biçimde etkilemez ve onu taraf yapmaz",
       "E": "(Ü) iyiniyetli olduğundan sözleşme, (T)'nin onamasına gerek olmaksızın doğrudan (T)'yi bağlar hâle gelir"
     },
     "answer": "B",
@@ -822,7 +822,7 @@
       "C": "Yetkisiz temsil, yetki olmadan başkası adına hukuki işlem yapmak; vekâletsiz iş görme ise yetki olmadan başkasının işini fiilen görmektir; ayrı kurumlardır",
       "A": "Yetkisiz temsil ile vekâletsiz iş görme aynı kurumdur; ikisi arasında hiçbir hukuki fark bulunmaz",
       "B": "Yetkisiz temsil fiilî bir iş görmeyi, vekâletsiz iş görme ise hukuki işlem yapmayı ifade eder",
-      "D": "Yetkisiz temsil yalnızca sözleşmelerde, vekâletsiz iş görme ise yalnızca haksız fiillerde söz konusu olur",
+      "D": "Yetkisiz temsil yalnızca sözleşmesel ilişkilerde, vekâletsiz iş görme ise yalnızca haksız fiil alanında söz konusu olur; iki kurum hiçbir noktada kesişmez",
       "E": "Yetkisiz temsil onamayla geçerli hâle gelebilirken, vekâletsiz iş görme hiçbir biçimde hüküm doğurmaz"
     },
     "answer": "C",
@@ -996,7 +996,7 @@
     "stem": "(P), (R) ve (S), (T)'ye karşı müteselsil borçludur. (T), borcun tamamını (P)'den tahsil etmiştir. (P)'nin, alacaklının haklarına halef olması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "(P), diğer borçlulara rücu edebildiği ölçüde, alacaklı (T)'nin haklarına halef olur; yani (T)'nin alacağa bağlı güvence ve haklarından yararlanabilir",
-      "A": "(P), borcu ödediği için alacaklının haklarına halef olamaz; diğer borçlulara karşı hiçbir güvenceden yararlanamaz",
+      "A": "(P), borcun tamamını ödemiş olsa da alacaklının haklarına halef olamaz; diğer borçlulara karşı alacaklının sahip olduğu rehin ve kefalet güvencelerinden yararlanamaz",
       "B": "(P) ancak alacaklı (T) kendisine bu hakları ayrı bir sözleşmeyle açıkça devrederse halef olabilir",
       "D": "(P), alacaklının haklarına yalnızca ödediği tutarın tamamı için değil, üç katı için halef olur",
       "E": "Halefiyet yalnızca kefalet ilişkilerinde söz konusu olur; müteselsil borçlulukta ödeyen borçlu halef olmaz"
@@ -1021,7 +1021,7 @@
       "A": "Kayıt geciktirici şarttır; sözleşme ancak tayin başka şehre çıkınca hüküm doğurmaya başlar",
       "C": "Kayıt hukuken geçersizdir; (A) tayini çıksa da sözleşmeyle bağlı kalmaya devam eder",
       "D": "Bu kayıt sözleşmeyi baştan itibaren kesin hükümsüz kıldığından, teslim de dâhil hiçbir işlem sonuç doğurmaz",
-      "E": "Şartın gerçekleşmesi sözleşmeyi geçmişe etkili biçimde ortadan kaldırır; taraflar aldıklarını tümüyle geri verir"
+      "E": "Şartın gerçekleşmesi sözleşmeyi geçmişe etkili biçimde ortadan kaldırır; taraflar o güne kadar aldıkları bütün edimleri karşılıklı olarak geri verir"
     },
     "answer": "B",
     "solution": "Sözleşme baştan hüküm doğurup belirli bir olgunun gerçekleşmesiyle sona erdiğinden kayıt bozucu (infisahi) şarttır (TBK m.173). Doğru cevap B.",
@@ -1040,7 +1040,7 @@
     "stem": "(K) ile (L) arasındaki sözleşmede, (K)'nin sözleşmeden dönebilmesi için (L)'ye ödediği bir 'cayma parası' kararlaştırılmıştır. (K) daha sonra sözleşmeden dönmek istemektedir. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Cayma parasını veren (K), sözleşmeden dönerse verdiği parayı bırakmak (geri alamamak) suretiyle dönme hakkını kullanmış olur",
-      "A": "(K) sözleşmeden dönemez; cayma parası kararlaştırılsa dahi taraflar sözleşmeyle kesin olarak bağlı kalır",
+      "A": "(K) sözleşmeden dönemez; cayma parası kararlaştırılmış olsa dahi taraflar sözleşmeyle kesin biçimde bağlı kalır ve dönme hakkı doğmaz",
       "B": "(K) sözleşmeden dönerse, verdiği cayma parasını (L)'den olduğu gibi geri alma hakkına sahip olur",
       "D": "(K) dönerse, verdiği parayı geri alacağı gibi (L)'den ayrıca aynı tutarda bir tazminat da isteyebilir",
       "E": "Cayma parası yalnızca (L)'ye dönme hakkı verir; (K) bu paraya dayanarak sözleşmeden dönemez"
@@ -1065,7 +1065,7 @@
       "A": "Verilen para cayma parası sayılır; alıcı bu parayı bırakarak sözleşmeden istediği zaman dönebilir",
       "B": "Verilen para her hâlde satıcıda kalan bir ceza niteliğindedir; sözleşme ifa edilse de alıcıya geri dönmez",
       "C": "Bağlanma parası sözleşme ifa edilse dahi asıl edimden düşülmez; ayrıca ve tam olarak alıcıya iade edilir",
-      "D": "Bağlanma parası verilmesi sözleşmenin henüz kurulmadığını gösterir; taraflar diledikleri gibi vazgeçebilir"
+      "D": "Bağlanma parası verilmesi sözleşmenin henüz kurulmadığını ve görüşmelerin sürdüğünü gösterir; taraflar bu aşamada diledikleri gibi serbestçe vazgeçebilir"
     },
     "answer": "E",
     "solution": "TBK m.177: cayma parası olarak kararlaştırılmadıkça verilen para bağlanma parasıdır (pey akçesi); sözleşme ifa edilince asıl edimden düşülür. Doğru cevap E.",
@@ -1087,7 +1087,7 @@
       "B": "Temsilci yetkisini aşsa da imzaladığı sözleşme her hâlde ve tümüyle şirketi doğrudan bağlar",
       "C": "Yetki aşımı hâlinde sözleşmenin tamamı, yetki dâhilindeki kısım da dâhil baştan itibaren kesin geçersiz olur",
       "D": "Yetki aşımı yalnızca (M) ile şirket arasındaki iç ilişkiyi ilgilendirir; sözleşme her hâlde şirketi bağlar",
-      "E": "Karşı taraf yetki sınırını bilmediği için sözleşme, şirketin onamasına gerek olmaksızın doğrudan şirketi bağlar"
+      "E": "Karşı taraf yetki sınırını bilmediği için sözleşme, şirketin ayrıca onamasına gerek olmaksızın doğrudan doğruya şirketi bağlar ve hüküm doğurur"
     },
     "answer": "A",
     "solution": "Yetki sınırının aşıldığı kısım yetkisiz temsil niteliğindedir; şirket onamadıkça o kısım kendisini bağlamaz (TBK m.46). Doğru cevap A.",
@@ -1108,7 +1108,7 @@
       "E": "Bu bir seçimlik cezai şart olup, borç ifa edilmezse alacaklı ifa ile ceza arasında seçim yapar; ikisini birlikte isteyemez",
       "A": "Bu bir ifaya ekli cezai şart olup, alacaklı hem aynen ifayı hem cezayı birlikte isteyebilir",
       "B": "Bu bir dönme cezası olup, borçlu bu tutarı ödeyerek sözleşmeden dönme hakkını kullanabilir",
-      "C": "Bu kayıt geçersizdir; ifa edilmemesi hâline bağlı ceza kararlaştırılması hukuken mümkün değildir",
+      "C": "Bu kayıt geçersiz sayılır; borcun hiç ifa edilmemesi hâline bağlanan bir ceza kararlaştırılması hukuken mümkün görülmemiştir",
       "D": "Alacaklı bu kayda dayanarak hem cezayı alır hem de ayrıca borcun aynen ifasını isteyebilir"
     },
     "answer": "E",
@@ -1150,7 +1150,7 @@
     "stem": "Müteselsil borçlulardan (X)'in alacaklıya karşı ileri sürebileceği, borcun bizzat kendisiyle ilgili kişisel bir def'i bulunmaktadır. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Bu kişisel def'iyi yalnızca (X) ileri sürebilir; diğer müteselsil borçlular (X)'e ait bu kişisel def'iden yararlanamaz",
-      "A": "(X)'in kişisel def'ini, ilişkideki bütün müteselsil borçlular da alacaklıya karşı ileri sürebilir",
+      "A": "(X)'in kişisel def'ini, aynı ilişkideki bütün müteselsil borçlular da alacaklıya karşı ileri sürebilir; def'i kişiye özgü kalmaz",
       "C": "(X) kişisel def'ini ileri süremez; müteselsil borçlu yalnızca borcun tamamını ödemekle yükümlüdür",
       "D": "(X)'in kişisel def'i, borcun tamamını bütün borçlular bakımından kendiliğinden sona erdirir",
       "E": "Kişisel def'i yalnızca alacaklı ileri sürebilir; borçluların def'i ileri sürme hakkı bulunmaz"
@@ -1173,7 +1173,7 @@
     "options": {
       "A": "İyiniyetli karşı taraf, sözleşmenin geçerli olduğuna güvenmesi yüzünden uğradığı menfi zararının giderilmesini yetkisiz temsilci (Y)'den isteyebilir",
       "B": "İşlem onanmadığından karşı taraf hiçbir talepte bulunamaz; uğradığı zarar tümüyle kendi üzerinde kalır",
-      "C": "Karşı taraf zararını yalnızca temsil olunan (Z)'den isteyebilir; yetkisiz temsilci (Y) hiçbir hâlde sorumlu olmaz",
+      "C": "Karşı taraf uğradığı zararı yalnızca temsil olunan (Z)'den isteyebilir; yetkisiz temsilci (Y) işlemi kendi adına yapmış olsa bile kişisel olarak sorumlu tutulamaz",
       "D": "Karşı taraf, (Z)'yi sözleşmeyi aynen ifaya zorlayabilir; (Z) onamasa da işlemle bağlı kalır",
       "E": "Karşı taraf (Y)'den yalnızca sözleşme ifa edilseydi elde edeceği tüm kazancı her hâlde isteyebilir"
     },
@@ -1196,7 +1196,7 @@
       "B": "Borçlu (B), alacaklılardan (A1)'e yaptığı ifayla borcun tamamından kurtulduğundan, (A2) artık borçludan ifa isteyemez; (A2) kendi payı için (A1)'e başvurur",
       "A": "Borçlu (B), her alacaklıya ayrı ayrı ödeme yapmak zorunda olduğundan (A2)'ye de borcun tamamını öder",
       "C": "Borçlu (B), (A1)'e ödeme yapmakla yalnızca (A1)'in payı kadar kurtulur; (A2)'nin payını ayrıca öder",
-      "D": "Müteselsil alacaklılıkta borçlu, ödemeyi hangi alacaklıya yapacağını seçemez; bu yüzden (A1)'e ödeme geçersizdir",
+      "D": "Müteselsil alacaklılıkta borçlu, ödemeyi hangi alacaklıya yapacağını kendisi seçemez; bu nedenle yalnız (A1)'e yapılan ödeme geçersiz sayılır ve borç sona ermez",
       "E": "Borçlu (B), (A2) de istediği için ödemeyi geri alıp borcu yeniden alacaklılar arasında paylaştırmak zorundadır"
     },
     "answer": "B",
@@ -1216,7 +1216,7 @@
     "stem": "Geciktirici şarta bağlı bir alacağın, şartın gerçekleşmesinden önceki askı döneminde alacaklının durumu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Alacaklının hakkı henüz doğmasa da borçlu, askı döneminde beklenen hakkı zedeleyecek davranışlardan kaçınmalıdır; korunan bir beklenti vardır",
-      "A": "Askı döneminde alacaklının hiçbir korunmaya değer menfaati yoktur; borçlu bu dönemde tümüyle serbesttir",
+      "A": "Askı döneminde alacaklının korunmaya değer hiçbir menfaati bulunmaz; borçlu bu dönemde edimin konusu üzerinde tümüyle serbest kalır ve dilediğini yapabilir",
       "B": "Askı döneminde alacaklının hakkı tam olarak doğmuştur; şart yalnızca ifa zamanını belirler",
       "C": "Askı döneminde alacaklı, şart gerçekleşmese dahi borcun aynen ifasını her zaman talep edebilir",
       "E": "Askı döneminde borçlu beklenen hakkı zedelese bile bunun hiçbir hukuki sonucu bulunmaz"
@@ -1262,7 +1262,7 @@
       "B": "Müteselsil borçlulukta birden çok borçlu alacaklıya karşı borcun tamamından sorumluyken; müteselsil alacaklılıkta birden çok alacaklının her biri borçludan borcun tamamını isteyebilir",
       "A": "İkisi de aynı kurumdur; borçlu ile alacaklı tarafındaki çokluk arasında hiçbir hukuki fark yoktur",
       "C": "Müteselsil borçlulukta her borçlu yalnızca payından, müteselsil alacaklılıkta her alacaklı tamamından sorumludur",
-      "D": "Müteselsil borçlulukta alacaklı borcu bir borçludan, müteselsil alacaklılıkta borçlu ödemeyi tüm alacaklılara birlikte yapar",
+      "D": "Müteselsil borçlulukta alacaklı borcun tamamını dilediği bir borçludan ister; müteselsil alacaklılıkta ise borçlu ödemeyi alacaklıların hepsine birlikte yapmakla kurtulur",
       "E": "Müteselsil alacaklılık yalnızca kanundan, müteselsil borçluluk ise yalnızca sözleşmeden doğabilir"
     },
     "answer": "B",
@@ -1304,7 +1304,7 @@
     "stem": "İfaya ekli (gecikme) cezai şart kararlaştırılmış bir borçta, alacaklının gecikmeli yapılan ifayı hiçbir çekince koymadan (kayıtsız) kabul etmesi hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Alacaklı, gecikmeli ifayı çekince koymaksızın kabul etmişse, kural olarak artık kararlaştırılan gecikme cezasını isteyemez",
-      "B": "Alacaklı gecikmeli ifayı çekincesiz kabul etse dahi, kararlaştırılan gecikme cezasını her hâlde ayrıca isteyebilir",
+      "B": "Alacaklı gecikmeli ifayı çekince koymadan kabul etmiş olsa dahi, kararlaştırılmış olan gecikme cezasını her hâlde ayrıca talep edebilir",
       "C": "Alacaklının ifayı kabul etmesi, yalnızca asıl borcu değil ceza alacağını da artırır; iki katını isteyebilir",
       "D": "Alacaklı ifayı çekincesiz kabul etse de, cezayı isteyip istememeye artık borçlu karar verir",
       "E": "Alacaklının ifayı kabulü sözleşmeyi baştan geçersiz kıldığından, ne ifa ne de ceza istenebilir hâle gelir"
