@@ -91,7 +91,11 @@ def tekrar_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
         (trend_analizi'nde 600.000/500.000 ve 960.000/800.000 → ikisi de %120).
     """
     issues: list[tuple[str, str]] = []
-    sablonlar: dict[tuple, tuple[str, str]] = {}
+    # şablon → {cevap: ilk soran id}. ⚠ Şablon başına yalnız İLK soruyu tutmak
+    # yetmez: iskelet aynı, ilk soru %20, sonraki ikisi %10 ise o ikisi hiç
+    # karşılaştırılmaz ve klon kaçar. İlk sürümüm böyleydi; 20 klon raporladı,
+    # cevap bazında tutunca gerçek sayı çıktı.
+    sablonlar: dict[tuple, dict[str, str]] = {}
     cozumler: dict[str, str] = {}
     coz_sablon: dict[str, str] = {}
 
@@ -100,12 +104,12 @@ def tekrar_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
         cevap = metin(question["options"][question["answer"]])
 
         anahtar = soru_sablonu(question)
-        onceki = sablonlar.get(anahtar)
-        if onceki and onceki[1] == cevap:
-            issues.append(("FATAL", f"{qid}: {onceki[0]} ile aynı şablon VE aynı cevap "
+        gorulen = sablonlar.setdefault(anahtar, {})
+        if cevap in gorulen:
+            issues.append(("FATAL", f"{qid}: {gorulen[cevap]} ile aynı şablon VE aynı cevap "
                                     "— sayı değişmiş ama sorulan işlem ve sonuç aynı"))
-        elif not onceki:
-            sablonlar[anahtar] = (qid, cevap)
+        else:
+            gorulen[cevap] = qid
 
         cozum = metin(re.sub(r"\s*Doğru cevap [A-E]\.\s*$", "", question["solution"]))
         if len(cozum) >= 45:

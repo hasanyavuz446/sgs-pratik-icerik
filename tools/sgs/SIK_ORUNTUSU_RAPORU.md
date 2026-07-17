@@ -120,18 +120,23 @@ Kör öğrenci ≥%35 **FATAL**, ≥%28 UYARI. Boy ipucu ≥%45 UYARI. Regresyon
 
 | dosya | klon |
 |---|---:|
-| `denetim_riski.json` | 4 |
-| `dikey_analiz.json` | 3 |
+| `trend_analizi.json` | 18 |
+| `karsilastirmali_analiz.json` | 10 |
+| `denetim_riski.json` | 7 |
+| `dikey_analiz.json` | 4 |
+| `oran_analizi.json` | 3 |
+| `nakit_akim_analizi.json` | 3 |
 | `maliyet_hacim_kar.json` | 3 |
-| `oran_analizi.json` | 2 |
-| `trend_analizi.json` | 2 |
 | `mali_duran_varliklar.json` | 1 |
 | `maliyet_hesaplari.json` | 1 |
-| `karsilastirmali_analiz.json` | 1 |
 | `fon_akim_analizi.json` | 1 |
-| `nakit_akim_analizi.json` | 1 |
 | `safha_maliyeti.json` | 1 |
 
-**Toplam 20 klon / 11 dosya.** Ayrıca 18 yakın-tekrar UYARI'sı (elle karşılaştırılacak).
+**Toplam 52 klon / 11 dosya.** Ayrıca 18 yakın-tekrar UYARI'sı (elle karşılaştırılacak).
 
 Bu kurallarda **temiz çıkanlar**: çözüm birebir tekrarı 0, çözüm şablonu 0, mevzuat oranı 0 — içerik bu üç kurala zaten uyuyormuş; kural yazılıydı, yalnız ölçen yoktu.
+
+> ⚠️ Bu sayı bir kez düzeltildi: dedektörün ilk sürümü şablon başına yalnız İLK
+> soruyu tutuyordu, bu yüzden ilk soru farklı cevaplıysa sonraki klonlar hiç
+> karşılaştırılmıyordu. **20 → 52.** Hatayı denetim değil, düzeltme yamasının kendi
+> assertion'ı buldu (`den-risk-gen-0012 ↔ 0026`).

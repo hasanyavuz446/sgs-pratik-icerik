@@ -182,6 +182,18 @@ class TekrarTest(unittest.TestCase):
                            self.sayisal("q2", "200.000", "260.000", "%130")])
         self.assertEqual([f for f in fatals if "aynı şablon" in f], [])
 
+    def test_ilk_soru_farkli_cevapliysa_sonraki_klonlar_kacmaz(self):
+        """Şablon başına yalnız İLK soruyu tutan sürüm bu çifti kaçırıyordu.
+
+        İskelet üçünde de aynı; ilki %120, sonraki İKİSİ %130. Yalnız ilke bakan
+        bir dedektör 2↔3'ü hiç karşılaştırmaz. Klonu bu yamanın kendi assertion'ı
+        buldu, denetim değil.
+        """
+        fatals = audit_et([self.sayisal("q1", "500.000", "600.000", "%120"),
+                           self.sayisal("q2", "200.000", "260.000", "%130"),
+                           self.sayisal("q3", "600.000", "780.000", "%130")])
+        self.assertTrue(any("q3" in f and "q2" in f for f in fatals), fatals)
+
     def test_birebir_ayni_cozum_yakalanir(self):
         ortak = "Trend yüzdesi, cari dönem tutarının baz yıl tutarına bölünüp yüz ile çarpılmasıdır."
         a = self.sayisal("q1", "500.000", "600.000", "%120"); a["solution"] = ortak
