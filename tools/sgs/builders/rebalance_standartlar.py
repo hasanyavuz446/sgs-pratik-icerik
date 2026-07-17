@@ -412,6 +412,128 @@ TMS38_KISALT = {
     "std-tms38-gen-0047": {"A": "İç tahminle belirlenir"},
 }
 
+TMS16_UZAT = {
+    "std-tms16-gen-0001": {"E": "İşletmenin kısa sürede satmak amacıyla elde tuttuğu ve bir hesap döneminden kısa sürede tüketilen dönen varlıkları ifade eder; uzun süreli kullanım ve üretim amacı bu tanımda hiç aranmaz"},
+    "std-tms16-gen-0004": {"E": "Maliyete yalnızca satın alma fiyatı girer; varlığı çalışır duruma getirmek için katlanılan doğrudan maliyetler ile sökme ve restorasyon yükümlülükleri maliyete hiçbir biçimde dâhil edilmez"},
+    "std-tms16-gen-0051": {"C": "Varlık hiçbir hâlde bilanço dışı bırakılamaz; faydalı ömrü sona erse ya da elden çıkarılsa dahi maliyet bedeliyle süresiz olarak kayıtlarda tutulur ve hiçbir zaman çıkarılmaz"},
+    "std-tms16-gen-0010": {"D": "Sökme ve restorasyon maliyetleri yalnızca dipnotta açıklanır; bu yükümlülük için ne bir karşılık ayrılır ne de varlığın maliyetine herhangi bir tutar eklenir"},
+    "std-tms16-gen-0018": {"A": "Yeni parçanın maliyeti her hâlde doğrudan gider yazılır; muhasebeleştirme ölçütlerini karşılasa dahi varlığın defter değerine hiçbir biçimde eklenmez ve aktifleştirilmez"},
+    "std-tms16-gen-0021": {"E": "Emniyet veya çevre nedeniyle edinilen varlıklar doğrudan ekonomik yarar sağlamadığından hiçbir hâlde aktifleştirilmez; katlanılan tutarın tamamı dönem gideri olarak yazılır"},
+    "std-tms16-gen-0015": {"E": "Maddi duran varlığa ilişkin tüm sonraki harcamalar, muhasebeleştirme ölçütlerini karşılasa dahi oluştukları dönemde doğrudan gider olarak yazılır ve defter değerine eklenmez"},
+    "std-tms16-gen-0048": {"B": "Azalış hiçbir biçimde kayda alınmaz; yeniden değerleme sonucu defter değerindeki düşüş yalnızca dipnotlarda açıklanır ve finansal tablolara hiçbir tutar yansıtılmaz"},
+    "std-tms16-gen-0025": {"E": "Amortismana, varlığın satın alındığı tarihte başlanır; varlığın kullanıma hazır hâle gelip gelmediği ve yönetimin amaçladığı konuma ulaşıp ulaşmadığı hiç dikkate alınmaz"},
+}
+TMS16_KISALT = {
+    "std-tms16-gen-0006": {"A": "Aktifleştirilir"},
+    "std-tms16-gen-0057": {"B": "TMS 2 uygulanır"},
+    "std-tms16-gen-0016": {"A": "Defter değerine eklenir"},
+    "std-tms16-gen-0055": {"A": "Farklı tarihlerde değerlenir"},
+    "std-tms16-gen-0024": {"A": "Maliyet artı kalıntı değerdir"},
+    "std-tms16-gen-0027": {"A": "Yalnızca doğrusal yöntem kullanılır"},
+}
+
+# ── TMS 2 · Stoklar ───────────────────────────────────────────────────────────
+TMS2_OZEL = {
+    "std-tms2-gen-0003": "Stoklar her hâlde maliyet bedeliyle ölçülür; net gerçekleşebilir değer ile karşılaştırma yapılmaz",
+    "std-tms2-gen-0011": "Stok maliyeti yalnızca satın alma bedelinden oluşur; dönüştürme maliyetleri ve diğer maliyetler kapsam dışıdır",
+    "std-tms2-gen-0014": "Sabit genel üretim giderleri her hâlde fiili üretim kapasitesine göre dağıtılır; normal kapasite dikkate alınmaz",
+    "std-tms2-gen-0016": "Anormal derecede yüksek üretimde her birime dağıtılan sabit gider payı artırılır ve stok maliyeti yükseltilir",
+    "std-tms2-gen-0018": "Normalin üstündeki fire ve üretim sonrası depolama giderleri de her hâlde stok maliyetine eklenir",
+    "std-tms2-gen-0019": "Vadeli alımdaki finansman unsuru da stok maliyetine dâhil edilir; peşin ile vadeli fiyat farkı maliyete eklenir",
+    "std-tms2-gen-0024": "Sonraki üretim aşaması için zorunlu olmayan depolama giderleri de her hâlde stok maliyetine eklenir",
+    "std-tms2-gen-0032": "İşletme, benzer nitelikteki stoklar için farklı maliyet yöntemlerini dönemden döneme serbestçe değiştirerek uygulayabilir",
+    "std-tms2-gen-0042": "Net gerçekleşebilir değere indirgeme her hâlde tüm stoklar toplu olarak tek bir kalemde değerlendirilerek yapılır",
+    "std-tms2-gen-0056": "Kesin satış sözleşmesine bağlı stoklarda net gerçekleşebilir değer, sözleşme fiyatı yerine güncel piyasa fiyatına göre belirlenir",
+    "std-tms2-gen-0057": "Net gerçekleşebilir değer yalnızca stok satıldığında değerlendirilir; her raporlama döneminde yeniden ölçülmez",
+}
+TMS2_UZAT = {
+    "std-tms2-gen-0036": {"D": "Perakende yönteminde stoklar her hâlde satış fiyatıyla ölçülür; brüt kâr marjı hiç düşülmeden bulunan bu tutar maliyet yerine geçer ve hiçbir indirim uygulanmaz"},
+    "std-tms2-gen-0027": {"A": "Yalnızca son giren ilk çıkar yöntemi kullanılabilir; ilk giren ilk çıkar ve ağırlıklı ortalama yöntemleri TMS 2'de kesin olarak yasaklanmıştır"},
+    "std-tms2-gen-0018": {"E": "Normalin üstündeki fire, üretim sonrası depolama ve genel yönetim giderleri de her hâlde stok maliyetine eklenir ve satılana kadar aktifte tutulur"},
+    "std-tms2-gen-0012": {"E": "Satın alma maliyeti yalnızca ithal edilen stoklar için hesaplanır; yurt içi alımlarda navlun, sigorta ve gümrük gibi unsurlar maliyete hiç dâhil edilmez"},
+    "std-tms2-gen-0037": {"B": "Standart maliyet yöntemi kullanılırken standartlar hiçbir zaman gözden geçirilmez; ilk belirlenen tutarlar dönem koşulları değişse dahi sabit kalır"},
+    "std-tms2-gen-0011": {"C": "Stok maliyeti yalnızca satın alma bedelinden oluşur; dönüştürme maliyetleri, genel üretim giderleri ve diğer maliyetler stok maliyetine hiç girmez"},
+    "std-tms2-gen-0013": {"A": "Yalnızca direkt işçilik maliyetlerinden oluşur; değişken ve sabit genel üretim giderleri dönüştürme maliyetine hiçbir biçimde dâhil edilmez"},
+    "std-tms2-gen-0029": {"B": "Bu tür stoklarda hiçbir maliyet belirlenmez; ölçüm doğrudan net gerçekleşebilir değerle yapılır ve maliyet ile karşılaştırma yapılmaz"},
+    "std-tms2-gen-0001": {"D": "Yalnızca stok sayımının nasıl yapılacağını düzenleyen bir denetim standardıdır; stokların ölçümü ve maliyet yöntemleri bu standardın kapsamı dışındadır"},
+    "std-tms2-gen-0019": {"E": "Vadeli alımdaki finansman unsuru da stok maliyetine dâhil edilir; peşin fiyat ile vadeli fiyat arasındaki fark faiz gideri olarak değil maliyet olarak yazılır"},
+    "std-tms2-gen-0055": {"D": "Tahminde yalnızca vergi idaresinin belirlediği değerler kullanılabilir; işletmenin kendi güvenilir tahminleri ve piyasa kanıtları geçersiz sayılır"},
+    "std-tms2-gen-0002": {"A": "İşletmenin uzun vadeli kullanım amacıyla elde tuttuğu makine ve teçhizat gibi duran varlıkları ifade eder; satış amaçlı dönen varlıklar bu tanıma girmez"},
+}
+
+# ── TMS 16 · Maddi Duran Varlıklar ────────────────────────────────────────────
+TMS16_OZEL = {
+    "std-tms16-gen-0001": "İşletmenin kısa sürede satmak amacıyla elde tuttuğu, bir dönemden kısa sürede tüketilen varlıkları ifade eder",
+    "std-tms16-gen-0004": "Maliyete yalnızca satın alma fiyatı girer; varlığı çalışır duruma getirmek için katlanılan doğrudan maliyetler hariç tutulur",
+    "std-tms16-gen-0007": "Maliyete ekleme, varlık fiilen kullanılmaya başlandığı değil, tümüyle itfa edildiği tarihte durdurulur",
+    "std-tms16-gen-0008": "Vadeli satın alınan maddi duran varlık, toplam vadeli ödeme tutarıyla ölçülür; peşin fiyat eşdeğeri dikkate alınmaz",
+    "std-tms16-gen-0015": "Maddi duran varlığa ilişkin tüm sonraki harcamalar oluştukları dönemde doğrudan gider olarak yazılır",
+    "std-tms16-gen-0017": "Düzenli aralıklarla yapılan büyük çaplı denetim maliyetleri her hâlde doğrudan gider yazılır; defter değerine eklenmez",
+    "std-tms16-gen-0019": "Maddi duran varlık hiçbir koşulda parçalara ayrılamaz; tüm varlık tek bir kalem olarak amortismana tabi tutulur",
+    "std-tms16-gen-0020": "Yedek parça ve donanım malzemeleri her hâlde stok olarak sınıflandırılır; maddi duran varlık sayılamaz",
+    "std-tms16-gen-0021": "Emniyet veya çevre nedeniyle edinilen varlıklar doğrudan ekonomik yarar sağlamadığından hiçbir hâlde aktifleştirilmez",
+    "std-tms16-gen-0023": "Amortisman, varlığın gerçeğe uygun değerindeki dönemsel azalışın kâr veya zarara yansıtılması işlemidir",
+    "std-tms16-gen-0024": "Amortismana tabi tutar, varlığın maliyetine kalıntı değerinin eklenmesiyle bulunan tutardır",
+    "std-tms16-gen-0025": "Amortismana, varlığın satın alındığı tarihte başlanır; varlığın kullanıma hazır olup olmaması dikkate alınmaz",
+    "std-tms16-gen-0026": "Boş duran ve kullanılmayan maddi duran varlık için amortisman ayrılması durdurulur",
+    "std-tms16-gen-0027": "Yalnızca doğrusal amortisman yöntemi kullanılabilir; azalan bakiyeler ve üretim miktarı yöntemleri kabul edilmez",
+    "std-tms16-gen-0028": "Hasılata dayalı amortisman yöntemi maddi duran varlıklar için her hâlde en uygun ve önerilen yöntemdir",
+    "std-tms16-gen-0029": "Amortisman yöntemi bir kez belirlendikten sonra hiçbir zaman gözden geçirilmez; ömür boyunca sabit kalır",
+    "std-tms16-gen-0030": "Faydalı ömür ve kalıntı değer ilk kayıttan sonra bir daha gözden geçirilmez; başlangıç tahminleri sabit kalır",
+    "std-tms16-gen-0031": "Kalıntı değer defter değerine eşit veya ondan büyükse varlığın amortisman gideri iki katına çıkarılır",
+    "std-tms16-gen-0032": "Arazi ve binalar birlikte satın alındığında tek bir kalem olarak birlikte amortismana tabi tutulur",
+    "std-tms16-gen-0036": "Amortisman gideri her hâlde doğrudan özkaynaktan indirilir; kâr veya zarara hiçbir biçimde yansıtılmaz",
+    "std-tms16-gen-0041": "Maddi duran varlıklar her hâlde yeniden değerleme modeliyle ölçülür; maliyet modeli kullanılamaz",
+    "std-tms16-gen-0042": "Seçilen ölçüm modeli yalnızca yeni edinilen varlıklara uygulanır; mevcut varlıklar eski modelle ölçülmeye devam eder",
+    "std-tms16-gen-0043": "Maliyet modelinde varlık, gerçeğe uygun değeriyle ölçülür ve değer değişimleri kâr veya zarara yansıtılır",
+    "std-tms16-gen-0044": "Yeniden değerleme modeli, gerçeğe uygun değeri güvenilir biçimde ölçülemeyen varlıklara da uygulanabilir",
+    "std-tms16-gen-0045": "Yeniden değerleme her hâlde her beş yılda bir yapılır; defter değeri ile gerçeğe uygun değer farkı dikkate alınmaz",
+    "std-tms16-gen-0047": "Daha önce kâr veya zarara yazılmış bir azalışı tersine çeviren artış her hâlde doğrudan özkaynağa kaydedilir",
+    "std-tms16-gen-0050": "Yeniden değerleme değer artış fonu, varlık bilanço dışı bırakıldığında kâr veya zarara yeniden sınıflandırılır",
+    "std-tms16-gen-0051": "Maddi duran varlık yalnızca fiziksel olarak yok olduğunda finansal tablo dışı bırakılır",
+    "std-tms16-gen-0055": "Yeniden değerleme modelinde bir sınıftaki varlıklar birbirinden bağımsız olarak farklı tarihlerde değerlenebilir",
+    "std-tms16-gen-0056": "Maddi duran varlık sınıfı, işletmenin sahip olduğu tüm maddi duran varlıkları tek bir grupta toplar",
+}
+
+# ── TMS 20 · Devlet Teşvikleri ────────────────────────────────────────────────
+TMS20_OZEL = {
+    "std-tms20-gen-0001": "İşletmelere hiçbir koşula bağlı olmaksızın karşılıksız yapılan ve geri istenmeyecek her türlü doğrudan bağıştır",
+    "std-tms20-gen-0002": "Devlet yardımı, yalnızca nakit olarak yapılan doğrudan hibeleri kapsayan dar kapsamlı bir kavramdır",
+    "std-tms20-gen-0003": "TMS 20'de devlet kavramı yalnızca merkezî hükûmeti ifade eder; yerel yönetimler ve uluslararası kuruluşlar kapsam dışıdır",
+    "std-tms20-gen-0004": "Varlıklara ilişkin teşvikler, işletmenin cari dönem giderlerini karşılamak amacıyla verilen kısa vadeli nakit desteklerdir",
+    "std-tms20-gen-0005": "Gelire ilişkin teşvikler, işletmenin duran varlık edinmesi koşuluna bağlanan uzun vadeli sermaye destekleridir",
+    "std-tms20-gen-0006": "Devlet teşvikleri, koşulların yerine getirileceğine dair güvence aranmaksızın tahsil edildikleri anda gelir yazılır",
+    "std-tms20-gen-0007": "Teşvikin tahsil edilmiş olması, ilgili tüm koşulların da yerine getirildiğini kesin olarak kanıtlar",
+    "std-tms20-gen-0008": "Parasal olmayan devlet teşvikleri her hâlde nominal değerle, yani sıfır bedelle muhasebeleştirilir",
+    "std-tms20-gen-0010": "Devlet teşviklerinde sermaye yaklaşımı benimsenmiştir; teşvikler doğrudan özkaynağa alınır ve gelire hiç yansıtılmaz",
+    "std-tms20-gen-0011": "Devlet teşvikleri her hâlde doğrudan özkaynağa kaydedilir; kâr veya zararla hiçbir zaman ilişkilendirilmez",
+    "std-tms20-gen-0012": "Devlet teşvikleri her hâlde tahsil edildikleri dönemin kâr veya zararına tek seferde yansıtılır",
+    "std-tms20-gen-0015": "Varlıklara ilişkin teşvikler yalnızca ilgili varlığın defter değerinden düşülerek gösterilir; ertelenmiş gelir yöntemi kullanılamaz",
+    "std-tms20-gen-0016": "Ertelenmiş gelir yönteminde teşvik, tahsil edildiği dönemde bir defada gelir olarak muhasebeleştirilir",
+    "std-tms20-gen-0017": "Teşvikin varlığın defter değerinden düşüldüğü yöntemde amortisman, indirim yapılmamış brüt tutar üzerinden hesaplanır",
+    "std-tms20-gen-0018": "İki sunum yöntemi dönem kârı üzerinde farklı net etki doğurur; yöntem seçimi dönem kârını önemli ölçüde değiştirir",
+    "std-tms20-gen-0021": "Varlıklara ilişkin teşviklerde varlık alımı ve teşvik nakit akış tablosunda netleştirilerek tek bir tutarla gösterilir",
+    "std-tms20-gen-0022": "Bedelsiz devredilen arazi parasal bir teşviktir; yalnızca nominal değerle finansal tablolara alınır",
+    "std-tms20-gen-0024": "Amortismana tabi olmayan bir varlığa ilişkin teşvik, tahsil edildiği dönemde tümüyle gelir olarak yazılır",
+    "std-tms20-gen-0025": "Bir dizi koşula bağlı teşvikin kâr veya zarara yansıtılacağı dönemler dikkate alınmaz; teşvik ilk yıl tek seferde gelir yazılır",
+    "std-tms20-gen-0026": "Teşvik alınan makinede amortisman, teşvik düşülmemiş brüt maliyet üzerinden hesaplanır",
+    "std-tms20-gen-0029": "Gelire ilişkin teşvikler her hâlde doğrudan özkaynağa kaydedilir; gelir tablosunda hiçbir biçimde gösterilmez",
+    "std-tms20-gen-0031": "Geri ödenebilir hâle gelen teşvik, geçmişe dönük bir hata düzeltmesi olarak geriye dönük muhasebeleştirilir",
+    "std-tms20-gen-0032": "Gelire ilişkin bir teşvikin geri ödenmesi doğrudan özkaynaktan düşülür; kâr veya zararla ilişkilendirilmez",
+    "std-tms20-gen-0033": "Varlıklara ilişkin bir teşvikin geri ödenmesinde varlığın defter değeri azaltılır veya ertelenmiş gelir artırılır",
+    "std-tms20-gen-0034": "Teşvik geri ödendiğinde artan defter değerinin değer düşüklüğüne uğrayıp uğramadığı hiçbir hâlde değerlendirilmez",
+    "std-tms20-gen-0038": "Ekonomik faydası makul biçimde ölçülemeyen devlet yardımları da her hâlde gerçeğe uygun değerle finansal tablolara alınır",
+    "std-tms20-gen-0039": "Devletin işletmenin müşterisi olarak yaptığı olağan alım-satım işlemleri de devlet teşviki olarak muhasebeleştirilir",
+    "std-tms20-gen-0040": "Piyasa faizinin altında faizli devlet kredisinde faiz avantajı teşvik sayılmaz; kredi nominal tutarıyla kaydedilir",
+    "std-tms20-gen-0046": "Devlet teşviklerinin tahsil esasına göre gelir yazılması tahakkuk esasıyla tümüyle uyumlu bir uygulamadır",
+    "std-tms20-gen-0048": "Devlet teşviki koşullu borç doğursa dahi TMS 37 uygulanmaz; teşvik her hâlde gelir olarak muhasebeleştirilir",
+    "std-tms20-gen-0049": "Düşük faizli devlet kredisi ve vergiye dayalı yardımlar da her hâlde TMS 20 kapsamında ele alınır",
+    "std-tms20-gen-0051": "İşletme koşulları henüz yerine getirmemişse teşvik, elde edileceğine dair güvence olsa dahi hiçbir hâlde muhasebeleştirilemez",
+    "std-tms20-gen-0054": "Teşvikin tahsil şekli uygulanacak muhasebe yöntemini belirler; nakit ve ayni tahsil farklı yöntemler gerektirir",
+    "std-tms20-gen-0055": "Devlete olan borcun silinmesi biçimindeki destek teşvik sayılmaz ve doğrudan olağandışı gelir olarak yazılır",
+    "std-tms20-gen-0060": "İşletme sunum yöntemini her dönem serbestçe değiştirebilir; yöntemler arasında tutarlılık aranmaz",
+}
+
 # ── TMS 36 · Varlıklarda Değer Düşüklüğü ──────────────────────────────────────
 TMS36_OZEL = {
     "std-tms36-gen-0002": "Bir varlığın geri kazanılabilir tutarının defter değerini aştığı tutardır; bu durumda varlık değer kazanmış sayılır",
@@ -727,6 +849,9 @@ KONFIG: dict[str, dict] = {
     "kavramsal_cerceve": {"atma_ozel": KAVRAM_OZEL, "uzat": KAVRAM_UZAT},
     "tms_38_modv": {"atma_ozel": TMS38_OZEL, "kisalt": TMS38_KISALT},
     "tms_36_deger_dusuklugu": {"atma_ozel": TMS36_OZEL},
+    "tms_20_devlet_tesvik": {"atma_ozel": TMS20_OZEL},
+    "tms_16_mdv": {"atma_ozel": TMS16_OZEL, "uzat": TMS16_UZAT, "kisalt": TMS16_KISALT},
+    "tms_2_stoklar": {"atma_ozel": TMS2_OZEL, "uzat": TMS2_UZAT},
 }
 
 
