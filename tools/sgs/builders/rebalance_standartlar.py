@@ -349,6 +349,100 @@ TMS37_OZEL = {
     "std-tms37-gen-0058": "Genel kurul kararından önce dahi dağıtılması beklenen kâr payı için mevcut yükümlülük doğar ve karşılık ayrılır",
 }
 
+# tfrs_16 doğru şıkları uzun (ort 83); 34 atma sonrası hâlâ %42 doğru-en-uzun
+# → 8 soruda çeldirici içerikle üstüne çıkarıldı.
+TFRS16_UZAT = {
+    "std-tfrs16-gen-0050": {"E": "Devrin satış sayıldığı işlemde satıcı-kiracı, varlığın tümüne ilişkin kazancın tamamını hemen kâra yansıtır ve elde tuttuğu kullanım hakkıyla sınırlı kazanç ayrımını hiç yapmaz"},
+    "std-tfrs16-gen-0017": {"E": "Kira ödemeleri her hâlde piyasadaki güncel gösterge faiz oranıyla iskonto edilir; kiralamadaki zımni faiz oranı kolayca belirlenebilse dahi hiçbir koşulda kullanılmaz"},
+    "std-tfrs16-gen-0023": {"D": "Kira ödemeleri yalnızca sabit ödemeleri kapsar; endekse bağlı değişken ödemeler, kalıntı değer taahhütleri ve satın alma opsiyonu bedelleri hiçbir hâlde kapsama girmez"},
+    "std-tfrs16-gen-0057": {"D": "Kiralamada yapılan her değişiklik, kapsam ve bedeldeki etkisine bakılmaksızın her hâlde ayrı bir yeni kiralama olarak baştan muhasebeleştirilir"},
+    "std-tfrs16-gen-0053": {"C": "Bina her hâlde bilançoda tutulmaya devam edilir; devrin satış sayılıp sayılmadığına bakılmaksızın varlık hiçbir zaman bilançodan çıkarılmaz"},
+    "std-tfrs16-gen-0004": {"E": "Tedarikçinin varlığı istediği zaman eşdeğeriyle ikame etme hakkı bulunsa dahi varlık tanımlanmış sayılır ve kiralama kapsamında değerlendirilir"},
+    "std-tfrs16-gen-0060": {"B": "Kiracının varlık ve yükümlülükleri azalır; kiralama işlemi hem varlık hem borç tarafını küçülterek toplam bilanço büyüklüğünü düşürür"},
+    "std-tfrs16-gen-0003": {"E": "Kullanımdan sağlanacak ekonomik yararların yalnızca küçük bir kısmını elde etme hakkı, varlığın kullanımını kontrol etmek için yeterli sayılır"},
+}
+
+# ── TFRS 16 · Kiralamalar ─────────────────────────────────────────────────────
+TFRS16_OZEL = {
+    "std-tfrs16-gen-0001": "Bir varlığın mülkiyetinin belirli bir bedel karşılığında kalıcı olarak devredilmesini sağlayan sözleşmedir",
+    "std-tfrs16-gen-0002": "Bir sözleşmenin kiralama sayılması için tedarikçinin varlığı işletme adına işletmesi ve bakımını üstlenmesi yeterlidir",
+    "std-tfrs16-gen-0003": "Kullanımdan sağlanacak ekonomik yararların yalnızca küçük bir kısmını elde etme hakkı kontrol için yeterlidir",
+    "std-tfrs16-gen-0004": "Tedarikçinin varlığı istediği zaman eşdeğeriyle ikame etme hakkı bulunsa dahi varlık tanımlanmış sayılır",
+    "std-tfrs16-gen-0005": "Kiracı, kiralamalarını finansal kiralama ve faaliyet kiralaması olarak ikiye ayırır ve farklı biçimde muhasebeleştirir",
+    "std-tfrs16-gen-0006": "Kiraya veren de kiracı gibi tüm kiralamalar için tek bir model uygular; finansal-faaliyet ayrımı yapmaz",
+    "std-tfrs16-gen-0007": "Kiracı yalnızca uzun vadeli ve yüksek değerli kiralamalar için muafiyet uygulayabilir",
+    "std-tfrs16-gen-0008": "Kısa vadeli kiralama, başlangıçta süresi yirmi dört ay veya daha kısa olan ve satın alma opsiyonu içeren kiralamadır",
+    "std-tfrs16-gen-0010": "Düşük değerli varlık muafiyeti yalnızca işletme genelinde tüm kiralamalara bir bütün olarak birlikte uygulanabilir",
+    "std-tfrs16-gen-0011": "Kısa vadeli kiralama muafiyeti kiralama bazında tek tek yapılan bir tercihtir",
+    "std-tfrs16-gen-0016": "Başlangıç tarihinde ödenecek kira ödemelerinin toplam nominal tutarıyla ölçülür; iskonto yapılmaz",
+    "std-tfrs16-gen-0017": "Kira ödemeleri her hâlde piyasadaki güncel gösterge faiz oranıyla iskonto edilir; zımni faiz oranı kullanılmaz",
+    "std-tfrs16-gen-0018": "Kullanım hakkı varlığı başlangıçta gerçeğe uygun değeriyle ölçülür",
+    "std-tfrs16-gen-0019": "Kullanım hakkı varlığının maliyeti yalnızca ilk kira ödemesinden oluşur; doğrudan maliyet ve restorasyon tutarları hariçtir",
+    "std-tfrs16-gen-0022": "Başlangıçtaki doğrudan maliyetler oluştukları dönemde doğrudan gider yazılır; kullanım hakkı varlığına eklenmez",
+    "std-tfrs16-gen-0023": "Kira ödemeleri yalnızca sabit ödemeleri kapsar; endekse bağlı ödemeler ve kalıntı değer taahhütleri kapsam dışıdır",
+    "std-tfrs16-gen-0024": "Endekse bağlı olmayan değişken kira ödemeleri de kira yükümlülüğünün ilk ölçümüne dâhil edilir",
+    "std-tfrs16-gen-0025": "Kiralama süresi yalnızca iptal edilemeyen dönemdir; uzatma ve sonlandırma opsiyonları hiçbir hâlde dikkate alınmaz",
+    "std-tfrs16-gen-0026": "Kiralama ve kiralama dışı bileşenler hiçbir hâlde ayrıştırılmaz; sözleşme bedeli tümüyle kiralama olarak muhasebeleştirilir",
+    "std-tfrs16-gen-0030": "Kullanım hakkı varlığı her hâlde gerçeğe uygun değer modeliyle ölçülür; maliyet modeli kullanılamaz",
+    "std-tfrs16-gen-0031": "Kullanım hakkı varlığı her hâlde dayanak varlığın faydalı ömrü boyunca amortismana tabi tutulur",
+    "std-tfrs16-gen-0033": "Kira yükümlülüğünün defter değeri her dönem sabit kalır; faiz ve ödemeler defter değerini değiştirmez",
+    "std-tfrs16-gen-0036": "Kiracının toplam kiralama gideri, kiralama süresi boyunca her yıl eşit tutarda dağıtılır",
+    "std-tfrs16-gen-0037": "Kira yükümlülüğü ilk ölçümden sonra hiçbir koşulda yeniden ölçülmez; süre veya ödeme değişse dahi sabit kalır",
+    "std-tfrs16-gen-0039": "Kullanım hakkı varlığı her hâlde finansal borç olarak sınıflandırılıp finansal durum tablosunda sunulur",
+    "std-tfrs16-gen-0040": "Kira yükümlülüğünün anapara kısmı işletme faaliyetlerinden nakit akışı olarak sunulur",
+    "std-tfrs16-gen-0041": "Kullanım hakkı varlığı ile kira yükümlülüğünün defter değerleri kiralama süresi boyunca her zaman birbirine eşit kalır",
+    "std-tfrs16-gen-0044": "Kiraya veren, mülkiyet risk ve getirilerini elinde tutsa dahi kiralamayı her hâlde finansal kiralama olarak sınıflandırır",
+    "std-tfrs16-gen-0048": "Kiraya veren, faaliyet kiralamasındaki dayanak varlık için hiçbir hâlde amortisman ayırmaz",
+    "std-tfrs16-gen-0049": "Satış ve geri kiralamada devrin satış olup olmadığı yalnızca sözleşmenin adına bakılarak belirlenir",
+    "std-tfrs16-gen-0050": "Devrin satış sayıldığı işlemde satıcı-kiracı, varlığın tümüne ilişkin kazancın tamamını hemen kâra yansıtır",
+    "std-tfrs16-gen-0051": "Devrin satış sayılmadığı işlemde satıcı-kiracı varlığı bilançodan çıkarır ve devir bedelini gelir yazar",
+    "std-tfrs16-gen-0052": "Kiraya verenin faaliyet kiralamasındaki başlangıç doğrudan maliyetleri oluştukları dönemde doğrudan gider yazılır",
+    "std-tfrs16-gen-0057": "Kiralamada yapılan her değişiklik, her hâlde ayrı bir yeni kiralama olarak muhasebeleştirilir",
+}
+
+# ── TMS 23 · Borçlanma Maliyetleri ────────────────────────────────────────────
+TMS23_OZEL = {
+    "std-tms23-gen-0001": "İşletmenin tüm faaliyetlerinden doğan genel yönetim ve finansman giderlerinin tamamını kapsayan geniş bir kavramdır",
+    "std-tms23-gen-0003": "Kısa sürede kullanıma veya satışa hazır hâle gelen, herhangi bir hazırlık süreci gerektirmeyen varlıklardır",
+    "std-tms23-gen-0006": "Finansal varlıklar ve gerçeğe uygun değerle ölçülen biyolojik varlıklar özellikli varlık sayılır; maliyetleri aktifleştirilir",
+    "std-tms23-gen-0007": "Borçlanma maliyetleri yalnızca banka kredilerinin nominal faizini kapsar; kira faizi ve etkin faiz düzeltmeleri kapsam dışıdır",
+    "std-tms23-gen-0008": "Yabancı para borçlanmalarından doğan kur farkları hiçbir hâlde borçlanma maliyeti sayılmaz ve aktifleştirilmez",
+    "std-tms23-gen-0009": "Doğrudan ilişkilendirilebilen borçlanma maliyeti, işletmenin toplam borçlanma maliyetinin varlık sayısına bölünmesiyle bulunur",
+    "std-tms23-gen-0012": "Elde edildiği anda kullanıma hazır olan makine de özellikli varlık sayılır; borçlanma maliyetleri maliyetine eklenir",
+    "std-tms23-gen-0013": "Özellikli varlıkla ilişkili borçlanma maliyetleri her hâlde oluştukları dönemde doğrudan gider olarak yazılır",
+    "std-tms23-gen-0014": "Diğer borçlanma maliyetleri de özellikli varlığın maliyetine eklenerek aktifleştirilir; gider yazılmaz",
+    "std-tms23-gen-0015": "Yüksek enflasyonlu ekonomilerde borçlanma maliyetlerinin tamamı her hâlde aktifleştirilir; hiçbir kısmı gider yazılmaz",
+    "std-tms23-gen-0017": "Özel borçlanmada, fonların geçici yatırımından elde edilen gelir aktifleştirilecek tutara eklenir",
+    "std-tms23-gen-0018": "Genel borçlanmalarda harcamalara aktifleştirme oranı uygulanmaz; tüm genel borçlanma maliyeti doğrudan aktifleştirilir",
+    "std-tms23-gen-0019": "Aktifleştirme oranı, işletmenin özel borçlanmalarına ilişkin faiz oranlarının basit ortalamasıdır",
+    "std-tms23-gen-0020": "Özellikli varlık için yapılan özel borçlanmalar da aktifleştirme oranı hesabına dâhil edilir",
+    "std-tms23-gen-0021": "Aktifleştirilen tutarın üst sınırı yoktur; oluşan borçlanma maliyetini aşan tutarlar da aktifleştirilebilir",
+    "std-tms23-gen-0026": "Özellikli varlığa ilişkin harcamalar yalnızca nakit ödemeleri kapsar; varlık transferi ve faizli borçlar harcama sayılmaz",
+    "std-tms23-gen-0027": "Aktifleştirme oranı, dönem başındaki toplam harcama tutarına uygulanır; ağırlıklı ortalama dikkate alınmaz",
+    "std-tms23-gen-0028": "Özel kredinin geçici yatırımından elde edilen faiz geliri, aktifleştirilecek borçlanma maliyetine eklenir",
+    "std-tms23-gen-0030": "Aktifleştirme oranının hesaplanamadığı karmaşık durumlarda hiçbir borçlanma maliyeti aktifleştirilmez",
+    "std-tms23-gen-0031": "Aktifleştirmeye başlamak için yalnızca borçlanma maliyetinin oluşması yeterlidir; harcama ve hazırlık faaliyeti aranmaz",
+    "std-tms23-gen-0032": "Hazır hâle getirme faaliyetleri yalnızca fiziki inşaatı kapsar; izin alma gibi teknik ve idari çalışmalar buna girmez",
+    "std-tms23-gen-0033": "İnşaat yapılmaksızın sadece elde tutulan arsanın borçlanma maliyetleri de bu dönemde aktifleştirilir",
+    "std-tms23-gen-0034": "Faaliyete ara verilen uzun süreli dönemlerde de borçlanma maliyetlerinin aktifleştirilmesi kesintisiz sürdürülür",
+    "std-tms23-gen-0036": "Önemli teknik ve idari çalışmaların sürdüğü dönemlerde de aktifleştirmeye her hâlde ara verilir",
+    "std-tms23-gen-0037": "Aktifleştirme, varlığın fiziken tamamlandığı değil, fiilen satıldığı tarihte sona erer",
+    "std-tms23-gen-0038": "Yalnızca rutin idari işlerin kaldığı varlık henüz tamamlanmamış sayılır; aktifleştirme sürdürülür",
+    "std-tms23-gen-0039": "Kısımlar hâlinde tamamlanan varlıklarda aktifleştirme, ancak varlığın tamamı bittiğinde sona erer",
+    "std-tms23-gen-0040": "Bütün olarak tamamlanması gereken varlıkta her kısım tamamlandıkça aktifleştirme ayrı ayrı sona erer",
+    "std-tms23-gen-0041": "Bağımsız bölümleri sırayla tamamlanan iş merkezinde aktifleştirme yalnızca son bölüm bittiğinde sona erer",
+    "std-tms23-gen-0044": "Köprü inşaatındaki yüksek su seviyesi kaynaklı gecikmede borçlanma maliyetlerinin aktifleştirilmesine ara verilir",
+    "std-tms23-gen-0045": "Özellikli varlığın defter değeri geri kazanılabilir tutarı aşsa dahi değer düşüklüğü zararı yazılmaz",
+    "std-tms23-gen-0048": "Uygulama doğrudur; özellikli varlık borçlanma maliyetlerinin doğrudan gider yazılması standarda uygundur",
+    "std-tms23-gen-0049": "Aktifleştirilen borçlanma maliyeti maddi duran varlığın maliyetine girmez; ayrı bir varlık olarak izlenir",
+    "std-tms23-gen-0050": "Gerçeğe uygun değerle ölçülen özellikli varlıklarda borçlanma maliyetlerinin aktifleştirilmesi her hâlde zorunlu tutulur",
+    "std-tms23-gen-0051": "Tekrarlanan biçimde çok sayıda üretilen stoklar özellikli varlık sayılır; borçlanma maliyeti aktifleştirilir",
+    "std-tms23-gen-0053": "Hem özel hem genel kredi kullanıldığında, tüm borçlanma maliyetine tek bir aktifleştirme oranı uygulanır",
+    "std-tms23-gen-0056": "Aktifleştirme oranı, özellikli varlığa ilişkin toplam harcamanın en yüksek tutarına uygulanır",
+    "std-tms23-gen-0057": "Özellikli varlık inşaatına başlanması, henüz harcama yapılmasa dahi aktifleştirmeye başlamak için yeterlidir",
+    "std-tms23-gen-0059": "Harcama özel krediyi aşmasa dahi genel borçlanmadan da borçlanma maliyeti aktifleştirilir",
+}
+
 # ── TMS 40 · Yatırım Amaçlı Gayrimenkuller ────────────────────────────────────
 TMS40_OZEL = {
     "std-tms40-gen-0001": "Üretimde, hizmet arzında veya idari amaçla kullanılmak üzere elde tutulan gayrimenkuldür",
@@ -486,6 +580,8 @@ KONFIG: dict[str, dict] = {
     "tms_8_politikalar": {"atma_ozel": TMS8_OZEL, "kisalt": TMS8_KISALT},
     "tms_1_sunulus": {"atma_ozel": TMS1_OZEL, "uzat": TMS1_UZAT},
     "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
+    "tms_23_borclanma_maliyetleri": {"atma_ozel": TMS23_OZEL},
+    "tfrs_16_kiralamalar": {"atma_ozel": TFRS16_OZEL, "uzat": TFRS16_UZAT},
 }
 
 
