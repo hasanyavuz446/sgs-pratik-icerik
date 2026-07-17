@@ -3,18 +3,27 @@
 
 60 özgün soru = 3×20. Fire, artık, bozuk mamul ve kusurlu mamulün normal/anormal
 ayrımı; miktar, maliyet ve kayıt etkileri birlikte sınanır. Aritmetik Python'da
-hesaplanır. Doğru şık kısa, çeldiriciler uzun; çözümde cevap harfi yoktur.
+hesaplanır. Seçenekler doğal uzunlukta, çözümde cevap harfi yoktur.
 """
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "uretim_kayiplari", "Üretim Kayıpları"
 PREFIX, SEED = "kh-mal-kayip", 20260905
-OUTS = [
-    "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_uretim_kayiplari_2026.json",
-    "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/yeterlilik/questions_topic_uretim_kayiplari_2026.json",
-]
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_uretim_kayiplari_2026.json"
+OUTS = (
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = (
+    "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; "
+    "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+)
 
 Q = []
 
@@ -628,6 +637,263 @@ q("Kayıp raporunda miktar sorumluluğu üretim bölümüne, satış değeri sor
   "Üretim, teslim alma, satış ve tahsilat sorumluluklarının ayrılması kayıp verisinin değiştirilmesi ve artık suistimali riskini azaltır.",
   "1 Sıra No.lu MSUGT - belge düzeni; üretim kayıpları ve artıklar için iç kontrol")
 
+
+# İlk taslaktaki sistematik "doğru şık kısa" kalıbı kaldırılır. Sayısal
+# sorularda işlem açıklaması şıkta değil çözümde tutulur; kavramsal sorularda
+# ise seçeneklerin tümü aynı sınıflandırma veya muhasebe düzeyinde kurulur.
+CHOICE_OVERRIDES = {
+    1: (
+        "Üretim firesi",
+        ["Artık malzeme", "Kusurlu mamul", "Bozuk mamul", "Sağlam mamul"],
+    ),
+    2: (
+        "Artık malzeme",
+        ["Normal fire", "Kusurlu mamul", "Bozuk mamul", "Sağlam mamul"],
+    ),
+    3: (
+        "Kusurlu mamul",
+        ["Üretim firesi", "Bozuk mamul", "Artık malzeme", "Sağlam mamul"],
+    ),
+    5: (
+        "Bozuk mamul",
+        ["Normal fire", "Kusurlu mamul", "Artık malzeme", "Sağlam mamul"],
+    ),
+    6: (
+        "Verimli üretimde teknik olarak kaçınılmaz olması",
+        ["Kayıbın gerçekleştiği dönemde satış yapılması",
+         "Kayıp karşılığında nakit tahsil edilmesi",
+         "Mamulün peşin veya vadeli satılması",
+         "Tedarikçinin üretim yerine yakın olması"],
+    ),
+    7: (
+        "Oluştuğu dönemde giderleştirilir",
+        ["Sağlam mamul maliyetine eklenir", "Maddi duran varlık maliyetine alınır",
+         "Satış gerçekleşene kadar ertelenir", "Doğrudan özkaynakta muhasebeleştirilir"],
+    ),
+    8: (
+        "Sağlam üretim için teknik olarak kaçınılmaz olması",
+        ["Her kaybın yönetici kusurundan kaynaklanması",
+         "Firenin esas satış fiyatından satılabilmesi",
+         "Üretim maliyetlerinin doğrudan giderleştirilmesi",
+         "Sağlam ürünün farklı bir süreçte elde edilmesi"],
+    ),
+    9: (
+        "Stok maliyetinin gereksiz yükselmesine",
+        ["Sağlam mamul maliyetinin sıfırlanmasına", "Satış hasılatının artmasına",
+         "Genel üretim giderinin duran varlığa dönüşmesine",
+         "Kayıp tutarının özkaynakta gelir yazılmasına"],
+    ),
+    10: (
+        "Teknik standartlarla doğrulanmış verimli üretim verisi",
+        ["En yüksek kaybın yaşandığı dönemin ham verisi",
+         "Müşteri vadeleriyle satış primlerinin toplamı",
+         "Bütçelenen satış fiyatından türetilen oran",
+         "Banka bakiyesinin hammadde miktarına oranı"],
+    ),
+    11: (
+        "Kayıp birimlerin daha fazla maliyet unsuru tüketmiş olabilmesi",
+        ["Geç kontrol edilen birimlerin sağlam sayılması",
+         "Önceki direkt maliyetlerin kayıtlardan silinmesi",
+         "Kontrolün yalnız satış fiyatını belirlemesi",
+         "Geç tespit edilen kaybın daima normal olması"],
+    ),
+    13: (
+        "Neden ve koşullara göre ayrı sınıflandırılmalıdır",
+        ["Miktarlar eşit olduğu için ikisi de normal sayılmalıdır",
+         "Bakımsızlık kaybı satış geliri olarak yazılmalıdır",
+         "İki kayıp da duran varlık maliyetine alınmalıdır",
+         "Nedenleri farklı olsa da özkaynakta izlenmelidir"],
+    ),
+    14: (
+        "Verimsizliğin normal maliyet içinde gizlenmesi",
+        ["Kayıpların satış hasılatına dönüşmesi",
+         "Direkt malzeme tüketiminin ortadan kalkması",
+         "Stok satış değerinin garanti edilmesi",
+         "Banka bakiyesinin üretim maliyetine eşitlenmesi"],
+    ),
+    15: (
+        "Önlenebilir kaybın sorumluluk ve eğilimini görmek",
+        ["Bütün kayıpları tek maliyet hesabında birleştirmek",
+         "Satış biriminin tahsilat başarısını ölçmek",
+         "Üretim giderlerini müşteri vadelerine göre ayırmak",
+         "Kayıpları sağlam ürün olarak raporlamak"],
+    ),
+    16: ("800", ["19.200", "5.000", "1.600", "19.996"]),
+    17: ("300", ["1.100", "800", "18.900", "19.200"]),
+    18: ("18.900", ["19.200", "21.100", "1.100", "19.500"]),
+    19: ("40 TL", ["38,40 TL", "960 TL", "0,03 TL", "698,18 TL"]),
+    21: ("12.000 TL", ["44.000 TL", "32.000 TL", "756.000 TL", "2.560 TL"]),
+    22: ("756.000 TL", ["768.000 TL", "12.000 TL", "44.000 TL", "744.000 TL"]),
+    23: (
+        "Toplam maliyet eksiksiz ayrıştırılmıştır",
+        ["12.000 TL dağıtılmadan kalmıştır", "12.000 TL fazla dağıtılmıştır",
+         "Yalnız sağlam üretim maliyeti açıklanmıştır",
+         "Toplam maliyet 756.000 TL aşılmıştır"],
+    ),
+    24: ("40 TL", ["41,67 TL", "43,33 TL", "1,67 TL", "24 TL"]),
+    25: ("468.000 TL", ["480.000 TL", "12.000 TL", "500.000 TL", "456.000 TL"]),
+    27: ("300", ["600", "900", "14.400", "15.900"]),
+    28: ("8.400 TL", ["25.200 TL", "16.800 TL", "428.400 TL", "403.200 TL"]),
+    29: (
+        "Aşımın nedenini bölüm ve süreç bazında araştırmak",
+        ["Normal sınırı fiilî kayıp düzeyine yükseltmek",
+         "Kayıp verisini satış performansına aktarmak",
+         "Aşımı sağlam ürün stokuna eşit dağıtmak",
+         "Fiziksel kayıtları uzlaştırmadan kaybı kapatmak"],
+    ),
+    30: (
+        "Kayıp veya çıktı kaydının eksik olmasına",
+        ["Bütün stokların satış fiyatının hatalı olmasına",
+         "Normal fire oranının mutlaka sıfır olmasına",
+         "Genel giderlerin duran varlığa aktarılmasına",
+         "Maliyetin banka bakiyesinden hesaplanmasına"],
+    ),
+    31: (
+        "Bozuk mamul",
+        ["Kusurlu mamul", "Üretim firesi", "Artık malzeme", "Sağlam mamul"],
+    ),
+    32: (
+        "İlgili siparişin maliyetine",
+        ["Genel yönetim giderlerine", "Finansman giderlerine",
+         "Başka bölümün GÜG havuzuna", "Müşteri alacakları hesabına"],
+    ),
+    33: (
+        "Genel üretim gideri havuzunda",
+        ["En yüksek kârlı sipariş üzerinde", "Satış ve pazarlama giderlerinde",
+         "Maddi duran varlık maliyetinde", "Doğrudan özkaynak hesabında"],
+    ),
+    34: (
+        "Anormal kayıp olarak giderleştirmek",
+        ["Sağlam mamullerin maliyetine yüklemek", "Son tamamlanan siparişe yüklemek",
+         "Bina maliyetine ekleyip amorti etmek", "Satışa kadar gelir hesabında bekletmek"],
+    ),
+    36: ("18.000 TL", ["14.000 TL", "12.000 TL", "10.000 TL", "22.000 TL"]),
+    37: ("168.000 TL", ["150.000 TL", "132.000 TL", "18.000 TL", "186.000 TL"]),
+    38: ("3.600 TL", ["20 TL", "133,33 TL", "20.400 TL", "216.000 TL"]),
+    39: ("0 TL", ["15.000 TL", "7.500 TL", "30.000 TL", "33.000 TL"]),
+    40: ("42.000 TL", ["50.000 TL", "8.000 TL", "58.000 TL", "34.000 TL"]),
+    41: ("60 TL", ["71,43 TL", "11,43 TL", "52,50 TL", "0,02 TL"]),
+    42: ("3.000 TL", ["3.600 TL", "600 TL", "4.200 TL", "100 TL"]),
+    44: (
+        "Yeniden işleme maliyetinin parçası olarak",
+        ["Finansman giderinin bir parçası olarak", "Özkaynak hareketi olarak",
+         "Müşteri alacağı olarak", "Hiçbir maliyet nesnesine kaydedilmeden"],
+    ),
+    45: (
+        "Fiziksel çıktı ve birim maliyet",
+        ["Ödeme vadesi ve faiz oranı", "Sermaye tutarı ve oy hakkı",
+         "Satış primi ve yönetim kirası", "Tedarikçi adresi ve alış vadesi"],
+    ),
+    46: (
+        "İlgili sipariş maliyetini azaltmak",
+        ["Bütün siparişlere eşit dağıtmak", "Finansman geliri olarak kaydetmek",
+         "Başka siparişin işçiliğinden düşmek", "Duran varlık maliyetine eklemek"],
+    ),
+    47: (
+        "Ortak GÜG maliyetini azaltarak",
+        ["Tek bir siparişe rastgele yazarak", "Doğrudan sermayeye ekleyerek",
+         "Satış personeli ücretinden düşerek", "Hiçbir hesapta göstermeyerek"],
+    ),
+    48: ("20.000 TL", ["1.266 TL", "78,12 TL", "16 TL", "40.000 TL"]),
+    49: ("160.000 TL", ["180.000 TL", "200.000 TL", "20.000 TL", "140.000 TL"]),
+    51: ("100.000 TL", ["106.000 TL", "114.000 TL", "140.000 TL", "20.000 TL"]),
+    52: ("42.500 TL", ["50.000 TL", "57.500 TL", "7.500 TL", "35.000 TL"]),
+    53: (
+        "Artıkların kaybolması veya yetkisiz satılması",
+        ["Sağlam mamullerin duran varlığa aktarılması",
+         "Üretim giderlerinin finansman geliri sayılması",
+         "Müşteri alacaklarının kendiliğinden kapanması",
+         "İşçilik saatlerinin banka bakiyesine eşitlenmesi"],
+    ),
+    54: (
+        "Değer değişimi fiziksel kayıp standardını belirlemez",
+        ["Fiyat artışı kaybı sağlam mamule dönüştürür",
+         "Satış fiyatları maliyet kayıtlarında kullanılamaz",
+         "Fire standardı müşteri vadelerinden hesaplanır",
+         "Artık fiyatı işçilik saatlerini fiziksel olarak azaltır"],
+    ),
+    55: ("9.400", ["9.600", "9.800", "600", "10.600"]),
+    56: ("7.500 TL", ["20.000 TL", "12.500 TL", "150 TL", "32.500 TL"]),
+    57: ("8.000 TL", ["10.000 TL", "2.000 TL", "12.000 TL", "40 TL"]),
+    59: (
+        "Kayıp türlerinin maliyet ve düzeltme etkileri farklıdır",
+        ["Fire ile kusurlu mamul aynı ekonomik niteliğe sahiptir",
+         "Toplam kayıp miktarı hiçbir zaman ölçülemez",
+         "Kusurlu mamuller otomatik olarak sağlam sayılır",
+         "Fire azalınca artık satış değeri sıfırlanır"],
+    ),
+    60: (
+        "Görev ve sorumlulukların ayrılması",
+        ["Bütün işlemlerin tek kişide toplanması", "Sözlü bildirimle miktar izlenmesi",
+         "Kayıpların tek hesapta birleştirilmesi", "Artık satışlarının kaydedilmemesi"],
+    ),
+}
+
+STEM_OVERRIDES = {
+    20: (
+        "Fire miktar analizine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Beklenen sağlam miktar girdiden normal fire çıkarılarak bulunabilir\n\n"
+        "II. Anormal fire fiilî kaybın normal sınırı aşan kısmıdır\n\n"
+        "III. Fiilî fire normal sınırın altındaysa anormal fire oluşmaz"
+    ),
+    58: (
+        "Üretim kaybı raporunda aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Girdi, sağlam çıktı ve fiziksel kayıplar uzlaştırılır\n\n"
+        "II. Normal sınırı aşan tutar ayrı gösterilir\n\n"
+        "III. Güvenilir geri kazanım değeri net kayıp maliyetini etkiler"
+    ),
+}
+
+PREMISE_OVERRIDES = {
+    20: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "Beklenen sağlam çıktı normal kayıp sonrası miktardır; sınırı aşan kısım anormal fireyi oluşturur. Fiilî fire sınırın altındaysa anormal fire yoktur.",
+    ),
+    58: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "Üretim kaybı raporu fiziksel akışı ve normal/anormal ayrımını uzlaştırır; güvenilir geri kazanım değeri net kayıp maliyetini azaltır.",
+    ),
+}
+
+REF_OVERRIDES = {
+    1: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - fire",
+    2: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - artık malzeme",
+    3: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - kusurlu mamul",
+    4: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - fire, artık ve kusurlu mamul ayrımı",
+    5: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - bozuk mamul",
+    11: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - kaybın tespit noktası ve eşdeğer üretim",
+    15: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - üretim kaybı kontrolü",
+    30: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - fiziksel miktar uzlaştırması",
+    31: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - bozuk ve kusurlu mamul ayrımı",
+    44: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - yeniden işleme ve kalite kontrol maliyeti",
+    45: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - fiziksel çıktı ve birim maliyet kontrolü",
+    46: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - işe özgü artık malzeme",
+    47: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ortak artık malzeme",
+    48: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - artık malzeme geri kazanımı",
+    49: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - artık değerinin sipariş maliyetinden indirilmesi",
+    50: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - artık malzemenin maliyet etkisi",
+    53: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - artık malzeme iç kontrolü",
+    60: "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - üretim kayıplarında görevlerin ayrılığı",
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+for number, stem in STEM_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+
+for number, (correct, distractors, why) in PREMISE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+    Q[number - 1]["why"] = why
+
+for number, ref in REF_OVERRIDES.items():
+    Q[number - 1]["ref"] = ref
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -660,20 +926,25 @@ if __name__ == "__main__":
             "explanation": item["why"],
             "source": {
                 "kind": "generated",
-                "styleRef": "2026/1 test biçimi",
+                "styleRef": "2026/1 beş seçenekli test biçimi",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": UPDATED_AT,
             "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT,
             "isPremium": False,
             "isActive": True,
         })
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
     for output_path in OUTS:
-        json.dump(out, open(output_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            json.dump(out, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premises = sum(1 for item in out if len(marker.findall(item["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {premises} | harf {''.join(item['correctAnswer'] for item in out)[:40]}…")
