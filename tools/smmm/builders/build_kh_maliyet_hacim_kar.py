@@ -8,13 +8,19 @@ Hesapların tamamı Python değişkenleriyle üretilir ve assert ile doğrulanı
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "yonetim_muhasebesi", "maliyet_hacim_kar", "Maliyet-Hacim-Kâr Analizi"
 PREFIX, SEED = "kh-yon-mhk", 20260908
-OUTS = [
-    "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_maliyet_hacim_kar_2026.json",
-    "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/yeterlilik/questions_topic_maliyet_hacim_kar_2026.json",
-]
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_maliyet_hacim_kar_2026.json"
+OUTS = (
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı"
 
 Q = []
 
@@ -761,6 +767,142 @@ q(f"Hasılat karması %{tr(x_share*100)} X ve %{tr(y_share*100)} Y; katkı oranl
   "Yönetim muhasebesi - çok ürünlü vergi sonrası hedef kâr satışı", "hard")
 
 
+CHOICE_OVERRIDES = {
+    1: (
+        "Maliyet davranışı varsayımları yalnız belirli hacim aralığında geçerlidir",
+        ["Satış fiyatı ve sabit maliyet her üretim düzeyinde aynı kalır",
+         "İşletme yalnız başabaş noktasında üretim yapabilir",
+         "Değişken maliyetler hacim arttıkça sıfıra iner",
+         "Maliyet ilişkileri bütün kapasite düzeylerinde değişmez"],
+    ),
+    2: ("40 TL", ["45,56 TL", "50 TL", "17,78 TL", "47,14 TL"]),
+    3: ("50.000 TL", ["245.000 TL", "160.000 TL", "200.000 TL", "401.000 TL"]),
+    5: (
+        "Toplam katkı payından sonra sabit maliyet olarak",
+        ["Satış gelirinden önce değişken satış indirimi olarak",
+         "Birim değişken üretim maliyetinin içinde",
+         "Yalnız dönem sonu stok maliyetinin içinde",
+         "Değişken yönetim giderleri arasında"],
+    ),
+    6: ("6.500 birim", ["5.500 birim", "5.000 birim", "2.600 birim", "2.200 birim"]),
+    7: ("6.000 birim", ["2.000 birim", "5.000 birim", "5.333,33 birim", "26.000 birim"]),
+    8: ("10.000 birim", ["4.285,71 birim", "7.500 birim", "40.000 birim", "15.000 birim"]),
+    10: ("5.000 birim", ["7.500 birim", "2.500 birim", "10.000 birim", "3.750 birim"]),
+    11: ("330.000 TL", ["280.000 TL", "350.000 TL", "400.000 TL", "57.000 TL"]),
+    12: ("7.200 birim", ["5.400 birim", "2.400 birim", "6.000 birim", "9.000 birim"]),
+    13: (
+        "14.400 TL artar",
+        ["302.400 TL artar", "288.000 TL azalır", "43.200 TL artar", "28.800 TL azalır"],
+    ),
+    15: (
+        "Birim satış fiyatının sabitliği varsayımını",
+        ["Toplam sabit maliyetin nakit giderlerden oluşması varsayımını",
+         "Üretim miktarının başabaşa eşit olması varsayımını",
+         "Katkı oranının sabit giderlerden hesaplanması varsayımını",
+         "Bütün maliyetlerin batmış olması varsayımını"],
+    ),
+    16: ("350.000 TL", ["450.000 TL", "550.000 TL", "650.000 TL", "100.000 TL"]),
+    17: ("8.000 birim", ["6.000 birim", "2.000 birim", "4.000 birim", "16.000 birim"]),
+    18: ("126.000 TL", ["180.000 TL", "540.000 TL", "54.000 TL", "252.000 TL"]),
+    19: ("2.000.000 TL", ["1.775.000 TL", "1.250.000 TL", "480.000 TL", "3.000.000 TL"]),
+    21: ("220.000 TL", ["368.000 TL", "700.000 TL", "88.000 TL", "280.000 TL"]),
+    22: ("10.000 birim", ["8.666,67 birim", "3.333,33 birim", "8.000 birim", "7.333,33 birim"]),
+    23: (
+        "1.000 birim artar",
+        ["6.000 birim artar", "7.000 birim artar", "1.000 birim azalır", "Değişmez"],
+    ),
+    24: ("600.000 TL", ["490.909,09 TL", "121.500 TL", "270.000 TL", "870.000 TL"]),
+    25: ("8.000 birim", ["5.333,33 birim", "2.666,67 birim", "10.666,67 birim", "23.111,11 birim"]),
+    26: ("8.000 birim", ["6.666,67 birim", "6.000 birim", "2.000 birim", "5.333,33 birim"]),
+    27: ("8.500 birim", ["6.500 birim", "7.500 birim", "2.785,71 birim", "4.500 birim"]),
+    28: ("1.200.000 TL", ["735.483,87 TL", "173.280 TL", "456.000 TL", "281.481,48 TL"]),
+    30: ("7.000 birim", ["3.000 birim", "4.000 birim", "1.000 birim", "14.000 birim"]),
+    31: ("120 TL", ["50 TL", "10 TL", "60 TL", "100 TL"]),
+    32: (
+        "10.000 A ve 15.000 B",
+        ["5.000 A ve 5.000 B", "15.000 A ve 10.000 B", "20.000 A ve 30.000 B", "25.000 A ve 0 B"],
+    ),
+    33: ("%40", ["%37,50", "%30", "%10", "%20"]),
+    34: ("1.200.000 TL", ["800.000 TL", "192.000 TL", "480.000 TL", "1.680.000 TL"]),
+    36: (
+        "Ağırlıklı katkı oranını yükseltip başabaş satışını düşürür",
+        ["Ağırlıklı katkı oranını düşürüp başabaş satışını yükseltir",
+         "Sabit maliyeti sıfırlayıp başabaş analizini gereksiz kılar",
+         "Birim değişken maliyetleri eşitleyip karmayı etkisiz kılar",
+         "Katkı oranlarını değiştirmeden yalnız kayıt sırasını değiştirir"],
+    ),
+    37: ("120.000 TL", ["540.000 TL", "360.000 TL", "180.000 TL", "960.000 TL"]),
+    38: ("14.000 birim", ["7.000 birim", "28.000 birim", "10.000 birim", "21.000 birim"]),
+    39: ("13.500 birim", ["4.500 birim", "12.000 birim", "9.000 birim", "18.000 birim"]),
+    40: (
+        "9.000 A ve 6.000 B",
+        ["6.000 A ve 9.000 B", "3.000 A ve 3.000 B", "12.857 A ve 20.000 B", "15.000 A ve 0 B"],
+    ),
+    41: ("1.600.000 TL", ["1.846.153,85 TL", "1.200.000 TL", "400.000 TL", "375.000 TL"]),
+    43: ("32 TL", ["35 TL", "20 TL", "12 TL", "70 TL"]),
+    44: (
+        "40.000 TL azalır",
+        ["300.000 TL azalır", "260.000 TL azalır", "80.000 TL azalır", "Değişmez"],
+    ),
+    45: ("600.000 TL", ["1.800.000 TL", "840.000 TL", "1.770.000 TL", "1.230.000 TL"]),
+    46: ("1.600.000 TL", ["4.800.000 TL", "1.500.000 TL", "300.000 TL", "960.000 TL"]),
+    47: ("10.000 birim", ["15.000 birim", "8.400 birim", "2.400 birim", "4.285,71 birim"]),
+    48: ("33.600 TL", ["11.200 TL", "24.000 TL", "140.000 TL", "3.360 TL"]),
+    49: ("5", ["20", "0,80", "1,25", "0,20"]),
+    51: ("11.250 birim", ["9.000 birim", "2.250 birim", "3.913,04 birim", "9.782,61 birim"]),
+    52: ("500 birim", ["7.500 birim", "8.000 birim", "120.000 birim", "1.000 birim"]),
+    53: (
+        "18.000 TL azalır",
+        ["72.000 TL artar", "90.000 TL azalır", "90.000 TL artar", "18.000 TL artar"],
+    ),
+    54: ("122 TL", ["112 TL", "50 TL", "82 TL", "102 TL"]),
+    55: ("80 TL", ["104 TL", "116 TL", "60 TL", "200 TL"]),
+    56: (
+        "Her girdiyi makul aralıkta değiştirip sonuç etkisini karşılaştırmak",
+        ["Bütün varsayımları sabitleyip yalnız tek sonuç üretmek",
+         "Batmış maliyetleri satış gelirine ekleyip katkıyı değiştirmek",
+         "Yalnız en yüksek hacmi seçip maliyetleri dışlamak",
+         "Başabaşı girdileri değiştirmeden yeniden ifade etmek"],
+    ),
+    57: (
+        "Otomasyon yapısı; derece 5",
+        ["Manuel yapı; derece 3", "İki yapının derecesi eşittir", "Manuel yapı; derece 5", "Otomasyon yapısı; derece 3"],
+    ),
+    58: ("800.000 TL", ["400.000 TL", "266.666,67 TL", "3.200.000 TL", "1.200.000 TL"]),
+    59: ("150.000 TL", ["300.000 TL", "450.000 TL", "60.000 TL", "210.000 TL"]),
+    60: ("2.000.000 TL", ["1.820.000 TL", "1.400.000 TL", "2.160.000 TL", "481.950 TL"]),
+}
+
+STEM_OVERRIDES = {
+    18: (
+        "Yönetim 9.000 birimlik planı değerlendirmektedir. Bu hacimde toplam katkı payı "
+        "540.000 TL, dönem sabit maliyeti 360.000 TL ve vergi oranı kökte verilen %30'dur. "
+        "Planın sağlayabileceği vergi sonrası kâr kaç TL'dir?"
+    ),
+    47: (
+        "Başabaş miktarı 6.000 birim olan işletme, fiilî satış miktarının %40'ı kadar "
+        "güvenlik payı hedeflemektedir. Bu oran için kaç birim satmalıdır?"
+    ),
+}
+
+EXPLANATION_OVERRIDES = {
+    48: (
+        "Faaliyet kaldıracı derecesi 420.000 / 140.000 = 3'tür. Satışlardaki %8 artış, "
+        "faaliyet kârını 3 × %8 = %24 artırır; 140.000 × %24 = 33.600 TL'dir."
+    ),
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+for number, stem in STEM_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+
+for number, explanation in EXPLANATION_OVERRIDES.items():
+    Q[number - 1]["why"] = explanation
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -793,21 +935,25 @@ if __name__ == "__main__":
             "explanation": item["why"],
             "source": {
                 "kind": "generated",
-                "styleRef": "2026/1 test biçimi",
+                "styleRef": "2026/1 beş seçenekli test biçimi",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": UPDATED_AT,
             "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT,
             "isPremium": False,
             "isActive": True,
         })
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
     for output_path in OUTS:
-        with open(output_path, "w", encoding="utf-8") as fh:
-            json.dump(out, fh, ensure_ascii=False, indent=2)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            json.dump(out, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premises = sum(1 for item in out if len(marker.findall(item["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {premises} | harf {''.join(item['correctAnswer'] for item in out)[:40]}…")
