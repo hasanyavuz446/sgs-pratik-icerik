@@ -349,6 +349,100 @@ TMS37_OZEL = {
     "std-tms37-gen-0058": "Genel kurul kararından önce dahi dağıtılması beklenen kâr payı için mevcut yükümlülük doğar ve karşılık ayrılır",
 }
 
+# ── TMS 40 · Yatırım Amaçlı Gayrimenkuller ────────────────────────────────────
+TMS40_OZEL = {
+    "std-tms40-gen-0001": "Üretimde, hizmet arzında veya idari amaçla kullanılmak üzere elde tutulan gayrimenkuldür",
+    "std-tms40-gen-0002": "Yatırım amaçlı gayrimenkul ile sahibi tarafından kullanılan gayrimenkul arasında fark yoktur; ikisi de aynı biçimde muhasebeleştirilir",
+    "std-tms40-gen-0003": "Yatırım amaçlı gayrimenkul, işletmenin diğer varlıklarıyla birlikte ortak nakit akışı yaratır; bağımsız nakit akışı üretmez",
+    "std-tms40-gen-0005": "Gelecekteki kullanımı belirlenmemiş arsa her hâlde stok olarak sınıflandırılır; yatırım amaçlı gayrimenkul sayılmaz",
+    "std-tms40-gen-0006": "Faaliyet kiralamasıyla kiraya verilen bina her hâlde TMS 16 kapsamında sahibi tarafından kullanılan gayrimenkul sayılır",
+    "std-tms40-gen-0007": "Kiraya verilmek üzere elde tutulan boş bina, kiralama fiilen başlayana kadar stok olarak muhasebeleştirilir",
+    "std-tms40-gen-0009": "Sahibi tarafından kullanılan gayrimenkul de yatırım amaçlı gayrimenkul kapsamında değerlendirilir",
+    "std-tms40-gen-0010": "Finansal kiralamayla verilen gayrimenkul, kiraya verenin yatırım amaçlı gayrimenkulü olarak bilançosunda kalmaya devam eder",
+    "std-tms40-gen-0011": "Bir gayrimenkulün kısımları farklı amaçlarla kullanılsa dahi tamamı her hâlde yatırım amaçlı gayrimenkul sayılır",
+    "std-tms40-gen-0012": "Sunulan tamamlayıcı hizmetlerin önemi ne olursa olsun gayrimenkul her hâlde yatırım amaçlı gayrimenkul olarak sınıflandırılır",
+    "std-tms40-gen-0013": "Ana ortaklığın bağlı ortaklığına kiraladığı bina hem bireysel hem konsolide tablolarda yatırım amaçlı gayrimenkul sayılır",
+    "std-tms40-gen-0016": "Gelecekteki ekonomik yarar ve güvenilir ölçüm koşulları aranmaz; edinilen her gayrimenkul doğrudan muhasebeleştirilir",
+    "std-tms40-gen-0017": "Gerçeğe uygun değeriyle ölçülür; edinimle ilgili işlem maliyetleri doğrudan gider olarak yazılır",
+    "std-tms40-gen-0018": "İşletme açılış giderleri ve normal kayıp niteliğindeki tutarlar da yatırım amaçlı gayrimenkulün maliyetine dâhil edilir",
+    "std-tms40-gen-0020": "İşletme her yatırım amaçlı gayrimenkul için ölçüm yöntemini serbestçe ve dönemden döneme değiştirerek seçebilir",
+    "std-tms40-gen-0021": "Seçilen ölçüm yöntemi yalnızca yeni edinilen gayrimenkullere uygulanır; mevcut gayrimenkuller eski yöntemle ölçülür",
+    "std-tms40-gen-0022": "Gerçeğe uygun değerdeki değişimden doğan kazanç veya kayıp diğer kapsamlı gelirde muhasebeleştirilir",
+    "std-tms40-gen-0023": "Gerçeğe uygun değer yönteminde gayrimenkul için ayrıca amortisman ayrılır ve dönem gideri olarak yazılır",
+    "std-tms40-gen-0024": "Maliyet yönteminde gayrimenkul her raporlama döneminde gerçeğe uygun değerine getirilerek yeniden ölçülür",
+    "std-tms40-gen-0025": "Gerçeğe uygun değer yönteminden maliyet yöntemine geçiş serbesttir ve her zaman daha uygun bir sunum sağlar",
+    "std-tms40-gen-0026": "Gerçeğe uygun değer güvenilir ölçülemese dahi gayrimenkul her hâlde gerçeğe uygun değer yöntemiyle ölçülmeye devam eder",
+    "std-tms40-gen-0030": "Uygulama doğrudur; gerçeğe uygun değer yönteminde amortisman ayrılması standarda tümüyle uygundur",
+    "std-tms40-gen-0033": "Transferler işletmenin yönetim niyetindeki değişikliğe göre yapılır; kullanımda fiili bir değişiklik aranmaz",
+    "std-tms40-gen-0034": "Sahibi tarafından kullanılmaya başlanan yatırım amaçlı gayrimenkul stoklara transfer edilir",
+    "std-tms40-gen-0035": "Satış amacıyla geliştirilmeye başlanan gayrimenkul TMS 16 kapsamındaki maddi duran varlıklara transfer edilir",
+    "std-tms40-gen-0036": "Sahibi tarafından kullanımına son verilen gayrimenkul her hâlde stoklara transfer edilir",
+    "std-tms40-gen-0037": "Bir yatırım amaçlı gayrimenkul satış amacıyla geliştirilmeye başlandığında hemen stoklara transfer edilir",
+    "std-tms40-gen-0038": "Yatırım amaçlıdan sahibi tarafından kullanılana transferde varlığın ilk maliyet bedeli sonraki muhasebeleştirmeye esas alınır",
+    "std-tms40-gen-0039": "Sahibi tarafından kullanılandan gerçeğe uygun değere transferde ortaya çıkan fark doğrudan kâr veya zarara yazılır",
+    "std-tms40-gen-0040": "Stoklardan yatırım amaçlıya transferde gerçeğe uygun değer ile önceki defter değeri farkı doğrudan özkaynağa yansıtılır",
+    "std-tms40-gen-0041": "Maliyet yöntemi uygulanan işletmede transferler gayrimenkulün defter değerini gerçeğe uygun değerine getirir",
+    "std-tms40-gen-0046": "Yönetimin ileride kullanma niyeti oluştuğu anda gayrimenkul, fiili kullanım başlamasa dahi TMS 16'ya transfer edilir",
+    "std-tms40-gen-0047": "Yatırım amaçlı gayrimenkul yalnızca fiziksel olarak yıkıldığında finansal tablo dışı bırakılır",
+    "std-tms40-gen-0048": "Elden çıkarmadan doğan kazanç veya kayıp doğrudan özkaynakta muhasebeleştirilir; kâr veya zarara yansıtılmaz",
+    "std-tms40-gen-0051": "Maliyet yöntemini uygulayan işletme, gerçeğe uygun değeri dipnotlarda hiçbir hâlde açıklamaz",
+    "std-tms40-gen-0052": "Yatırım amaçlı gayrimenkullerin ölçümünde bağımsız değerleme uzmanı kullanılması her durumda gereklidir",
+    "std-tms40-gen-0053": "Uygulama doğrudur; gerçeğe uygun değerdeki artışın özkaynakta gösterilmesi standarda uygundur",
+    "std-tms40-gen-0054": "TMS 40 ile TMS 16 gerçeğe uygun değer yaklaşımları aynıdır; ikisinde de değer değişimi diğer kapsamlı gelirde gösterilir",
+    "std-tms40-gen-0055": "Yatırım amaçlı gayrimenkulün gerçeğe uygun değeri işletmenin kendi iç tahminlerine göre ölçülür; TFRS 13 uygulanmaz",
+    "std-tms40-gen-0056": "Yatırım amaçlı gayrimenkulle ilgili tüm sonraki harcamalar oluştukları dönemde doğrudan gider olarak yazılır",
+    "std-tms40-gen-0057": "İnşa veya geliştirme aşamasındaki gayrimenkul her hâlde stok olarak sınıflandırılır; yatırım amaçlı sayılmaz",
+    "std-tms40-gen-0059": "Otel binası, sunulan konaklama hizmetleri önemli olsa dahi her hâlde yatırım amaçlı gayrimenkul sayılır",
+}
+
+# tms_40'ta uzun-atma doğruyu %36 en-kısa yaptı; 10 soruda doğrunun altına
+# kısa-çarpıcı yanlış eklenerek denge kuruldu (sayısal/kısa-kategori dokunulmadı).
+TMS40_KISALT = {
+    "std-tms40-gen-0003": {"A": "Diğer varlıklarla ortak nakit akışı yaratır"},
+    "std-tms40-gen-0004": {"A": "Stok olarak sınıflandırılır"},
+    "std-tms40-gen-0008": {"A": "Yatırım amaçlı gayrimenkuldür"},
+    "std-tms40-gen-0009": {"B": "Yatırım amaçlı gayrimenkuldür"},
+    "std-tms40-gen-0017": {"A": "Gerçeğe uygun değerle ölçülür"},
+    "std-tms40-gen-0021": {"A": "Yalnızca yeni edinilenlere uygulanır"},
+    "std-tms40-gen-0023": {"A": "Normal amortisman ayrılır"},
+    "std-tms40-gen-0033": {"A": "Her raporlama döneminde yapılır"},
+    "std-tms40-gen-0036": {"A": "Stoklara transfer edilir"},
+    "std-tms40-gen-0055": {"A": "İşletmenin iç tahminine göre ölçülür"},
+}
+
+# ── TMS 1 · Finansal Tabloların Sunuluşu ──────────────────────────────────────
+TMS1_OZEL = {
+    "std-tms1-gen-0003": "Tam finansal tablo seti yalnızca finansal durum tablosu ile kâr veya zarar tablosundan oluşur; nakit akış tablosu ve dipnotlar zorunlu değildir",
+    "std-tms1-gen-0015": "Varlıklar ile borçlar ve gelirler ile giderler her hâlde netleştirilerek finansal tablolarda tek bir net tutar biçiminde sunulur",
+    "std-tms1-gen-0018": "Gerçeğe uygun sunum ancak TFRS hükümlerinden sapılarak sağlanır; TFRS'lere tam uyum tek başına gerçeğe uygun sunumu güvence altına almaz",
+    "std-tms1-gen-0025": "Finansal durum tablosunda her hâlde likidite esasına göre sunum yapılır; dönen ve duran varlık ayrımına hiçbir koşulda izin verilmez",
+    "std-tms1-gen-0027": "Bir yükümlülük yalnızca raporlama tarihinden sonraki on iki ay içinde ödenecekse kısa vadeli sayılır; normal faaliyet döngüsü ölçütü uygulanmaz",
+    "std-tms1-gen-0032": "Ödenmiş sermaye ve yedekler gibi özkaynak kalemleri finansal durum tablosunda değil, yalnızca dipnotlarda gösterilir",
+    "std-tms1-gen-0040": "Diğer kapsamlı gelir kalemleri her hâlde doğrudan kâr veya zarar tablosunda gösterilir; ayrı bir kapsamlı gelir bölümü kullanılmaz",
+    "std-tms1-gen-0044": "Giderler yalnızca işlevlerine göre sınıflandırılarak sunulur; niteliklerine göre sunuma TMS 1 hiçbir hâlde izin vermez",
+    "std-tms1-gen-0046": "Kâr veya zarar bölümünde asgari kalem sunma koşulu yoktur; işletme istediği kalemleri istediği ayrıntıda serbestçe sunar",
+    "std-tms1-gen-0051": "Dipnotlar yalnızca sayısal tabloların bir özetini içerir; muhasebe politikaları ve hazırlama esasları dipnotlarda yer almaz",
+    "std-tms1-gen-0056": "İşletme, sermayesini yönetme amaç ve politikalarına ilişkin hiçbir açıklama yapmaz; bu bilgiler ticari sır kapsamında tutulur",
+}
+
+# tms_1 doğru şıkları çok uzun (ort 102); yalnız 11 atma var, asıl kusur boy.
+# 22 soruda doğru en uzundu; 13'ünde çeldirici içerikle üstüne çıkarıldı.
+TMS1_UZAT = {
+    "std-tms1-gen-0033": {"E": "Üçüncü tablonun sunulup sunulmayacağı tümüyle denetçinin takdirindedir; geriye dönük düzeltme veya yeniden sınıflandırma yapılsa dahi ek bir finansal durum tablosu hiçbir hâlde sunulmaz"},
+    "std-tms1-gen-0002": {"A": "Yalnızca işletme yönetiminin iç kararları için hazırlanan ve dışa açıklanmayan belgelerdir; genel amaçlı finansal tablolar dış kullanıcıların bilgi ihtiyacını hiç gözetmez"},
+    "std-tms1-gen-0028": {"C": "Normal faaliyet döngüsü, işletmenin kurulduğu tarihten tasfiye edildiği tarihe kadar geçen toplam süredir; varlıkların nakde dönüşme süresiyle hiçbir ilgisi yoktur"},
+    "std-tms1-gen-0057": {"B": "Kâr payına ilişkin hiçbir bilgi açıklanmaz; kâr dağıtımı yalnızca ortakları ilgilendirdiğinden finansal tablo kullanıcılarına herhangi bir açıklama sunulmaz"},
+    "std-tms1-gen-0053": {"E": "Muhasebe politikası açıklaması yalnızca politika değiştiğinde yapılır; değişiklik olmayan dönemlerde uygulanan politikalara ilişkin hiçbir açıklamaya yer verilmez"},
+    "std-tms1-gen-0035": {"D": "Likidite esası, varlıkların büyükten küçüğe tutar sırasına göre dizilmesidir; kalemlerin nakde dönüşme hızı bu sıralamada hiçbir biçimde dikkate alınmaz"},
+    "std-tms1-gen-0030": {"C": "Ertelenmiş vergi yükümlülükleri her hâlde kısa vadeli yükümlülük olarak sınıflandırılır; vade veya faaliyet döngüsü ölçütleri bunlara hiçbir koşulda uygulanmaz"},
+    "std-tms1-gen-0044": {"D": "Giderler yalnızca işlevlerine göre sınıflandırılarak sunulur; niteliklerine göre sunum seçeneği kaldırılmış olup işletmeye bu konuda hiçbir tercih hakkı tanınmaz"},
+    "std-tms1-gen-0016": {"A": "Finansal tablolarda yalnızca cari dönem verileri sunulur; önceki döneme ait karşılaştırmalı bilgilerin sunulması hiçbir hâlde gerekli görülmez ve karşılaştırma yapılmaz"},
+    "std-tms1-gen-0012": {"B": "Tablolar her hâlde tasfiye esasına göre hazırlanır; işletmenin sürekliliği varsayımı yalnızca kamu kurumları için geçerli olup özel işletmelere uygulanmaz"},
+    "std-tms1-gen-0017": {"B": "Sunum ve sınıflandırma hiçbir koşulda değiştirilemez; ilk dönemde seçilen biçim, daha uygun bir sunum ortaya çıksa dahi sonraki tüm dönemlerde aynen korunur"},
+    "std-tms1-gen-0041": {"C": "Kapsamlı gelir yalnızca iki ayrı tabloda sunulabilir; tek bir kapsamlı gelir tablosunda sunum seçeneği TMS 1 tarafından hiçbir biçimde tanınmaz"},
+    "std-tms1-gen-0014": {"B": "Tüm kalemler her hâlde ayrı ayrı sunulur; önemsiz olsa dahi hiçbir kalem benzerleriyle gruplandırılamaz ve tablolar aşırı ayrıntıyla doldurulur"},
+}
+
 # ── TMS 8 · Muhasebe Politikaları, Tahminler ve Hatalar ───────────────────────
 TMS8_OZEL = {
     "std-tms8-gen-0002": "İşletme yönetimi, ilgili bir TFRS bulunsa dahi her işlem için en uygun gördüğü muhasebe politikasını serbestçe belirleyebilir",
@@ -390,6 +484,8 @@ KONFIG: dict[str, dict] = {
     "tfrs_9_finansal_arac": {"atma_ozel": TFRS9_OZEL, "uzat": TFRS9_UZAT},
     "tms_37_karsiliklar": {"atma_ozel": TMS37_OZEL},
     "tms_8_politikalar": {"atma_ozel": TMS8_OZEL, "kisalt": TMS8_KISALT},
+    "tms_1_sunulus": {"atma_ozel": TMS1_OZEL, "uzat": TMS1_UZAT},
+    "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
 }
 
 
