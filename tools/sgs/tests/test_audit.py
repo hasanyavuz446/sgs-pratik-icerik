@@ -163,5 +163,104 @@ class KorOgrenciTest(unittest.TestCase):
         self.assertEqual([m for _, m in issues if "atma-şıkkı" in m], [])
 
 
+class TekrarTest(unittest.TestCase):
+    """Alıştırma ↔ klon ayrımı. Kural yalnız 'aynı şablon' derse matematiği yakar."""
+
+    def sayisal(self, qid, a, b, cevap):
+        return soru(qid, f"Baz yılda {a} ₺ olan kalem {b} ₺ olmuştur. Trend yüzdesi kaçtır?",
+                    {"A": cevap, "B": "%90", "C": "%150", "D": "%75", "E": "%200"}, answer="A")
+
+    def test_ayni_sablon_ayni_cevap_klondur(self):
+        """600.000/500.000 ve 960.000/800.000 → ikisi de %120: aynı işlem, aynı sonuç."""
+        fatals = audit_et([self.sayisal("q1", "500.000", "600.000", "%120"),
+                           self.sayisal("q2", "800.000", "960.000", "%120")])
+        self.assertTrue(any("aynı şablon VE aynı cevap" in f for f in fatals), fatals)
+
+    def test_ayni_sablon_farkli_cevap_alistirmadir(self):
+        """Mekanik beceride şablon tekrarı istenen şeydir — yakılmamalı."""
+        fatals = audit_et([self.sayisal("q1", "500.000", "600.000", "%120"),
+                           self.sayisal("q2", "200.000", "260.000", "%130")])
+        self.assertEqual([f for f in fatals if "aynı şablon" in f], [])
+
+    def test_birebir_ayni_cozum_yakalanir(self):
+        ortak = "Trend yüzdesi, cari dönem tutarının baz yıl tutarına bölünüp yüz ile çarpılmasıdır."
+        a = self.sayisal("q1", "500.000", "600.000", "%120"); a["solution"] = ortak
+        b = self.sayisal("q2", "200.000", "260.000", "%130"); b["solution"] = ortak
+        self.assertTrue(any("birebir aynı" in f for f in audit_et([a, b])))
+
+
+class GuncellikTest(unittest.TestCase):
+    def test_ciplak_mevzuat_orani_cevapsa_uyari(self):
+        q = soru("q1", "Türkiye'de teslim edilen mallarda KDV oranı yüzde kaçtır?",
+                 {"A": "%20", "B": "%1", "C": "%10", "D": "%8", "E": "%18"}, answer="A")
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump([q], fh, ensure_ascii=False)
+            path = fh.name
+        try:
+            _, issues = audit.audit(path)
+        finally:
+            os.unlink(path)
+        self.assertTrue(any("mevzuat oranı" in m for _, m in issues), issues)
+
+    def test_turetilmis_oran_uyari_degildir(self):
+        """'4 yıllık ömrün amortisman oranı %25' türetilmiştir; mevzuat değişse bayatlamaz."""
+        q = soru("q1", "Faydalı ömrü 4 yıl olan bir varlığın yıllık amortisman oranı yüzde kaçtır?",
+                 {"A": "%25", "B": "%10", "C": "%40", "D": "%50", "E": "%20"}, answer="A")
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump([q], fh, ensure_ascii=False)
+            path = fh.name
+        try:
+            _, issues = audit.audit(path)
+        finally:
+            os.unlink(path)
+        self.assertEqual([m for _, m in issues if "mevzuat oranı" in m], [])
+
+    def test_cari_oran_finansal_rasyodur_uyari_degildir(self):
+        """“Cari oran” = current ratio; “hâlihazırda geçerli oran” değil.
+
+        İlk sürüm bunu kalıba alıp Mali Tablolar Analizi'nin temel terimini
+        10 kez mevzuat ihlali sandı.
+        """
+        q = soru("q1", "Cari oran aşağıdakilerden hangisiyle hesaplanır?",
+                 {"A": "Dönen Varlıklar ÷ Kısa Vadeli Yabancı Kaynaklar",
+                  "B": "Dönen Varlıklar ÷ Toplam Varlıklar", "C": "Öz Kaynaklar ÷ Toplam Varlıklar",
+                  "D": "Net Satışlar ÷ Stoklar", "E": "Duran Varlıklar ÷ Öz Kaynaklar"}, answer="A")
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump([q], fh, ensure_ascii=False)
+            path = fh.name
+        try:
+            _, issues = audit.audit(path)
+        finally:
+            os.unlink(path)
+        self.assertEqual([m for _, m in issues if "dönem/oran vermeden" in m], [])
+
+    def test_yururlukteki_oran_uyaridir(self):
+        q = soru("q1", "Bir teslimde yürürlükteki oran üzerinden hesaplanacak vergi nedir?",
+                 {"A": "Katma Değer Vergisi", "B": "Damga Vergisi", "C": "Emlak Vergisi",
+                  "D": "Motorlu Taşıtlar Vergisi", "E": "Veraset Vergisi"}, answer="A")
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump([q], fh, ensure_ascii=False)
+            path = fh.name
+        try:
+            _, issues = audit.audit(path)
+        finally:
+            os.unlink(path)
+        self.assertTrue(any("dönem/oran vermeden" in m for _, m in issues), issues)
+
+    def test_kokte_verilen_oran_uyari_degildir(self):
+        """Oran kökte verilmişse ölçülen kayıttır; soru kendi içinde tutarlı kalır."""
+        q = soru("q1", "5.000 ₺ + %20 KDV ile satılan malın toplam tutarı kaç ₺'dir?",
+                 {"A": "6.000 ₺", "B": "5.000 ₺", "C": "5.200 ₺", "D": "4.000 ₺", "E": "6.500 ₺"},
+                 answer="A")
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump([q], fh, ensure_ascii=False)
+            path = fh.name
+        try:
+            _, issues = audit.audit(path)
+        finally:
+            os.unlink(path)
+        self.assertEqual([m for _, m in issues if "mevzuat oranı" in m], [])
+
+
 if __name__ == "__main__":
     unittest.main()

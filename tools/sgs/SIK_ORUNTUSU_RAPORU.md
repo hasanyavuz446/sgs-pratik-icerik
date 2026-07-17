@@ -109,3 +109,29 @@ python3 tools/sgs/audit.py --manifest content/v2/manifest.json
 ```
 
 Kör öğrenci ≥%35 **FATAL**, ≥%28 UYARI. Boy ipucu ≥%45 UYARI. Regresyon testleri: `python3 tools/sgs/tests/test_audit.py`.
+
+---
+
+## Ek: şablon klonu (2026-07-17, denetime 4 kural eklendikten sonra)
+
+`audit.py` artık kopya/güncellik ailesini de ölçüyor. **Şablon klonu = aynı kök-şık iskeleti VE aynı cevap** — sayılar değişmiş ama sorulan işlem ve sonuç aynı; adayın birini çözünce diğerini tanıdığı sorular.
+
+⚠️ Bu ölçüt alıştırmayı klondan ayırır: aynı şablon + FARKLI cevap **kusur değildir** (matematikte mekanik alıştırma istenen şeydir; 52 denklem sorusu meşrudur). Ayrımı ham cevap kurar.
+
+| dosya | klon |
+|---|---:|
+| `denetim_riski.json` | 4 |
+| `dikey_analiz.json` | 3 |
+| `maliyet_hacim_kar.json` | 3 |
+| `oran_analizi.json` | 2 |
+| `trend_analizi.json` | 2 |
+| `mali_duran_varliklar.json` | 1 |
+| `maliyet_hesaplari.json` | 1 |
+| `karsilastirmali_analiz.json` | 1 |
+| `fon_akim_analizi.json` | 1 |
+| `nakit_akim_analizi.json` | 1 |
+| `safha_maliyeti.json` | 1 |
+
+**Toplam 20 klon / 11 dosya.** Ayrıca 18 yakın-tekrar UYARI'sı (elle karşılaştırılacak).
+
+Bu kurallarda **temiz çıkanlar**: çözüm birebir tekrarı 0, çözüm şablonu 0, mevzuat oranı 0 — içerik bu üç kurala zaten uyuyormuş; kural yazılıydı, yalnız ölçen yoktu.
