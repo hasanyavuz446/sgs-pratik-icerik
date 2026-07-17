@@ -3,18 +3,27 @@
 
 60 özgün soru = 3×20. Malzeme, işçilik, değişken ve sabit GÜG sapmaları;
 karma/verim, boş zaman ve maliyet uzlaştırması dâhil. Aritmetik Python'da
-hesaplanır. Doğru şık kısa, çeldiriciler uzun; çözümde harf atfı yoktur.
+hesaplanır. Seçenekler doğal uzunlukta, çözümde harf atfı yoktur.
 """
 import json
 import random
 import re
+from pathlib import Path
 
 L, T, LBL = "maliyet_muhasebesi", "standart_maliyet", "Standart Maliyet ve Sapmalar"
 PREFIX, SEED = "kh-mal-standart", 20260906
-OUTS = [
-    "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/yeterlilik/questions_topic_standart_maliyet_2026.json",
-    "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/yeterlilik/questions_topic_standart_maliyet_2026.json",
-]
+CONTENT_ROOT = Path(__file__).resolve().parents[3]
+PROJECTS_ROOT = CONTENT_ROOT.parent
+FILENAME = "questions_topic_standart_maliyet_2026.json"
+OUTS = (
+    CONTENT_ROOT / "content" / "yeterlilik" / FILENAME,
+    PROJECTS_ROOT / "smmm_sgs_pratik" / "assets" / "content" / "yeterlilik" / FILENAME,
+)
+UPDATED_AT = "2026-07-17T00:00:00Z"
+LEGISLATION_VERSION = (
+    "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; "
+    "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+)
 
 Q = []
 
@@ -641,6 +650,304 @@ q(f"Malzeme {tr(total_mat_var)}, işçilik {tr(total_labor_var)}, değişken GÜ
   f"Toplam aleyhte sapma {tr(total_mat_var)} + {tr(total_labor_var)} + {tr(voh_total)} + {tr(foh_total_var)} = {tr(integrated_total)} TL'dir. Fiilî maliyet {tr(std_total)} + {tr(integrated_total)} = {tr(actual_total)} TL olur.",
   "TMS 2 par. 21; maliyet muhasebesi - standart maliyet ile fiilî maliyetin bütünleşik uzlaştırılması", "hard")
 
+
+# İlk taslaktaki sistematik "doğru şık kısa" kalıbı kaldırılır. Sapma
+# sorularında hesap gerekçesi çözüme taşınır; seçenekler tutar ve yönü doğal,
+# karşılaştırılabilir biçimde gösterir.
+CHOICE_OVERRIDES = {
+    1: (
+        "Standart maliyetin gerçek maliyete yakın sonuç vermesi",
+        ["Standartların hiçbir dönemde değiştirilmemesi",
+         "Fiilî maliyet kayıtlarının tamamen kaldırılması",
+         "Yalnız ideal performans düzeyinin kullanılması",
+         "Standart maliyetin net gerçekleşebilir değere eşit olması"],
+    ),
+    2: (
+        "Standart miktar ve standart fiyat",
+        ["Fiilî satış miktarı ve ödeme vadesi", "Bütçelenen kâr ve kredi faizi",
+         "Piyasa değeri ve sermaye payı", "Geçmiş toplam maliyet ve satış hacmi"],
+    ),
+    3: (
+        "Normal verimsizliklere tanınan pay",
+        ["Satış geliri ile nakit akışı ayrımı", "Standartların belirlenme tarihi",
+         "Teknik verilerin kullanılma düzeyi", "Kayıp ve kapasite varsayımlarının eşitliği"],
+    ),
+    5: (
+        "Sapmaların performansı yanlış göstermesi",
+        ["Malzeme tüketiminin satış hasılatına dönüşmesi",
+         "Üretim miktarının fiziksel olarak sıfırlanması",
+         "İşçilik giderinin duran varlığa aktarılması",
+         "Müşteri alacaklarının kendiliğinden kapanması"],
+    ),
+    6: (
+        "Olması gereken kaynak tüketimini önceden tanımlamak",
+        ["Fiilî maliyet belgelerini tamamen kaldırmak",
+         "Satış fiyatıyla müşteri talebini garanti etmek",
+         "Bütün sapmaları oluşmadan sıfırlamak",
+         "Net gerçekleşebilir değeri maliyete eşitlemek"],
+    ),
+    7: (
+        "Daha kaliteli malzemenin verimi artırmış olmasını",
+        ["Fiyat ile verim arasında hiçbir ilişki bulunmamasını",
+         "Lehte kullanımın bütün satın alma kararlarını doğrulamasını",
+         "Aleyhte fiyatın yalnız satış bölümünden kaynaklanmasını",
+         "İki sapmanın farklı dönemlere ait olmasını"],
+    ),
+    8: (
+        "Nedenin merkez tarafından kontrol edilip edilemediği",
+        ["Yöneticinin satış hasılatını tahsil edip etmediği",
+         "Banka bakiyesinin standart maliyete eşit olup olmadığı",
+         "Satış fiyatının işçilik saatine eşit olup olmadığı",
+         "Merkezin diğer bölümlerden yüksek bütçesi olup olmadığı"],
+    ),
+    9: (
+        "Faaliyet hacmi etkisini harcama etkisinden ayırması",
+        ["Fiilî maliyetleri ölçmeden sapmaları lehte göstermesi",
+         "Sabit giderleri tamamen değişken kabul etmesi",
+         "Standartları müşteri vadelerine göre değiştirmesi",
+         "Her faaliyet düzeyinde fiilî gideri vermesi"],
+    ),
+    10: (
+        "Standardın gevşek veya sürecin kalıcı olarak iyileşmiş olması",
+        ["Fiilî kayıtların bütünüyle yanlış olması",
+         "Lehte sapmaların anormal kayıp sayılması",
+         "Standart maliyet tekniğinin kullanılamaması",
+         "Mamul fiyatının standarttan düşük belirlenmesi"],
+    ),
+    11: (
+        "Satın alma koşullarını gerçekçi biçimde yansıtmayı",
+        ["Kullanım sapmasını satış hacmiyle hesaplamayı",
+         "İşçilik süresini malzeme fiyatından türetmeyi",
+         "Fiyat değişimini yalnız üretime yüklemeyi",
+         "Fiilî alış belgelerini kaydetmemeyi"],
+    ),
+    13: (
+        "Yakınlık ve sapmalar fiilî verilerle doğrulanır",
+        ["Standart maliyet yalnız satış gelirinde kullanılır",
+         "Fiilî maliyet her zaman standarda eşit çıkar",
+         "Fiilî üretim verilerinin kaydı yasaktır",
+         "Standartların gözden geçirilmesi gerekmez"],
+    ),
+    14: (
+        "Birbirini dengeleyen lehte ve aleyhte nedenleri",
+        ["Fiilî üretimin standardı her zaman aşmasını",
+         "Satış hasılatının standart maliyete eşit olmasını",
+         "Ödeme vadelerinin üretim saatlerine eşitliğini",
+         "Sabit GÜG'ün hiç sapma üretmemesini"],
+    ),
+    15: (
+        "Dönem performansı o dönemde geçerli hedefle ölçülmüştür",
+        ["Geçmiş sapmalar yalnız satış fiyatına aittir",
+         "Yeni standart geçmiş fiilî maliyeti değiştirir",
+         "Güncelleme bütün muhasebe kayıtlarını iptal eder",
+         "Standart değişimi geçmiş hasılatı geri aldırır"],
+    ),
+    16: ("7.200", ["1.600", "4,50", "1.604,50", "230.400"]),
+    17: (
+        "15.000 TL aleyhte",
+        ["9.600 TL aleyhte", "15.000 TL lehte", "255.000 TL aleyhte", "14.400 TL aleyhte"],
+    ),
+    18: (
+        "9.600 TL aleyhte",
+        ["15.000 TL aleyhte", "9.600 TL lehte", "10.200 TL aleyhte", "255.000 TL aleyhte"],
+    ),
+    19: (
+        "24.600 TL aleyhte",
+        ["24.600 TL lehte", "15.000 TL aleyhte", "9.600 TL aleyhte", "485.400 TL aleyhte"],
+    ),
+    21: (
+        "15.600 TL aleyhte",
+        ["15.000 TL aleyhte", "15.600 TL lehte", "600 TL aleyhte", "265.200 TL aleyhte"],
+    ),
+    22: (
+        "600 TL aleyhte",
+        ["15.600 TL aleyhte", "15.000 TL aleyhte", "10.200 TL aleyhte", "600 TL lehte"],
+    ),
+    23: (
+        "5.000 TL lehte",
+        ["5.000 TL aleyhte", "10.000 TL aleyhte", "15.000 TL lehte", "235.000 TL aleyhte"],
+    ),
+    24: (
+        "9.600 TL aleyhte",
+        ["9.600 TL lehte", "5.000 TL lehte", "4.600 TL aleyhte", "240.000 TL aleyhte"],
+    ),
+    25: (
+        "4.600 TL aleyhte",
+        ["14.600 TL aleyhte", "5.000 TL lehte", "9.600 TL aleyhte", "4.600 TL lehte"],
+    ),
+    26: (
+        "500 TL lehte",
+        ["500 TL aleyhte", "6.500 TL aleyhte", "7.000 TL lehte", "234.500 TL aleyhte"],
+    ),
+    27: (
+        "4.100 TL aleyhte",
+        ["5.100 TL aleyhte", "500 TL lehte", "4.600 TL aleyhte", "4.100 TL lehte"],
+    ),
+    28: (
+        "Malzeme kalitesi ve satın alma kararını birlikte incelemek",
+        ["Lehte fiyat nedeniyle kullanım farkını yok saymak",
+         "Satın alma bölümünü tek başına sorumlu tutmak",
+         "Sapmalar arasında ortak neden aramamak",
+         "Net fark küçükse fiziksel kayıtları kaldırmak"],
+    ),
+    30: (
+        "Gerçek verimsizlik olduğundan küçük görünebilir",
+        ["Her zaman olduğundan büyük aleyhte görünebilir",
+         "Fiyat sapmasına dönüşerek tamamen kaybolabilir",
+         "Fiilî miktardan bağımsız olarak sıfır olabilir",
+         "Satış hacmi nedeniyle otomatik lehte olabilir"],
+    ),
+    31: ("3.000", ["1.200", "2,50", "1.202,50", "720.000"]),
+    32: (
+        "63.000 TL aleyhte",
+        ["36.000 TL aleyhte", "63.000 TL lehte", "60.000 TL aleyhte", "819.000 TL aleyhte"],
+    ),
+    33: (
+        "36.000 TL aleyhte",
+        ["63.000 TL aleyhte", "36.000 TL lehte", "39.000 TL aleyhte", "819.000 TL aleyhte"],
+    ),
+    34: (
+        "99.000 TL aleyhte",
+        ["99.000 TL lehte", "63.000 TL aleyhte", "36.000 TL aleyhte", "1.539.000 TL aleyhte"],
+    ),
+    36: (
+        "28.800 TL aleyhte",
+        ["7.200 TL aleyhte", "28.800 TL lehte", "31.200 TL aleyhte", "756.000 TL aleyhte"],
+    ),
+    37: (
+        "7.200 TL aleyhte",
+        ["36.000 TL aleyhte", "28.800 TL aleyhte", "7.200 TL lehte", "7.800 TL aleyhte"],
+    ),
+    38: (
+        "Arıza ile çalışma hızının etkisini ayırmak",
+        ["Ücret sapmasını süre sapmasına tekrar eklemek",
+         "Bütün fiilî saat kayıtlarını iptal etmek",
+         "Standart süreyi ödeme vadesine göre belirlemek",
+         "Arıza ile çalışma hızını aynı nedene bağlamak"],
+    ),
+    39: (
+        "12.000 TL aleyhte",
+        ["12.000 TL lehte", "30.000 TL aleyhte", "18.000 TL lehte", "468.000 TL aleyhte"],
+    ),
+    40: (
+        "11.400 TL aleyhte",
+        ["11.400 TL lehte", "12.000 TL aleyhte", "23.400 TL aleyhte", "456.000 TL aleyhte"],
+    ),
+    41: (
+        "23.400 TL aleyhte",
+        ["600 TL aleyhte", "12.000 TL aleyhte", "11.400 TL aleyhte", "23.400 TL lehte"],
+    ),
+    43: (
+        "Net maliyet ve kalite etkisi birlikte incelenmelidir",
+        ["Yüksek ücret nedeniyle deneyimli işçi bırakılmalıdır",
+         "Lehte verim nedeniyle ücret etkisi yok sayılmalıdır",
+         "İki sapma farklı dönemlere aktarılmalıdır",
+         "Yalnız satış fiyatı performansı ölçülmelidir"],
+    ),
+    44: (
+        "Teknik doğrulama sonrası standardı güncellemek",
+        ["Eski süreyi koruyup lehte farkları performans saymak",
+         "Standart ücreti süre azalması kadar yükseltmek",
+         "Geçmiş fiilî saatleri geriye dönük silmek",
+         "Üretim süresini ölçmeyi tamamen bırakmak"],
+    ),
+    45: (
+        "İş gücü atama kararı üretim planlamasından kaynaklanmıştır",
+        ["Saat ücretleri satış geliri niteliğindedir",
+         "Nitelikli işçinin çalışma süresi kaydedilemez",
+         "Ücret sapması malzeme miktarından hesaplanır",
+         "Üretim planlaması sapmaları hiç etkilemez"],
+    ),
+    46: (
+        "12.600 TL aleyhte",
+        ["9.000 TL aleyhte", "12.600 TL lehte", "21.600 TL aleyhte", "201.600 TL aleyhte"],
+    ),
+    47: (
+        "9.000 TL aleyhte",
+        ["12.600 TL aleyhte", "9.000 TL lehte", "9.600 TL aleyhte", "201.600 TL aleyhte"],
+    ),
+    48: (
+        "21.600 TL aleyhte",
+        ["21.600 TL lehte", "12.600 TL aleyhte", "9.000 TL aleyhte", "381.600 TL aleyhte"],
+    ),
+    49: (
+        "15.000 TL aleyhte",
+        ["120.000 TL aleyhte", "15.000 TL lehte", "135.000 TL aleyhte", "495.000 TL aleyhte"],
+    ),
+    50: ("120 TL", ["123,75 TL", "160 TL", "0,01 TL", "484.000 TL"]),
+    51: ("360.000 TL", ["480.000 TL", "495.000 TL", "3.000 TL", "600.000 TL"]),
+    52: (
+        "120.000 TL aleyhte",
+        ["15.000 TL aleyhte", "120.000 TL lehte", "135.000 TL aleyhte", "840.000 TL aleyhte"],
+    ),
+    53: (
+        "135.000 TL aleyhte",
+        ["135.000 TL lehte", "15.000 TL aleyhte", "120.000 TL aleyhte", "855.000 TL aleyhte"],
+    ),
+    55: (
+        "Normal kapasite esasına",
+        ["Finansman geliri yaklaşımına", "Satış fiyatıyla değerleme yaklaşımına",
+         "Sınırsız oran artırımı yaklaşımına", "Bütün GÜG'ü dışlama yaklaşımına"],
+    ),
+    56: (
+        "Stokların maliyetin üzerinde ölçülmesini önlemek için",
+        ["Toplam sabit gider üretimle sıfıra düştüğü için",
+         "Sabit giderlerin satış hasılatı sayılması için",
+         "Standart maliyet tekniği kullanılamadığı için",
+         "Direkt maliyetler yüksek üretimde yok olduğu için"],
+    ),
+    57: (
+        "Standart maliyeti fiilî sonuca yaklaştırmayı",
+        ["Dönem sonu stoklarını sıfır maliyetli göstermeyi",
+         "Satış hasılatını sapma kadar artırmayı",
+         "Fiilî maliyet kayıtlarını kalıcı olarak silmeyi",
+         "Standart güncellemesini gereksiz kılmayı"],
+    ),
+    58: ("42.000 TL", ["20.000 TL", "6.000 TL", "12.000 TL", "140.000 TL"]),
+    60: ("2.280.200 TL", ["2.000.000 TL", "280.200 TL", "1.719.800 TL", "2.560.400 TL"]),
+}
+
+STEM_OVERRIDES = {
+    20: (
+        "Direkt malzeme sapmalarına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Fiyat farkı fiilî miktarla değerlenebilir\n\n"
+        "II. Kullanım farkı standart fiyatla değerlenebilir\n\n"
+        "III. Standart miktar fiilî üretim için izin verilen miktara uyarlanır"
+    ),
+    54: (
+        "Genel üretim gideri sapmalarına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\n"
+        "I. Değişken GÜG harcama sapması esnek bütçeyle karşılaştırılabilir\n\n"
+        "II. Sabit GÜG hacim sapması kapasite kullanımını yansıtır\n\n"
+        "III. Sabit GÜG bütçesi ilgili aralıkta fiilî saat arttıkça aynı oranda değişmez"
+    ),
+}
+
+PREMISE_OVERRIDES = {
+    20: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "Fiyat etkisi fiilî miktar, kullanım etkisi standart fiyat üzerinden ölçülebilir; izin verilen standart miktar fiilî çıktı düzeyine uyarlanır.",
+    ),
+    54: (
+        "I, II ve III",
+        ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
+        "Değişken GÜG harcama farkı esnek bütçeyle, sabit GÜG hacim farkı kapasiteyle ilişkilidir; toplam sabit bütçe ilgili aralıkta saatle aynı oranda değişmez.",
+    ),
+}
+
+for number, (correct, distractors) in CHOICE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+
+for number, stem in STEM_OVERRIDES.items():
+    Q[number - 1]["stem"] = stem
+
+for number, (correct, distractors, why) in PREMISE_OVERRIDES.items():
+    Q[number - 1]["correct"] = correct
+    Q[number - 1]["distractors"] = distractors
+    Q[number - 1]["why"] = why
+
+
 print("TOPLAM:", len(Q))
 
 
@@ -673,20 +980,25 @@ if __name__ == "__main__":
             "explanation": item["why"],
             "source": {
                 "kind": "generated",
-                "styleRef": "2026/1 test biçimi",
+                "styleRef": "2026/1 beş seçenekli test biçimi",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", LBL],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", LBL],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": UPDATED_AT,
             "examPeriod": "2026/1 formatına uyumlu",
-            "legislationVersion": "2026-07-16",
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "legislationVersion": LEGISLATION_VERSION,
+            "sourceUpdatedAt": UPDATED_AT,
             "isPremium": False,
             "isActive": True,
         })
+    assert all("demo soru" not in item["question"].casefold() for item in out)
+    assert all("demo açıklama" not in item["explanation"].casefold() for item in out)
     for output_path in OUTS:
-        json.dump(out, open(output_path, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with output_path.open("w", encoding="utf-8") as handle:
+            json.dump(out, handle, ensure_ascii=False, indent=2)
+            handle.write("\n")
     marker = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
     premises = sum(1 for item in out if len(marker.findall(item["question"])) >= 2)
     print(f"yazıldı: {len(out)} soru | öncüllü {premises} | harf {''.join(item['correctAnswer'] for item in out)[:40]}…")
