@@ -116,6 +116,63 @@ def jaccard(a: str, b: str) -> float:
     return len(left & right) / len(left | right) if left and right else 0.0
 
 
+def oncul_dagilimi(questions: list[dict]) -> list[tuple[str, str]]:
+    """Öncüllü (I/II/III "hangileri") sorularda doğru cevap hangi bileşimde?
+
+    ⚠⚠ BU KONTROL, DEDEKTÖRE YAZILMAYAN DÜZELTMENİN GERİ GELDİĞİNİ GÖSTERDİĞİ
+    İÇİN VAR. Daha önce "hepsi" (I, II ve III) cevabı %75'e çıkmıştı; 266 soruyu
+    elle düzeltip %18'e indirdim ama kuralı yalnız kafamda tuttum, araca
+    yazmadım. Sonra üretilen muhasebe_standartlari'nda kusur AYNEN geri geldi,
+    yalnız kılık değiştirdi: 155 öncüllü sorunun %65'inde cevap «I ve II».
+    "Hepsi"den kaçarken yerine yeni bir sabit koymuşum. Öğrenci açısından fark
+    yok — okumadan «I ve II» işaretleyen %65 alır.
+
+    Bu yüzden ölçüt TEK BİR BİLEŞİME değil, DAĞILIMA bakar: beş seçenekli bir
+    öncül sorusunda düzgün dağılım her bileşim için ~%20'dir; herhangi biri
+    baskınsa hangisi olduğunun önemi yoktur.
+
+    ⚠ EŞİK ULAŞILABİLİR OLANA GÖRE. Önce %35 demiştim; ölçünce gördüm ki bu,
+    mevcut soru TASARIMINDA ulaşılamaz bir hedef: bütün öncüllü sorularda üç
+    öncülün tam ikisi doğru yazılmış, yani cevap ancak 4 bileşimden biri olabilir.
+    8 soruyu üç iki'li bileşime dağıtınca en iyi ihtimal 3/3/2 = %37 — yani
+    kusursuz dengelenmiş bir dosya bile %35 eşiğinde uyarı alıyordu. Ulaşılamaz
+    hedefe göre uyarı vermek, uyarıyı değersizleştirir. Eşik: ≥%50 FATAL,
+    ≥%40 UYARI.
+
+    ⚠ ASIL KUSUR DAĞILIMDA DEĞİL, TASARIMDA — bu yüzden ayrıca ölçülür: 51
+    dosyanın 50'sinde "Yalnız X" şıkkı HİÇ doğru cevap değil (416 soru). Öğrenci
+    "Yalnız" ile başlayan iki şıkkı okumadan eler; taban %20 değil %33 olur.
+    Çaresi permütasyon değil İÇERİK: tek öncülü doğru soru yazmak.
+    """
+    oncullu = [q for q in questions if len(ONCUL.findall(q["stem"])) >= 2]
+    if len(oncullu) < 6:
+        return []
+    issues: list[tuple[str, str]] = []
+    tekli = re.compile(r"^\s*yalnız\s+(i{1,3}|iv|v)\s*$", re.I)
+    varsa = any(tekli.match(re.sub(r"\s*\([^)]*\)", "", v)) for q in oncullu
+                for v in q["options"].values())
+    dogruysa = any(tekli.match(re.sub(r"\s*\([^)]*\)", "", q["options"][q["answer"]]))
+                   for q in oncullu)
+    if varsa and not dogruysa:
+        issues.append(("UYARI", f"“Yalnız X” şıkkı {len(oncullu)} öncüllü sorunun hiçbirinde "
+                                "doğru değil — öğrenci iki şıkkı okumadan eler (taban %20 → %33); "
+                                "tek öncülü doğru soru yazılmalı"))
+
+    dagilim = collections.Counter(
+        re.sub(r"\s+", " ", q["options"][q["answer"]]).strip().casefold() for q in oncullu
+    )
+    metin, adet = dagilim.most_common(1)[0]
+    oran = adet * 100 // len(oncullu)
+    if oran >= 40:
+        kalanlar = ", ".join(f"“{t}” %{n * 100 // len(oncullu)}"
+                             for t, n in dagilim.most_common()[1:3])
+        issues.append(("FATAL" if oran >= 50 else "UYARI",
+                       f"öncüllü soruların %{oran}'inde cevap “{metin}” "
+                       f"({adet}/{len(oncullu)}) — okumadan işaretlenir"
+                       f"{'; sonraki: ' + kalanlar if kalanlar else ''}"))
+    return issues
+
+
 def tekrar_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
     """Şablon klonu, çözüm tekrarı ve yakın-tekrar.
 
@@ -348,6 +405,7 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
     # (Bu kontroller önce "≥20 soru" kapısının içindeydi; gerçek paketler 60 soruluk
     # olduğu için üretimde fark etmiyordu ama küçük dosyada sessizce atlanıyordu.)
     issues.extend(tekrar_sorunlari(saglam))
+    issues.extend(oncul_dagilimi(saglam))
     issues.extend(guncellik_sorunlari(saglam))
 
     # Aşağıdakiler İSTATİSTİKSEL; küçük örneklemde gürültü olur.

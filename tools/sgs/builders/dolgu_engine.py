@@ -136,17 +136,63 @@ ADLASTIRMA = [
     (r"\s*durumunu ifade eder", ""),
 ]
 
+# ── Atma-şıkkı ailesi ────────────────────────────────────────────────────────
+# "Bu husus standartta düzenlenmemiştir / serbest takdire bırakılmıştır" — 17
+# dosyada 474 üye, dosya başına ~28. Her göründüğünde YANLIŞ, dolayısıyla
+# standardı hiç bilmeyen öğrenci tek oturumda "böyle diyen şık yanlıştır"
+# kuralını öğrenir ve soruların yarısında bedava eleme yapar.
+#
+# ⚠ İlk regex yalnız "Bu husus … düzenlenmemiş olup … serbest takdirine
+# bırakılmıştır" tam kalıbını arıyordu ve ailenin ~%40'ını kaçırıyordu:
+# "…tanımlanmamış olup uygulamada kullanılmamaktadır", "…düzenlenmemiş bir
+# husustur", "…belirsiz bırakılmıştır" hepsi aynı işi görüyor. Ortak çekirdek
+# standardın adı + olumsuz fiil; kalıbın kuyruğu değişken.
 ATMA = re.compile(
-    r"Bu husus (?:TMS|TFRS|Kavramsal Çerçeve)[^.]*?düzenlenmemiş olup[^.]*?"
-    r"(?:serbest takdirine bırakılmıştır|bırakılmış bulunmaktadır)\.?",
+    r"(?:TMS|TFRS|Kavramsal Çerçeve|bu standartta|standartta)[^.]{0,48}?"
+    r"(?:düzenlenmemiş|tanımlanmamış|belirlenmemiş|hüküm bulunmamakta|"
+    r"serbest takdirine bırakıl|serbest bırakılmış)",
     re.IGNORECASE,
 )
 DOLGU_TEST = re.compile(r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır)", re.I)
 ONCUL = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
 
 
-def temizle(path: str, atma_yerine: list[str] | None = None,
-            kisalt: dict[str, dict[str, str]] | None = None,
+def _atma_sec(kurallar, question: dict, sira: int, ozel=None) -> str:
+    """Atma-şıkkının yerine geçecek yanılgıyı seç — KÖKE GÖRE, sırayla değil.
+
+    ⚠ Sırayla döndürmek yetmiyor. tms_10'da konu dardı ve kurtardı; tms_12'de
+    41 sorunun her biri ayrı bir alt konu ("muhasebe kârı" · "iskonto" ·
+    "netleştirme"). Netleştirme yanılgısını "muhasebe kârı nedir" sorusunun
+    altına koyarsan şık KONU DIŞI kalır — öğrenci standardı bilmeden yine eler,
+    yani atma-şıkkını yeni bir atma-şıkkıyla değiştirmiş olursun.
+
+    kurallar: [(kök_regex, metin), …] — ilk eşleşen kazanır (ÖZELDEN GENELE
+    sırala). Hiçbiri eşleşmezse SON eleman genel yedektir.
+    Düz liste verilirse eski sırayla-dağıtma davranışı korunur (tms_10).
+    """
+    if ozel and question["id"] in ozel:
+        return ozel[question["id"]]
+    if kurallar and isinstance(kurallar[0], str):
+        return kurallar[sira % len(kurallar)]
+    # ⚠ Çakışma gerçek çıktı. tms_12/0016'da "YÜKSEK olması" yanılgım o sorunun
+    # A şıkkıyla birebir aynıydı — çünkü A KIRPILDIKTAN SONRA benim cümleme
+    # indi. Çakışmayı kırpma öncesi şıklarla ölçmek yetmiyor; SONRAKİ hâle bak.
+    mevcut = {v.casefold() for v in question["options"].values()}
+    for kalip, metin in kurallar[:-1]:
+        if re.search(kalip, question["stem"], re.IGNORECASE) and metin.casefold() not in mevcut:
+            return metin
+    if kurallar[-1][1].casefold() not in mevcut:
+        return kurallar[-1][1]
+    raise SystemExit(
+        f"\n{question['id']}: eşleşen her yanılgı zaten şıklarda var — bu soruya ÖZEL yazılmalı.\n"
+        f"  kök   : {question['stem']}\n"
+        + "".join(f"  {h}{'◀doğru' if h == question['answer'] else '     '}: {v}\n"
+                  for h, v in sorted(question['options'].items()))
+        + f"  → KONFIG'e ekle:  \"atma_ozel\": {{\"{question['id']}\": \"<yeni yanılgı>\"}}\n")
+
+
+def temizle(path: str, atma_yerine=None, atma_ozel=None, uzat=None,
+            kisalt: "dict[str, dict[str, str]] | None" = None,
             yaz: bool = True) -> dict:
     """Bir dosyayı temizle; ne yapıldığını ve NE KALDIĞINI döndür."""
     qs = json.load(open(path, encoding="utf-8"))
@@ -160,7 +206,7 @@ def temizle(path: str, atma_yerine: list[str] | None = None,
             if harf == q["answer"]:
                 continue
             if atma_yerine and ATMA.search(v):
-                q["options"][harf] = atma_yerine[sira % len(atma_yerine)]
+                q["options"][harf] = _atma_sec(atma_yerine, q, sira, atma_ozel)
                 sira += 1
                 atma_sayi += 1
                 continue
@@ -172,13 +218,26 @@ def temizle(path: str, atma_yerine: list[str] | None = None,
                 q["options"][harf] = yeni
                 kirpilan += 1
 
-    # doğrunun altına yazılan çeldiriciler (içerik işi, dosyaya özel)
+    # doğrunun altına/üstüne yazılan çeldiriciler (içerik işi, dosyaya özel)
     for qid, degisim in (kisalt or {}).items():
         q = idx[qid]
         d = len(q["options"][q["answer"]])
         for harf, yeni in degisim.items():
             assert harf != q["answer"], f"{qid}: DOĞRU şıkka dokunulamaz ({harf})"
             assert len(yeni) < d, f"{qid}/{harf}: {len(yeni)} ≥ doğru {d} — kısalmamış"
+            q["options"][harf] = yeni
+
+    # ⚠ Uzatma doğrunun EN AZ 15 KARAKTER üstüne yazılmalı. Kıl payı uzatmak
+    # (122 ↔ 123) göz kararıyla fark edilmiyor ve dosyayı sessizce FATAL
+    # bırakıyor; vergi/borçlar dosyalarında bu bana toplam 6 tur yaktırdı.
+    # Bu yüzden kural assert — yazarken hedefi dökümden al, tahmin etme.
+    for qid, degisim in (uzat or {}).items():
+        q = idx[qid]
+        d = len(q["options"][q["answer"]])
+        for harf, yeni in degisim.items():
+            assert harf != q["answer"], f"{qid}: DOĞRU şıkka dokunulamaz ({harf})"
+            assert len(yeni) >= d + 15, \
+                f"{qid}/{harf}: {len(yeni)} < doğru {d} + 15 — {d + 15 - len(yeni)} karakter daha gerek"
             q["options"][harf] = yeni
 
     for q in qs:
