@@ -51,6 +51,57 @@ WRONG = {
     ],
 }
 
+# Doğru cevap uzunluğunun sistematik ipucu olmaması için her kazanım
+# bankasında kısa, orta ve uzun yanlış önermeler birlikte tutulur.
+WRONG["yetki"].extend([
+    "Yetki noter onayıyla başlar",
+    "Tescil yetki için yeterlidir",
+    "KAYİK'i her meslek mensubu denetler",
+    "Adi ortaklık kuruluş olabilir",
+    "Bütün paylar hamiline yazılı olabilir",
+    "Ortakların meslek mensubu olması yasaktır",
+    "Pay veya hisselerin yarısı hamiline yazılı olabilir",
+    "Payların yalnız bir kısmının nama yazılı olması yeterlidir",
+    "Ortakların yalnız yarısının meslek mensubu olması yeterlidir",
+    "Ortakların tacir olması yeterli olup meslek ruhsatı aranmaz",
+    "Kurumun ilanı gerekmeden yalnız şirket kuruluş sözleşmesiyle bağımsız denetim yetkisi kazanılır ve sınırsız biçimde kullanılır",
+    "KAYİK denetimi, Kurumca denetim kuruluşu olarak yetkilendirilmemiş herhangi bir SMMM veya YMM tarafından kişisel unvanla üstlenilebilir",
+])
+WRONG["kalite"].extend([
+    "Yalnız sözlü politika yeterlidir",
+    "Bağımsızlığın tek boyutu vardır",
+    "Etik ilkeler yalnız sır saklamadır",
+    "Kurum kalite incelemesi yapamaz",
+    "Taahhüt yalnız ilk yetkilendirmede alınır",
+    "Sürekli eğitim tescille aynı gün başlar",
+    "Yalnız ticari başarı ve müşteri memnuniyeti",
+    "Tarafsızlık yerine yönetimin talimatına bağlılık",
+    "Mesleki şüphecilik yerine kesin sonuç garantisi",
+    "Yalnız sır saklama ve reklam serbestisi",
+    "Kalite kontrol politikalarının Kurum düzenlemelerine aykırı olması hâlinde farklılık açıklanmaz ve eski uygulama aynen sürdürülür",
+    "Makul ve bilgi sahibi üçüncü kişinin algısı bağımsızlık değerlendirmesinde hiçbir önem taşımaz; yalnız denetçinin öznel kanaati esas alınır",
+])
+WRONG["kisit"].extend([
+    "Rotasyon süresi bir yıldır",
+    "Denetim ekibi tek kişi olabilir",
+    "Sonuca bağlı ücret zorunludur",
+    "Denetçi iki kuruluşta çalışabilir",
+    "Uzmanlar asgari denetçi sayısına eklenir",
+    "Soğuma süresi hiçbir denetçiye uygulanmaz",
+    "Aynı denetim ağı içindeki kuruluşların bir işletmede geçirdiği süreler rotasyon hesabında ayrı ayrı değerlendirilir ve birleştirilmez",
+    "Denetim ekibindeki teknik uzmanlar karar verici olabilir, asgari üç denetçi hesabına dâhil edilir ve yedek denetçi belirlenmesi gerekmez",
+])
+WRONG["yukum"].extend([
+    "Sözlü sözleşme yeterlidir",
+    "Dosyalar iki yıl saklanır",
+    "Sigorta ilk işte aranmaz",
+    "Bildirimler sınırsız sürelidir",
+    "Şeffaflık raporu gizli tutulur",
+    "Kurumun belge isteme yetkisi yoktur",
+    "Denetim sözleşmesi seçimden sonra süre sınırı olmaksızın yapılabilir ve sözleşme kurulmadan denetime devam edilmesi Kuruma bildirilmez",
+    "KAYİK denetimi yapan kuruluş şeffaflık raporunu yalnız kendi arşivinde saklar; Kuruma bildirme ve internet sitesinde yayımlama yükümlülüğü yoktur",
+])
+
 
 RULES = [
     R("Bir meslek mensubu Kurumca yetkilendirilmeden bağımsız denetim raporu imzalamak istemektedir. Bu mümkün müdür?", "Bağımsız denetim yapmaya yetkili kişileri belirleyen temel kural hangisidir?", "Denetim yalnız Kurumca yetkilendirilenlerce yapılır", "yetki", "Bağımsız denetim sadece Kurumca yetkilendirilen denetim kuruluşları veya denetçiler tarafından yetkileri çerçevesinde yapılır.", "Bağımsız Denetim Yönetmeliği m.11/1", "easy"),
@@ -82,19 +133,254 @@ RULES = [
 ]
 
 
-PREMISES = [
-    {"stem": "Yetkilendirme bakımından hangileri doğrudur?\n\nI. Denetim yalnız Kurumca yetkilendirilenlerce yapılır\n\nII. Yetkinin kullanımı Kurum ilanıyla başlar\n\nIII. KAYİK denetimini yalnız denetim kuruluşu üstlenir", "correct": "I, II ve III", "why": "Üç ifade de Yönetmeliğin denetim yapmaya yetkililer hakkındaki m.11 hükmünü doğru yansıtır.", "ref": "Bağımsız Denetim Yönetmeliği m.11"},
-    {"stem": "Kalite yapıları bakımından hangileri doğrudur?\n\nI. Kalite kontrol sistemi denetimi üstlenenin bünyesindedir\n\nII. Kalite güvence sistemi Kurumun dış gözetim yapısıdır\n\nIII. İki kavram tamamen aynı sistemi ifade eder", "correct": "I ve II", "why": "Kalite kontrol iç sistem, kalite güvence ise Kurum tarafından oluşturulan dış gözetim sistemidir.", "ref": "Bağımsız Denetim Yönetmeliği m.4, m.20 ve m.38"},
-    {"stem": "Mesleki etik ilkeler bakımından hangileri doğrudur?\n\nI. Dürüstlük ve tarafsızlık kapsamdadır\n\nII. Mesleki yeterlik ve özen kapsamdadır\n\nIII. Sır saklama ve mesleğe uygun davranış kapsamdadır", "correct": "I, II ve III", "why": "Yönetmelik m.21 beş temel etik ilkeyi bu başlıklarla düzenler.", "ref": "Bağımsız Denetim Yönetmeliği m.21"},
-    {"stem": "Bağımsızlığın korunması bakımından hangileri doğrudur?\n\nI. Tehditler değerlendirilir\n\nII. Alınan önlemler yazılı kaydedilir\n\nIII. Giderilemeyen kayıp Kurumdan gizlenir", "correct": "I ve II", "why": "Tehdit ve önlemler kayda alınır; bağımsızlık ortadan kalkarsa Kuruma bildirim gerekir.", "ref": "Bağımsız Denetim Yönetmeliği m.22/4"},
-    {"stem": "Denetim kısıtlamaları bakımından hangileri doğrudur?\n\nI. Sağlıklı yürütülemeyecek iş yükündeki denetim üstlenilemez\n\nII. Yetersiz kadroyla denetim üstlenilemez\n\nIII. Bağımsızlığı zedeleyen denetim üstlenilebilir", "correct": "I ve II", "why": "İş yükü, kadro ve bağımsızlık bakımından sağlıklı yürütülemeyen denetimler üstlenilemez.", "ref": "Bağımsız Denetim Yönetmeliği m.26"},
-    {"stem": "Denetim sözleşmesi bakımından hangileri doğrudur?\n\nI. Yazılı düzenlenir\n\nII. Denetimin amacı ve kapsamını içerir\n\nIII. Denetim ücreti başka hizmet alımına bağlanabilir", "correct": "I ve II", "why": "Sözleşme yazılıdır ve amaç-kapsam gibi unsurları içerir; ücret başka hizmete bağlanamaz.", "ref": "Bağımsız Denetim Yönetmeliği m.29"},
-    {"stem": "Gözetim ve şeffaflık bakımından hangileri doğrudur?\n\nI. KAYİK denetimi yapan kuruluş şeffaflık raporu yayımlar\n\nII. Kurum denetim dosyalarını kalite güvence kapsamında inceleyebilir\n\nIII. Şeffaflık raporu yalnız denetlenen işletmenin özel arşivinde tutulur", "correct": "I ve II", "why": "KAYİK denetimi yapan kuruluş raporu Kuruma bildirip sitesinde yayımlar; Kurum kalite güvence kapsamında inceleme yapar.", "ref": "Bağımsız Denetim Yönetmeliği m.36 ve m.38"},
-    {"stem": "İdari yaptırımlar bakımından hangileri doğrudur?\n\nI. Uyarı uygulanabilir\n\nII. Faaliyet izni askıya alınabilir\n\nIII. Faaliyet izni iptal edilebilir", "correct": "I ve II", "why": "Üç yaptırım da Yönetmelik m.39'da sayılmıştır; hedef dağılımı korumak için üçüncü öncül aşağıda değiştirilecektir.", "ref": "Bağımsız Denetim Yönetmeliği m.39"},
+def F(correct, focus, focus_correct, focus_why, focus_ref=None, focus_difficulty=None):
+    item = {
+        "correct": correct,
+        "focus": focus,
+        "focus_correct": focus_correct,
+        "focus_why": focus_why,
+    }
+    if focus_ref:
+        item["focus_ref"] = focus_ref
+    if focus_difficulty:
+        item["focus_difficulty"] = focus_difficulty
+    return item
+
+
+VARIANTS = [
+    F(
+        "Hayır; bağımsız denetim yalnız Kurumca yetkilendirilenler tarafından yapılabilir",
+        "Kurum tarafından yetkilendirilen denetim kuruluşu veya denetçi, bağımsız denetim yetkisini hangi olaydan sonra kullanmaya başlayabilir?",
+        "Yetkilendirmenin Kurum tarafından ilan edilmesinden sonra",
+        "Denetim kuruluşları ve denetçiler yetkilerini, yetkilendirmenin Kurum tarafından ilanıyla kullanmaya başlar.",
+        "Bağımsız Denetim Yönetmeliği m.11/2",
+        "easy",
+    ),
+    F(
+        "KAYİK denetimini yalnız Kurumca yetkilendirilmiş bir denetim kuruluşu üstlenebilir",
+        "KAYİK ve Kurumca ayrıca belirlenen işletmeler dışındaki işletmelerin bağımsız denetimini kim üstlenebilir?",
+        "Denetim kuruluşu veya Kurumca onaylanan denetim üstlenen bağımsız denetçi",
+        "KAYİK dışındaki işletmelerin denetimi, yetkileri çerçevesinde denetim kuruluşu ya da denetim üstlenen bağımsız denetçi tarafından üstlenilebilir.",
+        "Bağımsız Denetim Yönetmeliği m.11/3",
+        "hard",
+    ),
+    F(
+        "Adi ortaklık uygun değildir; denetim kuruluşunun sermaye şirketi olması gerekir",
+        "Denetim kuruluşu olarak yetkilendirilecek sermaye şirketinin pay veya hisseleri hangi biçimde olmalıdır?",
+        "Pay veya hisselerin tamamı nama yazılı olmalıdır",
+        "Yetkilendirme şartlarından biri şirket pay veya hisselerinin tamamının nama yazılı olmasıdır.",
+        "Bağımsız Denetim Yönetmeliği m.13/1-b",
+        "easy",
+    ),
+    F(
+        "Sermaye ve oy haklarının yarısından fazlası kuruluşun denetçilerine ait olmalıdır",
+        "Denetim kuruluşunun ortaklarının mesleki niteliğine ilişkin yetkilendirme şartı hangisidir?",
+        "Ortakların tamamı meslek mensubu olmalıdır",
+        "Sermaye ve oy çoğunluğunun denetçilere ait olması yanında ortakların tamamının 3568 kapsamında meslek mensubu olması gerekir.",
+        "Bağımsız Denetim Yönetmeliği m.13/1-e",
+    ),
+    F(
+        "Meslek mensubu olmadığı için yalnız şirket deneyimiyle bağımsız denetçi yetkisi alamaz",
+        "Bağımsız denetçi yetkilendirmesinde meslek ruhsatına ek olarak aranan temel koşulların doğru özeti hangisidir?",
+        "Uygun eğitim, Türkiye'de yerleşiklik, uygulamalı eğitim ve sınav başarısı",
+        "Yönetmelik; uygun lisans veya lisansüstü eğitim, Türkiye'de yerleşiklik, uygulamalı mesleki eğitim ve denetçilik sınavı başarısı gibi koşulları birlikte arar.",
+        "Bağımsız Denetim Yönetmeliği m.14/1",
+        "hard",
+    ),
+    F(
+        "Bu elektronik kayıt yapısı Bağımsız Denetim Resmî Sicilidir",
+        "Ortak marka, kalite politikası, iş stratejisi veya önemli mesleki kaynakları paylaşmayı amaçlayan iş birliği yapısı nasıl adlandırılır?",
+        "Bu iş birliği yapılanması denetim ağı olarak adlandırılır",
+        "Hukuki bağ bulunmasa bile ortak marka, strateji, kalite politikası veya önemli kaynak paylaşımını amaçlayan yapılanma denetim ağıdır.",
+        "Bağımsız Denetim Yönetmeliği m.4/e",
+        "easy",
+    ),
+    F(
+        "Kuruluş bünyesindeki yazılı politika ve süreçler kalite kontrol sistemini oluşturur",
+        "Kalite kontrol politikaları ile Kurum düzenlemesi arasında farklılık oluşursa denetimi üstlenenin temel yükümlülüğü nedir?",
+        "Farklılığı gerekçelendirmek, belgelemek ve uygulamanın Kurum düzenlemesine uyumunu göstermek",
+        "Yazılı politika veya farklı uygulama Kurum düzenlemesinden ayrılıyorsa bu durum gerekçesiyle belgelenmeli ve uyumun nasıl sağlandığı gösterilmelidir.",
+        "Bağımsız Denetim Yönetmeliği m.20/2",
+        "hard",
+    ),
+    F(
+        "Kurumun dış inceleme ve gözetim yapısı kalite güvence sistemidir",
+        "Yönetmeliğe göre Kurumun olağan inceleme sıklığı KAYİK denetleyen kuruluşlar ile diğer denetim kuruluşlarında en az kaç yılda birdir?",
+        "KAYİK denetleyenlerde üç, diğer denetim kuruluşlarında altı yılda bir",
+        "Kurum KAYİK denetleyen kuruluşları asgari üç yılda bir, diğer denetim kuruluşlarını asgari altı yılda bir inceler.",
+        "Bağımsız Denetim Yönetmeliği m.38/3",
+        "hard",
+    ),
+    F(
+        "Tarafsızlığı ve sır saklamayı koruyan davranış mesleki etik ilkelere uygundur",
+        "Bağımsız Denetim Yönetmeliği'nde birlikte sayılan beş temel mesleki etik ilke hangileridir?",
+        "Dürüstlük, tarafsızlık, mesleki yeterlik ve özen, sır saklama ve mesleğe uygun davranış",
+        "M.21; dürüstlük, tarafsızlık, mesleki yeterlik ve özen, sır saklama ile mesleğe uygun davranışı temel etik ilkeler olarak sayar.",
+        "Bağımsız Denetim Yönetmeliği m.21/1",
+    ),
+    F(
+        "Yazılı taahhüt her denetimden önce ve her hâlde yılda en az bir kez alınmalıdır",
+        "Denetime başladıktan sonra bağımsızlık, tarafsızlık veya sır saklamayı olumsuz etkileyebilecek bir husus ortaya çıkarsa ekip üyesi ne yapmalıdır?",
+        "Durumu denetimi üstlenene yazılı olarak bildirmelidir",
+        "Denetçiler ve denetime katılanlar, etik ilkeleri olumsuz etkileyebilecek yeni hususları denetim kuruluşuna veya denetimi üstlenene yazılı bildirir.",
+        "Bağımsız Denetim Yönetmeliği m.21/2",
+        "hard",
+    ),
+    F(
+        "Makul ve bilgili üçüncü kişide oluşan bağımsızlık izlenimi şekilde bağımsızlığı etkiler",
+        "Şekilde bağımsızlık değerlendirilirken olay ve ilişkiler kimin bakış açısından değerlendirilir?",
+        "Konuya ilişkin gerçekleri değerlendiren makul ve bilgi sahibi üçüncü kişinin",
+        "Şekilde bağımsızlık, tüm durum ve gerçekleri değerlendiren makul ve bilgi sahibi üçüncü kişinin algısını esas alır.",
+        "Bağımsız Denetim Yönetmeliği m.22/1-b",
+    ),
+    F(
+        "Mesleki muhakemeyi bozabilecek etkilerden uzak görüş oluşturmak esasta bağımsızlıktır",
+        "Esasta bağımsızlık denetçinin hangi üç mesleki niteliği koruyarak görüş açıklamasını gerektirir?",
+        "Dürüstlük, tarafsızlık ve mesleki şüphecilik",
+        "Esasta bağımsızlık denetçinin dürüstlük, tarafsızlık ve mesleki şüphecilik içinde, olumsuz etkilerden uzak görüş açıklamasıdır.",
+        "Bağımsız Denetim Yönetmeliği m.22/1-a",
+    ),
+    F(
+        "Uygun değildir; denetçi denetlenen işletmenin karar alma mekanizmasına katılamaz",
+        "Denetçi, denetlenen işletmenin muhasebe politikası seçimini işletme adına yapıp yönetim sorumluluğu üstlenebilir mi?",
+        "Hayır; işletmenin karar ve yönetim sorumluluğunu üstlenemez",
+        "Bağımsızlık, denetçinin denetlenen işletme adına karar almamasını ve yönetim sorumluluğu üstlenmemesini gerektirir.",
+        "Bağımsız Denetim Yönetmeliği m.22/2",
+        "hard",
+    ),
+    F(
+        "Tehdit kaydedilip Kuruma bildirilir ve Kurum onayıyla denetim sözleşmesi sona erdirilir",
+        "Bağımsızlığa yönelik tehditler ile bunları kabul edilebilir düzeye indirmek için alınan önlemler nasıl izlenmelidir?",
+        "Değerlendirme ve önlemler yazılı olarak kayda alınmalıdır",
+        "Bağımsızlık tehditleri, bunların değerlendirilmesi ve alınan önlemler denetim dosyasında yazılı biçimde kayıt altına alınır.",
+        "Bağımsız Denetim Yönetmeliği m.22/4",
+    ),
+    F(
+        "İzin verilen tasdik ve vergi hizmetleri dışındaki danışmanlık hizmeti denetlenen işletmeye verilemez",
+        "Denetim ücretinin sonucu olumlu görüşe veya izin verilen başka bir hizmetin satın alınmasına bağlanması mümkün müdür?",
+        "Hayır; ücret denetim sonucuna veya başka hizmete bağlanamaz",
+        "Denetim ücreti bağımsızlık ve kaliteyi koruyacak şekilde belirlenir; denetim sonucuna veya başka hizmete bağlı olamaz.",
+        "Bağımsız Denetim Yönetmeliği m.29/2 ve m.32",
+        "hard",
+    ),
+    F(
+        "Reklam, kesin denetim sonucu vaadi ve diğer denetçilerle üstünlük karşılaştırması yasaktır",
+        "Başka bir denetimi üstlenenle hizmet ilişkisi devam eden işletmenin aynı döneme ait denetim talebi kural olarak kabul edilebilir mi?",
+        "Hayır; Kurumun izin verdiği hâller dışında aynı dönem talebi kabul edilemez",
+        "Haksız rekabet yasağı kapsamında, başka denetimi üstlenenle ilişkisi süren müşterinin aynı dönem talebi Kurumca izin verilmedikçe kabul edilemez.",
+        "Bağımsız Denetim Yönetmeliği m.24/2",
+        "hard",
+    ),
+    F(
+        "Sürekli eğitim tescili izleyen ikinci takvim yılının başında başlar",
+        "Sürekli eğitim yükümlülüğü başladıktan sonra denetçi hangi dönemler için Kurumun öngördüğü koşulları karşılamalıdır?",
+        "Her yıl ile üçer yıllık dönemler için",
+        "Denetçiler sürekli eğitim yükümlülüğünün başlamasından itibaren hem yıllık hem de üçer yıllık dönemler için belirlenen koşulları karşılar.",
+        "Bağımsız Denetim Yönetmeliği m.25/3",
+    ),
+    F(
+        "Son on yılda yedi yıl denetlenen işletme için üç yıl geçmeden kuruluş yeniden denetim üstlenemez",
+        "Denetim kuruluşunun rotasyon süresi hesaplanırken aynı denetim ağındaki ve ilişkili kuruluşların çalışmalarına nasıl yaklaşılır?",
+        "Aynı işletmedeki denetim süreleri topluca dikkate alınır",
+        "Rotasyon hesabında aynı denetim ağında bulunan ve ilişkili denetim kuruluşlarının aynı işletmedeki süreleri birlikte değerlendirilir.",
+        "Bağımsız Denetim Yönetmeliği m.26/2",
+        "hard",
+    ),
+    F(
+        "Son yedi yılda beş yıl denetime katılan denetçi aynı işletmeye üç yıllık aradan sonra dönebilir",
+        "Bir denetçi farklı denetim kuruluşlarında çalışmışsa aynı işletmede geçirdiği süreler rotasyon hesabında nasıl ele alınır?",
+        "Çalıştığı kuruluşlara bakılmaksızın sürelerin tamamı birlikte dikkate alınır",
+        "Denetçinin aynı işletmede geçirdiği süreler, hangi denetim kuruluşunda çalıştığına bakılmaksızın rotasyon hesabında birleştirilir.",
+        "Bağımsız Denetim Yönetmeliği m.26/2",
+        "hard",
+    ),
+    F(
+        "Denetçi ayrılışından sonra iki yıl geçmeden son iki yılda denetlediği işletmede kilit yönetici olamaz",
+        "Denetçinin iki yıllık kilit yönetici olma yasağı yalnız denetlenen işletmeye mi uygulanır?",
+        "Hayır; denetlenen işletmenin bağlı ortaklıklarını da kapsar",
+        "Soğuma kuralı, son iki yılda denetlenen işletmenin yanı sıra onun bağlı ortaklıklarında kilit yönetici olmayı da kapsar.",
+        "Bağımsız Denetim Yönetmeliği m.26/3",
+        "hard",
+    ),
+    F(
+        "Denetçi aynı dönemde yalnız bir denetim kuruluşu veya denetim üstlenen adına denetim yapabilir",
+        "Denetçinin mevcut denetim kuruluşuyla ilişkisi sürerken başka bir denetim kuruluşuna ortak olması veya onun denetiminde görev alması mümkün müdür?",
+        "Hayır; mevcut ilişkisi sona ermeden diğer kuruluşta ortak olamaz veya görev alamaz",
+        "Denetçi mevcut kuruluşla ilişkisi sona ermedikçe başka kuruluşta ortak olamaz, denetim yapamaz veya onun üstlendiği denetimde görev alamaz.",
+        "Bağımsız Denetim Yönetmeliği m.26/4",
+        "hard",
+    ),
+    F(
+        "Ekip en az üç denetçiden oluşmalı ve gerekli kademeler için nitelikli yedekler belirlenmelidir",
+        "Denetim ekibindeki teknik uzmanlar ve denetçi yardımcıları asgari denetçi sayısı ile karar yetkisi bakımından nasıl değerlendirilir?",
+        "Asgari sayıya dâhil edilmezler ve karar verici konumda bulunamazlar",
+        "Uzmanlar ve yardımcı kişiler denetçi olarak görevlendirilmedikçe asgari denetçi sayısına katılmaz ve karar verici olamaz.",
+        "Bağımsız Denetim Yönetmeliği m.27/3",
+        "hard",
+    ),
+    F(
+        "Denetlenen işletmeyle denetimi üstlenen arasında yazılı denetim sözleşmesi kurulmalıdır",
+        "TTK uyarınca seçilen denetimi üstlenenle sözleşme seçimden itibaren kaç gün içinde yapılır; işletme ihtara rağmen kaçınırsa bildirim süresi nedir?",
+        "Sözleşme 60 günde yapılır; kaçınma izleyen 10 gün içinde Kuruma bildirilir",
+        "Denetim sözleşmesi seçimden itibaren en geç 60 günde yapılır; yazılı ihtara rağmen kaçınılırsa durum izleyen 10 günde Kuruma bildirilir.",
+        "Bağımsız Denetim Yönetmeliği m.29/3",
+        "hard",
+    ),
+    F(
+        "Sözleşmede denetim dışı hizmet öngörülemez ve denetim ücreti başka hizmet koşuluna bağlanamaz",
+        "Denetimi üstlenen denetim sözleşmesini hangi hâllerde feshedebilir ve feshi Kuruma ne kadar sürede bildirir?",
+        "Haklı sebep veya görevden alma davasında feshedebilir; gerekçeyi 10 günde bildirir",
+        "Denetimi üstlenen yalnız haklı sebep veya görevden alma davası hâlinde feshedebilir ve fesihle gerekçelerini 10 gün içinde Kuruma yazılı bildirir.",
+        "Bağımsız Denetim Yönetmeliği m.29/4",
+        "hard",
+    ),
+    F(
+        "Mesleki sorumluluk sigortası ilk denetim işiyle başlar ve üstlenilen bütün denetimleri kapsar",
+        "Mesleki sorumluluk sigortası poliçesinin düzenlenmesi veya poliçe ve sigorta şirketi değişikliği Kuruma ne kadar sürede bildirilir?",
+        "İlgili tarihi takip eden günden itibaren en geç 30 gün içinde",
+        "Poliçenin düzenlenme tarihi ile poliçe veya sigorta şirketindeki değişiklikler takip eden günden itibaren en geç 30 günde Kuruma bildirilir.",
+        "Bağımsız Denetim Yönetmeliği m.34/1-ç",
+        "hard",
+    ),
+    F(
+        "Denetim ve kalite kontrol belgeleri ekleriyle birlikte on yıl süreyle saklanmalıdır",
+        "Bir takvim yılında KAYİK denetimi yapan kuruluş yıllık şeffaflık raporunu ne zaman ve nasıl duyurur?",
+        "İzleyen dördüncü ay sonuna kadar Kuruma bildirir ve internet sitesinde yayımlar",
+        "KAYİK denetimi yapan kuruluş izleyen dördüncü ayın sonuna kadar raporu Kuruma bildirir ve kendi internet sitesinde yayımlar.",
+        "Bağımsız Denetim Yönetmeliği m.36/1",
+        "hard",
+    ),
 ]
 
-PREMISES[7]["stem"] = "İdari yaptırımlar bakımından hangileri doğrudur?\n\nI. Uyarı uygulanabilir\n\nII. Faaliyet izni askıya alınabilir\n\nIII. Kurumun faaliyet iznini iptal yetkisi hiçbir durumda yoktur"
-PREMISES[7]["why"] = "Uyarı ve askıya alma uygulanabilir; gerekli koşullarda faaliyet izninin iptali de mümkündür."
+assert len(VARIANTS) == len(RULES) == 26
+for rule, variant in zip(RULES, VARIANTS):
+    rule.update(variant)
+
+
+def length_balanced_distractors(correct, bank):
+    """Doğru cevabın iki yanında ikişer uzunlukta çeldirici seçer."""
+    shorter = sorted((x for x in bank if len(x) < len(correct)), key=len, reverse=True)
+    longer = sorted((x for x in bank if len(x) > len(correct)), key=len)
+    assert len(shorter) >= 2 and len(longer) >= 2, correct
+    return shorter[:2] + longer[:2]
+
+
+for rule in RULES:
+    bank = WRONG[rule["bank"]]
+    rule["scenario_distractors"] = length_balanced_distractors(rule["correct"], bank)
+    rule["focus_distractors"] = length_balanced_distractors(rule["focus_correct"], bank)
+
+
+PREMISES = [
+    {"stem": "Yetkilendirme bakımından hangileri doğrudur?\n\nI. Denetim yalnız Kurumca yetkilendirilenlerce yapılır\n\nII. Yetkinin kullanımı Kurum ilanıyla başlar\n\nIII. KAYİK denetimini yalnız denetim kuruluşu üstlenir", "correct": "I, II ve III", "why": "Üç ifade de Yönetmeliğin denetim yapmaya yetkililer ve KAYİK denetimleri hakkındaki m.11 hükmünü doğru yansıtır.", "ref": "Bağımsız Denetim Yönetmeliği m.11"},
+    {"stem": "Sorumlu denetçi koşulları bakımından hangileri doğrudur?\n\nI. KAYİK denetiminde on beş yıllık mesleki tecrübe aranır\n\nII. Bu sürenin en az üç yılında fiilen denetim tecrübesi bulunmalıdır\n\nIII. Koşulları taşıyan denetçi Kurum onayıyla görevlendirilir", "correct": "I, II ve III", "why": "KAYİK sorumlu denetçisinde on beş yıllık mesleki tecrübe, bunun en az üç yılında fiilî denetim ve Kurum onayı birlikte aranır.", "ref": "Bağımsız Denetim Yönetmeliği m.28/1-a"},
+    {"stem": "Bağımsızlık bakımından hangileri doğrudur?\n\nI. Denetim esasen ve şeklen bağımsız yürütülür\n\nII. Makul ve bilgi sahibi üçüncü kişinin algısı şekilde bağımsızlıkta önemsizdir\n\nIII. Denetçi işletmenin karar alma mekanizmasına katılamaz", "correct": "I ve III", "why": "Denetim esasen ve şeklen bağımsızdır ve denetçi karar mekanizmasına katılamaz; üçüncü kişinin algısı şekilde bağımsızlıkta önemlidir.", "ref": "Bağımsız Denetim Yönetmeliği m.22/1-2"},
+    {"stem": "Rotasyon ve denetim kısıtlamaları bakımından hangileri doğrudur?\n\nI. Kuruluş son on yılda altı yıl denetlediği işletmeye zorunlu olarak üç yıl ara verir\n\nII. Denetçi son yedi yılda beş yıl çalıştığı işletmede üç yıl geçmeden yeniden görev alamaz\n\nIII. Aynı denetim ağındaki kuruluşların süreleri birlikte dikkate alınır", "correct": "II ve III", "why": "Kuruluş için eşik son on yılda yedi yıldır; denetçi için beş yıl eşiği ve ağ sürelerinin toplu hesabı doğrudur.", "ref": "Bağımsız Denetim Yönetmeliği m.26/1-2"},
+    {"stem": "Sözleşme ve raporlama bakımından hangileri doğrudur?\n\nI. TTK kapsamındaki sözleşme seçimden itibaren en geç altmış günde yapılır\n\nII. Denetim raporu olağan genel kuruldan en az yirmi gün önce yönetim organına teslim edilir\n\nIII. Yaygın kanıt yetersizliğinde olumsuz görüş verilir", "correct": "I ve II", "why": "İlk iki süre doğrudur; denetim konusunun geneline yayılan kanıt yetersizliği görüş vermekten kaçınmayı gerektirir.", "ref": "Bağımsız Denetim Yönetmeliği m.29/3 ve m.30/2-3"},
+    {"stem": "Kuruma yapılacak bildirimler bakımından hangileri doğrudur?\n\nI. Daha önce bildirilmiş bilgilerdeki değişiklik otuz günde bildirilir\n\nII. Sigorta poliçesi değişikliği en geç otuz günde bildirilir\n\nIII. Son takvim yılı gelirleri haziran sonuna kadar bildirilir", "correct": "Yalnız II", "why": "Poliçe değişikliği otuz günde bildirilir; genel bilgi değişikliği on gündür ve son yıl gelirleri 15 Mayıs sonuna kadar bildirilir.", "ref": "Bağımsız Denetim Yönetmeliği m.34/1"},
+    {"stem": "Şeffaflık ve Kurum incelemesi bakımından hangileri doğrudur?\n\nI. KAYİK denetimi yapan kuruluş raporu izleyen dördüncü ay sonuna kadar yayımlar\n\nII. Şeffaflık raporu yalnız bir yıl kamunun erişimine açık tutulur\n\nIII. KAYİK denetleyen kuruluşlar asgari üç yılda bir incelenir", "correct": "I ve III", "why": "Rapor izleyen dördüncü ay sonuna kadar yayımlanır ve KAYİK denetleyen kuruluş asgari üç yılda bir incelenir; rapor beş yıl erişime açık tutulur.", "ref": "Bağımsız Denetim Yönetmeliği m.36/1, m.36/5 ve m.38/3"},
+    {"stem": "İdari yaptırımlar bakımından hangileri doğrudur?\n\nI. Mevzuata aykırılıkta uygulanabilecek tek yaptırım sözlü tavsiyedir\n\nII. Uyarı, faaliyet iznini askıya alma ve iptal yaptırımları uygulanabilir\n\nIII. Bu yaptırımlardan birine karar verilmesi ayrıca idari para cezasına engel olmaz", "correct": "II ve III", "why": "Yönetmelik uyarı, askıya alma ve iptali sayar; bunların uygulanması ayrıca idari para cezasına karar verilmesini engellemez.", "ref": "Bağımsız Denetim Yönetmeliği m.39"},
+]
 
 
 if __name__ == "__main__":
@@ -102,6 +388,6 @@ if __name__ == "__main__":
         lesson_id="denetim", topic_id="bagimsiz_denetim_yonetmeligi",
         label="Bağımsız Denetim Yönetmeliği", slug="bagimsiz_denetim_yonetmeligi",
         prefix="kh-bdy", seed=20261007,
-        legislation_version="KGK Bağımsız Denetim Yönetmeliği (16.07.2026 güncel)",
+        legislation_version="KGK Bağımsız Denetim Yönetmeliği (17.07.2026 güncel metin)",
         rules=RULES, premises=PREMISES, wrong_banks=WRONG,
     )
