@@ -68,6 +68,16 @@ def metin(value: str, *, sablon: bool = False) -> str:
     return " ".join(re.findall(r"[\wçğıöşü#]+", value, flags=re.UNICODE))
 
 
+def cevap_metni(value: str) -> str:
+    """Cevap karşılaştırması için normalleştirme — İŞARETLERİ KORUR.
+
+    ⚠ Burada `metin()` KULLANILAMAZ: o, sözcük olmayan her karakteri atar ve
+    “−%10” ile “%10” ikisini birden “10” yapar — biri azalış, öteki artış olduğu
+    hâlde. Bu, karsilastirmali_analiz'de 4 sahte klon üretmişti.
+    """
+    return re.sub(r"\s+", " ", re.sub(r"[`*_]", "", str(value or ""))).strip().casefold()
+
+
 def soru_sablonu(question: dict) -> tuple:
     """Kök + şık kümesinin sayıları maskelenmiş iskeleti."""
     return (metin(question["stem"], sablon=True),
@@ -101,7 +111,7 @@ def tekrar_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
 
     for question in questions:
         qid = str(question.get("id") or "<idsiz>")
-        cevap = metin(question["options"][question["answer"]])
+        cevap = cevap_metni(question["options"][question["answer"]])
 
         anahtar = soru_sablonu(question)
         gorulen = sablonlar.setdefault(anahtar, {})

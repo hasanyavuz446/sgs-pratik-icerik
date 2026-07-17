@@ -194,6 +194,16 @@ class TekrarTest(unittest.TestCase):
                            self.sayisal("q3", "600.000", "780.000", "%130")])
         self.assertTrue(any("q3" in f and "q2" in f for f in fatals), fatals)
 
+    def test_artis_ve_azalis_ayni_cevap_sayilmaz(self):
+        """“%10” ile “−%10” farklı cevaplardır; biri artış, öteki azalış.
+
+        `metin()` sözcük olmayan karakteri attığı için ikisini de “10” yapıyor
+        ve 4 sahte klon üretiyordu. Cevap karşılaştırması işaretleri korumalı.
+        """
+        fatals = audit_et([self.sayisal("q1", "400.000", "440.000", "%10"),
+                           self.sayisal("q2", "400.000", "360.000", "\u2212%10")])
+        self.assertEqual([f for f in fatals if "aynı şablon" in f], [])
+
     def test_birebir_ayni_cozum_yakalanir(self):
         ortak = "Trend yüzdesi, cari dönem tutarının baz yıl tutarına bölünüp yüz ile çarpılmasıdır."
         a = self.sayisal("q1", "500.000", "600.000", "%120"); a["solution"] = ortak
