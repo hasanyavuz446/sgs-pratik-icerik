@@ -1,3 +1,23 @@
+# DURUM — 2026-07-17 sonu
+
+## Biten
+- ✅ Vergi Hukuku (%68→%20) · Borçlar Hukuku (%64→%22)
+- ✅ **muhasebe_standartlari 17/17 (%20-30)** — havuzun en zoru; atma-şıkkı (474
+  üye, "standartta düzenlenmemiştir") gerçek standart yanılgılarıyla değiştirildi
+  + boy dengelendi. Doğru cevap/kök/çözüm/harf her dosyada 0/0/0/0.
+- ✅ Öncül dağılımı TÜM havuzda (541 soru, "I ve II" %47→%26; `oncul_dengele.py`
+  permütasyonu, içerik korunarak)
+- ✅ Denetim güçlendi: kör-öğrenci (5 strateji), atma-şıkkı, öncül dağılımı
+  (gerçek-istismar kalibrasyonu), çakışma tespiti, parantez-kırpma sahte-poz. fix
+
+## Kalan (AYRI OTURUMA ertelendi — kullanıcı kararı)
+🔴 **24 dosya SALT BOY FATAL** (~391 elle uzat/kisalt). atma-şıkkı YOK.
+En kötü: meslek/staj %91 · meslek/sorumluluk %85 · ticaret/haksiz_rekabet %83 ·
+ticaret/anonim_sirket %73 · denetim/denetim_raporu %68 + 19 dosya %35-58.
+Araç: `python3 tools/sgs/builders/rebalance_boy.py <ders/dosya> --rapor`
+
+---
+
 # Şık örüntüsü denetim raporu — SGS havuzu
 
 Ölçüm tarihi: 2026-07-17  ·  Ölçen: `tools/sgs/audit.py` (`kor_ogrenci`)
