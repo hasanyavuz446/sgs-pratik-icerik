@@ -55,9 +55,6 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
             continue
 
         stem = re.sub(r"\s+", " ", question["stem"]).strip().casefold()
-        if stem in stems:
-            issues.append(("FATAL", f"yinelenen soru kökü: {qid}"))
-        stems.add(stem)
 
         options = question["options"]
         if not isinstance(options, dict) or set(options) != LETTERS:
@@ -65,8 +62,18 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
             continue
         if any(not isinstance(value, str) or not value.strip() for value in options.values()):
             issues.append(("FATAL", f"{qid}: boş seçenek var"))
-        if len({re.sub(r"\s+", " ", value).strip().casefold() for value in options.values()}) != 5:
+        normalized = {re.sub(r"\s+", " ", value).strip().casefold() for value in options.values()}
+        if len(normalized) != 5:
             issues.append(("FATAL", f"{qid}: yinelenen seçenek var"))
+
+        # Kopya ölçütü kök DEĞİL, kök + şık kümesidir. Genel kökler ("Aşağıdakilerden
+        # hangisi ... değildir?") farklı şıklarla meşru olarak tekrar eder; yalnız köke
+        # bakmak 16 pakette 43 sahte FATAL üretiyordu. Şıklar küme olarak alındığından
+        # harf permütasyonuyla çoğaltılmış gerçek kopya da yakalanır.
+        signature = (stem, frozenset(normalized))
+        if signature in stems:
+            issues.append(("FATAL", f"yinelenen soru (kök ve şıklar aynı): {qid}"))
+        stems.add(signature)
 
         answer = question["answer"]
         if answer not in options:
