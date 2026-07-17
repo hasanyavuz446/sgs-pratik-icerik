@@ -5,8 +5,8 @@
     "konu": "denetim_raporu",
     "stem": "Bağımsız denetim sürecinin nihai çıktısı olan 'denetim raporu' temel olarak neyi içerir?",
     "options": {
-      "A": "İşletmenin gelecek dönem kâr tahminlerini ve yatırım tavsiyelerini içeren bir öngörü raporunu",
-      "B": "Denetçinin, finansal tabloların çerçeveye uygunluğu hakkındaki görüşünü açıkladığı yazılı raporu",
+      "A": "Gelecek dönem kâr tahminleri",
+      "B": "Finansal tablolar hakkındaki denetçi görüşünü içeren yazılı rapor",
       "C": "İşletmenin tüm yevmiye ve defter-i kebir kayıtlarının olduğu gibi kopyalandığı bir belge setini",
       "D": "İşletme yönetiminin faaliyetlerini ve başarılarını anlattığı yıllık faaliyet ve tanıtım raporunu",
       "E": "Vergi dairesine sunulmak üzere hazırlanan kurumlar vergisi beyannamesi ve eklerini"
@@ -52,7 +52,7 @@
       "A": "Finansal tablolar önemli bir yanlışlık içerse de bu yanlışlık yaygın olmadığında verilir",
       "B": "Finansal tablolar bir bütün olarak gerçeği yansıtmadığında ve yanlışlık yaygın olduğunda verilir",
       "C": "Denetçi yeterli ve uygun kanıt toplayamadığında ve bunun etkisi yaygın olduğunda verilir",
-      "D": "Finansal tablolar tüm önemli yönleriyle geçerli raporlama çerçevesine uygun sunulduğunda verilir",
+      "D": "Tablolar tüm önemli yönleriyle geçerli çerçeveye uygun sunulduğunda verilir",
       "E": "İşletmenin faaliyetlerini sürdürme kabiliyeti hakkında ciddi kuşku bulunduğu her durumda verilir"
     },
     "answer": "D",
@@ -71,7 +71,7 @@
     "konu": "denetim_raporu",
     "stem": "Denetçinin olumlu görüş vermesi finansal tablolar hakkında ne ifade eder?",
     "options": {
-      "A": "Tabloların bir bütün olarak önemli yanlışlık içermediğine dair makul güvence sağlandığını ifade eder",
+      "A": "Tabloların önemli yanlışlık içermediğine ilişkin makul güvenceyi ifade eder",
       "B": "Tabloların rakamlarının kuruşu kuruşuna kesin doğru olduğunun mutlak garantisini ifade eder",
       "C": "İşletmenin gelecekte kesinlikle kâr edeceğinin ve batmayacağının garanti edildiğini ifade eder",
       "D": "İşletme yönetiminin dürüst olduğunun ve hiç hata yapmadığının kanıtlandığını ifade eder",
@@ -118,7 +118,7 @@
       "A": "Tablolar hiçbir yanlışlık içermeyip tüm yönleriyle çerçeveye tam uygun olduğunda verilir",
       "B": "Kanıt yetersizliği hem önemli hem yaygın olup denetçi görüş oluşturamadığında verilir",
       "C": "Yanlışlıklar hem önemli hem yaygın olup tabloların tümünü gerçeğe aykırı kıldığında verilir",
-      "D": "Önemli ama yaygın OLMAYAN bir yanlışlık ya da kanıt sınırlaması bulunduğunda 'hariç olmak üzere' denerek verilir",
+      "D": "Önemli fakat yaygın olmayan yanlışlık veya kanıt sınırlamasında verilir",
       "E": "İşletmenin geleceğine ilişkin kâr beklentisi olumlu olduğunda ve tablolar doğru olduğunda verilir"
     },
     "answer": "D",
@@ -137,9 +137,9 @@
     "konu": "denetim_raporu",
     "stem": "'Görüş bildirmekten kaçınma' hangi durumda söz konusu olur?",
     "options": {
-      "A": "Tablolar tüm önemli yönleriyle doğru olup denetçinin hiçbir çekincesi bulunmadığında",
+      "A": "Tablolar önemli yanlışlık içermiyorsa",
       "B": "Önemli ama yaygın olmayan, tek bir kalemi etkileyen bir yanlışlık tespit edildiğinde",
-      "C": "Yeterli ve uygun kanıt toplanamaması hem önemli hem yaygın olup denetçi görüş oluşturamadığında",
+      "C": "Yeterli kanıt yoksa ve olası etkiler önemli ve yaygınsa verilir",
       "D": "Tablolardaki yanlışlıklar hem önemli hem yaygın olup tabloların bütününü etkilediğinde",
       "E": "İşletmenin süreklilik belirsizliği tablo dipnotlarında yeterince açıklandığında"
     },
@@ -159,8 +159,8 @@
     "konu": "denetim_raporu",
     "stem": "Olumlu görüş dışındaki görüş türlerinin (şartlı, olumsuz, kaçınma) belirlenmesinde denetçinin dikkate aldığı iki temel ölçüt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Denetim ücretinin büyüklüğü ile denetimin tamamlanma süresi",
-      "B": "Sorunun niteliği (yanlışlık mı, kanıt sınırlaması mı) ile sorunun yaygınlık derecesi",
+      "A": "Denetim ücreti ve süresi",
+      "B": "Sorunun niteliği ile finansal tablolara yaygınlığı",
       "C": "İşletmenin ortak sayısı ile hisse senetlerinin borsada işlem görüp görmemesi",
       "D": "Denetçinin kıdemi ile denetim ekibinde çalışan uzman sayısının fazlalığı",
       "E": "İşletmenin sektörü ile üretilen ürün çeşidinin toplam sayısı"
@@ -181,11 +181,11 @@
     "konu": "denetim_raporu",
     "stem": "Denetimde 'yaygınlık (pervasiveness)' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Denetim raporunun kamuoyunda ne kadar geniş biçimde tartışılıp yayıldığı",
+      "A": "Raporun yayımlanma alanı",
       "B": "Denetim ekibinin işletmenin kaç farklı şubesine ve birimine giderek çalışma yürüttüğü",
       "C": "Finansal tabloların ne kadar geniş bir kullanıcı kitlesine dağıtılıp sunulduğu",
       "D": "İşletmenin faaliyet gösterdiği coğrafi bölgelerin ve pazarların ne kadar geniş olduğu",
-      "E": "Bir yanlışlığın veya sınırlamanın etkisinin, finansal tabloların geneline ne ölçüde yayıldığı"
+      "E": "Etkilerin finansal tabloların geneline yayılma derecesi"
     },
     "answer": "E",
     "solution": "**Yaygınlık**, bir yanlışlığın/kanıt sınırlamasının etkisinin **finansal tabloların geneline** ne ölçüde yayıldığıdır (belirli kalemle sınırlı mı, yoksa tabloların bütününü mü etkiliyor). Görüş türünü belirleyen kilit ölçüttür.",
@@ -247,7 +247,7 @@
     "konu": "denetim_raporu",
     "stem": "Finansal tablolardaki yanlışlıklar HEM ÖNEMLİ HEM YAYGIN olup tabloların bütününü gerçeğe aykırı kılıyorsa denetçinin vereceği görüş türü hangisidir?",
     "options": {
-      "A": "Olumsuz (aykırı) görüş (tabloların bütünü gerçeği yansıtmadığından)",
+      "A": "Olumsuz (aykırı) görüş",
       "B": "Dikkat çekme paragraflı olumlu görüş (görüş değiştirilmeden)",
       "C": "Sınırlı olumlu (şartlı) görüş ('hariç olmak üzere' denerek)",
       "D": "Olumlu görüş (tablolar doğru kabul edilerek verilir)",
@@ -295,7 +295,7 @@
       "B": "Önemli ama yaygın değilse olumsuz görüş; hem önemli hem yaygınsa şartlı görüş verilir",
       "C": "Her iki durumda da görüş bildirmekten kaçınılır; şartlı ya da olumsuz görüş verilmez",
       "D": "Her iki durumda da olumlu görüş verilir; yanlışlık görüş türünü değiştirmez",
-      "E": "Önemli ama yaygın değilse şartlı görüş; hem önemli hem yaygınsa olumsuz görüş verilir"
+      "E": "Önemli ve yaygın değilse şartlı, önemli ve yaygınsa olumsuz görüş verilir"
     },
     "answer": "E",
     "solution": "Yanlışlık kaynaklı sorunlarda: **önemli ama yaygın değil → şartlı görüş**; **önemli VE yaygın → olumsuz görüş**. (Kanıt sınırlaması kaynaklıysa sırasıyla şartlı görüş ve görüş bildirmekten kaçınma olurdu.)",
@@ -315,7 +315,7 @@
     "options": {
       "A": "Önemli ama yaygın değilse görüş bildirmekten kaçınma; hem önemli hem yaygınsa şartlı görüş",
       "B": "Önemli ama yaygın değilse olumsuz görüş; hem önemli hem yaygınsa şartlı görüş verilir",
-      "C": "Önemli ama yaygın değilse şartlı görüş; hem önemli hem yaygınsa görüş bildirmekten kaçınma",
+      "C": "Önemli ve yaygın değilse şartlı görüş, yaygınsa görüşten kaçınma söz konusudur",
       "D": "Her iki durumda da olumlu görüş verilir; kanıt eksikliği görüş türünü etkilemez",
       "E": "Önemli ama yaygın değilse olumlu görüş; hem önemli hem yaygınsa olumsuz görüş verilir"
     },
@@ -357,10 +357,10 @@
     "konu": "denetim_raporu",
     "stem": "'Kilit denetim konuları (KDK)' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "İşletmenin gelecek yıla ilişkin belirlediği stratejik hedefler ve yatırım planlarının listesi",
+      "A": "Gelecek yılın hedefleri",
       "B": "İşletme yönetiminin kamuoyuna açıklamak istemediği ve gizli tutulması gereken ticari sırlar",
       "C": "Denetçinin görüşünü olumsuza çeviren ve tabloların reddedilmesini gerektiren yaygın yanlışlıklar",
-      "D": "Denetçinin mesleki muhakemesine göre cari dönem denetiminde en çok önem taşıyan ve raporda açıklanan konular",
+      "D": "Cari dönem denetiminde en çok önem taşıyan konular",
       "E": "Denetim ekibinin çalışma saatlerini ve ücretlerini gösteren idari nitelikli bir cetvel"
     },
     "answer": "D",
@@ -381,7 +381,7 @@
     "options": {
       "A": "Doğrudan olumsuz görüş verir; süreklilik kuşkusu her durumda tabloların reddini gerektirir",
       "B": "Görüş bildirmekten kaçınır; süreklilik belirsizliği görüş oluşturmayı her koşulda imkânsız kılar",
-      "C": "Görüşünü değiştirmeden, süreklilikle ilgili önemli belirsizliğe raporda ilgili bölümde dikkat çeker",
+      "C": "Görüşü değiştirmeden, süreklilik belirsizliğine ilgili bölümde dikkat çeker",
       "D": "Olumlu görüş verir ve süreklilik belirsizliğini raporda hiçbir biçimde belirtmez",
       "E": "Denetimi sonlandırıp rapor düzenlemez; süreklilik kuşkusu denetimin bitirilmesini engeller"
     },
@@ -402,7 +402,7 @@
     "stem": "Bağımsız denetim raporunda 'yönetimin sorumluluğu' bölümünde açıklanan husus aşağıdakilerden hangisidir?",
     "options": {
       "A": "Finansal tablolara ilişkin görüş bildirmenin ve denetimi standartlara uygun yürütmenin yönetime ait olduğu",
-      "B": "Finansal tabloların geçerli çerçeveye uygun hazırlanması ve iç kontrolün oluşturulmasının yönetime ait olduğu",
+      "B": "Tabloları hazırlamak ve iç kontrolü kurmak yönetimin sorumluluğudur",
       "C": "Denetim ücretinin belirlenmesinin ve denetim ekibinin seçilmesinin yönetimin sorumluluğunda olduğu",
       "D": "İşletmenin gelecek dönem bütçesini hazırlamanın ve yatırım kararı almanın denetçiye ait olduğu",
       "E": "Denetim raporunu kamuoyuna açıklamanın ve dağıtmanın yalnızca denetçinin sorumluluğunda olduğu"
@@ -445,8 +445,8 @@
     "konu": "denetim_raporu",
     "stem": "Denetçinin verdiği görüşün 'olumlu görüş dışında bir görüş (şartlı/olumsuz/kaçınma)' olması durumunda raporda ayrıca bulunması gereken bölüm hangisidir?",
     "options": {
-      "A": "Görüşün neden değiştirildiğini açıklayan 'Görüşün Dayanağı' (şartlı/olumsuz/kaçınma dayanağı) bölümü",
-      "B": "Yönetimin gelecek dönem kâr hedeflerini gösteren ayrı bir projeksiyon bölümü",
+      "A": "Görüş değişikliğinin nedenini açıklayan Görüşün Dayanağı bölümü",
+      "B": "Yönetimin kâr projeksiyonu",
       "C": "Denetim ekibinin çalışma saatlerini ve ücretini gösteren idari bir dökümantasyon bölümü",
       "D": "İşletmenin sektördeki rakiplerine göre pazar payını karşılaştıran bir analiz bölümü",
       "E": "İşletme yönetiminin başarılarını öven ve teşekkür eden bir takdir/tanıtım bölümü"
@@ -471,7 +471,7 @@
       "B": "Tabloların hiçbir çekince olmadan tümüyle doğru ve tam olduğu (olumlu görüş) anlamına gelir",
       "C": "Denetçinin hiçbir konuda görüş oluşturamadığı ve görüş bildirmekten kaçındığı anlamına gelir",
       "D": "İşletmenin faaliyetlerini sürdüremeyeceği ve yakında iflas edeceği anlamına gelir",
-      "E": "Belirtilen husus DIŞINDA, finansal tabloların çerçeveye uygun ve gerçeğe uygun sunulduğu anlamına gelir"
+      "E": "Belirtilen husus dışında tabloların çerçeveye uygun olduğunu bildirir"
     },
     "answer": "E",
     "solution": "'**Hariç olmak üzere**', belirtilen **belirli husus dışında** tabloların çerçeveye uygun ve gerçeğe uygun sunulduğu anlamına gelir. Sorun sınırlı olduğu için tabloların bütünü reddedilmez.",
@@ -489,9 +489,9 @@
     "konu": "denetim_raporu",
     "stem": "Bir işletmenin bilançosunda büyük tutarlı bir şüpheli alacağa hiç karşılık ayrılmamıştır; bu tek yanlışlık önemli olmakla birlikte tabloların bütününü bozacak kadar yaygın değildir. Denetçi hangi görüşü verir?",
     "options": {
-      "A": "Olumlu görüş; karşılık ayrılmaması denetim görüşünü hiçbir biçimde etkilemez",
+      "A": "Olumlu görüş",
       "B": "Olumsuz görüş; her karşılık eksikliği tabloların tümünün reddini gerektirir",
-      "C": "Sınırlı olumlu (şartlı) görüş; yanlışlık önemli ama yaygın olmadığından 'hariç olmak üzere' denir",
+      "C": "Önemli fakat yaygın olmayan yanlışlık için sınırlı olumlu görüş",
       "D": "Görüş bildirmekten kaçınma; karşılık eksikliği görüş oluşturmayı imkânsız kılar",
       "E": "Dikkat çekme paragraflı olumlu görüş; yanlışlık doğru sunulmuş sayılır"
     },
@@ -511,8 +511,8 @@
     "konu": "denetim_raporu",
     "stem": "Denetçinin, işletmenin finansal tablolarını raporlama çerçevesine (ör. TMS/TFRS) açıkça ve yaygın biçimde aykırı bulması durumunda vereceği görüş türü hangisidir?",
     "options": {
-      "A": "Olumlu görüş; çerçeveye aykırılık görüşü etkilemez",
-      "B": "Olumsuz (aykırı) görüş; yaygın çerçeve ihlali tabloların bütününü gerçeğe aykırı kılar",
+      "A": "Olumlu görüş",
+      "B": "Yaygın yanlışlık nedeniyle olumsuz görüş",
       "C": "Sınırlı olumlu (şartlı) görüş; aykırılık ne kadar yaygın olursa olsun 'hariç' denir",
       "D": "Dikkat çekme paragraflı olumlu görüş; görüş değiştirilmeden verilir",
       "E": "Görüş bildirmekten kaçınma; çerçeve ihlali kanıt eksikliği sayılır"
@@ -536,7 +536,7 @@
       "A": "Finansal tabloları geçerli çerçeveye uygun biçimde hazırlamak ve iç kontrolü kurmak",
       "B": "İşletmenin gelecek dönem bütçesini hazırlamak ve yatırım kararlarını almak",
       "C": "İşletmenin vergi beyannamesini düzenlemek ve vergi dairesine zamanında sunmak",
-      "D": "Denetimi standartlara uygun yürütüp finansal tablolara ilişkin makul güvence sağlayarak görüş bildirmek",
+      "D": "Standartlara uygun denetimle makul güvence sağlayıp görüş bildirmek",
       "E": "İşletmenin ürünlerini pazarlamak ve satış cirosunu artıracak stratejiler geliştirmek"
     },
     "answer": "D",
@@ -559,7 +559,7 @@
       "B": "Rapor tarihi her zaman finansal tabloların ait olduğu dönemin ilk günü olarak yazılır",
       "C": "Rapor tarihi, denetim sözleşmesinin imzalandığı tarihle aynı olmak zorundadır",
       "D": "Rapor tarihi, işletmenin kuruluş tarihiyle aynı olacak biçimde belirlenir",
-      "E": "Rapor tarihi, denetçinin görüşe dayanak yeterli-uygun kanıtı elde ettiği tarihten önce olamaz"
+      "E": "Rapor tarihi, yeterli ve uygun kanıtın elde edildiği tarihten önce olamaz"
     },
     "answer": "E",
     "solution": "Rapor **tarihi**, denetçinin görüşüne dayanak oluşturacak **yeterli ve uygun kanıtı elde ettiği tarihten önce olamaz**. Bu tarih, denetçinin o tarihe kadarki olayları dikkate aldığını gösterir.",
@@ -578,7 +578,7 @@
     "stem": "'Diğer husus' paragrafı ile 'dikkat çekme (belirli hususa vurgu)' paragrafı arasındaki fark aşağıdakilerden hangisidir?",
     "options": {
       "A": "Dikkat çekme paragrafı görüşü değiştirir; diğer husus paragrafı görüşü olumsuza çevirir",
-      "B": "Dikkat çekme, tablolarda SUNULAN bir hususa vurgu yapar; diğer husus ise tablolarda sunulmayan ama kullanıcı için önemli bir konuya değinir",
+      "B": "Dikkat çekme tablodaki, diğer hususlar tablolarda yer almayan konuya ilişkindir",
       "C": "İkisi de görüşü şartlı olumlu görüşe dönüştürmek amacıyla kullanılan zorunlu bölümlerdir",
       "D": "Dikkat çekme paragrafı yalnızca kamu şirketlerinde, diğer husus paragrafı yalnızca özel şirketlerde kullanılır",
       "E": "İkisi arasında hiçbir fark yoktur; yalnızca isimlendirmeleri birbirinden farklıdır"
@@ -599,8 +599,8 @@
     "konu": "denetim_raporu",
     "stem": "Aşağıdakilerden hangisi denetçinin görüşünü OLUMLU görüşten farklılaştıran (değiştiren) bir durumdur?",
     "options": {
-      "A": "Finansal tabloların çerçeveye önemli ölçüde aykırı olması ya da yeterli kanıt toplanamaması",
-      "B": "Tablolarda doğru açıklanmış bir hususa raporda yalnızca dikkat çekilmesi durumu",
+      "A": "Önemli yanlışlık veya yeterli kanıt bulunmaması",
+      "B": "Dikkat çekme paragrafı",
       "C": "Raporda kilit denetim konularının ayrı bir bölümde açıklanmış olması durumu",
       "D": "İşletmenin süreklilik belirsizliğinin tablolarda yeterince açıklanmış olması durumu",
       "E": "Raporda denetçinin adının, imzasının ve rapor tarihinin yer alıyor olması durumu"
@@ -621,9 +621,9 @@
     "konu": "denetim_raporu",
     "stem": "Denetim raporundaki 'muhatap' bölümü ile ilgili doğru ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Rapor işletmenin en büyük müşterisine hitaben yazılır ve yalnızca ona sunulur",
+      "A": "En büyük müşteriye",
       "B": "Rapor yalnızca vergi dairesine hitaben yazılır; başka bir tarafa muhatap kılınamaz",
-      "C": "Rapor, denetimi yaptıran tarafa (genellikle ortaklar/genel kurul ya da yönetim kurulu) hitaben yazılır",
+      "C": "Rapor, denetimi yaptıranlara hitaben düzenlenir",
       "D": "Rapor denetçinin kendisine hitaben yazılır; dış bir muhatabı bulunmaz",
       "E": "Muhatap bölümü rapordan çıkarılır; denetim raporunda muhatap belirtilmez"
     },
@@ -669,7 +669,7 @@
       "B": "Şartlı görüş, tabloların tümünün reddedildiği ve hiç güvenilmemesi gerektiği anlamına gelir",
       "C": "Görüş türü ne olursa olsun tabloların güvenilirliği bakımından hiçbir fark yaratmaz",
       "D": "Görüş bildirmekten kaçınma, olumlu görüşten daha yüksek bir güvence düzeyi sağlar",
-      "E": "Olumlu görüş kullanıcılara en yüksek güvenceyi verirken, olumsuz görüş tabloların gerçeği yansıtmadığını bildirir"
+      "E": "Olumlu görüş güvenceyi, olumsuz görüş tabloların yanlışlığını bildirir"
     },
     "answer": "E",
     "solution": "**Olumlu görüş** kullanıcılara en yüksek güvenceyi verir; **olumsuz görüş** tabloların gerçeği yansıtmadığını bildirir. Şartlı görüş belirli husus dışında güvence verir; kaçınmada ise denetçi güvence veremez.",
@@ -687,9 +687,9 @@
     "konu": "denetim_raporu",
     "stem": "Aşağıdaki durumlardan hangisinde denetçinin OLUMLU görüş vermesi uygun olur?",
     "options": {
-      "A": "İşletmenin bir bölümünün kayıtlarına ulaşılamadığından yaygın kanıt eksikliği varsa",
+      "A": "Yaygın kanıt eksikliği varsa",
       "B": "Tablolarda önemli ama yalnızca tek bir kalemi etkileyen bir yanlışlık tespit edilmişse",
-      "C": "Finansal tablolar tüm önemli yönleriyle geçerli çerçeveye uygun ve gerçeğe uygun sunulmuşsa",
+      "C": "Tablolar tüm önemli yönleriyle geçerli çerçeveye uygunsa",
       "D": "Tablolar çerçeveye yaygın biçimde aykırı olup bütünüyle gerçeği yansıtmıyorsa",
       "E": "Önemli bir hesap kalemi için denetçi yeterli ve uygun kanıt toplayamamışsa"
     },
@@ -709,8 +709,8 @@
     "konu": "denetim_raporu",
     "stem": "Denetim raporunun 'Görüş' paragrafında yer alan temel ifade aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Finansal tabloların, ilgili çerçeveye uygun olarak gerçeğe uygun bir biçimde sunulup sunulmadığına dair denetçi görüşü",
-      "B": "İşletmenin gelecek dönem kârının ne kadar olacağına ilişkin denetçinin tahmini",
+      "A": "Tabloların çerçeveye uygun sunulup sunulmadığına ilişkin görüş",
+      "B": "Gelecek dönem kâr tahmini",
       "C": "Denetim ekibinin işletmede kaç gün çalıştığına ve toplam kaç saat harcadığına ilişkin bilgi",
       "D": "İşletme yönetiminin dönem içinde aldığı stratejik kararların bir listesi ve değerlendirmesi",
       "E": "İşletmenin rakiplerine kıyasla pazar payının ve rekabet gücünün karşılaştırmalı analizi"

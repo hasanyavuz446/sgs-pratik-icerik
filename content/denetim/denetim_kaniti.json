@@ -7,7 +7,7 @@
     "options": {
       "A": "Yalnızca işletmenin resmi olarak tuttuğu yevmiye ve defter-i kebir kayıtlarından oluşan belgeler bütünü",
       "B": "Yalnızca işletme yönetiminin denetçiye sunmayı kabul ettiği sözlü açıklama ve beyanlardan ibaret bilgiler",
-      "C": "Denetçinin görüşüne dayanak oluşturan, finansal tablo iddialarını destekleyen veya çürüten tüm bilgi ve belgeler",
+      "C": "Denetçi görüşüne dayanak oluşturan bilgi ve belgeler",
       "D": "Yalnızca bağımsız üçüncü kişilerden yazılı olarak temin edilen teyit ve mutabakat mektuplarıyla sınırlı belgeler",
       "E": "Denetim sonunda düzenlenen ve denetçi görüşünü içeren bağımsız denetim raporunun ekindeki tablolar"
     },
@@ -49,7 +49,7 @@
     "konu": "denetim_kaniti",
     "stem": "Denetim kanıtının 'uygunluğu (uygun olması)' aşağıdakilerden hangisini ifade eder?",
     "options": {
-      "A": "Kanıtın KALİTESİNİ; yani iddiayla ilgililiğini (relevance) ve güvenilirliğini (reliability) birlikte",
+      "A": "Kanıtın ilgili iddiayla ilgililiği ve güvenilirliği",
       "B": "Kanıtın maliyetinin, sağladığı faydayı aşmaması gerektiğini belirten ekonomiklik ölçüsünü",
       "C": "Kanıtın yalnızca işletmenin kendi ürettiği iç belgelerden oluşması gerektiği koşulunu",
       "D": "Kanıtın miktarını, yani toplanan kanıtın sayısının denetim için yeterli olup olmadığını",
@@ -75,7 +75,7 @@
       "B": "Sözlü olarak alınan beyanlar, yazılı ve belgeye dayalı kanıtlardan her zaman daha güvenilir kabul edilir",
       "C": "Zayıf bir iç kontrol ortamında üretilen kanıt, güçlü iç kontrol altında üretilenden daha güvenilirdir",
       "D": "Fotokopi veya taranmış belgeler, asıl (orijinal) belgelerle her zaman tümüyle eşit güvenilirliğe sahiptir",
-      "E": "İşletme dışı bağımsız kaynaklardan doğrudan sağlanan kanıt, işletme içi kaynaklı kanıttan daha güvenilirdir"
+      "E": "Bağımsız dış kaynaktan doğrudan alınan kanıt daha güvenilirdir"
     },
     "answer": "E",
     "solution": "Doğru genelleme: **işletme dışı bağımsız kaynaklardan doğrudan sağlanan kanıt** (ör. banka teyidi) işletme içi kaynaklı kanıttan daha güvenilirdir. Ayrıca yazılı > sözlü, asıl > fotokopi, güçlü iç kontrol altında üretilen > zayıf.",
@@ -249,7 +249,7 @@
     "options": {
       "A": "Tek başına en güçlü kanıttır; başka teknikle desteklenmesine hiçbir biçimde gerek yoktur",
       "B": "Yazılı dış teyitten her zaman daha güvenilirdir ve onların yerine geçebilir niteliktedir",
-      "C": "Tek başına genelde zayıf/sınırlı kanıttır; başka tekniklerle desteklenip doğrulanması gerekir",
+      "C": "Tek başına sınırlı kanıttır; başka tekniklerle doğrulanmalıdır",
       "D": "Denetim kanıtı olarak hiçbir koşulda kabul edilmez ve dikkate alınması yasaktır",
       "E": "Yalnızca üst düzey yöneticilere sorulduğunda kesin ve tam güvenilir kanıt sayılır"
     },
@@ -339,7 +339,7 @@
       "B": "Hesap bakiyelerinin oran ve eğilimlerinin beklenen değerlerle karşılaştırılmasını",
       "C": "Bir sürecin işletmede yürütülüşünü denetçinin uzaktan izleyip not almasını",
       "D": "Bağımsız üçüncü kişilerden yazılı mutabakat ve teyit mektupları temin edilmesini",
-      "E": "Fatura, sözleşme, dekont gibi kayıt ve belgelerin içerik ve tutar yönünden gözden geçirilmesini"
+      "E": "Kayıt ve belgelerin içerik ve tutar yönünden incelenmesini"
     },
     "answer": "E",
     "solution": "**Belge inceleme**, fatura, sözleşme, dekont, tutanak gibi **kayıt ve belgelerin** içerik/tutar/uygunluk yönünden gözden geçirilmesidir. Belgenin niteliğine göre güvenilirliği değişir (dış > iç, asıl > fotokopi).",
@@ -359,7 +359,7 @@
     "options": {
       "A": "Yalnızca denetimin planlama aşamasında kullanılır; sonraki aşamalarda kullanılması yasaktır",
       "B": "Yalnızca raporlama aşamasında, görüş oluşturulduktan hemen sonra bir kez kullanılabilir",
-      "C": "Planlama (risk belirleme), esas inceleme (kanıt toplama) ve sonuçlandırma aşamalarında kullanılabilir",
+      "C": "Planlama, esas inceleme ve sonuçlandırma aşamalarında kullanılabilir",
       "D": "Yalnızca iç kontrolün test edildiği aşamada, kontrol testleri yerine geçmek üzere kullanılır",
       "E": "Yalnızca hile şüphesi bulunan denetimlerde ve yalnızca bir defaya mahsus olarak kullanılır"
     },
@@ -382,7 +382,7 @@
       "A": "İşletme yönetiminden sözlü olarak alınan açıklama ve beyanlar",
       "B": "İşletmenin kendi içinde düzenlediği ve yine kendi arşivinde tuttuğu iç belgeler",
       "C": "İşletme personelinin denetçiye ilettiği, üçüncü kişilerden duyduğu ikinci el bilgiler",
-      "D": "Denetçinin bizzat elde ettiği kanıt ile bağımsız dış kaynaklardan doğrudan gelen yazılı teyit",
+      "D": "Denetçinin elde ettiği veya bağımsız dış kaynaktan gelen kanıt",
       "E": "İşletmenin sunduğu belgelerin fotokopi veya taranmış (elektronik kopya) biçimleri"
     },
     "answer": "D",
@@ -401,7 +401,7 @@
     "konu": "denetim_kaniti",
     "stem": "Bir alacak hesabının GERÇEKTEN VAR OLDUĞUNU ve tutarını doğrulamak için en uygun (etkili) denetim tekniği hangisidir?",
     "options": {
-      "A": "Borçlu müşterilere alacak mutabakat (teyit) mektubu gönderip doğrudan yazılı yanıt almak",
+      "A": "Borçluya teyit gönderip doğrudan yazılı yanıt almak",
       "B": "İşletmenin satış personeline alacağın tahsil edilip edilmeyeceğini sözlü olarak sormak",
       "C": "Alacakla ilgili yevmiye kaydının borç-alacak toplamını yeniden hesaplayıp kontrol etmek",
       "D": "Alacak devir hızı oranını önceki yıllarla karşılaştırıp genel eğilimi yorumlamak",
@@ -514,7 +514,7 @@
       "A": "Kontrol testleri tutar doğruluğunu, maddi doğrulama ise kontrollerin işleyişini ölçer",
       "B": "Kontrol testleri yalnızca raporlama aşamasında, maddi doğrulama yalnızca planlamada yapılır",
       "C": "İkisi de yalnızca iç kontrolün tasarımını ölçer; aralarında uygulamada bir fark bulunmaz",
-      "D": "Maddi doğrulama hesap tutar/bakiyelerindeki yanlışlığı; kontrol testleri kontrollerin etkinliğini ölçer",
+      "D": "Maddi doğrulama bakiyeyi, kontrol testi kontrol etkinliğini sınar",
       "E": "Maddi doğrulama yalnızca analitik prosedürden, kontrol testleri yalnızca gözlemden oluşur"
     },
     "answer": "D",
@@ -578,7 +578,7 @@
     "stem": "İç kontrolün güçlü ve etkin olduğu bir denetimde, denetçinin toplayacağı maddi doğrulama (esas prosedür) kanıtı miktarı nasıl etkilenir?",
     "options": {
       "A": "Kontrol riski yükseleceğinden gereken esas prosedür kanıtı miktarı belirgin biçimde artar",
-      "B": "Kontrol riski düşük değerlendirileceğinden gereken esas prosedür kanıtı miktarı azalabilir",
+      "B": "Kontrol riski düştükçe gereken esas prosedür kanıtı azalabilir",
       "C": "İç kontrol güçlüyse hiçbir esas prosedür yapılmaz; yalnızca kontrol testi yeterli olur",
       "D": "Kanıt miktarı iç kontrolün gücünden bağımsızdır; her durumda tümüyle aynı kalır",
       "E": "Denetim tümüyle gereksiz hale gelir; görüş kontrollere bakılarak doğrudan verilir"
@@ -623,7 +623,7 @@
     "options": {
       "A": "Yanıt gelmediği için o alacağı denetim kapsamından çıkarıp hiç incelememek",
       "B": "İşletme yönetiminden alacağın gerçek olduğuna dair sözlü bir beyan alıp yetinmek",
-      "C": "Alacağın sonraki dönemde yapılan tahsilatını ve ilgili sevk/fatura belgelerini incelemek",
+      "C": "Sonraki tahsilat ile sevk ve fatura belgelerini incelemek",
       "D": "Yanıt gelmeyen tutarı doğrudan şüpheli alacak sayıp herhangi bir inceleme yapmamak",
       "E": "Teyidi tekrar tekrar aynı borçluya gönderip yanıt gelene kadar denetimi durdurmak"
     },
@@ -643,7 +643,7 @@
     "konu": "denetim_kaniti",
     "stem": "Denetim kanıtının 'ilgililiği (relevance)' ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Kanıtın, test edilen belirli iddiayla mantıksal bağı; o iddiayı destekleme/çürütme gücü",
+      "A": "Kanıtın test edilen iddiayı destekleme veya çürütme gücü",
       "B": "Kanıtın hangi kaynaktan geldiği ve o kaynağın ne ölçüde bağımsız/güvenilir olduğu",
       "C": "Toplanan kanıtın miktarının, denetim için sayıca yeterli olup olmadığı ölçüsü",
       "D": "Kanıtın elde edilme maliyetinin, sağladığı faydayı aşıp aşmadığı ekonomiklik ölçüsü",
@@ -734,7 +734,7 @@
       "A": "Kontrol testinde yalnızca dış teyit kullanılır; başka hiçbir teknik uygulanamaz",
       "B": "Kontrol testinde teknik kullanılmaz; kontrolün varlığı beyanla kabul edilir",
       "C": "Kontrol testleri yalnızca analitik prosedürle yapılır; belge incelemesi kullanılmaz",
-      "D": "Gözlem, belge inceleme, soruşturma ve yeniden uygulama gibi teknikler kontrol testinde kullanılabilir",
+      "D": "Kontrol testlerinde gözlem, inceleme, soruşturma ve yeniden uygulama kullanılabilir",
       "E": "Kontrol testleri yalnızca fiziki stok sayımı yapılarak gerçekleştirilebilir"
     },
     "answer": "D",
@@ -1238,7 +1238,7 @@
     "stem": "Muhasebe tahminlerinin (ör. karşılıklar, amortisman, değer düşüklüğü) denetiminde denetçinin temel yaklaşımı aşağıdakilerden hangisidir?",
     "options": {
       "A": "Tahminler kesin sayılıp hiç incelenmez; yönetimin belirlediği tutar aynen kabul edilir",
-      "B": "Tahminin dayandığı varsayımların, yöntemin ve verilerin makullüğü değerlendirilip kanıtla test edilir",
+      "B": "Tahminin varsayım, yöntem ve verilerinin makullüğünü kanıtla test etmek",
       "C": "Tahminler her zaman sıfır kabul edilip finansal tablolardan tümüyle çıkarılması istenir",
       "D": "Tahmin tutarı yalnızca geçen yılki tutarla aynıysa doğru; farklıysa kesinlikle yanlış sayılır",
       "E": "Tahminler yalnızca vergi denetiminde incelenir; bağımsız denetimin kapsamı dışında bırakılır"

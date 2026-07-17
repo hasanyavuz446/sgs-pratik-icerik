@@ -9,7 +9,7 @@
       "B": "Finansal tabloların yalnızca en büyük tutarlı tek bir hesabına bakılarak görüş oluşturulması",
       "C": "Yalnızca işletme yönetiminin denetçiye örnek olarak sunmayı seçtiği belgelerin incelenmesi",
       "D": "Denetim ücretinin, incelenecek işlem sayısına göre önceden hesaplanıp belirlenmesi işlemi",
-      "E": "Bir kütle içindeki birimlerin %100'ünden azına denetim prosedürü uygulayıp kütlenin bütününe ilişkin sonuç çıkarma"
+      "E": "Kütlenin tamamından azını test ederek bütünü hakkında sonuç çıkarma"
     },
     "answer": "E",
     "solution": "**Denetim örneklemesi**, bir kütle içindeki birimlerin **%100'ünden azına** denetim prosedürü uygulayıp, elde edilen sonuçtan **kütlenin bütününe** ilişkin bir sonuca ulaşmaktır. Tüm birimlerin incelenmesi (tam sayım) değildir.",
@@ -52,7 +52,7 @@
       "A": "Denetçinin yanlış prosedür uygulaması ya da kanıtı yanlış yorumlamasından doğan hatalara ilişkin risk",
       "B": "Finansal tabloların kamuoyunca yanlış yorumlanmasından doğan itibar ve piyasa riski",
       "C": "İşletmenin denetim ücretini ödeyememesi nedeniyle denetimin yarıda kalmasına ilişkin finansal risk",
-      "D": "Seçilen örneklemin kütleyi yeterince temsil etmemesi nedeniyle, tüm kütle incelenseydi ulaşılacaktan farklı bir sonuca varma riski",
+      "D": "Örneklem nedeniyle tüm kütle incelenseydi ulaşılacak sonuçtan sapma riski",
       "E": "Denetçinin bağımsızlığını yitirmesi nedeniyle tarafsız görüş verememesine ilişkin risk"
     },
     "answer": "D",
@@ -161,7 +161,7 @@
     "options": {
       "A": "Örneklem işletme yönetiminin önceden ayırdığı ve denetçiye sunmayı uygun gördüğü birimlerden oluşmalıdır",
       "B": "Örneklem yalnızca kütlenin en yüksek tutarlı birimlerinden oluşmalı; düşük tutarlı birimler hiç seçilmemelidir",
-      "C": "Örneklem, kütlenin özelliklerini yansıtmalıdır; böylece örneklem sonucundan kütleye ilişkin geçerli sonuç çıkarılabilir",
+      "C": "Örneklem kütleyi temsil etmeli ve kütleye ilişkin sonuç sağlamalıdır",
       "D": "Örneklem kütleyle hiç ilişkili olmamalı; rastgele başka bir işletmenin kayıtlarından seçilmelidir",
       "E": "Örneklemin büyüklüğü ne olursa olsun, tek bir birim bile kütlenin tamamını her zaman temsil eder"
     },
@@ -182,7 +182,7 @@
     "stem": "Aşağıdaki durumların hangisinde denetçinin örnekleme yerine kütlenin TAMAMINI (%100) incelemesi daha uygun olur?",
     "options": {
       "A": "Kütlenin çok sayıda, küçük tutarlı ve birbirine benzer rutin işlemden oluştuğu durumlarda",
-      "B": "Kütlenin az sayıda ama büyük tutarlı birimlerden oluştuğu ya da her birimin tek tek önem taşıdığı durumlarda",
+      "B": "Az sayıda, büyük tutarlı veya tek tek önemli birimlerin bulunduğu durumlarda",
       "C": "Kütlenin binlerce satış fişi gibi yüksek hacimli sıradan belgelerden oluştuğu durumların tamamında",
       "D": "İşlem hacminin çok yüksek olduğu ve tam sayımın maliyetinin aşırı arttığı durumlarda",
       "E": "İç kontrolün çok güçlü olduğu ve kontrol riskinin düşük değerlendirildiği durumların tamamında"
@@ -336,7 +336,7 @@
     "stem": "Örneklem büyüklüğünü etkileyen faktörlerle ilgili aşağıdaki ifadelerden hangisi DOĞRUDUR?",
     "options": {
       "A": "Denetçinin kabul ettiği örnekleme riski düştükçe gereken örneklem büyüklüğü de küçülür",
-      "B": "Kabul edilebilir örnekleme riski düştükçe ve tolere edilebilir hata oranı azaldıkça gereken örneklem büyüklüğü artar",
+      "B": "Kabul edilebilir risk ve tolere edilebilir hata azaldıkça örneklem büyür",
       "C": "Örneklem büyüklüğü, risk ve hata toleransından bağımsızdır; her denetimde tam olarak aynıdır",
       "D": "Tolere edilebilir hata oranı yükseldikçe gereken örneklem büyüklüğü de belirgin biçimde artar",
       "E": "Kütledeki beklenen hata oranı arttıkça gereken örneklem büyüklüğü tam tersine küçülür"
@@ -360,7 +360,7 @@
       "A": "Denetçinin, örneklemde saptamayı en baştan beklediği kesin hata sayısını gösteren bir değer",
       "B": "İşletme yönetiminin denetçiden görmezden gelmesini talep ettiği hata düzeyini gösteren sınır",
       "C": "Kütledeki tüm birimlerin istisnasız hatalı olması durumunda ortaya çıkan toplam hata tutarı",
-      "D": "Denetçinin, kütleye ilişkin ulaşmak istediği sonucu değiştirmeden kabul edebileceği en yüksek sapma/hata düzeyi",
+      "D": "Kütle sonucunu değiştirmeden kabul edilebilecek en yüksek sapma",
       "E": "Denetim ücretinin belirlenmesinde kullanılan ve hata sayısıyla orantılı bir maliyet ölçütü"
     },
     "answer": "D",
@@ -383,7 +383,7 @@
       "B": "Değişken (miktar) örneklemesi; hesap tutarlarının parasal doğruluğunun test edildiği örnekleme",
       "C": "Parasal birim dışı örnekleme; yalnızca tutarsız kalemlerin test edildiği örnekleme",
       "D": "Tam sayım örneklemesi; kütlenin tümünün istisnasız incelendiği örnekleme türü",
-      "E": "Nitelik (özellik) örneklemesi; kontrolün var/yok, işledi/işlemedi biçiminde test edildiği örnekleme"
+      "E": "Kontrolün işleyip işlemediğini sınayan nitelik örneklemesi"
     },
     "answer": "E",
     "solution": "İç kontrollerin işleyip işlemediğinin (var/yok, uygulandı/uygulanmadı biçiminde) test edildiği örnekleme **nitelik (özellik/attribute) örneklemesidir** ve genellikle **kontrol testlerinde** kullanılır.",
@@ -403,7 +403,7 @@
     "options": {
       "A": "Nitelik (özellik) örneklemesi; kontrolün işleyip işlemediğinin test edildiği örnekleme",
       "B": "Yalnızca oran ve eğilimlerin incelendiği analitik nitelikli örnekleme türü",
-      "C": "Değişken (miktar/tutar) örneklemesi; hesap tutarlarındaki parasal yanlışlığın test edildiği örnekleme",
+      "C": "Parasal yanlışlığı sınayan değişken örneklemesi",
       "D": "Kontrol ortamı örneklemesi; yalnızca üst yönetim tutumunun ölçüldüğü örnekleme",
       "E": "Bağımsızlık örneklemesi; denetçinin tarafsızlığının test edildiği örnekleme türü"
     },
@@ -492,7 +492,7 @@
       "A": "Kontrolün etkin işlediğine karar verip kontrol riskini düşük değerlendirmeyi sürdürür",
       "B": "Örneklem büyüklüğünü küçültüp incelenen birim sayısını azaltarak sonucu değiştirir",
       "C": "Sonucu göz ardı edip örneklemi hiç incelememiş gibi doğrudan olumlu görüş oluşturur",
-      "D": "Kontrole güvenini yeniden değerlendirir; kontrol riskini yüksek alıp maddi doğrulama çalışmalarını artırabilir",
+      "D": "Kontrol riskini yükseltip maddi doğrulamayı artırabilir",
       "E": "İşletme yönetiminden sapmaları görmezden gelmesini isteyip denetimi tamamlar"
     },
     "answer": "D",
@@ -621,7 +621,7 @@
     "konu": "denetim_ornekleme",
     "stem": "Bir denetçinin, örneklemi kütledeki bir bölümden (ör. yalnızca yılın son ayına ait işlemlerden) blok hâlinde seçmesinin sakıncası aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Kütlenin tamamını temsil etmemesi; belirli bir döneme/gruba özgü özelliklerin sonucu yanıltması riski",
+      "A": "Örneklemin kütleyi temsil etmemesi",
       "B": "Blok seçim çok zaman aldığından denetim maliyetini aşırı biçimde yükseltmesi",
       "C": "Blok seçimin istatistiki örneklemenin en güvenilir ve tercih edilen biçimi olması",
       "D": "Blok seçimin her zaman kütlenin tümünün incelenmesini zorunlu kılması",
@@ -645,7 +645,7 @@
     "options": {
       "A": "Örneklem sapma oranı toleransı aştığından kontrole güvenilemez ve kontrol riski yüksek alınmalıdır",
       "B": "Sapma bulunduğu için kontrolün tümüyle etkisiz olduğu ve derhal olumsuz görüş verilmesi gerektiği",
-      "C": "Örneklem sapma oranı tolere edilebilir sınırın altında kaldığından kontrole güvenmek için destekleyici bir bulgudur",
+      "C": "Sapma oranı sınırın altındaysa kontrole güveni destekler",
       "D": "Örneklem büyüklüğünün mutlaka iki katına çıkarılması ve testin baştan tekrarlanması gerektiği",
       "E": "İşletmenin iç kontrol sistemini denetçinin işletme adına yeniden kurması gerektiği"
     },
@@ -668,7 +668,7 @@
       "A": "Yalnızca işletmenin denetçiye sunduğu yevmiye defteri ile defter-i kebir kayıtlarının kopyaları",
       "B": "İşletme yönetiminin faaliyet dönemine ilişkin başarılarını anlattığı yıllık faaliyet raporu",
       "C": "Denetim raporunun yalnızca görüş paragrafını içeren ve kamuya açıklanan tek sayfalık özet belge",
-      "D": "Denetçinin yürüttüğü çalışmayı, uyguladığı prosedürleri, elde ettiği kanıtları ve ulaştığı sonuçları belgeleyen kayıtlar",
+      "D": "Uygulanan prosedür, elde edilen kanıt ve sonuçları belgeleyen kayıtlar",
       "E": "Denetim ekibinin işletmeye kaç gün gittiğini gösteren idari nitelikli bir yol/harcama cetveli"
     },
     "answer": "D",
