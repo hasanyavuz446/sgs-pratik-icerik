@@ -4,37 +4,13 @@
 from topic_pack_builder import write_topic
 
 
-def balanced_distractors(correct, distractors):
-    out = list(distractors)
-    suffixes = [
-        "; bu sonuç değişmez",
-        "; başka koşul aranmaz",
-        "; bu ölçüt tek başına yeterlidir",
-        "; yönetimin tercihi her durumda bağlayıcıdır",
-    ]
-    longer = sum(len(item) > len(correct) for item in out)
-    candidates = sorted(
-        (i for i, item in enumerate(out) if len(item) <= len(correct)),
-        key=lambda i: len(out[i]), reverse=True,
-    )
-    for index in candidates:
-        if longer >= 2:
-            break
-        for suffix in suffixes:
-            if len(out[index] + suffix) > len(correct):
-                out[index] += suffix
-                longer += 1
-                break
-    return out
-
-
 def r(scenario, focus, correct, focus_correct, distractors, focus_distractors,
       why, focus_why, ref, difficulty="medium"):
     return {
         "scenario": scenario, "focus": focus,
         "correct": correct, "focus_correct": focus_correct,
-        "distractors": balanced_distractors(correct, distractors),
-        "focus_distractors": balanced_distractors(focus_correct, focus_distractors),
+        "distractors": list(distractors),
+        "focus_distractors": list(focus_distractors),
         "why": why, "focus_why": focus_why, "ref": ref,
         "difficulty": difficulty,
     }
@@ -44,8 +20,8 @@ RULES = [
     r(
         "Denetçi yeterli ve uygun kanıtı, düzeltilmemiş yanlışlıkları ve finansal tabloların sunumunu değerlendirmeden doğrudan olumlu görüş yazmıştır. Yaklaşım uygun mudur?",
         "Finansal tablolara ilişkin görüş oluşturulurken temel dayanak hangisidir?",
-        "Hayır; görüş kanıttan çıkarılan sonuçların değerlendirilmesine dayanır",
-        "Yeterli ve uygun kanıt ile yanlışlık ve sunum değerlendirmeleri",
+        "Hayır; görüş kanıt sonuçlarının değerlendirilmesine dayanır",
+        "Yeterli kanıt, yanlışlık ve sunum değerlendirmeleri",
         ["Evet; yönetimin olumlu görüş talebi tek başına yeterlidir", "Evet; yalnız önceki yılın görüşü cari yılı belirler", "Hayır; görüş finansal tablo hazırlanmadan önce verilir", "Evet; denetim ücreti ödendiğinde kanıt değerlendirilmez"],
         ["Yalnız yönetimin finansal tabloları imzalamış olması", "Sadece önceki denetçinin raporundaki görüş türü", "Yalnız işletmenin dönem içinde kâr açıklamış olması", "Denetim sözleşmesindeki ücret ve ödeme takvimi"],
         "Görüş; kanıt yeterliliği, düzeltilmemiş yanlışlıklar ve raporlama çerçevesine uygunluğa ilişkin bütüncül sonuca dayanır.",
@@ -66,8 +42,8 @@ RULES = [
     r(
         "Denetçi raporu yalnız sözlü sunumla paylaşılmış ve raporda bağımsız denetçi olduğunu gösteren bir başlık kullanılmamıştır. Uygun mudur?",
         "BDS'lere uygun denetçi raporunun biçimi ve başlığı nasıldır?",
-        "Hayır; rapor yazılı olmalı ve Bağımsız Denetçi Raporu başlığını taşımalıdır",
-        "Yazılı rapor ve açıkça Bağımsız Denetçi Raporu başlığı",
+        "Hayır; yazılı rapor bağımsız denetçi başlığını taşımalıdır",
+        "Yazılı ve başlıklı Bağımsız Denetçi Raporu",
         ["Evet; sözlü rapor yazılı raporla tamamen eşdeğerdir", "Evet; başlık yalnız yönetimin talebi varsa kullanılır", "Hayır; rapor yalnız elektronik tablo biçiminde düzenlenir", "Evet; herhangi bir başlık bağımsızlığı aynı ölçüde gösterir"],
         ["Sözlü sunum ve Yönetim Raporu başlığı", "Yazılı rapor ve Mali Müşavir Görüşü başlığı", "Sözlü rapor ve Finans Direktörü Raporu başlığı", "Yalnız e-posta konusu içinde Denetim ibaresi"],
         "Yazılılık ve açık bağımsız denetçi başlığı raporun niteliğini ve bağımsızlık iddiasını kullanıcıya gösterir.",
@@ -89,7 +65,7 @@ RULES = [
         "Raporda Görüş bölümünden sonra doğrudan imza yer almış; standartlara uygunluk, bağımsızlık ve kanıt yeterliliği açıklanmamıştır. Eksik bölüm hangisidir?",
         "Görüşün Dayanağı bölümünde hangi üç ana unsur açıklanır?",
         "Görüşün Dayanağı bölümü",
-        "BDS'lere uygunluk, bağımsızlık ve kanıtın görüşe yeterli dayanak oluşturması",
+        "BDS uyumu, bağımsızlık ve kanıt yeterliliği",
         ["Yönetimin Yıllık Bütçesi bölümü", "Denetim Ücreti Dağılımı bölümü", "Gelecek Dönem Tahminleri bölümü", "Ortakların Kâr Payı bölümü"],
         ["Yönetimin kâr hedefi, vergi planı ve yatırım bütçesi", "Denetçinin ücreti, çalışma saati ve ekip izinleri", "İşletmenin satışları, reklamı ve pazar payı", "Yalnız önceki denetçinin adı, tarihi ve görüşü"],
         "Görüşün Dayanağı, görüşün mesleki ve kanıtsal temelini kullanıcıya açıklar.",
@@ -99,8 +75,8 @@ RULES = [
     r(
         "Yönetim finansal tabloları hazırlama ve iç kontrol sorumluluğunu denetçiye devrettiğini raporda belirtmiştir. Bu ifade doğru mudur?",
         "Finansal tabloların hazırlanması ve ilgili iç kontrolden kim sorumludur?",
-        "Hayır; bu sorumluluk yönetim ve uygun hâllerde üst yönetimden sorumlu olanlardadır",
-        "Yönetim ve uygun hâllerde üst yönetimden sorumlu olanlar",
+        "Hayır; sorumluluk yönetim ve üst yönetimden sorumlu olanlardadır",
+        "Yönetim ve üst yönetimden sorumlu olanlar",
         ["Evet; bağımsız denetçi tabloların asli hazırlayıcısıdır", "Evet; denetim sözleşmesi bütün sorumluluğu denetçiye geçirir", "Hayır; sorumluluk yalnız finansal tablo kullanıcılarındadır", "Evet; iç kontrol sadece dış denetim şirketince kurulur"],
         ["Yalnız bağımsız denetçi", "Sadece işletmenin vergi dairesi", "Yalnız finansal tablo kullanıcıları", "Denetim şirketinin kalite gözden geçiren kişisi"],
         "Bağımsız denetim, yönetimin finansal raporlama ve gerekli iç kontrol sorumluluğunu devralmaz.",
@@ -110,8 +86,8 @@ RULES = [
     r(
         "Finansal tablolar 20 Mart'ta yönetimce hazırlanmış, yeterli kanıt 25 Mart'ta tamamlanmış; rapor 22 Mart tarihini taşımaktadır. Rapor tarihi uygun mudur?",
         "Denetçi raporu tarihi en erken hangi koşullar tamamlandığında belirlenebilir?",
-        "Hayır; rapor tarihi yeterli kanıtın tamamlandığı tarihten önce olamaz",
-        "Kanıt tamamlanıp tablolar hazırlanarak yetkili kişiler sorumluluk aldığında",
+        "Hayır; rapor tarihi kanıt tamamlanmadan önce olamaz",
+        "Kanıt tamamlanıp tablo sorumluluğu alındığında",
         ["Evet; finansal tablo tarihinden sonraki herhangi bir gün seçilebilir", "Evet; yönetim istemişse kanıt tamamlanmadan tarih atılır", "Hayır; rapor her zaman finansal tablo tarihini taşımalıdır", "Evet; rapor tarihi yalnız sözleşme imza tarihine bağlıdır"],
         ["Denetim sözleşmesi imzalanır imzalanmaz", "İlk risk değerlendirme prosedürü uygulandığında", "Yönetim taslak bilanço hazırlamaya başladığında", "Denetim ücreti işletme tarafından tamamen ödendiğinde"],
         "Rapor tarihi, görüşe dayanak olacak yeterli ve uygun kanıt elde edilmeden önce olamaz.",
@@ -121,8 +97,8 @@ RULES = [
     r(
         "Denetçi, üst yönetimden sorumlu olanlara hiç bildirmediği sıradan bir konuyu doğrudan kilit denetim konusu ilan etmiştir. Uygun mudur?",
         "Kilit denetim konuları hangi konu kümesinden seçilir?",
-        "Hayır; kilit konu üst yönetimden sorumlu olanlara bildirilen konular arasından seçilir",
-        "Üst yönetimden sorumlu olanlara bildirilen konular arasından",
+        "Hayır; kilit konu üst yönetime bildirilenlerden seçilir",
+        "Üst yönetime bildirilen konular arasından",
         ["Evet; herhangi bir konu bildirim yapılmadan kilit konu seçilebilir", "Evet; yalnız yönetimin reklam için seçtiği konular kullanılır", "Hayır; kilit denetim konusu denetçi tarafından belirlenemez", "Evet; geçmiş yılların bütün konuları otomatik olarak kilit konudur"],
         ["İşletme çalışanlarının önerdiği bütün konulardan", "Finansal tablo kullanıcılarının oyladığı konulardan", "Yalnız önceki denetçinin raporundaki konulardan", "Yönetimin kamuya açıklamak istemediği tüm konulardan"],
         "Kilit denetim konusu, üst yönetim iletişimi içinden denetçinin cari dönem denetiminde en çok önem verdiği konudur.",
@@ -132,8 +108,8 @@ RULES = [
     r(
         "Denetçi azami dikkat gerektiren alanları belirlerken yalnız parasal tutara bakmış; ciddi risk, yüksek tahmin belirsizliği ve önemli olayları dışlamıştır. Yaklaşım uygun mudur?",
         "Azami düzeyde dikkat gerektiren konular belirlenirken hangi alanlar özellikle dikkate alınır?",
-        "Hayır; ciddi riskler, önemli yargılar ve önemli olayların etkisi de dikkate alınır",
-        "Yüksek risk, önemli yönetim yargıları ve önemli olay veya işlemler",
+        "Hayır; ciddi risk, önemli yargı ve olaylar da dikkate alınır",
+        "Yüksek risk, önemli yönetim yargıları ve önemli işlemler",
         ["Evet; yalnız hesabın parasal büyüklüğü kilit konu belirler", "Evet; tahmin belirsizliği raporlama açısından önemsizdir", "Hayır; bütün finansal tablo hesapları kilit konu yapılmalıdır", "Evet; dönem içi önemli olaylar denetçi dikkatini etkilemez"],
         ["Yalnız denetim ücretinin yüksek olduğu çalışma alanları", "Sadece yönetimin raporda görmek istediği hesaplar", "Denetim ekibinin en az zaman ayırdığı rutin alanlar", "İşletmenin reklamlarında en sık kullandığı finansal veriler"],
         "Kilit konu seçimi, yüksek riskli ve önemli muhakeme gerektiren alanlarla önemli olayların denetime etkisine odaklanır.",
@@ -144,7 +120,7 @@ RULES = [
         "Kilit Denetim Konuları bölümünde stok değerlemesi için ayrı bir olumlu görüş verilmiştir. Bu ifade uygun mudur?",
         "Kilit denetim konuları bir bütün olarak denetçi görüşüyle nasıl ilişkilidir?",
         "Hayır; kilit konular hakkında ayrı görüş verilmez",
-        "Bütün denetim kapsamında ele alınır ve her biri için ayrı görüş verilmez",
+        "Genel denetimde ele alınır; ayrı görüş verilmez",
         ["Evet; her kilit konu için bağımsız bir görüş zorunludur", "Evet; kilit konu bölümü genel görüşün yerine geçer", "Hayır; kilit konular denetim sırasında hiç ele alınmaz", "Evet; ayrı görüş yalnız stok ve hasılat için verilir"],
         ["Genel denetçi görüşünü tamamen ortadan kaldırır", "Her kilit konu için ikinci bir denetim raporu gerektirir", "Yalnız yönetimin görüşünü kullanıcıya aktarmak için kullanılır", "Olumlu görüş dışında görüş verilmesini her durumda engeller"],
         "Kilit konu açıklaması denetimde odaklanılan alanı anlatır; o alan için ayrı bir güvence sonucu oluşturmaz.",
@@ -154,8 +130,8 @@ RULES = [
     r(
         "Rapor bir konuyu kilit denetim konusu olarak adlandırmış; ancak neden önemli olduğu ve denetimde nasıl ele alındığı açıklanmamıştır. Yeterli midir?",
         "Münferit kilit denetim konusu açıklamasının zorunlu iki içeriği hangisidir?",
-        "Hayır; seçilme nedeni ve denetimde nasıl ele alındığı açıklanmalıdır",
-        "Kilit konu sayılma nedeni ve denetimde nasıl ele alındığı",
+        "Hayır; seçilme nedeni ve denetim yaklaşımı açıklanır",
+        "Kilit konu seçilme nedeni ve denetimdeki yaklaşım",
         ["Evet; yalnız konu başlığının yazılması yeterlidir", "Evet; sadece yönetimin konuya ilişkin görüşü aktarılır", "Hayır; denetçinin ayrı olumlu görüş vermesi gerekir", "Evet; yalnız konuya ayrılan çalışma saati açıklanır"],
         ["Denetim ücreti ile ekipteki denetçi sayısı", "Yönetimin gelecek yıl bütçesi ile satış tahmini", "Konunun işletme reklamlarında nasıl sunulduğu", "Yalnız finansal tablo dipnotunun sayfa numarası"],
         "Kullanıcı, konunun niçin denetimde öne çıktığını ve denetçinin bu alana nasıl karşılık verdiğini anlamalıdır.",
@@ -165,7 +141,7 @@ RULES = [
     r(
         "Önemli ve yaygın yanlışlığa neden olan konu yalnız Kilit Denetim Konuları bölümünde anlatılmış, olumsuz görüş verilmemiştir. Uygun mudur?",
         "Olumlu görüş dışında görüşe neden olan konu Kilit Denetim Konuları bölümünde nasıl ele alınır?",
-        "Hayır; kilit konu açıklaması olumlu görüş dışındaki görüşün yerine geçmez",
+        "Hayır; KDK, olumlu görüş dışındaki görüşün yerine geçmez",
         "İlgili görüşün dayanağında raporlanır; kilit konu bölümünde bu bölüme atıf yapılır",
         ["Evet; kilit konu açıklaması her tür görüş değişikliğinin yerini alır", "Evet; önemli yanlışlık kilit konu yazılınca önemsizleşir", "Hayır; konu raporun hiçbir bölümünde açıklanamaz", "Evet; yalnız yönetim isterse görüş değiştirilir"],
         ["Yalnız kilit konu bölümünde ayrı olumlu görüş verilir", "Konu finansal tablo dipnotlarından ve rapordan çıkarılır", "Yönetimin sorumlulukları bölümünde önemsiz konu olarak sunulur", "Görüş bölümü değiştirilmeden yalnız rapor tarihine eklenir"],
@@ -177,7 +153,7 @@ RULES = [
         "Kilit denetim konusu kamuya açıklanırsa ciddi zarar doğuracaktır; ancak bu zarar kamu yararından ağır basmamaktadır. Denetçi konuyu açıklamayabilir mi?",
         "Kilit denetim konusunun raporda açıklanmamasına izin veren durum hangisidir?",
         "Hayır; kamu yararı ağır basıyorsa konu açıklanır",
-        "Mevzuat yasağı veya zararın kamu yararını aşmasının makul beklendiği oldukça istisnai durum",
+        "Mevzuat yasağı veya kamu yararını aşan zarar beklentisi",
         ["Evet; işletme yönetimi istemediğinde konu gizlenir", "Evet; denetim ücreti yüksekse açıklama yapılmaz", "Hayır; mevzuat yasağı olsa bile her konu açıklanır", "Evet; konu finansal tablolarda önemliyse daima gizlenir"],
         ["Yönetimin konuyu raporda görmek istememesi", "Konunun açıklamasının raporu bir sayfa uzatması", "Denetçinin konuya çok çalışma saati ayırmış olması", "İşletmenin konuyu reklamlarında kullanmayı planlamaması"],
         "Açıklamama istisnası dar yorumlanır; olumsuz sonuçların kamu yararını aşması makul biçimde beklenmelidir.",
@@ -188,7 +164,7 @@ RULES = [
         "Denetçi önemli yanlışlık olduğunu veya önemli yanlışlık olmadığı sonucuna yetecek kanıt elde edemediğini belirlemiştir. Her iki durumun ortak sonucu nedir?",
         "Olumlu görüş dışında görüş verilmesini tetikleyen iki temel koşul hangisidir?",
         "Olumlu görüş dışında bir görüş değerlendirilir",
-        "Önemli yanlışlık veya yeterli ve uygun kanıt elde edilememesi",
+        "Önemli yanlışlık veya kanıt yetersizliği",
         ["Her durumda olumlu görüş verilir", "Yalnız dikkat çekilen hususlar paragrafı eklenir", "Denetim raporu görüşsüz biçimde yayımlanır", "Kilit denetim konusu bulunmadığı açıklanır"],
         ["İşletmenin kâr etmesi veya zarar açıklaması", "Denetim ücretinin artması veya azalması", "Yönetimin raporu erken ya da geç istemesi", "Finansal tabloların kısa veya uzun olması"],
         "Önemli yanlışlık tespiti ile kanıt yetersizliği farklı kaynaklardır; ikisi de koşullarına göre olumlu görüş dışı sonuca yol açar.",
@@ -199,7 +175,7 @@ RULES = [
         "Yanlışlık yalnız tek bir hesabı aşan biçimde finansal tabloların önemli bölümünü etkilemekte ve kullanıcı anlayışı açısından temel oluşturmaktadır. Etki nasıl nitelenir?",
         "BDS 705 bakımından yaygın etki hangi durumlardan biriyle tanımlanır?",
         "Yaygın etki",
-        "Belirli kalemlerle sınırlı olmama veya tabloların önemli bölümünü temsil etme",
+        "Sınırsızlık veya tabloların önemli bölümüne etki",
         ["Bariz önemsiz etki", "Yalnız niteliksiz etki", "Örnekleme dışı etki", "Sadece geçici etki"],
         ["Yalnız tek bir küçük hesabı önemsiz tutarda etkileme", "Finansal tabloların hiçbir unsurunu etkilememe", "Sadece denetim ücretinin hesaplanmasını değiştirme", "Yalnız raporun sayfa düzenini ve başlığını etkileme"],
         "Yaygınlık, yalnız tutarın büyüklüğünden değil etkinin finansal tablolara ne ölçüde yayıldığından ve kullanıcı anlayışındaki temel rolünden doğar.",
@@ -232,7 +208,7 @@ RULES = [
         "Yönetim kayıtları vermediği için kanıt elde edilememiş; tespit edilmemiş yanlışlıkların muhtemel etkisi önemli ve yaygın olabilir. Hangi görüş uygundur?",
         "Görüş vermekten kaçınmanın temel koşulu hangisidir?",
         "Görüş vermekten kaçınma",
-        "Kanıt elde edilememesi ve muhtemel etkinin önemli ve yaygın olması",
+        "Kanıt yokluğu ile önemli ve yaygın muhtemel etki",
         ["Olumsuz görüş", "Sınırlı olumlu görüş", "Koşulsuz olumlu görüş", "Dikkat çekilen hususlar görüşü"],
         ["Yeterli kanıtla belirlenmiş önemli ve yaygın yanlışlık", "Yeterli kanıtla önemli fakat yaygın olmayan yanlışlık", "Doğru açıklanmış önemli bir bilanço sonrası olay", "Önemsiz bir sınıflandırma farkının düzeltilmesi"],
         "Kanıt yokluğu nedeniyle etki kesin belirlenememiştir; muhtemel etki önemli ve yaygınsa görüş verilemez.",
@@ -243,7 +219,7 @@ RULES = [
         "Birden fazla belirsizliğin tek tek kanıtı elde edilmiş; ancak etkileşimleri ve kümülatif etkileri nedeniyle bir bütün olarak görüş oluşturulamamaktadır. Ne yapılabilir?",
         "Birden fazla belirsizlikte istisnai olarak görüşten kaçınma hangi gerekçeye dayanabilir?",
         "Görüş vermekten kaçınılabilir",
-        "Belirsizliklerin etkileşimi ve kümülatif etkisi yüzünden görüş oluşturulamaması",
+        "Belirsizlik etkileşimi yüzünden görüş oluşturulamaması",
         ["Her durumda koşulsuz olumlu görüş verilir", "Yalnız dikkat çekilen hususlar paragrafı yeterlidir", "Bütün belirsizlikler otomatik önemsiz sayılır", "Her belirsizlik için ayrı olumlu görüş verilir"],
         ["Belirsizliklerin birbirinden tamamen bağımsız ve önemsiz olması", "Yönetimin raporun kısa olmasını istemesi", "Denetim ekibinin çalışma saatinin bütçeyi aşması", "Belirsizliklerin finansal tablolarla ilgisiz olması"],
         "İstisnai durumda kanıt tek tek mevcut olsa da belirsizliklerin birlikte etkisi güvenilir bir genel görüşü engelleyebilir.",
@@ -253,8 +229,8 @@ RULES = [
     r(
         "Önemli fakat yaygın olmayan yanlışlık nedeniyle rapor sınırlı olumlu görüş içerecektir. Görüş cümlesinde hangi yapı kullanılır?",
         "Olumlu görüş dışındaki raporda Görüşün Dayanağı başlığı nasıl uyarlanır?",
-        "Yanlışlığın etkileri hariç olmak üzere tabloların uygun hazırlandığı belirtilir",
-        "Sınırlı Olumlu, Olumsuz veya Kaçınmanın Dayanağı şeklinde görüş türüne uyarlanır",
+        "Yanlışlığın etkileri hariç tabloların uygunluğu belirtilir",
+        "Dayanak başlığı verilen görüş türüne uyarlanır",
         ["Finansal tabloların hiçbir bölümüne ilişkin görüş verilmez", "Yanlışlığın bütün tablolarda önemsiz olduğu belirtilir", "Herhangi bir istisna ifadesi kullanılmadan olumlu görüş verilir", "Konu yalnız kilit denetim konusu olarak açıklanır"],
         ["Başlık her durumda yalnız Görüşün Dayanağı olarak kalır", "Başlık Yönetimin Dayanağı olarak değiştirilir", "Başlık yalnız Kilit Denetim Konuları yapılır", "Dayanak bölümü olumlu görüş dışında tamamen kaldırılır"],
         "Sınırlı olumlu görüş, dayanak bölümünde açıklanan hususun etkileri dışında kalan tablo sunumuna ilişkin sonuç verir.",
@@ -265,7 +241,7 @@ RULES = [
         "Finansal tablolarda doğru ve yeterli açıklanmış büyük bir dava, kullanıcıların tabloları anlaması için temel önemdedir. Görüş değişikliği gerekmiyorsa hangi paragraf kullanılabilir?",
         "Dikkat Çekilen Hususlar paragrafı hangi tür hususa atıfta bulunur?",
         "Dikkat Çekilen Hususlar paragrafı",
-        "Finansal tablolarda uygun açıklanmış ve tabloların anlaşılması için temel husus",
+        "Uygun açıklanmış ve tablo anlayışı için temel husus",
         ["Diğer Hususlar paragrafı", "Olumsuz Görüşün Dayanağı", "Görüş Vermekten Kaçınma bölümü", "Yönetimin Sorumlulukları bölümü"],
         ["Finansal tablolarda hiç sunulmayan denetimle ilgili bir husus", "Olumlu görüş dışı görüşe neden olan açıklanmamış yanlışlık", "Denetim ücreti ve sözleşme koşullarına ilişkin ayrıntılar", "Denetçinin işletme dışında verdiği diğer hizmetlerin listesi"],
         "Husus finansal tablolarda uygun açıklanmış, kullanıcı anlayışı için temel ve görüş değişikliğine neden olmamaktadır.",
@@ -276,7 +252,7 @@ RULES = [
         "Önceki dönem finansal tabloları başka denetçi tarafından denetlenmiştir ve bu bilgi cari tabloların içinde sunulmamaktadır. Kullanıcının denetimi anlaması için açıklama gerekiyorsa hangi paragraf uygundur?",
         "Diğer Hususlar paragrafı hangi tür bilgiye yöneliktir?",
         "Diğer Hususlar paragrafı",
-        "Tablolarda sunulmayan fakat denetim, sorumluluklar veya raporun anlaşılmasıyla ilgili husus",
+        "Tablo dışı, denetim veya rapor anlayışıyla ilgili husus",
         ["Dikkat Çekilen Hususlar paragrafı", "Olumsuz Görüşün Dayanağı", "İşletmenin Sürekliliği bölümü", "Kilit konuya ilişkin ayrı görüş"],
         ["Finansal tablolarda uygun açıklanmış temel önemde bir husus", "Finansal tablolarda düzeltilmemiş önemli bir yanlışlık", "İşletmenin satış bütçesi ve yönetimin kâr hedefi", "Yalnız finansal tablo dipnotunda sunulan muhasebe politikası"],
         "Bilgi finansal tabloların içeriği değil, kullanıcının denetimi veya raporu anlamasıyla ilgilidir.",
@@ -287,7 +263,7 @@ RULES = [
         "Denetçi, önemli yanlışlığı düzeltmek yerine Dikkat Çekilen Hususlar paragrafı eklemiş ve bunun sınırlı olumlu görüşün yerini aldığını belirtmiştir. Uygun mudur?",
         "Dikkat Çekilen Hususlar paragrafı aşağıdakilerden hangisinin yerine geçmez?",
         "Hayır; dikkat paragrafı olumlu görüş dışındaki görüşün yerini alamaz",
-        "Olumlu görüş dışında görüş, gerekli finansal tablo açıklaması veya süreklilik raporlaması",
+        "Görüş değişikliği, açıklama veya süreklilik bildirimi",
         ["Evet; dikkat paragrafı bütün görüş değişikliklerinin alternatifidir", "Evet; önemli yanlışlık dipnota atıfla ortadan kalkar", "Hayır; dikkat paragrafı her zaman görüşten kaçınma yaratır", "Evet; yönetim isterse bütün yanlışlıklar dikkat paragrafına taşınır"],
         ["Yalnız rapor başlığının ve muhatabın belirtilmesi", "Denetçinin imzası ve görev yaptığı yer bilgisi", "Rapor tarihinin ve denetlenen dönemin açıklanması", "Görüş bölümünde işletmenin adının belirtilmesi"],
         "Dikkat paragrafı uygun açıklanmış hususa dikkat çeker; eksik açıklamayı veya gerekli görüş değişikliğini iyileştiremez.",
@@ -308,8 +284,8 @@ RULES = [
     r(
         "Sürekliliğe ilişkin önemli belirsizlik vardır; yönetimin süreklilik esasını kullanması uygun ve dipnot açıklaması yeterlidir. Raporlama nasıl olur?",
         "Yeterli açıklanmış süreklilik önemli belirsizliği görüşü nasıl etkiler?",
-        "Olumlu görüş ve İşletmenin Sürekliliğiyle İlgili Önemli Belirsizlik bölümü",
-        "Görüş değişmez; ayrı süreklilik önemli belirsizlik bölümü eklenir",
+        "Olumlu görüş ve ayrı süreklilik belirsizliği bölümü",
+        "Görüş değişmez; ayrı süreklilik bölümü eklenir",
         ["Doğrudan olumsuz görüş verilir", "Her durumda görüş vermekten kaçınılır", "Sadece Diğer Hususlar paragrafı kullanılır", "Belirsizlik raporda hiçbir biçimde açıklanmaz"],
         ["Her durumda olumsuz görüş gerektirir", "Otomatik olarak görüş vermekten kaçınma doğurur", "Yalnız Kilit Denetim Konuları bölümünde açıklanır", "Raporun bütün dayanak bölümlerini ortadan kaldırır"],
         "Esas uygun ve açıklama yeterliyse olumlu görüş korunur; ayrı bölüm dipnota dikkat çeker ve belirsizliğin görüşü değiştirmediğini söyler.",
@@ -320,7 +296,7 @@ RULES = [
         "İşletmenin sürekliliği esasının kullanılması uygundur; ancak mevcut önemli belirsizlik finansal tablolarda yeterince açıklanmamıştır. Denetçi ne yapar?",
         "Süreklilik önemli belirsizliği yetersiz açıklanmışsa hangi görüşler arasından seçim yapılır?",
         "BDS 705'e göre sınırlı olumlu veya olumsuz görüş verir",
-        "Etkilerin yaygınlığına göre sınırlı olumlu veya olumsuz görüş",
+        "Yaygınlığa göre sınırlı olumlu veya olumsuz görüş",
         ["Her durumda koşulsuz olumlu görüş verir", "Yalnız dikkat çekilen hususlar paragrafı ekler", "Açıklama eksikliğini kilit denetim konusu sayıp görüşü değiştirmez", "Finansal tabloların dışına sözlü bir uyarı eklemekle yetinir"],
         ["Olumlu görüş veya yalnız Diğer Hususlar paragrafı", "Görüş vermekten kaçınma veya olumlu görüş", "Yalnız Kilit Denetim Konuları bölümü", "Her durumda sadece olumsuz görüş"],
         "Açıklama eksikliği önemli yanlışlık oluşturur; yaygınlık sınırlı olumlu ile olumsuz görüş arasındaki seçimi belirler.",

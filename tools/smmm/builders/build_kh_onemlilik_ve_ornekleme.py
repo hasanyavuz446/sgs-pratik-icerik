@@ -4,40 +4,13 @@
 from topic_pack_builder import write_topic
 
 
-def balanced_distractors(correct, distractors):
-    """Doğru şıkkın sistematik en uzun olmasını doğal mutlaklıklarla kır."""
-    out = list(distractors)
-    if correct.endswith("TL") and all(item.endswith("TL") for item in out):
-        return out
-    suffixes = [
-        "; bu sonuç değişmez",
-        "; başka koşul aranmaz",
-        "; bu ölçüt tek başına yeterlidir",
-        "; yönetimin tercihi her durumda bağlayıcıdır",
-    ]
-    longer = sum(len(item) > len(correct) for item in out)
-    candidates = sorted(
-        (i for i, item in enumerate(out) if len(item) <= len(correct)),
-        key=lambda i: len(out[i]), reverse=True,
-    )
-    for index in candidates:
-        if longer >= 2:
-            break
-        for suffix in suffixes:
-            if len(out[index] + suffix) > len(correct):
-                out[index] += suffix
-                longer += 1
-                break
-    return out
-
-
 def r(scenario, focus, correct, focus_correct, distractors, focus_distractors,
       why, focus_why, ref, difficulty="medium"):
     return {
         "scenario": scenario, "focus": focus,
         "correct": correct, "focus_correct": focus_correct,
-        "distractors": balanced_distractors(correct, distractors),
-        "focus_distractors": balanced_distractors(focus_correct, focus_distractors),
+        "distractors": list(distractors),
+        "focus_distractors": list(focus_distractors),
         "why": why, "focus_why": focus_why, "ref": ref,
         "difficulty": difficulty,
     }
@@ -48,7 +21,7 @@ RULES = [
         "Finansal tablodaki bir yanlışlığın, kullanıcıların ekonomik kararlarını etkilemesi makul ölçüde beklenmektedir. Bu yanlışlık nasıl değerlendirilir?",
         "BDS 320'ye göre bir yanlışlığı önemli kılan temel sonuç hangisidir?",
         "Önemli yanlışlık olarak değerlendirilir",
-        "Kullanıcıların ekonomik kararlarını etkilemesinin makul ölçüde beklenmesi",
+        "Kullanıcı kararlarını etkileyebilecek makul bir sonuç",
         ["Yalnız yönetim düzeltmeyi reddederse önemli sayılır", "Sadece nakit akışını etkilerse önemli sayılır", "Denetçi bulduğu anda kendiliğinden hile sayılır", "Tutarı ne olursa olsun bariz biçimde önemsiz sayılır"],
         ["Yanlışlığın yalnız dönem sonunda bulunması", "Yönetimin yanlışlığı sözlü olarak kabul etmesi", "İşlemin mutlaka nakit hareketi içermesi", "Yanlışlığın sadece vergi matrahını azaltması"],
         "Önemlilik, yanlışlığın kullanıcıların finansal tablolara dayanarak alacağı ekonomik kararlar üzerindeki makul etkisiyle ilişkilidir.",
@@ -59,7 +32,7 @@ RULES = [
         "Tutarı genel önemliliğin altında olan bir ilişkili taraf açıklaması yönetimin çıkar çatışmasını gizlemektedir. Denetçi yalnız tutara bakarak önemsiz diyebilir mi?",
         "Önemlilik yargısını etkileyen unsurların doğru bileşimi hangisidir?",
         "Hayır; yanlışlığın niteliği ve koşulları da değerlendirilir",
-        "Yanlışlığın büyüklüğü, niteliği veya bunların bileşimi",
+        "Büyüklük, nitelik veya ikisinin bileşimi",
         ["Evet; önemlilik yalnız parasal büyüklükle ölçülür", "Evet; açıklama yanlışlıkları önemlilik dışında kalır", "Hayır; bütün ilişkili taraf işlemleri doğrudan hile sayılır", "Evet; genel önemliliğin altındaki her tutar önemsizdir"],
         ["Yalnız işlemin kaydedildiği yevmiye maddesi", "Sadece denetim ücretinin toplam tutarı", "Yalnız yanlışlığın bulunduğu takvim günü", "Sadece işletmenin çalışan sayısı"],
         "Niteliksel özellikler ve ortaya çıkış koşulları, düşük tutarlı bir yanlışlığı dahi önemli hâle getirebilir.",
@@ -69,8 +42,8 @@ RULES = [
     r(
         "Bir yatırımcının bilgi ihtiyacı diğer bütün kullanıcılardan çok farklıdır. Denetçi önemliliği yalnız bu yatırımcının özel ihtiyacına göre belirlemiştir. Yaklaşım uygun mudur?",
         "Önemlilik belirlenirken kullanıcıların bilgi ihtiyacı hangi düzeyde ele alınır?",
-        "Hayır; kullanıcıların grup olarak ortak ihtiyaçları esas alınır",
-        "Kullanıcıların bir grup olarak ortak finansal bilgi ihtiyaçları",
+        "Hayır; kullanıcı grubunun ortak ihtiyaçları esas alınır",
+        "Kullanıcı grubunun ortak finansal bilgi ihtiyaçları",
         ["Evet; en büyük yatırımcının her özel talebi bağlayıcıdır", "Evet; yalnız işletme yönetiminin bilgi ihtiyacı esastır", "Hayır; hiçbir kullanıcı beklentisi dikkate alınamaz", "Evet; yalnız kredi verenin bireysel ihtiyacı kullanılır"],
         ["Her bireysel kullanıcının birbirinden farklı özel isteği", "Yalnız finans direktörünün raporlama tercihi", "Sadece denetim şirketinin bütçe beklentisi", "İşletmenin rakiplerinin stratejik bilgi ihtiyacı"],
         "İhtiyaçları oldukça farklı olabilen tek tek kullanıcıların özel etkileri yerine ortak bilgi ihtiyaçları değerlendirilir.",
@@ -80,8 +53,8 @@ RULES = [
     r(
         "Genel önemlilik 500.000 TL'dir. Denetçi bu tutarın altındaki bütün yanlışlıkların her koşulda önemsiz olduğunu kabul etmiştir. Bu kabul doğru mudur?",
         "Planlama önemliliğinin altında kalan bir yanlışlık için hangi ifade doğrudur?",
-        "Hayır; tutarın altındaki bazı yanlışlıklar nitelik veya koşulları nedeniyle önemli olabilir",
-        "Niteliği ve koşulları nedeniyle yine de önemli sayılabilir",
+        "Hayır; düşük tutar nitelik nedeniyle önemli olabilir",
+        "Nitelik veya koşullar nedeniyle önemli olabilir",
         ["Evet; altındaki her yanlışlık otomatik olarak önemsizdir", "Evet; altındaki yanlışlıklar çalışma kâğıdına alınamaz", "Hayır; altındaki her yanlışlık otomatik olarak hiledir", "Evet; yalnız toplam tutar tam 500.000 TL olursa incelenir"],
         ["Her durumda çalışma dosyasından çıkarılır", "Yalnız yönetim isterse önemli kabul edilir", "Mutlaka bariz biçimde önemsiz sayılır", "Sadece sonraki döneme taşınır ve cari yıl değerlendirilmez"],
         "Planlama eşiği, altındaki bütün yanlışlıkların kayıtsız şartsız önemsiz sayılacağı katı bir sınır değildir.",
@@ -91,8 +64,8 @@ RULES = [
     r(
         "Denetçi performans önemliliğini genel önemlilikle aynı tutarda belirleyerek tespit edilmemiş yanlışlıklar için hiç marj bırakmamıştır. Uygun mudur?",
         "Performans önemliliğinin genel önemlilikten düşük belirlenmesinin amacı nedir?",
-        "Hayır; toplulaştırma riskini uygun düşük düzeye indirmek için daha düşük belirlenir",
-        "Düzeltilmemiş ve tespit edilmemiş yanlışlıkların toplamına ilişkin riski azaltmak",
+        "Hayır; toplulaştırma riski için daha düşük belirlenir",
+        "Toplulaştırma riskini uygun düşük düzeye indirmek",
         ["Evet; iki tutar her denetimde zorunlu olarak eşittir", "Evet; performans önemliliği genel önemlilikten yüksek olmalıdır", "Hayır; performans önemliliği yalnız rapordan sonra belirlenir", "Evet; tespit edilmemiş yanlışlıklar önemlilik hesabına girmez"],
         ["Denetim ücretini genel önemliliğin altına indirmek", "Bütün yanlışlıkları tek tek önemsiz ilan etmek", "Yönetimin düzeltme sorumluluğunu denetçiye devretmek", "Örnekleme dışı riski hiçbir prosedür uygulamadan sıfırlamak"],
         "Performans önemliliği, küçük ve tespit edilmemiş yanlışlıkların toplamının genel önemliliği aşması riskine karşı marj sağlar.",
@@ -103,7 +76,7 @@ RULES = [
         "Genel denetim stratejisi hazırlanırken genel önemlilik belirlenmiş; kullanıcılar için hassas olan yönetici ücretleri için daha düşük eşik gerekip gerekmediği hiç değerlendirilmemiştir. Uygun mudur?",
         "Belirli işlem sınıfı, hesap bakiyesi veya açıklama için ayrı önemlilik ne zaman belirlenir?",
         "Hayır; hassas açıklama için daha düşük ayrı önemlilik gerekebilir",
-        "Daha düşük yanlışlıkların kullanıcı kararını etkileyebileceği makul ölçüde bekleniyorsa",
+        "Düşük yanlışlık kullanıcı kararını etkileyebiliyorsa",
         ["Evet; yalnız genel önemlilik belirlemek her durumda yeterlidir", "Evet; ayrı önemlilik yalnız nakit hesapları için kullanılır", "Hayır; yönetici ücretleri finansal tablo açıklaması değildir", "Evet; özel önemlilik genel önemlilikten yüksek olmalıdır"],
         ["Yalnız hesap bakiyesi genel önemliliği zaten aşmışsa", "Denetim ücreti yönetimce düşük bulunmuşsa", "İşlem sınıfındaki bütün kalemler tek tek incelenecekse", "Finansal tablo kullanıcıları bu açıklamayı hiç görmeyecekse"],
         "İlişkili taraflar, yönetici ücretleri veya yüksek belirsizlikli tahminler daha düşük özel önemlilik gerektirebilir.",
@@ -114,7 +87,7 @@ RULES = [
         "Denetçi vergi öncesi 8.000.000 TL kârı kıyaslama noktası seçmiş ve mesleki muhakemeyle yüzde 5 uygulamıştır. Bu varsayımlarla genel önemlilik kaç TL'dir?",
         "BDS 320, önemlilik kıyaslama noktasına uygulanacak oranı nasıl belirler?",
         "400.000 TL",
-        "Standart sabit oran dayatmaz; oran mesleki muhakemeyle seçilir",
+        "Sabit oran yoktur; mesleki muhakeme kullanılır",
         ["40.000 TL", "160.000 TL", "800.000 TL", "1.600.000 TL"],
         ["Her işletme için zorunlu yüzde 1 oranını dayatır", "Bütün kâr amaçlı işletmeler için yüzde 10'u zorunlu kılar", "Oranı yalnız işletme yönetiminin seçmesini ister", "Kıyaslama noktası kullanılmasını tamamen yasaklar"],
         "Sorudaki muhakeme kabulüne göre 8.000.000 × %5 = 400.000 TL'dir; yüzde 5 standartça zorunlu bir oran değildir.",
@@ -146,8 +119,8 @@ RULES = [
     r(
         "Denetçi yalnız genel önemliliği aşan yanlışlıkları listelemiş, daha küçük bütün yanlışlıkları 'önemsiz' diyerek atmıştır. Uygun mudur?",
         "'Bariz biçimde önemsiz' ifadesi 'önemli değil' ifadesiyle aynı anlama gelir mi?",
-        "Hayır; bariz biçimde önemsiz olanlar dışındaki yanlışlıklar biriktirilir",
-        "Hayır; bariz biçimde önemsiz daha dar ve açıkça dikkate değmez bir kategoridir",
+        "Hayır; bariz önemsiz dışındaki yanlışlıklar biriktirilir",
+        "Hayır; bariz önemsiz, önemli değil kavramından daha dardır",
         ["Evet; yalnız genel önemliliği aşanlar biriktirilir", "Evet; küçük yanlışlıklar birbirleriyle hiçbir zaman toplanmaz", "Hayır; denetçi her kuruş farkı raporda ayrı görüşe dönüştürür", "Evet; yönetimin önemsiz dediği her kalem dosyadan çıkarılır"],
         ["Evet; iki ifade standartta tamamen eş anlamlıdır", "Evet; her ikisi yalnız yönetimce belirlenen eşiği anlatır", "Hayır; bariz önemsiz kalemler mutlaka önemli yanlışlıktır", "Evet; iki kavram da yalnız hile kaynaklı farkları kapsar"],
         "Biriktirme yükümlülüğünün istisnası genel önemliliğin altı değil, açıkça dikkate değmeyecek bariz önemsiz kalemlerdir.",
@@ -157,8 +130,8 @@ RULES = [
     r(
         "Biriktirilen yanlışlıklar toplamı önemliliğe yaklaşmış ve aynı süreçte başka yanlışlıklar olabileceğine işaret eden ortak özellikler görülmüştür. Denetçi ne yapmalıdır?",
         "Denetim stratejisi ve planının revizyonunu tetikleyebilecek durum hangisidir?",
-        "Genel denetim stratejisi ile denetim planını revize edip etmeyeceğine karar vermelidir",
-        "Toplamın önemliliğe yaklaşması veya başka yanlışlık ihtimali",
+        "Strateji ve planı revize edip etmemeye karar vermelidir",
+        "Toplamın eşiğe yaklaşması veya ek yanlışlık ihtimali",
         ["Bütün yanlışlıkları artık bariz önemsiz saymalıdır", "Yalnız yönetimin sözlü açıklamasını alıp çalışmayı bitirmelidir", "Önemliliği yanlışlık toplamının üzerine mekanik olarak yükseltmelidir", "Raporu doğrudan olumlu görüşle tamamlamalıdır"],
         ["Denetim ekibinin çalışma saatinin bütçeyi aşması", "Yönetimin denetim ücretini zamanında ödemesi", "Finansal tabloların yazı tipinin değiştirilmesi", "İşletmenin reklam bütçesini azaltması"],
         "Toplamın eşiğe yaklaşması tespit edilmemiş yanlışlık marjını daraltır; ortak özellikler de başka yanlışlık ihtimalini gösterebilir.",
@@ -168,8 +141,8 @@ RULES = [
     r(
         "Denetçinin talebi üzerine yönetim alacak bakiyesini inceleyip bulunan yanlışlıkları düzeltmiştir. Denetçi düzeltmeyi görüp başka işlem yapmadan alanı kapatmıştır. Yeterli midir?",
         "Yönetim bir işlem sınıfını inceleyip yanlışlıkları düzelttiğinde denetçi ne yapar?",
-        "Hayır; yanlışlık kalıp kalmadığını belirlemek için ilave prosedür uygular",
-        "Kalan yanlışlık olup olmadığını belirleyen ilave denetim prosedürleri uygular",
+        "Hayır; kalan yanlışlıklar için ilave prosedür uygular",
+        "Kalan yanlışlığı araştıran ilave denetim prosedürleri uygular",
         ["Evet; yönetim düzeltmesi bütün kanıt ihtiyacını kaldırır", "Evet; düzeltmeden sonra aynı alanda prosedür uygulanamaz", "Hayır; bütün alacakları finansal tablodan çıkarır", "Evet; yalnız yönetim kurulu kararı alınırsa yeniden test eder"],
         ["Yalnız düzeltme nedeniyle denetim ücretini artırır", "İncelemeyi gelecek hesap dönemine erteler", "Yönetimin yaptığı düzeltmeyi kanıtsız olarak geri alır", "Alanı hiçbir değerlendirme yapmadan denetim kapsamından çıkarır"],
         "Yönetimin inceleme ve düzeltmesi, aynı alanda başka yanlışlık kalmadığını kendiliğinden kanıtlamaz.",
@@ -179,7 +152,7 @@ RULES = [
     r(
         "Denetçi biriktirdiği yanlışlıkları rapor tarihine kadar yönetimden gizlemiş ve düzeltme istememiştir. Mevzuatla bildirim yasağı da yoktur. Uygun mudur?",
         "Biriktirilen yanlışlıkların yönetime bildirilmesinde doğru yaklaşım hangisidir?",
-        "Hayır; uygun yönetim kademesine zamanında bildirip düzeltme istemelidir",
+        "Hayır; yönetime zamanında bildirip düzeltme istemelidir",
         "Uygun kademeye zamanında bildirim ve düzeltme talebi",
         ["Evet; yanlışlıklar yalnız rapor yayımlandıktan sonra açıklanır", "Evet; denetçi düzeltme talep edemez", "Hayır; yalnız en küçük yanlışlık yönetimle paylaşılır", "Evet; bütün bildirimler yalnız sözleşme öncesinde yapılır"],
         ["Rapor yayımlandıktan sonra ilk kez bildirim yapmak", "Yanlışlıkları yalnız denetim ekibi içinde tutmak", "Yönetimden düzeltme yapmamasını talep etmek", "Bildirimi finansal tablo kullanıcılarından birine rastgele yapmak"],
@@ -190,7 +163,7 @@ RULES = [
     r(
         "Yönetim bildirilen önemli yanlışlığı düzeltmeyi reddetmiş, denetçi gerekçeyi öğrenmeden bu kararı etkisiz saymıştır. Yaklaşım uygun mudur?",
         "Yönetim düzeltmeyi reddederse denetçi bu reddi nasıl ele alır?",
-        "Hayır; düzeltmeme gerekçesini anlayıp genel değerlendirmede dikkate alır",
+        "Hayır; reddin gerekçesi genel değerlendirmeye alınır",
         "Yönetimin gerekçesi hakkında kanaat edinip önemli yanlışlık değerlendirmesine katar",
         ["Evet; yönetimin gerekçesi denetim açısından hiçbir önem taşımaz", "Evet; ret yanlışlığı otomatik olarak önemsiz yapar", "Hayır; denetçi finansal tabloları yönetim adına düzeltir", "Evet; ret her durumda denetimin hemen çekilmesini gerektirir"],
         ["Reddin yanlışlığı kendiliğinden ortadan kaldırdığını kabul eder", "Yönetimin gerekçesini çalışma dosyasına almadan yok sayar", "Ret üzerine önemliliği otomatik olarak iki katına çıkarır", "Bütün diğer düzeltilmiş yanlışlıkları tekrar finansal tabloya ekler"],
@@ -202,7 +175,7 @@ RULES = [
         "Planlamada tahminî kâra göre belirlenen önemlilik, dönem sonunda gerçekleşen kârın ciddi düşüşü nedeniyle yüksek kalmıştır. Denetçi düzeltilmemiş yanlışlıkları eski tutarla değerlendirebilir mi?",
         "Düzeltilmemiş yanlışlıkların etkisi değerlendirilmeden hemen önce ne doğrulanır?",
         "Hayır; önemlilik fiili sonuçlar kapsamında yeniden değerlendirilir",
-        "Önemliliğin işletmenin fiili finansal sonuçları kapsamında hâlâ geçerli olduğu",
+        "Önemliliğin fiili sonuçlara göre geçerliliği",
         ["Evet; önemlilik ilk belirlendiği anda değiştirilemez", "Evet; fiili sonuçlar yalnız sonraki yıl kullanılır", "Hayır; bütün yanlışlıklar tutarına bakılmaksızın önemli sayılır", "Evet; yönetim eski tutarı onaylarsa yeniden değerlendirme gerekmez"],
         ["Denetim ücretinin yönetimce tam ödendiği", "Bütün yanlışlıkların hileden kaynaklandığı", "Örneklemdeki her kalemin yönetimce seçildiği", "Finansal tabloların aynı yazılımda hazırlandığı"],
         "Tahmin ile fiili sonuç arasındaki önemli fark, planlama önemliliğinin revizyonunu gerektirebilir.",
@@ -212,8 +185,8 @@ RULES = [
     r(
         "Cari dönemde küçük görünen yanlışlık, önceki dönemden taşınan düzeltilmemiş yanlışlıkla birlikte kullanıcı kararını etkileyebilecek düzeye ulaşmaktadır. Önceki dönem etkisi yok sayılabilir mi?",
         "Düzeltilmemiş yanlışlıkların önemliliği değerlendirilirken hangi boyutlar birlikte ele alınır?",
-        "Hayır; önceki dönem düzeltilmemiş yanlışlıklarının etkisi de değerlendirilir",
-        "Büyüklük, nitelik, özel koşullar ve önceki dönem yanlışlıklarının etkisi",
+        "Hayır; önceki dönem yanlışlıklarının etkisi de incelenir",
+        "Büyüklük, nitelik, koşullar ve önceki dönem etkisi",
         ["Evet; her dönem bütünüyle yalıtılmış değerlendirilir", "Evet; yalnız cari dönemin en büyük tek yanlışlığı ele alınır", "Hayır; önceki dönem kalemi otomatik hile sayılır", "Evet; geçmiş yanlışlıklar yalnız yönetim isterse dikkate alınır"],
         ["Yalnız yanlışlığın bulunduğu hesabın kod numarası", "Sadece denetim ekibinin kıdem dağılımı", "Yalnız yönetimin düzeltme için ayırdığı bütçe", "Sadece finansal tabloların hazırlanma süresi"],
         "Düzeltilmemiş yanlışlıklar tek başına ve toplu değerlendirilirken geçmiş dönem birikiminin cari tabloya etkisi de hesaba katılır.",
@@ -223,8 +196,8 @@ RULES = [
     r(
         "Düzeltilmemiş yanlışlıklar üst yönetimden sorumlu olanlara bildirilmiş; ancak denetçi önemli kalemleri tek tek tanımlamamış ve düzeltme talep etmemiştir. Yeterli midir?",
         "Düzeltilmemiş yanlışlıklarla ilgili yazılı beyanda ne bulunur?",
-        "Hayır; önemli kalemler münferit tanımlanmalı ve düzeltilmeleri istenmelidir",
-        "Kalemlerin tek başına ve toplu etkisinin önemsiz olduğu kanaati ile kalem özeti",
+        "Hayır; önemli kalemler ayrı tanımlanıp düzeltilmesi istenir",
+        "Kalem özeti ile tekil ve toplu etkilerin önemsizliği kanaati",
         ["Evet; yalnız toplam tutarın söylenmesi her durumda yeterlidir", "Evet; üst yönetimden sorumlu olanlardan düzeltme istenemez", "Hayır; bütün kalemler denetçi tarafından muhasebeleştirilmelidir", "Evet; bildirim yalnız önceki dönem yanlışlıklarını kapsar"],
         ["Denetçinin bütün yanlışlıkları düzelttiğine ilişkin yönetim kanaati", "Yanlışlıkların hiçbirinin çalışma kâğıdına alınmadığı beyanı", "Yalnız denetim ücretinin makul bulunduğuna ilişkin açıklama", "Kalemlerin tamamının otomatik olarak hile sayıldığı beyanı"],
         "Üst yönetim iletişimi, düzeltilmemiş önemli yanlışlıkları ayrı tanımlar ve görüşe muhtemel etkileriyle birlikte düzeltme talebini içerir.",
@@ -235,7 +208,7 @@ RULES = [
         "Denetçi 10.000 işlemden 200'ünü, her işleme seçilme şansı vererek test etmiş ve sonuçları anakitleye genellemeyi amaçlamıştır. Bu uygulama nedir?",
         "Denetim örneklemesinin temel amacı hangisidir?",
         "Denetim örneklemesi",
-        "Seçilen örneklemden anakitlenin tamamı hakkında makul dayanakla sonuç çıkarmak",
+        "Örneklemden anakitle hakkında makul sonuç çıkarmak",
         ["Yüzde yüz inceleme", "Yalnız belirli kalem seçimi", "Analitik prosedür", "Yönetim sorgulaması"],
         ["Sadece seçilen 200 işlem hakkında rapor yazmak", "Anakitleyi incelemeden bütünü doğru kabul etmek", "Yönetimin örnek sonucunu değiştirmesine izin vermek", "Örnekleme riskini her koşulda tamamen ortadan kaldırmak"],
         "Anakitlenin yüzde 100'ünden azına prosedür uygulanmış, birimlere seçilme şansı verilmiş ve genelleme amaçlanmıştır.",
@@ -245,8 +218,8 @@ RULES = [
     r(
         "Örneklem kalemleri rastgele seçilmiş; ancak sonuçların değerlendirilmesinde olasılık teorisi kullanılmamıştır. Yaklaşım istatistiki örnekleme midir?",
         "İstatistiki örneklemenin birlikte taşıması gereken iki özellik hangisidir?",
-        "Hayır; iki koşul birlikte bulunmadığı için istatistiki olmayan örneklemedir",
-        "Rastgele seçim ve sonuçların olasılık teorisiyle değerlendirilmesi",
+        "Hayır; bu, istatistiki olmayan örneklemedir",
+        "Rastgele seçim ve olasılık teorisiyle değerlendirme",
         ["Evet; rastgele seçim tek başına yeterlidir", "Evet; örneklem yüz kalemden büyükse istatistikidir", "Hayır; istatistiki örnekleme denetimde kullanılamaz", "Evet; yönetim örneklemi onayladıysa istatistikidir"],
         ["Büyük örneklem ve bütün kalemlerin yüksek tutarlı olması", "Gelişigüzel seçim ve yönetimin sonuçları onaylaması", "Sistematik seçim ve yüzde yüz inceleme yapılması", "Mesleki muhakeme kullanılmaması ve tek kalem seçilmesi"],
         "Rastgele seçim koşulunun tek başına bulunması yaklaşımı istatistiki hâle getirmez.",
@@ -256,7 +229,7 @@ RULES = [
     r(
         "Örnekleme dayanılarak kontroller gerçekte olduğundan daha etkin bulunmuştur. Bu sonuç hangi risk türü ve hangi etkiyle ilişkilidir?",
         "Örnekleme riski hangi durumu ifade eder?",
-        "Örnekleme riski; denetimin etkinliğini ve görüşü olumsuz etkileyebilir",
+        "Örnekleme riski; denetim etkinliğini etkileyebilir",
         "Örneklem ile anakitle sonuçlarının farklılaşması",
         ["Örnekleme dışı risk; yalnız denetim verimliliğini etkiler", "Yapısal risk; her durumda görüşü olumlu etkiler", "Kontrol riski; örneklem büyüklüğünden bağımsızdır", "İşletme riski; yalnız yönetimin bütçesini etkiler"],
         ["Örneklem sonucunun anakitle sonucuyla her zaman aynı olması", "Yönetimin denetim ücretini zamanında ödememesi", "Denetçinin uygun prosedürü yanlış yorumlaması", "Anakitlenin finansal tablolarda açıklanmaması"],
@@ -268,7 +241,7 @@ RULES = [
         "Denetçi uygun olmayan bir prosedür seçmiş ve elde ettiği kanıtı yanlış yorumlamıştır. Bu hatalar örnekleme riskine mi girer?",
         "Örnekleme dışı riske örnek olan durum hangisidir?",
         "Hayır; bunlar örnekleme dışı risk örnekleridir",
-        "Uygun olmayan prosedür kullanmak veya denetim kanıtını yanlış yorumlamak",
+        "Uygunsuz prosedür veya kanıtın yanlış yorumlanması",
         ["Evet; her denetçi hatası örnekleme riskidir", "Evet; yalnız örneklem büyütülerek tamamen giderilir", "Hayır; bu durumlar hiçbir denetim riski doğurmaz", "Evet; sadece istatistiki örneklemede görülür"],
         ["Örneklem sonucunun anakitle sonucundan farklı çıkması", "Seçilen örneklemin temsili olmaması", "Örnekleme riskinin kabul edilen seviyeyi aşması", "Örneklemde tesadüfen çok az sapma bulunması"],
         "Risk, örneklemin temsilinden değil denetçinin prosedür seçimi veya kanıt yorumundaki hatadan doğmaktadır.",
@@ -279,7 +252,7 @@ RULES = [
         "Denetçi satışların tamlığını test etmek için eksik olduğu bilinen bir satış listesine dayanarak örneklem kurmuştur. Tasarım uygun mudur?",
         "Örneklem tasarlanırken hangi iki unsur öncelikle değerlendirilir?",
         "Hayır; amaca uygun tam anakitle hakkında kanıt elde edilmelidir",
-        "Denetim prosedürünün amacı ve örneklemin seçileceği anakitlenin özellikleri",
+        "Prosedürün amacı ve anakitlenin özellikleri",
         ["Evet; eksik anakitle seçimin doğruluğunu etkilemez", "Evet; yalnız örneklem sayısı yüksekse anakitle önemsizdir", "Hayır; satışlar üzerinde örnekleme kullanmak yasaktır", "Evet; yönetim listeyi imzaladığında tamlık kanıtlanır"],
         ["Denetim ücreti ve ekibin yıllık izin planı", "Yönetimin tercih ettiği cevap ve rapor tarihi", "Örneklerin dosya sırası ve yazı tipi", "İşletmenin reklam bütçesi ve çalışan sayısı"],
         "Eksik anakitleden temsili örneklem seçilse dahi tamlık yönetim beyanı hakkında güvenilir genelleme yapılamaz.",
@@ -301,7 +274,7 @@ RULES = [
         "Denetçi yalnız kolay erişilen ilk 50 faturayı seçmiş ve anakitlenin diğer birimlerine hiçbir seçilme şansı vermemiştir. Uygun mudur?",
         "Örneklem kalemlerinin seçiminde temel koşul hangisidir?",
         "Hayır; her örnekleme birimine seçilme şansı verilmelidir",
-        "Anakitledeki her örnekleme biriminin seçilme şansına sahip olması",
+        "Her örnekleme birimine seçilme şansı verilmesi",
         ["Evet; ilk kalemler her zaman temsili kabul edilir", "Evet; kolaylık seçim yanlılığını ortadan kaldırır", "Hayır; denetçi yalnız en düşük tutarlı kalemleri seçmelidir", "Evet; liste sırası yönetimce belirlendiyse seçim geçerlidir"],
         ["Yalnız yüksek tutarlı kalemlerin seçilme şansına sahip olması", "Seçimin bütünüyle işletme yönetimine bırakılması", "Kalemlerin yalnız dönem başından seçilmesi", "Her kalemin aynı tutarda ve aynı tarihte olması"],
         "Kolay erişilen ardışık kalemler sistematik yanlılık taşıyabilir ve tüm birimlere seçilme şansı vermez.",
@@ -311,7 +284,7 @@ RULES = [
     r(
         "Seçilen iptal edilmiş çek prosedür amacına uygulanabilir değildir; denetçi uygun bir ikame kalem seçmiştir. Başka bir seçili kalemde ise belge kayıp ve hiçbir alternatif prosedür uygulanamamıştır. İkinci kalem nasıl ele alınır?",
         "Seçilen kaleme tasarlanan veya uygun alternatif prosedür uygulanamazsa sonuç nasıl sınıflandırılır?",
-        "Kontrol testinde sapma, detay testinde yanlışlık olarak kabul edilir",
+        "Kontrol testinde sapma, detay testinde yanlışlık",
         "Kontrol testinde sapma; detay testinde yanlışlık",
         ["Her iki testte de kanıtsız olarak doğru kabul edilir", "Kalem örneklemden sessizce çıkarılır ve yerine hiç seçim yapılmaz", "Yalnız yönetimin sözlü beyanıyla test edilmiş sayılır", "Her iki testte de otomatik anomali kabul edilir"],
         ["Her iki testte de kesinlikle doğru kalem", "Kontrol testinde yanlışlık; detay testinde sapma", "Her iki testte de örneklem dışı kalem", "Yalnız yönetim isterse sapma veya yanlışlık"],
@@ -322,8 +295,8 @@ RULES = [
     r(
         "Detay testi örnekleminde bulunan yanlışlık anakitleye öngörülmemiş; tek bir sıra dışı kalem de hiçbir ek kanıt olmadan anomali sayılmıştır. Yaklaşım uygun mudur?",
         "Örneklem sonuçları anakitle hakkında makul dayanak sağlamıyorsa denetçinin uygun karşılığı hangisidir?",
-        "Hayır; yanlışlık anakitleye öngörülmeli ve anomali için güçlü ek kanıt alınmalıdır",
-        "İlave kanıt elde etmek, örneklemi genişletmek veya prosedürleri uyarlamak",
+        "Hayır; öngörü ve anomali için ek kanıt gerekir",
+        "Ek kanıt, daha büyük örneklem veya uyarlanmış prosedür",
         ["Evet; örneklemdeki yanlışlık yalnız seçilen kalemi etkiler", "Evet; denetçi istediği her farkı kanıtsız anomali sayabilir", "Hayır; bulunan yanlışlık bütün anakitle tutarı kadar kaydedilir", "Evet; sonuç değerlendirmesi yalnız kontrol testlerinde yapılır"],
         ["Anakitleyi hiçbir ek kanıt olmadan doğru kabul etmek", "Bütün örneklem sonuçlarını çalışma dosyasından çıkarmak", "Yönetimden örnekleme riskini sıfırlayan sözlü beyan almak", "Kabul edilebilir yanlışlığı sonuçtan sonra sınırsız artırmak"],
         "Detay testi yanlışlıkları anakitleye öngörülür; anomali sonucuna ancak anakitleyi temsil etmediğine ilişkin yüksek kesinlik ve ek kanıtla varılır.",
