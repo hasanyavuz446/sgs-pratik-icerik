@@ -120,19 +120,9 @@ Kör öğrenci ≥%35 **FATAL**, ≥%28 UYARI. Boy ipucu ≥%45 UYARI. Regresyon
 
 | dosya | klon |
 |---|---:|
-| `trend_analizi.json` | 18 |
-| `karsilastirmali_analiz.json` | 10 |
-| `denetim_riski.json` | 7 |
-| `dikey_analiz.json` | 4 |
-| `oran_analizi.json` | 3 |
-| `nakit_akim_analizi.json` | 3 |
-| `maliyet_hacim_kar.json` | 3 |
-| `mali_duran_varliklar.json` | 1 |
-| `maliyet_hesaplari.json` | 1 |
-| `fon_akim_analizi.json` | 1 |
-| `safha_maliyeti.json` | 1 |
+| — | **0** |
 
-**Toplam 52 klon / 11 dosya.** Ayrıca 18 yakın-tekrar UYARI'sı (elle karşılaştırılacak).
+**Toplam 0 klon — 2026-07-17'de tamamı giderildi.** Ayrıca 18 yakın-tekrar UYARI'sı (elle karşılaştırılacak).
 
 Bu kurallarda **temiz çıkanlar**: çözüm birebir tekrarı 0, çözüm şablonu 0, mevzuat oranı 0 — içerik bu üç kurala zaten uyuyormuş; kural yazılıydı, yalnız ölçen yoktu.
 
@@ -140,3 +130,18 @@ Bu kurallarda **temiz çıkanlar**: çözüm birebir tekrarı 0, çözüm şablo
 > soruyu tutuyordu, bu yüzden ilk soru farklı cevaplıysa sonraki klonlar hiç
 > karşılaştırılmıyordu. **20 → 52.** Hatayı denetim değil, düzeltme yamasının kendi
 > assertion'ı buldu (`den-risk-gen-0012 ↔ 0026`).
+
+### Klon işi kapandı (2026-07-17)
+
+52 klon → **0**. Üç dosyada çeldiriciler formülden türediği için konuya builder
+yazıldı (`trend_analizi` 18 · `karsilastirmali_analiz` 8 · `denetim_riski` 7);
+kalan 8 dosyadaki 16 klon hedefli yamayla giderildi (`fix_kalan_klonlar.py`) —
+oralarda çeldiriciler zaten “yakın yanlış sayı” niteliğindeydi ve girdi değişince
+makul kaldılar.
+
+Bu iş sırasında denetimin kendisinde **iki hata** bulundu ve düzeltildi:
+şablon başına yalnız ilk soruyu tutmak (20 → 52) ve cevap karşılaştırmasında
+işaretleri silmek (“−%10” ile “%10” aynı sanılıyordu → 4 sahte FATAL).
+İkisini de denetim değil, düzeltme yamalarının kendi assertion'ları yakaladı.
+
+**Kalan iş: şık örüntüsü** (kör öğrenci) — 53 dosya, yukarıdaki tablolar geçerli.
