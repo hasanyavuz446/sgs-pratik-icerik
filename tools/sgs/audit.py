@@ -18,9 +18,65 @@ import sys
 LETTERS = set("ABCDE")
 DEMO = re.compile(r"demo\s+(?:soru|açıklama)", re.IGNORECASE)
 
+# Çeldiricileri şişirmek için kullanılan dolgu kalıpları. Yalnız çeldiricilerde
+# görünürlerse kalıbın kendisi güvenilir bir "yanlış" işaretine dönüşür.
+DOLGU = re.compile(r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır)", re.I)
+# Öncüllü (I/II/III "hangileri") sorularda şık boyu doğal olarak eşit → boy ölçümü dışı.
+ONCUL = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
+
+
+def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
+    """Soruyu HİÇ OKUMADAN alınabilen EN İYİ puan (%) ve onu veren strateji.
+
+    Rastgele taban %20'dir. Yüksek çıkması, şıkların içerikten bağımsız bir
+    örüntü sızdırdığı anlamına gelir — öğrenci soruyu okumadan çözebiliyordur.
+
+    ⚠ Ölçüt İKİ YÖNLÜ olmalı. İlk sürümü yalnız "en kısayı seç" deniyordu ve
+    "doğru hep en UZUN" yazılmış dersleri temiz gösteriyordu; oysa öğrencinin
+    öğreneceği kural hangi yönde olursa olsun aynı derecede zararlıdır.
+    """
+    if not questions:
+        return 0, "-"
+    stratejiler = {
+        "en kısayı seç": lambda o: min(o, key=lambda k: (len(o[k]), k)),
+        "en uzunu seç": lambda o: max(o, key=lambda k: (len(o[k]), k)),
+        "dolguluyu ele, en kısayı seç": lambda o: (
+            lambda r: min(r, key=lambda k: (len(r[k]), k))
+        )({k: v for k, v in o.items() if not DOLGU.search(v)} or o),
+        "dolguluyu ele, en uzunu seç": lambda o: (
+            lambda r: max(r, key=lambda k: (len(r[k]), k))
+        )({k: v for k, v in o.items() if not DOLGU.search(v)} or o),
+    }
+    en_iyi = (0, "-")
+    for ad, sec in stratejiler.items():
+        dogru = sum(sec(q["options"]) == q["answer"] for q in questions)
+        puan = dogru * 100 // len(questions)
+        if puan > en_iyi[0]:
+            en_iyi = (puan, ad)
+    return en_iyi
+
+
+def boy_egilimi(questions: list[dict]) -> tuple[int, int, int]:
+    """(en-uzun%, en-kısa%, ölçülen) — doğru şıkkın boy sıralamasındaki yeri.
+
+    İkisi de ~%20 olmalı. Biri baskınsa boy ipucu vardır; YÖNÜ ÖNEMSİZ —
+    "doğru hep en uzun" kadar "doğru hep en kısa" da okumadan çözdürür.
+    """
+    olcum = [q for q in questions if len(ONCUL.findall(q["stem"])) < 2]
+    if not olcum:
+        return 0, 0, 0
+    uzun = kisa = 0
+    for question in olcum:
+        lengths = [len(v) for v in question["options"].values()]
+        answer_length = len(question["options"][question["answer"]])
+        uzun += answer_length == max(lengths)
+        kisa += answer_length == min(lengths)
+    return uzun * 100 // len(olcum), kisa * 100 // len(olcum), len(olcum)
+
 
 def load(path: str) -> list[dict]:
-    data = json.load(open(path, encoding="utf-8"))
+    with open(path, encoding="utf-8") as handle:
+        data = json.load(handle)
     return data if isinstance(data, list) else data.get("questions", [])
 
 
@@ -97,6 +153,40 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         expected = len(sequence) / 5
         if any(abs(counts[letter] - expected) > max(2, expected * 0.35) for letter in "ABCDE"):
             issues.append(("UYARI", f"cevap harfi dağılımı dengesiz: {dict(counts)}"))
+
+    # Şıklardan sızan örüntü. Harf dizisi kusursuz olsa bile şıkların KENDİSİ
+    # cevabı ele verebilir; eski dedektör yalnız "doğru şık en uzun mu" bakıp
+    # bunu kaçırıyordu (Muhasebe Standartları'nda kör öğrenci %54 alıyordu).
+    saglam = [q for q in questions
+              if isinstance(q.get("options"), dict) and set(q.get("options", {})) == LETTERS
+              and q.get("answer") in q.get("options", {})]
+    if len(saglam) >= 20:
+        kor, strateji = kor_ogrenci(saglam)
+        if kor >= 35:
+            issues.append(("FATAL", f"kör öğrenci soruyu okumadan %{kor} alıyor (taban %20) — "
+                                    f"strateji: “{strateji}”"))
+        elif kor >= 28:
+            issues.append(("UYARI", f"kör öğrenci %{kor} alıyor (taban %20) — “{strateji}”"))
+
+        uzun, kisa, olcum = boy_egilimi(saglam)
+        if olcum >= 20 and max(uzun, kisa) >= 45:
+            yon = "en UZUN" if uzun >= kisa else "en KISA"
+            issues.append(("UYARI", f"boy ipucu: doğru şık %{max(uzun, kisa)} oranında {yon} "
+                                    f"({olcum} öncüllü-olmayan soruda; hedef ~%20)"))
+
+        # Aynı çeldiricinin dosya boyunca tekrarı ("bu husus standartta düzenlenmemiştir"
+        # gibi atma-şıkları): her seferinde yanlış olduğu için tek başına öğrenilir.
+        # Öncül seçicileri ("Yalnız I", "II ve III") meşru olarak tekrar eder — sayma.
+        secici = re.compile(r"^(yalnız\s+)?(i{1,3}|iv|v)(\s*(,|ve)\s*(i{1,3}|iv|v))*$", re.I)
+        celdirici = collections.Counter(
+            re.sub(r"\s+", " ", v).strip().casefold()
+            for q in saglam for k, v in q["options"].items()
+            if k != q["answer"] and not secici.match(re.sub(r"\s+", " ", v).strip())
+        )
+        for metin, adet in celdirici.most_common(3):
+            if adet >= max(6, len(saglam) * 0.15):
+                issues.append(("UYARI", f"atma-şıkkı {adet} kez tekrarlanmış (hep yanlış): "
+                                        f"“{metin[:58]}…”"))
 
     return len(questions), issues
 
