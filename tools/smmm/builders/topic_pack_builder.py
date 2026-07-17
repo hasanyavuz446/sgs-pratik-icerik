@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 """Yeterlilik konu havuzları için ortak, deterministik builder.
 
-Her konu builder'ı 26 yapısal kuralı iki farklı kökle ve 8 öncüllü soruyu
-tanımlar. Böylece 60 özgün soru; dengeli, örüntüsüz harf dağılımıyla üretilir.
+Her konu builder'ı 26 yapısal kuralı iki farklı soru varyantıyla ve 8 öncüllü
+soruyla tanımlar. Senaryo ve odak varyantları aynı kazanım çevresinde olabilir;
+ancak ayrı doğru cevap, çeldirici, çözüm ve dayanak taşıyabilir. Böylece ikinci
+soru, birincinin yalnızca yeniden söylenmiş hâline dönüşmez.
 """
 from __future__ import annotations
 
@@ -43,27 +45,35 @@ def build_topic(
 
     raw: list[dict] = []
     for idx, rule in enumerate(rules):
-        if rule.get("distractors"):
-            distractors = rule["distractors"]
-        else:
-            assert rule["correct"] not in wrong_banks[rule["bank"]]
-            bank = wrong_banks[rule["bank"]]
-            assert len(set(bank)) >= 6
-            start = (idx * 3 + seed) % len(bank)
-            distractors = []
-            for offset in range(len(bank)):
-                candidate = bank[(start + offset) % len(bank)]
-                if candidate != rule["correct"] and candidate not in distractors:
-                    distractors.append(candidate)
-                if len(distractors) == 4:
-                    break
-        assert len(distractors) == 4
-        assert len(set(distractors)) == 4
         for stem_key in ("scenario", "focus"):
+            correct = rule.get(f"{stem_key}_correct", rule["correct"])
+            distractors = rule.get(f"{stem_key}_distractors")
+            if distractors is None and stem_key == "scenario":
+                distractors = rule.get("distractors")
+            if distractors is None:
+                bank_name = rule.get(f"{stem_key}_bank", rule["bank"])
+                assert correct not in wrong_banks[bank_name]
+                bank = wrong_banks[bank_name]
+                assert len(set(bank)) >= 6
+                start = (idx * 3 + seed + (1 if stem_key == "focus" else 0)) % len(bank)
+                distractors = []
+                for offset in range(len(bank)):
+                    candidate = bank[(start + offset) % len(bank)]
+                    if candidate != correct and candidate not in distractors:
+                        distractors.append(candidate)
+                    if len(distractors) == 4:
+                        break
+            assert len(distractors) == 4
+            assert len(set(distractors)) == 4
+            assert correct not in distractors
             raw.append({
-                "stem": rule[stem_key], "correct": rule["correct"],
-                "distractors": distractors, "why": rule["why"],
-                "ref": rule["ref"], "difficulty": rule.get("difficulty", "medium"),
+                "stem": rule[stem_key], "correct": correct,
+                "distractors": distractors,
+                "why": rule.get(f"{stem_key}_why", rule["why"]),
+                "ref": rule.get(f"{stem_key}_ref", rule["ref"]),
+                "difficulty": rule.get(
+                    f"{stem_key}_difficulty", rule.get("difficulty", "medium")
+                ),
             })
 
     for p in premises:
@@ -98,12 +108,12 @@ def build_topic(
                 "styleRef": "2026 SMMM beş seçenekli test",
                 "legislationRef": item["ref"],
             },
-            "tags": ["Demo Soru", "2026 Formatı", "Konu Havuzu", label],
+            "tags": ["Özgün Soru", "2026 Formatı", "Konu Havuzu", label],
             "difficulty": item["difficulty"],
-            "updatedAt": "2026-07-16T00:00:00Z",
+            "updatedAt": "2026-07-17T00:00:00Z",
             "examPeriod": "2026 test sistemine uyumlu özgün soru",
             "legislationVersion": legislation_version,
-            "sourceUpdatedAt": "2026-07-16T00:00:00Z",
+            "sourceUpdatedAt": "2026-07-17T00:00:00Z",
             "isPremium": False,
             "isActive": True,
         })
@@ -112,8 +122,12 @@ def build_topic(
 
 def write_topic(*, slug: str, **kwargs) -> Path:
     data = build_topic(slug=slug, **kwargs)
-    target = APP_ROOT / "assets/content/yeterlilik" / f"questions_topic_{slug}_2026.json"
-    target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"yazıldı: {target} ({len(data)} soru)")
-    return target
+    filename = f"questions_topic_{slug}_2026.json"
+    content_target = CONTENT_ROOT / "content/yeterlilik" / filename
+    app_target = APP_ROOT / "assets/content/yeterlilik" / filename
+    payload = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+    for target in (content_target, app_target):
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(payload, encoding="utf-8")
+        print(f"yazıldı: {target} ({len(data)} soru)")
+    return app_target
