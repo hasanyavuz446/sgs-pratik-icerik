@@ -225,14 +225,14 @@
     "konu": "denetim_riski",
     "stem": "Yapısal risk %60, kontrol riski %50, hedeflenen denetim riski %6 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%6",
-      "B": "%12",
       "C": "%20",
-      "D": "%18",
-      "E": "%30"
+      "A": "%30",
+      "B": "%10",
+      "D": "%12",
+      "E": "%1,8"
     },
     "answer": "C",
-    "solution": "TR = DR ÷ (YR × KR) = 0,06 ÷ (0,60 × 0,50) = 0,06 ÷ 0,30 = 0,20 = **%20**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.06 ÷ (0.6 × 0.5) = 0.06 ÷ 0.3 = **%20**. Önemli yanlışlık riski (%30) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -245,16 +245,16 @@
     "id": "den-risk-gen-0012",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %100, kontrol riski %50, hedeflenen denetim riski %5 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %50, kontrol riski %40, hedeflenen denetim riski %3 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%5",
-      "B": "%50",
-      "C": "%15",
-      "D": "%25",
-      "E": "%10"
+      "E": "%15",
+      "A": "%20",
+      "B": "%6",
+      "C": "%7,5",
+      "D": "%0,6"
     },
     "answer": "E",
-    "solution": "TR = DR ÷ (YR × KR) = 0,05 ÷ (1,00 × 0,50) = 0,05 ÷ 0,50 = 0,10 = **%10**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.03 ÷ (0.5 × 0.4) = 0.03 ÷ 0.2 = **%15**. Önemli yanlışlık riski (%20) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -377,16 +377,16 @@
     "id": "den-risk-gen-0018",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %50, kontrol riski %40, hedeflenen denetim riski %4 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %40, kontrol riski %50, hedeflenen denetim riski %6 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%8",
-      "B": "%20",
-      "C": "%16",
-      "D": "%25",
-      "E": "%40"
+      "B": "%30",
+      "A": "%20",
+      "C": "%15",
+      "D": "%12",
+      "E": "%1,2"
     },
     "answer": "B",
-    "solution": "TR = DR ÷ (YR × KR) = 0,04 ÷ (0,50 × 0,40) = 0,04 ÷ 0,20 = 0,20 = **%20**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.06 ÷ (0.4 × 0.5) = 0.06 ÷ 0.2 = **%30**. Önemli yanlışlık riski (%20) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -553,16 +553,16 @@
     "id": "den-risk-gen-0026",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %90, kontrol riski %50, hedeflenen denetim riski %4,5 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %50, kontrol riski %60, hedeflenen denetim riski %3 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%5",
-      "B": "%9",
       "C": "%10",
-      "D": "%18",
-      "E": "%45"
+      "A": "%30",
+      "B": "%6",
+      "D": "%5",
+      "E": "%0,9"
     },
     "answer": "C",
-    "solution": "TR = DR ÷ (YR × KR) = 0,045 ÷ (0,90 × 0,50) = 0,045 ÷ 0,45 = 0,10 = **%10**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.03 ÷ (0.5 × 0.6) = 0.03 ÷ 0.3 = **%10**. Önemli yanlışlık riski (%30) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -619,16 +619,16 @@
     "id": "den-risk-gen-0029",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %75, kontrol riski %40, hedeflenen denetim riski %3 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %80, kontrol riski %25, hedeflenen denetim riski %5 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%3",
-      "B": "%10",
-      "C": "%7,5",
-      "D": "%12",
-      "E": "%30"
+      "B": "%25",
+      "A": "%20",
+      "C": "%6,25",
+      "D": "%1",
+      "E": "%12,5"
     },
     "answer": "B",
-    "solution": "TR = DR ÷ (YR × KR) = 0,03 ÷ (0,75 × 0,40) = 0,03 ÷ 0,30 = 0,10 = **%10**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.05 ÷ (0.8 × 0.25) = 0.05 ÷ 0.2 = **%25**. Önemli yanlışlık riski (%20) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -817,16 +817,16 @@
     "id": "den-risk-gen-0038",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %40, kontrol riski %50, hedeflenen denetim riski %4 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %50, kontrol riski %50, hedeflenen denetim riski %2 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%4",
-      "B": "%20",
-      "C": "%16",
-      "D": "%10",
-      "E": "%40"
+      "B": "%8",
+      "A": "%25",
+      "C": "%4",
+      "D": "%0,5",
+      "E": "%16"
     },
     "answer": "B",
-    "solution": "TR = DR ÷ (YR × KR) = 0,04 ÷ (0,40 × 0,50) = 0,04 ÷ 0,20 = 0,20 = **%20**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.02 ÷ (0.5 × 0.5) = 0.02 ÷ 0.25 = **%8**. Önemli yanlışlık riski (%25) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -883,16 +883,16 @@
     "id": "den-risk-gen-0041",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %50, kontrol riski %60, hedeflenen denetim riski %6 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %60, kontrol riski %50, hedeflenen denetim riski %12 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%6",
-      "B": "%12",
-      "C": "%18",
-      "D": "%30",
-      "E": "%20"
+      "E": "%40",
+      "A": "%30",
+      "B": "%20",
+      "C": "%24",
+      "D": "%3,6"
     },
     "answer": "E",
-    "solution": "TR = DR ÷ (YR × KR) = 0,06 ÷ (0,50 × 0,60) = 0,06 ÷ 0,30 = 0,20 = **%20**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.12 ÷ (0.6 × 0.5) = 0.12 ÷ 0.3 = **%40**. Önemli yanlışlık riski (%30) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -1103,16 +1103,16 @@
     "id": "den-risk-gen-0051",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %75, kontrol riski %80, hedeflenen denetim riski %6 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %40, kontrol riski %25, hedeflenen denetim riski %5 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%6",
-      "B": "%10",
-      "C": "%12",
-      "D": "%15",
-      "E": "%20"
+      "B": "%50",
+      "A": "%10",
+      "C": "%12,5",
+      "D": "%20",
+      "E": "%0,5"
     },
     "answer": "B",
-    "solution": "TR = DR ÷ (YR × KR) = 0,06 ÷ (0,75 × 0,80) = 0,06 ÷ 0,60 = 0,10 = **%10**.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.05 ÷ (0.4 × 0.25) = 0.05 ÷ 0.1 = **%50**. Önemli yanlışlık riski (%10) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
@@ -1213,16 +1213,16 @@
     "id": "den-risk-gen-0056",
     "ders": "denetim",
     "konu": "denetim_riski",
-    "stem": "Yapısal risk %80, kontrol riski %25, hedeflenen denetim riski %4 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
+    "stem": "Yapısal risk %80, kontrol riski %50, hedeflenen denetim riski %2 olan bir denetimde kabul edilebilir tespit riski yüzde kaçtır?",
     "options": {
-      "A": "%4",
-      "B": "%10",
-      "C": "%16",
-      "D": "%20",
-      "E": "%25"
+      "D": "%5",
+      "A": "%40",
+      "B": "%2,5",
+      "C": "%4",
+      "E": "%0,8"
     },
     "answer": "D",
-    "solution": "TR = DR ÷ (YR × KR) = 0,04 ÷ (0,80 × 0,25) = 0,04 ÷ 0,20 = 0,20 = **%20**. Kontrol riski düşük (iç kontrol güçlü) olduğundan kabul edilebilir tespit riski yükselmiştir.",
+    "solution": "DR = YR × KR × TR olduğundan TR = DR ÷ (YR × KR) = 0.02 ÷ (0.8 × 0.5) = 0.02 ÷ 0.4 = **%5**. Önemli yanlışlık riski (%40) tespit riskinin kendisi değil, paydasıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Denetim (hesaplama-TR; sınav stiline kalibre)",
