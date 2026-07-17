@@ -47,20 +47,41 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     """
     if not questions:
         return 0, "-"
+
+    def uzun(o):
+        return {max(o, key=lambda k: (len(o[k]), k))}
+
+    def kisa(o):
+        return {min(o, key=lambda k: (len(o[k]), k))}
+
+    def dolgusuz(o):
+        return {k: v for k, v in o.items() if not DOLGU.search(v)} or o
+
+    def ortadakiler(o):
+        enb, enk = max(len(v) for v in o.values()), min(len(v) for v in o.values())
+        return {k for k in o if enk < len(o[k]) < enb} or set(o)
+
+    # Her strateji bir ADAY KÜMESİ döndürür; puan = küme doğruyu içeriyorsa 1/|küme|.
+    # ⚠ Çerçeve önce tek şık seçiyordu ve "daraltma" stratejilerini modelleyemiyordu:
+    # aday iki ucu eleyip 3 şıkta kalırsa %33 eder (taban %20), ama tek-şık çerçevesi
+    # bunu göremez. emlak_vergisi'nde boy dengelerken doğru şıkkı sistematik olarak
+    # ortaya itmiştim (%0 en uzun / %0 en kısa) — yani bir ipucunu düzeltirken daha
+    # küçük bir yenisini üretmiştim ve ölçüt kördü.
     stratejiler = {
-        "en kısayı seç": lambda o: min(o, key=lambda k: (len(o[k]), k)),
-        "en uzunu seç": lambda o: max(o, key=lambda k: (len(o[k]), k)),
-        "dolguluyu ele, en kısayı seç": lambda o: (
-            lambda r: min(r, key=lambda k: (len(r[k]), k))
-        )({k: v for k, v in o.items() if not DOLGU.search(v)} or o),
-        "dolguluyu ele, en uzunu seç": lambda o: (
-            lambda r: max(r, key=lambda k: (len(r[k]), k))
-        )({k: v for k, v in o.items() if not DOLGU.search(v)} or o),
+        "en kısayı seç": kisa,
+        "en uzunu seç": uzun,
+        "dolguluyu ele, en kısayı seç": lambda o: kisa(dolgusuz(o)),
+        "dolguluyu ele, en uzunu seç": lambda o: uzun(dolgusuz(o)),
+        "iki ucu ele, ortadan tahmin et": ortadakiler,
     }
     en_iyi = (0, "-")
     for ad, sec in stratejiler.items():
-        dogru = sum(sec(q["options"]) == q["answer"] for q in questions)
-        puan = dogru * 100 // len(questions)
+        beklenen = 0.0
+        for question in questions:
+            aday = sec(question["options"])
+            if question["answer"] in aday:
+                beklenen += 1 / len(aday)
+        puan = int(beklenen * 100 / len(questions))
         if puan > en_iyi[0]:
             en_iyi = (puan, ad)
     return en_iyi
