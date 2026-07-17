@@ -91,6 +91,24 @@ zorluk · doğru cevabın dayanağı · her çeldiricinin temsil ettiği kavram 
 - Her test kendi içinde kapsam ve zorluk dengesi taşır (kullanıcı 20'şer çözer).
 - Aynı kök kalıbı + aynı çözüm + aynı çeldirici mantığı seri üretimde kullanılmaz.
 
+### Alıştırma ↔ klon ayrımı (denetimli)
+
+`audit.py::tekrar_sorunlari` bunu ölçer ve ayrım **ham cevap** üzerinden kurulur:
+
+| durum | hüküm |
+|---|---|
+| aynı şablon + **farklı** cevap | **alıştırma** — mekanik beceride istenen şeydir; matematikte 52 denklem sorusu meşrudur |
+| aynı şablon + **aynı** cevap | **FATAL klon** — sayı değişmiş ama sorulan işlem ve sonuç aynı |
+
+Gerçek örnek: `trend_analizi`'nde 260/200, 1300/1000 ve 780/600 → **üçü de %130**.
+Aday birini çözünce diğer ikisini tanır; bu üç soru değil, bir sorudur.
+
+⚠️ SMMM'nin denetimindeki "aynı şablon = FATAL" kuralı SGS'ye **olduğu gibi
+alınamaz** — sayılar maskelendiğinde matematik alıştırmasının kökü zaten şablondur.
+
+Ayrıca ölçülür: çözüm birebir tekrarı (FATAL), yalnız sayı değişmiş çözüm şablonu
+(UYARI) ve `difflib` yakın-tekrar (UYARI, elle karşılaştırılır).
+
 ---
 
 ## 3. Builder kullan; JSON'u elle yazma
@@ -300,10 +318,22 @@ doğuran olay · istisna türü · matrah mantığı · beyan usulü.
 şey kayıt becerisidir, oran bilgisi değil; oran değişse de soru kendi içinde tutarlı
 kalır. İhlal olan iki durum:
 
-1. oran **şıkta** (yani cevabın kendisi oran),
-2. kök oranı vermeyip "genel oranda KDV" deyip adayın bilmesini beklemek.
+1. cevap **çıplak bir mevzuat oranı** ve kök oranı vermiyor
+   ("KDV oranı yüzde kaçtır?" → "%20"),
+2. kök oranı vermeyip "yürürlükteki oran üzerinden" deyip adayın bilmesini beklemek.
 
-(Bu ayrımı ilk taramamda kaçırıp 7 yanlış pozitif üretmiştim.)
+⚠️⚠️ **Cevabın oran olması tek başına ihlal DEĞİLDİR.** Bu kuralda üç kez yanlış
+pozitif ürettim; üçü de aynı hatanın çeşidiydi — kalıba bakıp anlama bakmamak:
+
+- "Faydalı ömrü 4 yıl olanın amortisman oranı" → **%25** — türetilmiş orandır (1/4),
+  mevzuat değişse bayatlamaz.
+- "242 İştirakler'de sahiplik oranı" → **%10-50** — TDHP'nin yapısal sınırıdır.
+- "**Cari oran** hangisiyle hesaplanır?" — "cari oran" *current ratio*'dur,
+  bir rasyonun **adı**; "hâlihazırda geçerli oran" demek değildir. Bu kalıp Mali
+  Tablolar Analizi'nin en temel terimini 10 kez ihlal sandı.
+
+Denetim yalnız en bariz hâli yakalar (`guncellik_sorunlari`); ayrım semantiktir,
+gerisi insan işidir.
 
 Senaryoda varsayımsal tutar (10.000 ₺, 6.000 ₺) serbesttir. Kanunda sabit yapısal
 sayılar da serbesttir (50 ortak, 3 yıl, 10 gün/1 ay ibraz süresi) — ama madde
