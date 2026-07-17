@@ -456,14 +456,23 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         #
         # ⚠ most_common(3) YETMEZ: tms_40'ta bu ailenin 45 üyesi var, ilk üçü
         # göstermek kusurun boyunu gizliyordu. Aile üye üye değil, TOPLAM raporlanır.
+        # ⚠ PARANTEZİ KIRP, sonra ölç. Atma-şıkkı bir CÜMLE iddiasıdır ("…standartta
+        # düzenlenmemiştir") ve parantezsiz de uzundur. Buna karşılık öncül seçicileri
+        # ve kategori cevapları çoğu kez açıklayıcı bir parantez taşır:
+        #   "Yalnız I (yalnızca birinci ifade doğrudur)"  → öncül seçicisi
+        #   "devletçilik (ekonomide devlete öncü rol veren ilke)" → kategori cevabı
+        # Parantez, hem >40 uzunluk eşiğini hem secici eşleşmesini atlatıp bunları
+        # sahte-FATAL yapıyordu (maliye, iş hukuku, atatürk, vergi…). Çekirdeği
+        # (parantezsiz) ölçünce ikisi de elenir: kısa kalır ya da secici'ye uyar.
         secici = re.compile(r"^(yalnız\s+)?(i{1,3}|iv|v)(\s*(,|ve)\s*(i{1,3}|iv|v))*$", re.I)
         nerede: dict[str, list[bool]] = {}
         for q in saglam:
             for k, v in q["options"].items():
-                d = re.sub(r"\s+", " ", v).strip()
-                if len(d) <= 40 or secici.match(d):
+                cekirdek = re.sub(r"\s*\([^)]*\)", "", re.sub(r"\s+", " ", v)).strip()
+                if len(cekirdek) <= 40 or secici.match(cekirdek):
                     continue
-                nerede.setdefault(d.casefold(), []).append(k == q["answer"])
+                nerede.setdefault(re.sub(r"\s+", " ", v).strip().casefold(),
+                                  []).append(k == q["answer"])
         for metin, gecisler in sorted(nerede.items(), key=lambda t: -len(t[1]))[:5]:
             adet = len(gecisler)
             if any(gecisler) or adet < max(5, len(saglam) * 0.08):
