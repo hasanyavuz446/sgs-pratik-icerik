@@ -118,10 +118,10 @@ q("Finansman faaliyetleri bakımından aşağıdakilerden hangisi doğrudur?",
   "TMS 7: finansman faaliyetleri, işletmenin özkaynağının ve borçlanmalarının büyüklüğünde ve bileşiminde değişiklik meydana getiren faaliyetlerdir. Sermayeyi sağlayanların gelecekteki nakit akışı taleplerinin öngörülmesine yardımcı olur.",
   "TMS 7 - finansman faaliyetleri")
 
-q("Aşağıdakilerden hangileri nakit akış tablosunun bölümlerindendir?\n\nI. İşletme faaliyetleri\n\nII. Yatırım faaliyetleri\n\nIII. Finansman faaliyetleri",
-  "I, II ve III",
-  ["Yalnız I", "I ve II", "II ve III", "Yalnız III"],
-  "TMS 7: nakit akış tablosu, nakit akışlarını işletme (I), yatırım (II) ve finansman (III) faaliyetleri bazında sınıflandırarak raporlar. Üçü de tablonun bölümüdür.",
+q("Aşağıdakilerden hangileri nakit akış tablosunun bölümlerindendir?\n\nI. İşletme faaliyetleri\n\nII. Pazarlama faaliyetleri\n\nIII. Üretim faaliyetleri",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "TMS 7 nakit akışlarını işletme, yatırım ve finansman faaliyetleri olarak sınıflandırır. Bu nedenle işletme faaliyetleri (I) bir bölümken pazarlama (II) ve üretim (III) ayrı bölüm adları değildir.",
   "TMS 7 - bölümler")
 
 # ── B. Faaliyet sınıflandırması (16) ───────────────────────────────────────

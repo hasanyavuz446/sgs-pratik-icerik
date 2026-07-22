@@ -21,6 +21,21 @@ DEMO = re.compile(r"demo\s+(?:soru|açıklama)", re.IGNORECASE)
 # "Doğru cevap B." — büyük harf + sınır ara. `re.I` ile aramak "Doğru seçenek bu…"
 # içindeki b'yi cevap harfi sanar.
 SOLUTION_LETTER = re.compile(r"Doğru\s+(?:cevap|seçenek)\s+([A-E])\b")
+# Uygulamada geçmişte seçeneklerin başında ham "```text" görünmüştü. Kod çiti
+# içerik şemasının değil render katmanının işaretidir ve kullanıcıya taşınamaz.
+DISPLAY_CODE_FENCE = re.compile(r"```(?:\s*(?:text|plain|plaintext))?", re.IGNORECASE)
+CURRENT_SGS_YEAR = 2026
+SHORT_STEM_EXEMPT_LESSONS = {"matematik", "yabanci_dil"}
+NUMERIC_LEGISLATION_LESSONS = {
+    "vergi_hukuku",
+    "meslek_hukuku",
+    "is_ve_sosyal_guvenlik_hukuku",
+    "ticaret_hukuku",
+    "borclar_hukuku",
+    "maliye",
+    "muhasebe_standartlari",
+    "denetim",
+}
 
 # Çeldiricileri şişirmek için kullanılan dolgu kalıpları. Yalnız çeldiricilerde
 # görünürlerse kalıbın kendisi güvenilir bir "yanlış" işaretine dönüşür.
@@ -250,28 +265,37 @@ def tekrar_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
 
 
 def guncellik_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
-    """Yıla bağlı oran/had sızıntısı.
+    """Sayısal mevzuat bilgisinin yıl ve kaynak çıpası.
 
-    ⚠ İnce ayrım (bu kuralda iki kez yanlış pozitif ürettim; ikisi de ders):
+    Gerçek SGS; süre, ceza, artırım oranı ve parasal sınırı doğrudan sorabilir.
+    Denetimin görevi bunu yasaklamak değil, bayatlayabilecek sayıyı yıl ve birincil
+    kaynak olmadan yayıma sokmamaktır.
+
+    ⚠ İnce ayrım:
       · Oranın soru KÖKÜNDE verilmesi GÜVENLİDİR — "5.000 ₺ + %20 KDV" kayıt
         becerisini ölçer; oran değişse de soru kendi içinde tutarlı kalır.
-      · **Cevabın oran olması tek başına ihlal DEĞİLDİR.** İlk sürümüm "şıkta %
-        var, kökte yok" diye bakıp 95 uyarı üretti; örneklediğim ikisi de yanlış
-        pozitifti — "faydalı ömrü 4 yıl olanın amortisman oranı" (%25) TÜRETİLMİŞ
-        orandır, "242 İştirakler'de sahiplik oranı" (%10-50) TDHP'nin YAPISAL
-        sınırıdır. İkisi de mevzuat değişse bayatlamaz.
+      · Cevabın oran olması tek başına ihlal değildir: türetilmiş oran, TDHP'nin
+        yapısal sınırı ve "cari oran" adlı finansal rasyo ayrı değerlendirilir.
 
-    Gerçek risk dar: kök belirli bir VERGİ/HARÇ adı geçirip oranı vermiyor ve cevap
-    çıplak bir oran ise — o oranı Bakanlar Kurulu/CB kararı değiştirir, cevap ölür.
-    Bu ayrım semantiktir; regex yalnız en bariz hâli yakalar, gerisi insan işidir.
+    Regex yalnız bariz sayısal mevzuat sorularını yakalar; semantik doğruluk insan
+    incelemesindedir.
     """
     issues: list[tuple[str, str]] = []
     oran = re.compile(r"%\s?\d+(?:[,.]\d+)?|\d+(?:[,.]\d+)?\s?%")
     ciplak_oran = re.compile(r"^\s*%\s?\d+(?:[,.]\d+)?\s*$")
+    ciplak_sayisal = re.compile(
+        r"^\s*(?:%\s*)?\d+(?:[.,]\d+)?(?:\s*(?:%|gün|ay|yıl|kat|₺|tl))?\s*$",
+        re.I,
+    )
     mevzuat_orani = re.compile(
         r"\b(kdv|katma değer|özel tüketim|ötv|gelir vergisi|kurumlar vergisi|stopaj|"
         r"tevkifat|damga vergisi|gecikme zammı|gecikme faizi|yeniden değerleme|"
         r"asgari ücret|harç)\b", re.I)
+    sayisal_mevzuat = re.compile(
+        r"\b(süre|ceza|artırım|zam|oran|had|sınır|sermaye|ibraz|başvuru|bildirim|"
+        r"beyan|ödeme|zamanaşımı|hapis|para cezası|gecikme|vergi|harç)\b",
+        re.I,
+    )
     # ⚠ "cari" BİLEREK dışarıda: Türkçe muhasebede "cari oran" = current ratio
     # (Dönen Varlıklar ÷ KVYK), bir rasyonun adıdır — "hâlihazırda geçerli oran"
     # değil. Kalıba dâhil edince Mali Tablolar Analizi'nin en temel terimi 10 kez
@@ -283,14 +307,34 @@ def guncellik_sorunlari(questions: list[dict]) -> list[tuple[str, str]]:
         qid = str(question.get("id") or "<idsiz>")
         kok = question["stem"]
         cevap = question["options"][question["answer"]]
-        if (ciplak_oran.match(cevap) and mevzuat_orani.search(kok)
-                and not oran.search(kok)):
-            issues.append(("UYARI", f"{qid}: cevap çıplak bir mevzuat oranı "
-                                    f"(“{cevap.strip()}”) ve kök oranı vermiyor "
-                                    "— oran değişince soru bayatlar"))
-        if ortuk.search(kok) and not (oran.search(kok) or yil.search(kok)):
+        ders = str(question.get("ders") or "")
+        try:
+            valid_year = int(question.get("validYear"))
+        except (TypeError, ValueError):
+            valid_year = None
+        source = question.get("source") if isinstance(question.get("source"), dict) else {}
+        ref = str(source.get("legislationRef") or "").strip()
+
+        direct_rate = (ciplak_oran.match(cevap) and mevzuat_orani.search(kok)
+                       and not oran.search(kok))
+        direct_numeric = (ciplak_sayisal.match(cevap) and sayisal_mevzuat.search(kok)
+                          and (ders in NUMERIC_LEGISLATION_LESSONS
+                               or mevzuat_orani.search(kok)))
+        if direct_rate or direct_numeric:
+            if valid_year is None:
+                issues.append(("UYARI", f"{qid}: doğrudan sayısal mevzuat cevabı "
+                                        f"(“{cevap.strip()}”) `validYear` olmadan yayımlanamaz"))
+            elif valid_year < CURRENT_SGS_YEAR:
+                issues.append(("UYARI", f"{qid}: sayısal mevzuat cevabının `validYear` "
+                                        f"değeri {valid_year}; {CURRENT_SGS_YEAR} için yeniden doğrula"))
+            if not ref:
+                issues.append(("UYARI", f"{qid}: sayısal mevzuat cevabının madde/fıkra "
+                                        "düzeyinde dayanağı yok"))
+
+        if (ortuk.search(kok) and not (oran.search(kok) or yil.search(kok))
+                and valid_year is None):
             issues.append(("UYARI", f"{qid}: kök dönem/oran vermeden "
-                                    f"“{ortuk.search(kok).group(0)}” diyor"))
+                                    f"“{ortuk.search(kok).group(0)}” diyor ve `validYear` yok"))
     return issues
 
 
@@ -316,8 +360,12 @@ def boy_egilimi(questions: list[dict]) -> tuple[int, int, int]:
     for question in olcum:
         lengths = [len(v) for v in question["options"].values()]
         answer_length = len(question["options"][question["answer"]])
-        uzun += answer_length == max(lengths)
-        kisa += answer_length == min(lengths)
+        # Eşit uzunluktaki şıklar bir tahmin kuralı vermez. Beş sayısal
+        # seçeneğin de iki basamaklı olduğu bir soruda doğru seçenek teknik
+        # olarak hem en uzun hem en kısadır; ancak öğrenci uzunluğa bakarak onu
+        # diğerlerinden ayıramaz. Yalnızca TEK BAŞINA uçta olan doğru şık sayılır.
+        uzun += answer_length == max(lengths) and lengths.count(max(lengths)) == 1
+        kisa += answer_length == min(lengths) and lengths.count(min(lengths)) == 1
     return uzun * 100 // len(olcum), kisa * 100 // len(olcum), len(olcum)
 
 
@@ -384,9 +432,11 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         else:
             answers.append(answer)
 
-        visible = f"{question['stem']} {question['solution']}"
+        visible = " ".join((question["stem"], *options.values(), question["solution"]))
         if DEMO.search(visible):
             issues.append(("FATAL", f"{qid}: kullanıcıya görünen demo ifadesi"))
+        if DISPLAY_CODE_FENCE.search(visible):
+            issues.append(("FATAL", f"{qid}: kullanıcıya görünecek ham kod çiti/format etiketi"))
 
         # Çözümdeki harf atfı, şık harfleriyle kırılgan biçimde eşleşir: harf ataması
         # sonradan değişince çözüm sessizce yanlış kalır (bir konuda 46 soru böyle
@@ -405,6 +455,9 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
     if len(sequence) >= 20:
         counts = collections.Counter(sequence)
         expected = len(sequence) / 5
+        # Beklenen değer bir kota değildir. 60 soruda 13/13/12/11/11 gibi doğal
+        # sapmalar kabul edilir; yalnız adayın fark edebileceği belirgin yığılma
+        # uyarılır. Kısa periyot ve rotasyon yukarıda ayrı olarak FATAL'dir.
         if any(abs(counts[letter] - expected) > max(2, expected * 0.35) for letter in "ABCDE"):
             issues.append(("UYARI", f"cevap harfi dağılımı dengesiz: {dict(counts)}"))
 
@@ -424,7 +477,10 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
     # Aşağıdakiler İSTATİSTİKSEL; küçük örneklemde gürültü olur.
     if len(saglam) >= 20:
         ciplak, medyan = kok_profili(saglam)
-        if ciplak >= 60:
+        dersler = {str(q.get("ders") or "") for q in saglam}
+        # Matematikte kısa formül kökü, yabancı dilde kısa cümle/kelime kökü gerçek
+        # sınavın doğal biçimidir. Karakter sayısı bu iki derste bilişsel yük ölçmez.
+        if ciplak >= 60 and not dersler.intersection(SHORT_STEM_EXEMPT_LESSONS):
             issues.append(("UYARI", f"kök profili: soruların %{ciplak}'i çıplak/kısa tanım "
                                     f"(medyan {medyan} karakter); SGS uygulama ve yorum ölçer"))
 

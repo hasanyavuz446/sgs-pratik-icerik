@@ -143,10 +143,10 @@ q("Aşağıdakilerden hangileri TMS 37'ye göre karşılık ayırma koşulların
   "TMS 37 üç koşulu da BİRLİKTE arar: geçmiş olaydan doğan mevcut yükümlülük (I), kaynak çıkışının muhtemel olması (II) ve tutarın güvenilir tahmin edilebilmesi (III). Biri eksikse karşılık ayrılmaz.",
   "TMS 37 - karşılık koşulları")
 
-q("Aşağıdaki ifadelerden hangileri TMS 37 bakımından doğrudur?\n\nI. Gelecekteki faaliyet zararları için karşılık ayrılmaz\n\nII. Dezavantajlı sözleşmeler için karşılık ayrılır\n\nIII. İşletmenin gelecekteki faaliyetlerinden doğacak ve kaçınılabilen maliyetler için karşılık ayrılır",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Gelecekteki faaliyet zararları için karşılık ayrılmaz (I) ve dezavantajlı sözleşmeler için ayrılır (II). İşletme gelecekteki faaliyetini sürdürmekten kaçınarak harcamadan kaçınabiliyorsa mevcut bir yükümlülüğü yoktur; karşılık AYRILMAZ. Bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri TMS 37 bakımından doğrudur?\n\nI. Gelecekteki faaliyet zararları için karşılık ayrılmaz\n\nII. Dezavantajlı sözleşmeler için hiçbir durumda karşılık ayrılmaz\n\nIII. İşletmenin gelecekteki faaliyetlerinden doğacak ve kaçınılabilen maliyetler için karşılık ayrılır",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Gelecekteki faaliyet zararları için karşılık ayrılmaz (I). Dezavantajlı sözleşmeden doğan mevcut yükümlülük karşılık olarak muhasebeleştirildiğinden II; kaçınılabilen gelecekteki maliyetler mevcut yükümlülük yaratmadığından III yanlıştır. Yalnız I doğrudur.",
   "TMS 37 - karşılık ayrılmayan hâller")
 
 q("Bir işletmenin yönetim kurulu bir fabrikayı kapatmaya karar vermiş ancak kararı henüz kimseye duyurmamış ve uygulamaya başlamamıştır. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",

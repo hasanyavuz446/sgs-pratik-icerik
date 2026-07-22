@@ -89,10 +89,10 @@ q("Aşağıdakilerden hangileri TMS 2'ye göre stok sayılır?\n\nI. Olağan iş
   "TMS 2: stoklar; satılmak üzere elde tutulanlar (I), satılmak üzere üretilmekte olanlar (II) ve üretim/hizmet sürecinde kullanılacak ilk madde ve malzemeler (III) olarak üç grupta tanımlanır. Üçü de stoktur.",
   "TMS 2 - stok tanımı")
 
-q("Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. Stoklar maliyet ile NGD'den düşük olanıyla ölçülür\n\nII. NGD işletmeye özgü bir tutardır\n\nIII. Yatırım amaçlı gayrimenkuller stok sayılır",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Stoklar maliyet ile NGD'den düşük olanıyla ölçülür (I) ve NGD işletmeye özgüdür (II). Yatırım amaçlı gayrimenkuller ise TMS 40 kapsamındadır, stok değildir; bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. Stoklar maliyet ile NGD'den düşük olanıyla ölçülür\n\nII. NGD işletmeye özgü olmayan, piyasa esaslı bir tutardır\n\nIII. Yatırım amaçlı gayrimenkuller stok sayılır",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Stoklar maliyet ile net gerçekleşebilir değerden düşük olanıyla ölçülür (I). NGD işletmeye özgü bir tutardır; bu nedenle II yanlıştır. Yatırım amaçlı gayrimenkuller de TMS 40 kapsamındadır (III). Yalnız I doğrudur.",
   "TMS 2 - ölçüm ve kapsam")
 
 sf, tam, sat = 80_000, 6_000, 4_000

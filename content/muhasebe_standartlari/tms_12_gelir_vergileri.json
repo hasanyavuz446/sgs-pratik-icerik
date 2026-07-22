@@ -311,7 +311,7 @@
     "id": "std-tms12-gen-0015",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. İndirilebilir geçici fark ertelenmiş vergi borcu doğurur\n\nII. Geçici fark, defter değeri ile vergiye esas değer arasındaki farktır\n\nIII. Vergiye tabi geçici fark ertelenmiş vergi borcu doğurur",
+    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. Geçici fark, defter değeri ile vergiye esas değer arasındaki farktır\n\nII. Vergiye tabi geçici fark ertelenmiş vergi varlığı doğurur\n\nIII. İndirilebilir geçici fark ertelenmiş vergi borcu doğurur",
     "options": {
       "A": "I ve II",
       "B": "I, II ve III",
@@ -319,8 +319,8 @@
       "D": "II ve III",
       "E": "Yalnız III"
     },
-    "answer": "D",
-    "solution": "Geçici fark defter değeri ile vergiye esas değer arasındaki farktır (II) ve vergiye tabi geçici fark ertelenmiş vergi BORCU doğurur (III). İndirilebilir geçici fark ise ertelenmiş vergi VARLIĞI doğurur; bu nedenle I yanlıştır. Doğru cevap D.",
+    "answer": "C",
+    "solution": "Geçici fark defter değeri ile vergiye esas değer arasındaki farktır (I). Vergiye tabi geçici fark ertelenmiş vergi borcu doğurduğundan II; indirilebilir geçici fark ertelenmiş vergi varlığı doğurduğundan III yanlıştır. Yalnız I doğrudur. Doğru cevap C.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
@@ -338,7 +338,7 @@
       "B": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
       "A": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
       "C": "Hiçbir geçici fark doğmaz; iki değer arasındaki fark dikkate alınmaz",
-      "D": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "D": "Vergiye tabi geçici fark doğar; ancak ertelenmiş vergi varlığı muhasebeleştirilir",
       "E": "Fark yalnızca varlık satıldığında dikkate alınır; elde tutuldukça ertelenmiş vergi doğmaz"
     },
     "answer": "B",
@@ -712,7 +712,7 @@
       "B": "Defter değeri vergiye esas değerden yüksek olur; vergiye tabi geçici fark ve ertelenmiş vergi borcu doğar",
       "A": "Defter değeri vergiye esas değerden düşük olur; ertelenmiş vergi varlığı doğur",
       "C": "Hiçbir geçici fark doğmaz; amortisman farkları dikkate alınmaz",
-      "D": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "D": "Defter değeri vergiye esas değerden yüksek olur; indirilebilir geçici fark ve ertelenmiş vergi varlığı doğar",
       "E": "Defter değeri vergiye esas değerin altında kalır; indirilebilir fark ve ertelenmiş vergi varlığı doğar"
     },
     "answer": "B",
@@ -734,7 +734,7 @@
       "E": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
       "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
       "B": "Hiçbir geçici fark doğmaz; karşılıklar vergisel açıdan dikkate alınmaz",
-      "C": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "C": "İndirilebilir geçici fark doğar; ancak ertelenmiş vergi borcu muhasebeleştirilir",
       "D": "Kalıcı fark doğurur; bu nedenle ertelenmiş vergi hesaplanmaz"
     },
     "answer": "E",
@@ -1217,7 +1217,7 @@
     "options": {
       "E": "İndirilebilir geçici fark doğar; koşullar sağlanıyorsa ertelenmiş vergi varlığı kaydedilir",
       "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu kaydedilir",
-      "B": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "B": "İndirilebilir geçici fark doğar; ancak sonuç olarak ertelenmiş vergi borcu kaydedilir",
       "C": "Hiçbir fark doğmaz; karşılıklar vergisel açıdan hiç dikkate alınmaz",
       "D": "Kalıcı fark doğar; karşılık vergisel olarak hiç indirilemeyeceğinden ertelenmiş vergi hesaplanmaz"
     },
@@ -1240,7 +1240,7 @@
       "C": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
       "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
       "B": "Hiçbir geçici fark doğmaz; iki değer arasındaki fark dikkate alınmaz",
-      "D": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "D": "Fark indirilebilir niteliktedir; buna rağmen ertelenmiş vergi borcu muhasebeleştirilir",
       "E": "Fark doğrudan özkaynaklarda muhasebeleştirilir; kâr veya zararı hiç etkilemez"
     },
     "answer": "C",
@@ -1262,7 +1262,7 @@
       "D": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
       "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
       "B": "Hiçbir geçici fark doğmaz; borçlarda geçici fark söz konusu olmaz",
-      "C": "Sürekli fark doğar; hiçbir hâlde ertelenmiş vergi muhasebeleştirilmez",
+      "C": "İndirilebilir geçici fark doğar; fakat sonuç ertelenmiş vergi borcudur",
       "E": "Borçlarda geçici fark doğmaz; geçici fark yalnızca varlıklar için hesaplanır"
     },
     "answer": "D",

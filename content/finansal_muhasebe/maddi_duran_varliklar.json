@@ -157,20 +157,20 @@
     "id": "finmuh-mdv-gen-0008",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "İşletmenin faaliyetinde kullandığı kamyon, otomobil gibi kara/deniz/hava ulaşım araçları Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "İşletme, aynı üretim hattında birlikte çalışacak beş adet cihazı 2026 yılında ayrı ayrı KDV hariç 3.000 ₺'ye satın almıştır. Cihazlar iktisadi ve teknik bakımdan bir bütün oluşturduğuna göre VUK 313'teki 12.000 ₺ doğrudan gider yazma sınırı bakımından nasıl işlem yapılır?",
     "options": {
-      "A": "253 Tesis, Makine ve Cihazlar",
-      "B": "255 Demirbaşlar",
-      "C": "254 Taşıtlar",
-      "D": "256 Diğer Maddi Duran Varlıklar",
-      "E": "252 Binalar"
+      "A": "Her cihaz ayrı değerlendirildiğinden 15.000 ₺'nin tamamı doğrudan gider yazılır.",
+      "B": "Yalnız ilk dört cihaz doğrudan gider yazılır, beşinci cihaz amortismana tabi tutulur.",
+      "C": "Toplam 15.000 ₺ sınırı aştığından cihazlar topluca amortismana tabi tutulur.",
+      "D": "Sınır KDV dâhil 20.000 ₺ olduğundan doğrudan gider yazılır.",
+      "E": "Teknik bütünlük yalnız binalarda dikkate alındığından cihazlar kayda alınmaz."
     },
     "answer": "C",
-    "solution": "İşletmenin ulaşım/taşıma amacıyla kullandığı araçlar **254 Taşıtlar** hesabında izlenir.",
+    "solution": "VUK 313 uyarınca iktisadi ve teknik bakımdan bütünlük arz eden kıymetlerde had **topluca** dikkate alınır. Beş cihazın toplam değeri 5 × 3.000 = **15.000 ₺** olup 2026 yılı için 12.000 ₺ sınırını aştığından doğrudan gider yazılamaz; amortismana tabi tutulur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 254 Taşıtlar"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "213 sayılı VUK md. 313; 588 Sıra No.lu VUK Genel Tebliği (2026 haddi: 12.000 TL)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "finmuh-mdv-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "İşletmenin büro ve iş yerlerinde kullandığı masa, sandalye, bilgisayar gibi varlıklar Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "TMS 16'ya göre bir maddi duran varlık kaleminin finansal tablolara alınabilmesi için aşağıdaki koşullardan hangilerinin birlikte sağlanması gerekir?",
     "options": {
-      "A": "252 Binalar",
-      "B": "253 Tesis, Makine ve Cihazlar",
-      "C": "254 Taşıtlar",
-      "D": "150 İlk Madde ve Malzeme",
-      "E": "255 Demirbaşlar"
+      "A": "Yalnız varlığın fiziken işletmeye teslim edilmiş olması",
+      "B": "Varlığın bedelinin tamamen nakden ödenmiş olması ve hiç borç kalmaması",
+      "C": "Varlığın mutlaka işletme tarafından üretilmiş olması",
+      "D": "Varlığın piyasa fiyatının her gün yayımlanması ve satılmasının planlanması",
+      "E": "Gelecekteki ekonomik yararların işletmeye aktarılmasının muhtemel olması ve maliyetin güvenilir ölçülebilmesi"
     },
     "answer": "E",
-    "solution": "İşletmenin büro/iş yeri döşeme ve teçhizatı (masa, sandalye, bilgisayar vb.) **255 Demirbaşlar** hesabında izlenir.",
+    "solution": "TMS 16'ya göre bir maddi duran varlık; ilgili gelecekteki ekonomik yararların işletmeye aktarılmasının **muhtemel olması** ve maliyetinin **güvenilir biçimde ölçülebilmesi** koşulları birlikte sağlandığında finansal tablolara alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 255 Demirbaşlar"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16 Maddi Duran Varlıklar, par. 7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-mdv-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 150.000 ₺ olan bir makine, faydalı ömrü 5 yıl kabul edilerek normal (eşit tutarlı) amortisman yöntemine göre amortismana tabi tutulmaktadır. Yıllık amortisman tutarı kaç ₺'dir?",
+    "stem": "TMS 16 uygulayan işletme, maliyeti 150.000 ₺ ve tahmini kalıntı değeri 10.000 ₺ olan makineyi 5 yıl yararlı ömürle doğrusal amortismana tabi tutacaktır. Yıllık amortisman tutarı kaç ₺'dir?",
     "options": {
-      "A": "15.000",
-      "B": "150.000",
-      "C": "37.500",
-      "D": "75.000",
-      "E": "30.000"
+      "A": "10.000",
+      "B": "15.000",
+      "C": "25.000",
+      "D": "30.000",
+      "E": "28.000"
     },
     "answer": "E",
-    "solution": "Normal amortismanda yıllık tutar = Maliyet ÷ Faydalı ömür = 150.000 ÷ 5 = **30.000 ₺** (yani yıllık %20 oran). Her yıl eşit tutar ayrılır.",
+    "solution": "Amortismana tabi tutar = Maliyet − Kalıntı değer = 150.000 − 10.000 = **140.000 ₺**. Doğrusal yöntemde yıllık amortisman 140.000 ÷ 5 = **28.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-normal amortisman; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 315 (normal amortisman)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 6, 50 ve 53"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "finmuh-mdv-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Normal amortisman yönteminde, faydalı ömrü 4 yıl olan bir maddi duran varlığın yıllık amortisman oranı yüzde kaçtır?",
+    "stem": "Maliyeti 500.000 ₺, kalıntı değeri 20.000 ₺ ve toplam üretim kapasitesi 120.000 birim olan bir makineye TMS 16 kapsamında üretim miktarı yöntemi uygulanmaktadır. Dönemde 30.000 birim üretildiğine göre amortisman tutarı kaç ₺'dir?",
     "options": {
-      "A": "%10",
-      "B": "%20",
-      "C": "%40",
-      "D": "%25",
-      "E": "%50"
+      "A": "100.000",
+      "B": "125.000",
+      "C": "150.000",
+      "D": "120.000",
+      "E": "480.000"
     },
     "answer": "D",
-    "solution": "Normal amortisman oranı = 1 ÷ Faydalı ömür = 1 ÷ 4 = **%25**. Her yıl maliyetin %25'i amortisman ayrılır.",
+    "solution": "Amortismana tabi tutar 500.000 − 20.000 = **480.000 ₺**dir. Dönemde kapasitenin 30.000/120.000 = %25'i kullanılmıştır. Amortisman 480.000 × %25 = **120.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-oran; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 315"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 50 ve 62"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "finmuh-mdv-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 100.000 ₺ olan bir makine için bugüne kadar toplam 40.000 ₺ amortisman ayrılmıştır (257'de birikmiştir). Bu makinenin net defter değeri kaç ₺'dir?",
+    "stem": "Bir makinenin değer düşüklüğü öncesi defter değeri 100.000 ₺, TMS 36'ya göre belirlenen geri kazanılabilir tutarı 75.000 ₺'dir. Değer düşüklüğü zararı ve işlem sonrası defter değeri sırasıyla kaç ₺ olur?",
     "options": {
-      "A": "140.000",
-      "B": "100.000",
-      "C": "40.000",
-      "D": "60.000",
-      "E": "0"
+      "A": "75.000; 25.000",
+      "B": "100.000; 75.000",
+      "C": "25.000; 100.000",
+      "D": "25.000; 75.000",
+      "E": "Zarar oluşmaz; 100.000"
     },
     "answer": "D",
-    "solution": "Net defter değeri = Maliyet − Birikmiş amortisman = 100.000 − 40.000 = **60.000 ₺**. Bilançoda makine bu net değerle (253 − 257) gösterilir.",
+    "solution": "Defter değeri geri kazanılabilir tutarı aştığında fark kadar değer düşüklüğü zararı doğar: 100.000 − 75.000 = **25.000 ₺**. Zarar sonrasında varlığın defter değeri **75.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-NDD; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Net defter değeri (253-257)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 63; TMS 36 Varlıklarda Değer Düşüklüğü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-mdv-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Dönem sonunda maddi duran varlıklar için amortisman ayrılmasının, işletmenin dönem kârına etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Üretim tesisindeki bir makinenin dönem amortismanı, üretilen fakat henüz satılmamış mamullerle doğrudan ilgilidir. TMS 16 ve TMS 2'ye göre bu amortisman öncelikle nasıl muhasebeleştirilir?",
     "options": {
-      "A": "Dönem kârını artırır.",
-      "B": "Dönem kârını etkilemez.",
-      "C": "Dönem kârını azaltır (gider yazıldığı için).",
-      "D": "Yalnızca bilançoyu etkiler, gelir tablosunu etkilemez.",
-      "E": "Sermayeyi doğrudan artırır."
+      "A": "Daima finansman gideri olarak",
+      "B": "Doğrudan geçmiş yıl zararlarına aktarılarak",
+      "C": "Mamul stoklarının dönüştürme maliyetine dâhil edilerek",
+      "D": "Makinenin maliyetinden doğrudan düşülerek",
+      "E": "Satış gerçekleşene kadar hiç kaydedilmeyerek"
     },
     "answer": "C",
-    "solution": "Amortisman bir **giderdir** (770/730/760 vb.); dönem kârını **azaltır**. Aynı zamanda 257 Birikmiş Amortismanlar aracılığıyla varlığın net defter değerini düşürür.",
+    "solution": "Bir varlığın ekonomik yararları başka bir varlığın üretiminde tüketiliyorsa amortisman o varlığın maliyetine dâhil edilir. Üretim makinesinin amortismanı, ilgili mamullerin **dönüştürme maliyetinin** bir unsurudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-yorum; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - amortismanın sonuca etkisi"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 48-49; TMS 2 Stoklar"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "finmuh-mdv-gen-0020",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "İşletmenin maddi duran varlıkları bilançoda hangi değerle (net) gösterilir?",
+    "stem": "TMS 16'ya göre maddi duran varlıkların ilk muhasebeleştirmeden sonraki ölçümünde aşağıdaki politikalardan hangileri seçilebilir?",
     "options": {
-      "A": "Maliyet bedeli − Birikmiş amortisman (257)",
-      "B": "Maliyet bedeli + Birikmiş amortisman",
-      "C": "Yalnızca birikmiş amortisman",
-      "D": "Piyasa (satış) değeri",
-      "E": "Nominal değer"
+      "A": "Maliyet modeli veya yeniden değerleme modeli; seçilen politika ilgili varlık sınıfının tamamına uygulanır.",
+      "B": "Yalnız nominal değer modeli",
+      "C": "Her varlık için her yıl serbestçe değiştirilen piyasa modeli",
+      "D": "Yalnız vergi değeri modeli",
+      "E": "Sadece net gerçekleşebilir değer modeli"
     },
     "answer": "A",
-    "solution": "Maddi duran varlıklar bilançoda **Maliyet bedeli − 257 Birikmiş Amortismanlar (-)** biçiminde net defter değeriyle gösterilir; 257 aktifi düzenleyici olduğundan düşülür.",
+    "solution": "TMS 16, muhasebe politikası olarak **maliyet modeli** ile **yeniden değerleme modeli** arasında seçim yapılmasına izin verir. Seçilen politika tek tek seçilmiş varlıklara değil, ilgili maddi duran varlık **sınıfının tamamına** uygulanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-bilanço; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - MDV net gösterim"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 29-31 ve 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "finmuh-mdv-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 240.000 ₺ olan bir makine, faydalı ömrü 8 yıl kabul edilerek normal amortisman yöntemiyle amortismana tabi tutulmaktadır. 2 tam yıl amortisman ayrıldıktan sonra makinenin net defter değeri kaç ₺'dir?",
+    "stem": "İşletme 1 Ocak'ta 120.000 ₺'ye aldığı makineyi montaj tamamlandıktan sonra 1 Nisan'da yönetimin amaçladığı biçimde kullanıma hazır hâle getirmiştir. Kalıntı değer sıfır, yararlı ömür 5 yıldır. TMS 16'ya göre ilk yıl doğrusal amortisman tutarı kaç ₺'dir?",
     "options": {
-      "A": "240.000",
-      "B": "180.000",
-      "C": "210.000",
-      "D": "60.000",
-      "E": "30.000"
+      "A": "24.000",
+      "B": "18.000",
+      "C": "12.000",
+      "D": "9.000",
+      "E": "Amortisman ayrılmaz."
     },
     "answer": "B",
-    "solution": "Yıllık amortisman = 240.000 ÷ 8 = 30.000 ₺. 2 yıl → birikmiş = 2 × 30.000 = 60.000 ₺. Net defter değeri = 240.000 − 60.000 = **180.000 ₺**.",
+    "solution": "TMS 16'da amortisman satın alma tarihinde değil, varlık **kullanılabilir olduğunda** başlar. Yıllık amortisman 120.000 ÷ 5 = 24.000 ₺; 1 Nisan-31 Aralık arasındaki 9 ay için 24.000 × 9/12 = **18.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-NDD; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 315 (normal amortisman)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 55"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "finmuh-mdv-gen-0024",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 200.000 ₺, faydalı ömrü 5 yıl olan bir makineye azalan bakiyeler yöntemi (oran %40) uygulanmaktadır. Birinci yıl 80.000 ₺ amortisman ayrılmıştır. İkinci yıl ayrılacak amortisman tutarı kaç ₺'dir?",
+    "stem": "Doğrusal amortisman uygulanan bir makine geçici olarak üretim dışında bırakılmış, ancak satış amaçlı elde tutulan varlık olarak sınıflandırılmamış ve tamamen itfa olmamıştır. TMS 16'ya göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "80.000",
-      "B": "24.000",
-      "C": "40.000",
-      "D": "32.000",
-      "E": "48.000"
+      "A": "Makine atıl kaldığı gün finansal tablo dışı bırakılır.",
+      "B": "Önceki dönem amortismanlarının tamamı iptal edilir.",
+      "C": "Makine yeniden kullanılana kadar yararlı ömrü otomatik uzatılır.",
+      "D": "Amortisman yalnız piyasa değeri düşerse ayrılır.",
+      "E": "Geçici atıl kalma tek başına amortismanı durdurmaz."
     },
     "answer": "E",
-    "solution": "İkinci yıl, kalan net değer üzerinden hesaplanır: Kalan = 200.000 − 80.000 = 120.000 ₺. İkinci yıl amortisman = 120.000 × %40 = **48.000 ₺**.",
+    "solution": "TMS 16'ya göre amortisman, varlık tamamen itfa olmadıkça yalnızca atıl kalması veya kullanımdan geçici çekilmesi nedeniyle durmaz. Üretim miktarı yöntemi kullanılıyorsa üretim olmayan dönemde tutar sıfır olabilir; soruda doğrusal yöntem uygulanmaktadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-azalan bakiyeler 2.yıl; sınav stiline kalibre)",
-      "legislationRef": "VUK mükerrer md. 315"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 55"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-mdv-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Kayıtlı maliyeti 80.000 ₺, birikmiş amortismanı 30.000 ₺ olan bir demirbaş 35.000 ₺'ye satılmıştır. Bu satıştan doğan kâr veya zarar kaç ₺'dir?",
+    "stem": "Bir makinenin önemli bir parçası yenilenmiştir. Yeni parçanın maliyeti 70.000 ₺, yenilenen eski parçanın defter değeri 40.000 ₺'dir ve eski parçadan tahsilat yoktur. TMS 16'ya göre işlemin etkisi hangisidir?",
     "options": {
-      "A": "15.000 ₺ kâr",
-      "B": "15.000 ₺ zarar",
-      "C": "45.000 ₺ zarar",
-      "D": "5.000 ₺ kâr",
-      "E": "30.000 ₺ zarar"
+      "A": "Yeni parça gider yazılır, eski parça kayıtlarda bırakılır.",
+      "B": "Yeni parça aktifleştirilir; eski parçanın 40.000 ₺ defter değeri finansal tablo dışı bırakılır.",
+      "C": "Yalnız eski parçanın birikmiş amortismanı artırılır.",
+      "D": "Yeni ve eski parçalar birlikte stok hesabına aktarılır.",
+      "E": "Yenileme nedeniyle makinenin tamamı finansal tablo dışı bırakılır."
     },
     "answer": "B",
-    "solution": "Net defter değeri = 80.000 − 30.000 = 50.000 ₺. Satış 35.000 ₺ < NDD 50.000 ₺ → **15.000 ₺ zarar** (689 Diğer Olağandışı Gider ve Zararlar).",
+    "solution": "Muhasebeleştirme koşulları sağlandığında yeni parçanın **70.000 ₺ maliyeti aktifleştirilir**. Yerine takılan eski parçanın **40.000 ₺ defter değeri** ise finansal tablo dışı bırakılır; tahsilat olmadığından bu tutar kayıp oluşturur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-MDV satış zarar; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 689 / MDV satışı"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 13 ve 67-71"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "finmuh-mdv-gen-0029",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Bir maddi duran varlığın satışından doğan kâr veya zarar nasıl hesaplanır?",
+    "stem": "İşletme 500.000 ₺'ye aldığı bir tesisi kullanımı sonunda söküp alanı eski hâline getirmekle yükümlüdür. İlk kayıtta bu yükümlülüğün bugünkü değeri 60.000 ₺ olarak güvenilir biçimde ölçülmüştür. TMS 16'ya göre tesisin başlangıç maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Satış bedeli − Kayıtlı maliyet bedeli (birikmiş amortisman dikkate alınmaz)",
-      "B": "Kayıtlı maliyet bedeli − Birikmiş amortisman (yani net defter değerinin kendisi)",
-      "C": "Satış bedeli − Net defter değeri (Maliyet − Birikmiş amortisman)",
-      "D": "Satış bedeli − Birikmiş amortisman (kayıtlı maliyet dikkate alınmadan)",
-      "E": "Kayıtlı maliyet bedeli − Satış bedeli (net defter değeri hesaba katılmadan)"
+      "A": "440.000",
+      "B": "500.000",
+      "C": "560.000",
+      "D": "60.000",
+      "E": "Yükümlülük yalnız ödeme tarihinde dikkate alınır."
     },
     "answer": "C",
-    "solution": "MDV satış kâr/zararı = **Satış bedeli − Net defter değeri**; net defter değeri = Maliyet − Birikmiş amortisman (257). Satış > NDD ise kâr (679), satış < NDD ise zarar (689).",
+    "solution": "TMS 16'da sökme, taşıma ve alanı restore etme yükümlülüğünün başlangıçtaki tahmini maliyeti varlığın maliyetine dâhildir. Başlangıç maliyeti 500.000 + 60.000 = **560.000 ₺** olur; karşılığında bir yükümlülük muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-formül; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - MDV satış kâr/zararı"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 16(c); TMS 37"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "finmuh-mdv-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Bir maddi duran varlığın net defter değerinin altında bir bedelle satılması sonucu doğan zarar, Tekdüzen Hesap Planı'nda hangi hesaba kaydedilir?",
+    "stem": "İşletme, yeniden değerleme modelini makine sınıfına uygulamaktadır. Aynı sınıftaki on makineden yalnız piyasa değeri en çok artan iki makineyi yeniden değerlemek istemektedir. TMS 16'ya göre doğru işlem hangisidir?",
     "options": {
-      "A": "621 Satılan Ticari Mallar Maliyeti",
-      "B": "679 Diğer Olağandışı Gelir ve Kârlar",
-      "C": "689 Diğer Olağandışı Gider ve Zararlar",
-      "D": "654 Karşılık Giderleri",
-      "E": "770 Genel Yönetim Giderleri"
+      "A": "Yalnız iki makine yeniden değerlenir; diğerleri maliyette bırakılır.",
+      "B": "Yeniden değerleme yalnız tamamen amorti edilmiş makinelerde yapılabilir.",
+      "C": "Seçici değerleme yapılamaz; makine sınıfının tamamı yeniden değerlenir.",
+      "D": "Değer artışı olan makineler stoklara aktarılır.",
+      "E": "Yeniden değerleme modeli maddi duran varlıklarda hiçbir zaman kullanılamaz."
     },
     "answer": "C",
-    "solution": "Maddi duran varlık satış **zararı**, olağandışı bir işlem sayılarak **689 Diğer Olağandışı Gider ve Zararlar** hesabına borç kaydedilir.",
+    "solution": "Bir sınıf içinden yalnız değer artışı yüksek kalemleri seçmek finansal tabloları farklı tarihlere ait maliyet ve değerlerin karışımı hâline getirir. TMS 16'ya göre bir kalem yeniden değerlendiğinde ilgili **varlık sınıfının tamamı** yeniden değerlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 689"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 36 ve 38"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "finmuh-mdv-gen-0034",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maddi duran varlık ediniminde kullanılan banka kredisinin faizleri ile ilgili genel kural aşağıdakilerden hangisidir?",
+    "stem": "İşletme, banka kredisiyle aldığı makineyi 2026 yılında envanterine kaydetmiştir. Kredi nedeniyle 2026 hesap döneminde 40.000 ₺, 2027 hesap döneminde 30.000 ₺ faiz oluşmuştur. VUK uygulamasında bu faizlerin maliyet veya gider olarak dikkate alınmasıyla ilgili doğru seçenek hangisidir?",
     "options": {
-      "A": "Varlık ediniminde kullanılan kredinin faizlerinin tamamı, hangi döneme ait olursa olsun istisnasız biçimde doğrudan dönem gideri olarak kaydedilir.",
-      "B": "Varlığın aktifleştirildiği (kullanıma hazır hâle geldiği) döneme kadar oluşan faizler maliyete eklenir; sonraki dönem faizleri ise gider yazılabilir.",
-      "C": "Maddi duran varlık ediniminde kullanılan kredinin faizleri muhasebe kayıtlarında hiçbir şekilde dikkate alınmaz ve gider ya da maliyet unsuru sayılmaz.",
-      "D": "Varlık ediniminde kullanılan kredinin faizlerinin tamamı, aktifleştirmeden sonraki dönemler dâhil olmak üzere zorunlu olarak varlığın maliyetine eklenir.",
-      "E": "Varlık ediniminde kullanılan kredinin faizleri, gider yazılmak yerine doğrudan 257 Birikmiş Amortismanlar hesabına eklenerek net defter değerinden düşülür."
+      "A": "Her iki yılın faizi de zorunlu olarak doğrudan gider yazılır.",
+      "B": "2026 faizi maliyete eklenir; 2027 faizi için doğrudan gider yazma veya maliyete ekleme seçeneği vardır.",
+      "C": "Yalnız 2027 faizi maliyete eklenir, 2026 faizi kayda alınmaz.",
+      "D": "Her iki yılın faizi de zorunlu olarak 257 Birikmiş Amortismanlar hesabına yazılır.",
+      "E": "Faizler makinenin maliyetiyle hiçbir koşulda ilişkilendirilemez."
     },
     "answer": "B",
-    "solution": "Genel kurala göre MDV'nin **aktifleştirildiği (kullanıma hazır olduğu) döneme kadar** oluşan kredi faizleri **maliyete eklenir**; izleyen dönemlere ait faizler ise maliyete eklenebileceği gibi doğrudan gider de yazılabilir.",
+    "solution": "Sabit kıymetin envantere alındığı hesap döneminin sonuna kadar oluşan kredi faizinin maliyete eklenmesi zorunludur; bu nedenle **2026 yılına ait 40.000 ₺ maliyete eklenir**. Sonraki dönem faizleri için mükellef, tercihini tutarlı uygulamak üzere doğrudan gider yazma veya maliyete ekleme yolunu seçebilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (mevzuat; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 262 / 163-334 s. Tebliğ (kredi faizi)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "213 sayılı VUK md. 262; 163 Sıra No.lu VUK Genel Tebliği"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-mdv-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Azalan bakiyeler amortisman yönteminin, normal amortisman yöntemine göre en belirgin özelliği aşağıdakilerden hangisidir?",
+    "stem": "Daha önce yeniden değerleme azalışı bulunmayan bir binanın defter değeri, TMS 16 yeniden değerleme modeli kapsamında 800.000 ₺'den 950.000 ₺'ye çıkarılmıştır. 150.000 ₺ tutarındaki artış nasıl muhasebeleştirilir?",
     "options": {
-      "A": "Varlığın faydalı ömrü boyunca toplamda daha az amortisman ayrılmasını ve maliyetin bir kısmının hiç itfa edilmemesini sağlar.",
-      "B": "Normalde amortismana tabi olmayan arsa ve arazilerin de, diğer varlıklar gibi amortismana tabi tutulabilmesini sağlar.",
-      "C": "Varlığın faydalı ömrü boyunca her yıl birbirine eşit ve değişmeyen sabit tutarlarda amortisman gideri ayrılmasını sağlar.",
-      "D": "Varlığın faydalı ömrünü kanunda öngörülenin ötesine uzatarak amortisman süresinin daha uzun bir döneme yayılmasını sağlar.",
-      "E": "Varlığın ilk yıllarında daha yüksek, sonraki yıllarında daha düşük amortisman gideri ayrılmasını sağlar."
+      "A": "Satış hasılatı olarak",
+      "B": "Finansman geliri olarak",
+      "C": "Binanın maliyetinden düşülerek",
+      "D": "Tamamı geçmiş yıl zararlarına aktarılarak",
+      "E": "Diğer kapsamlı gelirde ve özkaynakta yeniden değerleme artışı olarak"
     },
     "answer": "E",
-    "solution": "Azalan bakiyeler (hızlandırılmış) yöntemi, **ilk yıllarda daha yüksek**, sonraki yıllarda daha düşük amortisman gideri doğurur. Toplam ayrılan amortisman her iki yöntemde de maliyete eşittir; yalnızca yıllara dağılımı farklıdır.",
+    "solution": "Aynı varlıkla ilgili daha önce kâr veya zarara alınmış bir yeniden değerleme azalışı bulunmadığından 150.000 ₺ artış **diğer kapsamlı gelirde** muhasebeleştirilir ve özkaynakta **yeniden değerleme değer artışı** olarak birikir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "VUK mükerrer md. 315"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 39"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "finmuh-mdv-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "İşletmeye bağış (karşılıksız) yoluyla intikal eden bir maddi duran varlık, Vergi Usul Kanunu'na göre hangi değerle kayıtlara alınır?",
+    "stem": "TMS 16 kapsamında ticari özü bulunan bir takas işleminde, verilen ve alınan varlığın gerçeğe uygun değerleri güvenilir biçimde ölçülebilmektedir. Alınan maddi duran varlığın maliyeti kural olarak hangi değerle ölçülür?",
     "options": {
-      "A": "Nominal (itibari) değeriyle",
-      "B": "Yalnızca birikmiş amortismanı kadar",
-      "C": "Sıfır değerle (kayda alınmaz)",
-      "D": "Rayiç (emsal) bedeliyle",
-      "E": "İz bedeliyle (1 ₺)"
+      "A": "Gerçeğe uygun değerle; ticari öz yoksa veya değer güvenilir ölçülemiyorsa verilen varlığın defter değeriyle",
+      "B": "Yalnız alınan varlığın nominal değeriyle",
+      "C": "Verilen varlığın ilk satın alma bedeliyle",
+      "D": "Her durumda sıfır değerle",
+      "E": "Yalnız vergi matrahıyla"
     },
-    "answer": "D",
-    "solution": "Bedelsiz (bağış) olarak edinilen maddi duran varlıklar, bir bedelle satın alınmadığından **rayiç (emsal) bedeliyle** değerlenerek kayıtlara alınır ve bu değer üzerinden amortismana tabi tutulur.",
+    "answer": "A",
+    "solution": "TMS 16'da ticari özü bulunan ve gerçeğe uygun değeri güvenilir ölçülebilen takaslarda alınan varlık **gerçeğe uygun değerle** ölçülür. İşlem ticari öz taşımıyorsa veya ne alınan ne verilen varlığın gerçeğe uygun değeri güvenilir ölçülebiliyorsa verilen varlığın defter değeri esas alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (mevzuat-değerleme; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 267 (rayiç/emsal bedel)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 24-26"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-mdv-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 360.000 ₺, faydalı ömrü 6 yıl olan bir makine normal amortisman yöntemiyle amortismana tabi tutulmaktadır. 3 tam yıl sonunda '257 Birikmiş Amortismanlar' hesabının bakiyesi kaç ₺'dir?",
+    "stem": "TMS 16'ya göre aşağıdaki amortisman yöntemlerinden hangisi, varlığın ekonomik yararlarının tüketim biçimini genellikle yansıtmadığı için uygun kabul edilmez?",
     "options": {
-      "A": "60.000",
-      "B": "180.000",
-      "C": "120.000",
-      "D": "240.000",
-      "E": "360.000"
+      "A": "Doğrusal amortisman yöntemi",
+      "B": "Varlığın kullanıldığı faaliyetten elde edilen hasılata dayalı yöntem",
+      "C": "Üretim miktarı yöntemi",
+      "D": "Azalan bakiyeler yöntemi",
+      "E": "Beklenen tüketim biçimini yansıtan sistematik yöntem"
     },
     "answer": "B",
-    "solution": "Yıllık amortisman = 360.000 ÷ 6 = 60.000 ₺. 3 yıl → Birikmiş amortisman = 3 × 60.000 = **180.000 ₺** (257 hesabının alacak bakiyesi).",
+    "solution": "Hasılat; satış fiyatı, diğer girdiler ve enflasyon gibi varlığın tüketiminden bağımsız unsurlardan etkilenir. Bu nedenle varlığın kullanımından elde edilen **hasılata dayalı amortisman yöntemi** TMS 16'ya göre uygun değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-birikmiş amortisman; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 315; 1 Sıra No'lu MSUGT - 257"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 62A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "finmuh-mdv-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "İşletme bir üretim makinesini 400.000 ₺'ye almış; montaj için 30.000 ₺, kullanıma hazır hâle getirmek için yapılan zorunlu deneme üretimi için 20.000 ₺ ödemiştir (tutarlar KDV hariç). Makinenin '253 Tesis, Makine ve Cihazlar' hesabına kaydedilecek maliyeti kaç ₺'dir?",
+    "stem": "İşletme 400.000 ₺'ye aldığı makine için 30.000 ₺ montaj ve 20.000 ₺ çalışma testi maliyetine katlanmıştır. Test sırasında üretilen örneklerin satışından 8.000 ₺ gelir elde edilmiş, bu örneklerin maliyeti 5.000 ₺ olmuştur. TMS 16'ya göre makinenin maliyeti kaç ₺'dir?",
     "options": {
-      "A": "400.000",
-      "B": "420.000",
-      "C": "430.000",
+      "A": "437.000",
+      "B": "442.000",
+      "C": "445.000",
       "D": "450.000",
-      "E": "470.000"
+      "E": "458.000"
     },
     "answer": "D",
-    "solution": "Varlığı kullanıma hazır hâle getirmek için katlanılan montaj ve zorunlu deneme üretimi giderleri maliyete dâhildir: 400.000 + 30.000 + 20.000 = **450.000 ₺**.",
+    "solution": "Satın alma, montaj ve çalışma testi maliyetleri 400.000 + 30.000 + 20.000 = **450.000 ₺** olarak aktifleştirilir. Amaçlanan kullanım öncesinde üretilen örneklerden doğan **8.000 ₺ gelir ile 5.000 ₺ maliyet kâr veya zararda ayrı muhasebeleştirilir**; varlığın maliyetinden netleştirilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-maliyet; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 269-270; TMS 16 (maliyet unsurları)"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 17(e) ve 20A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-mdv-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 100.000 ₺, faydalı ömrü 5 yıl olan bir makineye azalan bakiyeler yöntemi (oran %40) uygulanmaktadır. Üçüncü yıl ayrılacak amortisman tutarı kaç ₺'dir?",
+    "stem": "Bir uçağın toplam maliyeti 10.000.000 ₺'dir. Maliyetin 4.000.000 ₺'lik motor kısmının yararlı ömrü 5 yıl, kalan gövde kısmının yararlı ömrü 10 yıldır; kalıntı değerler sıfırdır. TMS 16'ya göre yıllık toplam doğrusal amortisman kaç ₺'dir?",
     "options": {
-      "A": "40.000",
-      "B": "24.000",
-      "C": "20.000",
-      "D": "8.640",
-      "E": "14.400"
+      "A": "600.000",
+      "B": "800.000",
+      "C": "1.000.000",
+      "D": "2.000.000",
+      "E": "1.400.000"
     },
     "answer": "E",
-    "solution": "1. yıl: 100.000 × %40 = 40.000 → kalan 60.000. 2. yıl: 60.000 × %40 = 24.000 → kalan 36.000. 3. yıl: 36.000 × %40 = **14.400 ₺**.",
+    "solution": "Önemli parçalar ayrı amortismana tabi tutulur. Motor: 4.000.000 ÷ 5 = **800.000 ₺**; gövde: 6.000.000 ÷ 10 = **600.000 ₺**. Toplam yıllık amortisman **1.400.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-azalan bakiyeler 3.yıl; sınav stiline kalibre)",
-      "legislationRef": "VUK mükerrer md. 315"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 43-44"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "finmuh-mdv-gen-0055",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maliyet bedeli 100.000 ₺ olan bir makineye azalan bakiyeler yöntemi (oran %40) uygulanmakta; ilk üç yılda sırasıyla 40.000 ₺, 24.000 ₺ ve 14.400 ₺ amortisman ayrılmıştır. Üçüncü yılın sonunda makinenin net defter değeri kaç ₺'dir?",
+    "stem": "Bir makinenin dönem başı defter değeri 120.000 ₺ ve kalıntı değeri sıfırdır. Yeni teknik bilgi nedeniyle kalan yararlı ömür 3 yıl olarak revize edilmiştir. TMS 16 ve TMS 8'e göre değişiklik nasıl uygulanır?",
     "options": {
-      "A": "21.600",
-      "B": "36.000",
-      "C": "78.400",
-      "D": "14.400",
-      "E": "60.000"
+      "A": "Cari ve gelecek dönemlere ileriye yönelik uygulanır; cari yıl amortismanı 40.000 ₺ olur.",
+      "B": "Geçmiş yılların tamamı geriye dönük düzeltilir; cari yıl amortisman ayrılmaz.",
+      "C": "Yararlı ömür hiçbir koşulda değiştirilemez.",
+      "D": "120.000 ₺'nin tamamı doğrudan gider yazılır.",
+      "E": "Değişiklik yalnız dipnotta açıklanır, amortisman hesabını etkilemez."
     },
     "answer": "A",
-    "solution": "Birikmiş amortisman = 40.000 + 24.000 + 14.400 = 78.400 ₺. Net defter değeri = 100.000 − 78.400 = **21.600 ₺**.",
+    "solution": "Yararlı ömür tahminindeki değişiklik bir muhasebe tahmini değişikliğidir ve **ileriye yönelik** uygulanır. Yeni yıllık amortisman 120.000 ÷ 3 = **40.000 ₺**dir; önceki dönemler geriye dönük değiştirilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-azalan NDD; sınav stiline kalibre)",
-      "legislationRef": "VUK mükerrer md. 315"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 51; TMS 8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-mdv-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Aşağıdakilerden hangisi bir maddi duran varlığın maliyet bedeline dâhil edilmez?",
+    "stem": "Bir kimya işletmesi, çevre mevzuatına uymadan üretime devam edemeyeceği için 300.000 ₺'lik arıtma tesisi kurmuştur. Tesis tek başına satışları artırmasa da diğer üretim varlıklarından ekonomik yarar elde edilmesini mümkün kılmaktadır. TMS 16'ya göre nasıl muhasebeleştirilir?",
     "options": {
-      "A": "Varlığın satıcıya ödenen satın alma (fatura) bedeli ile buna bağlı doğrudan alış giderleri",
-      "B": "Varlıkla ilgisi olmayan genel yönetim giderlerinden pay",
-      "C": "Varlığı kullanıma hazır hâle getirmek için katlanılan montaj ve kurulum giderleri",
-      "D": "Varlığın işletmeye taşınması sırasında ödenen nakliye ve nakliye sigortası giderleri",
-      "E": "Alışta ödenen ve maliyete eklenmesi gereken noter/tapu harçları"
+      "A": "Gelecekte yarar sağlamadığı kabul edilerek tamamı doğrudan gider yazılır.",
+      "B": "Diğer varlıklardan yarar elde edilmesi için gerekli olduğundan maddi duran varlık olarak muhasebeleştirilir.",
+      "C": "Yalnız nazım hesaplarda izlenir.",
+      "D": "Çevresel amaçlı olduğu için stok hesabına alınır.",
+      "E": "Ödeme tamamlanana kadar hiçbir kayıt yapılmaz."
     },
     "answer": "B",
-    "solution": "MDV maliyetine yalnızca varlığı **edinme ve kullanıma hazır hâle getirme** ile doğrudan ilgili giderler girer. Varlıkla doğrudan ilgisi olmayan **genel yönetim giderlerinden pay** maliyete eklenmez; dönem gideri yazılır.",
+    "solution": "Güvenlik veya çevresel nedenlerle edinilen bir kıymet, doğrudan ek gelir yaratmasa bile işletmenin diğer varlıklarından ekonomik yarar elde etmesi için gerekli olabilir. Bu durumda arıtma tesisi **maddi duran varlık** olarak muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-maliyet dışı; sınav stiline kalibre)",
-      "legislationRef": "TMS 16; VUK md. 269-270"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "finmuh-mdv-gen-0058",
     "ders": "finansal_muhasebe",
     "konu": "maddi_duran_varliklar",
-    "stem": "Maddi duran varlıklar için amortisman ayrılması, muhasebe süreci içinde genellikle ne zaman yapılan bir işlemdir?",
+    "stem": "Bir uçağın faaliyetine devam edebilmesi için beş yılda bir büyük kontrol yapılması zorunludur. Yeni kontrolün maliyeti 90.000 ₺, önceki kontrolden kalan ve kayıtlarda ayrı izlenen defter değeri 20.000 ₺'dir. TMS 16'ya göre işlemin varlığın defter değerine net etkisi kaç ₺'dir?",
     "options": {
-      "A": "Varlığa ait her satış işlemi gerçekleştiğinde ayrı ayrı",
-      "B": "Her ayın sonunda zorunlu olarak ayrı bir muhasebe fişi kesilerek",
-      "C": "Yalnızca varlık işletmeye ilk kez satın alındığı anda bir defaya mahsus",
-      "D": "Dönem sonunda (envanter/dönem sonu işlemleri sırasında)",
-      "E": "Yalnızca varlık elden çıkarılıp satıldığında, satış kaydıyla birlikte"
+      "A": "20.000 ₺ azalış",
+      "B": "90.000 ₺ azalış",
+      "C": "110.000 ₺ artış",
+      "D": "70.000 ₺ artış",
+      "E": "Etkisi yoktur."
     },
     "answer": "D",
-    "solution": "Amortisman, dönemin gideri hesaplanırken **dönem sonu (envanter) işlemleri** sırasında ayrılır; böylece varlığın o döneme düşen yıpranma payı gidere yansıtılır (dönemsellik kavramı).",
+    "solution": "Muhasebeleştirme koşulları sağlandığında yeni büyük kontrol maliyeti **90.000 ₺ aktifleştirilir**; önceki kontrolün **20.000 ₺ defter değeri finansal tablo dışı bırakılır**. Net etki 90.000 − 20.000 = **70.000 ₺ artış**tır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-süreç; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 313-320; dönemsellik kavramı"
+      "styleRef": "SGS Finansal Muhasebe (MDV uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16, par. 14"
     },
     "validYear": 2026,
     "mockExamId": null

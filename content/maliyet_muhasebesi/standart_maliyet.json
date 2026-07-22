@@ -137,7 +137,7 @@
     "konu": "standart_maliyet",
     "stem": "Direkt ilk madde ve malzeme (DİMM) standart maliyeti nasıl hesaplanır?",
     "options": {
-      "A": "Standart miktar + standart fiyat",
+      "A": "Standart miktar + standart fiyat toplamı",
       "B": "Fiili miktar × fiili fiyat",
       "C": "Standart miktar × standart fiyat",
       "D": "Standart fiyat ÷ standart miktar",
@@ -355,16 +355,16 @@
     "id": "mmuh-standart-gen-0017",
     "ders": "maliyet_muhasebesi",
     "konu": "standart_maliyet",
-    "stem": "DİG standart maliyeti 40.000 ₺, fiili maliyeti 46.200 ₺'dir. Toplam DİG sapması ne kadardır ve yönü nedir?",
+    "stem": "Toplam direkt işçilik gideri sapması 6.200 ₺ aleyhte, standart direkt işçilik maliyeti 40.000 ₺'dir. Fiilî direkt işçilik maliyeti kaç ₺'dir?",
     "options": {
-      "A": "6.200 ₺ aleyhte (olumsuz)",
-      "B": "6.200 ₺ lehte (olumlu)",
-      "C": "4.200 ₺ aleyhte",
-      "D": "2.000 ₺ lehte",
-      "E": "Sapma yoktur"
+      "A": "46.200",
+      "B": "33.800",
+      "C": "40.000",
+      "D": "6.200",
+      "E": "53.200"
     },
     "answer": "A",
-    "solution": "Toplam DİG sapması = 46.200 − 40.000 = 6.200 ₺. Fiili > standart → **6.200 ₺ aleyhte (olumsuz)**.",
+    "solution": "Aleyhte sapmada fiilî maliyet standart maliyetten yüksektir. Fiilî maliyet = 40.000 + 6.200 = **46.200 ₺**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam DİG sapması; sınav stiline kalibre)",

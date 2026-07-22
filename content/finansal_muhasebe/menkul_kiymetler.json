@@ -69,20 +69,20 @@
     "id": "finmuh-menkul-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, maliyeti (kayıtlı değeri) 50.000 ₺ olan hisse senetlerini 62.000 ₺'ye peşin satmıştır. Bu satışın kaydı aşağıdakilerden hangisidir?",
+    "stem": "Bir işletme, sözleşmeye bağlı nakit akışlarını tahsil etmek amacıyla elde tuttuğu bir borçlanma aracının yalnız belirli tarihlerde anapara ve anapara bakiyesine ilişkin faiz ödemeleri doğurduğunu belirlemiştir. TFRS 9'a göre bu finansal varlığın sonraki ölçüm sınıfı hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 62.000 / 110 Hisse Senetleri (A) 50.000 + 645 Menkul Kıymet Satış Kârları (A) 12.000",
-      "B": "100 Kasa (B) 62.000 / 110 Hisse Senetleri (A) 62.000",
-      "C": "100 Kasa (B) 62.000 / 600 Yurt İçi Satışlar (A) 62.000",
-      "D": "110 Hisse Senetleri (B) 62.000 / 100 Kasa (A) 50.000 + 645 Menkul Kıymet Satış Kârları (A) 12.000",
-      "E": "100 Kasa (B) 50.000 + 655 Menkul Kıymet Satış Zararları (B) 12.000 / 110 Hisse Senetleri (A) 62.000"
+      "A": "İtfa edilmiş maliyet",
+      "B": "Her durumda gerçeğe uygun değer farkı kâr veya zarara yansıtılan",
+      "C": "Stok maliyeti",
+      "D": "Maddi duran varlık maliyeti",
+      "E": "Yalnız nominal değer"
     },
     "answer": "A",
-    "solution": "Satış bedeli (62.000) maliyetten (50.000) yüksek → 12.000 ₺ kâr. Kayıt: **100 Kasa (B) 62.000 / 110 Hisse Senetleri (A) 50.000 + 645 Menkul Kıymet Satış Kârları (A) 12.000**.",
+    "solution": "Borçlanma aracı **sözleşmeye bağlı nakit akışlarını tahsil etme** iş modeli kapsamında tutuluyor ve nakit akışları yalnız **anapara ve faizden** oluşuyorsa TFRS 9 uyarınca **itfa edilmiş maliyetle** ölçülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi doğru-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 645 Menkul Kıymet Satış Kârları"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; sınıflandırma senaryosu)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 4.1.2"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "finmuh-menkul-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Maliyeti 80.000 ₺ olan hisse senetleri 68.000 ₺'ye peşin satılmıştır. Bu satıştan doğan kâr/zarar ve ilgili hesap aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin VUK kayıtlarında 2.000.000 ₺ değerle izlenen 1 kilogram külçe altının değerleme günündeki kıymetli madenler borsası rayici 2.300.000 ₺'dir. VUK 274/A'ya göre dönem sonu değeri ve değerleme farkı sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "12.000 ₺ kâr; 645 Menkul Kıymet Satış Kârları",
-      "B": "68.000 ₺ kâr; 645 Menkul Kıymet Satış Kârları",
-      "C": "12.000 ₺ zarar; 655 Menkul Kıymet Satış Zararları",
-      "D": "12.000 ₺ zarar; 654 Karşılık Giderleri",
-      "E": "Kâr/zarar doğmaz"
+      "A": "2.000.000 ₺ ve 0 ₺",
+      "B": "2.000.000 ₺ ve 300.000 ₺ zarar",
+      "C": "2.300.000 ₺ ve 300.000 ₺ gelir",
+      "D": "2.300.000 ₺ ve 2.300.000 ₺ gelir",
+      "E": "300.000 ₺ ve 2.000.000 ₺ gelir"
     },
     "answer": "C",
-    "solution": "Satış bedeli (68.000) maliyetten (80.000) düşük → **12.000 ₺ zarar**; **655 Menkul Kıymet Satış Zararları**na yazılır. Kayıt: 100 Kasa (B) 68.000 + 655 (B) 12.000 / 110 Hisse Senetleri (A) 80.000.",
+    "solution": "VUK 274/A uyarınca altın borsa rayiciyle değerlenir. Dönem sonu değer **2.300.000 ₺**, kayıtlı değere göre olumlu fark 2.300.000 − 2.000.000 = **300.000 ₺ gelir**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 655 Menkul Kıymet Satış Zararları"
+      "styleRef": "SGS Finansal Muhasebe (VUK 274/A; güncel sayısal uygulama)",
+      "legislationRef": "213 sayılı VUK md. 274/A (7524 sayılı Kanun, yürürlük 02.08.2024)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "finmuh-menkul-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "'645 Menkul Kıymet Satış Kârları' hesabı gelir tablosunda hangi bölümde raporlanır?",
+    "stem": "İşletmenin maliyeti 500.000 ₺ olan platin mevcudu için değerleme gününde güvenilir bir kıymetli madenler borsası rayici bulunmamaktadır. VUK 274/A'ya göre hangi değer esas alınır?",
     "options": {
-      "A": "Brüt satış kârının hemen üzerinde, net satışlar satırında",
-      "B": "Diğer Faaliyetlerden Olağan Gelir ve Kârlar bölümünde",
-      "C": "Satılan malın maliyeti içinde, maliyet bölümünde",
-      "D": "Finansman giderleri bölümünde, faiz gideri satırında",
-      "E": "Olağandışı gelir ve kârlar bölümünde ayrı bir satırda"
+      "A": "Her durumda nominal değer",
+      "B": "500.000 ₺ maliyet bedeli",
+      "C": "İşletme yönetiminin belirlediği tahmini satış değeri",
+      "D": "Tasfiye değeri",
+      "E": "Sıfır değer"
     },
     "answer": "B",
-    "solution": "**645 Menkul Kıymet Satış Kârları**, esas faaliyet dışı ama olağan bir gelirdir; gelir tablosunda **Diğer Faaliyetlerden Olağan Gelir ve Kârlar** bölümünde raporlanır.",
+    "solution": "VUK 274/A'ya göre kıymetli maden borsa rayiciyle değerlenir; borsa rayici yoksa veya muvazaalı oluşmuşsa **maliyet bedeli** esas alınır. Bu nedenle değer **500.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu; 645"
+      "styleRef": "SGS Finansal Muhasebe (VUK 274/A; borsa rayici istisnası)",
+      "legislationRef": "213 sayılı VUK md. 274/A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "finmuh-menkul-gen-0015",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 45.000 | |\n| 655 MENKUL KIYMET SATIŞ ZARARLARI | 5.000 | |\n| 110 HİSSE SENETLERİ | | 50.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "İşletmenin 100 gram altın cinsinden senetsiz alacağı kayıtlarda 300.000 ₺'dir. Değerleme gününde altının borsa rayici gram başına 3.200 ₺'dir. VUK 274/A'ya göre alacağın dönem sonu değeri ve olumlu değerleme farkı sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "Maliyeti 50.000 ₺ olan hisse senetlerinin 45.000 ₺'ye zararla satılması",
-      "B": "Maliyeti 45.000 ₺ olan hisse senetlerinin 50.000 ₺'ye kârla peşin satılması",
-      "C": "Nominal bedeli 50.000 ₺ olan hisse senedinin peşin bedelle satın alınması",
-      "D": "Hisse senetleri için dönem sonunda 5.000 ₺ değer düşüklüğü karşılığı ayrılması",
-      "E": "Elde tutulan tahvillerden 45.000 ₺ faiz (kupon) gelirinin peşin tahsili"
+      "A": "320.000 ₺ ve 20.000 ₺",
+      "B": "300.000 ₺ ve 0 ₺",
+      "C": "320.000 ₺ ve 320.000 ₺",
+      "D": "20.000 ₺ ve 300.000 ₺",
+      "E": "280.000 ₺ ve 20.000 ₺"
     },
     "answer": "A",
-    "solution": "Kasaya 45.000 giriş, 110'dan 50.000 maliyet çıkışı ve aradaki 5.000 ₺'nin 655'e zarar yazılması, **maliyeti 50.000 ₺ olan hisse senetlerinin 45.000 ₺'ye zararla satılması**nı gösterir.",
+    "solution": "VUK 274/A, kıymetli maden cinsinden senetli ve senetsiz alacaklara da uygulanır. Değer 100 × 3.200 = **320.000 ₺**, olumlu fark 320.000 − 300.000 = **20.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 110/655"
+      "styleRef": "SGS Finansal Muhasebe (kıymetli maden alacağı; hesaplama)",
+      "legislationRef": "213 sayılı VUK md. 274/A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-menkul-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, maliyeti 40.000 ₺ olan hisse senetlerini 55.000 ₺'ye peşin satmıştır. Bu satıştan doğan kâr kaç ₺'dir ve hangi hesaba yazılır?",
+    "stem": "İşletme bir yıl sonra 100.000 ₺ tahsil edeceği kuponsuz tahvili 90.000 ₺'ye edinmiş ve itfa edilmiş maliyetle sınıflandırmıştır. Başka nakit akışı bulunmadığına göre bir yıllık toplam etkin faiz geliri ve vade sonundaki defter değeri sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "15.000 ₺ kâr; 642 Faiz Gelirleri",
-      "B": "15.000 ₺ zarar; 655 Menkul Kıymet Satış Zararları",
-      "C": "55.000 ₺ kâr; 600 Yurt İçi Satışlar",
-      "D": "15.000 ₺ kâr; 645 Menkul Kıymet Satış Kârları",
-      "E": "40.000 ₺ kâr; 645 Menkul Kıymet Satış Kârları"
+      "A": "90.000 ₺ ve 100.000 ₺",
+      "B": "10.000 ₺ ve 90.000 ₺",
+      "C": "100.000 ₺ ve 100.000 ₺",
+      "D": "10.000 ₺ ve 100.000 ₺",
+      "E": "10.000 ₺ ve 110.000 ₺"
     },
     "answer": "D",
-    "solution": "Kâr = Satış − Maliyet = 55.000 − 40.000 = **15.000 ₺**; **645 Menkul Kıymet Satış Kârları**na yazılır. Kayıt: 100 Kasa (B) 55.000 / 110 (A) 40.000 + 645 (A) 15.000.",
+    "solution": "Kuponsuz tahvilin 90.000 ₺ ilk değeri ile 100.000 ₺ vade tutarı arasındaki **10.000 ₺ iskonto**, etkin faiz yöntemiyle faiz geliri olur. Bir yıl sonunda defter değeri 90.000 + 10.000 = **100.000 ₺**ye ulaşır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 645"
+      "styleRef": "SGS Finansal Muhasebe (etkin faiz; kuponsuz tahvil)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.4.1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "finmuh-menkul-gen-0024",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, maliyeti 120.000 ₺ olan hisse senetlerini 150.000 ₺'ye peşin satmıştır. Bu satışa ilişkin aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme, gerçeğe uygun değer farkı kâr veya zarara yansıtılan bir finansal varlığı 100.000 ₺ gerçeğe uygun değerle edinmiş ve ayrıca 2.000 ₺ işlem komisyonu ödemiştir. TFRS 9'a göre varlığın ilk defter değeri ve komisyonun muhasebeleştirilmesi hangisidir?",
     "options": {
-      "A": "655 Menkul Kıymet Satış Zararları 30.000 ₺ borçlandırılır.",
-      "B": "645 Menkul Kıymet Satış Kârları 30.000 ₺ alacaklandırılır.",
-      "C": "110 Hisse Senetleri 150.000 ₺ alacaklandırılır.",
-      "D": "600 Yurt İçi Satışlar 150.000 ₺ alacaklandırılır.",
-      "E": "642 Faiz Gelirleri 30.000 ₺ alacaklandırılır."
+      "A": "102.000 ₺; komisyon varlığın maliyetine eklenir.",
+      "B": "100.000 ₺; 2.000 ₺ komisyon doğrudan gider yazılır.",
+      "C": "98.000 ₺; komisyon varlıktan düşülür.",
+      "D": "2.000 ₺; yalnız komisyon aktifleştirilir.",
+      "E": "100.000 ₺; komisyon hiçbir kayda alınmaz."
     },
     "answer": "B",
-    "solution": "Kâr = 150.000 − 120.000 = 30.000 ₺ → **645 Menkul Kıymet Satış Kârları 30.000 ₺ alacaklandırılır**. 110 Hisse Senetleri maliyet (120.000) ile alacaklanır, 100 Kasa 150.000 ile borçlanır.",
+    "solution": "Gerçeğe uygun değer farkı kâr veya zarara yansıtılan finansal varlık ilk olarak **100.000 ₺ gerçeğe uygun değerle** ölçülür; bu sınıftaki varlığa ilişkin **2.000 ₺ işlem maliyeti doğrudan gider** yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi doğru-hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 645"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; işlem maliyeti)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.1.1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "finmuh-menkul-gen-0025",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Maliyeti 90.000 ₺ olan hisse senetleri 78.000 ₺'ye peşin satılmıştır. Bu satışın kaydında yer alacak menkul kıymet satış zararı tutarı ve hesabı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, itfa edilmiş maliyetle ölçülecek bir borçlanma aracını 100.000 ₺ gerçeğe uygun değerle edinmiş ve doğrudan ilişkilendirilebilen 2.000 ₺ işlem maliyetine katlanmıştır. TFRS 9'a göre ilk defter değeri kaç ₺'dir?",
     "options": {
-      "A": "78.000 ₺ – 655 Menkul Kıymet Satış Zararları",
-      "B": "12.000 ₺ – 645 Menkul Kıymet Satış Kârları",
-      "C": "12.000 ₺ – 655 Menkul Kıymet Satış Zararları",
-      "D": "12.000 ₺ – 654 Karşılık Giderleri",
-      "E": "Zarar doğmaz"
+      "A": "98.000 ₺",
+      "B": "100.000 ₺",
+      "C": "102.000 ₺",
+      "D": "2.000 ₺",
+      "E": "104.000 ₺"
     },
     "answer": "C",
-    "solution": "Zarar = Maliyet − Satış = 90.000 − 78.000 = **12.000 ₺**; **655 Menkul Kıymet Satış Zararları**na borç yazılır. Kayıt: 100 Kasa (B) 78.000 + 655 (B) 12.000 / 110 (A) 90.000.",
+    "solution": "Gerçeğe uygun değer farkı kâr veya zarara yansıtılmayan finansal varlıklarda doğrudan işlem maliyetleri ilk değere eklenir. İlk defter değeri 100.000 + 2.000 = **102.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 655"
+      "styleRef": "SGS Finansal Muhasebe (itfa edilmiş maliyet; işlem maliyeti)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.1.1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "finmuh-menkul-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, kayıtlı değeri 60.000 ₺ olan özel sektör tahvilini 66.000 ₺'ye peşin satmıştır. Bu satıştan doğan 6.000 ₺'lik olumlu fark hangi hesaba yazılır?",
+    "stem": "Bir borçlanma aracı, sözleşmeye bağlı nakit akışlarını hem tahsil etmeyi hem de uygun olduğunda aracı satmayı amaçlayan iş modeli kapsamında yönetilmektedir. Nakit akışları yalnız anapara ve faiz ödemeleridir. TFRS 9'a göre sonraki ölçüm sınıfı hangisidir?",
     "options": {
-      "A": "642 Faiz Gelirleri",
-      "B": "645 Menkul Kıymet Satış Kârları",
-      "C": "640 İştiraklerden Temettü Gelirleri",
-      "D": "600 Yurt İçi Satışlar",
-      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
+      "A": "Yalnız maliyet bedeli",
+      "B": "Gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan",
+      "C": "Stok olarak net gerçekleşebilir değer",
+      "D": "Maddi duran varlık olarak yeniden değerlenmiş tutar",
+      "E": "Her durumda nominal değer"
     },
     "answer": "B",
-    "solution": "Menkul kıymetin (tahvil dâhil) kayıtlı değerinin üzerinde satılmasından doğan kâr **645 Menkul Kıymet Satış Kârları**na yazılır: 100/102 (B) 66.000 / 111 (A) 60.000 + 645 (A) 6.000.",
+    "solution": "İş modeli hem sözleşmeye bağlı nakit akışlarını **tahsil etmeyi hem satmayı** amaçlıyor ve nakit akışları yalnız anapara ile faizden oluşuyorsa borçlanma aracı **gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılarak** ölçülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 645"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; tahsil et ve sat modeli)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 4.1.2A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-menkul-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Aşağıdaki gelirlerden hangisi hesabıyla yanlış eşleştirilmiştir?",
+    "stem": "İşletme, alım satım amacıyla elde tutulmayan bir özkaynak aracını ilk defa finansal tablolara alırken gerçeğe uygun değer değişimlerini diğer kapsamlı gelire sunma yönünde geri dönülemez seçim yapmıştır. TFRS 9'a göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Tahvil faiz (kupon) geliri → 642 Faiz Gelirleri",
-      "B": "İştiraklerden temettü geliri → 640 İştiraklerden Temettü Gelirleri",
-      "C": "Menkul kıymet satış kârı → 645 Menkul Kıymet Satış Kârları",
-      "D": "Menkul kıymet satış zararı → 655 Menkul Kıymet Satış Zararları",
-      "E": "Tahvil faiz geliri → 645 Menkul Kıymet Satış Kârları"
+      "A": "Araç bundan sonra maliyet bedelinde dondurulur.",
+      "B": "Bütün temettüler doğrudan aracın maliyetinden düşülür.",
+      "C": "Araç satıldığında birikmiş diğer kapsamlı gelir zorunlu olarak kâr veya zarara aktarılır.",
+      "D": "Seçim her raporlama döneminde serbestçe değiştirilebilir.",
+      "E": "Gerçeğe uygun değer değişimleri diğer kapsamlı gelirde kalır; satışta kâr veya zarara yeniden sınıflandırılmaz."
     },
     "answer": "E",
-    "solution": "**E yanlıştır.** Tahvil faiz (kupon) geliri **642 Faiz Gelirleri**ne yazılır, 645'e değil. 645 yalnızca menkul kıymetin satışından doğan kârı izler. Diğer eşleştirmeler doğrudur.",
+    "solution": "Alım satım amacıyla tutulmayan özkaynak aracında ilk kayıtta yapılan seçim **geri dönülemez**. Gerçeğe uygun değer değişimleri diğer kapsamlı gelirde sunulur ve araç elden çıkarıldığında birikmiş tutar **kâr veya zarara yeniden sınıflandırılmaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 642/640/645/655"
+      "styleRef": "SGS Finansal Muhasebe (özkaynak aracı; diğer kapsamlı gelir seçimi)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.7.5-5.7.6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "finmuh-menkul-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Bir menkul kıymetin satışından doğan kâr veya zarar aşağıdakilerden hangisiyle belirlenir?",
+    "stem": "TFRS 9'daki 'yalnız anapara ve faiz ödemeleri' testinde faiz unsuru esas olarak aşağıdakilerden hangilerini karşılar?",
     "options": {
-      "A": "Satış bedeli − Kayıtlı (maliyet) değer",
-      "B": "Satış bedeli − Nominal (itibari) değer",
-      "C": "Nominal (itibari) değer − Alış bedeli",
-      "D": "Kayıtlı değer + Üzerine işlemiş faiz",
-      "E": "Faiz oranı × Elde tutulan gün sayısı"
+      "A": "Paranın zaman değeri, kredi riski, diğer temel borç verme risk ve maliyetleri ile kâr marjı",
+      "B": "Borçlunun hisse fiyatındaki sınırsız artış ve emtia fiyatı riski",
+      "C": "Yalnız ihraççının dönem kârından dağıtacağı temettü",
+      "D": "Sadece aracın nominal değerindeki değişim",
+      "E": "Alacaklının stok satışlarından elde edeceği brüt kâr"
     },
     "answer": "A",
-    "solution": "Menkul kıymet satış kâr/zararı = **Satış bedeli − Kayıtlı (maliyet) değer**. Pozitifse 645 Menkul Kıymet Satış Kârları, negatifse 655 Menkul Kıymet Satış Zararları çalışır.",
+    "solution": "Anapara bakiyesine ilişkin faiz; **paranın zaman değerini**, kredi riskini, diğer temel borç verme risk ve maliyetlerini ve bir kâr marjını karşılar. Hisse veya emtia fiyatına endeksli sınırsız getiri bu yapıyla uyumlu değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 645/655"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; SPPI testi)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 4.1.3"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "finmuh-menkul-gen-0033",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 70.000 | |\n| 110 HİSSE SENETLERİ | | 55.000 |\n| 645 MENKUL KIYMET SATIŞ KÂRLARI | | 15.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "İşletme, 1 Temmuz'da vadesinde 100.000 ₺ ödenecek kuponsuz devlet bonosunu 90.000 ₺'ye almıştır. Vade 30 Haziran izleyen yıldır ve doğrusal kıst getiri varsayılacaktır. Borsa rayici bulunmadığına göre VUK 279 uyarınca 31 Aralık değerleme tutarı kaç ₺'dir?",
     "options": {
-      "A": "Maliyeti 70.000 ₺ olan hisse senetlerinin 55.000 ₺'ye zararla satılması",
-      "B": "Maliyeti 55.000 ₺ olan hisse senetlerinin 70.000 ₺'ye kârla satılması",
-      "C": "Nominal bedeli 70.000 ₺ olan hisse senedinin peşin bedelle satın alınması",
-      "D": "Elde tutulan tahvillerden 15.000 ₺ faiz (kupon) gelirinin peşin tahsili",
-      "E": "İştirak paylarından 15.000 ₺ temettü (kâr payı) gelirinin peşin tahsili"
+      "A": "90.000 ₺",
+      "B": "95.000 ₺",
+      "C": "100.000 ₺",
+      "D": "105.000 ₺",
+      "E": "110.000 ₺"
     },
     "answer": "B",
-    "solution": "Kasaya 70.000 giriş, 110'dan 55.000 maliyet çıkışı ve 15.000 ₺'nin 645'e kâr yazılması, **maliyeti 55.000 ₺ olan hisse senetlerinin 70.000 ₺'ye kârla satılması**nı gösterir (kâr = 70.000 − 55.000 = 15.000).",
+    "solution": "Toplam 10.000 ₺ getiri on iki aylık süreye aittir. İlk altı aya düşen kıst getiri 10.000 × 6/12 = **5.000 ₺**dir. Değerleme tutarı 90.000 + 5.000 = **95.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 110/645"
+      "styleRef": "SGS Finansal Muhasebe (VUK 279; kıst getiri hesabı)",
+      "legislationRef": "213 sayılı VUK md. 279"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "finmuh-menkul-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "'655 Menkul Kıymet Satış Zararları' hesabı gelir tablosunda hangi bölümde raporlanır?",
+    "stem": "Gerçeğe uygun değer farkı kâr veya zarara yansıtılan bir finansal yatırımın dönem başı defter değeri 200.000 ₺, dönem sonu gerçeğe uygun değeri 225.000 ₺'dir. Dönem içinde alım, satım veya nakit getiri yoktur. TFRS 9'a göre dönem sonu değerleme kazancı kaç ₺'dir ve nerede raporlanır?",
     "options": {
-      "A": "Diğer Faaliyetlerden Olağan Gider ve Zararlar bölümünde",
-      "B": "Satılan malın maliyeti içinde, maliyet bölümünde ayrı satırda",
-      "C": "Brüt satış kârının hemen üzerinde, net satışlar satırında",
-      "D": "Finansman giderleri bölümünde, kısa vadeli faiz satırında",
-      "E": "Olağandışı gider ve zararlar bölümünde, ayrı bir satırda"
+      "A": "25.000 ₺; kâr veya zararda",
+      "B": "25.000 ₺; yalnız özkaynakta, kâr veya zarara hiç yansımadan",
+      "C": "225.000 ₺; satış hasılatında",
+      "D": "200.000 ₺; finansman giderinde",
+      "E": "Kazanç kaydedilmez."
     },
     "answer": "A",
-    "solution": "**655 Menkul Kıymet Satış Zararları**, esas faaliyet dışı ama olağan bir gider olduğundan gelir tablosunda **Diğer Faaliyetlerden Olağan Gider ve Zararlar** bölümünde raporlanır.",
+    "solution": "Gerçeğe uygun değer artışı 225.000 − 200.000 = **25.000 ₺**dir. Araç gerçeğe uygun değer farkı kâr veya zarara yansıtılan sınıfta olduğundan kazanç **dönem kâr veya zararında** muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu; 655"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; gerçeğe uygun değer kazancı)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.7.1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-menkul-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, kayıtlı değeri 50.000 ₺ olan devlet tahvilini 44.000 ₺'ye peşin satmıştır. Bu satışa ilişkin kayıtta yer alacak zarar tutarı ve hesabı aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin 100 gram gümüş cinsinden mevduatı vardır. Değerleme gününe kadar 5 gram gümüş faiz tahakkuk etmiş, gümüşün borsa rayici gram başına 30 ₺ olmuştur. VUK 274/A'ya göre faiz dâhil mevduatın değerleme tutarı kaç ₺'dir?",
     "options": {
-      "A": "6.000 ₺ – 654 Karşılık Giderleri",
-      "B": "6.000 ₺ – 645 Menkul Kıymet Satış Kârları",
-      "C": "44.000 ₺ – 655 Menkul Kıymet Satış Zararları",
-      "D": "6.000 ₺ – 655 Menkul Kıymet Satış Zararları",
-      "E": "Zarar doğmaz"
+      "A": "150 ₺",
+      "B": "3.000 ₺",
+      "C": "3.100 ₺",
+      "D": "3.150 ₺",
+      "E": "3.500 ₺"
     },
     "answer": "D",
-    "solution": "Zarar = Kayıtlı değer − Satış = 50.000 − 44.000 = **6.000 ₺**; **655 Menkul Kıymet Satış Zararları**na borç yazılır. Kayıt: 100/102 (B) 44.000 + 655 (B) 6.000 / 112 (A) 50.000.",
+    "solution": "Kıymetli maden mevduatları değerleme gününe kadar hesaplanan faizleriyle birlikte dikkate alınır. Toplam 100 + 5 = **105 gram**, değer 105 × 30 = **3.150 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 655"
+      "styleRef": "SGS Finansal Muhasebe (kıymetli maden mevduatı; faiz dâhil değerleme)",
+      "legislationRef": "213 sayılı VUK md. 274/A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-menkul-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletmenin elindeki hisse senetlerinin maliyeti 60.000 ₺, dönem sonu borsa değeri ise 52.000 ₺'dir. İhtiyatlılık gereği ayrılması gereken değer düşüklüğü karşılığı kaç ₺'dir?",
+    "stem": "Alım satım amacıyla alınan borsaya kayıtlı bir pay senedinin alış bedeli 100.000 ₺, dönem sonu gerçeğe uygun değeri 130.000 ₺'dir. VUK 279 ile TFRS 9'un gerçeğe uygun değer farkı kâr veya zarara yansıtılan sınıfı karşılaştırıldığında dönem sonu değerleri hangisidir?",
     "options": {
-      "A": "52.000",
-      "B": "60.000",
-      "C": "Karşılık ayrılmaz",
-      "D": "112.000",
-      "E": "8.000"
+      "A": "VUK 130.000 ₺; TFRS 100.000 ₺",
+      "B": "Her iki çerçevede 100.000 ₺",
+      "C": "Her iki çerçevede 130.000 ₺ ancak fark gelir yazılmaz.",
+      "D": "VUK 30.000 ₺; TFRS 130.000 ₺",
+      "E": "VUK 100.000 ₺; TFRS 130.000 ₺ ve TFRS'de 30.000 ₺ değerleme kazancı"
     },
     "answer": "E",
-    "solution": "Değer düşüklüğü = Maliyet − Borsa değeri = 60.000 − 52.000 = **8.000 ₺**. Kayıt: 654 Karşılık Giderleri (B) 8.000 / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (A) 8.000.",
+    "solution": "VUK 279 uyarınca pay senedi **alış bedeli 100.000 ₺** ile kalır. TFRS 9'da alım satım amaçlı pay senedi gerçeğe uygun değer farkı kâr veya zarara yansıtılan sınıftadır; **130.000 ₺** ölçülür ve **30.000 ₺ kazanç** kâr veya zarara alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 654/119; İhtiyatlılık"
+      "styleRef": "SGS Finansal Muhasebe (VUK/TFRS karşılaştırması; pay senedi)",
+      "legislationRef": "213 sayılı VUK md. 279; TFRS 9 par. 5.7.1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,7 +1125,7 @@
     "id": "finmuh-menkul-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletmenin elindeki hisse senetlerinin dönem sonu borsa değerinin maliyetinin üzerine çıkması durumunda (değeri artması) muhasebede ne yapılır?",
+    "stem": "VUK 279'a göre işletmenin elindeki pay senetlerinin dönem sonu borsa değerinin alış bedelinin üzerine çıkması durumunda vergi değerlemesinde ne yapılır?",
     "options": {
       "A": "Gerçekleşmemiş değer artışı, 645 Menkul Kıymet Satış Kârları hesabına gelir yazılarak dönem kârına doğrudan eklenir.",
       "B": "Gerçekleşmemiş değer artışı, elde edilen bir faiz getirisi sayılıp 642 Faiz Gelirleri hesabına gelir yazılır.",
@@ -1134,11 +1134,11 @@
       "E": "Değer arttığı için 654 Karşılık Giderleri karşılığında 119 Değer Düşüklüğü Karşılığı hesabı ayrıca ayrılır."
     },
     "answer": "C",
-    "solution": "**İhtiyatlılık** gereği gerçekleşmemiş (satılmamış) değer artışı gelir yazılmaz; hisse senetleri (VUK'a göre alış bedeliyle) maliyet üzerinden izlenmeye devam eder. Değer artışı ancak satışta 645 ile gerçekleşir.",
+    "solution": "VUK 279 uyarınca pay senetleri **alış bedeliyle** değerlenir. Bu nedenle dönem sonundaki gerçekleşmemiş borsa değeri artışı vergi değerlemesinde gelir yazılmaz; fark, satış gerçekleşirse satış kazancı olarak ortaya çıkar. TFRS 9 kapsamındaki gerçeğe uygun değer uygulaması ayrı bir finansal raporlama çerçevesidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - İhtiyatlılık; Maliyet Esası; VUK md. 279"
+      "styleRef": "SGS Finansal Muhasebe (VUK pay senedi değerlemesi; çerçeve ayrımı)",
+      "legislationRef": "213 sayılı VUK md. 279"
     },
     "validYear": 2026,
     "mockExamId": null

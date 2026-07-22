@@ -118,10 +118,10 @@ q("Bir işletme, maddi duran varlıklarını maliyet modeli yerine yeniden değe
   "TMS 8: yeniden değerleme modelinin ilk kez uygulanması bir muhasebe politikası değişikliğidir; ancak TMS 8'in politika değişikliği hükümlerine göre değil, TMS 16 (veya TMS 38) uyarınca yeniden değerleme olarak ele alınır.",
   "TMS 8 - yeniden değerlemenin ilk uygulanması")
 
-q("Aşağıdakilerden hangileri TMS 8'e göre muhasebe politikası sayılır?\n\nI. Stok maliyetinin ölçümünde kullanılan yöntem\n\nII. Maddi duran varlıklarda maliyet modeli veya yeniden değerleme modeli tercihi\n\nIII. Şüpheli alacak karşılığı oranının belirlenmesi",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Stok ölçüm yöntemi (I) ve MDV ölçüm modeli tercihi (II) uygulanan ilke ve esas olduğundan politikadır. Şüpheli alacak karşılığının belirlenmesi (III) ise ölçüm belirsizliğine dayanan bir muhasebe TAHMİNİDİR; bu nedenle yanlıştır.",
+q("Aşağıdakilerden hangileri TMS 8'e göre muhasebe politikası sayılır?\n\nI. Stok maliyetinin ölçümünde kullanılan yöntem\n\nII. Maddi duran varlığın yararlı ömrünün belirlenmesi\n\nIII. Şüpheli alacak karşılığı oranının belirlenmesi",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Stok maliyetinin ölçümünde kullanılan yöntem (I) muhasebe politikasıdır. Maddi duran varlığın yararlı ömrü (II) ile şüpheli alacak karşılığı oranı (III) ölçüm belirsizliğine dayanan muhasebe tahminleridir. Yalnız I doğrudur.",
   "TMS 8 - politika-tahmin ayrımı")
 
 q("Aşağıdaki ifadelerden hangileri muhasebe politikaları bakımından doğrudur?\n\nI. İşleme özel bir TFRS varsa politika o TFRS uygulanarak belirlenir\n\nII. Benzer işlemler için politikalar tutarlı uygulanır\n\nIII. TFRS yoksa yönetim muhakemesini kullanarak politika geliştirir",

@@ -14,10 +14,10 @@ SPEC.loader.exec_module(audit)
 GENEL_KOK = "Aşağıdakilerden hangisi muhasebenin temel kavramlarından biri değildir?"
 
 
-def soru(qid, stem, options, answer="A"):
+def soru(qid, stem, options, answer="A", ders="finansal_muhasebe"):
     return {
         "id": qid,
-        "ders": "finansal_muhasebe",
+        "ders": ders,
         "konu": "muhasebenin_temel_kavramlari",
         "stem": stem,
         "options": options,
@@ -34,6 +34,17 @@ def audit_et(questions):
     try:
         _, issues = audit.audit(path)
         return [msg for level, msg in issues if level == "FATAL"]
+    finally:
+        os.unlink(path)
+
+
+def sorunlar(questions):
+    """Geçici dosyada denetimi çalıştırıp bütün seviye/mesaj çiftlerini döndürür."""
+    with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+        json.dump(questions, fh, ensure_ascii=False)
+        path = fh.name
+    try:
+        return audit.audit(path)[1]
     finally:
         os.unlink(path)
 
@@ -61,6 +72,22 @@ class SgsAuditTest(unittest.TestCase):
 
     def test_repeating_sequence_is_rejected(self):
         self.assertTrue(audit.letter_pattern("ABCDEABCDEABCDE"))
+
+    def test_dogal_dagilim_tam_esit_olmak_zorunda_degil(self):
+        sequence = "CDBCDACABCDAADEBECCBCEAAEAEEDABEBDBEDCBAEEDDBCAADEAABCCBDBBC"
+        questions = []
+        for i, answer in enumerate(sequence):
+            options = {letter: f"{i}-{letter} seçeneği" for letter in "ABCDE"}
+            questions.append(soru(
+                f"q{i}", f"{i}. uygulama sorusunun doğru sonucu hangisidir?", options,
+                answer=answer,
+            ))
+
+        self.assertFalse(audit.letter_pattern(sequence))
+        self.assertEqual(
+            [msg for _, msg in sorunlar(questions) if "cevap harfi dağılımı dengesiz" in msg],
+            [],
+        )
 
     def test_ayni_kok_farkli_siklar_kopya_sayilmaz(self):
         """Genel kök farklı şıklarla meşru olarak tekrar eder — 43 sahte FATAL'ın kaynağı."""
@@ -105,6 +132,13 @@ class CozumHarfiTest(unittest.TestCase):
         q["solution"] = "Gerekçe burada. Doğru cevap C."
         self.assertEqual([f for f in audit_et([q]) if "çözüm" in f], [])
 
+
+class GorunumTest(unittest.TestCase):
+    def test_ham_kod_citi_kullaniciya_tasinamaz(self):
+        q = soru("q1", "Kök?", {"A": "```text\n100 KASA  1.000\n```", "B": "b",
+                                  "C": "c", "D": "d", "E": "e"})
+        self.assertTrue(any("kod çiti" in f for f in audit_et([q])), audit_et([q]))
+
     def test_kucuk_harfli_bu_kelimesi_cevap_harfi_sanilmaz(self):
         """`re.I` ile arayan bir regex 'Doğru seçenek bu…' içindeki b'yi B sanar."""
         q = soru("q1", "Kök?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
@@ -130,6 +164,11 @@ class KorOgrenciTest(unittest.TestCase):
         """Doğru şık boy sıralamasında gezinirse örüntü yoktur — yanlış alarm olmamalı."""
         fatals = audit_et(havuz([140, 120, 100, 80, 60], answer_index=2))
         self.assertEqual([f for f in fatals if "kör öğrenci" in f], [])
+
+    def test_esit_uzunluklar_boy_ipucu_sayilmaz(self):
+        """Eşit boydaki şıklar birbirinden ayırt edilemez; iki uçta da sayılmamalıdır."""
+        uzun, kisa, olcum = audit.boy_egilimi(havuz([20, 20, 20, 20, 20], answer_index=0))
+        self.assertEqual((uzun, kisa, olcum), (0, 0, 30))
 
     def test_dolgu_yalniz_celdiricideyse_yakalanir(self):
         """Dolgu kalıbı yalnız çeldiricilerde ise kalıp 'yanlış' işareti olur."""
@@ -222,7 +261,21 @@ class GuncellikTest(unittest.TestCase):
             _, issues = audit.audit(path)
         finally:
             os.unlink(path)
-        self.assertTrue(any("mevzuat oranı" in m for _, m in issues), issues)
+        self.assertTrue(any("sayısal mevzuat" in m for _, m in issues), issues)
+
+    def test_guncel_yil_ve_kaynakli_dogrudan_oran_serbesttir(self):
+        q = soru("q1", "Türkiye'de teslim edilen mallarda KDV oranı yüzde kaçtır?",
+                 {"A": "%20", "B": "%1", "C": "%10", "D": "%8", "E": "%18"}, answer="A")
+        q["validYear"] = 2026
+        q["source"] = {"legislationRef": "3065 sayılı KDVK m. 28 ve ilgili CB Kararı"}
+        self.assertEqual([m for _, m in sorunlar([q]) if "sayısal mevzuat" in m], [])
+
+    def test_guncel_yil_ve_kaynakli_dogrudan_sure_serbesttir(self):
+        q = soru("q1", "İlgili kanuna göre başvuru süresi kaç gündür?",
+                 {"A": "30 gün", "B": "7 gün", "C": "10 gün", "D": "15 gün", "E": "60 gün"})
+        q["validYear"] = 2026
+        q["source"] = {"legislationRef": "Örnek Kanun m. 10/2"}
+        self.assertEqual([m for _, m in sorunlar([q]) if "sayısal mevzuat" in m], [])
 
     def test_turetilmis_oran_uyari_degildir(self):
         """'4 yıllık ömrün amortisman oranı %25' türetilmiştir; mevzuat değişse bayatlamaz."""
@@ -282,6 +335,18 @@ class GuncellikTest(unittest.TestCase):
         finally:
             os.unlink(path)
         self.assertEqual([m for _, m in issues if "mevzuat oranı" in m], [])
+
+
+class KokProfiliTest(unittest.TestCase):
+    def test_matematikte_kisa_formul_koku_tek_basina_uyari_degildir(self):
+        qs = []
+        for i in range(30):
+            qs.append(soru(f"q{i}", f"x + {i} = {i + 2} ise x kaçtır?",
+                           {"A": f"{i}-a", "B": f"{i}-b", "C": f"{i}-c",
+                            "D": f"{i}-d", "E": f"{i}-e"}, answer="ABCDE"[i % 5],
+                           ders="matematik"))
+        self.assertEqual([m for _, m in sorunlar(qs) if "kök profili" in m], [])
+        self.assertEqual([m for _, m in sorunlar(qs) if "sayısal mevzuat" in m], [])
 
 
 if __name__ == "__main__":

@@ -177,10 +177,10 @@ q("Anlaşılabilirlik bakımından aşağıdakilerden hangisi doğrudur?",
   "Kavramsal Çerçeve: anlaşılabilirlik bilginin açık ve öz sunulmasıdır. Bazı olgular doğası gereği karmaşıktır; anlaşılması güç diye rapor dışında bırakılırsa rapor eksik ve yanıltıcı olur. Raporlar, makul bilgiye sahip kullanıcılar için hazırlanır.",
   "Kavramsal Çerçeve (2018) - anlaşılabilirlik")
 
-q("Aşağıdakilerden hangileri finansal bilginin TEMEL niteliksel özelliklerindendir?\n\nI. İhtiyaca uygunluk\n\nII. Gerçeğe uygun şekilde sunum\n\nIII. Karşılaştırılabilirlik",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Temel niteliksel özellikler ihtiyaca uygunluk (I) ve gerçeğe uygun şekilde sunumdur (II). Karşılaştırılabilirlik (III) ise destekleyici bir niteliksel özelliktir.",
+q("Aşağıdakilerden hangileri finansal bilginin TEMEL niteliksel özelliklerindendir?\n\nI. İhtiyaca uygunluk\n\nII. Karşılaştırılabilirlik\n\nIII. Anlaşılabilirlik",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "İhtiyaca uygunluk (I) temel niteliksel özelliktir. Karşılaştırılabilirlik (II) ve anlaşılabilirlik (III) ise destekleyici niteliksel özelliklerdir.",
   "Kavramsal Çerçeve (2018) - niteliksel özellikler", onculu=True)
 
 q("Aşağıdakilerden hangileri DESTEKLEYİCİ niteliksel özelliklerdendir?\n\nI. Karşılaştırılabilirlik\n\nII. Doğrulanabilirlik\n\nIII. Zamanında sunum",

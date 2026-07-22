@@ -126,10 +126,10 @@ q("Aşağıdakilerden hangileri TFRS 9'a göre finansal varlıkların ölçüm s
   "TFRS 9 üç ölçüm sınıfı öngörür: itfa edilmiş maliyet (I), gerçeğe uygun değer farkı diğer kapsamlı gelire yansıtılan (II) ve gerçeğe uygun değer farkı kâr veya zarara yansıtılan (III).",
   "TFRS 9 - ölçüm sınıfları")
 
-q("Aşağıdaki ifadelerden hangileri finansal varlıkların sınıflandırılması bakımından doğrudur?\n\nI. İşletmenin iş modeli esas alınır\n\nII. Sözleşmeye bağlı nakit akışı özellikleri esas alınır\n\nIII. Yönetimin varlığı elde tutma niyeti tek başına belirleyicidir",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "TFRS 9 sınıflandırmayı iş modeli (I) ve sözleşmeye bağlı nakit akışı özellikleri (II) üzerine kurar. Yönetimin NİYETİ tek başına belirleyici DEĞİLDİR; bu eski TMS 39 yaklaşımıdır. Bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri finansal varlıkların sınıflandırılması bakımından doğrudur?\n\nI. İşletmenin iş modeli esas alınır\n\nII. İşletmenin faaliyet gösterdiği sektör tek başına esas alınır\n\nIII. Yönetimin varlığı elde tutma niyeti tek başına belirleyicidir",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "TFRS 9 sınıflandırmada işletmenin iş modelini esas alır (I). Faaliyet gösterilen sektör tek başına sınıflandırma ölçütü değildir (II); yönetimin varlığı elde tutma niyeti de tek başına belirleyici değildir (III). Yalnız I doğrudur.",
   "TFRS 9 - sınıflandırma")
 
 q("Sadece anapara ve faiz ödemesi ölçütü bakımından aşağıdakilerden hangisi doğrudur?",

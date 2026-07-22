@@ -28,7 +28,7 @@
     "stem": "Fon akım tablosunda 'fon' kavramı geniş anlamıyla neyi ifade eder?",
     "options": {
       "A": "İşletmenin tüm mali kaynaklarını (bütün kaynakları)",
-      "B": "Yalnızca kasadaki hazır nakit tutarını (dar anlamı)",
+      "B": "Yalnızca kasadaki hazır nakit tutarını gösterir (dar anlamı)",
       "C": "Yalnızca bankadaki vadesiz mevduat bakiyesini",
       "D": "Yalnızca stoklara bağlanan işletme sermayesini",
       "E": "Yalnızca ortakların koyduğu özkaynak tutarını"
@@ -292,7 +292,7 @@
     "stem": "Dönem net kârı 300.000 ₺, amortisman gideri 80.000 ₺, karşılık gideri (fon çıkışı gerektirmeyen) 20.000 ₺ olan bir işletmede faaliyetlerden sağlanan fon kaç ₺'dir?",
     "options": {
       "A": "300.000",
-      "B": "380.000",
+      "B": "1.380.000",
       "C": "100.000",
       "D": "200.000",
       "E": "400.000"
@@ -421,7 +421,7 @@
     "id": "mta-fon-gen-0020",
     "ders": "mali_tablolar_analizi",
     "konu": "fon_akim_analizi",
-    "stem": "Aşağıdaki işlemlerden hangileri fon KULLANIMIdır?\n\nI. Ortaklara temettü ödenmesi\n\nII. Nakit sermaye artırımı\n\nIII. Uzun vadeli borç anaparasının ödenmesi",
+    "stem": "Aşağıdaki işlemlerden hangileri fon KULLANIMIdır?\n\nI. Ortaklara temettü ödenmesi\n\nII. Nakit sermaye artırımı\n\nIII. Uzun vadeli borçlanma yoluyla nakit sağlanması",
     "options": {
       "A": "Yalnız I",
       "B": "I ve III",
@@ -429,8 +429,8 @@
       "D": "I ve II",
       "E": "I, II ve III"
     },
-    "answer": "B",
-    "solution": "**I (temettü ödemesi)** ve **III (UV borç ödemesi)** fon çıkışıdır → kullanımdır. **II (nakit sermaye artırımı)** ise fon kaynağıdır. Doğru cevap **I ve III**.",
+    "answer": "A",
+    "solution": "**I (temettü ödemesi)** işletmeden fon çıkışına yol açtığı için fon kullanımıdır. **II (nakit sermaye artırımı)** ve **III (uzun vadeli borçlanma)** ise işletmeye fon sağlayan kaynaklardır. Doğru cevap **Yalnız I**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",

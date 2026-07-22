@@ -129,10 +129,10 @@ q("Devlet teşviklerinin kâr veya zarara yansıtılma dönemi bakımından aşa
   "TMS 20: devlet teşvikleri, teşviklerle karşılanması amaçlanan maliyetlerin gider olarak muhasebeleştirildiği dönemler boyunca sistematik biçimde kâr veya zarara yansıtılır. Tahsil esasına göre gelir yazma, tahakkuk esasıyla bağdaşmaz.",
   "TMS 20 - eşleştirme")
 
-q("Aşağıdakilerden hangileri TMS 20'ye göre devlet teşvikinin muhasebeleştirilmesi için aranır?\n\nI. İşletmenin teşvik koşullarını yerine getireceğine dair makul güvence\n\nII. Teşvikin elde edileceğine dair makul güvence\n\nIII. Teşvikin nakden tahsil edilmiş olması",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "TMS 20 iki koşul arar: koşulların yerine getirileceğine dair makul güvence (I) ve teşvikin elde edileceğine dair makul güvence (II). Fiilî TAHSİL (III) muhasebeleştirme koşulu değildir; teşvikin tahsil şekli uygulanacak yöntemi etkilemez.",
+q("Aşağıdakilerden hangileri TMS 20'ye göre devlet teşvikinin muhasebeleştirilmesi için aranır?\n\nI. İşletmenin teşvik koşullarını yerine getireceğine dair makul güvence\n\nII. Teşvikin nakden tahsil edilmiş olması\n\nIII. Teşvik tutarının peşinen özkaynağa kaydedilmiş olması",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Koşulların yerine getirileceğine dair makul güvence aranır (I). Fiilî tahsil muhasebeleştirme koşulu değildir (II) ve teşvik tutarı peşinen özkaynağa kaydedilmez (III). Yalnız I doğrudur.",
   "TMS 20 - muhasebeleştirme koşulları")
 
 q("Aşağıdaki ifadelerden hangileri TMS 20 bakımından doğrudur?\n\nI. Teşviklerde gelir yaklaşımı benimsenmiştir\n\nII. Teşvikler doğrudan özkaynağa kaydedilmez\n\nIII. Vergi tatilleri ve yatırım indirimleri TMS 20 kapsamındadır",

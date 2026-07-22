@@ -106,10 +106,10 @@ q("TMS 10'a göre finansal tabloların yayımı için onaylandığı tarih bakı
   "TMS 10: işletme, finansal tabloların yayımı için onaylandığı tarihi ve bu onayı kimin verdiğini açıklar. İşletmenin ortaklarının veya diğer kişilerin finansal tabloları yayımlandıktan sonra değiştirme yetkisi varsa, işletme bu durumu da açıklar.",
   "TMS 10 - onay tarihinin açıklanması")
 
-q("Aşağıdaki ifadelerden hangileri TMS 10 bakımından doğrudur?\n\nI. Sonraki olaylar dönemi, raporlama dönemi sonunda başlar\n\nII. Sonraki olaylar dönemi, tabloların yayımı için onaylandığı tarihte sona erer\n\nIII. Sonraki olaylar yalnızca aleyhteki olayları kapsar",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "I ve III"],
-  "Sonraki olaylar dönemi raporlama dönemi sonunda başlar (I) ve tabloların yayımı için onaylandığı tarihte sona erer (II). Sonraki olaylar LEHTE VE ALEYHTE tüm olayları kapsar; bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri TMS 10 bakımından doğrudur?\n\nI. Sonraki olaylar dönemi, raporlama dönemi sonunda başlar\n\nII. Sonraki olaylar dönemi, finansal tabloların kamuya açıklandığı tarihte sona erer\n\nIII. Sonraki olaylar yalnızca aleyhteki olayları kapsar",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "I ve III"],
+  "Sonraki olaylar dönemi raporlama dönemi sonunda başlar (I) ve finansal tabloların kamuya açıklandığı değil, yayımı için onaylandığı tarihte sona erer (II). Lehte ve aleyhte olayların ikisini de kapsadığından III de yanlıştır. Yalnız I doğrudur.",
   "TMS 10 - tarih aralığı")
 
 q("Finansal tabloların onaylanma süreci bakımından aşağıdakilerden hangisi doğrudur?",

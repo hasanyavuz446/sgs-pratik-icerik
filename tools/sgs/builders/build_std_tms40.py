@@ -143,10 +143,10 @@ q("Aşağıdakilerden hangileri TMS 40'a göre yatırım amaçlı gayrimenkuldü
   "TMS 40 üçünü de yatırım amaçlı gayrimenkul örneği olarak sayar: değer artışı amacıyla tutulan arsa (I), kullanımı belirlenmemiş arsa (II — değer artışı amacıyla tutuluyor sayılır) ve faaliyet kiralamasıyla kiraya verilen bina (III).",
   "TMS 40 - yatırım amaçlı örnekler")
 
-q("Aşağıdakilerden hangileri TMS 40'a göre yatırım amaçlı gayrimenkul DEĞİLDİR?\n\nI. Normal iş akışında satılmak üzere tutulan gayrimenkul\n\nII. Sahibi tarafından üretimde kullanılan fabrika\n\nIII. Kiraya verilmek üzere tutulan boş bina",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Satılmak üzere tutulan gayrimenkul stoktur (I) ve üretimde kullanılan fabrika TMS 16 kapsamındadır (II); ikisi de yatırım amaçlı değildir. Kiraya verilmek üzere tutulan boş bina (III) ise yatırım amaçlı gayrimenkuldür; bu nedenle yanlıştır.",
+q("Aşağıdakilerden hangileri TMS 40'a göre yatırım amaçlı gayrimenkul DEĞİLDİR?\n\nI. Normal iş akışında satılmak üzere tutulan gayrimenkul\n\nII. Değer artışı amacıyla elde tutulan arsa\n\nIII. Kiraya verilmek üzere tutulan boş bina",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Normal iş akışında satılmak üzere tutulan gayrimenkul stoktur ve TMS 40 kapsamında değildir (I). Değer artışı amacıyla tutulan arsa (II) ile kiraya verilmek üzere tutulan boş bina (III) yatırım amaçlı gayrimenkuldür. Yalnız I doğrudur.",
   "TMS 40 - kapsam dışı")
 
 q("Yatırım amaçlı gayrimenkulün muhasebeleştirilme ölçütleri bakımından aşağıdakilerden hangisi doğrudur?",

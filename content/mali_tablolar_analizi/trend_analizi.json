@@ -118,7 +118,7 @@
       "B": "%50",
       "A": "%200",
       "C": "%150",
-      "D": "%5",
+      "D": "%25",
       "E": "%100"
     },
     "answer": "B",
@@ -380,7 +380,7 @@
     "stem": "Baz yılda 400.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %130'dur. Bu yıldaki kalem tutarı kaç ₺'dir?",
     "options": {
       "A": "520.000",
-      "B": "308.000",
+      "B": "30.800",
       "C": "530.000",
       "D": "130.000",
       "E": "400.000"
@@ -534,7 +534,7 @@
     "stem": "Baz yılda 500.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %130'dur. Bu yıldaki kalem tutarı kaç ₺'dir?",
     "options": {
       "A": "630.000",
-      "B": "385.000",
+      "B": "38.500",
       "C": "650.000",
       "D": "130.000",
       "E": "500.000"
@@ -557,7 +557,7 @@
     "options": {
       "E": "%110",
       "A": "%10",
-      "B": "%90,9",
+      "B": "%9",
       "C": "%90",
       "D": "%11"
     },
@@ -665,7 +665,7 @@
     "konu": "trend_analizi",
     "stem": "Bir yıldaki kalem tutarı 480.000 ₺ ve bu yılın trend yüzdesi %120'dir. Baz yıl tutarı kaç ₺'dir?",
     "options": {
-      "A": "600.000",
+      "A": "60.000",
       "B": "576.000",
       "C": "360.000",
       "D": "400.000",
@@ -817,16 +817,16 @@
     "id": "mta-trend-gen-0038",
     "ders": "mali_tablolar_analizi",
     "konu": "trend_analizi",
-    "stem": "Baz yılda 600.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %150'dir. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "stem": "İlgili yılda tutarı 900.000 ₺ ve trend yüzdesi %150 olan bir kalemin baz yıl tutarı kaç ₺'dir?",
     "options": {
       "A": "750.000",
-      "B": "900.000",
-      "C": "400.000",
+      "B": "600.000",
+      "C": "1.350.000",
       "D": "150.000",
-      "E": "690.000"
+      "E": "900.000"
     },
     "answer": "B",
-    "solution": "İlgili Yıl = 600.000 × 1,50 = **900.000 ₺** (ters işlem).",
+    "solution": "Baz yıl tutarı = İlgili yıl tutarı ÷ (Trend yüzdesi/100) = 900.000 ÷ 1,50 = **600.000 ₺**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
@@ -929,7 +929,7 @@
     "konu": "trend_analizi",
     "stem": "Bir yıldaki kalem tutarı 720.000 ₺ ve trend yüzdesi %120'dir. Baz yıl tutarı kaç ₺'dir?",
     "options": {
-      "A": "500.000",
+      "A": "50.000",
       "B": "864.000",
       "C": "540.000",
       "D": "600.000",
@@ -1235,16 +1235,16 @@
     "id": "mta-trend-gen-0057",
     "ders": "mali_tablolar_analizi",
     "konu": "trend_analizi",
-    "stem": "Baz yılda 800.000 ₺ olan bir kalemin bir yıldaki trend yüzdesi %125'tir. Bu yıldaki kalem tutarı kaç ₺'dir?",
+    "stem": "Bir kalemin baz yıl tutarı 800.000 ₺, ilgili yıldaki tutarı 1.000.000 ₺'dir. İlgili yılın trend yüzdesi kaçtır?",
     "options": {
-      "A": "1.000.000",
-      "B": "640.000",
-      "C": "925.000",
-      "D": "125.000",
-      "E": "900.000"
+      "A": "%125",
+      "B": "%80",
+      "C": "%25",
+      "D": "%120",
+      "E": "%150"
     },
     "answer": "A",
-    "solution": "İlgili Yıl = 800.000 × 1,25 = **1.000.000 ₺** (ters işlem).",
+    "solution": "Trend yüzdesi = 1.000.000 ÷ 800.000 × 100 = **%125**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",

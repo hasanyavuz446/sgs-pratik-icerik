@@ -111,10 +111,10 @@ q("Sökme ve restorasyon yükümlülüğü bakımından aşağıdakilerden hangi
   "TMS 16: maddi duran varlığın sökülmesi, taşınması veya yerleştirildiği alanın restorasyonuna ilişkin tahmini maliyeti, işletmenin o kalemi edindiğinde katlandığı yükümlülük ölçüsünde maliyete dâhil edilir.",
   "TMS 16 - sökme ve restorasyon")
 
-q("Aşağıdakilerden hangileri TMS 16'ya göre maddi duran varlığın maliyetine DÂHİL EDİLİR?\n\nI. Nakliye ve taşıma maliyetleri\n\nII. Montaj ve kurulum maliyetleri\n\nIII. Yeni tesisin açılış maliyetleri",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Nakliye (I) ve montaj (II), varlığı yerine ve çalışır duruma getirmenin doğrudan maliyetleridir; maliyete dâhildir. Yeni tesisin açılış maliyetleri (III) ise TMS 16'da açıkça maliyete dâhil edilmeyen unsurlar arasındadır.",
+q("Aşağıdakilerden hangileri TMS 16'ya göre maddi duran varlığın maliyetine DÂHİL EDİLİR?\n\nI. Nakliye ve taşıma maliyetleri\n\nII. Genel yönetim giderleri\n\nIII. Yeni tesisin açılış maliyetleri",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Nakliye ve taşıma maliyetleri (I), varlığı yerine ve çalışır duruma getirmenin doğrudan maliyetlerindendir. Genel yönetim giderleri (II) ile yeni tesisin açılış maliyetleri (III) maliyete dâhil edilmez. Yalnız I doğrudur.",
   "TMS 16 - maliyet unsurları")
 
 q("Aşağıdakilerden hangileri TMS 16'ya göre maddi duran varlığın maliyetine DÂHİL EDİLMEZ?\n\nI. Yeni ürünün reklam ve promosyon maliyetleri\n\nII. Personelin yeni müşteri kitlesiyle iş yapmaya yönelik eğitim maliyetleri\n\nIII. Genel yönetim giderleri",

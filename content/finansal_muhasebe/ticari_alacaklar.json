@@ -47,20 +47,20 @@
     "id": "finmuh-ticalacak-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "İşletme, alıcısından olan 30.000 ₺'lik senetsiz ticari alacağı karşılığında bir alacak senedi (bono) almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "Bir işletme, nakit satış fiyatı 100.000 ₺ olan malı müşterisine iki yıl sonra tahsil edilmek üzere 121.000 ₺'ye satmıştır. Sözleşmedeki finansman etkisi önemlidir ve KDV ihmal edilecektir. TFRS 15'e göre malın devredildiği tarihte hasılat ve sonraki dönemlerde finansman geliri olarak muhasebeleştirilecek toplam tutarlar sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "100 Kasa (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
-      "B": "120 Alıcılar (B) 30.000 / 121 Alacak Senetleri (A) 30.000",
-      "C": "121 Alacak Senetleri (B) 30.000 / 600 Yurt İçi Satışlar (A) 30.000",
-      "D": "121 Alacak Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000",
-      "E": "321 Borç Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000"
+      "A": "121.000 ₺ hasılat; finansman geliri yok",
+      "B": "100.000 ₺ hasılat; 100.000 ₺ finansman geliri",
+      "C": "21.000 ₺ hasılat; 100.000 ₺ finansman geliri",
+      "D": "100.000 ₺ hasılat; 21.000 ₺ finansman geliri",
+      "E": "121.000 ₺ hasılat; 21.000 ₺ finansman gideri"
     },
     "answer": "D",
-    "solution": "Senetsiz alacak senede bağlanınca alacağın niteliği değişir: **121 Alacak Senetleri (B) 30.000 / 120 Alıcılar (A) 30.000**. Alacak tutarı aynı kalır, yalnızca senetli hâle gelir.",
+    "solution": "Önemli finansman bileşeni bulunan satışta hasılat, malın devrindeki **nakit satış fiyatı olan 100.000 ₺** üzerinden kaydedilir. Taahhüt edilen 121.000 ₺ ile nakit satış fiyatı arasındaki **21.000 ₺**, finansman süresi boyunca etkin faiz esasına göre finansman geliri olarak muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 120/121"
+      "styleRef": "SGS Finansal Muhasebe (vadeli satış; finansman bileşeni)",
+      "legislationRef": "TFRS 15 Müşteri Sözleşmelerinden Hasılat, par. 60-61"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "finmuh-ticalacak-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "İşletme, elindeki 25.000 ₺'lik alacak senedini vadesinde nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme 100.000 ₺ tutarındaki ticari alacağını, borçlunun ödememesi hâlinde faktörün işletmeye başvurma hakkı bulunmayacak şekilde 96.000 ₺'ye devretmiştir. Alacağa ilişkin başlıca risk ve getiriler faktöre geçmiştir. TFRS 9'a göre en uygun muhasebeleştirme hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000",
-      "B": "121 Alacak Senetleri (B) 25.000 / 100 Kasa (A) 25.000",
-      "C": "100 Kasa (B) 25.000 / 120 Alıcılar (A) 25.000",
-      "D": "121 Alacak Senetleri (B) 25.000 / 600 Yurt İçi Satışlar (A) 25.000",
-      "E": "100 Kasa (B) 25.000 / 642 Faiz Gelirleri (A) 25.000"
+      "A": "Alacak finansal tablolardan çıkarılır; 96.000 ₺ nakit ve 4.000 ₺ devir zararı muhasebeleştirilir.",
+      "B": "Alacak bilançoda aynen tutulur; alınan 96.000 ₺ satış hasılatı yazılır.",
+      "C": "Alacağın yalnız 4.000 ₺'lik kısmı bilançodan çıkarılır.",
+      "D": "Alacak 100.000 ₺ artırılır ve 96.000 ₺ finansman gideri kaydedilir.",
+      "E": "Devir hiçbir kayıt doğurmaz; tahsilat yapılıncaya kadar beklenir."
     },
     "answer": "A",
-    "solution": "Kasa (varlık) artar → **100 Kasa (B)**; senetli alacak (varlık) tahsille çıkar → **121 Alacak Senetleri (A)**. Kayıt: 100 Kasa (B) 25.000 / 121 Alacak Senetleri (A) 25.000.",
+    "solution": "Rücusuz devirde başlıca kredi riski ve getiriler faktöre geçmişse finansal varlık bilanço dışı bırakılır. İşletme **96.000 ₺ nakit** alır ve alacağın 100.000 ₺ defter değeriyle arasındaki **4.000 ₺ farkı devir zararı** olarak muhasebeleştirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 121 Alacak Senetleri"
+      "styleRef": "SGS Finansal Muhasebe (rücusuz faktoring; finansal tablo etkisi)",
+      "legislationRef": "TFRS 9 Finansal Araçlar - finansal varlıkların bilanço dışı bırakılması"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "finmuh-ticalacak-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "'126 Verilen Depozito ve Teminatlar' hesabı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme, sekiz ay sonra geri alınacak 30.000 ₺ kira depozitosu ile üç yıl sonra geri alınacak 80.000 ₺ teminat vermiştir. Tekdüzen Hesap Planı'na göre bu tutarlar sırasıyla hangi hesaplarda izlenir?",
     "options": {
-      "A": "İşletmenin üçüncü kişilerden geri verilmek üzere aldığı depozito ve teminatları izleyen bir kaynak (pasif) hesabıdır.",
-      "B": "İşletmenin tahsili şüpheli hâle gelmiş ticari alacaklarını ayrı olarak izlemek için kullandığı bir aktif hesaptır.",
-      "C": "Verilen teminatlardan dönem içinde elde edilen faiz ve komisyon gelirlerini izleyen bir gelir tablosu hesabıdır.",
-      "D": "İşletmenin üçüncü kişilere geri alınmak üzere verdiği depozito ve teminatları izleyen bir alacak (aktif) hesabıdır.",
-      "E": "İşletmenin sahip olduğu duran varlıkların birikmiş amortismanını izleyen, aktifi düzenleyici bir hesaptır."
+      "A": "120 Alıcılar ve 220 Alıcılar",
+      "B": "126 Verilen Depozito ve Teminatlar ve 126 Verilen Depozito ve Teminatlar",
+      "C": "226 Verilen Depozito ve Teminatlar ve 126 Verilen Depozito ve Teminatlar",
+      "D": "126 Verilen Depozito ve Teminatlar ve 226 Verilen Depozito ve Teminatlar",
+      "E": "136 Diğer Çeşitli Alacaklar ve 236 Diğer Çeşitli Alacaklar"
     },
     "answer": "D",
-    "solution": "**126 Verilen Depozito ve Teminatlar**, işletmenin geri alınmak üzere üçüncü kişilere verdiği depozito/teminatları izleyen bir **alacak (aktif)** hesabıdır (ör. kira depozitosu).",
+    "solution": "Bir yıl içinde geri alınacak depozito **126 Verilen Depozito ve Teminatlar** hesabında dönen varlık; bir yıldan uzun vadeli olan ise **226 Verilen Depozito ve Teminatlar** hesabında duran varlık olarak izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 126 Verilen Depozito ve Teminatlar"
+      "styleRef": "SGS Finansal Muhasebe (depozito; vade sınıflaması)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 126 ve 226 Verilen Depozito ve Teminatlar"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "finmuh-ticalacak-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 121 ALACAK SENETLERİ | 18.000 | |\n| 120 ALICILAR | | 18.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "TFRS 9 kapsamında ticari alacaklar için kullanılan karşılık matrisinde; vadesi geçmemiş 200.000 ₺ alacağa %2, 1-90 gün gecikmiş 100.000 ₺ alacağa %8 ve 90 günden fazla gecikmiş 50.000 ₺ alacağa %30 beklenen kayıp oranı uygulanmaktadır. Toplam beklenen kredi zararı kaç ₺'dir?",
     "options": {
-      "A": "Senetsiz ticari alacağın karşılığında senet (bono) alınması",
-      "B": "Alacak senedinin vadesinde kasadan nakden tahsil edilmesi",
-      "C": "Elde bulunan alacak senedinin satıcıya borca karşılık ciro edilmesi",
-      "D": "Senetsiz alacağın tahsilinin şüpheli hâle gelmesi üzerine kaydı",
-      "E": "Malın senet karşılığında peşin olarak satılması işlemi"
+      "A": "27.000 ₺",
+      "B": "23.000 ₺",
+      "C": "19.000 ₺",
+      "D": "31.000 ₺",
+      "E": "35.000 ₺"
     },
     "answer": "A",
-    "solution": "Senetli alacağın artması (121 borç) ve senetsiz alacağın azalması (120 alacak), **senetsiz ticari alacağın karşılığında senet alınması** işlemini gösterir.",
+    "solution": "Beklenen kredi zararı; 200.000 × %2 = 4.000 ₺, 100.000 × %8 = 8.000 ₺ ve 50.000 × %30 = 15.000 ₺ olmak üzere toplam **27.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 120/121"
+      "styleRef": "SGS Finansal Muhasebe (ticari alacak yaşlandırması; hesaplama)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.5.15-5.5.17"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "finmuh-ticalacak-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "İşletme, elindeki bir alacak senedini vadesinden önce paraya çevirmek için bankaya iskonto ettirmiş (kırdırmış); banka faiz keserek kalanı hesaba geçirmiştir. Bankanın kestiği iskonto (faiz) işletme açısından hangi hesaba yazılır?",
+    "stem": "İşletme 1 Ekim'de, nominal değeri 120.000 ₺ olan ve yıllık %30 faiz taşıyan bir alacak senedi almıştır. Senedin anaparası ve faizi altı ay sonra birlikte tahsil edilecektir. 31 Aralık'ta üç aylık döneme ait tahakkuk etmiş faiz geliri kaç ₺'dir?",
     "options": {
-      "A": "642 Faiz Gelirleri",
-      "B": "600 Yurt İçi Satışlar",
-      "C": "647 Reeskont Faiz Gelirleri",
-      "D": "780 Finansman Giderleri",
-      "E": "121 Alacak Senetleri"
+      "A": "36.000 ₺",
+      "B": "18.000 ₺",
+      "C": "12.000 ₺",
+      "D": "9.000 ₺",
+      "E": "3.000 ₺"
     },
     "answer": "D",
-    "solution": "Senedin vadesinden önce kırdırılmasında bankanın kestiği faiz, işletme için bir **finansman gideridir**: **780 Finansman Giderleri**ne borç yazılır. 121 senet nominal tutarla alacaklanır, 102 net tutarla borçlanır.",
+    "solution": "Üç aylık faiz 120.000 × %30 × 3/12 = **9.000 ₺**dir. Dönemsellik gereği bu tutar 31 Aralık'ta faiz geliri olarak tahakkuk ettirilir; kalan üç aylık faiz izleyen döneme aittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 780 Finansman Giderleri (senet iskontosu)"
+      "styleRef": "SGS Finansal Muhasebe (faizli alacak senedi; tahakkuk)",
+      "legislationRef": "Dönemsellik Kavramı; 1 Sıra No'lu MSUGT - 181 Gelir Tahakkukları ve 642 Faiz Gelirleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-ticalacak-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 32.000 | |\n| 121 ALACAK SENETLERİ | | 32.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "İşletme 100.000 ₺ tutarındaki ticari alacağını 92.000 ₺ karşılığında faktöre devretmiştir. Sözleşmeye göre borçlu ödemezse faktör tutarın tamamını işletmeden isteyebilecektir; dolayısıyla başlıca kredi riski işletmede kalmaktadır. TFRS 9'a göre en uygun değerlendirme hangisidir?",
     "options": {
-      "A": "Alacak senedinin ciro edilmesi",
-      "B": "Alacak senedinin vadesinde nakden tahsil edilmesi",
-      "C": "Senetsiz alacağın senede bağlanması",
-      "D": "Borç senedinin ödenmesi",
-      "E": "Şüpheli alacağın karşılığının ayrılması"
+      "A": "Alacak tamamen bilanço dışı bırakılır ve 8.000 ₺ satış geliri yazılır.",
+      "B": "Alacak bilanço dışı bırakılmaz; alınan tutar teminatlı finansman yükümlülüğü olarak değerlendirilir.",
+      "C": "Alacak değersiz sayılarak tamamı gider yazılır.",
+      "D": "Alacağın yalnız 92.000 ₺'lik kısmı bilançodan çıkarılır, kalan 8.000 ₺ stok hesabına alınır.",
+      "E": "Faktoring sözleşmesi hiçbir finansal tablo kaydı doğurmaz."
     },
     "answer": "B",
-    "solution": "Kasaya nakit girişi (100 borç) ve senetli alacağın azalması (121 alacak), **alacak senedinin vadesinde nakden tahsil edilmesi**ni gösterir.",
+    "solution": "Rüculu faktoringde borçlunun ödememe riski önemli ölçüde işletmede kalıyorsa alacak bilanço dışı bırakılmaz. Faktörden alınan **92.000 ₺**, alacak teminat gösterilerek sağlanan bir finansman olarak ve buna karşılık bir yükümlülükle muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (ters-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 121 Alacak Senetleri"
+      "styleRef": "SGS Finansal Muhasebe (rüculu faktoring; risk değerlendirmesi)",
+      "legislationRef": "TFRS 9 Finansal Araçlar - finansal varlıkların bilanço dışı bırakılması"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "finmuh-ticalacak-gen-0023",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Nominal değeri 150.000 ₺, vadesine 200 gün kalan bir alacak senedi için yıllık %45 faiz oranıyla iç iskonto yöntemine göre hesaplanan reeskont tutarı 30.000 ₺'dir. Buna göre senedin dönem sonu bilançosunda gösterilecek peşin (tasarruf) değeri kaç ₺'dir?",
+    "stem": "TFRS 9'a göre beklenen kredi zararının ölçümünde aşağıdakilerden hangisi birlikte dikkate alınır?",
     "options": {
-      "A": "180.000",
-      "B": "150.000",
-      "C": "30.000",
-      "D": "120.000",
-      "E": "135.000"
+      "A": "Yalnız geçmişte gerçekleşen kesin zararlar; mevcut ve gelecekteki koşullar dikkate alınmaz.",
+      "B": "Yalnız yönetimin en iyimser tahmini; paranın zaman değeri dikkate alınmaz.",
+      "C": "Yalnız dava veya icra safhasına ulaşmış alacaklar; diğer olası kayıplar dışlanır.",
+      "D": "Olasılıklara göre ağırlıklandırılmış tarafsız tutar, paranın zaman değeri ve makul şekilde desteklenebilir ileriye yönelik bilgi",
+      "E": "Alacağın nominal tutarı ile işletmenin dönem kârı arasındaki fark"
     },
     "answer": "D",
-    "solution": "Peşin (tasarruf) değer = Nominal − Reeskont = 150.000 − 30.000 = **120.000 ₺**. Bilançoda senet 121 (150.000) − 122 Reeskont (30.000) = net 120.000 ₺ ile gösterilir.",
+    "solution": "Beklenen kredi zararı; mümkün sonuçları yansıtan **olasılık ağırlıklı ve tarafsız tutarı**, **paranın zaman değerini** ve geçmiş olaylarla mevcut şartların yanında makul ve desteklenebilir **ileriye yönelik bilgiyi** içerir. Yalnız gerçekleşmiş zarar veya dava şartı aranmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-reeskont; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 281; 1 Sıra No'lu MSUGT - 121/122"
+      "styleRef": "SGS Finansal Muhasebe (beklenen kredi zararı; ölçüm ilkeleri)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.5.17"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "finmuh-ticalacak-gen-0026",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Alacak senetleri reeskontu ile ilgili aşağıdaki hesap eşleştirmelerinden hangisi doğrudur?",
+    "stem": "VUK'a göre vadesi gelmemiş bir alacak senedinin reeskontunda kullanılacak faiz oranıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Dönem sonu reeskont gideri → 647 Reeskont Faiz Gelirleri; izleyen dönem iptali → 657 Reeskont Faiz Giderleri",
-      "B": "İzleyen dönem reeskont iptali (gelir) → 657 Reeskont Faiz Giderleri; karşı hesap 121 Alacak Senetleri",
-      "C": "Dönem sonu reeskont tutarının karşı hesabı → 129 Şüpheli Ticari Alacaklar Karşılığı hesabıdır",
-      "D": "Dönem sonu reeskont tutarı doğrudan → 780 Finansman Giderleri hesabına gider yazılarak izlenir",
-      "E": "Dönem sonu reeskont gideri → 657 Reeskont Faiz Giderleri; izleyen dönem iptali → 647 Reeskont Faiz Gelirleri"
+      "A": "Senette oran yazsa bile her durumda işletmenin banka kredi faizi kullanılır.",
+      "B": "Her durumda alacaklının serbestçe belirlediği oran kullanılır.",
+      "C": "Faiz oranı bulunmayan senetlere reeskont uygulanamaz.",
+      "D": "Senette yazılı oran dikkate alınmaz; yalnız enflasyon oranı kullanılır.",
+      "E": "Senette faiz oranı açıklanmışsa bu oran, açıklanmamışsa Türkiye Cumhuriyet Merkez Bankasının resmî iskonto oranı kullanılır."
     },
     "answer": "E",
-    "solution": "Dönem sonunda reeskont **gider** (657 Reeskont Faiz Giderleri), izleyen dönemde iptali **gelir** (647 Reeskont Faiz Gelirleri) olarak kaydedilir; karşı hesap her ikisinde 122'dir.",
+    "solution": "VUK 281 uyarınca senette faiz oranı açıklanmışsa **senetteki oran** esas alınır. Oran açıklanmamışsa değerleme gününde geçerli **TCMB resmî iskonto oranı** kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (eşleştirme-doğru; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 657/647/122"
+      "styleRef": "SGS Finansal Muhasebe (VUK reeskont oranı; kural uygulama)",
+      "legislationRef": "213 sayılı VUK md. 281"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "finmuh-ticalacak-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Dönem sonunda alacak senetlerine reeskont uygulanmasının cari dönem kârına etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "VUK 323'teki diğer koşulların oluştuğu 180.000 ₺ tutarındaki ticari alacağın 120.000 ₺'lik kısmı tahsil kabiliyeti bulunan ipotekle güvence altındadır. Buna göre ayrılabilecek azami şüpheli alacak karşılığı kaç ₺'dir?",
     "options": {
-      "A": "Cari dönem kârını artırır (gelir yazıldığı için).",
-      "B": "Cari dönem kârını etkilemez, yalnızca bilançoya yansır.",
-      "C": "Cari dönem kârını azaltır (gider yazıldığı için).",
-      "D": "Yalnızca hesaplanan KDV tutarını etkiler, kâra dokunmaz.",
-      "E": "Kârı etkilemeden sermayeyi doğrudan artırır."
+      "A": "180.000 ₺",
+      "B": "120.000 ₺",
+      "C": "60.000 ₺",
+      "D": "300.000 ₺",
+      "E": "Karşılık ayrılamaz"
     },
     "answer": "C",
-    "solution": "Alacak senetleri reeskontu **657 Reeskont Faiz Giderleri** ile gider yazıldığından cari dönem kârını **azaltır**. İzleyen dönemde iptali (647) o dönemin gelirini artırır.",
+    "solution": "Teminatlı alacaklarda şüpheli alacak karşılığı yalnız teminatla karşılanmayan kısım için ayrılır. Açık kısım 180.000 − 120.000 = **60.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-yorum; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - reeskontun sonuca etkisi"
+      "styleRef": "SGS Finansal Muhasebe (teminatlı şüpheli alacak; hesaplama)",
+      "legislationRef": "213 sayılı VUK md. 323"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "finmuh-ticalacak-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Şüpheli alacağın tahsil edilmesi üzerine, daha önce ayrılan ve artık konusu kalmayan 24.000 ₺'lik karşılığın iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
+    "stem": "Tamamı için karşılık ayrılmış 24.000 ₺ tutarındaki şüpheli ticari alacağın 9.000 ₺'si banka yoluyla tahsil edilmiştir. Kalan alacağın şüpheli niteliği sürmektedir. Tahsilat ve karşılık bakımından en uygun işlem hangisidir?",
     "options": {
-      "A": "100 Kasa (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
-      "B": "644 Konusu Kalmayan Karşılıklar (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
-      "C": "654 Karşılık Giderleri (B) 24.000 / 129 Şüpheli Ticari Alacaklar Karşılığı (A) 24.000",
-      "D": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 128 Şüpheli Ticari Alacaklar (A) 24.000",
-      "E": "129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000"
+      "A": "Karşılığın tamamı 24.000 ₺ gelir yazılarak iptal edilir; 128 hesabı değiştirilmez.",
+      "B": "Yalnız 102 Bankalar borçlandırılır; 128 ve 129 hesapları değiştirilmez.",
+      "C": "Kalan 15.000 ₺ de tahsil edilmiş sayılarak bütün hesaplar kapatılır.",
+      "D": "Tahsil edilen 9.000 ₺ için yeniden 654 Karşılık Giderleri borçlandırılır.",
+      "E": "102/128 kaydıyla 9.000 ₺ alacak kapatılır; aynı tutardaki karşılık 129/644 kaydıyla iptal edilir, kalan 15.000 ₺ 128 ve 129'da izlenir."
     },
     "answer": "E",
-    "solution": "Tahsil nedeniyle karşılığın konusu kalmaz; gelir yazılarak iptal edilir: **129 Şüpheli Ticari Alacaklar Karşılığı (B) 24.000 / 644 Konusu Kalmayan Karşılıklar (A) 24.000**. 644 bir gelir hesabıdır.",
+    "solution": "Tahsil edilen bölüm için **102 Bankalar (B) 9.000 / 128 Şüpheli Ticari Alacaklar (A) 9.000** kaydı yapılır. Bu bölüme ait karşılık da **129 (B) 9.000 / 644 (A) 9.000** ile iptal edilir. Tahsil edilmeyen ve şüpheli niteliği süren 15.000 ₺ hem 128 hem 129 hesaplarında kalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-iptal; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 129/644"
+      "styleRef": "SGS Finansal Muhasebe (şüpheli alacak; kısmi tahsilat)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 128, 129 ve 644 hesaplarının işleyişi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "finmuh-ticalacak-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "'654 Karşılık Giderleri' hesabı, gelir tablosunda hangi bölümde raporlanır?",
+    "stem": "TFRS 9'un basitleştirilmiş yaklaşımını önemli finansman bileşeni içermeyen ticari alacaklarına uygulayan bir işletme, zarar karşılığını hangi tutarda ölçer?",
     "options": {
-      "A": "Brüt satış kârının hesaplandığı net satışlar bölümünde",
-      "B": "Olağandışı gelir ve kârlar bölümünde ayrı bir kalem olarak",
-      "C": "Satılan malın maliyetini gösteren satışların maliyeti satırında",
-      "D": "Faaliyet dışı finansman giderleri bölümünde bir kalem olarak",
-      "E": "Diğer Faaliyetlerden Olağan Gider ve Zararlar bölümünde"
+      "A": "Yalnız dava açılmış alacakların nominal tutarında",
+      "B": "Her durumda ticari alacakların tamamı kadar",
+      "C": "Yalnız raporlama tarihinden sonraki bir ayda gerçekleşmesi beklenen zararda",
+      "D": "Sadece vergi mevzuatınca gider kabul edilen tutarda",
+      "E": "İlk finansal tablolara almadan itibaren ömür boyu beklenen kredi zararlarına eşit tutarda"
     },
     "answer": "E",
-    "solution": "**654 Karşılık Giderleri** (şüpheli alacak, stok değer düşüklüğü vb. karşılıkları), gelir tablosunda **Diğer Faaliyetlerden Olağan Gider ve Zararlar** bölümünde raporlanır.",
+    "solution": "Basitleştirilmiş yaklaşımda önemli finansman bileşeni içermeyen ticari alacakların zarar karşılığı, kredi riskindeki artış ayrıca izlenmeden **her zaman ömür boyu beklenen kredi zararına** eşit tutarda ölçülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu; 654 Karşılık Giderleri"
+      "styleRef": "SGS Finansal Muhasebe (TFRS 9; basitleştirilmiş yaklaşım)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.5.15"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "finmuh-ticalacak-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Şüpheli hâle gelen bir ticari alacak için karşılık ayrılmasının hangi temel muhasebe kavramıyla ilişkili olduğu söylenebilir?",
+    "stem": "Bir işletmenin 400.000 ₺ tutarındaki benzer riskli ticari alacakları için geçmiş kayıp oranı %3'tür. Raporlama tarihinde gelecekteki ekonomik koşullara ilişkin makul ve desteklenebilir bilgiler, bu oranın %25 artırılmasını gerektirmektedir. Başka düzeltme olmadığına göre beklenen kredi zararı kaç ₺'dir?",
     "options": {
-      "A": "Maliyet Esası",
-      "B": "Kişilik",
-      "C": "Parayla Ölçülme",
-      "D": "İhtiyatlılık",
-      "E": "Sosyal Sorumluluk"
+      "A": "3.000 ₺",
+      "B": "12.000 ₺",
+      "C": "13.000 ₺",
+      "D": "15.000 ₺",
+      "E": "100.000 ₺"
     },
     "answer": "D",
-    "solution": "Muhtemel bir zararın (tahsil edilemeyebilecek alacağın) önceden gider yazılması **İhtiyatlılık Kavramı**nın gereğidir; bu, kâr ve varlıkların olduğundan yüksek gösterilmesini engeller.",
+    "solution": "İleriye yönelik düzeltilmiş kayıp oranı %3 × 1,25 = **%3,75**tir. Beklenen kredi zararı 400.000 × %3,75 = **15.000 ₺** olarak hesaplanır. TFRS 9 yalnız geçmiş veriyi değil, desteklenebilir ileriye yönelik bilgiyi de dikkate alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-bağ; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - İhtiyatlılık; VUK md. 323"
+      "styleRef": "SGS Finansal Muhasebe (beklenen kredi zararı; ileriye yönelik düzeltme)",
+      "legislationRef": "TFRS 9 Finansal Araçlar, par. 5.5.17"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-ticalacak-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "'120 Alıcılar' hesabının işleyişi ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
+    "stem": "Ticari alacaklarda tahsilat riskini azaltmaya yönelik en uygun iç kontrol bileşimi hangisidir?",
     "options": {
-      "A": "Kredili (veresiye) satış yapıldığında borçlandırılır.",
-      "B": "Alıcıdan tahsilat yapıldığında alacaklandırılır.",
-      "C": "Bir dönen varlık (aktif) hesabıdır.",
-      "D": "Normalde borç kalanı verir.",
-      "E": "Bir kaynak (pasif) hesabı olup alacak kalanı verir."
+      "A": "Satış temsilcisinin kredi limiti belirleme, sevkiyat ve tahsilat kayıtlarını tek başına yürütmesi",
+      "B": "Vadesi geçen alacakların yaşlandırma raporundan çıkarılması",
+      "C": "Müşteri limitlerinin satış gerçekleştikten sonra belgesiz biçimde artırılması",
+      "D": "Alacak mutabakatlarının yalnız kaydı yapan personelce hazırlanması ve farkların araştırılmaması",
+      "E": "Kredi onayının satıştan ayrılması, müşteri limitlerinin sistemde izlenmesi, yaşlandırma raporlarının incelenmesi ve hesap ekstrelerinin müşterilere gönderilmesi"
     },
     "answer": "E",
-    "solution": "**E yanlıştır.** 120 Alıcılar bir **aktif (ticari alacak)** hesabıdır; veresiye satışta borçlanır, tahsilde alacaklanır ve normalde **borç kalanı** verir. Kaynak (pasif) hesabı değildir.",
+    "solution": "Kredi onayının satış işlevinden ayrılması, tanımlı limitlerin sistemce izlenmesi, gecikmelerin yaşlandırma raporuyla takip edilmesi ve müşteri mutabakatı; hem yetkisiz satış hem de tahsil edilememe riskini azaltan birbirini tamamlayıcı kontrollerdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 120 Alıcılar"
+      "styleRef": "SGS Finansal Muhasebe (ticari alacaklar; iç kontrol senaryosu)",
+      "legislationRef": "Muhasebe Bilgi Sistemleri - satış ve alacak döngüsü kontrolleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "finmuh-ticalacak-gen-0056",
     "ders": "finansal_muhasebe",
     "konu": "ticari_alacaklar",
-    "stem": "Senetli ticari alacak (121 Alacak Senetleri) ile senetsiz ticari alacak (120 Alıcılar) arasındaki temel fark aşağıdakilerden hangisidir?",
+    "stem": "Vadesi gelen 60.000 ₺ nominal değerli alacak senedi, borçluyla yapılan anlaşma sonucu 6.000 ₺ vade farkı eklenerek yeni bir senetle değiştirilmiştir. Yeni senedin nominal değeri ve yenileme tarihinde muhasebeleştirilecek finansman geliri sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "121 bir kaynak (pasif) hesabı olup alacak kalanı verir, 120 ise bir varlık (aktif) hesabıdır.",
-      "B": "120 bir yıldan uzun vadeli olduğundan duran varlık, 121 ise bir yıldan kısa vadeli dönen varlıktır.",
-      "C": "Her ikisi de ticari alacaktır; 121 kıymetli evraka (senede) bağlanmış, 120 ise senede bağlanmamış alacağı izler.",
-      "D": "121 dönem sonuçlarını gösteren bir gelir tablosu hesabı, 120 ise finansal durumu gösteren bir bilanço hesabıdır.",
-      "E": "İki hesap arasında yalnızca kod farkı vardır; işleyiş, nitelik ve grupları bakımından tamamen aynıdırlar."
+      "A": "60.000 ₺ ve 0 ₺",
+      "B": "60.000 ₺ ve 6.000 ₺",
+      "C": "66.000 ₺ ve 6.000 ₺",
+      "D": "66.000 ₺ ve 60.000 ₺",
+      "E": "54.000 ₺ ve 6.000 ₺"
     },
     "answer": "C",
-    "solution": "Her ikisi de ticari alacaktır (aktif). Fark, alacağın **senede (kıymetli evraka) bağlanıp bağlanmamasıdır**: 121 senetli, 120 senetsiz alacağı izler. Senetli alacak ciro/iskonto gibi işlemlere elverişlidir.",
+    "solution": "Eski 60.000 ₺ senet kapatılır; anapara ile 6.000 ₺ finansman gelirini içeren **66.000 ₺ nominal değerli yeni senet** alınır. Kayıt özünde yeni 121 (B) 66.000 / eski 121 (A) 60.000 + ilgili finansman geliri (A) 6.000 şeklindedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 120/121"
+      "styleRef": "SGS Finansal Muhasebe (senet yenileme; vade farkı)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 121 Alacak Senetleri ve finansman gelirleri"
     },
     "validYear": 2026,
     "mockExamId": null

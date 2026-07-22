@@ -134,10 +134,10 @@ q("Aşağıdakilerden hangileri belirti aranmaksızın yıllık değer düşükl
   "TMS 36 üçünü de belirtiden bağımsız olarak yıllık teste tabi tutar: sınırsız ömürlü maddi olmayan duran varlıklar (I), henüz kullanıma hazır olmayanlar (II) ve işletme birleşmesinde edinilen şerefiye (III).",
   "TMS 36 - yıllık zorunlu test")
 
-q("Aşağıdaki ifadelerden hangileri TMS 36 bakımından doğrudur?\n\nI. Geri kazanılabilir tutar, GUD eksi satış maliyetleri ile kullanım değerinden yüksek olanıdır\n\nII. Değer düşüklüğü zararı defter değerinin geri kazanılabilir tutarı aşan kısmıdır\n\nIII. Geri kazanılabilir tutar her hâlde kullanım değeridir",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "Geri kazanılabilir tutar iki ölçüden YÜKSEK olanıdır (I) ve değer düşüklüğü zararı defter değerinin bu tutarı aşan kısmıdır (II). Geri kazanılabilir tutar her hâlde kullanım değeri DEĞİLDİR; iki ölçüden yüksek olanıdır. Bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri TMS 36 bakımından doğrudur?\n\nI. Geri kazanılabilir tutar, GUD eksi satış maliyetleri ile kullanım değerinden yüksek olanıdır\n\nII. Değer düşüklüğü zararı geri kazanılabilir tutarın defter değerini aşan kısmıdır\n\nIII. Geri kazanılabilir tutar her hâlde kullanım değeridir",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Geri kazanılabilir tutar iki ölçüden yüksek olanıdır (I). Değer düşüklüğü zararı II'deki gibi tersine değil, defter değerinin geri kazanılabilir tutarı aşan kısmıdır. Tutar her durumda kullanım değerine eşit olmadığından III de yanlıştır. Yalnız I doğrudur.",
   "TMS 36 - temel kavramlar")
 
 # ── B. Ölçüm ve hesaplama (16) ─────────────────────────────────────────────

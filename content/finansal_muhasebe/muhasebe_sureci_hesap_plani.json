@@ -685,20 +685,20 @@
     "id": "finmuh-surec-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesap eşleştirmelerinden hangisi hesap sınıfı bakımından yanlıştır?",
+    "stem": "İşletmenin 400 BANKA KREDİLERİ hesabında izlenen uzun vadeli kredisinin 90.000 ₺ tutarındaki anapara taksiti, bilanço tarihinden itibaren gelecek on iki ay içinde ödenecektir. Dönem sonundaki vade aktarımı için aşağıdaki kayıtlardan hangisi uygundur?",
     "options": {
-      "A": "400 Banka Kredileri → 4 Uzun Vadeli Yabancı Kaynaklar",
-      "B": "500 Sermaye → 5 Özkaynaklar",
-      "C": "600 Yurt İçi Satışlar → 6 Gelir Tablosu Hesapları",
-      "D": "100 Kasa → 2 Duran Varlıklar",
-      "E": "150 İlk Madde ve Malzeme → 1 Dönen Varlıklar"
+      "A": "303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri (B) 90.000 / 400 Banka Kredileri (A) 90.000",
+      "B": "400 Banka Kredileri (B) 90.000 / 303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri (A) 90.000",
+      "C": "300 Banka Kredileri (B) 90.000 / 400 Banka Kredileri (A) 90.000",
+      "D": "780 Finansman Giderleri (B) 90.000 / 400 Banka Kredileri (A) 90.000",
+      "E": "400 Banka Kredileri (B) 90.000 / 102 Bankalar (A) 90.000"
     },
-    "answer": "D",
-    "solution": "**100 Kasa**, kodun ilk rakamı **1** olduğundan **Dönen Varlıklar** sınıfındadır (Hazır Değerler grubu), Duran Varlıklar değil. Bu nedenle **D yanlıştır**.",
+    "answer": "B",
+    "solution": "Gelecek on iki ayda ödenecek uzun vadeli kredi taksiti artık kısa vadeli yabancı kaynak niteliğindedir. Bu nedenle **400 Banka Kredileri borçlandırılarak azaltılır**, **303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri alacaklandırılarak artırılır**. Henüz ödeme yapılmadığı için 102 Bankalar kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hesap sınıfları"
+      "styleRef": "SGS Finansal Muhasebe (vade sınıflaması ve yevmiye kaydı)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Tekdüzen Hesap Planı (303 ve 400 hesapları)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "finmuh-surec-gen-0035",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir hesabın dönem içi borç toplamı 78.000 ₺, alacak toplamı 90.000 ₺'dir. Bu hesabın kalanı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir alış işlemi yevmiye defterine hiç kaydedilmemiştir. İşlemin hem borç hem alacak tarafı birlikte eksik kaldığından dönem sonunda düzenlenen mizanın borç ve alacak toplamları yine eşit çıkmıştır.\n\nBu durum mizan kontrolü bakımından neyi gösterir?",
     "options": {
-      "A": "12.000 ₺ borç kalanı",
-      "B": "90.000 ₺ alacak kalanı",
-      "C": "168.000 ₺ alacak kalanı",
-      "D": "Kalan vermez",
-      "E": "12.000 ₺ alacak kalanı"
+      "A": "Mizan eşitse bütün işlemlerin eksiksiz kaydedildiği kesinleşir.",
+      "B": "Mizan yalnızca kasa hesabındaki hataları ortaya çıkarır.",
+      "C": "Eşitlik, her hesabın doğru hesap koduyla kullanıldığını kanıtlar.",
+      "D": "İki tarafı birlikte etkileyen eksiklikler eşitliği bozmayabilir; mizan tek başına tam doğruluk kanıtı değildir.",
+      "E": "Borç ve alacak toplamlarının eşit olması muhasebe sisteminde hata bulunduğunu gösterir."
     },
-    "answer": "E",
-    "solution": "Alacak toplamı borç toplamından büyük: 90.000 − 78.000 = **12.000 ₺ alacak kalanı**. Bu genellikle bir kaynak veya gelir hesabına işaret eder.",
+    "answer": "D",
+    "solution": "Bir işlem tamamen atlanırsa borç ve alacak tarafları aynı tutarda eksik kalır; bu nedenle mizan eşitliği bozulmayabilir. Mizan, aritmetik eşitliği sınar ancak **işlem atlama, yanlış hesap kullanma veya iki tarafı eşit etkileyen hataları tek başına ortaya çıkaramaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hesap kalanı"
+      "styleRef": "SGS Finansal Muhasebe (mizan kontrolü ve hata analizi)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Muhasebe Süreci ve Mizan"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "finmuh-surec-gen-0037",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisi Tekdüzen Hesap Planı'nda '4 Uzun Vadeli Yabancı Kaynaklar' sınıfında yer alır?",
+    "stem": "Tekdüzen Hesap Planı'ndaki 253 TESİS, MAKİNE VE CİHAZLAR hesabının kod yapısıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "300 Banka Kredileri",
-      "B": "400 Banka Kredileri",
-      "C": "320 Satıcılar",
-      "D": "500 Sermaye",
-      "E": "120 Alıcılar"
+      "A": "İlk rakam olan 2 hesap sınıfını, ilk iki rakam olan 25 hesap grubunu, 253 ise büyük defter hesabını gösterir.",
+      "B": "İlk rakam muavin hesabı, son rakam hesap sınıfını gösterir.",
+      "C": "25 kodu gelir tablosu hesap sınıfını gösterir.",
+      "D": "253 yalnızca nazım hesaplarda kullanılabilen serbest bir koddur.",
+      "E": "Hesap kodundaki rakamların sınıf, grup ve hesap bakımından herhangi bir anlamı yoktur."
     },
-    "answer": "B",
-    "solution": "**400 Banka Kredileri**, kodun ilk rakamı **4** olduğundan Uzun Vadeli Yabancı Kaynaklar sınıfındadır (vadesi bir yıldan uzun krediler). 300 aynı kredinin kısa vadeli (3'lü) hâlidir.",
+    "answer": "A",
+    "solution": "Tekdüzen Hesap Planı hiyerarşiktir: **2 Duran Varlıklar** hesap sınıfını, **25 Maddi Duran Varlıklar** hesap grubunu, **253 Tesis, Makine ve Cihazlar** ise büyük defter hesabını gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesap sınıfı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Hesap sınıfları (4 UVYK)"
+      "styleRef": "SGS Finansal Muhasebe (hesap kodu hiyerarşisi)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Tekdüzen Hesap Çerçevesi ve Hesap Planı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-surec-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Muhasebenin tanımı ile ilgili aşağıdakilerden hangisi en doğrudur?",
+    "stem": "Bir satış faturası sisteme bir kez girildiğinde satış geliri, ticari alacak ve stok kayıtları yetkiler çerçevesinde otomatik olarak güncellenmektedir. Aynı verinin farklı birimlerde yeniden girilmesi gerekmemektedir.\n\nBu yapı muhasebe bilgi sistemi açısından öncelikle hangi yararı sağlar?",
     "options": {
-      "A": "İşletmenin yalnızca ödeyeceği vergileri hesaplayan, başka hiçbir mali işlemle ilgilenmeyen dar kapsamlı bir vergi uygulamasıdır.",
-      "B": "İşletmedeki üretim süreçlerini ve fabrika yerleşimini planlayan, mali kayıtla ilgisi bulunmayan bir mühendislik uygulamasıdır.",
-      "C": "Yalnızca kasaya giren ve kasadan çıkan nakit hareketlerini izleyen, diğer işlemleri hiç dikkate almayan basit bir kasa defteridir.",
-      "D": "Mali nitelikli işlem ve olayları para birimiyle kaydeden, sınıflandıran, özetleyen ve sonuçlarını yorumlayan bir bilgi sistemidir.",
-      "E": "Yalnızca çalışanların ücret bordrolarını hazırlayan, işletmenin diğer mali işlemlerini kapsamayan bir personel uygulamasıdır."
+      "A": "Her birimin aynı işlemi bağımsız ve farklı tutarlarla kaydetmesini sağlar.",
+      "B": "Belge ve kullanıcı kontrollerine ihtiyaç bırakmadan bütün kayıtları kendiliğinden doğru kabul eder.",
+      "C": "Tekrarlı veri girişini azaltır; kayıtlar arasındaki bütünlük ve tutarlılığı destekler.",
+      "D": "Muhasebe kayıtlarının yalnız dönem sonunda topluca yapılmasını zorunlu kılar.",
+      "E": "Satış işlemlerinin finansal tablolara aktarılmasını engeller."
     },
-    "answer": "D",
-    "solution": "Muhasebe; **mali nitelikli işlem ve olayları** para birimiyle **kaydeden, sınıflandıran, özetleyen** ve sonuçlarını ilgililere **raporlayıp yorumlayan** bir bilgi sistemidir.",
+    "answer": "C",
+    "solution": "Bir işlemin kaynağında bir kez kaydedilip ilgili alt sistemlere aktarılması, tekrarlı veri girişini ve aktarım hatalarını azaltır. Entegrasyon böylece **veri bütünlüğünü ve kayıtlar arası tutarlılığı** destekler; yetkilendirme ve diğer kontroller yine gereklidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebenin tanımı ve işlevi"
+      "styleRef": "2026 SGS muhasebe bilgi sistemi kazanımı (özgün uygulama)",
+      "legislationRef": "Muhasebe Bilgi Sistemleri - bütünleşik işlem işleme ve veri bütünlüğü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,7 +905,7 @@
     "id": "finmuh-surec-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, yönetim biriminde kullanılan bir demirbaş için dönem sonunda 8.000 ₺ amortisman ayırmıştır (doğrudan yöntem/idari gider). Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, yönetim biriminde kullanılan bir demirbaş için dönem sonunda 8.000 ₺ amortisman ayırmıştır. Birikmiş amortisman hesabının kullanıldığı yönteme ve gider yerine göre bu işlemin kaydı aşağıdakilerden hangisidir?",
     "options": {
       "A": "255 Demirbaşlar (B) 8.000 / 770 Genel Yönetim Giderleri (A) 8.000",
       "B": "257 Birikmiş Amortismanlar (B) 8.000 / 770 Genel Yönetim Giderleri (A) 8.000",
@@ -917,8 +917,8 @@
     "solution": "Amortisman bir giderdir → **770 Genel Yönetim Giderleri (B)**; varlığın değeri doğrudan azaltılmaz, düzenleyici hesap çalışır → **257 Birikmiş Amortismanlar (A)**. Kayıt: 770 (B) 8.000 / 257 (A) 8.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 257 Birikmiş Amortismanlar"
+      "styleRef": "SGS Finansal Muhasebe (yevmiye kaydı; amortisman)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 255, 257 ve 770 hesaplarının işleyişi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-surec-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletmenin başkalarına ait olup emanet/teminat olarak elinde bulunan kıymetleri veya kendi verdiği teminatları, mali tablo dengesini etkilemeksizin izlediği hesap sınıfı aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede aynı kullanıcı yeni satıcı kartı açabilmekte, bu satıcı adına faturayı sisteme girebilmekte ve ödemeyi de tek başına onaylayabilmektedir.\n\nBu durumdaki temel iç kontrol zayıflığı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "5 Özkaynaklar",
-      "B": "6 Gelir Tablosu Hesapları",
-      "C": "9 Nazım Hesaplar",
-      "D": "7 Maliyet Hesapları",
-      "E": "1 Dönen Varlıklar"
+      "A": "Numaralandırılmış belge kullanılmaması",
+      "B": "Görevlerin ayrılığı ilkesine uyulmaması",
+      "C": "Dönemsellik kavramının uygulanması",
+      "D": "Çift taraflı kayıt yönteminin kullanılması",
+      "E": "Hesap planında muavin hesap açılması"
     },
-    "answer": "C",
-    "solution": "İşletmenin varlık/kaynak yapısını doğrudan etkilemeyen; ancak izlenmesi gereken teminat, emanet vb. kıymetler **9 Nazım Hesaplar** sınıfında izlenir ve kendi içinde borç-alacak dengesi kurulur.",
+    "answer": "B",
+    "solution": "Satıcı tanımlama, borç kaydı oluşturma ve ödeme onayı görevlerinin aynı kişide birleşmesi, sahte satıcı ve yetkisiz ödeme riskini artırır. Yetki ve sorumlulukların farklı kişilere dağıtılması **görevlerin ayrılığı** kontrolüdür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Nazım hesaplar"
+      "styleRef": "2026 SGS muhasebe bilgi sistemi kazanımı (özgün iç kontrol senaryosu)",
+      "legislationRef": "Muhasebe Bilgi Sistemleri - erişim kontrolleri ve görevlerin ayrılığı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "finmuh-surec-gen-0059",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdakilerden hangisi muhasebenin bir dalı (bölümü) değildir?",
+    "stem": "Muhasebe bilgi sisteminde her kaydın belge numarası, kaydı oluşturan kullanıcı, tarih-saat bilgisi ve sonradan yapılan değişiklikleri saklanmaktadır.\n\nBu bilgilerin birlikte tutulması aşağıdakilerden hangisini sağlar?",
     "options": {
-      "A": "İnşaat mühendisliği",
-      "B": "Maliyet muhasebesi",
-      "C": "Yönetim muhasebesi",
-      "D": "Denetim ve inceleme",
-      "E": "Genel (finansal) muhasebe"
+      "A": "Kayıtların kaynağından mali tablolara ve geriye doğru izlenebilmesini sağlayan denetim izi",
+      "B": "Kullanıcıların geçmiş kayıtları iz bırakmadan değiştirebilmesi",
+      "C": "Her işlemin yalnız sözlü beyana dayanarak kaydedilmesi",
+      "D": "Borç ve alacak eşitliği aranmadan tek taraflı kayıt yapılması",
+      "E": "Kaynak belgelerin sistemden bağımsız olarak yok edilmesi"
     },
     "answer": "A",
-    "solution": "Muhasebenin dalları arasında genel (finansal) muhasebe, maliyet muhasebesi, yönetim muhasebesi ve denetim sayılabilir. **İnşaat mühendisliği** muhasebenin bir dalı değildir.",
+    "solution": "Belge numarası, kullanıcı, zaman damgası ve değişiklik geçmişi; işlemin kaynağından rapora, rapordan kaynak belgeye kadar izlenmesini sağlar. Bu kayıt zinciri **denetim izi (audit trail)** olarak adlandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Muhasebenin dalları"
+      "styleRef": "2026 SGS muhasebe bilgi sistemi kazanımı (özgün denetim izi senaryosu)",
+      "legislationRef": "Muhasebe Bilgi Sistemleri - işlem kayıtları ve denetim izi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-surec-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, 100.000 ₺'lik bir ticari malı peşin bedelle nakit satın almıştır (KDV ihmal edilecektir). Bu işlemin bilanço büyüklüğüne etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme 120.000 ₺ tutarındaki bir makineyi satın almış; bedelin 40.000 ₺'sini bankadan ödemiş, kalan 80.000 ₺ için satıcıya borçlanmıştır. KDV ihmal edilecektir.\n\nBu işlemin temel muhasebe eşitliğine etkisi hangisidir?",
     "options": {
-      "A": "Aktif toplamı 100.000 ₺ artar; çünkü işletmeye yeni bir ticari mal girişi olmuş, kasa aynı kalmıştır.",
-      "B": "Aktif toplamı 100.000 ₺ azalır; çünkü kasadan nakit çıkışı olmuş, mal girişi kaydedilmemiştir.",
-      "C": "Özkaynaklar 100.000 ₺ azalır; çünkü mal alımı doğrudan dönem gideri olarak kaydedilmiştir.",
-      "D": "Pasif toplamı 100.000 ₺ artar; çünkü mal alımı nedeniyle satıcıya karşı yeni bir borç doğmuştur.",
-      "E": "Aktif toplamı değişmez; bir varlık (mal) artarken eşit tutarda başka bir varlık (kasa) azalır."
+      "A": "Varlıklar 120.000 ₺, özkaynaklar 120.000 ₺ artar; borçlar değişmez.",
+      "B": "Varlıklar 40.000 ₺ azalır, borçlar 80.000 ₺ artar; özkaynaklar 120.000 ₺ azalır.",
+      "C": "Varlıklar ve borçlar 120.000 ₺ artar; banka hesabındaki azalış dikkate alınmaz.",
+      "D": "Varlıklar net 80.000 ₺, yabancı kaynaklar 80.000 ₺ artar; özkaynaklar değişmez.",
+      "E": "Yalnız varlıkların bileşimi değişir; toplam varlık ve borçlar değişmez."
     },
-    "answer": "E",
-    "solution": "Kayıt: 153 Ticari Mallar (B) 100.000 / 100 Kasa (A) 100.000. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlık bileşimi değişir (bilanço eşitliği korunur).",
+    "answer": "D",
+    "solution": "Makine 120.000 ₺ artarken banka 40.000 ₺ azalır; varlıklardaki **net artış 80.000 ₺**dir. Satıcıya 80.000 ₺ borç doğduğundan yabancı kaynaklar da 80.000 ₺ artar. İşlem gelir veya gider yaratmadığı için özkaynak değişmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (yorum-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Bilanço eşitliği ve işlem etkileri"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı işlem etkisi)",
+      "legislationRef": "1 Sıra No'lu MSUGT - temel muhasebe eşitliği ve hesapların işleyişi"
     },
     "validYear": 2026,
     "mockExamId": null

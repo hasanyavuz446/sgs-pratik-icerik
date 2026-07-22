@@ -1,7 +1,7 @@
 # SGS Pratik — soru üretim ve kalite standardı
 
-Bu belge yalnız **SMMM Staja Giriş Sınavı (SGS)** içindir ve Claude tarafından
-geliştirilir. Amaç şemaya uyan JSON üretmek değil; **özgün, güncel, müfredata bağlı,
+Bu belge yalnız **SMMM Staja Giriş Sınavı (SGS)** içindir ve Codex tarafından
+yönetilir. Amaç şemaya uyan JSON üretmek değil; **özgün, güncel, müfredata bağlı,
 tek doğru cevaplı ve gerçek sınavın düşünme biçimine yakın** bir soru bankasıdır.
 
 Otomatik denetim alan uzmanı incelemesinin yerini tutmaz. Bir paket şu üç kapıyı da
@@ -39,27 +39,51 @@ reposundaki yolları kabul eder; `content/yeterlilik` ve repo dışı yolları r
 
 ## 1. Resmî sınav sözleşmesi
 
-SGS tek oturumda **130 soru / 165 dakika**, her soru **A–E beş seçenekli**.
+Güncel SGS tek oturumda **130 soru / 165 dakika**, her soru **A–E beş seçenekli**.
+Yanlış cevaplar doğru cevapları azaltmaz.
 
-Ders dağılımı, 2026/1 kitapçığındaki soru sınırlarından ölçülmüştür
-(`sgs_2026_1_lisans_a_grubu_ingilizce.pdf`) ve uygulamada
-`lib/features/deneme/exam_blueprint.dart` içinde kodludur — ikisi birlikte değişir:
+Arşiv iki ayrı döneme ayrılır:
 
-| Bölüm | Ders | Soru |
+- **2014–2018:** 120 soru / 150 dakika; 20 genel kültür-yetenek + 100 alan bilgisi.
+- **2019–2026:** 130 soru / 165 dakika; yabancı dilin eklenmesiyle ilk blok 30,
+  alan bilgisi yine 100 sorudur.
+
+2026/1 ve 2026/2 kitapçıklarında ölçülen güncel dış dağılım:
+
+| Soru | Ders/alan | Adet |
 |---|---|---:|
-| Genel Kültür | Türkçe · Matematik · Atatürk İlkeleri · Yabancı Dil | 7 · 8 · 5 · 10 |
-| Muhasebe-Denetim | Finansal Muhasebe · Muhasebe Standartları · Maliyet · Mali Tablolar · Denetim | 20 · 6 · 8 · 8 · 16 |
-| Ekonomi-Maliye | Ekonomi · Maliye | 6 · 6 |
-| Hukuk | Meslek · İş ve Sosyal Güvenlik · Vergi · Ticaret · Borçlar | 6 · 6 · 6 · 6 · 6 |
+| 1–7 | Türkçe | 7 |
+| 8–15 | Matematik | 8 |
+| 16–20 | Atatürk İlkeleri | 5 |
+| 21–30 | Yabancı Dil | 10 |
+| 31–56 | Finansal muhasebe, standartlar ve yakın muhasebe alanları | 26 |
+| 57–64 | Maliyet Muhasebesi | 8 |
+| 65–72 | Mali Tablolar Analizi | 8 |
+| 73–88 | Denetim | 16 |
+| 89–94 | Ekonomi | 6 |
+| 95–100 | Maliye | 6 |
+| 101–130 | Meslek · İş/SGK · Vergi · Ticaret · Borçlar | 5 × 6 |
 
-Muhasebe Standartları, Finansal Muhasebe bloğunun içindedir (s. 49–54); ayrı bir
-blok değildir. Blueprint'i değiştirirken `test/deneme_test.dart` içindeki
-"130 soru, ders dağılımı blueprint ile birebir" testi işlevsel kanıttır.
+### 31–56 bloğunun iç dağılımı
+
+`Finansal Muhasebe 20 + Muhasebe Standartları 6`, uygulamanın dengeli deneme
+üretmek için kullandığı bir **modeldir**; değişmez bir resmî alt kota değildir.
+
+- 2026/1: 31–48 çekirdek finansal muhasebe, 49–54 standartlar, 55 muhasebe bilgi
+  sistemi, 56 uluslararası etik kuruluşu.
+- 2026/2: 31–48 çekirdek finansal muhasebe, 49–55 standartlar, 56 muhasebe bilgi
+  sistemi.
+
+Bu nedenle resmî sözleşme 31–56 arasındaki 26 soruluk muhasebe ekosistemidir.
+Uygulamadaki `lib/features/deneme/exam_blueprint.dart` dağılımı son sınavlar geldikçe
+kontrol edilir; değişiklikte `test/deneme_test.dart` birlikte güncellenir.
 
 ### Çıkmış kâğıtların kullanımı
 
-12 yıllık kitapçık `~/Desktop/sgs çıkmış sorular/` altındadır ve **yalnız konu
-ağırlığı, dil ve zorluk kalibrasyonu** içindir (bkz. §11).
+2014–2026 arasındaki **38 sınav / 4.790 soru**, `~/Desktop/sgs çıkmış sorular/`
+altındadır ve **yalnız konu ağırlığı, dil ve zorluk kalibrasyonu** içindir (bkz.
+§11). Ayrıntılı envanter ve bulgular:
+`reports/SGS_CIKMIS_SORULAR_ANALIZI_2026-07-22.md`.
 
 ⚠️ Metin çıkarırken `pdftotext -layout` **kullanma**. İki sütunlu kitapçıklarda
 soruların ~%25'ini düşürür; akış sırası (`pdftotext dosya.pdf -`) gerekir.
@@ -74,8 +98,12 @@ gerçek kâğıtlarda nasıl sorulduğu çıkarılır. Ölçülmüş örnekler:
   gerektirmeyen × karşılık düzeltilir/düzeltilmez) — aday iki ekseni de bilmeden
   bulamaz. Çapraz şıklar doğal olarak denk boyda olduğu için §5 açısından da iyidir.
 - **TMS 23** — 2026/1 s.50: aktifleştirme oranı × harcama × süre.
-- **TMS 20** — 12 yılda **hiç sorulmamış**. Ders ağırlığı ölçülerek belirlenir,
+- **TMS 20** — incelenen 38 sınavda **hiç sorulmamış**. Ders ağırlığı ölçülerek belirlenir,
   standart listesine bakarak değil.
+- **2026/2** — TFRS 15, TFRS 3, TMS 41 ve ilk kez TSRS 1–2 görünür hâle geldi.
+  Güncel standart paketi yalnız eski frekansa bakılarak dondurulamaz.
+- **Muhasebe bilgi sistemleri** — dokuz ayrı dönem dosyasında görülür ve 2026'nın
+  iki sınavında da sorulmuştur; bağımsız kapsam olarak izlenir.
 
 ---
 
@@ -90,6 +118,46 @@ zorluk · doğru cevabın dayanağı · her çeldiricinin temsil ettiği kavram 
   Eş anlamlı kelime, kişi adı veya sayı değişikliği yeni soru sayılmaz.
 - Her test kendi içinde kapsam ve zorluk dengesi taşır (kullanıcı 20'şer çözer).
 - Aynı kök kalıbı + aynı çözüm + aynı çeldirici mantığı seri üretimde kullanılmaz.
+
+### Ders bazlı gerçek sınav profili
+
+Her derse tek bir “ideal soru” kalıbı uygulanmaz. 2026'nın 260 sorusundan ölçülen
+profil üretim matrisinin başlangıç noktasıdır:
+
+| Alan | Medyan kök | Olumsuz kök | Öncüllü | Sayısal senaryo |
+|---|---:|---:|---:|---:|
+| İlk 30 soru | 109 karakter | %6,7 | %1,7 | düşük/değişken |
+| Finansal muhasebe + standartlar | 295 | %9,6 | %3,8 | %57,7 |
+| Maliyet Muhasebesi | 482 | %12,5 | %0 | %100 |
+| Mali Tablolar Analizi | 228 | %0 | %0 | %81,2 |
+| Denetim | 212 | %46,9 | %12,5 | düşük |
+| Ekonomi + Maliye | 216 | %12,5 | %16,7 | %8,3 |
+| Hukuk | 175 | %48,3 | %20 | düşük |
+
+Bu yüzdeler paket başına katı kota değildir; 2026 biçimini gösteren kalibrasyon
+bandıdır. Son üç yıl ana ağırlık, eski sınavlar konu sürekliliği kontrolüdür.
+
+- Finansal muhasebe: kayıt, hesap kodu, işlem zinciri ve çok verili senaryo bulunur.
+- Maliyet ve mali tablolar: hesap/tablo soruları paketin omurgasıdır; yalnız tanım
+  sorularıyla 60'a tamamlanmaz.
+- Denetim ve hukuk: olumsuz kök gerçek sınavın doğal parçasıdır. Genel bir “olumsuz
+  kökü azalt” hedefi konmaz; kök açık ve tek anlamlı tutulur.
+- Matematik: kısa kök tek başına kalite kusuru değildir. Formül, fonksiyon, limit,
+  türev, seri ve analitik geometri gibi gösterimin içerdiği bilişsel yük hesaba
+  katılır.
+- Yabancı dil: kısa cümle tamamlama ve kelime sorusu doğaldır; yapay öykü eklenmez.
+
+### Konu açma önceliği
+
+Yeni konu yalnız “müfredatta adı var” diye açılmaz. Üç ölçüm birlikte yapılır:
+
+1. son üç sınavdaki görünürlük,
+2. 2014–2026 arşivindeki tekrar/frekans,
+3. mevcut havuzun gerçekten kapsayıp kapsamadığı.
+
+2026-07-22 denetiminde öncelikli açıklar: ileri matematik, muhasebe bilgi sistemleri,
+diğer güncel TMS/TFRS ve sürdürülebilirlik raporlamasıdır. Nadir her standarda ayrı
+60 soru açmak yerine sınav ağırlığını bozmayacak birleşik konu paketi değerlendirilir.
 
 ### Alıştırma ↔ klon ayrımı (denetimli)
 
@@ -247,7 +315,10 @@ yakalamak içindir; amaç doğal ve dengeli şık yazmaktır.
 
 - Harfler **seed'li ve örüntüsüz** karıştırılır (`gen_letters`, §3).
 - `ABCDEABCDE…`, sabit adım ve kısa periyot **FATAL**.
-- Dengeli dağılım amaçlanır; aynı harf üç kez art arda gelmez.
+- Dengeli dağılım, **tam eşit dağılım** demek değildir. Örneğin 60 soruda
+  `13-13-12-11-11` gibi küçük sapmalar doğaldır; sırf her harf 12 kez çıksın diye
+  cevapların yeri mekanik biçimde değiştirilmez.
+- Belirgin bir harf yığılması olmamalı; aynı harf üç kez art arda gelmez.
 
 ⚠️ **"12'şer + run≤2" yetmez.** Bir üretimde 240 sorunun harf dizisi birebir
 `ABCDEABCDE…` rotasyonuydu ve o günkü dedektör bunu onaylıyordu (run=1 olduğu için).
@@ -295,6 +366,23 @@ veya dil bakımından ayrılmaz (§5).
 - Borç ve alacak toplamları builder assertion'ı ile eşitlenir.
 - KDV ve diğer oranlar senaryoda verilir (§9).
 
+### Tablo, formül ve uygulamada görünüm
+
+Gerçek kitapçık; çok satırlı yevmiye seçenekleri, borç/alacak sütunları, maliyet ve
+stok tabloları, öncüller, fonksiyonlar ve matematiksel gösterimler kullanır.
+
+- Kullanıcıya ham kod çiti (örneğin üç ters tırnakla başlayan `text` etiketi),
+  kaçış karakteri veya üretim etiketi
+  gösterilmez.
+- Çok satırlı seçenekler uygulamanın desteklediği düz metin/Markdown biçiminde
+  yazılır; builder çıktısı gerçek cihazda en az bir kez açılır.
+- Borç/alacak hizası yalnız boşluk sayısına güvenmez; dar iPhone ekranında da anlam
+  kaybolmamalıdır.
+- Matematik ifadesi PDF'den kopyalanmış bozuk glif olarak değil, uygulamanın
+  desteklediği tutarlı gösterimle yazılır.
+- Yeni görsel biçim OTA'ya girmeden önce küçük ve büyük ekran render kontrolünden
+  geçer.
+
 ---
 
 ## 9. Mevzuat ve standart güncelliği
@@ -307,37 +395,47 @@ tek dayanağı olamaz).
 `source.legislationRef` genel başlık değil, madde/paragraf düzeyinde olur:
 `TMS 2 par. 16`, `6102 sayılı TTK m. 124`.
 
-### Değişken oran, tutar ve süreler
+### Sayısal mevzuat bilgisi: süre, ceza, oran ve tutar
 
-**Yıla bağlı oran/eşik/tutar sorma.** KDV oranı, gelir vergisi dilimleri, istisna
-hadleri, asgari sermaye tutarları değişir → sorunun güncelliği sıfırlanır. Bunun
-yerine kanunda sabit olan **yapısal-kavramsal** olanı sor: konu · mükellef · vergiyi
-doğuran olay · istisna türü · matrah mantığı · beyan usulü.
+Gerçek kullanıcı geri bildirimi ve çıkmış sorular birlikte gösteriyor: SGS yalnız
+“ilgili mevzuata göre işlem yapılır” düzeyinde kavram sormaz; mevzuattaki **süreyi,
+cezayı, artırım oranını, sınırı ve sayısal sonucu doğrudan** da sorar. Bu nedenle
+sayısal mevzuat sorusu yasak değildir.
 
-⚠️ **İnce ayrım — oranın kökte verilmesi güvenlidir.** "5.000 ₺ + %20 KDV" ölçtüğü
-şey kayıt becerisidir, oran bilgisi değil; oran değişse de soru kendi içinde tutarlı
-kalır. İhlal olan iki durum:
+Üç ayrı sınıf kullanılır:
 
-1. cevap **çıplak bir mevzuat oranı** ve kök oranı vermiyor
-   ("KDV oranı yüzde kaçtır?" → "%20"),
-2. kök oranı vermeyip "yürürlükteki oran üzerinden" deyip adayın bilmesini beklemek.
+1. **Yapısal/sabit sayı:** kanundaki süre, ortak sayısı, başvuru koşulu, ceza türü
+   veya kalıcı oran. Doğrudan sorulabilir; madde/fıkra düzeyinde doğrulanır.
+2. **Dönemsel/değişken sayı:** vergi oranı, tarife, istisna haddi, parasal sınır,
+   yeniden değerleme veya artırım oranı. Gerçek sınav profili gerektiriyorsa
+   doğrudan sorulabilir; `validYear` zorunludur, birincil kaynak ve yürürlük tarihi
+   kaydedilir, her OTA öncesi güncellik listesinde yeniden kontrol edilir.
+3. **Senaryoda verilen sayı:** “5.000 ₺ + %20 KDV” gibi oran/tutar kökte veriliyorsa
+   ölçülen şey kayıt veya hesap becerisidir; mevzuat ezberi değildir ve serbesttir.
 
-⚠️⚠️ **Cevabın oran olması tek başına ihlal DEĞİLDİR.** Bu kuralda üç kez yanlış
-pozitif ürettim; üçü de aynı hatanın çeşidiydi — kalıba bakıp anlama bakmamak:
+#### Sayısal mevzuat sorusunun zorunlu kayıtları
 
-- "Faydalı ömrü 4 yıl olanın amortisman oranı" → **%25** — türetilmiş orandır (1/4),
-  mevzuat değişse bayatlamaz.
-- "242 İştirakler'de sahiplik oranı" → **%10-50** — TDHP'nin yapısal sınırıdır.
-- "**Cari oran** hangisiyle hesaplanır?" — "cari oran" *current ratio*'dur,
-  bir rasyonun **adı**; "hâlihazırda geçerli oran" demek değildir. Bu kalıp Mali
-  Tablolar Analizi'nin en temel terimini 10 kez ihlal sandı.
+- `validYear` sınav yılıyla aynı olmalı.
+- `source.legislationRef` madde/fıkra/karar düzeyinde olmalı.
+- Dönemsel veride mümkünse yürürlük tarihi veya karar/tebliğ numarası bulunmalı.
+- Çözüm yalnız sayıyı tekrarlamamalı; sayının hangi koşulda uygulandığını açıklamalı.
+- Değişken sayı eskiyince soru sessizce kalmamalı: güncellenir veya havuzdan çekilir.
 
-Denetim yalnız en bariz hâli yakalar (`guncellik_sorunlari`); ayrım semantiktir,
-gerisi insan işidir.
+“Yürürlükteki oran” deyip hangi yılın kastedildiğini belirsiz bırakmak yasaktır.
+Ancak uygulama yalnız güncel yıl havuzunu sunuyorsa, kökte her seferinde “2026 yılı
+itibarıyla” yazmak zorunlu değildir; `validYear` ve yayın öncesi güncellik kontrolü
+bu bağı kurar.
 
-Senaryoda varsayımsal tutar (10.000 ₺, 6.000 ₺) serbesttir. Kanunda sabit yapısal
-sayılar da serbesttir (50 ortak, 3 yıl, 10 gün/1 ay ibraz süresi) — ama madde
-değişikliğine karşı kaynakla doğrulanır.
+⚠️ **Cevabın oran olması tek başına değişken mevzuat demek değildir:** faydalı ömürden
+türetilen amortisman oranı, TDHP'nin yapısal sahiplik sınırı ve “cari oran” adlı
+finansal rasyo ayrı değerlendirilir. Denetim yalnız mekanik riskleri yakalar;
+nihai ayrım insan incelemesidir.
+
+### Güncellik kontrol listesi
+
+Her OTA öncesi oran, süre, ceza, parasal had ve yaptırım içeren sorular ayrıca
+taranır. Kaynak metin değişmişse yalnız doğru şık değil; çeldiriciler ve çözüm de
+yeniden doğrulanır. “Cevap hâlâ aynı” olması tek başına güncellik onayı değildir.
 
 ---
 
@@ -381,7 +479,7 @@ içindeki `b`'yi cevap harfi `B` sanar. Büyük harf + kelime sınırı ara.
 - Kurgusal işletme ve özgün sayılar kullanılır.
 - `source.kind` daima `generated`; bu etiket tek başına özgünlük kanıtı değildir.
 - Kişisel kullanım için kitaptan telifli soru **kullanıcı sağlarsa** eklenebilir
-  (`source.kind: "book"`). Claude hafızasından telifli soru üretmez.
+  (`source.kind: "book"`). Codex hafızasından telifli soru üretmez.
 
 ---
 
@@ -432,6 +530,22 @@ Yayımdan önce paketteki **her soru** en az bir kez içerik açısından okunur
 dayanağın yürürlükte olduğunu, çözümün cevapla uyumlu olduğunu, sorunun konu sınırında
 kaldığını ve zorluğun gerçek sınava uygun olduğunu onaylar.
 
+### Gerçek aday geri bildirimi
+
+Uygulamayı fiilen sınava hazırlanırken kullanan adayın geri bildirimi ayrı bir kalite
+kapısıdır. “Çıkmış sınav doğrudan süre/ceza/artırım oranı soruyor, uygulama yalnız
+genel mevzuat ifadesi soruyor” türü geri bildirim, kişisel üslup tercihi değil
+**kapsam ve bilişsel düzey sapmasıdır**.
+
+- Geri bildirim önce ilgili çıkmış sorularla doğrulanır.
+- Doğrulanırsa tek soruyu yamamakla kalınmaz; aynı konu paketinin üretim matrisi
+  gözden geçirilir.
+- Aday geri bildirimi otomatik denetimden bağımsızdır. `FATAL 0`, gerçek sınavdan
+  düşük veya farklı düzeyde soru yazıldığını göstermez.
+- Yeni/yenilenen paketten en az bir 20 soruluk test, mümkünse gerçek bir aday
+  tarafından cihazda çözülür; anlaşılmayan ifade, yapay çeldirici ve görünüm sorunu
+  inceleme notuna kaydedilir.
+
 ---
 
 ## 14. Teslim kontrol listesi
@@ -439,12 +553,15 @@ kaldığını ve zorluğun gerçek sınava uygun olduğunu onaylar.
 ### İçerik
 
 - [ ] Konunun gerçek sınavdaki kalıbı çıkmış kâğıtlardan çıkarıldı (§1)
+- [ ] Ders bazlı soru biçimi, 2026 kalibrasyon bandıyla karşılaştırıldı (§2)
 - [ ] 3 test × 20 soru ve üretim matrisi tamamlandı
 - [ ] Her soru özgün bir görev veya farklı bilişsel işlem ölçüyor
 - [ ] Tek doğru cevap ve dört makul, dolgusuz çeldirici var (§5)
-- [ ] Yıla bağlı oran/tutar sorulmadı; kökteki oranlar meşru (§9)
+- [ ] Süre/ceza/oran/tutar soruları `validYear` ve birincil kaynakla güncel (§9)
 - [ ] Hesaplar builder'dan **bağımsız** olarak ikinci kez doğrulandı (§8)
+- [ ] Tablo, yevmiye ve formüller gerçek cihazda doğru görünüyor (§8)
 - [ ] Çözümler özgün ve gerekçeli; harf atfı varsa cevapla tutarlı (§10)
+- [ ] Gerçek aday geri bildirimi veya aday gözüyle 20 soruluk cihaz testi yapıldı (§13)
 
 ### Teknik
 

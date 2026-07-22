@@ -134,10 +134,10 @@ q("Aşağıdakilerden hangileri TMS 38'e göre gider olarak muhasebeleştirilir?
   "TMS 38 üçünü de gider olarak sayar: reklam ve tanıtım (I), eğitim (II) ve işletmenin kuruluş ve örgütlenme (kuruluş giderleri) harcamaları (III). Bunlar tanımlanabilir bir varlık oluşturmaz.",
   "TMS 38 - gider yazılan harcamalar")
 
-q("Aşağıdaki ifadelerden hangileri TMS 38 bakımından doğrudur?\n\nI. Maddi olmayan duran varlık ilk olarak maliyetle ölçülür\n\nII. İşletme birleşmesinde edinilen varlık gerçeğe uygun değerle ölçülür\n\nIII. Nitelikli personel ekibi maddi olmayan duran varlık olarak muhasebeleştirilir",
-  "I ve II",
-  ["I, II ve III", "Yalnız I", "II ve III", "Yalnız III"],
-  "İlk ölçüm maliyetledir (I) ve işletme birleşmesinde edinilen varlık gerçeğe uygun değerle ölçülür (II). Nitelikli personel ekibi ise işletmenin yeterli kontrolü bulunmadığından varlık olarak muhasebeleştirilmez; bu nedenle III yanlıştır.",
+q("Aşağıdaki ifadelerden hangileri TMS 38 bakımından doğrudur?\n\nI. Maddi olmayan duran varlık ilk olarak maliyetle ölçülür\n\nII. İşletme birleşmesinde edinilen varlık her durumda maliyet bedeliyle ölçülür\n\nIII. Nitelikli personel ekibi maddi olmayan duran varlık olarak muhasebeleştirilir",
+  "Yalnız I",
+  ["I, II ve III", "I ve II", "II ve III", "Yalnız III"],
+  "Maddi olmayan duran varlık ilk olarak maliyetle ölçülür (I). İşletme birleşmesinde edinilen varlık edinme tarihindeki gerçeğe uygun değeriyle ölçüldüğünden II; personel üzerinde yeterli kontrol bulunmadığından III yanlıştır. Yalnız I doğrudur.",
   "TMS 38 - tanım ve ölçüm")
 
 # ── B. İşletme içi yaratılan varlıklar, araştırma-geliştirme (16) ──────────

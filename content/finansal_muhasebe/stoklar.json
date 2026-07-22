@@ -91,20 +91,20 @@
     "id": "finmuh-stok-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir önceki soruda verilen hareketlerin (DB 200 br × 20 ₺; Alış 300 br × 24 ₺; Satış 350 br) aynısı için tartılı (ağırlıklı) ortalama maliyet yöntemi kullanılsaydı, satışın maliyeti kaç ₺ olurdu?",
+    "stem": "Bir sanat galerisi, maliyetleri sırasıyla 18.000 ₺, 22.000 ₺, 27.000 ₺ ve 33.000 ₺ olan ve her biri ayrı seri numarasıyla izlenen dört eserden 22.000 ₺ ve 33.000 ₺ maliyetli olanları satmıştır. TMS 2'deki gerçek parti maliyeti (özel maliyet) yöntemine göre satılan eserlerin maliyeti kaç ₺'dir?",
     "options": {
-      "A": "7.000",
-      "B": "7.600",
-      "C": "8.400",
-      "D": "7.840",
-      "E": "3.360"
+      "A": "40.000 ₺",
+      "B": "45.000 ₺",
+      "C": "49.000 ₺",
+      "D": "55.000 ₺",
+      "E": "60.000 ₺"
     },
     "answer": "D",
-    "solution": "Ortalama birim maliyet = Toplam maliyet ÷ Toplam miktar = (4.000 + 7.200) ÷ 500 = 11.200 ÷ 500 = **22,40 ₺**. Satışın maliyeti = 350 × 22,40 = **7.840 ₺**. (Dönem sonu stok = 150 × 22,40 = 3.360 ₺.)",
+    "solution": "Birbirinin yerine kullanılamayan ve ayrı ayrı izlenebilen stoklarda maliyet, satılan belirli birimlerle eşleştirilir. Satılan iki eserin maliyeti 22.000 + 33.000 = **55.000 ₺**dir; diğer eserlerin ortalaması kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ortalama; sınav stiline kalibre)",
-      "legislationRef": "TMS 2 Stoklar; 1 Sıra No'lu MSUGT - Ağırlıklı ortalama"
+      "styleRef": "SGS Finansal Muhasebe (özel maliyet; sayısal uygulama)",
+      "legislationRef": "TMS 2 Stoklar, par. 23"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -122,7 +122,7 @@
       "E": "Dönem kârını ve stok değerini hiç etkilemez; yalnızca hesaplanan KDV tutarını değiştirir"
     },
     "answer": "B",
-    "solution": "Fiyatlar yükselirken FIFO'da satılan mallar **eski (ucuz)** birimlerden oluşur → **daha düşük SMM, daha yüksek kâr**; dönem sonu stok ise **yeni (pahalı)** birimlerden oluşur → **daha yüksek stok değeri**. Örnekte FIFO SMM 7.600 < ortalama 7.840'tır.",
+    "solution": "Fiyatlar yükselirken FIFO'da satılan mallar **eski ve daha düşük maliyetli** birimlerden oluşur; bu nedenle ağırlıklı ortalamaya göre satılan malın maliyeti daha düşük, dönem kârı daha yüksek çıkar. Dönem sonu stok ise daha yeni ve pahalı birimlerden oluştuğu için daha yüksek değerlenir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (kavram-yorum; sınav stiline kalibre)",
@@ -311,20 +311,20 @@
     "id": "finmuh-stok-gen-0015",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Stokların değerlemesi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi Usul Kanunu'na göre satın alınan emtia maliyet bedeli ile değerlenir.\n\nII. Kıymeti düşen mallar emsal bedeli ile değerlenebilir.\n\nIII. Vadeli alıştaki finansman gideri zorunlu olarak stok maliyetine eklenir.\n\nIV. Alışa ilişkin navlun ve sigorta giderleri stok maliyetine dâhildir.",
+    "stem": "Bir işletme, liste fiyatı 200.000 ₺ olan ticari malı 10.000 ₺ ticari iskonto sonrası satın almıştır. Malın işletme stoklarına girdiği tarihe kadar 8.000 ₺ nakliye, 2.000 ₺ sigorta ve bu alımın finansmanında kullanılan krediye ilişkin 4.000 ₺ faiz gideri oluşmuştur. İndirilebilir KDV dikkate alınmayacaktır.\n\nVUK'un güncel 262 ve 274'üncü maddelerine göre emtianın maliyet bedeli kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve III",
-      "C": "II ve III",
-      "D": "I, II ve IV",
-      "E": "I, II, III ve IV"
+      "A": "190.000 ₺",
+      "B": "198.000 ₺",
+      "C": "200.000 ₺",
+      "D": "204.000 ₺",
+      "E": "214.000 ₺"
     },
     "answer": "D",
-    "solution": "**I, II ve IV doğrudur:** VUK'a göre emtia maliyet bedeliyle (md. 274), kıymeti düşenler emsal bedelle (md. 278) değerlenir; navlun/sigorta maliyete girer. **III yanlıştır:** vade farkı/finansman gideri stok maliyetine zorunlu olarak eklenmez (TMS 2), ayrı gider yazılır.",
+    "solution": "Net alış bedeli 200.000 − 10.000 = 190.000 ₺'dir. VUK 262 uyarınca emtianın stoklara girdiği tarihe kadarki nakliye, sigorta ve kredi faizi maliyete dâhildir: 190.000 + 8.000 + 2.000 + 4.000 = **204.000 ₺**. Bu vergi değerlemesi, TMS 2'deki vadeli satın alma finansman unsurundan ayrı değerlendirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III doğru/yanlış; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 274, 278; TMS 2 Stoklar"
+      "styleRef": "SGS Finansal Muhasebe (VUK maliyet bedeli; güncel sayısal uygulama)",
+      "legislationRef": "213 sayılı VUK md. 262 ve 274 (7338 sayılı Kanun sonrası güncel metin)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,7 +619,7 @@
     "id": "finmuh-stok-gen-0029",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir önceki soruda verilen aynı hareketler (DB 100×10; Alış 200×13; Alış 100×16; satış 250 br) için ilk giren ilk çıkar (FIFO) yöntemi kullanılsaydı satılan malın maliyeti kaç ₺ olurdu?",
+    "stem": "Bir ticari mal kaleminde dönem başı stok 100 birim × 10 ₺, dönem içi alışlar 200 birim × 13 ₺ ve 100 birim × 16 ₺'dir. Dönemde 250 birim satılmıştır. FIFO yöntemine göre satılan malın maliyeti kaç ₺'dir?",
     "options": {
       "A": "3.900",
       "B": "3.250",
@@ -663,20 +663,20 @@
     "id": "finmuh-stok-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir üretim işletmesinde stoklarla ilgili aşağıdaki hesaplardan hangisi, üretimi tamamlanıp satışa hazır hâle gelmiş ürünleri izler?",
+    "stem": "Bir üretim sürecinde ana ürünle birlikte önemsiz nitelikte bir yan ürün elde edilmiştir. Ortak üretim maliyeti 300.000 ₺, yan ürünün net gerçekleşebilir değeri 20.000 ₺'dir. İşletme yan ürünü TMS 2'deki uygulama kolaylığı kapsamında net gerçekleşebilir değeriyle ölçmektedir.\n\nAna ürüne yüklenecek ortak maliyet kaç ₺'dir?",
     "options": {
-      "A": "150 İlk Madde ve Malzeme",
-      "B": "152 Mamuller",
-      "C": "151 Yarı Mamuller - Üretim",
-      "D": "153 Ticari Mallar",
-      "E": "157 Diğer Stoklar"
+      "A": "300.000 ₺",
+      "B": "280.000 ₺",
+      "C": "320.000 ₺",
+      "D": "20.000 ₺",
+      "E": "150.000 ₺"
     },
     "answer": "B",
-    "solution": "Üretimi tamamlanıp satışa hazır ürünler **152 Mamuller** hesabında izlenir. 150 hammadde, 151 henüz tamamlanmamış üretim, 153 üretilmeden alınıp satılan ticari mallar içindir.",
+    "solution": "Önemsiz yan ürün net gerçekleşebilir değeriyle ölçüldüğünde bu tutar ana ürünün maliyetinden düşülür. Ana ürüne yüklenecek maliyet 300.000 − 20.000 = **280.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Stoklar grubu (15)"
+      "styleRef": "SGS Finansal Muhasebe (ortak ürün ve yan ürün; sayısal uygulama)",
+      "legislationRef": "TMS 2 Stoklar, par. 14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "finmuh-stok-gen-0033",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Aralıklı envanter yöntemini kullanan işletmenin dönem başı ticari mal mevcudu 30.000 ₺, dönem içi alışları 210.000 ₺ ve dönem sonu fiilî sayım mevcudu 45.000 ₺'dir. Dönem sonunda satılan malın maliyetini kaydetmek için yapılacak kayıt aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin dönem sonu stokları 18.000 ₺ fazla sayılmıştır. Alışlar ve satışlar doğru kaydedilmiş, hata izleyen dönemde tekrarlanmamıştır. Bu hatanın cari ve izleyen dönem kârlarına etkisi hangisidir?",
     "options": {
-      "A": "621 Satılan Ticari Malların Maliyeti (B) 195.000 / 153 Ticari Mallar (A) 195.000",
-      "B": "621 Satılan Ticari Malların Maliyeti (B) 240.000 / 153 Ticari Mallar (A) 240.000",
-      "C": "153 Ticari Mallar (B) 195.000 / 621 Satılan Ticari Malların Maliyeti (A) 195.000",
-      "D": "600 Yurt İçi Satışlar (B) 195.000 / 153 Ticari Mallar (A) 195.000",
-      "E": "621 Satılan Ticari Malların Maliyeti (B) 45.000 / 153 Ticari Mallar (A) 45.000"
+      "A": "Cari dönem kârı 18.000 ₺ fazla, izleyen dönem kârı 18.000 ₺ eksik hesaplanır.",
+      "B": "Her iki dönemin kârı da 18.000 ₺ fazla hesaplanır.",
+      "C": "Cari dönem kârı 18.000 ₺ eksik, izleyen dönem kârı 18.000 ₺ fazla hesaplanır.",
+      "D": "Yalnız cari dönem satış hasılatı 18.000 ₺ azalır; kâr etkilenmez.",
+      "E": "Hata satılan malın maliyetini ve dönem kârlarını etkilemez."
     },
     "answer": "A",
-    "solution": "SMM = 30.000 + 210.000 − 45.000 = **195.000 ₺**. Aralıklı yöntemde dönem sonunda: **621 (B) 195.000 / 153 Ticari Mallar (A) 195.000**; böylece 153 hesabı 45.000 ₺ (dönem sonu mevcut) kalanına iner.",
+    "solution": "Dönem sonu stokunun 18.000 ₺ fazla gösterilmesi cari dönemde satılan malın maliyetini aynı tutarda **eksik**, kârı **fazla** gösterir. Hatalı dönem sonu stoku izleyen dönemin dönem başı stoku olduğundan, hata tekrarlanmazsa izleyen dönemin maliyeti 18.000 ₺ fazla ve kârı 18.000 ₺ eksik çıkar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-kayıt; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Aralıklı envanter dönem sonu kaydı"
+      "styleRef": "SGS Finansal Muhasebe (stok hatası; dönemler arası etki)",
+      "legislationRef": "Muhasebe Süreci - dönem başı stok + alışlar - dönem sonu stok eşitliği"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "finmuh-stok-gen-0038",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "İşletmenin satmak üzere başka bir işletmeden konsinye (satılmak üzere) olarak teslim aldığı mallarla ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Satıcı, 28 Aralık'ta malları FOB varış (teslim) noktası koşuluyla müşteriye göndermiştir. Mallar 31 Aralık'ta hâlâ yolda olup müşteriye 3 Ocak'ta teslim edilmiştir. Dönem sonu stok kesimi bakımından en uygun işlem hangisidir?",
     "options": {
-      "A": "Teslim alındığı anda mülkiyet geçtiği için teslim alan işletmenin '153 Ticari Mallar' hesabında maliyet bedeliyle izlenir.",
-      "B": "Teslim alınmasıyla birlikte malı gönderen işletmenin stoklarından çıkarılıp doğrudan gider olarak yazılır.",
-      "C": "Satıldığında bedelin tamamı teslim alan işletmenin satış hasılatı içinde brüt tutarla gösterilir.",
-      "D": "Mülkiyet devredilmediğinden teslim alan işletmenin stoklarına dâhil edilmez; satılınca komisyon geliri elde edilir.",
-      "E": "Aynı mal hem gönderen hem de teslim alan işletmenin stoklarında birlikte ayrı ayrı gösterilir."
+      "A": "Mallar 28 Aralık'ta müşterinin stoklarına alınır; satıcı stoktan çıkarır.",
+      "B": "Mallar taşıma süresince hiçbir işletmenin stokunda gösterilmez.",
+      "C": "Malların yarısı satıcının, yarısı müşterinin stokunda gösterilir.",
+      "D": "Teslim 3 Ocak'ta gerçekleştiğinden mallar 31 Aralık'ta satıcının stoklarında kalır.",
+      "E": "Nakliye işletmesi malları kendi ticari malı olarak kaydeder."
     },
     "answer": "D",
-    "solution": "Konsinye malın **mülkiyeti** satılana kadar gönderendedir; teslim alan (konsinyi) işletme bu malı **kendi stoğuna almaz**, nazım hesaplarda izler ve sattığında yalnızca **komisyon geliri** elde eder.",
+    "solution": "FOB **varış noktası** koşulunda kontrol, risk ve mülkiyet teslim noktasına ulaşılıncaya kadar satıcıda kalır. Mallar 31 Aralık'ta henüz teslim edilmediği için satıcının dönem sonu stoklarına dâhil edilir; müşteri 3 Ocak'ta kaydeder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "TMS 2; konsinye satış (mülkiyet)"
+      "styleRef": "SGS Finansal Muhasebe (stok kesimi; FOB varış noktası)",
+      "legislationRef": "Dönemsellik ve stok sayımı - FOB varış noktası teslim koşulu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "finmuh-stok-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Sürekli envanter yöntemini kullanan işletme, satın aldığı ticari mallar için nakliyeciye 5.000 ₺ navlun bedelini nakit ödemiştir. Bu navlun için yapılacak kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletme, liste fiyatı 100.000 ₺ olan ticari malı %10 ticari iskonto ve %20 KDV ile veresiye satın almıştır. KDV indirilebilir niteliktedir. Sürekli envanter yönteminde alış kaydı hangisidir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri (B) 5.000 / 100 Kasa (A) 5.000",
-      "B": "153 Ticari Mallar (B) 5.000 / 100 Kasa (A) 5.000",
-      "C": "621 Satılan Ticari Malların Maliyeti (B) 5.000 / 100 Kasa (A) 5.000",
-      "D": "760 Pazarlama Satış Dağıtım Giderleri (B) 5.000 / 100 Kasa (A) 5.000",
-      "E": "100 Kasa (B) 5.000 / 153 Ticari Mallar (A) 5.000"
+      "A": "153 Ticari Mallar (B) 100.000 + 191 İndirilecek KDV (B) 20.000 / 320 Satıcılar (A) 120.000",
+      "B": "153 Ticari Mallar (B) 90.000 + 191 İndirilecek KDV (B) 18.000 / 320 Satıcılar (A) 108.000",
+      "C": "153 Ticari Mallar (B) 90.000 + 191 İndirilecek KDV (B) 20.000 / 320 Satıcılar (A) 110.000",
+      "D": "153 Ticari Mallar (B) 108.000 / 320 Satıcılar (A) 108.000",
+      "E": "320 Satıcılar (B) 108.000 / 153 Ticari Mallar (A) 90.000 + 391 Hesaplanan KDV (A) 18.000"
     },
     "answer": "B",
-    "solution": "Alışa ilişkin navlun stok maliyetine eklenir: **153 Ticari Mallar (B) 5.000 / 100 Kasa (A) 5.000**. Navlun bir dönem gideri değil, stok maliyet unsurudur.",
+    "solution": "Ticari iskonto alış fiyatından düşülür: 100.000 × %90 = **90.000 ₺** stok maliyeti. İndirilecek KDV 90.000 × %20 = **18.000 ₺**, satıcıya borç 108.000 ₺'dir. Kayıt: 153 (B) 90.000 + 191 (B) 18.000 / 320 (A) 108.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt; sınav stiline kalibre)",
-      "legislationRef": "TMS 2; VUK md. 274 (navlun stok maliyeti)"
+      "styleRef": "SGS Finansal Muhasebe (ticari iskonto ve KDV; yevmiye kaydı)",
+      "legislationRef": "TMS 2 Stoklar, par. 11; 1 Sıra No'lu MSUGT - 153, 191 ve 320 hesapları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "finmuh-stok-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Aşağıdakilerden hangisi '157 Diğer Stoklar' hesabında izlenmeye en uygun kalemdir?",
+    "stem": "Bir üretim işletmesinin normal kapasitesi 10.000 birim, yıllık sabit genel üretim gideri 500.000 ₺'dir. Dönemde olağan koşullarda 8.000 birim üretilmiştir. TMS 2'ye göre stoklara yüklenecek sabit genel üretim gideri ve dönem gideri yazılacak dağıtılmamış tutar sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "Satışa hazır hâldeki ticari mallar ve mamuller",
-      "B": "Üretimde doğrudan kullanılacak ana hammadde ve malzeme",
-      "C": "Üretim artığı, hurda ve ıskarta niteliğindeki maddeler",
-      "D": "Üretimi tamamlanıp satışa hazır hâle gelmiş mamuller",
-      "E": "Üretimi henüz tamamlanmamış yarı mamul niteliğindeki ürünler"
+      "A": "500.000 ₺ ve 0 ₺",
+      "B": "320.000 ₺ ve 180.000 ₺",
+      "C": "400.000 ₺ ve 100.000 ₺",
+      "D": "500.000 ₺ ve 100.000 ₺",
+      "E": "400.000 ₺ ve 0 ₺"
     },
     "answer": "C",
-    "solution": "**157 Diğer Stoklar**, 150-153 arasındaki hesapların kapsamına girmeyen; üretim artığı, hurda, ıskarta, deşe gibi maddeleri izler. Diğer şıklar ilgili özel stok hesaplarında (150/151/152/153) izlenir.",
+    "solution": "Normal kapasiteye göre sabit gider yükleme oranı 500.000 / 10.000 = **50 ₺/birim**dir. 8.000 birime 8.000 × 50 = **400.000 ₺** yüklenir. Kullanılmayan kapasiteye düşen **100.000 ₺** stok maliyetine eklenmez, oluştuğu dönemde gider yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 157 Diğer Stoklar"
+      "styleRef": "SGS Finansal Muhasebe (normal kapasite; çok adımlı hesaplama)",
+      "legislationRef": "TMS 2 Stoklar, par. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "finmuh-stok-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir ticari mal kaleminin hareketleri şöyledir:\n\n| İşlem | Miktar | Birim Maliyet |\n|---|---|---|\n| Dönem başı | 50 br | 40 ₺ |\n| Alış | 150 br | 44 ₺ |\n| Satış | 120 br | — |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre satılan malın maliyeti kaç ₺'dir?",
+    "stem": "Perakende yöntemini kullanan bir işletmede satışa hazır malların perakende satış değeri 600.000 ₺, maliyetin perakende satış değerine oranı %75 ve dönem içi satışların perakende değeri 440.000 ₺'dir. TMS 2'ye göre tahmini dönem sonu stok maliyeti kaç ₺'dir?",
     "options": {
-      "A": "4.800",
-      "B": "5.280",
-      "C": "5.080",
-      "D": "3.520",
-      "E": "8.600"
+      "A": "90.000 ₺",
+      "B": "110.000 ₺",
+      "C": "120.000 ₺",
+      "D": "160.000 ₺",
+      "E": "330.000 ₺"
     },
     "answer": "C",
-    "solution": "FIFO'da önce giren satılır: 50×40 + 70×44 = 2.000 + 3.080 = **5.080 ₺**. (Dönem sonu stok = 80×44 = 3.520 ₺; toplam 8.600 ₺.)",
+    "solution": "Dönem sonu stokunun perakende değeri 600.000 − 440.000 = **160.000 ₺**dir. Maliyet oranı uygulanır: 160.000 × %75 = **120.000 ₺** tahmini stok maliyeti.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-FIFO; sınav stiline kalibre)",
-      "legislationRef": "TMS 2 Stoklar - FIFO"
+      "styleRef": "SGS Finansal Muhasebe (perakende yöntemi; sayısal uygulama)",
+      "legislationRef": "TMS 2 Stoklar, par. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "finmuh-stok-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir dönemde ticari mal satış hasılatı 100.000 ₺, satılan ticari malların maliyeti (SMM) 70.000 ₺'dir. Bu verilere göre brüt satış kârı kaç ₺'dir?",
+    "stem": "Dönem başı ticari mal stoku 60.000 ₺, net alışlar 340.000 ₺ ve net satışlar 500.000 ₺'dir. İşletmenin satışlar üzerinden brüt kâr oranı %30'dur. Brüt kâr yöntemine göre tahmini dönem sonu stok tutarı kaç ₺'dir?",
     "options": {
-      "A": "30.000",
-      "B": "70.000",
-      "C": "100.000",
-      "D": "170.000",
-      "E": "10.000"
+      "A": "50.000 ₺",
+      "B": "90.000 ₺",
+      "C": "150.000 ₺",
+      "D": "350.000 ₺",
+      "E": "400.000 ₺"
     },
     "answer": "A",
-    "solution": "Brüt satış kârı = Net satışlar − Satılan malın maliyeti = 100.000 − 70.000 = **30.000 ₺**.",
+    "solution": "Tahmini brüt kâr 500.000 × %30 = 150.000 ₺; tahmini satılan malın maliyeti 500.000 − 150.000 = **350.000 ₺**dir. Satışa hazır mallar 60.000 + 340.000 = 400.000 ₺ olduğundan dönem sonu stok 400.000 − 350.000 = **50.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-brüt kâr; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu (brüt satış kârı)"
+      "styleRef": "SGS Finansal Muhasebe (brüt kâr yöntemi; çok adımlı hesaplama)",
+      "legislationRef": "Stok Envanteri - brüt kâr yöntemiyle tahmini stok hesabı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "finmuh-stok-gen-0051",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "İşletmenin ticari mallarının maliyeti 200.000 ₺ olup bu stoklar için 15.000 ₺ değer düşüklüğü karşılığı (158) ayrılmıştır. Bu stokların bilançoda gösterileceği net değer kaç ₺'dir?",
+    "stem": "Maliyeti 200.000 ₺ olan bir stok önceki dönemde net gerçekleşebilir değeri 150.000 ₺ olduğu için bu tutara indirilmiştir. Cari dönemde net gerçekleşebilir değer 190.000 ₺'ye yükselmiştir. TMS 2'ye göre cari dönemde iptal edilecek değer düşüklüğü ve stokun yeni defter değeri sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "215.000",
-      "B": "200.000",
-      "C": "185.000",
-      "D": "15.000",
-      "E": "170.000"
+      "A": "50.000 ₺ ve 200.000 ₺",
+      "B": "10.000 ₺ ve 200.000 ₺",
+      "C": "40.000 ₺ ve 190.000 ₺",
+      "D": "40.000 ₺ ve 240.000 ₺",
+      "E": "190.000 ₺ ve 190.000 ₺"
     },
     "answer": "C",
-    "solution": "Stoklar bilançoda **maliyet − değer düşüklüğü karşılığı** (net) ile gösterilir: 200.000 − 15.000 = **185.000 ₺**. 158 aktifi düzenleyici bir hesaptır ve stoklardan (-) düşülür.",
+    "solution": "Önceki defter değeri 150.000 ₺, yeni net gerçekleşebilir değer 190.000 ₺ olduğundan **40.000 ₺** değer düşüklüğü iptal edilir. Yeni defter değeri **190.000 ₺** olur; iptal sonucunda stok ilk maliyeti olan 200.000 ₺'nin üzerine çıkarılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-bilanço; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 158 Stok Değer Düşüklüğü Karşılığı"
+      "styleRef": "SGS Finansal Muhasebe (değer düşüklüğü iptali; sayısal uygulama)",
+      "legislationRef": "TMS 2 Stoklar, par. 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "finmuh-stok-gen-0053",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Dönem sonu stok sayımı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Dönem sonu stok sayımının güvenilirliğini en fazla güçlendiren uygulama hangisidir?",
     "options": {
-      "A": "İşletmenin deposunda bulunan, başka bir işletmeye ait konsinye mallar işletmenin stok sayımına dâhil edilir.",
-      "B": "İşletmenin mülkiyetinde olup başka bir yerde (konsinye verdiği/yolda) bulunan malları sayıma dâhil edilmez.",
-      "C": "Sayımda mülkiyet ölçütü hiç dikkate alınmaz.",
-      "D": "Yalnızca depoda fiziken bulunan tüm mallar, mülkiyetine bakılmaksızın dâhil edilir.",
-      "E": "Mülkiyet esas alınır; işletmeye ait olup fiziken başka yerdeki mallar dâhil edilir, deposundaki başkasına ait mallar hariç tutulur."
+      "A": "Depo sorumlusunun stokları tek başına sayması ve farkları açıklama yapmadan değiştirmesi",
+      "B": "Sayım ekiplerine sistemdeki miktarların önceden verilmesi ve yalnız aynı rakamların doğrulatılması",
+      "C": "Sayım sırasında mal giriş ve çıkışlarının belge numarası alınmadan sürdürülmesi",
+      "D": "Kullanılmayan sayım etiketlerinin izlenmemesi ve sayım farklarının araştırılmaması",
+      "E": "Sayımın stok muhafazasından bağımsız ekiplerce, numaralı tutanak ve giriş-çıkış kesim kontrolüyle yapılması; önemli farkların yeniden sayılması"
     },
     "answer": "E",
-    "solution": "Stok sayımında **mülkiyet** esastır: işletmeye ait olup fiziken başka yerde (yolda, konsinye verilmiş) bulunan mallar **dâhil edilir**; deposunda bulunsa da başkasına ait konsinye mallar **hariç** tutulur.",
+    "solution": "Bağımsız sayım ekipleri, önceden numaralandırılmış tutanakların eksiksiz takibi, sayım tarihindeki giriş-çıkışların kesim kontrolü ve farkların yeniden sayılması; hem hata hem de stokların gizlenmesi riskini azaltır. Diğer uygulamalar görevlerin ayrılığını ve sayım izini zayıflatır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "TMS 2; stok sayımında mülkiyet esası"
+      "styleRef": "SGS Finansal Muhasebe (stok sayımı; iç kontrol senaryosu)",
+      "legislationRef": "Muhasebe Bilgi Sistemleri - fiziki stok sayımı ve kesim kontrolleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-stok-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir stok kaleminin maliyeti 50.000 ₺, net gerçekleşebilir değeri ise 58.000 ₺ olarak belirlenmiştir. TMS 2'ye göre bu stok bilançoda kaç ₺ ile gösterilir?",
+    "stem": "Maliyeti 100.000 ₺ olan stok önceki dönemde 72.000 ₺ net gerçekleşebilir değere indirilmiştir. Cari dönemde net gerçekleşebilir değer 110.000 ₺'ye yükselmiştir. TMS 2'ye göre iptal edilebilecek azami değer düşüklüğü ve stokun ulaşabileceği azami defter değeri sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "58.000",
-      "B": "8.000",
-      "C": "54.000",
-      "D": "50.000",
-      "E": "108.000"
+      "A": "38.000 ₺ ve 110.000 ₺",
+      "B": "10.000 ₺ ve 110.000 ₺",
+      "C": "72.000 ₺ ve 100.000 ₺",
+      "D": "28.000 ₺ ve 100.000 ₺",
+      "E": "28.000 ₺ ve 128.000 ₺"
     },
     "answer": "D",
-    "solution": "Stoklar maliyet ile NGD'den **düşük olanı** ile değerlenir. Burada maliyet (50.000) < NGD (58.000) olduğundan stok **maliyet bedeli 50.000 ₺** ile gösterilir; değer artışı (ihtiyatlılık gereği) kaydedilmez.",
+    "solution": "Önceki indirgeme 100.000 − 72.000 = **28.000 ₺**dir. Net gerçekleşebilir değer 110.000 ₺ olsa da iptal, önceki indirgeme tutarıyla sınırlıdır; stok maliyetinin üzerine çıkarılamaz. Bu nedenle en çok 28.000 ₺ iptal edilir ve defter değeri **100.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-kavram; sınav stiline kalibre)",
-      "legislationRef": "TMS 2 Stoklar - maliyet/NGD düşüğü"
+      "styleRef": "SGS Finansal Muhasebe (değer düşüklüğü iptal sınırı)",
+      "legislationRef": "TMS 2 Stoklar, par. 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-stok-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir ticari mal kaleminde dönem başı mevcut 100 birim, dönem içi alış 300 birim ve dönem içi satış 320 birimdir. Birim maliyet 25 ₺ ve fire yoktur.\n\nBuna göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
+    "stem": "Bir üretim sürecine toplam maliyeti 90.000 ₺ olan 1.000 birim girdi verilmiştir. Sürecin normal fire oranı %10 ve firenin hurda değeri sıfırdır. Fiilî sağlam üretim de beklenen 900 birim olarak gerçekleşmiştir. Normal fire maliyeti sağlam birimlere dağıtıldığına göre bir sağlam birimin maliyeti kaç ₺'dir?",
     "options": {
-      "A": "2.000",
-      "B": "1.500",
-      "C": "2.500",
-      "D": "8.000",
-      "E": "500"
+      "A": "100 ₺",
+      "B": "90 ₺",
+      "C": "81 ₺",
+      "D": "110 ₺",
+      "E": "111,11 ₺"
     },
     "answer": "A",
-    "solution": "Dönem sonu miktar = 100 + 300 − 320 = 80 birim. Değeri = 80 × 25 = **2.000 ₺**.",
+    "solution": "Normal fire 1.000 × %10 = 100 birim, beklenen sağlam üretim **900 birim**dir. Normal fire ayrı bir dönem zararı yapılmayıp sağlam birimlerin maliyetine taşınır: 90.000 / 900 = **100 ₺/birim**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-miktar/değer; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Stok miktar ve değer dengesi"
+      "styleRef": "SGS Finansal Muhasebe (normal fire; sayısal uygulama)",
+      "legislationRef": "TMS 2 Stoklar, par. 16(a) - normalin üstündeki kayıpların maliyet dışı bırakılması"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-stok-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Aşağıdaki maliyet akış yöntemlerinden hangisinde, dönem sonu stok değeri en güncel (son alış) fiyatlara en yakın olur?",
+    "stem": "TMS 2'ye göre stok maliyet formüllerinin seçimiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Basit ortalama",
-      "B": "Son giren ilk çıkar (LIFO)",
-      "C": "Ağırlıklı ortalama",
-      "D": "İlk giren ilk çıkar (FIFO)",
-      "E": "Standart maliyet"
+      "A": "Aynı nitelik ve kullanıma sahip stoklarda her dönem rastgele farklı maliyet formülü seçilebilir.",
+      "B": "Stokların yalnız farklı şehirlerde bulunması farklı maliyet formülü kullanmak için tek başına yeterlidir.",
+      "C": "TMS 2 benzer stoklarda yalnız LIFO yönteminin kullanılmasını zorunlu tutar.",
+      "D": "Benzer nitelik ve kullanıma sahip stoklar için aynı maliyet formülü tutarlı biçimde uygulanır; farklı nitelik veya kullanım farklı formülü haklı kılabilir.",
+      "E": "Maliyet formülü seçimi finansal tablolardaki stok tutarını etkilemediğinden açıklanmaz."
     },
     "answer": "D",
-    "solution": "**FIFO** yönteminde önce giren birimler satıldığından dönem sonu stok, **en son (güncel) alış fiyatlarına** en yakın birimlerden oluşur. Bu nedenle bilançodaki stok değeri güncel maliyetleri daha iyi yansıtır.",
+    "solution": "TMS 2, işletme açısından **benzer nitelik ve kullanıma** sahip stoklarda aynı maliyet formülünün tutarlı uygulanmasını ister. Nitelik veya kullanım farklılığı başka bir formülü haklı kılabilir; yalnız coğrafi konum farkı tek başına yeterli değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "TMS 2 Stoklar - FIFO ve dönem sonu stok değeri"
+      "styleRef": "SGS Finansal Muhasebe (maliyet formülü; tutarlılık)",
+      "legislationRef": "TMS 2 Stoklar, par. 25"
     },
     "validYear": 2026,
     "mockExamId": null
