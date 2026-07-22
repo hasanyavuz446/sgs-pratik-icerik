@@ -179,20 +179,20 @@
     "id": "finmuh-gt-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin brüt satışları 500.000 ₺, satıştan iadeleri 30.000 ₺ ve satış iskontoları 20.000 ₺'dir. İşletmenin net satışları kaç ₺'dir?",
+    "stem": "Bir işletmenin brüt satışları 920.000 ₺, satıştan iadeleri 46.000 ₺ ve satış iskontoları 24.000 ₺'dir. Başka satış indirimi bulunmamaktadır.\n\nİşletmenin net satışları kaç ₺'dir?",
     "options": {
-      "A": "550.000",
-      "B": "500.000",
-      "C": "450.000",
-      "D": "470.000",
-      "E": "50.000"
+      "A": "874.000",
+      "B": "850.000",
+      "C": "896.000",
+      "D": "966.000",
+      "E": "990.000"
     },
-    "answer": "C",
-    "solution": "Net Satışlar = Brüt Satışlar − (İadeler + İskontolar) = 500.000 − (30.000 + 20.000) = **450.000 ₺**.",
+    "answer": "B",
+    "solution": "Net satışlar = brüt satışlar − satıştan iadeler − satış iskontolarıdır. Buna göre 920.000 − 46.000 − 24.000 = **850.000 ₺** net satışa ulaşılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-net satış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu biçimi ve 60/61 hesap grupları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "finmuh-gt-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin net satışları 450.000 ₺, satışların maliyeti (621) 300.000 ₺'dir. İşletmenin brüt satış kârı kaç ₺'dir?",
+    "stem": "Net satışları 600.000 ₺ olan işletmenin brüt satış kârı oranı %30'dur.\n\nİşletmenin satışlarının maliyeti kaç ₺'dir?",
     "options": {
-      "A": "750.000",
-      "B": "150.000",
-      "C": "300.000",
-      "D": "450.000",
-      "E": "0"
+      "A": "180.000",
+      "B": "300.000",
+      "C": "390.000",
+      "D": "420.000",
+      "E": "780.000"
     },
-    "answer": "B",
-    "solution": "Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti = 450.000 − 300.000 = **150.000 ₺**.",
+    "answer": "D",
+    "solution": "Brüt satış kârı 600.000 × %30 = 180.000 ₺'dir. Satışların maliyeti = net satışlar − brüt satış kârı olduğundan 600.000 − 180.000 = **420.000 ₺** bulunur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-brüt satış kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Brüt satış kârı; 2024-2025 SGS dikey yüzde soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-gt-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Gelir tablosunda 'Faaliyet Kârı (veya Zararı)' nasıl bulunur?",
+    "stem": "Bir işletmenin ortalama stokları 40.000 ₺, stok devir hızı 3 ve brüt satış kârı oranı %40'tır. Dönemin faaliyet giderleri toplamı 35.000 ₺'dir.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "Brüt Satış Kârı + Faaliyet Giderleri",
-      "B": "Dönem Kârı − Vergi",
-      "C": "Net Satışlar − Satışların Maliyeti",
-      "D": "Faaliyet Kârı + Finansman Giderleri",
-      "E": "Brüt Satış Kârı − Faaliyet Giderleri (63)"
+      "A": "45.000",
+      "B": "35.000",
+      "C": "65.000",
+      "D": "80.000",
+      "E": "85.000"
     },
-    "answer": "E",
-    "solution": "**Faaliyet Kârı/Zararı = Brüt Satış Kârı − Faaliyet Giderleri (63)**. Esas faaliyetin kârlılığını gösterir.",
+    "answer": "A",
+    "solution": "Satışların maliyeti = 40.000 × 3 = 120.000 ₺'dir. Brüt kâr oranı %40 ise maliyet net satışların %60'ıdır; net satışlar 120.000 / %60 = 200.000 ₺, brüt kâr 80.000 ₺ olur. Faaliyet kârı 80.000 − 35.000 = **45.000 ₺**'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-formül; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Faaliyet kârı; 2025 SGS stok devir hızı ve brüt kâr oranı soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "finmuh-gt-gen-0022",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Daha önce peşin satılan maldan 10.000 ₺ + %20 KDV tutarındaki kısım müşteri tarafından iade edilmiş ve bedeli nakit geri ödenmiştir. Bu iadenin kaydı aşağıdakilerden hangisidir?",
+    "stem": "Sürekli envanter yöntemini kullanan işletmede, daha önce kredili satılan malın 12.000 ₺ + %20 KDV tutarındaki kısmı müşteri tarafından iade edilmiştir. İade edilen malın maliyeti 8.000 ₺'dir.\n\nİade tarihinde yapılması gereken kayıtlar hangisidir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar (B) 10.000 / 100 Kasa (A) 10.000",
-      "B": "100 Kasa (B) 12.000 / 610 Satıştan İadeler (-) (A) 10.000, 391 Hesaplanan KDV (A) 2.000",
-      "C": "610 Satıştan İadeler (-) (B) 10.000, 391 Hesaplanan KDV (B) 2.000 / 100 Kasa (A) 12.000",
-      "D": "610 Satıştan İadeler (-) (B) 12.000 / 100 Kasa (A) 12.000",
-      "E": "153 Ticari Mallar (B) 10.000 / 100 Kasa (A) 10.000"
+      "A": "120 Alıcılar 14.400 ₺ borç / 600 Yurt İçi Satışlar 12.000 ₺ ve 391 Hesaplanan KDV 2.400 ₺ alacak",
+      "B": "610 Satıştan İadeler 12.000 ₺ borç / 120 Alıcılar 12.000 ₺ alacak; maliyet kaydı yapılmaz",
+      "C": "610 Satıştan İadeler 14.400 ₺ borç / 120 Alıcılar 14.400 ₺ alacak; 621 Satılan Ticari Mallar Maliyeti 8.000 ₺ borç / 153 Ticari Mallar 8.000 ₺ alacak",
+      "D": "153 Ticari Mallar 12.000 ₺ borç / 610 Satıştan İadeler 12.000 ₺ alacak; 391 Hesaplanan KDV 2.400 ₺ borç / 120 Alıcılar 2.400 ₺ alacak",
+      "E": "610 Satıştan İadeler 12.000 ₺ ve 391 Hesaplanan KDV 2.400 ₺ borç / 120 Alıcılar 14.400 ₺ alacak; 153 Ticari Mallar 8.000 ₺ borç / 621 Satılan Ticari Mallar Maliyeti 8.000 ₺ alacak"
     },
-    "answer": "C",
-    "solution": "Satış iadesinde **610 Satıştan İadeler (-) (B) 10.000** (brüt satışı azaltacak negatif hesap); daha önce hesaplanan KDV düzeltilir **391 Hesaplanan KDV (B) 2.000**; nakit çıkışı **100 Kasa (A) 12.000**.",
+    "answer": "E",
+    "solution": "Satış iadesi hasılatı ve satışta doğan KDV'yi tersine çevirir: 610 ve 391 borç, 120 alacak kaydedilir. Sürekli envanter yönteminde mal yeniden stoka girdiği için ayrıca **153 borç / 621 alacak 8.000 ₺** kaydı yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-iade; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 610 / 391"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 120/153/391/610/621"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "finmuh-gt-gen-0023",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin brüt satışları 800.000 ₺, satıştan iadeleri 50.000 ₺, satış iskontoları 30.000 ₺'dir. Net satışlar kaç ₺'dir?",
+    "stem": "İşletme, daha önce 100.000 ₺ + %20 KDV ile kredili sattığı mal için müşterisine 10.000 ₺ + %20 KDV tutarında satış iskontosu yapmıştır. İskonto tutarı müşterinin borcundan düşülmüştür.\n\nİskonto kaydı hangisidir?",
     "options": {
-      "A": "880.000",
-      "B": "720.000",
-      "C": "750.000",
-      "D": "800.000",
-      "E": "680.000"
+      "A": "120 Alıcılar 12.000 ₺ borç / 611 Satış İskontoları 10.000 ₺ ve 391 Hesaplanan KDV 2.000 ₺ alacak",
+      "B": "611 Satış İskontoları 12.000 ₺ borç / 120 Alıcılar 12.000 ₺ alacak",
+      "C": "611 Satış İskontoları 10.000 ₺ ve 391 Hesaplanan KDV 2.000 ₺ borç / 120 Alıcılar 12.000 ₺ alacak",
+      "D": "612 Diğer İndirimler 10.000 ₺ ve 191 İndirilecek KDV 2.000 ₺ borç / 120 Alıcılar 12.000 ₺ alacak",
+      "E": "611 Satış İskontoları 10.000 ₺ borç / 120 Alıcılar 10.000 ₺ alacak; KDV için kayıt yapılmaz"
     },
-    "answer": "B",
-    "solution": "Net Satışlar = 800.000 − (50.000 + 30.000) = 800.000 − 80.000 = **720.000 ₺**.",
+    "answer": "C",
+    "solution": "Satış iskontosu net satışları azaltan 611 hesaba borç yazılır. İskontoya isabet eden hesaplanan KDV de 391 hesabın borcuna alınır; müşteri borcu toplam **12.000 ₺** azaltılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-net satış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 120/391/611"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "finmuh-gt-gen-0024",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Net satışları 720.000 ₺, satışların maliyeti 400.000 ₺ olan bir işletmenin brüt satış kârı kaç ₺'dir?",
+    "stem": "Aralıklı envanter yöntemini kullanan bir ticaret işletmesinin dönem başı mal mevcudu 70.000 ₺, dönem içi mal alışları 400.000 ₺, alış iadeleri 20.000 ₺ ve alışlara ait taşıma giderleri 10.000 ₺'dir. Dönem sonu mal mevcudu 90.000 ₺'dir.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "1.120.000",
-      "B": "720.000",
-      "C": "400.000",
-      "D": "0",
-      "E": "320.000"
+      "A": "350.000",
+      "B": "370.000",
+      "C": "390.000",
+      "D": "410.000",
+      "E": "460.000"
     },
-    "answer": "E",
-    "solution": "Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti = 720.000 − 400.000 = **320.000 ₺**.",
+    "answer": "B",
+    "solution": "Net alışlar = 400.000 − 20.000 + 10.000 = 390.000 ₺'dir. Satılan ticari mallar maliyeti = 70.000 + 390.000 − 90.000 = **370.000 ₺** olarak hesaplanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-brüt satış kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 153/621; aralıklı envanter maliyet akışı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "finmuh-gt-gen-0025",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Brüt satış kârı 320.000 ₺ olan bir işletmenin faaliyet giderleri; pazarlama-satış-dağıtım 80.000 ₺ ve genel yönetim 60.000 ₺'dir. İşletmenin faaliyet kârı kaç ₺'dir?",
+    "stem": "Bir işletmenin brüt satışları 500.000 ₺, satıştan iadeleri 20.000 ₺, satış iskontoları 10.000 ₺ ve satışların maliyeti 300.000 ₺'dir. Pazarlama, satış ve dağıtım giderleri 60.000 ₺; genel yönetim giderleri 40.000 ₺'dir.\n\nİşletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "180.000",
-      "B": "320.000",
-      "C": "460.000",
-      "D": "140.000",
-      "E": "240.000"
+      "A": "30.000",
+      "B": "40.000",
+      "C": "100.000",
+      "D": "170.000",
+      "E": "70.000"
     },
-    "answer": "A",
-    "solution": "Faaliyet giderleri toplamı = 80.000 + 60.000 = 140.000 ₺. Faaliyet Kârı = Brüt Satış Kârı − Faaliyet Giderleri = 320.000 − 140.000 = **180.000 ₺**.",
+    "answer": "E",
+    "solution": "Net satışlar 500.000 − 20.000 − 10.000 = 470.000 ₺; brüt satış kârı 470.000 − 300.000 = 170.000 ₺'dir. Faaliyet kârı 170.000 − 60.000 − 40.000 = **70.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-faaliyet kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Net satışlardan faaliyet kârına geçiş"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "finmuh-gt-gen-0026",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Faaliyet kârı 180.000 ₺ olan bir işletmenin diğer faaliyetlerden olağan geliri 40.000 ₺, diğer faaliyetlerden olağan gideri 20.000 ₺ ve finansman gideri 30.000 ₺'dir. İşletmenin olağan kârı kaç ₺'dir?",
+    "stem": "Faaliyet kârı 160.000 ₺ olan işletmenin faiz gelirleri 25.000 ₺, kambiyo kârları 15.000 ₺, kambiyo zararları 20.000 ₺ ve finansman giderleri 30.000 ₺'dir. Başka olağan gelir veya gider yoktur.\n\nİşletmenin olağan kârı kaç ₺'dir?",
     "options": {
-      "A": "270.000",
-      "B": "170.000",
-      "C": "180.000",
-      "D": "150.000",
-      "E": "90.000"
+      "A": "150.000",
+      "B": "130.000",
+      "C": "140.000",
+      "D": "170.000",
+      "E": "200.000"
     },
-    "answer": "B",
-    "solution": "Olağan Kâr = Faaliyet Kârı + Diğer Olağan Gelir − Diğer Olağan Gider − Finansman Giderleri = 180.000 + 40.000 − 20.000 − 30.000 = **170.000 ₺**.",
+    "answer": "A",
+    "solution": "Olağan kâr = 160.000 + 25.000 + 15.000 − 20.000 − 30.000 = **150.000 ₺**'dir. 642 ve 646 olağan geliri; 656 ile finansman giderleri olağan sonucu azaltan kalemleri temsil eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-olağan kâr; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 642/646/656/66 hesap grubu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "finmuh-gt-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Olağan kârı 170.000 ₺ olan bir işletmenin olağandışı geliri 10.000 ₺, olağandışı gideri 20.000 ₺'dir. İşletmenin dönem kârı (vergi öncesi) kaç ₺'dir?",
+    "stem": "Maliyeti 200.000 ₺, birikmiş amortismanı 140.000 ₺ olan makine, esas faaliyet konusu duran varlık ticareti olmayan işletme tarafından 80.000 ₺ + %20 KDV ile kredili satılmıştır.\n\nSatış kaydında 679 Diğer Olağandışı Gelir ve Kârlar hesabına yazılacak tutar kaç ₺'dir?",
     "options": {
-      "A": "200.000",
-      "B": "180.000",
-      "C": "170.000",
-      "D": "140.000",
-      "E": "160.000"
+      "A": "80.000",
+      "B": "16.000",
+      "C": "60.000",
+      "D": "20.000",
+      "E": "140.000"
     },
-    "answer": "E",
-    "solution": "Dönem Kârı = Olağan Kâr + Olağandışı Gelir − Olağandışı Gider = 170.000 + 10.000 − 20.000 = **160.000 ₺** (vergi öncesi kâr).",
+    "answer": "D",
+    "solution": "Makinenin net defter değeri 200.000 − 140.000 = 60.000 ₺'dir. KDV hariç satış bedeli 80.000 ₺ olduğundan duran varlık satış kârı 80.000 − 60.000 = **20.000 ₺**'dir ve 679 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-dönem kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu / 690"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 120/253/257/391/679; 2025-2026 SGS duran varlık satışı soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-gt-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Vergi öncesi dönem kârı 160.000 ₺ olan bir işletmede, dönem kârı vergi ve diğer yasal yükümlülük karşılığı %25 oranında hesaplanmaktadır. İşletmenin dönem net kârı kaç ₺'dir?",
+    "stem": "Bir işletmenin brüt satışları 90.000 ₺, satıştan iadeleri 10.000 ₺ ve satışların maliyeti 32.000 ₺'dir. Brüt satış kârı, dönem net kârının üç katıdır.\n\nİşletmenin dönem net kârı kaç ₺'dir?",
     "options": {
-      "A": "120.000",
-      "B": "135.000",
-      "C": "160.000",
-      "D": "40.000",
-      "E": "200.000"
+      "A": "12.000",
+      "B": "14.000",
+      "C": "16.000",
+      "D": "24.000",
+      "E": "48.000"
     },
-    "answer": "A",
-    "solution": "Vergi karşılığı = 160.000 × %25 = 40.000 ₺. Dönem Net Kârı = Dönem Kârı − Vergi Karşılığı = 160.000 − 40.000 = **120.000 ₺** (692 Dönem Net Kârı).",
+    "answer": "C",
+    "solution": "Net satışlar 90.000 − 10.000 = 80.000 ₺; brüt satış kârı 80.000 − 32.000 = 48.000 ₺'dir. Brüt kâr net kârın üç katı olduğundan dönem net kârı 48.000 / 3 = **16.000 ₺** bulunur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-dönem net kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690 / 691 / 692"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu kâr basamakları; 13 Temmuz 2024 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "finmuh-gt-gen-0036",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "İşletmenin esas faaliyet konusu dışında kalan ancak süreklilik gösteren işlemlerinden (ör. kiraya verilen depodan alınan kira) elde ettiği gelirler, esas satış hesabı yerine hangi hesapta izlenebilir?",
+    "stem": "Esas faaliyet konusu taşınmaz kiralama olmayan işletmenin, başka bir işletmeye kiraya verdiği deposuna ait 18.000 ₺ tutarındaki cari dönem kira geliri dönem sonunda tahakkuk etmiş; bedel henüz tahsil edilmemiştir.\n\nYapılacak kayıt hangisidir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "649 Diğer Olağan Gelir ve Kârlar (64 grubu)",
-      "C": "679 Diğer Olağandışı Gelir ve Kârlar (67 grubu)",
-      "D": "500 Sermaye",
-      "E": "320 Satıcılar"
+      "A": "102 Bankalar 18.000 ₺ borç / 600 Yurt İçi Satışlar 18.000 ₺ alacak",
+      "B": "181 Gelir Tahakkukları 18.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ alacak",
+      "C": "649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ borç / 181 Gelir Tahakkukları 18.000 ₺ alacak",
+      "D": "180 Gelecek Aylara Ait Giderler 18.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ alacak",
+      "E": "181 Gelir Tahakkukları 18.000 ₺ borç / 679 Diğer Olağandışı Gelir ve Kârlar 18.000 ₺ alacak"
     },
     "answer": "B",
-    "solution": "Esas faaliyet dışı ama olağan (süreklilik gösteren) gelirler **649 Diğer Olağan Gelir ve Kârlar (64 grubu)** hesabında izlenebilir; esas faaliyet satışı (600) değildir.",
+    "solution": "Cari döneme ait fakat henüz tahsil edilmemiş gelir **181 Gelir Tahakkukları** hesabında varlık olarak izlenir. Esas faaliyet dışında olmakla birlikte olağan nitelikteki kira geliri **649 Diğer Olağan Gelir ve Kârlar** hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 649"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181/649"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "finmuh-gt-gen-0037",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin net satışları 300.000 ₺, satışların maliyeti 340.000 ₺'dir. Buna göre işletmenin brüt satış sonucu aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin satışlarının maliyeti 90.000 ₺, brüt satış kârı oranı %25 ve faaliyet giderleri 18.000 ₺'dir. Başka faaliyet geliri veya gideri yoktur.\n\nİşletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "40.000 ₺ brüt satış kârı",
-      "B": "Sonuç sıfırdır",
-      "C": "640.000 ₺ brüt satış kârı",
-      "D": "300.000 ₺ brüt satış kârı",
-      "E": "40.000 ₺ brüt satış zararı"
+      "A": "7.500",
+      "B": "18.000",
+      "C": "22.500",
+      "D": "30.000",
+      "E": "12.000"
     },
     "answer": "E",
-    "solution": "Brüt Satış Sonucu = Net Satışlar − Satışların Maliyeti = 300.000 − 340.000 = **−40.000 ₺** → 40.000 ₺ **brüt satış zararı** (maliyet net satışı aştı).",
+    "solution": "Brüt kâr oranı %25 ise maliyet net satışların %75'idir. Net satışlar 90.000 / %75 = 120.000 ₺, brüt kâr 30.000 ₺ olur. Faaliyet kârı 30.000 − 18.000 = **12.000 ₺**'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-brüt satış zararı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Brüt ve faaliyet kârı; 2024-2025 SGS dikey yüzde soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "finmuh-gt-gen-0038",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "'Faaliyet kârı' ile 'olağan kâr' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Faaliyet kârı 120.000 ₺ olan işletmenin diğer faaliyetlerden olağan gelirleri 30.000 ₺, diğer faaliyetlerden olağan giderleri 10.000 ₺ ve finansman giderleri 25.000 ₺'dir. Ayrıca 8.000 ₺ olağandışı gelir ve 3.000 ₺ olağandışı gider bulunmaktadır.\n\nİşletmenin olağan kârı ile vergi öncesi dönem kârı sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "İkisi de tamamen aynı kâr kademesidir; faaliyet kârı ile olağan kâr işletmede her koşulda birbirine tam olarak eşit tutarda gerçekleşir.",
-      "B": "Olağan kâr her zaman faaliyet kârından büyüktür; çünkü faaliyet kârına yalnızca gelir kalemleri eklenir, gider hiç düşülmez.",
-      "C": "Faaliyet kârına diğer faaliyetlerden olağan gelirler eklenip, olağan giderler ve finansman giderleri düşülünce olağan kâra ulaşılır.",
-      "D": "Faaliyet kârı vergiden sonraki net kârdır; olağan kâr ise vergi karşılığı düşülmeden önceki brüt satış kârıdır.",
-      "E": "Olağan kâr, satışların maliyeti düşülmeden önce brüt satışlar üzerinden hesaplanan bir ara kâr kademesidir."
+      "A": "115.000 ve 120.000",
+      "B": "120.000 ve 115.000",
+      "C": "140.000 ve 145.000",
+      "D": "115.000 ve 112.000",
+      "E": "145.000 ve 150.000"
     },
-    "answer": "C",
-    "solution": "**Olağan Kâr = Faaliyet Kârı + Diğer Faaliyetlerden Olağan Gelirler (64) − Diğer Faaliyetlerden Olağan Giderler (65) − Finansman Giderleri (66)**. İkisi farklı kâr kademeleridir.",
+    "answer": "A",
+    "solution": "Olağan kâr = 120.000 + 30.000 − 10.000 − 25.000 = **115.000 ₺**'dir. Vergi öncesi dönem kârı = 115.000 + 8.000 − 3.000 = **120.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu kâr basamakları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "finmuh-gt-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Vergi öncesi dönem kârı 200.000 ₺ olan bir işletmede vergi ve diğer yasal yükümlülük karşılığı %25 hesaplanmıştır. Ayrılacak vergi karşılığı (691) tutarı kaç ₺'dir?",
+    "stem": "Dönem sonunda 600 Yurt İçi Satışlar hesabı 500.000 ₺, 642 Faiz Gelirleri hesabı 20.000 ₺ ve 679 Diğer Olağandışı Gelir ve Kârlar hesabı 10.000 ₺ alacak kalanı vermektedir.\n\nBu gelir hesaplarının 690 Dönem Kârı veya Zararı hesabına devrinde yapılacak kayıt hangisidir?",
     "options": {
-      "A": "50.000",
-      "B": "150.000",
-      "C": "200.000",
-      "D": "40.000",
-      "E": "25.000"
+      "A": "690 Dönem Kârı veya Zararı 530.000 ₺ borç / 600, 642 ve 679 hesapları toplam 530.000 ₺ alacak",
+      "B": "600, 642 ve 679 hesapları toplam 530.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 530.000 ₺ alacak",
+      "C": "600, 642 ve 679 hesapları toplam 530.000 ₺ borç / 690 Dönem Kârı veya Zararı 530.000 ₺ alacak",
+      "D": "600 Yurt İçi Satışlar 500.000 ₺ borç / 690 Dönem Kârı veya Zararı 500.000 ₺ alacak; diğer gelirler devredilmez",
+      "E": "690 Dönem Kârı veya Zararı 530.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 530.000 ₺ alacak"
     },
-    "answer": "A",
-    "solution": "Vergi karşılığı = Vergi öncesi kâr × oran = 200.000 × %25 = **50.000 ₺** → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-).",
+    "answer": "C",
+    "solution": "Alacak kalanı veren gelir hesapları kapatılırken **borçlandırılır**; toplam 500.000 + 20.000 + 10.000 = **530.000 ₺**, 690 hesabın alacağına devredilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-vergi karşılığı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 691"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir hesaplarının 690 hesaba devri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-gt-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin brüt satışları 600.000 ₺, satıştan iadeleri 40.000 ₺, satış iskontoları 10.000 ₺'dir. Net satışlar kaç ₺'dir?",
+    "stem": "Dönem sonunda 621 Satılan Ticari Mallar Maliyeti 280.000 ₺, 632 Genel Yönetim Giderleri 50.000 ₺, 656 Kambiyo Zararları 15.000 ₺ ve 660 Kısa Vadeli Borçlanma Giderleri 20.000 ₺ borç kalanı vermektedir.\n\nBu gider hesaplarının dönem sonu devrine ilişkin doğru kayıt hangisidir?",
     "options": {
-      "A": "650.000",
-      "B": "600.000",
-      "C": "550.000",
-      "D": "560.000",
-      "E": "500.000"
+      "A": "621, 632, 656 ve 660 hesapları toplam 365.000 ₺ borç / 690 Dönem Kârı veya Zararı 365.000 ₺ alacak",
+      "B": "690 Dönem Kârı veya Zararı 350.000 ₺ borç / 621, 632 ve 660 hesapları 350.000 ₺ alacak; 656 devredilmez",
+      "C": "692 Dönem Net Kârı veya Zararı 365.000 ₺ borç / gider hesapları toplam 365.000 ₺ alacak",
+      "D": "690 Dönem Kârı veya Zararı 365.000 ₺ borç / 621, 632, 656 ve 660 hesapları toplam 365.000 ₺ alacak",
+      "E": "Gider hesapları sonraki döneme devrettiği için kapanış kaydı yapılmaz"
     },
-    "answer": "C",
-    "solution": "Net Satışlar = 600.000 − (40.000 + 10.000) = **550.000 ₺**.",
+    "answer": "D",
+    "solution": "Borç kalanı veren gider hesapları kapatılırken alacaklandırılır. Toplam gider 280.000 + 50.000 + 15.000 + 20.000 = **365.000 ₺** olduğundan aynı tutar 690 hesabın borcuna yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-net satış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gider hesaplarının 690 hesaba devri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "finmuh-gt-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Net satışları 550.000 ₺, satışların maliyeti 350.000 ₺ olan bir işletmenin brüt satış kârı kaç ₺'dir?",
+    "stem": "Dönem sonu aktarmalarından sonra 690 Dönem Kârı veya Zararı hesabı 260.000 ₺ alacak kalanı, 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabı ise 65.000 ₺ borç kalanı vermektedir.\n\nHer iki hesap 692 hesaba devredildiğinde 692 Dönem Net Kârı veya Zararı hesabı hangi kalanı verir?",
     "options": {
-      "A": "900.000",
-      "B": "200.000",
-      "C": "350.000",
-      "D": "550.000",
-      "E": "150.000"
+      "A": "65.000 ₺ borç kalanı",
+      "B": "195.000 ₺ alacak kalanı",
+      "C": "260.000 ₺ alacak kalanı",
+      "D": "325.000 ₺ alacak kalanı",
+      "E": "195.000 ₺ borç kalanı"
     },
     "answer": "B",
-    "solution": "Brüt Satış Kârı = 550.000 − 350.000 = **200.000 ₺**.",
+    "solution": "690 hesabın alacak kalanı vergi öncesi kârı, 691 hesabın borç kalanı vergi ve yasal yükümlülük karşılığını gösterir. Net tutar 260.000 − 65.000 = **195.000 ₺** olup 692 hesap alacak kalanı verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-brüt satış kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 690/691/692"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-gt-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Brüt satış kârı 200.000 ₺, toplam faaliyet giderleri 70.000 ₺ olan bir işletmenin faaliyet kârı kaç ₺'dir?",
+    "stem": "Dönem sonunda 692 Dönem Net Kârı veya Zararı hesabı 40.000 ₺ borç kalanı vermiştir.\n\nBu hesabın kapatılmasında yapılacak kayıt hangisidir?",
     "options": {
-      "A": "270.000",
-      "B": "200.000",
-      "C": "70.000",
-      "D": "130.000",
-      "E": "0"
+      "A": "692 Dönem Net Kârı veya Zararı 40.000 ₺ borç / 590 Dönem Net Kârı 40.000 ₺ alacak",
+      "B": "690 Dönem Kârı veya Zararı 40.000 ₺ borç / 591 Dönem Net Zararı 40.000 ₺ alacak",
+      "C": "692 Dönem Net Kârı veya Zararı 40.000 ₺ borç / 591 Dönem Net Zararı 40.000 ₺ alacak",
+      "D": "590 Dönem Net Kârı 40.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 40.000 ₺ alacak",
+      "E": "591 Dönem Net Zararı 40.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 40.000 ₺ alacak"
     },
-    "answer": "D",
-    "solution": "Faaliyet Kârı = Brüt Satış Kârı − Faaliyet Giderleri = 200.000 − 70.000 = **130.000 ₺**.",
+    "answer": "E",
+    "solution": "692 hesabın borç kalanı net zararı gösterir. Bu nedenle **591 Dönem Net Zararı borçlandırılır**, 692 hesap alacaklandırılarak kapatılır. Bu kapanış biçimi 18 Temmuz 2026 SGS'de de doğrudan ölçülmüştür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-faaliyet kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 692/591; 18 Temmuz 2026 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "finmuh-gt-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin olağan kârı 130.000 ₺, olağandışı geliri 5.000 ₺, olağandışı gideri 15.000 ₺'dir. Vergi öncesi dönem kârı kaç ₺'dir?",
+    "stem": "2025 hesap dönemi kapandıktan sonra, o dönemde sunulmuş ancak kayda alınmamış 30.000 ₺ tutarındaki danışmanlık hizmeti geliri 2026 yılında tespit edilmiştir. Tutar müşteriden alacaklıdır.\n\nTekdüzen Hesap Planı'na göre 2026 yılında yapılacak kayıt hangisidir?",
     "options": {
-      "A": "150.000",
-      "B": "140.000",
-      "C": "130.000",
-      "D": "110.000",
-      "E": "120.000"
+      "A": "120 Alıcılar 30.000 ₺ borç / 671 Önceki Dönem Gelir ve Kârlar 30.000 ₺ alacak",
+      "B": "120 Alıcılar 30.000 ₺ borç / 600 Yurt İçi Satışlar 30.000 ₺ alacak",
+      "C": "671 Önceki Dönem Gelir ve Kârlar 30.000 ₺ borç / 120 Alıcılar 30.000 ₺ alacak",
+      "D": "181 Gelir Tahakkukları 30.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 30.000 ₺ alacak",
+      "E": "120 Alıcılar 30.000 ₺ borç / 679 Diğer Olağandışı Gelir ve Kârlar 30.000 ₺ alacak"
     },
-    "answer": "E",
-    "solution": "Dönem Kârı = Olağan Kâr + Olağandışı Gelir − Olağandışı Gider = 130.000 + 5.000 − 15.000 = **120.000 ₺**.",
+    "answer": "A",
+    "solution": "Gelir cari dönem faaliyetinden değil, kapanmış olan **önceki hesap döneminden** kaynaklanmaktadır. Tekdüzen Hesap Planı uygulamasında alacak 120 hesaba, önceki dönem geliri ise **671 hesaba** kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-dönem kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 120/671"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "finmuh-gt-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Vergi öncesi dönem kârı 120.000 ₺ olan bir işletmede vergi karşılığı %25 hesaplanmıştır. Dönem net kârı kaç ₺'dir?",
+    "stem": "İşletme 1 Ekim 2025'te açtığı bir yıl vadeli mevduatın 31 Aralık 2025'e kadar işlemiş faizini 181 Gelir Tahakkukları hesabına kaydetmiştir. Mevduat 30 Nisan 2026'da vadesinden önce kapatılmış ve banka faiz ödememiştir.\n\n2025'te kaydedilen faiz tahakkukunun iptalinde yapılacak kayıt hangisidir?",
     "options": {
-      "A": "90.000",
-      "B": "100.000",
-      "C": "120.000",
-      "D": "30.000",
-      "E": "80.000"
+      "A": "181 Gelir Tahakkukları borç / 681 Önceki Dönem Gider ve Zararları alacak",
+      "B": "681 Önceki Dönem Gider ve Zararları borç / 181 Gelir Tahakkukları alacak",
+      "C": "642 Faiz Gelirleri borç / 181 Gelir Tahakkukları alacak",
+      "D": "671 Önceki Dönem Gelir ve Kârlar borç / 181 Gelir Tahakkukları alacak",
+      "E": "681 Önceki Dönem Gider ve Zararları borç / 642 Faiz Gelirleri alacak"
     },
-    "answer": "A",
-    "solution": "Vergi karşılığı = 120.000 × %25 = 30.000 ₺. Dönem Net Kârı = 120.000 − 30.000 = **90.000 ₺**.",
+    "answer": "B",
+    "solution": "2025'te varlık olarak kaydedilen faiz alacağı erken kapama nedeniyle ortadan kalkmıştır. Önceki dönemde kayda alınan bu tutar 2026'da **681 Önceki Dönem Gider ve Zararları borç / 181 Gelir Tahakkukları alacak** kaydıyla iptal edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-dönem net kârı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 692"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181/681; 18 Temmuz 2026 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "finmuh-gt-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Aşağıdaki hesaplardan hangileri '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubunda yer alır?\n\nI. 642 Faiz Gelirleri\n\nII. 671 Önceki Dönem Gelir ve Kârları\n\nIII. 645 Menkul Kıymet Satış Kârları",
+    "stem": "Maliyeti 100.000 ₺, ayrılmış değer düşüklüğü karşılığı 15.000 ₺ olan hisse senetleri 120.000 ₺'ye banka aracılığıyla satılmıştır. Banka 2.000 ₺ komisyon keserek kalanı hesaba aktarmıştır.\n\nSatış kaydında yer alacak hesap ve tutarlarla ilgili doğru seçenek hangisidir?",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "Yalnız I"
+      "A": "102 Bankalar 120.000 ₺ borç; 110 Hisse Senetleri 100.000 ₺ ve 645 Menkul Kıymet Satış Kârları 20.000 ₺ alacak",
+      "B": "102 Bankalar 118.000 ₺ ve 653 Komisyon Giderleri 2.000 ₺ borç; 110 Hisse Senetleri 100.000 ₺ ve 645 Menkul Kıymet Satış Kârları 20.000 ₺ alacak; karşılık kapatılmaz",
+      "C": "102 Bankalar 118.000 ₺, 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺ ve 645 Menkul Kıymet Satış Kârları 20.000 ₺ borç; 110 Hisse Senetleri 153.000 ₺ alacak",
+      "D": "102 Bankalar 118.000 ₺, 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺ ve 653 Komisyon Giderleri 2.000 ₺ borç; 110 Hisse Senetleri 100.000 ₺, 644 Konusu Kalmayan Karşılıklar 15.000 ₺ ve 645 Menkul Kıymet Satış Kârları 20.000 ₺ alacak",
+      "E": "102 Bankalar 118.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺ borç; 110 Hisse Senetleri 100.000 ₺ ve 649 Diğer Olağan Gelir ve Kârlar 33.000 ₺ alacak"
     },
     "answer": "D",
-    "solution": "**II yanlıştır:** 671 Önceki Dönem Gelir ve Kârları **67 Olağan Dışı Gelir ve Kârlar** grubunda yer alır; 64 grubunda değildir. **642** Faiz Gelirleri ve **645** Menkul Kıymet Satış Kârları ise 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar grubundadır. Doğru cevap **I ve III**.",
+    "solution": "Bankaya net 118.000 ₺ girer ve 2.000 ₺ komisyon 653 hesaba borç yazılır. Satılan menkul kıymete ait 15.000 ₺ karşılık 119 borç / 644 alacak kaydıyla kapatılır. Satış bedeli ile maliyet arasındaki **20.000 ₺** fark 645 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 64 grubu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/110/119/644/645/653; 2024-2026 SGS menkul kıymet satışı soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "finmuh-gt-gen-0047",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Aşağıdakilerden hangisi bir 'finansman gideri' (66 grubu) niteliğindedir?",
+    "stem": "İşletme, 400.000 ₺ tutarında ve yıllık %18 faizli banka kredisini beş ay kullanmıştır. Faiz basit faiz yöntemiyle hesaplanacak ve tamamı kısa vadeli borçlanma gideri olarak gelir tablosuna yansıtılacaktır.\n\n660 Kısa Vadeli Borçlanma Giderleri hesabına aktarılacak tutar kaç ₺'dir?",
     "options": {
-      "A": "631 Pazarlama, Satış ve Dağıtım Giderleri (-)",
-      "B": "632 Genel Yönetim Giderleri (-)",
-      "C": "660 Kısa Vadeli Borçlanma Giderleri (-)",
-      "D": "621 Satılan Ticari Mallar Maliyeti (-)",
-      "E": "654 Karşılık Giderleri (-)"
+      "A": "24.000",
+      "B": "27.000",
+      "C": "30.000",
+      "D": "36.000",
+      "E": "72.000"
     },
     "answer": "C",
-    "solution": "**660 Kısa Vadeli Borçlanma Giderleri (-)**, borçlanmanın maliyeti niteliğinde bir **finansman gideridir (66 grubu)**. Diğerleri faaliyet gideri, satışların maliyeti veya diğer olağan giderdir.",
+    "solution": "Basit faiz = anapara × yıllık oran × süredir. 400.000 × %18 × 5/12 = **30.000 ₺** faiz gideri hesaplanır ve kısa vadeli borçlanmaya ait olduğu için 660 hesaba aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 66 / 660"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 660 Kısa Vadeli Borçlanma Giderleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "finmuh-gt-gen-0051",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Önceki hesap dönemlerine ait olduğu hâlde bu dönemde ortaya çıkan gelirler Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "İşletmenin 1 Ekim'de bankaya yatırdığı 300.000 ₺, yıllık %20 faizli vadeli mevduatın faizi vade sonunda tahsil edilecektir. 31 Aralık'ta üç aylık faiz tahakkuku yapılacaktır.\n\nYapılacak kayıt hangisidir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "642 Faiz Gelirleri",
-      "C": "671 Önceki Dönem Gelir ve Kârları",
-      "D": "649 Diğer Olağan Gelir ve Kârlar",
-      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
+      "A": "102 Bankalar 15.000 ₺ borç / 642 Faiz Gelirleri 15.000 ₺ alacak",
+      "B": "181 Gelir Tahakkukları 60.000 ₺ borç / 642 Faiz Gelirleri 60.000 ₺ alacak",
+      "C": "642 Faiz Gelirleri 15.000 ₺ borç / 181 Gelir Tahakkukları 15.000 ₺ alacak",
+      "D": "181 Gelir Tahakkukları 15.000 ₺ borç / 671 Önceki Dönem Gelir ve Kârlar 15.000 ₺ alacak",
+      "E": "181 Gelir Tahakkukları 15.000 ₺ borç / 642 Faiz Gelirleri 15.000 ₺ alacak"
     },
-    "answer": "C",
-    "solution": "Önceki dönemlere ait olup bu dönemde ortaya çıkan gelirler, olağandışı nitelikte kabul edilerek **671 Önceki Dönem Gelir ve Kârları** (67 grubu) hesabında izlenir.",
+    "answer": "E",
+    "solution": "Üç aylık faiz 300.000 × %20 × 3/12 = **15.000 ₺**'dir. Faiz cari dönemde kazanılmış ancak henüz tahsil edilmemiştir; bu nedenle 181 borçlandırılır, 642 alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 671"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181/642; dönemsellik kavramı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "finmuh-gt-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Vergi öncesi dönem kârı 120.000 ₺ olan bir işletmede vergi karşılığı %25 hesaplanmıştır. Ayrılacak vergi karşılığı (691) kaç ₺'dir?",
+    "stem": "Dönem sonu gelir ve gider aktarmaları tamamlandığında 690 Dönem Kârı veya Zararı hesabı 300.000 ₺ alacak kalanı vermiştir. Hesaplanan dönem kârı vergi ve diğer yasal yükümlülük karşılığı 75.000 ₺'dir.\n\nKarşılık kaydından ve 690 ile 691 hesaplarının devrinden sonra 692 hesabın durumu hangisidir?",
     "options": {
-      "A": "90.000",
-      "B": "30.000",
-      "C": "60.000",
-      "D": "25.000",
-      "E": "12.000"
+      "A": "225.000 ₺ alacak kalanı verir.",
+      "B": "225.000 ₺ borç kalanı verir.",
+      "C": "300.000 ₺ alacak kalanı verir.",
+      "D": "75.000 ₺ borç kalanı verir.",
+      "E": "375.000 ₺ alacak kalanı verir."
     },
-    "answer": "B",
-    "solution": "Vergi karşılığı = 120.000 × %25 = **30.000 ₺** → 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-).",
+    "answer": "A",
+    "solution": "Vergi karşılığı 691 borç / 370 alacak kaydedilir. 690'daki 300.000 ₺ vergi öncesi kâr ile 691'deki 75.000 ₺ karşılık 692 hesaba devredildiğinde net kâr 300.000 − 75.000 = **225.000 ₺** olur ve 692 hesap alacak kalanı verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-vergi; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 691"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 370/690/691/692"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "finmuh-gt-gen-0053",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Brüt satış kârı 90.000 ₺, toplam faaliyet giderleri 120.000 ₺ olan bir işletmenin faaliyet sonucu aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin ortalama stokları 50.000 ₺ ve stok devir hızı 2,4'tür. Brüt satış kârı oranı %40, faaliyet giderleri toplamı 95.000 ₺'dir.\n\nİşletmenin faaliyet sonucu aşağıdakilerden hangisidir?",
     "options": {
-      "A": "30.000 ₺ faaliyet zararı",
-      "B": "210.000 ₺ faaliyet kârı",
-      "C": "30.000 ₺ faaliyet kârı",
-      "D": "90.000 ₺ faaliyet kârı",
-      "E": "120.000 ₺ faaliyet zararı"
+      "A": "5.000 ₺ kâr",
+      "B": "15.000 ₺ kâr",
+      "C": "15.000 ₺ zarar",
+      "D": "25.000 ₺ zarar",
+      "E": "80.000 ₺ zarar"
     },
-    "answer": "A",
-    "solution": "Faaliyet Sonucu = Brüt Satış Kârı − Faaliyet Giderleri = 90.000 − 120.000 = **−30.000 ₺** → 30.000 ₺ **faaliyet zararı**.",
+    "answer": "C",
+    "solution": "Satışların maliyeti 50.000 × 2,4 = 120.000 ₺'dir. Maliyet, net satışların %60'ı olduğundan net satışlar 200.000 ₺ ve brüt kâr 80.000 ₺'dir. Faaliyet sonucu 80.000 − 95.000 = **15.000 ₺ zarar**dır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-faaliyet zararı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Faaliyet sonucu; 2025 SGS stok devir hızı soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-gt-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "'660 Kısa Vadeli Borçlanma Giderleri' ile '661 Uzun Vadeli Borçlanma Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme, defter değeri 600.000 ₺ olan kısa vadeli yabancı para kredisini 630.000 ₺ karşılığında kapatmış ve ayrıca 25.000 ₺ faiz ödemiştir. Faizin tamamı cari döneme aittir.\n\nGelir tablosuna yansıtılacak tutarlar hangi seçenekte doğru verilmiştir?",
     "options": {
-      "A": "İkisi de birer faiz geliri hesabıdır ve 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar grubunda alacak çalışır.",
-      "B": "İkisi de satışların maliyetine dâhildir; 660 kısa vadeli, 661 uzun vadeli stok alımlarının maliyetini izler.",
-      "C": "660 bir dönen varlık, 661 ise bir uzun vadeli yabancı kaynak hesabıdır; ikisi de bilançoda gösterilir.",
-      "D": "İkisi de 66 Finansman Giderleri grubundadır; 660 kısa vadeli, 661 uzun vadeli borçlanmaların finansman giderlerini izler.",
-      "E": "İkisi de 68 Olağandışı Gider ve Zararlar grubundadır; 660 kısa vadeli borçların, 661 ise uzun vadeli borçların olağandışı zararlarını izler."
+      "A": "646 Kambiyo Kârları 30.000 ₺; 642 Faiz Gelirleri 25.000 ₺",
+      "B": "656 Kambiyo Zararları 30.000 ₺; 660 Kısa Vadeli Borçlanma Giderleri 25.000 ₺",
+      "C": "660 Kısa Vadeli Borçlanma Giderleri 55.000 ₺; kambiyo sonucu oluşmaz",
+      "D": "656 Kambiyo Zararları 55.000 ₺; finansman gideri oluşmaz",
+      "E": "681 Önceki Dönem Gider ve Zararları 30.000 ₺; 661 Uzun Vadeli Borçlanma Giderleri 25.000 ₺"
     },
-    "answer": "D",
-    "solution": "Her ikisi de **66 Finansman Giderleri (-)** grubundadır. Fark vadededir: **660** kısa vadeli, **661** uzun vadeli borçlanmaların finansman (faiz vb.) giderlerini izler.",
+    "answer": "B",
+    "solution": "Kredinin TL karşılığındaki 630.000 − 600.000 = **30.000 ₺** artış kambiyo zararıdır ve 656 hesapta izlenir. Ayrıca ödenen **25.000 ₺ faiz**, kısa vadeli borçlanmaya ait finansman gideridir ve gelir tablosunda 660 hesaba yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 660 / 661"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 656/660"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "finmuh-gt-gen-0056",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir ticaret işletmesinde dönem başı mal mevcudu 80.000 ₺, dönem içi alışlar 400.000 ₺, dönem sonu mal mevcudu 90.000 ₺'dir. Satılan ticari mallar maliyeti (621) kaç ₺'dir?",
+    "stem": "Bir işletmenin dönem içinde sattığı mamullerin maliyeti 120.000 ₺, ticari malların maliyeti 180.000 ₺ ve sunduğu hizmetlerin maliyeti 40.000 ₺'dir.\n\nGelir tablosunda 'Satışların Maliyeti' grubunda raporlanacak toplam tutar kaç ₺'dir?",
     "options": {
-      "A": "570.000",
-      "B": "390.000",
-      "C": "410.000",
-      "D": "480.000",
-      "E": "320.000"
+      "A": "120.000",
+      "B": "180.000",
+      "C": "220.000",
+      "D": "300.000",
+      "E": "340.000"
     },
-    "answer": "B",
-    "solution": "SMM = Dönem Başı Mal + Alışlar − Dönem Sonu Mal = 80.000 + 400.000 − 90.000 = **390.000 ₺**.",
+    "answer": "E",
+    "solution": "620 Satılan Mamuller Maliyeti, 621 Satılan Ticari Mallar Maliyeti ve 622 Satılan Hizmet Maliyeti, 62 Satışların Maliyeti grubunda birlikte raporlanır. Toplam 120.000 + 180.000 + 40.000 = **340.000 ₺**'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-SMM; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 621"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 620/621/622"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-gt-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Gelir tablosunda, esas faaliyetin kârlılığını en iyi gösteren ve yalnızca esas faaliyet gelir/giderlerini içeren kâr kademesi aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin gelir tablosu verileri aşağıdaki gibidir:\n\n2025: Net satışlar 400.000 ₺, brüt satış kârı 120.000 ₺, faaliyet giderleri 80.000 ₺.\n2026: Net satışlar 500.000 ₺, brüt satış kârı 150.000 ₺, faaliyet giderleri 105.000 ₺.\n\nBu verilere göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Brüt satış kârı",
-      "B": "Olağan kâr",
-      "C": "Faaliyet kârı",
-      "D": "Dönem kârı",
-      "E": "Dönem net kârı"
+      "A": "Brüt kâr marjı 2026'da %5 azalmıştır.",
+      "B": "Faaliyet kârı tutarı 2026'da azalmıştır.",
+      "C": "Faaliyet giderlerinin net satışlara oranı iki yılda da aynıdır.",
+      "D": "Brüt kâr marjı sabit kalırken faaliyet kâr marjı düşmüştür.",
+      "E": "2026'da faaliyet kârı oluşmamıştır."
     },
-    "answer": "C",
-    "solution": "**Faaliyet kârı**, net satışlardan satışların maliyeti ve faaliyet giderleri düşülerek bulunur; yalnızca **esas faaliyet** gelir/giderlerini içerdiğinden esas faaliyetin kârlılığını gösterir. (Diğer olağan ve olağandışı kalemler sonraki kademelerde eklenir.)",
+    "answer": "D",
+    "solution": "Brüt kâr marjı her iki yılda da %30'dur. Faaliyet kârı 2025'te 40.000 ₺ ve marjı %10; 2026'da 45.000 ₺ ve marjı %9'dur. Dolayısıyla brüt marj sabit kalmış, faaliyet kârı tutarı artsa da **faaliyet kâr marjı düşmüştür**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - Gelir tablosu kârlılık basamakları; 2025 SGS yatay analiz soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "finmuh-gt-gen-0058",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Bir işletmenin faaliyet kârı 130.000 ₺, diğer olağan geliri 30.000 ₺, diğer olağan gideri 10.000 ₺, finansman gideri 20.000 ₺'dir. İşletmenin olağan kârı kaç ₺'dir?",
+    "stem": "Bir işletmenin brüt satışları 700.000 ₺, satıştan iadeleri 30.000 ₺, satış iskontoları 20.000 ₺ ve satışların maliyeti 390.000 ₺'dir. Faaliyet giderleri 120.000 ₺, faiz gelirleri 20.000 ₺, kambiyo kârları 10.000 ₺, reeskont faiz giderleri 5.000 ₺ ve finansman giderleri 35.000 ₺'dir.\n\nİşletmenin olağan kârı kaç ₺'dir?",
     "options": {
-      "A": "190.000",
-      "B": "170.000",
-      "C": "150.000",
-      "D": "130.000",
-      "E": "110.000"
+      "A": "130.000",
+      "B": "125.000",
+      "C": "140.000",
+      "D": "160.000",
+      "E": "260.000"
     },
-    "answer": "D",
-    "solution": "Olağan Kâr = 130.000 + 30.000 − 10.000 − 20.000 = **130.000 ₺**.",
+    "answer": "A",
+    "solution": "Net satışlar 700.000 − 30.000 − 20.000 = 650.000 ₺; brüt kâr 650.000 − 390.000 = 260.000 ₺ ve faaliyet kârı 260.000 − 120.000 = 140.000 ₺'dir. Olağan kâr 140.000 + 20.000 + 10.000 − 5.000 − 35.000 = **130.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-olağan kâr; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 60/61/62/63/64/65/66 hesap grupları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "finmuh-gt-gen-0059",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "İşletmenin sattığı ticari malın maliyet kaydı (satışla eş zamanlı) aşağıdakilerden hangisidir? (Sürekli/aralıksız envanter yöntemi; satılan malın maliyeti 60.000 ₺)",
+    "stem": "Esas faaliyet konusu makine üretip satmak olan işletme, ürettiği bir makineyi 250.000 ₺ + %20 KDV ile kredili satmıştır. Makinenin maliyeti 170.000 ₺'dir.\n\nSatış hasılatının kaydında kullanılacak gelir hesabı hangisidir?",
     "options": {
-      "A": "621 Satılan Ticari Mallar Maliyeti (-) (B) 60.000 / 153 Ticari Mallar (A) 60.000",
-      "B": "153 Ticari Mallar (B) 60.000 / 621 Satılan Ticari Mallar Maliyeti (A) 60.000",
-      "C": "600 Yurt İçi Satışlar (B) 60.000 / 153 Ticari Mallar (A) 60.000",
-      "D": "621 Satılan Ticari Mallar Maliyeti (-) (B) 60.000 / 600 Yurt İçi Satışlar (A) 60.000",
-      "E": "153 Ticari Mallar (B) 60.000 / 600 Yurt İçi Satışlar (A) 60.000"
+      "A": "645 Menkul Kıymet Satış Kârları",
+      "B": "649 Diğer Olağan Gelir ve Kârlar",
+      "C": "600 Yurt İçi Satışlar",
+      "D": "671 Önceki Dönem Gelir ve Kârlar",
+      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
     },
-    "answer": "A",
-    "solution": "Sürekli envanterde satışla birlikte maliyet kaydı: **621 Satılan Ticari Mallar Maliyeti (-) (B) 60.000** / **153 Ticari Mallar (A) 60.000** (satılan mal stoktan çıkar, maliyet gidere yazılır).",
+    "answer": "C",
+    "solution": "Makine işletmenin kullanılan duran varlığı değil, **esas faaliyet kapsamında üretilip satılan mamulüdür**. Bu nedenle KDV hariç 250.000 ₺ satış hasılatı 600 Yurt İçi Satışlar hesabına alacak kaydedilir; 679 kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-SMM; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 621 / 153"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 120/391/600; hasılat ile duran varlık satış kârı ayrımı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-gt-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "gelir_tablosu_hesaplari",
-    "stem": "Gelir tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti.\n\nII. Dönem Net Kârı = Dönem Kârı − Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları.\n\nIII. Net Satışlar = Brüt Satışlar + Satış İndirimleri.",
+    "stem": "Gelir tablosu ve dönem sonu hesaplarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Net satışlar, brüt satışlardan satış indirimlerinin düşülmesiyle bulunur.\n\nII. 621 Satılan Ticari Mallar Maliyeti faaliyet gideri değil, satışların maliyeti grubundadır.\n\nIII. 690 hesabın alacak kalanı vergi öncesi kârı gösterir; 691 hesabın borç kalanı net kâra ulaşılırken bu tutarı azaltır.\n\nIV. 692 hesabın borç kalanı 591 Dönem Net Zararı hesabına devredilir.",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
+      "A": "I ve II",
+      "B": "I, II, III ve IV",
       "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "D": "I, III ve IV",
+      "E": "Yalnız IV"
     },
     "answer": "B",
-    "solution": "Yanlış ifade **III**'dir. Satış indirimleri (satıştan iadeler, satış iskontoları) brüt satışlardan **düşülür**; doğrusu Net Satışlar = Brüt Satışlar **−** Satış İndirimleri'dir (toplanmaz). **I** Brüt Satış Kârı = Net Satışlar − Satışların Maliyeti ve **II** Dönem Net Kârı = Dönem Kârı − Vergi Karşılığı doğrudur. Doğru cevap **I ve II**.",
+    "solution": "Dört ifade de doğrudur. 61 grubu brüt satışlardan düşülür; 621 hesabı 62 grubundadır. 690'ın alacak kalanı vergi öncesi kârı, 691'in borç kalanı vergi karşılığını gösterir. 692 borç kalanı verdiğinde net zarar 591 hesaba devredilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - Gelir Tablosu"
+      "styleRef": "SGS Finansal Muhasebe (Gelir Tablosu uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 61/62/690/691/692/591"
     },
     "validYear": 2026,
     "mockExamId": null

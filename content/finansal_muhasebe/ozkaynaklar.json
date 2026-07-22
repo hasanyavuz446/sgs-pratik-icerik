@@ -91,20 +91,20 @@
     "id": "finmuh-ozk-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir işletmede taahhüt edilen (500 Sermaye) tutarı 500.000 ₺, henüz ödenmemiş sermaye (501) 150.000 ₺'dir. İşletmenin ödenmiş sermayesi kaç ₺'dir?",
+    "stem": "Sermayesi 600.000 ₺ olan anonim şirket, sermayesini %40 artırmıştır. Artırılan sermayeyi temsil eden paylar nominal değerlerinin %25 fazlasına satılmıştır. Sermaye taahhüt kaydı daha önce yapılmış, satış bedelinin tamamı banka hesabına yatırılmıştır.\n\nÖdemenin kaydında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "350.000",
-      "B": "500.000",
-      "C": "650.000",
-      "D": "150.000",
-      "E": "0"
+      "A": "102 Bankalar 240.000 ₺ borçlu; 501 Ödenmemiş Sermaye 240.000 ₺ alacaklı",
+      "B": "102 Bankalar 300.000 ₺ borçlu; 500 Sermaye 300.000 ₺ alacaklı",
+      "C": "102 Bankalar 300.000 ₺ borçlu; 501 Ödenmemiş Sermaye 240.000 ₺ ve 520 Hisse Senetleri İhraç Primleri 60.000 ₺ alacaklı",
+      "D": "501 Ödenmemiş Sermaye 240.000 ₺ borçlu; 102 Bankalar 240.000 ₺ alacaklı",
+      "E": "102 Bankalar 300.000 ₺ borçlu; 501 Ödenmemiş Sermaye 300.000 ₺ alacaklı"
     },
-    "answer": "A",
-    "solution": "Ödenmiş sermaye = Taahhüt edilen sermaye (500) − Ödenmemiş sermaye (501) = 500.000 − 150.000 = **350.000 ₺**.",
+    "answer": "C",
+    "solution": "Artırılan nominal sermaye 600.000 × %40 = **240.000 ₺**; ihraç primi 240.000 × %25 = **60.000 ₺** ve tahsilat **300.000 ₺**dir. Taahhüt önceden kaydedildiği için ödeme tarihinde 102 Bankalar 300.000 ₺ borçlandırılır; 501 Ödenmemiş Sermaye 240.000 ₺ ve 520 Hisse Senetleri İhraç Primleri 60.000 ₺ alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ödenmiş sermaye; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/501/520; 2024-2026 SGS sermaye artırımı soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "finmuh-ozk-gen-0015",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir işletmenin toplam varlıkları 800.000 ₺, toplam yabancı kaynakları (borçları) 300.000 ₺'dir. İşletmenin özkaynağı kaç ₺'dir?",
+    "stem": "Dönem başı özkaynağı 900.000 ₺ olan işletmede dönem içinde ortaklar 120.000 ₺ nakit sermaye koymuş, 180.000 ₺ kapsamlı gelir oluşmuş ve ortaklara 70.000 ₺ kâr payı dağıtılmıştır. Başka özkaynak hareketi yoktur.\n\nDönem sonu özkaynak kaç ₺'dir?",
     "options": {
-      "A": "1.100.000",
-      "B": "800.000",
-      "C": "300.000",
-      "D": "500.000",
-      "E": "0"
+      "A": "1.130.000",
+      "B": "1.270.000",
+      "C": "1.060.000",
+      "D": "970.000",
+      "E": "1.200.000"
     },
-    "answer": "D",
-    "solution": "Özkaynak = Varlıklar − Yabancı Kaynaklar = 800.000 − 300.000 = **500.000 ₺**.",
+    "answer": "A",
+    "solution": "Dönem sonu özkaynak = 900.000 + 120.000 + 180.000 − 70.000 = **1.130.000 ₺**dir. Ortak katkısı ve kapsamlı gelir artırıcı, ortaklara dağıtım azaltıcı özkaynak hareketidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-özkaynak; sınav stiline kalibre)",
-      "legislationRef": "Temel muhasebe eşitliği"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 1, par. 106(d) - özkaynak değişimlerinin mutabakatı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "finmuh-ozk-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Sermaye yedekleri (52) ile kâr yedekleri (54) arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdaki özkaynak kalemlerinin oluşum kaynaklarıyla ilgili ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "İkisi de dönem içinde ortaklara nakden dağıtılmış olan kâr paylarını (temettüleri) izleyen ve özkaynağı azaltan kalemlerdir.",
-      "B": "Sermaye yedekleri bir yıl içinde ödenecek kısa vadeli borç, kâr yedekleri ise bir yıldan uzun vadeli borç niteliğindeki yabancı kaynaklardır.",
-      "C": "Sermaye yedekleri işletmenin üçüncü kişilere olan borcunu, kâr yedekleri ise paraya çevrilebilir dönen varlıklarını gösteren kalemlerdir.",
-      "D": "İkisi de dönem içindeki satış ve faaliyet gelirlerini toplayan, dönem sonunda 690 hesaba devredilen gelir tablosu hesaplarıdır.",
-      "E": "Sermaye yedekleri (ör. emisyon primi) sermaye hareketlerinden doğar; kâr yedekleri (ör. yasal/olağanüstü yedek) ise dönem kârından ayrılır."
+      "A": "520 Hisse Senetleri İhraç Primleri ile 540 Yasal Yedekler, ikisi de satış hasılatından doğan gelir hesabıdır.",
+      "B": "540 Yasal Yedekler sermaye taahhüdünden, 501 Ödenmemiş Sermaye ise dönem kârından oluşur.",
+      "C": "542 Olağanüstü Yedekler bir borçlanma işlemiyle, 520 Hisse Senetleri İhraç Primleri ise dönem zararından oluşur.",
+      "D": "520 Hisse Senetleri İhraç Primleri ve 542 Olağanüstü Yedekler, ikisi de kanunen zorunlu kâr yedeğidir.",
+      "E": "520 Hisse Senetleri İhraç Primleri sermaye işleminden; 540 ve 542 hesapları ise kârın ayrılmasından doğar."
     },
     "answer": "E",
-    "solution": "**Sermaye yedekleri (52)** sermaye hareketlerinden (emisyon primi, yeniden değerleme artışı vb.) doğar; **kâr yedekleri (54)** ise dönem **kârından ayrılan** yedeklerdir (yasal, statü, olağanüstü).",
+    "solution": "**520 Hisse Senetleri İhraç Primleri** nominal değerin üzerindeki pay ihracından doğan sermaye yedeğidir. **540 Yasal Yedekler** ve **542 Olağanüstü Yedekler** ise kârın ayrılmasıyla oluşan kâr yedekleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 52 / 54 grupları"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 52 Sermaye Yedekleri ve 54 Kâr Yedekleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-ozk-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletme, nominal değeri 100.000 ₺ olan hisse senetlerini toplam 140.000 ₺ bedelle (nominalin üzerinde) ihraç etmiştir. Oluşan emisyon (ihraç) primi kaç ₺'dir?",
+    "stem": "Ortak, 500.000 ₺ tutarındaki sermaye taahhüdünü yerine getirmediği için payları iptal edilmiştir. Aynı nominal tutarlı yeni paylar başka bir ortağa 575.000 ₺'ye satılmış ve bedel bankaya yatırılmıştır.\n\nYeni ortağın ödemesine ilişkin doğru kayıt hangisidir?",
     "options": {
-      "A": "240.000",
-      "B": "140.000",
-      "C": "40.000",
-      "D": "100.000",
-      "E": "0"
+      "A": "102 Bankalar 575.000 ₺ borçlu; 500 Sermaye 575.000 ₺ alacaklı",
+      "B": "102 Bankalar 575.000 ₺ borçlu; 501 Ödenmemiş Sermaye 500.000 ₺ ve 521 Hisse Senedi İptal Kârları 75.000 ₺ alacaklı",
+      "C": "501 Ödenmemiş Sermaye 500.000 ₺ ve 521 Hisse Senedi İptal Kârları 75.000 ₺ borçlu; 102 Bankalar 575.000 ₺ alacaklı",
+      "D": "102 Bankalar 575.000 ₺ borçlu; 501 Ödenmemiş Sermaye 575.000 ₺ alacaklı",
+      "E": "102 Bankalar 575.000 ₺ borçlu; 501 Ödenmemiş Sermaye 500.000 ₺ ve 520 Hisse Senetleri İhraç Primleri 75.000 ₺ alacaklı"
     },
-    "answer": "C",
-    "solution": "Emisyon primi = İhraç bedeli − Nominal değer = 140.000 − 100.000 = **40.000 ₺** → 520 Hisse Senetleri İhraç Primleri.",
+    "answer": "B",
+    "solution": "Yeni payların satışında bankaya **575.000 ₺** girer. İptal edilen paylara ait **500.000 ₺** ödenmemiş sermaye kapatılır; aradaki **75.000 ₺** fark 521 Hisse Senedi İptal Kârları hesabına alacak kaydedilir. Bu fark, normal pay ihracından doğan 520 hesabı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-emisyon primi; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 520"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/501/521; 2025-2026 SGS ıskat soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-ozk-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Aşağıdakilerden hangisi özkaynakları azaltan (negatif) bir kalemdir?",
+    "stem": "Genel kurul, 80.000 ₺ tutarındaki 580 Geçmiş Yıllar Zararları'nı 542 Olağanüstü Yedekler hesabından karşılamıştır. Başka işlem yoktur.\n\nBu kararın toplam özkaynak üzerindeki etkisi hangisidir?",
     "options": {
-      "A": "500 Sermaye",
-      "B": "591 Dönem Net Zararı (-)",
-      "C": "540 Yasal Yedekler",
-      "D": "570 Geçmiş Yıllar Kârları",
-      "E": "520 Hisse Senetleri İhraç Primleri"
+      "A": "Toplam özkaynak 160.000 ₺ artar; çünkü iki hesap da kapanır.",
+      "B": "Toplam özkaynak 80.000 ₺ azalır; yalnız olağanüstü yedek düşer.",
+      "C": "Toplam özkaynak 80.000 ₺ artar; geçmiş yıl zararı ortadan kalkar.",
+      "D": "Toplam özkaynak değişmez; negatif zarar ve pozitif yedek aynı tutarda azalır.",
+      "E": "Yabancı kaynaklar 80.000 ₺ azalır; özkaynak etkilenmez."
     },
-    "answer": "B",
-    "solution": "**591 Dönem Net Zararı (-)** özkaynakları **azaltan (negatif)** bir kalemdir (501 Ödenmemiş Sermaye ve 580 Geçmiş Yıllar Zararları da benzer şekilde eksi kalemlerdir). Diğer seçenekler özkaynağı artıran kalemlerdir.",
+    "answer": "D",
+    "solution": "Kayıt 542 Olağanüstü Yedekler borç / 580 Geçmiş Yıllar Zararları alacak şeklindedir. Pozitif yedek **80.000 ₺ azalırken** negatif zarar kalemi de **80.000 ₺ azalır**; bu nedenle toplam özkaynak değişmez, yalnız bileşimi değişir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 591 / 501 / 580"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 542/580"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "finmuh-ozk-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir işletmede taahhüt edilen sermaye (500) 800.000 ₺, ödenmemiş sermaye (501) 200.000 ₺'dir. İşletmenin ödenmiş sermayesi kaç ₺'dir?",
+    "stem": "Geçmiş yıllar kârı 600.000 ₺ olan şirketin genel kurulu; 50.000 ₺ yasal yedek, 30.000 ₺ statü yedeği, 20.000 ₺ olağanüstü yedek ayırmış ve kalanını ortaklara dağıtmıştır.\n\nKâr dağıtım kaydında 331 Ortaklara Borçlar hesabına kaydedilecek tutar kaç ₺'dir?",
     "options": {
       "A": "600.000",
-      "B": "800.000",
-      "C": "1.000.000",
-      "D": "200.000",
-      "E": "400.000"
+      "B": "580.000",
+      "C": "500.000",
+      "D": "520.000",
+      "E": "100.000"
     },
-    "answer": "A",
-    "solution": "Ödenmiş sermaye = 800.000 − 200.000 = **600.000 ₺** (500 Sermaye − 501 Ödenmemiş Sermaye).",
+    "answer": "C",
+    "solution": "Ortaklara ayrılan kâr payı = 600.000 − 50.000 − 30.000 − 20.000 = **500.000 ₺**dir. Kayıtta 570 Geçmiş Yıllar Kârları 600.000 ₺ borçlandırılır; yedek hesapları ve 331 Ortaklara Borçlar alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ödenmiş sermaye; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 570/540/541/542/331"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "finmuh-ozk-gen-0025",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletmenin dönem sonunda net kâr elde etmesinin özkaynaklar üzerindeki etkisi aşağıdakilerden hangisidir?",
+    "stem": "Dönem sonunda 692 Dönem Net Kârı veya Zararı hesabı 240.000 ₺ alacak kalanı vermektedir.\n\nBu hesabın kapatılmasına ilişkin kayıt hangisidir?",
     "options": {
-      "A": "591 Dönem Net Zararı hesabı aracılığıyla özkaynakları azaltır.",
-      "B": "Ödenecek bir borç doğurarak yabancı kaynakları artırır.",
-      "C": "Sonuç hesaplarında kaldığından özkaynakları hiç etkilemez.",
-      "D": "590 Dönem Net Kârı aracılığıyla özkaynakları artırır.",
-      "E": "Kasadan nakit çıkışı yaratarak bir varlık azalışı doğurur."
+      "A": "590 Dönem Net Kârı 240.000 ₺ borçlu / 692 Dönem Net Kârı veya Zararı 240.000 ₺ alacaklı",
+      "B": "692 Dönem Net Kârı veya Zararı 240.000 ₺ borçlu / 591 Dönem Net Zararı 240.000 ₺ alacaklı",
+      "C": "690 Dönem Kârı veya Zararı 240.000 ₺ borçlu / 590 Dönem Net Kârı 240.000 ₺ alacaklı",
+      "D": "591 Dönem Net Zararı 240.000 ₺ borçlu / 692 Dönem Net Kârı veya Zararı 240.000 ₺ alacaklı",
+      "E": "692 Dönem Net Kârı veya Zararı 240.000 ₺ borçlu / 590 Dönem Net Kârı 240.000 ₺ alacaklı"
     },
-    "answer": "D",
-    "solution": "Dönem net kârı, özkaynaklar içinde **590 Dönem Net Kârı** olarak yer alır ve özkaynakları **artırır**.",
+    "answer": "E",
+    "solution": "692 hesabın alacak kalanı **net kârı** gösterir. Hesap borçlandırılarak kapatılır ve özkaynak hesabı olan **590 Dönem Net Kârı** alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-etki; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 590"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 692/590"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "finmuh-ozk-gen-0026",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletmenin dönem sonunda net zarar etmesinin özkaynaklar üzerindeki etkisi aşağıdakilerden hangisidir?",
+    "stem": "Genel kurul 120.000 ₺ nakit kâr payı dağıtılmasına karar vermiş, ancak dönem sonuna kadar ödeme yapılmamıştır. Karar tarihinde bu işlemin finansal durum tablosuna etkisi hangisidir?",
     "options": {
-      "A": "590 Dönem Net Kârı hesabına eklenerek özkaynakları artırır.",
-      "B": "591 Dönem Net Zararı (-) aracılığıyla özkaynakları azaltır.",
-      "C": "Sonuç hesaplarında kaldığından özkaynakları hiç etkilemez.",
-      "D": "Bir borç ödemesi sayıldığından yabancı kaynakları azaltır.",
-      "E": "Dönem sonunda kaydedilen bir olağandışı gelir doğurur."
+      "A": "Özkaynak 120.000 ₺ azalır, yabancı kaynak 120.000 ₺ artar; varlıklar değişmez.",
+      "B": "Özkaynak ve varlıklar 120.000 ₺ azalır; yabancı kaynaklar değişmez.",
+      "C": "Varlıklar 120.000 ₺ artar, özkaynak 120.000 ₺ azalır.",
+      "D": "Yalnız özkaynak bileşenleri arasında aktarım olur; toplam özkaynak değişmez.",
+      "E": "Karar tarihindeki işlem finansal tablolarda hiçbir değişiklik oluşturmaz."
     },
-    "answer": "B",
-    "solution": "Dönem net zararı, özkaynaklar içinde **591 Dönem Net Zararı (-)** olarak yer alır ve özkaynakları **azaltır**.",
+    "answer": "A",
+    "solution": "Kâr payı kararıyla dağıtılacak kâr özkaynaktan çıkar ve ödeme yapılıncaya kadar **331 Ortaklara Borçlar** hesabında yükümlülük olur. Henüz nakit çıkmadığı için karar tarihinde varlıklar değişmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-etki; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 591"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32, par. 35; 1 Sıra No'lu MSUGT - 570/331"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "finmuh-ozk-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletme, mevcut sermayesini nakit karşılığı 200.000 ₺ artırmaya karar vermiş ve ortaklar bu tutarı derhal banka hesabına ödemiştir. Bu sermaye artırımının kaydı aşağıdakilerden hangisidir?",
+    "stem": "Ortakların 300.000 ₺ sermaye taahhüdü 501 Ödenmemiş Sermaye borç / 500 Sermaye alacak kaydıyla muhasebeleştirilmiştir. Daha sonra taahhüdün tamamı şirketin banka hesabına yatırılmıştır.\n\nÖdeme tarihinde hangi kayıt yapılır?",
     "options": {
-      "A": "102 Bankalar (B) 200.000 / 500 Sermaye (A) 200.000",
-      "B": "500 Sermaye (B) 200.000 / 102 Bankalar (A) 200.000",
-      "C": "102 Bankalar (B) 200.000 / 540 Yasal Yedekler (A) 200.000",
-      "D": "501 Ödenmemiş Sermaye (-) (B) 200.000 / 500 Sermaye (A) 200.000",
-      "E": "102 Bankalar (B) 200.000 / 590 Dönem Net Kârı (A) 200.000"
+      "A": "501 Ödenmemiş Sermaye borç / 500 Sermaye alacak",
+      "B": "500 Sermaye borç / 102 Bankalar alacak",
+      "C": "102 Bankalar borç / 500 Sermaye alacak",
+      "D": "102 Bankalar borç / 501 Ödenmemiş Sermaye alacak",
+      "E": "501 Ödenmemiş Sermaye borç / 102 Bankalar alacak"
     },
-    "answer": "A",
-    "solution": "Nakit ödemeli sermaye artırımı derhal ödendiğinden: banka girişi **102 Bankalar (B) 200.000**; sermaye artışı **500 Sermaye (A) 200.000**.",
+    "answer": "D",
+    "solution": "Taahhüt kaydı daha önce yapılmıştır. Ödeme tarihinde bankadaki varlık arttığı için **102 Bankalar borçlandırılır**; negatif özkaynak niteliğindeki ödenmemiş sermaye azaldığı için **501 Ödenmemiş Sermaye alacaklandırılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-sermaye artırımı; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 102"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/501"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-ozk-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İzleyen dönemde, önceki dönemin '590 Dönem Net Kârı' hesabındaki tutar (dağıtım/aktarım kararına göre) hangi hesaba devredilebilir?",
+    "stem": "Önceki döneme ait 480.000 ₺ kâr, yeni dönemde 570 Geçmiş Yıllar Kârları hesabında izlenmektedir. Genel kurul bu tutarın 60.000 ₺'sini yasal yedeğe, 40.000 ₺'sini olağanüstü yedeğe ayırmış ve 380.000 ₺'sini ortaklara dağıtmıştır.\n\nDağıtım kaydında borçlandırılacak hesap hangisidir?",
     "options": {
-      "A": "580 Geçmiş Yıllar Zararları (-), çünkü tüm dönem kârı önceki yılların zararını kapatmak için bu hesaba aktarılır",
-      "B": "100 Kasa hesabı, çünkü dönem kârı tutarı kasaya nakit olarak girer ve orada bir hazır değer olarak izlenir",
-      "C": "320 Satıcılar hesabı, çünkü dönem kârı satıcılara olan ticari borçların kapatılması için bu hesaba devredilir",
-      "D": "153 Ticari Mallar hesabı, çünkü dönem kârı satın alınan stokların maliyetine eklenerek bu hesapta izlenir",
-      "E": "570 Geçmiş Yıllar Kârları (ve/veya yedek hesapları, dağıtılan kısımlar için ilgili borç hesapları)"
+      "A": "590 Dönem Net Kârı, 480.000 ₺",
+      "B": "570 Geçmiş Yıllar Kârları, 480.000 ₺",
+      "C": "331 Ortaklara Borçlar, 380.000 ₺",
+      "D": "540 Yasal Yedekler, 60.000 ₺",
+      "E": "542 Olağanüstü Yedekler, 40.000 ₺"
     },
-    "answer": "E",
-    "solution": "İzleyen dönemde 590 Dönem Net Kârı, genel kurul kararına göre yedeklere ayrılır, ortaklara dağıtılır ve/veya dağıtılmayan kısmı **570 Geçmiş Yıllar Kârları**'na devredilir.",
+    "answer": "B",
+    "solution": "Kâr önceki döneme ait olduğundan karar tarihinde **570 Geçmiş Yıllar Kârları 480.000 ₺ borçlandırılır**. Ayrılan yedekler ile ortaklara borç alacaklandırılır. 590 hesabı dönem kapandıktan sonra 570'e devredilmiş durumdadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-aktarım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 590 / 570"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 570/540/542/331"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "finmuh-ozk-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Maddi duran varlıkların yeniden değerlenmesi (enflasyon düzeltmesi kapsamında) sonucu oluşan değer artışları Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "TMS 16'daki yeniden değerleme modelini uygulayan işletmede bir makinenin defter değeri 800.000 ₺, yeniden değerleme tarihindeki gerçeğe uygun değeri 950.000 ₺'dir. Bu varlık için daha önce kâr veya zarara yansıtılmış bir değer azalışı yoktur.\n\n150.000 ₺'lik artış nasıl muhasebeleştirilir?",
     "options": {
-      "A": "679 Diğer Olağandışı Gelir ve Kârlar",
-      "B": "540 Yasal Yedekler",
-      "C": "590 Dönem Net Kârı",
-      "D": "522 M.D.V. Yeniden Değerleme Artışları",
-      "E": "500 Sermaye"
+      "A": "Tamamı satış geliri olarak kâr veya zarara kaydedilir.",
+      "B": "Varlığın maliyetinden indirilerek birikmiş amortisman azaltılır.",
+      "C": "Ticari borç olarak yabancı kaynaklarda muhasebeleştirilir.",
+      "D": "Geçmiş yıl zararları hesabına aktarılarak özkaynak azaltılır.",
+      "E": "Diğer kapsamlı gelire alınır ve yeniden değerleme fazlası olarak özkaynakta biriktirilir."
     },
-    "answer": "D",
-    "solution": "Maddi duran varlıkların yeniden değerlenmesinden doğan değer artışları, bir sermaye yedeği olan **522 M.D.V. Yeniden Değerleme Artışları** hesabında izlenir (doğrudan gelir yazılmaz).",
+    "answer": "E",
+    "solution": "Önceki bir değer azalışını tersine çevirme durumu yoksa yeniden değerleme artışı **diğer kapsamlı gelire** yansıtılır ve özkaynakta **yeniden değerleme fazlası** olarak biriktirilir. Bu işlem enflasyon düzeltmesiyle aynı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 522"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 16 Maddi Duran Varlıklar, par. 39"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "finmuh-ozk-gen-0035",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Türk Ticaret Kanunu'na göre I. tertip genel kanuni yedek akçe, dönem kârının yüzde kaçı oranında ayrılır?",
+    "stem": "Ödenmiş sermayesi 1.000.000 ₺, daha önce ayrılmış genel kanuni yedek akçesi 195.000 ₺ ve yıllık kârı 200.000 ₺ olan anonim şirkette, üst sınıra ulaşılıncaya kadar ayrılması gereken I. tertip genel kanuni yedek akçe kaç ₺'dir?",
     "options": {
-      "A": "%5",
-      "B": "%1",
-      "C": "%10",
-      "D": "%20",
-      "E": "%50"
+      "A": "40.000",
+      "B": "10.000",
+      "C": "5.000",
+      "D": "20.000",
+      "E": "195.000"
     },
-    "answer": "A",
-    "solution": "TTK md. 519'a göre I. tertip genel kanuni yedek akçe, dönem (yıllık) kârının **%5'i** oranında ayrılır (ödenmiş sermayenin %20'sine ulaşıncaya kadar).",
+    "answer": "C",
+    "solution": "Yıllık kârın %5'i 10.000 ₺ olsa da genel kanuni yedeğin ilk sınırı ödenmiş sermayenin %20'si, yani **200.000 ₺**dir. Mevcut yedek 195.000 ₺ olduğundan yalnız **5.000 ₺** ayrılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (mevzuat; sınav stiline kalibre)",
-      "legislationRef": "TTK md. 519"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TTK md. 519/1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "finmuh-ozk-gen-0037",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir işletmede taahhüt edilen sermaye (500) 1.000.000 ₺, ödenmemiş sermaye (501) 300.000 ₺'dir. İşletmenin ödenmiş sermayesi kaç ₺'dir?",
+    "stem": "Sermaye taahhüdünü yerine getirmeyen ortağın 800.000 ₺ nominal değerli payları iptal edilmiş; aynı nominal tutarlı yeni paylar 900.000 ₺'ye başka bir ortağa satılmıştır. Aradaki 100.000 ₺ fark hangi hesapta izlenir?",
     "options": {
-      "A": "1.300.000",
-      "B": "1.000.000",
-      "C": "500.000",
-      "D": "300.000",
-      "E": "700.000"
+      "A": "521 Hisse Senedi İptal Kârları",
+      "B": "520 Hisse Senetleri İhraç Primleri",
+      "C": "649 Diğer Olağan Gelir ve Kârlar",
+      "D": "542 Olağanüstü Yedekler",
+      "E": "590 Dönem Net Kârı"
     },
-    "answer": "E",
-    "solution": "Ödenmiş sermaye = 1.000.000 − 300.000 = **700.000 ₺** (500 − 501).",
+    "answer": "A",
+    "solution": "Fark normal bir yeni pay ihracından değil, taahhüdünü yerine getirmeyen ortağın paylarının **iptal edilip yeniden satılmasından** doğmuştur. Bu nedenle **521 Hisse Senedi İptal Kârları** hesabında izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ödenmiş sermaye; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 521; 2025-2026 SGS ıskat soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "finmuh-ozk-gen-0038",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletmenin toplam varlıkları 900.000 ₺, toplam yabancı kaynakları 350.000 ₺'dir. Özkaynağı kaç ₺'dir?",
+    "stem": "Şirket, ortaklardan nakden karşılanmak üzere 450.000 ₺ sermaye artırmış; taahhüt ve ödeme işlemleri aynı dönem içinde tamamlanmıştır. İşlem öncesine göre finansal durum tablosundaki değişim hangisidir?",
     "options": {
-      "A": "550.000",
-      "B": "900.000",
-      "C": "1.250.000",
-      "D": "350.000",
-      "E": "250.000"
+      "A": "Varlıklar 450.000 ₺ azalır, özkaynak değişmez.",
+      "B": "Varlıklar ve yabancı kaynaklar 450.000 ₺ artar.",
+      "C": "Yabancı kaynaklar 450.000 ₺ azalır, özkaynak artar.",
+      "D": "Varlıklar ve özkaynak 450.000 ₺ artar, yabancı kaynaklar değişmez.",
+      "E": "Yalnız özkaynak hesapları arasında aktarım olur; toplam değişmez."
     },
-    "answer": "A",
-    "solution": "Özkaynak = Varlıklar − Yabancı Kaynaklar = 900.000 − 350.000 = **550.000 ₺**.",
+    "answer": "D",
+    "solution": "Nakit sermaye artırımında banka mevcudu, dolayısıyla varlıklar **450.000 ₺ artar**. Aynı tutarda ödenmiş sermaye oluştuğu için özkaynak da artar; işlem borç doğurmadığından yabancı kaynaklar değişmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-özkaynak; sınav stiline kalibre)",
-      "legislationRef": "Temel muhasebe eşitliği"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "Temel muhasebe eşitliği; 1 Sıra No'lu MSUGT - 102/500/501"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "finmuh-ozk-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Ortaklar, taahhüt ettikleri sermayenin kalan tamamı olan 250.000 ₺'yi işletmenin banka hesabına yatırmıştır. Bu ödeme sonrası '501 Ödenmemiş Sermaye (-)' hesabının bakiyesi ne olur?",
+    "stem": "Şirketin 300.000 ₺ sermaye azaltımı tescil edilmiş ve ortaklara ödenecek tutar 331 Ortaklara Borçlar hesabına aktarılmıştır. Tutar daha sonra şirketin banka hesabından ödenmiştir.\n\nÖdeme tarihinde yapılacak kayıt hangisidir?",
     "options": {
-      "A": "Ödeme yalnızca kayıt altına alınır, bakiye değişmez ve 250.000 ₺ borç bakiyesi aynen kalmaya devam eder.",
-      "B": "Ödenen tutar sermayeden düşüldüğü için 500 Sermaye hesabı 250.000 ₺ azalır ve ödenmiş sermaye küçülür.",
-      "C": "Fazla ödeme yapıldığı gerekçesiyle hesap ters çalışır ve 250.000 ₺ tutarında alacak bakiyesi oluşur.",
-      "D": "Bakiye sıfırlanır (hesap kapanır), çünkü taahhüt edilen sermayenin tamamı ödenmiştir.",
-      "E": "Bankaya yatan tutar doğrudan gelir yazıldığından 590 Dönem Net Kârı hesabı 250.000 ₺ artar."
+      "A": "500 Sermaye borç / 102 Bankalar alacak",
+      "B": "102 Bankalar borç / 331 Ortaklara Borçlar alacak",
+      "C": "331 Ortaklara Borçlar borç / 500 Sermaye alacak",
+      "D": "501 Ödenmemiş Sermaye borç / 102 Bankalar alacak",
+      "E": "331 Ortaklara Borçlar borç / 102 Bankalar alacak"
     },
-    "answer": "D",
-    "solution": "Kalan taahhüdün tamamı ödendiğinde **501 Ödenmemiş Sermaye (-) alacaklandırılarak kapatılır** ve bakiyesi **sıfırlanır**; artık ödenmiş sermaye = taahhüt edilen sermayeye eşittir.",
+    "answer": "E",
+    "solution": "Sermaye azaltımı tescil edildiğinde 500 Sermaye borçlandırılıp 331 Ortaklara Borçlar alacaklandırılmıştır. Sonraki ödeme, mevcut borcun kapatılmasıdır: **331 borç / 102 Bankalar alacak**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ödeme; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 501 / 102"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 500/331/102"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "finmuh-ozk-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Taahhüt edilen sermayesi (500) 700.000 ₺, ödenmemiş sermayesi (501) 100.000 ₺ olan bir işletmenin ödenmiş sermayesi kaç ₺'dir?",
+    "stem": "Dönem sonunda 692 Dönem Net Kârı veya Zararı hesabı 90.000 ₺ borç kalanı vermiştir. Bu hesap hangi hesaba devredilerek kapatılır?",
     "options": {
-      "A": "800.000",
-      "B": "600.000",
-      "C": "700.000",
-      "D": "100.000",
-      "E": "300.000"
+      "A": "591 Dönem Net Zararı (-)",
+      "B": "590 Dönem Net Kârı",
+      "C": "580 Geçmiş Yıllar Zararları (-)",
+      "D": "570 Geçmiş Yıllar Kârları",
+      "E": "690 Dönem Kârı veya Zararı"
     },
-    "answer": "B",
-    "solution": "Ödenmiş sermaye = 700.000 − 100.000 = **600.000 ₺** (500 − 501).",
+    "answer": "A",
+    "solution": "692 hesabın borç kalanı net zararı gösterir. Dönem sonunda **591 Dönem Net Zararı (-) borçlandırılır**, 692 hesap alacaklandırılarak kapatılır. 580 hesabı önceki dönemlere ait zararları izler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ödenmiş sermaye; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 692/591"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-ozk-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletme, nominal değeri 10 ₺ olan 20.000 adet hisse senedini adedi 12 ₺'den ihraç etmiştir. Oluşan toplam emisyon (ihraç) primi kaç ₺'dir?",
+    "stem": "İşletme, nominal değeri toplam 1.000.000 ₺ olan payları 1.200.000 ₺'ye ihraç etmiş ve yalnız bu ihraca doğrudan bağlanabilen 30.000 ₺ işlem maliyetine katlanmıştır. Vergi etkisi dikkate alınmayacaktır.\n\nTMS 32'ye göre işlemin özkaynakta oluşturduğu net artış kaç ₺'dir?",
     "options": {
-      "A": "240.000",
-      "B": "200.000",
-      "C": "24.000",
-      "D": "40.000",
-      "E": "20.000"
+      "A": "1.000.000",
+      "B": "1.230.000",
+      "C": "1.170.000",
+      "D": "1.200.000",
+      "E": "970.000"
     },
-    "answer": "D",
-    "solution": "Birim prim = İhraç bedeli − Nominal = 12 − 10 = 2 ₺. Toplam emisyon primi = 2 × 20.000 = **40.000 ₺** → 520 Hisse Senetleri İhraç Primleri.",
+    "answer": "C",
+    "solution": "Pay ihracından sağlanan 1.200.000 ₺ özkaynak işleminin doğrudan maliyeti olan 30.000 ₺, TMS 32'ye göre özkaynaktan indirilir. Net artış 1.200.000 − 30.000 = **1.170.000 ₺**dir; maliyet faaliyet gideri yapılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-emisyon primi; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 520"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32 Finansal Araçlar: Sunum, par. 35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "finmuh-ozk-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Dönem net kârı 400.000 ₺ olan bir anonim şirket, I. tertip genel kanuni yedek akçeyi kârın %5'i oranında ayıracaktır (üst sınıra ulaşılmamıştır). Ayrılacak I. tertip yasal yedek tutarı kaç ₺'dir?",
+    "stem": "Ödenmiş sermayesi 2.000.000 ₺ olan anonim şirket, pay sahiplerine 400.000 ₺ kâr dağıtacaktır. TTK md. 519/2-c kapsamında, pay sahiplerine ödenmiş sermayenin %5'ini aşan dağıtımın %10'u genel kanuni yedeğe eklenmektedir.\n\nBuna göre bu dağıtım üzerinden ayrılacak tutar kaç ₺'dir?",
     "options": {
-      "A": "80.000",
-      "B": "40.000",
-      "C": "20.000",
-      "D": "8.000",
-      "E": "4.000"
+      "A": "10.000",
+      "B": "20.000",
+      "C": "40.000",
+      "D": "30.000",
+      "E": "100.000"
     },
-    "answer": "C",
-    "solution": "I. tertip yasal yedek = 400.000 × %5 = **20.000 ₺** → 540 Yasal Yedekler.",
+    "answer": "D",
+    "solution": "Ödenmiş sermayenin %5'i 2.000.000 × %5 = 100.000 ₺dir. Bu tutarı aşan dağıtım 400.000 − 100.000 = 300.000 ₺; bunun %10'u **30.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-yasal yedek; sınav stiline kalibre)",
-      "legislationRef": "TTK md. 519; 1 Sıra No'lu MSUGT - 540"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TTK md. 519/2-c"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "finmuh-ozk-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Toplam varlıkları 1.200.000 ₺, toplam yabancı kaynakları 500.000 ₺ olan bir işletmenin özkaynağı kaç ₺'dir?",
+    "stem": "İşletme kendi özkaynağına dayalı paylarını 200.000 ₺ ödeyerek geri satın almıştır. TMS 32'ye göre bu işlem nasıl muhasebeleştirilir?",
     "options": {
-      "A": "1.700.000",
-      "B": "1.200.000",
-      "C": "300.000",
-      "D": "500.000",
-      "E": "700.000"
+      "A": "200.000 ₺ finansal varlık ve aynı tutarda yatırım geliri kaydedilir.",
+      "B": "Geri alınan paylar özkaynaktan düşülür; alım nedeniyle kâr veya zarara kazanç ya da kayıp yansıtılmaz.",
+      "C": "Ödenen tutar faaliyet gideri, paylar ise stok olarak kaydedilir.",
+      "D": "Payların nominal değeri sermayeye eklenir ve özkaynak artırılır.",
+      "E": "İşlem yalnız dipnotta açıklanır; finansal durum tablosu değişmez."
     },
-    "answer": "E",
-    "solution": "Özkaynak = Varlıklar − Yabancı Kaynaklar = 1.200.000 − 500.000 = **700.000 ₺**.",
+    "answer": "B",
+    "solution": "TMS 32'ye göre işletmenin geri satın aldığı kendi payları **özkaynaktan düşülür**. Kendi paylarının alımı, satımı, ihracı veya iptalinden dolayı kâr veya zarara kazanç ya da kayıp yansıtılmaz; ödenen tutar doğrudan özkaynakta muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-özkaynak; sınav stiline kalibre)",
-      "legislationRef": "Temel muhasebe eşitliği"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32 Finansal Araçlar: Sunum, par. 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "finmuh-ozk-gen-0047",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir işletmenin özkaynağı, dönem içinde herhangi bir sermaye hareketi olmaksızın yalnızca faaliyet sonuçlarından etkilenmiştir. Buna göre aşağıdakilerden hangisi doğrudur?",
+    "stem": "Dönem başı özkaynağı 1.200.000 ₺ olan işletmenin dönem içinde toplam kapsamlı geliri 220.000 ₺, ortakların sermaye katkısı 150.000 ₺ ve ortaklara dağıtımı 90.000 ₺'dir. Ayrıca 40.000 ₺ ödenerek işletmenin kendi payları geri alınmıştır.\n\nDönem sonu özkaynak kaç ₺'dir?",
     "options": {
-      "A": "Dönemi kârla kapatmak özkaynağı azaltır (590 -), zararla kapatmak ise özkaynağı artırır (591); yani etki terstir.",
-      "B": "Dönem kârı işletmenin yabancı kaynaklarını (borçlarını) artırır, dönem zararı ise özkaynakları artırır.",
-      "C": "Kâr da zarar da yalnızca sonuç hesaplarında kaldığından, dönem sonucu özkaynak tutarını hiçbir şekilde etkilemez.",
-      "D": "Dönemi kârla kapatmak özkaynağı artırır (590), zararla kapatmak özkaynağı azaltır (591 -).",
-      "E": "Kâr ve zarar yalnızca işletmenin varlıklarını etkiler; pasif tarafta yer alan özkaynağı hiç etkilemez."
+      "A": "1.520.000",
+      "B": "1.350.000",
+      "C": "1.480.000",
+      "D": "1.400.000",
+      "E": "1.440.000"
     },
-    "answer": "D",
-    "solution": "Sermaye hareketi yoksa özkaynak faaliyet sonucundan etkilenir: **dönem kârı (590) özkaynağı artırır**, **dönem zararı (591 -) özkaynağı azaltır**.",
+    "answer": "E",
+    "solution": "Dönem sonu özkaynak = 1.200.000 + 220.000 + 150.000 − 90.000 − 40.000 = **1.440.000 ₺**dir. Toplam kapsamlı gelir ve ortak katkısı artırır; dağıtım ve geri alınan kendi payları azaltır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-etki; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 590 / 591"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 1, par. 106(d); TMS 32, par. 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "finmuh-ozk-gen-0049",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Emisyon (ihraç) primi kavramı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir şirket, hukuki biçimi pay olan ancak sözleşmesi gereği beş yıl sonra sahibine sabit tutarda nakit ödenmesini zorunlu kılan bir araç ihraç etmiştir.\n\nTMS 32'ye göre bu araç hangi unsur nedeniyle finansal borç olarak sınıflandırılır?",
     "options": {
-      "A": "Hisse senedinin nominal (itibari) değerinin altında bir bedelle satılmasından doğan olumsuz farktır ve bir dönem zararı olarak sonuç hesaplarına yazılır.",
-      "B": "Hisse senedinin nominal (itibari) değerinin üzerinde bir bedelle ihraç edilmesinden doğan olumlu farktır ve 520 hesabında izlenir.",
-      "C": "İşletmenin dönem sonunda ortaklarına dağıtmayı kararlaştırdığı ve 331 Ortaklara Borçlar hesabında izlediği nakit kâr payı (temettü) tutarıdır.",
-      "D": "İşletmenin ihraç ettiği tahvillerden doğan ve bir yıldan uzun vadede geri ödenecek olan uzun vadeli bir yabancı kaynak (borç) kalemidir.",
-      "E": "Hisse senetlerinin bastırılması ve borsaya kote edilmesi için katlanılan, dönem sonucunu azaltan bir faaliyet gideri kalemidir."
+      "A": "İhraççının nakit veya başka bir finansal varlık teslim etme yönünde sözleşmeye dayalı yükümlülüğü bulunması",
+      "B": "Aracın hukuki adında pay sözcüğünün yer alması",
+      "C": "Aracın organize bir piyasada işlem görebilmesi",
+      "D": "Vadesinin bir yıldan uzun olması",
+      "E": "Aracın nominal değerinin sabit olması"
     },
-    "answer": "B",
-    "solution": "**Emisyon primi**, hisse senedinin **nominal değerinin üzerinde** bir bedelle ihracından doğan **olumlu farktır**; bir sermaye yedeği olarak **520 Hisse Senetleri İhraç Primleri**'nde izlenir.",
+    "answer": "A",
+    "solution": "TMS 32'de sınıflama hukuki addan çok sözleşmenin özüne dayanır. İhraççının **nakit veya başka bir finansal varlık teslim etme yükümlülüğü** varsa araç, hukuken pay olarak adlandırılsa bile finansal borçtur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 520"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32 Finansal Araçlar: Sunum, par. 15-16"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "finmuh-ozk-gen-0050",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Ortaklarca taahhüt edilmiş ancak henüz ödenmemiş sermaye tutarı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "Ortak, daha önce kaydedilmiş 400.000 ₺ tutarındaki ayni sermaye taahhüdünü, işletmede kullanılacak ve bu değer üzerinden kabul edilen bir makineyi teslim ederek yerine getirmiştir.\n\nTeslim kaydı hangisidir?",
     "options": {
-      "A": "500 Sermaye",
-      "B": "520 Hisse Senedi İhraç Primleri",
-      "C": "540 Yasal Yedekler",
-      "D": "590 Dönem Net Kârı",
-      "E": "501 Ödenmemiş Sermaye (-)"
+      "A": "501 Ödenmemiş Sermaye borç / 253 Tesis, Makine ve Cihazlar alacak",
+      "B": "253 Tesis, Makine ve Cihazlar borç / 500 Sermaye alacak",
+      "C": "500 Sermaye borç / 253 Tesis, Makine ve Cihazlar alacak",
+      "D": "253 Tesis, Makine ve Cihazlar borç / 501 Ödenmemiş Sermaye alacak",
+      "E": "253 Tesis, Makine ve Cihazlar borç / 520 Hisse Senetleri İhraç Primleri alacak"
     },
-    "answer": "E",
-    "solution": "Taahhüt edildiği hâlde ortaklarca henüz ödenmemiş sermaye, özkaynakları azaltan **501 Ödenmemiş Sermaye (-)** hesabında izlenir.",
+    "answer": "D",
+    "solution": "Sermaye taahhüdü daha önce 501 borç / 500 alacak kaydıyla doğmuştur. Makine teslim edildiğinde varlık arttığı için **253 borçlandırılır**; yerine getirilen taahhüt nedeniyle **501 alacaklandırılarak** kapatılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-ödenmiş sermaye; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 253/501"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "finmuh-ozk-gen-0051",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Toplam varlıkları 700.000 ₺, toplam yabancı kaynakları 250.000 ₺ olan bir işletmenin özkaynağı kaç ₺'dir?",
+    "stem": "500 Sermaye hesabı 1.000.000 ₺, 501 Ödenmemiş Sermaye (-) hesabı 200.000 ₺ olan şirkette, henüz ödenmemiş kısım kadar sermaye azaltımı tescil edilmiştir.\n\nAzaltım kaydı ve toplam özkaynak etkisi hangisidir?",
     "options": {
-      "A": "950.000",
-      "B": "700.000",
-      "C": "250.000",
-      "D": "450.000",
-      "E": "200.000"
+      "A": "501 borç / 500 alacak; toplam özkaynak 200.000 ₺ artar.",
+      "B": "500 borç / 102 alacak; toplam özkaynak 200.000 ₺ azalır.",
+      "C": "500 borç / 501 alacak; toplam özkaynak değişmez.",
+      "D": "102 borç / 500 alacak; toplam özkaynak 200.000 ₺ artar.",
+      "E": "501 borç / 331 alacak; toplam özkaynak 200.000 ₺ azalır."
     },
-    "answer": "D",
-    "solution": "Özkaynak = Varlıklar − Yabancı Kaynaklar = 700.000 − 250.000 = **450.000 ₺**.",
+    "answer": "C",
+    "solution": "Ödenmemiş kısmın iptalinde **500 Sermaye 200.000 ₺ borçlandırılır**, **501 Ödenmemiş Sermaye 200.000 ₺ alacaklandırılarak** kapatılır. Pozitif sermaye ile negatif düzenleyici hesap aynı tutarda azaldığından net özkaynak değişmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-özkaynak; sınav stiline kalibre)",
-      "legislationRef": "Temel muhasebe eşitliği"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 500/501"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "finmuh-ozk-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Ödenmiş sermayesi 500.000 ₺ olan bir anonim şirkette, I. tertip genel kanuni yedek akçe en fazla hangi tutara kadar ayrılabilir (üst sınır)?",
+    "stem": "Genel kanuni yedek akçesi sermayenin yarısını aşmamış bir anonim şirkette, TTK md. 519/3 uyarınca aşağıdaki kullanımlardan hangisi bu aşamada mümkündür?",
     "options": {
-      "A": "100.000",
-      "B": "50.000",
-      "C": "25.000",
-      "D": "250.000",
-      "E": "500.000"
+      "A": "Yönetim kurulunun istediği her yatırımın finansmanında serbestçe kullanılması",
+      "B": "Pay sahiplerine olağan kâr payı olarak dağıtılması",
+      "C": "Şirket çalışanlarına prim olarak ödenmesi",
+      "D": "Yeni pay ihracının bedelini ortaklar adına karşılaması",
+      "E": "Şirket zararlarının kapatılmasında kullanılması"
     },
-    "answer": "A",
-    "solution": "I. tertip yasal yedek üst sınırı = Ödenmiş sermaye × %20 = 500.000 × 0,20 = **100.000 ₺** (bu tutara ulaşınca I. tertip yedek ayrılması durur).",
+    "answer": "E",
+    "solution": "Genel kanuni yedek akçe sermayenin yarısını aşmadıkça yalnız **zararların kapatılması**, işlerin iyi gitmediği zamanlarda işletmenin devamı veya işsizliğin önlenmesi ve sonuçlarının hafifletilmesi için kullanılabilir. Serbest kâr dağıtım kaynağı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-yasal yedek sınır; sınav stiline kalibre)",
-      "legislationRef": "TTK md. 519 (%20 üst sınır)"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TTK md. 519/3"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "finmuh-ozk-gen-0053",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Aşağıdakilerden hangisi özkaynakları azaltan (negatif/düzenleyici) bir kalem değildir?",
+    "stem": "Bir işletmenin özkaynak kalemleri şöyledir: 500 Sermaye 900.000 ₺, 501 Ödenmemiş Sermaye (-) 100.000 ₺, 520 Hisse Senetleri İhraç Primleri 60.000 ₺, 540 Yasal Yedekler 80.000 ₺, 570 Geçmiş Yıllar Kârları 40.000 ₺, 580 Geçmiş Yıllar Zararları (-) 30.000 ₺ ve 591 Dönem Net Zararı (-) 50.000 ₺.\n\nToplam özkaynak kaç ₺'dir?",
     "options": {
-      "A": "501 Ödenmemiş Sermaye (-)",
-      "B": "580 Geçmiş Yıllar Zararları (-)",
-      "C": "540 Yasal Yedekler",
-      "D": "503 Sermaye Düzeltmesi Olumsuz Farkları (-)",
-      "E": "591 Dönem Net Zararı (-)"
+      "A": "900.000",
+      "B": "1.000.000",
+      "C": "800.000",
+      "D": "930.000",
+      "E": "1.060.000"
     },
-    "answer": "C",
-    "solution": "**540 Yasal Yedekler** özkaynakları **artıran** bir kalemdir. Diğerleri (501, 580, 591, 503) özkaynaktan (-) düşülen negatif/düzenleyici kalemlerdir.",
+    "answer": "A",
+    "solution": "Toplam özkaynak = 900.000 − 100.000 + 60.000 + 80.000 + 40.000 − 30.000 − 50.000 = **900.000 ₺**dir. 501, 580 ve 591 negatif özkaynak kalemleri olduğu için düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 5 grubu (- kalemler)"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 5 Özkaynaklar grubu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-ozk-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "'500 Sermaye' hesabında izlenen tutar aşağıdakilerden hangisini ifade eder?",
+    "stem": "Genel kurul, 542 Olağanüstü Yedekler hesabındaki 150.000 ₺ ile 570 Geçmiş Yıllar Kârları hesabındaki 100.000 ₺'yi sermayeye eklemiştir.\n\nİç kaynaklardan sermaye artırım kaydı hangisidir?",
     "options": {
-      "A": "Ortakların taahhütlerinden yalnızca fiilen nakden ödedikleri, henüz ödenmemiş kısmı dışarıda bırakan tutarı",
-      "B": "Ortakların işletmeye koymayı taahhüt ettikleri (nominal) toplam sermaye tutarını",
-      "C": "İşletmenin ilgili hesap döneminde elde ettiği net dönem kârının ortaklara düşen payını",
-      "D": "İşletmenin üçüncü kişilere ve kredi kurumlarına olan toplam borçlarının tutarını",
-      "E": "İşletmenin kasa ve banka hesaplarında bulunan toplam hazır değerlerinin tutarını"
+      "A": "102 Bankalar 250.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak",
+      "B": "500 Sermaye 250.000 ₺ borç / 542 Olağanüstü Yedekler 150.000 ₺, 570 Geçmiş Yıllar Kârları 100.000 ₺ alacak",
+      "C": "501 Ödenmemiş Sermaye 250.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak",
+      "D": "542 Olağanüstü Yedekler 150.000 ₺ ve 570 Geçmiş Yıllar Kârları 100.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak",
+      "E": "542 Olağanüstü Yedekler 250.000 ₺ borç / 501 Ödenmemiş Sermaye 250.000 ₺ alacak"
     },
-    "answer": "B",
-    "solution": "**500 Sermaye**, ortakların işletmeye koymayı **taahhüt ettikleri toplam (nominal) sermaye** tutarını gösterir. Fiilen ödenen kısım ise 500 − 501 (ödenmemiş sermaye) ile bulunur.",
+    "answer": "D",
+    "solution": "İç kaynaklar sermayeye aktarılırken kullanılan yedek ve geçmiş yıl kârı hesapları **borçlandırılır**; 500 Sermaye **250.000 ₺ alacaklandırılır**. İşletmeye dışarıdan varlık girmediği için 102 veya 501 kullanılmaz ve toplam özkaynak değişmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 500 / 501"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 542/570/500; TTK md. 462"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "finmuh-ozk-gen-0055",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir anonim şirkette dönem kârının dağıtımında, aşağıdakilerden hangisi genellikle önce yapılır?",
+    "stem": "570 Geçmiş Yıllar Kârları hesabındaki 800.000 ₺ için genel kurul; 50.000 ₺ yasal yedek, 150.000 ₺ statü yedeği, 100.000 ₺ olağanüstü yedek ve 500.000 ₺ ortaklara kâr payı ayırmıştır.\n\nKâr dağıtım kaydıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Önce kârın tamamı ortaklara nakit temettü olarak dağıtılır; kanunen zorunlu yasal yedekler ise ancak dağıtımdan artan bir tutar kalırsa en son ayrılır.",
-      "B": "Kârın dağıtımı tamamen yönetim kurulunun takdirindedir; TTK'da öngörülen zorunlu yasal yedek ayırma ve sıralamaya ilişkin herhangi bir kurala tabi değildir.",
-      "C": "Kâr dağıtımından önce, dağıtılacak tutar kadar işletmenin ödenmiş sermayesi (500 Sermaye) azaltılır ve fark ortaklara ödenir.",
-      "D": "Herhangi bir yedek ayrılmadan önce dönem kârının tamamı, gelecekte oluşabilecek zararları karşılamak üzere 580 Geçmiş Yıllar Zararları hesabına aktarılır.",
-      "E": "Kanunen ayrılması zorunlu I. tertip genel kanuni yedek akçe (yasal yedek) ayrıldıktan sonra kalan kâr üzerinden dağıtım/diğer ayrımlar yapılır."
+      "A": "570 Geçmiş Yıllar Kârları hesabı 800.000 ₺ borçlandırılır.",
+      "B": "540 Yasal Yedekler hesabı 50.000 ₺ alacaklandırılır.",
+      "C": "541 Statü Yedekleri hesabı 150.000 ₺ alacaklandırılır.",
+      "D": "542 Olağanüstü Yedekler hesabı 100.000 ₺ alacaklandırılır.",
+      "E": "331 Ortaklara Borçlar hesabı 500.000 ₺ borçlandırılır."
     },
     "answer": "E",
-    "solution": "Kâr dağıtımında, TTK gereği önce **zorunlu yasal yedekler (I. tertip genel kanuni yedek akçe)** ayrılır; ardından kalan kâr üzerinden ortaklara dağıtım ve diğer yedek ayrımları yapılır.",
+    "solution": "Dağıtılan geçmiş yıl kârı 570 hesabın borcuna; yedekler ile ortaklara ödenecek kâr payı ilgili hesapların **alacağına** yazılır. Bu nedenle 331 Ortaklara Borçlar hesabının borçlandırılacağı ifadesi yanlıştır; hesap **500.000 ₺ alacaklandırılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-kâr dağıtımı; sınav stiline kalibre)",
-      "legislationRef": "TTK md. 519-523"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 570/540/541/542/331"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "finmuh-ozk-gen-0056",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Aşağıdakilerden hangisi özkaynak kalemlerinden biri değildir?",
+    "stem": "İşletme, vadesinde nominal tutarı nakden ödenecek; ancak sahibine belirli sayıda adi paya dönüşüm hakkı da veren tahvil ihraç etmiştir. TMS 32'ye göre ilk muhasebeleştirmede hangi yaklaşım uygulanır?",
     "options": {
-      "A": "Banka kredileri",
-      "B": "Sermaye yedekleri",
-      "C": "Kâr yedekleri",
-      "D": "Dönem net kârı/zararı",
-      "E": "Ödenmiş sermaye"
+      "A": "Aracın tamamı yalnız hukuki adı tahvil olduğu için finansal borç kaydedilir.",
+      "B": "Araç, finansal borç ve özkaynak bileşenlerine ayrılarak ayrı muhasebeleştirilir.",
+      "C": "Aracın tamamı dönüşüm hakkı bulunduğu için sermaye hesabına kaydedilir.",
+      "D": "Tahsil edilen tutarın tamamı dönem geliri sayılır.",
+      "E": "Araç finansal durum tablosuna alınmaz, yalnız dipnotta açıklanır."
     },
-    "answer": "A",
-    "solution": "**Banka kredileri** bir yabancı kaynaktır (borç), özkaynak kalemi değildir. Ödenmiş sermaye, sermaye yedekleri, kâr yedekleri ve dönem net kârı/zararı özkaynak kalemleridir.",
+    "answer": "B",
+    "solution": "İhraççı açısından nakit ödeme yükümlülüğü **finansal borç**, sabit tutarın belirli sayıda paya dönüşüm hakkı ise koşulları sağladığında **özkaynak bileşeni** oluşturur. TMS 32, bileşik aracı ilk muhasebeleştirmede bu iki bileşene ayırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 5 grubu"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32 Finansal Araçlar: Sunum, par. 28-32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-ozk-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "İşletme, nominal değeri 200.000 ₺ olan hisse senetlerini 260.000 ₺ bedelle ihraç etmiştir. Oluşan emisyon primi kaç ₺'dir?",
+    "stem": "Sermayesi 1.500.000 ₺ olan anonim şirket sermayesini %20 artırmıştır. Artırılan sermayeyi temsil eden payların tamamı nominal değerinin %10 fazlasına satılmış ve bedel banka hesabına yatırılmıştır.\n\nBanka hesabına yatırılan toplam tutar kaç ₺'dir?",
     "options": {
-      "A": "460.000",
-      "B": "260.000",
-      "C": "200.000",
-      "D": "0",
-      "E": "60.000"
+      "A": "330.000",
+      "B": "300.000",
+      "C": "450.000",
+      "D": "315.000",
+      "E": "150.000"
     },
-    "answer": "E",
-    "solution": "Emisyon primi = İhraç bedeli − Nominal = 260.000 − 200.000 = **60.000 ₺** → 520 Hisse Senetleri İhraç Primleri.",
+    "answer": "A",
+    "solution": "Artırılan nominal sermaye 1.500.000 × %20 = **300.000 ₺**dir. İhraç primi 300.000 × %10 = **30.000 ₺** olduğundan bankaya yatırılan tutar 300.000 + 30.000 = **330.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-emisyon primi; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 520"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/501/520"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-ozk-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Özkaynaklarla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Özkaynak, Varlıklar − Yabancı Kaynaklar (Borçlar) ile bulunur.\n\nII. Hisse senedi ihraç primleri gibi sermaye yedekleri, dönem kârı gibi ortaklara kâr payı (temettü) olarak dağıtılabilir.\n\nIII. Ödenmiş sermaye, 500 Sermaye − 501 Ödenmemiş Sermaye (-) ile bulunur.",
+    "stem": "Özkaynaklarla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. TMS 32'ye göre işletmenin geri satın aldığı kendi payları özkaynaktan düşülür ve alımdan dolayı kâr veya zarara kazanç ya da kayıp yansıtılmaz.\n\nII. Olağanüstü yedekler ve geçmiş yıllar kârlarının sermayeye eklenmesi toplam özkaynağı değiştirmez.\n\nIII. Nakit kâr payı dağıtım kararı verildiği anda, ödeme yapılmasa bile işletmenin varlıkları azalır.",
     "options": {
       "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "I, II ve III",
-      "D": "I ve III",
-      "E": "II ve III"
+      "B": "Yalnız II",
+      "C": "I ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "D",
-    "solution": "Yanlış ifade **II**'tür. **Sermaye yedekleri** (ör. 520 Hisse Senetleri İhraç Primleri/emisyon primi) sermaye işlemlerinden doğan, kazanılmış kâr niteliği taşımayan tutarlardır; **kâr payı (temettü) olarak dağıtılamaz** (yalnızca sermayeye eklenebilir). Kâr dağıtımına dönem kârı ve kâr yedekleri konu olur. **I** özkaynak = Varlıklar − Yabancı Kaynaklar ve **III** ödenmiş sermaye = 500 − 501 doğrudur. Doğru cevap **I ve III**.",
+    "solution": "I ve II doğrudur. Geri alınan kendi payları özkaynaktan düşülür; iç kaynaklardan sermaye artırımı yalnız özkaynak bileşimini değiştirir. III yanlıştır: kâr payı kararı özkaynağı azaltıp borç doğurur; **ödeme yapılıncaya kadar varlıklar değişmez**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 5 grubu; temel eşitlik"
+      "styleRef": "SGS Finansal Muhasebe (Özkaynaklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 32, par. 33 ve 35; 1 Sıra No'lu MSUGT - 542/570/500/331"
     },
     "validYear": 2026,
     "mockExamId": null

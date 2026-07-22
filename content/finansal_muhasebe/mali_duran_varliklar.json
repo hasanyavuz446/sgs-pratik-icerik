@@ -47,20 +47,20 @@
     "id": "finmuh-malidv-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Tekdüzen Hesap Planı'na göre '242 İştirakler' hesabında izlenen ortaklık payları için sahiplik (sermaye payı) oranı genel olarak hangi aralıktadır?",
+    "stem": "Tekdüzen Hesap Planı'ndaki 242 İştirakler hesabının kapsamı ile TMS 28'deki önemli etki değerlendirmesi karşılaştırıldığında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "%10'un altında",
-      "B": "%50'nin üzerinde",
-      "C": "%10 ile %50 arasında",
-      "D": "Her zaman %100",
-      "E": "Sahiplik oranıyla ilgisi yoktur"
+      "A": "242 hesabı yalnız oy hakkının %20 ile %50 arasında olduğu yatırımları kapsar; yönetim kurulunda temsil veya politika kararlarına katılma gibi başka kanıtlar dikkate alınmaz.",
+      "B": "Sermaye payı %50'yi aşmayan bütün uzun vadeli paylar, yönetime katılma hakkı aranmaksızın 242 hesabında izlenir.",
+      "C": "Tekdüzen Hesap Planı'nda en az %10 oy veya yönetime katılma hakkı aranır; TMS 28'de %20 oy hakkı aksi kanıtlanabilir önemli etki varsayımıdır.",
+      "D": "Tekdüzen Hesap Planı'ndaki %10 eşiği aşıldığında yatırım her durumda bağlı ortaklık sayılır.",
+      "E": "Tekdüzen Hesap Planı ile TMS 28 aynı yüzdeyi ve aynı değerlendirme ölçütünü kullanır."
     },
     "answer": "C",
-    "solution": "**İştirak**; işletmenin diğer bir ortaklığın yönetimine ve politikalarının belirlenmesine katılmak üzere edindiği, sermaye payı genellikle **%10 ile %50 arasında** olan ortaklık paylarını ifade eder (önemli etki).",
+    "solution": "İki düzenlemenin eşiği aynı değildir. Tekdüzen Hesap Planı açıklamasında **242 İştirakler** için yönetim ve politikaya katılma ile en az **%10 oy veya yönetime katılma hakkı** aranır; pay en çok %50 olabilir. TMS 28'de ise **%20 oy hakkı**, aksi açıkça ortaya konulabilen bir **önemli etki varsayımıdır**; tek başına kesin sınıflama değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-oran; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 İştirakler"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 242 İştirakler; TMS 28, par. 5-6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "finmuh-malidv-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 500.000 ₺ olan bir anonim şirketin paylarının 100.000 ₺'lik kısmını uzun vadeli amaçla satın almıştır. Bu pay hangi hesapta izlenmelidir?",
+    "stem": "İşletme banka hesabından; kısa sürede fiyat farkından yararlanmak amacıyla 120.000 ₺'lik borsa payı ve yönetimine katılmak amacıyla başka bir şirketin oy haklarının %25'ini temsil eden 360.000 ₺'lik pay satın almıştır. Ayrıca alış bedellerinden ayrı 8.000 ₺ aracı kurum komisyonu ödemiştir. VUK esaslı yasal kayıtta doğru kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "242 İştirakler",
-      "B": "240 Bağlı Menkul Kıymetler",
-      "C": "110 Hisse Senetleri",
-      "D": "245 Bağlı Ortaklıklar",
-      "E": "108 Diğer Hazır Değerler"
+      "A": "110 Hisse Senetleri 120.000, 242 İştirakler 360.000 ve 653 Komisyon Giderleri 8.000 borç; 102 Bankalar 488.000 alacak",
+      "B": "240 Bağlı Menkul Kıymetler 488.000 borç; 102 Bankalar 488.000 alacak",
+      "C": "110 Hisse Senetleri 120.000, 245 Bağlı Ortaklıklar 360.000 ve 653 Komisyon Giderleri 8.000 borç; 102 Bankalar 488.000 alacak",
+      "D": "242 İştirakler 488.000 borç; 102 Bankalar 488.000 alacak",
+      "E": "110 Hisse Senetleri 128.000 ve 242 İştirakler 360.000 borç; 102 Bankalar 488.000 alacak"
     },
     "answer": "A",
-    "solution": "Sahiplik oranı = 100.000 ÷ 500.000 = **%20**. Bu oran %10–%50 aralığında olduğundan pay **242 İştirakler** hesabında izlenir.",
+    "solution": "Kısa vadeli alım **110 Hisse Senetleri**ne, yönetime katılma amacı taşıyan %25'lik uzun vadeli pay **242 İştirakler**e kaydedilir. VUK'ta hisse senetlerinin alış bedeli, satın alma tutarıdır; alışla ilgili diğer giderler bu bedele dahil edilmez. Ayrı ödenen 8.000 ₺ komisyon gider yazılır ve bankadan toplam **488.000 ₺** çıkar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 İştirakler"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 110/242/653; VUK m. 268/A ve 279"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-malidv-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletmenin bağlı ortaklıklarından elde ettiği kâr payı (temettü) gelirleri Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "TMS 27'ye göre bireysel finansal tablolarda bağlı ortaklık, iş ortaklığı ve iştirak yatırımlarının muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "641 Bağlı Ortaklıklardan Temettü Gelirleri",
-      "B": "640 İştiraklerden Temettü Gelirleri",
-      "C": "642 Faiz Gelirleri",
-      "D": "600 Yurt İçi Satışlar",
-      "E": "645 Menkul Kıymet Satış Kârları"
+      "A": "Yatırımlar maliyet bedeliyle muhasebeleştirilebilir.",
+      "B": "Yatırımlar TFRS 9 hükümlerine göre muhasebeleştirilebilir.",
+      "C": "Yatırımlar, TMS 28'de tanımlanan özkaynak yöntemi kullanılarak da bireysel finansal tablolarda muhasebeleştirilebilir.",
+      "D": "Seçilen esas, her bir yatırım kategorisi içinde tutarlı uygulanır.",
+      "E": "Aynı kategorideki her yatırım için dönemden döneme serbestçe farklı bir yöntem seçilebilir."
     },
-    "answer": "A",
-    "solution": "Bağlı ortaklıklardan elde edilen kâr payları **641 Bağlı Ortaklıklardan Temettü Gelirleri** hesabında izlenir.",
+    "answer": "E",
+    "solution": "TMS 27; bireysel finansal tablolarda maliyet, TFRS 9 veya özkaynak yöntemine izin verir. Ancak işletme seçtiği muhasebeleştirme esasını **her bir yatırım kategorisi için aynı şekilde** uygulamalıdır; aynı kategoride yatırım bazında keyfî yöntem değişikliği yapılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 641"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 27 Bireysel Finansal Tablolar, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "finmuh-malidv-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Mali duran varlıklar (iştirakler, bağlı ortaklıklar) ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "TFRS 10'a göre bir yatırımcının yatırım yaptığı işletmeyi kontrol ettiğinin kabul edilmesi için aşağıdaki unsurlardan hangilerinin birlikte bulunması gerekir?",
     "options": {
-      "A": "Maddi duran varlıklar gibi yararlı ömürleri boyunca her dönem düzenli olarak amortismana tabi tutulurlar ve kayıtlı değerleri bu yolla azaltılır.",
-      "B": "Bir yıl içinde ödenecek kısa vadeli borç niteliğinde oldukları için bilançonun pasifinde yabancı kaynaklar bölümünde raporlanan kalemlerdir.",
-      "C": "Her dönem sonunda elde tutulmalarından dolayı otomatik olarak gelir yazılırlar ve bu tutar doğrudan gelir tablosuna kâr olarak aktarılır.",
-      "D": "Finansal (parasal olmayan pay) varlıklar oldukları için amortismana tabi tutulmazlar; ancak kalıcı değer düşüklüğü için karşılık ayrılabilir.",
-      "E": "Ticari mallar gibi stok niteliğinde kabul edilip maliyet ile net gerçekleşebilir değerin düşüğü esasına göre dönem sonunda değerlemeye tabidir."
+      "A": "Yalnız oy haklarının salt çoğunluğuna sahip olma, yönetim kurulunun çoğunu atama, yatırımı uzun süre elde tutma ve düzenli temettü tahsil etme",
+      "B": "Güç, değişken getirilere maruz kalma veya hak ve gücü getirileri etkilemekte kullanabilme",
+      "C": "En az %20 oy hakkına ve yönetim kurulunda bir üyeye sahip olma",
+      "D": "Uzun vadeli yatırım amacı ve payların borsada işlem görmemesi",
+      "E": "Sermayenin en az %10'una sahip olma ve önemli ticari işlemler gerçekleştirme"
     },
-    "answer": "D",
-    "solution": "İştirak ve bağlı ortaklık payları **amortismana tabi tutulmaz** (yıpranan varlık değildir); değerlerinde kalıcı düşüş olursa **değer düşüklüğü karşılığı** (244/247) ayrılır.",
+    "answer": "B",
+    "solution": "TFRS 10'da kontrol üç unsurun **birlikte** bulunmasına bağlıdır: yatırım yapılan işletme üzerinde güç, değişken getirilere maruz kalma veya bu getirilerde hak sahibi olma ve mevcut gücü getirileri etkilemek amacıyla kullanabilme. Tek bir sahiplik yüzdesi kontrolün evrensel tanımı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 24 grubu; VUK değerleme"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10 Konsolide Finansal Tablolar, par. 6-7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-malidv-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 800.000 ₺ olan bir şirketin paylarının 400.000 ₺'lik kısmına sahiptir. Bu pay hangi hesapta izlenmelidir?",
+    "stem": "Bir işletme başka bir şirketin oy haklarının %22'sini elinde tutmaktadır. Aksini açıkça gösteren herhangi bir kanıt bulunmamaktadır. TMS 28'e göre bu yatırım için öncelikle hangi sonuca ulaşılır?",
     "options": {
-      "A": "242 İştirakler",
-      "B": "240 Bağlı Menkul Kıymetler",
-      "C": "245 Bağlı Ortaklıklar",
-      "D": "110 Hisse Senetleri",
-      "E": "108 Diğer Hazır Değerler"
+      "A": "Oy hakkı %50'yi aşmadığından önemli etki kesinlikle yoktur.",
+      "B": "Oy hakkı %10'u aştığı için sözleşmeler ve diğer haklar ayrıca incelenmeden kontrolün bulunduğu kesin kabul edilir.",
+      "C": "Yalnız payların uzun vadeli tutulması hâlinde önemli etki vardır.",
+      "D": "Aksi açıkça ortaya konulmadıkça önemli etkinin bulunduğu varsayılır.",
+      "E": "Yatırım doğrudan TFRS 10 kapsamında bağlı ortaklık sayılır."
     },
-    "answer": "A",
-    "solution": "Sahiplik oranı = 400.000 ÷ 800.000 = **%50**. %10–%50 aralığında (üst sınır dâhil) olduğundan pay **242 İştirakler** hesabında izlenir; %50'yi aşmadığından bağlı ortaklık sayılmaz.",
+    "answer": "D",
+    "solution": "TMS 28'e göre doğrudan veya dolaylı **%20 ya da daha fazla oy hakkı**, aksi açıkça ortaya konulmadıkça önemli etkinin bulunduğuna ilişkin bir varsayım oluşturur. Bu varsayım kesin ve çürütülemez değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama sınır; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 İştirakler"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28 İştiraklerdeki ve İş Ortaklıklarındaki Yatırımlar, par. 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "finmuh-malidv-gen-0020",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir şirketin sermayesindeki payı %50'yi aşan (kontrol sağlayan) ortaklıklara ne ad verilir?",
+    "stem": "Bir yatırımcı, bir şirketin oy haklarının yalnız %35'ine sahiptir. Ancak yürürlükteki sözleşme yatırımcıya şirketin getirilerini en çok etkileyen üretim ve fiyatlama kararlarını tek başına yönetme hakkı vermektedir. Yatırımcı değişken getirilere maruzdur ve bu hakkını getirileri etkilemek için kullanabilmektedir. TFRS 10'a göre sonuç nedir?",
     "options": {
-      "A": "İştirak",
-      "B": "Bağlı ortaklık",
-      "C": "Bağlı menkul kıymet",
-      "D": "Serbest menkul kıymet",
-      "E": "Ticari alacak"
+      "A": "Üç kontrol unsuru birlikte bulunduğundan, oy hakkı %50'nin altında olsa da yatırımcı kontrol sahibidir.",
+      "B": "Oy hakkı %50'nin altında olduğundan kontrol hiçbir koşulda kurulamaz.",
+      "C": "Yatırımcı yalnız %10 eşiğini geçtiği için otomatik olarak iştirak sayılır; sözleşmeden doğan yönetim hakkı ve getirileri etkileme imkânı dikkate alınmaz.",
+      "D": "Sözleşmeden doğan haklar yalnız bilanço tarihinde kullanılmışsa kontrol doğar.",
+      "E": "Değişken getirilere maruz kalmak tek başına müşterek kontrol yaratır."
     },
-    "answer": "B",
-    "solution": "Sermaye payı **%50'yi aşan** ve işletmenin kontrol/hâkimiyet sağladığı ortaklıklara **bağlı ortaklık** denir (245 Bağlı Ortaklıklar).",
+    "answer": "A",
+    "solution": "Kontrol yalnız sermaye veya oy oranıyla belirlenmez. Sözleşmeden doğan mevcut haklar yatırımcıya ilgili faaliyetleri yönetme **gücü** veriyor, yatırımcı **değişken getirilere** maruz kalıyor ve gücünü bu getirileri etkilemek için kullanabiliyorsa TFRS 10'daki kontrol koşulları sağlanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-terim; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10, par. 7 ve 10-11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "finmuh-malidv-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 600.000 ₺ olan bir şirketin paylarının 90.000 ₺'lik kısmını uzun vadeli amaçla, yönetime katılmak üzere edinmiştir. Bu pay hangi hesapta izlenmelidir?",
+    "stem": "Bir işletme yatırım yapılan şirketin oy haklarının %15'ine sahiptir. Buna karşılık yönetim kurulunda temsil edilmekte, temettü politikası kararlarına katılmakta ve şirkete gerekli teknik bilgiyi sağlamaktadır. TMS 28'e göre en uygun değerlendirme hangisidir?",
     "options": {
-      "A": "240 Bağlı Menkul Kıymetler",
-      "B": "110 Hisse Senetleri",
-      "C": "245 Bağlı Ortaklıklar",
-      "D": "242 İştirakler",
-      "E": "108 Diğer Hazır Değerler"
+      "A": "Oy hakkı %20'nin altında olduğundan yönetim kurulundaki temsil, politika kararlarına katılma ve teknik bilgi sağlama kanıtları incelenmeden önemli etki reddedilir.",
+      "B": "Teknik bilgi sağlanması yatırımcıyı otomatik olarak ana ortaklık yapar.",
+      "C": "Oy hakkı %20'nin altında olsa da mevcut göstergeler önemli etkinin bulunduğunu açıkça ortaya koyabilir.",
+      "D": "Yalnız sermaye payı dikkate alınır; yönetim kurulundaki temsil önemsizdir.",
+      "E": "Bu koşullar yalnız müşterek kontrol bulunduğunu gösterir."
     },
-    "answer": "D",
-    "solution": "Sahiplik oranı = 90.000 ÷ 600.000 = **%15**. %10–%50 aralığında olduğundan pay **242 İştirakler** hesabında izlenir.",
+    "answer": "C",
+    "solution": "%20'nin altındaki oy hakkı önemli etkinin bulunmadığına ilişkin bir varsayımdır; fakat aksi açıkça kanıtlanabilir. **Yönetim kurulunda temsil, politika belirleme süreçlerine katılma ve gerekli teknik bilginin sağlanması** TMS 28'de önemli etki göstergeleri arasında sayılmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 İştirakler"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 5-6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "finmuh-malidv-gen-0022",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 2.000.000 ₺ olan bir şirketin paylarının 120.000 ₺'lik kısmını uzun vadeli amaçla elinde tutmaktadır. Bu pay hangi hesapta izlenmelidir?",
+    "stem": "TMS 28'e göre aşağıdakilerden hangisi tek başına önemli etkinin varlığına ilişkin standartta sayılan göstergelerden biri değildir?",
     "options": {
-      "A": "245 Bağlı Ortaklıklar",
-      "B": "242 İştirakler",
-      "C": "240 Bağlı Menkul Kıymetler",
-      "D": "110 Hisse Senetleri",
-      "E": "111 Özel Kesim Tahvil, Senet ve Bonoları"
+      "A": "Yatırım yapılan işletmenin yönetim kurulunda temsil edilme",
+      "B": "Temettü kararları dâhil politika belirleme süreçlerine katılma",
+      "C": "Yatırımcı ile yatırım yapılan işletme arasında önemli işlemler bulunması",
+      "D": "İşletmeler arasında yönetici personel değişimi yapılması",
+      "E": "İki işletmenin uzun yıllardır aynı reklam ajansıyla çalışması"
     },
-    "answer": "C",
-    "solution": "Sahiplik oranı = 120.000 ÷ 2.000.000 = **%6**. %10'un altında ve uzun vadeli tutulduğundan pay **240 Bağlı Menkul Kıymetler** hesabında izlenir.",
+    "answer": "E",
+    "solution": "TMS 28; yönetim kurulunda temsil, politika süreçlerine katılma, önemli işlemler, yönetici personel değişimi ve gerekli teknik bilgi sağlanmasını önemli etki göstergeleri olarak sayar. **Aynı reklam ajansıyla çalışmak** bu göstergelerden biri değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 240"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "finmuh-malidv-gen-0025",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, kayıtlı değeri 200.000 ₺ olan bir iştirak payını 260.000 ₺'ye peşin satmıştır (değer düşüklüğü karşılığı yoktur). Bu satıştan doğan kâr kaç ₺'dir?",
+    "stem": "İşletme, %30 pay sahibi olduğu iştirak yatırımını özkaynak yöntemiyle 500.000 ₺ maliyetle kaydetmiştir. İştirak dönem içinde 200.000 ₺ kâr açıklamış ve toplam 100.000 ₺ temettü dağıtmıştır. Başka değişiklik yoksa yatırımın dönem sonu defter değeri kaç ₺'dir?",
     "options": {
-      "A": "60.000",
-      "B": "260.000",
-      "C": "200.000",
-      "D": "460.000",
-      "E": "0"
+      "A": "500.000",
+      "B": "530.000",
+      "C": "560.000",
+      "D": "590.000",
+      "E": "470.000"
     },
-    "answer": "A",
-    "solution": "Satış kârı = Satış bedeli − Kayıtlı (net) değer = 260.000 − 200.000 = **60.000 ₺**. Bu tutar ilgili gelir hesabına (649 Diğer Olağan Gelir ve Kârlar) alacak yazılır.",
+    "answer": "B",
+    "solution": "Kârdan pay 200.000 × %30 = **60.000 ₺** olup yatırımın defter değerini artırır. Dağıtılan temettüden pay 100.000 × %30 = **30.000 ₺** olup defter değerini azaltır. Son değer 500.000 + 60.000 − 30.000 = **530.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-satış kâr; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 / 649"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-malidv-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 250.000 ₺ olan bir şirketin paylarının 100.000 ₺'lik kısmına sahiptir. Sahiplik oranı ve sınıflama aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin uzun vadeli amaçla edindiği üç yatırım şöyledir: K şirketinde yönetime katılma hakkı bulunmayan %8 pay, L şirketinde yönetime katılma amacı taşıyan %30 pay ve M şirketinde kontrol sağlayan %70 pay. Tekdüzen Hesap Planı'na göre doğru hesap sıralaması hangisidir?",
     "options": {
-      "A": "%25 – Bağlı Menkul Kıymet (240)",
-      "B": "%40 – Bağlı Ortaklık (245)",
-      "C": "%40 – İştirak (242)",
-      "D": "%60 – Bağlı Ortaklık (245)",
-      "E": "%4 – Bağlı Menkul Kıymet (240)"
+      "A": "110 Hisse Senetleri - 240 Bağlı Menkul Kıymetler - 242 İştirakler",
+      "B": "242 İştirakler - 245 Bağlı Ortaklıklar - 248 Diğer Mali Duran Varlıklar",
+      "C": "240 Bağlı Menkul Kıymetler - 245 Bağlı Ortaklıklar - 242 İştirakler",
+      "D": "240 Bağlı Menkul Kıymetler - 242 İştirakler - 245 Bağlı Ortaklıklar",
+      "E": "110 Hisse Senetleri - 242 İştirakler - 245 Bağlı Ortaklıklar"
     },
-    "answer": "C",
-    "solution": "Sahiplik oranı = 100.000 ÷ 250.000 = **%40**. %10–%50 aralığında olduğundan **İştirak (242)** olarak sınıflandırılır.",
+    "answer": "D",
+    "solution": "Yönetime katılma hakkı vermeyen %8'lik uzun vadeli pay **240**, yönetime katılma amacı taşıyan %30'luk pay **242**, kontrol sağlayan %70'lik pay ise **245** hesabında izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 240/242/245 hesap açıklamaları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "finmuh-malidv-gen-0029",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 500.000 ₺ olan bir şirketin paylarının 300.000 ₺'lik kısmına sahiptir. Sahiplik oranı ve sınıflama aşağıdakilerden hangisidir?",
+    "stem": "Bir banka, kredi verdiği işletmede yalnızca borçlunun olağan faaliyetini kökten değiştiren işlemleri engelleme hakkına sahiptir. Bu hak kredinin tahsilini korumak için tasarlanmış olup bankaya günlük faaliyetleri yönetme imkânı vermemektedir. TFRS 10'a göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "%60 – Bağlı Ortaklık (245)",
-      "B": "%60 – İştirak (242)",
-      "C": "%40 – İştirak (242)",
-      "D": "%30 – Bağlı Menkul Kıymet (240)",
-      "E": "%6 – Bağlı Menkul Kıymet (240)"
+      "A": "Hak koruyucu niteliktedir; bu hak tek başına bankaya güç ve kontrol sağlamaz.",
+      "B": "Her veto hakkı, yalnız alacaklının menfaatini korumak için tasarlanmış olsa ve olağan kararları kapsamasa bile ilgili faaliyetleri yönetme gücü verir.",
+      "C": "Banka kredi getirisine maruz kaldığı için işletmeyi mutlaka kontrol eder.",
+      "D": "Koruyucu hak, bankayı yatırım işletmesi yapar.",
+      "E": "İşletmenin yönetimi veto hakkını hiç kullanmamışsa hak kendiliğinden asli hakka dönüşür."
     },
     "answer": "A",
-    "solution": "Sahiplik oranı = 300.000 ÷ 500.000 = **%60**. %50'yi aştığından **Bağlı Ortaklık (245)** olarak sınıflandırılır.",
+    "solution": "İşletmenin faaliyetlerine ilişkin temel değişikliklerde alacaklının menfaatini koruyan, fakat ilgili faaliyetleri yönetme imkânı vermeyen haklar **koruyucu hak** niteliğindedir. Sadece koruyucu haklara sahip olmak TFRS 10 anlamında güç ve kontrol doğurmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10, par. 14 ve B26-B28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "finmuh-malidv-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İştirak payı satın alınırken ödenen aracı kurum komisyonu ve diğer alım giderleri ile ilgili genel uygulama aşağıdakilerden hangisidir?",
+    "stem": "İşletme, iştirak amacıyla edindiği hisse senetleri için satıcıya 400.000 ₺, aracı kuruma ayrıca 12.000 ₺ komisyon ödemiştir. VUK'a göre hisse senetlerinin değerlemesine esas alış bedeli kaç ₺'dir?",
     "options": {
-      "A": "Bir gelir niteliğinde kabul edilip doğrudan 640 İştiraklerden Temettü Gelirleri hesabına alacak olarak kaydedilerek izlenir.",
-      "B": "Niteliğine bakılmaksızın her durumda 244 İştirakler Değer Düşüklüğü Karşılığı hesabına yazılıp aktiften düşülerek gösterilir.",
-      "C": "İştirak payının maliyetine eklenerek (242 İştirakler) izlenir ya da işletme politikasına göre dönem gideri yazılabilir.",
-      "D": "Henüz ödenmemiş bir sermaye taahhüdü sayılarak 243 İştiraklere Sermaye Taahhütleri hesabına borç kaydedilmek suretiyle izlenir.",
-      "E": "Muhasebe kayıtlarına hiçbir şekilde alınmaz; yalnızca işletmenin yardımcı defterlerinde bilgi amaçlı olarak takip edilir."
+      "A": "388.000",
+      "B": "412.000",
+      "C": "400.000",
+      "D": "12.000",
+      "E": "Gerçeğe uygun değeri bilinmediği için belirlenemez."
     },
     "answer": "C",
-    "solution": "İştirak payı alımına ilişkin komisyon vb. giderler, edinim maliyetinin bir parçası olarak **242 İştirakler**'in maliyetine eklenebilir (uygulamaya göre dönem gideri de yazılabilir). Temettü geliriyle ilgisi yoktur.",
+    "solution": "VUK'ta alış bedeli, iktisadi kıymetin satın alma bedelidir; iktisapla ilgili diğer giderler alış bedeline dahil değildir. Bu nedenle hisse senetlerinin değerlemesine esas tutar **400.000 ₺**dir; ayrıca ödenen 12.000 ₺ komisyon bu tutara eklenmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-maliyet; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242; VUK değerleme"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "VUK m. 268/A ve 279"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "finmuh-malidv-gen-0033",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, ödenmiş sermayesi 1.200.000 ₺ olan bir şirketin paylarının 720.000 ₺'lik kısmına sahiptir. Sahiplik oranı yüzde kaçtır ve bu pay hangi hesapta izlenir?",
+    "stem": "Bir işletme TMS 27 kapsamında bireysel finansal tablo hazırlamakta ve aynı yatırım kategorisinde iki iştirak bulundurmaktadır. İşletme ilk iştiraki maliyet bedeliyle, ikinci iştiraki ise geçerli bir neden göstermeksizin özkaynak yöntemiyle izlemek istemektedir. En uygun değerlendirme hangisidir?",
     "options": {
-      "A": "%60 – 245 Bağlı Ortaklıklar",
-      "B": "%40 – 242 İştirakler",
-      "C": "%60 – 242 İştirakler",
-      "D": "%6 – 240 Bağlı Menkul Kıymetler",
-      "E": "%72 – 240 Bağlı Menkul Kıymetler"
+      "A": "Her iki iştirak farklı şirkete ait olduğundan yöntemler serbestçe farklı olabilir.",
+      "B": "Aynı yatırım kategorisi için aynı muhasebeleştirme esası uygulanmalıdır.",
+      "C": "Bireysel finansal tablolarda iştirakler yalnız TFRS 9'a göre ölçülebilir.",
+      "D": "İkinci iştirakin oy hakkı %20'yi aşıyorsa mutlaka maliyet yöntemi uygulanır.",
+      "E": "Yöntem tutarlılığı yalnız bağlı ortaklıklar için aranır."
     },
-    "answer": "A",
-    "solution": "Sahiplik oranı = 720.000 ÷ 1.200.000 = **%60**. %50'yi aştığından pay **245 Bağlı Ortaklıklar** hesabında izlenir.",
+    "answer": "B",
+    "solution": "TMS 27 üç muhasebeleştirme esasına izin verse de işletme **her bir yatırım kategorisi için aynı esası** uygular. Aynı kategoride bulunan iki iştirak için yatırım bazında maliyet ve özkaynak yöntemlerinin keyfî biçimde farklılaştırılması uygun değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 27, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "finmuh-malidv-gen-0037",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, kayıtlı değeri 300.000 ₺ olan bir iştirak payını 250.000 ₺'ye satmıştır (değer düşüklüğü karşılığı yoktur). Bu satıştan doğan sonuç aşağıdakilerden hangisidir?",
+    "stem": "İşletme %25 pay sahibi olduğu iştirak yatırımını özkaynak yöntemiyle 400.000 ₺'den izlemeye başlamıştır. İştirak 160.000 ₺ dönem kârı açıklamış ve daha sonra toplam 80.000 ₺ temettü dağıtmıştır. Başka değişiklik yoksa yatırımın yeni defter değeri kaç ₺ olur?",
     "options": {
-      "A": "50.000 ₺ kâr",
-      "B": "50.000 ₺ zarar",
-      "C": "250.000 ₺ kâr",
-      "D": "300.000 ₺ zarar",
-      "E": "Sonuç doğmaz"
+      "A": "380.000",
+      "B": "400.000",
+      "C": "440.000",
+      "D": "420.000",
+      "E": "460.000"
     },
-    "answer": "B",
-    "solution": "Sonuç = Satış bedeli − Kayıtlı değer = 250.000 − 300.000 = **−50.000 ₺ (zarar)**. Bu tutar ilgili gider hesabına (659 Diğer Olağan Gider ve Zararlar) borç yazılır.",
+    "answer": "D",
+    "solution": "Kârdan pay 160.000 × %25 = **40.000 ₺** ile yatırım artar; temettü payı 80.000 × %25 = **20.000 ₺** ile yatırım azalır. Yeni defter değeri 400.000 + 40.000 − 20.000 = **420.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-satış zarar; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 / 659"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "finmuh-malidv-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir işletmenin başka bir şirketin sermayesine %55 oranında ortak olması, bağlı ortaklık ilişkisi açısından ne ifade eder?",
+    "stem": "TFRS 10'a göre bir yatırımcının elinde yalnız yatırım yaptığı işletmedeki payını korumaya yönelik koruyucu hakların bulunması hangi sonucu doğurur?",
     "options": {
-      "A": "İşletmenin bu şirket üzerinde hiçbir etkisi yoktur; %55 pay yalnızca kısa vadeli bir menkul kıymet yatırımı sayılır.",
-      "B": "Şirket, kendisine kısa vadeli mal ve hizmet satan bir ticari borçlu konumundadır; ilişki 120 Alıcılar'da izlenir.",
-      "C": "Şirket, işletmenin bir yıl içinde elden çıkaracağı kısa vadeli bir menkul kıymeti niteliğinde olup 110'da izlenir.",
-      "D": "İşletme %50'yi aşan payla bu şirketi kontrol eder (hâkimiyet sağlar); şirket işletmenin bağlı ortaklığıdır.",
-      "E": "Şirketin payları işletme için fiziki bir maddi duran varlık sayılır ve her dönem amortismana tabi tutulması gerekir."
+      "A": "Koruyucu haklar tek başına yatırım yapılan işletme üzerinde güç sağlamaz.",
+      "B": "Yatırımcının oy oranı ne olursa olsun kontrol bulunduğu kabul edilir.",
+      "C": "Yatırımcı önemli faaliyetleri yönetmiş sayılır.",
+      "D": "Koruyucu haklar müşterek kontrolün kesin kanıtıdır.",
+      "E": "Yatırım doğrudan bağlı ortaklık olarak konsolide edilir."
     },
-    "answer": "D",
-    "solution": "**%55 > %50** olduğundan işletme bu şirketi **kontrol eder (hâkimiyet sağlar)** ve şirket işletmenin **bağlı ortaklığıdır** (245 Bağlı Ortaklıklar).",
+    "answer": "A",
+    "solution": "Koruyucu haklar, sahibinin menfaatini korumak üzere tasarlanır; ilgili faaliyetleri yönetme imkânı vermez. Bu nedenle yalnız koruyucu haklara sahip bir yatırımcı, bu haklar nedeniyle yatırım yapılan işletme üzerinde **güç sahibi olmaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-kontrol; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10, par. 14 ve B27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-malidv-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir işletmenin farklı şirketlerdeki uzun vadeli sermaye payları şöyledir:\n\nI. A şirketinde %8\n\nII. B şirketinde %30\n\nIII. C şirketinde %70\nBu paylardan hangileri '242 İştirakler' hesabında izlenir?",
+    "stem": "Bir işletme yatırım yapılan şirketin oy haklarının %18'ine sahiptir. İşletmenin yönetim kurulunda daimi temsilcisi bulunmakta ve iki şirket arasında önemli hacimde işlemler yapılmaktadır. TMS 28'e göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I",
-      "B": "Yalnız II",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "I, II ve III"
+      "A": "%20'nin altındaki oy oranına rağmen mevcut kanıtlar önemli etkinin bulunduğunu gösterebilir.",
+      "B": "%20'nin altında kalındığı için yönetim kurulunda temsil ve işletmeler arasındaki önemli işlem hacmi gibi kanıtlar dikkate alınmadan önemli etki reddedilir.",
+      "C": "Önemli işlemlerin bulunması yalnız kontrolün kanıtıdır.",
+      "D": "Yönetim kurulunda temsil edilme, önemli etki değerlendirmesinde dikkate alınmaz.",
+      "E": "%18 oy hakkı yatırımcıyı otomatik olarak bağlı ortaklık sahibi yapar."
     },
-    "answer": "B",
-    "solution": "İştirak oranı %10–%50 arasıdır. **I (%8)** → 240 Bağlı Menkul Kıymetler; **II (%30)** → 242 İştirakler; **III (%70)** → 245 Bağlı Ortaklıklar. Yalnızca **II** iştirak olarak izlenir.",
+    "answer": "A",
+    "solution": "%20'nin altında oy hakkı bulunması önemli etkinin olmadığına ilişkin aksi ispat edilebilir bir varsayımdır. **Yönetim kurulunda temsil** ve yatırım yapılan işletmeyle **önemli işlemler** bulunması, önemli etkinin varlığını açıkça gösterebilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 240/242/245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 5-6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "finmuh-malidv-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, %20 oranında iştiraki olduğu bir şirketin dağıttığı toplam 500.000 ₺ kâr payından payına düşen tutarı tahsil edecektir. İşletmenin elde edeceği temettü geliri kaç ₺'dir?",
+    "stem": "İşletme, %30 pay sahibi olduğu iştirak yatırımını özkaynak yöntemiyle 600.000 ₺'den izlemektedir. İştirak 300.000 ₺ dönem kârı, 50.000 ₺ diğer kapsamlı gelir açıklamış ve toplam 100.000 ₺ temettü dağıtmıştır. Başka değişiklik yoksa aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "500.000",
-      "B": "250.000",
-      "C": "20.000",
-      "D": "50.000",
-      "E": "100.000"
+      "A": "Yatırımın defter değeri 690.000 ₺, kâr veya zarara alınan pay 60.000 ₺'dir.",
+      "B": "Yatırımın defter değeri 645.000 ₺, diğer kapsamlı gelire alınan pay 30.000 ₺'dir.",
+      "C": "Yatırımın defter değeri 705.000 ₺ olur; kâr payı 90.000 ₺, diğer kapsamlı gelir payı 15.000 ₺ ve temettü geliri 30.000 ₺ ayrıca raporlanır.",
+      "D": "Yatırımın defter değeri 660.000 ₺, diğer kapsamlı gelir payı dikkate alınmaz.",
+      "E": "Yatırımın defter değeri 675.000 ₺; kâr veya zarara 90.000 ₺, diğer kapsamlı gelire 15.000 ₺ pay yansıtılır."
     },
     "answer": "E",
-    "solution": "Payına düşen temettü = %20 × 500.000 = **100.000 ₺** → 640 İştiraklerden Temettü Gelirleri.",
+    "solution": "Kâr payı 300.000 × %30 = **90.000 ₺**, diğer kapsamlı gelir payı 50.000 × %30 = **15.000 ₺** ve temettü payı 100.000 × %30 = **30.000 ₺**dir. Defter değeri 600.000 + 90.000 + 15.000 − 30.000 = **675.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-temettü; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 640"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-malidv-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, %60 oranında sahip olduğu bağlı ortaklığının dağıttığı toplam 200.000 ₺ kâr payından payına düşen tutarı tahsil edecektir. Elde edilecek temettü geliri kaç ₺'dir ve hangi hesapta izlenir?",
+    "stem": "TMS 27 kapsamında bireysel finansal tablo hazırlayan bir işletme, bağlı ortaklık yatırımlarını maliyet bedeliyle; iştirak yatırımlarını ise özkaynak yöntemiyle muhasebeleştirmeyi seçmiştir. Bu uygulama için en uygun ifade hangisidir?",
     "options": {
-      "A": "200.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
-      "B": "80.000 ₺ – 640 İştiraklerden Temettü Gelirleri",
-      "C": "120.000 ₺ – 641 Bağlı Ortaklıklardan Temettü Gelirleri",
-      "D": "120.000 ₺ – 600 Yurt İçi Satışlar",
-      "E": "60.000 ₺ – 642 Faiz Gelirleri"
+      "A": "Bağlı ortaklık, iş ortaklığı ve iştiraklerin tamamında tek bir yöntem uygulanması zorunlu olduğundan kategoriler ayrı ayrı tutarlı olsa bile bu uygulama mümkün değildir.",
+      "B": "Her yatırım kategorisi kendi içinde tutarlı olmak şartıyla farklı kategoriler için farklı esaslar seçilebilir.",
+      "C": "Bağlı ortaklıklar bireysel finansal tablolarda yalnız konsolide edilerek gösterilir.",
+      "D": "İştirak yatırımlarında özkaynak yöntemi TMS 27 tarafından yasaklanmıştır.",
+      "E": "Maliyet bedeli yalnız iş ortaklıklarında kullanılabilir."
     },
-    "answer": "C",
-    "solution": "Payına düşen temettü = %60 × 200.000 = **120.000 ₺**. Bağlı ortaklıktan elde edildiğinden **641 Bağlı Ortaklıklardan Temettü Gelirleri** hesabında izlenir.",
+    "answer": "B",
+    "solution": "TMS 27'de tutarlılık **her bir yatırım kategorisi** bakımından aranır. Bu nedenle bağlı ortaklık kategorisinin tamamında maliyet, iştirak kategorisinin tamamında özkaynak yöntemi uygulanması mümkündür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-temettü; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 641"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 27, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "finmuh-malidv-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Kayıtlı değeri 500.000 ₺ olan bir iştirak payının gerçek (geri kazanılabilir) değeri kalıcı olarak 380.000 ₺'ye düşmüştür. Ayrılması gereken değer düşüklüğü karşılığı kaç ₺'dir?",
+    "stem": "Özkaynak yöntemiyle izlenen bir iştirak yatırımının defter değerine edinimde ortaya çıkan şerefiye de dâhildir. Değer düşüklüğüne ilişkin tarafsız kanıt bulunduğunda TMS 28'e göre nasıl test yapılır?",
     "options": {
-      "A": "880.000",
-      "B": "500.000",
-      "C": "380.000",
-      "D": "120.000",
-      "E": "0"
+      "A": "Şerefiye yatırımdan ayrıştırılarak ayrı bir varlık gibi her yıl amortismana ve ayrıca bağımsız değer düşüklüğü testine tabi tutulur.",
+      "B": "Yalnız iştirakin dağıttığı temettü tutarı test edilir.",
+      "C": "Yatırımın defter değeri azaltılmadan sadece dipnot açıklaması yapılır.",
+      "D": "Şerefiye ayrıca ayrıştırılmadan yatırımın net tamamı TMS 36 kapsamında tek bir varlık gibi test edilir.",
+      "E": "Değer düşüklüğü testi yalnız oy oranı %50'yi aşarsa yapılır."
     },
     "answer": "D",
-    "solution": "Değer düşüklüğü karşılığı = Kayıtlı değer − Gerçek değer = 500.000 − 380.000 = **120.000 ₺** → 654 Karşılık Giderleri (B) / 244 (A).",
+    "solution": "İştirakle ilgili şerefiye yatırımın defter değerine dâhildir ve ayrı olarak muhasebeleştirilmez. Değer düşüklüğü göstergesi varsa yatırımın **net tamamı**, şerefiye ayrıştırılmadan TMS 36 kapsamında tek bir varlık gibi test edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-değer düşüklüğü; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 244 / 654"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 32 ve 40-42; TMS 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "finmuh-malidv-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, kayıtlı değeri 180.000 ₺ olan bir iştirak payını 230.000 ₺'ye peşin satmıştır (değer düşüklüğü karşılığı yoktur). Bu satıştan doğan kâr kaç ₺'dir?",
+    "stem": "İşletmenin özkaynak yöntemiyle izlediği iştirak yatırımının defter değeri 100.000 ₺, net yatırımın parçası olan uzun vadeli alacağının defter değeri 30.000 ₺'dir. İştirak zararından işletmeye düşen pay 150.000 ₺ olup işletmenin iştirak adına ödeme yükümlülüğü yoktur. TMS 28'e göre kaç ₺ zarar finansal tablolara yansıtılır?",
     "options": {
-      "A": "50.000",
-      "B": "230.000",
-      "C": "180.000",
-      "D": "410.000",
-      "E": "0"
+      "A": "130.000",
+      "B": "150.000",
+      "C": "100.000",
+      "D": "30.000",
+      "E": "20.000"
     },
     "answer": "A",
-    "solution": "Satış kârı = 230.000 − 180.000 = **50.000 ₺** → ilgili gelir hesabına (649 Diğer Olağan Gelir ve Kârlar) alacak yazılır.",
+    "solution": "Zarar payı önce iştirak yatırımına, sonra net yatırımın parçası olan diğer uzun vadeli haklara uygulanır. Toplam net yatırım **130.000 ₺** olduğundan bu tutara kadar zarar yansıtılır. İşletmenin yasal veya zımni yükümlülüğü bulunmadığı için kalan **20.000 ₺** muhasebeleştirilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-satış kâr; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242 / 649"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 38-39"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "finmuh-malidv-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Sahiplik oranlarına göre uzun vadeli pay yatırımlarının sınıflandırılmasıyla ilgili aşağıdaki eşleştirmelerden hangisi doğrudur?",
+    "stem": "İşletme özkaynak yöntemiyle izlediği %30'luk iştirak payının bir bölümünü satmış ve kalan %8 pay üzerinde önemli etkisini kaybetmiştir. Kalan pay bağlı ortaklık veya iş ortaklığı niteliğinde değildir. TMS 28'e göre kalan pay için nasıl işlem yapılır?",
     "options": {
-      "A": "%5 → İştirak; %30 → Bağlı Ortaklık; %70 → Bağlı Menkul Kıymet",
-      "B": "Hepsi İştirak (242) olarak izlenir.",
-      "C": "%5 → Bağlı Ortaklık; %30 → Bağlı Menkul Kıymet; %70 → İştirak",
-      "D": "%5 → Bağlı Menkul Kıymet (240); %30 → İştirak (242); %70 → Bağlı Ortaklık (245)",
-      "E": "Hepsi Bağlı Ortaklık (245) olarak izlenir."
+      "A": "Kalan pay yalnız %8 olmasına ve önemli etki sona ermesine rağmen önceki defter değeri üzerinden özkaynak yöntemine süresiz biçimde devam edilir.",
+      "B": "Kalan pay sıfır bedelle kayıtlardan çıkarılır.",
+      "C": "Kalan pay gerçeğe uygun değerle ölçülür; ilgili fark TMS 28'de belirtilen esaslarla kâr veya zarara yansıtılır.",
+      "D": "Kalan pay yalnız nominal değerle 242 İştirakler hesabında tutulur.",
+      "E": "Önemli etki kaybı ancak pay sıfıra indiğinde muhasebeleştirilir."
     },
-    "answer": "D",
-    "solution": "Doğru eşleştirme: **%5 → 240 Bağlı Menkul Kıymet** (<%10), **%30 → 242 İştirak** (%10–%50), **%70 → 245 Bağlı Ortaklık** (>%50).",
+    "answer": "C",
+    "solution": "Yatırım iştirak niteliğini kaybettiğinde özkaynak yöntemi bırakılır. Kalan pay bir finansal varlıksa **gerçeğe uygun değerle** ölçülür; elden çıkarma geliri ile kalan payın gerçeğe uygun değeri toplamının önceki defter değeriyle farkı kâr veya zarara yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (eşleştirme-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 240/242/245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "finmuh-malidv-gen-0048",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İştiraklerden ve bağlı ortaklıklardan elde edilen temettü gelirlerinin ayrı hesaplarda izlenmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "TMS 27 kapsamında bireysel finansal tablolarda bir iştirak yatırımından alınan temettünün muhasebeleştirilmesi, seçilen yönteme göre nasıl farklılaşır?",
     "options": {
-      "A": "İki tür temettü geliri de kaynağına bakılmaksızın 600 Yurt İçi Satışlar hesabında birlikte hasılat olarak izlenir.",
-      "B": "İştiraklerden elde edilen temettü 640, bağlı ortaklıklardan elde edilen temettü 641 hesabında izlenir.",
-      "C": "İki tür temettü geliri de faiz niteliğinde sayılarak 642 Faiz Gelirleri hesabında birlikte izlenir ve raporlanır.",
-      "D": "İştiraklerden elde edilen temettü 641, bağlı ortaklıklardan elde edilen ise 640 hesabında izlenir; hesaplar terstir.",
-      "E": "İki tür temettü geliri de menkul kıymet satışından doğmuş sayılıp 645 Menkul Kıymet Satış Kârları'nda izlenir."
+      "A": "Hem maliyet hem özkaynak yönteminde yatırımın defter değerini artırır.",
+      "B": "Her iki yöntemde de doğrudan diğer kapsamlı gelire alınır.",
+      "C": "Maliyet yönteminde yatırımın defter değeri azaltılıp temettü ayrıca diğer kapsamlı gelire alınır; özkaynak yönteminde ise dağıtımın tamamı hasılat yazılır.",
+      "D": "Özkaynak yöntemi seçilmemişse hak doğduğunda kâr veya zarara alınır; özkaynak yönteminde yatırımın defter değerini azaltır.",
+      "E": "Temettü hiçbir yöntemde finansal tablolara yansıtılmaz."
     },
-    "answer": "B",
-    "solution": "Temettü gelirleri kaynağına göre ayrılır: **iştiraklerden → 640 İştiraklerden Temettü Gelirleri**; **bağlı ortaklıklardan → 641 Bağlı Ortaklıklardan Temettü Gelirleri**.",
+    "answer": "D",
+    "solution": "TMS 27'ye göre temettü alma hakkı doğduğunda, **özkaynak yöntemi seçilmemişse** temettü kâr veya zarara yansıtılır. **Özkaynak yöntemi seçilmişse** dağıtım yatırımın defter değerini azaltır; ayrıca temettü geliri olarak ikinci kez kâr yazılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 640 / 641"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 27, par. 12; TMS 28, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "finmuh-malidv-gen-0049",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir işletme, başka bir şirketin finansal ve faaliyet politikalarına katılma gücüne sahip olmakla birlikte bu şirketi kontrol etmemektedir. Bu uzun vadeli yatırım Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+    "stem": "Bir yatırımcı, hâlen kullanılabilir durumda olan ve kullanıldığında yatırım yapılan işletmede ilave oy hakkı sağlayacak pay alım opsiyonlarına sahiptir. TMS 28'e göre önemli etki değerlendirmesinde bu haklar için hangi işlem yapılır?",
     "options": {
-      "A": "242 İştirakler",
-      "B": "245 Bağlı Ortaklıklar",
-      "C": "240 Bağlı Menkul Kıymetler",
-      "D": "110 Hisse Senetleri",
-      "E": "500 Sermaye"
+      "A": "Mevcut durumda kullanılabilir potansiyel oy haklarının varlığı ve etkisi değerlendirmede dikkate alınır.",
+      "B": "Potansiyel oy hakları hiçbir koşulda dikkate alınmaz.",
+      "C": "Yalnız yönetimin opsiyonu kullanma niyeti varsa önemli etki doğar.",
+      "D": "Opsiyonlar otomatik olarak yatırımcıya kontrol sağlar.",
+      "E": "Potansiyel oy hakları raporlama tarihinde kullanılabilir durumda olsa bile ancak fiilen kullanıldıktan sonraki hesap döneminin önemli etki değerlendirmesine alınır."
     },
     "answer": "A",
-    "solution": "Başka bir işletmenin finansal ve faaliyet politikalarına katılma gücü önemli etkiyi gösterir. Kontrol bulunmayan bu uzun vadeli yatırım **242 İştirakler** hesabında izlenir.",
+    "solution": "TMS 28, **hâlen kullanılabilir veya dönüştürülebilir** potansiyel oy haklarının önemli etki değerlendirmesinde dikkate alınmasını ister. Yönetimin bu hakları kullanma isteği veya finansal yeterliliği tek başına belirleyici değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 7-8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "finmuh-malidv-gen-0050",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir işletme, başka bir şirketin oy haklarının %60'ını elde tutarak bu şirket üzerinde kontrol sağlamıştır. Bu yatırım hangi hesapta izlenir?",
+    "stem": "TFRS 10'a göre kontrolün değerlendirilmesiyle ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "240 Bağlı Menkul Kıymetler",
-      "B": "242 İştirakler",
-      "C": "110 Hisse Senetleri",
-      "D": "500 Sermaye",
-      "E": "245 Bağlı Ortaklıklar"
+      "A": "Kontrol yalnız sermaye payı %50'yi aştığında doğabilir.",
+      "B": "Yatırım yapılan işletmenin değişken getirilerine maruz kalmak, ilgili faaliyetleri yönetme gücü veya bu gücü getirileri etkilemekte kullanma imkânı bulunmasa da tek başına kontrol için yeterlidir.",
+      "C": "Yatırımın uzun vadeli tutulması kontrolün kesin kanıtıdır.",
+      "D": "En az %20 oy hakkı bulunan bütün yatırımlar bağlı ortaklıktır.",
+      "E": "Güç sözleşmeden de doğabilir; güç, değişken getiriler ve gücü getirileri etkilemekte kullanabilme birlikte aranır."
     },
     "answer": "E",
-    "solution": "Oy haklarının %60'ının elde tutulması kontrol gücü sağlar. Bu nedenle yatırım **245 Bağlı Ortaklıklar** hesabında izlenir.",
+    "solution": "TFRS 10 kontrolü tek bir sahiplik eşiğine indirgemez. Güç oy haklarından veya **sözleşmeye dayalı mevcut haklardan** doğabilir; güç, değişken getiriler ve gücü bu getirileri etkilemek için kullanabilme unsurları birlikte bulunmalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10, par. 6-7 ve 10-11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "finmuh-malidv-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İştirak edilen bir şirketin yönetiminde 'önemli etkiye' sahip olmak, iştirak kavramı bakımından ne anlama gelir?",
+    "stem": "TMS 28'deki önemli etki kavramını en doğru açıklayan ifade hangisidir?",
     "options": {
-      "A": "Genellikle %10–%50 arası bir payla, şirketin finansal ve faaliyet politikalarına katılabilmek (ancak tek başına kontrol edememek)",
-      "B": "%50'yi aşan bir payla şirketin bütün kararlarını tek başına belirleyip yönetime tam hâkim olmak ve onu bir bağlı ortaklığa dönüştürmek",
-      "C": "Şirketle işletme arasında hiçbir ortaklık ya da yönetim ilişkisinin bulunmaması, payın yalnızca bilgi amacıyla kayıtlarda izlenmesi",
-      "D": "Şirkete bir yıl içinde geri alınmak üzere kısa vadeli borç vermek ve bu tutar üzerinden dönem içinde faiz geliri elde etmek",
-      "E": "Şirketin bütün varlıklarına ve bilançosuna tek başına sahip olarak onu tümüyle işletmenin ayrı tüzel kişiliği olmayan bir bölümü hâline getirmek"
+      "A": "Finansal ve faaliyet politikası kararlarına katılma gücüdür; tek başına veya müşterek kontrol değildir.",
+      "B": "Yatırım yapılan işletmenin bütün ilgili faaliyetlerini tek başına yönetme gücüdür.",
+      "C": "Yalnız sermaye payının %10 ile %50 arasında olmasıdır.",
+      "D": "Yatırım yapılan işletmenin borçlarını ödeme yükümlülüğüdür.",
+      "E": "Yatırım yapılan işletmenin getirilerini önemli ölçüde etkileyen faaliyetlere ilişkin kararların iki veya daha fazla tarafın oy birliğiyle alınmasını gerektiren müşterek kontroldür."
     },
     "answer": "A",
-    "solution": "İştirakte **önemli etki**; genellikle %10–%50 arası payla, şirketin finansal/faaliyet **politikalarına katılabilmek** anlamına gelir. Tek başına kontrol (>%50) ise bağlı ortaklık ilişkisidir.",
+    "solution": "Önemli etki, yatırım yapılan işletmenin finansal ve faaliyet politikalarıyla ilgili kararlarına **katılma gücüdür**; bu politikaları tek başına veya bir başka tarafla müştereken kontrol etme gücü değildir. Tekdüzen Hesap Planı'ndaki hesap eşiği, TMS 28 tanımının yerine geçmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 3"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "finmuh-malidv-gen-0053",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, %25 oranında iştiraki olduğu bir şirketin dağıttığı toplam 800.000 ₺ kâr payından payına düşen temettüyü elde edecektir. Bu temettü geliri kaç ₺'dir?",
+    "stem": "İşletme, özkaynak yöntemiyle izlediği iştirakte %25 pay sahibidir. İştirak dönem içinde 120.000 ₺ tutarında diğer kapsamlı gelir muhasebeleştirmiştir. Başka değişiklik yoksa yatırımcı hangi işlemi yapar?",
     "options": {
-      "A": "800.000",
-      "B": "400.000",
-      "C": "25.000",
-      "D": "100.000",
-      "E": "200.000"
+      "A": "120.000 ₺'nin tamamını temettü geliri yazar.",
+      "B": "30.000 ₺'yi yalnız kâr veya zararda iştirak kazancı olarak muhasebeleştirir; diğer kapsamlı gelire hiçbir pay yansıtmaz ve yatırımın defter değerini değiştirmez.",
+      "C": "Diğer kapsamlı gelir yatırımcıyı etkilemediği için kayıt yapmaz.",
+      "D": "30.000 ₺'yi kendi diğer kapsamlı gelirine yansıtır ve yatırımın defter değerini aynı tutarda artırır.",
+      "E": "120.000 ₺'yi yatırımın defter değerinden düşer."
     },
-    "answer": "E",
-    "solution": "Payına düşen temettü = %25 × 800.000 = **200.000 ₺** → 640 İştiraklerden Temettü Gelirleri.",
+    "answer": "D",
+    "solution": "Yatırımcı, iştirakin diğer kapsamlı gelirinden payına düşen 120.000 × %25 = **30.000 ₺**yi kendi diğer kapsamlı gelirinde muhasebeleştirir. Bu tutar aynı zamanda özkaynak yöntemiyle izlenen yatırımın defter değerini artırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hesaplama-temettü; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 640"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TMS 28, par. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-malidv-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İştirak ve bağlı ortaklık paylarının değerlemesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "VUK'un menkul kıymetlerin değerlemesine ilişkin hükmüne göre, iştirak amacıyla elde tutulan hisse senetleri dönem sonunda hangi değerle değerlenir?",
     "options": {
-      "A": "Maddi duran varlıklar gibi kabul edilerek her dönem sonunda amortismana tabi tutulur ve ayrılan amortisman kadar kayıtlı maliyetleri sürekli azaltılır.",
-      "B": "Stoklarla aynı esasa bağlanarak dönem sonlarında ilk giren ilk çıkar (FIFO) yöntemiyle değerlenir ve satılan payların maliyeti buna göre hesaplanır.",
-      "C": "Her dönem sonunda güncel piyasa değerine yükseltilir ve maliyet ile piyasa değeri arasında oluşan olumlu fark doğrudan dönem geliri olarak kaydedilir.",
-      "D": "Kural olarak maliyet (alış) bedeliyle izlenir; değerinde kalıcı düşüş olursa değer düşüklüğü karşılığı ayrılarak net değer bilançoda gösterilir.",
-      "E": "Vadeli bir alacak gibi kabul edilerek dönem sonunda reeskonta tabi tutulur ve hesaplanan vade farkı ilgili faiz gideri hesabına borç olarak yazılır."
+      "A": "Her durumda borsa rayiciyle",
+      "B": "Nominal değerle",
+      "C": "Alış bedeliyle",
+      "D": "Tasarruf değeriyle",
+      "E": "İtfa edilmiş maliyetle"
     },
-    "answer": "D",
-    "solution": "İştirak/bağlı ortaklık payları kural olarak **maliyet bedeliyle** izlenir; **amortismana tabi tutulmaz**. Değerlerinde kalıcı düşüş olursa **değer düşüklüğü karşılığı** (244/247) ayrılır ve net değer gösterilir.",
+    "answer": "C",
+    "solution": "VUK 279 uyarınca **hisse senetleri alış bedeliyle** değerlenir. Bu vergi değerleme kuralı, TFRS finansal tablolarında uygulanabilecek ölçüm esaslarıyla karıştırılmamalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-değerleme; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 279; 1 Sıra No'lu MSUGT - 24 grubu"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "VUK m. 279"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "finmuh-malidv-gen-0055",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "İşletme, bir iştirak payını (kayıtlı değeri 150.000 ₺) 150.000 ₺'ye, yani kayıtlı değerine eşit bir bedelle peşin satmıştır. Bu satışla ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme aynı iştirake ait paylardan önce 100 adedini birim 80 ₺'ye, daha sonra 100 adedini birim 100 ₺'ye almıştır. Payların 120 adedi birim 130 ₺'ye satılmıştır. Kısmi satışta ilk giren ilk çıkar yöntemi uygulandığına göre satılan payların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Satış bedelinin tamamı kadar, yani 150.000 ₺ satış kârı doğar.",
-      "B": "Satış bedeli kayıtlı değere eşit olduğundan kâr/zarar doğmaz.",
-      "C": "Kayıtlı değerin tamamı kadar, yani 150.000 ₺ satış zararı doğar.",
-      "D": "Satış bedeli ile kayıtlı değerin toplamı kadar, 300.000 ₺ kâr doğar.",
-      "E": "Kayıtlı değerin yarısı kadar, yani 75.000 ₺ satış kârı doğar."
+      "A": "10.000",
+      "B": "9.600",
+      "C": "10.800",
+      "D": "12.000",
+      "E": "15.600"
     },
-    "answer": "B",
-    "solution": "Satış bedeli (150.000) = Kayıtlı değer (150.000) olduğundan **kâr/zarar doğmaz**. Kayıt: 100 Kasa (B) 150.000 / 242 İştirakler (A) 150.000.",
+    "answer": "A",
+    "solution": "İlk giren ilk çıkar yönteminde önce ilk alınan 100 payın 100 × 80 = **8.000 ₺**, sonra ikinci partiden 20 payın 20 × 100 = **2.000 ₺** maliyeti satışa verilir. Toplam maliyet **10.000 ₺**dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-satış; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "VUK m. 279; GİB iştirak hissesi kısmi satışlarında maliyet tespiti görüşü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "finmuh-malidv-gen-0059",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Bir işletmenin başka bir şirkete uzun vadeli olarak %35 oranında ortak olması durumunda bu ilişki nasıl adlandırılır ve hangi hesapta izlenir?",
+    "stem": "Bir ana ortaklık, bağlı ortaklığının kontrolünü 1 Nisan'da elde etmiş ve 30 Eylül'de kaybetmiştir. TFRS 10'a göre bağlı ortaklığın gelir ve giderleri hangi dönem için konsolide finansal tablolara dâhil edilir?",
     "options": {
-      "A": "İştirak – 242 İştirakler",
-      "B": "Bağlı ortaklık – 245 Bağlı Ortaklıklar",
-      "C": "Bağlı menkul kıymet – 240 Bağlı Menkul Kıymetler",
-      "D": "Kısa vadeli yatırım – 110 Hisse Senetleri",
-      "E": "Ticari alacak – 120 Alıcılar"
+      "A": "Kontrol yılın yalnız bir bölümünde bulunmuş olsa da 1 Ocak-31 Aralık arasındaki tüm hesap dönemi için",
+      "B": "Kontrolün elde edildiği 1 Nisan'dan kaybedildiği 30 Eylül'e kadar",
+      "C": "Yalnız 30 Eylül tarihindeki bir günlük dönem için",
+      "D": "Kontrol kaybedildikten sonraki dönem için",
+      "E": "Yalnız pay oranı %100 ise 1 Nisan-30 Eylül arası için"
     },
-    "answer": "A",
-    "solution": "%35 oranı %10–%50 aralığında olduğundan bu bir **iştirak** ilişkisidir ve **242 İştirakler** hesabında izlenir.",
+    "answer": "B",
+    "solution": "TFRS 10'a göre bağlı ortaklığın gelir ve giderleri, ana ortaklığın **kontrol sahibi olduğu tarihten kontrolü kaybettiği tarihe kadar** konsolide finansal tablolara alınır. Bu nedenle dönem 1 Nisan-30 Eylül'dür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-sınıflama; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 242"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "TFRS 10, B88"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-malidv-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "mali_duran_varliklar",
-    "stem": "Mali duran varlıklarla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sermaye payı %10'un altında ve uzun vadeli tutulan menkul kıymetler 240 Bağlı Menkul Kıymetler'de izlenir.\n\nII. Sermaye payı %50'yi aşan (kontrol sağlanan) ortaklıklar bağlı ortaklık (245) sayılır.\n\nIII. Sermaye payı %10–%50 arası olan ortaklık payları bağlı ortaklık (245) sayılır.",
+    "stem": "Mali duran varlık sınıflaması ve finansal raporlama standartlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tekdüzen Hesap Planı'nda 242 İştirakler hesabı için en az %10 oy veya yönetime katılma hakkı ölçütü bulunur.\n\nII. TMS 28'de %20 veya daha fazla oy hakkı, aksi açıkça ortaya konulmadıkça önemli etki varsayımı oluşturur.\n\nIII. TFRS 10'da kontrol yalnız oy haklarının %50'yi aşmasıyla kurulabilir.",
     "options": {
-      "A": "I ve III",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I, II ve III",
-      "E": "Yalnız I"
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
-    "answer": "B",
-    "solution": "**III yanlıştır:** Sermaye payı **%10–%50** arası olan ortaklık payları **242 İştirakler** hesabında izlenir; 245 Bağlı Ortaklıklar ise payın **%50'yi aştığı (kontrolün sağlandığı)** durumda kullanılır. **I** <%10 uzun vadeli → 240; **II** >%50 → 245 doğrudur. Doğru cevap **I ve II**.",
+    "answer": "D",
+    "solution": "I ve II doğrudur. Tekdüzen Hesap Planı'nın **hesap sınıflama ölçütü** ile TMS 28'in **aksi kanıtlanabilir önemli etki varsayımı** farklıdır. III yanlıştır; TFRS 10'da kontrol güç, değişken getiriler ve gücü getirileri etkilemek için kullanabilme unsurlarına bağlıdır ve sözleşmeye dayalı haklardan da doğabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 240/242/245"
+      "styleRef": "SGS Finansal Muhasebe (Mali Duran Varlıklar uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 242; TMS 28, par. 5; TFRS 10, par. 6-7"
     },
     "validYear": 2026,
     "mockExamId": null
