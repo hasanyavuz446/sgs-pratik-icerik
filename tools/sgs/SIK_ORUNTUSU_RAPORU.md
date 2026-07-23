@@ -14,10 +14,34 @@ uzun/en kısa olduğundan kör öğrenci ~%28'de bir **§5 tabanına** çarpıyo
 daha aşağısı marjinal. Asıl değer, kör-puanı kovalamakta değil; bu dosyalardaki
 **tekrarlayan kalıp-dolgu** ("hiçbir istisna tanımaz", "yetkili mahkemenin kararıyla
 belirlenebilir", "başka olasılık kesinlikle bulunmaz" vb.) tell'ini temizlemekte —
-bu `audit.py::DOLGU` regex'inin **yakalamadığı** bir §5 üslup ihlali. Sıradaki iş:
-sistemik dolgu-tell temizliği + DOLGU regex'ini genişletmek.
+bu `audit.py::DOLGU` regex'inin **yakalamadığı** bir §5 üslup ihlali.
 
-OTA v166→v167 (yalnız iki dosya + manifest).
+## ⚠️ Tekrar-dolgu tell — ölçüldü + KRİTİK TUZAK (2026-07-23)
+
+Ölçüm: **432 çeldirici / 20 dosya / 7 ders** bu kalıpları taşıyor; **doğru şıkta 0**
+(yani %100 güvenilir "yanlış" işareti). En yoğun: `meslek_hukuku_esaslari` 44,
+`is_hukuku_is_sozlesmesi` 37, `meslek_orgutu_disiplin` 33, `ticaret_sirketleri` 31.
+Kalıplar: "…; ancak bu kural hiçbir istisna tanımaz…", "…; bu husus yalnızca yetkili
+mahkemenin kararıyla…", "…; bunun dışında değerlendirilebilecek başka olasılık
+kesinlikle bulunmaz", "… ve bu sonuç her koşulda kendiliğinden doğduğundan…",
+"… ve taraflar bunun aksini sözleşmeyle dahi…", "…; söz konusu durum yalnızca belirli
+kamu kurumlarıyla…".
+
+🔴 **NAİF KALDIRMA HAVUZU BOZAR.** Dolguyu yalnızca silmek (scratch `remove_filler.py`
+taslağı) kör öğrenciyi **fırlatıyor** — çünkü dolgu, daha derin bir **boy tell'ini
+maskeliyor**: kaldırınca doğru cevap yine tek-en-uzun kalıyor. Ölçülen: ticari_isletme_tacir
+%30→**%55**, vergi_denetimi %30→%45, ticaret_sirketleri %25→%43, meslek_esaslari %30→%41
+(FATAL ≥%35). Yani iki tell üst üste binmiş.
+
+✅ **DOĞRU REÇETE:** dolgu cümlesini **sil değil, uygun boyutta gerçek yanlış içerikle
+DEĞİŞTİR** (vergi/kdv %85→%23'te kanıtlanan yöntem — her şık tam, savunulabilir-yanlış
+bir önerme). Bu ~432 çeldiricinin domain-içerikli yeniden yazımı = **çok oturumluk**.
+Ayrıca `mh-orgut-gen-0003`'te iki "TOBB…" şıkkı dolgusuz **çakışıyor** — elle ayrıştır.
+Bitince `audit.py::DOLGU` regex'ini bu kalıplarla genişlet (+ `test_audit.py`).
+
+Kullanıcı kararı (2026-07-23): bu derin proje **sonraki oturuma ertelendi**; havuz
+zaten ≤%30 hedefinde. Bugün canlı: FM Kur+KDV **OTA v166**, boy-cila (denetim_raporu +
+mesleki_degerler_etik) **OTA v167**.
 
 ---
 
