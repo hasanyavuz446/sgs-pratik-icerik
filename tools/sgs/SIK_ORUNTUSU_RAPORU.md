@@ -1,3 +1,26 @@
+# GÜNCELLEME — 2026-07-23
+
+**Şık örüntüsü ≤%30 hedefi tüm havuzda TUTUYOR** (104 SGS paketi; 0 UYARI; boy-FATAL
+işi de v164'te bitmiş — rapordaki "24 dosya salt boy" giderilmiş). Bu oturumda tavan
+(%28-30) kümesinden iki dosya **gerçek içerikle** (padding YOK) ideale çekildi:
+
+- `denetim/denetim_raporu` %30→**%25** (17 çeldirici doğrunun üstüne gerçek yanlış
+  içerikle genişletildi; boy uzun %30→%0).
+- `meslek_hukuku/mesleki_degerler_etik` %30→**%28** (25 yama: 16 KISA çeldirici
+  şişkinlikten/tekrar-dolgudan arındırıldı + 9 UZUN genişletildi).
+
+**Bulgu (önemli):** kavram-ağırlıklı dosyalarda doğru cevap doğası gereği en
+uzun/en kısa olduğundan kör öğrenci ~%28'de bir **§5 tabanına** çarpıyor; padding'siz
+daha aşağısı marjinal. Asıl değer, kör-puanı kovalamakta değil; bu dosyalardaki
+**tekrarlayan kalıp-dolgu** ("hiçbir istisna tanımaz", "yetkili mahkemenin kararıyla
+belirlenebilir", "başka olasılık kesinlikle bulunmaz" vb.) tell'ini temizlemekte —
+bu `audit.py::DOLGU` regex'inin **yakalamadığı** bir §5 üslup ihlali. Sıradaki iş:
+sistemik dolgu-tell temizliği + DOLGU regex'ini genişletmek.
+
+OTA v166→v167 (yalnız iki dosya + manifest).
+
+---
+
 # DURUM — 2026-07-17 sonu
 
 ## Biten
