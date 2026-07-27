@@ -443,20 +443,20 @@
     "id": "mmuh-birlesik-gen-0021",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 120.000 ₺'dir. Fiziki ölçü (kg) esasına göre dağıtılacaktır: A 6.000 kg, B 4.000 kg, C 2.000 kg. A ürününe düşen maliyet payı kaç ₺'dir?",
+    "stem": "Bir işletme birleşik süreçte A ve B ürünlerini üretmektedir; toplam birleşik maliyet 300.000 ₺'dir. A ürününden 4.000 birim (birim satış fiyatı 150 ₺), B ürününden 2.000 birim (birim satış fiyatı 200 ₺) elde edilmiştir. Satış değeri esasına göre A ürününe düşen birleşik maliyet payı kaç ₺'dir?",
     "options": {
-      "A": "20.000",
-      "B": "40.000",
-      "C": "60.000",
-      "D": "120.000",
-      "E": "72.000"
+      "A": "120.000",
+      "B": "200.000",
+      "C": "180.000",
+      "D": "150.000",
+      "E": "90.000"
     },
     "answer": "C",
-    "solution": "Toplam miktar = 6.000 + 4.000 + 2.000 = 12.000 kg. A payı = 120.000 × (6.000 ÷ 12.000) = 120.000 × 0,5 = **60.000 ₺**.",
+    "solution": "Satış değerleri: A = 4.000 × 150 = 600.000 ₺; B = 2.000 × 200 = 400.000 ₺; toplam = 1.000.000 ₺. A payı = Birleşik maliyet × (A satış değeri ÷ toplam) = 300.000 × (600.000 ÷ 1.000.000) = **180.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mmuh-birlesik-gen-0022",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "120.000 ₺ birleşik maliyet fiziki ölçüye göre dağıtılmaktadır (A 6.000, B 4.000, C 2.000 kg). B ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 200.000 ₺ olan bir süreçte A 8.000 kg, B 2.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre dağıtım yapıldığında A ürünü 220.000 ₺'ye satılırsa A'nın brüt kârı kaç ₺'dir?",
     "options": {
-      "A": "60.000",
-      "B": "48.000",
-      "C": "20.000",
-      "D": "40.000",
-      "E": "30.000"
+      "A": "160.000",
+      "B": "20.000",
+      "C": "220.000",
+      "D": "60.000",
+      "E": "40.000"
     },
     "answer": "D",
-    "solution": "B payı = 120.000 × (4.000 ÷ 12.000) = 120.000 × (1/3) = **40.000 ₺**.",
+    "solution": "Toplam miktar 10.000 kg. A payı = 200.000 × (8.000 ÷ 10.000) = 160.000 ₺. A brüt kârı = 220.000 − 160.000 = **60.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "mmuh-birlesik-gen-0023",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "120.000 ₺ birleşik maliyet fiziki ölçüye göre dağıtılmaktadır (A 6.000, B 4.000, C 2.000 kg). C ürününe düşen pay kaç ₺'dir? (Kontrol: A+B+C = 120.000)",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte A ve B elde edilir. A NGD 180.000 ₺, B NGD 60.000 ₺'dir. A ürünü 3.000 birim ise A'nın BİRİM birleşik maliyet payı kaç ₺'dir?",
     "options": {
-      "A": "60.000",
-      "B": "40.000",
-      "C": "10.000",
-      "D": "24.000",
-      "E": "20.000"
+      "A": "80",
+      "B": "45",
+      "C": "60",
+      "D": "90",
+      "E": "20"
     },
-    "answer": "E",
-    "solution": "C payı = 120.000 × (2.000 ÷ 12.000) = 120.000 × (1/6) = **20.000 ₺**. Kontrol: 60.000 + 40.000 + 20.000 = 120.000 ✓.",
+    "answer": "C",
+    "solution": "Toplam NGD = 240.000 ₺. A payı = 240.000 × (180.000 ÷ 240.000) = 180.000 ₺. A birim = 180.000 ÷ 3.000 = **60 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü kontrol; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "mmuh-birlesik-gen-0024",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "A ürününe düşen birleşik maliyet payı 60.000 ₺, A ürünü miktarı 6.000 kg'dır. A ürününün birim (kg) maliyeti kaç ₺'dir?",
+    "stem": "Fiziki ölçü esaslı dağıtımda A ürününün birim maliyeti 10 ₺, A ürünü miktarı 6.000 kg'dır. Süreçte yalnızca A (6.000 kg) ve B (6.000 kg) üretilmiş ve toplam miktar 12.000 kg'dır. Toplam birleşik maliyet kaç ₺'dir?",
     "options": {
-      "A": "10",
-      "B": "20",
-      "C": "6",
-      "D": "60",
-      "E": "0,10"
+      "A": "60.000",
+      "B": "90.000",
+      "C": "240.000",
+      "D": "30.000",
+      "E": "120.000"
     },
-    "answer": "A",
-    "solution": "A birim maliyeti = pay ÷ miktar = 60.000 ÷ 6.000 = **10 ₺/kg**.",
+    "answer": "E",
+    "solution": "A payı = birim maliyet × miktar = 10 × 6.000 = 60.000 ₺. Fiziki dağıtımda A payı = J × (6.000 ÷ 12.000) = J × 0,5 = 60.000 → toplam birleşik maliyet J = 60.000 ÷ 0,5 = **120.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "mmuh-birlesik-gen-0026",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 100.000 ₺'dir. Satış değeri esasına göre dağıtılacaktır: A 90.000 ₺, B 60.000 ₺, C 50.000 ₺ satış değerinde. A ürününe düşen maliyet payı kaç ₺'dir?",
+    "stem": "Toplam birleşik maliyeti 200.000 ₺ olan bir süreçte A ürününden 3.000 birim (birim fiyat 100 ₺), B ürününden 2.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre A ürününe düşen pay kaç ₺'dir?",
     "options": {
-      "A": "45.000",
-      "B": "30.000",
-      "C": "25.000",
-      "D": "90.000",
-      "E": "50.000"
+      "A": "80.000",
+      "B": "100.000",
+      "C": "120.000",
+      "D": "60.000",
+      "E": "200.000"
     },
-    "answer": "A",
-    "solution": "Toplam satış değeri = 90.000 + 60.000 + 50.000 = 200.000 ₺. A payı = 100.000 × (90.000 ÷ 200.000) = 100.000 × 0,45 = **45.000 ₺**.",
+    "answer": "C",
+    "solution": "Satış değerleri: A = 3.000 × 100 = 300.000 ₺; B = 2.000 × 100 = 200.000 ₺; toplam = 500.000 ₺. A payı = 200.000 × (300.000 ÷ 500.000) = **120.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "mmuh-birlesik-gen-0027",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "100.000 ₺ birleşik maliyet satış değerine göre dağıtılmaktadır (A 90.000, B 60.000, C 50.000 ₺). B ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 480.000 ₺ olan bir süreçte P ürününden 5.000 birim (birim fiyat 100 ₺), Q ürününden 3.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre Q ürününün BİRİM maliyeti kaç ₺'dir?",
     "options": {
-      "A": "45.000",
-      "B": "25.000",
-      "C": "30.000",
-      "D": "60.000",
-      "E": "20.000"
+      "A": "36",
+      "B": "100",
+      "C": "60",
+      "D": "48",
+      "E": "90"
     },
     "answer": "C",
-    "solution": "B payı = 100.000 × (60.000 ÷ 200.000) = 100.000 × 0,30 = **30.000 ₺**.",
+    "solution": "Satış değerleri: P = 500.000 ₺, Q = 300.000 ₺, toplam 800.000 ₺. Q payı = 480.000 × (300.000 ÷ 800.000) = 180.000 ₺. Q birim maliyeti = 180.000 ÷ 3.000 = **60 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "mmuh-birlesik-gen-0028",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "100.000 ₺ birleşik maliyet satış değerine göre dağıtılmaktadır (A 90.000, B 60.000, C 50.000 ₺). C ürününe düşen pay kaç ₺'dir? (Kontrol: A+B+C = 100.000)",
+    "stem": "Ana ürünün toplam birleşik maliyeti 200.000 ₺'dir; süreçte ortaya çıkan yan ürünün net gerçekleşebilir değeri 30.000 ₺'dir. Yan ürün değeri birleşik maliyetten düşülüyorsa ve ana üründen 8.500 birim elde edilmişse, ana ürünün BİRİM maliyeti kaç ₺'dir?",
     "options": {
-      "A": "45.000",
-      "B": "25.000",
-      "C": "30.000",
-      "D": "50.000",
-      "E": "15.000"
+      "A": "23,53",
+      "B": "25",
+      "C": "30",
+      "D": "20",
+      "E": "17,65"
     },
-    "answer": "B",
-    "solution": "C payı = 100.000 × (50.000 ÷ 200.000) = 100.000 × 0,25 = **25.000 ₺**. Kontrol: 45.000 + 30.000 + 25.000 = 100.000 ✓.",
+    "answer": "D",
+    "solution": "Yan ürün NGD'si ana ürün maliyetinden düşülür: net ana maliyet = 200.000 − 30.000 = 170.000 ₺. Ana ürün birim maliyeti = 170.000 ÷ 8.500 = **20 ₺**. (Yan ürünü düşmemek 23,53 verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri kontrol; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "mmuh-birlesik-gen-0030",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 90.000 ₺'dir. Fiziki ölçüye göre dağıtılacaktır: X 3.000 kg, Y 6.000 kg. Y ürününe düşen maliyet payı kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 90.000 ₺ olan bir süreçte X 3.000 kg, Y 6.000 kg ve Z 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre Y ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
     "options": {
-      "A": "30.000",
-      "B": "45.000",
-      "C": "60.000",
-      "D": "90.000",
-      "E": "15.000"
+      "A": "6",
+      "B": "9",
+      "C": "54.000",
+      "D": "15",
+      "E": "5"
     },
-    "answer": "C",
-    "solution": "Toplam = 3.000 + 6.000 = 9.000 kg. Y payı = 90.000 × (6.000 ÷ 9.000) = 90.000 × (2/3) = **60.000 ₺**.",
+    "answer": "B",
+    "solution": "Toplam miktar = 3.000 + 6.000 + 1.000 = 10.000 kg. Y payı = 90.000 × (6.000 ÷ 10.000) = 54.000 ₺. Y birim = 54.000 ÷ 6.000 = **9 ₺/kg**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "mmuh-birlesik-gen-0031",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "90.000 ₺ birleşik maliyet fiziki ölçüye göre dağıtılmaktadır (X 3.000, Y 6.000 kg). X ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 120.000 ₺ olan süreçte A 2.000 kg (satış değeri 300.000 ₺), B 6.000 kg (satış değeri 100.000 ₺) elde edilmiştir. A ürününe düşen pay, satış değeri yöntemine göre fiziki ölçü yöntemine göre olandan kaç ₺ FAZLADIR?",
     "options": {
-      "A": "20.000",
-      "B": "60.000",
-      "C": "45.000",
-      "D": "90.000",
-      "E": "30.000"
+      "A": "30.000",
+      "B": "90.000",
+      "C": "60.000",
+      "D": "120.000",
+      "E": "45.000"
     },
-    "answer": "E",
-    "solution": "X payı = 90.000 × (3.000 ÷ 9.000) = 90.000 × (1/3) = **30.000 ₺**.",
+    "answer": "C",
+    "solution": "Fiziki ölçü: A payı = 120.000 × (2.000 ÷ 8.000) = 30.000 ₺. Satış değeri: A payı = 120.000 × (300.000 ÷ 400.000) = 90.000 ₺. Fark = 90.000 − 30.000 = **60.000 ₺** (satış değeri yöntemi A'ya daha fazla pay verir).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mmuh-birlesik-gen-0032",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 240.000 ₺'dir. Satış değerine göre dağıtılacaktır: P 300.000 ₺, Q 100.000 ₺ satış değerinde. P ürününe düşen maliyet payı kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan bir süreçte P ürününden 4.000 birim (birim fiyat 75 ₺), Q ürününden 1.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre dağıtım yapıldığında Q ürününün BİRİM maliyeti, P ürününün birim maliyetinden kaç ₺ FAZLADIR?",
     "options": {
-      "A": "60.000",
-      "B": "180.000",
-      "C": "120.000",
-      "D": "240.000",
-      "E": "90.000"
+      "A": "15",
+      "B": "60",
+      "C": "45",
+      "D": "105",
+      "E": "30"
     },
-    "answer": "B",
-    "solution": "Toplam satış değeri = 300.000 + 100.000 = 400.000 ₺. P payı = 240.000 × (300.000 ÷ 400.000) = 240.000 × 0,75 = **180.000 ₺**.",
+    "answer": "A",
+    "solution": "Satış değerleri: P = 4.000 × 75 = 300.000 ₺; Q = 1.000 × 100 = 100.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (300.000 ÷ 400.000) = 180.000 ₺ → P birim = 180.000 ÷ 4.000 = 45 ₺. Q payı = 60.000 ₺ → Q birim = 60.000 ÷ 1.000 = 60 ₺. Fark = 60 − 45 = **15 ₺** (Q daha yüksek).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "mmuh-birlesik-gen-0033",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "240.000 ₺ birleşik maliyet satış değerine göre dağıtılmaktadır (P 300.000, Q 100.000 ₺). Q ürününe düşen pay kaç ₺'dir? (Kontrol: P+Q = 240.000)",
+    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M ve N ürünleri elde edilir. M NGD 200.000 ₺, N NGD 100.000 ₺'dir. N ürünü 2.000 birim ise N ürününün BİRİM birleşik maliyet payı kaç ₺'dir?",
     "options": {
-      "A": "180.000",
-      "B": "100.000",
-      "C": "120.000",
-      "D": "60.000",
-      "E": "40.000"
+      "A": "50",
+      "B": "20",
+      "C": "100",
+      "D": "75",
+      "E": "25"
     },
-    "answer": "D",
-    "solution": "Q payı = 240.000 × (100.000 ÷ 400.000) = 240.000 × 0,25 = **60.000 ₺**. Kontrol: 180.000 + 60.000 = 240.000 ✓.",
+    "answer": "E",
+    "solution": "Toplam NGD = 300.000 ₺. N payı = 150.000 × (100.000 ÷ 300.000) = 50.000 ₺. N birim = 50.000 ÷ 2.000 = **25 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri kontrol; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "mmuh-birlesik-gen-0035",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 150.000 ₺'dir. Fiziki ölçüye göre dağıtılacaktır: M 5.000 kg, N 5.000 kg. Her ürüne düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M 5.000 kg (satış değeri 200.000 ₺), N 5.000 kg (satış değeri 100.000 ₺) elde edilmiştir. M ürününe düşen pay, satış değeri yöntemi ile fiziki ölçü yöntemi arasında kaç ₺ FARK eder?",
     "options": {
-      "A": "50.000 ₺ (her biri)",
-      "B": "150.000 ₺ (M) ve 0 ₺ (N)",
-      "C": "100.000 ve 50.000",
-      "D": "75.000 ₺ (her biri)",
-      "E": "Belirlenemez"
+      "A": "50.000",
+      "B": "75.000",
+      "C": "100.000",
+      "D": "25.000",
+      "E": "0"
     },
     "answer": "D",
-    "solution": "Toplam = 5.000 + 5.000 = 10.000 kg; miktarlar eşit. Her ürün payı = 150.000 × (5.000 ÷ 10.000) = **75.000 ₺** (M ve N eşit pay alır).",
+    "solution": "Fiziki ölçü: M payı = 150.000 × (5.000 ÷ 10.000) = 75.000 ₺. Satış değeri: M payı = 150.000 × (200.000 ÷ 300.000) = 100.000 ₺. Fark = 100.000 − 75.000 = **25.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-eşit dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "mmuh-birlesik-gen-0038",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "B ürününe düşen birleşik maliyet payı 40.000 ₺, B ürünü miktarı 4.000 kg'dır. B'nin birim (kg) maliyeti kaç ₺'dir?",
+    "stem": "Satış değeri esaslı dağıtımda A ürününe 120.000 ₺ pay düşmüştür. A ürününün satış değeri 400.000 ₺, tüm ürünlerin toplam satış değeri 1.000.000 ₺ olduğuna göre toplam birleşik maliyet kaç ₺'dir?",
     "options": {
-      "A": "4",
-      "B": "20",
-      "C": "10",
-      "D": "40",
-      "E": "0,10"
+      "A": "120.000",
+      "B": "480.000",
+      "C": "300.000",
+      "D": "48.000",
+      "E": "250.000"
     },
     "answer": "C",
-    "solution": "B birim maliyeti = 40.000 ÷ 4.000 = **10 ₺/kg**.",
+    "solution": "A payı = J × (A satış değeri ÷ toplam) → 120.000 = J × (400.000 ÷ 1.000.000) = J × 0,4. Toplam birleşik maliyet J = 120.000 ÷ 0,4 = **300.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "mmuh-birlesik-gen-0044",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 120.000 ₺'dir. NGD esasına göre dağıtılacaktır: P ürünü NGD 90.000 ₺, Q ürünü NGD 60.000 ₺. P ürününe düşen maliyet payı kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 180.000 ₺ olan süreçte A ve B ürünleri elde edilir. A: nihai satış 200.000 ₺, ayrım sonrası ilave işleme 50.000 ₺; B: nihai satış 120.000 ₺, ilave işleme 30.000 ₺. Net gerçekleşebilir değer (NGD) esasına göre A'ya düşen pay kaç ₺'dir?",
     "options": {
-      "A": "48.000",
-      "B": "72.000",
+      "A": "120.000",
+      "B": "67.500",
       "C": "90.000",
-      "D": "60.000",
-      "E": "120.000"
+      "D": "150.000",
+      "E": "112.500"
     },
-    "answer": "B",
-    "solution": "Toplam NGD = 90.000 + 60.000 = 150.000 ₺. P payı = 120.000 × (90.000 ÷ 150.000) = 120.000 × 0,6 = **72.000 ₺**.",
+    "answer": "E",
+    "solution": "NGD = nihai satış − ilave işleme. A NGD = 200.000 − 50.000 = 150.000 ₺; B NGD = 120.000 − 30.000 = 90.000 ₺; toplam 240.000 ₺. A payı = 180.000 × (150.000 ÷ 240.000) = **112.500 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-NGD dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - NGD dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "mmuh-birlesik-gen-0052",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 300.000 ₺'dir. Satış değerine göre dağıtılacaktır: A 400.000 ₺, B 200.000 ₺ satış değerinde. A ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 360.000 ₺ olan bir süreçte A ürününden 5.000 birim (birim fiyat 120 ₺), B ürününden 3.000 birim (birim fiyat 100 ₺) elde edilmiştir. Satış değeri esasına göre dağıtım yapıldığında A ürününün brüt kârı (satış − birleşik maliyet payı) kaç ₺'dir?",
     "options": {
-      "A": "150.000",
-      "B": "100.000",
-      "C": "200.000",
-      "D": "300.000",
-      "E": "240.000"
+      "A": "240.000",
+      "B": "360.000",
+      "C": "600.000",
+      "D": "180.000",
+      "E": "300.000"
     },
-    "answer": "C",
-    "solution": "Toplam satış değeri = 400.000 + 200.000 = 600.000 ₺. A payı = 300.000 × (400.000 ÷ 600.000) = 300.000 × (2/3) = **200.000 ₺**.",
+    "answer": "B",
+    "solution": "A satış = 5.000 × 120 = 600.000 ₺; B satış = 300.000 ₺; toplam 900.000 ₺. A payı = 360.000 × (600.000 ÷ 900.000) = 240.000 ₺. A brüt kârı = A satış − A payı = 600.000 − 240.000 = **360.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "mmuh-birlesik-gen-0053",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "300.000 ₺ birleşik maliyet satış değerine göre dağıtılmaktadır (A 400.000, B 200.000 ₺). B ürününe düşen pay kaç ₺'dir? (Kontrol: A+B = 300.000)",
+    "stem": "Bir birleşik ürün ayrım noktasında 100.000 ₺'ye satılabilmektedir. İlave işlemeden geçirilirse 150.000 ₺'ye satılabilecek, ilave işleme maliyeti 30.000 ₺ olacaktır. Doğru karar ve net etkisi nedir?",
     "options": {
-      "A": "200.000",
-      "B": "60.000",
-      "C": "150.000",
-      "D": "300.000",
-      "E": "100.000"
+      "A": "İlave işlenmemeli; net 30.000 ₺ zarar eder",
+      "B": "İlave işlenmeli; net 50.000 ₺ katkı sağlar",
+      "C": "Fark etmez; iki seçenek eşittir",
+      "D": "İlave işlenmemeli; birleşik maliyet 100.000 ₺ aşılır",
+      "E": "İlave işlenmeli; net 20.000 ₺ katkı sağlar"
     },
     "answer": "E",
-    "solution": "B payı = 300.000 × (200.000 ÷ 600.000) = 300.000 × (1/3) = **100.000 ₺**. Kontrol: 200.000 + 100.000 = 300.000 ✓.",
+    "solution": "Karar ayrım sonrası verilere göre verilir (birleşik maliyet batmıştır, dikkate alınmaz). Ek gelir = 150.000 − 100.000 = 50.000 ₺; ek maliyet = 30.000 ₺. Ek gelir > ek maliyet olduğundan ilave işlenmeli; net katkı = 50.000 − 30.000 = **20.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-satış değeri kontrol; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "mmuh-birlesik-gen-0055",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 60.000 ₺'dir. Fiziki ölçüye göre dağıtılacaktır: K 2.000 kg, L 1.000 kg. K ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 60.000 ₺ olan bir süreçte K 2.000 kg ve L 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre K ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
     "options": {
-      "A": "15.000",
-      "B": "20.000",
-      "C": "30.000",
-      "D": "60.000",
-      "E": "40.000"
+      "A": "30",
+      "B": "20",
+      "C": "40.000",
+      "D": "10",
+      "E": "15"
     },
-    "answer": "E",
-    "solution": "Toplam = 2.000 + 1.000 = 3.000 kg. K payı = 60.000 × (2.000 ÷ 3.000) = 60.000 × (2/3) = **40.000 ₺**.",
+    "answer": "B",
+    "solution": "Toplam miktar = 2.000 + 1.000 = 3.000 kg. K payı = 60.000 × (2.000 ÷ 3.000) = 40.000 ₺. K birim = 40.000 ÷ 2.000 = **20 ₺/kg**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "mmuh-birlesik-gen-0059",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet 180.000 ₺'dir. NGD esasına göre dağıtılacaktır: A ürünü NGD 120.000 ₺, B ürünü NGD 60.000 ₺. B ürününe düşen pay kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte P ve Q ürünleri elde edilir. P: nihai satış 300.000 ₺, ilave işleme 60.000 ₺; Q: nihai satış 200.000 ₺, ilave işleme 40.000 ₺. NGD esasına göre P'ye düşen pay kaç ₺'dir?",
     "options": {
-      "A": "120.000",
-      "B": "180.000",
-      "C": "90.000",
-      "D": "60.000",
-      "E": "45.000"
+      "A": "96.000",
+      "B": "120.000",
+      "C": "180.000",
+      "D": "144.000",
+      "E": "150.000"
     },
     "answer": "D",
-    "solution": "Toplam NGD = 120.000 + 60.000 = 180.000 ₺. B payı = 180.000 × (60.000 ÷ 180.000) = 180.000 × (1/3) = **60.000 ₺**. (A payı = 120.000 ₺; toplam 180.000 ✓.)",
+    "solution": "P NGD = 300.000 − 60.000 = 240.000 ₺; Q NGD = 200.000 − 40.000 = 160.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (240.000 ÷ 400.000) = **144.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-NGD dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - NGD dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null

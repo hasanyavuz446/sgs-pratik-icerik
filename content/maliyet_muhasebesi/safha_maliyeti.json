@@ -113,20 +113,20 @@
     "id": "mmuh-safha-gen-0006",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada dönem içinde 500.000 ₺ maliyet oluşmuş ve yarı mamul stoğu olmaksızın 10.000 birim üretilmiştir. Birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada dönem içinde toplam 500.000 ₺ maliyet oluşmuştur. Dönemde 9.000 birim tamamlanmış, dönem sonunda %50 tamamlanmış 2.000 birim yarı mamul kalmıştır. Tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "50",
-      "B": "5",
-      "C": "500",
-      "D": "20",
-      "E": "100"
+      "A": "450.000",
+      "B": "500.000",
+      "C": "400.000",
+      "D": "50.000",
+      "E": "495.000"
     },
     "answer": "A",
-    "solution": "Birim maliyet = 500.000 ÷ 10.000 = **50 ₺/birim**.",
+    "solution": "Eşdeğer ürün = tamamlanan + (yarı mamul × tamamlanma derecesi) = 9.000 + (2.000 × %50) = 10.000 birim. Eşdeğer birim maliyet = 500.000 ÷ 10.000 = 50 ₺. Tamamlananların maliyeti = 9.000 × 50 = **450.000 ₺**. (Kalan 50.000 ₺ dönem sonu yarı mamulün maliyetidir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - safha birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "mmuh-safha-gen-0007",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada dönem içinde 720.000 ₺ maliyet oluşmuş ve 12.000 birim mamul üretilmiştir (yarı mamul yok). Birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada dönem içinde toplam 720.000 ₺ maliyet oluşmuştur. Dönemde 10.000 birim tamamlanmış, dönem sonunda %50 tamamlanmış 4.000 birim yarı mamul kalmıştır. Dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "72",
-      "B": "50",
-      "C": "60",
-      "D": "600",
-      "E": "12"
+      "A": "240.000",
+      "B": "600.000",
+      "C": "120.000",
+      "D": "60.000",
+      "E": "180.000"
     },
     "answer": "C",
-    "solution": "Birim maliyet = 720.000 ÷ 12.000 = **60 ₺/birim**.",
+    "solution": "Eşdeğer ürün = 10.000 + (4.000 × %50) = 12.000 birim. Eşdeğer birim maliyet = 720.000 ÷ 12.000 = 60 ₺. Yarı mamulün eşdeğeri 2.000 birim olduğundan maliyeti = 2.000 × 60 = **120.000 ₺**. (Fiziksel 4.000 birimle çarpmak 240.000 ₺ verir — tamamlanma derecesi dikkate alınmalıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - safha birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "mmuh-safha-gen-0011",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada dönemde 9.000 birim tamamlanmış, dönem sonunda 2.000 birim %50 tamamlanmış yarı mamul kalmıştır. Eşdeğer ürün miktarı kaç birimdir?",
+    "stem": "Bir safhada direkt ilk madde ve malzeme (DİMM) safha başında topluca verilmektedir. Dönemde 9.000 birim tamamlanmış, dönem sonunda 3.000 birim yarı mamul kalmıştır (DİMM bakımından %100, dönüştürme bakımından %60 tamamlanmış). DİMM maliyeti 360.000 ₺, dönüştürme (DİG + GÜG) maliyeti 378.000 ₺ olduğuna göre tamamlanmış bir birimin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "9.000",
-      "B": "10.000",
-      "C": "11.000",
-      "D": "1.000",
-      "E": "13.000"
+      "A": "61,50",
+      "B": "60",
+      "C": "70",
+      "D": "55",
+      "E": "65"
     },
-    "answer": "B",
-    "solution": "Eşdeğer ürün = tamamlanan + yarı mamul × derece = 9.000 + (2.000 × %50) = 9.000 + 1.000 = **10.000 birim**.",
+    "answer": "E",
+    "solution": "DİMM eşdeğeri = 9.000 + 3.000 = 12.000 birim → DİMM birim maliyeti = 360.000 ÷ 12.000 = 30 ₺. Dönüştürme eşdeğeri = 9.000 + (3.000 × %60) = 10.800 birim → dönüştürme birim maliyeti = 378.000 ÷ 10.800 = 35 ₺. Tam birim maliyeti = 30 + 35 = **65 ₺**. (İki unsura tek eşdeğer uygulamak yanlıştır; DİMM ile dönüştürmenin tamamlanma dereceleri farklıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-eşdeğer ürün; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "mmuh-safha-gen-0013",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Dönem sonu yarı mamulü 4.000 fiziksel birim, bunun eşdeğer ürün miktarı 1.000 birimdir. Tamamlanma derecesi yüzde kaçtır?",
+    "stem": "Bir safhada dönemde 9.000 birim tamamlanmış, dönem sonunda 4.000 fiziksel birim yarı mamul kalmıştır. Safhanın toplam eşdeğer ürün miktarı 11.000 birim olarak hesaplandığına göre dönem sonu yarı mamulünün tamamlanma derecesi yüzde kaçtır?",
     "options": {
-      "A": "%25",
-      "B": "%20",
-      "C": "%40",
-      "D": "%50",
+      "A": "%44",
+      "B": "%50",
+      "C": "%25",
+      "D": "%80",
       "E": "%75"
     },
-    "answer": "A",
-    "solution": "Tamamlanma derecesi = 1.000 eşdeğer birim ÷ 4.000 fiziksel birim × 100 = **%25**.",
+    "answer": "B",
+    "solution": "Yarı mamulün eşdeğer ürün miktarı = toplam eşdeğer − tamamlanan = 11.000 − 9.000 = 2.000 birim. Tamamlanma derecesi = eşdeğer ÷ fiziksel = 2.000 ÷ 4.000 = **%50**. (Eşdeğeri toplam eşdeğere bölmek (2.000 ÷ 11.000) anlamsızdır; bölen fiziksel yarı mamul miktarıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-eşdeğer ürün; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "mmuh-safha-gen-0015",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhanın toplam maliyeti 500.000 ₺, eşdeğer ürün miktarı 10.000 birimdir. Eşdeğer birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada DİMM birim maliyeti 30 ₺, dönüştürme birim maliyeti 40 ₺ olarak hesaplanmıştır. Dönem sonunda 4.000 birim yarı mamul kalmıştır; bu birimler DİMM bakımından %100, dönüştürme bakımından %25 tamamlanmıştır. Dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "20",
-      "B": "5",
-      "C": "500",
-      "D": "100",
-      "E": "50"
+      "A": "280.000",
+      "B": "120.000",
+      "C": "70.000",
+      "D": "160.000",
+      "E": "200.000"
     },
-    "answer": "E",
-    "solution": "Eşdeğer birim maliyet = 500.000 ÷ 10.000 = **50 ₺/birim**.",
+    "answer": "D",
+    "solution": "DİMM payı = 4.000 × 30 = 120.000 ₺ (malzeme tamamen verilmiş). Dönüştürme payı = (4.000 × %25) × 40 = 1.000 × 40 = 40.000 ₺. Yarı mamul maliyeti = 120.000 + 40.000 = **160.000 ₺**. (Her iki unsuru %100 saymak 4.000 × 70 = 280.000 ₺ verir — yanlış.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "mmuh-safha-gen-0021",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada toplam maliyet 500.000 ₺, eşdeğer ürün 10.000 birim (eşdeğer birim maliyet 50 ₺). Dönemde 9.000 birim tamamlanmıştır. Tamamlanan (bir sonraki safhaya/mamule aktarılan) birimlerin maliyeti kaç ₺'dir?",
+    "stem": "Bir safhaya dönemde 10.000 birim girmiş, üretim sırasında %10 oranında normal fire oluşmuş ve kalan birimlerin tamamı tamamlanmıştır. Safhanın toplam maliyeti 450.000 ₺ olduğuna göre sağlam mamulün birim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "400.000",
-      "B": "500.000",
-      "C": "50.000",
-      "D": "9.000",
-      "E": "450.000"
+      "A": "45",
+      "B": "55",
+      "C": "50",
+      "D": "40",
+      "E": "90"
     },
-    "answer": "E",
-    "solution": "Tamamlanan birimlerin maliyeti = tamamlanan × eşdeğer birim maliyet = 9.000 × 50 = **450.000 ₺**.",
+    "answer": "C",
+    "solution": "Normal fire = 10.000 × %10 = 1.000 birim; sağlam üretim = 10.000 − 1.000 = 9.000 birim. Normal fire kaçınılmaz sayıldığından maliyeti ayrı zarar yazılmaz, sağlam birimlere yüklenir: birim maliyet = 450.000 ÷ 9.000 = **50 ₺**. (Fireyi dikkate almadan 450.000 ÷ 10.000 = 45 ₺ bulunur — eksik.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-tamamlanan; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mmuh-safha-gen-0022",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Aynı safhada (eşdeğer birim maliyet 50 ₺) dönem sonunda 2.000 birim %50 tamamlanmış yarı mamul kalmıştır. Dönem sonu yarı mamul stoğunun maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada dönem içinde toplam 800.000 ₺ maliyet oluşmuştur. Dönemde 18.000 birim tamamlanmış, dönem sonunda %50 tamamlanmış 4.000 birim yarı mamul kalmıştır. Dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "100.000",
-      "B": "1.000",
-      "C": "2.000",
-      "D": "50.000",
-      "E": "150.000"
+      "A": "80.000",
+      "B": "160.000",
+      "C": "720.000",
+      "D": "40.000",
+      "E": "200.000"
     },
-    "answer": "D",
-    "solution": "Yarı mamulün eşdeğeri = 2.000 × %50 = 1.000 birim. Yarı mamul maliyeti = 1.000 × 50 = **50.000 ₺**. (Kontrol: tamamlanan 450.000 + yarı mamul 50.000 = 500.000 ✓.)",
+    "answer": "A",
+    "solution": "Eşdeğer ürün = 18.000 + (4.000 × %50) = 20.000 birim. Eşdeğer birim maliyet = 800.000 ÷ 20.000 = 40 ₺. Yarı mamulün eşdeğeri 2.000 birim → maliyeti = 2.000 × 40 = **80.000 ₺**. (Tamamlananların maliyeti 18.000 × 40 = 720.000 ₺'dir; ikisinin toplamı 800.000 ₺ ile dönem maliyetine eşittir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yarı mamul; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "mmuh-safha-gen-0024",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Önceki soruda (eşdeğer birim maliyet 50 ₺, tamamlanan 10.000 birim) tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada dönem toplam maliyeti 990.000 ₺'dir. Dönemde 15.000 birim tamamlanmış, dönem sonunda %50 tamamlanmış 6.000 birim yarı mamul kalmıştır. Tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "600.000",
-      "B": "500.000",
-      "C": "100.000",
-      "D": "480.000",
-      "E": "450.000"
+      "A": "990.000",
+      "B": "165.000",
+      "C": "742.500",
+      "D": "900.000",
+      "E": "825.000"
     },
-    "answer": "B",
-    "solution": "Tamamlanan birimlerin maliyeti = 10.000 × 50 = **500.000 ₺**.",
+    "answer": "E",
+    "solution": "Eşdeğer ürün = 15.000 + (6.000 × %50) = 18.000 birim. Eşdeğer birim maliyet = 990.000 ÷ 18.000 = 55 ₺. Tamamlananların maliyeti = 15.000 × 55 = **825.000 ₺**. (Kalan 165.000 ₺ dönem sonu yarı mamulüne aittir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-tamamlanan; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "mmuh-safha-gen-0025",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Aynı safhada (eşdeğer birim maliyet 50 ₺) dönem sonu 4.000 birim %50 tamamlanmış yarı mamulün maliyeti kaç ₺'dir?",
+    "stem": "Bir işletmede üretim iki safhadan geçmektedir. I. safhada birim maliyeti 40 ₺ olan 5.000 birim tamamlanıp II. safhaya devredilmiştir. II. safhada bu birimler için 150.000 ₺ ek maliyet oluşmuş ve 5.000 birimin tamamı tamamlanmıştır (yarı mamul yoktur). II. safha sonunda mamulün birim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "100.000",
-      "B": "200.000",
-      "C": "50.000",
-      "D": "2.000",
-      "E": "120.000"
+      "A": "30",
+      "B": "70",
+      "C": "40",
+      "D": "110",
+      "E": "50"
     },
-    "answer": "A",
-    "solution": "Yarı mamul eşdeğeri = 4.000 × %50 = 2.000 birim. Maliyeti = 2.000 × 50 = **100.000 ₺**. (Kontrol: 500.000 + 100.000 = 600.000 ✓.)",
+    "answer": "B",
+    "solution": "II. safhaya devreden maliyet = 5.000 × 40 = 200.000 ₺. II. safhanın toplam maliyeti = devreden + eklenen = 200.000 + 150.000 = 350.000 ₺. Birim maliyet = 350.000 ÷ 5.000 = **70 ₺**. (Yalnız II. safhada eklenen maliyeti bölmek 30 ₺ verir; önceki safha maliyeti mamulün üzerinde taşınır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yarı mamul; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "mmuh-safha-gen-0027",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada toplam maliyet 650.000 ₺, dönemde 12.000 birim tamamlanmış, dönem sonu 2.000 birim %50 tamamlanmış yarı mamul kalmıştır. Eşdeğer birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada dönem toplam maliyeti 650.000 ₺'dir. Dönemde 12.000 birim tamamlanmış, dönem sonunda %50 tamamlanmış 2.000 birim yarı mamul kalmıştır. Tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "50",
-      "B": "54,17",
-      "C": "65",
-      "D": "45",
-      "E": "100"
+      "A": "650.000",
+      "B": "50.000",
+      "C": "541.667",
+      "D": "600.000",
+      "E": "624.000"
     },
-    "answer": "A",
-    "solution": "Eşdeğer ürün = 12.000 + (2.000 × %50) = 13.000 birim. Eşdeğer birim maliyet = 650.000 ÷ 13.000 = **50 ₺/birim**.",
+    "answer": "D",
+    "solution": "Eşdeğer ürün = 12.000 + (2.000 × %50) = 13.000 birim. Eşdeğer birim maliyet = 650.000 ÷ 13.000 = 50 ₺. Tamamlananların maliyeti = 12.000 × 50 = **600.000 ₺**; kalan 50.000 ₺ yarı mamule aittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "mmuh-safha-gen-0030",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada üretime başlanan 12.000 birimden 8.000'i tamamlanmış, 4.000 birim dönem sonu yarı mamul kalmıştır (DİMM %100, dönüştürme %50). DİMM açısından eşdeğer ürün miktarı kaç birimdir?",
+    "stem": "Bir safhada üretime başlanan 12.000 birimden 8.000'i tamamlanmış, 4.000 birim dönem sonu yarı mamul olarak kalmıştır. Yarı mamuller DİMM bakımından %100, dönüştürme bakımından %50 tamamlanmıştır. DİMM açısından hesaplanan eşdeğer ürün miktarı, dönüştürme açısından hesaplanandan kaç birim FAZLADIR?",
     "options": {
-      "A": "8.000",
+      "A": "4.000",
       "B": "10.000",
-      "C": "12.000",
-      "D": "4.000",
-      "E": "16.000"
+      "C": "2.000",
+      "D": "12.000",
+      "E": "6.000"
     },
     "answer": "C",
-    "solution": "DİMM için eşdeğer ürün = tamamlanan + yarı mamul × %100 = 8.000 + (4.000 × %100) = 8.000 + 4.000 = **12.000 birim**.",
+    "solution": "DİMM eşdeğeri = 8.000 + (4.000 × %100) = 12.000 birim. Dönüştürme eşdeğeri = 8.000 + (4.000 × %50) = 10.000 birim. Fark = 12.000 − 10.000 = **2.000 birim**. Malzeme safha başında topluca verildiği için yarı mamuller malzeme bakımından tam sayılır; bu nedenle iki eşdeğer tutar birbirinden farklıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-DİMM eşdeğer; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün (DİMM)"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "mmuh-safha-gen-0031",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Aynı üretimde (tamamlanan 8.000, dönem sonu yarı mamul 4.000, dönüştürme tamamlanma %50) DÖNÜŞTÜRME (DİG+GÜG) açısından eşdeğer ürün miktarı kaç birimdir?",
+    "stem": "Bir safhada dönemde 8.000 birim tamamlanmış, dönem sonunda 4.000 birim yarı mamul kalmıştır (dönüştürme bakımından %50 tamamlanmış). Dönemin dönüştürme (DİG + GÜG) maliyeti 400.000 ₺ olduğuna göre tamamlanan birimlere yüklenen dönüştürme maliyeti kaç ₺'dir?",
     "options": {
-      "A": "8.000",
-      "B": "10.000",
-      "C": "12.000",
-      "D": "4.000",
-      "E": "2.000"
+      "A": "320.000",
+      "B": "400.000",
+      "C": "80.000",
+      "D": "266.667",
+      "E": "200.000"
     },
-    "answer": "B",
-    "solution": "Dönüştürme için eşdeğer ürün = tamamlanan + yarı mamul × %50 = 8.000 + (4.000 × %50) = 8.000 + 2.000 = **10.000 birim**.",
+    "answer": "A",
+    "solution": "Dönüştürme eşdeğeri = 8.000 + (4.000 × %50) = 10.000 birim. Dönüştürme birim maliyeti = 400.000 ÷ 10.000 = 40 ₺. Tamamlananlara yüklenen = 8.000 × 40 = **320.000 ₺**. (Kalan 80.000 ₺ yarı mamulün dönüştürme payıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-dönüştürme eşdeğer; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün (dönüştürme)"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mmuh-safha-gen-0032",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Safhada DİMM maliyeti 360.000 ₺, DİMM eşdeğer ürünü 12.000 birimdir. DİMM birim maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada DİMM maliyeti 360.000 ₺ olup DİMM eşdeğer ürün miktarı 12.000 birim, dönüştürme maliyeti 340.000 ₺ olup dönüştürme eşdeğer ürün miktarı 10.000 birimdir. Bu safhada tamamlanmış bir birimin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "50",
-      "B": "36",
-      "C": "40",
-      "D": "3",
-      "E": "30"
+      "A": "58,33",
+      "B": "70",
+      "C": "30",
+      "D": "34",
+      "E": "64"
     },
     "answer": "E",
-    "solution": "DİMM birim maliyeti = 360.000 ÷ 12.000 = **30 ₺/birim**.",
+    "solution": "DİMM birim maliyeti = 360.000 ÷ 12.000 = 30 ₺; dönüştürme birim maliyeti = 340.000 ÷ 10.000 = 34 ₺. Tam birim maliyeti = 30 + 34 = **64 ₺**. (Toplam maliyeti tek bir eşdeğer sayıya bölmek — 700.000 ÷ 12.000 = 58,33 — yanlıştır; her unsurun eşdeğeri ayrıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-DİMM birim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "mmuh-safha-gen-0033",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Safhada dönüştürme (DİG+GÜG) maliyeti 400.000 ₺, dönüştürme eşdeğer ürünü 10.000 birimdir. Dönüştürme birim maliyeti kaç ₺'dir?",
+    "stem": "Bir safhaya 10.000 birim girmiştir. Dönemde 500 birim normal fire, 500 birim de anormal fire oluşmuş; kalan 9.000 birim tamamlanmıştır. Safhanın toplam maliyeti 475.000 ₺ olduğuna göre anormal fire nedeniyle döneme zarar olarak yazılacak tutar kaç ₺'dir?",
     "options": {
-      "A": "30",
-      "B": "4",
-      "C": "36",
-      "D": "40",
-      "E": "50"
+      "A": "50.000",
+      "B": "25.000",
+      "C": "23.750",
+      "D": "475.000",
+      "E": "0"
     },
-    "answer": "D",
-    "solution": "Dönüştürme birim maliyeti = 400.000 ÷ 10.000 = **40 ₺/birim**.",
+    "answer": "B",
+    "solution": "Anormal fire maliyeti mamule yüklenmez, ayrıca zarar yazılır; bu nedenle eşdeğer ürüne dahil edilir: 9.000 sağlam + 500 anormal fire = 9.500 birim. Birim maliyet = 475.000 ÷ 9.500 = 50 ₺. Zarar yazılacak tutar = 500 × 50 = **25.000 ₺**. Normal fire ise sağlam birimlere yüklenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-dönüştürme birim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "mmuh-safha-gen-0037",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Yukarıdaki üretimde toplam maliyet (DİMM 360.000 + dönüştürme 400.000 = 760.000 ₺), tamamlananlara 560.000 ₺, yarı mamullere 200.000 ₺ dağıtılmıştır. Bu dağıtımla ilgili doğru ifade hangisidir?",
+    "stem": "Bir safhada DİMM maliyeti 360.000 ₺ (birim maliyeti 30 ₺), dönüştürme maliyeti 400.000 ₺ (birim maliyeti 40 ₺) olarak hesaplanmıştır. Dönemde 8.000 birim tamamlanmıştır. Safhanın toplam 760.000 ₺'lik maliyetinden tamamlananlara düşen pay çıkarıldığında dönem sonu yarı mamullere düşen tutar kaç ₺'dir?",
     "options": {
-      "A": "Dağıtılan toplam (560.000 + 200.000 = 760.000 ₺) safha toplam maliyetine eşittir; dağıtım tutarlıdır",
-      "B": "Dağıtılan toplam (760.000 ₺) safha toplam maliyetinden fazladır; bu nedenle bir maliyet aşımı doğmuştur",
-      "C": "Dağıtım hatalıdır; tamamlanan ve yarı mamul tutarlarının toplamı safha toplam maliyetini tutturmaz",
-      "D": "Yarı mamullere hiç maliyet verilmemiş, toplamın tümü yalnızca tamamlanan birimlere yüklenmiştir",
-      "E": "Tamamlanan birimlere hiç maliyet verilmemiş, toplamın tümü yalnızca yarı mamullere yüklenmiştir"
+      "A": "560.000",
+      "B": "160.000",
+      "C": "120.000",
+      "D": "200.000",
+      "E": "760.000"
     },
-    "answer": "A",
-    "solution": "Dağıtılan toplam = tamamlananlar 560.000 + yarı mamuller 200.000 = 760.000 ₺ = safha toplam maliyeti. Dağıtım **tutarlıdır** (maliyet korunumu sağlanmıştır).",
+    "answer": "D",
+    "solution": "Tam birim maliyeti = 30 + 40 = 70 ₺. Tamamlananların maliyeti = 8.000 × 70 = 560.000 ₺. Yarı mamullere düşen = 760.000 − 560.000 = **200.000 ₺**. (Kontrol: yarı mamul 4.000 birim DİMM %100 ve dönüştürme %50 ise 4.000 × 30 + 2.000 × 40 = 120.000 + 80.000 = 200.000 ₺ ile aynı sonuç.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-dağıtım kontrolü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "mmuh-safha-gen-0041",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada toplam maliyet 990.000 ₺, dönemde 15.000 birim tamamlanmış, dönem sonu 6.000 birim %50 tamamlanmış yarı mamul kalmıştır. Eşdeğer birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada dönem toplam maliyeti 840.000 ₺'dir. Dönemde 12.000 birim tamamlanmış, dönem sonunda %75 tamamlanmış 4.000 birim yarı mamul kalmıştır. Dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "45",
-      "B": "60",
-      "C": "55",
-      "D": "40",
-      "E": "100"
+      "A": "224.000",
+      "B": "672.000",
+      "C": "168.000",
+      "D": "210.000",
+      "E": "56.000"
     },
     "answer": "C",
-    "solution": "Eşdeğer ürün = 15.000 + (6.000 × %50) = 18.000 birim. Eşdeğer birim maliyet = 990.000 ÷ 18.000 = **55 ₺/birim**.",
+    "solution": "Eşdeğer ürün = 12.000 + (4.000 × %75) = 15.000 birim. Eşdeğer birim maliyet = 840.000 ÷ 15.000 = 56 ₺. Yarı mamulün eşdeğeri 3.000 birim → maliyeti = 3.000 × 56 = **168.000 ₺**. (Fiziksel 4.000 birimle çarpmak 224.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "mmuh-safha-gen-0042",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Önceki soruda (eşdeğer birim maliyet 50 ₺, tamamlanan 15.000 birim) tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada eşdeğer birim maliyet 55 ₺ olarak hesaplanmış ve tamamlanan birimlerin toplam maliyeti 825.000 ₺ olarak bulunmuştur. Dönem sonu yarı mamulün eşdeğer ürün miktarı 3.000 birim olduğuna göre safhanın dönem toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "750.000",
-      "B": "900.000",
-      "C": "150.000",
-      "D": "300.000",
-      "E": "600.000"
+      "A": "990.000",
+      "B": "825.000",
+      "C": "165.000",
+      "D": "1.155.000",
+      "E": "880.000"
     },
     "answer": "A",
-    "solution": "Tamamlanan birimlerin maliyeti = 15.000 × 50 = **750.000 ₺**.",
+    "solution": "Tamamlanan birim sayısı = 825.000 ÷ 55 = 15.000 birim. Toplam eşdeğer ürün = 15.000 + 3.000 = 18.000 birim. Dönem toplam maliyeti = 18.000 × 55 = **990.000 ₺**. (Yarı mamulün payı 3.000 × 55 = 165.000 ₺'dir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-tamamlanan; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "mmuh-safha-gen-0043",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Aynı safhada (eşdeğer birim maliyet 50 ₺) dönem sonu 6.000 birim %50 tamamlanmış yarı mamulün maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada eşdeğer birim maliyet 55 ₺'dir. Dönem sonunda 6.000 fiziksel birim yarı mamul kalmış ve bu stokun maliyeti 165.000 ₺ olarak hesaplanmıştır. Dönem sonu yarı mamulünün tamamlanma derecesi yüzde kaçtır?",
     "options": {
-      "A": "3.000",
-      "B": "300.000",
-      "C": "50.000",
-      "D": "150.000",
-      "E": "180.000"
+      "A": "%50",
+      "B": "%75",
+      "C": "%25",
+      "D": "%100",
+      "E": "%30"
     },
-    "answer": "D",
-    "solution": "Yarı mamul eşdeğeri = 6.000 × %50 = 3.000 birim. Maliyeti = 3.000 × 50 = **150.000 ₺**. (Kontrol: 750.000 + 150.000 = 900.000 ✓.)",
+    "answer": "A",
+    "solution": "Yarı mamulün eşdeğer ürün miktarı = maliyet ÷ eşdeğer birim maliyet = 165.000 ÷ 55 = 3.000 birim. Tamamlanma derecesi = 3.000 ÷ 6.000 = **%50**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yarı mamul; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "mmuh-safha-gen-0050",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada üretime başlanan 20.000 birimden 16.000'i tamamlanmış, 4.000 birim dönem sonu yarı mamul (DİMM %100, dönüştürme %25) kalmıştır. DÖNÜŞTÜRME açısından eşdeğer ürün kaç birimdir?",
+    "stem": "Bir safhada üretime başlanan 20.000 birimden 16.000'i tamamlanmış, 4.000 birim dönem sonu yarı mamul kalmıştır (DİMM %100, dönüştürme %25 tamamlanmış). DİMM maliyeti 600.000 ₺, dönüştürme maliyeti 340.000 ₺ olduğuna göre tamamlanan birimlerin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "16.000",
-      "B": "18.000",
-      "C": "20.000",
-      "D": "1.000",
-      "E": "17.000"
+      "A": "940.000",
+      "B": "800.000",
+      "C": "752.000",
+      "D": "140.000",
+      "E": "640.000"
     },
-    "answer": "E",
-    "solution": "Dönüştürme eşdeğer ürün = 16.000 + (4.000 × %25) = 16.000 + 1.000 = **17.000 birim**.",
+    "answer": "B",
+    "solution": "DİMM eşdeğeri = 16.000 + 4.000 = 20.000 → DİMM birim = 600.000 ÷ 20.000 = 30 ₺. Dönüştürme eşdeğeri = 16.000 + (4.000 × %25) = 17.000 → dönüştürme birim = 340.000 ÷ 17.000 = 20 ₺. Tam birim = 30 + 20 = 50 ₺. Tamamlananların maliyeti = 16.000 × 50 = **800.000 ₺**. (Kalan 140.000 ₺ yarı mamule aittir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-dönüştürme eşdeğer; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün (dönüştürme)"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "mmuh-safha-gen-0051",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Aynı üretimde (tamamlanan 16.000, dönem sonu yarı mamul 4.000, DİMM %100) DİMM açısından eşdeğer ürün kaç birimdir?",
+    "stem": "Bir safhada dönemde 16.000 birim tamamlanmış, dönem sonunda 4.000 birim yarı mamul kalmıştır. Bu yarı mamuller DİMM bakımından %100, dönüştürme bakımından %25 tamamlanmıştır. Dönüştürme (DİG + GÜG) açısından eşdeğer ürün miktarı kaç birimdir?",
     "options": {
-      "A": "16.000",
-      "B": "17.000",
-      "C": "20.000",
-      "D": "4.000",
-      "E": "18.000"
+      "A": "20.000",
+      "B": "16.000",
+      "C": "18.000",
+      "D": "17.000",
+      "E": "21.000"
     },
-    "answer": "C",
-    "solution": "DİMM eşdeğer ürün = 16.000 + (4.000 × %100) = 16.000 + 4.000 = **20.000 birim**.",
+    "answer": "D",
+    "solution": "Dönüştürme eşdeğeri = tamamlanan + (yarı mamul × dönüştürme derecesi) = 16.000 + (4.000 × %25) = 16.000 + 1.000 = **17.000 birim**. (DİMM açısından eşdeğer 20.000 birimdir; iki unsurun dereceleri farklı olduğu için eşdeğerleri de farklıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-DİMM eşdeğer; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer ürün (DİMM)"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "mmuh-safha-gen-0052",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Safhada DİMM maliyeti 600.000 ₺ (eşdeğer 20.000 birim), dönüştürme maliyeti 340.000 ₺ (eşdeğer 17.000 birim). Tamamlanmış bir birimin toplam maliyeti kaç ₺'dir?",
+    "stem": "Bir safhada DİMM maliyeti 600.000 ₺ (eşdeğer ürün 20.000 birim), dönüştürme maliyeti 340.000 ₺ (eşdeğer ürün 17.000 birim) olarak hesaplanmıştır. Dönem sonunda 4.000 birim yarı mamul kalmıştır; bu birimler DİMM bakımından %100, dönüştürme bakımından %25 tamamlanmıştır. Dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "50",
-      "B": "30",
-      "C": "20",
-      "D": "47",
-      "E": "55"
+      "A": "140.000",
+      "B": "200.000",
+      "C": "120.000",
+      "D": "50.000",
+      "E": "188.000"
     },
     "answer": "A",
-    "solution": "DİMM birim = 600.000 ÷ 20.000 = 30 ₺. Dönüştürme birim = 340.000 ÷ 17.000 = 20 ₺. Tam birim maliyeti = 30 + 20 = **50 ₺/birim**.",
+    "solution": "DİMM birim = 600.000 ÷ 20.000 = 30 ₺; dönüştürme birim = 340.000 ÷ 17.000 = 20 ₺. Yarı mamulün DİMM payı = 4.000 × 30 = 120.000 ₺; dönüştürme payı = (4.000 × %25) × 20 = 1.000 × 20 = 20.000 ₺. Toplam = 120.000 + 20.000 = **140.000 ₺**. (İki unsuru da %100 saymak 4.000 × 50 = 200.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-tam birim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "mmuh-safha-gen-0054",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Yukarıdaki üretimde (DİMM birim 30 ₺, dönüştürme birim 20 ₺) dönem sonu 4.000 birim yarı mamul (DİMM %100, dönüştürme %25) stoğunun maliyeti kaç ₺'dir?",
+    "stem": "Bir safhaya dönemde 20.000 birim girmiş, %10 oranında normal fire oluşmuş ve kalan birimler tamamlanmıştır. Safhanın toplam maliyeti 720.000 ₺'dir. Normal fire nedeniyle sağlam mamulün birim maliyeti, hiç fire olmaması durumuna göre kaç ₺ ARTMIŞTIR?",
     "options": {
-      "A": "120.000",
-      "B": "100.000",
-      "C": "200.000",
-      "D": "140.000",
-      "E": "160.000"
+      "A": "40",
+      "B": "36",
+      "C": "4",
+      "D": "72",
+      "E": "8"
     },
-    "answer": "D",
-    "solution": "DİMM payı = 4.000 × %100 × 30 = 120.000 ₺. Dönüştürme payı = 4.000 × %25 × 20 = 1.000 × 20 = 20.000 ₺. Toplam yarı mamul = 120.000 + 20.000 = **140.000 ₺**. (Kontrol: 800.000 + 140.000 = 940.000 = toplam maliyet ✓.)",
+    "answer": "C",
+    "solution": "Normal fire = 20.000 × %10 = 2.000 birim; sağlam üretim = 18.000 birim. Fireli durumda birim maliyet = 720.000 ÷ 18.000 = 40 ₺. Fire olmasaydı = 720.000 ÷ 20.000 = 36 ₺. Artış = 40 − 36 = **4 ₺**. Normal fire maliyeti sağlam birimlere yüklendiği için birim maliyeti yükseltir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yarı mamul ayrı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "mmuh-safha-gen-0056",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Bir safhada dönem içinde 800.000 ₺ maliyet oluşmuş; 18.000 birim tamamlanmış, dönem sonu 4.000 birim %50 tamamlanmış yarı mamul kalmıştır (tek tamamlanma derecesi varsayımı). Eşdeğer birim maliyet kaç ₺'dir?",
+    "stem": "Bir safhada dönem içinde 700.000 ₺ maliyet oluşmuştur. Dönemde 12.000 birim tamamlanmış, dönem sonunda %40 tamamlanmış 5.000 birim yarı mamul kalmıştır. Eşdeğer birim maliyet kaç ₺'dir?",
     "options": {
       "A": "50",
-      "B": "40",
-      "C": "44,44",
-      "D": "36",
-      "E": "20"
+      "B": "41,18",
+      "C": "58,33",
+      "D": "35",
+      "E": "56"
     },
-    "answer": "B",
-    "solution": "Eşdeğer ürün = 18.000 + (4.000 × %50) = 18.000 + 2.000 = 20.000 birim. Eşdeğer birim maliyet = 800.000 ÷ 20.000 = **40 ₺/birim**.",
+    "answer": "A",
+    "solution": "Eşdeğer ürün = 12.000 + (5.000 × %40) = 12.000 + 2.000 = 14.000 birim. Eşdeğer birim maliyet = 700.000 ÷ 14.000 = **50 ₺**. (Yarı mamulü fiziksel olarak eklemek 700.000 ÷ 17.000 = 41,18 ₺, hiç saymamak 58,33 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - eşdeğer birim maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - safha maliyeti (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null

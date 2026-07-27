@@ -135,20 +135,20 @@
     "id": "mmuh-mhk-gen-0007",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim satış fiyatı 100 ₺, birim değişken maliyeti 60 ₺ olan bir ürünün birim katkı payı kaç ₺'dir?",
+    "stem": "Bir işletme ürününü birim 150 ₺'ye satmakta; birim değişken maliyeti 90 ₺, aylık toplam sabit maliyeti 300.000 ₺'dir. Başabaş noktası satış miktarı kaç adettir?",
     "options": {
-      "A": "40",
-      "B": "60",
-      "C": "160",
-      "D": "100",
-      "E": "0"
+      "A": "5.000",
+      "B": "2.000",
+      "C": "3.333",
+      "D": "10.000",
+      "E": "4.000"
     },
     "answer": "A",
-    "solution": "Birim Katkı Payı = 100 − 60 = **40 ₺**.",
+    "solution": "Birim katkı payı = 150 − 90 = **60 ₺**. Başabaş miktar = Toplam sabit maliyet ÷ birim katkı payı = 300.000 ÷ 60 = **5.000 adet**. (Fiyata bölmek 2.000, değişkene bölmek 3.333 verir — ikisi de yanlış; bölen katkı payıdır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-katkı payı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - katkı payı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "mmuh-mhk-gen-0009",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim satış fiyatı 100 ₺, birim katkı payı 40 ₺ olan bir ürünün katkı payı oranı yüzde kaçtır?",
+    "stem": "Birim satış fiyatı 200 ₺, birim değişken maliyeti 120 ₺ ve toplam sabit maliyeti 480.000 ₺ olan bir işletmenin başabaş noktası satış TUTARI kaç ₺'dir?",
     "options": {
-      "A": "%250",
-      "B": "%60",
-      "C": "%40",
-      "D": "%140",
-      "E": "%4"
+      "A": "6.000",
+      "B": "1.200.000",
+      "C": "480.000",
+      "D": "2.400.000",
+      "E": "800.000"
     },
-    "answer": "C",
-    "solution": "Katkı Payı Oranı = 40 ÷ 100 = **%40**.",
+    "answer": "B",
+    "solution": "Birim katkı payı = 200 − 120 = 80 ₺; katkı payı oranı = 80 ÷ 200 = %40. Başabaş tutar = Sabit maliyet ÷ katkı payı oranı = 480.000 ÷ 0,40 = **1.200.000 ₺**. (Başabaş adet = 480.000 ÷ 80 = 6.000; tutar = 6.000 × 200 = 1.200.000 ₺ ile aynı.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-katkı payı oranı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - katkı payı oranı"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş tutar (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "mmuh-mhk-gen-0012",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 200.000 ₺, birim katkı payı 40 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 100 ₺, birim değişken maliyeti 60 ₺, toplam sabit maliyeti 200.000 ₺ olan bir işletme dönem sonunda 120.000 ₺ kâr hedeflemektedir. Bu hedef için satması gereken miktar kaç adettir?",
     "options": {
       "A": "8.000",
       "B": "5.000",
-      "C": "3.333",
-      "D": "50.000",
-      "E": "500.000"
+      "C": "3.000",
+      "D": "3.200",
+      "E": "800.000"
     },
-    "answer": "B",
-    "solution": "Başabaş Miktar = 200.000 ÷ 40 = **5.000 adet**. Bu kadar üründe toplam katkı payı (5.000 × 40 = 200.000) sabit maliyeti tam karşılar.",
+    "answer": "A",
+    "solution": "Birim katkı payı = 100 − 60 = 40 ₺. Hedef kâr için miktar = (Sabit maliyet + Hedef kâr) ÷ katkı payı = (200.000 + 120.000) ÷ 40 = 320.000 ÷ 40 = **8.000 adet**. (Yalnız başabaş 5.000; yalnız kârı bölmek 3.000 verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - hedef kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "mmuh-mhk-gen-0014",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 200.000 ₺, katkı payı oranı %40 olan bir işletmenin başabaş noktası satış tutarı kaç ₺'dir?",
+    "stem": "Birim satış fiyatı 80 ₺, birim değişken maliyeti 50 ₺, toplam sabit maliyeti 150.000 ₺ olan bir işletme dönemde 8.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
     "options": {
-      "A": "800.000",
-      "B": "80.000",
-      "C": "5.000",
-      "D": "200.000",
-      "E": "500.000"
+      "A": "240.000",
+      "B": "490.000",
+      "C": "10.000",
+      "D": "150.000",
+      "E": "90.000"
     },
     "answer": "E",
-    "solution": "Başabaş Tutar = 200.000 ÷ 0,40 = **500.000 ₺**. (Doğrulama: başabaş miktar 5.000 adet × 100 ₺ birim fiyat = 500.000 ₺.)",
+    "solution": "Birim katkı payı = 80 − 50 = 30 ₺. Toplam katkı payı = 8.000 × 30 = 240.000 ₺. Kâr = Toplam katkı payı − Sabit maliyet = 240.000 − 150.000 = **90.000 ₺**. (Sabiti düşmemek 240.000; değişkeni ihmal edip 8.000 × 80 − 150.000 = 490.000 verir — ikisi de yanlış.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş tutar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş tutar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "mmuh-mhk-gen-0019",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 120.000 ₺, birim katkı payı 20 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 120 ₺, birim değişken maliyeti 80 ₺, toplam sabit maliyeti 320.000 ₺ olan bir işletme cari dönemde 12.000 adet satmıştır. Güvenlik marjı (adet) kaçtır?",
     "options": {
-      "A": "6.000",
+      "A": "8.000",
       "B": "4.000",
-      "C": "2.400.000",
-      "D": "600",
-      "E": "3.000"
+      "C": "12.000",
+      "D": "2.667",
+      "E": "6.000"
     },
-    "answer": "A",
-    "solution": "Başabaş Miktar = 120.000 ÷ 20 = **6.000 adet**.",
+    "answer": "B",
+    "solution": "Birim katkı payı = 120 − 80 = 40 ₺. Başabaş miktar = 320.000 ÷ 40 = 8.000 adet. Güvenlik marjı = Fiili satış − Başabaş satış = 12.000 − 8.000 = **4.000 adet**. (Başabaşın kendisi 8.000; fiili satış 12.000 değil.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - güvenlik marjı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mmuh-mhk-gen-0022",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 200.000 ₺, birim katkı payı 40 ₺ olan bir işletme 80.000 ₺ kâr hedeflemektedir. Bu hedef için satması gereken miktar kaç adettir?",
+    "stem": "Birim katkı payı 50 ₺, toplam sabit maliyeti 400.000 ₺ olan bir işletme, vergi oranının %20 olarak dikkate alınacağı bir dönemde vergi SONRASI 160.000 ₺ net kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
     "options": {
-      "A": "5.000",
-      "B": "7.000",
-      "C": "2.000",
-      "D": "9.000",
-      "E": "3.500"
+      "A": "12.000",
+      "B": "11.200",
+      "C": "8.000",
+      "D": "4.000",
+      "E": "10.000"
     },
-    "answer": "B",
-    "solution": "Hedef Kâr için Miktar = (200.000 + 80.000) ÷ 40 = 280.000 ÷ 40 = **7.000 adet**.",
+    "answer": "A",
+    "solution": "Vergi öncesi (brüt) hedef kâr = Net kâr ÷ (1 − vergi oranı) = 160.000 ÷ 0,80 = 200.000 ₺. Gereken miktar = (Sabit + brüt kâr) ÷ katkı payı = (400.000 + 200.000) ÷ 50 = **12.000 adet**. (Vergiyi ihmal edip 160.000 kullanmak 11.200 verir — yanlış.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - vergili hedef kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "mmuh-mhk-gen-0023",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 40 ₺, toplam sabit maliyeti 200.000 ₺ olan bir işletme 8.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
+    "stem": "Birim satış fiyatı 60 ₺, birim değişken maliyeti 36 ₺, toplam sabit maliyeti 180.000 ₺ olan bir işletme dönemde 10.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
     "options": {
-      "A": "320.000",
-      "B": "520.000",
-      "C": "200.000",
-      "D": "120.000",
-      "E": "80.000"
+      "A": "240.000",
+      "B": "420.000",
+      "C": "60.000",
+      "D": "24.000",
+      "E": "180.000"
     },
-    "answer": "D",
-    "solution": "Toplam Katkı Payı = 8.000 × 40 = 320.000 ₺. Kâr = Katkı Payı − Sabit Maliyet = 320.000 − 200.000 = **120.000 ₺**.",
+    "answer": "C",
+    "solution": "Birim katkı payı = 60 − 36 = 24 ₺. Toplam katkı payı = 10.000 × 24 = 240.000 ₺. Kâr = 240.000 − 180.000 = **60.000 ₺**. (Sabiti düşmemek 240.000; değişkeni ihmal 600.000 − 180.000 = 420.000 verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "mmuh-mhk-gen-0027",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 210.000 ₺, birim katkı payı 30 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 250 ₺, birim değişken maliyeti 150 ₺, toplam sabit maliyeti 600.000 ₺ olan bir işletme 300.000 ₺ kâr hedeflemektedir. Gereken satış TUTARI kaç ₺'dir?",
     "options": {
-      "A": "4.000",
-      "B": "6.000",
-      "C": "7.000",
-      "D": "3.200",
-      "E": "8.000"
+      "A": "9.000",
+      "B": "2.250.000",
+      "C": "1.500.000",
+      "D": "900.000",
+      "E": "3.750.000"
     },
-    "answer": "C",
-    "solution": "Başabaş Noktası = 210.000 ÷ 30 = **7.000 birim**.",
+    "answer": "B",
+    "solution": "Birim katkı payı = 250 − 150 = 100 ₺; oran = 100 ÷ 250 = %40. Gereken tutar = (Sabit + Hedef kâr) ÷ katkı payı oranı = (600.000 + 300.000) ÷ 0,40 = **2.250.000 ₺**. (Yalnız başabaş tutarı 1.500.000 ₺'dir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - hedef kâr tutar (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "mmuh-mhk-gen-0028",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 160.000 ₺, katkı payı oranı %40 olan bir işletmenin başabaş noktası satış tutarı kaç ₺'dir?",
+    "stem": "Birim satış fiyatı 40 ₺, birim değişken maliyeti 24 ₺, toplam sabit maliyeti 240.000 ₺ olan bir işletme 120.000 ₺ kâr hedeflemektedir. Gereken satış TUTARI kaç ₺'dir?",
     "options": {
-      "A": "640.000",
-      "B": "64.000",
-      "C": "5.000",
-      "D": "160.000",
-      "E": "400.000"
+      "A": "900.000",
+      "B": "600.000",
+      "C": "360.000",
+      "D": "1.500.000",
+      "E": "562.500"
     },
-    "answer": "E",
-    "solution": "Başabaş Tutar = 160.000 ÷ 0,40 = **400.000 ₺**.",
+    "answer": "A",
+    "solution": "Birim katkı payı = 40 − 24 = 16 ₺; oran = 16 ÷ 40 = %40. Gereken tutar = (Sabit + Hedef kâr) ÷ katkı payı oranı = (240.000 + 120.000) ÷ 0,40 = **900.000 ₺**. (Yalnız başabaş tutarı 240.000 ÷ 0,40 = 600.000.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş tutar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş tutar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - hedef kâr tutar (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mmuh-mhk-gen-0032",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 200.000 ₺, katkı payı oranı %40 olan bir işletme 100.000 ₺ kâr hedeflemektedir. Bu hedef için gereken satış TUTARI kaç ₺'dir?",
+    "stem": "Birim satış fiyatı 100 ₺, birim değişken maliyeti 60 ₺, toplam sabit maliyeti 200.000 ₺ olan bir işletmede sabit maliyet 250.000 ₺'ye yükselmiştir. Diğer koşullar sabitken başabaş noktası satış miktarı kaç adet ARTAR?",
     "options": {
-      "A": "500.000",
-      "B": "1.000.000",
-      "C": "300.000",
-      "D": "750.000",
-      "E": "250.000"
+      "A": "6.250",
+      "B": "5.000",
+      "C": "50.000",
+      "D": "1.250",
+      "E": "625"
     },
     "answer": "D",
-    "solution": "Hedef Kâr için Tutar = (Sabit Maliyet + Hedef Kâr) ÷ Katkı Payı Oranı = (200.000 + 100.000) ÷ 0,40 = 300.000 ÷ 0,40 = **750.000 ₺**.",
+    "solution": "Birim katkı payı = 100 − 60 = 40 ₺. Eski başabaş = 200.000 ÷ 40 = 5.000; yeni başabaş = 250.000 ÷ 40 = 6.250. Artış = 6.250 − 5.000 = **1.250 adet**. (6.250 yeni başabaşın kendisi, artış değil.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr tutar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş duyarlılık (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "mmuh-mhk-gen-0037",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 240.000 ₺, birim katkı payı 30 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Bir ürünün satış fiyatı 200 ₺ ve katkı payı oranı %35'tir. İşletmenin toplam sabit maliyeti 490.000 ₺ olduğuna göre başabaş noktası satış miktarı kaç adettir?",
     "options": {
-      "A": "6.000",
-      "B": "8.000",
-      "C": "4.000",
-      "D": "50.000",
-      "E": "3.000"
+      "A": "2.450",
+      "B": "7.000",
+      "C": "3.500",
+      "D": "14.000",
+      "E": "4.900"
     },
     "answer": "B",
-    "solution": "Başabaş Noktası = 240.000 ÷ 30 = **8.000 birim**.",
+    "solution": "Birim katkı payı = Fiyat × katkı payı oranı = 200 × %35 = 70 ₺. Başabaş miktar = 490.000 ÷ 70 = **7.000 adet**. (Fiyata bölmek 2.450 verir; katkı payı 70 ₺'dir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş (orandan; çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "mmuh-mhk-gen-0038",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Toplam sabit maliyeti 240.000 ₺, birim katkı payı 48 ₺ olan bir işletme 96.000 ₺ kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 100 ₺, birim değişken maliyeti 60 ₺, toplam sabit maliyeti 240.000 ₺ olan bir işletmede birim değişken maliyet 68 ₺'ye yükselmiştir. Diğer koşullar sabitken yeni başabaş noktası satış miktarı kaç adettir?",
     "options": {
-      "A": "5.000",
-      "B": "2.000",
-      "C": "7.000",
+      "A": "6.000",
+      "B": "1.500",
+      "C": "3.529",
       "D": "8.000",
-      "E": "6.000"
+      "E": "7.500"
     },
-    "answer": "C",
-    "solution": "Hedef Kâr için Miktar = (240.000 + 96.000) ÷ 48 = 336.000 ÷ 48 = **7.000 adet**.",
+    "answer": "E",
+    "solution": "Yeni birim katkı payı = 100 − 68 = 32 ₺ (eskisi 40 ₺ idi). Yeni başabaş miktar = 240.000 ÷ 32 = **7.500 adet**. (Eski başabaş 240.000 ÷ 40 = 6.000 idi; değişken maliyet artışı katkı payını düşürüp başabaşı yükseltir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş duyarlılık (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "mmuh-mhk-gen-0039",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 48 ₺, toplam sabit maliyeti 240.000 ₺ olan bir işletme 6.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
+    "stem": "Bir işletme ürününü birim 150 ₺'ye satmakta ve toplam sabit maliyeti 300.000 ₺'dir. Dönemde 6.000 adet satıp 60.000 ₺ kâr elde ettiğine göre ürünün birim değişken maliyeti kaç ₺'dir?",
     "options": {
-      "A": "48.000",
-      "B": "288.000",
-      "C": "240.000",
-      "D": "528.000",
-      "E": "96.000"
+      "A": "90",
+      "B": "60",
+      "C": "100",
+      "D": "110",
+      "E": "50"
     },
     "answer": "A",
-    "solution": "Toplam Katkı Payı = 6.000 × 48 = 288.000 ₺. Kâr = 288.000 − 240.000 = **48.000 ₺**.",
+    "solution": "Kâr = Toplam katkı payı − Sabit maliyet olduğundan toplam katkı payı = 60.000 + 300.000 = 360.000 ₺. Birim katkı payı = 360.000 ÷ 6.000 = 60 ₺. Birim değişken maliyet = Satış fiyatı − katkı payı = 150 − 60 = **90 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birim değişken (ters; çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "mmuh-mhk-gen-0042",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 10 ₺, toplam sabit maliyeti 50.000 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 50 ₺, birim değişken maliyeti 30 ₺, toplam sabit maliyeti 240.000 ₺ olan bir işletme dönemde 16.000 adet satmıştır. Güvenlik marjı ORANI yüzde kaçtır?",
     "options": {
-      "A": "500.000",
-      "B": "3.333",
-      "C": "5.000",
-      "D": "10.000",
-      "E": "2.000"
+      "A": "%75",
+      "B": "%33,33",
+      "C": "%25",
+      "D": "%20",
+      "E": "%40"
     },
     "answer": "C",
-    "solution": "Başabaş Miktar = 50.000 ÷ 10 = **5.000 adet**.",
+    "solution": "Birim katkı payı = 50 − 30 = 20 ₺. Başabaş = 240.000 ÷ 20 = 12.000 adet. Güvenlik marjı = 16.000 − 12.000 = 4.000 adet; oran = 4.000 ÷ 16.000 = **%25**. (Başabaşın satışa oranı %75'tir, güvenlik marjı değil.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - güvenlik marjı oranı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "mmuh-mhk-gen-0044",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 10 ₺, toplam sabit maliyeti 50.000 ₺ olan bir işletme 30.000 ₺ kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
+    "stem": "Bir işletmenin başabaş noktası 5.000 adet, birim katkı payı 10 ₺'dir. İşletme dönemde başabaş noktasının 3.000 adet üzerinde (toplam 8.000 adet) satış yapmıştır. Dönem kârı kaç ₺'dir?",
     "options": {
-      "A": "5.000",
-      "B": "8.000",
-      "C": "3.000",
-      "D": "80.000",
-      "E": "2.000"
+      "A": "80.000",
+      "B": "30.000",
+      "C": "50.000",
+      "D": "3.000",
+      "E": "20.000"
     },
     "answer": "B",
-    "solution": "Hedef Kâr için Miktar = (50.000 + 30.000) ÷ 10 = 80.000 ÷ 10 = **8.000 adet**.",
+    "solution": "Başabaş noktasından sonraki her birimin katkı payı doğrudan kâra dönüşür (sabit maliyet zaten karşılanmıştır). Kâr = Başabaş üzeri miktar × birim katkı payı = 3.000 × 10 = **30.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - güvenlik marjı × katkı payı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "mmuh-mhk-gen-0046",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 10 ₺, toplam sabit maliyeti 50.000 ₺ olan bir işletme 7.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
+    "stem": "Bir işletmenin dönem toplam katkı payı 360.000 ₺, dönem kârı ise 60.000 ₺'dir. İşletmenin faaliyet (çalışma) kaldıracı derecesi kaçtır?",
     "options": {
-      "A": "20.000",
-      "B": "70.000",
-      "C": "50.000",
-      "D": "120.000",
-      "E": "30.000"
+      "A": "5",
+      "B": "0,17",
+      "C": "420.000",
+      "D": "6",
+      "E": "300.000"
     },
-    "answer": "A",
-    "solution": "Toplam Katkı Payı = 7.000 × 10 = 70.000 ₺. Kâr = 70.000 − 50.000 = **20.000 ₺**.",
+    "answer": "D",
+    "solution": "Faaliyet kaldıracı derecesi = Toplam katkı payı ÷ Kâr = 360.000 ÷ 60.000 = **6**. Yani satışlar %1 arttığında kâr yaklaşık %6 artar; kaldıraç, kârın satış değişimine duyarlılığını gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - faaliyet kaldıracı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "mmuh-mhk-gen-0049",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 80 ₺, toplam sabit maliyeti 400.000 ₺ olan bir işletme 160.000 ₺ kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
+    "stem": "Katkı payı oranı %40, toplam sabit maliyeti 480.000 ₺ olan bir işletme, vergi oranının %25 dikkate alınacağı bir dönemde vergi SONRASI 270.000 ₺ net kâr hedeflemektedir. Gereken satış TUTARI kaç ₺'dir?",
     "options": {
-      "A": "5.000",
-      "B": "7.000",
-      "C": "2.000",
-      "D": "9.000",
-      "E": "6.000"
+      "A": "2.100.000",
+      "B": "1.875.000",
+      "C": "1.200.000",
+      "D": "900.000",
+      "E": "2.400.000"
     },
-    "answer": "B",
-    "solution": "Hedef Kâr için Miktar = (400.000 + 160.000) ÷ 80 = 560.000 ÷ 80 = **7.000 adet**.",
+    "answer": "A",
+    "solution": "Vergi öncesi kâr = 270.000 ÷ (1 − 0,25) = 270.000 ÷ 0,75 = 360.000 ₺. Gereken tutar = (Sabit + brüt kâr) ÷ katkı payı oranı = (480.000 + 360.000) ÷ 0,40 = **2.100.000 ₺**. (Vergiyi ihmal edip 270.000 kullanmak 1.875.000 verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - vergili hedef kâr tutar (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "mmuh-mhk-gen-0051",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 12 ₺, toplam sabit maliyeti 120.000 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Bir işletmenin katkı payı oranı %20 ve başabaş noktası satış TUTARI 600.000 ₺'dir. Buna göre işletmenin toplam sabit maliyeti kaç ₺'dir?",
     "options": {
-      "A": "6.000",
-      "B": "10.000",
-      "C": "4.000",
-      "D": "50.000",
-      "E": "3.000"
+      "A": "600.000",
+      "B": "120.000",
+      "C": "3.000.000",
+      "D": "480.000",
+      "E": "150.000"
     },
     "answer": "B",
-    "solution": "Başabaş Noktası = 120.000 ÷ 12 = **10.000 birim**.",
+    "solution": "Başabaş tutar = Sabit maliyet ÷ katkı payı oranı olduğundan Sabit maliyet = Başabaş tutar × katkı payı oranı = 600.000 × 0,20 = **120.000 ₺**. (Oranı bölmek 3.000.000 verir — ters işlem, yanlış.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - sabit maliyet (ters; çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "mmuh-mhk-gen-0052",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 24 ₺, toplam sabit maliyeti 120.000 ₺ olan bir işletme 8.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
+    "stem": "Birim satış fiyatı 100 ₺, birim değişken maliyeti 76 ₺, toplam sabit maliyeti 120.000 ₺ olan bir işletme dönemde 8.000 adet satmıştır. Dönem kârı kaç ₺'dir?",
     "options": {
-      "A": "72.000",
-      "B": "192.000",
-      "C": "120.000",
-      "D": "312.000",
-      "E": "48.000"
+      "A": "192.000",
+      "B": "680.000",
+      "C": "24.000",
+      "D": "120.000",
+      "E": "72.000"
     },
-    "answer": "A",
-    "solution": "Toplam Katkı Payı = 8.000 × 24 = 192.000 ₺. Kâr = 192.000 − 120.000 = **72.000 ₺**.",
+    "answer": "E",
+    "solution": "Birim katkı payı = 100 − 76 = 24 ₺. Toplam katkı payı = 8.000 × 24 = 192.000 ₺. Kâr = 192.000 − 120.000 = **72.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "mmuh-mhk-gen-0057",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 30 ₺, toplam sabit maliyeti 180.000 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 90 ₺, birim değişken maliyeti 60 ₺, toplam sabit maliyeti 180.000 ₺ olan bir işletmenin başabaş noktası satış miktarı kaç adettir?",
     "options": {
-      "A": "6.000",
-      "B": "5.000",
-      "C": "4.000",
-      "D": "60.000",
-      "E": "3.000"
+      "A": "2.000",
+      "B": "3.000",
+      "C": "6.000",
+      "D": "12.000",
+      "E": "5.000"
     },
-    "answer": "A",
-    "solution": "Başabaş Miktar = 180.000 ÷ 30 = **6.000 adet**.",
+    "answer": "C",
+    "solution": "Birim katkı payı = 90 − 60 = 30 ₺. Başabaş miktar = 180.000 ÷ 30 = **6.000 adet**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-başabaş miktar; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - başabaş miktar"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - başabaş (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "mmuh-mhk-gen-0058",
     "ders": "maliyet_muhasebesi",
     "konu": "maliyet_hacim_kar",
-    "stem": "Birim katkı payı 30 ₺, toplam sabit maliyeti 180.000 ₺ olan bir işletme 90.000 ₺ kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
+    "stem": "Birim satış fiyatı 120 ₺, birim değişken maliyeti 90 ₺, toplam sabit maliyeti 180.000 ₺ olan bir işletme 90.000 ₺ kâr hedeflemektedir. Gereken satış miktarı kaç adettir?",
     "options": {
       "A": "6.000",
-      "B": "12.000",
-      "C": "3.000",
+      "B": "3.000",
+      "C": "2.250",
       "D": "9.000",
       "E": "7.500"
     },
     "answer": "D",
-    "solution": "Hedef Kâr için Miktar = (180.000 + 90.000) ÷ 30 = 270.000 ÷ 30 = **9.000 adet**.",
+    "solution": "Birim katkı payı = 120 − 90 = 30 ₺. Gereken miktar = (180.000 + 90.000) ÷ 30 = **9.000 adet**. (Yalnız başabaş 6.000.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-hedef kâr; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - hedef kâr"
+      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "legislationRef": "Maliyet muhasebesi - hedef kâr (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
