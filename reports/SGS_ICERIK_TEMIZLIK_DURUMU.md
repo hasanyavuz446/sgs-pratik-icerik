@@ -40,10 +40,11 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v168** (maliyet harder-kalibrasyon + denetim profil kalibrasyonu).
-Yerelde hazır ama **yayınlanmamış** (kullanıcı onayı bekliyor): manifest **v169** —
-muhasebe_standartlari kavramsal_cerceve + tms_1_sunulus, matematik 2 yeni konu.
-Yeni matematik konuları için ayrıca **yeni binary** gerekir (curriculum OTA'dan inmez).
+Canlı OTA: **v169** (matematik 2 yeni ileri konu + muhasebe_standartlari
+kavramsal_cerceve/tms_1_sunulus sayısal kalibrasyonu) — commit `6693b85`, 203 paket,
+API+CDN ve dosya hash'leri doğrulandı. Uygulama reposu commit `278ac08`.
+⚠️ Yeni matematik konularının telefonda görünmesi için ayrıca **yeni binary** gerekir
+(curriculum OTA'dan inmez); OTA yalnız kazanım/soru paketlerini taşır.
 
 ## Açık mimari kararı (kullanıcıya)
 
