@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "mat-fonk-gen-0001",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = √(x − 3) / (x − 5) fonksiyonunun en geniş tanım kümesi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "(3, 5) ∪ (5, ∞)",
+      "B": "[3, ∞)",
+      "C": "(5, ∞)",
+      "D": "[3, 5)",
+      "E": "[3, 5) ∪ (5, ∞)"
+    },
+    "answer": "E",
+    "solution": "Karekökün içi negatif olamaz: x − 3 ≥ 0 → x ≥ 3. Payda sıfır olamaz: x − 5 ≠ 0 → x ≠ 5. İki koşul birlikte alınır: x ≥ 3 ve x ≠ 5, yani [3, 5) ∪ (5, ∞).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0002",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f: ℝ → ℝ, f(x) = (a − 3)x² + (b + 2)x + 5 fonksiyonu sabit fonksiyon olduğuna göre a + b kaçtır?",
+    "options": {
+      "A": "5",
+      "B": "1",
+      "C": "−1",
+      "D": "3",
+      "E": "7"
+    },
+    "answer": "B",
+    "solution": "Sabit fonksiyonda x'li bütün terimlerin katsayısı sıfırdır: a − 3 = 0 → a = 3 ve b + 2 = 0 → b = −2. Buradan a + b = 3 + (−2) = 1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0003",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 3x − 1 (x ≥ 2) ve f(x) = x² + 1 (x < 2) biçiminde tanımlanan f fonksiyonu için f(5) + f(−1) toplamı kaçtır?",
+    "options": {
+      "A": "16",
+      "B": "18",
+      "C": "14",
+      "D": "20",
+      "E": "12"
+    },
+    "answer": "A",
+    "solution": "5 ≥ 2 olduğundan birinci kural geçerlidir: f(5) = 3·5 − 1 = 14. −1 < 2 olduğundan ikinci kural geçerlidir: f(−1) = (−1)² + 1 = 2. Toplam 14 + 2 = 16.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0004",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 2x − 7 fonksiyonunda f(a) = 9 olduğuna göre a kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "11",
+      "C": "2",
+      "D": "16",
+      "E": "8"
+    },
+    "answer": "E",
+    "solution": "f(a) = 2a − 7 = 9 yazılır. İki tarafa 7 eklenir: 2a = 16. İki taraf 2'ye bölünür: a = 8.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0005",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = ax + b doğrusal fonksiyonunda f(1) = 5 ve f(3) = 11 olduğuna göre f(6) kaçtır?",
+    "options": {
+      "A": "20",
+      "B": "17",
+      "C": "23",
+      "D": "18",
+      "E": "14"
+    },
+    "answer": "A",
+    "solution": "f(1) = a + b = 5 ve f(3) = 3a + b = 11 denklemleri taraf tarafa çıkarılır: 2a = 6 → a = 3. Buradan b = 5 − 3 = 2 bulunur. f(6) = 3·6 + 2 = 20.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0006",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Tanım kümesi {−1, 0, 2} olan f(x) = 3x + 1 fonksiyonunun görüntü kümesindeki elemanların toplamı kaçtır?",
+    "options": {
+      "A": "9",
+      "B": "3",
+      "C": "12",
+      "D": "6",
+      "E": "5"
+    },
+    "answer": "D",
+    "solution": "Her elemanın görüntüsü hesaplanır: f(−1) = −2, f(0) = 1, f(2) = 7. Görüntü kümesi {−2, 1, 7} olup elemanlar toplamı −2 + 1 + 7 = 6.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0007",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = x² − 4x + 7 fonksiyonunun alabileceği en küçük değer kaçtır?",
+    "options": {
+      "A": "7",
+      "B": "2",
+      "C": "4",
+      "D": "−3",
+      "E": "3"
+    },
+    "answer": "E",
+    "solution": "İfade tam kareye tamamlanır: x² − 4x + 7 = (x − 2)² + 3. Kare terim en küçük değerini x = 2 için sıfır olarak alır; bu durumda fonksiyonun değeri 3 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0008",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(2x − 1) = 6x + 5 olduğuna göre f(3) kaçtır?",
+    "options": {
+      "A": "23",
+      "B": "11",
+      "C": "13",
+      "D": "17",
+      "E": "29"
+    },
+    "answer": "D",
+    "solution": "İçerideki ifadenin 3 olması istenir: 2x − 1 = 3 → x = 2. Aynı x değeri sağ tarafta yerine konur: f(3) = 6·2 + 5 = 17.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0009",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Bir f fonksiyonunun birebir olması ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Görüntü kümesi ile değer kümesi her durumda eşit olmak zorundadır",
+      "B": "Farklı her iki elemanın görüntüsü de farklıdır",
+      "C": "Tanım kümesindeki her elemanın görüntüsü aynı değere eşit olmalıdır",
+      "D": "Tanım kümesi ile değer kümesinin eleman sayıları eşit olmak zorundadır",
+      "E": "Fonksiyonun grafiği her zaman orijinden geçmek durumundadır"
+    },
+    "answer": "B",
+    "solution": "Birebirlik tanımı: x₁ ≠ x₂ iken f(x₁) ≠ f(x₂) olmasıdır. Görüntü kümesinin değer kümesine eşit olması örtenliktir; her elemanın aynı görüntüye gitmesi ise sabit fonksiyondur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0010",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 2x + 1 ve g(x) = x² − 3 olduğuna göre (f∘g)(2) değeri kaçtır?",
+    "options": {
+      "A": "7",
+      "B": "22",
+      "C": "3",
+      "D": "6",
+      "E": "11"
+    },
+    "answer": "C",
+    "solution": "Önce içteki fonksiyon hesaplanır: g(2) = 2² − 3 = 1. Sonuç dıştaki fonksiyonda kullanılır: f(1) = 2·1 + 1 = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0011",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 3x − 2 ve g(x) = x + 4 olduğuna göre (g∘f)(5) değeri kaçtır?",
+    "options": {
+      "A": "23",
+      "B": "13",
+      "C": "27",
+      "D": "11",
+      "E": "17"
+    },
+    "answer": "E",
+    "solution": "İçteki fonksiyon f'tir: f(5) = 3·5 − 2 = 13. Bu değer g'de yerine konur: g(13) = 13 + 4 = 17.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0012",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayılar toplamı kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "9",
+      "C": "5",
+      "D": "4",
+      "E": "7"
+    },
+    "answer": "C",
+    "solution": "(f∘g)(x) = f(2x) = (2x)² + 1 = 4x² + 1 elde edilir. Katsayılar toplamı, ifadede x yerine 1 yazılarak bulunur: 4 + 1 = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0013",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(f∘g)(x) = 6x + 7 ve g(x) = 2x + 1 olduğuna göre f(2) kaçtır?",
+    "options": {
+      "A": "19",
+      "B": "13",
+      "C": "7",
+      "D": "16",
+      "E": "10"
+    },
+    "answer": "E",
+    "solution": "f(2x + 1) = 6x + 7 yazılır. İçerideki ifadenin 2 olması için 2x + 1 = 2 → x = 1/2 alınır. Bu değer sağ tarafta yerine konur: f(2) = 6·(1/2) + 7 = 10.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0014",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "h(x) = x² − 1 ve g(x) = 3x + 2 olduğuna göre (h∘g)(−1) değeri kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "0",
+      "C": "−1",
+      "D": "3",
+      "E": "8"
+    },
+    "answer": "B",
+    "solution": "İçteki fonksiyon hesaplanır: g(−1) = 3·(−1) + 2 = −1. Bu değer h'de yerine konur: h(−1) = (−1)² − 1 = 0.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0015",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 1 / (x − 2) ve g(x) = x + 3 olduğuna göre (f∘g)(4) değeri kaçtır?",
+    "options": {
+      "A": "1/2",
+      "B": "1/7",
+      "C": "1/5",
+      "D": "5",
+      "E": "1/4"
+    },
+    "answer": "C",
+    "solution": "İçteki fonksiyon hesaplanır: g(4) = 4 + 3 = 7. Bu değer f'te yerine konur: f(7) = 1 / (7 − 2) = 1/5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0016",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 2x ve g(x) = x − 5 olduğuna göre (f∘g∘f)(3) değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "−4",
+      "D": "1",
+      "E": "12"
+    },
+    "answer": "A",
+    "solution": "Bileşke içten dışa uygulanır: f(3) = 6, ardından g(6) = 6 − 5 = 1, en son f(1) = 2·1 = 2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0017",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 3x − 9 olduğuna göre f⁻¹(6) değeri kaçtır?",
+    "options": {
+      "A": "9",
+      "B": "5",
+      "C": "3",
+      "D": "15",
+      "E": "1"
+    },
+    "answer": "B",
+    "solution": "f⁻¹(6) aranırken f(x) = 6 denklemi çözülür: 3x − 9 = 6 → 3x = 15 → x = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0018",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = (2x + 1) / (x − 3) olduğuna göre f⁻¹(3) değeri kaçtır?",
+    "options": {
+      "A": "7",
+      "B": "2",
+      "C": "−10",
+      "D": "10",
+      "E": "5"
+    },
+    "answer": "D",
+    "solution": "f(x) = 3 denklemi kurulur: (2x + 1) / (x − 3) = 3. İçler dışlar çarpılır: 2x + 1 = 3x − 9. Buradan x = 10 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0019",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = x³ + 2 olduğuna göre f⁻¹(29) değeri kaçtır?",
+    "options": {
+      "A": "27",
+      "B": "3",
+      "C": "9",
+      "D": "31",
+      "E": "5"
+    },
+    "answer": "B",
+    "solution": "f(x) = 29 denklemi çözülür: x³ + 2 = 29 → x³ = 27 → x = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0020",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 2x + 7 olduğuna göre f⁻¹(x) aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "(x + 7) / 2",
+      "B": "(x − 7) / 2",
+      "C": "2x − 7",
+      "D": "1 / (2x + 7)",
+      "E": "(7 − x) / 2"
+    },
+    "answer": "B",
+    "solution": "y = 2x + 7 eşitliğinde x çekilir: 2x = y − 7 → x = (y − 7) / 2. Değişken adı x'e çevrilir: f⁻¹(x) = (x − 7) / 2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0021",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹(21) değeri kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "5",
+      "C": "1",
+      "D": "7",
+      "E": "9"
+    },
+    "answer": "A",
+    "solution": "Önce bileşke yazılır: (f∘g)(x) = 5(x + 2) − 4 = 5x + 6. Sonra 5x + 6 = 21 denklemi çözülür: 5x = 15 → x = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0022",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Her a, b gerçel sayısı için a ⊗ b = a² − 2b biçiminde tanımlanan işleme göre 3 ⊗ 5 kaçtır?",
+    "options": {
+      "A": "19",
+      "B": "1",
+      "C": "−4",
+      "D": "−1",
+      "E": "11"
+    },
+    "answer": "D",
+    "solution": "Tanımda a yerine 3, b yerine 5 yazılır: 3 ⊗ 5 = 3² − 2·5 = 9 − 10 = −1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0023",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "a △ b işlemi, a > b için a² + b; a ≤ b için 2b − a biçiminde tanımlanmıştır. Buna göre (5 △ 2) + (1 △ 4) toplamı kaçtır?",
+    "options": {
+      "A": "34",
+      "B": "30",
+      "C": "36",
+      "D": "27",
+      "E": "41"
+    },
+    "answer": "A",
+    "solution": "5 > 2 olduğundan birinci kural: 5 △ 2 = 5² + 2 = 27. 1 ≤ 4 olduğundan ikinci kural: 1 △ 4 = 2·4 − 1 = 7. Toplam 27 + 7 = 34.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0024",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "x ≠ y olmak üzere x ✻ y = (x + y) / (x − y) biçiminde tanımlanan işleme göre 7 ✻ 3 kaçtır?",
+    "options": {
+      "A": "2/5",
+      "B": "10",
+      "C": "4/10",
+      "D": "−5/2",
+      "E": "5/2"
+    },
+    "answer": "E",
+    "solution": "Tanımda x yerine 7, y yerine 3 yazılır: 7 ✻ 3 = (7 + 3) / (7 − 3) = 10/4 = 5/2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0025",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "a ⊙ b = 3a − 2b biçiminde tanımlanan işlemde a ⊙ 4 = 7 olduğuna göre a kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "−5",
+      "D": "5",
+      "E": "15"
+    },
+    "answer": "D",
+    "solution": "Tanım uygulanır: 3a − 2·4 = 7 → 3a − 8 = 7 → 3a = 15 → a = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0026",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "2ˣ⁺³ = 32 denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "5",
+      "C": "3",
+      "D": "8",
+      "E": "4"
+    },
+    "answer": "A",
+    "solution": "Sağ taraf aynı tabana çevrilir: 32 = 2⁵. Tabanlar eşit olduğundan üsler eşitlenir: x + 3 = 5 → x = 2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0027",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "3²ˣ⁻¹ = 27 denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "3",
+      "C": "2",
+      "D": "4",
+      "E": "5"
+    },
+    "answer": "C",
+    "solution": "27 = 3³ yazılır. Tabanlar eşit olduğundan üsler eşitlenir: 2x − 1 = 3 → 2x = 4 → x = 2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0028",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(2³ · 2⁵) / 2⁶ işleminin sonucu kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "16",
+      "D": "4",
+      "E": "64"
+    },
+    "answer": "D",
+    "solution": "Çarpmada üsler toplanır: 2³ · 2⁵ = 2⁸. Bölmede üsler çıkarılır: 2⁸ / 2⁶ = 2² = 4.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0029",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "9ˣ = 27 denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "2/3",
+      "B": "3",
+      "C": "3/2",
+      "D": "1/3",
+      "E": "9/2"
+    },
+    "answer": "C",
+    "solution": "İki taraf 3 tabanına çevrilir: (3²)ˣ = 3³ → 3²ˣ = 3³. Üsler eşitlenir: 2x = 3 → x = 3/2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0030",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "5ˣ = 3 olduğuna göre 25ˣ değeri kaçtır?",
+    "options": {
+      "A": "6",
+      "B": "15",
+      "C": "9",
+      "D": "10",
+      "E": "27"
+    },
+    "answer": "C",
+    "solution": "25 = 5² olduğundan 25ˣ = (5²)ˣ = (5ˣ)² yazılır. Verilen değer yerine konur: 3² = 9.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0031",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(0,2)⁻² işleminin sonucu kaçtır?",
+    "options": {
+      "A": "0,04",
+      "B": "−25",
+      "C": "1/25",
+      "D": "5",
+      "E": "25"
+    },
+    "answer": "E",
+    "solution": "0,2 = 1/5 yazılır. Negatif üs ters çevirir: (1/5)⁻² = 5² = 25.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0032",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "4ˣ⁺¹ = 8ˣ⁻¹ denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "5",
+      "E": "7"
+    },
+    "answer": "D",
+    "solution": "İki taraf 2 tabanına çevrilir: 2^(2x+2) = 2^(3x−3). Üsler eşitlenir: 2x + 2 = 3x − 3 → x = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0033",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₂(3x − 2) = 4 denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "6",
+      "B": "2",
+      "C": "4",
+      "D": "8",
+      "E": "3"
+    },
+    "answer": "A",
+    "solution": "Logaritma üstel biçime çevrilir: 3x − 2 = 2⁴ = 16. Buradan 3x = 18 → x = 6.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0034",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₅125 işleminin sonucu kaçtır?",
+    "options": {
+      "A": "5",
+      "B": "25",
+      "C": "1/3",
+      "D": "2",
+      "E": "3"
+    },
+    "answer": "E",
+    "solution": "125 = 5³ olduğundan log₅125 = log₅5³ = 3 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0035",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log2 = a ve log3 = b olduğuna göre log12 ifadesinin a ve b türünden eşiti nedir?",
+    "options": {
+      "A": "a + 2b",
+      "B": "a + b",
+      "C": "2a + b",
+      "D": "2ab",
+      "E": "a·b²"
+    },
+    "answer": "C",
+    "solution": "12 çarpanlarına ayrılır: 12 = 2² · 3. Çarpımın logaritması toplanır, üs öne çıkar: log12 = 2log2 + log3 = 2a + b.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0036",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₃81 − log₂16 işleminin sonucu kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "0",
+      "C": "2",
+      "D": "−4",
+      "E": "8"
+    },
+    "answer": "B",
+    "solution": "81 = 3⁴ olduğundan log₃81 = 4; 16 = 2⁴ olduğundan log₂16 = 4. Fark 4 − 4 = 0.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0037",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "ln(1/e³) işleminin sonucu kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "−3",
+      "C": "1/3",
+      "D": "−1/3",
+      "E": "e³"
+    },
+    "answer": "B",
+    "solution": "Negatif üs kuralı uygulanır: 1/e³ = e⁻³. Doğal logaritmanın tabanı e olduğundan ln e⁻³ = −3 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0038",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₄x = −2 olduğuna göre x kaçtır?",
+    "options": {
+      "A": "16",
+      "B": "−16",
+      "C": "1/8",
+      "D": "−1/16",
+      "E": "1/16"
+    },
+    "answer": "E",
+    "solution": "Üstel biçime geçilir: x = 4⁻². Negatif üs ters çevirir: x = 1/4² = 1/16.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0039",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₂8 + log₃(1/9) işleminin sonucu kaçtır?",
+    "options": {
+      "A": "5",
+      "B": "−1",
+      "C": "1",
+      "D": "3",
+      "E": "0"
+    },
+    "answer": "C",
+    "solution": "8 = 2³ olduğundan log₂8 = 3. 1/9 = 3⁻² olduğundan log₃(1/9) = −2. Toplam 3 + (−2) = 1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0040",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₆2 + log₆3 işleminin sonucu kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "6",
+      "C": "log₆5",
+      "D": "0",
+      "E": "5"
+    },
+    "answer": "A",
+    "solution": "Aynı tabanlı logaritmaların toplamı, çarpımın logaritmasına eşittir: log₆2 + log₆3 = log₆(2·3) = log₆6 = 1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0041",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log x = 3 olduğuna göre log(100x) değeri kaçtır?",
+    "options": {
+      "A": "6",
+      "B": "300",
+      "C": "4",
+      "D": "103",
+      "E": "5"
+    },
+    "answer": "E",
+    "solution": "Çarpımın logaritması toplanır: log(100x) = log100 + log x. On tabanında log100 = 2 olduğundan sonuç 2 + 3 = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0042",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₂(x² − 3x) = 2 denklemini sağlayan x değerlerinin toplamı kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "3",
+      "C": "−1",
+      "D": "5",
+      "E": "1"
+    },
+    "answer": "B",
+    "solution": "Üstel biçime geçilir: x² − 3x = 2² = 4 → x² − 3x − 4 = 0. Kökler x = 4 ve x = −1 olup her ikisi de x² − 3x > 0 koşulunu sağlar. Toplamları 4 + (−1) = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0043",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "log₃(x + 1) + log₃(x − 1) = 1 denklemini sağlayan x kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "−2",
+      "C": "2",
+      "D": "3",
+      "E": "1"
+    },
+    "answer": "C",
+    "solution": "Toplam tek logaritmada birleştirilir: log₃(x² − 1) = 1 → x² − 1 = 3 → x² = 4. Kökler ±2'dir; logaritmanın tanımlı olması için x > 1 gerektiğinden x = 2 alınır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0044",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(x² − 9) / (x² − x − 6) ifadesinin sadeleştirilmiş biçimi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "(x − 3) / (x + 2)",
+      "B": "(x + 3) / (x − 2)",
+      "C": "(x + 3) / (x + 2)",
+      "D": "(x + 2) / (x + 3)",
+      "E": "(x − 3) / (x − 2)"
+    },
+    "answer": "C",
+    "solution": "Pay iki kare farkıdır: x² − 9 = (x − 3)(x + 3). Payda çarpanlarına ayrılır: x² − x − 6 = (x − 3)(x + 2). Ortak (x − 3) çarpanı sadeleşir ve (x + 3)/(x + 2) kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0045",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(4x² − 12xy + 9y²) / (2x² − xy − 3y²) ifadesinin sadeleştirilmiş biçimi hangisidir?",
+    "options": {
+      "A": "(2x − 3y) / (x + y)",
+      "B": "(2x + 3y) / (x + y)",
+      "C": "(2x − 3y) / (x − y)",
+      "D": "(x + y) / (2x − 3y)",
+      "E": "(2x − 3y) / (x + 3y)"
+    },
+    "answer": "A",
+    "solution": "Pay tam karedir: 4x² − 12xy + 9y² = (2x − 3y)². Payda çarpanlarına ayrılır: 2x² − xy − 3y² = (2x − 3y)(x + y). Ortak çarpan sadeleşir ve (2x − 3y)/(x + y) kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0046",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "a + b = 7 ve a·b = 10 olduğuna göre a² + b² kaçtır?",
+    "options": {
+      "A": "49",
+      "B": "39",
+      "C": "19",
+      "D": "29",
+      "E": "24"
+    },
+    "answer": "D",
+    "solution": "Özdeşlik kullanılır: (a + b)² = a² + 2ab + b². Buradan a² + b² = (a + b)² − 2ab yazılır: 7² − 2·10 = 49 − 20 = 29.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0047",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "x − 1/x = 3 olduğuna göre x² + 1/x² kaçtır?",
+    "options": {
+      "A": "9",
+      "B": "7",
+      "C": "12",
+      "D": "11",
+      "E": "6"
+    },
+    "answer": "D",
+    "solution": "Verilen eşitliğin karesi alınır: (x − 1/x)² = x² − 2 + 1/x² = 9. Buradan x² + 1/x² = 9 + 2 = 11.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0048",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "(x³ − 8) / (x − 2) ifadesinin x = 1 için değeri kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "1",
+      "C": "7",
+      "D": "−7",
+      "E": "5"
+    },
+    "answer": "C",
+    "solution": "Pay küp farkıdır: x³ − 8 = (x − 2)(x² + 2x + 4). Ortak çarpan sadeleşir ve x² + 2x + 4 kalır. x = 1 için 1 + 2 + 4 = 7.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0049",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Analitik düzlemde A(2, −1) ve B(6, 2) noktaları arasındaki uzaklık kaç birimdir?",
+    "options": {
+      "A": "7",
+      "B": "5",
+      "C": "√7",
+      "D": "25",
+      "E": "√13"
+    },
+    "answer": "B",
+    "solution": "Uzaklık formülü uygulanır: |AB| = √((6 − 2)² + (2 − (−1))²) = √(16 + 9) = √25 = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0050",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Analitik düzlemde A(−3, 4) ve B(5, −2) noktalarını birleştiren doğru parçasının orta noktasının koordinatları hangisidir?",
+    "options": {
+      "A": "(2, 2)",
+      "B": "(1, 3)",
+      "C": "(4, −3)",
+      "D": "(1, 1)",
+      "E": "(−1, 1)"
+    },
+    "answer": "D",
+    "solution": "Orta nokta koordinatları uç noktaların ortalamasıdır: x = (−3 + 5)/2 = 1 ve y = (4 + (−2))/2 = 1. Orta nokta (1, 1) olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0051",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "3x − 4y + 12 = 0 doğrusunun eğimi kaçtır?",
+    "options": {
+      "A": "3/4",
+      "B": "−3/4",
+      "C": "4/3",
+      "D": "−4/3",
+      "E": "3"
+    },
+    "answer": "A",
+    "solution": "Denklemde y yalnız bırakılır: 4y = 3x + 12 → y = (3/4)x + 3. Eğim, x'in katsayısı olan 3/4'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0052",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Analitik düzlemde (0, 3) ve (−2, 0) noktalarından geçen doğrunun denklemi hangisidir?",
+    "options": {
+      "A": "3x + 2y − 6 = 0",
+      "B": "2x − 3y + 6 = 0",
+      "C": "3x − 2y − 6 = 0",
+      "D": "2x + 3y − 6 = 0",
+      "E": "3x − 2y + 6 = 0"
+    },
+    "answer": "E",
+    "solution": "Eğim hesaplanır: m = (3 − 0) / (0 − (−2)) = 3/2. y kesişimi 3 olduğundan y = (3/2)x + 3 yazılır. İki taraf 2 ile çarpılıp düzenlenirse 3x − 2y + 6 = 0 elde edilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0053",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "P(2, 3) noktasının 3x + 4y − 11 = 0 doğrusuna uzaklığı kaç birimdir?",
+    "options": {
+      "A": "7/5",
+      "B": "7",
+      "C": "5/7",
+      "D": "1/5",
+      "E": "7/25"
+    },
+    "answer": "A",
+    "solution": "Noktadan doğruya uzaklık formülü uygulanır: |3·2 + 4·3 − 11| / √(3² + 4²) = |6 + 12 − 11| / 5 = 7/5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0054",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "y = 2x − 5 doğrusuna paralel olan ve (1, 4) noktasından geçen doğrunun y eksenini kestiği noktanın ordinatı kaçtır?",
+    "options": {
+      "A": "−5",
+      "B": "4",
+      "C": "6",
+      "D": "2",
+      "E": "−2"
+    },
+    "answer": "D",
+    "solution": "Paralel doğruların eğimleri eşittir: m = 2. Doğru y = 2x + n biçimindedir; (1, 4) yerine konur: 4 = 2 + n → n = 2. y eksenini (0, 2) noktasında keser.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0055",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Eğimi −1/3 olan bir doğruya dik olan doğrunun eğimi kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "−3",
+      "C": "1/3",
+      "D": "−1/3",
+      "E": "1"
+    },
+    "answer": "A",
+    "solution": "Dik doğruların eğimleri çarpımı −1'dir: (−1/3)·m = −1 → m = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0056",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "x² + y² − 6x + 8y = 0 çemberinin yarıçapı kaç birimdir?",
+    "options": {
+      "A": "25",
+      "B": "5",
+      "C": "7",
+      "D": "√7",
+      "E": "10"
+    },
+    "answer": "B",
+    "solution": "İfade tam kareye tamamlanır: (x − 3)² + (y + 4)² = 9 + 16 = 25. Sağ taraf r² olduğundan r = √25 = 5 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0057",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "y = x² − 6x + 5 parabolünün tepe noktasının koordinatları hangisidir?",
+    "options": {
+      "A": "(3, 4)",
+      "B": "(3, −4)",
+      "C": "(−3, −4)",
+      "D": "(6, 5)",
+      "E": "(3, 5)"
+    },
+    "answer": "B",
+    "solution": "Tepe noktasının apsisi x = −b/(2a) = 6/2 = 3'tür. Ordinat için x = 3 yerine konur: y = 9 − 18 + 5 = −4. Tepe noktası (3, −4) olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0058",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "y = x² − 4 parabolünün x eksenini kestiği iki nokta arasındaki uzaklık kaç birimdir?",
+    "options": {
+      "A": "2",
+      "B": "8",
+      "C": "16",
+      "D": "4",
+      "E": "√4"
+    },
+    "answer": "D",
+    "solution": "x eksenini kesim için y = 0 alınır: x² − 4 = 0 → x = −2 ve x = 2. İki nokta arasındaki uzaklık |2 − (−2)| = 4 birimdir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0059",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "Köşeleri A(1, 2), B(5, 2) ve C(5, 6) olan üçgenin alanı kaç birim karedir?",
+    "options": {
+      "A": "16",
+      "B": "4",
+      "C": "12",
+      "D": "10",
+      "E": "8"
+    },
+    "answer": "E",
+    "solution": "AB kenarı yataydır ve uzunluğu 5 − 1 = 4'tür; BC kenarı düşeydir ve uzunluğu 6 − 2 = 4'tür. Bu iki kenar B köşesinde diktir, dolayısıyla alan (4·4)/2 = 8 birim karedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-fonk-gen-0060",
+    "ders": "matematik",
+    "konu": "fonksiyon_ustel_logaritma_analitik",
+    "stem": "2x + 3y = 12 doğrusunun eksenlerle oluşturduğu üçgenin alanı kaç birim karedir?",
+    "options": {
+      "A": "24",
+      "B": "6",
+      "C": "12",
+      "D": "10",
+      "E": "18"
+    },
+    "answer": "C",
+    "solution": "y = 0 için 2x = 12 → x = 6; x = 0 için 3y = 12 → y = 4. Dik kenarları 6 ve 4 olan üçgenin alanı (6·4)/2 = 12 birim karedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]

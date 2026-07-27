@@ -11,8 +11,13 @@ Son güncelleme: 23 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 104 konu · 6240 soru.** Tamamlanan: **35 / 104 konu = %33,7**
-(finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅).
+**16 ders · 106 konu · 6360 soru.** Tamamlanan: **39 / 106 konu = %36,8**
+(finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
+muhasebe_standartlari 2/17 🔵 · matematik 2 yeni konu ✅).
+
+⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
+(aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
+göre yazıldığı için tamamlanmış sayılır.
 Yaklaşım dersin doğasına göre seçiliyor: sayısal derslerde **harder (çok-adımlı) kalibrasyon**,
 kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül oranı) ve anlamsal denetim.
 
@@ -22,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 17 | 0 | ⬜ |
+| 5 | muhasebe_standartlari | 17 | 2 | 🔵 SAYISAL KALİBRASYON. kavramsal_cerceve (20) + tms_1_sunulus (19) — sayısal %0→%30 / %0→%21, öncüllü %16→%10 / %20→%10; builder 2 paket/39; 15 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -30,12 +35,15 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 10 | vergi_hukuku | 11 | 0 | ⬜ |
 | 11 | ekonomi | 3 | 0 | ⬜ |
 | 12 | maliye | 3 | 0 | ⬜ |
-| 13 | turkce | 3 | 0 | ⬜ |
-| 14 | matematik | 3 | 0 | ⬜ |
+| 13 | turkce | 3 | 0 | ⬜ (kör %28-30, öncüllü %0 — profil kalibrasyonu bekliyor) |
+| 14 | matematik | 5 | 2 | ✅ **KAPSAM AÇIĞI KAPATILDI** — 2 yeni konu / 120 soru (ileri matematik); mevcut 3 konu ölçüldü, zaten temiz (kör %19-21, boy 1/0) |
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v167** (FM Kur+KDV v166 + denetim_raporu/mesleki_degerler_etik boy-cilası v167).
+Canlı OTA: **v168** (maliyet harder-kalibrasyon + denetim profil kalibrasyonu).
+Yerelde hazır ama **yayınlanmamış** (kullanıcı onayı bekliyor): manifest **v169** —
+muhasebe_standartlari kavramsal_cerceve + tms_1_sunulus, matematik 2 yeni konu.
+Yeni matematik konuları için ayrıca **yeni binary** gerekir (curriculum OTA'dan inmez).
 
 ## Açık mimari kararı (kullanıcıya)
 
@@ -285,7 +293,55 @@ temel ilke ve bağımsızlık tehditleri, COSO iç kontrol çerçevesi, denetim 
 denetim kanıtı ve teknikleri, örnekleme ile dokümantasyon; biçim kalibrasyonu için
 `reports/SGS_CIKMIS_SORULAR_ANALIZI_2026-07-22.md`.
 
-**Sonraki ders:** #5 **muhasebe_standartlari** (17 konu — programın en büyük dersi).
+## Ders 5 — Muhasebe Standartları: 1/17 🔵 SAYISAL KALİBRASYON
+
+Kapsam denetimi: 17 konu (kavramsal çerçeve + 16 TMS/TFRS) mekanik olarak temiz — 17/17 paket
+FATAL 0/UYARI 0, klon 0, kör %20-30.
+
+⚠️ **Ölçülen profil sapması (bu dersin asıl kusuru, denetimdekinden farklı):**
+
+| Ölçüt | Havuzda | 2026 SGS (FM + standartlar bloğu) |
+|---|---:|---:|
+| Sayısal senaryo | **%6** | **%57,7** |
+| Öncüllü | %15 | %3,8 |
+| Olumsuz kök | %0 | %9,6 |
+| Medyan kök | ~105 | 295 |
+
+Yani bu derste kusur **hesap/uygulama eksikliğidir**: gerçek sınavda standart soruları ağırlıklı
+olarak sayısal uygulama iken havuz neredeyse tümüyle tanım/kavram sorusundan oluşuyor. Bu nedenle
+denetimdeki "olumsuz kök" reçetesi değil, **sayısal senaryo kalibrasyonu** uygulanıyor: kavram
+soruları, standardın hükmünü **uygulatan** hesap senaryolarına çevriliyor ve öncül oranı düşürülüyor.
+
+**kavramsal_cerceve (20 yama)** — 16 kavram sorusu sayısal senaryoya, 4 öncüllü soru tekil yapıya
+çevrildi. Sonuç: sayısal senaryo **%0 → %30**, öncüllü **%16 → %10**, medyan kök 82 → 100,
+kör öğrenci %22 (korundu), boy 20/16 → **14/12**, tekrar 0. Sayısal alanlar konunun **gerçek
+uygulama alanlarından** seçildi (zorlama yapılmadı): sermayenin korunması (finansal ↔ fiziki kâr
+farkı ve 2.000 ₺'lik özkaynak düzeltmesi), dört ölçüm esasının aynı varlık üzerinde ayrıştırılması
+(tarihi maliyet / gerçeğe uygun değer — işlem maliyeti düşülmez / kullanım değeri — işletmeye özgü /
+cari maliyet — giriş fiyatı + işlem maliyeti), özkaynak = varlık − borç, gelir-gider tanımından
+dönem kârı (ortak katkı ve dağıtımları düzeltilerek), 2018 Çerçevesi'nin **olasılık eşiği içermeyen**
+muhasebeleştirme ölçütü, kontrol kaybında tablo dışı bırakma ve kazanç, netleştirme yasağı.
+Konunun doğası gereği %57,7 hedeflenmedi; hedef anlamlı yaklaşmaydı. İdempotent builder:
+`tools/sgs/builders/build_standards_numeric_calibration.py` (`--check` temiz).
+
+**tms_1_sunulus (19 yama)** — 12 kavram sorusu sayısal senaryoya, 6 öncüllü soru tekil yapıya
+çevrildi; ayrıca öncül dağılımı uyarısını gidermek için 1 öncüllü soru **"Yalnız X" doğru** olacak
+biçimde yeniden yazıldı. Sonuç: sayısal senaryo **%0 → %21**, öncüllü **%20 → %10** (havuzun en
+yüksek öncül oranıydı), medyan kök 88 → 116, kör öğrenci %21 (korundu), boy 18/12 → **16/11**,
+tekrar 0, öncül uyarısı **0**. Sayısal alanlar TMS 1'in gerçek uygulama noktalarından seçildi:
+dönen varlık ve **kısa vadeli yükümlülük toplamı** (uzun vadeli kredinin **cari taksiti** kısa
+vadeye alınır — klasik tuzak), 18 aylık **faaliyet döngüsünde** 12 ayı aşan stokun dönen sayılması,
+**ertelenmiş verginin dönen olarak sınıflandırılamaması**, toplam kapsamlı gelir, DKG'nin
+**yeniden sınıflandırılacak ↔ sınıflandırılmayacak** ayrımı, işlev esaslı sunumdan faaliyet kârı
+(finansman gideri hariç), kâr/zararın **ana ortaklık ↔ kontrol gücü olmayan paylar** dağılımı,
+özkaynak değişim tablosundan dönem sonu özkaynak, netleştirme yasağı ↔ hasılattan iade düşülmesi.
+
+⚠️ **Ölçüt notu:** "sayısal" oranı, cevabı rakam içeren soruları sayan dar bir ölçüttür. Kökünde
+en az iki ₺ tutarı bulunan (yani öğrenciye gerçek hesap yaptıran) soru oranı kavramsal_cerceve'de
+**%30**, tms_1_sunulus'ta **%21**'dir; cevabı kavramsal ifade olan uygulama soruları bu sayıma
+girmez. Raporlanan oranlar bu nedenle gerçek uygulama ağırlığının alt sınırıdır.
+
+**Sonraki konu:** `tms_21_kur_degisimi` (sayısal %0, kör %30).
 
 Not — kullanılan teknik dersler: (1) öncüllü sorularda seçenek metni kombinasyon olduğu için
 harf permütasyonu yapılmaz, hedef harf tasarımda sabitlenir; (2) kombinasyon tespitinde
@@ -295,6 +351,97 @@ gerekçesiyle yazmak → "en uzunu seç" tell'i; hepsini kısaltmak → "en kıs
 ortalamak → "iki ucu ele, ortadan tahmin et" tell'i. Doğru yaklaşım **dağılımdır** (bir kısmı uzun,
 bir kısmı kısa, kalanı orta) ve tasarım betiğine "doğru şık tek-en-uzun/tek-en-kısa mı?" ön kontrolü
 eklenmelidir.
+
+---
+
+## Ders 14 — Matematik: KAPSAM AÇIĞI KAPATILDI (2 yeni konu · 120 yeni soru)
+
+Bu ders için yapılan iş **kalite temizliği değil, kapsam üretimidir**. Havuzdaki üç konu
+(temel işlemler, oran-orantı, denklem) ölçüldüğünde zaten temizdi: kör %19-21, boy 1/0,
+%100 sayısal. Sorun soruların kalitesi değil, **sınavın sorduğu alanın havuzda hiç
+bulunmamasıydı** (`SGS_CIKMIS_SORULAR_ANALIZI_2026-07-22.md` → "Yüksek öncelik: Matematik").
+
+**Kapsam ölçümü (§2'nin üç ölçütü — 2014-2026 arşivi, 11 dosya):**
+
+| başlık | görüldüğü kâğıtlar | havuzda |
+|---|---|---|
+| limit | 2021, 2022 ×2, 2023 ×2, 2025 ×3, 2026/1, 2026/2 — **her dönemde** | yoktu |
+| analitik geometri (doğru, parabol, çember, orta nokta) | 1-2-3, 2021, 2022, 2023 ×3, 2025 | yoktu |
+| logaritma | 2021'den bu yana kesintisiz, 2026/1 s.8 | yoktu |
+| sonsuz seri ∑ | 1-2-3, 2016-18, 2022, 2026/2 s.14 | yoktu |
+| fonksiyon (sabit, bileşke) | 2024 s.12, 2026/1 s.13, 2026/2 s.9 | yoktu |
+| türev / karma kısmi türev | 2016-18, 2024, 2026/2 s.13 | yoktu |
+
+**Açılan konular** (analizin önerdiği iki başlık):
+
+- `fonksiyon_ustel_logaritma_analitik` — Fonksiyonlar, Üstel-Logaritmik İfadeler ve
+  Analitik Geometri (60 soru): fonksiyon temelleri 9 · bileşke 7 · ters fonksiyon 5 ·
+  tanımlı işlem 4 · üslü-üstel 7 · logaritma ve ln 11 · çarpanlara ayırma/sadeleştirme 5 ·
+  analitik geometri 12. Builder `build_mat_fonksiyon_analitik.py`.
+- `limit_turev_seri` — Limit, Türev ve Seriler (60 soru): 0/0 belirsizliği 11 ·
+  sonsuzda limit 5 · trigonometrik limit 5 · üstel-logaritmik limit 5 · tek yönlü limit
+  ve süreklilik 6 · türev kuralları 12 · üstel/log/trig türev, teğet, ekstremum 8 ·
+  kısmi ve karma kısmi türev 4 · seriler 4. Builder `build_mat_limit_turev_seri.py`.
+
+**Ölçüm (iki paket de):** dağılım 12/12/12/12/12 · kör öğrenci %23 ve %21 · boy eğilimi
+0/1 ve 1/3 · harf örüntüsü yok, üçlü tekrar yok · klon 0 · audit FATAL 0 / UYARI 0.
+
+**§8 bağımsız doğrulama:** 120 sorunun her sayısal sonucu **sympy** ile builder'dan
+bağımsız ikinci kez doğrulanır (`sp.limit`, `sp.diff`, `sp.summation`, `sp.solve`);
+doğrulama `--write` için zorunludur, sympy yoksa builder çalışmaz. Üretim sırasında
+bu doğrulama bir FATAL klon yakaladı (aynı şablon + aynı cevap: iki farklı 0/0
+belirsizliği de 1 veriyordu) — soru farklı bir işleme dönüştürülerek düzeltildi.
+
+**§11 telif:** 2026/2'nin s.12 (1 − cos x)/x² limiti ile s.13 (x + ln3x)/eˣ türevi ve
+2026/1'in s.8 log₃(4x + 1) = 2 denklemi **bilerek kullanılmadı**; aynı beceriyi ölçen
+farklı katsayı ve yapılar kuruldu. Çıkmış kâğıtlar yalnız kapsam, dil ve zorluk
+kalibrasyonu için okundu.
+
+**§8 gösterim standardı** (uygulamada soru kökü/çözüm Markdown, şıklar düz metin):
+üst simge `x² xⁿ eˣ f⁻¹` · alt simge `log₂ log₃` · `√` · bileşke `∘` · türev `f′ ∂z/∂x
+∂²z/∂x∂y` · limit `lim(x→2)` önek biçimi · seri `∑(n=1→∞)` · çarpma `·` · eksi `−`
+(U+2212, mevcut paketlerle aynı). Markdown'ı bozduğu için `*` ve `_` kullanılmaz.
+Gösterim `test/math_notation_render_test.dart` ile 320 px ve 768 px genişlikte
+doğrulanır (120 sorunun kökü + çözümü + 5 şıkkı = 840 widget, iki boyutta);
+test ayrıca mutlak değer çubuğunun (`|x − 2|`) GFM tablo ayıracı sanılıp metni
+yutmadığını denetler — sonuç: 0 Table, çubuk render edilen metinde korunuyor,
+hiçbir genişlikte taşma yok. Tam süit 86 test / 5,4 saniye.
+
+⚠️ **Test yazarken tuzak:** 840 widget'ı tek ağaca koymak çalışıyor (pump ≈ 600 ms)
+ama o ağacı bir sonraki `pumpWidget` **dispose** ederken test dakikalarca asılı
+kalıyor; aynı dosyada büyük ağaç kuran bir testten sonra gelen ikinci `testWidgets`
+de asılıyor. Çözüm: soruları **10'luk dilimler** hâlinde render etmek ve bütün
+denetimleri **tek testte** toplamak. Bu bir içerik kusuru değil, flutter_test
+davranışıdır; eşik düşürülerek değil test yapısı değiştirilerek çözüldü.
+
+### Şık sırası — bilinçli karar
+
+Gerçek kitapçık sayısal şıkları **artan sıraya** dizer (2026/1 s.8: "A) 1 B) 2 C) 3 D) 4
+E) 5"). Yeni konular bunu **uygulamıyor**, çünkü mevcut üç matematik paketinin 180
+sorusunun tamamı sıralanmamış ve dağılımı 12/12/12/12/12'dir; yalnız yeni konularda
+sıralama, Karışık Test'te iki farklı şık düzenini yan yana getirirdi. Ayrıca ölçüldü:
+artan sıralama uygulandığında doğru cevabın **%43'ü C'ye düşüyor** (çeldiriciler doğru
+değeri simetrik kuşattığı için) — bu, körü %20'den %43'e çıkaran gerçek bir tell'dir.
+Sıralamaya geçilecekse **dersin tamamında** ve çeldirici değerleri rank dengesine göre
+yeniden seçilerek yapılmalıdır; ayrı bir iş olarak ertelendi.
+
+### Bağlama ve sırasında bulunan sapma
+
+`sgs.json` + `manifest_merge.py --write --version 169` + `curriculum.json` zinciri
+işletildi. Uygulama asset'ine güncel manifest kopyalanırken **önceden var olan bir
+sapma** ortaya çıktı: gömülü `assets/content/manifest_v2.json` **v162 / 199 pakette**
+kalmışken içerik reposu v168 / 201'deydi. `borclar_hukuku/sozlesme_turleri.json` ve
+`vergi_hukuku/vergi_usul_kanunu.json` paketleri OTA'da canlı olmasına rağmen gömülü
+asset manifestine hiç girmemişti; yeni kurulan bir cihaz ilk OTA senkronuna kadar bu iki
+konuyu görmüyordu. Manifest tazelenince bu da düzeldi (SGS gömülü soru 6120 → 6360).
+
+⚠️ **Yeni konular telefonda ancak yeni binary ile görünür.** `curriculum.json`
+`rootBundle`'dan okunur ve OTA yalnız `v2/manifest.json` ile paket dosyalarını indirir
+(`content_repository.dart`); konu listesi OTA'dan gelmez.
+
+Test sayıları manifestten **ölçülerek** güncellendi (§12: tahmin etme):
+`content_quality_test` 10928 → **11168** ve SGS 6120 → **6360**;
+`curriculum_test` konu sayısı 104 → **106**.
 
 ---
 

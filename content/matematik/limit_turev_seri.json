@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "mat-lts-gen-0001",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→2) (x² − 4)/(x − 2) limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "2",
+      "C": "8",
+      "D": "4",
+      "E": "Limit yoktur"
+    },
+    "answer": "D",
+    "solution": "Doğrudan yerine koymada 0/0 belirsizliği çıkar. Pay iki kare farkıdır: x² − 4 = (x − 2)(x + 2). Ortak çarpan sadeleşir ve x + 2 kalır; x → 2 için değer 4 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0002",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→3) (x² − 5x + 6)/(x − 3) limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "3",
+      "D": "−1",
+      "E": "6"
+    },
+    "answer": "A",
+    "solution": "0/0 belirsizliği vardır. Pay çarpanlarına ayrılır: x² − 5x + 6 = (x − 2)(x − 3). Ortak çarpan sadeleşir ve x − 2 kalır; x → 3 için değer 1 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0003",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→1) (x³ − 1)/(x − 1) limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "2",
+      "D": "Limit yoktur",
+      "E": "3"
+    },
+    "answer": "E",
+    "solution": "0/0 belirsizliği vardır. Pay küp farkıdır: x³ − 1 = (x − 1)(x² + x + 1). Ortak çarpan sadeleşir ve x² + x + 1 kalır; x → 1 için 1 + 1 + 1 = 3 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0004",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→−2) (x² + 5x + 6)/(x² − 4) limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "1/4",
+      "C": "−4",
+      "D": "−1/4",
+      "E": "0"
+    },
+    "answer": "D",
+    "solution": "0/0 belirsizliği vardır. Pay (x + 2)(x + 3), payda ise kare farkı olarak (x + 2)(x − 2) biçiminde ayrılır. Ortak çarpan sadeleşir ve (x + 3)/(x − 2) kalır; x → −2 için 1/(−4) = −1/4 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0005",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (√(x + 9) − 3)/x limitinin değeri kaçtır?",
+    "options": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "6",
+      "D": "0",
+      "E": "3"
+    },
+    "answer": "A",
+    "solution": "0/0 belirsizliği vardır. Pay ve payda eşleniği olan √(x + 9) + 3 ile çarpılır: pay x'e indirgenir ve x sadeleşir. Geriye 1/(√(x + 9) + 3) kalır; x → 0 için 1/6 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0006",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→4) (x − 4)/(√x − 2) limitinin değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "1/4",
+      "D": "0",
+      "E": "8"
+    },
+    "answer": "B",
+    "solution": "0/0 belirsizliği vardır. Payda eşleniği √x + 2 ile genişletilir; payda x − 4 olur ve sadeleşme sonrası √x + 2 kalır. x → 4 için 2 + 2 = 4 bulunur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0007",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→1) (x² − 1)/(x² + 3x − 4) limitinin değeri kaçtır?",
+    "options": {
+      "A": "5/2",
+      "B": "1/4",
+      "C": "0",
+      "D": "2",
+      "E": "2/5"
+    },
+    "answer": "E",
+    "solution": "0/0 belirsizliği vardır. Pay (x − 1)(x + 1), payda (x − 1)(x + 4) biçiminde çarpanlarına ayrılır. Ortak çarpan sadeleşir ve (x + 1)/(x + 4) kalır; x → 1 için 2/5 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0008",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (x² + 3x)/(2x) limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "3",
+      "C": "1/2",
+      "D": "2/3",
+      "E": "3/2"
+    },
+    "answer": "E",
+    "solution": "0/0 belirsizliği vardır. Payda ortak x parantezine alınır: x(x + 3)/(2x). x sadeleşir ve (x + 3)/2 kalır; x → 0 için 3/2 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0009",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→2) (x³ − 8)/(x² − 4) limitinin değeri kaçtır?",
+    "options": {
+      "A": "12",
+      "B": "3",
+      "C": "4",
+      "D": "0",
+      "E": "6"
+    },
+    "answer": "B",
+    "solution": "0/0 belirsizliği vardır. Pay küp farkı (x − 2)(x² + 2x + 4), payda kare farkı (x − 2)(x + 2) biçimindedir. Sadeleşme sonrası (x² + 2x + 4)/(x + 2) kalır; x → 2 için 12/4 = 3 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0010",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→−1) (x² + 2x + 1)/(x + 1) limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "−1",
+      "D": "2",
+      "E": "Limit yoktur"
+    },
+    "answer": "A",
+    "solution": "0/0 belirsizliği vardır. Pay tam karedir: x² + 2x + 1 = (x + 1)². Sadeleşme sonrası x + 1 kalır; x → −1 için 0 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0011",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→1) (√x − 1)/(x − 1) limitinin değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "1",
+      "C": "0",
+      "D": "1/4",
+      "E": "1/2"
+    },
+    "answer": "E",
+    "solution": "0/0 belirsizliği vardır. Payda x − 1 = (√x − 1)(√x + 1) biçiminde yazılır. Ortak çarpan sadeleşir ve 1/(√x + 1) kalır; x → 1 için 1/2 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0012",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (3x² + 2x − 1)/(x² − 5) limitinin değeri kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "0",
+      "C": "∞",
+      "D": "1/3",
+      "E": "2"
+    },
+    "answer": "A",
+    "solution": "Pay ve paydanın dereceleri eşittir. Bu durumda limit, en yüksek dereceli terimlerin katsayıları oranına eşittir: 3/1 = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0013",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (2x + 7)/(5x − 3) limitinin değeri kaçtır?",
+    "options": {
+      "A": "5/2",
+      "B": "0",
+      "C": "∞",
+      "D": "7/3",
+      "E": "2/5"
+    },
+    "answer": "E",
+    "solution": "Pay ve payda birinci derecedendir. Limit, baş katsayıların oranıdır: 2/5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0014",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (x² + 1)/(x³ − 4) limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "∞",
+      "D": "−1/4",
+      "E": "1/3"
+    },
+    "answer": "B",
+    "solution": "Paydanın derecesi paydan büyüktür. Bu durumda oran sonsuzda sıfıra yaklaşır; limit 0'dır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0015",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (4x³ − x)/(2x² + 9) limitinin değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "∞",
+      "C": "0",
+      "D": "−∞",
+      "E": "4/9"
+    },
+    "answer": "B",
+    "solution": "Payın derecesi paydanınkinden büyüktür. Bu durumda ifade sınırsız büyür; limit ∞ olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0016",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (√(x² + 3x) − x) limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "3",
+      "C": "∞",
+      "D": "1/2",
+      "E": "3/2"
+    },
+    "answer": "E",
+    "solution": "∞ − ∞ belirsizliği vardır. İfade eşleniği √(x² + 3x) + x ile genişletilir; pay 3x olur. Payda x parantezine alınıp sadeleştirilirse 3/(√(1 + 3/x) + 1) kalır ve x → ∞ için 3/2 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0017",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (sin 3x)/x limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "1/3",
+      "D": "3",
+      "E": "Limit yoktur"
+    },
+    "answer": "D",
+    "solution": "sin u / u ifadesinin u → 0 limiti 1'dir. İfade (sin 3x)/(3x) · 3 biçiminde yazılır; birinci çarpanın limiti 1 olduğundan sonuç 3'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0018",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (tan 5x)/(2x) limitinin değeri kaçtır?",
+    "options": {
+      "A": "5/2",
+      "B": "2/5",
+      "C": "5",
+      "D": "1/2",
+      "E": "0"
+    },
+    "answer": "A",
+    "solution": "tan u / u ifadesinin u → 0 limiti 1'dir. İfade (tan 5x)/(5x) · (5/2) biçiminde yazılır; birinci çarpanın limiti 1 olduğundan sonuç 5/2'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0019",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (1 − cos 2x)/x² limitinin değeri kaçtır?",
+    "options": {
+      "A": "1/2",
+      "B": "0",
+      "C": "2",
+      "D": "1",
+      "E": "4"
+    },
+    "answer": "C",
+    "solution": "Yarım açı özdeşliği kullanılır: 1 − cos 2x = 2sin²x. İfade 2·(sin x / x)² biçimine gelir; sin x / x limiti 1 olduğundan sonuç 2'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0020",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (sin 4x)/(sin 6x) limitinin değeri kaçtır?",
+    "options": {
+      "A": "2/3",
+      "B": "3/2",
+      "C": "0",
+      "D": "24",
+      "E": "1"
+    },
+    "answer": "A",
+    "solution": "Pay ve payda kendi açılarına bölünüp çarpanla düzeltilir: (sin4x/4x)·4x ÷ (sin6x/6x)·6x. Her iki oranın limiti 1 olduğundan sonuç 4/6 = 2/3'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0021",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (x · sin x)/(1 − cos x) limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "0",
+      "D": "1/2",
+      "E": "∞"
+    },
+    "answer": "B",
+    "solution": "Payda 1 − cos x = 2sin²(x/2) yazılır; pay ve payda x² ile normalleştirilir. Payın x² ile oranı 1'e, paydanınki 1/2'ye gider; sonuç 1 ÷ (1/2) = 2 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0022",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) (e³ˣ − 1)/x limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "3",
+      "D": "1/3",
+      "E": "e³"
+    },
+    "answer": "C",
+    "solution": "(eᵘ − 1)/u ifadesinin u → 0 limiti 1'dir. İfade (e³ˣ − 1)/(3x) · 3 biçiminde yazılır; birinci çarpanın limiti 1 olduğundan sonuç 3'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0023",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) (1 + 2/x)ˣ limitinin değeri kaçtır?",
+    "options": {
+      "A": "e",
+      "B": "1",
+      "C": "e²",
+      "D": "2e",
+      "E": "∞"
+    },
+    "answer": "C",
+    "solution": "(1 + a/x)ˣ ifadesinin x → ∞ limiti eᵃ'dır. Burada a = 2 olduğundan sonuç e²'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0024",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0) ln(1 + 5x)/x limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "1/5",
+      "D": "5",
+      "E": "ln5"
+    },
+    "answer": "D",
+    "solution": "ln(1 + u)/u ifadesinin u → 0 limiti 1'dir. İfade ln(1 + 5x)/(5x) · 5 biçiminde yazılır; birinci çarpanın limiti 1 olduğundan sonuç 5'tir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0025",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→1) (ln x)/(x − 1) limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "e",
+      "C": "∞",
+      "D": "1",
+      "E": "−1"
+    },
+    "answer": "D",
+    "solution": "x − 1 = u dönüşümü yapılırsa ifade ln(1 + u)/u biçimine gelir ve u → 0 olur. Bu ifadenin limiti 1'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0026",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→∞) [ln(3x + 1) − ln x] limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "∞",
+      "C": "ln3",
+      "D": "3",
+      "E": "ln4"
+    },
+    "answer": "C",
+    "solution": "Logaritma farkı bölümün logaritmasıdır: ln((3x + 1)/x). Parantez içindeki oranın x → ∞ limiti 3 olduğundan sonuç ln3'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0027",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = 2x + 1 (x < 3) ve f(x) = ax − 2 (x ≥ 3) biçiminde tanımlanan f fonksiyonu x = 3 noktasında sürekli olduğuna göre a kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "2",
+      "C": "5",
+      "D": "7/3",
+      "E": "9"
+    },
+    "answer": "A",
+    "solution": "Süreklilik için soldan ve sağdan limitler eşit olmalıdır. Soldan limit 2·3 + 1 = 7; sağdan limit 3a − 2'dir. 3a − 2 = 7 → 3a = 9 → a = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0028",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = |x − 2| / (x − 2) fonksiyonunun x = 2 noktasındaki limiti için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Soldan ve sağdan limitler eşit olduğundan limit 1'e eşittir",
+      "B": "Soldan ve sağdan limitler farklı olduğundan limit yoktur",
+      "C": "Soldan ve sağdan limitler eşit olduğundan limit 0'a eşittir",
+      "D": "Fonksiyon x = 2 noktasında tanımlı olmadığından limit her hâlde sıfırdır",
+      "E": "Soldan limit sağdan limitten büyük olduğundan limit −1'e eşittir"
+    },
+    "answer": "B",
+    "solution": "x < 2 için |x − 2| = 2 − x olduğundan soldan limit −1; x > 2 için |x − 2| = x − 2 olduğundan sağdan limit 1'dir. İki tek yönlü limit eşit olmadığından limit yoktur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0029",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→0⁺) 1/x limitinin değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "−∞",
+      "C": "1",
+      "D": "∞",
+      "E": "Limit 1'e eşittir"
+    },
+    "answer": "D",
+    "solution": "x sıfıra sağdan yaklaşırken pozitif ve giderek küçülür; 1/x sınırsız büyür. Bu nedenle sağdan limit ∞'dur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0030",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "x ≠ 3 için f(x) = (x² − 9)/(x − 3) ve f(3) = k biçiminde tanımlanan f fonksiyonu x = 3 noktasında sürekli olduğuna göre k kaçtır?",
+    "options": {
+      "A": "6",
+      "B": "0",
+      "C": "3",
+      "D": "9",
+      "E": "−6"
+    },
+    "answer": "A",
+    "solution": "Sadeleştirme sonrası x ≠ 3 için f(x) = x + 3 olur ve x → 3 limiti 6'dır. Süreklilik için fonksiyon değeri limite eşit olmalıdır: k = 6.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0031",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "lim(x→3⁻) (x − 3)/|x − 3| limitinin değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "∞",
+      "D": "Limit yoktur",
+      "E": "−1"
+    },
+    "answer": "E",
+    "solution": "x sola, yani 3'ten küçük değerlerden yaklaşır. Bu durumda x − 3 < 0 ve |x − 3| = 3 − x olur; oran (x − 3)/(3 − x) = −1 değerini alır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0032",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "Bir f fonksiyonunun x = a noktasında sürekli olması için aşağıdakilerden hangisi gereklidir?",
+    "options": {
+      "A": "Fonksiyonun o noktada türevinin bulunması tek başına yeterli olmayıp gereksizdir",
+      "B": "f(a) tanımlı, limit mevcut ve limit f(a)'ya eşit olmalıdır",
+      "C": "Fonksiyonun bütün gerçel sayılarda tanımlı olması tek başına yeterli sayılmaktadır",
+      "D": "Soldan limitin bulunması tek başına süreklilik için yeterli kabul edilmektedir",
+      "E": "Fonksiyonun grafiğinin o noktada eksenleri kesmesi koşulu aranmaktadır"
+    },
+    "answer": "B",
+    "solution": "Bir noktada süreklilik üç koşulun birlikte sağlanmasıdır: fonksiyon o noktada tanımlıdır, o noktadaki limiti vardır ve limit değeri fonksiyon değerine eşittir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0033",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = x⁴ − 3x² + 5 olduğuna göre f′(2) kaçtır?",
+    "options": {
+      "A": "32",
+      "B": "12",
+      "C": "20",
+      "D": "8",
+      "E": "44"
+    },
+    "answer": "C",
+    "solution": "Kuvvet kuralı uygulanır: f′(x) = 4x³ − 6x. x = 2 yerine konur: 4·8 − 6·2 = 32 − 12 = 20.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0034",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = (2x + 1)(x − 3) olduğuna göre f′(1) kaçtır?",
+    "options": {
+      "A": "−1",
+      "B": "1",
+      "C": "3",
+      "D": "−3",
+      "E": "5"
+    },
+    "answer": "A",
+    "solution": "Çarpım kuralı uygulanır: f′(x) = 2(x − 3) + (2x + 1)·1 = 4x − 5. x = 1 yerine konur: 4 − 5 = −1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0035",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = (3x − 1)/(x + 2) olduğuna göre f′(1) kaçtır?",
+    "options": {
+      "A": "7/3",
+      "B": "7/9",
+      "C": "3",
+      "D": "1/9",
+      "E": "−7/9"
+    },
+    "answer": "B",
+    "solution": "Bölüm kuralı uygulanır: f′(x) = [3(x + 2) − (3x − 1)] / (x + 2)² = 7/(x + 2)². x = 1 yerine konur: 7/9.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0036",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = (x² + 1)⁵ olduğuna göre f′(1) kaçtır?",
+    "options": {
+      "A": "80",
+      "B": "160",
+      "C": "32",
+      "D": "10",
+      "E": "320"
+    },
+    "answer": "B",
+    "solution": "Zincir kuralı uygulanır: f′(x) = 5(x² + 1)⁴ · 2x = 10x(x² + 1)⁴. x = 1 yerine konur: 10·1·2⁴ = 10·16 = 160.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0037",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = √(3x + 4) olduğuna göre f′(4) kaçtır?",
+    "options": {
+      "A": "3/4",
+      "B": "1/8",
+      "C": "3/8",
+      "D": "4",
+      "E": "8/3"
+    },
+    "answer": "C",
+    "solution": "Zincir kuralı uygulanır: f′(x) = 3 / (2√(3x + 4)). x = 4 için içerideki ifade 16 olur ve karekökü 4'tür: f′(4) = 3/(2·4) = 3/8.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0038",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = x³(x − 2) olduğuna göre f′(2) kaçtır?",
+    "options": {
+      "A": "24",
+      "B": "8",
+      "C": "12",
+      "D": "0",
+      "E": "32"
+    },
+    "answer": "B",
+    "solution": "İfade açılır: f(x) = x⁴ − 2x³ ve türevi f′(x) = 4x³ − 6x²'dir. x = 2 yerine konur: 32 − 24 = 8.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0039",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = 1/x² olduğuna göre f′(2) kaçtır?",
+    "options": {
+      "A": "1/4",
+      "B": "−1/2",
+      "C": "−4",
+      "D": "−1/4",
+      "E": "1/8"
+    },
+    "answer": "D",
+    "solution": "İfade üslü biçimde yazılır: f(x) = x⁻². Kuvvet kuralı: f′(x) = −2x⁻³ = −2/x³. x = 2 yerine konur: −2/8 = −1/4.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0040",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = (x − 1)/(x + 1) olduğuna göre f′(0) kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "−1",
+      "C": "2",
+      "D": "1/2",
+      "E": "−2"
+    },
+    "answer": "C",
+    "solution": "Bölüm kuralı uygulanır: f′(x) = [(x + 1) − (x − 1)] / (x + 1)² = 2/(x + 1)². x = 0 yerine konur: 2/1 = 2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0041",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = x⁵ − 5x fonksiyonunun türevinin sıfır olduğu x değerlerinin çarpımı kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "−1",
+      "D": "5",
+      "E": "−5"
+    },
+    "answer": "C",
+    "solution": "Türev alınır: f′(x) = 5x⁴ − 5. Sıfıra eşitlenir: 5(x⁴ − 1) = 0 → x⁴ = 1. Gerçel kökler x = 1 ve x = −1 olup çarpımları −1'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0042",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = 2x³ + 3x² − 12x fonksiyonunun yerel minimum noktasının apsisi kaçtır?",
+    "options": {
+      "A": "−2",
+      "B": "1",
+      "C": "0",
+      "D": "2",
+      "E": "−1"
+    },
+    "answer": "B",
+    "solution": "Türev sıfırlanır: f′(x) = 6x² + 6x − 12 = 6(x + 2)(x − 1) → x = −2 ve x = 1. İkinci türev f″(x) = 12x + 6 olup x = 1 için pozitiftir; bu nokta yerel minimumdur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0043",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = √x · (x + 3) olduğuna göre f′(1) kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "4",
+      "C": "2",
+      "D": "1/2",
+      "E": "5"
+    },
+    "answer": "A",
+    "solution": "Çarpım kuralı uygulanır: f′(x) = (x + 3)/(2√x) + √x. x = 1 yerine konur: 4/2 + 1 = 2 + 1 = 3.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0044",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = (2x² − x)³ olduğuna göre f′(1) kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "27",
+      "C": "6",
+      "D": "12",
+      "E": "9"
+    },
+    "answer": "E",
+    "solution": "Zincir kuralı uygulanır: f′(x) = 3(2x² − x)²·(4x − 1). x = 1 için parantez içi 1, son çarpan 3 olur: 3·1·3 = 9.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0045",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = e²ˣ olduğuna göre y′(0) kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "0",
+      "C": "e²",
+      "D": "2",
+      "E": "2e"
+    },
+    "answer": "D",
+    "solution": "Zincir kuralı uygulanır: y′ = 2e²ˣ. x = 0 için e⁰ = 1 olduğundan y′(0) = 2'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0046",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = ln(3x) olduğuna göre y′(2) kaçtır?",
+    "options": {
+      "A": "3/2",
+      "B": "1/6",
+      "C": "3",
+      "D": "1/2",
+      "E": "1/3"
+    },
+    "answer": "D",
+    "solution": "Logaritma özelliğinden ln(3x) = ln3 + ln x yazılır; sabitin türevi sıfırdır ve y′ = 1/x olur. x = 2 yerine konur: 1/2.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0047",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = x·eˣ olduğuna göre y′(0) kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "2",
+      "C": "1",
+      "D": "e",
+      "E": "−1"
+    },
+    "answer": "C",
+    "solution": "Çarpım kuralı uygulanır: y′ = eˣ + x·eˣ = eˣ(1 + x). x = 0 için e⁰ = 1 ve parantez 1 olduğundan y′(0) = 1'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0048",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = x²·ln x olduğuna göre y′(1) kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "2",
+      "C": "e",
+      "D": "1/2",
+      "E": "1"
+    },
+    "answer": "E",
+    "solution": "Çarpım kuralı uygulanır: y′ = 2x·ln x + x²·(1/x) = 2x·ln x + x. x = 1 için ln1 = 0 olduğundan y′(1) = 0 + 1 = 1'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0049",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = sin 2x olduğuna göre y′(0) kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "−2",
+      "D": "1/2",
+      "E": "2"
+    },
+    "answer": "E",
+    "solution": "Zincir kuralı uygulanır: y′ = 2cos 2x. x = 0 için cos0 = 1 olduğundan y′(0) = 2'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0050",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = x² + 3x eğrisine (1, 4) noktasında çizilen teğetin eğimi kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "5",
+      "C": "2",
+      "D": "3",
+      "E": "7"
+    },
+    "answer": "B",
+    "solution": "Teğetin eğimi o noktadaki türev değeridir: y′ = 2x + 3. x = 1 yerine konur: 2 + 3 = 5.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0051",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "f(x) = x³ − 3x fonksiyonunun yerel maksimum değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "−2",
+      "C": "0",
+      "D": "1",
+      "E": "3"
+    },
+    "answer": "A",
+    "solution": "Türev sıfırlanır: f′(x) = 3x² − 3 = 0 → x = ±1. İkinci türev f″(x) = 6x olup x = −1 için negatiftir; bu nokta yerel maksimumdur. Değer f(−1) = −1 + 3 = 2'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0052",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "y = e^(x²) olduğuna göre y′(1) kaçtır?",
+    "options": {
+      "A": "e",
+      "B": "2",
+      "C": "e²",
+      "D": "2e",
+      "E": "2e²"
+    },
+    "answer": "D",
+    "solution": "Zincir kuralı uygulanır: y′ = 2x·e^(x²). x = 1 yerine konur: 2·1·e¹ = 2e.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0053",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "z = x³y² olduğuna göre ∂z/∂x kısmi türevinin (1, 2) noktasındaki değeri kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "6",
+      "C": "12",
+      "D": "24",
+      "E": "3"
+    },
+    "answer": "C",
+    "solution": "y sabit kabul edilerek x'e göre türev alınır: ∂z/∂x = 3x²y². x = 1 ve y = 2 yerine konur: 3·1·4 = 12.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0054",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "z = x²y + 3xy³ olduğuna göre ∂z/∂y kısmi türevinin (1, 1) noktasındaki değeri kaçtır?",
+    "options": {
+      "A": "4",
+      "B": "11",
+      "C": "10",
+      "D": "2",
+      "E": "9"
+    },
+    "answer": "C",
+    "solution": "x sabit kabul edilerek y'ye göre türev alınır: ∂z/∂y = x² + 9xy². x = 1 ve y = 1 yerine konur: 1 + 9 = 10.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0055",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "z = x²y³ olduğuna göre ∂²z/∂x∂y karma kısmi türevinin (1, 1) noktasındaki değeri kaçtır?",
+    "options": {
+      "A": "2",
+      "B": "3",
+      "C": "12",
+      "D": "9",
+      "E": "6"
+    },
+    "answer": "E",
+    "solution": "Önce x'e göre türev alınır: ∂z/∂x = 2xy³. Sonra bu ifadenin y'ye göre türevi alınır: ∂²z/∂x∂y = 6xy². (1, 1) noktasında değer 6'dır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0056",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "z = e^(xy) olduğuna göre ∂z/∂x kısmi türevinin (0, 3) noktasındaki değeri kaçtır?",
+    "options": {
+      "A": "0",
+      "B": "1",
+      "C": "e³",
+      "D": "3e³",
+      "E": "3"
+    },
+    "answer": "E",
+    "solution": "y sabit kabul edilerek x'e göre türev alınır: ∂z/∂x = y·e^(xy). x = 0 için üs sıfır ve e⁰ = 1 olduğundan değer 3·1 = 3'tür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0057",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "∑(n=1→∞) 1/2ⁿ toplamının değeri kaçtır?",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "1/2",
+      "D": "∞",
+      "E": "3/2"
+    },
+    "answer": "A",
+    "solution": "Bu, ilk terimi 1/2 ve ortak oranı 1/2 olan sonsuz geometrik seridir. |r| < 1 olduğundan toplam a/(1 − r) formülüyle bulunur: (1/2)/(1 − 1/2) = 1.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0058",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "∑(n=0→∞) (1/3)ⁿ toplamının değeri kaçtır?",
+    "options": {
+      "A": "1/2",
+      "B": "3",
+      "C": "2/3",
+      "D": "3/2",
+      "E": "1"
+    },
+    "answer": "D",
+    "solution": "İlk terim n = 0 için 1, ortak oran 1/3'tür. Sonsuz geometrik seri toplamı a/(1 − r) = 1/(1 − 1/3) = 3/2 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0059",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "∑(n=1→∞) 2/3ⁿ toplamının değeri kaçtır?",
+    "options": {
+      "A": "2/3",
+      "B": "3",
+      "C": "1",
+      "D": "2",
+      "E": "1/3"
+    },
+    "answer": "C",
+    "solution": "Sabit 2 toplam dışına alınır: 2·∑(1/3)ⁿ (n = 1'den başlar). Bu serinin toplamı (1/3)/(1 − 1/3) = 1/2'dir. Sonuç 2·(1/2) = 1 olur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mat-lts-gen-0060",
+    "ders": "matematik",
+    "konu": "limit_turev_seri",
+    "stem": "∑(k=1→5) (2k − 1) toplamının değeri kaçtır?",
+    "options": {
+      "A": "24",
+      "B": "20",
+      "C": "30",
+      "D": "25",
+      "E": "15"
+    },
+    "answer": "D",
+    "solution": "Terimler yazılır: 1 + 3 + 5 + 7 + 9. Bu ilk beş tek sayının toplamıdır ve sonucu 25'tir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Matematik limit-türev-seri",
+      "legislationRef": null
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]
