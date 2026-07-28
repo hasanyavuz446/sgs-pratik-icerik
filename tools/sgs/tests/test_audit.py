@@ -183,6 +183,39 @@ class KorOgrenciTest(unittest.TestCase):
         fatals = audit_et(questions)
         self.assertTrue(any("kör öğrenci" in f for f in fatals), fatals)
 
+    def test_mutlak_dil_isareti_boy_esitken_de_yakalanir(self):
+        """Sözcük tell'i: boy ölçen stratejilerin göremediği eleme ipucu.
+
+        Şıklar EŞİT uzunlukta, dolayısıyla "en kısayı/uzunu seç" ve "ortadan
+        tahmin et" hiçbir şey bulamaz. Ayrıcı işaret yalnız `hiçbir biçimde` —
+        eski DOLGU kümesinde YOK. Aday işaretlileri eleyip kalandan seçtiğinde
+        doğruyu bulur; bunu ancak altıncı strateji görür.
+        """
+        questions = []
+        for i in range(30):
+            yer = i % 5
+            options = {}
+            for j, harf in enumerate("ABCDE"):
+                options[harf] = (f"{i:02d}{j} kalem dönemde yeniden ölçülür ve fark kâra yazılır"
+                                 if j == yer else
+                                 f"{i:02d}{j} kalem hiçbir biçimde ölçülmez ve fark hiç doğurmaz")
+            uzunluklar = {len(v) for v in options.values()}
+            self.assertEqual(len(uzunluklar), 1, f"şıklar eşit uzunlukta olmalı: {uzunluklar}")
+            questions.append(soru(f"q{i}", f"{i}. soru kökü nedir?", options, answer="ABCDE"[yer]))
+        fatals = audit_et(questions)
+        self.assertTrue(any("kör öğrenci" in f for f in fatals), fatals)
+
+    def test_anlamli_hicbir_kullanimi_isaret_sayilmaz(self):
+        """`hiçbir istisna/fark/etkisi` iddianın kendisidir, mutlak dil kalıbı değil.
+
+        Bunları işaret saymak, meşru çeldiricileri eleyip yanlış alarm üretir.
+        """
+        self.assertIsNone(audit.ELEME_ISARETI.search("Kural hiçbir istisna tanımaz"))
+        self.assertIsNone(audit.ELEME_ISARETI.search("İki kurum arasında hiçbir fark yoktur"))
+        self.assertIsNone(audit.ELEME_ISARETI.search("Bu durumun hiçbir etkisi bulunmaz"))
+        self.assertIsNotNone(audit.ELEME_ISARETI.search("Tutar hiçbir biçimde düzeltilmez"))
+        self.assertIsNotNone(audit.ELEME_ISARETI.search("Kalem her hâlde kapanış kuruyla çevrilir"))
+
     def test_oncul_secicileri_atma_sikki_sayilmaz(self):
         """'Yalnız I', 'II ve III' meşru olarak tekrar eder — atma-şıkkı değildir."""
         questions = []

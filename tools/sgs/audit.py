@@ -40,6 +40,25 @@ NUMERIC_LEGISLATION_LESSONS = {
 # Çeldiricileri şişirmek için kullanılan dolgu kalıpları. Yalnız çeldiricilerde
 # görünürlerse kalıbın kendisi güvenilir bir "yanlış" işaretine dönüşür.
 DOLGU = re.compile(r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır)", re.I)
+# Mutlak dil işaretleri. Yanlış bir iddiayı "her hâlde / hiçbir biçimde" diye yazmak
+# doğal bir reflekstir, ama 60 soru boyunca sürdürülünce bu sözcükler "ben yanlış
+# şıkım" rozetine dönüşür ve aday onları eleyip kalandan seçer.
+#
+# ⚠ Bunun bir ÜSLUP tercihi değil EV ARTEFAKTI olduğu ölçüldü: 2014-2026 arşivinden
+# çıkarılan 12.436 GERÇEK sınav şıkkında `hiçbir` %0,2 · `her hâlde` %0,0 ·
+# `zorunda` %0,0 · `ifade eder` %0,0 · `niteliğinde` %0,1. Bizim havuzda ~%9'du.
+# Temizlik (2026-07-28, OTA v170) soruları gerçek sınava YAKLAŞTIRDI.
+#
+# Anlamın parçası olan kullanımlar bilerek dışarıda: "hiçbir istisna", "hiçbir fark",
+# "hiçbir etkisi" — bunlar iddianın kendisidir, mutlak dil kalıbı değildir.
+ELEME_ISARETI = re.compile(
+    r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır"
+    r"|her\s+h[âa]lde"
+    r"|hiçbir\s+(?:biçimde|hâlde|halde|koşulda|şekilde|surette|zaman)"
+    r"|niteliğinde"
+    r"|(?:ölçümü|kalemi|kalemleri|işlemi|durumu)\s+(?:ifade eder|karşılar)$)",
+    re.I,
+)
 # Öncüllü (I/II/III "hangileri") sorularda şık boyu doğal olarak eşit → boy ölçümü dışı.
 ONCUL = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
 
@@ -51,13 +70,23 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     "doğru hep en UZUN" yazılmış dersleri temiz gösteriyordu; oysa öğrencinin
     öğreneceği kural hangi yönde olursa olsun aynı derecede zararlıdır.
 
-    ⚠⚠ TABAN %20 DEĞİL, ~%23. Dört stratejinin EN İYİSİ alındığı için şans
-    kayırılır. 60 soruluk tamamen rastgele paketlerle ölçüldü (400 deneme):
-    ortalama %23, %5–%95 aralığı %16–%30, en yüksek %38. Bu yüzden:
-      · %35 FATAL  → rastgele paketlerin yalnız %1'i aşar; kalibre.
-      · %31 UYARI  → 95. yüzdelik. (Önce %28 demiştim; rastgelenin %14'ü
-                     aşıyordu, yani her yedi temiz dosyadan biri boşuna
-                     uyarı alacaktı — gürültü, uyarıyı önemsizleştirir.)
+    ⚠⚠ TABAN %20 DEĞİL, ~%24. Stratejilerin EN İYİSİ alındığı için şans kayırılır.
+    Eşikler null modelle ölçülerek kalibre edildi: gerçek şık metinleri kullanılıp
+    doğru cevap RASTGELE atanır (boy ve sözcük dağılımı gerçekçi kalır, gerçek
+    sinyal kalmaz), 60 soruluk 400 paket. 2026-07-28'de altıncı strateji eklenince
+    yeniden ölçüldü — daha çok stratejinin en iyisini almak tabanı yükseltir:
+
+      | strateji sayısı | ortalama | 95. yüzdelik | 99. yüzdelik | en yüksek |
+      |---|---:|---:|---:|---:|
+      | 4 (ilk kalibrasyon) | %23 | %30 | — | %38 |
+      | 6 (bugünkü)         | %24 | %30 | %33 | %36 |
+
+      · %31 UYARI  → 95. yüzdelik; altı stratejide de aynı çıktı, değişmedi.
+                     (Önce %28 demiştim; rastgelenin %14'ü aşıyordu, yani her yedi
+                     temiz dosyadan biri boşuna uyarı alacaktı — gürültü, uyarıyı
+                     önemsizleştirir.)
+      · %35 FATAL  → 99. yüzdelik %33 olduğu için güvenli tarafta kaldı; rastgele
+                     paketlerin ~%0,5'i aşar. Sıkılaştırılmadı.
     Hedef "~%20" yazmak da yanlıştı: ulaşılamaz. Gerçekçi hedef ≤%30.
     """
     if not questions:
@@ -71,6 +100,9 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
 
     def dolgusuz(o):
         return {k: v for k, v in o.items() if not DOLGU.search(v)} or o
+
+    def isaretsiz(o):
+        return {k: v for k, v in o.items() if not ELEME_ISARETI.search(v)} or o
 
     def ortadakiler(o):
         enb, enk = max(len(v) for v in o.values()), min(len(v) for v in o.values())
@@ -88,6 +120,11 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
         "dolguluyu ele, en kısayı seç": lambda o: kisa(dolgusuz(o)),
         "dolguluyu ele, en uzunu seç": lambda o: uzun(dolgusuz(o)),
         "iki ucu ele, ortadan tahmin et": ortadakiler,
+        # Mutlak dil işaretlilerini ELE, kalandan tahmin et. Boy ölçmez; yalnız
+        # sözcük seçimine bakar, bu yüzden yukarıdaki beş strateji bunu göremiyordu.
+        # 2026-07-28 temizliğinden ÖNCEKİ havuzda 11 paketi FATAL'la yakalıyordu
+        # (muhasebe_standartlari'nın çoğu, %35-42); temizlikten sonra hepsi %21-26.
+        "işaretliyi ele, kalandan tahmin et": isaretsiz,
     }
     en_iyi = (0, "-")
     for ad, sec in stratejiler.items():

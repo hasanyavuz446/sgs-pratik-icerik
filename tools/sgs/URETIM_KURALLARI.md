@@ -258,19 +258,50 @@ paket boyunca farklı konumlara dağılır.
 ### Kör öğrenci ölçütü
 
 `audit.py::kor_ogrenci`, soruyu **hiç okumayan** bir adayın yalnız şık biçimine
-bakarak alabildiği en yüksek puanı ölçer (dört strateji: en kısayı seç · en uzunu seç ·
-dolgu kalıplılarını eleyip aynısı).
+bakarak alabildiği en yüksek puanı ölçer. **Altı strateji**, her biri bir aday kümesi
+döndürür; puan = küme doğruyu içeriyorsa 1/|küme|:
+
+1. en kısayı seç · 2. en uzunu seç · 3. dolguluyu ele + en kısayı seç ·
+4. dolguluyu ele + en uzunu seç · 5. iki ucu ele, ortadan tahmin et ·
+6. **mutlak dil işaretlilerini ele, kalandan tahmin et** (2026-07-28 eklendi)
 
 | | |
 |---|---|
-| **Hedef** | ~%20 (rastgele taban) |
-| **UYARI** | ≥%28 |
-| **FATAL** | ≥%35 |
+| **Taban** | ~%24 (en iyi strateji alındığı için %20 değil) |
+| **Hedef** | ≤%30 |
+| **UYARI** | ≥%31 (null modelin 95. yüzdeliği) |
+| **FATAL** | ≥%35 (99. yüzdelik %33; güvenli tarafta) |
+
+Eşikler **null modelle** kalibre edilir: gerçek şık metinleri kullanılıp doğru cevap
+rastgele atanır (boy ve sözcük dağılımı gerçekçi kalır, gerçek sinyal kalmaz), 60
+soruluk 400 paket. ⚠️ **Strateji eklendiğinde kalibrasyon yenilenir** — daha çok
+stratejinin en iyisini almak tabanı yükseltir.
 
 Alt ölçüt: doğru şık en-uzun ~%20 **ve** en-kısa ~%20 (`boy_egilimi`).
 
 Temiz örnek: hesap ağırlıklı dersler (`finansal_muhasebe` %19, `matematik` %17) —
 şıklar sayı olduğu için biçim ipucu doğmaz.
+
+### 🔴 Yasak: mutlak dil (eleme ipucu)
+
+Yanlış bir iddiayı "her hâlde / hiçbir biçimde / …mak zorundadır" diye yazmak doğal bir
+reflekstir, ama 60 soru boyunca sürdürülünce bu sözcükler **"ben yanlış şıkım" rozetine**
+dönüşür: aday onları eleyip kalandan seçer. Boy ölçen stratejiler bunu göremez; altıncı
+strateji bunun içindir.
+
+**Bu bir üslup tercihi değil, ev artefaktıdır — ölçüldü.** 2014-2026 arşivinden çıkarılan
+**12.436 gerçek sınav şıkkında**: `hiçbir` %0,2 · `her hâlde` %0,0 · `zorunda` %0,0 ·
+`ifade eder` %0,0 · `niteliğinde` %0,1. Bizim havuzda ~%9'du. 2026-07-28 temizliğinden
+önce 11 paket bu ölçütten FATAL alıyordu (%35-42, çoğu `muhasebe_standartlari`).
+
+İşaret kümesi `audit.py::ELEME_ISARETI`. **Anlamın parçası olan kullanımlar hariç:**
+`hiçbir istisna`, `hiçbir fark`, `hiçbir etkisi` — bunlar iddianın kendisidir.
+
+⚠️ Temizlerken **doğru şıkkı kısaltma**: dolgu kaldırılınca çeldirici ~15 karakter
+kısalır ve doğru şık sistematik en uzun kalır (ölçüldü: kör %26→%45). Çare
+**çeldiriciye gerçek içerik eklemek** — yanlış iddianın kendi mantıksal sonucu. Ama
+adayların TAMAMINI uygulama: o zaman doğru şık ORTADA kalır ve 5. strateji öne geçer.
+Kör'ü en aza indiren **alt küme** ölçümle seçilir (`fix_bekleyen_denge.py` bunu yapar).
 
 ### 🔴 Yasak: dolguyla uzatma
 
