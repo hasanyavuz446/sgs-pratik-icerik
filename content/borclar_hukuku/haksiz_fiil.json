@@ -29,7 +29,7 @@
     "options": {
       "E": "Kusurlu ve hukuka aykırı bir fiille başkasına zarar veren, bu zararı gidermekle yükümlüdür",
       "A": "Bir kişi ancak kanunda açıkça sayılmış hâllerde başkasına verdiği zarardan sorumlu tutulabilir",
-      "B": "Zarar veren, kusuru bulunmasa dahi her hâlde verdiği bütün zararı tazmin etmek zorundadır",
+      "B": "Zarar veren, kusuru bulunmasa dahi verdiği bütün zararı tazmin etmek zorundadır",
       "C": "Zarar gören ile zarar veren arasında önceden bir sözleşme yoksa tazminat sorumluluğu doğmaz",
       "D": "Zarar veren yalnızca kastı hâlinde sorumlu olur; ihmalle verilen zararlardan hiç sorumlu değildir"
     },
@@ -74,7 +74,7 @@
       "B": "Bir hukuk kuralının ya da genel bir davranış yükümlülüğünün ihlali hukuka aykırılığı oluşturur; bu, kusurdan bağımsız objektif bir unsurdur",
       "A": "Hukuka aykırılık ancak failin bir ceza kanunu hükmünü ihlal etmiş ve mahkûm olmuş olması hâlinde gerçekleşir",
       "C": "Bir davranışın hukuka aykırı sayılabilmesi için zarar görenin bu davranışa önceden açıkça rıza göstermesi gerekir",
-      "D": "Hukuka aykırılık kusurdan bağımsız değildir; failin kusuru yoksa hukuka aykırılık da hiçbir biçimde bulunmaz",
+      "D": "Hukuka aykırılık kusurdan bağımsız değildir; failin kusuru yoksa hukuka aykırılık da bulunmaz",
       "E": "Yalnızca kişinin malvarlığına yönelen ihlaller hukuka aykırı sayılır; yaşam, sağlık ve şeref gibi kişilik değerlerine yönelenler kapsam dışında kalır"
     },
     "answer": "B",
@@ -95,8 +95,8 @@
     "options": {
       "E": "Kusur; zararı bilerek ve isteyerek doğuran kast ile gerekli özenin gösterilmemesi biçimindeki ihmali kapsar",
       "A": "Kusur yalnızca kastı ifade eder; dikkatsizlik ve özensizlik biçimindeki ihmal kusur sayılmaz",
-      "B": "İhmal ancak ağır olduğunda kusur oluşturur; hafif ihmalle verilen zararlardan hiç sorumlu olunmaz",
-      "C": "Kusurun derecesi tazminatın belirlenmesinde rol oynamaz; hâkim her hâlde zararın tamamına hükmeder",
+      "B": "İhmal ancak ağır olduğunda kusur oluşturur; hafif ihmalle verilen zararlardan hiç sorumlu olunmaz; hafif ihmalde tazminat talebi doğrudan reddedilir",
+      "C": "Kusurun derecesi tazminatın belirlenmesinde rol oynamaz; hâkim zararın tamamına hükmeder",
       "D": "Kastın varlığı hâlinde tazminat, ihmale göre kanunen iki katı olarak hesaplanır ve öyle ödenir"
     },
     "answer": "E",
@@ -116,7 +116,7 @@
     "stem": "Bir kişinin, doğrudan bir hukuk kuralını ihlal etmese de ahlaka aykırı bir fiille başkasına kasten zarar vermesi hâlinde sorumluluğu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Ahlaka aykırı bir fiille başkasına kasten zarar veren de bu zararı gidermekle yükümlüdür",
-      "A": "Fiil doğrudan bir hukuk kuralını ihlal etmediğinden, verilen zarardan hiçbir biçimde sorumlu olunmaz",
+      "A": "Fiil doğrudan bir hukuk kuralını ihlal etmediğinden, verilen zarardan sorumlu olunmaz",
       "B": "Bu hâlde sorumluluk yalnızca zarar görenin bir sözleşmeye dayanarak talepte bulunmasıyla doğar",
       "C": "Ahlaka aykırılık yalnızca cezai bir sorumluluk doğurur; özel hukuk bakımından tazminat istenemez",
       "E": "Fail ancak taksirle hareket etmişse sorumlu olur; kasten verdiği zarardan sorumlu tutulamaz"
@@ -204,7 +204,7 @@
     "stem": "Bir kişinin, kendisini ya da başkasını açık veya yakın bir zarardan korumak için üçüncü kişinin malvarlığına zarar vermesi (zorunluluk hâli) durumunda aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Fiil hukuka aykırı sayılmasa da hâkim, hakkaniyet gereği zarar verenin uygun bir tazminat ödemesine karar verebilir",
-      "A": "Zorunluluk hâlinde hareket eden kişi, verdiği zarardan hiçbir koşulda sorumlu tutulamaz; hâkimin hakkaniyete göre tazminata hükmetme yetkisi yoktur",
+      "A": "Zorunluluk hâlinde hareket eden kişi, verdiği zarardan sorumlu tutulamaz; hâkimin hakkaniyete göre tazminata hükmetme yetkisi yoktur",
       "B": "Zorunluluk hâli hukuka aykırılığı kaldırmaz; zarar veren verdiği zararın tamamını kusuru oranında öder",
       "D": "Bu hâlde tazminat, ancak zarar gören ile zarar veren arasında bir sözleşme bulunması durumunda doğar",
       "E": "Zorunluluk hâlinde zarar veren yalnızca kendi hayatını korumuşsa sorumsuz olur; başkasını korumuşsa öder"
@@ -248,8 +248,8 @@
     "stem": "Haksız fiilde 'zarar görenin rızası' bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Zarar görenin, üzerinde serbestçe tasarruf edebileceği bir değere ilişkin geçerli rızası, fiili hukuka uygun hâle getirebilir",
-      "A": "Zarar görenin rızası her hâlde geçersizdir; kişi kendi zararına önceden hukuken geçerli biçimde razı olamaz",
-      "B": "Zarar görenin rızası yalnızca tazminat miktarını azaltır; fiilin hukuka aykırılığını hiçbir zaman kaldırmaz",
+      "A": "Zarar görenin rızası geçersizdir; kişi kendi zararına önceden hukuken geçerli biçimde razı olamaz",
+      "B": "Zarar görenin rızası yalnızca tazminat miktarını azaltır; fiilin hukuka aykırılığını kaldırmaz",
       "C": "Rıza, ancak fiilden sonra açıklandığında sonuç doğurur; fiilden önce verilen rızanın hiçbir hükmü yoktur",
       "D": "Zarar görenin rızası, kişinin yaşamı ve vücut bütünlüğü dâhil her türlü değer üzerinde sınırsızca geçerlidir; ahlaka aykırılık bu rızayı etkilemez"
     },
@@ -292,7 +292,7 @@
     "stem": "Bir kişinin, resmî makamların zamanında müdahalesinin sağlanamayacağı ve hakkının kaybını önleyemeyeceği bir durumda, kendi hakkını korumak için güç kullanması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Durum ve koşulların haklı gösterdiği ölçüde güç kullanan kişi, bununla verdiği zarardan sorumlu tutulmaz",
-      "A": "Kişi kendi hakkını korumak için hiçbir koşulda güç kullanamaz; her hâlde yalnızca resmî makamlara başvurabilir",
+      "A": "Kişi kendi hakkını korumak için güç kullanamaz; yalnızca resmî makamlara başvurabilir",
       "B": "Kişi güç kullanabilirse de bununla verdiği zararın tamamını, koşullar ne olursa olsun tazmin etmek zorundadır",
       "C": "Bu yetki yalnızca kolluk görevlilerine tanınmıştır; özel kişiler hiçbir durumda haklarını zorla koruyamaz",
       "E": "Güç kullanımı ancak bir taşınmazın korunması hâlinde hukuka uygundur; taşınır mallar bakımından geçerli değildir"
@@ -314,7 +314,7 @@
     "stem": "Haksız fiil sorumluluğunda ispat yükü bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Zararı ve zarar verenin kusurunu, kural olarak tazminat isteyen zarar gören ispat etmekle yükümlüdür",
-      "A": "Kusurun bulunmadığını, her hâlde ve her tür sorumlulukta zarar veren fail ispat etmek zorundadır",
+      "A": "Kusurun bulunmadığını, ve her tür sorumlulukta zarar veren fail ispat etmek zorundadır",
       "C": "Zararın miktarını hâkim resen araştırır; tarafların bu konuda herhangi bir ispat yükü bulunmaz",
       "D": "Zarar gören yalnızca zararı ispatlar; kusurun varlığı ispata gerek olmaksızın karine olarak kabul edilir",
       "E": "Kusur sorumluluğunda ispat yükü yoktur; zarar görenin talepte bulunması tazminat için tek başına yeterlidir"
@@ -336,7 +336,7 @@
     "stem": "Tazminatın kapsamının ve ödenme biçiminin belirlenmesinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Hâkim, tazminatın kapsamını ve ödenme biçimini, durumun gereğini ve özellikle kusurun ağırlığını göz önüne alarak belirler",
-      "B": "Hâkim her durumda zararın tamamına hükmeder; kusurun ağırlığı ile zarar görenin durumu tazminat miktarını hiçbir biçimde etkilemez",
+      "B": "Hâkim her durumda zararın tamamına hükmeder; kusurun ağırlığı ile zarar görenin durumu tazminat miktarını etkilemez",
       "C": "Tazminatın miktarı taraflarca serbestçe belirlenir; hâkimin bu konuda takdir yetkisi bulunmamaktadır",
       "D": "Tazminat yalnızca toptan (sermaye) biçiminde ödenebilir; hâkim irat biçiminde ödemeye karar veremez",
       "E": "Tazminatın kapsamı kanunda maktu olarak belirlenmiştir; hâkim somut olaya göre bu tutarı değiştiremez"
@@ -358,7 +358,7 @@
     "stem": "Zarar görenin, zararın doğmasına ya da artmasına kendi davranışıyla katkıda bulunması (birlikte kusur) hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Hâkim, zarar görenin razı olması veya kusurunun zararı doğurup artırması durumunda tazminattan indirim yapabilir ya da tazminatı büsbütün kaldırabilir",
-      "B": "Zarar görenin kusuru tazminatı hiçbir biçimde etkilemez; fail her hâlde zararın tamamından sorumlu kalır",
+      "B": "Zarar görenin kusuru tazminatı etkilemez; fail zararın tamamından sorumlu kalır",
       "C": "Zarar görenin en küçük bir kusuru dahi failin sorumluluğunu tümüyle ve kendiliğinden ortadan kaldırır",
       "D": "İndirim yalnızca zarar görenin kastı hâlinde mümkündür; ihmali derecesindeki katkısı hiç dikkate alınmaz",
       "E": "Zarar görenin kendi kusuru bulunduğunda tazminat kanun gereği yarı yarıya azaltılır; hâkimin kusurun ağırlığına ve olayın koşullarına göre takdir yetkisi bulunmaz"
@@ -380,7 +380,7 @@
     "stem": "Zarar veren fail, kusuru bulunmakla birlikte, tazminatı ödediği takdirde yoksulluğa düşecek durumda ve kusuru da hafif ise aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Hakkaniyet gerektiriyorsa hâkim, kusuru hafif olan failin ödeyeceği tazminatı bu nedenle indirebilir",
-      "A": "Failin ekonomik durumu tazminatı etkilemez; kusuru hafif de olsa her hâlde zararın tamamını öder",
+      "A": "Failin ekonomik durumu tazminatı etkilemez; kusuru hafif de olsa zararın tamamını öder",
       "B": "Failin yoksulluğa düşecek olması tazminatı tümüyle ortadan kaldırır; hâkim kısmi indirimle yetinemez",
       "C": "Bu indirim yalnızca failin hiç kusuru bulunmadığı kusursuz sorumluluk hâllerinde uygulanabilir",
       "D": "İndirim, ancak zarar görenin de yoksulluğa düşecek durumda olmaması koşuluyla yapılabilir"
@@ -471,7 +471,7 @@
       "A": "Manevi tazminata yalnızca bedensel zarara bizzat uğrayan kişi hak kazanır; yakınları hiçbir durumda isteyemez",
       "B": "Manevi tazminat yalnızca ölüm hâlinde söz konusu olur; ölümle sonuçlanmayan bedensel zararlarda istenemez",
       "C": "Manevi tazminatın miktarı, zarar görenin uğradığı maddi zararın belirli bir yüzdesi olarak kanunla saptanmıştır",
-      "D": "Manevi tazminat yalnızca para ödenmesi biçiminde hükmedilebilir; kınama, özür veya kararın yayımlanması gibi paradan başka bir giderim biçimine hiçbir hâlde başvurulamaz"
+      "D": "Manevi tazminat yalnızca para ödenmesi biçiminde hükmedilebilir; kınama, özür veya kararın yayımlanması gibi paradan başka bir giderim biçimine başvurulamaz; kişilik hakkı ihlallerinde de aynı sınır geçerlidir"
     },
     "answer": "E",
     "solution": "TBK m.56: bedensel bütünlüğün zedelenmesinde zarar görene; ağır bedensel zarar veya ölümde yakınlara da manevi tazminata hükmedilebilir. Doğru cevap E.",
@@ -490,7 +490,7 @@
     "stem": "Kişilik hakkının zedelenmesinden zarar gören kişinin manevi tazminat talebi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Zarar gören manevi zarara karşılık para isteyebilir; hâkim bunun yerine veya buna ek olarak kararın yayımlanması gibi bir gidere de hükmedebilir",
-      "A": "Kişilik hakkı ihlalinde yalnızca maddi zarar tazmin edilir; manevi tazminat hiçbir biçimde istenemez",
+      "A": "Kişilik hakkı ihlalinde yalnızca maddi zarar tazmin edilir; manevi tazminat istenemez",
       "C": "Manevi tazminat talebi ancak kişilik hakkı ihlalinin aynı zamanda bir suç oluşturması hâlinde ileri sürülebilir",
       "D": "Kişilik hakkı zedelenen kişi yalnızca ihlalin durdurulmasını isteyebilir; ayrıca para ödenmesini talep edemez",
       "E": "Bu tazminatın miktarı, zarar görenin sosyal ve ekonomik durumu ile olayın ağırlığına bakılmaksızın kanunda maktu bir tutar olarak önceden belirlenmiştir"
@@ -534,9 +534,9 @@
     "stem": "Ayırt etme (temyiz) gücü bulunmayan bir kişinin başkasına verdiği zarar bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Kural olarak sorumlu tutulamamakla birlikte hâkim, hakkaniyet gerektiriyorsa onun da verdiği zararın tamamen veya kısmen giderilmesine karar verebilir",
-      "A": "Ayırt etme gücü bulunmayan kişi hiçbir koşulda ve hiçbir biçimde verdiği zarardan sorumlu tutulamaz",
+      "A": "Ayırt etme gücü bulunmayan kişi ve verdiği zarardan sorumlu tutulamaz",
       "B": "Ayırt etme gücü bulunmayan kişi de tıpkı temyiz gücü yerinde olan kişi gibi verdiği zararın tamamından sorumludur; hakkaniyet gereği indirim yapılamaz",
-      "C": "Bu kişinin zararından yalnızca onu gözetim altında bulunduran sorumlu olur; kendisi hiçbir hâlde sorumlu değildir",
+      "C": "Bu kişinin zararından yalnızca onu gözetim altında bulunduran sorumlu olur; kendisi sorumlu değildir",
       "D": "Ayırt etme gücünün bulunmaması yalnızca cezai sorumluluğu kaldırır; özel hukuk sorumluluğuna hiçbir etkisi yoktur"
     },
     "answer": "E",
@@ -557,7 +557,7 @@
     "options": {
       "C": "Adam çalıştıran, çalışanın işini görürken üçüncü kişilere verdiği zararı, kendisinin kusuru bulunmasa dahi gidermekle yükümlüdür",
       "A": "Adam çalıştıran ancak zararın doğmasında kendisinin de kişisel bir kusuru bulunduğu kanıtlanırsa sorumlu olur",
-      "B": "Adam çalıştıran, çalışanının verdiği zarardan hiçbir hâlde sorumlu tutulamaz; sorumluluk yalnızca çalışana aittir",
+      "B": "Adam çalıştıran, çalışanının verdiği zarardan sorumlu tutulamaz; sorumluluk yalnızca çalışana aittir",
       "D": "Adam çalıştıranın sorumluluğu, ancak çalışanla arasında yazılı bir hizmet sözleşmesi bulunması hâlinde doğar",
       "E": "Adam çalıştıran yalnızca çalışanının kasten verdiği zararlardan sorumludur; çalışanın ihmaliyle doğan zararlarda sorumluluğu doğmaz"
     },
@@ -578,7 +578,7 @@
     "stem": "Adam çalıştıranın, çalışanının verdiği zarardan sorumluluktan kurtulabilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Çalışanı seçerken, ona işiyle ilgili talimat verirken ve onu denetlerken gerekli özeni gösterdiğini ispat ederse sorumluluktan kurtulur",
-      "A": "Adam çalıştıran hiçbir biçimde sorumluluktan kurtulamaz; sorumluluğu mutlak olup kurtuluş kanıtına yer yoktur",
+      "A": "Adam çalıştıran sorumluluktan kurtulamaz; sorumluluğu mutlak olup kurtuluş kanıtına yer yoktur",
       "C": "Adam çalıştıran, yalnızca zararı çalışanın kasten verdiğini ispat ederek sorumluluktan kurtulabilir",
       "D": "Sorumluluktan kurtulmak için zararı üçüncü bir kişinin ağır kusurunun doğurduğunu ispat etmesi tek başına yeterlidir; özen gösterdiğini ayrıca kanıtlaması aranmaz",
       "E": "Adam çalıştıran ancak ödediği tazminatı çalışandan rücu yoluyla geri alarak sorumluluğunu ortadan kaldırabilir"
@@ -600,8 +600,8 @@
     "stem": "Çalışanının verdiği zararı gidermek zorunda kalan adam çalıştıranın, çalışana rücu (dönme) hakkı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Adam çalıştıran, ödediği tazminat için zarara neden olan çalışana, onun sorumlu olduğu ölçüde rücu edebilir",
-      "B": "Adam çalıştıranın çalışana rücu hakkı hiçbir hâlde yoktur; ödediği tazminatı kendisi kesin olarak yüklenir",
-      "C": "Adam çalıştıran, çalışana ancak zararın tamamının iki katı tutarında bir cezayla birlikte rücu edebilir",
+      "B": "Adam çalıştıranın çalışana rücu hakkı yoktur; ödediği tazminatı kendisi kesin olarak yüklenir",
+      "C": "Adam çalıştıran, çalışana ancak zararın tamamının iki katı tutarında bir cezayla birlikte rücu edebilir; rücu tutarı çalışanın kusuru oranında azaltılamaz",
       "D": "Rücu hakkı yalnızca çalışanın zararı kasten verdiği hâllerde doğar; ağır ihmalinde dahi rücu edilemez",
       "E": "Adam çalıştıran, çalışanına değil ancak zararı gören üçüncü kişiye karşı rücu talebinde bulunabilir"
     },
@@ -622,7 +622,7 @@
     "stem": "Bir hayvanın verdiği zarardan, o hayvanı bulunduran kişinin sorumluluğu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Hayvan bulunduran zararı gidermekle yükümlüdür; ancak zararın doğmaması için gerekli özeni gösterdiğini ispat ederse sorumlu olmaz",
-      "B": "Hayvan bulunduran, hayvanın verdiği zarardan hiçbir koşulda ve hiçbir biçimde sorumlu tutulamaz",
+      "B": "Hayvan bulunduran, hayvanın verdiği zarardan ve sorumlu tutulamaz",
       "C": "Hayvan bulunduranın sorumluluğu mutlaktır; gerekli özeni gösterdiğini ispat etse dahi sorumluluktan kurtulamaz",
       "D": "Hayvan bulunduran yalnızca hayvanın maliki olduğu hâllerde sorumlu olur; hayvanı geçici olarak yanında bulunduran kişilerin sorumluluğu doğmaz",
       "E": "Hayvanın verdiği zarardan ona kısa süre önce fiilen bakan kişi değil, doğrudan hayvanın kendisi sorumlu sayılır"
@@ -755,7 +755,7 @@
     "options": {
       "C": "Sorumluluk kişisel bir kusura değil, kanunun öngördüğü objektif özen yükümlülüğünün yerine getirilmemesine dayanır; sorumlu bu özeni gösterdiğini ispatla kurtulabilir",
       "A": "Sorumluluk tümüyle sorumlunun kişisel kusuruna dayanır; kusuru ispatlanamazsa sorumluluk hiç doğmaz",
-      "B": "Objektif özen sorumluluğunda sorumlu kişi hiçbir biçimde kurtuluş kanıtı getiremez; sorumluluğu mutlaktır",
+      "B": "Objektif özen sorumluluğunda sorumlu kişi kurtuluş kanıtı getiremez; sorumluluğu mutlaktır",
       "D": "Bu sorumlulukta zarar görenin, sorumlunun özen yükümlülüğünü ihlal ettiğini ayrıca ispat etmesi gerekir",
       "E": "Objektif özen sorumluluğu yalnızca sözleşmeden doğan borç ilişkilerinde söz konusu olur; haksız fiil alanında böyle bir ölçüt kabul edilmemiş ve hiç uygulanmamıştır"
     },
@@ -800,7 +800,7 @@
       "A": "Ödemede bulunan sorumlu, diğerlerine karşı, hâkimin durum ve koşullara göre belirleyeceği pay oranında rücu edebilir",
       "B": "Tazminatın tamamını ödeyen sorumlunun diğerlerine karşı hiçbir rücu hakkı bulunmaz; ödediğini kesin olarak yüklenir",
       "C": "Ödemede bulunan sorumlu, diğerlerinin her birinden ayrı ayrı ödediği tazminatın tamamını geri isteyebilir",
-      "D": "İç ilişkideki paylaşım her hâlde eşit yapılır; kusur dereceleri arasındaki fark hiçbir biçimde dikkate alınmaz",
+      "D": "İç ilişkideki paylaşım eşit yapılır; kusur dereceleri arasındaki fark dikkate alınmaz",
       "E": "Rücu hakkı yalnızca zarar görenin tazminatı hangi sorumludan isteyeceğini önceden belirlemesi hâlinde doğar"
     },
     "answer": "A",
@@ -819,11 +819,11 @@
     "konu": "haksiz_fiil",
     "stem": "Haksız fiilden doğan tazminat istemi bakımından zamanaşımı süreleri aşağıdakilerden hangisidir?",
     "options": {
-      "B": "Zarar görenin zararı ve failini öğrendiği tarihten başlayarak iki yıl ve her hâlde fiilin işlendiği tarihten başlayarak on yıl",
-      "A": "Zararı ve faili öğrenmeden başlayarak bir yıl ve her hâlde fiilin işlendiği tarihten başlayarak beş yıl",
-      "C": "Zararın öğrenildiği tarihten başlayarak beş yıl ve her hâlde fiilin işlendiği tarihten başlayarak yirmi yıl",
+      "B": "Zarar görenin zararı ve failini öğrendiği tarihten başlayarak iki yıl ve fiilin işlendiği tarihten başlayarak on yıl",
+      "A": "Zararı ve faili öğrenmeden başlayarak bir yıl ve fiilin işlendiği tarihten başlayarak beş yıl",
+      "C": "Zararın öğrenildiği tarihten başlayarak beş yıl ve fiilin işlendiği tarihten başlayarak yirmi yıl",
       "D": "Fiilin işlendiği tarihten başlayan tek bir on yıllık süre söz konusudur; zararın ve failin öğrenildiği anın süreye herhangi bir etkisi bulunmaz",
-      "E": "Zararı ve faili öğrenmeden başlayarak üç yıl ve her hâlde fiilin işlendiği tarihten başlayarak on beş yıl"
+      "E": "Zararı ve faili öğrenmeden başlayarak üç yıl ve fiilin işlendiği tarihten başlayarak on beş yıl"
     },
     "answer": "B",
     "solution": "TBK m.72: haksız fiil tazminatı, öğrenmeden (zarar+fail) 2 yıl ve her hâlde fiilden 10 yıl geçmekle zamanaşımına uğrar. Doğru cevap B.",
@@ -842,7 +842,7 @@
     "stem": "Haksız fiil aynı zamanda cezayı gerektiren bir suç oluşturuyor ve ceza kanunları bu fiil için daha uzun bir zamanaşımı öngörüyorsa aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Tazminat istemine, ceza kanunlarının öngördüğü daha uzun zamanaşımı süresi uygulanır",
-      "A": "Fiil suç oluştursa bile tazminat istemine her hâlde borçlar hukukundaki iki yıllık süre uygulanır",
+      "A": "Fiil suç oluştursa bile tazminat istemine borçlar hukukundaki iki yıllık süre uygulanır",
       "B": "Fiilin suç oluşturması, tazminat istemini zamanaşımına tümüyle kapatır; artık tazminat istenemez",
       "C": "Bu durumda tazminat istemi hiçbir zamanaşımına tabi olmaz; her zaman ileri sürülebilir hâle gelir",
       "E": "Ceza zamanaşımı yalnızca fail hakkında ceza davası açılmışsa uygulanır; açılmamışsa dikkate alınmaz"
@@ -886,7 +886,7 @@
     "stem": "Bir kişinin davranışının hem sözleşmeye aykırılık hem de haksız fiil oluşturduğu (sorumluluk sebeplerinin yarışması) durumda aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Zarar gören, koşulları varsa hem sözleşmeye aykırılığa hem de haksız fiile dayanabilir; kendisi için daha elverişli olan hukukî sebebi seçebilir",
-      "A": "Taraflar arasında sözleşme bulunduğu için zarar gören yalnızca sözleşmeye aykırılık hükümlerine dayanabilir; haksız fiil hükümleri hiçbir biçimde uygulanmaz",
+      "A": "Taraflar arasında sözleşme bulunduğu için zarar gören yalnızca sözleşmeye aykırılık hükümlerine dayanabilir; haksız fiil hükümleri uygulanmaz; yarışan talep kavramı Türk hukukunda benimsenmemiştir",
       "B": "Zarar gören her iki sebebe de aynı anda dayanmak ve iki ayrı tazminatı birlikte tahsil etmek zorundadır",
       "C": "Sorumluluk sebeplerinin yarışması hâlinde zarar gören hiçbir sebebe dayanamaz; talep hakkı büsbütün düşer",
       "E": "Yarışma hâlinde hangi hükümlerin uygulanacağını zarar veren fail belirler; zarar görenin seçim hakkı yoktur"
@@ -908,8 +908,8 @@
     "stem": "Kendi kusuruyla (örneğin aşırı alkol alarak) geçici olarak ayırt etme gücünü kaybeden bir kişinin, bu sırada başkasına verdiği zarardan sorumluluğu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Bu kişi, ayırt etme gücünü kaybetmede kendisinin kusuru bulunmadığını ispat etmedikçe verdiği zarardan sorumludur",
-      "A": "Zarar verdiği anda ayırt etme gücü bulunmadığından, verdiği zarardan hiçbir biçimde sorumlu tutulamaz",
-      "B": "Bu kişi her hâlde sorumludur; ayırt etme gücünü kaybetmede kusurunun bulunup bulunmaması sonucu değiştirmez",
+      "A": "Zarar verdiği anda ayırt etme gücü bulunmadığından, verdiği zarardan sorumlu tutulamaz",
+      "B": "Bu kişi sorumludur; ayırt etme gücünü kaybetmede kusurunun bulunup bulunmaması sonucu değiştirmez",
       "D": "Sorumluluğu yalnızca zararı kasten verdiği hâllerde doğar; geçici ayırt etme gücü kaybında ihmali dikkate alınmaz",
       "E": "Bu durumda zarardan yalnızca kişiye alkol sunan üçüncü kişiler sorumlu olur; kendisinin sorumluluğu bulunmaz"
     },
@@ -933,7 +933,7 @@
       "B": "Bedensel zarar ve ölüm hâlinde tazminat yalnızca toptan ödenebilir; irat biçiminde ödemeye karar verilemez",
       "C": "Tazminatın hangi biçimde ve hangi ölçüde ödeneceğini yalnızca zarar veren belirler; hâkimin bu konuda bir takdir yetkisi bulunmaz",
       "D": "İrat biçiminde ödemeye hükmedildiğinde borçludan hiçbir güvence istenemez; güvence istemek kanunen yasaktır",
-      "E": "Tazminat her hâlde irat biçiminde ödenir; toptan ödeme yalnızca tarafların oybirliğiyle mümkün olabilir"
+      "E": "Tazminat irat biçiminde ödenir; toptan ödeme yalnızca tarafların oybirliğiyle mümkün olabilir"
     },
     "answer": "A",
     "solution": "Hâkim, durumun gereğine göre tazminatın toptan veya irat biçiminde ödenmesine karar verebilir; irat hâlinde borçludan güvence de isteyebilir (TBK m.51 çerçevesi). Doğru cevap A.",
@@ -954,7 +954,7 @@
       "C": "Haksız fiilde kusuru kural olarak zarar gören ispatlarken, sözleşmeye aykırılıkta borçlunun kusurlu olduğu karine kabul edilir; kusursuzluğunu borçlu ispatlar",
       "A": "Her iki sorumlulukta da kusurun varlığını ispat yükü zarar görene aittir; bu bakımdan aralarında hiçbir fark yoktur",
       "B": "Her iki sorumlulukta da kusursuz olduğunu ispat yükü zarar verene aittir; ispat yükünün dağılımı bakımından ikisi arasında hiçbir fark bulunmaz ve aynı kurala tabidirler",
-      "D": "Sözleşmeye aykırılıkta kusur hiç aranmaz; borçlu kusuru olmasa da her hâlde zararın tamamından sorumlu olur",
+      "D": "Sözleşmeye aykırılıkta kusur hiç aranmaz; borçlu kusuru olmasa da zararın tamamından sorumlu olur",
       "E": "Haksız fiilde kusur karine kabul edilirken, sözleşmeye aykırılıkta kusuru alacaklının ispat etmesi gerekir"
     },
     "answer": "C",
@@ -1084,8 +1084,8 @@
     "stem": "Ayırt etme gücü bulunmayan küçük bir çocuk, oyun sırasında komşunun camını kırmıştır. Çocuğun kendi malvarlığı bulunmakta, gözetimle yükümlü kişinin ise ödeme gücü yoktur. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Kural olarak sorumlu tutulamasa da hâkim, hakkaniyet gerektiriyorsa çocuğun da zararı tamamen veya kısmen gidermesine karar verebilir",
-      "A": "Ayırt etme gücü bulunmayan çocuk hiçbir koşulda sorumlu tutulamaz; hâkimin hakkaniyet gereği tazminata hükmetme yetkisi de bulunmamaktadır",
-      "C": "Çocuk, ayırt etme gücü olmasa dahi verdiği zararın tamamından her hâlde ve kayıtsız şartsız sorumludur",
+      "A": "Ayırt etme gücü bulunmayan çocuk sorumlu tutulamaz; hâkimin hakkaniyet gereği tazminata hükmetme yetkisi de bulunmamaktadır",
+      "C": "Çocuk, ayırt etme gücü olmasa dahi verdiği zararın tamamından ve kayıtsız şartsız sorumludur",
       "D": "Zarardan yalnızca gözetimle yükümlü kişi sorumludur; onun ödeme gücü yoksa zarar tümüyle komşunun üzerinde kalır",
       "E": "Çocuğun sorumluluğu, ancak camı kasten kırdığının komşu tarafından ispatlanması hâlinde gündeme gelebilir"
     },
@@ -1173,7 +1173,7 @@
     "options": {
       "C": "(Z), uğradığı manevi zarara karşılık bir miktar para isteyebileceği gibi hâkim, buna ek olarak veya bunun yerine kararın yayımlanması gibi başka bir gidere de hükmedebilir",
       "A": "(Z) yalnızca haberin yol açtığı maddi zararını isteyebilir; kişilik hakkı ihlali için manevi tazminat talep edemez",
-      "B": "(Z)'nin manevi tazminat isteyebilmesi ancak yayımlanan haberin aynı zamanda bir suç oluşturması ve failin ceza mahkemesince kesin olarak mahkûm edilmesi hâlinde mümkündür",
+      "B": "(Z)'nin manevi tazminat isteyebilmesi ancak yayımlanan haberin aynı zamanda bir suç oluşturması ve failin ceza mahkemesince kesin olarak mahkûm edilmesi hâlinde mümkündür; ceza davası açılmamışsa manevi tazminat istenemez",
       "D": "(Z) yalnızca haberin yayımının durdurulmasını isteyebilir; ayrıca para ödenmesini hiçbir biçimde talep edemez",
       "E": "Manevi tazminatın tutarı, (Z)'nin kişisel ve ekonomik durumuna bakılmaksızın kanunda maktu olarak belirlenmiştir"
     },
@@ -1216,10 +1216,10 @@
     "stem": "Kırmızı ışıkta usulüne uygun geçen bir sürücünün aracının önüne, tüm uyarılara rağmen bilerek atlayan yaya yaralanmıştır. Sürücünün trafik kuralına aykırılığı yoktur. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Zararı doğuran, yayanın kendi ağır kusuru olduğundan, bu kusur illiyet bağını keserek sürücünün sorumluluğunu kaldırabilir",
-      "A": "Aracı kullanan sürücü, hiçbir kusuru bulunmasa dahi çarpma sonucu doğan zararın tamamından her hâlde sorumludur",
+      "A": "Aracı kullanan sürücü, hiçbir kusuru bulunmasa dahi çarpma sonucu doğan zararın tamamından sorumludur",
       "B": "Yayanın kusuru yalnızca tazminattan bir miktar indirim yapılmasını sağlar; kusur ne kadar ağır olursa olsun sürücünün sorumluluğunu kaldırmaz",
       "D": "Sürücü kurallara uygun davrandığını ispat etse bile, yaya yaralandığı için sorumluluğu kendiliğinden doğar",
-      "E": "Yayanın kusuru dikkate alınmaz; sürücü ile yaya zarardan her hâlde eşit oranda sorumlu tutulur"
+      "E": "Yayanın kusuru dikkate alınmaz; sürücü ile yaya zarardan eşit oranda sorumlu tutulur"
     },
     "answer": "C",
     "solution": "Zarar görenin (yayanın) ağır kusuru illiyet bağını keserek zarar verenin (sürücünün) sorumluluğunu ortadan kaldırabilir. Doğru cevap C.",
@@ -1260,7 +1260,7 @@
     "stem": "Bir şirket, işe aldığı şoförü özenle seçtiğini, belgelerini denetlediğini, gerekli talimatları verdiğini ve düzenli olarak gözetim yaptığını ispatlamıştır. Buna rağmen şoför bir kazayla üçüncü kişiye zarar vermiştir. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Şirket, seçme, talimat ve gözetimde gerekli özeni gösterdiğini ispatladığından adam çalıştıran sıfatıyla sorumluluktan kurtulabilir",
-      "A": "Şirketin sorumluluğu mutlaktır; gerekli tüm özeni gösterdiğini ispatlasa dahi sorumluluktan hiçbir biçimde kurtulamaz",
+      "A": "Şirketin sorumluluğu mutlaktır; gerekli tüm özeni gösterdiğini ispatlasa dahi sorumluluktan kurtulamaz",
       "C": "Şirket yalnızca şoförün zararı kasten verdiğini ispat ederek kurtulabilir; özen ispatının bir önemi yoktur",
       "D": "Zarar bir çalışanın eliyle doğduğu için sorumluluk doğrudan doğruya ve yalnızca zarar gören üçüncü kişinin üzerinde kalır; işveren sorumlu olmaz",
       "E": "Şirket özen gösterdiğini ispatlasa da tazminatı öder; yalnızca sonradan bu tutarı şoförden rücu yoluyla geri alır"
@@ -1283,7 +1283,7 @@
     "options": {
       "A": "Öğrenmeden itibaren iki yıllık süre dolduğundan, fail zamanaşımı def'ini ileri sürerse istem zamanaşımına uğramış sayılır",
       "B": "Fiilin üzerinden on yıl geçmediğinden istem zamanaşımına uğramaz; zararın öğrenilmesine bağlı iki yıllık sürenin burada bir önemi bulunmaz",
-      "C": "Zamanaşımını hâkim kendiliğinden (resen) dikkate alır; failin ayrıca def'ide bulunmasına hiçbir biçimde gerek yoktur",
+      "C": "Zamanaşımını hâkim kendiliğinden (resen) dikkate alır; failin ayrıca def'ide bulunmasına gerek yoktur",
       "D": "İki yıllık süre dolsa bile zamanaşımı istem hakkını tümüyle sona erdirir; borç kendiliğinden ortadan kalkar",
       "E": "Haksız fiil istemleri zamanaşımına uğramadığından, aradan ne kadar süre geçerse geçsin (C) her zaman dava açabilir"
     },
@@ -1304,7 +1304,7 @@
     "stem": "Bir iş kazasında hayatını kaybeden işçinin eşi ve çocukları, duydukları derin acı nedeniyle manevi tazminat istemektedir. Aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Ölüm hâlinde hâkim, ölenin yakınlarına da manevi tazminat olarak uygun bir miktar paranın ödenmesine karar verebilir",
-      "B": "Manevi tazminata yalnızca zarara bizzat uğrayan ölen kişi hak kazanır; yakınlarının böyle bir talep hakkı bulunmaz",
+      "B": "Manevi tazminata yalnızca zarara bizzat uğrayan ölen kişi hak kazanır; yakınlarının böyle bir talep hakkı bulunmaz; yansıma yoluyla uğranan acı hukuken korunmaz",
       "C": "Yakınların manevi tazminat isteyebilmesi, ölümün ayrıca cezayı gerektiren bir suç oluşturmasına bağlıdır",
       "D": "Manevi tazminatın tutarı, yakınların ölenin mirasından aldıkları paya göre kanunen belirlenir",
       "E": "Ölüm hâlinde yalnızca maddi tazminat istenebilir; manevi tazminat yalnızca bedensel zararla sınırlıdır"

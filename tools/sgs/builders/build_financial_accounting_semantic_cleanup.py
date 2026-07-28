@@ -313,7 +313,7 @@ PATCHES = {
     "finmuh-temelkavram-gen-0033": patch(
         "İşletme, stok maliyetlerini daha güvenilir sunan yeni bir yönteme geçmek için haklı bir gerekçe belirlemiş; değişikliğin nedenini ve mali tablolara etkisini dipnotlarda açıklamıştır.\n\nBu uygulama Tutarlılık Kavramı bakımından nasıl değerlendirilir?",
         {
-            "A": "Yöntem değişikliği hiçbir koşulda yapılamayacağından kavrama aykırıdır.",
+            "A": "Yöntem değişikliği yapılamayacağından kavrama aykırıdır.",
             "B": "Yalnız vergi matrahı azalıyorsa yöntem değişikliği yapılabilir.",
             "C": "Haklı neden ve açıklama bulunduğu için kavramla uyumludur.",
             "D": "Her dönem farklı yöntem seçmek Tutarlılık Kavramının gereğidir.",
@@ -352,7 +352,7 @@ PATCHES = {
     "finmuh-temelkavram-gen-0049": patch(
         "Bir muhasebe hatası, 100.000.000 ₺ toplam varlığa sahip işletmede yalnız 8.000 ₺ tutarındadır; ancak düzeltilmediğinde 3.000 ₺ dönem kârı, 5.000 ₺ dönem zararına dönüşmektedir.\n\nÖnemlilik Kavramına göre en uygun değerlendirme hangisidir?",
         {
-            "A": "Tutar toplam varlıklara göre küçük olduğu için hata hiçbir koşulda önemli değildir.",
+            "A": "Tutar toplam varlıklara göre küçük olduğu için hata önemli değildir.",
             "B": "Kârı zarara dönüştürdüğü için hata niteliği bakımından önemli kabul edilebilir.",
             "C": "Yalnız nakit işlemlerindeki hatalar önemli sayılabilir.",
             "D": "Önemlilik yalnız belgenin kaç sayfa olduğuna göre belirlenir.",
@@ -1719,7 +1719,7 @@ PPE_PATCHES = {
             "B": "Yeniden değerleme yalnız tamamen amorti edilmiş makinelerde yapılabilir.",
             "C": "Seçici değerleme yapılamaz; makine sınıfının tamamı yeniden değerlenir.",
             "D": "Değer artışı olan makineler stoklara aktarılır.",
-            "E": "Yeniden değerleme modeli maddi duran varlıklarda hiçbir zaman kullanılamaz.",
+            "E": "Yeniden değerleme modeli maddi duran varlıklarda kullanılamaz.",
         },
         "C",
         "Bir sınıf içinden yalnız değer artışı yüksek kalemleri seçmek finansal tabloları farklı tarihlere ait maliyet ve değerlerin karışımı hâline getirir. TMS 16'ya göre bir kalem yeniden değerlendiğinde ilgili **varlık sınıfının tamamı** yeniden değerlenir.",
@@ -1732,7 +1732,7 @@ PPE_PATCHES = {
             "B": "2026 faizi maliyete eklenir; 2027 faizi için doğrudan gider yazma veya maliyete ekleme seçeneği vardır.",
             "C": "Yalnız 2027 faizi maliyete eklenir, 2026 faizi kayda alınmaz.",
             "D": "Her iki yılın faizi de zorunlu olarak 257 Birikmiş Amortismanlar hesabına yazılır.",
-            "E": "Faizler makinenin maliyetiyle hiçbir koşulda ilişkilendirilemez.",
+            "E": "Faizler makinenin maliyetiyle ilişkilendirilemez.",
         },
         "B",
         "Sabit kıymetin envantere alındığı hesap döneminin sonuna kadar oluşan kredi faizinin maliyete eklenmesi zorunludur; bu nedenle **2026 yılına ait 40.000 ₺ maliyete eklenir**. Sonraki dönem faizleri için mükellef, tercihini tutarlı uygulamak üzere doğrudan gider yazma veya maliyete ekleme yolunu seçebilir.",
@@ -1808,7 +1808,7 @@ PPE_PATCHES = {
         {
             "A": "Cari ve gelecek dönemlere ileriye yönelik uygulanır; cari yıl amortismanı 40.000 ₺ olur.",
             "B": "Geçmiş yılların tamamı geriye dönük düzeltilir; cari yıl amortisman ayrılmaz.",
-            "C": "Yararlı ömür hiçbir koşulda değiştirilemez.",
+            "C": "Yararlı ömür değiştirilemez.",
             "D": "120.000 ₺'nin tamamı doğrudan gider yazılır.",
             "E": "Değişiklik yalnız dipnotta açıklanır, amortisman hesabını etkilemez.",
         },
@@ -1931,7 +1931,7 @@ INTANGIBLE_PATCHES = {
             "B": "Sınırsız yararlı ömür, varlığın sonsuza kadar kesin gelir sağlayacağı anlamına gelir; bu nedenle varlık ne itfa edilir ne değer düşüklüğü testine alınır ne de ömür değerlendirmesi yeniden gözden geçirilir.",
             "C": "Sınırlı ömürlü varlık itfa edilmez, sınırsız ömürlü varlık itfa edilir.",
             "D": "Sınırlı ömürlü varlık sistematik olarak itfa edilir; sınırsız ömürlü varlık itfa edilmez ve yıllık değer düşüklüğü testine tabi tutulur.",
-            "E": "Sınırsız ömürlü varlık hiçbir zaman değer düşüklüğüne uğramaz.",
+            "E": "Sınırsız ömürlü varlık değer düşüklüğüne uğramaz.",
         },
         "D",
         "Sınırlı yararlı ömre sahip maddi olmayan duran varlığın itfaya tabi tutarı yararlı ömrüne dağıtılır. Sınırsız yararlı ömürlü varlık **itfa edilmez**; yıllık olarak ve değer düşüklüğü belirtisi ortaya çıktığında TMS 36 kapsamında test edilir.",
@@ -2100,7 +2100,7 @@ INTANGIBLE_PATCHES = {
             "B": "Seçici uygulama yapılamaz; aktif piyasası bulunan ilgili sınıftaki varlıklar aynı yöntemle ve eş zamanlı değerlenir.",
             "C": "Yeniden değerleme yalnız şerefiyede uygulanabilir.",
             "D": "Bütün kotalar stok hesabına aktarılır.",
-            "E": "Maddi olmayan duran varlıklar benzersiz kabul edildiğinden aktif piyasa bulunsa bile yeniden değerleme hiçbir koşulda mümkün değildir; bütün sınıf yalnız maliyet modelinde tutulur.",
+            "E": "Maddi olmayan duran varlıklar benzersiz kabul edildiğinden aktif piyasa bulunsa bile yeniden değerleme mümkün değildir; bütün sınıf yalnız maliyet modelinde tutulur.",
         },
         "B",
         "Yeniden değerleme modeli aktif piyasa koşuluyla uygulanabilir. Bir sınıfın içinden yalnız değer artışı olan kalemleri seçmek farklı tarihlere ait tutarların birlikte sunulmasına yol açacağından, ilgili sınıf **aynı yöntemle ve eş zamanlı** yeniden değerlenir.",
@@ -2257,7 +2257,7 @@ FINANCIAL_INVESTMENT_PATCHES = {
         "Bir yatırımcı, bir şirketin oy haklarının yalnız %35'ine sahiptir. Ancak yürürlükteki sözleşme yatırımcıya şirketin getirilerini en çok etkileyen üretim ve fiyatlama kararlarını tek başına yönetme hakkı vermektedir. Yatırımcı değişken getirilere maruzdur ve bu hakkını getirileri etkilemek için kullanabilmektedir. TFRS 10'a göre sonuç nedir?",
         {
             "A": "Üç kontrol unsuru birlikte bulunduğundan, oy hakkı %50'nin altında olsa da yatırımcı kontrol sahibidir.",
-            "B": "Oy hakkı %50'nin altında olduğundan kontrol hiçbir koşulda kurulamaz.",
+            "B": "Oy hakkı %50'nin altında olduğundan kontrol kurulamaz.",
             "C": "Yatırımcı yalnız %10 eşiğini geçtiği için otomatik olarak iştirak sayılır; sözleşmeden doğan yönetim hakkı ve getirileri etkileme imkânı dikkate alınmaz.",
             "D": "Sözleşmeden doğan haklar yalnız bilanço tarihinde kullanılmışsa kontrol doğar.",
             "E": "Değişken getirilere maruz kalmak tek başına müşterek kontrol yaratır.",
@@ -2478,7 +2478,7 @@ FINANCIAL_INVESTMENT_PATCHES = {
         "Bir yatırımcı, hâlen kullanılabilir durumda olan ve kullanıldığında yatırım yapılan işletmede ilave oy hakkı sağlayacak pay alım opsiyonlarına sahiptir. TMS 28'e göre önemli etki değerlendirmesinde bu haklar için hangi işlem yapılır?",
         {
             "A": "Mevcut durumda kullanılabilir potansiyel oy haklarının varlığı ve etkisi değerlendirmede dikkate alınır.",
-            "B": "Potansiyel oy hakları hiçbir koşulda dikkate alınmaz.",
+            "B": "Potansiyel oy hakları dikkate alınmaz.",
             "C": "Yalnız yönetimin opsiyonu kullanma niyeti varsa önemli etki doğar.",
             "D": "Opsiyonlar otomatik olarak yatırımcıya kontrol sağlar.",
             "E": "Potansiyel oy hakları raporlama tarihinde kullanılabilir durumda olsa bile ancak fiilen kullanıldıktan sonraki hesap döneminin önemli etki değerlendirmesine alınır.",
@@ -5210,7 +5210,7 @@ KDV_ACCOUNTING_PATCHES = {
         'İşletme, vadeli sattığı mal için müşteriye ayrıca vade farkı faturası düzenlemiştir. Bu vade farkının KDV karşısındaki durumu bakımından aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Vade farkı matraha dahildir; malın tabi olduğu oran üzerinden KDV hesaplanır.',
-            'B': "Vade farkı bir finansman geliri olduğundan hiçbir biçimde KDV'ye tabi değildir.",
+            'B': "Vade farkı bir finansman geliri olduğundan KDV'ye tabi değildir.",
             'C': 'Vade farkı yalnızca gelir vergisine tabidir; KDV kapsamı dışındadır.',
             'D': 'Vade farkı üzerinden daima %20 KDV hesaplanır; malın oranı dikkate alınmaz.',
             'E': 'Vade farkı satış iadesi gibi kabul edilip 391 borçlandırılır.',

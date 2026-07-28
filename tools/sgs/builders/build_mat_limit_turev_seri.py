@@ -211,7 +211,7 @@ q("f(x) = |x − 2| / (x − 2) fonksiyonunun x = 2 noktasındaki limiti için a
   "Soldan ve sağdan limitler farklı olduğundan limit yoktur",
   ["Soldan ve sağdan limitler eşit olduğundan limit 1'e eşittir",
    "Soldan ve sağdan limitler eşit olduğundan limit 0'a eşittir",
-   "Fonksiyon x = 2 noktasında tanımlı olmadığından limit her hâlde sıfırdır",
+   "Fonksiyon x = 2 noktasında tanımlı olmadığından limit sıfırdır",
    "Soldan limit sağdan limitten büyük olduğundan limit −1'e eşittir"],
   "x < 2 için |x − 2| = 2 − x olduğundan soldan limit −1; x > 2 için |x − 2| = x − 2 "
   "olduğundan sağdan limit 1'dir. İki tek yönlü limit eşit olmadığından limit yoktur.")

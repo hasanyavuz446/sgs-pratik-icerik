@@ -93,7 +93,7 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "E": "Anonim şirketin sona ermesine yalnızca mahkeme karar verebilir; kanunda başka hiçbir sona erme sebebi yoktur"
         },
         "as-gen-0053": {
-            "B": "Yönetim kurulu üyesinin şirketle işlem yapması her hâlde kesin olarak yasaktır; genel kurul izniyle dahi istisnası yoktur"
+            "B": "Yönetim kurulu üyesinin şirketle işlem yapması kesin olarak yasaktır; genel kurul izniyle dahi istisnası yoktur"
         },
     },
     "content/ticaret_hukuku/kambiyo_senetleri.json": {

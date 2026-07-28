@@ -245,3 +245,112 @@ değişimi **0/0/0/0**, dolgu kalıbı dengeli, `flutter test` yeşil.
   Çözüm: ifadeyi ÇEŞİTLENDİR (tek yeni kelimeye kaçmadan), anlamı koru.
 
 Reçetenin tamamı: `URETIM_KURALLARI.md` §5.
+
+---
+
+## 2026-07-28 — kalıp-dolgu SÖZCÜK tell'i: ölçüldü ve havuz genelinde giderildi
+
+Bu rapordaki "tekrar-dolgu tell'i" bulgusunun ölçülebilir hâli bulundu. Dolgu yalnız
+çeldiricileri uzatmıyor; **belirli ifadeler doğru şıkta neredeyse hiç geçmiyor**, yani
+kör öğrenci onları eleyip kalanlardan seçerek avantaj sağlıyor.
+
+**Asimetri (temizlik öncesi, tüm SGS havuzu):**
+
+| işaret | çeldiricide | doğru şıkta | asimetri |
+|---|---:|---:|---:|
+| `her hâlde` | 866 | 5 | 173× |
+| `hiçbir biçimde/hâlde/koşulda/…` | 217 | 1 | 217× |
+| `zorunda` | 279 | 21 | 13× |
+| `niteliğinde` | 130 | 17 | 8× |
+| `…bir ölçümü/kalemi ifade eder` | 22 | 0 | — |
+
+**Bu bir üslup tercihi değil, ev artefaktıdır.** 2014-2026 arşivinden çıkarılan
+**12.436 gerçek sınav şıkkında**: `hiçbir` %0,2 · `Her hâlde` %0,0 · `zorunda` %0,0 ·
+`ifade eder` %0,0 · `niteliğinde` %0,1. Bizim havuzda ~%9. Temizlik soruları gerçek
+sınava **yaklaştırır**.
+
+**Sonuç (`fix_lexical_tell.py`, 71 paket / 1625 şık):**
+
+| ölçüm | önce | sonra |
+|---|---:|---:|
+| eleme stratejisi ≥%30 olan paket | 11 | **0** |
+| eleme ≥%25 olan paket | 18 | **3** |
+| havuz ortalaması | %23 | **%20** (rastgele düzeyi) |
+| işaretli şık | 2566 | **942** |
+| kör öğrenci UYARI eşiğine çıkan paket | — | **0** |
+
+### Neden mekanik temizlik yeterli — ve nerede değil
+
+Kaldırılan kalıplar **zarf tümleci**: "hiçbir biçimde kayda alınmaz" → "kayda alınmaz"
+anlamı korur, cümle dilbilgisel kalır. `-mek zorunda olan bir X ifade eder` kuyruğu ise
+çekimli fiile indirilir. Dönüştürücü **dilbilgisi korumaları** taşır (mastarla/bağlaçla
+bitmesin, kısalmasın, büyük harfle başlasın, şık çakışması yaratmasın); koruma
+tetiklenirse metin DEĞİŞTİRİLMEZ. Anlamın parçası olan `hiçbir istisna`, `hiçbir fark`,
+`hiçbir etkisi`, `hiçbir ilgisi`, `hiçbir sorumluluk` korunur.
+
+⚠️ **Dosya başına seviye gerekiyor.** Dolgu kaldırıldıkça çeldiriciler ~15 karakter
+kısalır ve bazı pakette doğru şık sistematik **en uzun** kalır — kör öğrenci "en kısayı
+seç"ten "en uzunu seç"e döner. Kuru çalıştırmada kör ölçülerek üç seviye belirlendi:
+
+- **TAM** (64 paket): tüm kurallar, cümle içi `her hâlde` dâhil
+- **TEMEL** (7 paket): cümle içi `her hâlde` bırakılır, kör yükselmesin diye
+- **ELLE DENGE** (11 paket): `fix_bekleyen_denge.py` — aşağıda
+
+### Elle denge turu (11 paket, `fix_bekleyen_denge.py`)
+
+Bu 11 pakette mekanik temizlik kör'ü %26'dan **%45'e** kadar çıkarıyordu. Reçete
+tms_21'de doğrulanmıştı: doğru şıkkı kısaltma, **çeldiriciye gerçek içerik ekle** —
+yanlış iddianın kendi mantıksal sonucunu. Bu, çeldiriciyi daha inandırıcı yapar ve
+soruyu zorlaştırır; dolgu değildir.
+
+| paket | kör önce → sonra |
+|---|---:|
+| borclar_hukuku/temerrut_tazminat | %26 → **%23** |
+| borclar_hukuku/sebepsiz_zenginlesme | %28 → **%23** |
+| borclar_hukuku/ozel_durumlar | %28 → **%23** |
+| borclar_hukuku/haksiz_fiil | %26 → **%21** |
+| is_ve_sosyal_guvenlik_hukuku/sosyal_guvenlik_hukuku | %21 → **%21** |
+| maliye/butce_maliye_politikasi | %30 → **%22** |
+| maliye/kamu_gelir_gider | %28 → **%21** |
+| meslek_hukuku/sorumluluk_ve_yasaklar | %30 → **%23** |
+| ticaret_hukuku/limited_sahis_sirketleri | %30 → **%22** |
+| vergi_hukuku/vergi_denetimi_ceza_uyusmazlik | %30 → **%25** |
+| vergi_hukuku/vergi_hukuku_temel_kavramlar | %30 → **%20** |
+
+⚠️ **Adayların TAMAMINI uygulamak yanlış.** İlk turda 25 adayın 25'i uygulandığında
+doğru şık bu kez sistematik **ORTADA** kaldı ve "iki ucu ele, ortadan tahmin et"
+stratejisi öne geçti (kör %30). Doğru sonuç dağılımdır; bu yüzden her pakette kör'ü
+en aza indiren **alt küme** ölçümle seçildi (7-16 / 12-25) ve builder'da donduruldu.
+
+İki maliye paketinde çeldiriciler ikinci bir dolgu ailesi taşıyordu ("…bu ilişki
+piyasa/politika koşulları ne olursa olsun değişmez" gibi); orada uzatma yerine dolgu
+**gerçek içerikle değiştirildi**. Bu arada 6 çeldiricide önceden var olan bozuk Türkçe
+de düzeltildi (ör. "ispatı kendisine düşer", "ödemesi gerekir", "beklemek ve katlanır").
+
+### Havuz geneli sonuç
+
+| ölçüm | önce | sonra |
+|---|---:|---:|
+| eleme ≥%30 olan paket | 11 | **0** |
+| eleme ≥%25 olan paket | 18 | **2** |
+| ortalama eleme | %23 | **%20** (rastgele düzeyi) |
+| işaretli şık | 2566 | **676** |
+| kör ≥%31 (UYARI) | 0 | **0** |
+| kör ≥%30 olan paket | 23 | **13** |
+| ortalama kör | %25 | **%24** |
+
+Kalan 676 işaret ağırlıkla `zorunda` ve `niteliğinde`nin **anlamlı** kullanımlarıdır
+("tazmin etmek zorundadır", "eksik borç niteliğinde"); bunlar gerçek sınavda da geçer.
+
+### Sahiplik kuralı (bu turda öğrenildi)
+
+Her sorunun **tek sahibi** olmalı. Leksik temizlik başlangıçta 440 soruda başka
+builder'ların metnine dokundu; o zaman çalışma sırası sonucu belirler hâle geliyor.
+`tms_21_kur_degisimi` leksik listeden çıkarıldı (sahibi
+`build_standards_profile_calibration.py`), 11 BEKLEYEN paket `fix_bekleyen_denge.py`ye
+devredildi, kalan örtüşmelerde sahip builder'ın beklenen metni aynı dönüşümden geçirildi.
+
+⚠️ **`--check` desteklemeyen eski scriptler**: `tools/sgs/builders/` altında
+`build_std_*.py`, `rebalance_*.py`, `fix_*_boy.py` gibi **tek seferlik üretim
+scriptleri** var; argümansız çalıştırılınca içeriği YENİDEN YAZARLAR. Toplu doğrulama
+döngüsü yalnız `add_argument("--check")` taşıyan builder'ları çalıştırmalıdır.

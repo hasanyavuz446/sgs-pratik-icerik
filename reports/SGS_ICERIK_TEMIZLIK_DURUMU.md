@@ -11,9 +11,9 @@ Son güncelleme: 23 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 106 konu · 6360 soru.** Tamamlanan: **39 / 106 konu = %36,8**
+**16 ders · 106 konu · 6360 soru.** Tamamlanan: **40 / 106 konu = %37,7**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 2/17 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 3/17 🔵 · matematik 2 yeni konu ✅).
 
 ⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
 (aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 17 | 2 | 🔵 SAYISAL KALİBRASYON. kavramsal_cerceve (20) + tms_1_sunulus (19) — sayısal %0→%30 / %0→%21, öncüllü %16→%10 / %20→%10; builder 2 paket/39; 15 konu kaldı |
+| 5 | muhasebe_standartlari | 17 | 3 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) **kalıp-dolgu temizliği + profil**: kör %30→%23, eleme tell'i %34→%20; 14 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -40,9 +40,10 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v169** (matematik 2 yeni ileri konu + muhasebe_standartlari
-kavramsal_cerceve/tms_1_sunulus sayısal kalibrasyonu) — commit `6693b85`, 203 paket,
-API+CDN ve dosya hash'leri doğrulandı. Uygulama reposu commit `278ac08`.
+Canlı OTA: **v170** (kalıp-dolgu sözcük tell'i havuz genelinde temizlendi: 71 paket
+mekanik + 11 paket elle denge + tms_21 profil kalibrasyonu). Önceki: v169 (matematik
+2 yeni ileri konu + kavramsal_cerceve/tms_1_sunulus), commit `6693b85`, uygulama
+reposu `278ac08`.
 ⚠️ Yeni matematik konularının telefonda görünmesi için ayrıca **yeni binary** gerekir
 (curriculum OTA'dan inmez); OTA yalnız kazanım/soru paketlerini taşır.
 
@@ -352,6 +353,122 @@ gerekçesiyle yazmak → "en uzunu seç" tell'i; hepsini kısaltmak → "en kıs
 ortalamak → "iki ucu ele, ortadan tahmin et" tell'i. Doğru yaklaşım **dağılımdır** (bir kısmı uzun,
 bir kısmı kısa, kalanı orta) ve tasarım betiğine "doğru şık tek-en-uzun/tek-en-kısa mı?" ön kontrolü
 eklenmelidir.
+
+### tms_21_kur_degisimi (35 yama) — kalıp-dolgu temizliği + profil
+
+⚠️ **Bu konuda sayısal oran ARTIRILMADI.** Kural §1'in TMS 21 notu ("Hesap sorusu değil")
+2014-2026 arşivinin 11 dosyasında doğrulandı: TMS 21 hesap sorusu olarak **hiç sorulmamış**.
+Ölçülen yük merkezleri: geçerli para birimi tespiti (2024 s.50 + 2025 s.53, **ikisi de olumsuz
+kök**), öncüllü faktör listesi (2021, 2025 s.48), parasal ↔ parasal olmayan ayrımı ve hangi kur
+(2016-18 s.40/41/44, şıklar KISA kalem adları), yüksek enflasyon (2023 s.50), kur farkının
+sunumu (2016-18 s.43). Mevcut 8 hesap sorusu öğretici olduğu için korundu, üzerine eklenmedi.
+
+**🔴 YENİ KUSUR SINIFI — kalıp-dolgu sözcük tell'i (audit görmüyor).** 34 soruda 81 çeldirici
+şu kalıplarla şişirilmişti ve bu ifadeler **doğru şıkta hiç geçmiyordu**:
+
+| işaret | çeldiricide | doğru şıkta |
+|---|---:|---:|
+| `zorunda` | 39 | **0** |
+| `Her hâlde` | 31 | **0** |
+| `…bir ölçümü ifade eder / karşılar` | 29 | **0** |
+| `hiçbir` | 25 | **0** |
+| `niteliğinde` | 12 | **0** |
+
+Kör öğrenci bu işaretleri taşıyan şıkları eleyip kalanlardan seçtiğinde isabet **%34**'e çıkıyordu
+(rastgele %20). Ölçek dürüstçe: bu, `audit.py::kor_ogrenci`'nin ölçtüğü boy tell'inden (%30)
+**güçlü değil, aynı mertebede** — ama audit bunu hiç görmüyor. Havuz taraması: 106 SGS
+paketinin **8'i ≥%30** (tms_37 %34 · tms_21 %34 · tfrs_9 %34 · tms_40 %33 · tms_12 %31 ·
+limited_sahis_sirketleri %30 · tms_20 %30 · tfrs_16 %30), havuz ortalaması %23,
+muhasebe_standartlari ortalaması %28. **Bu ders bu kalıpla üretilmiş.**
+
+**Uygulanan reçete** — dolgu silinmedi, §5'in ertelenmiş talimatı uygulandı: uygun boyutta
+**gerçek içerikle değiştirildi**. Parasal/parasal olmayan sorularında beş şık da kısa kalem adına
+indirildi (2016-18 üslubu); "hangi kur" sorularında beş şık da somut kur adı oldu; 3 kök olumsuza
+çevrildi (0017, 0022, 0036 — 4 doğru + 1 yanlış ifade).
+
+⚠️ **§5 tuzağı yine devreye girdi ve raporun kendi reçetesiyle çözüldü.** Dolgu temizliği ilk
+turda eleme tell'ini %34→%20'ye indirdi **ama kör'ü %30→%43'e fırlattı** ("en uzunu seç", boy
+48/50): çeldiriciler kısa gerçek iddialara inince doğru şık sistematik en uzun kaldı. Düzeltme
+doğru şıkkı kısaltmak değil, **14 soruda çeldiricilere gerçek içerik eklemek** oldu (yanlış iddianın
+sonuç cümlesi — soruyu da zorlaştırır). Sonuç:
+
+| Ölçüm | Önce | Sonra |
+|---|---:|---:|
+| Kör öğrenci (audit) | %30 "en kısayı seç" | **%23** |
+| Eleme stratejisi (sözcük tell'i) | %34 | **%20** (rastgele düzeyi) |
+| Boy eğilimi (uzun/kısa, n=50) | 14 / 32 | **24 / 24** |
+| Olumsuz kök | %16 | **%21** |
+| Harf dağılımı | A12 B11 C12 D9 E16 | **12/12/12/12/12** |
+| Kalıp-dolgulu çeldirici | 81 | **0** |
+
+Olumsuz kök %33'e değil %21'e çekildi: ders bandı %9,6 (FM+standartlar), TMS 21 ise olumsuza
+yatkın. İki gerçek veri noktası üzerine %33'e çıkmak bandı aşırı döndürmek olurdu; %21 ikisinin
+arasında kalıyor. Öncüllü %16 ve sayısal %18 bilerek değiştirilmedi (arşivle uyumlu).
+Builder: `build_standards_profile_calibration.py` (1 paket / 35 soru, `--check` temiz).
+
+### Sözcük tell'i — havuz genelinde giderildi (`fix_lexical_tell.py`)
+
+tms_21'de bulunan kusur tüm havuzda ölçüldü ve düzeltildi. Ölçüt önce eksikti (regex
+büyük harfli `Her hâlde` arıyordu, cümle içindeki 866 küçük harfli geçişi kaçırıyordu);
+düzeltilmiş ölçütle asimetri: `her hâlde` 866 çeldirici / 5 doğru şık = **173×**,
+`hiçbir <pekiştireç>` 217/1 = **217×**, `zorunda` 279/21, `niteliğinde` 130/17.
+
+**Karar dayanağı — ev artefaktı, üslup değil:** 2014-2026 arşivinden çıkarılan **12.436
+gerçek sınav şıkkında** `hiçbir` %0,2 · `Her hâlde` %0,0 · `zorunda` %0,0 · `ifade eder`
+%0,0. Bizim havuzda ~%9. Temizlik soruları gerçek sınava **yaklaştırır**.
+
+| ölçüm | önce | sonra |
+|---|---:|---:|
+| eleme ≥%30 olan paket | 11 | **0** |
+| eleme ≥%25 olan paket | 18 | **2** |
+| havuz ortalaması | %23 | **%20** (rastgele düzeyi) |
+| işaretli şık | 2566 | **676** |
+| kör ≥%31 (UYARI) | 0 | **0** |
+| kör ≥%30 olan paket | 23 | **13** |
+| ortalama kör | %25 | **%24** |
+
+Kalan 676 işaret ağırlıkla `zorunda` ve `niteliğinde`nin **anlamlı** kullanımlarıdır
+("tazmin etmek zorundadır", "eksik borç niteliğinde") — gerçek sınavda da geçer.
+
+Kaldırılanlar zarf tümleci olduğu için anlam korunur ("hiçbir biçimde kayda alınmaz" →
+"kayda alınmaz"); `-mek zorunda olan bir X ifade eder` kuyruğu çekimli fiile indirilir.
+Dönüştürücü dilbilgisi korumaları taşır ve koruma tetiklenirse metni değiştirmez.
+Anlamın parçası olan `hiçbir istisna / fark / etkisi / ilgisi / sorumluluk` korunur.
+
+Dosya başına seviye: **TAM 64** paket (`fix_lexical_tell.py`) · **TEMEL 7** (cümle içi
+`her hâlde` bırakıldı, kör yükselmesin diye) · **ELLE DENGE 11**
+(`fix_bekleyen_denge.py`, 107 dondurulmuş yama).
+
+**Elle denge turu — 11 paket tamamlandı.** Mekanik temizlik bu paketlerde kör'ü %26'dan
+%45'e kadar çıkarıyordu. tms_21 reçetesi uygulandı: doğru şıkkı kısaltmak yerine
+**çeldiriciye gerçek içerik eklendi** (yanlış iddianın kendi mantıksal sonucu — dolgu
+değil, çeldiriciyi daha inandırıcı yapan bir ek). Sonuç kör: temerrut_tazminat %26→%23 ·
+sebepsiz_zenginlesme %28→%23 · ozel_durumlar %28→%23 · haksiz_fiil %26→%21 ·
+sosyal_guvenlik_hukuku %21→%21 · butce_maliye_politikasi %30→%22 · kamu_gelir_gider
+%28→%21 · sorumluluk_ve_yasaklar %30→%23 · limited_sahis_sirketleri %30→%22 ·
+vergi_denetimi_ceza_uyusmazlik %30→%25 · vergi_hukuku_temel_kavramlar %30→%20.
+
+⚠️ **Adayların tamamını uygulamak yanlış:** 25 adayın 25'i uygulandığında doğru şık bu
+kez sistematik ORTADA kaldı ve "iki ucu ele, ortadan tahmin et" öne geçti (kör %30).
+Her pakette kör'ü en aza indiren **alt küme** ölçümle seçildi (7-16 / 12-25) ve
+builder'da donduruldu. İki maliye paketinde ikinci dolgu ailesi ("…bu ilişki
+piyasa/politika koşulları ne olursa olsun değişmez") uzatma yerine gerçek içerikle
+değiştirildi; bu arada 6 çeldiricide önceden var olan bozuk Türkçe de düzeltildi.
+
+Ayrıntı: `tools/sgs/SIK_ORUNTUSU_RAPORU.md`.
+
+**Sahiplik kuralı (bu turda öğrenildi):** her sorunun tek sahibi olmalı. Leksik temizlik
+başta 440 soruda başka builder'ların metnine dokunuyordu; `tms_21` leksik listeden
+çıkarıldı (sahibi profil builder'ı), kalan örtüşmelerde sahip builder'ın beklenen metni
+aynı dönüşümden geçirildi. ⚠️ `tools/sgs/builders/` altında `--check` DESTEKLEMEYEN eski
+tek-seferlik scriptler var (`build_std_*.py`, `rebalance_*.py`, `fix_*_boy.py`);
+argümansız çalıştırılınca içeriği yeniden yazarlar. Toplu doğrulama döngüsü yalnız
+`add_argument("--check")` taşıyan builder'ları çalıştırmalıdır.
+
+**audit.py'ye dedektör eklenebilir hâle geldi.** Havuzda ≥%30 paket kalmadı ve elle
+denge turu bitti; artık bir eleme-tell dedektörü hiçbir paketi UYARI'ya düşürmez.
+Eklenmesi ayrı bir karar olarak kullanıcıya bırakıldı (bu tur içerik değişikliğiydi,
+denetim aracı değişikliği değil).
 
 ---
 

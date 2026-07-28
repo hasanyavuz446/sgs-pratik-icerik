@@ -29,7 +29,7 @@
     "options": {
       "B": "Karşılıkta gerçekleşme zamanı veya tutarı belirsizdir; ticari borç ve tahakkuklarda belirsizlik çok daha azdır",
       "A": "Karşılık ile ticari borç arasında hiçbir fark bulunmayıp ikisi aynı anlama gelmektedir",
-      "C": "Karşılıkta tutar kesindir; ticari borçlarda ise tutar her hâlde belirsiz kalır",
+      "C": "Karşılıkta tutar kesindir; ticari borçlarda ise tutar belirsiz kalır",
       "D": "Karşılıklar yalnızca büyük işletmelerde, ticari borçlar ise küçük işletmelerde kullanılmaktadır",
       "E": "Karşılık ile ticari borç arasında fark yoktur; ikisinde de tutar ve ödeme zamanı kesin olarak bilinir ve aynı biçimde ölçülür"
     },
@@ -161,8 +161,8 @@
     "options": {
       "C": "Gelecekte faaliyeti sürdürmekten kaçınarak önlenebilen maliyetler için karşılık ayrılmaz",
       "A": "Gelecekteki tüm maliyetler için her hâlde karşılık ayrılmak zorunda tutulmuş bulunur",
-      "B": "Gelecekteki maliyetler her hâlde varlık olarak aktifleştirilmek zorunda olan kalemleri ifade eder",
-      "D": "Gelecekteki maliyetler hiçbir hâlde finansal tablolara yansıtılamayan kalemleri ifade eder",
+      "B": "Gelecekteki maliyetler varlık olarak aktifleştirilir",
+      "D": "Gelecekteki maliyetler finansal tablolara yansıtılamayan kalemleri ifade eder",
       "E": "İşletmenin gelecekteki faaliyetlerinden doğacak tüm maliyetler için önceden karşılık ayrılır ve ilgili dönemlere yayılır"
     },
     "answer": "C",
@@ -182,8 +182,8 @@
     "stem": "İşletmenin gelecekteki faaliyet zararları bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Gelecekteki faaliyet zararları için karşılık ayrılmaz",
-      "A": "Gelecekteki faaliyet zararları için her hâlde karşılık ayrılır",
-      "C": "Gelecekteki faaliyet zararları her hâlde varlık olarak aktifleştirilir",
+      "A": "Gelecekteki faaliyet zararları için karşılık ayrılır",
+      "C": "Gelecekteki faaliyet zararları varlık olarak aktifleştirilir",
       "D": "Gelecekteki faaliyet zararları yalnızca büyük işletmelerce karşılık ayrılarak izlenmektedir",
       "E": "Gelecekteki faaliyet zararları için beklenen tutar üzerinden karşılık ayrılır ve dönem sonucuna gider olarak yansıtılır"
     },
@@ -204,9 +204,9 @@
     "stem": "Ekonomik açıdan dezavantajlı (zarara yol açacak) sözleşmeler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Sözleşmeden doğan mevcut yükümlülük karşılık olarak muhasebeleştirilir ve ölçülür",
-      "B": "Bu sözleşmeler için hiçbir hâlde karşılık ayrılmaz; yalnızca dipnotta açıklanmaktadır",
-      "C": "Bu sözleşmeler her hâlde varlık olarak aktifleştirilmek zorunda tutulan kalemleri ifade eder",
-      "D": "Bu sözleşmeler her hâlde derhâl feshedilir; kayda alınmamaktadır",
+      "B": "Bu sözleşmeler için karşılık ayrılmaz; yalnızca dipnotta açıklanmaktadır",
+      "C": "Bu sözleşmeler varlık olarak aktifleştirilir",
+      "D": "Bu sözleşmeler derhâl feshedilir; kayda alınmamaktadır",
       "E": "Ekonomik açıdan dezavantajlı sözleşmeler için karşılık ayrılmaz; sözleşme tamamlanana kadar herhangi bir yükümlülük muhasebeleştirilmez"
     },
     "answer": "A",
@@ -226,9 +226,9 @@
     "stem": "Yeniden yapılandırma karşılığı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Ayrıntılı resmî plan bulunması ve etkilenenlerde geçerli beklenti yaratılması hâlinde zımni yükümlülük doğar",
-      "A": "Yönetim kurulunun karar almış olması her hâlde tek başına karşılık ayrılması için yeterlidir",
-      "B": "Yeniden yapılandırma için hiçbir hâlde karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
-      "D": "Yeniden yapılandırma maliyetleri her hâlde varlık olarak aktifleştirilir",
+      "A": "Yönetim kurulunun karar almış olması tek başına karşılık ayrılması için yeterlidir",
+      "B": "Yeniden yapılandırma için karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
+      "D": "Yeniden yapılandırma maliyetleri varlık olarak aktifleştirilir",
       "E": "Yönetimin yeniden yapılandırma niyetini içeren kararı tek başına yeterlidir; ayrıntılı plan ve geçerli beklenti yaratılması aranmaz"
     },
     "answer": "C",
@@ -249,8 +249,8 @@
     "options": {
       "A": "Yalnızca yeniden yapılandırmadan kaynaklanan zorunlu ve süregelen faaliyetlerle ilgisi olmayan doğrudan harcamalar dâhildir",
       "B": "Yeniden yapılandırmayla ilgili tüm harcamalar hiçbir ayrım yapılmaksızın dâhil edilir",
-      "C": "Personelin yeniden eğitimi ve yer değiştirme maliyetleri de her hâlde dâhil edilir",
-      "D": "Yeni sistemlere ve dağıtım ağlarına yapılacak yatırımlar da her hâlde dâhil edilir",
+      "C": "Personelin yeniden eğitimi ve yer değiştirme maliyetleri de dâhil edilir",
+      "D": "Yeni sistemlere ve dağıtım ağlarına yapılacak yatırımlar da dâhil edilir",
       "E": "Yeniden yapılandırmayla ilgili olsun olmasın işletmenin süregelen tüm faaliyet maliyetleri ve personel eğitim giderleri karşılığa dâhil edilir"
     },
     "answer": "A",
@@ -270,9 +270,9 @@
     "stem": "Bir işletme, gelecek yıl önemli bir faaliyet zararı bekleyeceğini öngörmektedir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Gelecekteki faaliyet zararı için karşılık ayrılmaz; ancak varlıklarda değer düşüklüğü göstergesi olabilir",
-      "B": "Beklenen zarar tutarında her hâlde karşılık ayrılmak zorunda tutulan bir durumu ifade eder",
-      "C": "Beklenen zarar her hâlde varlık olarak aktifleştirilmek zorunda olan bir kalemi ifade eder",
-      "D": "Beklenen zarar her hâlde doğrudan özkaynaklardan indirilmek zorunda olan bir kalemdir",
+      "B": "Beklenen zarar tutarında karşılık ayrılır",
+      "C": "Beklenen zarar varlık olarak aktifleştirilir",
+      "D": "Beklenen zarar doğrudan özkaynaklardan indirilir",
       "E": "Beklenen zarar hiçbir yerde belirtilmez; ne tabloda ne dipnotta yer alır"
     },
     "answer": "A",
@@ -337,8 +337,8 @@
     "options": {
       "D": "Etkilenenlerde geçerli beklenti yaratılmadığından henüz zımni yükümlülük doğmamıştır; karşılık ayrılmaz",
       "A": "Yönetim kurulu kararı tek başına yeterlidir; derhâl karşılık ayrılır",
-      "B": "Kapatma maliyetleri her hâlde varlık olarak aktifleştirilmek zorunda olan kalemleri ifade eder",
-      "C": "Bu durumda işletme her hâlde koşullu varlık muhasebeleştirir",
+      "B": "Kapatma maliyetleri varlık olarak aktifleştirilir",
+      "C": "Bu durumda işletme koşullu varlık muhasebeleştirir",
       "E": "Yönetim kurulunun kapatma kararı almasıyla zımni yükümlülük doğar; etkilenenlere duyuru yapılmasa dahi karşılık ayrılır"
     },
     "answer": "D",
@@ -360,7 +360,7 @@
       "E": "Gerçekleşmesi bir veya daha fazla belirsiz olayın oluşumuna bağlı olan olası yükümlülüktür",
       "A": "Gerçekleşme zamanı ve tutarı kesin olarak bilinen yükümlülükleri ifade eden bir kavramdır",
       "B": "İşletmenin gelecekte elde etmesi muhtemel olan ekonomik yararları ifade eden bir kavramdır",
-      "C": "İşletmenin bilançosunda borç olarak gösterilmek zorunda olan kalemleri ifade eder",
+      "C": "İşletmenin bilançosunda borç olarak gösterilir",
       "D": "Koşullu borç, gerçekleşme zamanı ve tutarı kesin bilinen ve finansal tablolara borç olarak kaydedilen mevcut bir yükümlülüktür"
     },
     "answer": "E",
@@ -380,9 +380,9 @@
     "stem": "Koşullu borçların muhasebeleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Koşullu borçlar finansal tablolara yansıtılmaz; dipnotlarda açıklanır",
-      "A": "Koşullu borçlar her hâlde bilançoda borç olarak muhasebeleştirilir",
+      "A": "Koşullu borçlar bilançoda borç olarak muhasebeleştirilir",
       "B": "Koşullu borçlar hiçbir yerde belirtilmez; ne tabloda ne dipnotta yer alır",
-      "C": "Koşullu borçlar her hâlde doğrudan özkaynaklardan indirilmek zorunda olan kalemleri ifade eder",
+      "C": "Koşullu borçlar doğrudan özkaynaklardan indirilir",
       "D": "Koşullu borçlar tutarları tahmin edilerek finansal tablolara borç olarak yansıtılır; ayrıca dipnotta açıklama yapılmaz"
     },
     "answer": "E",
@@ -402,10 +402,10 @@
     "stem": "Koşullu borcun açıklanmayacağı hâl bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Kaynak çıkışı ihtimali uzaksa açıklama yapılmaz",
-      "A": "Koşullu borçlar her hâlde ve istisnasız açıklanmak zorunda tutulan kalemleri ifade eder",
-      "B": "Koşullu borçlar hiçbir hâlde açıklanmaz; dipnotlarda hiç yer almaz",
+      "A": "Koşullu borçlar ve istisnasız açıklanır",
+      "B": "Koşullu borçlar açıklanmaz; dipnotlarda hiç yer almaz",
       "D": "Koşullu borçlar yalnızca gerçekleşmeleri kesinleştiğinde açıklanır",
-      "E": "Kaynak çıkışı ihtimali uzak olsa dahi tüm koşullu borçlar için ayrıntılı açıklama yapılması her hâlde zorunlu tutulur"
+      "E": "Kaynak çıkışı ihtimali uzak olsa dahi tüm koşullu borçlar için ayrıntılı açıklama yapılması zorunlu tutulur"
     },
     "answer": "C",
     "solution": "TMS 37: kaynak çıkışı ihtimalinin UZAK olması durumunda koşullu borç açıklanmaz. Uzak değilse dipnotlarda açıklanır; hiçbir hâlde bilançoya alınmaz. Doğru cevap C.",
@@ -426,7 +426,7 @@
       "E": "Geçmiş olaylardan kaynaklanan ve varlığı belirsiz olayların gerçekleşmesiyle teyit edilecek olası varlıktır",
       "A": "Gerçekleşme zamanı ve tutarı kesin olarak bilinen varlıkları ifade eden bir kavram",
       "B": "İşletmenin gelecekte katlanması muhtemel olan yükümlülükleri ifade eden bir kavramı karşılar",
-      "C": "İşletmenin bilançosunda varlık olarak gösterilmek zorunda olan kalemleri ifade eder",
+      "C": "İşletmenin bilançosunda varlık olarak gösterilir",
       "D": "Koşullu varlık, gerçekleşmesi kesin olan ve işletmenin kontrolündeki olaylardan doğan, finansal tablolara kaydedilen bir varlıktır"
     },
     "answer": "E",
@@ -446,9 +446,9 @@
     "stem": "Koşullu varlıkların muhasebeleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Koşullu varlıklar finansal tablolara yansıtılmaz; gelir girişi muhtemelse açıklanır",
-      "B": "Koşullu varlıklar her hâlde bilançoda varlık olarak muhasebeleştirilir",
+      "B": "Koşullu varlıklar bilançoda varlık olarak muhasebeleştirilir",
       "C": "Koşullu varlıklar hiçbir yerde belirtilmez; ne tabloda ne dipnotta yer alır",
-      "D": "Koşullu varlıklar her hâlde doğrudan özkaynağa kaydedilmek zorunda olan kalemleri ifade eder",
+      "D": "Koşullu varlıklar doğrudan özkaynağa kaydedilir",
       "E": "Koşullu varlıklar gelir girişi muhtemel olduğunda finansal tablolara varlık olarak kaydedilir ve gelir yazılır"
     },
     "answer": "A",
@@ -468,9 +468,9 @@
     "stem": "Koşullu varlığın gerçekleşmesinin KESİN hâle gelmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Gelir elde edilmesinin kesin olması hâlinde ilgili varlık artık koşullu değildir; muhasebeleştirilir",
-      "A": "Gelir kesinleşse dahi koşullu varlık hiçbir hâlde muhasebeleştirilemez",
-      "B": "Gelir kesinleştiğinde varlık her hâlde yalnızca dipnotta açıklanır",
-      "C": "Gelir kesinleştiğinde varlık her hâlde doğrudan özkaynağa kaydedilir",
+      "A": "Gelir kesinleşse dahi koşullu varlık muhasebeleştirilemez",
+      "B": "Gelir kesinleştiğinde varlık yalnızca dipnotta açıklanır",
+      "C": "Gelir kesinleştiğinde varlık doğrudan özkaynağa kaydedilir",
       "D": "Gelirin kesinleşmesi hâlinde dahi varlık koşullu olarak kalmaya devam eder ve yalnızca dipnotta açıklanır"
     },
     "answer": "E",
@@ -491,7 +491,7 @@
     "options": {
       "E": "Karşılıkta mevcut yükümlülük vardır ve kaynak çıkışı muhtemeldir; koşullu borçta bu koşullar sağlanmaz",
       "A": "Karşılık ile koşullu borç arasında hiçbir fark bulunmayıp ikisi aynı anlama gelmektedir",
-      "B": "Karşılık dipnotta açıklanır; koşullu borç ise her hâlde bilançoya alınır",
+      "B": "Karşılık dipnotta açıklanır; koşullu borç ise bilançoya alınır",
       "C": "Karşılık yalnızca büyük işletmelerde, koşullu borç ise yalnızca küçük işletmelerde kullanılır",
       "D": "Karşılık ile koşullu borç arasında fark yoktur; ikisinde de mevcut yükümlülük kesindir ve finansal tablolara aynı biçimde yansıtılır"
     },
@@ -512,9 +512,9 @@
     "stem": "Mevcut bir yükümlülük bulunmakla birlikte tutarın güvenilir biçimde tahmin edilemediği hâl bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Karşılık ayrılmaz; koşullu borç olarak açıklanır",
-      "A": "Tahmini bir tutarla her hâlde karşılık ayrılmak zorunda tutulan bir durumu ifade eder",
+      "A": "Tahmini bir tutarla karşılık ayrılır",
       "B": "Yükümlülük hiçbir yerde belirtilmez; ne tabloda ne dipnotta yer alır",
-      "C": "Yükümlülük her hâlde doğrudan özkaynaklardan indirilmek zorunda olan bir kalemi ifade eder",
+      "C": "Yükümlülük doğrudan özkaynaklardan indirilir",
       "E": "Mevcut yükümlülük olsa dahi tutarın güvenilir tahmini yapılamıyorsa hiçbir açıklama yapılmaz ve yükümlülük tümüyle göz ardı edilir"
     },
     "answer": "D",
@@ -534,7 +534,7 @@
     "stem": "Müşterek ve müteselsil sorumluluk doğuran yükümlülükler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Diğer taraflarca karşılanması beklenen kısım koşullu borç olarak ele alınır",
-      "B": "Yükümlülüğün tamamı her hâlde işletmece karşılık olarak muhasebeleştirilir",
+      "B": "Yükümlülüğün tamamı işletmece karşılık olarak muhasebeleştirilir",
       "C": "Yükümlülüğün hiçbir kısmı muhasebeleştirilmez; tamamı diğer taraflara ait sayılır",
       "D": "Müşterek sorumluluk doğuran yükümlülükler hiçbir yerde belirtilmek zorunda bulunmamaktadır",
       "E": "Müşterek ve müteselsil sorumlulukta işletme, diğer taraflarca karşılanacak kısım dâhil yükümlülüğün tamamı için karşılık ayırır"
@@ -556,8 +556,8 @@
     "stem": "Koşullu borçların sürekli değerlendirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Sürekli değerlendirilir; kaynak çıkışı muhtemel hâle gelirse karşılık muhasebeleştirilir",
-      "A": "Koşullu borçlar bir kez değerlendirildikten sonra hiçbir hâlde yeniden ele alınmamaktadır",
-      "C": "Koşullu borçlar hiçbir hâlde karşılığa dönüşemez; süresiz olarak dipnotta kalır",
+      "A": "Koşullu borçlar bir kez değerlendirildikten sonra yeniden ele alınmamaktadır",
+      "C": "Koşullu borçlar karşılığa dönüşemez; süresiz olarak dipnotta kalır",
       "D": "Koşullu borçlar yalnızca vergi idaresi talep ettiğinde yeniden değerlendirilir",
       "E": "Koşullu borçlar ilk değerlendirmeden sonra bir daha gözden geçirilmez; başlangıçtaki sınıflandırma dönemler boyunca sabit kalır"
     },
@@ -578,9 +578,9 @@
     "stem": "Bir işletme aleyhine dava açılmış olup hukuk müşavirine göre davayı kaybetme ihtimali kazanma ihtimalinden yüksektir ve tazminat tutarı güvenilir biçimde tahmin edilebilmektedir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Üç koşul da sağlandığından karşılık muhasebeleştirilir",
-      "A": "Dava sonuçlanmadığından hiçbir hâlde karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
-      "B": "Dava her hâlde koşullu varlık olarak muhasebeleştirilmek zorunda olan bir durumu ifade eder",
-      "D": "Tazminat tutarı her hâlde doğrudan özkaynaklardan indirilir",
+      "A": "Dava sonuçlanmadığından karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
+      "B": "Dava koşullu varlık olarak muhasebeleştirilir",
+      "D": "Tazminat tutarı doğrudan özkaynaklardan indirilir",
       "E": "Bu durumda işletme hiçbir kayıt yapmaz ve dipnotta da açıklama yapmak zorunda kalmaz"
     },
     "answer": "C",
@@ -600,10 +600,10 @@
     "stem": "Bir işletme aleyhine dava açılmış olup hukuk müşavirine göre davayı kazanma ihtimali kaybetme ihtimalinden yüksektir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Kaynak çıkışı muhtemel olmadığından karşılık ayrılmaz; ihtimal uzak değilse koşullu borç açıklanır",
-      "A": "Dava açılmış olduğundan her hâlde karşılık ayrılmak zorunda tutulan bir durumu ifade eder",
-      "B": "Dava her hâlde koşullu varlık olarak muhasebeleştirilmek zorunda bulunan bir durumu karşılar",
+      "A": "Dava açılmış olduğundan karşılık ayrılır",
+      "B": "Dava koşullu varlık olarak muhasebeleştirilir",
       "C": "Bu durumda işletme hiçbir kayıt ve açıklama yapmak zorunda bulunmaz",
-      "E": "Bu durumda işletme her hâlde tazminat tutarını gelir olarak kaydetir"
+      "E": "Bu durumda işletme tazminat tutarını gelir olarak kaydetir"
     },
     "answer": "D",
     "solution": "TMS 37: kaynak çıkışı ihtimali çıkmama ihtimalinden yüksek değilse 'muhtemel' ölçütü sağlanmaz; karşılık ayrılmaz. Kaynak çıkışı ihtimali UZAK değilse koşullu borç olarak dipnotlarda açıklanır. Doğru cevap D.",
@@ -622,10 +622,10 @@
     "stem": "Bir işletme başka bir işletmeye karşı açtığı davayı kazanacağı konusunda güçlü beklenti içindedir ancak dava henüz sonuçlanmamıştır. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Koşullu varlıktır; muhasebeleştirilmez, girişi muhtemelse dipnotta açıklanır",
-      "A": "Beklenen tazminat her hâlde varlık ve gelir olarak muhasebeleştirilir",
-      "B": "Beklenen tazminat her hâlde karşılık olarak muhasebeleştirilmek zorunda olan bir kalemdir",
+      "A": "Beklenen tazminat varlık ve gelir olarak muhasebeleştirilir",
+      "B": "Beklenen tazminat karşılık olarak muhasebeleştirilir",
       "C": "Beklenen tazminat hiçbir yerde belirtilmez; ne tabloda ne dipnotta yer alır",
-      "D": "Beklenen tazminat her hâlde doğrudan özkaynağa kaydedilir"
+      "D": "Beklenen tazminat doğrudan özkaynağa kaydedilir"
     },
     "answer": "E",
     "solution": "TMS 37: koşullu varlıklar finansal tablolara yansıtılmaz; hiçbir zaman elde edilemeyecek bir gelirin muhasebeleştirilmesine yol açabilir. Ekonomik fayda girişi muhtemelse dipnotlarda açıklanır. Elde edilmesi neredeyse kesinleşirse artık koşullu değildir ve muhasebeleştirilir. Doğru cevap E.",
@@ -666,9 +666,9 @@
     "stem": "Karşılıkların ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Mevcut yükümlülüğün yerine getirilmesi için gereken harcamalara ilişkin en gerçekçi tahmindir",
-      "A": "Yükümlülüğün olası en yüksek tutarı her hâlde esas alınmak zorunda tutulan bir ölçüdür",
-      "C": "Yükümlülüğün olası en düşük tutarı her hâlde esas alınmak zorunda olan bir ölçüyü ifade eder",
-      "D": "Karşılıklar her hâlde nominal bir tutarla ölçülmek zorunda olan kalemleri ifade eder",
+      "A": "Yükümlülüğün olası en yüksek tutarı esas alınmak zorunda tutulan bir ölçüdür",
+      "C": "Yükümlülüğün olası en düşük tutarı esas alınmak zorunda olan bir ölçüyü ifade eder",
+      "D": "Karşılıklar nominal bir tutarla ölçülür",
       "E": "Karşılık, yükümlülüğün yerine getirilmesi için gereken azami tutar üzerinden ölçülür; belirsizlik hâlinde en yüksek olası değer alınır"
     },
     "answer": "B",
@@ -710,9 +710,9 @@
     "stem": "Çok sayıda benzer kalemden oluşan karşılıkların ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Beklenen değer yöntemiyle, tüm olası sonuçlar olasılıklarıyla ağırlıklandırılarak ölçülür",
-      "B": "Her hâlde en yüksek olasılıklı tek bir sonucun tutarı esas alınır",
-      "C": "Her hâlde en yüksek tutarlı sonucun tutarı esas alınmak zorunda olan bir yöntemi ifade eder",
-      "D": "Bu tür karşılıklar hiçbir hâlde ölçülemez; yalnızca dipnotta açıklanır",
+      "B": "En yüksek olasılıklı tek bir sonucun tutarı esas alınır",
+      "C": "En yüksek tutarlı sonucun tutarı esas alınmak zorunda olan bir yöntemi ifade eder",
+      "D": "Bu tür karşılıklar ölçülemez; yalnızca dipnotta açıklanır",
       "E": "Çok sayıda benzer kalemden oluşan karşılıkta yalnızca en yüksek tutarlı tek sonuç esas alınır; olasılıklar dikkate alınmaz"
     },
     "answer": "A",
@@ -732,9 +732,9 @@
     "stem": "Tek bir yükümlülüğün ölçülmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "En muhtemel sonuç en gerçekçi tahmini oluşturabilir; diğer olası sonuçlar da dikkate alınır",
-      "A": "Her hâlde tüm olası sonuçların basit ortalaması alınmak zorunda olan bir yöntemi ifade eder",
-      "B": "Her hâlde en yüksek tutarlı sonuç esas alınmak zorunda tutulan bir yöntemi karşılar",
-      "C": "Tek yükümlülükler hiçbir hâlde ölçülemez; yalnızca dipnotta açıklanır",
+      "A": "Tüm olası sonuçların basit ortalaması alınmak zorunda olan bir yöntemi ifade eder",
+      "B": "En yüksek tutarlı sonuç esas alınmak zorunda tutulan bir yöntemi karşılar",
+      "C": "Tek yükümlülükler ölçülemez; yalnızca dipnotta açıklanır",
       "E": "Tek bir yükümlülüğün ölçümünde tüm olası sonuçların basit aritmetik ortalaması alınır; en muhtemel sonuç dikkate alınmaz"
     },
     "answer": "D",
@@ -754,10 +754,10 @@
     "stem": "Karşılık ölçümünde riskler ve belirsizlikler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Dikkate alınır; ancak belirsizlik, aşırı karşılık ayrılmasını haklı çıkarmaz",
-      "A": "Riskler hiçbir hâlde dikkate alınmaz; karşılık her hâlde nominal tutarla ölçülür",
-      "B": "Belirsizlik hâlinde her hâlde mümkün olan en yüksek tutarda karşılık ayrılır",
-      "D": "Belirsizlik hâlinde hiçbir hâlde karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
-      "E": "Belirsizlik ne kadar büyükse o kadar yüksek karşılık ayrılması gerekir; aşırı ihtiyatlılık bu durumda her hâlde haklı görülür"
+      "A": "Riskler dikkate alınmaz; karşılık nominal tutarla ölçülür",
+      "B": "Belirsizlik hâlinde mümkün olan en yüksek tutarda karşılık ayrılır",
+      "D": "Belirsizlik hâlinde karşılık ayrılamaz; yalnızca dipnotta açıklanmaktadır",
+      "E": "Belirsizlik ne kadar büyükse o kadar yüksek karşılık ayrılması gerekir; aşırı ihtiyatlılık bu durumda haklı görülür"
     },
     "answer": "C",
     "solution": "TMS 37: en gerçekçi tahmine ulaşmak için mevcut durumu çevreleyen kaçınılmaz risk ve belirsizlikler dikkate alınır. Ancak belirsizlik, aşırı karşılık ayrılmasını veya borçların kasten yüksek gösterilmesini haklı çıkarmaz. Doğru cevap C.",
@@ -776,9 +776,9 @@
     "stem": "Karşılıkların bugünkü değere indirgenmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Paranın zaman değerinin etkisi önemliyse karşılık, yükümlülüğün bugünkü değeriyle ölçülür",
-      "A": "Karşılıklar hiçbir hâlde iskonto edilemez; her zaman nominal tutarla ölçülür",
-      "B": "Karşılıklar her hâlde ve istisnasız iskonto edilmek zorunda olan kalemleri ifade eder",
-      "D": "İskonto oranı her hâlde merkez bankasının politika faizi olur",
+      "A": "Karşılıklar iskonto edilemez; her zaman nominal tutarla ölçülür",
+      "B": "Karşılıklar ve istisnasız iskonto edilir",
+      "D": "İskonto oranı merkez bankasının politika faizi olur",
       "E": "Paranın zaman değeri ne kadar önemli olursa olsun karşılıklar bugünkü değerine indirgenmez; her zaman nominal tutarla ölçülür"
     },
     "answer": "C",
@@ -798,10 +798,10 @@
     "stem": "Karşılık ölçümünde gelecekteki olaylar bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Yeterli tarafsız kanıt varsa yükümlülüğü etkileyebilecek gelecekteki olaylar dikkate alınır",
-      "B": "Gelecekteki olaylar hiçbir hâlde dikkate alınmaz; yalnızca mevcut durum esas alınmaktadır",
-      "C": "Tüm gelecekteki olaylar hiçbir kanıt aranmaksızın her hâlde dikkate alınır",
+      "B": "Gelecekteki olaylar dikkate alınmaz; yalnızca mevcut durum esas alınmaktadır",
+      "C": "Tüm gelecekteki olaylar hiçbir kanıt aranmaksızın dikkate alınır",
       "D": "Gelecekteki olaylar yalnızca vergi idaresi talep ettiğinde dikkate alınır",
-      "E": "Gelecekteki olaylar hiçbir koşulda karşılığın ölçümünde dikkate alınmaz; yalnızca raporlama tarihindeki mevcut koşullar esas alınır"
+      "E": "Gelecekteki olaylar karşılığın ölçümünde dikkate alınmaz; yalnızca raporlama tarihindeki mevcut koşullar esas alınır"
     },
     "answer": "A",
     "solution": "TMS 37: yükümlülüğün yerine getirilmesi için gerekli olan tutarı etkileyebilecek gelecekteki olaylar, gerçekleşecekleri yönünde yeterli tarafsız kanıtın bulunması durumunda karşılık tutarına yansıtılır (teknolojik gelişmeler gibi). Doğru cevap A.",
@@ -820,9 +820,9 @@
     "stem": "Karşılık ölçümünde varlıkların elden çıkarılmasından beklenen kazançlar bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Beklenen elden çıkarma kazançları karşılığın ölçümünde dikkate alınmaz",
-      "A": "Beklenen kazançlar her hâlde karşılıktan indirilmek zorunda olan bir kalemi ifade eder",
-      "B": "Beklenen kazançlar her hâlde karşılığa eklenmek zorunda olan bir kalemi ifade eder",
-      "C": "Beklenen kazançlar her hâlde doğrudan özkaynağa kaydedilir",
+      "A": "Beklenen kazançlar karşılıktan indirilir",
+      "B": "Beklenen kazançlar karşılığa eklenir",
+      "C": "Beklenen kazançlar doğrudan özkaynağa kaydedilir",
       "D": "Varlıkların elden çıkarılmasından beklenen kazançlar karşılığın ölçümünden düşülür ve karşılık tutarını azaltır"
     },
     "answer": "E",
@@ -842,9 +842,9 @@
     "stem": "Karşılığın yerine getirilmesi için gereken tutarın üçüncü taraflarca tazmin edilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Tazminin elde edileceği neredeyse kesinse ayrı bir varlık olarak muhasebeleştirilir; karşılıktan netleştirilmez",
-      "A": "Tazmin her hâlde karşılıktan doğrudan indirilerek net biçimde gösterilir",
-      "B": "Tazmin hiçbir hâlde muhasebeleştirilemez; yalnızca dipnotta açıklanır",
-      "C": "Tazmin her hâlde ve hiçbir koşul aranmaksızın varlık olarak muhasebeleştirilir",
+      "A": "Tazmin karşılıktan doğrudan indirilerek net biçimde gösterilir",
+      "B": "Tazmin muhasebeleştirilemez; yalnızca dipnotta açıklanır",
+      "C": "Tazmin ve hiçbir koşul aranmaksızın varlık olarak muhasebeleştirilir",
       "E": "Üçüncü taraftan beklenen tazmin, elde edilmesi kesin olmasa dahi karşılıktan doğrudan düşülerek net tutar muhasebeleştirilir"
     },
     "answer": "D",
@@ -864,10 +864,10 @@
     "stem": "Tazminatın kâr veya zarar tablosunda sunumu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Karşılığa ilişkin gider, tazminat tutarı düşülerek net olarak sunulabilir",
-      "A": "Tazminat hiçbir hâlde kâr veya zarar tablosunda gösterilemez; yalnızca dipnotta açıklanır",
-      "C": "Tazminat her hâlde ayrı bir gelir kalemi olarak sunulur; netleştirilememektedir",
-      "D": "Tazminat her hâlde doğrudan özkaynağa kaydedilmek zorunda olan bir kalemi ifade eder",
-      "E": "Karşılığa ilişkin gider ile tazminat tutarı hiçbir hâlde netleştirilemez; ikisi de her zaman brüt olarak ayrı ayrı sunulur"
+      "A": "Tazminat kâr veya zarar tablosunda gösterilemez; yalnızca dipnotta açıklanır",
+      "C": "Tazminat ayrı bir gelir kalemi olarak sunulur; netleştirilememektedir",
+      "D": "Tazminat doğrudan özkaynağa kaydedilir",
+      "E": "Karşılığa ilişkin gider ile tazminat tutarı netleştirilemez; ikisi de her zaman brüt olarak ayrı ayrı sunulur"
     },
     "answer": "B",
     "solution": "TMS 37: kâr veya zarar tablosunda karşılığa ilişkin gider, tazminat tutarı düşüldükten sonra net olarak sunulabilir. Ancak FİNANSAL DURUM TABLOSUNDA tazminata ilişkin varlık ile karşılık netleştirilemez. Doğru cevap B.",
@@ -886,9 +886,9 @@
     "stem": "Karşılıkların gözden geçirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Her raporlama dönemi sonunda gözden geçirilir ve en gerçekçi tahmini yansıtacak biçimde düzeltilir",
-      "A": "Karşılıklar bir kez ayrıldıktan sonra hiçbir hâlde gözden geçirilmez",
+      "A": "Karşılıklar bir kez ayrıldıktan sonra gözden geçirilmez",
       "B": "Karşılıklar yalnızca vergi idaresi talep ettiğinde gözden geçirilir",
-      "C": "Karşılıklar yalnızca işletme zarar ettiğinde gözden geçirilmek zorunda olan kalemleri ifade eder",
+      "C": "Karşılıklar yalnızca işletme zarar ettiğinde gözden geçirilir",
       "E": "Karşılıklar bir kez ölçüldükten sonra gözden geçirilmez; başlangıçta belirlenen tutar yükümlülük sona erene kadar korunur"
     },
     "answer": "D",
@@ -909,7 +909,7 @@
     "options": {
       "E": "Karşılık yalnızca ayrıldığı harcamalar için kullanılır",
       "A": "Karşılık işletmenin dilediği her türlü harcama için serbestçe kullanılabilmektedir",
-      "B": "Karşılık hiçbir hâlde kullanılamaz; süresiz olarak bilançoda tutulur",
+      "B": "Karşılık kullanılamaz; süresiz olarak bilançoda tutulur",
       "C": "Karşılık yalnızca ortaklara kâr payı dağıtımında kullanılabilen bir kaynağı ifade eder",
       "D": "Ayrılan karşılık, işletmenin gerekli gördüğü başka herhangi bir gider veya yükümlülük için de serbestçe kullanılabilir"
     },
@@ -1041,7 +1041,7 @@
     "options": {
       "E": "Kaynak çıkışı ihtimali uzak değilse niteliği ve mümkünse finansal etkisinin tahmini açıklanır",
       "A": "Koşullu borçlar hakkında hiçbir açıklama yapılmasına gerek bulunmaz",
-      "B": "Koşullu borçlar her hâlde ve istisnasız bilançoda gösterilir",
+      "B": "Koşullu borçlar ve istisnasız bilançoda gösterilir",
       "C": "Yalnızca vergi idaresine bildirim yapılır; finansal tablo kullanıcılarına açıklama yapılmaz",
       "D": "Koşullu borçlara ilişkin hiçbir açıklama yapılmaz; bu bilgiler yalnızca işletmenin iç raporlarında yer alır ve dışa aktarılmaz"
     },
@@ -1062,7 +1062,7 @@
     "stem": "Açıklamaların işletmeye ciddi zarar vermesi hâli bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Son derece ender durumlarda açıklama yapılmayabilir; ancak uyuşmazlığın genel niteliği ve açıklanmama nedeni belirtilir",
-      "A": "Açıklamalar her hâlde ve istisnasız tam olarak yapılır; hiçbir istisna yoktur",
+      "A": "Açıklamalar ve istisnasız tam olarak yapılır; hiçbir istisna yoktur",
       "B": "İşletme dilediği zaman ve gerekçesiz olarak açıklama yapmaktan kaçınabilir",
       "C": "Açıklama yapılmaması hâlinde hiçbir bilgi verilmez; sessiz kalınır",
       "D": "Açıklamanın işletmeye zarar vereceği gerekçesiyle koşullu borç ve karşılıklara ilişkin bilgiler her durumda açıklama dışı bırakılabilir"
@@ -1084,10 +1084,10 @@
     "stem": "Bir işletme, ürünlerine iki yıl garanti vermektedir ve geçmiş deneyimine göre garanti talebi gelmesi muhtemeldir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Satış anında yükümlülük doğar; beklenen değer yöntemiyle garanti karşılığı ayrılır",
-      "A": "Garanti talebi fiilen gelene kadar hiçbir hâlde karşılık ayrılamaz; yalnızca dipnotta açıklanır",
-      "B": "Garanti maliyetleri her hâlde varlık olarak aktifleştirilmek zorunda olan kalemleri ifade eder",
-      "D": "Garanti her hâlde koşullu varlık olarak muhasebeleştirilmek zorunda bulunan bir durumdur",
-      "E": "Garanti maliyetleri her hâlde doğrudan özkaynaklardan indirilir"
+      "A": "Garanti talebi fiilen gelene kadar karşılık ayrılamaz; yalnızca dipnotta açıklanır",
+      "B": "Garanti maliyetleri varlık olarak aktifleştirilir",
+      "D": "Garanti koşullu varlık olarak muhasebeleştirilir",
+      "E": "Garanti maliyetleri doğrudan özkaynaklardan indirilir"
     },
     "answer": "C",
     "solution": "TMS 37: yükümlülük doğuran olay garanti kapsamındaki ürünlerin SATIŞIDIR; satış anında yasal yükümlülük doğar. Bir bütün olarak garantiler dikkate alındığında kaynak çıkışı muhtemeldir. Çok sayıda benzer kalem olduğundan karşılık beklenen değer yöntemiyle ölçülür. Doğru cevap C.",
@@ -1106,10 +1106,10 @@
     "stem": "Bir işletme, çevre mevzuatı gereği kirlettiği araziyi temizlemekle yükümlüdür ve mevzuat yürürlüktedir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Kirletme olayı yükümlülük doğuran olaydır; temizleme maliyeti için karşılık ayrılır",
-      "A": "Temizleme fiilen yapılana kadar hiçbir hâlde karşılık ayrılamaz; dipnotta açıklanmaktadır",
-      "B": "Temizleme maliyetleri her hâlde varlık olarak aktifleştirilmek zorunda olan kalemlerdir",
-      "C": "Temizleme yükümlülüğü her hâlde koşullu varlık olarak muhasebeleştirilir",
-      "E": "Temizleme maliyetleri her hâlde doğrudan özkaynaklardan indirilir"
+      "A": "Temizleme fiilen yapılana kadar karşılık ayrılamaz; dipnotta açıklanmaktadır",
+      "B": "Temizleme maliyetleri varlık olarak aktifleştirilmek zorunda olan kalemlerdir",
+      "C": "Temizleme yükümlülüğü koşullu varlık olarak muhasebeleştirilir",
+      "E": "Temizleme maliyetleri doğrudan özkaynaklardan indirilir"
     },
     "answer": "D",
     "solution": "TMS 37: yürürlükteki çevre mevzuatı uyarınca kirletme olayı, temizleme yükümlülüğü doğuran geçmiş bir olaydır. Mevcut yasal yükümlülük vardır, kaynak çıkışı muhtemeldir ve tutar güvenilir tahmin edilebiliyorsa karşılık ayrılır. Doğru cevap D.",
@@ -1128,10 +1128,10 @@
     "stem": "Bir işletme, henüz yürürlüğe girmemiş ancak yürürlüğe girmesi neredeyse kesin olan bir çevre mevzuatı nedeniyle gelecekte temizleme yapmak zorunda kalacaktır. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Yasanın yürürlüğe gireceği neredeyse kesinse yükümlülük doğmuş sayılır",
-      "A": "Yasa yürürlüğe girene kadar hiçbir hâlde yükümlülük doğamaz; karşılık ayrılamamaktadır",
-      "B": "Yasa taslak hâlindeyken dahi her hâlde ve koşulsuz olarak karşılık ayrılır",
-      "C": "Bu durumda işletme her hâlde koşullu varlık muhasebeleştirir",
-      "E": "Henüz yürürlüğe girmemiş bir yasadan doğacak yükümlülük için, yürürlük neredeyse kesin olsa dahi hiçbir zaman karşılık ayrılmaz"
+      "A": "Yasa yürürlüğe girene kadar yükümlülük doğamaz; karşılık ayrılamamaktadır",
+      "B": "Yasa taslak hâlindeyken dahi ve koşulsuz olarak karşılık ayrılır",
+      "C": "Bu durumda işletme koşullu varlık muhasebeleştirir",
+      "E": "Henüz yürürlüğe girmemiş bir yasadan doğacak yükümlülük için, yürürlük neredeyse kesin olsa dahi karşılık ayrılmaz"
     },
     "answer": "D",
     "solution": "TMS 37: yeni bir yasanın gerektireceği önlemlerin ayrıntıları ancak yasa tasarısının kesinleşmesiyle netleşir. Yasanın yürürlüğe gireceği hususunda neredeyse kesinlik varsa, yasadan doğan yükümlülük mevcut yükümlülük olarak dikkate alınır. Doğru cevap D.",
@@ -1238,9 +1238,9 @@
     "stem": "Karşılıkların finansal tablolardaki sunumu bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Bilançoda borç olarak sunulur; karşılık gideri kâr veya zararda muhasebeleştirilir",
-      "A": "Karşılıklar her hâlde özkaynak kalemi olarak sunulmak zorunda olan tutarları ifade eder",
-      "B": "Karşılıklar her hâlde varlık olarak sunulmak zorunda olan tutarları ifade eder",
-      "C": "Karşılıklar hiçbir hâlde bilançoda sunulmaz; yalnızca dipnotta açıklanır",
+      "A": "Karşılıklar özkaynak kalemi olarak sunulmak zorunda olan tutarları ifade eder",
+      "B": "Karşılıklar varlık olarak sunulmak zorunda olan tutarları ifade eder",
+      "C": "Karşılıklar bilançoda sunulmaz; yalnızca dipnotta açıklanır",
       "E": "Karşılıklar bilançoda özkaynak kalemi olarak sunulur; karşılık gideri ise doğrudan geçmiş yıl kârlarından indirilir"
     },
     "answer": "D",
@@ -1260,9 +1260,9 @@
     "stem": "Bir işletmenin kâr payı dağıtımına ilişkin olarak henüz genel kurulda karar alınmamış olması hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Mevcut bir yükümlülük doğmadığından karşılık ayrılmaz",
-      "B": "Beklenen kâr payı tutarında her hâlde karşılık ayrılmak zorunda tutulan bir durumu ifade eder",
-      "C": "Beklenen kâr payı her hâlde koşullu varlık olarak muhasebeleştirilir",
-      "D": "Beklenen kâr payı her hâlde varlık olarak aktifleştirilmek zorunda olan bir kalemi ifade eder",
+      "B": "Beklenen kâr payı tutarında karşılık ayrılır",
+      "C": "Beklenen kâr payı koşullu varlık olarak muhasebeleştirilir",
+      "D": "Beklenen kâr payı varlık olarak aktifleştirilir",
       "E": "Genel kurul kararından önce dahi dağıtılması beklenen kâr payı için mevcut yükümlülük doğar ve karşılık ayrılır"
     },
     "answer": "A",
@@ -1282,10 +1282,10 @@
     "stem": "Bir işletme, gelecek yıl makinelerine yapacağı büyük bakım için şimdiden karşılık ayırmak istemektedir. TMS 37 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "İşletme bakımdan kaçınabileceğinden mevcut bir yükümlülük yoktur; karşılık ayrılmaz",
-      "B": "Bakım maliyeti tahmin edilebildiğinden her hâlde karşılık ayrılır",
-      "C": "Bakım maliyeti her hâlde koşullu borç olarak dipnotlarda açıklanır",
-      "D": "Bakım maliyeti her hâlde derhâl gider yazılmak zorunda olan bir kalemi ifade eder",
-      "E": "Bakım maliyeti her hâlde doğrudan özkaynaklardan indirilmek zorunda tutulan bir tutardır"
+      "B": "Bakım maliyeti tahmin edilebildiğinden karşılık ayrılır",
+      "C": "Bakım maliyeti koşullu borç olarak dipnotlarda açıklanır",
+      "D": "Bakım maliyeti derhâl gider yazılır",
+      "E": "Bakım maliyeti doğrudan özkaynaklardan indirilmek zorunda tutulan bir tutardır"
     },
     "answer": "A",
     "solution": "TMS 37: gelecekteki bakım harcamaları için karşılık ayrılmaz. İşletme, örneğin varlığı satarak gelecekteki harcamadan kaçınabileceğinden mevcut bir yükümlülüğü yoktur. Bakım maliyeti oluştuğunda gider yazılır veya ölçütleri karşılıyorsa TMS 16 uyarınca aktifleştirilir. Doğru cevap A.",

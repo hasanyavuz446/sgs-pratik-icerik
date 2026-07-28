@@ -327,7 +327,7 @@ TMS1_PATCHES = {
             'A': "12 ayı aştığı için 700.000 ₺'nin tamamı duran varlıktır",
             'B': 'Faaliyet döngüsü içinde çevrildiğinden 700.000 ₺ dönen varlıktır',
             'C': '12 aya isabet eden kısmı dönen, kalanı duran varlık olarak bölünür',
-            'D': 'Faaliyet döngüsü dikkate alınmaz; stoklar her hâlde duran varlıktır',
+            'D': 'Faaliyet döngüsü dikkate alınmaz; stoklar duran varlıktır',
             'E': 'Stoklar likidite esasına göre sunulmak zorundadır',
         },
         'B',
@@ -467,7 +467,7 @@ TMS1_PATCHES = {
     'std-tms1-gen-0010': std_patch(
         'Bir işletmenin raporlama dönemi 12 aydan 9 aya indirilmiştir. Bu durumda TMS 1 bakımından doğru davranış hangisidir?',
         {
-            'A': 'Raporlama dönemi hiçbir koşulda 12 aydan farklı olamaz',
+            'A': 'Raporlama dönemi 12 aydan farklı olamaz',
             'B': 'Dönem kısaltılırsa karşılaştırmalı bilgi sunulmaz',
             'C': '9 aylık tutarlar 12 aya tamamlanarak sunulur',
             'D': '9 aylık dönem sunulabilir; nedeni ve karşılaştırılabilirlik sınırı açıklanır',
@@ -493,7 +493,7 @@ TMS1_PATCHES = {
     'std-tms1-gen-0023': std_patch(
         "Bir işletme cari dönemde stok kalemini farklı bir satırda sunmaya karar vermiş ve önceki dönem tutarlarını da buna göre yeniden sınıflandırmıştır. Yeniden sınıflandırılan tutar 320.000 ₺'dir. TMS 1'e göre işletmenin yapması gereken nedir?",
         {
-            'A': 'Önceki dönem tutarları hiçbir koşulda değiştirilemez',
+            'A': 'Önceki dönem tutarları değiştirilemez',
             'B': 'Yeniden sınıflandırma yapılır ancak açıklama gerekmez',
             'C': 'Karşılaştırmalı tutarlar da yeniden sınıflandırılır ve dipnotta açıklanır',
             'D': 'Yalnızca cari dönem değiştirilir; önceki dönem olduğu gibi bırakılır',

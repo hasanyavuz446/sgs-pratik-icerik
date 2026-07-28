@@ -72,7 +72,7 @@
     "stem": "Safha maliyeti sisteminde bir safhanın çıktısı genellikle ne olur?",
     "options": {
       "A": "Bir sonraki safhaya girdi (yarı mamul) olarak aktarılır; son safha çıktısı mamuldür",
-      "B": "Doğrudan müşteriye satılır; hiçbir zaman bir sonraki safhaya girdi olarak aktarılmaz",
+      "B": "Doğrudan müşteriye satılır; bir sonraki safhaya girdi olarak aktarılmaz",
       "C": "Süresiz olarak yarı mamul deposunda bekletilir; sonraki safhaya hiç geçmez",
       "D": "Üretim kaybı sayılarak imha edilir; maliyeti tümüyle dönem zararına yazılır",
       "E": "Kusurlu kabul edilip tedarikçiye iade edilir; maliyeti satıcı hesabına alınır"
@@ -380,10 +380,10 @@
     "stem": "Genellikle direkt ilk madde ve malzeme (DİMM) safhanın başında topluca verilirken; direkt işçilik ve genel üretim giderleri (dönüştürme maliyeti) üretim süresince eşit yayılır. Bu durumda eşdeğer ürün hesabıyla ilgili doğru ifade hangisidir?",
     "options": {
       "A": "DİMM için yarı mamul genelde %100, dönüştürme için tamamlanma derecesi kadar hesaplandığından eşdeğer ürün miktarları farklı olabilir",
-      "B": "İki maliyet unsuru için de eşdeğer ürün miktarı her koşulda tümüyle aynı çıkar; bu yüzden ayrı ayrı hesap yapmaya hiçbir biçimde gerek kalmaz",
+      "B": "İki maliyet unsuru için de eşdeğer ürün miktarı her koşulda tümüyle aynı çıkar; bu yüzden ayrı ayrı hesap yapmaya gerek kalmaz",
       "C": "Yarı mamuller söz konusu olsa bile bu üretimde hiçbir maliyet unsuru için eşdeğer ürün hesaplanmaz",
       "D": "DİMM safha başında verildiğinden yarı mamul için DİMM eşdeğer ürünü her zaman sıfır kabul edilir",
-      "E": "Dönüştürme maliyeti üretim süresine yayıldığından eşdeğer ürün hesabına hiçbir biçimde dahil edilmez"
+      "E": "Dönüştürme maliyeti üretim süresine yayıldığından eşdeğer ürün hesabına dahil edilmez"
     },
     "answer": "A",
     "solution": "DİMM safha başında verildiğinden yarı mamuller malzeme yönünden genelde **%100** tamamdır; dönüştürme (DİG+GÜG) ise **tamamlanma derecesi** kadar. Bu nedenle DİMM ve dönüştürme için **eşdeğer ürün miktarları farklı** hesaplanır.",
@@ -555,7 +555,7 @@
     "konu": "safha_maliyeti",
     "stem": "Safha maliyetinde dönem toplam maliyetinin, tamamlanan birimler ile dönem sonu yarı mamuller arasında paylaştırılmasıyla ilgili doğru ifade hangisidir?",
     "options": {
-      "A": "Dönem toplam maliyetinin tamamı yalnızca tamamlanan birimlere yüklenir; dönem sonu yarı mamullere hiçbir biçimde herhangi bir pay verilmez",
+      "A": "Dönem toplam maliyetinin tamamı yalnızca tamamlanan birimlere yüklenir; dönem sonu yarı mamullere herhangi bir pay verilmez",
       "B": "Toplam maliyet tamamlanan ve yarı mamuller arasında hiç paylaştırılmaz; tek tutar olarak bırakılır",
       "C": "Dönem toplam maliyetinin tamamı yalnızca dönem sonu yarı mamullere yüklenir; tamamlananlara pay verilmez",
       "D": "Toplam maliyet, tamamlanan birimlerin maliyeti ile dönem sonu yarı mamul maliyetinin toplamına eşit olacak biçimde paylaştırılır",
@@ -819,7 +819,7 @@
     "konu": "safha_maliyeti",
     "stem": "Bir işletmede üç ayrı üretim safhası (I → II → III) bulunmaktadır. Safha maliyeti sisteminde maliyet akışı nasıl gerçekleşir?",
     "options": {
-      "A": "Her safha birbirinden tümüyle bağımsız işler; safhalar arasında hiçbir biçimde maliyet ya da yarı mamul aktarımı gerçekleşmez",
+      "A": "Her safha birbirinden tümüyle bağımsız işler; safhalar arasında maliyet ya da yarı mamul aktarımı gerçekleşmez",
       "B": "Maliyet akışı geriye doğrudur; III. safhanın maliyeti II. safhaya, oradan da I. safhaya aktarılır",
       "C": "I. safhanın tamamlanan maliyeti II. safhaya, II. safhanın maliyeti III. safhaya devredilir; son safha çıktısı mamul olur",
       "D": "Üretim maliyeti yalnızca son safhada oluşur; önceki safhalarda hiçbir maliyet biriktirilmez",
@@ -1064,7 +1064,7 @@
       "A": "Ana ürün üretimin temel amacı ve yüksek değerli olandır; yan ürün ise üretim sırasında ortaya çıkan, göreli olarak düşük değerli üründür",
       "B": "Yan ürün ana üründen daha yüksek değerlidir ve üretimin asıl amacını oluşturan çıktıdır; ana ürün ise onun yanında ikincil olarak elde edilir",
       "C": "Ana ürün ile yan ürün her zaman aynı değerdedir; ikisi arasında değer ya da amaç bakımından hiçbir ayrım yapılmaz",
-      "D": "Yan ürün hiçbir koşulda satılamaz; yalnızca ana ürün satışa konu olur ve üretimin tüm maliyetini tek başına üstlenir",
+      "D": "Yan ürün satılamaz; yalnızca ana ürün satışa konu olur ve üretimin tüm maliyetini tek başına üstlenir",
       "E": "Ana ürün maliyetsiz olarak elde edilir; üretimin tüm maliyeti yalnızca yan ürüne yüklenir ve ondan izlenir"
     },
     "answer": "A",

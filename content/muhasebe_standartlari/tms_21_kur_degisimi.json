@@ -27,18 +27,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "TMS 21'e göre raporlama para birimi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Finansal tabloların sunumunda kullanılan para birimidir; işletme bunu serbestçe seçebilir",
-      "B": "İşletmenin faaliyet gösterdiği temel ekonomik çevrenin para birimini ifade eder",
-      "C": "İşletmenin kurulduğu ülkenin resmî para birimi olmak zorunda olan bir kavramı karşılar",
-      "D": "Her hâlde geçerli para birimiyle aynı olmak zorunda olan bir kavramı ifade eder",
-      "E": "Her hâlde işletmenin geçerli para birimiyle aynı olmak zorundadır"
+      "A": "Yalnızca işletmenin yerleşik bulunduğu ülkenin resmî para birimi raporlama para birimi olabilir",
+      "B": "Geçerli para birimiyle aynı olma koşuluna bağlıdır ve ondan farklı seçilemez",
+      "C": "Yalnızca ABD doları veya avro olarak seçilebilir",
+      "D": "Finansal tabloların sunulduğu para birimidir ve geçerli para biriminden farklı olabilir",
+      "E": "Vergi idaresi tarafından belirlenir ve değiştirilemez"
     },
-    "answer": "A",
-    "solution": "TMS 21: raporlama para birimi, finansal tabloların sunumunda kullanılan para birimidir. İşletme finansal tablolarını herhangi bir para biriminde (veya para birimlerinde) sunabilir; bu, geçerli para biriminden farklı olabilir. Doğru cevap A.",
+    "answer": "D",
+    "solution": "TMS 21 par. 8 ve 38: raporlama para birimi, finansal tabloların sunulduğu para birimidir. İşletme tablolarını herhangi bir para biriminde sunabilir; bu para birimi geçerli para biriminden farklı olduğunda par. 39'daki çevrim yöntemi uygulanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - raporlama para birimi"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -137,18 +137,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Geçerli para biriminin değiştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Yalnızca temel ekonomik çevrede değişiklik olursa değişir; değişiklik ileriye dönük uygulanır",
-      "A": "İşletme her dönem geçerli para birimini serbestçe değiştirebilir",
-      "C": "Geçerli para birimi bir kez belirlendikten sonra hiçbir hâlde değiştirilemez; temel ekonomik çevre değişse dahi ilk belirleme kalıcı olarak geçerli kalır",
-      "D": "Geçerli para birimi değişikliği her hâlde geriye dönük uygulanır",
-      "E": "Değişiklik geriye dönük uygulanır ve önceki dönemler yeniden düzenlenir"
+      "A": "Değişiklik geriye dönük uygulanır; karşılaştırmalı önceki dönem tutarları yeniden düzenlenir",
+      "B": "Geçerli para birimi bir kez seçildikten sonra sabit kalır",
+      "C": "Değişiklik ileriye dönük uygulanır; kalemler değişim tarihindeki kurla çevrilir",
+      "D": "Değişiklik yalnızca yönetimin tercihiyle serbestçe yapılabilir",
+      "E": "Değişimden doğan farklar dönemin kâr veya zararına yansıtılır"
     },
-    "answer": "B",
-    "solution": "TMS 21: bir işletmenin geçerli para birimi, ancak temel ekonomik çevresinde değişiklik olması hâlinde değişir. Geçerli para birimindeki değişikliğe ilişkin tüm işlemler değişiklik tarihinden itibaren İLERİYE dönük olarak muhasebeleştirilir. Doğru cevap B.",
+    "answer": "C",
+    "solution": "TMS 21 par. 35-37: geçerli para birimi, ancak esas işlem koşullarında değişiklik olduğunda değişir. Değişiklik ileriye dönük uygulanır; tüm kalemler değişim tarihindeki kur kullanılarak yeni geçerli para birimine çevrilir ve doğan tutarlar tarihî maliyet sayılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - geçerli para birimi değişikliği"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -181,18 +181,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Aşağıdakilerden hangisi TMS 21'e göre parasal kalem DEĞİLDİR?",
     "options": {
-      "C": "Peşin ödenmiş giderler",
-      "A": "Sabit tutarda tahsil edilecek olan ticari alacaklar niteliğindeki varlık kalemlerinin tümü",
-      "B": "Belirlenebilir tutarda ödenecek olan ticari borçlar niteliğindeki kaynak kalemlerinin tamamı",
-      "D": "İşletmenin kasasında ve bankasında bulunan nakit niteliğindeki varlık kalemlerinin tümü",
-      "E": "Nakit olarak ödenmesi kararlaştırılmış ve tutarı belirli olan temettü borcu niteliğinde kalemler"
+      "A": "Sabit tutarda tahsil edilecek ticari alacak",
+      "B": "Belirli tutarda ödenecek satıcı borcu",
+      "C": "Kasadaki ve bankadaki yabancı para nakit",
+      "D": "Peşin ödenmiş sigorta primi",
+      "E": "Nakden ödenecek temettü borcu"
     },
-    "answer": "C",
-    "solution": "TMS 21: parasal olmayan kalemlerin temel özelliği, sabit veya belirlenebilir tutarda para alma hakkı veya ödeme yükümlülüğü İÇERMEMESİDİR. Peşin ödenmiş giderler mal veya hizmet alma hakkı verir, para alma hakkı vermez; parasal olmayan kalemdir. Diğerleri parasaldır. Doğru cevap C.",
+    "answer": "D",
+    "solution": "TMS 21 par. 16: parasal kalemin ayırt edici özelliği, sabit veya belirlenebilir tutarda para alma hakkı ya da ödeme yükümlülüğü taşımasıdır. Peşin ödenmiş sigorta primi para değil hizmet alma hakkı verdiğinden parasal olmayan kalemdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - parasal olmayan kalem"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -203,18 +203,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Aşağıdakilerden hangisi TMS 21'e göre parasal olmayan kalemdir?",
     "options": {
-      "A": "Şerefiye",
-      "B": "Sabit tutarda tahsil edileceği belirlenmiş olan alacak senetleri niteliğindeki varlık kalemleri",
-      "C": "Vadesinde belirli tutarda ödenecek olan banka kredisi niteliğindeki kaynak kalemlerinin tümü",
-      "D": "Yabancı para cinsinden bankada tutulan vadesiz mevduat niteliğindeki varlık kalemlerinin tamamı",
-      "E": "Tutarı sözleşmeyle belirlenmiş ve nakden ödenecek olan kira borcu niteliğindeki kalemler"
+      "A": "Tahsil edilecek alacak senetleri",
+      "B": "Ödenecek banka kredisi",
+      "C": "Yabancı para vadesiz mevduat",
+      "D": "Şerefiye",
+      "E": "Tutarı sözleşmeyle belirlenmiş kira borcu"
     },
-    "answer": "A",
-    "solution": "TMS 21: parasal olmayan kalem örnekleri arasında peşin ödenmiş giderler, şerefiye, maddi olmayan duran varlıklar, stoklar, maddi duran varlıklar ve parasal olmayan bir varlığın teslimiyle ödenecek karşılıklar sayılır. Doğru cevap A.",
+    "answer": "D",
+    "solution": "TMS 21 par. 16: parasal olmayan kalemler para alma/ödeme hakkı içermez. Şerefiye, stoklar, maddi duran varlıklar ve peşin ödenmiş giderler bu gruptadır; alacak, borç, mevduat ve kredi ise parasal kalemdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - parasal olmayan kalem örneği"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "std-tms21-gen-0013",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yurtdışındaki işletmenin geçerli para biriminin belirlenmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yurtdışındaki işletmenin geçerli para biriminin belirlenmesi bakımından aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "C": "Faaliyetlerin raporlayan işletmenin uzantısı mı yoksa özerk mi olduğu dikkate alınır",
-      "A": "Yurtdışındaki işletmenin geçerli para birimi her hâlde ana ortaklıkla aynı olur",
-      "B": "Yurtdışındaki işletmenin geçerli para birimi her hâlde bulunduğu ülkenin parası olmalıdır",
-      "D": "Yurtdışındaki işletmeler için geçerli para birimi kavramı hiç uygulanmaz",
-      "E": "Her hâlde ana ortaklığın geçerli para birimi esas alınır"
+      "A": "Yurtdışı işletmenin geçerli para birimi ana ortaklığınkiyle aynı kabul edilir",
+      "B": "Faaliyetlerin ana ortaklığın uzantısı mı bağımsız mı olduğu değerlendirilir",
+      "C": "Ana ortaklıkla yapılan işlemlerin faaliyetler içindeki payı dikkate alınır",
+      "D": "Faaliyetlerden doğan nakit akışlarının ana ortaklığı doğrudan etkileyip etkilemediğine bakılır",
+      "E": "Faaliyet nakit akışlarının borç servisine yetip yetmediği değerlendirilir"
     },
-    "answer": "C",
-    "solution": "TMS 21: yurtdışındaki işletmenin geçerli para birimi belirlenirken faaliyetlerinin raporlayan işletmenin bir uzantısı olarak mı yoksa önemli ölçüde özerklikle mi yürütüldüğü, işlemlerin raporlayan işletmeyle oranı, nakit akışlarının doğrudan etkileyip etkilemediği ve borç servisinin yeterliliği gibi ek göstergeler dikkate alınır. Doğru cevap C.",
+    "answer": "A",
+    "solution": "TMS 21 par. 11: yurtdışındaki işletmenin geçerli para birimi ayrıca belirlenir ve ana ortaklığınkiyle aynı olmak durumunda değildir. Par. 11'deki dört gösterge faaliyetin bağımsızlık derecesini ölçer.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - yurtdışındaki işletme"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "std-tms21-gen-0014",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Bir işletmenin ürün fiyatları ve maliyetleri ağırlıklı olarak avro cinsinden belirlenmekte, ancak işletme finansal tablolarını Türk lirası olarak sunmaktadır. TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin ürün fiyatları ve maliyetleri ağırlıklı olarak avro cinsinden belirlenmektedir. Buna göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "Geçerli para birimi avro, raporlama para birimi Türk lirasıdır",
-      "A": "Hem geçerli hem raporlama para birimi her hâlde Türk lirası olur",
-      "B": "Hem geçerli hem raporlama para birimi her hâlde avro olmak zorunda tutulan bir durumdur",
-      "C": "Geçerli para birimi Türk lirası, raporlama para birimi avro olur",
-      "E": "Bu durumda işletme finansal tablo düzenlemekten tümüyle muaf tutulur"
+      "A": "Geçerli para birimi yerleşik olduğu ülkenin para birimidir",
+      "B": "Geçerli para birimi bütçesini hazırladığı para birimidir",
+      "C": "Geçerli para birimi ortaklarının bulunduğu ülkenin para birimidir",
+      "D": "İşletmenin geçerli para birimi avrodur",
+      "E": "Geçerli para birimi en çok borçlandığı para birimidir"
     },
     "answer": "D",
-    "solution": "TMS 21: geçerli para birimi, satış fiyatlarını ve maliyetleri en çok etkileyen para birimidir — burada avro. Raporlama para birimi ise işletmenin tabloları sunmayı seçtiği birimdir ve serbestçe belirlenebilir — burada TL. İkisi farklı olabilir; bu durumda çevrim yapılır. Doğru cevap D.",
+    "solution": "TMS 21 par. 9: geçerli para birimi belirlenirken birincil göstergeler, satış fiyatlarını ve mal/hizmet maliyetlerini en çok etkileyen para birimidir. İkisi de avro olduğundan geçerli para birimi avrodur; yerleşim yeri veya bütçe para birimi belirleyici değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - iki para birimi (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "std-tms21-gen-0017",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yabancı para işlemin ilk muhasebeleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yabancı para işlemin ilk muhasebeleştirilmesi bakımından aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "E": "İşlem tarihindeki geçerli para birimi ile yabancı para arasındaki spot kur uygulanır",
-      "A": "Her hâlde dönem sonundaki kapanış kuru uygulanmak zorunda olan bir ölçümü ifade eder",
-      "B": "Her hâlde dönem başındaki açılış kuru uygulanmak zorunda tutulan bir ölçümü karşılar",
-      "C": "Her hâlde dönemin ortalama kuru uygulanmak zorunda olan bir ölçümü ifade eder",
-      "D": "İşlem tarihindeki değil, raporlama dönemi sonundaki kapanış kuru uygulanır"
+      "A": "İşlem tarihindeki spot kur uygulanır",
+      "B": "Raporlama dönemi sonundaki kapanış kuru uygulanır",
+      "C": "İşlem tarihi, muhasebeleştirme koşullarının ilk kez sağlandığı tarihtir",
+      "D": "Kurlar önemli ölçüde dalgalanmıyorsa haftalık veya aylık ortalama kur kullanılabilir",
+      "E": "Yabancı para tutar, geçerli para birimine çevrilerek kaydedilir"
     },
-    "answer": "E",
-    "solution": "TMS 21: yabancı para işlem, ilk muhasebeleştirme sırasında, işlem tarihindeki geçerli para birimi ile yabancı para arasındaki spot kur uygulanmak suretiyle geçerli para biriminde kaydedilir. Doğru cevap E.",
+    "answer": "B",
+    "solution": "TMS 21 par. 21: yabancı para işlem, ilk muhasebeleştirmede işlem tarihindeki spot kur uygulanarak geçerli para biriminde kaydedilir. Kapanış kuru ilk kayıt değil, par. 23(a) uyarınca dönem sonu ölçümünde kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - ilk muhasebeleştirme"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -379,18 +379,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "İşlem tarihindeki kurun uygulanmasında kolaylık bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Kurun önemli ölçüde dalgalanmadığı hâllerde dönemin ortalama kuru kullanılabilir",
-      "A": "Her hâlde işlem tarihinin kesin kuru kullanılır; hiçbir kolaylık bulunmamaktadır",
-      "C": "Kur dalgalansa dahi her hâlde dönemin ortalama kuru kullanılır",
-      "D": "Her hâlde dönem sonundaki kapanış kuru kullanılmak zorunda olan bir kolaylığı ifade eder",
-      "E": "Her hâlde raporlama dönemi sonundaki kapanış kuru kullanılır"
+      "A": "Kur ne kadar dalgalansın, ortalama kur her zaman kullanılabilir",
+      "B": "Ortalama kur yalnızca yıllık dönemler için kullanılabilir",
+      "C": "Kurlar önemli ölçüde dalgalanmıyorsa dönemin ortalama kuru kullanılabilir",
+      "D": "Ortalama kur kullanımı TMS 21'de tümüyle yasaklanmıştır",
+      "E": "Ortalama kur yerine yıl sonu kapanış kuru geriye dönük uygulanır"
     },
-    "answer": "B",
-    "solution": "TMS 21: uygulama kolaylığı açısından işlem tarihindeki kura yaklaşan bir kur kullanılabilir (haftalık veya aylık ortalama kur gibi). Ancak kurlar önemli ölçüde dalgalanıyorsa, dönem için ortalama kur kullanılması UYGUN DEĞİLDİR. Doğru cevap B.",
+    "answer": "C",
+    "solution": "TMS 21 par. 22: kolaylık sağlamak amacıyla haftalık veya aylık ortalama kur kullanılabilir; ancak kurlar önemli ölçüde dalgalanıyorsa dönem ortalamasının kullanılması uygun değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - ortalama kur kolaylığı"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -401,18 +401,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Raporlama dönemi sonunda yabancı para PARASAL kalemler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Kapanış kuru kullanılarak çevrilir",
-      "B": "İşlem tarihindeki tarihî kur kullanılarak çevrilmek zorunda olan bir ölçümü ifade eder",
-      "C": "Hiçbir çevrim yapılmaz; ilk kayıt tutarında bırakılmak zorunda olan bir ölçümü karşılar",
-      "D": "Her hâlde dönemin ortalama kuru kullanılarak çevrilmek zorunda tutulan bir ölçümdür",
-      "E": "İşlem tarihindeki tarihî kur kullanılarak çevrilir ve değişmez"
+      "A": "Kapanış kuruyla çevrilir; doğan kur farkı dönemin kâr veya zararına yansıtılır",
+      "B": "İşlem tarihindeki kurla çevrilir ve dönem sonunda değiştirilmez",
+      "C": "Çevrim yapılmaz; kalem ilk kayıt tutarında bırakılır ve kur değişimi sonuçlara girmez",
+      "D": "Dönemin ortalama kuruyla çevrilir",
+      "E": "Gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir"
     },
     "answer": "A",
-    "solution": "TMS 21: her raporlama dönemi sonunda yabancı para birimindeki parasal kalemler kapanış kuru kullanılarak çevrilir. Doğru cevap A.",
+    "solution": "TMS 21 par. 23(a): her raporlama dönemi sonunda yabancı para parasal kalemler kapanış kuruyla çevrilir. Par. 28 uyarınca çevrimden doğan kur farkı, oluştuğu dönemin kâr veya zararında muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - parasal kalemlerin dönem sonu ölçümü"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -423,18 +423,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Tarihî maliyetiyle ölçülen yabancı para PARASAL OLMAYAN kalemler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "C": "İşlem tarihindeki kur kullanılarak çevrilir",
-      "A": "Kapanış kuru kullanılarak çevrilmek zorunda olan bir ölçümü ifade eder",
-      "B": "Her hâlde dönemin ortalama kuru kullanılarak çevrilmek zorunda tutulan bir ölçümdür",
-      "D": "Her raporlama döneminde yeniden değerlenmek zorunda olan bir ölçümü karşılar",
-      "E": "Raporlama dönemi sonundaki kapanış kuru kullanılarak çevrilir"
+      "A": "Kapanış kuruyla çevrilir ve kur farkı doğar",
+      "B": "Dönemin ortalama kuruyla çevrilir",
+      "C": "Gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir",
+      "D": "Her raporlama döneminde yeniden değerlenir ve fark özkaynağa alınır",
+      "E": "İşlem tarihindeki kurla çevrilir"
     },
-    "answer": "C",
-    "solution": "TMS 21: yabancı para birimi üzerinden tarihî maliyetle ölçülen parasal olmayan kalemler, işlem tarihindeki kur kullanılarak çevrilir. Kapanış kuruyla yeniden çevrilmez. Doğru cevap C.",
+    "answer": "E",
+    "solution": "TMS 21 par. 23(b): yabancı para üzerinden tarihî maliyetle ölçülen parasal olmayan kalemler işlem tarihindeki kurla çevrilir. Kapanış kuruyla yeniden çevrilmediği için bu kalemlerden kur farkı doğmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - parasal olmayan kalem (tarihî maliyet)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -445,18 +445,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Gerçeğe uygun değeriyle ölçülen yabancı para PARASAL OLMAYAN kalemler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "Gerçeğe uygun değerin belirlendiği tarihteki kur kullanılarak çevrilir",
-      "A": "İşlem tarihindeki tarihî kur kullanılarak çevrilmek zorunda olan bir ölçümü ifade eder",
-      "B": "Her hâlde raporlama dönemi sonundaki kapanış kuru kullanılmak zorunda tutulan bir ölçümdür",
-      "C": "Her hâlde dönemin ortalama kuru kullanılarak çevrilmek zorunda olan bir ölçümü karşılar",
-      "D": "İşlem tarihindeki tarihî kur kullanılarak çevrilir"
+      "A": "İşlem tarihindeki tarihî kurla çevrilir ve sonraki dönemlerde yeniden ölçülmez",
+      "B": "Raporlama dönemi sonundaki kapanış kuruyla çevrilir",
+      "C": "Gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir",
+      "D": "Dönemin ortalama kuruyla çevrilir",
+      "E": "İlk kayıt tutarında bırakılır ve çevrim yapılmaz"
     },
-    "answer": "E",
-    "solution": "TMS 21: yabancı para birimi üzerinden gerçeğe uygun değeriyle ölçülen parasal olmayan kalemler, gerçeğe uygun değerin belirlendiği tarihteki kurlar kullanılarak çevrilir. Doğru cevap E.",
+    "answer": "C",
+    "solution": "TMS 21 par. 23(c): gerçeğe uygun değeri üzerinden ölçülen yabancı para parasal olmayan kalemler, gerçeğe uygun değerin belirlendiği tarihteki kur kullanılarak çevrilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - parasal olmayan kalem (GUD)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "std-tms21-gen-0022",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Parasal kalemlerin ödenmesinden veya çevrilmesinden doğan kur farkları bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Parasal kalemlerin ödenmesinden veya çevrilmesinden doğan kur farkları bakımından aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "E": "Kural olarak oluştukları dönemin kâr veya zararında muhasebeleştirilir",
-      "A": "Her hâlde diğer kapsamlı gelirde muhasebeleştirilmek zorunda olan bir kalemi ifade eder",
-      "B": "Her hâlde doğrudan özkaynakta biriktirilmek zorunda olan bir kalemi karşılar",
-      "C": "Her hâlde ilgili varlığın maliyetine eklenmek zorunda tutulan bir kalemi ifade eder",
-      "D": "Kur farkları hiçbir biçimde kayda alınmaz; yalnızca dipnotta açıklanır"
+      "A": "Kural olarak oluştukları dönemin kâr veya zararında muhasebeleştirilir",
+      "B": "Yurtdışındaki işletmedeki net yatırımın parçası olan kalemde diğer kapsamlı gelire alınır",
+      "C": "Ödeme dönem içinde yapılırsa fark ödeme tarihi itibarıyla kâr veya zarara yansıtılır",
+      "D": "Kur farkı, kalemin ilk kaydı ile ödeme veya dönem sonu ölçümü arasındaki kur değişiminden doğar",
+      "E": "Kur farkları doğrudan özkaynakta biriktirilir"
     },
     "answer": "E",
-    "solution": "TMS 21: parasal kalemlerin ödenmesinden ya da dönem içinde veya önceki finansal tablolarda çevrilmesinden kaynaklanan kur farkları, oluştukları dönemde kâr veya zararda muhasebeleştirilir. Doğru cevap E.",
+    "solution": "TMS 21 par. 28: parasal kalemlerden doğan kur farkları oluştukları dönemin kâr veya zararında muhasebeleştirilir. Özkaynakta biriktirme genel kural değildir; par. 32'deki net yatırım istisnası ile par. 39(c)'deki çevrim farkları dışında uygulanmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - kur farkının yeri"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "std-tms21-gen-0023",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Parasal olmayan bir kalemin kazanç veya kaybı diğer kapsamlı gelirde muhasebeleştiriliyorsa kur farkı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Parasal olmayan bir kalemin kazanç veya kaybı diğer kapsamlı gelirde muhasebeleştiriliyorsa kur bileşeni bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "İlgili kur farkı da diğer kapsamlı gelirde muhasebeleştirilir",
-      "A": "İlgili kur farkı her hâlde kâr veya zararda muhasebeleştirilir",
-      "B": "İlgili kur farkı her hâlde varlığın maliyetine eklenmek zorunda olan bir kalemi ifade eder",
-      "C": "İlgili kur farkı hiçbir biçimde kayda alınmaz; yalnızca dipnotta açıklanır",
-      "E": "İlgili kur farkı her hâlde kâr veya zarara yansıtılır"
+      "A": "Kur bileşeni de diğer kapsamlı gelirde muhasebeleştirilir",
+      "B": "Kur bileşeni ayrıştırılıp kâr veya zarara yansıtılır",
+      "C": "Kur bileşeni ayrıştırılarak ilgili varlığın maliyetine eklenir",
+      "D": "Kur bileşeni yalnızca dipnotta açıklanır",
+      "E": "Kur bileşeni dağıtılmamış kârlara doğrudan aktarılır"
     },
-    "answer": "D",
-    "solution": "TMS 21: parasal olmayan bir kalemden kaynaklanan kazanç veya kayıp diğer kapsamlı gelirde muhasebeleştirildiğinde, bu kazanç veya kaybın kur farkına ilişkin kısmı da diğer kapsamlı gelirde muhasebeleştirilir. Kur farkı, ana kalemi izler. Doğru cevap D.",
+    "answer": "A",
+    "solution": "TMS 21 par. 30: bir parasal olmayan kalemin kazanç veya kaybı diğer kapsamlı gelirde muhasebeleştirildiğinde, bu kazanç veya kaybın kur bileşeni de diğer kapsamlı gelirde muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - kur farkı ana kalemi izler"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "std-tms21-gen-0027",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Bir işletme yabancı para cinsinden aldığı makineyi tarihî maliyetle izlemektedir. Dönem sonunda kur önemli ölçüde yükselmiştir. TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme yabancı para cinsinden aldığı makineyi tarihî maliyetle izlemektedir. Dönem sonunda kur yükselmiştir. Buna göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Makine parasal olmayan kalem olduğundan yeniden çevrilmez; kur farkı doğmaz",
-      "B": "Makine kapanış kuruyla yeniden çevrilir ve kur farkı gideri yazılır",
-      "C": "Makine kapanış kuruyla çevrilir ve kur farkı maliyete eklenir",
-      "D": "Makine için her hâlde kur farkı geliri muhasebeleştirilmek zorunda olan bir durumu ifade eder",
-      "E": "Makine parasal kalem sayılır; kapanış kuruyla çevrilir ve kur farkı doğar"
+      "A": "Makine işlem tarihi kuruyla kayıtlı kalır; kur farkı doğmaz",
+      "B": "Makine kapanış kuruyla yeniden çevrilir ve kur farkı geliri yazılır",
+      "C": "Makine kapanış kuruyla çevrilir ve fark özkaynağa alınır",
+      "D": "Makine dönemin ortalama kuruyla yeniden çevrilir",
+      "E": "Makinenin amortismanı kapanış kuruyla yeniden hesaplanır"
     },
     "answer": "A",
-    "solution": "TMS 21: tarihî maliyetle ölçülen parasal olmayan kalemler işlem tarihindeki kurla çevrilir ve dönem sonunda kapanış kuruyla yeniden çevrilmez. Maddi duran varlık parasal olmayan kalemdir; kur değişimi onun defter değerini etkilemez, kur farkı doğmaz. Doğru cevap A.",
+    "solution": "TMS 21 par. 23(b): tarihî maliyetle ölçülen yabancı para parasal olmayan kalemler işlem tarihindeki kurla çevrilir ve dönem sonunda yeniden çevrilmez. Bu nedenle kur değişimi makinenin defter değerini ve amortismanını etkilemez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - MDV'de kur farkı yok (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -621,18 +621,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Yurtdışındaki işletmedeki net yatırımın bir parçası olan parasal kalemin kur farkı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "Konsolide finansal tablolarda diğer kapsamlı gelirde muhasebeleştirilir",
-      "A": "Her hâlde kâr veya zararda muhasebeleştirilmek zorunda olan bir kalemi ifade eder",
-      "B": "Her hâlde ilgili varlığın maliyetine eklenmek zorunda olan bir kalemi karşılar",
-      "C": "Hiçbir biçimde kayda alınmaz; yalnızca dipnotlarda açıklanır",
-      "D": "Doğrudan dönemin kâr veya zararında muhasebeleştirilir"
+      "A": "Doğrudan dönemin kâr veya zararına yansıtılır; elden çıkarmada ek bir işlem yapılmaz",
+      "B": "Diğer kapsamlı gelirde muhasebeleştirilir; elden çıkarmada kâr veya zarara sınıflandırılır",
+      "C": "Yatırımın defter değerine eklenir ve elden çıkarmada maliyetle birlikte dikkate alınır",
+      "D": "Özkaynakta biriktirilir ve elden çıkarmada da özkaynakta kalır",
+      "E": "Yalnızca dipnotta açıklanır, kayda alınmaz"
     },
-    "answer": "E",
-    "solution": "TMS 21: raporlayan işletmenin yurtdışındaki işletmede bulunan net yatırımının bir parçasını oluşturan parasal kalemden kaynaklanan kur farkları, bireysel tablolarda kâr veya zararda; ancak yurtdışındaki işletmeyi içeren konsolide finansal tablolarda diğer kapsamlı gelirde muhasebeleştirilir ve net yatırımın elden çıkarılmasına kadar özkaynakta biriktirilir. Doğru cevap E.",
+    "answer": "B",
+    "solution": "TMS 21 par. 32: yurtdışındaki işletmedeki net yatırımın parçasını oluşturan parasal kalemden doğan kur farkı diğer kapsamlı gelirde muhasebeleştirilir ve par. 48 uyarınca net yatırımın elden çıkarılmasında kâr veya zarara yeniden sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - net yatırımda kur farkı"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -665,18 +665,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Geçerli para biriminden farklı bir raporlama para birimine çevrimde varlık ve borçlar bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "C": "Kapanış kuru kullanılarak çevrilir",
-      "A": "İşlem tarihindeki tarihî kur kullanılarak çevrilmek zorunda olan bir işlemi ifade eder",
-      "B": "Her hâlde dönemin ortalama kuru kullanılarak çevrilmek zorunda tutulan bir işlemi karşılar",
-      "D": "Hiçbir çevrim yapılmaz; tutarlar geçerli para biriminde bırakılır",
-      "E": "İşlem tarihindeki tarihî kurlarla çevrilir"
+      "A": "İşlem tarihlerindeki tarihî kurlarla çevrilir",
+      "B": "İlgili tablonun tarihindeki kapanış kuruyla çevrilir",
+      "C": "Dönemin ortalama kuruyla çevrilir",
+      "D": "Geçerli para biriminde bırakılır, çevrim yapılmaz",
+      "E": "Yalnızca parasal olanlar çevrilir, parasal olmayanlar aynen aktarılır"
     },
-    "answer": "C",
-    "solution": "TMS 21: geçerli para biriminden farklı bir raporlama para birimine çevrimde, her finansal durum tablosundaki varlık ve borçlar o tablonun tarihindeki kapanış kuru kullanılarak çevrilir. Doğru cevap C.",
+    "answer": "B",
+    "solution": "TMS 21 par. 39(a): her finansal durum tablosundaki varlık ve borçlar, o tablonun tarihindeki kapanış kuru kullanılarak raporlama para birimine çevrilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - raporlama para birimine çevrim (varlık/borç)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -687,18 +687,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Raporlama para birimine çevrimde gelir ve giderler bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "İşlem tarihlerindeki kurlarla çevrilir; kur önemli dalgalanmıyorsa ortalama kur kullanılabilir",
-      "A": "Her hâlde kapanış kuru kullanılarak çevrilmek zorunda olan bir işlemi ifade eder",
-      "B": "Gelir ve giderler her hâlde dönem başındaki açılış kuru kullanılarak çevrilir; işlem tarihleri ve dönemin ortalama kuru bu çevrimde hiç dikkate alınmaz",
-      "C": "Hiçbir çevrim yapılmaz; gelir ve giderler geçerli para biriminde bırakılır",
-      "D": "Kapanış kuru kullanılarak çevrilir"
+      "A": "Tüm gelir ve giderler, finansal durum tablosu tarihindeki kapanış kuru kullanılarak çevrilir",
+      "B": "Dönem başındaki açılış kuruyla çevrilir",
+      "C": "Çevrilmez, geçerli para biriminde raporlanır",
+      "D": "İşlem tarihlerindeki kurlarla çevrilir; ortalama kur yaklaşık olarak kullanılabilir",
+      "E": "Yalnızca nakit çıkışı doğuran giderler çevrilir"
     },
-    "answer": "E",
-    "solution": "TMS 21: kâr veya zarar ile diğer kapsamlı gelir tablosundaki gelir ve giderler işlem tarihlerindeki kurlar kullanılarak çevrilir. Uygulama kolaylığı için kurlar önemli ölçüde dalgalanmıyorsa dönemin ortalama kuru kullanılabilir. Doğru cevap E.",
+    "answer": "D",
+    "solution": "TMS 21 par. 39(b): gelir ve giderler işlem tarihlerindeki kurlar kullanılarak çevrilir. Par. 40 uyarınca kurlar önemli ölçüde dalgalanmıyorsa yaklaşık bir kur olarak dönemin ortalama kuru kullanılabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - çevrimde gelir/gider"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -709,18 +709,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Raporlama para birimine çevrimden doğan kur farkları bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "Diğer kapsamlı gelirde muhasebeleştirilir",
-      "A": "Her hâlde kâr veya zararda muhasebeleştirilmek zorunda olan bir kalemi ifade eder",
-      "B": "Her hâlde varlıkların maliyetine eklenmek zorunda olan bir kalemi karşılar",
-      "C": "Hiçbir biçimde kayda alınmaz; yalnızca dipnotlarda açıklanır",
-      "D": "Doğrudan dönemin kâr veya zararında muhasebeleştirilir"
+      "A": "Doğrudan dönemin kâr veya zararında muhasebeleştirilir",
+      "B": "Diğer kapsamlı gelirde muhasebeleştirilir",
+      "C": "Varlıkların maliyetine eklenir",
+      "D": "Kayda alınmaz, yalnızca dipnotta açıklanır",
+      "E": "Dağıtılmamış kârlara doğrudan aktarılır"
     },
-    "answer": "E",
-    "solution": "TMS 21: geçerli para biriminden farklı bir raporlama para birimine çevrimde ortaya çıkan tüm kur farkları diğer kapsamlı gelirde muhasebeleştirilir. Bu, tek tek parasal kalemlerin kur farkından (kâr/zarara giden) farklıdır. Doğru cevap E.",
+    "answer": "B",
+    "solution": "TMS 21 par. 39(c): geçerli para biriminden farklı bir raporlama para birimine çevrimde ortaya çıkan tüm kur farkları diğer kapsamlı gelirde muhasebeleştirilir. Bu, tek tek parasal kalemlerin par. 28'deki kur farkından ayrı bir sunumdur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - çevrim kur farkı"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -731,18 +731,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Yurtdışındaki işletmenin elden çıkarılması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "C": "Özkaynakta biriken kur farkları kâr veya zarara yeniden sınıflandırılır",
-      "A": "Özkaynakta biriken kur farkları her hâlde özkaynakta kalmak zorunda olan tutarları ifade eder",
-      "B": "Özkaynakta biriken kur farkları her hâlde geçmiş yıllar kârına aktarılır",
-      "D": "Özkaynakta biriken kur farkları her hâlde iptal edilmek zorunda olan tutarları karşılar",
-      "E": "Özkaynakta biriken kur farkları özkaynakta kalır; kâr veya zarara aktarılmaz"
+      "A": "Özkaynakta biriken kur farkları kâr veya zarara yeniden sınıflandırılır",
+      "B": "Biriken kur farkları özkaynakta kalmaya devam eder",
+      "C": "Biriken kur farkları dağıtılmamış kârlara aktarılır",
+      "D": "Biriken kur farkları geriye dönük olarak düzeltilir",
+      "E": "Biriken kur farkları elden çıkarma bedelinden indirilir"
     },
-    "answer": "C",
-    "solution": "TMS 21: yurtdışındaki işletmenin elden çıkarılması durumunda, özkaynakta ayrı bir unsur olarak biriktirilmiş bulunan ve o işletmeye ilişkin kur farklarının toplam tutarı, elden çıkarma kazanç veya kaybının muhasebeleştirildiği anda kâr veya zarara yeniden sınıflandırılır. Doğru cevap C.",
+    "answer": "A",
+    "solution": "TMS 21 par. 48: yurtdışındaki bir işletmenin elden çıkarılmasında, diğer kapsamlı gelirde muhasebeleştirilip özkaynakta biriktirilmiş olan kur farklarının birikmiş tutarı, elden çıkarma kazanç veya kaybının muhasebeleştirildiği anda kâr veya zarara sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - elden çıkarmada yeniden sınıflandırma"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "std-tms21-gen-0035",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yurtdışındaki işletmenin edinimiyle doğan şerefiye ve düzeltmeler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yurtdışındaki işletmenin ediniminde doğan şerefiye ve gerçeğe uygun değer düzeltmeleri bakımından aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "B": "Yurtdışındaki işletmenin varlık ve borçları olarak ele alınır; kapanış kuruyla çevrilir",
-      "A": "Raporlayan işletmenin varlıkları sayılır ve tarihî kurla çevrilir",
-      "C": "Her hâlde işlem tarihindeki kurla çevrilir ve sonradan yeniden çevrilmez",
-      "D": "Şerefiye hiçbir hâlde çevrime tabi tutulamayan bir kalemi ifade eder",
-      "E": "Şerefiye raporlayan işletmenin para biriminde sabitlenir; çevrilmez"
+      "A": "Şerefiye yurtdışındaki işletmenin varlığı olarak ele alınır",
+      "B": "Şerefiye yurtdışındaki işletmenin geçerli para biriminde ifade edilir",
+      "C": "Şerefiye kapanış kuruyla raporlama para birimine çevrilir",
+      "D": "Defter değerlerine yapılan gerçeğe uygun değer düzeltmeleri de aynı biçimde çevrilir",
+      "E": "Şerefiye ana ortaklığın geçerli para biriminde sabit tutulur"
     },
-    "answer": "B",
-    "solution": "TMS 21: yurtdışındaki bir işletmenin ediniminden doğan şerefiye ile varlık ve borçların defter değerlerine yapılan gerçeğe uygun değer düzeltmeleri, yurtdışındaki işletmenin varlık ve borçları olarak ele alınır; onun geçerli para biriminde ifade edilir ve kapanış kuruyla çevrilir. Doğru cevap B.",
+    "answer": "E",
+    "solution": "TMS 21 par. 47: yurtdışındaki işletmenin ediniminde doğan şerefiye ile varlık ve borçların defter değerlerine yapılan gerçeğe uygun değer düzeltmeleri, o işletmenin geçerli para biriminde ifade edilen kalemler olarak ele alınır ve kapanış kuruyla çevrilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - şerefiyenin çevrimi"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "std-tms21-gen-0036",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "TMS 21'e göre yapılacak açıklamalar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "TMS 21'e göre yapılacak açıklamalar bakımından aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "A": "Kâr veya zarara yansıtılan kur farkı tutarı ile özkaynakta biriken net kur farkları açıklanır",
-      "B": "Kur farkları hakkında hiçbir açıklama yapılmasına gerek bulunmaz",
-      "C": "Yalnızca kullanılan kurlar açıklanır; tutarlar hiçbir hâlde açıklanmaz",
-      "D": "Yalnızca vergi idaresine bildirim yapılır; finansal tablo kullanıcılarına açıklama yapılmaz",
-      "E": "Açıklama yalnızca yurtdışında faaliyeti bulunan işletmeler için zorunlu tutulmuş bulunur"
+      "A": "Kâr veya zarara yansıtılan kur farkı tutarı, gerçeğe uygun değer farkı kâr veya zarara yansıtılanlar hariç açıklanır",
+      "B": "Kur farkları için açıklama yükümlülüğü yalnızca yurtdışı faaliyeti olanlara getirilmiştir",
+      "C": "Özkaynakta biriken net kur farkları açıklanır",
+      "D": "Biriken kur farklarının dönem başı ve dönem sonu mutabakatı verilir",
+      "E": "Raporlama para birimi geçerli para biriminden farklıysa bu durum ve gerekçesi açıklanır"
     },
-    "answer": "A",
-    "solution": "TMS 21: işletme, kâr veya zararda muhasebeleştirilen kur farklarının tutarını (TFRS 9 uyarınca GUD farkı kâr/zarara yansıtılan finansal araçlardan doğanlar hariç) ve diğer kapsamlı gelirde muhasebeleştirilip özkaynakta ayrı bir unsurda biriktirilen net kur farklarının dönem başı ve sonu mutabakatını açıklar. Doğru cevap A.",
+    "answer": "B",
+    "solution": "TMS 21 par. 52-53: açıklama yükümlülüğü kur farkı doğan tüm işletmeler için geçerlidir; yurtdışı faaliyet koşuluna bağlanmamıştır. Kâr veya zarara yansıtılan tutar, özkaynakta biriken net farklar ve bunların mutabakatı açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - açıklamalar"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "std-tms21-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Raporlama para biriminin geçerli para biriminden farklı olması hâlinde açıklama bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Raporlama para biriminin geçerli para biriminden farklı olması hâlinde aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Bu durum, geçerli para birimi ve farklı bir raporlama para birimi kullanılmasının nedeniyle birlikte açıklanır",
-      "A": "Bu durumun açıklanmasına hiçbir hâlde gerek bulunmamak zorunda olan bir husustur",
-      "C": "Yalnızca raporlama para birimi belirtilir; geçerli para birimi hiçbir hâlde açıklanmaz",
-      "D": "İşletme bu durumda geçerli para birimini terk eder ve tüm kayıtlarını raporlama para birimi üzerinden yeniden oluşturarak karşılaştırmalı dönemleri de bu birime göre düzeltir",
-      "E": "İşletme geçerli para birimini raporlama para birimine eşitlemek zorundadır"
+      "A": "Sonuçlar ve finansal durum, TMS 21 par. 39'daki yönteme göre raporlama para birimine çevrilir",
+      "B": "İşletme raporlama para birimini kullanmaktan vazgeçmek durumundadır",
+      "C": "Yalnızca geçerli para birimindeki tablolar sunulur, çevrim yapılmaz",
+      "D": "Çevrim yapılır ancak doğan farklar kâr veya zarara yansıtılır",
+      "E": "Varlık, borç, gelir ve giderler dâhil tüm kalemler işlem tarihlerindeki tarihî kurlarla çevrilir"
     },
-    "answer": "B",
-    "solution": "TMS 21: raporlama para biriminin geçerli para biriminden farklı olması durumunda, geçerli para birimi belirtilerek bu durum açıklanır ve farklı bir raporlama para birimi kullanılmasının nedeni belirtilir. Doğru cevap B.",
+    "answer": "A",
+    "solution": "TMS 21 par. 38-39: bir işletme finansal tablolarını herhangi bir para biriminde sunabilir; raporlama para birimi geçerli para biriminden farklıysa sonuçlar ve finansal durum par. 39'daki yönteme göre çevrilir ve doğan farklar diğer kapsamlı gelire alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - farklı raporlama para birimi açıklaması"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "std-tms21-gen-0038",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yüksek enflasyonlu ekonomideki yurtdışı işletmenin çevrimi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yüksek enflasyonlu bir ekonomideki yurtdışı işletmenin çevrimi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Önce TMS 29 uyarınca düzeltilir, sonra kapanış kuru kullanılarak çevrilir",
-      "B": "Doğrudan tarihî kurlarla çevrilir; TMS 29 düzeltmesi hiçbir hâlde yapılmaz",
-      "C": "Doğrudan ortalama kurla çevrilir; enflasyon düzeltmesi hiç dikkate alınmaz",
-      "D": "Bu işletmelerin tabloları hiçbir hâlde çevrilemez; ayrı sunulur",
-      "E": "Düzeltme yapılmadan doğrudan kapanış kuruyla çevrilir"
+      "A": "Doğrudan kapanış kuruyla çevrilir, yeniden düzenleme yapılmaz",
+      "B": "Tablolar önce TMS 29'a göre yeniden düzenlenir, sonra kapanış kuruyla çevrilir",
+      "C": "Doğrudan dönemin ortalama kuruyla çevrilir",
+      "D": "Yalnızca parasal kalemler yeniden düzenlenir",
+      "E": "Çevrim yapılmaz, tablolar yerel para biriminde sunulur"
     },
-    "answer": "A",
-    "solution": "TMS 21: geçerli para birimi yüksek enflasyonlu bir ekonominin para birimi olan işletmenin finansal tabloları, önce TMS 29 uyarınca yeniden düzenlenir; ardından tüm tutarlar (karşılaştırmalı dâhil) en son finansal durum tablosu tarihindeki kapanış kuru kullanılarak çevrilir. Doğru cevap A.",
+    "answer": "B",
+    "solution": "TMS 21 par. 42-43: geçerli para birimi yüksek enflasyonlu bir ekonominin para birimi olan işletmenin tabloları önce TMS 29 uyarınca yeniden düzenlenir; ardından tüm tutarlar en güncel finansal durum tablosu tarihindeki kapanış kuruyla çevrilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - yüksek enflasyonda çevrim"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "std-tms21-gen-0039",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Aşağıdakilerden hangisi TMS 21'e göre kur farkının kâr veya zarar DIŞINDA muhasebeleştirildiği bir durumdur?",
+    "stem": "Aşağıdakilerden hangisi TMS 21'e göre kur farkının kâr veya zarar DIŞINDA muhasebeleştirildiği durumdur?",
     "options": {
-      "B": "Yurtdışındaki işletmedeki net yatırımın parçası olan parasal kalemin konsolide tablolardaki kur farkı",
-      "A": "Yabancı para ticari alacağın dönem sonunda kapanış kuruyla çevrilmesinden doğan kur farkı",
-      "C": "Yabancı para satıcı borcunun dönem sonunda kapanış kuruyla çevrilmesinden doğan kur farkı",
-      "D": "Yabancı para banka mevduatının dönem sonunda kapanış kuruyla çevrilmesinden doğan kur farkı",
-      "E": "Yabancı para kredinin vadesinde ödenmesi sırasında ortaya çıkan kur farkı, kredinin finanse ettiği varlığın maliyetine eklenir ve dönemin giderlerine hiç yansıtılmaz"
+      "A": "Yabancı para satıcı borcunun dönem sonunda çevrilmesi",
+      "B": "Yabancı para ticari alacağın vadesinde tahsil edilmesi",
+      "C": "Raporlama para birimine çevrimden doğan kur farkları",
+      "D": "Yabancı para banka kredisinin kapanış kuruyla ölçülmesi",
+      "E": "Yabancı para kasa mevcudunun dönem sonu değerlemesi"
     },
-    "answer": "B",
-    "solution": "TMS 21: parasal kalemlerden doğan kur farkları kural olarak kâr veya zarara yazılır. İstisna, yurtdışındaki işletmedeki net yatırımın parçası olan parasal kalemdir: konsolide tablolarda diğer kapsamlı gelirde muhasebeleştirilir. Diğer şıkların hepsi olağan parasal kalemdir; kâr/zarara gider. Doğru cevap B.",
+    "answer": "C",
+    "solution": "TMS 21 par. 39(c): geçerli para biriminden farklı bir raporlama para birimine çevrimde doğan tüm kur farkları diğer kapsamlı gelirde muhasebeleştirilir. Diğer şıklardaki olağan parasal kalem hareketleri par. 28 uyarınca kâr veya zarara yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - kâr/zarar dışı istisna"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "std-tms21-gen-0041",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Bir işletme, yabancı para cinsinden borcunu vadesinde ödemiştir ve ödeme tarihindeki kur, borcun doğduğu tarihteki kurdan yüksektir. TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme yabancı para cinsinden borcunu vadesinde ödemiştir ve ödeme tarihindeki kur, borcun kaydedildiği kurdan yüksektir. Buna göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "C": "Gerçekleşen kur farkı gideri, ödemenin yapıldığı dönemin kâr veya zararına yansıtılır",
-      "A": "Gerçekleşen kur farkı her hâlde diğer kapsamlı gelirde muhasebeleştirilir",
-      "B": "Gerçekleşen kur farkı her hâlde ilgili varlığın maliyetine eklenir",
-      "D": "Gerçekleşen kur farkı hiçbir biçimde kayda alınmaz; yalnızca dipnotta açıklanmaktadır",
-      "E": "Gerçekleşen kur farkı doğrudan özkaynakta muhasebeleştirilir"
+      "A": "Aradaki fark kur farkı geliri olarak kaydedilir",
+      "B": "Aradaki fark diğer kapsamlı gelirde muhasebeleştirilir",
+      "C": "Aradaki fark ödeme tarihinde kur farkı gideri olarak kâr veya zarara yansıtılır",
+      "D": "Aradaki fark ilgili varlığın maliyetine eklenir",
+      "E": "Aradaki fark kaydedilmez, yalnızca dipnotta açıklanır"
     },
     "answer": "C",
-    "solution": "TMS 21: parasal kalemlerin ÖDENMESİNDEN kaynaklanan kur farkları da oluştukları dönemde kâr veya zararda muhasebeleştirilir. Kur yükselmişse borcun ödenmesi daha fazla yerli para gerektirir; aradaki fark kur farkı giderdir. Doğru cevap C.",
+    "solution": "TMS 21 par. 28: parasal kalemin ödenmesinden doğan kur farkı, oluştuğu dönemin kâr veya zararında muhasebeleştirilir. Borçta kurun yükselmesi daha fazla ödeme demektir; bu nedenle fark kur farkı giderdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - ödemede kur farkı (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -929,18 +929,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "TMS 21'in kapsamı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "TFRS 9 kapsamındaki türev işlem ve bakiyeler ile riskten korunma muhasebesi kapsam dışıdır",
-      "A": "TMS 21 istisnasız tüm yabancı para işlemlere uygulanır; hiçbir kapsam dışı hâl bulunmamaktadır",
-      "B": "TMS 21 yalnızca yurtdışında faaliyeti olan işletmelere uygulanır",
-      "C": "TMS 21 yalnızca nakit işlemlere uygulanır; alacak ve borçlar kapsam dışında bırakılmıştır",
-      "E": "TFRS 9 kapsamındaki türev işlemler de dâhil tüm yabancı para kalemlerini kapsar"
+      "A": "Standart istisnasız tüm yabancı para işlemlere uygulanır",
+      "B": "Standart yalnızca yurtdışında faaliyeti olan işletmelere uygulanır",
+      "C": "TFRS 9 kapsamındaki türev işlem ve bakiyeler ile riskten korunma muhasebesi kapsam dışıdır",
+      "D": "Standart yalnızca nakit işlemlere uygulanır",
+      "E": "TFRS 9 kapsamındaki türev işlemler de dâhil olmak üzere tüm yabancı para kalemler kapsamdadır"
     },
-    "answer": "D",
-    "solution": "TMS 21: TFRS 9 kapsamındaki türev işlem ve bakiyelere (TFRS 9 kapsamı dışında kalan bazı türevler hariç) ve yabancı para kalemlerine ilişkin riskten korunma muhasebesine bu Standart uygulanmaz; TFRS 9 uygulanır. Doğru cevap D.",
+    "answer": "C",
+    "solution": "TMS 21 par. 3: standart, TFRS 9 kapsamındaki türev işlem ve bakiyelere ve yabancı para kalemlerine ilişkin riskten korunma muhasebesine uygulanmaz. Bunun dışındaki yabancı para işlemler ile yurtdışı işletme çevrimi kapsamdadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - kapsam"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -951,18 +951,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Aşağıdakilerden hangisi TMS 21'e göre kapanış kuruyla çevrilmez?",
     "options": {
-      "B": "Tarihî maliyetiyle ölçülen yabancı para stoklar",
-      "A": "Yabancı para cinsinden bulunan ve tahsil edilecek olan ticari alacaklar niteliğindeki varlıklar",
-      "C": "Yabancı para cinsinden ödenecek olan satıcı borçları niteliğindeki kaynak kalemlerinin tümü",
-      "D": "Yabancı para cinsinden bankada bulunan vadesiz mevduat niteliğindeki varlık kalemlerinin tamamı",
-      "E": "Yabancı para cinsinden alınmış ve vadesinde ödenecek olan banka kredisi niteliğinde borçlar"
+      "A": "Yabancı para ticari alacaklar",
+      "B": "Yabancı para satıcı borçları",
+      "C": "Yabancı para vadesiz mevduat",
+      "D": "Tarihî maliyetiyle ölçülen yabancı para stoklar",
+      "E": "Yabancı para banka kredisi"
     },
-    "answer": "B",
-    "solution": "TMS 21: kapanış kuruyla çevrilenler PARASAL kalemlerdir (alacak, borç, nakit, kredi). Tarihî maliyetle ölçülen stoklar parasal olmayan kalemdir; işlem tarihindeki kurla çevrilir ve dönem sonunda yeniden çevrilmez. Doğru cevap B.",
+    "answer": "D",
+    "solution": "TMS 21 par. 23(a): kapanış kuruyla çevrilenler parasal kalemlerdir. Tarihî maliyetle ölçülen stoklar parasal olmayan kalem olduğundan par. 23(b) uyarınca işlem tarihindeki kurla çevrilir ve dönem sonunda yeniden çevrilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - kapanış kuru uygulanmayan kalem"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "std-tms21-gen-0048",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Aynı yabancı para tutarında hem alacağı hem borcu bulunan bir işletmede kur yükselmiştir. TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aynı yabancı para tutarında hem alacağı hem borcu bulunan bir işletmede dönem sonu değerlemesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "İkisi de parasal kalemdir; alacakta kur farkı geliri, borçta gideri doğar ve net etki sıfırlanır",
-      "A": "İkisinde de kur farkı gideri doğar; parasal kalemler her hâlde gider doğurur",
-      "B": "İkisinde de kur farkı geliri doğar; parasal kalemler her hâlde gelir doğurur",
-      "C": "Alacak ve borç eşit tutarda olduğundan birbirini tümüyle götürür; hiçbir kur farkı doğmaz ve finansal tablolara herhangi bir etki yansımaz",
-      "E": "Alacak ve borç netleştirilir; net tutar üzerinden tek kur farkı hesaplanır"
+      "A": "Alacak ve borç netleştirilerek tek bir tutar üzerinden çevrilir",
+      "B": "Yalnızca alacak kapanış kuruyla çevrilir; borç ilk kayıt tutarında bırakıldığı için kur farkı doğurmaz",
+      "C": "Kur farkları netleştirilip tek kalemde özkaynağa alınır",
+      "D": "İkisi de kapanış kuruyla çevrilir; kur farkı geliri ile gideri ayrı ayrı gösterilir",
+      "E": "Tutarlar eşit olduğundan çevrim yapılmasına gerek görülmez"
     },
     "answer": "D",
-    "solution": "TMS 21: alacak ve borcun ikisi de parasal kalemdir ve kapanış kuruyla çevrilir. Kur yükseldiğinde alacak değer kazanır (gelir), borç ağırlaşır (gider). Tutarlar eşitse kâr veya zarardaki net etki sıfırlanır; ancak iki kur farkı ayrı ayrı muhasebeleştirilir, kendiliğinden mahsup edilmez. Doğru cevap D.",
+    "solution": "TMS 21 par. 23(a) her parasal kalemin kapanış kuruyla çevrilmesini öngörür; TMS 1 par. 32 ise netleştirmeyi yasaklar. Alacaktan doğan gelir ile borçtan doğan gider brüt olarak gösterilir; tutarların eşitliği çevrim yükümlülüğünü ortadan kaldırmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - doğal denge (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1061,18 +1061,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Yabancı para cinsinden peşin ödenen sigorta primi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "Parasal olmayan kalemdir; işlem tarihi kuruyla çevrilir ve kur farkı doğmaz",
-      "A": "Parasal kalemdir; kapanış kuruyla çevrilir ve kur farkı doğur",
-      "B": "Her hâlde kapanış kuruyla yeniden çevrilir ve kur farkı gideri yazılır",
-      "C": "Hiçbir hâlde muhasebeleştirilemez; yalnızca dipnotlarda açıklanır",
-      "E": "Parasal kalemdir; kapanış kuruyla çevrilir ve kur farkı doğar"
+      "A": "Parasal kalemdir; kapanış kuruyla çevrilir ve kur farkı doğar",
+      "B": "Parasal olmayan kalemdir; işlem tarihi kuruyla çevrilir ve kur farkı doğmaz",
+      "C": "Parasal kalemdir; ancak kur farkı özkaynağa alınır",
+      "D": "Parasal olmayan kalemdir; yine de kapanış kuruyla çevrilir",
+      "E": "Kayda alınmaz, doğrudan dönem gideri yazılır"
     },
-    "answer": "D",
-    "solution": "TMS 21: peşin ödenmiş giderler parasal olmayan kalem örneği olarak sayılır — sabit tutarda para alma hakkı değil, gelecekte mal/hizmet alma hakkı verir. Tarihî maliyetle ölçüldüğünden işlem tarihi kuruyla çevrilir; dönem sonunda yeniden çevrilmez, kur farkı doğmaz. Doğru cevap D.",
+    "answer": "B",
+    "solution": "TMS 21 par. 16: peşin ödenmiş giderler para alma hakkı değil mal veya hizmet alma hakkı verdiğinden parasal olmayan kalemdir. Par. 23(b) uyarınca işlem tarihindeki kurla çevrilir ve dönem sonunda yeniden çevrilmediği için kur farkı doğmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - peşin ödenmiş gider"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "std-tms21-gen-0050",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yabancı para cinsinden alınan sipariş avansı (henüz mal teslim edilmemiş) bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yabancı para cinsinden alınan ve henüz mal teslim edilmemiş sipariş avansı bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Mal teslimiyle kapanacağından parasal olmayan kalemdir; kapanış kuruyla çevrilmez",
-      "A": "Parasal borçtur; kapanış kuruyla çevrilir ve kur farkı doğmak zorunda olan bir kalemdir",
-      "C": "Her hâlde kapanış kuruyla yeniden çevrilir ve kur farkı geliri yazılır",
-      "D": "Hiçbir hâlde muhasebeleştirilemez; yalnızca dipnotlarda açıklanır",
-      "E": "Parasal kalemdir; her dönem sonu kapanış kuruyla yeniden çevrilir"
+      "A": "Parasal kalemdir; kapanış kuruyla çevrilir",
+      "B": "Parasal kalemdir; kur farkı özkaynağa alınır",
+      "C": "Parasal olmayan kalemdir; ancak kapanış kuruyla çevrilir",
+      "D": "Parasal olmayan kalemdir; işlem tarihi kuruyla ölçülür",
+      "E": "Avans hasılat olarak kaydedilir ve kur farkı doğmaz"
     },
-    "answer": "B",
-    "solution": "TMS 21: parasal olmayan kalemin ölçütü, sabit veya belirlenebilir tutarda PARA alma hakkı ya da ödeme yükümlülüğü İÇERMEMESİDİR. Mal teslimiyle kapatılacak alınan avans, para ödeme değil mal teslim yükümlülüğü doğurur; parasal olmayan kalemdir ve yeniden çevrilmez. Doğru cevap B.",
+    "answer": "D",
+    "solution": "Alınan sipariş avansı, para geri ödeme yükümlülüğü değil mal teslim yükümlülüğü doğurur; bu nedenle TMS 21 par. 16 uyarınca parasal olmayan kalemdir ve par. 23(b) gereği işlem tarihindeki kurla ölçülüp dönem sonunda yeniden çevrilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - alınan avans"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1149,18 +1149,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Bir işletmenin geçerli para birimi ile raporlama para birimi aynıdır. TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Çevrim gerekmez; yalnız yabancı para işlemler için kur uygulanır",
-      "A": "Her hâlde tüm kalemler için raporlama para birimine çevrim yapılır",
-      "C": "Her hâlde diğer kapsamlı gelirde çevrim kur farkı doğmak zorunda olan bir durumu ifade eder",
-      "D": "Bu durumda işletme finansal tablo düzenlemekten tümüyle muaf tutulur",
-      "E": "Yine de tüm kalemler kapanış kuruyla yeniden çevrilir"
+      "A": "Tablo çevrimi gerekmez; yalnızca yabancı para işlemler için kur uygulanır",
+      "B": "Tüm kalemler için raporlama para birimine çevrim yapılır",
+      "C": "Tüm kalemler kapanış kuruyla yeniden çevrilir",
+      "D": "İşletme finansal tablo düzenlemekten muaf tutulur",
+      "E": "Çevrim farkları diğer kapsamlı gelirde gösterilir"
     },
-    "answer": "B",
-    "solution": "TMS 21: raporlama para birimi geçerli para birimiyle aynıysa ayrıca bir çevrim süreci gerekmez. Standardın çevrim hükümleri, geçerli para biriminden FARKLI bir raporlama para birimi kullanıldığında veya yurtdışı işletme konsolide edildiğinde devreye girer. Yabancı para işlemler için kur elbette uygulanır. Doğru cevap B.",
+    "answer": "A",
+    "solution": "TMS 21 par. 39 yalnızca raporlama para biriminin geçerli para biriminden FARKLI olduğu durumda uygulanır. İkisi aynıysa tablo çevrimi gündeme gelmez; yabancı para işlemler için par. 21-23 hükümleri uygulanmaya devam eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - aynı para birimi (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "std-tms21-gen-0054",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Yabancı para işlemin kaydedilmesinde kullanılacak kur bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Yabancı para işlemin kaydedileceği tarih bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "İşlemin TMS'lere göre muhasebeleştirilme koşullarının sağlandığı tarihteki kur esas alınır",
-      "A": "Her hâlde faturanın düzenlendiği tarihteki kur esas alınmak zorunda olan bir ölçümdür",
-      "B": "Her hâlde ödemenin yapıldığı tarihteki kur esas alınmak zorunda tutulan bir ölçümü karşılar",
-      "C": "Her hâlde sözleşmenin imzalandığı tarihteki kur esas alınmak zorunda bulunan bir ölçümdür",
-      "D": "Ödemenin fiilen yapıldığı tarihteki kur esas alınır"
+      "A": "Fatura düzenlenme tarihi esas alınır; muhasebeleştirme koşullarının sağlandığı tarih dikkate alınmaz",
+      "B": "İşlemin TMS'lere göre muhasebeleştirilme koşullarının sağlandığı tarih esas alınır",
+      "C": "Ödemenin fiilen yapıldığı tarih esas alınır",
+      "D": "Sözleşmenin imzalandığı tarih esas alınır",
+      "E": "Malın gümrükten çekildiği tarih esas alınır"
     },
-    "answer": "E",
-    "solution": "TMS 21: işlem tarihi, işlemin ilgili TMS'lere göre muhasebeleştirilme koşullarının ilk kez sağlandığı tarihtir. Kur bu tarihe göre belirlenir. Doğru cevap E.",
+    "answer": "B",
+    "solution": "TMS 21 par. 22: işlem tarihi, işlemin TFRS'lere göre muhasebeleştirilme koşullarının ilk kez sağlandığı tarihtir. Fatura, sözleşme veya ödeme tarihi bu ölçütün yerine geçmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - işlem tarihi"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1215,18 +1215,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Yabancı para cinsinden yeniden değerleme modeliyle ölçülen arsa bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir; kur farkı yeniden değerleme farkını izler",
-      "B": "Yeniden değerleme modeliyle ölçülen arsa her hâlde ilk işlem tarihindeki tarihî kur ile çevrilir; değerlemeden doğan kur farkı hiçbir zaman muhasebeleştirilmez",
-      "C": "Her hâlde kapanış kuruyla çevrilir ve kur farkı kâr veya zarara yazılır",
-      "D": "Arsa parasal kalem sayıldığından her hâlde kapanış kuruyla çevrilir",
-      "E": "İşlem tarihindeki tarihî kurla çevrilir; kur farkı doğmaz"
+      "A": "Gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir; kur bileşeni değerleme farkını izler",
+      "B": "İlk işlem tarihindeki tarihî kurla çevrilir; yeniden değerleme kur açısından dikkate alınmaz",
+      "C": "Kapanış kuruyla çevrilir ve kur farkı kâr veya zarara yazılır",
+      "D": "Arsa parasal kalem sayıldığından kapanış kuruyla çevrilir",
+      "E": "Çevrilmez, ilk kayıt tutarında bırakılır"
     },
     "answer": "A",
-    "solution": "TMS 21: gerçeğe uygun değeriyle ölçülen parasal olmayan kalemler, gerçeğe uygun değerin belirlendiği tarihteki kurla çevrilir. Yeniden değerleme farkı diğer kapsamlı gelirde muhasebeleştirildiğinden, bu kazancın kur farkına ilişkin kısmı da diğer kapsamlı gelirde muhasebeleştirilir — kur farkı ana kalemi izler. Doğru cevap A.",
+    "solution": "TMS 21 par. 23(c): gerçeğe uygun değeriyle ölçülen parasal olmayan kalem, değerin belirlendiği tarihteki kurla çevrilir. Par. 30 uyarınca yeniden değerleme farkı diğer kapsamlı gelirde muhasebeleştirildiğinden kur bileşeni de aynı yeri izler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - GUD ile ölçülen parasal olmayan (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1259,18 +1259,18 @@
     "konu": "tms_21_kur_degisimi",
     "stem": "Kur farkının ilgili varlığın maliyetine eklenmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "TMS 21 kural olarak buna izin vermez; ancak TMS 23 kapsamında faiz düzeltmesi sayılan kısım aktifleştirilebilir",
-      "B": "Ortaya çıkan tüm kur farkları, tutarı ne olursa olsun ilgili varlığın maliyetine eklenir ve hiçbir hâlde doğrudan dönemin kâr veya zararına yansıtılmaz",
-      "C": "Kur farkları hiçbir hâlde ve hiçbir koşulda varlık maliyetiyle ilişkilendirilemez",
-      "D": "Kur farkları her hâlde doğrudan özkaynaklardan indirilmek zorunda olan kalemleri karşılar",
-      "E": "TMS 21 kur farklarının ilgili varlığın maliyetine eklenmesini zorunlu kılar"
+      "A": "Tüm yabancı para kredilerin kur farkı varlık maliyetine eklenir",
+      "B": "TMS 21 böyle bir uygulamaya izin vermez; kur farkı kâr veya zarara yansıtılır",
+      "C": "Yabancı para kredi ile alınan duran varlığın kur farkı, varlığın maliyetine eklenerek aktifleştirilir",
+      "D": "Kur farkı işletmenin tercihine göre aktifleştirilebilir",
+      "E": "Kur farkı yalnızca stoklar için aktifleştirilir"
     },
-    "answer": "A",
-    "solution": "TMS 21: parasal kalemlerden doğan kur farkları kural olarak kâr veya zarara yazılır; varlık maliyetine eklenmez. Ancak TMS 23 uyarınca, yabancı para borçlanmalarında FAİZ MALİYETLERİNE İLİŞKİN DÜZELTME olarak dikkate alınan kur farkları borçlanma maliyeti sayılır ve özellikli varlıkta aktifleştirilebilir. Doğru cevap A.",
+    "answer": "B",
+    "solution": "TMS 21 par. 28 kur farklarının kâr veya zararda muhasebeleştirilmesini öngörür ve maliyete ekleme seçeneği tanımaz. Özellikli varlıklarda borçlanma maliyetlerinin aktifleştirilmesi TMS 23'ün konusudur ve faiz benzeri düzeltme ile sınırlıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - TMS 23 ile kesişim"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "std-tms21-gen-0060",
     "ders": "muhasebe_standartlari",
     "konu": "tms_21_kur_degisimi",
-    "stem": "Bir işletmenin yurtdışındaki bağlı ortaklığının geçerli para birimi ana ortaklıktan farklıdır. Konsolidasyonda TMS 21 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin yurtdışındaki bağlı ortaklığının geçerli para birimi ana ortaklığından farklıdır. Buna göre aşağıdakilerden hangisi YANLIŞTIR?",
     "options": {
-      "A": "Bağlı ortaklığın tabloları raporlama para birimine çevrilir; çevrim farkları diğer kapsamlı gelirde birikir",
-      "B": "Bağlı ortaklığın tabloları çevrilmeden doğrudan konsolide edilir",
-      "C": "Bağlı ortaklığın finansal tabloları hiçbir çevrime tabi tutulmadan, doğrudan ana ortaklığın geçerli para birimi cinsinden yeni baştan düzenlenerek konsolide edilir",
-      "D": "Bağlı ortaklık her hâlde ana ortaklığın geçerli para birimini benimser",
-      "E": "Bağlı ortaklığın tabloları çevrilmez; ana ortaklığın para biriminde düzenlenir"
+      "A": "Bağlı ortaklık, ana ortaklığın geçerli para birimini benimsemek durumundadır",
+      "B": "Bağlı ortaklığın tabloları konsolidasyon öncesinde raporlama para birimine çevrilir",
+      "C": "Varlık ve borçlar kapanış kuruyla, gelir ve giderler işlem tarihi kurlarıyla çevrilir",
+      "D": "Çevrimden doğan farklar diğer kapsamlı gelirde muhasebeleştirilir",
+      "E": "Bağlı ortaklığın elden çıkarılmasında biriken farklar kâr veya zarara sınıflandırılır"
     },
     "answer": "A",
-    "solution": "TMS 21: yurtdışındaki işletmenin sonuçları ve finansal durumu raporlama para birimine çevrilir — varlık/borçlar kapanış kuruyla, gelir/giderler işlem tarihi kurlarıyla. Ortaya çıkan tüm kur farkları diğer kapsamlı gelirde muhasebeleştirilir ve elden çıkarmaya kadar özkaynakta birikir. Doğru cevap A.",
+    "solution": "TMS 21 par. 11 ve 39: her işletmenin geçerli para birimi kendi işlem koşullarına göre belirlenir; bağlı ortaklık ana ortaklığın para birimini benimsemek durumunda değildir. Konsolidasyonda tablolar par. 39'a göre çevrilir ve farklar diğer kapsamlı gelire alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 21; 2025/2024 kalıbına kalibre)",
-      "legislationRef": "TMS 21 - konsolidasyonda çevrim (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari TMS 21",
+      "legislationRef": "TMS 21 Kur Degisiminin Etkileri"
     },
     "validYear": 2026,
     "mockExamId": null
