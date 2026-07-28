@@ -40,8 +40,12 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v170** (kalıp-dolgu sözcük tell'i havuz genelinde temizlendi: 71 paket
-mekanik + 11 paket elle denge + tms_21 profil kalibrasyonu). Önceki: v169 (matematik
+Canlı OTA: **v171** (kombine ölçüt açıldı: `audit.py`'nin eleme adımı geniş kümeye
+taşındı, eşiği aşan 6 paket daha temizlendi — kurumlar_vergisi %35→%21,
+kambiyo_senetleri %33→%23, gelir_vergisi/sozlesme_turleri/haksiz_rekabet/
+kiymetli_evrak %31→%20-25. **Havuzda ≤%30 hedefini aşan paket kalmadı.**)
+Önceki: v170 (kalıp-dolgu sözcük tell'i: 71 paket mekanik + 11 paket elle denge +
+tms_21 profil kalibrasyonu). Önceki: v169 (matematik
 2 yeni ileri konu + kavramsal_cerceve/tms_1_sunulus), commit `6693b85`, uygulama
 reposu `278ac08`.
 ⚠️ Yeni matematik konularının telefonda görünmesi için ayrıca **yeni binary** gerekir
@@ -465,10 +469,16 @@ tek-seferlik scriptler var (`build_std_*.py`, `rebalance_*.py`, `fix_*_boy.py`);
 argümansız çalıştırılınca içeriği yeniden yazarlar. Toplu doğrulama döngüsü yalnız
 `add_argument("--check")` taşıyan builder'ları çalıştırmalıdır.
 
-**audit.py'ye dedektör eklenebilir hâle geldi.** Havuzda ≥%30 paket kalmadı ve elle
-denge turu bitti; artık bir eleme-tell dedektörü hiçbir paketi UYARI'ya düşürmez.
-Eklenmesi ayrı bir karar olarak kullanıcıya bırakıldı (bu tur içerik değişikliğiydi,
-denetim aracı değişikliği değil).
+**audit.py'ye eklendi (2026-07-28).** `kor_ogrenci`'ye altıncı strateji: *işaretliyi
+ele, kalandan tahmin et*. Ayrıca 3. ve 4. stratejilerin (ele + en kısa/uzun) eleme
+adımı dar dolgu kümesinden **geniş kümeye** taşındı — bu, boy ve sözcük ipuçlarının
+birleşimini ölçer ve 6 paketi daha açığa çıkardı; hepsi temizlendi.
+
+Dedektörün dişi doğrulandı: temizlik öncesi hâle (commit `9be971c^`) uygulandığında
+11 paketi FATAL'la yakalıyordu (%35-42). Eşikler null modelle yeniden kalibre edildi
+ve 31/35 → **32/36** oldu — gevşetme değil, ölçüt güçlenince rastgele tabanı da
+yükseldiği için (95./99. yüzdelik %30/%33 → %31/%35). Paketler eşiğe değil **≤%30
+kalite hedefine** kadar temizlendi; havuzda hedefi aşan paket kalmadı.
 
 ---
 

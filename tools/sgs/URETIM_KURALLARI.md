@@ -261,16 +261,26 @@ paket boyunca farklı konumlara dağılır.
 bakarak alabildiği en yüksek puanı ölçer. **Altı strateji**, her biri bir aday kümesi
 döndürür; puan = küme doğruyu içeriyorsa 1/|küme|:
 
-1. en kısayı seç · 2. en uzunu seç · 3. dolguluyu ele + en kısayı seç ·
-4. dolguluyu ele + en uzunu seç · 5. iki ucu ele, ortadan tahmin et ·
-6. **mutlak dil işaretlilerini ele, kalandan tahmin et** (2026-07-28 eklendi)
+1. en kısayı seç · 2. en uzunu seç · 3. işaretliyi ele + en kısayı seç ·
+4. işaretliyi ele + en uzunu seç · 5. iki ucu ele, ortadan tahmin et ·
+6. **işaretliyi ele, kalandan tahmin et** (2026-07-28 eklendi)
+
+"İşaretli" = `audit.py::ELEME_ISARETI` (mutlak dil kalıpları). 3 ve 4 numaralı
+stratejiler eskiden yalnız dar bir dolgu kümesi kullanıyordu; 2026-07-28'de aynı
+geniş kümeye taşındılar.
 
 | | |
 |---|---|
 | **Taban** | ~%24 (en iyi strateji alındığı için %20 değil) |
-| **Hedef** | ≤%30 |
-| **UYARI** | ≥%31 (null modelin 95. yüzdeliği) |
-| **FATAL** | ≥%35 (99. yüzdelik %33; güvenli tarafta) |
+| **Kalite hedefi** | **≤%30** — paketler eşiğe değil buraya kadar temizlenir |
+| **UYARI** | ≥%32 (null modelin 95. yüzdeliği %31) |
+| **FATAL** | ≥%36 (99. yüzdelik %35) |
+
+⚠️ Eşikler 2026-07-28'de 31/35 → **32/36** oldu. **Bu bir gevşetme değildir:** eleme
+adımı geniş kümeye taşınınca ölçüt güçlendi ve rastgele tabanı da birlikte yükseldi
+(95. yüzdelik %30 → %31). Eşik sabit bırakılsaydı kusursuz paketlerin %5'i boşuna
+uyarı alırdı. Eşiğin anlamı sabittir: "rastgeleden ayırt edilebilir". Kalite hedefi
+ayrı ve daha sıkıdır.
 
 Eşikler **null modelle** kalibre edilir: gerçek şık metinleri kullanılıp doğru cevap
 rastgele atanır (boy ve sözcük dağılımı gerçekçi kalır, gerçek sinyal kalmaz), 60

@@ -76,17 +76,22 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     sinyal kalmaz), 60 soruluk 400 paket. 2026-07-28'de altıncı strateji eklenince
     yeniden ölçüldü — daha çok stratejinin en iyisini almak tabanı yükseltir:
 
-      | strateji sayısı | ortalama | 95. yüzdelik | 99. yüzdelik | en yüksek |
+      | ölçüt sürümü | ortalama | 95. yüzdelik | 99. yüzdelik | en yüksek |
       |---|---:|---:|---:|---:|
-      | 4 (ilk kalibrasyon) | %23 | %30 | — | %38 |
-      | 6 (bugünkü)         | %24 | %30 | %33 | %36 |
+      | 4 strateji, dar dolgu kümesi   | %23 | %30 | — | %38 |
+      | 6 strateji, dar dolgu kümesi   | %24 | %30 | %33 | %36 |
+      | 6 strateji, geniş küme (şimdi) | %24 | %31 | %35 | %41 |
 
-      · %31 UYARI  → 95. yüzdelik; altı stratejide de aynı çıktı, değişmedi.
-                     (Önce %28 demiştim; rastgelenin %14'ü aşıyordu, yani her yedi
-                     temiz dosyadan biri boşuna uyarı alacaktı — gürültü, uyarıyı
-                     önemsizleştirir.)
-      · %35 FATAL  → 99. yüzdelik %33 olduğu için güvenli tarafta kaldı; rastgele
-                     paketlerin ~%0,5'i aşar. Sıkılaştırılmadı.
+      · %32 UYARI  → 95. yüzdelik %31; bir üstü. (Önce %28 demiştim; rastgelenin
+                     %14'ü aşıyordu, yani her yedi temiz dosyadan biri boşuna uyarı
+                     alacaktı — gürültü, uyarıyı önemsizleştirir.)
+      · %36 FATAL  → 99. yüzdelik %35; bir üstü.
+
+    ⚠️ Eşikler 2026-07-28'de 31/35'ten 32/36'ya ÇIKTI. Bu bir gevşetme değildir:
+    eleme adımı geniş kümeye taşınınca ölçüt güçlendi ve rastgele tabanı da birlikte
+    yükseldi. Eşik sabit bırakılsaydı KUSURSUZ paketlerin %5'i uyarı alırdı. Eşiğin
+    anlamı sabit: "rastgeleden ayırt edilebilir". Kalite hedefi ayrıdır ve daha
+    sıkıdır: **≤%30** — paketler eşiğe değil hedefe kadar temizlenir.
     Hedef "~%20" yazmak da yanlıştı: ulaşılamaz. Gerçekçi hedef ≤%30.
     """
     if not questions:
@@ -97,9 +102,6 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
 
     def kisa(o):
         return {min(o, key=lambda k: (len(o[k]), k))}
-
-    def dolgusuz(o):
-        return {k: v for k, v in o.items() if not DOLGU.search(v)} or o
 
     def isaretsiz(o):
         return {k: v for k, v in o.items() if not ELEME_ISARETI.search(v)} or o
@@ -117,8 +119,8 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     stratejiler = {
         "en kısayı seç": kisa,
         "en uzunu seç": uzun,
-        "dolguluyu ele, en kısayı seç": lambda o: kisa(dolgusuz(o)),
-        "dolguluyu ele, en uzunu seç": lambda o: uzun(dolgusuz(o)),
+        "işaretliyi ele, en kısayı seç": lambda o: kisa(isaretsiz(o)),
+        "işaretliyi ele, en uzunu seç": lambda o: uzun(isaretsiz(o)),
         "iki ucu ele, ortadan tahmin et": ortadakiler,
         # Mutlak dil işaretlilerini ELE, kalandan tahmin et. Boy ölçmez; yalnız
         # sözcük seçimine bakar, bu yüzden yukarıdaki beş strateji bunu göremiyordu.
@@ -522,11 +524,11 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
                                     f"(medyan {medyan} karakter); SGS uygulama ve yorum ölçer"))
 
         kor, strateji = kor_ogrenci(saglam)
-        if kor >= 35:
+        if kor >= 36:
             issues.append(("FATAL", f"kör öğrenci soruyu okumadan %{kor} alıyor "
-                                    f"(rastgele taban ~%23) — strateji: “{strateji}”"))
-        elif kor >= 31:
-            issues.append(("UYARI", f"kör öğrenci %{kor} alıyor (rastgele taban ~%23) "
+                                    f"(rastgele taban ~%24) — strateji: “{strateji}”"))
+        elif kor >= 32:
+            issues.append(("UYARI", f"kör öğrenci %{kor} alıyor (rastgele taban ~%24) "
                                     f"— “{strateji}”"))
 
         uzun, kisa, olcum = boy_egilimi(saglam)

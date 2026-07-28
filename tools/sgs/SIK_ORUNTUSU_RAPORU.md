@@ -354,3 +354,34 @@ devredildi, kalan örtüşmelerde sahip builder'ın beklenen metni aynı dönü�
 `build_std_*.py`, `rebalance_*.py`, `fix_*_boy.py` gibi **tek seferlik üretim
 scriptleri** var; argümansız çalıştırılınca içeriği YENİDEN YAZARLAR. Toplu doğrulama
 döngüsü yalnız `add_argument("--check")` taşıyan builder'ları çalıştırmalıdır.
+
+---
+
+## 2026-07-28 (2. tur) — kombine ölçüt açıldı, 6 paket daha temizlendi
+
+`audit.py`'nin "işaretliyi ele + en uzunu/kısayı seç" stratejileri de geniş kümeye
+taşındı. Bu, boy ve sözcük ipuçlarının **birleşimini** ölçer: eleme adımı en uzun
+çeldiriciyi atınca doğru şık ikinciyken birinciye çıkıyorsa aday kazanır.
+
+Açılınca eşiği aşan 6 paket, aynı reçeteyle (`fix_bekleyen_denge.py`, artık **17
+paket / 151 yama**) temizlendi:
+
+| paket | önce | sonra |
+|---|---:|---:|
+| vergi_hukuku/kurumlar_vergisi | %35 | **%21** |
+| ticaret_hukuku/kambiyo_senetleri | %33 | **%23** |
+| vergi_hukuku/gelir_vergisi | %31 | **%24** |
+| borclar_hukuku/sozlesme_turleri | %31 | **%25** |
+| ticaret_hukuku/haksiz_rekabet | %31 | **%20** |
+| ticaret_hukuku/kiymetli_evrak | %31 | **%21** |
+
+Ayrıca 7 paket TEMEL → TAM seviyesine yükseltildi (cümle içi `her hâlde` de
+kaldırıldı); TEMEL listesi artık boş.
+
+**Havuz geneli (güçlendirilmiş ölçütle):** FATAL 0 · UYARI 0 · **≤%30 hedefini aşan
+paket 0** · ortalama %24 (rastgele taban da %24).
+
+⚠️ Eşikler 31/35 → 32/36 yükseldi. Gevşetme değil: ölçüt güçlenince null modelin
+95./99. yüzdelikleri de yükseldi (%30/%33 → %31/%35). Eşik sabit kalsaydı kusursuz
+paketlerin %5'i uyarı alırdı. Paketler eşiğe değil **≤%30 kalite hedefine** kadar
+temizlendi.

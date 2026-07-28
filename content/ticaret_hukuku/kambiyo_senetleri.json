@@ -72,7 +72,7 @@
     "stem": "Kambiyo senetlerinin 'kanunen emre yazılı' olması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Kambiyo senetleri kanunen emre yazılı senetlerdendir; senette emre yazılı olduğu belirtilmese de ciro ile devredilebilir",
-      "A": "Kambiyo senetleri ancak senet üzerinde açıkça 'emre yazılıdır' ibaresi bulunursa ciro ile devredilebilir",
+      "A": "Kambiyo senetleri ancak senet üzerinde açıkça 'emre yazılıdır' ibaresi bulunursa ciro ile devredilebilir; ibare yoksa senet yalnızca alacağın temlikiyle devredilir",
       "B": "Kambiyo senetleri kanunen nama yazılı olup devirleri yalnızca yazılı temlik beyanıyla mümkün olabilir",
       "C": "Kambiyo senetleri devredilemez; senet yalnızca ilk lehtar tarafından tahsil edilebilir",
       "D": "Kambiyo senetlerinin devri yalnızca noter huzurunda ve resmî senetle yapılabilir; ciro geçerli değildir"
@@ -97,7 +97,7 @@
       "A": "Kambiyo senedinde yalnızca senedi düzenleyen kişi sorumlu olup ciro edenlerin hiçbir sorumluluğu doğmaz",
       "B": "Kambiyo senedindeki imza sahipleri yalnızca kendi paylarına düşen ve bölünmüş kısımdan sorumlu tutulur",
       "C": "Kambiyo senedindeki imza sahiplerinin hiçbiri sorumlu olmaz; hamil yalnızca muhataba başvurabilir",
-      "E": "Kambiyo senedinde sorumluluk yalnızca senedi en son ciro eden kişiye ait olup öncekiler tümüyle kurtulur"
+      "E": "Kambiyo senedinde sorumluluk yalnızca senedi en son ciro eden kişiye ait olup öncekiler tümüyle kurtulur; önceki cirantalara başvurma imkânı bulunmaz"
     },
     "answer": "D",
     "solution": "TTK m.724: bir poliçeyi düzenleyen, kabul eden, ciro eden veya aval veren kişiler hamile karşı müteselsilen sorumludur (bono ve çekte de uygulanır). Doğru cevap D.",
@@ -227,7 +227,7 @@
     "options": {
       "E": "Senet metninde 'poliçe' kelimesi, kayıtsız şartsız belirli bedeli ödeme havalesi, muhatabın adı ve düzenleyenin imzası bulunmalıdır",
       "A": "Poliçede yalnızca bedelin yazılması yeterli olup 'poliçe' kelimesine veya düzenleyenin imzasına gerek yoktur",
-      "B": "Poliçede muhatabın adının gösterilmesi zorunlu değildir; muhatap sonradan hamil tarafından serbestçe belirlenir",
+      "B": "Poliçede muhatabın adının gösterilmesi zorunlu değildir; muhatap sonradan hamil tarafından serbestçe belirlenir; muhatabın adı senedin gerekli unsurlarından sayılmaz",
       "C": "Poliçenin geçerliliği için senette yalnızca noterin imzası aranır; düzenleyenin imzası hiç gerekmez",
       "D": "Poliçede bedelin şarta bağlanması zorunludur; kayıtsız şartsız bedel içeren senet geçersiz sayılır"
     },
@@ -270,7 +270,7 @@
     "stem": "Poliçede vade türleri bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Poliçe; görüldüğünde, görüldükten belirli bir süre sonra, düzenlenme gününden belirli bir süre sonra veya belirli bir günde ödenmek üzere düzenlenebilir",
-      "A": "Poliçe yalnızca belirli bir günde ödenmek üzere düzenlenebilir; başka hiçbir vade türü kanunen kabul edilmez",
+      "A": "Poliçe yalnızca belirli bir günde ödenmek üzere düzenlenebilir; başka hiçbir vade türü kanunen kabul edilmez; görüldüğünde ödeme kaydı taşıyan poliçe geçersizdir",
       "B": "Poliçede vade tümüyle serbest olup taraflar kanunda sayılmayan diledikleri vade türünü de kararlaştırabilir",
       "D": "Poliçe yalnızca görüldüğünde ödenmek üzere düzenlenebilir; vadeli poliçe düzenlenmesi kanunen yasaktır",
       "E": "Poliçede vade muhatabın kabul tarihinden itibaren tek bir yıl olarak kanunen belirlenmiştir"
@@ -316,7 +316,7 @@
       "E": "Muhatap kabule zorlanamaz; kabulden kaçınması hâlinde hamil, kabul etmeme protestosu düzenleterek başvuru hakkını kullanabilir",
       "A": "Muhatap poliçeyi kabul etmek zorundadır; kabulden kaçınırsa senet kendiliğinden geçersiz hâle gelir",
       "B": "Muhatap kabulden kaçınırsa hamilin hiçbir hakkı kalmaz; senetten doğan tüm alacak kendiliğinden düşer",
-      "C": "Muhatabın kabulden kaçınması hâlinde hamil, yalnızca mahkemeden muhatabın kabule zorlanmasını isteyebilir",
+      "C": "Muhatabın kabulden kaçınması hâlinde hamil, yalnızca mahkemeden muhatabın kabule zorlanmasını isteyebilir; protesto düzenlenmesi bu hâlde gereksiz sayılır",
       "D": "Muhatap kabulden kaçınsa dahi kabul etmiş sayılır; kaçınmanın senet bakımından hiçbir sonucu yoktur"
     },
     "answer": "E",
@@ -339,7 +339,7 @@
       "A": "Düzenleyen, poliçeyi düzenledikten sonra her türlü sorumluluktan kurtulur; tek sorumlu muhataptır",
       "B": "Düzenleyen yalnızca kabul edilmemeden sorumlu olup ödenmemeden sorumlu tutulamaz",
       "D": "Düzenleyenin sorumluluğu yalnızca muhatabın iflas etmesi hâlinde ve mahkeme kararıyla doğabilir",
-      "E": "Düzenleyen, senede koyacağı bir kayıtla kabul edilmemeden doğan sorumluluğunu da tümüyle kaldırabilir"
+      "E": "Düzenleyen, senede koyacağı bir kayıtla kabul edilmemeden doğan sorumluluğunu da tümüyle kaldırabilir; bu kayıt senedin geçerliliğini etkilemez"
     },
     "answer": "C",
     "solution": "TTK m.679: düzenleyen poliçenin kabul edilmemesinden ve ödenmemesinden sorumludur; ödenmemeden sorumluluğu kaldıran kayıt yazılmamış sayılır, kabul edilmemeden sorumluluğu ise kaldırılabilir sınırlarla düzenlenmiştir. Doğru cevap C.",
@@ -383,7 +383,7 @@
       "A": "Poliçede ödeme yeri veya düzenlenme yeri gösterilmemişse senet ve kesin olarak geçersiz sayılır",
       "B": "Poliçede eksik olan yer bilgilerini yalnızca mahkeme resen tamamlayabilir; kanuni bir karine bulunmaz",
       "D": "Poliçede yer bilgileri aranmaz; bu bilgilerin senette bulunması tümüyle gereksizdir",
-      "E": "Poliçede eksik yer bilgilerini muhatap dilediği gibi sonradan doldurabilir ve senet geçerli hâle gelir"
+      "E": "Poliçede eksik yer bilgilerini muhatap dilediği gibi sonradan doldurabilir ve senet geçerli hâle gelir; düzenleyenin sonradan itiraz hakkı bulunmaz"
     },
     "answer": "C",
     "solution": "TTK m.672: kanun bazı eksiklikler için tamamlayıcı hükümler öngörür; muhatabın adı yanındaki yer hem ödeme yeri hem muhatabın yerleşim yeri, düzenleyenin adı yanındaki yer ise düzenlenme yeri sayılır. Doğru cevap C.",
@@ -490,7 +490,7 @@
     "stem": "Bononun zorunlu şekil şartları bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Senet metninde 'bono' veya 'emre yazılı senet' ibaresi, kayıtsız şartsız belirli bedeli ödeme vaadi ve düzenleyenin imzası bulunmalıdır",
-      "A": "Bonoda yalnızca bedelin yazılması yeterli olup 'bono' ibaresine veya düzenleyenin imzasına gerek duyulmaz",
+      "A": "Bonoda yalnızca bedelin yazılması yeterli olup 'bono' ibaresine veya düzenleyenin imzasına gerek duyulmaz; senedin türü metinden anlaşıldığı sürece geçerli sayılır",
       "C": "Bonoda muhatabın adının gösterilmesi zorunlu olup gösterilmezse senet kesin olarak geçersiz sayılır",
       "D": "Bononun geçerliliği için senette yalnızca noterin onayı aranır; düzenleyenin imzası hiç gerekmez",
       "E": "Bonoda bedelin şarta bağlanması zorunludur; kayıtsız şartsız bedel içeren bono geçersiz kabul edilir"
@@ -843,7 +843,7 @@
     "options": {
       "A": "Muhatap banka çeki kabul etmediğinden kambiyo hukuku anlamında senedin asıl borçlusu değildir; sorumluluğu kanunda ayrıca düzenlenmiştir",
       "B": "Muhatap banka, çeki düzenleyenle birlikte ve sınırsız biçimde senedin asıl borçlusu sayılır",
-      "C": "Muhatap banka çeki kabul ederek asıl borçlu hâline gelir; kabul şerhi çekin zorunlu unsurlarındandır",
+      "C": "Muhatap banka çeki kabul ederek asıl borçlu hâline gelir; kabul şerhi çekin zorunlu unsurlarındandır; kabul şerhi bulunmayan çek geçersiz sayılır",
       "D": "Muhatap bankanın çekle hiçbir ilgisi yoktur; banka yalnızca çeki saklamakla görevli bir kuruluştur",
       "E": "Muhatap banka, çekin karşılığı bulunmasa dahi çek bedelinin tamamını ödemekle yükümlüdür"
     },
@@ -974,7 +974,7 @@
     "stem": "Tam ciro ile beyaz ciro arasındaki fark bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Tam ciroda lehine ciro yapılan kişi gösterilir; beyaz ciroda ise ciranta yalnızca imza atar, lehtar gösterilmez",
-      "B": "Tam ciroda ciranta yalnızca imza atar; beyaz ciroda ise lehine ciro yapılan kişinin adı mutlaka gösterilir",
+      "B": "Tam ciroda ciranta yalnızca imza atar; beyaz ciroda ise lehine ciro yapılan kişinin adı mutlaka gösterilir; iki ciro türü arasında başka bir fark bulunmaz",
       "C": "Tam ciro yalnızca bankalarca, beyaz ciro ise yalnızca gerçek kişilerce yapılabilen bir devir biçimidir",
       "D": "Tam ciro senedin ön yüzüne, beyaz ciro ise ayrı bir kâğıda yazılır; ikisi de noter onayı gerektirir",
       "E": "Tam ciro ile beyaz ciro arasında hiçbir fark yoktur; ikisi de yalnızca farklı isimlerle anılır"
@@ -1195,7 +1195,7 @@
     "options": {
       "D": "(B), kabul eden sıfatıyla poliçenin asıl borçlusu olmuş ve senedi vadesinde ödemekle yükümlenmiştir",
       "A": "(B), poliçeyi kabul etmiş olsa dahi hiçbir sorumluluk altına girmez; asıl borçlu her hâlde (A) olarak kalır",
-      "B": "(B)'nin kabulüyle (A)'nın senetten doğan tüm sorumluluğu kendiliğinden ve tümüyle ortadan kalkar",
+      "B": "(B)'nin kabulüyle (A)'nın senetten doğan tüm sorumluluğu kendiliğinden ve tümüyle ortadan kalkar; (A)'ya başvurulması artık mümkün olmaz",
       "C": "(B), kabul etmekle yalnızca (A)'ya karşı sorumlu olur; hamile karşı hiçbir sorumluluğu doğmaz",
       "E": "(B)'nin kabulü, poliçeyi kendiliğinden bonoya dönüştürür ve poliçe hükümleri artık uygulanmaz"
     },
@@ -1285,7 +1285,7 @@
       "A": "İbraz süresinin geçirilmesinin hiçbir sonucu yoktur; hamil tüm haklarını aynen korur",
       "C": "İbraz süresi geçirilirse çek kendiliğinden bonoya dönüşür ve hamil bono borçlusuna başvurabilir",
       "D": "İbraz süresi geçirilirse muhatap banka çek bedelini ve gecikmeye bakmaksızın ödemek zorundadır",
-      "E": "İbraz süresi geçirilirse hamil yalnızca muhatap bankaya başvurabilir; düzenleyene hiç başvuramaz"
+      "E": "İbraz süresi geçirilirse hamil yalnızca muhatap bankaya başvurabilir; düzenleyene hiç başvuramaz; düzenleyene karşı takip hakkı ibrazla birlikte düşer"
     },
     "answer": "B",
     "solution": "TTK m.796, 808: kanuni ibraz süresi içinde çeki ibraz etmeyen hamil, cirantalara karşı başvuru haklarını kaybeder (kanunda öngörülen sonuçlar doğar). Doğru cevap B.",

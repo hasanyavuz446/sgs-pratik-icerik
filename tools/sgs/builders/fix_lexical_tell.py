@@ -154,6 +154,8 @@ def guvenli(eski: str, yeni: str) -> str | None:
 
 # Tüm kurallar uygulanır (cümle içi 'her hâlde' dâhil):
 TAM = [
+    "muhasebe_standartlari/tfrs_16_kiralamalar.json",
+    "muhasebe_standartlari/tms_36_deger_dusuklugu.json",
     "borclar_hukuku/borc_iliskisi_kaynaklari.json",
     "borclar_hukuku/borcun_ifasi_sona_ermesi.json",
     "borclar_hukuku/sozlesmenin_kurulmasi.json",
@@ -207,7 +209,6 @@ TAM = [
     "muhasebe_standartlari/tms_7_nakit_akis.json",
     "muhasebe_standartlari/tms_8_politikalar.json",
     "ticaret_hukuku/anonim_sirket.json",
-    "ticaret_hukuku/kambiyo_senetleri.json",
     "ticaret_hukuku/ticaret_sirketleri.json",
     "ticaret_hukuku/ticari_isletme_tacir.json",
     "turkce/dil_bilgisi.json",
@@ -222,19 +223,12 @@ TAM = [
 
 # Cümle içi 'her hâlde' kaldırılırsa doğru şık sistematik en uzun kalıyor;
 # bu pakette yalnız temel kurallar uygulanır:
-TEMEL = [
-    "borclar_hukuku/sozlesme_turleri.json",
-    "muhasebe_standartlari/tfrs_16_kiralamalar.json",
-    "muhasebe_standartlari/tms_36_deger_dusuklugu.json",
-    "ticaret_hukuku/haksiz_rekabet.json",
-    "ticaret_hukuku/kiymetli_evrak.json",
-    "vergi_hukuku/gelir_vergisi.json",
-    "vergi_hukuku/kurumlar_vergisi.json"
-]
+TEMEL: list[str] = []   # şu an boş; 2026-07-28'de son paket de TAM'a yükseltildi
 
 # Mekanik temizlik kör öğrenci oranını UYARI bölgesine taşıdığı için burada
 # İŞLENMEZ; bu paketlerin tamamı `fix_bekleyen_denge.py` tarafından işlenir
-# (aynı temizlik + elle çeldirici genişletmesi). Sahiplik orada:
+# (aynı temizlik + elle çeldirici genişletmesi). Sahiplik orada.
+# Kombine ölçüt açılınca eşiği aşan 6 paket de oraya devredildi:
 BEKLEYEN = [
     "borclar_hukuku/haksiz_fiil.json",
     "borclar_hukuku/ozel_durumlar.json",

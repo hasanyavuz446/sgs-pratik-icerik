@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""BEKLEYEN 11 paket — leksik temizlik + elle boy dengesi (URETIM_KURALLARI §5).
+"""17 paket — leksik temizlik + elle boy dengesi (URETIM_KURALLARI §5).
 
-`fix_lexical_tell.py` bu 11 paketi bilerek dışarıda bırakmıştı: mekanik temizlik
+İki grup:
+
+(a) `fix_lexical_tell.py`'nin BEKLEYEN listesindeki 11 paket — mekanik temizlik
 çeldiricilerden ~15 karakterlik kalıp-dolguyu aldığı için doğru şık sistematik
 EN UZUN kalıyor ve kör öğrenci %26'dan %45'e kadar çıkıyordu. Bu builder aynı
 temizliği uygular, ardından dengeyi ELLE kurar.
@@ -19,7 +21,13 @@ Hangi adayın uygulanacağı ölçümle seçildi: adayların tamamı uygulanınc
 stratejisi öne geçiyor (temerrut_tazminat'ta kör %30). Bu yüzden her pakette
 kör öğrenciyi en aza indiren alt küme seçildi ve burada DONDURULDU.
 
-Sonuç: kör öğrenci %21-30 → %20-25, boy dağılımı iki uçlu, kalıp-dolgu 0.
+(b) Kombine ölçüt (işaretliyi ele + en uzunu seç) 2026-07-28'de açılınca eşiği
+aşan 6 paket: kurumlar_vergisi %35, kambiyo_senetleri %33, gelir_vergisi %31,
+sozlesme_turleri %31, haksiz_rekabet %31, kiymetli_evrak %31. Bunlarda kusur
+şuydu: eleme adımı EN UZUN çeldiriciyi atıyor, doğru şık ikinciyken birinciye
+çıkıyordu. Aynı reçete uygulandı.
+
+Sonuç: kör öğrenci %21-35 → %20-25, boy dağılımı iki uçlu, kalıp-dolgu 0.
 
     --check : dosyalar işlenmiş hâlde mi (fark varsa çıkış 1)
     --write : içerik + uygulama repolarına yaz
@@ -484,6 +492,194 @@ YAMALAR = {
         "0056|A": [
             "ek",
             "; tarh ve tahakkuk aşamaları arasında bir fark bulunmaz"
+        ]
+    },
+    "vergi_hukuku/kurumlar_vergisi.json": {
+        "0006|A": [
+            "ek",
+            "; ortaklık ayrıca beyanname vermekle yükümlü tutulmaz"
+        ],
+        "0018|C": [
+            "ek",
+            "; bu tutarlar kanunen kabul edilmeyen gider sayılır"
+        ],
+        "0035|B": [
+            "ek",
+            "; yurt içi iştiraklerden gelen kâr payları istisnadan yararlanamaz"
+        ],
+        "0036|A": [
+            "ek",
+            "; ortaklık ilişkisinin varlığı faiz indirimini etkilemez"
+        ],
+        "0048|A": [
+            "ek",
+            "; uygulamada ikisi arasında bir ayrım gözetilmez"
+        ],
+        "0049|A": [
+            "ek",
+            "; yurt dışı iştirak kazancı istisnası kanunda yer almaz"
+        ],
+        "0059|B": [
+            "ek",
+            "; indirim beyannamede ayrıca gösterilir ve matrahı düşürür"
+        ],
+        "0060|E": [
+            "ek",
+            "; kurumların aktifindeki taşınmaz satışı bu istisnadan yararlanamaz"
+        ]
+    },
+    "ticaret_hukuku/kambiyo_senetleri.json": {
+        "0004|A": [
+            "ek",
+            "; ibare yoksa senet yalnızca alacağın temlikiyle devredilir"
+        ],
+        "0005|E": [
+            "ek",
+            "; önceki cirantalara başvurma imkânı bulunmaz"
+        ],
+        "0011|B": [
+            "ek",
+            "; muhatabın adı senedin gerekli unsurlarından sayılmaz"
+        ],
+        "0013|A": [
+            "ek",
+            "; görüldüğünde ödeme kaydı taşıyan poliçe geçersizdir"
+        ],
+        "0015|C": [
+            "ek",
+            "; protesto düzenlenmesi bu hâlde gereksiz sayılır"
+        ],
+        "0016|E": [
+            "ek",
+            "; bu kayıt senedin geçerliliğini etkilemez"
+        ],
+        "0018|E": [
+            "ek",
+            "; düzenleyenin sonradan itiraz hakkı bulunmaz"
+        ],
+        "0023|A": [
+            "ek",
+            "; senedin türü metinden anlaşıldığı sürece geçerli sayılır"
+        ],
+        "0039|C": [
+            "ek",
+            "; kabul şerhi bulunmayan çek geçersiz sayılır"
+        ],
+        "0045|B": [
+            "ek",
+            "; iki ciro türü arasında başka bir fark bulunmaz"
+        ],
+        "0055|B": [
+            "ek",
+            "; (A)'ya başvurulması artık mümkün olmaz"
+        ],
+        "0059|E": [
+            "ek",
+            "; düzenleyene karşı takip hakkı ibrazla birlikte düşer"
+        ]
+    },
+    "vergi_hukuku/gelir_vergisi.json": {
+        "0015|B": [
+            "ek",
+            "; işletmenin borçları ve alacakları hesaba katılmaz"
+        ],
+        "0016|A": [
+            "ek",
+            "; bu ödeme ücret gideri sayılarak kazançtan indirilir"
+        ],
+        "0017|E": [
+            "ek",
+            "; amortisman tutarı doğrudan matrahtan düşülür"
+        ],
+        "0032|A": [
+            "ek",
+            "; ayrı bir gelir unsuru olarak sayılmaz"
+        ],
+        "0045|C": [
+            "ek",
+            "; yapılan tevkifat bu beyan yükümlülüğünü ortadan kaldırmaz"
+        ]
+    },
+    "borclar_hukuku/sozlesme_turleri.json": {
+        "0006|B": [
+            "ek",
+            "; mülkiyetin devri bu sözleşmede gündeme gelmez"
+        ],
+        "0013|A": [
+            "ek",
+            "; alıcının iyiniyetli olması bu sonucu etkilemez"
+        ],
+        "0019|B": [
+            "ek",
+            "; sözlü verilen bağışlama sözü de aynen ifa edilir"
+        ],
+        "0022|E": [
+            "ek",
+            "; bağışlayanın kusur derecesi dikkate alınmaz"
+        ]
+    },
+    "ticaret_hukuku/haksiz_rekabet.json": {
+        "0006|D": [
+            "ek",
+            "; bu davranış dürüstlük kuralına aykırı sayılır"
+        ],
+        "0010|A": [
+            "ek",
+            "; fiyatın maliyetin altında olması aranmaz"
+        ],
+        "0041|A": [
+            "ek",
+            "; müşteri çevresine yönelik davranışlar denetim dışıdır"
+        ],
+        "0042|C": [
+            "ek",
+            "; müşteriler ve meslek kuruluşları dava açamaz"
+        ],
+        "0043|A": [
+            "ek",
+            "; fikri ürünün ayrıca korunması gündeme gelmez"
+        ],
+        "0044|D": [
+            "ek",
+            "; hukuk davasında kazancın devri istenemez"
+        ],
+        "0045|A": [
+            "ek",
+            "; tescilsiz işaretler bu korumadan yararlanamaz"
+        ],
+        "0047|A": [
+            "ek",
+            "; bilginin doğruluğu değerlendirmede dikkate alınmaz"
+        ],
+        "0048|B": [
+            "ek",
+            "; haberi yayımlayan basın kuruluşu sorumlu tutulmaz"
+        ]
+    },
+    "ticaret_hukuku/kiymetli_evrak.json": {
+        "0017|D": [
+            "ek",
+            "; muhatap bankanın kabul yetkisi bulunmaz"
+        ],
+        "0025|A": [
+            "ek",
+            "; devir için ayrıca senedin teslimi aranmaz"
+        ],
+        "0027|A": [
+            "ek",
+            "; hamiline yazılı senetler de aynı yolla devredilir"
+        ],
+        "0028|E": [
+            "ek",
+            "; bu hak senette gösterilmese dahi doğar"
+        ],
+        "0034|B": [
+            "ek",
+            "; koşulun gerçekleşmemesi senedin geçerliliğini etkilemez"
+        ],
+        "0035|B": [
+            "ek",
+            "; düzenleyenin imzası senedin unsurlarından sayılmaz"
         ]
     }
 }

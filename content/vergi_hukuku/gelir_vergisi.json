@@ -271,7 +271,7 @@
     "options": {
       "A": "Ticari kazanç gerçek usulde, bilanço esası veya işletme hesabı esasına göre tespit edilir",
       "B": "Ticari kazanç gerçek usulde yalnızca işletmenin toplam hasılatı esas alınarak tespit edilir; giderler dikkate alınmaz",
-      "C": "Ticari kazanç gerçek usulde her hâlde yalnızca bilanço esasına göre tespit edilir; başka usul yoktur",
+      "C": "Ticari kazanç gerçek usulde yalnızca bilanço esasına göre tespit edilir; başka usul yoktur",
       "D": "Ticari kazanç gerçek usulde vergi dairesince maktu olarak belirlenir; mükellefin defterleri dikkate alınmaz",
       "E": "Ticari kazanç gerçek usulde yalnızca işletmenin dönem sonu kasa mevcuduna göre tespit edilir"
     },
@@ -315,7 +315,7 @@
     "options": {
       "E": "Kazanç, bir hesap dönemi içinde elde edilen hasılat ile giderler arasındaki olumlu farktır",
       "A": "Kazanç, dönem sonu öz sermayesi ile dönem başı öz sermayesi arasındaki farktır",
-      "B": "Kazanç, yalnızca dönem içinde tahsil edilen nakit tutarıdır; giderler dikkate alınmaz",
+      "B": "Kazanç, yalnızca dönem içinde tahsil edilen nakit tutarıdır; giderler dikkate alınmaz; işletmenin borçları ve alacakları hesaba katılmaz",
       "C": "Kazanç, işletmenin dönem sonundaki toplam stok değeridir",
       "D": "Kazanç, işletmenin sahip olduğu duran varlıkların toplam değeridir"
     },
@@ -336,7 +336,7 @@
     "stem": "Aşağıdakilerden hangisi ticari kazancın tespitinde indirilebilecek giderlerden biridir?",
     "options": {
       "B": "Ticari kazancın elde edilmesi ve idame ettirilmesi için yapılan genel giderler",
-      "A": "İşletme sahibinin kendisine ödediği aylık maaş (teşebbüs sahibinin ücreti)",
+      "A": "İşletme sahibinin kendisine ödediği aylık maaş (teşebbüs sahibinin ücreti); bu ödeme ücret gideri sayılarak kazançtan indirilir",
       "C": "Her türlü para cezaları ve vergi cezaları ile gecikme zamları",
       "D": "İşletme sahibinin işletmeye koyduğu sermaye için yürütülecek faiz",
       "E": "Kanunen kabul edilmeyen giderler kapsamındaki bağış ve yardımlar"
@@ -361,7 +361,7 @@
       "A": "İşyerinde çalışan personele ödenen ücretler",
       "C": "Ticari kazancın elde edilmesi için ödenen kira giderleri",
       "D": "İşletmeyle ilgili olarak ödenen ve gider niteliğindeki vergi, resim ve harçlar",
-      "E": "İşletmede kullanılan iktisadi kıymetler için ayrılan amortismanlar"
+      "E": "İşletmede kullanılan iktisadi kıymetler için ayrılan amortismanlar; amortisman tutarı doğrudan matrahtan düşülür"
     },
     "answer": "B",
     "solution": "GVK m.41: para cezaları, vergi cezaları, gecikme zamları/faizleri indirilemez. Diğer şıklar ise m.40 kapsamında indirilebilir giderlerdir. Doğru cevap B.",
@@ -402,7 +402,7 @@
     "stem": "Ticari kazancın basit usulde tespiti bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Basit usulde ticari kazanç, dönem içi hasılat ile giderler ve satılan malların alış bedeli arasındaki olumlu farktır; defter tutulmaz",
-      "A": "Basit usulde kazanç her hâlde bilanço esasına göre ve çift taraflı kayıt sistemiyle tespit edilir; hasılat ile gider arasındaki farka hiç bakılmaz",
+      "A": "Basit usulde kazanç bilanço esasına göre ve çift taraflı kayıt sistemiyle tespit edilir; hasılat ile gider arasındaki farka hiç bakılmaz",
       "B": "Basit usulde kazanç, mükellefin sahip olduğu toplam servetin değeri üzerinden hesaplanır",
       "C": "Basit usul yalnızca sermaye şirketleri için öngörülmüş bir kazanç tespit yöntemidir",
       "E": "Basit usulde kazanç, işletmenin yıllık toplam hasılatının tamamı olarak kabul edilir"
@@ -558,7 +558,7 @@
       "A": "Mükellef, safi iradı belirlerken gerçek gider usulü ile götürü gider usulünden birini seçebilir",
       "B": "GMSİ'de yalnızca gerçek gider usulü uygulanır; götürü gider usulü diye bir seçenek yoktur",
       "C": "GMSİ'de hiçbir gider indirilemez; irat, tahsil edilen brüt kira tutarıdır",
-      "D": "GMSİ'de gider usulü mükellef tarafından değil, her hâlde vergi dairesince belirlenir",
+      "D": "GMSİ'de gider usulü mükellef tarafından değil, vergi dairesince belirlenir",
       "E": "GMSİ'de safi irat, gayrimenkulün rayiç değerinin belirli bir oranı olarak maktu belirlenir"
     },
     "answer": "A",
@@ -688,7 +688,7 @@
     "stem": "Gelir Vergisi Kanunu'nda 'değer artışı kazançları' bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "E": "Kanunda sayılan mal ve hakların elden çıkarılmasından doğan kazançlar değer artışı kazancı olarak diğer kazanç ve iratlar kapsamında vergilendirilir",
-      "A": "Değer artışı kazançları her hâlde ticari kazanç kapsamında vergilendirilir; diğer kazanç ve iratlar başlığıyla hiçbir ilgisi bulunmaz ve o başlığa alınmaz",
+      "A": "Değer artışı kazançları ticari kazanç kapsamında vergilendirilir; diğer kazanç ve iratlar başlığıyla hiçbir ilgisi bulunmaz ve o başlığa alınmaz; ayrı bir gelir unsuru olarak sayılmaz",
       "B": "Değer artışı kazançları yalnızca gayrimenkullerin kiraya verilmesinden doğan iratlardır",
       "C": "Değer artışı kazançları vergiye tabi değildir; her türlü elden çıkarma vergi dışıdır",
       "D": "Değer artışı kazançları yalnızca menkul kıymetlerin temettü gelirlerini ifade eder"
@@ -735,7 +735,7 @@
       "A": "Her gelir unsuru için ayrı ayrı ve birbirinden bağımsız yıllık beyannameler verilir; gelirlerin tek bir beyannamede toplanması söz konusu olmaz",
       "B": "Yıllık beyanname yalnızca ücret geliri elde edenler tarafından verilir; diğer gelirler beyan edilmez",
       "D": "Gelir vergisinde beyanname verilmez; vergi her işlem anında kaynakta kesilerek nihai hâle gelir",
-      "E": "Yıllık beyanname, mükellefin geliri ne olursa olsun her hâlde vergi dairesince resen düzenlenir"
+      "E": "Yıllık beyanname, mükellefin geliri ne olursa olsun vergi dairesince resen düzenlenir"
     },
     "answer": "C",
     "solution": "GVK m.85: mükellefler, bir takvim yılında elde ettikleri ve toplanması gereken gelirleri yıllık beyannamede birleştirerek beyan eder. Doğru cevap C.",
@@ -909,7 +909,7 @@
     "options": {
       "A": "Serbest meslek kazancında tahsil esası geçerli olduğundan, tahsil edilmeyen bu bedel kural olarak henüz elde edilmiş sayılmaz ve o dönem kazancına dâhil edilmez",
       "B": "Serbest meslek kazancında tahakkuk esası geçerli olduğundan, bedel fiilen tahsil edilmemiş olsa dahi kazanç elde edilmiş sayılır ve o dönemin geliri olarak beyan edilir",
-      "C": "Bedel tahsil edilmese de, hizmet verildiği için gelir her hâlde o dönemde beyan edilmek zorundadır",
+      "C": "Bedel tahsil edilmese de, hizmet verildiği için gelir o dönemde beyan edilmek zorundadır",
       "D": "Serbest meslek kazancında gelir, sözleşmenin yapıldığı anda elde edilmiş sayılır; tahsil önemli değildir",
       "E": "Tahsil edilmeyen bu bedel gelir sayılmaz; ileride tahsil edilse dahi vergilendirilmez"
     },
@@ -930,7 +930,7 @@
     "stem": "Bir ticari işletme sahibi, dönem içinde ödediği trafik para cezasını gider olarak kaydetmek istemektedir. Bu gider bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Para cezaları ticari kazancın tespitinde indirilemeyecek giderlerden olduğundan, bu ceza gider olarak kaydedilip kazançtan indirilemez",
-      "A": "Para cezaları işletme faaliyetiyle ilgili olduğundan her hâlde gider yazılarak ticari kazançtan indirilebilir; kanunen kabul edilmeyen gider sayılmaz",
+      "A": "Para cezaları işletme faaliyetiyle ilgili olduğundan gider yazılarak ticari kazançtan indirilebilir; kanunen kabul edilmeyen gider sayılmaz",
       "B": "Para cezaları yalnızca tutarı düşükse indirilebilir; yüksek cezalar indirilemez",
       "C": "Para cezaları ticari kazançtan indirilemez ama iki katı olarak gelire eklenir",
       "E": "Para cezaları yalnızca işletme sahibinin şahsına kesilmişse indirilebilir"
@@ -975,7 +975,7 @@
     "options": {
       "B": "Dar mükelleflerin yıllık beyanname vermeye mecbur olmadıkları bu tür kazançları, kural olarak münferit beyanname ile beyan edilebilir",
       "A": "Dar mükellefler hiçbir kazançlarını beyan edemez; Türkiye'de elde ettikleri gelirler vergi dışıdır",
-      "C": "Dar mükellefler bu kazançları için de her hâlde tam mükellefler gibi yıllık beyanname vermekle yükümlüdür; tevkifat beyanı ortadan kaldırmaz",
+      "C": "Dar mükellefler bu kazançları için de tam mükellefler gibi yıllık beyanname vermekle yükümlüdür; tevkifat beyanı ortadan kaldırmaz; yapılan tevkifat bu beyan yükümlülüğünü ortadan kaldırmaz",
       "D": "Dar mükelleflerin Türkiye'de elde ettikleri arızi kazançlar vergilendirilmez",
       "E": "Dar mükellefler bu kazançları yalnızca kendi ülkelerinde beyan eder; Türkiye'ye beyan verilmez"
     },
@@ -1041,7 +1041,7 @@
     "options": {
       "E": "Ücret; para dışında ayınlar ve para ile temsil edilebilen menfaatleri de kapsadığından, sağlanan bu ayni menfaat de ücret olarak vergilendirilir",
       "A": "Ücret yalnızca nakden yapılan ödemeleri kapsadığından, işverence sağlanan ayni menfaat ve hizmetler ücret sayılmaz ve vergilendirilmez",
-      "B": "Ayni menfaatler ücret değil, her hâlde menkul sermaye iradı olarak vergilendirilir",
+      "B": "Ayni menfaatler ücret değil, menkul sermaye iradı olarak vergilendirilir",
       "C": "Ayni menfaatler yalnızca serbest meslek erbabına sağlandığında gelir sayılır",
       "D": "Ayni menfaatler bir gelir unsuru oluşturmaz; yalnızca nakit maaş vergilendirilir"
     },
@@ -1062,7 +1062,7 @@
     "stem": "Gelir vergisinde 'safi tutar' üzerinden vergileme bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "Gelir kural olarak safi (net) tutar üzerinden vergilenir; elde etme giderleri indirildikten sonra kalan tutar vergiye tabidir",
-      "A": "Gelir her hâlde gayrisafi (brüt) tutarı üzerinden vergilendirilir; kazancın elde edilmesi için katlanılan hiçbir gider matrahtan indirilemez",
+      "A": "Gelir gayrisafi (brüt) tutarı üzerinden vergilendirilir; kazancın elde edilmesi için katlanılan hiçbir gider matrahtan indirilemez",
       "B": "Gelir, mükellefin sahip olduğu toplam servet üzerinden vergilendirilir",
       "D": "Gelir, yalnızca yapılan giderlerin toplamı üzerinden vergilendirilir",
       "E": "Gelirin safi mi brüt mü olduğu vergilemede fark yaratmaz; ikisi de aynı sonucu verir"
@@ -1106,7 +1106,7 @@
     "stem": "Bir çiftçi, zirai faaliyetinden kazanç elde etmektedir ve işletme büyüklüğü kanunda belirlenen ölçüleri aşmamaktadır. Bu kazancın vergilendirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "C": "İşletme büyüklüğü ölçülerini aşmayan çiftçilerin zirai kazançları, kural olarak satışları üzerinden yapılan tevkifat (stopaj) ile vergilendirilir",
-      "A": "İşletme büyüklüğü ölçüsünü aşmayan çiftçiler de her hâlde bilanço esasında defter tutarak gerçek usulde vergilendirilir; onlara muaflık tanınmaz",
+      "A": "İşletme büyüklüğü ölçüsünü aşmayan çiftçiler de bilanço esasında defter tutarak gerçek usulde vergilendirilir; onlara muaflık tanınmaz",
       "B": "Zirai kazançlar hiçbir çiftçi bakımından vergiye tabi değildir; tarım tümüyle vergi dışıdır",
       "D": "Bu çiftçiler yalnızca sahip oldukları arazinin değeri üzerinden servet vergisi öder",
       "E": "Ölçüyü aşmayan çiftçiler yıllık beyanname vermek ve tüm dünya gelirlerini beyan etmek zorundadır"
@@ -1128,7 +1128,7 @@
     "stem": "Bir kişi, işletmesine ait olmayan ve şahsen sahip olduğu bir gayrimenkulü satın aldıktan kısa süre sonra kârla elden çıkarmıştır. Bu kazanç bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "B": "Kanunda sayılan mal/hakların elden çıkarılmasından doğan bu kazanç, değer artışı kazancı olarak vergilendirilir",
-      "A": "Bu kazanç her hâlde ticari kazançtır; kişinin tacir olup olmaması sonucu değiştirmez",
+      "A": "Bu kazanç ticari kazançtır; kişinin tacir olup olmaması sonucu değiştirmez",
       "C": "Şahsi malvarlığına ait gayrimenkul satışından doğan kazanç vergiye tabi değildir",
       "D": "Bu kazanç, gayrimenkulden elde edildiği için gayrimenkul sermaye iradı olarak vergilendirilir",
       "E": "Bu kazanç, kişinin sermayesinden doğduğu için menkul sermaye iradı sayılır"
@@ -1150,8 +1150,8 @@
     "stem": "Gelir vergisinde bazı gelirler için beyanname verilmeyen veya diğer gelirlerle toplanmayan (nihai vergileme) hâllerin bulunması bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "A": "Kanunda belirtilen bazı gelirler, tevkif yoluyla vergilendirilmiş olmaları gibi nedenlerle yıllık beyannameye dâhil edilmez veya diğer gelirlerle toplanmaz",
-      "B": "Gelir vergisinde istisnasız her gelir unsuru her hâlde yıllık beyannamede toplanmak zorundadır",
-      "C": "Tevkif yoluyla vergilendirilen gelirler her hâlde ayrıca yıllık beyanname ile yeniden beyan edilir",
+      "B": "Gelir vergisinde istisnasız her gelir unsuru yıllık beyannamede toplanmak zorundadır",
+      "C": "Tevkif yoluyla vergilendirilen gelirler ayrıca yıllık beyanname ile yeniden beyan edilir",
       "D": "Beyanname verilmeyen hâller yalnızca dar mükellefler bakımından söz konusudur; tam mükellefler her gelir unsuru için istisnasız beyanname vermek durumundadır",
       "E": "Gelir vergisinde toplama yapılmayan hâl yoktur; bütün gelirler her koşulda toplanır"
     },
@@ -1195,7 +1195,7 @@
     "options": {
       "C": "Bazı gelirlerde vergi, ödeme yapılırken ödemeyi yapan tarafça kesilip vergi dairesine yatırılarak alınır (kaynakta kesinti)",
       "A": "Tevkifat, verginin yalnızca gelir sahibi tarafından yıl sonunda toplu olarak ödenmesidir",
-      "B": "Tevkifat yöntemi gelir vergisinde uygulanmaz; vergi her hâlde yalnızca beyanname ile alınır",
+      "B": "Tevkifat yöntemi gelir vergisinde uygulanmaz; vergi yalnızca beyanname ile alınır",
       "D": "Tevkifat, verginin geliri elde edenden değil, onun müşterisinden veya alıcısından tahsil edilerek vergi dairesine yatırılmasıdır",
       "E": "Tevkifat, mükellefin kendi geliri üzerinden hesapladığı vergiyi bankaya yatırmasıdır"
     },
@@ -1216,10 +1216,10 @@
     "stem": "Bir kişi, menkul kıymet alım satımını devamlı ve bir ticari organizasyon içinde yaparak kazanç elde etmektedir. Bu kazanç bakımından aşağıdakilerden hangisi doğrudur?",
     "options": {
       "D": "Faaliyet devamlılık ve ticari organizasyon içinde yürütüldüğünden, kazanç değer artışı değil ticari kazançtır",
-      "A": "Menkul kıymet söz konusu olduğundan bu kazanç her hâlde menkul sermaye iradı sayılır",
-      "B": "Alım satım bir defaya mahsus olmasa ve süreklilik kazansa dahi bu kazanç her hâlde arızi kazanç olarak vergilendirilir; ticari kazanç sayılmaz",
+      "A": "Menkul kıymet söz konusu olduğundan bu kazanç menkul sermaye iradı sayılır",
+      "B": "Alım satım bir defaya mahsus olmasa ve süreklilik kazansa dahi bu kazanç arızi kazanç olarak vergilendirilir; ticari kazanç sayılmaz",
       "C": "Menkul kıymet alım satımından doğan kazanç vergiye tabi değildir",
-      "E": "Bu kazanç, faaliyet ne kadar sürerse sürsün her hâlde değer artışı kazancı sayılır"
+      "E": "Bu kazanç, faaliyet ne kadar sürerse sürsün değer artışı kazancı sayılır"
     },
     "answer": "D",
     "solution": "Devamlılık ve ticari organizasyon içinde yapılan menkul kıymet alım satımı ticari faaliyettir; kazanç ticari kazanç olarak vergilendirilir (GVK m.37). Doğru cevap D.",
@@ -1263,7 +1263,7 @@
       "A": "Her gelir unsuru için ayrı ayrı ve birbirinden bağımsız iki yıllık beyanname verilir",
       "B": "Kişi yalnızca daha yüksek olan gelir unsurunu beyan eder; düşük olan beyan dışı bırakılır",
       "C": "Bu gelirler toplanamaz; her biri için ayrı oranlar uygulanarak vergilendirilir",
-      "D": "Kişi bu gelirleri beyan etmek durumunda değildir; ticari kazanç ve gayrimenkul sermaye iradı her hâlde yıllık beyanname dışında bırakılmıştır"
+      "D": "Kişi bu gelirleri beyan etmek durumunda değildir; ticari kazanç ve gayrimenkul sermaye iradı yıllık beyanname dışında bırakılmıştır"
     },
     "answer": "E",
     "solution": "GVK m.85: toplanması gereken gelir unsurları tek bir yıllık beyannamede birleştirilir; vergi bu toplam (matrah) üzerinden hesaplanır. Doğru cevap E.",
