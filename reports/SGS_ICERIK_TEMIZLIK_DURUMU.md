@@ -11,9 +11,9 @@ Son güncelleme: 23 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 106 konu · 6360 soru.** Tamamlanan: **40 / 106 konu = %37,7**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **41 / 107 konu = %38,3**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 3/17 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 4/18 🔵 · matematik 2 yeni konu ✅).
 
 ⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
 (aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 17 | 3 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) **kalıp-dolgu temizliği + profil**: kör %30→%23, eleme tell'i %34→%20; 14 konu kaldı |
+| 5 | muhasebe_standartlari | 18 | 4 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** — 6 eksik standardı birden kapatır; 14 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -40,7 +40,9 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v171** (kombine ölçüt açıldı: `audit.py`'nin eleme adımı geniş kümeye
+Canlı OTA: **v172** (muhasebe_standartlari'na `diger_guncel_standartlar` yeni konusu —
+TFRS 5 · TFRS 15 · TMS 41 · TFRS 3 · TFRS 13 · TMS 34, 60 soru).
+Önceki: v171 (kombine ölçüt açıldı: `audit.py`'nin eleme adımı geniş kümeye
 taşındı, eşiği aşan 6 paket daha temizlendi — kurumlar_vergisi %35→%21,
 kambiyo_senetleri %33→%23, gelir_vergisi/sozlesme_turleri/haksiz_rekabet/
 kiymetli_evrak %31→%20-25. **Havuzda ≤%30 hedefini aşan paket kalmadı.**)
@@ -409,6 +411,46 @@ Olumsuz kök %33'e değil %21'e çekildi: ders bandı %9,6 (FM+standartlar), TMS
 yatkın. İki gerçek veri noktası üzerine %33'e çıkmak bandı aşırı döndürmek olurdu; %21 ikisinin
 arasında kalıyor. Öncüllü %16 ve sayısal %18 bilerek değiştirilmedi (arşivle uyumlu).
 Builder: `build_standards_profile_calibration.py` (1 paket / 35 soru, `--check` temiz).
+
+### diger_guncel_standartlar (YENİ KONU · 60 soru)
+
+Kullanıcı "tms_34'ten devam" dedi; ölçüm ayrı konu açmaya karşı çıktı. §2 "Konu açma
+önceliği" gereği 2014-2026 arşivinin 11 dosyasında frekans ölçüldü:
+
+| standart | geçtiği dosya | toplam geçiş |
+|---|---:|---:|
+| TFRS 5 Satış Amaçlı | 5 | 12 |
+| TFRS 15 Hasılat | 4 | 9 |
+| TMS 41 Tarımsal | 5 | 8 |
+| TFRS 3 İşletme Birleşmeleri | 3 | 5 |
+| TFRS 13 GUD Ölçümü | 2 | 4 |
+| **TMS 34 Ara Dönem** | **1** | **2** |
+| *kıyas: TMS 2 (konusu var)* | *10* | *18* |
+
+TMS 34'e ayrı 60 soruluk konu açmak, 2 kez geçen bir standarda TMS 2 ile aynı ağırlığı
+verirdi — analiz raporunun uyardığı sapma. **Kullanıcı birleşik konuyu seçti.** Altı
+başlık birlikte 40 geçişi karşılar; ağırlık frekansa göre dağıtıldı: TFRS 5 14 ·
+TFRS 15 12 · TMS 41 10 · TFRS 3 9 · TFRS 13 8 · TMS 34 7.
+
+**Kalibrasyon** (kopya yok, §11): 2026/2 s.49 TFRS 5 sayısal senaryo · 2026/1 s.52
+ölçüm · 2024 s.53 TFRS 15 "beş adımdan biri DEĞİLDİR" · 2024 asil-vekil 36.000/3.600 ₺ ·
+2021 bağımsız satış fiyatı · 2026/2 s.50 gayri nakdî bedel · 2021 s.54 TMS 41 ilk ölçüm ·
+2023 s.50 + 2025 s.52 + 2026/2 s.51 TFRS 3 · 2022 TFRS 13 değerleme yöntemleri ·
+2026/1 TMS 34 karşılaştırma dönemi.
+
+**Ölçüm:** kör %23 · boy 21/5 · dağılım 12/12/12/12/12 · klon 0 · öncül uyarısı 0 ·
+audit FATAL 0 / UYARI 0. Builder `build_std_diger_guncel.py`.
+
+⚠️ **İlk turda kör %66 çıktı.** Doğru şıkları açıklayıcı, çeldiricileri terse yazmıştım —
+40/60 soruda doğru şık tek en uzundu. Yerleşik reçete uygulandı (çeldiriciye gerçek
+içerik ekle, 29 genişletme) → %23. Bu tuzağa sıfırdan üretimde de düşülüyor; yeni konu
+yazarken boy dağılımı tasarım aşamasında kontrol edilmeli.
+
+⚠️ Yeni konu `curriculum.json`'a eklendi → **telefonda görünmesi için yeni binary
+gerekir** (matematik konularıyla aynı durum). Test sayıları manifestten ölçülerek
+güncellendi: content_quality 11168 → **11228**, SGS 6360 → **6420**, curriculum konu
+106 → **107**.
+
 
 ### Sözcük tell'i — havuz genelinde giderildi (`fix_lexical_tell.py`)
 
