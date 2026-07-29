@@ -11,9 +11,9 @@ Son güncelleme: 23 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **41 / 107 konu = %38,3**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **42 / 107 konu = %39,3**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 4/18 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 5/18 🔵 · matematik 2 yeni konu ✅).
 
 ⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
 (aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 18 | 4 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** — 6 eksik standardı birden kapatır; 14 konu kaldı |
+| 5 | muhasebe_standartlari | 18 | 5 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) **biçim kalibrasyonu**: TL→₺, olumsuz %0→%10, kök kalıbı 38→18; 13 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -40,8 +40,10 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v172** (muhasebe_standartlari'na `diger_guncel_standartlar` yeni konusu —
-TFRS 5 · TFRS 15 · TMS 41 · TFRS 3 · TFRS 13 · TMS 34, 60 soru).
+Canlı OTA: **v173** (tms_2_stoklar biçim kalibrasyonu: TL→₺, olumsuz kök %0→%10,
+çok adımlı hesap senaryoları, kök kalıbı 38→18).
+Önceki: v172 (`diger_guncel_standartlar` yeni konusu — TFRS 5 · TFRS 15 · TMS 41 ·
+TFRS 3 · TFRS 13 · TMS 34, 60 soru).
 Önceki: v171 (kombine ölçüt açıldı: `audit.py`'nin eleme adımı geniş kümeye
 taşındı, eşiği aşan 6 paket daha temizlendi — kurumlar_vergisi %35→%21,
 kambiyo_senetleri %33→%23, gelir_vergisi/sozlesme_turleri/haksiz_rekabet/
@@ -411,6 +413,48 @@ Olumsuz kök %33'e değil %21'e çekildi: ders bandı %9,6 (FM+standartlar), TMS
 yatkın. İki gerçek veri noktası üzerine %33'e çıkmak bandı aşırı döndürmek olurdu; %21 ikisinin
 arasında kalıyor. Öncüllü %16 ve sayısal %18 bilerek değiştirilmedi (arşivle uyumlu).
 Builder: `build_standards_profile_calibration.py` (1 paket / 35 soru, `--check` temiz).
+
+### tms_2_stoklar (33 yama) — biçim kalibrasyonu
+
+TMS 2 havuzdaki en sık sorulan standart (arşivde 10 dosya / 18 geçiş). **İçerik kapsamı
+zaten tamdı** — amaç, tanım, ölçüm, NGD, kapsam, maliyet unsurları, GÜG dağıtımı,
+yöntemler, değer düşüklüğü, iptal ve dipnotlar eksiksiz. Kusur biçimdeydi:
+
+| ölçüm | önce | sonra | gerekçe |
+|---|---:|---:|---|
+| `TL` kullanan soru | 13 | **0** | §8: "₺ sembolü kullanılır" |
+| olumsuz kök | %0 | **%10** | gerçek sınav bandı %9,6; TMS 2'de 3 ölçülmüş örnek |
+| kökünde ≥2 tutar | %0 | **%20** | gerçek sınav TMS 2'yi hesap sorusu olarak soruyor |
+| aynı kök kalıbı | 38/60 | **18/60** | §2: "aynı kök kalıbı seri üretimde kullanılmaz" |
+| kör öğrenci | %23 | **%21** | |
+
+**Kalibrasyon** (kopya yok, §11): 2016-18 s.39 "satın alma maliyetinde dikkate ALINMAZ" ·
+2014-16 s.39 "yöntemlerden biri DEĞİLDİR" · 1-2-3 s.52 "açıklamalardan hangisi GEREKLİ
+DEĞİLDİR" · 2022 "kurabiyelerin stok maliyeti kaç ₺" · 2025 pirinç NGD toplam değeri ·
+2023 s.49 değer düşüklüğü · 2024 kalem bazında ölçüm · 2021/2026-2 FIFO ↔ ağırlıklı
+ortalama karşılaştırması.
+
+Çok adımlı senaryolara çevrilen hesaplar: NGD toplam değeri (4.000 kg buğday) · satın
+alma maliyeti (6 kalemli) · sabit GÜG dağıtımı + dağıtılmayan tutar · dönem stok maliyeti
+(fire ve satış gideri hariç) · FIFO 3 katman · ağırlıklı ortalama · kalem bazında ölçüm
+(3 mal) · indirgeme iptali (maliyet tavanı).
+
+⚠️ **§8 bağımsız aritmetik doğrulaması iki hata yakaladı:** 0033'te toplama yanlıştı
+(8.000+15.000+6.000 = 29.000, ben 28.000 yazmıştım) ve 0034'te rakam devirmiştim
+(1.600 × 44,40 = 71.040, ben 70.400 yazmıştım). İkisi de düzeltildi; çeldiriciler de
+belgelenmiş hatalara (FIFO ↔ LIFO ↔ ağırlıklı ortalama sonuçları) oturtuldu.
+
+⚠️ **Atıf kusuru üretim sırasında yakalandı:** 0034'ü ilk yazışımda "Yukarıdaki işletme
+aynı verilerle…" diye kurmuştum. Karışık Test soruları karıştırdığı için atıf yasak
+(maliyet dersinde 11 ATIF kusuru bu yüzden giderilmişti); soru kendi verisini taşıyacak
+biçimde yeniden yazıldı.
+
+**Havuz geneli bulgu — `TL` kullanımı:** §8 `₺` diyor ama havuzda 847 soru `₺`, **88 soru
+`TL`** kullanıyordu. tms_2'nin 13'ü giderildi; **75 soru / 16 dosyada kaldı** (ağırlıkla
+muhasebe_standartlari: tms_12 9, tms_16 8, tms_7 7, tms_36 7…). Mekanik ve düşük riskli
+bir düzeltme, ancak dosyaların sahibi başka builder'lar olduğu için sahiplik çakışmasına
+düşmemek adına ayrı bir tur olarak bırakıldı.
+
 
 ### diger_guncel_standartlar (YENİ KONU · 60 soru)
 
