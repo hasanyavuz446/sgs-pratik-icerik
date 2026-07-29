@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 23 Temmuz 2026
+Son güncelleme: 29 Temmuz 2026
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -11,9 +11,9 @@ Son güncelleme: 23 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **42 / 107 konu = %39,3**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **43 / 107 konu = %40,2**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 5/18 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 6/18 🔵 · matematik 2 yeni konu ✅).
 
 ⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
 (aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 18 | 5 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) **biçim kalibrasyonu**: TL→₺, olumsuz %0→%10, kök kalıbı 38→18; 13 konu kaldı |
+| 5 | muhasebe_standartlari | 18 | 6 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) **biçim kalibrasyonu**: TL→₺, olumsuz→%10, kök kalıbı 38→18 / 43→16; 12 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -40,7 +40,9 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v173** (tms_2_stoklar biçim kalibrasyonu: TL→₺, olumsuz kök %0→%10,
+Canlı OTA: **v174** (tms_16_mdv biçim kalibrasyonu: TL→₺, olumsuz kök %6→%10,
+çok adımlı hesap senaryoları, kök kalıbı 43→16).
+Önceki: v173 (tms_2_stoklar biçim kalibrasyonu: TL→₺, olumsuz kök %0→%10,
 çok adımlı hesap senaryoları, kök kalıbı 38→18).
 Önceki: v172 (`diger_guncel_standartlar` yeni konusu — TFRS 5 · TFRS 15 · TMS 41 ·
 TFRS 3 · TFRS 13 · TMS 34, 60 soru).
@@ -413,6 +415,36 @@ Olumsuz kök %33'e değil %21'e çekildi: ders bandı %9,6 (FM+standartlar), TMS
 yatkın. İki gerçek veri noktası üzerine %33'e çıkmak bandı aşırı döndürmek olurdu; %21 ikisinin
 arasında kalıyor. Öncüllü %16 ve sayısal %18 bilerek değiştirilmedi (arşivle uyumlu).
 Builder: `build_standards_profile_calibration.py` (1 paket / 35 soru, `--check` temiz).
+
+### tms_16_mdv (34 yama) — biçim kalibrasyonu
+
+TMS 16, arşivde 7 dosya / 16 geçişle ikinci en sık standart. **Kapsam yine tamdı**;
+kusur tms_2'dekiyle aynı ailedendi ama daha belirgindi.
+
+| ölçüm | önce | sonra |
+|---|---:|---:|
+| kökünde ≥2 tutar | %0 | **%11** |
+| aynı kök kalıbı | 43/60 | **16/60** |
+| `TL` kullanan soru | 8 | **0** |
+| olumsuz kök | %6 | **%10** |
+| kör öğrenci | %28 | **%25** |
+
+**Kalibrasyon:** gerçek sınav TMS 16'yı ağırlıkla hesap sorusu olarak soruyor. Ölçülen
+tipler ve eklenen senaryolar: **azalan bakiyeler → normal amortismana geçiş** (2014-16,
+2023, 2024 — üç kez sorulmuş; 800.000 ₺, ilk iki yıl %40, üçüncü yıl 96.000 ₺) · kıst
+amortisman ve **birikmiş amortisman** (2025 s.43 + 2026/1 tipi; 1 Nisan alım, 210.000 ₺) ·
+üretim miktarı yöntemi (iki dönemlik) · maliyet bedeli (montaj ve deneme üretimi dâhil,
+personel eğitimi ve açılış tanıtımı hariç) · sökme yükümlülüğünün bugünkü değeri ·
+yeniden değerleme (2022 s.34 tipi) · satış kazanç/zararı + yeniden değerleme fazlasının
+geçmiş yıllar kârlarına aktarımı.
+
+⚠️ **Aynı §5 tuzağına üçüncü kez düştüm.** İlk turda kör %28→**%45** çıktı (boy 44/52):
+doğru şıkları açıklayıcı, çeldiricileri terse yazma refleksi. 17 çeldirici genişletmesiyle
+%25'e indi. Bu artık öngörülebilir bir hata — **yeni soru yazarken boy dağılımı tasarım
+aşamasında ölçülmeli**, üretim sonrası değil.
+
+§8 bağımsız aritmetik doğrulaması bu turda temiz geçti (9 hesap kontrolü).
+
 
 ### tms_2_stoklar (33 yama) — biçim kalibrasyonu
 
