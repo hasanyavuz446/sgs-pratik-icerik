@@ -11,9 +11,9 @@ Son güncelleme: 29 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **46 / 107 konu = %43,0**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **47 / 107 konu = %43,9**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 9/18 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
 standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 18 | 9 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru); 9 konu kaldı |
+| 5 | muhasebe_standartlari | 18 | 10 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru) · **tms_36_deger_dusuklugu (28) biçim kalibrasyonu — tasarım-zamanı boy denetimiyle üretilen ilk paket**; 8 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -522,7 +522,7 @@ biçimde yeniden yazıldı.
 
 **Havuz geneli bulgu — `TL` kullanımı:** §8 `₺` diyor ama havuzda 847 soru `₺`, **88 soru
 `TL`** kullanıyordu. tms_2'nin 13'ü giderildi; **75 soru / 16 dosyada kaldı** (ağırlıkla
-muhasebe_standartlari: tms_12 9, tms_16 8, tms_7 7, tms_36 7…). Mekanik ve düşük riskli
+muhasebe_standartlari: tms_12 9, tms_16 8, tms_7 7…; tms_36 temizlendi). Mekanik ve düşük riskli
 bir düzeltme, ancak dosyaların sahibi başka builder'lar olduğu için sahiplik çakışmasına
 düşmemek adına ayrı bir tur olarak bırakıldı.
 

@@ -292,6 +292,45 @@ Alt ölçüt: doğru şık en-uzun ~%20 **ve** en-kısa ~%20 (`boy_egilimi`).
 Temiz örnek: hesap ağırlıklı dersler (`finansal_muhasebe` %19, `matematik` %17) —
 şıklar sayı olduğu için biçim ipucu doğmaz.
 
+### ⭐ Boy dağılımını ÜRETİMDEN ÖNCE ölç (zorunlu adım)
+
+`audit.py` boy tuzağını **üretimden sonra** yakalar; o noktada düzeltme, yazılmış
+60 sorunun yeniden elden geçirilmesi demektir. Aynı hata dört turda üst üste
+tekrarlandı — `diger_guncel_standartlar` sıfırdan üretimde kör **%66**, `tms_16`
+temizlik sonrası %28→**%45**, `tms_21` %30→**%43**, leksik temizlik havuz genelinde
+%26→**%45**. Bu artık tesadüf değil, **öngörülebilir bir refleks**: doğru şıkkı
+açıklayıcı, çeldiricileri terse yazmak.
+
+Bu yüzden yamalar önce **ayrı bir tasarım modülünde** yazılır ve şu ölçü alınır:
+
+```python
+def boy_denetimi(P, esik=1/3):
+    """Doğru şık kaç yamada TEK-EN-UZUN? Üçte biri aşarsa üretimi DURDUR."""
+    tek_uzun = [q for q, f in P.items()
+                if len(f["correct"]) > max(len(x) for x in f["distractors"])]
+    if len(tek_uzun) / len(P) > esik:
+        raise SystemExit("§5 BOY TUZAĞI: çeldiricilere gerçek içerik ekle")
+```
+
+`tms_36` turunda bu kontrol ilk tasarımda **19/28 (%68)** ölçtü ve üretimi durdurdu;
+çeldiricilere gerçek içerik eklendikten sonra 2/28 (%7) oldu ve paket ilk denetimde
+FATAL 0 / UYARI 0, kör %24 (rastgele taban) ile geçti — hiç yeniden çalışma olmadan.
+
+**Üç yönlü tuzak.** Tek bir yönü kapatmak yenisini açar:
+
+| Refleks | Doğan tell |
+|---|---|
+| Yanlış ifadeyi gerekçeli yaz | "en uzunu seç" |
+| Hepsini kısalt | "en kısayı seç" |
+| Hepsini ortala | "iki ucu ele, ortadan tahmin et" |
+
+Doğrusu **dağılımdır**: doğru şık bazen en uzun, bazen en kısa, çoğunlukla arada.
+`tms_36`'da ulaşılan dağılım — en uzun 9 · 2. 23 · 3. 13 · 4. 6 · en kısa 9.
+
+⚠️ **Çare doğru şıkkı kısaltmak değil, çeldiriciye gerçek içerik eklemektir** —
+yanlış iddianın kendi sonucunu yazdır ("…kaydedilir **ve varlık 455.000 ₺'ye
+indirilir**"). Mekanik kısaltma boyu düzeltir, bilgiyi götürür.
+
 ### 🔴 Yasak: mutlak dil (eleme ipucu)
 
 Yanlış bir iddiayı "her hâlde / hiçbir biçimde / …mak zorundadır" diye yazmak doğal bir
