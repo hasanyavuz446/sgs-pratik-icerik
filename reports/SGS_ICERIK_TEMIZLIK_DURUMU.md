@@ -11,13 +11,13 @@ Son güncelleme: 29 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **43 / 107 konu = %40,2**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **46 / 107 konu = %43,0**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 6/18 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 9/18 🔵 · matematik 2 yeni konu ✅).
 
-⚠️ Toplam 104 → **106**: matematikte kapsam açığı kapatılırken iki yeni konu açıldı
-(aşağıda "Ders 14 — Matematik"). Yeni üretilen konular hâlihazırdaki kalite standardına
-göre yazıldığı için tamamlanmış sayılır.
+⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
+standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
+hâlihazırdaki kalite standardına göre yazıldığı için tamamlanmış sayılır.
 Yaklaşım dersin doğasına göre seçiliyor: sayısal derslerde **harder (çok-adımlı) kalibrasyon**,
 kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül oranı) ve anlamsal denetim.
 
@@ -27,7 +27,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
-| 5 | muhasebe_standartlari | 18 | 6 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) **biçim kalibrasyonu**: TL→₺, olumsuz→%10, kök kalıbı 38→18 / 43→16; 12 konu kaldı |
+| 5 | muhasebe_standartlari | 18 | 9 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru); 9 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
@@ -42,6 +42,16 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 
 Canlı OTA: **v174** (tms_16_mdv biçim kalibrasyonu: TL→₺, olumsuz kök %6→%10,
 çok adımlı hesap senaryoları, kök kalıbı 43→16).
+⚠️ **Sahiplik çakışması (bu turda giderildi):** `tms_7-0049`'un doğru şıkkına
+"hiçbir şekilde" pekiştireci geri gelmişti; `fix_lexical_tell.py` bu paketin de sahibi
+olduğu için iki builder aynı metne yazıyor ve `--check` çakışıyordu. İfade sadeleştirildi
+(olumsuz köklü soruda iddia zaten yanlış olduğundan anlam değişmedi) ve sahip builder'a
+gerekçe notu düşüldü. **Ders: aynı pakete iki builder yazmamalı.**
+
+🔎 **Bulgu — tms_7'de üçlü harf run'ı:** 0042-0044 arka arkaya D. §6 "aynı harf üç kez
+art arda gelmez" der ama `audit.py::letter_pattern` yalnız sabit adımlı rotasyona bakıyor,
+üçlü run'ı görmüyor. Bu run bu turdan ÖNCE de vardı (0042-0044'e hiç dokunulmadı), yani
+yeni bir kusur değil. Dedektör açığı + tek soruluk düzeltme ayrı tura bırakıldı.
 Önceki: v173 (tms_2_stoklar biçim kalibrasyonu: TL→₺, olumsuz kök %0→%10,
 çok adımlı hesap senaryoları, kök kalıbı 38→18).
 Önceki: v172 (`diger_guncel_standartlar` yeni konusu — TFRS 5 · TFRS 15 · TMS 41 ·
@@ -363,6 +373,35 @@ gerekçesiyle yazmak → "en uzunu seç" tell'i; hepsini kısaltmak → "en kıs
 ortalamak → "iki ucu ele, ortadan tahmin et" tell'i. Doğru yaklaşım **dağılımdır** (bir kısmı uzun,
 bir kısmı kısa, kalanı orta) ve tasarım betiğine "doğru şık tek-en-uzun/tek-en-kısa mı?" ön kontrolü
 eklenmelidir.
+
+### tms_7_nakit_akis + tms_8_politikalar + tms_38_modv — üçlü biçim kalibrasyonu
+
+Üç paketin kapsamı çıkmış sınavlarla örtüşüyordu; güçlü sorular ve kazanım dağılımı
+korundu. Temel kusur, eski üreticilerin aynı `... bakımından aşağıdakilerden hangisi
+doğrudur?` kökünü seri hâlde kullanması ve bütün çözümleri mekanik `Doğru cevap X.`
+cümlesiyle bitirmesiydi. 2014-2026 arşivi ve KGK TFRS 2026 Seti yeniden kontrol edildi.
+
+| ölçüm | TMS 7 | TMS 8 | TMS 38 |
+|---|---:|---:|---:|
+| tekrarlı kök kalıbı | 43→**10** | 40→**14** | 41→**9** |
+| olumsuz kök | 1→**6** | 3→**6** | 3→**7** |
+| `TL` kullanan soru | 7→**0** | 5→**0** | 5→**0** |
+| mekanik çözüm sonu | 60→**0** | 60→**0** | 60→**0** |
+| kör öğrenci | %21→**%23** | %26→**%25** | %23→**%21** |
+
+**TMS 7:** yatırım/esas/finansman sınıflandırması, nakit yaratmayan işlemler, yabancı
+para nakit üzerindeki kur etkisi, doğrudan yöntem ve kısıtlı nakit açıklamaları için beş
+özgün olumsuz/uygulamalı soru yenilendi. **TMS 8:** politika değişikliğinin meşru
+nedenleri, yürürlüğe girmemiş standart ve geçmiş dönem hatasının düzeltilmesi üç özgün
+uygulama sorusuyla güçlendirildi. **TMS 38:** tanım, araştırma-geliştirme ayrımı,
+hasılata dayalı itfa, maliyet modeliyle defter değeri ve zorunlu açıklamalar beş özgün
+uygulama sorusuyla kalibre edildi.
+
+Toplam 86 kök ve 13 tam soru kalibrasyonu; 180 çözüm sonu temizliği. Builder:
+`build_std_tms7_tms8_tms38_kalibrasyon.py`. Builderdan bağımsız 17 aritmetik kontrol,
+204 paketlik havuzda FATAL0/UYARI0, 31 audit regresyonu, 86 Flutter testi ve iki repo
+eşitliği doğrulandı.
+
 
 ### tms_21_kur_degisimi (35 yama) — kalıp-dolgu temizliği + profil
 
