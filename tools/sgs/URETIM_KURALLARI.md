@@ -132,7 +132,41 @@ profil üretim matrisinin başlangıç noktasıdır:
 | Mali Tablolar Analizi | 228 | %0 | %0 | %81,2 |
 | Denetim | 212 | %46,9 | %12,5 | düşük |
 | Ekonomi + Maliye | 216 | %12,5 | %16,7 | %8,3 |
-| Hukuk | 175 | %48,3 | %20 | düşük |
+| Hukuk | **257** | **%41,5** | %14,3 | düşük |
+
+⚠️ **Hukuk bandı 2026-08-13'te yeniden ölçüldü.** Eski satır (175 / %48,3 / %20)
+yalnız 2026'nın 30 hukuk sorusuna dayanıyordu ve örneklem çok küçüktü. Yeni bant
+**2014–2026 arşivinden çıkarılan 629 gerçek hukuk sorusuna** dayanır.
+
+### 🔴 Hukuk: gerçek sınav sorusu tanım sormaz, kural uygular
+
+Bu ders ailesinin kalite açığı biçimsel değil **yapısaldır** — 2026-08-13 ölçümü:
+
+| Ölçüt | Gerçek sınav (629 soru) | Havuzumuz (2040 soru) |
+|---|---:|---:|
+| Medyan kök | **257 karakter** | 109 (2,4× kısa) |
+| Olumsuz kök | **%41,5** | %2,4 (17× az) |
+| Düz tanım sorusu | **%6,2** | %30,2 (5× fazla) |
+| Olay örgülü kök (tarih/tutar/süre) | **%16,2** | %5,8 |
+| 257 karakteri aşan kök | **%50** | %6,2 |
+| Öncüllü | %14,3 | %10,9 ✅ |
+
+Gerçek hukuk kökü ortalama **3,5 cümledir** ve şu iskeleti taşır:
+
+> **kural veya olay anlatımı** → (çoğu kez I-II-III öncül listesi) →
+> **"Buna göre …"** köprüsü (uzun köklerin %33'ünde) → **olumsuz soru** (%29-41)
+
+Uzun köklerin içinde ölçülen somut veri: tutar %24,2 · tarih %15,9 · süre %6,4.
+
+**Yasak refleks:** "X nedir?" / "X'in tanımı aşağıdakilerden hangisidir?".
+Aday tek kavramı tanıyınca soruyu bitirir; gerçek sınav beş seçeneğin
+**hepsinin** hukuki sonucunu bilmeyi ister. Doğru form, kuralı olaya uygulatmak
+ve çoğunlukla "hangisi **yanlıştır**" diye sormaktır.
+
+⚠️ Kökü uzatmak **dolgu eklemek değildir**: eklenen her cümle ya olayın hukuken
+anlamlı bir unsurunu (taraf, tarih, süre, tutar, sıfat) ya da uygulanacak kuralı
+taşır. Gereksiz betimleme (§4) ve atıf (“yukarıdaki işletme…”, Karışık Test
+karıştırdığı için yasak) eklenmez.
 
 Bu yüzdeler paket başına katı kota değildir; 2026 biçimini gösteren kalibrasyon
 bandıdır. Son üç yıl ana ağırlık, eski sınavlar konu sürekliliği kontrolüdür.

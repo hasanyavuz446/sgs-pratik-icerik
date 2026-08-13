@@ -11,9 +11,9 @@ Son güncelleme: 29 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **47 / 107 konu = %43,9**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **48 / 107 konu = %44,9**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅).
+muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 1/3 🔵).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
 standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
@@ -31,7 +31,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
-| 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 0 | ⬜ |
+| 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 1 | 🔵 **is_hukuku_is_sozlesmesi YAPISAL kalibrasyon (57/60 soru)** — hukuk ailesinin asıl kusuru burada teşhis edildi: sorular tanım soruyordu, gerçek sınav kural uygulatıyor. medyan kök 98→**261** (gerçek 257) · olumsuz %4→**%42** (41) · düz tanım %67→**%7** (6) · olay örgülü %0→%27 · kök kalıbı 40/60→3/60 · kör %28→**%24**; 2 konu kaldı |
 | 10 | vergi_hukuku | 11 | 0 | ⬜ |
 | 11 | ekonomi | 3 | 0 | ⬜ |
 | 12 | maliye | 3 | 0 | ⬜ |
