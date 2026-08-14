@@ -285,6 +285,48 @@ aynı değere yuvarlanıyordu, yani soru öğretmek istediği ayrımı yok ediyo
 Builder'ın sonunda §5–§7 ölçütleri assert'lenir; §7'deki öncül dağılımı assert'i
 TMS 10'da elle yakaladığım kusuru kendiliğinden yakaladı.
 
+### 🔴 Her sorunun TEK sahibi olur — devralınca eski bloğu çıkar
+
+Bir paket baştan yazıldığında, o paketin sorularını tutan **eski bakım
+builder'larının blokları çıkarılır**. Aksi hâlde iki builder aynı metne yazar,
+`--check` sıraya bağımlı hâle gelir ve eski builder yenisinin üstüne yazabilir.
+
+Devralmadan önce sahiplik taranır:
+
+```bash
+grep -ln "<paket_adı>\|<id_öneki>-gen-" tools/sgs/builders/*.py
+```
+
+Hukuk paketlerinde tipik sahipler: `build_legal_oncul_cleanup` (paket başına bir
+öncüllü soru), `fix_meslek_length_quality` / `fix_*_length_quality`,
+`build_option_balance_cleanup`, `fix_bekleyen_denge`, `fix_lexical_tell`.
+
+### 🔴 `--check` desteklemeyen builder ARGÜMANI YOK SAYIP YAZAR
+
+`tools/sgs/builders/` altındaki builder'ların bir kısmı argparse kullanmaz;
+`if __name__ == "__main__":` bloğunda doğrudan yazar. Bunları `--check` ile
+çağırmak **doğrulama değildir** — argüman sessizce yok sayılır ve dosya
+üzerine yazılır.
+
+**2026-08-14'te bu gerçekleşti:** beş bakım builder'ı `--check` ile çağıran bir
+döngü, `fix_meslek_length_quality`'nin argümanı yok saymasıyla yayınlanmış
+`meslek_orgutu_disiplin.json` içeriğinin 6 şıkkını eski hâline geri yazdı. Hasar
+`git diff` ile görüldü ve `git checkout` ile onarıldı.
+
+Toplu doğrulama döngüsü **yalnız** şu koşulu sağlayanları çalıştırır:
+
+```bash
+grep -l 'args.check' tools/sgs/builders/*.py
+```
+
+⚠️ İki yanıltıcı desen var: `add_argument("--check")` fazla dardır (argparse
+çağrısı çok satıra bölünmüş olabilir), `"--check"` ise fazla geniştir — koruma
+metninde bu dizeyi taşıyan builder'ları da yakalar. Ölçüt **`args.check`
+kullanımıdır**; onu kullanan builder gerçekten doğrulama yapıyordur.
+
+Desteklemeyen builder'lara, argümanla çağrıldığında yazmadan çıkan bir koruma
+eklenir (`fix_meslek_length_quality` örneği).
+
 ---
 
 ## 4. Soru kökü standardı

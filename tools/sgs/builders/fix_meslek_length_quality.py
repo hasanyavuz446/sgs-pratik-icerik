@@ -6,6 +6,11 @@ Doğru önermelerin anlamı ve cevap harfi korunur. Uzun doğru seçenekler soru
 kökünde zaten bulunan bağlamdan arındırılır; yapay uzun birkaç çeldirici yakın
 ama yanlış kurum/ceza önermesine indirilir. İçerik ve uygulama kopyası birlikte
 yazılır.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/sorumluluk_ve_yasaklar.json blogu
+bu dosyadan CIKARILDI. O paketin 60 sorusunun tamami yapisal kalibrasyon turunda
+yeniden yazildi ve sahiplik build_hukuk_meslek_sorumluluk_yapisal.py dosyasina
+gecti. Bir sorunun tek sahibi olmali.
 """
 from __future__ import annotations
 
@@ -57,59 +62,10 @@ CORRECT_REWRITES = {
         "staj-gen-0041": "YMM sınavını geçen kişi göreve başlamadan önce yetkili merci önünde yemin eder",
         "staj-gen-0042": "Mevzuatta öngörülen mesleki içerikli görevlerde geçen süreler stajdan sayılabilir",
     },
-    "meslek_hukuku/sorumluluk_ve_yasaklar.json": {
-        "sorum-gen-0001": "Meslek mensubu aynı fiil nedeniyle disiplin, hukuki ve cezai sorumluluklara tabi olabilir",
-        "sorum-gen-0002": "Meslek kurallarına aykırılık, meslek örgütü önünde disiplin sorumluluğu doğurabilir",
-        "sorum-gen-0003": "Mesleki kusurla müşteri veya üçüncü kişiye verilen zarar hukuki sorumluluk doğurabilir",
-        "sorum-gen-0004": "Kanunda suç sayılan meslekle bağlantılı fiil cezai sorumluluk doğurabilir",
-        "sorum-gen-0006": "İmzalayan meslek mensubu, beyannamedeki bilgilerin defter ve belgelere uygunluğundan sorumludur",
-        "sorum-gen-0007": "YMM, tasdik aykırılığından doğan vergi ve cezalardan mükellefle birlikte sorumludur",
-        "sorum-gen-0008": "Vergi idaresi, vergi ve cezanın tamamını sorumlu meslek mensubundan da isteyebilir",
-        "sorum-gen-0009": "Meslek mensubu, ibraz edilen belgedeki aykırılığı bilebileceği ölçüde yaptığı işlemden sorumludur",
-        "sorum-gen-0012": "Bağımsız meslek mensubu, tarafsızlıkla bağdaşmayan ticari faaliyette bulunamaz",
-        "sorum-gen-0013": "Meslek mensubu vakar, onur veya bağımsızlıkla bağdaşmayan iş yapamaz",
-        "sorum-gen-0014": "Meslek mensubunun başkasının işini edinmeye yönelik haksız rekabet davranışı yasaktır",
-        "sorum-gen-0016": "Meslek mensubu ve çalışanları, müşteri sırlarını kanuni hâller dışında açıklayamaz",
-        "sorum-gen-0017": "Meslek mensubu, mesleki faaliyetini her türlü baskıdan uzak ve bağımsız yürütmelidir",
-        "sorum-gen-0018": "Meslek mensubu, mesleki değerlendirme ve kararlarında tarafsız davranmalıdır",
-        "sorum-gen-0019": "Meslek mensubu sır saklar; yalnız kanunun izin verdiği hâllerde bilgi verebilir",
-        "sorum-gen-0020": "Meslek mensubu müşteriyle yazılı hizmet sözleşmesi yapar ve ücreti sözleşmede belirler",
-        "sorum-gen-0021": "Asgari ücret tarifesi TÜRMOB'ca hazırlanır ve Bakanlık onayıyla yürürlüğe girer",
-        "sorum-gen-0022": "Meslek mensubu asgari ücret tarifesinin altında ücretle iş kabul edemez",
-        "sorum-gen-0023": "Teslim alınan ve düzenlenen belgeler meslek mensubunca kanuni süre boyunca saklanmalıdır",
-        "sorum-gen-0024": "(A), beyanname aykırılığından doğan vergi ziyaında (B) ile birlikte sorumlu olabilir",
-        "sorum-gen-0025": "(C), tasdik aykırılığından doğan vergi ve cezada şirketle birlikte sorumludur",
-        "sorum-gen-0026": "(D)'nin iş edinmeye yönelik reklamı yasağa aykırı olup disiplin sorumluluğu doğurabilir",
-        "sorum-gen-0027": "(E)'nin bağımsızlıkla bağdaşmayan ticari faaliyeti meslek yasağına aykırıdır",
-        "sorum-gen-0028": "(F)'nin müşteri sırrını açıklaması sır saklama yükümlülüğünü ihlal eder ve sorumluluk doğurur",
-        "sorum-gen-0029": "(G), iş ücretini kural olarak yazılı hizmet sözleşmesiyle belirlemeliydi",
-        "sorum-gen-0030": "(H), kural olarak asgari tarifenin altında ücretle iş kabul edemezdi",
-        "sorum-gen-0032": "(K), tümüyle gizlenen ve bilemeyeceği husustan doğan vergi ziyaından sorumlu tutulamaz",
-        "sorum-gen-0033": "(L), mesleki ihmaliyle müşteriye verdiği zarardan hukuken ve mali tazminatla sorumlu olabilir",
-        "sorum-gen-0034": "Başka meslek mensubunun işini haksız rekabetle elde etmeye çalışmak yasaktır",
-        "sorum-gen-0035": "Aynı fiil disiplin sorumluluğu yanında cezai sorumluluk da doğurabilir",
-        "sorum-gen-0036": "Meslek mensubu bağımsızlığını zedeleyen çıkar çatışmalarından kaçınmalıdır",
-        "sorum-gen-0037": "İdare, vergi ve cezanın tamamını mükelleften veya sorumlu meslek mensubundan isteyebilir",
-        "sorum-gen-0038": "Çalışanlar da işleri sırasında öğrendikleri müşteri sırlarını saklamalıdır",
-        "sorum-gen-0039": "Yükümlülük ihlali disiplin, hukuki veya cezai sorumluluk doğurabilir",
-        "sorum-gen-0043": "Haklı sebeple çekilme, müşteriyi zarara uğratmayacak uygun zamanda yapılmalıdır",
-        "sorum-gen-0044": "Sahte veya yanıltıcı belge düzenlemek ya da buna iştirak disiplin ve ceza sorumluluğu doğurur",
-        "sorum-gen-0049": "Defter ve kayıtlar meslek mensubunca mevzuata uygun, doğru ve mesleki özenle tutulmalıdır",
-        "sorum-gen-0052": "Meslek mensubu müşteri işini dürüstlük ve sadakatle yürütüp müşterinin çıkarını gözetmelidir",
-        "sorum-gen-0053": "Kanuni hâllerde bazı mükelleflerin beyannamelerini meslek mensubunun imzalaması zorunludur",
-    },
 }
 
 
 DISTRACTOR_REWRITES = {
-    "meslek_hukuku/meslek_orgutu_disiplin.json": {
-        "mh-orgut-gen-0003": {"A": "TOBB (Türkiye Odalar ve Borsalar Birliği)"},
-        "mh-orgut-gen-0010": {"A": "Ruhsatın geri alınması"},
-        "mh-orgut-gen-0013": {"B": "Yalnız yazılı uyarma cezası"},
-        "mh-orgut-gen-0016": {"B": "Hazine ve Maliye Bakanlığı"},
-        "mh-orgut-gen-0026": {"B": "Oda Disiplin Kurulu"},
-        "mh-orgut-gen-0038": {"A": "Tekerrür disiplin cezasını etkilemez"},
-    },
 }
 
 
@@ -148,6 +104,16 @@ def fix_file(rel: str) -> int:
 
 
 if __name__ == "__main__":
+    # ⚠️ Bu builder --check DESTEKLEMEZ ve calistiginda dogrudan YAZAR.
+    # Toplu dogrulama donguleri onu "--check" ile cagirdiginda argumani sessizce
+    # yok sayip yayinlanmis icerigi geri yaziyordu (2026-08-14'te
+    # meslek_orgutu_disiplin.json'da gerceklesti). Artik argumanla cagrilirsa
+    # yazmadan hata verir.
+    import sys
+    if sys.argv[1:]:
+        print("HATA: bu builder arguman kabul etmez ve calistiginda dogrudan YAZAR.")
+        print("Dogrulama icin git diff kullanin; yazmak icin argumansiz calistirin.")
+        raise SystemExit(2)
     files = sorted(set(CORRECT_REWRITES) | set(DISTRACTOR_REWRITES))
     for rel in files:
         print(f"{rel}: {fix_file(rel)} doğal şık düzeltmesi")

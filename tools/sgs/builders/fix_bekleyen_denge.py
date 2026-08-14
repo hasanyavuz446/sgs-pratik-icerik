@@ -31,6 +31,10 @@ Sonuç: kör öğrenci %21-35 → %20-25, boy dağılımı iki uçlu, kalıp-dol
 
     --check : dosyalar işlenmiş hâlde mi (fark varsa çıkış 1)
     --write : içerik + uygulama repolarına yaz
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/sorumluluk_ve_yasaklar.json blogu bu dosyadan CIKARILDI.
+O paketin 60 sorusunun tamami yapisal kalibrasyon turunda yeniden yazildi ve
+sahiplik ilgili build_hukuk_*_yapisal.py dosyasina gecti.
 """
 from __future__ import annotations
 
@@ -314,36 +318,6 @@ YAMALAR = {
         "0058|B": [
             "yaz",
             "Genellik verginin yalnızca zenginlerden, eşitlik ise yalnızca fakirlerden alınmasını öngörür; bu nedenle asgari geçim indirimi genellik ilkesinin, artan oranlı tarife ise eşitlik ilkesinin gereği sayılır"
-        ]
-    },
-    "meslek_hukuku/sorumluluk_ve_yasaklar.json": {
-        "0033|D": [
-            "ek",
-            "; zarar gören yalnızca odaya şikâyet yoluna başvurabilir"
-        ],
-        "0045|D": [
-            "ek",
-            "; iştirak hâlinde vergi ziyaı cezası da uygulanmaz"
-        ],
-        "0047|D": [
-            "ek",
-            "; odanın belirlediği ölçülere uyma yükümlülüğü bulunmaz"
-        ],
-        "0050|D": [
-            "ek",
-            "; belgenin gerçeği yansıtmaması tek başına bir sonuç doğurmaz"
-        ],
-        "0051|B": [
-            "ek",
-            "; mevzuata aykırılık yalnızca müşteriye karşı sonuç doğurur"
-        ],
-        "0056|A": [
-            "ek",
-            "; devir tutanağı düzenlenmesi de aranmaz"
-        ],
-        "0060|E": [
-            "ek",
-            "; hangisinin işletileceği meslek mensubunun tercihine bırakılmıştır"
         ]
     },
     "ticaret_hukuku/limited_sahis_sirketleri.json": {

@@ -5,6 +5,11 @@ Bu yamalar doğru cevap, kök ve çözümü değiştirmez. Tekrarlanan yapay
 çeldiricileri bağlama özgü seçeneklerle değiştirir; ayrıca bir pakette
 ``en uzun``/``en kısa`` seçeneğin sistematik biçimde doğru olmasını engeller.
 ``--check`` iki repodaki yayımlanan kopyaların bu kaynakla eşleştiğini sınar.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/sorumluluk_ve_yasaklar.json blogu
+bu dosyadan CIKARILDI. O paketin 60 sorusunun tamami yapisal kalibrasyon turunda
+yeniden yazildi ve sahiplik build_hukuk_meslek_sorumluluk_yapisal.py dosyasina
+gecti. Bir sorunun tek sahibi olmali.
 """
 
 from __future__ import annotations
@@ -102,15 +107,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
         },
         "kmb-gen-0038": {
             "A": "Çekin ibrazı için kanunda hiçbir süre öngörülmemiştir; hamil çeki dilediği zaman sınırsızca ibraz edebilir ve süre işlemez"
-        },
-    },
-    "content/meslek_hukuku/meslek_orgutu_disiplin.json": {
-        "mh-orgut-gen-0028": {"E": "Disiplin cezası meslek mensubunun gelirini artıran bir ödüldür"},
-        "mh-orgut-gen-0007": {"E": "Disiplin kurulu oda başkanını atayan organdır"},
-    },
-    "content/meslek_hukuku/sorumluluk_ve_yasaklar.json": {
-        "sorum-gen-0037": {
-            "A": "Vergi idaresi bu borcu yalnızca mükelleften isteyebilir; meslek mensubuna hiçbir durumda başvuramaz"
         },
     },
     "content/vergi_hukuku/vergilendirme_sureci.json": {

@@ -10,6 +10,11 @@ meslek_hukuku_esaslari.json ve meslek_orgutu_disiplin.json bloklari bu dosyadan
 CIKARILDI. Uc paketin de 60 sorusunun tamami yapisal kalibrasyon turunda
 yeniden yazildi ve sahiplik ilgili build_hukuk_meslek_*_yapisal.py dosyalarina
 gecti. Bir sorunun tek sahibi olmali.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/sorumluluk_ve_yasaklar.json blogu
+bu dosyadan CIKARILDI. O paketin 60 sorusunun tamami yapisal kalibrasyon turunda
+yeniden yazildi ve sahiplik build_hukuk_meslek_sorumluluk_yapisal.py dosyasina
+gecti. Bir sorunun tek sahibi olmali.
 """
 
 from __future__ import annotations
@@ -102,13 +107,6 @@ PATCHES = {
             "Aşağıdakilerden hangileri SMMM olmanın özel şartlarındandır?\n\nI. En az lisans düzeyinde ilgili alanda öğrenim görmüş olmak\n\nII. Staj şartı aranmaksızın herkesin doğrudan ruhsat alabilmesi\n\nIII. Meslek yeterlilik sınavına girmeden herkesin başarılı sayılması",
             "A",
             "İlgili alanda en az lisans düzeyinde öğrenim özel şartlardandır (I). Kural olarak stajın tamamlanması ve yeterlilik sınavında başarı gerekir; bu nedenle II ve III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/meslek_hukuku/sorumluluk_ve_yasaklar.json": {
-        "sorum-gen-0005": p(
-            "Aşağıdakilerden hangileri meslek mensubunun mesleki faaliyeti nedeniyle karşılaşabileceği sorumluluk türlerindendir?\n\nI. Disiplin sorumluluğu\n\nII. Sportif müsabaka sorumluluğu\n\nIII. Siyasi temsil sorumluluğu",
-            "A",
-            "Meslek mensubu mesleki davranışları nedeniyle disiplin sorumluluğuyla karşılaşabilir (I). Sportif müsabaka (II) ve siyasi temsil (III) mesleki sorumluluk türleri değildir. Doğru cevap **Yalnız I**.",
         ),
     },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
