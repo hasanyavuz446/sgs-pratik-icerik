@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 29 Temmuz 2026
+Son güncelleme: 14 Ağustos 2026
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -11,9 +11,9 @@ Son güncelleme: 29 Temmuz 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **48 / 107 konu = %44,9**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **50 / 107 konu = %46,7**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 1/3 🔵).
+muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
 standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
@@ -31,7 +31,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
 | 8 | meslek_hukuku | 5 | 0 | ⬜ (mesleki_degerler_etik yalnız boy-cilası, v167) |
-| 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 1 | 🔵 **is_hukuku_is_sozlesmesi YAPISAL kalibrasyon (57/60 soru)** — hukuk ailesinin asıl kusuru burada teşhis edildi: sorular tanım soruyordu, gerçek sınav kural uygulatıyor. medyan kök 98→**261** (gerçek 257) · olumsuz %4→**%42** (41) · düz tanım %67→**%7** (6) · olay örgülü %0→%27 · kök kalıbı 40/60→3/60 · kör %28→**%24**; 2 konu kaldı |
+| 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
 | 10 | vergi_hukuku | 11 | 0 | ⬜ |
 | 11 | ekonomi | 3 | 0 | ⬜ |
 | 12 | maliye | 3 | 0 | ⬜ |
@@ -40,8 +40,29 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
 | 16 | yabanci_dil | 3 | 0 | ⬜ |
 
-Canlı OTA: **v174** (tms_16_mdv biçim kalibrasyonu: TL→₺, olumsuz kök %6→%10,
-çok adımlı hesap senaryoları, kök kalıbı 43→16).
+Canlı OTA: **v178** (`sosyal_guvenlik_hukuku` +
+`is_sozlesmesinin_sona_ermesi` yapısal kalibrasyonu).
+**14 Ağustos ek zorluk ve güncellik turu:** Avukat kullanıcı geri bildirimi üzerine
+2026/1–2026/2 gerçek SGS hukuk bloklarıyla yeniden karşılaştırıldı. Tek kural/tanım
+düzeyinde kalan **22 soru**; statü + kurum, kural + istisna, eşik + sonuç veya
+bildirim + yaptırım zinciri ölçen olaylara çevrildi. 2026’da yürürlüğe giren MYÖ
+prim oranı **%21 (%9 + %12)** ve prime esas kazanç üst sınırı **9 kat** olarak
+güncellendi; eski %20 ve 7,5 kat bilgileri temizlendi. Paket denetimi FATAL 0 /
+UYARI 0, kör öğrenci %27, doğru harf dağılımı A13/B12/C13/D12/E10. Bu çalışma
+henüz commit/push/OTA yapılmadı. Elle sınıflandırılan bilişsel matris: düzey 0 = 0,
+düzey 1 = 4, düzey 2 = 30, düzey 3 = 26; her 20 soruluk blok ayrı ayrı en az
+8 düzey-2 ve 4 düzey-3 soruyla yeni hukuk zorluk kapısını geçiyor.
+**14 Ağustos iş sözleşmesinin sona ermesi turu:** Paketteki 60 sorunun tamamı gerçek
+SGS hukuk biçimine göre gözden geçirildi; 40 kısa/tek-kural kök olay, koşul ve hukuki
+sonucu birlikte ölçen yapılara dönüştürüldü. Medyan kök **123→228**, kısa kök **40→4**,
+kör öğrenci **%25**, doğru harf dağılımı A12/B14/C12/D12/E10. Bilişsel matris:
+düzey 0 = 0, düzey 1 = 4, düzey 2 = 24, düzey 3 = 32; üç 20 soruluk testin her biri
+ayrı ayrı hukuk zorluk kapısını geçiyor. Konular: bildirim süreleri, haklı/geçerli
+fesih, altı iş günü-bir yıl süresi ve maddi çıkar istisnası, kıdem/ihbar/kötüniyet
+tazminatı, işe iade ve zorunlu arabuluculuk, ikale, TBK m.420 ibra, TBK m.440 ölüm
+tazminatı, toplu işçi çıkarma, kullanılmayan izin ve zamanaşımı. Paket FATAL 0/UYARI 0.
+Üç iş hukuku dosyasının eski genel bakım builder'larındaki ikincil sahipliği kaldırıldı;
+her paket artık yalnız kendi yapısal builder'ı tarafından üretiliyor.
 ⚠️ **Sahiplik çakışması (bu turda giderildi):** `tms_7-0049`'un doğru şıkkına
 "hiçbir şekilde" pekiştireci geri gelmişti; `fix_lexical_tell.py` bu paketin de sahibi
 olduğu için iki builder aynı metne yazıyor ve `--check` çakışıyordu. İfade sadeleştirildi

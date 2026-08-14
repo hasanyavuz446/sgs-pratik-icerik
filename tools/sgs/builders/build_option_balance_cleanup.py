@@ -113,10 +113,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "A": "Vergi idaresi bu borcu yalnızca mükelleften isteyebilir; meslek mensubuna hiçbir durumda başvuramaz"
         },
     },
-    "content/is_ve_sosyal_guvenlik_hukuku/is_hukuku_is_sozlesmesi.json": {
-        "ish-sozlesme-gen-0057": {"C": "İş sözleşmesi yalnız işverenin tek taraflı beyanıyla kurulur"},
-        "ish-sozlesme-gen-0058": {"E": "Analık izni yalnızca işverenin takdirine bağlıdır"},
-    },
     "content/vergi_hukuku/vergilendirme_sureci.json": {
         "vh-surec-gen-0020": {"E": "Gecikme zammı yalnızca vergi cezalarına uygulanır"},
         "vh-surec-gen-0041": {"E": "Takdir komisyonunun matrah takdiriyle ilgisi yoktur"},

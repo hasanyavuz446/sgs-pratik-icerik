@@ -57,12 +57,6 @@ CORRECT = {
 
 
 DISTRACTORS = {
-    "is_ve_sosyal_guvenlik_hukuku/is_hukuku_is_sozlesmesi.json": {
-        "ish-sozlesme-gen-0001": {"A": "1475 sayılı Kanun"},
-        "ish-sozlesme-gen-0003": {"A": "Yalnız gerçek kişiler"},
-        "ish-sozlesme-gen-0004": {"A": "İşyerindeki her işçi"},
-        "ish-sozlesme-gen-0006": {"B": "Ücretsiz vekâlet sözleşmesi"},
-    },
     "vergi_hukuku/vergilendirme_sureci.json": {
         "vh-surec-gen-0001": {"A": "Verginin ödenmesi"},
         "vh-surec-gen-0008": {"A": "Muhatap adreste bulunduğunda"},

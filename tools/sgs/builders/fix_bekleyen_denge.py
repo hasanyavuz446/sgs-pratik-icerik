@@ -192,36 +192,6 @@ YAMALAR = {
             "Kesin vade kararlaştırılmadığı için (A2) temerrüde düşürülemez; (B2) yalnızca ifayı bekler ve geçen süreye katlanır, ayrıca faiz de isteyemez"
         ]
     },
-    "is_ve_sosyal_guvenlik_hukuku/sosyal_guvenlik_hukuku.json": {
-        "0008|A": [
-            "ek",
-            "; işe gidiş-geliş sırasındaki olaylar kapsam dışında bırakılmıştır"
-        ],
-        "0010|B": [
-            "yaz",
-            "Meslek hastalığı yalnızca işçinin kendi beyanıyla belirlenir; Kurum Sağlık Kurulu raporu veya hekim tespiti aranmaz ve bildirim süresi işlemez"
-        ],
-        "0021|C": [
-            "ek",
-            "; sigortalının kendi adına prim yatırması kabul edilmez"
-        ],
-        "0023|C": [
-            "ek",
-            "; bildirim yapılmayan aylar için idari para cezası uygulanmaz"
-        ],
-        "0024|A": [
-            "ek",
-            "; istirahat raporu bulunması ödenek hakkını doğurmaz"
-        ],
-        "0038|B": [
-            "ek",
-            "; prim borcunun bulunması aylık bağlanmasını engellemez"
-        ],
-        "0041|A": [
-            "ek",
-            "; prim ödeme gün sayısı ve hizmet akdinin sona erme biçimi aranmaz"
-        ]
-    },
     "maliye/butce_maliye_politikasi.json": {
         "0003|D": [
             "yaz",

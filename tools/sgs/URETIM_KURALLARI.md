@@ -171,6 +171,41 @@ karıştırdığı için yasak) eklenmez.
 Bu yüzdeler paket başına katı kota değildir; 2026 biçimini gösteren kalibrasyon
 bandıdır. Son üç yıl ana ağırlık, eski sınavlar konu sürekliliği kontrolüdür.
 
+#### Hukuk için bilişsel zorluk kapısı
+
+Kökün uzun olması veya olumsuz kurulması soruyu kendiliğinden zorlaştırmaz. Uzun bir
+senaryonun sonunda yalnız “4/1-(a) nedir?” soruluyorsa soru hâlâ tek bilgi tanımayla
+çözülür. Gerçek sınav düzeyi ayrıca **kaç hükmün birlikte işletildiği** ve yanlış
+seçeneklerin ne kadar yakın hukuki ayrımlara dayandığı üzerinden denetlenir.
+
+Her hukuk sorusu üretim matrisinde şu bilişsel sınıflardan biriyle işaretlenir:
+
+| Düzey | Ölçülen işlem | Kullanım |
+|---|---|---|
+| 0 — tanıma | Tek tanımı/kurumu/kanunu hatırlama | Yalnız öğretici ısınma; paketin en fazla %10'u |
+| 1 — tek kural uygulama | Bir olaya tek süre, statü, yasak veya şart uygulama | Paketin en fazla %30'u |
+| 2 — çoklu ayrım | Beş yakın hükmü karşılaştırma veya en az iki koşulu birlikte değerlendirme | Paketin omurgası; en az %40 |
+| 3 — bütünleşik olay | İstisna + süre/statü/sonuç zinciri ya da birden çok taraf/işlem | En az %20 |
+
+Hedef dağılım mekanik bir soru kotası değil, **kolay soruya yığılmayı durduran teslim
+kapısıdır**: 60 soruluk hukuk paketinde düzey 0 en çok 6, düzey 0+1 birlikte en çok
+24 soru olmalıdır. Her 20 soruluk test kendi içinde en az 8 düzey-2 ve en az 4
+düzey-3 soru taşımalıdır. Bir paket bu ölçümü yapmadan “gerçek sınava kalibre” diye
+raporlanmaz.
+
+Zorluk şu yollarla artırılır:
+
+- aynı olayda statü + bildirim + hukuki sonuç gibi iki veya daha çok hükmü işletmek,
+- her seçeneği ayrı ve makul bir hukuki önerme olarak kurmak,
+- süre/oran/eşik bilgisini olayın diğer koşullarıyla birlikte değerlendirtmek,
+- ana kural ile istisnayı aynı soruda ayırt ettirmek,
+- birbirine yakın kurum, dava yolu, sorumluluk veya sigorta kolunu karşılaştırmak.
+
+**Yasak sahte zorluk:** gereksiz isim/tarih/tutar eklemek, cümleyi uzatmak, iki
+olumsuzluk kullanmak, mevzuat dışı ayrıntıyla adayı yormak veya çeldiriciyi açıkça
+saçmalaştırmak. Zor soru daha uzun olduğu için değil, doğru sonuca ulaşmak için daha
+fazla doğru hukuki ayrım gerektiği için zordur.
+
 - Finansal muhasebe: kayıt, hesap kodu, işlem zinciri ve çok verili senaryo bulunur.
 - Maliyet ve mali tablolar: hesap/tablo soruları paketin omurgasıdır; yalnız tanım
   sorularıyla 60'a tamamlanmaz.

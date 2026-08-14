@@ -126,20 +126,6 @@ PATCHES = {
             "Meslek mensubu mesleki davranışları nedeniyle disiplin sorumluluğuyla karşılaşabilir (I). Sportif müsabaka (II) ve siyasi temsil (III) mesleki sorumluluk türleri değildir. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/is_ve_sosyal_guvenlik_hukuku/is_sozlesmesinin_sona_ermesi.json": {
-        "ish-sona-gen-0010": p(
-            "İş sözleşmesinin feshiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Haklı nedenle derhal fesihte bildirim süresinin dolması beklenmez.\n\nII. Fesih ancak iki tarafın anlaşmasıyla sonuç doğurabilir.\n\nIII. Süreli fesihte kanuni bildirim süreleri uygulanmaz.",
-            "A",
-            "Haklı nedenle derhal fesihte bildirim süresi beklenmez (I). Fesih tek taraflı irade beyanıyla sonuç doğurabildiğinden II; süreli fesihte bildirim sürelerine uyulduğundan III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/is_ve_sosyal_guvenlik_hukuku/sosyal_guvenlik_hukuku.json": {
-        "sgh-gen-0011": p(
-            "Sosyal güvenlik hukukuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sosyal sigortalar ve genel sağlık sigortasının temel kanunu 5510 sayılı Kanun'dur.\n\nII. Sigortalılık yalnızca 4/a statüsünden oluşur; 4/b ve 4/c statüleri yoktur.\n\nIII. Malullük ve yaşlılık kısa vadeli sigorta kollarındandır.",
-            "A",
-            "Temel düzenleme 5510 sayılı Kanun'dur (I). Sigortalılık 4/a, 4/b ve 4/c statülerine ayrıldığından II; malullük ve yaşlılık uzun vadeli sigorta kolları olduğundan III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "vh-kavram-gen-0011": p(
             "Vergi hukukunun temel kavramlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellef, kendisine vergi borcu düşen kişidir.\n\nII. Vergi, Bakanlık genelgesiyle konulup kaldırılabilir.\n\nIII. Vergi mükellefi olabilmek için tam fiil ehliyetine sahip olmak şarttır.",
