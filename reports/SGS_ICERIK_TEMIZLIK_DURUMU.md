@@ -11,7 +11,7 @@ Son güncelleme: 14 Ağustos 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **51 / 107 konu = %47,7**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **52 / 107 konu = %48,6**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
 muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅).
 
@@ -30,7 +30,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 5 | muhasebe_standartlari | 18 | 10 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru) · **tms_36_deger_dusuklugu (28) biçim kalibrasyonu — tasarım-zamanı boy denetimiyle üretilen ilk paket**; 8 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
-| 8 | meslek_hukuku | 5 | 1 | 🔵 **meslek_hukuku_esaslari YAPISAL kalibrasyon (60/60 soru)** — medyan kök 122→**200** · olumsuz %10→**%40** (bant 41) · düz tanım %62→**%0** · kök kalıbı 37/60→2/60 · kör %26→**%24**. **İki kapı birden uygulandı:** §5 boy (beraberlik+öncül seçicileri dâhil; ilk tasarım %82 çıkıp üretimi durdurdu) + §1 bilişsel düzey (0:2 · 1:8 · 2:30 · 3:20). 4 konu kaldı (mesleki_degerler_etik yalnız boy-cilası almıştı, v167) |
+| 8 | meslek_hukuku | 5 | 2 | 🔵 **meslek_hukuku_esaslari** (60/60): medyan 122→200 · olumsuz %10→**%40** · tanım %62→**%0** · kör %26→%24 · düzey 2:30/3:20 · **meslek_orgutu_disiplin** (60/60): medyan 122→154 · olumsuz %13→**%35** · tanım %67→**%0** · kör %26→%28 · düzey 2:37/3:13. İki kapı birden (§5 boy — beraberlik+öncül dâhil; §1 bilişsel düzey). 3 konu kaldı |
 | 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
 | 10 | vergi_hukuku | 11 | 0 | ⬜ |
 | 11 | ekonomi | 3 | 0 | ⬜ |
