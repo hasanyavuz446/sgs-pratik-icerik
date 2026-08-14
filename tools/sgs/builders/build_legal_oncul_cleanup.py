@@ -15,6 +15,9 @@ gecti. Bir sorunun tek sahibi olmali.
 bu dosyadan CIKARILDI. O paketin 60 sorusunun tamami yapisal kalibrasyon turunda
 yeniden yazildi ve sahiplik build_hukuk_meslek_sorumluluk_yapisal.py dosyasina
 gecti. Bir sorunun tek sahibi olmali.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/staj_ve_sinavlar.json blogu bu
+dosyadan CIKARILDI; sahiplik build_hukuk_meslek_staj_yapisal.py'ye gecti.
 """
 
 from __future__ import annotations
@@ -100,13 +103,6 @@ PATCHES = {
             "Aşağıdakilerden hangileri poliçenin zorunlu şekil unsurlarındandır?\n\nI. Senet metninde 'poliçe' kelimesinin bulunması\n\nII. Senedin noter tarafından onaylanmış olması\n\nIII. Muhatabın kabul şerhinin senette bulunması",
             "B",
             "Senet metninde 'poliçe' kelimesinin bulunması zorunludur (I). Noter onayı poliçenin şekil şartı değildir (II); muhatabın kabulü de poliçenin düzenlenmesi için zorunlu unsur değildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/meslek_hukuku/staj_ve_sinavlar.json": {
-        "staj-gen-0005": p(
-            "Aşağıdakilerden hangileri SMMM olmanın özel şartlarındandır?\n\nI. En az lisans düzeyinde ilgili alanda öğrenim görmüş olmak\n\nII. Staj şartı aranmaksızın herkesin doğrudan ruhsat alabilmesi\n\nIII. Meslek yeterlilik sınavına girmeden herkesin başarılı sayılması",
-            "A",
-            "İlgili alanda en az lisans düzeyinde öğrenim özel şartlardandır (I). Kural olarak stajın tamamlanması ve yeterlilik sınavında başarı gerekir; bu nedenle II ve III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {

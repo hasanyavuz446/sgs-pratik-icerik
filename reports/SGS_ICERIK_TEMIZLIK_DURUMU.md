@@ -11,7 +11,7 @@ Son güncelleme: 14 Ağustos 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **54 / 107 konu = %50,5**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **55 / 107 konu = %51,4**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
 muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅).
 
@@ -30,7 +30,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 5 | muhasebe_standartlari | 18 | 10 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru) · **tms_36_deger_dusuklugu (28) biçim kalibrasyonu — tasarım-zamanı boy denetimiyle üretilen ilk paket**; 8 konu kaldı |
 | 6 | borclar_hukuku | 8 | 0 | ⬜ |
 | 7 | ticaret_hukuku | 7 | 0 | ⬜ |
-| 8 | meslek_hukuku | 5 | 4 | 🔵 **esaslar** (60/60) medyan 122→200 · olumsuz %10→**%40** · tanım %62→%0 · kör %24 · düzey 2:30/3:20 · **orgut_disiplin** (60/60) medyan 122→154 · olumsuz %13→**%35** · tanım %67→%0 · kör %28 · düzey 2:37/3:13 · **degerler_etik** (60/60) medyan 131→173 · olumsuz %5→**%37** · tanım %55→%0 · kör %24 · düzey 2:39/3:13 · **sorumluluk_ve_yasaklar** (60/60) medyan 122→156 · olumsuz %0→**%42** · **aynı kök kalıbı 51/60→3/60** · kör %26→**%22** · düzey 2:39/3:13. ⚠️ **Sahiplik devri:** 5 bakım builder'ı bu paketlerde soru tutuyordu (`fix_meslek_length_quality` 39, `build_legal_oncul_cleanup` 3, `build_option_balance_cleanup` 2, `fix_bekleyen_denge` 7); yeniden yazılan paketlerin blokları çıkarıldı. 1 konu kaldı (staj_ve_sinavlar) |
+| 8 | meslek_hukuku | 5 | 5 | ✅ **TAM** — 5/5 konu yapısal kalibrasyondan geçti. esaslar (olumsuz %10→**%40**, tanım %62→%0) · orgut_disiplin (%13→**%35**, %67→%0) · degerler_etik (%5→**%37**, %55→%0) · sorumluluk_ve_yasaklar (%0→**%42**, kalıp 51/60→3/60) · staj_ve_sinavlar (%0→**%40**, kalıp 53/60→6/60, medyan 115→185). Ders ort. kör **%22-28**, düzey 2≥30 / düzey 3≥12. ⚠️ **Sahiplik devri:** 5 bakım builder'ından toplam 100+ kayıt yeniden yazılan paketlere devredildi |
 | 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
 | 10 | vergi_hukuku | 11 | 0 | ⬜ |
 | 11 | ekonomi | 3 | 0 | ⬜ |
