@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Ticaret Hukuku paketlerindeki şık-boy ipucunu doğal seçeneklerle giderir."""
+"""Ticaret Hukuku paketlerindeki şık-boy ipucunu doğal seçeneklerle giderir.
+⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/ticari_isletme_tacir.json bloklari
+bu dosyadan CIKARILDI; sahiplik build_hukuk_ticari_isletme_yapisal.py'ye gecti.
+"""
 from __future__ import annotations
 
 import json
@@ -12,11 +15,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "ticaret_hukuku/ticari_isletme_tacir.json": {
-        "tic-isletme-gen-0002": "Mutlaka anonim veya limited şirket biçiminde kurulması",
-        "tic-isletme-gen-0015": "Tescil ve ilan edilen hususların bilinmediği üçüncü kişilerce ileri sürülemez",
-        "tic-isletme-gen-0016": "Tacirin ticari işlemlerde kullandığı ve imzaladığı ad",
-    },
     "ticaret_hukuku/kiymetli_evrak.json": {
         "tic-kiymetli-gen-0006": "Yazılı temlik ve senedin teslimiyle",
         "tic-kiymetli-gen-0011": "Muhatap kabul imzasıyla poliçenin asıl borçlusu olur",
@@ -110,9 +108,6 @@ CORRECT = {
 
 
 DISTRACTORS = {
-    "ticaret_hukuku/ticari_isletme_tacir.json": {
-        "tic-isletme-gen-0012": {"A": "Sulh hukuk mahkemesi"},
-    },
     "ticaret_hukuku/kambiyo_senetleri.json": {
         "kmb-gen-0001": {"B": "Yalnız ispat aracı olan sıradan bir belgedir"},
         "kmb-gen-0002": {"A": "Poliçe, bono, çek, hisse senedi ve tahvil"},
@@ -169,5 +164,15 @@ def fix(rel: str) -> int:
 
 
 if __name__ == "__main__":
+    # ⚠️ Bu builder --check DESTEKLEMEZ ve calistiginda dogrudan YAZAR.
+    # Toplu dogrulama donguleri onu "--check" ile cagirdiginda argumani sessizce
+    # yok sayip yayinlanmis icerigi geri yazar (2026-08-14'te
+    # fix_meslek_length_quality ile ayni sey yasandi). Artik arguman verilirse
+    # yazmadan hata verip cikar.
+    import sys
+    if sys.argv[1:]:
+        print("HATA: bu builder arguman kabul etmez ve calistiginda dogrudan YAZAR.")
+        print("Dogrulama icin git diff kullanin; yazmak icin argumansiz calistirin.")
+        raise SystemExit(2)
     for rel in sorted(set(CORRECT) | set(DISTRACTORS)):
         print(f"{rel}: {fix(rel)} doğal şık düzeltmesi")
