@@ -4,6 +4,12 @@
 Seçilen sorular 22.07.2026 tarihinde resmî/kurumsal kaynaklarla (Adalet
 Bakanlığı TBK metni, Ticaret Bakanlığı TTK metni, TÜRMOB düzenlemeleri, ÇSGB,
 SGK ve GİB mevzuat sayfaları) yeniden kontrol edilmiştir.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): content/meslek_hukuku/mesleki_degerler_etik.json,
+meslek_hukuku_esaslari.json ve meslek_orgutu_disiplin.json bloklari bu dosyadan
+CIKARILDI. Uc paketin de 60 sorusunun tamami yapisal kalibrasyon turunda
+yeniden yazildi ve sahiplik ilgili build_hukuk_meslek_*_yapisal.py dosyalarina
+gecti. Bir sorunun tek sahibi olmali.
 """
 
 from __future__ import annotations
@@ -89,27 +95,6 @@ PATCHES = {
             "Aşağıdakilerden hangileri poliçenin zorunlu şekil unsurlarındandır?\n\nI. Senet metninde 'poliçe' kelimesinin bulunması\n\nII. Senedin noter tarafından onaylanmış olması\n\nIII. Muhatabın kabul şerhinin senette bulunması",
             "B",
             "Senet metninde 'poliçe' kelimesinin bulunması zorunludur (I). Noter onayı poliçenin şekil şartı değildir (II); muhatabın kabulü de poliçenin düzenlenmesi için zorunlu unsur değildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/meslek_hukuku/meslek_hukuku_esaslari.json": {
-        "mh-esas-gen-0020": p(
-            "Meslek hukukuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mesleğin dayanağı 3568 sayılı Kanun'dur.\n\nII. Kanunda düzenlenen tek meslek unvanı SMMM'dir; YMM unvanı bulunmaz.\n\nIII. Tasdik yetkisi serbest muhasebeci mali müşavire aittir.",
-            "A",
-            "Mesleğin temel dayanağı 3568 sayılı Kanun'dur (I). Kanunda hem SMMM hem YMM unvanı düzenlendiğinden II; tasdik yetkisi YMM'ye ait olduğundan III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/meslek_hukuku/meslek_orgutu_disiplin.json": {
-        "mh-orgut-gen-0015": p(
-            "Meslek örgütüyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Odalar ve TÜRMOB kamu kurumu niteliğinde meslek kuruluşudur.\n\nII. Meslek mensubunun bölgesindeki odaya kaydı isteğe bağlıdır.\n\nIII. TÜRMOB, odalara bağlı bir alt kuruluştur.",
-            "A",
-            "Odalar ve TÜRMOB kamu kurumu niteliğinde meslek kuruluşlarıdır (I). Mesleğin yürütülmesi için odaya kayıt zorunlu olduğundan II; TÜRMOB odaların üst kuruluşu olduğundan III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/meslek_hukuku/mesleki_degerler_etik.json": {
-        "mh-etik-gen-0015": p(
-            "Mesleki etik ve bağımsızlıkla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kişisel çıkar ve öz denetim, bağımsızlığa yönelik tehditlerdendir.\n\nII. Bağımsızlık denetim ve tasdik işlerinde önem taşımaz.\n\nIII. İş elde etmek amacıyla serbestçe reklam yapmak temel etik ilkelerden biridir.",
-            "A",
-            "Kişisel çıkar ve öz denetim bağımsızlık tehditlerindendir (I). Bağımsızlık özellikle denetim ve tasdik işlerinde önem taşır (II); iş elde etmek amacıyla reklam yapmak etik ilke değil yasaklanan bir davranıştır (III). Doğru cevap **Yalnız I**.",
         ),
     },
     "content/meslek_hukuku/staj_ve_sinavlar.json": {
