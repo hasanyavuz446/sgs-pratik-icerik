@@ -481,44 +481,6 @@ YAMALAR = {
             "; bağışlayanın kusur derecesi dikkate alınmaz"
         ]
     },
-    "ticaret_hukuku/haksiz_rekabet.json": {
-        "0006|D": [
-            "ek",
-            "; bu davranış dürüstlük kuralına aykırı sayılır"
-        ],
-        "0010|A": [
-            "ek",
-            "; fiyatın maliyetin altında olması aranmaz"
-        ],
-        "0041|A": [
-            "ek",
-            "; müşteri çevresine yönelik davranışlar denetim dışıdır"
-        ],
-        "0042|C": [
-            "ek",
-            "; müşteriler ve meslek kuruluşları dava açamaz"
-        ],
-        "0043|A": [
-            "ek",
-            "; fikri ürünün ayrıca korunması gündeme gelmez"
-        ],
-        "0044|D": [
-            "ek",
-            "; hukuk davasında kazancın devri istenemez"
-        ],
-        "0045|A": [
-            "ek",
-            "; tescilsiz işaretler bu korumadan yararlanamaz"
-        ],
-        "0047|A": [
-            "ek",
-            "; bilginin doğruluğu değerlendirmede dikkate alınmaz"
-        ],
-        "0048|B": [
-            "ek",
-            "; haberi yayımlayan basın kuruluşu sorumlu tutulmaz"
-        ]
-    },
 }
 
 

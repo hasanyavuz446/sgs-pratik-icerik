@@ -203,9 +203,19 @@ def main():
     print(f"tasarım modülü: {len(mod.P)} yama")
 
     # 1) iki kapı
-    n, t = mod.boy_denetimi()
+    # boy_denetimi iki biçimde olabilir: (uzun, toplam) — yalnız "en uzunu seç"
+    # ölçen eski biçim; (uzun, kısa, toplam) — iki ucu birlikte ölçen biçim.
+    # haksiz_rekabet turundan sonra iki uçlu biçim tercih ediliyor: olumsuz köke
+    # çevrilen sorularda doğru şık sistematik olarak EN KISA kalıyor.
+    sonuc = mod.boy_denetimi()
     duzey = mod.duzey_denetimi()
-    print(f"✅ §5 boy: {n}/{t} (%{n/t*100:.0f})   ✅ §1 düzey: {duzey}")
+    if len(sonuc) == 3:
+        u, k, t = sonuc
+        boy = f"en uzun {u}/{t} (%{u/t*100:.0f}) · en kısa {k}/{t} (%{k/t*100:.0f})"
+    else:
+        u, t = sonuc
+        boy = f"en uzun {u}/{t} (%{u/t*100:.0f})  ⚠️ en kısa ölçülmedi"
+    print(f"✅ §5 boy: {boy}   ✅ §1 düzey: {duzey}")
 
     # 2) harfler
     sirali = sorted(mod.P)

@@ -88,11 +88,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/ticaret_hukuku/haksiz_rekabet.json": {
-        "hakrek-gen-0049": {
-            "C": "Haksız rekabet davalarında görevli mahkeme yoktur; uyuşmazlık yalnızca idari makamların kararıyla çözülür"
-        },
-    },
     "content/vergi_hukuku/vergilendirme_sureci.json": {
         "vh-surec-gen-0020": {"E": "Gecikme zammı yalnızca vergi cezalarına uygulanır"},
         "vh-surec-gen-0041": {"E": "Takdir komisyonunun matrah takdiriyle ilgisi yoktur"},

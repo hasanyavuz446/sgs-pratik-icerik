@@ -73,13 +73,6 @@ PATCHES = {
             "Bir tarafın zenginleşmesi sebepsiz zenginleşmenin unsurudur (I). İade borcu için zenginleşenin kusurlu olması (II) veya haksız fiil işlemesi (III) aranmaz. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/ticaret_hukuku/haksiz_rekabet.json": {
-        "hakrek-gen-0005": p(
-            "Haksız rekabetle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Amaç, dürüst ve bozulmamış rekabetin sağlanmasıdır\n\nII. Dürüstlük kuralına uygun ticari uygulamalar haksız rekabet oluşturur\n\nIII. Haksız rekabetin tespiti için failin kusuru her durumda şarttır",
-            "B",
-            "Haksız rekabet hükümleri dürüst ve bozulmamış rekabeti korur (I). Dürüstlük kuralına uygun uygulamalar haksız rekabet oluşturmaz (II); haksız rekabetin tespiti için kusur şart olmayıp kusur tazminat bakımından önem taşır (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "vh-kavram-gen-0011": p(
             "Vergi hukukunun temel kavramlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellef, kendisine vergi borcu düşen kişidir.\n\nII. Vergi, Bakanlık genelgesiyle konulup kaldırılabilir.\n\nIII. Vergi mükellefi olabilmek için tam fiil ehliyetine sahip olmak şarttır.",

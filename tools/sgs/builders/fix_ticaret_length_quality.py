@@ -18,42 +18,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "ticaret_hukuku/haksiz_rekabet.json": {
-        "hakrek-gen-0002": "Aldatıcı veya dürüstlüğe aykırı ticari uygulamalar haksız rekabettir",
-        "hakrek-gen-0006": "Başkalarını veya ürünlerini yanlış, yanıltıcı ya da gereksiz incitici açıklamalarla kötülemek",
-        "hakrek-gen-0007": "Kendisini, işletmesini veya malını yanıltıcı açıklamalarla öne çıkarmak haksız rekabettir",
-        "hakrek-gen-0008": "Başkasının malı, ürünü veya işletmesiyle karıştırılmaya yol açan önlem almak",
-        "hakrek-gen-0009": "Sahip olunmayan unvan, diploma veya ödülle üstünlük sağlamaya çalışmak",
-        "hakrek-gen-0010": "Maliyetin altındaki seçilmiş mallarla müşteri ve rakipleri yanıltmak haksız rekabet olabilir",
-        "hakrek-gen-0011": "Saldırgan satış yöntemiyle müşterinin karar özgürlüğünü sınırlamak haksız rekabettir",
-        "hakrek-gen-0013": "Ek edimin gerçek değeri konusunda müşteriyi yanıltmak haksız rekabet olabilir",
-        "hakrek-gen-0014": "Çalışanı işvereninin üretim veya iş sırrını açıklamaya yöneltmek haksız rekabettir",
-        "hakrek-gen-0015": "Müşteriyi sözleşmeye aykırılığa veya haksız feshe yöneltmek haksız rekabettir",
-        "hakrek-gen-0016": "Emanet edilen teklif, hesap veya plandan yetkisiz yararlanmak haksız rekabettir",
-        "hakrek-gen-0017": "Hukuka aykırı edinilen üretim veya iş sırrını kullanmak ya da açıklamak haksız rekabettir",
-        "hakrek-gen-0018": "Ortak iş şartlarına uymamak veya dürüstlüğe aykırı şart kullanmak haksız rekabettir",
-        "hakrek-gen-0020": "Tespit davası, davranışın haksız rekabet niteliğini belirler",
-        "hakrek-gen-0021": "Men davası, haksız rekabet fiilinin durdurulmasını amaçlar",
-        "hakrek-gen-0022": "Düzeltme davası, haksız rekabetin doğurduğu maddi durumu giderir",
-        "hakrek-gen-0023": "Zarar gören, fail kusurluysa maddi zararının tazminini isteyebilir",
-        "hakrek-gen-0024": "Koşulları varsa manevi tazminata ve failin kazancının devrine karar verilebilir",
-        "hakrek-gen-0027": "Müşterisi, kredisi veya ticari itibarı zarar gören kişi dava açabilir",
-        "hakrek-gen-0029": "Dava, öğrenmeden bir ve her hâlde fiilin doğumundan üç yıl sonra zamanaşımına uğrar",
-        "hakrek-gen-0030": "Mahkeme, kazananın talebiyle ve karşı tarafın gideriyle kararın ilanına hükmedebilir",
-        "hakrek-gen-0031": "Kanundaki fiiller, hak sahibinin şikâyeti üzerine cezai yaptırıma tabi olabilir",
-        "hakrek-gen-0032": "Hak sahibi mahkemeden haksız rekabeti önleyici ihtiyati tedbir isteyebilir",
-        "hakrek-gen-0034": "(A)'nın kötülemesi haksız rekabettir; (B) tespit, men ve düzeltme davaları açabilir",
-        "hakrek-gen-0035": "(C)'nin iltibasa yol açan davranışı haksız rekabettir; (D) hukuki dava açabilir",
-        "hakrek-gen-0036": "(E)'nin çalışanı iş sırrını açıklamaya yöneltmesi haksız rekabettir",
-        "hakrek-gen-0037": "Öğrenmeden itibaren bir yıl geçtiği için zamanaşımı def'i davayı sonuçsuz bırakabilir",
-        "hakrek-gen-0038": "Çalışanın görevdeki fiili nedeniyle (H), istihdam eden (G)'ye de dava açabilir",
-        "hakrek-gen-0039": "(K)'nin sahip olmadığı ödülü kullanması haksız rekabettir; zarar görenler dava açabilir",
-        "hakrek-gen-0040": "Kusur olmasa da tespit, men ve düzeltme davaları açılabilir",
-        "hakrek-gen-0050": "(N)'nin yanıltıcı ve rakipleri dışlayıcı maliyet altı satışı haksız rekabet oluşturabilir",
-        "hakrek-gen-0051": "Asılsız kötüleme haksız rekabettir; zarar gören rakip dava açabilir",
-        "hakrek-gen-0052": "Kişilik hakkı zedelenmişse haksız rekabet nedeniyle manevi tazminat istenebilir",
-        "hakrek-gen-0059": "Hükümler, dürüst rekabeti etkileyen davranışlara katılan herkesi kapsar",
-    },
 }
 
 
