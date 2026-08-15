@@ -35,6 +35,9 @@ Sonuç: kör öğrenci %21-35 → %20-25, boy dağılımı iki uçlu, kalıp-dol
 ⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/sorumluluk_ve_yasaklar.json blogu bu dosyadan CIKARILDI.
 O paketin 60 sorusunun tamami yapisal kalibrasyon turunda yeniden yazildi ve
 sahiplik ilgili build_hukuk_*_yapisal.py dosyasina gecti.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/kiymetli_evrak.json blogu bu
+dosyadan CIKARILDI; sahiplik build_hukuk_kiymetli_evrak_yapisal.py'ye gecti.
 """
 from __future__ import annotations
 
@@ -600,32 +603,6 @@ YAMALAR = {
             "; haberi yayımlayan basın kuruluşu sorumlu tutulmaz"
         ]
     },
-    "ticaret_hukuku/kiymetli_evrak.json": {
-        "0017|D": [
-            "ek",
-            "; muhatap bankanın kabul yetkisi bulunmaz"
-        ],
-        "0025|A": [
-            "ek",
-            "; devir için ayrıca senedin teslimi aranmaz"
-        ],
-        "0027|A": [
-            "ek",
-            "; hamiline yazılı senetler de aynı yolla devredilir"
-        ],
-        "0028|E": [
-            "ek",
-            "; bu hak senette gösterilmese dahi doğar"
-        ],
-        "0034|B": [
-            "ek",
-            "; koşulun gerçekleşmemesi senedin geçerliliğini etkilemez"
-        ],
-        "0035|B": [
-            "ek",
-            "; düzenleyenin imzası senedin unsurlarından sayılmaz"
-        ]
-    }
 }
 
 

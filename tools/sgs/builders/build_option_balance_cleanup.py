@@ -10,6 +10,9 @@ Bu yamalar doğru cevap, kök ve çözümü değiştirmez. Tekrarlanan yapay
 bu dosyadan CIKARILDI. O paketin 60 sorusunun tamami yapisal kalibrasyon turunda
 yeniden yazildi ve sahiplik build_hukuk_meslek_sorumluluk_yapisal.py dosyasina
 gecti. Bir sorunun tek sahibi olmali.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/kiymetli_evrak.json blogu bu
+dosyadan CIKARILDI; sahiplik build_hukuk_kiymetli_evrak_yapisal.py'ye gecti.
 """
 
 from __future__ import annotations
@@ -84,9 +87,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
         "den-ornek-gen-0053": {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
-    },
-    "content/ticaret_hukuku/kiymetli_evrak.json": {
-        "tic-kiymetli-gen-0033": {"A": "Mülkiyeti devreden temlik cirosu"},
     },
     "content/ticaret_hukuku/haksiz_rekabet.json": {
         "hakrek-gen-0049": {

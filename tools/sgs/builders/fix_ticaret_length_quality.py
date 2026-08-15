@@ -3,6 +3,9 @@
 """Ticaret Hukuku paketlerindeki şık-boy ipucunu doğal seçeneklerle giderir.
 ⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/ticari_isletme_tacir.json bloklari
 bu dosyadan CIKARILDI; sahiplik build_hukuk_ticari_isletme_yapisal.py'ye gecti.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/kiymetli_evrak.json blogu bu
+dosyadan CIKARILDI; sahiplik build_hukuk_kiymetli_evrak_yapisal.py'ye gecti.
 """
 from __future__ import annotations
 
@@ -15,13 +18,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "ticaret_hukuku/kiymetli_evrak.json": {
-        "tic-kiymetli-gen-0006": "Yazılı temlik ve senedin teslimiyle",
-        "tic-kiymetli-gen-0011": "Muhatap kabul imzasıyla poliçenin asıl borçlusu olur",
-        "tic-kiymetli-gen-0016": "Çek ödeme aracıdır ve kural olarak görüldüğünde ödenir",
-        "tic-kiymetli-gen-0017": "Çek kabule sunulamaz; kabul kaydı yazılmamış sayılır",
-        "tic-kiymetli-gen-0021": "Hakkı ciro edilene mülkiyetiyle geçiren tam ciro",
-    },
     "ticaret_hukuku/haksiz_rekabet.json": {
         "hakrek-gen-0002": "Aldatıcı veya dürüstlüğe aykırı ticari uygulamalar haksız rekabettir",
         "hakrek-gen-0006": "Başkalarını veya ürünlerini yanlış, yanıltıcı ya da gereksiz incitici açıklamalarla kötülemek",

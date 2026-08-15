@@ -18,6 +18,9 @@ gecti. Bir sorunun tek sahibi olmali.
 
 ⚠️ SAHIPLIK DEVRI (2026-08-14): meslek_hukuku/staj_ve_sinavlar.json blogu bu
 dosyadan CIKARILDI; sahiplik build_hukuk_meslek_staj_yapisal.py'ye gecti.
+
+⚠️ SAHIPLIK DEVRI (2026-08-14): ticaret_hukuku/kiymetli_evrak.json blogu bu
+dosyadan CIKARILDI; sahiplik build_hukuk_kiymetli_evrak_yapisal.py'ye gecti.
 """
 
 from __future__ import annotations
@@ -68,13 +71,6 @@ PATCHES = {
             "Aşağıdakilerden hangileri sebepsiz zenginleşmenin unsurlarındandır?\n\nI. Bir tarafın zenginleşmesi\n\nII. Zenginleşenin mutlaka kusurlu olması\n\nIII. Zenginleşenin haksız fiil işlemiş olması",
             "A",
             "Bir tarafın zenginleşmesi sebepsiz zenginleşmenin unsurudur (I). İade borcu için zenginleşenin kusurlu olması (II) veya haksız fiil işlemesi (III) aranmaz. Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/ticaret_hukuku/kiymetli_evrak.json": {
-        "tic-kiymetli-gen-0019": p(
-            "Kıymetli evrakın devriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Hamiline yazılı senet, teslimle devredilir.\n\nII. Emre yazılı senet, yalnızca senedin teslimiyle devredilir.\n\nIII. Nama yazılı senet, yazılı devir beyanına gerek olmaksızın yalnız teslimle devredilir.",
-            "A",
-            "Hamiline yazılı senet teslimle devredilir (I). Emre yazılı senette ciro ve teslim gerektiğinden II; nama yazılı senette yazılı devir beyanı ile teslim gerektiğinden III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
     "content/ticaret_hukuku/haksiz_rekabet.json": {
