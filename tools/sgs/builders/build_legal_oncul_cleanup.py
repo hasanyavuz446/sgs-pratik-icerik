@@ -80,13 +80,6 @@ PATCHES = {
             "Haksız rekabet hükümleri dürüst ve bozulmamış rekabeti korur (I). Dürüstlük kuralına uygun uygulamalar haksız rekabet oluşturmaz (II); haksız rekabetin tespiti için kusur şart olmayıp kusur tazminat bakımından önem taşır (III). Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/ticaret_hukuku/limited_sahis_sirketleri.json": {
-        "ltd-gen-0008": p(
-            "Limited şirketle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Esas sermayesi belirli ve paylara bölünmüştür\n\nII. Ortaklar şirket borçlarından kural olarak sınırsız ve müteselsilen sorumludur\n\nIII. Şirkete yalnızca gerçek kişiler ortak olabilir",
-            "B",
-            "Limited şirketin esas sermayesi belirli ve paylara bölünmüştür (I). Ortaklar şirket borçlarından kural olarak sınırsız sorumlu değildir (II) ve tüzel kişiler de limited şirkete ortak olabilir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "vh-kavram-gen-0011": p(
             "Vergi hukukunun temel kavramlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellef, kendisine vergi borcu düşen kişidir.\n\nII. Vergi, Bakanlık genelgesiyle konulup kaldırılabilir.\n\nIII. Vergi mükellefi olabilmek için tam fiil ehliyetine sahip olmak şarttır.",

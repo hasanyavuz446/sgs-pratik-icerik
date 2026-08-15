@@ -323,40 +323,6 @@ YAMALAR = {
             "Genellik verginin yalnızca zenginlerden, eşitlik ise yalnızca fakirlerden alınmasını öngörür; bu nedenle asgari geçim indirimi genellik ilkesinin, artan oranlı tarife ise eşitlik ilkesinin gereği sayılır"
         ]
     },
-    "ticaret_hukuku/limited_sahis_sirketleri.json": {
-        "0038|C": [
-            "ek",
-            "; ortakların yönetim yetkisi esas sözleşmeyle dahi kurulamaz"
-        ],
-        "0040|D": [
-            "ek",
-            "; alacaklılara karşı bir sorumluluğu da doğmaz"
-        ],
-        "0041|A": [
-            "ek",
-            "; komandite ortaklar aynı işi serbestçe yapabilir"
-        ],
-        "0044|C": [
-            "ek",
-            "; bu işlemler sınırlı sorumluluğunu etkilemez"
-        ],
-        "0047|A": [
-            "ek",
-            "; kollektif şirket ortağı koyduğu sermaye kadar sorumlu tutulur"
-        ],
-        "0048|B": [
-            "ek",
-            "; yönetici olmayan ortakların şirkete koydukları sermaye de korunur"
-        ],
-        "0049|D": [
-            "ek",
-            "; sermayenin iade edilmiş olması bu genişlemeyi engellemez"
-        ],
-        "0051|C": [
-            "ek",
-            "; bu nedenle esas sermaye payıyla sınırlı sorumluluk ilkesi ortadan kalkar"
-        ]
-    },
     "vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
         "0008|A": [
             "ek",

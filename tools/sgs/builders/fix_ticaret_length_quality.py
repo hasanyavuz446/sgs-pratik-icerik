@@ -54,43 +54,10 @@ CORRECT = {
         "hakrek-gen-0052": "Kişilik hakkı zedelenmişse haksız rekabet nedeniyle manevi tazminat istenebilir",
         "hakrek-gen-0059": "Hükümler, dürüst rekabeti etkileyen davranışlara katılan herkesi kapsar",
     },
-    "ticaret_hukuku/limited_sahis_sirketleri.json": {
-        "ltd-gen-0003": "Ortaklar şirket borcundan değil, yalnız taahhüt ettikleri sermaye payını ödemekten sorumludur",
-        "ltd-gen-0009": "Pay devri yazılı ve onaylı sözleşmeyle, kural olarak genel kurul onayıyla yapılır",
-        "ltd-gen-0011": "Esas sözleşme ortaklara para dışı yan edim yükümlülüğü getirebilir",
-        "ltd-gen-0013": "Bir pay birden çok kişiye aitse haklar şirkete karşı ortak temsilciyle kullanılır",
-        "ltd-gen-0014": "Pay, miras, mal rejimi veya cebri icrayla kanundaki özel hükümlere göre geçebilir",
-        "ltd-gen-0017": "Yönetim ve temsil müdürlere aittir; en az bir ortak bu yetkiyi taşımalıdır",
-        "ltd-gen-0019": "Müdürler şirkete bağlıdır ve genel kurul izni olmadan şirketle rekabet edemez",
-        "ltd-gen-0021": "Aksi yoksa genel kurul kararı temsil edilen oyların salt çoğunluğuyla alınır",
-        "ltd-gen-0022": "Müdürler özenle ve şirket menfaatini dürüstlükle gözeterek görev yapmalıdır",
-        "ltd-gen-0024": "Kollektif şirket gerçek kişilerce ticari işletme için kurulur; ortakların sorumluluğu sınırsızdır",
-        "ltd-gen-0027": "Alacaklı ortağın malvarlığına ancak alacağını şirketten alamazsa başvurabilir",
-        "ltd-gen-0029": "Aksi kararlaştırılmadıkça her ortak şirketi ayrı ayrı yönetebilir",
-        "ltd-gen-0030": "Ortak, izin olmadan şirket konusu işi kendi veya başkası hesabına yapamaz",
-        "ltd-gen-0031": "Pay devri ve yeni ortak kabulü kural olarak tüm ortakların onayını gerektirir",
-        "ltd-gen-0033": "Kâr ve zarar sözleşmeye, hüküm yoksa kanuni esasa göre paylaşılır",
-        "ltd-gen-0035": "Komandite sınırsız, komanditer koyduğu sermayeyle sınırlı sorumludur",
-        "ltd-gen-0037": "Komanditerin sorumluluğu koyduğu sermayeyle sınırlıdır; gerçek veya tüzel kişi olabilir",
-    },
 }
 
 
 DISTRACTORS = {
-    "ticaret_hukuku/limited_sahis_sirketleri.json": {
-        "ltd-gen-0005": {"B": "Yalnız gerçek kişiler ortak olabilir"},
-        "ltd-gen-0011": {"A": "Yan edim yükümlülüğü kararlaştırılamaz"},
-        "ltd-gen-0012": {"A": "Limited şirkette pay defteri tutulmaz"},
-        "ltd-gen-0017": {"A": "Yönetim ve temsil yalnız genel kurula aittir"},
-        "ltd-gen-0022": {"D": "Özen borcu ancak sözleşmeyle doğar"},
-        "ltd-gen-0025": {"A": "Tüzel kişiler de ortak olabilir"},
-        "ltd-gen-0026": {"A": "Ortakların sorumluluğu sermaye paylarıyla sınırlıdır"},
-        "ltd-gen-0029": {"B": "Yalnız sermayesi en yüksek ortak yönetebilir"},
-        "ltd-gen-0030": {"C": "Yasak yalnız yönetici ortağı bağlar"},
-        "ltd-gen-0033": {"A": "Kâr sadece yönetici ortağa aittir"},
-        "ltd-gen-0035": {"A": "Bütün ortaklar sınırlı sorumludur"},
-        "ltd-gen-0039": {"A": "Kişisel emek sermaye olarak konulabilir"},
-    },
 }
 
 

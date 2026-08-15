@@ -1,0 +1,889 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Limited ve Sahis Sirketleri — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+    olcut                gercek   once   sonra
+    medyan kok              257     91     244
+    olumsuz kok           %41,5     %0     %43
+    onculu                %14,3    %10     %12
+    kor ogrenci            <=%30    %22       —
+    boy (uzun/kisa)           —  20/18    14/6
+
+Mevcut paketin 60 kokunun neredeyse tamami '... bakimindan asagidakilerden
+hangisi dogrudur?' kalibiydi; tanim ezberi oluyordu. Konu uc sirket turunu
+birlikte olcuyor: limited (md. 573-644), kollektif (md. 211-303), adi ve
+sermayesi paylara bolunmus komandit (md. 304-328, 564-572), ayrica adi
+sirket (TBK md. 620 vd.). Ayirt edici noktalar: sorumlulugun niteligi
+(sinirli <-> sinirsiz <-> ikinci derecede), ortak olabilecek kisiler,
+yonetim ve temsil, rekabet yasagi, pay devri ve gecis, cikma-cikarma,
+kamu borclarindan sorumluluk (6183 sayili Kanun md. 35).
+
+UC BOY TURU gerekti: (1) ilk tasarim en-uzun 13/60 ile gecti ama olumsuz
+kok %5'te kaldi; (2) 23 soru 'hangisi yanlistir' kalibina cevrilince dogru
+sik (yanlis ifade) sistematik olarak EN KISA kaldi ve audit FATAL verdi
+(%38, 'en kisayi sec'); (3) 16 dogru sik gercek icerikle genisletilince bu
+kez en-uzun 28/60'a firladi. Cozum: dogru sik kisaltilmadan her soruda BIR
+celdiriciye gercek icerik eklendi. Onculu sorularda 'I ve II' her secici
+kumesinin en kisasi oldugundan dogru secici Yalniz III / II ve III /
+I ve III arasinda dagitildi.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: TTK md. 127, 133, 180-181, 211-303, 304-328, 355, 482-483, 553, 564-572, 573-644 · 6183 sayili Kanun md. 35 · TBK md. 620-645.
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/ticaret_hukuku/limited_sahis_sirketleri.json"
+STYLE_REF = "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)"
+ONEK = "ltd-gen-"
+
+
+def patch(stem, options, answer, solution):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": '6102 sayili Turk Ticaret Kanunu'},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 3
+    '0001': patch(
+        'Bir limited şirket, tek kurucu ortakla kurulmuş; kuruluş sırasında bir ortak sermaye olarak şirkete vereceği pazarlama hizmetini, bir diğeri ise üzerinde rehin bulunmayan bir taşınmazını koymak istemiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Üzerinde sınırlı ayni hak bulunmayan taşınmaz ayni sermaye olarak konulabilir',
+            'B': 'Ortak sayısı sonradan bire düşerse bu durum yönetici tarafından tescil ettirilir',
+            'C': 'Limited şirket tek ortakla kurulabilir ve bu durum tescil ile ilan edilir',
+            'D': 'Kişisel emek ve ticari itibar limited şirkete sermaye olarak konulabilir',
+            'E': 'Ayni sermayeye biçilen değer, mahkemece atanan bilirkişi raporuyla belirlenir',
+        },
+        'D',
+        'TTK md. 573 ve 581 uyarınca limited şirket tek ortakla kurulabilir; ancak hizmet edimi, kişisel emek ve ticari itibar sermaye olarak konulamaz. Bu yasak sermaye şirketlerinin malvarlığının alacaklılara karşı güvence oluşturmasından kaynaklanır.',
+    ),
+    # düzey 2
+    '0002': patch(
+        'Bir limited şirketin ortak sayısı, ardı ardına yapılan pay devirleri sonucunda kanunun izin verdiği üst sınırı aşmıştır. Müdür, durumun şirket üzerindeki etkisini değerlendirmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Limited şirkette ortak sayısı bakımından kanunda bir üst sınır öngörülmüştür',
+            'B': 'Sınırın aşılması hâlinde durumun kanuna uygun hâle getirilmesi gerekir',
+            'C': 'Şirket, ortak sayısını sınıra çekmek yerine tür değiştirme yoluna da gidebilir',
+            'D': 'Ortak sayısının üst sınırı aşması şirketin infisahı sonucunu kendiliğinden doğurur',
+            'E': 'Ortak sayısının bire düşmesi şirketi sona erdirmez, bu durum tescil ve ilan edilir',
+        },
+        'D',
+        'TTK md. 574 uyarınca ortak sayısı elliyi aşamaz; sınırın aşılması durumun kanuna uygun hâle getirilmesini gerektirir, kendiliğinden infisah sonucu doğurmaz.',
+    ),
+    # düzey 3
+    '0003': patch(
+        'Bir limited şirket vergi borcunu ödeyememiş, borç şirketin malvarlığından kısmen tahsil edilememiştir. Vergi dairesi kalan tutar için ortaklara başvurmuştur. Ortaklardan biri, sorumluluğunun yalnızca taahhüt ettiği sermaye payıyla sınırlı olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Ortak, tahsil edilemeyen kamu alacağından sermaye payı oranında doğrudan sorumludur',
+            'B': 'Kamu alacağı yalnızca şirket tüzel kişiliğinden istenebilir, takip başka kişiye yöneltilemez',
+            'C': 'Ortağın özel hukuktan doğan sorumluluk sınırı kamu alacakları bakımından da geçerlidir',
+            'D': 'Ortak, kamu alacağının tamamından diğer ortaklarla birlikte müteselsilen sorumludur',
+            'E': 'Kamu alacağından yalnızca kanuni temsilci sorumlu olur, ortaklara hiç başvurulamaz',
+        },
+        'A',
+        "6183 sayılı Kanun md. 35 uyarınca limited şirket ortakları, şirketten tamamen veya kısmen tahsil edilemeyen kamu alacağından sermaye hisseleri oranında doğrudan doğruya sorumludur. Bu, TTK md. 602'deki sınırlı sorumluluk kuralının kamu alacakları bakımından istisnasıdır.",
+    ),
+    # düzey 2
+    '0004': patch(
+        'Bir limited şirketin şirket sözleşmesinde ortakların, esas sermaye payı dışında belirli koşullarda şirkete ödeme yapmakla ve belirli bir malı teslim etmekle yükümlü olduğu öngörülmüştür. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Ek ödeme yükümlülüğü şirket sözleşmesiyle öngörülebilen bir yükümlülüktür',
+            'B': 'Bu yükümlülükleri öngören sözleşme değişikliği tüm ortakların onayını gerektirir',
+            'C': 'Bu yükümlülükler ancak şirketin iflasına karar verilmesinden sonra istenebilir',
+            'D': 'Yan edim yükümlülüğü de şirket sözleşmesiyle ortaklara yüklenebilir',
+            'E': 'Ek ödeme yükümlülüğü esas sermaye payına bağlı olarak belirlenir ve paya bağlı kalır',
+        },
+        'C',
+        'TTK md. 603, 606 ve 607 uyarınca ek ödeme ve yan edim yükümlülükleri şirket sözleşmesiyle öngörülür; muaccel olmaları iflasa bağlı değildir, sermaye kaybı ve benzeri hâllerde de istenir.',
+    ),
+    # düzey 2
+    '0005': patch(
+        'Bir limited şirkette ortaklardan biri, taahhüt ettiği esas sermaye payının kalan bölümünü çağrıya rağmen ödememiştir. Şirket, temerrüde düşen ortağa karşı hangi yola başvurabileceğini araştırmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Temerrüde düşen ortak, hiçbir işleme gerek olmaksızın ortaklıktan çıkmış sayılır',
+            'B': 'Şirket, temerrüt faizi isteme hakkını ortağa karşı kullanabilir',
+            'C': 'Şirket, ortağı esas sermaye payı bakımından ıskat edebileceği gibi tazminat da isteyebilir',
+            'D': 'Ortak, şirket sözleşmesinde öngörülmüşse sözleşme cezası ödemekle yükümlü olur',
+            'E': 'Iskat edilen ortağın yaptığı ödemeler kural olarak şirkete kalır ve iade edilmez',
+        },
+        'A',
+        'TTK md. 482-483 hükümleri limited şirkete de uygulanır; temerrüt kendiliğinden çıkma sonucu doğurmaz, şirketin ıskat kararı alması gerekir.',
+    ),
+    # düzey 2
+    '0006': patch(
+        'Bir limited şirketin kuruluş işlemleri tamamlanmış, şirket sözleşmesi imzalanmış ancak ticaret siciline tescil henüz yapılmamışken şirket adına üçüncü kişiyle sözleşme imzalanmıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Şirket, sözleşmenin imzalandığı anda tüzel kişilik kazanmış sayılır',
+            'B': 'Limited şirket ticaret siciline tescille tüzel kişilik kazanır',
+            'C': 'Tescilden sonra üç ay içinde şirketçe kabul edilen işlemler şirketi bağlar',
+            'D': 'Tescilden önce şirket adına işlem yapanlar bu işlemlerden kişisel olarak sorumlu olur',
+            'E': 'İşlemin şirketçe kabul edilmesiyle işlemi yapanların sorumluluğu sona erer',
+        },
+        'A',
+        'TTK md. 588 uyarınca tüzel kişilik tescille kazanılır; md. 355 uyarınca tescilden önce şirket adına işlem yapanlar kişisel ve müteselsilen sorumlu olur.',
+    ),
+    # düzey 3
+    '0007': patch(
+        'Bir limited şirket ortağı, esas sermaye payını şirket dışından bir kişiye devretmek üzere yazılı sözleşme yapmış, imzaları notere onaylatmıştır. Şirket sözleşmesinde devir konusunda özel bir hüküm yoktur. Genel kurul devri onaylamamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Devir, pay defterine kaydedildiği anda genel kurul kararına gerek kalmadan tamamlanır',
+            'B': 'Genel kurulun onayı yalnızca ortaklar arası devirlerde arandığından devir geçerli sayılır',
+            'C': 'Devir sözleşmesi yazılı yapılıp imzalar noterce onaylandığından devir, genel kurulun onayı aranmaksızın geçerli olur',
+            'D': 'Şirket sözleşmesinde aksi öngörülmediğinden devir genel kurulun onayına bağlıdır ve onay verilmediğinden hüküm doğurmaz',
+            'E': 'Genel kurul devri ancak haklı bir sebep göstererek reddedebileceğinden ret kararı geçersizdir',
+        },
+        'D',
+        'TTK md. 595 uyarınca esas sermaye payının devri yazılı şekle ve imzaların noterce onaylanmasına bağlıdır; şirket sözleşmesinde aksi öngörülmedikçe devir genel kurulun onayıyla geçerli olur ve genel kurul sebep göstermeksizin onayı reddedebilir.',
+    ),
+    # düzey 2
+    '0008': patch(
+        'Bir limited şirket ortağı esas sermaye payını devretmiş, devrin onaylanması için şirkete başvurmuş, genel kurul başvuru üzerine hiçbir karar almamıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Onaydan sonra devir, ortaklar listesine ve pay defterine işlenerek tescil ettirilir',
+            'B': 'Genel kurulun karar almaması devri kesin olarak hükümsüz kılar',
+            'C': 'Devrin geçerliliği kural olarak genel kurulun onayına bağlıdır',
+            'D': 'Başvurudan itibaren üç ay içinde reddedilmeyen devre onay verilmiş sayılır',
+            'E': 'Devir sözleşmesinin yazılı yapılması ve imzaların noterce onaylanması gerekir',
+        },
+        'B',
+        'TTK md. 595 uyarınca genel kurul başvurudan itibaren üç ay içinde reddetmezse onay verilmiş sayılır; sessiz kalma ret değil zımnî onay sonucu doğurur.',
+    ),
+    # düzey 3
+    '0009': patch(
+        'Bir limited şirket ortağının ölümü üzerine esas sermaye payı mirasçılarına geçmiştir. Şirket, mirasçıları ortak olarak kabul etmek istememektedir. Şirket sözleşmesinde bu konuda hüküm bulunmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Mirasçıların ortak sıfatı kazanması ancak genel kurulun oybirliğiyle onayına bağlıdır',
+            'B': 'Şirket, gerçek değeri önermeksizin ve süreye bağlı olmaksızın geçişi reddedebilir',
+            'C': 'Şirketin ret hakkı yalnızca icra yoluyla yapılan devirlerde kullanılabilir, mirasta kullanılamaz',
+            'D': 'Şirket, mirasçılara payların gerçek değerini önermek koşuluyla geçişi başvurudan itibaren üç ay içinde reddedebilir',
+            'E': 'Miras yoluyla geçişte şirkete tanınmış bir ret hakkı bulunmadığından mirasçılar payı edinmekle kendiliğinden ortak sıfatı kazanır',
+        },
+        'D',
+        'TTK md. 596 uyarınca miras, eşler arasındaki mal rejimi ve icra yoluyla geçişlerde şirket, payların gerçek değerini önererek geçişi başvurudan itibaren üç ay içinde reddedebilir.',
+    ),
+    # düzey 2
+    '0010': patch(
+        'Bir limited şirkette esas sermaye payı devredilmiş ve devralan pay defterine kaydedilmiştir. Devreden ortağın şirkete ödenmemiş sermaye borcu bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Devrin tescili ile devredenin sermaye borcuna ilişkin sorumluluğu tümüyle sona erer',
+            'B': 'Devralan, ödenmemiş sermaye borcundan şirkete karşı sorumlu olur',
+            'C': 'Ödenmemiş sermaye borcu bulunması payın devrine kanunen engel oluşturmaz',
+            'D': 'Devreden ortak, ödenmemiş sermaye borcundan belirli bir süre daha sorumlu kalır',
+            'E': 'Devreden ortağın sorumluluğu devrin tescilinden itibaren iki yılla sınırlıdır',
+        },
+        'A',
+        'TTK md. 596/4 uyarınca devreden ortağın ödenmemiş sermaye borcundan sorumluluğu devrin tescilinden itibaren iki yıl daha sürer; devir sorumluluğu kendiliğinden sona erdirmez.',
+    ),
+    # düzey 2
+    '0011': patch(
+        'Bir limited şirketin şirket sözleşmesinde, esas sermaye payının devrinin tümüyle yasaklandığı yazılıdır. Bir ortak bu hükmün geçersiz olduğunu, kanunun devri yalnızca onaya bağladığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Esas sermaye payının devri kanunen serbest bırakıldığından sözleşmeye konulan yasaklama hükmü kesin olarak geçersiz sayılır',
+            'B': 'Şirket sözleşmesiyle pay devri yasaklanabilir; bu hâlde ortağa haklı sebeple çıkma yolu açık kalır',
+            'C': 'Devir ancak genel kurulun onayına bağlanabilir, tümüyle yasaklanması mümkün değildir',
+            'D': 'Yasaklama hükmü yalnızca ortaklar arası devirler bakımından sonuç doğurabilir',
+            'E': 'Yasaklama hükmü geçerli olmakla birlikte ortağın çıkma hakkını da ortadan kaldırır',
+        },
+        'B',
+        'TTK md. 577 ve 595 uyarınca şirket sözleşmesiyle esas sermaye payının devri yasaklanabilir; bu durumda ortağa haklı sebeple çıkma yolu açık kalır.',
+    ),
+    # düzey 3
+    '0012': patch(
+        'Bir limited şirket genel kurulunda şirket merkezinin yurt dışına taşınması, şirket sözleşmesinin değiştirilmesi ve şirket işletme konusunun genişletilmesi görüşülecektir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Şirket sözleşmesinin değiştirilmesi kural olarak genel kurulun yetkisindedir',
+            'B': 'Merkezin yurt dışına taşınması tüm ortakların oybirliğini gerektiren bir karardır',
+            'C': 'Ağırlaştırılmış yeter sayı gerektiren kararlarda sermayenin salt çoğunluğu da aranır',
+            'D': 'İşletme konusunun değiştirilmesi ağırlaştırılmış yeter sayıya tabi bir karardır',
+            'E': 'Merkezin yurt dışına taşınması temsil edilen oyların salt çoğunluğuyla kararlaştırılır',
+        },
+        'E',
+        'TTK md. 621 uyarınca işletme konusunun değiştirilmesi ağırlaştırılmış yeter sayıya, merkezin yurt dışına taşınması ise tüm ortakların oybirliğine tabidir.',
+    ),
+    # düzey 2
+    '0013': patch(
+        'Bir limited şirket ortağı, oy hakkının ortak sayısına göre eşit dağıtılması gerektiğini, kendisinin payı küçük olsa da diğer ortaklarla aynı sayıda oy kullanması gerektiğini ileri sürmektedir. Şirket sözleşmesinde konuya ilişkin özel hüküm yoktur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Oy hakkının hesabında ödenmiş sermaye değil taahhüt edilen toplam sermaye esas alınır',
+            'B': 'Limited şirkette ortaklık kişisel unsura dayandığından her ortak, pay tutarına bakılmaksızın eşit sayıda oy hakkına sahiptir',
+            'C': 'Oy hakkı yalnızca genel kurulun her toplantı için ayrıca alacağı kararla belirlenebilir',
+            'D': 'Oy hakkı, ortağın şirkette geçirdiği süre esas alınarak müdürler tarafından belirlenir',
+            'E': 'Şirket sözleşmesinde özel hüküm bulunmadığından oy hakkı esas sermaye paylarının itibarî değerine göre hesaplanır',
+        },
+        'E',
+        'TTK md. 618 uyarınca ortakların oy hakkı esas sermaye paylarının itibarî değerine göre hesaplanır; şirket sözleşmesiyle oyda imtiyaz öngörülmesi ayrık bir düzenlemedir.',
+    ),
+    # düzey 3
+    '0014': patch(
+        'Bir limited şirkette müdür aynı zamanda ortaktır. Genel kurul gündeminde müdürlerin ibrası ile şirketin bir üçüncü kişiye karşı açacağı davanın görüşülmesi bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Müdür sıfatı taşıyan ortak, kendi ibrası oylamasında oyunu serbestçe kullanabilir',
+            'B': 'Ortakların oy hakkı esas sermaye paylarının itibarî değerine göre hesaplanır',
+            'C': 'İbra kararı, bilinen olgular bakımından şirketin dava hakkını sona erdirir',
+            'D': 'Müdür, ibrası dışındaki gündem maddelerinde ortak sıfatıyla oy kullanabilir',
+            'E': 'Şirket yönetiminde görevli ortaklar müdürlerin ibrası oylamasında oy kullanamaz',
+        },
+        'A',
+        'TTK md. 619 uyarınca şirket yönetiminde görevli ortaklar müdürlerin ibrasına ilişkin kararlarda oy kullanamaz; yasak yalnızca ibra oylamasıyla sınırlıdır.',
+    ),
+    # düzey 2
+    '0015': patch(
+        'Bir limited şirkette tüm ortaklar hazır bulunmuş ve itiraz edilmeksizin toplantı yapılmasına karar verilmiştir. Çağrı usulüne uyulmamıştır. Ortaklardan biri sonradan kararların geçersiz olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Tüm ortaklar hazır bulunup itiraz edilmediğinden çağrı usulüne uyulmaksızın toplanılıp karar alınabilir',
+            'B': 'Çağrı usulüne uyulmadığı için toplantıda alınan kararlar kesin olarak hükümsüz sayılır',
+            'C': 'Çağrısız toplantıda karar alınabilmesi için ayrıca müdürlerin yazılı onayı gerekir',
+            'D': 'Çağrısız toplantıda yalnızca gündem belirlenebilir, esasa ilişkin karar alınamaz',
+            'E': 'Çağrısız yapılan toplantıda alınan kararların geçerliliği, usulüne uygun çağrılacak yeni bir toplantıda onaylanmasına bağlıdır',
+        },
+        'A',
+        'TTK md. 617 yollamasıyla md. 416 uyarınca tüm ortakların hazır bulunduğu ve itiraz edilmediği toplantılarda çağrı usulüne uyulmaksızın karar alınabilir.',
+    ),
+    # düzey 3
+    '0016': patch(
+        'Bir limited şirkette müdürlük görevi şirket dışından atanan iki kişiye verilmiş, ortaklardan hiçbirine yönetim hakkı ve temsil yetkisi tanınmamıştır. Müdürlerden biri tüzel kişidir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Müdürler, ortakların onayı olmadıkça şirketle rekabet eden işlem yapamaz',
+            'B': 'Ortakların tamamının yönetimden dışlanması kanunen serbest bırakılmıştır',
+            'C': 'Ortaklardan en az birinin yönetim hakkı ve temsil yetkisi bulunması gerekir',
+            'D': 'Tüzel kişi müdür olarak atanabilir ve adına bir gerçek kişi belirlenerek tescil edilir',
+            'E': 'Şirket dışından üçüncü kişiler müdür olarak atanabilir',
+        },
+        'B',
+        'TTK md. 623 uyarınca müdürlerin dışarıdan atanması mümkündür; ancak en azından bir ortağın yönetim hakkının ve temsil yetkisinin bulunması gerekir.',
+    ),
+    # düzey 2
+    '0017': patch(
+        'Bir limited şirkette müdür, ortakların onayını almaksızın şirketin işletme konusuna giren bir işi kendi hesabına yapmıştır. Müdür, kendisinin ortak olmadığını, bu nedenle rekabet yasağının kendisine uygulanamayacağını savunmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Rekabet yasağı ortaklık sıfatına bağlı olduğundan, dışarıdan atanan müdür şirketle rekabet eden işi serbestçe yapabilir',
+            'B': 'Müdürün rekabet yasağına aykırılığı yalnızca görevden alma sebebi sayılır, başka sonuç doğurmaz',
+            'C': 'Rekabet yasağı müdürler bakımından ancak görevin sona ermesinden sonra işlerlik kazanır',
+            'D': 'Rekabet yasağının doğması için şirket sözleşmesinde açık hüküm bulunması gerekir',
+            'E': 'Rekabet yasağı müdür sıfatına bağlı olduğundan, ortak olmayan müdür de ortakların onayı olmadıkça bu işi yapamaz',
+        },
+        'E',
+        'TTK md. 626 uyarınca müdürler, ortakların onayı olmaksızın şirketle rekabet eden faaliyette bulunamaz; yasak müdür sıfatına bağlıdır, ortaklıktan bağımsızdır.',
+    ),
+    # düzey 2
+    '0018': patch(
+        'Bir limited şirkette müdürün şirkete ağır zarar veren işlemleri belirlenmiş, ortaklardan biri genel kurulu beklemeksizin harekete geçmek istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Müdürün kusurlu davranışı ayrıca sorumluluk davasına da konu edilebilir',
+            'B': 'Genel kurul, müdürü görevden alma yetkisini her zaman kullanabilir',
+            'C': 'Müdürün yönetim hakkı yalnızca genel kurul kararıyla kaldırılabilir',
+            'D': 'Her ortak, haklı sebeplerin varlığında mahkemeye başvurabilir',
+            'E': 'Mahkeme yönetim hakkını ve temsil yetkisini kaldırabileceği gibi sınırlandırabilir',
+        },
+        'C',
+        'TTK md. 630 uyarınca her ortak haklı sebeplerin varlığında yöneticinin yönetim hakkının ve temsil yetkisinin kaldırılmasını mahkemeden isteyebilir.',
+    ),
+    # düzey 3
+    '0019': patch(
+        'Bir limited şirkette müdürler, şirketin borca batık olduğundan kuşkulanmakta ancak ara bilanço düzenlemeyi ertelemektedir. Ortaklardan biri müdürlerin bu konuda bir yükümlülüğü bulunmadığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Borca batıklık bildirimi yalnızca anonim şirket yönetim kurulunun görevleri arasındadır',
+            'B': 'Müdürler ara bilanço düzenleyip borca batıklık hâlinde durumu mahkemeye bildirir',
+            'C': 'Ara bilanço düzenlenmesi yalnızca bağımsız denetime tabi şirketlerde gerekli görülmüştür',
+            'D': 'Borca batıklık hâlinde bildirim yükümlülüğü genel kurula ait olup müdürler sorumlu tutulamaz',
+            'E': 'Müdürlerin bildirim yükümlülüğü ancak alacaklıların yazılı talebiyle doğar',
+        },
+        'B',
+        'TTK md. 633 yollamasıyla md. 376 uyarınca sermaye kaybı ve borca batıklık hükümleri limited şirkete de uygulanır; müdürler ara bilanço düzenleyerek durumu mahkemeye bildirir.',
+    ),
+    # düzey 2
+    '0020': patch(
+        'Bir limited şirketin müdürü, kanundan doğan bir yükümlülüğü kusuruyla ihlal etmiş ve şirket alacaklısı bundan zarar görmüştür. Müdür, yalnızca şirkete karşı sorumlu olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Alacaklılar müdüre ancak şirketin iflasına karar verilmesinden sonra dava açabilir',
+            'B': 'Müdür, yükümlülüğünü kusuruyla ihlal ettiğinden şirkete, ortaklara ve şirket alacaklılarına karşı sorumlu olur',
+            'C': 'Müdürün sorumluluğu yalnızca şirket tüzel kişiliğine karşı doğar ve üçüncü kişiye yayılmaz',
+            'D': 'Müdürün üçüncü kişilere karşı sorumluluğu ağır kusur ölçütüne bağlandığından, ancak kasten hareket ettiği hâllerde doğar',
+            'E': 'Müdür, kusuru bulunsa dahi ancak genel kurul ibradan kaçınırsa sorumlu tutulabilir',
+        },
+        'B',
+        'TTK md. 644 yollamasıyla md. 553 uyarınca müdürler, kanundan ve şirket sözleşmesinden doğan yükümlülüklerini kusurlarıyla ihlal ederlerse şirkete, pay sahiplerine ve şirket alacaklılarına karşı verdikleri zarardan sorumlu olur.',
+    ),
+    # düzey 2
+    '0021': patch(
+        'Bir limited şirket ortağı, şirketin ticari defterlerini incelemek ve müdürlerden bilgi almak istemiş; müdürler talebi ortağın pay oranının düşüklüğü gerekçesiyle reddetmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Bilgi alma hakkı yalnızca sermayenin onda birini temsil eden ortaklara tanınmıştır',
+            'B': 'Bilgi alma talebi haksız yere reddedilirse ortak genel kurula, oradan mahkemeye başvurabilir',
+            'C': 'Ortağın pay oranı bilgi alma ve inceleme hakkının kullanılmasını etkilemez',
+            'D': 'Talep şirket sırlarını tehlikeye düşürecek nitelikteyse gerekçeyle reddedilebilir',
+            'E': 'Her ortak, şirketin işleri ve hesapları hakkında bilgi verilmesini isteyebilir',
+        },
+        'A',
+        'TTK md. 614 uyarınca bilgi alma ve inceleme hakkı her ortağa tanınmıştır; pay oranına bağlı bir eşik öngörülmemiştir.',
+    ),
+    # düzey 3
+    '0022': patch(
+        'Bir limited şirkette ortaklar arasındaki güven ilişkisi ağır biçimde zedelenmiş, bir ortak şirkette kalmasının kendisinden beklenemeyeceğini ileri sürerek şirketten ayrılmak istemiştir. Şirket sözleşmesinde çıkma hakkı düzenlenmemiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Şirket sözleşmesinde düzenlenmemişse ortağın çıkma hakkı bulunmadığı kabul edilir',
+            'B': 'Ortak, haklı sebeplerin varlığında mahkemeden çıkmasına karar verilmesini isteyebilir',
+            'C': 'Haklı sebep bulunsa dahi ortak, ancak şirketin feshini dava edebilir, çıkmayı isteyemez',
+            'D': 'Ortak yalnızca payını devrederek ayrılabilir, çıkma davası açma yolu kapalıdır',
+            'E': 'Çıkma hakkı ancak genel kurulun bu yönde alacağı bir kararla kullanılabilir hâle gelir',
+        },
+        'B',
+        'TTK md. 638/2 uyarınca her ortak haklı sebeplerin varlığında şirketten çıkmasına karar verilmesi için mahkemeye başvurabilir.',
+    ),
+    # düzey 2
+    '0023': patch(
+        'Bir limited şirket genel kurulu, şirket sözleşmesinde öngörülen bir sebebe dayanarak bir ortağın şirketten çıkarılmasına karar vermiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Çıkarılan ortağa esas sermaye payının gerçek değerine denk gelen ayrılma akçesi ödenir',
+            'B': 'Genel kurulun çıkarma kararı kesin olup yargısal denetime bağlı tutulamaz',
+            'C': 'Çıkarılan ortak karara karşı üç ay içinde iptal davası açabilir',
+            'D': 'Şirket ayrıca haklı sebeple ortağın çıkarılmasını mahkemeden de isteyebilir',
+            'E': 'Çıkarma sebebinin şirket sözleşmesinde öngörülmüş olması gerekir',
+        },
+        'B',
+        'TTK md. 640 uyarınca genel kurulun çıkarma kararına karşı üç ay içinde iptal davası açılabilir; karar yargısal denetim dışında tutulmuş değildir.',
+    ),
+    # düzey 3
+    '0024': patch(
+        'Bir limited şirkette ortaklardan biri, kişisel alacaklıları tarafından takip edilmekte ve alacaklılar payının paraya çevrilmesini istemektedir. Diğer ortaklar, limited şirkette payın haczedilemeyeceğini savunmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Esas sermaye payı kişiye sıkı biçimde bağlı olduğundan haciz konusu yapılamaz',
+            'B': 'Esas sermaye payının haczi mümkün olmakla birlikte paranın elde edilmesi için satış ancak şirketin tasfiyesinden sonra yapılabilir',
+            'C': 'Ortağın alacaklıları yalnızca kâr payına başvurabilir, esas sermaye payına el atamaz',
+            'D': 'Payın haczi için önce genel kurulun bu yönde onay vermiş olması gerekir',
+            'E': 'Esas sermaye payı haczedilip icra yoluyla paraya çevrilebilir; şirketin gerçek değeri önererek reddetme hakkı saklıdır',
+        },
+        'E',
+        'TTK md. 133 ve 596 uyarınca sermaye şirketlerinde ortağın esas sermaye payı haczedilip paraya çevrilebilir; icra yoluyla geçişte şirketin gerçek değeri önererek reddetme hakkı saklıdır.',
+    ),
+    # düzey 2
+    '0025': patch(
+        'Bir limited şirkette azınlıkta kalan ortaklar, şirketin sürdürülemez hâle geldiğini ileri sürerek sona erdirilmesini istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Çıkarmaya karar verilmesi hâlinde ortağa payının gerçek değeri ödenir',
+            'B': 'Fesih davası yalnızca sermayenin çoğunluğunu temsil eden ortaklarca açılabilir',
+            'C': 'Mahkeme fesih yerine davacı ortağın şirketten çıkarılmasına karar verebilir',
+            'D': 'Haklı sebeplerin varlığında her ortak şirketin feshini mahkemeden isteyebilir',
+            'E': 'Mahkeme duruma uygun düşen ve kabul edilebilir başka bir çözüme de hükmedebilir',
+        },
+        'B',
+        'TTK md. 636/3 uyarınca haklı sebeplerin varlığında her ortak fesih davası açabilir; davacı için pay oranı eşiği öngörülmemiştir.',
+    ),
+    # düzey 3
+    '0026': patch(
+        'Bir limited şirket ortağı haklı sebebe dayanarak fesih davası açmıştır. Mahkeme, şirketin faaliyetinin sürdürülebilir olduğunu, sorunun tek bir ortağın konumundan kaynaklandığını saptamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Mahkeme davayı ancak reddedebilir; ortağın çıkarılmasına yalnızca genel kurul karar verir',
+            'B': 'Mahkeme yalnızca şirketin yönetim yapısını değiştirmeye yönelik tedbir kararı verebilir',
+            'C': 'Fesih davasında hâkim, tarafların üzerinde anlaşması hâlinde başka çözüme hükmedebilir',
+            'D': 'Mahkeme, davacı ortağın payının gerçek değeri ödenerek çıkarılmasına karar verebilir',
+            'E': 'Haklı sebep saptandığında mahkemenin fesihten başka bir karar verme olanağı bulunmaz',
+        },
+        'D',
+        'TTK md. 636/3 uyarınca mahkeme, fesih yerine davacı ortağın payının gerçek değerinin ödenmesine ve ortağın şirketten çıkarılmasına ya da duruma uygun düşen başka bir çözüme karar verebilir.',
+    ),
+    # düzey 2
+    '0027': patch(
+        'Bir limited şirkette şirket sözleşmesi değiştirilerek ortakların yükümlülükleri artırılmış, bir ortak bu değişikliğe olumsuz oy vermiştir. Ortak, değişikliğin kendisine uygulanamayacağını ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Değişikliğin geçerliliği, ortağın itirazını üç ay içinde mahkemeye taşımamasına bağlıdır',
+            'B': 'Olumsuz oy veren ortak, değişikliğe katılmamakla birlikte şirketten çıkmış sayılır',
+            'C': 'Yükümlülük artıran değişiklikler yalnızca temsil edilen oyların üçte ikisiyle alınabilir',
+            'D': 'Sözleşme değişikliği çoğunlukla alındığından olumsuz oy veren ortağı da bağlar',
+            'E': 'Ortakların yükümlülüklerini artıran değişiklik tüm ortakların onayını gerektirir',
+        },
+        'E',
+        'TTK md. 607 uyarınca ortakların ek ödeme ve yan edim yükümlülüklerini öngören ya da artıran sözleşme değişiklikleri için tüm ortakların onayı gerekir.',
+    ),
+    # düzey 2
+    '0028': patch(
+        'Bir limited şirketin son yıllık bilançosuna göre sermaye ile kanuni yedek akçeler toplamının yarısının karşılıksız kaldığı saptanmıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Borca batıklık kuşkusu varsa müdürler ara bilanço düzenler',
+            'B': 'Müdürler genel kurulu hemen toplantıya çağırır',
+            'C': 'Müdürler genel kurula iyileştirici önlemleri sunar',
+            'D': 'Borca batıklığın saptanması hâlinde durum mahkemeye bildirilir',
+            'E': 'Sermaye kaybı hükümleri limited şirkete uygulanmadığından müdürlerin yükümlülüğü doğmaz',
+        },
+        'E',
+        'TTK md. 633 yollamasıyla md. 376 uyarınca sermaye kaybı ve borca batıklık hükümleri limited şirkette de uygulanır ve yükümlülük müdürlere aittir.',
+    ),
+    # düzey 3
+    '0029': patch(
+        'Üç kişi, bir ticari işletmeyi ortak bir unvan altında işletmek üzere şirket kurmak istemektedir. Ortaklardan biri bir anonim şirket tüzel kişiliğidir; taraflar hiçbir ortağın sorumluluğunu sınırlamamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Kollektif şirkete yalnızca gerçek kişiler ortak olabileceğinden tüzel kişi ortak olamaz',
+            'B': 'Tüzel kişinin ortak olabilmesi ancak sorumluluğunun sözleşmeyle sınırlanmasına bağlıdır',
+            'C': 'Tüzel kişinin ortaklığı geçerli olmakla birlikte şirketi adi şirkete dönüştürür',
+            'D': 'Tüzel kişi ortak olabilir, ancak yönetim hakkını yalnızca gerçek kişi ortaklar kullanır',
+            'E': 'Tüzel kişiler de kollektif şirkete ortak olabileceğinden kuruluşta bir engel bulunmaz',
+        },
+        'A',
+        'TTK md. 211 uyarınca kollektif şirket, ticari işletmeyi bir ticaret unvanı altında işletmek amacıyla gerçek kişiler arasında kurulur ve ortakların sorumluluğu sınırlandırılmamıştır.',
+    ),
+    # düzey 3
+    '0030': patch(
+        'Bir kollektif şirketin alacaklısı, alacağını doğrudan ortaklardan birinin kişisel malvarlığından tahsil etmek üzere takip başlatmış; şirket tüzel kişiliğine karşı hiçbir takip yapılmamıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Ortakların sorumluluğu birbirlerine karşı müteselsil niteliktedir',
+            'B': 'Ortakların sorumluluğu sınırsız olduğundan alacaklı doğrudan ortağa başvurabilir',
+            'C': 'Ortağa başvurulabilmesi için borcun şirketten tahsil edilememiş olması gerekir',
+            'D': 'Şirket hakkında aciz vesikası alınması hâlinde ortağa doğrudan başvurulabilir',
+            'E': 'Kollektif şirket ortaklarının sorumluluğu sınırsızdır',
+        },
+        'B',
+        'TTK md. 236-237 uyarınca ortakların sorumluluğu sınırsız ve müteselsil olmakla birlikte ikinci derecededir; şirkete başvurulmadan ortak takip edilemez.',
+    ),
+    # düzey 2
+    '0031': patch(
+        'Bir kollektif şirket ortağı, diğer ortaklardan izin almaksızın şirketin işletme konusuna giren bir işi kendi hesabına yapmış, ayrıca aynı türden iş yapan başka bir kollektif şirkete ortak olmuştur. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Ortağın şirkete girerken sürdürdüğü iş diğer ortaklarca biliniyorsa yasak uygulanmaz',
+            'B': 'Şirket, ortağın kendi adına yaptığı işlemleri şirket hesabına yapılmış sayabilir',
+            'C': 'Şirket, rekabet yasağını ihlal eden ortaktan doğan zararın giderilmesini isteyebilir',
+            'D': 'Ortak, diğer ortakların izni aranmaksızın kendi hesabına aynı türden iş yapabilir',
+            'E': 'Rekabet yasağının ihlali, ortağın şirketten çıkarılmasını istemek için haklı sebep sayılır',
+        },
+        'D',
+        'TTK md. 230 ve 231 uyarınca ortak, diğer ortakların izni olmaksızın şirketin işletme konusuna giren işleri kendi veya başkası hesabına yapamaz; şirketin seçimlik hakları doğar.',
+    ),
+    # düzey 2
+    '0032': patch(
+        'Bir kollektif şirketin şirket sözleşmesinde yönetime ilişkin hiçbir düzenleme bulunmamaktadır. Ortaklardan biri yönetim yetkisinin yalnızca kendisine ait olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Yönetim yetkisi verilen ortağın yetkisi haklı sebeple mahkemece kaldırılabilir',
+            'B': 'Sözleşmede düzenleme yoksa ortakların her biri ayrı ayrı yönetim hakkını haizdir',
+            'C': 'Yönetim hakkı, sermaye payı en yüksek olan ortağa kanunen tanınmıştır',
+            'D': 'Yönetim yetkisi ortakların çoğunluğunun kararıyla da belirlenebilir',
+            'E': 'Yönetim işleri şirket sözleşmesiyle belirli ortaklara bırakılabilir',
+        },
+        'C',
+        'TTK md. 218 uyarınca sözleşmeyle veya ortakların çoğunluğunun kararıyla yönetim belirli ortaklara bırakılmamışsa her ortak ayrı ayrı yönetim hakkını haizdir.',
+    ),
+    # düzey 3
+    '0033': patch(
+        'Bir kollektif şirket ortağının kişisel alacaklısı, alacağını tahsil edemeyince ortağın şirketteki hakkına başvurmak istemiştir. Alacaklı, doğrudan şirketin malvarlığına haciz koydurmayı talep etmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Kişisel alacaklının ortağın şirketteki hakkına başvurma yolu kapalı olup alacağını ancak şirketin feshini dava ederek tahsil edebilir',
+            'B': 'Kişisel alacaklı, diğer ortakların onayıyla ortağın yerine şirkete ortak olabilir',
+            'C': 'Kişisel alacaklının ortağın şirketteki hiçbir hakkına başvurma olanağı bulunmaz',
+            'D': 'Kişisel alacaklı ortağa düşen kâr payına ve tasfiye payına başvurabilir, şirket malvarlığına haciz koyduramaz',
+            'E': 'Ortağın kişisel alacaklısı şirketin malvarlığına doğrudan haciz koydurabilir',
+        },
+        'D',
+        'TTK md. 254 uyarınca ortağın kişisel alacaklısı, borçlu ortağa ait kâr payından ve tasfiye sonunda ona düşecek paydan alacağını alabilir; şirket malvarlığına başvuramaz.',
+    ),
+    # düzey 2
+    '0034': patch(
+        'İki kişi kollektif şirket kurmak üzere sözleşmeyi yazılı olarak düzenlemiş, ancak ticaret siciline tescil ettirmemiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Tescil edilmemiş kollektif şirket sözleşmesi ortaklar arasında da geçersiz sayılır',
+            'B': 'Sözleşmenin yazılı yapılması ve imzaların onaylanması kuruluşun şekil koşuludur',
+            'C': 'Tescil edilmeyen şirketin ortakları da yaptıkları işlemlerden kişisel olarak sorumlu olur',
+            'D': 'Tescilden önceki ilişki ortaklar arasında adi şirket hükümlerine tabidir',
+            'E': 'Kollektif şirket ticaret siciline tescille tüzel kişilik kazanır',
+        },
+        'A',
+        'TTK md. 212 uyarınca tescil edilmemiş kollektif şirket ortaklar arasında adi şirket olarak varlığını sürdürür; sözleşme taraflar arasında geçersiz sayılmaz.',
+    ),
+    # düzey 3
+    '0035': patch(
+        'Bir kollektif şirkete sonradan katılan ortak, katılmasından önce doğmuş şirket borçlarından sorumlu olmadığını ileri sürmektedir. Şirketten ayrılan bir başka ortak ise ayrılmasından sonra doğan borçlardan sorumlu tutulmak istememektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Ayrılan ortağın sorumluluğu ayrılma anında bütün borçlar bakımından kendiliğinden sona erer',
+            'B': 'Katılan ortak önceki borçlardan yalnızca sermaye payı oranında sorumlu tutulabilir',
+            'C': 'Katılan ve ayrılan ortakların sorumluluğu ancak alacaklının yazılı onayıyla belirlenir',
+            'D': 'Sonradan katılan ortak girmesinden önce doğmuş borçlardan da sorumlu olur; ayrılan ortağın sorumluluğu ise bir süre daha sürer',
+            'E': 'Sonradan katılan ortağın sorumluluğu katılma anından başladığından, bu tarihten önce doğmuş şirket borçlarından sorumlu tutulamaz',
+        },
+        'D',
+        'TTK md. 238 uyarınca şirkete sonradan giren ortak, girmesinden önce doğmuş borçlardan da diğer ortaklarla birlikte sorumludur; ayrılan ortağın sorumluluğu ise zamanaşımı süresiyle sınırlı olarak devam eder.',
+    ),
+    # düzey 2
+    '0036': patch(
+        'Bir kollektif şirkette ortaklardan birinin iflasına karar verilmiştir. Şirket sözleşmesinde konuya ilişkin hüküm bulunmamaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Ortağın ölümü de kural olarak sona erme sebepleri arasında sayılmıştır',
+            'B': 'Ortağın kişisel iflası şirket tüzel kişiliğini etkilemeyen kişisel bir olgudur',
+            'C': 'İflas eden ortağın payı tasfiye edilerek iflas masasına ödenir',
+            'D': 'Ortaklardan birinin iflası şirket için sona erme sebebi oluşturur',
+            'E': 'Diğer ortaklar şirketin devamını kararlaştırabilir',
+        },
+        'B',
+        'TTK md. 243 uyarınca ortaklardan birinin iflası kollektif şirket için sona erme sebeplerindendir; diğer ortaklar şirketin devamını kararlaştırabilir.',
+    ),
+    # düzey 3
+    '0037': patch(
+        'Bir kollektif şirkette ortaklar arasında sürekli anlaşmazlık çıkmakta, şirketin faaliyeti fiilen durmuş bulunmaktadır. Bir ortak sözleşmede öngörülen sürenin dolmasını beklemeden şirketin sona ermesini istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Ortağın tek yolu payını devretmek olup fesih davası açma hakkı bulunmamaktadır',
+            'B': 'Haklı sebeplerin varlığında ortak, şirketin feshini mahkemeden isteyebilir',
+            'C': 'Haklı sebep bulunsa dahi mahkeme yalnızca ortağın şirketten çıkarılmasına karar verebilir',
+            'D': 'Fesih ancak ortakların tamamının bu yönde karar almasıyla gerçekleşebilir',
+            'E': 'Belirli süreli kurulan şirket ancak sürenin dolmasıyla sona erebileceğinden dava dinlenmez',
+        },
+        'B',
+        'TTK md. 245 uyarınca haklı sebeplerin varlığında mahkeme, ortaklardan birinin talebiyle şirketin feshine karar verebilir; md. 255 uyarınca çıkarma da istenebilir.',
+    ),
+    # düzey 2
+    '0038': patch(
+        'Bir kollektif şirkette ortaklardan biri sermaye olarak kişisel emeğini koymayı taahhüt etmiştir. Diğer ortaklar bu taahhüdün geçersiz olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Kişisel emeğini sermaye olarak koyan ortak da kâr payına hak kazanır',
+            'B': 'Kollektif şirkete kişisel emek sermaye olarak konulabilir',
+            'C': 'Ticari itibar da şahıs şirketlerinde sermaye olarak kabul edilir',
+            'D': 'Kişisel emek ve ticari itibar hiçbir şirket türüne sermaye olarak konulamaz',
+            'E': 'Sermaye şirketlerine kişisel emek ve ticari itibar sermaye olarak konulamaz',
+        },
+        'D',
+        'TTK md. 127 uyarınca kişisel emek ve ticari itibar şirkete sermaye olarak konulabilir; yasak yalnızca sermaye şirketleri bakımından geçerlidir.',
+    ),
+    # düzey 2
+    '0039': patch(
+        'Bir kollektif şirkette ortaklardan biri, şirketin ticari defterlerini incelemek ve şirketin işleri hakkında bilgi almak istemiştir. Yönetici ortak, incelemenin yalnızca yıl sonunda yapılabileceğini söylemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Denetim hakkı yalnızca yönetim yetkisi verilmiş ortaklara tanınmış bir yetkidir',
+            'B': 'Denetim hakkı ancak ortakların çoğunluğunun bu yönde karar almasıyla kullanılabilir',
+            'C': 'Yönetim hakkı bulunmayan ortak da şirketin işlerini şahsen denetleyip defter ve belgeleri inceleyebilir',
+            'D': 'Ortağın şahsen denetim yetkisi bulunmayıp denetim yalnızca mahkemece atanacak bir bilirkişi aracılığıyla gerçekleştirilebilir',
+            'E': 'Ortağın denetim hakkını kullanabilmesi yıl sonu hesaplarının kapanmasına bağlıdır',
+        },
+        'C',
+        'TTK md. 225 uyarınca yönetim hakkını haiz olmayan ortak da şirketin işlerini şahsen denetleyebilir, defter ve belgeleri inceleyebilir.',
+    ),
+    # düzey 3
+    '0040': patch(
+        'Bir adi komandit şirkette komandite ortak olarak bir limited şirket tüzel kişiliği, komanditer ortak olarak ise bir gerçek kişi gösterilmiştir. Komanditer ortak sermaye olarak kişisel emeğini koymayı taahhüt etmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Her iki ortağın da tüzel kişi olması mümkün olup sermaye türünde bir sınırlama yoktur',
+            'B': 'Komandite ortak tüzel kişi olabilir, ancak komanditer ortağın gerçek kişi olması gerekir',
+            'C': 'Komandite ortak gerçek kişi olmalı, komanditer ortak emeğini sermaye olarak koyamaz',
+            'D': 'Komandite ortağın tüzel kişi olması ve komanditerin emeğini koyması kanunen serbesttir',
+            'E': 'Komanditer ortak emeğini koyabilir, ancak komandite ortağın nakit sermaye koyması gerekir',
+        },
+        'C',
+        'TTK md. 304 ve 307 uyarınca komandite ortakların gerçek kişi olması gerekir; komanditer ortak ise gerçek veya tüzel kişi olabilir, ancak kişisel emek ve ticari itibarını sermaye olarak koyamaz.',
+    ),
+    # düzey 3
+    '0041': patch(
+        'Bir adi komandit şirkette komanditer ortak, sermaye koyduğu gerekçesiyle şirketin günlük işlerini yürütmek ve üçüncü kişilerle sözleşme imzalamak istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Komanditer ortak yıl sonunda bilanço ve gelir tablosunu inceleyebilir',
+            'B': 'Önemli sebeplerin varlığında mahkeme defterlerin incelenmesine izin verebilir',
+            'C': 'Şirketin yönetimi ve temsili komandite ortaklara aittir',
+            'D': 'Komanditer ortak sermaye koyduğundan yönetim ve temsil yetkisini kullanabilir',
+            'E': 'Komanditer ortak şirketin işleri hakkında bilgi alabilir',
+        },
+        'D',
+        'TTK md. 309 ve 310 uyarınca komanditer ortak yönetim işlerini göremez ve şirketi temsil edemez; denetim ve bilgi alma hakları saklıdır.',
+    ),
+    # düzey 3
+    '0042': patch(
+        'Bir adi komandit şirketin ticaret unvanına, komanditer ortağın adının konulmasına bu ortak izin vermiştir. Şirket borçlarını ödeyemeyince alacaklılar bu ortağa da başvurmuştur. Ortak sorumluluğunun sermaye payıyla sınırlı olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Unvanda ad bulunması sorumluluğu genişletmekle birlikte yalnızca kamu alacakları için sonuç doğurur',
+            'B': 'Komanditer ortak bu durumda dahi yalnızca koyduğu sermaye tutarıyla sorumlu tutulur',
+            'C': 'Adının unvanda yer almasına izin veren komanditer ortak komandite gibi sorumlu olur',
+            'D': 'Komanditer ortağın sorumluluğu kanunen sınırlı olduğundan unvandaki adın etkisi bulunmaz',
+            'E': 'Unvanda ad bulunması yalnızca ticaret sicili bakımından bir düzeltme sebebi sayılır',
+        },
+        'C',
+        'TTK md. 311 uyarınca adının şirket unvanında yer almasına izin veren komanditer ortak, üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
+    ),
+    # düzey 2
+    '0043': patch(
+        'Bir adi komandit şirkette komanditer ortak, şirketin işletme konusuna giren bir işi kendi hesabına yapmaya başlamıştır. Komandite ortaklar bunun rekabet yasağına aykırı olduğunu ileri sürmektedir. Şirket sözleşmesinde konuya ilişkin hüküm yoktur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Komanditer ortağın rekabet yasağına aykırılığı yalnızca kâr payından yoksun bırakılmasını gerektirir',
+            'B': 'Rekabet yasağı komandite ve komanditer ayrımı gözetilmeksizin bütün ortakları kapsadığından bu davranış yasağa aykırıdır',
+            'C': 'Şirket sözleşmesinde aksi öngörülmediğinden komanditer ortak rekabet yasağına tabi olmayıp bu işi yapabilir',
+            'D': 'Rekabet yasağı komanditer ortak bakımından ancak şirket sona erdikten sonra uygulanır',
+            'E': 'Komanditer ortak rekabet yasağına tabi olup aykırılık şirketin feshini gerektiren bir sebeptir',
+        },
+        'C',
+        'TTK md. 313 uyarınca şirket sözleşmesinde aksi öngörülmedikçe komanditer ortak rekabet yasağına tabi değildir; yasak komandite ortaklar bakımından uygulanır.',
+    ),
+    # düzey 2
+    '0044': patch(
+        'Sermayesi paylara bölünmüş bir komandit şirketin yöneticileri, şirkete uygulanacak hükümleri araştırmaktadır. Şirkette hem komandite hem komanditer ortaklar bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Şirketin sermayesi paylara bölünmüş olup pay senedi çıkarılabilir',
+            'B': 'Şirkete kural olarak limited şirkete ilişkin hükümler uygulanır',
+            'C': 'Komandite ortakların sorumluluğu sınırsız, komanditerlerinki sermaye payıyla sınırlıdır',
+            'D': 'Şirkete kural olarak anonim şirkete ilişkin hükümler uygulanır',
+            'E': 'Komandite ortakların durumu bakımından kollektif şirket hükümleri saklıdır',
+        },
+        'B',
+        'TTK md. 565 uyarınca sermayesi paylara bölünmüş komandit şirkete, komandite ortakların durumuna ilişkin kollektif şirket hükümleri saklı kalmak üzere anonim şirket hükümleri uygulanır.',
+    ),
+    # düzey 3
+    '0045': patch(
+        'Bir adi komandit şirkette komanditer ortak, taahhüt ettiği sermayeyi henüz tamamen ödememiştir. Şirket alacaklıları, borcun şirketten tahsil edilemediğini belirterek bu ortağa başvurmuştur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Komanditer ortağın sorumluluğu ödediği sermaye tutarı kadar olup kalan taahhüt dikkate alınmaz',
+            'B': 'Komanditer ortağın sorumluluğu ancak şirketin iflasına karar verilmesiyle doğabilir',
+            'C': 'Komanditer ortağın sorumluluğu taahhüt ettiği sermaye ile sınırlı olup ödenmemiş kısım oranında sürmektedir',
+            'D': 'Komanditer ortağa başvurulamaz; şirket borçlarından yalnızca komandite ortaklar sorumludur',
+            'E': 'Komanditer ortak da şirket alacaklılarına karşı, sermayesini ödemiş olup olmadığına bakılmaksızın borçların tamamından sorumludur',
+        },
+        'C',
+        'TTK md. 304 uyarınca komanditer ortağın sorumluluğu koymayı taahhüt ettiği sermaye ile sınırlıdır; ödenmemiş kısım oranında alacaklılara karşı sorumluluğu sürer.',
+    ),
+    # düzey 2
+    '0046': patch(
+        'Bir adi komandit şirkette komandite ortaklardan biri ölmüş, şirket sözleşmesinde şirketin devamına ilişkin hüküm bulunmamaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Komandite ortağın ölümü şirketin işleyişini etkilemeyen kişisel bir olgudur',
+            'B': 'Kalan ortaklar mirasçılarla birlikte şirketin devamını kararlaştırabilir',
+            'C': 'Komanditer ortağın ölümü kural olarak şirketi sona erdirmez',
+            'D': 'Komandite ortağın ölümü şirket için sona erme sebebi oluşturur',
+            'E': 'Sona erme hâlinde şirket tasfiye sürecine girer ve unvanına ilgili ibare eklenir',
+        },
+        'A',
+        'TTK md. 328 yollamasıyla md. 243 uyarınca komandite ortağın ölümü sona erme sebebidir; komanditer ortağın ölümü ise şirketi kural olarak sona erdirmez.',
+    ),
+    # düzey 2
+    '0047': patch(
+        'Bir adi komandit şirkette komanditer ortak, komandite ortakların yönetimde ağır kusur işlediğini ileri sürerek şirketin ticari defterlerinin incelenmesini istemektedir. Komandite ortaklar bu talebi reddetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'İnceleme talebi ancak komandite ortakların çoğunluğunun onayıyla kabul edilebilir',
+            'B': 'Komanditer ortak yönetim yetkisi taşımadığından defterleri inceleme yönünde herhangi bir talep hakkına da sahip değildir',
+            'C': 'Komanditer ortak yıl sonu tablolarını inceleyebilir; önemli sebep varsa mahkeme defterlerin incelenmesine izin verebilir',
+            'D': 'Komanditer ortak inceleme hakkını yalnızca yıl sonu bilançosunun onayı sırasında kullanır',
+            'E': 'Komanditer ortak defterleri her zaman ve izne bağlı olmaksızın serbestçe inceleyebilir',
+        },
+        'C',
+        'TTK md. 310 uyarınca komanditer ortak yıl sonunda bilanço ve gelir tablosunu inceleyebilir; önemli sebeplerin varlığında mahkeme, defterlerin ve belgelerin incelenmesine izin verebilir.',
+    ),
+    # düzey 3
+    '0048': patch(
+        'Bir adi komandit şirkette komanditer ortak, komandite ortağın verdiği açık yetkiye dayanarak bir işlemde şirketi temsil etmiş ve bu sıfatı üçüncü kişiye bildirmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Komanditer ortak temsil yetkisini kullanamayacağından işlem yalnızca kendisini bağlar',
+            'B': 'İşlem yetkiye dayandığından geçersiz sayılır ve üçüncü kişi şirkete başvuramaz',
+            'C': 'İşlemden doğan sorumluluk yalnızca yetkiyi veren komandite ortağa yüklenir',
+            'D': 'Komanditer ortağın yetkiye dayanarak işlem yapması sorumluluğunu genişletmeyen bir davranıştır',
+            'E': 'Komanditer ortak, temsilci sıfatıyla yaptığı bu işlemden sınırsız sorumlu olur',
+        },
+        'E',
+        'TTK md. 312 uyarınca komanditer ortak, ticari mümessil veya vekil sıfatıyla değil de şirket adına işlem yaparsa üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
+    ),
+    # düzey 3
+    '0049': patch(
+        'İki kişi belirli bir inşaat işini birlikte yürütmek üzere yazılı sözleşme yapmış, kazanç ve zararı paylaşmayı kararlaştırmış; ticaret siciline hiçbir başvuru yapmamıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Adi şirketin tüzel kişiliği bulunmamaktadır',
+            'B': 'Adi şirket sözleşmesi kural olarak herhangi bir şekle bağlı değildir',
+            'C': 'Ortaklar üçüncü kişilere karşı müteselsilen sorumlu olur',
+            'D': 'Şirkete ait haklar ortaklara elbirliğiyle mülkiyet esasına göre aittir',
+            'E': 'Adi şirket, sözleşmenin yazılı yapılmasıyla tüzel kişilik kazanmış olur',
+        },
+        'E',
+        'TBK md. 620 vd. uyarınca adi şirketin tüzel kişiliği yoktur; sözleşme şekle bağlı olmayıp yazılı yapılması tüzel kişilik doğurmaz.',
+    ),
+    # düzey 3
+    '0050': patch(
+        'Bir adi şirket ortağı, şirketin borcundan dolayı alacaklının kendisine başvuramayacağını, önce diğer ortağın takip edilmesi gerektiğini ileri sürmektedir. Sözleşmede sorumluluğa ilişkin özel bir düzenleme yoktur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Aksi kararlaştırılmadığından ortaklar üçüncü kişilere karşı müteselsilen sorumlu olup alacaklı dilediğine başvurabilir',
+            'B': 'Ortakların sorumluluğu payları oranında bölünmüş olup birinden tamamı istenemez',
+            'C': 'Ortaklardan hangisinin sorumlu olacağı her olayda mahkemece ayrıca belirlenir',
+            'D': 'Adi şirkette de ikinci derecede sorumluluk kuralı geçerli olduğundan, ortağa başvurulmadan önce şirket malvarlığının tüketilmesi gerekir',
+            'E': 'Ortağın sorumluluğu koyduğu sermaye tutarıyla sınırlı olup aşan kısım istenemez',
+        },
+        'A',
+        'TBK md. 638/3 uyarınca ortaklar, üçüncü kişilere karşı birlikte üstlendikleri borçlardan aksi kararlaştırılmadıkça müteselsilen sorumludur; ikinci derecede sorumluluk kuralı adi şirkette uygulanmaz.',
+    ),
+    # düzey 2
+    '0051': patch(
+        'Bir yatırımcı, kuracağı işletmede sorumluluğunun koyduğu sermaye ile sınırlı kalmasını, ancak şirketin yönetiminde de söz sahibi olmasını istemektedir. Ayrıca ortak sayısının az kalmasını ve payların kolayca el değiştirmemesini arzu etmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Adi şirket, tüzel kişiliği bulunması yönüyle bu beklentileri karşılayan bir yapıdır',
+            'B': 'Anonim şirkette pay devri kural olarak şirketin onayına bağlı olduğundan payların el değiştirmesi güçleşir ve tür daha uygundur',
+            'C': 'Adi komandit şirkette komanditer sıfatı hem sınırlı sorumluluk hem de yönetim yetkisi verir',
+            'D': 'Kollektif şirket, sorumluluğu sermaye ile sınırlı tutması yönüyle bu beklentiye uygundur',
+            'E': 'Limited şirkette sorumluluk sermaye payıyla sınırlıdır, ortak müdür olarak yönetime katılabilir ve devir onaya bağlıdır',
+        },
+        'E',
+        'Limited şirkette ortakların sorumluluğu sermaye payıyla sınırlıdır, ortaklar müdür olarak yönetime katılabilir ve pay devri kural olarak genel kurulun onayına bağlıdır.',
+    ),
+    # düzey 2
+    '0052': patch(
+        'Limited şirket ile kollektif şirket arasındaki ayrımlar hakkında aşağıdaki ifadeler ileri sürülmüştür: I. Kollektif şirkete yalnızca gerçek kişiler ortak olabilir. II. Limited şirket ortağı şirket borçlarından kişisel malvarlığıyla sınırsız sorumludur. III. Kollektif şirket ortağının sorumluluğu ikinci derecededir. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'I, II ve III',
+            'B': 'I ve II',
+            'C': 'I ve III',
+            'D': 'II ve III',
+            'E': 'Yalnız II',
+        },
+        'C',
+        'TTK md. 211 uyarınca kollektif şirkete yalnızca gerçek kişiler ortak olabilir ve md. 237 uyarınca ortakların sorumluluğu ikinci derecededir. Limited şirket ortağı ise md. 602 uyarınca şirket borçlarından sorumlu değildir; II yanlıştır.',
+    ),
+    # düzey 2
+    '0053': patch(
+        'Adi komandit şirkete ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Komanditer ortak şirketin yönetim işlerini görebilir. II. Komandite ortakların gerçek kişi olması gerekir. III. Komanditer ortak, ticaret unvanında adının bulunmasına izin verirse sorumluluğu genişler. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'Yalnız I',
+            'B': 'I ve II',
+            'C': 'Yalnız III',
+            'D': 'II ve III',
+            'E': 'I, II ve III',
+        },
+        'D',
+        'TTK md. 304 ve 311 uyarınca II ve III doğrudur; md. 309 uyarınca şirketin yönetimi komandite ortaklara ait olduğundan I yanlıştır.',
+    ),
+    # düzey 3
+    '0054': patch(
+        'Limited şirkette esas sermaye payının devrine ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Devir sözleşmesinin adi yazılı yapılması geçerlilik için yeterlidir. II. Şirket sözleşmesinde aksi öngörülmedikçe devir genel kurulun onayına bağlıdır. III. Genel kurul, sebep göstermeksizin onayı reddedebilir. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'I ve II',
+            'B': 'I, II ve III',
+            'C': 'II ve III',
+            'D': 'Yalnız I',
+            'E': 'Yalnız III',
+        },
+        'E',
+        "TTK md. 595 uyarınca devir sözleşmesinde imzaların noterce onaylanması da gerektiğinden I yanlıştır. Devir kural olarak genel kurulun onayına bağlıdır ve genel kurul sebep göstermeksizin reddedebilir; ancak II'de yer alan kural şirket sözleşmesiyle kaldırılabildiği hâlde bu şirkette devir yasaklanmış olduğundan yalnız III doğrudur.",
+    ),
+    # düzey 3
+    '0055': patch(
+        'Limited şirket müdürlerine ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Müdürlerin tamamı şirket dışından atanabilir. II. Tüzel kişi müdür olarak atanabilir. III. Müdür, ortakların onayı olmadıkça şirketle rekabet edemez. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'II ve III',
+            'B': 'I ve II',
+            'C': 'Yalnız I',
+            'D': 'Yalnız II',
+            'E': 'I, II ve III',
+        },
+        'A',
+        'TTK md. 623 ve 626 uyarınca tüzel kişi müdür olabilir ve müdür rekabet yasağına tabidir; ancak en azından bir ortağın yönetim hakkı ve temsil yetkisi bulunması gerektiğinden I yanlıştır.',
+    ),
+    # düzey 2
+    '0056': patch(
+        'Kollektif şirket ortağının sorumluluğuna ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Ortağın sorumluluğu şirkete koyduğu sermaye ile sınırlıdır. II. Ortakların sorumluluğu müteselsildir. III. Şirkete sonradan giren ortak, girmesinden önce doğmuş borçlardan da sorumludur. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'I, II ve III',
+            'B': 'II ve III',
+            'C': 'I ve II',
+            'D': 'Yalnız I',
+            'E': 'I ve III',
+        },
+        'B',
+        'TTK md. 236 ve 238 uyarınca II ve III doğrudur; ortakların sorumluluğu sınırsız olduğundan I yanlıştır.',
+    ),
+    # düzey 3
+    '0057': patch(
+        'Limited şirkette ortaklıktan ayrılmaya ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Ortak, ancak şirket sözleşmesinde öngörülmüşse şirketten ayrılabilir. II. Şirket sözleşmesinde öngörülen sebeple genel kurul kararıyla ortak çıkarılabilir. III. Çıkarılan ortak karara karşı üç ay içinde iptal davası açabilir. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'I, II ve III',
+            'B': 'Yalnız II',
+            'C': 'II ve III',
+            'D': 'I ve II',
+            'E': 'Yalnız I',
+        },
+        'C',
+        'TTK md. 638 ve 640 uyarınca II ve III doğrudur; ortak haklı sebeplerin varlığında sözleşmede hüküm bulunmasa da çıkma davası açabileceğinden I yanlıştır.',
+    ),
+    # düzey 2
+    '0058': patch(
+        'Şahıs şirketlerinde sermaye olarak konulabilecek değerlere ilişkin olarak aşağıdaki ifadeler ileri sürülmüştür: I. Kollektif şirkete kişisel emek sermaye olarak konulabilir. II. Komanditer ortak kişisel emeğini sermaye olarak koyabilir. III. Limited şirkete ticari itibar sermaye olarak konulamaz. Buna göre bu ifadelerden hangileri doğrudur?',
+        {
+            'A': 'Yalnız II',
+            'B': 'I, II ve III',
+            'C': 'I ve III',
+            'D': 'I ve II',
+            'E': 'II ve III',
+        },
+        'C',
+        'TTK md. 127, 307 ve 581 uyarınca kollektif şirkete kişisel emek konulabilir ve limited şirkete ticari itibar konulamaz; komanditer ortak ise kişisel emeğini sermaye olarak koyamayacağından II yanlıştır.',
+    ),
+    # düzey 2
+    '0059': patch(
+        'Bir limited şirket, genel kurul kararıyla tür değiştirerek anonim şirkete dönüşmek istemektedir. Ortaklardan biri işlemin sonuçlarını değerlendirmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Tür değiştirmede şirketin hak ve borçları yeni türe geçer',
+            'B': 'Tür değiştirmede şirketin tüzel kişiliği devam eder',
+            'C': 'Limited şirketin anonim şirkete dönüşmesi kanunen mümkündür',
+            'D': 'Tür değiştiren şirket tasfiye edilir ve yerine yeni bir tüzel kişilik kurulur',
+            'E': 'Ortakların şirketteki payları ve hakları tür değiştirmede korunur',
+        },
+        'D',
+        'TTK md. 180-181 uyarınca tür değiştirmede tüzel kişilik devam eder, tasfiye yapılmaz ve ortakların payları korunur.',
+    ),
+    # düzey 3
+    '0060': patch(
+        'Bir limited şirket, kâr elde etmiş olmasına karşın genel kurul kararıyla kâr payı dağıtmamış, tutarın tamamını yedek akçeye ayırmıştır. Bir ortak kâr payı hakkının ihlal edildiğini ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Kâr payı dağıtılmamasına karar verilmesi ancak şirketin feshini istemeye olanak verir',
+            'B': 'Kâr payı dağıtımı genel kurulun serbest takdirinde olup karara karşı dava açılamaz',
+            'C': 'Ortak, dağıtılmayan kâr payını doğrudan icra takibiyle şirketten talep edebilir',
+            'D': 'Ortağın tek yolu payını devretmek olup kâr payına ilişkin bir talep hakkı doğmaz',
+            'E': 'Ortak, kâr payı hakkını ihlal eden genel kurul kararının iptalini dava edebilir',
+        },
+        'E',
+        'TTK md. 622 yollamasıyla md. 445 uyarınca kanuna, şirket sözleşmesine veya dürüstlük kuralına aykırı genel kurul kararlarına karşı üç ay içinde iptal davası açılabilir.',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Limited ve Sahis Sirketleri' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

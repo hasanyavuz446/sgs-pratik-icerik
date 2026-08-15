@@ -442,6 +442,31 @@ Doğrusu **dağılımdır**: doğru şık bazen en uzun, bazen en kısa, çoğun
 yanlış iddianın kendi sonucunu yazdır ("…kaydedilir **ve varlık 455.000 ₺'ye
 indirilir**"). Mekanik kısaltma boyu düzeltir, bilgiyi götürür.
 
+#### 🔴 "Hangisi yanlıştır" kalıbı doğru şıkkı EN KISA yapar
+
+Hukuk turunda §1 için olumsuz kök oranı yükseltilirken tuzağın **ters ucu** açıldı:
+"hangisi yanlıştır" sorusunda doğru şık *yanlış* ifadedir; yanlış ifade tek cümlelik
+bir iddia, dört çeldirici ise gerekçeli doğru kurallardır. Sonuç sistematik olarak
+"en kısayı seç". `limited_sahis_sirketleri`'nde 23 soru olumsuz köke çevrilince
+en-kısa **25/60** oldu ve audit FATAL verdi (kör %38).
+
+Bu yüzden tasarım modülünde **iki yön birlikte** ölçülür:
+
+```python
+uzun = [q for q, f in P.items() if len(f["correct"]) >= max(len(x) for x in f["distractors"])]
+kisa = [q for q, f in P.items() if len(f["correct"]) <= min(len(x) for x in f["distractors"])]
+```
+
+⚠️ **Düzeltirken tek yöne yüklenme.** Aynı pakette 16 doğru şık genişletilince
+en-kısa 25→6 indi ama en-uzun 13→**28**'e fırladı; bir FATAL'ı diğeriyle
+değiştirmiş olduk. İşe yarayan çözüm: doğru şık genişletildikten sonra **her
+soruda BİR çeldiriciye** gerçek içerik eklemek → 14 uzun / 6 kısa, kör %23.
+
+⚠️ **Öncüllü sorularda seçicinin kendisi boy tell'idir.** `"I ve II"` (7 karakter)
+her seçici kümesinin en kısasıdır; doğru seçici hep o olursa aday soruyu okumadan
+en kısa seçiciyi işaretler. Doğru seçiciyi `Yalnız III` (10), `II ve III` (9) ve
+`I ve III` (8) arasında dağıt; `I, II ve III` (12) ise kümenin en uzunudur.
+
 ### 🔴 Yasak: mutlak dil (eleme ipucu)
 
 Yanlış bir iddiayı "her hâlde / hiçbir biçimde / …mak zorundadır" diye yazmak doğal bir
