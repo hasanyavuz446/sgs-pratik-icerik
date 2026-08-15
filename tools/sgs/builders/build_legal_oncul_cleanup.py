@@ -80,13 +80,6 @@ PATCHES = {
             "Haksız rekabet hükümleri dürüst ve bozulmamış rekabeti korur (I). Dürüstlük kuralına uygun uygulamalar haksız rekabet oluşturmaz (II); haksız rekabetin tespiti için kusur şart olmayıp kusur tazminat bakımından önem taşır (III). Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/ticaret_hukuku/anonim_sirket.json": {
-        "as-gen-0005": p(
-            "Anonim şirketle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sermayesi belirli ve paylara bölünmüştür\n\nII. Bir şahıs şirketidir\n\nIII. Pay sahipleri şirket borçlarından şahsi malvarlıklarıyla sınırsız sorumludur",
-            "C",
-            "Anonim şirketin sermayesi belirli ve paylara bölünmüştür (I). Anonim şirket bir sermaye şirketidir, şahıs şirketi değildir (II). Pay sahipleri şirket borçlarından şahsen sınırsız sorumlu değildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/ticaret_hukuku/limited_sahis_sirketleri.json": {
         "ltd-gen-0008": p(
             "Limited şirketle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Esas sermayesi belirli ve paylara bölünmüştür\n\nII. Ortaklar şirket borçlarından kural olarak sınırsız ve müteselsilen sorumludur\n\nIII. Şirkete yalnızca gerçek kişiler ortak olabilir",

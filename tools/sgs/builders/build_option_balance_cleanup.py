@@ -93,14 +93,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Haksız rekabet davalarında görevli mahkeme yoktur; uyuşmazlık yalnızca idari makamların kararıyla çözülür"
         },
     },
-    "content/ticaret_hukuku/anonim_sirket.json": {
-        "as-gen-0033": {
-            "E": "Anonim şirketin sona ermesine yalnızca mahkeme karar verebilir; kanunda başka hiçbir sona erme sebebi yoktur"
-        },
-        "as-gen-0053": {
-            "B": "Yönetim kurulu üyesinin şirketle işlem yapması kesin olarak yasaktır; genel kurul izniyle dahi istisnası yoktur"
-        },
-    },
     "content/vergi_hukuku/vergilendirme_sureci.json": {
         "vh-surec-gen-0020": {"E": "Gecikme zammı yalnızca vergi cezalarına uygulanır"},
         "vh-surec-gen-0041": {"E": "Takdir komisyonunun matrah takdiriyle ilgisi yoktur"},
