@@ -101,14 +101,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "B": "Yönetim kurulu üyesinin şirketle işlem yapması kesin olarak yasaktır; genel kurul izniyle dahi istisnası yoktur"
         },
     },
-    "content/ticaret_hukuku/kambiyo_senetleri.json": {
-        "kmb-gen-0017": {
-            "A": "Görüldüğünde ödenecek poliçe, düzenlenme tarihinden itibaren yalnızca on yıl sonra ödenmek üzere ibraz edilebilir; daha önce ibraz edilemez"
-        },
-        "kmb-gen-0038": {
-            "A": "Çekin ibrazı için kanunda hiçbir süre öngörülmemiştir; hamil çeki dilediği zaman sınırsızca ibraz edebilir ve süre işlemez"
-        },
-    },
     "content/vergi_hukuku/vergilendirme_sureci.json": {
         "vh-surec-gen-0020": {"E": "Gecikme zammı yalnızca vergi cezalarına uygulanır"},
         "vh-surec-gen-0041": {"E": "Takdir komisyonunun matrah takdiriyle ilgisi yoktur"},

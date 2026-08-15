@@ -475,56 +475,6 @@ YAMALAR = {
             "; kurumların aktifindeki taşınmaz satışı bu istisnadan yararlanamaz"
         ]
     },
-    "ticaret_hukuku/kambiyo_senetleri.json": {
-        "0004|A": [
-            "ek",
-            "; ibare yoksa senet yalnızca alacağın temlikiyle devredilir"
-        ],
-        "0005|E": [
-            "ek",
-            "; önceki cirantalara başvurma imkânı bulunmaz"
-        ],
-        "0011|B": [
-            "ek",
-            "; muhatabın adı senedin gerekli unsurlarından sayılmaz"
-        ],
-        "0013|A": [
-            "ek",
-            "; görüldüğünde ödeme kaydı taşıyan poliçe geçersizdir"
-        ],
-        "0015|C": [
-            "ek",
-            "; protesto düzenlenmesi bu hâlde gereksiz sayılır"
-        ],
-        "0016|E": [
-            "ek",
-            "; bu kayıt senedin geçerliliğini etkilemez"
-        ],
-        "0018|E": [
-            "ek",
-            "; düzenleyenin sonradan itiraz hakkı bulunmaz"
-        ],
-        "0023|A": [
-            "ek",
-            "; senedin türü metinden anlaşıldığı sürece geçerli sayılır"
-        ],
-        "0039|C": [
-            "ek",
-            "; kabul şerhi bulunmayan çek geçersiz sayılır"
-        ],
-        "0045|B": [
-            "ek",
-            "; iki ciro türü arasında başka bir fark bulunmaz"
-        ],
-        "0055|B": [
-            "ek",
-            "; (A)'ya başvurulması artık mümkün olmaz"
-        ],
-        "0059|E": [
-            "ek",
-            "; düzenleyene karşı takip hakkı ibrazla birlikte düşer"
-        ]
-    },
     "vergi_hukuku/gelir_vergisi.json": {
         "0015|B": [
             "ek",

@@ -94,13 +94,6 @@ PATCHES = {
             "Limited şirketin esas sermayesi belirli ve paylara bölünmüştür (I). Ortaklar şirket borçlarından kural olarak sınırsız sorumlu değildir (II) ve tüzel kişiler de limited şirkete ortak olabilir (III). Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/ticaret_hukuku/kambiyo_senetleri.json": {
-        "kmb-gen-0020": p(
-            "Aşağıdakilerden hangileri poliçenin zorunlu şekil unsurlarındandır?\n\nI. Senet metninde 'poliçe' kelimesinin bulunması\n\nII. Senedin noter tarafından onaylanmış olması\n\nIII. Muhatabın kabul şerhinin senette bulunması",
-            "B",
-            "Senet metninde 'poliçe' kelimesinin bulunması zorunludur (I). Noter onayı poliçenin şekil şartı değildir (II); muhatabın kabulü de poliçenin düzenlenmesi için zorunlu unsur değildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "vh-kavram-gen-0011": p(
             "Vergi hukukunun temel kavramlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellef, kendisine vergi borcu düşen kişidir.\n\nII. Vergi, Bakanlık genelgesiyle konulup kaldırılabilir.\n\nIII. Vergi mükellefi olabilmek için tam fiil ehliyetine sahip olmak şarttır.",

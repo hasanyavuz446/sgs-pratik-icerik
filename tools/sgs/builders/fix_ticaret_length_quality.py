@@ -104,16 +104,6 @@ CORRECT = {
 
 
 DISTRACTORS = {
-    "ticaret_hukuku/kambiyo_senetleri.json": {
-        "kmb-gen-0001": {"B": "Yalnız ispat aracı olan sıradan bir belgedir"},
-        "kmb-gen-0002": {"A": "Poliçe, bono, çek, hisse senedi ve tahvil"},
-        "kmb-gen-0006": {"C": "Geçersizlik yalnız sonraki cirantaları sorumsuz bırakır"},
-        "kmb-gen-0010": {"A": "Yalnız düzenleyen ve lehtar vardır"},
-        "kmb-gen-0012": {"B": "Vadesiz poliçe kesin olarak geçersizdir"},
-        "kmb-gen-0014": {"B": "Poliçede kabul kurumu yoktur"},
-        "kmb-gen-0024": {"A": "Düzenleyen senedi verince sorumluluktan kurtulur"},
-        "kmb-gen-0026": {"A": "Vadesiz bono kesin olarak geçersizdir"},
-    },
     "ticaret_hukuku/limited_sahis_sirketleri.json": {
         "ltd-gen-0005": {"B": "Yalnız gerçek kişiler ortak olabilir"},
         "ltd-gen-0011": {"A": "Yan edim yükümlülüğü kararlaştırılamaz"},
