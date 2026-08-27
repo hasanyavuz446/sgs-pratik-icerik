@@ -38,13 +38,6 @@ def p(stem: str, answer: str, solution: str) -> dict[str, str]:
 
 
 PATCHES = {
-    "content/borclar_hukuku/borcun_ifasi_sona_ermesi.json": {
-        "ifa-gen-0010": p(
-            "Borçların ifası ve sona ermesiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İfa, borcu sona erdiren en olağan yoldur.\n\nII. Para borçları kural olarak borçlunun yerleşim yerinde ödenir.\n\nIII. İbra, borçlunun tek taraflı açıklamasıyla alacaklının iradesine gerek olmadan gerçekleşir.",
-            "A",
-            "**I doğrudur:** İfa, borcu sona erdiren olağan yoldur. **II yanlıştır:** Para borcu kural olarak alacaklının ödeme zamanındaki yerleşim yerinde ifa edilir. **III yanlıştır:** İbra, alacaklı ile borçlunun anlaşmasını gerektiren bir sözleşmedir. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/borclar_hukuku/temerrut_tazminat.json": {
         "temerrut-gen-0017": p(
             "Aşağıdakilerden hangileri borçlunun ayrıca ihtara gerek kalmadan temerrüde düşebileceği hâllerdendir?\n\nI. İfa gününün taraflarca kesin olarak belirlenmiş olması\n\nII. Borçlunun yalnızca ödeme güçlüğü içinde bulunması\n\nIII. Alacaklının ileride ihtar göndermeyi planlaması",
