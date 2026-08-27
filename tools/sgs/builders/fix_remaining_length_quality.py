@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Kalan SGS paketlerindeki kör-tahmin şık ipuçlarını doğal biçimde giderir."""
+"""Kalan SGS paketlerindeki kör-tahmin şık ipuçlarını doğal biçimde giderir.
+⚠️ SAHIPLIK DEVRI: vergi_hukuku/vergilendirme_sureci.json bloku bu dosyadan CIKARILDI; sahiplik
+build_hukuk_vergi_surec_yapisal.py dosyasina gecti. Bir sorunun tek sahibi olmali.
+"""
 from __future__ import annotations
 
 import json
@@ -57,10 +60,6 @@ CORRECT = {
 
 
 DISTRACTORS = {
-    "vergi_hukuku/vergilendirme_sureci.json": {
-        "vh-surec-gen-0001": {"A": "Verginin ödenmesi"},
-        "vh-surec-gen-0008": {"A": "Muhatap adreste bulunduğunda"},
-    },
     "ataturk_ilkeleri/ataturk_inkilaplari.json": {
         "ait-inkilap-gen-0004": {"B": "Türk Harflerinin Kabul ve Tatbiki Hakkında Kanun"},
     },
@@ -140,6 +139,15 @@ def fix(rel: str) -> int:
 
 
 if __name__ == "__main__":
+    # ⚠️ Bu builder --check DESTEKLEMEZ ve calistiginda dogrudan YAZAR.
+    # Toplu dogrulama donguleri onu "--check" ile cagirdiginda argumani sessizce
+    # yok sayip yayinlanmis icerigi geri yazar. Artik arguman verilirse yazmadan
+    # hata verip cikar.
+    import sys
+    if sys.argv[1:]:
+        print("HATA: bu builder arguman kabul etmez ve calistiginda dogrudan YAZAR.")
+        print("Dogrulama icin git diff kullanin; yazmak icin argumansiz calistirin.")
+        raise SystemExit(2)
     paths = set(CORRECT) | set(DISTRACTORS) | set(FULL_OPTIONS)
     paths.add("ataturk_ilkeleri/ataturk_ilkeleri_dis_politika.json")
     for rel in sorted(paths):

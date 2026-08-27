@@ -73,13 +73,6 @@ PATCHES = {
             "Mükellef, vergi kanunlarına göre kendisine vergi borcu düşen kişidir (I). Vergi kanunla konulup kaldırıldığından II; vergi ehliyeti için tam fiil ehliyeti aranmadığından III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/vergilendirme_sureci.json": {
-        "vh-surec-gen-0010": p(
-            "Vergilendirme süreciyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kural olan tarh usulü beyana dayanan tarhtır.\n\nII. Re'sen tarh, mükellefin beyanına dayanılarak yapılan olağan tarh usulüdür.\n\nIII. Tebliğ, verginin mükellefçe fiilen ödenmesidir.",
-            "A",
-            "Kural olarak tarh mükellefin beyanına dayanır (I). Re'sen tarh matrahın defter, kayıt ve belgelere dayanılarak tespit edilemediği hâllerde uygulanır (II). Tebliğ bildirim, fiilî ödeme ise tahsildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
         "vh-denetim-gen-0006": p(
             "Vergi denetim yollarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yoklama, maddi olay ve durumların yerinde tespitine yöneliktir.\n\nII. Arama, hâkim kararı olmadan vergi dairesinin kararıyla her zaman yapılabilir.\n\nIII. Vergi incelemesinde defter ve belgeler dikkate alınmaz; yalnız sözlü beyan araştırılır.",

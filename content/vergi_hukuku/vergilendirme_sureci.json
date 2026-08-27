@@ -3,20 +3,20 @@
     "id": "vh-surec-gen-0001",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme sürecinin ilk hukuki aşaması olan 'tarh' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir işletme 20 Aralık 2025 tarihinde bir malı teslim etmiş, faturayı 3 Ocak 2026'da düzenlemiş ve bedeli 15 Şubat 2026'da tahsil etmiştir. Vergi dairesi, vergi alacağının hangi anda doğduğunu belirlemek istemektedir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Verginin ödenmesi",
-      "B": "Verginin, kanunda gösterilen matrah ve oranlar üzerinden vergi dairesince hesaplanarak miktarının belirlenmesi",
-      "C": "Tarh ve tebliğ aşamaları tamamlandıktan sonra verginin ödenmesi gereken safhaya gelerek ödenebilir duruma ulaşması ve mükellef yönünden kesinleşmeye doğru ilerlemesidir",
-      "D": "Vergi kanunlarının vergiyi bağladıkları olayın meydana gelmesi veya hukuki durumun tamamlanmasıyla vergi borcunun maddi bakımdan kendiliğinden doğmasıdır",
-      "E": "Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlarca mükellefe veya ceza muhatabına yazı ile bildirilmesi işlemidir"
+      "A": "Vergi alacağı beyannamenin verildiği tarihte doğar; beyan öncesinde idarenin bir alacağından söz edilemez",
+      "B": "Vergi alacağı, kanunun vergiyi bağladığı olayın gerçekleştiği 20 Aralık 2025'te doğmuştur; fatura ve tahsilat tarihleri alacağın doğum anını değiştirmez",
+      "C": "Vergi alacağı verginin tarh edildiği tarihte doğar; tarh işlemi yapılmadıkça alacak hukuken var olmaz",
+      "D": "Vergi alacağı bedelin tahsil edildiği 15 Şubat 2026'da doğar; tahsil edilmemiş bir bedel üzerinden vergi alacağı doğmaz",
+      "E": "Vergi alacağı faturanın düzenlendiği 3 Ocak 2026'da doğar; belge düzenlenmeden vergiyi doğuran olay hukuken tamamlanmış sayılmadığından beyan da bu tarihe göre verilir"
     },
     "answer": "B",
-    "solution": "**Tarh**, verginin kanunda gösterilen **matrah ve oranlar** üzerinden **vergi dairesince hesaplanarak** miktarının belirlenmesidir. Ödeme=tahsil, ödenecek aşama=tahakkuk, bildirim=tebliğ, olay=vergiyi doğuran olaydır.",
+    "solution": "**VUK m. 19:** vergi alacağı, **vergi kanunlarının vergiyi bağladıkları olayın vukuu veya hukuki durumun tekemmülü ile doğar.** Fatura, tahsilat, beyan ve tarh sonraki aşamalardır; alacağın doğum anını belirlemezler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tarh; sınav stiline kalibre)",
-      "legislationRef": "VUK md 20 - tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "vh-surec-gen-0002",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi sisteminde kural (asıl) olan tarh usulü aşağıdakilerden hangisidir?",
+    "stem": "Bir vergi dairesi, aynı mükellef hakkında hem beyana dayanan bir tarhiyat hem de inceleme sonucu bulunan matrah farkı üzerinden ikinci bir tarhiyat yapmış; her iki işlem için de sürecin aşamalarını ayrı ayrı işletmiştir. Buna göre vergilendirme sürecinin aşamaları ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Beyana dayanan (beyan usulü) tarh",
-      "B": "Re'sen tarh",
-      "C": "İkmalen tarh",
-      "D": "İdarece tarh ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz",
-      "E": "Götürü tarh"
+      "A": "Tahakkuk, verginin kanuna uygun surette ödenmesi aşamasıdır ve bu aşamayla vergi alacağı sona erer",
+      "B": "Tarh, vergi alacağının kanunlarında gösterilen matrah ve nispetler üzerinden vergi dairesince hesaplanarak miktar itibarıyla tespit edilmesidir",
+      "C": "Tahsil, verginin kanuna uygun surette ödenmesi olup vergilendirme sürecinin son aşamasını oluşturur",
+      "D": "Tahakkuk, tarh ve tebliğ edilmiş bir verginin ödenmesi gereken bir safhaya gelmesidir",
+      "E": "Tebliğ, vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesidir"
     },
     "answer": "A",
-    "solution": "Türk vergi sisteminde kural (asıl) olan tarh usulü **beyana dayanan tarhtır**: matrah mükellefin beyanı üzerine tarh edilir. İkmalen, re'sen ve idarece tarh ise istisnai (beyan usulünün işlemediği) hâllere özgüdür.",
+    "solution": "**VUK m. 22** tahakkuku *ödenmesi gereken safhaya gelme*, **m. 23** ise tahsili *kanuna uygun surette ödenme* olarak tanımlar. Yanlış olan şık tahakkuk ile tahsili birbirine karıştırmaktadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-beyan usulü; sınav stiline kalibre)",
-      "legislationRef": "VUK md 25 - beyana dayanan tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "vh-surec-gen-0003",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'İkmalen vergi tarhı' ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef yıllık gelir vergisi beyannamesini süresinde vermiş, beyannamede matrahını doğru göstermiştir. Vergi dairesi beyanname üzerine işlem yapmaktadır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Mükellefin kendi verdiği beyanname üzerine, beyan ettiği matrah esas alınarak vergi dairesince yapılan ve sistemde kural (asıl) sayılan olağan tarh işlemidir",
-      "B": "Matrahın tespit edilemediği hâllerde takdir yoluyla yapılan tarh ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "C": "Daha önce bir vergi tarh edildikten sonra, defter-kayıt-belgelere veya kanuni ölçülere dayanılarak ortaya çıkarılan matrah farkı üzerinden ek olarak yapılan tarh",
-      "D": "İkmalen, re'sen veya idarece tarh olunan vergi ile kesilen cezanın, hüküm ifade edecek biçimde mükellefe yazı ile bildirilmesi işlemidir",
-      "E": "Tarh ve tahakkuk aşamaları tamamlanan verginin, kanuni süresi içinde mükellefçe vergi dairesine fiilen ödenerek alacağın sona erdirilmesidir"
+      "A": "Beyan üzerine önce ihbarname düzenlenir, tahakkuk ise ihbarnamenin tebliğinden sonra ayrıca gerçekleşir",
+      "B": "Beyan üzerinden alınan vergilerde tarh işlemi takdir komisyonu kararına bağlanır ve tahakkuk bu kararla oluşur",
+      "C": "Beyan üzerinden alınan vergiler tahakkuk fişi ile tarh ve tahakkuk ettirilir; tarh ve tahakkuk aynı belgeyle birlikte gerçekleşir",
+      "D": "Beyanname verilmesi tek başına tahakkuk sonucunu doğurur; ayrıca bir belge düzenlenmesine gerek bulunmaz",
+      "E": "Beyan üzerinden alınan vergilerde tahakkuk, verginin fiilen ödendiği tarihte gerçekleşir ve öncesinde tarh edilmiş sayılmaz"
     },
     "answer": "C",
-    "solution": "**İkmalen tarh**, daha önce bir vergi tarh edildikten sonra, **defter-kayıt-belgelere veya kanuni ölçülere** dayanılarak ortaya çıkan **matrah farkı** üzerinden **ek olarak** yapılan tarhtır. Beyan üzerine tarh, takdir esaslı tarh (re'sen), tebliğ veya tahsil değildir.",
+    "solution": "**VUK m. 25:** vergi kanunlarına göre **beyan üzerinden alınan vergiler 'tahakkuk fişi' ile tarh ve tahakkuk ettirilir.** İhbarname usulü, **m. 34** uyarınca ikmalen ve re'sen tarh edilen vergilere özgüdür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ikmalen tarh; sınav stiline kalibre)",
-      "legislationRef": "VUK md 29 - ikmalen tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "vh-surec-gen-0004",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Re'sen vergi tarhı' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef hakkında daha önce vergi tarh edilmiş; sonradan yapılan incelemede, mükellefin kendi defter ve belgelerine dayanılarak miktarı tespit edilebilen bir matrah farkı ortaya çıkmıştır. Buna göre uygulanacak tarh usulü bakımından aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Mükellefin beyanı esas alınarak yapılan olağan tarhtır; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz",
-      "B": "Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesi olup matrahın belirlenmesiyle hiçbir ilgisi bulunmayan işlemdir",
-      "C": "Yalnızca mükellefin kendi başvurusu ve talebi üzerine başlatılabilen, idarenin resen harekete geçmesinin mümkün olmadığı isteğe bağlı bir tarh usulüdür",
-      "D": "Matrahın defter, kayıt ve belgelere veya kanuni ölçülere göre tespitine imkân bulunmayan hâllerde (ör. beyanname verilmemesi, defterlerin ibraz edilmemesi), takdir komisyonu kararı veya inceleme raporuna dayanılarak matrahın belirlenmesi suretiyle yapılan tarhtır",
-      "E": "Tarh ve tebliğ edilmiş verginin ödenmesi gereken safhaya gelerek ödenebilir hâle gelmesini ifade eden ve matrah tespitiyle ilgisi bulunmayan aşamadır"
+      "A": "Defter ve belgelere dayanan farklarda takdir komisyonu kararı zorunludur; komisyon kararı olmadan tarhiyat yapılamaz",
+      "B": "Matrah farkı için idarece tarh usulü uygulanır; bu usul mükellefin bildirim ödevini yerine getirdiği hâllerde işletilir",
+      "C": "Matrah farkı sonradan ortaya çıktığı için re'sen tarhiyat yapılır; re'sen tarh her türlü matrah farkında uygulanan genel usuldür",
+      "D": "Matrah farkı defter ve belgelere dayanılarak tespit edilebildiğinden ikmalen tarhiyat yapılır; bu usul önceden bir tarhiyatın varlığını gerektirir",
+      "E": "Önceden bir tarhiyat yapılmış olduğundan aynı vergilendirme dönemi için yeniden tarhiyat yapılamaz; ortaya çıkan fark ancak düzeltme hükümleri uyarınca giderilebilir"
     },
     "answer": "D",
-    "solution": "**Re'sen tarh**, matrahın defter-kayıt-belge veya kanuni ölçülere göre **tespitine imkân bulunmayan** hâllerde (beyanname verilmemesi, defter ibraz edilmemesi vb.), **takdir komisyonu kararı** veya **inceleme raporuna** dayanılarak matrahın belirlenmesiyle yapılır. Beyan/talep esaslı tarh, tebliğ veya tahakkuk değildir.",
+    "solution": "**VUK m. 29:** ikmalen vergi tarhı, **bir vergi tarh edildikten sonra** ortaya çıkan ve **defter, kayıt ve belgelere veya kanuni ölçülere dayanılarak miktarı tespit olunan** matrah farkı üzerinden yapılır. Re'sen tarh (m. 30) ise tam da bu tespitin **yapılamadığı** hâller içindir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-re'sen tarh; sınav stiline kalibre)",
-      "legislationRef": "VUK md 30 - re'sen tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "vh-surec-gen-0005",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Aşağıdakilerden hangisi re'sen tarhı gerektiren hâllerden biridir?",
+    "stem": "Bir mükellefin defter ve belgeleri yanmış, matrahın defter, kayıt ve belgelere veya kanuni ölçülere dayanılarak tespitine imkân kalmamıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Mükellefin beyannamesini süresinde ve eksiksiz vermesi",
-      "B": "Vergi dairesinin taşınması",
-      "C": "Verginin süresinde ödenmesi",
-      "D": "Mükellefin defterlerini düzenli tutması",
-      "E": "Vergi beyannamesinin kanuni süresi geçtiği hâlde verilmemesi"
+      "A": "Mükellefin beyanı esas alınarak tahakkuk fişi düzenlenir; belgesizlik hâlinde beyan denetlenmeksizin kabul edilir",
+      "B": "Matrah, mükellefin bir önceki yıl beyanı esas alınarak idarece tarh edilir; bu usul belgesizlik hâllerine özgüdür",
+      "C": "Defterlerin yanması mücbir sebep sayıldığından hiçbir tarhiyat yapılamaz ve vergi alacağı düşer",
+      "D": "Belgeler bulunmadığından ikmalen tarhiyat yapılır; ikmalen tarh, matrahın belgelerle tespit edilemediği belgesizlik hâllerinde başvurulan usul olduğundan burada da uygulanır",
+      "E": "Matrahın belgelere dayanılarak tespiti mümkün olmadığından re'sen tarhiyat yapılır; matrah takdir komisyonunca takdir edilir veya inceleme raporunda belirtilir"
     },
     "answer": "E",
-    "solution": "**Vergi beyannamesinin kanuni süresi geçtiği hâlde verilmemesi**, matrahın tespit edilememesine yol açtığından **re'sen tarhı gerektiren** hâllerdendir (defterlerin tutulmaması/ibraz edilmemesi gibi). Beyanname verme, süresinde ödeme veya düzenli defter re'sen tarh sebebi değildir.",
+    "solution": "**VUK m. 30:** re'sen vergi tarhı, matrahın **tamamen veya kısmen defter, kayıt ve belgelere veya kanuni ölçülere dayanılarak tespitine imkân bulunmayan hâllerde**, takdir komisyonlarınca takdir edilen veya inceleme raporlarında belirtilen matrah üzerinden yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-re'sen tarh sebebi; sınav stiline kalibre)",
-      "legislationRef": "VUK md 30 - re'sen tarh sebepleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "vh-surec-gen-0006",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirmede 'tebliğ' işlemi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef hakkında önce beyanına dayanan tarhiyat yapılmış, ardından inceleme sonucu bulunan matrah farkı için ikinci bir tarhiyat gerçekleştirilmiştir. Vergi dairesi iki tarhiyat için farklı belgeler düzenlemiştir. Buna göre ikmalen ve re'sen tarhiyat ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların, yetkili makamlarca mükellefe veya ilgiliye yazı ile bildirilmesidir",
-      "B": "Verginin vergi dairesince hesaplanmasıdır; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "C": "Tarh ve tahakkuk aşamaları tamamlanan verginin kanuni süresi içinde mükellefçe vergi dairesine fiilen ödenerek vergi borcunun sona erdirilmesidir",
-      "D": "Vergi kanunlarının vergiyi bağladıkları olayın meydana gelmesi veya hukuki durumun tamamlanmasıyla vergi borcunun maddi bakımdan doğmasıdır",
-      "E": "Mükellefin, ticari faaliyetine ilişkin işlemlerini kanunda öngörülen defterlere usulüne uygun biçimde kaydetmesi biçimindeki şekli bir vergi ödevidir"
+      "A": "İkmalen ve re'sen tarh edilen vergiler, beyana dayanan vergilerde olduğu gibi tahakkuk fişi ile mükellefe bildirilir",
+      "B": "Re'sen tarhta matrah, takdir komisyonunca takdir edilebileceği gibi vergi inceleme raporunda da belirtilebilir",
+      "C": "Re'sen tarhiyat, matrahın defter ve belgelere dayanılarak tespitine imkân bulunmayan hâllerde uygulanır",
+      "D": "İkmalen tarhiyat, daha önce bir vergi tarh edilmiş olmasını gerektirir",
+      "E": "İkmalen ve re'sen tarh edilen vergiler ihbarname ile ilgililere tebliğ olunur"
     },
     "answer": "A",
-    "solution": "**Tebliğ**, vergilendirmeyi ilgilendiren ve **hüküm ifade eden** hususların yetkili makamlarca mükellefe/ilgiliye **yazı ile bildirilmesidir**. Hesaplama=tarh, ödeme=tahsil, olay=vergiyi doğuran olay, defter tutma bir ödevdir.",
+    "solution": "**VUK m. 34:** **ikmalen ve re'sen tarh edilen vergiler 'ihbarname' ile** ilgililere tebliğ olunur. Tahakkuk fişi ise **m. 25** uyarınca beyan üzerinden alınan vergilere özgüdür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tebliğ; sınav stiline kalibre)",
-      "legislationRef": "VUK md 21 - tebliğ"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "vh-surec-gen-0007",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi Usul Kanunu'na göre tebliğ usulleri bakımından aşağıdakilerden hangisi bir tebliğ usulü DEĞİLDİR?",
+    "stem": "Vergi dairesi, hakkında re'sen tarhiyat yaptığı mükellefe ihbarname düzenlemiştir. İhbarnamede verginin nev'i, mükellefin kimliği ve tarh edilen vergi tutarı yer almakta; ancak vergi mahkemesinde dava açma süresi gösterilmemiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Posta (taahhütlü mektup) yoluyla tebliğ",
-      "B": "Memur eliyle (dairede veya ilgilinin adresinde) tebliğ",
-      "C": "İlanen tebliğ",
-      "D": "Mükellefin komşusuna sözlü olarak durumun anlatılması yoluyla tebliğ",
-      "E": "Elektronik ortamda tebliğ"
+      "A": "İhbarname yerine tahakkuk fişi düzenlenmesi gerektiğinden işlem baştan sakattır; re'sen tarhiyatta ihbarname kullanılması hukuka aykırılık oluşturur",
+      "B": "İhbarnamenin içeriği kanunda düzenlenmediğinden eksiklik iddiası dinlenmez; idare ihbarnamenin biçimini serbestçe belirleyebildiğinden mükellefin bu yöndeki savunması sonuç doğurmaz",
+      "C": "İhbarnamedeki her türlü eksiklik tebliği kendiliğinden hükümsüz kılar; bu nedenle tarhiyatın baştan yeniden yapılması ve yeni ihbarname düzenlenmesi gerekir",
+      "D": "İhbarnamede bulunması gereken bilgilerin eksikliği, verginin miktarında hata bulunmadıkça tebliği hükümsüz kılmaz; ancak vergi ve ceza miktarı ile ilgili bilgilerdeki eksiklik tebliği hükümsüz kılar",
+      "E": "Dava açma süresinin gösterilmemesi tebliği hükümsüz kılar; süre gösterilmeyen ihbarnameye dayanan tarhiyat kendiliğinden ortadan kalkar ve vergi alacağı düşer"
     },
     "answer": "D",
-    "solution": "VUK'a göre tebliğ usulleri; **posta (taahhütlü), memur eliyle, ilanen ve elektronik** tebliğdir. **Komşuya sözlü anlatım** geçerli bir tebliğ usulü değildir; tebliğ yazılı ve usulüne uygun yapılmalıdır.",
+    "solution": "**VUK m. 35** ihbarnamenin içeriğini sayar; son fıkrası, bu bilgilerdeki eksikliğin **verginin miktarı ile ilgili olanlar dışında** tebliği hükümsüz kılmayacağını düzenler. Re'sen tarhta ihbarname kullanılması ise **m. 34** gereğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (hangisi değil-tebliğ usulleri; sınav stiline kalibre)",
-      "legislationRef": "VUK md 93-107 - tebliğ usulleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "vh-surec-gen-0008",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'İlanen tebliğ' hangi durumda başvurulan bir tebliğ usulüdür?",
+    "stem": "Vergi dairesi, adresi bilinen bir mükellefe vergi/ceza ihbarnamesini tebliğ etmek istemektedir. Buna göre tebliğ usulü bakımından aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Muhatap adreste bulunduğunda",
-      "B": "Muhatabın adresinin bilinememesi, bilinen adresin yanlış/değişmiş olması gibi nedenlerle olağan yollarla tebliğ yapılamadığı hâllerde",
-      "C": "Adres araştırması yapılmaksızın, her tebligatta olağan ve ilk sırada tercih edilen usul olarak doğrudan gazete ilanı yoluyla başvurulan bir tebliğ yönteminde",
-      "D": "Muhatabın adresi bilinse dahi yalnızca mükellefin kendisinin yazılı talepte bulunması hâlinde ve onun isteğine bağlı olarak başvurulan bir usul olarak",
-      "E": "Yalnızca elektronik tebligatın teknik olarak mümkün olduğu ve muhatabın elektronik adresinin bulunduğu hâllerde, kâğıt tebligata alternatif olarak"
+      "A": "Tahakkuk fişinden gayri, hüküm ifade eden vesikalar adresi bilinen kişilere posta ile tebliğ edilir",
+      "B": "Adresi bilinen mükelleflere tebliğ yalnız mükellefin vergi dairesine bizzat gelmesiyle yapılabilir",
+      "C": "Adresi bilinmeyen hâllerde ilan yoluyla tebliğ usulüne başvurulabilir",
+      "D": "Posta yoluyla yapılan tebliğ ilmühaberli taahhütlü olarak gönderilir",
+      "E": "Tebliğ mükelleflere, kanuni temsilcilerine veya umumi vekillerine yapılabilir"
     },
     "answer": "B",
-    "solution": "**İlanen tebliğ**, muhatabın **adresinin bilinememesi**, bilinen adresin yanlış/değişmiş olması gibi nedenlerle **olağan yollarla tebliğ yapılamadığı** hâllerde başvurulan son çare niteliğinde bir usuldür. İlk/olağan usul veya salt talep/elektronik şartı yanlıştır.",
+    "solution": "**VUK m. 93:** adresleri bilinen kişilere tebliğ **posta vasıtasıyla ilmühaberli taahhütlü** olarak yapılır; kanun mükellefin bizzat daireye gelmesini bir tebliğ usulü olarak öngörmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ilanen tebliğ; sınav stiline kalibre)",
-      "legislationRef": "VUK md 103-106 - ilanen tebliğ"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "vh-surec-gen-0009",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Verginin tahakkuku' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir anonim şirket adına düzenlenen vergi/ceza ihbarnamesi şirketin merkez adresine gönderilmiş; şirketin yönetim kurulunda birden çok temsilci bulunmaktadır. Vergi dairesi tebliğin kime yapılacağını belirlemek istemektedir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Verginin kanunda yazılı matrah ve oranlar üzerinden vergi dairesince hesaplanarak miktarının belirlenmesidir",
-      "B": "Mükellefin, vergi matrahını gösteren beyannameyi kanuni süresi içinde bağlı olduğu vergi dairesine vermesidir",
-      "C": "Vergi kanunlarının vergiyi bağladıkları olayın meydana gelmesi veya hukuki durumun tamamlanmasıdır",
-      "D": "Verginin cebren (zorla) tahsil edilmesidir ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz",
-      "E": "Tarh ve tebliğ edilen bir verginin ödenmesi gereken safhaya gelmesidir"
+      "A": "Tüzel kişilere tebliğ doğrudan ortaklara yapılır; şirketin tüzel kişiliği tebligat bakımından dikkate alınmadığından temsilciye yapılan tebliğ hükümsüzdür",
+      "B": "Tüzel kişilere tebliğ ancak bütün yönetim kurulu üyelerine ayrı ayrı yapılırsa geçerli olur; tek kişiye yapılan tebliğ şirketi bağlamadığından dava açma süresi işlemeye başlamaz",
+      "C": "Tüzel kişilere tebliğ yalnız ticaret sicili müdürlüğü aracılığıyla yapılabilir; doğrudan şirket adresine gönderilen tebligat usulsüz sayılır",
+      "D": "Tüzel kişilere tebliğ yapılamaz; vergi alacağı doğrudan kanuni temsilcinin şahsi borcu olarak takip edildiğinden tebligat da ona şahsen yapılır",
+      "E": "Tüzel kişilere yapılacak tebliğ, bunların başkan, müdür veya kanuni temsilcilerine yapılır; bu kişilerin birden çok olması hâlinde tebliğin birine yapılması yeterlidir"
     },
     "answer": "E",
-    "solution": "**Tahakkuk**, tarh ve tebliğ edilen bir verginin **ödenmesi gereken safhaya** gelmesidir. Beyana dayanan vergilerde beyanname verilmesiyle vergi çoğu kez tahakkuk eder; ikmalen/re'sen tarhta ise dava açma süresinin geçmesi veya yargı sürecinin sonuçlanması gibi durumlar tahakkuku etkiler. Hesaplama/olay/cebri tahsil tahakkuk değildir.",
+    "solution": "**VUK m. 94:** tebliğ mükelleflere, kanuni temsilcilerine, umumi vekillerine veya vergi cezası kesilenlere yapılır; **tüzel kişilere yapılacak tebliğ bunların başkan, müdür veya kanuni temsilcilerine** yapılır ve bunlar birden çoksa tebliğin birine yapılması yeterlidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tahakkuk; sınav stiline kalibre)",
-      "legislationRef": "VUK md 22 - tahakkuk"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "vh-surec-gen-0010",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreciyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kural olan tarh usulü beyana dayanan tarhtır.\n\nII. Re'sen tarh, mükellefin beyanına dayanılarak yapılan olağan tarh usulüdür.\n\nIII. Tebliğ, verginin mükellefçe fiilen ödenmesidir.",
+    "stem": "Vergi dairesi, mükellefin bilinen adreslerine tebligat çıkarmış; ancak adres tespit edilememiş ve tebliğ yapılamamıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "I, II ve III (her üç ifade de doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "II ve III (ikinci ve üçüncü ifadeler doğrudur)"
+      "A": "Adresi bilinmeyen veya bilinen adreste tebliğ yapılamayan hâllerde ilan yoluyla tebliğ yoluna başvurulur; ilan tarihinden başlayarak bir ay sonunda tebliğ yapılmış sayılır",
+      "B": "Bu hâlde tebliğ zorunluluğu ortadan kalkar ve vergi doğrudan tahakkuk eder; tahakkuk için tebliğ şartı yalnız beyana dayanan vergilerde aranır",
+      "C": "Tebliğ yapılamayan hâllerde ihbarname vergi dairesinde saklanır ve mükellef gelene kadar bekletilir; bu süre içinde dava açma süresi de işlemeye başlamaz",
+      "D": "Adres tespit edilemediğinde vergilendirme işlemi kendiliğinden düşer; tebliğ edilemeyen bir ihbarnameye dayanılarak takip yapılamayacağından alacak ortadan kalkar",
+      "E": "Adres bilinmiyorsa tebliğ mükellefin en yakın akrabasına yapılır; akrabaya yapılan tebliğ mükellefe yapılmış sayıldığından süreler o tarihte başlar"
     },
     "answer": "A",
-    "solution": "Kural olarak tarh mükellefin beyanına dayanır (I). Re'sen tarh matrahın defter, kayıt ve belgelere dayanılarak tespit edilemediği hâllerde uygulanır (II). Tebliğ bildirim, fiilî ödeme ise tahsildir (III). Doğru cevap **Yalnız I**.",
+    "solution": "**VUK m. 103** ilanen tebliğ hâllerini sayar (adresin bilinmemesi, bilinen adreste tebliğ yapılamaması vb.); **m. 106** uyarınca ilanın yapıldığı tarihten başlayarak **bir ayın sonunda** tebliğ yapılmış sayılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III süreç; sınav stiline kalibre)",
-      "legislationRef": "VUK md 21-25-30"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "vh-surec-gen-0011",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi Usul Kanunu'na göre 'tarh zamanaşımı' süresi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir vergi dairesi aynı dönemde hem beyana dayanan bir tahakkuk fişi düzenlemiş hem de ikmalen tarh ettiği bir vergi için ihbarname çıkarmış; ayrıca adresi tespit edilemeyen üçüncü bir mükellef için ilan yoluna başvurmuştur. Buna göre vergi tebliği ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren üç yıl içinde tarh ve tebliğ edilmeyen vergiler zamanaşımına uğrar",
-      "B": "Tarh zamanaşımı kendiliğinden işlemez; ancak mükellefin bu yönde yazılı talepte bulunması hâlinde ve onun istemine bağlı olarak işlemeye başlar",
-      "C": "Vergi alacaklarında herhangi bir tarh zamanaşımı öngörülmemiş olup vergiler süre sınırı olmaksızın her zaman tarh ve tebliğ edilebilir",
-      "D": "Tarh zamanaşımı süresi, vergi alacağının doğduğu yılı izleyen yıl başından itibaren yirmi yıl olarak uygulanır ve bu süre kısalmaz",
-      "E": "Vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren beş yıl içinde tarh ve tebliğ edilmeyen vergiler zamanaşımına uğrar"
+      "A": "Adresi bilinmeyen veya bilinen adreste tebliğ yapılamayan hâllerde ilan yoluyla tebliğ yapılabilir",
+      "B": "Adresleri bilinen gerçek ve tüzel kişilere yapılacak tebliğ posta vasıtasıyla ilmühaberli taahhütlü olarak gönderilir ve tebliğ tarihi buna göre belirlenir",
+      "C": "Adresleri bilinen gerçek ve tüzel kişilere tebliğ posta vasıtasıyla ilmühaberli taahhütlü olarak yapılır",
+      "D": "Tebliğ mükelleflere, kanuni temsilcilerine, umumi vekillerine veya vergi cezası kesilenlere yapılır",
+      "E": "Beyan üzerinden alınan vergilerde düzenlenen tahakkuk fişi de posta yoluyla ilmühaberli taahhütlü olarak tebliğ edilir ve tebliğ edilmedikçe vergi tahakkuk etmez"
     },
     "answer": "E",
-    "solution": "**Tarh (tahakkuk) zamanaşımı**: vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren **beş yıl** içinde tarh ve tebliğ edilmeyen vergiler zamanaşımına uğrar. Üç yıl/yirmi yıl, zamanaşımı olmaması veya talebe bağlılık yanlıştır.",
+    "solution": "**VUK m. 93** posta yoluyla tebliğ zorunluluğunu **'tahakkuk fişinden gayri'** vesikalar için öngörür. Tahakkuk fişi bu kapsamın dışındadır; beyan üzerine düzenlenip mükellefe verilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tarh zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 114 - tarh zamanaşımı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "vh-surec-gen-0012",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Amme Alacaklarının Tahsil Usulü Hakkında Kanun'a (6183) göre 'tahsil zamanaşımı' süresi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefe ikmalen tarh edilen vergiye ilişkin ihbarname 10 Mart'ta tebliğ edilmiş; mükellef yasal süresi içinde dava açmamıştır. Buna göre verginin tahakkuku bakımından aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Amme alacağı, vadesinin rastladığı takvim yılını izleyen yıl başından itibaren üç yıl içinde tahsil edilmezse zamanaşımına uğrar",
-      "B": "Amme alacağı, vadesinin rastladığı takvim yılını izleyen yıl başından itibaren beş yıl içinde tahsil edilmezse zamanaşımına uğrar",
-      "C": "Amme alacakları bakımından herhangi bir tahsil zamanaşımı öngörülmemiş olup bu alacaklar süre sınırı olmaksızın her zaman cebren tahsil edilebilir",
-      "D": "Tahsil zamanaşımı süresi, alacağın vadesini izleyen yıl başından itibaren otuz yıl olarak uygulanır ve hiçbir işlemle bu süre değişmez",
-      "E": "Tahsil zamanaşımı kendiliğinden işlemez; ancak alacaklı vergi dairesinin bu yönde talepte bulunması hâlinde ve onun istemine bağlı olarak işler"
+      "A": "Vergi ihbarnamenin tebliğ edildiği anda tahakkuk etmiştir; dava açma süresinin geçmesi tahakkuk bakımından sonuç doğurmadığından 10 Mart esas alınır",
+      "B": "Dava açma süresi dava açılmaksızın geçtiğinden vergi tahakkuk etmiş, yani ödenmesi gereken safhaya gelmiştir",
+      "C": "Tahakkuk için ayrıca bir tahakkuk fişi düzenlenmesi gerekir; ihbarnameye dayanan tarhiyatlarda fiş düzenlenmedikçe vergi tahakkuk etmiş sayılmaz",
+      "D": "Vergi ancak fiilen ödendiğinde tahakkuk eder; ödeme yapılmadığı sürece tahakkuktan söz edilemeyeceğinden takip de başlatılamaz",
+      "E": "Dava açılmaması verginin kesinleşmesini engellemez ancak tahakkuku engeller; tahakkuk yalnız yargı kararıyla gerçekleşebileceğinden idare takip yapamaz"
     },
     "answer": "B",
-    "solution": "**Tahsil zamanaşımı** (6183): amme alacağı, **vadesinin rastladığı takvim yılını izleyen yıl başından** itibaren **beş yıl** içinde tahsil edilmezse zamanaşımına uğrar. Üç/otuz yıl, zamanaşımsızlık veya talebe bağlılık yanlıştır (ödeme, haciz gibi işlemlerle kesilir).",
+    "solution": "**VUK m. 22:** verginin tahakkuku, **tarh ve tebliğ edilen bir verginin ödenmesi gereken bir safhaya gelmesidir.** İhbarnameye bağlı tarhiyatta bu safha, dava açma süresinin dava açılmaksızın geçmesiyle (veya davanın kesin olarak sonuçlanmasıyla) oluşur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tahsil zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "6183 md 102 - tahsil zamanaşımı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "vh-surec-gen-0013",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi alacağını sona erdiren hâller bakımından aşağıdakilerden hangisi bu hâllerden biri DEĞİLDİR?",
+    "stem": "Vergi alacağının 2020 takvim yılında doğduğu bir olayda vergi dairesi, tarh ve tebliğ işlemini 2026 yılının Şubat ayında yapmıştır. Mükellef zamanaşımı itirazında bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Vergiyi doğuran olayın gerçekleşmesi",
-      "B": "Zamanaşımı",
-      "C": "Terkin (silme); ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar",
-      "D": "Takas/mahsup",
-      "E": "Ödeme (tahsil)"
+      "A": "Tarh zamanaşımı, vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren beş yıldır; süre 31 Aralık 2025'te dolduğundan tarhiyat zamanaşımına uğramıştır",
+      "B": "Tarh zamanaşımı on yıl olduğundan süre henüz dolmamıştır; idarenin 2026'da yaptığı tarhiyat bu nedenle hukuka uygundur ve itiraz reddedilir",
+      "C": "Zamanaşımı süresi beyanname verilmediği hâllerde işlemez; süre ancak beyanname verilmesiyle başlayacağından 2026 tarhiyatı süresinde sayılır",
+      "D": "Zamanaşımı vergi alacağının doğduğu tarihten itibaren işlediğinden süre 2025 yılı içinde dolar; ancak tebliğ yapıldığı için süre kesilmiş sayılır ve tarhiyat geçerli olur",
+      "E": "Tarh zamanaşımı yalnız mükellef ileri sürerse dikkate alınır; itiraz edilmediği takdirde süre dolmuş olsa bile tarhiyat kesinleşeceğinden idare işlemi sürdürür"
     },
     "answer": "A",
-    "solution": "Vergi alacağını **sona erdiren** hâller; **ödeme, zamanaşımı, terkin, takas/mahsup** (ve tahakkuktan vazgeçme) gibi hâllerdir. **Vergiyi doğuran olayın gerçekleşmesi** ise alacağı sona erdirmez; aksine vergi alacağını **doğurur**.",
+    "solution": "**VUK m. 114/1:** vergi alacağının doğduğu takvim yılını takip eden yılın başından başlayarak **beş yıl içinde tarh ve mükellefe tebliğ edilmeyen vergiler zamanaşımına uğrar.** 2020'de doğan alacakta süre 1 Ocak 2021'de başlar, 31 Aralık 2025'te dolar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (hangisi değil-sona erdiren hâller; sınav stiline kalibre)",
-      "legislationRef": "VUK / 6183 - vergi alacağının sona ermesi"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "vh-surec-gen-0014",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Terkin' ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Vadesi 2020 yılı içinde dolan bir amme alacağı, tahsil dairesince 2026 yılına kadar tahsil edilememiş ve bu süre içinde zamanaşımını kesen bir işlem yapılmamıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Tarh ve tahakkuk aşamaları tamamlanan verginin, kanuni süresi içinde mükellef tarafından vergi dairesine fiilen ödenmesi suretiyle vergi borcunun sona ermesidir",
-      "B": "Verginin ödeme süresinin ertelenmesi; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "C": "Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesi olup vergi ve cezanın silinmesiyle ilgisi bulunmayan işlemdir",
-      "D": "Belirli hâllerde (doğal afet nedeniyle mahsulün/malın önemli ölçüde zarar görmesi, tahsil imkânsızlığı, yargı kararı vb.) vergi ve/veya cezanın kısmen ya da tamamen silinmesi",
-      "E": "Verginin hesaplanmasına esas alınan matrahın, kanunda gösterilen ölçü ve tutarlar dikkate alınarak belirlenmesi işlemi olup borcun silinmesi anlamına gelmez"
+      "A": "Tahsil zamanaşımı yalnız ödeme emri tebliğ edilmişse işlemeye başlar; ödeme emri çıkarılmadığından süre henüz başlamamış sayılır",
+      "B": "Tahsil zamanaşımı vergi alacağının doğduğu yıldan itibaren işler; vade tarihi süre bakımından belirleyici olmadığından hesaplama 2019'dan başlatılır",
+      "C": "Amme alacaklarında zamanaşımı işlemez; kamu alacağı niteliği süreye bağlı olmadığından alacak her zaman tahsil edilebilir durumda kalır",
+      "D": "Amme alacağı, vadesinin rastladığı takvim yılını takip eden yıl başından itibaren beş yıl içinde tahsil edilmediğinden tahsil zamanaşımına uğramıştır",
+      "E": "Tahsil zamanaşımı süresi on yıl olduğundan alacak hâlâ takip edilebilir; idare bu süre içinde her zaman cebri takip başlatabileceğinden itiraz dinlenmez"
     },
     "answer": "D",
-    "solution": "**Terkin**, belirli hâllerde (doğal afet nedeniyle **önemli zarar**, tahsil imkânsızlığı, **yargı kararı** vb.) vergi ve/veya cezanın **kısmen ya da tamamen silinmesidir**. Ödeme, tebliğ, erteleme (tecil) veya matrah hesabı terkin değildir.",
+    "solution": "**6183 m. 102:** amme alacağı, **vadesinin rastladığı takvim yılını takip eden takvim yılı başından itibaren 5 yıl** içinde tahsil edilmezse zamanaşımına uğrar. Tarh zamanaşımı (VUK m. 114) ise alacağın **doğduğu** yılı izleyen yıldan işler; iki süre farklı anlarda başlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-terkin; sınav stiline kalibre)",
-      "legislationRef": "VUK md 115 / 6183 - terkin"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "vh-surec-gen-0015",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Tecil' ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefin 2019 yılında doğan bir vergi borcu ile vadesi 2019 yılında dolan ayrı bir amme alacağı bulunmaktadır. Vergi dairesi her iki alacak bakımından da süre hesabı yapmakta, iki sürenin aynı anda dolduğunu varsaymaktadır. Buna göre vergilendirmede zamanaşımı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Belirli hâllerde vergi ve cezanın kısmen veya tamamen silinerek vergi alacağının ortadan kaldırılmasıdır; bu hâlde borç bir daha istenemez",
-      "B": "Vergiyi doğuran olayın hiç gerçekleşmemesi nedeniyle vergi borcunun baştan itibaren doğmaması ve mükellef bakımından herhangi bir yükümlülüğün ortaya çıkmamasıdır",
-      "C": "Kanunda belirtilen koşulların varlığı hâlinde (ör. çok zor duruma düşme), amme alacağının ödenmesinin belirli bir süre ertelenmesi ve/veya taksitlendirilmesi",
-      "D": "Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesi olup ödemenin ertelenmesiyle ilgisi bulunmayan işlemdir",
-      "E": "Verginin cebren tahsil edilmesi ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir"
+      "A": "Vergi hukukunda zamanaşımı süreleri kanunla belirlenmiş olup taraflarca değiştirilemez",
+      "B": "Tarh zamanaşımına uğrayan bir vergi artık tarh ve tebliğ edilemez",
+      "C": "Tarh zamanaşımı ve tahsil zamanaşımı aynı anda işlemeye başlar; her ikisi de vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren hesaplanır",
+      "D": "Tahsil zamanaşımı, alacağın vadesinin rastladığı takvim yılını takip eden yıl başından itibaren beş yıldır",
+      "E": "Tarh zamanaşımı ve tahsil zamanaşımı süreleri farklı uzunluktadır; tarh zamanaşımı beş, tahsil zamanaşımı on yıl olduğundan iki alacak için ayrı ayrı hesap yapılması gerekir"
     },
     "answer": "C",
-    "solution": "**Tecil**, kanundaki koşulların (ör. borçlunun **çok zor duruma** düşecek olması) varlığında amme alacağının ödenmesinin **belirli süre ertelenmesi ve/veya taksitlendirilmesidir**. Silme (terkin), verginin doğmaması, bildirim veya cebri tahsil tecil değildir.",
+    "solution": "**VUK m. 114** tarh zamanaşımını alacağın **doğduğu** yılı, **6183 m. 102** ise tahsil zamanaşımını alacağın **vadesinin rastladığı** yılı izleyen yıl başından başlatır. İki sürenin başlangıcı farklı olduğundan aynı anda işlemeye başladıklarını söyleyen ifade yanlıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tecil; sınav stiline kalibre)",
-      "legislationRef": "6183 md 48 - tecil"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "vh-surec-gen-0016",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Zamanaşımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi hukukunda zamanaşımı, süre dolsa bile vergi alacağını sona erdirmez; borç eksik borca dönüşerek devam eder.\n\nII. Tarh zamanaşımı kural olarak beş yıldır.\n\nIII. Tahsil zamanaşımı kural olarak beş yıldır.",
+    "stem": "Bir mükellefin vergi matrahı hesaplanırken vergi dairesince toplama hatası yapılmış ve mükelleften fazla vergi istenmiştir. Mükellef bu durumu tarh zamanaşımı süresi içinde fark etmiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "I, II ve III (her üç ifade de doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
+      "A": "Vergiye ilişkin hesaplarda yapılan ve haksız yere fazla vergi istenmesine yol açan bu durum vergi hatasıdır; mükellef düzeltilmesini vergi dairesinden yazı ile isteyebilir",
+      "B": "Hesaplama hataları vergi hatası sayılmadığından ancak dava yoluyla ileri sürülebilir; idareye düzeltme başvurusu yapılması hukuken sonuç doğurmaz",
+      "C": "Vergi hatası yalnız mükellefin kendi beyanındaki hatalar için söz konusu olur; idarenin işlemlerindeki hatalar bu kapsamda değerlendirilmediğinden düzeltme istenemez",
+      "D": "Düzeltme talebi ancak sözlü olarak yapılabilir; yazılı başvuru usulü kanunda öngörülmediğinden yazıyla yapılan istem işleme konulmaz",
+      "E": "Fazla istenen vergi ödendikten sonra düzeltme istenemez; ödeme işlemi hatayı ortadan kaldırdığından iade talebi de dinlenmez"
     },
-    "answer": "C",
-    "solution": "**I yanlış:** vergi hukukunda zamanaşımı süresinin dolması vergi alacağını kendiliğinden kaldırır (VUK md 113); borçlar hukukundaki gibi 'eksik borca dönüşme' söz konusu değildir. **II** tarh zamanaşımının ve **III** tahsil zamanaşımının kural olarak beş yıl olması doğrudur. Doğru cevap **II ve III**.",
+    "answer": "A",
+    "solution": "**VUK m. 116:** vergi hatası, **vergiye müteallik hesaplarda veya vergilendirmede yapılan hatalar** yüzünden haksız yere fazla veya eksik vergi istenmesi veya alınmasıdır. **m. 122:** mükellefler düzeltmeyi vergi dairesinden **yazı ile** isteyebilirler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "VUK 114 / 6183 md 102"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "vh-surec-gen-0017",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Beyana dayanan tarhta, mükellefin kendi beyanına karşı dava açması bakımından kural olarak doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir vergi hatası, VUK m. 114'teki beş yıllık zamanaşımı süresi dolduktan sonra ortaya çıkarılmıştır. Mükellef düzeltme talebinde bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Mükellef kendi beyan ettiği matrah ve vergiye karşı her durumda serbestçe dava açabilir ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "B": "Beyan üzerine tarh edilen vergi, ve hiçbir gerekçeyle dava konusu yapılamaz; ihtirazi kayıt veya vergi hatası bulunsa dahi yargı yolu tümüyle kapalıdır",
-      "C": "Mükellef kural olarak kendi beyan ettiği matrah ve vergiye karşı dava açamaz; ancak ihtirazi kayıtla beyan veya vergi hatası gibi istisnai hâllerde dava yolu açık olabilir",
-      "D": "Mükellef, beyanname verdikten sonra beyan ettiği vergiyi ödemek zorunda değildir; beyanın verilmesiyle vergi borcu kendiliğinden ortadan kalkar",
-      "E": "Beyannamenin verilmesiyle birlikte tahakkuk eden vergi kendiliğinden terkin edilir ve mükellefin herhangi bir ödeme yükümlülüğü kalmaz"
+      "A": "Vergi hataları zamanaşımına tabi değildir; hatanın ortaya çıktığı her zaman düzeltme yapılabileceğinden talebin süre yönünden reddi hukuka aykırı olur",
+      "B": "Zamanaşımı dolduktan sonra düzeltme yalnız idare lehine yapılabilir; mükellef lehine düzeltme yasak olduğundan fazla alınan vergi iade edilmez",
+      "C": "Zamanaşımı süresi dolduktan sonra meydana çıkarılan vergi hataları kural olarak düzeltilemez; kanun yalnız sınırlı hâllerde düzeltme süresini uzatmıştır",
+      "D": "Düzeltme zamanaşımı tarh zamanaşımından bağımsız olup on yıldır; bu nedenle beş yıllık sürenin dolması düzeltmeye engel oluşturmaz",
+      "E": "Zamanaşımının dolması hatayı ortadan kaldırır; hata hukuken yok sayılacağından mükellefin dava açma hakkı da bulunmaz"
     },
     "answer": "C",
-    "solution": "Mükellef kural olarak **kendi beyanına karşı dava açamaz** (kendi beyanıyla bağlıdır); ancak **ihtirazi kayıtla beyan** veya **vergi hatası** gibi istisnai hâllerde dava yolu açık olabilir. Sınırsız dava, mutlak dava yasağı, ödememe veya kendiliğinden terkin yanlıştır.",
+    "solution": "**VUK m. 126:** m. 114'te yazılı **zamanaşımı süresi dolduktan sonra meydana çıkarılan vergi hataları düzeltilemez.** Aynı madde, ilan yoluyla tebliğ, ihbarname/ödeme emri tebliği ve haciz gibi sınırlı hâller için düzeltme süresini uzatmaktadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-beyana karşı dava; sınav stiline kalibre)",
-      "legislationRef": "VUK / İYUK - ihtirazi kayıt"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "vh-surec-gen-0018",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'İdarece tarh' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, kendi beyanındaki hesap hatası nedeniyle fazla vergi ödediğini; vergi dairesi ise aynı dönemde başka bir mükelleften hesap hatası nedeniyle eksik vergi alındığını tespit etmiştir. Her iki taraf da düzeltme yoluna başvurmak istemektedir. Buna göre vergi hataları ve düzeltme ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Mükellefin kendi verdiği beyanname ve beyan ettiği matrah esas alınarak vergi dairesince yapılan, sistemde kural sayılan olağan tarh işlemidir",
-      "B": "İkmalen ve re'sen tarh dışında kalan hâllerde, verginin idarece belirlenen matrah üzerinden tarh edilmesidir (ör. mükellefin kanuni sürede vergilendirme ile ilgili ödevlerini yerine getirmemesi)",
-      "C": "Yalnızca takdir komisyonu kararıyla yapılan tarhtır; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "D": "Tarh ve tahakkuk aşamaları tamamlanan verginin, kanuni süresi içinde mükellef tarafından vergi dairesine fiilen ödenmesi suretiyle borcun sona ermesidir",
-      "E": "Vergi kanunlarının vergiyi bağladıkları olayın meydana gelmesi veya hukuki durumun tamamlanmasıyla vergi borcunun maddi bakımdan doğmasıdır"
+      "A": "Mükellefler vergi muamelelerindeki hataların düzeltilmesini vergi dairesinden yazı ile isteyebilirler",
+      "B": "Vergi hatası yalnız mükellef aleyhine sonuç doğuran hâlleri kapsar; eksik vergi alınmasına yol açan durumlar vergi hatası sayılmaz",
+      "C": "Düzeltme talebinin reddi hâlinde mükellefin başvurabileceği hukuki yollar kanunda düzenlenmiştir",
+      "D": "Tarh zamanaşımı süresi dolduktan sonra ortaya çıkarılan vergi hataları kural olarak düzeltilemez",
+      "E": "Vergi hatası, hesaplarda veya vergilendirmede yapılan hatalar yüzünden haksız yere fazla veya eksik vergi istenmesi ya da alınmasıdır"
     },
     "answer": "B",
-    "solution": "**İdarece tarh**, **ikmalen ve re'sen tarh dışında** kalan hâllerde verginin **idarece belirlenen matrah** üzerinden tarh edilmesidir (ör. mükellefin kanuni süresinde vergilendirmeyle ilgili ödevlerini yerine getirmemesi). Beyan üzerine tarh, salt takdir kararı, ödeme veya vergiyi doğuran olay değildir.",
+    "solution": "**VUK m. 116** vergi hatasını *haksız yere fazla **veya eksik** vergi istenmesi veya alınması* olarak tanımlar; hata kavramı iki yönlüdür. Yalnız mükellef aleyhine hâlleri kapsadığını söyleyen ifade yanlıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-idarece tarh; sınav stiline kalibre)",
-      "legislationRef": "VUK mük. md 30 - idarece tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "vh-surec-gen-0019",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Verginin ödeme (tahsil) yeri ve zamanı bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Beyana dayanan bir vergide vergi ziyaına yol açan fiili işleyen mükellef, durumu kendiliğinden ve resmî bir makama bildirmeden önce vergi dairesine dilekçeyle haber vermiş; hiç verilmemiş beyannamesini haber verme tarihinden itibaren on beş gün içinde vermiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Vergi, mükellefin dilediği zaman ve yerde ödeyeceği bir borçtur; kanuni bir vade yoktur; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "B": "Verginin kanunda gösterilmiş bir ödeme zamanı yoktur; bu nedenle vergi süresinde ödenmese dahi mükellef hakkında herhangi bir gecikme zammı veya takip işlemi uygulanamaz",
-      "C": "Vergi borçları yalnızca elden ve nakit olarak ödenebilir; banka, havale veya elektronik ödeme gibi kanallar aracılığıyla vergi tahsilatı yapılamaz",
-      "D": "Vergi, türü ve niteliği ne olursa olsun yalnızca yılda bir kez ve tek seferde ödenebilir; taksitlendirme veya dönemsel ödeme hiçbir vergide mümkün değildir",
-      "E": "Vergi, kanunlarında gösterilen süreler içinde ve bağlı olunan vergi dairesine (ya da yetkili tahsil dairelerine/kanuni ödeme kanallarına) ödenir"
+      "A": "Pişmanlık hükümleri bütün vergi türleri için uygulanır; beyana dayanmayan vergilerde de aynı sonuç doğduğundan ayrım yapılmaz",
+      "B": "Pişmanlık ancak vergi incelemesine başlandıktan sonra istenebilir; inceleme başlamadan yapılan başvurular erken sayıldığından işleme konulmaz",
+      "C": "Pişmanlık hükümleri yalnız beyanname verilmiş olması hâlinde uygulanır; hiç verilmemiş beyanname için pişmanlık talebi kabul edilmeyeceğinden mükellef adına vergi ziyaı cezası kesilir",
+      "D": "Pişmanlık başvurusu vergi aslını da ortadan kaldırır; mükellef yalnız pişmanlık zammını ödeyeceğinden vergi tahsil edilmez",
+      "E": "Şartların gerçekleşmesi hâlinde pişmanlık hükümleri uygulanır ve mükellef adına vergi ziyaı cezası kesilmez; ödenmemiş vergi ile pişmanlık zammı süresinde ödenmelidir"
     },
     "answer": "E",
-    "solution": "Vergi, **kanunlarında gösterilen süreler** içinde ve **bağlı olunan vergi dairesine** (yetkili tahsil daireleri/kanuni ödeme kanalları) ödenir. Serbest vade, yalnız nakit/elden, yılda tek ödeme veya vadesizlik yanlıştır.",
+    "solution": "**VUK m. 371:** beyana dayanan vergilerde vergi ziyaı cezasını gerektiren fiilleri işleyen mükellefler kanunda sayılan şartlarla kendiliğinden dilekçeyle haber verirse **vergi ziyaı cezası kesilmez**; hiç verilmemiş beyannamenin haber verme tarihinden itibaren **on beş gün içinde** verilmesi şartlardandır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ödeme yeri/zamanı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 110-111 - ödeme"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "vh-surec-gen-0020",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vadesinde ödenmeyen bir amme alacağına uygulanan 'gecikme zammı' bakımından doğru ifade aşağıdakilerden hangisidir? (Oran belirtilmemiştir.)",
+    "stem": "Vadesinde ödenmeyen bir amme alacağı için tahsil dairesi ödeme emri düzenlemiştir. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Vadesinde ödenmeyen amme alacağına herhangi bir ek yük veya faiz uygulanmaz; borç, geç ödense dahi yalnızca asıl tutarı üzerinden ve hiçbir artırım yapılmaksızın tahsil edilir",
-      "B": "Gecikme zammı, ayrıca hesaplanan bir tutar olmayıp verginin aslından düşülmek suretiyle uygulanır; böylece mükellefin ödeyeceği toplam borç geç ödeme nedeniyle azalır",
-      "C": "Gecikme zammı kendiliğinden işlemez; yalnızca mükellefin geç ödeme nedeniyle bu yönde talepte bulunması hâlinde ve onun istemine bağlı olarak hesaplanıp uygulanır",
-      "D": "Vadesinde ödenmeyen amme alacağına, ödeme geciktiği süreyle orantılı olarak kanun ve ilgili düzenlemelerde belirlenen oran üzerinden gecikme zammı uygulanır",
-      "E": "Gecikme zammı yalnızca vergi cezalarına uygulanır"
+      "A": "Ödeme müddeti içinde ödenmeyen amme alacağı tahsil dairesince cebren tahsil olunur",
+      "B": "Ödeme emri tebliğ edilen borçluya borcunu ödemesi için altmış günlük bir süre tanınır; bu süre dolmadan cebri takip işlemlerine başlanamayacağından haciz uygulanamaz",
+      "C": "Ödeme emrinde borcun ödenmesi veya mal bildiriminde bulunulması istenir",
+      "D": "Ödeme emri tebliğ edilen borçluya, borcunu ödemesi için otuz günlük bir süre tanınır",
+      "E": "Ödeme emrine karşı tebliğ tarihinden itibaren on beş gün içinde dava açılabilir"
     },
     "answer": "D",
-    "solution": "Vadesinde ödenmeyen amme alacağına, **ödeme geciktiği süreyle orantılı** olarak kanun ve ilgili düzenlemelerde **belirlenen oran** üzerinden **gecikme zammı** uygulanır (geç ödemenin karşılığı). Ek yük yokluğu, talebe bağlılık, asıldan düşme veya yalnız cezaya uygulama yanlıştır.",
+    "solution": "**6183 m. 55:** ödeme emriyle borçluya **on beş gün** süre verilir; otuz günlük süre kanunda öngörülmemiştir. Cebren tahsil m. 54, dava süresi m. 58'de düzenlenmiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-gecikme zammı; sınav stiline kalibre)",
-      "legislationRef": "6183 md 51 - gecikme zammı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "vh-surec-gen-0021",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Gecikme faizi' ile 'gecikme zammı' arasındaki fark bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Kendisine ödeme emri tebliğ edilen bir borçlu, böyle bir borcunun bulunmadığını ileri sürmek istemektedir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Gecikme faizi ile gecikme zammı tümüyle aynı kavramlar olup uygulama alanları, hesaplanma dönemleri ve hukuki nitelikleri arasında herhangi bir fark bulunmaz; ikisi birbirinin yerine kullanılır",
-      "B": "Gecikme faizi ve gecikme zammı Türk vergi mevzuatında yer almayan, yalnızca özel hukuk borç ilişkilerinde geçerli olan ve amme alacaklarına uygulanmayan kavramlardır",
-      "C": "Gecikme faizi yalnızca cezalara, gecikme zammı yalnızca harçlara uygulanır ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz; söz konusu durum yalnızca belirli kamu idareleriyle olan ilişkilerde geçerli sayılabilir",
-      "D": "Gecikme faizi ve gecikme zammı yalnızca mükellef lehine işleyen, borcu azaltıcı nitelikte kavramlar olup her ikisi de mükellefin devletten alacaklı çıkmasını sağlayan uygulamalardır",
-      "E": "Gecikme faizi kural olarak ikmalen/re'sen/idarece tarh edilen vergilerde, verginin normal vade tarihinden tahakkuka kadar geçen süre için; gecikme zammı ise vadesinde ödenmeyen (tahsil aşamasındaki) amme alacakları için uygulanır"
+      "A": "Ödeme emrine karşı her türlü iddia ileri sürülebilir; kanun dava sebeplerini sınırlamadığından matraha ilişkin itirazlar da bu aşamada incelenir",
+      "B": "Ödeme emrine karşı dava süresi otuz gündür; genel dava açma süresi uygulandığından ayrı bir süre öngörülmemiştir",
+      "C": "Ödeme emrine karşı dava açılamaz; borçlu ancak borcu ödedikten sonra iade davası açabileceğinden ödeme emri aşamasında ileri sürülecek bir hukuki yol bulunmaz",
+      "D": "Ödeme emrine itiraz yalnız tahsil dairesine yapılır; idari başvuru zorunlu olduğundan doğrudan dava açılamaz",
+      "E": "Borçlu; böyle bir borcu olmadığı, kısmen ödediği veya alacağın zamanaşımına uğradığı iddialarıyla tebliğ tarihinden itibaren on beş gün içinde dava açabilir"
     },
     "answer": "E",
-    "solution": "**Gecikme faizi** kural olarak **ikmalen/re'sen/idarece tarh** edilen vergilerde, verginin **normal vadesinden tahakkuka** kadar geçen süre için; **gecikme zammı** ise **vadesinde ödenmeyen (tahsil aşamasındaki)** amme alacakları için uygulanır. İkisi aynı değildir; ceza/harç ayrımı veya mükellef lehine işleme yanlıştır.",
+    "solution": "**6183 m. 58:** kendisine ödeme emri tebliğ olunan şahıs, **böyle bir borcu olmadığı veya kısmen ödediği veya zamanaşımına uğradığı** hakkında tebliğ tarihinden itibaren **on beş gün içinde** dava açabilir. Dava sebepleri kanunla sınırlanmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-gecikme faizi/zammı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 112 / 6183 md 51"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "vh-surec-gen-0022",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Verginin cebren tahsili' bakımından, ödeme emrine rağmen borcunu ödemeyen mükellefe uygulanabilecek yollardan biri aşağıdakilerden hangisidir?",
+    "stem": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürecektir. Borçlu tahsil dairesine başvurmuştur. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Borcunu ödemeyen mükellefe teşekkür belgesi verilerek borcun gönüllü olarak ödenmesinin beklenmesi ve bu süreçte hiçbir icrai işlem yapılmaması",
-      "B": "Ödeme emrine rağmen ödenmeyen vergi borcunun, herhangi bir takip işlemine gerek kalmaksızın belirli bir süre sonunda kendiliğinden silinmesi",
-      "C": "Mükellefin mal varlığının haczi ve satışı yoluyla alacağın tahsili",
-      "D": "Borcunu vadesinde ödemeyen mükellefin, idareyle iş birliği yaptığı gerekçesiyle ödüllendirilerek borcunun bir bölümünün kendisine iade edilmesi",
-      "E": "Verginin mükellef lehine terkin edilmesi; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar"
+      "A": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürse dahi tecil istenemez; kanun ödeme güçlüğünü bir erteleme sebebi saymadığından başvuru reddedilir",
+      "B": "Tecil kural olarak teminat karşılığında yapılır",
+      "C": "Tecil kararı verilmesi hâlinde amme alacağı sona erer ve borçlunun ödeme yükümlülüğü ortadan kalkar",
+      "D": "Tecil, borcun ödenme zamanını erteleyen bir işlemdir",
+      "E": "Kanunda sayılan afetler nedeniyle zarara uğrayanların borçları terkin edilebilir"
     },
     "answer": "C",
-    "solution": "Ödeme emrine rağmen borcunu ödemeyen mükellefe karşı, amme alacağının **cebren tahsili** için **haciz ve satış** (ayrıca teminat isteme, ihtiyati haciz, iflas isteme) gibi yollara başvurulabilir. Teşekkür/ödül/kendiliğinden silme veya terkin cebri tahsil yolu değildir.",
+    "solution": "**6183 m. 48** tecili ödemenin **ertelenmesi** olarak düzenler; alacak varlığını sürdürür. Alacağı gerçekten sona erdiren işlem **m. 105**'teki terkindir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-cebri tahsil; sınav stiline kalibre)",
-      "legislationRef": "6183 - cebren tahsil"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "vh-surec-gen-0023",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Amme alacağının cebren tahsilinde, borçluya gönderilen ve borcunu belirli süre içinde ödemesi ya da mal bildiriminde bulunması gereğini bildiren belge aşağıdakilerden hangisidir?",
+    "stem": "Doğal afet nedeniyle varlıklarının önemli bir bölümünü kaybeden bir mükellefin amme borçları gündeme gelmiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Ödeme emri",
-      "B": "Vergi/ceza ihbarnamesi",
-      "C": "Yoklama fişi",
-      "D": "Vergi inceleme raporu",
-      "E": "Uzlaşma tutanağı"
+      "A": "Kanunda sayılan afetler yüzünden zarara uğrayan mükelleflerin ilgili amme alacakları kısmen veya tamamen terkin edilebilir; terkin alacağı sona erdirir",
+      "B": "Afet hâlinde borçlar yalnız tecil edilebilir; terkin imkânı bulunmadığından borç ertelenmekle birlikte varlığını sürdürür ve tecil süresi sonunda tamamı yeniden istenir",
+      "C": "Terkin yalnız vergi cezaları için uygulanır; vergi aslı bakımından silme imkânı olmadığından asıl borç aynen kalır",
+      "D": "Afetten doğan zararlar yalnız gelecek dönem matrahından indirilebilir; mevcut borçlar üzerinde bir etkisi bulunmaz",
+      "E": "Terkin ancak mükellefin iflası hâlinde mümkündür; afet hâli terkin sebebi sayılmadığından talep reddedilir"
     },
     "answer": "A",
-    "solution": "Cebren tahsilde borçluya gönderilen ve borcunu belirli sürede **ödemesi ya da mal bildiriminde bulunması** gereğini bildiren belge **ödeme emridir** (6183). İhbarname tarhiyatı, yoklama fişi tespiti, inceleme raporu incelemeyi, uzlaşma tutanağı uzlaşmayı belgeler.",
+    "solution": "**6183 m. 105:** yangın, yer sarsıntısı, su basması, kuraklık gibi **afetler yüzünden zarara maruz kalan** mükelleflerin bu Kanun kapsamındaki borçları, kanunda belirtilen şartlarla **terkin** olunur. Terkin, alacağı sona erdiren bir işlemdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ödeme emri; sınav stiline kalibre)",
-      "legislationRef": "6183 md 55 - ödeme emri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "vh-surec-gen-0024",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'İhtiyati haciz' ve 'ihtiyati tahakkuk' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Vadesinde ödenmeyen bir amme alacağı için tahsil dairesi ödeme emri düzenlemiş; borçlu hem süre hem de ileri sürebileceği sebepler bakımından hakları konusunda bilgi almak istemiştir. Buna göre amme alacaklarının tahsili ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "İhtiyati haciz ve ihtiyati tahakkuk, borcunu zamanında ödeyen mükelleflere idarece tanınan ödül niteliğinde işlemler olup amme alacağının güvence altına alınmasıyla ilgileri yoktur",
-      "B": "Amme alacağının tahsilinin tehlikeye girdiği belirli hâllerde, alacağı güvence altına almak amacıyla başvurulan koruma (teminat) niteliğinde önlemlerdir",
-      "C": "Bunlar verginin kendiliğinden silinmesini sağlar; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
-      "D": "İhtiyati haciz ve ihtiyati tahakkuk yalnızca mükellefin kendi talebiyle uygulanabilen, idarenin resen başvuramayacağı isteğe bağlı işlemlerdir",
-      "E": "İhtiyati haciz ve ihtiyati tahakkuk Türk vergi mevzuatında yer almayan, yalnızca özel hukuk alacakları için öngörülmüş kavramlardır"
+      "A": "Ödeme müddeti içinde ödenmeyen amme alacağı tahsil dairesince cebren tahsil olunur",
+      "B": "Ödeme emri tebliğ edilen borçlu, tebliğ tarihinden itibaren otuz gün içinde ve her türlü sebebe dayanarak dava açabilir",
+      "C": "Amme alacağını vadesinde ödemeyenlere on beş gün içinde ödeme veya mal bildirimi için ödeme emri tebliğ olunur",
+      "D": "Amme alacağı, vadesinin rastladığı takvim yılını takip eden yıl başından itibaren beş yıl içinde tahsil edilmezse zamanaşımına uğrar",
+      "E": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürecekse alacak teminat karşılığında tecil edilebilir"
     },
     "answer": "B",
-    "solution": "**İhtiyati haciz** ve **ihtiyati tahakkuk**, amme alacağının tahsilinin **tehlikeye girdiği** belirli hâllerde alacağı **güvence altına almak** amacıyla başvurulan **koruma (teminat)** niteliğinde önlemlerdir. Ödül, silme, salt mükellef talebi veya yokluk yanlıştır.",
+    "solution": "**6183 m. 58:** ödeme emrine karşı dava süresi **on beş gün**dür ve sebepler **borcun bulunmadığı, kısmen ödendiği veya zamanaşımına uğradığı** iddialarıyla sınırlıdır. Hem süreyi hem de sebep serbestisini yanlış gösteren şık hükme aykırıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ihtiyati haciz/tahakkuk; sınav stiline kalibre)",
-      "legislationRef": "6183 md 13-17 - koruma önlemleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "vh-surec-gen-0025",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Süreç vergiyi doğuran olayla başlar.\n\nII. Tahsil, verginin kanuna uygun biçimde ödenmesidir.\n\nIII. Tahakkuk, tahsil edilen verginin mükellefçe vergi dairesine fiilen ödenmesidir.",
+    "stem": "Bir mükellefin defter ve belgeleri, kendi iradesi dışında meydana gelen bir su baskını sonucu elden çıkmıştır. Mükellef bu durumu ispatlamıştır. Buna göre süreler bakımından aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I, II ve III (her üç ifade de doğrudur)",
-      "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
+      "A": "Mücbir sebep yalnız ceza kesilmesini engeller; süreler bakımından bir sonuç doğurmadığından beyanname süresinde verilmelidir",
+      "B": "Mücbir sebep ortadan kalkıncaya kadar süreler işlemez ve tarh zamanaşımı işlemeyen süreler kadar uzar",
+      "C": "Mücbir sebep sürelerin işlemesini etkilemez; mükellef ödevlerini zamanında yerine getirmekle yükümlü olduğundan gecikme cezası uygulanır",
+      "D": "Mücbir sebep hâlinde süreler durmaz ancak kesilir; bu nedenle süreler mücbir sebebin sona ermesiyle baştan işlemeye başlar ve zamanaşımı uzamaz",
+      "E": "Mücbir sebep hâlinde vergi alacağı tümüyle ortadan kalkar; alacak doğmamış sayılacağından tarh işlemi de yapılamaz"
     },
     "answer": "B",
-    "solution": "**III yanlış:** tahakkuk, tarh ve tebliğ edilen verginin ödenmesi gereken safhaya gelmesidir (VUK md 22); verginin fiilen ödenmesi ise tahsildir. **I** sürecin vergiyi doğuran olayla başlaması ve **II** tahsilin tanımı doğrudur. Doğru cevap **I ve II**.",
+    "solution": "**VUK m. 13** mücbir sebepleri sayar (sahibinin iradesi dışında defter ve vesikaların elden çıkması dâhil); **m. 15:** mücbir sebeplerden birinin bulunması hâlinde **bu sebep ortadan kalkıncaya kadar süreler işlemez** ve **tarh zamanaşımı işlemeyen süreler kadar uzar**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III süreç; sınav stiline kalibre)",
-      "legislationRef": "VUK md 19-22-23"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "vh-surec-gen-0026",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Bir vergi, doğduğu yılı izleyen beşinci yılın sonuna kadar tarh ve tebliğ edilmemiştir. Bu durumun sonucu bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, ihtirazi kayıt koymaksızın verdiği beyannamedeki matraha karşı vergi mahkemesinde dava açmak istemektedir; ortada bir vergi hatası da bulunmamaktadır. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Tarh zamanaşımı dolduğundan vergi artık tarh ve tebliğ edilemez; vergi alacağı zamanaşımına uğramıştır",
-      "B": "Tarh zamanaşımı diye bir kurum bulunmadığından vergi, doğduğu yıldan sonra herhangi bir süre sınırı olmaksızın her zaman tarh ve tebliğ edilebilir",
-      "C": "Tarh zamanaşımı kendiliğinden dolmaz; ancak mükellefin bu yönde talepte bulunması hâlinde ve onun istemine bağlı olarak sonuç doğurur",
-      "D": "Sürenin geçmesi verginin ortadan kalkmasına yol açmaz; aksine vergi, gecikme nedeniyle iki katına çıkarılarak mükelleften tahsil edilir",
-      "E": "Zamanaşımı süresi bu durumda otomatik olarak on yıla uzar ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz"
+      "A": "Mükellefler beyan ettikleri matrahlara karşı serbestçe dava açabilirler; beyan mükellefi bağlamadığından bir sınırlama yoktur",
+      "B": "Dava açılabilmesi için verginin tarh edilmiş veya cezanın kesilmiş olması gerekir",
+      "C": "Beyana karşı dava ancak verginin ödenmesinden sonra açılabilir; ödeme yapılmadığı sürece dava şartı gerçekleşmediğinden mahkeme işin esasına giremez ve istem usulden reddedilir",
+      "D": "Vergi hatalarına ilişkin hükümler beyana karşı dava yasağının istisnasını oluşturur",
+      "E": "Mükellefler ve kendilerine ceza kesilenler tarh edilen vergilere karşı dava açabilirler"
     },
     "answer": "A",
-    "solution": "Vergi, doğduğu yılı izleyen yıl başından itibaren **beş yıl** içinde tarh-tebliğ edilmezse **tarh zamanaşımı dolar** ve vergi **artık tarh/tebliğ edilemez**. Süresiz tarh, talebe bağlılık, iki kat tahsil veya sürenin kendiliğinden uzaması yanlıştır.",
+    "solution": "**VUK m. 378/2:** mükellefler **beyan ettikleri matrahlara karşı dava açamazlar**; vergi hatalarına ilişkin hükümler saklıdır. Serbest dava hakkı tanıyan ifade bu hükme aykırıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (senaryo-tarh zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 114 - tarh zamanaşımı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "vh-surec-gen-0027",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Takas (mahsup)' yoluyla vergi alacağının sona ermesi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "İkmalen tarh edilen bir vergi ve buna ilişkin vergi ziyaı cezası için mükellef uzlaşma talebinde bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Vergi hukukunda takas mümkün değildir; mükellefin devletten olan alacağı ile vergi borcu, koşullar oluşsa dahi karşılıklı olarak mahsup edilemez",
-      "B": "Takas yalnızca vergi cezaları bakımından geçerli olup asıl vergi borçları ile mükellefin iade alacakları arasında mahsup yapılamaz",
-      "C": "Takas yalnızca iki mükellef arasında yapılır ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "D": "Takas yoluyla mahsup, borcu sona erdirmek yerine vergi borcunu iki katına çıkarır; bu nedenle mükellef aleyhine sonuç doğuran bir işlemdir",
-      "E": "Mükellefin devletten olan (ör. iade edilecek vergi) alacağı ile vergi borcunun, kanunda öngörülen koşullarla karşılıklı olarak mahsup edilmesi mümkündür"
+      "A": "Uzlaşma talebi dava açma süresini kesmez ve durdurmaz; bu nedenle uzlaşma isteyen mükellefin aynı süre içinde ayrıca dava açması gerekir, aksi hâlde vergi kesinleşir",
+      "B": "Uzlaşma bütün vergi cezalarını kapsar; kaçakçılık fiillerinden doğan cezalar da uzlaşma konusu olabildiğinden ayrım yapılmaz",
+      "C": "Uzlaşma ancak vergi mahkemesinin onayıyla geçerli olur; idare ile mükellef arasındaki anlaşma tek başına sonuç doğurmadığından karar beklenir",
+      "D": "Uzlaşma yalnız beyana dayanan vergilerde mümkündür; ikmalen tarh edilen vergilerde uzlaşma yoluna gidilemeyeceğinden talep reddedilir",
+      "E": "İkmalen, re'sen veya idarece tarh edilen vergiler ile bunlara ilişkin vergi ziyaı cezaları uzlaşma konusu olabilir; kaçakçılık fiillerine bağlı cezalar kapsam dışındadır"
     },
     "answer": "E",
-    "solution": "Mükellefin devletten olan **alacağı (ör. iade edilecek vergi)** ile **vergi borcu**, kanundaki koşullarla **karşılıklı mahsup (takas)** edilebilir ve borç bu ölçüde sona erer. Takasın imkânsızlığı, iki mükellef arası olması, borcu artırması veya yalnız cezaya özgülüğü yanlıştır.",
+    "solution": "**VUK Ek m. 1:** mükellef tarafından **ikmalen, re'sen veya idarece tarh edilen vergilerle bunlara ilişkin vergi ziyaı cezalarının** (**m. 359**'da yazılı kaçakçılık fiilleriyle ziyaa uğratılanlar hariç) tarhiyat sonrası uzlaşma konusu yapılması mümkündür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-takas/mahsup; sınav stiline kalibre)",
-      "legislationRef": "VUK / 6183 - mahsup ve takas"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "vh-surec-gen-0028",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Tahakkuktan vazgeçme' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Mahiyeti itibarıyla tahakkuku tahsile bağlı olan bir vergide, verginin tahsil edilmesi hâlinde tahakkuk bakımından aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Her tutardaki vergiden idarenin serbestçe vazgeçmesidir; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir",
-      "B": "Mükellefin, beyan ettiği vergiyi kendi isteğiyle daha yüksek bir tutara çıkararak gönüllü biçimde artırması ve fazladan vergi ödemeyi kabul etmesidir",
-      "C": "Tahsili güçleşen vergilerde alacağın, geç ödeme karşılığı olarak iki katına çıkarılması ve mükelleften bu artırılmış tutar üzerinden istenmesidir",
-      "D": "Kanunda belirlenen tutarı aşmayan (çok küçük) ve tahsili için yapılacak masrafın kendisinden fazla olacağı düşünülen vergilerde, verginin tahakkukundan vazgeçilmesidir",
-      "E": "Ödeme emrine rağmen ödenmeyen verginin, mükellefin mallarının haczi ve satışı yoluyla zorla tahsil edilmesi sürecidir"
+      "A": "Bu vergilerde tahakkuk yalnız ihbarname ile sağlanır; tahsil işleminin tahakkuka etkisi bulunmadığından ayrıca ihbarname düzenlenir",
+      "B": "Bu vergilerde önce tahakkuk, sonra tahsil işlemi yapılır; sıralamanın değiştirilmesi mümkün olmadığından tahsil tek başına sonuç doğurmaz",
+      "C": "Bu vergilerde tahakkuk hiç gerçekleşmez; vergi doğrudan tahsil edildiğinden tahakkuk aşaması hukuken var olmaz ve zamanaşımı işlemez",
+      "D": "Bu vergilerde verginin tahsili tahakkuku da içine alır; ayrıca bir tahakkuk işlemi yapılmasına gerek kalmaz",
+      "E": "Bu vergilerde tahsil ancak tahakkuk fişi düzenlendikten sonra yapılabilir; fiş olmadan yapılan tahsilat hukuken geçersiz sayılır"
     },
     "answer": "D",
-    "solution": "**Tahakkuktan vazgeçme**, kanunda belirlenen **tutarı aşmayan (çok küçük)** ve tahsil masrafı kendisinden fazla olacak vergilerde, verginin **tahakkukundan vazgeçilmesidir** (idari etkinlik). Serbest vazgeçme, verginin artması, gönüllü artırım veya cebri tahsil yanlıştır.",
+    "solution": "**VUK m. 24:** mahiyetleri itibarıyla **tahakkuku tahsile bağlı vergilerde verginin tahsili tahakkuku da içine alır.** Damga vergisinin pul yapıştırılarak ödenmesi bu türün tipik örneğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tahakkuktan vazgeçme; sınav stiline kalibre)",
-      "legislationRef": "VUK mük. md 115 - tahakkuktan vazgeçme"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "vh-surec-gen-0029",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Aşağıdakilerden hangisi vergilendirme süreci bakımından YANLIŞ bir ifadedir?",
+    "stem": "Vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi alacağı, vergi kanunlarının vergiyi bağladıkları olayın vukuu veya hukuki durumun tekemmülü ile doğar.\n\nII. Beyan üzerinden alınan vergiler tahakkuk fişi ile tarh ve tahakkuk ettirilir.\n\nIII. İkmalen ve re'sen tarh edilen vergiler de tahakkuk fişi ile tebliğ olunur.",
     "options": {
-      "A": "Kural olan tarh usulü beyana dayanan tarhtır",
-      "B": "Tebliğ, hüküm ifade eden hususların yazı ile bildirilmesidir",
-      "C": "Re'sen tarh, mükellefin beyanı esas alınarak yapılan olağan tarhtır",
-      "D": "Ödeme (tahsil) vergi alacağını sona erdirir",
-      "E": "Tarh zamanaşımı kural olarak beş yıldır"
+      "A": "Yalnız I",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "I, II ve III",
+      "E": "II ve III"
     },
     "answer": "C",
-    "solution": "Yanlış ifade: **re'sen tarh, mükellefin beyanı esas alınarak yapılan OLAĞAN tarh DEĞİLDİR**; matrahın tespit edilemediği hâllerde takdir/inceleme esaslı yapılan istisnai bir tarhtır. Beyana dayanan tarh olağandır. Diğer ifadeler doğrudur.",
+    "solution": "**I doğru:** m. 19. **II doğru:** m. 25. **III yanlış:** **m. 34** uyarınca ikmalen ve re'sen tarh edilen vergiler **ihbarname** ile tebliğ olunur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "VUK md 30 - re'sen tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "vh-surec-gen-0030",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Tarh usulleri ile ilgili aşağıdaki eşleştirmelerden hangisi DOĞRUDUR?",
+    "stem": "Tarh usulleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İkmalen tarh, daha önce hiçbir vergi tarh edilmemiş olmasını gerektirir.\n\nII. Re'sen tarhta matrah, takdir komisyonunca takdir edilebileceği gibi vergi inceleme raporunda da belirtilebilir.\n\nIII. Re'sen tarh, matrahın defter ve belgelere dayanılarak tespitine imkân bulunmayan hâllerde uygulanır.",
     "options": {
-      "A": "Beyana dayanan tarh → matrahın hiç tespit edilemediği hâllerde takdir yoluyla tarh",
-      "B": "İkmalen tarh → daha önce tarh edilen vergiye, sonradan ortaya çıkan matrah farkı üzerinden yapılan ek tarh",
-      "C": "Re'sen tarh → mükellefin beyanı üzerine yapılan olağan tarh",
-      "D": "İdarece tarh → verginin mükellefçe ödenmesi",
-      "E": "Beyana dayanan tarh → verginin cebren tahsili"
+      "A": "Yalnız I",
+      "B": "II ve III",
+      "C": "Yalnız II",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "B",
-    "solution": "Doğru eşleştirme: **ikmalen tarh → daha önce tarh edilen vergiye, sonradan ortaya çıkan matrah farkı üzerinden yapılan ek tarh**. Beyan usulü olağandır (takdir değil), re'sen matrah tespit edilemeyince yapılır (beyan değil), idarece tarh ödeme değildir.",
+    "solution": "**I yanlış:** m. 29 uyarınca ikmalen tarh, **bir vergi tarh edildikten sonra** ortaya çıkan matrah farkı içindir; önceki tarhiyatın yokluğunu değil, varlığını arar. **II ve III doğru:** m. 30.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (eşleştirme-tarh usulleri; sınav stiline kalibre)",
-      "legislationRef": "VUK md 25-29-30"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "vh-surec-gen-0031",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi/ceza ihbarnamesi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef beyannamesini süresinde vermiş; vergi dairesi beyannamedeki matrahı aynen kabul ederek tahakkuk fişi düzenlemiştir. Mükellef daha sonra beyanında maddi bir hesap hatası bulunduğunu fark etmiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "İhbarname, mükellefin vergi dairesine verdiği beyannamedir; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "B": "İhbarname yalnızca yoklama sırasında ve yoklama memuru tarafından düzenlenen, mükellefiyetle ilgili maddi tespitleri içeren bir belge niteliğindedir",
-      "C": "İhbarname, tahakkuk eden verginin mükellef tarafından ödendiğini kanıtlayan ve vergi dairesince verilen bir ödeme makbuzu niteliğindedir",
-      "D": "İhbarname, ikmalen, re'sen veya idarece tarh edilen vergi ile kesilen cezanın mükellefe tebliğ edilmesini sağlayan belgedir",
-      "E": "İhbarname, mükellef ile idare arasında yürütülen uzlaşma görüşmelerinin sonucunu ve varılan mutabakatı gösteren bir tutanak niteliğindedir"
+      "A": "Mükellef beyanına karşı doğrudan dava açabilir; beyana karşı dava yasağı bulunmadığından düzeltme yoluna gitmeye gerek kalmaz",
+      "B": "Beyan edilen matrah kesin olduğundan hiçbir düzeltme yapılamaz; mükellef kendi beyanıyla bağlı sayıldığından hata iddiası ne idari başvuruda ne de yargı önünde dinlenir",
+      "C": "Düzeltme yalnız idarenin yaptığı hatalar için mümkündür; mükellefin kendi beyanındaki hatalar düzeltme kapsamı dışında kaldığından talep reddedilir",
+      "D": "Beyana karşı dava yolu kural olarak kapalı olsa da ortada bir vergi hatası bulunduğundan mükellef düzeltme hükümlerine dayanarak vergi dairesinden düzeltme isteyebilir",
+      "E": "Hata ancak vergi incelemesi sırasında ortaya çıkarsa düzeltilebilir; mükellefin kendiliğinden yaptığı başvuru işleme konulmaz"
     },
     "answer": "D",
-    "solution": "**Vergi/ceza ihbarnamesi**, ikmalen/re'sen/idarece **tarh edilen vergi ile kesilen cezanın** mükellefe **tebliğ edilmesini** sağlayan belgedir. Beyanname mükellefin bildirimi, makbuz ödeme belgesi, yoklama fişi tespit, uzlaşma tutanağı uzlaşma belgesidir.",
+    "solution": "**VUK m. 378/2** beyana karşı dava yasağını düzenlerken **vergi hatalarına ilişkin hükümleri saklı tutar**. Hesap hatası **m. 116** kapsamında vergi hatasıdır; **m. 122** uyarınca düzeltme yazı ile istenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ihbarname; sınav stiline kalibre)",
-      "legislationRef": "VUK md 34-35 - ihbarname"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "vh-surec-gen-0032",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Elektronik ortamda tebliğ (e-tebligat) bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Vergi dairesi, mükellefin bilinen işyeri adresine tebligat çıkarmış; tebligat, adreste bulunan ve mükellefin yanında çalışan bir işçiye yapılmıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Elektronik ortamda yapılan tebligat geçerli değildir; tebliğ ancak kâğıt üzerinde ve fiziki olarak yapıldığında hukuki sonuç doğurur",
-      "B": "Tebliğe elverişli elektronik adres aracılığıyla yapılan elektronik tebligat, VUK'ta öngörülen koşullarda geçerli bir tebliğ usulüdür ve belirlenen esaslara göre muhataba ulaşmış (tebliğ edilmiş) sayılır",
-      "C": "Elektronik tebliğ yalnızca mükellefin her seferinde yazılı onayıyla yapılabilir; söz konusu durum yalnızca belirli kamu idareleriyle olan ilişkilerde geçerli sayılabilir",
-      "D": "Elektronik tebligat yalnızca yurt dışında bulunan mükelleflere yapılabilen, Türkiye'de yerleşik mükellefler bakımından başvurulamayan istisnai bir usuldür",
-      "E": "Elektronik tebligat kâğıt tebliğin yerine geçemez; elektronik adrese yapılan bildirim ancak fiziki tebliğ ile birlikte yapıldığında geçerli sayılır"
+      "A": "İşyerinde bulunan herhangi bir kişiye yapılan tebliğ geçerlidir; kanun tebliğ yapılacak kişiler bakımından bir sınırlama getirmediğinden süreler işlemeye başlar",
+      "B": "Tebliğ mükellefe, kanuni temsilcisine, umumi vekiline veya ceza kesilene yapılır; kanunun aradığı sıfatı taşımayan kişiye yapılan tebliğ usulüne uygun sayılmaz",
+      "C": "Bu hâlde tebliğ ilanen yapılmış sayılır; adreste kimse bulunmadığı varsayıldığından bir ay sonunda tebliğ tamamlanmış kabul edilir",
+      "D": "Tebliğ yalnız mükellefin bizzat kendisine yapılabilir; kanuni temsilciye yapılan tebliğ dahi geçersiz olduğundan işlem baştan sakattır",
+      "E": "İşyeri adresine yapılan her tebligat geçerlidir; adresin doğruluğu tek başına yeterli sayıldığından tebliğ yapılan kişinin sıfatı önem taşımaz"
     },
     "answer": "B",
-    "solution": "**Elektronik tebligat**, tebliğe elverişli **elektronik adres** aracılığıyla yapılan ve VUK'ta öngörülen koşullarda **geçerli** bir tebliğ usulüdür; belirlenen esaslara göre muhataba **ulaşmış (tebliğ edilmiş) sayılır**. Geçersizlik, her seferinde yazılı onay, yalnız yurt dışı veya kâğıdın yerini alamaması yanlıştır.",
+    "solution": "**VUK m. 94:** tebliğ **mükelleflere, bunların kanuni temsilcilerine, umumi vekillerine veya vergi cezası kesilenlere** yapılır. Kanunun saydığı sıfatlardan birini taşımayan kişiye yapılan tebliğ usulsüzdür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-elektronik tebliğ; sınav stiline kalibre)",
-      "legislationRef": "VUK md 107/A - elektronik tebligat"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "vh-surec-gen-0033",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilerin tahsilinde yetkili genel idare bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefin vergi borcunun bir kısmı ödenmiş, bir kısmı için tecil kararı alınmış, ayrı bir dönemine ilişkin alacak ise tarh zamanaşımına uğramıştır. Mükellef bütün bu alacakların sona erdiğini ileri sürmektedir. Buna göre vergi alacağını sona erdiren hâller ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Genel bütçeye giren vergiler dâhil tüm vergiler yalnızca belediyeler tarafından tarh, tahakkuk ve tahsil edilir; Gelir İdaresi Başkanlığının bu konuda herhangi bir yetkisi yoktur",
-      "B": "Vergilerin tarh, tahakkuk ve tahsili yalnızca mahkemeler tarafından yürütülür; idari birimlerin vergi tahsil etme yetkisi bulunmaz",
-      "C": "Vergiler yalnızca özel bankalar tarafından tahsil edilir; kamu idarelerinin ve vergi dairelerinin doğrudan vergi tahsil etme yetkisi bulunmaz",
-      "D": "Vergilerin tahsili tümüyle mükelleflerin iradesine bırakılmıştır ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz",
-      "E": "Genel bütçeye giren vergilerin tarh, tahakkuk ve tahsili görevi esas olarak Hazine ve Maliye Bakanlığına bağlı Gelir İdaresi Başkanlığı ve onun taşra teşkilatı (vergi daireleri) tarafından yürütülür"
+      "A": "Tahsil zamanaşımının dolması amme alacağının tahsil edilebilirliğini ortadan kaldırır",
+      "B": "Kanunda sayılan afetler nedeniyle terkin, amme alacağını sona erdirir",
+      "C": "Tarh zamanaşımının dolması hâlinde vergi artık tarh ve tebliğ edilemez",
+      "D": "Ödeme, vergi alacağını sona erdiren en olağan hâldir",
+      "E": "Tecil, amme alacağını sona erdiren hâllerden biri olup tecil kararıyla borç ortadan kalkar"
     },
     "answer": "E",
-    "solution": "Genel bütçe vergilerinin tarh-tahakkuk-tahsili esas olarak **Hazine ve Maliye Bakanlığına bağlı Gelir İdaresi Başkanlığı** ve taşra teşkilatı (**vergi daireleri**) tarafından yürütülür. Yalnız belediye/banka/mahkeme veya mükellef iradesi yanlıştır.",
+    "solution": "**6183 m. 48** tecili, ödemenin **belirli şartlarla ertelenmesi** olarak düzenler; borç sona ermez, yalnız ödeme zamanı değişir. Terkin (m. 105) ise alacağı gerçekten sona erdirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-vergi idaresi; sınav stiline kalibre)",
-      "legislationRef": "Gelir İdaresi Başkanlığı / vergi daireleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "vh-surec-gen-0034",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi alacağının güvence altına alınması amacıyla istenebilen 'teminat' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefe ikmalen tarh edilen vergiye ilişkin ihbarname 5 Nisan'da tebliğ edilmiş; mükellef 20 Nisan'da vergi mahkemesinde dava açmıştır. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Kanunda belirtilen hâllerde (ör. amme alacağının tehlikede olması) borçludan, alacağı karşılamaya yeterli teminat istenebilir",
-      "B": "Amme alacağı ne kadar tehlikede olursa olsun borçludan teminat istenemez; idarenin alacağı güvence altına almaya yönelik teminat isteme yetkisi bulunmaz",
-      "C": "Teminat, borcunu zamanında ödeyen mükelleflere idarece verilen bir ödül niteliğinde olup amme alacağının güvenceye alınmasıyla herhangi bir ilgisi yoktur",
-      "D": "Borçludan teminat alınması, vergi borcunun kendiliğinden silinmesini sağlar; teminat gösteren mükellefin borcu bu suretle tamamen ortadan kalkar",
-      "E": "Teminat yalnızca cezalara ilişkin istenir, asıl vergiye ilişkin istenmez; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar"
+      "A": "Dava açılması verginin tarhını ortadan kaldırır; idarenin aynı dönem için yeniden tarhiyat yapması gerekir",
+      "B": "Mükellefler tarh edilen vergilere karşı vergi mahkemesinde dava açabilirler",
+      "C": "Tahakkuk, tarh ve tebliğ edilen verginin ödenmesi gereken safhaya gelmesidir",
+      "D": "İhbarnameye bağlı tarhiyatta süresinde açılan dava tahakkuku ertelemez; vergi tebliğ anında ödenmesi gereken safhaya geldiğinden idare yargılama sürerken cebri takibe geçebilir",
+      "E": "Dava açma süresi dava açılmaksızın geçerse vergi tahakkuk eder"
     },
     "answer": "A",
-    "solution": "Kanunda belirtilen hâllerde (ör. amme alacağının **tehlikede** olması, tarhiyat/inceleme durumları) borçludan alacağı karşılamaya yeterli **teminat** istenebilir (alacağın güvenceye alınması). Teminatın hiç istenememesi, ödül olması, silme sağlaması veya yalnız cezaya özgülüğü yanlıştır.",
+    "solution": "Dava, verginin **tahakkukunu** erteler (m. 22); **tarh işlemini ortadan kaldırmaz**. Tarhın hukuka aykırılığı ancak yargı kararıyla saptanır ve o zaman işlem iptal edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-teminat; sınav stiline kalibre)",
-      "legislationRef": "6183 md 9-10 - teminat"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "vh-surec-gen-0035",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi alacağını sona erdiren hâller ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Ödeme, vergi alacağını sona erdirir.\n\nII. Terkin, vergi ve cezanın matrahının artırılarak yeniden hesaplanmasıdır.\n\nIII. Zamanaşımı, vergi alacağını sona erdirir.",
+    "stem": "Vergi hatalarında düzeltme ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellefler vergi muamelelerindeki hataların düzeltilmesini yalnız sözlü başvuruyla isteyebilirler.\n\nII. Vergi hatası, haksız yere fazla veya eksik vergi istenmesi ya da alınmasıdır.\n\nIII. Tarh zamanaşımı süresi dolduktan sonra ortaya çıkarılan vergi hataları her hâlde düzeltilir.",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "I, II ve III (her üç ifade de doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "II ve III (ikinci ve üçüncü ifadeler doğrudur)"
+      "A": "I ve II",
+      "B": "Yalnız III",
+      "C": "Yalnız I",
+      "D": "Yalnız II",
+      "E": "II ve III"
     },
     "answer": "D",
-    "solution": "**II yanlış:** terkin, belirli hâllerde (doğal afet, yargı kararı, tahsil imkânsızlığı vb.) vergi/cezanın silinmesi/kaldırılmasıdır; matrahın artırılması değildir. **I** ödemenin ve **III** zamanaşımının vergi alacağını sona erdirmesi doğrudur. Doğru cevap **I ve III**.",
+    "solution": "**I yanlış:** m. 122 düzeltmenin **yazı ile** istenmesini öngörür. **II doğru:** m. 116. **III yanlış:** m. 126 uyarınca zamanaşımı dolduktan sonra ortaya çıkarılan hatalar kural olarak **düzeltilemez**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III sona erme; sınav stiline kalibre)",
-      "legislationRef": "VUK / 6183 - sona erme hâlleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "vh-surec-gen-0036",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Verginin iadesi (vergi iadesi)' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Vergilendirmede tebliğ ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tebliğ, hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesidir.\n\nII. Adresi bilinmeyen veya bilinen adreste tebliğ yapılamayan hâllerde ilan yoluyla tebliğ yapılır.\n\nIII. Tüzel kişilere tebliğ, ancak bütün yönetim kurulu üyelerine ayrı ayrı yapılırsa geçerli olur.",
     "options": {
-      "A": "Vergi iadesi mümkün değildir; fazla veya yersiz ödenmiş olsa dahi tahsil edilen vergi mükellefe geri verilemez",
-      "B": "Vergi iadesi, mükellefe kesilen vergi cezalarının belirli bir oranda artırılarak yeniden hesaplanması ve tahsil edilmesi işlemidir",
-      "C": "Vergi iadesi, mükellefin vergisini artırmasıdır; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
-      "D": "Fazla veya yersiz olarak tahsil edilen ya da kanunen iade edilmesi gereken vergilerin, kanundaki usul ve koşullarla mükellefe geri verilmesidir",
-      "E": "Vergi iadesi, ödeme emrine rağmen ödenmeyen verginin mükellefin malları üzerinden haciz yoluyla zorla tahsil edilmesidir"
+      "A": "II ve III",
+      "B": "Yalnız I",
+      "C": "Yalnız III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "D",
-    "solution": "**Vergi iadesi**, **fazla/yersiz** tahsil edilen ya da kanunen **iade edilmesi gereken** vergilerin, kanundaki usul ve koşullarla mükellefe **geri verilmesidir** (ör. KDV iadesi, fazla ödenen verginin iadesi). İmkânsızlık, vergi/ceza artışı veya cebri tahsil yanlıştır.",
+    "solution": "**I doğru:** m. 21. **II doğru:** m. 103. **III yanlış:** **m. 94** uyarınca tüzel kişilere tebliğ başkan, müdür veya kanuni temsilcilere yapılır ve bunlar **birden çoksa birine yapılması yeterlidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-vergi iadesi; sınav stiline kalibre)",
-      "legislationRef": "VUK md 120 / iade hükümleri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "vh-surec-gen-0037",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Bir vergi borcu, borçlu tarafından tam ve zamanında ödenmiştir. Bu durumun vergi alacağı üzerindeki etkisi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Vergi dairesi bir mükellef hakkında vergi incelemesi yapmış; inceleme raporunda belirtilen matrah üzerinden tarhiyat yapmıştır. Mükellefin defterleri mevcut olmakla birlikte kayıtlar matrahın tespitine elverişli bulunmamıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Ödeme (tahsil) ile vergi alacağı sona erer; borç ifa edilmiş olur",
-      "B": "Ödeme vergi alacağını etkilemez; borç devam eder",
-      "C": "Ödeme vergi borcunu iki katına çıkarır",
-      "D": "Ödeme yalnızca cezayı sona erdirir, asıl vergi borcu devam eder",
-      "E": "Ödeme yalnızca zamanaşımını başlatır"
+      "A": "Matrahın kayıtlara dayanılarak tespitine imkân bulunmadığından re'sen tarhiyat yapılır ve matrah inceleme raporunda belirtilen tutar üzerinden belirlenir",
+      "B": "Defterler mevcut olduğundan yalnız ikmalen tarhiyat yapılabilir; re'sen tarh defterlerin hiç bulunmadığı hâllere özgü olduğundan burada uygulanamaz",
+      "C": "Bu hâlde idarece tarh usulü uygulanır; idarece tarh, mükellefin ödevlerini yerine getirmediği bütün hâlleri kapsadığından re'sen tarha gerek kalmaz",
+      "D": "Kayıtların elverişsizliği mücbir sebep sayılır; süreler işlemeyeceğinden tarhiyat yapılamaz ve zamanaşımı da uzar",
+      "E": "İnceleme raporu tek başına tarhiyata dayanak olamaz; matrahın mutlaka takdir komisyonunca belirlenmesi gerektiğinden rapora dayanan tarhiyat sakattır"
     },
     "answer": "A",
-    "solution": "Verginin tam ve zamanında **ödenmesi (tahsil)** ile vergi alacağı **sona erer**; borç ifa edilmiş olur (en olağan sona erme yolu). Borcun devamı, iki katına çıkması, yalnız cezanın sona ermesi veya zamanaşımını başlatması yanlıştır.",
+    "solution": "**VUK m. 30:** re'sen tarh, matrahın **tamamen veya kısmen** defter, kayıt ve belgelere veya kanuni ölçülere dayanılarak tespitine imkân bulunmayan hâllerde uygulanır; matrah takdir komisyonunca takdir edilebileceği gibi **vergi inceleme raporunda da belirtilebilir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (senaryo-ödeme; sınav stiline kalibre)",
-      "legislationRef": "VUK md 23 - tahsil"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "vh-surec-gen-0038",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi Usul Kanunu'na göre tebliğin muhatabı bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Tarh zamanaşımı süresi içinde mücbir sebep hâli doğmuş ve altı ay sürmüştür. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Tebliğ yalnızca vergi dairesi personeline yapılır ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz",
-      "B": "Tebliğ, mükellefin kendisine veya kanuni temsilcisine değil, yalnızca aynı binada oturan komşusuna yapılır ve ancak bu şekilde hüküm ifade eder",
-      "C": "Tebliğ, mükellefe (gerçek kişilerde kendisine veya kanuni temsilcisine/vekiline; tüzel kişilerde kanuni temsilcilerine) yapılır",
-      "D": "Vergilendirmeyi ilgilendiren hususlar hiç kimseye tebliğ edilmez; tarh edilen vergi, herhangi bir bildirim yapılmaksızın doğrudan tahakkuk ederek kesinleşir",
-      "E": "Tebliğ yalnızca görevli vergi mahkemesine yapılır; mükellefe veya kanuni temsilcisine yapılan bildirimlerin hiçbir hukuki sonucu bulunmaz"
+      "A": "Mücbir sebep hâlinde zamanaşımı süresi iki katına çıkar; süre on yıla uzayacağından idarenin ek bir işlem yapmasına gerek kalmaz",
+      "B": "Mücbir sebep zamanaşımını keser; süre yeniden başlayacağından beş yıllık süre baştan işlemeye başlar",
+      "C": "Mücbir sebep süresince süreler işlemez ve tarh zamanaşımı işlemeyen süreler kadar uzar; süre altı ay uzamış olur",
+      "D": "Mücbir sebep yalnız ceza kesilmesini engeller; zamanaşımı bakımından bir etkisi bulunmadığından süre aynen dolar",
+      "E": "Mücbir sebep zamanaşımına etki etmez; süre kesintisiz işlediğinden tarhiyatın beş yıl içinde tamamlanması gerekir"
     },
     "answer": "C",
-    "solution": "**Tebliğ**, mükellefe yapılır: gerçek kişilerde **kendisine, kanuni temsilcisine veya vekiline**; tüzel kişilerde **kanuni temsilcilerine**. Yalnız personele/komşuya/mahkemeye tebliğ veya hiç tebliğ etmeme yanlıştır.",
+    "solution": "**VUK m. 15:** m. 13'teki mücbir sebeplerden birinin bulunması hâlinde **bu sebep ortadan kalkıncaya kadar süreler işlemez** ve **tarh zamanaşımı işlemeyen süreler kadar uzar.** Durma söz konusudur, kesilme değil.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tebliğ muhatabı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 94 - tebliğ yapılacak kimseler"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "vh-surec-gen-0039",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Beyana dayanan tarhta 'ihtirazi kayıt' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir vergi dairesi, üç ayrı mükellef hakkında sırasıyla beyana dayanan tarhiyat, ikmalen tarhiyat ve re'sen tarhiyat yapmış; her biri için farklı belge ve usul izlemiştir. Buna göre Vergi Usul Kanunu'na göre tarh usulleri ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "İhtirazi kayıt, mükellefin beyan etmesi gereken matrahı bilerek gizlemesi ve vergi dairesinden saklaması suretiyle daha az vergi ödemeye çalışması anlamına gelir",
-      "B": "Mükellefin, beyan ettiği matrah veya vergiye ilişkin bir kısma katılmadığını belirterek beyanname vermesi; bu kayıtla verilen beyan, dava açma hakkını kural olarak saklı tutar",
-      "C": "İhtirazi kayıt, beyanname verilse dahi mükellefin beyan ettiği vergiyi hiç ödememesi ve ödeme yükümlülüğünden tamamen kurtulması sonucunu doğurur",
-      "D": "İhtirazi kayıt yalnızca vergi dairesince konulur ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz",
-      "E": "İhtirazi kayıt Türk vergi hukukunda yer almayan, yalnızca özel hukuk sözleşmelerinde geçerli olan ve beyan usulüyle hiçbir ilgisi bulunmayan bir kavramdır"
+      "A": "Re'sen tarhta matrah takdir komisyonunca takdir edilebilir",
+      "B": "İkmalen tarhiyat, daha önce hiçbir vergi tarh edilmemiş olan hâllerde matrahın idarece belirlenmesi usulüdür",
+      "C": "Re'sen tarh, matrahın defter ve belgelere dayanılarak tespitine imkân bulunmayan hâllerde uygulanır",
+      "D": "İkmalen ve re'sen tarh edilen vergiler ihbarname ile tebliğ olunur",
+      "E": "Beyan üzerinden alınan vergiler tahakkuk fişi ile tarh ve tahakkuk ettirilir"
     },
     "answer": "B",
-    "solution": "**İhtirazi kayıt**, mükellefin beyan ettiği matrah/vergiye ilişkin bir kısma **katılmadığını belirterek** beyanname vermesidir; bu kayıtla verilen beyan **dava açma hakkını kural olarak saklı tutar** (aksi hâlde mükellef kendi beyanına karşı dava açamaz). Beyanı gizleme, ödememe, idarece konulma veya yokluk yanlıştır.",
+    "solution": "**VUK m. 29:** ikmalen tarh, **her ne şekilde olursa olsun bir vergi tarh edildikten sonra** ortaya çıkan matrah farkı üzerinden yapılır; önceden bir tarhiyatın varlığını gerektirir. Yanlış olan şık bunun tersini söylemektedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ihtirazi kayıt; sınav stiline kalibre)",
-      "legislationRef": "İYUK / VUK - ihtirazi kayıt"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "vh-surec-gen-0040",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreci ve tarh usulleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İkmalen tarh, daha önce hiçbir tarhiyat yapılmamışken verginin ilk kez tarh edilmesidir.\n\nII. Re'sen tarhta takdir komisyonu kararı veya inceleme raporu esas alınabilir.\n\nIII. Beyana dayanan tarh, kural (asıl) tarh usulüdür.",
+    "stem": "Bir amme borçlusuna ödeme emri tebliğ edilmiş; borçlu on beş günlük süre içinde ne ödeme yapmış ne de mal bildiriminde bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "I, II ve III (her üç ifade de doğrudur)"
+      "A": "Borçlu mal bildiriminde bulunmadığı için takip düşer; mal bildirimi cebri takibin ön şartı olduğundan haciz uygulanamaz",
+      "B": "Süre geçmiş olsa dahi borçluya ayrıca otuz günlük ek süre verilir; bu süre dolmadan cebri işlem yapılamaz",
+      "C": "Ödeme müddeti içinde ödenmeyen amme alacağı tahsil dairesince cebren tahsil olunur; kanunda sayılan cebri takip yollarına başvurulabilir",
+      "D": "Cebri takip ancak mahkeme kararıyla başlatılabilir; idarenin resen haciz yetkisi bulunmadığından dava açılması gerekir",
+      "E": "Süre geçtikten sonra idarenin yeniden ödeme emri tebliğ etmesi gerekir; ilk ödeme emri hükümsüz hâle geldiğinden cebri takip baştan başlatılır ve süreler yeniden işler"
     },
     "answer": "C",
-    "solution": "**I yanlış:** ikmalen tarh, daha önce tarh edilmiş bir vergiye ek olarak, defter-belge veya kanuni ölçülere göre saptanan matrah farkı üzerinden yapılır (VUK md 29); ilk kez tarhiyat değildir. **II** re'sen tarhta takdir/inceleme esas alınması ve **III** beyana dayanan tarhın kural (asıl) usul olması doğrudur. Doğru cevap **II ve III**.",
+    "solution": "**6183 m. 54:** ödeme müddeti içinde ödenmeyen amme alacağı **tahsil dairesince cebren tahsil olunur**; madde cebri tahsil şekillerini sayar. Ödeme emri ve on beş günlük süre m. 55'te düzenlenmiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III tarh usulleri; sınav stiline kalibre)",
-      "legislationRef": "VUK md 25-29-30"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "vh-surec-gen-0041",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi hukukunda 'takdir komisyonu' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef beyannamesini vermiş, vergi dairesi beyan üzerine tahakkuk fişi düzenlemiş ve vergi süresinde ödenmiştir. Mükellef, sürecin hangi aşamasında hangi işlemin gerçekleştiğini sormaktadır. Buna göre vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Takdir komisyonu, vergi mahkemesinin bünyesinde yer alan ve vergi uyuşmazlıklarını yargısal olarak karara bağlayan bir yargı dairesi niteliğindedir",
-      "B": "Takdir komisyonu, yetkili makamlarca istenen matrah ve kıymet takdirlerini yapmakla görevli, idari nitelikte bir komisyondur",
-      "C": "Takdir komisyonu, mükelleflerin kurduğu bir dernektir; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir",
-      "D": "Takdir komisyonu, matrah takdiriyle ilgilenmeyen; yalnızca mükelleflere vergi cezası kesmek ve bu cezaları tahsil etmekle görevli bir organdır",
-      "E": "Takdir komisyonunun matrah takdiriyle ilgisi yoktur"
+      "A": "Tahsil, verginin kanuna uygun surette ödenmesidir",
+      "B": "Verginin tarhı, vergi alacağının mükellef tarafından hesaplanarak beyan edilmesi işlemidir",
+      "C": "Tahakkuk, tarh ve tebliğ edilen bir verginin ödenmesi gereken safhaya gelmesidir",
+      "D": "Verginin tarhı, vergi alacağının kanunlarında gösterilen matrah ve nispetler üzerinden vergi dairesince hesaplanmasıdır",
+      "E": "Tebliğ, hüküm ifade eden hususların yetkili makamlarca mükellefe yazı ile bildirilmesidir"
     },
     "answer": "B",
-    "solution": "**Takdir komisyonu**, yetkili makamlarca istenen **matrah ve kıymet takdirlerini** yapmakla görevli, **idari nitelikte** bir komisyondur (ör. re'sen tarhta matrahın takdiri). Mahkeme dairesi, dernek, salt ceza organı veya yokluk yanlıştır.",
+    "solution": "**VUK m. 20:** tarh, vergi alacağının matrah ve nispetler üzerinden **vergi dairesi tarafından** hesaplanarak miktar itibarıyla tespit edilmesini sağlayan **idari muameledir**. Mükellefin beyanı tarh işleminin dayanağıdır; tarhın kendisi değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-takdir komisyonu; sınav stiline kalibre)",
-      "legislationRef": "VUK md 72-74 - takdir komisyonu"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "vh-surec-gen-0042",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi Usul Kanunu'na göre 'düzeltme zamanaşımı' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, kendisine tebliğ edilen ihbarnameye karşı süresinde dava açmak yerine uzlaşma talebinde bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Vergi hatalarının düzeltilmesi, kural olarak beş yıllık düzeltme zamanaşımı süresi içinde mümkündür",
-      "B": "Vergi hataları hiçbir süre sınırı olmaksızın her zaman düzeltilebilir; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "C": "Düzeltme zamanaşımı süresi, hatanın yapıldığı yılı izleyen yıl başından itibaren otuz yıl olup bu süre içinde vergi hataları her zaman düzeltilebilir",
-      "D": "Vergi hataları, ne mükellef ne de idare tarafından düzeltilemez; hata bulunsa dahi tarh edilen vergi olduğu gibi kesinleşir",
-      "E": "Vergi hatalarının düzeltilmesi yalnızca vergi dairesinin çıkarına ve idare lehine yapılabilir; mükellef aleyhine olan hatalar düzeltilemez"
+      "A": "İkmalen, re'sen veya idarece tarh edilen vergiler ile bunlara ilişkin vergi ziyaı cezaları uzlaşma konusu yapılabilir; uzlaşmanın sağlanması hâlinde uzlaşılan hususlar dava konusu edilemez",
+      "B": "Uzlaşma talebi dava hakkını ortadan kaldırmaz; uzlaşma sağlansa dahi mükellef aynı hususlar için vergi mahkemesine başvurabileceğinden idarenin uzlaşma tutanağı yargı denetimini engellemez",
+      "C": "Uzlaşma yalnız vergi aslı için istenebilir; vergi ziyaı cezaları uzlaşma kapsamı dışında olduğundan ceza için ayrıca dava açılması gerekir",
+      "D": "Uzlaşma ancak tahsil aşamasında istenebilir; tarhiyat aşamasında yapılan başvurular erken sayıldığından reddedilir",
+      "E": "Uzlaşma talebi vergi dairesini bağlamaz ve hiçbir hukuki sonuç doğurmaz; idare talebi dikkate almaksızın takibe devam eder"
     },
     "answer": "A",
-    "solution": "Vergi hatalarının düzeltilmesi kural olarak **beş yıllık düzeltme zamanaşımı** süresi içinde mümkündür. Süresizlik, otuz yıl, düzeltilememe veya tek yönlü (yalnız idare lehine) düzeltme yanlıştır (düzeltme mükellef lehine de yapılır).",
+    "solution": "**VUK Ek m. 1** uzlaşma kapsamını ikmalen, re'sen veya idarece tarh edilen vergiler ve bunlara ilişkin vergi ziyaı cezaları olarak belirler (m. 359 fiilleri hariç). Uzlaşma sağlandığında uzlaşılan hususlar hakkında dava açılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-düzeltme zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 126 - düzeltme zamanaşımı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "vh-surec-gen-0043",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Amme alacağının tahsilinde zamanaşımının kesilmesi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Zamanaşımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tarh zamanaşımı, vergi alacağının doğduğu takvim yılını takip eden yılın başından itibaren beş yıldır.\n\nII. Tahsil zamanaşımı, alacağın vadesinin rastladığı takvim yılını takip eden yıl başından itibaren beş yıldır.\n\nIII. Mücbir sebep hâlinde tarh zamanaşımı, işlemeyen süreler kadar uzar.",
     "options": {
-      "A": "Tahsil zamanaşımı hiçbir işlemle kesilmez; ödeme, haciz veya borcun ikrarı gibi işlemler yapılsa dahi süre kesintisiz olarak işlemeye devam eder",
-      "B": "Zamanaşımının kesilmesi vergi hukukunda bulunmaz; söz konusu durum yalnızca belirli kamu idareleriyle olan ilişkilerde geçerli sayılabilir",
-      "C": "Tahsil zamanaşımı yalnızca borçlu mükellefin bu yönde talepte bulunması hâlinde kesilir; idarenin yaptığı ödeme veya haciz işlemlerinin süreye herhangi bir etkisi olmaz",
-      "D": "Tahsil zamanaşımının kesilmesi, süreyi yeniden başlatmak yerine amme alacağını iki katına çıkarır ve borçlu aleyhine sonuç doğurur",
-      "E": "Ödeme, haciz uygulaması, borçlunun borcu ikrar etmesi gibi işlemlerle tahsil zamanaşımı kesilir ve kesilmenin rastladığı yılı izleyen yıl başından itibaren yeniden işlemeye başlar"
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "Yalnız I",
+      "D": "Yalnız III",
+      "E": "I, II ve III"
     },
     "answer": "E",
-    "solution": "**Ödeme, haciz uygulaması, borçlunun borcu ikrar etmesi** gibi işlemlerle tahsil **zamanaşımı kesilir** ve kesilmenin rastladığı yılı izleyen yıl başından itibaren **yeniden işlemeye** başlar. Kesilememe, salt talep, borcun artması veya yokluk yanlıştır.",
+    "solution": "Üçü de doğrudur. **I:** VUK m. 114. **II:** 6183 m. 102. **III:** VUK m. 15, mücbir sebep süresince süreler işlemez ve tarh zamanaşımı işlemeyen süreler kadar uzar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-zamanaşımı kesilmesi; sınav stiline kalibre)",
-      "legislationRef": "6183 md 103 - zamanaşımının kesilmesi"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "vh-surec-gen-0044",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Bir mükellef, kanuni süresi içinde vergi beyannamesini vermiş ve tahakkuk eden vergiyi vadesinde ödememiştir. Bu durumda uygulanacak yaptırım bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefin bilinen adresleri arasında hem işe başlamada bildirdiği işyeri adresi hem de adres kayıt sistemindeki yerleşim yeri adresi bulunmaktadır. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Vergi vadesinde ödenmese de hiçbir ek yük doğmaz ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz",
-      "B": "Vadesinde ödenmeyen vergi, herhangi bir takip işlemine gerek kalmaksızın belirli bir süre sonunda kendiliğinden terkin edilerek mükellefin borcu tamamen ortadan kalkar",
-      "C": "Vadesinde ödenmeyen vergiye gecikme zammı işler ve alacak cebren tahsil yollarına (ödeme emri, haciz vb.) konu olabilir",
-      "D": "Vadesinde ödenmeyen vergi nedeniyle mükellefe herhangi bir yaptırım uygulanmaz; aksine idareyle iş birliği yaptığı gerekçesiyle kendisine ödül verilir",
-      "E": "Vadesinde ödenmeyen vergi, mükellef aleyhine değil lehine sonuç doğurur ve ödenmemiş tutar mükellefe iade edilerek borç sona erer"
+      "A": "Adres kayıt sistemindeki yerleşim yeri adresi bilinen adreslerdendir",
+      "B": "Mükellef tarafından işe başlamada bildirilen işyeri adresleri bilinen adres sayılmaz; bu adrese yapılan tebligat usulsüz olduğundan süreler işlemeye başlamaz ve tarhiyat askıda kalır",
+      "C": "Bilinen adres kavramı kanunda tanımlanmadığından tebligatın hangi adrese yapılacağı tümüyle idarenin takdirindedir",
+      "D": "Tebliğ, kanunda sayılan bilinen adreslere yapılır",
+      "E": "Bilinen adreste tebliğ yapılamayan hâllerde ilan yoluna başvurulabilir"
     },
     "answer": "C",
-    "solution": "Vadesinde ödenmeyen vergiye **gecikme zammı** işler ve alacak **cebren tahsil** yollarına (**ödeme emri, haciz**) konu olabilir. Ek yük yokluğu, kendiliğinden terkin, ödül veya iade yanlıştır.",
+    "solution": "**VUK m. 101** bilinen adresleri **tek tek sayarak** belirler; tebliğ bu adreslere yapılır. Kanunda tanım bulunmadığını ve seçimin tümüyle idarenin takdirinde olduğunu söyleyen ifade yanlıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (senaryo-vadede ödememe; sınav stiline kalibre)",
-      "legislationRef": "6183 md 51-55 - gecikme zammı ve ödeme emri"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "vh-surec-gen-0045",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Tebliğ ve tahakkuk ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tebliğ; posta, memur eliyle, ilanen ve elektronik olarak yapılabilir.\n\nII. Tahakkuk, verginin ödenmesi gereken safhaya gelmesidir.\n\nIII. İlanen tebliğ, muhatabın adresi bilinse dahi idarenin ilk sırada tercih ettiği olağan tebliğ usulüdür.",
+    "stem": "Bir mükellef, beyan ettiği matraha karşı dava açmak istemekte; ayrıca hakkında tarh edilen vergiyi ödemeden mahkemeye başvurup başvuramayacağını sormaktadır. Buna göre Vergi Usul Kanunu'na göre dava açma hakkı bakımından aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I, II ve III (her üç ifade de doğrudur)",
-      "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
+      "A": "Mükellefler kural olarak beyan ettikleri matrahlara karşı dava açamazlar",
+      "B": "Vergi mahkemesinde dava açabilmek için verginin ödenmiş olması şarttır; ödeme yapılmadan açılan davalar esasa girilmeksizin reddedilir",
+      "C": "Mükellefler ve kendilerine vergi cezası kesilenler, tarh edilen vergilere ve kesilen cezalara karşı vergi mahkemesinde dava açabilirler",
+      "D": "Vergi hatalarına ilişkin hükümler, beyana karşı dava yasağının istisnasını oluşturur",
+      "E": "Vergi mahkemesinde dava açabilmek için verginin tarh edilmiş veya cezanın kesilmiş olması gerekir"
     },
     "answer": "B",
-    "solution": "**III yanlış:** ilanen tebliğ, muhatabın adresinin bilinmemesi gibi olağan yollarla (posta/memur) tebliğ yapılamayan hâllere özgü istisnai bir usuldür (VUK md 103); ilk sırada tercih edilen olağan usul değildir. **I** tebliğ usulleri ve **II** tahakkukun tanımı doğrudur. Doğru cevap **I ve II**.",
+    "solution": "**VUK m. 377** dava hakkını tanır, **m. 378** ise dava açılabilmesi için verginin tarh edilmiş, cezanın kesilmiş ya da komisyon kararlarının tebliğ edilmiş olmasını arar. **Ödeme şartı öngörülmemiştir**; yanlış olan şık budur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III tebliğ/tahakkuk; sınav stiline kalibre)",
-      "legislationRef": "VUK md 22, 93-107"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "vh-surec-gen-0046",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Bir amme alacağının, vadesinin rastladığı yılı izleyen yıl başından itibaren beş yıl içinde hiçbir kesme işlemi olmaksızın tahsil edilememesinin sonucu bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "İkmalen tarh olunan bir vergi, taksit süreleri geçtikten sonra tahakkuk etmiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Alacak süresiz olarak her zaman tahsil edilebilir; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar",
-      "B": "Tahsil zamanaşımı dolduğundan alacak zamanaşımına uğrar ve kural olarak cebren tahsil edilemez hâle gelir",
-      "C": "Beş yılın geçmesi alacağı sona erdirmez; aksine amme alacağı gecikme nedeniyle iki katına çıkarak borçludan tahsil edilmeye devam eder",
-      "D": "Tahsil zamanaşımı kendiliğinden dolmaz; ancak borçlu mükellefin bu yönde talepte bulunması hâlinde ve onun istemine bağlı olarak sonuç doğurur",
-      "E": "Beş yılın dolmasıyla sona eren alacak kısa bir süre sonra kendiliğinden yeniden doğar ve idare tarafından yeni bir vade verilerek tekrar istenebilir"
+      "A": "Gecikme faizi tahsil aşamasında değil tarh aşamasında hesaplanır; tahakkuk etmemiş vergi için faiz işlemeye başlar",
+      "B": "İkmalen, re'sen veya idarece tarh olunan vergilerde, kanunda gösterilen dönem için gecikme faizi hesaplanır ve vergi ile birlikte tahsil edilir",
+      "C": "Gecikme faizi yalnız beyana dayanan vergilerde uygulanır; ikmalen tarhiyatta faiz öngörülmediğinden yalnız vergi aslı istenir",
+      "D": "Bu vergilerde faiz hesaplanmaz; gecikme yalnız ceza kesilmesini gerektirdiğinden mükelleften vergi aslı ve ceza dışında ayrıca bir faiz yükü istenmesi mümkün olmaz",
+      "E": "Gecikme faizi vergi mahkemesi kararıyla belirlenir; idarenin resen faiz hesaplama yetkisi bulunmadığından tahsil edilemez"
     },
     "answer": "B",
-    "solution": "Amme alacağı, vadesini izleyen yıl başından itibaren **beş yıl** içinde (kesme işlemi olmadan) tahsil edilemezse **tahsil zamanaşımı dolar** ve kural olarak **cebren tahsil edilemez** hâle gelir. Süresiz tahsil, iki kat, talebe bağlılık veya yeniden doğma yanlıştır.",
+    "solution": "**VUK m. 112:** ikmalen, re'sen veya idarece tarh olunan vergilerde, kanunda belirtilen dönemler için **gecikme faizi** hesaplanır ve verginin kendisiyle birlikte tahsil edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (senaryo-tahsil zamanaşımı; sınav stiline kalibre)",
-      "legislationRef": "6183 md 102 - tahsil zamanaşımı"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "vh-surec-gen-0047",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirmede 'yoklama' ile 'tebliğ' kavramlarının karşılaştırılması bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellefin defter ve belgeleri matrahın tespitine elverişli bulunmadığından matrah takdir komisyonuna sevk edilmiş; komisyon inceleme sonunda bir tutar belirlemiştir. Buna göre takdir komisyonunun belirlediği matrah bakımından aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Yoklama ile tebliğ tümüyle aynı işlem olup ikisi de mükellefiyetle ilgili maddi olayların yerinde araştırılıp tespit edilmesini ifade eder; aralarında hiçbir fark yoktur",
-      "B": "Yoklama ve tebliğ Türk vergi hukukunda yer almayan, uygulamada hiçbir karşılığı bulunmayan ve mükellefiyetle ilgisiz kavramlardır",
-      "C": "Yoklama, tarh ve tahakkuk eden verginin mükellefçe fiilen ödenmesi; tebliğ ise verginin matrah ve oran üzerinden vergi dairesince hesaplanması işlemidir",
-      "D": "Yoklama yalnızca mükellefin talebiyle, tebliğ yalnızca mahkeme kararıyla yapılır; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
-      "E": "Yoklama, mükellefiyetle ilgili maddi olayları/kayıtları yerinde araştırıp tespit etmeye yönelik bir denetim işlemi iken; tebliğ, hüküm ifade eden bir hususun ilgiliye yazı ile bildirilmesidir"
+      "A": "Takdir komisyonu kararları yalnız beyana dayanan vergilerde uygulanır; re'sen tarhiyatta komisyona başvurulamaz",
+      "B": "Takdir komisyonu kararları tebliğ edilmeksizin kesinleşir; mükellefin bu kararlara karşı dava açma hakkı bulunmaz",
+      "C": "Takdir komisyonu kararları sözlü olarak bildirilir; yazılı karara bağlanma zorunluluğu bulunmadığından imza şartı da aranmaz ve karar tutanağa geçirilmeksizin uygulanır",
+      "D": "Takdir komisyonu yalnız görüş bildirir; matrah belirleme yetkisi bulunmadığından kararı idareyi bağlamaz",
+      "E": "Takdir komisyonunca belli edilen matrah veya matrah kısmı takdir kararına bağlanır ve karar komisyonun başkan ve üyelerince imzalanır"
     },
     "answer": "E",
-    "solution": "**Yoklama**, mükellefiyetle ilgili maddi olayları/kayıtları **yerinde araştırıp tespit** etmeye yönelik bir **denetim** işlemidir; **tebliğ** ise hüküm ifade eden bir hususun ilgiliye **yazı ile bildirilmesidir**. İkisi aynı değildir; ödeme/hesaplama, talep/mahkeme şartı veya yokluk yanlıştır.",
+    "solution": "**VUK m. 31:** takdir komisyonunca belli edilen matrah veya matrah kısmı **takdir kararına bağlanır** ve kararlar **komisyonun başkan ve üyeleri tarafından imzalanır.** Komisyon kararları re'sen tarhın (m. 30) dayanaklarındandır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-yoklama/tebliğ; sınav stiline kalibre)",
-      "legislationRef": "VUK md 21, 127 - tebliğ ve yoklama"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "vh-surec-gen-0048",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Aşağıdakilerden hangisi vergilendirme süreci bakımından YANLIŞ bir ifadedir?",
+    "stem": "Bir vergi dairesi aynı gün içinde hem beyana dayanan bir vergi için tahakkuk fişi düzenlemiş hem de re'sen tarh ettiği bir vergi için belge çıkarmış; iki belgenin işlevini birbirine karıştırmamaya çalışmaktadır. Buna göre vergilendirme sürecinde ihbarname ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Vergilendirme süreci vergiyi doğuran olayla başlar",
-      "B": "Ödeme, zamanaşımı ve terkin vergi alacağını sona erdiren/etkileyen hâllerdendir",
-      "C": "Tebliğ, verginin fiilen ödenmesidir",
-      "D": "Tarh zamanaşımı kural olarak beş yıldır",
-      "E": "Re'sen tarh, matrahın tespit edilemediği hâllerde yapılır"
+      "A": "İhbarnamede verginin nev'i, mükellefin kimliği ve tarh edilen tutar gibi bilgiler yer alır",
+      "B": "İkmalen ve re'sen tarh edilen vergiler ihbarname ile ilgililere tebliğ olunur",
+      "C": "İhbarname yalnız vergi cezaları için düzenlenir; tarh edilen vergiler istisnasız biçimde tahakkuk fişi ile bildirilir",
+      "D": "Nev'i ve doğuşu ayrı olan vergiler için ayrı ihbarname kullanılır",
+      "E": "İhbarnamedeki bilgi eksiklikleri, verginin miktarına ilişkin olanlar dışında tebliği hükümsüz kılmaz"
     },
     "answer": "C",
-    "solution": "Yanlış ifade: **tebliğ, verginin fiilen ödenmesi DEĞİLDİR**; tebliğ, hüküm ifade eden hususun **yazı ile bildirilmesidir** (ödeme=tahsildir). Diğer ifadeler doğrudur.",
+    "solution": "**VUK m. 34:** **ikmalen ve re'sen tarh edilen vergiler** ihbarname ile tebliğ olunur; ihbarname yalnız cezalara özgü değildir. Tahakkuk fişi ise m. 25 uyarınca beyana dayanan vergilere aittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "VUK md 21-23 - tebliğ ve tahsil"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "vh-surec-gen-0049",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergi hatalarının düzeltilmesinde başvuru yolları bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, hakkında yapılan tarhiyata karşı süresinde dava açmamış ve vergi tahakkuk etmiştir. Mükellef daha sonra tarhiyatta bir hesap hatası bulunduğunu ileri sürmüştür. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Vergi hataları düzeltilemez; hata açıkça bulunsa dahi ne idari başvuru ne de yargı yoluyla düzeltilmesi mümkün değildir",
-      "B": "Vergi hatalarının düzeltilmesi yalnızca vergi dairesinin çıkarına yapılır ve taraflar bunun aksini herhangi bir sözleşmeyle dahi kararlaştıramaz",
-      "C": "Vergi hataları yalnızca vergi mahkemesinde dava açmak suretiyle düzeltilebilir; vergi dairesine düzeltme talebiyle başvurma veya şikâyet yolu işletilemez",
-      "D": "Vergi hataları, mükellefin düzeltme talebi üzerine vergi dairesince düzeltilebilir; talebin reddi hâlinde şikâyet yoluyla üst makama (Bakanlığa) başvurulabilir ve dava yolu da açıktır",
-      "E": "Vergi hatalarının düzeltilmesi yalnızca ceza mahkemesinde istenebilir; idari düzeltme talebi veya şikâyet yoluyla üst makama başvurma mümkün değildir"
+      "A": "Hata iddiası ancak yeni bir vergi incelemesiyle ileri sürülebilir; mükellefin doğrudan başvuru hakkı bulunmaz",
+      "B": "Vergi tahakkuk ettiğinden hata iddiası dinlenmez; tahakkuk işlemi bütün itirazları sona erdirdiğinden mükellefin düzeltme ve dava yolları birlikte kapanır",
+      "C": "Tahakkuk eden vergide düzeltme yalnız idarenin kendiliğinden yapacağı işlemle mümkündür; mükellefin talep hakkı yoktur",
+      "D": "Verginin tahakkuk etmiş olması vergi hatasının düzeltilmesine engel değildir; mükellef zamanaşımı süresi içinde düzeltme isteyebilir",
+      "E": "Düzeltme yalnız dava açma süresi içinde istenebilir; süre geçtikten sonra yapılan başvurular süre yönünden reddedilir"
     },
     "answer": "D",
-    "solution": "Vergi hataları, mükellefin **düzeltme talebi** üzerine vergi dairesince düzeltilebilir; talep **reddedilirse şikâyet yoluyla** üst makama (Bakanlığa) başvurulabilir ve **dava yolu** da açıktır. Düzeltilememe, yalnız mahkeme, tek yönlülük veya ceza mahkemesi yanlıştır.",
+    "solution": "**VUK m. 122** mükellefe düzeltme isteme hakkını tanır; bu hak dava açma süresinden bağımsızdır ve **m. 126**'daki düzeltme zamanaşımı süresi içinde kullanılabilir. Tahakkuk, hatanın düzeltilmesine engel oluşturmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-hata düzeltme yolları; sınav stiline kalibre)",
-      "legislationRef": "VUK md 116-124 - düzeltme"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "vh-surec-gen-0050",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tahsil zamanaşımı ödeme veya haciz gibi işlemlerle kesilir.\n\nII. Tarh, verginin mükellef tarafından hesaplanıp kendiliğinden ödenmesidir.\n\nIII. Tecil, amme alacağının ödenmesinin ertelenmesi/taksitlendirilmesidir.",
+    "stem": "Vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Tahakkuku tahsile bağlı vergilerde verginin tahsili tahakkuku da içine alır.\n\nII. Mücbir sebep hâlinde süreler işlemeye devam eder ve tarh zamanaşımı uzamaz.\n\nIII. Beyan üzerinden alınan vergiler tahakkuk fişi ile tarh ve tahakkuk ettirilir.",
     "options": {
-      "A": "I, II ve III (her üç ifade de doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "Yalnız I (yalnızca birinci ifade doğrudur)"
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "Yalnız III",
+      "D": "I ve III",
+      "E": "Yalnız I"
     },
     "answer": "D",
-    "solution": "**II yanlış:** tarh, verginin idarece matrah ve oran üzerinden hesaplanıp miktarının belirlenmesidir (VUK md 20); mükellefin hesaplayıp ödemesi değildir. **I** tahsil zamanaşımının ödeme/hacizle kesilmesi ve **III** tecilin erteleme/taksitlendirme olması doğrudur. Doğru cevap **I ve III**.",
+    "solution": "**I doğru:** m. 24. **II yanlış:** m. 15 uyarınca mücbir sebep süresince **süreler işlemez** ve tarh zamanaşımı işlemeyen süreler kadar **uzar**. **III doğru:** m. 25.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "VUK md 20 / 6183 md 48-103"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "vh-surec-gen-0051",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirmede 'matrah' ile 'tarife'nin işlevi bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef hakkında re'sen tarh edilen vergiye ilişkin ihbarname, mükellefin bilinen adresinde bulunamaması üzerine ilan yoluyla tebliğ edilmiştir. İlan 1 Mart'ta yapılmıştır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Matrah, verginin ödendiği yer; tarife ise mükellefin adıdır ve bu sonuç her koşulda kendiliğinden doğduğundan ayrıca bir bildirime gerek kalmaz",
-      "B": "Matrah ve tarife, verginin miktarının hesaplanmasıyla hiçbir ilgisi bulunmayan; yalnızca verginin tebliğ ve tahsil aşamalarında kullanılan biçimsel kavramlardır",
-      "C": "Tarh işleminde, verginin matrahına ilgili vergi tarifesi/oranı uygulanarak ödenecek vergi miktarı hesaplanır",
-      "D": "Matrah yalnızca vergi cezalarının hesaplanmasında kullanılır; asıl verginin miktarının belirlenmesinde matrahın herhangi bir işlevi yoktur",
-      "E": "Vergi tarifesi yalnızca tebliğ aşamasında ve tebliğ sırasında belirlenir; tarh işlemi sırasında matraha herhangi bir oran veya tarife uygulanmaz"
+      "A": "İlanen tebliğde süre üç ay sonra başlar; bu süre mükellefin savunma hakkını korumak için öngörülmüştür",
+      "B": "İlanen tebliğ hüküm doğurmaz; mükellefe fiilen ulaşılmadıkça süreler işlemeyeceğinden tarhiyat askıda kalır",
+      "C": "İlanın yapıldığı tarihten başlayarak bir ayın sonunda, yani 1 Nisan'da tebliğ yapılmış sayılır ve süreler bu tarihten işlemeye başlar",
+      "D": "İlanen tebliğde tebliğ tarihi on beş gün sonra gerçekleşir; süreler 16 Mart'tan itibaren işlemeye başlar",
+      "E": "İlan tarihinde tebliğ yapılmış sayılır; 1 Mart'tan itibaren süreler işleyeceğinden dava açma süresi de o gün başlar ve ayrıca bir bekleme süresi öngörülmez"
     },
     "answer": "C",
-    "solution": "Tarh işleminde, verginin **matrahına** ilgili **vergi tarifesi/oranı** uygulanarak **ödenecek vergi miktarı** hesaplanır (matrah × oran/tarife = vergi). Matrahın yer/ad olması, hesapla ilgisizlik, yalnız cezaya özgülük veya tarifenin tebliğde belirlenmesi yanlıştır.",
+    "solution": "**VUK m. 106:** ilan yoluyla yapılan tebliğde, **ilanın yapıldığı tarihten başlayarak bir ayın sonunda** tebliğ yapılmış sayılır. İlanen tebliğ hâlleri m. 103'te sayılmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-matrah/tarife işlevi; sınav stiline kalibre)",
-      "legislationRef": "VUK md 20 - tarh"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "vh-surec-gen-0052",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Beyana dayanan tarhta verginin tahakkuku bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Özel kanununda ödeme zamanı belirlenmiş bir amme alacağı ile ödeme zamanı belirlenmemiş başka bir amme alacağı aynı borçlu adına tahakkuk etmiştir. Borçlu her iki alacağı ne zaman ödeyeceğini sormaktadır. Buna göre amme alacaklarında ödeme ile ilgili aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Beyana dayanan tarhta vergi tahakkuk etmez; beyanname verilse dahi verginin ödenmesi gereken safhaya gelmesi ancak ayrı bir tarhiyatla mümkün olur",
-      "B": "Beyana dayanan tarhta tahakkuk, beyannamenin verilmesiyle değil; ancak beyandan itibaren beş yıllık sürenin dolmasının ardından kendiliğinden gerçekleşir",
-      "C": "Beyana dayanan tarhta vergi yalnızca mahkeme kararıyla tahakkuk eder; bu husus yalnızca yetkili bir yargı merciinin kararıyla ve resmi belgeyle belirlenebilir",
-      "D": "Beyana dayanan tarhta verginin tahakkuk edebilmesi için, beyannamenin verilmesinin yanı sıra ayrıca ilanen tebliğ yapılması zorunludur",
-      "E": "Beyana dayanan tarhta, vergi kural olarak beyannamenin verilmesiyle tahakkuk eder (tarh, tebliğ ve tahakkuk çoğu kez birlikte gerçekleşir)"
+      "A": "Amme alacaklarında ödeme zamanı yalnız mahkeme kararıyla belirlenir; idarenin ve kanunun belirlemesi bağlayıcı sayılmaz",
+      "B": "Bütün amme alacakları takvim yılı sonunda topluca ödenir; özel kanunlardaki ödeme zamanları uygulanmadığından tek bir vade geçerlidir",
+      "C": "Ödeme zamanı belirlenmemiş alacaklar hiç tahsil edilemez; vade olmaksızın takip yapılamayacağından alacak düşer",
+      "D": "Amme alacaklarının ödeme zamanı borçlu tarafından serbestçe belirlenir; idarenin süre belirleme yetkisi bulunmadığından vade tartışmaya açıktır",
+      "E": "Amme alacakları hususi kanunlarında belli edilen zamanlarda ödenir; ödeme zamanı tespit edilmemiş alacaklarda ilgili idarece belirlenen süre uygulanır"
     },
     "answer": "E",
-    "solution": "Beyana dayanan tarhta vergi kural olarak **beyannamenin verilmesiyle tahakkuk eder**; tarh, tebliğ ve tahakkuk çoğu kez **birlikte** gerçekleşir (tahakkuk fişi düzenlenir). Tahakkuk etmeme, mahkeme/ilanen tebliğ şartı veya beş yıl sonra tahakkuk yanlıştır.",
+    "solution": "**6183 m. 37:** amme alacakları **hususi kanunlarında belli edilen zamanlarda** ödenir; hususi kanunlarında ödeme zamanı tespit edilmemiş amme alacakları ilgili idarece belirtilecek usule göre ödenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-beyanda tahakkuk; sınav stiline kalibre)",
-      "legislationRef": "VUK md 25 - tahakkuk fişi"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "vh-surec-gen-0053",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Amme alacağının korunmasına yönelik 'iptal davası (tasarrufun iptali)' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, hakkındaki tarh zamanaşımı süresinin dolmak üzere olduğunu görerek vergi dairesinden sürenin uzatılmasını istemiş; ayrıca geçmişte yaşadığı mücbir sebep hâlinin süreye etkisini sormuştur. Buna göre vergi hukukunda süreler ve zamanaşımı ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Borçlunun, amme alacağını tahsil edilemez hâle getirmek amacıyla malvarlığını azaltıcı (muvazaalı/bağış gibi) bazı tasarruflarının iptali istenebilir",
-      "B": "Borçlunun tüm işlemleri her durumda geçerlidir; idare hiçbir işleme itiraz edemez; bunun dışında değerlendirilebilecek başka herhangi bir olasılık kesinlikle bulunmaz",
-      "C": "Tasarrufun iptali davası yalnızca borçlu mükellefin çıkarına ve onun talebiyle açılabilen bir dava olup idarenin bu yola başvurma yetkisi bulunmaz",
-      "D": "İptal davasının kabulü, borçlunun vergi borcunun silinmesini sağlar; dava sonunda mükellefin amme borcu tümüyle ortadan kalkar",
-      "E": "Tasarrufun iptali davası Türk vergi hukukunda yer almayan, yalnızca özel hukuk alacakları için öngörülmüş ve amme alacaklarına uygulanamayan bir kurumdur"
+      "A": "Tarh zamanaşımı süresi, mükellefin talebi hâlinde vergi dairesince uzatılabilir",
+      "B": "Tarh zamanaşımı, vergi alacağının doğduğu takvim yılını takip eden yılın başından itibaren beş yıldır",
+      "C": "Mücbir sebep hâlinde süreler işlemez ve tarh zamanaşımı işlemeyen süreler kadar uzar",
+      "D": "Zamanaşımına uğrayan bir vergi tarh ve tebliğ edilemez",
+      "E": "Tahsil zamanaşımı, vadenin rastladığı takvim yılını takip eden yıl başından itibaren beş yıldır"
     },
     "answer": "A",
-    "solution": "Borçlunun, amme alacağını **tahsil edilemez hâle getirmek** amacıyla malvarlığını **azaltıcı** (muvazaalı, karşılıksız/bağış gibi) bazı tasarruflarının **iptali** istenebilir (alacağın korunması). İşlemlerin mutlak geçerliliği, mükellef lehine dava, verginin silinmesi veya yokluk yanlıştır.",
+    "solution": "Zamanaşımı süreleri **kanunla** belirlenmiştir (VUK m. 114, 6183 m. 102); idarenin veya mükellefin talebiyle uzatılamaz. Süreyi uzatan tek hâl **m. 15**'teki mücbir sebeptir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tasarrufun iptali; sınav stiline kalibre)",
-      "legislationRef": "6183 md 24-30 - iptal davası"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "vh-surec-gen-0054",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme sürecinde 'tahakkuku tahsile bağlı vergiler' bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir mükellef, vergi ziyaına yol açan fiili nedeniyle hakkında inceleme başlatıldıktan sonra pişmanlık talebinde bulunmuştur. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Tahakkuku tahsile bağlı vergilerde tahsil gerçekleşmez; bu vergiler yalnızca kâğıt üzerinde tahakkuk eder ancak fiilen ödenmez",
-      "B": "Bazı vergilerde (ör. damga vergisinin pul/makbuz karşılığı ödendiği hâller gibi) verginin ödenmesi (tahsili) aynı zamanda tahakkuku anlamına gelir; tahakkuk tahsile bağlıdır",
-      "C": "Tahakkuku tahsile bağlı vergiler yalnızca mahkeme kararıyla tahsil edilebilir; ödeme, ancak yargı merciinin vereceği karara dayanılarak yapılabilir",
-      "D": "Bu vergilerde tarh işlemi hiç yapılmaz ve vergi doğmaz; söz konusu durum yalnızca belirli kamu idareleriyle olan ilişkilerde geçerli sayılabilir",
-      "E": "Tahakkuku tahsile bağlı vergi kavramı Türk vergi hukukunda yer almayan, uygulamada hiçbir karşılığı bulunmayan bir ifadedir"
+      "A": "Pişmanlık talebi vergi aslını da ortadan kaldırır; inceleme başlamış olsa dahi yalnız pişmanlık zammı ödenir",
+      "B": "Pişmanlık hükümlerinden yararlanabilmek için haber vermenin, mükellef hakkında bir ihbar yapılmadan ve inceleme başlamadan önce yapılması gerekir; şart gerçekleşmediğinden talep kabul edilmez",
+      "C": "Pişmanlık her aşamada istenebilir; inceleme başlamış olması hükümlerin uygulanmasını engellemediğinden mükellef adına vergi ziyaı cezası kesilmez ve yalnız pişmanlık zammı aranır",
+      "D": "Pişmanlık yalnız inceleme sırasında istenebilir; inceleme öncesi yapılan başvurular erken sayıldığından işleme konulmaz",
+      "E": "Pişmanlık beyana dayanmayan vergilerde de uygulanır; kapsam bakımından bir sınırlama bulunmadığından talep kabul edilir"
     },
     "answer": "B",
-    "solution": "**Tahakkuku tahsile bağlı vergilerde**, verginin **ödenmesi (tahsili)** aynı zamanda **tahakkuku** anlamına gelir (ör. bazı hâllerde damga vergisi). Tahsilin hiç gerçekleşmemesi, yalnız mahkeme, verginin doğmaması veya yokluk yanlıştır.",
+    "solution": "**VUK m. 371** pişmanlık için haber vermenin, mükellef hakkında **ihbarda bulunulmadan ve vergi incelemesine başlanmadan** önce yapılmasını arar. Şartlar gerçekleşmezse vergi ziyaı cezası kesilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-tahakkuku tahsile bağlı; sınav stiline kalibre)",
-      "legislationRef": "VUK md 24 - tahakkuku tahsile bağlı vergiler"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "vh-surec-gen-0055",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Aşağıdaki hâl–sonuç eşleştirmelerinden hangisi DOĞRUDUR?",
+    "stem": "Vergi alacağının doğumu ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi alacağı, vergi kanunlarının vergiyi bağladıkları olayın vukuu veya hukuki durumun tekemmülü ile doğar.\n\nII. Vergi alacağı, ancak mükellefin beyanname vermesiyle doğar.\n\nIII. Vergi alacağı ancak tarh işlemiyle doğar; tarh edilmeyen bir vergi alacağından söz edilemez.",
     "options": {
-      "A": "Terkin → verginin ödenmesi gereken safhaya gelmesi ve bu nedenle karşı tarafın rızası, onayı veya herhangi bir katkısı aranmaz",
-      "B": "Tahakkuk → verginin, kanunda gösterilen matrah ve oranlar üzerinden vergi dairesince hesaplanarak miktarının belirlenmesi işlemidir",
-      "C": "Tecil → belirli hâllerde vergi ve cezanın kısmen veya tamamen silinerek vergi alacağının tümüyle ortadan kaldırılmasıdır",
-      "D": "Zamanaşımı → sürenin geçmesiyle vergi alacağının (tarh veya tahsil bakımından) sona ermesi/istenemez hâle gelmesi",
-      "E": "Ödeme → vergi kanunlarının vergiyi bağladıkları olayın meydana gelmesi veya hukuki durumun tamamlanması suretiyle vergi borcunun doğmasıdır"
+      "A": "I ve II",
+      "B": "Yalnız II",
+      "C": "Yalnız III",
+      "D": "Yalnız I",
+      "E": "I ve III"
     },
     "answer": "D",
-    "solution": "Doğru eşleştirme: **zamanaşımı → sürenin geçmesiyle vergi alacağının sona ermesi/istenemez hâle gelmesi**. Diğerleri karışmıştır: terkin=silme (safha değil), tecil=erteleme (silme değil), tahakkuk=ödenecek safha (hesaplama=tarh), ödeme=tahsil (olay değil).",
+    "solution": "**I doğru:** m. 19. **II ve III yanlış:** beyan ve tarh, doğmuş bir alacağın tespit ve bildirim aşamalarıdır; **m. 20** tarhı alacağın *miktar itibarıyla tespiti* olarak tanımlar, alacağı doğuran işlem olarak değil.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (eşleştirme-hâl/sonuç; sınav stiline kalibre)",
-      "legislationRef": "VUK / 6183 - vergilendirme kavramları"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "vh-surec-gen-0056",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "İkmalen veya re'sen tarh edilen bir vergiye ilişkin olarak mükellefe düzenlenen ihbarnamenin tebliği bakımından doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir vergi dairesi, mükellefe tebliğ ettiği ihbarnamede tarh edilen vergi tutarını sehven eksik göstermiş, hatayı tebliğden sonra fark etmiştir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "İhbarnamenin usulüne uygun tebliği hiçbir hukuki sonuç doğurmaz; dava açma veya uzlaşma sürelerinin başlaması bakımından tebliğin herhangi bir önemi bulunmaz",
-      "B": "İhbarnamenin usulüne uygun tebliği, mükellef için dava açma ve/veya uzlaşma gibi haklara ilişkin sürelerin işlemeye başlaması bakımından önem taşır",
-      "C": "İhbarname tebliğ edilse de mükellefin hiçbir hakkı doğmaz; ayrıca bu kural geçmişe dönük olarak da uygulanıp önceki tüm işlemleri etkisiz kılar",
-      "D": "İhbarname ancak mükellefin kendisinin bu yönde talepte bulunması hâlinde tebliğ edilir; idarenin resen ihbarname tebliğ etme yetkisi bulunmaz",
-      "E": "İhbarname mükellefe tebliğ edilmeden önce, tarh edilen vergi belirli bir süre sonunda kendiliğinden silinerek mükellefin borcu ortadan kalkar"
+      "A": "Tebliğ geçerli olmakla birlikte mükellefin dava açma süresi iki katına çıkar; bu suretle eksiklik telafi edilmiş sayılır",
+      "B": "Verginin miktarına ilişkin bilgilerdeki eksiklik tebliği hükümsüz kıldığından işlemin usulüne uygun biçimde yenilenmesi gerekir",
+      "C": "İhbarnamedeki her türlü eksiklik gibi bu eksiklik de tebliği etkilemez; tebliğ geçerli sayıldığından süreler işlemeye devam eder",
+      "D": "Eksik gösterilen tutar mükellef lehine sonuç doğurduğundan idare aradaki farkı sonradan talep edemez; ihbarnamedeki tutar idareyi bağladığından tarhiyat o miktarla sınırlı kalır",
+      "E": "Hata yalnız düzeltme yoluyla giderilir; tebliğin geçerliliği tartışılamayacağından yeni bir ihbarname düzenlenmesine gerek yoktur"
     },
     "answer": "B",
-    "solution": "İhbarnamenin **usulüne uygun tebliği**, mükellef için **dava açma ve/veya uzlaşma** gibi haklara ilişkin **sürelerin işlemeye başlaması** bakımından önem taşır (hak arama sürelerinin başlangıcı). Sonuçsuzluk, hak doğmaması, salt talep veya kendiliğinden silme yanlıştır.",
+    "solution": "**VUK m. 35** son fıkrası, ihbarnamedeki bilgi eksikliklerinin tebliği hükümsüz kılmayacağını belirtirken **verginin miktarına ilişkin olanları bunun dışında** tutar; miktara ilişkin eksiklik tebliği hükümsüz kılar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-ihbarname tebliği ve süreler; sınav stiline kalibre)",
-      "legislationRef": "VUK / İYUK - süreler"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "vh-surec-gen-0057",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreci ve kavramları ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi cezaları, mükellefin ölümü hâlinde mirası reddetmeyen mirasçılarından tahsil edilir.\n\nII. Ödeme emri, cebren tahsil sürecinde borçluya gönderilen belgedir.\n\nIII. Teminat ve ihtiyati haciz, amme alacağını koruyan önlemlerdir.",
+    "stem": "Bir mükellef, ticari faaliyetinde beklediği kârı elde edemediği için beyannamesini süresinde veremediğini ileri sürerek mücbir sebep hükümlerinden yararlanmak istemektedir. Buna göre Vergi Usul Kanunu'na göre mücbir sebepler ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I ve III (birinci ve üçüncü ifadeler doğrudur)",
-      "E": "I, II ve III (her üç ifade de doğrudur)"
+      "A": "Vergi ödevlerinden birinin yerine getirilmesine engel olacak derecede ağır kaza, ağır hastalık ve tutukluluk mücbir sebeptir",
+      "B": "Vergi ödevlerinin yerine getirilmesine engel olacak yangın, yer sarsıntısı ve su basması gibi afetler mücbir sebeptir",
+      "C": "Mükellefin ticari faaliyetinde beklediği kârı elde edememesi mücbir sebep sayılır ve süreleri durdurur",
+      "D": "Sahibinin iradesi dışında defter ve vesikalarının elden çıkmış olması mücbir sebeptir",
+      "E": "Mücbir sebep hâlinde bu sebep ortadan kalkıncaya kadar süreler işlemez"
     },
     "answer": "C",
-    "solution": "**I yanlış:** ölüm hâlinde vergi cezası düşer; cezalar mirasçılara geçmez (VUK md 372). **II** ödeme emrinin cebri tahsilde kullanılması ve **III** teminat/ihtiyati haczin amme alacağını koruyan önlem olması doğrudur. Doğru cevap **II ve III**.",
+    "solution": "**VUK m. 13** mücbir sebepleri sınırlı biçimde sayar: ağır kaza/hastalık/tutukluluk, afetler, kişinin iradesi dışında kaybolma ve defter-vesikaların iradesi dışında elden çıkması. **Ticari başarısızlık mücbir sebep değildir.**",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III süreç/koruma; sınav stiline kalibre)",
-      "legislationRef": "6183 md 9-13-55 / VUK md 372"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "vh-surec-gen-0058",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "'Ödeme' bakımından, verginin bir başkası (üçüncü kişi) tarafından ödenmesi mümkün müdür? Doğru ifade aşağıdakilerden hangisidir?",
+    "stem": "Bir amme borçlusu, kendisine tebliğ edilen ödeme emrinde gösterilen borcun bir kısmını daha önce ödediğini ileri sürmektedir. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Amme borcu, kural olarak borçlu adına üçüncü bir kişi tarafından da ödenebilir; ödeme ile alacak sona erer",
-      "B": "Vergi borcu bir başkası tarafından ödenemez; ancak bu kural hiçbir istisna tanımaz ve her durumda mutlak biçimde uygulanır",
-      "C": "Bir vergi borcu ancak ilgili vergi dairesinin personeli tarafından ödenebilir; ne mükellefin kendisi ne de üçüncü bir kişi bu borcu ödeyebilir",
-      "D": "Vergi borcu yalnızca görevli bir mahkeme tarafından ödenebilir; mükellef veya üçüncü kişilerin doğrudan ödeme yapması mümkün değildir",
-      "E": "Vergi borcunun üçüncü bir kişi tarafından ödenmesi, borcu sona erdirmek yerine iki katına çıkarır ve mükellef aleyhine sonuç doğurur"
+      "A": "Kısmen ödeme iddiası ödeme emrine karşı ileri sürülebilecek sebeplerdendir; borçlu tebliğ tarihinden itibaren on beş gün içinde dava açabilir",
+      "B": "Ödeme emrine karşı yalnız borcun hiç bulunmadığı iddiasıyla dava açılabilir; kısmi ödeme iddiası kanunda sayılmadığından dinlenmez",
+      "C": "Kısmen ödeme iddiası ödeme emri aşamasında ileri sürülemez; bu iddia yalnız tahsil sonrası açılacak iade davasına konu olabileceğinden ödeme emri kesinleşir",
+      "D": "Kısmen ödeme iddiası için dava süresi otuz gündür; genel dava süresi uygulandığından ayrı bir süre öngörülmemiştir",
+      "E": "Bu iddia yalnız tahsil dairesine idari başvuruyla ileri sürülebilir; dava yolu kapalı olduğundan mahkemeye gidilemez"
     },
     "answer": "A",
-    "solution": "Amme borcu, kural olarak **borçlu adına üçüncü bir kişi** tarafından da ödenebilir; **ödeme ile alacak sona erer** (önemli olan alacağın tahsilidir). Ödemenin imkânsızlığı, yalnız personel/mahkeme veya borcun artması yanlıştır.",
+    "solution": "**6183 m. 58:** ödeme emri tebliğ olunan şahıs, **böyle bir borcu olmadığı veya kısmen ödediği veya zamanaşımına uğradığı** hakkında tebliğ tarihinden itibaren **on beş gün içinde** dava açabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (kavram-üçüncü kişi ödemesi; sınav stiline kalibre)",
-      "legislationRef": "6183 - ödeme"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "vh-surec-gen-0059",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Aşağıdakilerden hangisi vergilendirme süreci bakımından YANLIŞ bir ifadedir?",
+    "stem": "Bir vergi dairesi, beyana dayanan bir vergiyi tahakkuk fişiyle, ikmalen tarh ettiği başka bir vergiyi ise ihbarnameyle işleme almış; mükellef ikinci vergiye karşı süresinde dava açmıştır. Buna göre vergilendirme sürecinde tahakkuk ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Beyana dayanan tarh kural, re'sen tarh istisnadır",
-      "B": "Tahsil zamanaşımı kural olarak beş yıldır",
-      "C": "Terkin, verginin ödenmesi anlamına gelir",
-      "D": "Ödeme emri cebren tahsil sürecinde düzenlenir",
-      "E": "Tebliğ, hüküm ifade eden hususun yazı ile bildirilmesidir"
+      "A": "İhbarnameye bağlı tarhiyatta süresinde açılan dava tahakkuku erteler",
+      "B": "Beyan üzerinden alınan vergiler tahakkuk fişi ile tarh ve tahakkuk ettirilir",
+      "C": "Beyan üzerinden alınan vergilerde tahakkuk, verginin fiilen ödendiği tarihte gerçekleşir",
+      "D": "Tahakkuku tahsile bağlı vergilerde verginin tahsili tahakkuku da içine alır",
+      "E": "Tahakkuk, tarh ve tebliğ edilen bir verginin ödenmesi gereken safhaya gelmesidir"
     },
     "answer": "C",
-    "solution": "Yanlış ifade: **terkin, verginin ödenmesi anlamına GELMEZ**; terkin belirli hâllerde vergi/cezanın **silinmesidir** (ödeme=tahsildir). Diğer ifadeler doğrudur.",
+    "solution": "**VUK m. 25** beyan üzerinden alınan vergilerde tarh ve tahakkukun **tahakkuk fişiyle birlikte** gerçekleştiğini düzenler; ödeme tahsil aşamasıdır (m. 23) ve tahakkukla karıştırılmamalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "VUK md 115 - terkin"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "vh-surec-gen-0060",
     "ders": "vergi_hukuku",
     "konu": "vergilendirme_sureci",
-    "stem": "Vergilendirme süreci ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Süreç vergiyi doğuran olay → tarh → tebliğ → tahakkuk → tahsil biçiminde ilerler.\n\nII. Tarh ve tahsil zamanaşımı kural olarak beşer yıldır.\n\nIII. Ödeme, zamanaşımı ve terkin vergi alacağını sona erdiren/etkileyen hâllerdendir.",
+    "stem": "Bir mükellef hakkında 2021 yılında doğan vergi alacağı için 2026 yılı Mart ayında re'sen tarhiyat yapılmış ve ihbarname aynı ay tebliğ edilmiştir. Mükellefin 2023 yılında altı ay süren bir mücbir sebep hâli bulunmaktadır. Buna göre aşağıdaki ifadelerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I (yalnızca birinci ifade doğrudur)",
-      "B": "I ve II (birinci ve ikinci ifadeler doğrudur)",
-      "C": "II ve III (ikinci ve üçüncü ifadeler doğrudur)",
-      "D": "I, II ve III (her üç ifade de doğrudur)",
-      "E": "I ve III (birinci ve üçüncü ifadeler doğrudur)"
+      "A": "Mücbir sebep zamanaşımını kestiğinden beş yıllık süre 2023'ten itibaren yeniden başlar; tarhiyat bu nedenle erken yapılmıştır",
+      "B": "Tarh zamanaşımı on yıl olduğundan mücbir sebep hesabına gerek yoktur; süre 31 Aralık 2031'de dolacağından tarhiyat her hâlükârda süresinde sayılır",
+      "C": "Re'sen tarhiyatta zamanaşımı işlemez; matrah takdire dayandığından süre şartı aranmaz",
+      "D": "Beş yıllık tarh zamanaşımı 31 Aralık 2026'da dolacakken mücbir sebep nedeniyle altı ay uzadığından tarhiyat süresinde yapılmıştır",
+      "E": "Zamanaşımı 31 Aralık 2025'te dolduğundan tarhiyat zamanaşımına uğramıştır; mücbir sebebin süreye etkisi bulunmaz"
     },
     "answer": "D",
-    "solution": "Üçü de doğrudur: **I** süreç sırası doğru; **II** tarh ve tahsil zamanaşımı beşer yıl; **III** ödeme/zamanaşımı/terkin sona erme hâlleri. Doğru cevap: her üçü de.",
+    "solution": "2021'de doğan alacakta süre **1 Ocak 2022**'de başlar ve beş yıl sonra **31 Aralık 2026**'da dolar (**VUK m. 114**). **m. 15** uyarınca mücbir sebep süresince süreler işlemez ve zamanaşımı işlemeyen süreler kadar **uzar**; Mart 2026 tarhiyatı zaten süre içindedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Vergi Hukuku (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "VUK 19-23-114 / 6183 md 102"
+      "styleRef": "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)",
+      "legislationRef": "213 sayili Vergi Usul Kanunu ve 6183 sayili AATUHK"
     },
     "validYear": 2026,
     "mockExamId": null
