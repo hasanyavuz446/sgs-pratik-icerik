@@ -15,15 +15,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
-        "vh-denetim-gen-0001": "Ödül verme",
-        "vh-denetim-gen-0005": "İstenen vergilendirme bilgilerini kural olarak vermek zorundadırlar",
-        "vh-denetim-gen-0007": "Vergi ziyaı ve usulsüzlük idari, kaçakçılık suçu adli cezaya tabidir",
-        "vh-denetim-gen-0010": "Sahte belge, defter hilesi veya gizleme gibi fiillerle işlenen hapis cezalı vergi suçudur",
-        "vh-denetim-gen-0012": "İdari yollarla veya vergi mahkemesinde dava yoluyla çözülebilir",
-        "vh-denetim-gen-0013": "Mükellef ile idarenin vergi veya ceza üzerinde anlaşması",
-        "vh-denetim-gen-0015": "İdare tespitinden önce bildirim ve ödeme koşullarıyla vergi ziyaı cezasını önleyen kurumdur",
-    },
     "ekonomi/para_banka_dis_ekonomi.json": {
         "eko-para-gen-0001": "Üretim faktörlerini üretmek",
         "eko-para-gen-0005": "Mevduatın belirli oranını Merkez Bankasında tutma yükümlülüğüdür",

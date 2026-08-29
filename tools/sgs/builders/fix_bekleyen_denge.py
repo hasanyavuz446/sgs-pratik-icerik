@@ -323,56 +323,6 @@ YAMALAR = {
             "Genellik verginin yalnızca zenginlerden, eşitlik ise yalnızca fakirlerden alınmasını öngörür; bu nedenle asgari geçim indirimi genellik ilkesinin, artan oranlı tarife ise eşitlik ilkesinin gereği sayılır"
         ]
     },
-    "vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
-        "0008|A": [
-            "ek",
-            "; eksik ödeme hâlinde ise ayrıca bir ceza doğmaz"
-        ],
-        "0016|C": [
-            "ek",
-            "; idarenin re'sen düzeltme yetkisi bulunmaz"
-        ],
-        "0026|B": [
-            "ek",
-            "; idari nitelikte ayrı bir usulsüzlük cezası öngörülmemiştir"
-        ],
-        "0027|D": [
-            "ek",
-            "; vergi müfettişlerinin inceleme yetkisi bulunmaz"
-        ],
-        "0029|B": [
-            "ek",
-            "; vergi mahkemesi yalnızca esas hakkında karar verebilir"
-        ],
-        "0031|B": [
-            "ek",
-            "; vergi dairesine yapılan başvuru hiç sonuç doğurmaz"
-        ],
-        "0032|D": [
-            "ek",
-            "; mükellefin beyanname vermemiş olması ise ceza gerektirmez"
-        ],
-        "0034|E": [
-            "ek",
-            "; ayrıca bu belgeler indirim hakkı sağlamaya devam eder"
-        ],
-        "0039|D": [
-            "ek",
-            "; uzlaşma ise yargısal bir çözüm yolu sayılır"
-        ],
-        "0042|B": [
-            "ek",
-            "; inceleme sonuçları ayrı bir belgeye bağlanmaz"
-        ],
-        "0044|D": [
-            "ek",
-            "; vergi ziyaı ve usulsüzlük cezalarında artırım uygulanmaz"
-        ],
-        "0057|C": [
-            "ek",
-            "; yoklamada tutanak düzenlenmesi de aranmaz"
-        ]
-    },
     "vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "0007|A": [
             "ek",

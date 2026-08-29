@@ -88,9 +88,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
-        "vh-denetim-gen-0019": {"A": "7 takvim günü"},
-    },
     "content/vergi_hukuku/emlak_vergisi.json": {
         "emlak-gen-0005": {
             "C": "Bina vergisini belediye kendi bütçesinden öder"

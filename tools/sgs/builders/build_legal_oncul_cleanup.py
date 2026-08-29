@@ -73,13 +73,6 @@ PATCHES = {
             "Mükellef, vergi kanunlarına göre kendisine vergi borcu düşen kişidir (I). Vergi kanunla konulup kaldırıldığından II; vergi ehliyeti için tam fiil ehliyeti aranmadığından III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/vergi_denetimi_ceza_uyusmazlik.json": {
-        "vh-denetim-gen-0006": p(
-            "Vergi denetim yollarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Yoklama, maddi olay ve durumların yerinde tespitine yöneliktir.\n\nII. Arama, hâkim kararı olmadan vergi dairesinin kararıyla her zaman yapılabilir.\n\nIII. Vergi incelemesinde defter ve belgeler dikkate alınmaz; yalnız sözlü beyan araştırılır.",
-            "E",
-            "Yoklama maddi olay ve durumların yerinde tespitine yöneliktir (I). Arama kural olarak hâkim kararına bağlı olduğundan II; vergi incelemesinde defter, kayıt ve belgeler üzerinden verginin doğruluğu araştırıldığından III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/kdv.json": {
         "kdv-gen-0007": p(
             "Katma değer vergisiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Harcamalar üzerinden alınan dolaylı bir vergidir.\n\nII. Hiçbir durumda yansıtılamaz; kanuni yükümlü ile vergiyi taşıyan daima aynı kişidir.\n\nIII. İndirim mekanizması bulunmadığından her aşamada toplam satış bedeli yeniden vergilenir.",
