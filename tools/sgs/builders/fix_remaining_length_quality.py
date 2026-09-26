@@ -15,16 +15,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "ekonomi/para_banka_dis_ekonomi.json": {
-        "eko-para-gen-0001": "Üretim faktörlerini üretmek",
-        "eko-para-gen-0005": "Mevduatın belirli oranını Merkez Bankasında tutma yükümlülüğüdür",
-        "eko-para-gen-0008": "I ve III",
-        "eko-para-gen-0009": "İhracat dış satım, ithalat dış alımdır; dış ticaret dengesi aralarındaki farktır",
-        "eko-para-gen-0011": "Sabit kuru otorite, dalgalı kuru piyasadaki döviz arz ve talebi belirler",
-        "eko-para-gen-0013": "Ülkenin dış dünyayla ekonomik işlemlerini gösteren sistematik tablo",
-        "eko-para-gen-0014": "Mal ve hizmet ticaretiyle birincil ve ikincil gelirleri kapsayan hesap",
-        "eko-para-gen-0015": "II ve III",
-    },
     "turkce/sozcukte_cumlede_anlam.json": {
         "turkce-anlam-gen-0002": "Acı haberle sarsıldık bugün.",
         "turkce-anlam-gen-0004": "İç **açılar** toplamı 180°dir.",

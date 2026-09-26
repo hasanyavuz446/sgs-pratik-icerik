@@ -93,14 +93,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Bina vergisini belediye kendi bütçesinden öder"
         },
     },
-    "content/ekonomi/para_banka_dis_ekonomi.json": {
-        "eko-para-gen-0018": {
-            "A": "İthal edilen mallar üzerine değerleri oranında konulan, bu malları pahalılaştırıp ithalat maliyetini artıran gümrük vergisidir"
-        },
-        "eko-para-gen-0031": {
-            "A": "Yerli para değer kaybettiği için ihracatı yabancılar açısından pahalılaştırıp caydırır; ithalatı ise yerli için ucuzlatıp teşvik eder ve dış ticaret açığını mutlaka kapatır"
-        },
-    },
     "content/turkce/sozcukte_cumlede_anlam.json": {
         "turkce-anlam-gen-0025": {"B": "İstek ve dilek"},
         "turkce-anlam-gen-0037": {"C": "Derin şaşkınlık"},

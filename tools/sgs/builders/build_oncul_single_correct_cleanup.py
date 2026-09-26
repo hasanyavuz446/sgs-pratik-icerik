@@ -59,28 +59,6 @@ PATCHES = {
             ),
         },
     },
-    "content/ekonomi/para_banka_dis_ekonomi.json": {
-        "eko-para-gen-0025": {
-            "stem": (
-                "Para, banka ve dış ekonomi ile ilgili aşağıdaki ifadelerden "
-                "hangileri doğrudur?\n\n"
-                "I. Daraltıcı para politikası enflasyonla mücadelede "
-                "kullanılabilir.\n\n"
-                "II. Dalgalı kurda ulusal paranın piyasa koşullarıyla değer "
-                "kaybetmesine devalüasyon denir.\n\n"
-                "III. Genişletici para politikası para arzını azaltır."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Daraltıcı para politikası toplam talebi ve "
-                "enflasyon baskısını azaltmak için kullanılabilir. **II "
-                "yanlıştır:** Devalüasyon sabit kur sistemindeki resmî değer "
-                "düşürmedir; dalgalı kurdaki piyasa kaynaklı düşüş değer kaybıdır. "
-                "**III yanlıştır:** Genişletici politika para arzını artırır. "
-                "Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
 }
 
 
