@@ -80,13 +80,6 @@ PATCHES = {
             "Konut olarak kullanılan daire bina vergisinin konusuna girebilir (I). Seyyar satış tezgâhı bina niteliğinde değildir (II); motorlu kara taşıtı da emlak vergisinin konusuna girmez (III). Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/damga_vergisi.json": {
-        "damga-gen-0023": p(
-            "Damga vergisiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Damga vergisi, Kanuna ekli tablolarda yer alan kâğıtlar üzerinden alınır.\n\nII. Vergiye tabi kâğıtlar (2) sayılı tabloda sayılır.\n\nIII. Vergiden istisna edilen kâğıtlar (1) sayılı tabloda sayılır.",
-            "B",
-            "Damga vergisi Kanunda tanımlanan kâğıtlar üzerinden alınır (I). Vergiye tabi kâğıtlar (1) sayılı, istisna edilenler (2) sayılı tabloda yer aldığından II ve III ters kurulmuştur. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/mtv.json": {
         "mtv-gen-0012": p(
             "Motorlu taşıtlar vergisiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellefiyet, taşıtı fiilen kullanan kişinin adına doğar.\n\nII. Mükellef, satış sözleşmesini imzalayan fakat adına tescil bulunmayan kişidir.\n\nIII. Vergiyi doğuran olay, taşıtın ilgili sicile kayıt ve tescilidir.",
