@@ -357,40 +357,6 @@ YAMALAR = {
             "; tarh ve tahakkuk aşamaları arasında bir fark bulunmaz"
         ]
     },
-    "vergi_hukuku/kurumlar_vergisi.json": {
-        "0006|A": [
-            "ek",
-            "; ortaklık ayrıca beyanname vermekle yükümlü tutulmaz"
-        ],
-        "0018|C": [
-            "ek",
-            "; bu tutarlar kanunen kabul edilmeyen gider sayılır"
-        ],
-        "0035|B": [
-            "ek",
-            "; yurt içi iştiraklerden gelen kâr payları istisnadan yararlanamaz"
-        ],
-        "0036|A": [
-            "ek",
-            "; ortaklık ilişkisinin varlığı faiz indirimini etkilemez"
-        ],
-        "0048|A": [
-            "ek",
-            "; uygulamada ikisi arasında bir ayrım gözetilmez"
-        ],
-        "0049|A": [
-            "ek",
-            "; yurt dışı iştirak kazancı istisnası kanunda yer almaz"
-        ],
-        "0059|B": [
-            "ek",
-            "; indirim beyannamede ayrıca gösterilir ve matrahı düşürür"
-        ],
-        "0060|E": [
-            "ek",
-            "; kurumların aktifindeki taşınmaz satışı bu istisnadan yararlanamaz"
-        ]
-    },
     "vergi_hukuku/gelir_vergisi.json": {
         "0015|B": [
             "ek",

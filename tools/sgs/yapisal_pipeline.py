@@ -79,7 +79,8 @@ def sahiplik_tara(konu_yolu: str, onek: str) -> list[tuple[str, int, bool]]:
     return bulunan
 
 
-def builder_uret(mod, harf, baslik, konu_yolu, ozet, dayanak, tohum):
+def builder_uret(mod, harf, baslik, konu_yolu, ozet, dayanak, tohum,
+                 stil="SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)"):
     sirali = sorted(mod.P)
     rnd = random.Random(tohum)
     bloklar = []
@@ -95,7 +96,9 @@ def builder_uret(mod, harf, baslik, konu_yolu, ozet, dayanak, tohum):
         bloklar.append(
             f"    # düzey {f['duzey']}\n    {qid[len(mod.ONEK):]!r}: patch(\n"
             f"        {f['stem']!r},\n        {{\n{secenek}\n        }},\n"
-            f"        {L!r},\n        {f['sol']!r},\n    ),")
+            f"        {L!r},\n        {f['sol']!r},\n"
+            + (f"        {f['ref']!r},\n" if f.get("ref") else "")
+            + "    ),")
     return f'''#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """{baslik} — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
@@ -119,15 +122,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 RELATIVE_PATH = "{konu_yolu}"
-STYLE_REF = "SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)"
+STYLE_REF = {stil!r}
 ONEK = "{mod.ONEK}"
 
 
-def patch(stem, options, answer, solution):
+def patch(stem, options, answer, solution, ref={dayanak_ref!r}):
     return {{
         "stem": stem, "options": options, "answer": answer, "solution": solution,
         "source": {{"kind": "generated", "styleRef": STYLE_REF,
-                   "legislationRef": {dayanak_ref!r}}},
+                   "legislationRef": ref}},
         "validYear": 2026, "mockExamId": None,
     }}
 
@@ -196,6 +199,9 @@ def main():
     ap.add_argument("--dayanak", default="")
     ap.add_argument("--dayanak-ref", default="6102 sayili Turk Ticaret Kanunu")
     ap.add_argument("--tohum", type=int, default=2026)
+    # Tasarım modülündeki yama "ref" taşıyorsa o sorunun legislationRef'i olur
+    # (§9: madde/fıkra düzeyinde dayanak); taşımıyorsa --dayanak-ref kullanılır.
+    ap.add_argument("--stil", default="SGS Hukuk (gercek sinav yapisina kalibre: olay + kural uygulamasi)")
     ap.add_argument("--yaz", action="store_true")
     a = ap.parse_args()
 
@@ -227,7 +233,7 @@ def main():
     # 3) builder
     global dayanak_ref
     dayanak_ref = a.dayanak_ref
-    kod = builder_uret(mod, harf, a.baslik, a.konu, a.ozet, a.dayanak, a.tohum)
+    kod = builder_uret(mod, harf, a.baslik, a.konu, a.ozet, a.dayanak, a.tohum, a.stil)
     hedef = BUILDERS / a.builder
     hedef.write_text(kod, encoding="utf-8")
     print(f"builder yazıldı: {hedef.name}")

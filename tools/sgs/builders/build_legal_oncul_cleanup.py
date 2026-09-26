@@ -108,13 +108,6 @@ PATCHES = {
             "Mükellefiyet fiilî kullanıma göre değil adına kayıt ve tescil bulunan kişi bakımından doğar; bu nedenle I ve II yanlıştır. Taşıtın ilgili sicile kayıt ve tescili vergiyi doğuran olaydır (III). Doğru cevap **Yalnız III**.",
         ),
     },
-    "content/vergi_hukuku/kurumlar_vergisi.json": {
-        "kurumlar-gen-0003": p(
-            "Aşağıdakilerden hangileri kurumlar vergisi mükelleflerindendir?\n\nI. Sermaye şirketleri\n\nII. Adi ortaklıklar\n\nIII. Gerçek kişiler",
-            "A",
-            "Sermaye şirketleri kurumlar vergisi mükellefidir (I). Adi ortaklıkların tüzel kişiliği bulunmaz ve kurumlar vergisi mükellefi değildir (II); gerçek kişiler de gelir vergisinin mükellefidir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
 }
 
 

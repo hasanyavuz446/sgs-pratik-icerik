@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 14 Ağustos 2026
+Son güncelleme: 26 Eylül 2026
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -11,9 +11,10 @@ Son güncelleme: 14 Ağustos 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **62 / 107 konu = %57,9**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **67 / 107 konu = %62,6**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
-muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅).
+muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅ ·
+ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 1/8 🔵 · vergi_hukuku 4/11 🔵).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
 standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
@@ -28,11 +29,11 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
 | 5 | muhasebe_standartlari | 18 | 10 | 🔵 kavramsal_cerceve (20) + tms_1_sunulus (19) sayısal kalibrasyon · tms_21_kur_degisimi (35) kalıp-dolgu+profil · **diger_guncel_standartlar YENİ KONU (60 soru)** · tms_2_stoklar (33) + tms_16_mdv (34) biçim kalibrasyonu · **tms_7_nakit_akis + tms_8_politikalar + tms_38_modv** çıkmış sınav biçim kalibrasyonu (180 soru) · **tms_36_deger_dusuklugu (28) biçim kalibrasyonu — tasarım-zamanı boy denetimiyle üretilen ilk paket**; 8 konu kaldı |
-| 6 | borclar_hukuku | 8 | 0 | ⬜ |
+| 6 | borclar_hukuku | 8 | 1 | 🔵 borcun_ifasi_sona_ermesi yapısal kalibrasyon (OTA v192); 7 konu kaldı |
 | 7 | ticaret_hukuku | 7 | 7 | ✅ **TAM** — **ticaret_sirketleri** (97→158 · olumsuz %5→**%42** · kalıp 37/60→**0/60**) · **ticari_isletme_tacir** (112→172 · %8→**%37**) · **kiymetli_evrak** (92→148 · %3→**%35** · boy 20/20→8/6) · **kambiyo_senetleri** (78→**122** · %0→**%38** · kör %23→**%21** · **ters boy tuzağı 9/22→21/8**) · **anonim_sirket** (89→**136** · %0→**%40** · kör %30→**%25** · AŞ'ye özgü derinlik: kayıtlı sermaye, rüçhan hakkı, md. 375↔408 yetki ayrımı, md. 376) · **limited_sahis_sirketleri** (91→**244** · %0→**%43** · limited·kollektif·komandit + adi şirket, 6183 md. 35 kamu borcu ayrımı; **üç boy turu gerekti** — olumsuz köke çevirince doğru şık EN KISA kalıp FATAL verdi, doğru şıkları genişletince bu kez EN UZUN'a fırladı, çözüm her soruda BİR çeldiriciye gerçek içerik eklemek oldu) · **haksiz_rekabet** (137→**240** · %0→**%43** · kör %30→**%20** · boy 18/18 tam denge; md. 54-63 ayırt edici noktaları: rekabet ilişkisi şart değil, kusur yalnız tazminatta, birlikler tazminat isteyemez, 1/3 yıl zamanaşımı, basında sıralı sorumluluk, mutlak ticari dava). ⚠️ Sahiplik devri: 8 builder / 134 kayıt. **Boru hattı otomatikleşti** (`yapisal_pipeline.py` + `sahiplik_devri.py`; boy denetimi artık İKİ UÇLU). Ders ort. kör **%20-25** |
 | 8 | meslek_hukuku | 5 | 5 | ✅ **TAM** — 5/5 konu yapısal kalibrasyondan geçti. esaslar (olumsuz %10→**%40**, tanım %62→%0) · orgut_disiplin (%13→**%35**, %67→%0) · degerler_etik (%5→**%37**, %55→%0) · sorumluluk_ve_yasaklar (%0→**%42**, kalıp 51/60→3/60) · staj_ve_sinavlar (%0→**%40**, kalıp 53/60→6/60, medyan 115→185). Ders ort. kör **%22-28**, düzey 2≥30 / düzey 3≥12. ⚠️ **Sahiplik devri:** 5 bakım builder'ından toplam 100+ kayıt yeniden yazılan paketlere devredildi |
 | 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
-| 10 | vergi_hukuku | 11 | 0 | ⬜ |
+| 10 | vergi_hukuku | 11 | 4 | 🔵 genel hukuk bandıyla: vergilendirme_sureci (v193) · vergi_usul_kanunu (v194) · vergi_denetimi_ceza_uyusmazlik (v195) — üçünde de sayısal soru yok, ayrıca ele alınacak · **vergiye özgü profille: kurumlar_vergisi (v196)** — 126 gerçek vergi sorusundan ölçülen bant (kısa şık, olumsuz %32, sayısal %30), kör %23; 2026 güncelliği birincil kaynaktan (9160 CK %50, geçici m. 16 %25, 7577 m. 11/1-k, m. 32/C asgari KV). Kalan 7 konu, sınav sıklığı sırasıyla: gelir_vergisi · kdv · amme_alacaklari · damga_vergisi · vergi_hukuku_temel_kavramlar · emlak_vergisi · mtv |
 | 11 | ekonomi | 3 | 0 | ⬜ |
 | 12 | maliye | 3 | 0 | ⬜ |
 | 13 | turkce | 3 | 0 | ⬜ (kör %28-30, öncüllü %0 — profil kalibrasyonu bekliyor) |

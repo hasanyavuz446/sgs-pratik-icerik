@@ -171,6 +171,32 @@ karıştırdığı için yasak) eklenmez.
 Bu yüzdeler paket başına katı kota değildir; 2026 biçimini gösteren kalibrasyon
 bandıdır. Son üç yıl ana ağırlık, eski sınavlar konu sürekliliği kontrolüdür.
 
+#### ⚠️ Vergi hukuku bu bandın istisnasıdır — kendi profili ölçüldü
+
+2026-09-26'da 2014–2026 arşivinden **126 gerçek vergi sorusu** ayrıca ölçüldü; genel
+hukuk bandına (257 karakterlik olay kökü) uymuyor:
+
+| Ölçüt | Gerçek vergi soruları | Genel hukuk bandı |
+|---|---:|---:|
+| Medyan kök | **168** | 257 |
+| Medyan şık | **22 karakter** | uzun, gerekçeli önerme |
+| Olumsuz kök | %36 | %41,5 |
+| Sayısal soru (“kaç gün / kaç yıl / hangi oran / hangi nispette”) | **%22** | düşük |
+| Düz tanım | %6 | %6,2 |
+
+Kanun sıklığı: VUK 25 · **KVK 24** · GVK 21 · KDV 15 · 6183 14 · Damga 9 · Emlak 4 ·
+MTV 1. Vergi soruları kanun bilgisini doğrudan ölçer (hangisi istisna değildir, hangisi
+mükellef değildir, hangi gelir unsuru, kaç gün, asıl verginin hangi nispeti). Şıklar
+çoğunlukla kısa terim, sayı veya tarihtir.
+
+Vergi paketlerinde bu yüzden **kısa şıklı kanun bilgisi + olaya uygulanan süre/oran/tutar**
+yazılır. Bilişsel düzey kapısı yine geçerlidir; sayı çıplak ezber olarak değil olay
+içinde sorulunca düzey 2-3'e çıkar (ör. “2021 zararı en son hangi yılın kazancından
+indirilir”, “asgari kurumlar vergisi kaç ₺”). Kısa şıklar boy ipucunu da doğal olarak
+azaltır. İlk uygulama: `build_vergi_kurumlar_yapisal.py` (kör %23, boy 17/15).
+2026-08'de genel bantla yazılan `vergilendirme_sureci`, `vergi_usul_kanunu` ve
+`vergi_denetimi_ceza_uyusmazlik` paketlerinde sayısal soru **hiç yoktur**; ayrıca ele alınır.
+
 #### Hukuk için bilişsel zorluk kapısı
 
 Kökün uzun olması veya olumsuz kurulması soruyu kendiliğinden zorlaştırmaz. Uzun bir
@@ -646,6 +672,20 @@ bu bağı kurar.
 türetilen amortisman oranı, TDHP'nin yapısal sahiplik sınırı ve “cari oran” adlı
 finansal rasyo ayrı değerlendirilir. Denetim yalnız mekanik riskleri yakalar;
 nihai ayrım insan incelemesidir.
+
+#### 🔴 Kanun metni ≠ yürürlükteki oran (Cumhurbaşkanı Kararı tuzağı)
+
+mevzuat.gov.tr'deki işlenmiş metin, Cumhurbaşkanına verilen oran değiştirme yetkisiyle
+yapılan değişiklikleri **metne yazmaz; yalnız dipnotta karara atıf yapar**. Ölçülmüş örnek:
+KVK m. 5/1-e metni iştirak hissesi satış kazancı için hâlâ **%75** der, ama 9160 sayılı
+CK (RG 27/11/2024) oranı bu tarihten itibaren **%50**'ye indirmiştir (GİB 2026 rehberi
+teyit eder). Metinden soru yazan yanlış cevap üretir.
+
+- Oran içeren her maddede dipnottaki CK atfı okunur; kararın güncel oranı ikinci bir
+  resmî kaynaktan (GİB rehberi, Resmî Gazete) doğrulanır.
+- Doğrulanamayan CK'lı oran (stopaj oranları gibi) **sorulmaz**.
+- Yürürlüğü ileri tarihli değişiklik ayrıca kontrol edilir: 7582 sayılı Kanun KVK m. 32/8'i
+  %12,5'e çevirdi, ama **2027 ve sonrası** kazançlar için. 2026 sınavında bu oran sorulmaz.
 
 ### Güncellik kontrol listesi
 
