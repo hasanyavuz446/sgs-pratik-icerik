@@ -117,26 +117,6 @@ PATCHES = {
             ),
         },
     },
-    "content/maliye/kamu_gelir_gider.json": {
-        "mal-gelirgider-gen-0020": {
-            "stem": (
-                "Kamu gelirleri ile ilgili aşağıdaki ifadelerden hangileri "
-                "doğrudur?\n\n"
-                "I. Vergi, harç ve resim kamu gelirlerindendir.\n\n"
-                "II. Parafiskal gelirler isteğe bağlı ödemelerdir.\n\n"
-                "III. Borçlanma, geri ödeme yükümlülüğü bulunmayan, karşılıksız ve "
-                "olağan bir kamu geliridir."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Vergi, harç ve resim kamu gelirleri arasında yer "
-                "alır. **II yanlıştır:** Parafiskal gelirler belirli mesleki veya "
-                "sosyal gruplardan zorunlu olarak alınır. **III yanlıştır:** "
-                "Borçlanma geri ödeme yükümlülüğü doğuran bir finansman kaynağıdır. "
-                "Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
     "content/maliye/butce_maliye_politikasi.json": {
         "mal-butce-gen-0010": {
             "stem": (

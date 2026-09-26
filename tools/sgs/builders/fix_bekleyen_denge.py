@@ -265,64 +265,6 @@ YAMALAR = {
             "Devletin topladığı verginin adıdır; bu nedenle harcama yapabilmek için ayrıca yasama organından izin alınması gerekmez"
         ]
     },
-    "maliye/kamu_gelir_gider.json": {
-        "0002|B": [
-            "yaz",
-            "Gerçek harcamalar karşılıksızdır; transfer harcamaları mal-hizmet alımıdır. Bu nedenle transfer harcamaları millî gelire doğrudan katkı yapar, gerçek harcamalar ise yalnızca satın alma gücü aktarımı sağlar"
-        ],
-        "0003|A": [
-            "yaz",
-            "Cari harcamalar uzun ömürlü sermaye malı alımıdır; yatırım harcamaları ise günlük giderleri karşılar. Buna göre personel giderleri yatırım, bina yapımı ise cari harcama olarak sınıflandırılır"
-        ],
-        "0008|A": [
-            "yaz",
-            "Devletin bir malını satarak elde ettiği gelirdir; bu nedenle mülk ve teşebbüs gelirleri içinde yer alır ve sosyal güvenlik kurumlarının topladığı primler bu grubun dışında kalır"
-        ],
-        "0014|E": [
-            "yaz",
-            "Verginin yalnızca yabancılardan alınmasıdır; bu nedenle yerleşik mükellefler vergi yükünün dışında tutulur ve yansıma yalnızca uluslararası ticarette gündeme gelir"
-        ],
-        "0015|A": [
-            "yaz",
-            "Vergiden kaçınma yasa dışı, vergi kaçakçılığı yasaldır; bu nedenle kaçınma hâlinde vergi ziyaı cezası uygulanır, kaçakçılık ise yalnızca idari uyarıyla sonuçlanır"
-        ],
-        "0017|A": [
-            "yaz",
-            "Dolaysız vergiler harcama üzerinden, dolaylı vergiler gelir üzerinden alınır; bu nedenle katma değer vergisi dolaysız, gelir vergisi ise dolaylı vergi olarak sınıflandırılır"
-        ],
-        "0022|B": [
-            "yaz",
-            "Kişilerin devlete gönüllü olarak yaptığı bağış ve yardımlardan oluşan isteğe bağlı bir kamu geliridir; bu nedenle tahsili için cebrî icra yoluna başvurulamaz ve bütçede tahmini gelir olarak gösterilmez"
-        ],
-        "0023|C": [
-            "ek",
-            "; karşılıksız yapılan ödemeler ise transfer harcaması sayılır"
-        ],
-        "0024|C": [
-            "ek",
-            "; karşılıksız aktarımlar gerçek harcama grubunda toplanır"
-        ],
-        "0028|A": [
-            "yaz",
-            "İleri yansımada vergi üreticiye, geri yansımada tüketiciye aktarılır; bu nedenle talebin esnek olduğu piyasalarda yükü tüketici, esnek olmadığı piyasalarda ise üretici taşır"
-        ],
-        "0038|B": [
-            "yaz",
-            "Devletin sahip olduğu bir taşınmazı veya iktisadi işletmesini satarak gelir elde etmesidir; bu nedenle bir mülk (teşebbüs) geliri sayılır ve üreticiye yapılan karşılıksız ödemelerden ayrılır"
-        ],
-        "0044|E": [
-            "yaz",
-            "Olağan gelirler elde edilmez; kamu harcamaları yalnızca borçlanma ve para basımıyla karşılanır. Bu nedenle vergiler olağanüstü gelir grubunda sınıflandırılır"
-        ],
-        "0057|D": [
-            "ek",
-            "; bu oran yalnızca dolaylı vergiler için hesaplanır"
-        ],
-        "0058|B": [
-            "yaz",
-            "Genellik verginin yalnızca zenginlerden, eşitlik ise yalnızca fakirlerden alınmasını öngörür; bu nedenle asgari geçim indirimi genellik ilkesinin, artan oranlı tarife ise eşitlik ilkesinin gereği sayılır"
-        ]
-    },
     "vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
         "0007|A": [
             "ek",

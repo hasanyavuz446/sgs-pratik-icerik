@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 1
     '0011': patch(
-        'Mükelleflerin dolaylı vergiler ve borçlanmayla finanse edilen kamu hizmetlerinin maliyetini olduğundan düşük algılaması sonucunda kamu harcamalarının artmasını açıklayan kavram hangisidir?',
+        'Bir hükümet yeni harcamalarını gelir vergisini artırmak yerine KDV oranını yükselterek ve iç borçlanmayla finanse ettiğinde seçmenlerin daha büyük bir kamu kesimini desteklediği gözlenmiştir. Bu gözlemi açıklayan kavram aşağıdakilerden hangisidir?',
         {
             'A': 'Vergi gayreti',
             'B': 'Rasyonel beklentiler',
