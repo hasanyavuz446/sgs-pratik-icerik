@@ -59,25 +59,6 @@ PATCHES = {
             ),
         },
     },
-    "content/ekonomi/makroekonomi.json": {
-        "eko-makro-gen-0020": {
-            "stem": (
-                "Enflasyon ve fiyat hareketleri ile ilgili aşağıdaki ifadelerden "
-                "hangileri doğrudur?\n\n"
-                "I. Deflasyon genel fiyat düzeyinin düşmesidir.\n\n"
-                "II. Dezenflasyon genel fiyat düzeyinin sürekli düşmesidir.\n\n"
-                "III. Stagflasyon, yüksek büyüme ile düşük enflasyonun bir arada "
-                "görülmesidir."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Deflasyon genel fiyat düzeyindeki düşüştür. "
-                "**II yanlıştır:** Dezenflasyon fiyatların düşmesi değil, enflasyon "
-                "oranının gerilemesidir. **III yanlıştır:** Stagflasyon durgunluk "
-                "ile enflasyonun birlikte görülmesidir. Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
     "content/ekonomi/para_banka_dis_ekonomi.json": {
         "eko-para-gen-0025": {
             "stem": (
