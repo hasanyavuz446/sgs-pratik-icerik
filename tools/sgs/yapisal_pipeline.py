@@ -72,9 +72,12 @@ def sahiplik_tara(konu_yolu: str, onek: str) -> list[tuple[str, int, bool]]:
     bulunan = []
     for f in sorted(BUILDERS.glob("*.py")):
         s = f.read_text(encoding="utf-8")
-        if konu_yolu not in s and kisa not in s and onek not in s:
+        # Önek kelime sınırıyla eşleşir: "kdv-gen-" öneki "finmuh-kdv-gen-"
+        # kimliklerini saymamalı (2026-09-26'da yanlış 30 kayıt raporladı).
+        onek_re = rf"(?<![A-Za-z0-9-]){re.escape(onek)}\d{{4}}"
+        if konu_yolu not in s and kisa not in s and not re.search(onek_re, s):
             continue
-        n = len(re.findall(rf"{re.escape(onek)}\d{{4}}", s))
+        n = len(re.findall(onek_re, s))
         bulunan.append((f.name, n, bool(re.search(r"args\.check", s))))
     return bulunan
 

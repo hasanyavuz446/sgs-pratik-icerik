@@ -37,6 +37,12 @@ ARGV_KORUMASI = '''    # ⚠️ Bu builder --check DESTEKLEMEZ ve calistiginda d
 '''
 
 
+def onek_deseni(onek: str) -> str:
+    """Önek kelime sınırıyla eşleşir: "kdv-gen-" öneki "finmuh-kdv-gen-" kimliklerini
+    kapsamamalı (2026-09-26'da tarama bu yüzden yanlış 30 kayıt raporladı)."""
+    return rf"(?<![A-Za-z0-9-]){re.escape(onek)}\d{{4}}"
+
+
 def blok_cikar(metin: str, anahtar: str, onek: str) -> tuple[str, int]:
     """`"<anahtar>": { ... },` bloğunu çıkar; kaç kayıt gittiğini döndür."""
     toplam = 0
@@ -46,7 +52,7 @@ def blok_cikar(metin: str, anahtar: str, onek: str) -> tuple[str, int]:
         if not m:
             break
         j = m.end()
-        toplam += len(re.findall(rf"{re.escape(onek)}\d{{4}}", metin[i:j])) or \
+        toplam += len(re.findall(onek_deseni(onek), metin[i:j])) or \
                   len(re.findall(r'"\d{4}\|[A-E]"', metin[i:j]))
         metin = metin[:i] + metin[j:]
     return metin, toplam
@@ -68,7 +74,7 @@ def main():
         if f.name == a.yeni:
             continue
         s = ilk = f.read_text(encoding="utf-8")
-        if a.konu not in s and kisa not in s and a.onek not in s:
+        if a.konu not in s and kisa not in s and not re.search(onek_deseni(a.onek), s):
             continue
         n = 0
         for anahtar in (a.konu, kisa):

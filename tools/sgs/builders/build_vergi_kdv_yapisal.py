@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Katma Deger Vergisi — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+Vergiye ozgu profille yeniden yazim: konu-teslim-hizmet, yer-mukellef-sorumlu, vergiyi doguran olay, ihracat ve diger istisnalar (7577 m. 17/4-g, 7456 m. 17/4-r dahil), matrah ve ozel matrah, oran yetkisi, indirim-iade-kismi indirim, beyan ve odeme (7491). 16 hesap sorusu bagimsiz dogrulandi.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: 3065 sayili KDV Kanunu guncel metni (mevzuat.gov.tr; yururluk tablosu kontrol edildi)
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/vergi_hukuku/kdv.json"
+STYLE_REF = 'SGS Vergi Hukuku (gercek sinav profiline kalibre: kanun bilgisi + olay uygulamasi)'
+ONEK = "kdv-gen-"
+
+
+def patch(stem, options, answer, solution, ref='3065 sayili Katma Deger Vergisi Kanunu'):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": ref},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 3
+    '0001': patch(
+        "Ticari faaliyeti bulunmayan bir gerçek kişinin aşağıdaki kiralama işlemlerinden hangileri KDV'ye tabidir?\n\nI. Sahibi olduğu daireyi konut olarak kiralaması\n\nII. Sahibi olduğu iş makinesini bir inşaat şirketine kiralaması\n\nIII. Miras kalan marka hakkını bir firmaya kiralaması",
+        {
+            'A': 'II ve III',
+            'B': 'Yalnız II',
+            'C': 'I, II ve III',
+            'D': 'I ve III',
+            'E': 'Yalnız I',
+        },
+        'A',
+        "m. 1/3-f'ye göre GVK m. 70'te sayılan mal ve hakların kiralanması, ticari faaliyet olmasa da KDV'nin konusuna girer; iş makinesi (II) ve marka hakkı (III) bu kapsamdadır. m. 17/4-d ise **iktisadi işletmelere dâhil olmayan gayrimenkullerin** kiralanmasını istisna eder; bu nedenle dairenin kiralanması (I) KDV'den istisnadır.",
+        '3065 sayılı KDV Kanunu m. 1/3-f, 17/4-d',
+    ),
+    # düzey 2
+    '0002': patch(
+        "Aşağıdakilerden hangisi KDV Kanunu'na göre teslim sayılan hâllerden biri değildir?",
+        {
+            'A': 'Vergiye tabi malın, teslimi istisna edilen malların üretiminde kullanılması',
+            'B': 'Vergiye tabi malın personele ikramiye olarak verilmesi',
+            'C': 'Mülkiyeti muhafaza kaydıyla satışta bedelin tamamen ödenmesi',
+            'D': 'Vergiye tabi malın işletmeden özel amaçla çekilmesi',
+            'E': 'Mülkiyeti muhafaza kaydıyla satışta zilyetliğin devri',
+        },
+        'C',
+        "m. 3'e göre vergiye tabi malların vergiye tabi işlemler dışındaki amaçlarla işletmeden çekilmesi veya personele ücret, prim, ikramiye, hediye gibi adlarla verilmesi, üretilip teslimi istisna edilen mallar için kullanılması ve **mülkiyeti muhafaza kaydıyla satışlarda zilyetliğin devri** teslim sayılır. Teslim, bedelin ödendiği anda değil zilyetliğin devrinde gerçekleşir.",
+        '3065 sayılı KDV Kanunu m. 3',
+    ),
+    # düzey 2
+    '0003': patch(
+        "Aşağıdakilerden hangileri KDV Kanunu'na göre mal teslimi niteliğindedir?\n\nI. Elektrik dağıtımı\n\nII. Bir şeyi yapmamayı taahhüt etmek\n\nIII. Bir makineyi kiraya vermek",
+        {
+            'A': 'I ve III',
+            'B': 'Yalnız III',
+            'C': 'Yalnız I',
+            'D': 'I ve II',
+            'E': 'I, II ve III',
+        },
+        'C',
+        "m. 2/3'e göre su, elektrik, gaz, ısıtma ve benzeri dağıtımlar **mal teslimidir** (I). m. 4'e göre hizmet, teslim ve teslim sayılan hâller dışındaki işlemlerdir; **bir şeyi yapmamayı taahhüt etmek** (II) ve **kiralamak** (III) kanunda hizmete örnek olarak sayılmıştır.",
+        '3065 sayılı KDV Kanunu m. 2',
+    ),
+    # düzey 2
+    '0004': patch(
+        'KDV mükellefiyetine ilişkin aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': "GVK m. 70'teki malları kiraya veren mükelleftir",
+            'B': 'Şans oyunlarını tertip eden mükelleftir',
+            'C': 'Müzayede mahallinde satış yapan mükelleftir',
+            'D': 'Faturada yersiz gösterilen KDV ödenmez',
+            'E': 'Mal ithal eden mükelleftir',
+        },
+        'D',
+        "m. 8/2'ye göre vergiye tabi bir işlem olmadığı veya KDV'yi faturada göstermeye hakkı bulunmadığı hâlde düzenlediği belgede KDV gösterenler **bu vergiyi ödemekle mükelleftir**; yersiz ödenen vergi, beyanların düzeltilmesi ve alıcıya geri verilmesi şartıyla iade edilir. İthalatçılar, şans oyunu tertipleyenler, GVK m. 70'teki mal ve hakları kiraya verenler ve müzayede mahallinde satış yapanlar m. 8/1 uyarınca mükelleftir.",
+        '3065 sayılı KDV Kanunu m. 8',
+    ),
+    # düzey 3
+    '0005': patch(
+        "Bir mobilya firması, toplam bedeli 100.000 ₺ olan mobilyaları henüz teslim etmeden müşterinin isteğiyle 40.000 ₺'lik fatura düzenlemiş, mobilyaları ise sonraki ay teslim etmiştir. Fatura tarihinde kaç ₺'lik bedel için vergiyi doğuran olay meydana gelir?",
+        {
+            'A': '40.000',
+            'B': '20.000',
+            'C': '0',
+            'D': '100.000',
+            'E': '60.000',
+        },
+        'A',
+        "m. 10/b'ye göre malın tesliminden önce fatura veya benzeri belge verilmesi hâlinde vergiyi doğuran olay, **belgede gösterilen miktarla sınırlı olmak üzere** belgenin düzenlenmesiyle meydana gelir. Fatura tarihinde 40.000 ₺ için vergi doğar; kalan 60.000 ₺ için vergiyi doğuran olay malın tesliminde gerçekleşir.",
+        '3065 sayılı KDV Kanunu m. 10/b',
+    ),
+    # düzey 2
+    '0006': patch(
+        'İhraç kaydıyla teslim edilen mallar mücbir sebep nedeniyle üç aylık süre içinde ihraç edilememiştir. Süresinde başvuran ihracatçıya en fazla ne kadar ek süre verilebilir?',
+        {
+            'A': 'On beş güne kadar',
+            'B': 'Bir yıla kadar',
+            'C': 'Altı aya kadar',
+            'D': 'Üç aya kadar',
+            'E': 'Bir aya kadar',
+        },
+        'D',
+        "m. 11/1-c'ye göre ihracatın mücbir sebepler veya beklenmedik durumlar nedeniyle üç ay içinde gerçekleştirilememesi hâlinde, üç aylık sürenin dolduğu tarihten itibaren **on beş gün içinde** başvuran ihracatçılara Bakanlıkça veya vergi dairelerince **üç aya kadar** ek süre verilebilir.",
+        '3065 sayılı KDV Kanunu m. 11/1-c',
+    ),
+    # düzey 3
+    '0007': patch(
+        'Yatırım teşvik belgesi kapsamında KDV ödemeden makine satın alan bir işletmenin yatırımı, belgede öngörüldüğü şekilde gerçekleşmemiştir. Zamanında alınmayan vergi hakkında aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Alıcıdan, vergi ziyaı cezası ve gecikme faiziyle alınır',
+            'B': 'Satıcıdan, vergi ziyaı cezası kesilmeksizin gecikme zammıyla alınır',
+            'C': 'Alıcıdan, cezasız ve faizsiz alınır',
+            'D': 'Satıcı ile alıcıdan yarı yarıya alınır',
+            'E': 'Terkin edilir; aranmaz',
+        },
+        'A',
+        "m. 13/d'ye göre yatırımın teşvik belgesinde öngörüldüğü şekilde gerçekleşmemesi hâlinde zamanında alınmayan vergi **alıcıdan**, **vergi ziyaı cezası uygulanarak gecikme faizi ile birlikte** tahsil edilir. Zamanaşımı, tarhı gerektiren durumun meydana geldiği tarihi takip eden takvim yılı başından başlar.",
+        '3065 sayılı KDV Kanunu m. 13/d',
+    ),
+    # düzey 2
+    '0008': patch(
+        'Liman ve hava meydanlarında deniz ve hava taşıma araçlarına verilen hizmetlere ilişkin KDV istisnasının uygulanmasında aşağıdakilerden hangisi deniz taşıma aracı kabul edilmez?',
+        {
+            'A': 'Yolcu feribotu',
+            'B': 'Gezi amaçlı kullanılan özel yat',
+            'C': 'Petrol tankeri',
+            'D': 'Römorkör',
+            'E': 'Yük gemisi',
+        },
+        'B',
+        "7524 sayılı Kanunla m. 13/b'ye eklenen parantez içi hükme göre bu bendin uygulanmasında **gezi, eğlence, spor ve amatör balıkçılık gibi faaliyetlerde kullanılan araçlar, özel tekne ve yatlar** deniz taşıma aracı olarak kabul edilmez.",
+        '3065 sayılı KDV Kanunu m. 13/b',
+    ),
+    # düzey 1
+    '0009': patch(
+        "Kurumların aktifinde en az ne kadar süre bulunan iştirak hisselerinin satışı KDV'den istisnadır?",
+        {
+            'A': 'Altı ay',
+            'B': 'Üç tam yıl',
+            'C': 'İki tam yıl',
+            'D': 'Bir tam yıl',
+            'E': 'Beş tam yıl',
+        },
+        'C',
+        "m. 17/4-r'ye göre kurumların aktifinde **en az iki tam yıl** süreyle bulunan iştirak hisselerinin satışı suretiyle gerçekleşen devir ve teslimler istisnadır. Bu kıymetlerin ticaretini yapan kurumların bu amaçla aktiflerinde bulundurdukları hisselerin teslimi istisna dışındadır.",
+        '3065 sayılı KDV Kanunu m. 17/4-r',
+    ),
+    # düzey 2
+    '0010': patch(
+        "7577 sayılı Kanunla KDV Kanunu'na eklenen ve 1/6/2026'da yürürlüğe giren istisna aşağıdakilerden hangisidir?",
+        {
+            'A': 'Elektrikli araç teslimleri',
+            'B': 'İkinci el otomobil satışları',
+            'C': 'Serbest meslek hizmetlerinin tamamı',
+            'D': 'Kamulaştırılan taşınmazın idareye devri',
+            'E': 'Konut kiralarının tamamı',
+        },
+        'D',
+        "7577 sayılı Kanunla eklenen m. 17/4-ğ uyarınca **2942 sayılı Kamulaştırma Kanunu kapsamında taşınmazların kamulaştırmayı yapan Devlet ve kamu tüzel kişilerine devri** KDV'den istisnadır. Yürürlük tablosuna göre hüküm yayımını izleyen ikinci ay başında (1/6/2026) yürürlüğe girmiştir.",
+        '3065 sayılı KDV Kanunu m. 17/4-ğ',
+    ),
+    # düzey 3
+    '0011': patch(
+        "Aşağıdaki işlemlerden hangileri KDV'den istisnadır?\n\nI. Serbest bölgede verilen bir depolama hizmeti\n\nII. Serbest bölgedeki müşteriye yapılan ve serbest bölgede yararlanılan fason hizmet\n\nIII. Serbest bölgede üretilen malın Türkiye'deki alıcıya satılıp gümrük bölgesine girmesi",
+        {
+            'A': 'Yalnız II',
+            'B': 'Yalnız I',
+            'C': 'II ve III',
+            'D': 'I ve II',
+            'E': 'I, II ve III',
+        },
+        'D',
+        "m. 17/4-ı'ya göre **serbest bölgelerde verilen hizmetler** (I) istisnadır. m. 11/1-a ve 12/3'e göre serbest bölgedeki müşteriler için yapılan ve **serbest bölgede faydalanılan** fason hizmetler (II) de istisnadır. Serbest bölgeden Türkiye'ye gelen mal ise **ithalat** olarak (m. 1/2) KDV'ye tabidir (III).",
+        '3065 sayılı KDV Kanunu m. 1/2, 11, 17/4-ı',
+    ),
+    # düzey 2
+    '0012': patch(
+        'Bedeli biletle tahsil edilen bir sinema gösteriminde KDV nasıl uygulanır?',
+        {
+            'A': 'Matrah bilet bedelinin yarısıdır',
+            'B': "KDV'yi izleyici sorumlu sıfatıyla öder",
+            'C': 'KDV bilet bedeline dâhildir; ayrıca yansıtılmaz',
+            'D': 'Bilet bedeline ayrıca KDV eklenir ve biletin üzerinde gösterilir',
+            'E': "Biletli işlemler KDV'den istisnadır",
+        },
+        'C',
+        "m. 20/4'e göre belli bir tarifeye göre fiyatı tespit edilen işler ile **bedelin biletle tahsil edildiği hâllerde** tarife ve bilet bedeli KDV dâhil edilerek tespit olunur ve vergi müşteriye ayrıca intikal ettirilmez.",
+        '3065 sayılı KDV Kanunu m. 20/4',
+    ),
+    # düzey 2
+    '0013': patch(
+        "Bir avukat, meslek kuruluşunca belirlenen asgari ücret tarifesine göre 30.000 ₺ olan bir işi müvekkilinden 20.000 ₺ alarak yapmıştır. KDV matrahı kaç ₺'dir?",
+        {
+            'A': '30.000',
+            'B': '25.000',
+            'C': '20.000',
+            'D': '10.000',
+            'E': '50.000',
+        },
+        'A',
+        "m. 27/5'e göre serbest meslek faaliyetleri için ilgili meslek teşekküllerince tespit edilmiş bir tarife varsa **hizmetin bedeli bu tarifede gösterilen ücretten düşük olamaz**. Matrah tarifedeki 30.000 ₺'dir.",
+        '3065 sayılı KDV Kanunu m. 27/5',
+    ),
+    # düzey 3
+    '0014': patch(
+        "Bir mükellefin Ocak döneminde hesaplanan KDV'si 50.000 ₺, indirilecek KDV'si 70.000 ₺'dir. Şubat döneminde hesaplanan KDV 80.000 ₺, Şubat alışlarına ait indirilecek KDV 45.000 ₺'dir. Şubat döneminde ödenecek KDV kaç ₺'dir?",
+        {
+            'A': '15.000',
+            'B': '20.000',
+            'C': '55.000',
+            'D': '35.000',
+            'E': '0',
+        },
+        'A',
+        "m. 29/2'ye göre bir dönemde indirilecek KDV hesaplanan KDV'yi aşarsa fark sonraki dönemlere **devrolunur** ve kural olarak iade edilmez. Ocak'tan 20.000 ₺ devreden KDV kalır. Şubat'ta indirilecek toplam 45.000 + 20.000 = 65.000 ₺; ödenecek KDV 80.000 − 65.000 = **15.000 ₺**. Devreden KDV ihmal edilirse 35.000 ₺ bulunur.",
+        '3065 sayılı KDV Kanunu m. 29/2',
+    ),
+    # düzey 2
+    '0015': patch(
+        "KDV Kanunu'na göre bir dönemde indirilemeyip sonraki döneme devreden KDV kural olarak iade edilmez. Bu kuralın m. 29/2'deki istisnası aşağıdakilerden hangisidir?",
+        {
+            'A': 'Zayi olan mallara ait KDV',
+            'B': 'İndirimli orana tabi işlemlerden doğan ve sınırı aşan KDV',
+            'C': 'Kanunen kabul edilmeyen giderlere ait KDV',
+            'D': 'Binek otomobil alımlarından doğan KDV',
+            'E': 'Beş yıldan uzun süre devreden KDV',
+        },
+        'B',
+        "m. 29/2'ye göre devreden KDV kural olarak iade edilmez; ancak **Cumhurbaşkanınca vergi oranı indirilen teslim ve hizmetlerle ilgili** olup indirilemeyen ve Cumhurbaşkanınca belirlenen **sınırı aşan** vergi, mükellefin vergi ve SGK borçlarına mahsuben, belirlenen hâllerde nakden iade edilir.",
+        '3065 sayılı KDV Kanunu m. 29/2',
+    ),
+    # düzey 2
+    '0016': patch(
+        'Değersiz hâle gelen alacaklara ilişkin KDV uygulaması bakımından aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': "Satıcı hesapladığı KDV'yi indirim konusu yapabilir",
+            'B': 'Karşılık gideri yazılmışsa gelir kaydı şartı aranır',
+            'C': "Alıcı ödemediği KDV'yi indirmeye devam edebilir",
+            'D': "Değersizlik VUK m. 322'ye göre belirlenir",
+            'E': 'İndirim, alacağın zarar yazıldığı dönemde yapılır',
+        },
+        'C',
+        "m. 29/4'e göre VUK m. 322'ye göre değersiz hâle gelen alacaklara ilişkin hesaplanan ve beyan edilen KDV, **alacağın zarar yazıldığı dönemde** satıcı tarafından indirilebilir; daha önce karşılık yoluyla gider yazılmışsa gelir kaydı şarttır. m. 30/e ise **alıcı tarafından ödenmeyen** bu KDV'nin alıcı yönünden indirilemeyeceğini düzenler.",
+        '3065 sayılı KDV Kanunu m. 29/4, 30/e',
+    ),
+    # düzey 2
+    '0017': patch(
+        'Hasılat esaslı KDV uygulamasına ilişkin aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Alışlardaki KDV gider veya maliyet olarak dikkate alınır',
+            'B': 'Bu usule geçen iki yıl geçmedikçe usulden çıkamaz',
+            'C': 'Usul, belirlenen sektörlerde talep üzerine uygulanır',
+            'D': 'Cumhurbaşkanınca sektöre göre belirlenen oran uygulanır',
+            'E': "Alışlardaki KDV'yi hesaplanan vergiden indirirler",
+        },
+        'E',
+        "m. 38'e göre hasılat esaslı usulde mükellefler, bedel üzerinden sektör için belirlenen oranı uygulayarak hesapladıkları KDV'yi **indirilecek KDV ile ilişkilendirmeksizin** beyan edip öder. Alışlardaki KDV kazancın tespitinde gider veya maliyet olarak dikkate alınır. Usule geçenler **iki yıl** geçmedikçe usulden çıkamaz.",
+        '3065 sayılı KDV Kanunu m. 38',
+    ),
+    # düzey 2
+    '0018': patch(
+        '7491 sayılı Kanunla yapılan değişikliğe göre, vergi kesintisi yapmakla sorumlu tutulanlar KDV beyannamelerini vergilendirme dönemini izleyen ayın hangi günü akşamına kadar verir?',
+        {
+            'A': '21',
+            'B': '24',
+            'C': '26',
+            'D': '23',
+            'E': '28',
+        },
+        'A',
+        "m. 41/1'e göre mükellefler KDV beyannamelerini izleyen ayın **24'ü**, vergi kesintisi yapmakla sorumlu tutulanlar ise **21'i** akşamına kadar verir. Ödeme süreleri m. 46'ya göre mükellefler için beyan ayının 26'sı, sorumlular için 23'üdür.",
+        '3065 sayılı KDV Kanunu m. 41',
+    ),
+    # düzey 3
+    '0019': patch(
+        "Sağlık Bakanlığınca izin verilen bir hastane, Türkiye'de yerleşmiş olmayan yabancı uyruklu bir hastaya hastane bünyesinde tedavi hizmeti vermiş, hastanın refakatçisiyle birlikte kaldığı otel konaklamasını da hastane faturalandırmıştır. KDV yönünden aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': "Tedavi istisnadır, otel konaklaması KDV'ye tabidir",
+            'B': 'Tedavi ve konaklamanın tamamı sağlık turizmi kapsamında istisnadır',
+            'C': "Tedavi ve konaklamanın tamamı KDV'ye tabidir",
+            'D': 'Hasta Türk vatandaşı olmadıkça KDV doğmaz',
+            'E': "Tedavi KDV'ye tabidir, konaklama istisnadır",
+        },
+        'A',
+        "m. 13/l'ye göre izinli kurumlarca Türkiye'de yerleşmiş olmayan yabancı uyruklu gerçek kişilere **münhasıran sağlık kurum ve kuruluşlarının bünyesinde** verilen koruyucu hekimlik, teşhis, tedavi ve rehabilitasyon hizmetleri istisnadır. Aynı bentte bu hizmetlerle **birlikte sağlanan diğer teslim ve hizmetlerin** istisna kapsamında olmadığı açıkça belirtilmiştir.",
+        '3065 sayılı KDV Kanunu m. 13/l',
+    ),
+    # düzey 1
+    '0020': patch(
+        "KDV Kanunu'na göre teslimi vergiden istisna edilmiş bir malın ithali hakkında aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'İthalde KDV alınır, sonra iade edilir',
+            'B': "İthali de KDV'den istisnadır",
+            'C': 'İthalatçı sorumlu sıfatıyla KDV beyan eder',
+            'D': 'İthalde tam oranda KDV alınır',
+            'E': 'İthalde indirimli oranda KDV alınır',
+        },
+        'B',
+        "m. 16/1-a'ya göre **bu Kanuna göre teslimleri vergiden istisna edilen mal ve hizmetlerin ithali** de KDV'den müstesnadır. Böylece yurt içi teslimi istisna olan bir malın ithalatta vergilenmesinin önüne geçilir.",
+        '3065 sayılı KDV Kanunu m. 16/1-a',
+    ),
+    # düzey 2
+    '0021': patch(
+        "A firması malını B'ye, B de aynı malı C'ye satmıştır. Mal, B'nin talimatıyla A'nın deposundan doğrudan C'ye gönderilmiştir. KDV Kanunu'na göre bu işlemlerde kaç teslim vardır?",
+        {
+            'A': 'Tek teslim',
+            'B': 'Teslim yoktur',
+            'C': 'İki ayrı teslim',
+            'D': 'Üç ayrı teslim',
+            'E': 'Bir teslim ve bir hizmet',
+        },
+        'C',
+        "m. 2/2'ye göre tasarruf hakkının zincirleme akitlerle devredilip malın el değiştirmeden doğrudan sonuncu kişiye teslim edilmesi hâlinde **aradaki safhaların her biri ayrı bir teslimdir**. A'dan B'ye ve B'den C'ye olmak üzere iki teslim vardır; her biri için KDV hesaplanır.",
+        '3065 sayılı KDV Kanunu m. 2/2',
+    ),
+    # düzey 2
+    '0022': patch(
+        "Bir oto tamircisi, onarım hizmetinin karşılığı olarak müşterisinden bir motosiklet almıştır. KDV Kanunu'na göre bu işlem nasıl vergilendirilir?",
+        {
+            'A': 'Motosiklet teslimi vergilenir, onarım vergilenmez',
+            'B': 'Takas olduğu için vergilenmez',
+            'C': 'Onarım ve motosiklet teslimi ayrı ayrı vergilenir',
+            'D': 'Onarım hizmeti vergilenir, motosiklet vergilenmez',
+            'E': 'Tek işlem olarak emsal bedelle vergilenir',
+        },
+        'C',
+        "m. 4/2'ye göre bir hizmetin karşılığının bir mal teslimi veya başka bir hizmet olması hâlinde bunların **her biri ayrı işlemdir** ve hizmet veya teslim hükümlerine göre ayrı ayrı vergilendirilir. Bedeli paradan başka bir değer olan işlemlerde matrah emsal bedel veya emsal ücrettir (m. 27/1).",
+        '3065 sayılı KDV Kanunu m. 4/2',
+    ),
+    # düzey 2
+    '0023': patch(
+        "Türkiye'deki bir anonim şirket, Almanya'da yerleşik ve Türkiye'de işyeri olmayan bir firmadan yazılım danışmanlığı almış ve hizmetten Türkiye'de yararlanmıştır. Bu hizmete ait KDV'yi kim beyan eder?",
+        {
+            'A': 'Gümrük idaresi, ithalat sırasında',
+            'B': "Alman firmanın Türkiye'deki müşterileri ortaklaşa",
+            'C': 'Kimse; hizmet yurt dışında verilmiştir',
+            'D': 'Hizmeti alan şirket, sorumlu sıfatıyla',
+            'E': "Alman firma, Türkiye'de mükellef olarak",
+        },
+        'D',
+        "m. 6/b'ye göre hizmetten **Türkiye'de faydalanılması** işlemin Türkiye'de yapılmış sayılması için yeterlidir. Mükellefin Türkiye'de ikametgâhı, işyeri, kanuni ve iş merkezi bulunmadığından m. 9/1 uyarınca vergi, işleme taraf olan Türk şirketince **sorumlu sıfatıyla** beyan edilip ödenir.",
+        '3065 sayılı KDV Kanunu m. 6, 9',
+    ),
+    # düzey 3
+    '0024': patch(
+        "Türkiye'de işyeri bulunmayan yabancı bir firma, Türkiye'de yaşayan ve KDV mükellefi olmayan gerçek kişilere internet üzerinden müzik aboneliği satmaktadır. Bu hizmetin KDV'sini kim beyan edip öder?",
+        {
+            'A': 'Ödemeye aracılık eden bankalar',
+            'B': 'Aboneliği satın alan gerçek kişiler',
+            'C': 'Hizmeti sunan yabancı firma',
+            'D': 'Kişilerin bağlı olduğu vergi daireleri',
+            'E': 'Vergi doğmaz; hizmet yurt dışından verilir',
+        },
+        'C',
+        "m. 9/1'in 7061 sayılı Kanunla eklenen cümlesine göre Türkiye'de ikametgâhı, işyeri, kanuni ve iş merkezi bulunmayanlar tarafından **KDV mükellefi olmayan gerçek kişilere elektronik ortamda sunulan hizmetlerin** KDV'si, **hizmeti sunanlar tarafından** beyan edilip ödenir. Alıcı KDV mükellefi olsaydı vergi alıcı tarafından sorumlu sıfatıyla beyan edilirdi.",
+        '3065 sayılı KDV Kanunu m. 9/1',
+    ),
+    # düzey 2
+    '0025': patch(
+        'İhracat teslimine ilişkin aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Mal gümrük bölgesinden çıkarak dış ülkeye varmalıdır',
+            'B': 'Serbest bölgedeki alıcıya teslim de ihracat sayılabilir',
+            'C': 'Gümrüksüz satış mağazasına veya deposuna yapılan teslim ihracat sayılabilir',
+            'D': 'Teslim yurt dışındaki bir müşteriye yapılmalıdır',
+            'E': 'Malın ihraçtan önce alıcı adına işlenmesi istisnayı ortadan kaldırır',
+        },
+        'E',
+        "m. 12/1'e göre teslimin yurt dışındaki bir müşteriye, serbest bölgedeki alıcıya veya gümrüksüz satış mağazalarına yapılması ve malın gümrük bölgesinden çıkarak dış ülkeye veya serbest bölgeye varması gerekir. Aynı bentte **malın ihraç edilmeden önce yurt dışındaki alıcı adına hareket eden yurt içindeki firmalar veya bizzat alıcı tarafından işlenmesinin durumu değiştirmeyeceği** açıkça belirtilmiştir.",
+        '3065 sayılı KDV Kanunu m. 12/1',
+    ),
+    # düzey 3
+    '0026': patch(
+        "İstanbul'daki bir mimarlık bürosu, Almanya'da yerleşik bir şirkete, şirketin İstanbul'da kuracağı fabrika için proje hazırlamış ve bedeli döviz olarak tahsil etmiştir. KDV yönünden aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': "KDV'yi Alman şirket sorumlu sıfatıyla öder",
+            'B': 'Müşteri yurt dışında olduğu için vergi doğmaz',
+            'C': "İstisna değildir; hizmetten Türkiye'de yararlanılmaktadır",
+            'D': 'Hizmet ihracatı olduğundan istisnadır',
+            'E': 'Bedel döviz olarak alındığı için istisnadır',
+        },
+        'C',
+        "m. 12/2'ye göre bir hizmetin yurt dışındaki müşteriler için yapılan hizmet sayılması için hizmetin yurt dışındaki bir müşteri için yapılması **ve hizmetten yurt dışında faydalanılması** gerekir. Proje Türkiye'deki fabrika için hazırlandığından hizmetten Türkiye'de yararlanılmaktadır; istisna uygulanmaz ve büro KDV hesaplar. Bedelin döviz olması sonucu değiştirmez.",
+        '3065 sayılı KDV Kanunu m. 11/1-a, 12/2',
+    ),
+    # düzey 2
+    '0027': patch(
+        'Yurt dışında yaşayan Türk vatandaşlarına yapılan ilk konut teslimi istisnasına ilişkin aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Üç yıl içinde satılırsa alınmayan vergi ödenir',
+            'B': 'İstisna binanın ilk tesliminde uygulanır',
+            'C': 'Şartlar yoksa alıcı da müteselsilen sorumludur',
+            'D': 'Alıcının yurt dışında altı aydan fazla yaşaması gerekir',
+            'E': 'Bedelin Türk lirası olarak ödenmesi yeterlidir',
+        },
+        'E',
+        "m. 13/i'ye göre istisna konut veya işyeri olarak inşa edilen binaların **ilk tesliminde** ve **bedelin döviz olarak Türkiye'ye getirilmesi** kaydıyla uygulanır; alıcı çalışma veya oturma izni alarak altı aydan fazla yurt dışında yaşayan Türk vatandaşıdır. Şartlar taşınmadan istisna uygulanırsa alıcı mükellefle birlikte müteselsilen sorumludur; konut **üç yıl** içinde elden çıkarılırsa alınmayan vergi tecil faiziyle tapu işleminden önce ödenir.",
+        '3065 sayılı KDV Kanunu m. 13/i',
+    ),
+    # düzey 2
+    '0028': patch(
+        'Aşağıdakilerden hangisinin teslim veya hizmeti için KDV hesaplanması gerekir?',
+        {
+            'A': 'İşletme hesabına göre defter tutan kuaförün hizmeti',
+            'B': 'Esnaf muaflığındaki gezici satıcının satışı',
+            'C': 'Kazancı basit usulde tespit edilen berberin hizmeti',
+            'D': 'Gerçek usule tabi olmayan çiftçinin ürün satışı',
+            'E': 'Kazancı istisna kapsamındaki sosyal içerik üreticisinin hizmeti',
+        },
+        'A',
+        "m. 17/4-a ve b'ye göre GVK'ya göre vergiden muaf esnaf, kazançları **basit usulde** tespit edilenler, mükerrer 20/B kapsamındaki sosyal içerik üreticileri ve **gerçek usulde vergiye tabi olmayan çiftçilerin** teslim ve hizmetleri istisnadır. İşletme hesabı esasına göre defter tutan kuaför gerçek usulde vergilendirildiğinden hizmetleri için KDV hesaplar.",
+        '3065 sayılı KDV Kanunu m. 17/4-a',
+    ),
+    # düzey 3
+    '0029': patch(
+        'Bir anonim şirket, üç yıldır aktifinde kayıtlı olan fabrika binasını 2026 yılında satmıştır. KDV yönünden aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'İki tam yıl şartı sağlandığından istisnadır',
+            'B': "KDV'nin konusuna girmez",
+            'C': "Teslim KDV'ye tabidir",
+            'D': 'Arsa payı vergilenir, bina istisnadır',
+            'E': 'Satış bedelinin yarısı istisnadır',
+        },
+        'C',
+        "m. 17/4-r eskiden kurumların aktifinde iki tam yıl bulunan taşınmazların satışını da istisna ediyordu; **7456 sayılı Kanunla (15/7/2023) taşınmazlar bentten çıkarılmıştır**. Bugün istisna yalnız en az iki tam yıl aktifte bulunan **iştirak hisselerinin** satışına uygulanır. Kurumun fabrika binası satışı genel hükümlere göre KDV'ye tabidir.",
+        '3065 sayılı KDV Kanunu m. 17/4-r',
+    ),
+    # düzey 2
+    '0030': patch(
+        "Özel bir kanunla bir kuruma 'her türlü vergi, resim ve harçtan muafiyet' tanınmıştır. Bu hüküm KDV bakımından hangi sonucu doğurur?",
+        {
+            'A': 'Cumhurbaşkanı kararıyla geçerli olur',
+            'B': "Kurumun tüm alışları KDV'den istisna olur",
+            'C': 'Muafiyet yarı oranda uygulanır',
+            'D': 'KDV bakımından geçersizdir',
+            'E': "Kurumun satışları KDV'den istisna olur",
+        },
+        'D',
+        "m. 19'a göre **diğer kanunlardaki vergi muaflık ve istisna hükümleri KDV bakımından geçersizdir**; KDV'ye ilişkin istisna ve muafiyetler ancak KDV Kanunu'na hüküm eklenmesi veya bu Kanunda değişiklik yapılmasıyla düzenlenebilir. Uluslararası anlaşma hükümleri saklıdır.",
+        '3065 sayılı KDV Kanunu m. 19',
+    ),
+    # düzey 3
+    '0031': patch(
+        "Bir işletme malın CIF değeri 100.000 ₺ olan bir makine ithal etmiştir. İthalat sırasında 20.000 ₺ gümrük vergisi ve 5.000 ₺ harç ödenmiş; gümrük beyannamesinin tescilinden önce vergilendirilmemiş 5.000 ₺ taşıma gideri yapılmıştır. İthalatta KDV matrahı kaç ₺'dir?",
+        {
+            'A': '125.000',
+            'B': '156.000',
+            'C': '100.000',
+            'D': '120.000',
+            'E': '130.000',
+        },
+        'E',
+        "m. 21'e göre ithalatta matrah; gümrük vergisi tarhına esas kıymet (CIF), **ithalat sırasında ödenen her türlü vergi, resim, harç ve paylar** ile **gümrük beyannamesinin tescil tarihine kadar yapılan ve vergilendirilmeyen diğer giderlerin** toplamıdır: 100.000 + 20.000 + 5.000 + 5.000 = **130.000 ₺**. 156.000 ₺, %20 oranında hesaplanan KDV'nin matraha eklenmesiyle bulunur.",
+        '3065 sayılı KDV Kanunu m. 21',
+    ),
+    # düzey 2
+    '0032': patch(
+        "İkinci el otomobil ticareti yapan bir galerici, KDV mükellefi olmayan bir kişiden 800.000 ₺'ye aldığı otomobili hiçbir esaslı değişiklik yapmadan 900.000 ₺'ye satmıştır. KDV matrahı kaç ₺'dir?",
+        {
+            'A': '800.000',
+            'B': '1.700.000',
+            'C': '900.000',
+            'D': '90.000',
+            'E': '100.000',
+        },
+        'E',
+        "m. 23/f'ye göre ikinci el motorlu kara taşıtı veya taşınmaz ticaretiyle uğraşan mükelleflerce **KDV mükellefi olmayanlardan alınarak vasfında esaslı değişiklik yapılmaksızın** satılan taşıtların tesliminde matrah, **alış bedeli düşüldükten sonra kalan tutardır**: 900.000 − 800.000 = **100.000 ₺**.",
+        '3065 sayılı KDV Kanunu m. 23/f',
+    ),
+    # düzey 2
+    '0033': patch(
+        "KDV Kanunu'nun matrah ve indirim miktarlarının değişmesine ilişkin hükmü (m. 35) bakımından aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Alıcı indirdiği vergiyi düzeltir',
+            'B': 'Düzeltme değişikliğin olduğu dönemde yapılır',
+            'C': 'İade edilen malın işletmeye fiilen girmesi aranmaz',
+            'D': 'İşlemden vazgeçilmesi de satıcı ve alıcı için düzeltme sebebidir',
+            'E': 'Satıcı borçlandığı vergiyi düzeltir',
+        },
+        'C',
+        "m. 35'e göre malların iadesi, işlemin gerçekleşmemesi, işlemden vazgeçilmesi gibi sebeplerle matrahta değişiklik olursa satıcı borçlandığı vergiyi, alıcı indirdiği vergiyi **değişikliğin vuku bulduğu dönemde** düzeltir. Şu kadar ki **iade olunan malların fiilen işletmeye girmiş olması** ve bu girişin defter kayıtları ile beyannamede gösterilmesi şarttır.",
+        '3065 sayılı KDV Kanunu m. 35',
+    ),
+    # düzey 3
+    '0034': patch(
+        'Mart 2025 tarihli bir alış faturasına ait KDV, faturanın kanuni defterlere kaydedilmesi şartıyla en geç hangi vergilendirme döneminde indirim konusu yapılabilir?',
+        {
+            'A': 'Mart 2026',
+            'B': 'Mart 2027',
+            'C': 'Aralık 2025',
+            'D': 'Aralık 2026',
+            'E': 'Süre sınırı yoktur',
+        },
+        'D',
+        "m. 29/3'e göre indirim hakkı, **vergiyi doğuran olayın vuku bulduğu takvim yılını takip eden takvim yılı aşılmamak şartıyla**, belgelerin kanuni defterlere kaydedildiği dönemde kullanılabilir. Vergiyi doğuran olay 2025'te olduğundan indirim en geç **2026 yılının son dönemi** olan Aralık 2026'da yapılabilir.",
+        '3065 sayılı KDV Kanunu m. 29/3',
+    ),
+    # düzey 2
+    '0035': patch(
+        "KDV Kanunu'na göre indirilemeyecek KDV'ye ilişkin aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Depremde zayi olan mallara ait KDV indirilemez',
+            'B': 'Hırsızlıkla zayi olan mala ait KDV indirilemez',
+            'C': "İstisna işlemlere ait alış KDV'si kural olarak indirilemez",
+            'D': "Binek otomobil alış KDV'si kural olarak indirilemez",
+            'E': 'Kanunen kabul edilmeyen giderlere ait KDV indirilemez',
+        },
+        'A',
+        "m. 30/c'ye göre zayi olan mallara ait KDV indirilemez; ancak **deprem, sel felaketi ve Bakanlığın mücbir sebep ilan ettiği yerlerdeki yangın** sonucu zayi olanlar bu kuralın dışındadır. Bu nedenle depremde zayi olan mallara ait KDV'nin indirimi düzeltilmez.",
+        '3065 sayılı KDV Kanunu m. 30',
+    ),
+    # düzey 3
+    '0036': patch(
+        "Mayıs 2025'te gerçekleştirilen bir ihracat nedeniyle indirilemeyen KDV'nin iadesi, KDV Kanunu'na göre en geç hangi tarihe kadar talep edilmelidir?",
+        {
+            'A': '31 Aralık 2025',
+            'B': '31 Aralık 2026',
+            'C': '31 Aralık 2030',
+            'D': '31 Aralık 2027',
+            'E': '31 Mayıs 2027',
+        },
+        'D',
+        "m. 32'ye göre istisna edilmiş işlemler nedeniyle indirilemeyen KDV, **işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar** talep edilmesi şartıyla iade edilir. İşlem 2025'te olduğundan süre **31 Aralık 2027**'de dolar.",
+        '3065 sayılı KDV Kanunu m. 32',
+    ),
+    # düzey 2
+    '0037': patch(
+        "KDV'de indirim hakkına ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. İndirim için KDV'nin belgede ayrıca gösterilmesi ve belgenin kanuni defterlere kaydı gerekir.\n\nII. İndirilemeyip devreden KDV kural olarak nakden iade edilir.\n\nIII. İşletmeye ait binek otomobilin alış KDV'si kural olarak indirilemez.",
+        {
+            'A': 'I, II ve III',
+            'B': 'I ve II',
+            'C': 'II ve III',
+            'D': 'I ve III',
+            'E': 'Yalnız I',
+        },
+        'D',
+        "m. 34'e göre KDV'nin alış faturası veya benzeri belgede **ayrıca gösterilmesi** ve belgenin **kanuni defterlere kaydedilmesi** şartıyla indirilebilir (I). m. 30/b'ye göre binek otomobil alış KDV'si, bu araçları kiralama veya işletme amacıyla kullananlar hariç, indirilemez (III). m. 29/2'ye göre devreden KDV sonraki dönemlere devrolunur ve **kural olarak iade edilmez** (II).",
+        '3065 sayılı KDV Kanunu m. 29/1, 30/b, 34',
+    ),
+    # düzey 2
+    '0038': patch(
+        "KDV'nin beyanı ve ödenmesine ilişkin aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': "Mükellef beyannameyi izleyen ayın 24'üne kadar verir",
+            'B': 'Vergiye tabi işlemi olmayan dönemde beyanname verilmez',
+            'C': 'İthalde KDV gümrük vergisiyle birlikte ödenir',
+            'D': "Mükellef, vergiyi beyan ayının 26'sına kadar öder",
+            'E': "İşi bırakan, izleyen ayın 24'üne kadar beyanname verir",
+        },
+        'B',
+        "m. 40/3'e göre herhangi bir vergilendirme döneminde **vergiye tabi işlemleri bulunmayan mükellefler de beyanname vermek mecburiyetindedir**. Mükellefler beyannameyi izleyen ayın 24'üne kadar verir (m. 41/1) ve vergiyi beyan ayının 26'sına kadar öder (m. 46/1); işi bırakanlar izleyen ayın 24'üne kadar beyanname verir (m. 41/4); ithalde KDV gümrük vergisiyle birlikte ödenir (m. 46/2).",
+        '3065 sayılı KDV Kanunu m. 40-41, 46',
+    ),
+    # düzey 2
+    '0039': patch(
+        "Bir KDV mükellefinin deposundaki mamul stokları, üçüncü bir kişiye rehnedilmiştir. KDV Kanunu'na göre bu stoklar KDV borcu bakımından hangi niteliği taşır?",
+        {
+            'A': 'Gecikme faizinin teminatıdır, vergi aslının değil',
+            'B': 'KDV borcuyla ilgisi yoktur',
+            'C': 'Rehin alacaklısından sonra teminat olur',
+            'D': 'KDV ile zam ve cezalarının teminatıdır',
+            'E': 'Rehin nedeniyle teminat niteliğini yitirir',
+        },
+        'D',
+        "m. 55'e göre mükelleflerin fabrika, imalathane, ticarethane, şube, mağaza ve depolarındaki ilk madde, yarı mamul ve mamul stokları, **üçüncü şahıslara satılmış veya rehnedilmiş olsa dahi** KDV ile zam ve cezalarının teminatı hükmündedir ve bedellerinden **ilk önce** hazine alacağı tahsil olunur.",
+        '3065 sayılı KDV Kanunu m. 55',
+    ),
+    # düzey 1
+    '0040': patch(
+        'Mükellefin vergiye tabi işlemleri üzerinden hesapladığı KDV ile indirebileceği KDV, gelir ve kurumlar vergisi matrahının tespitinde nasıl dikkate alınır?',
+        {
+            'A': 'Gider olarak yazılır',
+            'B': 'Amortisman yoluyla itfa edilir',
+            'C': 'Maliyete eklenir',
+            'D': 'Gider olarak kabul edilmez',
+            'E': 'Yarısı gider yazılır',
+        },
+        'D',
+        "m. 58'e göre mükellefin vergiye tabi işlemleri üzerinden hesaplanan KDV ile **indirilebilecek KDV**, gelir ve kurumlar vergisi matrahlarının tespitinde **gider olarak kabul edilmez**. İndirilemeyen KDV ise niteliğine göre gider veya maliyet unsuru olabilir.",
+        '3065 sayılı KDV Kanunu m. 58',
+    ),
+    # düzey 2
+    '0041': patch(
+        "Arsa sahibi, arsasını konut karşılığında bir müteahhide vermiş ve inşaat sonunda kendisine iki daire teslim edilmiştir. KDV Kanunu'na göre bu işlem nasıl değerlendirilir?",
+        {
+            'A': "KDV'nin konusuna girmez",
+            'B': 'Tek bir hizmet ifası sayılır',
+            'C': 'Karşılıklı iki teslim yapılmış sayılır',
+            'D': 'Tek teslim sayılır; arsa sahibi vergilenmez',
+            'E': 'Trampa olduğu için istisnadır',
+        },
+        'C',
+        "m. 2/5'e göre trampa iki ayrı teslim hükmündedir. Arsa karşılığı inşaat işlerinde **arsa sahibi müteahhide arsa payı**, **müteahhit de arsa sahibine konut veya işyeri** teslim etmiş sayılır. Müteahhidin teslimindeki bedel m. 27/6'ya göre VUK m. 267'deki maliyet bedeli esasına göre belirlenir.",
+        '3065 sayılı KDV Kanunu m. 2/5',
+    ),
+    # düzey 3
+    '0042': patch(
+        "Bir otel işletmecisi, akrabalarını otelinde bir hafta ücretsiz konaklatmıştır. KDV Kanunu'na göre bu işlem hakkında aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Hizmet sayılır; matrah sıfırdır',
+            'B': 'Bedel alınmadığı için KDV doğmaz',
+            'C': 'İşletme sahibine kira geliri doğar',
+            'D': 'Teslim sayılır; matrah maliyettir',
+            'E': 'Hizmet sayılır; matrah emsal ücrettir',
+        },
+        'E',
+        "m. 5'e göre vergiye tabi bir hizmetten işletme sahibinin, personelin veya diğer şahısların **karşılıksız yararlandırılması hizmet sayılır**. Bedeli bulunmayan işlemlerde matrah, işlemin mahiyetine göre **emsal bedel veya emsal ücrettir** (m. 27/1).",
+        '3065 sayılı KDV Kanunu m. 5, 27/1',
+    ),
+    # düzey 2
+    '0043': patch(
+        "Aşağıdaki işlemlerden hangisi KDV'nin konusuna girmez?",
+        {
+            'A': 'Bir memurun kendi otomobilini komşusuna satması',
+            'B': 'Profesyonel sporcuların katıldığı maçın tertiplenmesi',
+            'C': 'Gümrük deposunda yapılan satış',
+            'D': 'Şans oyunlarının tertiplenmesi',
+            'E': 'Boru hattıyla gaz taşınması',
+        },
+        'A',
+        'm. 1/1 ticari, sınai, zirai ve serbest meslek faaliyeti çerçevesindeki teslimleri vergiye tabi tutar; ticari faaliyet çerçevesinde olmayan bir kişinin kişisel otomobilini satması bu kapsamda değildir. Profesyonel sporcuların katıldığı maçlar, şans oyunları, boru hattıyla taşıma ve gümrük depolarındaki satışlar ise m. 1/3 uyarınca **diğer faaliyetlerden doğan** işlemler olarak vergiye tabidir.',
+        '3065 sayılı KDV Kanunu m. 1',
+    ),
+    # düzey 1
+    '0044': patch(
+        "Türkiye ile yabancı ülkeler arasında yapılan taşımacılıkta hizmetin hangi kısmı Türkiye'de yapılmış sayılır?",
+        {
+            'A': 'Dış parkura isabet eden kısmı',
+            'B': 'İç parkura isabet eden kısmı',
+            'C': 'Yarısı',
+            'D': 'Tamamı',
+            'E': "Bedelin Türkiye'de ödenen kısmı",
+        },
+        'B',
+        "m. 7'ye göre Türkiye ile yabancı ülkeler arasında yapılan taşımacılık ile transit taşımacılıkta hizmetin **iç parkura isabet eden kısmı** Türkiye'de yapılmış sayılır.",
+        '3065 sayılı KDV Kanunu m. 7',
+    ),
+    # düzey 2
+    '0045': patch(
+        "Bir satıcı, alıcıya göndermek üzere malı 30 Mart'ta kargo firmasına vermiş; mal alıcıya 2 Nisan'da ulaşmış ve fatura 3 Nisan'da düzenlenmiştir. Vergiyi doğuran olay hangi tarihte meydana gelmiştir?",
+        {
+            'A': '30 Mart',
+            'B': 'Nisan ayı sonu',
+            'C': '2 Nisan',
+            'D': '3 Nisan',
+            'E': '31 Mart',
+        },
+        'A',
+        "m. 2/1 ve m. 10/e'ye göre malın alıcıya gönderilmesi hâlinde **malın nakliyesine başlanması veya nakliyeci ya da sürücüye tevdii** teslim sayılır ve vergiyi doğuran olay bu anda meydana gelir. Mal 30 Mart'ta kargoya verildiğinden vergiyi doğuran olay **30 Mart**'tır; sonraki tarihte düzenlenen fatura bunu değiştirmez.",
+        '3065 sayılı KDV Kanunu m. 10/e',
+    ),
+    # düzey 3
+    '0046': patch(
+        "Bir imalatçı, ihraç kaydıyla sattığı malları 15 Mart'ta ihracatçıya teslim etmiştir. Tecil edilen verginin terkin edilebilmesi için mallar en geç hangi tarihe kadar ihraç edilmelidir?",
+        {
+            'A': '15 Haziran',
+            'B': '31 Temmuz',
+            'C': '15 Nisan',
+            'D': '31 Mayıs',
+            'E': '30 Haziran',
+        },
+        'E',
+        "m. 11/1-c'ye göre ihraç kaydıyla teslim edilen malların, ihracatçıya **teslim tarihini takip eden ay başından itibaren üç ay içinde** ihraç edilmesi hâlinde tecil edilen vergi terkin edilir. Teslim 15 Mart'ta olduğundan süre 1 Nisan'da başlar ve **30 Haziran**'da sona erer. 15 Haziran, sürenin teslim tarihinden başlatılmasıyla bulunur.",
+        '3065 sayılı KDV Kanunu m. 11/1-c',
+    ),
+    # düzey 2
+    '0047': patch(
+        "Türkiye'de ikamet etmeyen bir yolcu, bir mağazadan satın aldığı ürünleri beraberinde yurt dışına götürecektir. KDV yönünden aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'KDV yolcunun ülkesindeki vergiden mahsup edilir',
+            'B': "KDV'yi yolcu sorumlu sıfatıyla beyan eder",
+            'C': 'Satışta KDV hesaplanmaz; mağaza ihracat istisnasıyla belge düzenler',
+            'D': 'KDV tahsil edilir ve iade edilmez',
+            'E': 'Satışta KDV tahsil edilir, çıkışta belge ibrazıyla iade edilir',
+        },
+        'E',
+        "m. 11/1-b'ye göre Türkiye'de ikamet etmeyen yolcuların satın alarak yurt dışına götürdükleri malların tesliminde **KDV tahsil edilir**; ancak malın gümrükten çıkışında fatura veya belgenin ibrazı hâlinde tahsil edilen vergi **iade olunur**.",
+        '3065 sayılı KDV Kanunu m. 11/1-b',
+    ),
+    # düzey 2
+    '0048': patch(
+        "Aşağıdaki teslimlerden hangisi KDV'den istisna değildir?",
+        {
+            'A': 'Aylık bilim dergisinin teslimi',
+            'B': 'Muzır yayın olarak poşetlenen derginin teslimi',
+            'C': 'Basılı kitabın teslimi',
+            'D': 'Teşvik belgeli makinenin teslimi',
+            'E': 'Günlük gazetenin teslimi',
+        },
+        'B',
+        "m. 13/n'ye göre basılı kitap ve süreli yayınların teslimi KDV'den istisnadır; ancak **1117 sayılı Kanun uyarınca poşetlenerek satılanlar** istisna dışındadır. Yatırım teşvik belgesi sahibine belge kapsamındaki makine ve teçhizat teslimi ise m. 13/d uyarınca istisnadır.",
+        '3065 sayılı KDV Kanunu m. 13/n',
+    ),
+    # düzey 2
+    '0049': patch(
+        "Bir vakıf üniversitesinin bedelsiz verdiği eğitim ve öğretim hizmetleri, ilgili dönemdeki kapasitesinin yüzde kaçını geçmemek üzere KDV'den istisnadır?",
+        {
+            'A': '100',
+            'B': '25',
+            'C': '50',
+            'D': '20',
+            'E': '10',
+        },
+        'C',
+        "m. 17/2-b'ye göre özel okulların bedelsiz verdiği eğitim hizmetlerinde istisna kapasitenin **%10**'u, **üniversite ve yüksekokullarda ise %50**'si ile sınırlıdır. Öğrenci yurtlarının bedelsiz yurt hizmetlerinde de sınır %10'dur.",
+        '3065 sayılı KDV Kanunu m. 17/2-b',
+    ),
+    # düzey 3
+    '0050': patch(
+        "Kurumlar Vergisi Kanunu'na göre yapılan bir devirle infisah eden şirketin yüklendiği ve indiremediği KDV hakkında aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Devralanın maliyetine eklenir',
+            'B': 'Devralan şirket indirim konusu yapabilir',
+            'C': 'Ortaklara payları oranında iade edilir',
+            'D': 'Devreden şirkete nakden iade edilir',
+            'E': 'Devir tarihinde silinir ve kullanılamaz',
+        },
+        'B',
+        "m. 17/4-c'ye göre KVK'ya göre yapılan devir ve bölünme işlemleri KDV'den istisnadır ve bu işlemler için m. 30/a uygulanmaz. İşlem sonunda infisah edenlerce yüklenilen ve indirilemeyen vergiler, **devralan mükellefler tarafından**, mükerrer indirime yol açmayacak şekilde ve vergi incelemesi sonucuna göre indirim konusu yapılır.",
+        '3065 sayılı KDV Kanunu m. 17/4-c',
+    ),
+    # düzey 2
+    '0051': patch(
+        "Aşağıdaki teslim ve hizmetlerden hangisi KDV'den istisna değildir?",
+        {
+            'A': 'Karşılıklılık şartıyla elçiliğe yapılan teslim',
+            'B': 'Organize sanayi bölgesine yapılan altyapı teslimi',
+            'C': 'Yurt dışındaki müşteri için yapılıp yurt dışında yararlanılan yazılım hizmeti',
+            'D': 'Türkiye Varlık Fonuna yapılan varlık devri',
+            'E': 'Belediyenin işlettiği ekmek fabrikasının satışları',
+        },
+        'E',
+        "m. 1/3-g'ye göre belediyelere ait veya bunlar tarafından işletilen müesseselerin **ticari ve sınai nitelikteki** teslim ve hizmetleri KDV'ye tabidir. Varlık Fonuna devir (m. 17/4-i), OSB altyapı teslimleri (m. 13/j), yurt dışındaki müşteriye yapılıp yurt dışında yararlanılan hizmetler (m. 11-12) ve karşılıklılık şartıyla diplomatik temsilciliklere teslimler (m. 15) istisnadır.",
+        '3065 sayılı KDV Kanunu m. 1/3-g',
+    ),
+    # düzey 2
+    '0052': patch(
+        "Bir kuyumcu, satış bedeli 50.000 ₺ olan altın bileziği satmıştır. Bileziğin içerdiği külçe altın bedeli 40.000 ₺'dir. KDV matrahı kaç ₺'dir?",
+        {
+            'A': '5.000',
+            'B': '50.000',
+            'C': '90.000',
+            'D': '40.000',
+            'E': '10.000',
+        },
+        'E',
+        "m. 23/e'ye göre altından mamul veya altın içeren ziynet eşyası ile sikke altınların teslim ve ithalinde matrah, **külçe altın bedeli düşüldükten sonra kalan miktardır**: 50.000 − 40.000 = **10.000 ₺**. Külçe altın teslimi ayrıca m. 17/4-g uyarınca istisnadır.",
+        '3065 sayılı KDV Kanunu m. 23/e',
+    ),
+    # düzey 3
+    '0053': patch(
+        "Bir tacir, 100.000 ₺ bedelli malı vadeli satmış, faturaya 10.000 ₺ vade farkı eklemiş ve ticari teamüle uygun 5.000 ₺ iskontoyu faturada göstermiştir. KDV oranı %20 ise hesaplanan KDV kaç ₺'dir?",
+        {
+            'A': '105.000',
+            'B': '22.000',
+            'C': '19.000',
+            'D': '21.000',
+            'E': '20.000',
+        },
+        'D',
+        "m. 24'e göre vade farkı matraha **dâhildir**; m. 25'e göre faturada gösterilen ve ticari teamüle uygun iskonto matraha **dâhil değildir**. Matrah 100.000 + 10.000 − 5.000 = 105.000 ₺, KDV 105.000 × %20 = **21.000 ₺**. İskonto düşülmezse 22.000 ₺, vade farkı eklenmezse 19.000 ₺ bulunur.",
+        '3065 sayılı KDV Kanunu m. 24-25, 28',
+    ),
+    # düzey 2
+    '0054': patch(
+        "KDV Kanunu'nun 28. maddesine göre Cumhurbaşkanının vergi oranlarını belirleme yetkisinin sınırı aşağıdakilerden hangisidir?",
+        {
+            'A': "Kanuni oranı dört katına kadar artırmak, %1'e kadar indirmek",
+            'B': 'Kanuni oranı üç katına kadar artırmak, yarıya indirmek',
+            'C': 'Kanuni oranı iki katına kadar artırmak, sıfıra indirmek',
+            'D': 'Oranı sınırsız belirlemek',
+            'E': 'Kanuni oranı değiştirememek, istisna tanıyabilmek',
+        },
+        'A',
+        "m. 28'e göre kanuni KDV oranı **%10**'dur; Cumhurbaşkanı bu oranı **dört katına kadar artırmaya ve %1'e kadar indirmeye**, bu sınırlar içinde mal ve hizmetler ile konut teslimleri için farklı oranlar belirlemeye yetkilidir. Uygulamadaki genel oran (%20) ve indirimli oranlar bu yetkiye dayanan Cumhurbaşkanı kararlarıyla belirlenmiştir.",
+        '3065 sayılı KDV Kanunu m. 28',
+    ),
+    # düzey 3
+    '0055': patch(
+        "Aşağıdaki alışlara ait KDV'lerden hangisi indirim konusu yapılabilir?",
+        {
+            'A': 'Hırsızlık sonucu kaybolan emtiaya ait alış',
+            'B': 'Oto kiralama şirketinin kiraya vermek için aldığı binek otomobil',
+            'C': 'İnşaat şirketinin genel müdürü için aldığı binek otomobil',
+            'D': 'Kanunen kabul edilmeyen bir gidere ait fatura',
+            'E': 'Vergiden istisna teslimlerde kullanılmak üzere yapılan hammadde alışı',
+        },
+        'B',
+        "m. 30/b'ye göre işletmelere ait binek otomobillerinin alış KDV'si indirilemez; ancak **faaliyeti binek otomobillerinin kiralanması veya işletilmesi olanların bu amaçla kullandıkları** araçlar hariçtir. KKEG'ye ait KDV (m. 30/d), deprem ve sel dışındaki nedenlerle zayi olan mallara ait KDV (m. 30/c) ve istisna işlemlere ait KDV (m. 30/a) indirilemez.",
+        '3065 sayılı KDV Kanunu m. 30/b',
+    ),
+    # düzey 3
+    '0056': patch(
+        "Bir mükellefin dönem satışları 600.000 ₺ vergiye tabi ve 400.000 ₺ indirim hakkı tanınmayan istisna işlemlerden oluşmaktadır. Her iki tür işlem için ortak kullanılan girdilere ait KDV 30.000 ₺'dir. Satışlar oranında dağıtım yapılırsa indirilebilecek KDV kaç ₺'dir?",
+        {
+            'A': '12.000',
+            'B': '18.000',
+            'C': '20.000',
+            'D': '0',
+            'E': '30.000',
+        },
+        'B',
+        "m. 33'e göre indirim hakkı tanınan ve tanınmayan işlemlerin birlikte yapılması hâlinde, alış belgelerindeki KDV'nin **ancak indirim hakkı tanınan işlemlere isabet eden kısmı** indirilir. Vergiye tabi işlemlerin payı 600.000 / 1.000.000 = %60'tır: 30.000 × %60 = **18.000 ₺**. 12.000 ₺ istisna işlemlere isabet eden, indirilemeyen kısımdır.",
+        '3065 sayılı KDV Kanunu m. 33',
+    ),
+    # düzey 2
+    '0057': patch(
+        "7491 sayılı Kanunla yapılan değişiklikten sonra, sorumlu sıfatıyla beyan edilen KDV'nin indirim konusu yapılabilmesi için aşağıdakilerden hangisi aranır?",
+        {
+            'A': 'Yeminli mali müşavir raporu',
+            'B': 'Beyannamede gösterilmesi yeterli olması',
+            'C': 'Satıcının onayının alınması',
+            'D': 'Verginin ödenmiş olması',
+            'E': 'Vergi incelemesi yapılması',
+        },
+        'D',
+        "7491 sayılı Kanunla eklenen m. 29/1-ç'ye göre indirilebilecek vergiler arasında **vergi kesintisi yapmakla sorumlu tutulanlar tarafından sorumlu sıfatıyla beyan edilerek ödenen** KDV sayılmıştır. Bu nedenle 1/1/2024'ten itibaren sorumlu sıfatıyla beyan edilen KDV ancak ödendikten sonra indirilebilir.",
+        '3065 sayılı KDV Kanunu m. 29/1-ç',
+    ),
+    # düzey 2
+    '0058': patch(
+        "KDV'de vergilendirme dönemine ilişkin aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Kanuna göre vergilendirme dönemi takvim yılıdır',
+            'B': 'Kanuna göre dönem, takvim yılının üçer aylık dönemleridir',
+            'C': 'Bakanlık aylık vergilendirme dönemi belirleyebilir',
+            'D': 'İthalatta dönem gümrük bölgesine giriş anıdır',
+            'E': 'Vergi kesintisi yapmakla sorumlular için dönem bir aydır',
+        },
+        'A',
+        "m. 39/1'e göre vergilendirme dönemi **faaliyet gösterilen takvim yılının üçer aylık dönemleridir**; Bakanlık yıllık gayrisafi hasılata göre aylık dönem belirlemeye yetkilidir. m. 39/2'ye göre sorumlular için dönem bir ay, ithalat ve uluslararası taşımacılıkta gümrük bölgesine girildiği veya çıkıldığı andır. Takvim yılı yalnız götürü usulde vergilendirilenler için öngörülmüştür.",
+        '3065 sayılı KDV Kanunu m. 39',
+    ),
+    # düzey 2
+    '0059': patch(
+        "KDV'de tarh yeri ve tarhiyatın muhatabına ilişkin aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Birden fazla işyerinde tarh, gelir veya kurumlar vergisi yönünden bağlı olunan dairece yapılır',
+            'B': 'Adi ortaklıkta vergi ortaklar adına paylarına göre ayrı ayrı tarh edilir',
+            'C': 'Taşınmaz tesliminde istek hâlinde taşınmazın bulunduğu yer vergi dairesi tarh eder',
+            'D': 'Adi ortaklıkta ortaklar müteselsilen sorumludur',
+            'E': 'Adi ortaklıkta ortaklardan herhangi biri adına tarh edilir',
+        },
+        'B',
+        "m. 44/a'ya göre adi ortaklıklarda KDV, verginin ödenmesinden **müteselsilen sorumlu olmak üzere ortaklardan herhangi biri** adına tarh olunur; paylara göre bölünerek tarh yapılmaz. m. 43'e göre farklı vergi dairelerinde işyeri varsa tarh gelir veya kurumlar vergisi yönünden bağlı olunan dairece yapılır; gayrimenkul teslimlerinde mükellefin istemi hâlinde gayrimenkulün bulunduğu yer vergi dairesi tarh eder.",
+        '3065 sayılı KDV Kanunu m. 43-44',
+    ),
+    # düzey 2
+    '0060': patch(
+        'Bir iş insanı, belediyeye bağışlamak üzere bir ilkokul binası yaptırmaktadır. Müteahhidin bu okulun inşası için bağışçıya yaptığı teslim ve hizmetler KDV yönünden nasıl değerlendirilir?',
+        {
+            'A': "KDV'den istisnadır",
+            'B': "Yarısı KDV'den istisnadır",
+            'C': "Tam oranda KDV'ye tabidir",
+            'D': 'Belediye sorumlu sıfatıyla KDV öder',
+            'E': "Bağışçı KDV'yi gider yazar, istisna yoktur",
+        },
+        'A',
+        "m. 13/k'ya göre genel ve özel bütçeli kamu idarelerine, il özel idarelerine, belediyelere ve köylere **bağışlanmak üzere** yapılan okul, sağlık tesisi, belirli kapasitedeki öğrenci yurdu, huzurevi gibi tesislerin inşası dolayısıyla **bağışta bulunacaklara yapılan teslim ve hizmetler** KDV'den istisnadır.",
+        '3065 sayılı KDV Kanunu m. 13/k',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Katma Deger Vergisi' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

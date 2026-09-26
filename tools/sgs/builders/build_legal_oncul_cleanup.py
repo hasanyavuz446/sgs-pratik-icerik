@@ -73,13 +73,6 @@ PATCHES = {
             "Mükellef, vergi kanunlarına göre kendisine vergi borcu düşen kişidir (I). Vergi kanunla konulup kaldırıldığından II; vergi ehliyeti için tam fiil ehliyeti aranmadığından III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/kdv.json": {
-        "kdv-gen-0007": p(
-            "Katma değer vergisiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Harcamalar üzerinden alınan dolaylı bir vergidir.\n\nII. Hiçbir durumda yansıtılamaz; kanuni yükümlü ile vergiyi taşıyan daima aynı kişidir.\n\nIII. İndirim mekanizması bulunmadığından her aşamada toplam satış bedeli yeniden vergilenir.",
-            "A",
-            "KDV harcamalar üzerinden alınan dolaylı bir vergidir (I). Yansıtılabildiğinden verginin kanuni yükümlüsü ile fiilî taşıyıcısı farklı olabilir (II). İndirim mekanizması her aşamada eklenen değerin vergilenmesini sağladığından III de yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/emlak_vergisi.json": {
         "emlak-gen-0007": p(
             "Aşağıdakilerden hangileri bina vergisinin konusuna girebilecek yapılardandır?\n\nI. Konut olarak kullanılan bir daire\n\nII. Kolayca taşınabilen seyyar satış tezgâhı\n\nIII. Motorlu kara taşıtı",
