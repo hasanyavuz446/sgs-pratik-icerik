@@ -51,12 +51,42 @@ DOLGU = re.compile(r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutul
 #
 # Anlamın parçası olan kullanımlar bilerek dışarıda: "hiçbir istisna", "hiçbir fark",
 # "hiçbir etkisi" — bunlar iddianın kendisidir, mutlak dil kalıbı değildir.
+#
+# ⚠ 2026-09-26 GENİŞLETME — kümenin kör noktası ölçüldü. 18 gerçek sınavın (2019,
+# 2021–2026) 10.875 şıkkıyla karşılaştırıldı (öncül seçicileri hariç):
+#
+#   | işaret                     | gerçek şık | bizim çeldirici | bizim doğru |
+#   |----------------------------|-----------:|----------------:|------------:|
+#   | yalnız / yalnızca          |     %0,27  |          %13,68 |       %2,27 |
+#   | hiçbir (istisna/fark/etki dışı) | %0,29 |           %3,06 |       %0,41 |
+#   | hiç (tek başına)           |     %0,09  |           %1,75 |       %0,26 |
+#   | tümüyle                    |     %0,00  |           %1,38 |       %0,26 |
+#   | kendiliğinden / otomatik   |     %0,16  |           %0,96 |       %0,34 |
+#   | her zaman / daima          |     %0,20  |           %0,74 |       %0,12 |
+#   | her koşulda / her durumda  |     %0,02  |           %0,71 |       %0,07 |
+#   | serbestçe                  |     %0,00  |           %0,65 |       %0,27 |
+#   | kesinlikle / kesin olarak  |     %0,12  |           %0,41 |       %0,17 |
+#
+# Eski küme bunları görmüyordu: "işaretliyi ele" stratejisi maliye paketlerinde
+# %49'a (kamu_maliyesi_temel %59) çıkarken kör ölçütü aynı paketleri ~%26 gösterdi.
+# 107 paketin 29'u ≥%30'du. Gerçek sınavda aynı strateji en kötü varsayımla ≤%22.
+# "sadece" (%0,32 gerçek / %0,09 bizde) ve "tamamen" (ayırt edici değil) BİLEREK yok.
+# Öncül seçicileri ("Yalnız I", "Yalnız III") işaret değildir — lookahead ile hariç.
 ELEME_ISARETI = re.compile(
     r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır"
     r"|her\s+h[âa]lde"
     r"|hiçbir\s+(?:biçimde|hâlde|halde|koşulda|şekilde|surette|zaman)"
     r"|niteliğinde"
-    r"|(?:ölçümü|kalemi|kalemleri|işlemi|durumu)\s+(?:ifade eder|karşılar)$)",
+    r"|(?:ölçümü|kalemi|kalemleri|işlemi|durumu)\s+(?:ifade eder|karşılar)$"
+    r"|\byalnız(?:ca)?\b(?!\s+(?:I{1,3}|IV|V)\b)"
+    r"|\bhiçbir\b(?!\s+(?:istisna|fark|etki))"
+    r"|\bhiç\b"
+    r"|\btümüyle\b"
+    r"|\bkendiliğinden\b|\botomatik(?:man)?\b"
+    r"|\bher\s+zaman\b|\bdaima\b"
+    r"|\bher\s+(?:koşulda|durumda)\b"
+    r"|\bserbestçe\b"
+    r"|\bkesin(?:likle|\s+olarak)\b)",
     re.I,
 )
 # Öncüllü (I/II/III "hangileri") sorularda şık boyu doğal olarak eşit → boy ölçümü dışı.
@@ -80,7 +110,8 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
       |---|---:|---:|---:|---:|
       | 4 strateji, dar dolgu kümesi   | %23 | %30 | — | %38 |
       | 6 strateji, dar dolgu kümesi   | %24 | %30 | %33 | %36 |
-      | 6 strateji, geniş küme (şimdi) | %24 | %31 | %35 | %41 |
+      | 6 strateji, geniş küme         | %24 | %31 | %35 | %41 |
+      | 6 strateji, 2026-09-26 kümesi  | %25 | %31 | %33 | %43 |  ← şimdi
 
       · %32 UYARI  → 95. yüzdelik %31; bir üstü. (Önce %28 demiştim; rastgelenin
                      %14'ü aşıyordu, yani her yedi temiz dosyadan biri boşuna uyarı

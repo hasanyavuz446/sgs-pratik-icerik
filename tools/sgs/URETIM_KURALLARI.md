@@ -505,6 +505,26 @@ strateji bunun içindir.
 `ifade eder` %0,0 · `niteliğinde` %0,1. Bizim havuzda ~%9'du. 2026-07-28 temizliğinden
 önce 11 paket bu ölçütten FATAL alıyordu (%35-42, çoğu `muhasebe_standartlari`).
 
+#### 🔴 2026-09-26: "yalnız / yalnızca" kör noktası — küme genişletildi
+
+İlk küme en büyük kaynağı görmüyordu. 18 gerçek sınavın (2019, 2021–2026) 10.875
+şıkkıyla karşılaştırıldı: **`yalnız/yalnızca` gerçek şıklarda %0,27, bizim
+çeldiricilerde %13,68, bizim doğru şıklarda %2,27.** Ardından `hiçbir` (%0,29 ↔ %3,06),
+tek başına `hiç`, `tümüyle`, `kendiliğinden/otomatik`, `her zaman/daima`,
+`her koşulda/durumda`, `serbestçe`, `kesinlikle` geliyor. Küme genişletilince
+havuzun **41 paketi FATAL, 5'i UYARI** oldu (en kötüsü `amme_alacaklari` %71; en güçlü
+strateji “işaretliyi ele, kalanın en uzununu seç”). Aynı paketleri eski ölçüt ~%26
+gösteriyordu. Null model yeniden ölçüldü (ort. %25 · p95 %31 · p99 %33): eşikler
+32/36 geçerli kaldı.
+
+- Öncül seçicileri (“Yalnız I”) işaret sayılmaz; `sadece` ve `tamamen` ayırt edici
+  olmadığı için kümede yoktur.
+- **Yazarken:** yanlış iddiayı “yalnızca X” diye daraltmak yerine yanlış olan somut
+  koşulu, süreyi, kurumu veya sonucu yaz (“…yalnızca bankalara uygulanır” değil,
+  “…bankalara ve sigorta şirketlerine %25 oranında uygulanır”).
+- **Yayın kapısı (temizlik turu boyunca):** yayımlanan paket FATAL 0 olmalı; manifest
+  genelindeki FATAL sayısı bir OTA'dan diğerine **yalnız azalabilir**.
+
 İşaret kümesi `audit.py::ELEME_ISARETI`. **Anlamın parçası olan kullanımlar hariç:**
 `hiçbir istisna`, `hiçbir fark`, `hiçbir etkisi` — bunlar iddianın kendisidir.
 
