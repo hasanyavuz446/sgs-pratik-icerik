@@ -233,28 +233,6 @@ YAMALAR = {
             "; tarh ve tahakkuk aşamaları arasında bir fark bulunmaz"
         ]
     },
-    "vergi_hukuku/gelir_vergisi.json": {
-        "0015|B": [
-            "ek",
-            "; işletmenin borçları ve alacakları hesaba katılmaz"
-        ],
-        "0016|A": [
-            "ek",
-            "; bu ödeme ücret gideri sayılarak kazançtan indirilir"
-        ],
-        "0017|E": [
-            "ek",
-            "; amortisman tutarı doğrudan matrahtan düşülür"
-        ],
-        "0032|A": [
-            "ek",
-            "; ayrı bir gelir unsuru olarak sayılmaz"
-        ],
-        "0045|C": [
-            "ek",
-            "; yapılan tevkifat bu beyan yükümlülüğünü ortadan kaldırmaz"
-        ]
-    },
     "borclar_hukuku/sozlesme_turleri.json": {
         "0006|B": [
             "ek",

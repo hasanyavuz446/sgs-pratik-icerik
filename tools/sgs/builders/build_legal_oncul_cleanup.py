@@ -80,13 +80,6 @@ PATCHES = {
             "KDV harcamalar üzerinden alınan dolaylı bir vergidir (I). Yansıtılabildiğinden verginin kanuni yükümlüsü ile fiilî taşıyıcısı farklı olabilir (II). İndirim mekanizması her aşamada eklenen değerin vergilenmesini sağladığından III de yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/gelir_vergisi.json": {
-        "gelir-gen-0004": p(
-            "Aşağıdakilerden hangileri Gelir Vergisi Kanunu'nda sayılan gelir unsurlarındandır?\n\nI. Ücret\n\nII. Kurum kazancı\n\nIII. Katma değer",
-            "A",
-            "Ücret, Gelir Vergisi Kanunu'nda sayılan yedi gelir unsurundan biridir (I). Kurum kazancı kurumlar vergisinin konusudur (II); katma değer ise gelir vergisi unsuru değildir (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/emlak_vergisi.json": {
         "emlak-gen-0007": p(
             "Aşağıdakilerden hangileri bina vergisinin konusuna girebilecek yapılardandır?\n\nI. Konut olarak kullanılan bir daire\n\nII. Kolayca taşınabilen seyyar satış tezgâhı\n\nIII. Motorlu kara taşıtı",
