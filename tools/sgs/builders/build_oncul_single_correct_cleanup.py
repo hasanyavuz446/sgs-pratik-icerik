@@ -117,27 +117,6 @@ PATCHES = {
             ),
         },
     },
-    "content/maliye/butce_maliye_politikasi.json": {
-        "mal-butce-gen-0010": {
-            "stem": (
-                "Bütçe ve süreci ile ilgili aşağıdaki ifadelerden hangileri "
-                "doğrudur?\n\n"
-                "I. Bütçe belirli bir dönem için gelir-gider tahminlerini gösterir "
-                "ve yürütmeye yetki verir.\n\n"
-                "II. Bütçe süreci yalnızca hazırlık ve uygulama aşamalarından "
-                "oluşur.\n\n"
-                "III. Bütçenin görüşülüp kabul edilmesi yürütme organına aittir."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Bütçe belirli bir dönem için gelir ve gider "
-                "tahminlerini içerir ve yürütmeye yetki verir. **II yanlıştır:** "
-                "Süreç hazırlık, görüşülüp onaylanma, uygulama ve denetim "
-                "aşamalarını kapsar. **III yanlıştır:** Bütçeyi görüşüp kabul etme "
-                "yetkisi yasama organına aittir. Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
 }
 
 

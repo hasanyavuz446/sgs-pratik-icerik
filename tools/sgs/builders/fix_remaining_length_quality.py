@@ -25,9 +25,6 @@ CORRECT = {
         "eko-para-gen-0014": "Mal ve hizmet ticaretiyle birincil ve ikincil gelirleri kapsayan hesap",
         "eko-para-gen-0015": "II ve III",
     },
-    "maliye/butce_maliye_politikasi.json": {
-        "mal-butce-gen-0014": "İç borç yurt içi, dış borç yurt dışı kaynaklardan sağlanır",
-    },
     "turkce/sozcukte_cumlede_anlam.json": {
         "turkce-anlam-gen-0002": "Acı haberle sarsıldık bugün.",
         "turkce-anlam-gen-0004": "İç **açılar** toplamı 180°dir.",

@@ -104,14 +104,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "A": "Yerli para değer kaybettiği için ihracatı yabancılar açısından pahalılaştırıp caydırır; ithalatı ise yerli için ucuzlatıp teşvik eder ve dış ticaret açığını mutlaka kapatır"
         },
     },
-    "content/maliye/butce_maliye_politikasi.json": {
-        "mal-butce-gen-0046": {
-            "A": "Vergilerin artırılması harcanabilir geliri artırarak talebi yükseltir; bu ilişki geçmişteki gözlemlerde de aynen doğrulanmıştır ve toplam talebi her durumda büyütür"
-        },
-        "mal-butce-gen-0049": {
-            "A": "Kamu harcamalarının sınırsız artırılması ve bütçe sınırlarının kaldırılması; bu yaklaşım piyasa koşullarından etkilenmez ve her dönemde aynen uygulanır"
-        },
-    },
     "content/turkce/sozcukte_cumlede_anlam.json": {
         "turkce-anlam-gen-0025": {"B": "İstek ve dilek"},
         "turkce-anlam-gen-0037": {"C": "Derin şaşkınlık"},
