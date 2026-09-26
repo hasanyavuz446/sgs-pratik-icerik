@@ -9,6 +9,9 @@ veya daha sonra değişmiş içeriğe sessizce uygulanamaz.
 Kullanım:
     python3 tools/sgs/builders/build_oncul_single_correct_cleanup.py --check
     python3 tools/sgs/builders/build_oncul_single_correct_cleanup.py --write
+
+⚠️ SAHIPLIK DEVRI: maliye/kamu_maliyesi_temel.json bloku bu dosyadan CIKARILDI; sahiplik
+build_maliye_temel_yeniden.py dosyasina gecti. Bir sorunun tek sahibi olmali.
 """
 
 from __future__ import annotations
@@ -111,27 +114,6 @@ PATCHES = {
                 "düşürmedir; dalgalı kurdaki piyasa kaynaklı düşüş değer kaybıdır. "
                 "**III yanlıştır:** Genişletici politika para arzını artırır. "
                 "Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
-    "content/maliye/kamu_maliyesi_temel.json": {
-        "mal-temel-gen-0009": {
-            "stem": (
-                "Kamu maliyesi temel kavramları ile ilgili aşağıdaki ifadelerden "
-                "hangileri doğrudur?\n\n"
-                "I. Devletin fonksiyonları kaynak dağılımı, gelir dağılımı ve "
-                "istikrardır.\n\n"
-                "II. Dışsallıklar piyasa başarısızlığı oluşturmaz.\n\n"
-                "III. Tam kamu malı, tüketimde rakip olan ve bedelini ödemeyenlerin "
-                "dışlanabildiği bir maldır."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Kaynak dağılımı, gelir dağılımı ve ekonomik "
-                "istikrar devletin temel mali işlevleridir. **II yanlıştır:** "
-                "Dışsallıklar piyasa başarısızlığının nedenlerindendir. **III "
-                "yanlıştır:** Tam kamu malları tüketimde rakip değildir ve "
-                "dışlanamaz. Doğru cevap: **Yalnız I**."
             ),
         },
     },

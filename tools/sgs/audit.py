@@ -72,6 +72,7 @@ DOLGU = re.compile(r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutul
 # 107 paketin 29'u ≥%30'du. Gerçek sınavda aynı strateji en kötü varsayımla ≤%22.
 # "sadece" (%0,32 gerçek / %0,09 bizde) ve "tamamen" (ayırt edici değil) BİLEREK yok.
 # Öncül seçicileri ("Yalnız I", "Yalnız III") işaret değildir — lookahead ile hariç.
+# "Otomatik stabilizatör / istikrarlandırıcı / dengeleyici" maliye terimidir — hariç.
 ELEME_ISARETI = re.compile(
     r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır"
     r"|her\s+h[âa]lde"
@@ -82,7 +83,7 @@ ELEME_ISARETI = re.compile(
     r"|\bhiçbir\b(?!\s+(?:istisna|fark|etki))"
     r"|\bhiç\b"
     r"|\btümüyle\b"
-    r"|\bkendiliğinden\b|\botomatik(?:man)?\b"
+    r"|\bkendiliğinden\b|\botomatik(?:man)?\b(?!\s+(?:stabilizat|istikrar|dengeley))"
     r"|\bher\s+zaman\b|\bdaima\b"
     r"|\bher\s+(?:koşulda|durumda)\b"
     r"|\bserbestçe\b"
