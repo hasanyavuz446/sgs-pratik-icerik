@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 26 Eylül 2026 (maliye+ekonomi kontrol noktası)
+Son güncelleme: 26 Eylül 2026 (vergi 11/11 kontrol noktası)
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -11,14 +11,14 @@ Son güncelleme: 26 Eylül 2026 (maliye+ekonomi kontrol noktası)
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **76 / 107 konu = %71,0**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **80 / 107 konu = %74,8**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
 muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅ ·
-ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 1/8 🔵 · vergi_hukuku 7/11 🔵 · maliye 3/3 ✅ · ekonomi 3/3 ✅).
+ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 1/8 🔵 · vergi_hukuku 11/11 🔵 (2'si yeni ölçütle FATAL) · maliye 3/3 ✅ · ekonomi 3/3 ✅).
 
 ⚠️ **26 Eylül: denetim kör noktası kapatıldı** (`ELEME_ISARETI` genişletildi: yalnız/hiç/tümüyle/
 kendiliğinden/her zaman/kesin olarak…). Mutlak ifadeli saçma çeldiriciler artık yakalanıyor;
-bu ölçütle **35 paket FATAL**, 48 paket kör >%30. Kural: yayınlanan paket FATAL 0 olur, manifestteki
+bu ölçütle **35 paket FATAL**, 48 paket kör >%30. **Şu an: 29 paket FATAL** (maliye 3, ekonomi 3, vergi 6 yeniden yazımıyla). Kural: yayınlanan paket FATAL 0 olur, manifestteki
 FATAL sayısı yalnız azalır (URETIM_KURALLARI §5).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
@@ -38,7 +38,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 7 | ticaret_hukuku | 7 | 7 | ✅ **TAM** — **ticaret_sirketleri** (97→158 · olumsuz %5→**%42** · kalıp 37/60→**0/60**) · **ticari_isletme_tacir** (112→172 · %8→**%37**) · **kiymetli_evrak** (92→148 · %3→**%35** · boy 20/20→8/6) · **kambiyo_senetleri** (78→**122** · %0→**%38** · kör %23→**%21** · **ters boy tuzağı 9/22→21/8**) · **anonim_sirket** (89→**136** · %0→**%40** · kör %30→**%25** · AŞ'ye özgü derinlik: kayıtlı sermaye, rüçhan hakkı, md. 375↔408 yetki ayrımı, md. 376) · **limited_sahis_sirketleri** (91→**244** · %0→**%43** · limited·kollektif·komandit + adi şirket, 6183 md. 35 kamu borcu ayrımı; **üç boy turu gerekti** — olumsuz köke çevirince doğru şık EN KISA kalıp FATAL verdi, doğru şıkları genişletince bu kez EN UZUN'a fırladı, çözüm her soruda BİR çeldiriciye gerçek içerik eklemek oldu) · **haksiz_rekabet** (137→**240** · %0→**%43** · kör %30→**%20** · boy 18/18 tam denge; md. 54-63 ayırt edici noktaları: rekabet ilişkisi şart değil, kusur yalnız tazminatta, birlikler tazminat isteyemez, 1/3 yıl zamanaşımı, basında sıralı sorumluluk, mutlak ticari dava). ⚠️ Sahiplik devri: 8 builder / 134 kayıt. **Boru hattı otomatikleşti** (`yapisal_pipeline.py` + `sahiplik_devri.py`; boy denetimi artık İKİ UÇLU). Ders ort. kör **%20-25** |
 | 8 | meslek_hukuku | 5 | 5 | ✅ **TAM** — 5/5 konu yapısal kalibrasyondan geçti. esaslar (olumsuz %10→**%40**, tanım %62→%0) · orgut_disiplin (%13→**%35**, %67→%0) · degerler_etik (%5→**%37**, %55→%0) · sorumluluk_ve_yasaklar (%0→**%42**, kalıp 51/60→3/60) · staj_ve_sinavlar (%0→**%40**, kalıp 53/60→6/60, medyan 115→185). Ders ort. kör **%22-28**, düzey 2≥30 / düzey 3≥12. ⚠️ **Sahiplik devri:** 5 bakım builder'ından toplam 100+ kayıt yeniden yazılan paketlere devredildi |
 | 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
-| 10 | vergi_hukuku | 11 | 7 | 🔵 genel hukuk bandıyla: vergilendirme_sureci (v193) · vergi_usul_kanunu (v194) · vergi_denetimi_ceza_uyusmazlik (v195) — üçünde de sayısal soru yok, ayrıca ele alınacak · **vergiye özgü profille: kurumlar_vergisi (v196)** — 126 gerçek vergi sorusundan ölçülen bant (kısa şık, olumsuz %32, sayısal %30), kör %23; 2026 güncelliği birincil kaynaktan (9160 CK %50, geçici m. 16 %25, 7577 m. 11/1-k, m. 32/C asgari KV). **26 Eylül: gelir_vergisi (kör 51→**23**) · kdv (35→**20**) · amme_alacaklari (71→**23**)** güncel kanun metinlerinden sıfırdan yazıldı; güncellik: 7582 (GVK mük. 20/D, 6183 m. 48 tecil **72 ay**), 7577 (GVK m. 41/12, KDV m. 17/4-ğ), 7566 (GVK m. 74/4 konut faizi), 7456 (KDV m. 17/4-r taşınmaz çıktı), 7491. Kalan 4 konu: damga_vergisi · vergi_hukuku_temel_kavramlar · emlak_vergisi · mtv; ayrıca yeni ELEME ölçütüyle FATAL olan VUK/uyuşmazlık/süreç yeniden ele alınacak. **Yayın bekliyor (v197)** |
+| 10 | vergi_hukuku | 11 | 11 | 🔵 genel hukuk bandıyla: vergilendirme_sureci (v193) · vergi_usul_kanunu (v194) · vergi_denetimi_ceza_uyusmazlik (v195) — üçünde de sayısal soru yok, ayrıca ele alınacak · **vergiye özgü profille: kurumlar_vergisi (v196)** — 126 gerçek vergi sorusundan ölçülen bant (kısa şık, olumsuz %32, sayısal %30), kör %23; 2026 güncelliği birincil kaynaktan (9160 CK %50, geçici m. 16 %25, 7577 m. 11/1-k, m. 32/C asgari KV). **26 Eylül: gelir_vergisi (kör 51→**23**) · kdv (35→**20**) · amme_alacaklari (71→**23**)** güncel kanun metinlerinden sıfırdan yazıldı; güncellik: 7582 (GVK mük. 20/D, 6183 m. 48 tecil **72 ay**), 7577 (GVK m. 41/12, KDV m. 17/4-ğ), 7566 (GVK m. 74/4 konut faizi), 7456 (KDV m. 17/4-r taşınmaz çıktı), 7491. **Aynı gün: damga_vergisi (48→**21**) · vergi_hukuku_temel_kavramlar (51→**23**) · emlak_vergisi (60→**25**; 7566 m. 29 vergi değeri, değerli konut) · mtv (41→**20**; 7566 YİKOB istisnası, I/A tarifesi, elektrikli %25)**; --check desteklemeyen `rebalance_{gelir,kdv,amme,damga,emlak,mtv}.py` kaldırıldı. Kalan: yeni ELEME ölçütüyle **FATAL olan vergi_usul_kanunu ve vergi_denetimi_ceza_uyusmazlik** hedefli temizlenecek (vergilendirme_sureci artık FATAL değil). **Yayın bekliyor (v197)** |
 | 11 | ekonomi | 3 | 3 | ✅ **TAM (26 Eylül)** — 108 gerçek ekonomi sorusunun profiline göre üçü de sıfırdan yazıldı: mikroekonomi (kör 38→**23**) · makroekonomi (53→**23**) · para_banka_dis_ekonomi (36→**25**; öncüllü %5→%18, 16 hesap sorusu). Gerçek sınav türevleri (para çarpanı 2026b, tarife dışı engeller 2023-2, genişletici PP 2026a, teknik resesyon, iki dönemli tüketim) farklı yapıya çevrildi. **Yayın bekliyor (v197)** |
 | 12 | maliye | 3 | 3 | ✅ **TAM (26 Eylül)** — kamu_maliyesi_temel (kör 63→**19**) · kamu_gelir_gider (46→**26**) · butce_maliye_politikasi (53→**22**); gerçek sınavın 16 yakın kopyası (§11) yeniden yazıldı. **Yayın bekliyor (v197)** |
 | 13 | turkce | 3 | 0 | ⬜ (kör %28-30, öncüllü %0 — profil kalibrasyonu bekliyor) |
