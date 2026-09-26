@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 26 Eylül 2026
+Son güncelleme: 26 Eylül 2026 (maliye+ekonomi kontrol noktası)
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -11,10 +11,15 @@ Son güncelleme: 26 Eylül 2026
 
 ## Genel SGS tamamlanma
 
-**16 ders · 107 konu · 6420 soru.** Tamamlanan: **67 / 107 konu = %62,6**
+**16 ders · 107 konu · 6420 soru.** Tamamlanan: **73 / 107 konu = %68,2**
 (finansal_muhasebe 16 ✅ · mali_tablolar_analizi 6 ✅ · maliyet_muhasebesi 6 ✅ · denetim 7 ✅ ·
 muhasebe_standartlari 10/18 🔵 · matematik 2 yeni konu ✅ · is_ve_sosyal_guvenlik_hukuku 3/3 ✅ ·
-ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 1/8 🔵 · vergi_hukuku 4/11 🔵).
+ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 1/8 🔵 · vergi_hukuku 4/11 🔵 · maliye 3/3 ✅ · ekonomi 3/3 ✅).
+
+⚠️ **26 Eylül: denetim kör noktası kapatıldı** (`ELEME_ISARETI` genişletildi: yalnız/hiç/tümüyle/
+kendiliğinden/her zaman/kesin olarak…). Mutlak ifadeli saçma çeldiriciler artık yakalanıyor;
+bu ölçütle **35 paket FATAL**, 48 paket kör >%30. Kural: yayınlanan paket FATAL 0 olur, manifestteki
+FATAL sayısı yalnız azalır (URETIM_KURALLARI §5).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
 standartlarında güncel kapsam tamamlanırken bir yeni konu açıldı. Yeni üretilen konular
@@ -34,8 +39,8 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 8 | meslek_hukuku | 5 | 5 | ✅ **TAM** — 5/5 konu yapısal kalibrasyondan geçti. esaslar (olumsuz %10→**%40**, tanım %62→%0) · orgut_disiplin (%13→**%35**, %67→%0) · degerler_etik (%5→**%37**, %55→%0) · sorumluluk_ve_yasaklar (%0→**%42**, kalıp 51/60→3/60) · staj_ve_sinavlar (%0→**%40**, kalıp 53/60→6/60, medyan 115→185). Ders ort. kör **%22-28**, düzey 2≥30 / düzey 3≥12. ⚠️ **Sahiplik devri:** 5 bakım builder'ından toplam 100+ kayıt yeniden yazılan paketlere devredildi |
 | 9 | is_ve_sosyal_guvenlik_hukuku | 3 | 3 | ✅ **TAM** — üç paketin tamamı yapısal sınav kalibrasyonundan geçti: `is_hukuku_is_sozlesmesi` (57/60), `sosyal_guvenlik_hukuku` (60/60), `is_sozlesmesinin_sona_ermesi` (60/60). Tanım ezberi yerine olay + kural + istisna/sonuç uygulaması; son pakette medyan kök 123→**228**, kısa/tek-kural kök 40→**4**, kör öğrenci **%25**, FATAL 0/UYARI 0. |
 | 10 | vergi_hukuku | 11 | 4 | 🔵 genel hukuk bandıyla: vergilendirme_sureci (v193) · vergi_usul_kanunu (v194) · vergi_denetimi_ceza_uyusmazlik (v195) — üçünde de sayısal soru yok, ayrıca ele alınacak · **vergiye özgü profille: kurumlar_vergisi (v196)** — 126 gerçek vergi sorusundan ölçülen bant (kısa şık, olumsuz %32, sayısal %30), kör %23; 2026 güncelliği birincil kaynaktan (9160 CK %50, geçici m. 16 %25, 7577 m. 11/1-k, m. 32/C asgari KV). Kalan 7 konu, sınav sıklığı sırasıyla: gelir_vergisi · kdv · amme_alacaklari · damga_vergisi · vergi_hukuku_temel_kavramlar · emlak_vergisi · mtv |
-| 11 | ekonomi | 3 | 0 | ⬜ |
-| 12 | maliye | 3 | 0 | ⬜ |
+| 11 | ekonomi | 3 | 3 | ✅ **TAM (26 Eylül)** — 108 gerçek ekonomi sorusunun profiline göre üçü de sıfırdan yazıldı: mikroekonomi (kör 38→**23**) · makroekonomi (53→**23**) · para_banka_dis_ekonomi (36→**25**; öncüllü %5→%18, 16 hesap sorusu). Gerçek sınav türevleri (para çarpanı 2026b, tarife dışı engeller 2023-2, genişletici PP 2026a, teknik resesyon, iki dönemli tüketim) farklı yapıya çevrildi. **Yayın bekliyor (v197)** |
+| 12 | maliye | 3 | 3 | ✅ **TAM (26 Eylül)** — kamu_maliyesi_temel (kör 63→**19**) · kamu_gelir_gider (46→**26**) · butce_maliye_politikasi (53→**22**); gerçek sınavın 16 yakın kopyası (§11) yeniden yazıldı. **Yayın bekliyor (v197)** |
 | 13 | turkce | 3 | 0 | ⬜ (kör %28-30, öncüllü %0 — profil kalibrasyonu bekliyor) |
 | 14 | matematik | 5 | 2 | ✅ **KAPSAM AÇIĞI KAPATILDI** — 2 yeni konu / 120 soru (ileri matematik); mevcut 3 konu ölçüldü, zaten temiz (kör %19-21, boy 1/0) |
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
