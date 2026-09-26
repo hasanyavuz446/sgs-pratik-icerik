@@ -88,11 +88,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/vergi_hukuku/emlak_vergisi.json": {
-        "emlak-gen-0005": {
-            "C": "Bina vergisini belediye kendi bütçesinden öder"
-        },
-    },
     "content/turkce/sozcukte_cumlede_anlam.json": {
         "turkce-anlam-gen-0025": {"B": "İstek ve dilek"},
         "turkce-anlam-gen-0037": {"C": "Derin şaşkınlık"},

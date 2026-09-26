@@ -66,20 +66,6 @@ PATCHES = {
             "Bir tarafın zenginleşmesi sebepsiz zenginleşmenin unsurudur (I). İade borcu için zenginleşenin kusurlu olması (II) veya haksız fiil işlemesi (III) aranmaz. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/emlak_vergisi.json": {
-        "emlak-gen-0007": p(
-            "Aşağıdakilerden hangileri bina vergisinin konusuna girebilecek yapılardandır?\n\nI. Konut olarak kullanılan bir daire\n\nII. Kolayca taşınabilen seyyar satış tezgâhı\n\nIII. Motorlu kara taşıtı",
-            "A",
-            "Konut olarak kullanılan daire bina vergisinin konusuna girebilir (I). Seyyar satış tezgâhı bina niteliğinde değildir (II); motorlu kara taşıtı da emlak vergisinin konusuna girmez (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
-    "content/vergi_hukuku/mtv.json": {
-        "mtv-gen-0012": p(
-            "Motorlu taşıtlar vergisiyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellefiyet, taşıtı fiilen kullanan kişinin adına doğar.\n\nII. Mükellef, satış sözleşmesini imzalayan fakat adına tescil bulunmayan kişidir.\n\nIII. Vergiyi doğuran olay, taşıtın ilgili sicile kayıt ve tescilidir.",
-            "D",
-            "Mükellefiyet fiilî kullanıma göre değil adına kayıt ve tescil bulunan kişi bakımından doğar; bu nedenle I ve II yanlıştır. Taşıtın ilgili sicile kayıt ve tescili vergiyi doğuran olaydır (III). Doğru cevap **Yalnız III**.",
-        ),
-    },
 }
 
 
