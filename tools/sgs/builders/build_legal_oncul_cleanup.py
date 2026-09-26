@@ -66,13 +66,6 @@ PATCHES = {
             "Bir tarafın zenginleşmesi sebepsiz zenginleşmenin unsurudur (I). İade borcu için zenginleşenin kusurlu olması (II) veya haksız fiil işlemesi (III) aranmaz. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
-        "vh-kavram-gen-0011": p(
-            "Vergi hukukunun temel kavramlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Mükellef, kendisine vergi borcu düşen kişidir.\n\nII. Vergi, Bakanlık genelgesiyle konulup kaldırılabilir.\n\nIII. Vergi mükellefi olabilmek için tam fiil ehliyetine sahip olmak şarttır.",
-            "A",
-            "Mükellef, vergi kanunlarına göre kendisine vergi borcu düşen kişidir (I). Vergi kanunla konulup kaldırıldığından II; vergi ehliyeti için tam fiil ehliyeti aranmadığından III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/vergi_hukuku/emlak_vergisi.json": {
         "emlak-gen-0007": p(
             "Aşağıdakilerden hangileri bina vergisinin konusuna girebilecek yapılardandır?\n\nI. Konut olarak kullanılan bir daire\n\nII. Kolayca taşınabilen seyyar satış tezgâhı\n\nIII. Motorlu kara taşıtı",

@@ -199,40 +199,6 @@ YAMALAR = {
             "Kesin vade kararlaştırılmadığı için (A2) temerrüde düşürülemez; (B2) yalnızca ifayı bekler ve geçen süreye katlanır, ayrıca faiz de isteyemez"
         ]
     },
-    "vergi_hukuku/vergi_hukuku_temel_kavramlar.json": {
-        "0007|A": [
-            "ek",
-            "; verginin ödenmesinden başka bir kişi sorumlu tutulamaz"
-        ],
-        "0035|E": [
-            "ek",
-            "; idare bu sözleşmeye dayanarak alacağını devralan kişiden ister"
-        ],
-        "0041|D": [
-            "ek",
-            "; kanuni temsilcilerin takibi yalnızca özel hukuk alacaklarında mümkündür"
-        ],
-        "0046|C": [
-            "ek",
-            "; bu nedenle vergi yalnızca bir kayıt aracı olarak görülür"
-        ],
-        "0048|D": [
-            "ek",
-            "; sürenin uzaması yalnızca mücbir sebep hâlinde gündeme gelir"
-        ],
-        "0049|C": [
-            "ek",
-            "; vergi hukukunda süreler hiçbir olayla durmaz"
-        ],
-        "0051|E": [
-            "ek",
-            "; merkezi idarenin bu konuda bir yetkisi bulunmaz"
-        ],
-        "0056|A": [
-            "ek",
-            "; tarh ve tahakkuk aşamaları arasında bir fark bulunmaz"
-        ]
-    },
     "borclar_hukuku/sozlesme_turleri.json": {
         "0006|B": [
             "ek",
