@@ -93,9 +93,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Bina vergisini belediye kendi bütçesinden öder"
         },
     },
-    "content/ekonomi/mikroekonomi.json": {
-        "eko-mikro-gen-0031": {"E": "Mikroekonomi yalnızca enflasyonu inceler"},
-    },
     "content/ekonomi/para_banka_dis_ekonomi.json": {
         "eko-para-gen-0018": {
             "A": "İthal edilen mallar üzerine değerleri oranında konulan, bu malları pahalılaştırıp ithalat maliyetini artıran gümrük vergisidir"

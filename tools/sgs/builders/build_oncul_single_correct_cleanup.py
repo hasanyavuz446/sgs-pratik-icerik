@@ -59,23 +59,6 @@ PATCHES = {
             ),
         },
     },
-    "content/ekonomi/mikroekonomi.json": {
-        "eko-mikro-gen-0020": {
-            "stem": (
-                "Esneklik ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\n"
-                "I. Esneklik 1'den büyükse talep esnektir.\n\n"
-                "II. Gelir esnekliği negatif olan mallar normal maldır.\n\n"
-                "III. Çapraz esneklik pozitif olan mallar tamamlayıcı maldır."
-            ),
-            "answer": "A",
-            "solution": (
-                "**I doğrudur:** Talebin fiyat esnekliği 1'den büyükse talep "
-                "esnektir. **II yanlıştır:** Gelir esnekliği negatif olan mallar "
-                "düşük maldır. **III yanlıştır:** Pozitif çapraz esneklik ikame "
-                "malları gösterir. Doğru cevap: **Yalnız I**."
-            ),
-        },
-    },
     "content/ekonomi/makroekonomi.json": {
         "eko-makro-gen-0020": {
             "stem": (
