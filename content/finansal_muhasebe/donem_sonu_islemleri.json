@@ -333,20 +333,20 @@
     "id": "finmuh-dsi-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺'dir ve 370 hesabına alınmıştır. Buna göre geçici verginin mahsubundan sonra 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabının kalanı kaç ₺'dir?",
+    "stem": "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺ olup 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabına alınmıştır. Buna göre geçici vergiler mahsup edildikten sonra beyanname üzerine ödenecek kurumlar vergisi kaç ₺'dir?",
     "options": {
       "A": "230.000 ₺",
       "B": "380.000 ₺",
       "C": "80.000 ₺",
       "D": "150.000 ₺",
-      "E": "Hesap kapanır, kalan vermez"
+      "E": "Ödenecek vergi çıkmaz"
     },
     "answer": "C",
-    "solution": "Karşılık: 691 (borç) / 370 (alacak) 230.000. Mahsup: 370 (borç) / 193 (alacak) 150.000. 370'in kalanı 230.000 − 150.000 = **80.000 ₺** olup beyanla ödenecek kurumlar vergisini gösterir.",
+    "solution": "Karşılık: 691 (borç) / 370 (alacak) 230.000. Yıl içinde 193'te izlenen geçici vergiler dönem sonunda 371 Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabına aktarılır ve bilançoda 370'ten indirilerek gösterilir. Beyan döneminde: 370 (borç) 230.000 / 371 (alacak) 150.000 + 360 (alacak) **80.000**. Ödenecek vergi 230.000 − 150.000 = **80.000 ₺**.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
-      "legislationRef": "THP 193, 370, 691"
+      "legislationRef": "THP 193, 370, 371, 360, 691"
     },
     "validYear": 2026,
     "mockExamId": null

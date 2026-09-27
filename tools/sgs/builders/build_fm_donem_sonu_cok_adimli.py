@@ -5,12 +5,12 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-FM cok adimli tur. Hesaplama/kayit agirlikli 33 soru korundu; 27 surec ezberi (mizan, acilis, 'hangi hesaba aktarilir') ve MDV ile cakisan soru cikarildi. Yerine gercek sinav kalibinda 27 soru: pesin gider/gelirin 180/280/380/480'e bolusturulmesi, gider ve gelir tahakkuklari, mevduat faizi tahakkuku ve tahsili, ic iskontoyla senet reeskontu ve iptali, supheli alacak karsiligi ve tahsil (644), stok deger dusuklugu, nedeni kismen bulunan sayim farklari, gecici vergi mahsubu, kur degerlemesi, banka mutabakati, 690'dan net kara kapanis, onceki doneme ait gider (681). Olumsuz kok %3 -> %15, kor ogrenci %21.
+FM cok adimli tur. Hesaplama/kayit agirlikli 33 soru korundu; 27 surec ezberi (mizan, acilis, 'hangi hesaba aktarilir') ve MDV ile cakisan soru cikarildi. Yerine gercek sinav kalibinda 27 soru: pesin gider/gelirin 180/280/380/480'e bolusturulmesi, gider ve gelir tahakkuklari, mevduat faizi tahakkuku ve tahsili, ic iskontoyla senet reeskontu ve iptali, supheli alacak karsiligi ve tahsil (644), stok deger dusuklugu, nedeni kismen bulunan sayim farklari, gecici vergi mahsubu, kur degerlemesi, banka mutabakati, 690'dan net kara kapanis, onceki doneme ait gider (681). Olumsuz kok %3 -> %15, kor ogrenci %21. Duzeltme (v203): gecici vergi sorusu '370 kalani' yerine yontemden bagimsiz 'odenecek vergi' soruyor; THP akisinda gecici vergi 193 -> 371'e aktarilir ve 370'ten indirilir (yabanci_kaynaklar 0054 ile tutarli).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
 
-Dayanak: VUK m. 280-285, 323 · Tekduzen Hesap Plani 18/28/38/48, 12, 15, 19, 39, 6, 69 · 1 Sira No'lu MSUGT
+Dayanak: VUK m. 280-285, 323 · Tekduzen Hesap Plani 18/28/38/48, 12, 15, 19, 37, 39, 6, 69 · 1 Sira No'lu MSUGT
 """
 from __future__ import annotations
 
@@ -247,17 +247,17 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺'dir ve 370 hesabına alınmıştır. Buna göre geçici verginin mahsubundan sonra 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabının kalanı kaç ₺'dir?",
+        "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺ olup 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabına alınmıştır. Buna göre geçici vergiler mahsup edildikten sonra beyanname üzerine ödenecek kurumlar vergisi kaç ₺'dir?",
         {
             'A': '230.000 ₺',
             'B': '380.000 ₺',
             'C': '80.000 ₺',
             'D': '150.000 ₺',
-            'E': 'Hesap kapanır, kalan vermez',
+            'E': 'Ödenecek vergi çıkmaz',
         },
         'C',
-        "Karşılık: 691 (borç) / 370 (alacak) 230.000. Mahsup: 370 (borç) / 193 (alacak) 150.000. 370'in kalanı 230.000 − 150.000 = **80.000 ₺** olup beyanla ödenecek kurumlar vergisini gösterir.",
-        'THP 193, 370, 691',
+        "Karşılık: 691 (borç) / 370 (alacak) 230.000. Yıl içinde 193'te izlenen geçici vergiler dönem sonunda 371 Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabına aktarılır ve bilançoda 370'ten indirilerek gösterilir. Beyan döneminde: 370 (borç) 230.000 / 371 (alacak) 150.000 + 360 (alacak) **80.000**. Ödenecek vergi 230.000 − 150.000 = **80.000 ₺**.",
+        'THP 193, 370, 371, 360, 691',
     ),
     # düzey 3
     '0017': patch(
