@@ -54,9 +54,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
     },
-    "content/maliyet_muhasebesi/standart_maliyet.json": {
-        "mmuh-standart-gen-0007": {"A": "Standart miktar + standart fiyat toplamı"},
-    },
     "content/maliyet_muhasebesi/birlesik_maliyet.json": {
         "mmuh-birlesik-gen-0006": {"A": "Ayrım noktasına kadarki ortak üretim maliyeti"},
         "mmuh-birlesik-gen-0017": {"A": "Düşük değerli ikincil ürün"},
@@ -65,9 +62,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
         "mmuh-birlesik-gen-0011": {"A": "Ayrım noktasındaki satış değeri payı"},
     },
     "content/denetim/denetim_kaniti.json": {
-        "den-kanit-gen-0034": {
-            "C": "Kontrol testleri yalnızca analitik prosedürle yapılır; belge incelemesi ve yeniden uygulama kullanılmaz"
-        },
         "den-kanit-gen-0041": {
             "A": "Analitik prosedür (tutarın geçmiş dönem eğilimi ve önceki yıl tutarıyla karşılaştırılması)"
         },

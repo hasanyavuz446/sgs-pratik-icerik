@@ -42,14 +42,6 @@ PATCHES = {
             "solution": "Trend yüzdesi = 1.000.000 ÷ 800.000 × 100 = **%125**.",
         },
     },
-    "content/maliyet_muhasebesi/standart_maliyet.json": {
-        "mmuh-standart-gen-0017": {
-            "stem": "Toplam direkt işçilik gideri sapması 6.200 ₺ aleyhte, standart direkt işçilik maliyeti 40.000 ₺'dir. Fiilî direkt işçilik maliyeti kaç ₺'dir?",
-            "options": {"A": "46.200", "B": "33.800", "C": "40.000", "D": "6.200", "E": "53.200"},
-            "answer": "A",
-            "solution": "Aleyhte sapmada fiilî maliyet standart maliyetten yüksektir. Fiilî maliyet = 40.000 + 6.200 = **46.200 ₺**.",
-        },
-    },
     "content/denetim/denetim_riski.json": {
         "den-risk-gen-0031": {
             "stem": "Bir denetimde yapısal risk %100, kontrol riski %60 ve kabul edilebilir tespit riski %10'dur. Bu bileşenlere göre denetim riski yüzde kaçtır?",
