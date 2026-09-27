@@ -51,36 +51,6 @@ from fix_lexical_tell import ROOT, APP_ROOT, guvenli, temizle
 
 # {paket: {"<soru-son4>|<harf>": ["ek"|"yaz", metin]}}
 YAMALAR = {
-    "borclar_hukuku/ozel_durumlar.json": {
-        "0016|C": [
-            "ek",
-            "; ceza ancak hükmün kesinleşmesinden sonra istenebilir"
-        ],
-        "0021|C": [
-            "ek",
-            "; taraflar bu oranı sözleşmeyle değiştiremez"
-        ],
-        "0023|A": [
-            "ek",
-            "; tacir sıfatı bu konuda bir fark yaratmaz"
-        ],
-        "0029|A": [
-            "ek",
-            "; devir işlemi ayrı bir sözleşmeyle yapılır"
-        ],
-        "0036|C": [
-            "ek",
-            "; yetkisiz temsilcinin sorumluluğu bu hâlde gündeme gelmez"
-        ],
-        "0057|D": [
-            "ek",
-            "; (Ü) iyiniyetli olsa dahi (S)'ye başvuramaz"
-        ],
-        "0058|D": [
-            "ek",
-            "; alacaklılardan birine yapılan ödeme borçluyu kurtarmaz"
-        ]
-    },
     "borclar_hukuku/sozlesme_turleri.json": {
         "0006|B": [
             "ek",

@@ -38,13 +38,6 @@ def p(stem: str, answer: str, solution: str) -> dict[str, str]:
 
 
 PATCHES = {
-    "content/borclar_hukuku/ozel_durumlar.json": {
-        "ozeldurum-gen-0024": p(
-            "Cezai şartla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Cezai şart asıl borca bağlı fer'i bir borçtur\n\nII. Alacaklı cezai şartı isteyebilmek için uğradığı zararı mutlaka ispat etmelidir\n\nIII. Hâkim aşırı cezai şartı yalnızca borçlunun talebi üzerine indirebilir",
-            "C",
-            "Cezai şart asıl borca bağlı fer'i bir borçtur (I). Alacaklı zarara uğramamış olsa da kararlaştırılan cezayı isteyebileceğinden II; hâkim aşırı gördüğü cezayı kendiliğinden indirebildiğinden III yanlıştır. Doğru cevap **Yalnız I**.",
-        ),
-    },
 }
 
 
