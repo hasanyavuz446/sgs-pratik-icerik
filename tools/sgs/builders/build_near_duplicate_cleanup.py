@@ -16,32 +16,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 PATCHES = {
-    "content/finansal_muhasebe/mali_duran_varliklar.json": {
-        "finmuh-malidv-gen-0049": {
-            "stem": "Bir işletme, başka bir şirketin finansal ve faaliyet politikalarına katılma gücüne sahip olmakla birlikte bu şirketi kontrol etmemektedir. Bu uzun vadeli yatırım Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
-            "options": {
-                "A": "242 İştirakler",
-                "B": "245 Bağlı Ortaklıklar",
-                "C": "240 Bağlı Menkul Kıymetler",
-                "D": "110 Hisse Senetleri",
-                "E": "500 Sermaye",
-            },
-            "answer": "A",
-            "solution": "Başka bir işletmenin finansal ve faaliyet politikalarına katılma gücü önemli etkiyi gösterir. Kontrol bulunmayan bu uzun vadeli yatırım **242 İştirakler** hesabında izlenir.",
-        },
-        "finmuh-malidv-gen-0050": {
-            "stem": "Bir işletme, başka bir şirketin oy haklarının %60'ını elde tutarak bu şirket üzerinde kontrol sağlamıştır. Bu yatırım hangi hesapta izlenir?",
-            "options": {
-                "A": "240 Bağlı Menkul Kıymetler",
-                "B": "242 İştirakler",
-                "C": "110 Hisse Senetleri",
-                "D": "500 Sermaye",
-                "E": "245 Bağlı Ortaklıklar",
-            },
-            "answer": "E",
-            "solution": "Oy haklarının %60'ının elde tutulması kontrol gücü sağlar. Bu nedenle yatırım **245 Bağlı Ortaklıklar** hesabında izlenir.",
-        },
-    },
     "content/mali_tablolar_analizi/trend_analizi.json": {
         "mta-trend-gen-0038": {
             "stem": "İlgili yılda tutarı 900.000 ₺ ve trend yüzdesi %150 olan bir kalemin baz yıl tutarı kaç ₺'dir?",

@@ -29,12 +29,7 @@ def tr(n):
 # id → (dosya, eski_cevap, yeni_cevap, kök dönüşümü, yeni çözüm)
 # Kökteki sayılar tam metin eşlemesiyle değişir; kalan ifade korunur.
 YAMA = [
-    # ── mali_duran_varliklar: pay ÷ sermaye → oran + TDHP sınıflaması
-    ("finansal_muhasebe/mali_duran_varliklar.json", "finmuh-malidv-gen-0049",
-     "%40 – İştirak (242)", "%20 – İştirak (242)",
-     [("300.000", "150.000")],
-     "Sahiplik oranı = 150.000 ÷ 750.000 = **%20** → %10–%50 aralığında olduğundan "
-     "**İştirak (242)**."),
+    # mali_duran_varliklar: build_fm_mali_duran_varliklar_cok_adimli.py devraldı (2026-09-27)
 
     # ── maliyet_hesaplari: toplam maliyet ÷ üretim miktarı
     ("finansal_muhasebe/maliyet_hesaplari.json", "finmuh-mlh-gen-0051",
