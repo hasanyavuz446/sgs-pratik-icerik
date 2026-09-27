@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Menkul Kiymetler — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+FM cok adimli tur. 50 soru korundu; 8 TFRS 9 sorusu ve 2 ezber sorusu cikarildi. Yerine gercek sinav kalibinda 10 soru: komisyonlu hisse satisi, stopajli hazine bonosu ve finansman bonosu vade tahsili, stopajli tahvil kuponu, satis zarari (655), deger dusuklugu karsiligi hesabi, bedelsiz hisse sonrasi birim maliyet, olumsuz ve oncullu sorular. Yontemi tartismali kayitlardan (karsilik ayrilmis menkulun satisi, komisyonun kara netlenmesi, gecici yatirim temettusu) kacinildi. Kor ogrenci %22.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: VUK m. 279 · KDVK m. 17/4-g · Tekduzen Hesap Plani 11, 119, 193, 642, 645, 654, 655 · 1 Sira No'lu MSUGT
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/finansal_muhasebe/menkul_kiymetler.json"
+STYLE_REF = 'SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)'
+ONEK = "finmuh-menkul-gen-"
+
+
+def patch(stem, options, answer, solution, ref='VUK m. 279; Tekduzen Hesap Plani 11'):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": ref},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 2
+    '0001': patch(
+        "Tekdüzen Hesap Planı'nda '11 Menkul Kıymetler' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Faiz geliri veya kısa vadede fiyat artışından kâr sağlamak amacıyla geçici olarak elde tutulan menkul değerleri izler.',
+            'B': 'İşletmenin esas faaliyet konusu olan, satmak amacıyla elde tuttuğu ticari mal ve mamul stoklarını izleyen bir gruptur.',
+            'C': 'İşletmenin uzun vadeli ortaklık ve yönetime katılma amacıyla edindiği pay senetlerini ve bağlı menkul kıymetleri izleyen bir gruptur.',
+            'D': 'İşletmenin üretimde veya faaliyette bir yıldan uzun süre kullanmak amacıyla edindiği maddi duran varlıkları izleyen bir gruptur.',
+            'E': 'İşletmenin mal ve hizmet alımından doğan, satıcılara olan kısa ve uzun vadeli ticari borçlarının tamamını izleyen bir gruptur.',
+        },
+        'A',
+        "**11 Menkul Kıymetler** grubu; faiz/temettü geliri ya da kısa vadede değer artışından kâr elde etmek amacıyla **geçici olarak** elde tutulan hisse senedi, tahvil, bono vb. değerleri izler (dönen varlık). Uzun vadeli ortaklık amaçlı paylar 24 İştirakler/Bağlı Ortaklıklar'dadır.",
+        "1 Sıra No'lu MSUGT - Menkul Kıymetler (11)",
+    ),
+    # düzey 3
+    '0002': patch(
+        "İşletmenin VUK kayıtlarında 2.000.000 ₺ değerle izlenen 1 kilogram külçe altının değerleme günündeki kıymetli madenler borsası rayici 2.300.000 ₺'dir. VUK 274/A'ya göre dönem sonu değeri ve değerleme farkı sırasıyla kaç ₺'dir?",
+        {
+            'A': '300.000 ₺ ve 2.000.000 ₺ gelir',
+            'B': '2.000.000 ₺ ve 0 ₺',
+            'C': '2.300.000 ₺ ve 2.300.000 ₺ gelir',
+            'D': '2.300.000 ₺ ve 300.000 ₺ gelir',
+            'E': '2.000.000 ₺ ve 300.000 ₺ zarar',
+        },
+        'D',
+        'VUK 274/A uyarınca altın borsa rayiciyle değerlenir. Dönem sonu değer **2.300.000 ₺**, kayıtlı değere göre olumlu fark 2.300.000 − 2.000.000 = **300.000 ₺ gelir**dir.',
+        '213 sayılı VUK md. 274/A (7524 sayılı Kanun, yürürlük 02.08.2024)',
+    ),
+    # düzey 2
+    '0003': patch(
+        'İşletmenin elinde bulundurduğu tahvillerden dönem içinde 8.000 ₺ faiz (kupon) geliri tahsil edilmiştir (stopaj ihmal). Bu gelir hangi hesaba alacak yazılır?',
+        {
+            'A': '645 Menkul Kıymet Satış Kârları',
+            'B': '642 Faiz Gelirleri',
+            'C': '600 Yurt İçi Satışlar',
+            'D': '640 İştiraklerden Temettü Gelirleri',
+            'E': '649 Diğer Olağan Gelir ve Kârlar',
+        },
+        'B',
+        'Tahvil/bono gibi borçlanma araçlarından elde edilen faiz (kupon) geliri **642 Faiz Gelirleri**ne alacak yazılır: 100/102 (borç) / 642 Faiz Gelirleri (alacak).',
+        "1 Sıra No'lu MSUGT - 642 Faiz Gelirleri",
+    ),
+    # düzey 2
+    '0004': patch(
+        'İşletmenin uzun vadeli olarak, bir şirkete ortak olup yönetimine katılmak (kontrol/etkinlik) amacıyla edindiği hisse senetleri ile kısa vadeli kâr amacıyla edindiği hisse senetleri sırasıyla hangi hesaplarda izlenir?',
+        {
+            'A': '242 İştirakler – 110 Hisse Senetleri',
+            'B': '120 Alıcılar – 110 Hisse Senetleri',
+            'C': '110 Hisse Senetleri – 242 İştirakler',
+            'D': '110 Hisse Senetleri – 110 Hisse Senetleri',
+            'E': '242 İştirakler – 245 Bağlı Ortaklıklar',
+        },
+        'A',
+        'Uzun vadeli ortaklık/etkinlik amaçlı paylar **242 İştirakler** (Duran Varlıklar); kısa vadeli kâr amaçlı hisse senetleri ise **110 Hisse Senetleri** (Menkul Kıymetler) hesabında izlenir. Amaç ve süre ayrımı esastır.',
+        "1 Sıra No'lu MSUGT - 110 / 242",
+    ),
+    # düzey 2
+    '0005': patch(
+        'İşletmenin menkul kıymetleri bilançoda hangi değerle (net) gösterilir?',
+        {
+            'A': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı tutarı tek başına gösterilir',
+            'B': 'Menkul kıymetlerin nominal değeri ile üzerine işlemiş faiz getirisinin toplamı',
+            'C': 'Menkul kıymetlerin kayıtlı değeri − 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)',
+            'D': 'Menkul kıymetlerin kayıtlı değeri + 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)',
+            'E': 'Menkul kıymetlerin dönem sonundaki güncel satış (borsa) fiyatı esas alınarak',
+        },
+        'C',
+        'Menkul kıymetler bilançoda **kayıtlı değer − 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)** biçiminde net gösterilir; 119 aktifi düzenleyici olduğundan düşülür.',
+        "1 Sıra No'lu MSUGT - 11/119 net gösterim",
+    ),
+    # düzey 2
+    '0006': patch(
+        "Vergi Usul Kanunu'na göre işletmenin elindeki hisse senetleri dönem sonunda hangi değerle değerlenir?",
+        {
+            'A': 'Tasfiye değeri',
+            'B': 'Alış bedeli',
+            'C': 'Emsal bedel',
+            'D': 'İtibari (nominal) değer',
+            'E': 'Borsa rayici',
+        },
+        'B',
+        "VUK md. 279'a göre **hisse senetleri** ile (belirli koşullardaki) yatırım fonu katılma belgeleri **alış bedeli** ile değerlenir. Bunlar dışındaki menkul kıymetler (devlet tahvili, hazine bonosu vb.) borsa rayici / kıst getiri ile değerlenir.",
+        'VUK md. 279 (menkul kıymet değerlemesi)',
+    ),
+    # düzey 2
+    '0007': patch(
+        "İşletme, kısa vadeli değerlendirme amacıyla özel bir şirketin çıkardığı 60.000 ₺'lik tahvili peşin (banka) satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+        {
+            'A': '110 Hisse Senetleri (borç) 60.000 / 102 Bankalar (alacak) 60.000',
+            'B': '102 Bankalar (borç) 60.000 / 111 Özel Kesim Tahvil, Senet ve Bonoları (alacak) 60.000',
+            'C': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 60.000 / 102 Bankalar (alacak) 60.000',
+            'D': '111 Özel Kesim Tahvil, Senet ve Bonoları (borç) 60.000 / 102 Bankalar (alacak) 60.000',
+            'E': '321 Borç Senetleri (borç) 60.000 / 102 Bankalar (alacak) 60.000',
+        },
+        'D',
+        'Özel sektör tahvili **111 Özel Kesim Tahvil, Senet ve Bonoları** hesabına alınır: 111 (borç) 60.000 / 102 Bankalar (alacak) 60.000. (Kamu tahvili olsaydı 112 kullanılırdı.)',
+        "1 Sıra No'lu MSUGT - 111",
+    ),
+    # düzey 2
+    '0008': patch(
+        'Menkul kıymetler için dönem sonunda değer düşüklüğü karşılığı ayrılması hangi temel muhasebe kavramıyla açıklanır?',
+        {
+            'A': 'Parayla Ölçülme',
+            'B': 'İhtiyatlılık',
+            'C': 'Süreklilik',
+            'D': 'Sosyal Sorumluluk',
+            'E': 'Kişilik',
+        },
+        'B',
+        'Değeri düşen menkul kıymet için muhtemel zararın önceden gider yazılması **İhtiyatlılık Kavramı**nın gereğidir; varlıkların ve kârın olduğundan yüksek gösterilmesini engeller.',
+        "1 Sıra No'lu MSUGT - İhtiyatlılık; 119",
+    ),
+    # düzey 2
+    '0009': patch(
+        'İşletme, elindeki hisse senetlerinden 6.000 ₺ temettü (kâr payı) yerine, elinde bulundurduğu tahvillerden 6.000 ₺ faiz geliri elde etmiştir. Faiz gelirinin doğru hesabı aşağıdakilerden hangisidir?',
+        {
+            'A': '645 Menkul Kıymet Satış Kârları',
+            'B': '679 Diğer Olağandışı Gelir ve Kârlar',
+            'C': '640 İştiraklerden Temettü Gelirleri',
+            'D': '642 Faiz Gelirleri',
+            'E': '600 Yurt İçi Satışlar',
+        },
+        'D',
+        "Tahvilden elde edilen faiz geliri **642 Faiz Gelirleri**ne yazılır. Temettü (hisse senedinden kâr payı) ise iştirak niteliğindeyse 640'a yazılır; ikisi farklı gelir türleridir.",
+        "1 Sıra No'lu MSUGT - 642/640",
+    ),
+    # düzey 3
+    '0010': patch(
+        'Menkul kıymetler grubu ile ilgili aşağıdaki ifadelerden hangisi yanlıştır?',
+        {
+            'A': 'Uzun vadeli ortaklık amaçlı hisse senetleri de bu grupta izlenir.',
+            'B': 'Bilançoda dönen varlıklar içinde gösterilir.',
+            'C': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı aktifi düzenleyici bir hesaptır.',
+            'D': 'Hisse senedi satış kârı 645, satış zararı 655 hesabında izlenir.',
+            'E': 'Kısa vadeli kâr/gelir amacıyla elde tutulan menkul değerleri kapsar.',
+        },
+        'A',
+        '**E yanlıştır.** Uzun vadeli ortaklık/etkinlik amaçlı hisse senetleri menkul kıymetler (11) değil, **24 Mali Duran Varlıklar** (İştirakler/Bağlı Ortaklıklar) grubunda izlenir. Diğer ifadeler doğrudur.',
+        "1 Sıra No'lu MSUGT - 11 / 24",
+    ),
+    # düzey 2
+    '0011': patch(
+        "İşletmenin 100 gram gümüş cinsinden mevduatı vardır. Değerleme gününe kadar 5 gram gümüş faiz tahakkuk etmiş, gümüşün borsa rayici gram başına 30 ₺ olmuştur. VUK 274/A'ya göre faiz dâhil mevduatın değerleme tutarı kaç ₺'dir?",
+        {
+            'A': '3.100 ₺',
+            'B': '3.500 ₺',
+            'C': '3.150 ₺',
+            'D': '3.000 ₺',
+            'E': '150 ₺',
+        },
+        'C',
+        'Kıymetli maden mevduatları değerleme gününe kadar hesaplanan faizleriyle birlikte dikkate alınır. Toplam 100 + 5 = **105 gram**, değer 105 × 30 = **3.150 ₺**dir.',
+        '213 sayılı VUK md. 274/A',
+    ),
+    # düzey 3
+    '0012': patch(
+        "İşletme, aynı şirketin hisse senetlerinden önce 100 adedini toplam 4.000 ₺'ye, sonra 100 adedini toplam 5.000 ₺'ye almıştır. Bu hisse senetlerinin ağırlıklı ortalama birim maliyeti kaç ₺'dir?",
+        {
+            'A': '40',
+            'B': '90',
+            'C': '9.000',
+            'D': '50',
+            'E': '45',
+        },
+        'E',
+        'Toplam maliyet = 4.000 + 5.000 = 9.000 ₺; toplam adet = 200. Ortalama birim maliyet = 9.000 ÷ 200 = **45 ₺**.',
+        "1 Sıra No'lu MSUGT - 110 (ortalama maliyet)",
+    ),
+    # düzey 2
+    '0013': patch(
+        'İşletmenin elindeki tahvile dönem sonu itibarıyla 5.000 ₺ faiz tahakkuk etmiş; ancak faiz izleyen dönemde tahsil edilecektir. Dönemsellik gereği yapılacak kayıt aşağıdakilerden hangisidir?',
+        {
+            'A': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 5.000 / 642 Faiz Gelirleri (alacak) 5.000',
+            'B': '642 Faiz Gelirleri (borç) 5.000 / 181 Gelir Tahakkukları (alacak) 5.000',
+            'C': '102 Bankalar (borç) 5.000 / 642 Faiz Gelirleri (alacak) 5.000',
+            'D': '181 Gelir Tahakkukları (borç) 5.000 / 642 Faiz Gelirleri (alacak) 5.000',
+            'E': '642 Faiz Gelirleri (borç) 5.000 / 102 Bankalar (alacak) 5.000',
+        },
+        'D',
+        'Döneme ait olup henüz tahsil edilmemiş faiz geliri tahakkuk ettirilir: **181 Gelir Tahakkukları (borç) 5.000 / 642 Faiz Gelirleri (alacak) 5.000**. Faiz izleyen dönemde tahsil edilince 181 kapatılır.',
+        "1 Sıra No'lu MSUGT - 181 Gelir Tahakkukları; Dönemsellik",
+    ),
+    # düzey 2
+    '0014': patch(
+        'Menkul kıymet satış kârı ve satış zararının gelir tablosunda gösterilmesi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Satış kârı ve satış zararının ikisi de brüt satış kârına eklenerek gösterilir.',
+            'B': 'Satış kârı ve satış zararının ikisi de gelir tablosunda değil, bilançoda yer alır.',
+            'C': 'Satış kârı (645) gelir, satış zararı (655) gider olarak ayrı ayrı gösterilir.',
+            'D': 'Satış kârı ile satış zararı netleştirilip tek bir tutar olarak gösterilir.',
+            'E': 'Satış kârı (645) gelir yazılır; satış zararı (655) gösterilmez.',
+        },
+        'C',
+        'Menkul kıymet satış **kârı (645)** bir gelir, satış **zararı (655)** ise bir gider olup gelir tablosunun ilgili bölümlerinde **ayrı ayrı** gösterilir; netleştirilmez.',
+        "1 Sıra No'lu MSUGT - 645/655",
+    ),
+    # düzey 2
+    '0015': patch(
+        'İşletme, satışa hazır ticari mallar (stok) ile kısa vadeli kâr amaçlı hisse senetlerini karıştırmamalıdır. Bu iki kalem arasındaki temel fark aşağıdakilerden hangisidir?',
+        {
+            'A': 'Ticari mallar esas faaliyet konusu (alım-satım) stoklardır (15 grubu); hisse senetleri ise atıl fonların değerlendirildiği menkul kıymetlerdir (11 grubu).',
+            'B': "Ticari mallar da hisse senetleri de aynı '15 Stoklar' grubunda ve aynı hesapta izlenir; aralarında hesap planı bakımından herhangi bir ayrım yapılmaz.",
+            'C': 'Ticari mallar da hisse senetleri de bir yıldan uzun süre elde tutulan duran varlıklardır; ikisi de bilançonun duran varlıklar bölümünde raporlanır.',
+            'D': 'Ticari mallar bir menkul kıymet (11 grubu), hisse senetleri ise satmak için elde tutulan bir stok (15 grubu) olup ikisinin grubu birbiriyle tam ters şekilde belirlenir.',
+            'E': 'Ticari mallar da hisse senetleri de işletmenin ödemekle yükümlü olduğu birer kaynak (pasif) hesabıdır; ikisi de bilançonun pasifinde borçlar arasında yer alır.',
+        },
+        'A',
+        '**Ticari mallar** işletmenin esas faaliyet konusu olan, satmak için elde tuttuğu **stoklardır (15)**. **Hisse senetleri** ise esas faaliyet dışı, atıl fonların değerlendirildiği **menkul kıymetlerdir (11)**.',
+        "1 Sıra No'lu MSUGT - 11 / 15 ayrımı",
+    ),
+    # düzey 3
+    '0016': patch(
+        "İşletme 40.000 ₺'ye aldığı hisse senetleri için dönem sonunda 6.000 ₺ değer düşüklüğü karşılığı ayırmış; izleyen dönem bu hisseleri 37.000 ₺'ye satmıştır. Satış anında ayrılan karşılık ne olur? (Karşılık iptali ayrıca yapılacaktır.)",
+        {
+            'A': "Ayrılan 6.000 ₺'lik karşılık 654 Karşılık Giderleri hesabına yeniden gider yazılır; satış kâr/zararı ise satış bedeli ile nominal değer farkından bulunur.",
+            'B': 'Karşılık (119) konusu kalmadığından iptal edilir (119 / 644); satış kâr/zararı ise satış (37.000) ile kayıtlı maliyet (40.000) farkından belirlenir.',
+            'C': "Ayrılan 6.000 ₺'lik karşılık satış bedeline eklenir; böylece hisseler 37.000 ₺ yerine 43.000 ₺'ye satılmış gibi kaydedilerek satış hasılatı artırılmış olur.",
+            'D': "Ayrılan 6.000 ₺'lik karşılık işleme tabi tutulmadan bilançoda kalmaya devam eder; satıştan doğan zarar 655 hesabında izlenmez.",
+            'E': "Ayrılan 6.000 ₺'lik karşılık 110 Hisse Senetleri hesabına eklenerek menkul kıymetin kayıtlı maliyeti 46.000 ₺'ye yükseltilir ve satış bu tutar üzerinden kaydedilir.",
+        },
+        'B',
+        "Menkul kıymet satılınca ona ait değer düşüklüğü karşılığının (119) konusu kalmaz; **119 / 644 Konusu Kalmayan Karşılıklar** ile iptal edilir. Satış zararı ise kayıtlı maliyet (40.000) − satış (37.000) = 3.000 ₺ olarak 655'te ayrıca izlenir.",
+        "1 Sıra No'lu MSUGT - 119/644; 655",
+    ),
+    # düzey 3
+    '0017': patch(
+        "İşletme kısa vadeli kâr amacıyla adedini 60 ₺'den aldığı hisse senetlerinden 1.000 adedini banka aracılığıyla adedi 75 ₺'den satmıştır. Banka satış tutarı üzerinden %2 komisyon kestikten sonra kalan tutarı işletmenin hesabına aktarmıştır. Buna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '110 Hisse Senetleri hesabı 73.500 ₺ alacaklandırılır',
+            'B': '645 Menkul Kıymet Satış Kârları hesabı 75.000 ₺ alacaklandırılır',
+            'C': '110 Hisse Senetleri hesabı 60.000 ₺ alacaklandırılır',
+            'D': '110 Hisse Senetleri hesabı 75.000 ₺ alacaklandırılır',
+            'E': '102 Bankalar hesabı 75.000 ₺ borçlandırılır',
+        },
+        'C',
+        "Satılan hisseler kayıtlı maliyetle çıkar: **110 (alacak) 60.000**. Banka 75.000 × %98 = 73.500 ₺ aktarır; komisyon 1.500 ₺'dir. Satış kârı satış bedeli ile maliyet arasındaki farktan doğar.",
+        'THP 110, 102, 645, 653',
+    ),
+    # düzey 2
+    '0018': patch(
+        'Bir işletme kısa vadeli menkul kıymetlerinde dönem sonunda değer düşüklüğü tespit etmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Değer düşüklüğü 110 alacaklandırılarak doğrudan maliyetten düşülür',
+            'B': 'Değer düşüklüğü karşılığı ihtiyatlılık kavramının gereğidir',
+            'C': "Karşılık 654'ün borcuna, 119'un alacağına yazılır",
+            'D': "İzleyen dönemde değer artarsa karşılık 644'e gelir yazılarak iptal edilir",
+            'E': 'Menkul kıymetler bilançoda karşılık düşülerek gösterilir',
+        },
+        'A',
+        'Değer düşüklüğü menkul kıymet hesabından doğrudan düşülmez; düzenleyici **119 Menkul Kıymetler Değer Düşüklüğü Karşılığı** hesabında izlenir (654 borç / 119 alacak). 110 maliyetle kalır.',
+        "1 Sıra No'lu MSUGT; THP 119, 654, 644",
+    ),
+    # düzey 3
+    '0019': patch(
+        "İşletme 90.000 ₺'ye aldığı ve değer düşüklüğü karşılığı ayırmadığı hisse senetlerinin tamamını 82.000 ₺'ye satmış, bedel banka hesabına aktarılmıştır. Buna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '655 Menkul Kıymet Satış Zararları hesabı 8.000 ₺ alacaklandırılır',
+            'B': '689 Diğer Olağandışı Gider ve Zararlar hesabı 8.000 ₺ borçlandırılır',
+            'C': '102 Bankalar hesabı 90.000 ₺ borçlandırılır',
+            'D': '655 Menkul Kıymet Satış Zararları hesabı 8.000 ₺ borçlandırılır',
+            'E': '110 Hisse Senetleri hesabı 82.000 ₺ alacaklandırılır',
+        },
+        'D',
+        "Kayıt: 102 (borç) 82.000 + **655 (borç) 8.000** / 110 (alacak) 90.000. Menkul kıymet satış zararı olağan faaliyetlerden doğan gider olarak 655'te izlenir.",
+        'THP 110, 102, 655',
+    ),
+    # düzey 3
+    '0020': patch(
+        "İşletme kısa vadeli kâr amacıyla adedini 10 ₺'den 1.000 adet hisse senedi almıştır. Dönem sonunda hisselerin borsa değeri adet başına 8,5 ₺'ye düşmüştür ve işletme değer düşüklüğü karşılığı ayırmaya karar vermiştir. Buna göre karşılık tutarı ve kaydı aşağıdakilerden hangisidir?",
+        {
+            'A': '1.500 ₺; 655 borç / 110 alacak',
+            'B': '1.500 ₺; 654 borç / 119 alacak',
+            'C': '8.500 ₺; 654 borç / 119 alacak',
+            'D': '10.000 ₺; 654 borç / 119 alacak',
+            'E': '1.500 ₺; 119 borç / 644 alacak',
+        },
+        'B',
+        'Karşılık = 1.000 × (10 − 8,5) = **1.500 ₺**. Kayıt: 654 Karşılık Giderleri (borç) / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (alacak). Hisseler satılmadığı için 655 kullanılmaz.',
+        "1 Sıra No'lu MSUGT; THP 110, 119, 654",
+    ),
+    # düzey 2
+    '0021': patch(
+        'İşletmenin kısa vadede kâr amacıyla edindiği hisse senetleri hangi hesapta izlenir?',
+        {
+            'A': '120 Alıcılar',
+            'B': '242 İştirakler',
+            'C': '240 Bağlı Menkul Kıymetler',
+            'D': '320 Satıcılar',
+            'E': '110 Hisse Senetleri',
+        },
+        'E',
+        "Kısa vadeli kâr amacıyla elde tutulan hisse senetleri **110 Hisse Senetleri** (11 Menkul Kıymetler) hesabında izlenir. Uzun vadeli ortaklık amaçlılar 242 İştirakler / 245 Bağlı Ortaklıklar'dadır.",
+        "1 Sıra No'lu MSUGT - 110 Hisse Senetleri",
+    ),
+    # düzey 2
+    '0022': patch(
+        "İşletmenin maliyeti 500.000 ₺ olan platin mevcudu için değerleme gününde güvenilir bir kıymetli madenler borsası rayici bulunmamaktadır. VUK 274/A'ya göre hangi değer esas alınır?",
+        {
+            'A': '500.000 ₺ maliyet bedeli',
+            'B': 'Sıfır değer',
+            'C': 'İşletme yönetiminin belirlediği tahmini satış değeri',
+            'D': 'Nominal değer',
+            'E': 'Tasfiye değeri',
+        },
+        'A',
+        "VUK 274/A'ya göre kıymetli maden borsa rayiciyle değerlenir; borsa rayici yoksa veya muvazaalı oluşmuşsa **maliyet bedeli** esas alınır. Bu nedenle değer **500.000 ₺**dir.",
+        '213 sayılı VUK md. 274/A',
+    ),
+    # düzey 2
+    '0023': patch(
+        "'119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Bir maliyet hesabıdır; borç kalanı verir ve dönem sonunda ilgili gider hesaplarına yansıtılarak kapatılır.',
+            'B': 'Bir gelir hesabıdır; alacak kalanı verir ve dönem sonunda gelir tablosuna aktarılarak kâra eklenir.',
+            'C': 'Bir nazım hesaptır; bilançoyu etkilemez ve izleme amacıyla borç-alacak dengesinde tutulur.',
+            'D': 'Bir kaynak (pasif) hesabıdır; borç kalanı verir ve bilançonun pasifinde borçlar arasında gösterilir.',
+            'E': 'Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve menkul kıymetlerden (-) düşülür.',
+        },
+        'E',
+        '**119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)**, aktifi düzenleyici bir hesaptır; **alacak kalanı** verir ve bilançoda menkul kıymetlerden **(-)** düşülerek net değeri gösterir.',
+        "1 Sıra No'lu MSUGT - 119",
+    ),
+    # düzey 2
+    '0024': patch(
+        "Katma Değer Vergisi Kanunu'na göre hisse senedi ve tahvil teslimleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': "İthalatta KDV'ye tabidir, yurt içinde tabi değildir.",
+            'B': "KDV'den istisnadır (KDV hesaplanmaz).",
+            'C': "%20 KDV'ye tabidir.",
+            'D': "%1 KDV'ye tabidir.",
+            'E': "%10 KDV'ye tabidir.",
+        },
+        'B',
+        "Hisse senedi ve tahvil teslimleri **KDV'den istisnadır**; menkul kıymet alım-satımında KDV hesaplanmaz (3065 s. KDVK md. 17/4-g).",
+        '3065 s. KDVK md. 17/4-g (menkul kıymet istisnası)',
+    ),
+    # düzey 2
+    '0025': patch(
+        'İştirak niteliğindeki (uzun vadeli) hisse senetlerinden elde edilen temettü (kâr payı) geliri hangi hesaba alacak yazılır?',
+        {
+            'A': '600 Yurt İçi Satışlar',
+            'B': '645 Menkul Kıymet Satış Kârları',
+            'C': '640 İştiraklerden Temettü Gelirleri',
+            'D': '642 Faiz Gelirleri',
+            'E': '679 Diğer Olağandışı Gelir ve Kârlar',
+        },
+        'C',
+        "İştiraklerden elde edilen temettü (kâr payı) **640 İştiraklerden Temettü Gelirleri** hesabına alacak yazılır. Faiz geliri 642, menkul kıymet satış kârı ise 645'tedir.",
+        "1 Sıra No'lu MSUGT - 640 İştiraklerden Temettü Gelirleri",
+    ),
+    # düzey 2
+    '0026': patch(
+        "Vergi Usul Kanunu'na göre borsa rayici bulunmayan devlet tahvili ve hazine bonoları dönem sonunda hangi ölçüyle değerlenir?",
+        {
+            'A': 'İtibari (nominal) değer (üzerinde yazılı değer esas alınır, işlemiş faiz dikkate alınmaz)',
+            'B': 'Tasfiye değeri (menkul kıymetin zorunlu satışında elde edilebilecek net tutar esas alınır)',
+            'C': 'Emsal bedel (benzer menkul kıymetlerin piyasadaki ortalama değeri esas alınarak belirlenir)',
+            'D': 'Kıst getiri (elde etme ile değerleme günü arasında işlemiş getiri, alış bedeline eklenir)',
+            'E': 'Alış bedeli (ödenen tutarla değerlenir, işlemiş getiri eklenmez)',
+        },
+        'D',
+        'Borsa rayici olmayan devlet tahvili/hazine bonoları, **kıst getiri** esasına göre değerlenir: alış bedeline, elde etme tarihinden değerleme gününe kadar işlemiş getiri (faiz) eklenir.',
+        'VUK md. 279 (kıst getiri)',
+    ),
+    # düzey 2
+    '0027': patch(
+        "İşletmenin uzun vadeli elde tutma amacıyla edindiği ve iştirak/bağlı ortaklık niteliği taşımayan menkul kıymetler Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        {
+            'A': '110 Hisse Senetleri',
+            'B': '240 Bağlı Menkul Kıymetler',
+            'C': '153 Ticari Mallar',
+            'D': '120 Alıcılar',
+            'E': '108 Diğer Hazır Değerler',
+        },
+        'B',
+        "Uzun vadeli elde tutulan, iştirak/bağlı ortaklık niteliği taşımayan menkul kıymetler **240 Bağlı Menkul Kıymetler** (24 Mali Duran Varlıklar) hesabında izlenir. Kısa vadeliler ise 110/111/112'dedir.",
+        "1 Sıra No'lu MSUGT - 240 Bağlı Menkul Kıymetler",
+    ),
+    # düzey 3
+    '0028': patch(
+        "İşletme, 1 Temmuz'da vadesinde 100.000 ₺ ödenecek kuponsuz devlet bonosunu 90.000 ₺'ye almıştır. Vade 30 Haziran izleyen yıldır ve doğrusal kıst getiri varsayılacaktır. Borsa rayici bulunmadığına göre VUK 279 uyarınca 31 Aralık değerleme tutarı kaç ₺'dir?",
+        {
+            'A': '90.000 ₺',
+            'B': '105.000 ₺',
+            'C': '110.000 ₺',
+            'D': '100.000 ₺',
+            'E': '95.000 ₺',
+        },
+        'E',
+        'Toplam 10.000 ₺ getiri on iki aylık süreye aittir. İlk altı aya düşen kıst getiri 10.000 × 6/12 = **5.000 ₺**dir. Değerleme tutarı 90.000 + 5.000 = **95.000 ₺** olur.',
+        '213 sayılı VUK md. 279',
+    ),
+    # düzey 2
+    '0029': patch(
+        "İşletme, daha önce 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı'nda 9.000 ₺ karşılık ayırdığı hisse senetlerinin tamamını satmıştır. Satış işlemi yapılırken ayrılan bu karşılık ne olur?",
+        {
+            'A': 'Ayrılan karşılık 645 Menkul Kıymet Satış Kârları hesabına borç kaydedilerek düşülür.',
+            'B': 'Ayrılan karşılık tutarı 110 Hisse Senetleri hesabına eklenerek maliyeti artırılır.',
+            'C': 'Menkul kıymet elden çıktığı için karşılığın da (119) kapatılması/iptal edilmesi gerekir.',
+            'D': 'Ayrılan karşılık tutarı iki katına çıkarılarak, satış anında dönem gideri olarak yeniden kaydedilir.',
+            'E': 'Ayrılan karşılık işleme tabi tutulmadan bilançoda aynen kalmaya devam eder.',
+        },
+        'C',
+        'Menkul kıymet elden çıkınca ona ait değer düşüklüğü karşılığının (119) da **konusu kalmaz**; karşılık iptal edilir (ör. 119 / 644 Konusu Kalmayan Karşılıklar). Satış kâr/zararı ayrıca kayıtlı (maliyet) değere göre belirlenir.',
+        "1 Sıra No'lu MSUGT - 119/644",
+    ),
+    # düzey 3
+    '0030': patch(
+        "İşletme, 30.000 ₺'lik hisse senedini kısa vadeli kâr amacıyla peşin almış; ancak muhasebeci bunu yanlışlıkla '242 İştirakler' hesabına kaydetmiştir. Bu kayıt hangi bakımdan hatalıdır?",
+        {
+            'A': 'Kısa vadeli kâr amacıyla alınan hisse senedinin bir varlık değil, dönem içinde katlanılan bir gider olarak sonuç hesaplarına aktarılması gerektiğinden kaydın hatalı olması',
+            'B': 'Kısa vadeli kâr amacıyla alınan hisse senedinin bir varlık değil, işletmenin ödemekle yükümlü olduğu bir kaynak (pasif) hesabı olarak kaydedilmesi gerektiğinden kaydın hatalı olması',
+            'C': 'Kısa vadeli kâr amacıyla alınan hisse senedinin menkul kıymet değil ticari mal sayılması ve 153 hesapta izlenmesi gerekmesi',
+            'D': 'Kısa vadeli kâr amacıyla alınan hisse senedinin tesliminde katma değer vergisi hesaplanması ve bu verginin ayrıca 191 İndirilecek KDV hesabında izlenmesi gerekmesi',
+            'E': 'Kısa vadeli kâr amacıyla alınan hisse senedinin dönen varlık (110 Hisse Senetleri) olarak izlenmesi gerekirken, uzun vadeli mali duran varlık (242) olarak kaydedilmesi',
+        },
+        'E',
+        'Kısa vadeli kâr amacıyla alınan hisse senedi **110 Hisse Senetleri** (dönen varlık) olarak izlenmelidir. 242 İştirakler ise uzun vadeli ortaklık/etkinlik amaçlı paylar içindir; amaç-süre uyuşmadığından kayıt hatalıdır.',
+        "1 Sıra No'lu MSUGT - 110 / 242",
+    ),
+    # düzey 3
+    '0031': patch(
+        'Menkul kıymetlerin değerlemesi ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Hisse senetleri alış bedeliyle değerlenir.\n\nII. Borsa rayici olmayan devlet tahvili kıst getiri ile değerlenir.\n\nIII. Değeri maliyetin altına düşen menkul kıymetler için değer düşüklüğü karşılığı ayrılabilir.\n\nIV. Menkul kıymetler her zaman satış fiyatıyla değerlenir.',
+        {
+            'A': 'II ve IV',
+            'B': 'Yalnız I',
+            'C': 'I, II, III ve IV',
+            'D': 'I, II ve III',
+            'E': 'I ve IV',
+        },
+        'D',
+        '**I, II ve III doğrudur** (VUK 279 + ihtiyatlılık gereği karşılık). **IV yanlıştır:** menkul kıymetler satış fiyatıyla değil, türüne göre alış bedeli/borsa rayici/kıst getiri ile değerlenir.',
+        "VUK md. 279; 1 Sıra No'lu MSUGT - 119",
+    ),
+    # düzey 2
+    '0032': patch(
+        'İşletmenin elinde bulundurduğu hisse senetlerini çıkaran şirket, bedelsiz (iç kaynaklardan) sermaye artırımı yapmış ve işletmeye bedelsiz hisse senedi vermiştir. Bu durumun işletmenin hisse senedi maliyeti üzerindeki etkisi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Toplam maliyet değişmez; hisse adedi arttığı için birim maliyet düşer.',
+            'B': 'Bedelsiz hisseler 645 Menkul Kıymet Satış Kârları hesabına gelir yazılır.',
+            'C': 'Toplam maliyet, edinilen bedelsiz hisselerin nominal değeri kadar artırılır.',
+            'D': 'Toplam maliyet sıfırlanır; hisseler nominal değeri üzerinden kaydedilir.',
+            'E': 'Bedelsiz hisselerin değeri 654 Karşılık Giderleri hesabına gider yazılır.',
+        },
+        'A',
+        'Bedelsiz hisse senedi alımında işletme yeni bir bedel ödemez; **toplam maliyet değişmez**, ancak hisse adedi arttığından **birim maliyet düşer**. Bedelsiz hisseler doğrudan gelir/gider yazılmaz.',
+        "1 Sıra No'lu MSUGT - 110 (bedelsiz hisse)",
+    ),
+    # düzey 2
+    '0033': patch(
+        "İşletme, maliyeti 75.000 ₺ olan hisse senetlerini 90.000 ₺'ye peşin satmıştır. Bu satıştan doğan menkul kıymet satış kârı kaç ₺'dir?",
+        {
+            'A': '12.000',
+            'B': '15.000',
+            'C': '75.000',
+            'D': '90.000',
+            'E': '165.000',
+        },
+        'B',
+        'Kâr = Satış − Maliyet = 90.000 − 75.000 = **15.000 ₺** (645 Menkul Kıymet Satış Kârları).',
+        "1 Sıra No'lu MSUGT - 645",
+    ),
+    # düzey 2
+    '0034': patch(
+        "VUK 279'a göre işletmenin elindeki pay senetlerinin dönem sonu borsa değerinin alış bedelinin üzerine çıkması durumunda vergi değerlemesinde ne yapılır?",
+        {
+            'A': 'Gerçekleşmemiş değer artışı gelir olarak kaydedilmez; menkul kıymet maliyetle izlenmeye devam eder (ihtiyatlılık).',
+            'B': 'Gerçekleşmemiş değer artışı, 645 Menkul Kıymet Satış Kârları hesabına gelir yazılarak dönem kârına doğrudan eklenir.',
+            'C': 'Menkul kıymet dönem sonu borsa değerine yükseltilir ve aradaki olumlu fark doğrudan kâr olarak kaydedilir.',
+            'D': 'Gerçekleşmemiş değer artışı, elde edilen bir faiz getirisi sayılıp 642 Faiz Gelirleri hesabına gelir yazılır.',
+            'E': 'Değer arttığı için 654 Karşılık Giderleri karşılığında 119 Değer Düşüklüğü Karşılığı hesabı ayrıca ayrılır.',
+        },
+        'A',
+        'VUK 279 uyarınca pay senetleri **alış bedeliyle** değerlenir. Bu nedenle dönem sonundaki gerçekleşmemiş borsa değeri artışı vergi değerlemesinde gelir yazılmaz; fark, satış gerçekleşirse satış kazancı olarak ortaya çıkar. TFRS 9 kapsamındaki gerçeğe uygun değer uygulaması ayrı bir finansal raporlama çerçevesidir.',
+        '213 sayılı VUK md. 279',
+    ),
+    # düzey 3
+    '0035': patch(
+        'Menkul kıymetlerle ilgili aşağıdaki hesap–açıklama eşleştirmelerinden hangisi yanlıştır?',
+        {
+            'A': '112 Kamu Kesimi Tahvil, Senet ve Bonoları → Devlet tahvili, hazine bonosu',
+            'B': '645 Menkul Kıymet Satış Kârları → Menkul kıymet satışından doğan kâr',
+            'C': '110 Hisse Senetleri → Kısa vadeli kâr amaçlı ortaklık payları',
+            'D': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-) → Aktifi düzenleyici',
+            'E': '642 Faiz Gelirleri → Hisse senedi satış kârı',
+        },
+        'E',
+        '**E yanlıştır.** Hisse senedi satış kârı **645 Menkul Kıymet Satış Kârları**nda izlenir; 642 Faiz Gelirleri ise tahvil/mevduat gibi faiz getiren kalemlerin geliri içindir. Diğer eşleştirmeler doğrudur.',
+        "1 Sıra No'lu MSUGT - Menkul kıymet hesapları",
+    ),
+    # düzey 2
+    '0036': patch(
+        'Aşağıdaki gelir–hesap eşleştirmelerinden hangisi doğrudur?',
+        {
+            'A': 'İştirak temettüsü → 655 Menkul Kıymet Satış Zararları; tahvil faiz geliri → 600 Yurt İçi Satışlar; menkul kıymet satış kârı → 642 Faiz Gelirleri',
+            'B': 'Tahvil faiz geliri → 645 Menkul Kıymet Satış Kârları; iştirak temettüsü → 642 Faiz Gelirleri; menkul kıymet satış kârı → 640 İştiraklerden Temettü Gelirleri',
+            'C': 'Menkul kıymet satış kârı → 645 Menkul Kıymet Satış Kârları; tahvil faiz geliri → 642 Faiz Gelirleri; iştirak temettüsü → 640 İştiraklerden Temettü Gelirleri',
+            'D': 'Menkul kıymet satış kârı → 642 Faiz Gelirleri; tahvil faiz geliri → 645 Menkul Kıymet Satış Kârları; iştirak temettüsü → 655 Menkul Kıymet Satış Zararları',
+            'E': 'Menkul kıymet satış kârı → 600 Yurt İçi Satışlar; tahvil faiz geliri → 649 Diğer Olağan Gelirler; iştirak temettüsü → 645 Menkul Kıymet Satış Kârları',
+        },
+        'C',
+        "Doğru eşleştirme **C**'dir: menkul kıymet satış kârı **645**, tahvil faiz geliri **642 Faiz Gelirleri**, iştiraklerden temettü **640 İştiraklerden Temettü Gelirleri** hesabında izlenir.",
+        "1 Sıra No'lu MSUGT - 645/642/640",
+    ),
+    # düzey 2
+    '0037': patch(
+        'Menkul kıymet satışından doğan zararın işletmenin dönem sonucuna etkisi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'İşletmenin ödenmiş sermayesini doğrudan artıran bir kalemdir.',
+            'B': 'Dönem kârını artırır (645 ile gelir yazıldığı için).',
+            'C': 'Dönem sonucunu etkilemez, kâr aynı kalır.',
+            'D': 'Bilançoyu etkiler; gelir tablosunu etkilemez.',
+            'E': 'Dönem kârını azaltır (655 ile gider/zarar yazıldığı için).',
+        },
+        'E',
+        'Menkul kıymet satış zararı **655 Menkul Kıymet Satış Zararları** ile gider/zarar yazıldığından dönem kârını **azaltır** (diğer faaliyetlerden olağan gider).',
+        "1 Sıra No'lu MSUGT - 655",
+    ),
+    # düzey 3
+    '0038': patch(
+        "İşletme geçici yatırım amacıyla adedi 100 ₺ nominal değerli 5.000 adet hazine bonosunu adedi 90 ₺'den almıştır. Vade sonunda nominal değer banka aracılığıyla tahsil edilmiş, faiz geliri üzerinden %10 gelir vergisi kesintisi yapılmıştır. Buna göre tahsil kaydında aşağıdakilerden hangisi yer almaz?",
+        {
+            'A': '642 Faiz Gelirleri hesabı 50.000 ₺ alacaklandırılır',
+            'B': '193 Peşin Ödenen Vergiler ve Fonlar hesabı 5.000 ₺ borçlandırılır',
+            'C': '102 Bankalar hesabı 495.000 ₺ borçlandırılır',
+            'D': '645 Menkul Kıymet Satış Kârları hesabı 50.000 ₺ alacaklandırılır',
+            'E': '112 Kamu Kesimi Tahvil, Senet ve Bonoları hesabı 450.000 ₺ alacaklandırılır',
+        },
+        'D',
+        'Faiz = nominal − alış = 500.000 − 450.000 = 50.000 ₺; stopaj 5.000 ₺. Kayıt: 102 (borç) 495.000 + 193 (borç) 5.000 / 112 (alacak) 450.000 + 642 (alacak) 50.000. Vadede itfa bir satış değil faiz getirisidir; 645 kullanılmaz.',
+        'THP 112, 102, 193, 642',
+    ),
+    # düzey 3
+    '0039': patch(
+        'İşletmenin geçici yatırım amacıyla elinde tuttuğu tahvillerin 12.000 ₺ tutarındaki faiz kuponu tahsil edilmiştir. Faiz üzerinden %10 gelir vergisi kesintisi yapılmış, kalan tutar banka hesabına geçmiştir. Buna göre tahsil kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': '193 Peşin Ödenen Vergiler ve Fonlar hesabı 1.200 ₺ borçlandırılır',
+            'B': '193 Peşin Ödenen Vergiler ve Fonlar hesabı 1.200 ₺ alacaklandırılır',
+            'C': '770 Genel Yönetim Giderleri hesabı 1.200 ₺ borçlandırılır',
+            'D': '360 Ödenecek Vergi ve Fonlar hesabı 1.200 ₺ alacaklandırılır',
+            'E': '642 Faiz Gelirleri hesabı 10.800 ₺ alacaklandırılır',
+        },
+        'A',
+        'Kayıt: 102 (borç) 10.800 + **193 (borç) 1.200** / 642 (alacak) 12.000. Faiz geliri brüt yazılır; kesilen vergi işletmenin mahsup edeceği peşin vergidir.',
+        'THP 102, 193, 642',
+    ),
+    # düzey 2
+    '0040': patch(
+        "Menkul kıymetlerle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Hisse senetleri VUK'a göre dönem sonunda borsa rayiciyle değerlenir.\n\nII. Hisse senedi ve tahvil teslimleri KDV'den istisnadır.\n\nIII. Menkul kıymet satış kârı 645 hesabında izlenir.",
+        {
+            'A': 'I ve III',
+            'B': 'Yalnız II',
+            'C': 'II ve III',
+            'D': 'Yalnız III',
+            'E': 'I ve II',
+        },
+        'C',
+        'II ve III doğrudur. I yanlıştır: VUK m. 279 uyarınca hisse senetleri **alış bedeliyle** değerlenir; borsa değerindeki artış gelir yazılmaz.',
+        'VUK m. 279; KDVK m. 17/4-g',
+    ),
+    # düzey 2
+    '0041': patch(
+        "İşletme, kısa vadeli kâr amacıyla 50.000 ₺'lik hisse senedini peşin (nakit) satın almıştır (komisyon ihmal edilecektir). Bu işlemin kaydı aşağıdakilerden hangisidir?",
+        {
+            'A': '153 Ticari Mallar (borç) 50.000 / 100 Kasa (alacak) 50.000',
+            'B': '242 İştirakler (borç) 50.000 / 100 Kasa (alacak) 50.000',
+            'C': '100 Kasa (borç) 50.000 / 110 Hisse Senetleri (alacak) 50.000',
+            'D': '110 Hisse Senetleri (borç) 50.000 / 100 Kasa (alacak) 50.000',
+            'E': '110 Hisse Senetleri (borç) 50.000 / 600 Yurt İçi Satışlar (alacak) 50.000',
+        },
+        'D',
+        "Menkul kıymet (varlık) artar → **110 Hisse Senetleri (borç) 50.000**; nakit çıkışı → **100 Kasa (alacak) 50.000**. Kısa vadeli kâr amacı olduğundan 110'da (menkul kıymet) izlenir, iştirak (242) değil.",
+        "1 Sıra No'lu MSUGT - 110 Hisse Senetleri",
+    ),
+    # düzey 2
+    '0042': patch(
+        'İşletme, kısa vadeli değerlendirme amacıyla 100.000 ₺ nominal bedelli devlet tahvilini banka aracılığıyla peşin satın almıştır (nominal bedelle, komisyon ihmal). Bu işlemin kaydı aşağıdakilerden hangisidir?',
+        {
+            'A': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 100.000 / 642 Faiz Gelirleri (alacak) 100.000',
+            'B': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 100.000 / 102 Bankalar (alacak) 100.000',
+            'C': '102 Bankalar (borç) 100.000 / 112 Kamu Kesimi Tahvil, Senet ve Bonoları (alacak) 100.000',
+            'D': '242 İştirakler (borç) 100.000 / 102 Bankalar (alacak) 100.000',
+            'E': '110 Hisse Senetleri (borç) 100.000 / 102 Bankalar (alacak) 100.000',
+        },
+        'B',
+        'Devlet tahvili menkul kıymet olarak alınır: **112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 100.000 / 102 Bankalar (alacak) 100.000**. Banka mevduatı azalır.',
+        "1 Sıra No'lu MSUGT - 112",
+    ),
+    # düzey 2
+    '0043': patch(
+        'İşletmenin elindeki hisse senetlerinin borsa değeri, maliyet bedelinin 9.000 ₺ altına düşmüştür. Bu değer düşüklüğü için karşılık ayrılmasına ilişkin kayıt aşağıdakilerden hangisidir?',
+        {
+            'A': '655 Menkul Kıymet Satış Zararları (borç) 9.000 / 110 Hisse Senetleri (alacak) 9.000',
+            'B': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (borç) 9.000 / 654 Karşılık Giderleri (alacak) 9.000',
+            'C': '654 Karşılık Giderleri (borç) 9.000 / 110 Hisse Senetleri (alacak) 9.000',
+            'D': '110 Hisse Senetleri (borç) 9.000 / 645 Menkul Kıymet Satış Kârları (alacak) 9.000',
+            'E': '654 Karşılık Giderleri (borç) 9.000 / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (alacak) 9.000',
+        },
+        'E',
+        'Değer düşüklüğü için gider tahakkuk ettirilip karşılık ayrılır: **654 Karşılık Giderleri (borç) 9.000 / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-) (alacak) 9.000**. Menkul kıymetin maliyet kaydı doğrudan azaltılmaz.',
+        "1 Sıra No'lu MSUGT - 654/119",
+    ),
+    # düzey 3
+    '0044': patch(
+        "İşletmenin 100 gram altın cinsinden senetsiz alacağı kayıtlarda 300.000 ₺'dir. Değerleme gününde altının borsa rayici gram başına 3.200 ₺'dir. VUK 274/A'ya göre alacağın dönem sonu değeri ve olumlu değerleme farkı sırasıyla kaç ₺'dir?",
+        {
+            'A': '300.000 ₺ ve 0 ₺',
+            'B': '20.000 ₺ ve 300.000 ₺',
+            'C': '320.000 ₺ ve 320.000 ₺',
+            'D': '320.000 ₺ ve 20.000 ₺',
+            'E': '280.000 ₺ ve 20.000 ₺',
+        },
+        'D',
+        'VUK 274/A, kıymetli maden cinsinden senetli ve senetsiz alacaklara da uygulanır. Değer 100 × 3.200 = **320.000 ₺**, olumlu fark 320.000 − 300.000 = **20.000 ₺**dir.',
+        '213 sayılı VUK md. 274/A',
+    ),
+    # düzey 2
+    '0045': patch(
+        "Aşağıdaki hesaplardan hangisi '11 Menkul Kıymetler' grubunda yer almaz?",
+        {
+            'A': '112 Kamu Kesimi Tahvil, Senet ve Bonoları',
+            'B': '118 Diğer Menkul Kıymetler',
+            'C': '111 Özel Kesim Tahvil, Senet ve Bonoları',
+            'D': '110 Hisse Senetleri',
+            'E': '120 Alıcılar',
+        },
+        'E',
+        "**120 Alıcılar**, '12 Ticari Alacaklar' grubundadır; menkul kıymet değildir. Diğerleri (110, 111, 112, 118) 11 Menkul Kıymetler grubundadır.",
+        "1 Sıra No'lu MSUGT - 11 Menkul Kıymetler",
+    ),
+    # düzey 2
+    '0046': patch(
+        "Menkul kıymetlerin '11 Menkul Kıymetler' (dönen varlık) grubunda mı yoksa '24 Mali Duran Varlıklar' grubunda mı izleneceğini belirleyen temel ölçüt aşağıdakilerden hangisidir?",
+        {
+            'A': 'Menkul kıymetin peşin mi yoksa vadeli mi satın alındığı (peşin alım → 11; vadeli alım → 24)',
+            'B': 'İşlemin gerçekleştirildiği aracı kurum veya bankanın niteliği (yurt içi banka → 11; yurt dışı banka → 24)',
+            'C': 'İşletmenin elde tutma amacı ve süresi (kısa vadeli kâr amacı → 11; uzun vadeli ortaklık/etkinlik amacı → 24)',
+            'D': 'Menkul kıymeti çıkaran kurumun türü (özel şirket ihraç ederse → 11; kamu kurumu ihraç ederse → 24)',
+            'E': 'Menkul kıymetin üzerinde yazılı olan nominal (itibari) değerinin büyüklüğü (yüksek nominal → 11; düşük nominal → 24)',
+        },
+        'C',
+        'Belirleyici ölçüt **elde tutma amacı ve süresidir**: kısa vadeli kâr/gelir amacıyla tutulanlar **11 Menkul Kıymetler** (dönen varlık); uzun vadeli ortaklık/etkinlik amacıyla tutulanlar **24 Mali Duran Varlıklar** (İştirakler/Bağlı Ortaklıklar) grubunda izlenir.',
+        "1 Sıra No'lu MSUGT - 11 / 24 ayrımı",
+    ),
+    # düzey 2
+    '0047': patch(
+        'Önceki dönemde menkul kıymetleri için 9.000 ₺ değer düşüklüğü karşılığı ayıran işletme, bu dönem menkul kıymetlerin değerinin geri yükseldiğini ve karşılığın konusunun kalmadığını tespit etmiştir. Karşılığın iptaline ilişkin kayıt aşağıdakilerden hangisidir?',
+        {
+            'A': '654 Karşılık Giderleri (borç) 9.000 / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (alacak) 9.000',
+            'B': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (borç) 9.000 / 644 Konusu Kalmayan Karşılıklar (alacak) 9.000',
+            'C': '644 Konusu Kalmayan Karşılıklar (borç) 9.000 / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (alacak) 9.000',
+            'D': '110 Hisse Senetleri (borç) 9.000 / 645 Menkul Kıymet Satış Kârları (alacak) 9.000',
+            'E': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (borç) 9.000 / 110 Hisse Senetleri (alacak) 9.000',
+        },
+        'B',
+        'Konusu kalmayan karşılık gelir yazılarak iptal edilir: **119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (borç) 9.000 / 644 Konusu Kalmayan Karşılıklar (alacak) 9.000**. 644 bir gelir hesabıdır.',
+        "1 Sıra No'lu MSUGT - 119/644",
+    ),
+    # düzey 2
+    '0048': patch(
+        "Portföyünün önemli bölümü Türkiye'de kurulmuş şirketlerin hisse senetlerinden oluşan yatırım fonu katılma belgeleri, işletme tarafından kısa vadeli değerlendirme amacıyla alınmışsa hangi hesapta izlenir?",
+        {
+            'A': '118 Diğer Menkul Kıymetler',
+            'B': '112 Kamu Kesimi Tahvil, Senet ve Bonoları',
+            'C': '153 Ticari Mallar',
+            'D': '110 Hisse Senetleri',
+            'E': '120 Alıcılar',
+        },
+        'A',
+        "Yatırım fonu katılma belgeleri, 110/111/112'ye girmeyen menkul kıymetler olarak **118 Diğer Menkul Kıymetler** hesabında izlenir.",
+        "1 Sıra No'lu MSUGT - 118 Diğer Menkul Kıymetler",
+    ),
+    # düzey 2
+    '0049': patch(
+        "Bilançoda '11 Menkul Kıymetler' grubu genellikle hangi grubun hemen ardından, ikinci en likit kalem olarak yer alır?",
+        {
+            'A': 'Kısa Vadeli Yabancı Kaynaklar',
+            'B': 'Stoklar',
+            'C': 'Maddi Duran Varlıklar',
+            'D': 'Hazır Değerler',
+            'E': 'Özkaynaklar',
+        },
+        'D',
+        'Bilanço aktifi likidite esasına göre sıralanır; **Hazır Değerler** den (en likit) sonra, kolayca paraya çevrilebildikleri için **Menkul Kıymetler** gelir. İkisi de dönen varlıkların başında yer alır.',
+        "1 Sıra No'lu MSUGT - Bilanço likidite sıralaması",
+    ),
+    # düzey 3
+    '0050': patch(
+        "İşletmenin dönem sonu itibarıyla 110 Hisse Senetleri 200.000 ₺, 112 Kamu Kesimi Tahvil, Senet ve Bonoları 100.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺'dir. Menkul kıymetlerin bilançodaki net tutarı kaç ₺'dir?",
+        {
+            'A': '185.000',
+            'B': '315.000',
+            'C': '300.000',
+            'D': '215.000',
+            'E': '285.000',
+        },
+        'E',
+        'Net menkul kıymetler = (110 + 112) − 119 = (200.000 + 100.000) − 15.000 = **285.000 ₺**. 119 aktifi düzenleyici olduğundan düşülür.',
+        "1 Sıra No'lu MSUGT - 11/119 net gösterim",
+    ),
+    # düzey 3
+    '0051': patch(
+        "Alım satım amacıyla alınan borsaya kayıtlı bir pay senedinin alış bedeli 100.000 ₺, dönem sonu gerçeğe uygun değeri 130.000 ₺'dir. VUK 279 ile TFRS 9'un gerçeğe uygun değer farkı kâr veya zarara yansıtılan sınıfı karşılaştırıldığında dönem sonu değerleri hangisidir?",
+        {
+            'A': 'Her iki çerçevede 130.000 ₺ ancak fark gelir yazılmaz.',
+            'B': "VUK 100.000 ₺; TFRS 130.000 ₺ ve TFRS'de 30.000 ₺ değerleme kazancı",
+            'C': 'VUK 130.000 ₺; TFRS 100.000 ₺',
+            'D': 'Her iki çerçevede 100.000 ₺',
+            'E': 'VUK 30.000 ₺; TFRS 130.000 ₺',
+        },
+        'B',
+        "VUK 279 uyarınca pay senedi **alış bedeli 100.000 ₺** ile kalır. TFRS 9'da alım satım amaçlı pay senedi gerçeğe uygun değer farkı kâr veya zarara yansıtılan sınıftadır; **130.000 ₺** ölçülür ve **30.000 ₺ kazanç** kâr veya zarara alınır.",
+        '213 sayılı VUK md. 279; TFRS 9 par. 5.7.1',
+    ),
+    # düzey 2
+    '0052': patch(
+        "İştiraklerden elde edilen temettü '640 İştiraklerden Temettü Gelirleri'nde izlenir. Bağlı ortaklıklardan elde edilen temettü ise hangi hesapta izlenir?",
+        {
+            'A': '640 İştiraklerden Temettü Gelirleri',
+            'B': '645 Menkul Kıymet Satış Kârları',
+            'C': '641 Bağlı Ortaklıklardan Temettü Gelirleri',
+            'D': '642 Faiz Gelirleri',
+            'E': '600 Yurt İçi Satışlar',
+        },
+        'C',
+        "Bağlı ortaklıklardan elde edilen temettü **641 Bağlı Ortaklıklardan Temettü Gelirleri** hesabında izlenir. İştiraklerden olan temettü ise 640'tadır; ikisi ayrı gelir hesaplarıdır.",
+        "1 Sıra No'lu MSUGT - 640/641",
+    ),
+    # düzey 3
+    '0053': patch(
+        'Bir işletmenin menkul kıymet alım-satımı, ana faaliyet konusu (esas faaliyeti) değildir. Bu nedenle menkul kıymet satışından doğan kâr/zarar aşağıdakilerden hangisiyle gösterilir?',
+        {
+            'A': '645 Menkul Kıymet Satış Kârları / 655 Menkul Kıymet Satış Zararları (diğer faaliyetlerden olağan)',
+            'B': '600 Yurt İçi Satışlar / 621 Satılan Ticari Malların Maliyeti (brüt satış kârı içinde gösterilir)',
+            'C': '649 Diğer Olağan Gelir ve Kârlar / 659 Diğer Olağan Gider ve Zararlar (diğer olağan bölümde)',
+            'D': '642 Faiz Gelirleri / 660 Kısa Vadeli Borçlanma Giderleri (finansman gelir-gider bölümünde)',
+            'E': '679 Diğer Olağandışı Gelir ve Kârlar / 689 Diğer Olağandışı Gider ve Zararlar (olağandışı bölümde)',
+        },
+        'A',
+        'Menkul kıymet alım-satımı esas faaliyet olmadığından, satış kâr/zararı **645 / 655** hesaplarında, gelir tablosunun **Diğer Faaliyetlerden Olağan Gelir-Gider** bölümünde gösterilir; brüt satış kârı (600/621) içinde yer almaz.',
+        "1 Sıra No'lu MSUGT - 645/655",
+    ),
+    # düzey 2
+    '0054': patch(
+        'Menkul kıymetler grubunu (11) elde bulundurmanın işletme açısından temel amacı aşağıdakilerden hangisidir?',
+        {
+            'A': 'İşletmenin üretim faaliyetinde doğrudan hammadde ve yardımcı malzeme olarak tüketmek üzere stok bulundurmak',
+            'B': 'İşletmenin personeline ait ücret, prim ve yasal kesintileri zamanında ödeyerek yükümlülüklerini yerine getirmek',
+            'C': 'İşletmenin satıcılara olan kısa vadeli ticari borçlarını vadesinde kapatarak cari yükümlülüklerini azaltmak',
+            'D': 'İşletmenin faaliyetinde bir yıldan uzun süre kullanılacak bina, makine ve taşıt gibi maddi duran varlıklar edinmek',
+            'E': 'Atıl (kısa vadede ihtiyaç duyulmayan) fonları değerlendirerek faiz/temettü geliri veya değer artış kârı elde etmek',
+        },
+        'E',
+        'Menkul kıymetler; işletmenin kısa vadede ihtiyaç duymadığı **atıl fonlarını değerlendirerek** faiz/temettü geliri veya kısa vadeli değer artış kârı elde etmek amacıyla elde tutulur.',
+        "1 Sıra No'lu MSUGT - 11 Menkul Kıymetler (amaç)",
+    ),
+    # düzey 2
+    '0055': patch(
+        "'118 Diğer Menkul Kıymetler' hesabında izlenmeye en uygun kalem aşağıdakilerden hangisidir?",
+        {
+            'A': 'İşletmenin faaliyetinde bir yıldan uzun süre kullanmak üzere edindiği bina, makine ve taşıt gibi varlıklar',
+            'B': 'İşletmenin mal ve hizmet alımından doğan, satıcılara olan kısa ve uzun vadeli ticari borçlarının tamamı',
+            'C': 'İşletmenin kasasında ve bankada bulunan, henüz herhangi bir menkul kıymete bağlanmamış nakit mevcutları',
+            'D': 'İşletmenin esas faaliyet konusu olan, satmak amacıyla depoda elde tuttuğu ticari mal ve mamul stokları',
+            'E': "110, 111 ve 112'ye girmeyen yatırım fonu katılma belgesi, gelir ortaklığı senedi gibi menkul kıymetler",
+        },
+        'E',
+        '**118 Diğer Menkul Kıymetler**, hisse senedi (110), özel/kamu tahvil-senet-bonoları (111/112) dışında kalan yatırım fonu katılma belgesi, gelir ortaklığı senedi vb. menkul kıymetleri izler.',
+        "1 Sıra No'lu MSUGT - 118 Diğer Menkul Kıymetler",
+    ),
+    # düzey 2
+    '0056': patch(
+        "Bir menkul kıymetin 'nominal (itibari) değeri' ile 'alış bedeli' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Nominal değer, menkul kıymetin satışında elde edilen fiyattır; alış bedeli ise üzerinde yazılı olan itibari değeridir ve ikisi birbirine eşittir.',
+            'B': 'Nominal değer ile alış bedeli birbirine eşittir; üzerinde yazılı tutar ne ise fiilen o tutar ödenir.',
+            'C': 'Nominal değer, menkul kıymetin üzerinde yazılı değeridir; alış bedeli ise onu edinmek için fiilen ödenen tutardır (ikisi farklı olabilir).',
+            'D': 'Alış bedeli, menkul kıymetin üzerinde yazılı olan değeridir; nominal değer ise onu edinmek için piyasada fiilen ödenen güncel tutarı ifade eden değerdir.',
+            'E': 'Nominal değer de alış bedeli de menkul kıymetin dönem sonundaki güncel piyasa (borsa) değerini gösterir; ikisi de değerleme günündeki cari fiyata eşittir.',
+        },
+        'C',
+        '**Nominal (itibari) değer**, menkul kıymetin üzerinde yazılı değerdir; **alış bedeli** ise onu edinmek için fiilen ödenen tutardır. Menkul kıymet nominalin altında (iskontolu) veya üstünde (primli) alınabildiğinden ikisi farklı olabilir.',
+        "1 Sıra No'lu MSUGT / VUK - nominal değer vs alış bedeli",
+    ),
+    # düzey 3
+    '0057': patch(
+        "İşletme, 80.000 ₺'ye aldığı hisse senetlerinin yarısını (maliyeti 40.000 ₺ olan kısmını) 52.000 ₺'ye peşin satmıştır. Bu satışa ilişkin aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '655 Menkul Kıymet Satış Zararları 12.000 ₺ borçlandırılır; 110 Hisse Senetleri 52.000 ₺ alacaklandırılır.',
+            'B': '600 Yurt İçi Satışlar 52.000 ₺ alacaklandırılır; 621 Satılan Ticari Malların Maliyeti 40.000 ₺ borçlandırılır.',
+            'C': '645 Menkul Kıymet Satış Kârları 12.000 ₺ alacaklandırılır; 110 Hisse Senetleri 40.000 ₺ alacaklandırılır.',
+            'D': '110 Hisse Senetleri satılan kısım için 52.000 ₺ alacaklandırılır; satıştan herhangi bir kâr veya zarar doğmaz.',
+            'E': '645 Menkul Kıymet Satış Kârları 52.000 ₺ alacaklandırılır; 110 Hisse Senetleri hesabına kayıt yapılmaz.',
+        },
+        'C',
+        "Satılan kısmın maliyeti 40.000 ₺, satış 52.000 ₺ → kâr 12.000 ₺. Kayıt: 100 Kasa (borç) 52.000 / **110 Hisse Senetleri (alacak) 40.000** (satılan kısmın maliyeti) + **645 Menkul Kıymet Satış Kârları (alacak) 12.000**. Kalan 40.000 ₺'lik hisse 110'da izlenmeye devam eder.",
+        "1 Sıra No'lu MSUGT - 110/645 (kısmi satış)",
+    ),
+    # düzey 3
+    '0058': patch(
+        "İşletme geçici yatırım amacıyla üç ay vadeli 240.000 ₺ nominal değerli bir finansman bonosunu 225.000 ₺'ye satın almıştır. Vade sonunda nominal değer banka hesabına tahsil edilmiştir (stopaj ihmal). Buna göre vade sonu kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '102 Bankalar hesabı 225.000 ₺ borçlandırılır',
+            'B': '642 Faiz Gelirleri hesabı 240.000 ₺ alacaklandırılır',
+            'C': '645 Menkul Kıymet Satış Kârları hesabı 15.000 ₺ alacaklandırılır',
+            'D': '111 Özel Kesim Tahvil, Senet ve Bonoları hesabı 225.000 ₺ alacaklandırılır',
+            'E': '111 Özel Kesim Tahvil, Senet ve Bonoları hesabı 240.000 ₺ alacaklandırılır',
+        },
+        'D',
+        'Kayıt: 102 (borç) 240.000 / **111 (alacak) 225.000** + 642 (alacak) 15.000. Bono alış bedeliyle kayıtlıdır; nominal değerle aradaki fark faiz gelirdir.',
+        'THP 111, 102, 642',
+    ),
+    # düzey 2
+    '0059': patch(
+        "Menkul kıymetlerle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Kısa vadeli kâr amacıyla alınan hisse senetleri 110 Hisse Senetleri hesabında izlenir.\n\nII. Uzun vadeli olarak yönetimde söz sahibi olmak amacıyla alınan hisseler 110'da izlenir.\n\nIII. Özel sektör şirketlerinin çıkardığı tahviller 111 hesabında izlenir.",
+        {
+            'A': 'I ve III',
+            'B': 'Yalnız I',
+            'C': 'II ve III',
+            'D': 'Yalnız III',
+            'E': 'I ve II',
+        },
+        'A',
+        'I ve III doğrudur. II yanlıştır: yönetimde söz sahibi olmak amacıyla uzun vadeli alınan hisseler **24 Mali Duran Varlıklar** grubunda (ör. 242 İştirakler) izlenir.',
+        'THP 110, 111, 242',
+    ),
+    # düzey 3
+    '0060': patch(
+        "İşletme adedini 12 ₺'den aldığı 1.000 adet hisse senediyle portföyünde izlemektedir. Hisseleri çıkaran şirket iç kaynaklardan %50 oranında bedelsiz sermaye artırımı yapmış ve işletmeye bedelsiz hisse vermiştir. Buna göre işletmenin elindeki hisselerin yeni birim maliyeti kaç ₺'dir?",
+        {
+            'A': '18 ₺',
+            'B': '8 ₺',
+            'C': '10 ₺',
+            'D': '12 ₺',
+            'E': '6 ₺',
+        },
+        'B',
+        "Bedelsiz hisse yeni bir maliyet doğurmaz; toplam maliyet 12.000 ₺ olarak kalır, hisse sayısı 1.500'e çıkar. Yeni birim maliyet 12.000 / 1.500 = **8 ₺**.",
+        'VUK m. 279; hisse maliyeti',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Menkul Kiymetler' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
