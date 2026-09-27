@@ -88,10 +88,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/turkce/sozcukte_cumlede_anlam.json": {
-        "turkce-anlam-gen-0025": {"B": "İstek ve dilek"},
-        "turkce-anlam-gen-0037": {"C": "Derin şaşkınlık"},
-    },
     "content/turkce/dil_bilgisi.json": {
         "turkce-dilbilgisi-gen-0009": {"B": "Sınava kadar oldukça çok çalıştı."},
         "turkce-dilbilgisi-gen-0018": {"B": "Dolaylı yer tümleci"},

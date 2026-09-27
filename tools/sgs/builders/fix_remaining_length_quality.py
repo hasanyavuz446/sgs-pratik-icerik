@@ -15,18 +15,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "turkce/sozcukte_cumlede_anlam.json": {
-        "turkce-anlam-gen-0002": "Acı haberle sarsıldık bugün.",
-        "turkce-anlam-gen-0004": "İç **açılar** toplamı 180°dir.",
-        "turkce-anlam-gen-0005": "Temelden ve esaslı biçimde",
-        "turkce-anlam-gen-0007": "Bize karşı mesafeli davrandı.",
-        "turkce-anlam-gen-0008": "Karışıklığı düzene sokmak",
-        "turkce-anlam-gen-0011": "Küçük birikimler zamanla büyür.",
-        "turkce-anlam-gen-0012": "Çaresiz ve şaşkın kalmak",
-        "turkce-anlam-gen-0014": "Zarar gören kişi daha temkinli olur.",
-        "turkce-anlam-gen-0019": "Sessiz sedasız gitti.",
-        "turkce-anlam-gen-0022": "Anlaşmayı açık sözlerle yazdılar.",
-    },
     "turkce/dil_bilgisi.json": {
         "turkce-dilbilgisi-gen-0002": "alnı",
         "turkce-dilbilgisi-gen-0003": "Zarf",
