@@ -645,6 +645,36 @@ stok tabloları, öncüller, fonksiyonlar ve matematiksel gösterimler kullanır
 - Yeni görsel biçim OTA'ya girmeden önce küçük ve büyük ekran render kontrolünden
   geçer.
 
+#### 🔴 Markdown tablosu: sütunlar EŞİT bölünür, sığmayan sözcük ortadan kırılır
+
+Uygulama tabloları `FlexColumnWidth` ile çizer: her sütun eşit genişlik alır, tablo
+yatay kaymaz. Hücreye sığmayan sözcük ya da tutar harf ortasından bölünür
+(`600.00` / `0`), yani tutar yanlış okunabilir. Taşma hatası vermediği için
+"taşıyor mu" testi bunu **göremez** (2026-09-27'de 5 sütunlu tablolar bu yüzden
+yanlışlıkla "sığıyor" sayıldı; 360 dp'de 24 kökte 67 bölünme vardı).
+
+360 dp ekranda (en dar yaygın Android) sütun başına kullanılabilir genişlik ve
+yaklaşık sınır:
+
+| Sütun | Genişlik | En uzun sözcük/tutar |
+|---|---|---|
+| 2 | ~143 px | 15 karakter |
+| 3 | ~89 px | 9 karakter (`HESAPLANAN` bile sığmaz) |
+| 4 | ~62 px | 6 harf ya da `600.000` gibi 7 karakterlik tutar |
+| 5 | ~46 px | kullanma |
+
+- En çok 3 sütun hedeflenir; 4 sütun yalnız kısa etiket ve ≤7 karakterlik
+  tutarlarla kullanılır. 5+ sütunlu veri **satır ↔ sütun çevrilerek** ya da iki
+  tabloya bölünerek verilir.
+- Uzun başlık yerine kısaltma + altta açıklama satırı kullanılır (sınav da böyle
+  yapar: `SD₁: ayrılma noktasındaki satış değeri · …`).
+- Tablo hücresinde uzun hesap adı BÜYÜK HARFLE yazılmaz (`131 Ortaklardan
+  Alacaklar`); aynı tablo içinde yazım tutarlı olur.
+- **Doğrulama zorunlu:** uygulama deposunda
+  `flutter test test/table_cell_width_test.dart` gerçek fontu (Manrope) ve temayı
+  yükleyip her hücrede bölünme olup olmadığını 360 dp'de ölçer; OTA'dan önce
+  çalıştırılır.
+
 ---
 
 ## 9. Mevzuat ve standart güncelliği

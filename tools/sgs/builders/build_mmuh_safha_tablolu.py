@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Tamamlanma derecesi | DİMM | Direkt işçilik | Genel üretim |\n|---|---|---|---|\n| DBYM | %100 | %40 | %30 |\n| DSYM | %100 | %70 | %50 |\n\nAğırlıklı ortalama maliyet yöntemine göre genel üretim giderleri açısından eşdeğer birim sayısı kaçtır?",
+        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Maliyet unsuru | DBYM | DSYM |\n|---|---|---|\n| DİMM | %100 | %100 |\n| Direkt işçilik | %40 | %70 |\n| Genel üretim | %30 | %50 |\n\nAğırlıklı ortalama maliyet yöntemine göre genel üretim giderleri açısından eşdeğer birim sayısı kaçtır?",
         {
             'A': '23.600',
             'B': '23.500',
@@ -233,7 +233,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        "İki safhada üretim yapan ve ortalama maliyet yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Miktar (birim) | Önceki safha maliyeti (₺) | Şekillendirme (₺) |\n|---|---|---|---|\n| Dönem başı yarı mamul | 1.000 | 38.000 | 6.000 |\n| I. safhadan devralınan | 9.000 | 378.000 | — |\n| II. safhada dönem gideri | — | — | 264.000 |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhanın dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
+        "İki safhada üretim yapan ve ortalama maliyet yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Tutar |\n|---|---|\n| Dönem başı yarı mamul miktarı | 1.000 birim |\n| DBYM'nin önceki safha maliyeti | 38.000 ₺ |\n| DBYM'nin şekillendirme maliyeti | 6.000 ₺ |\n| I. safhadan devralınan miktar | 9.000 birim |\n| Devralınan birimlerin maliyeti | 378.000 ₺ |\n| II. safhanın şekillendirme gideri | 264.000 ₺ |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhanın dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
         {
             'A': '114.000',
             'B': '30.000',
@@ -471,7 +471,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0032': patch(
-        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Tamamlanma derecesi | DİMM | Direkt işçilik | Genel üretim |\n|---|---|---|---|\n| DBYM | %100 | %40 | %30 |\n| DSYM | %100 | %70 | %50 |\n\nDönemde katlanılan giderler: DİMM 432.000 ₺, direkt işçilik 291.600 ₺, genel üretim 354.000 ₺.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre dönem başı yarı mamullerin tamamlanması için bu dönemde katlanılan maliyet kaç ₺'dir?",
+        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Maliyet unsuru | DBYM | DSYM |\n|---|---|---|\n| DİMM | %100 | %100 |\n| Direkt işçilik | %40 | %70 |\n| Genel üretim | %30 | %50 |\n\nDönemde katlanılan giderler: DİMM 432.000 ₺, direkt işçilik 291.600 ₺, genel üretim 354.000 ₺.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre dönem başı yarı mamullerin tamamlanması için bu dönemde katlanılan maliyet kaç ₺'dir?",
         {
             'A': '135.000',
             'B': '107.100',
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0035': patch(
-        "İki safhada üretim yapan ve ortalama maliyet yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Miktar (birim) | Önceki safha maliyeti (₺) | Şekillendirme (₺) |\n|---|---|---|---|\n| Dönem başı yarı mamul | 1.000 | 38.000 | 6.000 |\n| I. safhadan devralınan | 9.000 | 378.000 | — |\n| II. safhada dönem gideri | — | — | 264.000 |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada tamamlanarak mamul ambarına aktarılan ürünlerin toplam maliyeti kaç ₺'dir?",
+        "İki safhada üretim yapan ve ortalama maliyet yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Tutar |\n|---|---|\n| Dönem başı yarı mamul miktarı | 1.000 birim |\n| DBYM'nin önceki safha maliyeti | 38.000 ₺ |\n| DBYM'nin şekillendirme maliyeti | 6.000 ₺ |\n| I. safhadan devralınan miktar | 9.000 birim |\n| Devralınan birimlerin maliyeti | 378.000 ₺ |\n| II. safhanın şekillendirme gideri | 264.000 ₺ |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada tamamlanarak mamul ambarına aktarılan ürünlerin toplam maliyeti kaç ₺'dir?",
         {
             'A': '240.000',
             'B': '572.000',
@@ -737,7 +737,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Tamamlanma derecesi | DİMM | Direkt işçilik | Genel üretim |\n|---|---|---|---|\n| DBYM | %100 | %40 | %30 |\n| DSYM | %100 | %70 | %50 |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre direkt işçilik açısından eşdeğer birim sayısı kaçtır?",
+        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Maliyet unsuru | DBYM | DSYM |\n|---|---|---|\n| DİMM | %100 | %100 |\n| Direkt işçilik | %40 | %70 |\n| Genel üretim | %30 | %50 |\n\nİlk giren ilk çıkar (FIFO) yöntemine göre direkt işçilik açısından eşdeğer birim sayısı kaçtır?",
         {
             'A': '23.600',
             'B': '23.700',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0052': patch(
-        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Tamamlanma derecesi | DİMM | Direkt işçilik | Genel üretim |\n|---|---|---|---|\n| DBYM | %100 | %40 | %30 |\n| DSYM | %100 | %70 | %50 |\n\nDönemde katlanılan giderler: DİMM 432.000 ₺, direkt işçilik 291.600 ₺, genel üretim 354.000 ₺.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
+        "Tek safhada üretim yapan ve üretim kaybı bulunmayan bir işletmede dönem başı yarı mamul 3.000 kg, dönemde üretime başlanan 24.000 kg, dönemde tamamlanan 22.000 kg ve dönem sonu yarı mamul 5.000 kg'dır. Yarı mamullerin tamamlanma dereceleri şöyledir:\n\n| Maliyet unsuru | DBYM | DSYM |\n|---|---|---|\n| DİMM | %100 | %100 |\n| Direkt işçilik | %40 | %70 |\n| Genel üretim | %30 | %50 |\n\nDönemde katlanılan giderler: DİMM 432.000 ₺, direkt işçilik 291.600 ₺, genel üretim 354.000 ₺.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
         {
             'A': '169.500',
             'B': '225.000',
@@ -807,7 +807,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0056': patch(
-        'İki safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Miktar (birim) | Önceki safha maliyeti (₺) | Şekillendirme (₺) |\n|---|---|---|---|\n| Dönem başı yarı mamul | 1.000 | 38.000 | 6.000 |\n| I. safhadan devralınan | 9.000 | 378.000 | — |\n| II. safhada dönem gideri | — | — | 264.000 |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada önceki safha maliyeti ve şekillendirme açısından eşdeğer birim sayıları sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?',
+        "İki safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Tutar |\n|---|---|\n| Dönem başı yarı mamul miktarı | 1.000 birim |\n| DBYM'nin önceki safha maliyeti | 38.000 ₺ |\n| DBYM'nin şekillendirme maliyeti | 6.000 ₺ |\n| I. safhadan devralınan miktar | 9.000 birim |\n| Devralınan birimlerin maliyeti | 378.000 ₺ |\n| II. safhanın şekillendirme gideri | 264.000 ₺ |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada önceki safha maliyeti ve şekillendirme açısından eşdeğer birim sayıları sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
         {
             'A': '9.000 ve 8.600',
             'B': '9.000 ve 9.000',

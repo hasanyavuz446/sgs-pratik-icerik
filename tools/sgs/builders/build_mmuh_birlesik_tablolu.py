@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        '180.000 ₺ ortak maliyetle üretilen K ve L ürünleri ayrılma noktasında satılabileceği gibi ilave işlemden sonra da satılabilmektedir:\n\n| Ürün | Ayrılma noktasında satış (₺) | İşlem sonrası satış (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| K | 200.000 | 260.000 | 70.000 |\n| L | 80.000 | 150.000 | 40.000 |\n\nBuna göre aşağıdakilerden hangisi yanlıştır?',
+        '180.000 ₺ ortak maliyetle üretilen K ve L ürünleri ayrılma noktasında satılabileceği gibi ilave işlemden sonra da satılabilmektedir:\n\n| Ürün | SD₁ (₺) | SD₂ (₺) | İİM (₺) |\n|---|---|---|---|\n| K | 200.000 | 260.000 | 70.000 |\n| L | 80.000 | 150.000 | 40.000 |\n\nSD₁: ayrılma noktasındaki satış değeri · SD₂: ilave işlem sonrası satış değeri · İİM: ilave işleme maliyeti\n\nBuna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Her iki ürün de ilave işlemden geçirilirse toplam kâr 140.000 ₺ olur.',
             'B': 'En kârlı kararla toplam kâr 130.000 ₺ olur.',
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0035': patch(
-        'Bir işletme ortak üretim sürecinden A, B ve C ürünlerini elde etmektedir. Ürünler ayrılma noktasında satılabileceği gibi ilave işlemden geçirilerek de satılabilmektedir:\n\n| Ürün | Ayrılma noktasında satış değeri (₺) | İşlem sonrası satış değeri (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| A | 90.000 | 140.000 | 40.000 |\n| B | 120.000 | 150.000 | 35.000 |\n| C | 60.000 | 100.000 | 30.000 |\n\nKârı en yüksek kılmak isteyen işletme hangi ürünleri ilave işlemden geçirmelidir?',
+        'Bir işletme ortak üretim sürecinden A, B ve C ürünlerini elde etmektedir. Ürünler ayrılma noktasında satılabileceği gibi ilave işlemden geçirilerek de satılabilmektedir:\n\n| Ürün | SD₁ (₺) | SD₂ (₺) | İİM (₺) |\n|---|---|---|---|\n| A | 90.000 | 140.000 | 40.000 |\n| B | 120.000 | 150.000 | 35.000 |\n| C | 60.000 | 100.000 | 30.000 |\n\nSD₁: ayrılma noktasındaki satış değeri · SD₂: ilave işlem sonrası satış değeri · İİM: ilave işleme maliyeti\n\nKârı en yüksek kılmak isteyen işletme hangi ürünleri ilave işlemden geçirmelidir?',
         {
             'A': 'A, B ve C ürünlerinin üçü',
             'B': 'B ürünü',
@@ -793,7 +793,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        '160.000 ₺ ortak maliyetle üretilen P ve Q ürünlerine ilişkin bilgiler şöyledir:\n\n| Ürün | Ayrılma noktasında satış (₺) | İşlem sonrası satış (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| P | 150.000 | 210.000 | 45.000 |\n| Q | 90.000 | 130.000 | 50.000 |\n\nİşletme her ürün için en kârlı kararı verirse toplam kârı kaç ₺ olur?',
+        '160.000 ₺ ortak maliyetle üretilen P ve Q ürünlerine ilişkin bilgiler şöyledir:\n\n| Ürün | SD₁ (₺) | SD₂ (₺) | İİM (₺) |\n|---|---|---|---|\n| P | 150.000 | 210.000 | 45.000 |\n| Q | 90.000 | 130.000 | 50.000 |\n\nSD₁: ayrılma noktasındaki satış değeri · SD₂: ilave işlem sonrası satış değeri · İİM: ilave işleme maliyeti\n\nİşletme her ürün için en kârlı kararı verirse toplam kârı kaç ₺ olur?',
         {
             'A': '15.000',
             'B': '95.000',

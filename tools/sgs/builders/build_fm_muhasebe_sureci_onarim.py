@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 50.000 | |\n| 131 ORTAKLARDAN ALACAKLAR | | 50.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
+        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 Kasa | 50.000 | |\n| 131 Ortaklardan Alacaklar | | 50.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
         {
             'A': 'Ortağa işletme kasasından nakit borç para verilmesi işlemidir',
             'B': 'Ortağın işletmeye nakit sermaye koyması (sermaye artışı)',
@@ -317,7 +317,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0021': patch(
-        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 KASA | 24.000 | |\n| 600 YURT İÇİ SATIŞLAR | | 20.000 |\n| 391 HESAPLANAN KDV | | 4.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir? (KDV %20)',
+        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 Kasa | 24.000 | |\n| 600 Yurt İçi Satışlar | | 20.000 |\n| 391 Hesaplanan KDV | | 4.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir? (KDV %20)',
         {
             'A': 'Veresiye mal satışı',
             'B': 'Peşin mal alışı',
@@ -667,7 +667,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        'Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 YURT İÇİ SATIŞLAR | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
+        'Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 Yurt İçi Satışlar | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
         {
             'A': 'Peşin mal satışının kasa hesabı borçlandırılarak kaydedilmesi işlemidir',
             'B': 'Satılan malın maliyetinin 621 hesabına aktarılması işlemidir',
@@ -723,7 +723,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0050': patch(
-        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 320 SATICILAR | 40.000 | |\n| 100 KASA | | 40.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
+        'Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 320 Satıcılar | 40.000 | |\n| 100 Kasa | | 40.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?',
         {
             'A': 'Satıcıya olan borcun nakit ödenmesi',
             'B': 'Satıcıdan veresiye mal alınması',

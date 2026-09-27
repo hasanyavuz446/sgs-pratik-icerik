@@ -233,7 +233,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Bakım yardımcı gider yerinde toplanan gider kaç ₺'dir?",
+        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Dağıtım ölçüleri şöyledir:\n\n| Gider yeri | Alan (m²) | Makine değeri (₺) | Elektrik (kWs) |\n|---|---|---|---|\n| Kesim (EÜGY) | 400 | 600.000 | 5.000 |\n| Montaj (EÜGY) | 300 | 400.000 | 3.000 |\n| Bakım (YGY) | 200 | 200.000 | 1.000 |\n| Kantin (YGY) | 100 | 0 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Bakım yardımcı gider yerinde toplanan gider kaç ₺'dir?",
         {
             'A': '29.000 ₺',
             'B': '40.000 ₺',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme karşılıklı hizmetleri matematiksel dağıtım yöntemiyle dikkate almaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Kantin yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet alan | Bakım'dan | Kantin'den |\n|---|---|---|\n| Bakım | — | %25 |\n| Kantin | %20 | — |\n| Kesim | %60 | %30 |\n| Montaj | %20 | %45 |\n\nİşletme karşılıklı hizmetleri matematiksel dağıtım yöntemiyle dikkate almaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
         {
             'A': '12.000 ₺',
             'B': '9.000 ₺',
@@ -261,7 +261,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0017': patch(
-        "Bir üretim işletmesinde birinci ve ikinci dağıtım sonunda Kaynak esas üretim gider yerinde toplanan tutarlar şöyledir:\n\n| Kalem | Tutar |\n|---|---|\n| Direkt ilk madde ve malzeme | 50.000 ₺ |\n| Yardımcı malzeme | 8.000 ₺ |\n| Direkt işçilik | 45.000 ₺ |\n| Endirekt işçilik | 9.000 ₺ |\n| Elektrik | 11.000 ₺ |\n| Bakım | 5.000 ₺ |\n| Yemekhane gider yerinden gelen pay | 14.000 ₺ |\n| Bakım-onarım gider yerinden gelen pay | 8.000 ₺ |\n\nBuna göre Kaynak gider yerinde toplanan giderler içinde genel üretim giderlerinin payı kaç ₺'dir?",
+        "Bir üretim işletmesinde birinci ve ikinci dağıtım sonunda Kaynak esas üretim gider yerinde toplanan tutarlar şöyledir:\n\n| Kalem | Tutar |\n|---|---|\n| Direkt ilk madde ve malzeme | 50.000 ₺ |\n| Yardımcı malzeme | 8.000 ₺ |\n| Direkt işçilik | 45.000 ₺ |\n| Endirekt işçilik | 9.000 ₺ |\n| Elektrik | 11.000 ₺ |\n| Bakım | 5.000 ₺ |\n| Kantin gider yerinden gelen pay | 14.000 ₺ |\n| Bakım-onarım gider yerinden gelen pay | 8.000 ₺ |\n\nBuna göre Kaynak gider yerinde toplanan giderler içinde genel üretim giderlerinin payı kaç ₺'dir?",
         {
             'A': '150.000 ₺',
             'B': '22.000 ₺',
@@ -275,16 +275,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0018': patch(
-        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Kantin (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Kantin'i (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
         {
             'A': "Bakım'ın dağıtılacak toplamı 34.000 ₺'dir",
-            'B': "Yemekhane'den Bakım'a 4.000 ₺ pay düşer",
-            'C': "Bakım, Yemekhane'ye de ikinci dağıtımdan pay verir",
+            'B': "Kantin'den Bakım'a 4.000 ₺ pay düşer",
+            'C': "Bakım, Kantin'e de ikinci dağıtımdan pay verir",
             'D': 'Esas gider yerlerinde toplanan gider tutarı dağıtımdan sonra 230.000 ₺ olur',
             'E': 'Dağıtımdan sonra yardımcı gider yerlerinin kalanı sıfırlanır',
         },
         'C',
-        "Kademeli yöntemde bir kez dağıtılan gider yerine (Yemekhane) **geri pay verilmez**; Bakım yalnız Kesim ve Montaj'a dağıtılır. Yemekhane'den Bakım'a 20.000 × 20/100 = 4.000 ₺ düşer; Bakım 34.000 ₺ dağıtır. Toplam gider değişmez: 20.000 + 30.000 + 100.000 + 80.000 = 230.000 ₺ esas gider yerlerinde toplanır.",
+        "Kademeli yöntemde bir kez dağıtılan gider yerine (Kantin) **geri pay verilmez**; Bakım yalnız Kesim ve Montaj'a dağıtılır. Kantin'den Bakım'a 20.000 × 20/100 = 4.000 ₺ düşer; Bakım 34.000 ₺ dağıtır. Toplam gider değişmez: 20.000 + 30.000 + 100.000 + 80.000 = 230.000 ₺ esas gider yerlerinde toplanır.",
         'Maliyet muhasebesi - gider dağıtımı',
     ),
     # düzey 2
@@ -303,7 +303,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0020': patch(
-        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre Montaj esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Kantin (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Kantin'i (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre Montaj esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
         {
             'A': '92.000 ₺',
             'B': '98.000 ₺',
@@ -312,7 +312,7 @@ _PATCHES = {
             'E': '99.600 ₺',
         },
         'E',
-        "Yemekhane'den Montaj'a 20.000 × 30/100 = 6.000 ₺; Bakım'ın yeni toplamı 34.000 ₺'den Montaj'a 34.000 × 40/100 = 13.600 ₺. Montaj toplamı **99.600 ₺**.",
+        "Kantin'den Montaj'a 20.000 × 30/100 = 6.000 ₺; Bakım'ın yeni toplamı 34.000 ₺'den Montaj'a 34.000 × 40/100 = 13.600 ₺. Montaj toplamı **99.600 ₺**.",
         'Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)',
     ),
     # düzey 2
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0035': patch(
-        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Gider yerlerine ait dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Kesim esas üretim gider yerine düşen toplam pay kaç ₺'dir?",
+        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Gider yerlerine ait dağıtım ölçüleri şöyledir:\n\n| Gider yeri | Alan (m²) | Makine değeri (₺) | Elektrik (kWs) |\n|---|---|---|---|\n| Kesim (EÜGY) | 400 | 600.000 | 5.000 |\n| Montaj (EÜGY) | 300 | 400.000 | 3.000 |\n| Bakım (YGY) | 200 | 200.000 | 1.000 |\n| Kantin (YGY) | 100 | 0 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Kesim esas üretim gider yerine düşen toplam pay kaç ₺'dir?",
         {
             'A': '200.000 ₺',
             'B': '176.000 ₺',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0036': patch(
-        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme matematiksel (cebirsel) dağıtım yöntemini kullanmaktadır; X Bakım'ın, Y Yemekhane'nin dağıtılacak toplam tutarını göstermektedir. Buna göre X kaç ₺'dir?",
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Kantin yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet alan | Bakım'dan | Kantin'den |\n|---|---|---|\n| Bakım | — | %25 |\n| Kantin | %20 | — |\n| Kesim | %60 | %30 |\n| Montaj | %20 | %45 |\n\nİşletme matematiksel (cebirsel) dağıtım yöntemini kullanmaktadır; X Bakım'ın, Y Kantin'in dağıtılacak toplam tutarını göstermektedir. Buna göre X kaç ₺'dir?",
         {
             'A': '20.000 ₺',
             'B': '27.000 ₺',
@@ -541,12 +541,12 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Kademeli (basamaklı) dağıtım yöntemini uygulayan bir işletmede Yemekhane yardımcı gider yeri Bakım, Kesim ve Montaj gider yerlerine; Bakım ise yalnız Kesim ve Montaj gider yerlerine hizmet vermektedir. Buna göre dağıtım sırasıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Kademeli (basamaklı) dağıtım yöntemini uygulayan bir işletmede Kantin yardımcı gider yeri Bakım, Kesim ve Montaj gider yerlerine; Bakım ise yalnız Kesim ve Montaj gider yerlerine hizmet vermektedir. Buna göre dağıtım sırasıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Önce Yemekhane dağıtılır; Bakım aldığı payla birlikte sonra dağıtılır',
+            'A': 'Önce Kantin dağıtılır; Bakım aldığı payla birlikte sonra dağıtılır',
             'B': 'Sıra fark etmez; iki sırada da esas gider yerlerine aynı tutarlar düşer',
             'C': 'Yardımcı gider yerleri birbirine hizmet verdiği için matematiksel yöntem zorunludur',
-            'D': 'Önce Bakım dağıtılır; Yemekhane aldığı payla birlikte sonra dağıtılır',
+            'D': 'Önce Bakım dağıtılır; Kantin aldığı payla birlikte sonra dağıtılır',
             'E': 'İki yardımcı gider yeri aynı anda, birbirine verdikleri hizmet yok sayılarak dağıtılır',
         },
         'A',
@@ -569,7 +569,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0039': patch(
-        'Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nBuna göre Kesim esas üretim gider yerinin ikinci dağıtımdan alacağı payla ilgili aşağıdakilerden hangisi doğrudur?',
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Kantin yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet alan | Bakım'dan | Kantin'den |\n|---|---|---|\n| Bakım | — | %25 |\n| Kantin | %20 | — |\n| Kesim | %60 | %30 |\n| Montaj | %20 | %45 |\n\nBuna göre Kesim esas üretim gider yerinin ikinci dağıtımdan alacağı payla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Matematiksel yöntemde 11.100 ₺, doğrudan yöntemde 14.300 ₺ olur',
             'B': 'İki yöntemde de 14.300 ₺ olur',
@@ -793,7 +793,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Yardımcı gider yerlerinin verdiği hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme ikinci dağıtımda doğrudan (basit) dağıtım yöntemini kullanmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Kantin yardımcı gider yerinde 17.000 ₺ toplanmıştır. Yardımcı gider yerlerinin verdiği hizmet oranları şöyledir:\n\n| Hizmet alan | Bakım'dan | Kantin'den |\n|---|---|---|\n| Bakım | — | %25 |\n| Kantin | %20 | — |\n| Kesim | %60 | %30 |\n| Montaj | %20 | %45 |\n\nİşletme ikinci dağıtımda doğrudan (basit) dağıtım yöntemini kullanmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
         {
             'A': '15.000 ₺',
             'B': '14.300 ₺',
@@ -802,12 +802,12 @@ _PATCHES = {
             'E': '11.100 ₺',
         },
         'B',
-        'Doğrudan yöntemde yardımcı gider yerlerinin birbirine verdiği hizmet yok sayılır; oranlar yalnız esas gider yerleri arasında yeniden hesaplanır. Bakım: 10.000 × 60/80 = 7.500 ₺; Yemekhane: 17.000 × 30/75 = 6.800 ₺. Toplam **14.300 ₺**.',
+        'Doğrudan yöntemde yardımcı gider yerlerinin birbirine verdiği hizmet yok sayılır; oranlar yalnız esas gider yerleri arasında yeniden hesaplanır. Bakım: 10.000 × 60/80 = 7.500 ₺; Kantin: 17.000 × 30/75 = 6.800 ₺. Toplam **14.300 ₺**.',
         'Maliyet muhasebesi - ikinci dağıtım (doğrudan yöntem)',
     ),
     # düzey 3
     '0056': patch(
-        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nYemekhane giderleri çalışan sayısına, Bakım giderleri bakım saatine göre dağıtılmaktadır. İşletme kademeli dağıtım yöntemini kullanmakta ve önce daha fazla gider yerine hizmet veren Yemekhane'yi dağıtmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Kantin (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nKantin giderleri çalışan sayısına, Bakım giderleri bakım saatine göre dağıtılmaktadır. İşletme kademeli dağıtım yöntemini kullanmakta ve önce daha fazla gider yerine hizmet veren Kantin'i dağıtmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
         {
             'A': '128.000 ₺',
             'B': '110.000 ₺',
@@ -816,7 +816,7 @@ _PATCHES = {
             'E': '130.400 ₺',
         },
         'E',
-        "Yemekhane 20.000 ₺'yi kendi çalışanları hariç hizmet verdiği Bakım (20), Kesim (50) ve Montaj (30) arasında, toplam 100 kişi üzerinden dağıtır: Kesim 20.000 × 50/100 = 10.000 ₺, Bakım 20.000 × 20/100 = 4.000 ₺. Bakım'ın yeni toplamı 34.000 ₺; bakım saatine göre Kesim'e 34.000 × 60/100 = 20.400 ₺. Kesim toplamı 100.000 + 30.400 = **130.400 ₺**.",
+        "Kantin 20.000 ₺'yi kendi çalışanları hariç hizmet verdiği Bakım (20), Kesim (50) ve Montaj (30) arasında, toplam 100 kişi üzerinden dağıtır: Kesim 20.000 × 50/100 = 10.000 ₺, Bakım 20.000 × 20/100 = 4.000 ₺. Bakım'ın yeni toplamı 34.000 ₺; bakım saatine göre Kesim'e 34.000 × 60/100 = 20.400 ₺. Kesim toplamı 100.000 + 30.400 = **130.400 ₺**.",
         'Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)',
     ),
     # düzey 2
