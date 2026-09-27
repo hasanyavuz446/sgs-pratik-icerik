@@ -118,14 +118,6 @@ PATCHES = {
             "solution": "Toplam alan 250 + 150 + 100 = 500 m²'dir. B'nin payı = 150 ÷ 500 × 100 = **%30**.",
         },
     },
-    "content/maliyet_muhasebesi/siparis_maliyeti.json": {
-        "mmuh-siparis-gen-0050": {
-            "stem": "130 no'lu siparişin direkt işçilik gideri 100.000 ₺'dir. Genel üretim giderleri direkt işçiliğin %60'ı oranında yükleniyorsa siparişe yüklenecek GÜG kaç ₺'dir?",
-            "options": {"A": "60.000", "B": "100.000", "C": "160.000", "D": "200.000", "E": "360.000"},
-            "answer": "A",
-            "solution": "Yüklenecek genel üretim gideri = 100.000 × %60 = **60.000 ₺**.",
-        },
-    },
     "content/maliyet_muhasebesi/safha_maliyeti.json": {
         "mmuh-safha-gen-0012": {
             "stem": "Dönem sonu yarı mamulü 4.000 birim ve tamamlanma derecesi %50'dir. Dönem sonu yarı mamulün eşdeğer ürün miktarı kaç birimdir?",
