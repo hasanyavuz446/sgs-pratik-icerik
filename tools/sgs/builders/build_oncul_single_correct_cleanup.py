@@ -24,23 +24,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 PATCHES = {
-    "content/mali_tablolar_analizi/fon_akim_analizi.json": {
-        "mta-fon-gen-0020": {
-            "stem": (
-                "Aşağıdaki işlemlerden hangileri fon KULLANIMIdır?\n\n"
-                "I. Ortaklara temettü ödenmesi\n\n"
-                "II. Nakit sermaye artırımı\n\n"
-                "III. Uzun vadeli borçlanma yoluyla nakit sağlanması"
-            ),
-            "answer": "A",
-            "solution": (
-                "**I (temettü ödemesi)** işletmeden fon çıkışına yol açtığı için "
-                "fon kullanımıdır. **II (nakit sermaye artırımı)** ve **III (uzun "
-                "vadeli borçlanma)** ise işletmeye fon sağlayan kaynaklardır. "
-                "Doğru cevap **Yalnız I**."
-            ),
-        },
-    },
 }
 
 

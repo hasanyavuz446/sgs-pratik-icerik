@@ -16,32 +16,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 
 PATCHES = {
-    "content/mali_tablolar_analizi/trend_analizi.json": {
-        "mta-trend-gen-0038": {
-            "stem": "İlgili yılda tutarı 900.000 ₺ ve trend yüzdesi %150 olan bir kalemin baz yıl tutarı kaç ₺'dir?",
-            "options": {
-                "A": "750.000",
-                "B": "600.000",
-                "C": "1.350.000",
-                "D": "150.000",
-                "E": "900.000",
-            },
-            "answer": "B",
-            "solution": "Baz yıl tutarı = İlgili yıl tutarı ÷ (Trend yüzdesi/100) = 900.000 ÷ 1,50 = **600.000 ₺**.",
-        },
-        "mta-trend-gen-0057": {
-            "stem": "Bir kalemin baz yıl tutarı 800.000 ₺, ilgili yıldaki tutarı 1.000.000 ₺'dir. İlgili yılın trend yüzdesi kaçtır?",
-            "options": {
-                "A": "%125",
-                "B": "%80",
-                "C": "%25",
-                "D": "%120",
-                "E": "%150",
-            },
-            "answer": "A",
-            "solution": "Trend yüzdesi = 1.000.000 ÷ 800.000 × 100 = **%125**.",
-        },
-    },
     "content/denetim/denetim_riski.json": {
         "den-risk-gen-0031": {
             "stem": "Bir denetimde yapısal risk %100, kontrol riski %60 ve kabul edilebilir tespit riski %10'dur. Bu bileşenlere göre denetim riski yüzde kaçtır?",

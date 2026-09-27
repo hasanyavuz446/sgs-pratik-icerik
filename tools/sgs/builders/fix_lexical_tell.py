@@ -180,7 +180,6 @@ TAM = [
     "finansal_muhasebe/muhasebenin_temel_kavramlari.json",
     "finansal_muhasebe/ticari_alacaklar.json",
     "mali_tablolar_analizi/dikey_analiz.json",
-    "mali_tablolar_analizi/fon_akim_analizi.json",
     "mali_tablolar_analizi/karsilastirmali_analiz.json",
     "maliye/kamu_maliyesi_temel.json",
     "maliyet_muhasebesi/birlesik_maliyet.json",

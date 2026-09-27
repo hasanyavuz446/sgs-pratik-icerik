@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "mta-likid-gen-0001",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin bilançosundan alınan bilgiler şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Hazır değerler | 18.000 |\n| Menkul kıymetler | 12.000 |\n| Ticari alacaklar | 80.000 |\n| Stoklar | 100.000 |\n| Diğer dönen varlıklar | 10.000 |\n| Kısa vadeli yabancı kaynaklar | 100.000 |\n\nBuna göre cari oran, asit-test oranı ve nakit oranı sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": {
+      "A": "2,20 · 1,20 · 0,30",
+      "B": "2,20 · 1 · 0,30",
+      "C": "1,20 · 2,20 · 0,30",
+      "D": "2,20 · 1,10 · 0,30",
+      "E": "2,20 · 1,20 · 0,18"
+    },
+    "answer": "A",
+    "solution": "Dönen varlıklar = 220.000 ₺. Cari = 220.000 ÷ 100.000 = 2,20; asit-test = (220.000 − 100.000) ÷ 100.000 = 1,20; nakit = (18.000 + 12.000) ÷ 100.000 = 0,30. Asit-testte yalnız stoklar düşülür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0002",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin iki yıla ait bilgileri şöyledir:\n\n| Kalem | 2024 (₺) | 2025 (₺) |\n|---|---|---|\n| Dönen varlıklar | 450.000 | 540.000 |\n| Stoklar | 180.000 | 300.000 |\n| KVYK | 300.000 | 300.000 |\n\nBuna göre işletmenin likiditesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Cari oran ve asit-test oranı birlikte yükselmiş; likidite her açıdan güçlenmiştir.",
+      "B": "Cari oran 1,50'den 1,80'e yükselirken asit-test oranı 0,90'dan 0,80'e düşmüş; artış stoklardan kaynaklanmıştır.",
+      "C": "Net çalışma sermayesi azalmıştır.",
+      "D": "Cari oran düşmüş, asit-test oranı yükselmiştir.",
+      "E": "Cari oran 1,50'den 1,80'e yükselmiş, asit-test oranı değişmemiştir."
+    },
+    "answer": "B",
+    "solution": "2024: cari 450 ÷ 300 = 1,50, asit (450 − 180) ÷ 300 = 0,90. 2025: cari 1,80, asit (540 − 300) ÷ 300 = 0,80. Dönen varlık artışı (90.000) stok artışından (120.000) küçük; diğer dönen varlıklar azalmıştır. NÇS 150.000'den 240.000 ₺'ye çıkmıştır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0003",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net satışları 1.200.000 ₺, dönen varlıkları 500.000 ₺ ve kısa vadeli yabancı kaynakları 300.000 ₺ olan bir işletmenin net çalışma sermayesi devir hızı kaçtır?",
+    "options": {
+      "A": "6",
+      "B": "2,40",
+      "C": "4",
+      "D": "1,50",
+      "E": "0,17"
+    },
+    "answer": "A",
+    "solution": "NÇS = 500.000 − 300.000 = 200.000 ₺. Devir hızı = 1.200.000 ÷ 200.000 = **6**. Dönen varlıklara bölmek brüt çalışma sermayesi devir hızını (2,40) verir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0004",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Nakit oranı 0,25 olan bir işletmenin hazır değerleri 9.000 ₺, menkul kıymetleri 6.000 ₺'dir. Net çalışma sermayesi 36.000 ₺ olduğuna göre cari oran kaçtır?",
+    "options": {
+      "A": "3,40",
+      "B": "0,60",
+      "C": "1,36",
+      "D": "1,60",
+      "E": "2,40"
+    },
+    "answer": "D",
+    "solution": "KVYK = 15.000 ÷ 0,25 = 60.000 ₺. Dönen varlıklar = 60.000 + 36.000 = 96.000 ₺. Cari oran = 96.000 ÷ 60.000 = **1,60**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0005",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Kısa vadeli yabancı kaynakları 80.000 ₺ olan bir işletmenin cari oranı 1,50'dir. İşletme 20.000 ₺ uzun vadeli kredi alıp bunun tamamıyla kısa vadeli borç öderse yeni cari oranı kaç olur?",
+    "options": {
+      "A": "1,50",
+      "B": "2,50",
+      "C": "2",
+      "D": "1,75",
+      "E": "1,25"
+    },
+    "answer": "C",
+    "solution": "Başlangıçta dönen varlıklar 120.000 ₺. Kredi nakdi getirir (+20.000), aynı nakitle KVYK ödenir (−20.000): dönen varlıklar 120.000 ₺ kalır, KVYK 60.000 ₺ olur. Cari oran = **2**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0006",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Asit-test oranı 1,20 olan bir işletmenin stokları 30.000 ₺, dönen varlıkları 90.000 ₺'dir. Buna göre cari oran kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "1,80",
+      "C": "1,50",
+      "D": "1,20",
+      "E": "0,60"
+    },
+    "answer": "B",
+    "solution": "Asit-test payı = 90.000 − 30.000 = 60.000 ₺ → KVYK = 60.000 ÷ 1,20 = 50.000 ₺. Cari oran = 90.000 ÷ 50.000 = **1,80**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0007",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 200.000 ₺, kısa vadeli yabancı kaynakları 100.000 ₺ olan bir işletme kısa vadeli kredi kullanarak ticari mal satın alacaktır. Cari oranın 1,50'nin altına düşmemesi için en fazla kaç ₺'lik alım yapılabilir?",
+    "options": {
+      "A": "50.000",
+      "B": "150.000",
+      "C": "75.000",
+      "D": "100.000",
+      "E": "200.000"
+    },
+    "answer": "D",
+    "solution": "(200.000 + x) ÷ (100.000 + x) = 1,50 → 200.000 + x = 150.000 + 1,5x → 0,5x = 50.000 → x = **100.000 ₺**. Pay ve payda aynı tutarda arttığından oran 2'den 1,50'ye iner.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0008",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin duran varlıklarının devamlı sermayeye oranı 0,90'dır. Devamlı sermaye 500.000 ₺, kısa vadeli yabancı kaynaklar 125.000 ₺ olduğuna göre cari oran kaçtır?",
+    "options": {
+      "A": "0,90",
+      "B": "1,10",
+      "C": "4",
+      "D": "0,40",
+      "E": "1,40"
+    },
+    "answer": "E",
+    "solution": "Duran varlıklar = 450.000 ₺. Aktif = pasif = 625.000 ₺ → dönen varlıklar = 175.000 ₺. Cari oran = 175.000 ÷ 125.000 = **1,40**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0009",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Duran varlıklarının toplamı dönen varlıklarının 1,5 katı olan bir işletmenin devamlı sermayesi 90.000 ₺, net çalışma sermayesi 15.000 ₺'dir. Buna göre işletmenin aktif toplamı kaç ₺'dir?",
+    "options": {
+      "A": "75.000",
+      "B": "150.000",
+      "C": "112.500",
+      "D": "125.000",
+      "E": "105.000"
+    },
+    "answer": "D",
+    "solution": "Duran varlıklar = devamlı sermaye − NÇS = 75.000 ₺. Dönen varlıklar = 75.000 ÷ 1,5 = 50.000 ₺. Aktif = **125.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0010",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 1,60 olan bir işletmede aşağıdaki işlemlerden hangisi cari oranı artırır?",
+    "options": {
+      "A": "Ticari alacakların bir kısmının tahsil edilmesi",
+      "B": "Kısa vadeli kredi ile demirbaş satın alınması",
+      "C": "Kasadaki nakitle hisse senedi (menkul kıymet) satın alınması",
+      "D": "Kısa vadeli borçların bir kısmının kasadaki nakitle ödenmesi",
+      "E": "Kısa vadeli kredi ile ticari mal satın alınması"
+    },
+    "answer": "D",
+    "solution": "Oran 1'den büyükken pay ve payda aynı tutarda azalınca oran yükselir (ör. 160/100 → 140/80 = 1,75). Kısa vadeli krediyle mal almak oranı 1'e yaklaştırır (düşürür); demirbaş almak KVYK'yı artırır. Alacak tahsili ve nakitle menkul kıymet alımı dönen varlıklar içinde yer değiştirmedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0011",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Aşağıdaki işlemlerden hangisi net çalışma sermayesini değiştirmez?",
+    "options": {
+      "A": "Nakdi sermaye artırımı yapılması",
+      "B": "Uzun vadeli kredi ile kasaya nakit girişi sağlanması",
+      "C": "Kısa vadeli borçların kasadaki nakitle ödenmesi",
+      "D": "Kısa vadeli kredi ile makine satın alınması",
+      "E": "Nakitle arsa satın alınması"
+    },
+    "answer": "C",
+    "solution": "Nakitle kısa vadeli borç ödemede dönen varlıklar ve KVYK aynı tutarda azalır; NÇS (farkları) değişmez. Diğer işlemler dönen varlıkları ya da KVYK'yı tek başına değiştirir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0012",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 1,20 olan bir işletmede aşağıdaki işlemlerden hangileri cari oranı artırır?\n\nI. Maliyeti 40.000 ₺ olan malın 55.000 ₺'ye peşin satılması\n\nII. Kısa vadeli kredi ile taşıt satın alınması\n\nIII. Vadesine bir yıldan az kalan uzun vadeli banka kredisinin kısa vadeli borçlara aktarılması",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I, II ve III",
+      "C": "Yalnız II",
+      "D": "I ve III",
+      "E": "II ve III"
+    },
+    "answer": "A",
+    "solution": "**I artırır:** dönen varlıklar kâr kadar (15.000) artar. **II azaltır:** KVYK artar, taşıt duran varlıktır. **III azaltır:** KVYK artar. Doğru cevap **Yalnız I**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0013",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 200.000 ₺ (stoklar 80.000 ₺), kısa vadeli yabancı kaynakları 100.000 ₺ olan bir işletme, maliyeti 40.000 ₺ olan stokunu 60.000 ₺'ye peşin satmıştır. Bu işlemden sonra asit-test oranı kaçtır?",
+    "options": {
+      "A": "1,20",
+      "B": "1,60",
+      "C": "2,20",
+      "D": "1,40",
+      "E": "1,80"
+    },
+    "answer": "E",
+    "solution": "Stoklar 40.000 ₺'ye iner, nakit 60.000 ₺ artar: dönen varlıklar 220.000 ₺. Asit-test = (220.000 − 40.000) ÷ 100.000 = **1,80** (işlemden önce 1,20).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0014",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Sektör ortalamasının çok üzerinde, örneğin 5 düzeyinde cari oranı olan bir işletme için aşağıdakilerden hangisi söylenebilir?",
+    "options": {
+      "A": "İşletme kısa vadeli borç ödeme güçlüğü çekmektedir.",
+      "B": "Net çalışma sermayesi negatiftir.",
+      "C": "Stoklar dönen varlıkların tamamını oluşturur.",
+      "D": "İşletmenin özkaynakları negatiftir.",
+      "E": "Dönen varlıklarda atıl fon bulunabilir; kaynaklar kârlılığı düşürecek biçimde verimsiz kullanılıyor olabilir."
+    },
+    "answer": "E",
+    "solution": "Çok yüksek cari oran likiditenin güçlü olduğunu gösterir; ancak getirisi düşük nakit, stok ya da alacakta fazla fon tutulduğuna da işaret edebilir. Bu nedenle 'ne kadar yüksek o kadar iyi' denemez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0015",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Aşağıdakilerden hangisi bir işletmenin likidite durumu hakkında bilgi vermez?",
+    "options": {
+      "A": "Nakit oranı",
+      "B": "Asit-test oranı",
+      "C": "Stok bağımlılık oranı",
+      "D": "Özsermaye kârlılığı",
+      "E": "Net çalışma sermayesi"
+    },
+    "answer": "D",
+    "solution": "Özsermaye kârlılığı (net kâr ÷ özkaynak) bir kârlılık oranıdır. Diğerleri kısa vadeli borç ödeme gücüyle ilgilidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0016",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin cari oranı önceki yıla göre yükselmiş, nakit oranı ise düşmüştür. Bu durumun en olası açıklaması aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Kısa vadeli yabancı kaynaklar önemli ölçüde artmıştır.",
+      "B": "Stoklar ve alacaklar önemli ölçüde azalmıştır.",
+      "C": "Dönen varlıklar içinde stok ve alacakların payı artmış, hazır değer ve menkul kıymetlerin payı azalmıştır.",
+      "D": "Hazır değerler dönen varlıklardan hızlı artmıştır.",
+      "E": "Dönen varlıklar azalırken hazır değerler artmıştır."
+    },
+    "answer": "C",
+    "solution": "Cari oranın yükselip nakit oranının düşmesi, dönen varlıklardaki artışın en likit olmayan kalemlerden (stok, alacak) geldiğini ve en likit kalemlerin payının azaldığını gösterir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0017",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin hazır değer ve menkul kıymetleri 2024'te 40.000 ₺, 2025'te 30.000 ₺; kısa vadeli yabancı kaynakları 2024'te 100.000 ₺, 2025'te 120.000 ₺'dir. Buna göre nakit oranı nasıl değişmiştir?",
+    "options": {
+      "A": "Değişmemiştir.",
+      "B": "0,40'tan 0,25'e düşmüştür.",
+      "C": "0,40'tan 0,30'a düşmüştür.",
+      "D": "%25 azalmıştır.",
+      "E": "0,25'ten 0,40'a yükselmiştir."
+    },
+    "answer": "B",
+    "solution": "2024: 40.000 ÷ 100.000 = 0,40; 2025: 30.000 ÷ 120.000 = **0,25**. Pay azalırken payda arttığından düşüş belirgindir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0018",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin 2024'te dönen varlıkları 500.000 ₺, kısa vadeli yabancı kaynakları 400.000 ₺'dir. 2025'te dönen varlıklar %20, kısa vadeli yabancı kaynaklar %10 artmıştır. Buna göre net çalışma sermayesinin değişim oranı yüzde kaçtır?",
+    "options": {
+      "A": "%60",
+      "B": "%20",
+      "C": "%30",
+      "D": "%10",
+      "E": "%50"
+    },
+    "answer": "A",
+    "solution": "2024 NÇS = 100.000 ₺; 2025 = 600.000 − 440.000 = 160.000 ₺ → **%60** artış. Kalemlerdeki küçük oransal farklar, farkları olan NÇS'yi büyük ölçüde değiştirir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0019",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Devamlı sermayesinin %25'i dönen varlıkların finansmanında kullanılan bir işletmenin devamlı sermayesi 400.000 ₺ ve kısa vadeli yabancı kaynakları 200.000 ₺'dir. Buna göre cari oran kaçtır?",
+    "options": {
+      "A": "3",
+      "B": "0,50",
+      "C": "1,50",
+      "D": "1,25",
+      "E": "2"
+    },
+    "answer": "C",
+    "solution": "Devamlı sermayenin dönen varlıkları finanse eden kısmı net çalışma sermayesidir: 400.000 × %25 = 100.000 ₺. Dönen varlıklar = 200.000 + 100.000 = 300.000 ₺. Cari oran = **1,50**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0020",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net çalışma sermayesi devir hızı sektör ortalamasının çok üzerinde olan bir işletme için aşağıdakilerden hangisi söylenebilir?",
+    "options": {
+      "A": "Cari oranı sektör ortalamasının çok üzerindedir.",
+      "B": "İşletmenin satışları sektöre göre düşüktür.",
+      "C": "Net çalışma sermayesinde atıl fon birikmiştir.",
+      "D": "Dönen varlıkları KVYK'dan küçüktür.",
+      "E": "Satış hacmine göre net çalışma sermayesi yetersiz kalmış olabilir."
+    },
+    "answer": "E",
+    "solution": "Yüksek devir hızı, satışların görece küçük bir net çalışma sermayesiyle yürütüldüğünü gösterir; bu verimlilik anlamına gelebileceği gibi sermaye yetersizliği ve likidite baskısına da işaret edebilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0021",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin dönen varlıkları 540.000 ₺ olup bunun 180.000 ₺'si stoklar, 36.000 ₺'si gelecek aylara ait giderlerdir. Kısa vadeli yabancı kaynakları 240.000 ₺'dir. Stoklarla birlikte nakde dönüşmeyecek peşin ödenmiş giderlerin de düşüldüğü likidite (asit-test) oranı kaçtır?",
+    "options": {
+      "A": "1,50",
+      "B": "1,35",
+      "C": "2,25",
+      "D": "0,90",
+      "E": "2,10"
+    },
+    "answer": "B",
+    "solution": "Nakde dönüşmeyecek kalemler (stok ve peşin ödenmiş gider) düşülür: (540.000 − 180.000 − 36.000) ÷ 240.000 = **1,35**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0022",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin hazır değerleri 24.000 ₺, menkul kıymetleri 16.000 ₺, ticari alacakları 60.000 ₺ ve kısa vadeli yabancı kaynakları 80.000 ₺'dir. Buna göre nakit oranı kaçtır?",
+    "options": {
+      "A": "0,75",
+      "B": "0,20",
+      "C": "1,25",
+      "D": "0,50",
+      "E": "0,30"
+    },
+    "answer": "D",
+    "solution": "Nakit oranı = (hazır değerler + menkul kıymetler) ÷ KVYK = 40.000 ÷ 80.000 = **0,50**. Ticari alacaklar asit-test oranına girer, nakit oranına girmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0023",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net satışları 1.800.000 ₺ ve ortalama dönen varlıkları 600.000 ₺ olan bir işletmenin dönen varlık devir hızı kaçtır ve bir dönen varlık devri kaç gün sürer? (1 yıl = 360 gün)",
+    "options": {
+      "A": "0,33 ve 120 gün",
+      "B": "3 ve 120 gün",
+      "C": "4 ve 90 gün",
+      "D": "3 ve 90 gün",
+      "E": "3 ve 60 gün"
+    },
+    "answer": "B",
+    "solution": "Dönen varlık devir hızı = 1.800.000 ÷ 600.000 = **3**; süre = 360 ÷ 3 = **120 gün**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0024",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 1,75 olan bir işletmenin net çalışma sermayesi 45.000 ₺'dir. Buna göre işletmenin kısa vadeli yabancı kaynakları ve dönen varlıkları sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "60.000 ve 105.000",
+      "B": "45.000 ve 78.750",
+      "C": "25.000 ve 70.000",
+      "D": "60.000 ve 78.750",
+      "E": "105.000 ve 60.000"
+    },
+    "answer": "A",
+    "solution": "Dönen varlıklar = 1,75 × KVYK; NÇS = 0,75 × KVYK = 45.000 → KVYK = **60.000 ₺**, dönen varlıklar = **105.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0025",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin cari oranı 1,80'dir. Stokları dönen varlıklarının %40'ı olduğuna göre asit-test oranı kaçtır?",
+    "options": {
+      "A": "1,44",
+      "B": "1,80",
+      "C": "0,72",
+      "D": "1,40",
+      "E": "1,08"
+    },
+    "answer": "E",
+    "solution": "Asit-test = cari × (1 − stok payı) = 1,80 × 0,60 = **1,08**. Stoklar KVYK'nın 1,80 × 0,40 = 0,72 katıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0026",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net satışları 900.000 ₺ olan bir işletmenin net çalışma sermayesi devir hızı 6, cari oranı 2,50'dir. Buna göre dönen varlıkları kaç ₺'dir?",
+    "options": {
+      "A": "375.000",
+      "B": "250.000",
+      "C": "360.000",
+      "D": "150.000",
+      "E": "100.000"
+    },
+    "answer": "B",
+    "solution": "NÇS = 900.000 ÷ 6 = 150.000 ₺ = 1,5 × KVYK → KVYK = 100.000 ₺. Dönen varlıklar = 2,50 × 100.000 = **250.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0027",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Hazır değerleri ve menkul kıymetleri toplamı 30.000 ₺, kısa vadeli yabancı kaynakları 120.000 ₺ olan bir işletme nakit oranını 0,40'a çıkarmak için uzun vadeli kredi kullanarak kasaya nakit girişi sağlayacaktır. Kaç ₺ kredi kullanmalıdır?",
+    "options": {
+      "A": "30.000",
+      "B": "20.000",
+      "C": "18.000",
+      "D": "48.000",
+      "E": "12.000"
+    },
+    "answer": "C",
+    "solution": "(30.000 + x) ÷ 120.000 = 0,40 → x = **18.000 ₺**. Uzun vadeli kredi KVYK'yı değiştirmez; yalnız pay artar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0028",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Aktif toplamı 400.000 ₺ olan bir işletmede duran varlıklar dönen varlıkların 3 katıdır. Devamlı sermaye 350.000 ₺ olduğuna göre net çalışma sermayesi kaç ₺'dir?",
+    "options": {
+      "A": "−50.000",
+      "B": "250.000",
+      "C": "100.000",
+      "D": "50.000",
+      "E": "300.000"
+    },
+    "answer": "D",
+    "solution": "Dönen varlıklar = 400.000 ÷ 4 = 100.000 ₺; duran varlıklar 300.000 ₺. NÇS = devamlı sermaye − duran varlıklar = 350.000 − 300.000 = **50.000 ₺** (KVYK 50.000 ₺).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0029",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Pasif toplamı 60.000 ₺ olan bir işletmede duran varlıklar dönen varlıkların 3 katıdır ve sürekli sermaye 54.000 ₺'dir. Buna göre cari oran kaçtır?",
+    "options": {
+      "A": "0,40",
+      "B": "1,50",
+      "C": "2,50",
+      "D": "2",
+      "E": "3"
+    },
+    "answer": "C",
+    "solution": "Dönen varlıklar = 60.000 ÷ 4 = 15.000 ₺; KVYK = 60.000 − 54.000 = 6.000 ₺. Cari oran = 15.000 ÷ 6.000 = **2,50**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0030",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Aktif toplamı 500.000 ₺ olan bir işletmede duran varlıklar aktifin %70'i, devamlı sermaye pasifin %60'ıdır. Buna göre cari oran kaçtır?",
+    "options": {
+      "A": "0,86",
+      "B": "1,17",
+      "C": "0,75",
+      "D": "1,33",
+      "E": "0,43"
+    },
+    "answer": "C",
+    "solution": "Dönen varlıklar %30 (150.000 ₺), KVYK %40 (200.000 ₺). Cari oran = 150.000 ÷ 200.000 = **0,75**; NÇS −50.000 ₺. Duran varlıkların bir kısmı kısa vadeli kaynakla finanse edilmektedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0031",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 0,80 olan bir işletmede aşağıdaki işlemlerden hangisi cari oranı düşürür?",
+    "options": {
+      "A": "Kısa vadeli borçların bir kısmının kasadaki nakitle ödenmesi",
+      "B": "Stokların bir kısmının maliyet bedeline peşin satılması",
+      "C": "Ticari alacakların bir kısmının tahsil edilmesi",
+      "D": "Nakdi sermaye artırımı yapılması",
+      "E": "Uzun vadeli kredi ile kasaya nakit girişi sağlanması"
+    },
+    "answer": "A",
+    "solution": "Oran 1'in altındayken pay ve payda aynı tutarda azalınca oran düşer (ör. 80/100 → 60/80 = 0,75). Uzun vadeli kredi ve sermaye artırımı payı artırır; tahsilat ve maliyet bedeline satış dönen varlıklar içinde yer değiştirmedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0032",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 300.000 ₺, kısa vadeli yabancı kaynakları 150.000 ₺ olan bir işletme önce 50.000 ₺ kısa vadeli borcunu nakitle ödemiş, ardından 25.000 ₺ kısa vadeli kredi ile makine satın almıştır. Bu işlemlerden sonra cari oran kaçtır?",
+    "options": {
+      "A": "2,20",
+      "B": "2",
+      "C": "1,83",
+      "D": "2,50",
+      "E": "1,67"
+    },
+    "answer": "B",
+    "solution": "Ödemeden sonra: 250.000 ÷ 100.000 = 2,50. Kredili makine alımıyla KVYK 125.000 ₺ olur; dönen varlıklar değişmez. Cari oran = 250.000 ÷ 125.000 = **2**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0033",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 0,90 olan bir işletme için aşağıdakilerden hangisi doğrudur?",
+    "options": {
+      "A": "Özkaynaklar negatiftir.",
+      "B": "Nakit oranı cari orandan büyüktür.",
+      "C": "Asit-test oranı 1'den büyüktür.",
+      "D": "Duran varlıklar devamlı sermayeden küçüktür.",
+      "E": "Net çalışma sermayesi negatiftir."
+    },
+    "answer": "E",
+    "solution": "Cari oran 1'in altındaysa dönen varlıklar KVYK'dan küçüktür; NÇS negatiftir ve duran varlıkların bir kısmı kısa vadeli kaynakla finanse edilir. Asit-test ve nakit oranı cari orandan büyük olamaz; özkaynak hakkında bilgi yoktur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0034",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 2,00, asit-test oranı 0,60 ve nakit oranı 0,10 olan bir işletme için aşağıdakilerden hangisi kesin olarak doğrudur?",
+    "options": {
+      "A": "Stoklar dönen varlıkların yarısıdır.",
+      "B": "Ticari alacaklar kısa vadeli yabancı kaynakların yarısıdır.",
+      "C": "Hazır değerler kısa vadeli yabancı kaynakların %10'udur.",
+      "D": "Stoklar kısa vadeli yabancı kaynakların 1,4 katıdır.",
+      "E": "Net çalışma sermayesi negatiftir."
+    },
+    "answer": "D",
+    "solution": "Stoklar ÷ KVYK = cari − asit = 1,40 (dönen varlıkların %70'i). Asit − nakit = 0,50 alacak ve diğer likit kalemleri gösterir; alacakların tek başına payı kesin değildir. Nakit oranı hazır değer ile menkul kıymetin toplamıdır, hazır değerin tek başına payı bilinmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0035",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Likidite oranlarıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Aynı işletmede nakit oranı asit-test oranından, asit-test oranı da cari orandan büyük olamaz.\n\nII. Asit-test oranı 1 ise kısa vadeli borçlar stoklar satılmadan karşılanabilir.\n\nIII. Cari oran 2 ise net çalışma sermayesi aktif toplamının yarısıdır.",
+    "options": {
+      "A": "Yalnız I",
+      "B": "I, II ve III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I ve III"
+    },
+    "answer": "C",
+    "solution": "**I doğrudur:** paylar sırasıyla genişler (hazır+menkul ⊂ stok dışı dönen ⊂ dönen). **II doğrudur.** **III yanlıştır:** cari 2 ise NÇS KVYK'ya eşittir; aktif içindeki payı bilinmez. Doğru cevap **I ve II**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0036",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin 2024'te dönen varlıkları 400.000 ₺, kısa vadeli yabancı kaynakları 250.000 ₺; 2025'te dönen varlıkları 450.000 ₺, kısa vadeli yabancı kaynakları 330.000 ₺'dir. Buna göre net çalışma sermayesi nasıl değişmiştir?",
+    "options": {
+      "A": "%20 azalmıştır.",
+      "B": "30.000 ₺ artmıştır.",
+      "C": "%32 azalmıştır.",
+      "D": "Değişmemiştir.",
+      "E": "%12,50 artmıştır."
+    },
+    "answer": "A",
+    "solution": "NÇS 150.000 ₺'den 120.000 ₺'ye düşmüştür: −30.000 ÷ 150.000 = **−%20**. Dönen varlıklar %12,50, KVYK %32 artmıştır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0037",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net satışları 2024'te 1.200.000 ₺, 2025'te 1.500.000 ₺ olan bir işletmenin net çalışma sermayesi 2024'te 200.000 ₺, 2025'te 300.000 ₺'dir. Buna göre net çalışma sermayesi devir hızı nasıl değişmiştir?",
+    "options": {
+      "A": "6'dan 7,50'ye yükselmiştir.",
+      "B": "6'dan 5'e düşmüştür.",
+      "C": "Değişmemiştir.",
+      "D": "%25 artmıştır.",
+      "E": "5'ten 6'ya yükselmiştir."
+    },
+    "answer": "B",
+    "solution": "2024: 1.200.000 ÷ 200.000 = 6; 2025: 1.500.000 ÷ 300.000 = **5**. NÇS (%50) satışlardan (%25) hızlı arttığı için devir hızı düşmüştür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0038",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Net çalışma sermayesi aktif toplamının %30'u olan ve cari oranı 2,50 olan bir işletmede kısa vadeli yabancı kaynakların aktif toplamına oranı yüzde kaçtır?",
+    "options": {
+      "A": "%12",
+      "B": "%30",
+      "C": "%50",
+      "D": "%75",
+      "E": "%20"
+    },
+    "answer": "E",
+    "solution": "Dönen varlıklar = 2,50 × KVYK; NÇS = 1,50 × KVYK = %30 → KVYK = **%20**, dönen varlıklar %50.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0039",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Fiyatların sürekli yükseldiği bir dönemde stoklarını FIFO yöntemiyle değerleyen işletme, ağırlıklı ortalama yöntemi kullanan benzer bir işletmeye göre likidite oranları bakımından nasıl görünür?",
+    "options": {
+      "A": "Likidite oranları arasında fark oluşmaz.",
+      "B": "Asit-test oranı daha yüksek, cari oranı daha düşük görünür.",
+      "C": "Nakit oranı daha yüksek görünür.",
+      "D": "Cari oranı daha yüksek görünür; asit-test oranı stok değerlemesinden etkilenmez.",
+      "E": "Her iki oran da daha düşük görünür."
+    },
+    "answer": "D",
+    "solution": "FIFO'da dönem sonu stoklar son (yüksek) alış fiyatlarıyla değerlenir; dönen varlıklar ve cari oran yükselir. Asit-test ve nakit oranında stoklar paya girmediğinden değerleme yönteminden etkilenmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0040",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 200.000 ₺ olup bunun 60.000 ₺'si stok olan bir işletmenin kısa vadeli yabancı kaynakları 80.000 ₺'dir. Buna göre asit-test oranı kaçtır?",
+    "options": {
+      "A": "3,25",
+      "B": "2,50",
+      "C": "1,75",
+      "D": "0,75",
+      "E": "1,40"
+    },
+    "answer": "C",
+    "solution": "Asit-test = (200.000 − 60.000) ÷ 80.000 = **1,75**. Cari oran 2,50; stokların KVYK'ya oranı 0,75'tir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0041",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 300.000 ₺, kısa vadeli yabancı kaynakları 120.000 ₺, uzun vadeli yabancı kaynakları 100.000 ₺ olan bir işletmenin brüt çalışma sermayesi ve net çalışma sermayesi sırasıyla kaç ₺'dir?",
+    "options": {
+      "A": "300.000 ve 180.000",
+      "B": "180.000 ve 80.000",
+      "C": "180.000 ve 300.000",
+      "D": "420.000 ve 180.000",
+      "E": "300.000 ve 80.000"
+    },
+    "answer": "A",
+    "solution": "Brüt çalışma sermayesi dönen varlıkların toplamıdır: **300.000 ₺**. Net çalışma sermayesi = dönen varlıklar − KVYK = **180.000 ₺**. Dönen varlıklardan tüm yabancı kaynakların düşülmesi (80.000 ₺) safi çalışma sermayesidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0042",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin bilanço verileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Hazır değerler | 10.000 |\n| Menkul kıymetler | 15.000 |\n| Kısa vadeli ticari alacaklar | 95.000 |\n| Stoklar | 100.000 |\n| Kısa vadeli yabancı kaynaklar | 200.000 |\n\nBuna göre stok bağımlılık oranı kaçtır?",
+    "options": {
+      "A": "0,80",
+      "B": "1,75",
+      "C": "1,05",
+      "D": "0,50",
+      "E": "2"
+    },
+    "answer": "A",
+    "solution": "Stok bağımlılık oranı = [KVYK − (hazır + menkul + kısa vadeli alacak)] ÷ stok = (200.000 − 120.000) ÷ 100.000 = **0,80**. Kısa vadeli borçların %80'lik kısmı stok satılmadan ödenemez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0043",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Cari oranı 2,20 ve asit-test oranı 1,10 olan bir işletmenin stokları 66.000 ₺'dir. Buna göre işletmenin dönen varlıkları kaç ₺'dir?",
+    "options": {
+      "A": "145.200",
+      "B": "60.000",
+      "C": "132.000",
+      "D": "72.600",
+      "E": "66.000"
+    },
+    "answer": "C",
+    "solution": "Cari − asit-test = stoklar ÷ KVYK → 1,10 = 66.000 ÷ KVYK → KVYK = 60.000 ₺. Dönen varlıklar = 2,20 × 60.000 = **132.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0044",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin likidite (asit-test) oranı 0,80, nakit oranı 0,30 ve kısa vadeli yabancı kaynakları 150.000 ₺'dir. Stoklar dışındaki dönen varlıklar yalnız hazır değer, menkul kıymet ve ticari alacaklardan oluştuğuna göre ticari alacaklar kaç ₺'dir?",
+    "options": {
+      "A": "50.000",
+      "B": "120.000",
+      "C": "75.000",
+      "D": "165.000",
+      "E": "45.000"
+    },
+    "answer": "C",
+    "solution": "Asit-test payı = 0,80 × 150.000 = 120.000 ₺; nakit oranı payı = 0,30 × 150.000 = 45.000 ₺. Ticari alacaklar = 120.000 − 45.000 = **75.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0045",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Brüt çalışma sermayesi 150.000 ₺ ve cari oranı 2,50 olan bir işletmenin hazır değerleri 9.000 ₺, menkul kıymetleri 15.000 ₺'dir. Buna göre nakit oranı kaçtır?",
+    "options": {
+      "A": "0,40",
+      "B": "0,60",
+      "C": "0,27",
+      "D": "2,10",
+      "E": "0,16"
+    },
+    "answer": "A",
+    "solution": "Brüt çalışma sermayesi dönen varlıklardır; KVYK = 150.000 ÷ 2,50 = 60.000 ₺. Nakit oranı = 24.000 ÷ 60.000 = **0,40**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0046",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 240.000 ₺, kısa vadeli yabancı kaynakları 160.000 ₺ olan bir işletme cari oranını 2'ye çıkarmak için kasadaki nakitle kısa vadeli borç ödemek istemektedir. Kaç ₺ ödeme yapmalıdır?",
+    "options": {
+      "A": "60.000",
+      "B": "120.000",
+      "C": "160.000",
+      "D": "80.000",
+      "E": "40.000"
+    },
+    "answer": "D",
+    "solution": "(240.000 − x) ÷ (160.000 − x) = 2 → 240.000 − x = 320.000 − 2x → x = **80.000 ₺**. Kontrol: 160.000 ÷ 80.000 = 2. Oran 1'in üzerindeyken eşit tutarda pay ve payda azalışı oranı yükseltir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0047",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 240.000 ₺, kısa vadeli yabancı kaynakları 200.000 ₺ olan bir işletme cari oranını 1,50'ye çıkarmak için uzun vadeli kredi kullanarak kasaya nakit sağlayacaktır. Gereken kredi tutarı kaç ₺'dir?",
+    "options": {
+      "A": "60.000",
+      "B": "40.000",
+      "C": "300.000",
+      "D": "80.000",
+      "E": "100.000"
+    },
+    "answer": "A",
+    "solution": "(240.000 + x) ÷ 200.000 = 1,50 → 240.000 + x = 300.000 → x = **60.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0048",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Kısa vadeli yabancı kaynaklar toplamı 30.000 ₺ olan bir işletmenin cari oranı 1,60 ve duran varlıkların devamlı sermayeye oranı 0,75'tir. Buna göre duran varlıklar kaç ₺'dir?",
+    "options": {
+      "A": "18.000",
+      "B": "72.000",
+      "C": "54.000",
+      "D": "22.500",
+      "E": "48.000"
+    },
+    "answer": "C",
+    "solution": "Dönen varlıklar = 48.000 ₺, NÇS = 18.000 ₺. NÇS = devamlı sermaye × (1 − 0,75) → devamlı sermaye = 72.000 ₺. Duran varlıklar = 0,75 × 72.000 = **54.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0049",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmede kısa vadeli yabancı kaynakların pasif toplamına oranı %20, duran varlıkların aktif toplamına oranı %56'dır. Buna göre cari oran kaçtır?",
+    "options": {
+      "A": "1,25",
+      "B": "0,44",
+      "C": "2,80",
+      "D": "2,20",
+      "E": "0,70"
+    },
+    "answer": "D",
+    "solution": "Dönen varlıklar aktifin %44'ü; KVYK %20. Cari oran = 44 ÷ 20 = **2,20**. Devamlı sermaye %80, duran varlıklar %56 → NÇS aktifin %24'üdür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0050",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin bilançosuna ait bilgiler şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönen varlıklar | 120.000 |\n| Duran varlıklar | 160.000 |\n| Uzun vadeli yabancı kaynaklar | 60.000 |\n| Özkaynaklar | 140.000 |\n\nKısa vadeli yabancı kaynaklar verilmediğine göre işletmenin cari oranı ve net çalışma sermayesi sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
+    "options": {
+      "A": "0,86 ve −20.000",
+      "B": "1,50 ve 40.000",
+      "C": "0,60 ve −80.000",
+      "D": "2 ve 40.000",
+      "E": "1,50 ve 80.000"
+    },
+    "answer": "B",
+    "solution": "KVYK = aktif − UVYK − özkaynak = 280.000 − 60.000 − 140.000 = 80.000 ₺. Cari = 120.000 ÷ 80.000 = **1,50**; NÇS = **40.000 ₺** (= devamlı sermaye 200.000 − duran varlıklar 160.000).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0051",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Aşağıdaki işlemlerden hangisi asit-test oranını değiştirmez?",
+    "options": {
+      "A": "Kısa vadeli borçların kasadaki nakitle ödenmesi",
+      "B": "Stokların bir kısmının maliyet bedeline peşin satılması",
+      "C": "Kasadaki nakitle ticari mal satın alınması",
+      "D": "Kısa vadeli kredi ile ticari mal satın alınması",
+      "E": "Ticari alacakların bir kısmının tahsil edilmesi"
+    },
+    "answer": "E",
+    "solution": "Alacak tahsilinde alacak azalır, nakit artar; ikisi de asit-test payındadır. Nakitle mal almak payı azaltır (nakit stoka döner), stok satışı payı artırır, kredili mal alımı paydayı artırır, borç ödemesi hem payı hem paydayı değiştirir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0052",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 180.000 ₺, kısa vadeli yabancı kaynakları 90.000 ₺ olan bir işletmede uzun vadeli banka kredisinin gelecek yıl ödenecek 30.000 ₺'lik taksiti kısa vadeli borçlara aktarılmıştır. Buna göre cari oran nasıl değişir?",
+    "options": {
+      "A": "2'den 1,50'ye düşer ve net çalışma sermayesi değişmez.",
+      "B": "Değişmez; net çalışma sermayesi azalır.",
+      "C": "2'den 2,50'ye yükselir.",
+      "D": "2'den 1,67'ye düşer.",
+      "E": "2'den 1,50'ye düşer."
+    },
+    "answer": "E",
+    "solution": "Taksit aktarımı KVYK'yı 120.000 ₺'ye çıkarır: cari oran 180.000 ÷ 120.000 = **1,50**. Net çalışma sermayesi de 90.000 ₺'den 60.000 ₺'ye düşer.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0053",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Dönen varlıkları 300.000 ₺, kısa vadeli yabancı kaynakları 120.000 ₺ ve uzun vadeli yabancı kaynakları 100.000 ₺ olan bir işletmenin safi (öz) çalışma sermayesi kaç ₺'dir?",
+    "options": {
+      "A": "180.000",
+      "B": "80.000",
+      "C": "−20.000",
+      "D": "200.000",
+      "E": "300.000"
+    },
+    "answer": "B",
+    "solution": "Safi çalışma sermayesi dönen varlıklardan toplam yabancı kaynakların düşülmesiyle bulunur: 300.000 − 220.000 = **80.000 ₺**; dönen varlıkların özkaynakla finanse edilen kısmını gösterir. Net çalışma sermayesi 180.000 ₺'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - çalışma sermayesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0054",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Stok bağımlılık oranının yüksek olması aşağıdakilerden hangisini gösterir?",
+    "options": {
+      "A": "İşletmenin stoklarının dönen varlıklar içinde önemsiz olduğunu",
+      "B": "Özkaynakların stok yatırımını finanse ettiğini",
+      "C": "Kısa vadeli borçların hazır değerlerle karşılanabildiğini",
+      "D": "Stokların hızlı satıldığını ve devir hızının yüksek olduğunu",
+      "E": "Kısa vadeli borçların ödenmesinin büyük ölçüde stokların satışına bağlı olduğunu"
+    },
+    "answer": "E",
+    "solution": "Stok bağımlılık oranı, stok dışındaki likit varlıklarla ödenemeyen kısa vadeli borçların stoklara oranıdır; yükseldikçe borç ödemesi stok satışına daha çok bağımlı hâle gelir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0055",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletmenin dönen varlıkları 250.000 ₺ (stoklar 100.000 ₺, hazır değerler 15.000 ₺, menkul kıymetler 10.000 ₺), kısa vadeli yabancı kaynakları 125.000 ₺'dir. Buna göre aşağıdakilerden hangisi yanlıştır?",
+    "options": {
+      "A": "Nakit oranı 0,12'dir.",
+      "B": "Asit-test oranı 1,20'dir.",
+      "C": "Stoklar kısa vadeli yabancı kaynakların 0,8 katıdır.",
+      "D": "Cari oran 2'dir.",
+      "E": "Net çalışma sermayesi 125.000 ₺'dir."
+    },
+    "answer": "A",
+    "solution": "Nakit oranı = (15.000 + 10.000) ÷ 125.000 = 0,20'dir; 0,12 yalnız hazır değerleri almaktır. Cari 2, asit-test 150.000 ÷ 125.000 = 1,20, NÇS 125.000 ₺, stok ÷ KVYK = 0,80 doğrudur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0056",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "2024'te cari oranı 2 ve asit-test oranı 1,20 olan bir işletmenin 2025'te cari oranı 2,50, asit-test oranı 1'dir. Buna göre stokların dönen varlıklar içindeki payı nasıl değişmiştir?",
+    "options": {
+      "A": "%60'tan %40'a düşmüştür.",
+      "B": "%40'tan %60'a yükselmiştir.",
+      "C": "Değişmemiştir.",
+      "D": "%40'tan %50'ye yükselmiştir.",
+      "E": "%80'den %150'ye yükselmiştir."
+    },
+    "answer": "B",
+    "solution": "Stok payı = (cari − asit) ÷ cari. 2024: 0,80 ÷ 2 = %40; 2025: 1,50 ÷ 2,50 = **%60**. Cari oranın yükselmesi stoklara bağlıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0057",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "2024'te cari oranı 1,60 olan bir işletmenin 2025'te dönen varlıkları %25, kısa vadeli yabancı kaynakları %60 artmıştır. Buna göre 2025 yılı cari oranı kaçtır?",
+    "options": {
+      "A": "1,00",
+      "B": "1,25",
+      "C": "1,60",
+      "D": "2,05",
+      "E": "2,00"
+    },
+    "answer": "B",
+    "solution": "Cari oran = 1,60 × 1,25 ÷ 1,60 = **1,25**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0058",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Brüt çalışma sermayesinin yarısı stoklardan oluşan ve cari oranı 2 olan bir işletmenin asit-test oranı kaçtır?",
+    "options": {
+      "A": "0,50",
+      "B": "1,50",
+      "C": "4",
+      "D": "2",
+      "E": "1"
+    },
+    "answer": "E",
+    "solution": "Asit-test = cari × (1 − stok payı) = 2 × 0,50 = **1**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0059",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Kısa vadeli banka kredisinin vadesi uzatılarak uzun vadeli krediye dönüştürülmesi (yeniden yapılandırma) likidite oranlarını nasıl etkiler?",
+    "options": {
+      "A": "KVYK arttığından likidite oranları düşer.",
+      "B": "Net çalışma sermayesi değişir, oranlar aynı kalır.",
+      "C": "Dönen varlıklar arttığından cari oran yükselir, asit-test değişmez.",
+      "D": "Likidite oranları değişmez, borç yapısı değişir.",
+      "E": "KVYK azaldığından cari, asit-test ve nakit oranı yükselir."
+    },
+    "answer": "E",
+    "solution": "Borcun vadesi uzayınca KVYK azalır, dönen varlıklar değişmez; paydası KVYK olan bütün likidite oranları yükselir ve net çalışma sermayesi artar.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mta-likid-gen-0060",
+    "ders": "mali_tablolar_analizi",
+    "konu": "likidite_ve_calisma_sermayesi",
+    "stem": "Bir işletme dönem sonunda tahsili şüpheli hâle gelen ticari alacakları için karşılık ayırmıştır. Bu işlemin likidite oranlarına etkisi aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Cari oran ve nakit oranı düşer; asit-test oranı değişmez.",
+      "B": "Nakit oranı düşer, diğerleri değişmez.",
+      "C": "Cari oran düşer, asit-test oranı yükselir.",
+      "D": "Cari oran ve asit-test oranı düşer; nakit oranı değişmez.",
+      "E": "Likidite oranları değişmez, borç yapısı değişir."
+    },
+    "answer": "D",
+    "solution": "Karşılık, alacakların net tutarını azaltır: dönen varlıklar ve stok dışı likit varlıklar düşer; cari ve asit-test oranı azalır. Hazır değer ve menkul kıymetler etkilenmediğinden nakit oranı aynı kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - likidite oranları"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  }
+]

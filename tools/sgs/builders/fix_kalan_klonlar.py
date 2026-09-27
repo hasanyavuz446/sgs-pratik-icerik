@@ -33,13 +33,6 @@ YAMA = [
 
     # maliyet_hesaplari: build_fm_maliyet_hesaplari_cok_adimli.py devraldı (2026-09-27)
 
-    # ── fon_akim: net kâr + nakit çıkışı gerektirmeyen giderler
-    ("mali_tablolar_analizi/fon_akim_analizi.json", "mta-fon-gen-0042",
-     "200.000", "160.000",
-     [("90.000", "50.000")],
-     "Faaliyetlerden Fon = 100.000 + 50.000 + 10.000 = **160.000 ₺**. Amortisman ve "
-     "karşılık giderleri nakit çıkışı gerektirmediğinden kâra eklenir."),
-
     # ── maliyet_hacim_kar: başabaş = sabit maliyet ÷ birim katkı payı
     ("maliyet_muhasebesi/maliyet_hacim_kar.json", "mmuh-mhk-gen-0027",
      "5.000", "7.000",

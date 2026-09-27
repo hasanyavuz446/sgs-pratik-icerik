@@ -27,10 +27,6 @@ APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 
 
 PATCHES: dict[str, dict[str, dict[str, str]]] = {
-    "content/mali_tablolar_analizi/fon_akim_analizi.json": {
-        "mta-fon-gen-0002": {"B": "Yalnızca kasadaki hazır nakit tutarını gösterir (dar anlamı)"},
-        "mta-fon-gen-0014": {"B": "1.380.000"},
-    },
     "content/turkce/yazim_noktalama_anlatim.json": {
         "turkce-yazim-gen-0023": {"C": "Zarf-fiil ekinin kullanımı anlatımı bozmuştur."},
         "turkce-yazim-gen-0027": {"D": "Sıralı yüklemler arasında zaman uyumsuzluğu vardır."},
@@ -42,14 +38,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
         "turkce-yazim-gen-0051": {
             "A": "Özne-yüklem uyumsuzluğu (öznenin yüklemle sayı ve kişi yönünden birbiriyle uymaması)"
         },
-    },
-    "content/mali_tablolar_analizi/trend_analizi.json": {
-        "mta-trend-gen-0018": {"B": "30.800"},
-        "mta-trend-gen-0025": {"B": "38.500"},
-        "mta-trend-gen-0031": {"A": "60.000"},
-        "mta-trend-gen-0043": {"A": "50.000"},
-        "mta-trend-gen-0006": {"D": "%25"},
-        "mta-trend-gen-0026": {"B": "%9"},
     },
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
