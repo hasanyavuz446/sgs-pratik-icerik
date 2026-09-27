@@ -3,20 +3,20 @@
     "id": "finmuh-dsi-gen-0001",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bir hesap döneminde muhasebe sürecinin genel işleyiş sırası aşağıdakilerden hangisidir?",
+    "stem": "Aşağıdakilerden hangisi dönem sonu envanter (düzeltme) işlemlerinden biri değildir?",
     "options": {
-      "A": "Açılış kaydı → Dönem içi işlemler → Genel geçici mizan → Envanter işlemleri → Kesin mizan → Mali tablolar → Kapanış kaydı",
-      "B": "Kapanış kaydı → Açılış kaydı → Kesin mizan → Envanter işlemleri → Dönem içi işlemler → Genel geçici mizan → Mali tablolar",
-      "C": "Mali tablolar → Kesin mizan → Açılış kaydı → Genel geçici mizan → Envanter işlemleri → Dönem içi işlemler → Kapanış kaydı",
-      "D": "Envanter işlemleri → Kesin mizan → Açılış kaydı → Mali tablolar → Dönem içi işlemler → Genel geçici mizan → Kapanış kaydı",
-      "E": "Dönem içi işlemler → Açılış kaydı → Kapanış kaydı → Genel geçici mizan → Envanter işlemleri → Mali tablolar → Kesin mizan"
+      "A": "Dönem içinde peşin mal satışının kaydedilmesi",
+      "B": "Şüpheli alacaklar için karşılık ayrılması",
+      "C": "Peşin ödenen/tahsil edilen gelir-giderlerin dönemlere ayrılması",
+      "D": "Maddi duran varlıklar için amortisman ayrılması",
+      "E": "Alacak ve borç senetleri için reeskont hesaplanması"
     },
     "answer": "A",
-    "solution": "Muhasebe süreci: **Açılış kaydı → Dönem içi işlemler → Genel geçici mizan → Envanter (düzeltme) işlemleri → Kesin mizan → Mali tablolar → Kapanış kaydı** sırasıyla işler.",
+    "solution": "**Dönem içinde peşin mal satışının kaydedilmesi** bir dönem içi işlemdir, envanter (düzeltme) işlemi değildir. Diğerleri (amortisman, karşılık, reeskont, dönem ayırıcı işlemler) dönem sonu envanter işlemleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-süreç; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci; VUK envanter hükümleri"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönem sonu envanter işlemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "finmuh-dsi-gen-0002",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bir işletmede dönem başında yapılan açılış kaydı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Dönem sonunda gelir hesaplarının alacak toplamı 680.000 ₺, gider ve maliyet hesaplarının borç toplamı 510.000 ₺'dir. Henüz vergi karşılığı hesaplanmamıştır.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına devrinden sonra ortaya çıkan sonuç nedir?",
     "options": {
-      "A": "Açılış kaydında yalnızca dönem içinde kapatılan gelir ve gider hesapları yeniden açılır; hiçbir bilanço hesabı yeni döneme aktarılmaz.",
-      "B": "Önceki dönemin gelir ve gider (gelir tablosu) hesapları, kalanlarıyla birlikte yeni döneme açılış kaydıyla aynen devredilerek yeniden açılır.",
-      "C": "Açılış kaydı yapılmaz; yeni dönemde hiçbir hesap açılmadan doğrudan dönem içi işlemlerin kaydedilmesine başlanır.",
-      "D": "Açılış kaydında yalnızca 100 Kasa hesabı açılır; diğer varlık, borç ve özkaynak hesapları açılış dışında bırakılır.",
-      "E": "Önceki dönemin kapanış bilançosundaki varlık, borç ve özkaynak (bilanço) hesapları yeni dönemde açılış kaydıyla yeniden açılır."
+      "A": "170.000 ₺ dönem zararı",
+      "B": "510.000 ₺ borç kalanı",
+      "C": "1.190.000 ₺ vergi öncesi dönem kârı",
+      "D": "680.000 ₺ alacak kalanı",
+      "E": "170.000 ₺ vergi öncesi dönem kârı"
     },
     "answer": "E",
-    "solution": "Açılış kaydında, önceki dönemin kapanış bilançosundaki **bilanço hesapları** (varlıklar borç, kaynaklar alacak) yeni dönemde yeniden açılır. Gelir/gider hesapları ise dönem sonunda kapatıldığından devredilmez.",
+    "solution": "Gelirler 690 hesabın alacağına, gider ve maliyetler borcuna aktarılır. 680.000 − 510.000 = **170.000 ₺ alacak kalanı**, vergi öncesi dönem kârını gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - açılış kaydı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 6 grubu hesapların 690 hesaba devri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "finmuh-dsi-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "'Mizan' ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemine ait 18 aylık depo kirasını 180.000 ₺ peşin tahsil etmiştir.\n\n31 Aralık 2025 tarihli finansal tablolarda bu tutar nasıl sınıflandırılmalıdır?",
     "options": {
-      "A": "Yalnızca dönem sonunda kasadaki nakit mevcudunu gösteren, hesapların borç ve alacak toplamları ile kalanlarını içermeyen basit bir sayım belgesidir.",
-      "B": "İşletmenin ortaklarını ve sermaye paylarını listeleyen, hesap kalanlarıyla ilgisi bulunmayan resmî bir ortaklık belgesidir; mizan değildir.",
-      "C": "Belirli bir tarihte hesapların borç-alacak toplamlarını ve kalanlarını topluca gösteren, kayıtların matematiksel doğruluğunu kontrol etmeye yarayan bir çizelgedir.",
-      "D": "Yalnızca dönem içindeki satış hasılatını gösteren, borç ve alacak kalanlarını içermeyen bir satış raporu niteliğindeki çizelgedir.",
-      "E": "Belirli bir dönemde ödenecek vergiyi hesaplamak için vergi dairesine verilen resmî bir beyanname olup hesap kalanlarını göstermez."
+      "A": "380 Gelecek Aylara Ait Gelirler 170.000 ₺; gelir kaydı yapılmaz",
+      "B": "649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 110.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺",
+      "C": "649 Diğer Olağan Gelir ve Kârlar 10.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺",
+      "D": "649 Diğer Olağan Gelir ve Kârlar 180.000 ₺",
+      "E": "380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 60.000 ₺"
     },
     "answer": "C",
-    "solution": "**Mizan**; belirli bir tarihte hesapların **borç-alacak toplamları ve kalanlarını** topluca gösteren, kayıtların matematiksel doğruluğunu kontrol etmeye yarayan bir çizelgedir.",
+    "solution": "Aylık kira 10.000 ₺'dir. Aralık ayına ait 10.000 ₺ gelirleşir; 2026 yılına ait 120.000 ₺ **380**, 2027 yılının ilk beş ayına ait 50.000 ₺ **480** hesapta izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - mizan"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "finmuh-dsi-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Doğru düzenlenmiş bir mizanda aşağıdaki eşitliklerden hangisi sağlanır?",
+    "stem": "Kasa hesabının borç kalanı 120.000 ₺ iken yapılan sayımda 116.000 ₺ bulunmuş ve nedeni bilinmeyen fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. Daha sonra noksanlığın kasa sorumlusundan tahsil edileceği kesinleşmiştir.\n\nNeden belirlendiğinde yapılacak kayıt hangisidir?",
     "options": {
-      "A": "Mizanda borç sütunu toplamı, alacak sütunu toplamının her zaman tam iki katı olmak zorundadır.",
-      "B": "Mizanda alacak kalanları toplamı, borç kalanları toplamından her zaman daha büyük olmalıdır.",
-      "C": "Mizanda borç kalanları toplamı her koşulda sıfıra eşit çıkar; alacak tarafı bakiye vermez.",
-      "D": "Borç sütunu toplamı = Alacak sütunu toplamı ve Borç kalanları toplamı = Alacak kalanları toplamı",
-      "E": "Mizanda borç ve alacak sütunları arasında herhangi bir eşitlik aranmaz; toplamların tutması gerekmez."
+      "A": "689 Diğer Olağandışı Gider ve Zararlar 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak",
+      "B": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 135 Personelden Alacaklar 4.000 ₺ alacak",
+      "C": "100 Kasa 4.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 4.000 ₺ alacak",
+      "D": "135 Personelden Alacaklar 4.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 4.000 ₺ alacak",
+      "E": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak"
     },
     "answer": "D",
-    "solution": "Çift taraflı kayıt gereği mizanda **Borç toplamı = Alacak toplamı** ve **Borç kalanları toplamı = Alacak kalanları toplamı** eşitlikleri sağlanır. Eşitlik yoksa kayıt/aktarma hatası vardır.",
+    "solution": "İlk kayıtta fark 197 hesapta geçici olarak izlenmiştir. Sorumlu kişi belli olduğunda işletmenin personelden alacağı doğar; **135 Personelden Alacaklar borçlandırılır, 197 hesap kapatılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-denklik; sınav stiline kalibre)",
-      "legislationRef": "Çift taraflı kayıt; mizan denkliği"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 100/197/135 sayım noksanlığı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "finmuh-dsi-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "'Muhasebe dışı envanter' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "İşletme 1 Ekim 2025 tarihinde 12 aylık danışmanlık hizmeti almış; toplam 240.000 ₺ bedelin hizmet süresi sonunda ödenmesi kararlaştırılmıştır. Aylık hizmet tutarları eşittir.\n\n31 Aralık 2025 tarihinde yapılacak tahakkuk kaydı hangisidir?",
     "options": {
-      "A": "Hesap kalanlarının yalnızca yevmiye ve defterikebir kayıtlarından okunarak fiilî sayım yapılmaksızın tespit edilmesidir.",
-      "B": "Dönem sonunda varlık ve borçların fiilî sayım, ölçüm, tartım ve değerleme yoluyla gerçek durumunun tespit edilmesi",
-      "C": "Dönem sonunda yalnızca gelir tablosunun düzenlenmesi olup varlık ve borçların fiilen sayılmasını kapsamayan bir işlemdir.",
-      "D": "Yalnızca genel geçici mizanın çıkarılması işlemi olup varlıkların fiilî sayım ve değerlemesini içermeyen bir aşamadır.",
-      "E": "Bilanço hesaplarının karşılıklı olarak kapatıldığı kapanış kaydının yapılması işlemidir; fiilî sayımla ilgisi yoktur."
+      "A": "381 Gider Tahakkukları 60.000 ₺ borç / 770 Genel Yönetim Giderleri 60.000 ₺ alacak",
+      "B": "770 Genel Yönetim Giderleri 60.000 ₺ borç / 381 Gider Tahakkukları 60.000 ₺ alacak",
+      "C": "280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 481 Gider Tahakkukları 180.000 ₺ alacak",
+      "D": "180 Gelecek Aylara Ait Giderler 60.000 ₺ borç / 320 Satıcılar 60.000 ₺ alacak",
+      "E": "770 Genel Yönetim Giderleri 240.000 ₺ borç / 381 Gider Tahakkukları 240.000 ₺ alacak"
     },
     "answer": "B",
-    "solution": "**Muhasebe dışı envanter**; dönem sonunda varlık ve borçların **fiilî sayım, ölçüm, tartım ve değerleme** yoluyla gerçek durumunun tespit edilmesidir. Kayıtlardaki (muhasebe içi) durumla karşılaştırılıp farklar düzeltilir.",
+    "solution": "Ekim-Aralık döneminde üç aylık hizmet alınmıştır: 240.000 / 12 × 3 = **60.000 ₺**. Döneme ait gider 770 hesaba borç; henüz ödenmeyen tutar 381 Gider Tahakkukları hesabına alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 186 (envanter)"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 770/381 gider tahakkuku"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "finmuh-dsi-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "'Muhasebe içi envanter' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Muhasebe sürecinde aşağıdaki adımların doğru sıralaması hangisidir?\n\nI. Envanter (düzeltme) işlemleri\n\nII. Genel geçici mizan\n\nIII. Kesin mizan",
     "options": {
-      "A": "Depodaki malların yalnızca fiilen elle sayılması işlemi olup, sonuçların düzeltme kayıtlarıyla defterlere yansıtılmasını kapsamaz.",
-      "B": "İşletmenin dönem içinde müşterilere fatura kesmesi işlemi olup, dönem sonu düzeltme kayıtlarıyla hiçbir bağlantısı bulunmaz.",
-      "C": "İşletmenin ürün ve hizmetleri için reklam ve tanıtım yapması olup, muhasebe defterlerine yapılan düzeltme kayıtlarıyla ilgisi yoktur.",
-      "D": "Muhasebe dışı envanterle tespit edilen gerçek durumun, muhasebe kayıtlarına (düzeltme/envanter kayıtlarıyla) yansıtılması işlemidir.",
-      "E": "Yalnızca yeni bir banka hesabının açılması işlemi olup, fiilî envanter sonuçlarının kayıtlara aktarılmasıyla ilgisi bulunmaz."
+      "A": "III → I → II",
+      "B": "III → II → I",
+      "C": "I → II → III",
+      "D": "II → I → III",
+      "E": "I → III → II"
     },
     "answer": "D",
-    "solution": "**Muhasebe içi envanter**; muhasebe dışı envanterle (fiilî tespitle) belirlenen gerçek durumun, **düzeltme (envanter) kayıtlarıyla muhasebe kayıtlarına yansıtılması** işlemidir.",
+    "solution": "Doğru sıra: **II Genel geçici mizan → I Envanter (düzeltme) işlemleri → III Kesin mizan**. Genel geçici mizan envanter öncesi, kesin mizan envanter sonrası düzenlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - envanter kayıtları"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Muhasebe süreci"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "finmuh-dsi-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonu envanter işlemlerinin temel amacı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, maliyeti 100.000 ₺ olan hisse senetleri için önceki dönemde 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Hisse senetlerinin tamamı cari dönemde 90.000 ₺'ye banka aracılığıyla satılmıştır.\n\nSatış kaydı hangisidir?",
     "options": {
-      "A": "İşletmenin dönem sonundaki gerçek varlık, borç ve öz durumunu ile dönem sonucunu (kâr/zarar) doğru biçimde belirlemek",
-      "B": "Dönem sonunda ürün satışlarını hızlandırıp cari dönemin satış hasılatını olabildiğince yükseltmek ve pazar payını artırmaktır.",
-      "C": "İşletmeye sermaye koyacak yeni ortaklar bulup özkaynağı güçlendirmek ve gelecek dönemin yatırımlarını finanse etmektir.",
-      "D": "Dönem sonucunu düşük göstererek işletmenin ödeyeceği vergiyi tamamen ortadan kaldırmak ve vergi yükünü sıfırlamaktır.",
-      "E": "Gelecek döneme ilişkin reklam ve tanıtım bütçesini hazırlayıp pazarlama harcamalarının planını önceden oluşturmaktır."
+      "A": "102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ ve 644 Konusu Kalmayan Karşılıklar 10.000 ₺ alacak",
+      "B": "102 Bankalar 90.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak",
+      "C": "102 Bankalar 90.000 ₺ ve 110 Hisse Senetleri 100.000 ₺ borç / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 645 Menkul Kıymet Satış Kârları 170.000 ₺ alacak",
+      "D": "102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak",
+      "E": "119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 30.000 ₺ alacak"
     },
     "answer": "A",
-    "solution": "Envanter işlemlerinin amacı; işletmenin dönem sonundaki **gerçek durumunu** (varlık, borç, özkaynak) ve **dönem sonucunu (kâr/zarar)** doğru belirlemek, mali tabloların gerçeği yansıtmasını sağlamaktır.",
+    "solution": "Satışta 90.000 ₺ banka ve ayrılmış 20.000 ₺ karşılık borçlandırılır; 100.000 ₺ maliyetli hisse senetleri çıkarılır. Borç toplamının maliyeti aşan 10.000 ₺ kısmı **644 Konusu Kalmayan Karşılıklar** hesabına alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 186; dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/110/119/644; 18 Temmuz 2026 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "finmuh-dsi-gen-0008",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Envanter (düzeltme) işlemleri tamamlandıktan sonra, mali tabloların düzenlenmesine esas olmak üzere çıkarılan mizan aşağıdakilerden hangisidir?",
+    "stem": "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem içinde tüketildiği belirlenen kırtasiye, 770 Genel Yönetim Giderleri hesabına aktarılır.\n\nII. Henüz tahsil edilmemiş kira geliri 380 Gelecek Aylara Ait Gelirler hesabında izlenir.\n\nIII. Nedeni bilinmeyen kasa fazlası 397 Sayım ve Tesellüm Fazlaları hesabına alınır.\n\nIV. Borç senedi reeskontunda 322 Borç Senetleri Reeskontu hesabı borçlandırılır.",
     "options": {
-      "A": "Genel geçici mizan",
-      "B": "Ara mizan",
-      "C": "Aylık mizan",
-      "D": "Açılış mizanı",
-      "E": "Kesin mizan"
+      "A": "I ve II",
+      "B": "I, II, III ve IV",
+      "C": "II ve III",
+      "D": "I, II ve IV",
+      "E": "I, III ve IV"
     },
     "answer": "E",
-    "solution": "Envanter (düzeltme) kayıtlarından sonra çıkarılan ve mali tablolara esas olan mizan **kesin mizandır**. Envanter öncesi çıkarılan ise genel geçici mizandır.",
+    "solution": "Tüketilen kırtasiye giderleşir; nedeni bilinmeyen kasa fazlası 397 hesapta izlenir; borç senedi reeskontunda 322 hesap borçlandırılır. Tahakkuk etmiş fakat tahsil edilmemiş kira geliri ise 181 Gelir Tahakkukları hesabına alınır; 380 peşin tahsil edilmiş gelecek dönem gelirleri içindir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - kesin mizan"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 180/770, 181, 397 ve 322"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "finmuh-dsi-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Aşağıdakilerden hangisi dönem sonu envanter (düzeltme) işlemlerinden biri değildir?",
+    "stem": "Dönem sonunda varlık hesapları toplam 220.000 ₺ borç, yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak kalanı vermektedir.\n\nBilanço hesaplarının kapanış kaydı hangisidir?",
     "options": {
-      "A": "Maddi duran varlıklar için amortisman ayrılması",
-      "B": "Şüpheli alacaklar için karşılık ayrılması",
-      "C": "Dönem içinde peşin mal satışının kaydedilmesi",
-      "D": "Alacak ve borç senetleri için reeskont hesaplanması",
-      "E": "Peşin ödenen/tahsil edilen gelir-giderlerin dönemlere ayrılması"
+      "A": "Varlık hesapları 220.000 ₺ borç ve özkaynak hesapları 80.000 ₺ borç / yabancı kaynak hesapları 300.000 ₺ alacak",
+      "B": "Varlık hesapları 220.000 ₺ ve yabancı kaynak hesapları 140.000 ₺ borç / özkaynak hesapları 360.000 ₺ alacak",
+      "C": "Yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ borç / varlık hesapları 220.000 ₺ alacak",
+      "D": "Özkaynak hesapları 80.000 ₺ borç / varlık hesapları 80.000 ₺ alacak",
+      "E": "Varlık hesapları 220.000 ₺ borç / yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak"
     },
     "answer": "C",
-    "solution": "**Dönem içinde peşin mal satışının kaydedilmesi** bir dönem içi işlemdir, envanter (düzeltme) işlemi değildir. Diğerleri (amortisman, karşılık, reeskont, dönem ayırıcı işlemler) dönem sonu envanter işlemleridir.",
+    "solution": "Kapanışta kalanlar ters taraflarına yazılarak sıfırlanır. Alacak kalanlı yabancı kaynak ve özkaynak hesapları toplam **220.000 ₺ borçlandırılır**; borç kalanlı varlık hesapları **220.000 ₺ alacaklandırılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Dönem sonu envanter işlemleri"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Muhasebe süreci - bilanço hesaplarının kapanış kaydı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "finmuh-dsi-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonu işlemlerinin dayandığı, 'her dönemin gelir ve giderinin ait olduğu dönemde dikkate alınması' ilkesini ifade eden temel muhasebe kavramı aşağıdakilerden hangisidir?",
+    "stem": "Dönem sonunda üretim makineleri için 40.000 ₺, genel yönetimde kullanılan demirbaşlar için 10.000 ₺ amortisman hesaplanmıştır. İşletme 7/A seçeneğini kullanmaktadır.\n\nAmortisman kaydı hangisidir?",
     "options": {
-      "A": "Maliyet esası kavramı",
-      "B": "Dönemsellik kavramı",
-      "C": "Parayla ölçülme kavramı",
-      "D": "İşletmenin sürekliliği kavramı",
-      "E": "Tam açıklama kavramı"
+      "A": "720 Direkt İşçilik Giderleri 40.000 ₺ ve 760 Pazarlama, Satış ve Dağıtım Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
+      "B": "730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
+      "C": "257 Birikmiş Amortismanlar 50.000 ₺ borç / 730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ alacak",
+      "D": "730 Genel Üretim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
+      "E": "770 Genel Yönetim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak"
     },
     "answer": "B",
-    "solution": "**Dönemsellik kavramı**; işletme faaliyetlerinin dönemlere bölünmesini ve her dönemin gelir/giderinin **ait olduğu dönemde** dikkate alınmasını gerektirir. Dönem sonu düzeltme işlemleri (tahakkuk, dönem ayırıcı vb.) bu kavramın uygulamasıdır.",
+    "solution": "Üretim makinelerinin amortismanı **730 hesaba 40.000 ₺**, yönetim demirbaşının amortismanı **770 hesaba 10.000 ₺ borç** yazılır. Toplam 50.000 ₺ birikmiş amortisman 257 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "MSUGT temel kavramlar - dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 730/770/257"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "finmuh-dsi-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda maddi duran varlıklar için ayrılan amortismanın kaydında hangi düzenleyici hesap alacaklandırılır?",
+    "stem": "Peşin ödenen bir yıllık kira bedelinin, yalnızca cari döneme düşen kısmının gider yazılıp kalanının '180 Gelecek Aylara Ait Giderler'e aktarılması hangi temel muhasebe kavramının gereğidir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar hesabı",
-      "B": "153 Ticari Mallar (stok) hesabı",
-      "C": "257 Birikmiş Amortismanlar (-)",
-      "D": "320 Satıcılar (borç) hesabı",
-      "E": "102 Bankalar (varlık) hesabı"
+      "A": "İhtiyatlılık kavramı",
+      "B": "Maliyet esası kavramı",
+      "C": "Dönemsellik kavramı",
+      "D": "Sosyal sorumluluk kavramı",
+      "E": "Parayla ölçülme kavramı"
     },
     "answer": "C",
-    "solution": "Dönem sonu amortisman kaydında ilgili gider hesabı (770/730 vb.) borçlandırılır; düzenleyici **257 Birikmiş Amortismanlar (-)** alacaklandırılır.",
+    "solution": "Gelir ve giderin ait olduğu dönemde dikkate alınması **dönemsellik kavramının** gereğidir. Bu nedenle peşin kiranın yalnızca cari döneme düşen kısmı gider yazılır; kalanı 180'de bekletilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 257; VUK md. 313"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "MSUGT temel kavramlar - dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "finmuh-dsi-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Tahsili şüpheli hâle gelen alacaklar için dönem sonunda ayrılan karşılığın kaydında hangi gider hesabı borçlandırılır?",
+    "stem": "İşletme 1 Eylül 2025'te yönetim binası için 18 aylık kira bedeli olarak 216.000 ₺ peşin ödemiş ve tutarın tamamını 770 Genel Yönetim Giderleri hesabına kaydetmiştir. Buna göre 31 Aralık 2025 tarihinde yapılacak düzeltme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri",
-      "B": "642 Faiz Gelirleri",
-      "C": "600 Yurt İçi Satışlar",
-      "D": "120 Alıcılar",
-      "E": "654 Karşılık Giderleri"
+      "A": "280 Gelecek Yıllara Ait Giderler hesabı 144.000 ₺ borçlandırılır",
+      "B": "180 Gelecek Aylara Ait Giderler hesabı 168.000 ₺ borçlandırılır",
+      "C": "770 Genel Yönetim Giderleri hesabı 48.000 ₺ alacaklandırılır",
+      "D": "180 Gelecek Aylara Ait Giderler hesabı 24.000 ₺ borçlandırılır",
+      "E": "770 Genel Yönetim Giderleri hesabı 168.000 ₺ alacaklandırılır"
     },
     "answer": "E",
-    "solution": "Şüpheli alacak karşılığı ayrılırken **654 Karşılık Giderleri** borçlandırılır; **129 Şüpheli Ticari Alacaklar Karşılığı (-)** alacaklandırılır (alacak 128 Şüpheli Ticari Alacaklar'a alınır).",
+    "solution": "Aylık kira 216.000 / 18 = 12.000 ₺. 2025'e 4 ay (48.000 ₺), 2026'ya 12 ay (144.000 ₺), 2027'ye 2 ay (24.000 ₺) düşer. Düzeltme: 180 (borç) 144.000 + 280 (borç) 24.000 / **770 (alacak) 168.000**. Gider hesabında yalnız 2025'e ait 48.000 ₺ kalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 654 / 129; VUK md. 323"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 180, 280, 770"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "finmuh-dsi-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda alacak senetleri için hesaplanan reeskontun kaydında hangi hesap borçlandırılır?",
+    "stem": "İşletme 1 Ağustos 2025'te bankaya bir yıl vadeli, yıllık %24 faizli 600.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir (stopaj ihmal). Buna göre 31 Aralık 2025 tarihinde tahakkuk ettirilecek faiz geliri kaç ₺'dir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "647 Reeskont Faiz Gelirleri",
-      "C": "121 Alacak Senetleri",
-      "D": "657 Reeskont Faiz Giderleri",
-      "E": "322 Borç Senetleri Reeskontu (-)"
+      "A": "84.000 ₺",
+      "B": "144.000 ₺",
+      "C": "48.000 ₺",
+      "D": "60.000 ₺",
+      "E": "72.000 ₺"
     },
     "answer": "D",
-    "solution": "Alacak senetleri reeskontunda **657 Reeskont Faiz Giderleri (B)** borçlandırılır; **122 Alacak Senetleri Reeskontu (-) (A)** alacaklandırılır (alacak bugünkü değere indirilir → gider doğar).",
+    "solution": "Ağustos-Aralık 5 aylık faiz 2025'e aittir: 600.000 × %24 × 5/12 = **60.000 ₺**. Kayıt: 181 Gelir Tahakkukları (borç) / 642 Faiz Gelirleri (alacak). Kalan 84.000 ₺ 2026'nın geliridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 657 / 122; VUK md. 281"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 181, 642"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "finmuh-dsi-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bu dönemde peşin ödenen ancak gelecek aylara/döneme ait olan giderler, dönem sonunda Tekdüzen Hesap Planı'nda hangi hesaba aktarılır?",
+    "stem": "İşletmenin değerleme gününden 120 gün sonra tahsil edilecek 103.000 ₺ nominal değerli bir alacak senedi vardır. Reeskont hesaplamasında yıllık %9 faiz, 360 gün ve iç iskonto yöntemi kullanılacaktır. Buna göre dönem sonu kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler (ve/veya 280 Gelecek Yıllara Ait Giderler)",
-      "B": "380 Gelecek Aylara Ait Gelirler (ve/veya 480 Gelecek Yıllara Ait Gelirler)",
-      "C": "381 Gider Tahakkukları (ve/veya 481 Uzun Vadeli Gider Tahakkukları) hesabı",
-      "D": "600 Yurt İçi Satışlar (ve/veya 601 Yurt Dışı Satışlar) hasılat hesabı",
-      "E": "320 Satıcılar (ve/veya 321 Borç Senetleri) ticari borç hesabı"
+      "A": "122 Alacak Senetleri Reeskontu hesabı 3.000 ₺ alacaklandırılır",
+      "B": "122 Alacak Senetleri Reeskontu hesabı 3.000 ₺ borçlandırılır",
+      "C": "121 Alacak Senetleri hesabı 3.000 ₺ alacaklandırılır",
+      "D": "122 Alacak Senetleri Reeskontu hesabı 3.090 ₺ alacaklandırılır",
+      "E": "647 Reeskont Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır"
     },
     "answer": "A",
-    "solution": "Peşin ödenip gelecek dönem(ler)e ait olan giderler, dönemsellik gereği **180 Gelecek Aylara Ait Giderler** (bir yıldan uzun kısım 280 Gelecek Yıllara Ait Giderler) hesabına aktarılır; ait olduğu dönemde gidere dönüşür.",
+    "solution": "İç iskonto: 103.000 × 0,03 / 1,03 = **3.000 ₺** (dış iskonto 3.090 ₺ olurdu). Alacak senedi reeskontu alacağı azaltır ve gider doğurur: 657 Reeskont Faiz Giderleri (borç) / 122 Alacak Senetleri Reeskontu (alacak). 121 hesabı nominal değerle kalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 180 / 280; dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK m. 281; THP 122, 657"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "finmuh-dsi-gen-0015",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bu dönemde peşin tahsil edilen ancak gelecek aylara/döneme ait olan gelirler, dönem sonunda Tekdüzen Hesap Planı'nda hangi hesaba aktarılır?",
+    "stem": "İşletme önceki dönemde 80.000 ₺ şüpheli alacağı için 80.000 ₺ karşılık ayırmıştır. Bu dönemde dava sonuçlanmış, alacağın 50.000 ₺'si banka hesabına tahsil edilmiş, kalanının tahsil edilemeyeceği kesinleşmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler (ve/veya 280 Gelecek Yıllara Ait Giderler)",
-      "B": "380 Gelecek Aylara Ait Gelirler (ve/veya 480 Gelecek Yıllara Ait Gelirler)",
-      "C": "181 Gelir Tahakkukları (ve/veya 281 Uzun Vadeli Gelir Tahakkukları) hesabı",
-      "D": "600 Yurt İçi Satışlar (ve/veya 649 Diğer Olağan Gelir ve Kârlar) hesabı",
-      "E": "120 Alıcılar (ve/veya 121 Alacak Senetleri) ticari alacak hesabı"
+      "A": "128 Şüpheli Ticari Alacaklar hesabı 50.000 ₺ alacaklandırılır",
+      "B": "644 Konusu Kalmayan Karşılıklar hesabı 50.000 ₺ alacaklandırılır",
+      "C": "654 Karşılık Giderleri hesabı 30.000 ₺ borçlandırılır",
+      "D": "644 Konusu Kalmayan Karşılıklar hesabı 80.000 ₺ alacaklandırılır",
+      "E": "129 Şüpheli Ticari Alacaklar Karşılığı hesabı 50.000 ₺ alacaklandırılır"
     },
     "answer": "B",
-    "solution": "Peşin tahsil edilip gelecek dönem(ler)e ait olan gelirler, **380 Gelecek Aylara Ait Gelirler** (bir yıldan uzun kısım 480 Gelecek Yıllara Ait Gelirler) hesabına aktarılır; ait olduğu dönemde gelire dönüşür.",
+    "solution": "Kayıt: 102 (borç) 50.000 + 129 (borç) 80.000 / 128 (alacak) 80.000 + **644 (alacak) 50.000**. Tahsil edilen kısım için ayrılan karşılık konusuz kalır ve gelir yazılır; tahsil edilemeyen 30.000 ₺ için önceden karşılık ayrıldığından yeni gider doğmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 380 / 480; dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK m. 323; THP 128, 129, 644"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "finmuh-dsi-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemini kapsayan 18 aylık sigorta için 180.000 ₺ peşin ödemiştir. Aylık sigorta giderleri eşittir.\n\n31 Aralık 2025 tarihinde bu ödemeye ilişkin hesap bakiyeleri nasıl olmalıdır?",
+    "stem": "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺'dir ve 370 hesabına alınmıştır. Buna göre geçici verginin mahsubundan sonra 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabının kalanı kaç ₺'dir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 170.000 ₺",
-      "B": "180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺",
-      "C": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺",
-      "D": "770 Genel Yönetim Giderleri 20.000 ₺; 180 Gelecek Aylara Ait Giderler 110.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺",
-      "E": "280 Gelecek Yıllara Ait Giderler 180.000 ₺"
+      "A": "230.000 ₺",
+      "B": "380.000 ₺",
+      "C": "80.000 ₺",
+      "D": "150.000 ₺",
+      "E": "Hesap kapanır, kalan vermez"
     },
     "answer": "C",
-    "solution": "Aylık tutar 180.000 / 18 = 10.000 ₺'dir. Aralık ayına düşen 10.000 ₺ giderleşir. Ocak-Aralık 2026'ya ait 120.000 ₺ **180 Gelecek Aylara Ait Giderler**, Ocak-Mayıs 2027'ye ait 50.000 ₺ ise **280 Gelecek Yıllara Ait Giderler** hesabında kalır.",
+    "solution": "Karşılık: 691 (borç) / 370 (alacak) 230.000. Mahsup: 370 (borç) / 193 (alacak) 150.000. 370'in kalanı 230.000 − 150.000 = **80.000 ₺** olup beyanla ödenecek kurumlar vergisini gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 180/280 ve dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 193, 370, 691"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "finmuh-dsi-gen-0017",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Ekim 2025 tarihinde, 1 Ekim 2025-30 Eylül 2027 dönemini kapsayan 24 aylık iş yeri kirasını 240.000 ₺ olarak peşin tahsil etmiştir. Aylık kira tutarları eşittir.\n\n31 Aralık 2025 tarihinde tahsilatın dağılımı nasıl olmalıdır?",
+    "stem": "Danışmanlık hizmeti veren bir işletme Aralık 2025'te tamamladığı bir hizmetin 90.000 ₺ tutarındaki faturasını Ocak 2026'da düzenleyecektir (KDV ihmal). Buna göre 31 Aralık 2025 tarihindeki işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺",
-      "B": "649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 100.000 ₺",
-      "C": "649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 210.000 ₺",
-      "D": "380 Gelecek Aylara Ait Gelirler 150.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺",
-      "E": "649 Diğer Olağan Gelir ve Kârlar 240.000 ₺"
+      "A": "381 Gider Tahakkukları hesabı 90.000 ₺ alacaklandırılır",
+      "B": "600 Yurt İçi Satışlar hesabı 90.000 ₺ alacaklandırılır",
+      "C": "181 Gelir Tahakkukları hesabı 90.000 ₺ borçlandırılır",
+      "D": "Gelir 2025 yılı gelir tablosunda yer alır",
+      "E": "Fatura düzenlendiğinde 181 alacaklandırılarak kapatılır"
     },
     "answer": "A",
-    "solution": "Aylık kira 10.000 ₺'dir. Ekim-Aralık 2025 için 30.000 ₺ gelir oluşur. İzleyen on iki aya ait 120.000 ₺ **380**, Ocak-Eylül 2027'ye ait 90.000 ₺ ise **480** hesapta izlenir.",
+    "solution": "Hizmet 2025'te tamamlandığı için gelir 2025'e aittir: **181 Gelir Tahakkukları (borç) / 600 Yurt İçi Satışlar (alacak) 90.000**. 381 gider tahakkuklarıdır; burada kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 181, 600"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "finmuh-dsi-gen-0018",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda gelir ve gider hesaplarının (6 grubu) kapatılarak dönem sonucunun belirlenmesi için bu hesaplar hangi hesaba devredilir?",
+    "stem": "Aşağıdaki ifadelerden hangileri doğrudur?\n\nI. 690 Dönem Kârı veya Zararı bir bilanço hesabıdır.\n\nII. 591 Dönem Net Zararı bilançoda özkaynaklarda eksi olarak gösterilir.\n\nIII. Nedeni bulunamayan sayım noksanı 197 hesabında izlenerek bilançoda aktifte gösterilir.",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı",
-      "B": "590 Dönem Net Kârı",
-      "C": "500 Sermaye",
-      "D": "136 Diğer Çeşitli Alacaklar",
-      "E": "320 Satıcılar"
+      "A": "Yalnız II",
+      "B": "I ve III",
+      "C": "II ve III",
+      "D": "I ve II",
+      "E": "Yalnız I"
     },
     "answer": "A",
-    "solution": "Dönem sonunda gelir hesapları (borçlandırılarak) ve gider hesapları (alacaklandırılarak) **690 Dönem Kârı veya Zararı** hesabına devredilir; 690'ın kalanı vergi öncesi dönem sonucunu verir.",
+    "solution": "Yalnız II doğrudur. 690 bir sonuç hesabıdır, dönem sonunda kapanır. Nedeni dönem sonuna kadar bulunamayan sayım noksanı 197'den **689 Diğer Olağandışı Gider ve Zararlar**'a aktarılır; bilançoda kalmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-devir; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 690, 591, 197, 689"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "finmuh-dsi-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda gelir hesaplarının alacak toplamı 680.000 ₺, gider ve maliyet hesaplarının borç toplamı 510.000 ₺'dir. Henüz vergi karşılığı hesaplanmamıştır.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına devrinden sonra ortaya çıkan sonuç nedir?",
+    "stem": "31 Aralık 2025 itibarıyla 480 Gelecek Yıllara Ait Gelirler hesabında 200.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına, kalanının 2027 yılına ait olduğu belirlenmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "510.000 ₺ borç kalanı",
-      "B": "680.000 ₺ alacak kalanı",
-      "C": "170.000 ₺ dönem zararı",
-      "D": "170.000 ₺ vergi öncesi dönem kârı",
-      "E": "1.190.000 ₺ vergi öncesi dönem kârı"
+      "A": "480 Gelecek Yıllara Ait Gelirler hesabı 200.000 ₺ borçlandırılır",
+      "B": "649 Diğer Olağan Gelir ve Kârlar hesabı 120.000 ₺ alacaklandırılır",
+      "C": "380 Gelecek Aylara Ait Gelirler hesabı 80.000 ₺ alacaklandırılır",
+      "D": "380 Gelecek Aylara Ait Gelirler hesabı 120.000 ₺ alacaklandırılır",
+      "E": "480 Gelecek Yıllara Ait Gelirler hesabı 120.000 ₺ alacaklandırılır"
     },
     "answer": "D",
-    "solution": "Gelirler 690 hesabın alacağına, gider ve maliyetler borcuna aktarılır. 680.000 − 510.000 = **170.000 ₺ alacak kalanı**, vergi öncesi dönem kârını gösterir.",
+    "solution": "İzleyen yıla ait kısım uzun vadeliden kısa vadeliye aktarılır: 480 (borç) 120.000 / **380 (alacak) 120.000**. 2027'ye ait 80.000 ₺ 480'de kalır; henüz gelir yazılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 6 grubu hesapların 690 hesaba devri"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 380, 480"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "finmuh-dsi-gen-0020",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Mali tablolar düzenlendikten sonra, dönem sonunda bilanço (varlık, borç, özkaynak) hesaplarının karşılıklı olarak kapatılması işlemine ne ad verilir?",
+    "stem": "Dönem içinde 770 Genel Yönetim Giderleri hesabına kaydedilen 260.000 ₺'nin 60.000 ₺'sinin önceki yıla, 120.000 ₺'sinin cari yıla, 80.000 ₺'sinin ise izleyen yıldan sonraki yıla ait olduğu belirlenmiştir. Buna göre dönem sonu düzeltme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Açılış kaydı",
-      "B": "Yansıtma kaydı",
-      "C": "Envanter kaydı",
-      "D": "Tahakkuk kaydı",
-      "E": "Kapanış kaydı"
+      "A": "180 Gelecek Aylara Ait Giderler hesabı 80.000 ₺ borçlandırılır",
+      "B": "580 Geçmiş Yıllar Zararları hesabı 60.000 ₺ borçlandırılır",
+      "C": "280 Gelecek Yıllara Ait Giderler hesabı 140.000 ₺ borçlandırılır",
+      "D": "770 Genel Yönetim Giderleri hesabı 140.000 ₺ borçlandırılır",
+      "E": "681 Önceki Dönem Gider ve Zararları hesabı 60.000 ₺ borçlandırılır"
     },
     "answer": "E",
-    "solution": "Dönem sonunda kalan bilanço hesaplarının (aktifler alacak, pasifler borç yazılarak) karşılıklı kapatılmasına **kapanış kaydı** denir. İzleyen dönem bu değerler açılış kaydıyla yeniden açılır.",
+    "solution": "Kayıt: **681 (borç) 60.000** + 280 (borç) 80.000 / 770 (alacak) 140.000. Önceki döneme ait olup cari dönemde fark edilen gider 681 Önceki Dönem Gider ve Zararları'na, izleyen yıldan sonraki yıla ait kısım 280'e aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - kapanış kaydı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 681, 280, 770"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "finmuh-dsi-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Bir mizanda borç toplamı ile alacak toplamının birbirine eşit olmaması ne anlama gelir?",
+    "stem": "İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemini kapsayan 18 aylık sigorta için 180.000 ₺ peşin ödemiştir. Aylık sigorta giderleri eşittir.\n\n31 Aralık 2025 tarihinde bu ödemeye ilişkin hesap bakiyeleri nasıl olmalıdır?",
     "options": {
-      "A": "İşletmenin ilgili dönemde kâr ettiğini gösterir; borç toplamının fazlası doğrudan dönem kârına eşittir.",
-      "B": "İşletmenin ilgili dönemde zarar ettiğini gösterir; alacak toplamının fazlası doğrudan dönem zararını verir.",
-      "C": "Kayıt, aktarma veya toplama aşamasında bir hata yapıldığını gösterir; eşitlik sağlanana kadar hata aranmalıdır.",
-      "D": "Mizanda borç ve alacak toplamlarının eşit olmaması olağandır; çift taraflı kayıtta böyle bir eşitlik hiç aranmaz.",
-      "E": "Dönem kârının doğru hesaplandığını ve tüm envanter kayıtlarının eksiksiz yapıldığını kesin olarak kanıtlar."
+      "A": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 170.000 ₺",
+      "B": "280 Gelecek Yıllara Ait Giderler 180.000 ₺",
+      "C": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺",
+      "D": "180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺",
+      "E": "770 Genel Yönetim Giderleri 20.000 ₺; 180 Gelecek Aylara Ait Giderler 110.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺"
     },
     "answer": "C",
-    "solution": "Çift taraflı kayıt gereği borç ve alacak toplamları eşit olmalıdır. Eşit değilse **kayıt/aktarma/toplama hatası** vardır; eşitlik sağlanana dek hata aranır. (Eşitlik, her hatanın olmadığını garanti etmez ancak temel bir kontroldür.)",
+    "solution": "Aylık tutar 180.000 / 18 = 10.000 ₺'dir. Aralık ayına düşen 10.000 ₺ giderleşir. Ocak-Aralık 2026'ya ait 120.000 ₺ **180 Gelecek Aylara Ait Giderler**, Ocak-Mayıs 2027'ye ait 50.000 ₺ ise **280 Gelecek Yıllara Ait Giderler** hesabında kalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-denklik; sınav stiline kalibre)",
-      "legislationRef": "Mizan denkliği"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 180/280 ve dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -467,17 +467,17 @@
     "konu": "donem_sonu_islemleri",
     "stem": "İşletme 1 Ekim 2025 tarihinde yıllık iş yeri sigortası için 120.000 ₺ ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir.\n\n31 Aralık 2025 tarihinde yapılacak düzeltme kaydı hangisidir?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler 30.000 ₺ borç / 770 Genel Yönetim Giderleri 30.000 ₺ alacak",
+      "A": "770 Genel Yönetim Giderleri 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak",
       "B": "770 Genel Yönetim Giderleri 30.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 30.000 ₺ alacak",
-      "C": "770 Genel Yönetim Giderleri 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak",
+      "C": "Dönem sonunda herhangi bir düzeltme kaydı yapılmaz.",
       "D": "280 Gelecek Yıllara Ait Giderler 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak",
-      "E": "Dönem sonunda herhangi bir düzeltme kaydı yapılmaz."
+      "E": "180 Gelecek Aylara Ait Giderler 30.000 ₺ borç / 770 Genel Yönetim Giderleri 30.000 ₺ alacak"
     },
     "answer": "B",
     "solution": "Aylık sigorta 10.000 ₺, Ekim-Aralık dönemine düşen tutar 30.000 ₺'dir. Kullanılan kısım **770 Genel Yönetim Giderleri borç / 180 Gelecek Aylara Ait Giderler alacak** kaydıyla giderleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 180/770 ve dönemsellik"
     },
     "validYear": 2026,
@@ -487,20 +487,20 @@
     "id": "finmuh-dsi-gen-0023",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "31 Aralık 2025 tarihinde 280 Gelecek Yıllara Ait Giderler hesabında 300.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına ait olduğu belirlenmiştir.\n\nDönem sonunda yapılması gereken sınıflandırma kaydı hangisidir?",
+    "stem": "Dönem sonunda '600 Yurt İçi Satışlar' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "280 Gelecek Yıllara Ait Giderler 120.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 120.000 ₺ alacak",
-      "B": "770 Genel Yönetim Giderleri 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak",
-      "C": "180 Gelecek Aylara Ait Giderler 300.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 300.000 ₺ alacak",
-      "D": "280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 180.000 ₺ alacak",
-      "E": "180 Gelecek Aylara Ait Giderler 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak"
+      "A": "600 Yurt İçi Satışlar (borç) / 590 Dönem Net Kârı (alacak)",
+      "B": "690 Dönem Kârı veya Zararı (borç) / 600 Yurt İçi Satışlar (alacak)",
+      "C": "600 Yurt İçi Satışlar (borç) / 100 Kasa (alacak)",
+      "D": "690 Dönem Kârı veya Zararı (borç) / 621 Satılan Ticari Mallar Maliyeti (alacak)",
+      "E": "600 Yurt İçi Satışlar (borç) / 690 Dönem Kârı veya Zararı (alacak)"
     },
     "answer": "E",
-    "solution": "İzleyen hesap döneminde giderleşecek 120.000 ₺ artık uzun vadeli değildir. Bu tutar **180 hesaba borç**, uzun vadeli **280 hesaba alacak** kaydedilerek dönen varlıklara aktarılır.",
+    "solution": "Gelir hesabı olan 600 (alacak kalanı verir) kapatılırken **600 Yurt İçi Satışlar (borç)** borçlandırılır; karşılığında **690 Dönem Kârı veya Zararı (alacak)** alacaklandırılır (gelir 690'a taşınır).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 180/280 kısa-uzun vadeli sınıflandırma"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 600 / 690"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "finmuh-dsi-gen-0024",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemine ait 18 aylık depo kirasını 180.000 ₺ peşin tahsil etmiştir.\n\n31 Aralık 2025 tarihli finansal tablolarda bu tutar nasıl sınıflandırılmalıdır?",
+    "stem": "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 240.000 ₺, dönem sonu fiilî stok tutarı 252.000 ₺'dir. Farkın nedeni henüz belirlenememiştir.\n\nİlk envanter kaydı hangisidir?",
     "options": {
-      "A": "649 Diğer Olağan Gelir ve Kârlar 180.000 ₺",
-      "B": "380 Gelecek Aylara Ait Gelirler 170.000 ₺; gelir kaydı yapılmaz",
-      "C": "649 Diğer Olağan Gelir ve Kârlar 10.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺",
-      "D": "649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 110.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺",
-      "E": "380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 60.000 ₺"
+      "A": "153 Ticari Mallar 252.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 252.000 ₺ alacak",
+      "B": "397 Sayım ve Tesellüm Fazlaları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak",
+      "C": "153 Ticari Mallar 12.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 12.000 ₺ alacak",
+      "D": "197 Sayım ve Tesellüm Noksanları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak",
+      "E": "621 Satılan Ticari Mallar Maliyeti 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak"
     },
     "answer": "C",
-    "solution": "Aylık kira 10.000 ₺'dir. Aralık ayına ait 10.000 ₺ gelirleşir; 2026 yılına ait 120.000 ₺ **380**, 2027 yılının ilk beş ayına ait 50.000 ₺ **480** hesapta izlenir.",
+    "solution": "Fiilî stok kayıtlı stoktan 12.000 ₺ fazladır. Nedeni bilinmeyen fazlalıkta stok **153 hesaba borç**, geçici kaynak niteliğindeki **397 Sayım ve Tesellüm Fazlaları** hesabına alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 153/397 stok sayım fazlası; 5 Nisan 2025 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "finmuh-dsi-gen-0025",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda '600 Yurt İçi Satışlar' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin değerleme gününden 90 gün sonra vadesi dolacak 126.000 ₺ nominal değerli alacak senedi vardır. Senette faiz oranı yazılı değildir; yıllık %20 oran ve iç iskonto yöntemi kullanılacaktır.\n\nReeskont tutarı ve dönem sonu kaydı hangisidir?",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı (B) / 600 Yurt İçi Satışlar (A)",
-      "B": "600 Yurt İçi Satışlar (B) / 690 Dönem Kârı veya Zararı (A)",
-      "C": "600 Yurt İçi Satışlar (B) / 100 Kasa (A)",
-      "D": "600 Yurt İçi Satışlar (B) / 590 Dönem Net Kârı (A)",
-      "E": "690 Dönem Kârı veya Zararı (B) / 621 Satılan Ticari Mallar Maliyeti (A)"
+      "A": "6.300 ₺; 657 Reeskont Faiz Giderleri borç / 121 Alacak Senetleri alacak",
+      "B": "6.000 ₺; 657 Reeskont Faiz Giderleri borç / 122 Alacak Senetleri Reeskontu alacak",
+      "C": "6.000 ₺; 122 Alacak Senetleri Reeskontu borç / 647 Reeskont Faiz Gelirleri alacak",
+      "D": "25.200 ₺; 780 Finansman Giderleri borç / 122 Alacak Senetleri Reeskontu alacak",
+      "E": "5.727 ₺; 181 Gelir Tahakkukları borç / 642 Faiz Gelirleri alacak"
     },
     "answer": "B",
-    "solution": "Gelir hesabı olan 600 (alacak kalanı verir) kapatılırken **600 Yurt İçi Satışlar (B)** borçlandırılır; karşılığında **690 Dönem Kârı veya Zararı (A)** alacaklandırılır (gelir 690'a taşınır).",
+    "solution": "İç iskonto formülünde reeskont 126.000 × 20 × 90 / (36.000 + 20 × 90) = **6.000 ₺**'dir. Alacak senedi reeskontu varlığın değerini azaltır; 657 borçlandırılır, 122 alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-devir; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 600 / 690"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK 281 ve 238 Sıra No'lu VUK Genel Tebliği - iç iskonto; 2025 SGS reeskont soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "finmuh-dsi-gen-0026",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda '621 Satılan Ticari Mallar Maliyeti (-)' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin dönem sonunda 150.000 ₺ nominal değerli borç senedinin tasarruf değeri 144.000 ₺ olarak hesaplanmıştır.\n\nDönem sonu reeskont kaydı hangisidir?",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı (B) / 621 Satılan Ticari Mallar Maliyeti (A)",
-      "B": "621 Satılan Ticari Mallar Maliyeti (B) / 690 Dönem Kârı veya Zararı (A)",
-      "C": "621 Satılan Ticari Mallar Maliyeti (B) / 153 Ticari Mallar (A)",
-      "D": "690 Dönem Kârı veya Zararı (B) / 600 Yurt İçi Satışlar (A)",
-      "E": "621 Satılan Ticari Mallar Maliyeti (B) / 600 Yurt İçi Satışlar (A)"
+      "A": "322 Borç Senetleri Reeskontu 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak",
+      "B": "647 Reeskont Faiz Gelirleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak",
+      "C": "321 Borç Senetleri 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak",
+      "D": "657 Reeskont Faiz Giderleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak",
+      "E": "322 Borç Senetleri Reeskontu 150.000 ₺ borç / 321 Borç Senetleri 150.000 ₺ alacak"
     },
     "answer": "A",
-    "solution": "Gider hesabı olan 621 (borç kalanı verir) kapatılırken **690 Dönem Kârı veya Zararı (B)** borçlandırılır; karşılığında **621 Satılan Ticari Mallar Maliyeti (A)** alacaklandırılır (gider 690'a taşınır).",
+    "solution": "Reeskont nominal değer ile tasarruf değeri arasındaki 150.000 − 144.000 = **6.000 ₺** farktır. Borcu azaltan düzenleyici hesap 322 borçlandırılır; reeskont faiz geliri 647 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kayıt-devir; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 621 / 690"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK 285; 1 Sıra No'lu MSUGT - 322/647; 18 Nisan 2026 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "finmuh-dsi-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Kasa hesabının borç kalanı 120.000 ₺ iken yapılan sayımda 116.000 ₺ bulunmuş ve nedeni bilinmeyen fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. Daha sonra noksanlığın kasa sorumlusundan tahsil edileceği kesinleşmiştir.\n\nNeden belirlendiğinde yapılacak kayıt hangisidir?",
+    "stem": "Önceki dönem sonunda borç senetleri için 8.000 ₺ reeskont hesaplanarak 322 Borç Senetleri Reeskontu hesabı borçlandırılmıştır.\n\nYeni dönemin başında yapılacak reeskont iptal kaydı hangisidir?",
     "options": {
-      "A": "135 Personelden Alacaklar 4.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 4.000 ₺ alacak",
-      "B": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 135 Personelden Alacaklar 4.000 ₺ alacak",
-      "C": "689 Diğer Olağandışı Gider ve Zararlar 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak",
-      "D": "100 Kasa 4.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 4.000 ₺ alacak",
-      "E": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak"
+      "A": "657 Reeskont Faiz Giderleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak",
+      "B": "647 Reeskont Faiz Gelirleri 8.000 ₺ borç / 657 Reeskont Faiz Giderleri 8.000 ₺ alacak",
+      "C": "321 Borç Senetleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak",
+      "D": "322 Borç Senetleri Reeskontu 8.000 ₺ borç / 647 Reeskont Faiz Gelirleri 8.000 ₺ alacak",
+      "E": "322 Borç Senetleri Reeskontu 8.000 ₺ borç / 321 Borç Senetleri 8.000 ₺ alacak"
     },
     "answer": "A",
-    "solution": "İlk kayıtta fark 197 hesapta geçici olarak izlenmiştir. Sorumlu kişi belli olduğunda işletmenin personelden alacağı doğar; **135 Personelden Alacaklar borçlandırılır, 197 hesap kapatılır**.",
+    "solution": "Önceki dönem sonunda 322 borç / 647 alacak kaydıyla ayrılan borç senedi reeskontu yeni dönemde ters çevrilir. **657 Reeskont Faiz Giderleri borçlandırılır, 322 hesap alacaklandırılarak kapatılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 100/197/135 sayım noksanlığı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 322/647 ve yeni dönem reeskont iptali"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "finmuh-dsi-gen-0028",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 240.000 ₺, dönem sonu fiilî stok tutarı 252.000 ₺'dir. Farkın nedeni henüz belirlenememiştir.\n\nİlk envanter kaydı hangisidir?",
+    "stem": "Gelir ve gider hesaplarının devrinden sonra 690 Dönem Kârı veya Zararı hesabı 200.000 ₺ alacak kalanı vermiştir. Dönem kârına ilişkin vergi ve diğer yasal yükümlülük karşılığı 40.000 ₺'dir.\n\n690 ve 691 hesapların 692 Dönem Net Kârı veya Zararı hesabına devri hangisidir?",
     "options": {
-      "A": "397 Sayım ve Tesellüm Fazlaları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak",
-      "B": "621 Satılan Ticari Mallar Maliyeti 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak",
-      "C": "197 Sayım ve Tesellüm Noksanları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak",
-      "D": "153 Ticari Mallar 12.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 12.000 ₺ alacak",
-      "E": "153 Ticari Mallar 252.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 252.000 ₺ alacak"
+      "A": "690 Dönem Kârı veya Zararı 160.000 ₺ borç ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak",
+      "B": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ borç / 690 Dönem Kârı veya Zararı 200.000 ₺ alacak",
+      "C": "692 Dönem Net Kârı veya Zararı 200.000 ₺ borç / 690 Dönem Kârı veya Zararı 160.000 ₺ ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ alacak",
+      "D": "690 Dönem Kârı veya Zararı 200.000 ₺ borç / 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ alacak",
+      "E": "690 Dönem Kârı veya Zararı 200.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak; 691 hesap devredilmez."
     },
     "answer": "D",
-    "solution": "Fiilî stok kayıtlı stoktan 12.000 ₺ fazladır. Nedeni bilinmeyen fazlalıkta stok **153 hesaba borç**, geçici kaynak niteliğindeki **397 Sayım ve Tesellüm Fazlaları** hesabına alacak kaydedilir.",
+    "solution": "Vergi öncesi 200.000 ₺ kârdan 40.000 ₺ karşılık düşülünce net kâr 160.000 ₺'dir. 690 hesap borçlandırılarak kapatılır; gider niteliğindeki 691 hesap 40.000 ₺ ve net sonucu gösteren 692 hesap 160.000 ₺ alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 153/397 stok sayım fazlası; 5 Nisan 2025 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 690/691/692 dönem sonucu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "finmuh-dsi-gen-0029",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Genel geçici mizan, muhasebe sürecinde ne zaman düzenlenir?",
+    "stem": "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 150.000 ₺, dönem sonu fiilî stok tutarı 172.000 ₺ olarak belirlenmiştir. Farkın nedeni araştırılacaktır.\n\nYapılacak ilk kayıt hangisidir?",
     "options": {
-      "A": "Envanter düzeltme işlemleri bitirilip kesin mizan çıkarıldıktan sonra yapılır.",
-      "B": "Mali tablolar düzenlenip dönem sonucu belirlendikten sonra düzenlenir.",
-      "C": "Kapanış kaydı yapılıp bütün bilanço hesapları kapatıldıktan sonra düzenlenir.",
-      "D": "Dönem başında açılış kaydından hemen önce, hiç işlem kaydedilmeden düzenlenir.",
-      "E": "Dönem içi işlemler kaydedildikten sonra, envanter işlemlerinden önce"
+      "A": "153 Ticari Mallar 172.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 172.000 ₺ alacak",
+      "B": "621 Satılan Ticari Mallar Maliyeti 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak",
+      "C": "197 Sayım ve Tesellüm Noksanları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak",
+      "D": "397 Sayım ve Tesellüm Fazlaları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak",
+      "E": "153 Ticari Mallar 22.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 22.000 ₺ alacak"
     },
     "answer": "E",
-    "solution": "**Genel geçici mizan**, dönem içi işlemler kaydedildikten sonra, **envanter (düzeltme) işlemlerinden önce** düzenlenir. Envanter sonrası düzenlenen ise kesin mizandır.",
+    "solution": "Fiilî stok kayıtlı stoktan 172.000 − 150.000 = **22.000 ₺ fazladır**. Stok 153 hesaba borç kaydedilir; nedeni bulunana kadar fark 397 Sayım ve Tesellüm Fazlaları hesabında izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-süreç; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - genel geçici mizan"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 153/397; 5 Nisan 2025 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "finmuh-dsi-gen-0030",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Maliyet bedeli 240.000 ₺, kalıntı değeri 24.000 ₺ ve yararlı ömrü 6 yıl olan bir makine için doğrusal amortisman yöntemi kullanılmaktadır. Makine yılın başından beri kullanımdadır.\n\nDönem sonu yıllık amortisman tutarı kaç ₺'dir?",
+    "stem": "İşletmenin 31 Aralık tarihli 102 Bankalar hesabı bakiyesi 130.000 ₺, banka ekstresi bakiyesi 126.000 ₺'dir. Farkın, bankanın hesaptan kestiği ve henüz kayda alınmamış 4.000 ₺ komisyon olduğu belirlenmiştir.\n\nDüzeltme kaydı hangisidir?",
     "options": {
-      "A": "32.000",
-      "B": "36.000",
-      "C": "40.000",
-      "D": "44.000",
-      "E": "54.000"
+      "A": "102 Bankalar 4.000 ₺ borç / 780 Finansman Giderleri 4.000 ₺ alacak",
+      "B": "780 Finansman Giderleri 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
+      "C": "102 Bankalar 126.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 126.000 ₺ alacak",
+      "D": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
+      "E": "656 Kambiyo Zararları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak"
     },
     "answer": "B",
-    "solution": "Amortismana tabi tutar maliyet bedelinden kalıntı değerin çıkarılmasıyla 240.000 − 24.000 = 216.000 ₺'dir. Yıllık amortisman 216.000 / 6 = **36.000 ₺** olur.",
+    "solution": "Banka komisyonu işletmenin finansman gideridir ve banka varlığını azaltır. Bu nedenle **780 Finansman Giderleri borçlandırılır, 102 Bankalar alacaklandırılır**; kayıtlı bakiye 126.000 ₺'ye iner.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar, par. 50-53"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 102/780 banka mutabakatı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "finmuh-dsi-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Kalıntı değeri bulunmayan 500.000 ₺ maliyetli bir makinenin yararlı ömrü 5 yıldır. İşletme azalan bakiyeler yönteminde normal oranın iki katını kullanmakta; kalan yıllara göre doğrusal tutar daha yüksek olduğunda doğrusal yönteme geçmektedir.\n\nİlk üç yıl azalan bakiyelerle amortisman ayrıldığına göre dördüncü yıl amortismanı kaç ₺'dir?",
+    "stem": "Dönem sonunda 380 Gelecek Aylara Ait Gelirler hesabında 120.000 ₺ bulunmaktadır. İncelemede bu tutarın 50.000 ₺'lik kısmına ilişkin hizmetin cari dönemde tamamlandığı belirlenmiştir.\n\nYapılacak düzeltme kaydı hangisidir?",
     "options": {
-      "A": "40.000",
-      "B": "43.200",
-      "C": "50.000",
-      "D": "64.800",
-      "E": "54.000"
+      "A": "181 Gelir Tahakkukları 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak",
+      "B": "380 Gelecek Aylara Ait Gelirler 70.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 70.000 ₺ alacak",
+      "C": "102 Bankalar 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak",
+      "D": "649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak",
+      "E": "380 Gelecek Aylara Ait Gelirler 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak"
     },
     "answer": "E",
-    "solution": "Oran %40'tır. İlk üç yıl amortismanları 200.000, 120.000 ve 72.000 ₺; üçüncü yıl sonu net değer 108.000 ₺'dir. Dördüncü yılda azalan tutar 43.200 ₺ iken kalan iki yıla göre doğrusal tutar 108.000 / 2 = **54.000 ₺** olduğundan geçiş yapılır.",
+    "solution": "Peşin tahsil edildiği için 380 hesapta bekleyen tutarın hizmeti tamamlanan 50.000 ₺'lik kısmı artık gelirdir. **380 hesap borçlandırılarak azaltılır, 649 hesap alacaklandırılarak gelir kaydedilir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "VUK mükerrer 315 - azalan bakiyeler; 2025 SGS yöntem değiştirme soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 380/649 ve dönemsellik; 5 Nisan 2025 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "finmuh-dsi-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Stoklarını aralıklı envanter yöntemiyle izleyen işletmede dönem sonunda 153 Ticari Mallar hesabının borç toplamı 720.000 ₺, alacak toplamı 70.000 ₺ ve fiilî stok tutarı 250.000 ₺'dir. Fire bulunmamaktadır.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
+    "stem": "İşletmenin Aralık 2025'te tükettiği elektriğin faturası Ocak 2026'da gelecektir. Tüketim tutarı 18.000 ₺ olup %60'ı üretim, %40'ı yönetim bölümüne aittir (7/A seçeneği, KDV ihmal). Buna göre 31 Aralık 2025 tarihinde yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "250.000",
-      "B": "330.000",
-      "C": "400.000",
-      "D": "470.000",
-      "E": "650.000"
+      "A": "730 Genel Üretim Giderleri hesabı 18.000 ₺ borçlandırılır",
+      "B": "381 Gider Tahakkukları hesabı 18.000 ₺ borçlandırılır",
+      "C": "381 Gider Tahakkukları hesabı 18.000 ₺ alacaklandırılır",
+      "D": "181 Gelir Tahakkukları hesabı 18.000 ₺ borçlandırılır",
+      "E": "770 Genel Yönetim Giderleri hesabı 10.800 ₺ borçlandırılır"
     },
     "answer": "C",
-    "solution": "Satılabilir malların net maliyeti 720.000 − 70.000 = 650.000 ₺'dir. Dönem sonu stok düşüldüğünde satılan ticari malların maliyeti 650.000 − 250.000 = **400.000 ₺** olur.",
+    "solution": "Ait olduğu dönemde gerçekleşen ancak henüz ödenmeyen gider tahakkuk ettirilir: 730 (borç) 10.800 + 770 (borç) 7.200 / **381 Gider Tahakkukları (alacak) 18.000**. Fatura geldiğinde 381 borçlandırılarak kapatılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 153/621; 22 Kasım 2025 SGS aralıklı envanter soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 381, 730, 770"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "finmuh-dsi-gen-0033",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Ekim 2025 tarihinde bankaya yıllık %18 faizli 800.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir.\n\n31 Aralık 2025 tarihinde yapılacak faiz tahakkuk kaydı hangisidir?",
+    "stem": "1 Ağustos 2025'te yıllık %24 faizle bir yıl vadeli yatırılan 600.000 ₺ için 31 Aralık 2025'te 60.000 ₺ faiz tahakkuku kaydedilmiştir. 1 Ağustos 2026'da vade dolmuş ve toplam 144.000 ₺ faiz banka hesabına aktarılmıştır (stopaj ihmal). Buna göre faiz tahsil kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "102 Bankalar 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak",
-      "B": "181 Gelir Tahakkukları 144.000 ₺ borç / 642 Faiz Gelirleri 144.000 ₺ alacak",
-      "C": "642 Faiz Gelirleri 36.000 ₺ borç / 181 Gelir Tahakkukları 36.000 ₺ alacak",
-      "D": "181 Gelir Tahakkukları 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak",
-      "E": "180 Gelecek Aylara Ait Giderler 36.000 ₺ borç / 102 Bankalar 36.000 ₺ alacak"
+      "A": "642 Faiz Gelirleri hesabı 144.000 ₺ alacaklandırılır",
+      "B": "642 Faiz Gelirleri hesabı 60.000 ₺ alacaklandırılır",
+      "C": "181 Gelir Tahakkukları hesabı 144.000 ₺ alacaklandırılır",
+      "D": "181 Gelir Tahakkukları hesabı 60.000 ₺ alacaklandırılır",
+      "E": "181 Gelir Tahakkukları hesabı 60.000 ₺ borçlandırılır"
     },
     "answer": "D",
-    "solution": "Üç aylık faiz 800.000 × %18 × 3/12 = **36.000 ₺**'dir. Henüz tahsil edilmediği için 181 Gelir Tahakkukları borçlandırılır; döneme ait faiz geliri 642 hesaba alacak kaydedilir.",
+    "solution": "Kayıt: 102 (borç) 144.000 / **181 (alacak) 60.000** + 642 (alacak) 84.000. 2025'e ait faiz tahakkukla gelir yazıldığı için tahsilde 181 kapatılır; 642'ye yalnız 2026'ya ait 7 aylık faiz yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 181/642 gelir tahakkuku"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 102, 181, 642"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "finmuh-dsi-gen-0034",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Ekim 2025 tarihinde 12 aylık danışmanlık hizmeti almış; toplam 240.000 ₺ bedelin hizmet süresi sonunda ödenmesi kararlaştırılmıştır. Aylık hizmet tutarları eşittir.\n\n31 Aralık 2025 tarihinde yapılacak tahakkuk kaydı hangisidir?",
+    "stem": "İşletme önceki dönem sonunda alacak senetleri için 12.000 ₺ reeskont ayırmış ve 122 Alacak Senetleri Reeskontu hesabını alacaklandırmıştır. Yeni dönemin başında bu reeskontun iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler 60.000 ₺ borç / 320 Satıcılar 60.000 ₺ alacak",
-      "B": "770 Genel Yönetim Giderleri 60.000 ₺ borç / 381 Gider Tahakkukları 60.000 ₺ alacak",
-      "C": "381 Gider Tahakkukları 60.000 ₺ borç / 770 Genel Yönetim Giderleri 60.000 ₺ alacak",
-      "D": "770 Genel Yönetim Giderleri 240.000 ₺ borç / 381 Gider Tahakkukları 240.000 ₺ alacak",
-      "E": "280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 481 Gider Tahakkukları 180.000 ₺ alacak"
+      "A": "657 (borç) 12.000 / 122 (alacak) 12.000",
+      "B": "122 (borç) 12.000 / 657 (alacak) 12.000",
+      "C": "122 (borç) 12.000 / 647 (alacak) 12.000",
+      "D": "122 (borç) 12.000 / 121 (alacak) 12.000",
+      "E": "121 (borç) 12.000 / 122 (alacak) 12.000"
     },
     "answer": "B",
-    "solution": "Ekim-Aralık döneminde üç aylık hizmet alınmıştır: 240.000 / 12 × 3 = **60.000 ₺**. Döneme ait gider 770 hesaba borç; henüz ödenmeyen tutar 381 Gider Tahakkukları hesabına alacak kaydedilir.",
+    "solution": "Önceki dönem ayrılan reeskont yeni dönemin başında **ters kayıtla** kapatılır: 122 borçlandırılır, önceki kayıttaki gider hesabı 657 alacaklandırılır. Böylece faiz, senedin tahsil edildiği dönemde doğru tutarla sonuçlara yansır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 770/381 gider tahakkuku"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 122, 657"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "finmuh-dsi-gen-0035",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem kârı üzerinden hesaplanan vergi karşılığının, dönem net kârının belirlenmesi amacıyla 690'dan düşülmesinde kullanılan sonuç hesabı Tekdüzen Hesap Planı'nda hangisidir?",
+    "stem": "Dönem sonunda yapılan incelemede deposundaki 250.000 ₺ tutarındaki ticari mallardan 60.000 ₺'lik kısmın modası geçtiği için %45 oranında değer kaybettiği tespit edilmiş ve bu oranda karşılık ayrılmasına karar verilmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları",
-      "B": "692 Dönem Net Kârı veya Zararı",
-      "C": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)",
-      "D": "360 Ödenecek Vergi ve Fonlar",
-      "E": "590 Dönem Net Kârı"
+      "A": "158 Stok Değer Düşüklüğü Karşılığı hesabı 112.500 ₺ alacaklandırılır",
+      "B": "158 Stok Değer Düşüklüğü Karşılığı hesabı 60.000 ₺ alacaklandırılır",
+      "C": "158 Stok Değer Düşüklüğü Karşılığı hesabı 27.000 ₺ alacaklandırılır",
+      "D": "153 Ticari Mallar hesabı 27.000 ₺ alacaklandırılır",
+      "E": "654 Karşılık Giderleri hesabı 27.000 ₺ alacaklandırılır"
     },
     "answer": "C",
-    "solution": "Vergi karşılığı sonuç hesabı olarak **691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları (-)**'da izlenir; 690'dan düşülünce 692 Dönem Net Kârı belirlenir. (Karşılık bilançoda 370'te izlenir.)",
+    "solution": "Karşılık yalnız değer kaybeden kısım için ayrılır: 60.000 × %45 = 27.000 ₺. Kayıt: 654 Karşılık Giderleri (borç) / **158 Stok Değer Düşüklüğü Karşılığı (alacak) 27.000**. Stok hesabı maliyetle kalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690 / 691 / 692"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT; THP 158, 654"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "finmuh-dsi-gen-0036",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda '692 Dönem Net Kârı veya Zararı' hesabında belirlenen net kâr, bilançoya aktarılırken hangi hesaba devredilir?",
+    "stem": "Bir işletmenin dönem sonu mizanında sonuç hesaplarının kalanları şöyledir: 600 Yurt İçi Satışlar 900.000 ₺, 610 Satıştan İadeler 40.000 ₺, 621 Satılan Ticari Mallar Maliyeti 520.000 ₺, 760 Pazarlama Satış ve Dağıtım Giderleri 60.000 ₺, 770 Genel Yönetim Giderleri 90.000 ₺, 642 Faiz Gelirleri 15.000 ₺ ve 780 Finansman Giderleri 25.000 ₺. Buna göre sonuç hesapları devredildikten sonra 690 Dönem Kârı veya Zararı hesabının kalanı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "590 Dönem Net Kârı",
-      "B": "690 Dönem Kârı veya Zararı",
-      "C": "570 Geçmiş Yıllar Kârları",
-      "D": "500 Sermaye",
-      "E": "600 Yurt İçi Satışlar"
+      "A": "180.000 ₺ alacak kalanı",
+      "B": "180.000 ₺ borç kalanı",
+      "C": "165.000 ₺ alacak kalanı",
+      "D": "205.000 ₺ alacak kalanı",
+      "E": "220.000 ₺ alacak kalanı"
     },
     "answer": "A",
-    "solution": "692 Dönem Net Kârı, dönem sonunda bilançodaki özkaynaklar içinde yer alan **590 Dönem Net Kârı** hesabına devredilir (692 (B) / 590 (A)).",
+    "solution": "Kâr = 900.000 − 40.000 − 520.000 − 60.000 − 90.000 + 15.000 − 25.000 = **180.000 ₺**. Gelirler 690'ın alacağına, gider ve indirim hesapları borcuna devredildiğinden kâr **alacak kalanı** olarak görünür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-aktarım; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 692 / 590"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 6 grubu; 690"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "finmuh-dsi-gen-0037",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletmenin değerleme gününden 90 gün sonra vadesi dolacak 126.000 ₺ nominal değerli alacak senedi vardır. Senette faiz oranı yazılı değildir; yıllık %20 oran ve iç iskonto yöntemi kullanılacaktır.\n\nReeskont tutarı ve dönem sonu kaydı hangisidir?",
+    "stem": "İşletmenin 31 Aralık itibarıyla 102 Bankalar hesabının borç kalanı 85.000 ₺, banka hesap özetindeki bakiye 91.600 ₺'dir. İncelemede bankanın işletme adına 7.000 ₺'lik bir alacak senedini tahsil ederek hesaba aktardığı ve 400 ₺ hesap işletim ücreti kestiği, bu işlemlerin işletme kayıtlarına henüz yansıtılmadığı anlaşılmıştır. Buna göre düzeltme sonrasında 102 Bankalar hesabının kalanı kaç ₺ olur?",
     "options": {
-      "A": "6.000 ₺; 657 Reeskont Faiz Giderleri borç / 122 Alacak Senetleri Reeskontu alacak",
-      "B": "6.000 ₺; 122 Alacak Senetleri Reeskontu borç / 647 Reeskont Faiz Gelirleri alacak",
-      "C": "6.300 ₺; 657 Reeskont Faiz Giderleri borç / 121 Alacak Senetleri alacak",
-      "D": "5.727 ₺; 181 Gelir Tahakkukları borç / 642 Faiz Gelirleri alacak",
-      "E": "25.200 ₺; 780 Finansman Giderleri borç / 122 Alacak Senetleri Reeskontu alacak"
+      "A": "91.600 ₺",
+      "B": "77.600 ₺",
+      "C": "92.000 ₺",
+      "D": "84.600 ₺",
+      "E": "85.000 ₺"
     },
     "answer": "A",
-    "solution": "İç iskonto formülünde reeskont 126.000 × 20 × 90 / (36.000 + 20 × 90) = **6.000 ₺**'dir. Alacak senedi reeskontu varlığın değerini azaltır; 657 borçlandırılır, 122 alacaklandırılır.",
+    "solution": "Tahsil edilen senet hesabı artırır, işletim ücreti azaltır: 85.000 + 7.000 − 400 = **91.600 ₺**; banka özetiyle mutabık olur. Kayıtlar: 102 (borç) / 121 (alacak) 7.000; 770 (borç) / 102 (alacak) 400.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "VUK 281 ve 238 Sıra No'lu VUK Genel Tebliği - iç iskonto; 2025 SGS reeskont soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 102, 121, 770"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "finmuh-dsi-gen-0038",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletmenin dönem sonunda 150.000 ₺ nominal değerli borç senedinin tasarruf değeri 144.000 ₺ olarak hesaplanmıştır.\n\nDönem sonu reeskont kaydı hangisidir?",
+    "stem": "Bir kurumun 690 Dönem Kârı veya Zararı hesabı 400.000 ₺ alacak kalanı vermektedir. Kanunen kabul edilmeyen giderler 40.000 ₺ olup kurumlar vergisi oranının %25 olduğu varsayılmaktadır (istisna ve indirim yoktur). Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "657 Reeskont Faiz Giderleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak",
-      "B": "321 Borç Senetleri 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak",
-      "C": "322 Borç Senetleri Reeskontu 150.000 ₺ borç / 321 Borç Senetleri 150.000 ₺ alacak",
-      "D": "647 Reeskont Faiz Gelirleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak",
-      "E": "322 Borç Senetleri Reeskontu 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak"
+      "A": "692'nin alacak kalanı 290.000 ₺ olur",
+      "B": "Vergi karşılığı 110.000 ₺'dir",
+      "C": "691 hesabı 692'ye devredilerek kapatılır",
+      "D": "Vergi matrahı 440.000 ₺'dir",
+      "E": "Net kâr 300.000 ₺ olarak 590'a aktarılır"
     },
     "answer": "E",
-    "solution": "Reeskont nominal değer ile tasarruf değeri arasındaki 150.000 − 144.000 = **6.000 ₺** farktır. Borcu azaltan düzenleyici hesap 322 borçlandırılır; reeskont faiz geliri 647 hesaba alacak kaydedilir.",
+    "solution": "Matrah 400.000 + 40.000 = 440.000 ₺; vergi × %25 = 110.000 ₺. Kanunen kabul edilmeyen giderler ticari kârdan zaten düşülmüştür; net kâr 400.000 − 110.000 = **290.000 ₺** olur ve 692 aracılığıyla 590'a aktarılır. 300.000 ₺ yanlış olarak yalnız ticari kâr üzerinden vergi hesaplanarak bulunur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "VUK 285; 1 Sıra No'lu MSUGT - 322/647; 18 Nisan 2026 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 690, 691, 692, 590; KVK m. 11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "finmuh-dsi-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda gelir ve gider hesaplarının 690'a devredilmesinin sonucu ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Dönem sonunda sonuç hesaplarının kapatılması işlemleri yapılmaktadır. Buna göre aşağıdaki hesaplardan hangisi dönem sonunda 690 Dönem Kârı veya Zararı hesabına devredilmez?",
     "options": {
-      "A": "Dönem sonunda 6 grubu (gelir tablosu) hesapları kapatılmaz; bakiyeleriyle birlikte bir sonraki döneme aynen devrederek kullanılır.",
-      "B": "Dönem sonunda 690'a hiçbir devir yapılmaz; gelir, gider ve bilanço hesaplarının tamamı bakiyeleriyle izleyen döneme aktarılır.",
-      "C": "Dönem sonunda bilanço hesapları 690'a devredilerek kapatılır; buna karşılık gelir tablosu hesapları izleyen döneme devreder.",
-      "D": "6 grubu (gelir tablosu) hesapları kapatılır (bakiyeleri sıfırlanır); yalnızca bilanço hesapları izleyen döneme devreder.",
-      "E": "Dönem sonunda gelir ve gider hesapları içinde yalnızca 100 Kasa hesabı 690'a devredilerek kapatılır; kalan tüm hesaplar açık bırakılır."
+      "A": "770 Genel Yönetim Giderleri",
+      "B": "642 Faiz Gelirleri",
+      "C": "621 Satılan Ticari Mallar Maliyeti",
+      "D": "257 Birikmiş Amortismanlar",
+      "E": "600 Yurt İçi Satışlar"
     },
     "answer": "D",
-    "solution": "Sonuç hesapları (6 grubu) dönem sonunda 690'a devredilerek **kapatılır** (bakiyeleri sıfırlanır). İzleyen döneme yalnızca **bilanço hesapları** (varlık, borç, özkaynak) devreder; bu nedenle her dönemin sonucu ayrı belirlenir.",
+    "solution": "690'a yalnız **6 grubu** sonuç hesapları (gelir, gider, indirim ve maliyet) devredilir. 257 Birikmiş Amortismanlar aktifi düzenleyen bir bilanço hesabıdır; kalanıyla yeni döneme devreder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci - sonuç hesaplarının kapatılması"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 690"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "finmuh-dsi-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Kasa sayımında kayıtlı tutardan 6.000 ₺ daha az nakit bulunmuş ve fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. İncelemede farkın, peşin alınan büro malzemesinin kayda geçirilmemesinden kaynaklandığı belirlenmiştir. Malzeme dönem içinde tamamen tüketilmiştir.\n\nNeden belirlendiğinde yapılacak düzeltme kaydı hangisidir?",
+    "stem": "31 Aralık 2025 itibarıyla 180 Gelecek Aylara Ait Giderler hesabında 60.000 ₺ bulunmaktadır. İncelemede bu tutarın 20.000 ₺'lik kısmının 2025 yılına ait yönetim gideri olduğu, 40.000 ₺'lik kısmının ise 2027 yılına ait olduğu belirlenmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "100 Kasa 6.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 6.000 ₺ alacak",
-      "B": "197 Sayım ve Tesellüm Noksanları 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak",
-      "C": "180 Gelecek Aylara Ait Giderler 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak",
-      "D": "770 Genel Yönetim Giderleri 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak",
-      "E": "689 Diğer Olağandışı Gider ve Zararlar 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak"
+      "A": "180 Gelecek Aylara Ait Giderler hesabı 40.000 ₺ borçlandırılır",
+      "B": "770 Genel Yönetim Giderleri hesabı 60.000 ₺ borçlandırılır",
+      "C": "180 Gelecek Aylara Ait Giderler hesabı 20.000 ₺ borçlandırılır",
+      "D": "280 Gelecek Yıllara Ait Giderler hesabı 40.000 ₺ borçlandırılır",
+      "E": "280 Gelecek Yıllara Ait Giderler hesabı 60.000 ₺ borçlandırılır"
     },
     "answer": "D",
-    "solution": "Noksanlığın nedeni kaydedilmemiş ve tüketilmiş büro malzemesidir. Gider **770 hesaba borç** yazılır; farkı geçici olarak taşıyan **197 hesap alacaklandırılarak kapatılır**. Kasa daha önce ilk sayım kaydında düzeltilmiştir.",
+    "solution": "Kayıt: 770 (borç) 20.000 + **280 (borç) 40.000** / 180 (alacak) 60.000. Cari yıla ait kısım gider yazılır; izleyen yıldan sonraki yıla ait kısım uzun vadeli 280'e aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 100/197/770 sayım farkının çözümü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 180, 280, 770"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "finmuh-dsi-gen-0041",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Muhasebe sürecinde aşağıdaki adımların doğru sıralaması hangisidir?\n\nI. Envanter (düzeltme) işlemleri\n\nII. Genel geçici mizan\n\nIII. Kesin mizan",
+    "stem": "İşletme 1 Ekim 2025 tarihinde, 1 Ekim 2025-30 Eylül 2027 dönemini kapsayan 24 aylık iş yeri kirasını 240.000 ₺ olarak peşin tahsil etmiştir. Aylık kira tutarları eşittir.\n\n31 Aralık 2025 tarihinde tahsilatın dağılımı nasıl olmalıdır?",
     "options": {
-      "A": "I → II → III",
-      "B": "II → I → III",
-      "C": "III → II → I",
-      "D": "I → III → II",
-      "E": "III → I → II"
+      "A": "649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 210.000 ₺",
+      "B": "649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺",
+      "C": "649 Diğer Olağan Gelir ve Kârlar 240.000 ₺",
+      "D": "380 Gelecek Aylara Ait Gelirler 150.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺",
+      "E": "649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 100.000 ₺"
     },
     "answer": "B",
-    "solution": "Doğru sıra: **II Genel geçici mizan → I Envanter (düzeltme) işlemleri → III Kesin mizan**. Genel geçici mizan envanter öncesi, kesin mizan envanter sonrası düzenlenir.",
+    "solution": "Aylık kira 10.000 ₺'dir. Ekim-Aralık 2025 için 30.000 ₺ gelir oluşur. İzleyen on iki aya ait 120.000 ₺ **380**, Ocak-Eylül 2027'ye ait 90.000 ₺ ise **480** hesapta izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III sıralama; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "finmuh-dsi-gen-0042",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme, maliyeti 100.000 ₺ olan hisse senetleri için önceki dönemde 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Hisse senetlerinin tamamı cari dönemde 90.000 ₺'ye banka aracılığıyla satılmıştır.\n\nSatış kaydı hangisidir?",
+    "stem": "31 Aralık 2025 tarihinde 280 Gelecek Yıllara Ait Giderler hesabında 300.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına ait olduğu belirlenmiştir.\n\nDönem sonunda yapılması gereken sınıflandırma kaydı hangisidir?",
     "options": {
-      "A": "102 Bankalar 90.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak",
-      "B": "102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak",
-      "C": "102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ ve 644 Konusu Kalmayan Karşılıklar 10.000 ₺ alacak",
-      "D": "102 Bankalar 90.000 ₺ ve 110 Hisse Senetleri 100.000 ₺ borç / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 645 Menkul Kıymet Satış Kârları 170.000 ₺ alacak",
-      "E": "119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 30.000 ₺ alacak"
+      "A": "280 Gelecek Yıllara Ait Giderler 120.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 120.000 ₺ alacak",
+      "B": "280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 180.000 ₺ alacak",
+      "C": "180 Gelecek Aylara Ait Giderler 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak",
+      "D": "180 Gelecek Aylara Ait Giderler 300.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 300.000 ₺ alacak",
+      "E": "770 Genel Yönetim Giderleri 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak"
     },
     "answer": "C",
-    "solution": "Satışta 90.000 ₺ banka ve ayrılmış 20.000 ₺ karşılık borçlandırılır; 100.000 ₺ maliyetli hisse senetleri çıkarılır. Borç toplamının maliyeti aşan 10.000 ₺ kısmı **644 Konusu Kalmayan Karşılıklar** hesabına alacak kaydedilir.",
+    "solution": "İzleyen hesap döneminde giderleşecek 120.000 ₺ artık uzun vadeli değildir. Bu tutar **180 hesaba borç**, uzun vadeli **280 hesaba alacak** kaydedilerek dönen varlıklara aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 102/110/119/644; 18 Temmuz 2026 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 180/280 kısa-uzun vadeli sınıflandırma"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "finmuh-dsi-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Maliyet bedeli 500.000 ₺, birikmiş amortismanı 300.000 ₺ olan sigortalı bir makine yangında tamamen kullanılamaz hâle gelmiştir. Sigorta şirketinden 150.000 ₺ tazminat alınacağı kesinleşmiş, henüz tahsilat yapılmamıştır. Yenileme yapılmayacaktır.\n\nVarlığın kayıtlardan çıkarılmasında oluşan zarar kaç ₺'dir?",
+    "stem": "Dönem sonunda '621 Satılan Ticari Mallar Maliyeti (-)' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "50.000",
-      "B": "150.000",
-      "C": "200.000",
-      "D": "300.000",
-      "E": "350.000"
+      "A": "690 Dönem Kârı veya Zararı (borç) / 621 Satılan Ticari Mallar Maliyeti (alacak)",
+      "B": "621 Satılan Ticari Mallar Maliyeti (borç) / 153 Ticari Mallar (alacak)",
+      "C": "690 Dönem Kârı veya Zararı (borç) / 600 Yurt İçi Satışlar (alacak)",
+      "D": "621 Satılan Ticari Mallar Maliyeti (borç) / 600 Yurt İçi Satışlar (alacak)",
+      "E": "621 Satılan Ticari Mallar Maliyeti (borç) / 690 Dönem Kârı veya Zararı (alacak)"
     },
     "answer": "A",
-    "solution": "Makinenin net defter değeri 500.000 − 300.000 = 200.000 ₺'dir. Kesinleşen 150.000 ₺ sigorta tazminatı düşüldüğünde **50.000 ₺ zarar** oluşur. Kayıtta 136 ve 257 borçlandırılır; 253 alacaklandırılır, fark zarar hesabına yazılır.",
+    "solution": "Gider hesabı olan 621 (borç kalanı verir) kapatılırken **690 Dönem Kârı veya Zararı (borç)** borçlandırılır; karşılığında **621 Satılan Ticari Mallar Maliyeti (alacak)** alacaklandırılır (gider 690'a taşınır).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - duran varlığın kayıttan çıkarılması ve sigorta tazminatı; 2025 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 621 / 690"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "finmuh-dsi-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Önceki dönem sonunda borç senetleri için 8.000 ₺ reeskont hesaplanarak 322 Borç Senetleri Reeskontu hesabı borçlandırılmıştır.\n\nYeni dönemin başında yapılacak reeskont iptal kaydı hangisidir?",
+    "stem": "Stoklarını aralıklı envanter yöntemiyle izleyen işletmede dönem sonunda 153 Ticari Mallar hesabının borç toplamı 720.000 ₺, alacak toplamı 70.000 ₺ ve fiilî stok tutarı 250.000 ₺'dir. Fire bulunmamaktadır.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "322 Borç Senetleri Reeskontu 8.000 ₺ borç / 647 Reeskont Faiz Gelirleri 8.000 ₺ alacak",
-      "B": "657 Reeskont Faiz Giderleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak",
-      "C": "321 Borç Senetleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak",
-      "D": "322 Borç Senetleri Reeskontu 8.000 ₺ borç / 321 Borç Senetleri 8.000 ₺ alacak",
-      "E": "647 Reeskont Faiz Gelirleri 8.000 ₺ borç / 657 Reeskont Faiz Giderleri 8.000 ₺ alacak"
+      "A": "250.000",
+      "B": "400.000",
+      "C": "470.000",
+      "D": "650.000",
+      "E": "330.000"
     },
     "answer": "B",
-    "solution": "Önceki dönem sonunda 322 borç / 647 alacak kaydıyla ayrılan borç senedi reeskontu yeni dönemde ters çevrilir. **657 Reeskont Faiz Giderleri borçlandırılır, 322 hesap alacaklandırılarak kapatılır**.",
+    "solution": "Satılabilir malların net maliyeti 720.000 − 70.000 = 650.000 ₺'dir. Dönem sonu stok düşüldüğünde satılan ticari malların maliyeti 650.000 − 250.000 = **400.000 ₺** olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 322/647 ve yeni dönem reeskont iptali"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 153/621; 22 Kasım 2025 SGS aralıklı envanter soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "finmuh-dsi-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Gelir hesaplarının alacak toplamı 700.000 ₺, gider ve maliyet hesaplarının borç toplamı 520.000 ₺'dir. Tüm gelir ve gider hesapları 690 Dönem Kârı veya Zararı hesabına devredilmiştir.\n\nDevir işlemleri sonunda 690 hesabın durumu nedir?",
+    "stem": "İşletme 1 Ekim 2025 tarihinde bankaya yıllık %18 faizli 800.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir.\n\n31 Aralık 2025 tarihinde yapılacak faiz tahakkuk kaydı hangisidir?",
     "options": {
-      "A": "520.000 ₺ borç kalanı verir.",
-      "B": "700.000 ₺ alacak kalanı verir.",
-      "C": "180.000 ₺ borç kalanı verir.",
-      "D": "1.220.000 ₺ alacak kalanı verir.",
-      "E": "180.000 ₺ alacak kalanı verir."
+      "A": "180 Gelecek Aylara Ait Giderler 36.000 ₺ borç / 102 Bankalar 36.000 ₺ alacak",
+      "B": "181 Gelir Tahakkukları 144.000 ₺ borç / 642 Faiz Gelirleri 144.000 ₺ alacak",
+      "C": "642 Faiz Gelirleri 36.000 ₺ borç / 181 Gelir Tahakkukları 36.000 ₺ alacak",
+      "D": "102 Bankalar 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak",
+      "E": "181 Gelir Tahakkukları 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak"
     },
     "answer": "E",
-    "solution": "Gelirler 690 hesabın alacağına 700.000 ₺, gider ve maliyetler borcuna 520.000 ₺ aktarılır. Aradaki **180.000 ₺ alacak kalanı** vergi öncesi dönem kârıdır.",
+    "solution": "Üç aylık faiz 800.000 × %18 × 3/12 = **36.000 ₺**'dir. Henüz tahsil edilmediği için 181 Gelir Tahakkukları borçlandırılır; döneme ait faiz geliri 642 hesaba alacak kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690 Dönem Kârı veya Zararı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181/642 gelir tahakkuku"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "finmuh-dsi-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem içinde tüketildiği belirlenen kırtasiye, 770 Genel Yönetim Giderleri hesabına aktarılır.\n\nII. Henüz tahsil edilmemiş kira geliri 380 Gelecek Aylara Ait Gelirler hesabında izlenir.\n\nIII. Nedeni bilinmeyen kasa fazlası 397 Sayım ve Tesellüm Fazlaları hesabına alınır.\n\nIV. Borç senedi reeskontunda 322 Borç Senetleri Reeskontu hesabı borçlandırılır.",
+    "stem": "Kasa sayımında kayıtlı tutardan 6.000 ₺ daha az nakit bulunmuş ve fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. İncelemede farkın, peşin alınan büro malzemesinin kayda geçirilmemesinden kaynaklandığı belirlenmiştir. Malzeme dönem içinde tamamen tüketilmiştir.\n\nNeden belirlendiğinde yapılacak düzeltme kaydı hangisidir?",
     "options": {
-      "A": "I ve II",
-      "B": "II ve III",
-      "C": "I, II ve IV",
-      "D": "I, III ve IV",
-      "E": "I, II, III ve IV"
+      "A": "180 Gelecek Aylara Ait Giderler 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak",
+      "B": "689 Diğer Olağandışı Gider ve Zararlar 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak",
+      "C": "197 Sayım ve Tesellüm Noksanları 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak",
+      "D": "770 Genel Yönetim Giderleri 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak",
+      "E": "100 Kasa 6.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 6.000 ₺ alacak"
     },
     "answer": "D",
-    "solution": "Tüketilen kırtasiye giderleşir; nedeni bilinmeyen kasa fazlası 397 hesapta izlenir; borç senedi reeskontunda 322 hesap borçlandırılır. Tahakkuk etmiş fakat tahsil edilmemiş kira geliri ise 181 Gelir Tahakkukları hesabına alınır; 380 peşin tahsil edilmiş gelecek dönem gelirleri içindir.",
+    "solution": "Noksanlığın nedeni kaydedilmemiş ve tüketilmiş büro malzemesidir. Gider **770 hesaba borç** yazılır; farkı geçici olarak taşıyan **197 hesap alacaklandırılarak kapatılır**. Kasa daha önce ilk sayım kaydında düzeltilmiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 180/770, 181, 397 ve 322"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 100/197/770 sayım farkının çözümü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "finmuh-dsi-gen-0047",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Muhasebe dışı envanter ile muhasebe içi envanter arasındaki ilişki ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Gelir hesaplarının alacak toplamı 700.000 ₺, gider ve maliyet hesaplarının borç toplamı 520.000 ₺'dir. Tüm gelir ve gider hesapları 690 Dönem Kârı veya Zararı hesabına devredilmiştir.\n\nDevir işlemleri sonunda 690 hesabın durumu nedir?",
     "options": {
-      "A": "Muhasebe dışı envanter ile muhasebe içi envanter birbirinden tümüyle bağımsız işlemlerdir; sonuçları hiçbir aşamada karşılaştırılmaz ve aralarındaki fark için düzeltme kaydı yapılmaz.",
-      "B": "Muhasebe dışı ve muhasebe içi envanterin ikisi de yalnızca gelir tablosunun düzenlenmesinden ibarettir; varlık ve borçların sayım ve değerlemesini kapsamaz.",
-      "C": "Önce muhasebe içi envanterle kayıtlı durum belirlenir, sonra fiilî sayım yapılır; ancak fiilî sayım sonuçları hiç dikkate alınmaz ve kayıtlar değiştirilmez.",
-      "D": "Önce muhasebe dışı envanterle (fiilî sayım/değerleme) gerçek durum tespit edilir; sonra muhasebe içi envanterle (düzeltme kayıtları) bu durum kayıtlara yansıtılır.",
-      "E": "Muhasebe dışı ve muhasebe içi envanterin ikisi de ancak kapanış kaydı yapıldıktan sonra gerçekleştirilir; dönem içinde bunlara hiç başvurulmaz."
+      "A": "1.220.000 ₺ alacak kalanı verir.",
+      "B": "520.000 ₺ borç kalanı verir.",
+      "C": "180.000 ₺ borç kalanı verir.",
+      "D": "180.000 ₺ alacak kalanı verir.",
+      "E": "700.000 ₺ alacak kalanı verir."
     },
     "answer": "D",
-    "solution": "Önce **muhasebe dışı envanter** (fiilî sayım, ölçüm, değerleme) ile gerçek durum tespit edilir; sonra **muhasebe içi envanter** (düzeltme kayıtları) ile bu gerçek durum kayıtlara yansıtılır. İki envanter arasındaki fark düzeltilir.",
+    "solution": "Gelirler 690 hesabın alacağına 700.000 ₺, gider ve maliyetler borcuna 520.000 ₺ aktarılır. Aradaki **180.000 ₺ alacak kalanı** vergi öncesi dönem kârıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-ilişki; sınav stiline kalibre)",
-      "legislationRef": "VUK md. 186; muhasebe süreci"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 690 Dönem Kârı veya Zararı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1039,17 +1039,17 @@
     "konu": "donem_sonu_islemleri",
     "stem": "İşletme 1 Temmuz 2025 tarihinde 30 aylık sigorta için 300.000 ₺ peşin ödemiştir. Aylık sigorta tutarları eşittir.\n\n31 Aralık 2025 tarihinde giderleştirilmemiş tutarın kısa ve uzun vadeli dağılımı nedir?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler 240.000 ₺; uzun vadeli tutar yoktur.",
-      "B": "180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 180.000 ₺",
+      "A": "280 Gelecek Yıllara Ait Giderler 240.000 ₺; kısa vadeli tutar yoktur.",
+      "B": "180 Gelecek Aylara Ait Giderler 240.000 ₺; uzun vadeli tutar yoktur.",
       "C": "180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺",
       "D": "180 Gelecek Aylara Ait Giderler 180.000 ₺; 280 Gelecek Yıllara Ait Giderler 60.000 ₺",
-      "E": "280 Gelecek Yıllara Ait Giderler 240.000 ₺; kısa vadeli tutar yoktur."
+      "E": "180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 180.000 ₺"
     },
     "answer": "C",
     "solution": "Aylık tutar 10.000 ₺'dir. Temmuz-Aralık için 60.000 ₺ giderleşir ve 24 aylık 240.000 ₺ kalır. İzleyen on iki aya ait **120.000 ₺ 180**, daha sonraki on iki aya ait **120.000 ₺ 280** hesapta izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "1 Sıra No'lu MSUGT - 180/280 kısa-uzun vadeli ayrımı"
     },
     "validYear": 2026,
@@ -1059,20 +1059,20 @@
     "id": "finmuh-dsi-gen-0049",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Gelir ve gider hesaplarının devrinden sonra 690 Dönem Kârı veya Zararı hesabı 200.000 ₺ alacak kalanı vermiştir. Dönem kârına ilişkin vergi ve diğer yasal yükümlülük karşılığı 40.000 ₺'dir.\n\n690 ve 691 hesapların 692 Dönem Net Kârı veya Zararı hesabına devri hangisidir?",
+    "stem": "İşletme aralık ayında tamamladığı aracılık hizmetine ilişkin 48.000 ₺ komisyonu ocak ayında faturalandırıp tahsil edecektir.\n\n31 Aralık tarihinde yapılacak kayıt hangisidir?",
     "options": {
-      "A": "690 Dönem Kârı veya Zararı 200.000 ₺ borç / 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ alacak",
-      "B": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ borç / 690 Dönem Kârı veya Zararı 200.000 ₺ alacak",
-      "C": "690 Dönem Kârı veya Zararı 160.000 ₺ borç ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak",
-      "D": "692 Dönem Net Kârı veya Zararı 200.000 ₺ borç / 690 Dönem Kârı veya Zararı 160.000 ₺ ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ alacak",
-      "E": "690 Dönem Kârı veya Zararı 200.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak; 691 hesap devredilmez."
+      "A": "181 Gelir Tahakkukları 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak",
+      "B": "649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ borç / 181 Gelir Tahakkukları 48.000 ₺ alacak",
+      "C": "380 Gelecek Aylara Ait Gelirler 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak",
+      "D": "120 Alıcılar 48.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 48.000 ₺ alacak",
+      "E": "102 Bankalar 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak"
     },
     "answer": "A",
-    "solution": "Vergi öncesi 200.000 ₺ kârdan 40.000 ₺ karşılık düşülünce net kâr 160.000 ₺'dir. 690 hesap borçlandırılarak kapatılır; gider niteliğindeki 691 hesap 40.000 ₺ ve net sonucu gösteren 692 hesap 160.000 ₺ alacaklandırılır.",
+    "solution": "Hizmet cari dönemde tamamlandığı için 48.000 ₺ gelir bu döneme aittir. Henüz fatura ve tahsilat bulunmadığından tutar **181 Gelir Tahakkukları borç / 649 Diğer Olağan Gelir ve Kârlar alacak** kaydıyla muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 690/691/692 dönem sonucu"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "1 Sıra No'lu MSUGT - 181/649 ve dönemsellik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "finmuh-dsi-gen-0050",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda varlık hesapları toplam 220.000 ₺ borç, yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak kalanı vermektedir.\n\nBilanço hesaplarının kapanış kaydı hangisidir?",
+    "stem": "İşletmenin 20.000 $ tutarındaki ticari borcu işlem tarihinde 1 $ = 32 ₺ kuru üzerinden 640.000 ₺ olarak kaydedilmiştir. Dönem sonu değerleme kuru 1 $ = 34 ₺'dir. Borç henüz ödenmemiştir.\n\nDönem sonu değerleme kaydı hangisidir?",
     "options": {
-      "A": "Varlık hesapları 220.000 ₺ borç / yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak",
-      "B": "Varlık hesapları 220.000 ₺ ve yabancı kaynak hesapları 140.000 ₺ borç / özkaynak hesapları 360.000 ₺ alacak",
-      "C": "Özkaynak hesapları 80.000 ₺ borç / varlık hesapları 80.000 ₺ alacak",
-      "D": "Yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ borç / varlık hesapları 220.000 ₺ alacak",
-      "E": "Varlık hesapları 220.000 ₺ borç ve özkaynak hesapları 80.000 ₺ borç / yabancı kaynak hesapları 300.000 ₺ alacak"
+      "A": "320 Satıcılar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak",
+      "B": "656 Kambiyo Zararları 680.000 ₺ borç / 320 Satıcılar 680.000 ₺ alacak",
+      "C": "102 Bankalar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak",
+      "D": "656 Kambiyo Zararları 40.000 ₺ borç / 320 Satıcılar 40.000 ₺ alacak",
+      "E": "320 Satıcılar 40.000 ₺ borç / 656 Kambiyo Zararları 40.000 ₺ alacak"
     },
     "answer": "D",
-    "solution": "Kapanışta kalanlar ters taraflarına yazılarak sıfırlanır. Alacak kalanlı yabancı kaynak ve özkaynak hesapları toplam **220.000 ₺ borçlandırılır**; borç kalanlı varlık hesapları **220.000 ₺ alacaklandırılır**.",
+    "solution": "Borcun dönem sonu değeri 20.000 × 34 = 680.000 ₺, kayıtlı değeri 640.000 ₺'dir. Borç 40.000 ₺ arttığı için **656 Kambiyo Zararları borç**, **320 Satıcılar alacak** kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "Muhasebe süreci - bilanço hesaplarının kapanış kaydı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK 280; 1 Sıra No'lu MSUGT - yabancı para borç değerlemesi; 2025 SGS soru örüntüsü"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "finmuh-dsi-gen-0051",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 150.000 ₺, dönem sonu fiilî stok tutarı 172.000 ₺ olarak belirlenmiştir. Farkın nedeni araştırılacaktır.\n\nYapılacak ilk kayıt hangisidir?",
+    "stem": "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Amortisman, karşılık ve reeskont hesaplamaları dönem sonu envanter işlemidir.\n\nII. Peşin ödenen giderlerin gelecek döneme ait kısmı 180 Gelecek Aylara Ait Giderler'e aktarılır.\n\nIII. Gelir ve gider hesapları dönem sonunda doğrudan 590 Dönem Net Kârı hesabına devredilerek kapatılır.",
     "options": {
-      "A": "397 Sayım ve Tesellüm Fazlaları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak",
-      "B": "153 Ticari Mallar 22.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 22.000 ₺ alacak",
-      "C": "197 Sayım ve Tesellüm Noksanları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak",
-      "D": "153 Ticari Mallar 172.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 172.000 ₺ alacak",
-      "E": "621 Satılan Ticari Mallar Maliyeti 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak"
+      "A": "I ve III",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "I, II ve III",
+      "E": "II ve III"
     },
     "answer": "B",
-    "solution": "Fiilî stok kayıtlı stoktan 172.000 − 150.000 = **22.000 ₺ fazladır**. Stok 153 hesaba borç kaydedilir; nedeni bulunana kadar fark 397 Sayım ve Tesellüm Fazlaları hesabında izlenir.",
+    "solution": "**III yanlıştır:** Gelir ve gider (6xx sonuç) hesapları dönem sonunda önce **690 Dönem Kârı veya Zararı** hesabına devredilir; 590'a doğrudan aktarılmaz (690 → 691/692 → 590 sırası izlenir). **I** amortisman/karşılık/reeskont envanter işlemidir; **II** peşin giderin gelecek döneme ait kısmı 180'e aktarılır. Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 153/397; 5 Nisan 2025 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönem sonu işlemleri; 1 Sıra No'lu MSUGT"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "finmuh-dsi-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme aralık ayında tamamladığı aracılık hizmetine ilişkin 48.000 ₺ komisyonu ocak ayında faturalandırıp tahsil edecektir.\n\n31 Aralık tarihinde yapılacak kayıt hangisidir?",
+    "stem": "İşletme 1 Kasım 2025'te kiraya verdiği depo için 24 aylık kira bedeli olan 480.000 ₺'yi peşin tahsil etmiş ve tamamını 649 Diğer Olağan Gelir ve Kârlar hesabına kaydetmiştir. Buna göre 31 Aralık 2025 tarihindeki düzeltme kaydında aşağıdakilerden hangisi yer almaz?",
     "options": {
-      "A": "102 Bankalar 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak",
-      "B": "380 Gelecek Aylara Ait Gelirler 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak",
-      "C": "181 Gelir Tahakkukları 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak",
-      "D": "649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ borç / 181 Gelir Tahakkukları 48.000 ₺ alacak",
-      "E": "120 Alıcılar 48.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 48.000 ₺ alacak"
+      "A": "2025 yılı kira geliri 40.000 ₺ olarak kalır",
+      "B": "380 Gelecek Aylara Ait Gelirler hesabı 240.000 ₺ alacaklandırılır",
+      "C": "181 Gelir Tahakkukları hesabı 440.000 ₺ borçlandırılır",
+      "D": "480 Gelecek Yıllara Ait Gelirler hesabı 200.000 ₺ alacaklandırılır",
+      "E": "649 Diğer Olağan Gelir ve Kârlar hesabı 440.000 ₺ borçlandırılır"
     },
     "answer": "C",
-    "solution": "Hizmet cari dönemde tamamlandığı için 48.000 ₺ gelir bu döneme aittir. Henüz fatura ve tahsilat bulunmadığından tutar **181 Gelir Tahakkukları borç / 649 Diğer Olağan Gelir ve Kârlar alacak** kaydıyla muhasebeleştirilir.",
+    "solution": "Aylık kira 20.000 ₺; 2025'e 2 ay, 2026'ya 12 ay, 2027'ye 10 ay düşer. Düzeltme: 649 (borç) 440.000 / 380 (alacak) 240.000 + 480 (alacak) 200.000. 181 henüz tahsil edilmemiş gelirler içindir; peşin tahsilatta kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 181/649 ve dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 380, 480, 649"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "finmuh-dsi-gen-0053",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda üretim makineleri için 40.000 ₺, genel yönetimde kullanılan demirbaşlar için 10.000 ₺ amortisman hesaplanmıştır. İşletme 7/A seçeneğini kullanmaktadır.\n\nAmortisman kaydı hangisidir?",
+    "stem": "İşletmenin değerleme gününden 120 gün sonra ödenecek 105.000 ₺ nominal değerli bir borç senedi vardır. Reeskont hesaplamasında yıllık %15 faiz, 360 gün ve iç iskonto yöntemi kullanılacaktır. Buna göre dönem sonu reeskont tutarı ve kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "730 Genel Üretim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "B": "770 Genel Yönetim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "C": "257 Birikmiş Amortismanlar 50.000 ₺ borç / 730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ alacak",
-      "D": "720 Direkt İşçilik Giderleri 40.000 ₺ ve 760 Pazarlama, Satış ve Dağıtım Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "E": "730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak"
+      "A": "5.250 ₺; 657 borç / 322 alacak",
+      "B": "5.250 ₺; 322 borç / 647 alacak",
+      "C": "5.000 ₺; 647 borç / 322 alacak",
+      "D": "5.000 ₺; 657 borç / 322 alacak",
+      "E": "5.000 ₺; 322 borç / 647 alacak"
     },
     "answer": "E",
-    "solution": "Üretim makinelerinin amortismanı **730 hesaba 40.000 ₺**, yönetim demirbaşının amortismanı **770 hesaba 10.000 ₺ borç** yazılır. Toplam 50.000 ₺ birikmiş amortisman 257 hesaba alacak kaydedilir.",
+    "solution": "İç iskonto: 105.000 × (0,15 × 120/360) / (1 + 0,15 × 120/360) = 105.000 × 0,05 / 1,05 = **5.000 ₺** (5.250 ₺ dış iskonto sonucudur). Borç senedi reeskontu borcu azaltır ve gelir doğurur: 322 Borç Senetleri Reeskontu (borç) / 647 Reeskont Faiz Gelirleri (alacak).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 730/770/257"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK m. 281, 285; THP 322, 647"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "finmuh-dsi-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda belirlenen dönem net zararı, bilançoda özkaynaklar içinde hangi hesapta gösterilir?",
+    "stem": "İşletme, müşterisinden olan 80.000 ₺ tutarındaki senetsiz alacağı için dönem içinde dava açmıştır. Dönem sonunda alacağın tamamı şüpheli alacağa aktarılmış ve tamamı için karşılık ayrılmıştır. Buna göre yapılan kayıtlarda aşağıdakilerden hangisi yer almaz?",
     "options": {
-      "A": "590 Dönem Net Kârı",
-      "B": "692 Dönem Net Kârı veya Zararı",
-      "C": "690 Dönem Kârı veya Zararı",
-      "D": "580 Geçmiş Yıllar Zararları (-)",
-      "E": "591 Dönem Net Zararı (-)"
+      "A": "128 Şüpheli Ticari Alacaklar hesabı 80.000 ₺ borçlandırılır",
+      "B": "129 Şüpheli Ticari Alacaklar Karşılığı hesabı 80.000 ₺ alacaklandırılır",
+      "C": "654 Karşılık Giderleri hesabı 80.000 ₺ borçlandırılır",
+      "D": "120 Alıcılar hesabı 80.000 ₺ alacaklandırılır",
+      "E": "129 Şüpheli Ticari Alacaklar Karşılığı hesabı 80.000 ₺ borçlandırılır"
     },
     "answer": "E",
-    "solution": "Dönem net zararı, bilançoda özkaynaklar içinde **591 Dönem Net Zararı (-)** hesabında (özkaynağı azaltan negatif kalem) gösterilir. (692'den aktarılır.)",
+    "solution": "Kayıtlar: 128 (borç) / 120 (alacak) 80.000; 654 Karşılık Giderleri (borç) / 129 Şüpheli Ticari Alacaklar Karşılığı (alacak) 80.000. 129 aktifi düzenleyen hesaptır ve karşılık ayrılırken **alacaklandırılır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-hesap; sınav stiline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 591 / 692"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK m. 323; THP 120, 128, 129, 654"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "finmuh-dsi-gen-0055",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletmenin 31 Aralık tarihli 102 Bankalar hesabı bakiyesi 130.000 ₺, banka ekstresi bakiyesi 126.000 ₺'dir. Farkın, bankanın hesaptan kestiği ve henüz kayda alınmamış 4.000 ₺ komisyon olduğu belirlenmiştir.\n\nDüzeltme kaydı hangisidir?",
+    "stem": "Kasa hesabının borç kalanı 42.000 ₺ iken yapılan sayımda kasada 45.000 ₺ bulunmuş ve fark 397 Sayım ve Tesellüm Fazlaları hesabına alınmıştır. Dönem sonunda farkın 2.000 ₺'lik kısmının kaydı unutulan peşin bir hizmet satışına ait olduğu anlaşılmış, kalanın nedeni bulunamamıştır (KDV ihmal). Buna göre 397 hesabının kapatılma kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "780 Finansman Giderleri 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
-      "B": "102 Bankalar 4.000 ₺ borç / 780 Finansman Giderleri 4.000 ₺ alacak",
-      "C": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
-      "D": "102 Bankalar 126.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 126.000 ₺ alacak",
-      "E": "656 Kambiyo Zararları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak"
+      "A": "679 Diğer Olağandışı Gelir ve Kârlar hesabı 1.000 ₺ alacaklandırılır",
+      "B": "600 Yurt İçi Satışlar hesabı 3.000 ₺ alacaklandırılır",
+      "C": "679 Diğer Olağandışı Gelir ve Kârlar hesabı 3.000 ₺ alacaklandırılır",
+      "D": "100 Kasa hesabı 3.000 ₺ borçlandırılır",
+      "E": "397 Sayım ve Tesellüm Fazlaları hesabı 3.000 ₺ alacaklandırılır"
     },
     "answer": "A",
-    "solution": "Banka komisyonu işletmenin finansman gideridir ve banka varlığını azaltır. Bu nedenle **780 Finansman Giderleri borçlandırılır, 102 Bankalar alacaklandırılır**; kayıtlı bakiye 126.000 ₺'ye iner.",
+    "solution": "Kayıt: 397 (borç) 3.000 / 600 (alacak) 2.000 + **679 (alacak) 1.000**. Nedeni anlaşılan kısım ilgili hesaba, nedeni bulunamayan sayım fazlası olağandışı kâra aktarılır. Kasa sayım sırasında zaten düzeltilmiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 102/780 banka mutabakatı"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 100, 397, 600, 679"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "finmuh-dsi-gen-0056",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletmenin 20.000 $ tutarındaki ticari borcu işlem tarihinde 1 $ = 32 ₺ kuru üzerinden 640.000 ₺ olarak kaydedilmiştir. Dönem sonu değerleme kuru 1 $ = 34 ₺'dir. Borç henüz ödenmemiştir.\n\nDönem sonu değerleme kaydı hangisidir?",
+    "stem": "Bir işletmenin muhasebe elemanı dönem sonu kapanış işlemlerini açıklamaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "320 Satıcılar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak",
-      "B": "102 Bankalar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak",
-      "C": "656 Kambiyo Zararları 680.000 ₺ borç / 320 Satıcılar 680.000 ₺ alacak",
-      "D": "656 Kambiyo Zararları 40.000 ₺ borç / 320 Satıcılar 40.000 ₺ alacak",
-      "E": "320 Satıcılar 40.000 ₺ borç / 656 Kambiyo Zararları 40.000 ₺ alacak"
+      "A": "Vergi karşılığı 691 aracılığıyla 692'ye aktarılır",
+      "B": "Gider hesapları 690'ın borcuna devredilir",
+      "C": "Net zarar 591 Dönem Net Zararı'na devredilir",
+      "D": "690 hesabı kalanıyla doğrudan 590'a devredilir",
+      "E": "6 grubu gelir hesapları 690'ın alacağına devredilir"
     },
     "answer": "D",
-    "solution": "Borcun dönem sonu değeri 20.000 × 34 = 680.000 ₺, kayıtlı değeri 640.000 ₺'dir. Borç 40.000 ₺ arttığı için **656 Kambiyo Zararları borç**, **320 Satıcılar alacak** kaydedilir.",
+    "solution": "Gelir ve gider hesapları 690'a devredilir; 690 ve 691 **692 Dönem Net Kârı veya Zararı**'na devredilir. Bilançoya aktarılan 692'dir: net kâr 590'a, net zarar 591'e. 690 doğrudan 590'a devredilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "VUK 280; 1 Sıra No'lu MSUGT - yabancı para borç değerlemesi; 2025 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 690, 691, 692, 590, 591"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "finmuh-dsi-gen-0057",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda 380 Gelecek Aylara Ait Gelirler hesabında 120.000 ₺ bulunmaktadır. İncelemede bu tutarın 50.000 ₺'lik kısmına ilişkin hizmetin cari dönemde tamamlandığı belirlenmiştir.\n\nYapılacak düzeltme kaydı hangisidir?",
+    "stem": "İşletmenin yurt dışındaki müşterisinden 15.000 € tutarında senetsiz alacağı bulunmaktadır. Alacak, satış tarihinde 1 € = 36 ₺ kuruyla kaydedilmiştir. Dönem sonunda değerlemede kullanılacak kur 1 € = 38 ₺'dir. Buna göre değerleme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak",
-      "B": "181 Gelir Tahakkukları 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak",
-      "C": "380 Gelecek Aylara Ait Gelirler 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak",
-      "D": "380 Gelecek Aylara Ait Gelirler 70.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 70.000 ₺ alacak",
-      "E": "102 Bankalar 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak"
+      "A": "120 Alıcılar hesabı 30.000 ₺ alacaklandırılır",
+      "B": "646 Kambiyo Kârları hesabı 570.000 ₺ alacaklandırılır",
+      "C": "646 Kambiyo Kârları hesabı 30.000 ₺ alacaklandırılır",
+      "D": "120 Alıcılar hesabı 570.000 ₺ borçlandırılır",
+      "E": "656 Kambiyo Zararları hesabı 30.000 ₺ borçlandırılır"
     },
     "answer": "C",
-    "solution": "Peşin tahsil edildiği için 380 hesapta bekleyen tutarın hizmeti tamamlanan 50.000 ₺'lik kısmı artık gelirdir. **380 hesap borçlandırılarak azaltılır, 649 hesap alacaklandırılarak gelir kaydedilir**.",
+    "solution": "Alacak 540.000 ₺'den 570.000 ₺'ye yükselir; fark 15.000 × (38 − 36) = 30.000 ₺ kambiyo kârıdır. Kayıt: 120 Alıcılar (borç) / **646 Kambiyo Kârları (alacak) 30.000**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (Dönem Sonu İşlemleri uygulama ve yorum; 2024-2026 sınav diline kalibre)",
-      "legislationRef": "1 Sıra No'lu MSUGT - 380/649 ve dönemsellik; 5 Nisan 2025 SGS soru örüntüsü"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "VUK m. 280; THP 120, 646"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "finmuh-dsi-gen-0058",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Peşin ödenen bir yıllık kira bedelinin, yalnızca cari döneme düşen kısmının gider yazılıp kalanının '180 Gelecek Aylara Ait Giderler'e aktarılması hangi temel muhasebe kavramının gereğidir?",
+    "stem": "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Peşin ödenen giderin izleyen yıldan sonraki yıllara düşen kısmı 280 hesabında izlenir.\n\nII. Dönemde kazanılıp henüz tahsil edilmeyen gelir 381 hesabında izlenir.\n\nIII. Önceki dönem ayrılan reeskontlar yeni dönemin başında ters kayıtla kapatılır.",
     "options": {
-      "A": "İhtiyatlılık kavramı",
-      "B": "Sosyal sorumluluk kavramı",
-      "C": "Parayla ölçülme kavramı",
-      "D": "Dönemsellik kavramı",
-      "E": "Maliyet esası kavramı"
+      "A": "II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "I ve III",
+      "E": "Yalnız III"
     },
     "answer": "D",
-    "solution": "Gelir ve giderin ait olduğu dönemde dikkate alınması **dönemsellik kavramının** gereğidir. Bu nedenle peşin kiranın yalnızca cari döneme düşen kısmı gider yazılır; kalanı 180'de bekletilir.",
+    "solution": "I ve III doğrudur. II yanlıştır: kazanılmış ancak tahsil edilmemiş gelir **181 Gelir Tahakkukları**'nda, ödenmemiş giderler 381 Gider Tahakkukları'nda izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram; sınav stiline kalibre)",
-      "legislationRef": "MSUGT temel kavramlar - dönemsellik"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Dönemsellik; THP 181, 280, 381"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "finmuh-dsi-gen-0059",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Muhasebe sürecinde 'mali tabloların düzenlenmesi' hangi aşamadan sonra yapılır?",
+    "stem": "Kasa hesabının borç kalanı 50.000 ₺ iken yapılan sayımda kasada 46.500 ₺ bulunmuş ve fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. Dönem sonunda farkın 2.000 ₺'lik kısmının bir personele verilen ve kaydedilmeyen avans olduğu anlaşılmış, kalanın nedeni bulunamamıştır. Buna göre 197 hesabının kapatılma kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Dönem başında açılış kaydı yapıldıktan hemen sonra düzenlenir.",
-      "B": "Dönem içi işlemler kaydedilip genel geçici mizandan önce düzenlenir.",
-      "C": "Dönemin ilk işlemi kaydedildikten hemen sonra düzenlenir.",
-      "D": "Kapanış kaydı yapılıp bilanço hesapları kapatıldıktan sonra düzenlenir.",
-      "E": "Envanter işlemleri tamamlanıp kesin mizan düzenlendikten sonra"
+      "A": "197 Sayım ve Tesellüm Noksanları hesabı 3.500 ₺ borçlandırılır",
+      "B": "100 Kasa hesabı 3.500 ₺ alacaklandırılır",
+      "C": "196 Personel Avansları hesabı 3.500 ₺ borçlandırılır",
+      "D": "689 Diğer Olağandışı Gider ve Zararlar hesabı 3.500 ₺ borçlandırılır",
+      "E": "689 Diğer Olağandışı Gider ve Zararlar hesabı 1.500 ₺ borçlandırılır"
     },
     "answer": "E",
-    "solution": "Mali tablolar (bilanço + gelir tablosu), **envanter işlemleri tamamlanıp kesin mizan** düzenlendikten sonra, gerçek ve düzeltilmiş değerlere dayanılarak düzenlenir.",
+    "solution": "Kayıt: 196 Personel Avansları (borç) 2.000 + **689 (borç) 1.500** / 197 (alacak) 3.500. Nedeni anlaşılan kısım ilgili hesaba, nedeni bulunamayan noksan olağandışı gidere aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (kavram-süreç; sınav stiline kalibre)",
-      "legislationRef": "Muhasebe süreci"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "THP 100, 196, 197, 689"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "finmuh-dsi-gen-0060",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Amortisman, karşılık ve reeskont hesaplamaları dönem sonu envanter işlemidir.\n\nII. Peşin ödenen giderlerin gelecek döneme ait kısmı 180 Gelecek Aylara Ait Giderler'e aktarılır.\n\nIII. Gelir ve gider hesapları dönem sonunda doğrudan 590 Dönem Net Kârı hesabına devredilerek kapatılır.",
+    "stem": "Bir işletmede dönem sonu işlemlerinin sırası ve içeriği değerlendirilmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "I, II ve III",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "Yalnız I"
+      "A": "Mali tablolar kesin mizandan sonra düzenlenir",
+      "B": "Envanter işlemleri genel geçici mizandan önce yapılır",
+      "C": "Muhasebe dışı envanterde varlıklar fiilen sayılır",
+      "D": "Amortisman ve reeskont kayıtları envanter işlemleridir",
+      "E": "Envanter kayıtlarından sonra kesin mizan düzenlenir"
     },
     "answer": "B",
-    "solution": "**III yanlıştır:** Gelir ve gider (6xx sonuç) hesapları dönem sonunda önce **690 Dönem Kârı veya Zararı** hesabına devredilir; 590'a doğrudan aktarılmaz (690 → 691/692 → 590 sırası izlenir). **I** amortisman/karşılık/reeskont envanter işlemidir; **II** peşin giderin gelecek döneme ait kısmı 180'e aktarılır. Doğru cevap **I ve II**.",
+    "solution": "Sıra: dönem içi kayıtlar → **genel geçici mizan** → envanter (düzeltme) işlemleri → kesin mizan → mali tablolar → kapanış. Envanter işlemleri genel geçici mizandan sonra yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Finansal Muhasebe (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Dönem sonu işlemleri; 1 Sıra No'lu MSUGT"
+      "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Muhasebe süreci; envanter"
     },
     "validYear": 2026,
     "mockExamId": null

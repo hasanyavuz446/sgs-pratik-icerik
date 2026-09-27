@@ -56,20 +56,6 @@ PATCHES = {
             "solution": "Dönem sonuna kadar üç aylık faiz tahakkuk etmiştir: 600.000 × %18 × 3/12 = **27.000 ₺**.",
         },
     },
-    "content/finansal_muhasebe/donem_sonu_islemleri.json": {
-        "finmuh-dsi-gen-0042": {
-            "stem": "Gelir ve gider hesaplarının devrinden sonra 690 Dönem Kârı veya Zararı hesabı 160.000 ₺ alacak kalanı vermiştir. Bu bakiye neyi gösterir?",
-            "options": {
-                "A": "160.000 ₺ vergi öncesi dönem zararı",
-                "B": "600.000 ₺ brüt satış kârı",
-                "C": "440.000 ₺ faaliyet gideri",
-                "D": "Gelir ve giderlerin birbirine eşit olduğunu",
-                "E": "160.000 ₺ vergi öncesi dönem kârı",
-            },
-            "answer": "E",
-            "solution": "690 Dönem Kârı veya Zararı hesabının alacak kalanı, gelirlerin giderleri aştığını ve **160.000 ₺ vergi öncesi dönem kârı** oluştuğunu gösterir.",
-        },
-    },
     "content/mali_tablolar_analizi/trend_analizi.json": {
         "mta-trend-gen-0038": {
             "stem": "İlgili yılda tutarı 900.000 ₺ ve trend yüzdesi %150 olan bir kalemin baz yıl tutarı kaç ₺'dir?",

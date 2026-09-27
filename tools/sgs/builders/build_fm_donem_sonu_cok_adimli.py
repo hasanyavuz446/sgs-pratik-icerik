@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Donem Sonu Islemleri — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+FM cok adimli tur. Hesaplama/kayit agirlikli 33 soru korundu; 27 surec ezberi (mizan, acilis, 'hangi hesaba aktarilir') ve MDV ile cakisan soru cikarildi. Yerine gercek sinav kalibinda 27 soru: pesin gider/gelirin 180/280/380/480'e bolusturulmesi, gider ve gelir tahakkuklari, mevduat faizi tahakkuku ve tahsili, ic iskontoyla senet reeskontu ve iptali, supheli alacak karsiligi ve tahsil (644), stok deger dusuklugu, nedeni kismen bulunan sayim farklari, gecici vergi mahsubu, kur degerlemesi, banka mutabakati, 690'dan net kara kapanis, onceki doneme ait gider (681). Olumsuz kok %3 -> %15, kor ogrenci %21.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: VUK m. 280-285, 323 · Tekduzen Hesap Plani 18/28/38/48, 12, 15, 19, 39, 6, 69 · 1 Sira No'lu MSUGT
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/finansal_muhasebe/donem_sonu_islemleri.json"
+STYLE_REF = 'SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)'
+ONEK = "finmuh-dsi-gen-"
+
+
+def patch(stem, options, answer, solution, ref='VUK m. 281-285; Tekduzen Hesap Plani'):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": ref},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 3
+    '0001': patch(
+        'Aşağıdakilerden hangisi dönem sonu envanter (düzeltme) işlemlerinden biri değildir?',
+        {
+            'A': 'Dönem içinde peşin mal satışının kaydedilmesi',
+            'B': 'Şüpheli alacaklar için karşılık ayrılması',
+            'C': 'Peşin ödenen/tahsil edilen gelir-giderlerin dönemlere ayrılması',
+            'D': 'Maddi duran varlıklar için amortisman ayrılması',
+            'E': 'Alacak ve borç senetleri için reeskont hesaplanması',
+        },
+        'A',
+        '**Dönem içinde peşin mal satışının kaydedilmesi** bir dönem içi işlemdir, envanter (düzeltme) işlemi değildir. Diğerleri (amortisman, karşılık, reeskont, dönem ayırıcı işlemler) dönem sonu envanter işlemleridir.',
+        'Dönem sonu envanter işlemleri',
+    ),
+    # düzey 2
+    '0002': patch(
+        "Dönem sonunda gelir hesaplarının alacak toplamı 680.000 ₺, gider ve maliyet hesaplarının borç toplamı 510.000 ₺'dir. Henüz vergi karşılığı hesaplanmamıştır.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına devrinden sonra ortaya çıkan sonuç nedir?",
+        {
+            'A': '170.000 ₺ dönem zararı',
+            'B': '510.000 ₺ borç kalanı',
+            'C': '1.190.000 ₺ vergi öncesi dönem kârı',
+            'D': '680.000 ₺ alacak kalanı',
+            'E': '170.000 ₺ vergi öncesi dönem kârı',
+        },
+        'E',
+        'Gelirler 690 hesabın alacağına, gider ve maliyetler borcuna aktarılır. 680.000 − 510.000 = **170.000 ₺ alacak kalanı**, vergi öncesi dönem kârını gösterir.',
+        "1 Sıra No'lu MSUGT - 6 grubu hesapların 690 hesaba devri",
+    ),
+    # düzey 3
+    '0003': patch(
+        'İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemine ait 18 aylık depo kirasını 180.000 ₺ peşin tahsil etmiştir.\n\n31 Aralık 2025 tarihli finansal tablolarda bu tutar nasıl sınıflandırılmalıdır?',
+        {
+            'A': '380 Gelecek Aylara Ait Gelirler 170.000 ₺; gelir kaydı yapılmaz',
+            'B': '649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 110.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺',
+            'C': '649 Diğer Olağan Gelir ve Kârlar 10.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺',
+            'D': '649 Diğer Olağan Gelir ve Kârlar 180.000 ₺',
+            'E': '380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 60.000 ₺',
+        },
+        'C',
+        "Aylık kira 10.000 ₺'dir. Aralık ayına ait 10.000 ₺ gelirleşir; 2026 yılına ait 120.000 ₺ **380**, 2027 yılının ilk beş ayına ait 50.000 ₺ **480** hesapta izlenir.",
+        "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik",
+    ),
+    # düzey 2
+    '0004': patch(
+        'Kasa hesabının borç kalanı 120.000 ₺ iken yapılan sayımda 116.000 ₺ bulunmuş ve nedeni bilinmeyen fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. Daha sonra noksanlığın kasa sorumlusundan tahsil edileceği kesinleşmiştir.\n\nNeden belirlendiğinde yapılacak kayıt hangisidir?',
+        {
+            'A': '689 Diğer Olağandışı Gider ve Zararlar 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak',
+            'B': '197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 135 Personelden Alacaklar 4.000 ₺ alacak',
+            'C': '100 Kasa 4.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 4.000 ₺ alacak',
+            'D': '135 Personelden Alacaklar 4.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 4.000 ₺ alacak',
+            'E': '197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak',
+        },
+        'D',
+        'İlk kayıtta fark 197 hesapta geçici olarak izlenmiştir. Sorumlu kişi belli olduğunda işletmenin personelden alacağı doğar; **135 Personelden Alacaklar borçlandırılır, 197 hesap kapatılır**.',
+        "1 Sıra No'lu MSUGT - 100/197/135 sayım noksanlığı",
+    ),
+    # düzey 2
+    '0005': patch(
+        'İşletme 1 Ekim 2025 tarihinde 12 aylık danışmanlık hizmeti almış; toplam 240.000 ₺ bedelin hizmet süresi sonunda ödenmesi kararlaştırılmıştır. Aylık hizmet tutarları eşittir.\n\n31 Aralık 2025 tarihinde yapılacak tahakkuk kaydı hangisidir?',
+        {
+            'A': '381 Gider Tahakkukları 60.000 ₺ borç / 770 Genel Yönetim Giderleri 60.000 ₺ alacak',
+            'B': '770 Genel Yönetim Giderleri 60.000 ₺ borç / 381 Gider Tahakkukları 60.000 ₺ alacak',
+            'C': '280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 481 Gider Tahakkukları 180.000 ₺ alacak',
+            'D': '180 Gelecek Aylara Ait Giderler 60.000 ₺ borç / 320 Satıcılar 60.000 ₺ alacak',
+            'E': '770 Genel Yönetim Giderleri 240.000 ₺ borç / 381 Gider Tahakkukları 240.000 ₺ alacak',
+        },
+        'B',
+        'Ekim-Aralık döneminde üç aylık hizmet alınmıştır: 240.000 / 12 × 3 = **60.000 ₺**. Döneme ait gider 770 hesaba borç; henüz ödenmeyen tutar 381 Gider Tahakkukları hesabına alacak kaydedilir.',
+        "1 Sıra No'lu MSUGT - 770/381 gider tahakkuku",
+    ),
+    # düzey 3
+    '0006': patch(
+        'Muhasebe sürecinde aşağıdaki adımların doğru sıralaması hangisidir?\n\nI. Envanter (düzeltme) işlemleri\n\nII. Genel geçici mizan\n\nIII. Kesin mizan',
+        {
+            'A': 'III → I → II',
+            'B': 'III → II → I',
+            'C': 'I → II → III',
+            'D': 'II → I → III',
+            'E': 'I → III → II',
+        },
+        'D',
+        'Doğru sıra: **II Genel geçici mizan → I Envanter (düzeltme) işlemleri → III Kesin mizan**. Genel geçici mizan envanter öncesi, kesin mizan envanter sonrası düzenlenir.',
+        'Muhasebe süreci',
+    ),
+    # düzey 2
+    '0007': patch(
+        "İşletme, maliyeti 100.000 ₺ olan hisse senetleri için önceki dönemde 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Hisse senetlerinin tamamı cari dönemde 90.000 ₺'ye banka aracılığıyla satılmıştır.\n\nSatış kaydı hangisidir?",
+        {
+            'A': '102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ ve 644 Konusu Kalmayan Karşılıklar 10.000 ₺ alacak',
+            'B': '102 Bankalar 90.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak',
+            'C': '102 Bankalar 90.000 ₺ ve 110 Hisse Senetleri 100.000 ₺ borç / 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 645 Menkul Kıymet Satış Kârları 170.000 ₺ alacak',
+            'D': '102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak',
+            'E': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 30.000 ₺ alacak',
+        },
+        'A',
+        'Satışta 90.000 ₺ banka ve ayrılmış 20.000 ₺ karşılık borçlandırılır; 100.000 ₺ maliyetli hisse senetleri çıkarılır. Borç toplamının maliyeti aşan 10.000 ₺ kısmı **644 Konusu Kalmayan Karşılıklar** hesabına alacak kaydedilir.',
+        "1 Sıra No'lu MSUGT - 102/110/119/644; 18 Temmuz 2026 SGS soru örüntüsü",
+    ),
+    # düzey 3
+    '0008': patch(
+        'Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem içinde tüketildiği belirlenen kırtasiye, 770 Genel Yönetim Giderleri hesabına aktarılır.\n\nII. Henüz tahsil edilmemiş kira geliri 380 Gelecek Aylara Ait Gelirler hesabında izlenir.\n\nIII. Nedeni bilinmeyen kasa fazlası 397 Sayım ve Tesellüm Fazlaları hesabına alınır.\n\nIV. Borç senedi reeskontunda 322 Borç Senetleri Reeskontu hesabı borçlandırılır.',
+        {
+            'A': 'I ve II',
+            'B': 'I, II, III ve IV',
+            'C': 'II ve III',
+            'D': 'I, II ve IV',
+            'E': 'I, III ve IV',
+        },
+        'E',
+        'Tüketilen kırtasiye giderleşir; nedeni bilinmeyen kasa fazlası 397 hesapta izlenir; borç senedi reeskontunda 322 hesap borçlandırılır. Tahakkuk etmiş fakat tahsil edilmemiş kira geliri ise 181 Gelir Tahakkukları hesabına alınır; 380 peşin tahsil edilmiş gelecek dönem gelirleri içindir.',
+        "1 Sıra No'lu MSUGT - 180/770, 181, 397 ve 322",
+    ),
+    # düzey 2
+    '0009': patch(
+        'Dönem sonunda varlık hesapları toplam 220.000 ₺ borç, yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak kalanı vermektedir.\n\nBilanço hesaplarının kapanış kaydı hangisidir?',
+        {
+            'A': 'Varlık hesapları 220.000 ₺ borç ve özkaynak hesapları 80.000 ₺ borç / yabancı kaynak hesapları 300.000 ₺ alacak',
+            'B': 'Varlık hesapları 220.000 ₺ ve yabancı kaynak hesapları 140.000 ₺ borç / özkaynak hesapları 360.000 ₺ alacak',
+            'C': 'Yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ borç / varlık hesapları 220.000 ₺ alacak',
+            'D': 'Özkaynak hesapları 80.000 ₺ borç / varlık hesapları 80.000 ₺ alacak',
+            'E': 'Varlık hesapları 220.000 ₺ borç / yabancı kaynak hesapları 140.000 ₺ ve özkaynak hesapları 80.000 ₺ alacak',
+        },
+        'C',
+        'Kapanışta kalanlar ters taraflarına yazılarak sıfırlanır. Alacak kalanlı yabancı kaynak ve özkaynak hesapları toplam **220.000 ₺ borçlandırılır**; borç kalanlı varlık hesapları **220.000 ₺ alacaklandırılır**.',
+        'Muhasebe süreci - bilanço hesaplarının kapanış kaydı',
+    ),
+    # düzey 2
+    '0010': patch(
+        'Dönem sonunda üretim makineleri için 40.000 ₺, genel yönetimde kullanılan demirbaşlar için 10.000 ₺ amortisman hesaplanmıştır. İşletme 7/A seçeneğini kullanmaktadır.\n\nAmortisman kaydı hangisidir?',
+        {
+            'A': '720 Direkt İşçilik Giderleri 40.000 ₺ ve 760 Pazarlama, Satış ve Dağıtım Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak',
+            'B': '730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak',
+            'C': '257 Birikmiş Amortismanlar 50.000 ₺ borç / 730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ alacak',
+            'D': '730 Genel Üretim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak',
+            'E': '770 Genel Yönetim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak',
+        },
+        'B',
+        'Üretim makinelerinin amortismanı **730 hesaba 40.000 ₺**, yönetim demirbaşının amortismanı **770 hesaba 10.000 ₺ borç** yazılır. Toplam 50.000 ₺ birikmiş amortisman 257 hesaba alacak kaydedilir.',
+        "1 Sıra No'lu MSUGT - 730/770/257",
+    ),
+    # düzey 2
+    '0011': patch(
+        "Peşin ödenen bir yıllık kira bedelinin, yalnızca cari döneme düşen kısmının gider yazılıp kalanının '180 Gelecek Aylara Ait Giderler'e aktarılması hangi temel muhasebe kavramının gereğidir?",
+        {
+            'A': 'İhtiyatlılık kavramı',
+            'B': 'Maliyet esası kavramı',
+            'C': 'Dönemsellik kavramı',
+            'D': 'Sosyal sorumluluk kavramı',
+            'E': 'Parayla ölçülme kavramı',
+        },
+        'C',
+        "Gelir ve giderin ait olduğu dönemde dikkate alınması **dönemsellik kavramının** gereğidir. Bu nedenle peşin kiranın yalnızca cari döneme düşen kısmı gider yazılır; kalanı 180'de bekletilir.",
+        'MSUGT temel kavramlar - dönemsellik',
+    ),
+    # düzey 3
+    '0012': patch(
+        "İşletme 1 Eylül 2025'te yönetim binası için 18 aylık kira bedeli olarak 216.000 ₺ peşin ödemiş ve tutarın tamamını 770 Genel Yönetim Giderleri hesabına kaydetmiştir. Buna göre 31 Aralık 2025 tarihinde yapılacak düzeltme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '280 Gelecek Yıllara Ait Giderler hesabı 144.000 ₺ borçlandırılır',
+            'B': '180 Gelecek Aylara Ait Giderler hesabı 168.000 ₺ borçlandırılır',
+            'C': '770 Genel Yönetim Giderleri hesabı 48.000 ₺ alacaklandırılır',
+            'D': '180 Gelecek Aylara Ait Giderler hesabı 24.000 ₺ borçlandırılır',
+            'E': '770 Genel Yönetim Giderleri hesabı 168.000 ₺ alacaklandırılır',
+        },
+        'E',
+        "Aylık kira 216.000 / 18 = 12.000 ₺. 2025'e 4 ay (48.000 ₺), 2026'ya 12 ay (144.000 ₺), 2027'ye 2 ay (24.000 ₺) düşer. Düzeltme: 180 (borç) 144.000 + 280 (borç) 24.000 / **770 (alacak) 168.000**. Gider hesabında yalnız 2025'e ait 48.000 ₺ kalır.",
+        'Dönemsellik; THP 180, 280, 770',
+    ),
+    # düzey 3
+    '0013': patch(
+        "İşletme 1 Ağustos 2025'te bankaya bir yıl vadeli, yıllık %24 faizli 600.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir (stopaj ihmal). Buna göre 31 Aralık 2025 tarihinde tahakkuk ettirilecek faiz geliri kaç ₺'dir?",
+        {
+            'A': '84.000 ₺',
+            'B': '144.000 ₺',
+            'C': '48.000 ₺',
+            'D': '60.000 ₺',
+            'E': '72.000 ₺',
+        },
+        'D',
+        "Ağustos-Aralık 5 aylık faiz 2025'e aittir: 600.000 × %24 × 5/12 = **60.000 ₺**. Kayıt: 181 Gelir Tahakkukları (borç) / 642 Faiz Gelirleri (alacak). Kalan 84.000 ₺ 2026'nın geliridir.",
+        'Dönemsellik; THP 181, 642',
+    ),
+    # düzey 3
+    '0014': patch(
+        'İşletmenin değerleme gününden 120 gün sonra tahsil edilecek 103.000 ₺ nominal değerli bir alacak senedi vardır. Reeskont hesaplamasında yıllık %9 faiz, 360 gün ve iç iskonto yöntemi kullanılacaktır. Buna göre dönem sonu kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': '122 Alacak Senetleri Reeskontu hesabı 3.000 ₺ alacaklandırılır',
+            'B': '122 Alacak Senetleri Reeskontu hesabı 3.000 ₺ borçlandırılır',
+            'C': '121 Alacak Senetleri hesabı 3.000 ₺ alacaklandırılır',
+            'D': '122 Alacak Senetleri Reeskontu hesabı 3.090 ₺ alacaklandırılır',
+            'E': '647 Reeskont Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır',
+        },
+        'A',
+        'İç iskonto: 103.000 × 0,03 / 1,03 = **3.000 ₺** (dış iskonto 3.090 ₺ olurdu). Alacak senedi reeskontu alacağı azaltır ve gider doğurur: 657 Reeskont Faiz Giderleri (borç) / 122 Alacak Senetleri Reeskontu (alacak). 121 hesabı nominal değerle kalır.',
+        'VUK m. 281; THP 122, 657',
+    ),
+    # düzey 3
+    '0015': patch(
+        "İşletme önceki dönemde 80.000 ₺ şüpheli alacağı için 80.000 ₺ karşılık ayırmıştır. Bu dönemde dava sonuçlanmış, alacağın 50.000 ₺'si banka hesabına tahsil edilmiş, kalanının tahsil edilemeyeceği kesinleşmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '128 Şüpheli Ticari Alacaklar hesabı 50.000 ₺ alacaklandırılır',
+            'B': '644 Konusu Kalmayan Karşılıklar hesabı 50.000 ₺ alacaklandırılır',
+            'C': '654 Karşılık Giderleri hesabı 30.000 ₺ borçlandırılır',
+            'D': '644 Konusu Kalmayan Karşılıklar hesabı 80.000 ₺ alacaklandırılır',
+            'E': '129 Şüpheli Ticari Alacaklar Karşılığı hesabı 50.000 ₺ alacaklandırılır',
+        },
+        'B',
+        'Kayıt: 102 (borç) 50.000 + 129 (borç) 80.000 / 128 (alacak) 80.000 + **644 (alacak) 50.000**. Tahsil edilen kısım için ayrılan karşılık konusuz kalır ve gelir yazılır; tahsil edilemeyen 30.000 ₺ için önceden karşılık ayrıldığından yeni gider doğmaz.',
+        'VUK m. 323; THP 128, 129, 644',
+    ),
+    # düzey 3
+    '0016': patch(
+        "Bir kurum yıl içinde ödediği 150.000 ₺ geçici vergiyi 193 Peşin Ödenen Vergiler ve Fonlar hesabında izlemektedir. Dönem sonunda dönem kârı üzerinden hesaplanan kurumlar vergisi 230.000 ₺'dir ve 370 hesabına alınmıştır. Buna göre geçici verginin mahsubundan sonra 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabının kalanı kaç ₺'dir?",
+        {
+            'A': '230.000 ₺',
+            'B': '380.000 ₺',
+            'C': '80.000 ₺',
+            'D': '150.000 ₺',
+            'E': 'Hesap kapanır, kalan vermez',
+        },
+        'C',
+        "Karşılık: 691 (borç) / 370 (alacak) 230.000. Mahsup: 370 (borç) / 193 (alacak) 150.000. 370'in kalanı 230.000 − 150.000 = **80.000 ₺** olup beyanla ödenecek kurumlar vergisini gösterir.",
+        'THP 193, 370, 691',
+    ),
+    # düzey 3
+    '0017': patch(
+        "Danışmanlık hizmeti veren bir işletme Aralık 2025'te tamamladığı bir hizmetin 90.000 ₺ tutarındaki faturasını Ocak 2026'da düzenleyecektir (KDV ihmal). Buna göre 31 Aralık 2025 tarihindeki işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': '381 Gider Tahakkukları hesabı 90.000 ₺ alacaklandırılır',
+            'B': '600 Yurt İçi Satışlar hesabı 90.000 ₺ alacaklandırılır',
+            'C': '181 Gelir Tahakkukları hesabı 90.000 ₺ borçlandırılır',
+            'D': 'Gelir 2025 yılı gelir tablosunda yer alır',
+            'E': 'Fatura düzenlendiğinde 181 alacaklandırılarak kapatılır',
+        },
+        'A',
+        "Hizmet 2025'te tamamlandığı için gelir 2025'e aittir: **181 Gelir Tahakkukları (borç) / 600 Yurt İçi Satışlar (alacak) 90.000**. 381 gider tahakkuklarıdır; burada kullanılmaz.",
+        'Dönemsellik; THP 181, 600',
+    ),
+    # düzey 2
+    '0018': patch(
+        'Aşağıdaki ifadelerden hangileri doğrudur?\n\nI. 690 Dönem Kârı veya Zararı bir bilanço hesabıdır.\n\nII. 591 Dönem Net Zararı bilançoda özkaynaklarda eksi olarak gösterilir.\n\nIII. Nedeni bulunamayan sayım noksanı 197 hesabında izlenerek bilançoda aktifte gösterilir.',
+        {
+            'A': 'Yalnız II',
+            'B': 'I ve III',
+            'C': 'II ve III',
+            'D': 'I ve II',
+            'E': 'Yalnız I',
+        },
+        'A',
+        "Yalnız II doğrudur. 690 bir sonuç hesabıdır, dönem sonunda kapanır. Nedeni dönem sonuna kadar bulunamayan sayım noksanı 197'den **689 Diğer Olağandışı Gider ve Zararlar**'a aktarılır; bilançoda kalmaz.",
+        'THP 690, 591, 197, 689',
+    ),
+    # düzey 3
+    '0019': patch(
+        "31 Aralık 2025 itibarıyla 480 Gelecek Yıllara Ait Gelirler hesabında 200.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına, kalanının 2027 yılına ait olduğu belirlenmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '480 Gelecek Yıllara Ait Gelirler hesabı 200.000 ₺ borçlandırılır',
+            'B': '649 Diğer Olağan Gelir ve Kârlar hesabı 120.000 ₺ alacaklandırılır',
+            'C': '380 Gelecek Aylara Ait Gelirler hesabı 80.000 ₺ alacaklandırılır',
+            'D': '380 Gelecek Aylara Ait Gelirler hesabı 120.000 ₺ alacaklandırılır',
+            'E': '480 Gelecek Yıllara Ait Gelirler hesabı 120.000 ₺ alacaklandırılır',
+        },
+        'D',
+        "İzleyen yıla ait kısım uzun vadeliden kısa vadeliye aktarılır: 480 (borç) 120.000 / **380 (alacak) 120.000**. 2027'ye ait 80.000 ₺ 480'de kalır; henüz gelir yazılmaz.",
+        'Dönemsellik; THP 380, 480',
+    ),
+    # düzey 3
+    '0020': patch(
+        "Dönem içinde 770 Genel Yönetim Giderleri hesabına kaydedilen 260.000 ₺'nin 60.000 ₺'sinin önceki yıla, 120.000 ₺'sinin cari yıla, 80.000 ₺'sinin ise izleyen yıldan sonraki yıla ait olduğu belirlenmiştir. Buna göre dönem sonu düzeltme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '180 Gelecek Aylara Ait Giderler hesabı 80.000 ₺ borçlandırılır',
+            'B': '580 Geçmiş Yıllar Zararları hesabı 60.000 ₺ borçlandırılır',
+            'C': '280 Gelecek Yıllara Ait Giderler hesabı 140.000 ₺ borçlandırılır',
+            'D': '770 Genel Yönetim Giderleri hesabı 140.000 ₺ borçlandırılır',
+            'E': '681 Önceki Dönem Gider ve Zararları hesabı 60.000 ₺ borçlandırılır',
+        },
+        'E',
+        "Kayıt: **681 (borç) 60.000** + 280 (borç) 80.000 / 770 (alacak) 140.000. Önceki döneme ait olup cari dönemde fark edilen gider 681 Önceki Dönem Gider ve Zararları'na, izleyen yıldan sonraki yıla ait kısım 280'e aktarılır.",
+        'Dönemsellik; THP 681, 280, 770',
+    ),
+    # düzey 3
+    '0021': patch(
+        'İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemini kapsayan 18 aylık sigorta için 180.000 ₺ peşin ödemiştir. Aylık sigorta giderleri eşittir.\n\n31 Aralık 2025 tarihinde bu ödemeye ilişkin hesap bakiyeleri nasıl olmalıdır?',
+        {
+            'A': '770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 170.000 ₺',
+            'B': '280 Gelecek Yıllara Ait Giderler 180.000 ₺',
+            'C': '770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺',
+            'D': '180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺',
+            'E': '770 Genel Yönetim Giderleri 20.000 ₺; 180 Gelecek Aylara Ait Giderler 110.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺',
+        },
+        'C',
+        "Aylık tutar 180.000 / 18 = 10.000 ₺'dir. Aralık ayına düşen 10.000 ₺ giderleşir. Ocak-Aralık 2026'ya ait 120.000 ₺ **180 Gelecek Aylara Ait Giderler**, Ocak-Mayıs 2027'ye ait 50.000 ₺ ise **280 Gelecek Yıllara Ait Giderler** hesabında kalır.",
+        "1 Sıra No'lu MSUGT - 180/280 ve dönemsellik",
+    ),
+    # düzey 3
+    '0022': patch(
+        'İşletme 1 Ekim 2025 tarihinde yıllık iş yeri sigortası için 120.000 ₺ ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir.\n\n31 Aralık 2025 tarihinde yapılacak düzeltme kaydı hangisidir?',
+        {
+            'A': '770 Genel Yönetim Giderleri 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak',
+            'B': '770 Genel Yönetim Giderleri 30.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 30.000 ₺ alacak',
+            'C': 'Dönem sonunda herhangi bir düzeltme kaydı yapılmaz.',
+            'D': '280 Gelecek Yıllara Ait Giderler 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak',
+            'E': '180 Gelecek Aylara Ait Giderler 30.000 ₺ borç / 770 Genel Yönetim Giderleri 30.000 ₺ alacak',
+        },
+        'B',
+        "Aylık sigorta 10.000 ₺, Ekim-Aralık dönemine düşen tutar 30.000 ₺'dir. Kullanılan kısım **770 Genel Yönetim Giderleri borç / 180 Gelecek Aylara Ait Giderler alacak** kaydıyla giderleştirilir.",
+        "1 Sıra No'lu MSUGT - 180/770 ve dönemsellik",
+    ),
+    # düzey 2
+    '0023': patch(
+        "Dönem sonunda '600 Yurt İçi Satışlar' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+        {
+            'A': '600 Yurt İçi Satışlar (borç) / 590 Dönem Net Kârı (alacak)',
+            'B': '690 Dönem Kârı veya Zararı (borç) / 600 Yurt İçi Satışlar (alacak)',
+            'C': '600 Yurt İçi Satışlar (borç) / 100 Kasa (alacak)',
+            'D': '690 Dönem Kârı veya Zararı (borç) / 621 Satılan Ticari Mallar Maliyeti (alacak)',
+            'E': '600 Yurt İçi Satışlar (borç) / 690 Dönem Kârı veya Zararı (alacak)',
+        },
+        'E',
+        "Gelir hesabı olan 600 (alacak kalanı verir) kapatılırken **600 Yurt İçi Satışlar (borç)** borçlandırılır; karşılığında **690 Dönem Kârı veya Zararı (alacak)** alacaklandırılır (gelir 690'a taşınır).",
+        "1 Sıra No'lu MSUGT - 600 / 690",
+    ),
+    # düzey 2
+    '0024': patch(
+        "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 240.000 ₺, dönem sonu fiilî stok tutarı 252.000 ₺'dir. Farkın nedeni henüz belirlenememiştir.\n\nİlk envanter kaydı hangisidir?",
+        {
+            'A': '153 Ticari Mallar 252.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 252.000 ₺ alacak',
+            'B': '397 Sayım ve Tesellüm Fazlaları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak',
+            'C': '153 Ticari Mallar 12.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 12.000 ₺ alacak',
+            'D': '197 Sayım ve Tesellüm Noksanları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak',
+            'E': '621 Satılan Ticari Mallar Maliyeti 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak',
+        },
+        'C',
+        'Fiilî stok kayıtlı stoktan 12.000 ₺ fazladır. Nedeni bilinmeyen fazlalıkta stok **153 hesaba borç**, geçici kaynak niteliğindeki **397 Sayım ve Tesellüm Fazlaları** hesabına alacak kaydedilir.',
+        "1 Sıra No'lu MSUGT - 153/397 stok sayım fazlası; 5 Nisan 2025 SGS soru örüntüsü",
+    ),
+    # düzey 3
+    '0025': patch(
+        'İşletmenin değerleme gününden 90 gün sonra vadesi dolacak 126.000 ₺ nominal değerli alacak senedi vardır. Senette faiz oranı yazılı değildir; yıllık %20 oran ve iç iskonto yöntemi kullanılacaktır.\n\nReeskont tutarı ve dönem sonu kaydı hangisidir?',
+        {
+            'A': '6.300 ₺; 657 Reeskont Faiz Giderleri borç / 121 Alacak Senetleri alacak',
+            'B': '6.000 ₺; 657 Reeskont Faiz Giderleri borç / 122 Alacak Senetleri Reeskontu alacak',
+            'C': '6.000 ₺; 122 Alacak Senetleri Reeskontu borç / 647 Reeskont Faiz Gelirleri alacak',
+            'D': '25.200 ₺; 780 Finansman Giderleri borç / 122 Alacak Senetleri Reeskontu alacak',
+            'E': '5.727 ₺; 181 Gelir Tahakkukları borç / 642 Faiz Gelirleri alacak',
+        },
+        'B',
+        "İç iskonto formülünde reeskont 126.000 × 20 × 90 / (36.000 + 20 × 90) = **6.000 ₺**'dir. Alacak senedi reeskontu varlığın değerini azaltır; 657 borçlandırılır, 122 alacaklandırılır.",
+        "VUK 281 ve 238 Sıra No'lu VUK Genel Tebliği - iç iskonto; 2025 SGS reeskont soru örüntüsü",
+    ),
+    # düzey 2
+    '0026': patch(
+        'İşletmenin dönem sonunda 150.000 ₺ nominal değerli borç senedinin tasarruf değeri 144.000 ₺ olarak hesaplanmıştır.\n\nDönem sonu reeskont kaydı hangisidir?',
+        {
+            'A': '322 Borç Senetleri Reeskontu 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak',
+            'B': '647 Reeskont Faiz Gelirleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak',
+            'C': '321 Borç Senetleri 6.000 ₺ borç / 647 Reeskont Faiz Gelirleri 6.000 ₺ alacak',
+            'D': '657 Reeskont Faiz Giderleri 6.000 ₺ borç / 322 Borç Senetleri Reeskontu 6.000 ₺ alacak',
+            'E': '322 Borç Senetleri Reeskontu 150.000 ₺ borç / 321 Borç Senetleri 150.000 ₺ alacak',
+        },
+        'A',
+        'Reeskont nominal değer ile tasarruf değeri arasındaki 150.000 − 144.000 = **6.000 ₺** farktır. Borcu azaltan düzenleyici hesap 322 borçlandırılır; reeskont faiz geliri 647 hesaba alacak kaydedilir.',
+        "VUK 285; 1 Sıra No'lu MSUGT - 322/647; 18 Nisan 2026 SGS soru örüntüsü",
+    ),
+    # düzey 2
+    '0027': patch(
+        'Önceki dönem sonunda borç senetleri için 8.000 ₺ reeskont hesaplanarak 322 Borç Senetleri Reeskontu hesabı borçlandırılmıştır.\n\nYeni dönemin başında yapılacak reeskont iptal kaydı hangisidir?',
+        {
+            'A': '657 Reeskont Faiz Giderleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak',
+            'B': '647 Reeskont Faiz Gelirleri 8.000 ₺ borç / 657 Reeskont Faiz Giderleri 8.000 ₺ alacak',
+            'C': '321 Borç Senetleri 8.000 ₺ borç / 322 Borç Senetleri Reeskontu 8.000 ₺ alacak',
+            'D': '322 Borç Senetleri Reeskontu 8.000 ₺ borç / 647 Reeskont Faiz Gelirleri 8.000 ₺ alacak',
+            'E': '322 Borç Senetleri Reeskontu 8.000 ₺ borç / 321 Borç Senetleri 8.000 ₺ alacak',
+        },
+        'A',
+        'Önceki dönem sonunda 322 borç / 647 alacak kaydıyla ayrılan borç senedi reeskontu yeni dönemde ters çevrilir. **657 Reeskont Faiz Giderleri borçlandırılır, 322 hesap alacaklandırılarak kapatılır**.',
+        "1 Sıra No'lu MSUGT - 322/647 ve yeni dönem reeskont iptali",
+    ),
+    # düzey 3
+    '0028': patch(
+        "Gelir ve gider hesaplarının devrinden sonra 690 Dönem Kârı veya Zararı hesabı 200.000 ₺ alacak kalanı vermiştir. Dönem kârına ilişkin vergi ve diğer yasal yükümlülük karşılığı 40.000 ₺'dir.\n\n690 ve 691 hesapların 692 Dönem Net Kârı veya Zararı hesabına devri hangisidir?",
+        {
+            'A': '690 Dönem Kârı veya Zararı 160.000 ₺ borç ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak',
+            'B': '691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ borç / 690 Dönem Kârı veya Zararı 200.000 ₺ alacak',
+            'C': '692 Dönem Net Kârı veya Zararı 200.000 ₺ borç / 690 Dönem Kârı veya Zararı 160.000 ₺ ve 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ alacak',
+            'D': '690 Dönem Kârı veya Zararı 200.000 ₺ borç / 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları 40.000 ₺ ve 692 Dönem Net Kârı veya Zararı 160.000 ₺ alacak',
+            'E': '690 Dönem Kârı veya Zararı 200.000 ₺ borç / 692 Dönem Net Kârı veya Zararı 200.000 ₺ alacak; 691 hesap devredilmez.',
+        },
+        'D',
+        "Vergi öncesi 200.000 ₺ kârdan 40.000 ₺ karşılık düşülünce net kâr 160.000 ₺'dir. 690 hesap borçlandırılarak kapatılır; gider niteliğindeki 691 hesap 40.000 ₺ ve net sonucu gösteren 692 hesap 160.000 ₺ alacaklandırılır.",
+        "1 Sıra No'lu MSUGT - 690/691/692 dönem sonucu",
+    ),
+    # düzey 2
+    '0029': patch(
+        'Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 150.000 ₺, dönem sonu fiilî stok tutarı 172.000 ₺ olarak belirlenmiştir. Farkın nedeni araştırılacaktır.\n\nYapılacak ilk kayıt hangisidir?',
+        {
+            'A': '153 Ticari Mallar 172.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 172.000 ₺ alacak',
+            'B': '621 Satılan Ticari Mallar Maliyeti 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak',
+            'C': '197 Sayım ve Tesellüm Noksanları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak',
+            'D': '397 Sayım ve Tesellüm Fazlaları 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak',
+            'E': '153 Ticari Mallar 22.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 22.000 ₺ alacak',
+        },
+        'E',
+        'Fiilî stok kayıtlı stoktan 172.000 − 150.000 = **22.000 ₺ fazladır**. Stok 153 hesaba borç kaydedilir; nedeni bulunana kadar fark 397 Sayım ve Tesellüm Fazlaları hesabında izlenir.',
+        "1 Sıra No'lu MSUGT - 153/397; 5 Nisan 2025 SGS soru örüntüsü",
+    ),
+    # düzey 3
+    '0030': patch(
+        "İşletmenin 31 Aralık tarihli 102 Bankalar hesabı bakiyesi 130.000 ₺, banka ekstresi bakiyesi 126.000 ₺'dir. Farkın, bankanın hesaptan kestiği ve henüz kayda alınmamış 4.000 ₺ komisyon olduğu belirlenmiştir.\n\nDüzeltme kaydı hangisidir?",
+        {
+            'A': '102 Bankalar 4.000 ₺ borç / 780 Finansman Giderleri 4.000 ₺ alacak',
+            'B': '780 Finansman Giderleri 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak',
+            'C': '102 Bankalar 126.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 126.000 ₺ alacak',
+            'D': '197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak',
+            'E': '656 Kambiyo Zararları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak',
+        },
+        'B',
+        "Banka komisyonu işletmenin finansman gideridir ve banka varlığını azaltır. Bu nedenle **780 Finansman Giderleri borçlandırılır, 102 Bankalar alacaklandırılır**; kayıtlı bakiye 126.000 ₺'ye iner.",
+        "1 Sıra No'lu MSUGT - 102/780 banka mutabakatı",
+    ),
+    # düzey 2
+    '0031': patch(
+        "Dönem sonunda 380 Gelecek Aylara Ait Gelirler hesabında 120.000 ₺ bulunmaktadır. İncelemede bu tutarın 50.000 ₺'lik kısmına ilişkin hizmetin cari dönemde tamamlandığı belirlenmiştir.\n\nYapılacak düzeltme kaydı hangisidir?",
+        {
+            'A': '181 Gelir Tahakkukları 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak',
+            'B': '380 Gelecek Aylara Ait Gelirler 70.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 70.000 ₺ alacak',
+            'C': '102 Bankalar 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak',
+            'D': '649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak',
+            'E': '380 Gelecek Aylara Ait Gelirler 50.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 50.000 ₺ alacak',
+        },
+        'E',
+        "Peşin tahsil edildiği için 380 hesapta bekleyen tutarın hizmeti tamamlanan 50.000 ₺'lik kısmı artık gelirdir. **380 hesap borçlandırılarak azaltılır, 649 hesap alacaklandırılarak gelir kaydedilir**.",
+        "1 Sıra No'lu MSUGT - 380/649 ve dönemsellik; 5 Nisan 2025 SGS soru örüntüsü",
+    ),
+    # düzey 3
+    '0032': patch(
+        "İşletmenin Aralık 2025'te tükettiği elektriğin faturası Ocak 2026'da gelecektir. Tüketim tutarı 18.000 ₺ olup %60'ı üretim, %40'ı yönetim bölümüne aittir (7/A seçeneği, KDV ihmal). Buna göre 31 Aralık 2025 tarihinde yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '730 Genel Üretim Giderleri hesabı 18.000 ₺ borçlandırılır',
+            'B': '381 Gider Tahakkukları hesabı 18.000 ₺ borçlandırılır',
+            'C': '381 Gider Tahakkukları hesabı 18.000 ₺ alacaklandırılır',
+            'D': '181 Gelir Tahakkukları hesabı 18.000 ₺ borçlandırılır',
+            'E': '770 Genel Yönetim Giderleri hesabı 10.800 ₺ borçlandırılır',
+        },
+        'C',
+        'Ait olduğu dönemde gerçekleşen ancak henüz ödenmeyen gider tahakkuk ettirilir: 730 (borç) 10.800 + 770 (borç) 7.200 / **381 Gider Tahakkukları (alacak) 18.000**. Fatura geldiğinde 381 borçlandırılarak kapatılır.',
+        'Dönemsellik; THP 381, 730, 770',
+    ),
+    # düzey 3
+    '0033': patch(
+        "1 Ağustos 2025'te yıllık %24 faizle bir yıl vadeli yatırılan 600.000 ₺ için 31 Aralık 2025'te 60.000 ₺ faiz tahakkuku kaydedilmiştir. 1 Ağustos 2026'da vade dolmuş ve toplam 144.000 ₺ faiz banka hesabına aktarılmıştır (stopaj ihmal). Buna göre faiz tahsil kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '642 Faiz Gelirleri hesabı 144.000 ₺ alacaklandırılır',
+            'B': '642 Faiz Gelirleri hesabı 60.000 ₺ alacaklandırılır',
+            'C': '181 Gelir Tahakkukları hesabı 144.000 ₺ alacaklandırılır',
+            'D': '181 Gelir Tahakkukları hesabı 60.000 ₺ alacaklandırılır',
+            'E': '181 Gelir Tahakkukları hesabı 60.000 ₺ borçlandırılır',
+        },
+        'D',
+        "Kayıt: 102 (borç) 144.000 / **181 (alacak) 60.000** + 642 (alacak) 84.000. 2025'e ait faiz tahakkukla gelir yazıldığı için tahsilde 181 kapatılır; 642'ye yalnız 2026'ya ait 7 aylık faiz yazılır.",
+        'THP 102, 181, 642',
+    ),
+    # düzey 2
+    '0034': patch(
+        'İşletme önceki dönem sonunda alacak senetleri için 12.000 ₺ reeskont ayırmış ve 122 Alacak Senetleri Reeskontu hesabını alacaklandırmıştır. Yeni dönemin başında bu reeskontun iptaline ilişkin kayıt aşağıdakilerden hangisidir?',
+        {
+            'A': '657 (borç) 12.000 / 122 (alacak) 12.000',
+            'B': '122 (borç) 12.000 / 657 (alacak) 12.000',
+            'C': '122 (borç) 12.000 / 647 (alacak) 12.000',
+            'D': '122 (borç) 12.000 / 121 (alacak) 12.000',
+            'E': '121 (borç) 12.000 / 122 (alacak) 12.000',
+        },
+        'B',
+        'Önceki dönem ayrılan reeskont yeni dönemin başında **ters kayıtla** kapatılır: 122 borçlandırılır, önceki kayıttaki gider hesabı 657 alacaklandırılır. Böylece faiz, senedin tahsil edildiği dönemde doğru tutarla sonuçlara yansır.',
+        'Dönemsellik; THP 122, 657',
+    ),
+    # düzey 3
+    '0035': patch(
+        "Dönem sonunda yapılan incelemede deposundaki 250.000 ₺ tutarındaki ticari mallardan 60.000 ₺'lik kısmın modası geçtiği için %45 oranında değer kaybettiği tespit edilmiş ve bu oranda karşılık ayrılmasına karar verilmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '158 Stok Değer Düşüklüğü Karşılığı hesabı 112.500 ₺ alacaklandırılır',
+            'B': '158 Stok Değer Düşüklüğü Karşılığı hesabı 60.000 ₺ alacaklandırılır',
+            'C': '158 Stok Değer Düşüklüğü Karşılığı hesabı 27.000 ₺ alacaklandırılır',
+            'D': '153 Ticari Mallar hesabı 27.000 ₺ alacaklandırılır',
+            'E': '654 Karşılık Giderleri hesabı 27.000 ₺ alacaklandırılır',
+        },
+        'C',
+        'Karşılık yalnız değer kaybeden kısım için ayrılır: 60.000 × %45 = 27.000 ₺. Kayıt: 654 Karşılık Giderleri (borç) / **158 Stok Değer Düşüklüğü Karşılığı (alacak) 27.000**. Stok hesabı maliyetle kalır.',
+        "1 Sıra No'lu MSUGT; THP 158, 654",
+    ),
+    # düzey 3
+    '0036': patch(
+        'Bir işletmenin dönem sonu mizanında sonuç hesaplarının kalanları şöyledir: 600 Yurt İçi Satışlar 900.000 ₺, 610 Satıştan İadeler 40.000 ₺, 621 Satılan Ticari Mallar Maliyeti 520.000 ₺, 760 Pazarlama Satış ve Dağıtım Giderleri 60.000 ₺, 770 Genel Yönetim Giderleri 90.000 ₺, 642 Faiz Gelirleri 15.000 ₺ ve 780 Finansman Giderleri 25.000 ₺. Buna göre sonuç hesapları devredildikten sonra 690 Dönem Kârı veya Zararı hesabının kalanı aşağıdakilerden hangisidir?',
+        {
+            'A': '180.000 ₺ alacak kalanı',
+            'B': '180.000 ₺ borç kalanı',
+            'C': '165.000 ₺ alacak kalanı',
+            'D': '205.000 ₺ alacak kalanı',
+            'E': '220.000 ₺ alacak kalanı',
+        },
+        'A',
+        "Kâr = 900.000 − 40.000 − 520.000 − 60.000 − 90.000 + 15.000 − 25.000 = **180.000 ₺**. Gelirler 690'ın alacağına, gider ve indirim hesapları borcuna devredildiğinden kâr **alacak kalanı** olarak görünür.",
+        'THP 6 grubu; 690',
+    ),
+    # düzey 3
+    '0037': patch(
+        "İşletmenin 31 Aralık itibarıyla 102 Bankalar hesabının borç kalanı 85.000 ₺, banka hesap özetindeki bakiye 91.600 ₺'dir. İncelemede bankanın işletme adına 7.000 ₺'lik bir alacak senedini tahsil ederek hesaba aktardığı ve 400 ₺ hesap işletim ücreti kestiği, bu işlemlerin işletme kayıtlarına henüz yansıtılmadığı anlaşılmıştır. Buna göre düzeltme sonrasında 102 Bankalar hesabının kalanı kaç ₺ olur?",
+        {
+            'A': '91.600 ₺',
+            'B': '77.600 ₺',
+            'C': '92.000 ₺',
+            'D': '84.600 ₺',
+            'E': '85.000 ₺',
+        },
+        'A',
+        'Tahsil edilen senet hesabı artırır, işletim ücreti azaltır: 85.000 + 7.000 − 400 = **91.600 ₺**; banka özetiyle mutabık olur. Kayıtlar: 102 (borç) / 121 (alacak) 7.000; 770 (borç) / 102 (alacak) 400.',
+        'THP 102, 121, 770',
+    ),
+    # düzey 3
+    '0038': patch(
+        'Bir kurumun 690 Dönem Kârı veya Zararı hesabı 400.000 ₺ alacak kalanı vermektedir. Kanunen kabul edilmeyen giderler 40.000 ₺ olup kurumlar vergisi oranının %25 olduğu varsayılmaktadır (istisna ve indirim yoktur). Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': "692'nin alacak kalanı 290.000 ₺ olur",
+            'B': "Vergi karşılığı 110.000 ₺'dir",
+            'C': "691 hesabı 692'ye devredilerek kapatılır",
+            'D': "Vergi matrahı 440.000 ₺'dir",
+            'E': "Net kâr 300.000 ₺ olarak 590'a aktarılır",
+        },
+        'E',
+        "Matrah 400.000 + 40.000 = 440.000 ₺; vergi × %25 = 110.000 ₺. Kanunen kabul edilmeyen giderler ticari kârdan zaten düşülmüştür; net kâr 400.000 − 110.000 = **290.000 ₺** olur ve 692 aracılığıyla 590'a aktarılır. 300.000 ₺ yanlış olarak yalnız ticari kâr üzerinden vergi hesaplanarak bulunur.",
+        'THP 690, 691, 692, 590; KVK m. 11',
+    ),
+    # düzey 2
+    '0039': patch(
+        'Dönem sonunda sonuç hesaplarının kapatılması işlemleri yapılmaktadır. Buna göre aşağıdaki hesaplardan hangisi dönem sonunda 690 Dönem Kârı veya Zararı hesabına devredilmez?',
+        {
+            'A': '770 Genel Yönetim Giderleri',
+            'B': '642 Faiz Gelirleri',
+            'C': '621 Satılan Ticari Mallar Maliyeti',
+            'D': '257 Birikmiş Amortismanlar',
+            'E': '600 Yurt İçi Satışlar',
+        },
+        'D',
+        "690'a yalnız **6 grubu** sonuç hesapları (gelir, gider, indirim ve maliyet) devredilir. 257 Birikmiş Amortismanlar aktifi düzenleyen bir bilanço hesabıdır; kalanıyla yeni döneme devreder.",
+        'THP 690',
+    ),
+    # düzey 3
+    '0040': patch(
+        "31 Aralık 2025 itibarıyla 180 Gelecek Aylara Ait Giderler hesabında 60.000 ₺ bulunmaktadır. İncelemede bu tutarın 20.000 ₺'lik kısmının 2025 yılına ait yönetim gideri olduğu, 40.000 ₺'lik kısmının ise 2027 yılına ait olduğu belirlenmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '180 Gelecek Aylara Ait Giderler hesabı 40.000 ₺ borçlandırılır',
+            'B': '770 Genel Yönetim Giderleri hesabı 60.000 ₺ borçlandırılır',
+            'C': '180 Gelecek Aylara Ait Giderler hesabı 20.000 ₺ borçlandırılır',
+            'D': '280 Gelecek Yıllara Ait Giderler hesabı 40.000 ₺ borçlandırılır',
+            'E': '280 Gelecek Yıllara Ait Giderler hesabı 60.000 ₺ borçlandırılır',
+        },
+        'D',
+        "Kayıt: 770 (borç) 20.000 + **280 (borç) 40.000** / 180 (alacak) 60.000. Cari yıla ait kısım gider yazılır; izleyen yıldan sonraki yıla ait kısım uzun vadeli 280'e aktarılır.",
+        'Dönemsellik; THP 180, 280, 770',
+    ),
+    # düzey 3
+    '0041': patch(
+        'İşletme 1 Ekim 2025 tarihinde, 1 Ekim 2025-30 Eylül 2027 dönemini kapsayan 24 aylık iş yeri kirasını 240.000 ₺ olarak peşin tahsil etmiştir. Aylık kira tutarları eşittir.\n\n31 Aralık 2025 tarihinde tahsilatın dağılımı nasıl olmalıdır?',
+        {
+            'A': '649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 210.000 ₺',
+            'B': '649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺',
+            'C': '649 Diğer Olağan Gelir ve Kârlar 240.000 ₺',
+            'D': '380 Gelecek Aylara Ait Gelirler 150.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺',
+            'E': '649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 100.000 ₺',
+        },
+        'B',
+        "Aylık kira 10.000 ₺'dir. Ekim-Aralık 2025 için 30.000 ₺ gelir oluşur. İzleyen on iki aya ait 120.000 ₺ **380**, Ocak-Eylül 2027'ye ait 90.000 ₺ ise **480** hesapta izlenir.",
+        "1 Sıra No'lu MSUGT - 380/480 ve dönemsellik",
+    ),
+    # düzey 3
+    '0042': patch(
+        "31 Aralık 2025 tarihinde 280 Gelecek Yıllara Ait Giderler hesabında 300.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına ait olduğu belirlenmiştir.\n\nDönem sonunda yapılması gereken sınıflandırma kaydı hangisidir?",
+        {
+            'A': '280 Gelecek Yıllara Ait Giderler 120.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 120.000 ₺ alacak',
+            'B': '280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 180.000 ₺ alacak',
+            'C': '180 Gelecek Aylara Ait Giderler 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak',
+            'D': '180 Gelecek Aylara Ait Giderler 300.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 300.000 ₺ alacak',
+            'E': '770 Genel Yönetim Giderleri 120.000 ₺ borç / 280 Gelecek Yıllara Ait Giderler 120.000 ₺ alacak',
+        },
+        'C',
+        'İzleyen hesap döneminde giderleşecek 120.000 ₺ artık uzun vadeli değildir. Bu tutar **180 hesaba borç**, uzun vadeli **280 hesaba alacak** kaydedilerek dönen varlıklara aktarılır.',
+        "1 Sıra No'lu MSUGT - 180/280 kısa-uzun vadeli sınıflandırma",
+    ),
+    # düzey 2
+    '0043': patch(
+        "Dönem sonunda '621 Satılan Ticari Mallar Maliyeti (-)' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+        {
+            'A': '690 Dönem Kârı veya Zararı (borç) / 621 Satılan Ticari Mallar Maliyeti (alacak)',
+            'B': '621 Satılan Ticari Mallar Maliyeti (borç) / 153 Ticari Mallar (alacak)',
+            'C': '690 Dönem Kârı veya Zararı (borç) / 600 Yurt İçi Satışlar (alacak)',
+            'D': '621 Satılan Ticari Mallar Maliyeti (borç) / 600 Yurt İçi Satışlar (alacak)',
+            'E': '621 Satılan Ticari Mallar Maliyeti (borç) / 690 Dönem Kârı veya Zararı (alacak)',
+        },
+        'A',
+        "Gider hesabı olan 621 (borç kalanı verir) kapatılırken **690 Dönem Kârı veya Zararı (borç)** borçlandırılır; karşılığında **621 Satılan Ticari Mallar Maliyeti (alacak)** alacaklandırılır (gider 690'a taşınır).",
+        "1 Sıra No'lu MSUGT - 621 / 690",
+    ),
+    # düzey 3
+    '0044': patch(
+        "Stoklarını aralıklı envanter yöntemiyle izleyen işletmede dönem sonunda 153 Ticari Mallar hesabının borç toplamı 720.000 ₺, alacak toplamı 70.000 ₺ ve fiilî stok tutarı 250.000 ₺'dir. Fire bulunmamaktadır.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
+        {
+            'A': '250.000',
+            'B': '400.000',
+            'C': '470.000',
+            'D': '650.000',
+            'E': '330.000',
+        },
+        'B',
+        "Satılabilir malların net maliyeti 720.000 − 70.000 = 650.000 ₺'dir. Dönem sonu stok düşüldüğünde satılan ticari malların maliyeti 650.000 − 250.000 = **400.000 ₺** olur.",
+        "1 Sıra No'lu MSUGT - 153/621; 22 Kasım 2025 SGS aralıklı envanter soru örüntüsü",
+    ),
+    # düzey 2
+    '0045': patch(
+        'İşletme 1 Ekim 2025 tarihinde bankaya yıllık %18 faizli 800.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir.\n\n31 Aralık 2025 tarihinde yapılacak faiz tahakkuk kaydı hangisidir?',
+        {
+            'A': '180 Gelecek Aylara Ait Giderler 36.000 ₺ borç / 102 Bankalar 36.000 ₺ alacak',
+            'B': '181 Gelir Tahakkukları 144.000 ₺ borç / 642 Faiz Gelirleri 144.000 ₺ alacak',
+            'C': '642 Faiz Gelirleri 36.000 ₺ borç / 181 Gelir Tahakkukları 36.000 ₺ alacak',
+            'D': '102 Bankalar 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak',
+            'E': '181 Gelir Tahakkukları 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak',
+        },
+        'E',
+        "Üç aylık faiz 800.000 × %18 × 3/12 = **36.000 ₺**'dir. Henüz tahsil edilmediği için 181 Gelir Tahakkukları borçlandırılır; döneme ait faiz geliri 642 hesaba alacak kaydedilir.",
+        "1 Sıra No'lu MSUGT - 181/642 gelir tahakkuku",
+    ),
+    # düzey 2
+    '0046': patch(
+        'Kasa sayımında kayıtlı tutardan 6.000 ₺ daha az nakit bulunmuş ve fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. İncelemede farkın, peşin alınan büro malzemesinin kayda geçirilmemesinden kaynaklandığı belirlenmiştir. Malzeme dönem içinde tamamen tüketilmiştir.\n\nNeden belirlendiğinde yapılacak düzeltme kaydı hangisidir?',
+        {
+            'A': '180 Gelecek Aylara Ait Giderler 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak',
+            'B': '689 Diğer Olağandışı Gider ve Zararlar 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak',
+            'C': '197 Sayım ve Tesellüm Noksanları 6.000 ₺ borç / 100 Kasa 6.000 ₺ alacak',
+            'D': '770 Genel Yönetim Giderleri 6.000 ₺ borç / 197 Sayım ve Tesellüm Noksanları 6.000 ₺ alacak',
+            'E': '100 Kasa 6.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 6.000 ₺ alacak',
+        },
+        'D',
+        'Noksanlığın nedeni kaydedilmemiş ve tüketilmiş büro malzemesidir. Gider **770 hesaba borç** yazılır; farkı geçici olarak taşıyan **197 hesap alacaklandırılarak kapatılır**. Kasa daha önce ilk sayım kaydında düzeltilmiştir.',
+        "1 Sıra No'lu MSUGT - 100/197/770 sayım farkının çözümü",
+    ),
+    # düzey 3
+    '0047': patch(
+        "Gelir hesaplarının alacak toplamı 700.000 ₺, gider ve maliyet hesaplarının borç toplamı 520.000 ₺'dir. Tüm gelir ve gider hesapları 690 Dönem Kârı veya Zararı hesabına devredilmiştir.\n\nDevir işlemleri sonunda 690 hesabın durumu nedir?",
+        {
+            'A': '1.220.000 ₺ alacak kalanı verir.',
+            'B': '520.000 ₺ borç kalanı verir.',
+            'C': '180.000 ₺ borç kalanı verir.',
+            'D': '180.000 ₺ alacak kalanı verir.',
+            'E': '700.000 ₺ alacak kalanı verir.',
+        },
+        'D',
+        'Gelirler 690 hesabın alacağına 700.000 ₺, gider ve maliyetler borcuna 520.000 ₺ aktarılır. Aradaki **180.000 ₺ alacak kalanı** vergi öncesi dönem kârıdır.',
+        "1 Sıra No'lu MSUGT - 690 Dönem Kârı veya Zararı",
+    ),
+    # düzey 2
+    '0048': patch(
+        'İşletme 1 Temmuz 2025 tarihinde 30 aylık sigorta için 300.000 ₺ peşin ödemiştir. Aylık sigorta tutarları eşittir.\n\n31 Aralık 2025 tarihinde giderleştirilmemiş tutarın kısa ve uzun vadeli dağılımı nedir?',
+        {
+            'A': '280 Gelecek Yıllara Ait Giderler 240.000 ₺; kısa vadeli tutar yoktur.',
+            'B': '180 Gelecek Aylara Ait Giderler 240.000 ₺; uzun vadeli tutar yoktur.',
+            'C': '180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺',
+            'D': '180 Gelecek Aylara Ait Giderler 180.000 ₺; 280 Gelecek Yıllara Ait Giderler 60.000 ₺',
+            'E': '180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 180.000 ₺',
+        },
+        'C',
+        "Aylık tutar 10.000 ₺'dir. Temmuz-Aralık için 60.000 ₺ giderleşir ve 24 aylık 240.000 ₺ kalır. İzleyen on iki aya ait **120.000 ₺ 180**, daha sonraki on iki aya ait **120.000 ₺ 280** hesapta izlenir.",
+        "1 Sıra No'lu MSUGT - 180/280 kısa-uzun vadeli ayrımı",
+    ),
+    # düzey 2
+    '0049': patch(
+        'İşletme aralık ayında tamamladığı aracılık hizmetine ilişkin 48.000 ₺ komisyonu ocak ayında faturalandırıp tahsil edecektir.\n\n31 Aralık tarihinde yapılacak kayıt hangisidir?',
+        {
+            'A': '181 Gelir Tahakkukları 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak',
+            'B': '649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ borç / 181 Gelir Tahakkukları 48.000 ₺ alacak',
+            'C': '380 Gelecek Aylara Ait Gelirler 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak',
+            'D': '120 Alıcılar 48.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 48.000 ₺ alacak',
+            'E': '102 Bankalar 48.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 48.000 ₺ alacak',
+        },
+        'A',
+        'Hizmet cari dönemde tamamlandığı için 48.000 ₺ gelir bu döneme aittir. Henüz fatura ve tahsilat bulunmadığından tutar **181 Gelir Tahakkukları borç / 649 Diğer Olağan Gelir ve Kârlar alacak** kaydıyla muhasebeleştirilir.',
+        "1 Sıra No'lu MSUGT - 181/649 ve dönemsellik",
+    ),
+    # düzey 2
+    '0050': patch(
+        "İşletmenin 20.000 $ tutarındaki ticari borcu işlem tarihinde 1 $ = 32 ₺ kuru üzerinden 640.000 ₺ olarak kaydedilmiştir. Dönem sonu değerleme kuru 1 $ = 34 ₺'dir. Borç henüz ödenmemiştir.\n\nDönem sonu değerleme kaydı hangisidir?",
+        {
+            'A': '320 Satıcılar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak',
+            'B': '656 Kambiyo Zararları 680.000 ₺ borç / 320 Satıcılar 680.000 ₺ alacak',
+            'C': '102 Bankalar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak',
+            'D': '656 Kambiyo Zararları 40.000 ₺ borç / 320 Satıcılar 40.000 ₺ alacak',
+            'E': '320 Satıcılar 40.000 ₺ borç / 656 Kambiyo Zararları 40.000 ₺ alacak',
+        },
+        'D',
+        "Borcun dönem sonu değeri 20.000 × 34 = 680.000 ₺, kayıtlı değeri 640.000 ₺'dir. Borç 40.000 ₺ arttığı için **656 Kambiyo Zararları borç**, **320 Satıcılar alacak** kaydedilir.",
+        "VUK 280; 1 Sıra No'lu MSUGT - yabancı para borç değerlemesi; 2025 SGS soru örüntüsü",
+    ),
+    # düzey 3
+    '0051': patch(
+        "Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Amortisman, karşılık ve reeskont hesaplamaları dönem sonu envanter işlemidir.\n\nII. Peşin ödenen giderlerin gelecek döneme ait kısmı 180 Gelecek Aylara Ait Giderler'e aktarılır.\n\nIII. Gelir ve gider hesapları dönem sonunda doğrudan 590 Dönem Net Kârı hesabına devredilerek kapatılır.",
+        {
+            'A': 'I ve III',
+            'B': 'I ve II',
+            'C': 'Yalnız I',
+            'D': 'I, II ve III',
+            'E': 'II ve III',
+        },
+        'B',
+        "**III yanlıştır:** Gelir ve gider (6xx sonuç) hesapları dönem sonunda önce **690 Dönem Kârı veya Zararı** hesabına devredilir; 590'a doğrudan aktarılmaz (690 → 691/692 → 590 sırası izlenir). **I** amortisman/karşılık/reeskont envanter işlemidir; **II** peşin giderin gelecek döneme ait kısmı 180'e aktarılır. Doğru cevap **I ve II**.",
+        "Dönem sonu işlemleri; 1 Sıra No'lu MSUGT",
+    ),
+    # düzey 3
+    '0052': patch(
+        "İşletme 1 Kasım 2025'te kiraya verdiği depo için 24 aylık kira bedeli olan 480.000 ₺'yi peşin tahsil etmiş ve tamamını 649 Diğer Olağan Gelir ve Kârlar hesabına kaydetmiştir. Buna göre 31 Aralık 2025 tarihindeki düzeltme kaydında aşağıdakilerden hangisi yer almaz?",
+        {
+            'A': '2025 yılı kira geliri 40.000 ₺ olarak kalır',
+            'B': '380 Gelecek Aylara Ait Gelirler hesabı 240.000 ₺ alacaklandırılır',
+            'C': '181 Gelir Tahakkukları hesabı 440.000 ₺ borçlandırılır',
+            'D': '480 Gelecek Yıllara Ait Gelirler hesabı 200.000 ₺ alacaklandırılır',
+            'E': '649 Diğer Olağan Gelir ve Kârlar hesabı 440.000 ₺ borçlandırılır',
+        },
+        'C',
+        "Aylık kira 20.000 ₺; 2025'e 2 ay, 2026'ya 12 ay, 2027'ye 10 ay düşer. Düzeltme: 649 (borç) 440.000 / 380 (alacak) 240.000 + 480 (alacak) 200.000. 181 henüz tahsil edilmemiş gelirler içindir; peşin tahsilatta kullanılmaz.",
+        'Dönemsellik; THP 380, 480, 649',
+    ),
+    # düzey 3
+    '0053': patch(
+        'İşletmenin değerleme gününden 120 gün sonra ödenecek 105.000 ₺ nominal değerli bir borç senedi vardır. Reeskont hesaplamasında yıllık %15 faiz, 360 gün ve iç iskonto yöntemi kullanılacaktır. Buna göre dönem sonu reeskont tutarı ve kaydı aşağıdakilerden hangisidir?',
+        {
+            'A': '5.250 ₺; 657 borç / 322 alacak',
+            'B': '5.250 ₺; 322 borç / 647 alacak',
+            'C': '5.000 ₺; 647 borç / 322 alacak',
+            'D': '5.000 ₺; 657 borç / 322 alacak',
+            'E': '5.000 ₺; 322 borç / 647 alacak',
+        },
+        'E',
+        'İç iskonto: 105.000 × (0,15 × 120/360) / (1 + 0,15 × 120/360) = 105.000 × 0,05 / 1,05 = **5.000 ₺** (5.250 ₺ dış iskonto sonucudur). Borç senedi reeskontu borcu azaltır ve gelir doğurur: 322 Borç Senetleri Reeskontu (borç) / 647 Reeskont Faiz Gelirleri (alacak).',
+        'VUK m. 281, 285; THP 322, 647',
+    ),
+    # düzey 3
+    '0054': patch(
+        'İşletme, müşterisinden olan 80.000 ₺ tutarındaki senetsiz alacağı için dönem içinde dava açmıştır. Dönem sonunda alacağın tamamı şüpheli alacağa aktarılmış ve tamamı için karşılık ayrılmıştır. Buna göre yapılan kayıtlarda aşağıdakilerden hangisi yer almaz?',
+        {
+            'A': '128 Şüpheli Ticari Alacaklar hesabı 80.000 ₺ borçlandırılır',
+            'B': '129 Şüpheli Ticari Alacaklar Karşılığı hesabı 80.000 ₺ alacaklandırılır',
+            'C': '654 Karşılık Giderleri hesabı 80.000 ₺ borçlandırılır',
+            'D': '120 Alıcılar hesabı 80.000 ₺ alacaklandırılır',
+            'E': '129 Şüpheli Ticari Alacaklar Karşılığı hesabı 80.000 ₺ borçlandırılır',
+        },
+        'E',
+        'Kayıtlar: 128 (borç) / 120 (alacak) 80.000; 654 Karşılık Giderleri (borç) / 129 Şüpheli Ticari Alacaklar Karşılığı (alacak) 80.000. 129 aktifi düzenleyen hesaptır ve karşılık ayrılırken **alacaklandırılır**.',
+        'VUK m. 323; THP 120, 128, 129, 654',
+    ),
+    # düzey 3
+    '0055': patch(
+        "Kasa hesabının borç kalanı 42.000 ₺ iken yapılan sayımda kasada 45.000 ₺ bulunmuş ve fark 397 Sayım ve Tesellüm Fazlaları hesabına alınmıştır. Dönem sonunda farkın 2.000 ₺'lik kısmının kaydı unutulan peşin bir hizmet satışına ait olduğu anlaşılmış, kalanın nedeni bulunamamıştır (KDV ihmal). Buna göre 397 hesabının kapatılma kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '679 Diğer Olağandışı Gelir ve Kârlar hesabı 1.000 ₺ alacaklandırılır',
+            'B': '600 Yurt İçi Satışlar hesabı 3.000 ₺ alacaklandırılır',
+            'C': '679 Diğer Olağandışı Gelir ve Kârlar hesabı 3.000 ₺ alacaklandırılır',
+            'D': '100 Kasa hesabı 3.000 ₺ borçlandırılır',
+            'E': '397 Sayım ve Tesellüm Fazlaları hesabı 3.000 ₺ alacaklandırılır',
+        },
+        'A',
+        'Kayıt: 397 (borç) 3.000 / 600 (alacak) 2.000 + **679 (alacak) 1.000**. Nedeni anlaşılan kısım ilgili hesaba, nedeni bulunamayan sayım fazlası olağandışı kâra aktarılır. Kasa sayım sırasında zaten düzeltilmiştir.',
+        'THP 100, 397, 600, 679',
+    ),
+    # düzey 2
+    '0056': patch(
+        'Bir işletmenin muhasebe elemanı dönem sonu kapanış işlemlerini açıklamaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': "Vergi karşılığı 691 aracılığıyla 692'ye aktarılır",
+            'B': "Gider hesapları 690'ın borcuna devredilir",
+            'C': "Net zarar 591 Dönem Net Zararı'na devredilir",
+            'D': "690 hesabı kalanıyla doğrudan 590'a devredilir",
+            'E': "6 grubu gelir hesapları 690'ın alacağına devredilir",
+        },
+        'D',
+        "Gelir ve gider hesapları 690'a devredilir; 690 ve 691 **692 Dönem Net Kârı veya Zararı**'na devredilir. Bilançoya aktarılan 692'dir: net kâr 590'a, net zarar 591'e. 690 doğrudan 590'a devredilmez.",
+        'THP 690, 691, 692, 590, 591',
+    ),
+    # düzey 3
+    '0057': patch(
+        "İşletmenin yurt dışındaki müşterisinden 15.000 € tutarında senetsiz alacağı bulunmaktadır. Alacak, satış tarihinde 1 € = 36 ₺ kuruyla kaydedilmiştir. Dönem sonunda değerlemede kullanılacak kur 1 € = 38 ₺'dir. Buna göre değerleme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '120 Alıcılar hesabı 30.000 ₺ alacaklandırılır',
+            'B': '646 Kambiyo Kârları hesabı 570.000 ₺ alacaklandırılır',
+            'C': '646 Kambiyo Kârları hesabı 30.000 ₺ alacaklandırılır',
+            'D': '120 Alıcılar hesabı 570.000 ₺ borçlandırılır',
+            'E': '656 Kambiyo Zararları hesabı 30.000 ₺ borçlandırılır',
+        },
+        'C',
+        "Alacak 540.000 ₺'den 570.000 ₺'ye yükselir; fark 15.000 × (38 − 36) = 30.000 ₺ kambiyo kârıdır. Kayıt: 120 Alıcılar (borç) / **646 Kambiyo Kârları (alacak) 30.000**.",
+        'VUK m. 280; THP 120, 646',
+    ),
+    # düzey 3
+    '0058': patch(
+        'Dönem sonu işlemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Peşin ödenen giderin izleyen yıldan sonraki yıllara düşen kısmı 280 hesabında izlenir.\n\nII. Dönemde kazanılıp henüz tahsil edilmeyen gelir 381 hesabında izlenir.\n\nIII. Önceki dönem ayrılan reeskontlar yeni dönemin başında ters kayıtla kapatılır.',
+        {
+            'A': 'II ve III',
+            'B': 'Yalnız I',
+            'C': 'I ve II',
+            'D': 'I ve III',
+            'E': 'Yalnız III',
+        },
+        'D',
+        "I ve III doğrudur. II yanlıştır: kazanılmış ancak tahsil edilmemiş gelir **181 Gelir Tahakkukları**'nda, ödenmemiş giderler 381 Gider Tahakkukları'nda izlenir.",
+        'Dönemsellik; THP 181, 280, 381',
+    ),
+    # düzey 3
+    '0059': patch(
+        "Kasa hesabının borç kalanı 50.000 ₺ iken yapılan sayımda kasada 46.500 ₺ bulunmuş ve fark 197 Sayım ve Tesellüm Noksanları hesabına alınmıştır. Dönem sonunda farkın 2.000 ₺'lik kısmının bir personele verilen ve kaydedilmeyen avans olduğu anlaşılmış, kalanın nedeni bulunamamıştır. Buna göre 197 hesabının kapatılma kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '197 Sayım ve Tesellüm Noksanları hesabı 3.500 ₺ borçlandırılır',
+            'B': '100 Kasa hesabı 3.500 ₺ alacaklandırılır',
+            'C': '196 Personel Avansları hesabı 3.500 ₺ borçlandırılır',
+            'D': '689 Diğer Olağandışı Gider ve Zararlar hesabı 3.500 ₺ borçlandırılır',
+            'E': '689 Diğer Olağandışı Gider ve Zararlar hesabı 1.500 ₺ borçlandırılır',
+        },
+        'E',
+        'Kayıt: 196 Personel Avansları (borç) 2.000 + **689 (borç) 1.500** / 197 (alacak) 3.500. Nedeni anlaşılan kısım ilgili hesaba, nedeni bulunamayan noksan olağandışı gidere aktarılır.',
+        'THP 100, 196, 197, 689',
+    ),
+    # düzey 2
+    '0060': patch(
+        'Bir işletmede dönem sonu işlemlerinin sırası ve içeriği değerlendirilmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Mali tablolar kesin mizandan sonra düzenlenir',
+            'B': 'Envanter işlemleri genel geçici mizandan önce yapılır',
+            'C': 'Muhasebe dışı envanterde varlıklar fiilen sayılır',
+            'D': 'Amortisman ve reeskont kayıtları envanter işlemleridir',
+            'E': 'Envanter kayıtlarından sonra kesin mizan düzenlenir',
+        },
+        'B',
+        'Sıra: dönem içi kayıtlar → **genel geçici mizan** → envanter (düzeltme) işlemleri → kesin mizan → mali tablolar → kapanış. Envanter işlemleri genel geçici mizandan sonra yapılır.',
+        'Muhasebe süreci; envanter',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Donem Sonu Islemleri' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
