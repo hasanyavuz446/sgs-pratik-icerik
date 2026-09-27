@@ -27,11 +27,6 @@ APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 
 
 PATCHES: dict[str, dict[str, dict[str, str]]] = {
-    "content/finansal_muhasebe/kdv_muhasebesi.json": {
-        "finmuh-kdv-gen-0013": {
-            "B": "Teslim istisna olduğu için yüklenilen KDV hiçbir biçimde dikkate alınmaz ve gider yazılır."
-        },
-    },
     "content/mali_tablolar_analizi/fon_akim_analizi.json": {
         "mta-fon-gen-0002": {"B": "Yalnızca kasadaki hazır nakit tutarını gösterir (dar anlamı)"},
         "mta-fon-gen-0014": {"B": "1.380.000"},
