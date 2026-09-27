@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 27 Eylül 2026 (muhasebe standartları FATAL 0 kontrol noktası)
+Son güncelleme: 27 Eylül 2026 (havuz geneli FATAL 0 kontrol noktası)
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -18,7 +18,7 @@ ticaret_hukuku 7/7 ✅ · meslek_hukuku 5/5 ✅ · borclar_hukuku 8/8 ✅ · ver
 
 ⚠️ **26 Eylül: denetim kör noktası kapatıldı** (`ELEME_ISARETI` genişletildi: yalnız/hiç/tümüyle/
 kendiliğinden/her zaman/kesin olarak…). Mutlak ifadeli saçma çeldiriciler artık yakalanıyor;
-bu ölçütle **35 paket FATAL**, 48 paket kör >%30. **Şu an: 9 paket FATAL** (maliye 3, ekonomi 3, vergi 8, borçlar 8, muhasebe standartları 10 yeniden yazımıyla; vergi, borçlar ve muhasebe standartları derslerinde FATAL kalmadı). Kalanlar: ticaret_hukuku 4 (ticaret_sirketleri, ticari_isletme_tacir, kambiyo_senetleri, anonim_sirket), meslek_hukuku 3 + denetim_kavrami, is_sozlesmesinin_sona_ermesi — hepsinde neden kör öğrencinin 'işaretliyi ele, en uzunu seç' stratejisi (%36-45). Kural: yayınlanan paket FATAL 0 olur, manifestteki
+bu ölçütle **35 paket FATAL**, 48 paket kör >%30. **Şu an: havuzda FATAL 0** (27 Eylül). Yeniden yazım: maliye 3, ekonomi 3, vergi 8, borçlar 8, muhasebe standartları 10. Onarım (olay tabanlı sorular korunup mutlak ifadeli şıklar aynı doğruluk değeriyle yeniden yazıldı, gerekçe taşıyan doğru şıklar kısaltıldı): ticaret_hukuku 4 (ticaret_sirketleri, ticari_isletme_tacir, anonim_sirket, kambiyo_senetleri) · meslek_hukuku 3 (esaslar %28→26, orgut_disiplin %33→25, degerler_etik %31→25) · denetim_kavrami (%36→21) · is_sozlesmesinin_sona_ermesi (%43→25; 0029'da iki doğru cevap hatası ve 0040 yakın kopyası da düzeltildi). Havuzda 4 UYARI kaldı (siparis_maliyeti, diger_guncel_standartlar, tms_7, sozcukte_cumlede_anlam — bu turda dokunulmadı). **Yayın bekliyor (v200).** Kural: yayınlanan paket FATAL 0 olur, manifestteki
 FATAL sayısı yalnız azalır (URETIM_KURALLARI §5).
 
 ⚠️ Toplam 104 → **107**: matematikte kapsam açığı kapatılırken iki, muhasebe
