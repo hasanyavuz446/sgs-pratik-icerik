@@ -841,7 +841,6 @@ KONFIG: dict[str, dict] = {
     "tms_37_karsiliklar": {"atma_ozel": TMS37_OZEL},
     "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
     "tms_23_borclanma_maliyetleri": {"atma_ozel": TMS23_OZEL},
-    "tfrs_16_kiralamalar": {"atma_ozel": TFRS16_OZEL, "uzat": TFRS16_UZAT},
     "tms_7_nakit_akis": {"atma_ozel": TMS7_OZEL, "uzat": TMS7_UZAT},
     "tms_38_modv": {"atma_ozel": TMS38_OZEL, "kisalt": TMS38_KISALT},
     "tms_36_deger_dusuklugu": {"atma_ozel": TMS36_OZEL},

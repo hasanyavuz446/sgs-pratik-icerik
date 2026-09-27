@@ -3,20 +3,20 @@
     "id": "std-tfrs16-gen-0001",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "TFRS 16'ya göre kiralama bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir perakendeci, bir alışveriş merkezinde 3 yıl boyunca 'uygun bir alan' kullanmak için sözleşme yapmıştır. AVM işletmesi, alanın yerini işletmenin onayı olmadan ve düşük maliyetle istediği zaman değiştirebilmekte ve bu değişiklikten ekonomik fayda sağlamaktadır. Sözleşme TFRS 16 bakımından nasıl değerlendirilir?",
     "options": {
-      "D": "Bir varlığın kullanım hakkını belirli bir süre için bedel karşılığında devreden sözleşmedir",
-      "A": "Bir varlığın mülkiyetinin bedel karşılığında kesin olarak devredilmesini ifade eden sözleşmedir",
-      "B": "Bir işletmenin başka bir işletmenin paylarını satın almasını ifade eden bir sözleşme türüdür",
-      "C": "Bir varlığın bakım ve onarımının üstlenilmesini ifade eden bir hizmet sözleşmesi",
-      "E": "Bir varlığın mülkiyetinin belirli bir bedel karşılığında kalıcı olarak devredilmesini sağlayan sözleşmedir"
+      "A": "Finansal kiralamadır",
+      "B": "Faaliyet kiralamasıdır",
+      "C": "Alt kiralamadır",
+      "D": "Kiralama içermez",
+      "E": "Kiralama içerir"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiralama, bir varlığın (dayanak varlık) kullanım hakkını bir bedel karşılığında belirli bir süre için devreden sözleşme ya da sözleşmenin bir parçasıdır. Doğru cevap D.",
+    "solution": "TFRS 16 p. 9 ve UR B14'e göre tedarikçinin kullanım süresi boyunca varlığı ikame etmeye yönelik **esaslı bir ikame hakkı** varsa (pratik olarak ikame edebiliyor ve bundan ekonomik fayda sağlıyorsa) **tanımlanmış bir varlık yoktur**; sözleşme kiralama içermez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiralama tanımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 9, UR B14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "std-tfrs16-gen-0002",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir sözleşmenin kiralama niteliği taşıması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, tek başına değeri düşük olmayan bir kamyonu 3 yıl süreyle kiralamıştır; kamyonun alt sistemlerinden bazıları ayrı ayrı düşük değerlidir. TFRS 16'ya göre bu kiralama için düşük değerli varlık muafiyeti uygulanabilir mi?",
     "options": {
-      "C": "Tanımlanmış bir varlığın kullanımını kontrol etme hakkının bedel karşılığında devredilmesi gerekir",
-      "A": "Yalnızca sözleşmede 'kiralama' ifadesinin geçmesi yeterli olup başka bir koşul aranmamaktadır",
-      "B": "Yalnızca varlığın mülkiyetinin devredilmiş olması gerekir; kullanım hakkı yeterli sayılmaz",
-      "D": "Yalnızca sözleşmenin bir yıldan uzun süreli olması yeterli olup başka koşul aranmamaktadır",
-      "E": "Bir sözleşmenin kiralama sayılması için tedarikçinin varlığı işletme adına işletmesi ve bakımını üstlenmesi yeterlidir"
+      "A": "Yarısına uygulanabilir",
+      "B": "İlk yıl uygulanabilir",
+      "C": "Uygulanamaz",
+      "D": "Kiraya veren onaylarsa uygulanabilir",
+      "E": "Uygulanabilir"
     },
     "answer": "C",
-    "solution": "TFRS 16: bir sözleşme, tanımlanmış bir varlığın kullanımını kontrol etme hakkını belirli bir süre için bedel karşılığında devrediyorsa kiralamadır ya da kiralama içerir. Doğru cevap C.",
+    "solution": "TFRS 16 UR B7'ye göre düşük değer değerlendirmesi **dayanak varlığın yeni olduğundaki değerine** göre yapılır; yeni bir kamyon genellikle düşük değerli sayılmaz. Parçaların tek başına düşük değerli olması muafiyeti sağlamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiralama tanımının unsurları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 UR B7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "std-tfrs16-gen-0003",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Tanımlanmış varlığın kullanımını kontrol etme hakkı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracının kira yükümlülüğü ilk ölçümde 250.000 ₺'dir. Kiracı kiralama başlamadan önce kiraya verene 20.000 ₺ peşin ödeme yapmış, kiraya verenden 8.000 ₺ kiralama teşviki almış, kiralamayı elde etmek için 6.000 ₺ komisyon (başlangıçtaki doğrudan maliyet) ödemiştir. Kiralama sonunda varlığı sökme ve alanı eski hâline getirme maliyetinin bugünkü değeri 12.000 ₺'dir. Kullanım hakkı varlığının maliyeti kaç ₺'dir?",
     "options": {
-      "C": "Kullanımdan sağlanacak ekonomik yararların tamamına yakınını elde etme ve kullanımı yönetme hakkı bulunmalıdır",
-      "A": "Yalnızca varlığın fiziken teslim alınmış olması yeterli olup başka bir koşul aranmamaktadır",
-      "B": "Yalnızca kira bedelinin peşin olarak ödenmiş olması yeterli olup başka koşul aranmamaktadır",
-      "D": "Yalnızca varlığın hukuki mülkiyetinin devralınmış olması gerekir; kullanım hakkı yetmemektedir",
-      "E": "Kullanımdan sağlanacak ekonomik yararların yalnızca küçük bir kısmını elde etme hakkı, varlığın kullanımını kontrol etmek için yeterli sayılır"
+      "A": "250.000",
+      "B": "268.000",
+      "C": "280.000",
+      "D": "296.000",
+      "E": "260.000"
     },
     "answer": "C",
-    "solution": "TFRS 16: müşteri, kullanım süresi boyunca (a) tanımlanmış varlığın kullanımından sağlanacak ekonomik yararların tamamına yakınını elde etme hakkına ve (b) tanımlanmış varlığın kullanımını yönetme hakkına sahipse varlığın kullanımını kontrol ediyordur. Doğru cevap C.",
+    "solution": "TFRS 16 p. 24'e göre kullanım hakkı varlığının maliyeti; kira yükümlülüğünün ilk ölçüm tutarı, başlangıçta veya öncesinde yapılan ödemeler (alınan teşvikler düşülerek), başlangıçtaki doğrudan maliyetler ve söküm/restorasyon maliyeti tahmininden oluşur: 250.000 + 20.000 − 8.000 + 6.000 + 12.000 = **280.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kontrol etme hakkı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 23-24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "std-tfrs16-gen-0004",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Tanımlanmış varlık bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracının 1 Ocak 2025'teki kira yükümlülüğü 248.685 ₺'dir; faiz oranı %10, yıl sonunda 100.000 ₺ kira ödenmiştir. 2025 yılı faiz gideri kaç ₺'dir?",
     "options": {
-      "B": "Varlık genellikle sözleşmede açıkça belirtilir; tedarikçi ikame etme hakkına sahipse varlık tanımlanmış değildir",
-      "A": "Varlığın sözleşmede belirtilmesi gerekmez; her varlık tanımlanmış sayılır",
-      "C": "Tedarikçinin ikame hakkı bulunsa dahi varlık tanımlanmış sayılır",
-      "D": "Yalnızca gayrimenkuller tanımlanmış varlık sayılır; taşınırlar kapsama girmez",
-      "E": "Tedarikçinin varlığı istediği zaman eşdeğeriyle ikame etme hakkı bulunsa dahi varlık tanımlanmış sayılır ve kiralama kapsamında değerlendirilir"
+      "A": "17.355",
+      "B": "24.869",
+      "C": "75.131",
+      "D": "10.000",
+      "E": "12.434"
     },
     "answer": "B",
-    "solution": "TFRS 16: varlık genellikle sözleşmede açıkça belirtilerek tanımlanır. Ancak tedarikçinin kullanım süresi boyunca varlığı ikame etmeye ilişkin esasa ilişkin bir hakkı varsa varlık tanımlanmış değildir. Doğru cevap B.",
+    "solution": "TFRS 16 p. 36-37'ye göre kira yükümlülüğü üzerindeki faiz, **yükümlülüğün kalan bakiyesine sabit dönemsel faiz oranı** uygulanarak hesaplanır: 248.685 × %10 = **24.869 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - tanımlanmış varlık"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 36-37"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "std-tfrs16-gen-0005",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "TFRS 16'nın kiracı muhasebesindeki temel yaklaşımı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı kullanım hakkı varlığını 270.000 ₺ maliyetle tanımıştır. Kiralama süresi 3 yıl, dayanak varlığın yararlı ömrü 8 yıldır. Kiracının kiralama sonunda varlığı sembolik bir bedelle satın alma opsiyonu vardır ve bu opsiyonun kullanılacağı makul ölçüde kesindir. Kalıntı değer yoktur. Yıllık doğrusal amortisman kaç ₺'dir?",
     "options": {
-      "A": "Kiracı tüm kiralamalar için tek bir model uygular; finansal ve faaliyet kiralaması ayrımı kaldırılmıştır",
-      "B": "Kiracı finansal ve faaliyet kiralaması ayrımını sürdürür",
-      "C": "Kiracı tüm kiralamaları faaliyet kiralaması olarak muhasebeleştirir",
-      "D": "Kiracı hiçbir kiralamayı finansal tablolarına yansıtmaz; tümü dipnotta açıklanmaktadır",
-      "E": "Kiracı, kiralamalarını finansal kiralama ve faaliyet kiralaması olarak ikiye ayırır ve farklı biçimde muhasebeleştirir"
+      "A": "33.750",
+      "B": "54.000",
+      "C": "0",
+      "D": "90.000",
+      "E": "24.545"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiracı açısından finansal kiralama ile faaliyet kiralaması ayrımı KALDIRILMIŞTIR. Kiracı, kısa vadeli ve düşük değerli varlık muafiyetleri dışındaki tüm kiralamalar için kullanım hakkı varlığı ve kira yükümlülüğü muhasebeleştirir. Doğru cevap A.",
+    "solution": "TFRS 16 p. 32'ye göre kiralama dayanak varlığın mülkiyetini devrediyorsa veya kiracının **satın alma opsiyonunu kullanacağı makul ölçüde kesinse**, kullanım hakkı varlığı **dayanak varlığın yararlı ömrü** boyunca amortismana tabi tutulur: 270.000 / 8 = **33.750 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiracıda tek model"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "std-tfrs16-gen-0006",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya veren muhasebesindeki sınıflandırma bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, yatırım amaçlı gayrimenkullerini gerçeğe uygun değer modeliyle ölçmektedir. İşletme bir binayı kiralamış ve bu binayı alt kiralamaya vererek kira geliri elde etmektedir; bina TMS 40'taki yatırım amaçlı gayrimenkul tanımını karşılamaktadır. Bu kullanım hakkı varlığı nasıl ölçülür?",
     "options": {
-      "D": "Kiraya veren, kiralamalarını finansal kiralama veya faaliyet kiralaması olarak sınıflandırmayı sürdürür",
-      "A": "Kiraya veren için de finansal ve faaliyet kiralaması ayrımı tümüyle kaldırılmış bulunur",
-      "B": "Kiraya veren tüm kiralamaları finansal kiralama olarak sınıflandırır",
-      "C": "Kiraya veren hiçbir kiralamayı finansal tablolarına yansıtmaz; tümü dipnotta açıklanmaktadır",
-      "E": "Kiraya veren de kiracı gibi tüm kiralamalar için tek bir model uygular; finansal-faaliyet ayrımı yapmaz"
+      "A": "Net gerçekleşebilir değerle",
+      "B": "Yeniden değerleme modeliyle",
+      "C": "Maliyet modeliyle",
+      "D": "Gerçeğe uygun değer modeliyle",
+      "E": "Özkaynak yöntemiyle"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiraya veren, kiralamalarının her birini faaliyet kiralaması veya finansal kiralama olarak sınıflandırır. Kiracıdaki ayrım kaldırılmış olsa da KİRAYA VERENDE ayrım DEVAM ETMEKTEDİR. Bu, Standardın en çok karıştırılan noktasıdır. Doğru cevap D.",
+    "solution": "TFRS 16 p. 34'e göre kiracı yatırım amaçlı gayrimenkullerine TMS 40'taki **gerçeğe uygun değer modelini** uyguluyorsa, TMS 40'taki yatırım amaçlı gayrimenkul tanımını karşılayan kullanım hakkı varlıklarına da bu modeli uygular.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya verende ayrım sürer"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 34-35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "std-tfrs16-gen-0007",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiracının uygulayabileceği muafiyetler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracının finansal tablolarının sunumuna ilişkin olarak aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "B": "Kısa vadeli kiralamalar ile dayanak varlığın düşük değerli olduğu kiralamalarda muafiyet uygulanabilir",
-      "A": "Kiracı için hiçbir muafiyet öngörülmemiş olup tüm kiralamalar bilançoya alınır",
-      "C": "Kiracı dilediği kiralamayı muafiyet kapsamına alabilir; hiçbir ölçüt aranmamaktadır",
-      "D": "Muafiyet yalnızca gayrimenkul kiralamaları için uygulanabilen bir kolaylığı ifade eder",
-      "E": "Kiracı yalnızca uzun vadeli ve yüksek değerli kiralamalar için muafiyet uygulayabilir"
+      "A": "Kullanım hakkı varlıkları ayrı sunulur veya dipnotta açıklanır",
+      "B": "Kira ödemelerinin tamamı faaliyet faaliyetlerinde gösterilir",
+      "C": "Anapara ödemeleri finansman faaliyetlerinde sınıflandırılır",
+      "D": "Kısa vadeli kiralama ödemeleri faaliyet faaliyetlerinde gösterilir",
+      "E": "Kira yükümlülüğündeki faiz gideri finansman gideridir"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiracı, (a) kısa vadeli kiralamalara ve (b) dayanak varlığın düşük değerli olduğu kiralamalara Standardın muhasebeleştirme hükümlerini uygulamamayı seçebilir. Doğru cevap B.",
+    "solution": "TFRS 16 p. 47-50'ye göre kullanım hakkı varlıkları ve kira yükümlülükleri ayrı sunulur veya açıklanır; faiz finansman gideridir. Nakit akış tablosunda **anapara kısmı finansman faaliyetlerinde**, faiz TMS 7'ye göre, kısa vadeli ve düşük değerli kiralama ödemeleri ile yükümlülüğe dâhil edilmeyen değişken ödemeler **faaliyet faaliyetlerinde** sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - muafiyetler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 47-50"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "std-tfrs16-gen-0008",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kısa vadeli kiralama bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya veren, bir makineyi ekonomik ömrünün büyük bölümünü kapsayan süre için kiraya vermiştir; kira ödemelerinin bugünkü değeri makinenin gerçeğe uygun değerinin önemli ölçüde tamamına eşittir. Kiraya veren bu kiralamayı nasıl sınıflandırır?",
     "options": {
-      "E": "Başlangıç tarihinde kiralama süresi on iki ay veya daha kısa olan ve satın alma opsiyonu içermeyen kiralamadır",
-      "A": "Başlangıç tarihinde kiralama süresi yirmi dört ay veya daha kısa olan her türlü kiralamayı ifade eder",
-      "B": "Satın alma opsiyonu içerse dahi süresi kısa olan her kiralama bu kapsamda değerlendirilmektedir",
-      "C": "Kira bedeli düşük olan her kiralama süresine bakılmaksızın kısa vadeli sayılır",
-      "D": "Kısa vadeli kiralama, başlangıçta süresi yirmi dört ay veya daha kısa olan ve satın alma opsiyonu içeren kiralamadır"
+      "A": "Satış ve geri kiralama",
+      "B": "Alt kiralama",
+      "C": "Kısa vadeli kiralama",
+      "D": "Faaliyet kiralaması",
+      "E": "Finansal kiralama"
     },
     "answer": "E",
-    "solution": "TFRS 16: kısa vadeli kiralama, başlangıç tarihinde kiralama süresi 12 ay veya daha az olan kiralamadır. Satın alma opsiyonu içeren bir kiralama kısa vadeli kiralama DEĞİLDİR. Doğru cevap E.",
+    "solution": "TFRS 16 p. 62-63'e göre dayanak varlığın sahipliğine ilişkin **risk ve getirilerin önemli ölçüde tamamını devreden** kiralama finansal kiralamadır; kiralama süresinin ekonomik ömrün büyük bölümünü kapsaması ve bugünkü değerin gerçeğe uygun değerin önemli ölçüde tamamına eşit olması bunun göstergeleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kısa vadeli kiralama"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 61-62"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "std-tfrs16-gen-0009",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Muafiyet uygulanan kiralamalarda kira ödemeleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya veren, faaliyet kiralamasına konu ettiği ve kendisine ait olan makineleri finansal durum tablosunda göstermeye devam etmektedir. Bu makinelerin amortismanı hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "Kira ödemeleri kiralama süresi boyunca doğrusal olarak gider muhasebeleştirilir",
-      "A": "Kira ödemeleri kullanım hakkı varlığı olarak aktifleştirilir",
-      "B": "Kira ödemeleri tek seferde ve peşin olarak gider yazılır",
-      "C": "Kira ödemeleri kayda alınmaz; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "E": "Kira ödemeleri doğrudan özkaynaklardan indirilmek zorunda olan kalemlerdir"
+      "A": "Kiracı amortisman ayırır",
+      "B": "Amortisman ayrılmaz",
+      "C": "Amortisman DKG'ye yansır",
+      "D": "Kiraya veren amortisman ayırır",
+      "E": "Amortisman kira gelirinden düşülüp gösterilmez"
     },
     "answer": "D",
-    "solution": "TFRS 16: muafiyet seçilen kiralamalarda kiracı, kiralamaya ilişkin kira ödemelerini kiralama süresi boyunca doğrusal olarak veya başka bir sistematik esasa göre gider olarak muhasebeleştirir. Doğru cevap D.",
+    "solution": "TFRS 16 p. 84 ve 88'e göre faaliyet kiralamasına konu dayanak varlık **kiraya verenin** finansal durum tablosunda kalır ve kiraya veren benzer varlıklar için uyguladığı amortisman politikasıyla (TMS 16, TMS 38) amortisman ayırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - muafiyette gider yazma"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 88"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "std-tfrs16-gen-0010",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Düşük değerli varlık muafiyetinin uygulanma düzeyi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kendi ürettiği makineleri satan bir üretici, bir makineyi finansal kiralamayla kiraya vermiştir. Makinenin üretim maliyeti 300.000 ₺, gerçeğe uygun değeri 420.000 ₺'dir; kira ödemelerinin piyasa faiz oranıyla bugünkü değeri 410.000 ₺'dir. Kiralamanın başlangıcında tanınacak hasılat kaç ₺'dir?",
     "options": {
-      "C": "Kiralama bazında uygulanabilir; dayanak varlığın yeniyken değerine göre değerlendirilir",
-      "A": "Yalnızca işletmenin tamamı için topluca uygulanabilen bir muafiyeti ifade eder",
-      "B": "Yalnızca varlığın kiralama tarihindeki kullanılmış hâlinin değerine göre değerlendirilmektedir",
-      "D": "Düşük değer ölçütü kiracının toplam varlıklarına oranlanarak belirlenir",
-      "E": "Düşük değerli varlık muafiyeti yalnızca işletme genelinde tüm kiralamalara bir bütün olarak birlikte uygulanabilir"
+      "A": "300.000",
+      "B": "110.000",
+      "C": "410.000",
+      "D": "420.000",
+      "E": "120.000"
     },
     "answer": "C",
-    "solution": "TFRS 16: düşük değerli varlık kiralamalarına ilişkin muafiyet kiralama bazında uygulanabilir. Bir dayanak varlığın düşük değerli olup olmadığı, varlığın YENİ hâlindeki değerine göre ve kiracının büyüklüğünden bağımsız olarak mutlak biçimde değerlendirilir. Doğru cevap C.",
+    "solution": "TFRS 16 p. 71'e göre üretici veya satıcı kiraya veren, kiralamanın başlangıcında hasılatı **dayanak varlığın gerçeğe uygun değeri ile kira ödemelerinin piyasa faiz oranıyla bugünkü değerinden düşük olanıyla** ölçer: **410.000 ₺**. Satış kârı 410.000 − 300.000 = 110.000 ₺ olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - düşük değerli varlık"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 71"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "std-tfrs16-gen-0011",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kısa vadeli kiralama muafiyetinin uygulanma düzeyi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, kiralamanın fiilen başladığı tarihte finansal tablolarına hangi iki kalemi yansıtır?",
     "options": {
-      "E": "Dayanak varlık sınıfı bazında yapılan bir tercihtir",
-      "A": "Her kiralama için ayrı ayrı ve serbestçe yapılabilen bir tercihi ifade eder",
-      "B": "İşletmenin tüm kiralamaları için topluca yapılmak zorunda olan bir tercihi ifade eder",
-      "C": "Yalnızca kiraya verenin onay vermesi hâlinde yapılabilen bir tercih",
-      "D": "Kısa vadeli kiralama muafiyeti kiralama bazında tek tek yapılan bir tercihtir"
+      "A": "Maddi duran varlık ve özkaynak",
+      "B": "Peşin ödenmiş gider ve karşılık",
+      "C": "Kira gideri ve kira borcu",
+      "D": "Kira alacağı ve kira geliri",
+      "E": "Kullanım hakkı varlığı ve kira yükümlülüğü"
     },
     "answer": "E",
-    "solution": "TFRS 16: kısa vadeli kiralamalara ilişkin tercih, kullanım hakkının ilgili olduğu dayanak varlık sınıfı bazında yapılır. Düşük değerli varlık muafiyeti ise kiralama bazında uygulanabilir. Doğru cevap E.",
+    "solution": "TFRS 16 p. 22'ye göre kiracı, kiralamanın fiilen başladığı tarihte finansal tablolarına bir **kullanım hakkı varlığı** ve bir **kira yükümlülüğü** yansıtır; kısa vadeli ve düşük değerli kiralama muafiyetleri hariç.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - muafiyet tercihinin düzeyi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "std-tfrs16-gen-0012",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme, ofisinde kullanmak üzere bir dizüstü bilgisayarı iki yıllığına kiralamıştır. TFRS 16 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir bina kiralamış; sözleşme bedeli binanın kullanımı yanında temizlik ve güvenlik hizmetlerini de kapsamaktadır. İşletme, kiralama bileşenini kiralama dışı bileşenlerden ayırmamayı tercih etmek istemektedir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "B": "Dayanak varlık düşük değerliyse muafiyet uygulanıp kira ödemeleri doğrusal gider yazılabilir",
-      "A": "Süre on iki ayı aştığından kullanım hakkı varlığı muhasebeleştirilir",
-      "C": "Bilgisayar kiralamaları TFRS 16 kapsamı dışında olup kayda alınmamaktadır",
-      "D": "Kira ödemeleri doğrudan özkaynaklardan indirilmek zorunda tutulan kalemlerdir",
-      "E": "Kiralama finansal kiralama sayılır ve dayanak varlık aktifleştirilir"
+      "A": "Kiracı dayanak varlık sınıfı bazında ayırmama tercihini yapabilir",
+      "B": "Bu tercih kiraya verene de tanınmış bir kolaylıktır",
+      "C": "Kiracı bileşenleri ayrı muhasebeleştirebilir",
+      "D": "Ayırmama hâlinde tüm bedel tek bir kiralama bileşeni sayılır",
+      "E": "Bedel göreli tek başına satış fiyatlarına göre dağıtılabilir"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiralama süresi 12 ayı aştığından kısa vadeli kiralama muafiyeti uygulanamaz. Ancak dizüstü bilgisayar gibi dayanak varlığın düşük değerli olduğu kiralamalarda ayrı bir muafiyet vardır; kiracı bunu seçerse kira ödemelerini doğrusal olarak gider yazar. Doğru cevap B.",
+    "solution": "TFRS 16 p. 12-15'e göre kiracı sözleşme bedelini bileşenlerin göreli tek başına fiyatlarına göre dağıtır; **kiracı**, dayanak varlık sınıfı bazında kiralama dışı bileşenleri ayırmayıp tek bir kiralama bileşeni olarak muhasebeleştirmeyi seçebilir. Bu pratik kolaylık **yalnız kiracıya** tanınmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - düşük değerli varlık (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 12, 15"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "std-tfrs16-gen-0013",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdakilerden hangileri TFRS 16'ya göre kiracının muafiyet uygulayabileceği kiralamalardandır?\n\nI. Kısa vadeli kiralamalar\n\nII. Dayanak varlığın yüksek değerli olduğu kiralamalar\n\nIII. Kiracının kârsız olduğu dönemdeki kiralamalar",
+    "stem": "Bir kiracı 1 Ocak'ta bir makine kiralamıştır. Kira ödemeleri her yılın başında 100.000 ₺ olmak üzere 3 yıl sürecektir; ilk ödeme kiralama başlangıcında yapılmıştır. Alternatif borçlanma faiz oranı %10'dur. İlk ödeme yapıldıktan sonra tanınacak kira yükümlülüğü yaklaşık kaç ₺'dir?",
     "options": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "248.685",
+      "B": "173.554",
+      "C": "300.000",
+      "D": "273.554",
+      "E": "200.000"
     },
     "answer": "B",
-    "solution": "Kısa vadeli kiralamalarda muafiyet uygulanabilir (I). İkinci muafiyet yüksek değil, düşük değerli dayanak varlıklar içindir; bu nedenle II yanlıştır. Kiracının kârlılık durumu da muafiyet ölçütü değildir (III). Yalnız I doğrudur. Doğru cevap B.",
+    "solution": "TFRS 16 p. 26'ya göre kira yükümlülüğü **o tarihte ödenmemiş** kira ödemelerinin bugünkü değeridir. Başlangıçta yapılan ödeme yükümlülüğe girmez, kullanım hakkının maliyetine eklenir. Kalan iki ödemenin bugünkü değeri: 100.000/1,1 + 100.000/1,21 ≈ **173.554 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - muafiyetler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 26, 27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "std-tfrs16-gen-0014",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdaki ifadelerden hangileri TFRS 16 bakımından doğrudur?\n\nI. Kiraya veren de tüm kiralamalar için tek model uygular\n\nII. Kiracıda finansal-faaliyet kiralaması ayrımı kaldırılmıştır\n\nIII. Kiraya verende bu ayrım sürmektedir",
+    "stem": "Bir kiracı 1 Ocak'ta 270.000 ₺ maliyetle kullanım hakkı varlığı tanımıştır; kiralama süresi 3 yıl, dayanak varlığın yararlı ömrü 8 yıldır, mülkiyet devri yoktur ve doğrusal amortisman uygulanır. Değer düşüklüğü yoktur. Birinci yıl sonunda kullanım hakkı varlığının defter değeri kaç ₺'dir?",
     "options": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "90.000",
+      "B": "270.000",
+      "C": "236.250",
+      "D": "180.000",
+      "E": "21.315"
     },
     "answer": "D",
-    "solution": "Kiracıda ayrım kaldırılmış (II), kiraya verende ise sürmektedir (III). Kiraya veren tek model UYGULAMAZ; kiralamalarını finansal veya faaliyet kiralaması olarak sınıflandırmaya devam eder. Bu nedenle I yanlıştır. Doğru cevap D.",
+    "solution": "TFRS 16 p. 30'a göre maliyet modelinde kullanım hakkı varlığı, maliyetinden birikmiş amortisman ve değer düşüklüğü düşülerek ölçülür: 270.000 − 90.000 = **180.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiracı-kiraya veren ayrımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 30"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "std-tfrs16-gen-0015",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiracının başlangıç tarihinde yapacağı muhasebeleştirme bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir depoyu aylık olarak kendiliğinden yenilenen bir sözleşmeyle kiralamıştır; hem kiracı hem kiraya veren sözleşmeyi 1 ay önceden bildirmek koşuluyla önemsiz bir ceza bile ödemeden feshedebilmektedir. Kiralama süresi nasıl belirlenir?",
     "options": {
-      "B": "Bir kullanım hakkı varlığı ve bir kira yükümlülüğü muhasebeleştirir",
-      "A": "Yalnızca kira gideri muhasebeleştirir; bilançoda hiçbir kalem oluşturulmamaktadır",
-      "C": "Dayanak varlığın kendisini maddi duran varlık olarak aktifleştirir",
-      "D": "Yalnızca dipnotlarda açıklama yapar; finansal tablolara hiçbir tutar yansıtılmamaktadır",
-      "E": "Yalnızca bir yükümlülük muhasebeleştirir; varlık tarafında hiçbir kayıt yapılmamaktadır"
+      "A": "Sözleşmenin toplam beklenen süresi",
+      "B": "1 ay",
+      "C": "12 ay",
+      "D": "Belirsiz süre",
+      "E": "Kiracının tahmini kullanım süresi"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiracı, başlangıç tarihinde bir kullanım hakkı varlığı ve bir kira yükümlülüğü muhasebeleştirir. Kiracı dayanak varlığın kendisini değil, onu kullanma HAKKINI aktifleştirir. Doğru cevap B.",
+    "solution": "TFRS 16 UR B34'e göre kiracı ve kiraya verenin her birinin kiralamayı diğerinin iznini almadan **önemsiz bir cezayla feshetme hakkı** varsa kiralama o süreden sonra uygulanabilir değildir; kiralama süresi ihbar süresiyle sınırlıdır ve kiralama kısa vadelidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiracının ilk muhasebeleştirmesi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 UR B34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "std-tfrs16-gen-0016",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kira yükümlülüğünün ilk ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin sözleşmeleri şunlardır: ofis binası kiralaması, petrol arama hakkı, bir film lisansı, bir kamu hizmet imtiyaz anlaşması ve kiracı olarak elde tutulan biyolojik varlık kiralaması. Bunlardan hangisi TFRS 16 kapsamındadır?",
     "options": {
-      "B": "Başlangıç tarihinde ödenmemiş kira ödemelerinin bugünkü değeriyle ölçülür",
-      "A": "Ödenecek toplam kira tutarının iskonto edilmemiş nominal toplamıyla ölçülür",
-      "C": "Dayanak varlığın gerçeğe uygun değeriyle ölçülür; kira ödemeleri dikkate alınmamaktadır",
-      "D": "Yalnızca ilk yılın kira ödemesi tutarıyla ölçülür; sonraki yıllar hiç dikkate alınmaz",
-      "E": "Başlangıç tarihinde ödenecek kira ödemelerinin toplam nominal tutarıyla ölçülür; iskonto yapılmaz"
+      "A": "Petrol arama hakkı",
+      "B": "Ofis binası kiralaması",
+      "C": "Hizmet imtiyaz anlaşması",
+      "D": "Biyolojik varlık kiralaması",
+      "E": "Film lisansı"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiracı başlangıç tarihinde kira yükümlülüğünü, o tarihte ödenmemiş olan kira ödemelerinin bugünkü değeri üzerinden ölçer. Doğru cevap B.",
+    "solution": "TFRS 16 p. 3'e göre maden ve petrol gibi yenilenemeyen kaynakların arama veya kullanım hakları, kiracının elde tuttuğu TMS 41 kapsamındaki biyolojik varlıklar, hizmet imtiyaz anlaşmaları ve kiracının TMS 38 kapsamında elde tuttuğu film gibi lisanslar kapsam dışıdır; **ofis binası kiralaması** kapsamdadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kira yükümlülüğü ilk ölçümü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 3"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "std-tfrs16-gen-0017",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kira ödemelerinin iskonto edilmesinde kullanılacak oran bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme benzer özelliklere sahip yüzlerce araç kiralamasını tek tek değil, bir portföy olarak muhasebeleştirmek istemektedir; portföy yaklaşımının finansal tabloları tek tek uygulamadan önemli ölçüde farklı etkilemeyeceğini makul olarak beklemektedir. TFRS 16'ya göre bu uygulama hakkında ne söylenebilir?",
     "options": {
-      "A": "Kiralamadaki zımni faiz oranı kolayca belirlenebiliyorsa o, aksi hâlde kiracının alternatif borçlanma faiz oranı kullanılır",
-      "B": "Ve istisnasız kiracının alternatif borçlanma faiz oranı kullanılır",
-      "C": "Merkez bankasının ilan ettiği politika faizi kullanılır",
-      "D": "İskonto oranı kullanılmaz; kira ödemeleri nominal tutarlarıyla toplanır",
-      "E": "Kira ödemeleri piyasadaki güncel gösterge faiz oranıyla iskonto edilir; kiralamadaki zımni faiz oranı kolayca belirlenebilse dahi kullanılmaz"
+      "A": "Uygulanabilir",
+      "B": "Kiraya veren onayına bağlıdır",
+      "C": "Denetçi onayına bağlıdır",
+      "D": "Uygulanamaz",
+      "E": "Kısa vadede mümkündür"
     },
     "answer": "A",
-    "solution": "TFRS 16: kira ödemeleri, kiralamadaki zımni faiz oranı kolaylıkla belirlenebiliyorsa bu oran kullanılarak iskonto edilir. Bu oran kolaylıkla belirlenemiyorsa kiracı, kendi alternatif borçlanma faiz oranını kullanır. Doğru cevap A.",
+    "solution": "TFRS 16 UR B1'e göre işletme, portföy yaklaşımının etkilerinin tek tek kiralamalara uygulamadan **önemli ölçüde farklı olmayacağını makul olarak bekliyorsa**, standardı benzer özelliklere sahip kiralama portföyüne uygulayabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - iskonto oranı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 UR B1"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "std-tfrs16-gen-0018",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığının ilk ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya verenin finansal kiralamasında kira ödemelerinin zımni faiz oranıyla bugünkü değeri 450.000 ₺, kiralama sonunda kiraya verene dönecek ve kimsenin garanti etmediği kalıntı değerin bugünkü değeri 30.000 ₺'dir. Net kiralama yatırımı kaç ₺'dir?",
     "options": {
-      "A": "Maliyet bedeliyle ölçülür",
-      "B": "Gerçeğe uygun değeriyle ölçülür; maliyet bedeli dikkate alınmamaktadır",
-      "C": "Net gerçekleşebilir değeriyle ölçülür; bu değer maliyetten düşük olur",
-      "D": "Dayanak varlığın defter değeriyle ölçülür; kiraya verenin kayıtları esas alınmaktadır",
-      "E": "Kullanım hakkı varlığı başlangıçta gerçeğe uygun değeriyle ölçülür"
+      "A": "480.000",
+      "B": "30.000",
+      "C": "510.000",
+      "D": "450.000",
+      "E": "420.000"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiracı, başlangıç tarihinde kullanım hakkı varlığını maliyet bedeli üzerinden ölçer. Doğru cevap A.",
+    "solution": "TFRS 16 Ek A ve p. 68'e göre net kiralama yatırımı, kira ödemeleri ile **kiraya verene tahakkuk eden garanti edilmemiş kalıntı değerin** zımni faiz oranıyla iskonto edilmiş toplamıdır: 450.000 + 30.000 = **480.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kullanım hakkı varlığı ilk ölçümü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 68"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "std-tfrs16-gen-0019",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığının maliyetine giren unsurlar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kiracı muhasebesine ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Kiracı, muafiyetler dışında bütün kiralamalar için kullanım hakkı varlığı tanır\n\nII. Mülkiyet devri ve satın alma opsiyonu yoksa kullanım hakkı, dayanak varlığın yararlı ömrü boyunca amortismana tabi tutulur\n\nIII. Kısa vadeli kiralamalar doğrusal olarak giderleştirilebilir",
     "options": {
-      "C": "Kira yükümlülüğü, peşin ödemeler, doğrudan maliyetler ve restorasyon tahmini girer; teşvikler düşülür",
-      "A": "Yalnızca kira yükümlülüğünün ilk ölçüm tutarı maliyete girer; diğer unsurlar gider yazılır",
-      "B": "Yalnızca peşin ödenen kira tutarı maliyete girer; kira yükümlülüğü dikkate alınmamaktadır",
-      "D": "İşletmenin tüm genel yönetim giderleri de maliyete dâhil edilir",
-      "E": "Kullanım hakkı varlığının maliyeti yalnızca ilk kira ödemesinden oluşur; doğrudan maliyet ve restorasyon tutarları hariçtir"
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve III",
+      "D": "I, II ve III",
+      "E": "I ve II"
     },
     "answer": "C",
-    "solution": "TFRS 16: kullanım hakkı varlığının maliyeti; (a) kira yükümlülüğünün ilk ölçüm tutarını, (b) başlangıç tarihinde veya öncesinde yapılan kira ödemelerinden alınan kiralama teşvikleri düşülmüş hâlini, (c) kiracı tarafından katlanılan başlangıçtaki doğrudan maliyetleri ve (d) sökme, kaldırma ve restorasyon maliyeti tahminini içerir. Doğru cevap C.",
+    "solution": "TFRS 16 p. 22'ye göre kiracı muafiyetler dışında kullanım hakkı tanır (I); p. 6'ya göre kısa vadeli kiralamalar doğrusal giderleştirilebilir (III). p. 32'ye göre mülkiyet devri veya makul kesin satın alma opsiyonu yoksa amortisman **kiralama süresi ile yararlı ömrün kısa olanı** boyunca ayrılır (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kullanım hakkı varlığı maliyeti"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 5, 22, 32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "std-tfrs16-gen-0020",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracının başlangıç tarihinde ölçtüğü kira yükümlülüğü 500.000 TL'dir. Kiracı başlangıçta 40.000 TL peşin kira ödemiş, 25.000 TL başlangıçtaki doğrudan maliyete katlanmış ve kiraya verenden 15.000 TL kiralama teşviki almıştır. Kullanım hakkı varlığının maliyeti kaç TL'dir?",
+    "stem": "Aşağıdakilerden hangileri doğrudur?\n\nI. Kira yükümlülüğü faizle artırılıp ödemelerle azaltılır\n\nII. Endeks değişikliğinden doğan yeniden ölçüm kâr veya zarara yansıtılır\n\nIII. Satış ve geri kiralamada devir satış değilse alınan bedel finansal yükümlülüktür",
     "options": {
-      "A": "550.000 TL",
-      "B": "580.000 TL",
-      "C": "565.000 TL",
-      "D": "500.000 TL",
-      "E": "450.000 TL"
+      "A": "I ve III",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "II ve III",
+      "E": "Yalnız I"
     },
     "answer": "A",
-    "solution": "Kullanım hakkı varlığı = Kira yükümlülüğü + Peşin ödemeler + Başlangıçtaki doğrudan maliyetler − Alınan kiralama teşvikleri = 500.000 + 40.000 + 25.000 − 15.000 = 550.000 TL. Doğru cevap A.",
+    "solution": "TFRS 16 p. 36'ya göre yükümlülük faizle artar, ödemelerle azalır (I); p. 103'e göre satış olmayan devirde bedel finansal yükümlülüktür (III). p. 39'a göre yeniden ölçüm **kullanım hakkı varlığında düzeltme** olarak muhasebeleştirilir (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kullanım hakkı varlığı maliyeti hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 36, 39, 42"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "std-tfrs16-gen-0021",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme bir depoyu 3 yıllığına kiralamıştır. Her yıl sonunda 100.000 TL kira ödenecektir. Sözleşmedeki zımni faiz oranına göre 3 yıllık eşit taksitli ödemelerin bugünkü değer faktörü 2,4869'dur. Kira yükümlülüğünün ilk ölçüm tutarı kaç TL'dir?",
+    "stem": "Bir işletme, belirli seri numaralı bir kamyonu 2 yıl süreyle kullanma hakkı elde etmiştir. Kamyonun hangi rotada ve ne zaman kullanılacağına işletme karar vermekte ve kamyonun sağladığı ekonomik faydaların önemli ölçüde tamamını elde etmektedir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "D": "248.690 TL",
-      "A": "300.000 TL",
-      "B": "100.000 TL",
-      "C": "746.070 TL",
-      "E": "40.211 TL"
+      "A": "İşletme varlığın kullanımını yönlendirme hakkına sahiptir",
+      "B": "Faydaların önemli ölçüde tamamı işletmeye aittir",
+      "C": "Tanımlanmış bir varlık vardır",
+      "D": "Tedarikçi kamyonu kullandığı için sözleşme kiralama değildir",
+      "E": "Sözleşme kiralama içerir"
     },
     "answer": "D",
-    "solution": "Kira yükümlülüğü, ödenmemiş kira ödemelerinin BUGÜNKÜ DEĞERİDİR; nominal toplam değildir. Bugünkü değer = Yıllık taksit × Bugünkü değer faktörü = 100.000 × 2,4869 = 248.690 TL. Nominal toplam olan 300.000 TL yükümlülük tutarı değildir. Doğru cevap D.",
+    "solution": "TFRS 16 p. 9 ve UR B9'a göre sözleşme, **tanımlanmış bir varlığın** kullanımını kontrol etme hakkını (faydaların önemli ölçüde tamamını elde etme ve kullanımını yönlendirme hakkı) belirli bir süre için bedel karşılığında devrediyorsa kiralama içerir. Kamyonu tedarikçi değil işletme kullanmaktadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kira yükümlülüğü bugünkü değeri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 9, UR B9"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "std-tfrs16-gen-0022",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Başlangıçtaki doğrudan maliyetler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme çalışanları için yeni olduğunda değeri düşük olan dizüstü bilgisayarlar ve cep telefonları kiralamıştır; kiralamalar 3 yıl sürelidir. İşletme bu kiralamalar için hangi muafiyeti kullanabilir?",
     "options": {
-      "E": "Kiracı tarafından katlanılan bu maliyetler kullanım hakkı varlığının maliyetine dâhil edilir",
-      "A": "Bu maliyetler ve istisnasız doğrudan dönem gideri yazılır",
-      "B": "Bu maliyetler kira yükümlülüğüne eklenir",
-      "C": "Bu maliyetler kayda alınmaz; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "D": "Başlangıçtaki doğrudan maliyetler oluştukları dönemde doğrudan gider yazılır; kullanım hakkı varlığına eklenmez"
+      "A": "Satış ve geri kiralama muafiyeti",
+      "B": "Kiraya veren muafiyeti",
+      "C": "Kısa vadeli kiralama muafiyeti",
+      "D": "Portföy muafiyeti",
+      "E": "Düşük değerli varlık muafiyeti"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiracı tarafından katlanılan başlangıçtaki doğrudan maliyetler, kullanım hakkı varlığının maliyetine dâhil edilir. Doğru cevap E.",
+    "solution": "TFRS 16 p. 5(b) ve UR B3-B8'e göre dayanak varlığın **yeni olduğundaki değeri düşükse**, kiralama süresinden bağımsız olarak düşük değerli varlık muafiyeti uygulanabilir. Kısa vadeli muafiyet 12 ayı aşan bu kiralamalara uygulanamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - başlangıçtaki doğrudan maliyetler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 5, UR B3-B8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "std-tfrs16-gen-0023",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kira ödemelerinin kapsamı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme 1 Ocak 2025'te bir makineyi 3 yıl süreyle kiralamıştır. Kira ödemeleri her yıl sonunda 100.000 ₺'dir; kiralamadaki zımni faiz oranı belirlenemediğinden işletmenin alternatif borçlanma faiz oranı %10 kullanılacaktır. Kira yükümlülüğünün ilk ölçüm tutarı yaklaşık kaç ₺'dir?",
     "options": {
-      "E": "Sabit ödemeler, endekse bağlı değişken ödemeler, kalıntı değer taahhütleri ve makul ölçüde kesin opsiyon bedelleri dâhildir",
-      "A": "Yalnızca sabit kira ödemeleri dâhildir; diğer hiçbir unsur hesaba katılmamaktadır",
-      "B": "Yalnızca değişken kira ödemeleri dâhildir; sabit ödemeler hiç dikkate alınmamaktadır",
-      "C": "İşletmenin tüm işletme giderleri de kira ödemesi sayılarak hesaba katılır",
-      "D": "Kira ödemeleri yalnızca sabit ödemeleri kapsar; endekse bağlı değişken ödemeler, kalıntı değer taahhütleri ve satın alma opsiyonu bedelleri kapsama girmez"
+      "A": "270.000",
+      "B": "272.727",
+      "C": "273.554",
+      "D": "300.000",
+      "E": "248.685"
     },
     "answer": "E",
-    "solution": "TFRS 16: kira ödemeleri; sabit ödemeleri (alınacak teşvikler düşülmüş), bir endeks veya orana bağlı değişken kira ödemelerini, kalıntı değer taahhütleri kapsamında ödenmesi beklenen tutarları, kullanılacağı makul ölçüde kesin olan satın alma opsiyonunun kullanım fiyatını ve sonlandırma cezalarını içerir. Doğru cevap E.",
+    "solution": "TFRS 16 p. 26'ya göre kira yükümlülüğü, **o tarihte ödenmemiş kira ödemelerinin bugünkü değeriyle** ölçülür; zımni oran belirlenemiyorsa alternatif borçlanma faiz oranı kullanılır: 100.000 × (1/1,1 + 1/1,21 + 1/1,331) ≈ **248.685 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kira ödemelerinin kapsamı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 26"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "std-tfrs16-gen-0024",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Endekse veya orana bağlı OLMAYAN değişken kira ödemeleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, kira yükümlülüğünü ölçerken kullanacağı iskonto oranını belirlemektedir. Kiralamadaki zımni faiz oranı kolaylıkla belirlenebilmektedir. Hangi oran kullanılır?",
     "options": {
-      "A": "Kira yükümlülüğünün ölçümüne dâhil edilmez; gerçekleştiği dönemde gider yazılır",
-      "B": "Kira yükümlülüğünün ölçümüne dâhil edilir",
-      "C": "Kullanım hakkı varlığının maliyetine eklenir",
-      "D": "Kayda alınmaz; yalnızca dipnotlarda açıklanmakla yetinilen bir husustur",
-      "E": "Endekse bağlı olmayan değişken kira ödemeleri de kira yükümlülüğünün ilk ölçümüne dâhil edilir"
+      "A": "Kiralamadaki zımni faiz oranı",
+      "B": "Merkez bankası politika faizi",
+      "C": "Ortalama mevduat faizi",
+      "D": "Alternatif borçlanma faiz oranı",
+      "E": "Enflasyon oranı"
     },
     "answer": "A",
-    "solution": "TFRS 16: bir endekse veya orana bağlı olmayan değişken kira ödemeleri (satış hasılatına bağlı ödemeler gibi) kira yükümlülüğünün ölçümüne dâhil edilmez; bunları tetikleyen olayın gerçekleştiği dönemde kâr veya zararda muhasebeleştirilir. Doğru cevap A.",
+    "solution": "TFRS 16 p. 26'ya göre kira ödemeleri, **kolaylıkla belirlenebiliyorsa kiralamadaki zımni faiz oranı**, belirlenemiyorsa kiracının alternatif borçlanma faiz oranı kullanılarak iskonto edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - değişken kira ödemeleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 26"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "std-tfrs16-gen-0025",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiralama süresinin belirlenmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracının 1 Ocak 2025'teki kira yükümlülüğü 248.685 ₺'dir; faiz oranı %10, yıl sonunda 100.000 ₺ kira ödenmiştir. 31 Aralık 2025 tarihli kira yükümlülüğü kaç ₺'dir?",
     "options": {
-      "C": "İptal edilemeyen süreye, kullanılacağı makul ölçüde kesin olan uzatma opsiyonu dönemleri eklenir",
-      "A": "Yalnızca iptal edilemeyen süre dikkate alınır; uzatma opsiyonları eklenmez",
-      "B": "Tüm uzatma opsiyonları ve koşulsuz olarak kiralama süresine eklenir",
-      "D": "Kiralama süresi on iki ay olarak kabul edilmek zorunda tutulan bir kavramdır",
-      "E": "Kiralama süresi yalnızca iptal edilemeyen dönemdir; uzatma ve sonlandırma opsiyonları dikkate alınmaz"
+      "A": "148.685",
+      "B": "273.554",
+      "C": "173.554",
+      "D": "248.685",
+      "E": "200.000"
     },
     "answer": "C",
-    "solution": "TFRS 16: kiralama süresi, kiralamanın iptal edilemeyen süresi ile (a) kiracının kullanacağından makul ölçüde emin olduğu uzatma opsiyonuna ilişkin dönemleri ve (b) kullanmayacağından makul ölçüde emin olduğu sonlandırma opsiyonuna ilişkin dönemleri kapsar. Doğru cevap C.",
+    "solution": "TFRS 16 p. 36'ya göre yükümlülüğün defter değeri faizle artırılır, yapılan ödemelerle azaltılır: 248.685 + 24.869 − 100.000 = **173.554 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiralama süresi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "std-tfrs16-gen-0026",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiralama ve kiralama niteliği taşımayan bileşenlerin ayrıştırılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir mağaza kiralamasında kiracı, sabit kiraya ek olarak yıllık satışlarının %2'si oranında kira ödemektedir. Bu yıl satışlara bağlı ek kira 36.000 ₺ olmuştur. Bu tutar nasıl muhasebeleştirilir?",
     "options": {
-      "A": "Kural olarak ayrıştırılır; ancak kiracı ayrıştırmama kolaylığını dayanak varlık sınıfı bazında seçebilir",
-      "B": "Bileşenler ayrıştırılamaz; sözleşme her zaman bütün olarak ele alınmaktadır",
-      "C": "Bileşenler ayrıştırılır; hiçbir kolaylık öngörülmemiş bulunur",
-      "D": "Ayrıştırma yalnızca kiraya verenin onay vermesi hâlinde yapılabilen bir işlemi ifade eder",
-      "E": "Kiralama ve kiralama dışı bileşenler ayrıştırılmaz; sözleşme bedeli tümüyle kiralama olarak muhasebeleştirilir"
+      "A": "Dönem gideri olarak",
+      "B": "Özkaynaktan düşülerek",
+      "C": "Kira yükümlülüğüne eklenerek",
+      "D": "DKG'ye alınarak",
+      "E": "Kullanım hakkı maliyetine eklenerek"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiralama içeren bir sözleşmede kiracı, her bir kiralama bileşenini kiralama niteliği taşımayan bileşenlerden (bakım hizmeti gibi) ayrı olarak muhasebeleştirir. Ancak kiracı, dayanak varlık sınıfı bazında bunları ayrıştırmama ve tek bir kiralama bileşeni olarak muhasebeleştirme kolaylığını seçebilir. Doğru cevap A.",
+    "solution": "TFRS 16 p. 38(b)'ye göre kira yükümlülüğünün ölçümüne dâhil edilmeyen değişken kira ödemeleri, **bu ödemeleri tetikleyen olay veya koşulun gerçekleştiği dönemde kâr veya zararda** muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - bileşenlerin ayrıştırılması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 38"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "std-tfrs16-gen-0027",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme, mağazasını on yıllığına kiralamış olup kira bedeli sabittir. TFRS 16 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kira ödemeleri TÜFE'ye bağlı olan bir kiralamada kira yükümlülüğünün mevcut defter değeri 180.000 ₺'dir. Yeni yılın başında endeks değişimiyle kalan kira ödemeleri %40 artmıştır; indirgeme oranı değiştirilmez. Kira yükümlülüğündeki artış yaklaşık kaç ₺'dir ve karşılığı nereye yansır?",
     "options": {
-      "D": "Kiracı kullanım hakkı varlığı ve kira yükümlülüğü muhasebeleştirir",
-      "A": "Kiracı yalnızca kira gideri yazar; bilançoda hiçbir kalem oluşturulmaz",
-      "B": "Kiracı mağazanın kendisini maddi duran varlık olarak aktifleştirir",
-      "C": "Kiracı bu kiralamayı yalnızca dipnotlarda açıklar; tablolara hiçbir tutar yansıtılmaz",
-      "E": "Kiracı bu kiralamayı faaliyet kiralaması sayarak bilanço dışında bırakır"
+      "A": "72.000 ₺, kâr veya zarara",
+      "B": "180.000 ₺, kullanım hakkına",
+      "C": "Artış tanınmaz",
+      "D": "72.000 ₺, kullanım hakkına",
+      "E": "72.000 ₺, DKG'ye"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiralama süresi 12 ayı aştığından ve gayrimenkul düşük değerli sayılmadığından muafiyet uygulanamaz. Kiracı, kullanım hakkı varlığı ve kira yükümlülüğü muhasebeleştirir. Eski standarttaki 'faaliyet kiralaması bilanço dışıdır' yaklaşımı KALDIRILMIŞTIR. Doğru cevap D.",
+    "solution": "TFRS 16 p. 42(b) ve 43'e göre endeks veya orandaki değişiklik nedeniyle gelecek kira ödemeleri değişirse yükümlülük **değiştirilmemiş indirgeme oranıyla** yeniden ölçülür; p. 39'a göre yeniden ölçüm tutarı **kullanım hakkı varlığında düzeltme** olarak muhasebeleştirilir: 180.000 × %40 = **72.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiracı muhasebesi (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 42(b), 43"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "std-tfrs16-gen-0028",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdakilerden hangileri kullanım hakkı varlığının maliyetine DÂHİL EDİLİR?\n\nI. Kira yükümlülüğünün ilk ölçüm tutarı\n\nII. Başlangıçtaki doğrudan maliyetler\n\nIII. Sökme ve restorasyon maliyeti tahmini",
+    "stem": "Bir kiraya veren, bir ofis binasını ekonomik ömrü 50 yıl iken 5 yıl süreyle kiraya vermiştir; mülkiyet devri veya satın alma opsiyonu yoktur ve kira ödemelerinin bugünkü değeri binanın gerçeğe uygun değerinin küçük bir kısmıdır. Bu kiralama hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Faaliyet kiralamasıdır",
+      "B": "Kiracı için faaliyet kiralamasıdır",
+      "C": "Finansal kiralamadır",
+      "D": "Kısa vadeli kiralamadır",
+      "E": "Satış ve geri kiralamadır"
     },
     "answer": "A",
-    "solution": "TFRS 16 üçünü de kullanım hakkı varlığının maliyetine dâhil eder: kira yükümlülüğünün ilk ölçüm tutarı (I), kiracının katlandığı başlangıçtaki doğrudan maliyetler (II) ve sökme/kaldırma/restorasyon maliyeti tahmini (III). Alınan kiralama teşvikleri ise düşülür. Doğru cevap A.",
+    "solution": "TFRS 16 p. 61-63'e göre kiraya veren her kiralamayı finansal veya **faaliyet kiralaması** olarak sınıflandırır; risk ve getirilerin önemli ölçüde tamamını devretmeyen kiralama faaliyet kiralamasıdır. Kiracı açısından ise TFRS 16 böyle bir ayrım yapmaz; kiracı tek model uygular.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kullanım hakkı varlığı maliyeti"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 61, 63"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "std-tfrs16-gen-0029",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdaki ifadelerden hangileri kira yükümlülüğü bakımından doğrudur?\n\nI. Ödenmemiş kira ödemelerinin bugünkü değeriyle ölçülür\n\nII. Zımni faiz oranı belirlenemiyorsa alternatif borçlanma faiz oranı kullanılır\n\nIII. Endekse bağlı olmayan değişken ödemeler yükümlülüğe dâhil edilir",
+    "stem": "Bir kiraya veren bir makineyi 5 yıllık finansal kiralamayla kiraya vermiştir; yıllık 120.000 ₺ kira her yıl sonunda tahsil edilecektir ve kiralamadaki zımni faiz oranı %8'dir. Garanti edilmemiş kalıntı değer ve başlangıçtaki doğrudan maliyet yoktur. Kiraya verenin tanıyacağı net kiralama yatırımı yaklaşık kaç ₺'dir?",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "479.125",
+      "B": "517.455",
+      "C": "600.000",
+      "D": "552.000",
+      "E": "555.556"
     },
     "answer": "A",
-    "solution": "Kira yükümlülüğü bugünkü değerle ölçülür (I) ve zımni oran kolayca belirlenemiyorsa kiracının alternatif borçlanma faiz oranı kullanılır (II). Endekse veya orana bağlı OLMAYAN değişken ödemeler ise yükümlülüğe DÂHİL EDİLMEZ; gerçekleştiğinde gider yazılır. Bu nedenle III yanlıştır. Doğru cevap A.",
+    "solution": "TFRS 16 p. 67-68'e göre kiraya veren finansal kiralamada **net kiralama yatırımına eşit** bir alacak tanır; net yatırım, kira ödemeleri ile garanti edilmemiş kalıntı değerin **kiralamadaki zımni faiz oranıyla** iskonto edilmiş toplamıdır: ≈ **479.125 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kira yükümlülüğü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 67-68"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "std-tfrs16-gen-0030",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığının sonraki ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme binasını bir yatırımcıya satmış ve aynı binayı 10 yıl süreyle geri kiralamıştır. Devir TFRS 15'e göre satış koşullarını sağlamaktadır. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "D": "Kural olarak maliyet modeliyle; birikmiş amortisman ve birikmiş değer düşüklüğü indirilerek ölçülür",
-      "A": "Gerçeğe uygun değeriyle ölçülür; amortisman ayrılmamaktadır",
-      "B": "Ilk maliyetiyle gösterilir; birikmiş amortisman indirilmemektedir",
-      "C": "Net gerçekleşebilir değeriyle ölçülür; maliyet bilgisi hiç dikkate alınmaz",
-      "E": "Kullanım hakkı varlığı gerçeğe uygun değer modeliyle ölçülür; maliyet modeli kullanılamaz"
+      "A": "Alıcı-kiraya veren kiraya veren muhasebesini uygular",
+      "B": "Satıcı-kiracı binayı tablo dışı bırakır",
+      "C": "Kazanç devredilen haklar kadarıyla tanınır",
+      "D": "Satıcı-kiracı satış kazancının tamamını tanır",
+      "E": "Kullanım hakkı elde tutulan hakla orantılı ölçülür"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiracı, kullanım hakkı varlığını başlangıç tarihinden sonra maliyet yöntemini uygulayarak ölçer; maliyetinden birikmiş amortisman ve birikmiş değer düşüklüğü zararları indirilir ve kira yükümlülüğünün yeniden ölçümüne göre düzeltilir. Doğru cevap D.",
+    "solution": "TFRS 16 p. 100'e göre devir satış ise satıcı-kiracı, geri kiralamadan doğan kullanım hakkı varlığını **elde tuttuğu kullanım hakkıyla orantılı** ölçer ve **yalnızca alıcı-kiraya verene devredilen haklara ilişkin** kazanç veya kaybı tanır; satış kazancının tamamı tanınmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kullanım hakkı varlığının sonraki ölçümü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 99-100"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "std-tfrs16-gen-0031",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığının amortisman süresi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme makinesini bir finansman kuruluşuna 'satmış' ve geri kiralamıştır; ancak kiralama sonunda makineyi sembolik bedelle geri alma hakkı olduğundan devir TFRS 15'e göre satış koşullarını sağlamamaktadır. Satıcı-kiracı aldığı bedeli nasıl muhasebeleştirir?",
     "options": {
-      "C": "Mülkiyet devri veya opsiyon varsa faydalı ömür; aksi hâlde kiralama süresi ile ömürden kısa olanı",
-      "A": "Dayanak varlığın faydalı ömrü esas alınır; kiralama süresi hiç dikkate alınmaz",
-      "B": "Kiralama süresi esas alınır; dayanak varlığın faydalı ömrü hiç dikkate alınmaz",
-      "D": "Kiralama süresi ile faydalı ömürden UZUN olanı esas alınır",
-      "E": "Kullanım hakkı varlığı dayanak varlığın faydalı ömrü boyunca amortismana tabi tutulur"
+      "A": "Satış kazancı olarak",
+      "B": "Özkaynak olarak",
+      "C": "Finansal yükümlülük olarak",
+      "D": "Kullanım hakkı olarak",
+      "E": "Hasılat olarak"
     },
     "answer": "C",
-    "solution": "TFRS 16: kiralama kiracıya mülkiyeti devrediyorsa veya kiracının satın alma opsiyonunu kullanacağı makul ölçüde kesinse, kiracı kullanım hakkı varlığını dayanak varlığın faydalı ömrü boyunca amortismana tabi tutar. Aksi hâlde, kiralama süresinin sonu ile faydalı ömrün sonundan ERKEN olanına kadar amortismana tabi tutar. Doğru cevap C.",
+    "solution": "TFRS 16 p. 103'e göre devir satış değilse satıcı-kiracı devredilen varlığı finansal tablolarında göstermeye devam eder ve aldığı bedele eşit bir **finansal yükümlülük** (TFRS 9) tanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - amortisman süresi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 103"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "std-tfrs16-gen-0032",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracının kullanım hakkı varlığının maliyeti 550.000 TL'dir. Kiralama süresi 5 yıl, dayanak varlığın faydalı ömrü 8 yıldır. Kiralama mülkiyeti devretmemekte ve satın alma opsiyonu bulunmamaktadır. Yıllık amortisman gideri kaç TL'dir?",
+    "stem": "Bir işletme 1 Ocak 2026'da bir depoyu 10 ay süreyle kiralamıştır; sözleşmede kiracıya depoyu kiralama sonunda satın alma opsiyonu tanınmıştır. Bu kiralama için kısa vadeli kiralama muafiyeti uygulanabilir mi?",
     "options": {
-      "C": "110.000 TL",
-      "A": "68.750 TL",
-      "B": "42.307.692307692305 TL",
-      "D": "550.000 TL",
-      "E": "55.000 TL"
+      "A": "Opsiyon kullanılmazsa geriye dönük uygulanır",
+      "B": "Kiraya veren onaylarsa uygulanabilir",
+      "C": "Uygulanamaz",
+      "D": "Uygulanabilir",
+      "E": "İlk 6 ay uygulanabilir"
     },
     "answer": "C",
-    "solution": "Mülkiyet devri ve satın alma opsiyonu bulunmadığından amortisman süresi, kiralama süresi (5 yıl) ile faydalı ömürden (8 yıl) KISA olanıdır: 5 yıl. Yıllık amortisman = 550.000 ÷ 5 = 110.000 TL. Doğru cevap C.",
+    "solution": "TFRS 16 Ek A'ya göre kısa vadeli kiralama, **kiralama süresi 12 ay veya daha kısa** olan ve **satın alma opsiyonu içermeyen** kiralamadır. Satın alma opsiyonu bulunduğundan muafiyet uygulanamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - amortisman süresi hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 5-8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "std-tfrs16-gen-0033",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kira yükümlülüğünün sonraki ölçümü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracının 1 Ocak'ta tanıdığı kullanım hakkı varlığı 270.000 ₺ (3 yıl süreli, mülkiyet devri yok), kira yükümlülüğü 248.685 ₺'dir; faiz oranı %10, yıl sonu kira ödemesi 100.000 ₺'dir. Kiracının ilk yıl kâr veya zararına yansıyacak toplam gider yaklaşık kaç ₺'dir?",
     "options": {
-      "D": "Defter değeri faiz tutarı kadar artırılır, yapılan kira ödemeleri kadar azaltılır",
-      "A": "Defter değeri sabit kalır; hiçbir faiz veya ödeme etkisi yansıtılmamaktadır",
-      "B": "Defter değeri yalnızca ödemeler kadar azaltılır; faiz tutarı hiç dikkate alınmamaktadır",
-      "C": "Defter değeri gerçeğe uygun değeriyle yeniden ölçülür",
-      "E": "Kira yükümlülüğünün defter değeri her dönem sabit kalır; faiz ve ödemeler defter değerini değiştirmez"
+      "A": "124.869",
+      "B": "100.000",
+      "C": "90.000",
+      "D": "114.869",
+      "E": "190.000"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiracı, başlangıç tarihinden sonra kira yükümlülüğünü (a) defter değerini kira yükümlülüğündeki faizi yansıtacak biçimde artırarak, (b) yapılan kira ödemelerini yansıtacak biçimde azaltarak ve (c) yeniden değerlendirmeleri yansıtacak biçimde yeniden ölçerek ölçer. Doğru cevap D.",
+    "solution": "TFRS 16'da kiracı kira gideri değil, **kullanım hakkı amortismanı ve kira yükümlülüğü faizi** tanır: 90.000 + 24.869 ≈ **114.869 ₺**. Ödenen kira yükümlülüğü azaltır, gider değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kira yükümlülüğünün sonraki ölçümü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 31, 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "std-tfrs16-gen-0034",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracının dönem başı kira yükümlülüğü 600.000 TL, sözleşmedeki faiz oranı yıllık %8'dir. Dönem sonunda 150.000 TL kira ödemesi yapılmıştır. Bu ödemenin anapara kısmı kaç TL'dir?",
+    "stem": "Bir kiracının 2. yıl başındaki kira yükümlülüğü 173.554 ₺, faiz oranı %10'dur. 2. yılın faiz gideri yaklaşık kaç ₺'dir?",
     "options": {
-      "B": "102.000 TL",
-      "A": "150.000 TL",
-      "C": "48.000 TL",
-      "D": "198.000 TL",
-      "E": "498.000 TL"
+      "A": "82.645",
+      "B": "17.355",
+      "C": "34.711",
+      "D": "10.000",
+      "E": "24.869"
     },
     "answer": "B",
-    "solution": "Etkin faiz yönteminde önce faiz hesaplanır: 600.000 × %8 = 48.000 TL. Ödemenin faizi aşan kısmı anaparayı azaltır: 150.000 − 48.000 = 102.000 TL. Dönem sonu yükümlülük = 600.000 − 102.000 = 498.000 TL. Doğru cevap B.",
+    "solution": "Faiz, yükümlülüğün kalan bakiyesi üzerinden hesaplanır: 173.554 × %10 ≈ **17.355 ₺**; yükümlülük azaldıkça faiz gideri de azalır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - faiz ve anapara ayrımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "std-tfrs16-gen-0035",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiracının kâr veya zararına yansıyan tutarlar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, kiraya verenden taşınma masraflarını karşılaması için 25.000 ₺ kiralama teşviki almıştır. Bu teşvik kullanım hakkı varlığının maliyetini nasıl etkiler?",
     "options": {
-      "B": "Kullanım hakkı varlığının amortismanı ile kira yükümlülüğüne ilişkin faiz gideri ayrı ayrı yansıtılır",
-      "A": "Yalnızca tek bir kira gideri yansıtılır; amortisman ve faiz ayrımı yapılmamaktadır",
-      "C": "Yalnızca amortisman gideri yansıtılır; faiz gideri kaydedilmemektedir",
-      "D": "Yalnızca faiz gideri yansıtılır; amortisman ayrılmaz",
-      "E": "Kiracının kâr veya zararına hiçbir tutar yansımaz; tümü özkaynakta gösterilmektedir"
+      "A": "Gelir yazılır",
+      "B": "Maliyetten düşülür",
+      "C": "Etkilemez",
+      "D": "Maliyete eklenir",
+      "E": "Yükümlülüğe eklenir"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiracı, kullanım hakkı varlığının amortisman giderini ve kira yükümlülüğüne ilişkin faiz giderini AYRI olarak sunar. Faiz gideri, kira yükümlülüğünün her dönemdeki kalanına sabit bir dönemsel faiz oranı uygulanarak bulunur. Doğru cevap B.",
+    "solution": "TFRS 16 p. 24(b)'ye göre kullanım hakkı varlığının maliyetine, fiilî başlangıç tarihinde veya öncesinde yapılan kira ödemelerinden **alınan kiralama teşvikleri düşülerek** kalan tutar eklenir; teşvik maliyeti azaltır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - amortisman ve faizin ayrı sunumu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 24(b)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "std-tfrs16-gen-0036",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiracının kiralama giderlerinin dönemler arası dağılımı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya veren bir depoyu 4 yıllık faaliyet kiralamasıyla kiraya vermiş ve kiralamayı elde etmek için 20.000 ₺ komisyon ödemiştir. Bu başlangıçtaki doğrudan maliyet her yıl kaç ₺ giderleştirilir?",
     "options": {
-      "D": "Faiz gideri yükümlülük azaldıkça düştüğünden toplam gider ilk yıllarda daha yüksektir",
-      "A": "Toplam gider tüm dönemlerde eşit tutarda gerçekleşir",
-      "B": "Toplam gider ilk yıllarda daha düşük olup sonraki yıllarda kademeli olarak artmaktadır",
-      "C": "Toplam gider yalnızca son yılda muhasebeleştirilir; önceki yıllarda gider yazılmamaktadır",
-      "E": "Kiracının toplam kiralama gideri, kiralama süresi boyunca her yıl eşit tutarda dağıtılır"
+      "A": "0",
+      "B": "2.000",
+      "C": "20.000",
+      "D": "5.000",
+      "E": "10.000"
     },
     "answer": "D",
-    "solution": "TFRS 16: amortisman genellikle doğrusaldır ancak faiz gideri yükümlülük bakiyesi azaldıkça düşer. Bu nedenle amortisman ve faizin toplamı, kiralamanın ilk yıllarında daha yüksek, sonraki yıllarında daha düşük olur (azalan gider profili). Doğru cevap D.",
+    "solution": "TFRS 16 p. 83'e göre kiraya veren faaliyet kiralamasını elde etmek için katlandığı **başlangıçtaki doğrudan maliyetleri dayanak varlığın defter değerine ekler** ve kira geliriyle aynı esasla kiralama süresi boyunca giderleştirir: 20.000 / 4 = **5.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - gider profili"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 83"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "std-tfrs16-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kira yükümlülüğünün yeniden değerlendirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme kısa vadeli kiralama ve düşük değerli varlık muafiyetlerini uygulamak istemektedir. Bu muafiyetlerin seçim düzeyi hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Kiralama süresi veya ödemelerde değişiklik olursa yeniden ölçülür; düzeltme kullanım hakkı varlığına yapılır",
-      "A": "Kira yükümlülüğü yeniden ölçülemez; ilk ölçüm tutarı süre boyunca korunur",
-      "C": "Yeniden ölçüm farkı doğrudan dönem kâr veya zararına yansıtılır",
-      "D": "Yeniden ölçüm farkı doğrudan özkaynaklardan indirilir",
-      "E": "Kira yükümlülüğü ilk ölçümden sonra yeniden ölçülmez; süre veya ödeme değişse dahi sabit kalır"
+      "A": "İkisi de kiraya veren bazında",
+      "B": "Kısa vadede sınıf, düşük değerde kiralama bazında",
+      "C": "İkisi de işletme bazında",
+      "D": "İkisi de sınıf bazında",
+      "E": "Kısa vadede kiralama, düşük değerde sınıf bazında"
     },
     "answer": "B",
-    "solution": "TFRS 16: kiralama süresinde veya satın alma opsiyonu değerlendirmesinde değişiklik olması ya da kira ödemelerinin değişmesi hâlinde kiracı kira yükümlülüğünü yeniden ölçer. Yeniden ölçüm tutarı, kullanım hakkı varlığına düzeltme olarak yansıtılır. Kullanım hakkı varlığı sıfıra inmişse kalan tutar kâr veya zarara yansıtılır. Doğru cevap B.",
+    "solution": "TFRS 16 p. 8'e göre kısa vadeli kiralama muafiyeti **kullanım hakkının ilişkili olduğu dayanak varlık sınıfı bazında**, düşük değerli varlık muafiyeti ise **her bir kiralama bazında** seçilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - yeniden değerlendirme"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "std-tfrs16-gen-0038",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığında değer düşüklüğü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kira ödemeleri her yıl TÜFE oranında artan bir kiralamada, kiracı gelecek yıllarda yüksek enflasyon beklemektedir. Kira yükümlülüğünün ilk ölçümünde endekse bağlı ödemeler nasıl dikkate alınır?",
     "options": {
-      "C": "Değer düşüklüğünün belirlenmesinde TMS 36 uygulanır",
-      "A": "Kullanım hakkı varlıklarında değer düşüklüğü söz konusu olmamaktadır",
-      "B": "Değer düşüklüğü TFRS 16'da ayrıntılı düzenlenmiş olup başka standarda başvurulmamaktadır",
-      "D": "Değer düşüklüğü yalnızca stoklar için söz konusu olup kullanım hakkına uygulanmamaktadır",
-      "E": "Değer düşüklüğü yalnızca vergi mevzuatına göre belirlenir; standart hükmü bulunmamaktadır"
+      "A": "Dikkate alınmaz",
+      "B": "Kiraya verenin tahminiyle",
+      "C": "Başlangıçtaki endeks düzeyiyle",
+      "D": "Geçmiş yıllar ortalamasıyla",
+      "E": "Beklenen enflasyonla"
     },
     "answer": "C",
-    "solution": "TFRS 16: kiracı, kullanım hakkı varlığının değer düşüklüğüne uğrayıp uğramadığını belirlemek ve belirlenen değer düşüklüğü zararını muhasebeleştirmek için TMS 36 Varlıklarda Değer Düşüklüğü Standardını uygular. Doğru cevap C.",
+    "solution": "TFRS 16 p. 27(b) ve 28'e göre endekse veya orana bağlı değişken kira ödemeleri, ilk ölçümde **kiralamanın fiilen başladığı tarihteki endeks veya oran** kullanılarak ölçülür; gelecekteki endeks değişimleri tahmin edilmez, gerçekleştikçe yükümlülük yeniden ölçülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - değer düşüklüğü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 27(b), 28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "std-tfrs16-gen-0039",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kullanım hakkı varlığının finansal durum tablosunda sunumu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri kira yükümlülüğünün ilk ölçümüne dâhil edilir?\n\nI. Gelecekte beklenen enflasyona göre tahmin edilen kira artışları\n\nII. Kiracının satışlarına bağlı değişken kira ödemeleri\n\nIII. Kullanılacağı makul ölçüde kesin satın alma opsiyonunun bedeli",
     "options": {
-      "E": "Diğer varlıklardan ayrı olarak sunulur veya hangi kalemde yer aldığı dipnotta açıklanır",
-      "A": "Stoklar içinde sunulur; ayrı gösterilmesi mümkün olmamaktadır",
-      "B": "Finansal durum tablosunda sunulmaz; yalnızca dipnotta açıklanmaktadır",
-      "C": "Nakit ve nakit benzerleri içinde sunulur",
-      "D": "Kullanım hakkı varlığı finansal borç olarak sınıflandırılıp finansal durum tablosunda sunulur"
+      "A": "I ve II",
+      "B": "Yalnız I",
+      "C": "II ve III",
+      "D": "I ve III",
+      "E": "Yalnız III"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiracı, kullanım hakkı varlıklarını diğer varlıklardan ayrı olarak finansal durum tablosunda sunar veya dipnotlarda hangi kalemde yer aldığını açıklar. Doğru cevap E.",
+    "solution": "TFRS 16 p. 27(d)'ye göre makul ölçüde kesin satın alma opsiyonu bedeli (III) kira ödemelerine dâhildir. Endekse bağlı ödemeler **başlangıçtaki endeksle** ölçülür, beklenen enflasyon tahmin edilmez (I yanlış); satışlara bağlı değişken ödemeler dâhil edilmez (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - sunum"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 27-28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "std-tfrs16-gen-0040",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiralamalara ilişkin nakit akışlarının sunumu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri TFRS 16'ya göre doğrudur?\n\nI. Tedarikçinin esaslı ikame hakkı varsa tanımlanmış varlık yoktur\n\nII. Kiralama süresine makul ölçüde kesin uzatma opsiyonları dâhil edilir\n\nIII. Başlangıçtaki doğrudan maliyetler kullanım hakkı maliyetine eklenir",
     "options": {
-      "A": "Kira yükümlülüğünün anapara kısmı finansman faaliyeti olarak sunulur",
-      "B": "Kira ödemelerinin tamamı işletme faaliyeti olarak sunulur",
-      "C": "Kira ödemelerinin tamamı yatırım faaliyeti olarak sunulur",
-      "D": "Kira ödemeleri nakit akış tablosunda gösterilmez; dipnotta açıklanmaktadır",
-      "E": "Kira yükümlülüğünün anapara kısmı işletme faaliyetlerinden nakit akışı olarak sunulur"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "II ve III",
+      "D": "I ve II",
+      "E": "I ve III"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiracı, kira yükümlülüğünün anapara kısmına ilişkin nakit ödemeleri finansman faaliyeti olarak; kısa vadeli, düşük değerli varlık ve değişken kira ödemelerini ise işletme faaliyeti içinde sınıflandırır. Doğru cevap A.",
+    "solution": "TFRS 16 UR B14'e göre esaslı ikame hakkı tanımlanmış varlığı ortadan kaldırır (I); p. 18'e göre makul kesin uzatma opsiyonu süreye dâhildir (II); p. 24'e göre başlangıçtaki doğrudan maliyetler kullanım hakkı maliyetine eklenir (III).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - nakit akış sunumu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 9, 18, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "std-tfrs16-gen-0041",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracının kullanım hakkı varlığı ve kira yükümlülüğü bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir depoyu 5 yıllık iptal edilemez süreyle kiralamıştır; sözleşmede işletmeye 3 yıl daha uzatma opsiyonu tanınmıştır. Depo işletmenin ana dağıtım merkezidir ve opsiyonun kullanılacağı makul ölçüde kesindir. Kiralama süresi kaç yıldır?",
     "options": {
-      "B": "İkisinin defter değeri zamanla farklılaşır; amortisman ve faiz farklı hızda işler",
-      "A": "İkisinin defter değeri ve her dönemde birbirine eşit kalır",
-      "C": "Kullanım hakkı varlığı hiç amortismana tabi tutulmaz; yükümlülükle eşit tutulur",
-      "D": "Kira yükümlülüğü azalmaz; ilk ölçüm tutarı süre boyunca sabit kalmaktadır",
-      "E": "Kullanım hakkı varlığı ile kira yükümlülüğünün defter değerleri kiralama süresi boyunca her zaman birbirine eşit kalır"
+      "A": "6",
+      "B": "8",
+      "C": "3",
+      "D": "10",
+      "E": "5"
     },
     "answer": "B",
-    "solution": "Kullanım hakkı varlığı genellikle doğrusal amortismana tabidir; kira yükümlülüğü ise etkin faiz yöntemiyle azalır. Farklı hızda ilerlediklerinden başlangıçta eşit (ya da yakın) olsalar bile defter değerleri zamanla birbirinden ayrışır. Doğru cevap B.",
+    "solution": "TFRS 16 p. 18'e göre kiralama süresi, **iptal edilemeyen süre** ile kiracının **kullanacağı makul ölçüde kesin olan uzatma opsiyonunun** kapsadığı süreden oluşur: 5 + 3 = **8 yıl**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - varlık ve yükümlülüğün ayrışması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 18-19, UR B34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "std-tfrs16-gen-0042",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdaki ifadelerden hangileri kiracının sonraki ölçümü bakımından doğrudur?\n\nI. Amortisman ve faiz tek bir kira gideri olarak birlikte sunulur\n\nII. Kullanım hakkı varlığı amortismana tabi tutulur\n\nIII. Kira yükümlülüğüne faiz işletilir",
+    "stem": "Bir işletme 1 Ekim 2025'te bir iş makinesini 6 ay süreyle aylık 15.000 ₺'ye kiralamıştır; sözleşmede satın alma opsiyonu yoktur. İşletme kısa vadeli kiralamalar için muafiyeti seçmiştir. 2025 yılında kâr veya zarara yansıyacak kira gideri kaç ₺'dir?",
     "options": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "0",
+      "B": "15.000",
+      "C": "180.000",
+      "D": "45.000",
+      "E": "90.000"
     },
     "answer": "D",
-    "solution": "Kullanım hakkı varlığı amortismana tabi tutulur (II) ve kira yükümlülüğüne faiz işletilir (III). Ancak kiracı amortisman gideri ile faiz giderini AYRI olarak sunar; tek bir kira gideri olarak birleştirmez. Bu nedenle I yanlıştır. Doğru cevap D.",
+    "solution": "TFRS 16 p. 5-6'ya göre **12 ay veya daha kısa süreli ve satın alma opsiyonu içermeyen** kısa vadeli kiralamalarda kiracı, kullanım hakkı varlığı ve kira yükümlülüğü tanımak yerine kira ödemelerini kiralama süresince doğrusal olarak giderleştirebilir: 3 ay × 15.000 = **45.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - sonraki ölçüm"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 5-6, UR B34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "std-tfrs16-gen-0043",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdaki ifadelerden hangileri TFRS 16 bakımından doğrudur?\n\nI. Mülkiyet devri varsa amortisman süresi dayanak varlığın faydalı ömrüdür\n\nII. Mülkiyet devri yoksa kiralama süresi ile faydalı ömürden UZUN olanı esas alınır\n\nIII. Kullanım hakkı varlığında değer düşüklüğü için TMS 36 uygulanır",
+    "stem": "Bir mağaza kiralamasında kira ödemeleri şunlardan oluşmaktadır: yıllık 200.000 ₺ sabit kira, her yıl TÜFE oranında artış ve mağaza satışlarının %2'si oranında ek kira. Kira yükümlülüğünün ilk ölçümünde hangi ödeme dikkate alınmaz?",
     "options": {
-      "E": "I ve III",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "Yalnız III"
+      "A": "Fesih cezası",
+      "B": "Sabit kira",
+      "C": "TÜFE'ye bağlı artış",
+      "D": "Makul kesin satın alma bedeli",
+      "E": "Satışların %2'si oranındaki ek kira"
     },
     "answer": "E",
-    "solution": "Mülkiyet devri veya kullanılacağı makul ölçüde kesin satın alma opsiyonu varsa dayanak varlığın faydalı ömrü esas alınır (I) ve değer düşüklüğünde TMS 36 uygulanır (III). Mülkiyet devri yoksa kiralama süresi ile faydalı ömürden KISA olanı esas alınır, uzun olanı değil; bu nedenle II yanlıştır. Doğru cevap E.",
+    "solution": "TFRS 16 p. 27-28'e göre kira ödemeleri sabit ödemeleri, **bir endekse veya orana bağlı** değişken ödemeleri, makul ölçüde kesin satın alma opsiyonu bedelini ve fesih cezalarını kapsar. **Satışlar gibi performansa bağlı** değişken ödemeler yükümlülüğe dâhil edilmez; gerçekleştiği dönemde gider yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - sonraki ölçüm"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 27-28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "std-tfrs16-gen-0044",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya verenin kiralama sınıflandırması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, kiralama sonunda dayanak varlığın en az 50.000 ₺ değer taşıyacağını kiraya verene taahhüt etmiştir; kiracı varlığın kiralama sonunda 42.000 ₺ değerinde olmasını ve aradaki farkı ödemeyi beklemektedir. Kira yükümlülüğüne dâhil edilecek kalıntı değer taahhüdü tutarı kaç ₺'dir?",
     "options": {
-      "B": "Mülkiyetten kaynaklanan risk ve getirilerin tamamına yakını devrediliyorsa finansal kiralamadır",
-      "A": "Sözleşmede 'finansal kiralama' ifadesinin geçmesi hâlinde finansal kiralama sayılır",
-      "C": "Kiralama süresi bir yılı aşan her sözleşme finansal kiralama sayılır",
-      "D": "Kira bedeli yüksek olan her sözleşme finansal kiralama olarak sınıflandırılmaktadır",
-      "E": "Kiraya veren, mülkiyet risk ve getirilerini elinde tutsa dahi kiralamayı finansal kiralama olarak sınıflandırır"
+      "A": "42.000",
+      "B": "8.000",
+      "C": "92.000",
+      "D": "50.000",
+      "E": "0"
     },
     "answer": "B",
-    "solution": "TFRS 16: bir kiralama, dayanak varlığın mülkiyetinden kaynaklanan tüm risk ve getirilerin önemli ölçüde devredilmesi durumunda finansal kiralama olarak sınıflandırılır. Devredilmiyorsa faaliyet kiralamasıdır. Sınıflandırma sözleşmenin özüne bakılarak yapılır. Doğru cevap B.",
+    "solution": "TFRS 16 p. 27(c)'ye göre kira ödemelerine **kalıntı değer taahhütleri kapsamında kiracı tarafından ödenmesi beklenen tutarlar** dâhil edilir: 50.000 − 42.000 = **8.000 ₺** (bugünkü değeri alınarak).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya verenin sınıflandırması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 27(c)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "std-tfrs16-gen-0045",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdakilerden hangisi kiraya veren açısından finansal kiralama göstergesidir?",
+    "stem": "Bir kiracı kullanım hakkı varlığını 270.000 ₺ maliyetle tanımıştır. Kiralama süresi 3 yıl, dayanak varlığın yararlı ömrü 8 yıldır. Kiralama sonunda mülkiyet devri veya satın alma opsiyonu yoktur. Kalıntı değer yoktur ve doğrusal yöntem uygulanmaktadır. Yıllık amortisman gideri kaç ₺'dir?",
     "options": {
-      "E": "Kiralama süresi sonunda mülkiyetin kiracıya devredilmesi",
-      "A": "Kiralama süresinin dayanak varlığın ekonomik ömrünün küçük bir bölümünü kapsaması durumu",
-      "B": "Kira ödemelerinin bugünkü değerinin varlığın gerçeğe uygun değerinin çok altında kalması",
-      "C": "Dayanak varlığın kiralama sonunda kiraya verene iade edilip başkasına kiralanabilmesi durumu",
-      "D": "Dayanak varlığın genel nitelikli olması ve başka kullanıcılarca da kullanılabilir olması durumu"
+      "A": "135.000",
+      "B": "270.000",
+      "C": "24.545",
+      "D": "33.750",
+      "E": "90.000"
     },
     "answer": "E",
-    "solution": "TFRS 16: finansal kiralama göstergeleri arasında kiralama süresi sonunda mülkiyetin kiracıya geçmesi, cazip fiyatlı satın alma opsiyonu, sürenin ekonomik ömrün büyük bölümünü kapsaması, kira ödemelerinin bugünkü değerinin gerçeğe uygun değerin tamamına yakınına eşit olması ve varlığın özel nitelikli olması sayılır. Doğru cevap E.",
+    "solution": "TFRS 16 p. 31-32'ye göre mülkiyet devri veya makul kesin satın alma opsiyonu yoksa kullanım hakkı varlığı, **kiralama süresi ile yararlı ömrün kısa olanı** boyunca amortismana tabi tutulur: 270.000 / 3 = **90.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - finansal kiralama göstergeleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 31-32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "std-tfrs16-gen-0046",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya verenin finansal kiralamada yapacağı muhasebeleştirme bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, kullanım hakkı varlığının maliyet modeliyle sonraki ölçümünü yapmaktadır. Varlıkta değer düşüklüğü göstergesi ortaya çıkmıştır. Kiracı değer düşüklüğünü hangi standarda göre belirler?",
     "options": {
-      "E": "Dayanak varlığı bilanço dışı bırakıp kiralamadaki net yatırımı tutarında alacak muhasebeleştirir",
-      "A": "Dayanak varlığı bilançosunda tutmaya devam eder ve amortismana tabi tutur",
-      "B": "Hiçbir kayıt yapmaz; finansal kiralama yalnızca dipnotlarda açıklanmakla yetinilmektedir",
-      "C": "Aldığı kira bedellerini doğrusal olarak gelir yazır",
-      "D": "Dayanak varlığı gerçeğe uygun değeriyle yeniden ölçüp bilançosunda tutur"
+      "A": "TMS 2",
+      "B": "TMS 37",
+      "C": "TFRS 13",
+      "D": "TFRS 9",
+      "E": "TMS 36"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiraya veren, finansal kiralama kapsamındaki varlıkları finansal durum tablosunda muhasebeleştirir ve bunları kiralamadaki net yatırıma eşit bir tutarda alacak olarak sunar. Dayanak varlık bilanço dışı bırakılır. Doğru cevap E.",
+    "solution": "TFRS 16 p. 33'e göre kiracı, kullanım hakkı varlığının değer düşüklüğüne uğrayıp uğramadığını belirlemek ve tespit edilen değer düşüklüğü zararını muhasebeleştirmek için **TMS 36 Varlıklarda Değer Düşüklüğü**'nü uygular.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya veren finansal kiralama"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 29-30, 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "std-tfrs16-gen-0047",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya verenin faaliyet kiralamasında yapacağı muhasebeleştirme bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı, başlangıçta kullanmayacağını değerlendirdiği satın alma opsiyonunu, kendi kontrolündeki önemli bir olay nedeniyle artık kullanacağının makul ölçüde kesin olduğunu belirlemiştir. Kira yükümlülüğü yeniden ölçülürken hangi iskonto oranı kullanılır?",
     "options": {
-      "A": "Dayanak varlığı bilançosunda tutmaya devam eder ve kira gelirini doğrusal olarak gelir yazar",
-      "B": "Dayanak varlığı bilanço dışı bırakıp alacak muhasebeleştirir",
-      "C": "Hiçbir kayıt yapmaz; faaliyet kiralaması yalnızca dipnotlarda açıklanmakla yetinilir",
-      "D": "Kira gelirinin tamamını sözleşme başlangıcında peşin olarak gelir yazır",
-      "E": "Dayanak varlık için amortisman ayrılmaz; varlık itfa edilmeden bırakılmaktadır"
+      "A": "Revize edilmiş iskonto oranı",
+      "B": "Sıfır oran",
+      "C": "Başlangıçtaki oran",
+      "D": "Kiraya verenin oranı",
+      "E": "Enflasyon oranı"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiraya veren, faaliyet kiralamalarına ilişkin kira ödemelerini doğrusal yöntemle veya başka bir sistematik esasa göre gelir olarak muhasebeleştirir. Dayanak varlık bilançoda kalır ve amortismana tabi tutulur. Doğru cevap A.",
+    "solution": "TFRS 16 p. 40'a göre kiralama süresinde veya **satın alma opsiyonunun değerlendirilmesinde değişiklik** olursa kira yükümlülüğü **revize edilmiş iskonto oranıyla** yeniden ölçülür; endeks değişikliklerinde ise oran değiştirilmez (p. 42-43).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya veren faaliyet kiralaması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 40"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "std-tfrs16-gen-0048",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya verenin faaliyet kiralamasındaki dayanak varlığın amortismanı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya veren bir depoyu 4 yıllık faaliyet kiralamasıyla kiraya vermiştir. Kiracıyı çekmek için ilk yıl kira alınmamakta, sonraki 3 yılın her birinde 120.000 ₺ kira alınmaktadır. Kiraya verenin ilk yıl kâr veya zarara yansıtacağı kira geliri kaç ₺'dir?",
     "options": {
-      "E": "Kiraya veren, benzer varlıklara ilişkin olağan amortisman politikasını uygular",
-      "A": "Faaliyet kiralamasındaki varlıklar için amortisman ayrılmaz",
-      "B": "Amortisman kiracı tarafından ayrılır; kiraya veren amortisman kaydetmemektedir",
-      "C": "Amortisman kiralama süresi üzerinden ayrılır; faydalı ömür dikkate alınmaz",
-      "D": "Kiraya veren, faaliyet kiralamasındaki dayanak varlık için amortisman ayırmaz"
+      "A": "360.000",
+      "B": "120.000",
+      "C": "0",
+      "D": "30.000",
+      "E": "90.000"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiraya veren, faaliyet kiralamasına konu amortismana tabi dayanak varlıkların amortisman politikasını, benzer varlıklara ilişkin olağan amortisman politikasıyla tutarlı biçimde belirler. Doğru cevap E.",
+    "solution": "TFRS 16 p. 81'e göre kiraya veren faaliyet kiralamasından elde ettiği kira ödemelerini, başka bir sistematik esas daha uygun değilse **doğrusal olarak** gelir yazar; kira teşvikleri dâhil toplam kira süreye yayılır: 360.000 / 4 = **90.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - faaliyet kiralamasında amortisman"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 81"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "std-tfrs16-gen-0049",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Satış ve geri kiralama işlemlerinde devrin satış sayılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya verenin finansal kiralamadan doğan net kiralama yatırımı 1 Ocak'ta 479.125 ₺'dir; zımni faiz oranı %8'dir. Kiraya verenin ilk yıl tanıyacağı finansman geliri yaklaşık kaç ₺'dir?",
     "options": {
-      "D": "Devrin satış olup olmadığı TFRS 15'teki hükümlere göre belirlenir",
-      "A": "Devir satış sayılır; TFRS 15'teki ölçütlere başvurulmasına gerek bulunmamaktadır",
-      "B": "Devir satış sayılmaz; işlem her zaman finansman işlemi olarak ele alınmaktadır",
-      "C": "Devrin satış sayılıp sayılmadığı işletmenin serbest takdirine bırakılmış bir husustur",
-      "E": "Satış ve geri kiralamada devrin satış olup olmadığı yalnızca sözleşmenin adına bakılarak belirlenir"
+      "A": "120.000",
+      "B": "81.670",
+      "C": "19.165",
+      "D": "38.330",
+      "E": "9.600"
     },
     "answer": "D",
-    "solution": "TFRS 16: işletme, varlık devrinin satış olarak muhasebeleştirilip muhasebeleştirilmeyeceğini belirlemek için TFRS 15'teki (bir edim yükümlülüğünün ne zaman yerine getirildiğine ilişkin) hükümleri uygular. Doğru cevap D.",
+    "solution": "TFRS 16 p. 75'e göre kiraya veren finansman gelirini, **net kiralama yatırımı üzerinden sabit dönemsel getiri** oranını yansıtacak şekilde tanır: 479.125 × %8 ≈ **38.330 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - satış ve geri kiralamada satış ölçütü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 75"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "std-tfrs16-gen-0050",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Devrin satış olarak muhasebeleştirildiği satış ve geri kiralama işlemi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiraya veren bir kiralamayı sınıflandırırken şu durumları değerlendirmektedir: kiralama sonunda mülkiyetin kiracıya geçmesi, kiracının varlığı gerçeğe uygun değerin çok altında bir bedelle satın alma opsiyonu, dayanak varlığın yalnızca kiracının kullanabileceği özel nitelikte olması ve kiralama süresinin 1 yıl olması. Bunlardan hangisi tek başına finansal kiralama göstergesi değildir?",
     "options": {
-      "B": "Satıcı-kiracı, elde tuttuğu kullanım hakkıyla ilgili kazancı değil, yalnızca devredilen haklara ilişkin kazancı muhasebeleştirir",
-      "A": "Satıcı-kiracı satıştan doğan kazancın tamamını derhâl kâr veya zarara yansıtır",
-      "C": "Satıcı-kiracı satıştan doğan kazancı muhasebeleştiremez; kazanç yok sayılır",
-      "D": "Satıcı-kiracı satıştan doğan kazancın tamamını doğrudan özkaynaklara aktarmaktadır",
-      "E": "Devrin satış sayıldığı işlemde satıcı-kiracı, varlığın tümüne ilişkin kazancın tamamını hemen kâra yansıtır ve elde tuttuğu kullanım hakkıyla sınırlı kazanç ayrımını hiç yapmaz"
+      "A": "Varlığın özel nitelikte olması",
+      "B": "Kiralama süresinin 1 yıl olması",
+      "C": "Pazarlıklı satın alma opsiyonu",
+      "D": "Bugünkü değerin GUD'ye yakın olması",
+      "E": "Mülkiyetin kiracıya geçmesi"
     },
     "answer": "B",
-    "solution": "TFRS 16: devir satış olarak muhasebeleştiriliyorsa satıcı-kiracı, kullanım hakkı varlığını dayanak varlığın önceki defter değerinin elde tutulan kullanım hakkıyla ilgili kısmı üzerinden ölçer. Bu nedenle yalnızca alıcı-kiraya verene devredilen haklara ilişkin kazanç veya kayıp tutarını muhasebeleştirir. Doğru cevap B.",
+    "solution": "TFRS 16 p. 63'e göre mülkiyet devri, pazarlıklı satın alma opsiyonu, sürenin ekonomik ömrün büyük bölümünü kapsaması, bugünkü değerin gerçeğe uygun değerin önemli ölçüde tamamına ulaşması ve varlığın **özel nitelikte** olması finansal kiralama göstergeleridir. Kısa süre ise faaliyet kiralamasını işaret eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - satış ve geri kiralamada kazanç"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 63"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "std-tfrs16-gen-0051",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Devrin satış olarak muhasebeleştirilmediği satış ve geri kiralama işlemi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme kiraladığı ofis katını, kalan kiralama süresinin tamamı için başka bir şirkete alt kiralamaya vermiştir. Alt kiralama, ana kiralamadan doğan kullanım hakkı varlığına göre sınıflandırılır ve sahipliğe ilişkin risk ve getirilerin önemli ölçüde tamamını devretmektedir. Ara kiraya veren alt kiralamayı nasıl sınıflandırır?",
     "options": {
-      "C": "Satıcı-kiracı varlığı bilançosunda tutmaya devam eder ve devir bedeli kadar finansal borç muhasebeleştirir",
-      "A": "Satıcı-kiracı varlığı bilanço dışı bırakır; borç kaydetmemektedir",
-      "B": "Satıcı-kiracı satıştan doğan kazancın tamamını derhâl kâr veya zarara yansıtır",
-      "D": "Satıcı-kiracı hiçbir kayıt yapmaz; işlem yalnızca dipnotlarda açıklanmakla yetinilmektedir",
-      "E": "Devrin satış sayılmadığı işlemde satıcı-kiracı varlığı bilançodan çıkarır ve devir bedelini gelir yazar"
+      "A": "Kısa vadeli kiralama",
+      "B": "Satış ve geri kiralama",
+      "C": "Finansal kiralama",
+      "D": "Faaliyet kiralaması",
+      "E": "Kiralama değildir"
     },
     "answer": "C",
-    "solution": "TFRS 16: varlık devri satış olarak muhasebeleştirilmiyorsa satıcı-kiracı devredilen varlığı muhasebeleştirmeye devam eder ve devirden elde edilen tutara eşit bir finansal borç muhasebeleştirir. Bu bir finansman işlemidir. Doğru cevap C.",
+    "solution": "TFRS 16 UR B58'e göre ara kiraya veren alt kiralamayı **ana kiralamadan doğan kullanım hakkı varlığına göre** sınıflandırır; kalan sürenin tamamı için risk ve getiriler devredildiğinden alt kiralama **finansal kiralamadır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - satış sayılmayan geri kiralama"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 UR B58"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "std-tfrs16-gen-0052",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiraya verenin faaliyet kiralamasında katlandığı başlangıçtaki doğrudan maliyetler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı ile kiraya veren, mevcut 5 yıllık kiralamaya ayrı bir fiyatla ve bağımsız fiyatına uygun bedelle ek bir depo alanı eklemek için sözleşmeyi değiştirmiştir. Bu değişiklik nasıl muhasebeleştirilir?",
     "options": {
-      "E": "Dayanak varlığın defter değerine eklenir ve kira geliriyle aynı esasa göre gider yazılır",
-      "A": "Bu maliyetler ve derhâl tek seferde gider yazılır",
-      "B": "Bu maliyetler kiracı tarafından karşılanır; kiraya vereni ilgilendirmez",
-      "C": "Bu maliyetler kayda alınmaz; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "D": "Kiraya verenin faaliyet kiralamasındaki başlangıç doğrudan maliyetleri oluştukları dönemde doğrudan gider yazılır"
+      "A": "Tahmin değişikliği olarak",
+      "B": "Mevcut kiralamanın yeniden ölçümü olarak",
+      "C": "Hata düzeltmesi olarak",
+      "D": "Dipnot açıklamasıyla",
+      "E": "Ayrı bir kiralama olarak"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiraya veren, faaliyet kiralamasının müzakere edilmesi ve düzenlenmesinde katlandığı başlangıçtaki doğrudan maliyetleri dayanak varlığın defter değerine ekler ve bu maliyetleri kira geliri ile aynı esasa göre kiralama süresi boyunca gider olarak muhasebeleştirir. Doğru cevap E.",
+    "solution": "TFRS 16 p. 44'e göre değişiklik **bir veya daha fazla dayanak varlığı kullanma hakkı ekleyerek kiralamanın kapsamını artırıyor** ve bedel bu kapsam artışının tek başına fiyatıyla orantılı artıyorsa, değişiklik **ayrı bir kiralama** olarak muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya verende doğrudan maliyetler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 44-46"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "std-tfrs16-gen-0053",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme, sahibi olduğu binayı bir bankaya satıp aynı binayı uzun süreli olarak geri kiralamıştır ve devir TFRS 15 uyarınca satış sayılmıştır. TFRS 16 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir kiracı dipnotlarında kullanım hakkı varlıklarına ilişkin amortisman giderlerini dayanak varlık sınıfları itibarıyla, kira yükümlülüklerinin faiz giderini ve kısa vadeli kiralamalara ilişkin giderleri açıklamaktadır. Bu açıklamalar hangi standardın gereğidir?",
     "options": {
-      "E": "Elde tutulan kullanım hakkına düşen kazanç muhasebeleştirilmez; yalnızca devredilen haklara ilişkin kazanç kaydedilir",
-      "A": "Satıştan doğan kazancın tamamı derhâl kâr veya zarara yansıtılır",
-      "B": "Satıştan doğan kazanç muhasebeleştirilemez; kazanç tümüyle yok sayılır",
-      "C": "Bina bilançoda tutulmaya devam edilir; devrin satış sayılıp sayılmadığına bakılmaksızın varlık bilançodan çıkarılmaz",
-      "D": "Satıştan doğan kazancın tamamı doğrudan özkaynaklara aktarılır"
+      "A": "TMS 1",
+      "B": "TMS 7",
+      "C": "TMS 17",
+      "D": "TFRS 9",
+      "E": "TFRS 16"
     },
     "answer": "E",
-    "solution": "TFRS 16: satış sayılan geri kiralamada satıcı-kiracı kullanım hakkı varlığını, dayanak varlığın önceki defter değerinin ELDE TUTULAN kullanım hakkına ilişkin kısmı üzerinden ölçer. Bu nedenle kazancın yalnızca alıcı-kiraya verene DEVREDİLEN haklara düşen kısmı muhasebeleştirilir. Doğru cevap E.",
+    "solution": "Kiracının kullanım hakkı amortismanı, kira yükümlülüğü faizi, kısa vadeli ve düşük değerli kiralama giderleri ve değişken kira ödemelerine ilişkin açıklamaları **TFRS 16 p. 53**'te düzenlenmiştir; TMS 17 TFRS 16 ile yürürlükten kalkmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - satış ve geri kiralama (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 53"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "std-tfrs16-gen-0054",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdakilerden hangileri kiraya veren açısından finansal kiralama göstergesidir?\n\nI. Kiralama süresi sonunda mülkiyetin kiracıya devredilmesi\n\nII. Kiralama süresinin dayanak varlığın ekonomik ömrünün büyük bölümünü kapsaması\n\nIII. Dayanak varlığın yalnızca kiracı tarafından kullanılabilecek özel nitelikte olması",
+    "stem": "Bir kiraya veren bir makineyi finansal kiralamayla kiraya vermiştir. Kiralamanın başlangıcında kiraya veren finansal durum tablosunda dayanak varlığın yerine hangi kalemi gösterir?",
     "options": {
-      "D": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "Stok",
+      "B": "Peşin ödenmiş gider",
+      "C": "Kullanım hakkı varlığı",
+      "D": "Kiralama alacağı",
+      "E": "Maddi duran varlık"
     },
     "answer": "D",
-    "solution": "TFRS 16 üçünü de finansal kiralama göstergesi olarak sayar: sürenin sonunda mülkiyetin devri (I), kiralama süresinin ekonomik ömrün büyük bölümünü kapsaması (II) ve dayanak varlığın büyük değişiklikler olmadan yalnızca kiracı tarafından kullanılabilecek özel nitelikte olması (III). Doğru cevap D.",
+    "solution": "TFRS 16 p. 67'ye göre kiraya veren, finansal kiralamaya konu varlıkları finansal durum tablosunda **net kiralama yatırımına eşit tutarda alacak** olarak gösterir; dayanak varlık tablo dışı bırakılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - finansal kiralama göstergeleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 67"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "std-tfrs16-gen-0055",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Aşağıdaki ifadelerden hangileri kiraya veren muhasebesi bakımından doğrudur?\n\nI. Finansal kiralamada net kiralama yatırımı tutarında alacak muhasebeleştirilir\n\nII. Faaliyet kiralamasında kira geliri doğrusal olarak yazılır\n\nIII. Faaliyet kiralamasında dayanak varlık bilanço dışı bırakılır",
+    "stem": "Bir işletme bir binayı 10 yıllık sözleşmeyle kiralamıştır; sözleşme kiracıya 6. yılın sonunda cezasız fesih hakkı vermektedir. Bina işletmenin üretim tesisidir ve kiracının bu fesih opsiyonunu kullanmayacağı makul ölçüde kesindir. Kiralama süresi kaç yıldır?",
     "options": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "6",
+      "B": "4",
+      "C": "10",
+      "D": "16",
+      "E": "5"
     },
     "answer": "C",
-    "solution": "Finansal kiralamada net kiralama yatırımı tutarında alacak kaydedilir (I) ve faaliyet kiralamasında kira geliri doğrusal olarak yazılır (II). Faaliyet kiralamasında dayanak varlık kiraya verenin bilançosunda KALIR ve amortismana tabi tutulur; bu nedenle III yanlıştır. Doğru cevap C.",
+    "solution": "TFRS 16 p. 18'e göre kiralama süresi, iptal edilemeyen süreye ek olarak kiracının **kullanmayacağı makul ölçüde kesin olan fesih opsiyonunun** kapsadığı süreyi de içerir: 6 + 4 = **10 yıl**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiraya veren muhasebesi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 18, UR B34-B35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "std-tfrs16-gen-0056",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiracının yapacağı açıklamalar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme defter değeri 600.000 ₺ olan binasını gerçeğe uygun değeri olan 1.000.000 ₺'ye satmış ve hemen geri kiralamıştır. Geri kiralamadaki kira ödemelerinin bugünkü değeri 300.000 ₺'dir; devir TFRS 15'e göre satıştır. Satıcı-kiracının tanıyacağı satış kazancı kaç ₺'dir?",
     "options": {
-      "A": "Amortisman, faiz gideri, muafiyet kapsamındaki kiralama giderleri ve toplam nakit çıkışı açıklanır",
-      "B": "Kiralamalar hakkında hiçbir açıklama yapılmaz; yalnızca tutarlar bilançoda gösterilmektedir",
-      "C": "Yalnızca toplam kira gideri açıklanır; hiçbir ayrıntılı bilgi verilmesine gerek bulunmamaktadır",
-      "D": "Yalnızca vergi idaresine bildirim yapılır; finansal tablo kullanıcılarına açıklama yapılmaz",
-      "E": "Açıklama yalnızca finansal kiralama yapan işletmeler için zorunlu tutulmuş bulunur"
+      "A": "280.000",
+      "B": "180.000",
+      "C": "120.000",
+      "D": "400.000",
+      "E": "100.000"
     },
     "answer": "A",
-    "solution": "TFRS 16: kiracı, kullanım hakkı varlıklarına ilişkin amortisman giderini (dayanak varlık sınıfı bazında), kira yükümlülüklerine ilişkin faiz giderini, kısa vadeli ve düşük değerli varlık kiralamalarına ilişkin giderleri, değişken kira ödemelerine ilişkin giderleri ve kiralamalara ilişkin toplam nakit çıkışını açıklar. Doğru cevap A.",
+    "solution": "Elde tutulan hak oranı 300.000 / 1.000.000 = %30; kullanım hakkı 600.000 × %30 = 180.000 ₺ olarak ölçülür. Toplam kazanç 400.000 ₺'nin **yalnız devredilen haklara ilişkin** %70'lik kısmı tanınır: **280.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiracı açıklamaları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 100(a)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "std-tfrs16-gen-0057",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Kiralama değişikliği (kiralamada yapılan bir değişiklik) bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir iş makinesi kiralama sözleşmesini 1 Mart'ta imzalamıştır; kiraya veren makineyi 1 Mayıs'ta işletmenin kullanımına hazır hâle getirmiştir. İlk kira ödemesi 1 Haziran'da yapılacaktır. Kiracı kullanım hakkı varlığını ve kira yükümlülüğünü hangi tarihte finansal tablolara alır?",
     "options": {
-      "E": "Kapsam genişliyor ve bedel tek başına fiyatla orantılı artıyorsa değişiklik ayrı bir kiralama olarak muhasebeleştirilir",
-      "A": "Her kiralama değişikliği ayrı bir kiralama olarak muhasebeleştirilir",
-      "B": "Kiralama değişiklikleri muhasebeleştirilmez; mevcut kayıtlar aynen sürdürülür",
-      "C": "Her kiralama değişikliği önceki dönem hatası sayılıp geriye dönük düzeltilmektedir",
-      "D": "Kiralamada yapılan her değişiklik, kapsam ve bedeldeki etkisine bakılmaksızın ayrı bir yeni kiralama olarak baştan muhasebeleştirilir"
+      "A": "1 Mart",
+      "B": "1 Haziran",
+      "C": "Sözleşme süresinin ortası",
+      "D": "31 Aralık",
+      "E": "1 Mayıs"
     },
     "answer": "E",
-    "solution": "TFRS 16: kiracı, (a) değişiklik bir veya daha fazla dayanak varlığın kullanım hakkını ekleyerek kiralamanın kapsamını genişletiyorsa ve (b) kiralama bedeli, kapsam artışının tek başına fiyatına karşılık gelen tutarda artıyorsa, kiralama değişikliğini AYRI bir kiralama olarak muhasebeleştirir. Doğru cevap E.",
+    "solution": "TFRS 16 Ek A ve p. 22'ye göre kiracı, kullanım hakkı varlığını ve kira yükümlülüğünü **kiralamanın fiilen başladığı tarihte**, yani kiraya verenin dayanak varlığı kiracının kullanımına hazır hâle getirdiği tarihte tanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiralama değişikliği"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 Ek A, p. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "std-tfrs16-gen-0058",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracı, kiraladığı mağazanın kirası olarak aylık sabit tutar yerine yalnızca aylık satış hasılatının belirli bir yüzdesini ödemektedir. TFRS 16 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, kendi binalarını TMS 16'daki yeniden değerleme modeliyle ölçmektedir. İşletme ayrıca bir ofis binası kiralamış ve bu kiralamadan doğan kullanım hakkı varlığı binalar sınıfıyla ilişkilidir. Kiracı bu kullanım hakkı varlığına hangi ölçüm modelini uygulayabilir?",
     "options": {
-      "A": "Bu ödemeler endekse veya orana bağlı olmadığından yükümlülüğe dâhil edilmez; gerçekleştiğinde gider yazılır",
-      "B": "Bu ödemeler kira yükümlülüğünün ölçümüne dâhil edilir",
-      "C": "Bu ödemeler kullanım hakkı varlığının maliyetine eklenir",
-      "D": "Bu ödemeler kayda alınmaz; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "E": "Bu ödemeler doğrudan özkaynaklardan indirilir"
+      "A": "Yeniden değerleme modelini",
+      "B": "Net gerçekleşebilir değeri",
+      "C": "Özkaynak yöntemini",
+      "D": "Gerçeğe uygun değer modelini",
+      "E": "İtfa edilmiş maliyeti"
     },
     "answer": "A",
-    "solution": "TFRS 16: satış hasılatına bağlı kira ödemeleri, bir endekse veya orana bağlı OLMAYAN değişken kira ödemesidir. Kira yükümlülüğünün ölçümüne dâhil edilmez; bunları tetikleyen olayın gerçekleştiği dönemde kâr veya zararda muhasebeleştirilir. Doğru cevap A.",
+    "solution": "TFRS 16 p. 35'e göre kullanım hakkı varlıkları, kiracının **TMS 16'daki yeniden değerleme modelini uyguladığı** maddi duran varlık sınıfıyla ilişkiliyse, kiracı o sınıftaki bütün kullanım hakkı varlıklarına **yeniden değerleme modelini uygulamayı seçebilir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - hasılata bağlı kira (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "std-tfrs16-gen-0059",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme bir depoyu 4 yıllığına kiralamış; sözleşmede 3 yıl daha uzatma opsiyonu bulunmakta ve işletme bu opsiyonu kullanacağından makul ölçüde emin bulunmaktadır. TFRS 16 bakımından kiralama süresi kaç yıldır?",
+    "stem": "Kiraya veren muhasebesine ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Faaliyet kiralamasına konu varlık kiraya verenin tablolarında kalır\n\nII. Finansal kiralamada kiraya veren net kiralama yatırımına eşit alacak tanır\n\nIII. Faaliyet kiralaması geliri tahsil edildiği dönemde tanınır",
     "options": {
-      "D": "7 yıl",
-      "A": "4 yıl; yalnızca iptal edilemeyen süre dikkate alınır, uzatma opsiyonları hiç eklenmemektedir",
-      "B": "3 yıl; yalnızca uzatma opsiyonuna ilişkin dönem kiralama süresi olarak kabul edilir",
-      "C": "1 yıl; kiralama süresi her hâlde on iki ay olarak kabul edilir",
-      "E": "4 yıl; uzatma opsiyonu ancak fiilen kullanıldığı tarihte süreye eklenebilmektedir"
+      "A": "II ve III",
+      "B": "I, II ve III",
+      "C": "Yalnız II",
+      "D": "I ve II",
+      "E": "Yalnız I"
     },
     "answer": "D",
-    "solution": "TFRS 16: kiralama süresi, iptal edilemeyen süre (4 yıl) ile kiracının kullanacağından makul ölçüde emin olduğu uzatma opsiyonuna ilişkin dönemlerin (3 yıl) toplamıdır: 4 + 3 = 7 yıl. Opsiyonun fiilen kullanılmasını beklemeye gerek yoktur; değerlendirme başlangıç tarihinde yapılır. Doğru cevap D.",
+    "solution": "TFRS 16 p. 88'e göre faaliyet kiralamasına konu varlık kiraya verende kalır (I); p. 67'ye göre finansal kiralamada net yatırıma eşit alacak tanınır (II). p. 81'e göre faaliyet kiralaması geliri tahsilata göre değil **genellikle doğrusal esasla** tanınır (III yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - kiralama süresi (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 61-63, 67, 81, 88"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "std-tfrs16-gen-0060",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "TFRS 16'nın getirdiği temel değişikliğin finansal tablolara etkisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri düşük değerli varlık muafiyetine ilişkin olarak doğrudur?\n\nI. Değerlendirme varlığın kullanılmış hâldeki değerine göre yapılır\n\nII. Muafiyet kiralama süresinden bağımsızdır\n\nIII. Yeni bir otomobil genellikle düşük değerli sayılır",
     "options": {
-      "D": "Eskiden bilanço dışı kalan faaliyet kiralamaları kiracının bilançosuna girdiğinden varlık ve yükümlülükler artar",
-      "A": "Kiracının varlık ve yükümlülüklerinde hiçbir değişiklik meydana gelmemektedir",
-      "B": "Kiracının varlık ve yükümlülükleri azalır; kiralama işlemi hem varlık hem borç tarafını küçülterek toplam bilanço büyüklüğünü düşürür",
-      "C": "Yalnızca kiraya verenin bilançosu etkilenir; kiracının tabloları hiç değişmemektedir",
-      "E": "Bu etki TFRS 16'da ele alınmamış olup uygulamada ortaya çıkmamaktadır"
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "I, II ve III",
+      "D": "Yalnız II",
+      "E": "Yalnız I"
     },
     "answer": "D",
-    "solution": "TFRS 16 ile kiracıdaki finansal-faaliyet kiralaması ayrımı kaldırılmıştır. Eskiden bilanço dışında kalıp yalnızca gider yazılan faaliyet kiralamaları artık kullanım hakkı varlığı ve kira yükümlülüğü olarak bilançoya girer; bu da kiracının varlık ve yükümlülük toplamlarını artırır. Doğru cevap D.",
+    "solution": "TFRS 16 UR B3-B6'ya göre düşük değerli varlık muafiyeti kiralama süresinden bağımsızdır (II). Değerlendirme varlığın **yeni olduğundaki** değerine göre yapılır (I yanlış); yeni bir otomobil **düşük değerli sayılmaz** (III yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TFRS 16; yapısal)",
-      "legislationRef": "TFRS 16 - bilançoya etkisi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TFRS 16 p. 5, UR B3-B7"
     },
     "validYear": 2026,
     "mockExamId": null
