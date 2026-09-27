@@ -3,20 +3,20 @@
     "id": "std-tms12-gen-0001",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'nin amacı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin makinesinin maliyeti 800.000 ₺'dir; vergi mevzuatına göre bugüne kadar 300.000 ₺ amortisman indirilmiştir ve makinenin kullanımından elde edilecek gelirler vergilendirilecektir. Makinenin vergiye esas değeri kaç ₺'dir?",
     "options": {
-      "A": "Gelir vergilerinin muhasebeleştirilmesini düzenlemek ve cari ile gelecekteki vergisel sonuçları göstermektir",
-      "B": "İşletmenin ödeyeceği vergi tutarını en aza indirecek yöntemleri belirlemek ve vergi planlamasında izlenecek adımları bir rehber olarak sunmaktır",
-      "C": "Vergi mevzuatındaki oran ve istisnaları belirleyen bir düzenleme",
-      "D": "İşletmenin vergi beyannamesinin nasıl doldurulacağını gösteren bir rehber",
-      "E": "TMS 12'nin belirlenmiş bir amacı bulunmayıp yalnızca biçimsel bir düzenleme"
+      "A": "500.000",
+      "B": "300.000",
+      "C": "0",
+      "D": "800.000",
+      "E": "1.100.000"
     },
     "answer": "A",
-    "solution": "TMS 12: bu Standardın amacı gelir vergilerinin muhasebeleştirilmesini düzenlemektir. Temel konu, cari dönem ve gelecek dönemlerdeki vergisel sonuçların nasıl muhasebeleştirileceğidir. Doğru cevap A.",
+    "solution": "TMS 12 p. 7'ye göre bir varlığın vergiye esas değeri, varlığın defter değerini geri kazanırken elde edilecek vergilendirilebilir ekonomik faydalardan **vergi açısından indirilebilecek tutardır**: 800.000 − 300.000 = **500.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - amaç"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "std-tms12-gen-0002",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre muhasebe kârı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin bir makinesinin finansal tablolardaki defter değeri 500.000 ₺, vergiye esas değeri 380.000 ₺'dir; vergi oranı %25'tir. İlk tanıma istisnası söz konusu değildir. Bu makine için tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "A": "Vergi gideri düşülmeden önceki dönem kârı veya zararıdır",
-      "B": "Vergi mevzuatına göre hesaplanan ve üzerinden vergi ödenen tutarı ifade eden bir kavramdır",
-      "C": "Vergi gideri düşüldükten sonra kalan net dönem kârını ifade eden bir kavram",
-      "D": "İşletmenin ortaklara dağıttığı kâr payı tutarını ifade eden bir kavramı karşılar",
-      "E": "Vergi mevzuatının kurallarına göre hesaplanan ve üzerinden vergi ödenen dönem kârıdır"
+      "A": "30.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "B": "125.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "C": "120.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "D": "30.000 ₺ ertelenmiş vergi varlığı",
+      "E": "Ertelenmiş vergi doğmaz"
     },
     "answer": "A",
-    "solution": "TMS 12: muhasebe kârı, vergi gideri düşülmeden önceki dönem kârı veya zararıdır. Doğru cevap A.",
+    "solution": "Varlığın defter değeri vergiye esas değerinden büyük olduğundan **vergilendirilebilir geçici fark** vardır: 500.000 − 380.000 = 120.000 ₺. TMS 12 p. 15'e göre **ertelenmiş vergi yükümlülüğü**: 120.000 × %25 = **30.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - muhasebe kârı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 15"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "std-tms12-gen-0003",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre vergiye tabi kâr (mali kâr) bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin 120.000 ₺ peşin tahsil edilmiş kira geliri vardır; tutar vergi mevzuatına göre tahsil edildiği dönemde vergilendirilmiştir. Vergi oranı %25'tir ve gelecekte yeterli kâr beklenmektedir. Bu kalem için tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "E": "Vergi otoritelerince konulan kurallara göre belirlenen ve üzerinden vergi ödenen dönem kârıdır",
-      "A": "Vergi gideri düşülmeden önceki muhasebe kârını ifade eden bir kavramı karşılar",
-      "B": "Vergi gideri düşüldükten sonra kalan net dönem kârını ifade eden bir kavram",
-      "C": "İşletmenin gelecekte elde etmeyi beklediği kârı ifade eder; bu tutar bütçe verilerine göre hesaplanır ve dönemin vergi matrahı olarak kullanılır",
-      "D": "Finansal tablolarda raporlanan, vergi gideri düşülmeden önceki dönem kârıdır"
+      "A": "120.000 ₺ ertelenmiş vergi varlığı",
+      "B": "Ertelenmiş vergi doğmaz",
+      "C": "30.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "D": "15.000 ₺ ertelenmiş vergi varlığı",
+      "E": "30.000 ₺ ertelenmiş vergi varlığı"
     },
     "answer": "E",
-    "solution": "TMS 12: vergiye tabi kâr (mali zarar), vergi otoriteleri tarafından konulan hükümlere göre bir hesap dönemi için tespit edilen ve üzerinden vergi ödenen (vergi geri kazanılan) kârdır (zarardır). Doğru cevap E.",
+    "solution": "Ertelenmiş gelirin (borç) defter değeri 120.000 ₺, vergiye esas değeri 0'dır; borçta defter değeri büyük olduğundan **indirilebilir geçici fark** vardır: 120.000 × %25 = **30.000 ₺ ertelenmiş vergi varlığı**; gelir muhasebede tanındığında vergi zaten ödenmiş olacaktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - vergiye tabi kâr"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 8, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "std-tms12-gen-0004",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Muhasebe kârı ile vergiye tabi kâr arasındaki ilişki bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme gerçeğe uygun değer modeliyle ölçtüğü bir binada dönem sonunda 200.000 ₺ değer artışı kazancı tanımıştır; kazanç vergi mevzuatında dikkate alınmamakta, bina satılana kadar vergiye esas değer maliyet üzerinden kalmaktadır. Vergi oranı %20'dir. Değer artışının ertelenmiş vergi etkisi hangisidir?",
     "options": {
-      "E": "İkisi farklı kurallara göre belirlendiğinden birbirinden farklı olabilir",
-      "A": "İkisi ve istisnasız birbirine eşit olmak zorunda bulunan tutarları ifade eder",
-      "B": "Muhasebe kârı vergiye tabi kârdan yüksek olmak zorunda tutulan bir tutarı karşılar",
-      "C": "Muhasebe kârı vergiye tabi kârdan düşük olmak zorunda olan bir tutarı ifade eder",
-      "D": "İkisi aynı kurallara dayandığından her dönemde birbirine eşit olur"
+      "A": "Ertelenmiş vergi doğmaz",
+      "B": "40.000 ₺ yükümlülük, DKG'de",
+      "C": "40.000 ₺ varlık, kâr veya zararda",
+      "D": "200.000 ₺ yükümlülük, kâr veya zararda",
+      "E": "40.000 ₺ yükümlülük, kâr veya zararda"
     },
     "answer": "E",
-    "solution": "TMS 12: muhasebe kârı TFRS'lere, vergiye tabi kâr ise vergi mevzuatına göre belirlenir. Farklı kurallar uygulandığından ikisi birbirinden farklı olabilir; bu farklar geçici veya sürekli nitelikte olabilir. Doğru cevap E.",
+    "solution": "Değer artışı binanın defter değerini vergiye esas değerin üzerine çıkarır; **vergilendirilebilir geçici fark** 200.000 ₺ oluşur. Kazanç kâr veya zararda tanındığından ertelenmiş vergi de kâr veya zarara yansır: **40.000 ₺ yükümlülük**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - iki kâr arasındaki fark"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 17, 51B"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "std-tms12-gen-0005",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre dönem vergi gideri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir işletme birleşmesinde 500.000 ₺ şerefiye tanımıştır; vergi mevzuatına göre şerefiye hiçbir dönemde gider olarak indirilemeyecektir. Şerefiyenin ilk tanınması için ertelenmiş vergi yükümlülüğü hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "Dönem kârı veya zararının belirlenmesinde dikkate alınan cari vergi ile ertelenmiş vergi toplamıdır",
-      "A": "Yalnızca vergi dairesine fiilen ödenen tutarı ifade eden dar kapsamlı bir kavram",
-      "C": "Yalnızca ertelenmiş vergiyi ifade eden ve cari vergiyi kapsamayan bir kavramı karşılar",
-      "D": "Yalnızca vergi beyannamesinde gösterilen tutarı ifade eden bir kavramı karşılar",
-      "E": "Yalnızca vergi dairesine fiilen ödenen cari vergiden oluşur; ertelenmiş vergi bu tutara girmez ve gelir tablosunda ayrı bir kalem olarak raporlanmaz"
+      "A": "Diğer kapsamlı gelirde tanınır",
+      "B": "Tanınmaz",
+      "C": "Yarısı tanınır",
+      "D": "Tanınır",
+      "E": "Özkaynakta tanınır"
     },
     "answer": "B",
-    "solution": "TMS 12: vergi gideri (geliri), dönem kârı veya zararının belirlenmesinde dikkate alınan toplam cari vergi ve ertelenmiş vergi tutarıdır. Muhasebe, yalnızca ödenen vergiyi değil ertelenmiş etkiyi de gösterir. Doğru cevap B.",
+    "solution": "TMS 12 p. 15(a) ve 21'e göre **şerefiyenin ilk muhasebeleştirilmesinden** kaynaklanan vergilendirilebilir geçici fark için ertelenmiş vergi yükümlülüğü tanınmaz; aksi hâlde şerefiye artar ve döngüsel bir etki oluşur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - vergi gideri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15(a), 21"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "std-tms12-gen-0006",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre cari vergi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin gelecek yıllara devreden 800.000 ₺ kullanılmamış mali zararı vardır. İşletme, zararın mahsup süresi içinde 600.000 ₺ vergilendirilebilir kâr elde etmesinin muhtemel olduğunu öngörmektedir. Vergi oranı %25'tir. Tanınacak ertelenmiş vergi varlığı kaç ₺'dir?",
     "options": {
-      "D": "Dönemin vergiye tabi kârı üzerinden ödenecek veya geri kazanılacak gelir vergisi tutarıdır",
-      "A": "Gelecek dönemlerde ödenecek olan vergileri ifade eden bir kavramı karşılar",
-      "B": "Geçici farklardan kaynaklanan ve ileride doğacak vergileri ifade eden bir kavram",
-      "C": "İşletmenin geçmiş yıllarda ödediği tüm vergilerin toplamını ifade eden bir kavramı karşılar",
-      "E": "Gelecek dönemlerde geri kazanılacak ya da ödenecek vergi tutarını ifade eder"
+      "A": "200.000",
+      "B": "50.000",
+      "C": "800.000",
+      "D": "150.000",
+      "E": "0"
     },
     "answer": "D",
-    "solution": "TMS 12: dönem vergisi (cari vergi), bir hesap dönemindeki vergiye tabi kâr (mali zarar) üzerinden ödenecek (geri kazanılacak) gelir vergisi tutarıdır. Doğru cevap D.",
+    "solution": "TMS 12 p. 34'e göre kullanılmamış vergi zararları için ertelenmiş vergi varlığı, **gelecekte vergilendirilebilir kâr elde edilmesinin muhtemel olduğu ölçüde** tanınır: 600.000 × %25 = **150.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - cari vergi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 34-36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "std-tms12-gen-0007",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Cari dönem ve önceki dönemlere ilişkin ödenmemiş vergi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin ertelenmiş vergi yükümlülüğünün 10 yıl içinde kademeli olarak tersine dönmesi beklenmektedir. Yönetim, paranın zaman değerini yansıtmak için yükümlülüğü bugünkü değerine indirgemek istemektedir. TMS 12'ye göre bu uygulama hakkında ne söylenebilir?",
     "options": {
-      "E": "Borç olarak muhasebeleştirilir; ödenen tutar borcu aşıyorsa aşan kısım varlık olarak kaydedilir",
-      "A": "Ödenmemiş vergi borç olarak muhasebeleştirilemez; yalnızca dipnotta açıklanır",
-      "B": "Fazla ödenen vergi varlık olarak muhasebeleştirilemez; gider yazılır",
-      "C": "Vergi borçları doğrudan özkaynaklardan indirilir",
-      "D": "Ödenen tutar borcu aşsa dahi aşan kısım doğrudan gider yazılır; varlık olarak kaydedilmez"
+      "A": "Denetçi onayıyla yapılır",
+      "B": "Vergi öncesi oranla iskonto yapılır",
+      "C": "İskonto yapılır",
+      "D": "Uzun vadeli kısım iskonto edilir",
+      "E": "İskonto yapılmaz"
     },
     "answer": "E",
-    "solution": "TMS 12: cari dönem ve önceki dönemlere ilişkin ödenmemiş vergiler borç olarak muhasebeleştirilir. Halihazırda ödenen tutar ilgili dönemlere ilişkin ödenmesi gereken tutarı aşarsa, aşan kısım varlık olarak muhasebeleştirilir. Doğru cevap E.",
+    "solution": "TMS 12 p. 53'e göre **ertelenmiş vergi varlık ve yükümlülükleri iskonto edilmez**; tersine dönme zamanlamasının güvenilir biçimde belirlenmesi pratik olmadığından iskonto karşılaştırılabilirliği bozar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - cari vergi borcu ve varlığı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 53"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "std-tms12-gen-0008",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre vergiye esas değer bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme bir binayı satarak geri kazanmayı bekliyorsa %20, kullanarak geri kazanmayı bekliyorsa %25 vergi oranı uygulanmaktadır. İşletme binayı satmayı planlamaktadır. Ertelenmiş vergi ölçümünde hangi oran kullanılır?",
     "options": {
-      "D": "Bir varlık veya borcun vergisel açıdan taşıdığı tutardır",
-      "A": "Bir varlığın veya borcun finansal tablolardaki defter değerini ifade eden bir kavramdır",
-      "B": "Bir varlığın piyasada satılması hâlinde elde edilecek tutarı ifade eden bir kavram",
-      "C": "Bir varlığın ilk edinildiği tarihteki maliyet bedelini ifade eden bir kavramı karşılar",
-      "E": "Bir varlık veya borcun raporlama tarihindeki gerçeğe uygun değerini ifade eder"
+      "A": "%22,5",
+      "B": "Oranların toplamı",
+      "C": "%25",
+      "D": "%20",
+      "E": "Cari yılın oranı"
     },
     "answer": "D",
-    "solution": "TMS 12: bir varlık veya borcun vergiye esas değeri, vergisel açıdan bunlara atfedilen tutardır. Geçici farklar, defter değeri ile vergiye esas değer karşılaştırılarak bulunur. Doğru cevap D.",
+    "solution": "TMS 12 p. 51-51A'ya göre ertelenmiş vergi, işletmenin raporlama dönemi sonunda varlığın defter değerini **geri kazanmayı beklediği yönteme** göre doğacak vergi sonuçlarını yansıtır; satış beklendiğinden satışa uygulanan **%20** oranı kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - vergiye esas değer"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 51-51A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "std-tms12-gen-0009",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "TMS 12'ye göre geçici farklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin muhasebe kârı (vergi öncesi) 900.000 ₺'dir. Kârın hesaplanmasında 60.000 ₺ kanunen kabul edilmeyen gider düşülmüş, 100.000 ₺ vergiden istisna iştirak kazancı eklenmiştir; geçici fark yoktur. Vergi oranı %25'tir. Cari vergi gideri kaç ₺'dir?",
     "options": {
-      "C": "Bir varlık veya borcun defter değeri ile vergiye esas değeri arasındaki farklardır",
-      "A": "Muhasebe kârı ile vergiye tabi kâr arasındaki ve ortadan kalkmayan farklardır",
-      "B": "İşletmenin geçmiş yıllarda ödediği vergiler ile ödenmesi gereken vergiler arasındaki farklardır",
-      "D": "İşletmenin farklı dönemlerde uyguladığı vergi oranları arasındaki farkları ifade eder",
-      "E": "Muhasebe kârı ile mali kâr arasında doğan ve ters dönmeyen kalıcı farklardır"
+      "A": "225.000",
+      "B": "235.000",
+      "C": "215.000",
+      "D": "240.000",
+      "E": "200.000"
     },
     "answer": "C",
-    "solution": "TMS 12: geçici farklar, bir varlık veya borcun finansal durum tablosundaki defter değeri ile bunların vergiye esas değerleri arasındaki farklardır. Zamanla ortadan kalkarlar; sürekli farklardan bu yönüyle ayrılırlar. Doğru cevap C.",
+    "solution": "Vergilendirilebilir kâr: 900.000 + 60.000 (KKEG) − 100.000 (istisna) = 860.000 ₺. Cari vergi: 860.000 × %25 = **215.000 ₺**. Bu kalıcı farklar ertelenmiş vergi doğurmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - geçici farklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 12"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "std-tms12-gen-0010",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergiye tabi geçici farklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin aynı vergi idaresine karşı 80.000 ₺ ertelenmiş vergi varlığı ve 120.000 ₺ ertelenmiş vergi yükümlülüğü vardır; cari vergi varlık ve borçlarını mahsup etmek için yasal hakkı bulunmaktadır. Finansal durum tablosunda ne gösterilir?",
     "options": {
-      "A": "Gelecek dönemlerde vergiye tabi tutar doğuran farklardır; ertelenmiş vergi BORCU yaratır",
-      "B": "Gelecek dönemlerde indirilebilir tutar doğuran farklardır; ertelenmiş vergi VARLIĞI yaratır",
-      "C": "Ortadan kalkmayan ve vergisel sonuç doğurmayan farkları ifade eder",
-      "D": "Yalnızca cari dönemi etkileyen ve gelecek dönemlere sarkmayan farkları ifade eden kavramdır",
-      "E": "Gelecek dönemlerde indirilebilir tutar doğurur; ertelenmiş vergi varlığı yaratır"
+      "A": "40.000 ₺ net ertelenmiş vergi yükümlülüğü",
+      "B": "Bir şey gösterilmez",
+      "C": "80.000 ₺ varlık ve 120.000 ₺ yükümlülük",
+      "D": "40.000 ₺ net ertelenmiş vergi varlığı",
+      "E": "200.000 ₺ yükümlülük"
     },
     "answer": "A",
-    "solution": "TMS 12: vergiye tabi geçici farklar, gelecek dönemlerde varlığın defter değeri geri kazanıldığında veya borcun defter değeri ödendiğinde vergiye tabi tutar oluşmasına neden olan geçici farklardır. Bunlar ertelenmiş vergi BORCU doğurur. Doğru cevap A.",
+    "solution": "TMS 12 p. 74'e göre işletme cari vergi varlık ve borçlarını mahsup etmek için **yasal hakka** sahipse ve ertelenmiş vergiler **aynı vergi idaresince** aynı vergiye tabi işletmeden alınan gelir vergileriyle ilgiliyse, ertelenmiş vergi varlık ve yükümlülüklerini netleştirir: **40.000 ₺ net yükümlülük**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - vergiye tabi geçici farklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 74"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "std-tms12-gen-0011",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "İndirilebilir geçici farklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "TMS 12'ye göre, gelecek dönemlerde vergilendirilebilir kâr belirlenirken vergiye tabi tutarlar doğuracak geçici farklar nasıl adlandırılır?",
     "options": {
-      "E": "Gelecek dönemlerde indirilebilir tutar doğuran farklardır; ertelenmiş vergi VARLIĞI yaratır",
-      "A": "Gelecek dönemlerde vergiye tabi tutar doğuran farklardır; ertelenmiş vergi BORCU yaratır",
-      "B": "Ortadan kalkmayan ve vergisel sonuç doğurmayan farkları ifade eder",
-      "C": "Yalnızca cari dönemi etkileyen ve gelecek dönemlere sarkmayan farkları ifade eden kavramdır",
-      "D": "Gelecek dönemlerde vergiye tabi tutar doğurur; ertelenmiş vergi borcu yaratır"
+      "A": "Vergi alacakları",
+      "B": "Kullanılmamış vergi zararları",
+      "C": "Kalıcı farklar",
+      "D": "İndirilebilir geçici farklar",
+      "E": "Vergilendirilebilir geçici farklar"
     },
     "answer": "E",
-    "solution": "TMS 12: indirilebilir geçici farklar, gelecek dönemlerde varlığın defter değeri geri kazanıldığında veya borcun defter değeri ödendiğinde vergiye tabi kârın tespitinde indirilebilir tutar oluşmasına neden olan geçici farklardır. Bunlar ertelenmiş vergi VARLIĞI doğurur. Doğru cevap E.",
+    "solution": "TMS 12 p. 5'e göre **vergilendirilebilir geçici farklar**, varlık veya borcun defter değerinin geri kazanılması ya da ödenmesi sırasında gelecek dönemlerin vergilendirilebilir kârına eklenecek tutarlar doğuran farklardır ve ertelenmiş vergi yükümlülüğü yaratır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - indirilebilir geçici farklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "std-tms12-gen-0012",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi borcu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir ana ortaklık, bağlı ortaklığındaki yatırımının defter değeri ile vergiye esas değeri arasında vergilendirilebilir geçici fark bulunduğunu belirlemiştir. Ana ortaklık farkın tersine dönme zamanını kontrol edebilmekte ve yakın gelecekte tersine dönmemesi muhtemeldir. Ertelenmiş vergi yükümlülüğü hakkında ne söylenebilir?",
     "options": {
-      "B": "Vergiye tabi geçici farklar üzerinden gelecek dönemlerde ödenecek gelir vergisi tutarıdır",
-      "A": "İndirilebilir geçici farklar üzerinden gelecekte geri kazanılacak vergi tutarını ifade eder",
-      "C": "Cari dönemde vergi dairesine fiilen ödenmesi gereken vergi tutarını ifade eden bir kavramdır",
-      "D": "İşletmenin geçmiş yıllarda fazla ödediği vergilerin toplamını ifade eden bir kavram",
-      "E": "İndirilebilir geçici farklar üzerinden gelecekte geri kazanılacak vergi tutarıdır"
+      "A": "Tanınır",
+      "B": "Tanınmaz",
+      "C": "Diğer kapsamlı gelirde tanınır",
+      "D": "Şerefiyeye eklenir",
+      "E": "Yarısı tanınır"
     },
     "answer": "B",
-    "solution": "TMS 12: ertelenmiş vergi borçları, vergiye tabi geçici farklar üzerinden gelecek dönemlerde ödenecek gelir vergisi tutarlarıdır. Doğru cevap B.",
+    "solution": "TMS 12 p. 39'a göre bağlı ortaklıklardaki yatırımlara ilişkin vergilendirilebilir geçici farklar için, ana ortaklık **tersine dönme zamanını kontrol edebiliyorsa** ve farkın **yakın gelecekte tersine dönmemesi muhtemelse** ertelenmiş vergi yükümlülüğü tanınmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi borcu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 39, 44"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "std-tms12-gen-0013",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlığı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Raporlama döneminden sonra, finansal tablolar onaylanmadan önce kurumlar vergisi oranı yükseltilmiştir; yıl sonunda bu değişiklik yasalaşmamış ve yasalaşması kesinleşmemişti. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "A": "İndirilebilir geçici farklar, devreden mali zararlar ve vergi avantajları üzerinden geri kazanılacak vergi tutarlarıdır",
-      "B": "Vergiye tabi geçici farklar üzerinden gelecekte ödenecek vergi tutarlarını ifade eder",
-      "C": "Cari dönemde vergi dairesine fiilen ödenmesi gereken vergi tutarını ifade eder; gelecek dönemlere sarkan indirilebilir farklar bu tanımın dışında kalır",
-      "D": "İşletmenin gelecekte elde etmeyi beklediği kâr tutarını ifade eden bir kavramı karşılar",
-      "E": "Vergiye tabi geçici farklar üzerinden gelecekte ödenecek vergi tutarıdır"
+      "A": "Ertelenmiş vergi yeni oranla ölçülür",
+      "B": "Önemli etki dipnotta açıklanır",
+      "C": "Yıl sonunda yasalaşmış oran kullanılır",
+      "D": "Yeni oran sonraki dönem ölçümlerinde kullanılır",
+      "E": "Değişiklik TMS 10'a göre düzeltme gerektirmez"
     },
     "answer": "A",
-    "solution": "TMS 12: ertelenmiş vergi varlıkları, (a) indirilebilir geçici farklar, (b) gelecek dönemlere devreden kullanılmamış mali zararlar ve (c) gelecek dönemlere devreden kullanılmamış vergi avantajları nedeniyle gelecek dönemlerde geri kazanılacak gelir vergisi tutarlarıdır. Doğru cevap A.",
+    "solution": "TMS 12 p. 46-47'ye göre cari ve ertelenmiş vergi, **raporlama dönemi sonunda yasalaşmış veya yasalaşması kesinleşmiş** oranlarla ölçülür; sonradan yasalaşan oran değişikliği TMS 10'a göre düzeltme gerektirmeyen olaydır ve açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi varlığı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 46-47"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "std-tms12-gen-0014",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdakilerden hangileri ertelenmiş vergi VARLIĞI doğurur?\n\nI. İndirilebilir geçici farklar\n\nII. Gelecek dönemlere devreden kullanılmamış mali zararlar\n\nIII. Gelecek dönemlere devreden kullanılmamış vergi avantajları",
+    "stem": "Bir işletme stokları için 40.000 ₺ değer düşüklüğü ayırmıştır; vergi mevzuatı bu tutarı stoklar satılıncaya kadar gider olarak kabul etmemektedir. Vergi oranı %25'tir ve yeterli kâr beklenmektedir. Tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "B": "I, II ve III",
-      "A": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "30.000 ₺ ertelenmiş vergi varlığı",
+      "B": "10.000 ₺ ertelenmiş vergi varlığı",
+      "C": "40.000 ₺ ertelenmiş vergi varlığı",
+      "D": "Ertelenmiş vergi doğmaz",
+      "E": "10.000 ₺ ertelenmiş vergi yükümlülüğü"
     },
     "answer": "B",
-    "solution": "TMS 12 üçünü de ertelenmiş vergi varlığı kaynağı olarak sayar: indirilebilir geçici farklar (I), devreden kullanılmamış mali zararlar (II) ve devreden kullanılmamış vergi avantajları (III). Doğru cevap B.",
+    "solution": "Stokların defter değeri vergiye esas değerinden 40.000 ₺ düşüktür; **indirilebilir geçici fark** oluşur: 40.000 × %25 = **10.000 ₺ ertelenmiş vergi varlığı**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi varlığı kaynakları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 24, 26(d)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "std-tms12-gen-0015",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. Geçici fark, defter değeri ile vergiye esas değer arasındaki farktır\n\nII. Vergiye tabi geçici fark ertelenmiş vergi varlığı doğurur\n\nIII. İndirilebilir geçici fark ertelenmiş vergi borcu doğurur",
+    "stem": "Bir işletmenin vergi öncesi muhasebe kârı 800.000 ₺'dir. Muhasebede gider yazılan ancak vergide ödendiğinde indirilecek 50.000 ₺ karşılık vardır; ayrıca vergide muhasebeye göre 30.000 ₺ fazla amortisman indirilmiştir. Kalıcı fark yoktur ve vergi oranı %25'tir. Cari vergi gideri kaç ₺'dir?",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "195.000",
+      "B": "192.500",
+      "C": "205.000",
+      "D": "200.000",
+      "E": "220.000"
     },
     "answer": "C",
-    "solution": "Geçici fark defter değeri ile vergiye esas değer arasındaki farktır (I). Vergiye tabi geçici fark ertelenmiş vergi borcu doğurduğundan II; indirilebilir geçici fark ertelenmiş vergi varlığı doğurduğundan III yanlıştır. Yalnız I doğrudur. Doğru cevap C.",
+    "solution": "Vergilendirilebilir kâr: 800.000 + 50.000 (henüz indirilemeyen karşılık) − 30.000 (fazla vergi amortismanı) = 820.000 ₺. Cari vergi: 820.000 × %25 = **205.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - geçici farklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 12"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "std-tms12-gen-0016",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir varlığın defter değerinin vergiye esas değerinden YÜKSEK olması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin kâr veya zarar tablosundaki toplam vergi gideri 280.000 ₺, vergi öncesi muhasebe kârı 1.000.000 ₺'dir. TMS 12'ye göre açıklanabilecek ortalama etkin vergi oranı yüzde kaçtır?",
     "options": {
-      "B": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
-      "A": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
-      "C": "Hiçbir geçici fark doğmaz; iki değer arasındaki fark dikkate alınmaz",
-      "D": "Vergiye tabi geçici fark doğar; ancak ertelenmiş vergi varlığı muhasebeleştirilir",
-      "E": "Fark yalnızca varlık satıldığında dikkate alınır; elde tutuldukça ertelenmiş vergi doğmaz"
+      "A": "30",
+      "B": "28",
+      "C": "25",
+      "D": "22",
+      "E": "20"
     },
     "answer": "B",
-    "solution": "TMS 12: bir VARLIĞIN defter değeri vergiye esas değerinden yüksekse, gelecekte geri kazanılacak ekonomik yarar vergisel olarak indirilebilecek tutarı aşar. Bu bir VERGİYE TABİ geçici farktır ve ertelenmiş vergi borcu doğurur. Doğru cevap B.",
+    "solution": "TMS 12 p. 86'ya göre ortalama etkin vergi oranı, **vergi giderinin muhasebe kârına bölünmesiyle** bulunur: 280.000 / 1.000.000 = **%28**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - varlıkta fark yönü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 86"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "std-tms12-gen-0017",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi borçlarının muhasebeleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir ülkenin vergi mevzuatı, cari yıl vergi zararının önceki yılda ödenen verginin iadesi için geriye taşınmasına izin vermektedir. Bir işletme cari yılda vergi zararı etmiş ve önceki yılda ödediği vergiden 90.000 ₺ iade hakkı doğmuştur. Bu hak nasıl muhasebeleştirilir?",
     "options": {
-      "D": "Standartta sayılan istisnalar dışında tüm vergiye tabi geçici farklar için muhasebeleştirilir",
-      "A": "Muhasebeleştirilmez; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "B": "Yalnızca işletmenin muhasebeleştirmeyi tercih ettiği farklar için kaydedilir",
-      "C": "Yalnızca vergi idaresi talep ettiğinde muhasebeleştirilir",
-      "E": "Yalnızca ters dönmesi bir yıl içinde beklenen farklar için muhasebeleştirilir"
+      "A": "Özkaynakta",
+      "B": "Koşullu varlık olarak",
+      "C": "Önceki yılın düzeltilmesiyle",
+      "D": "Cari yılda varlık olarak",
+      "E": "Muhasebeleştirilmez"
     },
     "answer": "D",
-    "solution": "TMS 12: ertelenmiş vergi borcu, şerefiyenin ilk muhasebeleştirilmesinden ve belirli ilk muhasebeleştirme istisnalarından kaynaklananlar dışında, tüm vergiye tabi geçici farklar için muhasebeleştirilir. Doğru cevap D.",
+    "solution": "TMS 12 p. 13-14'e göre önceki dönemin cari vergisinin geri alınması amacıyla geriye taşınabilen vergi zararına ilişkin fayda **varlık olarak** tanınır; fayda güvenilir ölçülebildiğinden zararın oluştuğu dönemde muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi borcunun kaydı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 13-14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "std-tms12-gen-0018",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlıklarının muhasebeleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme 2021 değişikliği sonrasında bir kiralamada 1.000.000 ₺ kullanım hakkı varlığı ve aynı tutarda kira yükümlülüğü tanımıştır; vergide kira ödendiğinde gider yazılmaktadır. Vergi oranı %20'dir ve gelecekte yeterli kâr beklenmektedir. Başlangıçta brüt olarak tanınacak ertelenmiş vergi yükümlülüğü kaç ₺'dir?",
     "options": {
-      "C": "İndirilebilir geçici farkın kullanılmasına yetecek vergiye tabi kâr elde edilmesi muhtemel olduğu ölçüde muhasebeleştirilir",
-      "A": "Vergiye tabi kâr beklentisine bakılmaksızın tamamı muhasebeleştirilir",
-      "B": "Muhasebeleştirilemez; yalnızca dipnotlarda açıklanmakla yetinilir",
-      "D": "Yalnızca vergi idaresi izin verdiğinde muhasebeleştirilebilen bir kalemi ifade eder",
-      "E": "Gelecekte kâr elde edilip edilmeyeceğine bakılmaksızın tam tutarıyla muhasebeleştirilir; muhtemellik değerlendirmesi yalnızca ertelenmiş vergi borçları için yapılır"
+      "A": "100.000",
+      "B": "0",
+      "C": "200.000",
+      "D": "1.000.000",
+      "E": "400.000"
     },
     "answer": "C",
-    "solution": "TMS 12: ertelenmiş vergi varlığı, indirilebilir geçici farkın kullanılmasına yeterli olacak tutarda vergiye tabi kâr elde edileceğinin MUHTEMEL olması ölçüsünde muhasebeleştirilir. Bu koşul, ertelenmiş vergi borcunda aranmaz — ihtiyatlılık gereği asimetriktir. Doğru cevap C.",
+    "solution": "Kullanım hakkı varlığının vergiye esas değeri 0 olduğundan 1.000.000 ₺ vergilendirilebilir, kira yükümlülüğünün vergiye esas değeri 0 olduğundan 1.000.000 ₺ indirilebilir geçici fark doğar. p. 22A'ya göre ilk tanıma istisnası uygulanmaz: brüt **200.000 ₺ EVY** ve aynı tutarda EVV tanınır (p. 74 koşullarıyla netleştirilebilir).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi varlığının kaydı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15(b), 22A, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "std-tms12-gen-0019",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Kullanılmamış mali zararlar için ertelenmiş vergi varlığı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri TMS 12'ye göre doğrudur?\n\nI. Fazla ödenen cari vergi varlık olarak tanınır\n\nII. Kullanılmamış vergi zararları için muhtemel kâr ölçüsünde ertelenmiş vergi varlığı tanınır\n\nIII. Ertelenmiş vergi varlığının defter değeri her dönem gözden geçirilir",
     "options": {
-      "A": "Mahsup edilebilecek vergiye tabi kâr elde edilmesi muhtemel olduğu ölçüde muhasebeleştirilir",
-      "B": "Mali zararlar için ertelenmiş vergi varlığı muhasebeleştirilemez",
-      "C": "Mali zararlar için ve koşulsuz olarak ertelenmiş vergi varlığı kaydedilir",
-      "D": "Mali zararlar doğrudan özkaynaklardan indirilir",
-      "E": "Devreden mali zararlar için ertelenmiş vergi varlığı kaydedilemez"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "II ve III",
+      "D": "I ve II",
+      "E": "I ve III"
     },
     "answer": "A",
-    "solution": "TMS 12: kullanılmamış mali zararların ve vergi avantajlarının mahsup edilebileceği vergiye tabi kâr elde edilmesinin muhtemel olması ölçüsünde ertelenmiş vergi varlığı muhasebeleştirilir. Geçmişteki zarar geçmişi, muhtemelliğin değerlendirilmesinde güçlü bir kanıttır. Doğru cevap A.",
+    "solution": "TMS 12 p. 12'ye göre fazla ödeme varlıktır (I); p. 34'e göre vergi zararları için muhtemel kâr ölçüsünde EVV tanınır (II); p. 56'ya göre EVV'nin defter değeri her dönem gözden geçirilir (III).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - mali zararlar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 12, 34, 56"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "std-tms12-gen-0020",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlık ve borçlarının ölçümünde kullanılacak oran bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri doğrudur?\n\nI. Yakın geçmişte vergi zararı olan işletme ikna edici kanıt olmadan EVV tanımaz\n\nII. Tersine dönme zamanı kontrol edilen ve yakın gelecekte dönmeyecek bağlı ortaklık farkları için EVY tanınmaz\n\nIII. Vergi oranı değişikliği geriye dönük olarak önceki yılları düzeltir",
     "options": {
-      "C": "Varlığın gerçekleşeceği veya borcun ödeneceği dönemde geçerli olması beklenen vergi oranıdır",
-      "A": "Cari dönemde geçerli olan vergi oranı kullanılır; gelecekte yürürlüğe gireceği bilinen oran değişiklikleri ölçümde hiç dikkate alınmaz",
-      "B": "Geçmiş dönemlerde uygulanmış olan ortalama vergi oranı kullanılır",
-      "D": "Işletmenin seçtiği herhangi bir oran serbestçe kullanılabilir",
-      "E": "Geçmiş beş yılın ortalama efektif vergi oranı esas alınarak ölçülür"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "Yalnız II",
+      "E": "I ve III"
     },
     "answer": "C",
-    "solution": "TMS 12: ertelenmiş vergi varlık ve borçları, varlığın gerçekleşeceği veya borcun ödeneceği dönemde uygulanması beklenen vergi oranları üzerinden, raporlama dönemi sonu itibarıyla yasalaşmış veya yasalaşması kesine yakın oranlar kullanılarak ölçülür. Doğru cevap C.",
+    "solution": "TMS 12 p. 35'e göre yakın geçmişte zarar eden işletme ikna edici kanıt olmadan EVV tanımaz (I); p. 39'a göre ana ortaklığın tersine dönme zamanını kontrol ettiği ve yakın gelecekte dönmeyecek farklarda EVY tanınmaz (II). Oran değişikliği **cari dönemde** ertelenmiş vergiyi yeniden ölçer, önceki yılları düzeltmez (III yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş verginin ölçüm oranı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 35, 39"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "std-tms12-gen-0021",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlık ve borçlarının iskonto edilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin finansal durum tablosunda 120.000 ₺ peşin tahsil edilmiş kira geliri (ertelenmiş gelir) vardır; vergi mevzuatına göre bu tutar tahsil edildiği dönemde vergilendirilmiştir. Bu borcun vergiye esas değeri kaç ₺'dir?",
     "options": {
-      "E": "İskonto edilmez",
-      "A": "Ve istisnasız iskonto edilir",
-      "B": "Yalnızca vadesi bir yılı aşanlar iskonto edilir; diğerleri nominal kalmaktadır",
-      "C": "İskonto edilip edilmeyeceği işletmenin serbest takdirine bırakılmış bir husustur",
-      "D": "Paranın zaman değeri dikkate alınarak etkin faiz yöntemiyle bugünkü değerine indirgenir"
+      "A": "30.000",
+      "B": "60.000",
+      "C": "120.000",
+      "D": "240.000",
+      "E": "0"
     },
     "answer": "E",
-    "solution": "TMS 12: ertelenmiş vergi varlıkları ve borçları İSKONTO EDİLMEZ. Geçici farkların çözülme zamanlamasının güvenilir biçimde belirlenmesi çoğu durumda karmaşık olacağından iskonto zorunlu tutulmamış, isteğe bağlı iskonto da yasaklanmıştır. Doğru cevap E.",
+    "solution": "TMS 12 p. 8'e göre peşin tahsil edilen gelirde borcun vergiye esas değeri, defter değerinden **gelecek dönemlerde vergilendirilmeyecek gelir tutarı** düşülerek bulunur. Tutarın tamamı tahsilde vergilendirildiğinden vergiye esas değer **0 ₺**'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - iskonto yasağı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "std-tms12-gen-0022",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlığının defter değerinin gözden geçirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme 300.000 ₺ kıdem tazminatı karşılığı ayırmıştır; vergi mevzuatına göre bu tutar ancak ödendiğinde gider olarak indirilebilecektir. Vergi oranı %25'tir ve gelecekte yeterli vergilendirilebilir kâr beklenmektedir. Tanınacak ertelenmiş vergi kaç ₺'dir ve türü nedir?",
     "options": {
-      "D": "Her raporlama dönemi sonunda gözden geçirilir; yeterli vergiye tabi kâr muhtemel değilse azaltılır",
-      "A": "Bir kez muhasebeleştirildikten sonra gözden geçirilmez",
-      "B": "Yalnızca vergi idaresi talep ettiğinde gözden geçirilir",
-      "C": "Her dönem artırılır; azaltılamayan bir kalemi karşılar",
-      "E": "Defter değeri ilk kayıttan sonra gözden geçirilmez; tutar dönem sonlarında sabit kalır"
+      "A": "300.000 ₺ ertelenmiş vergi varlığı",
+      "B": "225.000 ₺ ertelenmiş vergi varlığı",
+      "C": "Ertelenmiş vergi doğmaz",
+      "D": "75.000 ₺ ertelenmiş vergi varlığı",
+      "E": "75.000 ₺ ertelenmiş vergi yükümlülüğü"
     },
     "answer": "D",
-    "solution": "TMS 12: ertelenmiş vergi varlığının defter değeri her raporlama dönemi sonunda gözden geçirilir. Ertelenmiş vergi varlığının bir kısmının veya tamamının yararlanılmasına yetecek vergiye tabi kâr elde edilmesi artık muhtemel değilse defter değeri azaltılır. Sonradan muhtemel hâle gelirse azaltma iptal edilir. Doğru cevap D.",
+    "solution": "Borcun defter değeri 300.000 ₺, vergiye esas değeri 0'dır (gelecekte tamamı indirilecek); borçta defter değeri vergiye esas değerden büyük olduğundan **indirilebilir geçici fark** doğar: 300.000 × %25 = **75.000 ₺ ertelenmiş vergi varlığı**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - EVV'nin gözden geçirilmesi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 24, 26(a)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "std-tms12-gen-0023",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Cari ve ertelenmiş verginin muhasebeleştirileceği yer bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme mevduatına ilişkin 50.000 ₺ faizi tahakkuk esasına göre gelir yazmıştır; vergi mevzuatına göre faiz tahsil edildiğinde vergilendirilecektir. Vergi oranı %20'dir. Tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "B": "İlgili işlem kâr veya zararda muhasebeleştiriliyorsa vergi de kâr veya zararda muhasebeleştirilir",
-      "A": "Vergi ve istisnasız kâr veya zararda muhasebeleştirilir",
-      "C": "Vergi ve istisnasız diğer kapsamlı gelirde muhasebeleştirilir",
-      "D": "Vergi doğrudan özkaynaklardan indirilir",
-      "E": "Vergi, ilgili işlem nereye kaydedilirse kaydedilsin doğrudan özkaynaklarda gösterilir"
+      "A": "10.000 ₺ ertelenmiş vergi varlığı",
+      "B": "10.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "C": "Ertelenmiş vergi doğmaz",
+      "D": "50.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "E": "40.000 ₺ ertelenmiş vergi yükümlülüğü"
     },
     "answer": "B",
-    "solution": "TMS 12: cari ve ertelenmiş vergi, verginin ilgili olduğu işlem veya olayın muhasebeleştirildiği yerle aynı yerde muhasebeleştirilir. İşlem kâr veya zararda ise vergi de kâr veya zararda; diğer kapsamlı gelirde ise vergi de orada muhasebeleştirilir. Doğru cevap B.",
+    "solution": "Faiz alacağının defter değeri 50.000 ₺, vergiye esas değeri 0'dır; varlıkta defter değeri büyük olduğundan TMS 12 p. 17(a) uyarınca **vergilendirilebilir geçici fark** doğar: 50.000 × %20 = **10.000 ₺ ertelenmiş vergi yükümlülüğü**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - verginin muhasebeleştirileceği yer"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 17(a)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "std-tms12-gen-0024",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Diğer kapsamlı gelirde muhasebeleştirilen bir işleme ilişkin vergi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme arsasını yeniden değerleme modeliyle ölçmüş ve 400.000 ₺ değer artışı tanımıştır; vergi mevzuatında bu artış dikkate alınmamakta ve vergiye esas değer değişmemektedir. Vergi oranı %25'tir. Doğan ertelenmiş vergi yükümlülüğü kaç ₺'dir ve karşı tarafı nerede tanınır?",
     "options": {
-      "C": "İlgili vergi de diğer kapsamlı gelirde muhasebeleştirilir",
-      "A": "İlgili vergi kâr veya zararda muhasebeleştirilir",
-      "B": "İlgili vergi muhasebeleştirilmez; yalnızca dipnotta açıklanır",
-      "D": "İlgili vergi varlığın maliyetine eklenir",
-      "E": "İlgili vergi, işlem nerede muhasebeleştirilirse muhasebeleştirilsin kâr veya zarara yazılır"
+      "A": "Ertelenmiş vergi doğmaz",
+      "B": "100.000 ₺, kâr veya zararda",
+      "C": "100.000 ₺, diğer kapsamlı gelirde",
+      "D": "400.000 ₺, diğer kapsamlı gelirde",
+      "E": "100.000 ₺, geçmiş yıllar kârlarında"
     },
     "answer": "C",
-    "solution": "TMS 12: kâr veya zarar dışında muhasebeleştirilen işlem ve olaylara ilişkin cari ve ertelenmiş vergi, kâr veya zarar dışında muhasebeleştirilir. Diğer kapsamlı gelirde muhasebeleştirilen bir kaleme (TMS 16 yeniden değerleme artışı gibi) ilişkin vergi de diğer kapsamlı gelirde muhasebeleştirilir. Doğru cevap C.",
+    "solution": "TMS 12 p. 20'ye göre yeniden değerleme, vergiye esas değer düzeltilmezse **vergilendirilebilir geçici fark** doğurur. p. 61A'ya göre kâr veya zarar dışında muhasebeleştirilen kalemlere ilişkin vergi de aynı yerde tanınır: 400.000 × %25 = **100.000 ₺**, **diğer kapsamlı gelirde**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - DKG'deki işlemin vergisi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 20, 61A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "std-tms12-gen-0025",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlık ve borçlarının finansal durum tablosunda sınıflandırılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin şu kalemleri vardır: vergi mevzuatınca kabul edilmeyen dava karşılığı, vergide daha hızlı amortismana tabi makine, peşin tahsil edilip vergilendirilen gelir, vergiden tamamen istisna iştirak kazancı ve vergide ödendiğinde indirilecek izin karşılığı. Bunlardan hangisi ertelenmiş vergi doğurmaz?",
     "options": {
-      "A": "Dönen varlık veya kısa vadeli borç olarak sınıflandırılmaz",
-      "B": "Dönen varlık veya kısa vadeli borç olarak sınıflandırılır",
-      "C": "Vadesine göre dönen ve duran olarak ikiye ayrılır",
-      "D": "Finansal durum tablosunda gösterilmez; yalnızca dipnotta açıklanmaktadır",
-      "E": "Ters dönme zamanına göre dönen ve duran varlık olarak ikiye ayrılarak gösterilir"
+      "A": "İstisna iştirak kazancı",
+      "B": "Hızlı amortismanlı makine",
+      "C": "Dava karşılığı",
+      "D": "Peşin tahsil edilen gelir",
+      "E": "İzin karşılığı"
     },
     "answer": "A",
-    "solution": "TMS 12: işletme finansal durum tablosunda dönen/duran varlık ve kısa/uzun vadeli borç ayrımı yapıyorsa, ertelenmiş vergi varlıklarını (borçlarını) dönen varlık (kısa vadeli borç) olarak sınıflandırmaz. Doğru cevap A.",
+    "solution": "Vergiden **tamamen ve kalıcı olarak istisna** edilen iştirak kazancı hiçbir dönemde vergilendirilmeyeceğinden kalıcı farktır ve ertelenmiş vergi doğurmaz. Diğer kalemler gelecekte tersine dönecek **geçici farklardır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş verginin sınıflandırılması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 15, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "std-tms12-gen-0026",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlık ve borçlarının netleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, vergi mevzuatına göre hiçbir zaman amortismanı indirilemeyecek bir varlığı işletme birleşmesi dışında satın almıştır; işlem anında ne muhasebe kârı ne vergi kârı etkilenmiş ve eşit tutarda indirilebilir geçici fark doğmamıştır. Bu varlığın ilk tanınmasından doğan geçici fark için ne yapılır?",
     "options": {
-      "C": "Yasal mahsup hakkı varsa ve aynı vergi idaresi ile aynı vergi mükellefine ilişkinse netleştirilir",
-      "A": "Ve koşulsuz olarak netleştirilir",
-      "B": "Netleştirilemez; her zaman brüt olarak gösterilir",
-      "D": "Netleştirme yalnızca vergi idaresi izin verdiğinde yapılabilir",
-      "E": "Yasal mahsup hakkı aranmaksızın tüm bakiyeler netleştirilerek tek satırda gösterilir"
+      "A": "Ertelenmiş vergi varlığı tanınır",
+      "B": "Ertelenmiş vergi yükümlülüğü tanınır",
+      "C": "Ertelenmiş vergi tanınmaz",
+      "D": "Varlık maliyeti artırılır",
+      "E": "Fark kâr veya zarara yazılır"
     },
     "answer": "C",
-    "solution": "TMS 12: ertelenmiş vergi varlıkları ve borçları ancak (a) işletmenin cari vergi varlıklarını cari vergi borçlarına mahsup etmek için yasal olarak uygulanabilir bir hakkı varsa ve (b) bunlar aynı vergi idaresince aynı vergi mükellefinden alınan gelir vergileriyle ilgiliyse netleştirilir. Doğru cevap C.",
+    "solution": "TMS 12 p. 15(b) ve 22(c)'ye göre işletme birleşmesi olmayan, işlem anında ne muhasebe ne vergi kârını etkileyen ve eşit geçici farklar doğurmayan bir işlemde varlığın **ilk muhasebeleştirilmesinden** doğan geçici fark için ertelenmiş vergi tanınmaz (ilk tanıma istisnası).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - netleştirme"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15(b), 22(c)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "std-tms12-gen-0027",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin bir varlığının defter değeri, vergiye esas değerinden 200.000 TL yüksektir. İlgili dönemde uygulanması beklenen vergi oranı %25'tir. TMS 12'ye göre muhasebeleştirilecek ertelenmiş vergi tutarı ve niteliği bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin raporlama dönemi sonunda 200.000 ₺ vergilendirilebilir geçici farkı vardır. Cari vergi oranı %20 olmakla birlikte, geçici farkın tersine döneceği yıllarda uygulanacak %25 oran raporlama döneminden önce yasalaşmıştır. Ertelenmiş vergi yükümlülüğü kaç ₺'dir?",
     "options": {
-      "C": "50.000 TL ertelenmiş vergi borcu",
-      "A": "50.000 TL ertelenmiş vergi varlığı olarak muhasebeleştirilir",
-      "B": "200.000 TL ertelenmiş vergi borcu olarak kaydedilir; oran uygulanmadan farkın tamamı yazılır",
-      "D": "200.000 TL ertelenmiş vergi varlığı olarak kaydedilir; oran hiç dikkate alınmamaktadır",
-      "E": "Hiçbir kayıt yapılmaz; defter değeri ile vergiye esas değer farkı dikkate alınmaz"
+      "A": "40.000",
+      "B": "200.000",
+      "C": "50.000",
+      "D": "10.000",
+      "E": "45.000"
     },
     "answer": "C",
-    "solution": "Varlığın defter değeri vergiye esas değerinden YÜKSEK olduğundan VERGİYE TABİ geçici fark doğar → ertelenmiş vergi BORCU. Tutar = Geçici fark × Oran = 200.000 × %25 = 50.000 TL. Doğru cevap C.",
+    "solution": "TMS 12 p. 47'ye göre ertelenmiş vergi, **varlığın gerçekleşeceği veya borcun ödeneceği dönemde uygulanması beklenen** ve raporlama dönemi sonunda yasalaşmış oranlarla ölçülür: 200.000 × %25 = **50.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi borcu hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 47"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "std-tms12-gen-0028",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin bir borcunun defter değeri 160.000 TL olup vergiye esas değeri sıfırdır (gider ancak fiilen ödendiğinde vergi matrahından indirilebilmektedir). İlgili dönemde uygulanması beklenen vergi oranı %25'tir. Muhasebeleştirilecek ertelenmiş vergi tutarı ve niteliği bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin cari dönem kurumlar vergisi 250.000 ₺'dir; dönem içinde geçici vergi olarak 180.000 ₺ ödenmiştir. Finansal durum tablosunda gösterilecek cari dönem vergi borcu kaç ₺'dir?",
     "options": {
-      "B": "40.000 TL ertelenmiş vergi varlığı",
-      "A": "40.000 TL ertelenmiş vergi borcu olarak muhasebeleştirilmek zorunda olan bir kalemdir",
-      "C": "160.000 TL ertelenmiş vergi varlığı olarak kaydedilir; oran uygulanmadan fark yazılır",
-      "D": "160.000 TL ertelenmiş vergi borcu olarak kaydedilir; oran hiç dikkate alınmamaktadır",
-      "E": "Hiçbir kayıt yapılmaz; borcun vergiye esas değeri sıfır olduğundan fark doğmaz"
+      "A": "430.000",
+      "B": "70.000",
+      "C": "250.000",
+      "D": "180.000",
+      "E": "0"
     },
     "answer": "B",
-    "solution": "Bir BORCUN defter değeri (160.000 TL) vergiye esas değerinden (0) yüksekse, gelecekte ödendiğinde vergi matrahından indirilecektir → İNDİRİLEBİLİR geçici fark → ertelenmiş vergi VARLIĞI. Tutar = 160.000 × %25 = 40.000 TL (yeterli vergiye tabi kâr muhtemelse). Doğru cevap B.",
+    "solution": "TMS 12 p. 12'ye göre cari ve önceki dönemlere ait cari vergi, **ödenmemiş olduğu ölçüde** borç olarak tanınır: 250.000 − 180.000 = **70.000 ₺**. Ödenen tutar vergiyi aşsaydı fazlalık varlık olarak tanınırdı.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi varlığı hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 12"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "std-tms12-gen-0029",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin gelecek dönemlere devreden 400.000 TL kullanılmamış mali zararı bulunmakta ve bu zararın mahsup edilebileceği vergiye tabi kâr elde edilmesi muhtemeldir. Uygulanması beklenen vergi oranı %25'tir. Muhasebeleştirilecek ertelenmiş vergi varlığı kaç TL'dir?",
+    "stem": "Bir işletmenin cari dönem kurumlar vergisi 250.000 ₺'dir; dönem içinde geçici vergi olarak 290.000 ₺ ödenmiştir ve fazla ödenen tutar iade veya mahsup edilebilecektir. Finansal durum tablosunda ne gösterilir?",
     "options": {
-      "B": "100.000 TL",
-      "A": "400.000 TL",
-      "C": "800.000 TL",
-      "D": "200.000 TL",
-      "E": "0 TL"
+      "A": "Bir şey gösterilmez",
+      "B": "40.000 ₺ cari vergi varlığı",
+      "C": "290.000 ₺ cari vergi varlığı",
+      "D": "40.000 ₺ cari vergi borcu",
+      "E": "250.000 ₺ cari vergi borcu"
     },
     "answer": "B",
-    "solution": "Devreden mali zarar, gelecekte vergi matrahından indirileceğinden ertelenmiş vergi VARLIĞI doğurur. Tutar = Mali zarar × Oran = 400.000 × %25 = 100.000 TL. Muhasebeleştirme, mahsup edilecek vergiye tabi kâr elde edilmesinin MUHTEMEL olması koşuluna bağlıdır. Doğru cevap B.",
+    "solution": "TMS 12 p. 12'ye göre cari ve önceki dönemler için ödenmiş tutar bu dönemlere ilişkin borcu aşarsa **fazlalık varlık olarak** tanınır: 290.000 − 250.000 = **40.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - mali zararda EVV hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 12"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "std-tms12-gen-0030",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin dönem vergiye tabi kârı (mali kârı) 800.000 TL, cari dönemde geçerli vergi oranı %25'tir. Dönemin cari vergi tutarı kaç TL'dir?",
+    "stem": "Bir işletme, gerçeğe uygun değer değişimlerini diğer kapsamlı gelirde sunduğu özkaynak araçlarında 80.000 ₺ değer artışı tanımış ve bu artış için 16.000 ₺ ertelenmiş vergi yükümlülüğü hesaplamıştır. Ertelenmiş vergi nerede muhasebeleştirilir?",
     "options": {
-      "D": "200.000 TL",
-      "A": "800.000 TL",
-      "B": "1.600.000 TL",
-      "C": "400.000 TL",
-      "E": "0 TL"
+      "A": "Geçmiş yıllar kârlarında",
+      "B": "Kâr veya zararda",
+      "C": "Hasılattan düşülerek",
+      "D": "Diğer kapsamlı gelirde",
+      "E": "Sermayede"
     },
     "answer": "D",
-    "solution": "Cari vergi = Vergiye tabi kâr × Vergi oranı = 800.000 × %25 = 200.000 TL. Cari vergi, dönem vergiye tabi kârı üzerinden ödenecek gelir vergisi tutarıdır. Doğru cevap D.",
+    "solution": "TMS 12 p. 61A'ya göre kâr veya zarar dışında (DKG veya doğrudan özkaynakta) muhasebeleştirilen kalemlere ilişkin cari ve ertelenmiş vergi de **aynı şekilde kâr veya zarar dışında** muhasebeleştirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - cari vergi hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 61A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "std-tms12-gen-0031",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri ertelenmiş verginin ölçümü bakımından doğrudur?\n\nI. Gerçekleşeceği dönemde beklenen vergi oranı kullanılır\n\nII. Ertelenmiş vergi varlık ve borçları iskonto edilmez\n\nIII. Ertelenmiş vergi varlıkları dönen varlık olarak sınıflandırılır",
+    "stem": "Bir işletme 70.000 ₺ garanti karşılığı ayırmıştır; vergi mevzuatına göre garanti harcamaları ancak yapıldığında indirilebilecektir. Vergi oranı %20'dir ve yeterli gelecek kâr beklenmektedir. Dönem başında garanti karşılığı yoktu. Bu kalem nedeniyle dönemin ertelenmiş vergi gideri veya geliri kaç ₺'dir?",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "14.000 ₺ ertelenmiş vergi geliri",
+      "B": "Etki yok",
+      "C": "70.000 ₺ ertelenmiş vergi geliri",
+      "D": "56.000 ₺ ertelenmiş vergi geliri",
+      "E": "14.000 ₺ ertelenmiş vergi gideri"
     },
     "answer": "A",
-    "solution": "Gerçekleşeceği dönemde beklenen (yasalaşmış veya yasalaşması kesine yakın) oran kullanılır (I) ve ertelenmiş vergi iskonto EDİLMEZ (II). Ertelenmiş vergi varlıkları dönen varlık olarak SINIFLANDIRILMAZ; bu nedenle III yanlıştır. Doğru cevap A.",
+    "solution": "Karşılık indirilebilir geçici fark yaratır ve 70.000 × %20 = 14.000 ₺ **ertelenmiş vergi varlığı** tanınır. Varlıktaki artış kâr veya zararda **ertelenmiş vergi geliri** (vergi giderini azaltan kalem) olarak gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ölçüm"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 24, 26(a)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "std-tms12-gen-0032",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. Ertelenmiş vergi borcu da yalnızca vergiye tabi kâr muhtemelse muhasebeleştirilir\n\nII. Ertelenmiş vergi varlığı, yeterli vergiye tabi kâr muhtemelse muhasebeleştirilir\n\nIII. Ertelenmiş vergi varlığının defter değeri her dönem sonunda gözden geçirilir",
+    "stem": "TMS 12'ye göre bir döneme ait kâr veya zararın belirlenmesinde dâhil edilen cari vergi ile ertelenmiş verginin toplamı hangi kavramla ifade edilir?",
     "options": {
-      "D": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "Vergilendirilebilir kâr",
+      "B": "Cari vergi",
+      "C": "Vergi gideri",
+      "D": "Ertelenmiş vergi",
+      "E": "Muhasebe kârı"
     },
     "answer": "C",
-    "solution": "Ertelenmiş vergi VARLIĞI yeterli vergiye tabi kâr muhtemelse muhasebeleştirilir (II) ve her dönem sonunda gözden geçirilir (III). Ertelenmiş vergi BORCUNDA ise böyle bir muhtemellik koşulu ARANMAZ; istisnalar dışında tüm vergiye tabi geçici farklar için kaydedilir. Bu asimetri ihtiyatlılık gereğidir; I yanlıştır. Doğru cevap C.",
+    "solution": "TMS 12 p. 5'e göre **vergi gideri (geliri)**, döneme ait kâr veya zararın belirlenmesinde dâhil edilen cari vergi ile ertelenmiş vergi toplamıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - muhasebeleştirme"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "std-tms12-gen-0033",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir makinenin muhasebe amortismanının vergi amortismanından DÜŞÜK olması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem içinde ertelenmiş vergi yükümlülüğündeki artış, tamamen kâr veya zararda tanınan işlemlerden kaynaklanmaktadır. Bu artış kâr veya zarar tablosunda nasıl gösterilir?",
     "options": {
-      "B": "Defter değeri vergiye esas değerden yüksek olur; vergiye tabi geçici fark ve ertelenmiş vergi borcu doğar",
-      "A": "Defter değeri vergiye esas değerden düşük olur; ertelenmiş vergi varlığı doğur",
-      "C": "Hiçbir geçici fark doğmaz; amortisman farkları dikkate alınmaz",
-      "D": "Defter değeri vergiye esas değerden yüksek olur; indirilebilir geçici fark ve ertelenmiş vergi varlığı doğar",
-      "E": "Defter değeri vergiye esas değerin altında kalır; indirilebilir fark ve ertelenmiş vergi varlığı doğar"
+      "A": "Cari vergi geliri",
+      "B": "Ertelenmiş vergi gideri",
+      "C": "Finansman gideri",
+      "D": "Ertelenmiş vergi geliri",
+      "E": "Diğer kapsamlı gelir"
     },
     "answer": "B",
-    "solution": "Vergi amortismanı daha hızlıysa vergiye esas değer daha hızlı azalır; varlığın defter değeri vergiye esas değerinden YÜKSEK kalır. Bu vergiye tabi geçici farktır ve ertelenmiş vergi BORCU doğurur. Fark ilerleyen yıllarda ters döner. Doğru cevap B.",
+    "solution": "TMS 12 p. 58'e göre cari ve ertelenmiş vergi, kâr veya zarar dışında muhasebeleştirilen işlemlerden kaynaklanmadıkça gelir veya gider olarak kâr veya zarara dâhil edilir; yükümlülükteki artış **ertelenmiş vergi gideridir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - amortisman farkı (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 58"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "std-tms12-gen-0034",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergi matrahından ancak fiilen ödendiğinde indirilebilen bir gider karşılığı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin makinesinin defter değeri 700.000 ₺, vergi mevzuatına göre daha yavaş amortisman ayrıldığı için vergiye esas değeri 760.000 ₺'dir. Vergi oranı %20'dir ve yeterli kâr beklenmektedir. Tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "E": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
-      "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
-      "B": "Hiçbir geçici fark doğmaz; karşılıklar vergisel açıdan dikkate alınmaz",
-      "C": "İndirilebilir geçici fark doğar; ancak ertelenmiş vergi borcu muhasebeleştirilir",
-      "D": "Kalıcı fark doğurur; bu nedenle ertelenmiş vergi hesaplanmaz"
+      "A": "60.000 ₺ ertelenmiş vergi varlığı",
+      "B": "Ertelenmiş vergi doğmaz",
+      "C": "140.000 ₺ ertelenmiş vergi varlığı",
+      "D": "12.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "E": "12.000 ₺ ertelenmiş vergi varlığı"
     },
     "answer": "E",
-    "solution": "Karşılık muhasebede gider yazılmış ancak vergisel olarak henüz indirilmemiştir; borcun defter değeri vergiye esas değerinden (sıfır) yüksektir. Gelecekte ödendiğinde matrahtan indirilecektir → İNDİRİLEBİLİR geçici fark → ertelenmiş vergi VARLIĞI (yeterli vergiye tabi kâr muhtemelse). Doğru cevap E.",
+    "solution": "Varlığın defter değeri vergiye esas değerinden küçük olduğundan **indirilebilir geçici fark** vardır: (760.000 − 700.000) × %20 = **12.000 ₺ ertelenmiş vergi varlığı**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - karşılıkta geçici fark (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "std-tms12-gen-0035",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergi mevzuatınca hiçbir zaman indirilemeyecek bir gider (kanunen kabul edilmeyen gider) bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin ertelenmiş vergi yükümlülüğü dönem içinde 40.000 ₺ artmıştır. Artışın 15.000 ₺'lik kısmı maddi duran varlık yeniden değerleme artışından, kalanı vergide hızlı amortismandan kaynaklanmaktadır. Kâr veya zarar tablosuna yansıyacak ertelenmiş vergi gideri kaç ₺'dir?",
     "options": {
-      "D": "Sürekli fark doğar; ertelenmiş vergi muhasebeleştirilmez",
-      "A": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
-      "B": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
-      "C": "Bu gider muhasebeleştirilemez; yalnızca dipnotta açıklanır",
-      "E": "Kalıcı fark doğurur; bu fark için de ertelenmiş vergi hesaplanır"
+      "A": "55.000",
+      "B": "40.000",
+      "C": "15.000",
+      "D": "25.000",
+      "E": "0"
     },
     "answer": "D",
-    "solution": "Hiçbir zaman vergi matrahından indirilemeyecek giderler SÜREKLİ fark doğurur; ilerleyen dönemlerde ters dönmezler. TMS 12 yalnızca GEÇİCİ farklar üzerinden ertelenmiş vergi muhasebeleştirilmesini öngörür; sürekli farklar için ertelenmiş vergi kaydedilmez. Doğru cevap D.",
+    "solution": "TMS 12 p. 61A'ya göre yeniden değerlemeye ilişkin 15.000 ₺ **diğer kapsamlı gelirde** tanınır; hızlı amortismandan kaynaklanan kısım kâr veya zarara yansır: 40.000 − 15.000 = **25.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - sürekli fark"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 58, 61A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "std-tms12-gen-0036",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Şerefiyenin ilk muhasebeleştirilmesinden doğan vergiye tabi geçici fark bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme birleşmesinde edinilen bir markanın gerçeğe uygun değeri 1.000.000 ₺, edinilen işletmedeki vergiye esas değeri sıfırdır; oluşan geçici fark için ertelenmiş vergi yükümlülüğü tanınmıştır. Bu ertelenmiş vergi yükümlülüğü birleşme muhasebesini nasıl etkiler?",
     "options": {
-      "A": "Ertelenmiş vergi borcu muhasebeleştirilmez",
-      "B": "Ertelenmiş vergi borcu muhasebeleştirilir",
-      "C": "Ertelenmiş vergi varlığı muhasebeleştirilir",
-      "D": "Şerefiye muhasebeleştirilemez; yalnızca dipnotta açıklanır",
-      "E": "Şerefiyenin ilk muhasebeleştirilmesinden doğan fark için ertelenmiş vergi borcu kaydedilir"
+      "A": "Şerefiyeyi artırır",
+      "B": "Diğer kapsamlı gelire alınır",
+      "C": "Kâr veya zarara gider yazılır",
+      "D": "Şerefiyeyi azaltır",
+      "E": "Etkilemez"
     },
     "answer": "A",
-    "solution": "TMS 12: şerefiyenin ilk muhasebeleştirilmesinden kaynaklanan vergiye tabi geçici fark için ertelenmiş vergi borcu muhasebeleştirilmez. Şerefiye artık değer olarak ölçüldüğünden ertelenmiş vergi borcu kaydedilmesi şerefiyeyi artırır ve döngüsel bir sonuç doğururdu. Doğru cevap A.",
+    "solution": "TMS 12 p. 19 ve 66'ya göre işletme birleşmesinde tanımlanabilir varlıkların gerçeğe uygun değeri ile vergiye esas değeri arasındaki farklar ertelenmiş vergi doğurur; bu ertelenmiş vergi **tanımlanabilir net varlıkları azalttığı için şerefiyeyi artırır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - şerefiye istisnası"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 19, 66"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "std-tms12-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "İlk muhasebeleştirme istisnası bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem başında 200.000 ₺ vergilendirilebilir geçici farkı ve %20 oranla ölçülmüş 40.000 ₺ ertelenmiş vergi yükümlülüğü vardır. Dönem içinde geçici fark değişmemiş, ancak geri çevrilme dönemine ilişkin oran %25'e yükseltilerek yasalaşmıştır. Oran değişikliğinin kâr veya zarar etkisi hangisidir?",
     "options": {
-      "B": "İşletme birleşmesi olmayan ve ne muhasebe ne vergiye tabi kârı etkilemeyen bir işlemde ertelenmiş vergi kaydedilmez",
-      "A": "Her işlemde ertelenmiş vergi muhasebeleştirilir; hiçbir istisna bulunmamaktadır",
-      "C": "İlk muhasebeleştirmede ertelenmiş vergi muhasebeleştirilemez",
-      "D": "İstisna yalnızca vergi idaresi izin verdiğinde uygulanır; izin alınmadığı sürece her işlem için ertelenmiş vergi kaydedilir ve istisna hiç işlemez",
-      "E": "İstisna yalnızca işletme birleşmelerinde uygulanır; birleşme dışı işlemleri kapsamaz"
+      "A": "Etki yok",
+      "B": "10.000 ₺ ertelenmiş vergi gideri",
+      "C": "50.000 ₺ ertelenmiş vergi gideri",
+      "D": "10.000 ₺ ertelenmiş vergi geliri",
+      "E": "10.000 ₺ geçmiş yıllar düzeltmesi"
     },
     "answer": "B",
-    "solution": "TMS 12: bir varlık veya borcun, işletme birleşmesi işlemi olmayan ve gerçekleştiği tarihte ne muhasebe kârını ne de vergiye tabi kârı etkilemeyen bir işlemdeki ilk muhasebeleştirilmesinden kaynaklanan geçici farklar için ertelenmiş vergi muhasebeleştirilmez. Doğru cevap B.",
+    "solution": "Yükümlülük yeni oranla 200.000 × %25 = 50.000 ₺'ye yükselir. TMS 12 p. 60'a göre oran değişikliğinden doğan değişim, ilgili kalem kâr veya zararda tanındıysa **kâr veya zarara** yansır: **10.000 ₺ gider**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ilk muhasebeleştirme istisnası"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 47, 60"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "std-tms12-gen-0038",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Yeniden değerlenen bir maddi duran varlığa ilişkin ertelenmiş vergi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir bağlı ortaklık, ana ortaklığa dağıttığı kâr payı üzerinden kaynakta vergi kesintisi (stopaj) yapmıştır; bu vergi ana ortaklığın elde ettiği kâr payı üzerinden alınan bir vergidir. Bu stopaj vergisi hangi standardın kapsamındadır?",
     "options": {
-      "C": "Yeniden değerleme diğer kapsamlı gelirde muhasebeleştirildiğinden ilgili ertelenmiş vergi de orada muhasebeleştirilir",
-      "A": "İlgili ertelenmiş vergi kâr veya zararda muhasebeleştirilir",
-      "B": "Yeniden değerlemede ertelenmiş vergi doğmaz; vergisel etki bulunmaz",
-      "D": "İlgili ertelenmiş vergi varlığın maliyetine eklenir",
-      "E": "İlgili vergi, işlem nerede muhasebeleştirilirse muhasebeleştirilsin kâr veya zarara yazılır; diğer kapsamlı gelirde vergi etkisi gösterilmez"
+      "A": "TMS 37",
+      "B": "TFRS 9",
+      "C": "TMS 12",
+      "D": "TMS 19",
+      "E": "TMS 20"
     },
     "answer": "C",
-    "solution": "TMS 12: vergi, ilgili olduğu işlemin muhasebeleştirildiği yerde muhasebeleştirilir. Yeniden değerleme artışı diğer kapsamlı gelirde muhasebeleştirildiğinden, artıştan doğan vergiye tabi geçici farkın ertelenmiş vergisi de DİĞER KAPSAMLI GELİRDE muhasebeleştirilir. Doğru cevap C.",
+    "solution": "TMS 12 p. 2'ye göre gelir vergileri, vergilendirilebilir kâr üzerinden alınan bütün yurt içi ve yurt dışı vergileri ve **bağlı ortaklık, iştirak veya iş ortaklıklarının raporlayan işletmeye dağıttığı kâr payları üzerinden ödenecek stopaj vergileri** gibi vergileri kapsar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - yeniden değerlemenin vergisi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 2"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "std-tms12-gen-0039",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin ertelenmiş vergi varlığı bulunmakta ancak gelecekte yeterli vergiye tabi kâr elde etmesi artık muhtemel görünmemektedir. TMS 12 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri TMS 12'ye göre doğrudur?\n\nI. Ertelenmiş vergi, raporlama tarihinden sonra yasalaşan oranla ölçülür\n\nII. Yeniden değerleme artışının vergisi diğer kapsamlı gelirde tanınır\n\nIII. Koşullar sağlanırsa ertelenmiş vergi varlık ve yükümlülükleri netleştirilir",
     "options": {
-      "A": "Ertelenmiş vergi varlığının defter değeri azaltılır",
-      "B": "Ertelenmiş vergi varlığı defter değeriyle korunur",
-      "C": "Ertelenmiş vergi varlığı artırılır; azaltılamayan bir kalemi karşılar",
-      "D": "Ertelenmiş vergi varlığı ertelenmiş vergi borcuna dönüştürülür",
-      "E": "Varlık defter değeriyle korunur; yeterli kâr beklentisi olmasa dahi azaltılmaz"
+      "A": "II ve III",
+      "B": "I ve II",
+      "C": "Yalnız II",
+      "D": "Yalnız III",
+      "E": "I, II ve III"
     },
     "answer": "A",
-    "solution": "TMS 12: ertelenmiş vergi varlığının bir kısmının veya tamamının yararlanılmasına yetecek vergiye tabi kâr elde edilmesi artık muhtemel değilse, ertelenmiş vergi varlığının defter değeri azaltılır. Sonradan tekrar muhtemel hâle gelirse bu azaltma iptal edilir. Doğru cevap A.",
+    "solution": "TMS 12 p. 61A'ya göre DKG kalemlerinin vergisi DKG'de tanınır (II); p. 74'e göre koşullar sağlanırsa netleştirme yapılır (III). p. 47'ye göre ölçüm **raporlama dönemi sonunda yasalaşmış** oranla yapılır (I yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - EVV'nin azaltılması (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 47, 61A, 74"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "std-tms12-gen-0040",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bağlı ortaklık, şube, iştirak ve iş ortaklıklarındaki yatırımlara ilişkin geçici farklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri doğrudur?\n\nI. Peşin tahsil edilip vergilendirilen gelirin vergiye esas değeri sıfırdır\n\nII. Vergide indirilmiş tahakkuk etmiş ücret borcu indirilebilir geçici fark doğurur\n\nIII. 2021 değişikliğiyle kiralamalarda ilk tanıma istisnası uygulanır",
     "options": {
-      "E": "Ana ortaklık farkın ters dönme zamanını kontrol edebiliyorsa ve yakın gelecekte dönmesi muhtemel değilse borç kaydedilmez",
-      "A": "Bu farklar için ve koşulsuz olarak ertelenmiş vergi borcu kaydedilir",
-      "B": "Bu farklar için ertelenmiş vergi muhasebeleştirilemez",
-      "C": "Bu farklar sürekli fark sayılıp hiçbir vergisel etki doğurmaz",
-      "D": "Yatırımlara ilişkin farklar için ertelenmiş vergi borcu kaydedilir; ana ortaklığın kontrolü ve farkın ne zaman ters döneceği dikkate alınmaz"
+      "A": "Yalnız II",
+      "B": "I ve III",
+      "C": "I, II ve III",
+      "D": "I ve II",
+      "E": "Yalnız I"
     },
     "answer": "E",
-    "solution": "TMS 12: bağlı ortaklık, şube, iştirak ve iş ortaklıklarındaki yatırımlarla ilgili tüm vergiye tabi geçici farklar için ertelenmiş vergi borcu muhasebeleştirilir. Ancak (a) ana ortaklık farkın ters dönme zamanını kontrol edebiliyorsa ve (b) farkın öngörülebilir gelecekte ters dönmesi muhtemel değilse muhasebeleştirilmez. Doğru cevap E.",
+    "solution": "TMS 12 p. 8'e göre peşin tahsil edilip vergilendirilen gelirin vergiye esas değeri sıfırdır (I). Vergide zaten indirilmiş ücret borcunda **geçici fark yoktur** (II yanlış); p. 22A'ya göre eşit geçici fark doğuran kiralamalarda ilk tanıma istisnası **uygulanmaz** (III yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - iştiraklerdeki yatırımlar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 7-8, 15(b)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "std-tms12-gen-0041",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergi giderine ilişkin açıklamalar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin tahakkuk eden ancak ödenmemiş 90.000 ₺ ücret borcu vardır; bu tutar vergi mevzuatına göre de tahakkuk ettiği dönemde gider olarak indirilmiştir. Borcun vergiye esas değeri ve geçici fark hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "Vergi giderinin ana bileşenleri ile muhasebe kârı ve vergi gideri arasındaki ilişkinin mutabakatı açıklanır",
-      "A": "Vergi gideri hakkında hiçbir açıklama yapılmaz; yalnızca tutar tabloda gösterilir",
-      "B": "Yalnızca ödenen vergi tutarı açıklanır; ertelenmiş vergi açıklanmaz",
-      "C": "Yalnızca vergi idaresine bildirim yapılır; finansal tablo kullanıcılarına açıklama yapılmaz",
-      "E": "Açıklama yalnızca zarar eden işletmeler için zorunlu tutulmuş bir husustur"
+      "A": "Vergiye esas değer 45.000 ₺",
+      "B": "Geçici fark 90.000 ₺",
+      "C": "Vergiye esas değer 0, vergilendirilebilir fark var",
+      "D": "Vergiye esas değer 90.000 ₺, geçici fark yok",
+      "E": "Vergiye esas değer 0, indirilebilir fark var"
     },
     "answer": "D",
-    "solution": "TMS 12: vergi gideri (geliri) ile ilgili ana unsurlar ayrı ayrı açıklanır. Ayrıca muhasebe kârı ile vergi gideri arasındaki ilişkiye dair sayısal mutabakat ve her bir geçici fark türü için ertelenmiş vergi tutarları açıklanır. Doğru cevap D.",
+    "solution": "TMS 12 p. 8'e göre borcun vergiye esas değeri, defter değerinden gelecek dönemlerde vergi açısından **indirilecek tutar** düşülerek bulunur. Gider zaten indirildiğinden gelecekte indirilecek tutar yoktur; vergiye esas değer 90.000 ₺'dir ve **geçici fark oluşmaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - açıklamalar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 7-8"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "std-tms12-gen-0042",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin muhasebe kârı 1.000.000 TL'dir. Dönemde 100.000 TL kanunen kabul edilmeyen gider bulunmakta, başka bir fark yoktur. Vergi oranı %25 ise dönemin cari vergi tutarı kaç TL'dir?",
+    "stem": "Bir işletme brüt tutarı 1.000.000 ₺ olan ticari alacakları için 100.000 ₺ beklenen kredi zararı karşılığı ayırmıştır; vergi mevzuatı bu karşılığı alacak kesinleşinceye kadar gider olarak kabul etmemektedir. Vergi oranı %20'dir ve gelecekte yeterli vergilendirilebilir kâr beklenmektedir. Tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "E": "275.000 TL",
-      "A": "250.000 TL",
-      "B": "225.000 TL",
-      "C": "1.100.000 TL",
-      "D": "25.000 TL"
+      "A": "Ertelenmiş vergi doğmaz",
+      "B": "100.000 ₺ ertelenmiş vergi varlığı",
+      "C": "20.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "D": "200.000 ₺ ertelenmiş vergi varlığı",
+      "E": "20.000 ₺ ertelenmiş vergi varlığı"
     },
     "answer": "E",
-    "solution": "Kanunen kabul edilmeyen gider matraha eklenir: Vergiye tabi kâr = 1.000.000 + 100.000 = 1.100.000 TL. Cari vergi = 1.100.000 × %25 = 275.000 TL. Bu bir SÜREKLİ farktır; ertelenmiş vergi doğurmaz. Doğru cevap E.",
+    "solution": "Alacağın defter değeri 900.000 ₺, vergiye esas değeri 1.000.000 ₺'dir; varlığın defter değeri daha küçük olduğundan **indirilebilir geçici fark** 100.000 ₺ vardır. TMS 12 p. 24'e göre **ertelenmiş vergi varlığı**: 100.000 × %20 = **20.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - sürekli fark ve cari vergi hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "std-tms12-gen-0043",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir makinenin defter değeri 500.000 TL, vergiye esas değeri 380.000 TL'dir. Uygulanması beklenen vergi oranı %25'tir. Muhasebeleştirilecek ertelenmiş vergi borcu kaç TL'dir?",
+    "stem": "Bir işletme 600.000 ₺'ye aldığı ve kalıntı değeri olmayan bir makineyi muhasebede 10 yıl, vergide 5 yıl üzerinden doğrusal amortismana tabi tutmaktadır. Vergi oranı %20'dir. 2. yılın sonunda finansal durum tablosunda yer alacak ertelenmiş vergi hangisidir?",
     "options": {
-      "C": "30.000 TL",
-      "A": "120.000 TL",
-      "B": "125.000 TL",
-      "D": "95.000 TL",
-      "E": "0 TL"
+      "A": "120.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "B": "48.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "C": "24.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "D": "12.000 ₺ ertelenmiş vergi yükümlülüğü",
+      "E": "24.000 ₺ ertelenmiş vergi varlığı"
     },
     "answer": "C",
-    "solution": "Geçici fark = Defter değeri − Vergiye esas değer = 500.000 − 380.000 = 120.000 TL. Varlığın defter değeri yüksek olduğundan VERGİYE TABİ geçici farktır. Ertelenmiş vergi borcu = 120.000 × %25 = 30.000 TL. Doğru cevap C.",
+    "solution": "2. yıl sonunda defter değeri 600.000 − 120.000 = 480.000 ₺, vergiye esas değer 600.000 − 240.000 = 360.000 ₺'dir. Vergide hızlı amortisman **vergilendirilebilir geçici fark** yaratır: (480.000 − 360.000) × %20 = **24.000 ₺ ertelenmiş vergi yükümlülüğü**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - EVB hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 17(b)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "std-tms12-gen-0044",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin dönem cari vergisi 200.000 TL, ertelenmiş vergi borcundaki artış 30.000 TL'dir. Başka bir ertelenmiş vergi hareketi yoktur. Kâr veya zarar tablosunda gösterilecek toplam vergi gideri kaç TL'dir?",
+    "stem": "Bir işletmenin kâr veya zarar tablosunda gider olarak yazılan, ancak vergi mevzuatına göre hiçbir dönemde indirilemeyecek 50.000 ₺ kanunen kabul edilmeyen gider (örneğin vergi cezası) bulunmaktadır. Bu kalem için ertelenmiş vergi hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "230.000 TL",
-      "B": "200.000 TL",
-      "C": "170.000 TL",
-      "D": "30.000 TL",
-      "E": "0 TL"
+      "A": "Ertelenmiş vergi doğmaz",
+      "B": "Ertelenmiş vergi yükümlülüğü doğar",
+      "C": "Ertelenmiş vergi varlığı doğar",
+      "D": "Diğer kapsamlı gelirde vergi doğar",
+      "E": "Gelecek yıl ertelenmiş vergi doğar"
     },
     "answer": "A",
-    "solution": "TMS 12: vergi gideri = Cari vergi + Ertelenmiş vergi = 200.000 + 30.000 = 230.000 TL. Ertelenmiş vergi borcundaki artış vergi giderini artırır; yalnızca ödenen vergi gösterilmez. Doğru cevap A.",
+    "solution": "TMS 12 p. 5'e göre geçici farklar, defter değeri ile vergiye esas değer arasındaki ve **gelecekte tersine dönecek** farklardır. Hiçbir dönemde indirilemeyecek giderler kalıcı farktır; **ertelenmiş vergi doğurmaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - toplam vergi gideri hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "std-tms12-gen-0045",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdakilerden hangisi TMS 12'ye göre ertelenmiş vergi DOĞURMAZ?",
+    "stem": "Bir işletme bir kiralamanın başlangıcında 1.000.000 ₺ kullanım hakkı varlığı ve aynı tutarda kira yükümlülüğü tanımıştır; vergi mevzuatında kira ödemeleri ödendikçe gider yazılmaktadır. İşlem ne muhasebe kârını ne vergi kârını etkilemiştir ve eşit tutarda vergilendirilebilir ve indirilebilir geçici fark doğmuştur. 2021 değişikliğine göre ne yapılır?",
     "options": {
-      "E": "Kanunen kabul edilmeyen giderler",
-      "A": "Muhasebe amortismanı ile vergi amortismanı arasındaki fark niteliğindeki geçici farkların tümü",
-      "B": "Ancak fiilen ödendiğinde indirilebilen gider karşılıkları niteliğindeki geçici farkların tamamı",
-      "C": "Gelecek dönemlere devreden kullanılmamış mali zararlar tamamı",
-      "D": "Şüpheli alacak karşılığının vergisel olarak henüz indirilmemiş olması niteliğindeki farklar"
+      "A": "Varlık tanınır, yükümlülük tanınmaz",
+      "B": "Yükümlülük tanınır, varlık tanınmaz",
+      "C": "Ertelenmiş vergi tanınmaz",
+      "D": "İlk tanıma istisnası uygulanır",
+      "E": "Ertelenmiş vergi varlığı ve yükümlülüğü tanınır"
     },
     "answer": "E",
-    "solution": "Kanunen kabul edilmeyen giderler SÜREKLİ fark doğurur; hiçbir zaman ters dönmediğinden ertelenmiş vergi doğurmaz. Diğer şıkların tamamı geçici fark veya devreden zarar niteliğinde olup ertelenmiş vergi doğurur. Doğru cevap E.",
+    "solution": "TMS 12 p. 15(b) ve 22A'ya göre (2021 değişikliği) ilk tanıma istisnası, işlem anında **eşit tutarda vergilendirilebilir ve indirilebilir geçici fark doğuran** işlemlere (kiralamalar, söküm yükümlülükleri) uygulanmaz; ertelenmiş vergi varlığı ve yükümlülüğü ayrı ayrı tanınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - ertelenmiş vergi doğurmayan"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15(b), 22A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "std-tms12-gen-0046",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. Sürekli farklar için ertelenmiş vergi muhasebeleştirilmez\n\nII. Şerefiyenin ilk muhasebeleştirilmesinden doğan fark için ertelenmiş vergi borcu kaydedilmez\n\nIII. Diğer kapsamlı gelirdeki bir kaleme ilişkin vergi kâr veya zararda muhasebeleştirilir",
+    "stem": "Bir işletme son üç yıldır üst üste vergi zararı açıklamıştır ve gelecekte vergilendirilebilir kâr elde edeceğine dair ikna edici kanıt yoktur; yeterli vergilendirilebilir geçici farkı da bulunmamaktadır. Kullanılmamış vergi zararları için ertelenmiş vergi varlığı hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Diğer kapsamlı gelirde tanınır",
+      "B": "Tanınmaz",
+      "C": "Tamamı tanınır",
+      "D": "Özkaynakta tanınır",
+      "E": "Yarısı tanınır"
     },
     "answer": "B",
-    "solution": "Sürekli farklar için ertelenmiş vergi kaydedilmez (I) ve şerefiyenin ilk muhasebeleştirilmesinden doğan fark için ertelenmiş vergi borcu kaydedilmez (II). Diğer kapsamlı gelirde muhasebeleştirilen bir kaleme ilişkin vergi de DİĞER KAPSAMLI GELİRDE muhasebeleştirilir; bu nedenle III yanlıştır. Doğru cevap B.",
+    "solution": "TMS 12 p. 35'e göre kullanılmamış vergi zararlarının varlığı gelecekte kâr elde edilemeyebileceğinin güçlü kanıtıdır; yakın geçmişte zarar eden işletme ancak **yeterli vergilendirilebilir geçici farkı veya ikna edici başka kanıtı** varsa ertelenmiş vergi varlığı tanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - istisnalar ve sunum"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "std-tms12-gen-0047",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergi oranının değişmesinin mevcut ertelenmiş vergi bakiyelerine etkisi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme geçmiş yıllarda 200.000 ₺ ertelenmiş vergi varlığı tanımıştır. Bu yıl sonunda, gelecekte bu varlığın bir kısmından yararlanmaya yetecek vergilendirilebilir kâr elde edilmesinin muhtemel olduğunu belirlemiştir. İşletme ne yapar?",
     "options": {
-      "D": "Bakiyeler yeni oranla yeniden ölçülür; fark kural olarak kâr veya zarara yansıtılır",
-      "A": "Mevcut bakiyeler eski oranla korunur; yeniden ölçülmemektedir",
-      "B": "Oran değişikliği önceki dönem hatası sayılıp geriye dönük düzeltilir",
-      "C": "Oran değişikliğinin etkisi doğrudan özkaynaklardan indirilir",
-      "E": "Oran değişikliği yalnızca yeni işlemlere uygulanır; mevcut bakiyeler eski oranla kalır"
+      "A": "Varlığı artırır",
+      "B": "Varlığı korur",
+      "C": "Varlığı özkaynağa aktarır",
+      "D": "Varlığın defter değerini azaltır",
+      "E": "Önceki yılları düzeltir"
     },
     "answer": "D",
-    "solution": "TMS 12: ertelenmiş vergi varlık ve borçları, raporlama dönemi sonu itibarıyla yasalaşmış veya yasalaşması kesine yakın oranlarla ölçülür. Oran değişirse bakiyeler yeniden ölçülür. Doğan fark, ilgili kalem başlangıçta kâr veya zararda muhasebeleştirildiyse kâr veya zarara yansıtılır. Doğru cevap D.",
+    "solution": "TMS 12 p. 56'ya göre ertelenmiş vergi varlığının defter değeri her raporlama döneminde gözden geçirilir; varlığın bir kısmından veya tamamından yararlanmaya **yetecek vergilendirilebilir kârın muhtemel olmadığı ölçüde** defter değeri azaltılır; koşullar düzelirse azaltım iptal edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - oran değişiminin etkisi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 56"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "std-tms12-gen-0048",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin %25 oranıyla ölçülmüş 400.000 TL ertelenmiş vergi borcu bulunmaktadır. İlgili geçici farkın ters döneceği dönemde uygulanacak oran %20 olarak yasalaşmıştır. Yeniden ölçüm sonrası ertelenmiş vergi borcu kaç TL'dir?",
+    "stem": "Bir işletmenin dönemin vergilendirilebilir kârı 1.000.000 ₺, vergi oranı %25'tir. Ertelenmiş vergi yükümlülüğü dönem başında 40.000 ₺, dönem sonunda 55.000 ₺'dir; değişimin tamamı kâr veya zarardaki kalemlerden kaynaklanmaktadır. Kâr veya zarar tablosundaki toplam vergi gideri kaç ₺'dir?",
     "options": {
-      "C": "320.000 TL",
-      "A": "400.000 TL",
-      "B": "80.000 TL",
-      "D": "500.000 TL",
-      "E": "0 TL"
+      "A": "235.000",
+      "B": "305.000",
+      "C": "265.000",
+      "D": "15.000",
+      "E": "250.000"
     },
     "answer": "C",
-    "solution": "Geçici fark = 400.000 ÷ %25 = 1.600.000 TL. Yeni oranla ertelenmiş vergi borcu = 1.600.000 × %20 = 320.000 TL. Azalan 80.000 TL kural olarak kâr veya zarara (vergi geliri olarak) yansıtılır. Doğru cevap C.",
+    "solution": "Cari vergi gideri 1.000.000 × %25 = 250.000 ₺; ertelenmiş vergi yükümlülüğündeki artış 55.000 − 40.000 = 15.000 ₺ ertelenmiş vergi gideridir. Toplam: **265.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - oran değişiminde yeniden ölçüm"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 58, 77"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "std-tms12-gen-0049",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Cari vergi varlık ve borçlarının netleştirilmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin muhasebe kârı 1.000.000 ₺, kâr veya zarardaki toplam vergi gideri 280.000 ₺'dir; yasal vergi oranı %25'tir. Aradaki fark kanunen kabul edilmeyen giderlerden kaynaklanmaktadır. TMS 12'ye göre işletmenin bu farkı açıklaması hangi açıklama türüdür?",
     "options": {
-      "E": "Yasal mahsup hakkı varsa ve net esasa göre ödeme niyeti bulunuyorsa netleştirilir",
-      "A": "Ve koşulsuz olarak netleştirilir",
-      "B": "Netleştirilemez; her zaman brüt olarak gösterilir",
-      "C": "Netleştirme yalnızca vergi idaresi izin verdiğinde yapılabilir",
-      "D": "Yasal mahsup hakkı aranmaksızın tüm bakiyeler netleştirilerek tek satırda gösterilir"
+      "A": "Bölümlere göre raporlama",
+      "B": "Sermaye yönetimi açıklaması",
+      "C": "Kâr payı açıklaması",
+      "D": "Hisse başına kazanç açıklaması",
+      "E": "Vergi gideri ile muhasebe kârı mutabakatı"
     },
     "answer": "E",
-    "solution": "TMS 12: işletme cari vergi varlıkları ile borçlarını ancak (a) muhasebeleştirilen tutarları netleştirmek için yasal olarak uygulanabilir bir hakkı varsa ve (b) net esasa göre ödemek veya varlığı elde edip borcu ödemeyi aynı anda gerçekleştirmek niyetinde ise netleştirir. Doğru cevap E.",
+    "solution": "TMS 12 p. 81(c)'ye göre işletme, vergi gideri ile **muhasebe kârının uygulanabilir vergi oranıyla çarpımı** arasında sayısal mutabakat (veya etkin vergi oranı mutabakatı) sunar; kalıcı farklar bu mutabakatta gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - cari verginin netleştirilmesi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 81(c)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "std-tms12-gen-0050",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Vergi gideri ile muhasebe kârı arasındaki mutabakatın açıklanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin 150.000 ₺ ertelenmiş vergi varlığının 60.000 ₺'lik kısmının gelecek 12 ay içinde gerçekleşmesi beklenmektedir. Ertelenmiş vergi varlığı finansal durum tablosunda nasıl sınıflandırılır?",
     "options": {
-      "E": "Vergi gideri ile muhasebe kârı arasındaki ilişkinin sayısal mutabakatı açıklanır",
-      "A": "Böyle bir mutabakatın açıklanmasına gerek bulunmaz",
-      "B": "Yalnızca vergi idaresine sunulur; finansal tablo kullanıcılarına açıklanmaz",
-      "C": "Mutabakat yalnızca zarar eden işletmeler için zorunlu tutulmuş bir husustur",
-      "D": "Mutabakat yalnızca vergi idaresine sunulur; finansal tablo dipnotlarında yer almaz"
+      "A": "60.000 ₺ dönen, 90.000 ₺ duran",
+      "B": "Kısa vadeli borçtan düşülür",
+      "C": "Özkaynak kalemi",
+      "D": "Tamamı dönen varlık",
+      "E": "Tamamı duran varlık"
     },
     "answer": "E",
-    "solution": "TMS 12: işletme, vergi gideri (geliri) ile muhasebe kârı arasındaki ilişkiye dair açıklamayı, (a) vergi gideri ile muhasebe kârının uygulanabilir vergi oranıyla çarpımı arasındaki sayısal mutabakat veya (b) ortalama etkin vergi oranının sayısal mutabakatı biçiminde sunar. Doğru cevap E.",
+    "solution": "TMS 1 p. 56'ya göre işletme dönen/duran ayrımı yaptığında **ertelenmiş vergi varlıklarını dönen varlık olarak sınıflandırmaz**; tamamı duran varlıktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - mutabakat açıklaması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 71; TMS 1 p. 56"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "std-tms12-gen-0051",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş verginin ölçümünde varlığın geri kazanılma biçimi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme maddi duran varlıklarını yeniden değerlemiş ve vergi mevzuatı da aynı tarihte vergiye esas değeri aynı tutarda yükseltmiştir. Yeniden değerleme için geçici fark hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "D": "İşletmenin defter değerini geri kazanmayı beklediği biçimin vergisel sonuçları esas alınır",
-      "A": "Geri kazanma biçimi dikkate alınmaz; tek bir oran kullanılmaktadır",
-      "B": "Varlığın satılacağı varsayılır; kullanım yoluyla geri kazanım dikkate alınmaz",
-      "C": "Varlığın kullanılacağı varsayılır; satış yoluyla geri kazanım dikkate alınmaz",
-      "E": "Geri kazanma biçimi dikkate alınmaz; satış ve kullanım için aynı oran uygulanır"
+      "A": "İndirilebilir geçici fark doğar",
+      "B": "Vergi zararı doğar",
+      "C": "Vergilendirilebilir geçici fark doğar",
+      "D": "Geçici fark doğmaz",
+      "E": "Kalıcı fark doğar"
     },
     "answer": "D",
-    "solution": "TMS 12: ertelenmiş vergi varlık ve borçlarının ölçümü, işletmenin raporlama dönemi sonu itibarıyla varlıklarının defter değerini geri kazanmayı veya borçlarının defter değerini ödemeyi beklediği biçimin vergisel sonuçlarını yansıtır. Kullanım ve satış farklı oranlara tabi olabilir. Doğru cevap D.",
+    "solution": "TMS 12 p. 20'ye göre yeniden değerleme vergi amacıyla da yapılır ve **vergiye esas değer aynı tutarda düzeltilirse** defter değeri ile vergiye esas değer arasında fark oluşmaz; ertelenmiş vergi doğmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - geri kazanma biçimi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 17, 20"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "std-tms12-gen-0052",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "İşletme birleşmesinde edinilen varlık ve borçlara ilişkin geçici farklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme araştırma giderlerini TMS 38'e göre oluştuğu dönemde gider yazmıştır; vergi mevzuatı bu 60.000 ₺'yi gelecek üç yılda eşit indirmeye izin vermektedir. Vergi oranı %25'tir ve yeterli kâr beklenmektedir. Tanınacak ertelenmiş vergi hangisidir?",
     "options": {
-      "B": "Gerçeğe uygun değer ile vergiye esas değer farkından ertelenmiş vergi doğar; şerefiyeyi etkiler",
-      "A": "İşletme birleşmelerinde ertelenmiş vergi doğmaz",
-      "C": "İşletme birleşmelerindeki farklar sürekli fark sayılır",
-      "D": "İşletme birleşmelerinde ertelenmiş vergi doğrudan özkaynağa kaydedilir",
-      "E": "Birleşmede doğan geçici farklar için ertelenmiş vergi kaydedilmez; şerefiye bundan etkilenmez"
+      "A": "5.000 ₺ ertelenmiş vergi varlığı",
+      "B": "15.000 ₺ ertelenmiş vergi varlığı",
+      "C": "60.000 ₺ ertelenmiş vergi varlığı",
+      "D": "Ertelenmiş vergi doğmaz",
+      "E": "15.000 ₺ ertelenmiş vergi yükümlülüğü"
     },
     "answer": "B",
-    "solution": "TMS 12: bir işletme birleşmesinde edinilen tanımlanabilir varlıklar ve üstlenilen borçlar gerçeğe uygun değerleriyle muhasebeleştirilir; vergiye esas değerleri değişmeyebilir. Doğan geçici farklar için ertelenmiş vergi muhasebeleştirilir ve bu, şerefiye tutarını etkiler. Doğru cevap B.",
+    "solution": "TMS 12 p. 9 ve 26(b)'ye göre finansal durum tablosunda varlık olarak tanınmayan ancak vergiye esas değeri olan kalemler (vergide gelecekte indirilecek araştırma gideri) **indirilebilir geçici fark** yaratır: 60.000 × %25 = **15.000 ₺ ertelenmiş vergi varlığı**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - işletme birleşmesi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 26(b)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "std-tms12-gen-0053",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin geçmişte sürekli zarar etmiş olması ve devreden mali zararının bulunması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin ertelenmiş vergi varlığı dönem başında 90.000 ₺, dönem sonunda 60.000 ₺'dir; değişim kâr veya zarardaki kalemlerden kaynaklanmaktadır ve başka ertelenmiş vergi kalemi yoktur. Dönemin ertelenmiş vergi etkisi hangisidir?",
     "options": {
-      "D": "Geçmişteki zarar geçmişi, yeterli vergiye tabi kâr beklentisinin muhtemel olmadığına dair güçlü kanıttır",
-      "A": "Geçmiş zararlar dikkate alınmaz; ertelenmiş vergi varlığı kaydedilir",
-      "B": "Geçmiş zararlar ertelenmiş vergi borcu doğurmak zorunda olan kalemleri ifade eder",
-      "C": "Geçmiş zararlar muhasebeleştirilemez; yalnızca dipnotta açıklanır",
-      "E": "Geçmiş zararlar dikkate alınmaz; ertelenmiş vergi varlığı tam tutarıyla kaydedilir"
+      "A": "60.000 ₺ ertelenmiş vergi gideri",
+      "B": "Etki yok",
+      "C": "90.000 ₺ ertelenmiş vergi gideri",
+      "D": "30.000 ₺ ertelenmiş vergi gideri",
+      "E": "30.000 ₺ ertelenmiş vergi geliri"
     },
     "answer": "D",
-    "solution": "TMS 12: kullanılmamış mali zararların varlığı, gelecekte vergiye tabi kâr elde edilemeyebileceğine dair güçlü bir kanıttır. İşletmenin yakın geçmişte zarar geçmişi varsa, ertelenmiş vergi varlığı ancak yeterli vergiye tabi geçici fark bulunması veya ikna edici başka kanıt olması ölçüsünde muhasebeleştirilir. Doğru cevap D.",
+    "solution": "Ertelenmiş vergi varlığının 90.000 ₺'den 60.000 ₺'ye **azalması**, önceki dönemlerde tanınan vergi avantajının kullanıldığını gösterir ve **30.000 ₺ ertelenmiş vergi gideri** doğurur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - zarar geçmişi (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 58"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "std-tms12-gen-0054",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Ertelenmiş vergi varlığı için değerlendirilecek vergiye tabi kâr kaynakları bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme GUDKZ olarak ölçtüğü hisse senetlerinde 150.000 ₺ değer artışı kazancı tanımıştır; vergi mevzuatına göre kazanç hisseler satıldığında vergilendirilecektir. Vergi oranı %20'dir. Ertelenmiş vergi etkisi hangisidir?",
     "options": {
-      "B": "Yeterli vergiye tabi geçici farkların bulunması veya gelecekte vergiye tabi kâr elde edilmesi değerlendirilir",
-      "A": "Yalnızca geçmiş dönemlerde fiilen elde edilmiş kârlar dikkate alınır; gelecekteki kâr beklentisi ve mevcut vergiye tabi farklar değerlendirmeye girmez",
-      "C": "Hiçbir kaynak değerlendirilmez; ertelenmiş vergi varlığı kaydedilir",
-      "D": "Yalnızca vergi idaresinin görüşü dikkate alınmak zorunda olan bir husustur",
-      "E": "Yalnızca geçmiş dönemlerde fiilen elde edilmiş kârlar dikkate alınır"
+      "A": "30.000 ₺ yükümlülük, DKG'de",
+      "B": "30.000 ₺ yükümlülük, kâr veya zararda",
+      "C": "Ertelenmiş vergi doğmaz",
+      "D": "30.000 ₺ varlık, kâr veya zararda",
+      "E": "150.000 ₺ yükümlülük, kâr veya zararda"
     },
     "answer": "B",
-    "solution": "TMS 12: indirilebilir geçici farkın kullanılabilmesi için, aynı vergi idaresi ve aynı mükellefe ilişkin yeterli VERGİYE TABİ GEÇİCİ FARK bulunması ya da gelecekte yeterli vergiye tabi kâr elde edilmesinin muhtemel olması değerlendirilir. Vergi planlama fırsatları da dikkate alınabilir. Doğru cevap B.",
+    "solution": "Değer artışı varlığın defter değerini vergiye esas değerin üzerine çıkarır (**vergilendirilebilir geçici fark**); kazanç kâr veya zararda tanındığından TMS 12 p. 58'e göre ertelenmiş vergi de kâr veya zarara yansır: 150.000 × %20 = **30.000 ₺ yükümlülük**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - vergiye tabi kâr kaynakları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 17, 58"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "std-tms12-gen-0055",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aynı vergi idaresine ve aynı mükellefe ilişkin olup yasal mahsup hakkı bulunan bir işletmenin ertelenmiş vergi varlığı 90.000 TL, ertelenmiş vergi borcu 140.000 TL'dir. Finansal durum tablosunda gösterilecek net tutar ve niteliği bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmede muhasebe kârı 800.000 ₺, vergide henüz indirilemeyen 50.000 ₺ karşılık, vergide 30.000 ₺ fazla amortisman, oran %25 iken başka bir kalem yoksa, kâr veya zarar tablosundaki toplam vergi gideri kaç ₺'dir?",
     "options": {
-      "C": "50.000 TL net ertelenmiş vergi borcu",
-      "A": "50.000 TL net ertelenmiş vergi varlığı olarak gösterilmek zorunda olan bir tutarı ifade eder",
-      "B": "230.000 TL net ertelenmiş vergi borcu olarak gösterilir; iki tutar toplanır",
-      "D": "90.000 TL varlık ve 140.000 TL borç ayrı ayrı gösterilir; netleştirme hiçbir hâlde yapılamaz",
-      "E": "Hiçbir tutar gösterilmez; ertelenmiş vergiler yalnızca dipnotlarda açıklanır"
+      "A": "205.000",
+      "B": "212.500",
+      "C": "200.000",
+      "D": "185.000",
+      "E": "217.500"
     },
     "answer": "C",
-    "solution": "TMS 12: yasal mahsup hakkı varsa ve aynı vergi idaresi/aynı mükellefe ilişkinse ertelenmiş vergi varlık ve borçları netleştirilir: 140.000 − 90.000 = 50.000 TL. Borç varlıktan büyük olduğundan net ertelenmiş vergi BORCU gösterilir. Doğru cevap C.",
+    "solution": "Cari vergi 205.000 ₺; karşılık için 12.500 ₺ ertelenmiş vergi geliri, amortisman için 7.500 ₺ ertelenmiş vergi gideri doğar. Toplam: 205.000 − 12.500 + 7.500 = **200.000 ₺**; yalnız geçici farklar olduğunda toplam gider muhasebe kârı × oran'a eşittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - netleştirme hesabı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5, 58"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "std-tms12-gen-0056",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir işletmenin şüpheli alacak karşılığı muhasebede gider yazılmış ancak vergisel olarak henüz indirilememiştir. TMS 12 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "TMS 12'ye göre bir döneme ait vergilendirilebilir kâr üzerinden ödenecek gelir vergisi tutarı hangi kavramla ifade edilir?",
     "options": {
-      "E": "İndirilebilir geçici fark doğar; koşullar sağlanıyorsa ertelenmiş vergi varlığı kaydedilir",
-      "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu kaydedilir",
-      "B": "İndirilebilir geçici fark doğar; ancak sonuç olarak ertelenmiş vergi borcu kaydedilir",
-      "C": "Hiçbir fark doğmaz; karşılıklar vergisel açıdan hiç dikkate alınmaz",
-      "D": "Kalıcı fark doğar; karşılık vergisel olarak hiç indirilemeyeceğinden ertelenmiş vergi hesaplanmaz"
+      "A": "Vergiye esas değer",
+      "B": "Geçici fark",
+      "C": "Ertelenmiş vergi",
+      "D": "Vergi gideri",
+      "E": "Cari vergi"
     },
     "answer": "E",
-    "solution": "Karşılık nedeniyle alacağın defter değeri vergiye esas değerinden DÜŞÜKTÜR. Bir varlığın defter değeri vergiye esas değerinden düşükse İNDİRİLEBİLİR geçici fark doğar; gelecekte vergisel indirim sağlanacağından ertelenmiş vergi VARLIĞI kaydedilir (yeterli vergiye tabi kâr muhtemelse). Doğru cevap E.",
+    "solution": "TMS 12 p. 5'e göre **cari vergi**, bir döneme ait vergilendirilebilir kâr (vergi zararı) üzerinden ödenecek (geri alınacak) gelir vergisi tutarıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - şüpheli alacak (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "std-tms12-gen-0057",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir varlığın defter değerinin vergiye esas değerinden DÜŞÜK olması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, ertelenmiş vergi varlığının geri kazanılabilirliğini değerlendirirken vergilendirilebilir kârı artıracak bir satış ve geri kiralama işlemini gerçekleştirebileceğini belirlemiştir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "C": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
-      "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
-      "B": "Hiçbir geçici fark doğmaz; iki değer arasındaki fark dikkate alınmaz",
-      "D": "Fark indirilebilir niteliktedir; buna rağmen ertelenmiş vergi borcu muhasebeleştirilir",
-      "E": "Fark doğrudan özkaynaklarda muhasebeleştirilir; kâr veya zararı hiç etkilemez"
+      "A": "Gelecek vergilendirilebilir kâr tahmini yapılır",
+      "B": "Fırsatlar gerçekçi ve uygulanabilir olmalıdır",
+      "C": "Vergi planlama fırsatları değerlendirmede dikkate alınamaz",
+      "D": "Mevcut vergilendirilebilir geçici farklar da değerlendirilir",
+      "E": "Vergi planlama fırsatları dikkate alınabilir"
     },
     "answer": "C",
-    "solution": "Bir VARLIĞIN defter değeri vergiye esas değerinden düşükse, gelecekte vergisel olarak indirilebilecek tutar defter değerini aşar. Bu bir İNDİRİLEBİLİR geçici farktır ve ertelenmiş vergi VARLIĞI doğurur (yeterli vergiye tabi kâr muhtemelse). Doğru cevap C.",
+    "solution": "TMS 12 p. 29(b) ve 30'a göre işletme, ertelenmiş vergi varlığı için yeterli vergilendirilebilir kâr bulunup bulunmadığını değerlendirirken, uygun dönemlerde vergilendirilebilir kâr yaratacak **vergi planlama fırsatlarını** dikkate alabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - varlıkta ters fark yönü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 29(b), 30"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "std-tms12-gen-0058",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Bir borcun defter değerinin vergiye esas değerinden YÜKSEK olması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdaki kalemlerden hangisi indirilebilir geçici fark doğurmaz?",
     "options": {
-      "D": "İndirilebilir geçici fark doğar; ertelenmiş vergi varlığı muhasebeleştirilir",
-      "A": "Vergiye tabi geçici fark doğar; ertelenmiş vergi borcu muhasebeleştirilir",
-      "B": "Hiçbir geçici fark doğmaz; borçlarda geçici fark söz konusu olmaz",
-      "C": "İndirilebilir geçici fark doğar; fakat sonuç ertelenmiş vergi borcudur",
-      "E": "Borçlarda geçici fark doğmaz; geçici fark yalnızca varlıklar için hesaplanır"
+      "A": "Vergide kabul edilmeyen stok karşılığı",
+      "B": "Vergide kabul edilmeyen garanti karşılığı",
+      "C": "Ödendiğinde indirilecek kıdem karşılığı",
+      "D": "Vergide daha hızlı ayrılan amortisman",
+      "E": "Peşin tahsil edilip vergilendirilen gelir"
     },
     "answer": "D",
-    "solution": "BORÇLARDA yön varlıkların TERSİDİR: bir borcun defter değeri vergiye esas değerinden yüksekse, aradaki tutar gelecekte ödendiğinde vergi matrahından indirilecektir → İNDİRİLEBİLİR geçici fark → ertelenmiş vergi VARLIĞI. Doğru cevap D.",
+    "solution": "Vergide daha hızlı amortisman, varlığın defter değerini vergiye esas değerinin üzerinde bırakır ve **vergilendirilebilir** geçici fark doğurur. Diğer kalemler indirilebilir geçici fark doğurarak ertelenmiş vergi varlığına yol açar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - borçta fark yönü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "std-tms12-gen-0059",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdakilerden hangileri TMS 12'ye göre ertelenmiş vergi BORCU doğurur?\n\nI. Ancak ödendiğinde indirilebilen gider karşılığı ayrılması\n\nII. Varlığın defter değerinin vergiye esas değerinden yüksek olması\n\nIII. Vergi amortismanının muhasebe amortismanından hızlı olması",
+    "stem": "Aşağıdakilerden hangileri ertelenmiş vergi yükümlülüğü doğurur?\n\nI. Vergide muhasebeye göre daha hızlı ayrılan amortisman\n\nII. Vergide ödendiğinde indirilecek kıdem tazminatı karşılığı\n\nIII. Tahakkuk ettirilip vergide tahsilde vergilendirilecek faiz geliri",
     "options": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "I ve III",
       "E": "Yalnız III"
     },
     "answer": "D",
-    "solution": "Varlığın defter değerinin vergiye esas değerinden yüksek olması (II) ve vergi amortismanının daha hızlı olması (III — aynı sonucu doğurur) vergiye tabi geçici fark yaratır → ertelenmiş vergi BORCU. Ancak ödendiğinde indirilebilen karşılık (I) ise indirilebilir geçici fark yaratır → ertelenmiş vergi VARLIĞI; bu nedenle yanlıştır. Doğru cevap D.",
+    "solution": "Hızlı vergi amortismanı (I) ve tahakkuk eden ancak tahsilde vergilendirilecek faiz (III) varlıkların defter değerini vergiye esas değerin üzerinde bırakır ve **vergilendirilebilir geçici fark** yaratır. Kıdem tazminatı karşılığı (II) **indirilebilir** geçici farktır ve ertelenmiş vergi varlığı doğurur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - EVB doğuran hâller"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15, 24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "std-tms12-gen-0060",
     "ders": "muhasebe_standartlari",
     "konu": "tms_12_gelir_vergileri",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 12 bakımından doğrudur?\n\nI. Vergi oranı değişirse mevcut ertelenmiş vergi bakiyeleri yeniden ölçülür\n\nII. Ertelenmiş vergi, varlığın geri kazanılma biçiminin vergisel sonuçlarını yansıtır\n\nIII. Vergi oranı değişikliği önceki dönem hatası sayılıp geriye dönük düzeltilir",
+    "stem": "Aşağıdakilerden hangileri TMS 12'ye göre doğrudur?\n\nI. Şerefiyenin ilk tanınmasından doğan fark için ertelenmiş vergi yükümlülüğü tanınmaz\n\nII. Ertelenmiş vergi yükümlülükleri bugünkü değerine iskonto edilir\n\nIII. Kalıcı farklar ertelenmiş vergi doğurmaz",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "I ve III",
+      "B": "Yalnız III",
+      "C": "I ve II",
+      "D": "Yalnız I",
+      "E": "II ve III"
     },
     "answer": "A",
-    "solution": "Oran değişirse bakiyeler yeniden ölçülür (I) ve ertelenmiş vergi, geri kazanma biçiminin vergisel sonuçlarını yansıtır (II). Oran değişikliği önceki dönem hatası DEĞİLDİR ve geriye dönük düzeltilmez; etkisi cari dönemde muhasebeleştirilir. Bu nedenle III yanlıştır. Doğru cevap A.",
+    "solution": "TMS 12 p. 15(a) ve 21'e göre şerefiyenin ilk tanınmasında EVY tanınmaz (I); kalıcı farklar geçici fark olmadığından ertelenmiş vergi doğurmaz (III). p. 53'e göre ertelenmiş vergi **iskonto edilmez** (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 12; yapısal)",
-      "legislationRef": "TMS 12 - oran ve ölçüm"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 12 p. 15, 21, 53"
     },
     "validYear": 2026,
     "mockExamId": null
