@@ -51,24 +51,6 @@ from fix_lexical_tell import ROOT, APP_ROOT, guvenli, temizle
 
 # {paket: {"<soru-son4>|<harf>": ["ek"|"yaz", metin]}}
 YAMALAR = {
-    "borclar_hukuku/sozlesme_turleri.json": {
-        "0006|B": [
-            "ek",
-            "; mülkiyetin devri bu sözleşmede gündeme gelmez"
-        ],
-        "0013|A": [
-            "ek",
-            "; alıcının iyiniyetli olması bu sonucu etkilemez"
-        ],
-        "0019|B": [
-            "ek",
-            "; sözlü verilen bağışlama sözü de aynen ifa edilir"
-        ],
-        "0022|E": [
-            "ek",
-            "; bağışlayanın kusur derecesi dikkate alınmaz"
-        ]
-    },
 }
 
 
