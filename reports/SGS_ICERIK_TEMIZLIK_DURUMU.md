@@ -29,7 +29,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 
 | # | Ders | Konu | Tamamlanan | Durum |
 |---|---|---:|---:|---|
-| 1 | finansal_muhasebe | 16 | 16 | ✅ TAM (ilk anlamsal tur; OTA v166) |
+| 1 | finansal_muhasebe | 16 | 16 | ✅ TAM (ilk anlamsal tur; OTA v166) · 🔵 **27 Eylül: çok adımlı tur (3/16)** — 376 gerçek FM sorusundan ölçülen bant: medyan kök 270, kökte tutar %66, kökte 3+ tutar %35, olumsuz %16; kayıt soruları "hangi hesabın kullanımı doğrudur/yanlıştır", "kayıtta hangisi yer almaz" kalıbında. Biten: maddi_duran_varliklar (sıfırdan; kök 179→250, 3+ tutar %15→%27, olumsuz %3→%23, TMS 16 soruları çıkarıldı) · ozkaynaklar (38 korundu + 22 yeni; 3+ tutar %48, olumsuz %3→%15) · donem_sonu_islemleri (33 korundu + 27 yeni; olumsuz %3→%15). Tutarlar modülde hesaplanıp bağımsız ikinci kez doğrulandı. Sıradaki öncelik (sınav sıklığı): kdv, stoklar, ticari_alacaklar, hazir_degerler, yabanci_kaynaklar. **Yayın bekliyor (v202)** |
 | 2 | mali_tablolar_analizi | 6 | 6 | ✅ İNCELENDİ — SOLİD, 0 değişiklik (aritmetik+kalite doğrulandı) |
 | 3 | maliyet_muhasebesi | 6 | 6 | ✅ **TAM** — 6/6 konu harder-kalibrasyondan geçti (builder 6 paket/125 soru); 11 ATIF kusuru giderildi |
 | 4 | denetim | 7 | 7 | ✅ **TAM** — 7/7 konu profil kalibrasyonundan geçti (builder 7 paket/149 soru); ders ort. olumsuz %5→**%37**, öncüllü %6→**%11**, kör 25-30→**21-26** |
