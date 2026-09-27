@@ -81,60 +81,6 @@ YAMALAR = {
             "; alacaklılardan birine yapılan ödeme borçluyu kurtarmaz"
         ]
     },
-    "borclar_hukuku/temerrut_tazminat.json": {
-        "0001|E": [
-            "ek",
-            "; kusursuz sorumluluk ilkesi bu ilişkide uygulanmaz"
-        ],
-        "0003|A": [
-            "ek",
-            "; alacaklı doğrudan yardımcı kişiye başvurur"
-        ],
-        "0004|B": [
-            "ek",
-            "; yazılılık yalnızca ispat kolaylığı sağlar"
-        ],
-        "0011|B": [
-            "ek",
-            "; gecikme tek başına yalnızca aynen ifa talebini doğurur"
-        ],
-        "0013|A": [
-            "ek",
-            "; temerrüde düşmüş olması bu sonucu değiştirmez"
-        ],
-        "0016|C": [
-            "yaz",
-            "Alacaklı aşkın zararını isteyebilmek için borçlunun bu zararda kusurlu olduğunu ayrıca ispat etmekle yükümlüdür; ispat edemezse talebi reddedilir"
-        ],
-        "0022|E": [
-            "ek",
-            "; tek taraflı fesih beyanı sonuç doğurmaz"
-        ],
-        "0025|B": [
-            "ek",
-            "; müspet zarar yalnızca aynen ifa talebinde gündeme gelir"
-        ],
-        "0035|E": [
-            "ek",
-            "; kusur derecesi tazminatın belirlenmesinde etkili olmaz"
-        ],
-        "0036|A": [
-            "ek",
-            "; seçtiği kalem dışındaki talebi dinlenmez"
-        ],
-        "0049|A": [
-            "ek",
-            "; kredi kullanılmış olması bu sonucu değiştirmez"
-        ],
-        "0055|C": [
-            "yaz",
-            "Borçlu, imkânsızlaşan bölümün parasal karşılığını (Z)'ye tazminat olarak öder; sözleşme geri kalan bölümüyle ayakta kalır ve (Z) başkaca bir hak ileri süremez"
-        ],
-        "0056|D": [
-            "yaz",
-            "Kesin vade kararlaştırılmadığı için (A2) temerrüde düşürülemez; (B2) yalnızca ifayı bekler ve geçen süreye katlanır, ayrıca faiz de isteyemez"
-        ]
-    },
     "borclar_hukuku/sozlesme_turleri.json": {
         "0006|B": [
             "ek",

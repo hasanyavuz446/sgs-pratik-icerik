@@ -38,13 +38,6 @@ def p(stem: str, answer: str, solution: str) -> dict[str, str]:
 
 
 PATCHES = {
-    "content/borclar_hukuku/temerrut_tazminat.json": {
-        "temerrut-gen-0017": p(
-            "Aşağıdakilerden hangileri borçlunun ayrıca ihtara gerek kalmadan temerrüde düşebileceği hâllerdendir?\n\nI. İfa gününün taraflarca kesin olarak belirlenmiş olması\n\nII. Borçlunun yalnızca ödeme güçlüğü içinde bulunması\n\nIII. Alacaklının ileride ihtar göndermeyi planlaması",
-            "A",
-            "Kesin vade varsa borçlu ayrıca ihtar gerekmeksizin temerrüde düşebilir (I). Ödeme güçlüğü tek başına ihtarın yerini tutmaz (II); alacaklının ileride ihtar göndermeyi planlaması da temerrüt doğurmaz (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/borclar_hukuku/ozel_durumlar.json": {
         "ozeldurum-gen-0024": p(
             "Cezai şartla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Cezai şart asıl borca bağlı fer'i bir borçtur\n\nII. Alacaklı cezai şartı isteyebilmek için uğradığı zararı mutlaka ispat etmelidir\n\nIII. Hâkim aşırı cezai şartı yalnızca borçlunun talebi üzerine indirebilir",
