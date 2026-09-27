@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-FM cok adimli tur. 51 soru korundu; 9 'hangi hesapta izlenir' ezberi cikarildi, 12 mutlak ifadeli sik onarildi. Yerine 7/A akisinin cok adimli sorulari: tamamlanan uretimin 152'ye ve satilan mamullerin 620'ye aktarimi, yansitma kaydi (olumsuz), amortismanin ve ucretin fonksiyonlara dagitimi, ilk madde kullaniminin direkt/endirekt ayrimi, 7/B hesabi, uretim maliyetine girmeyen gider, oncullu soru. Kor ogrenci %20.
+FM cok adimli tur. 51 soru korundu; 9 'hangi hesapta izlenir' ezberi cikarildi, 12 mutlak ifadeli sik onarildi. Yerine 7/A akisinin cok adimli sorulari: tamamlanan uretimin 152'ye ve satilan mamullerin 620'ye aktarimi, yansitma kaydi (olumsuz), amortismanin ve ucretin fonksiyonlara dagitimi, ilk madde kullaniminin direkt/endirekt ayrimi, 7/B hesabi, uretim maliyetine girmeyen gider, oncullu soru. '710' atma-sikki tekrari 5 -> 3'e indirildi. Kor ogrenci %20.
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -687,7 +687,7 @@ _PATCHES = {
             'B': '151 Yarı Mamuller - Üretim',
             'C': '153 Ticari Mallar',
             'D': '150 İlk Madde ve Malzeme',
-            'E': '710 Direkt İlk Madde ve Malzeme Giderleri',
+            'E': '620 Satılan Mamuller Maliyeti',
         },
         'A',
         "Üretimi tamamlanan mamuller, üretim maliyetiyle **152 Mamuller** hesabına alınır (151 Yarı Mamuller - Üretim'den aktarılır). Satılınca 620 Satılan Mamuller Maliyeti'ne geçer.",
@@ -855,7 +855,7 @@ _PATCHES = {
             'B': '730 Genel Üretim Giderleri',
             'C': '793 Dışarıdan Sağlanan Fayda ve Hizmetler',
             'D': '770 Genel Yönetim Giderleri',
-            'E': '710 Direkt İlk Madde ve Malzeme Giderleri',
+            'E': '720 Direkt İşçilik Giderleri',
         },
         'C',
         "7/B'de giderler **çeşit esasına** göre 790-797 hesaplarında izlenir (ör. 793). 710-780 hesapları fonksiyon esasına dayanan 7/A seçeneğine aittir.",
