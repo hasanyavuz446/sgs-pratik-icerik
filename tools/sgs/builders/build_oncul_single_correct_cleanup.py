@@ -41,24 +41,6 @@ PATCHES = {
             ),
         },
     },
-    "content/mali_tablolar_analizi/nakit_akim_analizi.json": {
-        "mta-nakit-gen-0031": {
-            "stem": (
-                "Aşağıdaki nakit akışlarından hangileri YATIRIM faaliyeti "
-                "kapsamındadır?\n\n"
-                "I. Maddi duran varlık alımı için ödeme\n\n"
-                "II. Ortaklara temettü ödemesi\n\n"
-                "III. Mal satışından tahsilat"
-            ),
-            "answer": "A",
-            "solution": (
-                "**I (maddi duran varlık alımı)** yatırım faaliyetidir. "
-                "**II (ortaklara temettü ödemesi)** finansman, **III (mal "
-                "satışından tahsilat)** ise işletme faaliyetidir. Doğru cevap "
-                "**Yalnız I**."
-            ),
-        },
-    },
 }
 
 

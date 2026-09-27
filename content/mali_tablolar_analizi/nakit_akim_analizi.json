@@ -5,17 +5,17 @@
     "konu": "nakit_akim_analizi",
     "stem": "Nakit akım tablosu ile ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "İşletmenin belirli bir andaki varlık ve kaynak yapısını ayrıntılı biçimde gösteren temel tablodur.",
+      "A": "İşletmenin stok giriş ve çıkış hareketlerini miktar bazında izleyen bir yardımcı tablodur.",
       "B": "İşletmenin bir dönemdeki nakit ve nakit benzeri giriş ve çıkışlarını gösteren tablodur.",
-      "C": "İşletmenin yalnızca dağıtılan kâr paylarını dönemler itibarıyla karşılaştırmalı gösteren tablodur.",
-      "D": "İşletmenin yalnızca stok giriş ve çıkış hareketlerini miktar bazında izleyen bir yardımcı tablodur.",
+      "C": "İşletmenin dağıttığı kâr paylarını dönemler itibarıyla karşılaştırmalı gösteren tablodur.",
+      "D": "İşletmenin belirli bir andaki varlık ve kaynak yapısını ayrıntılı biçimde gösteren temel tablodur.",
       "E": "İşletmenin döneme ait vergi matrahını beyan etmek için düzenlenen resmî bir beyanname belgesidir."
     },
     "answer": "B",
     "solution": "**Nakit akım tablosu**; işletmenin bir dönemdeki **nakit ve nakit benzeri giriş ve çıkışlarını** gösteren, dönem başı nakitten dönem sonu nakite ulaşmayı sağlayan tablodur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
       "legislationRef": "TMS 7; Mali analiz - nakit akım tablosu"
     },
     "validYear": 2026,
@@ -25,20 +25,20 @@
     "id": "mta-nakit-gen-0002",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosunun temel amacı aşağıdakilerden hangisidir?",
+    "stem": "Aşağıdakilerden hangisi bir nakit ÇIKIŞIdır?",
     "options": {
-      "A": "İşletmenin elde ettiği dönem kârını olduğundan çok daha düşük göstererek hem ortaklardan hem de kamu otoritesinden gizli tutmaya çalışmaktır",
-      "B": "İşletmenin gelecek döneme ait reklam, tanıtım ve pazarlama harcamalarının bütçesini kalem kalem planlayıp yönetime sunmaktır",
-      "C": "İşletmenin duran varlıkları için ayrılacak amortisman tutarını seçilen yönteme göre hesaplayıp ilgili dönemlere dağıtmaktır",
-      "D": "İşletmenin sermayedar ortaklarını sahip oldukları pay oranlarıyla birlikte eksiksiz biçimde listeleyip raporda sunmaktır",
-      "E": "İşletmenin nakit yaratma gücünü ve nakdi nerelerden sağlayıp nerelerde kullandığını göstererek nakit yönetimini değerlendirmek"
+      "A": "Nakit sermaye artırımı",
+      "B": "Satışlardan tahsilat",
+      "C": "Duran varlık satılıp bedelin tahsil edilmesi",
+      "D": "Banka kredisi kullanılması",
+      "E": "Tedarikçilere (satıcılara) nakit ödeme yapılması"
     },
     "answer": "E",
-    "solution": "Nakit akım tablosunun amacı; işletmenin **nakit yaratma gücünü** ve nakdi **nereden sağlayıp nerede kullandığını** göstererek nakit (likidite) yönetimini değerlendirmektir.",
+    "solution": "**Tedarikçilere nakit ödeme** işletmeden nakit çıkışıdır. Diğerleri nakit girişidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-amaç; sınav stiline kalibre)",
-      "legislationRef": "TMS 7"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit çıkışları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "mta-nakit-gen-0003",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdakilerden hangisi bir nakit GİRİŞİdir?",
+    "stem": "TMS 7'ye (Nakit Akış Tablosu standardı) göre nakit akışları hangi üç faaliyet grubunda sınıflandırılır?",
     "options": {
-      "A": "Peşin mal alımı için ödeme yapılması",
-      "B": "Personele ücret ödenmesi",
-      "C": "Satışlardan nakit tahsilat yapılması",
-      "D": "Vergi ödenmesi",
-      "E": "Duran varlık satın alınması"
+      "A": "Alış, satış ve stok faaliyetleri",
+      "B": "Üretim, pazarlama ve yönetim faaliyetleri",
+      "C": "İşletme, yatırım ve finansman faaliyetleri",
+      "D": "Kısa, orta ve uzun vadeli faaliyetler",
+      "E": "Vergi, SGK ve damga faaliyetleri"
     },
     "answer": "C",
-    "solution": "**Satışlardan nakit tahsilat** işletmeye nakit girişi sağlar. Diğer seçenekler nakit çıkışıdır.",
+    "solution": "TMS 7'ye göre nakit akışları **işletme (esas faaliyet), yatırım ve finansman** faaliyetleri olmak üzere üç grupta sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit girişleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - üç faaliyet"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "mta-nakit-gen-0004",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdakilerden hangisi bir nakit ÇIKIŞIdır?",
+    "stem": "Finansman faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
     "options": {
-      "A": "Tedarikçilere (satıcılara) nakit ödeme yapılması",
-      "B": "Nakit sermaye artırımı",
-      "C": "Banka kredisi kullanılması",
-      "D": "Satışlardan tahsilat",
-      "E": "Duran varlık satılıp bedelin tahsil edilmesi"
+      "A": "İşletmenin özkaynak ve yabancı kaynak yapısındaki değişimlerden doğan nakit akışlarını (sermaye artırımı, borçlanma, borç anapara ödemesi, temettü ödemesi)",
+      "B": "İşletmenin esas faaliyeti kapsamında müşterilerinden yaptığı mal ve hizmet satış tahsilatlarından doğan nakit girişlerini kapsar",
+      "C": "İşletmenin satışa konu ettiği ticari mal ve üretimde kullandığı hammadde stoklarının peşin alımından doğan nakit çıkışlarını kapsar",
+      "D": "İşletmenin üretim ve hizmet faaliyetinde uzun süre kullanmak üzere edindiği bina, makine gibi maddi duran varlıkların satın alınmasından doğan nakit çıkışlarını kapsar",
+      "E": "İşletmenin sahip olduğu duran varlıklar için dönem boyunca ayırdığı amortisman giderlerinin toplam tutarından oluşan kalemleri kapsar"
     },
     "answer": "A",
-    "solution": "**Tedarikçilere nakit ödeme** işletmeden nakit çıkışıdır. Diğerleri nakit girişidir.",
+    "solution": "**Finansman faaliyetlerinden nakit akışları**; özkaynak ve yabancı kaynak yapısındaki değişimlerden doğar: sermaye artırımı (giriş), borçlanma (giriş), borç anapara ödemesi (çıkış), temettü ödemesi (çıkış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit çıkışları"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "mta-nakit-gen-0005",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosunda dönem sonu nakit mevcudu nasıl bulunur?",
+    "stem": "Tedarikçilere mal bedeli için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "Yalnızca Net Nakit Akışı",
-      "B": "Dönem Başı Nakit − Net Nakit Akışı",
-      "C": "Net Nakit Akışı − Dönem Başı Nakit",
-      "D": "Dönem Başı Nakit × Net Nakit Akışı",
-      "E": "Dönem Başı Nakit + Net Nakit Akışı"
+      "A": "Yatırım faaliyetleri (nakit çıkışı)",
+      "B": "Finansman faaliyetleri (nakit girişi)",
+      "C": "Finansman faaliyetleri (nakit çıkışı)",
+      "D": "Yatırım faaliyetleri (nakit girişi)",
+      "E": "İşletme faaliyetleri (nakit çıkışı)"
     },
     "answer": "E",
-    "solution": "**Dönem Sonu Nakit = Dönem Başı Nakit + Net Nakit Akışı** (net akış = toplam giriş − toplam çıkış).",
+    "solution": "Tedarikçilere mal bedeli ödemesi esas faaliyetle ilgilidir → **işletme faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (formül; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "mta-nakit-gen-0006",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit mevcudu 100.000 ₺, dönemin net nakit akışı (+) 50.000 ₺ olan bir işletmede dönem sonu nakit mevcudu kaç ₺'dir?",
+    "stem": "Nakit akım tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Nakit ve nakit benzeri giriş-çıkışlarını gösterir.\n\nII. TMS 7'ye göre işletme, yatırım ve finansman faaliyetleri olarak üç grupta sınıflandırılır.\n\nIII. Dönem Sonu Nakit = Dönem Başı Nakit − Net Nakit Akışı.",
     "options": {
-      "A": "150.000",
-      "B": "100.000",
-      "C": "50.000",
-      "D": "5.000.000",
-      "E": "200.000"
+      "A": "I ve II",
+      "B": "I, II ve III",
+      "C": "Yalnız I",
+      "D": "II ve III",
+      "E": "I ve III"
     },
     "answer": "A",
-    "solution": "Dönem Sonu Nakit = 100.000 + 50.000 = **150.000 ₺**.",
+    "solution": "**III yanlıştır:** Dönem Sonu Nakit = Dönem Başı Nakit **+** Net Nakit Akışı'dır; net nakit akışı dönem başı nakde eklenir, çıkarılmaz. **I** (nakit giriş-çıkışını gösterir) ve **II** (TMS 7 üç faaliyet grubu: işletme, yatırım, finansman) doğrudur. Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7; Mali analiz - nakit akım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "mta-nakit-gen-0007",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Net nakit akışı nasıl hesaplanır?",
+    "stem": "Ortaklara ödenen nakit kâr payı (temettü), nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "Dönem Başı Nakit − Dönem Sonu Nakit",
-      "B": "Toplam Nakit Çıkışları − Toplam Nakit Girişleri",
-      "C": "Toplam Nakit Girişleri − Toplam Nakit Çıkışları",
-      "D": "Nakit Girişleri × Nakit Çıkışları",
-      "E": "Yalnızca Dönem Sonu Nakit"
+      "A": "İşletme faaliyetleri (nakit girişi)",
+      "B": "Finansman faaliyetleri (nakit girişi)",
+      "C": "Finansman faaliyetleri (nakit çıkışı)",
+      "D": "İşletme faaliyetleri (nakit çıkışı)",
+      "E": "Yatırım faaliyetleri (nakit girişi)"
     },
     "answer": "C",
-    "solution": "**Net Nakit Akışı = Toplam Nakit Girişleri − Toplam Nakit Çıkışları**. Pozitifse dönemde nakit artmış, negatifse azalmıştır.",
+    "solution": "Ortaklara temettü ödemesi özkaynakla ilgili bir nakit çıkışıdır → genel uygulamada **finansman faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (formül; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "mta-nakit-gen-0008",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin dönemdeki toplam nakit girişleri 500.000 ₺, toplam nakit çıkışları 400.000 ₺'dir. Net nakit akışı kaç ₺'dir?",
+    "stem": "Uzun vadeli banka kredisinin anaparasının geri ödenmesi, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "900.000",
-      "B": "100.000",
-      "C": "−100.000",
-      "D": "500.000",
-      "E": "400.000"
+      "A": "İşletme faaliyetleri (nakit girişi)",
+      "B": "Finansman faaliyetleri (nakit çıkışı)",
+      "C": "Yatırım faaliyetleri (nakit çıkışı)",
+      "D": "Yatırım faaliyetleri (nakit girişi)",
+      "E": "Finansman faaliyetleri (nakit girişi)"
     },
     "answer": "B",
-    "solution": "Net Nakit Akışı = 500.000 − 400.000 = **+100.000 ₺** (dönemde nakit 100.000 ₺ artmıştır).",
+    "solution": "Kredi anaparasının geri ödenmesi yabancı kaynağı azaltır → **finansman faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "mta-nakit-gen-0009",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "TMS 7'ye (Nakit Akış Tablosu standardı) göre nakit akışları hangi üç faaliyet grubunda sınıflandırılır?",
+    "stem": "Aşağıdaki nakit akışlarından hangileri FİNANSMAN faaliyeti kapsamındadır?\n\nI. Satışlardan tahsilat\n\nII. Nakit sermaye artırımı\n\nIII. Uzun vadeli borç anapara ödemesi",
     "options": {
-      "A": "Vergi, SGK ve damga faaliyetleri",
-      "B": "Üretim, pazarlama ve yönetim faaliyetleri",
-      "C": "Alış, satış ve stok faaliyetleri",
-      "D": "İşletme, yatırım ve finansman faaliyetleri",
-      "E": "Kısa, orta ve uzun vadeli faaliyetler"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I ve III"
     },
     "answer": "D",
-    "solution": "TMS 7'ye göre nakit akışları **işletme (esas faaliyet), yatırım ve finansman** faaliyetleri olmak üzere üç grupta sınıflandırılır.",
+    "solution": "**II (sermaye artırımı)** ve **III (borç anapara ödemesi)** finansman faaliyetidir. **I (satış tahsilatı)** ise işletme faaliyetidir. Doğru cevap **II ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (standart-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - üç faaliyet"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "mta-nakit-gen-0010",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "İşletme faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
+    "stem": "Aşağıdaki nakit akışı-faaliyet eşleştirmelerinden hangisi YANLIŞTIR?",
     "options": {
-      "A": "İşletmenin esas (ana) faaliyetlerinden doğan nakit akışlarını (satış tahsilatları, tedarikçi/personel ödemeleri, vergi ödemeleri vb.)",
-      "B": "İşletmenin maddi ve maddi olmayan duran varlıklarının ve uzun vadeli yatırımlarının alım ile satımından doğan nakit akışlarını kapsar",
-      "C": "İşletmenin özkaynak ve yabancı kaynağındaki değişimlerden, sermaye artırımı ve borçlanmadan doğan nakit akışlarını kapsar",
-      "D": "İşletmenin yalnızca ortaklarına dağıttığı nakit kâr paylarının (temettü) ödemelerinden doğan nakit çıkışlarını kapsar",
-      "E": "İşletmenin uzun vadeli iştirak ve bağlı ortaklık paylarının satın alınmasından doğan nakit akışlarını kapsar"
+      "A": "Temettü ödemesi → İşletme faaliyeti",
+      "B": "Satışlardan tahsilat → İşletme faaliyeti",
+      "C": "Maddi duran varlık alımı → Yatırım faaliyeti",
+      "D": "Kredi kullanımı (borçlanma) → Finansman faaliyeti",
+      "E": "Tedarikçilere ödeme → İşletme faaliyeti"
     },
     "answer": "A",
-    "solution": "**İşletme faaliyetlerinden nakit akışları**; işletmenin esas faaliyetlerinden doğan nakit akışlarıdır (satışlardan tahsilat, tedarikçilere/personele ödemeler, vergi ödemeleri vb.).",
+    "solution": "**YANLIŞ olan D'dir:** Ortaklara temettü ödemesi genel uygulamada **finansman faaliyetidir**, işletme faaliyeti değil. Diğer eşleştirmeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-işletme faaliyeti; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - faaliyet sınıflaması"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "mta-nakit-gen-0011",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Yatırım faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
+    "stem": "Aşağıdakilerden hangisi işletme faaliyetlerinden bir nakit ÇIKIŞIdır?",
     "options": {
-      "A": "İşletmenin esas faaliyeti kapsamında müşterilerinden mal ve hizmet karşılığı yaptığı satış tahsilatlarından doğan nakit girişlerini kapsar",
-      "B": "Duran varlıkların (maddi/maddi olmayan) ve uzun vadeli yatırımların (iştirak vb.) alım-satımından doğan nakit akışlarını",
-      "C": "İşletmenin çalışanlarına ödediği ücret, maaş ve sosyal haklardan doğan nakit çıkışlarını kapsar",
-      "D": "İşletmenin ortaklarından sağladığı nakit sermaye artırımından doğan nakit girişlerini kapsar",
-      "E": "İşletmenin bankalardan kullandığı kısa ve uzun vadeli kredilerden doğan nakit girişlerini kapsar"
+      "A": "Duran varlık satışından tahsilat",
+      "B": "Tedarikçilere mal bedeli ödemesi",
+      "C": "Nakit sermaye artırımı sağlanması",
+      "D": "Satışlardan nakit tahsilat yapılması",
+      "E": "Bankadan kredi kullanılması"
     },
     "answer": "B",
-    "solution": "**Yatırım faaliyetlerinden nakit akışları**; duran varlıkların (maddi/maddi olmayan) ve uzun vadeli yatırımların (iştirak, bağlı ortaklık vb.) **alım-satımından** doğan nakit akışlarını kapsar.",
+    "solution": "**Tedarikçilere mal bedeli ödemesi** işletme faaliyetlerinden bir **nakit çıkışıdır**. Diğerleri ya nakit girişidir ya da farklı faaliyet grubundadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-yatırım faaliyeti; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - yatırım faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "mta-nakit-gen-0012",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Finansman faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
+    "stem": "Bir işletmenin makine (maddi duran varlık) satışından elde ettiği nakit, hangi faaliyet grubunda ve hangi yönde gösterilir?",
     "options": {
-      "A": "İşletmenin esas faaliyeti kapsamında müşterilerinden yaptığı mal ve hizmet satış tahsilatlarından doğan nakit girişlerini kapsar",
-      "B": "İşletmenin üretim ve hizmet faaliyetinde uzun süre kullanmak üzere edindiği bina, makine gibi maddi duran varlıkların satın alınmasından doğan nakit çıkışlarını kapsar",
-      "C": "İşletmenin satışa konu ettiği ticari mal ve üretimde kullandığı hammadde stoklarının peşin alımından doğan nakit çıkışlarını kapsar",
-      "D": "İşletmenin özkaynak ve yabancı kaynak yapısındaki değişimlerden doğan nakit akışlarını (sermaye artırımı, borçlanma, borç anapara ödemesi, temettü ödemesi)",
-      "E": "İşletmenin sahip olduğu duran varlıklar için dönem boyunca ayırdığı amortisman giderlerinin toplam tutarından oluşan kalemleri kapsar"
+      "A": "Yatırım faaliyeti - çıkış",
+      "B": "Finansman faaliyeti - çıkış",
+      "C": "Finansman faaliyeti - giriş",
+      "D": "Yatırım faaliyeti - giriş",
+      "E": "İşletme faaliyeti - çıkış"
     },
     "answer": "D",
-    "solution": "**Finansman faaliyetlerinden nakit akışları**; özkaynak ve yabancı kaynak yapısındaki değişimlerden doğar: sermaye artırımı (giriş), borçlanma (giriş), borç anapara ödemesi (çıkış), temettü ödemesi (çıkış).",
+    "solution": "Makine (duran varlık) satışından elde edilen nakit → **yatırım faaliyeti** grubunda bir **nakit girişidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-finansman faaliyeti; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "mta-nakit-gen-0013",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosunda 'nakit benzeri' aşağıdakilerden hangisiyle en iyi tanımlanır?",
+    "stem": "Bir işletmenin dolaylı yöntemle hazırlanacak nakit akış tablosu için bilgileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem net kârı | 300.000 |\n| Amortisman giderleri | 60.000 |\n| Maddi duran varlık satış kârı | 20.000 |\n| Ticari alacaklardaki azalış | 25.000 |\n| Stoklardaki artış | 40.000 |\n| Satıcılardaki azalış | 15.000 |\n\nBuna göre işletme faaliyetlerinden sağlanan nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "İşletmenin uzun vadeli olarak elde tuttuğu ve kâr elde etmeyi amaçladığı iştirak ile bağlı ortaklık paylarıdır",
-      "B": "İşletmenin uzun vadeli olarak elinde bulundurduğu, dönemsel faiz getirisi sağlayan devlet tahvilleri, hazine bonoları ve benzeri sabit getirili kıymetlerdir",
-      "C": "İşletmenin üretim ve hizmet faaliyetinde birden fazla dönem boyunca kullandığı bina, makine gibi maddi duran varlıklardır",
-      "D": "İşletmenin satmak amacıyla stoklarında tuttuğu ve piyasa talebine göre değeri sürekli dalgalanabilen ticari mallardır",
-      "E": "Vadesi kısa (genellikle 3 ay veya daha az), yüksek likiditeye sahip, değer kaybı riski önemsiz ve kolayca nakde çevrilebilen yatırımlar"
+      "A": "350.000",
+      "B": "340.000",
+      "C": "260.000",
+      "D": "330.000",
+      "E": "310.000"
     },
     "answer": "E",
-    "solution": "**Nakit benzerleri**; vadesi kısa (genellikle 3 ay ve altı), yüksek likit, değer kaybı riski önemsiz ve kolayca nakde çevrilebilen yatırımlardır.",
+    "solution": "300.000 + 60.000 (amortisman) − 20.000 (satış kârı; tahsilat yatırım faaliyetlerinde gösterilir) + 25.000 − 40.000 − 15.000 = **310.000 ₺**. Satış kârını düşmemek aynı nakdi iki kez saymak olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-nakit benzeri; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - nakit benzeri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "mta-nakit-gen-0014",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Satışlardan yapılan nakit tahsilat, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Bir işletmenin nakit akış tablosunda işletme faaliyetlerinden nakit akışı pozitif, yatırım ve finansman faaliyetlerinden nakit akışları negatiftir; dönemde nakit mevcudu artmıştır. Bu tablo için aşağıdakilerden hangisi söylenebilir?",
     "options": {
-      "A": "Finansman faaliyetleri (nakit çıkışı)",
-      "B": "Yatırım faaliyetleri (nakit girişi)",
-      "C": "İşletme faaliyetleri (nakit girişi)",
-      "D": "Yatırım faaliyetleri (nakit çıkışı)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "A": "Esas faaliyetlerin nakit açığı sermaye artırımıyla kapatılmıştır.",
+      "B": "İşletmenin dönem net kârı negatiftir.",
+      "C": "Esas faaliyetlerden yaratılan nakit, yatırım harcamalarını ve finansman ödemelerini karşılamaya yetmiştir.",
+      "D": "İşletme duran varlık satarak nakit sağlamıştır.",
+      "E": "İşletme yatırımlarını borçlanarak finanse etmiştir."
     },
     "answer": "C",
-    "solution": "Satışlardan tahsilat, esas faaliyetten doğduğundan **işletme faaliyetleri** grubunda bir **nakit girişidir**.",
+    "solution": "Yatırım ve finansman akışları negatif olduğundan nakit bu faaliyetlerden sağlanmamış, kullanılmıştır. Nakit yine de arttığına göre işletme faaliyetlerinden gelen nakit bu kullanımları aşmıştır. Net kârın işareti tablodan çıkarılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "mta-nakit-gen-0015",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Tedarikçilere mal bedeli için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Bir işletmenin döneme ait kurumlar vergisi gideri 90.000 ₺'dir. Ödenecek vergi hesabının bakiyesi dönem başında 30.000 ₺, dönem sonunda 45.000 ₺'dir. Buna göre dönemde ödenen vergi kaç ₺'dir?",
     "options": {
-      "A": "Finansman faaliyetleri (nakit çıkışı)",
-      "B": "Yatırım faaliyetleri (nakit çıkışı)",
-      "C": "Finansman faaliyetleri (nakit girişi)",
-      "D": "Yatırım faaliyetleri (nakit girişi)",
-      "E": "İşletme faaliyetleri (nakit çıkışı)"
+      "A": "105.000",
+      "B": "90.000",
+      "C": "45.000",
+      "D": "60.000",
+      "E": "75.000"
     },
     "answer": "E",
-    "solution": "Tedarikçilere mal bedeli ödemesi esas faaliyetle ilgilidir → **işletme faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "Ödenen vergi = dönem başı borç + dönem gideri − dönem sonu borç = 30.000 + 90.000 − 45.000 = **75.000 ₺**. Borcun 15.000 ₺ artması giderin bir kısmının henüz ödenmediğini gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "mta-nakit-gen-0016",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Maddi duran varlık satın alınması için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Aşağıdakilerden hangisi nakit akış tablosunda nakit kullanımları (nakit çıkışları) arasında yer almaz?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit çıkışı)",
-      "B": "Finansman faaliyetleri (nakit çıkışı)",
-      "C": "Yatırım faaliyetleri (nakit çıkışı)",
-      "D": "İşletme faaliyetleri (nakit girişi)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "A": "Ortaklara ödenen kâr payı",
+      "B": "Satın alınan makine bedeli",
+      "C": "Dönemin amortisman gideri",
+      "D": "Ödenen kurumlar vergisi",
+      "E": "Personele ödenen ücretler"
     },
     "answer": "C",
-    "solution": "Maddi duran varlık alımı bir yatırımdır → **yatırım faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "Amortisman bir giderdir fakat nakit çıkışı doğurmaz; bu yüzden nakit kullanımı değildir (dolaylı yöntemde kâra eklenir). Diğerleri fiilî nakit ödemeleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - yatırım faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "mta-nakit-gen-0017",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit sermaye artırımından sağlanan nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Nakit akış tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. İşletmenin belirli bir dönemdeki nakit kaynaklarını ve kullanım yerlerini gösterir.\n\nII. Tahakkuk esasına göre düzenlenir.\n\nIII. Dolaylı yöntemde ticari alacaklardaki net azalışlar nakde olumlu etki olarak eklenir.",
     "options": {
-      "A": "İşletme faaliyetleri (nakit girişi)",
-      "B": "Yatırım faaliyetleri (nakit girişi)",
-      "C": "Finansman faaliyetleri (nakit çıkışı)",
-      "D": "Finansman faaliyetleri (nakit girişi)",
-      "E": "Yatırım faaliyetleri (nakit çıkışı)"
+      "A": "Yalnız I",
+      "B": "I ve II",
+      "C": "I, II ve III",
+      "D": "I ve III",
+      "E": "II ve III"
     },
     "answer": "D",
-    "solution": "Sermaye artırımı özkaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**.",
+    "solution": "**I doğrudur.** **II yanlıştır:** nakit akış tablosu nakit esasına göre düzenlenir; tahakkuk esası gelir tablosu ve bilançonundur. **III doğrudur:** alacağın azalması tahsilat demektir. Doğru cevap **I ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "mta-nakit-gen-0018",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit mevcudu 80.000 ₺, dönemin net nakit akışı (+) 120.000 ₺ olan bir işletmede dönem sonu nakit mevcudu kaç ₺'dir?",
+    "stem": "Bir işletme dönemde 300.000 ₺ nakitle makine satın almış, defter değeri 60.000 ₺ olan bir aracı 80.000 ₺ nakit karşılığında satmış ve 50.000 ₺ nakit ödeyerek bir iştirak payı edinmiştir. Buna göre yatırım faaliyetlerinden net nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "40.000",
-      "B": "200.000",
-      "C": "120.000",
-      "D": "80.000",
-      "E": "9.600.000"
+      "A": "−350.000",
+      "B": "−270.000",
+      "C": "−290.000",
+      "D": "−250.000",
+      "E": "−190.000"
     },
     "answer": "B",
-    "solution": "Dönem Sonu Nakit = 80.000 + 120.000 = **200.000 ₺**.",
+    "solution": "Yatırım faaliyetlerinde nakit tutarlar esas alınır: −300.000 + 80.000 − 50.000 = **−270.000 ₺**. Aracın defter değeri (60.000) değil, tahsil edilen tutar (80.000) gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "mta-nakit-gen-0019",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosu ile gelir tablosu arasındaki temel fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem net kârı 90.000 ₺, amortisman giderleri 25.000 ₺'dir. İşletme sermayesi kalemleri şöyledir:\n\n| Kalem | Dönem başı (₺) | Dönem sonu (₺) |\n|---|---|---|\n| Ticari alacaklar | 80.000 | 110.000 |\n| Stoklar | 120.000 | 100.000 |\n| Satıcılar | 60.000 | 75.000 |\n| Ödenecek vergi | 20.000 | 15.000 |\n\nDolaylı yönteme göre işletme faaliyetlerinden nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "Gelir tablosu tahakkuk esaslı (gerçekleşen gelir-gider) hazırlanırken; nakit akım tablosu nakit esaslı (fiilî nakit giriş-çıkış) hazırlanır.",
-      "B": "Gelir tablosu da nakit akım tablosu da tahakkuk esasına göre, gelir ve gider gerçekleştiği anda kaydedilerek düzenlenen tablolardır.",
-      "C": "Gelir tablosu da nakit akım tablosu da nakit esasına göre, yalnızca fiilî tahsilat ve ödeme gerçekleştiği anda düzenlenen tablolardır.",
-      "D": "Nakit akım tablosu tahakkuk esaslı, gelir tablosu ise yalnızca dönem içinde fiilen gerçekleşen nakit giriş ve çıkışlarını esas alan nakit esaslı olarak düzenlenir.",
-      "E": "Gelir tablosu da nakit akım tablosu da belirli bir andaki varlık ve kaynak yapısını gösteren, ikisi de aynı içerikte birer bilançodur."
+      "A": "115.000",
+      "B": "85.000",
+      "C": "75.000",
+      "D": "90.000",
+      "E": "175.000"
     },
     "answer": "A",
-    "solution": "**Gelir tablosu tahakkuk esaslıdır** (gelir-gider gerçekleştiğinde kaydedilir). **Nakit akım tablosu nakit esaslıdır** (yalnızca fiilî nakit giriş-çıkışları dikkate alır). Bu nedenle kâr ile nakit değişimi farklı olabilir.",
+    "solution": "Alacak artışı −30.000; stok azalışı +20.000; satıcı artışı +15.000; ödenecek vergideki azalış −5.000. 90.000 + 25.000 − 30.000 + 20.000 + 15.000 − 5.000 = **115.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit/tahakkuk esası"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "mta-nakit-gen-0020",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Nakit ve nakit benzeri giriş-çıkışlarını gösterir.\n\nII. TMS 7'ye göre işletme, yatırım ve finansman faaliyetleri olarak üç grupta sınıflandırılır.\n\nIII. Dönem Sonu Nakit = Dönem Başı Nakit − Net Nakit Akışı.",
+    "stem": "TMS 7'ye göre ödenen faizlerin nakit akış tablosunda sınıflandırılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "A": "Ödenen faiz her yıl farklı bir faaliyet grubunda gösterilir.",
+      "B": "İşletme faaliyetleri veya finansman faaliyetleri arasında sınıflandırılabilir; seçilen yöntem tutarlı uygulanır.",
+      "C": "Nakit akış tablosunda gösterilmez, dipnotta açıklanır.",
+      "D": "Dönemin net kârından düşüldüğü için ayrıca gösterilmez.",
+      "E": "Yatırım faaliyetleri arasında gösterilir."
     },
     "answer": "B",
-    "solution": "**III yanlıştır:** Dönem Sonu Nakit = Dönem Başı Nakit **+** Net Nakit Akışı'dır; net nakit akışı dönem başı nakde eklenir, çıkarılmaz. **I** (nakit giriş-çıkışını gösterir) ve **II** (TMS 7 üç faaliyet grubu: işletme, yatırım, finansman) doğrudur. Doğru cevap **I ve II**.",
+    "solution": "TMS 7, ödenen faizlerin işletme faaliyetleri (kârın belirlenmesine girdiği için) ya da finansman faaliyetleri (finansman maliyeti olduğu için) arasında sınıflandırılmasına izin verir; seçim dönemden döneme tutarlı olmalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "TMS 7; Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "mta-nakit-gen-0021",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir maddi duran varlığın satışından elde edilen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Nakit akım tablosunun temel amacı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Yatırım faaliyetleri (nakit girişi)",
-      "B": "İşletme faaliyetleri (nakit girişi)",
-      "C": "Finansman faaliyetleri (nakit girişi)",
-      "D": "İşletme faaliyetleri (nakit çıkışı)",
-      "E": "Finansman faaliyetleri (nakit çıkışı)"
+      "A": "İşletmenin nakit yaratma gücünü ve nakdi nerelerden sağlayıp nerelerde kullandığını göstererek nakit yönetimini değerlendirmek",
+      "B": "İşletmenin duran varlıkları için ayrılacak amortisman tutarını seçilen yönteme göre hesaplayıp ilgili dönemlere dağıtmaktır",
+      "C": "İşletmenin sermayedar ortaklarını sahip oldukları pay oranlarıyla birlikte eksiksiz biçimde listeleyip raporda sunmaktır",
+      "D": "İşletmenin gelecek döneme ait reklam, tanıtım ve pazarlama harcamalarının bütçesini kalem kalem planlayıp yönetime sunmaktır",
+      "E": "İşletmenin elde ettiği dönem kârını olduğundan çok daha düşük göstererek hem ortaklardan hem de kamu otoritesinden gizli tutmaya çalışmaktır"
     },
     "answer": "A",
-    "solution": "Maddi duran varlık satışından elde edilen nakit → **yatırım faaliyetleri** grubunda bir **nakit girişidir**.",
+    "solution": "Nakit akım tablosunun amacı; işletmenin **nakit yaratma gücünü** ve nakdi **nereden sağlayıp nerede kullandığını** göstererek nakit (likidite) yönetimini değerlendirmektir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - yatırım faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mta-nakit-gen-0022",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bankadan kullanılan (alınan) kredinin sağladığı nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Nakit akım tablosunda dönem sonu nakit mevcudu nasıl bulunur?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit girişi)",
-      "B": "Yatırım faaliyetleri (nakit girişi)",
-      "C": "Finansman faaliyetleri (nakit çıkışı)",
-      "D": "Finansman faaliyetleri (nakit girişi)",
-      "E": "İşletme faaliyetleri (nakit çıkışı)"
+      "A": "Dönem Başı Nakit − Net Nakit Akışı",
+      "B": "Net Nakit Akışı − Dönem Sonu Borçlar",
+      "C": "Dönem Başı Nakit × Net Nakit Akışı",
+      "D": "Dönem Başı Nakit + Net Nakit Akışı",
+      "E": "Net Nakit Akışı − Dönem Başı Nakit"
     },
     "answer": "D",
-    "solution": "Kredi kullanımı (borçlanma) yabancı kaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**. (Anapara ödemesi ise finansmanda çıkıştır.)",
+    "solution": "**Dönem Sonu Nakit = Dönem Başı Nakit + Net Nakit Akışı** (net akış = toplam giriş − toplam çıkış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "mta-nakit-gen-0023",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Ortaklara ödenen nakit kâr payı (temettü), nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "İşletme faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit çıkışı)",
-      "B": "Finansman faaliyetleri (nakit çıkışı)",
-      "C": "Finansman faaliyetleri (nakit girişi)",
-      "D": "Yatırım faaliyetleri (nakit girişi)",
-      "E": "İşletme faaliyetleri (nakit girişi)"
+      "A": "İşletmenin uzun vadeli iştirak ve bağlı ortaklık paylarının satın alınmasından doğan nakit akışlarını kapsar",
+      "B": "İşletmenin esas (ana) faaliyetlerinden doğan nakit akışlarını (satış tahsilatları, tedarikçi/personel ödemeleri, vergi ödemeleri vb.)",
+      "C": "İşletmenin maddi ve maddi olmayan duran varlıklarının ve uzun vadeli yatırımlarının alım ile satımından doğan nakit akışlarını kapsar",
+      "D": "İşletmenin özkaynak ve yabancı kaynağındaki değişimlerden, sermaye artırımı ve borçlanmadan doğan nakit akışlarını kapsar",
+      "E": "İşletmenin ortaklarına dağıttığı nakit kâr paylarının (temettü) ödemelerinden doğan nakit çıkışlarını kapsar"
     },
     "answer": "B",
-    "solution": "Ortaklara temettü ödemesi özkaynakla ilgili bir nakit çıkışıdır → genel uygulamada **finansman faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "**İşletme faaliyetlerinden nakit akışları**; işletmenin esas faaliyetlerinden doğan nakit akışlarıdır (satışlardan tahsilat, tedarikçilere/personele ödemeler, vergi ödemeleri vb.).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "mta-nakit-gen-0024",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Personele ödenen nakit ücretler, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Nakit akım tablosunda 'nakit benzeri' aşağıdakilerden hangisiyle en iyi tanımlanır?",
     "options": {
-      "A": "Finansman faaliyetleri (nakit çıkışı)",
-      "B": "Yatırım faaliyetleri (nakit çıkışı)",
-      "C": "İşletme faaliyetleri (nakit çıkışı)",
-      "D": "Yatırım faaliyetleri (nakit girişi)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "A": "İşletmenin uzun vadeli olarak elinde bulundurduğu, dönemsel faiz getirisi sağlayan devlet tahvilleri, hazine bonoları ve benzeri sabit getirili kıymetlerdir",
+      "B": "İşletmenin üretim ve hizmet faaliyetinde birden fazla dönem boyunca kullandığı bina, makine gibi maddi duran varlıklardır",
+      "C": "Vadesi kısa (genellikle 3 ay veya daha az), yüksek likiditeye sahip, değer kaybı riski önemsiz ve kolayca nakde çevrilebilen yatırımlar",
+      "D": "İşletmenin satmak amacıyla stoklarında tuttuğu ve piyasa talebine göre değeri sürekli dalgalanabilen ticari mallardır",
+      "E": "İşletmenin uzun vadeli olarak elde tuttuğu ve kâr elde etmeyi amaçladığı iştirak ile bağlı ortaklık paylarıdır"
     },
     "answer": "C",
-    "solution": "Personele ücret ödemesi esas faaliyetle ilgilidir → **işletme faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "**Nakit benzerleri**; vadesi kısa (genellikle 3 ay ve altı), yüksek likit, değer kaybı riski önemsiz ve kolayca nakde çevrilebilen yatırımlardır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - nakit benzeri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,19 +531,19 @@
     "id": "mta-nakit-gen-0025",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir iştirak (uzun vadeli pay) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Maddi duran varlık satın alınması için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit çıkışı)",
+      "A": "Finansman faaliyetleri (nakit girişi)",
       "B": "Yatırım faaliyetleri (nakit çıkışı)",
       "C": "Finansman faaliyetleri (nakit çıkışı)",
       "D": "İşletme faaliyetleri (nakit girişi)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "E": "İşletme faaliyetleri (nakit çıkışı)"
     },
     "answer": "B",
-    "solution": "İştirak (uzun vadeli yatırım) alımı → **yatırım faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "Maddi duran varlık alımı bir yatırımdır → **yatırım faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
       "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
@@ -553,20 +553,20 @@
     "id": "mta-nakit-gen-0026",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Uzun vadeli banka kredisinin anaparasının geri ödenmesi, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Bir maddi duran varlığın satışından elde edilen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "Finansman faaliyetleri (nakit çıkışı)",
-      "B": "Yatırım faaliyetleri (nakit çıkışı)",
+      "A": "Yatırım faaliyetleri (nakit girişi)",
+      "B": "Finansman faaliyetleri (nakit çıkışı)",
       "C": "Finansman faaliyetleri (nakit girişi)",
-      "D": "Yatırım faaliyetleri (nakit girişi)",
+      "D": "İşletme faaliyetleri (nakit çıkışı)",
       "E": "İşletme faaliyetleri (nakit girişi)"
     },
     "answer": "A",
-    "solution": "Kredi anaparasının geri ödenmesi yabancı kaynağı azaltır → **finansman faaliyetleri** grubunda bir **nakit çıkışıdır**.",
+    "solution": "Maddi duran varlık satışından elde edilen nakit → **yatırım faaliyetleri** grubunda bir **nakit girişidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,19 +575,19 @@
     "id": "mta-nakit-gen-0027",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Ödenen kurumlar/gelir vergisi, nakit akım tablosunda genel olarak hangi faaliyet grubunda yer alır?",
+    "stem": "Personele ödenen nakit ücretler, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "Finansman faaliyetleri (nakit çıkışı)",
-      "B": "Yatırım faaliyetleri (nakit çıkışı)",
+      "A": "Yatırım faaliyetleri (nakit girişi)",
+      "B": "Finansman faaliyetleri (nakit çıkışı)",
       "C": "İşletme faaliyetleri (nakit çıkışı)",
-      "D": "Yatırım faaliyetleri (nakit girişi)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "D": "Finansman faaliyetleri (nakit girişi)",
+      "E": "Yatırım faaliyetleri (nakit çıkışı)"
     },
     "answer": "C",
-    "solution": "Ödenen vergiler genel olarak (aksi belirtilmedikçe) **işletme faaliyetleri** grubunda bir **nakit çıkışı** olarak sınıflandırılır.",
+    "solution": "Personele ücret ödemesi esas faaliyetle ilgilidir → **işletme faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
       "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
@@ -597,20 +597,20 @@
     "id": "mta-nakit-gen-0028",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin dönemdeki toplam nakit girişleri 700.000 ₺, toplam nakit çıkışları 450.000 ₺'dir. Net nakit akışı kaç ₺'dir?",
+    "stem": "Ödenen kurumlar/gelir vergisi, nakit akım tablosunda genel olarak hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "1.150.000",
-      "B": "700.000",
-      "C": "−250.000",
-      "D": "250.000",
-      "E": "450.000"
+      "A": "Yatırım faaliyetleri (nakit girişi)",
+      "B": "Yatırım faaliyetleri (nakit çıkışı)",
+      "C": "Finansman faaliyetleri (nakit girişi)",
+      "D": "İşletme faaliyetleri (nakit çıkışı)",
+      "E": "Finansman faaliyetleri (nakit çıkışı)"
     },
     "answer": "D",
-    "solution": "Net Nakit Akışı = 700.000 − 450.000 = **+250.000 ₺**.",
+    "solution": "Ödenen vergiler genel olarak (aksi belirtilmedikçe) **işletme faaliyetleri** grubunda bir **nakit çıkışı** olarak sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "mta-nakit-gen-0029",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit mevcudu 120.000 ₺, dönemin net nakit akışı (+) 60.000 ₺ olan bir işletmede dönem sonu nakit mevcudu kaç ₺'dir?",
+    "stem": "Aşağıdaki nakit akışlarından hangileri İŞLETME faaliyeti kapsamındadır?\n\nI. Satışlardan tahsilat\n\nII. Tedarikçilere ödeme\n\nIII. Duran varlık alımı için ödeme",
     "options": {
-      "A": "40.000",
-      "B": "80.000",
-      "C": "9.600.000",
-      "D": "120.000",
-      "E": "180.000"
+      "A": "II ve III",
+      "B": "Yalnız I",
+      "C": "I, II ve III",
+      "D": "I ve III",
+      "E": "I ve II"
     },
     "answer": "E",
-    "solution": "Dönem Sonu Nakit = 120.000 + 60.000 = **180.000 ₺**.",
+    "solution": "**I (satış tahsilatı)** ve **II (tedarikçi ödemesi)** işletme faaliyetidir. **III (duran varlık alımı)** ise yatırım faaliyetidir. Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "mta-nakit-gen-0030",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "İşletme faaliyetlerinden sağlanan nakit akışının pozitif ve güçlü olması genel olarak neyi gösterir?",
+    "stem": "Bir marka (maddi olmayan duran varlık) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "İşletmenin esas faaliyetinden nakit yaratamadığını, nakdi yalnızca duran varlık satışı yoluyla sağlayabildiğini gösterir",
-      "B": "İşletmenin esas (ana) faaliyetleriyle nakit üretebildiğini; bunun sürdürülebilirlik açısından olumlu olduğunu",
-      "C": "İşletmenin esas faaliyetinin sürekli zarar ettiğini, ayakta kalabilmek için yalnızca borçlanmaya bağımlı olduğunu gösterir",
-      "D": "İşletmenin dönemi mutlaka zararla kapattığını ve bu nedenle ortaklara hiç kâr payı dağıtamayacağını kesin biçimde gösterir",
-      "E": "İşletmenin duran varlıklarına dönem boyunca hiç amortisman ayırmadığını, bu yüzden giderinin düşük çıktığını gösterir"
+      "A": "İşletme faaliyetleri (nakit girişi)",
+      "B": "Yatırım faaliyetleri (nakit çıkışı)",
+      "C": "Finansman faaliyetleri (nakit çıkışı)",
+      "D": "Finansman faaliyetleri (nakit girişi)",
+      "E": "İşletme faaliyetleri (nakit çıkışı)"
     },
     "answer": "B",
-    "solution": "Güçlü ve pozitif **işletme faaliyeti nakit akışı**, işletmenin **esas faaliyetiyle nakit üretebildiğini** gösterir; bu, sürdürülebilirlik ve borç ödeme gücü açısından olumludur.",
+    "solution": "Maddi olmayan duran varlık (marka) alımı bir yatırımdır → **yatırım faaliyetleri** grubunda **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "mta-nakit-gen-0031",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdaki nakit akışlarından hangileri YATIRIM faaliyeti kapsamındadır?\n\nI. Maddi duran varlık alımı için ödeme\n\nII. Ortaklara temettü ödemesi\n\nIII. Mal satışından tahsilat",
+    "stem": "Nakit akım tablosu, dönem başı bilanço ile dönem sonu bilanço arasında hangi kalem açısından bağ kurar?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I, II ve III",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "I ve II"
+      "A": "Nakit ve nakit benzeri mevcudu (dönem başı nakitten dönem sonu nakite geçişi açıklar)",
+      "B": "İşletmenin maddi duran varlıkları (dönem başı tutardan dönem sonu net değere geçişi açıklar)",
+      "C": "İşletmenin toplam aktif büyüklüğü (dönem başı aktiften dönem sonu aktife geçişi açıklar)",
+      "D": "İşletmenin stok mevcudu (dönem başı stoktan dönem sonu stok tutarına geçişi açıklar)",
+      "E": "İşletmenin özkaynak toplamı (dönem başı özkaynaktan dönem sonu özkaynağa geçişi açıklar)"
     },
     "answer": "A",
-    "solution": "**I (maddi duran varlık alımı)** yatırım faaliyetidir. **II (ortaklara temettü ödemesi)** finansman, **III (mal satışından tahsilat)** ise işletme faaliyetidir. Doğru cevap **Yalnız I**.",
+    "solution": "Nakit akım tablosu, **dönem başı nakit ve nakit benzeri** mevcudundan **dönem sonu** mevcuduna geçişi (aradaki tüm nakit hareketlerini) açıklayarak iki bilanço arasında bağ kurar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - yatırım faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mta-nakit-gen-0032",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdaki nakit akışlarından hangileri FİNANSMAN faaliyeti kapsamındadır?\n\nI. Satışlardan tahsilat\n\nII. Nakit sermaye artırımı\n\nIII. Uzun vadeli borç anapara ödemesi",
+    "stem": "Nakit akım analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Duran varlık alımı işletme, kredi kullanımı yatırım, mal satış tahsilatı finansman faaliyetidir.\n\nII. Net nakit akışı = Toplam Nakit Girişleri − Toplam Nakit Çıkışları.\n\nIII. Dönem Sonu Nakit = Dönem Başı Nakit + Net Nakit Akışı.",
     "options": {
       "A": "Yalnız I",
       "B": "II ve III",
-      "C": "I ve II",
-      "D": "I ve III",
+      "C": "I ve III",
+      "D": "I ve II",
       "E": "I, II ve III"
     },
     "answer": "B",
-    "solution": "**II (sermaye artırımı)** ve **III (borç anapara ödemesi)** finansman faaliyetidir. **I (satış tahsilatı)** ise işletme faaliyetidir. Doğru cevap **II ve III**.",
+    "solution": "**I yanlıştır:** TMS 7'ye göre doğru sınıflama şöyledir: **duran varlık alımı yatırım**, **kredi kullanımı finansman**, **mal satış tahsilatı işletme** faaliyetidir; öncüldeki eşleştirme yanlıştır. **II** net nakit akışı = girişler − çıkışlar; **III** dönem sonu nakit = dönem başı nakit + net nakit akışı. Doğru cevap **II ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7; Mali analiz - nakit akım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "mta-nakit-gen-0033",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin dönemdeki toplam nakit girişleri 600.000 ₺, toplam nakit çıkışları 480.000 ₺'dir. Net nakit akışı kaç ₺'dir?",
+    "stem": "Bir işletmenin dönem net kârı 120.000 ₺'dir. Dönemde 30.000 ₺ amortisman, 10.000 ₺ kıdem tazminatı karşılık gideri ve 8.000 ₺ maddi duran varlık satış zararı gelir tablosuna yansımıştır. Ticari borçlar 12.000 ₺ artmış, ticari alacaklar 20.000 ₺ artmıştır. Dolaylı yönteme göre işletme faaliyetlerinden nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "1.080.000",
-      "B": "600.000",
-      "C": "−120.000",
-      "D": "120.000",
-      "E": "480.000"
+      "A": "150.000",
+      "B": "144.000",
+      "C": "124.000",
+      "D": "160.000",
+      "E": "168.000"
     },
     "answer": "D",
-    "solution": "Net Nakit Akışı = 600.000 − 480.000 = **+120.000 ₺**.",
+    "solution": "Nakit çıkışı gerektirmeyen giderler (amortisman 30.000, karşılık 10.000) ve satış zararı (8.000; tahsilat yatırım faaliyetinde) kâra eklenir: 120.000 + 30.000 + 10.000 + 8.000 + 12.000 − 20.000 = **160.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "mta-nakit-gen-0034",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem sonu nakit mevcudu 250.000 ₺ ve dönemin net nakit akışı (+) 90.000 ₺ olan bir işletmede dönem başı nakit mevcudu kaç ₺'dir?",
+    "stem": "Bir işletmenin net satışları 900.000 ₺'dir. Dönemde ticari alacaklar 60.000 ₺ artmıştır. Satışların tamamı ticari alacaklar üzerinden izlendiğine göre doğrudan yönteme göre müşterilerden nakit tahsilat kaç ₺'dir?",
     "options": {
-      "A": "160.000",
-      "B": "340.000",
-      "C": "90.000",
-      "D": "250.000",
-      "E": "70.000"
+      "A": "840.000",
+      "B": "960.000",
+      "C": "900.000",
+      "D": "780.000",
+      "E": "60.000"
     },
     "answer": "A",
-    "solution": "Dönem Başı Nakit = Dönem Sonu − Net Nakit Akışı = 250.000 − 90.000 = **160.000 ₺** (ters işlem).",
+    "solution": "Tahsilat = satışlar − alacak artışı = 900.000 − 60.000 = **840.000 ₺**. Alacağın artması satışların bir kısmının henüz tahsil edilmediğini gösterir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "mta-nakit-gen-0035",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin dönemdeki toplam nakit girişleri 300.000 ₺, toplam nakit çıkışları 380.000 ₺'dir. Net nakit akışı kaç ₺'dir ve ne anlama gelir?",
+    "stem": "Bir işletmenin faiz giderleri 50.000 ₺'dir. Tahakkuk etmiş faiz borçları dönem başında 8.000 ₺, dönem sonunda 12.000 ₺'dir. Buna göre dönemde ödenen faiz kaç ₺'dir?",
     "options": {
-      "A": "680.000 ₺; nakit artmıştır",
-      "B": "80.000 ₺; dönemde nakit artmıştır",
-      "C": "−80.000 ₺; dönemde nakit azalmıştır",
-      "D": "−80.000 ₺; nakit artmıştır",
-      "E": "Net akış sıfırdır"
+      "A": "42.000",
+      "B": "50.000",
+      "C": "46.000",
+      "D": "54.000",
+      "E": "62.000"
     },
     "answer": "C",
-    "solution": "Net Nakit Akışı = 300.000 − 380.000 = **−80.000 ₺**. Çıkışlar girişleri aştığından dönemde **nakit azalmıştır**.",
+    "solution": "Ödenen faiz = 8.000 + 50.000 − 12.000 = **46.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-negatif akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "mta-nakit-gen-0036",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit mevcudu 200.000 ₺, dönemin net nakit akışı (−) 80.000 ₺ olan bir işletmede dönem sonu nakit mevcudu kaç ₺'dir?",
+    "stem": "Aşağıdaki nakit akışlarından hangisi finansman faaliyetleri kapsamında değildir?",
     "options": {
-      "A": "280.000",
-      "B": "160.000",
-      "C": "80.000",
-      "D": "200.000",
-      "E": "120.000"
+      "A": "Bankadan kredi kullanılması",
+      "B": "Nakdi sermaye artırımı",
+      "C": "Ortaklara nakit kâr payı ödenmesi",
+      "D": "Kredinin anapara taksitinin geri ödenmesi",
+      "E": "Maddi duran varlık satışından tahsilat"
     },
     "answer": "E",
-    "solution": "Dönem Sonu Nakit = 200.000 + (−80.000) = **120.000 ₺** (net akış negatif olduğundan nakit azalmıştır).",
+    "solution": "Maddi duran varlık satışı yatırım faaliyetidir. Kredi kullanımı ve geri ödemesi, sermaye artırımı ve kâr payı ödemesi işletmenin kaynak yapısını değiştirdiğinden finansman faaliyetidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu negatif; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "mta-nakit-gen-0037",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin dönem net kârı yüksek olduğu hâlde nakit mevcudu azalmış olabilir. Bu durumun temel nedeni aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin dönem net kârı 100.000 ₺, işletme faaliyetlerinden nakit akışı 40.000 ₺'dir. Dolaylı yöntemde net kâra yapılan düzeltmeler yalnız 20.000 ₺ amortisman ile ticari alacaklardaki değişimden oluşmaktadır. Buna göre ticari alacaklar nasıl değişmiştir?",
     "options": {
-      "A": "İşletmenin dönem kârı her zaman fiilî nakde birebir eşit olduğundan, kâr yüksekken nakdin azalması muhasebe ilkelerine aykırı ve tümüyle imkânsızdır",
-      "B": "İşletmenin dönem içinde hiçbir mal veya hizmet satışı yapmamış olması, buna karşın yüksek kâr açıklamış görünmesi bu durumun tek geçerli açıklamasıdır",
-      "C": "İşletmenin sahip olduğu duran varlıklara dönem boyunca hiç amortisman ayırmamış olması, bu nedenle elde edilen dönem kârının nakde dönüşmesini tümüyle engellemiş olabilir",
-      "D": "Gelir tablosu tahakkuk esaslıdır; kârın bir kısmı henüz tahsil edilmemiş (vadeli satış) veya nakit; büyük yatırım/borç ödemesi yapılmış olabilir. Kâr ≠ nakit.",
-      "E": "İşletmenin dönem içinde ortaklarından nakit sermaye artırımı sağlamış olması, kâr ile nakit mevcudunu birbirinden uzaklaştıran temel neden olabilir"
+      "A": "80.000 ₺ azalmıştır.",
+      "B": "40.000 ₺ artmıştır.",
+      "C": "120.000 ₺ artmıştır.",
+      "D": "80.000 ₺ artmıştır.",
+      "E": "60.000 ₺ artmıştır."
     },
     "answer": "D",
-    "solution": "Gelir tablosu **tahakkuk esaslı** olduğundan kâr ile nakit farklıdır: kârın bir kısmı henüz **tahsil edilmemiş** (vadeli satış) olabilir; ayrıca büyük **yatırım/borç ödemesi** nakdi azaltmış olabilir. Bu yüzden nakit akım tablosu ayrıca incelenir.",
+    "solution": "100.000 + 20.000 − alacak değişimi = 40.000 → alacak düzeltmesi = −80.000 ₺. Kârdan düşülen düzeltme alacakların **80.000 ₺ arttığını** gösterir: satışların bir kısmı tahsil edilmemiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-kâr≠nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit/tahakkuk"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "mta-nakit-gen-0038",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdaki nakit akışlarından hangileri İŞLETME faaliyeti kapsamındadır?\n\nI. Satışlardan tahsilat\n\nII. Tedarikçilere ödeme\n\nIII. Duran varlık alımı için ödeme",
+    "stem": "Bir işletmenin döneme ait bilgileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı nakit | 90.000 |\n| Dönem net kârı | 150.000 |\n| Amortisman | 40.000 |\n| Ticari alacaklardaki artış | 30.000 |\n| Nakitle makine alımı | 200.000 |\n| Alınan banka kredisi | 100.000 |\n| Ödenen kâr payı | 20.000 |\n\nBuna göre dönem sonu nakit mevcudu kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "A": "190.000",
+      "B": "130.000",
+      "C": "150.000",
+      "D": "170.000",
+      "E": "40.000"
     },
     "answer": "B",
-    "solution": "**I (satış tahsilatı)** ve **II (tedarikçi ödemesi)** işletme faaliyetidir. **III (duran varlık alımı)** ise yatırım faaliyetidir. Doğru cevap **I ve II**.",
+    "solution": "İşletme: 150.000 + 40.000 − 30.000 = 160.000 ₺. Yatırım: −200.000 ₺. Finansman: 100.000 − 20.000 = 80.000 ₺. Net artış 40.000 ₺ → dönem sonu 90.000 + 40.000 = **130.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "mta-nakit-gen-0039",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdakilerden hangisi nakit benzeri olarak değerlendirilmeye en uygun kalemdir?",
+    "stem": "Aşağıdaki işlemlerden hangisi nakit akış tablosunda herhangi bir nakit akışı olarak gösterilmez?",
     "options": {
-      "A": "Vadesine 2 ay kalmış, kolayca nakde çevrilebilen bir para piyasası fonu/mevduat",
-      "B": "Faiz getirisi için elde tutulan, vadesine 10 yıl kalmış uzun vadeli bir devlet tahvili",
-      "C": "Üretimde uzun yıllar boyunca kullanılmak üzere edinilen bir makine (maddi duran varlık)",
-      "D": "Kâr amacıyla uzun vadeli elde tutulan bir iştirak (bağlı ortaklık) payı yatırımı",
-      "E": "Satılmak amacıyla depoda bekletilen ve değeri talebe göre değişen ticari mal stoğu"
+      "A": "İç kaynaklardan bedelsiz sermaye artırımı yapılması",
+      "B": "Kısa vadeli banka kredisinin nakit ödenmesi",
+      "C": "Hisse senedi ihraç primi tahsili",
+      "D": "Ortaklara nakit kâr payı ödenmesi",
+      "E": "Nakdi sermaye artırımı yapılması"
     },
     "answer": "A",
-    "solution": "**Vadesi kısa (ör. 2 ay), yüksek likit ve kolayca nakde çevrilebilen** bir para piyasası aracı/mevduat nakit benzeri sayılır. Uzun vadeli/likit olmayan kalemler nakit benzeri değildir.",
+    "solution": "Bedelsiz sermaye artırımı yedeklerin sermayeye aktarılmasıdır; özkaynak içinde yer değiştirmedir ve nakit hareketi doğurmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-nakit benzeri; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - nakit benzeri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "mta-nakit-gen-0040",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdaki nakit akışı-faaliyet eşleştirmelerinden hangisi YANLIŞTIR?",
+    "stem": "Satıcıya olan 50.000 ₺'lik ticari borcun vadesinde ödenmeyip borç senediyle değiştirilmesi nakit akış tablosunda nasıl gösterilir?",
     "options": {
-      "A": "Satışlardan tahsilat → İşletme faaliyeti",
-      "B": "Maddi duran varlık alımı → Yatırım faaliyeti",
-      "C": "Kredi kullanımı (borçlanma) → Finansman faaliyeti",
-      "D": "Temettü ödemesi → İşletme faaliyeti",
-      "E": "Tedarikçilere ödeme → İşletme faaliyeti"
+      "A": "Finansman faaliyetlerinde 50.000 ₺ nakit girişi olarak gösterilir.",
+      "B": "İşletme faaliyetlerinde 50.000 ₺ nakit çıkışı olarak gösterilir.",
+      "C": "Hem giriş hem çıkış olarak brüt gösterilir.",
+      "D": "Nakit hareketi olmadığından nakit akış tablosunda gösterilmez.",
+      "E": "Yatırım faaliyetlerinde 50.000 ₺ nakit çıkışı olarak gösterilir."
     },
     "answer": "D",
-    "solution": "**YANLIŞ olan D'dir:** Ortaklara temettü ödemesi genel uygulamada **finansman faaliyetidir**, işletme faaliyeti değil. Diğer eşleştirmeler doğrudur.",
+    "solution": "Borcun türü değişmiş, nakit el değiştirmemiştir. Nakit akış tablosu yalnız nakit ve nakit benzerlerindeki hareketleri raporlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hangisi YANLIŞ; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - faaliyet sınıflaması"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "mta-nakit-gen-0041",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 850.000 ₺, toplam nakit çıkışları 700.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangisi bir nakit GİRİŞİdir?",
     "options": {
-      "A": "1.550.000",
-      "B": "150.000",
-      "C": "−150.000",
-      "D": "850.000",
-      "E": "700.000"
+      "A": "Personele ücret ödenmesi",
+      "B": "Satışlardan nakit tahsilat yapılması",
+      "C": "Duran varlık satın alınması",
+      "D": "Vergi ödenmesi",
+      "E": "Peşin mal alımı için ödeme yapılması"
     },
     "answer": "B",
-    "solution": "Net Nakit Akışı = 850.000 − 700.000 = **+150.000 ₺**.",
+    "solution": "**Satışlardan nakit tahsilat** işletmeye nakit girişi sağlar. Diğer seçenekler nakit çıkışıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit girişleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "mta-nakit-gen-0042",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit 150.000 ₺, net nakit akışı (+) 60.000 ₺ olan bir işletmede dönem sonu nakit kaç ₺'dir?",
+    "stem": "Net nakit akışı nasıl hesaplanır?",
     "options": {
-      "A": "210.000",
-      "B": "150.000",
-      "C": "90.000",
-      "D": "60.000",
-      "E": "9.000.000"
+      "A": "Toplam Nakit Girişleri − Toplam Nakit Çıkışları",
+      "B": "Dönem Sonu Nakit + Dönem Başı Nakit",
+      "C": "Toplam Nakit Çıkışları − Toplam Nakit Girişleri",
+      "D": "Dönem Başı Nakit − Dönem Sonu Nakit",
+      "E": "Nakit Girişleri × Nakit Çıkışları"
     },
     "answer": "A",
-    "solution": "Dönem Sonu Nakit = 150.000 + 60.000 = **210.000 ₺**.",
+    "solution": "**Net Nakit Akışı = Toplam Nakit Girişleri − Toplam Nakit Çıkışları**. Pozitifse dönemde nakit artmış, negatifse azalmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - net nakit akışı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,19 +927,19 @@
     "id": "mta-nakit-gen-0043",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir marka (maddi olmayan duran varlık) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Yatırım faaliyetlerinden nakit akışları temel olarak neyi kapsar?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit çıkışı)",
-      "B": "Finansman faaliyetleri (nakit çıkışı)",
-      "C": "Finansman faaliyetleri (nakit girişi)",
-      "D": "Yatırım faaliyetleri (nakit çıkışı)",
-      "E": "İşletme faaliyetleri (nakit girişi)"
+      "A": "İşletmenin bankalardan kullandığı kısa ve uzun vadeli kredilerden doğan nakit girişlerini kapsar",
+      "B": "İşletmenin ortaklarından sağladığı nakit sermaye artırımından doğan nakit girişlerini kapsar",
+      "C": "İşletmenin esas faaliyeti kapsamında müşterilerinden mal ve hizmet karşılığı yaptığı satış tahsilatlarından doğan nakit girişlerini kapsar",
+      "D": "Duran varlıkların (maddi/maddi olmayan) ve uzun vadeli yatırımların (iştirak vb.) alım-satımından doğan nakit akışlarını",
+      "E": "İşletmenin çalışanlarına ödediği ücret, maaş ve sosyal haklardan doğan nakit çıkışlarını kapsar"
     },
     "answer": "D",
-    "solution": "Maddi olmayan duran varlık (marka) alımı bir yatırımdır → **yatırım faaliyetleri** grubunda **nakit çıkışıdır**.",
+    "solution": "**Yatırım faaliyetlerinden nakit akışları**; duran varlıkların (maddi/maddi olmayan) ve uzun vadeli yatırımların (iştirak, bağlı ortaklık vb.) **alım-satımından** doğan nakit akışlarını kapsar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
       "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
@@ -949,20 +949,20 @@
     "id": "mta-nakit-gen-0044",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Hisse senedi ihraç ederek (nominalin üzerinde) sağlanan nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
+    "stem": "Satışlardan yapılan nakit tahsilat, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "İşletme faaliyetleri (nakit girişi)",
-      "B": "Yatırım faaliyetleri (nakit girişi)",
+      "A": "Yatırım faaliyetleri (nakit girişi)",
+      "B": "Yatırım faaliyetleri (nakit çıkışı)",
       "C": "Finansman faaliyetleri (nakit çıkışı)",
-      "D": "İşletme faaliyetleri (nakit çıkışı)",
-      "E": "Finansman faaliyetleri (nakit girişi)"
+      "D": "Finansman faaliyetleri (nakit girişi)",
+      "E": "İşletme faaliyetleri (nakit girişi)"
     },
     "answer": "E",
-    "solution": "Hisse senedi ihracı özkaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**.",
+    "solution": "Satışlardan tahsilat, esas faaliyetten doğduğundan **işletme faaliyetleri** grubunda bir **nakit girişidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - finansman faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - işletme faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "mta-nakit-gen-0045",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 400.000 ₺, toplam nakit çıkışları 520.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Nakit sermaye artırımından sağlanan nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "920.000",
-      "B": "120.000",
-      "C": "−120.000",
-      "D": "400.000",
-      "E": "520.000"
+      "A": "İşletme faaliyetleri (nakit girişi)",
+      "B": "Yatırım faaliyetleri (nakit girişi)",
+      "C": "Finansman faaliyetleri (nakit girişi)",
+      "D": "Yatırım faaliyetleri (nakit çıkışı)",
+      "E": "Finansman faaliyetleri (nakit çıkışı)"
     },
     "answer": "C",
-    "solution": "Net Nakit Akışı = 400.000 − 520.000 = **−120.000 ₺** (dönemde nakit azalmıştır).",
+    "solution": "Sermaye artırımı özkaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-negatif akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "mta-nakit-gen-0046",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit 300.000 ₺, net nakit akışı (−) 120.000 ₺ olan bir işletmede dönem sonu nakit kaç ₺'dir?",
+    "stem": "Bankadan kullanılan (alınan) kredinin sağladığı nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "420.000",
-      "B": "300.000",
-      "C": "120.000",
-      "D": "180.000",
-      "E": "240.000"
+      "A": "İşletme faaliyetleri (nakit çıkışı)",
+      "B": "İşletme faaliyetleri (nakit girişi)",
+      "C": "Finansman faaliyetleri (nakit çıkışı)",
+      "D": "Finansman faaliyetleri (nakit girişi)",
+      "E": "Yatırım faaliyetleri (nakit girişi)"
     },
     "answer": "D",
-    "solution": "Dönem Sonu Nakit = 300.000 + (−120.000) = **180.000 ₺**.",
+    "solution": "Kredi kullanımı (borçlanma) yabancı kaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**. (Anapara ödemesi ise finansmanda çıkıştır.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu negatif; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "mta-nakit-gen-0047",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem sonu nakit 400.000 ₺, net nakit akışı (+) 100.000 ₺ olan bir işletmede dönem başı nakit kaç ₺'dir?",
+    "stem": "Bir iştirak (uzun vadeli pay) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "100.000",
-      "B": "500.000",
-      "C": "300.000",
-      "D": "400.000",
-      "E": "40.000"
+      "A": "Finansman faaliyetleri (nakit çıkışı)",
+      "B": "İşletme faaliyetleri (nakit girişi)",
+      "C": "Yatırım faaliyetleri (nakit çıkışı)",
+      "D": "İşletme faaliyetleri (nakit çıkışı)",
+      "E": "Finansman faaliyetleri (nakit girişi)"
     },
     "answer": "C",
-    "solution": "Dönem Başı Nakit = 400.000 − 100.000 = **300.000 ₺** (ters işlem).",
+    "solution": "İştirak (uzun vadeli yatırım) alımı → **yatırım faaliyetleri** grubunda bir **nakit çıkışıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "mta-nakit-gen-0048",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Aşağıdakilerden hangisi işletme faaliyetlerinden bir nakit ÇIKIŞIdır?",
+    "stem": "Aşağıdaki nakit akışlarından hangileri YATIRIM faaliyeti kapsamındadır?\n\nI. Maddi duran varlık alımı için ödeme\n\nII. Ortaklara temettü ödemesi\n\nIII. Mal satışından tahsilat",
     "options": {
-      "A": "Satışlardan nakit tahsilat yapılması",
-      "B": "Tedarikçilere mal bedeli ödemesi",
-      "C": "Duran varlık satışından tahsilat",
-      "D": "Bankadan kredi kullanılması",
-      "E": "Nakit sermaye artırımı sağlanması"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "I ve III"
     },
     "answer": "B",
-    "solution": "**Tedarikçilere mal bedeli ödemesi** işletme faaliyetlerinden bir **nakit çıkışıdır**. Diğerleri ya nakit girişidir ya da farklı faaliyet grubundadır.",
+    "solution": "**I (maddi duran varlık alımı)** yatırım faaliyetidir. **II (ortaklara temettü ödemesi)** finansman, **III (mal satışından tahsilat)** ise işletme faaliyetidir. Doğru cevap **Yalnız I**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - işletme faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - yatırım faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "mta-nakit-gen-0049",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 900.000 ₺, toplam nakit çıkışları 650.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangisi nakit benzeri olarak değerlendirilmeye en uygun kalemdir?",
     "options": {
-      "A": "250.000",
-      "B": "1.550.000",
-      "C": "−250.000",
-      "D": "900.000",
-      "E": "650.000"
+      "A": "Vadesine 2 ay kalmış, kolayca nakde çevrilebilen bir para piyasası fonu/mevduat",
+      "B": "Satılmak amacıyla depoda bekletilen ve değeri talebe göre değişen ticari mal stoğu",
+      "C": "Faiz getirisi için elde tutulan, vadesine 10 yıl kalmış uzun vadeli bir devlet tahvili",
+      "D": "Kâr amacıyla uzun vadeli elde tutulan bir iştirak (bağlı ortaklık) payı yatırımı",
+      "E": "Üretimde uzun yıllar boyunca kullanılmak üzere edinilen bir makine (maddi duran varlık)"
     },
     "answer": "A",
-    "solution": "Net Nakit Akışı = 900.000 − 650.000 = **+250.000 ₺**.",
+    "solution": "**Vadesi kısa (ör. 2 ay), yüksek likit ve kolayca nakde çevrilebilen** bir para piyasası aracı/mevduat nakit benzeri sayılır. Uzun vadeli/likit olmayan kalemler nakit benzeri değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - nakit benzeri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "mta-nakit-gen-0050",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosu, dönem başı bilanço ile dönem sonu bilanço arasında hangi kalem açısından bağ kurar?",
+    "stem": "Hisse senedi ihraç ederek (nominalin üzerinde) sağlanan nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?",
     "options": {
-      "A": "İşletmenin toplam aktif büyüklüğü (dönem başı aktiften dönem sonu aktife geçişi açıklar)",
-      "B": "İşletmenin maddi duran varlıkları (dönem başı tutardan dönem sonu net değere geçişi açıklar)",
-      "C": "İşletmenin özkaynak toplamı (dönem başı özkaynaktan dönem sonu özkaynağa geçişi açıklar)",
-      "D": "İşletmenin stok mevcudu (dönem başı stoktan dönem sonu stok tutarına geçişi açıklar)",
-      "E": "Nakit ve nakit benzeri mevcudu (dönem başı nakitten dönem sonu nakite geçişi açıklar)"
+      "A": "Yatırım faaliyetleri (nakit girişi)",
+      "B": "İşletme faaliyetleri (nakit çıkışı)",
+      "C": "Finansman faaliyetleri (nakit çıkışı)",
+      "D": "İşletme faaliyetleri (nakit girişi)",
+      "E": "Finansman faaliyetleri (nakit girişi)"
     },
     "answer": "E",
-    "solution": "Nakit akım tablosu, **dönem başı nakit ve nakit benzeri** mevcudundan **dönem sonu** mevcuduna geçişi (aradaki tüm nakit hareketlerini) açıklayarak iki bilanço arasında bağ kurar.",
+    "solution": "Hisse senedi ihracı özkaynak yapısını değiştirir → **finansman faaliyetleri** grubunda bir **nakit girişidir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-bağ; sınav stiline kalibre)",
-      "legislationRef": "TMS 7"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1105,9 +1105,9 @@
     "konu": "nakit_akim_analizi",
     "stem": "Aşağıdaki nakit akışlarından hangileri FİNANSMAN faaliyeti kapsamındadır?\n\nI. Ortaklara temettü ödemesi\n\nII. Maddi duran varlık alımı için ödeme\n\nIII. Tahvil ihracından sağlanan nakit",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "Yalnız I",
       "D": "I ve III",
       "E": "I, II ve III"
     },
@@ -1115,7 +1115,7 @@
     "solution": "**I (temettü ödemesi)** ve **III (tahvil ihracı)** finansman faaliyetidir. **II (MDV alımı)** ise yatırım faaliyetidir. Doğru cevap **I ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III sınıflama; sınav stiline kalibre)",
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
       "legislationRef": "TMS 7 - finansman faaliyetleri"
     },
     "validYear": 2026,
@@ -1125,20 +1125,20 @@
     "id": "mta-nakit-gen-0052",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem başı nakit 180.000 ₺, net nakit akışı (+) 70.000 ₺ olan bir işletmede dönem sonu nakit kaç ₺'dir?",
+    "stem": "Bir işletmenin döneme ait bilgileri şöyledir: dönem net kârı 180.000 ₺, amortisman giderleri 50.000 ₺, ticari alacaklardaki artış 35.000 ₺, stoklardaki azalış 15.000 ₺, satıcılardaki artış 10.000 ₺. Dolaylı yönteme göre işletme faaliyetlerinden sağlanan nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "250.000",
-      "B": "180.000",
-      "C": "110.000",
-      "D": "70.000",
-      "E": "12.600.000"
+      "A": "220.000",
+      "B": "240.000",
+      "C": "170.000",
+      "D": "230.000",
+      "E": "120.000"
     },
     "answer": "A",
-    "solution": "Dönem Sonu Nakit = 180.000 + 70.000 = **250.000 ₺**.",
+    "solution": "Net kâr 180.000 + amortisman (nakit çıkışı gerektirmez) 50.000 − alacak artışı 35.000 + stok azalışı 15.000 + satıcı borcu artışı 10.000 = **220.000 ₺**. Varlık artışı nakdi azaltır, borç artışı nakdi artırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dönem sonu nakit; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "mta-nakit-gen-0053",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 500.000 ₺, toplam nakit çıkışları 300.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Bir işletmenin nakit akış tablosunda işletme faaliyetlerinden nakit akışı +400.000 ₺, yatırım faaliyetlerinden −120.000 ₺, finansman faaliyetlerinden −80.000 ₺'dir. Dönem başı nakit ve nakit benzerleri 150.000 ₺ olduğuna göre dönem sonu nakit ve nakit benzerleri kaç ₺'dir?",
     "options": {
-      "A": "850.000",
-      "B": "500.000",
-      "C": "−150.000",
-      "D": "200.000",
-      "E": "350.000"
+      "A": "550.000",
+      "B": "190.000",
+      "C": "750.000",
+      "D": "350.000",
+      "E": "200.000"
     },
     "answer": "D",
-    "solution": "Net Nakit Akışı = 500.000 − 300.000 = **+200.000 ₺**.",
+    "solution": "Net nakit artışı = 400.000 − 120.000 − 80.000 = 200.000 ₺. Dönem sonu = 150.000 + 200.000 = **350.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "mta-nakit-gen-0054",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosu ile fon akım tablosu arasındaki kapsam farkı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin satışların maliyeti 500.000 ₺'dir. Dönemde stoklar 40.000 ₺, satıcılar (ticari borçlar) 25.000 ₺ artmıştır. Doğrudan yönteme göre tedarikçilere yapılan nakit ödeme kaç ₺'dir?",
     "options": {
-      "A": "Nakit akım tablosunun kapsamı fon akım tablosundan çok daha geniştir; çünkü fon kavramı yalnızca nakit ve nakit benzerini içeren oldukça dar bir kavramdır.",
-      "B": "Nakit akım tablosu ile fon akım tablosunun kapsamı birebir aynıdır; çünkü ikisi de yalnızca nakit ve nakit benzeri hareketlerini izleyen ve raporlayan tablolardır.",
-      "C": "Nakit akım tablosu daha dar kapsamlıdır (yalnızca nakit ve nakit benzeri); fon akım tablosunda fon daha geniş kapsamlıdır (tüm kaynaklar / net işletme sermayesi).",
-      "D": "Nakit akım tablosu işletmenin yalnızca stok giriş ve çıkış hareketlerini, fon akım tablosu ise yalnızca duran varlık hareketlerini izleyen dar kapsamlı tablolardır.",
-      "E": "Fon akım tablosu işletmenin yalnızca kasa ve banka nakit hareketlerini, nakit akım tablosu ise tüm kaynaklardaki değişimi izleyen çok daha geniş kapsamlı bir tablodur."
+      "A": "435.000",
+      "B": "485.000",
+      "C": "515.000",
+      "D": "540.000",
+      "E": "565.000"
     },
     "answer": "C",
-    "solution": "**Nakit akım tablosu daha dar** kapsamlıdır (yalnızca nakit ve nakit benzeri). **Fon akım tablosunda** 'fon' daha **geniş** kapsamlıdır (tüm mali kaynaklar / net işletme sermayesi).",
+    "solution": "Alışlar = satışların maliyeti + stok artışı = 540.000 ₺. Ödeme = alışlar − satıcı borcu artışı = 540.000 − 25.000 = **515.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-ayrım; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - fon/nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "mta-nakit-gen-0055",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 720.000 ₺, toplam nakit çıkışları 600.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Aşağıdaki işlemlerden hangisi nakit akış tablosunda yer almaz, dipnotlarda açıklanır?",
     "options": {
-      "A": "1.320.000",
-      "B": "600.000",
-      "C": "−120.000",
-      "D": "720.000",
-      "E": "120.000"
+      "A": "Makinenin peşin bedelle satın alınması",
+      "B": "Bankadan uzun vadeli kredi alınması",
+      "C": "Müşterilerden peşin tahsilat yapılması",
+      "D": "Ortaklara nakit kâr payı ödenmesi",
+      "E": "Bir binanın uzun vadeli borç karşılığında doğrudan satın alınması"
     },
     "answer": "E",
-    "solution": "Net Nakit Akışı = 720.000 − 600.000 = **+120.000 ₺**.",
+    "solution": "Binanın borç karşılığında edinilmesinde nakit girişi ya da çıkışı olmaz; önemli bir yatırım ve finansman işlemi olarak dipnotlarda açıklanır. Diğerlerinin hepsinde nakit hareketi vardır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "mta-nakit-gen-0056",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Dönem sonu nakit 500.000 ₺, net nakit akışı (+) 120.000 ₺ olan bir işletmede dönem başı nakit kaç ₺'dir?",
+    "stem": "Bir işlemle ilgili hem nakit girişi hem nakit çıkışı söz konusu ise bu işlem nakit akış tablosunda genel kural olarak nasıl raporlanır?",
     "options": {
-      "A": "120.000",
-      "B": "620.000",
-      "C": "380.000",
-      "D": "500.000",
-      "E": "480.000"
+      "A": "Çıkış gösterilir, giriş dipnotta açıklanır.",
+      "B": "Girişler ve çıkışlar netleştirilerek tek tutar gösterilir.",
+      "C": "Girişler ve çıkışlar ayrı ayrı, brüt tutarlarıyla gösterilir.",
+      "D": "Giriş gösterilir, çıkış dipnotta açıklanır.",
+      "E": "İşlem nakit akış tablosuna alınmaz."
     },
     "answer": "C",
-    "solution": "Dönem Başı Nakit = 500.000 − 120.000 = **380.000 ₺** (ters işlem).",
+    "solution": "Genel kural brüt raporlamadır: nakit girişleri ve çıkışları ayrı gösterilir. Netleştirme ancak devir hızı yüksek, tutarı büyük ve vadesi kısa kalemler gibi standardın izin verdiği sınırlı durumlarda yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "mta-nakit-gen-0057",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Bir işletmenin makine (maddi duran varlık) satışından elde ettiği nakit, hangi faaliyet grubunda ve hangi yönde gösterilir?",
+    "stem": "Dolaylı yöntemle işletme faaliyetlerinden nakit akışı hesaplanırken aşağıdakilerden hangisi dönem net kârına eklenir?",
     "options": {
-      "A": "İşletme faaliyeti - çıkış",
-      "B": "Finansman faaliyeti - çıkış",
-      "C": "Finansman faaliyeti - giriş",
-      "D": "Yatırım faaliyeti - çıkış",
-      "E": "Yatırım faaliyeti - giriş"
+      "A": "Peşin ödenmiş giderlerdeki artış",
+      "B": "Maddi duran varlık satış kârı",
+      "C": "Satıcılardaki azalış",
+      "D": "Ticari alacaklardaki artış",
+      "E": "Stoklardaki azalış"
     },
     "answer": "E",
-    "solution": "Makine (duran varlık) satışından elde edilen nakit → **yatırım faaliyeti** grubunda bir **nakit girişidir**.",
+    "solution": "Stok azalışı, maliyeti gider yazılan fakat bu dönem nakit ödenmeyen malı gösterir; kâra eklenir. Alacak ve peşin ödenmiş gider artışı, satıcı borcundaki azalış ve satış kârı ise kârdan düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (sınıflama-TMS7; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - yatırım faaliyetleri"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu (dolaylı yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "mta-nakit-gen-0058",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Toplam nakit girişleri 640.000 ₺, toplam nakit çıkışları 480.000 ₺ olan bir işletmede net nakit akışı kaç ₺'dir?",
+    "stem": "Bir işletme dönemde bankadan 200.000 ₺ kredi almış, önceki kredilerin 120.000 ₺'lik anaparasını ödemiş, ortaklara 50.000 ₺ kâr payı dağıtmış ve 100.000 ₺ nakdi sermaye artırımı yapmıştır. Buna göre finansman faaliyetlerinden net nakit akışı kaç ₺'dir?",
     "options": {
-      "A": "1.120.000",
-      "B": "160.000",
-      "C": "−160.000",
-      "D": "640.000",
-      "E": "480.000"
+      "A": "470.000",
+      "B": "130.000",
+      "C": "230.000",
+      "D": "180.000",
+      "E": "30.000"
     },
     "answer": "B",
-    "solution": "Net Nakit Akışı = 640.000 − 480.000 = **+160.000 ₺**.",
+    "solution": "200.000 − 120.000 − 50.000 + 100.000 = **130.000 ₺**. Kâr payı ödemesini unutmak 180.000 ₺ verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-net akış; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - net nakit akışı"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "mta-nakit-gen-0059",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım tablosunun işletme/yatırım/finansman şeklinde üç faaliyet grubunda sunulmasının analize sağladığı fayda aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin nakit akış tablosunda işletme faaliyetlerinden nakit akışı negatif, finansman faaliyetlerinden nakit akışı pozitif ve yüksektir; yatırım faaliyetleri önemsizdir. Bu durum en çok neyi gösterir?",
     "options": {
-      "A": "Üç faaliyet ayrımı analize hiçbir ek fayda sağlamaz; çünkü nakit akımları hangi faaliyet grubuna dahil edilirse edilsin dönemin net nakit akışı aynı çıkacağından yorum değişmez.",
-      "B": "Üç faaliyet ayrımı esas olarak işletmenin elde ettiği dönem kârını olduğundan düşük göstererek hem ortaklardan hem de kamudan gizlemeye hizmet eden biçimsel bir düzenlemedir.",
-      "C": "Üç faaliyet ayrımı yalnızca işletmenin ödemekle yükümlü olduğu kurumlar vergisi matrahını azaltmaya yarayan, analize herhangi bir katkısı bulunmayan biçimsel bir sınıflamadır.",
-      "D": "Nakdin hangi tür faaliyetten (esas faaliyet, yatırım, finansman) sağlandığını veya kullanıldığını ayrı ayrı göstererek daha ayrıntılı ve anlamlı yorum imkânı verir.",
-      "E": "Üç faaliyet ayrımı işletmenin elindeki stok mevcudunu artırarak likiditesini yükseltmesine yarayan, nakit yönetimi ve nakit yaratma gücüyle doğrudan ilgisi olmayan bir uygulamadır."
+      "A": "İşletme nakdini ağırlıkla yatırımlara ayırmıştır.",
+      "B": "İşletme esas faaliyetlerinden yüksek nakit yaratmıştır.",
+      "C": "İşletmenin dönem net kârı yüksektir.",
+      "D": "Esas faaliyetlerden doğan nakit açığı borçlanma ya da sermaye artırımıyla kapatılmıştır.",
+      "E": "İşletme borçlarını esas faaliyet nakdiyle geri ödemiştir."
     },
     "answer": "D",
-    "solution": "Üç faaliyet ayrımı; nakdin **hangi tür faaliyetten** (esas faaliyet, yatırım, finansman) sağlandığını/kullanıldığını ayrı gösterir; böylece işletmenin nakit yaratma ve kullanma yapısı daha **ayrıntılı ve anlamlı** yorumlanır.",
+    "solution": "İşletme faaliyetleri nakit tüketmiş, açık dış kaynakla (finansman) karşılanmıştır. Bu durum uzun sürerse sürdürülebilir değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-fayda; sınav stiline kalibre)",
-      "legislationRef": "TMS 7 - üç faaliyet"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "mta-nakit-gen-0060",
     "ders": "mali_tablolar_analizi",
     "konu": "nakit_akim_analizi",
-    "stem": "Nakit akım analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Duran varlık alımı işletme, kredi kullanımı yatırım, mal satış tahsilatı finansman faaliyetidir.\n\nII. Net nakit akışı = Toplam Nakit Girişleri − Toplam Nakit Çıkışları.\n\nIII. Dönem Sonu Nakit = Dönem Başı Nakit + Net Nakit Akışı.",
+    "stem": "Bir işletmenin döneme ait personel ücret giderleri 240.000 ₺'dir. Personele borçlar hesabının bakiyesi dönem başında 20.000 ₺, dönem sonunda 35.000 ₺'dir. Doğrudan yönteme göre personele yapılan nakit ödeme kaç ₺'dir?",
     "options": {
-      "A": "I, II ve III",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "Yalnız I"
+      "A": "255.000",
+      "B": "205.000",
+      "C": "225.000",
+      "D": "275.000",
+      "E": "240.000"
     },
     "answer": "C",
-    "solution": "**I yanlıştır:** TMS 7'ye göre doğru sınıflama şöyledir: **duran varlık alımı yatırım**, **kredi kullanımı finansman**, **mal satış tahsilatı işletme** faaliyetidir; öncüldeki eşleştirme yanlıştır. **II** net nakit akışı = girişler − çıkışlar; **III** dönem sonu nakit = dönem başı nakit + net nakit akışı. Doğru cevap **II ve III**.",
+    "solution": "Ödeme = dönem başı borç + dönem gideri − dönem sonu borç = 20.000 + 240.000 − 35.000 = **225.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "TMS 7; Mali analiz - nakit akım"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - nakit akış tablosu"
     },
     "validYear": 2026,
     "mockExamId": null

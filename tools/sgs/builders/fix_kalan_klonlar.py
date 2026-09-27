@@ -40,16 +40,6 @@ YAMA = [
      "Faaliyetlerden Fon = 100.000 + 50.000 + 10.000 = **160.000 ₺**. Amortisman ve "
      "karşılık giderleri nakit çıkışı gerektirmediğinden kâra eklenir."),
 
-    # ── nakit_akim: dönem sonu nakit · net nakit akışı
-    ("mali_tablolar_analizi/nakit_akim_analizi.json", "mta-nakit-gen-0029",
-     "200.000", "180.000",
-     [("80.000", "60.000")],
-     "Dönem Sonu Nakit = 120.000 + 60.000 = **180.000 ₺**."),
-    ("mali_tablolar_analizi/nakit_akim_analizi.json", "mta-nakit-gen-0053",
-     "150.000", "200.000",
-     [("350.000", "300.000")],
-     "Net Nakit Akışı = 500.000 − 300.000 = **+200.000 ₺**."),
-
     # ── maliyet_hacim_kar: başabaş = sabit maliyet ÷ birim katkı payı
     ("maliyet_muhasebesi/maliyet_hacim_kar.json", "mmuh-mhk-gen-0027",
      "5.000", "7.000",
