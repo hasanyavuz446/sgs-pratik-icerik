@@ -95,13 +95,6 @@ YAMA = [
      "5.000", "10.000",
      [("24 ₺", "12 ₺")],
      "Başabaş Noktası = 120.000 ÷ 12 = **10.000 birim**."),
-
-    # ── safha_maliyeti: toplam maliyet ÷ eşdeğer birim
-    ("maliyet_muhasebesi/safha_maliyeti.json", "mmuh-safha-gen-0041",
-     "50", "55",
-     [("900.000", "990.000")],
-     "Eşdeğer ürün = 15.000 + (6.000 × %50) = 18.000 birim. Eşdeğer birim maliyet = "
-     "990.000 ÷ 18.000 = **55 ₺/birim**."),
 ]
 
 if __name__ == "__main__":

@@ -42,32 +42,6 @@ PATCHES = {
             "solution": "Trend yüzdesi = 1.000.000 ÷ 800.000 × 100 = **%125**.",
         },
     },
-    "content/maliyet_muhasebesi/safha_maliyeti.json": {
-        "mmuh-safha-gen-0012": {
-            "stem": "Dönem sonu yarı mamulü 4.000 birim ve tamamlanma derecesi %50'dir. Dönem sonu yarı mamulün eşdeğer ürün miktarı kaç birimdir?",
-            "options": {"A": "4.000", "B": "8.000", "C": "2.000", "D": "10.000", "E": "12.000"},
-            "answer": "C",
-            "solution": "Dönem sonu yarı mamulün eşdeğer ürün miktarı = 4.000 × %50 = **2.000 birim**.",
-        },
-        "mmuh-safha-gen-0013": {
-            "stem": "Dönem sonu yarı mamulü 4.000 fiziksel birim, bunun eşdeğer ürün miktarı 1.000 birimdir. Tamamlanma derecesi yüzde kaçtır?",
-            "options": {"A": "%25", "B": "%20", "C": "%40", "D": "%50", "E": "%75"},
-            "answer": "A",
-            "solution": "Tamamlanma derecesi = 1.000 eşdeğer birim ÷ 4.000 fiziksel birim × 100 = **%25**.",
-        },
-        "mmuh-safha-gen-0019": {
-            "stem": "Dönem sonu yarı mamulün eşdeğer ürün miktarı 3.000 birim ve tamamlanma derecesi %50'dir. Dönem sonu yarı mamulün fiziksel miktarı kaç birimdir?",
-            "options": {"A": "1.500", "B": "3.000", "C": "5.000", "D": "10.000", "E": "6.000"},
-            "answer": "E",
-            "solution": "Fiziksel miktar = 3.000 eşdeğer birim ÷ %50 = **6.000 birim**.",
-        },
-        "mmuh-safha-gen-0057": {
-            "stem": "Eşdeğer birim maliyet 40 ₺ ve dönem sonu yarı mamulün eşdeğer ürün miktarı 2.000 birimdir. Dönem sonu yarı mamul maliyeti kaç ₺'dir?",
-            "options": {"A": "720.000", "B": "800.000", "C": "40", "D": "2.000", "E": "80.000"},
-            "answer": "E",
-            "solution": "Dönem sonu yarı mamul maliyeti = 2.000 eşdeğer birim × 40 ₺ = **80.000 ₺**.",
-        },
-    },
     "content/maliyet_muhasebesi/standart_maliyet.json": {
         "mmuh-standart-gen-0017": {
             "stem": "Toplam direkt işçilik gideri sapması 6.200 ₺ aleyhte, standart direkt işçilik maliyeti 40.000 ₺'dir. Fiilî direkt işçilik maliyeti kaç ₺'dir?",
