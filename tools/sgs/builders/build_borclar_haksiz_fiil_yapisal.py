@@ -331,17 +331,17 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        'Kusur sorumluluğunun genel esaslarına ilişkin aşağıdakilerden hangisi yanlıştır?',
+        "Misafir olarak bulunduğu evde dikkatsizlikle B'ye ait antika bir vazoyu kıran A aleyhine B tazminat davası açmıştır. Buna göre aşağıdakilerden hangisi söylenemez?",
         {
-            'A': 'Tazminat irat biçiminde ödenecekse borçlu güvence gösterir',
-            'B': 'Hâkim tazminatın kapsamını ve ödenme biçimini durumun gereğine ve kusurun ağırlığına göre belirler',
-            'C': 'Fiil ile zarar arasında uygun illiyet bağı bulunmalıdır',
-            'D': 'Kasten ahlaka aykırı fiille verilen zarar da giderilir',
-            'E': 'Kusurun ispat yükü, kusursuzluğunu kanıtlaması gereken zarar verene aittir',
+            'A': 'Vazonun değeri tam ispat edilemezse hâkim hakkaniyete göre belirler',
+            'B': "B, A'nın kusurunu ispat etmelidir",
+            'C': 'B, uğradığı zararı ispat etmelidir',
+            'D': "A'nın kusurunun ağırlığı tazminatın kapsamını etkiler",
+            'E': 'A, kusursuz olduğunu ispat edemezse kusurlu sayılır',
         },
         'E',
-        "TBK m. 50/1'e göre **zarar gören, zararını ve zarar verenin kusurunu ispat yükü altındadır**; kusur sorumluluğunda kusur karinesi yoktur. m. 51 tazminatın belirlenmesini ve irat hâlinde güvenceyi, m. 49/2 kasten ahlaka aykırı fiili düzenler.",
-        '6098 sayılı TBK m. 49-51',
+        "TBK m. 50'ye göre **zarar gören, zararını ve zarar verenin kusurunu ispat yükü altındadır**; kusur sorumluluğunda kusur karinesi yoktur. Zararın miktarı tam ispat edilemiyorsa hâkim hakkaniyete göre belirler; m. 51'e göre kusurun ağırlığı tazminatın kapsamını etkiler.",
+        '6098 sayılı TBK m. 50, 51',
     ),
     # düzey 2
     '0023': patch(
