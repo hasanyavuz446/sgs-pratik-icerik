@@ -31,8 +31,9 @@ DERS, KONU = "maliyet_muhasebesi", "maliyet_hacim_kar"
 PREFIX, SEED = "mmuh-mhk-gen", 20260827
 ILK_NO = 61
 
-OUT_APP = "/Users/hasanyavuz/Desktop/projects/smmm_sgs_pratik/assets/content/maliyet_muhasebesi/maliyet_hacim_kar.json"
-OUT_CONTENT = "/Users/hasanyavuz/Desktop/projects/sgs-pratik-icerik/content/maliyet_muhasebesi/maliyet_hacim_kar.json"
+_REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
+OUT_APP = os.path.join(os.path.dirname(_REPO), "smmm_sgs_pratik", "assets", "content", "maliyet_muhasebesi", "maliyet_hacim_kar.json")
+OUT_CONTENT = os.path.join(_REPO, "content", "maliyet_muhasebesi", "maliyet_hacim_kar.json")
 
 STIL_HESAP = "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)"
 STIL_KAVRAM = "SGS Maliyet Muhasebesi (kavram; sınav stiline kalibre)"
