@@ -7,15 +7,15 @@
     "options": {
       "A": "Aynı hammadde/üretim sürecinden aynı anda birden fazla farklı ürünün elde edilmesi",
       "B": "Tek bir mamulün birbirini izleyen üretim safhalarında adım adım işlenerek tamamlanması",
-      "C": "Her müşteri siparişinin diğerlerinden bağımsız, ayrı bir parti hâlinde üretilmesi",
-      "D": "Yarı mamullerin yurt dışından ithal edilip yalnızca montaj hattında birleştirilmesi",
+      "C": "Farklı tedarikçilerden alınan parçaların montaj hattında tek bir mamulde birleştirilmesi",
+      "D": "Her müşteri siparişinin diğerlerinden bağımsız, ayrı bir parti hâlinde üretilmesi",
       "E": "Üretilen mamullerin depoda saklanıp sipariş geldikçe müşteriye sevk edilmesi süreci"
     },
     "answer": "A",
     "solution": "**Birleşik (ortak) üretim**, aynı hammadde/üretim sürecinden **aynı anda birden fazla farklı ürünün** elde edilmesidir (petrol rafinerisi, süt işleme, et işleme vb.).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-birleşik üretim; sınav stiline kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - birleşik üretim"
     },
     "validYear": 2026,
@@ -25,20 +25,20 @@
     "id": "mmuh-birlesik-gen-0002",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi birleşik (ortak) üretime tipik bir örnektir?",
+    "stem": "Birleşik maliyetin 'satış değeri (piyasa değeri) esaslı' dağıtımında pay nasıl belirlenir?",
     "options": {
-      "A": "Müşteriye özel ölçülerde tek parça mobilyanın ayrı sipariş olarak üretilmesi",
-      "B": "Hazır mamullerin yalnızca kutulanıp etiketlenerek ambalajlanması işlemi",
-      "C": "Tek boyda standart vidanın kesintisiz seri üretim hattında imal edilmesi",
-      "D": "Bir binanın projesine göre tek bir yapım işi olarak inşa edilmesi süreci",
-      "E": "Ham petrolün rafine edilerek benzin, mazot, asfalt vb. ürünlere ayrılması"
+      "A": "İşletmeye uygulanan kurumlar vergisi oranıyla doğru orantılı olarak belirlenir",
+      "B": "Her ürünün ürettiği fiziki miktar / tüm ürünlerin toplam fiziki üretim miktarı",
+      "C": "Her ürünün kilogram cinsinden ağırlığı / tüm ürünlerin toplam ağırlığı oranı",
+      "D": "Her ürüne düşen amortisman payı / tüm ürünlere ait toplam amortisman tutarı",
+      "E": "Her ürünün (ayrım noktasındaki) satış değeri / toplam satış değeri"
     },
     "answer": "E",
-    "solution": "Ham petrolün rafine edilip **benzin, mazot, asfalt** gibi birden çok ürüne aynı süreçten ayrılması klasik bir **birleşik üretim** örneğidir. Süt→tereyağı/peynir, hayvan→et/deri de örnektir.",
+    "solution": "Satış değeri esaslı dağıtımda pay = **Her ürünün satış değeri ÷ Toplam satış değeri**; bu oran birleşik maliyetle çarpılır. Değeri yüksek ürün daha çok maliyet payı alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (örnek-birleşik; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik üretim"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "mmuh-birlesik-gen-0003",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi birleşik (ortak) üretim özelliği taşımaz?",
+    "stem": "Birleşik maliyeti 200.000 ₺ olan bir süreçte A 8.000 kg, B 2.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre dağıtım yapıldığında A ürünü 220.000 ₺'ye satılırsa A'nın brüt kârı kaç ₺'dir?",
     "options": {
-      "A": "Süt işlemeden tereyağı ve peynir elde edilmesi",
-      "B": "Hayvan kesiminden et, deri ve iç yağın elde edilmesi",
-      "C": "Ham petrolden benzin ve mazot elde edilmesi",
-      "D": "Tek bir standart üründen oluşan seri montaj hattı üretimi",
-      "E": "Buğdayın işlenmesinden un ve kepek elde edilmesi"
+      "A": "220.000",
+      "B": "160.000",
+      "C": "40.000",
+      "D": "60.000",
+      "E": "20.000"
     },
     "answer": "D",
-    "solution": "Birleşik üretimde tek süreçten **birden fazla** ürün çıkar. **Tek standart ürünlü seri montaj** üretiminde birden çok birleşik ürün yoktur; birleşik üretim değildir.",
+    "solution": "Toplam miktar 10.000 kg. A payı = 200.000 × (8.000 ÷ 10.000) = 160.000 ₺. A brüt kârı = 220.000 − 160.000 = **60.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik üretim"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "mmuh-birlesik-gen-0004",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik üretimde 'ayrım noktası (split-off point)' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Toplam birleşik maliyeti 200.000 ₺ olan bir süreçte A ürününden 3.000 birim (birim fiyat 100 ₺), B ürününden 2.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre A ürününe düşen pay kaç ₺'dir?",
     "options": {
-      "A": "Mamullerin işletme deposundan çıkıp müşteriye teslim edildiği ve satış hasılatının doğduğu an",
-      "B": "Birleşik ürünlerin birbirinden ayrılıp tanımlanabilir hale geldiği üretim aşaması",
-      "C": "Üretimde kullanılacak hammaddenin satın alınıp tedarikçiden işletme deposuna giriş yaptığı aşama",
-      "D": "Dönem sonunda hesaplanan kurumlar vergisinin tahakkuk ettirilip kayda alındığı zaman noktası",
-      "E": "Sabit kıymetler için yıllık amortisman payının ayrılıp gider olarak yazıldığı belirli gün"
+      "A": "80.000",
+      "B": "120.000",
+      "C": "100.000",
+      "D": "60.000",
+      "E": "200.000"
     },
     "answer": "B",
-    "solution": "**Ayrım noktası (split-off point)**, birleşik ürünlerin ortak süreçten çıkıp **birbirinden ayrılarak tanımlanabilir** hale geldiği üretim aşamasıdır. Bu noktaya kadarki maliyet 'birleşik maliyettir'.",
+    "solution": "Satış değerleri: A = 3.000 × 100 = 300.000 ₺; B = 2.000 × 100 = 200.000 ₺; toplam = 500.000 ₺. A payı = 200.000 × (300.000 ÷ 500.000) = **120.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ayrım noktası; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ayrım noktası"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "mmuh-birlesik-gen-0005",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "'Birleşik (ortak) maliyet' aşağıdakilerden hangisini ifade eder?",
+    "stem": "Birleşik maliyeti 90.000 ₺ olan bir süreçte X 3.000 kg, Y 6.000 kg ve Z 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre Y ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Ayrım noktasından sonra her ürüne ayrı ayrı yüklenebilen doğrudan izlenebilir maliyet",
-      "B": "Duran varlıkların yıpranma payı olarak dönem gideri yazılan amortisman tutarı",
-      "C": "Yalnızca ürünün pazarlanması sırasında katlanılan satış ve dağıtım giderleri",
-      "D": "Sadece süreçte ortaya çıkan yan ürüne yüklenen ve izlenen ayrı maliyet tutarı",
-      "E": "Ayrım noktasına kadar oluşan, ürünlere ortak olan ve tek tek izlenemeyen maliyet"
+      "A": "5",
+      "B": "54.000",
+      "C": "6",
+      "D": "15",
+      "E": "9"
     },
     "answer": "E",
-    "solution": "**Birleşik (ortak) maliyet**, ayrım noktasına kadar oluşan, birleşik ürünlere **ortak olan** ve tek tek izlenemeyen maliyettir; bu nedenle dağıtım anahtarlarıyla ürünlere paylaştırılır.",
+    "solution": "Toplam miktar = 3.000 + 6.000 + 1.000 = 10.000 kg. Y payı = 90.000 × (6.000 ÷ 10.000) = 54.000 ₺. Y birim = 54.000 ÷ 6.000 = **9 ₺/kg**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-birleşik maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "mmuh-birlesik-gen-0006",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "'Ayrım sonrası (ilave işleme) maliyeti' aşağıdakilerden hangisidir?",
+    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M ve N ürünleri elde edilir. M NGD 200.000 ₺, N NGD 100.000 ₺'dir. N ürünü 2.000 birim ise N ürününün BİRİM birleşik maliyet payı kaç ₺'dir?",
     "options": {
-      "A": "Ayrım noktasına kadarki ortak üretim maliyeti",
-      "B": "Yalnızca üretimde tüketilen hammaddenin satın alma sırasındaki alım maliyeti",
-      "C": "Ayrım noktasından sonra, her ürüne ayrı ayrı yapılan ilave işleme maliyeti",
-      "D": "Üretimle ilgisi olmayan, işletmenin genel yönetimi için katlanılan yönetim gideri",
-      "E": "Mamullerin satışından elde edilen ve gelir tablosuna yazılan satış hasılatı"
+      "A": "75",
+      "B": "100",
+      "C": "25",
+      "D": "50",
+      "E": "20"
     },
     "answer": "C",
-    "solution": "**Ayrım sonrası (ilave işleme) maliyeti**, ayrım noktasından sonra her ürünün ayrı ayrı işlenmesi için katlanılan, o ürüne **doğrudan izlenebilen** maliyettir.",
+    "solution": "Toplam NGD = 300.000 ₺. N payı = 150.000 × (100.000 ÷ 300.000) = 50.000 ₺. N birim = 50.000 ÷ 2.000 = **25 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ayrım sonrası maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ilave işleme maliyeti"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "mmuh-birlesik-gen-0007",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik üretimde 'ana ürün' ile 'yan ürün' arasındaki temel fark aşağıdakilerden hangisidir?",
+    "stem": "Birleşik maliyet dağıtımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Fiziki ölçü yönteminde pay, ürün miktarı / toplam miktar oranıyla bulunur.\n\nII. Satış değeri yönteminde pay, ürün satış değeri / toplam satış değeri oranıyla bulunur.\n\nIII. Dağıtım yöntemi değiştikçe toplam birleşik maliyet de değişir.",
     "options": {
-      "A": "Yan ürün ana üründen daha yüksek satış değerine sahiptir ve üretimin asıl hedeflenen çıktısıdır",
-      "B": "Ana ürün pazarda satılamaz; yalnızca işletme içinde yeniden üretime verilebilir",
-      "C": "Ana ürün ile yan ürün her zaman birbirine tam olarak eşit satış değerine ve birim maliyete sahiptir",
-      "D": "Ana ürün üretimin temel amacı ve yüksek satış değerli olandır; yan ürün göreli olarak düşük değerli, ikincil üründür",
-      "E": "Yan ürün, işletmenin bilinçli tercihiyle ve önceden planlanmış biçimde, ayrı bir üretim hattında asıl hedef olarak üretilir"
+      "A": "II ve III",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "D",
-    "solution": "**Ana ürün** üretimin temel amacı ve yüksek değerli olandır; **yan ürün** aynı süreçte kaçınılmaz biçimde ortaya çıkan, göreli olarak **düşük değerli** ikincil üründür.",
+    "solution": "**III yanlıştır:** Toplam **birleşik (ortak) maliyet**, ayrım noktasına kadar oluşan sabit bir tutardır; dağıtım yöntemi değişse **değişmez**, yalnızca bu maliyetin ürünlere düşen **payları** değişir. **I** fiziki ölçü payı = miktar/toplam miktar; **II** satış değeri payı = satış değeri/toplam satış değeri. Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ana/yan ürün; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ana/yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "mmuh-birlesik-gen-0008",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi tipik bir 'yan ürün' örneğidir?",
+    "stem": "Birleşik maliyeti 180.000 ₺ olan süreçte A ve B ürünleri elde edilir. A: nihai satış 200.000 ₺, ayrım sonrası ilave işleme 50.000 ₺; B: nihai satış 120.000 ₺, ilave işleme 30.000 ₺. Net gerçekleşebilir değer (NGD) esasına göre A'ya düşen pay kaç ₺'dir?",
     "options": {
-      "A": "Un fabrikasında üretimin asıl hedeflenen çıktısı ve yüksek değerli ürün olan un",
-      "B": "Un üretiminde ortaya çıkan kepek; şeker üretiminde melas; kereste işlemede talaş",
-      "C": "Otomobil montaj hattında üretilen ve işletmenin asıl sattığı mamul olan otomobil",
-      "D": "Süt işlemede yüksek satış değeriyle elde edilen temel ana ürünlerden biri peynir",
-      "E": "Petrol rafinerisinde en çok gelir getiren başlıca ana ürünlerden biri olan benzin"
+      "A": "67.500",
+      "B": "112.500",
+      "C": "90.000",
+      "D": "150.000",
+      "E": "120.000"
     },
     "answer": "B",
-    "solution": "**Kepek** (un üretimi), **melas** (şeker), **talaş** (kereste) gibi düşük değerli, üretim sırasında kaçınılmaz olarak ortaya çıkan ürünler tipik **yan ürünlerdir**.",
+    "solution": "NGD = nihai satış − ilave işleme. A NGD = 200.000 − 50.000 = 150.000 ₺; B NGD = 120.000 − 30.000 = 90.000 ₺; toplam 240.000 ₺. A payı = 180.000 × (150.000 ÷ 240.000) = **112.500 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (örnek-yan ürün; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "mmuh-birlesik-gen-0009",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyetin ürünlere dağıtılmasının temel nedeni aşağıdakilerden hangisidir?",
+    "stem": "Bir ürün ayrım noktasında 100.000 ₺'ye satılabilmektedir. İlave işlemeyle 150.000 ₺'ye satılabilecek; ilave işleme maliyeti 30.000 ₺'dir. İlave işleme yapılmalı mıdır?",
     "options": {
-      "A": "Her ürünün birim maliyetini ve stok değerini belirleyebilmek (stok değerleme, satılan malın maliyeti, kârlılık)",
-      "B": "Ürünlere gereksiz maliyet payları ekleyerek işletmenin toplam üretim maliyetini yapay biçimde yükseltmek ve şişirmek",
-      "C": "Muhasebe kayıtlarını karıştırıp ödenecek verginin matrahını gizleyerek yasa dışı vergi kaçırmayı kolaylaştırmak",
-      "D": "Rakip işletmelerden saklamak amacıyla ürünlerin gerçek satış fiyatını bilinçli olarak belirsiz ve gizli tutmak",
-      "E": "Maliyet paylaştırmanın zorluğu bahane edilerek işletmenin üretim faaliyetini bir süreliğine tümüyle durdurmak"
+      "A": "Evet; ilave gelir (50.000 ₺) ilave maliyetten (30.000 ₺) büyük olduğundan 20.000 ₺ ek kâr sağlar",
+      "B": "Evet; ilave işleme yapılmalıdır, ancak birleşik maliyet de hesaba katıldığında karar net 30.000 ₺ zarar doğurur",
+      "C": "Bu verilerle karar verilemez; ilave işlemenin kârlı olup olmadığı eldeki bilgilerle belirlenemez",
+      "D": "Hayır; ayrım noktasına kadar oluşan birleşik maliyet çok yüksek olduğu için ilave işleme yapılması doğru olmaz",
+      "E": "Hayır; sağlanan ilave gelir katlanılan ilave işleme maliyetinden küçük kaldığı için ilave işleme yapılmamalıdır"
     },
     "answer": "A",
-    "solution": "Birleşik maliyet, her ürünün **birim maliyetini ve stok değerini** belirleyebilmek için dağıtılır (stok değerleme, satılan malın maliyeti, ürün kârlılığı). Bu bir zorunluluktan doğar; dağıtım bir ölçüde keyfidir.",
+    "solution": "İlave gelir = 150.000 − 100.000 = 50.000 ₺. İlave maliyet = 30.000 ₺. İlave gelir > ilave maliyet → **ilave işleme yapılmalı** (50.000 − 30.000 = 20.000 ₺ ek kâr). Birleşik maliyet karara dahil edilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-neden dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ilave işleme kararı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "mmuh-birlesik-gen-0010",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi birleşik maliyet dağıtım yöntemlerinden biridir?",
+    "stem": "Bir birleşik ürün ayrım noktasında 100.000 ₺'ye satılabilmektedir. İlave işlemeden geçirilirse 150.000 ₺'ye satılabilecek, ilave işleme maliyeti 30.000 ₺ olacaktır. Doğru karar ve net etkisi nedir?",
     "options": {
-      "A": "Alacak senetlerine uygulanan reeskont",
-      "B": "Muhasebede ikili kayıt (çift taraflı) esası",
-      "C": "Amortismanda azalan bakiyeler yöntemi",
-      "D": "Dönem sonunda değerleme günü kuru esası",
-      "E": "Fiziki ölçü (miktar/ağırlık) esaslı dağıtım"
+      "A": "Fark etmez; iki seçenek eşittir",
+      "B": "İlave işlenmemeli; birleşik maliyet 100.000 ₺ aşılır",
+      "C": "İlave işlenmemeli; net 30.000 ₺ zarar eder",
+      "D": "İlave işlenmeli; net 50.000 ₺ katkı sağlar",
+      "E": "İlave işlenmeli; net 20.000 ₺ katkı sağlar"
     },
     "answer": "E",
-    "solution": "Birleşik maliyet dağıtımında **fiziki ölçü (miktar/ağırlık)**, **satış değeri (piyasa değeri)** ve **net gerçekleşebilir değer (NGD)** yöntemleri kullanılır. Reeskont/azalan bakiyeler/kur bunlarla ilgili değildir.",
+    "solution": "Karar ayrım sonrası verilere göre verilir (birleşik maliyet batmıştır, dikkate alınmaz). Ek gelir = 150.000 − 100.000 = 50.000 ₺; ek maliyet = 30.000 ₺. Ek gelir > ek maliyet olduğundan ilave işlenmeli; net katkı = 50.000 − 30.000 = **20.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yöntemler; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "mmuh-birlesik-gen-0011",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyetin 'fiziki ölçü (miktar/ağırlık) esaslı' dağıtımında pay nasıl belirlenir?",
+    "stem": "Aşağıdakilerden hangisi birleşik maliyet konusuyla ilgili YANLIŞ bir ifadedir?",
     "options": {
-      "A": "Ayrım noktasındaki satış değeri payı",
-      "B": "Herhangi bir ölçüt gözetmeksizin ürünlere rastgele belirlenen paylar verilir",
-      "C": "Her ürünün elde ettiği kâr oranına göre paylar orantılı biçimde dağıtılır",
-      "D": "Her ürünün fiziki miktarı (kg, litre, adet) / toplam fiziki miktar",
-      "E": "Duran varlıklara uygulanan amortisman oranıyla orantılı olarak paylaştırılır"
+      "A": "İlave işleme kararında birleşik maliyet dikkate alınmaz (batık maliyettir)",
+      "B": "Yan ürünün net değeri ana ürün maliyetinden düşülebilir",
+      "C": "Satış değeri yöntemi değeri yüksek ürüne daha çok maliyet yükler",
+      "D": "Birleşik maliyet dağıtım yöntemi değiştiğinde toplam birleşik maliyet de değişir",
+      "E": "Birleşik maliyet ayrım noktasına kadarki ortak maliyettir"
     },
     "answer": "D",
-    "solution": "Fiziki ölçü esaslı dağıtımda pay = **Her ürünün fiziki miktarı ÷ Toplam fiziki miktar**; bu oran birleşik maliyetle çarpılır.",
+    "solution": "Yanlış olan **C**'dir: dağıtım yöntemi değişse de ürünlere düşen paylar değişebilir ama **toplam birleşik maliyet DEĞİŞMEZ**. Diğer ifadeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (formül-fiziki ölçü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "mmuh-birlesik-gen-0012",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyetin 'satış değeri (piyasa değeri) esaslı' dağıtımında pay nasıl belirlenir?",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte P ve Q ürünleri elde edilir. P: nihai satış 300.000 ₺, ilave işleme 60.000 ₺; Q: nihai satış 200.000 ₺, ilave işleme 40.000 ₺. NGD esasına göre P'ye düşen pay kaç ₺'dir?",
     "options": {
-      "A": "Her ürünün (ayrım noktasındaki) satış değeri / toplam satış değeri",
-      "B": "Her ürünün ürettiği fiziki miktar / tüm ürünlerin toplam fiziki üretim miktarı",
-      "C": "Her ürünün kilogram cinsinden ağırlığı / tüm ürünlerin toplam ağırlığı oranı",
-      "D": "Her ürüne düşen amortisman payı / tüm ürünlere ait toplam amortisman tutarı",
-      "E": "İşletmeye uygulanan kurumlar vergisi oranıyla doğru orantılı olarak belirlenir"
+      "A": "144.000",
+      "B": "180.000",
+      "C": "96.000",
+      "D": "150.000",
+      "E": "120.000"
     },
     "answer": "A",
-    "solution": "Satış değeri esaslı dağıtımda pay = **Her ürünün satış değeri ÷ Toplam satış değeri**; bu oran birleşik maliyetle çarpılır. Değeri yüksek ürün daha çok maliyet payı alır.",
+    "solution": "P NGD = 300.000 − 60.000 = 240.000 ₺; Q NGD = 200.000 − 40.000 = 160.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (240.000 ÷ 400.000) = **144.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (formül-satış değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "mmuh-birlesik-gen-0013",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet dağıtımının 'bir ölçüde keyfi (yaklaşık)' olmasının nedeni aşağıdakilerden hangisidir?",
+    "stem": "Birleşik bir süreçten R ürünü 12.000 litre, S ürünü 4.000 litre ve T ürünü 2.000 litre olarak elde edilmektedir. Ürünlerin yoğunluk ve işçilik özelliklerine göre belirlenen katsayılar sırasıyla 1, 2 ve 4'tür. Dönemin birleşik gideri 504.000 ₺ olduğuna göre katsayı yöntemine göre S ürününün litre başına maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Üretim sürecinde katlanılan hiçbir maliyetin ölçülüp muhasebe kayıtlarına alınamaması ve tümüyle bilinmez olması",
-      "B": "Dönem içinde ürünlerin hiçbirinin satılmaması nedeniyle satış hasılatının hiç oluşmaması ve gelirin doğmaması",
-      "C": "Ayrım noktasına kadarki maliyetler ürünlere ortak olduğundan, hangi ürüne ne kadar ait olduğunun kesin olarak belirlenememesi",
-      "D": "İşletmenin herhangi bir vergiye tabi olmaması ve bu yüzden ürünlere paylaştırılacak bir vergi matrahının hiç hesaplanmasına gerek kalmaması",
-      "E": "Süreç sonunda yalnızca tek bir ürün elde edilmesi ve bu nedenle paylaştırılacak başka hiçbir ürünün bulunmaması"
+      "A": "72",
+      "B": "28",
+      "C": "36",
+      "D": "56",
+      "E": "18"
     },
     "answer": "C",
-    "solution": "Birleşik maliyetler ayrım noktasına kadar ürünlere **ortaktır**; hangi ürüne ne kadar düştüğü kesin belirlenemez. Bu nedenle dağıtım anahtarları (miktar/satış değeri) kullanılır ve sonuç **bir ölçüde yaklaşıktır**.",
+    "solution": "Eşdeğer miktar = 12.000 × 1 + 4.000 × 2 + 2.000 × 4 = 28.000. Eşdeğer birim başına gider = 504.000 ÷ 28.000 = 18 ₺. S'nin bir litresi 2 eşdeğer birim sayıldığından birim maliyeti 18 × 2 = **36 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-keyfilik; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (katsayı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "mmuh-birlesik-gen-0014",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi birleşik maliyet dağıtım yöntemi DEĞİLDİR?",
+    "stem": "Bir işletme A, B ve C mamullerini 324.000 ₺ ortak maliyete katlanarak üretmekte; mamullerin üretimini ayrılma noktasından sonra ek maliyetlerle tamamlamaktadır. Döneme ait veriler şöyledir:\n\n| Mamul | Üretim (birim) | Satış fiyatı (₺) | Ek maliyet (₺) |\n|---|---|---|---|\n| A | 1.000 | 150 | 30.000 |\n| B | 2.000 | 180 | 60.000 |\n| C | 1.500 | 240 | 60.000 |\n\nNet satış hasılatı yöntemine göre A mamulünün ortak maliyetten birim başına aldığı pay kaç ₺'dir?",
     "options": {
-      "A": "Fiziki ölçü (miktar) esaslı yöntem",
-      "B": "Enflasyon düzeltmesi yöntemi",
-      "C": "Net gerçekleşebilir değer (NGD) esaslı yöntem",
-      "D": "Satış değeri (piyasa değeri) esaslı yöntem",
-      "E": "Bunlardan biri değil (hepsi yöntemdir)"
+      "A": "90",
+      "B": "54",
+      "C": "67,50",
+      "D": "72",
+      "E": "84"
     },
     "answer": "B",
-    "solution": "Birleşik maliyet dağıtımında fiziki ölçü, satış değeri ve NGD yöntemleri kullanılır. **Enflasyon düzeltmesi** bir birleşik maliyet dağıtım yöntemi değildir.",
+    "solution": "Net satış hasılatı = satış değeri − ek maliyet: A 150.000 − 30.000 = 120.000; B 300.000; C 300.000; toplam 720.000 ₺. Oran 324.000 ÷ 720.000 = 0,45. A payı 120.000 × 0,45 = 54.000 ₺; birim başına 54.000 ÷ 1.000 = **54 ₺**. Ek maliyet ortak maliyet payına dahil değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (net satış hasılatı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "mmuh-birlesik-gen-0015",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Ayrım noktasından ÖNCE birleşik ürünlerle ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Birleşik gideri 512.000 ₺ olan bir süreçten X ana ürünü 3.000 kg, Y ana ürünü 2.000 kg ve Z yan ürünü 800 kg olarak elde edilmiştir. Z'nin satış fiyatı kg başına 18 ₺ olup satışı için 2.400 ₺ pazarlama gideri yapılacaktır. İşletme yan ürünün net gerçekleşebilir değerini birleşik giderden düşmekte, kalanı ana ürünlere üretim miktarı yöntemiyle dağıtmaktadır. Buna göre Y ürününün birleşik gider payı kaç ₺'dir?",
     "options": {
-      "A": "Ürünler birbirinden ayrı olarak tanımlanıp ayrı ayrı izlenebilir",
-      "B": "Ayrım noktasına gelene kadar üretimde hiçbir gider yapılmadığından, bu ortak aşamanın maliyeti sıfır kabul edilir",
-      "C": "Birleşik ürünlerin her birinin satış fiyatı ayrım noktasından önce kesin olarak bilindiğinden, ortak maliyet bu fiyatlara göre kolayca ve kesin biçimde her ürüne dağıtılabilir",
-      "D": "Birleşik ürünler ayrım noktasından önce birbirinden ayrılıp ayrı ayrı paketlenerek müşterilere satılmış durumdadır",
-      "E": "Ürünler henüz ayrılmadığından tek tek ayrı maliyet izlenemez; maliyet ortaktır"
+      "A": "188.000",
+      "B": "300.000",
+      "C": "199.040",
+      "D": "204.800",
+      "E": "200.000"
     },
     "answer": "E",
-    "solution": "Ayrım noktasından önce ürünler henüz ayrılmadığından **tek tek ayrı maliyet izlenemez**; maliyet ortaktır (birleşik maliyet). Ayrımdan sonra her ürün ayrı izlenebilir.",
+    "solution": "Z'nin net gerçekleşebilir değeri = 800 × 18 − 2.400 = 12.000 ₺. Ana ürünlere kalan = 512.000 − 12.000 = 500.000 ₺. Y payı = 500.000 × 2.000 ÷ 5.000 = **200.000 ₺**. Pazarlama giderini düşmemek 199.040 ₺ verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ayrım öncesi; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ayrım noktası"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yan ürün)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "mmuh-birlesik-gen-0016",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Yan ürünün değeri ana ürüne göre nasıldır?",
+    "stem": "Bir ortak üretim sürecinde dönemin giderleri şöyledir:\n\n| Gider | Tutar (₺) |\n|---|---|\n| Direkt ilk madde ve malzeme | 280.000 |\n| Direkt işçilik | 150.000 |\n| Genel üretim | 170.000 |\n\nSüreçten A ürünü 2.000 kg (150 ₺/kg), B ürünü 3.000 kg (100 ₺/kg) ve C ürünü 1.000 kg (400 ₺/kg) olarak elde edilmiştir. Satış değeri yöntemine göre C ürününün kg başına maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Ana üründen çok daha yüksektir",
-      "B": "Her zaman sıfırdır",
-      "C": "Ana ürünle tam olarak eşittir",
-      "D": "Ana ürüne göre göreli olarak düşüktür",
-      "E": "Belirlenemez"
+      "A": "112",
+      "B": "172",
+      "C": "100",
+      "D": "240",
+      "E": "400"
     },
     "answer": "D",
-    "solution": "**Yan ürünün** satış değeri, ana ürüne göre göreli olarak **düşüktür**; bu nedenle ayrı bir ana ürün gibi değil, genellikle net değeri ana ürün maliyetinden düşülerek veya diğer gelir olarak işlenir.",
+    "solution": "Ortak maliyet = 280.000 + 150.000 + 170.000 = 600.000 ₺. Satış değerleri A 300.000, B 300.000, C 400.000; toplam 1.000.000 ₺. C payı = 600.000 × 0,40 = 240.000 ₺; kg başına **240 ₺**. Ortak maliyet üç unsurun toplamıdır; genel üretim gideri dışarıda bırakılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yan ürün değeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (satış değeri yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "mmuh-birlesik-gen-0017",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik üretimde 'ana ürün' hangi özelliğiyle tanımlanır?",
+    "stem": "150.000 ₺ birleşik maliyetle X ürünü 1.000 kg (satış fiyatı 90 ₺/kg) ve Y ürünü 2.000 kg (satış fiyatı 30 ₺/kg) olarak üretilmiştir. Buna göre aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Üretim miktarı yöntemine göre Y ürününün payı 60.000 ₺'dir.\n\nII. Satış değeri yöntemine göre X ürününün payı 90.000 ₺'dir.\n\nIII. Satış değeri yöntemine göre Y ürününün kg başına maliyeti 50 ₺'dir.",
     "options": {
-      "A": "Düşük değerli ikincil ürün",
-      "B": "Üretimin asıl amacı olan, yüksek satış değerine sahip ürün",
-      "C": "Üretilse de satılamayan, yalnızca depoda stok olarak tutulan atıl ürün",
-      "D": "Yalnızca üretim firesinden ve süreç kayıplarından oluşan, değeri bulunmayan çıktı",
-      "E": "Kendisine hiçbir maliyet payı yüklenmeyen, tümüyle maliyetsiz kabul edilen ürün"
+      "A": "I, II ve III",
+      "B": "Yalnız II",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "Yalnız I"
     },
     "answer": "B",
-    "solution": "**Ana ürün**, birleşik üretimin **asıl amacı** olan, göreli olarak **yüksek satış değerine** sahip üründür.",
+    "solution": "**I yanlıştır:** miktar yönteminde Y payı 150.000 × 2/3 = 100.000 ₺'dir; 60.000 ₺ satış değeri yönteminin sonucudur. **II doğrudur:** satış değerleri X 90.000, Y 60.000; X payı 150.000 × 90/150 = 90.000 ₺. **III yanlıştır:** satış değeri yönteminde Y payı 60.000 ₺, kg başına 30 ₺'dir. Doğru cevap **Yalnız II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ana ürün; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ana ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yöntem karşılaştırması)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "mmuh-birlesik-gen-0018",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik üretim süreci sonunda ortaya çıkan ürün sayısı için ne söylenebilir?",
+    "stem": "300.000 ₺ ortak maliyetle üretilen A, B ve C mamulleri ayrılma noktasından sonra ek maliyetlerle tamamlanmaktadır:\n\n| Mamul | Üretim (birim) | Satış fiyatı (₺) | Ek maliyet (₺) |\n|---|---|---|---|\n| A | 2.000 | 90 | 30.000 |\n| B | 1.600 | 150 | 40.000 |\n| C | 1.000 | 250 | 100.000 |\n\nNet satış hasılatı yöntemine göre B mamulünün birim başına toplam üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Süreçten yalnızca tek ürün çıkar",
-      "B": "Süreç tamamlansa da hiçbir kullanılabilir ürün ortaya çıkmaz",
-      "C": "Aynı süreçten birden fazla (iki veya daha çok) ürün çıkar",
-      "D": "Süreçten sadece düşük değerli yan ürünler çıkar, ana ürün olmaz",
-      "E": "Çıkan ürün sayısı her işletmede değişmez biçimde sabit 10'dur"
+      "A": "125",
+      "B": "25",
+      "C": "100",
+      "D": "150",
+      "E": "75"
     },
     "answer": "C",
-    "solution": "Birleşik üretimin tanımı gereği aynı süreçten **birden fazla** (iki veya daha çok) ürün elde edilir; bunların bir kısmı ana ürün, bir kısmı yan ürün olabilir.",
+    "solution": "Net satış hasılatları: A 150.000, B 200.000, C 150.000; toplam 500.000 ₺. B'nin ortak maliyet payı 300.000 × 0,40 = 120.000 ₺. Toplam üretim maliyeti = ortak pay + ek maliyet = 120.000 + 40.000 = 160.000 ₺; birim başına **100 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ürün sayısı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik üretim"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (net satış hasılatı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "mmuh-birlesik-gen-0019",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdaki üretim–yan ürün eşleştirmelerinden hangisi YANLIŞTIR?",
+    "stem": "180.000 ₺ ortak maliyetle üretilen K ve L ürünleri ayrılma noktasında satılabileceği gibi ilave işlemden sonra da satılabilmektedir:\n\n| Ürün | Ayrılma noktasında satış (₺) | İşlem sonrası satış (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| K | 200.000 | 260.000 | 70.000 |\n| L | 80.000 | 150.000 | 40.000 |\n\nBuna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Petrol rafinerisi → benzin (yan ürün)",
-      "B": "Un üretimi → kepek (yan ürün)",
-      "C": "Kereste işleme → talaş (yan ürün)",
-      "D": "Şeker üretimi → melas (yan ürün)",
-      "E": "Ayçiçeği yağı → küspe (yan ürün)"
+      "A": "Her iki ürün de ilave işlemden geçirilirse toplam kâr 140.000 ₺ olur.",
+      "B": "En kârlı kararla toplam kâr 130.000 ₺ olur.",
+      "C": "L ürününün ilave işlenmesi kârı 30.000 ₺ artırır.",
+      "D": "Karar verilirken 180.000 ₺ ortak maliyet dikkate alınmaz.",
+      "E": "K ürünü ayrılma noktasında satılmalıdır."
     },
     "answer": "A",
-    "solution": "Melas, kepek, talaş, küspe düşük değerli **yan ürünlerdir**. Petrol rafinerisinde **benzin** düşük değerli bir yan ürün değil, önemli bir **ana üründür**; eşleştirme yanlıştır.",
+    "solution": "İkisi de işlenirse kâr = 190.000 + 110.000 − 180.000 = 120.000 ₺'dir; 140.000 ₺ yanlıştır. Diğerleri doğrudur: K'nin ek geliri 60.000 < ek maliyet 70.000 (ayrılma noktasında satılır); L'nin net katkısı 70.000 − 40.000 = 30.000 ₺; en iyi kâr 200.000 + 110.000 − 180.000 = 130.000 ₺; ortak maliyet batık maliyettir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (eşleştirme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (ilave işleme kararı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "mmuh-birlesik-gen-0020",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik ve yan ürün maliyetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Birleşik (ortak) maliyet, ayrım noktasından sonra ortaya çıkan ve her ürüne ayrı ayrı yüklenebilen maliyettir.\n\nII. Ana ürün yüksek, yan ürün düşük değerlidir.\n\nIII. Birleşik maliyet fiziki ölçü veya satış değeri esasına göre dağıtılabilir.",
+    "stem": "Satış değeri yöntemini kullanan bir işletmenin ortak üretim sürecinden elde ettiği ürünler şöyledir:\n\n| Ürün | Üretim (adet) | Satış fiyatı (₺) |\n|---|---|---|\n| A | 2.000 | 75 |\n| B | 1.000 | 150 |\n| C | 500 | 200 |\n\nA ürününe ortak maliyetten 120.000 ₺ pay düştüğüne göre dönemin toplam ortak maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I, II ve III",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "I ve II"
+      "A": "210.000",
+      "B": "360.000",
+      "C": "320.000",
+      "D": "400.000",
+      "E": "280.000"
     },
     "answer": "C",
-    "solution": "**I yanlıştır:** Birleşik (ortak) maliyet, ayrım (split-off) noktasına KADAR oluşan ve ürünlere ortak olan maliyettir; ayrım noktasından SONRA ortaya çıkanlar ise her ürüne ayrı yüklenen ilave (ayrılabilir) maliyettir. **II** ana ürünün yüksek/yan ürünün düşük değerli olması ve **III** birleşik maliyetin fiziki ölçü veya satış değeri esasına göre dağıtılabilmesi doğrudur. Doğru cevap **II ve III**.",
+    "solution": "Satış değerleri A 150.000, B 150.000, C 100.000; toplam 400.000 ₺. A'nın oranı 150.000 ÷ 400.000 = %37,5. Toplam ortak maliyet = 120.000 ÷ 0,375 = **320.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik/yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (satış değeri yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "mmuh-birlesik-gen-0021",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Bir işletme birleşik süreçte A ve B ürünlerini üretmektedir; toplam birleşik maliyet 300.000 ₺'dir. A ürününden 4.000 birim (birim satış fiyatı 150 ₺), B ürününden 2.000 birim (birim satış fiyatı 200 ₺) elde edilmiştir. Satış değeri esasına göre A ürününe düşen birleşik maliyet payı kaç ₺'dir?",
+    "stem": "Birleşik üretimde 'ayrım noktası (split-off point)' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
     "options": {
-      "A": "120.000",
-      "B": "200.000",
-      "C": "180.000",
-      "D": "150.000",
-      "E": "90.000"
+      "A": "Sabit kıymetler için yıllık amortisman payının ayrılıp gider olarak yazıldığı belirli gün",
+      "B": "Üretimde kullanılacak hammaddenin satın alınıp tedarikçiden işletme deposuna giriş yaptığı aşama",
+      "C": "Birleşik ürünlerin birbirinden ayrılıp tanımlanabilir hale geldiği üretim aşaması",
+      "D": "Dönem sonunda hesaplanan kurumlar vergisinin tahakkuk ettirilip kayda alındığı zaman noktası",
+      "E": "Mamullerin işletme deposundan çıkıp müşteriye teslim edildiği ve satış hasılatının doğduğu an"
     },
     "answer": "C",
-    "solution": "Satış değerleri: A = 4.000 × 150 = 600.000 ₺; B = 2.000 × 200 = 400.000 ₺; toplam = 1.000.000 ₺. A payı = Birleşik maliyet × (A satış değeri ÷ toplam) = 300.000 × (600.000 ÷ 1.000.000) = **180.000 ₺**.",
+    "solution": "**Ayrım noktası (split-off point)**, birleşik ürünlerin ortak süreçten çıkıp **birbirinden ayrılarak tanımlanabilir** hale geldiği üretim aşamasıdır. Bu noktaya kadarki maliyet 'birleşik maliyettir'.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ayrım noktası"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mmuh-birlesik-gen-0022",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 200.000 ₺ olan bir süreçte A 8.000 kg, B 2.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre dağıtım yapıldığında A ürünü 220.000 ₺'ye satılırsa A'nın brüt kârı kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangisi birleşik maliyet dağıtım yöntemi DEĞİLDİR?",
     "options": {
-      "A": "160.000",
-      "B": "20.000",
-      "C": "220.000",
-      "D": "60.000",
-      "E": "40.000"
+      "A": "Net gerçekleşebilir değer (NGD) esaslı yöntem",
+      "B": "Fiziki ölçü (miktar) esaslı yöntem",
+      "C": "Bunlardan biri değil (hepsi yöntemdir)",
+      "D": "Enflasyon düzeltmesi yöntemi",
+      "E": "Satış değeri (piyasa değeri) esaslı yöntem"
     },
     "answer": "D",
-    "solution": "Toplam miktar 10.000 kg. A payı = 200.000 × (8.000 ÷ 10.000) = 160.000 ₺. A brüt kârı = 220.000 − 160.000 = **60.000 ₺**.",
+    "solution": "Birleşik maliyet dağıtımında fiziki ölçü, satış değeri ve NGD yöntemleri kullanılır. **Enflasyon düzeltmesi** bir birleşik maliyet dağıtım yöntemi değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,26 +487,466 @@
     "id": "mmuh-birlesik-gen-0023",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte A ve B elde edilir. A NGD 180.000 ₺, B NGD 60.000 ₺'dir. A ürünü 3.000 birim ise A'nın BİRİM birleşik maliyet payı kaç ₺'dir?",
+    "stem": "Birleşik ve yan ürün maliyetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Birleşik (ortak) maliyet, ayrım noktasından sonra ortaya çıkan ve her ürüne ayrı ayrı yüklenebilen maliyettir.\n\nII. Ana ürün yüksek, yan ürün düşük değerlidir.\n\nIII. Birleşik maliyet fiziki ölçü veya satış değeri esasına göre dağıtılabilir.",
     "options": {
-      "A": "80",
-      "B": "45",
-      "C": "60",
-      "D": "90",
-      "E": "20"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "II ve III",
+      "D": "I ve II",
+      "E": "I ve III"
     },
     "answer": "C",
-    "solution": "Toplam NGD = 240.000 ₺. A payı = 240.000 × (180.000 ÷ 240.000) = 180.000 ₺. A birim = 180.000 ÷ 3.000 = **60 ₺**.",
+    "solution": "**I yanlıştır:** Birleşik (ortak) maliyet, ayrım (split-off) noktasına KADAR oluşan ve ürünlere ortak olan maliyettir; ayrım noktasından SONRA ortaya çıkanlar ise her ürüne ayrı yüklenen ilave (ayrılabilir) maliyettir. **II** ana ürünün yüksek/yan ürünün düşük değerli olması ve **III** birleşik maliyetin fiziki ölçü veya satış değeri esasına göre dağıtılabilmesi doğrudur. Doğru cevap **II ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik/yan ürün"
     },
     "validYear": 2026,
     "mockExamId": null
   },
   {
     "id": "mmuh-birlesik-gen-0024",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte A ve B elde edilir. A NGD 180.000 ₺, B NGD 60.000 ₺'dir. A ürünü 3.000 birim ise A'nın BİRİM birleşik maliyet payı kaç ₺'dir?",
+    "options": {
+      "A": "20",
+      "B": "80",
+      "C": "90",
+      "D": "45",
+      "E": "60"
+    },
+    "answer": "E",
+    "solution": "Toplam NGD = 240.000 ₺. A payı = 240.000 × (180.000 ÷ 240.000) = 180.000 ₺. A birim = 180.000 ÷ 3.000 = **60 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0025",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik maliyeti 480.000 ₺ olan bir süreçte P ürününden 5.000 birim (birim fiyat 100 ₺), Q ürününden 3.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre Q ürününün BİRİM maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "90",
+      "B": "36",
+      "C": "100",
+      "D": "60",
+      "E": "48"
+    },
+    "answer": "D",
+    "solution": "Satış değerleri: P = 500.000 ₺, Q = 300.000 ₺, toplam 800.000 ₺. Q payı = 480.000 × (300.000 ÷ 800.000) = 180.000 ₺. Q birim maliyeti = 180.000 ÷ 3.000 = **60 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0026",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik maliyeti 120.000 ₺ olan süreçte A 2.000 kg (satış değeri 300.000 ₺), B 6.000 kg (satış değeri 100.000 ₺) elde edilmiştir. A ürününe düşen pay, satış değeri yöntemine göre fiziki ölçü yöntemine göre olandan kaç ₺ FAZLADIR?",
+    "options": {
+      "A": "120.000",
+      "B": "90.000",
+      "C": "60.000",
+      "D": "30.000",
+      "E": "45.000"
+    },
+    "answer": "C",
+    "solution": "Fiziki ölçü: A payı = 120.000 × (2.000 ÷ 8.000) = 30.000 ₺. Satış değeri: A payı = 120.000 × (300.000 ÷ 400.000) = 90.000 ₺. Fark = 90.000 − 30.000 = **60.000 ₺** (satış değeri yöntemi A'ya daha fazla pay verir).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0027",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M 5.000 kg (satış değeri 200.000 ₺), N 5.000 kg (satış değeri 100.000 ₺) elde edilmiştir. M ürününe düşen pay, satış değeri yöntemi ile fiziki ölçü yöntemi arasında kaç ₺ FARK eder?",
+    "options": {
+      "A": "50.000",
+      "B": "0",
+      "C": "25.000",
+      "D": "100.000",
+      "E": "75.000"
+    },
+    "answer": "C",
+    "solution": "Fiziki ölçü: M payı = 150.000 × (5.000 ÷ 10.000) = 75.000 ₺. Satış değeri: M payı = 150.000 × (200.000 ÷ 300.000) = 100.000 ₺. Fark = 100.000 − 75.000 = **25.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0028",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "'Net gerçekleşebilir değer (NGD)' aşağıdakilerden hangisiyle hesaplanır?",
+    "options": {
+      "A": "Ayrım noktasına kadarki birleşik maliyet − ilave işleme maliyeti",
+      "B": "Ayrım sonrası (ilave işleme) maliyeti − ürünün nihai satış değeri",
+      "C": "Nihai satış değeri + ilave işleme maliyeti",
+      "D": "Nihai satış değeri − ayrım sonrası (ilave işleme) maliyeti",
+      "E": "Ürünün nihai satış değerinin iki katı (satış değeri × 2) tutarı"
+    },
+    "answer": "D",
+    "solution": "**Net gerçekleşebilir değer (NGD) = Nihai satış değeri − Ayrım sonrası (ilave işleme) maliyeti**. Ayrım noktasında satış değeri bilinmeyen ürünler için dağıtım anahtarı olarak kullanılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - net gerçekleşebilir değer"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0029",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Yan ürünün muhasebeleştirilmesinde yaygın bir yaklaşım aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Yan ürün ne stok değeri ne de gelir olarak işletmenin muhasebe kayıtlarına yansıtılmadan geçilir",
+      "B": "Yan ürün, ana ürünle eşit değerli sayılıp bağımsız bir ana ürünmüş gibi ayrı stok hesabında muhasebeleştirilir",
+      "C": "Yan ürünün satış değeri ana ürünün birleşik maliyetine eklenerek ana ürün maliyeti artırılır",
+      "D": "Yan ürüne, ana üründen daha büyük bir birleşik maliyet payı yüklenerek yan ürünün maliyeti bilinçli biçimde kabartılır",
+      "E": "Yan ürünün net gerçekleşebilir değeri, ana ürünün birleşik maliyetinden düşülür (veya diğer gelir olarak kaydedilir)"
+    },
+    "answer": "E",
+    "solution": "Yaygın yaklaşımda yan ürünün **net gerçekleşebilir değeri ana ürünün birleşik maliyetinden düşülür** (böylece ana ürün maliyeti azalır) ya da satıldığında **diğer gelir** olarak kaydedilir. Yan ürüne büyük bir birleşik maliyet payı verilmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0030",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir ürün ayrım noktasında 80.000 ₺'ye satılabilmektedir. İlave işlemeyle 110.000 ₺'ye satılabilecek; ilave işleme maliyeti 40.000 ₺'dir. Doğru karar hangisidir?",
+    "options": {
+      "A": "Bu verilerle karar verilemez; ilave işlemenin kârlı olup olmadığı eldeki bilgilerle hesaplanarak belirlenemez",
+      "B": "İlave işleme yapılmamalı; ilave gelir (30.000 ₺) ilave maliyetten (40.000 ₺) küçük, 10.000 ₺ zarar",
+      "C": "İlave işleme yapılmalı; sağlanan ilave gelirin tamamı ek kâr olarak kalacağından toplam 30.000 ₺ ek kâr elde edilir",
+      "D": "İlave işleme yapılmalı; ilave gelir ile ilave maliyet birbirine eşit olduğundan karar kârı etkilemez",
+      "E": "İlave işleme yapılmalı; sağlanan ilave gelir katlanılan ilave maliyeti aştığından işletmeye 10.000 ₺ ek kâr sağlar"
+    },
+    "answer": "B",
+    "solution": "İlave gelir = 110.000 − 80.000 = 30.000 ₺. İlave maliyet = 40.000 ₺. İlave gelir < ilave maliyet → **ilave işleme yapılmamalı** (yapılırsa 30.000 − 40.000 = 10.000 ₺ zarar). Ayrım noktasında satmak daha kârlıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ilave işleme kararı"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0031",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "A ürününe düşen birleşik maliyet payı 200.000 ₺, A ürününün ayrım sonrası ilave işleme maliyeti 50.000 ₺'dir. A ürününün toplam maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "200.000",
+      "B": "150.000",
+      "C": "250.000",
+      "D": "50.000",
+      "E": "300.000"
+    },
+    "answer": "C",
+    "solution": "A ürününün toplam maliyeti = birleşik maliyet payı + ayrım sonrası maliyet = 200.000 + 50.000 = **250.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ürün toplam maliyeti"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0032",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik ve yan ürün maliyetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. NGD = nihai satış değeri − ayrım sonrası işleme maliyeti.\n\nII. Yan ürünün net değeri, ana ürünün birleşik maliyetine eklenerek ana ürünün maliyeti artırılır.\n\nIII. İlave işleme kararında birleşik maliyet batık maliyet olup dikkate alınmaz.",
+    "options": {
+      "A": "I ve III",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "I, II ve III",
+      "E": "II ve III"
+    },
+    "answer": "A",
+    "solution": "**II yanlıştır:** Yan ürünün net (gerçekleşebilir) değeri ana ürünün birleşik maliyetine EKLENMEZ; tersine ana ürünün maliyetinden DÜŞÜLÜR (ya da diğer gelir yazılır) ve ana ürün maliyetini AZALTIR. **I** NGD = nihai satış değeri − ayrım sonrası işleme maliyeti ve **III** ilave işleme kararında birleşik maliyetin batık (dikkate alınmaz) olması doğrudur. Doğru cevap **I ve III**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik/yan ürün"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0033",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir işletmede M1, M2 ve M3 ortak ürünleri için toplanan birleşik gider 300.000 ₺'dir. Ürünlerin üretim miktarları sırasıyla 4.000, 3.000 ve 2.000 adet; katsayıları 1, 2 ve 3'tür. İşletme birleşik giderin %40'ını ürünlere eşit olarak dağıtmakta, kalanını katsayı yöntemiyle dağıtmaktadır. Buna göre M3 ürününün birleşik gider payı kaç ₺'dir?",
+    "options": {
+      "A": "100.000",
+      "B": "80.000",
+      "C": "67.500",
+      "D": "112.500",
+      "E": "107.500"
+    },
+    "answer": "E",
+    "solution": "Eşit dağıtılan kısım 300.000 × %40 = 120.000 ₺ → ürün başına 40.000 ₺. Kalan 180.000 ₺ katsayıyla: eşdeğer miktar 4.000 + 6.000 + 6.000 = 16.000; M3 payı 180.000 × 6.000 ÷ 16.000 = 67.500 ₺. Toplam 40.000 + 67.500 = **107.500 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (katsayı yöntemi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0034",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "70.000 ₺ ortak maliyete katlanılarak toplam 1.000 kg üretim yapılan bir işletmede fiziksel miktarlara göre dağıtım yapıldığında ortak maliyetin %80'inin satış fiyatı 60 ₺ olan A ürününe, %20'sinin ise satış fiyatı 40 ₺ olan B ürününe ait olduğu hesaplanmıştır. Satış değeri yöntemi benimsenirse A ürününün ortak maliyetten alacağı pay, B ürününün alacağı payın kaç katı olur?",
+    "options": {
+      "A": "6",
+      "B": "12",
+      "C": "3",
+      "D": "4",
+      "E": "1,5"
+    },
+    "answer": "A",
+    "solution": "Fiziksel paylardan miktarlar bulunur: A 800 kg, B 200 kg. Satış değerleri: A 800 × 60 = 48.000 ₺, B 200 × 40 = 8.000 ₺. Paylar satış değeriyle orantılıdır: 48.000 ÷ 8.000 = **6 katı** (A 60.000 ₺, B 10.000 ₺). Fiziksel yöntemde oran 4, yalnız fiyat oranı 1,5'tir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yöntem karşılaştırması)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0035",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir işletme ortak üretim sürecinden A, B ve C ürünlerini elde etmektedir. Ürünler ayrılma noktasında satılabileceği gibi ilave işlemden geçirilerek de satılabilmektedir:\n\n| Ürün | Ayrılma noktasında satış değeri (₺) | İşlem sonrası satış değeri (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| A | 90.000 | 140.000 | 40.000 |\n| B | 120.000 | 150.000 | 35.000 |\n| C | 60.000 | 100.000 | 30.000 |\n\nKârı en yüksek kılmak isteyen işletme hangi ürünleri ilave işlemden geçirmelidir?",
+    "options": {
+      "A": "A, B ve C ürünlerinin üçü",
+      "B": "B ürünü",
+      "C": "A ürünü",
+      "D": "A ve C ürünleri",
+      "E": "B ve C ürünleri"
+    },
+    "answer": "D",
+    "solution": "Karar ek gelir ile ek maliyetin karşılaştırılmasına dayanır (ortak maliyet batık maliyettir): A 140.000 − 90.000 = 50.000 > 40.000 → +10.000 ₺; B 30.000 < 35.000 → −5.000 ₺; C 40.000 > 30.000 → +10.000 ₺. İlave işlenmesi gerekenler **A ve C**; B ayrılma noktasında satılmalıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (ilave işleme kararı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0036",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Katsayı yöntemini kullanan bir işletmede 180.000 ₺ birleşik gider K, L ve M ortak ürünlerine dağıtılmaktadır. K ürününden 3.000 adet (katsayı 2), L ürününden 2.000 adet, M ürününden 1.000 adet (katsayı 4) üretilmiştir. L ürününün birleşik gider payı 67.500 ₺ olarak hesaplandığına göre L ürününün katsayısı kaçtır?",
+    "options": {
+      "A": "1,5",
+      "B": "2",
+      "C": "2,5",
+      "D": "4",
+      "E": "3"
+    },
+    "answer": "E",
+    "solution": "Eşdeğer birim başına gider g, L'nin katsayısı x olsun. K ve M'nin eşdeğeri 6.000 + 4.000 = 10.000; bunlara düşen pay 180.000 − 67.500 = 112.500 ₺ → g = 112.500 ÷ 10.000 = 11,25 ₺. L'nin eşdeğeri 67.500 ÷ 11,25 = 6.000 → x = 6.000 ÷ 2.000 = **3**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (katsayı yöntemi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0037",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir ortak üretim sürecinde direkt ilk madde ve malzeme 200.000 ₺, direkt işçilik 120.000 ₺ ve genel üretim 160.000 ₺ gider oluşmuş; P ürünü 4.000 kg (60 ₺/kg) ve R ürünü 2.000 kg (180 ₺/kg) olarak elde edilmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?",
+    "options": {
+      "A": "Üretim miktarı yöntemine göre P ürününün kg başına maliyeti 120 ₺'dir.",
+      "B": "Üretim miktarı yöntemine göre R ürününün payı 160.000 ₺'dir.",
+      "C": "Satış değeri yöntemine göre P ürününün payı 192.000 ₺'dir.",
+      "D": "Ürünlerin toplam satış değeri 600.000 ₺'dir.",
+      "E": "Satış değeri yöntemine göre R ürününün kg başına maliyeti 144 ₺'dir."
+    },
+    "answer": "A",
+    "solution": "Ortak maliyet 480.000 ₺. Üretim miktarı yönteminde kg başına maliyet 480.000 ÷ 6.000 = 80 ₺'dir; 120 ₺ yanlıştır. Diğerleri doğrudur: satış değerleri 240.000 + 360.000 = 600.000 ₺; P payı 480.000 × 0,40 = 192.000 ₺; R payı 288.000 ₺ → kg başına 144 ₺; miktar yönteminde R 480.000 × 2/6 = 160.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yöntem karşılaştırması)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0038",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "XYZ İşletmesinde A, B ve C mamulleri ortak maliyetlere katlanılarak üretilmektedir. Dönemin ortak maliyeti 480.000 ₺ olup diğer veriler aşağıdaki gibidir:\n\n| Mamul | Üretim miktarı | Satış fiyatı |\n|---|---|---|\n| A | 1.500 kg | 120 ₺/kg |\n| B | 2.500 kg | 90 ₺/kg |\n| C | 1.000 kg | 195 ₺/kg |\n\nSatış değeri yöntemine göre C mamulünün ortak maliyetten aldığı pay kaç ₺'dir?",
+    "options": {
+      "A": "144.000",
+      "B": "160.000",
+      "C": "156.000",
+      "D": "195.000",
+      "E": "96.000"
+    },
+    "answer": "C",
+    "solution": "Satış değerleri: A 180.000, B 225.000, C 195.000; toplam 600.000 ₺. Oran 480.000 ÷ 600.000 = 0,80. C payı = 195.000 × 0,80 = **156.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (satış değeri yöntemi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0039",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir süreçte 630.000 ₺ birleşik maliyetle 6.000 kg A ana ürünü ile net gerçekleşebilir değeri 30.000 ₺ olan Z yan ürünü elde edilmiştir. İşletme yan ürünün net gerçekleşebilir değerini ana ürünün maliyetinden düşmektedir. Buna göre A ürününün kg başına maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "5",
+      "B": "100",
+      "C": "95",
+      "D": "110",
+      "E": "105"
+    },
+    "answer": "B",
+    "solution": "Ana ürüne kalan maliyet = 630.000 − 30.000 = 600.000 ₺; kg başına 600.000 ÷ 6.000 = **100 ₺**. Yan ürün gelirini diğer gelir olarak kaydeden yöntemde ise ana ürün maliyeti 105 ₺/kg kalırdı.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yan ürün)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0040",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "216.000 ₺ ortak maliyetle A ve B ürünleri üretilmiştir. A ayrılma noktasında birim başına 50 ₺'den satılmakta (3.000 birim); B ise 30.000 ₺ ek maliyetle tamamlanıp birim başına 120 ₺'den satılmaktadır (2.000 birim). İşletme net satış hasılatı yöntemini kullanmaktadır. Dönem sonunda B ürününden 400 birim satılmadan kaldığına göre bu stokun maliyeti kaç ₺'dir?",
+    "options": {
+      "A": "37.200",
+      "B": "31.200",
+      "C": "25.200",
+      "D": "48.000",
+      "E": "6.000"
+    },
+    "answer": "B",
+    "solution": "Net satış hasılatları: A 150.000, B 240.000 − 30.000 = 210.000; toplam 360.000 ₺. B'nin ortak maliyet payı 216.000 × 210.000 ÷ 360.000 = 126.000 ₺; ek maliyetle birlikte 156.000 ₺ → birim 78 ₺. 400 birimlik stok = 400 × 78 = **31.200 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (net satış hasılatı yöntemi)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0041",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Birleşik üretimde 'ana ürün' ile 'yan ürün' arasındaki temel fark aşağıdakilerden hangisidir?",
+    "options": {
+      "A": "Ana ürün üretimin temel amacı ve yüksek satış değerli olandır; yan ürün göreli olarak düşük değerli, ikincil üründür",
+      "B": "Ana ürün pazarda satılamaz; işletme içinde yeniden üretime girdi olarak verilir",
+      "C": "Ana ürün ile yan ürün eşit satış değerine sahiptir; aralarındaki fark üretim sırasından doğar",
+      "D": "Yan ürün ana üründen daha yüksek satış değerine sahiptir ve üretimin asıl hedeflenen çıktısıdır",
+      "E": "Yan ürün, işletmenin bilinçli tercihiyle ve önceden planlanmış biçimde, ayrı bir üretim hattında asıl hedef olarak üretilir"
+    },
+    "answer": "A",
+    "solution": "**Ana ürün** üretimin temel amacı ve yüksek değerli olandır; **yan ürün** aynı süreçte kaçınılmaz biçimde ortaya çıkan, göreli olarak **düşük değerli** ikincil üründür.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ana/yan ürün"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0042",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Aşağıdaki üretim–yan ürün eşleştirmelerinden hangisi YANLIŞTIR?",
+    "options": {
+      "A": "Şeker üretimi → melas (yan ürün)",
+      "B": "Kereste işleme → talaş (yan ürün)",
+      "C": "Ayçiçeği yağı → küspe (yan ürün)",
+      "D": "Petrol rafinerisi → benzin (yan ürün)",
+      "E": "Un üretimi → kepek (yan ürün)"
+    },
+    "answer": "D",
+    "solution": "Melas, kepek, talaş, küspe düşük değerli **yan ürünlerdir**. Petrol rafinerisinde **benzin** düşük değerli bir yan ürün değil, önemli bir **ana üründür**; eşleştirme yanlıştır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yan ürün"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0043",
+    "ders": "maliyet_muhasebesi",
+    "konu": "birlesik_maliyet",
+    "stem": "Bir işletme birleşik süreçte A ve B ürünlerini üretmektedir; toplam birleşik maliyet 300.000 ₺'dir. A ürününden 4.000 birim (birim satış fiyatı 150 ₺), B ürününden 2.000 birim (birim satış fiyatı 200 ₺) elde edilmiştir. Satış değeri esasına göre A ürününe düşen birleşik maliyet payı kaç ₺'dir?",
+    "options": {
+      "A": "120.000",
+      "B": "90.000",
+      "C": "150.000",
+      "D": "200.000",
+      "E": "180.000"
+    },
+    "answer": "E",
+    "solution": "Satış değerleri: A = 4.000 × 150 = 600.000 ₺; B = 2.000 × 200 = 400.000 ₺; toplam = 1.000.000 ₺. A payı = Birleşik maliyet × (A satış değeri ÷ toplam) = 300.000 × (600.000 ÷ 1.000.000) = **180.000 ₺**.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+    },
+    "validYear": 2026,
+    "mockExamId": null
+  },
+  {
+    "id": "mmuh-birlesik-gen-0044",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
     "stem": "Fiziki ölçü esaslı dağıtımda A ürününün birim maliyeti 10 ₺, A ürünü miktarı 6.000 kg'dır. Süreçte yalnızca A (6.000 kg) ve B (6.000 kg) üretilmiş ve toplam miktar 12.000 kg'dır. Toplam birleşik maliyet kaç ₺'dir?",
@@ -521,447 +961,7 @@
     "solution": "A payı = birim maliyet × miktar = 10 × 6.000 = 60.000 ₺. Fiziki dağıtımda A payı = J × (6.000 ÷ 12.000) = J × 0,5 = 60.000 → toplam birleşik maliyet J = 60.000 ÷ 0,5 = **120.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0025",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Fiziki ölçü esaslı dağıtım yöntemi hangi durumda daha uygundur?",
-    "options": {
-      "A": "Ürünlerin ayrım noktasındaki birim satış değerleri birbirinden çok büyük ölçüde farklılaştığı durumlarda tercih edilir",
-      "B": "Süreç sonunda yalnızca düşük değerli bir yan ürün elde edilip hiç ana ürün ortaya çıkmadığı durumlarda uygundur",
-      "C": "Ürünlerin hiçbirinin fiziki miktarı kilogram veya litre olarak güvenilir biçimde ölçülemediği durumlarda kullanılır",
-      "D": "Ürünler benzer nitelikte ve fiziki ölçüleri (kg, litre) anlamlı biçimde karşılaştırılabilir olduğunda",
-      "E": "Her ürüne, elde ettiği kâr marjıyla orantılı biçimde farklı maliyet payları yüklenmesi amaçlandığında uygundur"
-    },
-    "answer": "D",
-    "solution": "**Fiziki ölçü** yöntemi, ürünler benzer nitelikte ve fiziki ölçüleri (kg/litre) anlamlı biçimde karşılaştırılabilir olduğunda uygundur. Değerler çok farklıysa satış değeri yöntemi daha adildir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yöntem seçimi; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - fiziki ölçü dağıtımı"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0026",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Toplam birleşik maliyeti 200.000 ₺ olan bir süreçte A ürününden 3.000 birim (birim fiyat 100 ₺), B ürününden 2.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre A ürününe düşen pay kaç ₺'dir?",
-    "options": {
-      "A": "80.000",
-      "B": "100.000",
-      "C": "120.000",
-      "D": "60.000",
-      "E": "200.000"
-    },
-    "answer": "C",
-    "solution": "Satış değerleri: A = 3.000 × 100 = 300.000 ₺; B = 2.000 × 100 = 200.000 ₺; toplam = 500.000 ₺. A payı = 200.000 × (300.000 ÷ 500.000) = **120.000 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0027",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 480.000 ₺ olan bir süreçte P ürününden 5.000 birim (birim fiyat 100 ₺), Q ürününden 3.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre Q ürününün BİRİM maliyeti kaç ₺'dir?",
-    "options": {
-      "A": "36",
-      "B": "100",
-      "C": "60",
-      "D": "48",
-      "E": "90"
-    },
-    "answer": "C",
-    "solution": "Satış değerleri: P = 500.000 ₺, Q = 300.000 ₺, toplam 800.000 ₺. Q payı = 480.000 × (300.000 ÷ 800.000) = 180.000 ₺. Q birim maliyeti = 180.000 ÷ 3.000 = **60 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0028",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Ana ürünün toplam birleşik maliyeti 200.000 ₺'dir; süreçte ortaya çıkan yan ürünün net gerçekleşebilir değeri 30.000 ₺'dir. Yan ürün değeri birleşik maliyetten düşülüyorsa ve ana üründen 8.500 birim elde edilmişse, ana ürünün BİRİM maliyeti kaç ₺'dir?",
-    "options": {
-      "A": "23,53",
-      "B": "25",
-      "C": "30",
-      "D": "20",
-      "E": "17,65"
-    },
-    "answer": "D",
-    "solution": "Yan ürün NGD'si ana ürün maliyetinden düşülür: net ana maliyet = 200.000 − 30.000 = 170.000 ₺. Ana ürün birim maliyeti = 170.000 ÷ 8.500 = **20 ₺**. (Yan ürünü düşmemek 23,53 verir.)",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0029",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Satış değeri esaslı dağıtım yöntemi hangi mantığa dayanır?",
-    "options": {
-      "A": "Ürünlerin satış değeri hiç gözetilmeksizin toplam birleşik maliyet her ürüne birbirine eşit tutarlarla bölüştürülür",
-      "B": "Maliyet ürünlere hiç dağıtılmaz; toplam tutar doğrudan dönem gideri sayılıp sonuç hesaplarına aktarılarak kapatılır",
-      "C": "En düşük satış değerli ürüne en yüksek maliyet payı yüklenir; değerle ters orantılı bir dağıtım anahtarı kurulur",
-      "D": "Ürünlerin satış değeri hiç dikkate alınmadan maliyet yalnızca üretilen fiziki miktar oranına göre paylaştırılır",
-      "E": "Maliyet, ürünün getirdiği satış değeriyle orantılı dağıtılır; yüksek değerli ürün daha çok maliyet payı alır"
-    },
-    "answer": "E",
-    "solution": "Satış değeri yöntemi, maliyetin ürünün **getirdiği satış değeriyle orantılı** dağıtılması mantığına dayanır; değeri yüksek ürün maliyeti karşılama gücü daha yüksek olduğundan daha çok pay alır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-satış değeri mantığı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0030",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 90.000 ₺ olan bir süreçte X 3.000 kg, Y 6.000 kg ve Z 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre Y ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
-    "options": {
-      "A": "6",
-      "B": "9",
-      "C": "54.000",
-      "D": "15",
-      "E": "5"
-    },
-    "answer": "B",
-    "solution": "Toplam miktar = 3.000 + 6.000 + 1.000 = 10.000 kg. Y payı = 90.000 × (6.000 ÷ 10.000) = 54.000 ₺. Y birim = 54.000 ÷ 6.000 = **9 ₺/kg**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0031",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 120.000 ₺ olan süreçte A 2.000 kg (satış değeri 300.000 ₺), B 6.000 kg (satış değeri 100.000 ₺) elde edilmiştir. A ürününe düşen pay, satış değeri yöntemine göre fiziki ölçü yöntemine göre olandan kaç ₺ FAZLADIR?",
-    "options": {
-      "A": "30.000",
-      "B": "90.000",
-      "C": "60.000",
-      "D": "120.000",
-      "E": "45.000"
-    },
-    "answer": "C",
-    "solution": "Fiziki ölçü: A payı = 120.000 × (2.000 ÷ 8.000) = 30.000 ₺. Satış değeri: A payı = 120.000 × (300.000 ÷ 400.000) = 90.000 ₺. Fark = 90.000 − 30.000 = **60.000 ₺** (satış değeri yöntemi A'ya daha fazla pay verir).",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0032",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 240.000 ₺ olan bir süreçte P ürününden 4.000 birim (birim fiyat 75 ₺), Q ürününden 1.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre dağıtım yapıldığında Q ürününün BİRİM maliyeti, P ürününün birim maliyetinden kaç ₺ FAZLADIR?",
-    "options": {
-      "A": "15",
-      "B": "60",
-      "C": "45",
-      "D": "105",
-      "E": "30"
-    },
-    "answer": "A",
-    "solution": "Satış değerleri: P = 4.000 × 75 = 300.000 ₺; Q = 1.000 × 100 = 100.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (300.000 ÷ 400.000) = 180.000 ₺ → P birim = 180.000 ÷ 4.000 = 45 ₺. Q payı = 60.000 ₺ → Q birim = 60.000 ÷ 1.000 = 60 ₺. Fark = 60 − 45 = **15 ₺** (Q daha yüksek).",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0033",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M ve N ürünleri elde edilir. M NGD 200.000 ₺, N NGD 100.000 ₺'dir. N ürünü 2.000 birim ise N ürününün BİRİM birleşik maliyet payı kaç ₺'dir?",
-    "options": {
-      "A": "50",
-      "B": "20",
-      "C": "100",
-      "D": "75",
-      "E": "25"
-    },
-    "answer": "E",
-    "solution": "Toplam NGD = 300.000 ₺. N payı = 150.000 × (100.000 ÷ 300.000) = 50.000 ₺. N birim = 50.000 ÷ 2.000 = **25 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0034",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Aynı ürünler için farklı dağıtım yöntemleri (fiziki ölçü vs satış değeri) kullanıldığında ne olur?",
-    "options": {
-      "A": "Ürünlere düşen maliyet payları (ve dolayısıyla birim maliyetler, ürün kârlılıkları) yönteme göre değişebilir",
-      "B": "Hangi dağıtım yöntemi seçilirse seçilsin her ürüne tıpatıp aynı maliyet payı düşer ve sonuç hiç değişmez",
-      "C": "Kullanılan dağıtım yöntemi değiştikçe ürünlere paylaştırılacak toplam birleşik maliyet tutarı da farklılaşır",
-      "D": "Seçilen dağıtım yöntemine bağlı olarak süreçten çıkan ana ve yan ürünlerin toplam sayısı değişkenlik gösterir",
-      "E": "Uygulanan dağıtım yöntemi ürünlerin piyasadaki satış değerlerini ve birim fiyatlarını doğrudan değiştirir"
-    },
-    "answer": "A",
-    "solution": "Toplam birleşik maliyet aynı kalır; ancak **ürünlere düşen paylar** yönteme göre değişebilir. Bu da birim maliyetleri ve ürün bazlı kârlılık görünümünü etkiler. Yöntem seçimi bu nedenle önemlidir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yöntem etkisi; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0035",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 150.000 ₺ olan süreçte M 5.000 kg (satış değeri 200.000 ₺), N 5.000 kg (satış değeri 100.000 ₺) elde edilmiştir. M ürününe düşen pay, satış değeri yöntemi ile fiziki ölçü yöntemi arasında kaç ₺ FARK eder?",
-    "options": {
-      "A": "50.000",
-      "B": "75.000",
-      "C": "100.000",
-      "D": "25.000",
-      "E": "0"
-    },
-    "answer": "D",
-    "solution": "Fiziki ölçü: M payı = 150.000 × (5.000 ÷ 10.000) = 75.000 ₺. Satış değeri: M payı = 150.000 × (200.000 ÷ 300.000) = 100.000 ₺. Fark = 100.000 − 75.000 = **25.000 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0036",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Satış değeri esaslı dağıtım hangi durumda tercih edilir?",
-    "options": {
-      "A": "Ürünlerin kilogram, litre gibi fiziki ölçüleri birbirine tıpatıp eşit olduğu ve miktar farkı bulunmadığı durumlarda",
-      "B": "Üretim sürecinde hiçbir maliyete katlanılmayıp dağıtılacak birleşik maliyetin sıfıra eşit olduğu durumlarda uygundur",
-      "C": "Dönem içinde ürünlerin hiçbiri satılmadığında ve dolayısıyla hiçbir ürünün satış değeri henüz oluşmadığında",
-      "D": "Süreç sonunda paylaştırılacak yalnızca tek bir ürün elde edildiği ve dağıtıma gerek kalmadığı durumlarda",
-      "E": "Ürünlerin satış değerleri (birim fiyatları) birbirinden önemli ölçüde farklı olduğunda"
-    },
-    "answer": "E",
-    "solution": "Ürünlerin **satış değerleri önemli ölçüde farklıysa**, fiziki ölçü yöntemi değeri yüksek ürüne haksızca düşük maliyet yükleyebilir. Bu durumda **satış değeri esaslı** dağıtım daha adil sonuç verir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yöntem seçimi; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - satış değeri dağıtımı"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0037",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Bir ürüne düşen birleşik maliyet payı ile o ürünün birim maliyeti arasındaki ilişki nedir?",
-    "options": {
-      "A": "Birim maliyet = ürüne düşen maliyet payı ÷ ürün miktarı",
-      "B": "Birim maliyet = ürüne düşen maliyet payı × ürün miktarı",
-      "C": "Birim maliyet = ürün miktarı ÷ ürüne düşen maliyet payı",
-      "D": "Birim maliyet = ürüne düşen maliyet payı + ürün miktarı",
-      "E": "Maliyet payı ile birim maliyet arasında ilişki yoktur"
-    },
-    "answer": "A",
-    "solution": "Bir ürünün **birim maliyeti = ürüne düşen birleşik maliyet payı ÷ ürün miktarı** (varsa ayrım sonrası ilave işleme maliyeti de eklenir).",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (formül-birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birim maliyet"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0038",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Satış değeri esaslı dağıtımda A ürününe 120.000 ₺ pay düşmüştür. A ürününün satış değeri 400.000 ₺, tüm ürünlerin toplam satış değeri 1.000.000 ₺ olduğuna göre toplam birleşik maliyet kaç ₺'dir?",
-    "options": {
-      "A": "120.000",
-      "B": "480.000",
-      "C": "300.000",
-      "D": "48.000",
-      "E": "250.000"
-    },
-    "answer": "C",
-    "solution": "A payı = J × (A satış değeri ÷ toplam) → 120.000 = J × (400.000 ÷ 1.000.000) = J × 0,4. Toplam birleşik maliyet J = 120.000 ÷ 0,4 = **300.000 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0039",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Ayrım noktasında satış değeri esaslı dağıtımda, bir ürünün ayrım sonrası ilave işleme maliyeti de varsa toplam ürün maliyeti nasıl bulunur?",
-    "options": {
-      "A": "Yalnızca ürüne düşen birleşik maliyet payı alınır, ilave işleme maliyeti hesaba katılmaz",
-      "B": "Ürüne düşen birleşik maliyet payı + o ürünün ayrım sonrası ilave işleme maliyeti",
-      "C": "Yalnızca ayrım sonrası ilave işleme maliyeti alınır, birleşik maliyet payı dikkate alınmaz",
-      "D": "Ürünün satış değerinden birleşik maliyet payı düşülerek kalan tutar toplam maliyet sayılır",
-      "E": "Toplam birleşik maliyet, süreçten çıkan ürün sayısına eşit biçimde bölünerek bulunur"
-    },
-    "answer": "B",
-    "solution": "Bir ürünün toplam maliyeti = **Ürüne düşen birleşik maliyet payı + O ürünün ayrım sonrası (ilave işleme) maliyeti**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-toplam ürün maliyeti; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ürün toplam maliyeti"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0040",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyet dağıtımı ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Fiziki ölçü yönteminde pay, ürün miktarı / toplam miktar oranıyla bulunur.\n\nII. Satış değeri yönteminde pay, ürün satış değeri / toplam satış değeri oranıyla bulunur.\n\nIII. Dağıtım yöntemi değiştikçe toplam birleşik maliyet de değişir.",
-    "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "I, II ve III",
-      "D": "I ve III",
-      "E": "II ve III"
-    },
-    "answer": "B",
-    "solution": "**III yanlıştır:** Toplam **birleşik (ortak) maliyet**, ayrım noktasına kadar oluşan sabit bir tutardır; dağıtım yöntemi değişse **değişmez**, yalnızca bu maliyetin ürünlere düşen **payları** değişir. **I** fiziki ölçü payı = miktar/toplam miktar; **II** satış değeri payı = satış değeri/toplam satış değeri. Doğru cevap **I ve II**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0041",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "'Net gerçekleşebilir değer (NGD)' aşağıdakilerden hangisiyle hesaplanır?",
-    "options": {
-      "A": "Nihai satış değeri − ayrım sonrası (ilave işleme) maliyeti",
-      "B": "Nihai satış değeri + ilave işleme maliyeti",
-      "C": "Ayrım sonrası (ilave işleme) maliyeti − ürünün nihai satış değeri",
-      "D": "Yalnızca ayrım noktasına kadarki birleşik (ortak) maliyet tutarı",
-      "E": "Ürünün nihai satış değerinin iki katı (satış değeri × 2) tutarı"
-    },
-    "answer": "A",
-    "solution": "**Net gerçekleşebilir değer (NGD) = Nihai satış değeri − Ayrım sonrası (ilave işleme) maliyeti**. Ayrım noktasında satış değeri bilinmeyen ürünler için dağıtım anahtarı olarak kullanılır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (formül-NGD; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - net gerçekleşebilir değer"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0042",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Net gerçekleşebilir değer (NGD) esaslı dağıtım özellikle hangi durumda kullanılır?",
-    "options": {
-      "A": "Üretilen ürünlerin ilave işlemeden geçirildikten sonra bile satılamadığı ve stokta atıl kaldığı durumlarda",
-      "B": "Üretim sürecinde hiçbir maliyete katlanılmadığı ve dağıtılacak birleşik maliyetin tümüyle sıfır olduğu durumlarda kullanılır",
-      "C": "Süreç sonunda hiç yan ürün ortaya çıkmadığında ve yalnızca yüksek değerli ana ürünlerin elde edildiği durumlarda",
-      "D": "Ürünlerin ayrım noktasındaki satış değeri bilinmediğinde/oluşmadığında (ürün ancak ilave işlemeden sonra satılabildiğinde)",
-      "E": "İşletmede üretim faaliyeti tümüyle durduğunda ve dönem içinde satılabilir hiçbir ürün elde edilemediği durumlarda"
-    },
-    "answer": "D",
-    "solution": "**NGD yöntemi**, ürünlerin ayrım noktasında bir satış değeri oluşmadığında (ancak ilave işlemeden sonra satılabildiğinde) kullanılır; nihai satış değerinden ayrım sonrası maliyet düşülerek dağıtım anahtarı bulunur.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-NGD kullanımı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - NGD"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0043",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Bir ürünün nihai satış değeri 120.000 ₺, ayrım sonrası ilave işleme maliyeti 40.000 ₺'dir. Bu ürünün net gerçekleşebilir değeri (NGD) kaç ₺'dir?",
-    "options": {
-      "A": "3.000",
-      "B": "160.000",
-      "C": "40.000",
-      "D": "120.000",
-      "E": "80.000"
-    },
-    "answer": "E",
-    "solution": "NGD = nihai satış değeri − ayrım sonrası maliyet = 120.000 − 40.000 = **80.000 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-NGD; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - NGD"
-    },
-    "validYear": 2026,
-    "mockExamId": null
-  },
-  {
-    "id": "mmuh-birlesik-gen-0044",
-    "ders": "maliyet_muhasebesi",
-    "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 180.000 ₺ olan süreçte A ve B ürünleri elde edilir. A: nihai satış 200.000 ₺, ayrım sonrası ilave işleme 50.000 ₺; B: nihai satış 120.000 ₺, ilave işleme 30.000 ₺. Net gerçekleşebilir değer (NGD) esasına göre A'ya düşen pay kaç ₺'dir?",
-    "options": {
-      "A": "120.000",
-      "B": "67.500",
-      "C": "90.000",
-      "D": "150.000",
-      "E": "112.500"
-    },
-    "answer": "E",
-    "solution": "NGD = nihai satış − ilave işleme. A NGD = 200.000 − 50.000 = 150.000 ₺; B NGD = 120.000 − 30.000 = 90.000 ₺; toplam 240.000 ₺. A payı = 180.000 × (150.000 ÷ 240.000) = **112.500 ₺**.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
@@ -971,20 +971,20 @@
     "id": "mmuh-birlesik-gen-0045",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Yan ürünün muhasebeleştirilmesinde yaygın bir yaklaşım aşağıdakilerden hangisidir?",
+    "stem": "Ana ürünün toplam birleşik maliyeti 200.000 ₺'dir; süreçte ortaya çıkan yan ürünün net gerçekleşebilir değeri 30.000 ₺'dir. Yan ürün değeri birleşik maliyetten düşülüyorsa ve ana üründen 8.500 birim elde edilmişse, ana ürünün BİRİM maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Yan ürünün net gerçekleşebilir değeri, ana ürünün birleşik maliyetinden düşülür (veya diğer gelir olarak kaydedilir)",
-      "B": "Yan ürüne, ana üründen daha büyük bir birleşik maliyet payı yüklenerek yan ürünün maliyeti bilinçli biçimde kabartılır",
-      "C": "Yan ürün üretim sırasında tümüyle maliyetsiz kabul edilip kayda alınmadan muhasebe dışında bırakılır",
-      "D": "Yan ürün, ana ürünle eşit değerli sayılıp bağımsız bir ana ürünmüş gibi ayrı stok hesabında muhasebeleştirilir",
-      "E": "Yan ürün ne stok değeri ne de gelir olarak işletmenin muhasebe kayıtlarına yansıtılmadan geçilir"
+      "A": "20",
+      "B": "30",
+      "C": "23,53",
+      "D": "17,65",
+      "E": "25"
     },
     "answer": "A",
-    "solution": "Yaygın yaklaşımda yan ürünün **net gerçekleşebilir değeri ana ürünün birleşik maliyetinden düşülür** (böylece ana ürün maliyeti azalır) ya da satıldığında **diğer gelir** olarak kaydedilir. Yan ürüne büyük bir birleşik maliyet payı verilmez.",
+    "solution": "Yan ürün NGD'si ana ürün maliyetinden düşülür: net ana maliyet = 200.000 − 30.000 = 170.000 ₺. Ana ürün birim maliyeti = 170.000 ÷ 8.500 = **20 ₺**. (Yan ürünü düşmemek 23,53 verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yan ürün kaydı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "mmuh-birlesik-gen-0046",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Ana ürünün toplam birleşik maliyeti 200.000 ₺, süreçte ortaya çıkan yan ürünün net satış (gerçekleşebilir) değeri 20.000 ₺'dir. Yan ürün değeri ana ürün maliyetinden düşüldüğünde ana ürüne kalan net birleşik maliyet kaç ₺'dir?",
+    "stem": "Birleşik maliyeti 240.000 ₺ olan bir süreçte P ürününden 4.000 birim (birim fiyat 75 ₺), Q ürününden 1.000 birim (birim fiyat 100 ₺) üretilmiştir. Satış değeri esasına göre dağıtım yapıldığında Q ürününün BİRİM maliyeti, P ürününün birim maliyetinden kaç ₺ FAZLADIR?",
     "options": {
-      "A": "160.000",
-      "B": "220.000",
-      "C": "200.000",
-      "D": "20.000",
-      "E": "180.000"
+      "A": "30",
+      "B": "45",
+      "C": "60",
+      "D": "105",
+      "E": "15"
     },
     "answer": "E",
-    "solution": "Ana ürüne kalan net birleşik maliyet = 200.000 − 20.000 = **180.000 ₺** (yan ürünün net değeri ana ürün maliyetinden düşülür).",
+    "solution": "Satış değerleri: P = 4.000 × 75 = 300.000 ₺; Q = 1.000 × 100 = 100.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (300.000 ÷ 400.000) = 180.000 ₺ → P birim = 180.000 ÷ 4.000 = 45 ₺. Q payı = 60.000 ₺ → Q birim = 60.000 ÷ 1.000 = 60 ₺. Fark = 60 − 45 = **15 ₺** (Q daha yüksek).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yan ürün düşme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "mmuh-birlesik-gen-0047",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Yan ürünün satışından elde edilen gelirin 'diğer gelir' olarak kaydedildiği yöntemde ana ürünün birleşik maliyeti nasıl etkilenir?",
+    "stem": "Satış değeri esaslı dağıtımda A ürününe 120.000 ₺ pay düşmüştür. A ürününün satış değeri 400.000 ₺, tüm ürünlerin toplam satış değeri 1.000.000 ₺ olduğuna göre toplam birleşik maliyet kaç ₺'dir?",
     "options": {
-      "A": "Yan ürünün elde edilen geliri ana ürünün birleşik maliyetinden düşülür ve böylece ana ürün maliyeti azaltılmış olur",
-      "B": "Yan ürün geliri kadar ana ürünün birleşik maliyeti tümüyle sıfırlanır ve maliyet kaydı ortadan kaldırılır",
-      "C": "Yan ürün geliri ana ürüne yüklenerek ana ürünün birleşik maliyeti bu tutar kadar artırılıp yükseltilir",
-      "D": "Ana ürünün birleşik maliyeti değişmez; yan ürün geliri ayrıca diğer gelir olarak gösterilir",
-      "E": "Yan ürün geliri, gelir değil dönem gideri sayılıp gider hesaplarına aktarılarak sonuç hesabında izlenir"
+      "A": "480.000",
+      "B": "48.000",
+      "C": "250.000",
+      "D": "300.000",
+      "E": "120.000"
     },
     "answer": "D",
-    "solution": "'Diğer gelir' yönteminde yan ürünün geliri ana ürünün birleşik maliyetinden **düşülmez**; ana ürün maliyeti **değişmez**, yan ürün geliri gelir tablosunda ayrıca **diğer gelir** olarak gösterilir. (Alternatif yöntemde ise maliyetten düşülür.)",
+    "solution": "A payı = J × (A satış değeri ÷ toplam) → 120.000 = J × (400.000 ÷ 1.000.000) = J × 0,4. Toplam birleşik maliyet J = 120.000 ÷ 0,4 = **300.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yan ürün diğer gelir; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "mmuh-birlesik-gen-0048",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Bir birleşik ürünü ayrım noktasında satmak yerine ilave işlemeden geçirip satma kararında hangi ölçüt kullanılır?",
+    "stem": "Bir ürünün nihai satış değeri 120.000 ₺, ayrım sonrası ilave işleme maliyeti 40.000 ₺'dir. Bu ürünün net gerçekleşebilir değeri (NGD) kaç ₺'dir?",
     "options": {
-      "A": "Yalnızca ayrım noktasına kadar oluşan birleşik maliyet tutarı esas alınarak ilave işleme kararı verilir",
-      "B": "İlave işleme, sağlayacağı kâr veya zarar hiç gözetilmeksizin her koşulda mutlaka yapılması gereken bir işlemdir",
-      "C": "İlave işlemenin sağladığı ek satış geliri, ilave işleme maliyetinden büyükse ilave işleme yapılır",
-      "D": "İlave işleme yapılmamalı; birleşik ürün her zaman ayrım noktasında olduğu gibi satılmalıdır",
-      "E": "Toplam birleşik maliyet, katlanılacak ilave işleme maliyetinden büyükse ilave işleme yapılmasına karar verilir"
+      "A": "3.000",
+      "B": "120.000",
+      "C": "80.000",
+      "D": "40.000",
+      "E": "160.000"
     },
     "answer": "C",
-    "solution": "İlave işleme kararı: **ilave işlemenin sağladığı ek gelir (nihai satış değeri − ayrım noktası satış değeri) > ilave işleme maliyeti** ise ilave işleme yapılır. Birleşik maliyet bu kararda **batık (sunk) maliyettir**, dikkate alınmaz.",
+    "solution": "NGD = nihai satış değeri − ayrım sonrası maliyet = 120.000 − 40.000 = **80.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ilave işleme kararı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ilave işleme kararı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - NGD"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "mmuh-birlesik-gen-0049",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Bir ürün ayrım noktasında 100.000 ₺'ye satılabilmektedir. İlave işlemeyle 150.000 ₺'ye satılabilecek; ilave işleme maliyeti 30.000 ₺'dir. İlave işleme yapılmalı mıdır?",
+    "stem": "Ana ürünün toplam birleşik maliyeti 200.000 ₺, süreçte ortaya çıkan yan ürünün net satış (gerçekleşebilir) değeri 20.000 ₺'dir. Yan ürün değeri ana ürün maliyetinden düşüldüğünde ana ürüne kalan net birleşik maliyet kaç ₺'dir?",
     "options": {
-      "A": "Hayır; sağlanan ilave gelir katlanılan ilave işleme maliyetinden küçük kaldığı için ilave işleme yapılmamalıdır",
-      "B": "Evet; ilave gelir (50.000 ₺) ilave maliyetten (30.000 ₺) büyük olduğundan 20.000 ₺ ek kâr sağlar",
-      "C": "Bu verilerle karar verilemez; ilave işlemenin kârlı olup olmadığı eldeki bilgilerle belirlenemez",
-      "D": "Evet; ilave işleme yapılmalıdır, ancak bu kararın sonucunda işletme net bir zarara katlanmak zorunda kalacaktır",
-      "E": "Hayır; ayrım noktasına kadar oluşan birleşik maliyet çok yüksek olduğu için ilave işleme yapılması doğru olmaz"
+      "A": "200.000",
+      "B": "180.000",
+      "C": "220.000",
+      "D": "160.000",
+      "E": "20.000"
     },
     "answer": "B",
-    "solution": "İlave gelir = 150.000 − 100.000 = 50.000 ₺. İlave maliyet = 30.000 ₺. İlave gelir > ilave maliyet → **ilave işleme yapılmalı** (50.000 − 30.000 = 20.000 ₺ ek kâr). Birleşik maliyet karara dahil edilmez.",
+    "solution": "Ana ürüne kalan net birleşik maliyet = 200.000 − 20.000 = **180.000 ₺** (yan ürünün net değeri ana ürün maliyetinden düşülür).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-ilave işleme kararı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ilave işleme kararı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "mmuh-birlesik-gen-0050",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "İlave işleme kararında birleşik (ortak) maliyetin dikkate alınmamasının nedeni aşağıdakilerden hangisidir?",
+    "stem": "Birleşik maliyeti 360.000 ₺ olan bir süreçte A ürününden 5.000 birim (birim fiyat 120 ₺), B ürününden 3.000 birim (birim fiyat 100 ₺) elde edilmiştir. Satış değeri esasına göre dağıtım yapıldığında A ürününün brüt kârı (satış − birleşik maliyet payı) kaç ₺'dir?",
     "options": {
-      "A": "Birleşik maliyet tutarı çok küçük ve ihmal edilebilir olduğundan, ilave işleme kararında hiç dikkate alınmasa da sonucu değiştirmeyeceği kabul edilir",
-      "B": "Birleşik maliyet aslında bir gider değil, satış geliri niteliği taşıdığından ilave işleme kararına dahil edilmez",
-      "C": "Birleşik maliyet henüz hiç oluşmamış olup yalnızca ilave işleme kararı verildikten sonra gelecekte katlanılacaktır",
-      "D": "Birleşik maliyet, ayrım noktasında zaten oluşmuş, karardan bağımsız bir batık (sunk) maliyet olduğundan ilave işleme kararını değiştirmez",
-      "E": "Birleşik maliyet hiçbir vergiye tabi tutulmadığından ilave işleme kararı açısından tümüyle önemsiz kabul edilir"
+      "A": "300.000",
+      "B": "180.000",
+      "C": "240.000",
+      "D": "360.000",
+      "E": "600.000"
     },
     "answer": "D",
-    "solution": "Birleşik maliyet ayrım noktasında **zaten oluşmuştur** ve ister sat ister işle **değişmez** (batık/sunk maliyet). Karar yalnızca **ilave gelir ile ilave maliyeti** karşılaştırır; birleşik maliyet ilgisizdir.",
+    "solution": "A satış = 5.000 × 120 = 600.000 ₺; B satış = 300.000 ₺; toplam 900.000 ₺. A payı = 360.000 × (600.000 ÷ 900.000) = 240.000 ₺. A brüt kârı = A satış − A payı = 600.000 − 240.000 = **360.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-batık maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - batık maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "mmuh-birlesik-gen-0051",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Bir ürün ayrım noktasında 80.000 ₺'ye satılabilmektedir. İlave işlemeyle 110.000 ₺'ye satılabilecek; ilave işleme maliyeti 40.000 ₺'dir. Doğru karar hangisidir?",
+    "stem": "Birleşik maliyeti 60.000 ₺ olan bir süreçte K 2.000 kg ve L 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre K ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
     "options": {
-      "A": "İlave işleme yapılmalı; sağlanan ilave gelir katlanılan ilave maliyeti aştığından işletmeye 10.000 ₺ ek kâr sağlar",
-      "B": "İlave işleme yapılmamalı; ilave gelir (30.000 ₺) ilave maliyetten (40.000 ₺) küçük, 10.000 ₺ zarar",
-      "C": "İlave işleme yapılmalı; sağlanan ilave gelirin tamamı ek kâr olarak kalacağından toplam 30.000 ₺ ek kâr elde edilir",
-      "D": "Bu verilerle karar verilemez; ilave işlemenin kârlı olup olmadığı eldeki bilgilerle hesaplanarak belirlenemez",
-      "E": "İlave işleme yapılmalı; ilave gelir ile ilave maliyet birbirine eşit olduğundan işletme hiçbir zarara katlanmaz"
+      "A": "15",
+      "B": "20",
+      "C": "30",
+      "D": "10",
+      "E": "40.000"
     },
     "answer": "B",
-    "solution": "İlave gelir = 110.000 − 80.000 = 30.000 ₺. İlave maliyet = 40.000 ₺. İlave gelir < ilave maliyet → **ilave işleme yapılmamalı** (yapılırsa 30.000 − 40.000 = 10.000 ₺ zarar). Ayrım noktasında satmak daha kârlıdır.",
+    "solution": "Toplam miktar = 2.000 + 1.000 = 3.000 kg. K payı = 60.000 × (2.000 ÷ 3.000) = 40.000 ₺. K birim = 40.000 ÷ 2.000 = **20 ₺/kg**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-ilave işleme kararı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ilave işleme kararı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "mmuh-birlesik-gen-0052",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 360.000 ₺ olan bir süreçte A ürününden 5.000 birim (birim fiyat 120 ₺), B ürününden 3.000 birim (birim fiyat 100 ₺) elde edilmiştir. Satış değeri esasına göre dağıtım yapıldığında A ürününün brüt kârı (satış − birleşik maliyet payı) kaç ₺'dir?",
+    "stem": "Bir işletmede K, L ve M ortak ürünleri üretilmektedir. Bir esas üretim gider yerinde toplanan birleşik giderler 264.000 ₺'dir. Ürünlere ilişkin bilgiler şöyledir:\n\n| Ürün | Üretim miktarı (adet) | Katsayı |\n|---|---|---|\n| K | 6.000 | 1 |\n| L | 5.000 | 2 |\n| M | 1.000 | 6 |\n\nBirleşik giderler katsayı (eşdeğer ürün miktarı) yöntemiyle dağıtıldığına göre L ürününün birleşik gider payı kaç ₺'dir?",
     "options": {
-      "A": "240.000",
-      "B": "360.000",
-      "C": "600.000",
-      "D": "180.000",
-      "E": "300.000"
+      "A": "110.000",
+      "B": "120.000",
+      "C": "144.000",
+      "D": "60.000",
+      "E": "72.000"
     },
     "answer": "B",
-    "solution": "A satış = 5.000 × 120 = 600.000 ₺; B satış = 300.000 ₺; toplam 900.000 ₺. A payı = 360.000 × (600.000 ÷ 900.000) = 240.000 ₺. A brüt kârı = A satış − A payı = 600.000 − 240.000 = **360.000 ₺**.",
+    "solution": "Eşdeğer ürün miktarları: K 6.000 × 1 = 6.000; L 5.000 × 2 = 10.000; M 1.000 × 6 = 6.000; toplam 22.000. Eşdeğer birim başına gider = 264.000 ÷ 22.000 = 12 ₺. L payı = 10.000 × 12 = **120.000 ₺**. Katsayıyı unutup adetle çarpmak 60.000 ₺ verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (katsayı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "mmuh-birlesik-gen-0053",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Bir birleşik ürün ayrım noktasında 100.000 ₺'ye satılabilmektedir. İlave işlemeden geçirilirse 150.000 ₺'ye satılabilecek, ilave işleme maliyeti 30.000 ₺ olacaktır. Doğru karar ve net etkisi nedir?",
+    "stem": "A, B ve C ürünleri 252.000 ₺ ortak maliyete katlanılarak üretilmektedir. Döneme ait veriler şöyledir:\n\n| Ürün | Üretim miktarı | Satış fiyatı |\n|---|---|---|\n| A | 3.000 kg | 40 ₺/kg |\n| B | 1.000 kg | 120 ₺/kg |\n| C | 4.000 kg | 45 ₺/kg |\n\nİşletme ortak maliyetleri satış değeri yöntemiyle dağıttığına göre B ürününün ortak maliyetten kg başına alacağı pay kaç ₺'dir?",
     "options": {
-      "A": "İlave işlenmemeli; net 30.000 ₺ zarar eder",
-      "B": "İlave işlenmeli; net 50.000 ₺ katkı sağlar",
-      "C": "Fark etmez; iki seçenek eşittir",
-      "D": "İlave işlenmemeli; birleşik maliyet 100.000 ₺ aşılır",
-      "E": "İlave işlenmeli; net 20.000 ₺ katkı sağlar"
+      "A": "27",
+      "B": "24",
+      "C": "31,50",
+      "D": "120",
+      "E": "72"
     },
     "answer": "E",
-    "solution": "Karar ayrım sonrası verilere göre verilir (birleşik maliyet batmıştır, dikkate alınmaz). Ek gelir = 150.000 − 100.000 = 50.000 ₺; ek maliyet = 30.000 ₺. Ek gelir > ek maliyet olduğundan ilave işlenmeli; net katkı = 50.000 − 30.000 = **20.000 ₺**.",
+    "solution": "Satış değerleri: A 120.000, B 120.000, C 180.000; toplam 420.000 ₺. Dağıtım oranı 252.000 ÷ 420.000 = 0,60. B payı 120.000 × 0,60 = 72.000 ₺; kg başına 72.000 ÷ 1.000 = **72 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (satış değeri yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "mmuh-birlesik-gen-0054",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "A ürününe düşen birleşik maliyet payı 200.000 ₺, A ürününün ayrım sonrası ilave işleme maliyeti 50.000 ₺'dir. A ürününün toplam maliyeti kaç ₺'dir?",
+    "stem": "A ve B ana ürünleri ile Z yan ürününün elde edildiği bir süreçte ortak maliyetler şöyledir: direkt ilk madde ve malzeme 420.000 ₺, direkt işçilik 300.000 ₺, genel üretim 180.000 ₺. Ayrılma noktasından sonra ek maliyete katlanılmamaktadır. Ürün bilgileri şöyledir:\n\n| Ürün | Üretim miktarı | Satış fiyatı |\n|---|---|---|\n| A | 4.000 ton | 250 ₺/ton |\n| B | 5.000 ton | 200 ₺/ton |\n| Z (yan ürün) | 100 ton | 20 ₺/ton |\n\nYan ürüne maliyetten pay vermeyen işletme üretim miktarları yöntemini kullandığına göre, tamamı satılan B ürününün ton başına satış kârı kaç ₺'dir?",
     "options": {
-      "A": "250.000",
-      "B": "150.000",
-      "C": "200.000",
-      "D": "50.000",
-      "E": "300.000"
+      "A": "100",
+      "B": "120",
+      "C": "90",
+      "D": "110",
+      "E": "200"
     },
     "answer": "A",
-    "solution": "A ürününün toplam maliyeti = birleşik maliyet payı + ayrım sonrası maliyet = 200.000 + 50.000 = **250.000 ₺**.",
+    "solution": "Ortak maliyet = 420.000 + 300.000 + 180.000 = 900.000 ₺. Yan ürün pay almadığından yalnız ana ürünlerin miktarı esas alınır: 4.000 + 5.000 = 9.000 ton → ton başına 100 ₺. B'nin ton başına kârı = 200 − 100 = **100 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam ürün maliyeti; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ürün toplam maliyeti"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (yan ürün)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "mmuh-birlesik-gen-0055",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 60.000 ₺ olan bir süreçte K 2.000 kg ve L 1.000 kg ürün elde edilmiştir. Fiziki ölçü esasına göre K ürününün BİRİM (kg) maliyeti kaç ₺'dir?",
+    "stem": "160.000 ₺ ortak maliyetle üretilen P ve Q ürünlerine ilişkin bilgiler şöyledir:\n\n| Ürün | Ayrılma noktasında satış (₺) | İşlem sonrası satış (₺) | İlave işleme maliyeti (₺) |\n|---|---|---|---|\n| P | 150.000 | 210.000 | 45.000 |\n| Q | 90.000 | 130.000 | 50.000 |\n\nİşletme her ürün için en kârlı kararı verirse toplam kârı kaç ₺ olur?",
     "options": {
-      "A": "30",
-      "B": "20",
-      "C": "40.000",
-      "D": "10",
-      "E": "15"
+      "A": "15.000",
+      "B": "95.000",
+      "C": "85.000",
+      "D": "70.000",
+      "E": "80.000"
     },
     "answer": "B",
-    "solution": "Toplam miktar = 2.000 + 1.000 = 3.000 kg. K payı = 60.000 × (2.000 ÷ 3.000) = 40.000 ₺. K birim = 40.000 ÷ 2.000 = **20 ₺/kg**.",
+    "solution": "P: ek gelir 60.000 > ek maliyet 45.000 → işlenir, net 165.000 ₺. Q: ek gelir 40.000 < 50.000 → ayrılma noktasında 90.000 ₺'ye satılır. Toplam kâr = 165.000 + 90.000 − 160.000 = **95.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (ilave işleme kararı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "mmuh-birlesik-gen-0056",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Ana ürünün birleşik maliyeti 500.000 ₺, yan ürünün net gerçekleşebilir değeri 50.000 ₺'dir. Yan ürün değeri düşüldükten sonra ana ürün 45.000 kg olarak üretilmişse ana ürünün birim maliyeti yaklaşık kaç ₺/kg'dır?",
+    "stem": "Ortak maliyeti 390.000 ₺ olan bir süreçten A ve B ürünleri elde edilmektedir. Ürünler ayrılma noktasından sonra ek işlemden geçirilerek satılmaktadır:\n\n| Ürün | Üretim (birim) | Satış fiyatı (₺) | Ek maliyet (₺) |\n|---|---|---|---|\n| A | 5.000 | 80 | 50.000 |\n| B | 2.500 | 160 | 100.000 |\n\nNet satış hasılatı yöntemi kullanıldığına göre tamamı satılan A ürününün brüt satış kârı kaç ₺'dir?",
     "options": {
-      "A": "11,11",
-      "B": "10",
-      "C": "12",
-      "D": "9",
-      "E": "1"
+      "A": "90.000",
+      "B": "140.000",
+      "C": "260.000",
+      "D": "190.000",
+      "E": "155.000"
     },
     "answer": "B",
-    "solution": "Ana ürüne kalan net maliyet = 500.000 − 50.000 = 450.000 ₺. Birim maliyet = 450.000 ÷ 45.000 = **10 ₺/kg**.",
+    "solution": "Net satış hasılatları: A 400.000 − 50.000 = 350.000; B 400.000 − 100.000 = 300.000. A payı = 390.000 × 350.000 ÷ 650.000 = 210.000 ₺. A'nın toplam maliyeti 210.000 + ek 50.000 = 260.000 ₺; kâr = 400.000 − 260.000 = **140.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-yan ürün birim maliyet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yan ürün muhasebesi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (net satış hasılatı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "mmuh-birlesik-gen-0057",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Ayrım noktasından sonra bir ürünün ayrı olarak izlenebilen ilave işleme maliyetleri, o ürünün birleşik maliyet payıyla nasıl ilişkilendirilir?",
+    "stem": "Birleşik gideri 200.000 ₺ olan bir işletme E, F ve G ürünlerini üretmektedir. Üretim miktarları sırasıyla 2.000, 2.000 ve 1.000 birim, ağırlık katsayıları ise 1, 2 ve 4'tür. İşletme katsayı yöntemi yerine üretim miktarı yöntemini kullansaydı G ürününün birleşik gider payı nasıl değişirdi?",
     "options": {
-      "A": "Birleşik maliyet payına eklenerek ürünün toplam maliyetini oluşturur",
-      "B": "Ürüne düşen birleşik maliyet payından indirilerek ürünün toplam maliyetini azaltır",
-      "C": "Ürün maliyetiyle ilişkilendirilmeyip tümüyle o döneme ait dönem gideri olarak yazılır",
-      "D": "Ana ürüne değil, süreçten çıkan yan ürüne yüklenerek onun toplam maliyetine eklenir",
-      "E": "Maliyete eklenmeyip doğrudan ürünün elde edilen satış hasılatı tutarına ilave edilir"
+      "A": "40.000 ₺ azalırdı",
+      "B": "20.000 ₺ azalırdı",
+      "C": "80.000 ₺ azalırdı",
+      "D": "Değişmezdi",
+      "E": "40.000 ₺ artardı"
     },
     "answer": "A",
-    "solution": "Ayrım sonrası ilave işleme maliyetleri, ürünün **birleşik maliyet payına eklenerek** o ürünün toplam maliyetini oluşturur (birleşik pay + ilave işleme = toplam ürün maliyeti).",
+    "solution": "Katsayı yöntemi: eşdeğer miktar 2.000 + 4.000 + 4.000 = 10.000 → birim eşdeğere 20 ₺; G payı 4.000 × 20 = 80.000 ₺. Miktar yöntemi: 200.000 × 1.000 ÷ 5.000 = 40.000 ₺. G'nin payı **40.000 ₺ azalır**; yüksek katsayılı ürün katsayı yönteminde daha çok pay alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-ilave işleme ekleme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ürün toplam maliyeti"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (katsayı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "mmuh-birlesik-gen-0058",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Aşağıdakilerden hangisi birleşik maliyet konusuyla ilgili YANLIŞ bir ifadedir?",
+    "stem": "Bir işletme A, B ve C mamullerini 640.000 ₺ ortak maliyete katlanarak üretmektedir. Ocak ayı verileri şöyledir:\n\n| Mamul | Üretim miktarı | Toplam satış değeri (₺) |\n|---|---|---|\n| A | 2.500 kg | 320.000 |\n| B | 3.500 kg | 384.000 |\n| C | 2.000 kg | 576.000 |\n\nÜretim miktarı yöntemine göre B mamulünün ortak maliyetten aldığı pay kaç ₺'dir?",
     "options": {
-      "A": "Birleşik maliyet ayrım noktasına kadarki ortak maliyettir",
-      "B": "İlave işleme kararında birleşik maliyet dikkate alınmaz (batık maliyettir)",
-      "C": "Birleşik maliyet dağıtım yöntemi değiştiğinde toplam birleşik maliyet de değişir",
-      "D": "Satış değeri yöntemi değeri yüksek ürüne daha çok maliyet yükler",
-      "E": "Yan ürünün net değeri ana ürün maliyetinden düşülebilir"
+      "A": "384.000",
+      "B": "200.000",
+      "C": "280.000",
+      "D": "192.000",
+      "E": "160.000"
     },
     "answer": "C",
-    "solution": "Yanlış olan **C**'dir: dağıtım yöntemi değişse de ürünlere düşen paylar değişebilir ama **toplam birleşik maliyet DEĞİŞMEZ**. Diğer ifadeler doğrudur.",
+    "solution": "Üretim miktarı yönteminde satış değerleri kullanılmaz. Toplam miktar 2.500 + 3.500 + 2.000 = 8.000 kg → kg başına 640.000 ÷ 8.000 = 80 ₺. B payı = 3.500 × 80 = **280.000 ₺**. Satış değeri yöntemi 192.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi yanlış; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (üretim miktarı yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "mmuh-birlesik-gen-0059",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik maliyeti 240.000 ₺ olan süreçte P ve Q ürünleri elde edilir. P: nihai satış 300.000 ₺, ilave işleme 60.000 ₺; Q: nihai satış 200.000 ₺, ilave işleme 40.000 ₺. NGD esasına göre P'ye düşen pay kaç ₺'dir?",
+    "stem": "Bir işletme 360.000 ₺ birleşik maliyetin %30'unu A, B ve C ürünlerine eşit olarak, kalanını ise üretim miktarlarına göre dağıtmaktadır. Ürünlerin üretim miktarları sırasıyla 5.000, 3.000 ve 2.000 kg'dır. Buna göre C ürününün birleşik maliyet payı kaç ₺'dir?",
     "options": {
-      "A": "96.000",
-      "B": "120.000",
-      "C": "180.000",
-      "D": "144.000",
-      "E": "150.000"
+      "A": "72.000",
+      "B": "50.400",
+      "C": "108.000",
+      "D": "86.400",
+      "E": "120.000"
     },
     "answer": "D",
-    "solution": "P NGD = 300.000 − 60.000 = 240.000 ₺; Q NGD = 200.000 − 40.000 = 160.000 ₺; toplam 400.000 ₺. P payı = 240.000 × (240.000 ÷ 400.000) = **144.000 ₺**.",
+    "solution": "Eşit kısım 360.000 × %30 = 108.000 ₺ → ürün başına 36.000 ₺. Kalan 252.000 ₺ miktarla: C payı 252.000 × 2.000 ÷ 10.000 = 50.400 ₺. Toplam 36.000 + 50.400 = **86.400 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (karma dağıtım)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "mmuh-birlesik-gen-0060",
     "ders": "maliyet_muhasebesi",
     "konu": "birlesik_maliyet",
-    "stem": "Birleşik ve yan ürün maliyetleri ile ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. NGD = nihai satış değeri − ayrım sonrası işleme maliyeti.\n\nII. Yan ürünün net değeri, ana ürünün birleşik maliyetine eklenerek ana ürünün maliyeti artırılır.\n\nIII. İlave işleme kararında birleşik maliyet batık maliyet olup dikkate alınmaz.",
+    "stem": "Ortak maliyeti 360.000 ₺ olan bir süreçten A ürünü 4.000 birim (90 ₺'den) ve B ürünü 2.000 birim (120 ₺'den) elde edilmiş ve tamamı satılmıştır. Ek maliyet yoktur. Ortak maliyet satış değeri yöntemiyle dağıtıldığına göre A ürününün brüt kâr oranı (brüt kâr ÷ satışlar) yüzde kaçtır?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "I, II ve III",
-      "D": "I ve III",
-      "E": "II ve III"
+      "A": "%50",
+      "B": "%36",
+      "C": "%60",
+      "D": "%40",
+      "E": "%25"
     },
     "answer": "D",
-    "solution": "**II yanlıştır:** Yan ürünün net (gerçekleşebilir) değeri ana ürünün birleşik maliyetine EKLENMEZ; tersine ana ürünün maliyetinden DÜŞÜLÜR (ya da diğer gelir yazılır) ve ana ürün maliyetini AZALTIR. **I** NGD = nihai satış değeri − ayrım sonrası işleme maliyeti ve **III** ilave işleme kararında birleşik maliyetin batık (dikkate alınmaz) olması doğrudur. Doğru cevap **I ve III**.",
+    "solution": "Toplam satış değeri 360.000 + 240.000 = 600.000 ₺; ortak maliyet satışların 360.000 ÷ 600.000 = %60'ıdır. Satış değeri yönteminde her ürünün maliyeti kendi satışının %60'ı olduğundan tüm ürünlerin brüt kâr oranı eşittir: **%40**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birleşik/yan ürün"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birleşik maliyet (satış değeri yöntemi)"
     },
     "validYear": 2026,
     "mockExamId": null

@@ -54,13 +54,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
     },
-    "content/maliyet_muhasebesi/birlesik_maliyet.json": {
-        "mmuh-birlesik-gen-0006": {"A": "Ayrım noktasına kadarki ortak üretim maliyeti"},
-        "mmuh-birlesik-gen-0017": {"A": "Düşük değerli ikincil ürün"},
-        "mmuh-birlesik-gen-0018": {"A": "Süreçten yalnızca tek ürün çıkar"},
-        "mmuh-birlesik-gen-0041": {"B": "Nihai satış değeri + ilave işleme maliyeti"},
-        "mmuh-birlesik-gen-0011": {"A": "Ayrım noktasındaki satış değeri payı"},
-    },
     "content/denetim/denetim_kaniti.json": {
         "den-kanit-gen-0041": {
             "A": "Analitik prosedür (tutarın geçmiş dönem eğilimi ve önceki yıl tutarıyla karşılaştırılması)"
