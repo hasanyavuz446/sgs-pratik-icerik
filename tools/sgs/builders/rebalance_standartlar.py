@@ -840,7 +840,6 @@ KONFIG: dict[str, dict] = {
     "tms_21_kur_degisimi": {"atma_ozel": TMS21_OZEL, "uzat": TMS21_UZAT},
     "tfrs_9_finansal_arac": {"atma_ozel": TFRS9_OZEL, "uzat": TFRS9_UZAT},
     "tms_37_karsiliklar": {"atma_ozel": TMS37_OZEL},
-    "tms_8_politikalar": {"atma_ozel": TMS8_OZEL, "kisalt": TMS8_KISALT},
     "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
     "tms_23_borclanma_maliyetleri": {"atma_ozel": TMS23_OZEL},
     "tfrs_16_kiralamalar": {"atma_ozel": TFRS16_OZEL, "uzat": TFRS16_UZAT},

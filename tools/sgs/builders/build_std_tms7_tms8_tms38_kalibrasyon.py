@@ -34,7 +34,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 LESSON = "muhasebe_standartlari"
-TOPICS = ("tms_7_nakit_akis", "tms_8_politikalar", "tms_38_modv")
+TOPICS = ("tms_7_nakit_akis", "tms_38_modv")  # tms_8: build_std_tms8_yapisal.py
 TL = re.compile(r"(\d)\s*TL\b")
 TL_WORD = re.compile(r"\bTL\b")
 ANSWER_TAIL = re.compile(r"\s*Doğru\s+(?:cevap|seçenek)\s+[A-E]\.\s*$")
@@ -70,36 +70,6 @@ STEMS = {
         "std-tms7-gen-0034": "Ticari borçlardaki artış dolaylı yöntem hesabını nasıl etkiler?",
         "std-tms7-gen-0035": "Maddi duran varlık satış kârı dolaylı yöntemde dönem kârına nasıl uygulanır?",
         "std-tms7-gen-0041": "Yatırım ve finansman faaliyetlerindeki nakit giriş ve çıkışları için genel sunum kuralı hangisidir?",
-    },
-    "tms_8_politikalar": {
-        "std-tms8-gen-0001": "TMS 8'e göre muhasebe politikası aşağıdakilerden hangisidir?",
-        "std-tms8-gen-0002": "Bir işlemi özel olarak düzenleyen TFRS bulunduğunda muhasebe politikası nasıl belirlenir?",
-        "std-tms8-gen-0003": "Bir işlem için doğrudan uygulanabilir TFRS bulunmuyorsa yönetim ne yapar?",
-        "std-tms8-gen-0004": "Yönetim, muhasebe politikası geliştirirken kaynaklara hangi sırayla başvurur?",
-        "std-tms8-gen-0005": "TFRS'lerle çelişmemek koşuluyla politika geliştirmede hangi ek kaynaklardan yararlanılabilir?",
-        "std-tms8-gen-0006": "Benzer işlem ve olaylara ilişkin muhasebe politikaları nasıl uygulanır?",
-        "std-tms8-gen-0007": "Bir TFRS farklı kalem grupları için ayrı politika kullanılmasına izin veriyorsa ne yapılır?",
-        "std-tms8-gen-0009": "Önemli muhasebe politikalarına ilişkin açıklamalar nerede sunulur?",
-        "std-tms8-gen-0014": "Muhasebe politikalarının tutarlı seçimi finansal tablo bilgisini nasıl etkiler?",
-        "std-tms8-gen-0016": "Muhasebe politikası değişikliği kural olarak hangi yönde uygulanır?",
-        "std-tms8-gen-0017": "Geriye dönük uygulama ne anlama gelir?",
-        "std-tms8-gen-0018": "Politika değişikliğinde sunulan en erken dönemin açılış bakiyelerine ne yapılır?",
-        "std-tms8-gen-0019": "İlk kez uygulanan bir TFRS özel geçiş hükümleri içeriyorsa hangi yol izlenir?",
-        "std-tms8-gen-0020": "İlk kez uygulanan TFRS'de geçiş hükmü yoksa değişiklik nasıl muhasebeleştirilir?",
-        "std-tms8-gen-0022": "Daha önce gerçekleşmemiş bir işlem için ilk defa politika belirlenmesi nasıl değerlendirilir?",
-        "std-tms8-gen-0023": "Politika değişikliğinin geçmiş dönem etkisi güvenilir biçimde belirlenemiyorsa ne yapılır?",
-        "std-tms8-gen-0024": "TMS 8'de 'uygulanabilir olmama' hangi durumu ifade eder?",
-        "std-tms8-gen-0026": "Bir muhasebe politikası değişikliğine ilişkin hangi bilgiler açıklanır?",
-        "std-tms8-gen-0029": "TMS 8'e göre muhasebe tahmini aşağıdakilerden hangisidir?",
-        "std-tms8-gen-0030": "Muhasebe tahminindeki değişiklik hangi yönde uygulanır?",
-        "std-tms8-gen-0031": "Yeni bilgi nedeniyle tahminin revize edilmesi nasıl değerlendirilir?",
-        "std-tms8-gen-0032": "Bir değişikliğin politika mı tahmin mi olduğu ayırt edilemiyorsa nasıl işlem yapılır?",
-        "std-tms8-gen-0033": "Maddi duran varlığın faydalı ömrünün değiştirilmesi hangi tür değişikliktir?",
-        "std-tms8-gen-0034": "Amortisman yönteminin değiştirilmesi nasıl muhasebeleştirilir?",
-        "std-tms8-gen-0035": "Şüpheli alacak karşılığının yeni bilgilerle güncellenmesi hangi tür değişikliktir?",
-        "std-tms8-gen-0036": "Muhasebe tahmininde kullanılan girdiler nasıl seçilir?",
-        "std-tms8-gen-0037": "Tahmin değişikliği gelecek dönemleri de etkiliyorsa etkiler hangi dönemlerde kaydedilir?",
-        "std-tms8-gen-0038": "Muhasebe tahmini değişikliğinin finansal etkisi nasıl açıklanır?",
     },
     "tms_38_modv": {
         "std-tms38-gen-0002": "Maddi olmayan duran varlık tanımının üç temel unsuru hangileridir?",
@@ -218,47 +188,6 @@ FULL_PATCHES = {
             "D",
             "TMS 7 par. 48-49, grup tarafından kullanılamayan önemli nakit ve nakit benzeri bakiyelerinin tutarı ile yönetimin açıklamasının sunulmasını ister. Kambiyo kontrolleri ve yasal kısıtlamalar bu duruma örnek olabilir.",
             "TMS 7 Nakit Akis Tablosu",
-        ),
-    },
-    "tms_8_politikalar": {
-        "std-tms8-gen-0015": full(
-            "Aşağıdakilerden hangisi muhasebe politikasını değiştirmek için tek başına yeterli bir neden DEĞİLDİR?",
-            {
-                "A": "Yeni bir TFRS'nin değişikliği zorunlu kılması",
-                "B": "Yeni politikanın işlemlerin etkisi hakkında daha güvenilir bilgi sağlaması",
-                "C": "Yönetimin belirli bir dönemde daha yüksek kâr göstermek istemesi",
-                "D": "Yeni politikanın finansal tablo kullanıcılarına daha ihtiyaca uygun bilgi vermesi",
-                "E": "İlgili standardın geçiş hükümlerinde politika değişikliği öngörülmesi",
-            },
-            "C",
-            "TMS 8 par. 14 uyarınca politika ancak bir TFRS gerektirdiğinde veya daha güvenilir ve ihtiyaca uygun bilgi sağladığında değiştirilir. Belirli bir dönemde raporlanan kârı artırma isteği bu ölçütleri karşılamaz.",
-            "TMS 8 Muhasebe Politikalari, Muhasebe Tahminlerinde Degisiklikler ve Hatalar",
-        ),
-        "std-tms8-gen-0025": full(
-            "Yayımlanmış ancak henüz yürürlüğe girmemiş bir TFRS için aşağıdakilerden hangisi YANLIŞTIR?",
-            {
-                "A": "İşletme standardı henüz uygulamamışsa bu durumu açıklar",
-                "B": "Bilinen veya makul biçimde tahmin edilebilen olası etki hakkında bilgi verir",
-                "C": "Erken uygulamaya izin veriliyorsa işletme bu seçeneği değerlendirebilir",
-                "D": "Yürürlük tarihine kadar standardın olası etkisi hakkında hiçbir açıklama yapılmaz",
-                "E": "Etki tahmin edilemiyorsa bu durum açıklanır",
-            },
-            "D",
-            "TMS 8 par. 30-31 uyarınca işletme, yayımlanmış fakat henüz yürürlüğe girmemiş standardı uygulamadığını ve ilk uygulamanın finansal tablolar üzerindeki bilinen veya makul biçimde tahmin edilebilen etkisini açıklar; etki tahmin edilemiyorsa bunu belirtir.",
-            "TMS 8 Muhasebe Politikalari, Muhasebe Tahminlerinde Degisiklikler ve Hatalar",
-        ),
-        "std-tms8-gen-0050": full(
-            "Önemli bir geçmiş dönem hatasının düzeltilmesine ilişkin aşağıdakilerden hangisi doğru bir uygulama DEĞİLDİR?",
-            {
-                "A": "Hatanın oluştuğu dönemin karşılaştırmalı tutarları yeniden düzenlenir",
-                "B": "Hata en erken sunulan dönemden önceyse açılış bakiyeleri düzeltilir",
-                "C": "Geriye dönük düzeltme mümkün değilse mümkün olan en erken tarih kullanılır",
-                "D": "Düzeltme tutarı hata tespit edildiği dönemin kâr veya zararına eklenir",
-                "E": "Hatanın niteliği ve ilgili finansal tablo kalemlerine etkisi açıklanır",
-            },
-            "D",
-            "TMS 8 par. 42-49: önemli geçmiş dönem hataları geriye dönük yeniden düzenlenir ve düzeltme, hatanın tespit edildiği dönemin kâr veya zararına dâhil edilmez. Hatanın niteliği ile karşılaştırmalı kalemlere ve açılış bakiyelerine etkileri açıklanır.",
-            "TMS 8 Muhasebe Politikalari, Muhasebe Tahminlerinde Degisiklikler ve Hatalar",
         ),
     },
     "tms_38_modv": {
@@ -397,7 +326,7 @@ def main() -> int:
     stem_count = sum(len(values) for values in STEMS.values())
     full_count = sum(len(values) for values in FULL_PATCHES.values())
     print(
-        f"3 paket / {stem_count} kok + {full_count} tam soru kalibrasyonu "
+        f"{len(TOPICS)} paket / {stem_count} kok + {full_count} tam soru kalibrasyonu "
         "iki repoda dogrulandi."
     )
     return 0
