@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-FM cok adimli tur. 47 soru korundu; standart paketlerine ait 7 TFRS 9/15 sorusu ve birbirini tekrarlayan 6 reeskont sorusu cikarildi (reeskont donem sonu paketinde de isleniyor). Yerine gercek sinav kalibinda 13 soru: police kesidesi ve cevrimi, bankada senet iskontosu (kayit ve dis iskonto tutari), kismen pesin kismen senetli satis, ciro edilmis bononun alinmasi, vade farki ve KDV ile senet yenileme, protesto edilip icraya konan senet, erken odeme iskontosu (611), 120 hesabinin donem hareketlerinden kalan, cekin tahsili, onculler. Kor ogrenci %21.
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.  FM cok adimli tur. 47 soru korundu; standart paketlerine ait 7 TFRS 9/15 sorusu ve birbirini tekrarlayan 6 reeskont sorusu cikarildi (reeskont donem sonu paketinde de isleniyor). Yerine gercek sinav kalibinda 13 soru: police kesidesi ve cevrimi, bankada senet iskontosu (kayit ve dis iskonto tutari), kismen pesin kismen senetli satis, ciro edilmis bononun alinmasi, vade farki ve KDV ile senet yenileme, protesto edilip icraya konan senet, erken odeme iskontosu (611), 120 hesabinin donem hareketlerinden kalan, cekin tahsili, onculler. Kor ogrenci %21. Duzeltme: cozumlerdeki '**X yanlistir**' harf atiflari kaldirildi (yeniden harflendirmede yanlis sikki gosteriyordu).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -536,7 +536,7 @@ _PATCHES = {
             'E': '121 Alacak Senetleri → Senetli ticari alacaklar',
         },
         'C',
-        "**E yanlıştır.** 122 Alacak Senetleri Reeskontu (-) bir gelir hesabı değil, **aktifi düzenleyici** bir hesaptır (alacak senetlerinden düşülür). Reeskontun gelir/gider yönü 647/657'de izlenir.",
+        "122 Alacak Senetleri Reeskontu (-) bir gelir hesabı değil, **aktifi düzenleyici** bir hesaptır (alacak senetlerinden düşülür). Reeskontun gelir/gider yönü 647/657'de izlenir.",
         "1 Sıra No'lu MSUGT - Ticari Alacaklar hesapları",
     ),
     # düzey 3

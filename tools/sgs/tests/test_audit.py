@@ -132,6 +132,14 @@ class CozumHarfiTest(unittest.TestCase):
         q["solution"] = "Gerekçe burada. Doğru cevap C."
         self.assertEqual([f for f in audit_et([q]) if "çözüm" in f], [])
 
+    def test_kalin_harf_atfi_yeniden_harflendirmede_yakalanir(self):
+        # Olumsuz kökte "**E yanlıştır.**" yazılmış, builder harfleri yeniden dağıtmış.
+        q = soru("q1", "Hangisi yanlıştır?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
+        q["solution"] = "**E yanlıştır.** Gerekçe burada."
+        self.assertTrue(any("şıkkını anıyor" in f for f in audit_et([q])), audit_et([q]))
+        q["solution"] = "Gerekçe burada; bu nedenle **C yanlıştır**."
+        self.assertEqual([f for f in audit_et([q]) if "şıkkını anıyor" in f], [])
+
 
 class GorunumTest(unittest.TestCase):
     def test_ham_kod_citi_kullaniciya_tasinamaz(self):

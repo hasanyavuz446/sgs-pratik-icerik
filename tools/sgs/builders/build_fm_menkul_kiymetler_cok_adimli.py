@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-FM cok adimli tur. 50 soru korundu; 8 TFRS 9 sorusu ve 2 ezber sorusu cikarildi. Yerine gercek sinav kalibinda 10 soru: komisyonlu hisse satisi, stopajli hazine bonosu ve finansman bonosu vade tahsili, stopajli tahvil kuponu, satis zarari (655), deger dusuklugu karsiligi hesabi, bedelsiz hisse sonrasi birim maliyet, olumsuz ve oncullu sorular. Yontemi tartismali kayitlardan (karsilik ayrilmis menkulun satisi, komisyonun kara netlenmesi, gecici yatirim temettusu) kacinildi. Kor ogrenci %22.
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.  FM cok adimli tur. 50 soru korundu; 8 TFRS 9 sorusu ve 2 ezber sorusu cikarildi. Yerine gercek sinav kalibinda 10 soru: komisyonlu hisse satisi, stopajli hazine bonosu ve finansman bonosu vade tahsili, stopajli tahvil kuponu, satis zarari (655), deger dusuklugu karsiligi hesabi, bedelsiz hisse sonrasi birim maliyet, olumsuz ve oncullu sorular. Yontemi tartismali kayitlardan (karsilik ayrilmis menkulun satisi, komisyonun kara netlenmesi, gecici yatirim temettusu) kacinildi. Kor ogrenci %22. Duzeltme: cozumlerdeki '**X yanlistir**' harf atiflari kaldirildi (yeniden harflendirmede yanlis sikki gosteriyordu).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -172,7 +172,7 @@ _PATCHES = {
             'E': 'Kısa vadeli kâr/gelir amacıyla elde tutulan menkul değerleri kapsar.',
         },
         'A',
-        '**E yanlıştır.** Uzun vadeli ortaklık/etkinlik amaçlı hisse senetleri menkul kıymetler (11) değil, **24 Mali Duran Varlıklar** (İştirakler/Bağlı Ortaklıklar) grubunda izlenir. Diğer ifadeler doğrudur.',
+        'Uzun vadeli ortaklık/etkinlik amaçlı hisse senetleri menkul kıymetler (11) değil, **24 Mali Duran Varlıklar** (İştirakler/Bağlı Ortaklıklar) grubunda izlenir. Diğer ifadeler doğrudur.',
         "1 Sıra No'lu MSUGT - 11 / 24",
     ),
     # düzey 2
@@ -522,7 +522,7 @@ _PATCHES = {
             'E': '642 Faiz Gelirleri → Hisse senedi satış kârı',
         },
         'E',
-        '**E yanlıştır.** Hisse senedi satış kârı **645 Menkul Kıymet Satış Kârları**nda izlenir; 642 Faiz Gelirleri ise tahvil/mevduat gibi faiz getiren kalemlerin geliri içindir. Diğer eşleştirmeler doğrudur.',
+        'Hisse senedi satış kârı **645 Menkul Kıymet Satış Kârları**nda izlenir; 642 Faiz Gelirleri ise tahvil/mevduat gibi faiz getiren kalemlerin geliri içindir. Diğer eşleştirmeler doğrudur.',
         "1 Sıra No'lu MSUGT - Menkul kıymet hesapları",
     ),
     # düzey 2

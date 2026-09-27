@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-FM cok adimli tur. 45 soru korundu; 5 TMS 7 sorusu ve 10 tek adimli kayit/ezber sorusu cikarildi. Icerik hatasi duzeltildi: is icin verilen avans 196 Personel Avanslari'na yaziliyordu, dogrusu 195 Is Avanslari (0035 duzeltildi, 0030 degistirildi). Yerine gercek sinav kalibinda 15 soru: nakit+kredi karti+cekle satis ve kredi karti tahsilati, banka mutabakatinda hatali kayit duzeltmesi, dovizde bozdurma ve degerleme kari, dovizle satici odemesi, mevduat faizinde stopaj (193), is avansinin kapatilmasi, ucret avansi ve maasta mahsubu, karsiliksiz cekten senede, hazir degerler toplami, onculler. Kor ogrenci %20.
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.  FM cok adimli tur. 45 soru korundu; 5 TMS 7 sorusu ve 10 tek adimli kayit/ezber sorusu cikarildi. Icerik hatasi duzeltildi: is icin verilen avans 196 Personel Avanslari'na yaziliyordu, dogrusu 195 Is Avanslari (0035 duzeltildi, 0030 degistirildi). Yerine gercek sinav kalibinda 15 soru: nakit+kredi karti+cekle satis ve kredi karti tahsilati, banka mutabakatinda hatali kayit duzeltmesi, dovizde bozdurma ve degerleme kari, dovizle satici odemesi, mevduat faizinde stopaj (193), is avansinin kapatilmasi, ucret avansi ve maasta mahsubu, karsiliksiz cekten senede, hazir degerler toplami, onculler. Kor ogrenci %20. Duzeltme: cozumlerdeki '**X yanlistir**' harf atiflari kaldirildi (yeniden harflendirmede yanlis sikki gosteriyordu).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -102,7 +102,7 @@ _PATCHES = {
             'E': 'Hesap normalde borç kalanı verir.',
         },
         'D',
-        '**D yanlıştır.** Kasa hesabı **alacak kalanı veremez** (olmayan para ödenemez). Kaydi kasanın fiiliden yüksek olması genelde belgesiz/örtülü işlem işaretidir, ancak hesabın kendisi eksi kalan gösteremez. Diğer ifadeler doğrudur.',
+        'Kasa hesabı **alacak kalanı veremez** (olmayan para ödenemez). Kaydi kasanın fiiliden yüksek olması genelde belgesiz/örtülü işlem işaretidir, ancak hesabın kendisi eksi kalan gösteremez. Diğer ifadeler doğrudur.',
         "1 Sıra No'lu MSUGT - 100 Kasa; kasa denetimi",
     ),
     # düzey 2
@@ -788,7 +788,7 @@ _PATCHES = {
             'E': 'Bir dönen varlık (aktif) hesabıdır.',
         },
         'C',
-        '**E yanlıştır.** 102 Bankalar bir **aktif (dönen varlık)** hesabıdır; para yatırılınca borçlanır, çekilince alacaklanır ve normalde **borç kalanı** verir. Kaynak (pasif) hesabı değildir.',
+        '102 Bankalar bir **aktif (dönen varlık)** hesabıdır; para yatırılınca borçlanır, çekilince alacaklanır ve normalde **borç kalanı** verir. Kaynak (pasif) hesabı değildir.',
         "1 Sıra No'lu MSUGT - 102 Bankalar",
     ),
     # düzey 3
@@ -802,7 +802,7 @@ _PATCHES = {
             'E': '103 Verilen Çekler ve Ödeme Emirleri (-) → aktifi düzenleyici',
         },
         'A',
-        "**112 Kamu Kesimi Tahvil, Senet ve Bonoları**, '11 Menkul Kıymetler' grubundadır; hazır değer değildir. Bu nedenle **E yanlıştır**. Hazır Değerler grubu 100, 101, 102, 103 ve 108 hesaplarından oluşur.",
+        "**112 Kamu Kesimi Tahvil, Senet ve Bonoları**, '11 Menkul Kıymetler' grubundadır; hazır değer değildir. Bu nedenle bu ifade yanlıştır. Hazır Değerler grubu 100, 101, 102, 103 ve 108 hesaplarından oluşur.",
         "1 Sıra No'lu MSUGT - Hazır Değerler / Menkul Kıymetler",
     ),
     # düzey 3
