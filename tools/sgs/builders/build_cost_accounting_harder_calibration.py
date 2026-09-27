@@ -15,11 +15,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 MHK_RELATIVE_PATH = "content/maliyet_muhasebesi/maliyet_hacim_kar.json"
-BIRLESIK_RELATIVE_PATH = "content/maliyet_muhasebesi/birlesik_maliyet.json"
 # gider_dagitimi.json -> build_mmuh_gider_dagitimi_tablolu.py (tek sahip)
-SAFHA_RELATIVE_PATH = "content/maliyet_muhasebesi/safha_maliyeti.json"
-# siparis_maliyeti.json -> build_siparis_maliyeti_onarim.py (tek sahip)
-STANDART_RELATIVE_PATH = "content/maliyet_muhasebesi/standart_maliyet.json"
+# safha_maliyeti.json -> build_mmuh_safha_tablolu.py (tek sahip)
+# siparis_maliyeti.json -> build_mmuh_siparis_tablolu.py (tek sahip)
+# standart_maliyet.json -> build_mmuh_standart_tablolu.py (tek sahip)
+# birlesik_maliyet.json -> build_mmuh_birlesik_tablolu.py (tek sahip)
 STYLE_REF = 'SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)'
 
 
