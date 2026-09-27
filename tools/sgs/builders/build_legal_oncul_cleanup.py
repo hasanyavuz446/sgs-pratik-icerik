@@ -52,13 +52,6 @@ PATCHES = {
             "Cezai şart asıl borca bağlı fer'i bir borçtur (I). Alacaklı zarara uğramamış olsa da kararlaştırılan cezayı isteyebileceğinden II; hâkim aşırı gördüğü cezayı kendiliğinden indirebildiğinden III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/borclar_hukuku/haksiz_fiil.json": {
-        "hakfiil-gen-0001": p(
-            "Aşağıdakilerden hangileri kusura dayanan haksız fiil sorumluluğunun unsurlarındandır?\n\nI. Hukuka aykırı bir fiil\n\nII. Zararın hiç doğmamış olması\n\nIII. Zarar veren ile zarar gören arasında önceden kurulmuş geçerli bir sözleşme",
-            "B",
-            "Hukuka aykırı fiil sorumluluğun unsurlarındandır (I). Sorumluluk için zararın doğması gerekir; zararın hiç doğmaması unsur değildir (II). Haksız fiil sözleşme dışı bir borç kaynağı olduğundan önceden sözleşme bulunması aranmaz (III). Doğru cevap **Yalnız I**.",
-        ),
-    },
     "content/borclar_hukuku/sebepsiz_zenginlesme.json": {
         "sebzen-gen-0028": p(
             "Aşağıdakilerden hangileri sebepsiz zenginleşmenin unsurlarındandır?\n\nI. Bir tarafın zenginleşmesi\n\nII. Zenginleşenin mutlaka kusurlu olması\n\nIII. Zenginleşenin haksız fiil işlemiş olması",

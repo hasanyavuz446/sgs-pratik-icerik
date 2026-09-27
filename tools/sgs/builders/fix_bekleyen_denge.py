@@ -51,32 +51,6 @@ from fix_lexical_tell import ROOT, APP_ROOT, guvenli, temizle
 
 # {paket: {"<soru-son4>|<harf>": ["ek"|"yaz", metin]}}
 YAMALAR = {
-    "borclar_hukuku/haksiz_fiil.json": {
-        "0005|B": [
-            "ek",
-            "; hafif ihmalde tazminat talebi doğrudan reddedilir"
-        ],
-        "0022|D": [
-            "ek",
-            "; kişilik hakkı ihlallerinde de aynı sınır geçerlidir"
-        ],
-        "0028|C": [
-            "ek",
-            "; rücu tutarı çalışanın kusuru oranında azaltılamaz"
-        ],
-        "0041|A": [
-            "ek",
-            "; yarışan talep kavramı Türk hukukunda benimsenmemiştir"
-        ],
-        "0054|B": [
-            "ek",
-            "; ceza davası açılmamışsa manevi tazminat istenemez"
-        ],
-        "0060|B": [
-            "ek",
-            "; yansıma yoluyla uğranan acı hukuken korunmaz"
-        ]
-    },
     "borclar_hukuku/ozel_durumlar.json": {
         "0016|C": [
             "ek",
