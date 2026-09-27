@@ -3,20 +3,20 @@
     "id": "std-tms1-gen-0001",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TMS 1'in amacı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Borsada işlem gören bir işletme, TFRS'ye uygun hazırladığı yıllık finansal raporunun içine finansal tablolar dışında yönetimin hazırladığı bazı raporları da koymuştur. TMS 1'e göre aşağıdakilerden hangisi tam bir finansal tablo setinin parçası değildir?",
     "options": {
-      "C": "Genel amaçlı finansal tabloların sunuluşuna ilişkin esasları belirlemektir",
-      "A": "Her işlem için ayrıntılı muhasebeleştirme ve ölçüm kuralları koymayı amaçlayan bir standarttır",
-      "B": "İşletmenin vergi matrahının hesaplanmasına ilişkin usulleri belirleyen bir düzenlemedir",
-      "D": "Bağımsız denetçinin denetim programını nasıl hazırlayacağını gösteren bir denetim standardıdır",
-      "E": "Yalnızca nakit akış tablosunun düzenlenmesine ilişkin esasları belirleyen bir standarttır"
+      "A": "Nakit akış tablosu",
+      "B": "Özkaynak değişim tablosu",
+      "C": "Yönetim faaliyet raporu",
+      "D": "Finansal durum tablosu",
+      "E": "Dipnotlar"
     },
     "answer": "C",
-    "solution": "TMS 1: bu Standardın amacı, genel amaçlı finansal tabloların; önceki dönemlerle ve diğer işletmelerin finansal tablolarıyla karşılaştırılabilir olmasını sağlamak üzere sunuluş esaslarını belirlemektir. Doğru cevap C.",
+    "solution": "TMS 1 p. 10'a göre tam set; finansal durum tablosu, kâr veya zarar ve diğer kapsamlı gelir tablosu, özkaynak değişim tablosu, nakit akış tablosu, dipnotlar ve karşılaştırmalı bilgiden oluşur. p. 14'e göre **yönetimin finansal raporlarla birlikte sunduğu faaliyet raporu, çevre raporu gibi raporlar TFRS kapsamı dışındadır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - amaç"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 10, 14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "std-tms1-gen-0002",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Genel amaçlı finansal tablolar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem başı özkaynağı 2.000.000 ₺'dir. Dönem içinde 350.000 ₺ net kâr elde edilmiş, diğer kapsamlı gelir olarak 60.000 ₺ yeniden değerleme artışı doğmuş, 400.000 ₺ nakit sermaye artırımı yapılmış, ortaklara 150.000 ₺ kâr payı dağıtılmış ve işletme kendi paylarından 80.000 ₺ tutarında geri almıştır. Dönem sonu özkaynak toplamı kaç ₺'dir?",
     "options": {
-      "B": "Kendi ihtiyacına göre rapor hazırlanmasını isteyemeyecek durumdaki kullanıcıların ihtiyaçlarını karşılamak üzere sunulan tablolardır",
-      "A": "Yalnızca işletme yönetiminin iç kararları için hazırlanan ve dışa açıklanmayan belgelerdir; genel amaçlı finansal tablolar dış kullanıcıların bilgi ihtiyacını hiç gözetmez",
-      "C": "Yalnızca vergi idaresine sunulmak üzere hazırlanan beyanname ve eklerini ifade eder",
-      "D": "Yalnızca bankaların kredi değerlendirmesi için özel olarak hazırladığı raporları kapsar",
-      "E": "Her kullanıcının kendi isteğine göre özel biçimde hazırlattığı raporlar genel amaçlı sayılır"
+      "A": "2.660.000",
+      "B": "2.580.000",
+      "C": "2.520.000",
+      "D": "2.180.000",
+      "E": "2.810.000"
     },
     "answer": "B",
-    "solution": "TMS 1: genel amaçlı finansal tablolar, özel raporlar hazırlanmasını talep edebilecek konumda olmayan kullanıcıların ihtiyaçlarını karşılamak amacıyla sunulan tablolardır. Doğru cevap B.",
+    "solution": "Özkaynak değişim tablosunda: 2.000.000 + 350.000 (kâr) + 60.000 (DKG) + 400.000 (sermaye artırımı) − 150.000 (kâr payı) − 80.000 (geri alınan paylar, özkaynaktan indirilir) = **2.580.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - genel amaçlı tablolar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 106"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "std-tms1-gen-0003",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TMS 1'e göre tam bir finansal tablo seti bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin yönetimi 31.12.2025 tarihli finansal tablolar yayımlanmadan önce, 2026 yılının ilk yarısında işletmeyi tasfiye etmeye ve faaliyetlerine son vermeye karar vermiştir; başka gerçekçi bir seçenek yoktur. Bu durumda finansal tabloların hazırlanmasında hangi varsayım kullanılamaz?",
     "options": {
-      "D": "Finansal durum tablosu, kâr veya zarar ve diğer kapsamlı gelir tablosu, özkaynak değişim tablosu, nakit akış tablosu ve dipnotlardan oluşur",
-      "A": "Yalnızca finansal durum tablosu ile kâr veya zarar tablosundan oluşur; diğerleri isteğe bağlıdır",
-      "B": "Yalnızca nakit akış tablosu ile dipnotlardan oluşan iki belgelik bir seti ifade eder",
-      "C": "Dipnotlar setin parçası değildir; yalnızca isteğe bağlı bir ek açıklama metni",
-      "E": "Tam finansal tablo seti yalnızca finansal durum tablosu ile kâr veya zarar tablosundan oluşur; nakit akış tablosu ve dipnotlar zorunlu değildir"
+      "A": "Tahakkuk esası",
+      "B": "Sunumda tutarlılık",
+      "C": "Karşılaştırmalı bilgi",
+      "D": "İşletmenin sürekliliği",
+      "E": "Önemlilik"
     },
     "answer": "D",
-    "solution": "TMS 1: tam bir finansal tablo seti; dönem sonu finansal durum tablosu, döneme ait kâr veya zarar ve diğer kapsamlı gelir tablosu, özkaynak değişim tablosu, nakit akış tablosu, dipnotlar ve gerekli hâllerde en erken karşılaştırmalı dönemin başındaki finansal durum tablosundan oluşur. Doğru cevap D.",
+    "solution": "TMS 1 p. 25'e göre yönetim işletmeyi tasfiye etme veya faaliyetlerine son verme niyetindeyse ya da bunu yapmaktan başka gerçekçi seçeneği yoksa finansal tablolar **işletmenin sürekliliği esasına göre hazırlanmaz**; kullanılan esas ve nedeni açıklanır. TMS 10 p. 14 raporlama döneminden sonra alınan bu kararı da kapsar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - tam set"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 25-26; TMS 10 p. 14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "std-tms1-gen-0004",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Finansal tabloların amacı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin K müşterisinden 240.000 ₺ ticari alacağı, aynı müşteriye 90.000 ₺ ticari borcu vardır. Taraflar arasında karşılıklı tutarları netleştirme hakkı veren bir anlaşma yoktur ve işletme de net tahsil etmeyi planlamamaktadır. İşletme finansal durum tablosunda ticari alacaklar içinde bu müşteri için kaç ₺ sunmalıdır?",
     "options": {
-      "B": "İşletmenin finansal durumu, finansal performansı ve nakit akışları hakkında bilgi sunmaktır",
-      "A": "Yalnızca işletmenin nakit mevcudunu göstermek amacıyla hazırlanan bir belge",
-      "C": "İşletmenin piyasa değerini kesin ve tartışmasız biçimde ortaya koymayı amaçlamaktadır",
-      "D": "Yalnızca ortaklara dağıtılacak kâr payını hesaplamak üzere düzenlenen bir hesaplama aracıdır",
-      "E": "İşletmenin gelecekteki kârını kesin olarak öngörmeyi amaçlayan bir tahmin belgesidir"
+      "A": "90.000",
+      "B": "240.000",
+      "C": "330.000",
+      "D": "0",
+      "E": "150.000"
     },
     "answer": "B",
-    "solution": "TMS 1: finansal tablolar, işletmenin finansal durumu, finansal performansı ve nakit akışları hakkında geniş bir kitleye faydalı bilgi sunmayı ve yönetimin kaynakları etkin kullanımına ilişkin hesap verebilirliğini göstermeyi amaçlar. Doğru cevap B.",
+    "solution": "TMS 1 p. 32'ye göre bir TFRS gerektirmedikçe veya izin vermedikçe **varlıklar ile borçlar netleştirilmez**. Alacak 240.000 ₺ olarak varlıklarda, borç 90.000 ₺ olarak borçlarda brüt sunulur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - finansal tabloların amacı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "std-tms1-gen-0005",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin dönem başı özkaynağı 2.000.000 ₺'dir. Dönemde 350.000 ₺ net kâr elde edilmiş, 100.000 ₺ sermaye artırımı yapılmış, 80.000 ₺ kâr payı dağıtılmış ve diğer kapsamlı gelirde 60.000 ₺ yeniden değerleme fazlası oluşmuştur. TMS 1'e göre özkaynak değişim tablosunda raporlanacak dönem sonu özkaynak kaç ₺'dir?",
+    "stem": "Bir işletme önceki yılın dipnotlarında, sonucu belirsiz olan bir tazminat davasını açıklamıştır. Dava cari yılın sonunda da sonuçlanmamıştır. Cari yıl finansal tablolarında bu dava hakkında aşağıdakilerden hangisi yapılır?",
     "options": {
-      "A": "2.370.000",
-      "B": "2.270.000",
-      "C": "2.350.000",
-      "D": "2.590.000",
-      "E": "2.430.000"
+      "A": "Önceki dönem tabloları yeniden düzenlenir",
+      "B": "Dava faaliyet raporunda anlatılır",
+      "C": "Karşılık ayrılması zorunludur",
+      "D": "Dava yeniden açıklanmaz",
+      "E": "Önceki dönem anlatımı da verilir"
     },
     "answer": "E",
-    "solution": "Dönem sonu özkaynak = 2.000.000 + 350.000 (net kâr) + 100.000 (sermaye artırımı) − 80.000 (kâr payı) + 60.000 (DKG) = **2.430.000 ₺**. Özkaynak değişim tablosu hem toplam kapsamlı geliri hem ortaklarla yapılan işlemleri gösterir.",
+    "solution": "TMS 1 p. 38 ve 38B'ye göre karşılaştırmalı bilgi **anlatım niteliğindeki bilgileri de** kapsar; önceki dönemde açıklanan ve belirsizliği süren bir davanın ayrıntıları, cari dönemde de önceki dönemde bilinen durum ve sonradan atılan adımlarla birlikte açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 38, 38B"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "std-tms1-gen-0006",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Finansal tabloların sunum sıklığı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "TMS 1'e göre finansal tabloların işletmenin finansal durumunu, finansal performansını ve nakit akışlarını gerçeğe uygun olarak sunması, Kavramsal Çerçeve'deki tanım ve muhasebeleştirme ölçütlerine uygun biçimde işlemlerin sadakatle gösterilmesini gerektirir. Aşağıdakilerden hangisi, TFRS'lerin uygulanmasıyla birlikte gerçeğe uygun sunumun sağlanması için gerekli görülen unsurlardan biridir?",
     "options": {
-      "E": "Tam bir finansal tablo seti en az yıllık olarak sunulur; dönem değişirse bu durum açıklanır",
-      "A": "Finansal tablolar yalnızca işletmenin kurulduğu yıl bir kez sunulur; sonraki yıllarda sunulmaz",
-      "B": "Finansal tablolar her ay tam set hâlinde sunulur; yıllık sunum yeterli değildir",
-      "C": "Finansal tabloların sunum sıklığı standartlarda düzenlenmemiş olup tümüyle serbest bırakılmıştır",
-      "D": "Finansal tablolar beş yılda bir sunulur; ara dönemlerde hiçbir raporlama yapılmamaktadır"
+      "A": "Tahminlerden kaçınılması",
+      "B": "Vergi mevzuatına uyulması",
+      "C": "Varlıkların düşük gösterilmesi",
+      "D": "Gelirlerin ertelenmesi",
+      "E": "Ek açıklamalar sunulması"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme tam bir finansal tablo setini (karşılaştırmalı bilgi dâhil) en az yıllık olarak sunar. Raporlama dönemi sonu değişir ve tablolar bir yıldan farklı dönem için sunulursa; dönem, nedeni ve tutarların tam karşılaştırılabilir olmadığı açıklanır. Doğru cevap E.",
+    "solution": "TMS 1 p. 17'ye göre gerçeğe uygun sunum; muhasebe politikalarının TMS 8'e göre seçilip uygulanmasını, bilginin ilgili, güvenilir, karşılaştırılabilir ve anlaşılabilir sunulmasını ve TFRS'lerin gerektirdiklerinin yetersiz kaldığı durumlarda **ek açıklamalar** yapılmasını gerektirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - sunum sıklığı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 15-17"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "std-tms1-gen-0007",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TMS 1'e göre finansal tablo başlıklarının kullanılması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin raporlama dönemi sonundaki ertelenmiş vergi varlığı 180.000 ₺'dir. Bu tutarın 70.000 ₺'lik kısmının raporlama döneminden sonraki 12 ay içinde geri çevrilmesi beklenmektedir. İşletme finansal durum tablosunda dönen varlıklar arasında ertelenmiş vergi varlığı olarak kaç ₺ sunmalıdır?",
     "options": {
-      "C": "İşletme, Standartta kullanılanlardan farklı tablo başlıkları kullanabilir",
-      "A": "İşletme Standartta yer alan başlıkları birebir kullanır; değiştiremez",
-      "B": "İşletme tablolara hiçbir başlık koymaz; tablolar başlıksız olarak sunulur",
-      "D": "Tablo başlıkları yalnızca vergi idaresi tarafından belirlenir ve her yıl yeniden ilan edilir",
-      "E": "Tablo başlığı değiştirilirse finansal tablolar kendiliğinden geçersiz hâle gelmektedir"
+      "A": "35.000",
+      "B": "110.000",
+      "C": "0",
+      "D": "180.000",
+      "E": "70.000"
     },
     "answer": "C",
-    "solution": "TMS 1: işletme, bu Standartta kullanılanlardan farklı tablo başlıkları kullanabilir. Örneğin 'finansal durum tablosu' yerine 'bilanço' başlığı kullanılabilir. Doğru cevap C.",
+    "solution": "TMS 1 p. 56'ya göre işletme, finansal durum tablosunda dönen ve duran ayrımı yaptığında **ertelenmiş vergi varlıklarını (borçlarını) dönen varlık (kısa vadeli borç) olarak sınıflandırmaz**; tamamı duran varlıktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - tablo başlıkları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 56"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "std-tms1-gen-0008",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TMS 1'in kapsamı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin kredisi 2026 Nisan ayında ödenecektir. Raporlama dönemi sonunda işletmenin bu krediyi yenileme hakkı yoktur. İşletme, raporlama döneminden sonra ve finansal tablolar yayımlanmadan önce, krediyi 2030 yılına kadar uzatan yeni bir anlaşma imzalamıştır. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "D": "Genel amaçlı finansal tabloların sunuluşunda uygulanır; ara dönem özet tablolara TMS 34 uygulanır",
-      "A": "TMS 1 yalnızca ara dönem finansal tablolarda uygulanır; yıllık tablolarda hiç uygulanmamaktadır",
-      "B": "TMS 1 yalnızca kâr amacı gütmeyen kuruluşlara uygulanan özel bir standart",
-      "C": "TMS 1 yalnızca bankalar ve sigorta şirketleri tarafından uygulanabilen bir düzenlemedir",
-      "E": "TMS 1 finansal tabloların sunuluşunu değil, yalnızca ölçüm esaslarını düzenleyen bir standarttır"
+      "A": "Yeni anlaşma düzeltme gerektirmeyen bir olaydır",
+      "B": "Yeni anlaşma dipnotlarda açıklanabilir",
+      "C": "Kredi kısa vadeli sınıflandırılır",
+      "D": "Kredi uzun vadeli sınıflandırılır",
+      "E": "Sınıflama raporlama dönemi sonundaki haklara göre yapılır"
     },
     "answer": "D",
-    "solution": "TMS 1: bu Standart, TFRS'lere uygun olarak hazırlanan genel amaçlı finansal tabloların sunuluşunda uygulanır. TMS 34 kapsamında hazırlanan ara dönem özet finansal tablolara uygulanmaz (bazı hükümleri hariç). Doğru cevap D.",
+    "solution": "TMS 1 p. 72'ye göre 12 ay içinde ödenecek borç, raporlama döneminden sonra ve tablolar onaylanmadan önce uzun vadeli yeniden finansman anlaşması yapılsa bile **kısa vadeli** sınıflandırılır; p. 76'ya göre bu anlaşma düzeltme gerektirmeyen olay olarak açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - kapsam"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 72, 76"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "std-tms1-gen-0009",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme yıl sonunda finansal durum tablosu, kâr veya zarar ve diğer kapsamlı gelir tablosu ile dipnotları hazırlamış; ancak özkaynak değişim tablosu ile nakit akış tablosunu düzenlememiştir. TMS 1'e göre bu sunum nasıl değerlendirilir?",
+    "stem": "Bir bankanın faaliyetleri belirgin bir faaliyet döngüsü içinde gerçekleşmemektedir ve varlık ile borçlarını dönen/duran ayrımı yerine likiditelerine göre sıralamak daha güvenilir ve ilgili bilgi sağlamaktadır. TMS 1'e göre banka finansal durum tablosunu hangi esasa göre sunabilir?",
     "options": {
-      "A": "Set tamdır; bu iki tablo yalnızca halka açık işletmelerde zorunludur",
-      "B": "Set eksiktir; özkaynak değişim ve nakit akış tablosu da zorunludur",
-      "C": "Set tamdır; iki tablo dipnotlarda anlatıldığı sürece ayrıca sunulmaz",
-      "D": "Yalnızca nakit akış tablosu eksiktir; özkaynak değişim tablosu zorunlu değildir",
-      "E": "Eksiklik yalnızca ara dönemde sorun oluşturur, yıllık sette gerekmez"
+      "A": "Önem derecesi sırası",
+      "B": "Likidite sırası",
+      "C": "Alfabetik sıra",
+      "D": "Vade eşleşmesi",
+      "E": "Tarihî maliyet sırası"
     },
     "answer": "B",
-    "solution": "TMS 1'e göre **tam bir finansal tablo seti**; finansal durum tablosu, kâr veya zarar ve diğer kapsamlı gelir tablosu, **özkaynak değişim tablosu**, **nakit akış tablosu** ve dipnotlardan oluşur (gerektiğinde dönem başı finansal durum tablosu eklenir). İki tablonun eksikliği seti tamamlanmamış kılar.",
+    "solution": "TMS 1 p. 60 ve 63'e göre likiditeye dayalı sunum güvenilir ve daha ilgili bilgi sağlıyorsa, örneğin finansal kuruluşlarda, varlık ve borçlar dönen/duran ayrımı yerine **likidite sırasına** göre sunulur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 60, 63"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "std-tms1-gen-0010",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin raporlama dönemi 12 aydan 9 aya indirilmiştir. Bu durumda TMS 1 bakımından doğru davranış hangisidir?",
+    "stem": "Bir işletmenin bankadaki 400.000 ₺ tutarındaki mevduatı, yurt dışında bir fabrika inşası için verilen teminat nedeniyle raporlama döneminden sonraki 18 ay boyunca kullanılamayacaktır. Bu mevduat finansal durum tablosunda nasıl sınıflandırılır?",
     "options": {
-      "A": "Raporlama dönemi 12 aydan farklı olamaz",
-      "B": "Dönem kısaltılırsa karşılaştırmalı bilgi sunulmaz",
-      "C": "9 aylık tutarlar 12 aya tamamlanarak sunulur",
-      "D": "9 aylık dönem sunulabilir; nedeni ve karşılaştırılabilirlik sınırı açıklanır",
-      "E": "Bu durumda yalnızca ara dönem finansal tablo hükümleri uygulanır"
+      "A": "Dönen varlık",
+      "B": "Nakit ve nakit benzeri",
+      "C": "Kısa vadeli borç",
+      "D": "Duran varlık",
+      "E": "Özkaynak kalemi"
     },
     "answer": "D",
-    "solution": "TMS 1, finansal tabloların en az yıllık sunulmasını ister; ancak raporlama dönemi değiştiğinde **daha uzun veya kısa bir dönem** için sunum yapılabilir. Bu durumda dönemin uzunluğu, değişikliğin **nedeni** ve karşılaştırmalı tutarların tam karşılaştırılabilir olmadığı açıklanır.",
+    "solution": "TMS 1 p. 66(d)'ye göre nakit ancak **raporlama döneminden sonra en az 12 ay süreyle bir borcun ödenmesinde veya takasında kullanımı kısıtlanmamışsa** dönen varlıktır; 18 ay kısıtlı mevduat duran varlık olarak sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 66"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "std-tms1-gen-0011",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TFRS'lere uygunluk beyanı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Giderlerini fonksiyon esasına göre sunan bir işletmenin dönem verileri şöyledir: hasılat 3.000.000 ₺, satışların maliyeti 1.800.000 ₺, pazarlama giderleri 250.000 ₺, genel yönetim giderleri 320.000 ₺, araştırma ve geliştirme giderleri 90.000 ₺, finansman giderleri 140.000 ₺. Finansman giderinden önceki esas faaliyet kârı kaç ₺'dir?",
     "options": {
-      "C": "TFRS'lerin tümüne uyan işletme, uygunluk beyanını dipnotlarda açık ve koşulsuz olarak belirtir",
-      "A": "İşletme bazı standartlara uymasa dahi uygunluk beyanında bulunabilir ve bu beyan geçerli sayılır",
-      "B": "Uygunluk beyanı yalnızca sözlü olarak yapılır; dipnotlarda yazılı biçimde yer verilmemektedir",
-      "D": "Uygunluk beyanı yalnızca denetçi tarafından yapılır; işletmenin böyle bir beyanı bulunmamaktadır",
-      "E": "Uygunluk beyanı yapılması yasaktır; işletmeler standartlara uygunluğu belirtemez"
+      "A": "1.200.000",
+      "B": "400.000",
+      "C": "540.000",
+      "D": "950.000",
+      "E": "630.000"
     },
     "answer": "C",
-    "solution": "TMS 1: TFRS'lere uygun finansal tablo düzenleyen işletme, bu uygunluğu dipnotlarda açık ve koşulsuz olarak belirtir. Tüm hükümlere uyulmadıkça tabloların TFRS'lere uygun olduğu belirtilemez. Doğru cevap C.",
+    "solution": "Fonksiyon esasında: brüt kâr 3.000.000 − 1.800.000 = 1.200.000 ₺; faaliyet giderleri 250.000 + 320.000 + 90.000 düşülünce esas faaliyet kârı **540.000 ₺**. Finansman gideri sonraki aşamada düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - uygunluk beyanı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 99, 103"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "std-tms1-gen-0012",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "İşletmenin sürekliliği bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Giderlerini fonksiyon esasına göre (satışların maliyeti, pazarlama, genel yönetim) sunan bir işletme, TMS 1'e göre giderlerin niteliğine ilişkin ek bilgi de açıklamak zorundadır. Aşağıdakilerden hangisi bu kapsamda açıklanması özellikle istenen bilgilerdendir?",
     "options": {
-      "A": "Tablolar süreklilik esasına göre hazırlanır; süreklilik varsayımı uygun değilse bu durum ve kullanılan esas açıklanır",
-      "B": "Tablolar tasfiye esasına göre hazırlanır; işletmenin sürekliliği varsayımı yalnızca kamu kurumları için geçerli olup özel işletmelere uygulanmaz",
-      "C": "Süreklilik konusunda ciddi şüphe doğsa dahi hiçbir açıklama yapılmasına gerek bulunmamaktadır",
-      "D": "Süreklilik varsayımı yalnızca halka açık şirketleri bağlar; diğer işletmeler bundan muaftır",
-      "E": "Süreklilik varsayımı, işletmenin gelecekte kâr edeceğinin garanti edilmesi anlamına gelmektedir"
+      "A": "Amortisman giderleri",
+      "B": "Satış hedefleri",
+      "C": "Kurumlar vergisi matrahı",
+      "D": "Bütçe sapmaları",
+      "E": "Pay başına temettü tahmini"
     },
     "answer": "A",
-    "solution": "TMS 1: yönetim, tabloları hazırlarken işletmenin sürekliliğini değerlendirir. Süreklilikle ilgili ciddi şüphe doğuran önemli belirsizlikler varsa açıklanır; süreklilik esası uygun değilse tablolar başka esasa göre hazırlanır, bu esas ve neden açıklanır. Doğru cevap A.",
+    "solution": "TMS 1 p. 104'e göre giderlerini fonksiyon esasına göre sınıflandıran işletmeler, **amortisman ve itfa giderleri ile çalışanlara sağlanan fayda giderleri** dâhil, giderlerin niteliğine ilişkin ek bilgi açıklar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - işletmenin sürekliliği"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 104"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "std-tms1-gen-0013",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Muhasebenin tahakkuk esası bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin cari dönem diğer kapsamlı gelir kalemleri şöyledir: maddi duran varlık yeniden değerleme artışı 200.000 ₺, tanımlanmış fayda planlarının yeniden ölçüm kaybı 50.000 ₺, gerçeğe uygun değer değişimi diğer kapsamlı gelire yansıtılan özkaynak araçlarından kazanç 30.000 ₺, yurt dışı işletmenin çevrim farkı kazancı 80.000 ₺, nakit akış riskinden korunmanın etkin kısmından kazanç 40.000 ₺. Sonradan kâr veya zarara yeniden sınıflandırılmayacak kalemlerin net toplamı kaç ₺'dir?",
     "options": {
-      "D": "Nakit akış tablosu dışındaki tüm finansal tablolar tahakkuk esasına göre hazırlanır",
-      "A": "Tüm finansal tablolar nakit esasına göre, yalnızca tahsilat ve ödemeler dikkate alınarak hazırlanır",
-      "B": "Nakit akış tablosu tahakkuk esasına, diğer tüm tablolar ise nakit esasına göre düzenlenmektedir",
-      "C": "Tahakkuk esası yalnızca vergi hesaplamasında kullanılır; finansal raporlamada uygulanmamaktadır",
-      "E": "Tahakkuk ve nakit esası arasında hiçbir fark bulunmadığından bu ayrım anlamsız kabul edilir"
+      "A": "300.000",
+      "B": "280.000",
+      "C": "230.000",
+      "D": "180.000",
+      "E": "120.000"
     },
     "answer": "D",
-    "solution": "TMS 1: işletme, nakit akış bilgileri hariç finansal tablolarını muhasebenin tahakkuk esasına göre düzenler. Kalemler, unsur tanımlarını ve muhasebeleştirme ölçütlerini karşıladıklarında finansal tablolara alınır. Doğru cevap D.",
+    "solution": "TMS 1 p. 82A'ya göre DKG kalemleri yeniden sınıflandırılacak ve sınıflandırılmayacak olarak gruplanır. Yeniden değerleme artışı, tanımlanmış fayda planı yeniden ölçümleri ve DKG'ye yansıtılan özkaynak araçları **yeniden sınıflandırılmaz**: 200.000 − 50.000 + 30.000 = **180.000 ₺**. Çevrim farkı ve nakit akış riskinden korunma kazancı yeniden sınıflandırılabilir gruptadır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - tahakkuk esası"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 82A, 96"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "std-tms1-gen-0014",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Önemlilik ve birleştirme bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme kâr veya zarar ile diğer kapsamlı gelir bilgilerini iki ayrı tabloda sunmak istemektedir. TMS 1'e göre bu durumda diğer kapsamlı gelir tablosu hangi tutarla başlar?",
     "options": {
-      "D": "Benzer kalemlerden oluşan her önemli sınıf ayrı sunulur; farklı nitelikteki kalemler önemsiz olmadıkça ayrı sunulur",
-      "A": "Tüm kalemler tek bir toplam hâlinde birleştirilerek sunulur",
-      "B": "Tüm kalemler ayrı ayrı sunulur; önemsiz olsa dahi hiçbir kalem benzerleriyle gruplandırılamaz ve tablolar aşırı ayrıntıyla doldurulur",
-      "C": "Önemlilik kavramı TMS 1'de yer almaz; yalnızca denetim standartlarının konusunu oluşturur",
-      "E": "Kalemlerin sunumu tümüyle işletmenin keyfine bırakılmış olup hiçbir ölçüt bulunmamaktadır"
+      "A": "Brüt kâr",
+      "B": "Esas faaliyet kârı",
+      "C": "Vergi öncesi kâr",
+      "D": "Dönem kâr veya zararı",
+      "E": "Hasılat"
     },
     "answer": "D",
-    "solution": "TMS 1: işletme, benzer kalemlerden oluşan her önemli sınıfı finansal tablolarda ayrı olarak sunar. Farklı nitelikteki veya işlevdeki kalemler, önemsiz olmadıkça ayrı sunulur. Doğru cevap D.",
+    "solution": "TMS 1 p. 10A'ya göre işletme tek bir tablo veya iki tablo sunabilir; iki tablo sunulursa ayrı kâr veya zarar tablosu kapsamlı gelir tablosundan hemen önce gelir ve **kapsamlı gelir tablosu kâr veya zararla başlar**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - önemlilik ve birleştirme"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 10A, 81A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "std-tms1-gen-0015",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Netleştirme (mahsup) bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, gerçeğe uygun değeriyle ölçtüğü yatırım amaçlı gayrimenkullerinin değerlemesinde kullanılan varsayımların, gelecek yıl varlıkların defter değerinde önemli bir düzeltmeye yol açma riskinin yüksek olduğunu belirlemiştir. TMS 1'e göre bu bilgi hangi başlık altında açıklanır?",
     "options": {
-      "B": "Bir TFRS gerektirmedikçe veya izin vermedikçe varlıklar ile borçlar, gelirler ile giderler netleştirilmez",
-      "A": "Varlıklar ile borçlar net tutar üzerinden gösterilir; brüt gösterim yasaktır",
-      "C": "Netleştirme tümüyle serbest olup işletme dilediği kalemleri netleştirerek sunabilmektedir",
-      "D": "Netleştirme yasağı yalnızca gelir ve giderler için geçerli olup varlık ve borçları kapsamaz",
-      "E": "Varlıklar ile borçlar ve gelirler ile giderler netleştirilerek finansal tablolarda tek bir net tutar biçiminde sunulur"
+      "A": "Muhasebe politikası değişiklikleri",
+      "B": "Tahmin belirsizliğinin kaynakları",
+      "C": "Koşullu varlıklar",
+      "D": "Sermayenin yönetimi",
+      "E": "Hata düzeltmeleri"
     },
     "answer": "B",
-    "solution": "TMS 1: bir TFRS gerektirmedikçe veya izin vermedikçe varlıklar ile borçlar, gelirler ile giderler netleştirilmez. Ancak stok değer düşüklüğü karşılığı gibi düzeltici hesapların indirilmesi netleştirme sayılmaz. Doğru cevap B.",
+    "solution": "TMS 1 p. 125'e göre işletme, **gelecek finansal yıl içinde varlık ve borçların defter değerlerinde önemli düzeltme riski taşıyan** geleceğe ilişkin varsayımları ve **tahmin belirsizliğinin diğer temel kaynaklarını** açıklar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - netleştirme"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 125"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "std-tms1-gen-0016",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Karşılaştırmalı bilgi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin yönetimi, bir kuruluş üzerinde oy haklarının %40'ına sahip olmasına rağmen diğer oy haklarının dağınık olması nedeniyle kontrol gücü bulunduğuna karar vermiş ve kuruluşu bağlı ortaklık olarak konsolide etmiştir. Bu karar tahmin içermeyen, muhasebe politikasının uygulanmasına ilişkin bir değerlendirmedir. TMS 1'e göre bu karar dipnotlarda hangi başlıkta açıklanır?",
     "options": {
-      "C": "Bir TFRS aksini öngörmedikçe, cari dönemde raporlanan tüm tutarlar için önceki döneme ait karşılaştırmalı bilgi sunulur",
-      "A": "Finansal tablolarda yalnızca cari dönem verileri sunulur; önceki döneme ait karşılaştırmalı bilgilerin sunulması gerekli görülmez ve karşılaştırma yapılmaz",
-      "B": "Karşılaştırmalı bilgi verilmesi tümüyle işletmenin takdirinde olup standartlarda düzenlenmemiştir",
-      "D": "Karşılaştırmalı bilgi yalnızca finansal durum tablosunda verilir; gelir tablosunda verilmemektedir",
-      "E": "Karşılaştırmalı bilgi verilirken önceki dönem tutarları cari dönemle toplanarak gösterilmektedir"
+      "A": "Hata düzeltmeleri",
+      "B": "Tahmin belirsizliğinin kaynakları",
+      "C": "Yönetimin yaptığı muhakemeler",
+      "D": "Sonraki olaylar",
+      "E": "Koşullu borçlar"
     },
     "answer": "C",
-    "solution": "TMS 1: bir TFRS aksine izin vermedikçe veya gerektirmedikçe, cari dönem finansal tablolarında raporlanan tüm tutarlar için önceki döneme ilişkin karşılaştırmalı bilgi sunulur. Anlaşılabilirlik için gerekliyse anlatısal bilgi de karşılaştırmalı verilir. Doğru cevap C.",
+    "solution": "TMS 1 p. 122'ye göre işletme, muhasebe politikalarını uygularken **tahminler dışında** yönetimin yaptığı ve tutarlar üzerinde en önemli etkiye sahip **muhakemeleri** açıklar; bir kuruluşun kontrol edilip edilmediğine ilişkin karar bunun örneğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - karşılaştırmalı bilgi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 122"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "std-tms1-gen-0017",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Sunumun tutarlılığı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme dipnotlarını, finansal tablolarda sunulan kalemlerle çapraz referans vermeden ve rastgele sırayla düzenlemiştir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "D": "Kalemlerin sunumu ve sınıflandırması dönemler arasında aynı şekilde sürdürülür; ancak haklı sebeple değiştirilebilir",
-      "A": "Sunum ve sınıflandırma her dönem rastgele değiştirilir; tutarlılık aranmamaktadır",
-      "B": "Sunum ve sınıflandırma değiştirilemez; ilk dönemde seçilen biçim, daha uygun bir sunum ortaya çıksa dahi sonraki tüm dönemlerde aynen korunur",
-      "C": "Tutarlılık ilkesi TMS 1'de yer almaz; her dönem farklı sunum yapılması serbest bırakılmıştır",
-      "E": "Sunumun tutarlılığı yalnızca vergi idaresinin izniyle sağlanabilen bir uygulama"
+      "A": "Tablodaki kalemler ilgili dipnota çapraz referans verir",
+      "B": "Sıralamada anlaşılabilirlik dikkate alınır",
+      "C": "Dipnotlar sistematik biçimde sunulur",
+      "D": "Dipnotların sırası serbesttir, referans gerekmez",
+      "E": "TFRS'ye uygunluk beyanı dipnotlarda yer alır"
     },
     "answer": "D",
-    "solution": "TMS 1: finansal tablolardaki kalemlerin sunumu ve sınıflandırması dönemden döneme aynı şekilde sürdürülür. Ancak faaliyetlerin niteliğinde önemli değişiklik olması veya başka bir sunumun daha uygun olduğunun anlaşılması gibi hâllerde değiştirilebilir; bu durumda karşılaştırmalı tutarlar yeniden sınıflandırılır. Doğru cevap D.",
+    "solution": "TMS 1 p. 113'e göre işletme dipnotları, uygulanabildiği ölçüde **sistematik biçimde** sunar ve finansal tablolardaki her kalem için ilgili dipnota **çapraz referans** verir; p. 114'e göre sıralamada anlaşılabilirlik ve karşılaştırılabilirlik dikkate alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - sunumun tutarlılığı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 113-114"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "std-tms1-gen-0018",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Gerçeğe uygun sunum bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem içindeki brüt satışları 2.400.000 ₺, müşterilere verilen satış iskontoları 150.000 ₺ ve ciro primleri 50.000 ₺'dir. TMS 1 ve TFRS 15'e göre kâr veya zarar tablosunda hasılat olarak kaç ₺ sunulur?",
     "options": {
-      "E": "TFRS'lere uygunluk, gerçeğe uygun sunumu sağlar; gerekirse ilave açıklama yapılır",
-      "A": "TFRS'lere uygunluk gerçeğe uygun sunum için yeterli değildir; farklı bir esas aranır",
-      "B": "Gerçeğe uygun sunum, işletmenin istediği sonucu gösterecek biçimde tablo düzenlemesini ifade eder",
-      "C": "Gerçeğe uygun sunum yalnızca vergi mevzuatına uygunluğu ifade eden bir kavram",
-      "D": "Gerçeğe uygun sunum ancak TFRS hükümlerinden sapılarak sağlanır; TFRS'lere tam uyum tek başına gerçeğe uygun sunumu güvence altına almaz"
+      "A": "2.400.000",
+      "B": "2.350.000",
+      "C": "2.250.000",
+      "D": "2.600.000",
+      "E": "2.200.000"
     },
     "answer": "E",
-    "solution": "TMS 1: finansal tablolar işletmenin finansal durumunu, performansını ve nakit akışlarını gerçeğe uygun olarak sunar. TFRS'lerin uygulanması ve gerekli durumlarda ilave açıklama yapılması, gerçeğe uygun sunumu sağlar. Doğru cevap E.",
+    "solution": "TMS 1 p. 34(a) ve TFRS 15 uyarınca hasılat, işletmenin verdiği **ticari iskonto ve miktar indirimleri düşülmüş tutarla** ölçülür; bu netleştirme yasağının ihlali değildir: 2.400.000 − 150.000 − 50.000 = **2.200.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - gerçeğe uygun sunum"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 34; TFRS 15 p. 47"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "std-tms1-gen-0019",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Finansal tabloların belirlenmesi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Finansal durum tablosunda sınıflandırmaya ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Ertelenmiş vergi borcu kısa vadeli borç olarak sınıflandırılmaz\n\nII. Raporlama döneminden sonra yapılan yeniden finansman anlaşması borcu uzun vadeli yapar\n\nIII. Normal faaliyet döngüsündeki ticari borçlar 12 aydan geç ödense de kısa vadelidir",
     "options": {
-      "E": "Finansal tablolar açıkça tanımlanır ve aynı belgedeki diğer bilgilerden ayırt edilir",
-      "A": "Finansal tablolar diğer bilgilerle karıştırılabilir; ayırt edilmelerine gerek bulunmamaktadır",
-      "B": "Finansal tablolarda işletmenin adı belirtilmez; anonim biçimde sunulur",
-      "C": "Finansal tablolarda raporlama dönemi belirtilmez; yalnızca tutarlar gösterilmektedir",
-      "D": "Finansal tabloların tanımlanması yalnızca denetçinin sorumluluğunda olan bir işlemdir"
+      "A": "II ve III",
+      "B": "Yalnız III",
+      "C": "I, II ve III",
+      "D": "Yalnız I",
+      "E": "I ve III"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme finansal tabloları açıkça tanımlar ve aynı belgede yer alan diğer bilgilerden ayırt eder. Raporlayan işletmenin adı, tabloların bireysel/konsolide olduğu, raporlama dönemi, para birimi ve yuvarlama derecesi açıkça belirtilir. Doğru cevap E.",
+    "solution": "TMS 1 p. 56'ya göre ertelenmiş vergi kısa vadeli sınıflandırılmaz (I); p. 70'e göre işletme sermayesinin parçası olan ticari borçlar kısa vadelidir (III). p. 72'ye göre raporlama döneminden sonraki yeniden finansman **sınıflamayı değiştirmez** (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - tabloların tanımlanması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 56, 69-73"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "std-tms1-gen-0020",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme, bir varlığı ve buna karşılık gelen bir borcu net tutar olarak tek satırda göstermek istemektedir. TMS 1 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri TMS 1'e göre dipnotlarda açıklanır?\n\nI. Önemli muhasebe politikası bilgisi\n\nII. Tahmin belirsizliğinin temel kaynakları\n\nIII. Fonksiyon esasını seçen işletmede amortisman gideri tutarı",
     "options": {
-      "D": "Bir TFRS izin vermedikçe netleştirme yapılamaz; varlık ve borç brüt olarak ayrı gösterilir",
-      "A": "Netleştirme serbesttir; işletme dilediği kalemleri net olarak gösterebilmektedir",
-      "B": "Netleştirme yalnızca tutarlar eşitse yapılabilir; farklı tutarlarda netleştirme yasaklanmıştır",
-      "C": "Netleştirme yapılırsa finansal tablolar kendiliğinden geçersiz sayılır ve yeniden düzenlenir",
-      "E": "Netleştirme yalnızca denetçinin onayıyla ve her yıl yeniden izin alınarak yapılabilmektedir"
+      "A": "I ve III",
+      "B": "II ve III",
+      "C": "Yalnız I",
+      "D": "I, II ve III",
+      "E": "I ve II"
     },
     "answer": "D",
-    "solution": "TMS 1: bir TFRS gerektirmedikçe veya izin vermedikçe varlıklar ile borçlar netleştirilmez. Netleştirme, kullanıcıların işlemleri anlama ve gelecekteki nakit akışlarını değerlendirme yeteneğini azaltır. Doğru cevap D.",
+    "solution": "TMS 1 p. 117'ye göre önemli muhasebe politikası bilgisi (I), p. 125'e göre tahmin belirsizliğinin temel kaynakları (II) ve p. 104'e göre fonksiyon esasını seçen işletmede giderlerin niteliğine ilişkin ek bilgi, özellikle amortisman (III) açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - netleştirme (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 104, 117, 125"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "std-tms1-gen-0021",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme TFRS'lerin çoğuna uymuş ancak bir standardın hükmünü uygulamamıştır. TMS 1 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme 2025 yılında bir finansal tablo kalemini yeniden sınıflandırmış ve karşılaştırmalı tutarları da buna göre düzenlemiştir. Yeniden sınıflandırmanın 1 Ocak 2024 tarihli finansal durum tablosundaki bilgiler üzerinde önemli bir etkisi yoktur. İşletme 2025 finansal tablolarında kaç adet finansal durum tablosu sunmalıdır?",
     "options": {
-      "B": "Tüm hükümlere uyulmadıkça tabloların TFRS'lere uygun olduğu belirtilemez",
-      "A": "İşletme çoğu standarda uyduğu için uygunluk beyanında bulunabilir ve bu beyan geçerli olur",
-      "C": "İşletme uymadığı standardı dipnotta belirtmek koşuluyla uygunluk beyanı yapabilmektedir",
-      "D": "Uygunluk beyanı standartlara uyumla ilgili değildir; ve koşulsuz yapılabilmektedir",
-      "E": "İşletme bu durumda finansal tablo düzenlemekten tümüyle muaf tutulmuş olur"
+      "A": "4",
+      "B": "2",
+      "C": "6",
+      "D": "1",
+      "E": "3"
     },
     "answer": "B",
-    "solution": "TMS 1: finansal tablolar, TFRS'lerin tüm hükümlerine uymadıkça TFRS'lere uygun olarak nitelendirilemez. Uygunluk beyanı açık ve koşulsuz olmalıdır. Doğru cevap B.",
+    "solution": "TMS 1 p. 40A'ya göre önceki dönemin başına ait üçüncü bir finansal durum tablosu ancak geriye dönük uygulama, düzeltme veya yeniden sınıflandırma **önceki dönem başındaki bilgiler üzerinde önemli bir etkiye sahipse** sunulur. Etki önemli olmadığından cari dönem sonu ve önceki dönem sonu olmak üzere **2** tablo yeterlidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - uygunluk beyanı (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 10(f), 40A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "std-tms1-gen-0022",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin ticari alacağı 240.000 ₺, aynı müşteriye ticari borcu 90.000 ₺'dir; yasal netleştirme hakkı bulunmamaktadır. Ayrıca 500.000 ₺ hasılatına karşılık 40.000 ₺ satış iadesi vardır. TMS 1'in netleştirme hükmü bakımından doğru sunum hangisidir?",
+    "stem": "Bir işletmenin cari dönem verileri şöyledir: dönem net kârı 850.000 ₺, maddi duran varlık yeniden değerleme artışı 120.000 ₺, yurt dışı işletmenin çevriminden doğan kur farkı kaybı 40.000 ₺, nakit sermaye artırımı 300.000 ₺ ve ortaklara dağıtılan kâr payı 100.000 ₺. İşletmenin toplam kapsamlı geliri kaç ₺'dir?",
     "options": {
-      "A": "Alacak ve borç ayrı sunulur; hasılat 460.000 ₺ net gösterilir",
-      "B": "Hem alacak-borç hem hasılat-iade netleştirilir; 150.000 ₺ ve 460.000 ₺ sunulur",
-      "C": "Hiçbir kalem netleştirilemez; 240.000, 90.000, 500.000 ve 40.000 ₺ ayrı satırlarda sunulur",
-      "D": "Alacak ile borç netleştirilip 150.000 ₺, hasılat ise brüt 500.000 ₺ sunulur",
-      "E": "Netleştirme tümüyle işletmenin tercihine bırakılmıştır"
+      "A": "930.000",
+      "B": "1.230.000",
+      "C": "1.010.000",
+      "D": "830.000",
+      "E": "850.000"
     },
     "answer": "A",
-    "solution": "TMS 1 varlık ve borçların netleştirilmesini kural olarak yasaklar: alacak **240.000 ₺** ve borç **90.000 ₺** ayrı sunulur. Buna karşılık **satış iadeleri ve indirimleri hasılatın ölçümünün bir parçasıdır**; hasılat 500.000 − 40.000 = **460.000 ₺** net olarak raporlanır. Bu, netleştirme yasağının istisnası değil hasılat ölçümüdür.",
+    "solution": "Toplam kapsamlı gelir = kâr veya zarar + diğer kapsamlı gelir: 850.000 + 120.000 − 40.000 = **930.000 ₺**. Sermaye artırımı ve kâr payı ortaklarla işlemdir; toplam kapsamlı gelire girmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 7, 81A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "std-tms1-gen-0023",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme cari dönemde stok kalemini farklı bir satırda sunmaya karar vermiş ve önceki dönem tutarlarını da buna göre yeniden sınıflandırmıştır. Yeniden sınıflandırılan tutar 320.000 ₺'dir. TMS 1'e göre işletmenin yapması gereken nedir?",
+    "stem": "Raporlama dönemi 31 Aralık 2025'te sona eren bir işletmenin yönetimi, işletmenin sürekliliği varsayımının uygunluğunu değerlendirirken TMS 1'e göre en az hangi tarihe kadar olan dönemi dikkate almalıdır?",
     "options": {
-      "A": "Önceki dönem tutarları değiştirilemez",
-      "B": "Yeniden sınıflandırma yapılır ancak açıklama gerekmez",
-      "C": "Karşılaştırmalı tutarlar da yeniden sınıflandırılır ve dipnotta açıklanır",
-      "D": "Yalnızca cari dönem değiştirilir; önceki dönem olduğu gibi bırakılır",
-      "E": "Bu değişiklik ancak geriye dönük üç dönem için uygulanabilir"
+      "A": "Finansal tabloların onay tarihi",
+      "B": "31 Aralık 2027",
+      "C": "31 Aralık 2026",
+      "D": "30 Haziran 2026",
+      "E": "31 Mart 2026"
     },
     "answer": "C",
-    "solution": "TMS 1'e göre sunum veya sınıflandırma değiştirildiğinde **karşılaştırmalı tutarlar da yeniden sınıflandırılır**; ayrıca yeniden sınıflandırmanın **niteliği, tutarı (320.000 ₺) ve nedeni** dipnotlarda açıklanır. Uygulanabilir olmadığı durumlarda bunun gerekçesi belirtilir.",
+    "solution": "TMS 1 p. 26'ya göre yönetim, işletmenin sürekliliği varsayımını değerlendirirken **raporlama döneminin sonundan itibaren en az on iki aylık** geleceğe ilişkin bütün bilgileri dikkate alır; ancak bu süreyle sınırlı değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 26"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "std-tms1-gen-0024",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "TMS 1'e göre finansal tabloların tanımlanması bakımından aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Finansal tablolar, aynı belgede yer alan diğer bilgilerden açıkça ayırt edilebilir olmalıdır.\n\nII. Raporlama para birimi ile sunum yuvarlama düzeyinin belirtilmesi işletmenin tercihine bırakılmıştır.\n\nIII. İşletmenin adı ve raporlama dönemi yalnızca ilk sayfada bir kez gösterilir; tablolarda tekrarlanmaz.",
+    "stem": "Bir işletme defter değeri 380.000 ₺ olan bir makinesini 500.000 ₺'ye satmış, satış için 20.000 ₺ komisyon ödemiştir. Makine yatırım amaçlı değildir ve işletmenin olağan faaliyeti makine satmak değildir. Bu satıştan doğan ve kâr veya zarar tablosunda sunulacak tutar kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "I ve III",
-      "D": "II ve III",
-      "E": "I, II ve III"
+      "A": "100.000",
+      "B": "380.000",
+      "C": "120.000",
+      "D": "480.000",
+      "E": "500.000"
     },
     "answer": "A",
-    "solution": "**II yanlıştır:** TMS 1, raporlama para biriminin ve sunumda kullanılan **yuvarlama düzeyinin belirtilmesini zorunlu kılar**; tercihe bırakılmamıştır. **III yanlıştır:** işletme adı, raporlama dönemi ve para birimi gibi bilgiler **her finansal tabloda ve dipnotlarda** anlaşılır biçimde tekrarlanır. Yalnızca **I** doğrudur.",
+    "solution": "TMS 1 p. 34'e göre duran varlıkların elden çıkarılmasından doğan kazanç ve kayıplar, **satış bedelinden varlığın defter değeri ve ilgili satış giderleri düşülerek net** sunulur; bu, netleştirme yasağının ihlali sayılmaz: 500.000 − 380.000 − 20.000 = **100.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "std-tms1-gen-0025",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Finansal durum tablosunda dönen/duran ayrımı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir perakende işletmesi, faaliyet dönemini her yıl ocak ayının son cumartesi günü biten 52 haftalık dönem olarak belirlemiştir. Bu yıl bir birleşme nedeniyle raporlama dönemi 9 ay olmuştur. TMS 1'e göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "B": "İşletme, likidite esasına göre sunum daha uygun bilgi vermedikçe dönen/duran ve kısa/uzun vadeli ayrımı yapar",
-      "A": "İşletme likidite esasına göre sunum yapır; dönen/duran ayrımı yasaktır",
-      "C": "Dönen/duran ayrımı yalnızca üretim işletmelerinde yapılır; ticaret işletmeleri bundan muaftır",
-      "D": "Tüm varlıklar duran varlık olarak sınıflandırılır; dönen varlık kategorisi bulunmamaktadır",
-      "E": "Finansal durum tablosunda likidite esasına göre sunum yapılır; dönen ve duran varlık ayrımına izin verilmez"
+      "A": "Finansal tablolar en az yılda bir kez sunulur",
+      "B": "52 haftalık dönem TMS 1'e aykırıdır",
+      "C": "Raporlama dönemi değiştiği için nedeni açıklanır",
+      "D": "Dönem uzunluğu değişse de karşılaştırmalı bilgi verilir",
+      "E": "Tutarların tam karşılaştırılabilir olmadığı açıklanır"
     },
     "answer": "B",
-    "solution": "TMS 1: işletme, likidite esasına göre sunumun daha uygun ve ihtiyaca daha uygun bilgi sağladığı durumlar hariç, finansal durum tablosunda dönen/duran varlıklar ile kısa/uzun vadeli yükümlülükleri ayrı sınıflar hâlinde sunar. Doğru cevap B.",
+    "solution": "TMS 1 p. 36'ya göre finansal tablolar en az yılda bir sunulur; raporlama dönemi bir yıldan uzun veya kısa olursa **dönemin kullanılma nedeni ve tutarların tam karşılaştırılabilir olmadığı** açıklanır. p. 37'ye göre uygulamada **52 haftalık dönem kullanılması TMS 1 tarafından engellenmez**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dönen/duran ayrımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "std-tms1-gen-0026",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin raporlama dönemi sonundaki bakiyeleri şöyledir: kasa ve banka 150.000 ₺, ticari alacaklar 320.000 ₺ (tamamı 8 ay içinde tahsil edilecek), stoklar 400.000 ₺ (normal faaliyet döngüsü içinde satılacak), makine 900.000 ₺, 3 yıl vadeli verilen depozito 60.000 ₺. TMS 1'e göre dönen varlıklar toplamı kaç ₺'dir?",
+    "stem": "Normal faaliyet döngüsü 18 ay olan bir üretim işletmesinin raporlama dönemi sonundaki bakiyeleri şöyledir: kasa ve banka 150.000 ₺ (kullanım kısıtı yok), 10 ay vadeli ticari alacaklar 320.000 ₺, ticari amaçla elde tutulan hisse senetleri 90.000 ₺, 15 ayda satılması beklenen stoklar 410.000 ₺, personele verilen 30 ay vadeli borçlar 200.000 ₺, yatırım amaçlı gayrimenkuller 750.000 ₺ ve ertelenmiş vergi varlığı 60.000 ₺. İşletmenin dönen varlık toplamı kaç ₺'dir?",
     "options": {
-      "A": "930.000",
-      "B": "1.770.000",
-      "C": "870.000",
-      "D": "470.000",
-      "E": "1.830.000"
+      "A": "1.170.000",
+      "B": "880.000",
+      "C": "970.000",
+      "D": "1.030.000",
+      "E": "560.000"
     },
     "answer": "C",
-    "solution": "Dönen varlık; nakit ve nakit benzerleri, normal faaliyet döngüsü içinde paraya çevrilmesi beklenenler ile 12 ay içinde paraya çevrilecek kalemlerden oluşur: 150.000 + 320.000 + 400.000 = **870.000 ₺**. Makine ve 3 yıl vadeli depozito duran varlıktır.",
+    "solution": "TMS 1 p. 66'ya göre normal faaliyet döngüsünde gerçekleşecek (stoklar 15 ay olsa da), ticari amaçla elde tutulan ve 12 ay içinde gerçekleşecek varlıklar ile kısıtsız nakit dönen varlıktır. 30 ay vadeli personel alacakları ve yatırım amaçlı gayrimenkuller duran varlıktır; p. 56'ya göre **ertelenmiş vergi varlıkları dönen varlık olarak sınıflandırılmaz**: 150.000 + 320.000 + 90.000 + 410.000 = **970.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 56, 66, 68"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "std-tms1-gen-0027",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin borçları şöyledir: ticari borçlar 260.000 ₺ (4 ay içinde ödenecek), 5 yıl vadeli banka kredisi 1.000.000 ₺ (bu tutarın 200.000 ₺'lik kısmı raporlama döneminden sonraki 12 ay içinde ödenecektir), ödenecek vergi 90.000 ₺ (2 ay içinde). TMS 1'e göre kısa vadeli yükümlülükler toplamı kaç ₺'dir?",
+    "stem": "Bir işletmenin 2026 Mart ayında vadesi dolacak kredisi vardır. Raporlama dönemi sonunda yürürlükte olan kredi sözleşmesi, işletmeye tek taraflı kararıyla krediyi aynı bankadan 2029 yılına kadar yenileme hakkı vermektedir ve işletme bu hakkı kullanmayı beklemektedir. Kredi finansal durum tablosunda nasıl sınıflandırılır?",
     "options": {
-      "A": "350.000",
-      "B": "1.350.000",
-      "C": "1.550.000",
-      "D": "460.000",
-      "E": "550.000"
+      "A": "Özkaynak kalemi",
+      "B": "Karşılık",
+      "C": "Koşullu borç",
+      "D": "Kısa vadeli borç",
+      "E": "Uzun vadeli borç"
     },
     "answer": "E",
-    "solution": "Uzun vadeli kredinin **12 ay içinde ödenecek taksiti kısa vadeli yükümlülük** olarak sınıflandırılır: 260.000 + 200.000 + 90.000 = **550.000 ₺**. Kredinin kalan 800.000 ₺'si uzun vadelidir. (Taksiti atlamak 350.000 ₺ verir.)",
+    "solution": "TMS 1 p. 73'e göre işletme, raporlama dönemi sonunda mevcut bir kredi sözleşmesi uyarınca borcu **raporlama döneminden sonra en az 12 ay süreyle yenileme hakkına sahipse ve bunu bekliyorsa**, borç vadesi daha kısa olsa bile uzun vadeli sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 73"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "std-tms1-gen-0028",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Normal faaliyet döngüsü 18 ay olan bir üretim işletmesinin stokları, üretim ve satış süreci nedeniyle ancak 15 ay sonra paraya çevrilebilmektedir. Stokların tutarı 700.000 ₺'dir. TMS 1'e göre bu stoklar nasıl sınıflandırılır?",
+    "stem": "Normal faaliyet döngüsü 20 ay olan bir gemi inşa işletmesinin, üretimde kullandığı malzemeler için tedarikçilere olan ticari borçlarının bir kısmı raporlama döneminden 14 ay sonra ödenecektir. Bu ticari borçlar nasıl sınıflandırılır?",
     "options": {
-      "A": "12 ayı aştığı için 700.000 ₺'nin tamamı duran varlıktır",
-      "B": "Faaliyet döngüsü içinde çevrildiğinden 700.000 ₺ dönen varlıktır",
-      "C": "12 aya isabet eden kısmı dönen, kalanı duran varlık olarak bölünür",
-      "D": "Faaliyet döngüsü dikkate alınmaz; stoklar duran varlıktır",
-      "E": "Stoklar likidite esasına göre sunulmak zorundadır"
+      "A": "Uzun vadeli borç",
+      "B": "Kısa vadeli borç",
+      "C": "Koşullu borç",
+      "D": "Diğer duran yükümlülük",
+      "E": "Kısmen uzun vadeli borç"
     },
     "answer": "B",
-    "solution": "TMS 1'e göre bir varlık, **normal faaliyet döngüsü içinde** paraya çevrilmesi bekleniyorsa 12 ayı aşsa dahi **dönen varlıktır**. Döngü 18 ay olduğundan 15 ayda paraya çevrilecek 700.000 ₺'lik stokun tamamı dönen varlık olarak sunulur.",
+    "solution": "TMS 1 p. 70'e göre ticari borçlar ile çalışanlara ilişkin tahakkuklar gibi işletmenin **normal faaliyet döngüsünde kullanılan işletme sermayesinin parçası** olan borçlar, raporlama döneminden sonraki 12 aydan daha geç ödenecek olsalar bile **kısa vadeli** sınıflandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 70"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "std-tms1-gen-0029",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Finansal durum tablosunda sunulacak kalemler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, yönetimin satışa karar verdiği ve aktif olarak alıcı aradığı bir fabrika binasını TFRS 5 kapsamında satış amaçlı sınıflandırmıştır; binaya ilişkin ipotekli kredi de alıcıya devredilecektir. Bu kalemlerin finansal durum tablosunda sunumu hakkında aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "D": "Standart asgari kalemleri sayar; işletme ihtiyaca uygunsa ilave kalem, başlık ve ara toplam sunar",
-      "A": "Standart tüm kalemleri tek tek ve kesin biçimde sayar; ilave kalem sunulması yasaklanmıştır",
-      "B": "Standart hiçbir kalem saymaz; tablo düzeni tümüyle işletmenin serbest tercihine bırakılmıştır",
-      "C": "Tablo düzeni yalnızca vergi idaresince belirlenir; işletmenin hiçbir takdir yetkisi bulunmaz",
-      "E": "İlave kalem sunulması hâlinde finansal tablolar TFRS'lere aykırı hâle gelmiş sayılır"
+      "A": "Kredi diğer borçlardan ayrı sunulur",
+      "B": "Kredi kısa vadeli borçlarda yer alır",
+      "C": "Bina diğer varlıklardan ayrı sunulur",
+      "D": "Bina ile kredi netleştirilerek gösterilir",
+      "E": "Bina dönen varlıklar arasında yer alır"
     },
     "answer": "D",
-    "solution": "TMS 1: Standart finansal durum tablosunda sunulacak asgari kalemleri belirler. İşletmenin finansal durumunun anlaşılması bakımından ihtiyaca uygunsa ilave kalemler, başlıklar ve ara toplamlar sunulur. Doğru cevap D.",
+    "solution": "TMS 1 p. 54(j) ve (p) ile TFRS 5 p. 38'e göre satış amaçlı sınıflandırılan varlıklar ile bunlarla ilişkili borçlar **ayrı ayrı** sunulur; **netleştirilmez**. Satış amaçlı duran varlık grupları dönen varlık, ilişkili borçlar kısa vadeli borç olarak gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - sunulacak kalemler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 54; TFRS 5 p. 38"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "std-tms1-gen-0030",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin ertelenmiş vergi varlığı 180.000 ₺ olup bunun 70.000 ₺'lik kısmının 12 ay içinde kapanması beklenmektedir. TMS 1'e göre bu tutar finansal durum tablosunda nasıl sunulur?",
+    "stem": "Borsada işlem gören bir işletme 30 Haziran 2026 tarihli altı aylık özet (kısa) finansal tablolarını hazırlamaktadır. Bu özet tabloların yapısı ve içeriği hangi standarda göre belirlenir?",
     "options": {
-      "A": "70.000 ₺ dönen, 110.000 ₺ duran varlık olarak bölünerek sunulur",
-      "B": "Tamamı dönen varlık olarak sunulur",
-      "C": "Ertelenmiş vergi varlığı finansal durum tablosunda gösterilmez, yalnızca dipnotta açıklanır",
-      "D": "180.000 ₺'nin tamamı duran varlıkta sunulur",
-      "E": "Ödenecek vergi ile netleştirilerek tek satırda sunulur"
+      "A": "TMS 10",
+      "B": "TMS 1",
+      "C": "TFRS 7",
+      "D": "TMS 34",
+      "E": "TMS 8"
     },
     "answer": "D",
-    "solution": "TMS 1 uyarınca **ertelenmiş vergi varlıkları (ve yükümlülükleri) dönen/kısa vadeli olarak sınıflandırılamaz**; beklenen kapanma süresine bakılmaksızın duran varlık/uzun vadeli yükümlülük içinde sunulur. Bu nedenle 180.000 ₺'nin tamamı duran varlıktadır.",
+    "solution": "TMS 1 p. 4'e göre TMS 1, ara dönemde hazırlanan **özet finansal tabloların yapısına ve içeriğine uygulanmaz**; bunlar **TMS 34 Ara Dönem Finansal Raporlama**'ya göre hazırlanır. TMS 1'in genel özelliklere ilişkin paragrafları (p. 15-35) ise bu tablolara da uygulanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 4; TMS 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "std-tms1-gen-0031",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin raporlama döneminden sonra on beş ay içinde ödeyeceği ve ödemeyi erteleme konusunda koşulsuz hakkı bulunan borcu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme finansal durum tablosunu 'Bilanço', kâr veya zarar ve diğer kapsamlı gelir tablosunu 'Gelir Tablosu' başlığıyla sunmuştur. TMS 1'e göre bu başlıkların kullanılması hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Borç uzun vadeli yükümlülük olarak sınıflandırılır",
-      "B": "Borç kısa vadeli yükümlülük olarak sınıflandırılır",
-      "C": "Borç finansal durum tablosunda gösterilmez; yalnızca dipnotta açıklanır",
-      "D": "Borç özkaynak içinde gösterilir; yabancı kaynaklarda sınıflandırılması mümkün değildir",
-      "E": "Borcun sınıflandırılması işletmenin o yılki tercihine göre serbestçe belirlenebilmektedir"
+      "A": "Kullanılabilir",
+      "B": "Konsolide tablolarda kullanılamaz",
+      "C": "Denetçi onayıyla kullanılabilir",
+      "D": "Kullanılamaz",
+      "E": "Ara dönemde kullanılabilir"
     },
     "answer": "A",
-    "solution": "TMS 1: yükümlülük raporlama döneminden sonra en az on iki ay süreyle ödemeyi erteleme konusunda koşulsuz hakka sahipse uzun vadeli sınıflandırılır. On beş ay vade ve koşulsuz erteleme hakkı bu ölçütü karşılar. Doğru cevap A.",
+    "solution": "TMS 1 p. 10'a göre işletme, bu standartta kullanılanlardan **farklı tablo başlıkları kullanabilir**; örneğin finansal durum tablosu yerine 'bilanço' başlığı kullanılabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - vade sınıflandırması (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 10"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "std-tms1-gen-0032",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Özkaynak kalemlerinin sunumu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Giderlerini nitelik esasına göre sunan bir üretim işletmesinin dönem verileri şöyledir: hasılat 5.000.000 ₺, kullanılan hammadde ve malzeme 2.100.000 ₺, mamul ve yarı mamul stoklarında artış 150.000 ₺, çalışanlara sağlanan fayda giderleri 1.200.000 ₺, amortisman giderleri 400.000 ₺. İşletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "E": "Ödenmiş sermaye ve yedekler gibi özkaynak sınıfları finansal durum tablosunda veya dipnotlarda gösterilir",
-      "A": "Özkaynak tek bir toplam olarak gösterilir; alt sınıflara ayrılamamaktadır",
-      "B": "Özkaynak kalemleri yalnızca nakit akış tablosunda gösterilir; bilançoda yer almamaktadır",
-      "C": "Ödenmiş sermaye ve yedekler gibi özkaynak kalemleri finansal durum tablosunda değil, yalnızca dipnotlarda gösterilir",
-      "D": "Özkaynak kalemleri yabancı kaynaklarla birlikte tek bir toplam hâlinde sunulur"
+      "A": "1.150.000",
+      "B": "1.850.000",
+      "C": "1.600.000",
+      "D": "1.700.000",
+      "E": "1.450.000"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme, ödenmiş sermaye ve yedekler gibi özkaynak sınıflarını finansal durum tablosunda veya özkaynak değişim tablosunda ya da dipnotlarda gösterir. Doğru cevap E.",
+    "solution": "TMS 1 p. 102'ye göre nitelik esasında mamul ve yarı mamul stoklarındaki **artış, giderleri azaltan** bir kalem olarak gösterilir: 5.000.000 − 2.100.000 + 150.000 − 1.200.000 − 400.000 = **1.450.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - özkaynak sunumu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 102"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "std-tms1-gen-0033",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Karşılaştırmalı dönem başı finansal durum tablosu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, yeniden değerleme modeliyle ölçtüğü ve özkaynakta 150.000 ₺ yeniden değerleme artışı bulunan arsasını dönem içinde satmıştır. İşletme yeniden değerleme artışını kullanım sırasında aktarmamaktadır. Satışla birlikte bu 150.000 ₺ nereye aktarılır?",
     "options": {
-      "D": "Geriye dönük muhasebe politikası uygulaması, yeniden düzenleme veya yeniden sınıflandırma önemli etki doğuruyorsa üçüncü bir tablo sunulur",
-      "A": "Ve istisnasız olarak üç dönemlik finansal durum tablosu sunulur",
-      "B": "Üçüncü tablo sunulmaz; yalnızca iki dönem gösterilmesi mümkün bulunur",
-      "C": "Üçüncü tablo yalnızca işletme kâr ettiğinde ve dağıtım yapıldığında sunulur",
-      "E": "Üçüncü tablonun sunulup sunulmayacağı tümüyle denetçinin takdirindedir; geriye dönük düzeltme veya yeniden sınıflandırma yapılsa dahi ek bir finansal durum tablosu sunulmaz"
+      "A": "Hasılata",
+      "B": "Kâr veya zarara",
+      "C": "Sermayeye",
+      "D": "Geçmiş yıllar kârlarına",
+      "E": "Yasal yedeklere"
     },
     "answer": "D",
-    "solution": "TMS 1: işletme bir muhasebe politikasını geriye dönük uygular, kalemleri geriye dönük yeniden düzenler ya da yeniden sınıflandırırsa ve bu, en erken karşılaştırmalı dönemin başındaki finansal durum tablosunda önemli etki doğuruyorsa, o tarihli üçüncü bir finansal durum tablosu da sunar. Doğru cevap D.",
+    "solution": "TMS 1 p. 96 ve TMS 16 p. 41'e göre yeniden değerleme artışları sonraki dönemlerde **kâr veya zarara yeniden sınıflandırılmaz**; varlık elden çıkarıldığında özkaynak içinde **doğrudan geçmiş yıllar kârlarına** aktarılabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - üçüncü tablo"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 96; TMS 16 p. 41"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "std-tms1-gen-0034",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme stoklarını normal faaliyet döngüsü on sekiz ay olduğu için on iki ayı aşan sürede paraya çevirmektedir. TMS 1 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme yurt dışındaki bağlı ortaklığını dönem içinde tamamen elden çıkarmıştır. Bu bağlı ortaklığa ilişkin olarak özkaynakta birikmiş 60.000 ₺ çevrim farkı kazancı bulunmaktadır. Elden çıkarma döneminde bu tutarın diğer kapsamlı gelirden kâr veya zarara aktarılması TMS 1'de hangi terimle ifade edilir?",
     "options": {
-      "D": "Stoklar normal faaliyet döngüsü içinde paraya çevrildiğinden dönen varlık olarak sınıflandırılır",
-      "A": "Stoklar on iki ayı aştığı için duran varlık olarak sınıflandırılır",
-      "B": "Stoklar bu durumda finansal durum tablosunda gösterilmemektedir",
-      "C": "Stoklar yarısı dönen yarısı duran varlık olacak biçimde ikiye bölünerek gösterilmelidir",
-      "E": "Stokların sınıflandırılması işletmenin serbest tercihine bırakılmış bir konu"
+      "A": "Yeniden değerleme",
+      "B": "Geriye dönük düzeltme",
+      "C": "Hata düzeltmesi",
+      "D": "Yeniden sınıflandırma düzeltmesi",
+      "E": "Tahmin değişikliği"
     },
     "answer": "D",
-    "solution": "TMS 1: normal faaliyet döngüsü içinde satılması, tüketilmesi veya paraya çevrilmesi beklenen stoklar ve ticari alacaklar, on iki aydan uzun sürede paraya çevrilecek olsa dahi dönen varlık olarak sınıflandırılır. Doğru cevap D.",
+    "solution": "TMS 1 p. 7 ve 92'ye göre cari veya önceki dönemlerde diğer kapsamlı gelirde muhasebeleştirilip cari dönemde **kâr veya zarara aktarılan** tutarlara **yeniden sınıflandırma düzeltmesi** denir; TMS 21 p. 48 yurt dışı işletmenin elden çıkarılmasında bunu gerektirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dönen varlık (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 92-93; TMS 21 p. 48"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "std-tms1-gen-0035",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Likidite esasına göre sunum bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme kâr veya zarar bölümünde sunulacak zorunlu kalemleri belirlemektedir. Aşağıdakilerden hangisi TMS 1'e göre kâr veya zarar bölümünde ayrıca gösterilmesi gereken kalemlerden biri değildir?",
     "options": {
-      "A": "Likidite esasına göre sunum daha güvenilir ve ihtiyaca uygun bilgi sağlıyorsa varlık ve borçlar likidite sırasına göre sunulur",
-      "B": "Likidite esasına göre sunum yasaktır; dönen/duran ayrımı yapılır",
-      "C": "Likidite esası yalnızca üretim işletmelerinde kullanılabilen özel bir sunum biçimidir",
-      "D": "Likidite esası, varlıkların büyükten küçüğe tutar sırasına göre dizilmesidir; kalemlerin nakde dönüşme hızı bu sıralamada dikkate alınmaz",
-      "E": "Likidite esası yalnızca vergi idaresinin izniyle uygulanabilen bir sunum yöntemidir"
+      "A": "Yeniden değerleme artışı",
+      "B": "Özkaynak yöntemiyle değerlenen yatırımların kâr payı",
+      "C": "Finansman maliyetleri",
+      "D": "Vergi gideri",
+      "E": "Hasılat"
     },
     "answer": "A",
-    "solution": "TMS 1: likidite esasına göre sunum güvenilir ve daha ihtiyaca uygun bilgi sağlıyorsa (bankalar gibi finansal kuruluşlarda olduğu üzere), işletme tüm varlık ve borçlarını likidite sırasına göre sunar. Doğru cevap A.",
+    "solution": "TMS 1 p. 82'ye göre kâr veya zarar bölümünde hasılat, finansman maliyetleri, özkaynak yöntemiyle değerlenen iştirak ve iş ortaklıklarının kâr veya zararlarından paylar ve vergi gideri gibi kalemler sunulur. **Yeniden değerleme artışı diğer kapsamlı gelir** kalemidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - likidite esası"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 82"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "std-tms1-gen-0036",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin varlıkları: nakit 80.000 ₺, ticari alacak 260.000 ₺ (10 ay vadeli), ticari amaçla elde tutulan menkul kıymet 150.000 ₺, 5 yıl kullanılacak makine 640.000 ₺, 14 ay sonra tahsil edilecek ve normal faaliyet döngüsüyle ilgisi olmayan alacak 120.000 ₺. TMS 1'e göre dönen varlıklar toplamı kaç ₺'dir?",
+    "stem": "Bir işletme dipnotlarında sermayesini nasıl yönettiğini, sermaye olarak neyi kabul ettiğini ve dışarıdan belirlenen bir sermaye yeterliliği şartına tabi olup olmadığını anlatmaktadır. Bu açıklamanın amacı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "610.000",
-      "B": "340.000",
-      "C": "1.130.000",
-      "D": "1.250.000",
-      "E": "490.000"
+      "A": "Vergi planlaması yapmak",
+      "B": "Kâr payı dağıtmak",
+      "C": "Hasılatı ölçmek",
+      "D": "Stokları değerlemek",
+      "E": "Sermaye yönetimini değerlendirmek"
     },
     "answer": "E",
-    "solution": "Dönen varlık: nakit 80.000 + 12 ay içinde tahsil edilecek ticari alacak 260.000 + ticari amaçla elde tutulan menkul kıymet 150.000 = **490.000 ₺**. Makine ile faaliyet döngüsüyle ilgisi olmayan **14 ay vadeli** alacak duran varlıktır.",
+    "solution": "TMS 1 p. 134'e göre işletme, finansal tablo kullanıcılarının **sermayenin yönetimine ilişkin amaç, politika ve süreçlerini değerlendirebilmesini** sağlayacak bilgileri açıklar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 134-135"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "std-tms1-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin 900.000 ₺ tutarındaki kredisi raporlama döneminden sonraki 15 ay içinde ödenecektir ve işletmenin ödemeyi bu süre boyunca erteleme konusunda koşulsuz hakkı bulunmaktadır. TMS 1'e göre bu kredi nasıl sınıflandırılır?",
+    "stem": "Bir işletme finansal tablolarının dipnotlarında hukuki şeklini, kayıtlı adresini ve faaliyetlerinin niteliğini açıklamış, ancak ana ortaklığının ve grubun nihai ana ortaklığının adını açıklamamıştır. İşletme bir grubun parçasıdır. TMS 1'e göre eksik bırakılan bilgi hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Kredinin tamamı kısa vadeli yükümlülüktür",
-      "B": "Koşulsuz erteleme hakkı nedeniyle 900.000 ₺ uzun vadelidir",
-      "C": "12 aya isabet eden kısmı kısa, kalanı uzun vadeli olarak bölünür",
-      "D": "Kredi yalnızca dipnotlarda açıklanır, tabloda sunulmaz",
-      "E": "Sınıflandırma işletmenin tercihine bırakılmıştır"
+      "A": "Açıklanması isteğe bağlıdır",
+      "B": "Açıklanması gerekir",
+      "C": "Vergi dairesine bildirilir",
+      "D": "Faaliyet raporunda verilir",
+      "E": "Denetim raporunda verilir"
     },
     "answer": "B",
-    "solution": "Bir yükümlülük, işletmenin ödemeyi raporlama döneminden sonra **en az 12 ay erteleme konusunda koşulsuz hakkı** varsa uzun vadeli sınıflandırılır. Süre 15 ay ve hak koşulsuz olduğundan **900.000 ₺'nin tamamı uzun vadelidir**.",
+    "solution": "TMS 1 p. 138'e göre işletme; yerleşim yeri ve hukuki şeklini, kayıtlı adresini, faaliyetlerinin niteliğini ve **ana ortaklığının ve grubun nihai ana ortaklığının adını** finansal tablolarla birlikte açıklar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 138"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "std-tms1-gen-0038",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Normal faaliyet döngüsü belirlenemiyorsa on iki ay varsayılır\n\nII. Ticari alacaklar döngü içindeyse on iki ayı aşsa da dönen varlıktır\n\nIII. Likidite esasına göre sunum hiçbir hâlde yapılamaz",
+    "stem": "Bir işletmenin raporlama dönemi sonundaki varlıkları şöyledir: kasa 90.000 ₺, vadeli mevduat 60.000 ₺ (raporlama döneminden sonra 2 yıl süreyle teminat olarak bloke), TFRS 5 kapsamında satış amaçlı sınıflandırılmış bina 500.000 ₺, 6 ay vadeli ticari alacaklar 280.000 ₺, bağlı ortaklığa verilen 3 yıl vadeli borç 120.000 ₺ ve stoklar 340.000 ₺. Dönen varlıkların toplamı kaç ₺'dir?",
     "options": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "1.210.000",
+      "B": "1.270.000",
+      "C": "710.000",
+      "D": "1.390.000",
+      "E": "1.330.000"
     },
     "answer": "A",
-    "solution": "Döngü belirlenemiyorsa on iki ay varsayılır (I) ve döngü içindeki ticari alacaklar on iki ayı aşsa da dönen varlıktır (II). Likidite esası ise daha uygun bilgi sağlıyorsa uygulanabilir; bu nedenle III yanlıştır. Doğru cevap A.",
+    "solution": "TMS 1 p. 66'ya göre 12 ay içinde gerçekleşecek varlıklar ve kullanımı kısıtlanmamış nakit dönen varlıktır; TFRS 5 kapsamında **satış amaçlı sınıflandırılan duran varlık** dönen varlıklar arasında ayrı kalem olarak sunulur. 2 yıl bloke mevduat ve 3 yıl vadeli borç verme duran varlıktır: 90.000 + 500.000 + 280.000 + 340.000 = **1.210.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - sınıflandırma"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 54, 66; TFRS 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "std-tms1-gen-0039",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin dönem kârı 850.000 ₺'dir. Aynı dönemde maddi duran varlık yeniden değerleme fazlası 120.000 ₺ ve yabancı para çevrim farkı 40.000 ₺ olarak diğer kapsamlı gelirde raporlanmıştır. TMS 1'e göre dönemin toplam kapsamlı geliri kaç ₺'dir?",
+    "stem": "TMS 1'e ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Nakit akış tablosu dışındaki tablolar tahakkuk esasına göre hazırlanır\n\nII. Olağanüstü kalemler dipnotlarda ayrı başlıkla sunulabilir\n\nIII. Dipnotlar tam finansal tablo setinin parçasıdır",
     "options": {
-      "A": "1.010.000",
-      "B": "850.000",
-      "C": "970.000",
-      "D": "890.000",
-      "E": "160.000"
+      "A": "I ve III",
+      "B": "I ve II",
+      "C": "Yalnız III",
+      "D": "Yalnız I",
+      "E": "I, II ve III"
     },
     "answer": "A",
-    "solution": "Toplam kapsamlı gelir = dönem kâr veya zararı + diğer kapsamlı gelir = 850.000 + (120.000 + 40.000) = **1.010.000 ₺**. Diğer kapsamlı gelir kalemleri kâr veya zarara dâhil edilmez ancak toplam kapsamlı gelire girer.",
+    "solution": "TMS 1 p. 27'ye göre tahakkuk esası uygulanır (I); p. 10'a göre dipnotlar tam setin parçasıdır (III). p. 87'ye göre olağanüstü kalem **ne tabloda ne dipnotlarda** sunulabilir (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 10, 27, 87"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "std-tms1-gen-0040",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin dönemde raporladığı kalemler şunlardır: dönem net kârı 600.000 ₺, tanımlanmış fayda planı yeniden ölçüm kazancı 50.000 ₺, nakit akış riskinden korunma kazancı 30.000 ₺, satış hasılatı 2.400.000 ₺. TMS 1'e göre diğer kapsamlı gelir toplamı kaç ₺'dir?",
+    "stem": "Netleştirmeye ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Hasılatın satış iskontoları düşülerek sunulması netleştirme yasağına aykırıdır\n\nII. Duran varlık satış kazancı, satış giderleri düşülerek net sunulur\n\nIII. Stoklar için ayrılan değer düşüklüğü karşılığı düşülerek sunum netleştirme sayılmaz",
     "options": {
-      "A": "680.000",
-      "B": "50.000",
-      "C": "80.000",
-      "D": "630.000",
-      "E": "3.080.000"
+      "A": "Yalnız II",
+      "B": "I, II ve III",
+      "C": "II ve III",
+      "D": "Yalnız III",
+      "E": "I ve II"
     },
     "answer": "C",
-    "solution": "Diğer kapsamlı gelir, kâr veya zarara alınmayan gelir-gider kalemlerinden oluşur: tanımlanmış fayda planı yeniden ölçümü 50.000 + nakit akış riskinden korunma 30.000 = **80.000 ₺**. Dönem kârı ve hasılat DKG'ye girmez.",
+    "solution": "TMS 1 p. 33-34'e göre duran varlık satış kazancının satış giderleri düşülerek sunulması (II) ve stok değer düşüklüğü gibi **değerleme düzeltmelerinin** düşülerek sunulması (III) netleştirme sayılmaz. Hasılatın iskonto düşülerek ölçülmesi de TFRS 15'in gereğidir, yasağa aykırı değildir (I yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 32-34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "std-tms1-gen-0041",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin dönem kârı 400.000 ₺, diğer kapsamlı gideri ise 90.000 ₺'dir. TMS 1'e göre bu bilgiler tek bir tabloda sunulduğunda toplam kapsamlı gelir kaç ₺ olarak raporlanır?",
+    "stem": "Bir anonim şirket dönem içinde ortaklarına nakit kâr payı dağıtmış, nakit karşılığı sermaye artırımı yapmış, maddi duran varlıklarını yeniden değerlemiş ve yurt dışı işletmesinden çevrim farkı doğmuştur. Aşağıdakilerden hangisi özkaynak değişim tablosunda ortakların ortaklık sıfatıyla yaptıkları işlemler arasında gösterilir?",
     "options": {
-      "A": "310.000",
-      "B": "490.000",
-      "C": "400.000",
-      "D": "90.000",
-      "E": "350.000"
+      "A": "Kâr payı dağıtımı",
+      "B": "Yabancı para çevrim farkı",
+      "C": "Yeniden değerleme artışı",
+      "D": "Aktüeryal kayıp",
+      "E": "Dönem net kârı"
     },
     "answer": "A",
-    "solution": "Toplam kapsamlı gelir = kâr veya zarar + diğer kapsamlı gelir (gider negatif etki yapar): 400.000 − 90.000 = **310.000 ₺**. TMS 1, bu bilgilerin tek bir tabloda ya da iki ayrı tabloda sunulmasına izin verir; toplam değişmez.",
+    "solution": "TMS 1 p. 106'ya göre özkaynak değişim tablosu toplam kapsamlı geliri ve **ortaklarla ortaklık sıfatıyla yapılan işlemleri** (katkılar ve dağıtımlar) ayrı gösterir. Kâr payı dağıtımı ve sermaye artırımı ortaklarla işlemdir; yeniden değerleme, çevrim farkı, dönem kârı ve aktüeryal kayıp toplam kapsamlı gelirin parçasıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 106-107"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "std-tms1-gen-0042",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin diğer kapsamlı gelir kalemleri şunlardır: maddi duran varlık yeniden değerleme fazlası 200.000 ₺, tanımlanmış fayda planı yeniden ölçüm kaybı 60.000 ₺, yurt dışı işletme çevrim farkı 90.000 ₺, nakit akış riskinden korunma kazancı 70.000 ₺. TMS 1'e göre sonradan kâr veya zarara YENİDEN SINIFLANDIRILACAK kalemlerin net toplamı kaç ₺'dir?",
+    "stem": "Bir işletme finansal tablolarını hazırlarken işlemleri nakit tahsil veya ödendiği anda değil, gerçekleştiği dönemde tanımaktadır. TMS 1'e göre nakit akış tablosu dışındaki finansal tablolar hangi esasa göre hazırlanır?",
     "options": {
-      "A": "140.000",
-      "B": "160.000",
-      "C": "300.000",
-      "D": "230.000",
-      "E": "420.000"
+      "A": "Temkinlilik esası",
+      "B": "Tahakkuk esası",
+      "C": "Tarihî maliyet esası",
+      "D": "Gerçeğe uygun değer esası",
+      "E": "Nakit esası"
     },
     "answer": "B",
-    "solution": "Sonradan kâr veya zarara **yeniden sınıflandırılacak** kalemler yurt dışı işletme çevrim farkı ve nakit akış riskinden korunma kazancıdır: 90.000 + 70.000 = **160.000 ₺**. Yeniden değerleme fazlası ile tanımlanmış fayda planı yeniden ölçümleri **hiçbir zaman** kâr veya zarara aktarılmaz.",
+    "solution": "TMS 1 p. 27'ye göre işletme, **nakit akışlarına ilişkin bilgiler hariç** finansal tablolarını **tahakkuk esasına** göre hazırlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 27-28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "std-tms1-gen-0043",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Olağanüstü kalem sunumu bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin yönetimi, uzun vadeli kredisinin yenilenmesine ilişkin görüşmelerin sonuçlanmaması nedeniyle işletmenin sürekliliği konusunda önemli şüphe doğuran bir belirsizlik bulunduğunu, ancak tasfiye niyeti olmadığını ve süreklilik varsayımının uygun olduğunu değerlendirmiştir. TMS 1'e göre yapılması gereken aşağıdakilerden hangisidir?",
     "options": {
-      "E": "İşletme hiçbir gelir veya gider kalemini olağanüstü kalem olarak sunamaz",
-      "A": "İşletme olağandışı gelir ve giderleri olağanüstü kalem başlığı altında sunur",
-      "B": "Olağanüstü kalem sunumu yalnızca büyük tutarlı işlemler için zorunlu tutulmuş bir uygulamadır",
-      "C": "Olağanüstü kalemler yalnızca dipnotlarda gösterilir; tablolarda yer almaz",
-      "D": "Olağanüstü kalem sunulup sunulmayacağı tümüyle işletmenin serbest tercihine bırakılmıştır"
+      "A": "Tasfiye esasına geçilmesi",
+      "B": "Kredi için karşılık ayrılması",
+      "C": "Tabloların yayımının ertelenmesi",
+      "D": "Varlıkların satış değeriyle ölçülmesi",
+      "E": "Belirsizliğin açıklanması"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme hiçbir gelir ve gider kalemini kâr veya zarar tablosunda, diğer kapsamlı gelir bölümünde veya dipnotlarda olağanüstü kalem olarak sunamaz. Doğru cevap E.",
+    "solution": "TMS 1 p. 25'e göre yönetim, işletmenin sürekliliği konusunda önemli şüphe doğurabilecek olay veya koşullara ilişkin **önemli belirsizliklerin farkındaysa bunları açıklar**; tasfiye niyeti yoksa tablolar süreklilik esasına göre hazırlanmaya devam eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - olağanüstü kalem yasağı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 25"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "std-tms1-gen-0044",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletmenin dönem verileri: hasılat 3.000.000 ₺, satışların maliyeti 1.800.000 ₺, pazarlama giderleri 250.000 ₺, genel yönetim giderleri 350.000 ₺, finansman gideri 120.000 ₺. Giderlerin işlevine göre sunum yapan bu işletmenin faaliyet kârı kaç ₺'dir?",
+    "stem": "Bir işletme finansal durum tablosunda, her biri toplam varlıkların %0,3'ü kadar olan peşin ödenmiş sigorta, peşin ödenmiş kira ve iş avansları kalemlerini tek satırda 'diğer dönen varlıklar' olarak göstermiştir. Bu uygulama TMS 1'in hangi ilkesiyle açıklanır?",
     "options": {
-      "A": "480.000",
-      "B": "1.200.000",
-      "C": "720.000",
-      "D": "600.000",
-      "E": "1.080.000"
+      "A": "Sunumda tutarlılık",
+      "B": "Tahakkuk esası",
+      "C": "İşletmenin sürekliliği",
+      "D": "Önemlilik ve birleştirme",
+      "E": "Netleştirme"
     },
     "answer": "D",
-    "solution": "İşlevine göre sunumda faaliyet kârı = Hasılat − Satışların maliyeti − Pazarlama − Genel yönetim = 3.000.000 − 1.800.000 − 250.000 − 350.000 = **600.000 ₺**. **Finansman gideri faaliyet giderleri arasında yer almaz**; faaliyet kârından sonra dikkate alınır (düşülürse 480.000 ₺ bulunur).",
+    "solution": "TMS 1 p. 29'a göre işletme, benzer kalemlerin **önemli olan her sınıfını ayrı** sunar; **önemli olmayan** kalemler niteliği veya işlevi benzer kalemlerle birleştirilir. Bu birleştirme netleştirme sayılmaz, çünkü varlık ile borç birbirinden düşülmemektedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 29-31"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "std-tms1-gen-0045",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Giderlerini işlevine göre sunan bir işletmenin satışların maliyeti 1.500.000 ₺, pazarlama gideri 200.000 ₺, genel yönetim gideri 300.000 ₺'dir. Bu tutarların içinde toplam 180.000 ₺ amortisman ve 640.000 ₺ personel gideri bulunmaktadır. TMS 1'e göre işletmenin yapması gereken nedir?",
+    "stem": "Bir işletme, faaliyetlerinin niteliğinde önemli bir değişiklik olmamasına ve hiçbir TFRS bunu gerektirmemesine rağmen her yıl finansal durum tablosundaki kalemlerin sırasını ve gruplamasını değiştirmektedir. Bu uygulama TMS 1'in hangi ilkesine aykırıdır?",
     "options": {
-      "A": "Amortisman 180.000 ₺ ve personel gideri 640.000 ₺'yi dipnotta açıklamalıdır",
-      "B": "Nitelik esaslı bilgiler zaten işlev içinde yer aldığından ayrıca açıklama yapılmaz",
-      "C": "İşlev esaslı sunum yasak olduğundan giderleri yalnızca niteliğine göre sunmalıdır",
-      "D": "Amortisman ve personel giderini faaliyet kârından sonra ayrı satırda göstermelidir",
-      "E": "Bu tutarları satışların maliyetinden düşerek brüt kârı düzeltmelidir"
+      "A": "Sunumda tutarlılık",
+      "B": "Önemlilik",
+      "C": "Netleştirme",
+      "D": "Gerçeğe uygun sunum",
+      "E": "Tahakkuk esası"
     },
     "answer": "A",
-    "solution": "TMS 1, giderlerini **işlevine göre** sunan işletmelerin, amortisman ve personel giderleri gibi **niteliğe ilişkin ek bilgileri dipnotlarda açıklamasını** zorunlu kılar. Böylece iki sunum biçimi arasındaki bilgi farkı giderilir.",
+    "solution": "TMS 1 p. 45'e göre finansal tablolardaki kalemlerin sunumu ve sınıflandırılması, faaliyetlerin niteliğinde önemli bir değişiklik olması veya bir TFRS'nin gerektirmesi dışında **dönemden döneme tutarlı** olarak sürdürülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 45"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "std-tms1-gen-0046",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Kâr veya zarar bölümünde sunulacak bilgiler bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, bir standardın ölçüm hükmünü uygulamamış; bunun yerine uygun gördüğü farklı bir yöntemi kullanmıştır. Farkın etkisi önemlidir ve söz konusu hükmün uygulanmasının finansal tabloları yanıltıcı hâle getireceğine ilişkin aşırı nadir bir durum da yoktur. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "B": "Hasılat, finansman maliyetleri ve vergi gideri gibi asgari kalemler kâr veya zarar bölümünde sunulur",
-      "A": "Kâr veya zarar bölümünde yalnızca tek bir net kâr rakamı sunulur; hiçbir alt kalem gösterilmez",
-      "C": "Kâr veya zarar bölümünde asgari kalem sunma koşulu yoktur; işletme istediği kalemleri istediği ayrıntıda serbestçe sunar",
-      "D": "Kâr veya zarar bölümünde yalnızca vergi gideri sunulur; hasılat bu bölümde gösterilmemektedir",
-      "E": "Kâr veya zarar bölümü tablolarda yer almaz; yalnızca dipnotlarda açıklanır"
+      "A": "Uygun olmayan politika açıklamayla düzeltilemez",
+      "B": "İşletme TFRS'ye tam uyum beyan edebilir",
+      "C": "Finansal tablolar TFRS'ye uygun sayılmaz",
+      "D": "Uyum beyanı açık ve koşulsuz olmalıdır",
+      "E": "Uygunsuzluk dipnot açıklamasıyla giderilmez"
     },
     "answer": "B",
-    "solution": "TMS 1: kâr veya zarar bölümünde hasılat, finansman maliyetleri, özkaynak yöntemiyle muhasebeleştirilen yatırımların kâr/zarar payları, vergi gideri gibi asgari kalemler sunulur. Doğru cevap B.",
+    "solution": "TMS 1 p. 16'ya göre işletme ancak TFRS'lerin **bütün gerekliliklerine** uyuyorsa TFRS'ye uygunluğu açık ve koşulsuz olarak beyan edebilir. p. 18'e göre uygun olmayan muhasebe politikaları, açıklama yapılarak veya dipnotla düzeltilemez; p. 19'daki sapma ancak aşırı nadir durumlarda mümkündür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - kâr/zarar bölümü kalemleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 16, 19-20"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "std-tms1-gen-0047",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir grup işletmesinin konsolide dönem kârı 900.000 ₺ olup bunun 180.000 ₺'lik kısmı kontrol gücü olmayan paylara aittir. TMS 1'e göre kâr veya zarar tablosunda ana ortaklık paylarına düşen tutar kaç ₺ olarak sunulur?",
+    "stem": "Bir işletmenin 31.12.2025 tarihli borçları şöyledir: 4 ay içinde ödenecek ticari borçlar 260.000 ₺; taksitli 5 yıl vadeli banka kredisi 1.000.000 ₺ (bunun 200.000 ₺'lik taksidi 2026 yılında ödenecek); 3 yıl vadeli başka bir kredi 600.000 ₺ (31.12.2025 itibarıyla sözleşme koşulu ihlal edildiği için banka ödemeyi hemen talep edebilir durumdadır; banka Şubat 2026'da, tablolar onaylanmadan önce, ödeme talep etmeyeceğini bildirmiştir) ve 15 ay sonra ödenecek bir borç senedi 900.000 ₺. Kısa vadeli borçların toplamı kaç ₺'dir?",
     "options": {
-      "A": "900.000",
-      "B": "180.000",
-      "C": "720.000",
-      "D": "1.080.000",
-      "E": "450.000"
+      "A": "860.000",
+      "B": "1.960.000",
+      "C": "1.060.000",
+      "D": "460.000",
+      "E": "1.860.000"
     },
     "answer": "C",
-    "solution": "TMS 1, dönem kâr veya zararının **ana ortaklık payları** ile **kontrol gücü olmayan paylar** arasındaki dağılımının ayrı ayrı sunulmasını gerektirir: 900.000 − 180.000 = **720.000 ₺** ana ortaklık payıdır. Toplam kâr tek satırda bırakılmaz.",
+    "solution": "TMS 1 p. 69'a göre 12 ay içinde ödenecek kısım kısa vadelidir (ticari borçlar ve kredinin 2026 taksidi). p. 74'e göre raporlama dönemi sonunda koşul ihlali nedeniyle talep edildiğinde ödenecek hâle gelen borç, **raporlama döneminden sonra** kreditör ödeme talep etmemeyi kabul etse bile kısa vadelidir. 15 ay vadeli senet uzun vadelidir: 260.000 + 200.000 + 600.000 = **1.060.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (sayısal uygulama; 2026 sınav profiline kalibre)",
-      "legislationRef": "TMS 1 Finansal Tabloların Sunuluşu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 69, 74"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "std-tms1-gen-0048",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Aşağıdakilerden hangileri TMS 1'e göre doğrudur?\n\nI. Olağanüstü kalem başlığı altında sunum yapılabilir\n\nII. Toplam kapsamlı gelir, kâr/zarar ile diğer kapsamlı gelirin toplamıdır\n\nIII. Gelir ve giderler tek tabloda veya iki tabloda sunulabilir",
+    "stem": "Bir işletmenin 5 yıl vadeli kredisinin sözleşmesine göre, işletmenin 30 Haziran 2026 tarihli ara dönem tablolarında cari oranı 1,2'nin altına düşerse banka krediyi hemen geri isteyebilecektir. 31 Aralık 2025 itibarıyla sözleşmenin ihlal edildiği bir koşul yoktur. Kredi 31.12.2025 tarihli finansal durum tablosunda nasıl sınıflandırılır?",
     "options": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "Kısa vadeli borç",
+      "B": "Koşullu borç",
+      "C": "Uzun vadeli borç",
+      "D": "Özkaynak kalemi",
+      "E": "Kısmen kısa vadeli borç"
     },
     "answer": "C",
-    "solution": "Toplam kapsamlı gelir kâr/zarar ile DKG toplamıdır (II) ve sunum tek ya da iki tabloyla yapılabilir (III). Ancak hiçbir kalem olağanüstü kalem olarak sunulamaz; bu nedenle I yanlıştır. Doğru cevap C.",
+    "solution": "TMS 1 p. 72B'ye göre (2022 değişikliği) işletmenin **raporlama döneminden sonra uyması gereken** sözleşme koşulları, raporlama dönemi sonundaki erteleme hakkının varlığını etkilemez; kredi uzun vadeli kalır. p. 76ZA uyarınca koşullar ve ihlal riskine ilişkin bilgiler açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - kapsamlı gelir"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 72B, 76ZA"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "std-tms1-gen-0049",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Aşağıdaki ifadelerden hangileri gider sunumu bakımından doğrudur?\n\nI. Giderler niteliğine göre sunulabilir\n\nII. Giderler işlevine göre sunulabilir\n\nIII. İşlevsel sunumda nitelik bilgisi ayrıca açıklanır",
+    "stem": "Bir holdingin konsolide finansal durum tablosunda bağlı ortaklıklardaki azınlık ortaklarına ait paylar bulunmaktadır. TMS 1'e göre kontrol gücü olmayan paylar finansal durum tablosunda nerede sunulur?",
     "options": {
-      "E": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "Dönen varlıklarda",
+      "B": "Dipnotlarda",
+      "C": "Uzun vadeli borçlarda",
+      "D": "Kısa vadeli borçlarda",
+      "E": "Özkaynaklar içinde"
     },
     "answer": "E",
-    "solution": "Giderler niteliğine (I) veya işlevine (II) göre sunulabilir; işlevsel sunum yapılırsa amortisman ve personel gideri gibi nitelik bilgisi ayrıca açıklanır (III). Üçü de doğrudur. Doğru cevap E.",
+    "solution": "TMS 1 p. 54(q)-(r)'ye göre finansal durum tablosunda **özkaynaklar içinde sunulan kontrol gücü olmayan paylar** ile ana ortaklığın sahiplerine ait çıkarılmış sermaye ve yedekler ayrı kalemler olarak gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - gider sunumu"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 54"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "std-tms1-gen-0050",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme yeniden değerleme fazlasını gelir tablosunda kâr olarak göstermek istemektedir. TMS 1 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme 5 yıl vadeli kredisinin bir sözleşme koşulunu Kasım 2025'te ihlal etmiştir. Banka, raporlama döneminin sonundan önce, 15 Aralık 2025'te işletmeye ihlali gidermesi için 31.12.2025'ten itibaren 15 ay süre tanımış ve bu süre içinde ödeme talep etmeyeceğini yazılı olarak kabul etmiştir. Kredi 31.12.2025 tarihli finansal durum tablosunda nasıl sınıflandırılır?",
     "options": {
-      "C": "İlgili TFRS bu kalemi diğer kapsamlı gelirde göstermeyi gerektiriyorsa kâr veya zarara dâhil edilemez",
-      "A": "Yeniden değerleme fazlası kâr veya zarara dâhil edilerek dönem kârını artırmaktadır",
-      "B": "İşletme dilediği kalemi kâr veya zarara ya da diğer kapsamlı gelire serbestçe koyabilmektedir",
-      "D": "Yeniden değerleme fazlası hiçbir tabloda gösterilmez; yalnızca dipnotta açıklanır",
-      "E": "Yeniden değerleme fazlası doğrudan borç olarak sınıflandırılır ve yabancı kaynaklarda gösterilir"
+      "A": "Diğer kısa vadeli yükümlülük",
+      "B": "Kısa vadeli borç",
+      "C": "Uzun vadeli borç",
+      "D": "Karşılık",
+      "E": "Koşullu borç"
     },
     "answer": "C",
-    "solution": "TMS 1: gelir ve gider kalemleri, diğer TFRS'ler aksini gerektirmedikçe kâr veya zarara dâhil edilir. TMS 16 uyarınca yeniden değerleme fazlası diğer kapsamlı gelirde muhasebeleştirilir; işletmenin serbest tercihi yoktur. Doğru cevap C.",
+    "solution": "TMS 1 p. 75'e göre kreditör **raporlama döneminin sonuna kadar**, işletmenin ihlali giderebileceği ve bu süre içinde ödeme talep edemeyeceği, raporlama döneminden sonra **en az 12 ay** süren bir ek süre tanımayı kabul etmişse borç uzun vadeli sınıflandırılır. Ek süre raporlama tarihinden sonra verilseydi borç kısa vadeli olurdu.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - DKG (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 75"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "std-tms1-gen-0051",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Dipnotların işlevi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme cari dönemde finansal tablo kalemlerinin sınıflandırmasını değiştirmiştir. Ancak önceki döneme ait verilerin bir kısmı, yeni sınıflandırmayı mümkün kılacak şekilde toplanmamıştır ve bu verilerin yeniden oluşturulması uygulanabilir değildir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "E": "Tabloların hazırlanma esaslarını, uygulanan muhasebe politikalarını ve tablolarda sunulmayan diğer bilgileri açıklar",
-      "A": "Dipnotlar yalnızca işletmenin reklam ve tanıtım bilgilerini içeren bir bölüm",
-      "B": "Dipnotlar finansal tabloların parçası değildir; yalnızca isteğe bağlı bir ek belgedir",
-      "C": "Dipnotlarda yalnızca gelecek dönem tahminleri yer alır; geçmiş bilgiler hiç açıklanmaz",
-      "D": "Dipnotlar yalnızca sayısal tabloların bir özetini içerir; muhasebe politikaları ve hazırlama esasları dipnotlarda yer almaz"
+      "A": "Sınıflandırma değişikliğinin niteliği açıklanır",
+      "B": "Uygulanabilir ölçüde karşılaştırmalı tutarlar yeniden sınıflandırılır",
+      "C": "Tutarlar yeniden sınıflandırılsaydı yapılacak düzeltmelerin niteliği açıklanır",
+      "D": "Yeniden sınıflandırılamayan tutarların nedeni açıklanır",
+      "E": "Önceki dönem tutarları tahmini rakamlarla doldurulmalıdır"
     },
     "answer": "E",
-    "solution": "TMS 1: dipnotlar; finansal tabloların hazırlanma esasları ile uygulanan muhasebe politikalarına ilişkin bilgileri, TFRS'lerin gerektirdiği ancak tablolarda sunulmayan bilgileri ve tabloların anlaşılması için gerekli diğer bilgileri sunar. Doğru cevap E.",
+    "solution": "TMS 1 p. 41'e göre sunum veya sınıflandırma değiştiğinde karşılaştırmalı tutarlar **uygulanabilir olmadıkça** yeniden sınıflandırılır; p. 42'ye göre uygulanabilir değilse bunun **nedeni** ve tutarlar yeniden sınıflandırılsaydı yapılacak düzeltmelerin **niteliği** açıklanır. Uydurma tahminle doldurma öngörülmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dipnotların işlevi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 41-42"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "std-tms1-gen-0052",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Dipnotların sunum sırası bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin fabrikası deprem nedeniyle ağır hasar görmüş ve bu olay önemli bir zarara yol açmıştır. Yönetim bu zararı kâr veya zarar tablosunda 'olağanüstü kalemler' başlığıyla ayrı göstermek istemektedir. TMS 1'e göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "Dipnotlar uygulanabilir olduğu ölçüde sistematik biçimde sunulur ve her kalem ilgili dipnota çapraz referans verir",
-      "A": "Dipnotlar hiçbir düzen gözetmeksizin rastgele sıralanır ve çapraz referans verilmemektedir",
-      "B": "Dipnotlar yalnızca alfabetik sıraya göre dizilir; başka bir düzen kullanılamaz",
-      "C": "Dipnotların sırası vergi idaresince her yıl yeniden belirlenip işletmelere bildirilmektedir",
-      "D": "Dipnotlarda çapraz referans verilmesi finansal tabloları geçersiz kılan bir uygulamadır"
+      "A": "Olağanüstü kalem özkaynakta sunulur",
+      "B": "Olağanüstü kalem vergi sonrası sunulur",
+      "C": "Olağanüstü kalem dipnotta sunulur",
+      "D": "Olağanüstü kalem DKG'de sunulur",
+      "E": "Olağanüstü kalem sunulamaz"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme dipnotları, uygulanabilir olduğu ölçüde sistematik biçimde sunar ve finansal tablolardaki her kalem için ilgili dipnota çapraz referans verir. Doğru cevap E.",
+    "solution": "TMS 1 p. 87'ye göre işletme hiçbir gelir veya gider kalemini **ne tabloda ne de dipnotlarda olağanüstü kalem olarak** sunamaz. Zarar önemliyse p. 97-98 uyarınca niteliği ve tutarı ayrıca açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dipnot düzeni"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 87"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "std-tms1-gen-0053",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Önemli muhasebe politikası bilgilerinin açıklanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir grubun konsolide dönem kârı 900.000 ₺'dir. Bu kârın 180.000 ₺'lik kısmı bağlı ortaklıklardaki kontrol gücü olmayan paylara aittir. Kâr veya zarar tablosunda ana ortaklığın sahiplerine ait dönem kârı olarak kaç ₺ gösterilir?",
     "options": {
-      "C": "İşletme önemli muhasebe politikası bilgilerini açıklar; politika bilgisi işlemin niteliği veya tutarı nedeniyle önemli olabilir",
-      "A": "İşletme hiçbir muhasebe politikasını açıklamaz; politikalar gizli tutulur",
-      "B": "İşletme tüm muhasebe politikalarını önemli olup olmadığına bakmaksızın açıklar",
-      "D": "Muhasebe politikaları yalnızca denetçiye bildirilir; dipnotlarda açıklanmamaktadır",
-      "E": "Muhasebe politikası açıklaması yalnızca politika değiştiğinde yapılır; değişiklik olmayan dönemlerde uygulanan politikalara ilişkin hiçbir açıklamaya yer verilmez"
+      "A": "540.000",
+      "B": "900.000",
+      "C": "720.000",
+      "D": "180.000",
+      "E": "1.080.000"
     },
     "answer": "C",
-    "solution": "TMS 1: işletme önemli muhasebe politikası bilgilerini açıklar. Muhasebe politikası bilgisi, ilgili olduğu işlemlerin/olayların tutarı nedeniyle veya niteliği nedeniyle önemli olabilir. Doğru cevap C.",
+    "solution": "TMS 1 p. 81B'ye göre dönem kâr veya zararı; **kontrol gücü olmayan paylara** ve **ana ortaklığın sahiplerine** ait olarak ayrı ayrı sunulur: 900.000 − 180.000 = **720.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - muhasebe politikalarının açıklanması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 81B"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "std-tms1-gen-0054",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Muhasebe politikası uygularken yapılan muhakemelerin açıklanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, diğer kapsamlı gelir kalemlerinin her birini vergi etkisinden önce sunmayı ve vergiyi toplu göstermeyi tercih etmiştir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "A": "Finansal tablolardaki tutarlar üzerinde en önemli etkisi olan muhakemeler açıklanır",
-      "B": "Yönetimin yaptığı muhakemeler açıklanmaz; yalnızca sonuç tutarlar gösterilir",
-      "C": "Yönetimin her türlü muhakemesi, önemsiz olanlar dâhil eksiksiz biçimde açıklanır",
-      "D": "Muhakemeler yalnızca vergi idaresine bildirilir; finansal tablo kullanıcılarına açıklanmaz",
-      "E": "Muhakeme yapılması yasaktır; tüm tutarlar kesin ve muhakemesiz belirlenir"
+      "A": "Vergi tek satırda ve gruplamadan gösterilir",
+      "B": "Her DKG kalemine ilişkin vergi açıklanır",
+      "C": "Vergi, yeniden sınıflandırılacak ve sınıflandırılmayacak gruplara dağıtılır",
+      "D": "DKG kalemleri vergi öncesi sunulabilir",
+      "E": "DKG kalemleri vergi etkisi düşülmüş sunulabilir"
     },
     "answer": "A",
-    "solution": "TMS 1: işletme, muhasebe politikalarını uygularken yönetimin yaptığı ve finansal tablolara alınan tutarlar üzerinde en önemli etkisi olan muhakemeleri (tahminleri içerenler hariç) önemli muhasebe politikası bilgileriyle birlikte açıklar. Doğru cevap A.",
+    "solution": "TMS 1 p. 90-91'e göre DKG kalemleri vergi etkisi düşülmüş olarak veya vergi öncesi sunulabilir; vergi öncesi sunulursa vergi, **yeniden sınıflandırılacak ve sınıflandırılmayacak kalemler arasında dağıtılarak** gösterilir. Her kaleme ilişkin vergi tutarı da açıklanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - muhakemelerin açıklanması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 90-91"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "std-tms1-gen-0055",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Tahmin belirsizliği kaynaklarının açıklanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme dipnotlarında, TFRS'lerde birebir yer alan ve işletmeye özgü hiçbir unsur içermeyen standart politika metinlerini uzun uzun tekrarlamaktadır. 2023'te değişen TMS 1'e göre işletmenin açıklaması gereken muhasebe politikası bilgisi hangisidir?",
     "options": {
-      "E": "Sonraki dönemde önemli düzeltme riski taşıyan varsayımlara ve belirsizlik kaynaklarına ilişkin bilgi açıklanır",
-      "A": "Tahmin belirsizlikleri açıklanmaz; yalnızca kesin tutarlar raporlanmaktadır",
-      "B": "Tahmin belirsizliği yalnızca işletme zarar ettiğinde açıklanır; kâr hâlinde açıklanmamaktadır",
-      "C": "Tahmin belirsizliği açıklaması yalnızca denetçinin raporunda yer alır; dipnotlarda bulunmaz",
-      "D": "Tahmin yapılması standartlarda yasaklanmış olup tüm tutarlar kesin biçimde ölçülmektedir"
+      "A": "Bütün muhasebe politikaları",
+      "B": "Vergi mevzuatındaki politikalar",
+      "C": "Değişen politikalar",
+      "D": "Denetçinin önerdiği politikalar",
+      "E": "Önemli muhasebe politikası bilgisi"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme, sonraki dönemde varlık ve borçların defter değerlerinde önemli düzeltme riski oluşturan geleceğe ilişkin varsayımlar ve tahmin belirsizliğinin diğer önemli kaynaklarına ilişkin bilgi açıklar. Doğru cevap E.",
+    "solution": "TMS 1 p. 117'ye göre (2023 değişikliği) işletme **önemli muhasebe politikası bilgisini** açıklar. Önemli olmayan politika bilgilerini açıklaması gerekmez; açıklarsa önemli bilgiyi gölgelememelidir (p. 117D).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - tahmin belirsizliği"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 117-117B"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "std-tms1-gen-0056",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Sermayenin yönetimine ilişkin açıklama bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin yönetim kurulu, 31.12.2025 tarihli finansal tablolar onaylanmadan önce, 2025 kârından ortaklara 500.000 ₺ kâr payı dağıtılmasını genel kurula önermiştir. Genel kurul toplantısı Nisan 2026'da yapılacaktır. Bu kâr payı 31.12.2025 tarihli finansal tablolarda nasıl yer alır?",
     "options": {
-      "A": "İşletme, sermayeyi yönetme amaç, politika ve süreçlerini değerlendirebilmeleri için kullanıcılara bilgi açıklar",
-      "B": "Sermaye yönetimine ilişkin hiçbir bilgi açıklanmaz; bu bilgi ticari sır kabul edilir",
-      "C": "Sermaye yönetimi bilgisi yalnızca ortaklara sözlü olarak bildirilir; dipnotta yer almaz",
-      "D": "Sermaye yönetimi açıklaması yalnızca işletme sermaye artırımı yaptığında zorunlu tutulmuştur",
-      "E": "İşletme, sermayesini yönetme amaç ve politikalarına ilişkin hiçbir açıklama yapmaz; bu bilgiler ticari sır kapsamında tutulur"
+      "A": "Dipnotlarda açıklanır",
+      "B": "Kısa vadeli borç olarak",
+      "C": "Kâr veya zararda gider olarak",
+      "D": "Özkaynaktan indirim olarak",
+      "E": "Karşılık olarak"
     },
     "answer": "A",
-    "solution": "TMS 1: işletme, kullanıcıların sermayeyi yönetme amaç, politika ve süreçlerini değerlendirebilmesini sağlayacak bilgi açıklar. Doğru cevap A.",
+    "solution": "TMS 10 p. 12-13'e göre raporlama döneminden sonra önerilen kâr payları raporlama dönemi sonunda borç olarak **muhasebeleştirilmez**; TMS 1 p. 137 uyarınca tablolar onaylanmadan önce önerilen ancak dağıtıma yöneltilmemiş kâr payı tutarı **dipnotlarda açıklanır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - sermaye yönetimi açıklaması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 137; TMS 10 p. 12-13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "std-tms1-gen-0057",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Kâr payına ilişkin açıklama bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem net kârı 400.000 ₺'dir. Dönemde yurt dışı işletmeden 90.000 ₺ çevrim farkı kaybı, tanımlanmış fayda planından 30.000 ₺ aktüeryal kayıp ve maddi duran varlıklardan 70.000 ₺ yeniden değerleme artışı doğmuştur. Diğer kapsamlı gelir kalemleri vergi etkisi düşülmüş tutarlardır. Toplam kapsamlı gelir kaç ₺'dir?",
     "options": {
-      "A": "Tabloların yayımı için onaylanmadan önce teklif edilen ancak dönemde dağıtım olarak muhasebeleştirilmeyen kâr payı tutarı açıklanır",
-      "B": "Kâr payına ilişkin hiçbir bilgi açıklanmaz; kâr dağıtımı yalnızca ortakları ilgilendirdiğinden finansal tablo kullanıcılarına herhangi bir açıklama sunulmaz",
-      "C": "Teklif edilen kâr payı dönemin gideri olarak kâr veya zarara yansıtılır",
-      "D": "Kâr payı bilgisi yalnızca vergi idaresine bildirilir; dipnotlarda açıklanmamaktadır",
-      "E": "Kâr payı yalnızca dağıtıldıktan on yıl sonra ve geriye dönük olarak açıklanabilmektedir"
+      "A": "350.000",
+      "B": "400.000",
+      "C": "280.000",
+      "D": "470.000",
+      "E": "590.000"
     },
     "answer": "A",
-    "solution": "TMS 1: işletme, finansal tabloların yayımı için onaylanmadan önce teklif edilen veya ilan edilen ancak dönem içinde ortaklara dağıtım olarak muhasebeleştirilmeyen kâr payı tutarını ve bunun pay başına tutarını açıklar. Doğru cevap A.",
+    "solution": "Toplam kapsamlı gelir: 400.000 − 90.000 − 30.000 + 70.000 = **350.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - kâr payı açıklaması"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 81A"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "std-tms1-gen-0058",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Aşağıdakilerden hangileri TMS 1'e göre dipnotlarda açıklanır?\n\nI. Uygulanan önemli muhasebe politikaları\n\nII. Tahmin belirsizliğinin önemli kaynakları\n\nIII. Sermaye yönetimine ilişkin bilgiler",
+    "stem": "Bir grubun konsolide dönem kârı 800.000 ₺, konsolide diğer kapsamlı geliri 200.000 ₺'dir. Kârın 120.000 ₺'lik, diğer kapsamlı gelirin 30.000 ₺'lik kısmı kontrol gücü olmayan paylara aittir. Ana ortaklığın sahiplerine ait toplam kapsamlı gelir kaç ₺'dir?",
     "options": {
-      "B": "I, II ve III",
-      "A": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "880.000",
+      "B": "850.000",
+      "C": "820.000",
+      "D": "680.000",
+      "E": "1.000.000"
     },
     "answer": "B",
-    "solution": "Dipnotlarda; önemli muhasebe politikaları (I), tahmin belirsizliğinin önemli kaynakları (II) ve sermaye yönetimine ilişkin bilgiler (III) açıklanır. Üçü de doğrudur. Doğru cevap B.",
+    "solution": "TMS 1 p. 81B'ye göre toplam kapsamlı gelir de kontrol gücü olmayan paylara ve ana ortaklığın sahiplerine dağıtılarak sunulur: (800.000 − 120.000) + (200.000 − 30.000) = **850.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dipnot açıklamaları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 81B"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "std-tms1-gen-0059",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Aşağıdaki ifadelerden hangileri dipnotlar bakımından doğrudur?\n\nI. Dipnotlar sistematik biçimde sunulur\n\nII. Tablolardaki kalemler ilgili dipnota çapraz referans verir\n\nIII. Dipnotlar finansal tablo setinin parçası değildir",
+    "stem": "Aşağıdakilerden hangileri sonradan kâr veya zarara yeniden sınıflandırılabilecek diğer kapsamlı gelir kalemlerindendir?\n\nI. Yurt dışı işletmenin çevriminden doğan kur farkları\n\nII. Maddi duran varlık yeniden değerleme artışları\n\nIII. Tanımlanmış fayda planlarının yeniden ölçüm kazanç ve kayıpları",
     "options": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "I ve II",
+      "B": "Yalnız II",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "Yalnız I"
     },
     "answer": "E",
-    "solution": "Dipnotlar sistematik sunulur (I) ve kalemler çapraz referans verir (II). Dipnotlar tam finansal tablo setinin ayrılmaz parçasıdır; bu nedenle III yanlıştır. Doğru cevap E.",
+    "solution": "TMS 1 p. 82A ve 96'ya göre yurt dışı işletmenin çevrim farkları elden çıkarmada kâr veya zarara yeniden sınıflandırılır (I). Yeniden değerleme artışları (II) ile tanımlanmış fayda planı yeniden ölçümleri (III) **yeniden sınıflandırılmaz**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - dipnotlar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 82A, 96"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "std-tms1-gen-0060",
     "ders": "muhasebe_standartlari",
     "konu": "tms_1_sunulus",
-    "stem": "Bir işletme, önemli olmayan bir muhasebe politikası bilgisini dipnotlarda açıklamamıştır. TMS 1 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri TMS 1'e göre doğrudur?\n\nI. Raporlama dönemi bir yıldan kısa olursa bunun nedeni açıklanır\n\nII. Tasfiye niyeti olmasa da önemli süreklilik belirsizlikleri açıklanır\n\nIII. Sunum ve sınıflandırma yönetimin tercihine göre her yıl değiştirilebilir",
     "options": {
-      "E": "Önemli olmayan muhasebe politikası bilgisinin açıklanması zorunlu değildir",
-      "A": "Tüm muhasebe politikaları, önemsiz olanlar dâhil açıklanır",
-      "B": "Politika açıklanmadığı için finansal tablolar kendiliğinden geçersiz hâle gelmektedir",
-      "C": "Önemsiz politikalar açıklanmazsa TFRS'lere uygunluk beyanı yapılması yasaklanmaktadır",
-      "D": "Muhasebe politikalarının açıklanması yalnızca denetçinin talebine bağlı bir uygulamadır"
+      "A": "I ve III",
+      "B": "II ve III",
+      "C": "Yalnız I",
+      "D": "Yalnız II",
+      "E": "I ve II"
     },
     "answer": "E",
-    "solution": "TMS 1: işletme önemli muhasebe politikası bilgilerini açıklar. Önemli olmayan muhasebe politikası bilgisinin açıklanması gerekmez; ancak önemsiz bilgi, önemli bilgiyi gizleyecek biçimde sunulmamalıdır. Doğru cevap E.",
+    "solution": "TMS 1 p. 36'ya göre dönem uzunluğundaki değişikliğin nedeni açıklanır (I); p. 25'e göre tasfiye niyeti olmasa da önemli süreklilik belirsizlikleri açıklanır (II). p. 45'e göre sunum ancak faaliyetlerde önemli değişiklik olması veya bir TFRS'nin gerektirmesi hâlinde değiştirilir (III yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 1; yapısal)",
-      "legislationRef": "TMS 1 - önemlilik (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 1 p. 25, 36, 45"
     },
     "validYear": 2026,
     "mockExamId": null
