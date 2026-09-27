@@ -33,20 +33,6 @@ YAMA = [
 
     # maliyet_hesaplari: build_fm_maliyet_hesaplari_cok_adimli.py devraldı (2026-09-27)
 
-    # ── oran_analizi: net kâr marjı · stok devir hızı · cari oran
-    ("mali_tablolar_analizi/oran_analizi.json", "mta-oran-gen-0052",
-     "%15", "%20",
-     [("120.000", "160.000")],
-     "Net Kâr Marjı = (160.000 ÷ 800.000) × 100 = **%20**."),
-    ("mali_tablolar_analizi/oran_analizi.json", "mta-oran-gen-0054",
-     "6", "3",
-     [("125.000", "250.000")],
-     "Stok Devir Hızı = 750.000 ÷ 250.000 = **3**. Bölen ORTALAMA STOKTUR."),
-    ("mali_tablolar_analizi/oran_analizi.json", "mta-oran-gen-0055",
-     "2,0", "2,5",
-     [("350.000", "280.000")],
-     "Cari Oran = 700.000 ÷ 280.000 = **2,5**."),
-
     # ── dikey_analiz: kalem ÷ net satışlar
     ("mali_tablolar_analizi/dikey_analiz.json", "mta-dikey-gen-0045",
      "%60", "%50",
