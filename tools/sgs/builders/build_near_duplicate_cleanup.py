@@ -56,20 +56,6 @@ PATCHES = {
             "solution": "Dönem sonuna kadar üç aylık faiz tahakkuk etmiştir: 600.000 × %18 × 3/12 = **27.000 ₺**.",
         },
     },
-    "content/finansal_muhasebe/ozkaynaklar.json": {
-        "finmuh-ozk-gen-0050": {
-            "stem": "Ortaklarca taahhüt edilmiş ancak henüz ödenmemiş sermaye tutarı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
-            "options": {
-                "A": "500 Sermaye",
-                "B": "520 Hisse Senedi İhraç Primleri",
-                "C": "540 Yasal Yedekler",
-                "D": "590 Dönem Net Kârı",
-                "E": "501 Ödenmemiş Sermaye (-)",
-            },
-            "answer": "E",
-            "solution": "Taahhüt edildiği hâlde ortaklarca henüz ödenmemiş sermaye, özkaynakları azaltan **501 Ödenmemiş Sermaye (-)** hesabında izlenir.",
-        },
-    },
     "content/finansal_muhasebe/donem_sonu_islemleri.json": {
         "finmuh-dsi-gen-0042": {
             "stem": "Gelir ve gider hesaplarının devrinden sonra 690 Dönem Kârı veya Zararı hesabı 160.000 ₺ alacak kalanı vermiştir. Bu bakiye neyi gösterir?",
