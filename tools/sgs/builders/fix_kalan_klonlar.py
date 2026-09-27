@@ -31,11 +31,7 @@ def tr(n):
 YAMA = [
     # mali_duran_varliklar: build_fm_mali_duran_varliklar_cok_adimli.py devraldı (2026-09-27)
 
-    # ── maliyet_hesaplari: toplam maliyet ÷ üretim miktarı
-    ("finansal_muhasebe/maliyet_hesaplari.json", "finmuh-mlh-gen-0051",
-     "300", "320",
-     [("750.000", "800.000")],
-     "Birim maliyet = 800.000 ÷ 2.500 = **320 ₺/birim**."),
+    # maliyet_hesaplari: build_fm_maliyet_hesaplari_cok_adimli.py devraldı (2026-09-27)
 
     # ── oran_analizi: net kâr marjı · stok devir hızı · cari oran
     ("mali_tablolar_analizi/oran_analizi.json", "mta-oran-gen-0052",
