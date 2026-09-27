@@ -54,9 +54,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
     },
-    "content/maliyet_muhasebesi/gider_dagitimi.json": {
-        "mmuh-dagitim-gen-0006": {"B": "İkinci dağıtım (yardımcı gider yerlerinin dağıtımı)"},
-    },
     "content/maliyet_muhasebesi/standart_maliyet.json": {
         "mmuh-standart-gen-0007": {"A": "Standart miktar + standart fiyat toplamı"},
     },

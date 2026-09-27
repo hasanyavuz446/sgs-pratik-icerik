@@ -42,14 +42,6 @@ PATCHES = {
             "solution": "Trend yüzdesi = 1.000.000 ÷ 800.000 × 100 = **%125**.",
         },
     },
-    "content/maliyet_muhasebesi/gider_dagitimi.json": {
-        "mmuh-dagitim-gen-0051": {
-            "stem": "200.000 ₺ tutarındaki kira gideri alanlara göre dağıtılacaktır (A: 250 m², B: 150 m², C: 100 m²). B gider yerinin dağıtım anahtarındaki payı yüzde kaçtır?",
-            "options": {"A": "%50", "B": "%20", "C": "%30", "D": "%40", "E": "%60"},
-            "answer": "C",
-            "solution": "Toplam alan 250 + 150 + 100 = 500 m²'dir. B'nin payı = 150 ÷ 500 × 100 = **%30**.",
-        },
-    },
     "content/maliyet_muhasebesi/safha_maliyeti.json": {
         "mmuh-safha-gen-0012": {
             "stem": "Dönem sonu yarı mamulü 4.000 birim ve tamamlanma derecesi %50'dir. Dönem sonu yarı mamulün eşdeğer ürün miktarı kaç birimdir?",

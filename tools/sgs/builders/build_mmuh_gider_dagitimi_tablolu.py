@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Gider Dagitimi — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+Maliyet muhasebesi tablolu tur. Gercek sinav (144 soru) profili: medyan kok 554, kokte 3+ tutar %92, olumsuz %3; veri tablo halinde. 42 soru korundu; 18 kavram ezberi yerine Markdown tablolu 18 soru: uc olculu birinci dagitim, dogrudan / kademeli / matematiksel (cebirsel) ikinci dagitim ve yontem karsilastirmasi, ikinci dagitim sonrasi GUG payi, fazla calisma zammi, eksik/fazla yukleme, iki gider yerinden farkli esasla yukleme, DIG esasli oran, kullanilmayan kapasite maliyeti. Tutarlar Fraction ile hesaplandi; bagimsiz kontrol kademeli dagitimdaki calisan toplami hatasini yakaladi. Kor ogrenci %19.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: Maliyet muhasebesi - gider yerleri ve gider dagitimi · Tekduzen Hesap Plani 7/A
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/maliyet_muhasebesi/gider_dagitimi.json"
+STYLE_REF = 'SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)'
+ONEK = "mmuh-dagitim-gen-"
+
+
+def patch(stem, options, answer, solution, ref='Maliyet muhasebesi - gider yerleri'):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": ref},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 2
+    '0001': patch(
+        "Bir işletmede 120.000 ₺ kira gideri, kapladıkları alana göre A esas üretim (300 m²), B esas üretim (200 m²) ve C yardımcı hizmet (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda C yardımcı gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 400, B'ye 100 saat oranında dağıtılmaktadır. İki dağıtım sonunda A gider yerinde toplanan tutar kaç ₺'dir?",
+        {
+            'A': '72.000',
+            'B': '80.000',
+            'C': '60.000',
+            'D': '96.000',
+            'E': '76.000',
+        },
+        'E',
+        "I. dağıtım: toplam alan 600 m²; A payı = 120.000 × (300 ÷ 600) = 60.000 ₺, C payı = 120.000 × (100 ÷ 600) = 20.000 ₺. II. dağıtım: C'nin 20.000 ₺'si makine saatine göre dağıtılır; A'ya = 20.000 × (400 ÷ 500) = 16.000 ₺. A toplamı = 60.000 + 16.000 = **76.000 ₺**. (Yalnız I. dağıtım 60.000 ₺'de kalmak eksiktir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0002': patch(
+        "Bir işletmede iki yardımcı gider yeri vardır. Kademeli (basamaklı) dağıtımda önce enerji gider yeri dağıtılır: 60.000 ₺'lik enerji gideri A esas üretime %50, B esas üretime %30, bakım gider yerine %20 oranında verilir. Bakım gider yerinin kendi gideri 40.000 ₺'dir ve enerjiden aldığı payla birlikte A'ya %60, B'ye %40 dağıtılır. A esas üretim gider yerinin yardımcı gider yerlerinden aldığı TOPLAM pay kaç ₺'dir?",
+        {
+            'A': '30.000',
+            'B': '31.200',
+            'C': '61.200',
+            'D': '54.000',
+            'E': '60.000',
+        },
+        'C',
+        "Enerjiden A'ya = 60.000 × %50 = 30.000 ₺; bakıma = 60.000 × %20 = 12.000 ₺. Bakımın dağıtılacak toplamı = 40.000 + 12.000 = 52.000 ₺; A'ya = 52.000 × %60 = 31.200 ₺. A'nın yardımcılardan toplam payı = 30.000 + 31.200 = **61.200 ₺**. (Bakımın enerjiden aldığı payı ihmal etmek 30.000 + 24.000 = 54.000 ₺ verir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0003': patch(
+        'Yardımcı gider yerlerinin giderlerinin esas üretim gider yerlerine dağıtımında kullanılan yöntemlerden biri DEĞİLDİR:',
+        {
+            'A': 'Enflasyon düzeltmesi yöntemi',
+            'B': 'Matematiksel (karşılıklı) dağıtım yöntemi',
+            'C': 'Kademeli (basamaklı) dağıtım yöntemi',
+            'D': 'Bunların dışında bir yöntem',
+            'E': 'Doğrudan (basit) dağıtım yöntemi',
+        },
+        'A',
+        'Yardımcı gider yerlerinin dağıtımında **doğrudan, kademeli (basamaklı) ve matematiksel (karşılıklı)** yöntemler kullanılır. **Enflasyon düzeltmesi** bir dağıtım yöntemi değildir.',
+        'Maliyet muhasebesi - yardımcı dağıtım yöntemleri',
+    ),
+    # düzey 2
+    '0004': patch(
+        'Yardımcı gider yerlerinin birbirine verdiği KARŞILIKLI hizmeti (denklem sistemi kurarak) tam olarak dikkate alan, teorik olarak en doğru sonucu veren dağıtım yöntemi hangisidir?',
+        {
+            'A': 'Kademeli (basamaklı) dağıtım yöntemi',
+            'B': 'Karşılaştırmalı dikey oran analizi yöntemi',
+            'C': 'Doğrudan (basit) gider dağıtım yöntemi',
+            'D': 'Matematiksel (karşılıklı/denklem) dağıtım',
+            'E': 'Aritmetik basit ortalama yöntemi',
+        },
+        'D',
+        '**Matematiksel (karşılıklı/denklem) dağıtım** yöntemi, yardımcı gider yerleri arası karşılıklı hizmeti denklem sistemiyle çözerek tam yansıtır; teorik olarak **en doğru** ama en karmaşık yöntemdir.',
+        'Maliyet muhasebesi - matematiksel dağıtım',
+    ),
+    # düzey 2
+    '0005': patch(
+        "Yemekhane yardımcı hizmet gider yerinde toplanan 90.000 ₺, işçi sayısına göre A esas üretim (40 işçi) ve B esas üretim (20 işçi) gider yerlerine dağıtılmaktadır. A gider yerinin birinci dağıtımdan gelen payı 140.000 ₺ ve bu gider yerinde 5.000 birim mamul üretildiğine göre A'da birim başına düşen genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '30',
+            'B': '40',
+            'C': '28',
+            'D': '200.000',
+            'E': '12',
+        },
+        'B',
+        "Yemekhaneden A'ya = 90.000 × (40 ÷ 60) = 60.000 ₺. A'nın toplam GÜG'ü = 140.000 + 60.000 = 200.000 ₺. Birim GÜG = 200.000 ÷ 5.000 = **40 ₺**. (Yemekhane payını eklemeden 140.000 ÷ 5.000 = 28 ₺ bulunur — eksik.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0006': patch(
+        "A esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 165.000 ₺'dir. Bu gider yerinde üretilen mamullerin direkt ilk madde ve malzeme gideri 200.000 ₺, direkt işçilik gideri 135.000 ₺ olup dönemde 2.500 birim mamul üretilmiştir. Birim üretim maliyeti kaç ₺'dir?",
+        {
+            'A': '500.000',
+            'B': '140',
+            'C': '200',
+            'D': '134',
+            'E': '66',
+        },
+        'C',
+        "Toplam üretim maliyeti = DİMM + DİG + GÜG = 200.000 + 135.000 + 165.000 = 500.000 ₺. Birim maliyet = 500.000 ÷ 2.500 = **200 ₺**. (GÜG'ü hesaba katmamak 335.000 ÷ 2.500 = 134 ₺ verir — eksik.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0007': patch(
+        "GÜG yükleme oranı 20 ₺/makine saati olan bir gider yerinde, X mamulü 5 makine saati kullanmıştır. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '200',
+            'B': '4',
+            'C': '25',
+            'D': '20',
+            'E': '100',
+        },
+        'E',
+        'Mamule yüklenen GÜG = yükleme oranı × mamulün ölçüsü = 20 ₺ × 5 saat = **100 ₺**.',
+        'Maliyet muhasebesi - yükleme',
+    ),
+    # düzey 2
+    '0008': patch(
+        'Gider dağıtımı (I. ve II. dağıtım) işlemleri sonunda giderlerin TOPLAM tutarı bakımından ne söylenebilir?',
+        {
+            'A': 'Giderler iki kez sayıldığından toplam gider tutarı yaklaşık olarak iki katına çıkar',
+            'B': 'Toplam gider değişmez; giderlerin toplandığı yer (gider yeri/mamul) değişir',
+            'C': 'Bazı giderler dağıtım dışında kaldığından toplam gider tutarı belirgin biçimde azalır',
+            'D': 'Dağıtım sonunda tüm giderler mamule geçtiği için gider yerlerinde toplam sıfırlanır',
+            'E': 'Dağıtım sırasında yeni gider yaratıldığı için toplam gider tutarı bir miktar artış gösterir',
+        },
+        'B',
+        'Dağıtım bir **aktarma** işlemidir; **toplam gider değişmez**, yalnızca giderlerin toplandığı yer (önce gider yerleri, sonra mamuller) değişir. Yeni gider yaratılmaz.',
+        'Maliyet muhasebesi - dağıtım',
+    ),
+    # düzey 2
+    '0009': patch(
+        'Bir mamulün üretim maliyeti aşağıdaki üç unsurun toplamından oluşur. Bu unsurlar hangileridir?',
+        {
+            'A': 'Fabrika kirası + tüketilen enerji + kullanılan su giderlerinin toplamından meydana gelir',
+            'B': 'Mal alışları + satıştan iadeler + uygulanan iskontoların toplamı ile hesaplanır',
+            'C': 'Direkt ilk madde ve malzeme (DİMM) + Direkt işçilik (DİG) + Genel üretim giderleri (GÜG)',
+            'D': 'Ödenen faiz + dönem amortismanı + hesaplanan kurumlar vergisinin toplamından oluşur',
+            'E': 'Satış giderleri + pazarlama giderleri + genel yönetim giderlerinin toplamından oluşur',
+        },
+        'C',
+        'Üretim maliyeti = **Direkt İlk Madde ve Malzeme (DİMM) + Direkt İşçilik (DİG) + Genel Üretim Giderleri (GÜG)**. Satış/pazarlama/yönetim giderleri üretim maliyetine değil, dönem giderlerine girer.',
+        'Maliyet muhasebesi - üretim maliyeti unsurları',
+    ),
+    # düzey 2
+    '0010': patch(
+        "Bir üretim döneminde direkt ilk madde ve malzeme gideri 120.000 ₺, direkt işçilik gideri 80.000 ₺'dir. Üretim gider yerinin birinci dağıtımdan gelen genel üretim gideri payı 40.000 ₺, ikinci dağıtımda yardımcı gider yerlerinden aktarılan pay ise 20.000 ₺'dir. Dönemin toplam üretim maliyeti kaç ₺'dir?",
+        {
+            'A': '280.000',
+            'B': '240.000',
+            'C': '60.000',
+            'D': '200.000',
+            'E': '260.000',
+        },
+        'E',
+        'Dağıtım sonrası mamullere yüklenecek GÜG = 40.000 + 20.000 = 60.000 ₺. Toplam üretim maliyeti = DİMM + DİG + GÜG = 120.000 + 80.000 + 60.000 = **260.000 ₺**. (İkinci dağıtım payını atlamak 240.000 ₺ verir.)',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0011': patch(
+        'Gider yerleri genel olarak esas üretim, yardımcı üretim, yardımcı hizmet ve yönetim gider yerleri olarak gruplanır. Bu gruplandırmanın temel amacı aşağıdakilerden hangisidir?',
+        {
+            'A': 'Satış hasılatını artırmak ve pazarlama faaliyetlerini genişleterek işletmenin toplam pazar payını daha da yükseltmeyi hedefler',
+            'B': 'Giderleri niteliklerine ve üretimle ilişkilerine göre toplayıp maliyetlere doğru biçimde yüklemek ve sorumluluğu belirlemek',
+            'C': 'İşletmede çalışan personel sayısını azaltarak toplam işçilik giderlerini önemli ölçüde düşürmeyi amaçlar',
+            'D': 'Depodaki hammadde ve mamul stoklarını dönem sonunda fiziki olarak sayıp miktar olarak kayda geçirmektir',
+            'E': 'Dönem sonunda vergi beyannamesi verme yükümlülüğünden yasal olarak tamamen muaf tutulmayı sağlamaktır',
+        },
+        'B',
+        'Gider yerlerinin gruplandırılmasındaki amaç; giderleri **niteliklerine ve üretimle ilişkilerine göre** toplayıp mamullere doğru biçimde yüklemek, ayrıca **maliyet kontrolü ve sorumluluk** belirlemektir.',
+        'Maliyet muhasebesi - gider yeri gruplandırma',
+    ),
+    # düzey 2
+    '0012': patch(
+        "Bir ortak gider, üç gider yerine 3 : 2 : 1 oranında dağıtılmıştır. En büyük payı alan gider yerine 90.000 ₺ düştüğüne göre dağıtıma tabi toplam ortak gider kaç ₺'dir?",
+        {
+            'A': '150.000',
+            'B': '90.000',
+            'C': '540.000',
+            'D': '180.000',
+            'E': '270.000',
+        },
+        'D',
+        "En büyük pay, toplam 6 payın 3'ünü (yarısını) alır: 90.000 = Toplam × (3 ÷ 6). Buradan toplam ortak gider = 90.000 ÷ 0,5 = **180.000 ₺**. (Bir payın değeri 90.000 ÷ 3 = 30.000 ₺'dir; 6 pay × 30.000 = 180.000 ₺ ile aynı sonuç.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0013': patch(
+        'Birinci dağıtım sonunda tüm gider yerlerinde toplam 500.000 ₺ gider birikmiştir. İkinci dağıtım (yardımcı → esas) tamamlandığında esas üretim gider yerlerindeki giderlerin toplamı kaç ₺ olur?',
+        {
+            'A': 'Belirlenemez',
+            'B': '500.000',
+            'C': '1.000.000',
+            'D': '0',
+            'E': '250.000',
+        },
+        'B',
+        'İkinci dağıtım bir aktarma olduğundan toplam değişmez; yardımcı gider yerleri sıfırlanıp giderleri esas üretim gider yerlerine aktarılır. Bu nedenle esas üretim gider yerlerindeki toplam = **500.000 ₺** (I. dağıtım toplamının tamamı).',
+        'Maliyet muhasebesi - ikinci dağıtım',
+    ),
+    # düzey 2
+    '0014': patch(
+        'Gider dağıtımında aşamaların doğru sıralaması aşağıdakilerden hangisidir?',
+        {
+            'A': 'Giderlerin gider yerlerinde toplanması → I. dağıtım (ortak giderler → gider yerleri) → II. dağıtım (yardımcı → esas) → mamullere yükleme',
+            'B': 'Önce mamullere yükleme yapılır, ardından ortak giderlerin I. dağıtımı ve en son olarak da yardımcıdan esasa II. dağıtım gerçekleştirilir',
+            'C': 'Önce II. dağıtım yapılır, sonra mamullere yükleme ve en sonda ortak giderlerin gider yerlerine I. dağıtımı yapılır',
+            'D': 'Önce mamullere yükleme yapılır, giderlerin gider yerlerinde toplanması ve dağıtımı işlemleri en sona bırakılır',
+            'E': 'Diğer aşamalara gerek olmadan I. dağıtımın yapılması mamul maliyetinin bulunması için yeterlidir',
+        },
+        'A',
+        'Doğru sıra: giderlerin gider yerlerinde toplanması → **I. dağıtım** (ortak giderler gider yerlerine) → **II. dağıtım** (yardımcı gider yerleri → esas üretim gider yerlerine) → **mamullere yükleme**.',
+        'Maliyet muhasebesi - dağıtım aşamaları',
+    ),
+    # düzey 3
+    '0015': patch(
+        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Bakım yardımcı gider yerinde toplanan gider kaç ₺'dir?",
+        {
+            'A': '29.000 ₺',
+            'B': '40.000 ₺',
+            'C': '88.000 ₺',
+            'D': '74.000 ₺',
+            'E': '83.000 ₺',
+        },
+        'D',
+        'Kira 40.000 ₺ + amortisman 25.000 ₺ + elektrik 9.000 ₺ = **74.000 ₺**. Yardımcı gider yerleri de birinci dağıtımdan pay alır; bu tutar ikinci dağıtımda esas gider yerlerine aktarılır.',
+        'Maliyet muhasebesi - birinci dağıtım',
+    ),
+    # düzey 3
+    '0016': patch(
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme karşılıklı hizmetleri matematiksel dağıtım yöntemiyle dikkate almaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
+        {
+            'A': '12.000 ₺',
+            'B': '9.000 ₺',
+            'C': '11.100 ₺',
+            'D': '14.300 ₺',
+            'E': '15.000 ₺',
+        },
+        'E',
+        "Önce X = 15.000 ₺ ve Y = 20.000 ₺ bulunur (X = 10.000 + 0,25Y; Y = 17.000 + 0,20X). Kesim'in payı %60 × 15.000 + %30 × 20.000 = 9.000 + 6.000 = **15.000 ₺**. Doğrudan yöntem 14.300 ₺ verirdi.",
+        'Maliyet muhasebesi - ikinci dağıtım (matematiksel yöntem)',
+    ),
+    # düzey 3
+    '0017': patch(
+        "Bir üretim işletmesinde birinci ve ikinci dağıtım sonunda Kaynak esas üretim gider yerinde toplanan tutarlar şöyledir:\n\n| Kalem | Tutar |\n|---|---|\n| Direkt ilk madde ve malzeme | 50.000 ₺ |\n| Yardımcı malzeme | 8.000 ₺ |\n| Direkt işçilik | 45.000 ₺ |\n| Endirekt işçilik | 9.000 ₺ |\n| Elektrik | 11.000 ₺ |\n| Bakım | 5.000 ₺ |\n| Yemekhane gider yerinden gelen pay | 14.000 ₺ |\n| Bakım-onarım gider yerinden gelen pay | 8.000 ₺ |\n\nBuna göre Kaynak gider yerinde toplanan giderler içinde genel üretim giderlerinin payı kaç ₺'dir?",
+        {
+            'A': '150.000 ₺',
+            'B': '22.000 ₺',
+            'C': '55.000 ₺',
+            'D': '33.000 ₺',
+            'E': '100.000 ₺',
+        },
+        'C',
+        'Toplam 150.000 ₺ içinden direkt ilk madde (50.000 ₺) ve direkt işçilik (45.000 ₺) çıkarılır; kalan yardımcı malzeme, endirekt işçilik, elektrik, bakım ve ikinci dağıtımdan gelen paylar genel üretim gideridir: **55.000 ₺**.',
+        'Maliyet muhasebesi - genel üretim giderleri',
+    ),
+    # düzey 3
+    '0018': patch(
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': "Bakım'ın dağıtılacak toplamı 34.000 ₺'dir",
+            'B': "Yemekhane'den Bakım'a 4.000 ₺ pay düşer",
+            'C': "Bakım, Yemekhane'ye de ikinci dağıtımdan pay verir",
+            'D': 'Esas gider yerlerinde toplanan gider tutarı dağıtımdan sonra 230.000 ₺ olur',
+            'E': 'Dağıtımdan sonra yardımcı gider yerlerinin kalanı sıfırlanır',
+        },
+        'C',
+        "Kademeli yöntemde bir kez dağıtılan gider yerine (Yemekhane) **geri pay verilmez**; Bakım yalnız Kesim ve Montaj'a dağıtılır. Yemekhane'den Bakım'a 20.000 × 20/100 = 4.000 ₺ düşer; Bakım 34.000 ₺ dağıtır. Toplam gider değişmez: 20.000 + 30.000 + 100.000 + 80.000 = 230.000 ₺ esas gider yerlerinde toplanır.",
+        'Maliyet muhasebesi - gider dağıtımı',
+    ),
+    # düzey 2
+    '0019': patch(
+        'Yardımcı gider yerlerinin dağıtım yöntemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Doğrudan yöntem yardımcı gider yerlerinin birbirine verdiği hizmeti dikkate almaz.\n\nII. Kademeli yöntemde dağıtılan bir yardımcı gider yerine sonradan pay verilir.\n\nIII. Matematiksel yöntem yardımcı gider yerlerinin birbirine verdiği hizmeti yok sayar.',
+        {
+            'A': 'Yalnız I',
+            'B': 'Yalnız III',
+            'C': 'I ve III',
+            'D': 'II ve III',
+            'E': 'I ve II',
+        },
+        'A',
+        'Yalnız I doğrudur. II yanlıştır: kademeli yöntemde bir kez dağıtılan yardımcı gider yerine **geri pay verilmez**. III yanlıştır: matematiksel yöntem karşılıklı hizmetleri **denklem sistemiyle tam olarak** dikkate alır.',
+        'Maliyet muhasebesi - ikinci dağıtım yöntemleri',
+    ),
+    # düzey 3
+    '0020': patch(
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre Montaj esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
+        {
+            'A': '92.000 ₺',
+            'B': '98.000 ₺',
+            'C': '99.500 ₺',
+            'D': '130.400 ₺',
+            'E': '99.600 ₺',
+        },
+        'E',
+        "Yemekhane'den Montaj'a 20.000 × 30/100 = 6.000 ₺; Bakım'ın yeni toplamı 34.000 ₺'den Montaj'a 34.000 × 40/100 = 13.600 ₺. Montaj toplamı **99.600 ₺**.",
+        'Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)',
+    ),
+    # düzey 2
+    '0021': patch(
+        'A esas üretim gider yerine birinci dağıtımdan 90.000 ₺ pay düşmüş, ikinci dağıtımda bakım-onarım gider yerinden 30.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 8.000 makine saati çalışıldığına göre makine saati esaslı genel üretim gideri yükleme oranı kaç ₺/saattir?',
+        {
+            'A': '11,25',
+            'B': '120.000',
+            'C': '15',
+            'D': '12',
+            'E': '3,75',
+        },
+        'C',
+        "Yükleme oranının payı, gider yerinin **ikinci dağıtım sonrası** toplam GÜG'üdür: 90.000 + 30.000 = 120.000 ₺. Yükleme oranı = 120.000 ÷ 8.000 = **15 ₺/makine saati**. (Yalnız I. dağıtım payıyla 11,25; yalnız bakım payıyla 3,75 bulunur — ikisi de eksik.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0022': patch(
+        "Enerji yardımcı gider yerinde toplanan 100.000 ₺, tüketilen kilovatsaate göre dağıtılacaktır. Dönemde A esas üretim gider yeri 500 kwh, B esas üretim gider yeri 300 kwh, bakım yardımcı gider yeri 200 kwh tüketmiştir. Yardımcı gider yerlerinin birbirine verdiği hizmetin dikkate alınmadığı DOĞRUDAN (basit) dağıtım yöntemine göre A gider yerine düşen pay kaç ₺'dir?",
+        {
+            'A': '100.000',
+            'B': '62.500',
+            'C': '80.000',
+            'D': '50.000',
+            'E': '37.500',
+        },
+        'B',
+        'Doğrudan yöntemde yardımcı gider yerlerinin (bakım) tüketimi dikkate alınmaz; dağıtım yalnız esas üretim gider yerleri arasında yapılır. Esas yerlerin toplamı = 500 + 300 = 800 kwh. A payı = 100.000 × (500 ÷ 800) = **62.500 ₺**. (Bakımı da dahil etmek 100.000 × 500/1.000 = 50.000 ₺ verir.)',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0023': patch(
+        'Gider dağıtımıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. I. dağıtımda ortak giderler gider yerlerine dağıtılır.\n\nII. II. dağıtımda esas üretim gider yerlerinin giderleri yardımcı gider yerlerine aktarılır.\n\nIII. Dağıtım anahtarı, giderle en yakın ilişkili ölçü olmalıdır.',
+        {
+            'A': 'I, II ve III',
+            'B': 'I ve II',
+            'C': 'Yalnız I',
+            'D': 'I ve III',
+            'E': 'II ve III',
+        },
+        'D',
+        '**II yanlıştır:** İkinci dağıtımda aktarım yönü terstir; YARDIMCI gider yerlerinin giderleri ESAS üretim gider yerlerine aktarılır (böylece yardımcı gider yerleri sıfırlanır). **I** birinci dağıtımda ortak giderlerin gider yerlerine dağıtılması ve **III** dağıtım anahtarının giderle en yakın ilişkili ölçü olması doğrudur. Doğru cevap **I ve III**.',
+        'Maliyet muhasebesi - gider dağıtımı',
+    ),
+    # düzey 2
+    '0024': patch(
+        "Bir esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 180.000 ₺, aynı gider yerindeki toplam direkt işçilik gideri 240.000 ₺'dir. Bu gider yerinde üretilen X mamulünün direkt işçilik gideri 40.000 ₺ olduğuna göre X'e yüklenecek genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '18.000',
+            'B': '75.000',
+            'C': '53.333',
+            'D': '40.000',
+            'E': '30.000',
+        },
+        'E',
+        "Direkt işçilik esaslı yükleme oranı = GÜG ÷ toplam DİG = 180.000 ÷ 240.000 = %75. X'e yüklenen GÜG = 40.000 × %75 = **30.000 ₺**. (Oranı ters kurmak (240.000 ÷ 180.000 = %133) 53.333 ₺ verir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0025': patch(
+        "90.000 ₺ yemekhane gideri, işçi sayısına göre A (40) ve B (20) esas gider yerlerine dağıtılmaktadır. B esas gider yerine düşen pay kaç ₺'dir?",
+        {
+            'A': '45.000',
+            'B': '30.000',
+            'C': '20.000',
+            'D': '60.000',
+            'E': '90.000',
+        },
+        'B',
+        'B payı = 90.000 × (20 ÷ 60) = 90.000 × (1/3) = **30.000 ₺**.',
+        'Maliyet muhasebesi - ikinci dağıtım',
+    ),
+    # düzey 2
+    '0026': patch(
+        "Esas üretim gider yerinde toplanan genel üretim giderlerinin mamullere yüklenmesinde kullanılan 'yükleme oranı (yükleme haddi)' nasıl hesaplanır?",
+        {
+            'A': 'Seçilen dağıtım ölçüsünün, esas gider yerinin toplam genel üretim giderine bölünmesiyle bulunur',
+            'B': "Esas gider yerinin GÜG'ü ile dağıtım ölçüsünün toplanması sonucunda elde edilen tutardır",
+            'C': "Esas üretim gider yerinin GÜG'ü ile seçilen dağıtım ölçüsünün çarpılması sonucu bulunur",
+            'D': "Esas gider yeri GÜG'ü ÷ seçilen dağıtım ölçüsü (makine saati, direkt işçilik saati/tutarı vb.)",
+            'E': "Dönem satış hasılatının esas gider yerinin GÜG'üne bölünmesiyle hesaplanan bir orandır",
+        },
+        'D',
+        "**Yükleme oranı = Esas üretim gider yeri GÜG'ü ÷ Seçilen dağıtım ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.). Bu oran, her mamule ölçüsü kadar GÜG yüklemek için kullanılır.",
+        'Maliyet muhasebesi - yükleme oranı',
+    ),
+    # düzey 2
+    '0027': patch(
+        "Aşağıdakilerden hangisi bir 'esas üretim gider yeri' DEĞİLDİR?",
+        {
+            'A': 'Boyama bölümü',
+            'B': 'Bakım-onarım servisi',
+            'C': 'Dokuma bölümü',
+            'D': 'Kesim atölyesi',
+            'E': 'Montaj bölümü',
+        },
+        'B',
+        'Kesim, montaj, boyama, dokuma mamulün doğrudan üzerinde işlem yapılan **esas üretim gider yerleridir**. **Bakım-onarım servisi** ise diğer bölümlere hizmet veren bir **yardımcı gider yeridir**.',
+        'Maliyet muhasebesi - gider yeri türleri',
+    ),
+    # düzey 2
+    '0028': patch(
+        'Kademeli (basamaklı) dağıtım yönteminde yardımcı gider yerleri hangi mantıkla sıralanır?',
+        {
+            'A': 'Genellikle diğer gider yerlerine EN ÇOK hizmet veren (en çok gideri dağıtılacak olan) yardımcı gider yerinden başlanır',
+            'B': 'Yardımcı gider yerleri adlarının baş harfine göre alfabetik sıraya dizilerek tek tek dağıtılır',
+            'C': 'Herhangi bir öncelik veya belirli bir ölçüt gözetilmeksizin bütün yardımcı gider yerleri tamamen rastgele bir sırayla ele alınır',
+            'D': 'Yardımcı gider yerleri dönem satış tutarlarına göre büyükten küçüğe sıralanarak sırayla dağıtılır',
+            'E': 'En küçük tutarlı yardımcı gider yerinden başlanır ve dağıtım sonunda başa dönülerek yeniden dağıtım yapılır',
+        },
+        'A',
+        'Kademeli yöntemde genellikle **diğerlerine en çok hizmet veren** (en çok gideri dağıtılacak) yardımcı gider yerinden başlanıp sırayla ilerlenir; dağıtımı yapılan gider yerine geri pay verilmez (tek yönlü).',
+        'Maliyet muhasebesi - kademeli dağıtım',
+    ),
+    # düzey 2
+    '0029': patch(
+        "Aşağıdakilerden hangisi 'genel üretim gideri (GÜG)' kapsamında DEĞİLDİR?",
+        {
+            'A': 'Endirekt malzeme (makine yağı, temizlik malzemesi)',
+            'B': 'Fabrika binası amortismanı ve kirası',
+            'C': 'Mamulün bünyesine doğrudan giren direkt ilk madde ve malzeme',
+            'D': 'Endirekt işçilik (ustabaşı, bakım işçisi ücreti)',
+            'E': 'Fabrika enerji, ısıtma, aydınlatma gideri',
+        },
+        'C',
+        'GÜG; endirekt malzeme, endirekt işçilik, amortisman, kira, enerji gibi mamule **doğrudan izlenemeyen** üretim giderleridir. Mamulün bünyesine doğrudan giren **direkt ilk madde ve malzeme** GÜG değil, ayrı bir maliyet unsurudur (DİMM).',
+        'Maliyet muhasebesi - genel üretim giderleri',
+    ),
+    # düzey 2
+    '0030': patch(
+        "Aşağıdakilerden hangisi 'endirekt işçilik' giderine örnektir?",
+        {
+            'A': 'Boyama işçisinin ücreti',
+            'B': 'Kesim işçisinin ücreti',
+            'C': 'Fabrikadaki ustabaşı, bakım-onarım ve temizlik personelinin ücreti',
+            'D': 'Dokuma tezgahını çalıştıran işçinin ücreti',
+            'E': 'Montaj hattında mamulü doğrudan üreten işçinin ücreti',
+        },
+        'C',
+        'Mamulü doğrudan üreten (montaj, kesim, dokuma, boyama) işçilerin ücreti **direkt işçiliktir**. Ustabaşı, bakım-onarım, temizlik gibi üretime dolaylı katkı sağlayan personelin ücreti **endirekt işçilik (GÜG)**.',
+        'Maliyet muhasebesi - endirekt işçilik',
+    ),
+    # düzey 2
+    '0031': patch(
+        'Genel üretim giderlerinin mamullere doğrudan yüklenememesinin (dağıtım gerektirmesinin) temel nedeni aşağıdakilerden hangisidir?',
+        {
+            'A': 'Bu giderlerin vergiye tabi olmaması ve dönem beyannamesine dahil edilmemesi gerektiği içindir',
+            'B': 'Söz konusu giderlerin yıl sonunda toplu biçimde ortaya çıkması ve o anda tahakkuk etmesindendir',
+            'C': 'Tutarlarının çok küçük olması nedeniyle tek tek mamullere yüklenmesinin ekonomik açıdan uygun bulunmaması gerekçesiyledir',
+            'D': 'Bu giderlerin nakit olarak ödenmeyip hesaben tahakkuk ettirilmesinden kaynaklanmaktadır',
+            'E': 'Birden fazla mamul/gider yeri için ortak nitelikte olmaları ve tek bir mamulle doğrudan ilişkilendirilememeleri',
+        },
+        'E',
+        "GÜG'ler (kira, amortisman, endirekt malzeme/işçilik) **birden fazla mamul veya gider yeri için ortak** niteliktedir; tek bir mamulle doğrudan ilişkilendirilemedikleri için dağıtım anahtarlarıyla dağıtılıp yüklenir.",
+        'Maliyet muhasebesi - genel üretim giderleri',
+    ),
+    # düzey 2
+    '0032': patch(
+        "180.000 ₺ tutarındaki ortak gider, üç esas üretim gider yerine 3 : 2 : 1 oranında dağıtılacaktır. En büyük payı alan gider yerinde dönemde 3.000 birim mamul üretildiğine göre bu gider yerinde birim başına düşen ortak gider kaç ₺'dir?",
+        {
+            'A': '10',
+            'B': '20',
+            'C': '90.000',
+            'D': '30',
+            'E': '60',
+        },
+        'D',
+        'Oran toplamı = 3 + 2 + 1 = 6 pay; bir payın değeri = 180.000 ÷ 6 = 30.000 ₺. En büyük pay (3 birim) = 3 × 30.000 = 90.000 ₺. Birim başına = 90.000 ÷ 3.000 = **30 ₺**. (Toplam gideri doğrudan bölmek 60 ₺ verir — yanlış.)',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0033': patch(
+        "A esas üretim gider yerinin birinci dağıtım payı 120.000 ₺'dir; ikinci dağıtımda iki yardımcı gider yerinden sırasıyla 25.000 ₺ ve 35.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 9.000 makine saati çalışıldığına göre makine saati esaslı yükleme oranı kaç ₺/saattir?",
+        {
+            'A': '13,33',
+            'B': '180.000',
+            'C': '20',
+            'D': '15',
+            'E': '6,67',
+        },
+        'C',
+        "A'nın ikinci dağıtım sonrası toplam GÜG'ü = 120.000 + 25.000 + 35.000 = 180.000 ₺. Yükleme oranı = 180.000 ÷ 9.000 = **20 ₺/makine saati**. (Yalnız I. dağıtım payıyla 13,33 ₺ bulunur — ikinci dağıtım payları eklenmelidir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0034': patch(
+        "Direkt işçilik esaslı GÜG yükleme oranı %50 olan bir gider yerinde, X mamulünün direkt işçiliği 40.000 ₺'dir. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '40.000',
+            'B': '80.000',
+            'C': '2.000',
+            'D': '50.000',
+            'E': '20.000',
+        },
+        'E',
+        'Yüklenen GÜG = direkt işçilik × yükleme oranı = 40.000 × %50 = 40.000 × 0,50 = **20.000 ₺**.',
+        'Maliyet muhasebesi - yükleme',
+    ),
+    # düzey 3
+    '0035': patch(
+        "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Gider yerlerine ait dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Kesim esas üretim gider yerine düşen toplam pay kaç ₺'dir?",
+        {
+            'A': '200.000 ₺',
+            'B': '176.000 ₺',
+            'C': '245.000 ₺',
+            'D': '155.000 ₺',
+            'E': '137.000 ₺',
+        },
+        'A',
+        "Kira 200.000 × 400/1.000 = 80.000 ₺; amortisman 150.000 × 600.000/1.200.000 = 75.000 ₺; elektrik 90.000 × 5.000/10.000 = 45.000 ₺. Kesim'in birinci dağıtım payı **200.000 ₺**. Her gider kendi dağıtım ölçüsüyle ayrı ayrı dağıtılır.",
+        'Maliyet muhasebesi - birinci dağıtım',
+    ),
+    # düzey 3
+    '0036': patch(
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme matematiksel (cebirsel) dağıtım yöntemini kullanmaktadır; X Bakım'ın, Y Yemekhane'nin dağıtılacak toplam tutarını göstermektedir. Buna göre X kaç ₺'dir?",
+        {
+            'A': '20.000 ₺',
+            'B': '27.000 ₺',
+            'C': '10.000 ₺',
+            'D': '15.000 ₺',
+            'E': '14.250 ₺',
+        },
+        'D',
+        'Denklemler: X = 10.000 + 0,25Y; Y = 17.000 + 0,20X. İkinci denklem birincide yerine konursa X = 10.000 + 4.250 + 0,05X → 0,95X = 14.250 → **X = 15.000 ₺**; Y = 17.000 + 3.000 = 20.000 ₺.',
+        'Maliyet muhasebesi - ikinci dağıtım (matematiksel yöntem)',
+    ),
+    # düzey 2
+    '0037': patch(
+        'Kademeli (basamaklı) dağıtım yöntemini uygulayan bir işletmede Yemekhane yardımcı gider yeri Bakım, Kesim ve Montaj gider yerlerine; Bakım ise yalnız Kesim ve Montaj gider yerlerine hizmet vermektedir. Buna göre dağıtım sırasıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Önce Yemekhane dağıtılır; Bakım aldığı payla birlikte sonra dağıtılır',
+            'B': 'Sıra fark etmez; iki sırada da esas gider yerlerine aynı tutarlar düşer',
+            'C': 'Yardımcı gider yerleri birbirine hizmet verdiği için matematiksel yöntem zorunludur',
+            'D': 'Önce Bakım dağıtılır; Yemekhane aldığı payla birlikte sonra dağıtılır',
+            'E': 'İki yardımcı gider yeri aynı anda, birbirine verdikleri hizmet yok sayılarak dağıtılır',
+        },
+        'A',
+        'Kademeli yöntemde en çok gider yerine hizmet veren yardımcı gider yeri **önce** dağıtılır; bir kez dağıtılan gider yerine geri pay verilmez. Sıra değişirse esas gider yerlerine düşen tutarlar da değişir.',
+        'Maliyet muhasebesi - kademeli dağıtım sırası',
+    ),
+    # düzey 3
+    '0038': patch(
+        'Bir esas üretim gider yerinde yıllık tahmini genel üretim gideri 360.000 ₺, tahmini faaliyet hacmi 24.000 makine saatidir. Dönemde fiilen 22.000 makine saati çalışılmış ve fiilî genel üretim gideri 345.000 ₺ olmuştur. Buna göre dönem sonunda genel üretim giderleriyle ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': '30.000 ₺ fazla yükleme vardır',
+            'B': '30.000 ₺ eksik yükleme vardır',
+            'C': 'Yükleme farkı yoktur',
+            'D': '15.000 ₺ fazla yükleme vardır',
+            'E': '15.000 ₺ eksik yükleme vardır',
+        },
+        'E',
+        'Yükleme oranı 360.000 / 24.000 = 15 ₺/ms. Yüklenen GÜG 15 × 22.000 = 330.000 ₺; fiilî GÜG 345.000 ₺. Fiilî tutar yüklenenden 15.000 ₺ fazla olduğundan **eksik yükleme** vardır.',
+        'Maliyet muhasebesi - GÜG yükleme oranı',
+    ),
+    # düzey 3
+    '0039': patch(
+        'Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nBuna göre Kesim esas üretim gider yerinin ikinci dağıtımdan alacağı payla ilgili aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Matematiksel yöntemde 11.100 ₺, doğrudan yöntemde 14.300 ₺ olur',
+            'B': 'İki yöntemde de 14.300 ₺ olur',
+            'C': 'Matematiksel yöntemde 15.000 ₺, doğrudan yöntemde 14.300 ₺ olur',
+            'D': 'Matematiksel yöntemde 14.300 ₺, doğrudan yöntemde 15.000 ₺ olur',
+            'E': 'İki yöntemde de 15.000 ₺ olur',
+        },
+        'C',
+        'Doğrudan: 10.000 × 60/80 + 17.000 × 30/75 = 14.300 ₺. Matematiksel: X = 15.000, Y = 20.000; %60 × 15.000 + %30 × 20.000 = 15.000 ₺. Karşılıklı hizmetler dikkate alındığında pay değişir.',
+        'Maliyet muhasebesi - yöntem karşılaştırması',
+    ),
+    # düzey 3
+    '0040': patch(
+        "Bir işletmenin yıllık sabit genel üretim gideri 300.000 ₺, normal kapasitesi 20.000 makine saatidir. Sabit giderler normal kapasiteye göre belirlenen oranla mamullere yüklenmektedir. Dönemde fiilen 16.000 makine saati çalışılmıştır. Buna göre kullanılmayan kapasitenin maliyeti kaç ₺'dir?",
+        {
+            'A': '4.000 ₺',
+            'B': '75.000 ₺',
+            'C': '240.000 ₺',
+            'D': '60.000 ₺',
+            'E': '300.000 ₺',
+        },
+        'D',
+        'Yükleme oranı 300.000 / 20.000 = 15 ₺/ms. Mamullere 15 × 16.000 = 240.000 ₺ yüklenir; yüklenemeyen **60.000 ₺** kullanılmayan kapasitenin maliyetidir ve dönem gideri olarak izlenir.',
+        'Maliyet muhasebesi - kapasite ve sabit GÜG',
+    ),
+    # düzey 2
+    '0041': patch(
+        "Bir esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 150.000 ₺, bu gider yerindeki toplam makine saati 5.000'dir. X mamulü bu gider yerinde 200 makine saati kullanmış; X'in direkt ilk madde ve malzeme gideri 20.000 ₺, direkt işçilik gideri 10.000 ₺'dir. X mamulünün toplam üretim maliyeti kaç ₺'dir?",
+        {
+            'A': '36.000',
+            'B': '30.000',
+            'C': '6.000',
+            'D': '33.000',
+            'E': '180.000',
+        },
+        'A',
+        "Yükleme oranı = 150.000 ÷ 5.000 = 30 ₺/makine saati. X'e yüklenen GÜG = 200 × 30 = 6.000 ₺. Toplam üretim maliyeti = DİMM + DİG + yüklenen GÜG = 20.000 + 10.000 + 6.000 = **36.000 ₺**. (GÜG'ü eklememek 30.000 ₺ verir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0042': patch(
+        'Bir esas üretim gider yerinde makine saati esaslı genel üretim gideri yükleme oranı 25 ₺/saat olarak hesaplanmıştır. Y mamulüne bu gider yerinde 5.000 ₺ genel üretim gideri yüklendiğine göre Y mamulü kaç makine saati kullanmıştır?',
+        {
+            'A': '5.000',
+            'B': '200',
+            'C': '250',
+            'D': '125.000',
+            'E': '20',
+        },
+        'B',
+        'Yüklenen GÜG = kullanılan saat × yükleme oranı olduğundan saat = Yüklenen GÜG ÷ oran = 5.000 ÷ 25 = **200 saat**. (Çarpmak 125.000 gibi anlamsız bir sonuç verir; işlem bölmedir.)',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0043': patch(
+        'Yardımcı gider yerlerinin birbirine verdiği hizmeti TEK YÖNLÜ (belirli bir sıra ile, bir kez) dikkate alan dağıtım yöntemi aşağıdakilerden hangisidir?',
+        {
+            'A': 'Matematiksel (karşılıklı) dağıtım',
+            'B': 'Trend analizi',
+            'C': 'Dikey analiz',
+            'D': 'Doğrudan (basit) dağıtım',
+            'E': 'Kademeli (basamaklı) dağıtım',
+        },
+        'E',
+        '**Kademeli (basamaklı) dağıtım** yönteminde yardımcı gider yerleri bir sıraya konur; bir yardımcı gider yeri kendinden sonrakilere pay verir ama **tek yönlüdür** (dağıtılan gider yerine geri pay gelmez).',
+        'Maliyet muhasebesi - kademeli dağıtım',
+    ),
+    # düzey 2
+    '0044': patch(
+        '240.000 ₺ tutarındaki ortak gider iki esas üretim gider yerine dağıtılacaktır. Kapladıkları alan A 400 m², B 200 m²; çalışan işçi sayısı ise A 20, B 40 kişidir. A gider yerine ALAN esasına göre düşecek pay, İŞÇİ SAYISI esasına göre düşecek paydan kaç ₺ fazladır?',
+        {
+            'A': '240.000',
+            'B': '160.000',
+            'C': '40.000',
+            'D': '80.000',
+            'E': '120.000',
+        },
+        'D',
+        'Alan esasına göre A payı = 240.000 × (400 ÷ 600) = 160.000 ₺. İşçi sayısına göre A payı = 240.000 × (20 ÷ 60) = 80.000 ₺. Fark = 160.000 − 80.000 = **80.000 ₺**. Aynı gider, farklı anahtarla dağıtıldığında gider yerlerinin payı değişir; anahtar seçimi bu nedenle önemlidir.',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0045': patch(
+        "Bir işletmede ikinci dağıtım sonunda A esas üretim gider yeri kendi birinci dağıtım payı 100.000 ₺'ye ek olarak bakımdan 40.000 ₺ ve yemekhaneden 25.000 ₺; B esas üretim gider yeri ise kendi payı 80.000 ₺'ye ek olarak bakımdan 20.000 ₺ ve yemekhaneden 35.000 ₺ pay almıştır. İkinci dağıtım sonunda esas üretim gider yerlerinde toplanan toplam genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '165.000',
+            'B': '300.000',
+            'C': '420.000',
+            'D': '120.000',
+            'E': '180.000',
+        },
+        'B',
+        'A toplamı = 100.000 + 40.000 + 25.000 = 165.000 ₺; B toplamı = 80.000 + 20.000 + 35.000 = 135.000 ₺. Esas üretim gider yerlerinde toplanan toplam = 165.000 + 135.000 = **300.000 ₺**. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır; toplam gider değişmez, yalnız yer değiştirir.',
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0046': patch(
+        "Bir esas üretim gider yerinde bütçelenen genel üretim gideri 240.000 ₺, normal kapasite 12.000 makine saatidir. Dönemde fiilen 11.000 makine saati çalışıldığına göre mamullere yüklenen genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '220.000',
+            'B': '20.000',
+            'C': '240.000',
+            'D': '200.000',
+            'E': '262.000',
+        },
+        'A',
+        "Yükleme oranı = bütçelenen GÜG ÷ normal kapasite = 240.000 ÷ 12.000 = 20 ₺/saat. Yüklenen GÜG = fiili saat × oran = 11.000 × 20 = **220.000 ₺**. Bütçelenen ile yüklenen arasındaki 20.000 ₺'lik fark, kapasite sapması olarak ortaya çıkar.",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0047': patch(
+        'Aşağıdaki gider–dağıtım anahtarı eşleştirmelerinden hangisi EN UYGUN değildir?',
+        {
+            'A': 'Makine amortismanı → makine çalışma saati',
+            'B': 'Yemekhane gideri → personel (işçi) sayısı',
+            'C': 'Bina kirası → makine adedi',
+            'D': 'Bina kirası → kaplanan alan (m²)',
+            'E': 'Aydınlatma gideri → aydınlatılan alan / lamba sayısı',
+        },
+        'C',
+        'Kira için en uygun anahtar **kaplanan alandır**; makine adedi kira ile zayıf ilişkilidir. Diğer eşleştirmeler (aydınlatma→alan, amortisman→makine saati, yemekhane→işçi sayısı) uygundur. En uygunsuz: **kira → makine adedi**.',
+        'Maliyet muhasebesi - dağıtım anahtarı seçimi',
+    ),
+    # düzey 2
+    '0048': patch(
+        'Yardımcı gider yerlerinin dağıtım yöntemleri için aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Doğrudan yöntem, yardımcı gider yerleri arası hizmeti ihmal eder.\n\nII. Matematiksel (karşılıklı) yöntem teorik olarak en doğru sonucu verir.\n\nIII. Kademeli yöntem karşılıklı hizmeti tam olarak dikkate alır.',
+        {
+            'A': 'II ve III',
+            'B': 'I, II ve III',
+            'C': 'Yalnız I',
+            'D': 'I ve II',
+            'E': 'I ve III',
+        },
+        'D',
+        '**I doğru** (doğrudan yöntem karşılıklı hizmeti ihmal eder). **III yanlış**: karşılıklı hizmeti TAM dikkate alan matematiksel yöntemdir; kademeli yöntem tek yönlüdür. **II doğru** (matematiksel yöntem en doğru). Doğru cevap **I ve II**.',
+        'Maliyet muhasebesi - dağıtım yöntemleri',
+    ),
+    # düzey 2
+    '0049': patch(
+        "Aşağıdakilerden hangisi 'endirekt malzeme' giderine örnektir?",
+        {
+            'A': 'Makinelerin bakımında kullanılan yağ ve temizlik malzemesi',
+            'B': 'Mobilya üretiminde mamulün bünyesine doğrudan giren kereste',
+            'C': 'Ekmek üretiminde hamurun ana maddesini oluşturan un',
+            'D': 'Otomobil üretiminde gövdeyi oluşturan çelik sac levhalar',
+            'E': 'Gömlek üretiminde doğrudan kullanılan pamuklu kumaş',
+        },
+        'A',
+        'Kereste, un, kumaş, sac mamulün bünyesine giren **direkt ilk maddelerdir**. Makine yağı ve temizlik malzemesi mamule doğrudan girmez, üretime dolaylı katkı sağlar → **endirekt malzeme (GÜG)**.',
+        'Maliyet muhasebesi - endirekt malzeme',
+    ),
+    # düzey 2
+    '0050': patch(
+        "Bir dönemde toplam üretim maliyeti 260.000 ₺ olan işletme 1.300 birim mamul üretmiştir. İşletme birim maliyetin üzerine %25 kâr marjı ekleyerek satış fiyatı belirlediğine göre birim satış fiyatı kaç ₺'dir?",
+        {
+            'A': '225',
+            'B': '160',
+            'C': '200',
+            'D': '250',
+            'E': '267',
+        },
+        'D',
+        "Birim üretim maliyeti = 260.000 ÷ 1.300 = 200 ₺. Satış fiyatı = 200 × (1 + %25) = 200 × 1,25 = **250 ₺**. (Maliyetin kendisi 200 ₺'dir; kâr marjı eklenmemiş olur.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0051': patch(
+        "200.000 ₺ fabrika kirası, kapladıkları alana göre A esas üretim (250 m²), B esas üretim (150 m²) ve bakım yardımcı (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda bakım gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 300, B'ye 200 saat oranında dağıtıldığına göre A gider yerinin iki dağıtım sonrası toplamı kaç ₺'dir?",
+        {
+            'A': '100.000',
+            'B': '120.000',
+            'C': '124.000',
+            'D': '140.000',
+            'E': '104.000',
+        },
+        'C',
+        "I. dağıtım: toplam alan 500 m²; A payı = 200.000 × (250 ÷ 500) = 100.000 ₺, bakım payı = 200.000 × (100 ÷ 500) = 40.000 ₺. II. dağıtım: bakımdan A'ya = 40.000 × (300 ÷ 500) = 24.000 ₺. A toplamı = 100.000 + 24.000 = **124.000 ₺**.",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0052': patch(
+        "Tek Düzen Hesap Planı'nda (7/A seçeneği) genel üretim giderlerinin izlendiği hesap aşağıdakilerden hangisidir?",
+        {
+            'A': '770 GENEL YÖNETİM GİDERLERİ',
+            'B': '710 DİREKT İLK MADDE VE MALZEME GİDERLERİ',
+            'C': '720 DİREKT İŞÇİLİK GİDERLERİ',
+            'D': '760 PAZARLAMA SATIŞ VE DAĞITIM GİDERLERİ',
+            'E': '730 GENEL ÜRETİM GİDERLERİ',
+        },
+        'E',
+        "7/A seçeneğinde: **710** DİMM, **720** direkt işçilik, **730 GENEL ÜRETİM GİDERLERİ**, 760 pazarlama-satış-dağıtım, 770 genel yönetim. GÜG için doğru hesap **730**'dur.",
+        'TDHP 730 Genel Üretim Giderleri',
+    ),
+    # düzey 2
+    '0053': patch(
+        "Bir esas üretim gider yerinin genel üretim gideri 150.000 ₺, toplam direkt işçilik gideri 300.000 ₺'dir. Bu gider yerinde üretilen X mamulünün direkt ilk madde ve malzeme gideri 30.000 ₺, direkt işçilik gideri 24.000 ₺ olduğuna göre X mamulünün toplam üretim maliyeti kaç ₺'dir?",
+        {
+            'A': '60.000',
+            'B': '66.000',
+            'C': '54.000',
+            'D': '78.000',
+            'E': '12.000',
+        },
+        'B',
+        "Direkt işçilik esaslı yükleme oranı = 150.000 ÷ 300.000 = %50. X'e yüklenen GÜG = 24.000 × %50 = 12.000 ₺. Toplam üretim maliyeti = 30.000 + 24.000 + 12.000 = **66.000 ₺**. (GÜG'ü atlamak 54.000 ₺ verir.)",
+        'Maliyet muhasebesi - gider dağıtımı (çok adımlı)',
+    ),
+    # düzey 2
+    '0054': patch(
+        "Gider dağıtımı konusuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Genel üretim giderleri mamullere doğrudan izlenebildiği için dağıtıma tabi tutulmaz.\n\nII. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır.\n\nIII. Yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü.",
+        {
+            'A': 'I ve III',
+            'B': 'Yalnız I',
+            'C': 'I, II ve III',
+            'D': 'I ve II',
+            'E': 'II ve III',
+        },
+        'E',
+        "**I yanlıştır:** Genel üretim giderleri **endirekt** nitelikte olup mamullere **doğrudan izlenemez**; bu nedenle gider yerlerinde toplanıp dağıtım/yükleme yoluyla mamullere aktarılır. **II** ikinci dağıtım sonunda yardımcı gider yerleri sıfırlanır; **III** yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü. Doğru cevap **II ve III**.",
+        'Maliyet muhasebesi - gider dağıtımı',
+    ),
+    # düzey 3
+    '0055': patch(
+        "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Yardımcı gider yerlerinin verdiği hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme ikinci dağıtımda doğrudan (basit) dağıtım yöntemini kullanmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
+        {
+            'A': '15.000 ₺',
+            'B': '14.300 ₺',
+            'C': '17.700 ₺',
+            'D': '7.500 ₺',
+            'E': '11.100 ₺',
+        },
+        'B',
+        'Doğrudan yöntemde yardımcı gider yerlerinin birbirine verdiği hizmet yok sayılır; oranlar yalnız esas gider yerleri arasında yeniden hesaplanır. Bakım: 10.000 × 60/80 = 7.500 ₺; Yemekhane: 17.000 × 30/75 = 6.800 ₺. Toplam **14.300 ₺**.',
+        'Maliyet muhasebesi - ikinci dağıtım (doğrudan yöntem)',
+    ),
+    # düzey 3
+    '0056': patch(
+        "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nYemekhane giderleri çalışan sayısına, Bakım giderleri bakım saatine göre dağıtılmaktadır. İşletme kademeli dağıtım yöntemini kullanmakta ve önce daha fazla gider yerine hizmet veren Yemekhane'yi dağıtmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
+        {
+            'A': '128.000 ₺',
+            'B': '110.000 ₺',
+            'C': '130.500 ₺',
+            'D': '99.600 ₺',
+            'E': '130.400 ₺',
+        },
+        'E',
+        "Yemekhane 20.000 ₺'yi kendi çalışanları hariç hizmet verdiği Bakım (20), Kesim (50) ve Montaj (30) arasında, toplam 100 kişi üzerinden dağıtır: Kesim 20.000 × 50/100 = 10.000 ₺, Bakım 20.000 × 20/100 = 4.000 ₺. Bakım'ın yeni toplamı 34.000 ₺; bakım saatine göre Kesim'e 34.000 × 60/100 = 20.400 ₺. Kesim toplamı 100.000 + 30.400 = **130.400 ₺**.",
+        'Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)',
+    ),
+    # düzey 2
+    '0057': patch(
+        "Kesim esas üretim gider yerinde üretim işçileri için toplam 20.000 ₺ fazla çalışma ücreti ve fazla çalışma zammı tahakkuk etmiştir. Fazla çalışma belirli bir sipariş için değil, bayram öncesi genel iş yoğunluğunu karşılamak için yaptırılmıştır; tutarın 7.000 ₺'si fazla çalışma zammıdır. Buna göre muhasebeleştirmeyle ilgili aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': '13.000 ₺ direkt işçilik, 7.000 ₺ genel üretim gideri olarak kaydedilir',
+            'B': "20.000 ₺'nin tamamı direkt işçilik olarak kaydedilir",
+            'C': "20.000 ₺'nin tamamı genel üretim gideri olarak kaydedilir",
+            'D': '7.000 ₺ direkt işçilik, 13.000 ₺ genel üretim gideri olarak kaydedilir',
+            'E': '7.000 ₺ zam genel yönetim gideri olarak kaydedilir',
+        },
+        'A',
+        'Üretim işçisinin fazla çalışmaya ait normal ücreti (13.000 ₺) direkt işçiliktir. Zam kısmı belirli bir mamulün değil genel yoğunluğun sonucu olduğundan mamullere ortak yüklenir; **genel üretim gideridir** (7.000 ₺). Zam belirli bir siparişin acil teslimi için yapılsaydı o siparişe direkt yüklenebilirdi.',
+        'Maliyet muhasebesi - direkt ve endirekt işçilik',
+    ),
+    # düzey 3
+    '0058': patch(
+        "Bir işletmede Kesim gider yerinde genel üretim giderleri makine saati başına 20 ₺, Montaj gider yerinde ise direkt işçiliğin %80'i oranında yüklenmektedir. X siparişi için Kesim'de 50 makine saati çalışılmış, Montaj'da 10.000 ₺ direkt işçilik harcanmıştır. Siparişin direkt ilk madde ve malzeme gideri 30.000 ₺, toplam direkt işçiliği ise 16.000 ₺'dir. Buna göre X siparişinin üretim maliyeti kaç ₺'dir?",
+        {
+            'A': '49.000 ₺',
+            'B': '47.000 ₺',
+            'C': '46.000 ₺',
+            'D': '55.000 ₺',
+            'E': '59.800 ₺',
+        },
+        'D',
+        "GÜG: Kesim 20 × 50 = 1.000 ₺; Montaj %80 × 10.000 = 8.000 ₺; toplam 9.000 ₺. Üretim maliyeti 30.000 + 16.000 + 9.000 = **55.000 ₺**. Montaj oranı yalnız Montaj'daki direkt işçiliğe uygulanır.",
+        'Maliyet muhasebesi - GÜG yükleme',
+    ),
+    # düzey 3
+    '0059': patch(
+        "Bir esas üretim gider yerinde yıllık tahmini genel üretim gideri 240.000 ₺, tahmini direkt işçilik gideri 400.000 ₺'dir; genel üretim giderleri direkt işçiliğe göre yüklenmektedir. Y siparişinin bu gider yerindeki direkt işçiliği 25.000 ₺, direkt ilk madde ve malzemesi 40.000 ₺'dir. Buna göre Y siparişine bu gider yerinden yüklenecek genel üretim gideri kaç ₺'dir?",
+        {
+            'A': '25.000 ₺',
+            'B': '15.000 ₺',
+            'C': '24.000 ₺',
+            'D': '10.000 ₺',
+            'E': '39.000 ₺',
+        },
+        'B',
+        'Yükleme oranı 240.000 / 400.000 = %60. Y siparişine 25.000 × %60 = **15.000 ₺** yüklenir. Oran direkt işçiliğe göre belirlendiği için direkt ilk madde tutarı hesaba girmez.',
+        'Maliyet muhasebesi - GÜG yükleme oranı',
+    ),
+    # düzey 3
+    '0060': patch(
+        "Bir işletmede 150.000 ₺ kira gideri kapladıkları alana, 40.000 ₺ aydınlatma gideri lamba sayısına göre dağıtılmaktadır:\n\n| Gider yeri | Alan (m²) | Lamba sayısı |\n|---|---|---|\n| A (EÜGY) | 500 | 20 |\n| B (EÜGY) | 300 | 14 |\n| C (YGY) | 200 | 6 |\n\nBuna göre C yardımcı gider yerine birinci dağıtımda düşen toplam pay kaç ₺'dir?",
+        {
+            'A': '59.000 ₺',
+            'B': '38.000 ₺',
+            'C': '36.000 ₺',
+            'D': '28.500 ₺',
+            'E': '30.000 ₺',
+        },
+        'C',
+        'Kira 150.000 × 200/1.000 = 30.000 ₺; aydınlatma 40.000 × 6/40 = 6.000 ₺. Toplam **36.000 ₺**.',
+        'Maliyet muhasebesi - birinci dağıtım',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Gider Dagitimi' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

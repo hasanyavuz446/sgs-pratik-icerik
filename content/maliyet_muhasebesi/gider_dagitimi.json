@@ -3,20 +3,20 @@
     "id": "mmuh-dagitim-gen-0001",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Maliyet muhasebesinde 'gider yeri' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede 120.000 ₺ kira gideri, kapladıkları alana göre A esas üretim (300 m²), B esas üretim (200 m²) ve C yardımcı hizmet (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda C yardımcı gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 400, B'ye 100 saat oranında dağıtılmaktadır. İki dağıtım sonunda A gider yerinde toplanan tutar kaç ₺'dir?",
     "options": {
-      "A": "Giderin malzeme, işçilik ve genel gider gibi türlerine göre yapılan sınıflandırmasını; yani giderin ait olduğu çeşidini ve niteliğini ifade eden bir kavramdır",
-      "B": "Giderin dönem sonu bilançoda gösterilen kayıtlı değeri ile kapanış kaydı sonrası kalan tutarını ifade eden bilanço kalemidir",
-      "C": "Giderin nakit veya banka aracılığıyla ödendiği tarihi ve ödeme belgesinin numarasını belirten muhasebe kaydı bilgisidir",
-      "D": "Mamulün piyasada satılacağı fiyatın belirlenmesinde esas alınan toplam gider ile öngörülen kâr marjının toplamıdır",
-      "E": "Giderlerin oluştuğu/toplandığı, sorumluluk veya faaliyet esasına göre ayrılmış işletme bölümleri (esas üretim, yardımcı üretim/hizmet yerleri vb.)"
+      "A": "72.000",
+      "B": "80.000",
+      "C": "60.000",
+      "D": "96.000",
+      "E": "76.000"
     },
     "answer": "E",
-    "solution": "**Gider yeri**; giderlerin oluştuğu/toplandığı, sorumluluk veya faaliyet esasına göre ayrılmış **işletme bölümleridir** (esas üretim gider yerleri, yardımcı üretim/hizmet gider yerleri vb.).",
+    "solution": "I. dağıtım: toplam alan 600 m²; A payı = 120.000 × (300 ÷ 600) = 60.000 ₺, C payı = 120.000 × (100 ÷ 600) = 20.000 ₺. II. dağıtım: C'nin 20.000 ₺'si makine saatine göre dağıtılır; A'ya = 20.000 × (400 ÷ 500) = 16.000 ₺. A toplamı = 60.000 + 16.000 = **76.000 ₺**. (Yalnız I. dağıtım 60.000 ₺'de kalmak eksiktir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider yerleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "mmuh-dagitim-gen-0002",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımının temel amacı aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmede iki yardımcı gider yeri vardır. Kademeli (basamaklı) dağıtımda önce enerji gider yeri dağıtılır: 60.000 ₺'lik enerji gideri A esas üretime %50, B esas üretime %30, bakım gider yerine %20 oranında verilir. Bakım gider yerinin kendi gideri 40.000 ₺'dir ve enerjiden aldığı payla birlikte A'ya %60, B'ye %40 dağıtılır. A esas üretim gider yerinin yardımcı gider yerlerinden aldığı TOPLAM pay kaç ₺'dir?",
     "options": {
-      "A": "Yalnızca direkt ilk madde ve direkt işçilik giderlerini kaydederek genel üretim giderlerini tümüyle göz ardı etmek ve maliyet dışı bırakmaktır",
-      "B": "İşletmenin ödeyeceği vergiyi azaltmak amacıyla giderleri olduğundan yüksek göstererek dönem kârını gizlemektir",
-      "C": "Doğrudan yüklenemeyen (endirekt/ortak) giderleri, uygun dağıtım anahtarlarıyla gider yerlerine ve oradan mamullere doğru biçimde yüklemek",
-      "D": "Satış ve pazarlama giderlerini artırarak dönem içindeki toplam satış hasılatını ve pazar payını yükseltmektir",
-      "E": "Dönem sonunda depodaki hammadde ve mamul stoklarını fiziki olarak sayıp miktar farklarını kayıtlara almaktır"
+      "A": "30.000",
+      "B": "31.200",
+      "C": "61.200",
+      "D": "54.000",
+      "E": "60.000"
     },
     "answer": "C",
-    "solution": "Gider dağıtımının amacı; mamullere **doğrudan yüklenemeyen (endirekt/ortak) giderleri**, uygun **dağıtım anahtarlarıyla** gider yerlerine ve oradan mamullere adil biçimde yüklemektir.",
+    "solution": "Enerjiden A'ya = 60.000 × %50 = 30.000 ₺; bakıma = 60.000 × %20 = 12.000 ₺. Bakımın dağıtılacak toplamı = 40.000 + 12.000 = 52.000 ₺; A'ya = 52.000 × %60 = 31.200 ₺. A'nın yardımcılardan toplam payı = 30.000 + 31.200 = **61.200 ₺**. (Bakımın enerjiden aldığı payı ihmal etmek 30.000 + 24.000 = 54.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-amaç; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "mmuh-dagitim-gen-0003",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "İşletmede mamulün doğrudan üzerinde işlem yapılan bölümler (montaj, kesim, boyama gibi) hangi tür gider yeridir?",
+    "stem": "Yardımcı gider yerlerinin giderlerinin esas üretim gider yerlerine dağıtımında kullanılan yöntemlerden biri DEĞİLDİR:",
     "options": {
-      "A": "Esas üretim gider yeri",
-      "B": "Yardımcı üretim gider yeri",
-      "C": "Yardımcı hizmet gider yeri",
-      "D": "Yönetim gider yeri",
-      "E": "Pazarlama gider yeri"
+      "A": "Enflasyon düzeltmesi yöntemi",
+      "B": "Matematiksel (karşılıklı) dağıtım yöntemi",
+      "C": "Kademeli (basamaklı) dağıtım yöntemi",
+      "D": "Bunların dışında bir yöntem",
+      "E": "Doğrudan (basit) dağıtım yöntemi"
     },
     "answer": "A",
-    "solution": "Mamulün doğrudan üzerinde üretim işlemi yapılan bölümler **esas üretim gider yerleridir** (montaj, kesim, boyama vb.).",
+    "solution": "Yardımcı gider yerlerinin dağıtımında **doğrudan, kademeli (basamaklı) ve matematiksel (karşılıklı)** yöntemler kullanılır. **Enflasyon düzeltmesi** bir dağıtım yöntemi değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-gider yeri türü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - esas üretim gider yeri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yardımcı dağıtım yöntemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "mmuh-dagitim-gen-0004",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Üretime doğrudan katılmayan ancak esas üretim gider yerlerine hizmet veren bölümler (bakım-onarım, enerji, yemekhane gibi) hangi tür gider yeridir?",
+    "stem": "Yardımcı gider yerlerinin birbirine verdiği KARŞILIKLI hizmeti (denklem sistemi kurarak) tam olarak dikkate alan, teorik olarak en doğru sonucu veren dağıtım yöntemi hangisidir?",
     "options": {
-      "A": "Ana esas üretim gider yeri bölümü",
-      "B": "Ortak nitelikli genel mamul gider yeri",
-      "C": "Doğrudan genel satış-dağıtım gider yeri bölümü",
-      "D": "Yardımcı üretim / yardımcı hizmet gider yeri",
-      "E": "Merkezi genel yönetim gider yeri alanı"
+      "A": "Kademeli (basamaklı) dağıtım yöntemi",
+      "B": "Karşılaştırmalı dikey oran analizi yöntemi",
+      "C": "Doğrudan (basit) gider dağıtım yöntemi",
+      "D": "Matematiksel (karşılıklı/denklem) dağıtım",
+      "E": "Aritmetik basit ortalama yöntemi"
     },
     "answer": "D",
-    "solution": "Üretime doğrudan katılmayıp esas üretim yerlerine hizmet veren bölümler **yardımcı üretim / yardımcı hizmet gider yerleridir** (bakım-onarım, enerji, yemekhane vb.).",
+    "solution": "**Matematiksel (karşılıklı/denklem) dağıtım** yöntemi, yardımcı gider yerleri arası karşılıklı hizmeti denklem sistemiyle çözerek tam yansıtır; teorik olarak **en doğru** ama en karmaşık yöntemdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-gider yeri türü; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yardımcı gider yeri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - matematiksel dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "mmuh-dagitim-gen-0005",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "'Dağıtım anahtarı (dağıtım ölçüsü)' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+    "stem": "Yemekhane yardımcı hizmet gider yerinde toplanan 90.000 ₺, işçi sayısına göre A esas üretim (40 işçi) ve B esas üretim (20 işçi) gider yerlerine dağıtılmaktadır. A gider yerinin birinci dağıtımdan gelen payı 140.000 ₺ ve bu gider yerinde 5.000 birim mamul üretildiğine göre A'da birim başına düşen genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "Bir giderin nakit, çek veya banka havalesi gibi hangi araçla ve hangi vade ile ödeneceğini gösteren ödeme biçimi ve planıdır",
-      "B": "Ortak/endirekt bir giderin ilgili gider yerlerine veya mamullere hangi ölçüye göre (alan, işçi sayısı, makine saati, kwh vb.) pay edileceğini belirleyen kriter",
-      "C": "Giderle ilgili ödemenin yapıldığı bankadaki mevduat hesabının numarasını, ilgili şubesini ve dönem sonundaki güncel kalan bakiyesini ayrıntılı gösteren hesap kaydıdır",
-      "D": "Mamulün piyasada satılacağı birim satış fiyatının belirlenmesinde uygulanan kâr marjı oranı ile fiyatlandırma politikasıdır",
-      "E": "İşletmenin dönem kârı üzerinden ödeyeceği kurumlar vergisinin hesaplanmasında yasal olarak uygulanan güncel vergi oranıdır"
+      "A": "30",
+      "B": "40",
+      "C": "28",
+      "D": "200.000",
+      "E": "12"
     },
     "answer": "B",
-    "solution": "**Dağıtım anahtarı**; ortak/endirekt bir giderin ilgili gider yerlerine/mamullere **hangi ölçüye göre** (alan m², işçi sayısı, makine saati, kwh, direkt işçilik tutarı vb.) pay edileceğini belirleyen kriterdir.",
+    "solution": "Yemekhaneden A'ya = 90.000 × (40 ÷ 60) = 60.000 ₺. A'nın toplam GÜG'ü = 140.000 + 60.000 = 200.000 ₺. Birim GÜG = 200.000 ÷ 5.000 = **40 ₺**. (Yemekhane payını eklemeden 140.000 ÷ 5.000 = 28 ₺ bulunur — eksik.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-dağıtım anahtarı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım anahtarı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "mmuh-dagitim-gen-0006",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Ortak giderlerin (ör. kira, aydınlatma) ilgili gider yerlerine, uygun dağıtım anahtarlarıyla dağıtılması işlemine ne ad verilir?",
+    "stem": "A esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 165.000 ₺'dir. Bu gider yerinde üretilen mamullerin direkt ilk madde ve malzeme gideri 200.000 ₺, direkt işçilik gideri 135.000 ₺ olup dönemde 2.500 birim mamul üretilmiştir. Birim üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Yükleme (III. dağıtım)",
-      "B": "İkinci dağıtım (yardımcı gider yerlerinin dağıtımı)",
-      "C": "Birinci dağıtım (I. dağıtım)",
-      "D": "Reeskont",
-      "E": "Amortisman"
+      "A": "500.000",
+      "B": "140",
+      "C": "200",
+      "D": "134",
+      "E": "66"
     },
     "answer": "C",
-    "solution": "Ortak/endirekt giderlerin dağıtım anahtarlarıyla **gider yerlerine** dağıtılması **birinci dağıtımdır (I. dağıtım)**.",
+    "solution": "Toplam üretim maliyeti = DİMM + DİG + GÜG = 200.000 + 135.000 + 165.000 = 500.000 ₺. Birim maliyet = 500.000 ÷ 2.500 = **200 ₺**. (GÜG'ü hesaba katmamak 335.000 ÷ 2.500 = 134 ₺ verir — eksik.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-I. dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birinci dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "mmuh-dagitim-gen-0007",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinde toplanan giderlerin, esas üretim gider yerlerine dağıtılması işlemine ne ad verilir?",
+    "stem": "GÜG yükleme oranı 20 ₺/makine saati olan bir gider yerinde, X mamulü 5 makine saati kullanmıştır. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "Birinci dağıtım (I. dağıtım)",
-      "B": "Envanter",
-      "C": "Mamullere yükleme",
-      "D": "Reeskont",
-      "E": "İkinci dağıtım (II. dağıtım)"
+      "A": "200",
+      "B": "4",
+      "C": "25",
+      "D": "20",
+      "E": "100"
     },
     "answer": "E",
-    "solution": "Yardımcı gider yerlerinde biriken giderlerin **esas üretim gider yerlerine** dağıtılması **ikinci dağıtımdır (II. dağıtım)**.",
+    "solution": "Mamule yüklenen GÜG = yükleme oranı × mamulün ölçüsü = 20 ₺ × 5 saat = **100 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-II. dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yükleme"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "mmuh-dagitim-gen-0008",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımının genel sırası aşağıdakilerden hangisidir?",
+    "stem": "Gider dağıtımı (I. ve II. dağıtım) işlemleri sonunda giderlerin TOPLAM tutarı bakımından ne söylenebilir?",
     "options": {
-      "A": "Önce mamullere yükleme yapılır, ardından I. dağıtım ve en son olarak da II. dağıtım işlemi gerçekleştirilir",
-      "B": "I. dağıtım (giderler → gider yerleri) → II. dağıtım (yardımcı → esas gider yerleri) → mamullere yükleme",
-      "C": "Önce II. dağıtım yapılır, sonra I. dağıtım ve en sonda ortak giderlerin mamullere doğrudan yüklenmesi yapılır",
-      "D": "Hiçbir dağıtım yapılmadan tüm genel üretim giderleri tek seferde ve doğrudan üretilen mamullere yüklenir",
-      "E": "Önce reeskont ayrılır, ardından amortisman hesaplanır ve en son giderler gider yerlerine dağıtılır"
+      "A": "Giderler iki kez sayıldığından toplam gider tutarı yaklaşık olarak iki katına çıkar",
+      "B": "Toplam gider değişmez; giderlerin toplandığı yer (gider yeri/mamul) değişir",
+      "C": "Bazı giderler dağıtım dışında kaldığından toplam gider tutarı belirgin biçimde azalır",
+      "D": "Dağıtım sonunda tüm giderler mamule geçtiği için gider yerlerinde toplam sıfırlanır",
+      "E": "Dağıtım sırasında yeni gider yaratıldığı için toplam gider tutarı bir miktar artış gösterir"
     },
     "answer": "B",
-    "solution": "Sıra: **I. dağıtım** (ortak giderler → tüm gider yerlerine) → **II. dağıtım** (yardımcı gider yerleri → esas üretim gider yerlerine) → **mamullere yükleme** (esas gider yerlerindeki GÜG → mamullere).",
+    "solution": "Dağıtım bir **aktarma** işlemidir; **toplam gider değişmez**, yalnızca giderlerin toplandığı yer (önce gider yerleri, sonra mamuller) değişir. Yeni gider yaratılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-sıra; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım aşamaları"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "mmuh-dagitim-gen-0009",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir işletmede 120.000 ₺ kira gideri, kapladıkları alana göre A esas üretim (300 m²), B esas üretim (200 m²) ve C yardımcı hizmet (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda C yardımcı gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 400, B'ye 100 saat oranında dağıtılmaktadır. İki dağıtım sonunda A gider yerinde toplanan tutar kaç ₺'dir?",
+    "stem": "Bir mamulün üretim maliyeti aşağıdaki üç unsurun toplamından oluşur. Bu unsurlar hangileridir?",
     "options": {
-      "A": "60.000",
-      "B": "80.000",
-      "C": "76.000",
-      "D": "96.000",
-      "E": "72.000"
+      "A": "Fabrika kirası + tüketilen enerji + kullanılan su giderlerinin toplamından meydana gelir",
+      "B": "Mal alışları + satıştan iadeler + uygulanan iskontoların toplamı ile hesaplanır",
+      "C": "Direkt ilk madde ve malzeme (DİMM) + Direkt işçilik (DİG) + Genel üretim giderleri (GÜG)",
+      "D": "Ödenen faiz + dönem amortismanı + hesaplanan kurumlar vergisinin toplamından oluşur",
+      "E": "Satış giderleri + pazarlama giderleri + genel yönetim giderlerinin toplamından oluşur"
     },
     "answer": "C",
-    "solution": "I. dağıtım: toplam alan 600 m²; A payı = 120.000 × (300 ÷ 600) = 60.000 ₺, C payı = 120.000 × (100 ÷ 600) = 20.000 ₺. II. dağıtım: C'nin 20.000 ₺'si makine saatine göre dağıtılır; A'ya = 20.000 × (400 ÷ 500) = 16.000 ₺. A toplamı = 60.000 + 16.000 = **76.000 ₺**. (Yalnız I. dağıtım 60.000 ₺'de kalmak eksiktir.)",
+    "solution": "Üretim maliyeti = **Direkt İlk Madde ve Malzeme (DİMM) + Direkt İşçilik (DİG) + Genel Üretim Giderleri (GÜG)**. Satış/pazarlama/yönetim giderleri üretim maliyetine değil, dönem giderlerine girer.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - üretim maliyeti unsurları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,19 +201,19 @@
     "id": "mmuh-dagitim-gen-0010",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "A esas üretim gider yerine birinci dağıtımdan 90.000 ₺ pay düşmüş, ikinci dağıtımda bakım-onarım gider yerinden 30.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 8.000 makine saati çalışıldığına göre makine saati esaslı genel üretim gideri yükleme oranı kaç ₺/saattir?",
+    "stem": "Bir üretim döneminde direkt ilk madde ve malzeme gideri 120.000 ₺, direkt işçilik gideri 80.000 ₺'dir. Üretim gider yerinin birinci dağıtımdan gelen genel üretim gideri payı 40.000 ₺, ikinci dağıtımda yardımcı gider yerlerinden aktarılan pay ise 20.000 ₺'dir. Dönemin toplam üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "11,25",
-      "B": "3,75",
-      "C": "120.000",
-      "D": "12",
-      "E": "15"
+      "A": "280.000",
+      "B": "240.000",
+      "C": "60.000",
+      "D": "200.000",
+      "E": "260.000"
     },
     "answer": "E",
-    "solution": "Yükleme oranının payı, gider yerinin **ikinci dağıtım sonrası** toplam GÜG'üdür: 90.000 + 30.000 = 120.000 ₺. Yükleme oranı = 120.000 ÷ 8.000 = **15 ₺/makine saati**. (Yalnız I. dağıtım payıyla 11,25; yalnız bakım payıyla 3,75 bulunur — ikisi de eksik.)",
+    "solution": "Dağıtım sonrası mamullere yüklenecek GÜG = 40.000 + 20.000 = 60.000 ₺. Toplam üretim maliyeti = DİMM + DİG + GÜG = 120.000 + 80.000 + 60.000 = **260.000 ₺**. (İkinci dağıtım payını atlamak 240.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -223,20 +223,20 @@
     "id": "mmuh-dagitim-gen-0011",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 150.000 ₺, bu gider yerindeki toplam makine saati 5.000'dir. X mamulü bu gider yerinde 200 makine saati kullanmış; X'in direkt ilk madde ve malzeme gideri 20.000 ₺, direkt işçilik gideri 10.000 ₺'dir. X mamulünün toplam üretim maliyeti kaç ₺'dir?",
+    "stem": "Gider yerleri genel olarak esas üretim, yardımcı üretim, yardımcı hizmet ve yönetim gider yerleri olarak gruplanır. Bu gruplandırmanın temel amacı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "30.000",
-      "B": "36.000",
-      "C": "6.000",
-      "D": "180.000",
-      "E": "33.000"
+      "A": "Satış hasılatını artırmak ve pazarlama faaliyetlerini genişleterek işletmenin toplam pazar payını daha da yükseltmeyi hedefler",
+      "B": "Giderleri niteliklerine ve üretimle ilişkilerine göre toplayıp maliyetlere doğru biçimde yüklemek ve sorumluluğu belirlemek",
+      "C": "İşletmede çalışan personel sayısını azaltarak toplam işçilik giderlerini önemli ölçüde düşürmeyi amaçlar",
+      "D": "Depodaki hammadde ve mamul stoklarını dönem sonunda fiziki olarak sayıp miktar olarak kayda geçirmektir",
+      "E": "Dönem sonunda vergi beyannamesi verme yükümlülüğünden yasal olarak tamamen muaf tutulmayı sağlamaktır"
     },
     "answer": "B",
-    "solution": "Yükleme oranı = 150.000 ÷ 5.000 = 30 ₺/makine saati. X'e yüklenen GÜG = 200 × 30 = 6.000 ₺. Toplam üretim maliyeti = DİMM + DİG + yüklenen GÜG = 20.000 + 10.000 + 6.000 = **36.000 ₺**. (GÜG'ü eklememek 30.000 ₺ verir.)",
+    "solution": "Gider yerlerinin gruplandırılmasındaki amaç; giderleri **niteliklerine ve üretimle ilişkilerine göre** toplayıp mamullere doğru biçimde yüklemek, ayrıca **maliyet kontrolü ve sorumluluk** belirlemektir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider yeri gruplandırma"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,19 +245,19 @@
     "id": "mmuh-dagitim-gen-0012",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir işletmede iki yardımcı gider yeri vardır. Kademeli (basamaklı) dağıtımda önce enerji gider yeri dağıtılır: 60.000 ₺'lik enerji gideri A esas üretime %50, B esas üretime %30, bakım gider yerine %20 oranında verilir. Bakım gider yerinin kendi gideri 40.000 ₺'dir ve enerjiden aldığı payla birlikte A'ya %60, B'ye %40 dağıtılır. A esas üretim gider yerinin yardımcı gider yerlerinden aldığı TOPLAM pay kaç ₺'dir?",
+    "stem": "Bir ortak gider, üç gider yerine 3 : 2 : 1 oranında dağıtılmıştır. En büyük payı alan gider yerine 90.000 ₺ düştüğüne göre dağıtıma tabi toplam ortak gider kaç ₺'dir?",
     "options": {
-      "A": "54.000",
-      "B": "30.000",
-      "C": "31.200",
-      "D": "61.200",
-      "E": "60.000"
+      "A": "150.000",
+      "B": "90.000",
+      "C": "540.000",
+      "D": "180.000",
+      "E": "270.000"
     },
     "answer": "D",
-    "solution": "Enerjiden A'ya = 60.000 × %50 = 30.000 ₺; bakıma = 60.000 × %20 = 12.000 ₺. Bakımın dağıtılacak toplamı = 40.000 + 12.000 = 52.000 ₺; A'ya = 52.000 × %60 = 31.200 ₺. A'nın yardımcılardan toplam payı = 30.000 + 31.200 = **61.200 ₺**. (Bakımın enerjiden aldığı payı ihmal etmek 30.000 + 24.000 = 54.000 ₺ verir.)",
+    "solution": "En büyük pay, toplam 6 payın 3'ünü (yarısını) alır: 90.000 = Toplam × (3 ÷ 6). Buradan toplam ortak gider = 90.000 ÷ 0,5 = **180.000 ₺**. (Bir payın değeri 90.000 ÷ 3 = 30.000 ₺'dir; 6 pay × 30.000 = 180.000 ₺ ile aynı sonuç.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -267,20 +267,20 @@
     "id": "mmuh-dagitim-gen-0013",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir giderin dağıtım anahtarı seçilirken temel ölçüt aşağıdakilerden hangisidir?",
+    "stem": "Birinci dağıtım sonunda tüm gider yerlerinde toplam 500.000 ₺ gider birikmiştir. İkinci dağıtım (yardımcı → esas) tamamlandığında esas üretim gider yerlerindeki giderlerin toplamı kaç ₺ olur?",
     "options": {
-      "A": "Giderin en küçük tutara sahip olduğu gider yerini seçip dağıtımı oradan başlatmak esastır",
-      "B": "Gider ile en yakın neden-sonuç (ilişki) taşıyan, gideri en adil yansıtan ölçüyü seçmek",
-      "C": "Hesaplama kolaylığı sağladığı için gider yerleri arasında rastgele bir ölçü seçilmesi yeterlidir",
-      "D": "Gider türü ne olursa olsun her zaman kaplanan alan (m²) ölçüsünün seçilmesi zorunludur",
-      "E": "Mamulün birim satış fiyatını esas alarak giderleri gider yerlerine bu orana göre bölmektir"
+      "A": "Belirlenemez",
+      "B": "500.000",
+      "C": "1.000.000",
+      "D": "0",
+      "E": "250.000"
     },
     "answer": "B",
-    "solution": "Dağıtım anahtarı, giderle en **yakın neden-sonuç ilişkisi** taşıyan (gideri en adil yansıtan) ölçü olmalıdır. Örn. aydınlatma için alan/kwh, amortisman için makine saati.",
+    "solution": "İkinci dağıtım bir aktarma olduğundan toplam değişmez; yardımcı gider yerleri sıfırlanıp giderleri esas üretim gider yerlerine aktarılır. Bu nedenle esas üretim gider yerlerindeki toplam = **500.000 ₺** (I. dağıtım toplamının tamamı).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-seçim; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım anahtarı seçimi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "mmuh-dagitim-gen-0014",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Enerji yardımcı gider yerinde toplanan 100.000 ₺, tüketilen kilovatsaate göre dağıtılacaktır. Dönemde A esas üretim gider yeri 500 kwh, B esas üretim gider yeri 300 kwh, bakım yardımcı gider yeri 200 kwh tüketmiştir. Yardımcı gider yerlerinin birbirine verdiği hizmetin dikkate alınmadığı DOĞRUDAN (basit) dağıtım yöntemine göre A gider yerine düşen pay kaç ₺'dir?",
+    "stem": "Gider dağıtımında aşamaların doğru sıralaması aşağıdakilerden hangisidir?",
     "options": {
-      "A": "62.500",
-      "B": "50.000",
-      "C": "37.500",
-      "D": "80.000",
-      "E": "100.000"
+      "A": "Giderlerin gider yerlerinde toplanması → I. dağıtım (ortak giderler → gider yerleri) → II. dağıtım (yardımcı → esas) → mamullere yükleme",
+      "B": "Önce mamullere yükleme yapılır, ardından ortak giderlerin I. dağıtımı ve en son olarak da yardımcıdan esasa II. dağıtım gerçekleştirilir",
+      "C": "Önce II. dağıtım yapılır, sonra mamullere yükleme ve en sonda ortak giderlerin gider yerlerine I. dağıtımı yapılır",
+      "D": "Önce mamullere yükleme yapılır, giderlerin gider yerlerinde toplanması ve dağıtımı işlemleri en sona bırakılır",
+      "E": "Diğer aşamalara gerek olmadan I. dağıtımın yapılması mamul maliyetinin bulunması için yeterlidir"
     },
     "answer": "A",
-    "solution": "Doğrudan yöntemde yardımcı gider yerlerinin (bakım) tüketimi dikkate alınmaz; dağıtım yalnız esas üretim gider yerleri arasında yapılır. Esas yerlerin toplamı = 500 + 300 = 800 kwh. A payı = 100.000 × (500 ÷ 800) = **62.500 ₺**. (Bakımı da dahil etmek 100.000 × 500/1.000 = 50.000 ₺ verir.)",
+    "solution": "Doğru sıra: giderlerin gider yerlerinde toplanması → **I. dağıtım** (ortak giderler gider yerlerine) → **II. dağıtım** (yardımcı gider yerleri → esas üretim gider yerlerine) → **mamullere yükleme**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım aşamaları"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "mmuh-dagitim-gen-0015",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "İkinci dağıtımda (II. dağıtım) yardımcı gider yerlerinin giderleri esas üretim gider yerlerine dağıtıldığında, ikinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi ne olur?",
+    "stem": "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Bakım yardımcı gider yerinde toplanan gider kaç ₺'dir?",
     "options": {
-      "A": "İki katına çıkar; giderler hem yardımcı hem esas yerde ayrıca gösterilir",
-      "B": "Dağıtım öncesi tutarının iki katına yükselerek gider yerinde birikir",
-      "C": "Hiç değişmez; yardımcı gider yerinin bakiyesi aynen korunmaya devam eder",
-      "D": "Sıfırlanır (giderleri esas üretim gider yerlerine aktarılmış olur)",
-      "E": "Doğrudan mamullere gider yazılır, esas üretim yerine hiç uğramaz"
+      "A": "29.000 ₺",
+      "B": "40.000 ₺",
+      "C": "88.000 ₺",
+      "D": "74.000 ₺",
+      "E": "83.000 ₺"
     },
     "answer": "D",
-    "solution": "İkinci dağıtım sonunda yardımcı gider yerlerinin giderleri tümüyle esas üretim gider yerlerine aktarıldığından, yardımcı gider yerlerinin bakiyesi **sıfırlanır**. Tüm endirekt gider esas üretim yerlerinde toplanır.",
+    "solution": "Kira 40.000 ₺ + amortisman 25.000 ₺ + elektrik 9.000 ₺ = **74.000 ₺**. Yardımcı gider yerleri de birinci dağıtımdan pay alır; bu tutar ikinci dağıtımda esas gider yerlerine aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-II. dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birinci dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "mmuh-dagitim-gen-0016",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Esas üretim gider yerlerinde toplanan genel üretim giderlerinin, üretilen mamullere yüklenmesi işlemine ne ad verilir?",
+    "stem": "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme karşılıklı hizmetleri matematiksel dağıtım yöntemiyle dikkate almaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
     "options": {
-      "A": "Birinci dağıtım aşaması işlemi",
-      "B": "İkinci dağıtım aşaması işlemi",
-      "C": "Dönem sonu envanter işlemi",
-      "D": "Alacaklar için reeskont ayırma işlemi",
-      "E": "Mamullere yükleme (üçüncü dağıtım)"
+      "A": "12.000 ₺",
+      "B": "9.000 ₺",
+      "C": "11.100 ₺",
+      "D": "14.300 ₺",
+      "E": "15.000 ₺"
     },
     "answer": "E",
-    "solution": "Esas üretim gider yerlerindeki GÜG'ün mamullere yüklenmesi **mamullere yükleme (üçüncü dağıtım)** olarak adlandırılır; yükleme oranları (makine saati, direkt işçilik vb.) kullanılır.",
+    "solution": "Önce X = 15.000 ₺ ve Y = 20.000 ₺ bulunur (X = 10.000 + 0,25Y; Y = 17.000 + 0,20X). Kesim'in payı %60 × 15.000 + %30 × 20.000 = 9.000 + 6.000 = **15.000 ₺**. Doğrudan yöntem 14.300 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yükleme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - mamullere yükleme"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım (matematiksel yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "mmuh-dagitim-gen-0017",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir esas üretim gider yerinde makine saati esaslı genel üretim gideri yükleme oranı 25 ₺/saat olarak hesaplanmıştır. Y mamulüne bu gider yerinde 5.000 ₺ genel üretim gideri yüklendiğine göre Y mamulü kaç makine saati kullanmıştır?",
+    "stem": "Bir üretim işletmesinde birinci ve ikinci dağıtım sonunda Kaynak esas üretim gider yerinde toplanan tutarlar şöyledir:\n\n| Kalem | Tutar |\n|---|---|\n| Direkt ilk madde ve malzeme | 50.000 ₺ |\n| Yardımcı malzeme | 8.000 ₺ |\n| Direkt işçilik | 45.000 ₺ |\n| Endirekt işçilik | 9.000 ₺ |\n| Elektrik | 11.000 ₺ |\n| Bakım | 5.000 ₺ |\n| Yemekhane gider yerinden gelen pay | 14.000 ₺ |\n| Bakım-onarım gider yerinden gelen pay | 8.000 ₺ |\n\nBuna göre Kaynak gider yerinde toplanan giderler içinde genel üretim giderlerinin payı kaç ₺'dir?",
     "options": {
-      "A": "125.000",
-      "B": "5.000",
-      "C": "200",
-      "D": "250",
-      "E": "20"
+      "A": "150.000 ₺",
+      "B": "22.000 ₺",
+      "C": "55.000 ₺",
+      "D": "33.000 ₺",
+      "E": "100.000 ₺"
     },
     "answer": "C",
-    "solution": "Yüklenen GÜG = kullanılan saat × yükleme oranı olduğundan saat = Yüklenen GÜG ÷ oran = 5.000 ÷ 25 = **200 saat**. (Çarpmak 125.000 gibi anlamsız bir sonuç verir; işlem bölmedir.)",
+    "solution": "Toplam 150.000 ₺ içinden direkt ilk madde (50.000 ₺) ve direkt işçilik (45.000 ₺) çıkarılır; kalan yardımcı malzeme, endirekt işçilik, elektrik, bakım ve ikinci dağıtımdan gelen paylar genel üretim gideridir: **55.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "mmuh-dagitim-gen-0018",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinin giderlerinin esas üretim gider yerlerine dağıtımında kullanılan yöntemlerden biri DEĞİLDİR:",
+    "stem": "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Doğrudan (basit) dağıtım yöntemi",
-      "B": "Kademeli (basamaklı) dağıtım yöntemi",
-      "C": "Enflasyon düzeltmesi yöntemi",
-      "D": "Matematiksel (karşılıklı) dağıtım yöntemi",
-      "E": "Bunların dışında bir yöntem"
+      "A": "Bakım'ın dağıtılacak toplamı 34.000 ₺'dir",
+      "B": "Yemekhane'den Bakım'a 4.000 ₺ pay düşer",
+      "C": "Bakım, Yemekhane'ye de ikinci dağıtımdan pay verir",
+      "D": "Esas gider yerlerinde toplanan gider tutarı dağıtımdan sonra 230.000 ₺ olur",
+      "E": "Dağıtımdan sonra yardımcı gider yerlerinin kalanı sıfırlanır"
     },
     "answer": "C",
-    "solution": "Yardımcı gider yerlerinin dağıtımında **doğrudan, kademeli (basamaklı) ve matematiksel (karşılıklı)** yöntemler kullanılır. **Enflasyon düzeltmesi** bir dağıtım yöntemi değildir.",
+    "solution": "Kademeli yöntemde bir kez dağıtılan gider yerine (Yemekhane) **geri pay verilmez**; Bakım yalnız Kesim ve Montaj'a dağıtılır. Yemekhane'den Bakım'a 20.000 × 20/100 = 4.000 ₺ düşer; Bakım 34.000 ₺ dağıtır. Toplam gider değişmez: 20.000 + 30.000 + 100.000 + 80.000 = 230.000 ₺ esas gider yerlerinde toplanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yardımcı dağıtım yöntemleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "mmuh-dagitim-gen-0019",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "180.000 ₺ ortak gider, üç gider yerine eşit oranda (aynı dağıtım ölçüsü değeriyle) dağıtılmaktadır. Her gider yerine düşen pay kaç ₺'dir?",
+    "stem": "Yardımcı gider yerlerinin dağıtım yöntemleriyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Doğrudan yöntem yardımcı gider yerlerinin birbirine verdiği hizmeti dikkate almaz.\n\nII. Kademeli yöntemde dağıtılan bir yardımcı gider yerine sonradan pay verilir.\n\nIII. Matematiksel yöntem yardımcı gider yerlerinin birbirine verdiği hizmeti yok sayar.",
     "options": {
-      "A": "60.000",
-      "B": "90.000",
-      "C": "180.000",
-      "D": "45.000",
-      "E": "30.000"
+      "A": "Yalnız I",
+      "B": "Yalnız III",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I ve II"
     },
     "answer": "A",
-    "solution": "Üç gider yeri eşit ölçüye sahipse pay eşit dağılır: 180.000 ÷ 3 = **60.000 ₺** (her biri).",
+    "solution": "Yalnız I doğrudur. II yanlıştır: kademeli yöntemde bir kez dağıtılan yardımcı gider yerine **geri pay verilmez**. III yanlıştır: matematiksel yöntem karşılıklı hizmetleri **denklem sistemiyle tam olarak** dikkate alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım yöntemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "mmuh-dagitim-gen-0020",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. I. dağıtımda ortak giderler gider yerlerine dağıtılır.\n\nII. II. dağıtımda esas üretim gider yerlerinin giderleri yardımcı gider yerlerine aktarılır.\n\nIII. Dağıtım anahtarı, giderle en yakın ilişkili ölçü olmalıdır.",
+    "stem": "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nİşletme kademeli yöntemle önce Yemekhane'yi (çalışan sayısına göre), sonra Bakım'ı (bakım saatine göre) dağıtmaktadır. Buna göre Montaj esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I, II ve III",
-      "E": "I ve III"
+      "A": "92.000 ₺",
+      "B": "98.000 ₺",
+      "C": "99.500 ₺",
+      "D": "130.400 ₺",
+      "E": "99.600 ₺"
     },
     "answer": "E",
-    "solution": "**II yanlıştır:** İkinci dağıtımda aktarım yönü terstir; YARDIMCI gider yerlerinin giderleri ESAS üretim gider yerlerine aktarılır (böylece yardımcı gider yerleri sıfırlanır). **I** birinci dağıtımda ortak giderlerin gider yerlerine dağıtılması ve **III** dağıtım anahtarının giderle en yakın ilişkili ölçü olması doğrudur. Doğru cevap **I ve III**.",
+    "solution": "Yemekhane'den Montaj'a 20.000 × 30/100 = 6.000 ₺; Bakım'ın yeni toplamı 34.000 ₺'den Montaj'a 34.000 × 40/100 = 13.600 ₺. Montaj toplamı **99.600 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "mmuh-dagitim-gen-0021",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinin dağıtımında 'doğrudan (basit) dağıtım yöntemi'nin temel varsayımı aşağıdakilerden hangisidir?",
+    "stem": "A esas üretim gider yerine birinci dağıtımdan 90.000 ₺ pay düşmüş, ikinci dağıtımda bakım-onarım gider yerinden 30.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 8.000 makine saati çalışıldığına göre makine saati esaslı genel üretim gideri yükleme oranı kaç ₺/saattir?",
     "options": {
-      "A": "Yardımcı gider yerlerinin birbirine verdiği hizmet karşılıklı denklem sistemiyle tam biçimde dikkate alınarak dağıtım yapılır",
-      "B": "Yardımcı gider yerlerinin giderleri esas üretim yerine hiç uğramadan doğrudan üretilen mamullere yüklenir",
-      "C": "Yardımcı gider yerlerinin birbirine verdiği hizmet ihmal edilir; giderler doğrudan esas üretim gider yerlerine dağıtılır",
-      "D": "Yardımcı gider yerlerine ait giderler için hiçbir dağıtım yapılmaz; giderler oldukları yerde bırakılır",
-      "E": "Yalnızca en yüksek tutarlı yardımcı gider yeri dağıtılır, kalan yardımcı yerler tamamen dikkate alınmaz"
+      "A": "11,25",
+      "B": "120.000",
+      "C": "15",
+      "D": "12",
+      "E": "3,75"
     },
     "answer": "C",
-    "solution": "**Doğrudan (basit) dağıtım yönteminde**, yardımcı gider yerlerinin birbirine verdiği hizmet **ihmal edilir**; her yardımcı gider yerinin gideri doğrudan **esas üretim gider yerlerine** dağıtılır. En basit ama en az duyarlı yöntemdir.",
+    "solution": "Yükleme oranının payı, gider yerinin **ikinci dağıtım sonrası** toplam GÜG'üdür: 90.000 + 30.000 = 120.000 ₺. Yükleme oranı = 120.000 ÷ 8.000 = **15 ₺/makine saati**. (Yalnız I. dağıtım payıyla 11,25; yalnız bakım payıyla 3,75 bulunur — ikisi de eksik.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-doğrudan yöntem; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - doğrudan dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mmuh-dagitim-gen-0022",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinin birbirine verdiği hizmeti TEK YÖNLÜ (belirli bir sıra ile, bir kez) dikkate alan dağıtım yöntemi aşağıdakilerden hangisidir?",
+    "stem": "Enerji yardımcı gider yerinde toplanan 100.000 ₺, tüketilen kilovatsaate göre dağıtılacaktır. Dönemde A esas üretim gider yeri 500 kwh, B esas üretim gider yeri 300 kwh, bakım yardımcı gider yeri 200 kwh tüketmiştir. Yardımcı gider yerlerinin birbirine verdiği hizmetin dikkate alınmadığı DOĞRUDAN (basit) dağıtım yöntemine göre A gider yerine düşen pay kaç ₺'dir?",
     "options": {
-      "A": "Doğrudan (basit) dağıtım",
-      "B": "Kademeli (basamaklı) dağıtım",
-      "C": "Matematiksel (karşılıklı) dağıtım",
-      "D": "Dikey analiz",
-      "E": "Trend analizi"
+      "A": "100.000",
+      "B": "62.500",
+      "C": "80.000",
+      "D": "50.000",
+      "E": "37.500"
     },
     "answer": "B",
-    "solution": "**Kademeli (basamaklı) dağıtım** yönteminde yardımcı gider yerleri bir sıraya konur; bir yardımcı gider yeri kendinden sonrakilere pay verir ama **tek yönlüdür** (dağıtılan gider yerine geri pay gelmez).",
+    "solution": "Doğrudan yöntemde yardımcı gider yerlerinin (bakım) tüketimi dikkate alınmaz; dağıtım yalnız esas üretim gider yerleri arasında yapılır. Esas yerlerin toplamı = 500 + 300 = 800 kwh. A payı = 100.000 × (500 ÷ 800) = **62.500 ₺**. (Bakımı da dahil etmek 100.000 × 500/1.000 = 50.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-kademeli yöntem; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kademeli dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "mmuh-dagitim-gen-0023",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinin birbirine verdiği KARŞILIKLI hizmeti (denklem sistemi kurarak) tam olarak dikkate alan, teorik olarak en doğru sonucu veren dağıtım yöntemi hangisidir?",
+    "stem": "Gider dağıtımıyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. I. dağıtımda ortak giderler gider yerlerine dağıtılır.\n\nII. II. dağıtımda esas üretim gider yerlerinin giderleri yardımcı gider yerlerine aktarılır.\n\nIII. Dağıtım anahtarı, giderle en yakın ilişkili ölçü olmalıdır.",
     "options": {
-      "A": "Doğrudan (basit) gider dağıtım yöntemi",
-      "B": "Kademeli (basamaklı) dağıtım yöntemi",
-      "C": "Karşılaştırmalı dikey oran analizi yöntemi",
-      "D": "Matematiksel (karşılıklı/denklem) dağıtım",
-      "E": "Aritmetik basit ortalama yöntemi"
+      "A": "I, II ve III",
+      "B": "I ve II",
+      "C": "Yalnız I",
+      "D": "I ve III",
+      "E": "II ve III"
     },
     "answer": "D",
-    "solution": "**Matematiksel (karşılıklı/denklem) dağıtım** yöntemi, yardımcı gider yerleri arası karşılıklı hizmeti denklem sistemiyle çözerek tam yansıtır; teorik olarak **en doğru** ama en karmaşık yöntemdir.",
+    "solution": "**II yanlıştır:** İkinci dağıtımda aktarım yönü terstir; YARDIMCI gider yerlerinin giderleri ESAS üretim gider yerlerine aktarılır (böylece yardımcı gider yerleri sıfırlanır). **I** birinci dağıtımda ortak giderlerin gider yerlerine dağıtılması ve **III** dağıtım anahtarının giderle en yakın ilişkili ölçü olması doğrudur. Doğru cevap **I ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-matematiksel yöntem; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - matematiksel dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -511,17 +511,17 @@
     "konu": "gider_dagitimi",
     "stem": "Bir esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 180.000 ₺, aynı gider yerindeki toplam direkt işçilik gideri 240.000 ₺'dir. Bu gider yerinde üretilen X mamulünün direkt işçilik gideri 40.000 ₺ olduğuna göre X'e yüklenecek genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "53.333",
-      "B": "40.000",
-      "C": "75.000",
-      "D": "18.000",
+      "A": "18.000",
+      "B": "75.000",
+      "C": "53.333",
+      "D": "40.000",
       "E": "30.000"
     },
     "answer": "E",
     "solution": "Direkt işçilik esaslı yükleme oranı = GÜG ÷ toplam DİG = 180.000 ÷ 240.000 = %75. X'e yüklenen GÜG = 40.000 × %75 = **30.000 ₺**. (Oranı ters kurmak (240.000 ÷ 180.000 = %133) 53.333 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -531,20 +531,20 @@
     "id": "mmuh-dagitim-gen-0025",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "240.000 ₺ tutarındaki ortak gider iki esas üretim gider yerine dağıtılacaktır. Kapladıkları alan A 400 m², B 200 m²; çalışan işçi sayısı ise A 20, B 40 kişidir. A gider yerine ALAN esasına göre düşecek pay, İŞÇİ SAYISI esasına göre düşecek paydan kaç ₺ fazladır?",
+    "stem": "90.000 ₺ yemekhane gideri, işçi sayısına göre A (40) ve B (20) esas gider yerlerine dağıtılmaktadır. B esas gider yerine düşen pay kaç ₺'dir?",
     "options": {
-      "A": "160.000",
-      "B": "80.000",
-      "C": "40.000",
-      "D": "240.000",
-      "E": "120.000"
+      "A": "45.000",
+      "B": "30.000",
+      "C": "20.000",
+      "D": "60.000",
+      "E": "90.000"
     },
     "answer": "B",
-    "solution": "Alan esasına göre A payı = 240.000 × (400 ÷ 600) = 160.000 ₺. İşçi sayısına göre A payı = 240.000 × (20 ÷ 60) = 80.000 ₺. Fark = 160.000 − 80.000 = **80.000 ₺**. Aynı gider, farklı anahtarla dağıtıldığında gider yerlerinin payı değişir; anahtar seçimi bu nedenle önemlidir.",
+    "solution": "B payı = 90.000 × (20 ÷ 60) = 90.000 × (1/3) = **30.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "mmuh-dagitim-gen-0026",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yemekhane yardımcı hizmet gider yerinde toplanan 90.000 ₺, işçi sayısına göre A esas üretim (40 işçi) ve B esas üretim (20 işçi) gider yerlerine dağıtılmaktadır. A gider yerinin birinci dağıtımdan gelen payı 140.000 ₺ ve bu gider yerinde 5.000 birim mamul üretildiğine göre A'da birim başına düşen genel üretim gideri kaç ₺'dir?",
+    "stem": "Esas üretim gider yerinde toplanan genel üretim giderlerinin mamullere yüklenmesinde kullanılan 'yükleme oranı (yükleme haddi)' nasıl hesaplanır?",
     "options": {
-      "A": "28",
-      "B": "12",
-      "C": "200.000",
-      "D": "40",
-      "E": "30"
+      "A": "Seçilen dağıtım ölçüsünün, esas gider yerinin toplam genel üretim giderine bölünmesiyle bulunur",
+      "B": "Esas gider yerinin GÜG'ü ile dağıtım ölçüsünün toplanması sonucunda elde edilen tutardır",
+      "C": "Esas üretim gider yerinin GÜG'ü ile seçilen dağıtım ölçüsünün çarpılması sonucu bulunur",
+      "D": "Esas gider yeri GÜG'ü ÷ seçilen dağıtım ölçüsü (makine saati, direkt işçilik saati/tutarı vb.)",
+      "E": "Dönem satış hasılatının esas gider yerinin GÜG'üne bölünmesiyle hesaplanan bir orandır"
     },
     "answer": "D",
-    "solution": "Yemekhaneden A'ya = 90.000 × (40 ÷ 60) = 60.000 ₺. A'nın toplam GÜG'ü = 140.000 + 60.000 = 200.000 ₺. Birim GÜG = 200.000 ÷ 5.000 = **40 ₺**. (Yemekhane payını eklemeden 140.000 ÷ 5.000 = 28 ₺ bulunur — eksik.)",
+    "solution": "**Yükleme oranı = Esas üretim gider yeri GÜG'ü ÷ Seçilen dağıtım ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.). Bu oran, her mamule ölçüsü kadar GÜG yüklemek için kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yükleme oranı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "mmuh-dagitim-gen-0027",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "90.000 ₺ yemekhane gideri, işçi sayısına göre A (40) ve B (20) esas gider yerlerine dağıtılmaktadır. B esas gider yerine düşen pay kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangisi bir 'esas üretim gider yeri' DEĞİLDİR?",
     "options": {
-      "A": "60.000",
-      "B": "30.000",
-      "C": "45.000",
-      "D": "20.000",
-      "E": "90.000"
+      "A": "Boyama bölümü",
+      "B": "Bakım-onarım servisi",
+      "C": "Dokuma bölümü",
+      "D": "Kesim atölyesi",
+      "E": "Montaj bölümü"
     },
     "answer": "B",
-    "solution": "B payı = 90.000 × (20 ÷ 60) = 90.000 × (1/3) = **30.000 ₺**.",
+    "solution": "Kesim, montaj, boyama, dokuma mamulün doğrudan üzerinde işlem yapılan **esas üretim gider yerleridir**. **Bakım-onarım servisi** ise diğer bölümlere hizmet veren bir **yardımcı gider yeridir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-II. dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider yeri türleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "mmuh-dagitim-gen-0028",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir işletmede ikinci dağıtım sonunda A esas üretim gider yeri kendi birinci dağıtım payı 100.000 ₺'ye ek olarak bakımdan 40.000 ₺ ve yemekhaneden 25.000 ₺; B esas üretim gider yeri ise kendi payı 80.000 ₺'ye ek olarak bakımdan 20.000 ₺ ve yemekhaneden 35.000 ₺ pay almıştır. İkinci dağıtım sonunda esas üretim gider yerlerinde toplanan toplam genel üretim gideri kaç ₺'dir?",
+    "stem": "Kademeli (basamaklı) dağıtım yönteminde yardımcı gider yerleri hangi mantıkla sıralanır?",
     "options": {
-      "A": "300.000",
-      "B": "180.000",
-      "C": "165.000",
-      "D": "120.000",
-      "E": "420.000"
+      "A": "Genellikle diğer gider yerlerine EN ÇOK hizmet veren (en çok gideri dağıtılacak olan) yardımcı gider yerinden başlanır",
+      "B": "Yardımcı gider yerleri adlarının baş harfine göre alfabetik sıraya dizilerek tek tek dağıtılır",
+      "C": "Herhangi bir öncelik veya belirli bir ölçüt gözetilmeksizin bütün yardımcı gider yerleri tamamen rastgele bir sırayla ele alınır",
+      "D": "Yardımcı gider yerleri dönem satış tutarlarına göre büyükten küçüğe sıralanarak sırayla dağıtılır",
+      "E": "En küçük tutarlı yardımcı gider yerinden başlanır ve dağıtım sonunda başa dönülerek yeniden dağıtım yapılır"
     },
     "answer": "A",
-    "solution": "A toplamı = 100.000 + 40.000 + 25.000 = 165.000 ₺; B toplamı = 80.000 + 20.000 + 35.000 = 135.000 ₺. Esas üretim gider yerlerinde toplanan toplam = 165.000 + 135.000 = **300.000 ₺**. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır; toplam gider değişmez, yalnız yer değiştirir.",
+    "solution": "Kademeli yöntemde genellikle **diğerlerine en çok hizmet veren** (en çok gideri dağıtılacak) yardımcı gider yerinden başlanıp sırayla ilerlenir; dağıtımı yapılan gider yerine geri pay verilmez (tek yönlü).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kademeli dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "mmuh-dagitim-gen-0029",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "A esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 165.000 ₺'dir. Bu gider yerinde üretilen mamullerin direkt ilk madde ve malzeme gideri 200.000 ₺, direkt işçilik gideri 135.000 ₺ olup dönemde 2.500 birim mamul üretilmiştir. Birim üretim maliyeti kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangisi 'genel üretim gideri (GÜG)' kapsamında DEĞİLDİR?",
     "options": {
-      "A": "134",
-      "B": "66",
-      "C": "200",
-      "D": "500.000",
-      "E": "140"
+      "A": "Endirekt malzeme (makine yağı, temizlik malzemesi)",
+      "B": "Fabrika binası amortismanı ve kirası",
+      "C": "Mamulün bünyesine doğrudan giren direkt ilk madde ve malzeme",
+      "D": "Endirekt işçilik (ustabaşı, bakım işçisi ücreti)",
+      "E": "Fabrika enerji, ısıtma, aydınlatma gideri"
     },
     "answer": "C",
-    "solution": "Toplam üretim maliyeti = DİMM + DİG + GÜG = 200.000 + 135.000 + 165.000 = 500.000 ₺. Birim maliyet = 500.000 ÷ 2.500 = **200 ₺**. (GÜG'ü hesaba katmamak 335.000 ÷ 2.500 = 134 ₺ verir — eksik.)",
+    "solution": "GÜG; endirekt malzeme, endirekt işçilik, amortisman, kira, enerji gibi mamule **doğrudan izlenemeyen** üretim giderleridir. Mamulün bünyesine doğrudan giren **direkt ilk madde ve malzeme** GÜG değil, ayrı bir maliyet unsurudur (DİMM).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "mmuh-dagitim-gen-0030",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Esas üretim gider yerinde toplanan genel üretim giderlerinin mamullere yüklenmesinde kullanılan 'yükleme oranı (yükleme haddi)' nasıl hesaplanır?",
+    "stem": "Aşağıdakilerden hangisi 'endirekt işçilik' giderine örnektir?",
     "options": {
-      "A": "Esas üretim gider yerinin GÜG'ü ile seçilen dağıtım ölçüsünün çarpılması sonucu bulunur",
-      "B": "Seçilen dağıtım ölçüsünün, esas gider yerinin toplam genel üretim giderine bölünmesiyle bulunur",
-      "C": "Esas gider yeri GÜG'ü ÷ seçilen dağıtım ölçüsü (makine saati, direkt işçilik saati/tutarı vb.)",
-      "D": "Esas gider yerinin GÜG'ü ile dağıtım ölçüsünün toplanması sonucunda elde edilen tutardır",
-      "E": "Dönem satış hasılatının esas gider yerinin GÜG'üne bölünmesiyle hesaplanan bir orandır"
+      "A": "Boyama işçisinin ücreti",
+      "B": "Kesim işçisinin ücreti",
+      "C": "Fabrikadaki ustabaşı, bakım-onarım ve temizlik personelinin ücreti",
+      "D": "Dokuma tezgahını çalıştıran işçinin ücreti",
+      "E": "Montaj hattında mamulü doğrudan üreten işçinin ücreti"
     },
     "answer": "C",
-    "solution": "**Yükleme oranı = Esas üretim gider yeri GÜG'ü ÷ Seçilen dağıtım ölçüsü** (makine saati, direkt işçilik saati/tutarı vb.). Bu oran, her mamule ölçüsü kadar GÜG yüklemek için kullanılır.",
+    "solution": "Mamulü doğrudan üreten (montaj, kesim, dokuma, boyama) işçilerin ücreti **direkt işçiliktir**. Ustabaşı, bakım-onarım, temizlik gibi üretime dolaylı katkı sağlayan personelin ücreti **endirekt işçilik (GÜG)**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-yükleme oranı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yükleme oranı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - endirekt işçilik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "mmuh-dagitim-gen-0031",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir esas üretim gider yerinde bütçelenen genel üretim gideri 240.000 ₺, normal kapasite 12.000 makine saatidir. Dönemde fiilen 11.000 makine saati çalışıldığına göre mamullere yüklenen genel üretim gideri kaç ₺'dir?",
+    "stem": "Genel üretim giderlerinin mamullere doğrudan yüklenememesinin (dağıtım gerektirmesinin) temel nedeni aşağıdakilerden hangisidir?",
     "options": {
-      "A": "240.000",
-      "B": "20.000",
-      "C": "262.000",
-      "D": "200.000",
-      "E": "220.000"
+      "A": "Bu giderlerin vergiye tabi olmaması ve dönem beyannamesine dahil edilmemesi gerektiği içindir",
+      "B": "Söz konusu giderlerin yıl sonunda toplu biçimde ortaya çıkması ve o anda tahakkuk etmesindendir",
+      "C": "Tutarlarının çok küçük olması nedeniyle tek tek mamullere yüklenmesinin ekonomik açıdan uygun bulunmaması gerekçesiyledir",
+      "D": "Bu giderlerin nakit olarak ödenmeyip hesaben tahakkuk ettirilmesinden kaynaklanmaktadır",
+      "E": "Birden fazla mamul/gider yeri için ortak nitelikte olmaları ve tek bir mamulle doğrudan ilişkilendirilememeleri"
     },
     "answer": "E",
-    "solution": "Yükleme oranı = bütçelenen GÜG ÷ normal kapasite = 240.000 ÷ 12.000 = 20 ₺/saat. Yüklenen GÜG = fiili saat × oran = 11.000 × 20 = **220.000 ₺**. Bütçelenen ile yüklenen arasındaki 20.000 ₺'lik fark, kapasite sapması olarak ortaya çıkar.",
+    "solution": "GÜG'ler (kira, amortisman, endirekt malzeme/işçilik) **birden fazla mamul veya gider yeri için ortak** niteliktedir; tek bir mamulle doğrudan ilişkilendirilemedikleri için dağıtım anahtarlarıyla dağıtılıp yüklenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mmuh-dagitim-gen-0032",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "GÜG yükleme oranı 20 ₺/makine saati olan bir gider yerinde, X mamulü 5 makine saati kullanmıştır. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
+    "stem": "180.000 ₺ tutarındaki ortak gider, üç esas üretim gider yerine 3 : 2 : 1 oranında dağıtılacaktır. En büyük payı alan gider yerinde dönemde 3.000 birim mamul üretildiğine göre bu gider yerinde birim başına düşen ortak gider kaç ₺'dir?",
     "options": {
-      "A": "200",
-      "B": "25",
-      "C": "4",
-      "D": "100",
-      "E": "20"
+      "A": "10",
+      "B": "20",
+      "C": "90.000",
+      "D": "30",
+      "E": "60"
     },
     "answer": "D",
-    "solution": "Mamule yüklenen GÜG = yükleme oranı × mamulün ölçüsü = 20 ₺ × 5 saat = **100 ₺**.",
+    "solution": "Oran toplamı = 3 + 2 + 1 = 6 pay; bir payın değeri = 180.000 ÷ 6 = 30.000 ₺. En büyük pay (3 birim) = 3 × 30.000 = 90.000 ₺. Birim başına = 90.000 ÷ 3.000 = **30 ₺**. (Toplam gideri doğrudan bölmek 60 ₺ verir — yanlış.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-mamule yükleme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yükleme"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "mmuh-dagitim-gen-0033",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımı esas olarak hangi tür giderler için gereklidir?",
+    "stem": "A esas üretim gider yerinin birinci dağıtım payı 120.000 ₺'dir; ikinci dağıtımda iki yardımcı gider yerinden sırasıyla 25.000 ₺ ve 35.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 9.000 makine saati çalışıldığına göre makine saati esaslı yükleme oranı kaç ₺/saattir?",
     "options": {
-      "A": "Direkt ilk madde ve malzeme gibi doğrudan yüklenebilen giderler",
-      "B": "Direkt işçilik gibi doğrudan yüklenebilen giderler",
-      "C": "Genel üretim giderleri gibi mamullere doğrudan yüklenemeyen (endirekt) giderler",
-      "D": "Satış fiyatları",
-      "E": "Vergi tutarları"
+      "A": "13,33",
+      "B": "180.000",
+      "C": "20",
+      "D": "15",
+      "E": "6,67"
     },
     "answer": "C",
-    "solution": "Direkt ilk madde/malzeme ve direkt işçilik zaten mamule **doğrudan** yüklenir; dağıtıma gerek yoktur. Dağıtım, mamullere doğrudan yüklenemeyen **genel üretim giderleri (endirekt giderler)** için gereklidir.",
+    "solution": "A'nın ikinci dağıtım sonrası toplam GÜG'ü = 120.000 + 25.000 + 35.000 = 180.000 ₺. Yükleme oranı = 180.000 ÷ 9.000 = **20 ₺/makine saati**. (Yalnız I. dağıtım payıyla 13,33 ₺ bulunur — ikinci dağıtım payları eklenmelidir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-hangi gider; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - endirekt giderler"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "mmuh-dagitim-gen-0034",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Aşağıdakilerden hangisi bir 'esas üretim gider yeri' DEĞİLDİR?",
+    "stem": "Direkt işçilik esaslı GÜG yükleme oranı %50 olan bir gider yerinde, X mamulünün direkt işçiliği 40.000 ₺'dir. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "Kesim atölyesi",
-      "B": "Montaj bölümü",
-      "C": "Boyama bölümü",
-      "D": "Dokuma bölümü",
-      "E": "Bakım-onarım servisi"
+      "A": "40.000",
+      "B": "80.000",
+      "C": "2.000",
+      "D": "50.000",
+      "E": "20.000"
     },
     "answer": "E",
-    "solution": "Kesim, montaj, boyama, dokuma mamulün doğrudan üzerinde işlem yapılan **esas üretim gider yerleridir**. **Bakım-onarım servisi** ise diğer bölümlere hizmet veren bir **yardımcı gider yeridir**.",
+    "solution": "Yüklenen GÜG = direkt işçilik × yükleme oranı = 40.000 × %50 = 40.000 × 0,50 = **20.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider yeri türleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yükleme"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "mmuh-dagitim-gen-0035",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Aşağıdaki gider–dağıtım anahtarı eşleştirmelerinden hangisi EN UYGUN değildir?",
+    "stem": "Bir üretim işletmesinde dönemin ortak giderleri; 200.000 ₺ fabrika kirası (alana göre), 150.000 ₺ makine amortismanı (makine değerine göre) ve 90.000 ₺ elektrik gideridir (tüketime göre). Gider yerlerine ait dağıtım ölçüleri şöyledir:\n\n| Dağıtım ölçüsü | Kesim (EÜGY) | Montaj (EÜGY) | Bakım (YGY) | Yemekhane (YGY) |\n|---|---|---|---|---|\n| Alan (m²) | 400 | 300 | 200 | 100 |\n| Makine değeri (₺) | 600.000 | 400.000 | 200.000 | 0 |\n| Elektrik (kWs) | 5.000 | 3.000 | 1.000 | 1.000 |\n\nBuna göre birinci dağıtım sonunda Kesim esas üretim gider yerine düşen toplam pay kaç ₺'dir?",
     "options": {
-      "A": "Bina kirası → makine adedi",
-      "B": "Aydınlatma gideri → aydınlatılan alan / lamba sayısı",
-      "C": "Makine amortismanı → makine çalışma saati",
-      "D": "Yemekhane gideri → personel (işçi) sayısı",
-      "E": "Bina kirası → kaplanan alan (m²)"
+      "A": "200.000 ₺",
+      "B": "176.000 ₺",
+      "C": "245.000 ₺",
+      "D": "155.000 ₺",
+      "E": "137.000 ₺"
     },
     "answer": "A",
-    "solution": "Kira için en uygun anahtar **kaplanan alandır**; makine adedi kira ile zayıf ilişkilidir. Diğer eşleştirmeler (aydınlatma→alan, amortisman→makine saati, yemekhane→işçi sayısı) uygundur. En uygunsuz: **kira → makine adedi**.",
+    "solution": "Kira 200.000 × 400/1.000 = 80.000 ₺; amortisman 150.000 × 600.000/1.200.000 = 75.000 ₺; elektrik 90.000 × 5.000/10.000 = 45.000 ₺. Kesim'in birinci dağıtım payı **200.000 ₺**. Her gider kendi dağıtım ölçüsüyle ayrı ayrı dağıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (eşleştirme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım anahtarı seçimi"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birinci dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "mmuh-dagitim-gen-0036",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımı (I. ve II. dağıtım) işlemleri sonunda giderlerin TOPLAM tutarı bakımından ne söylenebilir?",
+    "stem": "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme matematiksel (cebirsel) dağıtım yöntemini kullanmaktadır; X Bakım'ın, Y Yemekhane'nin dağıtılacak toplam tutarını göstermektedir. Buna göre X kaç ₺'dir?",
     "options": {
-      "A": "Dağıtım sırasında yeni gider yaratıldığı için toplam gider tutarı bir miktar artış gösterir",
-      "B": "Bazı giderler dağıtım dışında kaldığından toplam gider tutarı belirgin biçimde azalır",
-      "C": "Giderler iki kez sayıldığından toplam gider tutarı yaklaşık olarak iki katına çıkar",
-      "D": "Toplam gider değişmez; yalnızca giderlerin toplandığı yer (gider yeri/mamul) değişir",
-      "E": "Dağıtım sonunda tüm giderler mamule geçtiği için gider yerlerinde toplam sıfırlanır"
+      "A": "20.000 ₺",
+      "B": "27.000 ₺",
+      "C": "10.000 ₺",
+      "D": "15.000 ₺",
+      "E": "14.250 ₺"
     },
     "answer": "D",
-    "solution": "Dağıtım bir **aktarma** işlemidir; **toplam gider değişmez**, yalnızca giderlerin toplandığı yer (önce gider yerleri, sonra mamuller) değişir. Yeni gider yaratılmaz.",
+    "solution": "Denklemler: X = 10.000 + 0,25Y; Y = 17.000 + 0,20X. İkinci denklem birincide yerine konursa X = 10.000 + 4.250 + 0,05X → 0,95X = 14.250 → **X = 15.000 ₺**; Y = 17.000 + 3.000 = 20.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-toplam korunumu; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım (matematiksel yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "mmuh-dagitim-gen-0037",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "150.000 ₺ ortak gider, üç gider yerine 3 : 2 : 1 oranında dağıtılacaktır. En büyük payı alan gider yerine düşen tutar kaç ₺'dir?",
+    "stem": "Kademeli (basamaklı) dağıtım yöntemini uygulayan bir işletmede Yemekhane yardımcı gider yeri Bakım, Kesim ve Montaj gider yerlerine; Bakım ise yalnız Kesim ve Montaj gider yerlerine hizmet vermektedir. Buna göre dağıtım sırasıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "75.000",
-      "B": "50.000",
-      "C": "25.000",
-      "D": "90.000",
-      "E": "60.000"
+      "A": "Önce Yemekhane dağıtılır; Bakım aldığı payla birlikte sonra dağıtılır",
+      "B": "Sıra fark etmez; iki sırada da esas gider yerlerine aynı tutarlar düşer",
+      "C": "Yardımcı gider yerleri birbirine hizmet verdiği için matematiksel yöntem zorunludur",
+      "D": "Önce Bakım dağıtılır; Yemekhane aldığı payla birlikte sonra dağıtılır",
+      "E": "İki yardımcı gider yeri aynı anda, birbirine verdikleri hizmet yok sayılarak dağıtılır"
     },
     "answer": "A",
-    "solution": "Oran toplamı = 3 + 2 + 1 = 6. Bir pay birimi = 150.000 ÷ 6 = 25.000. En büyük pay = 3 × 25.000 = **75.000 ₺** (diğerleri 50.000 ve 25.000).",
+    "solution": "Kademeli yöntemde en çok gider yerine hizmet veren yardımcı gider yeri **önce** dağıtılır; bir kez dağıtılan gider yerine geri pay verilmez. Sıra değişirse esas gider yerlerine düşen tutarlar da değişir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-oranlı dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kademeli dağıtım sırası"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "mmuh-dagitim-gen-0038",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "150.000 ₺ gider 3 : 2 : 1 oranında dağıtıldığında EN KÜÇÜK payı alan gider yerine düşen tutar kaç ₺'dir?",
+    "stem": "Bir esas üretim gider yerinde yıllık tahmini genel üretim gideri 360.000 ₺, tahmini faaliyet hacmi 24.000 makine saatidir. Dönemde fiilen 22.000 makine saati çalışılmış ve fiilî genel üretim gideri 345.000 ₺ olmuştur. Buna göre dönem sonunda genel üretim giderleriyle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "75.000",
-      "B": "50.000",
-      "C": "30.000",
-      "D": "15.000",
-      "E": "25.000"
+      "A": "30.000 ₺ fazla yükleme vardır",
+      "B": "30.000 ₺ eksik yükleme vardır",
+      "C": "Yükleme farkı yoktur",
+      "D": "15.000 ₺ fazla yükleme vardır",
+      "E": "15.000 ₺ eksik yükleme vardır"
     },
     "answer": "E",
-    "solution": "Bir pay birimi = 150.000 ÷ 6 = 25.000. En küçük pay = 1 × 25.000 = **25.000 ₺**.",
+    "solution": "Yükleme oranı 360.000 / 24.000 = 15 ₺/ms. Yüklenen GÜG 15 × 22.000 = 330.000 ₺; fiilî GÜG 345.000 ₺. Fiilî tutar yüklenenden 15.000 ₺ fazla olduğundan **eksik yükleme** vardır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-oranlı dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - GÜG yükleme oranı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "mmuh-dagitim-gen-0039",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Kademeli (basamaklı) dağıtım yönteminde yardımcı gider yerleri hangi mantıkla sıralanır?",
+    "stem": "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nBuna göre Kesim esas üretim gider yerinin ikinci dağıtımdan alacağı payla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Herhangi bir öncelik veya belirli bir ölçüt gözetilmeksizin bütün yardımcı gider yerleri tamamen rastgele bir sırayla ele alınır",
-      "B": "En küçük tutarlı yardımcı gider yerinden başlanır ve dağıtım sonunda başa dönülerek yeniden dağıtım yapılır",
-      "C": "Genellikle diğer gider yerlerine EN ÇOK hizmet veren (en çok gideri dağıtılacak olan) yardımcı gider yerinden başlanır",
-      "D": "Yardımcı gider yerleri adlarının baş harfine göre alfabetik sıraya dizilerek tek tek dağıtılır",
-      "E": "Yardımcı gider yerleri dönem satış tutarlarına göre büyükten küçüğe sıralanarak sırayla dağıtılır"
+      "A": "Matematiksel yöntemde 11.100 ₺, doğrudan yöntemde 14.300 ₺ olur",
+      "B": "İki yöntemde de 14.300 ₺ olur",
+      "C": "Matematiksel yöntemde 15.000 ₺, doğrudan yöntemde 14.300 ₺ olur",
+      "D": "Matematiksel yöntemde 14.300 ₺, doğrudan yöntemde 15.000 ₺ olur",
+      "E": "İki yöntemde de 15.000 ₺ olur"
     },
     "answer": "C",
-    "solution": "Kademeli yöntemde genellikle **diğerlerine en çok hizmet veren** (en çok gideri dağıtılacak) yardımcı gider yerinden başlanıp sırayla ilerlenir; dağıtımı yapılan gider yerine geri pay verilmez (tek yönlü).",
+    "solution": "Doğrudan: 10.000 × 60/80 + 17.000 × 30/75 = 14.300 ₺. Matematiksel: X = 15.000, Y = 20.000; %60 × 15.000 + %30 × 20.000 = 15.000 ₺. Karşılıklı hizmetler dikkate alındığında pay değişir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-kademeli sıra; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - kademeli dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - yöntem karşılaştırması"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "mmuh-dagitim-gen-0040",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Yardımcı gider yerlerinin dağıtım yöntemleri için aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Doğrudan yöntem, yardımcı gider yerleri arası hizmeti ihmal eder.\n\nII. Matematiksel (karşılıklı) yöntem teorik olarak en doğru sonucu verir.\n\nIII. Kademeli yöntem karşılıklı hizmeti tam olarak dikkate alır.",
+    "stem": "Bir işletmenin yıllık sabit genel üretim gideri 300.000 ₺, normal kapasitesi 20.000 makine saatidir. Sabit giderler normal kapasiteye göre belirlenen oranla mamullere yüklenmektedir. Dönemde fiilen 16.000 makine saati çalışılmıştır. Buna göre kullanılmayan kapasitenin maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve III",
-      "C": "II ve III",
-      "D": "I ve II",
-      "E": "I, II ve III"
+      "A": "4.000 ₺",
+      "B": "75.000 ₺",
+      "C": "240.000 ₺",
+      "D": "60.000 ₺",
+      "E": "300.000 ₺"
     },
     "answer": "D",
-    "solution": "**I doğru** (doğrudan yöntem karşılıklı hizmeti ihmal eder). **III yanlış**: karşılıklı hizmeti TAM dikkate alan matematiksel yöntemdir; kademeli yöntem tek yönlüdür. **II doğru** (matematiksel yöntem en doğru). Doğru cevap **I ve II**.",
+    "solution": "Yükleme oranı 300.000 / 20.000 = 15 ₺/ms. Mamullere 15 × 16.000 = 240.000 ₺ yüklenir; yüklenemeyen **60.000 ₺** kullanılmayan kapasitenin maliyetidir ve dönem gideri olarak izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III yöntem; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kapasite ve sabit GÜG"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "mmuh-dagitim-gen-0041",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir mamulün üretim maliyeti aşağıdaki üç unsurun toplamından oluşur. Bu unsurlar hangileridir?",
+    "stem": "Bir esas üretim gider yerinin ikinci dağıtım sonrası genel üretim gideri 150.000 ₺, bu gider yerindeki toplam makine saati 5.000'dir. X mamulü bu gider yerinde 200 makine saati kullanmış; X'in direkt ilk madde ve malzeme gideri 20.000 ₺, direkt işçilik gideri 10.000 ₺'dir. X mamulünün toplam üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Direkt ilk madde ve malzeme (DİMM) + Direkt işçilik (DİG) + Genel üretim giderleri (GÜG)",
-      "B": "Satış giderleri + pazarlama giderleri + genel yönetim giderlerinin toplamından oluşur",
-      "C": "Ödenen faiz + dönem amortismanı + hesaplanan kurumlar vergisinin toplamından oluşur",
-      "D": "Fabrika kirası + tüketilen enerji + kullanılan su giderlerinin toplamından meydana gelir",
-      "E": "Mal alışları + satıştan iadeler + uygulanan iskontoların toplamı ile hesaplanır"
+      "A": "36.000",
+      "B": "30.000",
+      "C": "6.000",
+      "D": "33.000",
+      "E": "180.000"
     },
     "answer": "A",
-    "solution": "Üretim maliyeti = **Direkt İlk Madde ve Malzeme (DİMM) + Direkt İşçilik (DİG) + Genel Üretim Giderleri (GÜG)**. Satış/pazarlama/yönetim giderleri üretim maliyetine değil, dönem giderlerine girer.",
+    "solution": "Yükleme oranı = 150.000 ÷ 5.000 = 30 ₺/makine saati. X'e yüklenen GÜG = 200 × 30 = 6.000 ₺. Toplam üretim maliyeti = DİMM + DİG + yüklenen GÜG = 20.000 + 10.000 + 6.000 = **36.000 ₺**. (GÜG'ü eklememek 30.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-maliyet unsurları; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - üretim maliyeti unsurları"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "mmuh-dagitim-gen-0042",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Aşağıdakilerden hangisi 'genel üretim gideri (GÜG)' kapsamında DEĞİLDİR?",
+    "stem": "Bir esas üretim gider yerinde makine saati esaslı genel üretim gideri yükleme oranı 25 ₺/saat olarak hesaplanmıştır. Y mamulüne bu gider yerinde 5.000 ₺ genel üretim gideri yüklendiğine göre Y mamulü kaç makine saati kullanmıştır?",
     "options": {
-      "A": "Endirekt malzeme (makine yağı, temizlik malzemesi)",
-      "B": "Mamulün bünyesine doğrudan giren direkt ilk madde ve malzeme",
-      "C": "Fabrika binası amortismanı ve kirası",
-      "D": "Endirekt işçilik (ustabaşı, bakım işçisi ücreti)",
-      "E": "Fabrika enerji, ısıtma, aydınlatma gideri"
+      "A": "5.000",
+      "B": "200",
+      "C": "250",
+      "D": "125.000",
+      "E": "20"
     },
     "answer": "B",
-    "solution": "GÜG; endirekt malzeme, endirekt işçilik, amortisman, kira, enerji gibi mamule **doğrudan izlenemeyen** üretim giderleridir. Mamulün bünyesine doğrudan giren **direkt ilk madde ve malzeme** GÜG değil, ayrı bir maliyet unsurudur (DİMM).",
+    "solution": "Yüklenen GÜG = kullanılan saat × yükleme oranı olduğundan saat = Yüklenen GÜG ÷ oran = 5.000 ÷ 25 = **200 saat**. (Çarpmak 125.000 gibi anlamsız bir sonuç verir; işlem bölmedir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "mmuh-dagitim-gen-0043",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Aşağıdakilerden hangisi 'endirekt malzeme' giderine örnektir?",
+    "stem": "Yardımcı gider yerlerinin birbirine verdiği hizmeti TEK YÖNLÜ (belirli bir sıra ile, bir kez) dikkate alan dağıtım yöntemi aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Mobilya üretiminde mamulün bünyesine doğrudan giren kereste",
-      "B": "Otomobil üretiminde gövdeyi oluşturan çelik sac levhalar",
-      "C": "Ekmek üretiminde hamurun ana maddesini oluşturan un",
-      "D": "Gömlek üretiminde doğrudan kullanılan pamuklu kumaş",
-      "E": "Makinelerin bakımında kullanılan yağ ve temizlik malzemesi"
+      "A": "Matematiksel (karşılıklı) dağıtım",
+      "B": "Trend analizi",
+      "C": "Dikey analiz",
+      "D": "Doğrudan (basit) dağıtım",
+      "E": "Kademeli (basamaklı) dağıtım"
     },
     "answer": "E",
-    "solution": "Kereste, un, kumaş, sac mamulün bünyesine giren **direkt ilk maddelerdir**. Makine yağı ve temizlik malzemesi mamule doğrudan girmez, üretime dolaylı katkı sağlar → **endirekt malzeme (GÜG)**.",
+    "solution": "**Kademeli (basamaklı) dağıtım** yönteminde yardımcı gider yerleri bir sıraya konur; bir yardımcı gider yeri kendinden sonrakilere pay verir ama **tek yönlüdür** (dağıtılan gider yerine geri pay gelmez).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (örnek-endirekt malzeme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - endirekt malzeme"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - kademeli dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "mmuh-dagitim-gen-0044",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Aşağıdakilerden hangisi 'endirekt işçilik' giderine örnektir?",
+    "stem": "240.000 ₺ tutarındaki ortak gider iki esas üretim gider yerine dağıtılacaktır. Kapladıkları alan A 400 m², B 200 m²; çalışan işçi sayısı ise A 20, B 40 kişidir. A gider yerine ALAN esasına göre düşecek pay, İŞÇİ SAYISI esasına göre düşecek paydan kaç ₺ fazladır?",
     "options": {
-      "A": "Montaj hattında mamulü doğrudan üreten işçinin ücreti",
-      "B": "Dokuma tezgahını çalıştıran işçinin ücreti",
-      "C": "Kesim işçisinin ücreti",
-      "D": "Fabrikadaki ustabaşı, bakım-onarım ve temizlik personelinin ücreti",
-      "E": "Boyama işçisinin ücreti"
+      "A": "240.000",
+      "B": "160.000",
+      "C": "40.000",
+      "D": "80.000",
+      "E": "120.000"
     },
     "answer": "D",
-    "solution": "Mamulü doğrudan üreten (montaj, kesim, dokuma, boyama) işçilerin ücreti **direkt işçiliktir**. Ustabaşı, bakım-onarım, temizlik gibi üretime dolaylı katkı sağlayan personelin ücreti **endirekt işçilik (GÜG)**.",
+    "solution": "Alan esasına göre A payı = 240.000 × (400 ÷ 600) = 160.000 ₺. İşçi sayısına göre A payı = 240.000 × (20 ÷ 60) = 80.000 ₺. Fark = 160.000 − 80.000 = **80.000 ₺**. Aynı gider, farklı anahtarla dağıtıldığında gider yerlerinin payı değişir; anahtar seçimi bu nedenle önemlidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (örnek-endirekt işçilik; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - endirekt işçilik"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,19 +971,19 @@
     "id": "mmuh-dagitim-gen-0045",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir üretim döneminde direkt ilk madde ve malzeme gideri 120.000 ₺, direkt işçilik gideri 80.000 ₺'dir. Üretim gider yerinin birinci dağıtımdan gelen genel üretim gideri payı 40.000 ₺, ikinci dağıtımda yardımcı gider yerlerinden aktarılan pay ise 20.000 ₺'dir. Dönemin toplam üretim maliyeti kaç ₺'dir?",
+    "stem": "Bir işletmede ikinci dağıtım sonunda A esas üretim gider yeri kendi birinci dağıtım payı 100.000 ₺'ye ek olarak bakımdan 40.000 ₺ ve yemekhaneden 25.000 ₺; B esas üretim gider yeri ise kendi payı 80.000 ₺'ye ek olarak bakımdan 20.000 ₺ ve yemekhaneden 35.000 ₺ pay almıştır. İkinci dağıtım sonunda esas üretim gider yerlerinde toplanan toplam genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "240.000",
-      "B": "260.000",
-      "C": "200.000",
-      "D": "60.000",
-      "E": "280.000"
+      "A": "165.000",
+      "B": "300.000",
+      "C": "420.000",
+      "D": "120.000",
+      "E": "180.000"
     },
     "answer": "B",
-    "solution": "Dağıtım sonrası mamullere yüklenecek GÜG = 40.000 + 20.000 = 60.000 ₺. Toplam üretim maliyeti = DİMM + DİG + GÜG = 120.000 + 80.000 + 60.000 = **260.000 ₺**. (İkinci dağıtım payını atlamak 240.000 ₺ verir.)",
+    "solution": "A toplamı = 100.000 + 40.000 + 25.000 = 165.000 ₺; B toplamı = 80.000 + 20.000 + 35.000 = 135.000 ₺. Esas üretim gider yerlerinde toplanan toplam = 165.000 + 135.000 = **300.000 ₺**. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır; toplam gider değişmez, yalnız yer değiştirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -993,19 +993,19 @@
     "id": "mmuh-dagitim-gen-0046",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir dönemde toplam üretim maliyeti 260.000 ₺ olan işletme 1.300 birim mamul üretmiştir. İşletme birim maliyetin üzerine %25 kâr marjı ekleyerek satış fiyatı belirlediğine göre birim satış fiyatı kaç ₺'dir?",
+    "stem": "Bir esas üretim gider yerinde bütçelenen genel üretim gideri 240.000 ₺, normal kapasite 12.000 makine saatidir. Dönemde fiilen 11.000 makine saati çalışıldığına göre mamullere yüklenen genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "250",
-      "B": "200",
-      "C": "225",
-      "D": "160",
-      "E": "267"
+      "A": "220.000",
+      "B": "20.000",
+      "C": "240.000",
+      "D": "200.000",
+      "E": "262.000"
     },
     "answer": "A",
-    "solution": "Birim üretim maliyeti = 260.000 ÷ 1.300 = 200 ₺. Satış fiyatı = 200 × (1 + %25) = 200 × 1,25 = **250 ₺**. (Maliyetin kendisi 200 ₺'dir; kâr marjı eklenmemiş olur.)",
+    "solution": "Yükleme oranı = bütçelenen GÜG ÷ normal kapasite = 240.000 ÷ 12.000 = 20 ₺/saat. Yüklenen GÜG = fiili saat × oran = 11.000 × 20 = **220.000 ₺**. Bütçelenen ile yüklenen arasındaki 20.000 ₺'lik fark, kapasite sapması olarak ortaya çıkar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -1015,20 +1015,20 @@
     "id": "mmuh-dagitim-gen-0047",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Genel üretim giderlerinin mamullere doğrudan yüklenememesinin (dağıtım gerektirmesinin) temel nedeni aşağıdakilerden hangisidir?",
+    "stem": "Aşağıdaki gider–dağıtım anahtarı eşleştirmelerinden hangisi EN UYGUN değildir?",
     "options": {
-      "A": "Tutarlarının çok küçük olması nedeniyle tek tek mamullere yüklenmesinin ekonomik açıdan uygun bulunmaması gerekçesiyledir",
-      "B": "Bu giderlerin hiçbir vergiye tabi olmaması ve dönem beyannamesine dahil edilmemesi gerektiği içindir",
-      "C": "Birden fazla mamul/gider yeri için ortak nitelikte olmaları ve tek bir mamulle doğrudan ilişkilendirilememeleri",
-      "D": "Bu giderlerin nakit olarak ödenmeyip yalnızca hesaben tahakkuk ettirilmesinden kaynaklanmaktadır",
-      "E": "Söz konusu giderlerin yalnızca yıl sonunda toplu biçimde ortaya çıkması ve o anda tahakkuk etmesindendir"
+      "A": "Makine amortismanı → makine çalışma saati",
+      "B": "Yemekhane gideri → personel (işçi) sayısı",
+      "C": "Bina kirası → makine adedi",
+      "D": "Bina kirası → kaplanan alan (m²)",
+      "E": "Aydınlatma gideri → aydınlatılan alan / lamba sayısı"
     },
     "answer": "C",
-    "solution": "GÜG'ler (kira, amortisman, endirekt malzeme/işçilik) **birden fazla mamul veya gider yeri için ortak** niteliktedir; tek bir mamulle doğrudan ilişkilendirilemedikleri için dağıtım anahtarlarıyla dağıtılıp yüklenir.",
+    "solution": "Kira için en uygun anahtar **kaplanan alandır**; makine adedi kira ile zayıf ilişkilidir. Diğer eşleştirmeler (aydınlatma→alan, amortisman→makine saati, yemekhane→işçi sayısı) uygundur. En uygunsuz: **kira → makine adedi**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-neden dağıtım; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - genel üretim giderleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım anahtarı seçimi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "mmuh-dagitim-gen-0048",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Maliyet muhasebesinde 'maliyet yeri' kavramı ile 'gider yeri' kavramı arasındaki ilişki için en doğru ifade hangisidir?",
+    "stem": "Yardımcı gider yerlerinin dağıtım yöntemleri için aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Doğrudan yöntem, yardımcı gider yerleri arası hizmeti ihmal eder.\n\nII. Matematiksel (karşılıklı) yöntem teorik olarak en doğru sonucu verir.\n\nIII. Kademeli yöntem karşılıklı hizmeti tam olarak dikkate alır.",
     "options": {
-      "A": "Tamamen farklı ve birbiriyle hiçbir ilgisi bulunmayan iki kavramdır; aralarında ortak hiçbir yön yoktur",
-      "B": "Gider yeri yalnızca işletmenin bankadaki mevduat hesabını ifade eden dar kapsamlı bir kavramdır",
-      "C": "Maliyet yeri kavramı yalnızca işletmenin satış ve pazarlama bölümünü kapsayan bir terimdir",
-      "D": "Büyük ölçüde eş anlamlı kullanılır; giderlerin/maliyetlerin toplandığı işletme bölümlerini ifade eder",
-      "E": "Her iki kavram da üretilen mamulün kendisini ifade eder; işletme bölümüyle bir ilgisi yoktur"
+      "A": "II ve III",
+      "B": "I, II ve III",
+      "C": "Yalnız I",
+      "D": "I ve II",
+      "E": "I ve III"
     },
     "answer": "D",
-    "solution": "**Maliyet yeri** ve **gider yeri** büyük ölçüde eş anlamlı kullanılır; her ikisi de giderlerin/maliyetlerin toplandığı, sorumluluk/faaliyet esaslı **işletme bölümlerini** ifade eder.",
+    "solution": "**I doğru** (doğrudan yöntem karşılıklı hizmeti ihmal eder). **III yanlış**: karşılıklı hizmeti TAM dikkate alan matematiksel yöntemdir; kademeli yöntem tek yönlüdür. **II doğru** (matematiksel yöntem en doğru). Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-maliyet yeri; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - maliyet/gider yeri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - dağıtım yöntemleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "mmuh-dagitim-gen-0049",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider yerleri genel olarak esas üretim, yardımcı üretim, yardımcı hizmet ve yönetim gider yerleri olarak gruplanır. Bu gruplandırmanın temel amacı aşağıdakilerden hangisidir?",
+    "stem": "Aşağıdakilerden hangisi 'endirekt malzeme' giderine örnektir?",
     "options": {
-      "A": "Giderleri niteliklerine ve üretimle ilişkilerine göre toplayıp maliyetlere doğru biçimde yüklemek ve sorumluluğu belirlemek",
-      "B": "Satış hasılatını artırmak ve pazarlama faaliyetlerini genişleterek işletmenin toplam pazar payını daha da yükseltmeyi hedefler",
-      "C": "Dönem sonunda vergi beyannamesi verme yükümlülüğünden yasal olarak tamamen muaf tutulmayı sağlamaktır",
-      "D": "İşletmede çalışan personel sayısını azaltarak toplam işçilik giderlerini önemli ölçüde düşürmeyi amaçlar",
-      "E": "Depodaki hammadde ve mamul stoklarını dönem sonunda fiziki olarak sayıp miktar olarak kayda geçirmektir"
+      "A": "Makinelerin bakımında kullanılan yağ ve temizlik malzemesi",
+      "B": "Mobilya üretiminde mamulün bünyesine doğrudan giren kereste",
+      "C": "Ekmek üretiminde hamurun ana maddesini oluşturan un",
+      "D": "Otomobil üretiminde gövdeyi oluşturan çelik sac levhalar",
+      "E": "Gömlek üretiminde doğrudan kullanılan pamuklu kumaş"
     },
     "answer": "A",
-    "solution": "Gider yerlerinin gruplandırılmasındaki amaç; giderleri **niteliklerine ve üretimle ilişkilerine göre** toplayıp mamullere doğru biçimde yüklemek, ayrıca **maliyet kontrolü ve sorumluluk** belirlemektir.",
+    "solution": "Kereste, un, kumaş, sac mamulün bünyesine giren **direkt ilk maddelerdir**. Makine yağı ve temizlik malzemesi mamule doğrudan girmez, üretime dolaylı katkı sağlar → **endirekt malzeme (GÜG)**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-gruplandırma amacı; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider yeri gruplandırma"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - endirekt malzeme"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,19 +1081,19 @@
     "id": "mmuh-dagitim-gen-0050",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "200.000 ₺ fabrika kirası, kapladıkları alana göre A esas üretim (250 m²), B esas üretim (150 m²) ve bakım yardımcı (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda bakım gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 300, B'ye 200 saat oranında dağıtıldığına göre A gider yerinin iki dağıtım sonrası toplamı kaç ₺'dir?",
+    "stem": "Bir dönemde toplam üretim maliyeti 260.000 ₺ olan işletme 1.300 birim mamul üretmiştir. İşletme birim maliyetin üzerine %25 kâr marjı ekleyerek satış fiyatı belirlediğine göre birim satış fiyatı kaç ₺'dir?",
     "options": {
-      "A": "100.000",
-      "B": "140.000",
-      "C": "120.000",
-      "D": "124.000",
-      "E": "104.000"
+      "A": "225",
+      "B": "160",
+      "C": "200",
+      "D": "250",
+      "E": "267"
     },
     "answer": "D",
-    "solution": "I. dağıtım: toplam alan 500 m²; A payı = 200.000 × (250 ÷ 500) = 100.000 ₺, bakım payı = 200.000 × (100 ÷ 500) = 40.000 ₺. II. dağıtım: bakımdan A'ya = 40.000 × (300 ÷ 500) = 24.000 ₺. A toplamı = 100.000 + 24.000 = **124.000 ₺**.",
+    "solution": "Birim üretim maliyeti = 260.000 ÷ 1.300 = 200 ₺. Satış fiyatı = 200 × (1 + %25) = 200 × 1,25 = **250 ₺**. (Maliyetin kendisi 200 ₺'dir; kâr marjı eklenmemiş olur.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -1103,19 +1103,19 @@
     "id": "mmuh-dagitim-gen-0051",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "180.000 ₺ tutarındaki ortak gider, üç esas üretim gider yerine 3 : 2 : 1 oranında dağıtılacaktır. En büyük payı alan gider yerinde dönemde 3.000 birim mamul üretildiğine göre bu gider yerinde birim başına düşen ortak gider kaç ₺'dir?",
+    "stem": "200.000 ₺ fabrika kirası, kapladıkları alana göre A esas üretim (250 m²), B esas üretim (150 m²) ve bakım yardımcı (100 m²) gider yerlerine dağıtılmıştır. İkinci dağıtımda bakım gider yerinin giderleri, verdiği makine saati hizmetine göre A'ya 300, B'ye 200 saat oranında dağıtıldığına göre A gider yerinin iki dağıtım sonrası toplamı kaç ₺'dir?",
     "options": {
-      "A": "20",
-      "B": "60",
-      "C": "30",
-      "D": "90.000",
-      "E": "10"
+      "A": "100.000",
+      "B": "120.000",
+      "C": "124.000",
+      "D": "140.000",
+      "E": "104.000"
     },
     "answer": "C",
-    "solution": "Oran toplamı = 3 + 2 + 1 = 6 pay; bir payın değeri = 180.000 ÷ 6 = 30.000 ₺. En büyük pay (3 birim) = 3 × 30.000 = 90.000 ₺. Birim başına = 90.000 ÷ 3.000 = **30 ₺**. (Toplam gideri doğrudan bölmek 60 ₺ verir — yanlış.)",
+    "solution": "I. dağıtım: toplam alan 500 m²; A payı = 200.000 × (250 ÷ 500) = 100.000 ₺, bakım payı = 200.000 × (100 ÷ 500) = 40.000 ₺. II. dağıtım: bakımdan A'ya = 40.000 × (300 ÷ 500) = 24.000 ₺. A toplamı = 100.000 + 24.000 = **124.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
       "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
@@ -1125,20 +1125,20 @@
     "id": "mmuh-dagitim-gen-0052",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir ortak gider, üç gider yerine 3 : 2 : 1 oranında dağıtılmıştır. En büyük payı alan gider yerine 90.000 ₺ düştüğüne göre dağıtıma tabi toplam ortak gider kaç ₺'dir?",
+    "stem": "Tek Düzen Hesap Planı'nda (7/A seçeneği) genel üretim giderlerinin izlendiği hesap aşağıdakilerden hangisidir?",
     "options": {
-      "A": "270.000",
-      "B": "90.000",
-      "C": "150.000",
-      "D": "540.000",
-      "E": "180.000"
+      "A": "770 GENEL YÖNETİM GİDERLERİ",
+      "B": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ",
+      "C": "720 DİREKT İŞÇİLİK GİDERLERİ",
+      "D": "760 PAZARLAMA SATIŞ VE DAĞITIM GİDERLERİ",
+      "E": "730 GENEL ÜRETİM GİDERLERİ"
     },
     "answer": "E",
-    "solution": "En büyük pay, toplam 6 payın 3'ünü (yarısını) alır: 90.000 = Toplam × (3 ÷ 6). Buradan toplam ortak gider = 90.000 ÷ 0,5 = **180.000 ₺**. (Bir payın değeri 90.000 ÷ 3 = 30.000 ₺'dir; 6 pay × 30.000 = 180.000 ₺ ile aynı sonuç.)",
+    "solution": "7/A seçeneğinde: **710** DİMM, **720** direkt işçilik, **730 GENEL ÜRETİM GİDERLERİ**, 760 pazarlama-satış-dağıtım, 770 genel yönetim. GÜG için doğru hesap **730**'dur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "TDHP 730 Genel Üretim Giderleri"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "mmuh-dagitim-gen-0053",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Birinci dağıtım tablosunda satırlar ve sütunlar genellikle neyi gösterir?",
+    "stem": "Bir esas üretim gider yerinin genel üretim gideri 150.000 ₺, toplam direkt işçilik gideri 300.000 ₺'dir. Bu gider yerinde üretilen X mamulünün direkt ilk madde ve malzeme gideri 30.000 ₺, direkt işçilik gideri 24.000 ₺ olduğuna göre X mamulünün toplam üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Satırlar üretilen mamulleri, sütunlar ise bu mamulleri satın alan müşterileri gösterir",
-      "B": "Satırlar gider türlerini (kira, amortisman, enerji…), sütunlar gider yerlerini gösterir",
-      "C": "Satırlar giderin yapıldığı tarihleri, sütunlar ise bu tarihlerdeki gider tutarlarını gösterir",
-      "D": "Satırlar işletmenin banka hesaplarını, sütunlar ise düzenlenen çek ve senetleri gösterir",
-      "E": "Satırlar dönem içi satışları, sütunlar ise müşterilerden gelen satış iadelerini gösterir"
+      "A": "60.000",
+      "B": "66.000",
+      "C": "54.000",
+      "D": "78.000",
+      "E": "12.000"
     },
     "answer": "B",
-    "solution": "Birinci dağıtım tablosunda genellikle **satırlar gider türlerini** (kira, amortisman, enerji, endirekt malzeme…), **sütunlar gider yerlerini** gösterir; her ortak gider anahtarına göre gider yerlerine dağıtılır.",
+    "solution": "Direkt işçilik esaslı yükleme oranı = 150.000 ÷ 300.000 = %50. X'e yüklenen GÜG = 24.000 × %50 = 12.000 ₺. Toplam üretim maliyeti = 30.000 + 24.000 + 12.000 = **66.000 ₺**. (GÜG'ü atlamak 54.000 ₺ verir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-dağıtım tablosu; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - birinci dağıtım tablosu"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "mmuh-dagitim-gen-0054",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Tek Düzen Hesap Planı'nda (7/A seçeneği) genel üretim giderlerinin izlendiği hesap aşağıdakilerden hangisidir?",
+    "stem": "Gider dağıtımı konusuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Genel üretim giderleri mamullere doğrudan izlenebildiği için dağıtıma tabi tutulmaz.\n\nII. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır.\n\nIII. Yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü.",
     "options": {
-      "A": "710 DİREKT İLK MADDE VE MALZEME GİDERLERİ",
-      "B": "720 DİREKT İŞÇİLİK GİDERLERİ",
-      "C": "770 GENEL YÖNETİM GİDERLERİ",
-      "D": "760 PAZARLAMA SATIŞ VE DAĞITIM GİDERLERİ",
-      "E": "730 GENEL ÜRETİM GİDERLERİ"
+      "A": "I ve III",
+      "B": "Yalnız I",
+      "C": "I, II ve III",
+      "D": "I ve II",
+      "E": "II ve III"
     },
     "answer": "E",
-    "solution": "7/A seçeneğinde: **710** DİMM, **720** direkt işçilik, **730 GENEL ÜRETİM GİDERLERİ**, 760 pazarlama-satış-dağıtım, 770 genel yönetim. GÜG için doğru hesap **730**'dur.",
+    "solution": "**I yanlıştır:** Genel üretim giderleri **endirekt** nitelikte olup mamullere **doğrudan izlenemez**; bu nedenle gider yerlerinde toplanıp dağıtım/yükleme yoluyla mamullere aktarılır. **II** ikinci dağıtım sonunda yardımcı gider yerleri sıfırlanır; **III** yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü. Doğru cevap **II ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (TDHP-7/A; sınav stiline kalibre)",
-      "legislationRef": "TDHP 730 Genel Üretim Giderleri"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "mmuh-dagitim-gen-0055",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "A esas üretim gider yerinin birinci dağıtım payı 120.000 ₺'dir; ikinci dağıtımda iki yardımcı gider yerinden sırasıyla 25.000 ₺ ve 35.000 ₺ pay aktarılmıştır. Bu gider yerinde dönemde 9.000 makine saati çalışıldığına göre makine saati esaslı yükleme oranı kaç ₺/saattir?",
+    "stem": "Bir işletmede birinci dağıtım sonunda Bakım yardımcı gider yerinde 10.000 ₺, Yemekhane yardımcı gider yerinde 17.000 ₺ toplanmıştır. Yardımcı gider yerlerinin verdiği hizmet oranları şöyledir:\n\n| Hizmet veren | Bakım | Yemekhane | Kesim | Montaj |\n|---|---|---|---|---|\n| Bakım (10.000 ₺) | — | %20 | %60 | %20 |\n| Yemekhane (17.000 ₺) | %25 | — | %30 | %45 |\n\nİşletme ikinci dağıtımda doğrudan (basit) dağıtım yöntemini kullanmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtımdan aldığı toplam pay kaç ₺'dir?",
     "options": {
-      "A": "13,33",
-      "B": "20",
-      "C": "6,67",
-      "D": "180.000",
-      "E": "15"
+      "A": "15.000 ₺",
+      "B": "14.300 ₺",
+      "C": "17.700 ₺",
+      "D": "7.500 ₺",
+      "E": "11.100 ₺"
     },
     "answer": "B",
-    "solution": "A'nın ikinci dağıtım sonrası toplam GÜG'ü = 120.000 + 25.000 + 35.000 = 180.000 ₺. Yükleme oranı = 180.000 ÷ 9.000 = **20 ₺/makine saati**. (Yalnız I. dağıtım payıyla 13,33 ₺ bulunur — ikinci dağıtım payları eklenmelidir.)",
+    "solution": "Doğrudan yöntemde yardımcı gider yerlerinin birbirine verdiği hizmet yok sayılır; oranlar yalnız esas gider yerleri arasında yeniden hesaplanır. Bakım: 10.000 × 60/80 = 7.500 ₺; Yemekhane: 17.000 × 30/75 = 6.800 ₺. Toplam **14.300 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım (doğrudan yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "mmuh-dagitim-gen-0056",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Birinci dağıtım sonunda tüm gider yerlerinde toplam 500.000 ₺ gider birikmiştir. İkinci dağıtım (yardımcı → esas) tamamlandığında esas üretim gider yerlerindeki giderlerin toplamı kaç ₺ olur?",
+    "stem": "Bir işletmenin birinci dağıtım sonuçları ve dağıtım ölçüleri şöyledir:\n\n| Gider yeri | I. dağıtım toplamı | Çalışan sayısı | Bakım saati |\n|---|---|---|---|\n| Yemekhane (YGY) | 20.000 ₺ | 10 | — |\n| Bakım (YGY) | 30.000 ₺ | 20 | — |\n| Kesim (EÜGY) | 100.000 ₺ | 50 | 60 |\n| Montaj (EÜGY) | 80.000 ₺ | 30 | 40 |\n\nYemekhane giderleri çalışan sayısına, Bakım giderleri bakım saatine göre dağıtılmaktadır. İşletme kademeli dağıtım yöntemini kullanmakta ve önce daha fazla gider yerine hizmet veren Yemekhane'yi dağıtmaktadır. Buna göre Kesim esas üretim gider yerinin ikinci dağıtım sonrası toplam gideri kaç ₺'dir?",
     "options": {
-      "A": "Belirlenemez",
-      "B": "250.000",
-      "C": "1.000.000",
-      "D": "0",
-      "E": "500.000"
+      "A": "128.000 ₺",
+      "B": "110.000 ₺",
+      "C": "130.500 ₺",
+      "D": "99.600 ₺",
+      "E": "130.400 ₺"
     },
     "answer": "E",
-    "solution": "İkinci dağıtım bir aktarma olduğundan toplam değişmez; yardımcı gider yerleri sıfırlanıp giderleri esas üretim gider yerlerine aktarılır. Bu nedenle esas üretim gider yerlerindeki toplam = **500.000 ₺** (I. dağıtım toplamının tamamı).",
+    "solution": "Yemekhane 20.000 ₺'yi kendi çalışanları hariç hizmet verdiği Bakım (20), Kesim (50) ve Montaj (30) arasında, toplam 100 kişi üzerinden dağıtır: Kesim 20.000 × 50/100 = 10.000 ₺, Bakım 20.000 × 20/100 = 4.000 ₺. Bakım'ın yeni toplamı 34.000 ₺; bakım saatine göre Kesim'e 34.000 × 60/100 = 20.400 ₺. Kesim toplamı 100.000 + 30.400 = **130.400 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-toplam kontrol; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - ikinci dağıtım (kademeli yöntem)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "mmuh-dagitim-gen-0057",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Bir esas üretim gider yerinin genel üretim gideri 150.000 ₺, toplam direkt işçilik gideri 300.000 ₺'dir. Bu gider yerinde üretilen X mamulünün direkt ilk madde ve malzeme gideri 30.000 ₺, direkt işçilik gideri 24.000 ₺ olduğuna göre X mamulünün toplam üretim maliyeti kaç ₺'dir?",
+    "stem": "Kesim esas üretim gider yerinde üretim işçileri için toplam 20.000 ₺ fazla çalışma ücreti ve fazla çalışma zammı tahakkuk etmiştir. Fazla çalışma belirli bir sipariş için değil, bayram öncesi genel iş yoğunluğunu karşılamak için yaptırılmıştır; tutarın 7.000 ₺'si fazla çalışma zammıdır. Buna göre muhasebeleştirmeyle ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "66.000",
-      "B": "54.000",
-      "C": "78.000",
-      "D": "12.000",
-      "E": "60.000"
+      "A": "13.000 ₺ direkt işçilik, 7.000 ₺ genel üretim gideri olarak kaydedilir",
+      "B": "20.000 ₺'nin tamamı direkt işçilik olarak kaydedilir",
+      "C": "20.000 ₺'nin tamamı genel üretim gideri olarak kaydedilir",
+      "D": "7.000 ₺ direkt işçilik, 13.000 ₺ genel üretim gideri olarak kaydedilir",
+      "E": "7.000 ₺ zam genel yönetim gideri olarak kaydedilir"
     },
     "answer": "A",
-    "solution": "Direkt işçilik esaslı yükleme oranı = 150.000 ÷ 300.000 = %50. X'e yüklenen GÜG = 24.000 × %50 = 12.000 ₺. Toplam üretim maliyeti = 30.000 + 24.000 + 12.000 = **66.000 ₺**. (GÜG'ü atlamak 54.000 ₺ verir.)",
+    "solution": "Üretim işçisinin fazla çalışmaya ait normal ücreti (13.000 ₺) direkt işçiliktir. Zam kısmı belirli bir mamulün değil genel yoğunluğun sonucu olduğundan mamullere ortak yüklenir; **genel üretim gideridir** (7.000 ₺). Zam belirli bir siparişin acil teslimi için yapılsaydı o siparişe direkt yüklenebilirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (çok adımlı hesap; 2024-2026 sınav zorluğuna kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı (çok adımlı)"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - direkt ve endirekt işçilik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "mmuh-dagitim-gen-0058",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Direkt işçilik esaslı GÜG yükleme oranı %50 olan bir gider yerinde, X mamulünün direkt işçiliği 40.000 ₺'dir. X mamulüne yüklenecek genel üretim gideri kaç ₺'dir?",
+    "stem": "Bir işletmede Kesim gider yerinde genel üretim giderleri makine saati başına 20 ₺, Montaj gider yerinde ise direkt işçiliğin %80'i oranında yüklenmektedir. X siparişi için Kesim'de 50 makine saati çalışılmış, Montaj'da 10.000 ₺ direkt işçilik harcanmıştır. Siparişin direkt ilk madde ve malzeme gideri 30.000 ₺, toplam direkt işçiliği ise 16.000 ₺'dir. Buna göre X siparişinin üretim maliyeti kaç ₺'dir?",
     "options": {
-      "A": "50.000",
-      "B": "80.000",
-      "C": "40.000",
-      "D": "20.000",
-      "E": "2.000"
+      "A": "49.000 ₺",
+      "B": "47.000 ₺",
+      "C": "46.000 ₺",
+      "D": "55.000 ₺",
+      "E": "59.800 ₺"
     },
     "answer": "D",
-    "solution": "Yüklenen GÜG = direkt işçilik × yükleme oranı = 40.000 × %50 = 40.000 × 0,50 = **20.000 ₺**.",
+    "solution": "GÜG: Kesim 20 × 50 = 1.000 ₺; Montaj %80 × 10.000 = 8.000 ₺; toplam 9.000 ₺. Üretim maliyeti 30.000 + 16.000 + 9.000 = **55.000 ₺**. Montaj oranı yalnız Montaj'daki direkt işçiliğe uygulanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (hesaplama-mamule yükleme; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - yükleme"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - GÜG yükleme"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "mmuh-dagitim-gen-0059",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımında aşamaların doğru sıralaması aşağıdakilerden hangisidir?",
+    "stem": "Bir esas üretim gider yerinde yıllık tahmini genel üretim gideri 240.000 ₺, tahmini direkt işçilik gideri 400.000 ₺'dir; genel üretim giderleri direkt işçiliğe göre yüklenmektedir. Y siparişinin bu gider yerindeki direkt işçiliği 25.000 ₺, direkt ilk madde ve malzemesi 40.000 ₺'dir. Buna göre Y siparişine bu gider yerinden yüklenecek genel üretim gideri kaç ₺'dir?",
     "options": {
-      "A": "Önce mamullere yükleme yapılır, ardından ortak giderlerin I. dağıtımı ve en son olarak da yardımcıdan esasa II. dağıtım gerçekleştirilir",
-      "B": "Giderlerin gider yerlerinde toplanması → I. dağıtım (ortak giderler → gider yerleri) → II. dağıtım (yardımcı → esas) → mamullere yükleme",
-      "C": "Önce II. dağıtım yapılır, sonra mamullere yükleme ve en sonda ortak giderlerin gider yerlerine I. dağıtımı yapılır",
-      "D": "Diğer aşamalara hiç gerek olmadan yalnızca I. dağıtımın yapılması mamul maliyetinin bulunması için yeterlidir",
-      "E": "Önce mamullere yükleme yapılır, giderlerin gider yerlerinde toplanması ve dağıtımı işlemleri en sona bırakılır"
+      "A": "25.000 ₺",
+      "B": "15.000 ₺",
+      "C": "24.000 ₺",
+      "D": "10.000 ₺",
+      "E": "39.000 ₺"
     },
     "answer": "B",
-    "solution": "Doğru sıra: giderlerin gider yerlerinde toplanması → **I. dağıtım** (ortak giderler gider yerlerine) → **II. dağıtım** (yardımcı gider yerleri → esas üretim gider yerlerine) → **mamullere yükleme**.",
+    "solution": "Yükleme oranı 240.000 / 400.000 = %60. Y siparişine 25.000 × %60 = **15.000 ₺** yüklenir. Oran direkt işçiliğe göre belirlendiği için direkt ilk madde tutarı hesaba girmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (kavram-aşama sırası; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - dağıtım aşamaları"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - GÜG yükleme oranı"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "mmuh-dagitim-gen-0060",
     "ders": "maliyet_muhasebesi",
     "konu": "gider_dagitimi",
-    "stem": "Gider dağıtımı konusuyla ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Genel üretim giderleri mamullere doğrudan izlenebildiği için dağıtıma tabi tutulmaz.\n\nII. İkinci dağıtım sonunda yardımcı gider yerlerinin bakiyesi sıfırlanır.\n\nIII. Yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü.",
+    "stem": "Bir işletmede 150.000 ₺ kira gideri kapladıkları alana, 40.000 ₺ aydınlatma gideri lamba sayısına göre dağıtılmaktadır:\n\n| Gider yeri | Alan (m²) | Lamba sayısı |\n|---|---|---|\n| A (EÜGY) | 500 | 20 |\n| B (EÜGY) | 300 | 14 |\n| C (YGY) | 200 | 6 |\n\nBuna göre C yardımcı gider yerine birinci dağıtımda düşen toplam pay kaç ₺'dir?",
     "options": {
-      "A": "I, II ve III",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "Yalnız I"
+      "A": "59.000 ₺",
+      "B": "38.000 ₺",
+      "C": "36.000 ₺",
+      "D": "28.500 ₺",
+      "E": "30.000 ₺"
     },
     "answer": "C",
-    "solution": "**I yanlıştır:** Genel üretim giderleri **endirekt** nitelikte olup mamullere **doğrudan izlenemez**; bu nedenle gider yerlerinde toplanıp dağıtım/yükleme yoluyla mamullere aktarılır. **II** ikinci dağıtım sonunda yardımcı gider yerleri sıfırlanır; **III** yükleme oranı = esas gider yeri GÜG'ü ÷ dağıtım ölçüsü. Doğru cevap **II ve III**.",
+    "solution": "Kira 150.000 × 200/1.000 = 30.000 ₺; aydınlatma 40.000 × 6/40 = 6.000 ₺. Toplam **36.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Maliyet Muhasebesi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Maliyet muhasebesi - gider dağıtımı"
+      "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
+      "legislationRef": "Maliyet muhasebesi - birinci dağıtım"
     },
     "validYear": 2026,
     "mockExamId": null
