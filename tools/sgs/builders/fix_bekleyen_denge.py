@@ -81,44 +81,6 @@ YAMALAR = {
             "; alacaklılardan birine yapılan ödeme borçluyu kurtarmaz"
         ]
     },
-    "borclar_hukuku/sebepsiz_zenginlesme.json": {
-        "0005|C": [
-            "ek",
-            "; iyiniyetli olsa dahi bu yol kapalıdır"
-        ],
-        "0011|A": [
-            "yaz",
-            "Hukuka ya da ahlaka aykırı bir sonucun gerçekleşmesi amacıyla verilen şey, veren kişi tarafından tam olarak geri istenebilir; verenin amacı bu talebi engellemez"
-        ],
-        "0014|A": [
-            "ek",
-            "; iade sırasında yapılan giderler de kapsam dışında kalır"
-        ],
-        "0029|D": [
-            "ek",
-            "; zamanaşımı def'i talebi tümüyle sona erdirir"
-        ],
-        "0036|D": [
-            "ek",
-            "; fakirleşenin durumu öğrenmesi süreyi başlatmaz"
-        ],
-        "0039|A": [
-            "ek",
-            "; zenginleşmenin ölçüsü yalnızca ispat kolaylığı sağlar"
-        ],
-        "0045|B": [
-            "ek",
-            "; öğrenme tarihi yalnızca on yıllık süre bakımından önem taşır"
-        ],
-        "0051|A": [
-            "ek",
-            "; kullanım karşılığı ayrı bir sebebe dayandırılamaz"
-        ],
-        "0056|B": [
-            "ek",
-            "; iyiniyet yalnızca yapılan giderlerin istenmesinde etkili olur"
-        ]
-    },
     "borclar_hukuku/temerrut_tazminat.json": {
         "0001|E": [
             "ek",

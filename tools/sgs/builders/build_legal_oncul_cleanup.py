@@ -52,13 +52,6 @@ PATCHES = {
             "Cezai şart asıl borca bağlı fer'i bir borçtur (I). Alacaklı zarara uğramamış olsa da kararlaştırılan cezayı isteyebileceğinden II; hâkim aşırı gördüğü cezayı kendiliğinden indirebildiğinden III yanlıştır. Doğru cevap **Yalnız I**.",
         ),
     },
-    "content/borclar_hukuku/sebepsiz_zenginlesme.json": {
-        "sebzen-gen-0028": p(
-            "Aşağıdakilerden hangileri sebepsiz zenginleşmenin unsurlarındandır?\n\nI. Bir tarafın zenginleşmesi\n\nII. Zenginleşenin mutlaka kusurlu olması\n\nIII. Zenginleşenin haksız fiil işlemiş olması",
-            "A",
-            "Bir tarafın zenginleşmesi sebepsiz zenginleşmenin unsurudur (I). İade borcu için zenginleşenin kusurlu olması (II) veya haksız fiil işlemesi (III) aranmaz. Doğru cevap **Yalnız I**.",
-        ),
-    },
 }
 
 
