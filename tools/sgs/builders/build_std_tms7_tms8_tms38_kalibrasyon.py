@@ -34,43 +34,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 LESSON = "muhasebe_standartlari"
-TOPICS = ("tms_7_nakit_akis", "tms_38_modv")  # tms_8: build_std_tms8_yapisal.py
+TOPICS = ("tms_38_modv",)  # tms_8: build_std_tms8_yapisal.py · tms_7: build_std_tms7_onarim.py
 TL = re.compile(r"(\d)\s*TL\b")
 TL_WORD = re.compile(r"\bTL\b")
 ANSWER_TAIL = re.compile(r"\s*Doğru\s+(?:cevap|seçenek)\s+[A-E]\.\s*$")
 
 
 STEMS = {
-    "tms_7_nakit_akis": {
-        "std-tms7-gen-0001": "TMS 7'nin temel amacı aşağıdakilerden hangisidir?",
-        "std-tms7-gen-0002": "Nakit akış tablosu kullanıcılara öncelikle hangi değerlendirmeyi yapma imkânı verir?",
-        "std-tms7-gen-0003": "Aşağıdaki nakit ve nakit benzeri tanımlarından hangisi TMS 7'ye uygundur?",
-        "std-tms7-gen-0004": "Bir yatırımın nakit benzeri sayılabilmesi için hangi amaçla elde tutulması gerekir?",
-        "std-tms7-gen-0005": "Özkaynağa dayalı bir finansal araç hangi durumda nakit benzeri kabul edilebilir?",
-        "std-tms7-gen-0006": "Vadesiz hesaba bağlı ve bakiyesi sık sık artı-eksi arasında değişen borçlu cari hesap nasıl sınıflandırılabilir?",
-        "std-tms7-gen-0007": "Kasadaki paranın vadesiz mevduata yatırılması nakit akış tablosunda nasıl gösterilir?",
-        "std-tms7-gen-0008": "Nakit akışları hangi üç faaliyet grubunda raporlanır?",
-        "std-tms7-gen-0009": "Esas faaliyetler TMS 7'de nasıl tanımlanır?",
-        "std-tms7-gen-0011": "Özkaynak ve borçlanma yapısını değiştiren nakit akışları hangi faaliyet grubunda raporlanır?",
-        "std-tms7-gen-0013": "Mal ve hizmet satışından doğan nakit tahsilatları hangi faaliyet grubunda yer alır?",
-        "std-tms7-gen-0014": "Stok tedarikçilerine yapılan nakit ödemeler nasıl sınıflandırılır?",
-        "std-tms7-gen-0015": "Üretimde kullanılacak bir makine için yapılan nakit ödeme hangi faaliyet grubundadır?",
-        "std-tms7-gen-0016": "Kullanılmış bir maddi duran varlığın satışından sağlanan nakit nasıl sınıflandırılır?",
-        "std-tms7-gen-0017": "Pay ihracından sağlanan nakit hangi faaliyet grubunda raporlanır?",
-        "std-tms7-gen-0018": "Kredi alınması ve kredi anaparasının geri ödenmesi nakit akış tablosunda nasıl gösterilir?",
-        "std-tms7-gen-0019": "Faiz ve kâr payı nakit akışlarının sınıflandırılmasında hangi ilke uygulanır?",
-        "std-tms7-gen-0020": "Gelir üzerinden alınan vergilere ilişkin nakit ödemeler kural olarak hangi faaliyet grubundadır?",
-        "std-tms7-gen-0021": "Ortaklara ödenen kâr payları TMS 7'ye göre nasıl sınıflandırılabilir?",
-        "std-tms7-gen-0023": "Borcu pay vererek özkaynağa dönüştüren işletme bu işlemi nasıl raporlar?",
-        "std-tms7-gen-0024": "Yabancı para cinsinden bir nakit akışı hangi kurla çevrilir?",
-        "std-tms7-gen-0029": "Esas faaliyetlerden kaynaklanan nakit akışları hangi yöntemlerle sunulabilir?",
-        "std-tms7-gen-0031": "Dolaylı yöntemde esas faaliyet nakit akışına hangi tutardan başlanır?",
-        "std-tms7-gen-0032": "Dolaylı yöntemde amortisman gideri dönem kârına nasıl yansıtılır?",
-        "std-tms7-gen-0033": "Ticari alacaklardaki artış dolaylı yöntem hesabını nasıl etkiler?",
-        "std-tms7-gen-0034": "Ticari borçlardaki artış dolaylı yöntem hesabını nasıl etkiler?",
-        "std-tms7-gen-0035": "Maddi duran varlık satış kârı dolaylı yöntemde dönem kârına nasıl uygulanır?",
-        "std-tms7-gen-0041": "Yatırım ve finansman faaliyetlerindeki nakit giriş ve çıkışları için genel sunum kuralı hangisidir?",
-    },
     "tms_38_modv": {
         "std-tms38-gen-0002": "Maddi olmayan duran varlık tanımının üç temel unsuru hangileridir?",
         "std-tms38-gen-0003": "Bir maddi olmayan duran varlık hangi durumda tanımlanabilir kabul edilir?",
@@ -123,73 +93,6 @@ def full(stem: str, options: dict[str, str], answer: str, solution: str, standar
 
 
 FULL_PATCHES = {
-    "tms_7_nakit_akis": {
-        "std-tms7-gen-0010": full(
-            "Aşağıdakilerden hangisi TMS 7'ye göre yatırım faaliyetlerinden kaynaklanan nakit akışı DEĞİLDİR?",
-            {
-                "A": "Üretimde kullanılacak makinenin peşin bedeli",
-                "B": "Patent edinimi için yapılan nakit ödeme",
-                "C": "Finansal kuruluş olmayan işletmenin üçüncü kişiye verdiği nakit avans",
-                "D": "Uzun vadeli yatırımın satışından sağlanan nakit",
-                "E": "Satılmak üzere alınan stoklar için tedarikçiye yapılan ödeme",
-            },
-            "E",
-            "TMS 7 par. 14-16 uyarınca stok tedarikçisine yapılan ödeme esas faaliyet nakit akışıdır. Makine ve patent edinimi, uzun vadeli yatırım satışı ile finansal kuruluş olmayan bir işletmenin üçüncü kişilere verdiği avanslar yatırım faaliyeti kapsamında değerlendirilir.",
-            "TMS 7 Nakit Akis Tablosu",
-        ),
-        "std-tms7-gen-0022": full(
-            "Aşağıdakilerden hangisi nakit akışı yaratmayan yatırım veya finansman işlemi DEĞİLDİR?",
-            {
-                "A": "Makinenin işletmenin çıkardığı paylar karşılığında edinilmesi",
-                "B": "Finansal borcun özkaynağa dönüştürülmesi",
-                "C": "Bir varlığın kiralama yoluyla edinilmesi",
-                "D": "Üretim makinesinin bedelinin banka hesabından ödenmesi",
-                "E": "Başka bir işletmenin yalnızca pay ihracı yoluyla edinilmesi",
-            },
-            "D",
-            "TMS 7 par. 43-44: pay ihracıyla varlık edinimi, borcun özkaynağa dönüşmesi, kiralama yoluyla edinim ve pay ihracıyla işletme edinimi nakit kullanmaz; nakit akış tablosu dışında açıklanır. Makine bedelinin banka hesabından ödenmesi ise yatırım faaliyetinden nakit çıkışıdır.",
-            "TMS 7 Nakit Akis Tablosu",
-        ),
-        "std-tms7-gen-0025": full(
-            "Yabancı para nakit üzerindeki kur etkisinin sunumuna ilişkin aşağıdakilerden hangisi YANLIŞTIR?",
-            {
-                "A": "Kur değişiminden doğan gerçekleşmemiş fark finansman faaliyetinden nakit akışıdır",
-                "B": "Kur etkisi esas, yatırım ve finansman nakit akışlarından ayrı gösterilir",
-                "C": "Kur etkisi dönem başı ve dönem sonu nakdin uzlaştırılmasına dâhil edilir",
-                "D": "Gerçekleşmemiş kur farkı kendi başına nakit akışı değildir",
-                "E": "Yabancı para nakit akışı işlem tarihindeki kura yakın bir kurla çevrilebilir",
-            },
-            "A",
-            "TMS 7 par. 25-28: yabancı para nakit akışları işlem tarihindeki kurla çevrilir. Kur değişiminin yabancı para nakit ve nakit benzerleri üzerindeki gerçekleşmemiş etkisi nakit akışı değildir; uzlaştırma amacıyla üç faaliyet grubundan ayrı sunulur.",
-            "TMS 7 Nakit Akis Tablosu",
-        ),
-        "std-tms7-gen-0030": full(
-            "Doğrudan yöntemle ilgili aşağıdakilerden hangisi YANLIŞTIR?",
-            {
-                "A": "Brüt nakit tahsilat ve ödemelerin ana grupları açıklanır",
-                "B": "Gerekli bilgiler işletmenin muhasebe kayıtlarından elde edilebilir",
-                "C": "Satışlar ve satışların maliyeti işletme sermayesi değişimlerine göre düzeltilebilir",
-                "D": "Dönem kârına amortisman ve işletme sermayesi düzeltmeleri uygulanarak sonuca ulaşılır",
-                "E": "TMS 7 doğrudan yöntemin kullanılmasını teşvik eder",
-            },
-            "D",
-            "Dönem kârına amortisman, tahakkuk ve işletme sermayesi düzeltmeleri uygulanması dolaylı yöntemin özelliğidir. TMS 7 par. 18-19 uyarınca doğrudan yöntemde brüt nakit tahsilat ve ödeme grupları açıklanır ve bu yöntemin kullanılması teşvik edilir.",
-            "TMS 7 Nakit Akis Tablosu",
-        ),
-        "std-tms7-gen-0049": full(
-            "Grup tarafından kullanılamayan önemli nakit bakiyelerine ilişkin aşağıdakilerden hangisi YANLIŞTIR?",
-            {
-                "A": "Tutar finansal tablolarda açıklanır",
-                "B": "Kullanımı engelleyen koşullar hakkında bilgi verilir",
-                "C": "Kambiyo kontrolü veya yasal kısıtlama kullanım engeline örnek olabilir",
-                "D": "Nakit tanımını karşıladığı için kullanım kısıtı açıklanmaz",
-                "E": "Açıklama, kullanıcıların işletmenin likiditesini değerlendirmesine yardımcı olur",
-            },
-            "D",
-            "TMS 7 par. 48-49, grup tarafından kullanılamayan önemli nakit ve nakit benzeri bakiyelerinin tutarı ile yönetimin açıklamasının sunulmasını ister. Kambiyo kontrolleri ve yasal kısıtlamalar bu duruma örnek olabilir.",
-            "TMS 7 Nakit Akis Tablosu",
-        ),
-    },
     "tms_38_modv": {
         "std-tms38-gen-0001": full(
             "Aşağıdakilerden hangisi TMS 38'deki maddi olmayan duran varlık tanımını KARŞILAMAZ?",

@@ -635,33 +635,6 @@ KAVRAM_UZAT = {
     "std-cerceve-gen-0017": {"B": "Bilginin hiçbir dış kaynakla karşılaştırılamaması doğrulanabilirliği artırır; farklı gözlemcilerin aynı sonuca ulaşması gerçeğe uygunluğun ölçütü değildir"},
 }
 
-# ── TMS 7 · Nakit Akış Tablosu ────────────────────────────────────────────────
-TMS7_OZEL = {
-    "std-tms7-gen-0003": "Nakit yalnızca kasadaki fiziki parayı ifade eder; vadesiz mevduat ve nakit benzerleri bu kapsama girmez",
-    "std-tms7-gen-0005": "Özkaynağa dayalı finansal araçlar her hâlde nakit benzeri sayılır ve nakit akış tablosuna dâhil edilir",
-    "std-tms7-gen-0009": "İşletme faaliyetleri, işletmenin yalnızca duran varlık alım ve satımından doğan nakit akışlarını kapsar",
-    "std-tms7-gen-0011": "Finansman faaliyetleri, işletmenin esas gelir getirici mal ve hizmet satışlarından doğan nakit akışlarıdır",
-    "std-tms7-gen-0019": "Faiz ve kâr payı akışları her hâlde işletme faaliyeti olarak sınıflandırılır; başka bir sınıfa alınamaz",
-    "std-tms7-gen-0022": "Nakit gerektirmeyen yatırım ve finansman işlemleri de nakit akış tablosunun ilgili bölümlerinde gösterilir",
-    "std-tms7-gen-0029": "İşletme faaliyetlerinden nakit akışları yalnızca dolaylı yöntemle sunulabilir; doğrudan yönteme izin verilmez",
-    "std-tms7-gen-0030": "Doğrudan yöntemde dönem kârı, gayrinakdi kalemler için düzeltilerek nakit akışına ulaşılır",
-    "std-tms7-gen-0041": "Nakit akışları kural olarak netleştirilerek tek bir tutar hâlinde raporlanır; brüt gösterim istisnadır",
-    "std-tms7-gen-0048": "Nakit akış tablosundaki tutarlar ile finansal durum tablosundaki nakit kalemlerinin uzlaştırılması gerekmez",
-    "std-tms7-gen-0049": "Grup tarafından kullanılamayan nakit de serbestçe kullanılabilir nakit gibi tabloya dâhil edilir ve ayrıca açıklanmaz",
-}
-TMS7_UZAT = {  # doğru şıklar çok uzun (ort 83); 20 en-uzundan 11'i dengelendi
-    "std-tms7-gen-0005": {"E": "Özkaynağa dayalı finansal araçlar her hâlde nakit benzeri sayılır ve edinim tarihindeki vadesine bakılmaksızın nakit ve nakit benzerleri kapsamına dâhil edilir"},
-    "std-tms7-gen-0052": {"B": "İşletme faaliyetlerinden nakit akışı, işletmenin performansını yansıtan tek göstergedir; yatırım ve finansman akışları bu değerlendirmede hiçbir biçimde dikkate alınmaz"},
-    "std-tms7-gen-0006": {"C": "Banka kredileri nakit akış tablosunda hiçbir biçimde yer almaz; yalnızca finansal durum tablosunda gösterilir ve nakit hareketleri tabloya hiç yansıtılmaz"},
-    "std-tms7-gen-0010": {"C": "İşletmenin yalnızca stok alım ve satımını kapsayan dar bir bölümdür; hizmet üretimi ve esas faaliyetten doğan gelirler işletme faaliyeti olarak sayılmaz"},
-    "std-tms7-gen-0020": {"B": "Gelir vergisi ödemeleri her hâlde ve istisnasız finansman faaliyeti olarak sınıflandırılır; işletme faaliyetiyle ilişkilendirilmeleri hiçbir koşulda mümkün değildir"},
-    "std-tms7-gen-0025": {"B": "Kur farkı yatırım faaliyeti olarak sınıflandırılır; gerçekleşmemiş kur farkları da nakit hareketi sayılarak ayrı bir kalemde nakit akış olarak raporlanır"},
-    "std-tms7-gen-0051": {"B": "Nakit akış tablosu düzenlenmesi tümüyle isteğe bağlıdır; işletme bu tabloyu hazırlamak yerine yalnızca dipnotlarda özet bilgi vermeyi tercih edebilir"},
-    "std-tms7-gen-0047": {"A": "Finansal kuruluşlarda faiz akışları her hâlde finansman faaliyeti olarak sınıflandırılır; bu kuruluşların esas faaliyetiyle ilişkilendirilmeleri kabul edilmez"},
-    "std-tms7-gen-0031": {"D": "Yalnızca finansman faaliyetlerinde kullanılabilen nakit tutarlarını ifade eder; işletme ve yatırım faaliyetleri bu tanımın tümüyle dışında kalır"},
-    "std-tms7-gen-0050": {"A": "Nakit akış tablosu diğer tablolardan tümüyle bağımsızdır; finansal durum tablosu ve gelir tablosuyla herhangi bir uzlaştırma ya da bağ kurulması gerekmez"},
-    "std-tms7-gen-0019": {"E": "Faiz ve kâr payı akışları her hâlde işletme faaliyeti olarak sınıflandırılır; yatırım veya finansman faaliyeti olarak gösterilmelerine hiçbir koşulda izin verilmez"},
-}
 
 # ── TMS 23 · Borçlanma Maliyetleri ────────────────────────────────────────────
 TMS23_OZEL = {
@@ -838,7 +811,6 @@ KONFIG: dict[str, dict] = {
     "tms_21_kur_degisimi": {"atma_ozel": TMS21_OZEL, "uzat": TMS21_UZAT},
     "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
     "tms_23_borclanma_maliyetleri": {"atma_ozel": TMS23_OZEL},
-    "tms_7_nakit_akis": {"atma_ozel": TMS7_OZEL, "uzat": TMS7_UZAT},
     "tms_38_modv": {"atma_ozel": TMS38_OZEL, "kisalt": TMS38_KISALT},
     "tms_36_deger_dusuklugu": {"atma_ozel": TMS36_OZEL},
     "tms_16_mdv": {"atma_ozel": TMS16_OZEL, "uzat": TMS16_UZAT, "kisalt": TMS16_KISALT},
