@@ -42,20 +42,6 @@ PATCHES = {
             "solution": "Oy haklarının %60'ının elde tutulması kontrol gücü sağlar. Bu nedenle yatırım **245 Bağlı Ortaklıklar** hesabında izlenir.",
         },
     },
-    "content/finansal_muhasebe/yabanci_kaynaklar.json": {
-        "finmuh-yk-gen-0058": {
-            "stem": "İşletme 1 Ekim'de yıllık %18 faizli, 600.000 ₺ tutarında dört ay vadeli banka kredisi kullanmıştır. 31 Aralık'ta üç aylık dönem için tahakkuk ettirilecek faiz kaç ₺'dir?",
-            "options": {
-                "A": "27.000",
-                "B": "36.000",
-                "C": "108.000",
-                "D": "18.000",
-                "E": "54.000",
-            },
-            "answer": "A",
-            "solution": "Dönem sonuna kadar üç aylık faiz tahakkuk etmiştir: 600.000 × %18 × 3/12 = **27.000 ₺**.",
-        },
-    },
     "content/mali_tablolar_analizi/trend_analizi.json": {
         "mta-trend-gen-0038": {
             "stem": "İlgili yılda tutarı 900.000 ₺ ve trend yüzdesi %150 olan bir kalemin baz yıl tutarı kaç ₺'dir?",
