@@ -3,20 +3,20 @@
     "id": "std-tms2-gen-0001",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "TMS 2'nin amacı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir holdingin şirketlerinde şu kalemler bulunmaktadır: perakende şirketinde satılmak üzere alınan giysiler, üretim şirketinde yarı mamuller, gayrimenkul şirketinde satmak için inşa edilen konutlar, tarım şirketinde hasat noktasına kadar canlı olan meyve ağaçları ve hizmet şirketinde kullanılacak yedek malzemeler. Bunlardan hangisi TMS 2'nin kapsamı dışındadır?",
     "options": {
-      "B": "Stoklarla ilgili muhasebe uygulamalarını, özellikle varlık olarak izlenecek maliyetin belirlenmesini düzenlemektir",
-      "A": "İşletmenin stoklarını kaç adet tutması gerektiğini belirleyen bir stok yönetimi standardıdır",
-      "C": "Stokların satış fiyatının nasıl belirleneceğini gösteren bir fiyatlandırma standardı",
-      "D": "Yalnızca stok sayımının nasıl yapılacağını düzenleyen bir denetim standardıdır; stokların ölçümü ve maliyet yöntemleri bu standardın kapsamı dışındadır",
-      "E": "Stokların vergi matrahındaki değerini belirleyen bir vergi mevzuatı düzenlemesi"
+      "A": "Satmak için inşa edilen konutlar",
+      "B": "Canlı meyve ağaçları",
+      "C": "Yarı mamuller",
+      "D": "Yedek malzemeler",
+      "E": "Satılmak üzere alınan giysiler"
     },
     "answer": "B",
-    "solution": "TMS 2: bu Standardın amacı stoklarla ilgili muhasebe işlemlerini düzenlemektir. Temel konu, varlık olarak muhasebeleştirilecek ve ilgili hasılat muhasebeleştirilinceye kadar taşınacak maliyetin belirlenmesidir. Doğru cevap B.",
+    "solution": "TMS 2 p. 2(c)'ye göre **tarımsal faaliyetle ilgili biyolojik varlıklar** ve hasat noktasındaki tarımsal ürünler TMS 41 kapsamındadır; hasattan sonraki ürünler TMS 2'ye girer. Satmak için inşa edilen konutlar gayrimenkul şirketinin stokudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - amaç"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 2-3"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "std-tms2-gen-0002",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "TMS 2'ye göre stok tanımı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Normal üretim kapasitesi 15.000 adet olan bir işletme, talep daralması nedeniyle dönemde 10.000 adet üretmiştir. Dönemin maliyetleri: direkt malzeme 120.000 ₺, direkt işçilik 90.000 ₺, değişken GÜG 60.000 ₺, sabit GÜG 150.000 ₺. TMS 2'ye göre mamullerin birim maliyeti kaç ₺'dir?",
     "options": {
-      "B": "Olağan iş akışı içinde satılmak üzere elde tutulan, üretim sürecindeki ya da üretimde kullanılacak varlıklardır",
-      "A": "İşletmenin uzun vadeli kullanım amacıyla elde tuttuğu makine ve teçhizat gibi duran varlıkları ifade eder; satış amaçlı dönen varlıklar bu tanıma girmez",
-      "C": "İşletmenin değer artışı beklentisiyle yatırım amaçlı elde tuttuğu gayrimenkulleri kapsar",
-      "D": "İşletmenin üçüncü kişilerden olan alacaklarını gösteren ve nakde çevrilecek varlıkları ifade eder",
-      "E": "İşletmenin ortaklarına dağıtmayı planladığı kâr payını gösteren bir özkaynak kalemi"
+      "A": "28",
+      "B": "37",
+      "C": "42",
+      "D": "27",
+      "E": "15"
     },
     "answer": "B",
-    "solution": "TMS 2: stoklar; olağan iş akışı içinde satılmak için elde tutulan, satılmak üzere üretilmekte olan ya da üretim sürecinde veya hizmet sunumunda kullanılacak ilk madde ve malzeme şeklindeki varlıklardır. Doğru cevap B.",
+    "solution": "TMS 2 p. 13'e göre sabit genel üretim giderleri **normal kapasiteye** göre dağıtılır; düşük üretim nedeniyle birim başına dağıtılan sabit gider artırılmaz, dağıtılmayan kısım gider yazılır. Birim maliyet: (120.000 + 90.000 + 60.000) / 10.000 + 150.000 / 15.000 = **37 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - stok tanımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "std-tms2-gen-0003",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "TMS 2'ye göre stoklar finansal durum tablosunda hangi değerle ölçülür?",
+    "stem": "Bir üretim işletmesinin dönem giderleri arasında şunlar vardır: anormal miktarda fire 30.000 ₺, üretim sürecinin bir aşaması olmayan mamul depolama maliyeti 12.000 ₺, genel yönetim giderleri 45.000 ₺, satış giderleri 25.000 ₺ ve üretim sırasında normal olarak ortaya çıkan fire 8.000 ₺. Bunlardan kaç ₺'si stok maliyetine dâhil edilir?",
     "options": {
-      "A": "Maliyet ile net gerçekleşebilir değerden yüksek olanıyla",
-      "B": "Her zaman maliyet bedeliyle",
-      "C": "Her zaman net gerçekleşebilir değeriyle",
-      "D": "Maliyet ile gerçeğe uygun değerden yüksek olanıyla",
-      "E": "Maliyet ile net gerçekleşebilir değerden düşük olanıyla"
+      "A": "0",
+      "B": "120.000",
+      "C": "38.000",
+      "D": "20.000",
+      "E": "8.000"
     },
     "answer": "E",
-    "solution": "TMS 2 par. 9: stoklar, maliyet ile net gerçekleşebilir değerden düşük olanı ile ölçülür. Bu ölçüm, stokun satışından elde edilecek tutarın defter değerinin altına düşmesi hâlinde varlığın olduğundan yüksek gösterilmesini engeller.",
+    "solution": "TMS 2 p. 16'ya göre **anormal fireler, üretim sürecinde gerekli olmayan depolama maliyetleri, stokları mevcut konum ve durumuna getirmeye katkısı olmayan genel yönetim giderleri ve satış maliyetleri** stok maliyetine dâhil edilmez. Normal fire üretim maliyetinin parçasıdır: **8.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 16"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "std-tms2-gen-0004",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Net gerçekleşebilir değer nasıl hesaplanır?",
+    "stem": "Bir işletmenin dönem başı stoku 1.000 birim × 10 ₺'dir. Dönemde 2.000 birim 10 ₺'den ve 1.000 birim 12 ₺'den alınmış, 2.500 birim satılmıştır. Dönem sonunda tek seferde hesaplanan ağırlıklı ortalama maliyet yöntemine göre satışların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Olağan iş akışındaki tahmini satış fiyatına tamamlanma maliyetleri eklenerek",
-      "B": "Olağan iş akışındaki tahmini satış fiyatından tamamlanma ve satış maliyetleri düşülerek",
-      "C": "Piyasadaki cari alış fiyatından ticari iskontolar düşülerek",
-      "D": "Stokun defter değerinden birikmiş değer düşüklüğü düşülerek",
-      "E": "Tahmini satış fiyatından yalnızca satış vergileri düşülerek"
+      "A": "25.000",
+      "B": "26.250",
+      "C": "30.000",
+      "D": "42.000",
+      "E": "27.000"
     },
     "answer": "B",
-    "solution": "TMS 2 par. 6: net gerçekleşebilir değer, işletmenin olağan iş akışı içinde tahmini satış fiyatından, tamamlanma maliyeti ile satışı gerçekleştirmek için gerekli tahmini maliyetlerin düşülmesiyle bulunur.",
+    "solution": "Ağırlıklı ortalama birim maliyet: 42.000 / 4.000 = 10,50 ₺. Satışların maliyeti 2.500 × 10,50 = **26.250 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "std-tms2-gen-0005",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Net gerçekleşebilir değer ile gerçeğe uygun değer farkı bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir mücevher üreticisi, her biri müşteriye özel tasarlanan ve birbirinin yerine kullanılamayan kolyeler üretmektedir. TMS 2'ye göre bu stokların maliyeti hangi yöntemle belirlenir?",
     "options": {
-      "B": "Net gerçekleşebilir değer işletmeye özgüdür; gerçeğe uygun değer ise piyasa bakışını yansıtır",
-      "A": "Net gerçekleşebilir değer piyasa bakışını, gerçeğe uygun değer ise işletmeye özgü tutarı yansıtır",
-      "C": "İkisi arasında hiçbir fark bulunmayıp aynı tutarı ifade eden eş anlamlı kavramlar",
-      "D": "Net gerçekleşebilir değer geçmiş maliyeti, gerçeğe uygun değer ise gelecekteki maliyeti gösterir",
-      "E": "İki kavram da yalnızca maddi duran varlıklarda kullanılır; stoklarda hiç uygulanmamaktadır"
+      "A": "FIFO",
+      "B": "Özel tanımlama",
+      "C": "Standart maliyet",
+      "D": "Perakende yöntemi",
+      "E": "Ağırlıklı ortalama"
     },
     "answer": "B",
-    "solution": "TMS 2: net gerçekleşebilir değer işletmeye özgü bir tutardır; gerçeğe uygun değer ise piyasa katılımcılarının bakış açısını yansıtır. Bir stokun net gerçekleşebilir değeri, gerçeğe uygun değerinden satış maliyetleri düşülmüş tutarına eşit olmayabilir. Doğru cevap B.",
+    "solution": "TMS 2 p. 23'e göre **normalde birbirinin yerine geçemeyen** stok kalemlerinin ve belirli projeler için üretilip ayrılmış mal ve hizmetlerin maliyeti, **özel tanımlama** yoluyla belirlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - NGD/GUD farkı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 23-24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "std-tms2-gen-0006",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Hizmet sunan işletmelerde stok bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, normal malzeme, işçilik, verimlilik ve kapasite kullanım düzeylerini dikkate alan standart maliyet yöntemini kullanmaktadır. Bu yöntemin TMS 2'ye göre kullanılabilmesinin koşulu hangisidir?",
     "options": {
-      "C": "Hizmet sunan işletmelerde stoklar, hasılatı henüz muhasebeleştirilmemiş hizmetin maliyetlerinden oluşur",
-      "A": "Hizmet sunan işletmelerde stok kavramı bulunmaz ve stok kaydı yapılamamaktadır",
-      "B": "Hizmet işletmelerinde stok, satış personeline ödenen prim ve komisyonlardan oluşmaktadır",
-      "D": "Hizmet işletmelerinde stok, genel yönetim giderlerinin tamamını kapsayan bir kalem",
-      "E": "Hizmet işletmelerinde stok, işletmenin sahip olduğu tüm nakit ve alacakları ifade eder"
+      "A": "Stok miktarının az olması",
+      "B": "Denetçinin önceden onayı",
+      "C": "Sonuçların fiilî maliyete yakın olması",
+      "D": "Satış fiyatlarının sabit olması",
+      "E": "Vergi idaresinin onayı"
     },
     "answer": "C",
-    "solution": "TMS 2: hizmet sunan işletmelerde stoklar, hasılatı henüz muhasebeleştirilmemiş hizmetin maliyetlerinden oluşur. Bu maliyetler esas olarak hizmeti sunan personelin ücretleri ve diğer doğrudan maliyetlerdir. Doğru cevap C.",
+    "solution": "TMS 2 p. 21'e göre standart maliyet yöntemi ve perakende yöntemi gibi ölçüm teknikleri, **sonuçları maliyete yakın** olduğu sürece kolaylık amacıyla kullanılabilir; standartlar düzenli olarak gözden geçirilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - hizmet işletmelerinde stok"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 21"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "std-tms2-gen-0007",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi TMS 2'nin ölçüm hükümlerinin kapsamı dışındadır?",
+    "stem": "Bir işletmenin birbirinden farklı üç ürününe ilişkin dönem sonu bilgileri şöyledir: A ürünü 200 adet, birim maliyet 300 ₺, birim NGD 250 ₺; B ürünü 100 adet, birim maliyet 400 ₺, birim NGD 450 ₺; C ürünü 50 adet, birim maliyet 600 ₺, birim NGD 580 ₺. Stoklar kalem bazında değerlendiğinde finansal durum tablosunda kaç ₺ ile gösterilir?",
     "options": {
-      "A": "Olağan iş akışı içinde satılmak üzere elde tutulan ticari mallar",
-      "B": "Üretim sürecinde bulunan yarı mamuller",
-      "C": "Üretim sürecinde kullanılacak ilk madde ve malzemeler",
-      "D": "Hasılatı henüz muhasebeleştirilmemiş hizmetin maliyetleri",
-      "E": "Aracı tacirlerin gerçeğe uygun değerinden satış maliyeti düşülerek ölçtüğü stoklar"
+      "A": "134.000",
+      "B": "130.000",
+      "C": "124.000",
+      "D": "125.000",
+      "E": "119.000"
     },
     "answer": "E",
-    "solution": "TMS 2 par. 3: tarımsal ve orman ürünleri ile değerli madenlerde üretim sonrası ölçüm ve aracı tacirlerin gerçeğe uygun değerinden satış maliyeti düşülerek ölçtüğü stoklar, standardın ölçüm hükümlerinin dışındadır. Diğer şıklardaki kalemler par. 6'daki stok tanımına girer.",
+    "solution": "TMS 2 p. 29'a göre stoklar maliyet veya NGD'den düşük olanına **genellikle kalem bazında** indirilir; toplam bazda karşılaştırma yapılmaz: A 200 × 250 + B 100 × 400 + C 50 × 580 = **119.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 29"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "std-tms2-gen-0008",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangileri TMS 2'ye göre stok sayılır?\n\nI. Olağan iş akışında satılmak üzere elde tutulan ticari mallar\n\nII. Üretim sürecindeki yarı mamuller\n\nIII. Üretimde kullanılacak ilk madde ve malzeme",
+    "stem": "Bir üretim işletmesinin elinde maliyeti 90.000 ₺ olan hammadde vardır; hammaddenin yenileme maliyeti 70.000 ₺'ye inmiştir. Bu hammaddenin kullanılacağı mamullerin tahmini maliyeti 300.000 ₺, tahmini NGD'si 280.000 ₺'dir. TMS 2'ye göre hammaddenin NGD'sinin en iyi ölçüsü olabilecek tutar kaç ₺'dir?",
     "options": {
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "70.000",
+      "B": "280.000",
+      "C": "90.000",
+      "D": "20.000",
+      "E": "50.000"
     },
     "answer": "A",
-    "solution": "TMS 2: stoklar; satılmak üzere elde tutulanlar (I), satılmak üzere üretilmekte olanlar (II) ve üretim/hizmet sürecinde kullanılacak ilk madde ve malzemeler (III) olarak üç grupta tanımlanır. Üçü de stoktur. Doğru cevap A.",
+    "solution": "TMS 2 p. 32'ye göre hammadde fiyatındaki düşüş mamullerin **maliyetin altında satılacağını** gösteriyorsa hammaddeler NGD'ye indirilir; bu durumda **yenileme maliyeti** hammaddenin NGD'sinin en uygun ölçüsü olabilir: **70.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - stok tanımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "std-tms2-gen-0009",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. Stoklar maliyet ile NGD'den düşük olanıyla ölçülür\n\nII. NGD işletmeye özgü olmayan, piyasa esaslı bir tutardır\n\nIII. Yatırım amaçlı gayrimenkuller stok sayılır",
+    "stem": "Bir işletme geçen yıl maliyeti 100.000 ₺ olan stoklar için 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Stoklar bu yıl sonunda da elde olup koşulların değişmesi nedeniyle NGD 95.000 ₺'ye yükselmiştir. Bu yıl iptal edilecek karşılık kaç ₺'dir ve nereye yansır?",
     "options": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "İptal edilmez",
+      "B": "15.000 ₺, satışların maliyetini azaltır",
+      "C": "20.000 ₺, geçmiş yıllar kârlarına",
+      "D": "15.000 ₺, DKG'ye",
+      "E": "20.000 ₺, satışların maliyetini azaltır"
     },
     "answer": "B",
-    "solution": "Stoklar maliyet ile net gerçekleşebilir değerden düşük olanıyla ölçülür (I). NGD işletmeye özgü bir tutardır; bu nedenle II yanlıştır. Yatırım amaçlı gayrimenkuller de TMS 40 kapsamındadır (III). Yalnız I doğrudur. Doğru cevap B.",
+    "solution": "TMS 2 p. 33-34'e göre değer düşüklüğüne neden olan koşullar ortadan kalktığında veya NGD arttığında **önceki değer düşüklüğü tutarıyla sınırlı** olmak üzere iptal yapılır ve yeni defter değeri maliyet ile NGD'nin düşüğü olur: yeni karşılık 5.000 ₺, iptal **15.000 ₺**; iptal, iptalin olduğu dönemde gider olarak tanınan stok tutarını azaltır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - ölçüm ve kapsam"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 33-34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "std-tms2-gen-0010",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin dönem sonu stokunda 4.000 kg buğday bulunmaktadır. Stokun birim maliyeti 22 ₺, olağan iş akışındaki tahmini satış fiyatı 25 ₺/kg, tahmini tamamlanma maliyeti 2 ₺/kg ve tahmini satış gideri 1,5 ₺/kg'dir. TMS 2'ye göre bu stok finansal tablolarda kaç ₺ ile gösterilir?",
+    "stem": "Bir işletme ara dönem (çeyreklik) finansal tablolarını hazırlamaktadır. Çeyrek sonunda ürettiği maskelerin satış fiyatı, geçici bir talep düşüşüyle maliyetin altına inmiştir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "A": "88.000 ₺",
-      "B": "100.000 ₺",
-      "C": "92.000 ₺",
-      "D": "84.000 ₺",
-      "E": "86.000 ₺"
+      "A": "Değer düşüklüğü ara dönemde tanınabilir",
+      "B": "Sonraki ara dönemde koşullar düzelirse iptal yapılabilir",
+      "C": "Ara dönemde de yıllık tablolarla aynı ilkeler uygulanır",
+      "D": "Stoklar maliyet ile NGD'nin düşüğüyle ölçülür",
+      "E": "Ara dönemde stoklar NGD'ye indirilmez, yıl sonu beklenir"
     },
     "answer": "E",
-    "solution": "Birim net gerçekleşebilir değer: 25 − 2 − 1,5 = 21,5 ₺. Toplam NGD: 4.000 × 21,5 = 86.000 ₺. Toplam maliyet: 4.000 × 22 = 88.000 ₺. TMS 2 par. 9 düşük olanı öngördüğünden stok 86.000 ₺ ile gösterilir; aradaki 2.000 ₺ değer düşüklüğü olarak gider yazılır.",
+    "solution": "TMS 2 p. 9 ve TMS 34'e göre stoklar ara dönem tablolarında da **maliyet ile NGD'nin düşüğüyle** ölçülür; ara dönemde tanınan değer düşüklüğü sonraki ara dönemde koşullar değişirse iptal edilebilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 9; TMS 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "std-tms2-gen-0011",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "TMS 2'ye göre stok maliyetinin unsurları bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir ticari işletmenin dönem başı stoku 150.000 ₺, dönem içi net alışları 900.000 ₺, dönem sonu stoku maliyet ve NGD karşılaştırmasından sonra 180.000 ₺'dir; dönem sonu stoklarda değer düşüklüğü yoktur. Satışların maliyeti kaç ₺'dir?",
     "options": {
-      "D": "Satın alma maliyetleri, dönüştürme maliyetleri ve stokları mevcut konum ve duruma getiren diğer maliyetlerden oluşur",
-      "A": "Yalnızca satın alma bedelinden oluşur; taşıma ve dönüştürme maliyetleri hiç dâhil edilmez",
-      "B": "Yalnızca dönüştürme maliyetlerinden oluşur; satın alma maliyetleri kapsam dışında bırakılmıştır",
-      "C": "Stok maliyeti yalnızca satın alma bedelinden oluşur; dönüştürme maliyetleri, genel üretim giderleri ve diğer maliyetler stok maliyetine hiç girmez",
-      "E": "Stok maliyeti yalnızca satış fiyatının belirli bir yüzdesi olarak hesaplanan bir tutardır"
+      "A": "900.000",
+      "B": "1.050.000",
+      "C": "1.230.000",
+      "D": "870.000",
+      "E": "720.000"
     },
     "answer": "D",
-    "solution": "TMS 2: stok maliyeti; tüm satın alma maliyetlerini, dönüştürme maliyetlerini ve stokların mevcut konum ve duruma getirilmesi için katlanılan diğer maliyetleri içerir. Doğru cevap D.",
+    "solution": "TMS 2 p. 34'e göre satılan stokların defter değeri hasılatın tanındığı dönemde gider yazılır: 150.000 + 900.000 − 180.000 = **870.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - maliyet unsurları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "std-tms2-gen-0012",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi TMS 2'ye göre stokların satın alma maliyetinin hesaplanmasında dikkate alınmaz?",
+    "stem": "Bir işletmenin elinde birim maliyeti 820 ₺ olan 500 adet ürün vardır. Tahmini birim satış fiyatı 900 ₺'dir; satış fiyatı üzerinden %5 komisyon ödenecek ve müşteriye teslim için birim başına 20 ₺ nakliye yapılacaktır. Ürünlerin toplam NGD'si kaç ₺'dir?",
     "options": {
-      "A": "Satıcıdan alınan ticari iskonto",
-      "B": "Satın alma fiyatı",
-      "C": "İade alınamayan alış vergileri",
-      "D": "Nakliye ve sigorta giderleri",
-      "E": "Yükleme ve boşaltma maliyetleri"
+      "A": "417.500",
+      "B": "427.500",
+      "C": "440.000",
+      "D": "410.000",
+      "E": "450.000"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 11: satın alma maliyeti; satın alma fiyatı, iade alınamayan vergiler, nakliye, yükleme-boşaltma ve doğrudan ilişkilendirilebilen diğer maliyetlerden oluşur. Ticari iskontolar ve benzeri indirimler maliyetin hesaplanmasında düşülür, eklenmez.",
+    "solution": "TMS 2 p. 6'ya göre NGD, tahmini satış fiyatından satış için gerekli tahmini maliyetler düşülerek bulunur ve p. 7'ye göre **işletmeye özgüdür**: birim 900 − 45 − 20 = 835 ₺; toplam 500 × 835 = **417.500 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6-7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "std-tms2-gen-0013",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Dönüştürme maliyetleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme ortak bir üretim sürecinde A ve B birleşik ürünlerini üretmektedir. Ayrılma noktasına kadar ortak maliyet 400.000 ₺'dir; A'nın satış değeri 300.000 ₺, B'nin satış değeri 200.000 ₺'dir. İşletme ortak maliyeti göreli satış değerlerine göre dağıtmaktadır. A ürününe dağıtılacak maliyet kaç ₺'dir?",
     "options": {
-      "D": "Üretimle doğrudan ilişkili işçilik ile sistematik olarak dağıtılan sabit ve değişken genel üretim giderlerini içerir",
-      "A": "Yalnızca direkt işçilik maliyetlerinden oluşur; değişken ve sabit genel üretim giderleri dönüştürme maliyetine dâhil edilmez",
-      "B": "Yalnızca genel üretim giderlerinden oluşur; direkt işçilik kapsam dışında bırakılmış durumdadır",
-      "C": "Pazarlama ve genel yönetim giderlerini de içeren geniş kapsamlı bir maliyet grubunu ifade eder",
-      "E": "Dönüştürme maliyeti kavramı TMS 2'de yer almayan ve uygulanmayan bir kavram"
+      "A": "400.000",
+      "B": "300.000",
+      "C": "200.000",
+      "D": "240.000",
+      "E": "160.000"
     },
     "answer": "D",
-    "solution": "TMS 2: dönüştürme maliyetleri, direkt işçilik gibi üretimle doğrudan ilişkili maliyetleri ve ilk madde ve malzemenin mamule dönüştürülmesinde katlanılan sabit ve değişken genel üretim giderlerinin sistematik dağıtımını içerir. Doğru cevap D.",
+    "solution": "TMS 2 p. 14'e göre birleşik ürünlerin dönüştürme maliyetleri ayrı ayrı belirlenemiyorsa **akılcı ve tutarlı bir esasla**, örneğin ayrılma noktasındaki **göreli satış değerlerine** göre dağıtılır: 400.000 × 300.000 / 500.000 = **240.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - dönüştürme maliyetleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "std-tms2-gen-0014",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Sabit genel üretim giderleri stok maliyetine hangi ölçüye göre dağıtılır?",
+    "stem": "Bir işletme değişken genel üretim giderlerini stoklara dağıtmaktadır. TMS 2'ye göre değişken genel üretim giderleri hangi esasa göre dağıtılır?",
     "options": {
-      "A": "Dönemdeki fiili üretim miktarına göre",
-      "B": "Tesisin teorik azami kapasitesine göre",
-      "C": "Direkt işçilik saatlerinin gerçekleşen toplamına göre",
-      "D": "Üretim tesislerinin normal kapasitesine göre",
-      "E": "Dönem satış hasılatına göre"
+      "A": "Teorik kapasiteye göre",
+      "B": "Bütçe tutarına göre",
+      "C": "Normal kapasiteye göre",
+      "D": "Fiilî üretim kullanımına göre",
+      "E": "Satış miktarına göre"
     },
     "answer": "D",
-    "solution": "TMS 2 par. 13: sabit genel üretim giderleri, üretim tesislerinin normal kapasitesi esas alınarak dönüştürme maliyetlerine dağıtılır. Böylece düşük üretim dönemlerinde birim maliyet yapay olarak şişmez.",
+    "solution": "TMS 2 p. 13'e göre değişken genel üretim giderleri, üretim tesislerinin **fiilî kullanımı** esas alınarak her bir üretim birimine dağıtılır; sabit giderler ise normal kapasiteye göre dağıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "std-tms2-gen-0015",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Düşük üretim veya atıl kapasite hâlinde sabit genel üretim giderleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Alış fiyatlarının dönem boyunca sürekli arttığı bir ortamda, diğer koşullar aynıyken aşağıdaki maliyet formüllerinden hangisi dönem sonu stokunu daha yüksek gösterir?",
     "options": {
-      "E": "Dağıtılmayan sabit genel üretim giderleri stok maliyetine eklenmez; oluştuğu dönemde gider yazılır",
-      "A": "Dağıtılmayan sabit giderler stok maliyetine eklenerek mamullere yüklenir",
-      "B": "Dağıtılmayan sabit giderler gelecek dönemin stok maliyetine aktarılarak orada izlenmektedir",
-      "C": "Düşük üretim hâlinde her birime yüklenen sabit gider payı artırılarak toplam dağıtılmaktadır",
-      "D": "Düşük üretim hâlinde sabit giderlerin tamamı özkaynaklardan doğrudan indirilir"
+      "A": "Perakende yöntemi",
+      "B": "Özel tanımlama olmaksızın ortalama",
+      "C": "Standart maliyet",
+      "D": "Ağırlıklı ortalama",
+      "E": "FIFO"
     },
     "answer": "E",
-    "solution": "TMS 2: her bir üretim birimine dağıtılan sabit genel üretim gideri tutarı, düşük kapasite kullanımı ya da atıl kapasite nedeniyle artırılmaz. Dağıtılmayan genel üretim giderleri, gerçekleştiği dönemde gider olarak muhasebeleştirilir. Doğru cevap E.",
+    "solution": "Fiyatların arttığı dönemde **FIFO**'da dönem sonu stoku en son (yüksek fiyatlı) alışlardan oluşur; ağırlıklı ortalamada eski ve yeni fiyatlar ortalandığından stok daha düşük değerlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - düşük üretim"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 25-27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "std-tms2-gen-0016",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Anormal derecede yüksek üretim hâlinde sabit genel üretim giderleri bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir peynir üreticisi, peynirlerin satılabilir hâle gelmesi için üretimin zorunlu bir aşaması olarak 6 ay soğuk depoda olgunlaşmasını sağlamaktadır. Bu olgunlaştırma deposunun maliyetleri hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "C": "Her bir birime dağıtılan sabit gider payı azaltılır; böylece stoklar maliyetin üzerinde ölçülmez",
-      "A": "Her bir birime dağıtılan sabit gider payı artırılarak stok maliyeti yükseltilir",
-      "B": "Yüksek üretim hâlinde sabit giderlerin tamamı dönem gideri olarak yazılır",
-      "D": "Yüksek üretim hâlinde sabit gider dağıtımı hiç yapılmaz; stoklar yalnızca DİMM ile ölçülür",
-      "E": "Anormal derecede yüksek üretimde her birime dağıtılan sabit gider payı artırılır ve stok maliyeti yükseltilir"
+      "A": "Dönem gideri yazılır",
+      "B": "Satış giderine eklenir",
+      "C": "Stok maliyetine dâhil edilir",
+      "D": "Genel yönetim giderine eklenir",
+      "E": "Özkaynaktan düşülür"
     },
     "answer": "C",
-    "solution": "TMS 2: anormal derecede yüksek üretim olması durumunda, her bir üretim birimine dağıtılan sabit genel üretim maliyeti tutarı azaltılır; böylece stoklar maliyetin üzerinde bir değerle ölçülmemiş olur. Doğru cevap C.",
+    "solution": "TMS 2 p. 16(b)'ye göre depolama maliyetleri kural olarak stok maliyetine dâhil edilmez; ancak **üretim sürecinde bir sonraki üretim aşamasından önce gerekli olan** depolama maliyetleri bu kuralın istisnasıdır ve maliyete girer.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - anormal yüksek üretim"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 16(b)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "std-tms2-gen-0017",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Değişken genel üretim giderleri stok maliyetine hangi ölçüye göre dağıtılır?",
+    "stem": "İşletmenin olağan faaliyet akışında satış amacıyla elde tutulan, bu satışa yönelik olarak üretim sürecinde bulunan veya üretimde ya da hizmet sunumunda kullanılacak ilk madde ve malzeme şeklindeki varlıklar TMS 2'de nasıl adlandırılır?",
     "options": {
-      "A": "Normal kapasiteye göre",
-      "B": "Üretim tesislerinin fiili kullanımına göre",
-      "C": "Teorik azami kapasiteye göre",
-      "D": "Dönem başı stok miktarına göre",
-      "E": "Satış hasılatına göre"
+      "A": "Satış amaçlı duran varlıklar",
+      "B": "Stoklar",
+      "C": "Maddi duran varlıklar",
+      "D": "Yatırım amaçlı gayrimenkuller",
+      "E": "Finansal varlıklar"
     },
     "answer": "B",
-    "solution": "TMS 2 par. 13: değişken genel üretim giderleri, üretim tesislerinin fiili kullanımı esas alınarak her bir üretim birimine dağıtılır. Sabit giderlerden farklı olarak normal kapasite ölçütü kullanılmaz.",
+    "solution": "TMS 2 p. 6'daki tanıma göre bu varlıklar **stoklardır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "std-tms2-gen-0018",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi TMS 2'ye göre stok maliyetine dâhil edilir?",
+    "stem": "Perakende yöntemini kullanan bir mağaza, sezon sonunda bazı ürünlerin satış fiyatlarını ilk fiyatlarının altına indirmiştir. TMS 2'ye göre kullanılan brüt kâr marjı yüzdesi hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Normalin üstündeki fire ve kayıp tutarları",
-      "B": "Stokları mevcut konumuna getirmeyle ilgisi olmayan genel yönetim giderleri",
-      "C": "Satış ve pazarlama giderleri",
-      "D": "Üretim tamamlandıktan sonraki depolama giderleri",
-      "E": "Üretim sürecinde sonraki bir aşama için katlanılan depolama gideri"
+      "A": "İndirimler dikkate alınmaz",
+      "B": "Marj geçen yılın ortalamasıdır",
+      "C": "Marj her ürün için sabit tutulur",
+      "D": "Marj vergi mevzuatına göre belirlenir",
+      "E": "İndirimli stoklar dikkate alınır"
     },
     "answer": "E",
-    "solution": "TMS 2 par. 16: normalin üstündeki fire, üretim aşaması gerektirmeyen depolama, stokları mevcut konum ve duruma getirmeyle ilgisi bulunmayan genel yönetim giderleri ile satış giderleri stok maliyetine alınmaz ve oluştukları dönemde gider yazılır. Sonraki üretim aşaması için gerekli depolama gideri ise maliyete dâhildir.",
+    "solution": "TMS 2 p. 22'ye göre perakende yönteminde kullanılan yüzde, **satış fiyatı ilk satış fiyatının altına indirilmiş stokları dikkate alır**; çoğunlukla her perakende bölümü için ortalama bir yüzde kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "std-tms2-gen-0019",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Vadeli alım koşullarındaki finansman unsuru bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri stokların maliyetine dâhil edilir?\n\nI. İthalat sırasında ödenen gümrük vergisi\n\nII. Satış bölümünün personel giderleri\n\nIII. Stokların işletme deposuna taşınma maliyeti",
     "options": {
-      "C": "Peşin alım fiyatı ile ödenen tutar arasındaki fark finansman gideri olarak finansman süresince muhasebeleştirilir",
-      "A": "Vadeli alımdaki tüm tutar stok maliyetine eklenerek stokta izlenir",
-      "B": "Vadeli alımlarda finansman unsuru hiç dikkate alınmaz; peşin fiyat ile vadeli fiyat aynı sayılır",
-      "D": "Vadeli alımdaki finansman unsuru doğrudan özkaynaklardan indirilir",
-      "E": "Vadeli alımdaki finansman unsuru da stok maliyetine dâhil edilir; peşin fiyat ile vadeli fiyat arasındaki fark faiz gideri olarak değil maliyet olarak yazılır"
+      "A": "Yalnız III",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "C",
-    "solution": "TMS 2: bir işletme stokları vadeli ödeme koşuluyla almış olabilir. Anlaşma fiilen bir finansman unsuru içerdiğinde (peşin alım fiyatı ile ödenen tutar arasındaki fark gibi), bu unsur finansman süresi boyunca faiz gideri olarak muhasebeleştirilir. Doğru cevap C.",
+    "solution": "TMS 2 p. 11'e göre ithalat vergileri (I) ve nakliye (III) satın alma maliyetine girer. p. 16'ya göre **satış maliyetleri** stok maliyetine dâhil edilmez (II).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - finansman unsuru"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 11, 16"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "std-tms2-gen-0020",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletme ticari mal alımına ilişkin şu bilgilere sahiptir: liste fiyatı 400.000 ₺, satıcının uyguladığı ticari iskonto 30.000 ₺, iade alınamayan alış vergisi 24.000 ₺, nakliye ve sigorta gideri 16.000 ₺, malların depoya yerleştirilmesi için ödenen boşaltma bedeli 5.000 ₺, satış sonrası reklam gideri 12.000 ₺. TMS 2'ye göre stokun satın alma maliyeti kaç ₺'dir?",
+    "stem": "Aşağıdakilerden hangileri doğrudur?\n\nI. Vadeli alımdaki finansman unsuru faiz gideri olarak tanınır\n\nII. Değer düşüklüğü iptali önceki değer düşüklüğü tutarını aşabilir\n\nIII. Stoklardaki kayıplar oluştuğu dönemde gider yazılır",
     "options": {
-      "A": "415.000 ₺",
-      "B": "427.000 ₺",
-      "C": "445.000 ₺",
-      "D": "410.000 ₺",
-      "E": "391.000 ₺"
+      "A": "I ve III",
+      "B": "II ve III",
+      "C": "I ve II",
+      "D": "Yalnız I",
+      "E": "Yalnız III"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 11: satın alma fiyatından ticari iskonto düşülür, iade alınamayan vergiler ile nakliye, sigorta ve yükleme-boşaltma maliyetleri eklenir. 400.000 − 30.000 + 24.000 + 16.000 + 5.000 = 415.000 ₺. Reklam gideri satış gideridir; par. 16 uyarınca maliyete alınmaz.",
+    "solution": "TMS 2 p. 18'e göre finansman unsuru faiz gideridir (I); p. 34'e göre kayıplar oluştuğu dönemde gider yazılır (III). p. 33'e göre iptal **önceki değer düşüklüğü tutarıyla sınırlıdır** (II yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 18, 33-34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "std-tms2-gen-0021",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletme 260.000 ₺'lik ticari mal almış, ayrıca sonradan vergi idaresinden iade alınabilecek 47.000 ₺ vergi ile malı depoya taşıma için 12.000 ₺ ödemiştir. TMS 2'ye göre stokun maliyeti kaç ₺'dir?",
+    "stem": "Bir emtia komisyoncu-tüccarı, kısa vadede fiyat dalgalanmalarından kâr elde etmek için buğday alıp satmaktadır. Stoklarını satış maliyetleri düşülmüş gerçeğe uygun değerle ölçmektedir. Bu stokların ölçümü hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "260.000 ₺",
-      "B": "307.000 ₺",
-      "C": "319.000 ₺",
-      "D": "272.000 ₺",
-      "E": "248.000 ₺"
+      "A": "TMS 41'e göre ölçülür",
+      "B": "Maliyet ile NGD'nin düşüğüyle ölçülür",
+      "C": "Maliyetle ölçülmelidir",
+      "D": "TMS 2'nin ölçüm hükümleri dışındadır",
+      "E": "TFRS 9'a göre ölçülür"
     },
     "answer": "D",
-    "solution": "TMS 2 par. 11: satın alma maliyeti, satın alma fiyatı ile iade alınamayan vergileri ve taşıma maliyetlerini içerir. Sonradan iade alınabilen vergiler maliyete dâhil edilmez. 260.000 + 12.000 = 272.000 ₺.",
+    "solution": "TMS 2 p. 3(b) ve 5'e göre stoklarını **satış maliyetleri düşülmüş gerçeğe uygun değerle** ölçen emtia komisyoncu-tüccarları TMS 2'nin ölçüm hükümlerinin kapsamı dışındadır; değer değişimleri kâr veya zarara yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 3(b), 5"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "std-tms2-gen-0022",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir üretim işletmesinin sabit genel üretim gideri 480.000 ₺, normal kapasitesi 16.000 birim, dönemdeki fiili üretimi ise 12.000 birimdir. TMS 2'ye göre stok maliyetine dağıtılacak sabit genel üretim gideri ile dönem gideri yazılacak tutar sırasıyla kaç ₺'dir?",
+    "stem": "Normal kapasitesi 15.000 adet olan bir işletme dönemde 10.000 adet üretmiş ve 150.000 ₺ sabit genel üretim gideri katlanmıştır. Stok maliyetine dağıtılmayıp dönemin gideri olarak tanınacak sabit GÜG kaç ₺'dir?",
     "options": {
-      "A": "360.000 ₺ ve 120.000 ₺",
-      "B": "480.000 ₺ ve 0 ₺",
-      "C": "120.000 ₺ ve 360.000 ₺",
-      "D": "400.000 ₺ ve 80.000 ₺",
-      "E": "360.000 ₺ ve 0 ₺"
+      "A": "50.000",
+      "B": "100.000",
+      "C": "150.000",
+      "D": "0",
+      "E": "15"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 13: sabit genel üretim giderleri normal kapasite esas alınarak dağıtılır. Birim pay 480.000 / 16.000 = 30 ₺. Fiili üretime dağıtılan 12.000 × 30 = 360.000 ₺. Düşük üretim nedeniyle dağıtılmayan 480.000 − 360.000 = 120.000 ₺ stok maliyetine eklenmez; oluştuğu dönemde gider yazılır.",
+    "solution": "TMS 2 p. 13'e göre birim başına sabit GÜG normal kapasiteye göre belirlenir: 150.000 / 15.000 = 10 ₺; üretime dağıtılan 100.000 ₺'dir. **Dağıtılmayan 50.000 ₺** oluştuğu dönemde gider yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "std-tms2-gen-0023",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir üretim işletmesinin dönem verileri şöyledir: üretime verilen direkt ilk madde ve malzeme 300.000 ₺, direkt işçilik 180.000 ₺, normal kapasiteye göre dağıtılan genel üretim gideri 90.000 ₺, normalin üstündeki fire 20.000 ₺, satış personeli ücreti 40.000 ₺. TMS 2'ye göre dönemin stok maliyeti kaç ₺'dir?",
+    "stem": "Bir içki üreticisi, satılabilir hâle gelmesi için 5 yıl mahzende olgunlaşması gereken şaraplar üretmektedir; bu stoklar kullanıma veya satışa hazır hâle gelmesi uzun süre gerektiren özellikli varlıklardır. Bu stokların finansmanı için kullanılan kredinin faizi hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "590.000 ₺",
-      "B": "630.000 ₺",
-      "C": "610.000 ₺",
-      "D": "570.000 ₺",
-      "E": "550.000 ₺"
+      "A": "Satış giderine eklenir",
+      "B": "Gider olarak yazılır",
+      "C": "Özkaynaktan düşülür",
+      "D": "TMS 23'e göre aktifleştirilebilir",
+      "E": "Stoklardan düşülür"
     },
     "answer": "D",
-    "solution": "TMS 2 par. 10 ve 12: stok maliyeti satın alma ve dönüştürme maliyetlerinden oluşur; dönüştürme maliyeti direkt işçilik ile sistematik dağıtılan genel üretim giderlerini içerir. 300.000 + 180.000 + 90.000 = 570.000 ₺. Normalin üstündeki fire ve satış personeli ücreti par. 16 uyarınca maliyete alınmaz, dönem gideri yazılır.",
+    "solution": "TMS 2 p. 17'ye göre stok maliyetine borçlanma maliyetlerinin dâhil edilebildiği sınırlı durumlar **TMS 23**'te belirlenmiştir; özellikli varlık niteliğindeki stoklarda borçlanma maliyetleri aktifleştirilebilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 17; TMS 23"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "std-tms2-gen-0024",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletme, ürettiği malları depoda beklettiği için katlandığı ve sonraki üretim aşaması için zorunlu olmayan depolama giderini stok maliyetine eklemek istemektedir. TMS 2 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem başı stoku 1.000 birim × 10 ₺'dir. Dönemde önce 2.000 birim 10 ₺'den, sonra 1.000 birim 12 ₺'den alış yapılmış; 2.500 birim satılmıştır. FIFO yöntemine göre dönem sonu stok maliyeti kaç ₺'dir?",
     "options": {
-      "C": "Sonraki üretim aşaması için zorunlu olmayan depolama gideri stok maliyetine alınmaz; dönem gideri yazılır",
-      "A": "Tüm depolama giderleri stok maliyetine eklenerek stokta izlenir",
-      "B": "Depolama gideri satış gideri olarak sınıflandırılır ve pazarlama bölümüne yüklenir",
-      "D": "Depolama gideri doğrudan özkaynaklardan indirilir; kâr veya zarara hiç yansıtılmamaktadır",
-      "E": "Sonraki üretim aşaması için zorunlu olmayan depolama giderleri de stok maliyetine eklenir"
+      "A": "15.750",
+      "B": "15.000",
+      "C": "17.000",
+      "D": "19.000",
+      "E": "12.000"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 16(b): bir sonraki üretim aşaması için zorunlu olanlar dışındaki depolama giderleri stok maliyetine dâhil edilmez ve oluştuğu dönemde gider olarak muhasebeleştirilir. Doğru cevap C.",
+    "solution": "Dönem sonunda 1.500 birim kalır. FIFO'da ilk giren ilk çıktığından kalan birimler **en son alışlardan** oluşur: 1.500 × 12 = **17.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - depolama gideri (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 25-27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "std-tms2-gen-0025",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangileri TMS 2'ye göre stok maliyetine dâhil edilir?\n\nI. Satış ve pazarlama giderleri\n\nII. Satın alma fiyatı\n\nIII. Edinimle doğrudan ilişkili taşıma gideri",
+    "stem": "Bir grup şirketinin Türkiye'deki ve Almanya'daki bağlı ortaklıklarında aynı nitelikte ve aynı amaçla kullanılan hammaddeler bulunmaktadır. Türkiye'deki şirket FIFO, Almanya'daki şirket ağırlıklı ortalama kullanmak istemektedir. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Bu durumda tutarlı formül uygulanmalıdır",
+      "B": "FIFO ve ağırlıklı ortalama TMS 2'de izin verilen formüllerdir",
+      "C": "Benzer nitelik ve kullanımdaki stoklar için aynı formül kullanılır",
+      "D": "Coğrafi konum farkı farklı formül için yeterli gerekçedir",
+      "E": "Farklı nitelik veya kullanımdaki stoklar için farklı formül haklı olabilir"
     },
     "answer": "D",
-    "solution": "Satın alma fiyatı (II) ve edinimle doğrudan ilişkili taşıma gideri (III) stok maliyetine girer. Satış ve pazarlama giderleri (I) ise TMS 2 par. 16 uyarınca stok maliyetine alınmaz; bu nedenle yanlıştır. Doğru cevap D.",
+    "solution": "TMS 2 p. 25-26'ya göre işletme **benzer niteliği ve kullanımı olan bütün stoklar için aynı maliyet formülünü** kullanır; farklı nitelik veya kullanım farklı formülü haklı kılabilir, ancak **coğrafi konumdaki farklılık tek başına** farklı formül kullanmayı haklı kılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - maliyet unsurları"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 25-26"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "std-tms2-gen-0026",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. Sabit GÜG normal kapasiteye göre dağıtılır\n\nII. Değişken GÜG fiili kullanıma göre dağıtılır\n\nIII. Normalin üstündeki fire stok maliyetine eklenir",
+    "stem": "Hızlı değişen çok sayıda stok kalemi olan bir perakendeci, stok maliyetini ölçmek için perakende yöntemini kullanmaktadır. Dönem sonu stokların satış fiyatları toplamı 800.000 ₺, uygun brüt kâr marjı %30'dur. Stokların maliyeti kaç ₺'dir?",
     "options": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "615.385",
+      "B": "560.000",
+      "C": "240.000",
+      "D": "1.040.000",
+      "E": "800.000"
     },
     "answer": "B",
-    "solution": "Sabit GÜG normal kapasiteye (I), değişken GÜG fiili kullanıma (II) göre dağıtılır. Normalin üstündeki fire ise stok maliyetine alınmaz, dönem gideri yazılır; bu nedenle III yanlıştır. Doğru cevap B.",
+    "solution": "TMS 2 p. 22'ye göre perakende yönteminde stokların maliyeti, **satış fiyatından uygun brüt kâr marjı yüzdesi düşülerek** belirlenir: 800.000 × %70 = **560.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - GÜG dağıtımı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 22"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "std-tms2-gen-0027",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi TMS 2 kapsamında kullanılabilecek stok maliyeti hesaplama yöntemlerinden biri değildir?",
+    "stem": "Bir işletme yıl içinde kur 1 $ = 30 ₺ iken 10.000 $'a ticari mal ithal etmiştir. Yıl sonunda mallar satılmamıştır; işletme malları yurt dışına 12.000 $'a satmayı beklemektedir ve satış maliyeti yoktur. Yıl sonu kuru 1 $ = 28 ₺'dir. Mallar finansal durum tablosunda kaç ₺ ile gösterilir?",
     "options": {
-      "A": "Son giren ilk çıkar yöntemi",
-      "B": "İlk giren ilk çıkar yöntemi",
-      "C": "Ağırlıklı ortalama maliyet yöntemi",
-      "D": "Özel tanımlama (gerçek parti maliyeti) yöntemi",
-      "E": "Perakende yöntemi"
+      "A": "300.000",
+      "B": "280.000",
+      "C": "336.000",
+      "D": "360.000",
+      "E": "20.000"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 23-25: normal şartlarda birbirinin yerine geçebilen stoklarda ilk giren ilk çıkar veya ağırlıklı ortalama; ikame edilemeyen ve özel projelere ayrılan stoklarda özel tanımlama kullanılır. Par. 21-22 perakende ve standart maliyet yöntemlerine kolaylık tekniği olarak izin verir. Son giren ilk çıkar (LIFO) standarttan çıkarılmıştır.",
+    "solution": "Stok parasal olmayan kalemdir; maliyeti işlem tarihi kuruyla 10.000 × 30 = 300.000 ₺'dir. NGD yıl sonu kuruyla 12.000 × 28 = 336.000 ₺'dir. TMS 2 p. 9 ve TMS 21 p. 25'e göre düşük olan **300.000 ₺** alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 9; TMS 21 p. 23"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "std-tms2-gen-0028",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Son giren ilk çıkar (LIFO) yöntemi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin elindeki 1.000 birim ürünün birim maliyeti 48 ₺'dir. Bunların 600 birimi için bir müşteriyle birim fiyatı 55 ₺ olan kesin satış sözleşmesi vardır; kalan birimlerin tahmini satış fiyatı 50 ₺'dir. Satış maliyeti yoktur. Stoklar kaç ₺ ile gösterilir?",
     "options": {
-      "E": "TMS 2 kapsamında LIFO yönteminin kullanılmasına izin verilmez",
-      "A": "LIFO, TMS 2'de kabul edilen üç yöntemden biri olup serbestçe kullanılabilmektedir",
-      "B": "LIFO yalnızca üretim işletmelerinde kullanılabilir; ticaret işletmelerinde yasaklanmıştır",
-      "C": "LIFO kullanılmak zorunda olan tek yöntem olup FIFO kabul edilmemektedir",
-      "D": "LIFO yalnızca enflasyon dönemlerinde kullanılabilen özel bir yöntem olarak düzenlenmiştir"
+      "A": "53.000",
+      "B": "50.000",
+      "C": "55.000",
+      "D": "46.000",
+      "E": "48.000"
     },
     "answer": "E",
-    "solution": "TMS 2, stok maliyetinin belirlenmesinde ilk giren ilk çıkar (FIFO) ve ağırlıklı ortalama maliyet formüllerine izin verir; son giren ilk çıkar (LIFO) yöntemi kabul edilmez. Doğru cevap E.",
+    "solution": "TMS 2 p. 31'e göre kesin satış sözleşmesi kapsamındaki stokların NGD'si **sözleşme fiyatına** dayanır; fazla miktarın NGD'si genel satış fiyatına göre belirlenir. Her iki kısımda da NGD maliyeti aştığından stoklar maliyetle ölçülür: **48.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - LIFO yasağı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 31"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "std-tms2-gen-0029",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Normal şartlarda ikame edilemeyen stoklar bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme yıl sonunda NGD tahmin ederken, tahmin tarihinde mevcut en güvenilir kanıtları kullanmaktadır. Raporlama döneminden sonra, tablolar onaylanmadan önce gerçekleşen satış fiyatları dönem sonundaki koşulları doğrulamaktadır. Buna göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "E": "Özel projeler için ayrılan ve normalde ikame edilemeyen stokların maliyeti, her bir varlık için ayrı ayrı belirlenir",
-      "A": "Bu tür stoklarda da ağırlıklı ortalama yöntemi kullanılır",
-      "B": "Bu tür stoklarda hiçbir maliyet belirlenmez; ölçüm doğrudan net gerçekleşebilir değerle yapılır ve maliyet ile karşılaştırma yapılmaz",
-      "C": "İkame edilemeyen stok kavramı TMS 2'de yer almayan ve uygulanmayan bir kavram",
-      "D": "Bu tür stokların maliyeti yalnızca satış fiyatının yarısı olarak belirlenir"
+      "A": "Sonraki satışlar TMS 10 kapsamında kanıt sağlayabilir",
+      "B": "Tahminler mevcut en güvenilir kanıtlara dayanır",
+      "C": "Dönem sonu koşullarını doğrulayan sonraki fiyat değişimleri dikkate alınır",
+      "D": "Stokların elde tutulma amacı dikkate alınır",
+      "E": "NGD belirlenirken sonraki olaylar dikkate alınmaz"
     },
     "answer": "E",
-    "solution": "TMS 2: normal şartlarda ikame edilemeyen stok kalemleri ile özel projeler için üretilen ve ayrılan mal veya hizmetlerin maliyeti, her bir varlığa ilişkin özel maliyetlerin belirlenmesi (özel tanımlama) yoluyla bulunur. Doğru cevap E.",
+    "solution": "TMS 2 p. 30'a göre NGD tahminleri mevcut en güvenilir kanıtlara dayanır ve **dönem sonundaki koşulları doğrulayan ölçüde, dönem sonundan sonra meydana gelen olaylarla doğrudan ilişkili fiyat veya maliyet değişimleri** dikkate alınır; stokların elde tutulma amacı da dikkate alınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - özel tanımlama"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 30"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "std-tms2-gen-0030",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "İlk giren ilk çıkar yönteminde dönem sonu stok hangi maliyetlerden oluşur?",
+    "stem": "Bir işletme dönem içinde stoklarını satmış ve ayrıca dönem sonunda bazı stoklarını NGD'ye indirmiştir. TMS 2'ye göre stok değer düşüklüğü tutarı hangi dönemde gider olarak tanınır?",
     "options": {
-      "A": "En önce alınan stokların maliyetlerinden",
-      "B": "En son alınan veya üretilen stokların maliyetlerinden",
-      "C": "Dönem içi alışların basit ortalamasından",
-      "D": "Dönem başı stokun birim maliyetinden",
-      "E": "En düşük birim maliyetli alışlardan"
+      "A": "Denetim tamamlandığında",
+      "B": "Değer düşüklüğünün olduğu dönemde",
+      "C": "Değer düşüklüğü iptal edildiğinde",
+      "D": "Stoklar satıldığında",
+      "E": "Gelecek yılda"
     },
     "answer": "B",
-    "solution": "TMS 2 par. 27: ilk giren ilk çıkar yönteminde ilk alınan stokların ilk satıldığı varsayılır; bu nedenle dönem sonunda kalan stoklar en son alınan veya üretilenlerden oluşur.",
+    "solution": "TMS 2 p. 34'e göre stokların NGD'ye indirilme tutarı ve stoklardaki bütün kayıplar, **indirim veya kaybın olduğu dönemde** gider olarak tanınır; satılan stokların defter değeri ilgili hasılatın tanındığı dönemde gider yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "std-tms2-gen-0031",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Ağırlıklı ortalama maliyet yönteminde birim maliyet nasıl belirlenir?",
+    "stem": "Bir işletmenin dönem sonu stoklarının maliyeti 240.000 ₺, NGD'si 205.000 ₺'dir; önceden ayrılmış karşılık yoktur. Dönem sonunda tanınacak stok değer düşüklüğü gideri kaç ₺'dir?",
     "options": {
-      "A": "Yalnızca dönem içi alımların ortalaması alınarak",
-      "B": "En son alışın birim fiyatı esas alınarak",
-      "C": "Dönem başı stokun birim fiyatı esas alınarak",
-      "D": "Alış fiyatlarının basit aritmetik ortalaması alınarak",
-      "E": "Dönem başı stok ile dönem içi alımların toplam maliyeti toplam miktara bölünerek"
+      "A": "205.000",
+      "B": "445.000",
+      "C": "240.000",
+      "D": "0",
+      "E": "35.000"
     },
     "answer": "E",
-    "solution": "TMS 2 par. 27: ağırlıklı ortalama maliyet yönteminde birim maliyet, dönem başı stok ile dönem içinde alınan veya üretilen benzer stokların ağırlıklı ortalaması alınarak belirlenir. Ortalama dönemsel olarak veya her ilave sevkiyatta hesaplanabilir.",
+    "solution": "TMS 2 p. 9'a göre stoklar maliyet ile NGD'nin düşüğüyle ölçülür; p. 34'e göre NGD'ye indirim tutarı indirimin olduğu dönemde gider yazılır: 240.000 − 205.000 = **35.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 9, 34"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "std-tms2-gen-0032",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Maliyet hesaplama yönteminin tutarlı uygulanması bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, stoklarının NGD'si ile gerçeğe uygun değeri arasındaki farkı değerlendirmektedir. TMS 2'ye göre bu iki kavram arasındaki temel fark hangisidir?",
     "options": {
-      "A": "İşletme, benzer özellik ve kullanıma sahip tüm stoklar için aynı maliyet hesaplama yöntemini kullanır",
-      "B": "İşletme her stok kalemi için farklı bir yöntem seçir; tutarlılık aranmamaktadır",
-      "C": "İşletme yöntemini her yıl değiştirir; aynı yöntemi iki yıl kullanamamaktadır",
-      "D": "Yöntem seçimi tümüyle serbest olup benzer stoklarda farklı yöntemler kullanılabilmektedir",
-      "E": "İşletme, benzer nitelikteki stoklar için farklı maliyet yöntemlerini dönemden döneme serbestçe değiştirerek uygulayabilir"
+      "A": "NGD'nin işletmeye özgü olması",
+      "B": "NGD'nin piyasa katılımcısı bakışı olması",
+      "C": "GUD'nin işletmeye özgü olması",
+      "D": "İki kavramın eşit kabul edilmesi",
+      "E": "NGD'nin vergi esaslı olması"
     },
     "answer": "A",
-    "solution": "TMS 2: işletme, benzer özellik ve kullanıma sahip tüm stoklar için aynı maliyet hesaplama yöntemini kullanır. Farklı özellik veya kullanımdaki stoklar için farklı yöntemler uygun olabilir. Doğru cevap A.",
+    "solution": "TMS 2 p. 7'ye göre NGD, işletmenin stokların olağan faaliyet akışı içinde satışından elde etmeyi beklediği net tutardır ve **işletmeye özgüdür**; gerçeğe uygun değer ise piyasa katılımcıları arasındaki işlemi yansıtır, bu nedenle ikisi farklı olabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - yöntem tutarlılığı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 7"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "std-tms2-gen-0033",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin hammadde hareketleri şöyledir: dönem başı 200 birim × 40 ₺, 5 Mart alışı 300 birim × 50 ₺, 18 Mart alışı 200 birim × 60 ₺. Dönem içinde üretime 600 birim verilmiştir. İlk giren ilk çıkar yöntemine göre üretime verilen malzemenin maliyeti kaç ₺'dir?",
+    "stem": "Bir tarım işletmesi kendi bahçesinden hasat ettiği elmaları depoya almıştır. Hasat noktasında elmaların gerçeğe uygun değeri 100.000 ₺, satış maliyetleri 5.000 ₺'dir. Elmaların TMS 2'ye göre stok maliyeti kaç ₺'dir?",
     "options": {
-      "A": "29.000 ₺",
-      "B": "30.000 ₺",
-      "C": "31.000 ₺",
-      "D": "26.000 ₺",
-      "E": "33.000 ₺"
+      "A": "95.000",
+      "B": "100.000",
+      "C": "105.000",
+      "D": "0",
+      "E": "5.000"
     },
     "answer": "A",
-    "solution": "İlk giren ilk çıkar yönteminde önce alınanlar önce çıkar: 200 × 40 = 8.000 ₺, ardından 300 × 50 = 15.000 ₺, kalan 100 birim son alıştan 100 × 60 = 6.000 ₺. Toplam 8.000 + 15.000 + 6.000 = 29.000 ₺. Dönem sonunda 100 birim × 60 = 6.000 ₺ stok kalır. Ağırlıklı ortalama uygulansaydı 35.000 / 700 = 50 ₺ birim maliyetle 30.000 ₺, son giren ilk çıkar uygulansaydı 31.000 ₺ bulunurdu.",
+    "solution": "TMS 2 p. 20'ye göre işletmenin biyolojik varlıklarından hasat ettiği tarımsal ürünler, TMS 41 uyarınca **hasat noktasındaki satış maliyetleri düşülmüş gerçeğe uygun değerle** ölçülür ve bu tutar TMS 2'nin uygulanmasında stok maliyeti sayılır: **95.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 20; TMS 41 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "std-tms2-gen-0034",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin hammadde hareketleri şöyledir: dönem başı 500 birim × 36 ₺, 8 Nisan alışı 700 birim × 44 ₺, 22 Nisan alışı 800 birim × 50 ₺. Dönem içinde üretime 1.600 birim verilmiştir. Ağırlıklı ortalama maliyet yöntemine göre üretime verilen malzemenin maliyeti kaç ₺'dir?",
+    "stem": "Bir işletme yurt içinden ticari mal satın almıştır. Aşağıdaki kalemlerden hangisi stokların satın alma maliyetine eklenmez?",
     "options": {
-      "A": "68.800 ₺",
-      "B": "74.400 ₺",
-      "C": "71.040 ₺",
-      "D": "72.000 ₺",
-      "E": "88.800 ₺"
+      "A": "Taşıma sigortası",
+      "B": "Geri alınamayan vergiler",
+      "C": "İndirilebilecek KDV",
+      "D": "Nakliye bedeli",
+      "E": "Yükleme ve boşaltma giderleri"
     },
     "answer": "C",
-    "solution": "Toplam maliyet: 500×36 + 700×44 + 800×50 = 18.000 + 30.800 + 40.000 = 88.800 ₺. Toplam miktar 2.000 birim. Ağırlıklı ortalama birim maliyet 88.800 / 2.000 = 44,40 ₺. Üretime verilen 1.600 × 44,40 = 71.040 ₺ (TMS 2 par. 27). İlk giren ilk çıkar uygulansaydı 68.800 ₺, son giren ilk çıkar uygulansaydı 74.400 ₺ bulunurdu; 88.800 ₺ ise kalan 400 birimlik stokun düşülmediği toplam alış maliyetidir.",
+    "solution": "TMS 2 p. 11'e göre satın alma maliyeti alış fiyatı, **vergi idaresinden geri alınamayan** vergiler, nakliye, yükleme-boşaltma ve doğrudan ilişkili diğer maliyetlerden oluşur. **İndirim yoluyla geri alınabilecek KDV** maliyete eklenmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "std-tms2-gen-0035",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin dönem başı stoku 400 birim × 45 ₺, dönem içi alışı 600 birim × 55 ₺'dir. Dönem içinde 700 birim satılmıştır. Ağırlıklı ortalama maliyet yöntemine göre dönem sonu stokunun değeri kaç ₺'dir?",
+    "stem": "Bir işletmenin dönem başı stoku 1.000 birim × 10 ₺'dir. Dönemde önce 2.000 birim 10 ₺'den, sonra 1.000 birim 12 ₺'den alış yapılmış; 2.500 birim satılmıştır. FIFO yöntemine göre satışların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "16.500 ₺",
-      "B": "13.500 ₺",
-      "C": "15.000 ₺",
-      "D": "15.300 ₺",
-      "E": "18.000 ₺"
+      "A": "26.250",
+      "B": "30.000",
+      "C": "17.000",
+      "D": "25.000",
+      "E": "42.000"
     },
     "answer": "D",
-    "solution": "Toplam maliyet: 400×45 + 600×55 = 18.000 + 33.000 = 51.000 ₺. Toplam miktar 1.000 birim. Ağırlıklı ortalama birim maliyet 51.000 / 1.000 = 51 ₺. Dönem sonu stok 1.000 − 700 = 300 birim; değeri 300 × 51 = 15.300 ₺.",
+    "solution": "Satılabilir mallar maliyeti 42.000 ₺, FIFO'ya göre dönem sonu stok 17.000 ₺'dir. Satışların maliyeti 42.000 − 17.000 = **25.000 ₺**; ilk giren birimler satılmış sayılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 25-27"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "std-tms2-gen-0036",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Perakende yöntemi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir ticari işletmenin dönem başı stoku 150.000 ₺, dönem içi alışları 900.000 ₺'dir. Dönem sonu stokların maliyeti 180.000 ₺, NGD'si 150.000 ₺'dir; önceki karşılık yoktur. Dönemde gider olarak tanınan toplam stok tutarı kaç ₺'dir?",
     "options": {
-      "B": "Benzer kâr marjına sahip çok sayıda kalemin hızla değiştiği perakende sektöründe, satış değerinden uygun brüt marj indirilerek maliyet bulunur",
-      "A": "Perakende yöntemi TMS 2'de kabul edilmeyen ve kullanılması yasaklanmış bir yöntem",
-      "C": "Perakende yöntemi yalnızca üretim işletmelerinde kullanılabilen özel bir maliyet yöntemidir",
-      "D": "Perakende yönteminde stoklar satış fiyatıyla ölçülür; brüt kâr marjı hiç düşülmeden bulunan bu tutar maliyet yerine geçer ve hiçbir indirim uygulanmaz",
-      "E": "Perakende yöntemi yalnızca tek bir stok kalemi bulunan işletmelerde uygulanabilmektedir"
+      "A": "840.000",
+      "B": "900.000",
+      "C": "870.000",
+      "D": "1.050.000",
+      "E": "30.000"
     },
     "answer": "B",
-    "solution": "TMS 2: perakende yöntemi, benzer kâr marjına sahip, hızla değişen çok sayıda kalemden oluşan ve başka maliyet yöntemi uygulaması mümkün olmayan perakende sektöründe kullanılır; stok maliyeti, satış değerinden uygun bir brüt kâr marjı indirilerek bulunur. Doğru cevap B.",
+    "solution": "TMS 2 p. 34'e göre satılan stokların defter değeri ve NGD'ye indirim tutarı dönemin gideridir: satışların maliyeti 870.000 ₺ + değer düşüklüğü 30.000 ₺ = **900.000 ₺**; p. 36(d) bu tutarın açıklanmasını ister.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - perakende yöntemi"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 34, 36(d)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "std-tms2-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Standart maliyet yöntemi bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönemdeki üretim maliyetleri: direkt malzeme 150.000 ₺, direkt işçilik 60.000 ₺, stoklara dağıtılan genel üretim giderleri 40.000 ₺'dir. TMS 2'ye göre dönüştürme maliyetleri kaç ₺'dir?",
     "options": {
-      "C": "Sonuçları maliyete yakınsa maliyetin ölçümünde kolaylık amacıyla kullanılabilir; standartlar düzenli gözden geçirilir",
-      "A": "Standart maliyet yöntemi TMS 2'de kabul edilmeyen ve yasaklanan bir yöntemdir",
-      "B": "Standart maliyet yöntemi kullanılırken standartlar gözden geçirilmez; ilk belirlenen tutarlar dönem koşulları değişse dahi sabit kalır",
-      "D": "Standart maliyet yöntemi, sonuçları gerçek maliyetten çok farklı olsa dahi serbestçe kullanılır",
-      "E": "Standart maliyet yöntemi yalnızca hizmet işletmelerinde kullanılabilen bir uygulamadır"
+      "A": "60.000",
+      "B": "40.000",
+      "C": "100.000",
+      "D": "210.000",
+      "E": "250.000"
     },
     "answer": "C",
-    "solution": "TMS 2: standart maliyet yöntemi ve perakende yöntemi gibi maliyet ölçüm teknikleri, sonuçları maliyete yaklaşık olduğu takdirde kullanılabilir. Standart maliyetler düzenli olarak gözden geçirilir ve gerekiyorsa cari koşullara göre revize edilir. Doğru cevap C.",
+    "solution": "TMS 2 p. 12'ye göre dönüştürme maliyetleri, **direkt işçilik** gibi üretimle doğrudan ilgili maliyetler ile sistematik olarak dağıtılan **sabit ve değişken genel üretim giderlerinden** oluşur: 60.000 + 40.000 = **100.000 ₺**; direkt malzeme satın alma maliyetidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - standart maliyet"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 12"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "std-tms2-gen-0038",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangileri TMS 2'ye göre kabul edilen maliyet hesaplama yöntemleridir?\n\nI. Son giren ilk çıkar (LIFO)\n\nII. İlk giren ilk çıkar (FIFO)\n\nIII. Ağırlıklı ortalama maliyet",
+    "stem": "Bir sanat galerisinin elinde maliyetleri sırasıyla 40.000 ₺, 55.000 ₺ ve 70.000 ₺ olan, her biri benzersiz üç tablo vardır. Dönemde 55.000 ₺ ve 70.000 ₺ maliyetli tablolar satılmıştır. Satışların maliyeti kaç ₺'dir?",
     "options": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "95.000",
+      "B": "70.000",
+      "C": "165.000",
+      "D": "125.000",
+      "E": "110.000"
     },
     "answer": "D",
-    "solution": "TMS 2 ikame edilebilen stoklarda FIFO (II) ve ağırlıklı ortalama (III) yöntemlerine izin verir. LIFO (I) ise TMS 2 kapsamında kabul edilmez; bu nedenle yanlıştır. Doğru cevap D.",
+    "solution": "Birbirinin yerine geçemeyen kalemlerde TMS 2 p. 23'e göre **özel tanımlama** kullanılır; satılan tabloların gerçek maliyetleri gider yazılır: 55.000 + 70.000 = **125.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - maliyet yöntemleri"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 23-24"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "std-tms2-gen-0039",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. İkame edilemeyen stoklarda özel tanımlama kullanılır\n\nII. Benzer stoklarda aynı yöntem tutarlı uygulanır\n\nIII. Standart maliyet, sonuçları maliyetten çok farklı olsa da kullanılabilir",
+    "stem": "Aşağıdakilerden hangileri TMS 2'ye göre doğrudur?\n\nI. Düşük üretim döneminde birim başına dağıtılan sabit GÜG artırılır\n\nII. LIFO yöntemi kullanılamaz\n\nIII. Stoklar NGD'ye genellikle kalem bazında indirilir",
     "options": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "I ve II",
+      "B": "Yalnız II",
+      "C": "I, II ve III",
+      "D": "Yalnız III",
+      "E": "II ve III"
     },
     "answer": "E",
-    "solution": "İkame edilemeyen stoklarda özel tanımlama kullanılır (I) ve benzer stoklarda yöntem tutarlı uygulanır (II). Standart maliyet ise ancak sonuçları maliyete yaklaşıksa kullanılabilir; bu nedenle III yanlıştır. Doğru cevap E.",
+    "solution": "TMS 2 p. 25'e göre LIFO kullanılamaz (II); p. 29'a göre NGD'ye indirim genellikle kalem bazında yapılır (III). p. 13'e göre düşük üretimde birim başına sabit GÜG **artırılmaz**, dağıtılmayan kısım gider yazılır (I yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - yöntemler"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13, 25, 29"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "std-tms2-gen-0040",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletme, aynı özellikteki ticari mallarının bir kısmında FIFO, bir kısmında ağırlıklı ortalama yöntemi kullanmak istemektedir. TMS 2 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Aşağıdakilerden hangileri doğrudur?\n\nI. Anormal fireler stok maliyetine dâhil edilir\n\nII. Birbirinin yerine geçemeyen stoklarda özel tanımlama uygulanır\n\nIII. Genel yönetim giderleri stok maliyetine dâhil edilir",
     "options": {
-      "A": "Benzer özellik ve kullanımdaki stoklarda aynı yöntem kullanılmalıdır; iki farklı yöntem uygulanamaz",
-      "B": "İşletme aynı stok grubunda dilediği kadar farklı yöntemi serbestçe kullanabilmektedir",
-      "C": "İşletme tüm stoklarında tek bir yöntem kullanır; istisnası yoktur",
-      "D": "İşletme yöntem seçimini her ay değiştirir; tutarlılık aranmamaktadır",
-      "E": "Farklı yöntem kullanılması hâlinde finansal tablolar kendiliğinden geçersiz sayılır"
+      "A": "Yalnız II",
+      "B": "I, II ve III",
+      "C": "I ve II",
+      "D": "II ve III",
+      "E": "Yalnız I"
     },
     "answer": "A",
-    "solution": "TMS 2: işletme, benzer özellik ve kullanıma sahip tüm stoklar için aynı maliyet hesaplama yöntemini kullanır. Ancak farklı özellik veya kullanımdaki stok grupları için farklı yöntemler uygulanabilir. Doğru cevap A.",
+    "solution": "TMS 2 p. 23'e göre birbirinin yerine geçemeyen stoklarda özel tanımlama uygulanır (II). p. 16'ya göre anormal fireler (I) ve genel yönetim giderleri (III) **stok maliyetine dâhil edilmez**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - yöntem tutarlılığı (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 16, 19, 23"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "std-tms2-gen-0041",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir stokun maliyeti net gerçekleşebilir değerinin üzerindeyse ne yapılır?",
+    "stem": "Bir işletme yurt dışından ticari mal ithal etmiştir. Faturadaki alış bedeli 400.000 ₺, satıcının verdiği ticari iskonto 20.000 ₺, ödenen gümrük vergisi 16.000 ₺, işletmenin deposuna kadar nakliye 9.000 ₺, yolda sigorta 3.000 ₺ ve sonradan indirim konusu yapılacak KDV 80.000 ₺'dir. Stokların satın alma maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Stok maliyet bedeliyle taşınmaya devam eder",
-      "B": "Fark gelecek dönemlere yayılarak itfa edilir",
-      "C": "Fark doğrudan özkaynaklardan indirilir",
-      "D": "Stok net gerçekleşebilir değere indirgenir ve fark dönem gideri yazılır",
-      "E": "Stok net gerçekleşebilir değere indirgenir ve fark diğer kapsamlı gelire alınır"
+      "A": "392.000",
+      "B": "380.000",
+      "C": "428.000",
+      "D": "408.000",
+      "E": "488.000"
     },
     "answer": "D",
-    "solution": "TMS 2 par. 9 ve 34: maliyetin net gerçekleşebilir değerin üzerinde kalması hâlinde stok net gerçekleşebilir değere indirgenir; indirgeme tutarı, indirgemenin yapıldığı dönemde gider olarak muhasebeleştirilir.",
+    "solution": "TMS 2 p. 11'e göre satın alma maliyeti; alış fiyatı, ithalat vergileri ve **vergi idaresinden geri alınamayan** diğer vergiler, nakliye ve doğrudan ilişkili diğer maliyetlerden oluşur; **ticari iskontolar düşülür**. İndirilecek KDV maliyete girmez: 400.000 − 20.000 + 16.000 + 9.000 + 3.000 = **408.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 11"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "std-tms2-gen-0042",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Net gerçekleşebilir değere indirgeme hangi düzeyde yapılır?",
+    "stem": "Normal kapasitesi 10.000 adet olan bir işletme olağandışı yüksek talep nedeniyle dönemde 12.500 adet üretmiştir; sabit GÜG 200.000 ₺'dir. Mamullere birim başına dağıtılacak sabit GÜG kaç ₺'dir?",
     "options": {
-      "A": "Her zaman stokların tamamı üzerinden toplu olarak",
-      "B": "Yalnızca ders veya ürün grubu düzeyinde",
-      "C": "Genellikle her bir stok kalemi bazında",
-      "D": "İşletmenin faaliyet bölümleri düzeyinde",
-      "E": "Yalnızca dönem sonunda tek seferde ve toplam üzerinden"
+      "A": "9",
+      "B": "0",
+      "C": "16",
+      "D": "4",
+      "E": "20"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 29: indirgeme genellikle her bir stok kalemi bazında yapılır. Benzer veya birbiriyle ilişkili kalemlerin gruplanması bazı durumlarda uygun olabilir; ancak stokların tümü ya da bir faaliyet bölümüne ait tüm stoklar üzerinden toplu değerlendirme yapılamaz.",
+    "solution": "TMS 2 p. 13'e göre olağandışı yüksek üretim dönemlerinde birim başına dağıtılan sabit genel üretim gideri, stokların maliyetin üstünde ölçülmemesi için **azaltılır**: 200.000 / 12.500 = **16 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "std-tms2-gen-0043",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Üretimde kullanılacak ilk madde ve malzemenin piyasa fiyatı düşmüş, ancak bunlarla üretilecek mamullerin maliyetin üzerinde satılması bekleniyorsa ne yapılır?",
+    "stem": "Bir işletme peşin fiyatı 500.000 ₺ olan ticari malları normal kredi koşullarını aşan bir vadeyle 560.000 ₺'ye satın almıştır. Stokların maliyeti kaç ₺'dir?",
     "options": {
-      "A": "İlk madde ve malzeme piyasa fiyatına indirgenir",
-      "B": "İlk madde ve malzeme yerine mamul stoku indirgenir",
-      "C": "Fark gelecek dönem maliyetlerine aktarılır",
-      "D": "İlk madde ve malzeme gerçeğe uygun değerine yükseltilir",
-      "E": "İlk madde ve malzeme değer düşüklüğüne uğratılmaz; maliyetle taşınmaya devam eder"
+      "A": "560.000",
+      "B": "530.000",
+      "C": "620.000",
+      "D": "60.000",
+      "E": "500.000"
     },
     "answer": "E",
-    "solution": "TMS 2 par. 32: mamullerin maliyetin üzerinde satılması bekleniyorsa, üretimde kullanılacak ilk madde ve malzeme maliyetin altına indirgenmez. Malzeme fiyatındaki düşüş mamul maliyetinin geri kazanılamayacağını gösteriyorsa indirgeme yapılır.",
+    "solution": "TMS 2 p. 18'e göre stoklar vadeli alındığında ve anlaşma bir finansman unsuru içeriyorsa, normal kredi koşullarıyla ödenecek bedel ile ödenen tutar arasındaki fark **finansman süresi boyunca faiz gideri** olarak tanınır: stok maliyeti **500.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 18"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "std-tms2-gen-0044",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Önceki dönemde yapılmış bir değer düşüklüğü indirgemesi hangi sınıra kadar iptal edilebilir?",
+    "stem": "Bir mimarlık firması, müşterisi için yürüttüğü ve henüz hasılat tanınmamış bir projede çalışan mimarların ücretleri ile doğrudan malzeme maliyetlerini izlemektedir. TMS 2'ye göre hizmet işletmesinin stok maliyetine hangi maliyetler dâhil edilmez?",
     "options": {
-      "A": "Yeni net gerçekleşebilir değere kadar sınırsız biçimde",
-      "B": "İndirgeme tutarının yarısına kadar",
-      "C": "Stokun orijinal maliyetini aşmayacak tutara kadar",
-      "D": "İptal yapılamaz; indirgeme kalıcıdır",
-      "E": "Stokun tahmini satış fiyatına kadar"
+      "A": "Projedeki mimarların ücretleri",
+      "B": "Doğrudan personel giderleri",
+      "C": "Genel yönetim personelinin ücretleri",
+      "D": "Doğrudan ilişkili genel giderler",
+      "E": "Doğrudan malzemeler"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 33: net gerçekleşebilir değeri artıran koşullar oluştuğunda önceki indirgeme iptal edilir; iptal sonrası yeni defter değeri, maliyet ile yeni net gerçekleşebilir değerin düşük olanını aşamaz. Yani stok orijinal maliyetinin üzerine çıkarılamaz.",
+    "solution": "TMS 2 p. 19'a göre hizmet sunucusunun stok maliyeti; hizmeti doğrudan sunan personelin işçilik ve diğer maliyetleri ile ilişkili genel giderlerden oluşur; **satış ve genel yönetim personelinin maliyetleri dâhil edilmez**. (Bu tür maliyetler TFRS 15 kapsamındaki sözleşmelerde farklı değerlendirilebilir.)",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 19"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "std-tms2-gen-0045",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi TMS 2'ye göre stokların gider olarak muhasebeleştirilmesi bakımından yanlıştır?",
+    "stem": "Bir işletme, enflasyon döneminde vergi yükünü azaltmak amacıyla stoklarını 'son giren ilk çıkar' (LIFO) yöntemiyle değerlemek istemektedir. TMS 2'ye göre bu yöntem hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Satılan stokun defter değeri, satışın yapıldığı dönemden bağımsız olarak dönem sonunda toplu yazılır",
-      "B": "Stok satıldığında defter değeri, hasılatın muhasebeleştirildiği dönemde gider yazılır",
-      "C": "Net gerçekleşebilir değere indirgemeden doğan tutar, indirgemenin yapıldığı dönemde gider yazılır",
-      "D": "İndirgemenin iptalinden doğan tutar, iptalin gerçekleştiği dönemde gider tutarından düşülür",
-      "E": "Başka bir varlığın maliyetine dağıtılan stoklar, o varlığın ömrü boyunca gider yazılır"
+      "A": "Kullanılamaz",
+      "B": "Mamullerde kullanılır",
+      "C": "Perakendecilerce kullanılır",
+      "D": "Kullanılabilir",
+      "E": "Açıklama yapılarak kullanılır"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 34-35: stok satıldığında defter değeri, ilgili hasılatın muhasebeleştirildiği dönemde gider olarak kaydedilir — dönemsellik ve eşleştirme gereği. Toplu dönem sonu yazımı bu ilkeye aykırıdır.",
+    "solution": "TMS 2 p. 25'e göre stokların maliyeti **FIFO veya ağırlıklı ortalama maliyet** formülüyle belirlenir (özel tanımlama gerektirmeyenler için); LIFO yöntemine izin verilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 25"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "std-tms2-gen-0046",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin dönem sonu stokları üç kalemden oluşmaktadır: A malı maliyet 120.000 ₺ / net gerçekleşebilir değer 135.000 ₺; B malı maliyet 90.000 ₺ / net gerçekleşebilir değer 74.000 ₺; C malı maliyet 60.000 ₺ / net gerçekleşebilir değer 55.000 ₺. Stoklar kalem bazında değerlendiğine göre finansal durum tablosunda gösterilecek toplam tutar kaç ₺'dir?",
+    "stem": "Bir gıda şirketinin stoklarında henüz paketlenmemiş 2.000 kg kahve vardır. Kahvenin maliyeti 145 ₺/kg, paketlenmiş hâldeki tahmini satış fiyatı 160 ₺/kg, paketleme (tamamlanma) maliyeti 12 ₺/kg ve tahmini satış maliyeti 8 ₺/kg'dır. Kahve finansal tablolarda kaç ₺ ile gösterilir?",
     "options": {
-      "A": "270.000 ₺",
-      "B": "264.000 ₺",
-      "C": "249.000 ₺",
-      "D": "255.000 ₺",
-      "E": "244.000 ₺"
+      "A": "320.000",
+      "B": "296.000",
+      "C": "280.000",
+      "D": "304.000",
+      "E": "290.000"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 29: net gerçekleşebilir değere indirgeme genellikle her bir stok kalemi bazında yapılır. A: düşük olan 120.000 ₺; B: 74.000 ₺; C: 55.000 ₺. Toplam 120.000 + 74.000 + 55.000 = 249.000 ₺. Kalemlerin toplamı üzerinden karşılaştırma yapmak (270.000 ↔ 264.000) standarda aykırıdır.",
+    "solution": "TMS 2 p. 6'ya göre NGD, tahmini satış fiyatından **tahmini tamamlanma maliyeti ve satış için gerekli tahmini maliyetler** düşülerek bulunur: 160 − 12 − 8 = 140 ₺/kg. p. 9'a göre maliyet (145) ile NGD'nin düşük olanı alınır: 2.000 × 140 = **280.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6, 9"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "std-tms2-gen-0047",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Maliyeti 36.000 ₺ olan bir mamulün tahmini satış fiyatı 40.000 ₺, tamamlanma maliyeti 2.000 ₺ ve satış gideri 3.000 ₺'dir. TMS 2'ye göre yapılacak işlem aşağıdakilerden hangisidir?",
+    "stem": "Bir üretim işletmesinin elinde maliyeti 90.000 ₺ olan hammadde vardır; hammaddenin piyasa fiyatı düşmüş ve yenileme maliyeti 70.000 ₺'ye inmiştir. Bu hammaddenin kullanılacağı mamullerin tahmini maliyeti 300.000 ₺, tahmini NGD'si 320.000 ₺'dir. Hammadde finansal tablolarda kaç ₺ ile gösterilir?",
     "options": {
-      "A": "Stok 36.000 ₺ ile taşınmaya devam eder; işlem yapılmaz",
-      "B": "Stok 38.000 ₺'ye indirgenir ve 2.000 ₺ gider yazılır",
-      "C": "Stok 40.000 ₺'ye yükseltilir ve 4.000 ₺ kazanç yazılır",
-      "D": "Stok 35.000 ₺'ye indirgenir; fark doğrudan özkaynağa alınır",
-      "E": "Stok 35.000 ₺'ye indirgenir ve 1.000 ₺ gider yazılır"
+      "A": "80.000",
+      "B": "110.000",
+      "C": "70.000",
+      "D": "20.000",
+      "E": "90.000"
     },
     "answer": "E",
-    "solution": "Net gerçekleşebilir değer: 40.000 − 2.000 − 3.000 = 35.000 ₺. Maliyet 36.000 ₺ bunun üzerindedir; TMS 2 par. 9 ve 34 uyarınca stok 35.000 ₺'ye indirgenir ve 1.000 ₺ fark indirgemenin yapıldığı dönemde gider olarak muhasebeleştirilir.",
+    "solution": "TMS 2 p. 32'ye göre üretimde kullanılacak hammaddeler, dâhil olacakları mamullerin **maliyet veya maliyetin üzerinde satılması bekleniyorsa** maliyetin altına indirilmez. Mamullerin NGD'si maliyetini aştığından hammadde maliyetle, **90.000 ₺** ile gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "std-tms2-gen-0048",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Maliyeti 90.000 ₺ olan bir stok, önceki dönemde net gerçekleşebilir değeri 72.000 ₺'ye düştüğü için indirgenmiştir. Cari dönemde koşullar iyileşmiş ve net gerçekleşebilir değer 96.000 ₺'ye yükselmiştir. TMS 2'ye göre stok cari dönem sonunda kaç ₺ ile ölçülür ve kaç ₺ iptal kaydedilir?",
+    "stem": "Bir işletmenin elindeki 1.000 birim ürünün birim maliyeti 48 ₺'dir. Bunların 600 birimi için birim fiyatı 52 ₺ olan kesin satış sözleşmesi vardır; kalan birimlerin piyasa satış fiyatı 44 ₺'ye düşmüştür. Satış maliyeti yoktur. Stoklar kaç ₺ ile gösterilir?",
     "options": {
-      "A": "96.000 ₺ ile ölçülür; 24.000 ₺ iptal edilir",
-      "B": "72.000 ₺ ile ölçülür; iptal kaydedilmez",
-      "C": "90.000 ₺ ile ölçülür; 18.000 ₺ iptal edilir",
-      "D": "90.000 ₺ ile ölçülür; 6.000 ₺ iptal edilir",
-      "E": "96.000 ₺ ile ölçülür; 18.000 ₺ iptal edilir"
+      "A": "48.800",
+      "B": "48.000",
+      "C": "46.400",
+      "D": "44.000",
+      "E": "45.600"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 33: koşullar değiştiğinde önceki indirgeme iptal edilir; ancak yeni defter değeri maliyet ile yeni net gerçekleşebilir değerin düşük olanını aşamaz. Maliyet 90.000 ₺, NGD 96.000 ₺ olduğundan stok 90.000 ₺ ile ölçülür; iptal tutarı 90.000 − 72.000 = 18.000 ₺'dir.",
+    "solution": "TMS 2 p. 31'e göre sözleşmeli kısım sözleşme fiyatıyla, fazla kısım genel satış fiyatıyla değerlendirilir: 600 × 48 + 400 × 44 = **46.400 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 31"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "std-tms2-gen-0049",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Maliyeti 90.000 ₺ olan ve önceki dönemde değer düşüklüğü ayrılan stokun net gerçekleşebilir değeri cari dönemde 95.000 ₺'ye yükselmiştir. Yeni defter değeri kaç TL olur?",
+    "stem": "Bir işletmenin stoklarındaki bir kısım ürün, depodaki nem nedeniyle hasar görmüş ve satış fiyatları düşmüştür. TMS 2'ye göre bu stokların maliyetinin geri kazanılamaması durumunda ne yapılır?",
     "options": {
-      "D": "90.000 ₺",
-      "A": "95.000 ₺",
-      "B": "185.000 ₺",
-      "C": "5.000 ₺",
-      "E": "45.000 ₺"
+      "A": "Maliyetle bırakılır",
+      "B": "Özkaynaktan düşülür",
+      "C": "Dipnotla yetinilir",
+      "D": "NGD'ye indirilir",
+      "E": "Yeniden değerlenir"
     },
     "answer": "D",
-    "solution": "İptal, defter değerinin orijinal maliyeti aşmasına izin vermez. NGD (95.000) maliyetin (90.000) üzerinde olduğundan defter değeri maliyetle sınırlı kalır: 90.000 ₺. Doğru cevap D.",
+    "solution": "TMS 2 p. 28'e göre stoklar hasar görmüşse, tamamen veya kısmen eskimişse ya da satış fiyatları düşmüşse maliyetleri geri kazanılamayabilir; stoklar **net gerçekleşebilir değerine indirilir**, çünkü varlıklar satış veya kullanımla gerçekleşmesi beklenen tutarın üzerinde taşınmamalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - iptalin maliyet sınırı"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 28"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "std-tms2-gen-0050",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin ilk madde ve malzemesinin piyasa fiyatı düşmüş; ancak bu malzemeyle üretilecek mamullerin maliyetin üzerinde satılması beklenmektedir. TMS 2 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme ürettiği stokların bir kısmını kendi kullanımı için maddi duran varlık yapımında kullanmıştır. Bu stokların maliyeti hakkında aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "E": "İlk madde ve malzeme değer düşüklüğüne uğratılmaz; maliyetle taşınmaya devam eder",
-      "A": "İlk madde ve malzeme düşen piyasa fiyatına indirgenir",
-      "B": "İlk madde ve malzeme doğrudan gider yazılarak stoklardan tümüyle çıkarılır",
-      "C": "Mamullerin kârlı satılacak olması ilk madde ve malzemenin değerlemesini hiç etkilememektedir",
-      "D": "İlk madde ve malzeme satış fiyatı üzerinden yeniden ölçülür"
+      "A": "Genel yönetim giderine eklenir",
+      "B": "Satışların maliyetine eklenir",
+      "C": "Diğer kapsamlı gelire alınır",
+      "D": "Özkaynaktan düşülür",
+      "E": "Maddi duran varlığın maliyetine eklenir"
     },
     "answer": "E",
-    "solution": "TMS 2: ilk madde ve malzemenin fiyatı düşse dahi, kullanılacağı mamullerin maliyetin üzerinde satılması bekleniyorsa ilk madde ve malzeme maliyetin altına indirgenmez. Doğru cevap E.",
+    "solution": "TMS 2 p. 35'e göre bazı stoklar başka varlık hesaplarına, örneğin **kendi imal ettiği maddi duran varlığın bileşeni** olarak kullanılabilir; bu şekilde kullanılan stoklar o varlığın yararlı ömrü boyunca gider olarak tanınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - ilk madde değer düşüklüğü (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 35"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "std-tms2-gen-0051",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdaki ifadelerden hangileri değer düşüklüğü bakımından doğrudur?\n\nI. İptal, stokun orijinal maliyetini aşabilir\n\nII. İndirgeme genellikle kalem bazında yapılır\n\nIII. Koşullar değişirse indirgeme iptal edilebilir",
+    "stem": "Bir işletme TMS 2 kapsamında stoklarına ilişkin açıklamalarını hazırlamaktadır. Aşağıdakilerden hangisinin açıklanması TMS 2'de istenmez?",
     "options": {
-      "D": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "Kullanılan maliyet formülleri",
+      "B": "Stokların toplam defter değeri",
+      "C": "Stok alışlarının yapıldığı tedarikçilerin adları",
+      "D": "Dönemde gider yazılan stok tutarı",
+      "E": "Borçlara teminat olarak rehnedilen stokların defter değeri"
     },
     "answer": "C",
-    "solution": "İndirgeme kalem bazında yapılır (II) ve koşullar değişirse iptal edilebilir (III). Ancak iptal, defter değerinin orijinal maliyeti aşmasına izin vermez; bu nedenle I yanlıştır. Doğru cevap C.",
+    "solution": "TMS 2 p. 36'ya göre işletme; kullanılan maliyet formülleri dâhil muhasebe politikalarını, stokların toplam defter değerini ve sınıflandırmasını, dönemde gider yazılan stok tutarını, değer düşüklükleri ve iptallerini ve **teminat olarak rehnedilen stokların** defter değerini açıklar. Tedarikçi adları istenmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - değer düşüklüğü"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 36"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "std-tms2-gen-0052",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisinin TMS 2'ye göre dipnotlarda açıklanması gerekli değildir?",
+    "stem": "Bir rafineri bir üretim sürecinde ana ürünle birlikte önemsiz tutarda bir yan ürün elde etmiştir. Sürecin toplam üretim maliyeti 500.000 ₺, yan ürünün net gerçekleşebilir değeri 30.000 ₺'dir. Ana ürünün maliyeti kaç ₺'dir?",
     "options": {
-      "A": "Stokların ölçümünde benimsenen muhasebe politikaları ve maliyet hesaplama yöntemi",
-      "B": "Stokların toplam defter değeri ve uygun sınıflar itibarıyla dağılımı",
-      "C": "Stokların tedarik edildiği satıcıların ticaret unvanları",
-      "D": "Dönem içinde gider olarak muhasebeleştirilen stok tutarı",
-      "E": "Net gerçekleşebilir değere indirgeme ve iptal tutarları ile iptali gerektiren koşullar"
+      "A": "500.000",
+      "B": "30.000",
+      "C": "470.000",
+      "D": "530.000",
+      "E": "250.000"
     },
     "answer": "C",
-    "solution": "TMS 2 par. 36: açıklanacaklar; muhasebe politikaları ve maliyet yöntemi, toplam defter değeri ve sınıflara göre dağılım, gerçeğe uygun değerinden satış maliyeti düşülerek ölçülen stoklar, dönem gideri yazılan tutar, indirgeme ve iptal tutarları ile bunların koşullarıdır. Satıcı unvanları standartta yer almaz.",
+    "solution": "TMS 2 p. 14'e göre önemsiz yan ürünler çoğunlukla **net gerçekleşebilir değerleriyle** ölçülür ve bu değer **ana ürünün maliyetinden düşülür**: 500.000 − 30.000 = **470.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 14"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "std-tms2-gen-0053",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Stok maliyetine alınmayan giderler ne zaman muhasebeleştirilir?",
+    "stem": "Bir işletme sabit genel üretim giderlerini dağıtmak için normal kapasiteyi belirlemektedir. TMS 2'ye göre normal kapasite nasıl tanımlanır?",
     "options": {
-      "A": "Oluştukları dönemde gider olarak",
-      "B": "İlgili stok satıldığında gider olarak",
-      "C": "Stokun kalan ömrüne yayılarak",
-      "D": "Doğrudan özkaynaklardan indirim olarak",
-      "E": "Dönem sonunda stok maliyetine eklenerek"
+      "A": "Planlı bakım dâhil beklenen ortalama üretim",
+      "B": "Bir önceki yılın üretimi",
+      "C": "Satış bütçesindeki miktar",
+      "D": "Tesisin teorik azami üretimi",
+      "E": "Cari dönemin fiilî üretimi"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 16-18: normalin üstündeki fire, gereksiz depolama, ilgisiz genel yönetim ve satış giderleri stok maliyetine alınmaz; oluştukları dönemde gider olarak muhasebeleştirilir. Satışa bağlanmaz, ertelenmez.",
+    "solution": "TMS 2 p. 13'e göre normal kapasite, planlı bakımlardan kaynaklanan kapasite kaybı da dikkate alınarak **normal koşullarda birkaç dönem ya da mevsim boyunca ortalama olarak ulaşılması beklenen üretimdir**; fiilî üretim normale yakınsa kullanılabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 13"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "std-tms2-gen-0054",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletmenin stoklarının bir kısmı zarar görmüş ve satılabilir değeri düşmüştür. TMS 2 bakımından aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletmenin elinde birim maliyeti 50 ₺ olan 1.000 adet yarı mamul vardır. Yarı mamullerin tamamlanması için birim başına 20 ₺ daha harcanacak; mamul birim 75 ₺'ye satılacak ve birim başına 8 ₺ satış gideri katlanılacaktır. Yarı mamuller finansal tablolarda kaç ₺ ile gösterilir?",
     "options": {
-      "D": "Zarar gören stoklar net gerçekleşebilir değere indirgenir ve aradaki fark gider yazılır",
-      "A": "Zarar gören stoklar maliyet değeriyle taşınmaya devam eder; indirgeme yapılmaz",
-      "B": "Zarar gören stoklar doğrudan stoklardan çıkarılır ve hiçbir tutar finansal tablolara alınmaz",
-      "C": "Zarar gören stoklar orijinal satış fiyatı üzerinden değerlenerek stokta gösterilir",
-      "E": "Zarar gören stokların değerlemesi yalnızca sigorta şirketinin belirlediği tutara göre yapılır"
+      "A": "55.000",
+      "B": "50.000",
+      "C": "67.000",
+      "D": "47.000",
+      "E": "75.000"
     },
     "answer": "D",
-    "solution": "TMS 2: stoklar zarar görmüş, kısmen ya da tamamen kullanılamaz hâle gelmişse maliyetleri geri kazanılamayabilir. Bu durumda stoklar net gerçekleşebilir değere indirgenir ve indirgeme gider olarak muhasebeleştirilir. Doğru cevap D.",
+    "solution": "Yarı mamulün NGD'si: 75 − 20 (tamamlanma) − 8 (satış) = 47 ₺. Maliyet 50 ₺ olduğundan düşük olan alınır: 1.000 × 47 = **47.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - değer düşüklüğü (senaryo)"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "std-tms2-gen-0055",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Net gerçekleşebilir değer tahmininde hangi bilgiler esas alınır?",
+    "stem": "Bir işletme geçen yıl maliyeti 100.000 ₺ olan stoklar için 20.000 ₺ değer düşüklüğü ayırmıştır. Bu yıl sonunda aynı stoklar elde olup piyasa koşullarının iyileşmesiyle NGD 130.000 ₺'ye yükselmiştir. İptal edilecek karşılık kaç ₺'dir?",
     "options": {
-      "A": "Tahmin tarihinde mevcut en güvenilir kanıtlar ile dönem sonu sonrası olayların doğruladığı bilgiler",
-      "B": "Yalnızca dönem sonu tarihindeki liste fiyatları",
-      "C": "Yalnızca stokun alış tarihindeki piyasa koşulları",
-      "D": "İşletmenin gelecek üç yıla ilişkin bütçe tahminleri",
-      "E": "Yalnızca bağımsız değerleme kuruluşunun raporu"
+      "A": "20.000",
+      "B": "0",
+      "C": "130.000",
+      "D": "30.000",
+      "E": "50.000"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 30-31: net gerçekleşebilir değer tahmini, tahminin yapıldığı tarihte mevcut en güvenilir kanıtlara dayanır. Dönem sonundan sonra ortaya çıkan ve dönem sonundaki koşulları doğrulayan olaylar da dikkate alınır.",
+    "solution": "TMS 2 p. 33'e göre iptal **önceki değer düşüklüğü tutarıyla sınırlıdır**; yeni defter değeri maliyet ile NGD'nin düşüğüdür. Stoklar maliyete (100.000 ₺) kadar yükseltilebilir: iptal **20.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 33"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "std-tms2-gen-0056",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Kesin bir satış sözleşmesine bağlanmış stoklarda net gerçekleşebilir değer neye göre belirlenir?",
+    "stem": "Bir inşaat şirketinin elindeki varlıklar şunlardır: satmak için inşa ettiği konutlar, satış amacıyla elde tuttuğu arsalar, inşaatlarda kullanacağı çimento, kendi merkez ofisi olarak kullandığı bina ve satılmak üzere yapımı süren villalar. Bunlardan hangisi stok değildir?",
     "options": {
-      "A": "Dönem sonundaki genel piyasa fiyatına göre",
-      "B": "Sözleşme fiyatına göre",
-      "C": "Stokun alış maliyetine göre",
-      "D": "Sözleşme fiyatı ile piyasa fiyatının yüksek olanına göre",
-      "E": "Rakip işletmelerin satış fiyatlarına göre"
+      "A": "Satış amaçlı arsalar",
+      "B": "Merkez ofis binası",
+      "C": "Yapımı süren villalar",
+      "D": "Çimento",
+      "E": "Satmak için inşa edilen konutlar"
     },
     "answer": "B",
-    "solution": "TMS 2 par. 31: elde bulunan stok miktarını aşmayan kesin satış sözleşmelerine konu stoklarda net gerçekleşebilir değer sözleşme fiyatı esas alınarak belirlenir. Sözleşme miktarını aşan kısım için genel satış fiyatları kullanılır.",
+    "solution": "TMS 2 p. 6'ya göre stoklar, olağan faaliyet akışında satış amacıyla elde tutulan, satış amacıyla üretim sürecinde bulunan veya üretimde kullanılacak varlıklardır. İşletmenin **kendi kullanımındaki bina** TMS 16 kapsamında maddi duran varlıktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6; TMS 16"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "std-tms2-gen-0057",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Net gerçekleşebilir değer ne sıklıkla yeniden değerlendirilir?",
+    "stem": "Bir tekstil işletmesi NGD'ye indirim yaparken stoklarını gruplamak istemektedir. TMS 2'ye göre aşağıdakilerden hangisi uygun bir gruplama olabilir?",
     "options": {
-      "A": "Yalnızca stok satıldığında",
-      "B": "Her raporlama döneminde",
-      "C": "Yalnızca değer düşüklüğü ilk kez oluştuğunda",
-      "D": "Üç yılda bir",
-      "E": "Yalnızca işletme yönetimi talep ettiğinde"
+      "A": "Bütün mamuller",
+      "B": "Aynı ürün hattına ait benzer kalemler",
+      "C": "İşletmenin toplam stokları",
+      "D": "Bir faaliyet bölümündeki bütün stoklar",
+      "E": "Bütün hazır giyim ürünleri"
     },
     "answer": "B",
-    "solution": "TMS 2 par. 33: stoklar sonraki her dönemde net gerçekleşebilir değer açısından yeniden değerlendirilir. Değeri düşüren koşullar ortadan kalkmışsa önceki indirgeme iptal edilir.",
+    "solution": "TMS 2 p. 29'a göre stoklar genellikle kalem bazında indirilir; ancak **aynı ürün hattına ait, benzer amaç veya kullanımı olan, aynı coğrafi bölgede üretilip pazarlanan ve ayrı değerlemesi pratik olmayan** kalemler gruplanabilir. Mamuller veya bir sektörün bütün stokları gibi sınıflandırmalar temelinde indirim uygun değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 29"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "std-tms2-gen-0058",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdakilerden hangisi hizmet sunan bir işletmenin stok maliyetine dâhil edilmez?",
+    "stem": "Bir işletme bu yıl, geçen yıl ayırdığı stok değer düşüklüğünün bir kısmını ürün fiyatlarının yükselmesi nedeniyle iptal etmiştir. TMS 2'ye göre bu iptale ilişkin olarak hangi bilgi açıklanır?",
     "options": {
-      "A": "Satış ve genel yönetim personelinin ücretleri",
-      "B": "Hizmeti doğrudan sunan personelin ücretleri",
-      "C": "Hizmeti doğrudan sunan personelin gözetiminde çalışanların ücretleri",
-      "D": "Hizmet sunumuyla doğrudan ilişkili genel giderler",
-      "E": "Hizmeti doğrudan sunan personele ilişkin sosyal güvenlik yükleri"
+      "A": "İptale yol açan koşullar",
+      "B": "Gelecek yıl fiyat tahmini",
+      "C": "Vergi idaresinin görüşü",
+      "D": "İptali onaylayan yöneticinin adı",
+      "E": "Rakiplerin stok değerleri"
     },
     "answer": "A",
-    "solution": "TMS 2 par. 19: hizmet sunan işletmelerde stok maliyeti; hizmeti sunan personelin ücretleri, gözetim personeli giderleri ve ilgili genel giderlerden oluşur. Satış ve genel yönetim personelinin ücretleri maliyete alınmaz, gider olarak muhasebeleştirilir.",
+    "solution": "TMS 2 p. 36(f)-(g)'ye göre işletme dönemde gider olarak tanınan tutardaki azalış olarak muhasebeleştirilen **değer düşüklüğü iptalinin tutarını** ve **iptale yol açan olay ve koşulları** açıklar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 36(f)-(g)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "std-tms2-gen-0059",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Bir işletme liste fiyatı 150.000 ₺ olan ticari malı %10 ticari iskonto ile satın almıştır. Ayrıca sonradan vergi idaresinden iade alınabilecek 27.000 ₺ vergi ödenmiş, nakliye için 8.000 ₺ harcanmıştır. TMS 2'ye göre stokun maliyeti kaç ₺'dir?",
+    "stem": "Net gerçekleşebilir değere ilişkin aşağıdakilerden hangileri doğrudur?\n\nI. Tahmini satış fiyatından tamamlanma ve satış maliyetleri düşülür\n\nII. Kesin satış sözleşmesi kapsamındaki stoklarda sözleşme fiyatı esas alınır\n\nIII. Mamuller maliyetin üzerinde satılacaksa hammaddeler maliyetin altına indirilmez",
     "options": {
-      "A": "170.000 ₺",
-      "B": "143.000 ₺",
-      "C": "158.000 ₺",
-      "D": "135.000 ₺",
-      "E": "165.000 ₺"
+      "A": "Yalnız I",
+      "B": "I, II ve III",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I ve II"
     },
     "answer": "B",
-    "solution": "Ticari iskonto düşülür: 150.000 × %10 = 15.000 ₺ indirim, kalan 135.000 ₺. Nakliye eklenir: 135.000 + 8.000 = 143.000 ₺. TMS 2 par. 11 uyarınca sonradan iade alınabilen vergiler maliyete dâhil edilmez.",
+    "solution": "TMS 2 p. 6'ya göre NGD tanımı (I), p. 31'e göre sözleşme fiyatı (II) ve p. 32'ye göre hammaddelerin maliyetin altına indirilmemesi (III) doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartlari TMS 2",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 6, 31-32"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "std-tms2-gen-0060",
     "ders": "muhasebe_standartlari",
     "konu": "tms_2_stoklar",
-    "stem": "Aşağıdaki ifadelerden hangileri TMS 2 bakımından doğrudur?\n\nI. Hizmet işletmelerinde de stok kavramı vardır\n\nII. NGD her raporlama döneminde yeniden değerlendirilir\n\nIII. LIFO yöntemi TMS 2'de kabul edilir",
+    "stem": "Aşağıdakilerden hangileri TMS 2'ye göre doğrudur?\n\nI. Hasat noktasındaki tarımsal ürünler TMS 2 kapsamındadır\n\nII. Perakende yönteminde maliyet satış fiyatından brüt kâr marjı düşülerek bulunur\n\nIII. Standart maliyet sonuçları fiilî maliyete yakınsa kullanılabilir",
     "options": {
-      "D": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "Yalnız III",
+      "B": "I ve II",
+      "C": "Yalnız II",
+      "D": "II ve III",
+      "E": "I, II ve III"
     },
     "answer": "D",
-    "solution": "Hizmet işletmelerinde stok kavramı vardır (I) ve NGD her dönem yeniden değerlendirilir (II). LIFO ise TMS 2'de kabul edilmez; bu nedenle III yanlıştır. Doğru cevap D.",
+    "solution": "TMS 2 p. 22'ye göre perakende yöntemi (II) ve p. 21'e göre standart maliyet (III) doğrudur. Hasat noktasındaki tarımsal ürünler **TMS 41** kapsamındadır; TMS 2 hasattan sonra uygulanır (I yanlış).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Muhasebe Standartları (TMS 2; yapısal)",
-      "legislationRef": "TMS 2 - genel"
+      "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
+      "legislationRef": "TMS 2 p. 2-3, 21-22"
     },
     "validYear": 2026,
     "mockExamId": null
