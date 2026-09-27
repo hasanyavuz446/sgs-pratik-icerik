@@ -33,24 +33,6 @@ YAMA = [
 
     # maliyet_hesaplari: build_fm_maliyet_hesaplari_cok_adimli.py devraldı (2026-09-27)
 
-    # ── dikey_analiz: kalem ÷ net satışlar
-    ("mali_tablolar_analizi/dikey_analiz.json", "mta-dikey-gen-0045",
-     "%60", "%50",
-     [("450.000", "375.000")],
-     "Dikey Yüzde = (375.000 ÷ 750.000) × 100 = **%50**."),
-    ("mali_tablolar_analizi/dikey_analiz.json", "mta-dikey-gen-0046",
-     "%15", "%25",
-     [("120.000", "200.000")],
-     "Dikey Yüzde = (200.000 ÷ 800.000) × 100 = **%25**."),
-    ("mali_tablolar_analizi/dikey_analiz.json", "mta-dikey-gen-0053",
-     "%15", "%10",
-     [("45.000", "30.000")],
-     "Dikey Yüzde = (30.000 ÷ 300.000) × 100 = **%10**."),
-    ("mali_tablolar_analizi/dikey_analiz.json", "mta-dikey-gen-0056",
-     "%20", "%25",
-     [("180.000", "225.000")],
-     "Dikey Yüzde = (225.000 ÷ 900.000) × 100 = **%25**."),
-
     # ── fon_akim: net kâr + nakit çıkışı gerektirmeyen giderler
     ("mali_tablolar_analizi/fon_akim_analizi.json", "mta-fon-gen-0042",
      "200.000", "160.000",

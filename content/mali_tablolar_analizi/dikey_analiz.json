@@ -3,20 +3,20 @@
     "id": "mta-dikey-gen-0001",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey (yüzde) analiz ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Dikey analiz genellikle tek bir döneme uygulandığı için hangi tür analiz sınıfına girer?",
     "options": {
-      "A": "İki ya da daha fazla dönemin aynı kalemlerini karşılaştırıp tutar ve yüzde değişimini ölçen yatay analizdir.",
-      "B": "Bir baz yıl seçilip sonraki dönemlerin bu yıla oranlanmasıyla uzun döneme yayılan eğilimleri ölçen trend analizidir.",
-      "C": "Bilanço ve gelir tablosundaki kalemleri ikişer ikişer birbirine bölerek anlamlı finansal oranlar üreten oran analizi tekniğidir.",
-      "D": "Yalnızca dönem kârı üzerinden ödenecek verginin hesaplandığı, kalemlerin bütüne oranlanmadığı bir işlemdir.",
-      "E": "Bir mali tablodaki her kalemin, seçilen bir bütüne (grup toplamı veya genel toplama) oranlanarak yüzde olarak ifade edilmesidir."
+      "A": "Oran analizi",
+      "B": "Karşılaştırmalı analiz",
+      "C": "Dinamik analiz",
+      "D": "Trend analizi",
+      "E": "Statik analiz"
     },
     "answer": "E",
-    "solution": "**Dikey (yüzde) analiz**; bir mali tablodaki her kalemin, seçilen bir **bütüne** (toplam aktif/net satışlar vb.) oranlanıp **yüzde** olarak ifade edilmesidir.",
+    "solution": "Dikey analiz tek bir dönemin iç yapısını (kalemlerin bütüne oranını) incelediğinden **statik analizdir**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - statik/dinamik"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -25,20 +25,20 @@
     "id": "mta-dikey-gen-0002",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analiz genellikle tek bir döneme uygulandığı için hangi tür analiz sınıfına girer?",
+    "stem": "Dikey analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilançoda baz toplam aktiftir (%100).\n\nII. Kalem yüzdesi = (Kalem ÷ Baz Toplam) × 100.\n\nIII. Gelir tablosunda baz toplam aktiftir (%100).",
     "options": {
-      "A": "Dinamik analiz",
-      "B": "Statik analiz",
-      "C": "Trend analizi",
-      "D": "Karşılaştırmalı analiz",
-      "E": "Oran analizi"
+      "A": "I ve III",
+      "B": "I ve II",
+      "C": "II ve III",
+      "D": "Yalnız I",
+      "E": "I, II ve III"
     },
     "answer": "B",
-    "solution": "Dikey analiz tek bir dönemin iç yapısını (kalemlerin bütüne oranını) incelediğinden **statik analizdir**.",
+    "solution": "**III yanlıştır:** Gelir tablosunun dikey analizinde baz **net satışlardır** (%100), toplam aktif değil; toplam aktif bilançonun bazıdır. **I** (bilanço bazı = toplam aktif) ve **II** (dikey yüzde formülü) doğrudur. Doğru cevap **I ve II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-sınıf; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - statik/dinamik"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -47,20 +47,20 @@
     "id": "mta-dikey-gen-0003",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bilançonun dikey analizinde, kalemlerin oranlandığı ve %100 kabul edilen büyüklük (baz) aşağıdakilerden hangisidir?",
+    "stem": "Dikey analizde bir kalem, genel toplam yerine ait olduğu grubun toplamına da oranlanabilir. Buna göre, dönen varlıklar içindeki stokların payı hesaplanırken payda (baz) ne olmalıdır?",
     "options": {
-      "A": "Toplam aktif (veya eşit olan toplam pasif)",
-      "B": "Gelir tablosundaki net satışlar toplamı",
-      "C": "Dönem net kârı ile brüt satış kârı toplamı",
-      "D": "Bilançodaki özkaynaklar grubunun toplamı",
-      "E": "Kısa vadeli yabancı kaynaklar toplamı"
+      "A": "Dönen varlıklar toplamı",
+      "B": "Kısa vadeli yabancı kaynaklar",
+      "C": "Net satışlar",
+      "D": "Toplam aktif",
+      "E": "Özkaynaklar"
     },
     "answer": "A",
-    "solution": "Bilançonun dikey analizinde baz (**%100**) **toplam aktiftir** (bilanço denkliği gereği toplam pasife eşittir). Her kalem toplam aktife oranlanır.",
+    "solution": "Grup içi dikey yüzdede baz, kalemin ait olduğu **grup toplamıdır**. Stokların dönen varlıklar içindeki payı için payda **dönen varlıklar toplamıdır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-baz; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz (bilanço)"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -69,20 +69,20 @@
     "id": "mta-dikey-gen-0004",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Gelir tablosunun dikey analizinde, kalemlerin oranlandığı ve %100 kabul edilen baz aşağıdakilerden hangisidir?",
+    "stem": "Dikey analiz ile oran analizi arasındaki ilişki için aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "Toplam aktif",
-      "B": "Brüt satış kârı",
-      "C": "Net satışlar",
-      "D": "Özkaynaklar",
-      "E": "Dönem net kârı"
+      "A": "Birbirinin tam yerine geçen tekniklerdir; biri kullanıldığında diğerine ihtiyaç kalmaz ve asla birlikte kullanılamazlar.",
+      "B": "İkisi de dönemler arası tutar değişimini ölçmeye yöneliktir; kalemin bütün içindeki payını ya da kalemler arası oranı vermezler.",
+      "C": "Birbirini tamamlayan tekniklerdir; dikey analiz kalemlerin bütün içindeki payını, oran analizi ise kalemler arası ilişkileri gösterir.",
+      "D": "İkisi de mali tablodaki tek bir kalemin tutarını inceler; kalemler arası ilişkiyi ya da bütün içindeki payı göstermezler.",
+      "E": "Dikey analiz dönemler arası değişimi ölçen dinamik bir teknik, oran analizi ise tek dönemi inceleyen statik bir tekniktir."
     },
     "answer": "C",
-    "solution": "Gelir tablosunun dikey analizinde baz (**%100**) **net satışlardır**. SMM, faaliyet giderleri, kârlar net satışlara oranlanarak yüzdelenir.",
+    "solution": "Dikey analiz (kalemin bütündeki payı) ile oran analizi (kalemler arası ilişki) **birbirini tamamlar**; birlikte kullanıldıklarında daha bütünsel yorum sağlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-baz; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz (gelir tablosu)"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - teknikler"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -91,20 +91,20 @@
     "id": "mta-dikey-gen-0005",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analizde bir kalemin yüzdesi nasıl hesaplanır?",
+    "stem": "Satışların maliyetinin dikey yüzdesi %35 ve faaliyet giderlerinin dikey yüzdesi %25 olan bir işletmenin net satışları 2.400.000 ₺ ise faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "(Kalem Tutarı ÷ Baz Toplam) × 100",
-      "B": "(Baz Toplam ÷ Kalem Tutarı) × 100",
-      "C": "(Cari Dönem − Önceki Dönem) ÷ Önceki Dönem",
-      "D": "Kalem Tutarı × Baz Toplam",
-      "E": "Kalem Tutarı − Baz Toplam"
+      "A": "960.000",
+      "B": "1.440.000",
+      "C": "240.000",
+      "D": "1.560.000",
+      "E": "1.800.000"
     },
     "answer": "A",
-    "solution": "**Dikey Yüzde = (Kalem Tutarı ÷ Baz Toplam) × 100**. Baz; bilançoda toplam aktif, gelir tablosunda net satışlardır.",
+    "solution": "Brüt satış kârı %100 − %35 = %65; faaliyet kârı %65 − %25 = %40. Tutar = 2.400.000 × %40 = **960.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (formül; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -113,20 +113,20 @@
     "id": "mta-dikey-gen-0006",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönen varlıkları 400.000 ₺, toplam aktifi 1.000.000 ₺ olan bir işletmede dönen varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Satışlarının maliyeti 900.000 ₺ olan bir işletmenin brüt satış kârı 300.000 ₺, faaliyet kârı 60.000 ₺'dir. Buna göre faaliyet giderlerinin dikey yüzdesi kaçtır?",
     "options": {
-      "A": "%250",
-      "B": "%25",
-      "C": "%60",
-      "D": "%4",
-      "E": "%40"
+      "A": "%25",
+      "B": "%5",
+      "C": "%80",
+      "D": "%26,67",
+      "E": "%20"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (400.000 ÷ 1.000.000) × 100 = **%40**. Varlıkların %40'ı dönen varlıklardan oluşur.",
+    "solution": "Net satışlar = 900.000 + 300.000 = 1.200.000 ₺. Faaliyet giderleri = 300.000 − 60.000 = 240.000 ₺. Dikey yüzde = 240.000 ÷ 1.200.000 = **%20**. Brüt kâra oranlamak %80, satışların maliyetine oranlamak %26,67 verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -135,20 +135,20 @@
     "id": "mta-dikey-gen-0007",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Stokları 150.000 ₺, toplam aktifi 1.000.000 ₺ olan bir işletmede stokların dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin net satışları 80.000 ₺'dir. Satışların maliyeti faaliyet giderlerinin 3 katıdır. Faaliyet kârının dikey yüzdesi %20 olduğuna göre brüt satış kârının dikey yüzdesi kaçtır?",
     "options": {
-      "A": "%1,5",
-      "B": "%10",
-      "C": "%15",
-      "D": "%150",
-      "E": "%85"
+      "A": "%60",
+      "B": "%20",
+      "C": "%40",
+      "D": "%30",
+      "E": "%80"
     },
     "answer": "C",
-    "solution": "Dikey Yüzde = (150.000 ÷ 1.000.000) × 100 = **%15**.",
+    "solution": "Faaliyet giderleri x ise satışların maliyeti 3x'tir. Faaliyet kârı = %100 − 3x − x = %20 → 4x = %80 → x = %20. Satışların maliyeti %60, brüt satış kârı %100 − %60 = **%40** (kontrol: %40 − %20 = %20).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -157,20 +157,20 @@
     "id": "mta-dikey-gen-0008",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Özkaynakları 600.000 ₺, toplam kaynakları (pasifi) 1.000.000 ₺ olan bir işletmede özkaynakların dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin gelir tablosunda dikey yüzdeler brüt satış kârı için %25, faaliyet kârı için %12 ve dönem net kârı için %4 bulunmuştur. Brüt satış kârı 75.000 ₺, aktif toplamı 150.000 ₺'dir. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "%40",
-      "B": "%60",
-      "C": "%166",
-      "D": "%6",
-      "E": "%100"
+      "A": "Net satışlar 300.000 ₺'dir.",
+      "B": "Aktif kârlılık oranı %4'tür.",
+      "C": "Faaliyet giderleri 39.000 ₺'dir.",
+      "D": "Aktif devir hızı 2'dir.",
+      "E": "Satışların maliyeti 225.000 ₺'dir."
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (600.000 ÷ 1.000.000) × 100 = **%60**. Kaynakların %60'ı özkaynaktır.",
+    "solution": "Net satışlar = 75.000 ÷ 0,25 = 300.000 ₺. Faaliyet giderleri %25 − %12 = %13 → 39.000 ₺; satışların maliyeti %75 → 225.000 ₺; aktif devir = 300.000 ÷ 150.000 = 2. Net kâr = 300.000 × %4 = 12.000 ₺ → aktif kârlılığı 12.000 ÷ 150.000 = %8'dir; %4 net kârın dikey yüzdesidir, ifade yanlıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -179,20 +179,20 @@
     "id": "mta-dikey-gen-0009",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bilançonun dikey analizinde toplam aktifin dikey yüzdesi kaçtır?",
+    "stem": "Net satışları 250.000 ₺, pasif toplamı 1.000.000 ₺ olan bir işletmenin dönem net kârının dikey yüzdesi %16'dır. Buna göre işletmenin aktif kârlılık oranı yüzde kaçtır?",
     "options": {
-      "A": "%50",
-      "B": "Kalemlere göre değişir",
-      "C": "%0",
-      "D": "%100",
-      "E": "%200"
+      "A": "%16",
+      "B": "%40",
+      "C": "%6,40",
+      "D": "%4",
+      "E": "%25"
     },
     "answer": "D",
-    "solution": "Toplam aktif, dikey analizde bazın kendisidir; bu nedenle daima **%100** kabul edilir. Tüm kalemler ona oranlanır.",
+    "solution": "Net kâr = 250.000 × %16 = 40.000 ₺. Aktif (= pasif) kârlılığı = 40.000 ÷ 1.000.000 = **%4**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -201,20 +201,20 @@
     "id": "mta-dikey-gen-0010",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analizin en önemli üstünlüklerinden biri aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin gelir tablosu verileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Brüt satışlar | 1.250.000 |\n| Satış indirimleri | 250.000 |\n| Satışların maliyeti | 620.000 |\n| Faaliyet giderleri | 230.000 |\n| Diğer faaliyetlerden olağan gelirler | 40.000 |\n| Finansman giderleri | 60.000 |\n\nBuna göre olağan kârın dikey yüzdesi kaçtır?",
     "options": {
-      "A": "Kalemleri yüzdeye çevirdiği için, büyüklükleri farklı işletmelerin (veya dönemlerin) yapısal olarak karşılaştırılmasına imkân vermesi",
-      "B": "Yalnızca tek bir işletmenin verileriyle kullanılabilmesi, farklı büyüklükteki işletmelerin karşılaştırılmasına imkân vermemesi",
-      "C": "Kalemleri yüzdeye çevirmeden gelecek yılların satış ve kâr tutarlarını kesin olarak önceden tahmin edebilmesi",
-      "D": "İşletmenin dönem sonunda ödeyeceği vergi tutarını ve vergi sonrası net kârı doğrudan hesaplayabilmesi",
-      "E": "Kasa ve bankadaki nakit mevcudunu fiilen artırarak işletmenin likiditesini ve ödeme gücünü yükseltmesi"
+      "A": "%13",
+      "B": "%38",
+      "C": "%19",
+      "D": "%15",
+      "E": "%10,40"
     },
     "answer": "A",
-    "solution": "Dikey analiz kalemleri **yüzdeye** dönüştürdüğünden, **büyüklükleri farklı işletmelerin/dönemlerin yapısal karşılaştırmasına** imkân verir (mutlak tutar farkı sorun olmaz).",
+    "solution": "Net satışlar = 1.250.000 − 250.000 = 1.000.000 ₺ (dikey analizde %100). Olağan kâr = 1.000.000 − 620.000 − 230.000 + 40.000 − 60.000 = 130.000 ₺ → **%13**. Brüt satışlara oranlamak %10,40 verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-üstünlük; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -223,20 +223,20 @@
     "id": "mta-dikey-gen-0011",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Satışların maliyeti 350.000 ₺, net satışları 500.000 ₺ olan bir işletmede satışların maliyetinin dikey yüzdesi kaçtır?",
+    "stem": "Vergi öncesi kârının dikey yüzdesi %12 olan bir işletmede kurumlar vergisi oranı %25'tir. Buna göre dönem net kârının dikey yüzdesi kaçtır?",
     "options": {
-      "A": "%50",
-      "B": "%30",
-      "C": "%140",
-      "D": "%35",
-      "E": "%70"
+      "A": "%3",
+      "B": "%10",
+      "C": "%12",
+      "D": "%15",
+      "E": "%9"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (350.000 ÷ 500.000) × 100 = **%70**. Net satışların %70'i satışların maliyetidir.",
+    "solution": "Vergi = %12 × %25 = 3 puan. Dönem net kârı = %12 − %3 = **%9** (net satışlara göre).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey gelir tablosu; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -245,20 +245,20 @@
     "id": "mta-dikey-gen-0012",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Brüt satış kârı 150.000 ₺, net satışları 500.000 ₺ olan bir işletmede brüt satış kârının dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin net satışları 2024'te 400.000 ₺, 2025'te 500.000 ₺'dir. Faaliyet giderleri aynı yıllarda 60.000 ₺ ve 70.000 ₺'dir. Buna göre faaliyet giderlerinin dikey yüzdesi nasıl değişmiştir?",
     "options": {
-      "A": "%33",
-      "B": "%70",
-      "C": "%15",
-      "D": "%30",
-      "E": "%3"
+      "A": "%25 artmıştır.",
+      "B": "1 puan artmıştır.",
+      "C": "Değişmemiştir.",
+      "D": "1 puan azalmıştır.",
+      "E": "%16,67 artmıştır."
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (150.000 ÷ 500.000) × 100 = **%30**. (Bu aynı zamanda brüt kâr marjıdır.)",
+    "solution": "2024: 60.000 ÷ 400.000 = %15; 2025: 70.000 ÷ 500.000 = %14. Faaliyet giderleri tutar olarak %16,67 artmış, fakat net satışlar daha hızlı (%25) arttığından dikey yüzde **1 puan azalmıştır**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -267,20 +267,20 @@
     "id": "mta-dikey-gen-0013",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönem net kârı 75.000 ₺, net satışları 500.000 ₺ olan bir işletmede dönem net kârının dikey yüzdesi kaçtır?",
+    "stem": "Toplam pasifleri %100 kabul edilerek yapılan dikey analizde bir işletmenin kısa vadeli yabancı kaynaklarının dikey yüzdesi %30, uzun vadeli yabancı kaynaklarının dikey yüzdesi %50'dir. Kısa vadeli yabancı kaynaklar 90.000 ₺ olduğuna göre özkaynaklar ve toplam aktifler sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "%20",
-      "B": "%15",
-      "C": "%6,7",
-      "D": "%75",
-      "E": "%1,5"
+      "A": "60.000 ve 240.000",
+      "B": "60.000 ve 300.000",
+      "C": "150.000 ve 300.000",
+      "D": "300.000 ve 60.000",
+      "E": "240.000 ve 300.000"
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (75.000 ÷ 500.000) × 100 = **%15**. (Bu aynı zamanda net kâr marjıdır.)",
+    "solution": "Aktif = pasif = 90.000 ÷ 0,30 = 300.000 ₺. Özkaynak payı %100 − %30 − %50 = %20 → **60.000 ₺** ve **300.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -289,20 +289,20 @@
     "id": "mta-dikey-gen-0014",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analizin uygulanabilmesi için en az kaç döneme ait mali tablo gerekir?",
+    "stem": "Aktif toplamı 4.000.000 ₺, dönen varlıklarının dikey yüzdesi %20 ve sürekli sermayesinin dikey yüzdesi %85 olan bir işletmede kısa vadeli borçların duran varlıklara oranı yüzde kaçtır?",
     "options": {
-      "A": "En az üç dönem",
-      "B": "En az iki dönem",
-      "C": "Tek dönem yeterlidir",
-      "D": "En az beş dönem",
-      "E": "Dönem sayısı sınırsız olmalıdır"
+      "A": "%80",
+      "B": "%21,25",
+      "C": "%18,75",
+      "D": "%15",
+      "E": "%75"
     },
     "answer": "C",
-    "solution": "Dikey analiz tek dönemin iç yapısını incelediğinden **tek döneme ait tablo yeterlidir** (statik). Karşılaştırmalı/trend analiz ise birden fazla dönem gerektirir.",
+    "solution": "KVYK = %100 − %85 = %15 → 600.000 ₺; duran varlıklar = %80 → 3.200.000 ₺. Oran = 600.000 ÷ 3.200.000 = **%18,75**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -311,20 +311,20 @@
     "id": "mta-dikey-gen-0015",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Duran varlıkları 600.000 ₺, toplam aktifi 1.000.000 ₺ olan bir işletmede duran varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Pasif toplamı 6.000.000 ₺, kısa vadeli yabancı kaynaklarının dikey yüzdesi %50 ve duran varlıklarının dikey yüzdesi %60 olan bir işletmede dönen varlıkların sürekli sermayeye oranı kaçtır?",
     "options": {
-      "A": "%6",
-      "B": "%40",
-      "C": "%166",
-      "D": "%60",
-      "E": "%100"
+      "A": "1,25",
+      "B": "0,67",
+      "C": "0,40",
+      "D": "0,80",
+      "E": "1,20"
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (600.000 ÷ 1.000.000) × 100 = **%60**. (Dönen varlık %40 + duran varlık %60 = %100.)",
+    "solution": "Dönen varlıklar %40 → 2.400.000 ₺; sürekli sermaye %100 − %50 = %50 → 3.000.000 ₺. Oran = 2.400.000 ÷ 3.000.000 = **0,80**. Paydada KVYK değil sürekli sermaye olduğuna dikkat edilmelidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -333,20 +333,20 @@
     "id": "mta-dikey-gen-0016",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Kısa vadeli yabancı kaynakları 250.000 ₺, toplam kaynakları 1.000.000 ₺ olan bir işletmede kısa vadeli yabancı kaynakların dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin dönen varlık hesaplarına ait dikey yüzdelerin bir kısmı şöyledir:\n\n| Hesap | Aktif içindeki % | Dönen varlık içindeki % |\n|---|---|---|\n| Hazır değerler | 10 | ? |\n| Menkul kıymetler | 7,5 | ? |\n| Ticari alacaklar | 12,5 | ? |\n| Stoklar | ? | 50 |\n| Dönen varlıklar | ? | 100 |\n\nDönen varlıklar yalnız bu dört hesaptan oluştuğuna göre stokların aktif içindeki yüzdesi kaçtır?",
     "options": {
-      "A": "%40",
-      "B": "%25",
-      "C": "%75",
-      "D": "%2,5",
-      "E": "%400"
+      "A": "%20",
+      "B": "%30",
+      "C": "%50",
+      "D": "%60",
+      "E": "%15"
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (250.000 ÷ 1.000.000) × 100 = **%25**.",
+    "solution": "Hazır değerler + menkul kıymetler + ticari alacaklar aktifin %30'udur ve dönen varlıkların kalan %50'sini oluşturur. Dönen varlıklar aktifin %60'ı → stoklar %60 × %50 = **%30**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -355,20 +355,20 @@
     "id": "mta-dikey-gen-0017",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir bilanço kaleminin toplam aktife oranı %8 ise, bu kalemle ilgili aşağıdakilerden hangisi söylenebilir?",
+    "stem": "Bilançonun dikey analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Pasif kalemleri, aktif toplamına değil özkaynak toplamına oranlanır.\n\nII. Aktif toplamı pasif toplamına eşit olduğundan her iki tarafta %100 aynı tutara karşılık gelir.\n\nIII. Dikey yüzdelerin hesaplanması için en az iki dönemin bilançosu gerekir.",
     "options": {
-      "A": "Bu kalem bir gelir tablosu kalemidir.",
-      "B": "Bu kalem toplam aktiften büyüktür.",
-      "C": "Bu kalem toplam aktifin %8'ini oluşturmaktadır.",
-      "D": "Bu kalem mutlaka bir borçtur.",
-      "E": "Bu kalemin tutarı hesaplanamaz."
+      "A": "Yalnız I",
+      "B": "II ve III",
+      "C": "Yalnız II",
+      "D": "I ve III",
+      "E": "I, II ve III"
     },
     "answer": "C",
-    "solution": "Dikey yüzde %8 ise, kalem **toplam aktifin %8'ini** oluşturur. Dikey yüzde, kalemin bütün içindeki payını gösterir.",
+    "solution": "**I yanlıştır:** pasif kalemleri pasif (= aktif) toplamına oranlanır. **II doğrudur.** **III yanlıştır:** dikey analiz tek dönemle yapılabilen statik bir analizdir. Doğru cevap **Yalnız II**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -377,20 +377,20 @@
     "id": "mta-dikey-gen-0018",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Hazır değerleri 80.000 ₺, toplam aktifi 800.000 ₺ olan bir işletmede hazır değerlerin dikey yüzdesi kaçtır?",
+    "stem": "Aktif toplamı içinde kısa vadeli yabancı kaynakların dikey yüzdesi %25, uzun vadeli yabancı kaynakların %20'dir. Özkaynakları 330.000 ₺ olan işletmenin toplam borçları kaç ₺'dir?",
     "options": {
-      "A": "%10",
-      "B": "%8",
-      "C": "%12,5",
-      "D": "%1",
-      "E": "%80"
+      "A": "270.000",
+      "B": "148.500",
+      "C": "82.500",
+      "D": "600.000",
+      "E": "330.000"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (80.000 ÷ 800.000) × 100 = **%10**.",
+    "solution": "Özkaynaklar %55 → aktif = 330.000 ÷ 0,55 = 600.000 ₺. Borçlar %45 → **270.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -399,20 +399,20 @@
     "id": "mta-dikey-gen-0019",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Gelir tablosunun dikey analizinde satışların maliyetinin net satışlara oranı %70 bulunmuştur. Buna göre brüt satış kârının net satışlara oranı (brüt kâr marjı) kaçtır?",
+    "stem": "Aktif toplamı 2.000.000 ₺ olan bir işletmede duran varlıkların dikey yüzdesi %70, sürekli sermayenin dikey yüzdesi %65'tir. Buna göre işletmenin net çalışma sermayesi aşağıdakilerden hangisidir?",
     "options": {
-      "A": "%40",
-      "B": "%70",
-      "C": "%15",
-      "D": "%100",
-      "E": "%30"
+      "A": "600.000 ₺ negatif",
+      "B": "100.000 ₺ pozitif",
+      "C": "700.000 ₺ pozitif",
+      "D": "1.300.000 ₺ pozitif",
+      "E": "100.000 ₺ negatif"
     },
     "answer": "E",
-    "solution": "Net satışlar %100 kabul edilir. SMM %70 ise Brüt Satış Kârı = %100 − %70 = **%30**.",
+    "solution": "NÇS = sürekli sermaye − duran varlıklar = %65 − %70 = −%5 → 2.000.000 × %5 = **100.000 ₺ negatif**. Dönen varlıklar %30, KVYK %35'tir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-yorum; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -421,20 +421,20 @@
     "id": "mta-dikey-gen-0020",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilançoda baz toplam aktiftir (%100).\n\nII. Kalem yüzdesi = (Kalem ÷ Baz Toplam) × 100.\n\nIII. Gelir tablosunda baz toplam aktiftir (%100).",
+    "stem": "Net kârının dikey yüzdesi %6 ve aktif devir hızı 2 olan bir işletmenin aktif kârlılık oranı yüzde kaçtır?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I, II ve III",
-      "E": "I ve III"
+      "A": "%8",
+      "B": "%12",
+      "C": "%6",
+      "D": "%3",
+      "E": "%33,33"
     },
     "answer": "B",
-    "solution": "**III yanlıştır:** Gelir tablosunun dikey analizinde baz **net satışlardır** (%100), toplam aktif değil; toplam aktif bilançonun bazıdır. **I** (bilanço bazı = toplam aktif) ve **II** (dikey yüzde formülü) doğrudur. Doğru cevap **I ve II**.",
+    "solution": "Aktif kârlılığı = net kâr marjı × aktif devir hızı = %6 × 2 = **%12**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -443,20 +443,20 @@
     "id": "mta-dikey-gen-0021",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Faaliyet giderleri 60.000 ₺, net satışları 500.000 ₺ olan bir işletmede faaliyet giderlerinin dikey yüzdesi kaçtır?",
+    "stem": "Gelir tablosunun dikey analizinde, kalemlerin oranlandığı ve %100 kabul edilen baz aşağıdakilerden hangisidir?",
     "options": {
-      "A": "%30",
-      "B": "%8,3",
-      "C": "%12",
-      "D": "%60",
-      "E": "%1,2"
+      "A": "Brüt satış kârı",
+      "B": "Dönem net kârı",
+      "C": "Net satışlar",
+      "D": "Özkaynaklar",
+      "E": "Toplam aktif"
     },
     "answer": "C",
-    "solution": "Dikey Yüzde = (60.000 ÷ 500.000) × 100 = **%12**.",
+    "solution": "Gelir tablosunun dikey analizinde baz (**%100**) **net satışlardır**. SMM, faaliyet giderleri, kârlar net satışlara oranlanarak yüzdelenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz (gelir tablosu)"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -465,20 +465,20 @@
     "id": "mta-dikey-gen-0022",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Ticari alacakları 200.000 ₺, toplam aktifi 1.000.000 ₺ olan bir işletmede ticari alacakların dikey yüzdesi kaçtır?",
+    "stem": "Dikey analiz, büyüklükleri çok farklı iki işletmenin karşılaştırılmasında neden mutlak tutarlardan daha kullanışlıdır?",
     "options": {
-      "A": "%20",
-      "B": "%50",
-      "C": "%2",
-      "D": "%80",
-      "E": "%25"
+      "A": "Kalemleri ortak bir tabana (yüzdeye) indirgediği için, farklı ölçeklerdeki işletmelerin yapısal (oransal) karşılaştırması mümkün olur",
+      "B": "Kalemlerin mutlak tutarlarını büyüterek küçük işletmeyi büyük işletme kadar önemli göstermesi ve iki işletmenin ölçeğini birbirine eşitlemesi sayesinde",
+      "C": "Analize dâhil edilen dönem sayısını artırarak iki işletmenin geçmiş verilerini tek bir tabloda topladığı için",
+      "D": "İşletmenin kasa ve bankadaki nakit mevcudunu fiilen artırarak iki işletmeyi aynı likidite düzeyine getirmesi sayesinde",
+      "E": "Ödenecek vergiyi düşürüp vergi sonrası kârı yükselttiği ve böylece iki işletmenin kârını eşitlediği için"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (200.000 ÷ 1.000.000) × 100 = **%20**.",
+    "solution": "Dikey analiz kalemleri **yüzdeye** (ortak tabana) indirger; böylece büyüklükleri farklı işletmelerin **yapısal/oransal** karşılaştırması yapılabilir (mutlak tutar farkı yanıltmaz).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -487,20 +487,20 @@
     "id": "mta-dikey-gen-0023",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Maddi duran varlıkları 450.000 ₺, toplam aktifi 900.000 ₺ olan bir işletmede maddi duran varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Aşağıdakilerden hangisi dikey (yüzde) analizin özelliklerinden DEĞİLDİR?",
     "options": {
-      "A": "%45",
-      "B": "%50",
-      "C": "%20",
-      "D": "%200",
-      "E": "%5"
+      "A": "Kalemleri bir bütüne oranlar.",
+      "B": "Dönemler arası tutar değişimini (artış/azalış) esas alır.",
+      "C": "Bilançoda baz toplam aktif, gelir tablosunda net satışlardır.",
+      "D": "Büyüklüğü farklı işletmelerin yapısal karşılaştırmasına imkân verir.",
+      "E": "Genellikle tek döneme uygulanır (statik)."
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (450.000 ÷ 900.000) × 100 = **%50**. Varlıkların yarısı maddi duran varlıktır.",
+    "solution": "Dönemler arası tutar değişimini esas almak dikey analizin değil **karşılaştırmalı (yatay) analizin** özelliğidir. Dikey analiz tek dönemde kalemlerin bütüne oranını inceler.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey/yatay"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -509,20 +509,20 @@
     "id": "mta-dikey-gen-0024",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Uzun vadeli yabancı kaynakları 150.000 ₺, toplam kaynakları 1.000.000 ₺ olan bir işletmede bu kalemin dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin dikey analizinde özkaynaklar %70, toplam yabancı kaynaklar %30 çıkmıştır. Mali yapı açısından bu en olası olarak neyi gösterir?",
     "options": {
-      "A": "%150",
-      "B": "%10",
-      "C": "%1,5",
-      "D": "%85",
-      "E": "%15"
+      "A": "Yabancı kaynak ağırlıklı, aşırı borçlu ve mali açıdan riskli bir yapıyı",
+      "B": "Stokların toplam varlıklar içinde aşırı biriktiğini",
+      "C": "Net satışların gerilediği ve kârlılığın düştüğü bir dönemi",
+      "D": "Dönen varlıkların yetersiz olduğu, likiditesi zayıf bir yapıyı",
+      "E": "Özkaynak ağırlıklı, borçluluğu düşük ve göreli güçlü bir mali yapıyı"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (150.000 ÷ 1.000.000) × 100 = **%15**.",
+    "solution": "Özkaynak %70 > Yabancı kaynak %30 ise varlıklar ağırlıkla **özkaynakla** finanse edilmiştir → **düşük borçluluk, göreli güçlü mali yapı**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey yorum"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -531,20 +531,20 @@
     "id": "mta-dikey-gen-0025",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönem net kârı 60.000 ₺, net satışları 400.000 ₺ olan bir işletmede net kârın dikey yüzdesi (net kâr marjı) kaçtır?",
+    "stem": "Dikey (yüzde) analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dinamik bir analizdir; dönemler arası büyümeyi (eğilimi) gösterir.\n\nII. Gelir tablosunda kalemler net satışlara oranlanır.\n\nIII. Büyüklükleri farklı işletmelerin yapısal karşılaştırmasına imkân verir.",
     "options": {
-      "A": "%15",
-      "B": "%12",
-      "C": "%6,7",
-      "D": "%40",
-      "E": "%1,5"
+      "A": "II ve III",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "I ve II",
+      "E": "I, II ve III"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (60.000 ÷ 400.000) × 100 = **%15**.",
+    "solution": "**I yanlıştır:** Dikey analiz **statik** bir analizdir; tek dönemin iç yapısını (kalemlerin bütüne oranını / kompozisyonunu) inceler. Dönemler arası büyümeyi (eğilimi) gösteren, yatay (karşılaştırmalı) / trend analizidir. **II** (gelir tablosu kalemleri net satışlara oranlanır) ve **III** (farklı ölçekli işletmelerin yapısal karşılaştırması) doğrudur. Doğru cevap **II ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -553,20 +553,20 @@
     "id": "mta-dikey-gen-0026",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Satışların maliyeti 480.000 ₺, net satışları 800.000 ₺ olan bir işletmede satışların maliyetinin dikey yüzdesi kaçtır?",
+    "stem": "Brüt satış kârının dikey yüzdesi %30, faaliyet giderlerinin dikey yüzdesi %18 ve faaliyet kârı 180.000 ₺ olan bir işletmenin net satışları kaç ₺'dir?",
     "options": {
-      "A": "%40",
-      "B": "%60",
-      "C": "%166",
-      "D": "%48",
-      "E": "%80"
+      "A": "600.000",
+      "B": "1.500.000",
+      "C": "375.000",
+      "D": "1.000.000",
+      "E": "1.800.000"
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (480.000 ÷ 800.000) × 100 = **%60**.",
+    "solution": "Faaliyet kârının dikey yüzdesi = %30 − %18 = %12. Net satışlar = 180.000 ÷ 0,12 = **1.500.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -575,20 +575,20 @@
     "id": "mta-dikey-gen-0027",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Brüt satış kârı 320.000 ₺, net satışları 800.000 ₺ olan bir işletmede brüt satış kârının dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin faaliyet giderleri 90.000 ₺ ve faaliyet giderlerinin dikey yüzdesi %30'dur. Aynı yıl satışların maliyeti 150.000 ₺ olduğuna göre faaliyet kârının dikey yüzdesi kaçtır?",
     "options": {
-      "A": "%25",
-      "B": "%60",
-      "C": "%40",
-      "D": "%32",
-      "E": "%4"
+      "A": "%70",
+      "B": "%30",
+      "C": "%20",
+      "D": "%50",
+      "E": "%40"
     },
     "answer": "C",
-    "solution": "Dikey Yüzde = (320.000 ÷ 800.000) × 100 = **%40**.",
+    "solution": "Net satışlar = 90.000 ÷ 0,30 = 300.000 ₺. Brüt satış kârı = 300.000 − 150.000 = 150.000 ₺ (%50). Faaliyet kârı = %50 − %30 = **%20**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -597,20 +597,20 @@
     "id": "mta-dikey-gen-0028",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir bilançoda dönen varlıkların dikey yüzdesi %35 ise, duran varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Pasif toplamı 600.000 ₺, aktif devir hızı 2,50 olan bir işletmede satış indirimlerinin dikey yüzdesi %25'tir. Buna göre işletmenin brüt satışları kaç ₺'dir?",
     "options": {
-      "A": "%35",
-      "B": "%50",
-      "C": "%100",
-      "D": "%65",
-      "E": "Belirlenemez"
+      "A": "1.125.000",
+      "B": "1.500.000",
+      "C": "750.000",
+      "D": "1.875.000",
+      "E": "2.000.000"
     },
     "answer": "D",
-    "solution": "Dönen + Duran varlık = Toplam aktif = %100. Duran Varlık % = %100 − %35 = **%65**.",
+    "solution": "Net satışlar = aktif (= pasif) × aktif devir hızı = 600.000 × 2,50 = 1.500.000 ₺. Dikey yüzdeler net satışlara göre hesaplanır; indirimler net satışların %25'i = 375.000 ₺. Brüt satışlar = 1.500.000 + 375.000 = **1.875.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-tamamlayıcı; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -619,20 +619,20 @@
     "id": "mta-dikey-gen-0029",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir işletmede dönen varlıkların dikey yüzdesi %40, toplam aktifi 1.000.000 ₺'dir. Dönen varlıkların tutarı kaç ₺'dir?",
+    "stem": "Dönem net kârının dikey yüzdesi %25, aktif devir hızı 0,8 ve özsermaye çarpanı (aktif toplamı ÷ özkaynaklar) 2,5 olan bir işletmenin özkaynak kârlılığı yüzde kaçtır?",
     "options": {
-      "A": "1.400.000",
-      "B": "600.000",
-      "C": "250.000",
-      "D": "40.000",
-      "E": "400.000"
+      "A": "%20",
+      "B": "%62,50",
+      "C": "%31,25",
+      "D": "%8",
+      "E": "%50"
     },
     "answer": "E",
-    "solution": "Kalem Tutarı = Dikey Yüzde × Toplam = 0,40 × 1.000.000 = **400.000 ₺** (ters işlem).",
+    "solution": "DuPont: özkaynak kârlılığı = net kâr marjı × aktif devir hızı × özsermaye çarpanı = %25 × 0,8 × 2,5 = **%50**. Aktif kârlılığı %20'dir; çarpanla özkaynağa taşınır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -641,20 +641,20 @@
     "id": "mta-dikey-gen-0030",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Stokların dikey yüzdesi %15, toplam aktifi 800.000 ₺ olan bir işletmede stokların tutarı kaç ₺'dir?",
+    "stem": "Bir işletmenin belirli bir döneme ait gelir tablosuna dikey yüzde analizi uygulandığında aşağıdakilerden hangisine ulaşılabilir?",
     "options": {
-      "A": "150.000",
-      "B": "120.000",
-      "C": "80.000",
-      "D": "53.333",
-      "E": "12.000"
+      "A": "Net satışların önceki yıla göre artış oranına",
+      "B": "Satışların maliyetinin net satışlar içindeki payına",
+      "C": "Stokların dönen varlıklar içindeki payına",
+      "D": "Satışların baz yıla göre eğilim yüzdesine",
+      "E": "Dönen varlıkların kısa vadeli borçları karşılama gücüne"
     },
     "answer": "B",
-    "solution": "Stok Tutarı = 0,15 × 800.000 = **120.000 ₺** (ters işlem).",
+    "solution": "Gelir tablosunun dikey analizi her kalemi aynı dönemin net satışlarına oranlar; satışların maliyetinin payı böyle bulunur. Önceki yıla göre değişim yatay, baz yıla göre eğilim trend analizidir; stok payı ve borç ödeme gücü bilanço verisi gerektirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -663,20 +663,20 @@
     "id": "mta-dikey-gen-0031",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analiz, büyüklükleri çok farklı iki işletmenin karşılaştırılmasında neden mutlak tutarlardan daha kullanışlıdır?",
+    "stem": "Bir işletmenin net satışları 2024'te 500.000 ₺, 2025'te 600.000 ₺'dir. Satışların maliyetinin dikey yüzdesi 2024'te %62 iken 2025'te %70'e çıkmıştır. Buna göre brüt satış kârı 2025'te 2024'e göre nasıl değişmiştir?",
     "options": {
-      "A": "Kalemlerin mutlak tutarlarını büyüterek küçük işletmeyi büyük işletme kadar önemli göstermesi ve iki işletmenin ölçeğini birbirine eşitlemesi sayesinde",
-      "B": "İşletmenin kasa ve bankadaki nakit mevcudunu fiilen artırarak iki işletmeyi aynı likidite düzeyine getirmesi sayesinde",
-      "C": "Ödenecek vergiyi düşürüp vergi sonrası kârı yükselttiği ve böylece iki işletmenin kârını eşitlediği için",
-      "D": "Kalemleri ortak bir tabana (yüzdeye) indirgediği için, farklı ölçeklerdeki işletmelerin yapısal (oransal) karşılaştırması mümkün olur",
-      "E": "Analize dâhil edilen dönem sayısını artırarak iki işletmenin geçmiş verilerini tek bir tabloda topladığı için"
+      "A": "20.000 ₺ azalmıştır.",
+      "B": "8 puan artmıştır.",
+      "C": "Değişmemiştir.",
+      "D": "10.000 ₺ azalmıştır.",
+      "E": "10.000 ₺ artmıştır."
     },
     "answer": "D",
-    "solution": "Dikey analiz kalemleri **yüzdeye** (ortak tabana) indirger; böylece büyüklükleri farklı işletmelerin **yapısal/oransal** karşılaştırması yapılabilir (mutlak tutar farkı yanıltmaz).",
+    "solution": "2024 brüt kâr = 500.000 × %38 = 190.000 ₺; 2025 = 600.000 × %30 = 180.000 ₺. Satışlar artmasına rağmen brüt kâr **10.000 ₺ azalmıştır**; maliyet payındaki 8 puanlık artış satış artışının etkisini aşmıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum-karşılaştırma; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -685,20 +685,20 @@
     "id": "mta-dikey-gen-0032",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Faaliyet kârı 120.000 ₺, net satışları 600.000 ₺ olan bir işletmede faaliyet kârının dikey yüzdesi kaçtır?",
+    "stem": "Brüt satışları 550.000 ₺, satış indirimleri 50.000 ₺ ve satışların maliyeti 340.000 ₺ olan bir işletmenin brüt satış kârının dikey yüzdesi kaçtır?",
     "options": {
-      "A": "%2",
-      "B": "%30",
-      "C": "%12",
-      "D": "%50",
-      "E": "%20"
+      "A": "%68",
+      "B": "%28",
+      "C": "%21,25",
+      "D": "%40",
+      "E": "%32"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (120.000 ÷ 600.000) × 100 = **%20**.",
+    "solution": "Net satışlar = 550.000 − 50.000 = 500.000 ₺ (%100). Brüt satış kârı = 500.000 − 340.000 = 160.000 ₺ → **%32**. Satışların maliyeti %68'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -707,20 +707,20 @@
     "id": "mta-dikey-gen-0033",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir işletmenin dikey analizinde özkaynakların toplam kaynaklara oranı %60 ise, toplam yabancı kaynakların oranı kaçtır?",
+    "stem": "Bilanço genel toplamına göre yapılan dikey analizde dönen varlıkların tutarı 90.000 ₺ ve dikey yüzdesi %30'dur. Kısa vadeli yabancı kaynakların dikey yüzdesi %20 ise cari oran kaçtır?",
     "options": {
-      "A": "%40",
-      "B": "%60",
-      "C": "%100",
-      "D": "%160",
-      "E": "%20"
+      "A": "1,50",
+      "B": "3",
+      "C": "1,20",
+      "D": "0,67",
+      "E": "4,50"
     },
     "answer": "A",
-    "solution": "Özkaynak + Yabancı Kaynak = Toplam Kaynak = %100. Yabancı Kaynak % = %100 − %60 = **%40**.",
+    "solution": "Aynı baz kullanıldığından cari oran = %30 ÷ %20 = **1,50** (aktif 300.000 ₺, KVYK 60.000 ₺). Dönen varlık tutarı sonucu değiştirmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-tamamlayıcı; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -729,20 +729,20 @@
     "id": "mta-dikey-gen-0034",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Kısa vadeli yabancı kaynakları 300.000 ₺, toplam kaynakları 1.200.000 ₺ olan bir işletmede bu kalemin dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin bilançosunda dönen varlıkların dikey yüzdesi %60, kısa vadeli yabancı kaynakların dikey yüzdesi %40'tır. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "%30",
-      "B": "%40",
-      "C": "%25",
-      "D": "%75",
-      "E": "%4"
+      "A": "Devamlı sermayenin dikey yüzdesi %60'tır.",
+      "B": "Duran varlıkların dikey yüzdesi %40'tır.",
+      "C": "Duran varlıkların bir kısmı kısa vadeli yabancı kaynaklarla finanse edilmektedir.",
+      "D": "Net çalışma sermayesi aktif toplamının %20'sidir.",
+      "E": "Cari oran 1,50'dir."
     },
     "answer": "C",
-    "solution": "Dikey Yüzde = (300.000 ÷ 1.200.000) × 100 = **%25**.",
+    "solution": "Cari = 60 ÷ 40 = 1,50; NÇS = %20; duran varlıklar %40; devamlı sermaye %60. Devamlı sermaye (%60) duran varlıklardan (%40) büyük olduğundan duran varlıkların tamamı uzun vadeli kaynakla karşılanır; kısa vadeli kaynakla finanse edilmesi söz konusu değildir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -751,20 +751,20 @@
     "id": "mta-dikey-gen-0035",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönem net kârı 90.000 ₺, net satışları 600.000 ₺ olan bir işletmede net kârın dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin bilançosuna genel toplama göre yapılan dikey analizde dönen varlıklar %35, kısa vadeli yabancı kaynaklar %45 ve özkaynaklar %30 bulunmuştur. Yalnızca bu bilgilere göre aşağıdakilerden hangisi söylenemez?",
     "options": {
-      "A": "%15",
-      "B": "%20",
-      "C": "%6,7",
-      "D": "%9",
-      "E": "%1,5"
+      "A": "Stoklar, dönen varlıkların yarısından fazladır.",
+      "B": "Finansal kaldıraç oranı %70'tir.",
+      "C": "Duran varlıkların bir kısmı kısa vadeli yabancı kaynaklarla finanse edilmektedir.",
+      "D": "Net çalışma sermayesi negatiftir.",
+      "E": "Uzun vadeli yabancı kaynakların dikey yüzdesi %25'tir."
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (90.000 ÷ 600.000) × 100 = **%15**.",
+    "solution": "Verilen yüzdelerden: NÇS = %35 − %45 = −%10 (negatif); UVYK = %100 − %45 − %30 = %25; duran varlıklar %65 > devamlı sermaye %55 → duran varlıkların bir kısmı KVYK ile finanse edilir; kaldıraç = %70. Stokların dönen varlıklar içindeki payı hakkında bilgi yoktur; bu söylenemez.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -773,20 +773,20 @@
     "id": "mta-dikey-gen-0036",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "İki dönem karşılaştırıldığında, satışların maliyetinin net satışlara dikey oranı %60'tan %68'e çıkmıştır. Bu bulgu en olası olarak neyi gösterir?",
+    "stem": "Sürekli sermayesi 2.400.000 ₺ olan bir işletmenin dikey analize göre dönen varlıklarının dikey yüzdesi %55, kısa vadeli yabancı kaynaklarının dikey yüzdesi %40'tır. Buna göre net işletme sermayesi kaç ₺'dir?",
     "options": {
-      "A": "Brüt kârlılığın iyileştiğini ve brüt kâr marjının yükseldiğini",
-      "B": "Net satışların tamamen durduğunu ve gelir yaratılamadığını",
-      "C": "Maliyet baskısının arttığını; brüt kâr marjının (%40'tan %32'ye) düştüğünü",
-      "D": "Özkaynakların arttığını ve borçluluğun azaldığını gösterir",
-      "E": "İşletmenin likiditesinin ve kısa vadeli borç ödeme gücünün belirgin biçimde arttığını"
+      "A": "1.080.000",
+      "B": "1.600.000",
+      "C": "600.000",
+      "D": "2.200.000",
+      "E": "360.000"
     },
     "answer": "C",
-    "solution": "SMM'nin dikey oranı %60'tan %68'e çıkmışsa brüt kâr marjı %40'tan %32'ye **düşmüştür** → **maliyet baskısı artmış**, brüt kârlılık zayıflamıştır.",
+    "solution": "Sürekli sermaye = %100 − %40 = %60 → aktif = 2.400.000 ÷ 0,60 = 4.000.000 ₺. NÇS = %55 − %40 = %15 → 4.000.000 × %15 = **600.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum-dikey karşılaştırma; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yorum"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -795,20 +795,20 @@
     "id": "mta-dikey-gen-0037",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Net kârın dikey yüzdesi (net kâr marjı) %10, net satışları 500.000 ₺ olan bir işletmede dönem net kârı kaç ₺'dir?",
+    "stem": "Cari oranı 2,5 olan ve dönen varlıkları duran varlıklarına eşit olan bir işletmede kısa vadeli yabancı kaynakların pasif toplamına göre dikey yüzdesi kaçtır?",
     "options": {
-      "A": "100.000",
-      "B": "40.000",
-      "C": "60.000",
-      "D": "5.000",
-      "E": "50.000"
+      "A": "%50",
+      "B": "%40",
+      "C": "%10",
+      "D": "%25",
+      "E": "%20"
     },
     "answer": "E",
-    "solution": "Net Kâr = 0,10 × 500.000 = **50.000 ₺** (ters işlem).",
+    "solution": "Dönen varlıklar aktifin %50'sidir. Cari 2,5 → KVYK = %50 ÷ 2,5 = **%20**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -817,20 +817,20 @@
     "id": "mta-dikey-gen-0038",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Duran varlıkları 750.000 ₺, toplam aktifi 1.500.000 ₺ olan bir işletmede duran varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin bilançosunda duran varlıkların toplam varlıklara oranı son üç yılda sırasıyla %45, %40 ve %35 olarak hesaplanmıştır. Buna göre işletme için aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "%20",
-      "B": "%75",
-      "C": "%40",
-      "D": "%50",
-      "E": "%200"
+      "A": "Dönen varlıkların tutarı her yıl azalmıştır.",
+      "B": "Kısa vadeli yabancı kaynakların payı her yıl artmıştır.",
+      "C": "Duran varlıkların tutarı her yıl azalmıştır.",
+      "D": "Dönen varlıkların aktif içindeki payı her yıl artmıştır.",
+      "E": "Aktif toplamı her yıl azalmıştır."
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (750.000 ÷ 1.500.000) × 100 = **%50**.",
+    "solution": "Dikey yüzdeler yalnız payları gösterir: duran varlık payı düşerken dönen varlık payı %55, %60, %65 olarak artmıştır. Tutarların ya da kaynak tarafının nasıl değiştiği bu bilgiden çıkarılamaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -839,20 +839,20 @@
     "id": "mta-dikey-gen-0039",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analizde bir kalem, genel toplam yerine ait olduğu grubun toplamına da oranlanabilir. Buna göre, dönen varlıklar içindeki stokların payı hesaplanırken payda (baz) ne olmalıdır?",
+    "stem": "Aktif toplamı 1.000.000 ₺ olan bir işletmenin dönen varlıklarının dikey yüzdesi %45, kısa vadeli yabancı kaynaklarınınki %25'tir. Net satışları 1.600.000 ₺ olduğuna göre net çalışma sermayesi devir hızı kaçtır?",
     "options": {
-      "A": "Toplam aktif",
-      "B": "Dönen varlıklar toplamı",
-      "C": "Net satışlar",
-      "D": "Özkaynaklar",
-      "E": "Kısa vadeli yabancı kaynaklar"
+      "A": "4",
+      "B": "8",
+      "C": "1,60",
+      "D": "6,40",
+      "E": "3,56"
     },
     "answer": "B",
-    "solution": "Grup içi dikey yüzdede baz, kalemin ait olduğu **grup toplamıdır**. Stokların dönen varlıklar içindeki payı için payda **dönen varlıklar toplamıdır**.",
+    "solution": "NÇS = %45 − %25 = %20 → 200.000 ₺. Devir hızı = 1.600.000 ÷ 200.000 = **8**. Dönen varlıklara bölmek 3,56, aktife bölmek 1,60 verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-grup içi; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -861,20 +861,20 @@
     "id": "mta-dikey-gen-0040",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Aşağıdakilerden hangisi dikey (yüzde) analizin özelliklerinden DEĞİLDİR?",
+    "stem": "Aktif toplamı 800.000 ₺ olan bir işletmede dikey yüzdeler şöyledir: dönen varlıklar %35, kısa vadeli yabancı kaynaklar %20, uzun vadeli yabancı kaynaklar %30. Buna göre işletmenin net çalışma sermayesi kaç ₺'dir?",
     "options": {
-      "A": "Genellikle tek döneme uygulanır (statik).",
-      "B": "Kalemleri bir bütüne oranlar.",
-      "C": "Büyüklüğü farklı işletmelerin yapısal karşılaştırmasına imkân verir.",
-      "D": "Dönemler arası tutar değişimini (artış/azalış) esas alır.",
-      "E": "Bilançoda baz toplam aktif, gelir tablosunda net satışlardır."
+      "A": "280.000",
+      "B": "40.000",
+      "C": "400.000",
+      "D": "120.000",
+      "E": "160.000"
     },
     "answer": "D",
-    "solution": "**D yanlıştır:** Dönemler arası tutar değişimini esas almak **karşılaştırmalı (yatay) analizin** özelliğidir. Dikey analiz tek dönemde kalemlerin bütüne oranını inceler.",
+    "solution": "NÇS = %35 − %20 = %15 → 800.000 × %15 = **120.000 ₺**. Kontrol: devamlı sermaye %80 (640.000) − duran varlıklar %65 (520.000) = 120.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hangisi değil; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey/yatay"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -883,20 +883,20 @@
     "id": "mta-dikey-gen-0041",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Menkul kıymetleri 50.000 ₺, toplam aktifi 500.000 ₺ olan bir işletmede menkul kıymetlerin dikey yüzdesi kaçtır?",
+    "stem": "Dikey analizin en önemli üstünlüklerinden biri aşağıdakilerden hangisidir?",
     "options": {
-      "A": "%5",
-      "B": "%10",
-      "C": "%20",
-      "D": "%1",
-      "E": "%50"
+      "A": "Kalemleri yüzdeye çevirmeden gelecek yılların satış ve kâr tutarlarını doğrudan tahmin etmeye yarayan bir model sunması",
+      "B": "Kalemleri yüzdeye çevirdiği için, büyüklükleri farklı işletmelerin (veya dönemlerin) yapısal olarak karşılaştırılmasına imkân vermesi",
+      "C": "Kasa ve bankadaki nakit mevcudunu fiilen artırarak işletmenin likiditesini ve ödeme gücünü yükseltmesi",
+      "D": "İşletmenin dönem sonunda ödeyeceği vergi tutarını ve vergi sonrası net kârı doğrudan hesaplayabilmesi",
+      "E": "Tek bir işletmenin verileriyle sınırlı kalması, farklı büyüklükteki işletmelerin karşılaştırılmasına imkân vermemesi"
     },
     "answer": "B",
-    "solution": "Dikey Yüzde = (50.000 ÷ 500.000) × 100 = **%10**.",
+    "solution": "Dikey analiz kalemleri **yüzdeye** dönüştürdüğünden, **büyüklükleri farklı işletmelerin/dönemlerin yapısal karşılaştırmasına** imkân verir (mutlak tutar farkı sorun olmaz).",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey analiz"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -905,20 +905,20 @@
     "id": "mta-dikey-gen-0042",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Ticari borçları 240.000 ₺, toplam kaynakları 1.200.000 ₺ olan bir işletmede ticari borçların dikey yüzdesi kaçtır?",
+    "stem": "İki dönem karşılaştırıldığında, satışların maliyetinin net satışlara dikey oranı %60'tan %68'e çıkmıştır. Bu bulgu en olası olarak neyi gösterir?",
     "options": {
-      "A": "%80",
-      "B": "%24",
-      "C": "%50",
-      "D": "%2",
-      "E": "%20"
+      "A": "Net satışların tamamen durduğunu ve gelir yaratılamadığını",
+      "B": "Özkaynakların arttığını ve borçluluğun azaldığını gösterir",
+      "C": "İşletmenin likiditesinin ve kısa vadeli borç ödeme gücünün belirgin biçimde arttığını",
+      "D": "Brüt kârlılığın iyileştiğini ve brüt kâr marjının yükseldiğini",
+      "E": "Maliyet baskısının arttığını; brüt kâr marjının (%40'tan %32'ye) düştüğünü"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (240.000 ÷ 1.200.000) × 100 = **%20**.",
+    "solution": "SMM'nin dikey oranı %60'tan %68'e çıkmışsa brüt kâr marjı %40'tan %32'ye **düşmüştür** → **maliyet baskısı artmış**, brüt kârlılık zayıflamıştır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey yorum"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -927,20 +927,20 @@
     "id": "mta-dikey-gen-0043",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Özkaynaklarının dikey yüzdesi %55, toplam kaynakları 1.000.000 ₺ olan bir işletmede özkaynakların tutarı kaç ₺'dir?",
+    "stem": "Bir işletmenin dikey analizinde dönen varlıkların toplam aktife oranı %70 çıkmıştır. Bu yapı en olası olarak neyi gösterir?",
     "options": {
-      "A": "600.000",
-      "B": "450.000",
-      "C": "550.000",
-      "D": "55.000",
-      "E": "1.055.000"
+      "A": "Kaynak yapısında özkaynakların payının %70 olduğunu",
+      "B": "Net satışlar içinde dönem net kârının payının %70 olduğunu",
+      "C": "Varlık yapısının dönen (kısa vadeli/likit) varlık ağırlıklı olduğunu",
+      "D": "İşletmenin stok ve ticari alacaklarının önemsiz düzeyde kaldığını",
+      "E": "Varlıkların büyük kısmının duran varlıklardan (özellikle MDV'den) oluştuğunu"
     },
     "answer": "C",
-    "solution": "Özkaynak = 0,55 × 1.000.000 = **550.000 ₺** (ters işlem).",
+    "solution": "Dönen varlık %70 ise varlık yapısı **dönen (likit) varlık ağırlıklıdır** (duran varlık %30). Sektöre göre yorumlanır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey yorum"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -949,20 +949,20 @@
     "id": "mta-dikey-gen-0044",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Faaliyet giderleri 90.000 ₺, net satışları 600.000 ₺ olan bir işletmede faaliyet giderlerinin dikey yüzdesi kaçtır?",
+    "stem": "Aşağıdakilerden hangisi dikey analiz için doğru, yatay (karşılaştırmalı) analiz için yanlıştır?",
     "options": {
-      "A": "%60",
-      "B": "%6,7",
-      "C": "%30",
-      "D": "%15",
-      "E": "%1,5"
+      "A": "Bir baz yıl belirleyerek analizi uzun bir döneme yayan tekniktir.",
+      "B": "Kalemlerin dönemler arası tutar artış ve azalışını esas alarak ölçer.",
+      "C": "Bir baz yıl seçip sonraki dönemler için eğilim (trend) yüzdesi hesaplayarak uzun döneme yayar.",
+      "D": "Tek döneme uygulanabilir ve kalemleri bir bütüne (toplam aktif/net satışlar) oranlar.",
+      "E": "Uygulanabilmesi için en az iki döneme ait mali tabloya ihtiyaç duyar."
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (90.000 ÷ 600.000) × 100 = **%15**.",
+    "solution": "**Dikey analiz** tek döneme uygulanır ve kalemleri bir bütüne oranlar. Diğer seçenekler (iki dönem, tutar değişimi, trend, baz yıl) yatay/trend analiz özellikleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - dikey/yatay"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -971,20 +971,20 @@
     "id": "mta-dikey-gen-0045",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Satışların maliyeti 375.000 ₺, net satışları 750.000 ₺ olan bir işletmede satışların maliyetinin dikey yüzdesi kaçtır?",
+    "stem": "Faaliyet kârının dikey yüzdesi %45 ve brüt satış kârının dikey yüzdesi %60 olan bir işletmenin net satışları 1.800.000 ₺ ise faaliyet giderleri kaç ₺'dir?",
     "options": {
-      "A": "%50",
-      "B": "%40",
-      "C": "%166",
-      "D": "%45",
-      "E": "%75"
+      "A": "270.000",
+      "B": "810.000",
+      "C": "1.080.000",
+      "D": "90.000",
+      "E": "720.000"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (375.000 ÷ 750.000) × 100 = **%50**.",
+    "solution": "Faaliyet giderleri = brüt satış kârı − faaliyet kârı; dikey yüzdeyle %60 − %45 = %15. Tutar = 1.800.000 × %15 = **270.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -993,20 +993,20 @@
     "id": "mta-dikey-gen-0046",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönem net kârı 200.000 ₺, net satışları 800.000 ₺ olan bir işletmede net kârın dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin faaliyet kârı dikey yüzdesi %12, brüt satış kârı dikey yüzdesi %32 ve satışların maliyeti 136.000 ₺'dir. Buna göre faaliyet giderleri toplamı kaç ₺'dir?",
     "options": {
-      "A": "%20",
-      "B": "%12",
-      "C": "%6,7",
-      "D": "%25",
-      "E": "%1,5"
+      "A": "43.520",
+      "B": "24.000",
+      "C": "27.200",
+      "D": "40.000",
+      "E": "64.000"
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (200.000 ÷ 800.000) × 100 = **%25**.",
+    "solution": "Satışların maliyeti net satışların %68'i → net satışlar = 136.000 ÷ 0,68 = 200.000 ₺. Faaliyet giderleri = %32 − %12 = %20 → 200.000 × %20 = **40.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1015,20 +1015,20 @@
     "id": "mta-dikey-gen-0047",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir işletmenin dikey analizinde dönen varlıkların toplam aktife oranı %70 çıkmıştır. Bu yapı en olası olarak neyi gösterir?",
+    "stem": "Net satışları 450.000 ₺ olan bir işletmenin brüt satış kârlılığı %35, faaliyet giderlerinin dikey yüzdesi %15'tir. Buna göre işletmenin faaliyet kârı kaç ₺'dir?",
     "options": {
-      "A": "Varlıkların büyük kısmının duran varlıklardan (özellikle MDV'den) oluştuğunu",
-      "B": "Varlık yapısının dönen (kısa vadeli/likit) varlık ağırlıklı olduğunu",
-      "C": "İşletmenin hiç stoğunun ve ticari alacağının bulunmadığını",
-      "D": "Kaynak yapısında özkaynakların payının %70 olduğunu",
-      "E": "Net satışlar içinde dönem net kârının payının %70 olduğunu"
+      "A": "292.500",
+      "B": "90.000",
+      "C": "67.500",
+      "D": "157.500",
+      "E": "225.000"
     },
     "answer": "B",
-    "solution": "Dönen varlık %70 ise varlık yapısı **dönen (likit) varlık ağırlıklıdır** (duran varlık %30). Sektöre göre yorumlanır.",
+    "solution": "Faaliyet kârı dikey yüzdesi = %35 − %15 = %20 → 450.000 × %20 = **90.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yorum"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1037,20 +1037,20 @@
     "id": "mta-dikey-gen-0048",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Satışların maliyetinin dikey yüzdesi %65, net satışları 400.000 ₺ olan bir işletmede satışların maliyeti tutarı kaç ₺'dir?",
+    "stem": "Bir işletmenin faaliyet kârı 36.000 ₺, faaliyet giderleri 54.000 ₺ ve brüt satış kârı oranı %30'dur. Satış indirimlerinin dikey yüzdesi %20 olduğuna göre brüt satışları kaç ₺'dir?",
     "options": {
-      "A": "260.000",
-      "B": "140.000",
+      "A": "360.000",
+      "B": "375.000",
       "C": "240.000",
-      "D": "26.000",
-      "E": "660.000"
+      "D": "300.000",
+      "E": "144.000"
     },
     "answer": "A",
-    "solution": "SMM = 0,65 × 400.000 = **260.000 ₺** (ters işlem).",
+    "solution": "Brüt satış kârı = 36.000 + 54.000 = 90.000 ₺ → net satışlar = 90.000 ÷ 0,30 = 300.000 ₺. İndirimler net satışların %20'si = 60.000 ₺. Brüt satışlar = **360.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1059,20 +1059,20 @@
     "id": "mta-dikey-gen-0049",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Brüt satış kârı 350.000 ₺, net satışları 1.000.000 ₺ olan bir işletmede brüt satış kârının dikey yüzdesi kaçtır?",
+    "stem": "Net satışları 120.000 ₺, net kârlılık oranı %20 ve pasif toplamı 400.000 ₺ olan bir işletmede dönen varlıkların dikey yüzdesi %60'tır. Buna göre duran varlık kârlılığı yüzde kaçtır?",
     "options": {
-      "A": "%50",
-      "B": "%65",
-      "C": "%28",
-      "D": "%3,5",
-      "E": "%35"
+      "A": "%10",
+      "B": "%20",
+      "C": "%7,50",
+      "D": "%6",
+      "E": "%15"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (350.000 ÷ 1.000.000) × 100 = **%35**.",
+    "solution": "Net kâr = 120.000 × %20 = 24.000 ₺. Duran varlıklar aktifin %40'ı = 160.000 ₺. Duran varlık kârlılığı = 24.000 ÷ 160.000 = **%15**. Dönen varlıklara oranlamak %10, aktife oranlamak %6 verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1081,20 +1081,20 @@
     "id": "mta-dikey-gen-0050",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Bir işletmenin dikey analizinde özkaynaklar %70, toplam yabancı kaynaklar %30 çıkmıştır. Mali yapı açısından bu en olası olarak neyi gösterir?",
+    "stem": "Dikey yüzdeler analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Gelir tablosunun dikey analizinde yüzdeler, ilgili kalemin net satışlara oranını gösterir.\n\nII. Dikey analizde grup toplamı, aktif toplamı, pasif toplamı ve brüt satışlar birlikte %100 kabul edilir.\n\nIII. Varlık dağılımı incelenirken dönen ve duran varlıkların aktif toplamı içindeki payları karşılaştırılır.",
     "options": {
-      "A": "Yabancı kaynak ağırlıklı, aşırı borçlu ve mali açıdan riskli bir yapıyı",
-      "B": "Dönen varlıkların yetersiz olduğu, likiditesi zayıf bir yapıyı",
-      "C": "Özkaynak ağırlıklı, borçluluğu düşük ve göreli güçlü bir mali yapıyı",
-      "D": "Net satışların gerilediği ve kârlılığın düştüğü bir dönemi",
-      "E": "Stokların toplam varlıklar içinde aşırı biriktiğini"
+      "A": "I, II ve III",
+      "B": "Yalnız I",
+      "C": "I ve III",
+      "D": "II ve III",
+      "E": "I ve II"
     },
     "answer": "C",
-    "solution": "Özkaynak %70 > Yabancı kaynak %30 ise varlıklar ağırlıkla **özkaynakla** finanse edilmiştir → **düşük borçluluk, göreli güçlü mali yapı**.",
+    "solution": "**I doğrudur.** **II yanlıştır:** gelir tablosunda %100 kabul edilen net satışlardır, brüt satışlar değil; ayrıca her tabloda yalnız bir baz seçilir. **III doğrudur.** Doğru cevap **I ve III**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (yorum-mali yapı; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yorum"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1103,20 +1103,20 @@
     "id": "mta-dikey-gen-0051",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Duran varlıkları 320.000 ₺, toplam aktifi 800.000 ₺ olan bir işletmede duran varlıkların dikey yüzdesi kaçtır?",
+    "stem": "Dönem net kârının dikey yüzdesi %8, aktif devir hızı 1,5 ve özkaynakların aktif toplamına oranı 0,40 olan bir işletmenin özkaynak kârlılığı yüzde kaçtır?",
     "options": {
-      "A": "%40",
-      "B": "%60",
-      "C": "%25",
-      "D": "%4",
-      "E": "%250"
+      "A": "%30",
+      "B": "%12",
+      "C": "%20",
+      "D": "%4,80",
+      "E": "%3,20"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (320.000 ÷ 800.000) × 100 = **%40**.",
+    "solution": "Aktif kârlılığı = %8 × 1,5 = %12. Özsermaye çarpanı = 1 ÷ 0,40 = 2,5. Özkaynak kârlılığı = %12 × 2,5 = **%30**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1125,20 +1125,20 @@
     "id": "mta-dikey-gen-0052",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönen varlıkların dikey yüzdesi %45, toplam aktifi 600.000 ₺ olan bir işletmede dönen varlıkların tutarı kaç ₺'dir?",
+    "stem": "Bir işletmenin gelir tablosunda net satışlara göre dikey yüzdeler şöyledir: satışların maliyeti %65, faaliyet giderleri %20, diğer faaliyetlerden olağan gelirler %3, finansman giderleri %5. Buna göre olağan kârın dikey yüzdesi kaçtır?",
     "options": {
-      "A": "250.000",
-      "B": "330.000",
-      "C": "270.000",
-      "D": "45.000",
-      "E": "135.000"
+      "A": "%10",
+      "B": "%35",
+      "C": "%13",
+      "D": "%15",
+      "E": "%18"
     },
     "answer": "C",
-    "solution": "Dönen Varlık = 0,45 × 600.000 = **270.000 ₺** (ters işlem).",
+    "solution": "Brüt kâr %35 → faaliyet kârı %35 − %20 = %15 → olağan kâr %15 + %3 − %5 = **%13**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - gelir tablosunun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1147,20 +1147,20 @@
     "id": "mta-dikey-gen-0053",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dönem net kârı 30.000 ₺, net satışları 300.000 ₺ olan bir işletmede net kârın dikey yüzdesi kaçtır?",
+    "stem": "Toplam aktifleri %100 kabul edilerek yapılan dikey analizde bir işletmenin kısa vadeli yabancı kaynaklarının dikey yüzdesi %15, uzun vadeli yabancı kaynaklarınınki %35'tir. Kısa vadeli yabancı kaynaklar 45.000 ₺ olduğuna göre özkaynakların yabancı kaynaklara oranı kaçtır?",
     "options": {
-      "A": "%1,5",
-      "B": "%20",
-      "C": "%6,7",
-      "D": "%45",
-      "E": "%10"
+      "A": "2",
+      "B": "1,50",
+      "C": "0,30",
+      "D": "0,50",
+      "E": "1"
     },
     "answer": "E",
-    "solution": "Dikey Yüzde = (30.000 ÷ 300.000) × 100 = **%10**.",
+    "solution": "Aktif = 45.000 ÷ 0,15 = 300.000 ₺. Yabancı kaynaklar %50 = 150.000 ₺, özkaynaklar %50 = 150.000 ₺ → oran **1**. Tutar bilgisi oranı değiştirmez; yüzdeler yeterlidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1169,20 +1169,20 @@
     "id": "mta-dikey-gen-0054",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Kısa vadeli yabancı kaynakları 200.000 ₺, toplam kaynakları 1.000.000 ₺ olan bir işletmede bu kalemin dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin dönen varlıkları 360.000 ₺, duran varlıkları 540.000 ₺ ve stokları 72.000 ₺'dir. Sürekli sermayesinin dikey yüzdesi %60 olduğuna göre asit-test oranı kaçtır?",
     "options": {
-      "A": "%2",
-      "B": "%50",
-      "C": "%25",
-      "D": "%20",
-      "E": "%80"
+      "A": "1",
+      "B": "1,20",
+      "C": "0,60",
+      "D": "0,80",
+      "E": "0,53"
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (200.000 ÷ 1.000.000) × 100 = **%20**.",
+    "solution": "Pasif = aktif = 900.000 ₺; KVYK = %40 → 360.000 ₺. Asit-test = (360.000 − 72.000) ÷ 360.000 = **0,80**. Cari oran 1'dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1191,20 +1191,20 @@
     "id": "mta-dikey-gen-0055",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey analiz ile oran analizi arasındaki ilişki için aşağıdakilerden hangisi doğrudur?",
+    "stem": "Pasif toplamı %100 kabul edilerek yapılan dikey analizde özkaynakların yüzdesi %35, uzun vadeli yabancı kaynaklarınki %25 bulunmuştur. Yabancı kaynak toplamı 390.000 ₺ olduğuna göre aktif toplamı ve kısa vadeli yabancı kaynaklar sırasıyla kaç ₺'dir?",
     "options": {
-      "A": "Birbirinin tam yerine geçen tekniklerdir; biri kullanıldığında diğerine ihtiyaç kalmaz ve asla birlikte kullanılamazlar.",
-      "B": "Birbirini tamamlayan tekniklerdir; dikey analiz kalemlerin bütün içindeki payını, oran analizi ise kalemler arası ilişkileri gösterir.",
-      "C": "İkisi de mali tablodaki yalnızca tek bir kalemi ele alır; kalemler arası ilişkiyi ya da bütün içindeki payı göstermezler.",
-      "D": "Dikey analiz dönemler arası değişimi ölçen dinamik bir teknik, oran analizi ise tek dönemi inceleyen statik bir tekniktir.",
-      "E": "İkisi de yalnızca dönemler arası tutar değişimini ölçer; kalemin bütün içindeki payını ya da kalemler arası oranı vermezler."
+      "A": "600.000 ve 156.000",
+      "B": "600.000 ve 240.000",
+      "C": "600.000 ve 150.000",
+      "D": "240.000 ve 600.000",
+      "E": "390.000 ve 156.000"
     },
     "answer": "B",
-    "solution": "Dikey analiz (kalemin bütündeki payı) ile oran analizi (kalemler arası ilişki) **birbirini tamamlar**; birlikte kullanıldıklarında daha bütünsel yorum sağlar.",
+    "solution": "Yabancı kaynaklar %65 → aktif = 390.000 ÷ 0,65 = 600.000 ₺. KVYK = %100 − %35 − %25 = %40 → **240.000 ₺**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (kavram-ilişki; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - teknikler"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1213,20 +1213,20 @@
     "id": "mta-dikey-gen-0056",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Faaliyet kârı 225.000 ₺, net satışları 900.000 ₺ olan bir işletmede faaliyet kârının dikey yüzdesi kaçtır?",
+    "stem": "Bir işletmenin dönen varlıkları 400.000 ₺, bunun içinde stokları 140.000 ₺ ve aktif toplamı 1.000.000 ₺'dir. Grup toplamına göre dikey analizde stokların yüzdesi kaçtır?",
     "options": {
-      "A": "%25",
-      "B": "%30",
-      "C": "%18",
-      "D": "%50",
-      "E": "%2"
+      "A": "%35",
+      "B": "%65",
+      "C": "%28",
+      "D": "%14",
+      "E": "%40"
     },
     "answer": "A",
-    "solution": "Dikey Yüzde = (225.000 ÷ 900.000) × 100 = **%25**.",
+    "solution": "Grup toplamına göre dikey analizde kalem ait olduğu grubun toplamına oranlanır: 140.000 ÷ 400.000 = **%35**. Aktif toplamına göre (genel toplam) oran %14'tür.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1235,20 +1235,20 @@
     "id": "mta-dikey-gen-0057",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Net kârın dikey yüzdesi %12, net satışları 500.000 ₺ olan bir işletmede dönem net kârı kaç ₺'dir?",
+    "stem": "Bir işletmenin aktif toplamı 2024'te 800.000 ₺, 2025'te 1.000.000 ₺'dir. Dönen varlıkların dikey yüzdesi 2024'te %40, 2025'te %36'dır. Buna göre aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "72.000",
-      "B": "50.000",
-      "C": "60.000",
-      "D": "6.000",
-      "E": "120.000"
+      "A": "Dönen varlıklar tutar olarak da, pay olarak da artmıştır.",
+      "B": "Dönen varlıklar tutar olarak azalmış, aktif içindeki payı da azalmıştır.",
+      "C": "Dönen varlıklar tutar olarak artmış, aktif içindeki payı azalmıştır.",
+      "D": "Duran varlıkların aktif içindeki payı azalmıştır.",
+      "E": "Duran varlıkların tutarı değişmemiştir."
     },
     "answer": "C",
-    "solution": "Net Kâr = 0,12 × 500.000 = **60.000 ₺** (ters işlem).",
+    "solution": "Dönen varlıklar 2024: 320.000 ₺, 2025: 360.000 ₺ → tutar 40.000 ₺ artmış; pay %40'tan %36'ya inmiştir. Duran varlıklar 480.000 ₺'den 640.000 ₺'ye çıkmış, payı %60'tan %64'e yükselmiştir.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ters hesap; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1257,20 +1257,20 @@
     "id": "mta-dikey-gen-0058",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Stokları 100.000 ₺, toplam aktifi 1.000.000 ₺ olan bir işletmede stokların dikey yüzdesi kaçtır?",
+    "stem": "Dönen varlıklarının dikey yüzdesi %48, kısa vadeli yabancı kaynaklarının dikey yüzdesi %32 olan bir işletmenin cari oranı kaçtır?",
     "options": {
-      "A": "%1",
-      "B": "%15",
-      "C": "%5",
-      "D": "%10",
-      "E": "%100"
+      "A": "0,67",
+      "B": "0,16",
+      "C": "1,32",
+      "D": "1,50",
+      "E": "16"
     },
     "answer": "D",
-    "solution": "Dikey Yüzde = (100.000 ÷ 1.000.000) × 100 = **%10**.",
+    "solution": "Aynı baza oranlandıklarından cari oran = 48 ÷ 32 = **1,50**. Farkları (%16) net çalışma sermayesinin payıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (hesaplama-dikey; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey yüzde"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1279,20 +1279,20 @@
     "id": "mta-dikey-gen-0059",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Aşağıdakilerden hangisi dikey analiz için doğru, yatay (karşılaştırmalı) analiz için yanlıştır?",
+    "stem": "Aktif toplamı içinde hazır değerlerin dikey yüzdesi %6, menkul kıymetlerin %4 ve kısa vadeli yabancı kaynakların %25 olan bir işletmenin nakit oranı kaçtır?",
     "options": {
-      "A": "Uygulanabilmesi için en az iki döneme ait mali tabloya ihtiyaç duyar.",
-      "B": "Tek döneme uygulanabilir ve kalemleri bir bütüne (toplam aktif/net satışlar) oranlar.",
-      "C": "Kalemlerin dönemler arası tutar artış ve azalışını esas alarak ölçer.",
-      "D": "Bir baz yıl seçip sonraki dönemler için eğilim (trend) yüzdesi hesaplayarak uzun döneme yayar.",
-      "E": "Bir baz yıl belirleyerek analizi uzun bir döneme yayan tekniktir."
+      "A": "0,10",
+      "B": "0,40",
+      "C": "2,50",
+      "D": "0,24",
+      "E": "0,16"
     },
     "answer": "B",
-    "solution": "**Dikey analiz** tek döneme uygulanır ve kalemleri bir bütüne oranlar. Diğer seçenekler (iki dönem, tutar değişimi, trend, baz yıl) yatay/trend analiz özellikleridir.",
+    "solution": "Nakit oranı = (hazır değerler + menkul kıymetler) ÷ KVYK = (6 + 4) ÷ 25 = **0,40**. Aynı baz kullanıldığından tutar bilgisine gerek yoktur.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (ayrım-çeldirici; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey/yatay"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null
@@ -1301,20 +1301,20 @@
     "id": "mta-dikey-gen-0060",
     "ders": "mali_tablolar_analizi",
     "konu": "dikey_analiz",
-    "stem": "Dikey (yüzde) analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dinamik bir analizdir; dönemler arası büyümeyi (eğilimi) gösterir.\n\nII. Gelir tablosunda kalemler net satışlara oranlanır.\n\nIII. Büyüklükleri farklı işletmelerin yapısal karşılaştırmasına imkân verir.",
+    "stem": "Aktif toplamı 500.000 ₺ olan bir işletmenin kısa vadeli yabancı kaynakları 125.000 ₺, özkaynakları 225.000 ₺'dir. Buna göre uzun vadeli yabancı kaynakların pasif içindeki dikey yüzdesi kaçtır?",
     "options": {
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "I ve III",
-      "E": "I, II ve III"
+      "A": "%70",
+      "B": "%55",
+      "C": "%30",
+      "D": "%25",
+      "E": "%45"
     },
     "answer": "C",
-    "solution": "**I yanlıştır:** Dikey analiz **statik** bir analizdir; tek dönemin iç yapısını (kalemlerin bütüne oranını / kompozisyonunu) inceler. Dönemler arası büyümeyi (eğilimi) gösteren, yatay (karşılaştırmalı) / trend analizidir. **II** (gelir tablosu kalemleri net satışlara oranlanır) ve **III** (farklı ölçekli işletmelerin yapısal karşılaştırması) doğrudur. Doğru cevap **II ve III**.",
+    "solution": "UVYK = 500.000 − 125.000 − 225.000 = 150.000 ₺ → 150.000 ÷ 500.000 = **%30**.",
     "source": {
       "kind": "generated",
-      "styleRef": "SGS Mali Tablolar Analizi (I-II-III özet; sınav stiline kalibre)",
-      "legislationRef": "Mali analiz - dikey analiz"
+      "styleRef": "SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)",
+      "legislationRef": "Mali analiz - bilançonun dikey analizi"
     },
     "validYear": 2026,
     "mockExamId": null

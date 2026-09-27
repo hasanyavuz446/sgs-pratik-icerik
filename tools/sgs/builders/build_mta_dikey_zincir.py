@@ -1,0 +1,926 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Dikey Analiz — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+
+Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
+yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
+
+Mali tablolar analizi tablolu tur. Gercek sinavin 30 dikey analiz sorusu yuzdeleri baska bilgilerle zincirliyor: gelir tablosu yuzdelerinden faaliyet gideri/brut satis/net satis, satis indirimi yuzdesiyle brut satisa donus, bilanco yuzdelerinden cari oran, NCS, ozkaynak, kredi yapisi; eski paketin 40'tan fazla sorusu 'kalem/toplam kac yuzde' duzeyindeydi. 13 kavram sorusu korundu (mutlak ifadeli celdiriciler ve bir cozumdeki harf atfi duzeltildi); 47 yeni soru: gelir tablosu 23, bilanco 24. Tutarlar Fraction ile hesaplandi.
+
+IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
+(60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
+
+Dayanak: Mali tablolar analizi - dikey (yuzde) analiz
+"""
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
+RELATIVE_PATH = "content/mali_tablolar_analizi/dikey_analiz.json"
+STYLE_REF = 'SGS Mali Tablolar Analizi (oran zinciri, ters hesap; gerçek sınav profiline kalibre)'
+ONEK = "mta-dikey-gen-"
+
+
+def patch(stem, options, answer, solution, ref='Mali analiz - dikey analiz'):
+    return {
+        "stem": stem, "options": options, "answer": answer, "solution": solution,
+        "source": {"kind": "generated", "styleRef": STYLE_REF,
+                   "legislationRef": ref},
+        "validYear": 2026, "mockExamId": None,
+    }
+
+
+_PATCHES = {
+    # düzey 2
+    '0001': patch(
+        'Dikey analiz genellikle tek bir döneme uygulandığı için hangi tür analiz sınıfına girer?',
+        {
+            'A': 'Oran analizi',
+            'B': 'Karşılaştırmalı analiz',
+            'C': 'Dinamik analiz',
+            'D': 'Trend analizi',
+            'E': 'Statik analiz',
+        },
+        'E',
+        'Dikey analiz tek bir dönemin iç yapısını (kalemlerin bütüne oranını) incelediğinden **statik analizdir**.',
+        'Mali analiz - statik/dinamik',
+    ),
+    # düzey 2
+    '0002': patch(
+        'Dikey analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Bilançoda baz toplam aktiftir (%100).\n\nII. Kalem yüzdesi = (Kalem ÷ Baz Toplam) × 100.\n\nIII. Gelir tablosunda baz toplam aktiftir (%100).',
+        {
+            'A': 'I ve III',
+            'B': 'I ve II',
+            'C': 'II ve III',
+            'D': 'Yalnız I',
+            'E': 'I, II ve III',
+        },
+        'B',
+        '**III yanlıştır:** Gelir tablosunun dikey analizinde baz **net satışlardır** (%100), toplam aktif değil; toplam aktif bilançonun bazıdır. **I** (bilanço bazı = toplam aktif) ve **II** (dikey yüzde formülü) doğrudur. Doğru cevap **I ve II**.',
+        'Mali analiz - dikey analiz',
+    ),
+    # düzey 2
+    '0003': patch(
+        'Dikey analizde bir kalem, genel toplam yerine ait olduğu grubun toplamına da oranlanabilir. Buna göre, dönen varlıklar içindeki stokların payı hesaplanırken payda (baz) ne olmalıdır?',
+        {
+            'A': 'Dönen varlıklar toplamı',
+            'B': 'Kısa vadeli yabancı kaynaklar',
+            'C': 'Net satışlar',
+            'D': 'Toplam aktif',
+            'E': 'Özkaynaklar',
+        },
+        'A',
+        'Grup içi dikey yüzdede baz, kalemin ait olduğu **grup toplamıdır**. Stokların dönen varlıklar içindeki payı için payda **dönen varlıklar toplamıdır**.',
+        'Mali analiz - dikey analiz',
+    ),
+    # düzey 2
+    '0004': patch(
+        'Dikey analiz ile oran analizi arasındaki ilişki için aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Birbirinin tam yerine geçen tekniklerdir; biri kullanıldığında diğerine ihtiyaç kalmaz ve asla birlikte kullanılamazlar.',
+            'B': 'İkisi de dönemler arası tutar değişimini ölçmeye yöneliktir; kalemin bütün içindeki payını ya da kalemler arası oranı vermezler.',
+            'C': 'Birbirini tamamlayan tekniklerdir; dikey analiz kalemlerin bütün içindeki payını, oran analizi ise kalemler arası ilişkileri gösterir.',
+            'D': 'İkisi de mali tablodaki tek bir kalemin tutarını inceler; kalemler arası ilişkiyi ya da bütün içindeki payı göstermezler.',
+            'E': 'Dikey analiz dönemler arası değişimi ölçen dinamik bir teknik, oran analizi ise tek dönemi inceleyen statik bir tekniktir.',
+        },
+        'C',
+        'Dikey analiz (kalemin bütündeki payı) ile oran analizi (kalemler arası ilişki) **birbirini tamamlar**; birlikte kullanıldıklarında daha bütünsel yorum sağlar.',
+        'Mali analiz - teknikler',
+    ),
+    # düzey 3
+    '0005': patch(
+        "Satışların maliyetinin dikey yüzdesi %35 ve faaliyet giderlerinin dikey yüzdesi %25 olan bir işletmenin net satışları 2.400.000 ₺ ise faaliyet kârı kaç ₺'dir?",
+        {
+            'A': '960.000',
+            'B': '1.440.000',
+            'C': '240.000',
+            'D': '1.560.000',
+            'E': '1.800.000',
+        },
+        'A',
+        'Brüt satış kârı %100 − %35 = %65; faaliyet kârı %65 − %25 = %40. Tutar = 2.400.000 × %40 = **960.000 ₺**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0006': patch(
+        "Satışlarının maliyeti 900.000 ₺ olan bir işletmenin brüt satış kârı 300.000 ₺, faaliyet kârı 60.000 ₺'dir. Buna göre faaliyet giderlerinin dikey yüzdesi kaçtır?",
+        {
+            'A': '%25',
+            'B': '%5',
+            'C': '%80',
+            'D': '%26,67',
+            'E': '%20',
+        },
+        'E',
+        'Net satışlar = 900.000 + 300.000 = 1.200.000 ₺. Faaliyet giderleri = 300.000 − 60.000 = 240.000 ₺. Dikey yüzde = 240.000 ÷ 1.200.000 = **%20**. Brüt kâra oranlamak %80, satışların maliyetine oranlamak %26,67 verir.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0007': patch(
+        "Bir işletmenin net satışları 80.000 ₺'dir. Satışların maliyeti faaliyet giderlerinin 3 katıdır. Faaliyet kârının dikey yüzdesi %20 olduğuna göre brüt satış kârının dikey yüzdesi kaçtır?",
+        {
+            'A': '%60',
+            'B': '%20',
+            'C': '%40',
+            'D': '%30',
+            'E': '%80',
+        },
+        'C',
+        "Faaliyet giderleri x ise satışların maliyeti 3x'tir. Faaliyet kârı = %100 − 3x − x = %20 → 4x = %80 → x = %20. Satışların maliyeti %60, brüt satış kârı %100 − %60 = **%40** (kontrol: %40 − %20 = %20).",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0008': patch(
+        "Bir işletmenin gelir tablosunda dikey yüzdeler brüt satış kârı için %25, faaliyet kârı için %12 ve dönem net kârı için %4 bulunmuştur. Brüt satış kârı 75.000 ₺, aktif toplamı 150.000 ₺'dir. Buna göre aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': "Net satışlar 300.000 ₺'dir.",
+            'B': "Aktif kârlılık oranı %4'tür.",
+            'C': "Faaliyet giderleri 39.000 ₺'dir.",
+            'D': "Aktif devir hızı 2'dir.",
+            'E': "Satışların maliyeti 225.000 ₺'dir.",
+        },
+        'B',
+        "Net satışlar = 75.000 ÷ 0,25 = 300.000 ₺. Faaliyet giderleri %25 − %12 = %13 → 39.000 ₺; satışların maliyeti %75 → 225.000 ₺; aktif devir = 300.000 ÷ 150.000 = 2. Net kâr = 300.000 × %4 = 12.000 ₺ → aktif kârlılığı 12.000 ÷ 150.000 = %8'dir; %4 net kârın dikey yüzdesidir, ifade yanlıştır.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0009': patch(
+        "Net satışları 250.000 ₺, pasif toplamı 1.000.000 ₺ olan bir işletmenin dönem net kârının dikey yüzdesi %16'dır. Buna göre işletmenin aktif kârlılık oranı yüzde kaçtır?",
+        {
+            'A': '%16',
+            'B': '%40',
+            'C': '%6,40',
+            'D': '%4',
+            'E': '%25',
+        },
+        'D',
+        'Net kâr = 250.000 × %16 = 40.000 ₺. Aktif (= pasif) kârlılığı = 40.000 ÷ 1.000.000 = **%4**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0010': patch(
+        'Bir işletmenin gelir tablosu verileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Brüt satışlar | 1.250.000 |\n| Satış indirimleri | 250.000 |\n| Satışların maliyeti | 620.000 |\n| Faaliyet giderleri | 230.000 |\n| Diğer faaliyetlerden olağan gelirler | 40.000 |\n| Finansman giderleri | 60.000 |\n\nBuna göre olağan kârın dikey yüzdesi kaçtır?',
+        {
+            'A': '%13',
+            'B': '%38',
+            'C': '%19',
+            'D': '%15',
+            'E': '%10,40',
+        },
+        'A',
+        'Net satışlar = 1.250.000 − 250.000 = 1.000.000 ₺ (dikey analizde %100). Olağan kâr = 1.000.000 − 620.000 − 230.000 + 40.000 − 60.000 = 130.000 ₺ → **%13**. Brüt satışlara oranlamak %10,40 verir.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0011': patch(
+        "Vergi öncesi kârının dikey yüzdesi %12 olan bir işletmede kurumlar vergisi oranı %25'tir. Buna göre dönem net kârının dikey yüzdesi kaçtır?",
+        {
+            'A': '%3',
+            'B': '%10',
+            'C': '%12',
+            'D': '%15',
+            'E': '%9',
+        },
+        'E',
+        'Vergi = %12 × %25 = 3 puan. Dönem net kârı = %12 − %3 = **%9** (net satışlara göre).',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0012': patch(
+        "Bir işletmenin net satışları 2024'te 400.000 ₺, 2025'te 500.000 ₺'dir. Faaliyet giderleri aynı yıllarda 60.000 ₺ ve 70.000 ₺'dir. Buna göre faaliyet giderlerinin dikey yüzdesi nasıl değişmiştir?",
+        {
+            'A': '%25 artmıştır.',
+            'B': '1 puan artmıştır.',
+            'C': 'Değişmemiştir.',
+            'D': '1 puan azalmıştır.',
+            'E': '%16,67 artmıştır.',
+        },
+        'D',
+        '2024: 60.000 ÷ 400.000 = %15; 2025: 70.000 ÷ 500.000 = %14. Faaliyet giderleri tutar olarak %16,67 artmış, fakat net satışlar daha hızlı (%25) arttığından dikey yüzde **1 puan azalmıştır**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0013': patch(
+        "Toplam pasifleri %100 kabul edilerek yapılan dikey analizde bir işletmenin kısa vadeli yabancı kaynaklarının dikey yüzdesi %30, uzun vadeli yabancı kaynaklarının dikey yüzdesi %50'dir. Kısa vadeli yabancı kaynaklar 90.000 ₺ olduğuna göre özkaynaklar ve toplam aktifler sırasıyla kaç ₺'dir?",
+        {
+            'A': '60.000 ve 240.000',
+            'B': '60.000 ve 300.000',
+            'C': '150.000 ve 300.000',
+            'D': '300.000 ve 60.000',
+            'E': '240.000 ve 300.000',
+        },
+        'B',
+        'Aktif = pasif = 90.000 ÷ 0,30 = 300.000 ₺. Özkaynak payı %100 − %30 − %50 = %20 → **60.000 ₺** ve **300.000 ₺**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0014': patch(
+        'Aktif toplamı 4.000.000 ₺, dönen varlıklarının dikey yüzdesi %20 ve sürekli sermayesinin dikey yüzdesi %85 olan bir işletmede kısa vadeli borçların duran varlıklara oranı yüzde kaçtır?',
+        {
+            'A': '%80',
+            'B': '%21,25',
+            'C': '%18,75',
+            'D': '%15',
+            'E': '%75',
+        },
+        'C',
+        'KVYK = %100 − %85 = %15 → 600.000 ₺; duran varlıklar = %80 → 3.200.000 ₺. Oran = 600.000 ÷ 3.200.000 = **%18,75**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0015': patch(
+        'Pasif toplamı 6.000.000 ₺, kısa vadeli yabancı kaynaklarının dikey yüzdesi %50 ve duran varlıklarının dikey yüzdesi %60 olan bir işletmede dönen varlıkların sürekli sermayeye oranı kaçtır?',
+        {
+            'A': '1,25',
+            'B': '0,67',
+            'C': '0,40',
+            'D': '0,80',
+            'E': '1,20',
+        },
+        'D',
+        'Dönen varlıklar %40 → 2.400.000 ₺; sürekli sermaye %100 − %50 = %50 → 3.000.000 ₺. Oran = 2.400.000 ÷ 3.000.000 = **0,80**. Paydada KVYK değil sürekli sermaye olduğuna dikkat edilmelidir.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0016': patch(
+        'Bir işletmenin dönen varlık hesaplarına ait dikey yüzdelerin bir kısmı şöyledir:\n\n| Hesap | Aktif içindeki % | Dönen varlık içindeki % |\n|---|---|---|\n| Hazır değerler | 10 | ? |\n| Menkul kıymetler | 7,5 | ? |\n| Ticari alacaklar | 12,5 | ? |\n| Stoklar | ? | 50 |\n| Dönen varlıklar | ? | 100 |\n\nDönen varlıklar yalnız bu dört hesaptan oluştuğuna göre stokların aktif içindeki yüzdesi kaçtır?',
+        {
+            'A': '%20',
+            'B': '%30',
+            'C': '%50',
+            'D': '%60',
+            'E': '%15',
+        },
+        'B',
+        "Hazır değerler + menkul kıymetler + ticari alacaklar aktifin %30'udur ve dönen varlıkların kalan %50'sini oluşturur. Dönen varlıklar aktifin %60'ı → stoklar %60 × %50 = **%30**.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0017': patch(
+        'Bilançonun dikey analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Pasif kalemleri, aktif toplamına değil özkaynak toplamına oranlanır.\n\nII. Aktif toplamı pasif toplamına eşit olduğundan her iki tarafta %100 aynı tutara karşılık gelir.\n\nIII. Dikey yüzdelerin hesaplanması için en az iki dönemin bilançosu gerekir.',
+        {
+            'A': 'Yalnız I',
+            'B': 'II ve III',
+            'C': 'Yalnız II',
+            'D': 'I ve III',
+            'E': 'I, II ve III',
+        },
+        'C',
+        '**I yanlıştır:** pasif kalemleri pasif (= aktif) toplamına oranlanır. **II doğrudur.** **III yanlıştır:** dikey analiz tek dönemle yapılabilen statik bir analizdir. Doğru cevap **Yalnız II**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0018': patch(
+        "Aktif toplamı içinde kısa vadeli yabancı kaynakların dikey yüzdesi %25, uzun vadeli yabancı kaynakların %20'dir. Özkaynakları 330.000 ₺ olan işletmenin toplam borçları kaç ₺'dir?",
+        {
+            'A': '270.000',
+            'B': '148.500',
+            'C': '82.500',
+            'D': '600.000',
+            'E': '330.000',
+        },
+        'A',
+        'Özkaynaklar %55 → aktif = 330.000 ÷ 0,55 = 600.000 ₺. Borçlar %45 → **270.000 ₺**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0019': patch(
+        "Aktif toplamı 2.000.000 ₺ olan bir işletmede duran varlıkların dikey yüzdesi %70, sürekli sermayenin dikey yüzdesi %65'tir. Buna göre işletmenin net çalışma sermayesi aşağıdakilerden hangisidir?",
+        {
+            'A': '600.000 ₺ negatif',
+            'B': '100.000 ₺ pozitif',
+            'C': '700.000 ₺ pozitif',
+            'D': '1.300.000 ₺ pozitif',
+            'E': '100.000 ₺ negatif',
+        },
+        'E',
+        "NÇS = sürekli sermaye − duran varlıklar = %65 − %70 = −%5 → 2.000.000 × %5 = **100.000 ₺ negatif**. Dönen varlıklar %30, KVYK %35'tir.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0020': patch(
+        'Net kârının dikey yüzdesi %6 ve aktif devir hızı 2 olan bir işletmenin aktif kârlılık oranı yüzde kaçtır?',
+        {
+            'A': '%8',
+            'B': '%12',
+            'C': '%6',
+            'D': '%3',
+            'E': '%33,33',
+        },
+        'B',
+        'Aktif kârlılığı = net kâr marjı × aktif devir hızı = %6 × 2 = **%12**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0021': patch(
+        'Gelir tablosunun dikey analizinde, kalemlerin oranlandığı ve %100 kabul edilen baz aşağıdakilerden hangisidir?',
+        {
+            'A': 'Brüt satış kârı',
+            'B': 'Dönem net kârı',
+            'C': 'Net satışlar',
+            'D': 'Özkaynaklar',
+            'E': 'Toplam aktif',
+        },
+        'C',
+        'Gelir tablosunun dikey analizinde baz (**%100**) **net satışlardır**. SMM, faaliyet giderleri, kârlar net satışlara oranlanarak yüzdelenir.',
+        'Mali analiz - dikey analiz (gelir tablosu)',
+    ),
+    # düzey 2
+    '0022': patch(
+        'Dikey analiz, büyüklükleri çok farklı iki işletmenin karşılaştırılmasında neden mutlak tutarlardan daha kullanışlıdır?',
+        {
+            'A': 'Kalemleri ortak bir tabana (yüzdeye) indirgediği için, farklı ölçeklerdeki işletmelerin yapısal (oransal) karşılaştırması mümkün olur',
+            'B': 'Kalemlerin mutlak tutarlarını büyüterek küçük işletmeyi büyük işletme kadar önemli göstermesi ve iki işletmenin ölçeğini birbirine eşitlemesi sayesinde',
+            'C': 'Analize dâhil edilen dönem sayısını artırarak iki işletmenin geçmiş verilerini tek bir tabloda topladığı için',
+            'D': 'İşletmenin kasa ve bankadaki nakit mevcudunu fiilen artırarak iki işletmeyi aynı likidite düzeyine getirmesi sayesinde',
+            'E': 'Ödenecek vergiyi düşürüp vergi sonrası kârı yükselttiği ve böylece iki işletmenin kârını eşitlediği için',
+        },
+        'A',
+        'Dikey analiz kalemleri **yüzdeye** (ortak tabana) indirger; böylece büyüklükleri farklı işletmelerin **yapısal/oransal** karşılaştırması yapılabilir (mutlak tutar farkı yanıltmaz).',
+        'Mali analiz - dikey analiz',
+    ),
+    # düzey 2
+    '0023': patch(
+        'Aşağıdakilerden hangisi dikey (yüzde) analizin özelliklerinden DEĞİLDİR?',
+        {
+            'A': 'Kalemleri bir bütüne oranlar.',
+            'B': 'Dönemler arası tutar değişimini (artış/azalış) esas alır.',
+            'C': 'Bilançoda baz toplam aktif, gelir tablosunda net satışlardır.',
+            'D': 'Büyüklüğü farklı işletmelerin yapısal karşılaştırmasına imkân verir.',
+            'E': 'Genellikle tek döneme uygulanır (statik).',
+        },
+        'B',
+        'Dönemler arası tutar değişimini esas almak dikey analizin değil **karşılaştırmalı (yatay) analizin** özelliğidir. Dikey analiz tek dönemde kalemlerin bütüne oranını inceler.',
+        'Mali analiz - dikey/yatay',
+    ),
+    # düzey 2
+    '0024': patch(
+        'Bir işletmenin dikey analizinde özkaynaklar %70, toplam yabancı kaynaklar %30 çıkmıştır. Mali yapı açısından bu en olası olarak neyi gösterir?',
+        {
+            'A': 'Yabancı kaynak ağırlıklı, aşırı borçlu ve mali açıdan riskli bir yapıyı',
+            'B': 'Stokların toplam varlıklar içinde aşırı biriktiğini',
+            'C': 'Net satışların gerilediği ve kârlılığın düştüğü bir dönemi',
+            'D': 'Dönen varlıkların yetersiz olduğu, likiditesi zayıf bir yapıyı',
+            'E': 'Özkaynak ağırlıklı, borçluluğu düşük ve göreli güçlü bir mali yapıyı',
+        },
+        'E',
+        'Özkaynak %70 > Yabancı kaynak %30 ise varlıklar ağırlıkla **özkaynakla** finanse edilmiştir → **düşük borçluluk, göreli güçlü mali yapı**.',
+        'Mali analiz - dikey yorum',
+    ),
+    # düzey 2
+    '0025': patch(
+        'Dikey (yüzde) analizle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dinamik bir analizdir; dönemler arası büyümeyi (eğilimi) gösterir.\n\nII. Gelir tablosunda kalemler net satışlara oranlanır.\n\nIII. Büyüklükleri farklı işletmelerin yapısal karşılaştırmasına imkân verir.',
+        {
+            'A': 'II ve III',
+            'B': 'Yalnız I',
+            'C': 'I ve III',
+            'D': 'I ve II',
+            'E': 'I, II ve III',
+        },
+        'A',
+        '**I yanlıştır:** Dikey analiz **statik** bir analizdir; tek dönemin iç yapısını (kalemlerin bütüne oranını / kompozisyonunu) inceler. Dönemler arası büyümeyi (eğilimi) gösteren, yatay (karşılaştırmalı) / trend analizidir. **II** (gelir tablosu kalemleri net satışlara oranlanır) ve **III** (farklı ölçekli işletmelerin yapısal karşılaştırması) doğrudur. Doğru cevap **II ve III**.',
+        'Mali analiz - dikey analiz',
+    ),
+    # düzey 3
+    '0026': patch(
+        "Brüt satış kârının dikey yüzdesi %30, faaliyet giderlerinin dikey yüzdesi %18 ve faaliyet kârı 180.000 ₺ olan bir işletmenin net satışları kaç ₺'dir?",
+        {
+            'A': '600.000',
+            'B': '1.500.000',
+            'C': '375.000',
+            'D': '1.000.000',
+            'E': '1.800.000',
+        },
+        'B',
+        'Faaliyet kârının dikey yüzdesi = %30 − %18 = %12. Net satışlar = 180.000 ÷ 0,12 = **1.500.000 ₺**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0027': patch(
+        "Bir işletmenin faaliyet giderleri 90.000 ₺ ve faaliyet giderlerinin dikey yüzdesi %30'dur. Aynı yıl satışların maliyeti 150.000 ₺ olduğuna göre faaliyet kârının dikey yüzdesi kaçtır?",
+        {
+            'A': '%70',
+            'B': '%30',
+            'C': '%20',
+            'D': '%50',
+            'E': '%40',
+        },
+        'C',
+        'Net satışlar = 90.000 ÷ 0,30 = 300.000 ₺. Brüt satış kârı = 300.000 − 150.000 = 150.000 ₺ (%50). Faaliyet kârı = %50 − %30 = **%20**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0028': patch(
+        "Pasif toplamı 600.000 ₺, aktif devir hızı 2,50 olan bir işletmede satış indirimlerinin dikey yüzdesi %25'tir. Buna göre işletmenin brüt satışları kaç ₺'dir?",
+        {
+            'A': '1.125.000',
+            'B': '1.500.000',
+            'C': '750.000',
+            'D': '1.875.000',
+            'E': '2.000.000',
+        },
+        'D',
+        "Net satışlar = aktif (= pasif) × aktif devir hızı = 600.000 × 2,50 = 1.500.000 ₺. Dikey yüzdeler net satışlara göre hesaplanır; indirimler net satışların %25'i = 375.000 ₺. Brüt satışlar = 1.500.000 + 375.000 = **1.875.000 ₺**.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0029': patch(
+        'Dönem net kârının dikey yüzdesi %25, aktif devir hızı 0,8 ve özsermaye çarpanı (aktif toplamı ÷ özkaynaklar) 2,5 olan bir işletmenin özkaynak kârlılığı yüzde kaçtır?',
+        {
+            'A': '%20',
+            'B': '%62,50',
+            'C': '%31,25',
+            'D': '%8',
+            'E': '%50',
+        },
+        'E',
+        "DuPont: özkaynak kârlılığı = net kâr marjı × aktif devir hızı × özsermaye çarpanı = %25 × 0,8 × 2,5 = **%50**. Aktif kârlılığı %20'dir; çarpanla özkaynağa taşınır.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0030': patch(
+        'Bir işletmenin belirli bir döneme ait gelir tablosuna dikey yüzde analizi uygulandığında aşağıdakilerden hangisine ulaşılabilir?',
+        {
+            'A': 'Net satışların önceki yıla göre artış oranına',
+            'B': 'Satışların maliyetinin net satışlar içindeki payına',
+            'C': 'Stokların dönen varlıklar içindeki payına',
+            'D': 'Satışların baz yıla göre eğilim yüzdesine',
+            'E': 'Dönen varlıkların kısa vadeli borçları karşılama gücüne',
+        },
+        'B',
+        'Gelir tablosunun dikey analizi her kalemi aynı dönemin net satışlarına oranlar; satışların maliyetinin payı böyle bulunur. Önceki yıla göre değişim yatay, baz yıla göre eğilim trend analizidir; stok payı ve borç ödeme gücü bilanço verisi gerektirir.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0031': patch(
+        "Bir işletmenin net satışları 2024'te 500.000 ₺, 2025'te 600.000 ₺'dir. Satışların maliyetinin dikey yüzdesi 2024'te %62 iken 2025'te %70'e çıkmıştır. Buna göre brüt satış kârı 2025'te 2024'e göre nasıl değişmiştir?",
+        {
+            'A': '20.000 ₺ azalmıştır.',
+            'B': '8 puan artmıştır.',
+            'C': 'Değişmemiştir.',
+            'D': '10.000 ₺ azalmıştır.',
+            'E': '10.000 ₺ artmıştır.',
+        },
+        'D',
+        '2024 brüt kâr = 500.000 × %38 = 190.000 ₺; 2025 = 600.000 × %30 = 180.000 ₺. Satışlar artmasına rağmen brüt kâr **10.000 ₺ azalmıştır**; maliyet payındaki 8 puanlık artış satış artışının etkisini aşmıştır.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0032': patch(
+        'Brüt satışları 550.000 ₺, satış indirimleri 50.000 ₺ ve satışların maliyeti 340.000 ₺ olan bir işletmenin brüt satış kârının dikey yüzdesi kaçtır?',
+        {
+            'A': '%68',
+            'B': '%28',
+            'C': '%21,25',
+            'D': '%40',
+            'E': '%32',
+        },
+        'E',
+        "Net satışlar = 550.000 − 50.000 = 500.000 ₺ (%100). Brüt satış kârı = 500.000 − 340.000 = 160.000 ₺ → **%32**. Satışların maliyeti %68'dir.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0033': patch(
+        "Bilanço genel toplamına göre yapılan dikey analizde dönen varlıkların tutarı 90.000 ₺ ve dikey yüzdesi %30'dur. Kısa vadeli yabancı kaynakların dikey yüzdesi %20 ise cari oran kaçtır?",
+        {
+            'A': '1,50',
+            'B': '3',
+            'C': '1,20',
+            'D': '0,67',
+            'E': '4,50',
+        },
+        'A',
+        'Aynı baz kullanıldığından cari oran = %30 ÷ %20 = **1,50** (aktif 300.000 ₺, KVYK 60.000 ₺). Dönen varlık tutarı sonucu değiştirmez.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0034': patch(
+        "Bir işletmenin bilançosunda dönen varlıkların dikey yüzdesi %60, kısa vadeli yabancı kaynakların dikey yüzdesi %40'tır. Buna göre aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': "Devamlı sermayenin dikey yüzdesi %60'tır.",
+            'B': "Duran varlıkların dikey yüzdesi %40'tır.",
+            'C': 'Duran varlıkların bir kısmı kısa vadeli yabancı kaynaklarla finanse edilmektedir.',
+            'D': "Net çalışma sermayesi aktif toplamının %20'sidir.",
+            'E': "Cari oran 1,50'dir.",
+        },
+        'C',
+        'Cari = 60 ÷ 40 = 1,50; NÇS = %20; duran varlıklar %40; devamlı sermaye %60. Devamlı sermaye (%60) duran varlıklardan (%40) büyük olduğundan duran varlıkların tamamı uzun vadeli kaynakla karşılanır; kısa vadeli kaynakla finanse edilmesi söz konusu değildir.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0035': patch(
+        'Bir işletmenin bilançosuna genel toplama göre yapılan dikey analizde dönen varlıklar %35, kısa vadeli yabancı kaynaklar %45 ve özkaynaklar %30 bulunmuştur. Yalnızca bu bilgilere göre aşağıdakilerden hangisi söylenemez?',
+        {
+            'A': 'Stoklar, dönen varlıkların yarısından fazladır.',
+            'B': "Finansal kaldıraç oranı %70'tir.",
+            'C': 'Duran varlıkların bir kısmı kısa vadeli yabancı kaynaklarla finanse edilmektedir.',
+            'D': 'Net çalışma sermayesi negatiftir.',
+            'E': "Uzun vadeli yabancı kaynakların dikey yüzdesi %25'tir.",
+        },
+        'A',
+        'Verilen yüzdelerden: NÇS = %35 − %45 = −%10 (negatif); UVYK = %100 − %45 − %30 = %25; duran varlıklar %65 > devamlı sermaye %55 → duran varlıkların bir kısmı KVYK ile finanse edilir; kaldıraç = %70. Stokların dönen varlıklar içindeki payı hakkında bilgi yoktur; bu söylenemez.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0036': patch(
+        "Sürekli sermayesi 2.400.000 ₺ olan bir işletmenin dikey analize göre dönen varlıklarının dikey yüzdesi %55, kısa vadeli yabancı kaynaklarının dikey yüzdesi %40'tır. Buna göre net işletme sermayesi kaç ₺'dir?",
+        {
+            'A': '1.080.000',
+            'B': '1.600.000',
+            'C': '600.000',
+            'D': '2.200.000',
+            'E': '360.000',
+        },
+        'C',
+        'Sürekli sermaye = %100 − %40 = %60 → aktif = 2.400.000 ÷ 0,60 = 4.000.000 ₺. NÇS = %55 − %40 = %15 → 4.000.000 × %15 = **600.000 ₺**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0037': patch(
+        'Cari oranı 2,5 olan ve dönen varlıkları duran varlıklarına eşit olan bir işletmede kısa vadeli yabancı kaynakların pasif toplamına göre dikey yüzdesi kaçtır?',
+        {
+            'A': '%50',
+            'B': '%40',
+            'C': '%10',
+            'D': '%25',
+            'E': '%20',
+        },
+        'E',
+        "Dönen varlıklar aktifin %50'sidir. Cari 2,5 → KVYK = %50 ÷ 2,5 = **%20**.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0038': patch(
+        'Bir işletmenin bilançosunda duran varlıkların toplam varlıklara oranı son üç yılda sırasıyla %45, %40 ve %35 olarak hesaplanmıştır. Buna göre işletme için aşağıdakilerden hangisi doğrudur?',
+        {
+            'A': 'Dönen varlıkların tutarı her yıl azalmıştır.',
+            'B': 'Kısa vadeli yabancı kaynakların payı her yıl artmıştır.',
+            'C': 'Duran varlıkların tutarı her yıl azalmıştır.',
+            'D': 'Dönen varlıkların aktif içindeki payı her yıl artmıştır.',
+            'E': 'Aktif toplamı her yıl azalmıştır.',
+        },
+        'D',
+        'Dikey yüzdeler yalnız payları gösterir: duran varlık payı düşerken dönen varlık payı %55, %60, %65 olarak artmıştır. Tutarların ya da kaynak tarafının nasıl değiştiği bu bilgiden çıkarılamaz.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0039': patch(
+        "Aktif toplamı 1.000.000 ₺ olan bir işletmenin dönen varlıklarının dikey yüzdesi %45, kısa vadeli yabancı kaynaklarınınki %25'tir. Net satışları 1.600.000 ₺ olduğuna göre net çalışma sermayesi devir hızı kaçtır?",
+        {
+            'A': '4',
+            'B': '8',
+            'C': '1,60',
+            'D': '6,40',
+            'E': '3,56',
+        },
+        'B',
+        'NÇS = %45 − %25 = %20 → 200.000 ₺. Devir hızı = 1.600.000 ÷ 200.000 = **8**. Dönen varlıklara bölmek 3,56, aktife bölmek 1,60 verir.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0040': patch(
+        "Aktif toplamı 800.000 ₺ olan bir işletmede dikey yüzdeler şöyledir: dönen varlıklar %35, kısa vadeli yabancı kaynaklar %20, uzun vadeli yabancı kaynaklar %30. Buna göre işletmenin net çalışma sermayesi kaç ₺'dir?",
+        {
+            'A': '280.000',
+            'B': '40.000',
+            'C': '400.000',
+            'D': '120.000',
+            'E': '160.000',
+        },
+        'D',
+        'NÇS = %35 − %20 = %15 → 800.000 × %15 = **120.000 ₺**. Kontrol: devamlı sermaye %80 (640.000) − duran varlıklar %65 (520.000) = 120.000 ₺.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0041': patch(
+        'Dikey analizin en önemli üstünlüklerinden biri aşağıdakilerden hangisidir?',
+        {
+            'A': 'Kalemleri yüzdeye çevirmeden gelecek yılların satış ve kâr tutarlarını doğrudan tahmin etmeye yarayan bir model sunması',
+            'B': 'Kalemleri yüzdeye çevirdiği için, büyüklükleri farklı işletmelerin (veya dönemlerin) yapısal olarak karşılaştırılmasına imkân vermesi',
+            'C': 'Kasa ve bankadaki nakit mevcudunu fiilen artırarak işletmenin likiditesini ve ödeme gücünü yükseltmesi',
+            'D': 'İşletmenin dönem sonunda ödeyeceği vergi tutarını ve vergi sonrası net kârı doğrudan hesaplayabilmesi',
+            'E': 'Tek bir işletmenin verileriyle sınırlı kalması, farklı büyüklükteki işletmelerin karşılaştırılmasına imkân vermemesi',
+        },
+        'B',
+        'Dikey analiz kalemleri **yüzdeye** dönüştürdüğünden, **büyüklükleri farklı işletmelerin/dönemlerin yapısal karşılaştırmasına** imkân verir (mutlak tutar farkı sorun olmaz).',
+        'Mali analiz - dikey analiz',
+    ),
+    # düzey 2
+    '0042': patch(
+        "İki dönem karşılaştırıldığında, satışların maliyetinin net satışlara dikey oranı %60'tan %68'e çıkmıştır. Bu bulgu en olası olarak neyi gösterir?",
+        {
+            'A': 'Net satışların tamamen durduğunu ve gelir yaratılamadığını',
+            'B': 'Özkaynakların arttığını ve borçluluğun azaldığını gösterir',
+            'C': 'İşletmenin likiditesinin ve kısa vadeli borç ödeme gücünün belirgin biçimde arttığını',
+            'D': 'Brüt kârlılığın iyileştiğini ve brüt kâr marjının yükseldiğini',
+            'E': "Maliyet baskısının arttığını; brüt kâr marjının (%40'tan %32'ye) düştüğünü",
+        },
+        'E',
+        "SMM'nin dikey oranı %60'tan %68'e çıkmışsa brüt kâr marjı %40'tan %32'ye **düşmüştür** → **maliyet baskısı artmış**, brüt kârlılık zayıflamıştır.",
+        'Mali analiz - dikey yorum',
+    ),
+    # düzey 2
+    '0043': patch(
+        'Bir işletmenin dikey analizinde dönen varlıkların toplam aktife oranı %70 çıkmıştır. Bu yapı en olası olarak neyi gösterir?',
+        {
+            'A': 'Kaynak yapısında özkaynakların payının %70 olduğunu',
+            'B': 'Net satışlar içinde dönem net kârının payının %70 olduğunu',
+            'C': 'Varlık yapısının dönen (kısa vadeli/likit) varlık ağırlıklı olduğunu',
+            'D': 'İşletmenin stok ve ticari alacaklarının önemsiz düzeyde kaldığını',
+            'E': "Varlıkların büyük kısmının duran varlıklardan (özellikle MDV'den) oluştuğunu",
+        },
+        'C',
+        'Dönen varlık %70 ise varlık yapısı **dönen (likit) varlık ağırlıklıdır** (duran varlık %30). Sektöre göre yorumlanır.',
+        'Mali analiz - dikey yorum',
+    ),
+    # düzey 2
+    '0044': patch(
+        'Aşağıdakilerden hangisi dikey analiz için doğru, yatay (karşılaştırmalı) analiz için yanlıştır?',
+        {
+            'A': 'Bir baz yıl belirleyerek analizi uzun bir döneme yayan tekniktir.',
+            'B': 'Kalemlerin dönemler arası tutar artış ve azalışını esas alarak ölçer.',
+            'C': 'Bir baz yıl seçip sonraki dönemler için eğilim (trend) yüzdesi hesaplayarak uzun döneme yayar.',
+            'D': 'Tek döneme uygulanabilir ve kalemleri bir bütüne (toplam aktif/net satışlar) oranlar.',
+            'E': 'Uygulanabilmesi için en az iki döneme ait mali tabloya ihtiyaç duyar.',
+        },
+        'D',
+        '**Dikey analiz** tek döneme uygulanır ve kalemleri bir bütüne oranlar. Diğer seçenekler (iki dönem, tutar değişimi, trend, baz yıl) yatay/trend analiz özellikleridir.',
+        'Mali analiz - dikey/yatay',
+    ),
+    # düzey 3
+    '0045': patch(
+        "Faaliyet kârının dikey yüzdesi %45 ve brüt satış kârının dikey yüzdesi %60 olan bir işletmenin net satışları 1.800.000 ₺ ise faaliyet giderleri kaç ₺'dir?",
+        {
+            'A': '270.000',
+            'B': '810.000',
+            'C': '1.080.000',
+            'D': '90.000',
+            'E': '720.000',
+        },
+        'A',
+        'Faaliyet giderleri = brüt satış kârı − faaliyet kârı; dikey yüzdeyle %60 − %45 = %15. Tutar = 1.800.000 × %15 = **270.000 ₺**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0046': patch(
+        "Bir işletmenin faaliyet kârı dikey yüzdesi %12, brüt satış kârı dikey yüzdesi %32 ve satışların maliyeti 136.000 ₺'dir. Buna göre faaliyet giderleri toplamı kaç ₺'dir?",
+        {
+            'A': '43.520',
+            'B': '24.000',
+            'C': '27.200',
+            'D': '40.000',
+            'E': '64.000',
+        },
+        'D',
+        "Satışların maliyeti net satışların %68'i → net satışlar = 136.000 ÷ 0,68 = 200.000 ₺. Faaliyet giderleri = %32 − %12 = %20 → 200.000 × %20 = **40.000 ₺**.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0047': patch(
+        "Net satışları 450.000 ₺ olan bir işletmenin brüt satış kârlılığı %35, faaliyet giderlerinin dikey yüzdesi %15'tir. Buna göre işletmenin faaliyet kârı kaç ₺'dir?",
+        {
+            'A': '292.500',
+            'B': '90.000',
+            'C': '67.500',
+            'D': '157.500',
+            'E': '225.000',
+        },
+        'B',
+        'Faaliyet kârı dikey yüzdesi = %35 − %15 = %20 → 450.000 × %20 = **90.000 ₺**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0048': patch(
+        "Bir işletmenin faaliyet kârı 36.000 ₺, faaliyet giderleri 54.000 ₺ ve brüt satış kârı oranı %30'dur. Satış indirimlerinin dikey yüzdesi %20 olduğuna göre brüt satışları kaç ₺'dir?",
+        {
+            'A': '360.000',
+            'B': '375.000',
+            'C': '240.000',
+            'D': '300.000',
+            'E': '144.000',
+        },
+        'A',
+        "Brüt satış kârı = 36.000 + 54.000 = 90.000 ₺ → net satışlar = 90.000 ÷ 0,30 = 300.000 ₺. İndirimler net satışların %20'si = 60.000 ₺. Brüt satışlar = **360.000 ₺**.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0049': patch(
+        "Net satışları 120.000 ₺, net kârlılık oranı %20 ve pasif toplamı 400.000 ₺ olan bir işletmede dönen varlıkların dikey yüzdesi %60'tır. Buna göre duran varlık kârlılığı yüzde kaçtır?",
+        {
+            'A': '%10',
+            'B': '%20',
+            'C': '%7,50',
+            'D': '%6',
+            'E': '%15',
+        },
+        'E',
+        "Net kâr = 120.000 × %20 = 24.000 ₺. Duran varlıklar aktifin %40'ı = 160.000 ₺. Duran varlık kârlılığı = 24.000 ÷ 160.000 = **%15**. Dönen varlıklara oranlamak %10, aktife oranlamak %6 verir.",
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0050': patch(
+        'Dikey yüzdeler analiziyle ilgili aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Gelir tablosunun dikey analizinde yüzdeler, ilgili kalemin net satışlara oranını gösterir.\n\nII. Dikey analizde grup toplamı, aktif toplamı, pasif toplamı ve brüt satışlar birlikte %100 kabul edilir.\n\nIII. Varlık dağılımı incelenirken dönen ve duran varlıkların aktif toplamı içindeki payları karşılaştırılır.',
+        {
+            'A': 'I, II ve III',
+            'B': 'Yalnız I',
+            'C': 'I ve III',
+            'D': 'II ve III',
+            'E': 'I ve II',
+        },
+        'C',
+        '**I doğrudur.** **II yanlıştır:** gelir tablosunda %100 kabul edilen net satışlardır, brüt satışlar değil; ayrıca her tabloda yalnız bir baz seçilir. **III doğrudur.** Doğru cevap **I ve III**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0051': patch(
+        'Dönem net kârının dikey yüzdesi %8, aktif devir hızı 1,5 ve özkaynakların aktif toplamına oranı 0,40 olan bir işletmenin özkaynak kârlılığı yüzde kaçtır?',
+        {
+            'A': '%30',
+            'B': '%12',
+            'C': '%20',
+            'D': '%4,80',
+            'E': '%3,20',
+        },
+        'A',
+        'Aktif kârlılığı = %8 × 1,5 = %12. Özsermaye çarpanı = 1 ÷ 0,40 = 2,5. Özkaynak kârlılığı = %12 × 2,5 = **%30**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 2
+    '0052': patch(
+        'Bir işletmenin gelir tablosunda net satışlara göre dikey yüzdeler şöyledir: satışların maliyeti %65, faaliyet giderleri %20, diğer faaliyetlerden olağan gelirler %3, finansman giderleri %5. Buna göre olağan kârın dikey yüzdesi kaçtır?',
+        {
+            'A': '%10',
+            'B': '%35',
+            'C': '%13',
+            'D': '%15',
+            'E': '%18',
+        },
+        'C',
+        'Brüt kâr %35 → faaliyet kârı %35 − %20 = %15 → olağan kâr %15 + %3 − %5 = **%13**.',
+        'Mali analiz - gelir tablosunun dikey analizi',
+    ),
+    # düzey 3
+    '0053': patch(
+        "Toplam aktifleri %100 kabul edilerek yapılan dikey analizde bir işletmenin kısa vadeli yabancı kaynaklarının dikey yüzdesi %15, uzun vadeli yabancı kaynaklarınınki %35'tir. Kısa vadeli yabancı kaynaklar 45.000 ₺ olduğuna göre özkaynakların yabancı kaynaklara oranı kaçtır?",
+        {
+            'A': '2',
+            'B': '1,50',
+            'C': '0,30',
+            'D': '0,50',
+            'E': '1',
+        },
+        'E',
+        'Aktif = 45.000 ÷ 0,15 = 300.000 ₺. Yabancı kaynaklar %50 = 150.000 ₺, özkaynaklar %50 = 150.000 ₺ → oran **1**. Tutar bilgisi oranı değiştirmez; yüzdeler yeterlidir.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0054': patch(
+        "Bir işletmenin dönen varlıkları 360.000 ₺, duran varlıkları 540.000 ₺ ve stokları 72.000 ₺'dir. Sürekli sermayesinin dikey yüzdesi %60 olduğuna göre asit-test oranı kaçtır?",
+        {
+            'A': '1',
+            'B': '1,20',
+            'C': '0,60',
+            'D': '0,80',
+            'E': '0,53',
+        },
+        'D',
+        "Pasif = aktif = 900.000 ₺; KVYK = %40 → 360.000 ₺. Asit-test = (360.000 − 72.000) ÷ 360.000 = **0,80**. Cari oran 1'dir.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0055': patch(
+        "Pasif toplamı %100 kabul edilerek yapılan dikey analizde özkaynakların yüzdesi %35, uzun vadeli yabancı kaynaklarınki %25 bulunmuştur. Yabancı kaynak toplamı 390.000 ₺ olduğuna göre aktif toplamı ve kısa vadeli yabancı kaynaklar sırasıyla kaç ₺'dir?",
+        {
+            'A': '600.000 ve 156.000',
+            'B': '600.000 ve 240.000',
+            'C': '600.000 ve 150.000',
+            'D': '240.000 ve 600.000',
+            'E': '390.000 ve 156.000',
+        },
+        'B',
+        'Yabancı kaynaklar %65 → aktif = 390.000 ÷ 0,65 = 600.000 ₺. KVYK = %100 − %35 − %25 = %40 → **240.000 ₺**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0056': patch(
+        "Bir işletmenin dönen varlıkları 400.000 ₺, bunun içinde stokları 140.000 ₺ ve aktif toplamı 1.000.000 ₺'dir. Grup toplamına göre dikey analizde stokların yüzdesi kaçtır?",
+        {
+            'A': '%35',
+            'B': '%65',
+            'C': '%28',
+            'D': '%14',
+            'E': '%40',
+        },
+        'A',
+        "Grup toplamına göre dikey analizde kalem ait olduğu grubun toplamına oranlanır: 140.000 ÷ 400.000 = **%35**. Aktif toplamına göre (genel toplam) oran %14'tür.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0057': patch(
+        "Bir işletmenin aktif toplamı 2024'te 800.000 ₺, 2025'te 1.000.000 ₺'dir. Dönen varlıkların dikey yüzdesi 2024'te %40, 2025'te %36'dır. Buna göre aşağıdakilerden hangisi doğrudur?",
+        {
+            'A': 'Dönen varlıklar tutar olarak da, pay olarak da artmıştır.',
+            'B': 'Dönen varlıklar tutar olarak azalmış, aktif içindeki payı da azalmıştır.',
+            'C': 'Dönen varlıklar tutar olarak artmış, aktif içindeki payı azalmıştır.',
+            'D': 'Duran varlıkların aktif içindeki payı azalmıştır.',
+            'E': 'Duran varlıkların tutarı değişmemiştir.',
+        },
+        'C',
+        "Dönen varlıklar 2024: 320.000 ₺, 2025: 360.000 ₺ → tutar 40.000 ₺ artmış; pay %40'tan %36'ya inmiştir. Duran varlıklar 480.000 ₺'den 640.000 ₺'ye çıkmış, payı %60'tan %64'e yükselmiştir.",
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0058': patch(
+        'Dönen varlıklarının dikey yüzdesi %48, kısa vadeli yabancı kaynaklarının dikey yüzdesi %32 olan bir işletmenin cari oranı kaçtır?',
+        {
+            'A': '0,67',
+            'B': '0,16',
+            'C': '1,32',
+            'D': '1,50',
+            'E': '16',
+        },
+        'D',
+        'Aynı baza oranlandıklarından cari oran = 48 ÷ 32 = **1,50**. Farkları (%16) net çalışma sermayesinin payıdır.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 3
+    '0059': patch(
+        'Aktif toplamı içinde hazır değerlerin dikey yüzdesi %6, menkul kıymetlerin %4 ve kısa vadeli yabancı kaynakların %25 olan bir işletmenin nakit oranı kaçtır?',
+        {
+            'A': '0,10',
+            'B': '0,40',
+            'C': '2,50',
+            'D': '0,24',
+            'E': '0,16',
+        },
+        'B',
+        'Nakit oranı = (hazır değerler + menkul kıymetler) ÷ KVYK = (6 + 4) ÷ 25 = **0,40**. Aynı baz kullanıldığından tutar bilgisine gerek yoktur.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+    # düzey 2
+    '0060': patch(
+        "Aktif toplamı 500.000 ₺ olan bir işletmenin kısa vadeli yabancı kaynakları 125.000 ₺, özkaynakları 225.000 ₺'dir. Buna göre uzun vadeli yabancı kaynakların pasif içindeki dikey yüzdesi kaçtır?",
+        {
+            'A': '%70',
+            'B': '%55',
+            'C': '%30',
+            'D': '%25',
+            'E': '%45',
+        },
+        'C',
+        'UVYK = 500.000 − 125.000 − 225.000 = 150.000 ₺ → 150.000 ÷ 500.000 = **%30**.',
+        'Mali analiz - bilançonun dikey analizi',
+    ),
+}
+
+PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
+
+
+def apply_or_check(path, write):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    questions = data["questions"] if isinstance(data, dict) else data
+    by_id = {q["id"]: q for q in questions}
+    fark = []
+    for qid, alanlar in PATCHES.items():
+        q = by_id.get(qid)
+        if q is None:
+            raise SystemExit(f"Soru bulunamadi: {path}::{qid}")
+        for alan, beklenen in alanlar.items():
+            if q.get(alan) != beklenen:
+                fark.append(f"{path}::{qid}.{alan}")
+                if write:
+                    q[alan] = beklenen
+        if write:
+            if len(set(q["options"].values())) != 5:
+                raise SystemExit(f"Secenek cakismasi: {path}::{qid}")
+            if q["answer"] not in q["options"]:
+                raise SystemExit(f"Cevap secenekte yok: {path}::{qid}")
+    if write:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return fark
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    g = ap.add_mutually_exclusive_group(required=True)
+    g.add_argument("--check", action="store_true")
+    g.add_argument("--write", action="store_true")
+    args = ap.parse_args()
+    fark = []
+    for path in (ROOT / RELATIVE_PATH, APP_ROOT / RELATIVE_PATH):
+        fark.extend(apply_or_check(path, args.write))
+    if args.check and fark:
+        print("Eslesmeyen alanlar:")
+        for f in fark[:20]:
+            print(f"- {f}")
+        return 1
+    print(f"1 paket / {len(PATCHES)} soru ('Dikey Analiz' yapisal kalibrasyon) iki repoda dogrulandi.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
