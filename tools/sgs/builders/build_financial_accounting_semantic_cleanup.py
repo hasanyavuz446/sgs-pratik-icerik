@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 RELATIVE_PATH = "content/finansal_muhasebe/muhasebenin_temel_kavramlari.json"
 PROCESS_RELATIVE_PATH = "content/finansal_muhasebe/muhasebe_sureci_hesap_plani.json"
-READY_RELATIVE_PATH = "content/finansal_muhasebe/hazir_degerler.json"
+# hazir_degerler.json -> build_fm_hazir_degerler_cok_adimli.py (tek sahip)
 # stoklar.json -> build_fm_stoklar_cok_adimli.py (tek sahip)
 # ticari_alacaklar.json -> build_fm_ticari_alacaklar_cok_adimli.py (tek sahip)
 SECURITIES_RELATIVE_PATH = "content/finansal_muhasebe/menkul_kiymetler.json"
@@ -542,200 +542,6 @@ PROCESS_PATCHES = {
             "kind": "generated",
             "styleRef": "SGS Finansal Muhasebe (çok adımlı işlem etkisi)",
             "legislationRef": "1 Sıra No'lu MSUGT - temel muhasebe eşitliği ve hesapların işleyişi",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-}
-
-
-READY_PATCHES = {
-    "finmuh-hazirdeg-gen-0019": {
-        "stem": "İşletmede 10.000 ₺ tutarında sabit kasa avansı oluşturulmuştur. Dönem sonundaki sayımda kasada 2.300 ₺ nakit ve toplam 7.500 ₺ tutarında geçerli harcama belgesi bulunmuştur. Fonun yeniden 10.000 ₺'ye tamamlanması istenmektedir.\n\nBuna göre kasa noksanı ve kasaya konulacak tamamlama tutarı sırasıyla kaç ₺'dir?",
-        "options": {
-            "A": "200 ₺ noksan; 7.700 ₺ tamamlama",
-            "B": "200 ₺ fazla; 7.500 ₺ tamamlama",
-            "C": "Noksan veya fazla yok; 7.500 ₺ tamamlama",
-            "D": "2.300 ₺ noksan; 10.000 ₺ tamamlama",
-            "E": "7.500 ₺ noksan; 2.300 ₺ tamamlama",
-        },
-        "answer": "A",
-        "solution": "Nakit ve belgeler toplamı 2.300 + 7.500 = **9.800 ₺** olduğundan 10.000 − 9.800 = **200 ₺ kasa noksanı** vardır. Kasayı yeniden 10.000 ₺'ye çıkarmak için 10.000 − 2.300 = **7.700 ₺** konulmalıdır. Bu tutarın 7.500 ₺'si belgeli giderleri, 200 ₺'si noksanı karşılar.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (sabit kasa avansı; çok adımlı hesaplama)",
-            "legislationRef": "1 Sıra No'lu MSUGT - 100 Kasa ve kasa sayım işlemleri",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0020": {
-        "stem": "Banka mutabakatında aşağıdaki işlemlerden hangisi doğrudur?",
-        "options": {
-            "A": "Henüz bankaya ulaşmamış mevduat, işletmenin defter bakiyesinden düşülür.",
-            "B": "Henüz bankaya ibraz edilmemiş çekler, işletmenin defter bakiyesine eklenir.",
-            "C": "Bankanın doğrudan tahsil ettiği müşteri borcu, banka hesap özetinden düşülür.",
-            "D": "Yoldaki mevduat banka hesap özeti bakiyesine eklenir; ödenmemiş çekler bu bakiyeden düşülür.",
-            "E": "Bankanın kestiği ve işletmenin kaydetmediği masraf, banka hesap özeti bakiyesine eklenir.",
-        },
-        "answer": "D",
-        "solution": "**Yoldaki mevduat** işletmece kaydedilmiş fakat bankaca henüz kaydedilmemiştir; bu nedenle banka hesap özeti bakiyesine eklenir. **Ödenmemiş çekler** de işletmece kaydedilmiş fakat bankaca henüz ödenmemiştir; banka hesap özeti bakiyesinden düşülür. Banka masrafı ve bankanın doğrudan tahsilatı ise işletmenin defter bakiyesini düzeltir.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (banka mutabakatı; sınıflandırma)",
-            "legislationRef": "Muhasebe Süreci - 102 Bankalar hesabı ve banka mutabakatı",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0024": {
-        "stem": "İşletmenin 102 Bankalar hesabı bakiyesi 248.000 ₺'dir. Banka, işletme adına 12.000 ₺ müşteri borcu ile 1.000 ₺ mevduat faizi tahsil etmiş; ayrıca 1.200 ₺ hesap işletim ücreti kesmiştir. Bu üç işlem işletmece henüz kaydedilmemiştir. Yoldaki mevduat ve ödenmemiş çeklerin banka tarafında düzeltileceği dikkate alındığında, işletmenin düzeltilmiş defter bakiyesi kaç ₺'dir?",
-        "options": {
-            "A": "234.800 ₺",
-            "B": "247.800 ₺",
-            "C": "258.000 ₺",
-            "D": "259.800 ₺",
-            "E": "261.200 ₺",
-        },
-        "answer": "D",
-        "solution": "İşletmenin defter bakiyesi; bankanın doğrudan tahsil ettiği 12.000 ₺ ve faiz geliri 1.000 ₺ kadar artırılır, 1.200 ₺ banka masrafı kadar azaltılır: 248.000 + 12.000 + 1.000 − 1.200 = **259.800 ₺**. Yoldaki mevduat ve ödenmemiş çekler banka hesap özeti tarafının düzeltmeleridir.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (banka mutabakatı; çok adımlı hesaplama)",
-            "legislationRef": "1 Sıra No'lu MSUGT - 102 Bankalar, 642 Faiz Gelirleri ve 653 Komisyon Giderleri",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0025": {
-        "stem": "İşletmenin dönem başı nakit mevcudu 80.000 ₺, dönem içi nakit tahsilatları 270.000 ₺ ve nakit ödemeleri 310.000 ₺'dir. İşletme dönem sonunda en az 60.000 ₺ nakit bulundurmak istemektedir. Başka bir finansman işlemi olmadığına göre ihtiyaç duyulan kısa vadeli borçlanma kaç ₺'dir?",
-        "options": {
-            "A": "0 ₺",
-            "B": "10.000 ₺",
-            "C": "40.000 ₺",
-            "D": "60.000 ₺",
-            "E": "20.000 ₺",
-        },
-        "answer": "E",
-        "solution": "Finansman öncesi dönem sonu nakit mevcudu 80.000 + 270.000 − 310.000 = **40.000 ₺**dir. Hedeflenen asgari 60.000 ₺'ye ulaşmak için 60.000 − 40.000 = **20.000 ₺** kısa vadeli borçlanma gerekir.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (nakit bütçesi; uygulama)",
-            "legislationRef": "Nakit Yönetimi - dönem sonu nakit ihtiyacının belirlenmesi",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0031": {
-        "stem": "TMS 7'ye göre bir yatırımın nakit benzeri sayılabilmesi için aşağıdaki özelliklerden hangisinin birlikte bulunması gerekir?",
-        "options": {
-            "A": "Borsada işlem görmesi ve her durumda özkaynak aracı olması",
-            "B": "Uzun vadeli getiri sağlamak amacıyla elde tutulması ve fiyatının sık değişmesi",
-            "C": "Yalnız vadesiz banka hesabında izlenmesi ve faiz getirisi bulunmaması",
-            "D": "Belirli bir nakit tutarına kolayca çevrilebilmesi, değer değişim riskinin önemsiz olması ve kısa vadeli nakit taahhütleri için tutulması",
-            "E": "Edinim maliyetinin yüksek olması ve vadesinin bir yıldan uzun bulunması",
-        },
-        "answer": "D",
-        "solution": "TMS 7'ye göre nakit benzerleri; **belirli bir nakit tutarına kolayca çevrilebilen**, **değerindeki değişim riski önemsiz** olan yüksek likiditeli kısa vadeli yatırımlardır. Yatırım amacıyla değil, kısa vadeli nakit taahhütlerini karşılamak için tutulurlar.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (TMS 7; kavramı uygulama)",
-            "legislationRef": "TMS 7 Nakit Akış Tablosu, par. 6-7",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0033": {
-        "stem": "Bir işletmenin bankadaki kredili cari hesabı talep üzerine geri ödenebilmekte, işletmenin günlük nakit yönetiminin ayrılmaz bir parçasını oluşturmakta ve bakiyesi sık sık artıdan eksiye dönmektedir. TMS 7'ye göre bu hesabın nakit akış tablosundaki değerlendirmesi hangisidir?",
-        "options": {
-            "A": "Her durumda yatırım faaliyeti olarak sınıflandırılır.",
-            "B": "Bu özellikleri taşıdığı için nakit ve nakit benzerlerinin bir unsuru kabul edilebilir.",
-            "C": "Bakiyesi eksiye dönebildiği için finansal tablolardan tamamen çıkarılır.",
-            "D": "Yalnız özkaynak hesabı olarak raporlanabilir.",
-            "E": "Vadesi ne olursa olsun ticari alacak kabul edilir.",
-        },
-        "answer": "B",
-        "solution": "Banka borçlanmaları normalde finansman faaliyetidir. Ancak **talep üzerine geri ödenebilen** ve işletmenin nakit yönetiminin ayrılmaz parçası olan, bakiyesi sık sık artıdan eksiye dönen kredili cari hesaplar TMS 7 uyarınca nakit ve nakit benzerlerinin bir unsuru kabul edilebilir.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (TMS 7; istisna senaryosu)",
-            "legislationRef": "TMS 7 Nakit Akış Tablosu, par. 8",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0047": {
-        "stem": "İşletme, bankadan ödenen bir çeki kendi kayıtlarına yanlışlıkla 9.800 ₺ olarak geçirmiştir. Banka hesap özetinde çekin doğru tutarı olan 8.900 ₺ yer almaktadır. Başka hata olmadığına göre banka mutabakatında işletmenin defter bakiyesi nasıl düzeltilmelidir?",
-        "options": {
-            "A": "900 ₺ azaltılmalıdır.",
-            "B": "900 ₺ artırılmalıdır.",
-            "C": "8.900 ₺ artırılmalıdır.",
-            "D": "9.800 ₺ azaltılmalıdır.",
-            "E": "İşletme kaydı banka bakiyesini etkilemediği için düzeltme yapılmamalıdır.",
-        },
-        "answer": "B",
-        "solution": "İşletme 8.900 ₺ yerine 9.800 ₺ çıkış kaydederek banka hesabını **900 ₺ fazla azaltmıştır**. Defter bakiyesini doğru tutara getirmek için 102 Bankalar hesabı **900 ₺ artırılmalıdır**.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (banka mutabakatı; kayıt hatası)",
-            "legislationRef": "Muhasebe Süreci - 102 Bankalar hesabı ve banka mutabakatı",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0050": {
-        "stem": "TMS 7'ye göre aşağıdaki kalemlerden hangisi nakit veya nakit benzeri kapsamında değerlendirilmez?",
-        "options": {
-            "A": "Kasadaki nakit para",
-            "B": "Talep edildiğinde çekilebilen vadesiz banka mevduatı",
-            "C": "Uzun vadeli getiri amacıyla elde tutulan ve değeri dalgalanan tahvil yatırımı",
-            "D": "Edinildiği tarihte vadesi üç ay veya daha kısa olan, belirli tutara çevrilebilir ve değer değişim riski önemsiz yatırım",
-            "E": "Serbestçe kullanılabilen vadesiz döviz mevduatı",
-        },
-        "answer": "C",
-        "solution": "Uzun vadeli getiri amacıyla elde tutulan ve değeri dalgalanan tahvil, kısa vadeli nakit taahhütlerini karşılamaya yönelik bir nakit benzeri değildir. Nakit benzeri yatırım; **edinildiği tarihte genellikle üç ay veya daha kısa vadeli**, belirli nakit tutarına kolayca çevrilebilir ve değer değişim riski önemsiz olmalıdır.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (TMS 7; sınıflandırma)",
-            "legislationRef": "TMS 7 Nakit Akış Tablosu, par. 6-7",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0052": {
-        "stem": "İşletme, on iki ay vadeli bir mevduatı açılış tarihinde yatırım amacıyla edinmiştir. Dönem sonunda mevduatın vadesine iki ay kalmıştır. Tutar belirli olsa ve risk değişmemiş olsa bile, yalnız kalan vadenin iki aya düşmesi TMS 7 bakımından hangi sonucu doğurur?",
-        "options": {
-            "A": "Mevduat geriye dönük olarak edinildiği tarihten itibaren nakit sayılır.",
-            "B": "Mevduat zorunlu olarak özkaynak aracına dönüşür.",
-            "C": "Kalan vade üç aydan az olduğu için başka ölçüt aranmadan kasa hesabına aktarılır.",
-            "D": "Mevduatın vadesi dikkate alınmaz; yalnız faiz oranına bakılır.",
-            "E": "Başlangıçta on iki aylık yatırım olarak edinildiğinden, kalan vadenin kısalması tek başına onu nakit benzerine dönüştürmez.",
-        },
-        "answer": "E",
-        "solution": "TMS 7'de kısa vade değerlendirmesi yatırımın **edinildiği tarihten itibaren** yapılır; ayrıca elde tutma amacı ve değer değişim riski de dikkate alınır. Başlangıçta on iki aylık yatırım olarak edinilen mevduat, yalnız vadesine iki ay kalması nedeniyle kendiliğinden nakit benzeri olmaz.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (TMS 7; kalan vade tuzağı)",
-            "legislationRef": "TMS 7 Nakit Akış Tablosu, par. 7",
-        },
-        "validYear": 2026,
-        "mockExamId": None,
-    },
-    "finmuh-hazirdeg-gen-0059": {
-        "stem": "İşletmenin vadesiz banka mevduatındaki 500.000 ₺, bir kredi sözleşmesi gereği on dört ay boyunca kullanılamayacak şekilde bloke edilmiştir. TMS 7 ve finansal tablo kullanıcılarının likidite değerlendirmesi açısından en uygun uygulama hangisidir?",
-        "options": {
-            "A": "Vadesiz hesapta bulunduğu için tutarı hiçbir açıklama yapmadan nakit olarak sunmak",
-            "B": "Kullanım kısıtı nedeniyle tutarı nakit dışında uygun bir kalemde ayrı sunmak ve kısıtın niteliğiyle süresini açıklamak",
-            "C": "Tutarı doğrudan dönem gideri yazmak",
-            "D": "Bloke edilen tutarı işletmenin yabancı kaynağı olarak göstermek",
-            "E": "Mevduatı ve ilgili kısıtı finansal tablolardan tamamen çıkarmak",
-        },
-        "answer": "B",
-        "solution": "Talep edildiğinde serbestçe kullanılamayan mevduat, yalnız vadesiz hesapta yer aldığı için nakit kabul edilemez. On dört aylık kullanım kısıtı likidite değerlendirmesi için önemlidir; tutar **nakit dışında uygun bir kalemde ayrı sunulmalı**, kısıtın niteliği ve süresi açıklanmalıdır.",
-        "source": {
-            "kind": "generated",
-            "styleRef": "SGS Finansal Muhasebe (TMS 7; kısıtlı mevduat)",
-            "legislationRef": "TMS 7 Nakit Akış Tablosu; KGK 2022 Yıllık İnceleme Raporu, Nakit ve Nakit Benzerleri",
         },
         "validYear": 2026,
         "mockExamId": None,
@@ -3285,7 +3091,6 @@ CURRENCY_DIFFERENCES_PATCHES = {
 PATCHES_BY_PATH = {
     RELATIVE_PATH: PATCHES,
     PROCESS_RELATIVE_PATH: PROCESS_PATCHES,
-    READY_RELATIVE_PATH: READY_PATCHES,
     SECURITIES_RELATIVE_PATH: SECURITIES_PATCHES,
     INTANGIBLE_RELATIVE_PATH: INTANGIBLE_PATCHES,
     FINANCIAL_INVESTMENT_RELATIVE_PATH: FINANCIAL_INVESTMENT_PATCHES,
