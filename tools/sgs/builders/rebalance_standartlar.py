@@ -841,7 +841,6 @@ KONFIG: dict[str, dict] = {
     "tms_7_nakit_akis": {"atma_ozel": TMS7_OZEL, "uzat": TMS7_UZAT},
     "tms_38_modv": {"atma_ozel": TMS38_OZEL, "kisalt": TMS38_KISALT},
     "tms_36_deger_dusuklugu": {"atma_ozel": TMS36_OZEL},
-    "tms_20_devlet_tesvik": {"atma_ozel": TMS20_OZEL},
     "tms_16_mdv": {"atma_ozel": TMS16_OZEL, "uzat": TMS16_UZAT, "kisalt": TMS16_KISALT},
 }
 
