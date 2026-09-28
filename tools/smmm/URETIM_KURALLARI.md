@@ -158,6 +158,15 @@ sistematik olarak en uzun olur (yazdıktan sonra kısalt, bazı sorularda çeldi
 gerçek içerik ekle); aşırı kısaltmada en kısa uca kayar; olumsuz kök oranı kendiliğinden
 düşük kalır (mevzuat derslerinde baştan ~%50 hedefle).
 
+Mevcut dosyada tasarımdan az soru varsa (ör. 18 soruluk bölüm testi 20'ye çıkıyorsa)
+`Paket(..., ek_idler=["demo-sermaye-021", ...])` ile yeni kimlikler eklenir; eski
+kimlikler korunur. Bir bölüm testini karıştıran eski demo sorusu silinmez,
+`demo_questions.json` içinde `isActive: false` yapılır (cihazdan böyle kalkar).
+Toplu metin değişikliği yapan yardımcı betiklerde bir soru bloğunun sonunu sadece
+"sonraki `P.` satırı" ile arama: arada bölüm yorumu varsa sonraki soru da yutulur;
+değişiklikten sonra soru sayısını mutlaka say. Şıklarda `"…".replace(...)` gibi
+kod içi dönüşüm bırakma; şık düz metin olmalıdır.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve
