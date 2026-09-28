@@ -144,7 +144,9 @@ class Paket:
             if any(lvl == "FATAL" for lvl, *_ in audit.letter_pattern(s)):
                 continue
             return seq
-        raise SystemExit("harf dizisi kurulamadı (sabit harfler çok yığılmış olabilir)")
+        yigin = [i for i in range(2, n) if all(j in sabit for j in (i - 2, i - 1, i))
+                 and sabit[i - 2] == sabit[i - 1] == sabit[i]]
+        raise SystemExit(f"harf dizisi kurulamadı; art arda aynı harfli sabit sorular: {yigin}")
 
     # ------------------------------------------------------------------ çıktı
     def _mevcut_idler(self):

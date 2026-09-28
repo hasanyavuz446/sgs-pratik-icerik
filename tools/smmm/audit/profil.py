@@ -62,6 +62,7 @@ BOLUM_ADI = {
 # "…sayılmaz?", "…imkânı yoktur?", "…esaslı yanılma sayılmaz?".
 OLUMSUZ = re.compile(
     r"(değildir|değil midir|yanlıştır|yanlış olur|yoktur|olamaz|söylenemez|mümkün değildir|"
+    r"yanlış\s+\w+(?:mış|miş|muş|müş)t[ıiuü]r|"  # "…hangisinde yanlış verilmiştir?"
     # Türkçe olumsuz fiil sonları: -maz/-mez (sayılmaz, uygulanmaz, duyurulmaz),
     # -mamıştır/-memiştir (sayılmamıştır), -mamaktadır/-memektedir.
     r"\w+(?:ma|me)z|\w+(?:ma|me)(?:mış|miş)tır|\w+(?:ma|me)(?:mış|miş)tir|\w+(?:mamakta|memekte)d[ıi]r)"
