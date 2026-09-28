@@ -147,6 +147,8 @@ def havuz_olcumler(root=REPO, *, havuz=None):
         if os.path.basename(path) == "stimuli.json":
             continue
         for q in json.load(open(path, encoding="utf-8")):
+            if q.get("isActive") is False:
+                continue
             konu = "Konu Havuzu" in (q.get("tags") or [])
             if havuz == "konu" and not konu or havuz == "bolum" and konu:
                 continue

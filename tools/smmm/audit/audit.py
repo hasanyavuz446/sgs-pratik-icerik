@@ -780,8 +780,8 @@ def bolum_sadakati(paths):
         for raw in load(path):
             q = norm(raw)
             bolum = profil.BOLUM.get(q["lesson"])
-            if not bolum:
-                continue
+            if not bolum or raw.get("isActive") is False:
+                continue  # pasif soru uygulamada gösterilmez; profile girmez
             havuz = "konu" if "Konu Havuzu" in q["tags"] else "bölüm"
             gruplar[(bolum, havuz)].append(
                 profil.olc(q["stem"], q["opts"], stimulus_id=raw.get("stimulusId")))
@@ -832,6 +832,7 @@ def cross_file_issues(paths):
     seen_exact = {}
     seen_template = {}
     seen_solution = {}
+    seen_stem = {}
     issues = []
     emitted = set()
 
@@ -850,6 +851,15 @@ def cross_file_issues(paths):
                 emit("dosyalar-arası-id", qid, seen_id[qid], base)
             else:
                 seen_id[qid] = base
+
+            # Uygulamanın ContentValidator'ı Yeterlilik programında aynı kökü (boşluk/harf
+            # büyüklüğü normalleştirilmiş) iki soruda kabul etmez; aynı kural burada FATAL'dır.
+            if raw.get("isActive") is not False:
+                stem_key = " ".join(str(q["stem"]).lower().split())
+                if stem_key in seen_stem and seen_stem[stem_key][1] != base:
+                    emit("dosyalar-arası-kök", qid, f"{seen_stem[stem_key][0]} ({seen_stem[stem_key][1]})", base)
+                else:
+                    seen_stem.setdefault(stem_key, (qid, base))
 
             exact = full_key(q)
             if exact in seen_exact and seen_exact[exact][1] != base:

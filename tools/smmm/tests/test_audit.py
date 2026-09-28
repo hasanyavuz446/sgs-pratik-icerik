@@ -260,6 +260,26 @@ class AuditTest(unittest.TestCase):
                 os.unlink(path)
         self.assertTrue(any(level == "FATAL" and "Vergi" in m for level, _, m in issues), issues)
 
+    def test_same_stem_in_two_files_is_fatal(self):
+        left = clean_pack()
+        right = clean_pack()
+        for index, item in enumerate(right):
+            item["id"] = f"other-{index:04d}"
+            for key in item["choices"]:
+                item["choices"][key] = item["choices"][key] + " (farklı şık)"
+            item["explanation"] = item["explanation"] + " Ayrı paket açıklaması."
+        paths = []
+        try:
+            for items in (left, right):
+                with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as handle:
+                    json.dump(items, handle, ensure_ascii=False)
+                    paths.append(handle.name)
+            issues = audit.cross_file_issues(paths)
+        finally:
+            for path in paths:
+                os.unlink(path)
+        self.assertTrue(any(code == "dosyalar-arası-kök" for _, code, _ in issues), issues)
+
 
 if __name__ == "__main__":
     unittest.main()
