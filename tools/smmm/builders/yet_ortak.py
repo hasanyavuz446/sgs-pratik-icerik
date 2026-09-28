@@ -54,12 +54,13 @@ def sayi_degeri(metin):
 
 class Paket:
     def __init__(self, dosya, *, lesson, topic, konu_adi, seed, surum,
-                 havuz="konu", kontrol=None, style="2026 SMMM beş seçenekli test"):
+                 havuz="konu", kontrol=None, style="2026 SMMM beş seçenekli test", ek_idler=()):
         assert havuz in ("konu", "bolum")
         self.dosya = dosya
         self.lesson, self.topic, self.konu_adi = lesson, topic, konu_adi
         self.seed, self.surum, self.havuz, self.style = seed, surum, havuz, style
         self.kontrol = kontrol or dt.date.today().isoformat()
+        self.ek_idler = list(ek_idler)  # mevcut dosyada eksik kalan soru sayısı kadar yeni kimlik
         self.S = []
 
     # ------------------------------------------------------------------ girdi
@@ -153,7 +154,11 @@ class Paket:
         yol = os.path.join(ROOT, "content", "yeterlilik", self.dosya)
         if not os.path.exists(yol):
             return None
-        return [q["id"] for q in json.load(open(yol, encoding="utf-8"))]
+        mevcut = [q["id"] for q in json.load(open(yol, encoding="utf-8"))]
+        for yeni in self.ek_idler:
+            if yeni not in mevcut:
+                mevcut.append(yeni)
+        return mevcut
 
     def sorular(self, idler=None):
         idler = idler or self._mevcut_idler()
