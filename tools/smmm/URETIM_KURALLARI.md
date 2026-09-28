@@ -134,6 +134,30 @@ Kurallar:
 
 ---
 
+## 3.0 Güncel yöntem: `yet_ortak.Paket` (2026-09-28'den itibaren zorunlu)
+
+Yeni ve yeniden yazılan paketler `tools/smmm/builders/yet_ortak.py` ile üretilir
+(örnek: `build_yk_disiplin.py`, bölüm testleri için `build_yb_meslek.py`). Modül,
+JSON yazılmadan önce şunları durdurur:
+
+- şıkta mutlak dil (`audit.ELEME_ISARETI`: yalnız, zorunda, hiçbir, kendiliğinden…);
+  mevzuat metninde geçse bile şıkta sadeleştirilir ("başlamak zorundadır" → "başlar"),
+- çözümde harf atfı, tekrar eden şık, 60/60'tan sapma, kimlik sayısı uyuşmazlığı,
+- şık uzunluğu: doğru şık tek-en-uzun veya tek-en-kısa > %25, iki uçtan biri < %8,
+  ortalama uzunluk sırası 2,45–3,55 dışı,
+- kör öğrenci ≥ %32, öncül seçici yığılması, aynı harfin üç kez art arda gelmesi.
+
+Sayısal şıklar `P.sayisal()` ile artan sırada, öncüllü sorular `P.oncul()` ile
+gerçek kitapçıktaki gibi sabit seçici sırasıyla yazılır; harfleri değer/sıra belirler.
+Kimlikler mevcut dosyadan alınır: uygulama silinen soruyu telefondan silmez, aynı
+kimliğin üzerine yazmak eski metni temizler. Programda aynı soru kökü iki kez
+bulunamaz (uygulama `ContentValidator` ve `audit.py --manifest` FATAL verir).
+
+Yazım sırasında sık düşülen üç tuzak: kesin hükmü eksiksiz yazınca doğru şık
+sistematik olarak en uzun olur (yazdıktan sonra kısalt, bazı sorularda çeldiriciye
+gerçek içerik ekle); aşırı kısaltmada en kısa uca kayar; olumsuz kök oranı kendiliğinden
+düşük kalır (mevzuat derslerinde baştan ~%50 hedefle).
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve
