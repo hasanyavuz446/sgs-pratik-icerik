@@ -61,19 +61,19 @@ BOLUM_ADI = {
 # Gerçek kitapçıklarda: "…biri değildir?", "…hangisi yanlıştır?", "…bakılmaz?",
 # "…sayılmaz?", "…imkânı yoktur?", "…esaslı yanılma sayılmaz?".
 OLUMSUZ = re.compile(
-    r"(değildir|değil midir|yanlıştır|yanlış olur|bakılmaz|sayılmaz|olamaz|yoktur|"
-    r"uygulanmaz|yer almaz|gerekmez|beklenmez|söylenemez|bulunmaz|yapılamaz|"
-    r"edilemez|verilemez|kullanılamaz|tabi değildir|içermez|kapsamaz|girmez|"
-    r"doğru olmaz|mümkün değildir)\s*\??\s*$",
+    r"(değildir|değil midir|yanlıştır|yanlış olur|yoktur|olamaz|söylenemez|mümkün değildir|"
+    # Türkçe olumsuz fiil sonları: -maz/-mez (sayılmaz, uygulanmaz, duyurulmaz),
+    # -mamıştır/-memiştir (sayılmamıştır), -mamaktadır/-memektedir.
+    r"\w+(?:ma|me)z|\w+(?:ma|me)(?:mış|miş)tır|\w+(?:ma|me)(?:mış|miş)tir|\w+(?:mamakta|memekte)d[ıi]r)"
+    r"\s*\??\s*$",
     re.I,
 )
 # Mevzuat/standart atfı: "4857 sayılı İş Kanunu'na göre", "TMS 16'ya göre",
 # "Bağımsız Denetim Yönetmeliği uyarınca", "TDS 320'ye göre".
 ATIF = re.compile(
-    r"\d{3,4}\s+sayılı|\b(?:Kanun|Kanunu|Yönetmeli[gğ]i?|Tebliğ|Tebliği|Yönerge|"
-    r"Esaslar|Standart|Standartları|Tüzü[gğ]ü?|Kararname|KHK)\b|"
+    r"\d{3,4}\s+sayılı|\b(?:Kanun|Yönetmeli[kğ]|Tebliğ|Yönerge|Esaslar|Standart|Tüzü[kğ]|"
+    r"Kararname|KHK|Etik İlkeler)\w*|"
     r"\b(?:TMS|TFRS|TDS|BDS|KGK|SPK|VUK|GVK|KVK|KDVK|TTK|TBK|İYUK|THP|TDHP|MSUGT)\b",
-    re.I,
 )
 HANGISI = re.compile(r"aşağıdaki(?:lerden)?\s+(?:\S+\s+){0,3}?hangi|ifadelerden hangi|hangisi(?:dir)?\b", re.I)
 ONCUL = re.compile(r"(?m)^\s*\*{0,2}(VI|IV|V|III|II|I)[\.)]\s")
