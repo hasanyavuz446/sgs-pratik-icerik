@@ -204,7 +204,7 @@ class Paket:
             # İki uç da kural öğretir: "en uzunu seç" kadar "en uzunu asla seçme" de ipucudur.
             if len(olcum) >= 20 and min(uzun, kisa) / len(olcum) < 0.08:
                 raise SystemExit(f"§5 TEK YÖNLÜ DAĞILIM {self.dosya}: " + rapor[-1] + " (iki uç da ≥%8 olmalı)")
-            if len(olcum) >= 12 and (uzun / len(olcum) > 1 / 3 or kisa / len(olcum) > 1 / 3):
+            if len(olcum) >= 12 and (uzun / len(olcum) > 0.25 or kisa / len(olcum) > 0.25):  # audit UYARI eşiği
                 for s in olcum:
                     if len(s["dogru"]) > max(map(len, s["celdirici"])):
                         print("   UZUN:", s["dogru"][:70])

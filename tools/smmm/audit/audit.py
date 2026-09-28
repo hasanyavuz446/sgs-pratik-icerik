@@ -88,6 +88,11 @@ VOLATILE_LESSONS = {
     "sermaye_piyasasi_ve_finans",
 }
 
+RATE_LESSONS = {
+    "vergi_hukuku", "vergi_usul_kanunu", "turk_vergi_sistemi", "gelir_vergisi",
+    "kurumlar_vergisi", "katma_deger_vergisi", "sosyal_guvenlik_mevzuati",
+}
+
 
 def load(path):
     with open(path, encoding="utf-8") as handle:
@@ -367,7 +372,7 @@ ELEME_ISARETI = re.compile(
     r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır"
     r"|her\s+h[âa]lde"
     r"|hiçbir\s+(?:biçimde|hâlde|halde|koşulda|şekilde|surette|zaman)"
-    r"|niteliğinde"
+    r"|(?<!kurumu\s)niteliğinde"  # "kamu kurumu niteliğinde" Kanun terimidir
     r"|(?:ölçümü|kalemi|kalemleri|işlemi|durumu)\s+(?:ifade eder|karşılar)$"
     r"|\byalnız(?:ca)?\b(?!\s+(?:I{1,3}|IV|V)\b)"
     r"|\bhiçbir\b(?!\s+(?:istisna|fark|etki))"
@@ -636,7 +641,11 @@ def audit(path):
         option_blob = " ".join(str(value) for value in opts.values())
         blob = f"{q['stem']} {option_blob}"
         if q["lesson"] in VOLATILE_LESSONS:
-            asks_volatile_value = RATE.search(option_blob) or THRESHOLD.search(blob) or IMPLICIT_CURRENT.search(q["stem"])
+            # Şıktaki yüzde yalnız vergi ve prim derslerinde dönemsel orandır; meslek, ticaret,
+            # borçlar ve SPK hukukundaki yüzdeler (ör. Birlik payı brüt gelirin %10'u, TTK pay
+            # oranları) kanunda sabittir ve dönem belirtmeyi gerektirmez.
+            oran_dersi = q["lesson"] in RATE_LESSONS
+            asks_volatile_value = (oran_dersi and RATE.search(option_blob)) or THRESHOLD.search(blob) or IMPLICIT_CURRENT.search(q["stem"])
             if asks_volatile_value and not EXPLICIT_YEAR.search(q["stem"]):
                 out.append((
                     "UYARI",
