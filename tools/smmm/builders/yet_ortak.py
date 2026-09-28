@@ -201,11 +201,23 @@ class Paket:
             uzun = sum(len(s["dogru"]) > max(map(len, s["celdirici"])) for s in olcum)
             kisa = sum(len(s["dogru"]) < min(map(len, s["celdirici"])) for s in olcum)
             rapor.append(f"boy: tek-en-uzun {uzun}/{len(olcum)} · tek-en-kısa {kisa}/{len(olcum)}")
+            # İki uç da kural öğretir: "en uzunu seç" kadar "en uzunu asla seçme" de ipucudur.
+            if len(olcum) >= 20 and min(uzun, kisa) / len(olcum) < 0.08:
+                raise SystemExit(f"§5 TEK YÖNLÜ DAĞILIM {self.dosya}: " + rapor[-1] + " (iki uç da ≥%8 olmalı)")
             if len(olcum) >= 12 and (uzun / len(olcum) > 1 / 3 or kisa / len(olcum) > 1 / 3):
                 for s in olcum:
                     if len(s["dogru"]) > max(map(len, s["celdirici"])):
                         print("   UZUN:", s["dogru"][:70])
                 raise SystemExit(f"§5 BOY TUZAĞI {self.dosya}: " + rapor[-1])
+            # ortalama uzunluk sırası (1=en kısa … 5=en uzun); audit 2,4–3,6 dışını uyarır
+            sira = []
+            for s in olcum:
+                d, c = len(s["dogru"]), list(map(len, s["celdirici"]))
+                sira.append(1 + sum(x < d for x in c) + sum(x == d for x in c) / 2)
+            ort = sum(sira) / len(sira)
+            rapor.append(f"ortalama uzunluk sırası {ort:.2f}/5")
+            if len(olcum) >= 15 and not 2.45 <= ort <= 3.55:
+                raise SystemExit(f"§5 SIRA EĞİLİMİ {self.dosya}: ortalama {ort:.2f}/5 (hedef 3 çevresi)")
         # öncül seçici dağılımı
         sec = collections.Counter(s["dogru"] for s in self.S if s.get("oncul"))
         if sum(sec.values()) >= 4:

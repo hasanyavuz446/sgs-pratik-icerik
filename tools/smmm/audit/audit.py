@@ -60,7 +60,7 @@ PLACEHOLDER = re.compile(
 RATE = re.compile(r"%\s?\d+(?:[,.]\d+)?|\d+(?:[,.]\d+)?\s?%")
 THRESHOLD = re.compile(
     r"istisna\s+(?:haddi|tutarı)|vergi\s+dilimi|asgari\s+ücret(?!\s+tarife)|"
-    r"yeniden\s+değerleme\s+oranı|(?<!ücret\s)tarife",  # meslek ücret tarifesi had sorusu değildir
+    r"yeniden\s+değerleme\s+oranı|vergi(?:si)?\s+tarife",  # meslek ücret tarifesi had sorusu değildir
     re.IGNORECASE,
 )
 IMPLICIT_CURRENT = re.compile(
