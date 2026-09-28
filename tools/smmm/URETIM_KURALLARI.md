@@ -32,7 +32,8 @@ Konu paketi uygulama deposuna da kopyalandıysa:
 python3 tools/smmm/audit/verify_konu.py <dosya_adı>.json
 ```
 
-- **FATAL:** Paket yayıma gidemez.
+- **FATAL:** Paket yayıma gidemez. Kör öğrenci (soruyu okumadan) ≥%36, çeldiricilerde
+  mutlak dil >%8 ve ders profilinin gerçek sınavdan belirgin sapması da FATAL'dır.
 - **UYARI:** Ya düzeltilir ya da neden güvenli olduğu inceleme notuna yazılır.
 - **BİLGİ:** Otomasyonun doğrulayamadığı, insan kontrolü isteyen içeriktir.
 
@@ -54,31 +55,51 @@ olduğunu tek başına kanıtlayamaz.
 Birincil biçim kaynağı:
 [TESMER 2026 Staj ve Sınavlara İlişkin Uygulama Yönergesi](https://www.tesmer.org.tr/wp-content/uploads/2026/01/TESMER-Staj-ve-Sinavlara-Iliskin-Uygulama-Yonergesi-2026.pdf)
 
-### 2026/1 kitapçığı nasıl kullanılacak?
+### Gerçek test kitapçıkları: ölçülen profil (2026/1 + 2026/2)
 
-2026/1, yeni test biçimindeki ilk ve şu an için tek çıkmış dönemdir. Sekiz kitapçık
-ve 160 soru çok değerlidir; ancak tek dönem olduğu için kesin ve kalıcı yüzde üretmez.
+Test biçiminde iki dönem yayımlandı: **2026/1 ve 2026/2, 8 ders × 20 = 320 soru**.
+Kitapçıklar ayrıştırılıp (cevap anahtarı dahil) aynı cetvelle ölçüldü; sayılar
+`tools/smmm/audit/bantlar.json`'dadır ve `audit.py` bunlarla denetler. Kitapçık
+metni telifli olduğundan depoya girmez (yerel referans:
+`Projects/Current/_referans/yeterlilik/`, yeniden üretim `profil.py --hesapla`).
 
-2026/1'de gözlenen belirgin biçim özellikleri şunlardır:
+| Ders | Medyan kök | Olumsuz kök | Kökte mevzuat atfı | Öncüllü | Yevmiye şıklı | Sayısal şıklı | Veri/tablo |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Finansal Muhasebe | 270 | %2 | %15 | %0 | %28 | %5 | %48 |
+| Fin. Tablolar ve Analizi | 92* | %2 | %5 | %0 | %0 | %85 | %85 |
+| Hukuk | 168 | %38 | %100 | %5 | %0 | %22 | %8 |
+| Maliyet Muhasebesi | 308 | %12 | %8 | %2 | %2 | %38 | %57 |
+| Meslek Hukuku | 239 | %50 | %65 | %10 | %0 | %18 | %2 |
+| Muhasebe Denetimi | 178 | %42 | %90 | %2 | %0 | %2 | %0 |
+| Sermaye Piyasası | 263 | %40 | %92 | %20 | %0 | %18 | %0 |
+| Vergi Mevzuatı | 324 | %32 | %98 | %2 | %0 | %40 | %40 |
 
-| Resmî ders | 2026/1'de gözlenen belirgin özellik |
-|---|---|
-| Finansal Muhasebe | 20 sorunun 11'i kayıt/yevmiye ağırlıklı; negatif ve öncüllü kök yok |
-| Finansal Tablolar ve Analizi | Ortak tablo/veri üzerinden yorum ve hesaplama ağırlığı yüksek |
-| Maliyet Muhasebesi | Kavram ile sayısal uygulama birlikte; öncüllü kök yok |
-| Muhasebe Denetimi | 3 negatif kök, öncüllü kök yok |
-| Hukuk | 2 negatif kök, 1 öncüllü soru |
-| Vergi Mevzuatı ve Uygulaması | 3 negatif kök, 1 öncüllü soru |
-| Sermaye Piyasası Mevzuatı | 6 negatif kök, 3 öncüllü soru |
-| Meslek Hukuku | 1 negatif kök, 1 öncüllü soru |
+\* Fin. Tablolar'da sorular ortak bilanço/gelir tablosuna (15-20 soruya tek veri)
+bağlıdır; kök kısa, veri ortak uyarandadır.
 
-Bu sayılar yalnız **ders/bölüm havuzunun toplam biçim dengesi** için referanstır.
-Her konu paketi, kendi doğasına göre üretilir. Örneğin Finansal Muhasebe içindeki
-“Temel Kavramlar” paketinin yarısını yapay biçimde yevmiye sorusuna çevirmek veya her
-hukuk alt konusunda aynı sayıda öncüllü soru zorlamak doğru değildir.
+Bu profilden çıkan bağlayıcı sonuçlar:
 
-Yeni test dönemleri yayımlandıkça profil yeniden ölçülür. Tek dönemde görülmeyen bir
-soru türü “sınavda hiçbir zaman çıkmaz” şeklinde kalıcı yasak sayılmaz.
+- **Mevzuat derslerinde kök mevzuatı adıyla anar**: “4857 sayılı İş Kanunu’na göre,
+  …”, “Bağımsız Denetim Yönetmeliği uyarınca …”, “213 sayılı VUK’a göre …”.
+  “Denetçi ne yapmalıdır?” gibi dayanaksız kısa soru gerçek sınavda yoktur.
+- **Olumsuz kök gerçek sınavın omurgasıdır**: Meslek %50, Denetim %42, SPK %40,
+  Hukuk %38, Vergi %32 — “…aşağıdakilerden hangisi … biri değildir?” /
+  “…ilgili aşağıdakilerden hangisi yanlıştır?”. (Eski tabloda Meslek için “1 negatif
+  kök” yazıyordu; gerçekte 2026/1'de 14/20'dir. Havuz bu yanlış sayıya göre üretildi.)
+- **Vergi soruların %40'ı çok kalemli hesaptır**: gelir unsurları dökümü, beyan
+  sınırı, KDV devri, iştirak kazancı istisnası, örtülü sermaye, finansman gider
+  kısıtlaması… Tarife/had gerekiyorsa gerçek sınav gibi **kökte verilir**.
+- **Hukuk/Meslek/SPK'da süre ve sayı soruları** (“en fazla kaç ay”, “kaç gün
+  içinde”) %18-22'dir; şıklar yalnız sayıdır.
+- **Finansal Muhasebe'de şıklar yevmiye kaydıdır** (%28 tam kayıt tablosu, ayrıca
+  “… hesabına … borç kaydedilir” metin şıkları); kök bir işlem senaryosudur.
+- **Mutlak dil şıklarda yoktur**: 1.600 gerçek şıkkın %1'inde “yalnızca, hiçbir
+  hâlde, zorunda, her zaman” gibi ifade geçer. Çeldiriciyi bu sözcüklerle yanlış
+  yapmak adaya eleme ipucu verir (havuzda %26 idi; Hukuk'ta kör öğrenci %48).
+
+Paket düzeyinde yalnız olumsuz kök ve mevzuat atfı zorlanır; hesap, yevmiye ve
+öncül payı konunun doğasına göre değişir ve **ders toplamında** denetlenir. Konu
+havuzu ile bölüm havuzu ayrı ayrı ders profiline uymalıdır.
 
 ### Klasik sınavlardan yararlanma sınırı
 
@@ -300,9 +321,9 @@ birlikte sınıflandırmayı gerektiriyorsa kullanılır.
 - Kombinasyon seçenekleri çakışmaz ve doğru küme seçeneklerde tam olarak bulunur.
 - Bir öncül yalnız dilinden veya uzunluğundan yanlış olduğu anlaşılan tuzak olmaz.
 
-2026/1'de öncüllü sorular hukuk/mevzuat derslerinde görülmüştür. Bu gözlem ders
-havuzu için referanstır; her hukuk alt konusuna öncüllü soru yerleştirme zorunluluğu
-değildir.
+Gerçek sınavda öncüllü soru SPK'da %20, Meslek %10, Hukuk %5'tir; muhasebe
+derslerinde yok denecek kadar azdır. Her alt konuya öncüllü soru yerleştirme
+zorunluluğu yoktur; ders toplamı bantta kalmalıdır.
 
 Olumsuz kökteki doğru seçenek yanlış ifadeyi taşır; fakat diğer dört seçenekten
 uzunluk, ayrıntı veya dil bakımından ayrılmaz.

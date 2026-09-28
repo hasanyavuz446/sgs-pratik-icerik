@@ -15,10 +15,17 @@ Başlıca kontroller:
   FATAL  cevap-uzunluk      Doğru cevabın sistematik en kısa/en uzun olması
   FATAL  tekrar             Birebir, sayı değişkenli şablon ve çözüm tekrarı
   FATAL  görünür-demo       Soru/çözümde Demo Soru veya Demo açıklama
+  FATAL  kör-öğrenci        Soruyu okumadan boy/mutlak-dil stratejisiyle ≥%36
+  FATAL  eleme-işareti      Çeldiricilerde mutlak dil (yalnızca, hiçbir hâlde…) yığılması
+  FATAL  sınav-sadakati     Ders profili gerçek test kitapçıklarından belirgin sapıyor
+                            (olumsuz kök, mevzuat atfı, kök uzunluğu, hesap/yevmiye…)
   UYARI  şık-dengesi        Tek soruda doğal olmayan uzunluk farkı
   UYARI  kök-profili        Paket genelinde aşırı kısa ve çıplak kök yığılması
   UYARI  mevzuat-güncellik  Dönemsiz oran/had ve zayıf kaynak tanımı
   BİLGİ  hesap/ölçüm        İnsan incelemesi ve paket istatistikleri
+
+Sınav-sadakati bantları `bantlar.json`'dadır; gerçek 2026 test kitapçıklarından
+`profil.py --hesapla` ile türetilir. Yeni dönem yayımlanınca yeniden hesaplanır.
 
 Bu araç alan uzmanı değildir. Doğru cevabın hukuken/mesleki olarak doğruluğunu,
 çeldiricilerin makullüğünü ve telif özgünlüğünü insan ayrıca denetler.
@@ -31,8 +38,12 @@ import itertools
 import json
 import os
 import re
+import math
 import statistics
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import profil  # noqa: E402
 
 
 LETTERS = set("ABCDE")
@@ -344,6 +355,142 @@ def add_length_profile_issues(rows, out):
         ))
 
 
+# ---------------------------------------------------------------------------
+# Kör öğrenci ve mutlak dil
+# ---------------------------------------------------------------------------
+# Çeldiricide bol, doğru şıkta ve gerçek sınavda nadir mutlak ifadeler. Aday bunları
+# taşıyan şıkkı eleyerek soruyu okumadan puan toplar. 2026/1+2026/2 gerçek test
+# kitapçıklarında 1.600 şıkkın 16'sında (%1,0) görüldü; 2026-09-28 havuzunda
+# 20.960 şıkkın 5.421'inde (%25,9). Küme SGS denetimindekiyle aynıdır
+# (tools/sgs/audit.py, 12.436 gerçek SGS şıkkıyla kalibre).
+ELEME_ISARETI = re.compile(
+    r"(zorunda|durumundadır|bulunmaktadır|kalınmaktadır|tutulmaktadır"
+    r"|her\s+h[âa]lde"
+    r"|hiçbir\s+(?:biçimde|hâlde|halde|koşulda|şekilde|surette|zaman)"
+    r"|niteliğinde"
+    r"|(?:ölçümü|kalemi|kalemleri|işlemi|durumu)\s+(?:ifade eder|karşılar)$"
+    r"|\byalnız(?:ca)?\b(?!\s+(?:I{1,3}|IV|V)\b)"
+    r"|\bhiçbir\b(?!\s+(?:istisna|fark|etki))"
+    r"|\bhiç\b"
+    r"|\btümüyle\b"
+    r"|\bkendiliğinden\b|\botomatik(?:man)?\b"
+    r"|\bher\s+zaman\b|\bdaima\b"
+    r"|\bher\s+(?:koşulda|durumda)\b"
+    r"|\bserbestçe\b"
+    r"|\bkesin(?:likle|\s+olarak)\b)",
+    re.I,
+)
+
+
+def kor_ogrenci(rows):
+    """Soruyu OKUMADAN alınabilecek en iyi beklenen puan (%) ve stratejisi.
+
+    rows: [(options{harf: metin}, cevap)], öncüllü sorular hariç.
+    Her strateji bir aday kümesi seçer; küme doğruyu içeriyorsa 1/|küme| puan.
+    Gerçek 2026 kitapçıklarında (303 öncülsüz soru) sonuç %24'tür; SGS null
+    modeline göre rastgele tabanı ~%24, 95. yüzdelik %31, 99. yüzdelik %35.
+    """
+    if not rows:
+        return 0, "-"
+
+    def uzun(o):
+        return {max(o, key=lambda k: (len(o[k]), k))}
+
+    def kisa(o):
+        return {min(o, key=lambda k: (len(o[k]), k))}
+
+    def isaretsiz(o):
+        return {k: v for k, v in o.items() if not ELEME_ISARETI.search(v)} or o
+
+    def ortadakiler(o):
+        enb, enk = max(len(v) for v in o.values()), min(len(v) for v in o.values())
+        return {k for k in o if enk < len(o[k]) < enb} or set(o)
+
+    stratejiler = {
+        "en kısayı seç": kisa,
+        "en uzunu seç": uzun,
+        "işaretliyi ele, en kısayı seç": lambda o: kisa(isaretsiz(o)),
+        "işaretliyi ele, en uzunu seç": lambda o: uzun(isaretsiz(o)),
+        "iki ucu ele, ortadan tahmin et": ortadakiler,
+        "işaretliyi ele, kalandan tahmin et": isaretsiz,
+    }
+    en_iyi = (0, "-")
+    for ad, sec in stratejiler.items():
+        beklenen = 0.0
+        for opts, ans in rows:
+            aday = sec({k: plain(v) for k, v in opts.items()})
+            if ans in aday:
+                beklenen += 1 / len(aday)
+        puan = int(beklenen * 100 / len(rows))
+        if puan > en_iyi[0]:
+            en_iyi = (puan, ad)
+    return en_iyi
+
+
+# ---------------------------------------------------------------------------
+# Sınav sadakati: gerçek test kitapçıklarından türetilen bantlar
+# ---------------------------------------------------------------------------
+def bantlar():
+    try:
+        with open(profil.BANTLAR, encoding="utf-8") as handle:
+            return json.load(handle)["bolumler"]
+    except (OSError, KeyError, ValueError):
+        return {}
+
+
+# Paket düzeyinde yalnız konu doğasından bağımsız ölçüler bakılır; hesap/yevmiye/
+# öncül payı konuya göre meşru olarak değişir ve ders (bölüm) toplamında denetlenir.
+PAKET_ALANLARI = ("olumsuz", "atif")
+BOLUM_ALANLARI = ("olumsuz", "atif", "oncul", "yevmiye", "sayisal_sik", "veri")
+ALAN_ADI = {
+    "olumsuz": "olumsuz kök (…değildir / yanlıştır)",
+    "atif": "kökte mevzuat/standart atfı",
+    "oncul": "öncüllü soru",
+    "yevmiye": "yevmiye kaydı şıklı soru",
+    "sayisal_sik": "sayısal şıklı (hesap/süre) soru",
+    "veri": "veri/tablo taşıyan kök",
+}
+
+
+def tolerans(p, n_havuz, n_gercek=40):
+    """İki oran farkı için ~2σ tolerans (+%5 biçim payı)."""
+    p = min(max(p, 0.05), 0.95)
+    return 2 * math.sqrt(p * (1 - p) * (1 / n_gercek + 1 / max(n_havuz, 1))) + 0.05
+
+
+def sadakat_sorunlari(olcumler, bant, *, alanlar, fatal_kat, etiket, kok_fatal=True):
+    out = []
+    if not bant or len(olcumler) < 20:
+        return out
+    ozet = profil.ozet(olcumler)
+    n = ozet["n"]
+    for alan in alanlar:
+        gercek, bizim = bant[alan], ozet[alan]
+        tol = tolerans(gercek, n, bant["n"])
+        fark = bizim - gercek
+        # Atıf ve olumsuz kök için fazlası da kusurdur, ama asıl risk eksikliktir.
+        if abs(fark) <= tol:
+            continue
+        seviye = "FATAL" if abs(fark) > tol * fatal_kat else "UYARI"
+        yon = "az" if fark < 0 else "fazla"
+        out.append((
+            seviye,
+            "sınav-sadakati",
+            f"{etiket}: {ALAN_ADI[alan]} %{bizim*100:.0f}, gerçek sınav %{gercek*100:.0f} "
+            f"({yon}; tolerans ±%{tol*100:.0f}).",
+        ))
+    oran = ozet["kok_medyan"] / max(bant["kok_medyan"], 1)
+    if oran < 0.75 or oran > 1.45:
+        seviye = "FATAL" if kok_fatal and (oran < 0.6 or oran > 1.8) else "UYARI"
+        out.append((
+            seviye,
+            "sınav-sadakati",
+            f"{etiket}: medyan kök {ozet['kok_medyan']} karakter, gerçek sınav {bant['kok_medyan']} "
+            f"(oran {oran:.2f}).",
+        ))
+    return out
+
+
 def audit(path):
     qs = [norm(raw) for raw in load(path)]
     out = []
@@ -569,7 +716,73 @@ def audit(path):
                 "Paket kısa/çıplak köklere yığılmış; sınav düzeyinde uygulama ve yorum görevlerini artır.",
             ))
 
+    # Kör öğrenci ve mutlak dil (öncüllü sorular hariç).
+    kor_rows = [
+        (q["opts"], q["ans"]) for q in qs
+        if q["ans"] in q["opts"] and len(ROMAN.findall(q["stem"])) < 2
+        and all(isinstance(v, str) for v in q["opts"].values())
+    ]
+    if len(kor_rows) >= 20:
+        puan, strateji = kor_ogrenci(kor_rows)
+        out.append(("BİLGİ", "kör-ölçümü", f"kör öğrenci %{puan} ({strateji}); gerçek sınav %24."))
+        if puan >= 36:
+            out.append(("FATAL", "kör-öğrenci",
+                        f"Soru okunmadan %{puan} alınıyor (gerçek sınav %24) — strateji: “{strateji}”."))
+        elif puan >= 32:
+            out.append(("UYARI", "kör-öğrenci",
+                        f"Soru okunmadan %{puan} alınıyor (gerçek sınav %24) — “{strateji}”."))
+    celdirici = [
+        plain(v) for q in qs for k, v in q["opts"].items()
+        if k != q["ans"] and isinstance(v, str) and len(ROMAN.findall(q["stem"])) < 2
+    ]
+    if len(celdirici) >= 40:
+        isaretli = sum(bool(ELEME_ISARETI.search(v)) for v in celdirici)
+        oran = isaretli / len(celdirici)
+        if oran > 0.08:
+            out.append(("FATAL", "eleme-işareti",
+                        f"Çeldiricilerin %{oran*100:.0f}'inde mutlak dil var (gerçek sınav şıklarında %1)."))
+        elif oran > 0.04:
+            out.append(("UYARI", "eleme-işareti",
+                        f"Çeldiricilerin %{oran*100:.0f}'inde mutlak dil var (gerçek sınav şıklarında %1)."))
+
+    # Sınav sadakati (paket): pakette en sık dersin gerçek sınav bandı.
+    bolumler = collections.Counter(profil.BOLUM.get(q["lesson"]) for q in qs if q["is_yeterlilik"])
+    if bolumler:
+        bolum = bolumler.most_common(1)[0][0]
+        bant = bantlar().get(bolum)
+        olcumler = [profil.olc(q["stem"], q["opts"], stimulus_id=q["raw"].get("stimulusId"))
+                    for q in qs if profil.BOLUM.get(q["lesson"]) == bolum]
+        # Kök uzunluğu konu doğasına göre değişir (ör. temel kavramlar); pakette yalnız
+        # uyarıdır, ders toplamında FATAL'dır.
+        out.extend(sadakat_sorunlari(olcumler, bant, alanlar=PAKET_ALANLARI, fatal_kat=2.0,
+                                     kok_fatal=False, etiket=f"paket ({profil.BOLUM_ADI.get(bolum, bolum)})"))
+
     return len(qs), len(premise_questions), out
+
+
+def bolum_sadakati(paths):
+    """Ders (resmî sınav bölümü) düzeyinde gerçek sınav profiline uyum.
+
+    Konu havuzu ve bölüm havuzu ayrı ölçülür: kullanıcı ikisini ayrı test türü
+    olarak çözer, ikisi de sınava benzemelidir.
+    """
+    gruplar = collections.defaultdict(list)
+    for path in paths:
+        for raw in load(path):
+            q = norm(raw)
+            bolum = profil.BOLUM.get(q["lesson"])
+            if not bolum:
+                continue
+            havuz = "konu" if "Konu Havuzu" in q["tags"] else "bölüm"
+            gruplar[(bolum, havuz)].append(
+                profil.olc(q["stem"], q["opts"], stimulus_id=raw.get("stimulusId")))
+    bant = bantlar()
+    out = []
+    for (bolum, havuz), olcumler in sorted(gruplar.items()):
+        out.extend(sadakat_sorunlari(
+            olcumler, bant.get(bolum), alanlar=BOLUM_ALANLARI, fatal_kat=1.5,
+            etiket=f"{profil.BOLUM_ADI.get(bolum, bolum)} · {havuz} havuzu ({len(olcumler)} soru)"))
+    return out
 
 
 def manifest_paths(manifest_path, program_id="yeterlilik"):
@@ -713,6 +926,14 @@ def main():
         if len(cross) > 40:
             print(f"      … {len(cross) - 40} ek tekrar gösterilmedi.")
         grand.update(issue[0] for issue in cross)
+
+    sadakat = bolum_sadakati(paths) if len(paths) > 1 else []
+    if sadakat:
+        n_f = sum(1 for issue in sadakat if issue[0] == "FATAL")
+        print(f"\n{'❌' if n_f else '⚠️ '} DERS PROFİLİ (gerçek test kitapçıklarına göre): {len(sadakat)}")
+        for level, code, message in sadakat:
+            print(f"      [{level}] {code}: {message}")
+        grand.update(issue[0] for issue in sadakat)
 
     print(
         f"\nTOPLAM: FATAL {grand['FATAL']} | UYARI {grand['UYARI']} | BİLGİ {grand['BİLGİ']}"

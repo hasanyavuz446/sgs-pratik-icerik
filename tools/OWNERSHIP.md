@@ -2,8 +2,8 @@
 
 | Alan | Sahip | Yazılabilir yollar |
 |---|---|---|
-| SGS | Codex | `tools/sgs/**`, SGS içerik klasörleri, `content/v2/manifests/sgs.json` |
-| SMMM Yeterlilik | Codex | `tools/smmm/**`, `content/yeterlilik/**`, `content/v2/manifests/smmm.json` |
+| SGS | Claude | `tools/sgs/**`, SGS içerik klasörleri, `content/v2/manifests/sgs.json` |
+| SMMM Yeterlilik | Claude (2026-09-28 kullanıcı kararı; önce Codex) | `tools/smmm/**`, `content/yeterlilik/**`, `content/v2/manifests/smmm.json` |
 | Ortak altyapı | Koordineli | `tools/shared/**`, kök talimat dosyaları, üretilen birleşik manifest |
 
 Kurallar:

@@ -211,6 +211,55 @@ class AuditTest(unittest.TestCase):
             issues,
         )
 
+    def test_absolute_language_in_distractors_is_fatal(self):
+        items = clean_pack()
+        for item in items:
+            for key in "ABCDE":
+                if key != item["correctAnswer"]:
+                    item["choices"][key] += " ve hiçbir hâlde değiştirilemez"
+        issues = run_audit(items)
+        codes = {code for level, code, _ in issues if level == "FATAL"}
+        self.assertIn("eleme-işareti", codes, issues)
+        self.assertIn("kör-öğrenci", codes, issues)
+
+    def test_law_section_without_citation_or_negative_stem_is_fatal(self):
+        items = clean_pack()
+        for item in items:
+            item["lessonId"] = "is_hukuku"
+        issues = run_audit(items)
+        messages = [m for level, code, m in issues if level == "FATAL" and code == "sınav-sadakati"]
+        self.assertTrue(any("atfı" in m for m in messages), issues)
+
+    def test_law_section_matching_exam_profile_passes(self):
+        items = clean_pack()
+        for index, item in enumerate(items):
+            item["lessonId"] = "is_hukuku"
+            ending = "biri değildir?" if index % 5 < 2 else "hangisidir?"
+            item["question"] = (
+                f"4857 sayılı İş Kanunu’na göre, {TOKENS[index]} sürecinde işverenin uyması "
+                f"gereken usul bakımından aşağıdakilerden {ending}"
+            )
+        issues = run_audit(items)
+        self.assertFalse(
+            [issue for issue in issues if issue[0] == "FATAL" and issue[1] == "sınav-sadakati"],
+            issues,
+        )
+
+    def test_section_profile_uses_real_exam_bands(self):
+        items = clean_pack()
+        for item in items:
+            item["lessonId"] = "vergi_usul_kanunu"
+        path = None
+        try:
+            with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as handle:
+                json.dump(items, handle, ensure_ascii=False)
+                path = handle.name
+            issues = audit.bolum_sadakati([path])
+        finally:
+            if path and os.path.exists(path):
+                os.unlink(path)
+        self.assertTrue(any(level == "FATAL" and "Vergi" in m for level, _, m in issues), issues)
+
 
 if __name__ == "__main__":
     unittest.main()

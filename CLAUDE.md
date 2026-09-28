@@ -1,11 +1,12 @@
 # Claude çalışma kapsamı
 
-Claude bu depoda varsayılan olarak yalnız SGS alanının sahibidir:
+Claude bu depoda iki programın da sahibidir:
 
-- `tools/sgs/**`
-- `content/yeterlilik` dışındaki SGS içerik klasörleri
-- `content/v2/manifests/sgs.json`
+- SGS: `tools/sgs/**`, `content/yeterlilik` dışındaki SGS içerik klasörleri,
+  `content/v2/manifests/sgs.json`
+- SMMM Yeterlilik (2026-09-28'de kullanıcı kararıyla Codex'ten devralındı):
+  `tools/smmm/**`, `content/yeterlilik/**`, `content/v2/manifests/smmm.json`
 
-SMMM Yeterlilik yolları (`tools/smmm/**` ve `content/yeterlilik/**`) Codex'e aittir.
-Kullanıcı açıkça istemedikçe Claude bu dosyalara yazmaz. Ortak dosyalar için
-`tools/OWNERSHIP.md` kuralları uygulanır ve iki denetim çalıştırılır.
+İki program ayrı kurallar, builder'lar ve denetimlerle yönetilir
+(`tools/sgs/URETIM_KURALLARI.md`, `tools/smmm/URETIM_KURALLARI.md`). Ortak dosyalar
+için `tools/OWNERSHIP.md` kuralları uygulanır ve iki denetim çalıştırılır.
