@@ -1,0 +1,708 @@
+# -*- coding: utf-8 -*-
+"""SPK Mevzuatı · Kamuyu Aydınlatma — 60 soru, 2026 test biçimi.
+
+Dayanak (28.09.2026 kontrolü, mevzuat.gov.tr güncel metin):
+  · 6362 s. Sermaye Piyasası Kanunu m. 14-15, 17, 19-22, 29-30, 32-33
+  · Özel Durumlar Tebliği (II-15.1), 2018 değişiklikleri işlenmiş
+Yeniden değerlenen TL eşikleri (m. 11 işlem tutarı) sorulmaz.
+"""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yet_ortak import Paket
+
+P = Paket("questions_topic_kamuyu_aydinlatma_2026.json", lesson="sermaye_piyasasi_ve_finans", topic="kamuyu_aydinlatma",
+          konu_adi="Kamuyu Aydınlatma", seed=2026092827,
+          surum="6362 s. Kanun; Özel Durumlar Tebliği (II-15.1) güncel metni; 28.09.2026 kontrolü")
+
+K = "6362 sayılı Sermaye Piyasası Kanunu’na göre"
+OD = "Özel Durumlar Tebliği (II-15.1)’ne göre"
+
+# ================================================================ finansal raporlama ve özel durumlar: Kanun (m. 14-15)
+P.q("6362 s. SPKn m. 14",
+    f"{K}, ihraççıların finansal raporlamasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Finansal tabloların kabulü için yönetim kurulunun ayrı bir karar alması gerekmez.",
+    ["Finansal tablolar Türkiye Muhasebe Standartları çerçevesinde Kurulca belirlenen düzenlemelere göre hazırlanır.",
+     "Tabloların gerçeğe uygunluğundan ihraççı ile kusurlarına göre yönetim kurulu üyeleri sorumludur.",
+     "Kamuya yapılan bildirimlerde tabloların doğruluğuna ilişkin sorumluluk beyanına yer verilir.",
+     "Kurulca belirlenen tablolar listedeki bağımsız denetim kuruluşlarına denetletilir."],
+    "Kanun m. 14'e göre finansal tablolar TMS çerçevesinde Kurul düzenlemelerine uygun, zamanında, tam ve doğru hazırlanır; "
+    "ihraççı ve kusurlarına göre yönetim kurulu üyeleri sorumludur. Yönetim kurulunun tabloların kabulüne dair ayrı bir karar "
+    "alması ve sorumluluk beyanı verilmesi zorunludur; tablolar listedeki denetim kuruluşlarına denetletilir.")
+
+P.q("6362 s. SPKn m. 14/4",
+    "Halka açık bir ortaklık, bir şirketle önemli nitelikteki bir işleme taraf olacaktır. "
+    f"{K}, Kurulun bu işlem kapsamındaki bağımsız denetim yetkisine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Kurul, işlemin tarafı ortaklıklardan da bağımsız denetim raporu istemeye yetkilidir.",
+    ["Kurul sadece halka açık ortaklığın finansal tabloları için bağımsız denetim raporu isteyebilir.",
+     "İşlemin tarafı halka açık değilse bağımsız denetim raporu istenemez.",
+     "Bağımsız denetim raporunu Kamu Gözetimi Kurumu ister, Kurulun yetkisi yoktur.",
+     "Rapor ancak işlem gerçekleştikten sonra istenebilir."],
+    "Kanun m. 14/4'e göre Kurul halka arzda, borsada işlem görme başvurusunda, m. 23'teki önemli nitelikteki işlemlerde ve "
+    "finansal durumu önemli ölçüde etkileyen gelişmelerde işlemin tarafı ortaklıklardan da bağımsız denetim raporu istemeye "
+    "yetkilidir.")
+
+P.q("6362 s. SPKn m. 15",
+    f"{K}, kamunun aydınlatılmasında özel durumlara ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Fiyat duyarlı bilgiler ihraççılarca veya ilgili taraflarca açıklanır.",
+    ["Özel durumları sadece Kurul kamuya açıklar; ihraççıların açıklama yükümlülüğü yoktur.",
+     "Özel durum açıklamasının ertelenmesi Kanunda yasaklanmıştır.",
+     "Özel durumlar sadece borsanın talebi üzerine açıklanır.",
+     "Özel durum açıklamasının usul ve esaslarını ihraççının esas sözleşmesi belirler."],
+    "Kanun m. 15'e göre araçların değerini, fiyatını veya yatırım kararlarını etkileyebilecek bilgi, olay ve gelişmeler "
+    "ihraççılarca veya ilgili taraflarca kamuya açıklanır; açıklamanın usulü, ihraççıya bildirimi, istisnai hâllerde "
+    "ertelenmesi veya yapılmaması esaslarını Kurul belirler.", zorluk="easy")
+
+# ================================================================ Özel Durumlar Tebliği: tanımlar ve içsel bilgi (m. 4-8)
+P.oncul("II-15.1 m. 4",
+    "Özel Durumlar Tebliğinde yer alan bazı tanımlar aşağıda eşleştirilmiştir:",
+    ["Özel durumlar – Sadece kamuya açıklanmış içsel bilgiler",
+     "İçsel bilgi – Araçların değerini veya yatırım kararlarını etkileyebilecek, henüz kamuya açıklanmamış bilgi",
+     "Sürekli bilgi – İçsel bilgi tanımı dışında kalan tüm bilgi, olay ve gelişmeler",
+     "Birlikte hareket eden kişiler – Sermaye yapısında veya yönetim kontrolünde değişiklik amacıyla iş birliği yapan kişiler"],
+    f"{OD}, yukarıdaki eşleştirmelerden hangileri doğrudur?",
+    "II, III ve IV", ["I ve II", "I ve III", "II ve IV", "I, II ve III", "II, III ve IV"],
+    "Tebliğ m. 4'e göre içsel bilgi henüz kamuya açıklanmamış fiyat duyarlı bilgi, sürekli bilgi içsel bilgi dışındaki tüm "
+    "bilgilerdir; birlikte hareket eden kişiler sermaye yapısında veya yönetim kontrolünde değişiklik amacıyla açık veya zımni "
+    "anlaşmayla iş birliği yapanlardır. Özel durumlar içsel veya sürekli bilgilerin tamamını ifade eder.")
+
+P.q("II-15.1 m. 5/2",
+    "Bir ihraççının oy haklarının %12’sine sahip bir pay sahibi, ihraççının bilgisi dışında ihraççıya ilişkin önemli bir "
+    f"içsel bilgiyi öğrenmiştir; pay sahibinin gizlilik yükümlülüğü yoktur. {OD}, bu bilgiye ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Pay sahibi söz konusu içsel bilgiye ilişkin kamuya açıklama yapar.",
+    ["Açıklama yükümlülüğü sadece ihraççıya aittir; pay sahibinin yükümlülüğü yoktur.",
+     "Pay sahibi bilgiyi sadece Kurula bildirir, kamuya açıklama yapmaz.",
+     "Pay sahibinin açıklama yapabilmesi için ihraççının onayı gerekir.",
+     "Açıklama yükümlülüğü ancak %25 ve üzeri pay sahipleri için doğar."],
+    "Tebliğ m. 5/2'ye göre içsel bilgilerin ihraççının bilgisi dışında, doğrudan veya dolaylı olarak oy haklarında veya "
+    "sermayede %10 veya daha fazla paya ya da yönetim kurulu seçme imtiyazının %10'una sahip kişilerce öğrenilmesi hâlinde bu "
+    "kişiler kamuya açıklama yapar; gizlilik yükümlülüğü bulunanlara bu hüküm uygulanmaz.", zorluk="hard")
+
+P.q("II-15.1 m. 5/3",
+    "Bir ihraççının finans müdürü, görevinin olağan ifası sırasında bir bankayla yapılan görüşmede henüz açıklanmamış bir "
+    f"satın alma planını bankanın gizlilik yükümlülüğü bulunmayan bir çalışanına anlatmıştır. {OD}, bu durumda ne yapılmalıdır?",
+    "İhraççı bu içsel bilgiyi kamuya açıklar.",
+    ["Bilgi üçüncü kişiye iletildiği için artık içsel bilgi sayılmaz, açıklama gerekmez.",
+     "Bilgiyi öğrenen banka çalışanı kamuya açıklama yapar.",
+     "Finans müdürü hakkında suç duyurusunda bulunulması yeterlidir.",
+     "Açıklama, satın alma sözleşmesi imzalanıncaya kadar ertelenir; başka işlem gerekmez."],
+    "Tebliğ m. 5/3'e göre içsel bilgilerin ihraççı veya onun namına hareket eden kişi tarafından işi veya görevinin olağan "
+    "ifası sırasında üçüncü kişilere açıklanması hâlinde bilgi ihraççı tarafından kamuya açıklanır; m. 5/4'e göre bilgiyi "
+    "alan kişinin gizlilik yükümlülüğü varsa bu hüküm uygulanmaz.", zorluk="hard")
+
+P.oncul("II-15.1 m. 6",
+    "Bir ihraççı, sürmekte olan bir birleşme müzakeresine ilişkin içsel bilginin açıklanmasını ertelemek istemektedir. "
+    "Ertelemenin koşullarına ilişkin aşağıdaki ifadeler verilmiştir:",
+    ["Erteleme, ihraççının meşru çıkarlarının zarar görmemesi amacıyla yapılabilir.",
+     "Erteleme için Kurulun önceden onayının alınması gerekir.",
+     "Ertelemenin yatırımcıların yanıltılmasına yol açmaması gerekir.",
+     "Erteleme süresince bilginin gizliliğinin sağlanabilmesi gerekir."],
+    f"{OD}, yukarıdakilerden hangileri ertelemenin koşulları arasındadır?",
+    "I, III ve IV", ["I ve II", "II ve III", "III ve IV", "I, II ve IV", "I, III ve IV"],
+    "Tebliğ m. 6/1'e göre ihraççı, sorumluluğu kendisine ait olmak üzere meşru çıkarlarının zarar görmemesi için, yatırımcıları "
+    "yanıltmaması ve gizliliği sağlayabilmesi kaydıyla açıklamayı erteleyebilir. Kurul onayı aranmaz; Kurul gerekli görürse "
+    "erteleme sebeplerini sonradan inceler.")
+
+P.q("II-15.1 m. 6",
+    f"{OD}, içsel bilgilerin açıklanmasının ertelenmesine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Erteleme kararının gerekçeleri, ertelenen bilgiyle birlikte kamuya açıklanmaz.",
+    ["Erteleme sebepleri ortadan kalkar kalkmaz içsel bilgi kamuya açıklanır.",
+     "Ertelenen bilgiye konu olay gerçekleşmezse açıklama yapılmayabilir.",
+     "Gizlilik sağlanamazsa ertelenen bilgi açıklanır.",
+     "Ertelemenin gerekçeleri ve gizlilik tedbirleri yönetim kurulu kararına bağlanır."],
+    "Tebliğ m. 6'ya göre erteleme sebepleri ortadan kalkınca bilgi açıklanır ve açıklamada erteleme kararı ile sebeplerine yer "
+    "verilir; Kurul sebeplerin yerinde olup olmadığını inceleyebilir. Olay gerçekleşmezse açıklama yapılmayabilir; gizlilik "
+    "sağlanamazsa bilgi açıklanır ve erteleme esasları yönetim kurulu kararına bağlanır.")
+
+P.sayisal("II-15.1 m. 7/1",
+    "Bir ihraççıda içsel bilgilere düzenli erişimi olan bir çalışanın görev yeri değişmiş ve listede olma sebebi farklılaşmıştır. "
+    f"{OD}, ihraççı MKK’ya bildirilen listedeki bu değişikliği en geç kaç iş günü içinde güncellemelidir?",
+    "2", ["1", "5", "10", "15"],
+    "Tebliğ m. 7/1'e göre içsel bilgilere düzenli erişimi olan kişiler MKK'ya bildirilir ve bilgilerde değişiklik olduğunda en "
+    "geç iki iş günü içinde güncelleme yapılır; liste MKK tarafından saklanır ve talep üzerine Kurula ve borsaya gönderilir.")
+
+P.q("II-15.1 m. 7",
+    f"{OD}, içsel bilgilere erişimi olan kişiler listesine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Liste ihraççı tarafından saklanır; MKK’ya bildirilmesi gerekmez.",
+    ["İdari sorumluluğu bulunan kişiler içsel bilgilere erişimi olan kişiler sayılır.",
+     "Bildirimde kişinin listede olma sebebine yer verilir.",
+     "Listeye yeni bir kişi eklenmesi gerektiğinde liste güncellenir.",
+     "Kişilerin yükümlülüklerinden haberdar edildiğini ispat yükümlülüğü ihraççıya aittir."],
+    "Tebliğ m. 7'ye göre içsel bilgilere düzenli erişimi olanlar MKK'ya bildirilir ve liste MKK tarafından saklanır; idari "
+    "sorumluluğu bulunan kişiler bu listededir sayılır. Bildirim listede olma sebebini içerir, liste yeni kişi eklenmesi veya "
+    "erişimin kalkması gibi hâllerde güncellenir ve bilgilendirmenin ispatı ihraççıya aittir.")
+
+P.q("II-15.1 m. 8",
+    "Bir ihraççının paylarında olağan piyasa koşullarıyla açıklanamayan fiyat ve işlem hacmi artışı görülmüştür. "
+    f"{OD}, bu duruma ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Borsanın talebiyle açıklama yapılır; açıklanmamış özel durum olup olmadığı belirtilir.",
+    ["İhraççının açıklama yapması Kurulun yazılı emrine bağlıdır.",
+     "İhraççı sadece borsaya bilgi verir, kamuya açıklama yapmaz.",
+     "Açıklamada ertelenmiş içsel bilgilerin de erteleme koşulları sürse de açıklanması gerekir.",
+     "İşlemler geçici olarak durdurulmadan açıklama yapılamaz."],
+    "Tebliğ m. 8'e göre fiyat veya işlem hacminde olağan piyasa koşullarıyla açıklanamayan değişim olduğunda ihraççı ilgili "
+    "borsanın talebi üzerine kamuya açıklama yapar; açıklamada henüz açıklanmamış özel durum bulunup bulunmadığı belirtilir ve "
+    "m. 6'daki erteleme hükümleri saklı kalmak üzere açıklanmamış özel durumlara yer verilir.")
+
+P.q("II-15.1 m. 9",
+    f"{OD}, haber ve söylentilerin doğrulanmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "İhraççı, söylentiye ilişkin açıklamayı ancak Kurul veya borsanın talebi üzerine yapar.",
+    ["Söylenti, açıklaması ertelenen bir bilgiye ilişkinse erteleme sebeplerinin ortadan kalktığı kabul edilir.",
+     "Kamuya açıklanmış bilgilere dayanan analiz ve tahminler doğrulama yükümlülüğü dışındadır.",
+     "Özel durumların kamuya açık bir toplantıda sehven duyurulması hâlinde derhâl KAP’ta açıklama yapılır.",
+     "Basında ilk kez yer alan önemli haberin doğru veya yeterli olup olmadığı açıklanır."],
+    "Tebliğ m. 9'a göre fiyat duyarlı ve ilk kez kamuya duyurulan veya farklı içerikteki haber ve söylentilerin doğruluğuna "
+    "ilişkin açıklama Kurul veya borsanın uyarısı beklenmeksizin yapılır; ertelenen bilgiye ilişkin söylentide erteleme "
+    "sebeplerinin kalktığı kabul edilir. Açıklanmış bilgilere dayalı analizler kapsam dışıdır; sehven duyurularda derhâl KAP "
+    "açıklaması yapılır.")
+
+P.sayisal("II-15.1 m. 10/1-b",
+    "Bir ihraççı, gelecek yıla ilişkin satış ve kârlılık beklentilerini kamuoyuyla paylaşmak istemektedir; önceki "
+    f"açıklamalarında önemli bir değişiklik yoktur. {OD}, geleceğe yönelik değerlendirmeler ihraççı yönetimince yılda en fazla "
+    "kaç defa kamuya açıklanabilir?",
+    "4", ["1", "2", "6", "12"],
+    "Tebliğ m. 10'a göre geleceğe yönelik değerlendirmelerin açıklanması zorunlu değildir; açıklanacaksa yönetim kurulu kararına "
+    "veya yetkilendirilen kişinin yazılı onayına bağlanır ve yılda en fazla dört defa açıklanır. Önceki değerlendirmelerde "
+    "önemli değişiklik olursa sayı sınırı uygulanmaz.")
+
+P.q("II-15.1 m. 10",
+    f"{OD}, geleceğe yönelik değerlendirmelerin kamuya açıklanmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Geleceğe yönelik değerlendirmelerin kamuya açıklanması zorunludur.",
+    ["Açıklama, yönetim kurulu kararına veya yetkilendirilen kişinin yazılı onayına bağlanır.",
+     "Önceki açıklamalar ile gerçekleşmeler arasındaki önemli farkların nedenlerine yer verilir.",
+     "Açıklama faaliyet raporları veya KAP’ta açıklanan yatırımcı sunumlarıyla da yapılabilir.",
+     "Açıklama esaslarına bilgilendirme politikasında yer verilir."],
+    "Tebliğ m. 10'a göre geleceğe yönelik değerlendirmelerin açıklanması zorunlu değildir; açıklanmak istenirse yönetim kurulu "
+    "kararı veya yetkili kişinin yazılı onayı gerekir, faaliyet raporu veya KAP'taki sunumlarla da yapılabilir, sapmaların "
+    "nedenleri açıklanır ve esaslar bilgilendirme politikasında yer alır.", zorluk="easy")
+
+# ================================================================ sürekli bilgiler: sermaye yapısı (m. 11-16)
+P.q("II-15.1 m. 11",
+    "Payları borsada işlem gören bir ihraççının yönetim kurulu üyesinin eşi, ihraççının paylarında alım işlemi yapmıştır. "
+    f"{OD}, bu işlemin kamuya açıklanmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Takvim yılı içindeki toplam işlem tutarı Tebliğdeki eşiğe ulaşınca işlemi yapan açıklama yapar.",
+    ["Eşin işlemleri açıklama kapsamında değildir; sadece yönetim kurulu üyesinin işlemleri açıklanır.",
+     "İşlem tutarı ne olursa olsun ihraççı açıklama yapar.",
+     "Açıklamayı yönetim kurulu üyesi değil, borsa yapar.",
+     "Sadece satış işlemleri açıklanır, alım işlemleri açıklanmaz."],
+    "Tebliğ m. 11'e göre idari sorumluluğu bulunan kişiler ve bunlarla yakından ilişkili kişiler (eş, çocuklar, aynı evde "
+    "yaşayanlar) ile ana ortağın paylar ve paya dayalı araçlardaki tüm işlemleri, takvim yılı içindeki toplam tutar Tebliğde "
+    "belirlenen eşiğe ulaştıktan sonra işlemi yapan tarafından kamuya açıklanır.", zorluk="hard")
+
+P.q("II-15.1 m. 12/1",
+    "Bir yatırımcının payları borsada işlem gören bir ihraççıdaki oy hakkı oranı aşağıdaki seçeneklerde verildiği şekilde "
+    f"değişmiştir. {OD}, hangi değişiklik bu yatırımcı için açıklama yükümlülüğü doğurmaz?",
+    "%11’den %14’e çıkması",
+    ["%4’ten %6’ya çıkması", "%24’ten %26’ya çıkması", "%34’ten %32’ye düşmesi", "%66’dan %68’e çıkması"],
+    "Tebliğ m. 12/1'e göre sermaye veya oy haklarının %5, %10, %15, %20, %25, %33, %50, %67 veya %95'ine ulaşılması veya bu "
+    "oranların altına düşülmesi açıklama yükümlülüğü doğurur. %11'den %14'e çıkış hiçbir eşiği geçmez; diğer değişiklikler %5, "
+    "%25, %33 ve %67 eşiklerini geçer.", zorluk="hard")
+
+P.q("II-15.1 m. 12/2",
+    "Sermaye piyasası araçları halka arz edilmesi suretiyle borsada işlem gören, ancak halka açık olmayan bir ortaklıkta bir "
+    f"yatırımcının oy hakları %9’dan %21’e yükselmiştir. {OD}, bu değişikliğe ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Sadece %25, %50 ve %67 esas alındığından açıklama yükümlülüğü doğmaz.",
+    ["%10, %15 ve %20 eşikleri aşıldığı için üç ayrı açıklama yapılır.",
+     "Tek bir açıklama yapılır ve %20 eşiği belirtilir.",
+     "Bu ortaklıklarda açıklama yükümlülüğü pay sahibine değil, sadece ortaklığa aittir.",
+     "%5’in üzerindeki her değişiklik açıklanır."],
+    "Tebliğ m. 12/2'ye göre araçları halka arz edilmesi suretiyle borsada işlem gören halka açık olmayan ortaklıklarda sermaye "
+    "yapısına ilişkin açıklamalarda sadece %25, %50 ve %67 oranları esas alınır; %9'dan %21'e çıkış bu eşiklerden hiçbirini "
+    "geçmez.", zorluk="hard")
+
+P.q("II-15.1 m. 12/3-4",
+    f"{OD}, sermaye yapısındaki değişikliklere ilişkin açıklamalara ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Oy hakkı donmuş paylar eşik oranlarının hesaplanmasında dikkate alınmaz.",
+    ["Farklı gruplardaki paylar ve oy hakları için hesaplama ayrı ayrı yapılır.",
+     "Doğrudan pay sahipliğinde eşik aşımına ilişkin açıklamayı MKK yapar.",
+     "Birlikte hareket yoluyla eşik aşılırsa açıklama yükümlülüğü ilgili kişilere aittir.",
+     "Kurucuya ait yatırım fonlarının pay oranı eşikleri aşarsa açıklamayı kurucu yapar."],
+    "Tebliğ m. 12/3'e göre oy hakkının donduğu durumlar dahil paya bağlı tüm oy hakları hesaplamada dikkate alınır ve farklı "
+    "gruplar için ayrı hesaplanır. m. 12/4'e göre doğrudan eşik aşımında açıklamayı MKK yapar; birlikte hareket, dolaylı veya oy "
+    "haklarına bağlı aşımlarda yükümlülük ilgililere aittir. m. 12/1-b fon eşiklerini kurucuya yükler.", zorluk="hard")
+
+P.oncul("II-15.1 m. 13",
+    "Bir yatırımcının eşik hesabında dikkate alınıp alınmayacağı tartışılan oy hakları aşağıda verilmiştir:",
+    ["Oy haklarını aynı doğrultuda kullanmak için yazılı sözleşme imzaladığı üçüncü kişinin oy hakları",
+     "Oy haklarının geçici devri için yazılı sözleşme imzaladığı üçüncü kişinin oy hakları",
+     "Kendisine talimatsız kullanmak üzere vekâlet verilen oy hakları",
+     "Teminat olarak aldığı, ancak oy hakkı teminat verende kalan paylara bağlı oy hakları"],
+    f"{OD}, yukarıdakilerden hangileri yatırımcının oy haklarının hesaplanmasında dikkate alınır?",
+    "I, II ve III",
+    ["I ve II", "II ve IV", "III ve IV", "I, II ve III", "I, III ve IV"],
+    "Tebliğ m. 13'e göre ortak politika için yazılı sözleşme yapılan üçüncü kişilerin oy hakları, geçici devir sözleşmesine konu "
+    "oy hakları ve aksine talimat yoksa vekil olarak kendi iradesiyle kullanılabilecek oy hakları hesaplamada dikkate alınır. "
+    "Teminat paylarının oy hakları ancak teminat alana ait olup kullanma niyeti açıklanmışsa teminat alanın hesabına girer.", zorluk="hard")
+
+P.sayisal("II-15.1 m. 23/3",
+    "Bir yatırımcı, payları borsada işlem gören bir ihraççının oy haklarının %10’unu aşmasına yol açan pay alımını Salı günü "
+    f"yapmıştır; arada tatil yoktur. {OD}, bu yatırımcının açıklamayı en geç işlemi izleyen kaçıncı iş günü saat 09.00’a kadar "
+    "yapması gerekir?",
+    "3", ["1", "2", "5", "10"],
+    "Tebliğ m. 23/3'e göre m. 12 ve 22 kapsamındaki pay eşiği açıklamaları Tebliğ ekindeki form kullanılarak en geç işlemin "
+    "gerçekleşmesini izleyen üçüncü iş günü saat 09.00'a kadar yapılır; Salı işleminde bu tarih Cuma saat 09.00'dır.", zorluk="hard")
+
+P.q("II-15.1 m. 16",
+    f"{OD}, ihraççıya ilişkin genel bilgilerin yayımlanmasına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Genel bilgilerdeki değişiklikler, bir sonraki finansal raporla birlikte güncellenir.",
+    ["Genel bilgiler KAP’taki ilgili form kullanılarak yayımlanır.",
+     "Doğrudan %5 veya daha fazla paya sahip olanları gösteren tablo MKK tarafından güncellenir.",
+     "Farklı gruplardaki paylara bağlı haklardaki değişiklikler KAP’ta açıklanır.",
+     "MKK’nın yayımladığı pay tablosu, eşik açıklama yükümlülüğünü ortadan kaldırmaz."],
+    "Tebliğ m. 16'ya göre genel bilgiler KAP formuyla yayımlanır ve değişiklikler en geç iki iş günü içinde ihraççı tarafından "
+    "güncellenir. Doğrudan %5 ve üzeri pay sahiplerini gösteren tabloyu MKK derhâl günceller; bu tablo m. 12'deki açıklama "
+    "yükümlülüğünü kaldırmaz ve grup haklarındaki değişiklikler KAP'ta açıklanır.")
+
+P.oncul("II-15.1 m. 17",
+    "Payları borsada işlem gören bir ihraççının bilgilendirme politikasında yer alan hususlar aşağıda verilmiştir:",
+    ["Yatırımcı toplantılarında açıklanan sunumlara nasıl ulaşılacağı",
+     "Basın ve internetteki haber ve söylentilerin takibi ile açıklama esasları",
+     "Yönetim kurulu üyelerinin ücretlendirme tutarları",
+     "Özel durumların açıklanmasına kadar gizliliğin sağlanmasına yönelik tedbirler"],
+    f"{OD}, yukarıdakilerden hangileri bilgilendirme politikasında asgari olarak yer alması gereken hususlar arasındadır?",
+    "I, II ve IV", ["I ve III", "II ve III", "III ve IV", "I, II ve IV", "I, III ve IV"],
+    "Tebliğ m. 17'ye göre bilgilendirme politikasında en az sunum ve raporlara ulaşım, haber ve söylentilerin takibi ve açıklama "
+    "esasları, idari sorumluluğu bulunan kişilerin belirlenme esasları, gizlilik tedbirleri ve geleceğe yönelik değerlendirmelerin "
+    "açıklanma esasları yer alır. Ücret tutarları bu listede sayılmaz.")
+
+P.q("II-15.1 m. 18",
+    f"{OD}, aşağıdakilerden hangisi payları borsada işlem gören ihraççıların genel kurul ve sermaye artırımına ilişkin "
+    "zorunlu açıklamaları arasında sayılmamıştır?",
+    "Genel kurul toplantısında söz alan pay sahiplerinin kimlik bilgileri",
+    ["Genel kurul tarih, saat, yer ve gündemine ilişkin yönetim kurulu kararı",
+     "Genel kurula katılma hakkının kullanımına ve toplam oy haklarına ilişkin bilgi",
+     "Kâr dağıtımına ilişkin yönetim kurulu veya genel kurul kararı",
+     "Yeni pay ihracına ilişkin yönetim kurulu kararı"],
+    "Tebliğ m. 18'e göre genel kurul tarih, saat, yer ve gündem kararı, katılım hakkı ve oy haklarına ilişkin bilgi, kâr dağıtımı "
+    "kararları, toplantı tutanağı ve hazır bulunanlar listesi, toplantının yapılamaması hâli ve yeni pay ihracına ilişkin "
+    "kararlar açıklanır; söz alanların kimlik bilgileri bu listede yer almaz.")
+
+# ================================================================ açıklamaların şekli (m. 23-25)
+P.q("II-15.1 m. 23-24",
+    f"{OD}, özel durum açıklamalarının şekli ve özelliklerine ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Özel durum açıklamaları ürün tanıtımı amacıyla kullanılabilir.",
+    ["Borsada işlem gören ihraççıların açıklamaları KAP’ta ilgili form kullanılarak yapılır.",
+     "Tebliğde aksi belirtilmedikçe açıklamaların derhâl yapılması esastır.",
+     "Henüz kesinleşmemiş durumlar, belirsizlik belirtilerek açıklanır.",
+     "Açıklama yapılmadan önce işlemlerin geçici olarak durdurulması borsadan talep edilebilir."],
+    "Tebliğ m. 23'e göre borsada işlem gören ihraççıların açıklamaları KAP'ta ilgili formla ve kural olarak derhâl yapılır; "
+    "açıklamadan önce işlemlerin durdurulması talep edilebilir. m. 24'e göre belirsiz durumlar belirsizlik belirtilerek açıklanır "
+    "ve açıklamalar faaliyetlerin pazarlanması veya reklam amacıyla kullanılamaz.", zorluk="easy")
+
+P.sayisal("II-15.1 m. 24/5",
+    "Payları borsada işlem gören bir ihraççı, KAP’ta yaptığı özel durum açıklamalarını kendi internet sitesinde de "
+    f"yayımlamaktadır. {OD}, bu açıklamalar ihraççının internet sitesinde en az kaç yıl süreyle bulundurulmalıdır?",
+    "5", ["1", "2", "3", "10"],
+    "Tebliğ m. 24/5'e göre borsada işlem gören ihraççılar özel durum açıklamalarını en geç açıklamayı izleyen iş günü içinde "
+    "KAP'taki internet sitesinde ilan eder ve beş yıl süreyle bulundurur; KAP'taki açıklamalara bağlantı verilmesi de yeterlidir.")
+
+P.q("II-15.1 m. 23/2",
+    "Bir ihraççı, yaptığı özel durum açıklamasının sonunda yer alan beyan kısmını hazırlamaktadır. "
+    f"{OD}, bu beyanda aşağıdakilerden hangisine yer verilmesi gerekmez?",
+    "Açıklamanın bağımsız denetim kuruluşunca onaylandığına",
+    ["Açıklamanın Tebliğdeki esaslara uygun olduğuna",
+     "Açıklamanın ihraççıya ulaşan bilgileri tam olarak yansıttığına",
+     "Bilgilerin ihraççının defter, kayıt ve belgelerine uygun olduğuna",
+     "Açıklamalardan sorumlu olunduğuna"],
+    "Tebliğ m. 23/2'ye göre açıklamada; Tebliğ esaslarına uygunluk, ihraççıya ulaşan bilgilerin tam yansıtıldığı, bilgilerin "
+    "defter, kayıt ve belgelere uygunluğu, bilgileri tam ve doğru elde etmek için gerekli çabanın gösterildiği ve açıklamadan "
+    "sorumlu olunduğu beyan edilir. Bağımsız denetim onayı aranmaz.")
+
+P.q("II-15.1 m. 23/2",
+    "Payları borsada işlem görmeyen ancak pay dışındaki sermaye piyasası araçlarını halka arz etmiş bir ihraççı özel durum "
+    f"açıklaması yapacaktır. {OD}, bu ihraççının açıklama yükümlülüğünü yerine getirme şekline ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Açıklama Kurula gönderilir ve Kurulun internet sitesinde duyurulur.",
+    ["Açıklama sadece ihraççının ticaret sicili müdürlüğüne bildirilir.",
+     "Açıklama yükümlülüğü bulunmaz; yıllık faaliyet raporunda yer verilmesi yeterlidir.",
+     "Açıklama, borsa işlem görmese de KAP formu kullanılmadan basında ilan edilir.",
+     "Açıklama sadece yatırımcılara elektronik posta ile gönderilir."],
+    "Tebliğ m. 23/2'ye göre araçları borsada işlem gören ihraççıların açıklamaları KAP'ta yapılır; araçları borsada işlem "
+    "görmeyen ihraççılar ise açıklamaları Kurula göndererek yükümlülüğü yerine getirir ve bu açıklamalar Kurulun internet "
+    "sitesinde duyurulur; Kurul gerekirse basın yayın organlarında ilan isteyebilir.", zorluk="hard")
+
+P.q("II-15.1 m. 25-26",
+    f"{OD}, özel durumların gizliliğine ve Kurulun yetkilerine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Bilgiyi bilenler, kamuya duyuruluncaya kadar gizliliği korumakla yükümlüdür.",
+    ["Özel durumu öğrenen yönetim kurulu üyeleri bilgiyi yakınlarıyla paylaşabilir.",
+     "Kurul, ihraççılardan açıklama yapılmasını isteyemez; sadece inceleme yapabilir.",
+     "Kurul, gönderilen bilgilerin basında ilan edilmesini isteyemez.",
+     "Gizlilik yükümlülüğü sadece ihraççı çalışanları için geçerlidir."],
+    "Tebliğ m. 25'e göre açıklanması gereken özel durumlar hakkında bilgi sahibi olan kişiler, bunlar kamuya duyuruluncaya kadar "
+    "gizliliği korumakla yükümlüdür. m. 26'ya göre Kurul gerekli gördüğünde ihraççılardan ve ilgili taraflardan açıklama "
+    "yapılmasını ve bilgilerin basın yayın organlarında ilan edilmesini isteyebilir.")
+
+# ================================================================ kurumsal yönetim ve ilişkili taraf (m. 17)
+P.q("6362 s. SPKn m. 17/3",
+    "Halka açık bir ortaklık, ana ortağının sahibi olduğu bir şirketle Kurulca belirlenen nitelikte bir ilişkili taraf işlemi "
+    "yapmak istemektedir; bağımsız yönetim kurulu üyelerinin çoğunluğu işlemi onaylamamıştır. "
+    f"{K}, bu durumda izlenecek usule ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Durum kamuya duyurulur ve işlem genel kurul onayına sunulur.",
+    ["İşlem yönetim kurulu çoğunluğuyla gerçekleştirilir; bağımsız üyelerin itirazı dikkate alınmaz.",
+     "İşlem yasaklanır ve genel kurula sunulamaz.",
+     "İşlem Kurulun onayıyla gerçekleştirilir, genel kurula sunulmaz.",
+     "İşlem, bağımsız üyelerin yerine yenileri seçilinceye kadar ertelenir."],
+    "Kanun m. 17/3'e göre ilişkili taraf işlemleri için yönetim kurulu kararı alınır ve uygulanması bağımsız üyelerin "
+    "çoğunluğunun onayına bağlıdır. Onay verilmezse durum işleme ilişkin yeterli bilgiyle kamuya duyurulur ve işlem genel "
+    "kurul onayına sunulur.", zorluk="hard")
+
+P.oncul("6362 s. SPKn m. 17/3",
+    "Bağımsız yönetim kurulu üyelerince onaylanmadığı için genel kurula sunulan bir ilişkili taraf işlemine ilişkin aşağıdaki "
+    "ifadeler verilmiştir:",
+    ["İşlemin tarafları ve bunlarla ilişkili kişiler genel kurulda oy kullanamaz.",
+     "Bu gündem maddesinin görüşülmesinde toplantı nisabı aranmaz.",
+     "Karar, oy hakkı bulunanların üçte iki çoğunluğuyla alınır.",
+     "Belirtilen esaslara uyulmadan alınan yönetim kurulu ve genel kurul kararları geçerli sayılmaz."],
+    f"{K}, yukarıdaki ifadelerden hangileri doğrudur?",
+    "I, II ve IV", ["I ve III", "II ve III", "III ve IV", "I, II ve IV", "I, III ve IV"],
+    "Kanun m. 17/3'e göre bu genel kurulda işlemin tarafları ve ilişkili kişiler oy kullanamaz, toplantı nisabı aranmaz ve oy "
+    "hakkı bulunanların basit çoğunluğuyla karar alınır; esaslara uyulmadan alınan yönetim kurulu ve genel kurul kararları "
+    "geçerli sayılmaz.", zorluk="hard")
+
+P.q("6362 s. SPKn m. 17/2",
+    f"{K}, kurumsal yönetim ilkelerine uyum konusunda Kurulun yetkilerine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Kurul, borsa ortaklıklarını ilkelere kısmen veya tamamen uymakla yükümlü tutabilir.",
+    ["Kurumsal yönetim ilkelerine uyum tüm ortaklıklar için ihtiyaridir; Kurul zorunlu tutamaz.",
+     "Kurul, uyumsuz işlemler için ancak teminat yatırarak ihtiyati tedbir isteyebilir.",
+     "Uyum zorunluluğunun yerine getirilmesi için Kurulun işlem yapma yetkisi yoktur.",
+     "Kurumsal yönetim ilkeleri sadece bankalara uygulanır."],
+    "Kanun m. 17/2'ye göre Kurul, payları borsada işlem gören halka açık ortaklıkların ilkelere kısmen veya tamamen uymasını "
+    "zorunlu tutabilir, uyumu sağlayacak kararları alıp işlemleri resen yapabilir ve aykırı işlemler için her türlü teminattan "
+    "muaf ihtiyati tedbir ve dava yoluna gidebilir.")
+
+# ================================================================ kâr dağıtımı, avans, bağış, örtülü kazanç (m. 19-21)
+P.q("6362 s. SPKn m. 19",
+    f"{K}, halka açık ortaklıklarda kâr dağıtımına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Kâr payı, dağıtım tarihinde mevcut paylara ihraç tarihleri dikkate alınarak kıst esasına göre dağıtılır.",
+    ["Kâr, genel kurulca belirlenen kâr dağıtım politikası çerçevesinde dağıtılır.",
+     "Kurul, benzer nitelikteki ortaklıklar bazında farklı kâr dağıtım esasları belirleyebilir.",
+     "Kanuni yedek akçeler ve esas sözleşmedeki kâr payı ayrılmadıkça yönetim kurulu üyelerine kârdan pay dağıtılamaz.",
+     "Sermaye artırımlarında bedelsiz paylar artırım tarihindeki mevcut paylara dağıtılır."],
+    "Kanun m. 19'a göre kâr, genel kurulca belirlenen politika çerçevesinde dağıtılır ve Kurul farklı esaslar belirleyebilir; "
+    "kanuni yedekler ve esas sözleşmedeki kâr payı ayrılmadıkça yönetim kurulu üyelerine pay verilemez. Kâr payı dağıtım "
+    "tarihindeki mevcut payların tümüne ihraç ve iktisap tarihlerine bakılmaksızın eşit dağıtılır.")
+
+P.sayisal("6362 s. SPKn m. 19/5",
+    "Halka açık bir ortaklık yıl içinde esas sözleşmesindeki yetkiye dayanarak 2 milyon TL bağış yapmıştır; bağış dikkate "
+    f"alınmadan hesaplanan net dağıtılabilir dönem kârı 18 milyon TL’dir. {K}, kâr payı hesaplamasında esas alınacak "
+    "dağıtılabilir kâr matrahı kaç milyon TL’dir?",
+    "20", ["16", "18", "22", "36"],
+    "Kanun m. 19/5'e göre halka açık ortaklıkların bağış yapabilmesi için esas sözleşmede hüküm bulunmalıdır; bağış sınırını "
+    "genel kurul belirler ve ilgili yılda yapılan bağışlar dağıtılabilir kâr matrahına eklenir: 18 + 2 = 20 milyon TL.",
+    zorluk="hard")
+
+P.q("6362 s. SPKn m. 19/5",
+    f"{K}, halka açık ortaklıkların bağış yapmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Esas sözleşmede hüküm gerekir; bağış sınırını genel kurul belirler.",
+    ["Bağış yönetim kurulu kararıyla sınırsız olarak yapılabilir.",
+     "Halka açık ortaklıkların bağış yapması yasaktır.",
+     "Bağış sınırını Kurul belirler; genel kurulun yetkisi yoktur.",
+     "Yapılan bağışlar, ilgili yılın dağıtılabilir kâr matrahından indirilerek hesaplama yapılır."],
+    "Kanun m. 19/5'e göre halka açık ortaklıkların bağış yapabilmesi veya pay sahibi dışındakilere kârdan pay dağıtabilmesi için "
+    "esas sözleşmede hüküm bulunması şarttır; bağış sınırını genel kurul belirler, Kurul üst sınır getirebilir ve bağışlar "
+    "dağıtılabilir kâr matrahına eklenir.", zorluk="easy")
+
+P.sayisal("6362 s. SPKn m. 20/1",
+    "Halka açık bir ortaklığın bir önceki yıla ait dönem kârı 60 milyon TL’dir ve bu yıl henüz kâr payı avansı dağıtılmamıştır. "
+    f"{K}, ortaklığın bu hesap döneminde dağıtabileceği toplam kâr payı avansı en fazla kaç milyon TL’dir?",
+    "30", ["15", "20", "40", "60"],
+    "Kanun m. 20/1'e göre bir hesap döneminde verilecek toplam kâr payı avansı bir önceki yıla ait dönem kârının yarısını "
+    "aşamaz: 60 / 2 = 30 milyon TL. Önceki dönem avansları mahsup edilmeden ilave avans verilemez.")
+
+P.q("6362 s. SPKn m. 20/2",
+    "Ara dönem finansal tablolarındaki hata nedeniyle kâr payı avansı yanlış hesaplanıp dağıtılmış ve ortaklık zarara "
+    f"uğramıştır. {K}, bu zarardan sorumluluğa ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Bağımsız denetimi yapanlar, raporlarıyla sınırlı olmaksızın tüm zarardan sorumludur.",
+    ["Yönetim kurulu üyeleri kusurlarına ve durumun gereklerine göre sorumludur.",
+     "Sorumluluk ortaklığa, pay sahiplerine ve ortaklık alacaklılarına karşıdır.",
+     "Avansın kararlaştırıldığı dönemde pay iktisap edenlere karşı doğrudan sorumluluk vardır.",
+     "Pay sahipleri kararın ilanından itibaren otuz gün içinde iptal davası açabilir."],
+    "Kanun m. 20/2'ye göre yönetim kurulu üyeleri ve raporlarıyla sınırlı olarak bağımsız denetçiler kusurlarına göre ortaklığa, "
+    "pay sahiplerine, alacaklılara ve o dönemde pay iktisap edenlere karşı sorumludur. Hukuki sorumluluk doğuran hâllerde pay "
+    "sahipleri ve yönetim kurulu üyeleri ilandan itibaren otuz gün içinde iptal davası açabilir.", zorluk="hard")
+
+P.q("6362 s. SPKn m. 21",
+    f"{K}, örtülü kazanç aktarımı yasağına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Kazanç aktarımı tespit edilirse aktarılan tutar faizsiz olarak iade edilir.",
+    ["Yasak halka açık ortaklıklar ile kolektif yatırım kuruluşları ve bunların bağlı ortaklıklarını kapsar.",
+     "Basiretli tacirden beklenen faaliyetin yapılmaması yoluyla da örtülü kazanç aktarımı gerçekleşebilir.",
+     "İlişkili taraf işlemlerinin emsallere uygunluğunu gösteren belgeler saklanır.",
+     "Aktarım tespit edilirse ortaklık iade talebinde bulunur."],
+    "Kanun m. 21'e göre halka açık ortaklıklar, kolektif yatırım kuruluşları ve bunların iştirak ve bağlı ortaklıkları için "
+    "örtülü kazanç aktarımı yasaktır; beklenen faaliyetin yapılmaması da aktarım sayılır ve belgeler saklanır. Tespit hâlinde "
+    "ortaklık iadeyi talep eder ve aktarılan tutar kanuni faiziyle birlikte iade edilir.")
+
+P.q("6362 s. SPKn m. 22",
+    f"{K}, halka açık ortaklıkların kendi paylarını satın ve rehin almasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Kurulca belirlenen şartlarla kendi paylarını satın alabilir ve rehin alabilirler.",
+    ["Halka açık ortaklıkların kendi paylarını satın alması yasaktır.",
+     "Geri alım sadece genel kurulun oybirliğiyle yapılabilir.",
+     "Konsolide bilançoya dahil bağlı ortaklıkların ana ortaklık paylarını alması bu kurallara tabi değildir.",
+     "Geri alınan payların itfası Kurul düzenlemesine değil, sadece TTK’ya tabidir."],
+    "Kanun m. 22'ye göre halka açık ortaklıklar kendi paylarını Kurulca belirlenen şartlar çerçevesinde satın alabilir ve rehin "
+    "olarak kabul edebilir; Kurul işlem sınırlarını, elden çıkarma veya itfa ve kamuya açıklama esaslarını düzenler. Konsolide "
+    "bilançoya dahil ortaklıkların alımları da bu hükme tabidir.")
+
+# ================================================================ genel kurul (m. 29-30)
+P.sayisal("6362 s. SPKn m. 29/1",
+    "Halka açık bir ortaklık olağan genel kurulunu 30 Nisan’da toplamayı planlamaktadır. "
+    f"{K}, ilan ve toplantı günleri hariç olmak üzere genel kurul çağrısı toplantı tarihinden en az kaç hafta önce yapılmalıdır?",
+    "3 hafta", ["1 hafta", "2 hafta", "4 hafta", "6 hafta"],
+    "Kanun m. 29/1'e göre halka açık ortaklıklar genel kurullarını esas sözleşmede gösterilen şekilde, internet sitesi, KAP ve "
+    "Kurulca belirlenen yerlerde yayımlanan ilanla çağırır; çağrı ilan ve toplantı günleri hariç toplantıdan en az üç hafta önce "
+    "yapılır.", zorluk="easy")
+
+P.q("6362 s. SPKn m. 29",
+    f"{K}, halka açık ortaklıkların genel kurullarına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Genel kurul gündemine bağlılık ilkesi gereği Kurulun istediği hususlar gündeme alınamaz.",
+    ["Genel kurul çağrısı ortaklığın internet sitesinde ve KAP’ta yayımlanan ilanla yapılır.",
+     "Azlığın gündeme madde ekletme hakkı karar taslaklarının görüşmeye sunulmasını da kapsar.",
+     "Esas sözleşmede sadece TTK madde numarasına atıf yapılması aksine hüküm sayılmaz.",
+     "Borsada işlem gören nama yazılı paylar hakkında TTK m. 414/1 uygulanmaz."],
+    "Kanun m. 29'a göre çağrı internet sitesi ve KAP'taki ilanla yapılır; gündeme bağlılık ilkesine uyulmaksızın Kurulun "
+    "görüşülmesini istediği hususların gündeme alınması zorunludur. Azlığın gündem hakkı karar taslaklarını kapsar, esas "
+    "sözleşmede sadece madde numarasına atıf aksine hüküm sayılmaz ve borsadaki nama paylarda TTK m. 414/1 uygulanmaz.")
+
+P.q("6362 s. SPKn m. 29/6",
+    "Halka açık bir ortaklığın genel kurulunda sermaye azaltımı görüşülecektir. Toplantıya oy hakkını haiz payların %55’i "
+    f"katılmış, katılan oyların %52’si olumlu kullanılmıştır. Esas sözleşmede ağırlaştırılmış nisap yoktur. {K}, bu karara "
+    "ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Sermayenin yarısından fazlası hazır olduğundan katılanların çoğunluğuyla karar alınmıştır.",
+    ["Katılanların üçte ikisi olumlu oy vermediği için karar alınamamıştır.",
+     "Sermaye azaltımı için sermayenin en az %75’inin olumlu oyu gerekir.",
+     "Toplantı nisabı sermayenin üçte ikisi olduğundan genel kurul açılamamıştır.",
+     "Karar ancak Kurulun onayıyla geçerlilik kazanır."],
+    "Kanun m. 29/6'ya göre yeni pay alma hakkının kısıtlanması, sermaye azaltımı ve önemli nitelikteki işlemlerde toplantı nisabı "
+    "aranmaksızın katılan oy hakkını haiz payların üçte ikisinin olumlu oyu gerekir; ancak sermayeyi temsil eden payların en az "
+    "yarısı hazırsa katılanların çoğunluğu yeterlidir. %55 hazır olduğundan %52 olumlu oyla karar alınmıştır.", zorluk="hard")
+
+P.q("6362 s. SPKn m. 30",
+    f"{K}, payları kayden izlenen halka açık ortaklıklarda genel kurula katılım ve oy kullanmaya ilişkin aşağıdaki "
+    "ifadelerden hangisi yanlıştır?",
+    "Genel kurula katılım, payların bir aracı kurum nezdinde depo edilmesi şartına bağlanabilir.",
+    ["Hazır bulunanlar listesi MKK’dan sağlanan pay sahipleri listesi dikkate alınarak oluşturulur.",
+     "Listede adı bulunan hak sahipleri kimlik göstererek genel kurula katılır.",
+     "Oy hakkı vekil aracılığıyla da kullanılabilir.",
+     "Elektronik ortamda katılım MKK’nın sağladığı sistem üzerinden gerçekleştirilir."],
+    "Kanun m. 30'a göre genel kurula katılma ve oy kullanma hakkı payların depo edilmesi şartına bağlanamaz; hazır bulunanlar "
+    "listesi MKK listesine göre oluşturulur, listede adı bulunanlar kimlik göstererek katılır, oy vekil aracılığıyla "
+    "kullanılabilir ve elektronik katılım MKK sistemi üzerinden yapılır.", zorluk="easy")
+
+# ================================================================ kamuyu aydınlatma belgelerinden sorumluluk (m. 32-33)
+P.q("6362 s. SPKn m. 32/1-2",
+    "Bir ortaklığın KAP’ta yayımladığı yıllık finansal raporda önemli bir borcun gizlendiği ortaya çıkmıştır. "
+    f"{K}, bu rapordan doğan sorumluluğa ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Raporu imzalayanlar ve adına imzalanan tüzel kişi, zarardan müteselsilen sorumludur.",
+    ["Sorumluluk sadece raporu hazırlayan muhasebe müdürüne aittir.",
+     "Finansal raporlar kamuyu aydınlatma belgesi sayılmadığından sorumluluk doğmaz.",
+     "Sorumlular zarardan kusurları oranında ve müteselsil olmaksızın sorumludur.",
+     "Raporu denetleyen bağımsız denetçi raporun tamamından birinci derecede sorumludur."],
+    "Kanun m. 32/1'e göre izahname, özel durum açıklaması, finansal raporlar gibi kamuyu aydınlatma belgelerini imzalayanlar "
+    "veya adına imzalanan tüzel kişiler, bu belgelerdeki yanlış, yanıltıcı veya eksik bilgilerden kaynaklanan zararlardan "
+    "müteselsilen sorumludur; m. 32/2'ye göre rapor hazırlayan kuruluşlar da Kanun çerçevesinde sorumludur.")
+
+P.oncul("6362 s. SPKn m. 32/5",
+    "Kamuyu aydınlatma belgesindeki yanlış bilgi nedeniyle zarara uğradığını ileri süren yatırımcıların durumları aşağıda "
+    "verilmiştir:",
+    ["Payları belgeye dayanmaksızın, tamamen farklı gerekçelerle satın alan yatırımcı",
+     "Bilginin yanlış olduğunu bildiği hâlde payları satın alan yatırımcı",
+     "Belgedeki yanlışlık düzeltme ilanıyla giderildikten sonra işlem yapan yatırımcı",
+     "Belgeye dayanarak işlem yapan ve gerçeğe uygun bilgi ortaya çıkınca zarara uğrayan yatırımcı"],
+    f"{K}, yukarıdakilerden hangilerinin tazminat talebi reddedilir?",
+    "I, II ve III", ["I ve II", "II ve IV", "III ve IV", "I, II ve III", "I, III ve IV"],
+    "Kanun m. 32/5'e göre alım satımın belgeye dayanmaması, yanlışlığın bilinmesine rağmen işlem yapılması, düzeltmenin yatırım "
+    "kararından önce ilan edilmiş olması ve bilgiler doğru olsaydı dahi zarar doğacak olması hâllerinde talep reddedilir. "
+    "Belgeye dayanıp gerçek bilgi ortaya çıkınca zarara uğrayan yatırımcı için m. 32/4'e göre illiyet bağı kurulmuş sayılır.",
+    zorluk="hard")
+
+P.q("6362 s. SPKn m. 32/3, 7",
+    f"{K}, kamuyu aydınlatma belgelerinden doğan sorumluluğa ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Bilgi eksikliğinin kast veya ağır ihmalden kaynaklanmadığını ispatlayan sorumlu olmaz.",
+    ["Sorumluluğu sınırlandıran sözleşme hükümleri tarafları bağlar.",
+     "Belgeyi imzalayan kişi, kusuru bulunmasa da sorumludur.",
+     "İspat yükü, zarara uğrayan yatırımcının kusurunu kanıtlamasına bağlıdır.",
+     "Sorumluluk, ancak Kurulun inceleme sonucunda kusuru tespit eden bir karar vermesiyle doğar."],
+    "Kanun m. 32/3'e göre belgelerdeki bilgilerin yanlışlığından bilgisi olmadığını ve bu bilgi eksikliğinin kast veya ağır "
+    "ihmalinden kaynaklanmadığını ispatlayan kişiler sorumlu olmaz; m. 32/7'ye göre sorumluluğu hafifleten veya kaldıran "
+    "anlaşmalar geçersizdir.")
+
+P.q("6362 s. SPKn m. 32/4, 6",
+    "Bir yatırımcı, yanıltıcı bir özel durum açıklamasının ardından pay satın almış; gerçek bilginin ortaya çıkmasıyla payları "
+    f"değer kaybetmiştir. {K}, bu yatırımcının tazminat talebine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "İlliyet bağı kurulmuş sayılır; talep altı ay içinde zamanaşımına uğrar.",
+    ["İlliyet bağını yatırımcı ispatlamak zorunluluğundadır; talep beş yıl içinde zamanaşımına uğrar.",
+     "İlliyet bağı karinesi sadece izahname için geçerlidir; özel durum açıklamasına uygulanmaz.",
+     "Talep, özel durum açıklamasının yayım tarihinden itibaren bir yıl içinde zamanaşımına uğrar.",
+     "Zamanaşımı süresi yatırımcının zararı öğrendiği tarihten itibaren iki yıldır."],
+    "Kanun m. 32/4'e göre diğer kamuyu aydınlatma belgelerinde açıklamadan hemen sonra alınıp gerçek bilgi ortaya çıkınca satılan "
+    "araçlarda zarar hâlinde belge ile zarar arasında illiyet bağı kurulmuş sayılır; m. 32/6'ya göre tazminat talebi zararın "
+    "meydana geldiği tarihten itibaren altı ay içinde zamanaşımına uğrar.", zorluk="hard")
+
+P.q("6362 s. SPKn m. 33/2-3",
+    f"{K}, halka açık ortaklıklara ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Esas sözleşme değişiklikleri için Kurulun uygun görüşü alınmalıdır.",
+    ["Esas sözleşme değişiklikleri için sadece ticaret sicili müdürlüğünün onayı yeterlidir.",
+     "Kurul, Kanundan kaynaklanan yükümlülüklerden ihraççıları muaf tutamaz.",
+     "Esas sözleşme değişikliği genel kurul tescilinden sonra Kurula bildirilir.",
+     "Kurulun uygun görüşü sadece sermaye artırımlarında aranır."],
+    "Kanun m. 33/2'ye göre halka açık ortaklıkların esas sözleşmelerinin değiştirilmesi için Kurulun uygun görüşü zorunludur; "
+    "m. 33/3'e göre Kurul ihracın büyüklüğü, yatırımcı niteliği ve satış yöntemi gibi şartları dikkate alarak ihraçları "
+    "Kanundan kaynaklanan yükümlülüklerden kısmen veya tamamen muaf tutabilir.", zorluk="easy")
+
+P.q("II-15.1 m. 2",
+    f"{OD}, Tebliğin kapsamına ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
+    "Yurt dışında sermaye piyasası aracı ihraç eden halka açık olmayan ortaklıklar Tebliğe tabidir.",
+    ["İşlem sırası geçici olarak kapatılmış ihraççılar da Tebliğe tabidir.",
+     "Pay dışındaki araçları halka arz eden ve payları borsada işlem görmeyen ihraççılar itfa tarihine kadar Tebliğe tabidir.",
+     "Nitelikli Yatırımcı İşlem Pazarındaki ortaklıklara Tebliğin ikinci ve üçüncü bölümleri uygulanmaz.",
+     "İhraççılar izahnamenin veya ihraç belgesinin onaylandığı tarihten itibaren Tebliğe tabidir."],
+    "Tebliğ m. 2'ye göre işlem sırası kapatılmış olanlar dahil ihraççılar onay tarihinden itibaren Tebliğe tabidir; pay dışı araç "
+    "ihraç edenler itfaya kadar tabidir ve Nitelikli Yatırımcı İşlem Pazarındaki ortaklıklara içsel ve sürekli bilgi bölümleri "
+    "uygulanmaz. Yurt dışında ihraç yapan halka açık olmayan ortaklıklara Tebliğ uygulanmaz.", zorluk="hard")
+
+P.q("II-15.1 m. 19",
+    "Payları borsada işlem görmeyen bir şirket, borçlanma araçlarını halka arz etmiştir. "
+    f"{OD}, bu şirketin açıklaması gereken hususlar arasında aşağıdakilerden hangisi yer almaz?",
+    "Ürün fiyatlarında yaptığı olağan güncellemeler",
+    ["İhraç tavanı için yetkili organ kararı alınması",
+     "Anapara, faiz veya kupon ödemelerinde temerrüt durumu",
+     "Borçlanma aracına ilişkin derecelendirme notundaki değişiklikler",
+     "Borçlanma aracına ilişkin garanti ve teminatlardaki değişiklikler"],
+    "Tebliğ m. 19'a göre pay dışındaki araçları halka arz eden ihraççılar; ihraç tavanı kararlarını, ihracın gerçekleşmesini, "
+    "temerrüt durumlarını, yatırımcı haklarını etkileyen değişiklikleri, dönüştürme haklarının kullanımını, derecelendirme "
+    "notlarını ve garanti ile teminat değişikliklerini açıklar. Olağan fiyat güncellemeleri bu listede yer almaz.",
+    zorluk="easy")
+
+P.q("II-15.1 m. 22",
+    "Payları Nitelikli Yatırımcı İşlem Pazarında işlem gören bir ortaklıkta bir yatırımcının oy hakları %23’ten %27’ye "
+    f"yükselmiştir. {OD}, bu değişikliğe ilişkin aşağıdakilerden hangisi doğrudur?",
+    "%25 eşiği aşıldığı için yatırımcı kamuya açıklama yapar.",
+    ["Bu pazardaki ortaklıklarda sermaye yapısı değişiklikleri açıklanmaz.",
+     "Açıklamayı sadece ortaklık yapar; yatırımcının yükümlülüğü yoktur.",
+     "Açıklama için %5’lik her artış ayrı değerlendirilir.",
+     "Açıklama sadece %50 eşiğinin aşılmasında yapılır."],
+    "Tebliğ m. 22'ye göre Dördüncü Bölüm kapsamındaki ihraççılarda (Nitelikli Yatırımcı İşlem Pazarındaki ortaklıklar dahil) "
+    "bir kişinin tek başına veya birlikte hareket edenlerle sermaye veya oy haklarının %25, %50 veya %67'sine ulaşması veya bu "
+    "oranların altına düşmesi hâlinde bu kişiler kamuya açıklama yapar.", zorluk="hard")
+
+P.q("II-15.1 m. 24/1-2",
+    "Bir ihraççı, henüz sözleşmesi imzalanmamış ve koşulları belirsiz bir satın alma görüşmesini açıklamak durumundadır. "
+    f"{OD}, bu açıklamaya ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Belirsizlik belirtilerek açıklanır; öngörülen tarih ve koşullar da yazılır.",
+    ["Belirsiz durumlar sonuçlanmadan açıklanamaz.",
+     "Açıklamada karşı tarafın adı gizlilik gereği belirtilemez.",
+     "Tutar olarak ifade edilebilse de ticari sır gerekçesiyle açıklamada tutara yer verilmez.",
+     "Öngörülen tarihte belirsizliğin giderilip giderilmediği ayrıca açıklanmaz."],
+    "Tebliğ m. 24/2'ye göre henüz kesinleşmemiş özel durumlar belirsizlik belirtilerek açıklanır, çözüm için öngörülen tarih ve "
+    "koşullara yer verilir ve o tarihte sonuç açıklanır. m. 24/1'e göre gerekliyse karşı taraf belirtilir ve ifade edilebiliyorsa "
+    "tutara yer verilir.", zorluk="hard")
+
+P.q("II-15.1 m. 5/5",
+    "Payları borsada işlem gören bir ihraççının aktif toplamının önemli kısmını oluşturan bağlı ortaklığında yönetim kontrolü "
+    f"değişmiş ve bu durum ihraççının finansal yapısını önemli ölçüde etkilemiştir. {OD}, bu duruma ilişkin aşağıdakilerden "
+    "hangisi doğrudur?",
+    "İhraççı, içsel bilgilere ilişkin esaslar çerçevesinde kamuya açıklama yapar.",
+    ["Açıklamayı sadece bağlı ortaklık yapar; ihraççının yükümlülüğü yoktur.",
+     "Bağlı ortaklıklardaki gelişmeler özel durum sayılmaz.",
+     "Açıklama bir sonraki yıllık faaliyet raporunda yapılır.",
+     "Açıklama, bağlı ortaklığın genel kurulu yapıldıktan sonra yapılır."],
+    "Tebliğ m. 5/5'e göre ihraççının ana ortaklığı ve bağlı ortaklıklarının faaliyetlerinde, finansal yapılarında veya yönetim ve "
+    "sermaye ilişkilerinde ortaya çıkan ve ihraççıda önemli değişiklik meydana getiren durumlar ihraççı tarafından içsel "
+    "bilgilere ilişkin esaslar çerçevesinde kamuya açıklanır.")
+
+P.q("II-15.1 m. 14",
+    "Bir yatırımcı, borsada işlem gören bir payı ileride iktisap etme hakkı veren sermaye piyasası araçları satın almıştır; "
+    f"bu araçların dayandığı paylara bağlı oy hakları %5 eşiğine ulaşmıştır. {OD}, bu duruma ilişkin aşağıdakilerden hangisi doğrudur?",
+    "İşlemi yapan, paya dayalı araçlar nedeniyle eşiğe ulaşıldığını kamuya açıklar.",
+    ["Paya dayalı araçlar pay olmadığından açıklama yükümlülüğü doğmaz.",
+     "Açıklama ancak araçların paya dönüştürülmesinden sonra yapılır.",
+     "Açıklamayı işlemi yapan değil, aracı ihraç eden kuruluş yapar.",
+     "Eşik hesabında yatırımcının halen sahip olduğu oy hakları dikkate alınmaz."],
+    "Tebliğ m. 14'e göre borsada işlem gören bir payı iktisap etme hakkı veren araçlara sahip olunarak bu araçların hak verdiği "
+    "paylara bağlı oy haklarının m. 12'deki oranlara ulaşması, aşması veya altına düşmesi hâlinde işlemi yapanlar açıklama "
+    "yapar; hesaplamada halen sahip olunan oy hakları da dikkate alınır.", zorluk="hard")
+
+P.q("II-15.1 m. 15/4",
+    "Birlikte hareket eden üç yatırımcının toplam oy hakları bir ihraççıda %33 eşiğini aşmıştır. "
+    f"{OD}, açıklama yükümlülüğünün yerine getirilmesine ilişkin aşağıdakilerden hangisi doğrudur?",
+    "İşlemi yapanlardan biri veya ihraççı açıklar; diğerlerinin sorumluluğu devam eder.",
+    ["Üç yatırımcının her biri ayrı ayrı açıklama yapmak zorunluluğundadır.",
+     "Açıklamayı sadece ihraççı yapabilir.",
+     "Açıklama Kurul tarafından resen yapılır.",
+     "Açıklamayı içlerinden biri yaparsa diğerlerinin eksik açıklamadan sorumluluğu kalkar."],
+    "Tebliğ m. 15/4'e göre açıklama yükümlülüğünün birden fazla kişinin sorumluluğunda olması veya birlikte hareket edilmesi "
+    "durumunda yükümlülük işlemi yapanlardan biri veya ihraççı tarafından yerine getirilir; ancak bu durum yükümlülerin eksik, "
+    "hatalı veya yetersiz açıklamadan doğan sorumluluklarını ortadan kaldırmaz.")
+
+P.q("6362 s. SPKn m. 33/5",
+    "Pay sahibi sayısı Kanundaki sınırı aşan, ancak ortaklarının tamamı bir meslek birliğinin üyelerinden oluşan ve bilanço "
+    f"büyüklüğü düşük bir anonim ortaklık Kanunun yükümlülüklerinden kurtulmak istemektedir. {K}, bu duruma ilişkin "
+    "aşağıdakilerden hangisi doğrudur?",
+    "Kurul, belirli şartların varlığında ortaklığı yükümlülüklerden muaf tutabilir veya kapsamdan çıkarabilir.",
+    ["Pay sahibi sayısı sınırı aştığı için Kurulun muafiyet tanıma yetkisi yoktur.",
+     "Ortaklık, yönetim kurulu kararıyla Kanun kapsamından çıkabilir.",
+     "Muafiyet sadece payları borsada işlem gören ortaklıklara tanınabilir.",
+     "Ortaklık, ortak sayısını azaltmadıkça Kanun kapsamında kalmak zorunluluğundadır."],
+    "Kanun m. 33/5'e göre ihraççılar ve halka açık ortaklıklar m. 16'daki sayıdan fazla ortağa sahip olsalar dahi bilanço ve "
+    "sermaye büyüklüğü, faaliyetlerin devamlılığı, ortaklığın belirli özellikteki kişilerle sınırlı tutulması, sermayenin "
+    "dağılımı gibi şartların varlığında resen veya talep üzerine yükümlülüklerden muaf tutulabilir veya kapsamdan çıkarılabilir.",
+    zorluk="hard")
+
+P.q("6362 s. SPKn m. 20/1",
+    "Halka açık bir ortaklık geçen yıl kâr payı avansı dağıtmış, ancak bu avansı yılın kârından henüz mahsup etmemiştir. "
+    f"{K}, bu yıl yeni kâr payı avansı dağıtılmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Önceki avans mahsup edilmeden yeni avans verilemez.",
+    ["Önceki avans mahsup edilmese de yeni avans dağıtılabilir.",
+     "Yeni avans ancak önceki avansın iki katını aşmamak üzere dağıtılabilir.",
+     "Yeni avans genel kurul kararı olmadan yönetim kurulu kararıyla dağıtılabilir.",
+     "Mahsup, bir sonraki yılın bağımsız denetimiyle gerçekleşir."],
+    "Kanun m. 20/1'e göre bir hesap döneminde verilecek toplam kâr payı avansı önceki yıl dönem kârının yarısını aşamaz ve "
+    "önceki dönemde ödenen kâr payı avansları mahsup edilmeden ilave kâr payı avansı verilmesine ve kâr payı dağıtılmasına "
+    "karar verilemez.")
+
+P.q("6362 s. SPKn m. 19/2",
+    "Halka açık bir ortaklığın esas sözleşmesinde pay sahipleri için belirli bir kâr payı öngörülmüştür. Genel kurul, kanuni "
+    f"yedek akçeleri ayırdıktan sonra yönetim kurulu üyelerine kârdan pay verilmesini görüşmektedir. {K}, bu karara ilişkin "
+    "aşağıdakilerden hangisi doğrudur?",
+    "Esas sözleşmedeki kâr payı ayrılıp ödenmedikçe yönetim kurulu üyelerine kârdan pay verilemez.",
+    ["Kanuni yedekler ayrıldıysa yönetim kurulu üyelerine pay verilebilir.",
+     "Yönetim kurulu üyelerine pay verilmesi genel kurulun takdirindedir; sıra aranmaz.",
+     "Yönetim kurulu üyelerine pay, pay sahiplerine kâr payından önce ödenir.",
+     "Halka açık ortaklıklarda yönetim kurulu üyelerine kârdan pay verilmesi yasaktır."],
+    "Kanun m. 19/2'ye göre kanunen ayrılması gereken yedek akçeler ve esas sözleşmede pay sahipleri için belirlenen kâr payı "
+    "ayrılmadıkça intifa senedi sahiplerine, yönetim kurulu üyelerine ve çalışanlara kârdan pay dağıtılmasına karar "
+    "verilemez; belirlenen kâr payı ödenmedikçe bu kişilere kârdan pay dağıtılamaz.")
+
+P.q("6362 s. SPKn m. 29/3",
+    "Halka açık bir ortaklığın genel kurulunda ortaklık merkezinin yurt dışına taşınması görüşülecektir; esas sözleşmede özel "
+    f"bir nisap bulunmamaktadır. {K}, bu karara ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Bu karar için TTK m. 418’deki genel nisap uygulanmaz; TTK’daki ağırlaştırılmış nisap aranır.",
+    ["Bu karar da diğer kararlar gibi TTK m. 418’deki nisapla alınır.",
+     "Karar yönetim kurulunca alınır, genel kurul onayı gerekmez.",
+     "Karar için sadece Kurulun onayı yeterlidir.",
+     "Halka açık ortaklıklar merkezlerini yurt dışına taşıyamaz."],
+    "Kanun m. 29/3'e göre halka açık ortaklıkların genel kurullarında, ortaklık merkezinin yurt dışına taşınması ile bilanço "
+    "zararlarının kapatılması için yükümlülük koyan kararlar hariç olmak üzere, daha ağır nisap öngörülmedikçe TTK m. 418 "
+    "uygulanır; bu iki karar türünde TTK'nın özel ağırlaştırılmış nisapları uygulanır.", zorluk="hard")
+
+P.q("II-15.1 m. 12/1-b",
+    "Bir portföy yönetim şirketinin kurucusu olduğu yatırım fonlarının toplamda bir ihraççının oy haklarındaki payı %5’i "
+    f"aşmıştır. {OD}, bu durumda açıklama yükümlülüğü kime aittir?",
+    "Fonların kurucusu",
+    ["Her bir yatırım fonu ayrı ayrı", "Portföy saklayıcısı", "Payları ihraç eden ihraççı", "Merkezî Kayıt Kuruluşu"],
+    "Tebliğ m. 12/1-b'ye göre bir kurucuya ait yatırım fonlarının doğrudan veya dolaylı olarak ihraççının sermayesindeki payının "
+    "veya oy haklarının Tebliğdeki oranlara ulaşması veya altına düşmesi hâlinde açıklama yükümlülüğü kurucu tarafından yerine "
+    "getirilir.")
+
+P.q("II-15.1 m. 9/4",
+    "Bir ihraççının genel müdürü, henüz kamuya açıklanmamış yıllık satış hedefini bir ekonomi gazetesine röportajda vermek "
+    f"istemektedir. {OD}, bu açıklamanın zamanlamasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "Röportaj yayımlanmadan önce veya eş zamanlı olarak KAP’ta açıklama yapılır.",
+    ["Röportaj yayımlandıktan sonraki ilk finansal raporda açıklama yapılır.",
+     "Gazetede yayımlanan bilgi için ayrıca KAP açıklaması gerekmez.",
+     "Açıklama, röportajdan bir hafta sonra KAP’ta yapılır.",
+     "Röportajda geleceğe yönelik bilgi verilmesi Tebliğde yasaklanmıştır."],
+    "Tebliğ m. 9/4'e göre geleceğe yönelik değerlendirmeler dahil özel durumlara konu hususların basın-yayın organları veya "
+    "diğer yollarla duyurulmak istenmesi hâlinde bu duyurudan önce veya eş zamanlı olarak KAP'ta açıklama yapılır; kamuya "
+    "açık toplantıda sehven duyurulursa derhâl açıklama yapılır.")
+
+if __name__ == "__main__":
+    sys.exit(P.yaz())
