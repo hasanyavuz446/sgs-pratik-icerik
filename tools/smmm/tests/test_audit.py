@@ -260,6 +260,14 @@ class AuditTest(unittest.TestCase):
                 os.unlink(path)
         self.assertTrue(any(level == "FATAL" and "Vergi" in m for level, _, m in issues), issues)
 
+    def test_standard_citation_with_consonant_softening_counts(self):
+        # Gerçek kitapçık: "Türkiye Denetim Standartları, Kalite Yönetim Standardı 1’e göre"
+        for stem in ("Kalite Yönetim Standardı 2’ye (KYS 2) göre, aşağıdakilerden hangisi yanlıştır?",
+                     "KYS 1’e göre kalite yönetim sisteminin unsurlarından hangisi değildir?",
+                     "Bağımsız Denetçiler İçin Etik Kurallar’a göre denetçi ne yapmalıdır?"):
+            self.assertTrue(audit.profil.olc(stem, {"A": "x"})["atif"], stem)
+        self.assertFalse(audit.profil.olc("Aşağıdakilerden hangisi doğrudur?", {"A": "x"})["atif"])
+
     def test_same_stem_in_two_files_is_fatal(self):
         left = clean_pack()
         right = clean_pack()

@@ -70,11 +70,12 @@ OLUMSUZ = re.compile(
     re.I,
 )
 # Mevzuat/standart atfı: "4857 sayılı İş Kanunu'na göre", "TMS 16'ya göre",
-# "Bağımsız Denetim Yönetmeliği uyarınca", "TDS 320'ye göre".
+# "Bağımsız Denetim Yönetmeliği uyarınca", "TDS 320'ye göre", "Kalite Yönetim Standardı 1'e göre"
+# (Türkçe ünsüz yumuşaması: Standart → Standardı), "Etik Kurallar'a göre".
 ATIF = re.compile(
-    r"\d{3,4}\s+sayılı|\b(?:Kanun|Yönetmeli[kğ]|Tebliğ|Yönerge|Esaslar|Standart|Tüzü[kğ]|"
-    r"Kararname|KHK|Etik İlkeler)\w*|"
-    r"\b(?:TMS|TFRS|TDS|BDS|KGK|SPK|VUK|GVK|KVK|KDVK|TTK|TBK|İYUK|THP|TDHP|MSUGT)\b",
+    r"\d{3,4}\s+sayılı|\b(?:Kanun|Yönetmeli[kğ]|Tebliğ|Yönerge|Esaslar|Standar[td]|Tüzü[kğ]|"
+    r"Kararname|KHK|Etik İlkeler|Etik Kurallar)\w*|"
+    r"\b(?:TMS|TFRS|TDS|BDS|KYS|KGK|SPK|VUK|GVK|KVK|KDVK|TTK|TBK|İYUK|THP|TDHP|MSUGT)\b",
 )
 HANGISI = re.compile(r"aşağıdaki(?:lerden)?\s+(?:\S+\s+){0,3}?hangi|ifadelerden hangi|hangisi(?:dir)?\b", re.I)
 ONCUL = re.compile(r"(?m)^\s*\*{0,2}(VI|IV|V|III|II|I)[\.)]\s")

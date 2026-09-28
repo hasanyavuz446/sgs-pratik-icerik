@@ -167,6 +167,19 @@ Toplu metin değişikliği yapan yardımcı betiklerde bir soru bloğunun sonunu
 değişiklikten sonra soru sayısını mutlaka say. Şıklarda `"…".replace(...)` gibi
 kod içi dönüşüm bırakma; şık düz metin olmalıdır.
 
+Yeniden yazılan bir dosyanın sahibi artık `build_yk_*` / `build_yb_*` builder'ıdır.
+Aynı dosyayı yazan eski `build_kh_*`, `build_yet_*` builder'ları ve
+`fixers/fix_legacy_yeterlilik_quality.py` çalıştırılmaz (yeni içeriğin üzerine eski
+metni yazarlar). Toplu doğrulama sadece `from yet_ortak import` içeren builder'larla
+`--check` kipinde yapılır.
+
+Serbest yazımda soru sayısı kendiliğinden 40-55 arasında kalıyor (Denetim dersinde
+sekiz pakette de oldu). Yazmaya başlamadan 60 maddelik bir dayanak listesi çıkar;
+ilk taramada eksik kalan soruları olumsuz kökle tamamlamak olumsuz oranını da düzeltir.
+Denetim sorularında atıf kalıbı "Standardı / KYS / Etik Kurallar" yazımlarını da tanır
+(`profil.ATIF`); kalite yönetimi sorularında kök "Kalite Yönetim Standardı 1’e (KYS 1)
+göre" biçiminde yazılır.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve
