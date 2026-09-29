@@ -199,6 +199,31 @@ Vergi dersinde (2026-09-29) öğrenilenler:
   yeniden yazılmaz, `--check` "aynı" der (önceden her gün tüm paketler "FARKLI" görünüyordu).
 - Anayasa atfı da mevzuat atfı sayılır (`profil.ATIF`).
 
+Hukuk dersinde (2026-09-30) öğrenilenler:
+- 2026'da yürürlüğe giren değişiklikler soruya girer, köke `K26` konur: 7578 (22.4.2026;
+  analık izni 8+16=24 hafta, doğum öncesi çalışma iki haftaya kadar, eşin doğumunda 10 gün,
+  koruyucu aileye 10 gün ücretsiz izin; 5510 md. 15/18 aynı süreler), 7566 (MYÖ primi %21,
+  işveren hissesi %12), 7589 (TBK md. 55 faiz başlangıcı ve mahsup; İYUK md. 45-46), 7588
+  (İYUK md. 28 göreve iade kararları kesinleşince), 7553 (turizm konaklama hafta tatili
+  dört gün içinde), 7331 (İYUK md. 10, 11, 13'te cevap süresi otuz gün).
+- Yeniden değerlemeye veya Cumhurbaşkanı kararına bağlı tutarlar sorulmaz: İYUK istinaf-
+  temyiz parasal sınırları, TTK ve 5510 idari para cezası tutarları, AŞ/Ltd. asgari sermaye.
+  5510 cezaları "asgari ücretin … katı" oranıyla sorulabilir.
+- mevzuat.gov.tr zaman zaman komut satırından (curl) erişilemiyor; uygulama içi tarayıcıda
+  `anasayfa/MevzuatFihristDetayIframe?MevzuatTur=1&MevzuatNo=<no>&MevzuatTertip=5` açılıp
+  metin `document.body.innerText` ile okunabiliyor.
+- "Aşağıdakilerden hangisi … değildir" liste sorularında tek sözcüklük çeldiriciler ("Dil",
+  "Servet") doğru şıkkı sistematik olarak en uzun bırakır; çeldiricileri tam ifade yaz
+  ("Kişinin serveti"). Ters yönde aşırıya kaçma: 60+ karakterlik tek çeldirici "şık-dengesi"
+  UYARI'sı verir (en kısa/en uzun oranı).
+- `"…".replace(" zorundadır", "…")` gibi zincirleme kısayollar bozuk Türkçe üretti
+  ("etmekmek"); mutlak dili doğrudan düzgün cümleyle yaz, kısayol bırakma.
+- Bölüm testi kökleri konu paketleriyle birebir aynı olursa `dosyalar-arası-kök` FATAL verir;
+  aynı hükmü sorarken köke kısa bir olay girişi ekle, çözümü farklı cümleyle yaz. Aynı durum
+  farklı dersler arasında da olur (İYUK konusu ↔ Vergi uyuşmazlıkları).
+- Bölüm havuzunu kirleten eski aktif demoları (`demo_questions.json`) pasifleştir; bölüm
+  testinin 20'ye tamamlanması için `ek_idler` ile yeni `demo-<ders>-0NN` kimliği ver.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve
