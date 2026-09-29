@@ -180,6 +180,25 @@ Denetim sorularında atıf kalıbı "Standardı / KYS / Etik Kurallar" yazımlar
 (`profil.ATIF`); kalite yönetimi sorularında kök "Kalite Yönetim Standardı 1’e (KYS 1)
 göre" biçiminde yazılır.
 
+Vergi dersinde (2026-09-29) öğrenilenler:
+- Yıla bağlı tutar (tarife, istisna, beyan sınırı, azami damga tutarı, kesinti oranı) kökte
+  "(2025 yılı için … olarak alınacaktır.)" diye verilir; şıkta oran veya had varsa kökte açık
+  yıl bulunur (`K26 = "… 2026 yılında yürürlükte olan hükümlerine göre"`), yoksa audit
+  mevzuat-güncellik UYARI verir. Hesaplar `vergi_ortak.py` (`gv2025`, `tl`, `secenekler`)
+  ile yapılır; `secenekler()` eşit çeldiricide durur, adayı değiştir.
+- Kanun metnini tam oku: yarım okunan maddede iki kez hata çıktı (md. 262 finansman faizi
+  "envantere alındığı hesap dönemi sonuna kadar", 6183 md. 23 "takas" değil reddiyatın
+  mahsubu). Güncel metinle son kitapçık çelişiyorsa (6183 md. 15/58 başvuru mercii) mercii
+  değil, ortak olan süreyi sor.
+- 7524/7577/7582/7587/7589 değişiklikleri: uzlaşma sadece cezalara, md. 376 indirimi yarı,
+  KVK md. 11/1-k (şans-bahis reklamı), KDVK md. 17/4-ğ (kamulaştırma), VUK md. 107/A,
+  İYUK md. 45-46 parasal sınırları. 2026 dönemi hesaplarını 7582 nedeniyle 2025 üzerinden kur.
+- Sayısal ağırlıklı paketlerde (%35-40) sabit harfler art arda yığılır; sayısal ve sözel
+  soruları dönüşümlü diz (üçlü aynı harf "harf dizisi kurulamadı" hatası verir).
+- `yet_ortak` artık `updatedAt`/`sourceUpdatedAt` farkını yok sayar: içerik aynıysa dosya
+  yeniden yazılmaz, `--check` "aynı" der (önceden her gün tüm paketler "FARKLI" görünüyordu).
+- Anayasa atfı da mevzuat atfı sayılır (`profil.ATIF`).
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve

@@ -1,97 +1,133 @@
 [
   {
     "id": "demo-vergi-013",
-    "lessonId": "vergi_usul_kanunu",
-    "topicId": "mukellef_odevleri",
-    "question": "Vergi Usul Kanunu'na göre işe başlayan bir mükellefin bu durumu vergi dairesine bildirmesi hangi ödev grubuna girer?",
+    "lessonId": "gelir_vergisi",
+    "topicId": "beyan_ve_tespit",
+    "question": "Tam mükellef Bay (K) 2025 yılında iki işverenden ücret almış ve ücretlerinin tamamı tevkif suretiyle vergilendirilmiştir. Birinci işverenden aldığı safi ücret 3.500.000 ₺, ikinci işverenden aldığı safi ücret 450.000 ₺’dir. Başka geliri yoktur. (2025 yılı için gelir vergisi tarifesinin ikinci gelir dilimi tutarı 330.000 ₺, dördüncü gelir dilimi tutarı 4.300.000 ₺ olarak alınacaktır.)\n\n193 sayılı Gelir Vergisi Kanunu’na göre, Bay (K)’nın 2025 yılı beyannamesine dahil edeceği ücret toplamı kaç ₺’dir?",
     "choices": {
-      "A": "Bildirme ödevi",
-      "B": "Değerleme ödevi",
-      "C": "Uzlaşma ödevi",
-      "D": "Terkin ödevi",
-      "E": "Tahsil ödevi"
+      "A": "0",
+      "B": "450.000",
+      "C": "3.500.000",
+      "D": "3.950.000",
+      "E": "4.300.000"
     },
-    "correctAnswer": "A",
-    "explanation": "İşe başlama, değişiklik ve işi bırakma gibi durumların süresinde vergi dairesine iletilmesi VUK'taki bildirme ödevleri kapsamındadır.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"213 sayılı Vergi Usul Kanunu m.153 ve devamı"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "VUK"],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "correctAnswer": "D",
+    "explanation": "Md. 86/1-b'ye göre birden fazla işverenden ücret alanlarda birinciden sonraki ücretlerin toplamı ikinci dilim tutarını ve ücretlerin toplamı dördüncü dilim tutarını aşmıyorsa beyan gerekmez. İkinci işverenden alınan 450.000 ₺ ikinci dilim tutarını aştığından ücretlerin tamamı (3.950.000 ₺) beyan edilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "GVK md. 86"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-014",
-    "lessonId": "vergi_usul_kanunu",
-    "topicId": "vergi_cezalari",
-    "question": "Mükellefin vergilendirmeye ilişkin ödevlerini zamanında veya eksiksiz yerine getirmemesi nedeniyle verginin zamanında tahakkuk ettirilmemesi ya da eksik tahakkuk ettirilmesi hangi kavramdır?",
+    "lessonId": "gelir_vergisi",
+    "topicId": "gelir_unsurlari",
+    "question": "Bayan (L), 2025 yılında sahibi olduğu dükkânı bir şirkete işyeri olarak kiralamış ve brüt 600.000 ₺ kira elde etmiştir. Kira ödemeleri üzerinden tevkifat yapılmıştır. Bayan (L) safi iradın tespitinde götürü gider yöntemini seçmiştir; başka geliri yoktur.\n\n193 sayılı Gelir Vergisi Kanunu’na göre, Bayan (L)’nin 2025 yılı safi gayrimenkul sermaye iradı kaç ₺’dir?",
     "choices": {
-      "A": "Vergi ziyaı",
-      "B": "Vergi mahremiyeti",
-      "C": "Yoklama",
-      "D": "Tahsil zamanaşımı",
-      "E": "Terkin"
+      "A": "420.000",
+      "B": "450.000",
+      "C": "480.000",
+      "D": "510.000",
+      "E": "600.000"
     },
-    "correctAnswer": "A",
-    "explanation": "VUK'a göre mükellefin veya sorumlunun vergilendirme ödevlerini zamanında ya da tam yerine getirmemesi yüzünden verginin zamanında tahakkuk etmemesi veya eksik tahakkuk etmesi vergi ziyaıdır.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"213 sayılı Vergi Usul Kanunu m.341"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "vergi ziyaı"],
+    "correctAnswer": "D",
+    "explanation": "Md. 74'e göre götürü gider yönteminde gayrisafi hasılatın %15'i gider olarak indirilir; işyeri kirasına md. 21'deki konut istisnası uygulanmaz: 600.000 × 0,85 = 510.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "GVK md. 70, 74"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-015",
-    "lessonId": "vergi_hukuku",
-    "topicId": "vergi_uyusmazliklari",
-    "question": "Vergi matrahında, vergi miktarında veya vergilendirme döneminde yapılan hesap ya da vergilendirme hatalarının idari yoldan giderilmesini sağlayan işlem hangisidir?",
+    "lessonId": "gelir_vergisi",
+    "topicId": "beyan_ve_tespit",
+    "question": "Bir vergi dairesi, bölgesindeki kişi ve kuruluşların yaptıkları ödemelerden gelir vergisi tevkifatı yapmakla yükümlü olup olmadıklarını incelemektedir.\n\n193 sayılı Gelir Vergisi Kanunu’na göre, aşağıdakilerden hangisi tevkifat yapmakla yükümlü olanlar arasında yer almaz?",
     "choices": {
-      "A": "Düzeltme",
-      "B": "Yoklama",
-      "C": "Tahsil",
-      "D": "Tasdik",
-      "E": "Tecil"
+      "A": "Ticaret şirketleri",
+      "B": "Dernek ve vakıfların iktisadi işletmeleri",
+      "C": "Gerçek gelirlerini beyan etmeye mecbur serbest meslek erbabı",
+      "D": "Zirai kazancını bilanço esasına göre tespit eden çiftçiler",
+      "E": "Kazancı basit usulde tespit edilen esnaf"
     },
-    "correctAnswer": "A",
-    "explanation": "VUK'ta tanımlanan vergi ve hesap hataları düzeltme hükümleriyle idari aşamada giderilebilir.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"213 sayılı Vergi Usul Kanunu m.116-126"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "vergi hatası"],
+    "correctAnswer": "E",
+    "explanation": "Md. 94'e göre kamu idareleri, ticaret şirketleri, iş ortaklıkları, dernek ve vakıflar ile bunların iktisadi işletmeleri, gerçek gelirlerini beyana mecbur ticaret ve serbest meslek erbabı ile zirai kazancını bilanço veya zirai işletme hesabı esasına göre tespit eden çiftçiler tevkifat yapar. Basit usul mükellefleri sayılmamıştır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "GVK md. 94"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-016",
     "lessonId": "gelir_vergisi",
-    "topicId": "gelir_unsurlari",
-    "question": "Bir gerçek kişinin sahip olduğu işyerini kiraya vermesi karşılığında elde ettiği gelir, Gelir Vergisi Kanunu bakımından hangi gelir unsurudur?",
+    "topicId": "beyan_ve_tespit",
+    "question": "Serbest muhasebeci mali müşavir Bayan (M), 2026 yılının ikinci geçici vergi dönemine ilişkin yükümlülüklerini planlamaktadır.\n\n193 sayılı Gelir Vergisi Kanunu’nun 2026 yılında yürürlükte olan hükümlerine göre, geçici vergiye ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
     "choices": {
-      "A": "Ücret",
-      "B": "Gayrimenkul sermaye iradı",
-      "C": "Zirai kazanç",
-      "D": "Menkul sermaye iradı",
-      "E": "Serbest meslek kazancı"
+      "A": "Geçici vergi üçer aylık dönem kazançları üzerinden hesaplanır.",
+      "B": "Yıllara yaygın inşaat kazançları da geçici vergi matrahına dahil edilir.",
+      "C": "Oran tarifenin ilk gelir dilimine uygulanan orandır.",
+      "D": "Beyan dönemi izleyen ikinci ayın on dördüncü günü akşamına kadar yapılır.",
+      "E": "Hesaplanan geçici vergi, cari yılın gelir vergisinden mahsup edilir."
     },
     "correctAnswer": "B",
-    "explanation": "GVK'da belirtilen mal ve hakların kiraya verilmesinden doğan gelirler gayrimenkul sermaye iradı niteliğindedir.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"193 sayılı Gelir Vergisi Kanunu m.70"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "gelir unsurları"],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "explanation": "Mük. 120'ye göre ticari kazanç sahipleri ve serbest meslek erbabı üçer aylık dönem kazançları üzerinden ilk dilim oranında geçici vergi öder; beyan izleyen ikinci ayın 14'ü, ödeme 17'si akşamına kadardır. Md. 42 kapsamındaki yıllara yaygın inşaat kazançları geçici vergi matrahına dahil edilmez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "GVK mük. 120"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -99,95 +135,527 @@
     "id": "demo-vergi-017",
     "lessonId": "gelir_vergisi",
     "topicId": "beyan_ve_tespit",
-    "question": "Ticari kazancın bilanço esasına göre tespitinde temel hareket noktası aşağıdakilerden hangisidir?",
+    "question": "Tüccar Bay (N), 2020 yılında büyük bir ticari zarar etmiş ve bu zararı sonraki yıllarda kısmen mahsup edebilmiştir.\n\n193 sayılı Gelir Vergisi Kanunu’na göre, zarar mahsubuna ilişkin aşağıdaki ifadelerden hangisi yanlıştır?",
     "choices": {
-      "A": "Yalnız kasaya giren nakit",
-      "B": "Dönem sonu ve dönem başı öz sermaye farkı",
-      "C": "Sadece ortakların çektiği değerler",
-      "D": "Yalnız satış faturalarının toplamı",
-      "E": "İşletmenin rayiç değeri"
+      "A": "Ticari faaliyetten doğan zarar diğer gelir unsurlarından mahsup edilebilir.",
+      "B": "Mahsup edilemeyen zararlar süre sınırı olmaksızın sonraki yıllara devreder.",
+      "C": "Mahsup edilemeyen zarar beş yıl süreyle sonraki yıllara devredebilir.",
+      "D": "Türkiye’de istisna edilen kazançlarla ilgili yurt dışı zararlar mahsup edilmez.",
+      "E": "Zararların mahsubu yıllık beyanname üzerinde yapılır."
     },
     "correctAnswer": "B",
-    "explanation": "Bilanço esasında ticari kazanç, dönem sonu ve dönem başı öz sermaye değerleri arasındaki olumlu farktan hareketle; eklenen ve çekilen değerler de dikkate alınarak belirlenir.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"193 sayılı Gelir Vergisi Kanunu m.38"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "ticari kazanç"],
+    "explanation": "Md. 88'e göre gelir unsurlarından doğan zararlar diğer unsurların kazanç ve iratlarından indirilir; kapatılamayan zararlar beş yıldan fazla nakledilmemek şartıyla sonraki yılların gelirinden indirilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "GVK md. 88"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-018",
     "lessonId": "kurumlar_vergisi",
-    "topicId": "kurumlar_mukellefiyeti",
-    "question": "Kanuni merkezi veya iş merkezi Türkiye'de bulunan bir kurumun vergilendirilme biçimi hangisidir?",
+    "topicId": "kurum_kazanci",
+    "question": "Tam mükellef (ABC) A.Ş., Hollanda’daki bir limited şirketin ödenmiş sermayesinin %60’ına sahiptir. Şirket 2025 yılında bu iştirakinden 2.000.000 ₺ kâr payı almış ve beyanname verme süresi içinde Türkiye’ye transfer etmiştir; iştirakin vergi yükü şartı sağlanmamaktadır. Kâr payı dahil ticari bilanço kârı 6.000.000 ₺’dir; başka düzeltme yoktur.\n\n5520 sayılı Kurumlar Vergisi Kanunu’nun 2026 yılında yürürlükte olan hükümlerine göre, (ABC) A.Ş.’nin 2025 hesap dönemi kurumlar vergisi matrahı kaç ₺’dir?",
     "choices": {
-      "A": "Yalnız Türkiye'de elde ettiği kazançlar üzerinden dar mükellefiyet",
-      "B": "Hiçbir kazancı üzerinden vergi alınmaması",
-      "C": "Türkiye içinde ve dışında elde ettiği kazançların tamamı üzerinden tam mükellefiyet",
-      "D": "Yalnız dağıtılan kâr payı üzerinden mükellefiyet",
-      "E": "Sadece KDV mükellefiyeti"
+      "A": "4.000.000",
+      "B": "4.500.000",
+      "C": "5.000.000",
+      "D": "5.500.000",
+      "E": "6.000.000"
     },
     "correctAnswer": "C",
-    "explanation": "Kanuni veya iş merkezinden herhangi biri Türkiye'de bulunan kurumlar tam mükelleftir ve gerek Türkiye içinde gerek dışında elde ettikleri kazançların tamamı üzerinden vergilendirilir.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"5520 sayılı Kurumlar Vergisi Kanunu m.3"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "tam mükellefiyet"],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "explanation": "Md. 5/1-b'ye eklenen hükme göre yurt dışı iştirakin ödenmiş sermayesinin en az %50'sine sahip olunması ve kazancın beyanname süresine kadar transferi şartıyla, diğer şartlar aranmaksızın iştirak kazancının %50'si istisnadır: 6.000.000 − 1.000.000 = 5.000.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KVK md. 5/1-b"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-019",
-    "lessonId": "katma_deger_vergisi",
-    "topicId": "kdv_teslim_ve_indirim",
-    "question": "Aşağıdaki işlemlerden hangisi genel kural olarak Katma Değer Vergisinin konusuna girer?",
+    "lessonId": "kurumlar_vergisi",
+    "topicId": "kurum_kazanci",
+    "question": "Mobilya üreticisi (DEF) A.Ş.’nin 2025 hesap dönemi sonunda öz kaynakları 4.000.000 ₺, kullandığı yabancı kaynakları 10.000.000 ₺’dir. Yatırım maliyetine eklenmeyen finansman giderleri 2.000.000 ₺’dir. (Cumhurbaşkanınca belirlenen oran %10 olarak alınacaktır.)\n\n5520 sayılı Kurumlar Vergisi Kanunu’na göre, (DEF) A.Ş.’nin finansman gideri kısıtlaması nedeniyle kanunen kabul edilmeyen gider olarak dikkate alacağı tutar kaç ₺’dir?",
     "choices": {
-      "A": "Türkiye dışında gerçekleşen ve Türkiye ile ilgisi bulunmayan teslim",
-      "B": "Bir kişinin evindeki kullanılmış eşyayı arızi olarak komşusuna vermesi",
-      "C": "Karşılıksız miras intikali",
-      "D": "Türkiye'de ticari faaliyet kapsamında yapılan mal teslimi",
-      "E": "Bir çalışanın işverenden ücret alması"
+      "A": "60.000",
+      "B": "80.000",
+      "C": "120.000",
+      "D": "200.000",
+      "E": "1.200.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Türkiye'de ticari, sınai, zirai ve serbest meslek faaliyeti çerçevesinde yapılan teslim ve hizmetler KDV'nin konusuna girer.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"3065 sayılı Katma Değer Vergisi Kanunu m.1"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "KDV konusu"],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "correctAnswer": "C",
+    "explanation": "Md. 11/1-i'ye göre yabancı kaynakların öz kaynakları aşan kısmına (6.000.000 ₺) isabet eden finansman gideri 2.000.000 × 6/10 = 1.200.000 ₺'dir; bunun %10'u olan 120.000 ₺ indirilemez.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KVK md. 11/1-i"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-vergi-020",
+    "lessonId": "kurumlar_vergisi",
+    "topicId": "kurum_kazanci",
+    "question": "Tam mükellef (GHI) A.Ş., 2025 yılının Kasım ayında satın aldığı tam mükellef (JKL) A.Ş. hisselerinden aynı yılın Aralık ayında kâr payı almıştır; payı %2’dir.\n\n5520 sayılı Kurumlar Vergisi Kanunu’na göre, bu kâr payına iştirak kazançları istisnası uygulanmasına ilişkin aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Elde tutma süresi ve iştirak oranı aranmadan istisnadır.",
+      "B": "Hisse bir yıl elde tutulmadığından istisna uygulanmaz.",
+      "C": "İştirak oranı %10’un altında olduğundan istisna uygulanmaz.",
+      "D": "Kâr payının sadece %75’i istisnadır.",
+      "E": "İstisna ancak kâr payı sermayeye eklenirse uygulanır."
+    },
+    "correctAnswer": "A",
+    "explanation": "Md. 5/1-a'ya göre tam mükellef kurumların sermayesine katılımdan elde edilen kâr payları istisnadır; yurt dışı iştiraklerden farklı olarak elde tutma süresi veya asgari iştirak oranı şartı yoktur.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KVK md. 5/1-a"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-021",
+    "lessonId": "kurumlar_vergisi",
+    "topicId": "kurumlar_mukellefiyeti",
+    "question": "Hesap dönemi takvim yılı olan (MNO) A.Ş., 2025 hesap dönemine ait kurumlar vergisi beyannamesini hazırlamaktadır; şirkete özel hesap dönemi tayin edilmemiştir.\n\n5520 sayılı Kurumlar Vergisi Kanunu’na göre, beyanname hangi süre içinde verilmelidir?",
+    "choices": {
+      "A": "1-25 Nisan 2026 tarihleri arasında",
+      "B": "1-31 Mart 2026 tarihleri arasında",
+      "C": "1-25 Şubat 2026 tarihleri arasında",
+      "D": "1-30 Mayıs 2026 tarihleri arasında",
+      "E": "1-26 Ocak 2026 tarihleri arasında"
+    },
+    "correctAnswer": "A",
+    "explanation": "Md. 14/3'e göre kurumlar vergisi beyannamesi hesap döneminin kapandığı ayı izleyen dördüncü ayın birinci gününden yirmi beşinci günü akşamına kadar verilir; Aralık'ı izleyen dördüncü ay Nisan'dır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KVK md. 14"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-022",
+    "lessonId": "katma_deger_vergisi",
+    "topicId": "kdv_mekanizmasi",
+    "question": "Tekstil toptancısı (PRS) A.Ş.’nin 2026/Nisan dönemi işlemleri: yurt içi teslimler 1.200.000 ₺ (KDV hariç); kanuni defterlere kaydedilen alış faturalarındaki KDV toplamı 180.000 ₺ olup bunun 40.000 ₺’si şirket müdürünün kullanımı için satın alınan binek otomobile aittir; ayrıca depremde zayi olan ve KDV’si daha önce indirilmiş emtiaya ait 5.000 ₺ KDV bulunmaktadır. (KDV oranı %20 olarak alınacaktır.)\n\n3065 sayılı Katma Değer Vergisi Kanunu’na göre, (PRS) A.Ş.’nin 2026/Nisan dönemi ödenecek KDV tutarı kaç ₺’dir?",
+    "choices": {
+      "A": "60.000",
+      "B": "95.000",
+      "C": "100.000",
+      "D": "105.000",
+      "E": "140.000"
+    },
+    "correctAnswer": "C",
+    "explanation": "Hesaplanan KDV 1.200.000 × %20 = 240.000 ₺. Md. 30/b'ye göre binek otomobil KDV'si (40.000 ₺) indirilemez; md. 30/c'ye göre depremde zayi olan malların KDV'si için düzeltme gerekmez: 240.000 − 140.000 = 100.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KDVK md. 29, 30"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-023",
     "lessonId": "katma_deger_vergisi",
     "topicId": "kdv_teslim_ve_indirim",
-    "question": "Bir vergilendirme döneminde hesaplanan KDV 15.000 TL, aynı dönemde indirim hakkı bulunan KDV 9.000 TL'dir. Başka bir unsur yoksa ödenecek KDV kaç TL'dir?",
+    "question": "İmalatçı (TUV) Ltd. Şti. 2026/Mayıs döneminde yurt içinde 500.000 ₺ normal teslim, ihracatçıya ihraç kaydıyla 1.500.000 ₺ teslim yapmıştır. Dönemin indirilecek KDV’si 250.000 ₺’dir. (KDV oranı %20 olarak alınacaktır.)\n\n3065 sayılı Katma Değer Vergisi Kanunu’na göre, şirketin 2026/Mayıs döneminde tecil edilecek KDV tutarı kaç ₺’dir?",
     "choices": {
-      "A": "24.000 TL",
-      "B": "15.000 TL",
-      "C": "9.000 TL",
-      "D": "0 TL",
-      "E": "6.000 TL"
+      "A": "100.000",
+      "B": "150.000",
+      "C": "250.000",
+      "D": "300.000",
+      "E": "400.000"
+    },
+    "correctAnswer": "B",
+    "explanation": "Tecil edilebilir KDV ihraç kaydıyla teslim bedeline isabet eden vergidir: 1.500.000 × %20 = 300.000 ₺. Ödenmesi gereken KDV (2.000.000 × %20) − 250.000 = 150.000 ₺; tecil edilecek KDV ikisinden küçük olan 150.000 ₺'dir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KDVK md. 11/1-c"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-024",
+    "lessonId": "katma_deger_vergisi",
+    "topicId": "kdv_teslim_ve_indirim",
+    "question": "Emekli Bay (P)’nin ticari işletmesi yoktur; sahibi olduğu bir daireyi konut olarak, bir dükkânı da işyeri olarak kiraya vermiştir. Ayrıca bir ticaret şirketi, aktifindeki bir binayı kiraya vermiştir.\n\n3065 sayılı Katma Değer Vergisi Kanunu’na göre, bu kiralamalardan hangileri KDV’den istisnadır?",
+    "choices": {
+      "A": "Sadece Bay (P)’nin daire kiralaması",
+      "B": "Sadece şirketin bina kiralaması",
+      "C": "Kiralamaların tamamı",
+      "D": "Kiralamaların tamamı vergilidir",
+      "E": "Bay (P)’nin iki kiralaması"
     },
     "correctAnswer": "E",
-    "explanation": "İndirim mekanizmasına göre 15.000 - 9.000 = 6.000 TL ödenecek KDV oluşur.",
-    "source": {"kind":"generated","styleRef":"2026/1 test biçimi","legislationRef":"3065 sayılı Katma Değer Vergisi Kanunu m.29"},
-    "tags": ["Özgün Soru", "2026 Formatı", "Vergi Mevzuatı", "hesaplama"],
+    "explanation": "Md. 17/4-d'ye göre iktisadi işletmelere dahil olmayan gayrimenkullerin kiralanması istisnadır; bu istisna konut veya işyeri ayrımı yapmaz. Ticari işletmeye dahil binanın kiralanması KDV'ye tabidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KDVK md. 17/4-d"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-025",
+    "lessonId": "katma_deger_vergisi",
+    "topicId": "kdv_teslim_ve_indirim",
+    "question": "Bir belediye, kendisine ait bir sosyal tesiste halka açık restoran işletmekte ve yemek satışı yapmaktadır.\n\n3065 sayılı Katma Değer Vergisi Kanunu’na göre, bu satışların KDV karşısındaki durumuna ilişkin aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Belediyelerin tüm faaliyetleri KDV’den istisnadır.",
+      "B": "Satışlar kamu hizmeti olduğundan KDV’nin konusu dışındadır.",
+      "C": "Sadece belediye meclis kararı varsa KDV hesaplanır.",
+      "D": "KDV’yi restoranın müşterileri sorumlu sıfatıyla öder.",
+      "E": "Belediyelerin ticari nitelikteki teslimleri KDV’ye tabidir."
+    },
+    "correctAnswer": "E",
+    "explanation": "Md. 1/3-g'ye göre belediyelere ait veya bunlarca işletilen müesseselerin ticari, sınai, zirai ve mesleki nitelikteki teslim ve hizmetleri KDV'ye tabidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "KDVK md. 1/3-g"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-026",
+    "lessonId": "vergi_usul_kanunu",
+    "topicId": "vergi_cezalari",
+    "question": "(VYZ) A.Ş. adına ikmalen 80.000 ₺ vergi tarh edilmiş ve 80.000 ₺ vergi ziyaı cezası kesilmiştir. Şirket ihbarnamenin tebliğinden itibaren otuz gün içinde başvurarak vergiyi ve indirimli cezayı vadesinde ödeyeceğini bildirmiş ve ödemiştir; dava açmamıştır.\n\n213 sayılı Vergi Usul Kanunu’nun 2026 yılında yürürlükte olan hükümlerine göre, şirketin ödediği toplam tutar kaç ₺’dir?",
+    "choices": {
+      "A": "80.000",
+      "B": "100.000",
+      "C": "120.000",
+      "D": "140.000",
+      "E": "160.000"
+    },
+    "correctAnswer": "C",
+    "explanation": "Md. 376'ya göre vergi ve cezanın yarısını süresinde ödeyeceğini bildirip ödeyen mükellefin cezasının yarısı indirilir: 80.000 + 40.000 = 120.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 376"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-027",
+    "lessonId": "vergi_usul_kanunu",
+    "topicId": "vergi_cezalari",
+    "question": "Vergi incelemesinde, bir işletmenin ödeme kaydedici cihazının yetkisiz kişilerce mührünün kaldırıldığı ve yazılımının satışları eksik gösterecek şekilde değiştirildiği tespit edilmiştir.\n\n213 sayılı Vergi Usul Kanunu’na göre, bu fiile ilişkin aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Fiil sadece özel usulsüzlük cezasını gerektirir.",
+      "B": "Fiil ancak vergi ziyaı doğarsa cezalandırılır.",
+      "C": "Fiil ikinci derece usulsüzlüktür.",
+      "D": "Fiil için sadece cihazın satıcısı sorumludur.",
+      "E": "Fiil kaçakçılık suçudur."
+    },
+    "correctAnswer": "E",
+    "explanation": "Md. 359/ç'ye göre Bakanlıkça yetkilendirilmediği hâlde ödeme kaydedici cihaz mührünü kaldıran, donanım veya yazılımını değiştirenler kaçakçılık suçu kapsamında hapis cezası ile cezalandırılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 359"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-028",
+    "lessonId": "vergi_usul_kanunu",
+    "topicId": "vergi_cezalari",
+    "question": "Bay (R), 2025 yılı gelir vergisi beyannamesinde bir kira gelirini eksik beyan ettiğini, hakkında herhangi bir inceleme veya ihbar yokken kendiliğinden dilekçeyle vergi dairesine bildirmiştir.\n\n213 sayılı Vergi Usul Kanunu’na göre, Bay (R)’nin pişmanlıktan yararlanabilmesi için aşağıdakilerden hangisi gereklidir?",
+    "choices": {
+      "A": "Beyanını 30 gün içinde düzeltmesi, ödeme için süre olmaması",
+      "B": "Vergi dairesi müdürünün yazılı onayını alması",
+      "C": "Uzlaşma komisyonuna başvurması",
+      "D": "Beyanını 15 gün içinde düzeltip vergiyi zamla ödemesi",
+      "E": "Vergiyi bir yıl içinde taksitle ödemesi"
+    },
+    "correctAnswer": "D",
+    "explanation": "Md. 371'e göre eksik veya yanlış beyan haber verme tarihinden itibaren 15 gün içinde düzeltilmeli ve vergi pişmanlık zammıyla aynı süre içinde ödenmelidir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 371"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-029",
+    "lessonId": "vergi_usul_kanunu",
+    "topicId": "vergilendirme_sureci",
+    "question": "(ZAB) Ltd. Şti., tahsil dairesindeki toplam 2.400.000 ₺ vergi borcunun tecilini talep etmiştir. (Kanundaki teminat tutarlarının Cumhurbaşkanınca değiştirilmediği kabul edilecektir.)\n\n6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun’a göre, şirketin göstermesi gereken teminat tutarı kaç ₺’dir?",
+    "choices": {
+      "A": "0",
+      "B": "700.000",
+      "C": "1.200.000",
+      "D": "1.400.000",
+      "E": "2.400.000"
+    },
+    "correctAnswer": "B",
+    "explanation": "6183 md. 48'e göre tecil edilen borçların toplamı bir milyon Türk lirasını aşarsa gösterilmesi zorunlu teminat, bir milyon Türk lirasını aşan kısmın yarısıdır: (2.400.000 − 1.000.000) / 2 = 700.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "6183 md. 48"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-030",
+    "lessonId": "turk_vergi_sistemi",
+    "topicId": "vergi_sistemi_yapisi",
+    "question": "(CDE) A.Ş., bir işyerini aylık 50.000 ₺ bedelle 12 ay süreyle kiralamış ve kira sözleşmesini iki nüsha olarak düzenlemiştir. (Kira sözleşmelerinde oran binde 1,89 olarak alınacaktır.)\n\n488 sayılı Damga Vergisi Kanunu’na göre, bu sözleşme için ödenecek damga vergisi kaç ₺’dir?",
+    "choices": {
+      "A": "94,50",
+      "B": "189",
+      "C": "1.134",
+      "D": "2.268",
+      "E": "5.688"
+    },
+    "correctAnswer": "C",
+    "explanation": "(1) sayılı tabloya göre kira sözleşmelerinde vergi, sözleşme süresine göre kira bedeli üzerinden alınır; md. 5'e göre nispi vergiye tabi kâğıtların sadece bir nüshası vergilendirilir: 600.000 × binde 1,89 = 1.134 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "DVK md. 1, (1) sayılı tablo"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-031",
+    "lessonId": "turk_vergi_sistemi",
+    "topicId": "vergi_sistemi_yapisi",
+    "question": "Bay (S), 2026 yılının Şubat ayında Türkiye’de vefat etmiştir. Tüm mirasçıları ölüm tarihinde Türkiye’de bulunmaktadır.\n\n7338 sayılı Veraset ve İntikal Vergisi Kanunu’na göre, mirasçılar beyannameyi ölüm tarihini takip eden kaç ay içinde vermelidir?",
+    "choices": {
+      "A": "1",
+      "B": "3",
+      "C": "4",
+      "D": "6",
+      "E": "8"
+    },
+    "correctAnswer": "C",
+    "explanation": "VİVK md. 9/1-a'ya göre ölüm Türkiye'de vuku bulmuş ve mükellefler Türkiye'de ise beyanname ölüm tarihini takip eden dört ay içinde verilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VİVK md. 9"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026-07-14",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-vergi-032",
+    "lessonId": "turk_vergi_sistemi",
+    "topicId": "vergi_sistemi_yapisi",
+    "question": "Almanya’da düzenlenip imzalanan bir alım-satım sözleşmesi, Türkiye’de bir tapu müdürlüğüne ibraz edilerek hükmünden yararlanılmıştır.\n\n488 sayılı Damga Vergisi Kanunu’na göre, bu kâğıdın damga vergisini kim öder?",
+    "choices": {
+      "A": "Kâğıdı Türkiye’de resmi daireye ibraz eden",
+      "B": "Sözleşmeyi Almanya’da imzalayan yabancı taraf",
+      "C": "Tapu müdürlüğü",
+      "D": "Almanya’daki Türkiye konsolosluğu",
+      "E": "Kâğıt yurt dışında düzenlendiğinden vergi alınmaz"
+    },
+    "correctAnswer": "A",
+    "explanation": "DVK md. 1 ve 3'e göre yabancı memleketlerde düzenlenen kâğıtlar Türkiye'de resmi dairelere ibraz edildiğinde vergiye tabi olur ve vergiyi bu kâğıtları ibraz edenler, devir veya ciro işlemi yapanlar ya da hükümlerinden faydalananlar öder.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "DVK md. 3"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Vergi Mevzuatı ve Uygulaması"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-29T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "GVK, KVK (7582 dahil), KDVK (7577 dahil), VUK (7524, 7587 dahil), 6183, İYUK, DVK, VİVK, EVK, MTVK, ÖTVK güncel metinleri; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-29T00:00:00Z",
     "isPremium": false,
     "isActive": true
   }

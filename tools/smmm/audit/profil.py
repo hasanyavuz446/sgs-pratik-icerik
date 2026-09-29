@@ -74,7 +74,7 @@ OLUMSUZ = re.compile(
 # (Türkçe ünsüz yumuşaması: Standart → Standardı), "Etik Kurallar'a göre".
 ATIF = re.compile(
     r"\d{3,4}\s+sayılı|\b(?:Kanun|Yönetmeli[kğ]|Tebliğ|Yönerge|Esaslar|Standar[td]|Tüzü[kğ]|"
-    r"Kararname|KHK|Etik İlkeler|Etik Kurallar)\w*|"
+    r"Kararname|KHK|Etik İlkeler|Etik Kurallar|Anayasa)\w*|"
     r"\b(?:TMS|TFRS|TDS|BDS|KYS|KGK|SPK|VUK|GVK|KVK|KDVK|TTK|TBK|İYUK|THP|TDHP|MSUGT)\b",
 )
 HANGISI = re.compile(r"aşağıdaki(?:lerden)?\s+(?:\S+\s+){0,3}?hangi|ifadelerden hangi|hangisi(?:dir)?\b", re.I)

@@ -52,6 +52,17 @@ def sayi_degeri(metin):
     return float(m.group(0).replace(".", "").replace(",", "."))
 
 
+def _tarihsiz(metin):
+    """Karşılaştırma için kayıtların tarih alanlarını çıkarır (updatedAt, sourceUpdatedAt)."""
+    if not metin:
+        return None
+    try:
+        veri = json.loads(metin)
+    except ValueError:
+        return metin
+    return [{k: v for k, v in q.items() if k not in ("updatedAt", "sourceUpdatedAt")} for q in veri]
+
+
 class Paket:
     def __init__(self, dosya, *, lesson, topic, konu_adi, seed, surum,
                  havuz="konu", kontrol=None, style="2026 SMMM beş seçenekli test", ek_idler=()):
@@ -251,15 +262,18 @@ class Paket:
         rapor = self.kapilar(sorular)
         metin = json.dumps(sorular, ensure_ascii=False, indent=2) + "\n"
         hedef = os.path.join(ROOT, "content", "yeterlilik", self.dosya)
+        mevcut = open(hedef, encoding="utf-8").read() if os.path.exists(hedef) else ""
+        # Kontrol tarihi (updatedAt) her gün değişir; içerik aynıysa dosya "aynı" sayılır ve tarihi korunur.
+        ayni = _tarihsiz(mevcut) == _tarihsiz(metin)
         if args.check:
-            mevcut = open(hedef, encoding="utf-8").read() if os.path.exists(hedef) else ""
-            if mevcut != metin:
+            if not ayni:
                 print(f"FARKLI: {self.dosya}")
                 return 1
             print(f"aynı: {self.dosya}")
             return 0
-        with open(hedef, "w", encoding="utf-8") as f:
-            f.write(metin)
+        if not ayni:
+            with open(hedef, "w", encoding="utf-8") as f:
+                f.write(metin)
         if os.path.isdir(APP):
             shutil.copyfile(hedef, os.path.join(APP, self.dosya))
         n, oncul, sorunlar = audit.audit(hedef)

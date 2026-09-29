@@ -268,6 +268,11 @@ class AuditTest(unittest.TestCase):
             self.assertTrue(audit.profil.olc(stem, {"A": "x"})["atif"], stem)
         self.assertFalse(audit.profil.olc("Aşağıdakilerden hangisi doğrudur?", {"A": "x"})["atif"])
 
+    def test_constitution_citation_counts(self):
+        # Vergi hukuku ilkeleri: "Türkiye Cumhuriyeti Anayasası’na göre" mevzuat atfıdır.
+        self.assertTrue(audit.profil.olc("Türkiye Cumhuriyeti Anayasası’na göre, vergilendirmeye ilişkin "
+                                         "aşağıdakilerden hangisi doğrudur?", {"A": "x"})["atif"])
+
     def test_same_stem_in_two_files_is_fatal(self):
         left = clean_pack()
         right = clean_pack()
