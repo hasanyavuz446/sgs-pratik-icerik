@@ -550,6 +550,12 @@ class Fta:
 
     def uyaran(self, u):
         assert u["id"].startswith(self.onek), u["id"]
+        # Dört ve daha fazla sütunlu tablo telefonda yana kaydırılır; uygulamanın eski sürümleri bunu kartta
+        # göstermediğinden açıklamaya (tablonun dışında kalır) ipucu eklenir.
+        sutun = max((l.strip().count("|") - 1 for l in u.get("bodyMarkdown", "").split("\n") if l.strip().startswith("|")),
+                    default=0)
+        if u.get("kind") == "table" and sutun >= 4 and "yana kaydır" not in u.get("caption", ""):
+            u = {**u, "caption": (u.get("caption", "") + " Tablonun tamamını görmek için yana kaydırınız.").strip()}
         assert all(x["id"] != u["id"] for x in self.uyaranlar)
         self.uyaranlar.append(u)
         return u["id"]

@@ -59,7 +59,7 @@ class Vaka:
     def tablo(self):
         satir = [("Hazır Değerler", self.hd), ("Ticari Alacaklar", self.k["ta"]), ("Stoklar", self.k["stok"]),
                  ("Peşin Ödenmiş Giderler", self.k["pod"]), ("Maddi Duran Varlıklar (brüt)", self.k["mdv"]),
-                 ("Birikmiş Amortismanlar (-)", self.k["bam"]), ("AKTİF TOPLAMI", self.aktif),
+                 ("Birikmiş Amortisman (-)", self.k["bam"]), ("AKTİF TOPLAMI", self.aktif),
                  ("Ticari Borçlar", self.k["tb"]), ("Ödenecek Vergiler", self.k["ov"]),
                  ("Gider Tahakkukları", self.k["gt"]), ("Kısa Vadeli Banka Kredileri", self.k["kv"]),
                  ("Uzun Vadeli Banka Kredileri", self.k["uv"]), ("Ödenmiş Sermaye", self.k["sermaye"]),
@@ -70,15 +70,16 @@ class Vaka:
              f"| Net Satışlar | {tl(self.ns)} |\n| Satışların Maliyeti (-) | {tl(self.smm)} |\n"
              f"| Faaliyet Giderleri (-) | {tl(self.fg)} |\n| Finansman Giderleri (-) | {tl(self.faiz)} |\n"
              f"| Vergi Gideri (-) | {tl(self.vergi)} |\n| Dönem Net Kârı | {tl(self.nk)} |")
-        ek = (f"**Ek bilgiler:** Faaliyet giderlerinin {tl(self.amort)} ₺’si amortismandır. Yıl içinde maddi duran "
+        ek = (f"Ek bilgiler: Faaliyet giderlerinin {tl(self.amort)} ₺’si amortismandır. Yıl içinde maddi duran "
               f"varlık satışı olmamıştır. Finansman giderlerinin tamamı yıl içinde ödenmiş olup işletme faaliyetlerinde "
               f"sınıflandırılmaktadır. Yıl içinde {tl(self.temettu)} ₺ kâr payı nakden ödenmiştir"
               + (f"; ödenmiş sermaye nakden {tl(self.d['sermaye'])} ₺ artırılmıştır." if self.d["sermaye"] else "."))
-        return b + "\n\n" + g + "\n\n" + ek
+        self.ek = ek
+        return b + "\n\n" + g
 
     def uyaran(self, sid):
         return {"id": sid, "title": f"{self.ad} — Nakit Akışı Verileri", "kind": "table", "bodyMarkdown": self.tablo(),
-                "caption": f"{self.ad}’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız."}
+                "caption": f"{self.ek} {self.ad}’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız."}
 
     # ------------------------------------------------------------------ sorular
     def sorular(self):

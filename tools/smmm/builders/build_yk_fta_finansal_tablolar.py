@@ -166,8 +166,8 @@ ek = (f"2025 yılında nakit karşılığı {tl(art)} ₺ sermaye artırımı ya
       f"dağıtılmıştır. Yılın net kârı {tl(nkc)} ₺’dir; binaların yeniden değerlemesinden vergi sonrası {tl(dkg)} ₺ "
       "değer artışı diğer kapsamlı gelir olarak muhasebeleştirilmiştir.")
 S_C = F.uyaran({"id": "yet-fta-tablo-mzc", "title": "MZC A.Ş. — Öz Kaynak Hareketleri", "kind": "table",
-                "bodyMarkdown": ozc + "\n\n" + ek,
-                "caption": "MZC A.Ş.’ye ait soruları bu bilgilere ve TMS 1 hükümlerine göre cevaplayınız."})
+                "bodyMarkdown": ozc,
+                "caption": ek + " MZC A.Ş.’ye ait soruları bu bilgilere ve TMS 1 hükümlerine göre cevaplayınız."})
 C = [
     ("31 Aralık 2025 öz kaynak toplamı", Hesap(sum(son.values()), "tutar",
      [sum(son.values()) - dkg, sum(son.values()) + tem, sum(bas.values()) + nkc, sum(son.values()) - art],
