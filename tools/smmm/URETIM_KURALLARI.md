@@ -224,6 +224,26 @@ Hukuk dersinde (2026-09-30) öğrenilenler:
 - Bölüm havuzunu kirleten eski aktif demoları (`demo_questions.json`) pasifleştir; bölüm
   testinin 20'ye tamamlanması için `ek_idler` ile yeni `demo-<ders>-0NN` kimliği ver.
 
+Finansal Muhasebe dersinde (2026-09-30) öğrenilenler:
+- Gerçek bant (40 soru): medyan kök 270, yevmiye şıklı %27,5, veri/tablo %47,5, atıf %15,
+  olumsuz %5, öncül %0, sayısal şık %5. Çıplak tanım neredeyse yok; kavram bile olay ve tutarla
+  sorulur. Şıkların çoğu tam yevmiye kaydı ya da "X hesabının borç/alacak tarafına N ₺ kaydedilir".
+- Yevmiye ve taraf şıkları `builders/fm_ortak.py` ile kurulur: `kayit()` uygulamanın yevmiye
+  biçimini (kod çitli, alacak satırı dört boşluk girintili) üretir ve borç=alacak eşitliğini
+  kuruşta denetler; float kur çarpımı artıkları kuruşta eşitlenir. Bu denetim gerçek hata yakaladı.
+- Aynı adlı THP hesapları (257/268, 263/750, 370/691, 120/220, 121/221, 300/400, 372/472)
+  kodsuz `taraf()` şıklarında birebir aynı metne düşer ("5 farklı şık yok"). Soru bu ayrımı
+  ölçüyorsa kodlu `kayit()` biçimi kullan.
+- Sayısal verilerde çeldiricilerin doğru değere denk gelip gelmediğini kontrol et: ağırlıklı
+  ortalama tam 21 ₺ çıkınca "3.200 × 21" çeldiricisi doğru şıkla aynı oldu; veriyi değiştir.
+- Yevmiye payı kolayca %50'yi aşar (bant +%23 tolerans). Tek bir tutarı ölçen kayıtları
+  "taraf" biçimine çevirerek %35-40'a indir.
+- Atıf: TMS/TFRS konusunda da kökte standart adını her soruda anma; olay üzerinden sor, yaklaşık
+  %15-20 oranında "TMS 16’ya göre" gibi ifade kullan. "Standartları" büyük harfle ATIF sayılır.
+- VUK md. 219 kayıt süresi (10 gün, belge muhasebeciye verilince 45 gün üst sınır) gibi ikili
+  kurallarda olayı iki süreyi de aşacak ya da açıkça birine düşecek biçimde kur; aradaki
+  gecikme şıkkı tartışmalı yapar.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve

@@ -3,32 +3,32 @@
     "id": "topic-finansal-stok-001",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "TMS 2'deki stok tanımına göre aşağıdaki varlıkları değerlendiriniz.\n\nI. Olağan iş akışında satılmak üzere elde tutulan ticari mallar\n\nII. Satılmak üzere üretilmekte olan yarı mamuller\n\nIII. Üretim veya hizmet sunumunda tüketilecek ilk madde ve malzemeler\n\nBuna göre hangileri doğrudur?",
+    "question": "Aralıklı envanter yöntemini ve ilk giren ilk çıkar (FIFO) maliyet formülünü uygulayan işletmenin yıl içi hareketleri şöyledir: dönem başı stok 200 adet × 50 ₺; mart alışı 300 adet × 55 ₺; eylül alışı 500 adet × 60 ₺. Yıl içinde toplam 700 adet satılmış, yıl sonu sayımında 300 adet bulunmuştur.\n\nDönem sonunda satılan malın maliyetine ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "Yalnız III",
-      "C": "I ve II",
-      "D": "I, II ve III",
-      "E": "Yalnız I"
+      "A": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 18.000\n    153 TİCARİ MALLAR 18.000\n```",
+      "B": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 39.550\n    153 TİCARİ MALLAR 39.550\n```",
+      "C": "```text\n153 TİCARİ MALLAR 38.500\n    621 SATILAN TİCARİ MALLAR MALİYETİ 38.500\n```",
+      "D": "```text\n620 SATILAN MAMULLER MALİYETİ 38.500\n    152 MAMULLER 38.500\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 38.500\n    153 TİCARİ MALLAR 38.500\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Satış için tutulan mallar, üretim sürecindeki varlıklar ve üretimde veya hizmette tüketilecek ilk madde ve malzemeler stok tanımına girer.",
+    "correctAnswer": "E",
+    "explanation": "Mal mevcudu 56.500 ₺’dir. FIFO’da eldeki 300 adet en son alışlardan kalır: 300 × 60 = 18.000 ₺. SMM 56.500 − 18.000 = 38.500 ₺ olup 621 borç, 153 alacak yazılır. Ortalama maliyet 39.550 ₺ verirdi.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - stok tanımı"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: FIFO, 621/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -36,32 +36,32 @@
     "id": "topic-finansal-stok-002",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "TMS 2 uyarınca stoklar finansal tablolarda hangi iki tutardan düşük olanıyla ölçülür?",
+    "question": "Dönemsel ağırlıklı ortalama maliyet formülünü kullanan işletmenin dönem başı stoku 400 adet × 30 ₺’dir. Dönem içinde 600 adet × 35 ₺ ve 1.000 adet × 38 ₺ olmak üzere iki alış yapılmış, 1.500 adet satılmıştır. Alışlarda iade veya iskonto yoktur ve dönem sonu sayımında fire saptanmamıştır.\n\nDönem sonu stokunun değeri kaç ₺’dir?",
     "choices": {
-      "A": "Tasfiye değeri ve yenileme maliyeti",
-      "B": "Satış fiyatı ile gerçeğe uygun değerden düşük olanı",
-      "C": "Nominal değer ve bugünkü değer",
-      "D": "Maliyet ve net gerçekleşebilir değer",
-      "E": "Maliyet ile işletmeye özgü kullanım değerinden düşük olanı"
+      "A": "15.000",
+      "B": "17.250",
+      "C": "17.500",
+      "D": "17.750",
+      "E": "19.000"
     },
     "correctAnswer": "D",
-    "explanation": "TMS 2'nin temel ölçüm kuralı, stokların maliyet ile net gerçekleşebilir değerden düşük olanı üzerinden raporlanmasıdır.",
+    "explanation": "Ağırlıklı ortalama birim maliyet 71.000 / 2000 = 35,50 ₺’dir. Dönem sonu stoku 500 adet × 35,50 = 17.750 ₺; FIFO 500 × 38 = 19.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 9"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: ağırlıklı ortalama"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -69,32 +69,32 @@
     "id": "topic-finansal-stok-003",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Bir stokun tahmini satış fiyatı 80.000 TL, tamamlanma maliyeti 6.000 TL ve satış için gerekli maliyetleri 4.000 TL'dir. Net gerçekleşebilir değer kaç TL'dir?",
+    "question": "Sürekli envanter ve hareketli ortalama maliyet yöntemini uygulayan işletmenin ayın başında 100 adet × 200 ₺ stoku vardır. Ayın 5’inde 300 adet × 240 ₺’den alış yapılmış, ayın 12’sinde 150 adet mal tanesi 320 ₺ + KDV’den vadeli satılmıştır. Satış kaydı yapılmıştır.\n\n12’sindeki satışa ilişkin maliyet kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "70.000 TL",
-      "B": "66.000 TL",
-      "C": "90.000 TL",
-      "D": "74.000 TL",
-      "E": "68.000 TL"
+      "A": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 30.000\n    153 TİCARİ MALLAR 30.000\n```",
+      "B": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 36.000\n    153 TİCARİ MALLAR 36.000\n```",
+      "C": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 34.500\n    153 TİCARİ MALLAR 34.500\n```",
+      "D": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 48.000\n    153 TİCARİ MALLAR 48.000\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 32.000\n    153 TİCARİ MALLAR 32.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Net gerçekleşebilir değer, tahmini satış fiyatından tamamlanma ve satış maliyetleri düşülerek bulunur: 80.000 - 6.000 - 4.000 = 70.000 TL.",
+    "correctAnswer": "C",
+    "explanation": "Alıştan sonraki hareketli ortalama: (20.000 + 72.000) / 400 = 230 ₺. Satılan 150 adedin maliyeti 150 × 230 = 34.500 ₺ olup 621 borç, 153 alacak yazılır; FIFO 32.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değer"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: hareketli ortalama, 621/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -102,32 +102,32 @@
     "id": "topic-finansal-stok-004",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Net gerçekleşebilir değer ile gerçeğe uygun değer arasındaki temel fark aşağıdakilerden hangisidir?",
+    "question": "Hammadde fiyatlarının yıl boyunca sürekli arttığı bir dönemde, aynı stok hareketlerine sahip iki işletmeden biri FIFO’yu, diğeri dönemsel ağırlıklı ortalama maliyet formülünü uygulamaktadır. Satış tutarları, dönem başı stokları, alış miktarları ve alış fiyatları iki işletmede aynıdır.\n\nFIFO uygulayan işletme için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Net gerçekleşebilir değer piyasa katılımcılarının, gerçeğe uygun değer ise yalnız işletme yönetiminin tahminine dayanır.",
-      "B": "Gerçeğe uygun değer hiçbir zaman satış maliyetlerini dikkate almaz.",
-      "C": "Net gerçekleşebilir değer işletmeye özgü; gerçeğe uygun değer piyasa katılımcısı bakışına dayalıdır.",
-      "D": "İkisi her durumda aynı tutardır.",
-      "E": "Net gerçekleşebilir değer yalnız duran varlıklarda, gerçeğe uygun değer ise yalnız stoklarda kullanılan ölçüdür."
+      "A": "Dönem sonu stoku daha düşük, brüt kârı daha yüksek çıkar.",
+      "B": "Satılan malın maliyeti daha yüksek, brüt kârı daha düşük çıkar.",
+      "C": "Dönem sonu stoku daha yüksek, brüt kârı daha yüksek çıkar.",
+      "D": "Dönem sonu stoku ve brüt kârı ortalama yöntemle aynı çıkar.",
+      "E": "Dönem sonu stoku daha yüksek, brüt kârı daha düşük çıkar."
     },
     "correctAnswer": "C",
-    "explanation": "Net gerçekleşebilir değer işletmenin olağan iş akışında elde etmeyi beklediği net tutardır; gerçeğe uygun değer piyasa katılımcıları arasındaki ölçüm esasına dayanır.",
+    "explanation": "Fiyatlar artarken FIFO’da eldeki stok en son ve pahalı alışlardan oluşur; dönem sonu stoku yüksek, satılan malın maliyeti düşük olur. Satışlar aynı olduğundan brüt kâr da ortalama yönteme göre daha yüksek çıkar.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 6-7"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: maliyet formülleri"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -135,32 +135,32 @@
     "id": "topic-finansal-stok-005",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Aşağıdakilerden hangisi stok maliyetinin genel kapsamını doğru verir?",
+    "question": "Dönem sonunda işletmenin ambarındaki bir parti hazır giyim ürününün maliyeti 240.000 ₺’dir. Moda değişimi nedeniyle bu ürünlerin olağan faaliyet akışı içinde tahmini satış fiyatı 230.000 ₺’ye inmiş, satışın gerçekleştirilmesi için 14.000 ₺ pazarlama ve nakliye gideri yapılacağı öngörülmüştür.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Satın alma, dönüştürme ve stoku mevcut konum ve durumuna getiren diğer maliyetler",
-      "B": "Üretim maliyetleri ile stok satıldıktan sonra ortaya çıkan pazarlama ve genel yönetim giderlerinin tamamı",
-      "C": "Satın alma bedeli, olağan kredi süresini aşan finansman unsuru ve işletmenin bütün dönem giderleri",
-      "D": "Yalnız direkt işçilik ve satış giderleri",
-      "E": "Yalnız satın alma fiyatı"
+      "A": "```text\n654 KARŞILIK GİDERLERİ 10.000\n    158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 10.000\n```",
+      "B": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 24.000\n    153 TİCARİ MALLAR 24.000\n```",
+      "C": "```text\n158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 24.000\n    654 KARŞILIK GİDERLERİ 24.000\n```",
+      "D": "```text\n654 KARŞILIK GİDERLERİ 24.000\n    158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 24.000\n```",
+      "E": "```text\n654 KARŞILIK GİDERLERİ 24.000\n    119 MENKUL KIYMETLER DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 24.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Stok maliyeti satın alma maliyetlerini, dönüştürme maliyetlerini ve stokları mevcut konum ve durumuna getirmek için katlanılan diğer maliyetleri içerir.",
+    "correctAnswer": "D",
+    "explanation": "Net gerçekleşebilir değer 230.000 − 14.000 = 216.000 ₺’dir. Stok maliyeti ile NGD’den düşük olanla ölçülür; 24.000 ₺ indirim 654 Karşılık Giderleri borç, 158 Stok Değer Düşüklüğü Karşılığı alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 10"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: NGD, 654/158"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -168,32 +168,32 @@
     "id": "topic-finansal-stok-006",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Liste fiyatı 120.000 TL olan ticari mal için 10.000 TL ticari iskonto uygulanmıştır. İade alınabilecek vergiler ve diğer giderler yoksa satın alma maliyeti kaç TL'dir?",
+    "question": "Geçen yıl sonunda maliyeti 180.000 ₺ olan ürünler için 25.000 ₺ stok değer düşüklüğü karşılığı ayrılmıştır. Bu yıl sonunda ürünlerin tamamı hâlâ ambardadır; fiyatların toparlanmasıyla NGD 170.000 ₺ olarak hesaplanmıştır. Önceki indirimin iptali, başlangıçtaki indirim tutarıyla sınırlıdır.\n\nBu durumda yapılacak kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "110.000 TL",
-      "B": "10.000 TL",
-      "C": "132.000 TL",
-      "D": "130.000 TL",
-      "E": "120.000 TL"
+      "A": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 25.000 ₺ kaydedilir.",
+      "B": "Ticari Mallar hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "C": "Karşılık Giderleri hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "D": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "E": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 10.000 ₺ kaydedilir."
     },
-    "correctAnswer": "A",
-    "explanation": "Ticari iskontolar satın alma maliyetinin belirlenmesinde indirilir. Maliyet 120.000 - 10.000 = 110.000 TL'dir.",
+    "correctAnswer": "D",
+    "explanation": "Yeni NGD’ye göre gereken indirim 180.000 − 170.000 = 10.000 ₺’dir; mevcut karşılık 25.000 ₺ olduğundan 15.000 ₺ iptal edilir: 158 borç, 644 Konusu Kalmayan Karşılıklar alacak. İptal önceki indirimi aşamaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - satın alma maliyeti"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: iptal, 158/644"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -201,32 +201,32 @@
     "id": "topic-finansal-stok-007",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stok alımındaki vergilerin maliyete etkisine ilişkin ifadeleri değerlendiriniz.\n\nI. Vergi idaresinden indirilebilen KDV stok maliyetine alınmaz.\n\nII. İade alınamayan satın alma vergileri stok maliyetine dâhil olabilir.\n\nIII. Bütün vergiler geri alınabilir olup olmadığına bakılmadan maliyete eklenir.\n\nBuna göre hangileri doğrudur?",
+    "question": "Mobilya üreten işletme dönem içinde şu harcamaları yapmıştır: kereste alış bedeli, kerestenin fabrikaya taşınması, üretimde çalışan işçilerin ücretleri, fabrika binasının amortismanı ve bitmiş ürünlerin satış mağazasına sevki için ödenen nakliye bedeli.\n\nBu harcamalardan hangisi stok maliyetine dâhil edilmez?",
     "choices": {
-      "A": "I ve III",
-      "B": "Yalnız I",
-      "C": "Yalnız III",
-      "D": "I ve II",
-      "E": "Yalnız II"
+      "A": "Kerestenin fabrikaya getirilmesi için ödenen taşıma",
+      "B": "Üretim hattındaki işçilere ödenen ücretler",
+      "C": "Bitmiş ürünlerin mağazaya sevki için ödenen nakliye",
+      "D": "Fabrika binası için ayrılan amortisman payı",
+      "E": "Kereste alışı için satıcıya ödenen bedel"
     },
-    "correctAnswer": "D",
-    "explanation": "Geri alınabilir veya indirilebilir vergiler maliyet dışında tutulur; geri alınamayan satın alma vergileri maliyetin bir unsuru olabilir.",
+    "correctAnswer": "C",
+    "explanation": "Stok maliyeti satın alma, dönüştürme ve stokları mevcut konum ve durumuna getirmek için katlanılan diğer maliyetlerden oluşur. Bitmiş ürünün satış yerine sevki satış gideridir, oluştuğu dönemde gider yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 11"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: maliyet unsurları"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -234,32 +234,32 @@
     "id": "topic-finansal-stok-008",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Satın alınan malların işletme deposuna getirilmesi için ödenen olağan nakliye ve yükleme-boşaltma giderleri nasıl muhasebeleştirilir?",
+    "question": "Bir gıda üreticisinde normal fire oranı %2’dir. Dönem içinde üretime alınan 50.000 kg hammaddenin 1.000 kg’ı normal fire olarak, soğutma sistemindeki arıza yüzünden ayrıca 1.500 kg’ı bozularak kullanılamaz hâle gelmiştir. Bozulan hammaddenin maliyeti 60.000 ₺’dir.\n\nBozulan hammaddenin maliyeti için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Doğrudan finansman gideri sayılır.",
-      "B": "Öz kaynaklardan düşülür.",
-      "C": "Stokun satın alma maliyetine eklenir.",
-      "D": "Satış ve pazarlama giderine kaydedilir.",
-      "E": "Şerefiye olarak aktifleştirilir."
+      "A": "Mamul maliyetine eklenerek stoka alınır.",
+      "B": "Gelecek yıllara ait gider olarak ertelenir.",
+      "C": "Normal fireyle birlikte birim maliyete yayılır.",
+      "D": "Hammadde stokunda maliyet olarak bırakılır.",
+      "E": "Dönem gideri olarak kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Stokları mevcut konum ve durumuna getiren olağan nakliye ve yükleme-boşaltma maliyetleri satın alma maliyetinin parçasıdır.",
+    "correctAnswer": "E",
+    "explanation": "Normal fire (1.000 kg) üretim maliyetinin parçasıdır. Arızadan doğan anormal tutardaki kayıp stok maliyetine dâhil edilmez, oluştuğu dönemde gider olarak kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 11"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: anormal fire"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -267,32 +267,32 @@
     "id": "topic-finansal-stok-009",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Üretimde ortaya çıkan anormal miktardaki ilk madde, işçilik ve diğer üretim kayıpları TMS 2'ye göre nasıl ele alınır?",
+    "question": "Yıl sonu stok sayımında ticari mal kayıtlarında 12.400 ₺ tutarında görünen bir ürün grubundan ambarda 11.200 ₺’lik mal bulunmuştur. Farkın hırsızlık, kayıt hatası veya teslim eksikliğinden hangisinden doğduğu henüz araştırılmaktadır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Sermayeye eklenir.",
-      "B": "Yalnız satış olduğunda kaydedilir.",
-      "C": "Anormal kaybın tamamı normal üretim maliyeti sayılarak satılıncaya kadar stokta izlenir.",
-      "D": "Gerçekleştiği dönemde gider olarak muhasebeleştirilir.",
-      "E": "Anormal kayıp tutarı gelecek dönemlere ait gider kabul edilerek aktifte bekletilir."
+      "A": "```text\n153 TİCARİ MALLAR 1.200\n    397 SAYIM VE TESELLÜM FAZLALARI 1.200\n```",
+      "B": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 1.200\n    153 TİCARİ MALLAR 1.200\n```",
+      "C": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 1.200\n    153 TİCARİ MALLAR 1.200\n```",
+      "D": "```text\n197 SAYIM VE TESELLÜM NOKSANLARI 1.200\n    100 KASA 1.200\n```",
+      "E": "```text\n197 SAYIM VE TESELLÜM NOKSANLARI 1.200\n    153 TİCARİ MALLAR 1.200\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Anormal fire ve kayıplar stokları mevcut konum ve durumuna getiren normal maliyetlerden değildir; oluştukları dönemde giderleştirilir.",
+    "correctAnswer": "E",
+    "explanation": "Kayıtlı stok 12.400 ₺, fiilî mevcut 11.200 ₺ olduğundan 1.200 ₺ noksan vardır. Neden belirleninceye kadar 197 Sayım ve Tesellüm Noksanları borç, 153 Ticari Mallar alacak yazılır; neden anlaşılınca ilgili hesaba aktarılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet dışında bırakılan tutarlar"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 197/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -300,32 +300,32 @@
     "id": "topic-finansal-stok-010",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Üretimin bir sonraki aşaması için zorunlu olmayan mamul depolama giderleri TMS 2'ye göre kural olarak nasıl değerlendirilir?",
+    "question": "Hırdavat ticareti yapan işletmenin yıl sonu sayımında bir ürün grubunda kayıtlarda bulunmayan 40 adet mal tespit edilmiştir. Malların birim maliyeti 85 ₺ olup fazlalığın bir alış iadesinin yanlış kaydından doğup doğmadığı henüz belirlenememiştir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Stok maliyetine alınmaz, dönem gideri olur.",
-      "B": "Duran varlık maliyetidir.",
-      "C": "Satın alma iskontosudur.",
-      "D": "Üretimin sonraki aşaması için zorunlu olmasa da her durumda stok maliyetine eklenir.",
-      "E": "Depolama gideri stokun net gerçekleşebilir değerine eklenerek değer düşüklüğünü azaltır."
+      "A": "Sayım ve Tesellüm Fazlaları hesabının alacak tarafına 3.400 ₺ kaydedilir.",
+      "B": "Diğer Olağandışı Gelir ve Kârlar hesabının alacak tarafına 3.400 ₺ kaydedilir.",
+      "C": "Ticari Mallar hesabının alacak tarafına 3.400 ₺ kaydedilir.",
+      "D": "Sayım ve Tesellüm Noksanları hesabının alacak tarafına 3.400 ₺ kaydedilir.",
+      "E": "Satılan Ticari Mallar Maliyeti hesabının alacak tarafına 3.400 ₺ kaydedilir."
     },
     "correctAnswer": "A",
-    "explanation": "Üretim sürecinde bir sonraki aşamaya geçiş için zorunlu olmayan depolama maliyetleri stok maliyetinin dışında bırakılır ve giderleştirilir.",
+    "explanation": "Fazlalık 40 × 85 = 3.400 ₺’dir. Nedeni araştırılırken 153 Ticari Mallar borç, 397 Sayım ve Tesellüm Fazlaları alacak yazılır; dönem sonuna kadar neden bulunamazsa 679 hesabına aktarılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - depolama maliyetleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 153/397"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -333,32 +333,32 @@
     "id": "topic-finansal-stok-011",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stokların mevcut konum ve durumuna getirilmesine katkısı olmayan genel yönetim giderleri nasıl muhasebeleştirilir?",
+    "question": "Önceki ay stok sayımında bulunan ve 197 Sayım ve Tesellüm Noksanları hesabına alınan 2.600 ₺’lik farkın, yapılan incelemede ürünlerin doğal nem kaybından kaynaklanan ve sektör oranları içinde kalan normal fire olduğu anlaşılmıştır. İşletme normal fireleri satılan malın maliyetinde izlemektedir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Satış fiyatından düşülür.",
-      "B": "Oluştukları dönemde gider yazılır.",
-      "C": "Sermaye yedeğine aktarılır.",
-      "D": "Bütün mamullere eşit tutarda dağıtılır.",
-      "E": "Stok satılıncaya kadar aktifleştirilir."
+      "A": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 2.600\n    197 SAYIM VE TESELLÜM NOKSANLARI 2.600\n```",
+      "B": "```text\n197 SAYIM VE TESELLÜM NOKSANLARI 2.600\n    153 TİCARİ MALLAR 2.600\n```",
+      "C": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 2.600\n    153 TİCARİ MALLAR 2.600\n```",
+      "D": "```text\n135 PERSONELDEN ALACAKLAR 2.600\n    197 SAYIM VE TESELLÜM NOKSANLARI 2.600\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 2.600\n    197 SAYIM VE TESELLÜM NOKSANLARI 2.600\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Stokların mevcut konum ve durumuna getirilmesine katkı sağlamayan yönetim giderleri stok maliyetine alınmaz; dönemin gideri olarak kaydedilir.",
+    "correctAnswer": "E",
+    "explanation": "Normal fire maliyet unsurudur ve işletmenin politikasına göre 621 Satılan Ticari Mallar Maliyeti hesabına aktarılır; 197 hesabı alacaklandırılarak kapatılır. 153 sayım tarihinde zaten alacaklandırılmıştır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet dışında bırakılan genel yönetim giderleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 621/197"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -366,32 +366,32 @@
     "id": "topic-finansal-stok-012",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Mamul için yapılan reklam harcamasına ilişkin ifadeleri değerlendiriniz.\n\nI. Satış ve pazarlama gideri niteliğindedir.\n\nII. Mamul satışından önce yapıldığı için stok maliyetine alınır.\n\nIII. Üretim maliyetine değil, gerçekleştiği dönemin sonucuna yansır.\n\nBuna göre hangileri doğrudur?",
+    "question": "Aralıklı envanter yöntemini uygulayan işletmenin ticari mallarına ilişkin yıllık bilgiler şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı stok | 85.000 |\n| Dönem içi alışlar | 420.000 |\n| Alıştan iadeler | 12.000 |\n| Alış iskontoları | 8.000 |\n| Dönem sonu sayım stoku | 96.000 |\n\nSatılan ticari mallar maliyeti için yapılacak kayıtta aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "Yalnız III",
-      "E": "I ve III"
+      "A": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 389.000 ₺ kaydedilir.",
+      "B": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 409.000 ₺ kaydedilir.",
+      "C": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 400.000 ₺ kaydedilir.",
+      "D": "Ticari Mallar hesabının alacak tarafına 485.000 ₺ kaydedilir.",
+      "E": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 429.000 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Reklam harcaması satış ve pazarlama gideridir; satıştan önce yapılması onu stok maliyetine dönüştürmez ve gerçekleştiği dönemde giderleştirilir.",
+    "correctAnswer": "A",
+    "explanation": "SMM = dönem başı + alışlar − iadeler − iskontolar − dönem sonu = 85.000 + 420.000 − 12.000 − 8.000 − 96.000 = 389.000 ₺; 621 borç, 153 alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - satış maliyetleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: aralıklı envanter"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -399,32 +399,32 @@
     "id": "topic-finansal-stok-013",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stokların dönüştürme maliyetlerine ilişkin ifadeleri değerlendiriniz.\n\nI. Direkt işçilik maliyetlerini içerir.\n\nII. Sabit ve değişken genel üretim giderlerinin sistematik dağıtımını içerir.\n\nIII. Reklam ve satış komisyonlarının tamamını içerir.\n\nBuna göre hangileri doğrudur?",
+    "question": "İşletme yurt dışından ticari mal ithal etmiştir. Malların FOB bedeli 500.000 ₺, navlun 30.000 ₺, taşıma sigortası 5.000 ₺, gümrük vergisi 53.500 ₺, gümrükten depoya taşıma 12.000 ₺’dir. İthalde ödenen KDV indirilecek, mallar ambara girdikten sonra ayrıca 4.000 ₺ depolama gideri yapılmıştır.\n\nMalların stok maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "Yalnız I",
-      "C": "I ve III",
-      "D": "Yalnız III",
-      "E": "I ve II"
+      "A": "535.000",
+      "B": "588.500",
+      "C": "600.500",
+      "D": "604.500",
+      "E": "718.200"
     },
-    "correctAnswer": "E",
-    "explanation": "Dönüştürme maliyetleri direkt işçilik ile üretime ilişkin genel gider paylarını kapsar; reklam ve satış giderleri kapsam dışındadır.",
+    "correctAnswer": "C",
+    "explanation": "Satın alma maliyeti alış bedeli, ithalat vergileri ve malın ambara gelmesine kadarki taşıma-sigorta giderlerinden oluşur: 500.000 + 30.000 + 5.000 + 53.500 + 12.000 = 600.500 ₺. Sonraki depolama gideri ve indirilecek KDV maliyete girmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - dönüştürme maliyetleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: satın alma maliyeti"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -432,32 +432,32 @@
     "id": "topic-finansal-stok-014",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Üretim hattında doğrudan mamulün işlenmesi için çalışan işçilerin ücretleri hangi maliyet unsuruna örnektir?",
+    "question": "Tek ürün üreten işletmenin yıllık sabit genel üretim giderleri 900.000 ₺, normal üretim kapasitesi 30.000 birimdir. Talep daralması nedeniyle yıl içinde 24.000 birim üretilmiştir. Değişken giderler üretim miktarına göre yüklenmektedir.\n\nSabit genel üretim giderlerinin muhasebeleştirilmesine ilişkin aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Direkt işçilik maliyeti",
-      "B": "Genel yönetim personeli gideri",
-      "C": "Anormal kayıp",
-      "D": "Pazarlama ve satış personeli gideri",
-      "E": "Finansman gideri"
+      "A": "900.000 ₺ tamamı mamul maliyetine yüklenir.",
+      "B": "900.000 ₺ tamamı oluştuğu dönemde gider yazılır.",
+      "C": "180.000 ₺ mamul maliyetine, 720.000 ₺ dönem giderine yazılır.",
+      "D": "720.000 ₺ mamul maliyetine, 180.000 ₺ gelecek dönemlere ertelenir.",
+      "E": "720.000 ₺ mamul maliyetine, 180.000 ₺ dönem giderine yazılır."
     },
-    "correctAnswer": "A",
-    "explanation": "Mamulün dönüştürülmesinde doğrudan çalışan personele ait ücretler direkt işçilik maliyetidir ve dönüştürme maliyetine dâhildir.",
+    "correctAnswer": "E",
+    "explanation": "Sabit GÜG normal kapasiteye göre dağıtılır: birim başına 900.000 / 30.000 = 30 ₺. Üretilen 24.000 birime 720.000 ₺ yüklenir; kullanılmayan kapasiteye düşen 180.000 ₺ dönem gideri olur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - dönüştürme maliyetleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: normal kapasite"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -465,32 +465,32 @@
     "id": "topic-finansal-stok-015",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Sabit genel üretim giderlerinin mamullere dağıtımında TMS 2'ye göre temel alınan kapasite hangisidir?",
+    "question": "Üretim işletmesi ay içinde ambardan üretim bölümüne malzeme çıkış fişiyle 160.000 ₺’lik direkt hammadde, 18.000 ₺’lik yardımcı malzeme göndermiştir. İşletme 7/A seçeneğini uygulamakta, yardımcı malzemeyi genel üretim gideri olarak izlemektedir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Üretim tesislerinin normal kapasitesi",
-      "B": "Hiç duruş yaşanmadığı varsayımıyla hesaplanan azami teorik üretim kapasitesi",
-      "C": "Satış kapasitesi",
-      "D": "Dönemde gerçekleşen düşük üretim düzeyi ve kullanılmayan kapasite toplamı",
-      "E": "Bütçelenen satış adedi"
+      "A": "```text\n710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 178.000\n    150 İLK MADDE VE MALZEME 178.000\n```",
+      "B": "```text\n710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 160.000\n730 GENEL ÜRETİM GİDERLERİ 18.000\n    150 İLK MADDE VE MALZEME 178.000\n```",
+      "C": "```text\n151 YARI MAMULLER - ÜRETİM 160.000\n730 GENEL ÜRETİM GİDERLERİ 18.000\n    150 İLK MADDE VE MALZEME 178.000\n```",
+      "D": "```text\n710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 160.000\n770 GENEL YÖNETİM GİDERLERİ 18.000\n    150 İLK MADDE VE MALZEME 178.000\n```",
+      "E": "```text\n150 İLK MADDE VE MALZEME 178.000\n    710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 160.000\n    730 GENEL ÜRETİM GİDERLERİ 18.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Sabit genel üretim giderleri normal kapasite esas alınarak dağıtılır; böylece düşük üretim stok birim maliyetini yapay biçimde yükseltmez.",
+    "correctAnswer": "B",
+    "explanation": "7/A’da doğrudan üretime giren hammadde 710 Direkt İlk Madde ve Malzeme Giderleri, yardımcı malzeme 730 Genel Üretim Giderleri hesabına borç; 150 İlk Madde ve Malzeme 178.000 ₺ alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - sabit genel üretim giderleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 710/150"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -498,32 +498,32 @@
     "id": "topic-finansal-stok-016",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Normal kapasitesi 10.000 birim olan tesiste üretim geçici olarak 6.000 birime düşmüştür. Sabit genel üretim giderlerinin normal kapasiteye göre dağıtılamayan kısmı ne yapılır?",
+    "question": "Üretim işletmesinde ay içinde tamamlanan 2.000 adet mamulün üretim maliyeti 151 Yarı Mamuller – Üretim hesabında 360.000 ₺ olarak birikmiştir. Tamamlanan mamuller ambara alınmış ve aynı ay bunların 1.500 adedi tanesi 260 ₺ + KDV fiyatla satılmıştır. İşletme sürekli envanter yöntemini uygulamaktadır.\n\nSatışa ilişkin maliyet kaydında aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Hasılattan indirilir.",
-      "B": "Gerçekleştiği dönemde gider yazılır.",
-      "C": "Maddi duran varlık maliyetine eklenir.",
-      "D": "Üretilen 6.000 birime ek olarak yüklenir.",
-      "E": "Gelecek dönemin stoklarına aktarılır."
+      "A": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 270.000 ₺ kaydedilir.",
+      "B": "Satılan Mamuller Maliyeti hesabının borç tarafına 270.000 ₺ kaydedilir.",
+      "C": "Satılan Mamuller Maliyeti hesabının borç tarafına 390.000 ₺ kaydedilir.",
+      "D": "Mamuller hesabının borç tarafına 270.000 ₺ kaydedilir.",
+      "E": "Yarı Mamuller - Üretim hesabının alacak tarafına 270.000 ₺ kaydedilir."
     },
     "correctAnswer": "B",
-    "explanation": "Düşük üretim nedeniyle dağıtılamayan sabit genel üretim giderleri stok maliyetini şişirmez; oluştukları dönemde gider olarak muhasebeleştirilir.",
+    "explanation": "Birim maliyet 360.000 / 2.000 = 180 ₺’dir. Satılan 1.500 adet mamulün maliyeti 270.000 ₺ olup 620 Satılan Mamuller Maliyeti borç, 152 Mamuller alacak yazılır. 621 ticari malların maliyetini izler.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - düşük üretim ve normal kapasite"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 152/151, 620/152"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -531,32 +531,32 @@
     "id": "topic-finansal-stok-017",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Fiilî üretim olağan dışı derecede yüksek olduğunda birim başına dağıtılan sabit genel üretim gideri için hangi uygulama yapılır?",
+    "question": "Elektronik ürün üreticisi, bir perakendeciyle yaptığı konsinye satış sözleşmesi uyarınca 400.000 ₺ maliyetli ürünleri perakendecinin mağazasına göndermiştir. Perakendeci ürünleri sattıkça üreticiye bildirecek ve komisyonunu düşerek bedeli aktaracaktır; satılmayan ürünler iade edilebilecektir.\n\nDönem sonunda perakendecinin mağazasında satılmadan duran ürünler için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Üretim düzeyine bakılmadan sabit genel üretim giderlerinin tamamı dönem gideri yapılır.",
-      "B": "Birim başına tutar artırılır.",
-      "C": "Normal kapasite dikkate alınmaz ve giderler satışa yüklenir.",
-      "D": "Olağan dışı yüksek üretimin yarattığı farkın tamamı doğrudan özkaynak hesaplarında izlenir.",
-      "E": "Stokların maliyet üstünde ölçülmemesi için birim başına tutar azaltılır."
+      "A": "Perakendecinin stoklarında yer alır.",
+      "B": "Üreticinin satılan malın maliyetine aktarılır.",
+      "C": "Üreticinin stoklarında yer alır.",
+      "D": "Perakendeciden alacak olarak izlenir.",
+      "E": "Taraflar arasında yarı yarıya paylaştırılır."
     },
-    "correctAnswer": "E",
-    "explanation": "Olağan dışı yüksek üretimde sabit giderin birim başına dağıtılan payı azaltılır; stokların maliyetlerinin olması gerekenden yüksek gösterilmesi önlenir.",
+    "correctAnswer": "C",
+    "explanation": "Konsinye gönderimde kontrol ve önemli riskler ürün satılana kadar gönderende kalır; ürünler üreticinin stoklarında (ayrı alt hesapta) izlenir ve hasılat son müşteriye satışta kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - yüksek üretim düzeyi"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: konsinye"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -564,32 +564,32 @@
     "id": "topic-finansal-stok-018",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Ortak üretim maliyetlerinin dağıtımına ilişkin ifadeleri değerlendiriniz.\n\nI. Dağıtım makul ve tutarlı bir temele dayanmalıdır.\n\nII. Ürünlerin nispi satış değerleri dağıtım anahtarı olarak kullanılamaz.\n\nIII. Ortak maliyetin tamamı her durumda en yüksek miktarlı ürüne yüklenir.\n\nBuna göre hangileri doğrudur?",
+    "question": "İşletme 28 Aralık’ta yurt içindeki bir tedarikçiden 150.000 ₺’lik ticari mal satın almıştır. Sözleşmeye göre mülkiyet ve hasar malın tedarikçinin deposunda taşıyıcıya tesliminde alıcıya geçmektedir. Mallar 29 Aralık’ta taşıyıcıya teslim edilmiş, işletmenin deposuna 3 Ocak’ta ulaşmıştır.\n\n31 Aralık tarihli finansal tablolar için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "I ve II",
-      "C": "Yalnız I",
-      "D": "Yalnız III",
-      "E": "I ve III"
+      "A": "Mallar tedarikçinin stoklarında gösterilir.",
+      "B": "Mallar depoya ulaşınca kayda alınır.",
+      "C": "Bedel ödenene kadar stoklara alınmaz.",
+      "D": "Mallar alıcı işletmenin stoklarına dâhil edilir.",
+      "E": "Mallar sadece dipnotta açıklanır."
     },
-    "correctAnswer": "C",
-    "explanation": "Ortak maliyet makul ve tutarlı bir temelle dağıtılır. Nispi satış değeri uygun bir anahtar olabilir; maliyetin tamamını tek ürüne yüklemek kural değildir.",
+    "correctAnswer": "D",
+    "explanation": "Kontrol taşıyıcıya teslimde alıcıya geçtiğinden, 31 Aralık’ta yolda olan mallar alıcının stokudur ve 150.000 ₺ borçla birlikte kayda alınır; malın fiziksel olarak depoya ulaşması beklenmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - ortak ve yan ürünler"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: yoldaki mallar"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -597,32 +597,32 @@
     "id": "topic-finansal-stok-019",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Önemsiz nitelikteki yan ürünün net gerçekleşebilir değeri ana ürünün maliyetinin belirlenmesinde nasıl dikkate alınabilir?",
+    "question": "Birbirinden farklı nitelikte üç ürün grubu satan işletmenin yıl sonu stok bilgileri aşağıdadır:\n\n| Kalem | Maliyet (₺) | NGD (₺) |\n|---|---|---|\n| Ürün X | 60.000 | 72.000 |\n| Ürün Y | 45.000 | 38.000 |\n| Ürün Z | 30.000 | 26.500 |\n\nStokların net gerçekleşebilir değere indirgenmesi için yapılacak kayıtta aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız satış geliri sayılır, maliyetle ilişkilendirilmez.",
-      "B": "Ana ürünün maliyetinden düşülür.",
-      "C": "Sabit genel üretim gideri yapılır.",
-      "D": "Her durumda sıfır kabul edilir.",
-      "E": "Ana ürün maliyetine eklenir."
+      "A": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 15.500 ₺ kaydedilir.",
+      "B": "Karşılık Giderleri hesabının borç tarafına 3.500 ₺ kaydedilir.",
+      "C": "Ticari Mallar hesabının alacak tarafına 10.500 ₺ kaydedilir.",
+      "D": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 10.500 ₺ kaydedilir.",
+      "E": "Karşılık Giderleri hesabının borç tarafına 7.000 ₺ kaydedilir."
     },
-    "correctAnswer": "B",
-    "explanation": "Yan ürün önemsizse çoğu durumda net gerçekleşebilir değeriyle ölçülür ve bu tutar ana ürünün maliyetinden indirilir.",
+    "correctAnswer": "D",
+    "explanation": "İndirim kalem bazında yapılır: Y için 7.000 ₺, Z için 3.500 ₺; X’in NGD’si maliyetinin üstünde olduğundan artış kaydedilmez. Toplam 10.500 ₺ 654 borç, 158 alacak yazılır. Toplam bazda (135.000 ₺ maliyet, 136.500 ₺ NGD) bakılsaydı X’teki değer artışı diğer kalemlerdeki kaybı gizlerdi.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - yan ürünler"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: kalem bazında indirim"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -630,32 +630,32 @@
     "id": "topic-finansal-stok-020",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Olağan kredi koşullarını aşan vadeli stok alımına ilişkin ifadeleri değerlendiriniz.\n\nI. Peşin fiyat eşdeğeri stok maliyetinin temelidir.\n\nII. Peşin fiyat ile vadeli tutar arasındaki finansman unsuru süre boyunca faiz gideridir.\n\nIII. Vadeli tutarın tamamı koşulsuz olarak ilk gün stok maliyetine alınır.\n\nBuna göre hangileri doğrudur?",
+    "question": "Farklı ürün grupları bulunan bir işletme, TMS 2 Stoklar standardını uygulayarak maliyet formülü seçimi yapacaktır. Bazı ürünler birbirinin yerine kullanılabilir nitelikte, bazıları ise belirli projeler için özel olarak sipariş edilmiş ve birbirinden ayırt edilebilir durumdadır.\n\nAşağıdaki maliyet belirleme yöntemlerinden hangisi bu işletme tarafından kullanılamaz?",
     "choices": {
-      "A": "Yalnız III",
-      "B": "I ve II",
-      "C": "Yalnız I",
-      "D": "Yalnız II",
-      "E": "I ve III"
+      "A": "Son giren ilk çıkar (LIFO)",
+      "B": "İlk giren ilk çıkar (FIFO)",
+      "C": "Ağırlıklı ortalama maliyet",
+      "D": "Özel tanımlama yöntemi",
+      "E": "Hareketli ortalama maliyet"
     },
-    "correctAnswer": "B",
-    "explanation": "Uzun vadeli finansman unsuru ayrıştırılır; stok peşin fiyat eşdeğeriyle ölçülür, aradaki fark finansman süresince faiz gideri olur.",
+    "correctAnswer": "A",
+    "explanation": "TMS 2 özel projeler için ayrılmış ve birbirinin yerine geçemeyen kalemlerde özel tanımlamayı, diğerlerinde FIFO veya ağırlıklı ortalamayı (hareketli ortalama dâhil) öngörür; LIFO standartta yer almaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - vadeli alımlardaki finansman unsuru"
+      "legislationRef": "TMS 2 md. 23-27"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -663,1320 +663,1320 @@
     "id": "topic-finansal-stok-021",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Normalde birbirleriyle ikame edilemeyen ve özel projeler için ayrılan stok kalemlerinin maliyetinde hangi yöntem kullanılır?",
+    "question": "Deposunda yangın çıkan işletmenin maliyeti 320.000 ₺ olan ticari malları tamamen yanmıştır. Sigorta şirketi ekspertiz raporuna göre 250.000 ₺ tazminat ödemeyi kabul etmiş ancak tutarı henüz ödememiştir. Yanan mallar için KDV düzeltmesi bu soruda dikkate alınmayacaktır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Maliyetlerin özel olarak belirlenmesi",
-      "B": "Hareketli ağırlıklı ortalama maliyet yöntemi",
-      "C": "Satış fiyatı yöntemi",
-      "D": "Son giren ilk çıkar",
-      "E": "Perakende satış fiyatı yöntemi"
+      "A": "```text\n136 DİĞER ÇEŞİTLİ ALACAKLAR 250.000\n659 DİĞER OLAĞAN GİDER VE ZARARLAR 70.000\n    153 TİCARİ MALLAR 320.000\n```",
+      "B": "```text\n136 DİĞER ÇEŞİTLİ ALACAKLAR 250.000\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 70.000\n    153 TİCARİ MALLAR 320.000\n```",
+      "C": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 320.000\n    153 TİCARİ MALLAR 320.000\n```",
+      "D": "```text\n136 DİĞER ÇEŞİTLİ ALACAKLAR 320.000\n    153 TİCARİ MALLAR 250.000\n    679 DİĞER OLAĞANDIŞI GELİR VE KÂRLAR 70.000\n```",
+      "E": "```text\n120 ALICILAR 250.000\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 70.000\n    153 TİCARİ MALLAR 320.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Birbirleriyle ikame edilemeyen stoklar ile özel proje için üretilen veya ayrılan kalemlerin maliyeti tek tek özel maliyetleri belirlenerek saptanır.",
+    "correctAnswer": "B",
+    "explanation": "Yanan mallar 153’ten çıkarılır. Sigortadan alınacak 250.000 ₺ 136 Diğer Çeşitli Alacaklar hesabına, karşılanmayan 70.000 ₺ olağandışı kayıp olarak 689 Diğer Olağandışı Gider ve Zararlar hesabına borç yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - özel maliyet yöntemi"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 136, 689, 153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-022",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "İlk giren ilk çıkar yönteminin varsayımı aşağıdakilerden hangisidir?",
+    "question": "Ambarı su baskınına uğrayan işletmenin baskın tarihine kadarki kayıtlarına göre dönem başı stoku 140.000 ₺, alışları 610.000 ₺, net satışları 800.000 ₺’dir. İşletmenin geçmiş yıllardaki brüt kâr oranı satışların %25’i olarak istikrarlıdır ve sigorta şirketi kaybı bu yöntemle tahmin etmektedir.\n\nBaskın tarihinde ambarda bulunması gereken stokun tahmini maliyeti ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Stok hareketinin olmadığı",
-      "B": "İlk alınan veya üretilen stokların önce satıldığı",
-      "C": "Dönem içinde en son alınan veya üretilen stok kalemlerinin önce satışa konu edildiği",
-      "D": "Satın alma tarihine bakılmadan birim maliyeti en yüksek stok kaleminin önce satıldığı",
-      "E": "Bütün stokların aynı anda satıldığı"
+      "A": "Satılan malın tahmini maliyeti 200.000 ₺, stok 550.000 ₺’dir.",
+      "B": "Satılan malın tahmini maliyeti 640.000 ₺, stok 110.000 ₺’dir.",
+      "C": "Satılan malın tahmini maliyeti 600.000 ₺, stok 150.000 ₺’dir.",
+      "D": "Satılan malın tahmini maliyeti 560.000 ₺, stok 190.000 ₺’dir.",
+      "E": "Satılan malın tahmini maliyeti 610.000 ₺, stok 140.000 ₺’dir."
     },
-    "correctAnswer": "B",
-    "explanation": "FIFO yönteminde ilk satın alınan veya üretilen kalemlerin önce satıldığı; dönem sonu stokun daha yeni maliyetlerden oluştuğu varsayılır.",
+    "correctAnswer": "C",
+    "explanation": "Brüt kâr oranı satışların %25’i ise SMM satışların %75’idir: 800.000 × 0,75 = 600.000 ₺. Tahmini stok 140.000 + 610.000 − 600.000 = 150.000 ₺’dir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - FIFO maliyet formülü"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: brüt kâr yöntemi"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-023",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Ağırlıklı ortalama maliyet yöntemine ilişkin ifadeleri değerlendiriniz.\n\nI. Dönem başı stok ile dönem içi girişlerin maliyet ve miktarlarını dikkate alır.\n\nII. Toplam ağırlıklandırılmış maliyet toplam miktara bölünerek birim maliyet bulunur.\n\nIII. Ortalama, koşullara göre dönemsel olarak veya her yeni giriş sonrasında hesaplanabilir.\n\nBuna göre hangileri doğrudur?",
+    "question": "Bir işletme 2025 yıl sonu sayımında bir depoyu yanlışlıkla iki kez saymış ve dönem sonu stokunu 90.000 ₺ fazla göstermiştir. Hata 2026 yılı kapanışında fark edilmiştir; 2026 yılı sonu stoku doğru sayılmıştır. Vergi etkisi dikkate alınmayacaktır.\n\nBu hatanın düzeltilmemiş hâliyle etkisi için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "I, II ve III",
-      "C": "Yalnız III",
-      "D": "I ve II",
-      "E": "Yalnız I"
+      "A": "2025 kârı 90.000 ₺ fazla, 2026 kârı 90.000 ₺ eksiktir.",
+      "B": "2025 kârı 90.000 ₺ eksik, 2026 kârı 90.000 ₺ fazladır.",
+      "C": "2025 ve 2026 kârları 90.000 ₺ fazladır.",
+      "D": "2025 kârı 90.000 ₺ fazla, 2026 kârı doğrudur.",
+      "E": "Sadece 2025 bilançosundaki stok etkilenir."
     },
-    "correctAnswer": "B",
-    "explanation": "Ağırlıklı ortalama maliyet, mevcut ve yeni stokların maliyetlerini miktarlarıyla ağırlıklandırır; dönemsel veya hareketli biçimde hesaplanabilir.",
+    "correctAnswer": "A",
+    "explanation": "Dönem sonu stokunun fazla gösterilmesi 2025 SMM’sini düşürüp kârı artırır. Bu stok 2026’nın dönem başı stoku olduğundan 2026 SMM’si artar ve kâr aynı tutarda azalır; iki yıl toplamında hata kendini dengeler.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - ağırlıklı ortalama maliyet"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: stok hatası"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-024",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "TMS 2'de maliyet formüllerinin tutarlı kullanımına ilişkin ifadeleri değerlendiriniz.\n\nI. Benzer nitelik ve kullanıma sahip stoklarda aynı maliyet formülü kullanılır.\n\nII. Farklı nitelik veya kullanım, farklı maliyet formülünü haklı kılabilir.\n\nIII. Bütün stoklarda yalnız FIFO yönteminin kullanılması zorunludur.\n\nBuna göre hangileri doğrudur?",
+    "question": "Bilgisayar satan işletme, satış amacıyla aldığı ve stok kartlarında maliyeti 38.000 ₺ görünen bir dizüstü bilgisayarı muhasebe bölümünde kullanılmak üzere ambardan çıkarmıştır. Bilgisayar birkaç yıl kullanılacak ve amortismana tabi tutulacaktır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız III",
-      "B": "I ve III",
-      "C": "Yalnız I",
-      "D": "Yalnız II",
-      "E": "I ve II"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 38.000\n    153 TİCARİ MALLAR 38.000\n```",
+      "B": "```text\n255 DEMİRBAŞLAR 38.000\n    600 YURT İÇİ SATIŞLAR 38.000\n```",
+      "C": "```text\n253 TESİS, MAKİNE VE CİHAZLAR 38.000\n    153 TİCARİ MALLAR 38.000\n```",
+      "D": "```text\n255 DEMİRBAŞLAR 38.000\n    153 TİCARİ MALLAR 38.000\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 38.000\n    153 TİCARİ MALLAR 38.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "Benzer stoklarda aynı formül tutarlı uygulanır; farklı nitelik veya kullanım farklı formülü haklı kılabilir ve TMS 2 yalnız FIFO'yu zorunlu tutmaz.",
+    "correctAnswer": "D",
+    "explanation": "Satış amacı ortadan kalkan ve bir yıldan fazla kullanılacak mal duran varlığa sınıflandırılır: 255 Demirbaşlar borç, 153 Ticari Mallar alacak, maliyet bedeliyle. Satış gerçekleşmediğinden hasılat kaydı yapılmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet formüllerinin tutarlılığı"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 255/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-025",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Aşağıdaki maliyet formüllerinden hangisine TMS 2 stokların olağan maliyet dağıtımında izin vermez?",
+    "question": "Sürekli envanter yöntemini uygulayan işletme, geçen hafta 50.000 ₺ + KDV’ye sattığı ve maliyeti 34.000 ₺ olan malların tamamının kusurlu olduğu gerekçesiyle müşteri tarafından iade edildiğini kaydetmektedir. Satış iadesi ve KDV kaydı yapılmıştır.\n\nİade edilen malların maliyetine ilişkin kayıt aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Özel maliyet",
-      "B": "LIFO",
-      "C": "FIFO",
-      "D": "Hareketli ortalama",
-      "E": "Ağırlıklı ortalama"
+      "A": "```text\n153 TİCARİ MALLAR 34.000\n    621 SATILAN TİCARİ MALLAR MALİYETİ 34.000\n```",
+      "B": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 34.000\n    153 TİCARİ MALLAR 34.000\n```",
+      "C": "```text\n153 TİCARİ MALLAR 50.000\n    621 SATILAN TİCARİ MALLAR MALİYETİ 50.000\n```",
+      "D": "```text\n153 TİCARİ MALLAR 34.000\n    610 SATIŞTAN İADELER 34.000\n```",
+      "E": "```text\n157 DİĞER STOKLAR 34.000\n    621 SATILAN TİCARİ MALLAR MALİYETİ 34.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "TMS 2, birbirinin yerine kullanılabilen stoklar için FIFO veya ağırlıklı ortalamaya izin verir; LIFO maliyet formülüne izin vermez.",
+    "correctAnswer": "A",
+    "explanation": "Satışta 621 borç, 153 alacak yazılmıştı. İadeyle mal yeniden stoka girer; maliyet tutarıyla (34.000 ₺) 153 borç, 621 alacak kaydedilir. Satış tutarındaki iade 610’da ayrıca izlenir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet formülleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 153/621"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-026",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Perakende yöntemi özellikle hangi durumda stok maliyetinin ölçümünde pratik sonuç verebilir?",
+    "question": "Yüzlerce farklı ürün satan ve ürünlerin kâr marjları birbirine yakın olan bir süpermarket zinciri, her ürün için ayrı maliyet takibinin pratik olmadığını düşünmektedir. Zincir, stokları satış fiyatı üzerinden uygun brüt kâr yüzdesi düşülerek ölçmeyi değerlendirmektedir.\n\nBu ölçüm tekniğiyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız duran varlıklarda",
-      "B": "Stokların tamamı ücretsiz edinildiğinde; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "C": "Satış fiyatları bilinmediğinde",
-      "D": "Çok sayıda, hızla değişen ve benzer brüt kâr marjına sahip kalem bulunduğunda",
-      "E": "Yalnız tek ve özel proje bulunduğunda; ilgili hesap veya kalem bu esasa göre belirlenir."
+      "A": "Perakendecilerde kullanılması yasaktır.",
+      "B": "Sonuçlar maliyete yaklaşıyorsa kullanılabilir.",
+      "C": "Stoklar satış fiyatıyla raporlanır.",
+      "D": "Ortalama marj değil en yüksek marj kullanılır.",
+      "E": "Maliyet formülü seçimini gereksiz kılar ve NGD testi yapılmaz."
     },
-    "correctAnswer": "D",
-    "explanation": "Perakende yöntemi, diğer yöntemlerin uygulanmasının güç olduğu çok sayıdaki hızlı değişen ve benzer kâr marjlı perakende stoklarında kullanılabilir.",
+    "correctAnswer": "B",
+    "explanation": "Standart maliyet ve perakende yöntemi gibi teknikler sonuçları maliyete yaklaşıyorsa kolaylık için kullanılabilir. Perakende yönteminde stok satış değerinden uygun brüt kâr yüzdesi indirilerek bulunur; NGD testi yine uygulanır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - perakende yöntemi"
+      "legislationRef": "TMS 2 md. 21-22"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-027",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Standart maliyet yönteminin TMS 2 kapsamında kullanılabilmesi için hangi koşul aranır?",
+    "question": "Şarap üreticisi dönem içinde şu giderlere katlanmıştır: olgunlaşma süresince fıçılarda bekletilen şarabın mahzen giderleri, bitmiş ve şişelenmiş ürünlerin satış deposunda bekletilmesine ilişkin kira ve üretim yönetimi dışındaki genel yönetim giderleri.\n\nAşağıdakilerden hangisi stok maliyetine dâhil edilir?",
     "choices": {
-      "A": "Yalnız küçük işletmelerce kullanılması; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur.",
-      "B": "Sapmaların hiçbir zaman incelenmemesi",
-      "C": "Yalnız satış fiyatına dayanması",
-      "D": "Her zaman fiilî maliyetten yüksek olması; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "E": "Sonuçların fiilî maliyete yakın olması ve varsayımların düzenli gözden geçirilmesi"
+      "A": "Bitmiş ürünlerin satış deposu kirası",
+      "B": "Merkez ofis yönetim giderleri",
+      "C": "Satış personelinin ücretleri",
+      "D": "Olgunlaşma aşamasındaki mahzen giderleri",
+      "E": "Bayilere yapılan tanıtım giderleri"
     },
-    "correctAnswer": "E",
-    "explanation": "Standart maliyet yöntemi, normal malzeme ve işçilik düzeyleri gibi ölçütlere dayanır; düzenli gözden geçirilir ve sonuçları maliyete yakınsa kullanılabilir.",
+    "correctAnswer": "D",
+    "explanation": "Depolama giderleri, bir üretim aşamasından diğerine geçmeden önce üretim süreci için gerekliyse (olgunlaşma gibi) stok maliyetine girer. Bitmiş ürün depolama, genel yönetim ve satış giderleri dönem gideridir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - standart maliyet yöntemi"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: maliyete girmeyen"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-028",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başında 100 birim stok 20 TL'den, dönemde 100 birim stok 30 TL'den alınmıştır. Dönem sonu ağırlıklı ortalama birim maliyet kaç TL'dir?",
+    "question": "Tekstil üreticisinin ambarında dönem sonunda şunlar bulunmaktadır: satın alınmış ham pamuk ipliği, dokuma tezgâhında işlemi yarım kalmış kumaş topları, satışa hazır paketlenmiş havlu setleri ve paketlemede kullanılacak karton kutular.\n\nİşlemi yarım kalmış kumaş toplarının izlendiği hesap aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "30 TL",
-      "B": "20 TL",
-      "C": "22 TL",
-      "D": "28 TL",
-      "E": "25 TL"
+      "A": "150 İlk Madde ve Malzeme",
+      "B": "152 Mamuller",
+      "C": "151 Yarı Mamuller - Üretim",
+      "D": "157 Diğer Stoklar",
+      "E": "153 Ticari Mallar"
     },
-    "correctAnswer": "E",
-    "explanation": "Toplam maliyet 100×20 + 100×30 = 5.000 TL, toplam miktar 200 birimdir. Ortalama birim maliyet 5.000/200 = 25 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Üretim süreci tamamlanmamış ürünler 151 Yarı Mamuller – Üretim hesabında izlenir. İplik ve karton kutu 150, satışa hazır havlu setleri 152 Mamuller hesabındadır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - ağırlıklı ortalama maliyet"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: stok hesapları"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-029",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başı 80 birim stokun birim maliyeti 10 TL, sonraki 60 birim alışın birim maliyeti 15 TL'dir. FIFO'ya göre 100 birim satılırsa satılan stok maliyeti kaç TL'dir?",
+    "question": "İşletme 200.000 ₺ + KDV’ye aldığı malların yarısını satmışken satıcıdan, toplam alış bedelinin %5’i oranında 10.000 ₺ + %20 KDV ciro iskontosu faturası almıştır. Sürekli envanter uygulanmakta, iskontonun kalan ve satılan mallar arasında oranlı dağıtılması benimsenmektedir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "1.100 TL",
-      "B": "1.500 TL",
-      "C": "1.050 TL",
-      "D": "1.200 TL",
-      "E": "1.000 TL"
+      "A": "Satılan Ticari Mallar Maliyeti hesabının alacak tarafına 5.000 ₺ kaydedilir.",
+      "B": "Ticari Mallar hesabının alacak tarafına 10.000 ₺ kaydedilir.",
+      "C": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 10.000 ₺ kaydedilir.",
+      "D": "Satış İskontoları hesabının alacak tarafına 5.000 ₺ kaydedilir.",
+      "E": "İndirilecek KDV hesabının alacak tarafına 10.000 ₺ kaydedilir."
     },
     "correctAnswer": "A",
-    "explanation": "FIFO'da önce 80 birim 10 TL'den, sonra 20 birim 15 TL'den çıkar: 800 + 300 = 1.100 TL.",
+    "explanation": "İskonto stok maliyetini azaltır. Mallar yarı yarıya satıldığından 5.000 ₺ 153’ten, 5.000 ₺ 621’den düşülür; KDV düzeltmesi 191 alacak 2.000 ₺ olur. Satıcıya borç 320 borç ile azalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - FIFO maliyet formülü"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: alış iskontosu"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-030",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başı 50 birim stok 12 TL'den, dönem içi 50 birim alış 18 TL'dendir. Ağırlıklı ortalamaya göre 40 birim dönem sonu stokun maliyeti kaç TL'dir?",
+    "question": "Vergi Usul Kanunu’na göre değerleme yapan bir ticaret işletmesinin deposundaki malların bir kısmı yangın nedeniyle ciddi hasar görmüş ve satış bedelleri maliyetlerinin önemli ölçüde altına düşmüştür. İşletme bu mallar için değer düşüklüğünü vergi matrahında dikkate almak istemektedir.\n\nBu durumda aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "1.200 TL",
-      "B": "600 TL",
-      "C": "520 TL",
-      "D": "480 TL",
-      "E": "720 TL"
+      "A": "Mallar emsal bedelle değerlenebilir.",
+      "B": "Mallar maliyet bedeliyle değerlenmeye devam eder.",
+      "C": "Mallar satış bedeliyle kayıttan çıkarılır.",
+      "D": "Mallar yıl sonunda değerlemeye tabi tutulmaz.",
+      "E": "Değer düşüklüğü gelecek yıla ertelenir."
     },
-    "correctAnswer": "B",
-    "explanation": "Ağırlıklı ortalama birim maliyet (50×12 + 50×18)/100 = 15 TL'dir. Dönem sonu 40 birim stok 40×15 = 600 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "VUK md. 274’e göre emtia maliyet bedeliyle değerlenir; ancak yangın, deprem, su basması gibi afetler veya bozulma nedeniyle kıymeti önemli ölçüde düşen emtia md. 278 uyarınca emsal bedelle değerlenebilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - ağırlıklı ortalama maliyet"
+      "legislationRef": "VUK md. 274 ve 278"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-031",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başı stok 30.000 TL, net alışlar 140.000 TL ve dönem sonu stok 45.000 TL ise satılan ticari malların maliyeti kaç TL'dir?",
+    "question": "Üretim işletmesinde ay içinde 5.000 birim ürün tamamlanmış, dönem başı ve dönem sonu yarı mamul bulunmamaktadır. Ay içinde direkt hammadde 240.000 ₺, direkt işçilik 110.000 ₺, değişken genel üretim gideri 50.000 ₺ oluşmuştur. Sabit genel üretim gideri 120.000 ₺ olup normal kapasite 6.000 birimdir.\n\nTamamlanan ürünlerin birim maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "170.000 TL",
-      "B": "155.000 TL",
-      "C": "215.000 TL",
-      "D": "125.000 TL",
-      "E": "185.000 TL"
+      "A": "80",
+      "B": "90",
+      "C": "96",
+      "D": "100",
+      "E": "104"
     },
     "correctAnswer": "D",
-    "explanation": "Satılan ticari malların maliyeti = dönem başı stok + net alışlar - dönem sonu stok = 30.000 + 140.000 - 45.000 = 125.000 TL.",
+    "explanation": "Sabit GÜG normal kapasiteye göre yüklenir: 120.000 / 6.000 = 20 ₺/birim, 5.000 birime 100.000 ₺. Toplam maliyet 240.000 + 110.000 + 50.000 + 100.000 = 500.000 ₺; birim maliyet 500.000 / 5.000 = 100 ₺. Kalan 20.000 ₺ gider olur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - satılan ticari mallar maliyeti"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: birim maliyet"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-032",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Brüt alışlar 200.000 TL, alış iadeleri 12.000 TL ve alış iskontoları 8.000 TL'dir. Alış giderleri ayrıca ele alınacaksa net alışlar kaç TL'dir?",
+    "question": "Üretim işletmesi 12 ton çelik levhayı tonu 30.000 ₺ + %20 KDV’den vadeli satın almıştır. Levhaların fabrikaya taşınması için nakliye firmasına 9.000 ₺ + %20 KDV peşin ödenmiş, levhalar ilk madde ambarına alınmıştır.\n\nBu işlemlere ilişkin tek bir günlük defter kaydı yapılırsa kayıt aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "172.000 TL",
-      "B": "188.000 TL",
-      "C": "180.000 TL",
-      "D": "192.000 TL",
-      "E": "220.000 TL"
+      "A": "```text\n150 İLK MADDE VE MALZEME 360.000\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 9.000\n191 İNDİRİLECEK KDV 73.800\n    320 SATICILAR 432.000\n    100 KASA 10.800\n```",
+      "B": "```text\n153 TİCARİ MALLAR 369.000\n191 İNDİRİLECEK KDV 73.800\n    320 SATICILAR 432.000\n    100 KASA 10.800\n```",
+      "C": "```text\n150 İLK MADDE VE MALZEME 369.000\n191 İNDİRİLECEK KDV 73.800\n    320 SATICILAR 432.000\n    100 KASA 10.800\n```",
+      "D": "```text\n150 İLK MADDE VE MALZEME 369.000\n191 İNDİRİLECEK KDV 73.800\n    320 SATICILAR 442.800\n```",
+      "E": "```text\n150 İLK MADDE VE MALZEME 442.800\n    320 SATICILAR 432.000\n    100 KASA 10.800\n```"
     },
     "correctAnswer": "C",
-    "explanation": "Net alışlar brüt alışlardan alış iadeleri ve alış iskontoları düşülerek bulunur: 200.000 - 12.000 - 8.000 = 180.000 TL.",
+    "explanation": "Hammadde maliyeti alış bedeli ile taşıma giderinden oluşur: 360.000 + 9.000 = 369.000 ₺ (150). KDV 72.000 + 1.800 = 73.800 ₺ 191’e yazılır; satıcıya 432.000 ₺ borç, nakliyeciye 10.800 ₺ peşin ödeme yapılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - net alışların hesaplanması"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 150/191/320"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-033",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başı stok 25.000 TL, net alışlar 90.000 TL ve alışla ilgili taşıma giderleri 5.000 TL'dir. Satılabilir malların maliyeti kaç TL'dir?",
+    "question": "Dönem sonunda stokları için değer düşüklüğü karşılığı ayıran işletme, bilançosunu hazırlamaktadır. Stoklar hesap grubunda ticari mallar 820.000 ₺, 158 Stok Değer Düşüklüğü Karşılığı hesabı 45.000 ₺ bakiye vermektedir.\n\nBu karşılık hesabının bilançoda gösterimiyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "125.000 TL",
-      "B": "115.000 TL",
-      "C": "90.000 TL",
-      "D": "120.000 TL",
-      "E": "110.000 TL"
+      "A": "Kısa vadeli borç karşılıkları arasında gösterilir.",
+      "B": "Stoklar grubunda indirim olarak gösterilir.",
+      "C": "Özkaynaklarda ayrı kalem olarak gösterilir.",
+      "D": "Duran varlıklarda eksi bakiye olarak gösterilir.",
+      "E": "Gelir tablosunda satışlardan düşülür."
     },
-    "correctAnswer": "D",
-    "explanation": "Satılabilir malların maliyeti dönem başı stok, net alışlar ve alış giderlerinin toplamıdır: 25.000 + 90.000 + 5.000 = 120.000 TL.",
+    "correctAnswer": "B",
+    "explanation": "158 Stok Değer Düşüklüğü Karşılığı düzenleyici (pasif karakterli) bir aktif hesaptır; stoklar grubunda eksi olarak gösterilir ve net stok 820.000 − 45.000 = 775.000 ₺ olur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - satılabilir malların maliyeti"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 158"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-034",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Kredili alınan 24.000 TL maliyetli ticari malların 4.000 TL'lik kısmı satıcıya iade edilmiştir. KDV dikkate alınmayacaktır. Devamlı envanter yönteminde iade sonrası stok maliyeti kaç TL azalır?",
+    "question": "FIFO ve sürekli envanter uygulayan işletmenin ay başı stoku 100 adet × 40 ₺’dir. 3’ünde 200 adet × 44 ₺ alış, 10’unda 150 adet satış, 18’inde 100 adet × 50 ₺ alış ve 25’inde 180 adet satış yapılmıştır. Satışlar tanesi 70 ₺ + KDV’dendir.\n\n25’indeki satışın maliyet kaydında aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "4.000 TL",
-      "B": "20.000 TL",
-      "C": "İade stok maliyetini etkilemez.",
-      "D": "28.000 TL",
-      "E": "24.000 TL"
+      "A": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 8.100 ₺ kaydedilir.",
+      "B": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 7.920 ₺ kaydedilir.",
+      "C": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 8.520 ₺ kaydedilir.",
+      "D": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 12.600 ₺ kaydedilir.",
+      "E": "Ticari Mallar hesabının borç tarafına 8.100 ₺ kaydedilir."
     },
     "correctAnswer": "A",
-    "explanation": "İade edilen malların maliyeti kadar stok hesabı alacaklandırılır. Stok maliyeti 4.000 TL azalır ve satıcıya borç aynı tutarda düşer.",
+    "explanation": "10’undaki satış 100 × 40 + 50 × 44 ile karşılanır; elde 150 × 44 kalır. 25’indeki 180 adet önce bu 150 adetten (6.600 ₺), kalan 30 adet 50 ₺’lik partiden (1.500 ₺) çıkar: 8.100 ₺ 621 borç, 153 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - alış iadeleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: FIFO sürekli envanter"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-035",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Devamlı envanter yönteminde daha önce alınan mallar için sonradan sağlanan 6.000 TL ticari iskonto stoklar henüz satılmamışsa nasıl etki doğurur?",
+    "question": "Toptan gıda satan işletme, rutin olarak kısa sürede satın alıp sattığı ürünlerin alımını finanse etmek için kullandığı banka kredisine dönem içinde 85.000 ₺ faiz ödemiştir. Ürünler satın alındıktan sonra birkaç hafta içinde satılmaktadır.\n\nBu faiz tutarının muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Satış gelirini artırır.",
-      "B": "Finansman giderini artırır.",
-      "C": "Yalnız kasa hesabını etkiler.",
-      "D": "Stok maliyetini ve satıcıya borcu azaltır.",
-      "E": "Stok maliyetini artırır."
+      "A": "Ticari malların maliyetine eklenir.",
+      "B": "Özellikli varlık olarak aktifleştirilir.",
+      "C": "Gelecek aylara ait gider olarak ertelenir.",
+      "D": "Satış iskontosu olarak satışlardan düşülür.",
+      "E": "Finansman gideri olarak dönem sonucuna yansıtılır."
     },
-    "correctAnswer": "D",
-    "explanation": "Alış iskontosu edinme maliyetinden indirilir. Devamlı envanterde stoklar eldeyse 153 Ticari Mallar ve 320 Satıcılar hesapları 6.000 TL azalır.",
+    "correctAnswer": "E",
+    "explanation": "Kısa sürede rutin olarak üretilen veya alınan stoklar özellikli varlık değildir; bunların finansmanına ilişkin faiz stok maliyetine eklenmez, 780 Finansman Giderleri üzerinden dönem sonucuna yansır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 ve Tekdüzen hesap sistemi - alış iskontoları"
+      "legislationRef": "TMS 2 md. 17 ve TMS 23"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-036",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Satın alınan ticari mallar için yapılan 3.000 TL olağan taşıma gideri, malları depoya getirmek için zorunludur. KDV dikkate alınmayacaktır. Bu gider nasıl değerlendirilir?",
+    "question": "Deterjan üreticisi, ürünlerini doldurduğu plastik şişeleri ve etiketleri bir tedarikçiden 84.000 ₺ + KDV’ye satın almıştır. Şişe ve etiketler üretim sürecinde ürünün bir parçası olarak kullanılacak, ürünle birlikte satılacaktır.\n\nBu alımda borçlandırılacak stok hesabı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Satış gideri yazılır.",
-      "B": "Stok maliyetine eklenir.",
-      "C": "Geçmiş yıl zararı olur.",
-      "D": "Finansman gideri yazılır.",
-      "E": "Ortaklardan alacak sayılır."
+      "A": "150 İlk Madde ve Malzeme",
+      "B": "730 Genel Üretim Giderleri",
+      "C": "151 Yarı Mamuller - Üretim",
+      "D": "710 Direkt İlk Madde ve Malzeme Giderleri",
+      "E": "159 Verilen Sipariş Avansları"
     },
-    "correctAnswer": "B",
-    "explanation": "Malların işletmenin deposuna getirilmesi için katlanılan olağan taşıma gideri stokları mevcut konumuna getirdiği için satın alma maliyetine eklenir.",
+    "correctAnswer": "A",
+    "explanation": "Üretimde kullanılmak üzere alınan hammadde, yardımcı madde, işletme malzemesi ve ambalaj malzemesi 150 İlk Madde ve Malzeme hesabında izlenir; kullanıldıkça 710 veya 730’a aktarılır. 151 üretimdeki yarı mamulleri, 159 verilen sipariş avanslarını izler.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - nakliye ve yükleme maliyetleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 150"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-037",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Satış sözleşmesi FOB yükleme yeri koşulundadır ve mallar 29 Aralık'ta taşıyıcıya teslim edilmiştir. Alıcı malları 3 Ocak'ta teslim almıştır. Kontrolün taşıyıcıya teslimde geçtiği kabul edilirse 31 Aralık'ta stok kime aittir?",
+    "question": "Stok sayımında belirlenip 197 hesabına alınan 7.500 ₺’lik ticari mal noksanlığının, depo sorumlusunun ihmali sonucu çalınan mallardan kaynaklandığı anlaşılmıştır. Sorumlu tutarı iki ay içinde işletmeye ödemeyi kabul etmiş, bu yönde bir taahhütname imzalamıştır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Hiçbir tarafa",
-      "B": "Alıcıya, çünkü kontrol 29 Aralık'ta geçmiştir.",
-      "C": "Taşıyıcıya",
-      "D": "Alıcı ile satıcıya eşit paylarla",
-      "E": "Satıcıya, çünkü fiziksel teslim ancak 3 Ocak tarihinde yapılmıştır."
+      "A": "Diğer Olağandışı Gider ve Zararlar hesabının borç tarafına 7.500 ₺ kaydedilir.",
+      "B": "Personelden Alacaklar hesabının borç tarafına 7.500 ₺ kaydedilir.",
+      "C": "Ticari Mallar hesabının alacak tarafına 7.500 ₺ kaydedilir.",
+      "D": "Satılan Ticari Mallar Maliyeti hesabının borç tarafına 7.500 ₺ kaydedilir.",
+      "E": "Personel Avansları hesabının borç tarafına 7.500 ₺ kaydedilir."
     },
     "correctAnswer": "B",
-    "explanation": "FOB yükleme yeri koşulunda kontrol taşıyıcıya teslimle alıcıya geçer. Mallar yolda olsa da 31 Aralık'ta alıcının stokuna dâhildir.",
+    "explanation": "Sorumludan tahsil edilecek tutar 135 Personelden Alacaklar hesabına borç, 197 Sayım ve Tesellüm Noksanları hesabına alacak yazılır. Stok sayım tarihinde zaten azaltılmıştır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 ve TFRS 15 - yoldaki mallarda kontrol"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 197/135"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-038",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Satış sözleşmesinde malların kontrolünün alıcının deposunda teslimle geçeceği kararlaştırılmıştır. Mallar 30 Aralık'ta yola çıkmış, 4 Ocak'ta teslim edilmiştir. 31 Aralık'ta malları kim stoklarında göstermelidir?",
+    "question": "Dönemsel ağırlıklı ortalama maliyet ve aralıklı envanter uygulayan işletmenin dönem başı stoku 1.000 adet × 12 ₺, dönem içi alışı 3.000 adet × 15 ₺’dir. Yıl içinde 3.200 adet satılmış, bunlardan 200 adedi müşteriler tarafından iade edilerek yeniden stoka alınmıştır.\n\nDönem sonu SMM kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Taşıyıcı",
-      "B": "Hiçbiri",
-      "C": "Alıcı ve satıcı birlikte",
-      "D": "Satıcı, çünkü kontrol henüz alıcıya geçmemiştir.",
-      "E": "Alıcı, çünkü fatura düzenlenmiştir."
+      "A": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 45.600\n    153 TİCARİ MALLAR 45.600\n```",
+      "B": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 45.000\n    153 TİCARİ MALLAR 45.000\n```",
+      "C": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 42.000\n    153 TİCARİ MALLAR 42.000\n```",
+      "D": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 42.750\n    153 TİCARİ MALLAR 42.750\n```",
+      "E": "```text\n153 TİCARİ MALLAR 42.750\n    621 SATILAN TİCARİ MALLAR MALİYETİ 42.750\n```"
     },
     "correctAnswer": "D",
-    "explanation": "Kontrol teslim noktasında geçiyorsa raporlama tarihinde teslim gerçekleşmemiştir. Mallar fiziksel olarak yolda olsa da satıcının stokunda kalır.",
+    "explanation": "Ortalama birim maliyet 57.000 / 4.000 = 14,25 ₺. Net satılan 3.200 − 200 = 3.000 adet; SMM 3.000 × 14,25 = 42.750 ₺ olup 621 borç, 153 alacak yazılır. Dönem sonu stoku 1.000 adet × 14,25 = 14.250 ₺’dir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 ve TFRS 15 - kontrolün devri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: ağırlıklı ortalama SMM"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-039",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Konsinye olarak başka bir işletmeye gönderilen ancak kontrolü devredilmemiş mallar raporlama tarihinde kimin stokunda yer alır?",
+    "question": "Mobilya üreticisinin ambarındaki kontrplak stokunun maliyeti 300.000 ₺’dir. Dönem sonunda kontrplağın piyasa fiyatı 270.000 ₺’ye düşmüştür. Bu kontrplakla üretilecek mobilyaların ise maliyetlerinin üzerinde, kârlı bir fiyatla satılacağı sözleşmelerle belgelenmiştir.\n\nKontrplak stoku için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Hiçbir işletmenin",
-      "B": "Taşıyıcının",
-      "C": "Malı gönderen konsinyatörün",
-      "D": "Nihai müşterinin",
-      "E": "Komisyoncunun"
+      "A": "Kontrplak için değer düşüklüğü kaydedilmez.",
+      "B": "Kontrplak 270.000 ₺’ye indirgenir.",
+      "C": "30.000 ₺ mamul maliyetine eklenir.",
+      "D": "Kontrplak piyasa fiyatına göre yeniden değerlenir.",
+      "E": "30.000 ₺ gelecek dönemlere ertelenir."
     },
-    "correctAnswer": "C",
-    "explanation": "Konsinye gönderimde malların zilyetliği değişse de kontrol nihai satışa kadar gönderen işletmede kalabilir; bu durumda stok konsinyatöre aittir.",
+    "correctAnswer": "A",
+    "explanation": "Üretimde kullanılacak hammadde ve malzemeler, dâhil edilecekleri mamullerin maliyetinin üzerinde bir fiyatla satılması bekleniyorsa maliyetin altına indirgenmez. Hammadde fiyatındaki düşüş mamul maliyetinin NGD’yi aşacağını gösterseydi indirim yapılırdı.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 ve TFRS 15 - konsinye mallar"
+      "legislationRef": "TMS 2 md. 32"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-040",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Başka bir işletme adına satılmak üzere teslim alınan ve mülkiyet ile kontrolü gönderen işletmede kalan konsinye mallar, teslim alan işletme tarafından nasıl izlenir?",
+    "question": "Üretim işletmesinde ay içinde üretim hattında doğrudan ürün üzerinde çalışan işçilere 280.000 ₺, fabrika müdürüne 70.000 ₺, satış temsilcilerine 90.000 ₺ brüt ücret tahakkuk ettirilmiştir. İşletme 7/A seçeneğini uygulamaktadır.\n\nBu işleme ilişkin ücret tahakkuku kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Sermaye olarak kaydedilir.",
-      "B": "Satış geliri olarak kaydedilir.",
-      "C": "Kendi stoklarına dâhil edilmez.",
-      "D": "Ticari mal olarak aktifleştirilir.",
-      "E": "Maddi duran varlık yapılır."
+      "A": "Direkt İşçilik Giderleri hesabının borç tarafına 350.000 ₺ kaydedilir.",
+      "B": "Genel Üretim Giderleri hesabının borç tarafına 90.000 ₺ kaydedilir.",
+      "C": "Genel Yönetim Giderleri hesabının borç tarafına 70.000 ₺ kaydedilir.",
+      "D": "Pazarlama, Satış ve Dağıtım Giderleri hesabının borç tarafına 70.000 ₺ kaydedilir.",
+      "E": "Direkt İşçilik Giderleri hesabının borç tarafına 280.000 ₺ kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Teslim alan işletme malların kontrolünü edinmemiştir. Bu nedenle mallar onun varlığı değildir ve kendi stoklarında raporlanmaz.",
+    "correctAnswer": "E",
+    "explanation": "Doğrudan üretimde çalışan işçilerin ücreti 720 Direkt İşçilik Giderleri (280.000 ₺), fabrika müdürünün ücreti 730 Genel Üretim Giderleri (70.000 ₺), satış temsilcilerinin ücreti 760 hesabına (90.000 ₺) borç yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 ve TFRS 15 - konsinye stoklar"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 720"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-041",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Maliyeti 48.000 TL olan bir stokun tahmini satış fiyatı 52.000 TL, tamamlanma maliyeti 3.000 TL ve satış maliyeti 4.000 TL'dir. Stok hangi tutarla ölçülür?",
+    "question": "Kozmetik ürünleri satan işletme, yeni açılan bir alışveriş merkezindeki tanıtım etkinliğinde stok kartlarında maliyeti 14.000 ₺ görünen ürünleri ziyaretçilere ücretsiz olarak dağıtmıştır. Dağıtılan ürünlere ilişkin KDV etkisi bu soruda dikkate alınmayacaktır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "55.000 TL",
-      "B": "49.000 TL",
-      "C": "48.000 TL",
-      "D": "45.000 TL",
-      "E": "52.000 TL"
+      "A": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 14.000\n    153 TİCARİ MALLAR 14.000\n```",
+      "B": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 14.000\n    600 YURT İÇİ SATIŞLAR 14.000\n```",
+      "C": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 14.000\n    153 TİCARİ MALLAR 14.000\n```",
+      "D": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 14.000\n    153 TİCARİ MALLAR 14.000\n```",
+      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ 14.000\n    153 TİCARİ MALLAR 14.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Net gerçekleşebilir değer 52.000 - 3.000 - 4.000 = 45.000 TL'dir. Maliyet 48.000 TL'den düşük olduğu için stok 45.000 TL ile ölçülür.",
+    "correctAnswer": "C",
+    "explanation": "Tanıtım amacıyla bedelsiz dağıtılan mallar satış değildir; maliyetleri pazarlama gideri olarak 760 Pazarlama, Satış ve Dağıtım Giderleri hesabına borç, 153 Ticari Mallar hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet ve net gerçekleşebilir değerin düşüğü"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 760/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-042",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Bir stokun maliyeti 70.000 TL, net gerçekleşebilir değeri 62.000 TL'dir. Ayrılması gereken değer düşüklüğü kaç TL'dir?",
+    "question": "Dönem sonunda üretim hattında bulunan yarı mamullerin o güne kadar biriken maliyeti 180.000 ₺’dir. Bu ürünlerin tamamlanması için 45.000 ₺ daha üretim maliyetine katlanılacak, tamamlanan ürünler 230.000 ₺’ye satılacak ve satış için 20.000 ₺ dağıtım gideri yapılacaktır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "62.000 TL",
-      "B": "70.000 TL",
-      "C": "8.000 TL",
-      "D": "Değer düşüklüğü yoktur.",
-      "E": "132.000 TL"
+      "A": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 45.000 ₺ kaydedilir.",
+      "B": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "C": "Yarı Mamuller - Üretim hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "D": "Karşılık Giderleri hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "E": "Stok Değer Düşüklüğü Karşılığı hesabının alacak tarafına 35.000 ₺ kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Stok 70.000 TL maliyetten 62.000 TL net gerçekleşebilir değere indirilir. Aradaki 8.000 TL değer düşüklüğü giderleştirilir.",
+    "correctAnswer": "B",
+    "explanation": "Yarı mamulün NGD’si tahmini satış fiyatından tamamlama ve satış maliyetleri düşülerek bulunur: 230.000 − 45.000 − 20.000 = 165.000 ₺. 15.000 ₺ indirim 654 borç, 158 alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değere indirim"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: yarı mamul NGD"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-043",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Maliyeti 90.000 TL olan stok önceki dönemde 72.000 TL'ye düşürülmüştür. Cari dönemde net gerçekleşebilir değer 85.000 TL'ye yükselmiştir. Yeni defter değeri kaç TL olur?",
+    "question": "7/A seçeneğini uygulayan üretim işletmesinde ay içinde 710 hesabında 160.000 ₺, 720 hesabında 280.000 ₺, 730 hesabında 130.000 ₺ tutarında üretim gideri birikmiştir. Ay sonunda üretim giderleri üretim maliyetine aktarılacak, üretim henüz tamamlanmamıştır.\n\nAy sonunda maliyet hesaplarına aktarım kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "103.000 TL",
-      "B": "18.000 TL",
-      "C": "85.000 TL",
-      "D": "90.000 TL",
-      "E": "72.000 TL"
+      "A": "```text\n152 MAMULLER 570.000\n    711 DİREKT İLK MADDE VE MALZEME YANSITMA HESABI 160.000\n    721 DİREKT İŞÇİLİK GİDERLERİ YANSITMA HESABI 280.000\n    731 GENEL ÜRETİM GİDERLERİ YANSITMA HESABI 130.000\n```",
+      "B": "```text\n151 YARI MAMULLER - ÜRETİM 570.000\n    710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 160.000\n    720 DİREKT İŞÇİLİK GİDERLERİ 280.000\n    730 GENEL ÜRETİM GİDERLERİ 130.000\n```",
+      "C": "```text\n620 SATILAN MAMULLER MALİYETİ 570.000\n    711 DİREKT İLK MADDE VE MALZEME YANSITMA HESABI 160.000\n    721 DİREKT İŞÇİLİK GİDERLERİ YANSITMA HESABI 280.000\n    731 GENEL ÜRETİM GİDERLERİ YANSITMA HESABI 130.000\n```",
+      "D": "```text\n711 DİREKT İLK MADDE VE MALZEME YANSITMA HESABI 160.000\n721 DİREKT İŞÇİLİK GİDERLERİ YANSITMA HESABI 280.000\n731 GENEL ÜRETİM GİDERLERİ YANSITMA HESABI 130.000\n    151 YARI MAMULLER - ÜRETİM 570.000\n```",
+      "E": "```text\n151 YARI MAMULLER - ÜRETİM 570.000\n    711 DİREKT İLK MADDE VE MALZEME YANSITMA HESABI 160.000\n    721 DİREKT İŞÇİLİK GİDERLERİ YANSITMA HESABI 280.000\n    731 GENEL ÜRETİM GİDERLERİ YANSITMA HESABI 130.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Önceki değer düşüklüğü, yeni net gerçekleşebilir değere kadar iptal edilir; ancak maliyet aşılamaz. Yeni değer 85.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "7/A’da gider hesapları dönem sonuna kadar bakiye taşır; üretim maliyetine aktarım yansıtma hesapları üzerinden yapılır: 151 Yarı Mamuller – Üretim 570.000 ₺ borç, 711, 721 ve 731 alacak. Dönem sonunda 710 ile 711 birbirine kapatılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - değer düşüklüğü iptali"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 7/A yansıtma"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-044",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Üretimde kullanılacak hammaddenin piyasa fiyatı maliyetinin altına düşmüştür; ancak üretilecek mamulün maliyet veya üstünde satılması beklenmektedir. TMS 2'ye göre genel yaklaşım hangisidir?",
+    "question": "Yıl sonunda mamul ambarında yapılan sayımda kayıtlara göre 2.400 adet olması gereken bir üründen 2.450 adet bulunmuştur. Ürünün birim üretim maliyeti 120 ₺’dir; fazlalığın bir üretim fişinin kaydedilmemesinden kaynaklanıp kaynaklanmadığı araştırılmaktadır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Hammadde mutlaka sıfırlanır.",
-      "B": "Mamulün maliyet veya üstünde satılması bekleniyorsa hammadde maliyet altına indirilmez.",
-      "C": "Hammadde duran varlığa aktarılır.",
-      "D": "Hammadde gerçeğe uygun değer artışıyla ölçülür.",
-      "E": "Mamul maliyetinden bağımsız olarak her düşüş gider yazılır."
+      "A": "```text\n152 MAMULLER 6.000\n    397 SAYIM VE TESELLÜM FAZLALARI 6.000\n```",
+      "B": "```text\n153 TİCARİ MALLAR 6.000\n    397 SAYIM VE TESELLÜM FAZLALARI 6.000\n```",
+      "C": "```text\n152 MAMULLER 6.000\n    679 DİĞER OLAĞANDIŞI GELİR VE KÂRLAR 6.000\n```",
+      "D": "```text\n397 SAYIM VE TESELLÜM FAZLALARI 6.000\n    152 MAMULLER 6.000\n```",
+      "E": "```text\n152 MAMULLER 6.000\n    620 SATILAN MAMULLER MALİYETİ 6.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Hammaddenin kullanıldığı mamullerin maliyet veya üstünde satılması bekleniyorsa hammadde yalnız fiyat düşüşü nedeniyle maliyet altına indirilmez.",
+    "correctAnswer": "A",
+    "explanation": "Fazla bulunan 50 adet × 120 ₺ = 6.000 ₺ mamul, nedeni araştırılırken 152 Mamuller borç, 397 Sayım ve Tesellüm Fazlaları alacak ile kaydedilir. 153 ticari malları izler.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - hammadde değer düşüklüğü"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 152/397"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-045",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Raporlama döneminden sonra ortaya çıkan satış bilgisi, dönem sonundaki net gerçekleşebilir değer tahmininde ne zaman dikkate alınır?",
+    "question": "Tek bir üretim hattında üretilen, aynı amaçla kullanılan, aynı pazarda satılan ve diğer ürünlerden ayrı olarak değerlendirilmesi pratik olmayan beş farklı renk ve boyuttaki boya ürünü için işletme NGD testi yapacaktır. İşletmenin toplam stok tutarı 12 ürün grubundan oluşmaktadır.\n\nİndirimin uygulanacağı düzeyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız satış zararla sonuçlanırsa; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "B": "Her durumda yeni dönemin geliri olarak; söz konusu tutar bu sınıflandırma çerçevesinde raporlanır.",
-      "C": "Dönem sonunda mevcut koşullar hakkında kanıt sağladığı ölçüde",
-      "D": "Hiçbir zaman",
-      "E": "Yalnız yönetim isterse"
+      "A": "Tüm stoklar tek bir toplam olarak değerlendirilir.",
+      "B": "Mamuller grubu bütünüyle tek kalem sayılır.",
+      "C": "Benzer boya ürünleri bir grup olarak değerlendirilebilir.",
+      "D": "Coğrafi bölge bazında toplu indirim yapılır.",
+      "E": "Her renk ayrı değerlendirilir, gruplama yasaktır."
     },
     "correctAnswer": "C",
-    "explanation": "Raporlama sonrasındaki olay, dönem sonundaki koşulları doğrulayan kanıt sağlıyorsa net gerçekleşebilir değer tahmininde dikkate alınır.",
+    "explanation": "İndirim genellikle kalem bazında yapılır; aynı ürün hattına ait, benzer amaçlı ve ayrı değerlendirilmesi pratik olmayan kalemler gruplanabilir. Tüm mamuller veya bir coğrafi bölge tek kalem olarak ele alınamaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar ve TMS 10 Raporlama Döneminden Sonraki Olaylar"
+      "legislationRef": "TMS 2 md. 29"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-046",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Net gerçekleşebilir değerin belirlenmesinde değer düşüklüğü incelemesi kural olarak hangi düzeyde yapılır?",
+    "question": "İşletme dönem sonundan önce, gelecek ay teslim alınacak 250.000 ₺ + KDV’lik ticari mal siparişi için satıcıya 75.000 ₺ avans ödemiş ve bunu 159 hesabına kaydetmiştir. Mallar 31 Aralık itibarıyla henüz yola çıkmamıştır.\n\nBu avansın bilançoda gösterildiği yer aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Her stok kalemi için ayrı ayrı",
-      "B": "Yalnız satış mağazası düzeyinde",
-      "C": "Yalnız faaliyet bölümü düzeyinde",
-      "D": "Yalnız stok sınıfı toplamında",
-      "E": "Yalnız işletme toplamı düzeyinde"
+      "A": "Dönen varlıklar – Ticari alacaklar grubu",
+      "B": "Duran varlıklar – Verilen avanslar",
+      "C": "Kısa vadeli borçlar – Alınan avanslar",
+      "D": "Dönen varlıklar – Stoklar grubu",
+      "E": "Dönen varlıklar – Hazır değerler grubu"
     },
-    "correctAnswer": "A",
-    "explanation": "Stoklar normalde kalem kalem değerlendirilir. Yalnız benzer amaç veya son kullanıma sahip ilişkili kalemlerin birlikte değerlendirilmesi bazı durumlarda uygun olabilir.",
+    "correctAnswer": "D",
+    "explanation": "159 Verilen Sipariş Avansları stok alımına ilişkin olduğundan THP’de Stoklar grubunda yer alır. Duran varlık alımına ilişkin avanslar 259 hesabında, alınan avanslar ise kısa vadeli borçlarda (340) izlenir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değerin kalem bazında değerlendirilmesi"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 159"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-047",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Hangi durumda net gerçekleşebilir değer değerlendirmesinde bazı stok kalemlerinin birlikte ele alınması uygun olabilir?",
+    "question": "İşletme ticari mal alımında satıcının peşin fiyatı 400.000 ₺ iken, 6 ay vadeli ödeme seçeneğini tercih ederek 424.000 ₺ üzerinden anlaşmıştır. Bu vade farkı olağan kredi koşullarını aşan bir finansman unsuru içermektedir; KDV etkisi dikkate alınmayacaktır.\n\nAlım tarihinde stokların maliyetiyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız maliyetleri eşit olan tüm varlıklar için; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır.",
-      "B": "Bütün işletme stokları için koşulsuz",
-      "C": "Benzer amaç veya son kullanıma sahip, aynı coğrafi alanda üretilip pazarlanan ilişkili kalemler için",
-      "D": "Stok olmayan duran varlıklarla birlikte",
-      "E": "Farklı faaliyet bölümlerine ait tüm stoklar için; finansal tablo sunumunda bu sonuca göre işlem yapılır."
+      "A": "Stok 400.000 ₺ ile kaydedilir, fark vade süresince faiz gideridir.",
+      "B": "Stok 424.000 ₺ ile kaydedilir, fark stok maliyetine girer.",
+      "C": "Stok 400.000 ₺ ile kaydedilir, fark alım tarihinde gider yazılır.",
+      "D": "Stok 24.000 ₺ tutarında maliyet düzeltmesiyle azaltılır.",
+      "E": "Stok 424.000 ₺ ile kaydedilir, fark satışta hasılattan düşülür."
     },
-    "correctAnswer": "C",
-    "explanation": "Aynı ürün hattına ilişkin, benzer amaç veya son kullanıma sahip ve ayrı değerlendirilmesi pratik olmayan ilişkili stoklar birlikte incelenebilir.",
+    "correctAnswer": "A",
+    "explanation": "Vadeli alım bir finansman unsuru içeriyorsa normal kredi koşullarındaki alış fiyatı (400.000 ₺) ile vadeli tutar arasındaki 24.000 ₺, finansman süresi boyunca faiz gideri olarak muhasebeleştirilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - ilişkili stok kalemlerinin gruplandırılması"
+      "legislationRef": "TMS 2 md. 18"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-048",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Aşağıdakilerden hangisi TMS 2'ye göre değer düşüklüğü değerlendirmesinde genellikle uygun değildir?",
+    "question": "Bir mühendislik danışmanlık şirketi yıl sonunda tamamlanmamış ve henüz hasılatı kaydedilmemiş bir proje için şu maliyetlere katlanmıştır: projede doğrudan çalışan mühendislerin ücretleri, projeye ilişkin sahaya ulaşım gideri, satış bölümü çalışanlarının ücretleri ve merkez genel yönetim giderleri.\n\nBu maliyetlerden hangisi hizmet stoklarının maliyetine dâhil edilir?",
     "choices": {
-      "A": "Tamamlanma maliyetlerini tahmin etmek",
-      "B": "Satış için gerekli maliyetleri dikkate almak",
-      "C": "Yakın ilişkili ürün grubunu koşulları varsa birlikte değerlendirmek",
-      "D": "Stok kalemini tek başına değerlendirmek",
-      "E": "Bir faaliyet bölümündeki tüm mamulleri nitelikleri farklı olsa da tek grup kabul etmek"
+      "A": "Satış bölümü çalışanlarının ücretleri",
+      "B": "Projede çalışan mühendislerin ücretleri",
+      "C": "Merkez genel yönetim giderlerinin tamamı",
+      "D": "Teklif hazırlığında oluşan pazarlama giderleri",
+      "E": "Tamamlanmış diğer projelerin genel giderleri"
     },
-    "correctAnswer": "E",
-    "explanation": "Farklı nitelik ve kullanımlardaki stokların yalnız aynı faaliyet bölümünde oldukları için topluca değerlendirilmesi kalem bazlı ölçümü bozabilir.",
+    "correctAnswer": "B",
+    "explanation": "Hizmet sağlayıcıların stok maliyeti, hizmeti doğrudan veren personelin işçilik ve diğer maliyetleri ile ilgili genel giderlerden oluşur; satış ve genel yönetim personeline ilişkin giderler dâhil edilmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değer değerlendirmesi"
+      "legislationRef": "TMS 2 md. 19"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-049",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stoklar satıldığında bu stokların defter değeri ne zaman gider olarak finansal tablolara yansıtılır?",
+    "question": "Soğuk hava deposu işleten işletme, bir tarım kooperatifine ait 900 ton elmayı aylık ücret karşılığında kendi deposunda saklamaktadır. Elmaların mülkiyeti kooperatifte kalmakta, kooperatif istediği zaman elmaları çekip satabilmektedir.\n\nDepo işletmecisi açısından elmalarla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Ödeme yapıldığı anda",
-      "B": "Stok satın alındığı anda; uygulama benzer nitelikteki işlemlere de aynı biçimde yansıtılır.",
-      "C": "Yalnız nakit satışlarda",
-      "D": "Dönem sonundan bir yıl sonra; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur.",
-      "E": "İlgili hasılatın finansal tablolara alındığı dönemde"
+      "A": "Elmalar ticari mal olarak kaydedilir.",
+      "B": "Elmalar işletmenin stoklarına alınmaz.",
+      "C": "Elmalar mamul olarak kaydedilir.",
+      "D": "Elmalar diğer stoklarda izlenir.",
+      "E": "Elmaların yarısı stoklara alınır."
     },
-    "correctAnswer": "E",
-    "explanation": "Stokun defter değeri, stokun satışından doğan ilgili hasılatın muhasebeleştirildiği dönemde gider olarak kâr veya zarara yansıtılır.",
+    "correctAnswer": "B",
+    "explanation": "Kontrolü ve mülkiyeti başkasına ait olan emanet mallar işletmenin varlığı değildir; stok olarak kaydedilmez, gerekirse nazım hesaplarda izlenir. İşletmenin geliri depolama hizmet bedelidir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - gider olarak kaydetme"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: emanet mal"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-050",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stokların net gerçekleşebilir değere indirgenmesi nedeniyle ortaya çıkan değer düşüklüğü nasıl muhasebeleştirilir?",
+    "question": "Bir işletme stok izleme yöntemini değiştirmeyi düşünmektedir. Mevcut sistemde satılan malın maliyeti ancak yıl sonu sayımından sonra bulunabilmekte, ara dönem mali tablolarda tahmin kullanılmaktadır. Yönetim her an stok mevcudunu ve satış maliyetini kayıtlardan izleyebilmek istemektedir.\n\nYönetimin geçmeyi düşündüğü yöntemle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "İndirimin oluştuğu dönemde gider olarak kaydedilir.",
-      "B": "Gelecek yıllara ertelenir; söz konusu tutar bu sınıflandırma çerçevesinde raporlanır.",
-      "C": "Yalnız dipnotta açıklanır.",
-      "D": "Doğrudan sermayeye eklenir; ilgili hesap veya kalem bu esasa göre belirlenir.",
-      "E": "Satış hasılatına eklenir."
+      "A": "Maliyet dönem sonunda formülle tek kayıtla bulunur.",
+      "B": "Dönem sonu sayımı gereksiz hâle gelir.",
+      "C": "Satılan malın maliyeti hesabı kullanılmaz.",
+      "D": "Stok hesabı dönem içinde alışlarla artar, satışlarla azalmaz.",
+      "E": "Her satışta maliyet kaydı yapılır, sayım farkları ayrıca görülür."
     },
-    "correctAnswer": "A",
-    "explanation": "Stok değer düşüklüğü ve stok kayıpları meydana geldikleri dönemde gider olarak kâr veya zarara yansıtılır.",
+    "correctAnswer": "E",
+    "explanation": "Sürekli envanterde her giriş ve çıkış stok hesabına işlenir; satışta 621 borç, 153 alacak yazılır. Sayım yine yapılır ve kayıtlı mevcutla fiilî mevcut arasındaki farklar 197/397 aracılığıyla ortaya çıkar.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - değer düşüklüğünün giderleştirilmesi"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: envanter yöntemleri"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-051",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Önceki dönemde ayrılan stok değer düşüklüğünün bir kısmı cari dönemde iptal edilirse iptal tutarı nasıl sunulur?",
+    "question": "Sadece KDV’den istisna teslimlerde bulunan ve bu alımına ilişkin KDV’yi indirim konusu yapma hakkı olmayan işletme, satmak üzere 150.000 ₺ + %20 KDV bedelle ticari mal satın almış, bedeli banka havalesiyle ödemiştir. Alışta başka gider yoktur.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Hiçbir finansal etki doğurmaz.",
-      "B": "Doğrudan sermayeyi azaltır.",
-      "C": "Yeni bir satış hasılatı oluşturur; finansal tablo sunumunda bu sonuca göre işlem yapılır.",
-      "D": "Duran varlık maliyetine eklenir; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur.",
-      "E": "Cari dönemde gider olarak muhasebeleştirilen stok tutarını azaltır."
+      "A": "Ticari Mallar hesabının borç tarafına 150.000 ₺ kaydedilir.",
+      "B": "İndirilecek KDV hesabının borç tarafına 30.000 ₺ kaydedilir.",
+      "C": "Genel Yönetim Giderleri hesabının borç tarafına 30.000 ₺ kaydedilir.",
+      "D": "Ticari Mallar hesabının borç tarafına 180.000 ₺ kaydedilir.",
+      "E": "Peşin Ödenen Vergiler ve Fonlar hesabının borç tarafına 30.000 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Değer düşüklüğü iptali, iptalin gerçekleştiği dönemde gider olarak muhasebeleştirilen stok tutarının azaltılması şeklinde kâr veya zarara yansıtılır.",
+    "correctAnswer": "D",
+    "explanation": "Satın alma maliyeti, işletmenin vergi idaresinden geri alamayacağı vergileri de kapsar. İndirilemeyen 30.000 ₺ KDV maliyete eklenir: 153 borç 180.000 ₺, 102 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - değer düşüklüğü iptalinin sunumu"
+      "legislationRef": "TMS 2 md. 11"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-052",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Stoklarla ilgili finansal tablo dipnotlarında aşağıdakilerden hangisi açıklanmalıdır?",
+    "question": "Üretim işletmesi geçen hafta vadeli olarak aldığı 250.000 ₺ + %20 KDV tutarındaki ilk madde ve malzemenin 40.000 ₺’lik kısmını kalite kontrolde standart dışı bulmuş ve iade faturası düzenleyerek satıcıya geri göndermiştir. İade edilen malzeme üretime alınmamıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Çalışanların ücret listesi",
-      "B": "Yalnız bir sonraki yılın satış hedefi; finansal tablo sunumunda bu sonuca göre işlem yapılır.",
-      "C": "Kullanılan maliyet formülü dâhil stokların ölçümünde benimsenen muhasebe politikaları",
-      "D": "Yalnız işletme sahibinin adı; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur.",
-      "E": "Rakiplerin stok miktarları"
+      "A": "```text\n320 SATICILAR 48.000\n    153 TİCARİ MALLAR 40.000\n    191 İNDİRİLECEK KDV 8.000\n```",
+      "B": "```text\n320 SATICILAR 48.000\n    150 İLK MADDE VE MALZEME 40.000\n    391 HESAPLANAN KDV 8.000\n```",
+      "C": "```text\n320 SATICILAR 48.000\n    150 İLK MADDE VE MALZEME 40.000\n    191 İNDİRİLECEK KDV 8.000\n```",
+      "D": "```text\n320 SATICILAR 48.000\n    710 DİREKT İLK MADDE VE MALZEME GİDERLERİ 40.000\n    191 İNDİRİLECEK KDV 8.000\n```",
+      "E": "```text\n150 İLK MADDE VE MALZEME 40.000\n191 İNDİRİLECEK KDV 8.000\n    320 SATICILAR 48.000\n```"
     },
     "correctAnswer": "C",
-    "explanation": "İşletme stok ölçümünde kullandığı muhasebe politikalarını ve maliyet formüllerini açıklar; bu bilgi karşılaştırılabilirlik için gereklidir.",
+    "explanation": "Üretime alınmamış malzemenin iadesi 150 İlk Madde ve Malzeme hesabını 40.000 ₺ azaltır; indirilen KDV’nin 8.000 ₺’lik kısmı 191’e alacak yazılarak düzeltilir, satıcı borcu 48.000 ₺ azalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - açıklamalar"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 320/150/191"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-053",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "TMS 2 kapsamında stokların finansal tablolardaki açıklamasında aşağıdakilerden hangisi yer alır?",
+    "question": "7/A seçeneğini uygulayan ve ilk madde çıkışlarını dönem sonu sayımıyla belirleyen işletmenin hammadde ambarına ilişkin yıllık bilgileri şöyledir: dönem başı stok 70.000 ₺, alışlar 510.000 ₺, alıştan iadeler 15.000 ₺, dönem sonu sayım stoku 95.000 ₺. Hammaddenin tamamı doğrudan üretimde kullanılmıştır.\n\nBu işleme ilişkin hammadde kullanım kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız nakit ödenen alışlar",
-      "B": "Yalnız dönem sonu birim sayısı; finansal tablo sunumunda bu sonuca göre işlem yapılır.",
-      "C": "Yalnız ithal stoklar",
-      "D": "Stokların toplam defter değeri ve işletmeye uygun sınıflar itibarıyla defter değerleri",
-      "E": "Yalnız stokların toplam satış fiyatı; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır."
+      "A": "Direkt İlk Madde ve Malzeme Giderleri hesabının borç tarafına 485.000 ₺ kaydedilir.",
+      "B": "Genel Üretim Giderleri hesabının borç tarafına 470.000 ₺ kaydedilir.",
+      "C": "İlk Madde ve Malzeme hesabının borç tarafına 470.000 ₺ kaydedilir.",
+      "D": "Direkt İlk Madde ve Malzeme Giderleri hesabının borç tarafına 495.000 ₺ kaydedilir.",
+      "E": "Direkt İlk Madde ve Malzeme Giderleri hesabının borç tarafına 470.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Stokların toplam defter değeri ile ticari mal, ilk madde, yarı mamul ve mamul gibi işletmeye uygun sınıflar bazındaki tutarlar açıklanır.",
+    "correctAnswer": "E",
+    "explanation": "Kullanılan hammadde = 70.000 + 510.000 − 15.000 − 95.000 = 470.000 ₺. Doğrudan üretimde kullanıldığı için 710 borç, 150 İlk Madde ve Malzeme alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - stok sınıfları itibarıyla açıklama"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 710"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-054",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Borçlar için teminat olarak gösterilen stokların defter değeri açısından hangi uygulama gerekir?",
+    "question": "İşletme bir aracı firma aracılığıyla 800 adet ürünü tanesi 450 ₺ + KDV’den satın almıştır. Aracı firmaya alış bedelinin %2’si oranında komisyon ödenmiş, satıcı toplu alım nedeniyle faturada %5 miktar iskontosu uygulamıştır. Ürünlerin depoya taşınması 6.000 ₺ tutmuştur.\n\nÜrünlerin stok maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "Borç tutarı stok maliyetine eklenir.",
-      "B": "Stoklar finansal tablolardan çıkarılır.",
-      "C": "Bütün stoklar gerçeğe uygun değere yükseltilir.",
-      "D": "Hiçbir bilgi verilmez.",
-      "E": "Teminat verilen stokların defter değeri açıklanır."
+      "A": "348.000",
+      "B": "348.840",
+      "C": "354.840",
+      "D": "355.200",
+      "E": "373.200"
     },
-    "correctAnswer": "E",
-    "explanation": "Yükümlülükler için teminat olarak verilen stokların defter değeri, finansal tablo kullanıcılarına risk ve kısıtlar hakkında bilgi vermek için açıklanır.",
+    "correctAnswer": "C",
+    "explanation": "Faturadaki iskonto düşülür: 360.000 × 0,95 = 342.000 ₺. Komisyon alış bedelinin %2’si: 6.840 ₺. Taşıma 6.000 ₺. Maliyet 342.000 + 6.840 + 6.000 = 354.840 ₺; KDV indirilebilir olduğundan dâhil edilmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - teminat verilen stokların açıklanması"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: satın alma maliyeti"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-055",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Aşağıdakilerden hangisi TMS 2'nin kapsamı dışında olup esas olarak TMS 41 kapsamında değerlendirilir?",
+    "question": "İşletme kullandığı işletme kredisine karşılık 2.000.000 ₺ tutarındaki ticari mal stokunu bankaya rehin olarak göstermiştir. Finansal tablolar hazırlanırken muhasebe müdürü rehinli stoklarla ilgili hangi bilgilerin sunulacağını belirlemektedir.\n\nTMS 2’ye göre bu durumla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Tarımsal faaliyetle ilgili canlı varlıklar ve hasat anındaki tarımsal ürünler",
-      "B": "Üretimi devam eden yarı mamuller; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır.",
-      "C": "İşletmenin ürettiği mamuller",
-      "D": "Perakendecinin satış için aldığı mallar; bu değerlendirme ilgili işlemin muhasebeleştirilmesinde esas alınır.",
-      "E": "Üretimde kullanılacak hammadde"
+      "A": "Rehinli stoklar bilanço dışına çıkarılır.",
+      "B": "Rehinli stokların defter değeri açıklanır.",
+      "C": "Rehinli stoklar alacak olarak sınıflandırılır.",
+      "D": "Rehinli stoklar gerçeğe uygun değere çekilir.",
+      "E": "Rehin tutarı stoklardan düşülerek gösterilir."
     },
-    "correctAnswer": "A",
-    "explanation": "Tarımsal faaliyetle ilgili canlı varlıklar ile hasat anındaki tarımsal ürünler TMS 41 kapsamındadır; TMS 2'nin genel kapsamı dışındadır.",
+    "correctAnswer": "B",
+    "explanation": "TMS 2, borçlar karşılığında teminat olarak rehnedilen stokların defter değerinin açıklanmasını ister; stoklar işletmenin varlığı olmaya devam eder, ölçüm esası değişmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar kapsam ve TMS 41 Tarımsal Faaliyetler"
+      "legislationRef": "TMS 2 md. 36"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-056",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Emtia alım satımına aracılık eden bir işletme stoklarını yakın gelecekte satıp fiyat dalgalanmalarından kazanç sağlamak amacıyla tutmaktadır. TMS 2'deki özel ölçüm istisnası kapsamında stoklar hangi tutarla ölçülebilir?",
+    "question": "Bir ticaret işletmesinin yıl içinde sattığı malların maliyeti 4.200.000 ₺, yıl içinde ayrılan stok değer düşüklüğü 60.000 ₺, önceki yıl ayrılan ve bu yıl fiyat artışıyla iptal edilen değer düşüklüğü 15.000 ₺’dir.\n\nBu tutarların gelir tablosuna yansıtılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Kullanım değeriyle; bu değerlendirme ilgili işlemin muhasebeleştirilmesinde esas alınır.",
-      "B": "Satış maliyetleri düşülmüş gerçeğe uygun değerle",
-      "C": "Tasfiye değeriyle",
-      "D": "Nominal değerle",
-      "E": "Yalnız tarihî maliyetle; söz konusu tutar bu sınıflandırma çerçevesinde raporlanır."
+      "A": "Satılan stokun maliyeti tahsilatın yapıldığı dönemde gider yazılır.",
+      "B": "Değer düşüklüğü iptali doğrudan özkaynakta gösterilir.",
+      "C": "Değer düşüklüğü bir sonraki yıl satış olunca gider yazılır.",
+      "D": "Satılan stokun defter değeri hasılatın kaydedildiği dönemde gider yazılır.",
+      "E": "Satılan stokun maliyeti ilgili alışın yapıldığı dönemde gider yazılır."
     },
-    "correctAnswer": "B",
-    "explanation": "Emtia alım satımına aracılık edenlerin bu nitelikteki stokları satış maliyetleri düşülmüş gerçeğe uygun değerle ölçülebilir; değişimler kâr veya zarara yansıtılır.",
+    "correctAnswer": "D",
+    "explanation": "Stoklar satıldığında defter değerleri ilgili hasılatın muhasebeleştirildiği dönemde gider yazılır. Değer düşüklüğü oluştuğu dönemde gider, iptali ise iptalin olduğu dönemde gider azalışı olarak kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar paragraf 3-5"
+      "legislationRef": "TMS 2 md. 34"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-057",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Müşteri sözleşmesinin yerine getirilmesi için katlanılan ancak stok veya başka bir standart kapsamında varlık oluşturmayan maliyetler hangi standarda göre değerlendirilir?",
+    "question": "Tekstil üreticisinin ay başında üretimde bulunan 90.000 ₺’lik yarı mamulüne ay içinde 410.000 ₺ üretim maliyeti eklenmiştir. Ay sonunda 60.000 ₺ maliyetli yarı mamul üretim hattında kalmış, geri kalan ürünler tamamlanarak mamul ambarına alınmıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız TMS 2",
-      "B": "TMS 33 Hisse Başına Kazanç",
-      "C": "TMS 7 Nakit Akış Tablosu",
-      "D": "TFRS 8 Faaliyet Bölümleri",
-      "E": "TFRS 15 Müşteri Sözleşmelerinden Hasılat"
+      "A": "```text\n152 MAMULLER 410.000\n    151 YARI MAMULLER - ÜRETİM 410.000\n```",
+      "B": "```text\n152 MAMULLER 500.000\n    151 YARI MAMULLER - ÜRETİM 500.000\n```",
+      "C": "```text\n620 SATILAN MAMULLER MALİYETİ 440.000\n    151 YARI MAMULLER - ÜRETİM 440.000\n```",
+      "D": "```text\n151 YARI MAMULLER - ÜRETİM 440.000\n    152 MAMULLER 440.000\n```",
+      "E": "```text\n152 MAMULLER 440.000\n    151 YARI MAMULLER - ÜRETİM 440.000\n```"
     },
     "correctAnswer": "E",
-    "explanation": "Sözleşmenin ifası için katlanılan ve stok ya da başka bir standart kapsamında varlık oluşturmayan maliyetler TFRS 15 hükümlerine göre değerlendirilir.",
+    "explanation": "Tamamlanan üretimin maliyeti = dönem başı yarı mamul + dönem üretim maliyeti − dönem sonu yarı mamul = 90.000 + 410.000 − 60.000 = 440.000 ₺; 152 Mamuller borç, 151 alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar ve TFRS 15 Müşteri Sözleşmelerinden Hasılat"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 152/151"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-058",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Aşağıdaki stok sınıflandırmalarından hangisi bütünüyle doğrudur?",
+    "question": "İşletme bir müşterisine sattığı malları, sözleşme gereği masrafları kendisine ait olmak üzere müşterinin deposuna teslim etmiştir. Nakliyeciye 7.500 ₺ + %20 KDV taşıma bedeli peşin ödenmiştir; satış faturası daha önce kaydedilmiştir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yarı mamul—satın alınmış duran varlık; ticari mal—kullanılan makine",
-      "B": "Yarı mamul—satış gideri; hammadde—finansman gideri",
-      "C": "Hammadde—üretimde kullanılacak girdi; yarı mamul—üretimi süren ürün; mamul—üretimi tamamlanmış ürün",
-      "D": "Ticari mal—yalnız işletmede üretilen ürün; mamul—yeniden satılmak için alınan ürün",
-      "E": "Hammadde—satış için tamamlanmış ürün; mamul—üretimde kullanılacak malzeme"
+      "A": "```text\n153 TİCARİ MALLAR 7.500\n191 İNDİRİLECEK KDV 1.500\n    100 KASA 9.000\n```",
+      "B": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 7.500\n191 İNDİRİLECEK KDV 1.500\n    100 KASA 9.000\n```",
+      "C": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 9.000\n    100 KASA 9.000\n```",
+      "D": "```text\n120 ALICILAR 9.000\n    100 KASA 9.000\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 7.500\n191 İNDİRİLECEK KDV 1.500\n    100 KASA 9.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Hammadde üretim girdisidir, yarı mamulün üretimi sürmektedir, mamulün üretimi tamamlanmıştır. Yeniden satılmak için alınan ürün ise ticari maldır.",
+    "correctAnswer": "B",
+    "explanation": "Satılan malın alıcıya ulaştırılması satıcı açısından dağıtım gideridir, stok maliyetine eklenmez: 760 borç 7.500 ₺, 191 borç 1.500 ₺, 100 Kasa alacak 9.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - stok sınıfları"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 760"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-059",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Devamlı envanter yöntemini aralıklı envanter yönteminden ayıran temel özellik hangisidir?",
+    "question": "Muhasebe servisi aynı ay içinde yaptığı bir kontrolde, KDV’si indirilebilir 55.000 ₺ + %20 KDV tutarındaki ticari mal alışının KDV dâhil 66.000 ₺ olarak 153 Ticari Mallar hesabına borç yazıldığını fark etmiştir. Beyanname henüz verilmemiş ve mallar henüz satılmamıştır.\n\nDüzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Satılan mal maliyetinin yalnız işletme kapanırken belirlenmesi",
-      "B": "Dönem sonu sayımının yasak olması",
-      "C": "Stok miktarının hiçbir zaman izlenmemesi",
-      "D": "Her satışla birlikte stok ve satılan mal maliyeti kayıtlarının sürekli güncellenmesi",
-      "E": "Alışların doğrudan gider yazılması"
+      "A": "```text\n153 TİCARİ MALLAR 11.000\n    191 İNDİRİLECEK KDV 11.000\n```",
+      "B": "```text\n191 İNDİRİLECEK KDV 11.000\n    391 HESAPLANAN KDV 11.000\n```",
+      "C": "```text\n191 İNDİRİLECEK KDV 11.000\n    320 SATICILAR 11.000\n```",
+      "D": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 11.000\n    153 TİCARİ MALLAR 11.000\n```",
+      "E": "```text\n191 İNDİRİLECEK KDV 11.000\n    153 TİCARİ MALLAR 11.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Devamlı envanterde stok hareketleri ve satılan mal maliyeti her işlemle güncellenir. Aralıklı yöntemde maliyet genellikle dönem sonu sayımıyla belirlenir.",
+    "correctAnswer": "E",
+    "explanation": "Mal maliyeti 55.000 ₺ olmalıyken 66.000 ₺ yazılmıştır. Fazla yazılan 11.000 ₺ KDV 153’ten çıkarılıp 191 İndirilecek KDV hesabına aktarılır: 191 borç, 153 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - envanter yöntemleri"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: hata düzeltme 191/153"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-stok-060",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Maliyeti 36.000 TL olan stokun tahmini satış fiyatı 40.000 TL, tamamlanma maliyeti 2.000 TL ve satış maliyeti 3.000 TL'dir. TMS 2'ye göre doğru sonuç hangisidir?",
+    "question": "Sürekli envanter uygulayan işletmenin yıl sonu sayımında bir ürün grubunda 18.000 ₺ maliyetli noksanlık bulunmuş ve 197 hesabına alınmıştır. Ocak ayı incelemesinde bu malların aralık ayında faturası kesilip kaydedilen bir satışa ait olduğu, ancak maliyet kaydının unutulduğu anlaşılmıştır.\n\nBu durumda yapılacak kayıtta alacaklandırılan hesap aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Stok 2.000 TL'ye indirilir.",
-      "B": "Stok 40.000 TL'ye yükseltilir.",
-      "C": "Stok 33.000 TL'ye indirilir.",
-      "D": "Stok 36.000 TL'de kalır; değer düşüklüğü yoktur.",
-      "E": "Stok 35.000 TL'ye indirilir ve 1.000 TL gider yazılır."
+      "A": "153 Ticari Mallar",
+      "B": "197 Sayım ve Tesellüm Noksanları",
+      "C": "621 Satılan Ticari Mallar Maliyeti",
+      "D": "600 Yurt İçi Satışlar",
+      "E": "689 Diğer Olağandışı Gider ve Zararlar"
     },
-    "correctAnswer": "E",
-    "explanation": "Net gerçekleşebilir değer 40.000 - 2.000 - 3.000 = 35.000 TL'dir. Maliyet 36.000 TL olduğundan stok 35.000 TL'ye indirilir ve 1.000 TL gider kaydedilir.",
+    "correctAnswer": "B",
+    "explanation": "Sayımda 197 borç, 153 alacak yazılmıştı. Noksanlığın nedeni kaydedilmemiş satış maliyeti olduğundan 621 Satılan Ticari Mallar Maliyeti borç, 197 alacak yazılarak geçici hesap kapatılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - net gerçekleşebilir değer"
+      "legislationRef": "TMS 2 ve MSUGT Tekdüzen Hesap Planı: 197"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Konu Havuzu",
-      "Stok Değerleme ve Maliyet"
+      "Stoklar"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "TMS 2 Stoklar, MSUGT Tekdüzen Hesap Planı ve VUK md. 274-278; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   }
 ]

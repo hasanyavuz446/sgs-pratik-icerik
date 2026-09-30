@@ -3,20 +3,20 @@
     "id": "topic-finansal-donem-001",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 16'ya göre amortismana tabi tutar nasıl belirlenir?",
+    "question": "7/A seçeneğini uygulayan üretim işletmesinin 1.200.000 ₺ maliyetli ve 50 yıl faydalı ömürlü binasının %60’ı üretim, %25’i yönetim, %15’i satış bölümü olarak kullanılmaktadır. İşletme normal (eşit tutarlı) amortisman yöntemini uygulamaktadır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Satış fiyatından birikmiş amortisman düşülerek",
-      "B": "Maliyete kalıntı değeri eklenerek",
-      "C": "Maliyetten dönem kârı düşülerek",
-      "D": "Varlığın maliyetinden kalıntı değeri düşülerek",
-      "E": "Yalnız gerçeğe uygun değer üzerinden"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 24.000\n    257 BİRİKMİŞ AMORTİSMANLAR 24.000\n```",
+      "B": "```text\n730 GENEL ÜRETİM GİDERLERİ 14.400\n770 GENEL YÖNETİM GİDERLERİ 6.000\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 3.600\n    252 BİNALAR 24.000\n```",
+      "C": "```text\n730 GENEL ÜRETİM GİDERLERİ 14.400\n770 GENEL YÖNETİM GİDERLERİ 6.000\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 3.600\n    257 BİRİKMİŞ AMORTİSMANLAR 24.000\n```",
+      "D": "```text\n151 YARI MAMULLER - ÜRETİM 14.400\n770 GENEL YÖNETİM GİDERLERİ 6.000\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 3.600\n    257 BİRİKMİŞ AMORTİSMANLAR 24.000\n```",
+      "E": "```text\n257 BİRİKMİŞ AMORTİSMANLAR 24.000\n    730 GENEL ÜRETİM GİDERLERİ 14.400\n    770 GENEL YÖNETİM GİDERLERİ 6.000\n    760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 3.600\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Amortismana tabi tutar, bir varlığın maliyetinden veya maliyet yerine geçen tutarından kalıntı değerinin düşülmesiyle bulunur.",
+    "correctAnswer": "C",
+    "explanation": "Yıllık amortisman 1.200.000 / 50 = 24.000 ₺’dir. Kullanım oranlarına göre üretime düşen 14.400 ₺ 730, yönetime düşen 6.000 ₺ 770, satışa düşen 3.600 ₺ 760 hesabına borç, toplam 257 Birikmiş Amortismanlar hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - amortismana tabi tutar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 257, 7/A"
     },
     "tags": [
       "Özgün Soru",
@@ -24,11 +24,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -36,20 +36,20 @@
     "id": "topic-finansal-donem-002",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 16'da amortismanın başlamasına ilişkin ifadeleri değerlendiriniz.\n\nI. Varlık yönetimin amaçladığı kullanıma hazır olduğunda amortisman başlar.\n\nII. Siparişin verildiği tarihte varlık kullanıma hazır olmasa da amortisman başlar.\n\nIII. Bedelin tamamen ödenmiş olması başlangıç için zorunlu değildir.\n\nBuna göre hangileri doğrudur?",
+    "question": "Vergi Usul Kanunu’na göre azalan bakiyeler yöntemini seçen işletme, 500.000 ₺’ye aldığı ve faydalı ömrü 5 yıl olarak belirlenen makinesi için ilk yıl 200.000 ₺ amortisman ayırmıştır. Makine üretimde kullanılmakta olup işletme yöntemi değiştirmemiştir.\n\nİkinci yılın sonunda yapılacak amortisman kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "Yalnız I",
-      "C": "Yalnız III",
-      "D": "I ve III",
-      "E": "I ve II"
+      "A": "Birikmiş Amortismanlar hesabının alacak tarafına 100.000 ₺ kaydedilir.",
+      "B": "Birikmiş Amortismanlar hesabının alacak tarafına 200.000 ₺ kaydedilir.",
+      "C": "Birikmiş Amortismanlar hesabının alacak tarafına 60.000 ₺ kaydedilir.",
+      "D": "Tesis, Makine ve Cihazlar hesabının alacak tarafına 120.000 ₺ kaydedilir.",
+      "E": "Birikmiş Amortismanlar hesabının alacak tarafına 120.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Amortisman, varlık amaçlanan yer ve durumda kullanıma hazır olduğunda başlar; ödeme veya sipariş tarihi tek başına belirleyici değildir.",
+    "correctAnswer": "E",
+    "explanation": "Azalan bakiyeler oranı normal oranın iki katıdır: %20 × 2 = %40. İkinci yıl amortismanı kalan değer üzerinden hesaplanır: (500.000 − 200.000) × %40 = 120.000 ₺ ve 257 hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - amortismanın başlaması"
+      "legislationRef": "VUK md. 315; THP 257"
     },
     "tags": [
       "Özgün Soru",
@@ -57,11 +57,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -69,20 +69,20 @@
     "id": "topic-finansal-donem-003",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Aşağıdaki varlıklardan hangisi kural olarak amortismana tabi tutulmaz?",
+    "question": "Dağıtım işinde kullanılan ve 450.000 ₺ maliyetle aktifleştirilen kamyonun faydalı ömrü 5 yıldır. İşletme normal amortisman yöntemini uygulamakta, amortisman giderlerini fonksiyonlarına göre ilgili 7/A hesaplarında izlemektedir. Kamyon yıl başında hizmete girmiştir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Taşıt",
-      "B": "Sınırsız yararlı ömre sahip arsa",
-      "C": "Demirbaş",
-      "D": "Üretim makinesi",
-      "E": "Yönetim binası"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 90.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "B": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 90.000\n    254 TAŞITLAR 90.000\n```",
+      "C": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 90.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "D": "```text\n257 BİRİKMİŞ AMORTİSMANLAR 90.000\n    760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 90.000\n```",
+      "E": "```text\n760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 90.000\n    268 BİRİKMİŞ AMORTİSMANLAR 90.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Arsalar kural olarak sınırsız yararlı ömre sahip olduğundan amortismana tabi tutulmaz; üzerindeki bina ayrı bir varlık olarak amortismana tabidir.",
+    "correctAnswer": "C",
+    "explanation": "Yıllık amortisman 450.000 / 5 = 90.000 ₺’dir. Dağıtımda kullanılan taşıtın amortismanı 760 Pazarlama, Satış ve Dağıtım Giderleri hesabına borç, 257 Birikmiş Amortismanlar hesabına alacak yazılır; 268 maddi olmayan varlıklar içindir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - arsa ve binalar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 760, 257"
     },
     "tags": [
       "Özgün Soru",
@@ -91,10 +91,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -102,20 +102,20 @@
     "id": "topic-finansal-donem-004",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Bir varlığın yararlı ömür tahmininin yeni bilgiler nedeniyle değiştirilmesi TMS 8'e göre nasıl uygulanır?",
+    "question": "İşletme muhasebe bölümünde kullanmak üzere 150.000 ₺ bedelle üç yıl süreli bir yazılım kullanım lisansı satın almış ve 260 Haklar hesabına kaydetmiştir. Lisans yıl başında kullanılmaya başlanmış, eşit tutarlarla itfa edilecektir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Doğrudan sermayeye kaydedilir.",
-      "B": "Muhasebe politikası değişikliği sayılır.",
-      "C": "Hiçbir kayıt yapılmaz.",
-      "D": "Önceki dönemler daima yeniden düzenlenir.",
-      "E": "Tahmin değişikliği olarak ileriye yönelik uygulanır."
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 50.000\n    268 BİRİKMİŞ AMORTİSMANLAR 50.000\n```",
+      "B": "```text\n770 GENEL YÖNETİM GİDERLERİ 50.000\n    257 BİRİKMİŞ AMORTİSMANLAR 50.000\n```",
+      "C": "```text\n770 GENEL YÖNETİM GİDERLERİ 50.000\n    260 HAKLAR 50.000\n```",
+      "D": "```text\n263 ARAŞTIRMA VE GELİŞTİRME GİDERLERİ 50.000\n    268 BİRİKMİŞ AMORTİSMANLAR 50.000\n```",
+      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ 150.000\n    260 HAKLAR 150.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "Yeni bilgiden doğan yararlı ömür değişikliği muhasebe tahmini değişikliğidir; etkisi cari ve etkilenen gelecek dönemlerde ileriye yönelik muhasebeleştirilir.",
+    "correctAnswer": "A",
+    "explanation": "Maddi olmayan duran varlıkların itfa payları 268 Birikmiş Amortismanlar hesabında toplanır. Yıllık pay 150.000 / 3 = 50.000 ₺ olup idari kullanım nedeniyle 770 Genel Yönetim Giderleri hesabına borç yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 8 Muhasebe Politikaları, Muhasebe Tahminlerinde Değişiklikler ve Hatalar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 260, 268"
     },
     "tags": [
       "Özgün Soru",
@@ -124,10 +124,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -135,20 +135,20 @@
     "id": "topic-finansal-donem-005",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 16'ya göre kalıntı değer ve yararlı ömür hangi sıklıkta gözden geçirilir?",
+    "question": "İşletme dört yıllığına kiraladığı dükkânı mağaza olarak kullanmak için 240.000 ₺ tadilat harcaması yapmış ve bu tutarı 264 Özel Maliyetler hesabına almıştır. Kira sözleşmesi yıl başında başlamış olup harcama kira süresi boyunca eşit tutarlarla itfa edilecektir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Beş yılda bir zorunlu olarak",
-      "B": "İlk kayıttan sonra değiştirilmez.",
-      "C": "Yalnız değer düşüklüğü olduğunda",
-      "D": "Her hesap dönemi sonunda",
-      "E": "Yalnız varlık satılırken"
+      "A": "Genel Yönetim Giderleri hesabının borç tarafına 240.000 ₺ kaydedilir.",
+      "B": "Pazarlama, Satış ve Dağıtım Giderleri hesabının borç tarafına 60.000 ₺ kaydedilir.",
+      "C": "Özel Maliyetler hesabının alacak tarafına 60.000 ₺ kaydedilir.",
+      "D": "Pazarlama, Satış ve Dağıtım Giderleri hesabının borç tarafına 48.000 ₺ kaydedilir.",
+      "E": "Birikmiş Amortismanlar hesabının alacak tarafına 60.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Kalıntı değer ve yararlı ömür en az her hesap dönemi sonunda gözden geçirilir; önceki tahminlerden farklılık varsa TMS 8'e göre tahmin değişikliği uygulanır.",
+    "correctAnswer": "B",
+    "explanation": "Özel maliyet bedelleri kira süresine göre itfa edilir: 240.000 / 4 = 60.000 ₺. Satış mağazası olduğundan 760 hesabına borç, 268 Birikmiş Amortismanlar hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - tahminlerin gözden geçirilmesi"
+      "legislationRef": "VUK md. 327; THP 264, 268"
     },
     "tags": [
       "Özgün Soru",
@@ -157,10 +157,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -168,20 +168,20 @@
     "id": "topic-finansal-donem-006",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Maliyeti 210.000 TL, kalıntı değeri 30.000 TL ve yararlı ömrü 6 yıl olan varlığın doğrusal yöntemle yıllık amortismanı kaç TL'dir?",
+    "question": "Yıl sonunda amortisman hesaplayan işletmenin duran varlıkları arasında fabrika binası (2.400.000 ₺), fabrikanın üzerinde bulunduğu arsa (1.800.000 ₺), üretim makineleri (900.000 ₺), dağıtım kamyonu (450.000 ₺) ve büro mobilyaları (120.000 ₺) bulunmaktadır.\n\nBu varlıklardan hangisi için amortisman ayrılmaz?",
     "choices": {
-      "A": "30.000 TL",
-      "B": "40.000 TL",
-      "C": "180.000 TL",
-      "D": "45.000 TL",
-      "E": "35.000 TL"
+      "A": "Fabrika binası",
+      "B": "Fabrikanın üzerinde bulunduğu arsa",
+      "C": "Üretim makineleri",
+      "D": "Dağıtım kamyonu",
+      "E": "Büro mobilyaları"
     },
-    "correctAnswer": "A",
-    "explanation": "Amortismana tabi tutar 210.000 - 30.000 = 180.000 TL'dir. Altı yıllık doğrusal amortisman 180.000/6 = 30.000 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Arazi ve arsaların sınırsız ömürlü olduğu kabul edilir, amortismana tabi tutulmaz; bina, makine, taşıt ve demirbaşlar faydalı ömürleri boyunca amortismana tabidir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - doğrusal amortisman"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 250-258"
     },
     "tags": [
       "Özgün Soru",
@@ -190,10 +190,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -201,20 +201,20 @@
     "id": "topic-finansal-donem-007",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Amortismana tabi tutarı 120.000 TL olan makinenin toplam tahmini üretimi 60.000 birimdir. Dönemde 15.000 birim üretildiyse üretim miktarı yöntemine göre amortisman kaç TL'dir?",
+    "question": "İşletmenin yıl içinde başladığı ve yıl sonu itibarıyla %70’i tamamlanan depo inşaatı için 1.400.000 ₺ harcama yapılmış ve 258 Yapılmakta Olan Yatırımlar hesabında izlenmiştir. İnşaatın gelecek yılın ikinci yarısında bitmesi beklenmektedir.\n\nBu tutarla ilgili yıl sonu işlemi için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "30.000 TL",
-      "B": "45.000 TL",
-      "C": "40.000 TL",
-      "D": "60.000 TL",
-      "E": "20.000 TL"
+      "A": "Tamamlanma oranı kadar amortisman ayrılır.",
+      "B": "Harcamalar dönem gideri olarak kapatılır.",
+      "C": "Tutar 252 Binalar hesabına aktarılıp amortismana başlanır.",
+      "D": "Kullanıma hazır olmadığı için amortisman ayrılmaz.",
+      "E": "Harcamaların yarısı için amortisman ayrılır."
     },
-    "correctAnswer": "A",
-    "explanation": "Birim başına amortisman 120.000/60.000 = 2 TL'dir. Dönem amortismanı 15.000×2 = 30.000 TL olur.",
+    "correctAnswer": "D",
+    "explanation": "Amortisman varlık kullanıma hazır olduğunda başlar. 258’deki harcamalar inşaat tamamlanınca 252 Binalar hesabına aktarılır; o tarihe kadar amortisman ayrılmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - üretim miktarı yöntemi"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 258"
     },
     "tags": [
       "Özgün Soru",
@@ -223,10 +223,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -234,20 +234,20 @@
     "id": "topic-finansal-donem-008",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 16'da amortisman yöntemine ilişkin ifadeleri değerlendiriniz.\n\nI. Yöntem ekonomik yararların beklenen tüketim biçimini yansıtmalıdır.\n\nII. Yöntem en az her hesap dönemi sonunda gözden geçirilir.\n\nIII. Tüketim biçiminde önemli değişiklik varsa yöntem tahmin değişikliği olarak değiştirilir.\n\nBuna göre hangileri doğrudur?",
+    "question": "İşletme yenilemek amacıyla sattığı dağıtım kamyonunun satış kazancını, yeni kamyon alımında kullanmak üzere yenileme fonuna almaya karar vermiştir. Kamyonun maliyeti 200.000 ₺, birikmiş amortismanı 120.000 ₺ olup 100.000 ₺ + %20 KDV bedelle banka aracılığıyla satılmıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız I",
-      "B": "Yalnız III",
-      "C": "I, II ve III",
-      "D": "I ve II",
-      "E": "Yalnız II"
+      "A": "```text\n102 BANKALAR 120.000\n257 BİRİKMİŞ AMORTİSMANLAR 120.000\n    254 TAŞITLAR 200.000\n    391 HESAPLANAN KDV 20.000\n    549 ÖZEL FONLAR 20.000\n```",
+      "B": "```text\n102 BANKALAR 120.000\n257 BİRİKMİŞ AMORTİSMANLAR 120.000\n    254 TAŞITLAR 200.000\n    391 HESAPLANAN KDV 20.000\n    679 DİĞER OLAĞANDIŞI GELİR VE KÂRLAR 20.000\n```",
+      "C": "```text\n102 BANKALAR 120.000\n257 BİRİKMİŞ AMORTİSMANLAR 120.000\n    254 TAŞITLAR 200.000\n    391 HESAPLANAN KDV 20.000\n    542 OLAĞANÜSTÜ YEDEKLER 20.000\n```",
+      "D": "```text\n102 BANKALAR 120.000\n    254 TAŞITLAR 100.000\n    391 HESAPLANAN KDV 20.000\n```",
+      "E": "```text\n102 BANKALAR 120.000\n257 BİRİKMİŞ AMORTİSMANLAR 120.000\n    254 TAŞITLAR 200.000\n    191 İNDİRİLECEK KDV 20.000\n    549 ÖZEL FONLAR 20.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Amortisman yöntemi tüketim biçimini yansıtır, düzenli gözden geçirilir ve önemli değişiklik ortaya çıkarsa ileriye yönelik tahmin değişikliği olarak güncellenir.",
+    "correctAnswer": "A",
+    "explanation": "Net değer 80.000 ₺, satış bedeli 100.000 ₺ olduğundan kazanç 20.000 ₺’dir. Yenileme amacı nedeniyle kazanç gelir tablosuna değil 549 Özel Fonlar hesabına alacak yazılır; yeni varlığın amortismanıyla itfa edilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - amortisman yöntemi"
+      "legislationRef": "VUK md. 328; THP 549"
     },
     "tags": [
       "Özgün Soru",
@@ -255,11 +255,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -267,20 +267,20 @@
     "id": "topic-finansal-donem-009",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Bir uçağın gövdesi ve motorunun yararlı ömürleri önemli ölçüde farklıysa amortisman uygulaması nasıl yapılır?",
+    "question": "Yıl sonunda işletmenin portföyünde 110.000 ₺ nominal değerli ve vadesine 90 gün kalan bir alacak senedi bulunmaktadır. İşletme senetli alacaklarını reeskonta tabi tutmakta ve iç iskonto yöntemini kullanmaktadır; uygulanacak yıllık faiz oranı %40’tır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Hiç amortisman ayrılmaz.",
-      "B": "Yalnız motor amorti edilir; söz konusu tutar bu sınıflandırma çerçevesinde raporlanır.",
-      "C": "Varlığın tamamı tek kalem olarak aynı sürede amorti edilir.",
-      "D": "Yalnız gövde amorti edilir.",
-      "E": "Önemli bileşenler ayrı yararlı ömürleri üzerinden amorti edilir."
+      "A": "```text\n122 ALACAK SENETLERİ REESKONTU 10.000\n    647 REESKONT FAİZ GELİRLERİ 10.000\n```",
+      "B": "```text\n657 REESKONT FAİZ GİDERLERİ 10.000\n    122 ALACAK SENETLERİ REESKONTU 10.000\n```",
+      "C": "```text\n657 REESKONT FAİZ GİDERLERİ 11.000\n    122 ALACAK SENETLERİ REESKONTU 11.000\n```",
+      "D": "```text\n780 FİNANSMAN GİDERLERİ 10.000\n    121 ALACAK SENETLERİ 10.000\n```",
+      "E": "```text\n657 REESKONT FAİZ GİDERLERİ 10.000\n    322 BORÇ SENETLERİ REESKONTU 10.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "Maliyeti toplam varlığa göre önemli olan ve farklı tüketim biçimine sahip bileşenler ayrı olarak amortismana tabi tutulur.",
+    "correctAnswer": "B",
+    "explanation": "İç iskonto: 110.000 × 90 × 40 / (36.000 + 90 × 40) = 10.000 ₺. Alacak senedinin bugünkü değere indirilmesi gider doğurur: 657 Reeskont Faiz Giderleri borç, 122 Alacak Senetleri Reeskontu alacak. Dış iskonto 11.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - bileşen yaklaşımı"
+      "legislationRef": "VUK md. 281; THP 122, 657"
     },
     "tags": [
       "Özgün Soru",
@@ -289,10 +289,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -300,20 +300,20 @@
     "id": "topic-finansal-donem-010",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "257 Birikmiş Amortismanlar hesabına ilişkin ifadeleri değerlendiriniz.\n\nI. Maddi duran varlıkları düzenleyici aktif karakterli bir hesaptır.\n\nII. Varlık hesabı gibi artışlarında borçlandırılır.\n\nIII. Kural olarak alacak bakiyesi verir.\n\nBuna göre hangileri doğrudur?",
+    "question": "Yıl sonunda işletmenin satıcısına verdiği 55.000 ₺ nominal değerli ve vadesine 45 gün kalan bir borç senedi bulunmaktadır. İşletme borç senetlerini de reeskonta tabi tutmaktadır; iç iskonto yöntemi ve yıllık %80 faiz oranı uygulanacaktır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "I ve III",
-      "C": "Yalnız III",
-      "D": "I ve II",
-      "E": "Yalnız I"
+      "A": "```text\n647 REESKONT FAİZ GELİRLERİ 5.000\n    322 BORÇ SENETLERİ REESKONTU 5.000\n```",
+      "B": "```text\n657 REESKONT FAİZ GİDERLERİ 5.000\n    322 BORÇ SENETLERİ REESKONTU 5.000\n```",
+      "C": "```text\n322 BORÇ SENETLERİ REESKONTU 5.000\n    647 REESKONT FAİZ GELİRLERİ 5.000\n```",
+      "D": "```text\n322 BORÇ SENETLERİ REESKONTU 5.500\n    647 REESKONT FAİZ GELİRLERİ 5.500\n```",
+      "E": "```text\n321 BORÇ SENETLERİ 5.000\n    642 FAİZ GELİRLERİ 5.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Birikmiş amortisman varlığın maliyetinden düşülen düzenleyici hesaptır ve normal koşullarda alacak bakiyesi verir.",
+    "correctAnswer": "C",
+    "explanation": "İç iskonto: 55.000 × 45 × 80 / (36.000 + 45 × 80) = 5.000 ₺. Borcun bugünkü değere indirilmesi gelir doğurur: 322 Borç Senetleri Reeskontu borç, 647 Reeskont Faiz Gelirleri alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 257 Birikmiş Amortismanlar"
+      "legislationRef": "VUK md. 285; THP 322, 647"
     },
     "tags": [
       "Özgün Soru",
@@ -321,11 +321,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -333,20 +333,20 @@
     "id": "topic-finansal-donem-011",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Bir varlık tamamen amorti edilmiş olmasına rağmen kullanılmaya devam ediyorsa TMS 16 açısından genel uygulama hangisidir?",
+    "question": "Önceki yıl sonunda portföydeki alacak senetleri için 10.000 ₺ reeskont ayrılmış, 657 hesabı dönem sonunda kapatılmıştır. İşletme yeni yılın ilk iş günü reeskont kaydını ters kayıtla iptal etme politikasını uygulamaktadır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Maliyeti gelir yazılır.",
-      "B": "Varlık otomatik olarak stoklara aktarılır; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur.",
-      "C": "Kayıtlardan zorunlu olarak hemen silinir; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır.",
-      "D": "Her yıl ek amortisman ayrılır.",
-      "E": "Varlık kullanımda kaldığı sürece kayıtlarda maliyet ve birikmiş amortismanıyla izlenir."
+      "A": "Reeskont Faiz Giderleri hesabının alacak tarafına 10.000 ₺ kaydedilir.",
+      "B": "Alacak Senetleri Reeskontu hesabının alacak tarafına 10.000 ₺ kaydedilir.",
+      "C": "Alacak Senetleri hesabının borç tarafına 10.000 ₺ kaydedilir.",
+      "D": "Reeskont Faiz Gelirleri hesabının alacak tarafına 10.000 ₺ kaydedilir.",
+      "E": "Faiz Gelirleri hesabının alacak tarafına 10.000 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Tam amorti edilmiş varlık elden çıkarılmadıkça veya kullanım dışı bırakılmadıkça kayıtlarda izlenir; defter değeri sıfırın altına düşecek ek amortisman ayrılmaz.",
+    "correctAnswer": "D",
+    "explanation": "Yeni dönemde reeskont iptal edilince 122 Alacak Senetleri Reeskontu 10.000 ₺ borçlandırılır; karşılığında 657 önceki yıl kapatıldığından yeni yılın geliri olarak 647 Reeskont Faiz Gelirleri alacaklandırılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - finansal tablo dışı bırakma"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 122, 647"
     },
     "tags": [
       "Özgün Soru",
@@ -354,11 +354,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -366,20 +366,20 @@
     "id": "topic-finansal-donem-012",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Üretim makinesinin olağan bakımına ilişkin ve gelecekte ek ekonomik yarar sağlamayan 8.000 TL harcama nasıl muhasebeleştirilir?",
+    "question": "Yıl sonunda işletmenin 128 Şüpheli Ticari Alacaklar hesabında, hakkında dava açılmış tek bir müşteriden 80.000 ₺ alacağı bulunmaktadır. Bu alacağın 20.000 ₺’lik kısmı için müşteriden banka teminat mektubu alınmıştır; alacak için daha önce karşılık ayrılmamıştır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Gerçekleştiği dönemde gider yazılır.",
-      "B": "Makinenin maliyetine eklenir.",
-      "C": "Stok maliyetine dağıtılmadan bekletilir.",
-      "D": "Şerefiye olarak kaydedilir.",
-      "E": "Sermayeye eklenir."
+      "A": "Karşılık Giderleri hesabının alacak tarafına 60.000 ₺ kaydedilir.",
+      "B": "Karşılık Giderleri hesabının borç tarafına 60.000 ₺ kaydedilir.",
+      "C": "Şüpheli Ticari Alacaklar Karşılığı hesabının borç tarafına 60.000 ₺ kaydedilir.",
+      "D": "Diğer Olağandışı Gider ve Zararlar hesabının borç tarafına 60.000 ₺ kaydedilir.",
+      "E": "Şüpheli Ticari Alacaklar hesabının alacak tarafına 60.000 ₺ kaydedilir."
     },
-    "correctAnswer": "A",
-    "explanation": "Günlük servis ve bakım harcamaları varlığın muhasebeleştirme ölçütlerini karşılamaz; gerçekleştikleri dönemde gider olarak kaydedilir.",
+    "correctAnswer": "B",
+    "explanation": "Şüpheli alacak karşılığı alacağın teminatsız kısmı için ayrılır: 80.000 − 20.000 = 60.000 ₺. 654 Karşılık Giderleri borç, 129 Şüpheli Ticari Alacaklar Karşılığı alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - günlük bakım maliyetleri"
+      "legislationRef": "VUK md. 323; THP 129, 654"
     },
     "tags": [
       "Özgün Soru",
@@ -388,10 +388,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -399,20 +399,20 @@
     "id": "topic-finansal-donem-013",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Net defter değeri 44.000 TL olan makine 50.000 TL'ye satılmıştır. Satıştan doğan sonuç nedir?",
+    "question": "İşletmenin karşılık ayırmadığı 15.000 ₺’lik bir ticari alacağı hakkında yürütülen icra takibi borçlunun hiçbir malvarlığı bulunmadığı gerekçesiyle aciz vesikasıyla sonuçlanmış ve alacağın tahsil imkânı kalmamıştır. Alacak 128 hesabında izlenmektedir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "44.000 TL zarar",
-      "B": "6.000 TL zarar",
-      "C": "6.000 TL kâr",
-      "D": "Sonuç doğmaz.",
-      "E": "50.000 TL kâr"
+      "A": "```text\n654 KARŞILIK GİDERLERİ 15.000\n    129 ŞÜPHELİ TİCARİ ALACAKLAR KARŞILIĞI 15.000\n```",
+      "B": "```text\n129 ŞÜPHELİ TİCARİ ALACAKLAR KARŞILIĞI 15.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 15.000\n```",
+      "C": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 15.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 15.000\n```",
+      "D": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 15.000\n    120 ALICILAR 15.000\n```",
+      "E": "```text\n659 DİĞER OLAĞAN GİDER VE ZARARLAR 15.000\n    129 ŞÜPHELİ TİCARİ ALACAKLAR KARŞILIĞI 15.000\n```"
     },
     "correctAnswer": "C",
-    "explanation": "Satış bedeli 50.000 TL ile net defter değeri 44.000 TL arasındaki 6.000 TL fark elden çıkarma kârıdır.",
+    "explanation": "Kaza kararı veya aciz vesikasıyla tahsili imkânsızlaşan alacak değersiz alacaktır ve kayıtlı değeriyle gider yazılır. Karşılık ayrılmadığı için 689 Diğer Olağandışı Gider ve Zararlar borç, 128 alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar - elden çıkarma kazancı"
+      "legislationRef": "VUK md. 322; THP 689"
     },
     "tags": [
       "Özgün Soru",
@@ -420,11 +420,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -432,20 +432,20 @@
     "id": "topic-finansal-donem-014",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Bir maddi duran varlığın elden çıkarılma kaydına ilişkin ifadeleri değerlendiriniz.\n\nI. Varlığın maliyet hesabı alacaklandırılarak kapatılır.\n\nII. Varlığa ait birikmiş amortisman hesabı borçlandırılarak kapatılır.\n\nIII. Elden çıkarma farkı her durumda doğrudan sermayeye eklenir.\n\nBuna göre hangileri doğrudur?",
+    "question": "Alım satım amacıyla elde tutulan hisse senetlerinin toplam maliyeti 80.000 ₺’dir. Yıl sonunda borsada oluşan değer 65.000 ₺ olup işletme değer düşüklüğünü karşılık yoluyla kayda almaktadır; senetler yeni yılda satılmak üzere elde tutulmaya devam edecektir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "Yalnız II",
-      "E": "I ve III"
+      "A": "```text\n655 MENKUL KIYMET SATIŞ ZARARLARI 15.000\n    110 HİSSE SENETLERİ 15.000\n```",
+      "B": "```text\n654 KARŞILIK GİDERLERİ 15.000\n    110 HİSSE SENETLERİ 15.000\n```",
+      "C": "```text\n119 MENKUL KIYMETLER DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 15.000\n    644 KONUSU KALMAYAN KARŞILIKLAR 15.000\n```",
+      "D": "```text\n654 KARŞILIK GİDERLERİ 15.000\n    129 ŞÜPHELİ TİCARİ ALACAKLAR KARŞILIĞI 15.000\n```",
+      "E": "```text\n654 KARŞILIK GİDERLERİ 15.000\n    119 MENKUL KIYMETLER DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 15.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Elden çıkarmada maliyet ve birikmiş amortisman hesapları kapatılır; net bedel ile defter değeri arasındaki fark koşullarına göre kâr veya zarardır.",
+    "correctAnswer": "E",
+    "explanation": "Değer düşüklüğü 80.000 − 65.000 = 15.000 ₺’dir. Senetler satılmadığı için satış zararı yazılmaz; 654 Karşılık Giderleri borç, 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - maddi duran varlık satış kaydı"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 119, 654"
     },
     "tags": [
       "Özgün Soru",
@@ -454,10 +454,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -465,20 +465,20 @@
     "id": "topic-finansal-donem-015",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Bir makinenin defter değeri geri kazanılabilir tutarını aşıyorsa amortisman kaydına ek olarak hangi işlem gündeme gelir?",
+    "question": "İşletme 1 Eylül’de idari binasının bir yıllık yangın sigortası için 36.000 ₺ ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir. İşletme giderleri ay sonları yerine yalnız dönem sonunda aktarmaktadır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Sermaye azaltımı",
-      "B": "Yalnız yeniden değerleme artışı",
-      "C": "Stoklara aktarma",
-      "D": "Gelir tahakkuku",
-      "E": "TMS 36 kapsamında değer düşüklüğü zararı"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 24.000\n    180 GELECEK AYLARA AİT GİDERLER 24.000\n```",
+      "B": "```text\n180 GELECEK AYLARA AİT GİDERLER 12.000\n    770 GENEL YÖNETİM GİDERLERİ 12.000\n```",
+      "C": "```text\n770 GENEL YÖNETİM GİDERLERİ 12.000\n    280 GELECEK YILLARA AİT GİDERLER 12.000\n```",
+      "D": "```text\n770 GENEL YÖNETİM GİDERLERİ 12.000\n    381 GİDER TAHAKKUKLARI 12.000\n```",
+      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ 12.000\n    180 GELECEK AYLARA AİT GİDERLER 12.000\n```"
     },
     "correctAnswer": "E",
-    "explanation": "Defter değeri geri kazanılabilir tutarı aştığında TMS 36 uyarınca değer düşüklüğü zararı muhasebeleştirilir; bu işlem olağan amortismandan ayrıdır.",
+    "explanation": "Eylül-aralık dört aylık sigorta payı 36.000 × 4/12 = 12.000 ₺ cari yılın gideridir: 770 borç, 180 alacak. Kalan 24.000 ₺ gelecek yılın gideri olarak 180’de kalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 36 Varlıklarda Değer Düşüklüğü"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 180, 770"
     },
     "tags": [
       "Özgün Soru",
@@ -486,11 +486,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -498,20 +498,20 @@
     "id": "topic-finansal-donem-016",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Kasa sayımında kayıtlı tutardan 1.200 TL eksik para bulunmuş ve nedeni belirlenememiştir. İlk kayıtta hangi hesap borçlandırılır?",
+    "question": "İşletme 1 Ocak 2026’da üç yıllık depo kirası olarak 1.080.000 ₺ peşin ödemiş; ilk yılın payını 180, kalan iki yılın payını 280 Gelecek Yıllara Ait Giderler hesabına almıştır. 2026 yılına ait kira aylar itibarıyla gidere aktarılmış ve 180 hesabı yıl sonunda kapanmıştır.\n\n2026 yılı sonunda yapılacak sınıflandırma kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "397 Sayım ve Tesellüm Fazlaları",
-      "B": "100 Kasa",
-      "C": "197 Sayım ve Tesellüm Noksanları",
-      "D": "500 Sermaye",
-      "E": "679 Diğer Olağandışı Gelir ve Kârlar"
+      "A": "```text\n280 GELECEK YILLARA AİT GİDERLER 360.000\n    180 GELECEK AYLARA AİT GİDERLER 360.000\n```",
+      "B": "```text\n180 GELECEK AYLARA AİT GİDERLER 720.000\n    280 GELECEK YILLARA AİT GİDERLER 720.000\n```",
+      "C": "```text\n770 GENEL YÖNETİM GİDERLERİ 360.000\n    280 GELECEK YILLARA AİT GİDERLER 360.000\n```",
+      "D": "```text\n180 GELECEK AYLARA AİT GİDERLER 360.000\n    280 GELECEK YILLARA AİT GİDERLER 360.000\n```",
+      "E": "```text\n180 GELECEK AYLARA AİT GİDERLER 360.000\n    380 GELECEK AYLARA AİT GELİRLER 360.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Nedeni bilinmeyen kasa noksanı geçici olarak 197 Sayım ve Tesellüm Noksanları hesabına borç, 100 Kasa hesabına alacak kaydedilir.",
+    "correctAnswer": "D",
+    "explanation": "Yıl sonunda 280’de kalan 720.000 ₺’nin izleyen on iki aya ait kısmı (360.000 ₺) kısa vadeli hâle gelir ve 180 Gelecek Aylara Ait Giderler hesabına aktarılır: 180 borç, 280 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 197 Sayım ve Tesellüm Noksanları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 180, 280"
     },
     "tags": [
       "Özgün Soru",
@@ -519,11 +519,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -531,20 +531,20 @@
     "id": "topic-finansal-donem-017",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Kasa sayımında kayıtlardan 900 TL fazla para bulunmuştur. Nedeni araştırılırken hangi hesap alacaklandırılır?",
+    "question": "İşletme 1 Kasım’da, esas faaliyeti dışında kiraya verdiği depo için altı aylık kira bedeli olan 60.000 ₺’yi peşin tahsil etmiş ve 380 Gelecek Aylara Ait Gelirler hesabına kaydetmiştir. Dönem içinde bu hesaptan gelir hesabına aktarım yapılmamıştır.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "120 Alıcılar",
-      "B": "100 Kasa",
-      "C": "689 Diğer Olağandışı Gider ve Zararlar",
-      "D": "397 Sayım ve Tesellüm Fazlaları",
-      "E": "197 Sayım ve Tesellüm Noksanları"
+      "A": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 60.000 ₺ kaydedilir.",
+      "B": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 20.000 ₺ kaydedilir.",
+      "C": "Gelecek Aylara Ait Gelirler hesabının alacak tarafına 20.000 ₺ kaydedilir.",
+      "D": "Yurt İçi Satışlar hesabının alacak tarafına 20.000 ₺ kaydedilir.",
+      "E": "Gelir Tahakkukları hesabının borç tarafına 20.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Fiilî kasa mevcudu artırılırken 100 Kasa borçlandırılır; nedeni bilinmeyen fark 397 Sayım ve Tesellüm Fazlaları hesabına alacak kaydedilir.",
+    "correctAnswer": "B",
+    "explanation": "Kasım ve aralık iki aylık kira 60.000 × 2/6 = 20.000 ₺ cari dönemin gelirdir: 380 borç, 649 Diğer Olağan Gelir ve Kârlar alacak. Kalan 40.000 ₺ gelecek yılın geliri olarak 380’de kalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 397 Sayım ve Tesellüm Fazlaları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 380, 649"
     },
     "tags": [
       "Özgün Soru",
@@ -552,11 +552,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -564,20 +564,20 @@
     "id": "topic-finansal-donem-018",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dönem sonu sayımında kayıtlarda 70 birim görünen ticari malın fiilen 66 birim olduğu belirlenmiştir. Birim maliyet 500 TL ise stok noksanı kaç TL'dir?",
+    "question": "İşletme 1 Ekim’de 6 ay vadeli 400.000 ₺ banka kredisi kullanmıştır. Yıllık basit faiz oranı %48 olup faizin tamamı vade sonunda anaparayla birlikte ödenecektir. Kredi dönem içinde 300 Banka Kredileri hesabına kaydedilmiştir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "500 TL",
-      "B": "1.000 TL",
-      "C": "2.000 TL",
-      "D": "35.000 TL",
-      "E": "33.000 TL"
+      "A": "```text\n780 FİNANSMAN GİDERLERİ 96.000\n    381 GİDER TAHAKKUKLARI 96.000\n```",
+      "B": "```text\n780 FİNANSMAN GİDERLERİ 48.000\n    381 GİDER TAHAKKUKLARI 48.000\n```",
+      "C": "```text\n780 FİNANSMAN GİDERLERİ 48.000\n    300 BANKA KREDİLERİ 48.000\n```",
+      "D": "```text\n181 GELİR TAHAKKUKLARI 48.000\n    642 FAİZ GELİRLERİ 48.000\n```",
+      "E": "```text\n780 FİNANSMAN GİDERLERİ 48.000\n    180 GELECEK AYLARA AİT GİDERLER 48.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Kayıt ile fiilî stok arasındaki fark 70 - 66 = 4 birimdir. Noksan maliyeti 4×500 = 2.000 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Ekim-aralık üç aylık faiz 400.000 × %48 × 3/12 = 48.000 ₺ cari dönemin gideridir ve henüz ödenmemiştir: 780 Finansman Giderleri borç, 381 Gider Tahakkukları alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tekdüzen hesap sistemi - stok sayım farkları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 381, 780"
     },
     "tags": [
       "Özgün Soru",
@@ -585,11 +585,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -597,20 +597,20 @@
     "id": "topic-finansal-donem-019",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dava aşamasındaki 40.000 TL şüpheli ticari alacağın tamamı için karşılık ayrılırken hangi hesap borçlandırılır?",
+    "question": "İşletme 1 Aralık’ta 500.000 ₺’yi üç ay vadeli ve yıllık %36 basit faizli mevduata yatırmıştır. Faiz vade sonunda anaparayla birlikte tahsil edilecektir; tahakkuk kaydında gelir vergisi kesintisi dikkate alınmayacaktır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "120 Alıcılar",
-      "B": "128 Şüpheli Ticari Alacaklar",
-      "C": "654 Karşılık Giderleri",
-      "D": "129 Şüpheli Ticari Alacaklar Karşılığı",
-      "E": "644 Konusu Kalmayan Karşılıklar"
+      "A": "```text\n181 GELİR TAHAKKUKLARI 45.000\n    642 FAİZ GELİRLERİ 45.000\n```",
+      "B": "```text\n642 FAİZ GELİRLERİ 15.000\n    181 GELİR TAHAKKUKLARI 15.000\n```",
+      "C": "```text\n102 BANKALAR 15.000\n    642 FAİZ GELİRLERİ 15.000\n```",
+      "D": "```text\n181 GELİR TAHAKKUKLARI 15.000\n    380 GELECEK AYLARA AİT GELİRLER 15.000\n```",
+      "E": "```text\n181 GELİR TAHAKKUKLARI 15.000\n    642 FAİZ GELİRLERİ 15.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "Karşılık ayrılırken 654 Karşılık Giderleri borçlandırılır; alacağı düzenleyen 129 Şüpheli Ticari Alacaklar Karşılığı alacaklandırılır.",
+    "correctAnswer": "E",
+    "explanation": "Aralık ayına düşen faiz 500.000 × %36 × 1/12 = 15.000 ₺’dir; tahsil edilmemiş olsa da cari dönemin gelirdir: 181 Gelir Tahakkukları borç, 642 Faiz Gelirleri alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 129 ve 654 hesapları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 181, 642"
     },
     "tags": [
       "Özgün Soru",
@@ -619,10 +619,10 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -630,20 +630,20 @@
     "id": "topic-finansal-donem-020",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TFRS 9'a göre ticari alacaklara ilişkin kredi zararlarının muhasebeleştirilmesinde temel yaklaşım hangisidir?",
+    "question": "İşletmenin merkez ofisine ait aralık ayı elektrik faturası dağıtım şirketi tarafından ocak ayında düzenlenecektir. Sayaç okumalarına göre aralık tüketiminin bedeli KDV hariç 8.500 ₺ olarak tahmin edilmiş ve cari döneme yansıtılmasına karar verilmiştir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Bütün alacaklar doğrudan silinir.",
-      "B": "Zarar kesinleşene kadar hiçbir karşılık ayrılmaz.",
-      "C": "Yalnız nakit çıkışı olduğunda gider yazılır.",
-      "D": "Beklenen kredi zararları için zarar karşılığı muhasebeleştirilir.",
-      "E": "Alacaklar daima nominal değerde tutulur."
+      "A": "Gelecek Aylara Ait Giderler hesabının borç tarafına 8.500 ₺ kaydedilir.",
+      "B": "Gider Tahakkukları hesabının alacak tarafına 8.500 ₺ kaydedilir.",
+      "C": "Satıcılar hesabının alacak tarafına 8.500 ₺ kaydedilir.",
+      "D": "İndirilecek KDV hesabının borç tarafına 1.700 ₺ kaydedilir.",
+      "E": "Gider Tahakkukları hesabının borç tarafına 8.500 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "TFRS 9 gerçekleşmiş zarar beklemek yerine beklenen kredi zararı modelini kullanır; uygun ölçümle zarar karşılığı finansal tablolara alınır.",
+    "correctAnswer": "B",
+    "explanation": "Aralık tüketimi cari dönemin gideridir ancak fatura henüz gelmemiştir: 770 Genel Yönetim Giderleri borç, 381 Gider Tahakkukları alacak 8.500 ₺. KDV fatura geldiğinde indirilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TFRS 9 Finansal Araçlar - beklenen kredi zararları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 381, 770"
     },
     "tags": [
       "Özgün Soru",
@@ -651,11 +651,11 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -663,20 +663,20 @@
     "id": "topic-finansal-donem-021",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "1 Aralık'ta gelecek altı ay için peşin ödenen 60.000 TL sigorta bedeli ilk kayıtta hangi hesapta izlenir?",
+    "question": "İşletmenin yıl sonunda yurt dışındaki bir müşteriden 20.000 ABD doları alacağı bulunmaktadır. Alacak işlem tarihindeki 40 ₺ kurla kaydedilmiştir; değerleme günü kuru 41,20 ₺’dir. İşletme parasal kalemleri dönem sonu kuruyla değerlemektedir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "381 Gider Tahakkukları",
-      "B": "181 Gelir Tahakkukları",
-      "C": "380 Gelecek Aylara Ait Gelirler",
-      "D": "280 Gelecek Yıllara Ait Giderler",
-      "E": "180 Gelecek Aylara Ait Giderler"
+      "A": "```text\n120 ALICILAR 24.000\n    646 KAMBİYO KÂRLARI 24.000\n```",
+      "B": "```text\n120 ALICILAR 24.000\n    649 DİĞER OLAĞAN GELİR VE KÂRLAR 24.000\n```",
+      "C": "```text\n120 ALICILAR 824.000\n    646 KAMBİYO KÂRLARI 824.000\n```",
+      "D": "```text\n120 ALICILAR 24.000\n    679 DİĞER OLAĞANDIŞI GELİR VE KÂRLAR 24.000\n```",
+      "E": "```text\n120 ALICILAR 24.000\n    601 YURT DIŞI SATIŞLAR 24.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "Tamamı gelecek aylarda tüketilecek sigorta hizmeti ödeme tarihinde gider değil kısa vadeli dönem ayırıcı varlık olarak 180 hesapta izlenir.",
+    "correctAnswer": "A",
+    "explanation": "Alacak 20.000 × 41,20 = 824.000 ₺ olmalıdır; kayıtlı değer 800.000 ₺. Aradaki 24.000 ₺ artış 120 borç, 646 Kambiyo Kârları alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 180 Gelecek Aylara Ait Giderler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 120, 646"
     },
     "tags": [
       "Özgün Soru",
@@ -684,32 +684,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-022",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "1 Ekim'de bir yıllık sigorta için 48.000 TL ödenmiştir. Cari yıl 31 Aralık'ta sona eriyorsa döneme ait sigorta gideri kaç TL'dir?",
+    "question": "İşletmenin yıl sonunda Almanya’daki bir tedarikçiye 15.000 avro ticari borcu vardır. Borç işlem tarihindeki 45 ₺ kurla kaydedilmiş, değerleme günü kuru 46 ₺ olarak belirlenmiştir. Borç ocak ayında ödenecektir.\n\nDönem sonu değerleme kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "16.000 TL",
-      "B": "36.000 TL",
-      "C": "12.000 TL",
-      "D": "48.000 TL",
-      "E": "4.000 TL"
+      "A": "Kambiyo Kârları hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "B": "Satıcılar hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "C": "Finansman Giderleri hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "D": "Kambiyo Zararları hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "E": "Kambiyo Zararları hesabının borç tarafına 690.000 ₺ kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Aylık sigorta 48.000/12 = 4.000 TL'dir. Ekim, kasım ve aralık için cari dönem gideri 3×4.000 = 12.000 TL'dir.",
+    "correctAnswer": "D",
+    "explanation": "Borç 15.000 × 46 = 690.000 ₺ olmalıdır; kayıtlı değer 675.000 ₺. Borçtaki 15.000 ₺ artış 656 Kambiyo Zararları borç, 320 Satıcılar alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve 180 Gelecek Aylara Ait Giderler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 320, 656"
     },
     "tags": [
       "Özgün Soru",
@@ -717,32 +717,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-023",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "31 Aralık'ta peşin ödenmiş bir giderin gelecek hesap döneminden sonraki yıllara ait kısmı hangi hesapta izlenir?",
+    "question": "İşletme yıl içinde 50.000 ABD doları tutarında bir yıl vadeli kredi kullanmış ve krediyi 40 ₺ kurla kaydetmiştir. Yıl sonunda ABD dolarının değerleme kuru 39 ₺’ye gerilemiştir; kredinin faizi ayrıca tahakkuk ettirilmiştir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "380 Gelecek Aylara Ait Gelirler",
-      "B": "280 Gelecek Yıllara Ait Giderler",
-      "C": "181 Gelir Tahakkukları",
-      "D": "180 Gelecek Aylara Ait Giderler",
-      "E": "480 Gelecek Yıllara Ait Gelirler"
+      "A": "```text\n656 KAMBİYO ZARARLARI 50.000\n    300 BANKA KREDİLERİ 50.000\n```",
+      "B": "```text\n300 BANKA KREDİLERİ 50.000\n    646 KAMBİYO KÂRLARI 50.000\n```",
+      "C": "```text\n300 BANKA KREDİLERİ 50.000\n    642 FAİZ GELİRLERİ 50.000\n```",
+      "D": "```text\n400 BANKA KREDİLERİ 50.000\n    646 KAMBİYO KÂRLARI 50.000\n```",
+      "E": "```text\n300 BANKA KREDİLERİ 1.950.000\n    646 KAMBİYO KÂRLARI 1.950.000\n```"
     },
     "correctAnswer": "B",
-    "explanation": "Bir yıldan daha uzun süre sonraki dönemlere ait peşin ödenmiş giderler 280 Gelecek Yıllara Ait Giderler hesabında izlenir.",
+    "explanation": "Kredi 50.000 × 39 = 1.950.000 ₺’ye inmiştir; kayıtlı değer 2.000.000 ₺. Borçtaki 50.000 ₺ azalış 300 Banka Kredileri borç, 646 Kambiyo Kârları alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 280 Gelecek Yıllara Ait Giderler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 300, 646"
     },
     "tags": [
       "Özgün Soru",
@@ -751,31 +751,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-024",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "İşletme gelecek dört aya ait 80.000 TL kirayı peşin tahsil etmiştir. Tahsilat tarihinde hangi hesap alacaklandırılır?",
+    "question": "İşletmenin kasasında yıl sonunda 3.000 avro bulunmaktadır. Bu dövizler kasaya girdiği tarihteki 44 ₺ kurla kaydedilmiştir. Değerleme günü kuru 46 ₺’dir ve dövizlerin ocak ayında bir satıcıya ödenmesi planlanmaktadır.\n\nDönem sonu değerleme kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "181 Gelir Tahakkukları",
-      "C": "381 Gider Tahakkukları",
-      "D": "280 Gelecek Yıllara Ait Giderler",
-      "E": "380 Gelecek Aylara Ait Gelirler"
+      "A": "Kambiyo Kârları hesabının alacak tarafına 138.000 ₺ kaydedilir.",
+      "B": "Kasa hesabının alacak tarafına 6.000 ₺ kaydedilir.",
+      "C": "Kambiyo Zararları hesabının borç tarafına 6.000 ₺ kaydedilir.",
+      "D": "Kambiyo Kârları hesabının alacak tarafına 6.000 ₺ kaydedilir.",
+      "E": "Faiz Gelirleri hesabının alacak tarafına 6.000 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Henüz kazanılmamış fakat tahsil edilmiş kısa vadeli gelir, yükümlülük niteliğindeki 380 Gelecek Aylara Ait Gelirler hesabında alacak izlenir.",
+    "correctAnswer": "D",
+    "explanation": "Kasadaki dövizler 3.000 × 46 = 138.000 ₺ olmalıdır; kayıtlı değer 132.000 ₺. 6.000 ₺ artış 100 Kasa borç, 646 Kambiyo Kârları alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 380 Gelecek Aylara Ait Gelirler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 100, 646"
     },
     "tags": [
       "Özgün Soru",
@@ -784,31 +784,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-025",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Peşin tahsil edilmiş bir gelirin gelecek hesap döneminden sonraki yıllara ait kısmı hangi hesapta gösterilir?",
+    "question": "Kasım ayı sonunda işletmenin 391 Hesaplanan KDV hesabının bakiyesi 60.000 ₺, 191 İndirilecek KDV hesabının bakiyesi 85.000 ₺’dir. Önceki aydan devreden KDV yoktur ve iade hakkı doğuran bir işlem bulunmamaktadır.\n\nAy sonu mahsup kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "480 Gelecek Yıllara Ait Gelirler",
-      "B": "280 Gelecek Yıllara Ait Giderler",
-      "C": "180 Gelecek Aylara Ait Giderler",
-      "D": "381 Gider Tahakkukları",
-      "E": "380 Gelecek Aylara Ait Gelirler"
+      "A": "```text\n391 HESAPLANAN KDV 60.000\n    191 İNDİRİLECEK KDV 60.000\n```",
+      "B": "```text\n391 HESAPLANAN KDV 60.000\n360 ÖDENECEK VERGİ VE FONLAR 25.000\n    191 İNDİRİLECEK KDV 85.000\n```",
+      "C": "```text\n191 İNDİRİLECEK KDV 85.000\n    391 HESAPLANAN KDV 60.000\n    190 DEVREDEN KDV 25.000\n```",
+      "D": "```text\n391 HESAPLANAN KDV 60.000\n193 PEŞİN ÖDENEN VERGİLER VE FONLAR 25.000\n    191 İNDİRİLECEK KDV 85.000\n```",
+      "E": "```text\n391 HESAPLANAN KDV 60.000\n190 DEVREDEN KDV 25.000\n    191 İNDİRİLECEK KDV 85.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Bir yıldan daha uzun süre sonraki dönemlerde kazanılacak peşin tahsilatlar 480 Gelecek Yıllara Ait Gelirler hesabında izlenir.",
+    "correctAnswer": "E",
+    "explanation": "İndirilecek KDV hesaplanandan 25.000 ₺ fazladır. 391 ve 191 kapatılır; indirilemeyen fark sonraki aya aktarılmak üzere 190 Devreden KDV hesabına borç yazılır. Ödenecek KDV doğmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 480 Gelecek Yıllara Ait Gelirler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 190, 191, 391"
     },
     "tags": [
       "Özgün Soru",
@@ -817,31 +817,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-026",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Döneme ait olduğu hâlde henüz tahsil edilmemiş 6.000 TL faiz geliri hangi kayıtla tahakkuk ettirilir?",
+    "question": "Kasım ayından 190 Devreden KDV hesabına 25.000 ₺ aktarılmıştır. Aralık sonunda 391 Hesaplanan KDV hesabının bakiyesi 70.000 ₺, 191 İndirilecek KDV hesabının bakiyesi 30.000 ₺’dir.\n\nAralık ayı mahsup kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "102 Bankalar borç; 181 Gelir Tahakkukları alacak",
-      "B": "İlgili gelir hesabı borç; 181 Gelir Tahakkukları alacak",
-      "C": "Kayıt tahsilata bırakılır.",
-      "D": "181 Gelir Tahakkukları borç; ilgili gelir hesabı alacak",
-      "E": "381 Gider Tahakkukları borç; ilgili gelir hesabı alacak"
+      "A": "```text\n391 HESAPLANAN KDV 70.000\n    191 İNDİRİLECEK KDV 30.000\n    190 DEVREDEN KDV 25.000\n    360 ÖDENECEK VERGİ VE FONLAR 15.000\n```",
+      "B": "```text\n391 HESAPLANAN KDV 70.000\n    191 İNDİRİLECEK KDV 30.000\n    360 ÖDENECEK VERGİ VE FONLAR 40.000\n```",
+      "C": "```text\n391 HESAPLANAN KDV 70.000\n    191 İNDİRİLECEK KDV 55.000\n    360 ÖDENECEK VERGİ VE FONLAR 15.000\n```",
+      "D": "```text\n391 HESAPLANAN KDV 70.000\n190 DEVREDEN KDV 25.000\n    191 İNDİRİLECEK KDV 30.000\n    360 ÖDENECEK VERGİ VE FONLAR 65.000\n```",
+      "E": "```text\n391 HESAPLANAN KDV 45.000\n    191 İNDİRİLECEK KDV 30.000\n    360 ÖDENECEK VERGİ VE FONLAR 15.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Kazanılmış fakat henüz tahsil edilmemiş gelir için 181 Gelir Tahakkukları borçlandırılır ve ilgili gelir hesabı alacaklandırılır.",
+    "correctAnswer": "A",
+    "explanation": "Hesaplanan KDV 70.000 ₺’den önce bu ayın indirilecek KDV’si (30.000 ₺), sonra devreden KDV (25.000 ₺) düşülür; kalan 15.000 ₺ 360 Ödenecek Vergi ve Fonlar hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 181 Gelir Tahakkukları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 190, 191, 360, 391"
     },
     "tags": [
       "Özgün Soru",
@@ -849,32 +849,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-027",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Döneme ait olduğu hâlde henüz ödenmemiş ve faturası gelmemiş 11.000 TL gider için hangi hesap alacaklandırılır?",
+    "question": "İşletmenin ticari bilanço kârı 800.000 ₺’dir. Kanunen kabul edilmeyen giderler 50.000 ₺, iştirak kazancı istisnası 30.000 ₺ olup kurumlar vergisi oranı %25’tir. Başka indirim ve istisna bulunmamaktadır.\n\nDönem sonunda ayrılacak vergi karşılığının kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "180 Gelecek Aylara Ait Giderler",
-      "B": "381 Gider Tahakkukları",
-      "C": "181 Gelir Tahakkukları",
-      "D": "280 Gelecek Yıllara Ait Giderler",
-      "E": "380 Gelecek Aylara Ait Gelirler"
+      "A": "```text\n691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 200.000\n    370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 200.000\n```",
+      "B": "```text\n691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    360 ÖDENECEK VERGİ VE FONLAR 205.000\n```",
+      "C": "```text\n691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n```",
+      "D": "```text\n370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n```",
+      "E": "```text\n691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 212.500\n    370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 212.500\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Döneme ait ancak henüz ödenmemiş gider ilgili gider hesabına borç, kısa vadeli tahakkuk yükümlülüğü olan 381 hesaba alacak kaydedilir.",
+    "correctAnswer": "C",
+    "explanation": "Mali kâr = 800.000 + 50.000 − 30.000 = 820.000 ₺; vergi 820.000 × %25 = 205.000 ₺. 691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları borç, 370 aynı adlı pasif hesap alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 381 Gider Tahakkukları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 370, 691"
     },
     "tags": [
       "Özgün Soru",
@@ -882,32 +882,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-028",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "1 Ekim'de kullanılan 120.000 TL banka kredisine yıllık basit %20 faiz uygulanmaktadır. 31 Aralık'a kadar üç aylık faiz gideri kaç TL'dir?",
+    "question": "Yıl sonunda 205.000 ₺ kurumlar vergisi karşılığı 370 hesabına alınmıştır. Yıl içinde ödenen 150.000 ₺ geçici vergi 371 Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabında toplanmıştır. Başka mahsup edilecek vergi yoktur.\n\nKarşılık ile peşin ödenen verginin mahsubuna ilişkin kayıt aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "24.000 TL",
-      "B": "4.000 TL",
-      "C": "20.000 TL",
-      "D": "6.000 TL",
-      "E": "5.000 TL"
+      "A": "```text\n370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    193 PEŞİN ÖDENEN VERGİLER VE FONLAR 150.000\n    360 ÖDENECEK VERGİ VE FONLAR 55.000\n```",
+      "B": "```text\n371 DÖNEM KÂRININ PEŞİN ÖDENEN VERGİ VE DİĞER YÜKÜMLÜLÜKLERİ 150.000\n360 ÖDENECEK VERGİ VE FONLAR 55.000\n    370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n```",
+      "C": "```text\n370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    360 ÖDENECEK VERGİ VE FONLAR 205.000\n```",
+      "D": "```text\n370 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    371 DÖNEM KÂRININ PEŞİN ÖDENEN VERGİ VE DİĞER YÜKÜMLÜLÜKLERİ 150.000\n    360 ÖDENECEK VERGİ VE FONLAR 55.000\n```",
+      "E": "```text\n691 DÖNEM KÂRI VERGİ VE DİĞER YASAL YÜKÜMLÜLÜK KARŞILIKLARI 205.000\n    371 DÖNEM KÂRININ PEŞİN ÖDENEN VERGİ VE DİĞER YÜKÜMLÜLÜKLERİ 150.000\n    360 ÖDENECEK VERGİ VE FONLAR 55.000\n```"
     },
     "correctAnswer": "D",
-    "explanation": "Üç aylık faiz 120.000×%20×3/12 = 6.000 TL'dir ve ödeme yapılmamışsa gider tahakkuku olarak kaydedilir.",
+    "explanation": "370 karşılık hesabı kapatılır; yıl içinde ödenen geçici vergi 371’den mahsup edilir, kalan 55.000 ₺ ödenecek vergi olarak 360 hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve 381 Gider Tahakkukları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 370, 371, 360"
     },
     "tags": [
       "Özgün Soru",
@@ -916,31 +916,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-029",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Aralık ayına ait 90.000 TL brüt ücretin ocak ayında ödeneceği belirlenmiştir. Kesintiler dikkate alınmadan dönem sonu kaydı hangisidir?",
+    "question": "Yıl sonunda gelir tablosu hesapları kapatılmış ve 690 Dönem Kârı veya Zararı hesabı 800.000 ₺ alacak bakiye vermiştir. 205.000 ₺ vergi karşılığı 691 hesabına alınmış, 690 ve 691 hesapları 692 hesabına devredilmiştir.\n\n692 hesabının kapatılmasına ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "180 Gelecek Aylara Ait Giderler borç; 335 Personele Borçlar alacak",
-      "B": "İlgili personel gideri hesabı borç; 335 Personele Borçlar alacak",
-      "C": "335 Personele Borçlar borç; ilgili gider hesabı alacak",
-      "D": "Ödeme yapılmadığı için kayıt yoktur.",
-      "E": "102 Bankalar borç; 335 Personele Borçlar alacak"
+      "A": "Dönem Kârı veya Zararı hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "B": "Dönem Net Kârı hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "C": "Geçmiş Yıllar Zararları hesabının borç tarafına 595.000 ₺ kaydedilir.",
+      "D": "Geçmiş Yıllar Kârları hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "E": "Dönem Net Kârı veya Zararı hesabının alacak tarafına 595.000 ₺ kaydedilir."
     },
     "correctAnswer": "B",
-    "explanation": "Ücret aralık ayında kazanıldığı için dönemin gideridir. İlgili gider hesabı borçlandırılır, personele borç 335 hesabına alacak kaydedilir.",
+    "explanation": "Dönem net kârı 800.000 − 205.000 = 595.000 ₺’dir. 692 Dönem Net Kârı veya Zararı hesabı borçlandırılarak kapatılır, 590 Dönem Net Kârı hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve 335 Personele Borçlar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 590, 690, 691, 692"
     },
     "tags": [
       "Özgün Soru",
@@ -949,31 +949,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-030",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Aralık ayında tüketilen ancak faturası ocakta gelecek elektrik için dönem sonunda neden kayıt yapılır?",
+    "question": "Yıl sonunda gelir tablosu hesaplarının kapatılmasıyla 690 Dönem Kârı veya Zararı hesabı 120.000 ₺ borç bakiye vermiştir. Zarar nedeniyle vergi karşılığı ayrılmamış, 690 hesabı 692 hesabına devredilmiştir.\n\n692 hesabının kapatılmasına ilişkin kayıt aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Gideri ait olduğu dönemde göstermek için",
-      "B": "Vergiyi peşin ödemek için",
-      "C": "Gelecek dönemin gelir ve kârını artırmak için",
-      "D": "Nakit mevcudunu artırmak için",
-      "E": "Elektrik bedelini maddi duran varlık maliyetine aktarmak için"
+      "A": "```text\n591 DÖNEM NET ZARARI 120.000\n    692 DÖNEM NET KÂRI VEYA ZARARI 120.000\n```",
+      "B": "```text\n692 DÖNEM NET KÂRI VEYA ZARARI 120.000\n    591 DÖNEM NET ZARARI 120.000\n```",
+      "C": "```text\n580 GEÇMİŞ YILLAR ZARARLARI 120.000\n    692 DÖNEM NET KÂRI VEYA ZARARI 120.000\n```",
+      "D": "```text\n591 DÖNEM NET ZARARI 120.000\n    690 DÖNEM KÂRI VEYA ZARARI 120.000\n```",
+      "E": "```text\n692 DÖNEM NET KÂRI VEYA ZARARI 120.000\n    590 DÖNEM NET KÂRI 120.000\n```"
     },
     "correctAnswer": "A",
-    "explanation": "Tahakkuk ve dönemsellik esasları, hizmetin tüketildiği aralık ayında giderin ve ilgili yükümlülüğün muhasebeleştirilmesini gerektirir.",
+    "explanation": "Zarar hâlinde 692 borç bakiye verir; kapatmak için 692 alacaklandırılır ve 591 Dönem Net Zararı (-) hesabı borçlandırılır. Zarar yeni dönemde 580’e aktarılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve dönemsellik"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 591, 692"
     },
     "tags": [
       "Özgün Soru",
@@ -981,32 +981,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-031",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Önceki dönem sonunda 381 Gider Tahakkukları hesabına alınan faiz, yeni dönemde banka hesabından ödendiğinde temel kayıt hangisidir?",
+    "question": "Geçen yıl 120.000 ₺ dönem net zararıyla kapanan işletmenin 591 Dönem Net Zararı hesabı yeni yıla borç bakiyeyle devretmiştir. Genel kurul zararın gelecek yıl kârlarından mahsup edilmek üzere geçmiş yıl zararlarına aktarılmasına karar vermiştir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "780 Finansman Giderleri borç; 381 Gider Tahakkukları alacak",
-      "B": "380 Gelecek Aylara Ait Gelirler borç; 102 Bankalar alacak",
-      "C": "181 Gelir Tahakkukları borç; 102 Bankalar alacak",
-      "D": "102 Bankalar borç; 381 Gider Tahakkukları alacak",
-      "E": "381 Gider Tahakkukları borç; 102 Bankalar alacak"
+      "A": "```text\n591 DÖNEM NET ZARARI 120.000\n    580 GEÇMİŞ YILLAR ZARARLARI 120.000\n```",
+      "B": "```text\n570 GEÇMİŞ YILLAR KÂRLARI 120.000\n    591 DÖNEM NET ZARARI 120.000\n```",
+      "C": "```text\n580 GEÇMİŞ YILLAR ZARARLARI 120.000\n    590 DÖNEM NET KÂRI 120.000\n```",
+      "D": "```text\n580 GEÇMİŞ YILLAR ZARARLARI 120.000\n    500 SERMAYE 120.000\n```",
+      "E": "```text\n580 GEÇMİŞ YILLAR ZARARLARI 120.000\n    591 DÖNEM NET ZARARI 120.000\n```"
     },
     "correctAnswer": "E",
-    "explanation": "Önceki dönemde gider zaten kaydedilmiştir. Ödemede tahakkuk yükümlülüğü 381 borçlandırılarak kapatılır ve banka hesabı alacaklandırılır.",
+    "explanation": "Geçmiş yıl zararı 580 Geçmiş Yıllar Zararları (-) hesabında izlenir: 580 borç, 591 alacak 120.000 ₺. İleride kârlardan mahsup edildiğinde 580 alacaklandırılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 381 hesabın kapatılması"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 580, 591"
     },
     "tags": [
       "Özgün Soru",
@@ -1014,32 +1014,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-032",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Peşin tahsil edilerek 380 Gelecek Aylara Ait Gelirler hesabına alınan 24.000 TL'nin 8.000 TL'lik kısmı cari dönemde kazanılmıştır. Düzeltme kaydı hangisidir?",
+    "question": "Geçmiş yıllar kârları hesabında 500.000 ₺ bulunan anonim şirketin genel kurulu şu dağıtımı kararlaştırmıştır: 25.000 ₺ yasal yedek, gerçek kişi ortaklara 300.000 ₺ brüt kâr payı (%15 gelir vergisi kesintisi yapılacak) ve kalan tutar olağanüstü yedek. Kâr payı henüz ödenmemiştir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "102 Bankalar borç; ilgili gelir hesabı alacak",
-      "B": "181 hesap borç; ilgili gelir hesabı alacak",
-      "C": "İlgili gelir hesabı borç; 380 hesap alacak",
-      "D": "380 hesap borç; 102 Bankalar alacak",
-      "E": "380 hesap borç; ilgili gelir hesabı alacak"
+      "A": "```text\n570 GEÇMİŞ YILLAR KÂRLARI 500.000\n    540 YASAL YEDEKLER 25.000\n    542 OLAĞANÜSTÜ YEDEKLER 175.000\n    331 ORTAKLARA BORÇLAR 300.000\n```",
+      "B": "```text\n590 DÖNEM NET KÂRI 500.000\n    540 YASAL YEDEKLER 25.000\n    542 OLAĞANÜSTÜ YEDEKLER 175.000\n    331 ORTAKLARA BORÇLAR 255.000\n    360 ÖDENECEK VERGİ VE FONLAR 45.000\n```",
+      "C": "```text\n570 GEÇMİŞ YILLAR KÂRLARI 500.000\n    541 STATÜ YEDEKLERİ 25.000\n    542 OLAĞANÜSTÜ YEDEKLER 175.000\n    331 ORTAKLARA BORÇLAR 255.000\n    360 ÖDENECEK VERGİ VE FONLAR 45.000\n```",
+      "D": "```text\n570 GEÇMİŞ YILLAR KÂRLARI 500.000\n    540 YASAL YEDEKLER 25.000\n    542 OLAĞANÜSTÜ YEDEKLER 175.000\n    331 ORTAKLARA BORÇLAR 255.000\n    193 PEŞİN ÖDENEN VERGİLER VE FONLAR 45.000\n```",
+      "E": "```text\n570 GEÇMİŞ YILLAR KÂRLARI 500.000\n    540 YASAL YEDEKLER 25.000\n    542 OLAĞANÜSTÜ YEDEKLER 175.000\n    331 ORTAKLARA BORÇLAR 255.000\n    360 ÖDENECEK VERGİ VE FONLAR 45.000\n```"
     },
     "correctAnswer": "E",
-    "explanation": "Kazanılan kısım artık yükümlülük değildir. 380 hesap 8.000 TL borçlandırılarak azaltılır ve ilgili gelir hesabı alacaklandırılır.",
+    "explanation": "570 kapatılır; yasal yedek 540’a, kalan 175.000 ₺ 542’ye alacak yazılır. Kâr payının 45.000 ₺’lik kesintisi 360’a, net 255.000 ₺ 331 Ortaklara Borçlar hesabına alacak kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 380 hesabın gelirleştirilmesi"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 540, 542, 570, 331, 360"
     },
     "tags": [
       "Özgün Soru",
@@ -1047,32 +1047,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-033",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Peşin ödenerek 180 Gelecek Aylara Ait Giderler hesabında izlenen tutarın 5.000 TL'si cari dönemde tüketilmiştir. Düzeltme kaydı hangisidir?",
+    "question": "Geçen yıl 595.000 ₺ dönem net kârıyla kapanan işletmenin 590 hesabı yeni yıla alacak bakiyeyle devretmiştir. Kâr dağıtım kararı alınmadan önce kârın geçmiş yıllar kârlarına aktarılması gerekmektedir.\n\nBu aktarıma ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "381 hesap borç; 180 hesap alacak",
-      "B": "İlgili gider hesabı borç; 381 hesap alacak",
-      "C": "İlgili gider hesabı borç; 180 hesap alacak",
-      "D": "180 hesap borç; ilgili gider hesabı alacak",
-      "E": "180 hesap borç; 102 Bankalar alacak"
+      "A": "Dönem Net Kârı hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "B": "Olağanüstü Yedekler hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "C": "Geçmiş Yıllar Kârları hesabının alacak tarafına 595.000 ₺ kaydedilir.",
+      "D": "Geçmiş Yıllar Zararları hesabının borç tarafına 595.000 ₺ kaydedilir.",
+      "E": "Dönem Net Kârı veya Zararı hesabının alacak tarafına 595.000 ₺ kaydedilir."
     },
     "correctAnswer": "C",
-    "explanation": "Tüketilen hizmet cari dönemin gideridir. İlgili gider hesabı borçlandırılır ve peşin ödenmiş varlığı azaltmak için 180 hesap alacaklandırılır.",
+    "explanation": "Önceki yılın net kârı 590’dan 570 Geçmiş Yıllar Kârları hesabına aktarılır: 590 borç, 570 alacak 595.000 ₺. Dağıtım bu hesap üzerinden yapılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 180 hesabın giderleştirilmesi"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 570, 590"
     },
     "tags": [
       "Özgün Soru",
@@ -1081,31 +1081,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-034",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "31 Aralık'ta 280 Gelecek Yıllara Ait Giderler hesabındaki bir tutarın izleyen on iki ay içinde giderleşecek kısmı nereye aktarılır?",
+    "question": "Yıl sonunda gelir tablosu hesaplarının bakiyeleri şöyledir: 600 Yurt İçi Satışlar 1.500.000 ₺, 642 Faiz Gelirleri 30.000 ₺, 610 Satıştan İadeler 40.000 ₺, 621 Satılan Ticari Mallar Maliyeti 900.000 ₺, 632 Genel Yönetim Giderleri 200.000 ₺.\n\nBu hesapların kapatılmasına ilişkin kayıtlar için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "381 Gider Tahakkukları hesabına",
-      "B": "480 Gelecek Yıllara Ait Gelirler hesabına",
-      "C": "380 Gelecek Aylara Ait Gelirler hesabına",
-      "D": "180 Gelecek Aylara Ait Giderler hesabına",
-      "E": "181 Gelir Tahakkukları hesabına"
+      "A": "Dönem Kârı veya Zararı hesabının alacak tarafına 1.530.000 ₺ kaydedilir.",
+      "B": "Dönem Kârı veya Zararı hesabının alacak tarafına 1.500.000 ₺ kaydedilir.",
+      "C": "Dönem Kârı veya Zararı hesabının borç tarafına 1.100.000 ₺ kaydedilir.",
+      "D": "Dönem Kârı veya Zararı hesabının alacak tarafına 1.490.000 ₺ kaydedilir.",
+      "E": "Dönem Kârı veya Zararı hesabının borç tarafına 1.530.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Uzun vadeli peşin giderin izleyen on iki ayda giderleşecek kısmı dönem sonunda 280 hesaptan 180 hesaba aktarılır.",
+    "correctAnswer": "A",
+    "explanation": "Gelir hesapları (600, 642) borçlandırılıp 690’a alacak yazılır: 1.530.000 ₺. Gider ve indirim hesapları (610, 621, 632) alacaklandırılıp 690’a borç yazılır: 1.140.000 ₺. 690 hesabı 390.000 ₺ kâr verir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 180 ve 280 hesapları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 690"
     },
     "tags": [
       "Özgün Soru",
@@ -1113,32 +1113,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-035",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "480 Gelecek Yıllara Ait Gelirler hesabındaki tutarın izleyen on iki ay içinde kazanılacak kısmı hangi hesaba aktarılır?",
+    "question": "7/A seçeneğini uygulayan işletmede yıl içinde 770 Genel Yönetim Giderleri hesabında 200.000 ₺ gider birikmiştir. Dönem sonunda bu giderlerin gelir tablosuna aktarılması ve 7 grubu hesaplarının kapatılması işlemleri yapılacaktır.\n\nYansıtma kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "280 Gelecek Yıllara Ait Giderler",
-      "B": "380 Gelecek Aylara Ait Gelirler",
-      "C": "381 Gider Tahakkukları",
-      "D": "180 Gelecek Aylara Ait Giderler",
-      "E": "181 Gelir Tahakkukları"
+      "A": "```text\n632 GENEL YÖNETİM GİDERLERİ 200.000\n    770 GENEL YÖNETİM GİDERLERİ 200.000\n```",
+      "B": "```text\n771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n    632 GENEL YÖNETİM GİDERLERİ 200.000\n```",
+      "C": "```text\n690 DÖNEM KÂRI VEYA ZARARI 200.000\n    771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n```",
+      "D": "```text\n631 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 200.000\n    761 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ YANSITMA HESABI 200.000\n```",
+      "E": "```text\n632 GENEL YÖNETİM GİDERLERİ 200.000\n    771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Uzun vadeli ertelenmiş gelirin izleyen on iki ayda kazanılacak kısmı 480 hesaptan kısa vadeli 380 hesaba aktarılır.",
+    "correctAnswer": "E",
+    "explanation": "7/A’da gider hesapları yansıtma hesapları aracılığıyla gelir tablosuna aktarılır: 632 Genel Yönetim Giderleri borç, 771 Genel Yönetim Giderleri Yansıtma Hesabı alacak. Ardından 771 ile 770 birbirine kapatılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 380 ve 480 hesapları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 632, 770, 771"
     },
     "tags": [
       "Özgün Soru",
@@ -1147,31 +1147,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-036",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Vadeli mevduatın dönem sonuna kadar kazanılmış 7.500 TL faizi henüz tahsil edilmemiştir. Bu kayıt bilanço üzerinde nasıl etki doğurur?",
+    "question": "7/A seçeneğini uygulayan işletmede yıl içinde kısa vadeli banka kredileriyle ilgili 780 Finansman Giderleri hesabında 96.000 ₺ faiz gideri birikmiştir. Finansman giderlerinin tamamı kısa vadeli borçlanmaya aittir ve aktifleştirilecek tutar yoktur.\n\nDönem sonu yansıtma kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Borçları ve giderleri artırır.",
-      "B": "Yalnız nakdi artırır.",
-      "C": "Varlıkları ve dönem kârını 7.500 TL artırır.",
-      "D": "Tahsilat yapılmadığı için finansal tablolarda hiçbir etki doğurmaz.",
-      "E": "Varlıkları azaltıp finansal borçları ve dönem giderini artırır."
+      "A": "```text\n661 UZUN VADELİ BORÇLANMA GİDERLERİ 96.000\n    781 FİNANSMAN GİDERLERİ YANSITMA HESABI 96.000\n```",
+      "B": "```text\n660 KISA VADELİ BORÇLANMA GİDERLERİ 96.000\n    781 FİNANSMAN GİDERLERİ YANSITMA HESABI 96.000\n```",
+      "C": "```text\n660 KISA VADELİ BORÇLANMA GİDERLERİ 96.000\n    780 FİNANSMAN GİDERLERİ 96.000\n```",
+      "D": "```text\n781 FİNANSMAN GİDERLERİ YANSITMA HESABI 96.000\n    660 KISA VADELİ BORÇLANMA GİDERLERİ 96.000\n```",
+      "E": "```text\n656 KAMBİYO ZARARLARI 96.000\n    781 FİNANSMAN GİDERLERİ YANSITMA HESABI 96.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "181 Gelir Tahakkukları bir varlık, faiz geliri ise dönem sonucunu artıran gelir oluşturur; tahsilat yapılmadan her ikisi 7.500 TL artar.",
+    "correctAnswer": "B",
+    "explanation": "Kısa vadeli borçlanmaya ait finansman giderleri 660 Kısa Vadeli Borçlanma Giderleri hesabına borç, 781 Finansman Giderleri Yansıtma Hesabına alacak yazılarak gelir tablosuna aktarılır; 661 uzun vadeli borçlanma içindir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve 181 Gelir Tahakkukları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 660, 780, 781"
     },
     "tags": [
       "Özgün Soru",
@@ -1180,31 +1180,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-037",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Henüz teslim edilmemiş mal için müşteriden alınan tutara ilişkin ifadeleri değerlendiriniz.\n\nI. Malın devrine ilişkin edim henüz yerine getirilmemiştir.\n\nII. Tahsilat müşteriye karşı avans veya sözleşme yükümlülüğü doğurur.\n\nIII. Bedelin banka yoluyla tahsil edilmesi tek başına satış hasılatı doğurur.\n\nBuna göre hangileri doğrudur?",
+    "question": "İşletmenin 400 Banka Kredileri hesabında 480.000 ₺ tutarında, dört yıl vadeli ve yıllık eşit anapara taksitli bir yatırım kredisi bulunmaktadır. Yıl sonu itibarıyla kredinin 120.000 ₺’lik taksidi izleyen on iki ay içinde ödenecektir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Yalnız II",
-      "B": "I ve II",
-      "C": "Yalnız I",
-      "D": "I ve III",
-      "E": "Yalnız III"
+      "A": "```text\n303 UZUN VADELİ KREDİLERİN ANAPARA TAKSİTLERİ VE FAİZLERİ 120.000\n    400 BANKA KREDİLERİ 120.000\n```",
+      "B": "```text\n400 BANKA KREDİLERİ 120.000\n    300 BANKA KREDİLERİ 120.000\n```",
+      "C": "```text\n400 BANKA KREDİLERİ 120.000\n    303 UZUN VADELİ KREDİLERİN ANAPARA TAKSİTLERİ VE FAİZLERİ 120.000\n```",
+      "D": "```text\n400 BANKA KREDİLERİ 480.000\n    303 UZUN VADELİ KREDİLERİN ANAPARA TAKSİTLERİ VE FAİZLERİ 480.000\n```",
+      "E": "```text\n400 BANKA KREDİLERİ 120.000\n    102 BANKALAR 120.000\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Edim yerine getirilmeden alınan tutar hasılat değil müşteriye karşı yükümlülüktür; ödeme aracının banka olması sonucu değiştirmez.",
+    "correctAnswer": "C",
+    "explanation": "Uzun vadeli kredinin bir yıl içinde ödenecek anapara taksidi kısa vadeli yabancı kaynağa sınıflandırılır: 400 borç, 303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri alacak 120.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TFRS 15 Müşteri Sözleşmelerinden Hasılat"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 303, 400"
     },
     "tags": [
       "Özgün Soru",
@@ -1213,31 +1213,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-038",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dönem sonunda danışmanlık hizmeti tamamen alınmış, fatura henüz gelmemiş ve tutar güvenilir biçimde 20.000 TL ölçülmüştür. Doğru yaklaşım hangisidir?",
+    "question": "İşletme kiraya verdiği depo için üç yıllık kirayı peşin tahsil etmiş; izleyen yılın payını 380, sonraki yılların payını 480 Gelecek Yıllara Ait Gelirler hesabına kaydetmiştir. Yıl sonunda 480 hesabında 150.000 ₺ bulunmakta olup bunun yarısı izleyen yıla aittir.\n\nYıl sonu sınıflandırma kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Fatura gelene kadar kayıt yapılmaz.",
-      "B": "Gelecek aylara ait gider kaydedilir.",
-      "C": "Yalnız dipnot verilir.",
-      "D": "20.000 TL gelir kaydedilir.",
-      "E": "20.000 TL gider ve ilgili tahakkuk borcu kaydedilir."
+      "A": "Gelecek Aylara Ait Gelirler hesabının alacak tarafına 75.000 ₺ kaydedilir.",
+      "B": "Gelecek Yıllara Ait Gelirler hesabının alacak tarafına 75.000 ₺ kaydedilir.",
+      "C": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 75.000 ₺ kaydedilir.",
+      "D": "Gelecek Aylara Ait Gelirler hesabının alacak tarafına 150.000 ₺ kaydedilir.",
+      "E": "Gelecek Aylara Ait Giderler hesabının borç tarafına 75.000 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Hizmet dönemde tüketildiği ve tutar ölçülebildiği için tahakkuk esasıyla gider ile yükümlülük dönem sonunda kaydedilir.",
+    "correctAnswer": "A",
+    "explanation": "480’deki tutarın izleyen on iki aya ait kısmı (75.000 ₺) kısa vadeli hâle gelir: 480 borç, 380 Gelecek Aylara Ait Gelirler alacak. Gelir, ilgili aylar geçtikçe 649’a aktarılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Tahakkuk esası ve 381 Gider Tahakkukları"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 380, 480"
     },
     "tags": [
       "Özgün Soru",
@@ -1246,31 +1246,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-039",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "1 Kasım'da on aylık hizmet için 100.000 TL peşin ödenmiştir. 31 Aralık'ta gider ve peşin gider bakiyesi sırasıyla kaç TL'dir?",
+    "question": "Yıl içinde kasa sayımında saptanan 1.750 ₺ noksan 197 Sayım ve Tesellüm Noksanları hesabına alınmış, yapılan araştırmaya rağmen yıl sonuna kadar farkın nedeni ve sorumlusu belirlenememiştir. Tutarın personelden tahsili de söz konusu değildir.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "20.000 TL ve 80.000 TL",
-      "B": "Sıfır ve 100.000 TL",
-      "C": "80.000 TL ve 20.000 TL",
-      "D": "100.000 TL ve sıfır",
-      "E": "10.000 TL ve 90.000 TL"
+      "A": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 1.750\n    197 SAYIM VE TESELLÜM NOKSANLARI 1.750\n```",
+      "B": "```text\n197 SAYIM VE TESELLÜM NOKSANLARI 1.750\n    100 KASA 1.750\n```",
+      "C": "```text\n135 PERSONELDEN ALACAKLAR 1.750\n    197 SAYIM VE TESELLÜM NOKSANLARI 1.750\n```",
+      "D": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 1.750\n    100 KASA 1.750\n```",
+      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ 1.750\n    397 SAYIM VE TESELLÜM FAZLALARI 1.750\n```"
     },
     "correctAnswer": "A",
-    "explanation": "Aylık tutar 10.000 TL'dir. Kasım ve aralık için 20.000 TL gider, gelecek sekiz ay için 80.000 TL peşin gider kalır.",
+    "explanation": "Nedeni bulunamayan sayım noksanları dönem sonunda olağan dışı zarar olarak kapatılır: 689 Diğer Olağandışı Gider ve Zararlar borç, 197 alacak. Kasa sayım tarihinde zaten alacaklandırılmıştır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Dönemsellik ve 180 Gelecek Aylara Ait Giderler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 197, 689"
     },
     "tags": [
       "Özgün Soru",
@@ -1278,32 +1278,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-040",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "1 Aralık'ta altı aylık kira için 72.000 TL peşin tahsil edilmiştir. 31 Aralık'ta kazanılmış kira geliri ve ertelenmiş gelir sırasıyla kaç TL'dir?",
+    "question": "Yıl içinde stok sayımında bulunan ve 397 Sayım ve Tesellüm Fazlaları hesabına alınan 4.200 ₺’lik fazlalığın nedeni yıl sonuna kadar belirlenememiştir. Fazlalığın bir tedarikçiye ya da müşteriye ait olduğuna ilişkin bir kanıt bulunmamaktadır.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "36.000 TL ve 36.000 TL",
-      "B": "Sıfır ve 72.000 TL",
-      "C": "60.000 TL ve 12.000 TL",
-      "D": "72.000 TL ve sıfır",
-      "E": "12.000 TL ve 60.000 TL"
+      "A": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 4.200 ₺ kaydedilir.",
+      "B": "Ticari Mallar hesabının alacak tarafına 4.200 ₺ kaydedilir.",
+      "C": "Diğer Olağandışı Gelir ve Kârlar hesabının alacak tarafına 4.200 ₺ kaydedilir.",
+      "D": "Sayım ve Tesellüm Fazlaları hesabının alacak tarafına 4.200 ₺ kaydedilir.",
+      "E": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 4.200 ₺ kaydedilir."
     },
-    "correctAnswer": "E",
-    "explanation": "Aylık kira 72.000/6 = 12.000 TL'dir. Aralıkta 12.000 TL kazanılmış, kalan beş aya ait 60.000 TL ertelenmiş gelirdir.",
+    "correctAnswer": "C",
+    "explanation": "Nedeni belirlenemeyen sayım fazlası dönem sonunda olağan dışı gelir olarak kapatılır: 397 borç, 679 Diğer Olağandışı Gelir ve Kârlar alacak 4.200 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Dönemsellik ve 380 Gelecek Aylara Ait Gelirler"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 397, 679"
     },
     "tags": [
       "Özgün Soru",
@@ -1312,31 +1312,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-041",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dönem sonunda yabancı para cinsinden ticari alacağın kur artışı nedeniyle Türk lirası karşılığı 14.000 TL yükselmiştir. Genel olarak hangi sonuç doğar?",
+    "question": "Muhasebe müdürü yeni başlayan bir çalışana yıl sonunda yapılacak işleri anlatmaktadır: kesin mizanın çıkarılması, envanter işlemleri ve düzeltme kayıtları, geçici mizanın düzenlenmesi, finansal tabloların hazırlanması ve kapanış kaydı.\n\nBu işlerin doğru sırası aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Ticari alacak azalır ve 14.000 TL kambiyo zararı doğar.",
-      "B": "Alacak ve kambiyo kârı 14.000 TL artar.",
-      "C": "Stok maliyeti ve dönem gideri 14.000 TL artar.",
-      "D": "Hiçbir kayıt yapılmaz.",
-      "E": "Yalnız nakit artar."
+      "A": "Envanter ve düzeltme → geçici mizan → kesin mizan → tablolar → kapanış",
+      "B": "Geçici mizan → envanter ve düzeltme → kesin mizan → tablolar → kapanış",
+      "C": "Geçici mizan → kesin mizan → envanter ve düzeltme → tablolar → kapanış",
+      "D": "Kesin mizan → envanter ve düzeltme → geçici mizan → kapanış → tablolar",
+      "E": "Geçici mizan → envanter ve düzeltme → tablolar → kesin mizan → kapanış"
     },
     "correctAnswer": "B",
-    "explanation": "Yabancı para parasal alacak kapanış kuruyla çevrilir. Türk lirası karşılığındaki artış alacağı ve ilgili kambiyo kârını artırır.",
+    "explanation": "Önce dönem içi kayıtların kontrolü için geçici mizan düzenlenir, sonra envanter ve düzeltme kayıtları yapılır, kesin mizan çıkarılır, finansal tablolar hazırlanır ve en son hesaplar kapanış kaydıyla kapatılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 21 Kur Değişiminin Etkileri"
+      "legislationRef": "MSUGT: dönem sonu işlemleri"
     },
     "tags": [
       "Özgün Soru",
@@ -1345,31 +1345,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-042",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Yabancı para cinsinden ticari borcun kapanış kurundaki artış nedeniyle Türk lirası karşılığı yükselmiştir. İşletme açısından genel etki hangisidir?",
+    "question": "Yıl sonunda muhasebe servisi 31 Aralık tarihli bir dizi kayıt hazırlamaktadır: amortisman ayrılması, alacak senetlerinin reeskontu, tahakkuk etmiş faizin kaydı, dövizli kalemlerin değerlemesi ve aynı gün yapılan peşin bir mal satışının faturasının kaydı.\n\nBu kayıtlardan hangisi dönem sonu envanter (düzeltme) kaydı niteliğinde değildir?",
     "choices": {
-      "A": "Borç artar ve kambiyo kârı doğar.",
-      "B": "Borç ve kambiyo zararı artar.",
-      "C": "Stok miktarı artar.",
-      "D": "Yalnız öz kaynak artar.",
-      "E": "Borç azalır ve kambiyo geliri artar."
+      "A": "Aynı gün yapılan peşin mal satışının kaydı",
+      "B": "Amortisman ayrılmasına ilişkin kayıt",
+      "C": "Alacak senetlerinin reeskont kaydı",
+      "D": "Tahakkuk etmiş faizin kaydı",
+      "E": "Dövizli kalemlerin değerleme kaydı"
     },
-    "correctAnswer": "B",
-    "explanation": "Yabancı para parasal borcun Türk lirası karşılığındaki artış yükümlülüğü yükseltir ve kural olarak kambiyo zararı oluşturur.",
+    "correctAnswer": "A",
+    "explanation": "Peşin satış 31 Aralık’ta gerçekleşse de olağan bir dönem içi işlemdir. Amortisman, reeskont, tahakkuk ve kur değerlemesi ise envanter sonuçlarına göre yapılan dönem sonu düzeltme kayıtlarıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 21 Kur Değişiminin Etkileri"
+      "legislationRef": "MSUGT: dönem sonu işlemleri"
     },
     "tags": [
       "Özgün Soru",
@@ -1378,31 +1378,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-043",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 21'e göre aşağıdakilerden hangisi parasal kaleme örnektir?",
+    "question": "Üretimde kullanılan bir makinenin yıllık amortismanı 90.000 ₺’dir. Talep yetersizliği nedeniyle makine yılın dört ayında tamamen durdurulmuş, kalan sekiz ay normal kapasiteyle çalışmıştır. İşletme 7/A seçeneğini uygulamaktadır.\n\nDönem sonunda yapılacak düzeltme kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Peşin ödenmiş sigorta",
-      "B": "Stoklar",
-      "C": "Maddi olmayan duran varlık; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "D": "Tarihî maliyetle izlenen makine; bu değerlendirme ilgili işlemin muhasebeleştirilmesinde esas alınır.",
-      "E": "Sabit tutarda yabancı para olarak tahsil edilecek ticari alacak"
+      "A": "```text\n730 GENEL ÜRETİM GİDERLERİ 90.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "B": "```text\n730 GENEL ÜRETİM GİDERLERİ 60.000\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 30.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "C": "```text\n730 GENEL ÜRETİM GİDERLERİ 60.000\n770 GENEL YÖNETİM GİDERLERİ 30.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "D": "```text\n730 GENEL ÜRETİM GİDERLERİ 30.000\n680 ÇALIŞMAYAN KISIM GİDER VE ZARARLARI 60.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```",
+      "E": "```text\n730 GENEL ÜRETİM GİDERLERİ 60.000\n680 ÇALIŞMAYAN KISIM GİDER VE ZARARLARI 30.000\n    257 BİRİKMİŞ AMORTİSMANLAR 90.000\n```"
     },
     "correctAnswer": "E",
-    "explanation": "Sabit veya belirlenebilir tutarda para alma hakkı parasal kalemdir. Stok, peşin gider ve tarihî maliyetli duran varlıklar parasal olmayan kalemlerdir.",
+    "explanation": "Çalışılan sekiz aya düşen 90.000 × 8/12 = 60.000 ₺ üretim maliyetidir (730). Çalışılmayan dört aya düşen 30.000 ₺ maliyete yüklenmez, 680 Çalışmayan Kısım Gider ve Zararları hesabına borç yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 21 Kur Değişiminin Etkileri - parasal kalem"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 680, 730"
     },
     "tags": [
       "Özgün Soru",
@@ -1410,32 +1410,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-044",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Maliyeti 55.000 TL, net gerçekleşebilir değeri 49.000 TL olan stok dönem sonunda hangi tutarla gösterilir?",
+    "question": "İşletmenin 45.000 ₺ maliyetli ve tamamı amortismana tabi tutulmuş bilgisayarları kullanılamaz hâle gelmiş ve hurdaya ayrılmıştır. Hurda için herhangi bir satış bedeli elde edilmemiş ve ek masraf yapılmamıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "49.000 TL",
-      "B": "55.000 TL",
-      "C": "104.000 TL",
-      "D": "6.000 TL",
-      "E": "50.000 TL"
+      "A": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 45.000\n    255 DEMİRBAŞLAR 45.000\n```",
+      "B": "```text\n257 BİRİKMİŞ AMORTİSMANLAR 45.000\n    253 TESİS, MAKİNE VE CİHAZLAR 45.000\n```",
+      "C": "```text\n770 GENEL YÖNETİM GİDERLERİ 45.000\n    257 BİRİKMİŞ AMORTİSMANLAR 45.000\n```",
+      "D": "```text\n257 BİRİKMİŞ AMORTİSMANLAR 45.000\n    255 DEMİRBAŞLAR 45.000\n```",
+      "E": "```text\n257 BİRİKMİŞ AMORTİSMANLAR 45.000\n    679 DİĞER OLAĞANDIŞI GELİR VE KÂRLAR 45.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Stoklar maliyet ile net gerçekleşebilir değerden düşük olanıyla ölçülür. Bu nedenle stok 49.000 TL gösterilir ve 6.000 TL değer düşüklüğü oluşur.",
+    "correctAnswer": "D",
+    "explanation": "Tamamen amortismana tabi tutulmuş varlığın net değeri sıfırdır; kayıttan çıkarılırken birikmiş amortisman 257 borç, varlık 255 Demirbaşlar alacak 45.000 ₺ ile kapatılır. Zarar doğmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - maliyet ve net gerçekleşebilir değerin düşüğü"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 255, 257"
     },
     "tags": [
       "Özgün Soru",
@@ -1444,31 +1444,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-045",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Önceki dönemde 10.000 TL değer düşüklüğü ayrılan stokun net gerçekleşebilir değeri cari dönemde yükselmiştir. İptal için üst sınır hangisidir?",
+    "question": "Maliyeti 60.000 ₺, birikmiş amortismanı 48.000 ₺ olan bir üretim makinesi arıza nedeniyle kullanılamaz hâle gelmiş ve bedelsiz olarak hurdaya ayrılmıştır. Makine için sigorta tazminatı söz konusu değildir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Daha önce ayrılan 10.000 TL",
-      "B": "Sınırsız tutar",
-      "C": "Yalnız 1 TL",
-      "D": "Stokun gerçeğe uygun değerinin iki katı",
-      "E": "Cari dönem satış geliri"
+      "A": "Diğer Olağandışı Gider ve Zararlar hesabının borç tarafına 60.000 ₺ kaydedilir.",
+      "B": "Birikmiş Amortismanlar hesabının alacak tarafına 48.000 ₺ kaydedilir.",
+      "C": "Tesis, Makine ve Cihazlar hesabının alacak tarafına 48.000 ₺ kaydedilir.",
+      "D": "Diğer Olağandışı Gider ve Zararlar hesabının borç tarafına 12.000 ₺ kaydedilir.",
+      "E": "Genel Üretim Giderleri hesabının borç tarafına 12.000 ₺ kaydedilir."
     },
-    "correctAnswer": "A",
-    "explanation": "İptal stokun değer düşüklüğü hiç ayrılmamış olsaydı bulunacak maliyetini aşamaz; dolayısıyla önceki indirim tutarıyla sınırlıdır.",
+    "correctAnswer": "D",
+    "explanation": "Net defter değeri 60.000 − 48.000 = 12.000 ₺’dir ve olağan dışı zarar olarak 689 hesabına borç yazılır; 257 hesabı 48.000 ₺ borçlandırılır, 253 hesabı 60.000 ₺ alacaklandırılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 2 Stoklar - değer düşüklüğü iptali"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 689"
     },
     "tags": [
       "Özgün Soru",
@@ -1477,31 +1477,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-046",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "TMS 37'ye göre karşılık muhasebeleştirme koşullarını değerlendiriniz.\n\nI. Geçmiş bir olaydan kaynaklanan mevcut yükümlülük bulunması\n\nII. Yükümlülüğün yerine getirilmesi için kaynak çıkışının muhtemel olması\n\nIII. Yükümlülük tutarının güvenilir biçimde tahmin edilebilmesi\n\nBuna göre hangileri doğrudur?",
+    "question": "Yıl içinde işletmenin mevduat faizlerinden kesilen 18.000 ₺ gelir vergisi 193 Peşin Ödenen Vergiler ve Fonlar hesabında toplanmıştır. Bu tutar yıl sonunda hesaplanacak kurumlar vergisinden mahsup edilecektir.\n\nDönem sonu sınıflandırma kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "I ve II",
-      "B": "Yalnız I",
-      "C": "Yalnız II",
-      "D": "I, II ve III",
-      "E": "Yalnız III"
+      "A": "Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabının borç tarafına 18.000 ₺ kaydedilir.",
+      "B": "Ödenecek Vergi ve Fonlar hesabının alacak tarafına 18.000 ₺ kaydedilir.",
+      "C": "Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabının borç tarafına 18.000 ₺ kaydedilir.",
+      "D": "Peşin Ödenen Vergiler ve Fonlar hesabının borç tarafına 18.000 ₺ kaydedilir.",
+      "E": "Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabının alacak tarafına 18.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Karşılık kaydı için geçmiş olaydan doğan mevcut yükümlülük, muhtemel kaynak çıkışı ve güvenilir ölçüm koşullarının birlikte bulunması gerekir.",
+    "correctAnswer": "C",
+    "explanation": "Vergiden mahsup edilecek peşin ödenen vergiler dönem sonunda 193’ten 371 Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri hesabına aktarılır: 371 borç, 193 alacak 18.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 37 Karşılıklar, Koşullu Borçlar ve Koşullu Varlıklar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 193, 371"
     },
     "tags": [
       "Özgün Soru",
@@ -1509,32 +1509,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-047",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Kaynak çıkışı ihtimali muhtemel düzeyin altında olan ancak uzak da olmayan olası yükümlülük için TMS 37'de genel uygulama hangisidir?",
+    "question": "İşletme satış mağazası için aylık 25.000 ₺ kira ödemektedir. Aralık ayı kirası sözleşme gereği ocak ayının ilk haftasında ödenecek ve kiraya veren şirket faturasını ödeme tarihinde düzenleyecektir. KDV bu soruda dikkate alınmayacaktır.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Sermayeye eklenir.",
-      "B": "Muhasebeleştirilmez, gerekli bilgiler dipnotta açıklanır.",
-      "C": "Duran varlık yapılır.",
-      "D": "Satış gelirinden indirilir; ilgili hesap veya kalem bu esasa göre belirlenir.",
-      "E": "Tamamı gider ve borç kaydedilir; ilgili kalem finansal tablolarda bu yaklaşım kullanılarak sunulur."
+      "A": "Gider Tahakkukları hesabının alacak tarafına 25.000 ₺ kaydedilir.",
+      "B": "Gelecek Aylara Ait Giderler hesabının borç tarafına 25.000 ₺ kaydedilir.",
+      "C": "Satıcılar hesabının alacak tarafına 25.000 ₺ kaydedilir.",
+      "D": "Genel Yönetim Giderleri hesabının borç tarafına 25.000 ₺ kaydedilir.",
+      "E": "Gider Tahakkukları hesabının alacak tarafına 300.000 ₺ kaydedilir."
     },
-    "correctAnswer": "B",
-    "explanation": "Koşullu borç finansal tablolara alınmaz; kaynak çıkışı ihtimali uzak değilse niteliği ve mümkünse finansal etkisi dipnotlarda açıklanır.",
+    "correctAnswer": "A",
+    "explanation": "Aralık kirası cari dönemin gideridir ancak henüz ödenmemiş ve faturalanmamıştır: 760 Pazarlama, Satış ve Dağıtım Giderleri borç, 381 Gider Tahakkukları alacak 25.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 37 Karşılıklar, Koşullu Borçlar ve Koşullu Varlıklar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 381, 760"
     },
     "tags": [
       "Özgün Soru",
@@ -1542,32 +1542,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-048",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Sonucu işletme lehine olabilecek bir davadan kaynaklanan ekonomik fayda girişi muhtemel fakat henüz kesine yakın değildir. Koşullu varlık nasıl ele alınır?",
+    "question": "7/A seçeneğini uygulayan ticaret işletmesinde yıl içinde 760 Pazarlama, Satış ve Dağıtım Giderleri hesabında 340.000 ₺ gider birikmiştir. Dönem sonunda bu giderler gelir tablosuna aktarılacak ve 7 grubu kapatılacaktır.\n\nYansıtma kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Gelirin tamamı kaydedilir.",
-      "B": "Alacak hesabına kesin olarak alınır.",
-      "C": "Stoklara eklenir.",
-      "D": "Muhasebeleştirilmez; giriş muhtemelse açıklanır.",
-      "E": "Borç kaydedilir."
+      "A": "```text\n632 GENEL YÖNETİM GİDERLERİ 340.000\n    761 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ YANSITMA HESABI 340.000\n```",
+      "B": "```text\n631 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 340.000\n    760 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 340.000\n```",
+      "C": "```text\n761 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ YANSITMA HESABI 340.000\n    631 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 340.000\n```",
+      "D": "```text\n631 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ 340.000\n    761 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ YANSITMA HESABI 340.000\n```",
+      "E": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 340.000\n    761 PAZARLAMA, SATIŞ VE DAĞITIM GİDERLERİ YANSITMA HESABI 340.000\n```"
     },
     "correctAnswer": "D",
-    "explanation": "Koşullu varlıklar gelir gerçekleşmeden muhasebeleştirilmez. Ekonomik fayda girişi muhtemelse açıklama yapılır; kesine yakın olduğunda artık koşullu sayılmaz.",
+    "explanation": "Pazarlama, satış ve dağıtım giderleri 631 hesabı aracılığıyla gelir tablosuna aktarılır: 631 borç, 761 Pazarlama, Satış ve Dağıtım Giderleri Yansıtma Hesabı alacak; ardından 761 ile 760 birbirine kapatılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 37 Karşılıklar, Koşullu Borçlar ve Koşullu Varlıklar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 631, 760, 761"
     },
     "tags": [
       "Özgün Soru",
@@ -1575,32 +1575,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-049",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "İşletme sattığı ürünler için geçmiş deneyime dayalı olarak 30.000 TL garanti onarım maliyeti beklemektedir ve kaynak çıkışı muhtemeldir. Dönem sonu uygulaması hangisidir?",
+    "question": "Finansal tablolarını hazırlayan işletme, bilanço hesaplarını kapatmak için kapanış kaydını yapacaktır. Aktif hesapların toplamı 5.600.000 ₺, düzenleyici hesaplar düşülmeden önceki pasif karakterli hesapların toplamı da aynı tutardadır.\n\nKapanış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Ödeme yapılana kadar kayıt yoktur.",
-      "B": "Stoklar 30.000 TL artırılır.",
-      "C": "Garanti gideri ve karşılık 30.000 TL kaydedilir.",
-      "D": "Yalnız dipnot verilir.",
-      "E": "Satış geliri 30.000 TL artırılır."
+      "A": "Tüm bilanço hesapları borçlandırılarak kapatılır.",
+      "B": "Sadece gelir tablosu hesapları kapatılır.",
+      "C": "Aktif hesaplar borçlandırılır, pasif hesaplar alacaklandırılır.",
+      "D": "Düzenleyici hesaplar kapanış kaydında yer almaz.",
+      "E": "Borç bakiyeli hesaplar alacaklandırılır, alacak bakiyeliler borçlandırılır."
     },
-    "correctAnswer": "C",
-    "explanation": "Satış geçmiş olaydır ve garanti yükümlülüğü doğurur. Muhtemel ve ölçülebilir kaynak çıkışı için gider ile karşılık aynı dönemde kaydedilir.",
+    "correctAnswer": "E",
+    "explanation": "Kapanış kaydında her hesap bakiyesinin tersi yönde kaydedilir: borç bakiyeli (aktif) hesaplar alacaklandırılır, alacak bakiyeli (pasif ve düzenleyici aktif) hesaplar borçlandırılır; kayıt yeni yılın açılış kaydının tersidir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 37 Karşılıklar - garanti yükümlülükleri"
+      "legislationRef": "MSUGT: kapanış kaydı"
     },
     "tags": [
       "Özgün Soru",
@@ -1609,31 +1609,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-050",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Paranın zaman değerinin önemli olduğu uzun vadeli karşılığa ilişkin ifadeleri değerlendiriniz.\n\nI. Beklenen harcamalar uygun oranla bugünkü değere indirilir.\n\nII. İskontonun zamanla çözülmesi borçlanma maliyeti olarak muhasebeleştirilir.\n\nIII. Karşılık her durumda iskonto edilmeksizin nominal tutarla bırakılır.\n\nBuna göre hangileri doğrudur?",
+    "question": "Bir işletmede 31 Aralık itibarıyla dönem içi kayıtlar tamamlanmış, ancak amortisman, reeskont, tahakkuk ve değerleme kayıtları henüz yapılmamıştır. Yönetim bu aşamada tüm hesapların borç-alacak toplamlarını ve bakiyelerini gösteren bir liste istemiştir.\n\nİstenen listeyle ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "I ve II",
-      "B": "I ve III",
-      "C": "Yalnız II",
-      "D": "Yalnız III",
-      "E": "Yalnız I"
+      "A": "Bu liste kesin mizandır; tablolar doğrudan buradan hazırlanır.",
+      "B": "Bu liste kapanış mizanıdır; yeni yıla devredilir.",
+      "C": "Bu liste envanter defteridir; tasdik ettirilmesi gerekir.",
+      "D": "Bu liste geçici mizandır; düzeltmelerden sonra kesin mizan düzenlenir.",
+      "E": "Bu liste yevmiye defteridir; kayıtlar tarih sırasıyla yer alır."
     },
-    "correctAnswer": "A",
-    "explanation": "Zaman değeri önemliyse karşılık bugünkü değerle ölçülür; iskonto etkisinin zamanla çözülmesi finansman maliyeti niteliğindedir.",
+    "correctAnswer": "D",
+    "explanation": "Dönem içi kayıtlar sonrası, envanter ve düzeltme kayıtlarından önce düzenlenen mizan geçici mizandır. Düzeltme kayıtlarından sonra hazırlanan kesin mizan finansal tabloların dayanağıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 37 Karşılıklar - bugünkü değer"
+      "legislationRef": "MSUGT: mizan"
     },
     "tags": [
       "Özgün Soru",
@@ -1641,32 +1641,32 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-051",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dönem sonunda 391 Hesaplanan KDV 44.000 TL, 191 İndirilecek KDV 29.000 TL'dir. Mahsup sonrası ödenecek KDV kaç TL'dir?",
+    "question": "Azalan bakiyeler yöntemiyle amortismana tabi tutulan 500.000 ₺ maliyetli, 5 yıl faydalı ömürlü bir makine için ilk dört yılda sırasıyla 200.000 ₺, 120.000 ₺, 72.000 ₺ ve 43.200 ₺ amortisman ayrılmıştır. Makine beşinci yılda da kullanılmaktadır.\n\nBeşinci yılda ayrılacak amortisman kaç ₺’dir?",
     "choices": {
-      "A": "15.000 TL",
-      "B": "Ödenecek KDV yoktur.",
-      "C": "44.000 TL",
-      "D": "29.000 TL",
-      "E": "73.000 TL"
+      "A": "25.920",
+      "B": "38.880",
+      "C": "43.200",
+      "D": "64.800",
+      "E": "100.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Hesaplanan KDV indirilecek KDV'den 44.000 - 29.000 = 15.000 TL fazladır; bu fark ödenecek vergi olarak izlenir.",
+    "correctAnswer": "D",
+    "explanation": "Azalan bakiyeler yönteminde son yıla kalan değer tamamen amortismana tabi tutulur: 500.000 − (200.000 + 120.000 + 72.000 + 43.200) = 64.800 ₺. %40 uygulanırsa 25.920 ₺ bulunurdu, ancak kalan değer tamamen itfa edilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 191, 360 ve 391 hesapları"
+      "legislationRef": "VUK md. 315"
     },
     "tags": [
       "Özgün Soru",
@@ -1674,32 +1674,197 @@
       "Konu Havuzu",
       "Dönem Sonu İşlemleri"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "Yürürlükteki KDV ve MSUGT hükümleri",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-052",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "191 İndirilecek KDV 38.000 TL, 391 Hesaplanan KDV 31.000 TL ise aradaki 7.000 TL hangi hesapta izlenir?",
+    "question": "Önceki yıl sonunda üç ay vadeli mevduatın aralık ayı faizi olan 15.000 ₺ 181 Gelir Tahakkukları hesabına alınmıştır. Şubat sonunda vade dolmuş ve üç aylık faizin tamamı olan 45.000 ₺ banka hesabına geçmiştir; gelir vergisi kesintisi bu soruda dikkate alınmayacaktır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "370 Dönem Kârı Vergi Karşılığı",
-      "B": "360 Ödenecek Vergi ve Fonlar",
-      "C": "190 Devreden KDV",
-      "D": "480 Gelecek Yıllara Ait Gelirler",
-      "E": "381 Gider Tahakkukları"
+      "A": "```text\n102 BANKALAR 45.000\n    181 GELİR TAHAKKUKLARI 15.000\n    642 FAİZ GELİRLERİ 30.000\n```",
+      "B": "```text\n102 BANKALAR 45.000\n    642 FAİZ GELİRLERİ 45.000\n```",
+      "C": "```text\n102 BANKALAR 45.000\n    181 GELİR TAHAKKUKLARI 45.000\n```",
+      "D": "```text\n102 BANKALAR 45.000\n    181 GELİR TAHAKKUKLARI 15.000\n    649 DİĞER OLAĞAN GELİR VE KÂRLAR 30.000\n```",
+      "E": "```text\n181 GELİR TAHAKKUKLARI 15.000\n102 BANKALAR 30.000\n    642 FAİZ GELİRLERİ 45.000\n```"
     },
-    "correctAnswer": "C",
-    "explanation": "İndirilecek KDV hesaplanan KDV'den fazla olduğunda fark 190 Devreden KDV hesabında borç bakiyesiyle sonraki döneme taşınır.",
+    "correctAnswer": "A",
+    "explanation": "Aralık payı (15.000 ₺) önceki yıl gelir yazıldığı için 181 kapatılır; yeni yıla ait ocak-şubat faizi (30.000 ₺) 642 Faiz Gelirleri hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 190 Devreden KDV"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 102, 181, 642"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-053",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Vergi Usul Kanunu’na göre değerleme yapan işletme 1 Ekim’de 300.000 ₺’ye bir üretim makinesi satın alarak hemen kullanmaya başlamıştır. Makinenin faydalı ömrü 5 yıl olup normal amortisman uygulanacaktır; makine binek otomobil değildir.\n\nİlk yıl için ayrılacak amortisman ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Kıst amortisman olarak 15.000 ₺ ayrılır.",
+      "B": "Kıst amortisman olarak 45.000 ₺ ayrılır.",
+      "C": "İlk yıl amortisman ayrılmaz, ertesi yıl başlar.",
+      "D": "Tam yıllık amortisman olarak 75.000 ₺ ayrılır.",
+      "E": "Tam yıllık amortisman olarak 60.000 ₺ ayrılır."
+    },
+    "correctAnswer": "E",
+    "explanation": "VUK’ta amortisman yıllık olarak ayrılır; yıl içinde alınan varlık için gün ya da ay hesabı yapılmaz ve binek otomobiller dışında tam yıllık amortisman ayrılır: 300.000 / 5 = 60.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 320"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-054",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Geçen yıl sonunda maliyeti 80.000 ₺ olan hisse senetleri için 15.000 ₺ değer düşüklüğü karşılığı ayrılmıştır. Bu yıl sonunda senetler hâlâ elde tutulmakta olup borsa değerleri 74.000 ₺’ye yükselmiştir.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "B": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 9.000 ₺ kaydedilir.",
+      "C": "Hisse Senetleri hesabının borç tarafına 9.000 ₺ kaydedilir.",
+      "D": "Menkul Kıymet Satış Kârları hesabının alacak tarafına 9.000 ₺ kaydedilir.",
+      "E": "Menkul Kıymetler Değer Düşüklüğü Karşılığı hesabının alacak tarafına 6.000 ₺ kaydedilir."
+    },
+    "correctAnswer": "B",
+    "explanation": "Gereken karşılık 80.000 − 74.000 = 6.000 ₺’dir; mevcut 15.000 ₺ karşılığın 9.000 ₺’lik kısmı konusu kalmamıştır: 119 borç, 644 Konusu Kalmayan Karşılıklar alacak.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 119, 644"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-055",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "İşletmenin yıl sonunda üç müşteriden tahsil edilemeyen alacakları bulunmaktadır: A müşterisi için dava açılmıştır; B müşterisine sadece ihtarname gönderilmiştir; C müşterisinin borcu ise tamamen ipotekle teminat altındadır.\n\nVergi Usul Kanunu’na göre şüpheli alacak karşılığı ayrılmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Üç müşteriden olan alacakların tamamı için karşılık ayrılır.",
+      "B": "A ve B müşterilerinden olan alacaklar için karşılık ayrılır.",
+      "C": "Sadece C müşterisinden olan alacak için karşılık ayrılır.",
+      "D": "Sadece A’nın alacağı için karşılık ayrılır.",
+      "E": "Üçüne de karşılık ayrılmaz, alacaklar zarar yazılır."
+    },
+    "correctAnswer": "D",
+    "explanation": "Şüpheli alacak karşılığı dava veya icra safhasındaki alacaklar ile yapılan protestoya veya yazı ile istenmesine rağmen bir defadan fazla ödenmemiş küçük alacaklar için ayrılır; teminatlı kısım için karşılık ayrılmaz. Bu verilerle karşılığa konu olan A’nın alacağıdır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 323"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-056",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "İşletmenin banka hesabında yıl sonunda 10.000 ABD doları bulunmaktadır. Dövizler hesaba 41 ₺ kurla girmiş olup değerleme günü kuru 39,50 ₺’dir. İşletme dövizleri ocak ayında ithalat bedeli olarak ödemeyi planlamaktadır.\n\nDönem sonu değerleme kaydı için aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Kambiyo Kârları hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "B": "Bankalar hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "C": "Kambiyo Zararları hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "D": "Finansman Giderleri hesabının borç tarafına 15.000 ₺ kaydedilir.",
+      "E": "Kambiyo Zararları hesabının borç tarafına 395.000 ₺ kaydedilir."
+    },
+    "correctAnswer": "C",
+    "explanation": "Dövizlerin değeri 10.000 × 39,50 = 395.000 ₺’ye inmiştir; kayıtlı değer 410.000 ₺. 15.000 ₺ azalış 656 Kambiyo Zararları borç, 102 Bankalar alacak ile kaydedilir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 102, 656"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-057",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "İşletme 1 Ekim’de bir reklam ajansıyla 12 aylık hizmet sözleşmesi imzalamış ve bedeli olan 48.000 ₺’yi peşin ödeyerek 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir. Ekim, kasım ve aralık payları ay sonlarında gidere aktarılmıştır.\n\nYıl sonunda 180 hesabının bakiyesi kaç ₺’dir?",
+    "choices": {
+      "A": "12.000",
+      "B": "32.000",
+      "C": "36.000",
+      "D": "44.000",
+      "E": "48.000"
+    },
+    "correctAnswer": "C",
+    "explanation": "Aylık pay 48.000 / 12 = 4.000 ₺’dir. Üç ay (12.000 ₺) gidere aktarıldığından 180 hesabında 48.000 − 12.000 = 36.000 ₺ kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 180"
     },
     "tags": [
       "Özgün Soru",
@@ -1708,196 +1873,31 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "Yürürlükteki KDV ve MSUGT hükümleri",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-053",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Dönem kârı üzerinden hesaplanan vergi ve diğer yasal yükümlülük karşılığının temel kaydı hangisidir?",
-    "choices": {
-      "A": "691 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları borç; 370 ilgili karşılık hesabı alacak",
-      "B": "360 hesap borç; 691 hesap alacak; finansal tablo sunumunda bu sonuca göre işlem yapılır.",
-      "C": "590 hesap borç; 370 hesap alacak; bu değerlendirme ilgili işlemin muhasebeleştirilmesinde esas alınır.",
-      "D": "370 hesap borç; 691 hesap alacak",
-      "E": "690 hesap borç; 370 hesap alacak"
-    },
-    "correctAnswer": "A",
-    "explanation": "Döneme ait vergi gideri 691 hesapta borç, bilanço yükümlülüğü ise 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabında alacak izlenir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 370 ve 691 hesapları"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-054",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "692 Dönem Net Kârı veya Zararı hesabı dönem sonunda 85.000 TL alacak bakiyesi vermiştir. Bu tutar hangi hesaba aktarılır?",
-    "choices": {
-      "A": "591 Dönem Net Zararı",
-      "B": "590 Dönem Net Kârı",
-      "C": "690 Dönem Kârı veya Zararı",
-      "D": "500 Sermaye",
-      "E": "570 Geçmiş Yıllar Kârları"
-    },
-    "correctAnswer": "B",
-    "explanation": "692 hesabın alacak bakiyesi net dönem kârını gösterir; hesap borçlandırılarak kapatılır ve 590 Dönem Net Kârı hesabına alacak aktarılır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - 590 ve 692 hesapları"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-055",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Raporlama döneminden sonra bir müşterinin iflas etmesi, iflasın dönem sonunda mevcut finansal güçlüğü doğruladığı durumda nasıl değerlendirilir?",
-    "choices": {
-      "A": "Duran varlık alınır.",
-      "B": "Satış geliri artırılır.",
-      "C": "Her durumda yeni dönemin olayıdır, açıklanmaz; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "D": "Düzeltme gerektiren olay olarak dönem sonu alacak ölçümüne yansıtılır.",
-      "E": "Yalnız yönetim raporuna yazılır; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır."
-    },
-    "correctAnswer": "D",
-    "explanation": "İflas, raporlama tarihinde mevcut kredi sorununa ilişkin kanıt sağlıyorsa düzeltme gerektiren olaydır ve alacağın dönem sonu değerini etkiler.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 10 Raporlama Döneminden Sonraki Olaylar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-056",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Raporlama döneminden sonra çıkan yangın, dönem sonunda mevcut olmayan yeni bir koşuldan doğmuş ve etkisi önemlidir. Genel uygulama hangisidir?",
-    "choices": {
-      "A": "Dönem sonu tutarları düzeltilmez; olay ve tahmini etkisi açıklanır.",
-      "B": "Yangın zararı önceki döneme kaydedilir; işlemin dönem sonu kaydı bu yöntem esas alınarak tamamlanır.",
-      "C": "Hiç açıklama yapılmaz.",
-      "D": "Geçmiş dönem stokları sıfırlanır; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "E": "Satış geliri azaltılır."
-    },
-    "correctAnswer": "A",
-    "explanation": "Raporlama tarihinden sonra doğan yeni koşula ilişkin önemli olay düzeltme gerektirmez; kullanıcı kararlarını etkileyebilecek nitelik ve finansal etki açıklanır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 10 Raporlama Döneminden Sonraki Olaylar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-057",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Önemli bir önceki dönem hatasının düzeltilmesine ilişkin ifadeleri değerlendiriniz.\n\nI. Uygulanabilir olduğu ölçüde geriye dönük düzeltme yapılır.\n\nII. Karşılaştırmalı tutarlar veya en erken dönemin açılış bakiyeleri yeniden düzenlenir.\n\nIII. Hata her durumda yalnız cari ve gelecek dönemlere ileriye yönelik dağıtılır.\n\nBuna göre hangileri doğrudur?",
-    "choices": {
-      "A": "Yalnız III",
-      "B": "I ve III",
-      "C": "I ve II",
-      "D": "Yalnız II",
-      "E": "Yalnız I"
-    },
-    "correctAnswer": "C",
-    "explanation": "Önemli önceki dönem hataları uygulanamazlık dışında geriye dönük düzeltilir; karşılaştırmalı bilgiler veya açılış bakiyeleri yeniden düzenlenir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 8 Muhasebe Politikaları, Muhasebe Tahminlerinde Değişiklikler ve Hatalar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-058",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Şüpheli alacakların tahsil edilebilirlik oranının yeni ekonomik veriler nedeniyle değiştirilmesi hangi tür değişikliktir?",
+    "question": "Esas faaliyeti dışında bir depo kiraya veren işletme, aralık ayı kirası olan 18.000 ₺’yi sözleşme gereği ocak ayında tahsil edecek ve faturasını tahsil tarihinde düzenleyecektir. KDV bu soruda dikkate alınmayacaktır.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Raporlama sonrası düzeltme dışı olay",
-      "B": "Önceki dönem hatası",
-      "C": "Sermaye işlemi",
-      "D": "Muhasebe tahmini değişikliği",
-      "E": "Muhasebe politikası değişikliği"
+      "A": "Gelir Tahakkukları hesabının borç tarafına 18.000 ₺ kaydedilir.",
+      "B": "Gelecek Aylara Ait Gelirler hesabının alacak tarafına 18.000 ₺ kaydedilir.",
+      "C": "Alıcılar hesabının borç tarafına 18.000 ₺ kaydedilir.",
+      "D": "Yurt İçi Satışlar hesabının alacak tarafına 18.000 ₺ kaydedilir.",
+      "E": "Gelir Tahakkukları hesabının alacak tarafına 18.000 ₺ kaydedilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Yeni bilgi ve gelişmeler sonucunda beklenen tahsilat tutarının güncellenmesi tahmin değişikliğidir ve ileriye yönelik uygulanır.",
+    "correctAnswer": "A",
+    "explanation": "Aralık kirası cari dönemin gelirdir ancak henüz tahsil edilmemiş ve faturalanmamıştır: 181 Gelir Tahakkukları borç, 649 Diğer Olağan Gelir ve Kârlar alacak 18.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "TMS 8 Muhasebe Politikaları, Muhasebe Tahminlerinde Değişiklikler ve Hatalar"
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 181, 649"
     },
     "tags": [
       "Özgün Soru",
@@ -1906,31 +1906,64 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "topic-finansal-donem-059",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Dönem sonu işlemlerinde önemlilik kavramının doğru uygulaması hangisidir?",
+    "question": "Faydalı ömrü 8 yıl olarak belirlenen bir tesis için işletme normal amortisman yöntemini seçmiştir. Tesisin maliyeti 2.400.000 ₺ olup yıl başında hizmete girmiştir ve işletme yöntemi amortisman süresince değiştirmeyecektir.\n\nTesis için yıllık amortisman tutarı kaç ₺’dir?",
     "choices": {
-      "A": "Yalnız büyük işletmelerde düzeltme yapmak",
-      "B": "Tutar, nitelik ve kullanıcı kararlarına olası etkiyi birlikte değerlendirmek",
-      "C": "Yalnız nakit işlemleri incelemek",
-      "D": "Her kalemi tek bir sabit tutarla değerlendirmek; bu ölçüt ilgili kalemin sonraki muhasebeleştirmesinde de dikkate alınır.",
-      "E": "Bütün farkları tutarına bakmadan yok saymak; ilgili hesap veya kalem bu esasa göre belirlenir."
+      "A": "200.000",
+      "B": "240.000",
+      "C": "300.000",
+      "D": "480.000",
+      "E": "600.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Önemlilik yalnız parasal büyüklüğe bağlı değildir; yanlışlık veya eksikliğin niteliği, koşulları ve kullanıcı kararlarına etkisi birlikte değerlendirilir.",
+    "correctAnswer": "C",
+    "explanation": "Normal amortisman oranı 1 / 8 = %12,5’tir: 2.400.000 × %12,5 = 300.000 ₺. Azalan bakiyeler seçilseydi oran %25 olur ve ilk yıl 600.000 ₺ ayrılırdı.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Finansal Raporlamaya İlişkin Kavramsal Çerçeve - önemlilik"
+      "legislationRef": "VUK md. 315"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Dönem Sonu İşlemleri"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "topic-finansal-donem-060",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "7/A seçeneğini uygulayan işletmede dönem sonunda 770 Genel Yönetim Giderleri hesabının 200.000 ₺ borç bakiyesi 771 Genel Yönetim Giderleri Yansıtma Hesabı aracılığıyla 632’ye aktarılmıştır. Şimdi 7 grubundaki bu iki hesabın kapatılması gerekmektedir.\n\nBu kapanış kaydı aşağıdakilerden hangisidir?",
+    "choices": {
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 200.000\n    771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n```",
+      "B": "```text\n632 GENEL YÖNETİM GİDERLERİ 200.000\n    770 GENEL YÖNETİM GİDERLERİ 200.000\n```",
+      "C": "```text\n690 DÖNEM KÂRI VEYA ZARARI 200.000\n    771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n```",
+      "D": "```text\n771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n    632 GENEL YÖNETİM GİDERLERİ 200.000\n```",
+      "E": "```text\n771 GENEL YÖNETİM GİDERLERİ YANSITMA HESABI 200.000\n    770 GENEL YÖNETİM GİDERLERİ 200.000\n```"
+    },
+    "correctAnswer": "E",
+    "explanation": "Yansıtma sonrasında 771 alacak, 770 borç bakiye verir; iki hesap birbirine kapatılır: 771 borç, 770 alacak 200.000 ₺. Gider gelir tablosuna 632 aracılığıyla aktarılmıştır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 770, 771"
     },
     "tags": [
       "Özgün Soru",
@@ -1939,44 +1972,11 @@
       "Dönem Sonu İşlemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-14T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "topic-finansal-donem-060",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Aşağıdaki dönem sonu eşleştirmelerinden hangisi bütünüyle doğrudur?",
-    "choices": {
-      "A": "Dönem net kârı—591; dönem net zararı—590",
-      "B": "Peşin ödenmiş gelecek ay gideri—381; kazanılmış tahsil edilmemiş gelir—380",
-      "C": "Gelecek yıllara ait gelir—280; gider tahakkuku—181",
-      "D": "Devreden KDV—360; ödenecek KDV—190",
-      "E": "Peşin ödenmiş gelecek ay gideri—180; kazanılmış tahsil edilmemiş gelir—181; tahakkuk etmiş ödenmemiş gider—381"
-    },
-    "correctAnswer": "E",
-    "explanation": "180 peşin ödenmiş kısa vadeli giderleri, 181 kazanılmış tahsil edilmemiş gelirleri ve 381 tahakkuk etmiş ödenmemiş giderleri doğru biçimde eşleştirir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "1 Sıra No.lu MSUGT - dönem ayırıcı hesaplar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Dönem Sonu İşlemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-14T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "MSUGT yürürlükteki metin",
-    "sourceUpdatedAt": "2026-07-14T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 281, 313-328; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   }
 ]

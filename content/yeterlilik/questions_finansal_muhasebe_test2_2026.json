@@ -2,88 +2,54 @@
   {
     "id": "demo-finansal-021",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "Varlıkları 420.000 TL, borçları 170.000 TL olan işletmenin özkaynakları kaç TL'dir?",
+    "topicId": "muhasebe_kayitlari",
+    "question": "Perakende mağazasının kredi kartıyla yaptığı 30.000 ₺’lik satışların bedeli, anlaşmalı banka tarafından 30 gün sonra %2 komisyon kesilerek işletmenin hesabına aktarılmıştır. İşletme POS komisyonlarını 653 Komisyon Giderleri hesabında izlemektedir; satış kaydı daha önce yapılmıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "170.000 TL",
-      "B": "420.000 TL",
-      "C": "590.000 TL",
-      "D": "714.000 TL",
-      "E": "250.000 TL"
+      "A": "```text\n102 BANKALAR 29.400\n653 KOMİSYON GİDERLERİ 600\n    108 DİĞER HAZIR DEĞERLER 30.000\n```",
+      "B": "```text\n102 BANKALAR 29.400\n653 KOMİSYON GİDERLERİ 600\n    120 ALICILAR 30.000\n```",
+      "C": "```text\n102 BANKALAR 30.000\n    108 DİĞER HAZIR DEĞERLER 29.400\n    643 KOMİSYON GELİRLERİ 600\n```",
+      "D": "```text\n102 BANKALAR 29.400\n653 KOMİSYON GİDERLERİ 600\n    600 YURT İÇİ SATIŞLAR 30.000\n```",
+      "E": "```text\n102 BANKALAR 29.400\n780 FİNANSMAN GİDERLERİ 600\n    101 ALINAN ÇEKLER 30.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "Temel muhasebe denklemi Varlıklar = Borçlar + Özkaynaklar biçimindedir. Özkaynaklar 420.000 − 170.000 = 250.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Kredi kartı satışından bankadan alınacak tutar 108 Diğer Hazır Değerler hesabında izlenmişti; tahsilatta 108 alacaklandırılır, net tutar 102’ye, kesilen 600 ₺ komisyon işletmenin politikası gereği 653’e borç yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Finansal Raporlamaya İlişkin Kavramsal Çerçeve, varlık-borç-özkaynak tanımları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 102, 108, 653"
     },
-    "topicId": "temel_kavramlar",
-    "difficulty": "easy",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Finansal Muhasebe"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "demo-finansal-022",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "İşletme aralık ayında tamamladığı 45.000 TL tutarındaki danışmanlık hizmetini henüz faturalandırmamış ve tahsil etmemiştir. 31 Aralık tahakkuk kaydı hangisidir?",
+    "topicId": "muhasebe_kayitlari",
+    "question": "Genel kurul kararıyla gerçek kişi ortaklara dağıtılacak 300.000 ₺ brüt kâr payı üzerinden %15 gelir vergisi kesintisi yapılmış; kesinti ile net tutar kayda alınmıştır. Bu ay net kâr payı ortakların hesaplarına, kesilen vergi de muhtasar beyanla vergi dairesine ödenmiştir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "```text\n102 BANKALAR              45.000\n    600 YURT İÇİ SATIŞLAR         45.000\n```",
-      "B": "```text\n181 GELİR TAHAKKUKLARI     45.000\n    600 YURT İÇİ SATIŞLAR         45.000\n```",
-      "C": "```text\n600 YURT İÇİ SATIŞLAR     45.000\n    181 GELİR TAHAKKUKLARI        45.000\n```",
-      "D": "```text\n120 ALICILAR              45.000\n    340 ALINAN SİPARİŞ AVANSLARI  45.000\n```",
-      "E": "```text\n180 GELECEK AYLARA AİT GİD. 45.000\n    102 BANKALAR                  45.000\n```"
-    },
-    "correctAnswer": "B",
-    "explanation": "Hizmet aralık ayında tamamlandığı için gelir tahakkuk etmiştir. Henüz fatura ve tahsilat bulunmadığından 181 Gelir Tahakkukları borç, 600 Yurt İçi Satışlar alacak kaydedilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı: 181 ve 600 hesapları; tahakkuk esası"
-    },
-    "topicId": "donem_sonu_islemleri",
-    "difficulty": "medium",
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
-    ],
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
-  },
-  {
-    "id": "demo-finansal-023",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "temel_kavramlar",
-    "question": "Bir bilginin verilmemesi veya yanlış verilmesinin finansal tablo kullanıcılarının kararlarını etkilemesi bekleniyorsa bu bilgi hangi niteliktedir?",
-    "choices": {
-      "A": "Nakit esaslı",
-      "B": "Vergiden istisna",
-      "C": "Önemli",
-      "D": "İhtiyari",
-      "E": "Gizli"
+      "A": "Ortaklara Borçlar hesabının borç tarafına 300.000 ₺ kaydedilir.",
+      "B": "Geçmiş Yıllar Kârları hesabının borç tarafına 300.000 ₺ kaydedilir.",
+      "C": "Ortaklara Borçlar hesabının borç tarafına 255.000 ₺ kaydedilir.",
+      "D": "Ödenecek Vergi ve Fonlar hesabının alacak tarafına 45.000 ₺ kaydedilir.",
+      "E": "Peşin Ödenen Vergiler ve Fonlar hesabının borç tarafına 45.000 ₺ kaydedilir."
     },
     "correctAnswer": "C",
-    "explanation": "Kullanıcı kararlarını etkileyebilecek eksiklik veya yanlışlık önemlidir; önemlilik işletmeye özgü nicel ve nitel değerlendirme gerektirir.",
+    "explanation": "Kâr dağıtım kaydında net kâr payı 331 Ortaklara Borçlar, kesinti 360 Ödenecek Vergi ve Fonlar hesabına alacak yazılmıştı. Ödemede bu hesaplar borçlandırılarak kapatılır, 102 Bankalar 300.000 ₺ alacaklandırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 1 ve Kavramsal Çerçeve - Önemlilik"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 331, 360, 102"
     },
     "tags": [
       "Özgün Soru",
@@ -92,269 +58,295 @@
       "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-finansal-023",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "muhasebe_kayitlari",
+    "question": "İşletme 100.000 ₺ + %20 KDV tutarında ticari mal satın almıştır. Bedelin 50.000 ₺’si için kendi bankasına çekilmiş bir çek düzenlenmiş, kalan 70.000 ₺ için üç ay vadeli bir bono verilmiştir. Mallar ambara alınmıştır.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
+    "choices": {
+      "A": "```text\n153 TİCARİ MALLAR 100.000\n191 İNDİRİLECEK KDV 20.000\n    103 VERİLEN ÇEKLER VE ÖDEME EMİRLERİ 50.000\n    321 BORÇ SENETLERİ 70.000\n```",
+      "B": "```text\n153 TİCARİ MALLAR 100.000\n191 İNDİRİLECEK KDV 20.000\n    101 ALINAN ÇEKLER 50.000\n    321 BORÇ SENETLERİ 70.000\n```",
+      "C": "```text\n153 TİCARİ MALLAR 100.000\n191 İNDİRİLECEK KDV 20.000\n    103 VERİLEN ÇEKLER VE ÖDEME EMİRLERİ 50.000\n    320 SATICILAR 70.000\n```",
+      "D": "```text\n153 TİCARİ MALLAR 120.000\n    103 VERİLEN ÇEKLER VE ÖDEME EMİRLERİ 50.000\n    321 BORÇ SENETLERİ 70.000\n```",
+      "E": "```text\n153 TİCARİ MALLAR 100.000\n191 İNDİRİLECEK KDV 20.000\n    102 BANKALAR 50.000\n    121 ALACAK SENETLERİ 70.000\n```"
+    },
+    "correctAnswer": "A",
+    "explanation": "Mal 153’e, KDV 191’e borç yazılır. İşletmenin kendi düzenlediği çek 103 Verilen Çekler ve Ödeme Emirleri, verdiği bono 321 Borç Senetleri hesabına alacak yazılır; 101 ve 121 müşterilerden alınan kıymetli evrakı izler.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 153, 191, 103, 321"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-024",
     "lessonId": "finansal_muhasebe",
     "topicId": "muhasebe_kayitlari",
-    "question": "İşletme üretimde kullanmak üzere 80.000 TL tutarında makineyi banka hesabından ödeyerek satın almıştır. KDV dikkate alınmayacaktır. Temel kayıt hangisidir?",
+    "question": "İşletme geçen hafta peşin olarak satın aldığı 10.000 ₺ + %20 KDV tutarındaki ticari malı, sipariş edilenden farklı model olduğu için satıcıya iade etmiştir. Satıcı iadeyi kabul ederek bedeli işletmeye nakit olarak geri ödemiştir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Bankalar borç, Tesis Makine ve Cihazlar alacak",
-      "B": "Genel Yönetim Giderleri borç, Bankalar alacak",
-      "C": "Ticari Mallar borç, Bankalar alacak",
-      "D": "Tesis Makine ve Cihazlar borç, Bankalar alacak",
-      "E": "Tesis Makine ve Cihazlar borç, Sermaye alacak"
+      "A": "Hesaplanan KDV hesabının alacak tarafına 2.000 ₺ kaydedilir.",
+      "B": "Satıştan İadeler hesabının borç tarafına 10.000 ₺ kaydedilir.",
+      "C": "Ticari Mallar hesabının alacak tarafına 12.000 ₺ kaydedilir.",
+      "D": "İndirilecek KDV hesabının alacak tarafına 2.000 ₺ kaydedilir.",
+      "E": "Satıcılar hesabının borç tarafına 12.000 ₺ kaydedilir."
     },
     "correctAnswer": "D",
-    "explanation": "Bir dönemden uzun kullanılacak üretim makinesi maddi duran varlıktır; ilgili varlık hesabı borçlandırılır, banka çıkışı alacaklandırılır.",
+    "explanation": "Alıştan iade stoku azaltır (153 alacak 10.000 ₺); alışta indirilen KDV düzeltilir (191 alacak 2.000 ₺). Bedel nakit iade edildiğinden 100 Kasa borçlandırılır; 610 satıcının kullandığı hesaptır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı ve TMS 16"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 100, 153, 191"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-025",
     "lessonId": "finansal_muhasebe",
     "topicId": "muhasebe_kayitlari",
-    "question": "İşletme sahibi kuruluşta banka hesabına 300.000 TL sermaye yatırmıştır. Yapılacak kayıt hangisidir?",
+    "question": "İşletme üç yıl vadeli 900.000 ₺ yatırım kredisi kullanmıştır. Banka kredi tahsis ücreti olarak 6.000 ₺, ipotek tesisi için yapılan 4.000 ₺ masrafı keserek kalanı işletmenin hesabına aktarmıştır; işletme bu masrafları dönem gideri olarak izlemektedir.\n\nBu işleme ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Sermaye borç, Bankalar alacak",
-      "B": "Kasa borç, Satışlar alacak",
-      "C": "Bankalar borç, Diğer Gelirler alacak",
-      "D": "Bankalar borç, Ticari Borçlar alacak",
-      "E": "Bankalar borç, Sermaye alacak"
+      "A": "```text\n102 BANKALAR 890.000\n780 FİNANSMAN GİDERLERİ 10.000\n    300 BANKA KREDİLERİ 900.000\n```",
+      "B": "```text\n102 BANKALAR 890.000\n780 FİNANSMAN GİDERLERİ 10.000\n    400 BANKA KREDİLERİ 900.000\n```",
+      "C": "```text\n102 BANKALAR 890.000\n    400 BANKA KREDİLERİ 890.000\n```",
+      "D": "```text\n102 BANKALAR 900.000\n    400 BANKA KREDİLERİ 890.000\n    642 FAİZ GELİRLERİ 10.000\n```",
+      "E": "```text\n102 BANKALAR 890.000\n780 FİNANSMAN GİDERLERİ 6.000\n770 GENEL YÖNETİM GİDERLERİ 4.000\n    303 UZUN VADELİ KREDİLERİN ANAPARA TAKSİTLERİ VE FAİZLERİ 900.000\n```"
     },
-    "correctAnswer": "E",
-    "explanation": "İşletmeye konulan değer banka varlığını ve öz kaynak niteliğindeki sermayeyi aynı tutarda artırır.",
+    "correctAnswer": "B",
+    "explanation": "Üç yıl vadeli kredi uzun vadeli yabancı kaynaktır: 400 Banka Kredileri 900.000 ₺ alacak. Kesilen 10.000 ₺ masraf 780 Finansman Giderleri hesabına, 890.000 ₺ 102’ye borç yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 102, 400, 780"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-026",
     "lessonId": "finansal_muhasebe",
     "topicId": "muhasebe_kayitlari",
-    "question": "Satıcıya olan 24.000 TL ticari borç banka hesabından ödenmiştir. Doğru kayıt hangisidir?",
+    "question": "Ay ortasındaki kasa sayımında bulunan ve 397 Sayım ve Tesellüm Fazlaları hesabına alınan 2.500 ₺’nin, bir müşterinin kasaya yaptığı ancak kaydedilmeyen borç ödemesinden kaynaklandığı anlaşılmıştır. Müşterinin cari hesabı 120 hesabında izlenmektedir.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Satıcılar borç 24.000; Bankalar alacak 24.000",
-      "B": "Bankalar borç 24.000; Satıcılar alacak 24.000",
-      "C": "Ticari Mallar borç 24.000; Bankalar alacak 24.000",
-      "D": "Satıcılar borç 24.000; Kasa alacak 24.000",
-      "E": "Bankalar borç 24.000; Satışlar alacak 24.000"
+      "A": "Alıcılar hesabının alacak tarafına 2.500 ₺ kaydedilir.",
+      "B": "Diğer Olağandışı Gelir ve Kârlar hesabının alacak tarafına 2.500 ₺ kaydedilir.",
+      "C": "Sayım ve Tesellüm Fazlaları hesabının alacak tarafına 2.500 ₺ kaydedilir.",
+      "D": "Kasa hesabının borç tarafına 2.500 ₺ kaydedilir.",
+      "E": "Yurt İçi Satışlar hesabının alacak tarafına 2.500 ₺ kaydedilir."
     },
     "correctAnswer": "A",
-    "explanation": "Borcun ödenmesi Satıcılar hesabını borçlandırarak borcu azaltır; banka varlığındaki azalış Bankalar hesabının alacağına kaydedilir.",
+    "explanation": "Kasa sayım tarihinde 100 borç, 397 alacak ile artırılmıştı. Nedeni anlaşılan fazlalık 397’den çıkarılır ve tahsilat müşterinin hesabına işlenir: 397 borç, 120 Alıcılar alacak 2.500 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 397, 120"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-027",
     "lessonId": "finansal_muhasebe",
     "topicId": "muhasebe_kayitlari",
-    "question": "Kredili alınan 10.000 TL tutarındaki ticari malın tamamı, ayıplı olduğu için satıcıya iade edilmiştir. KDV dikkate alınmayacaktır. Kayıt hangisidir?",
+    "question": "Anonim şirketin genel kurulu, 542 Olağanüstü Yedekler hesabında bulunan 400.000 ₺’nin tamamının sermayeye eklenmesine karar vermiş, sermaye artırımı ticaret siciline tescil edilmiştir. Ortaklara yeni paylar bedelsiz olarak dağıtılacaktır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Kasa borç, Ticari Mallar alacak",
-      "B": "Ticari Mallar borç, Kasa alacak",
-      "C": "Satıcılar borç, Ticari Mallar alacak",
-      "D": "Satıştan İadeler borç, Alıcılar alacak",
-      "E": "Ticari Mallar borç, Satıcılar alacak"
+      "A": "Ödenmemiş Sermaye hesabının borç tarafına 400.000 ₺ kaydedilir.",
+      "B": "Olağanüstü Yedekler hesabının alacak tarafına 400.000 ₺ kaydedilir.",
+      "C": "Hisse Senedi İhraç Primleri hesabının alacak tarafına 400.000 ₺ kaydedilir.",
+      "D": "Bankalar hesabının borç tarafına 400.000 ₺ kaydedilir.",
+      "E": "Olağanüstü Yedekler hesabının borç tarafına 400.000 ₺ kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Alış iadesi ticari malı azaltır ve satıcıya olan borcu ortadan kaldırır; Satıcılar borç, Ticari Mallar alacak kaydedilir.",
+    "correctAnswer": "E",
+    "explanation": "İç kaynaklardan sermaye artırımında özkaynak toplamı değişmez, kalemler arasında aktarım olur: 542 Olağanüstü Yedekler borç, 500 Sermaye alacak 400.000 ₺. Ortaklardan nakit tahsil edilmediği için 501 kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 542, 500"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-028",
     "lessonId": "finansal_muhasebe",
     "topicId": "muhasebe_kayitlari",
-    "question": "Bankadan alınan 200.000 TL kısa vadeli kredi işletmenin banka hesabına yatırılmıştır. Temel kayıt hangisidir?",
+    "question": "Protesto edildikten sonra 128 Şüpheli Ticari Alacaklar hesabına aktarılan 36.000 ₺’lik müşteri senedinin bedeli, icra takibi sonucunda borçlu tarafından banka hesabına ödenmiştir. Bu alacak için daha önce karşılık ayrılmamıştır.\n\nBu işleme ilişkin kayıt için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Finansman Gideri borç, Bankalar alacak",
-      "B": "Bankalar borç, Satışlar alacak",
-      "C": "Bankalar borç, Banka Kredileri alacak",
-      "D": "Banka Kredileri borç, Bankalar alacak",
-      "E": "Kasa borç, Sermaye alacak"
+      "A": "Şüpheli Ticari Alacaklar Karşılığı hesabının borç tarafına 36.000 ₺ kaydedilir.",
+      "B": "Konusu Kalmayan Karşılıklar hesabının alacak tarafına 36.000 ₺ kaydedilir.",
+      "C": "Alacak Senetleri hesabının alacak tarafına 36.000 ₺ kaydedilir.",
+      "D": "Karşılık Giderleri hesabının alacak tarafına 36.000 ₺ kaydedilir.",
+      "E": "Şüpheli Ticari Alacaklar hesabının alacak tarafına 36.000 ₺ kaydedilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Krediyle banka varlığı ve finansal borç birlikte artar; Bankalar borç, kısa vadeli Banka Kredileri alacak kaydedilir.",
+    "correctAnswer": "E",
+    "explanation": "Tahsilatla 102 Bankalar borç, 128 Şüpheli Ticari Alacaklar alacak 36.000 ₺ yazılır. Karşılık ayrılmadığından 129 ve 644 hesapları kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 102, 128"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-029",
     "lessonId": "finansal_muhasebe",
-    "topicId": "donem_sonu_islemleri",
-    "question": "Üretimde kullanılan makine için 18.000 TL dönem amortismanı hesaplanmıştır. Doğru kayıt mantığı hangisidir?",
+    "topicId": "finansal_stoklar",
+    "question": "Dönemsel ağırlıklı ortalama yöntemini ve aralıklı envanteri uygulayan işletmenin verileri şöyledir:\n\n| Kalem | Adet | Birim maliyet (₺) |\n|---|---|---|\n| Dönem başı stok | 1.000 | 18 |\n| Mart alışı | 2.000 | 21 |\n| Ekim alışı | 1.000 | 26 |\n\nYıl içinde 3.200 adet satılmıştır.\n\nDönem sonu satılan malın maliyeti kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Makine borç, Bankalar alacak",
-      "B": "Üretimle ilgili gider hesabı borç, Birikmiş Amortisman alacak",
-      "C": "Birikmiş Amortisman borç, Genel Yönetim Gideri alacak",
-      "D": "Bankalar borç, Amortisman Geliri alacak",
-      "E": "Birikmiş Amortisman borç, Makine alacak"
+      "A": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 65.200\n    153 TİCARİ MALLAR 65.200\n```",
+      "B": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 67.200\n    153 TİCARİ MALLAR 67.200\n```",
+      "C": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 17.200\n    153 TİCARİ MALLAR 17.200\n```",
+      "D": "```text\n621 SATILAN TİCARİ MALLAR MALİYETİ 68.800\n    153 TİCARİ MALLAR 68.800\n```",
+      "E": "```text\n153 TİCARİ MALLAR 68.800\n    621 SATILAN TİCARİ MALLAR MALİYETİ 68.800\n```"
     },
-    "correctAnswer": "B",
-    "explanation": "Amortisman kullanılan fonksiyona ait gideri artırır; varlığın birikmiş amortismanı düzenleyici hesapta alacaklandırılır.",
+    "correctAnswer": "D",
+    "explanation": "Ağırlıklı ortalama birim maliyet (18.000 + 42.000 + 26.000) / 4.000 = 21,50 ₺; SMM 3.200 × 21,50 = 68.800 ₺. FIFO 65.200 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 16 ve Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 25; ağırlıklı ortalama"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-030",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "İşletme gelecek ay teslim edeceği mallar için müşteriden banka yoluyla 40.000 TL avans almıştır. Tahsilat tarihinde yapılacak kayıt hangisidir?",
+    "topicId": "finansal_stoklar",
+    "question": "Yıl sonunda işletmenin mamul stokundaki bir ürün grubunun üretim maliyeti 400.000 ₺’dir. Olağan faaliyet akışında tahmini satış fiyatı 390.000 ₺, satışı gerçekleştirmek için gerekli pazarlama ve dağıtım maliyetleri 25.000 ₺ olarak öngörülmüştür.\n\nTMS 2 Stoklar’a göre dönem sonunda yapılacak kayıt aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "```text\n102 BANKALAR              40.000\n    340 ALINAN SİPARİŞ AVANSLARI  40.000\n```",
-      "B": "```text\n102 BANKALAR              40.000\n    600 YURT İÇİ SATIŞLAR         40.000\n```",
-      "C": "```text\n340 ALINAN SİPARİŞ AVANSLARI 40.000\n    102 BANKALAR                  40.000\n```",
-      "D": "```text\n120 ALICILAR              40.000\n    600 YURT İÇİ SATIŞLAR         40.000\n```",
-      "E": "```text\n153 TİCARİ MALLAR         40.000\n    102 BANKALAR                  40.000\n```"
+      "A": "```text\n654 KARŞILIK GİDERLERİ 10.000\n    158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 10.000\n```",
+      "B": "```text\n654 KARŞILIK GİDERLERİ 35.000\n    152 MAMULLER 35.000\n```",
+      "C": "```text\n689 DİĞER OLAĞANDIŞI GİDER VE ZARARLAR 35.000\n    158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 35.000\n```",
+      "D": "```text\n158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 35.000\n    654 KARŞILIK GİDERLERİ 35.000\n```",
+      "E": "```text\n654 KARŞILIK GİDERLERİ 35.000\n    158 STOK DEĞER DÜŞÜKLÜĞÜ KARŞILIĞI 35.000\n```"
     },
-    "correctAnswer": "A",
-    "explanation": "Mal henüz teslim edilmediğinden hasılat doğmamıştır. Banka mevcudu artarken müşteriye karşı teslim yükümlülüğü 340 Alınan Sipariş Avansları hesabında izlenir.",
+    "correctAnswer": "E",
+    "explanation": "NGD = 390.000 − 25.000 = 365.000 ₺; maliyet ile NGD’den düşük olan esas alınır. 35.000 ₺ indirim 654 Karşılık Giderleri borç, 158 Stok Değer Düşüklüğü Karşılığı alacak ile kaydedilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TFRS 15, edim yükümlülüğü ilkesi; Tekdüzen Hesap Planı: 102 ve 340 hesapları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 28-33; THP 158, 654"
     },
-    "topicId": "muhasebe_kayitlari",
-    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "demo-finansal-031",
     "lessonId": "finansal_muhasebe",
     "topicId": "finansal_stoklar",
-    "question": "Dönem başında 40 birim stok 20 TL'den, dönemde 60 birim stok 25 TL'den alınmıştır. 70 birim satılmıştır. FIFO yöntemine göre dönem sonu stok kaç TL'dir?",
+    "question": "İşletme ithal ettiği ticari malları döviz kuru 44 ₺ iken 10.000 ABD doları vadeli borçla kaydetmiştir. Mallar henüz satılmamışken borç, kurun 45 ₺ olduğu tarihte ödenmiştir; aradaki fark 10.000 ₺’dir.\n\nOluşan kur farkının muhasebeleştirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "750 TL",
-      "B": "1.550 TL",
-      "C": "700 TL",
-      "D": "1.250 TL",
-      "E": "600 TL"
+      "A": "Kur farkı ticari malların maliyetine eklenir.",
+      "B": "Kur farkı kâr veya zarara gider olarak yansıtılır.",
+      "C": "Kur farkı mallar satılınca satış maliyetine eklenir.",
+      "D": "Kur farkı özkaynakta ayrı bir fonda izlenir.",
+      "E": "Kur farkı borçlanma maliyeti olarak aktifleştirilir."
     },
-    "correctAnswer": "A",
-    "explanation": "FIFO'da 40 eski ve 30 yeni birim satılır; kalan 30 yeni birimin maliyeti 30 × 25 = 750 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Parasal kalem olan borcun ödenmesinden doğan kur farkı oluştuğu dönemde kâr veya zarara yansıtılır (THP’de 656); parasal olmayan stok işlem tarihi kuruyla kalır, maliyetine eklenmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 21 md. 23, 28"
     },
     "tags": [
       "Özgün Soru",
@@ -362,98 +354,32 @@
       "Bölüm Havuzu",
       "Finansal Muhasebe"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-032",
     "lessonId": "finansal_muhasebe",
-    "topicId": "finansal_stoklar",
-    "question": "100 birim stok 8 TL'den, 100 birim stok 12 TL'den alınmıştır. Tartılı ortalama yöntemde 150 birim satılırsa satılan stokun maliyeti kaç TL'dir?",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Üretim işletmesi dört yıl önce 1.000.000 ₺’ye satın aldığı ve 10 yıl süreyle kullanma hakkına sahip olduğu bir üretim patentini eşit tutarlarla itfa etmektedir. Patent sadece fabrikadaki üretim sürecinde kullanılmaktadır ve işletme 7/A seçeneğini uygulamaktadır.\n\nYıl sonu itfa kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "2.000 TL",
-      "B": "1.000 TL",
-      "C": "1.200 TL",
-      "D": "1.500 TL",
-      "E": "1.800 TL"
+      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 100.000\n    268 BİRİKMİŞ AMORTİSMANLAR 100.000\n```",
+      "B": "```text\n730 GENEL ÜRETİM GİDERLERİ 100.000\n    260 HAKLAR 100.000\n```",
+      "C": "```text\n730 GENEL ÜRETİM GİDERLERİ 100.000\n    268 BİRİKMİŞ AMORTİSMANLAR 100.000\n```",
+      "D": "```text\n730 GENEL ÜRETİM GİDERLERİ 250.000\n    268 BİRİKMİŞ AMORTİSMANLAR 250.000\n```",
+      "E": "```text\n268 BİRİKMİŞ AMORTİSMANLAR 100.000\n    730 GENEL ÜRETİM GİDERLERİ 100.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Ortalama birim maliyet (800 + 1.200) / 200 = 10 TL; satılan 150 birimin maliyeti 1.500 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Yıllık itfa payı 1.000.000 / 10 = 100.000 ₺’dir. Patent üretimde kullanıldığından pay 730 Genel Üretim Giderleri hesabına borç, 268 Birikmiş Amortismanlar hesabına alacak yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 Stoklar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Finansal Muhasebe"
-    ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "demo-finansal-033",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "finansal_stoklar",
-    "question": "Bir stok kaleminin maliyeti 48.000 TL, net gerçekleşebilir değeri 43.000 TL'dir. TMS 2'ye göre dönem sonu ölçümü hangisidir?",
-    "choices": {
-      "A": "48.000 TL üzerinden ölçülür ve değer düşüklüğü kaydı yapılmaz",
-      "B": "43.000 TL ve 5.000 TL değer düşüklüğü",
-      "C": "43.000 TL üzerinden ölçülür fakat değer düşüklüğü kaydı yapılmaz",
-      "D": "48.000 TL üzerinden ölçülür ve 5.000 TL değer düşüklüğü ayrılır",
-      "E": "5.000 TL üzerinden ölçülür ve 43.000 TL değer düşüklüğü ayrılır"
-    },
-    "correctAnswer": "B",
-    "explanation": "Stoklar maliyet ve net gerçekleşebilir değerin düşük olanıyla ölçülür; 48.000 - 43.000 = 5.000 TL değer düşüklüğü kaydedilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 Stoklar"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Finansal Muhasebe"
-    ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
-    "isActive": true
-  },
-  {
-    "id": "demo-finansal-034",
-    "lessonId": "finansal_muhasebe",
-    "topicId": "finansal_stoklar",
-    "question": "TMS 2'ye göre aşağıdakilerden hangisi stok maliyetine dâhil edilmeyip oluştuğu dönemde gider yazılır?",
-    "choices": {
-      "A": "Normalin üzerindeki fire ve üretim kayıpları",
-      "B": "Normal kapasiteye göre dağıtılan sabit genel üretim giderleri",
-      "C": "Stokları mevcut konumuna getiren doğrudan taşıma giderleri",
-      "D": "Üretimle doğrudan ilişkili ilk madde ve işçilik giderleri",
-      "E": "Üretimin zorunlu parçası olan değişken genel üretim giderleri"
-    },
-    "correctAnswer": "A",
-    "explanation": "Normalin üzerindeki fire, işçilik ve diğer üretim maliyetleri stok maliyetine yüklenmez; gerçekleştiği dönemde giderleştirilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 Stoklar"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 268, 730"
     },
     "tags": [
       "Özgün Soru",
@@ -462,31 +388,31 @@
       "Finansal Muhasebe"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
-    "id": "demo-finansal-035",
+    "id": "demo-finansal-033",
     "lessonId": "finansal_muhasebe",
-    "topicId": "finansal_stoklar",
-    "question": "Dönem başı stok 30.000 TL, net alışlar 120.000 TL ve dönem sonu stok 45.000 TL'dir. Satılan ticari malların maliyeti kaç TL'dir?",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Yıl sonunda işletmenin bir satıcıya verdiği ve vadesine 60 gün kalan 44.000 ₺ nominal değerli bir borç senedi bulunmaktadır. İşletme borç senetlerini iç iskonto yöntemiyle ve yıllık %60 oranla reeskonta tabi tutmaktadır.\n\nVergi Usul Kanunu’ndaki reeskont esaslarına göre yıl sonu kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "90.000 TL",
-      "B": "105.000 TL",
-      "C": "75.000 TL",
-      "D": "150.000 TL",
-      "E": "120.000 TL"
+      "A": "```text\n647 REESKONT FAİZ GELİRLERİ 4.000\n    322 BORÇ SENETLERİ REESKONTU 4.000\n```",
+      "B": "```text\n322 BORÇ SENETLERİ REESKONTU 4.000\n    647 REESKONT FAİZ GELİRLERİ 4.000\n```",
+      "C": "```text\n322 BORÇ SENETLERİ REESKONTU 4.400\n    647 REESKONT FAİZ GELİRLERİ 4.400\n```",
+      "D": "```text\n657 REESKONT FAİZ GİDERLERİ 4.000\n    322 BORÇ SENETLERİ REESKONTU 4.000\n```",
+      "E": "```text\n321 BORÇ SENETLERİ 4.000\n    647 REESKONT FAİZ GELİRLERİ 4.000\n```"
     },
     "correctAnswer": "B",
-    "explanation": "Satılan malın maliyeti = 30.000 + 120.000 - 45.000 = 105.000 TL'dir.",
+    "explanation": "İç iskonto: 44.000 × 60 × 60 / (36.000 + 60 × 60) = 4.000 ₺. Borcun bugünkü değere indirilmesi gelir doğurur: 322 Borç Senetleri Reeskontu borç, 647 Reeskont Faiz Gelirleri alacak. Dış iskonto 4.400 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Dönemsel stok maliyeti hesabı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 285; THP 322, 647"
     },
     "tags": [
       "Özgün Soru",
@@ -494,134 +420,197 @@
       "Bölüm Havuzu",
       "Finansal Muhasebe"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-finansal-034",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Depo kiraya veren işletme 1 Aralık’ta kiracıdan üç aylık kira bedeli olarak 45.000 ₺’yi peşin tahsil etmiş ve tamamını 380 Gelecek Aylara Ait Gelirler hesabına kaydetmiştir. Kiralama esas faaliyet konusu dışındadır.\n\nDönem sonu kaydı için aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Gelecek Aylara Ait Gelirler hesabının borç tarafına 45.000 ₺ kaydedilir.",
+      "B": "Diğer Olağan Gelir ve Kârlar hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "C": "Gelecek Aylara Ait Gelirler hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "D": "Yurt İçi Satışlar hesabının alacak tarafına 15.000 ₺ kaydedilir.",
+      "E": "Gelir Tahakkukları hesabının borç tarafına 15.000 ₺ kaydedilir."
+    },
+    "correctAnswer": "B",
+    "explanation": "Aralık ayına ait kira 45.000 / 3 = 15.000 ₺ cari dönemin gelirdir: 380 borç, 649 Diğer Olağan Gelir ve Kârlar alacak. Kalan 30.000 ₺ izleyen yılın geliri olarak 380’de kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 380, 649"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-finansal-035",
+    "lessonId": "finansal_muhasebe",
+    "topicId": "donem_sonu_islemleri",
+    "question": "Yıl sonunda işletmenin dava safhasındaki iki alacağı vardır: A müşterisinden 90.000 ₺ (teminatsız) ve B müşterisinden 50.000 ₺ (30.000 ₺’lik kısmı ipotekle teminatlı). Bu alacaklar için daha önce karşılık ayrılmamıştır.\n\nDönem sonu karşılık kaydı için aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Şüpheli Ticari Alacaklar Karşılığı hesabının alacak tarafına 140.000 ₺ kaydedilir.",
+      "B": "Şüpheli Ticari Alacaklar Karşılığı hesabının alacak tarafına 90.000 ₺ kaydedilir.",
+      "C": "Şüpheli Ticari Alacaklar Karşılığı hesabının alacak tarafına 110.000 ₺ kaydedilir.",
+      "D": "Karşılık Giderleri hesabının alacak tarafına 110.000 ₺ kaydedilir.",
+      "E": "Şüpheli Ticari Alacaklar hesabının alacak tarafına 110.000 ₺ kaydedilir."
+    },
+    "correctAnswer": "C",
+    "explanation": "Karşılık alacakların teminatsız kısmı için ayrılır: A için 90.000 ₺, B için 50.000 − 30.000 = 20.000 ₺; toplam 110.000 ₺. 654 Karşılık Giderleri borç, 129 Şüpheli Ticari Alacaklar Karşılığı alacak yazılır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "VUK md. 323; THP 129, 654"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Finansal Muhasebe"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-036",
     "lessonId": "finansal_muhasebe",
     "topicId": "donem_sonu_islemleri",
-    "question": "Aralık ayına ait 36.000 TL ücret ocak ayında ödenecektir. 31 Aralık'ta hangi düzeltme yapılır?",
+    "question": "Önceki aydan 190 Devreden KDV hesabına 40.000 ₺ aktarılmıştır. Bu ay sonunda 391 Hesaplanan KDV hesabının bakiyesi 90.000 ₺, 191 İndirilecek KDV hesabının bakiyesi 70.000 ₺’dir.\n\nAy sonu mahsup kaydı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Kayıt yapılmaz",
-      "B": "Banka borç, ücret geliri alacak",
-      "C": "Gider tahakkuku borç, banka alacak",
-      "D": "Ücret gideri borç, gider tahakkuku alacak",
-      "E": "Gelecek aylara ait gider borç, kasa alacak"
+      "A": "```text\n391 HESAPLANAN KDV 90.000\n    191 İNDİRİLECEK KDV 70.000\n    360 ÖDENECEK VERGİ VE FONLAR 20.000\n```",
+      "B": "```text\n391 HESAPLANAN KDV 90.000\n190 DEVREDEN KDV 20.000\n    191 İNDİRİLECEK KDV 70.000\n    360 ÖDENECEK VERGİ VE FONLAR 40.000\n```",
+      "C": "```text\n391 HESAPLANAN KDV 90.000\n    191 İNDİRİLECEK KDV 70.000\n    190 DEVREDEN KDV 20.000\n```",
+      "D": "```text\n391 HESAPLANAN KDV 90.000\n    191 İNDİRİLECEK KDV 50.000\n    190 DEVREDEN KDV 40.000\n```",
+      "E": "```text\n391 HESAPLANAN KDV 90.000\n360 ÖDENECEK VERGİ VE FONLAR 20.000\n    191 İNDİRİLECEK KDV 70.000\n    190 DEVREDEN KDV 40.000\n```"
     },
-    "correctAnswer": "D",
-    "explanation": "Ücret aralık döneminde doğmuştur; ödeme yapılmasa da gider ve buna karşılık kısa vadeli yükümlülük tahakkuk ettirilir.",
+    "correctAnswer": "C",
+    "explanation": "Hesaplanan KDV (90.000 ₺) önce bu ayın indirilecek KDV’siyle (70.000 ₺), kalan 20.000 ₺ devreden KDV’den mahsup edilir; ödenecek KDV doğmaz ve 190’da 20.000 ₺ gelecek aya devreder.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tahakkuk esası ve Tekdüzen Hesap Planı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT Tekdüzen Hesap Planı: 190, 191, 391"
     },
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-037",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "İşletme 1 Ekim'de bir yıllık yönetim binası sigortası için 24.000 TL ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir. 31 Aralık düzeltme kaydı hangisidir?",
+    "topicId": "tms_tfrs",
+    "question": "İşletmenin bir müşteriyle yaptığı ve iptal edilemeyen sözleşmeye göre teslim edeceği ürünlerin üretim maliyeti 900.000 ₺’ye yükselmiş, sözleşme bedeli ise 750.000 ₺’de kalmıştır. Sözleşmeden cayılması hâlinde ödenecek tazminat 200.000 ₺’dir.\n\nBu sözleşme için ayrılacak karşılık ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "```text\n770 GENEL YÖNETİM GİDERLERİ 24.000\n    180 GELECEK AYLARA AİT GİD.  24.000\n```",
-      "B": "```text\n180 GELECEK AYLARA AİT GİD.  6.000\n    770 GENEL YÖNETİM GİDERLERİ   6.000\n```",
-      "C": "```text\n280 GELECEK YILLARA AİT GİD. 18.000\n    180 GELECEK AYLARA AİT GİD.  18.000\n```",
-      "D": "```text\n770 GENEL YÖNETİM GİDERLERİ  2.000\n    102 BANKALAR                   2.000\n```",
-      "E": "```text\n770 GENEL YÖNETİM GİDERLERİ  6.000\n    180 GELECEK AYLARA AİT GİD.   6.000\n```"
+      "A": "Cayma tazminatı kadar 200.000 ₺ karşılık ayrılır.",
+      "B": "Kayıp ve tazminat toplamı 350.000 ₺ karşılık ayrılır.",
+      "C": "Karşılık ayrılmaz, zarar teslimde kaydedilir.",
+      "D": "150.000 ₺ karşılık ayrılır.",
+      "E": "Sözleşme maliyeti kadar 900.000 ₺ karşılık ayrılır."
     },
-    "correctAnswer": "E",
-    "explanation": "Aylık sigorta gideri 24.000 / 12 = 2.000 TL'dir. Ekim-aralık dönemine ait 6.000 TL giderleştirilir; 180 hesap aynı tutarda azaltılır.",
+    "correctAnswer": "D",
+    "explanation": "Ekonomik açıdan dezavantajlı sözleşmede karşılık, sözleşmeden çıkmanın en düşük net maliyetiyle ölçülür: ifa hâlinde kayıp 900.000 − 750.000 = 150.000 ₺, cayma tazminatı 200.000 ₺; düşük olan 150.000 ₺ karşılık ayrılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı: 180 ve 770 hesapları; dönemsellik kavramı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 37 md. 66-69"
     },
-    "topicId": "donem_sonu_islemleri",
-    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "demo-finansal-038",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "İşletme, 10.000 TL tutarındaki ticari alacağını şüpheli ticari alacak hesabına aktarmış ve tamamı için karşılık ayırmıştır. Birbirini izleyen iki kayıt hangisidir?",
+    "topicId": "tms_tfrs",
+    "question": "Gerçeğe uygun değer modelini uygulayan işletmenin kiraya verdiği bir alışveriş merkezinin önceki yıl sonu değeri 18.000.000 ₺’dir. Bu yıl sonunda bölgedeki talep düşüşü nedeniyle gerçeğe uygun değeri 16.500.000 ₺’ye gerilemiştir.\n\nBu değer değişikliği ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "```text\n120 ALICILAR              10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n    654 KARŞILIK GİDERLERİ      10.000\n```",
-      "B": "```text\n128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n    120 ALICILAR                10.000\n100 KASA                    10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n```",
-      "C": "```text\n654 KARŞILIK GİDERLERİ    10.000\n    120 ALICILAR                 10.000\n```",
-      "D": "```text\n129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n    128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n```",
-      "E": "```text\n128 ŞÜPHELİ TİCARİ ALACAKLAR 10.000\n    120 ALICILAR                    10.000\n654 KARŞILIK GİDERLERİ       10.000\n    129 ŞÜPHELİ TİCARİ ALACAK KARŞ. 10.000\n```"
+      "A": "1.500.000 ₺ azalış özkaynaktaki yeniden değerleme fonundan düşülür.",
+      "B": "Azalış kaydedilmez, varlık önceki değerde bırakılır.",
+      "C": "Azalış amortisman olarak kaydedilir.",
+      "D": "1.500.000 ₺ azalış kâr veya zarara yansıtılır.",
+      "E": "Azalış dipnotta açıklanır, satışta dikkate alınır."
     },
-    "correctAnswer": "E",
-    "explanation": "Önce ticari alacak 120 hesaptan 128 hesaba aktarılır. Ardından gider 654 hesaba borç, varlığı düzenleyen karşılık 129 hesaba alacak kaydedilir.",
+    "correctAnswer": "D",
+    "explanation": "Yatırım amaçlı gayrimenkulde gerçeğe uygun değer modelinde değer azalışları da artışlar gibi oluştuğu dönemde kâr veya zarara yansıtılır; özkaynakta yeniden değerleme fonu kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Tekdüzen Hesap Planı: 120, 128, 129 ve 654 hesapları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 40 md. 35"
     },
-    "topicId": "donem_sonu_islemleri",
-    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
-      "Finansal Muhasebe",
-      "kayıt"
+      "Finansal Muhasebe"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "demo-finansal-039",
     "lessonId": "finansal_muhasebe",
     "topicId": "tms_tfrs",
-    "question": "TMS 21'e göre yabancı para cinsinden parasal bir borç raporlama dönemi sonunda genel olarak hangi kurla çevrilir?",
+    "question": "Geçen yıl değer düşüklüğü kaydedilen bir makinenin bu yıl sonundaki defter değeri 300.000 ₺’dir. Değer düşüklüğü hiç kaydedilmeseydi makinenin bugünkü defter değeri 380.000 ₺ olacaktı. Koşulların düzelmesiyle geri kazanılabilir tutar 420.000 ₺’ye yükselmiştir.\n\nTMS 36’ya göre değer düşüklüğünün iptali ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "İşletmenin seçtiği sabit kurla",
-      "B": "Bir önceki yılın ortalama kuruyla",
-      "C": "İşlemin ilk günündeki kurla değişmeden",
-      "D": "Kapanış kuruyla",
-      "E": "Sadece vergi dairesinin belirlediği maliyetle"
+      "A": "80.000 ₺ iptal edilir, makine 380.000 ₺ olur.",
+      "B": "120.000 ₺ iptal edilir, makine 420.000 ₺ olur.",
+      "C": "Değer düşüklüğü iptal edilemez.",
+      "D": "40.000 ₺ iptal edilir, makine 340.000 ₺ olur.",
+      "E": "120.000 ₺ iptal edilir, fark özkaynağa alınır."
     },
-    "correctAnswer": "D",
-    "explanation": "Yabancı para cinsinden parasal kalemler raporlama dönemi sonunda kapanış kuru kullanılarak çevrilir ve kur farkı ilgili hükümlere göre muhasebeleştirilir.",
+    "correctAnswer": "A",
+    "explanation": "İptal sonrası defter değeri, geçmişte değer düşüklüğü kaydedilmeseydi oluşacak defter değerini (380.000 ₺) aşamaz. Bu nedenle iptal 380.000 − 300.000 = 80.000 ₺ ile sınırlıdır ve kâr veya zarara yansıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 21 Kur Değişiminin Etkileri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 36 md. 117-119"
     },
     "tags": [
       "Özgün Soru",
@@ -629,45 +618,45 @@
       "Bölüm Havuzu",
       "Finansal Muhasebe"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": true,
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
     "isActive": true
   },
   {
     "id": "demo-finansal-040",
     "lessonId": "finansal_muhasebe",
-    "isPremium": true,
-    "isActive": true,
-    "question": "TMS 16'ya göre toplam maliyeti içinde önemli olan ve yararlı ömrü ana varlıktan farklı bulunan bir parçanın amortismanında hangi yaklaşım uygulanır?",
+    "topicId": "temel_kavramlar",
+    "question": "İşletme makine ve teçhizatını beş yıldır eşit tutarlı yöntemle amortismana tabi tutmaktadır. Bu yıl kârı düşük çıkacağı için yönetim, hiçbir teknik gerekçe olmaksızın amortisman yöntemini sadece bu yıl için değiştirip gelecek yıl yeniden eşit tutarlıya dönmek istemektedir.\n\nBu uygulama aşağıdaki temel kavramlardan hangisine aykırıdır?",
     "choices": {
-      "A": "Bütün parçalar önemine bakılmadan ana varlığın tek oranıyla amorti edilir.",
-      "B": "Önemli parça varlıktan ayrılır ancak hiçbir dönemde amortisman ayrılmaz.",
-      "C": "Önemli parça ayrı amortismana tabi tutulur ve kendi yararlı ömrü esas alınır.",
-      "D": "Parçanın yararlı ömrü yerine yalnız ana varlığın kalıntı değeri esas alınır.",
-      "E": "Farklı yararlı ömür yalnız vergi matrahında izlenir, finansal raporlamaya yansımaz."
+      "A": "Dönemsellik",
+      "B": "İhtiyatlılık",
+      "C": "Parayla ölçülme",
+      "D": "Sosyal sorumluluk",
+      "E": "Tutarlılık"
     },
-    "correctAnswer": "C",
-    "explanation": "Bir maddi duran varlık kaleminin toplam maliyetine göre önemli her parçası ayrı amortismana tabi tutulur. Böylece tüketim biçimi ve yararlı ömür farklılığı finansal tablolara yansıtılır.",
+    "correctAnswer": "E",
+    "explanation": "Tutarlılık kavramı muhasebe politikalarının dönemden döneme aynı uygulanmasını gerektirir; kârı yönetmek amacıyla gerekçesiz ve geçici yöntem değişikliği bu kavrama aykırıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 16 Maddi Duran Varlıklar, par. 43-47"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT: tutarlılık"
     },
-    "topicId": "tms_tfrs",
-    "difficulty": "medium",
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Finansal Muhasebe"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve yürürlükteki Tekdüzen Hesap Planı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı; VUK md. 229-236, 274-328; KGK TMS/TFRS 2026 seti; KDV genel oranı %20; 29.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   }
 ]
