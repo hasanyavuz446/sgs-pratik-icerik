@@ -90,9 +90,11 @@ P.q(R,
 
 # ------------------------------------------------------------------ ikinci dağıtım: basamaklı/doğrudan
 ilk = {"Kesim": 400_000, "Montaj": 300_000, "Bakım": 120_000, "Yemekhane": 80_000}
-tbl = ("| Gider yeri | Birinci dağıtım sonrası (₺) | Personel sayısı | Bakım saati |\n|---|---|---|---|\n"
-       "| Kesim (esas) | 400.000 | 30 | 600 |\n| Montaj (esas) | 300.000 | 50 | 400 |\n"
-       "| Bakım (yardımcı üretim) | 120.000 | 20 | — |\n| Yemekhane (yardımcı hizmet) | 80.000 | — | — |")
+tbl = ("| Gider yeri | Gider (₺) | Personel | Bakım saati |\n|---|---|---|---|\n"
+       "| Kesim | 400.000 | 30 | 600 |\n| Montaj | 300.000 | 50 | 400 |\n"
+       "| Bakım | 120.000 | 20 | — |\n| Yemek | 80.000 | — | — |\n\n"
+       "Tablodaki giderler birinci dağıtım sonrası tutarlardır. Kesim ve Montaj esas üretim, Bakım yardımcı üretim, "
+       "Yemek (yemekhane) yardımcı hizmet gider yeridir.")
 yb = 80_000
 bb = 120_000 + yb * 20 // 100
 k_bas = 400_000 + yb * 30 // 100 + bb * 60 // 100
@@ -181,8 +183,9 @@ P.q("Genel üretim gideri yükleme oranı",
 ykd, yks, grd, grs = 482_500, 360_000, 461_300, 367_400
 P.q("Yüklenen ve gerçekleşen GÜG",
     "Bir mobilya işletmesinde nisan ayında mamullere yüklenen ve gerçekleşen genel üretim giderleri şöyledir:\n\n"
-    "| | Değişken GÜG (₺) | Sabit GÜG (₺) | Toplam (₺) |\n|---|---|---|---|\n"
-    f"| Yüklenen | {tl(ykd)} | {tl(yks)} | {tl(ykd + yks)} |\n| Gerçekleşen | {tl(grd)} | {tl(grs)} | {tl(grd + grs)} |\n\n"
+    "| GÜG | Yüklenen (₺) | Gerçekleşen (₺) |\n|---|---|---|\n"
+    f"| Değişken | {tl(ykd)} | {tl(grd)} |\n| Sabit | {tl(yks)} | {tl(grs)} |\n"
+    f"| Toplam | {tl(ykd + yks)} | {tl(grd + grs)} |\n\n"
     "Değişken, sabit ve toplam GÜG’de fazla (+) veya eksik (−) yükleme sırasıyla aşağıdakilerden hangisidir?",
     f"Fazla {tl(ykd - grd)}; eksik {tl(grs - yks)}; fazla {tl(ykd + yks - grd - grs)}",
     [f"Eksik {tl(ykd - grd)}; fazla {tl(grs - yks)}; eksik {tl(ykd + yks - grd - grs)}",
@@ -216,8 +219,9 @@ P.q("Yüklenen ve gerçekleşen GÜG",
 # ------------------------------------------------------------------ ABC
 pools = [("Makine ayarı", 900_000, 1_500, "ayar"), ("Malzeme taşıma", 400_000, 2_000, "taşıma"),
          ("Kalite testi", 600_000, 3_000, "test"), ("Sipariş işleme", 300_000, 600, "sipariş")]
-tabloabc = ("| Faaliyet | Bütçelenen GÜG (₺) | Maliyet sürücüsü | Bütçelenen işlem |\n|---|---|---|---|\n" +
-            "\n".join(f"| {a} | {tl(g)} | {s} sayısı | {tl(n)} |" for a, g, n, s in pools))
+tabloabc = ("| Faaliyet (sürücü) | GÜG (₺) | İşlem |\n|---|---|---|\n" +
+            "\n".join(f"| {a} ({s} sayısı) | {tl(g)} | {tl(n)} |" for a, g, n, s in pools) +
+            "\n\nTutarlar bütçelenen GÜG’ü, işlem sütunu bütçelenen işlem sayısını gösterir.")
 oran = [g // n for _, g, n, _ in pools]
 P.q(ABC,
     "Faaliyet tabanlı maliyetleme uygulayan işletmenin bütçe verileri aşağıdadır:\n\n" + tabloabc +

@@ -416,8 +416,9 @@ P.q(BK,
     "Net etki = −210.000 + 260.000 − 35.000 = 15.000 ₺ artış. Yeniden açılış gideri göz ardı edilirse kazanç 50.000 ₺ "
     "gibi görünür.")
 
-tablo = ("| Ürün hattı | Satış (₺) | Değişken maliyet (₺) | Hatta özgü sabit gider (₺) |\n|---|---|---|---|\n"
-         "| A | 500.000 | 300.000 | 80.000 |\n| B | 400.000 | 220.000 | 60.000 |\n| C | 200.000 | 140.000 | 50.000 |")
+tablo = ("| Hat | Satış (₺) | Maliyet (₺) | Özgü sabit (₺) |\n|---|---|---|---|\n"
+         "| A | 500.000 | 300.000 | 80.000 |\n| B | 400.000 | 220.000 | 60.000 |\n| C | 200.000 | 140.000 | 50.000 |\n\n"
+         "Maliyet sütunu değişken maliyetleri, özgü sabit sütunu hatta özgü sabit giderleri gösterir.")
 mevcut = (200_000 - 80_000) + (180_000 - 60_000) + (60_000 - 50_000) - 150_000
 yeni = (200_000 - 80_000) + (180_000 - 60_000) - 150_000
 assert (mevcut, yeni) == (100_000, 90_000)

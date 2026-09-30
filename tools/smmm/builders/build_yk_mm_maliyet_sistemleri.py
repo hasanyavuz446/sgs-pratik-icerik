@@ -46,9 +46,10 @@ P.q(SP,
 
 sip = {"A": (60_000, 40_000, 3_000), "B": (35_000, 22_000, 1_600), "C": (18_000, 9_000, 700)}
 yk = 20
-tbl = ("| Sipariş | DİMM (₺) | DİŞ (₺) | DİS | Durum |\n|---|---|---|---|---|\n"
-       "| A | 60.000 | 40.000 | 3.000 | Tamamlandı, teslim edildi |\n"
-       "| B | 35.000 | 22.000 | 1.600 | Tamamlandı, depoda |\n| C | 18.000 | 9.000 | 700 | Devam ediyor |")
+tbl = ("| Sipariş | DİMM (₺) | DİŞ (₺) | DİS |\n|---|---|---|---|\n"
+       "| A | 60.000 | 40.000 | 3.000 |\n| B | 35.000 | 22.000 | 1.600 |\n| C | 18.000 | 9.000 | 700 |\n\n"
+       "A siparişi tamamlanıp müşteriye teslim edilmiş, B tamamlanıp depoda beklemekte, C’nin üretimi ise "
+       "sürmektedir.")
 mal = {k: d + i + h * yk for k, (d, i, h) in sip.items()}
 P.sayisal(SP,
     "Sipariş maliyet sistemini uygulayan işletmede ay içindeki siparişler şöyledir:\n\n" + tbl +
@@ -130,7 +131,7 @@ P.q(SP,
     "kapatılır.")
 
 # =============================================================================== SAFHA — ağırlıklı ortalama (S1)
-s1 = ("| Kalem | Miktar (birim) | Tamamlanma (dönüşüm) |\n|---|---|---|\n"
+s1 = ("| Kalem | Miktar (birim) | Dönüşüm |\n|---|---|---|\n"
       "| Dönem başı yarı mamul | 1.000 | %40 |\n| Dönemde üretime başlanan | 9.000 | — |\n"
       "| Tamamlanıp sonraki aşamaya devredilen | 8.000 | %100 |\n| Dönem sonu yarı mamul | 2.000 | %50 |")
 S1 = ("Safha maliyet sistemini ve ağırlıklı ortalama yöntemini uygulayan bir işletmenin karıştırma safhasına ait veriler "
