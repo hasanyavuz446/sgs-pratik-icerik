@@ -265,6 +265,27 @@ Maliyet Muhasebesi dersinde (2026-09-30) öğrenilenler:
   "yalnız", "her durumda" en sık düşülen kelimelerdir. `Paket` ilk ihlalde durur; builder'ı
   `_siklar_denetle` gevşetilmiş hâlde içe aktaran kısa bir tarama ile hepsini tek seferde listele.
 
+Finansal Tablolar ve Analizi dersinde (2026-09-30) öğrenilenler:
+- Gerçek bant (40 soru): medyan kök 92, sayısal şık %85, veri %85, olumsuz %2,5, atıf %5. Soruların
+  çoğu ortak bir bilanço + gelir tablosuna (stimulus) bağlıdır ve kökü kısadır. Builder'lar
+  `builders/fta_ortak.py` ile yazılır: `Sirket` ham kalemlerden tabloları kurup denkliği denetler ve
+  ölçüleri (cari, likidite, devir süreleri, kârlılık, dikey, trend, karşılaştırmalı, nakit) hesaplar;
+  `Fta` doğru şıkkın sırasını dengeli harf dizisine göre çeldirici seçerek belirler ve uyaranları
+  `stimuli.json`'a kimliğe göre sıralı yazar (her builder yalnız kendi önekini günceller).
+- Uygulama Yeterlilik'te aynı kökü iki soruda kabul etmez (ContentValidator) ve audit yalnız sayısı
+  değişen kökü FATAL sayar: köke şirket adı girer, aynı şirkette her ölçü/kalem bir kez sorulur.
+  Farklı şirketlerde aynı ölçü sorulduğunda kök kalıbı dönüşümlü seçilir (yakın-tekrar UYARI'sı).
+- Sıralı sayısal şıklarda kör öğrenci eşit boylu şıklar arasında uçtaki harfi (A/E) seçer; A ve E
+  serbest sorulara bırakılır. Negatif yüzdeler "-25,00" biçiminde yazılır, yüzde işareti kökte
+  "(%)" olarak verilir: "-%25" biçimi `sayi_degeri` ile pozitif okunur ve harf kayar.
+- Audit şıkları işaretten arındırarak karşılaştırır: "-35.000" ile "35.000" aynı şık sayılır; tam
+  ters işaretli çeldirici kullanılmaz. Değeri sıfır olan ölçü (değişmeyen kalem) sorulmaz.
+- Tablo genişliği testi (`test/table_cell_width_test.dart`) artık Yeterlilik `question` alanını da
+  tarar; 360 dp'de dört sütunlu tabloda "Yemekhane", "Değişken" gibi sözcükler bölünür. Kök
+  içi tabloları üç sütuna indir ya da başlıkları kısalt; ortak tablolar (stimulus) yatay kaydırılır.
+- Bölüm testini 20'ye tamamlarken bölümü dolduran eski demo soruları (`demo_questions.json`)
+  pasife alınır ve `content_quality_test.dart` sayıları güncellenir.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve

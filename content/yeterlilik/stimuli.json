@@ -1,13 +1,5 @@
 [
   {
-    "id": "demo-analiz-tablo-001",
-    "title": "ABC İşletmesi — Özet Finansal Veriler",
-    "kind": "table",
-    "bodyMarkdown": "| Kalem | 2025 | 2026 |\n|---|---:|---:|\n| Dönen Varlıklar | 240.000 TL | 300.000 TL |\n| Kısa Vadeli Yabancı Kaynaklar | 120.000 TL | 150.000 TL |\n| Net Satışlar | 400.000 TL | 500.000 TL |\n| Dönem Net Kârı | 40.000 TL | 60.000 TL |",
-    "caption": "Aşağıdaki iki soruyu bu ortak veri tablosuna göre cevaplayınız.",
-    "updatedAt": "2026-07-17T00:00:00Z"
-  },
-  {
     "id": "demo-analiz-grafik-001",
     "title": "XYZ İşletmesi — Satış ve Maliyet Endeksleri",
     "kind": "graph",
@@ -50,11 +42,550 @@
     "updatedAt": "2026-07-17T00:00:00Z"
   },
   {
+    "id": "demo-analiz-tablo-001",
+    "title": "ABC İşletmesi — Özet Finansal Veriler",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 2025 | 2026 |\n|---|---:|---:|\n| Dönen Varlıklar | 240.000 TL | 300.000 TL |\n| Kısa Vadeli Yabancı Kaynaklar | 120.000 TL | 150.000 TL |\n| Net Satışlar | 400.000 TL | 500.000 TL |\n| Dönem Net Kârı | 40.000 TL | 60.000 TL |",
+    "caption": "Aşağıdaki iki soruyu bu ortak veri tablosuna göre cevaplayınız.",
+    "updatedAt": "2026-07-17T00:00:00Z"
+  },
+  {
     "id": "yet-analiz-ghi-001",
     "title": "GHI İşletmesi — Karşılaştırmalı Finansal Veriler",
     "kind": "table",
     "bodyMarkdown": "| Kalem (bin TL) | 2025 | 2026 |\n|---|---:|---:|\n| Hazır Değerler | 160 | 180 |\n| Ticari Alacaklar | 240 | 300 |\n| Stoklar | 200 | 300 |\n| Diğer Dönen Varlıklar | 40 | 120 |\n| **Dönen Varlıklar** | 640 | 900 |\n| Duran Varlıklar | 960 | 1.100 |\n| **Toplam Varlıklar** | 1.600 | 2.000 |\n| Kısa Vadeli Yabancı Kaynaklar | 500 | 600 |\n| Uzun Vadeli Yabancı Kaynaklar | 460 | 600 |\n| Özkaynaklar | 640 | 800 |\n| Net Satışlar | 2.000 | 2.400 |\n| Satışların Maliyeti | 1.300 | 1.500 |\n| **Brüt Kâr** | 700 | 900 |\n| Faaliyet Giderleri | 450 | 540 |\n| **Faaliyet Kârı** | 250 | 360 |\n| Net Dönem Kârı | 150 | 240 |",
     "caption": "Tutarlar bin TL'dir.",
     "updatedAt": "2026-07-15T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-dikey-def",
+    "title": "DEF A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 600.000 | 700.000 | 800.000 |\n| Hazır Değerler | 50.000 | 40.000 | 60.000 |\n| Ticari Alacaklar | 300.000 | 360.000 | 390.000 |\n| Stoklar | 250.000 | 300.000 | 350.000 |\n| DURAN VARLIKLAR | 900.000 | 940.000 | 1.000.000 |\n| Maddi Duran Varlıklar | 800.000 | 850.000 | 900.000 |\n| Maddi Olmayan Duran Varlıklar | 100.000 | 90.000 | 100.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.500.000 | 1.640.000 | 1.800.000 |\n| KISA VADELİ YAB. KAY. | 395.000 | 547.500 | 650.000 |\n| Mali Borçlar | 195.000 | 287.500 | 350.000 |\n| Ticari Borçlar | 200.000 | 260.000 | 300.000 |\n| UZUN VADELİ YAB. KAY. | 350.000 | 300.000 | 320.000 |\n| Mali Borçlar | 350.000 | 300.000 | 320.000 |\n| ÖZ KAYNAKLAR | 755.000 | 792.500 | 830.000 |\n| Ödenmiş Sermaye | 600.000 | 600.000 | 600.000 |\n| Geçmiş Yıllar Kârları | 50.000 | 80.000 | 110.000 |\n| Dönem Net Kârı (Zararı) | 105.000 | 112.500 | 120.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.500.000 | 1.640.000 | 1.800.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.040.000 | 2.450.000 | 2.900.000 |\n| Satış İndirimleri (-) | 40.000 | 50.000 | 100.000 |\n| Net Satışlar | 2.000.000 | 2.400.000 | 2.800.000 |\n| Satışların Maliyeti (-) | 1.500.000 | 1.800.000 | 2.100.000 |\n| Brüt Satış Kârı | 500.000 | 600.000 | 700.000 |\n| Faaliyet Giderleri (-) | 300.000 | 380.000 | 450.000 |\n| Faaliyet Kârı | 200.000 | 220.000 | 250.000 |\n| Finansman Giderleri (-) | 60.000 | 70.000 | 90.000 |\n| Dönem Kârı | 140.000 | 150.000 | 160.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 35.000 | 37.500 | 40.000 |\n| Dönem Net Kârı | 105.000 | 112.500 | 120.000 |",
+    "caption": "DEF A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-dikey-hjk",
+    "title": "HJK A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 400.000 | 520.000 | 610.000 |\n| Hazır Değerler | 30.000 | 45.000 | 25.000 |\n| Menkul Kıymetler | 10.000 | 15.000 | 20.000 |\n| Ticari Alacaklar | 180.000 | 220.000 | 260.000 |\n| Stoklar | 160.000 | 210.000 | 280.000 |\n| Diğer Dönen Varlıklar | 20.000 | 30.000 | 25.000 |\n| DURAN VARLIKLAR | 640.000 | 680.000 | 750.000 |\n| Maddi Duran Varlıklar | 600.000 | 640.000 | 700.000 |\n| Maddi Olmayan Duran Varlıklar | 40.000 | 40.000 | 50.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.040.000 | 1.200.000 | 1.360.000 |\n| KISA VADELİ YAB. KAY. | 262.500 | 365.000 | 532.500 |\n| Mali Borçlar | 92.500 | 150.000 | 262.500 |\n| Ticari Borçlar | 150.000 | 190.000 | 240.000 |\n| Diğer Borçlar | 20.000 | 25.000 | 30.000 |\n| UZUN VADELİ YAB. KAY. | 250.000 | 280.000 | 260.000 |\n| Mali Borçlar | 250.000 | 280.000 | 260.000 |\n| ÖZ KAYNAKLAR | 527.500 | 555.000 | 567.500 |\n| Ödenmiş Sermaye | 400.000 | 400.000 | 400.000 |\n| Geçmiş Yıllar Kârları | 30.000 | 50.000 | 70.000 |\n| Dönem Net Kârı (Zararı) | 97.500 | 105.000 | 97.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.040.000 | 1.200.000 | 1.360.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 1.530.000 | 1.840.000 | 2.150.000 |\n| Satış İndirimleri (-) | 30.000 | 40.000 | 50.000 |\n| Net Satışlar | 1.500.000 | 1.800.000 | 2.100.000 |\n| Satışların Maliyeti (-) | 1.080.000 | 1.310.000 | 1.560.000 |\n| Brüt Satış Kârı | 420.000 | 490.000 | 540.000 |\n| Faaliyet Giderleri (-) | 240.000 | 290.000 | 330.000 |\n| Faaliyet Kârı | 180.000 | 200.000 | 210.000 |\n| Finansman Giderleri (-) | 50.000 | 60.000 | 80.000 |\n| Dönem Kârı | 130.000 | 140.000 | 130.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 32.500 | 35.000 | 32.500 |\n| Dönem Net Kârı | 97.500 | 105.000 | 97.500 |",
+    "caption": "HJK A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-dikey-mnp",
+    "title": "MNP A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 800.000 | 900.000 | 1.000.000 |\n| Hazır Değerler | 60.000 | 35.000 | 40.000 |\n| Ticari Alacaklar | 400.000 | 460.000 | 500.000 |\n| Diğer Alacaklar | 20.000 | 25.000 | 30.000 |\n| Stoklar | 320.000 | 380.000 | 430.000 |\n| DURAN VARLIKLAR | 1.180.000 | 1.250.000 | 1.370.000 |\n| Maddi Duran Varlıklar | 1.100.000 | 1.150.000 | 1.250.000 |\n| Maddi Olmayan Duran Varlıklar | 80.000 | 100.000 | 120.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.980.000 | 2.150.000 | 2.370.000 |\n| KISA VADELİ YAB. KAY. | 470.000 | 547.500 | 742.500 |\n| Mali Borçlar | 190.000 | 217.500 | 362.500 |\n| Ticari Borçlar | 280.000 | 330.000 | 380.000 |\n| UZUN VADELİ YAB. KAY. | 450.000 | 500.000 | 480.000 |\n| Mali Borçlar | 450.000 | 500.000 | 480.000 |\n| ÖZ KAYNAKLAR | 1.060.000 | 1.102.500 | 1.147.500 |\n| Ödenmiş Sermaye | 900.000 | 900.000 | 900.000 |\n| Geçmiş Yıllar Kârları | 40.000 | 60.000 | 90.000 |\n| Dönem Net Kârı (Zararı) | 120.000 | 142.500 | 157.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.980.000 | 2.150.000 | 2.370.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 3.060.000 | 3.570.000 | 4.100.000 |\n| Satış İndirimleri (-) | 60.000 | 70.000 | 100.000 |\n| Net Satışlar | 3.000.000 | 3.500.000 | 4.000.000 |\n| Satışların Maliyeti (-) | 2.250.000 | 2.660.000 | 3.040.000 |\n| Brüt Satış Kârı | 750.000 | 840.000 | 960.000 |\n| Faaliyet Giderleri (-) | 480.000 | 520.000 | 600.000 |\n| Faaliyet Kârı | 270.000 | 320.000 | 360.000 |\n| Finansman Giderleri (-) | 110.000 | 130.000 | 150.000 |\n| Dönem Kârı | 160.000 | 190.000 | 210.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 40.000 | 47.500 | 52.500 |\n| Dönem Net Kârı | 120.000 | 142.500 | 157.500 |",
+    "caption": "MNP A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-kars-kra",
+    "title": "KRA A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 730.000 | 740.000 | 795.000 |\n| Hazır Değerler | 90.000 | 60.000 | 75.000 |\n| Ticari Alacaklar | 380.000 | 350.000 | 420.000 |\n| Stoklar | 260.000 | 330.000 | 300.000 |\n| DURAN VARLIKLAR | 1.120.000 | 1.190.000 | 1.250.000 |\n| Maddi Duran Varlıklar | 1.000.000 | 1.080.000 | 1.150.000 |\n| Maddi Olmayan Duran Varlıklar | 120.000 | 110.000 | 100.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.850.000 | 1.930.000 | 2.045.000 |\n| KISA VADELİ YAB. KAY. | 390.000 | 375.000 | 442.500 |\n| Mali Borçlar | 150.000 | 75.000 | 172.500 |\n| Ticari Borçlar | 240.000 | 300.000 | 270.000 |\n| UZUN VADELİ YAB. KAY. | 450.000 | 520.000 | 480.000 |\n| Mali Borçlar | 450.000 | 520.000 | 480.000 |\n| ÖZ KAYNAKLAR | 1.010.000 | 1.035.000 | 1.122.500 |\n| Ödenmiş Sermaye | 800.000 | 800.000 | 800.000 |\n| Geçmiş Yıllar Kârları | 60.000 | 100.000 | 120.000 |\n| Dönem Net Kârı (Zararı) | 150.000 | 135.000 | 202.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.850.000 | 1.930.000 | 2.045.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.800.000 | 3.080.000 | 3.350.000 |\n| Satış İndirimleri (-) | 80.000 | 60.000 | 50.000 |\n| Net Satışlar | 2.720.000 | 3.020.000 | 3.300.000 |\n| Satışların Maliyeti (-) | 2.000.000 | 2.250.000 | 2.400.000 |\n| Brüt Satış Kârı | 720.000 | 770.000 | 900.000 |\n| Faaliyet Giderleri (-) | 420.000 | 470.000 | 520.000 |\n| Faaliyet Kârı | 300.000 | 300.000 | 380.000 |\n| Finansman Giderleri (-) | 100.000 | 120.000 | 110.000 |\n| Dönem Kârı | 200.000 | 180.000 | 270.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 50.000 | 45.000 | 67.500 |\n| Dönem Net Kârı | 150.000 | 135.000 | 202.500 |",
+    "caption": "KRA A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-kars-krb",
+    "title": "KRB A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 440.000 | 487.000 | 573.000 |\n| Hazır Değerler | 30.000 | 42.000 | 21.000 |\n| Menkul Kıymetler | 0 | 20.000 | 10.000 |\n| Ticari Alacaklar | 210.000 | 240.000 | 300.000 |\n| Stoklar | 190.000 | 170.000 | 230.000 |\n| Diğer Dönen Varlıklar | 10.000 | 15.000 | 12.000 |\n| DURAN VARLIKLAR | 660.000 | 735.000 | 730.000 |\n| Maddi Duran Varlıklar | 640.000 | 700.000 | 690.000 |\n| Maddi Olmayan Duran Varlıklar | 20.000 | 35.000 | 40.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.100.000 | 1.222.000 | 1.303.000 |\n| KISA VADELİ YAB. KAY. | 347.500 | 390.750 | 473.000 |\n| Mali Borçlar | 162.500 | 220.750 | 245.000 |\n| Ticari Borçlar | 170.000 | 150.000 | 210.000 |\n| Diğer Borçlar | 15.000 | 20.000 | 18.000 |\n| UZUN VADELİ YAB. KAY. | 180.000 | 240.000 | 200.000 |\n| Mali Borçlar | 180.000 | 240.000 | 200.000 |\n| ÖZ KAYNAKLAR | 572.500 | 591.250 | 630.000 |\n| Ödenmiş Sermaye | 450.000 | 450.000 | 450.000 |\n| Geçmiş Yıllar Kârları | 25.000 | 40.000 | 60.000 |\n| Dönem Net Kârı (Zararı) | 97.500 | 101.250 | 120.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.100.000 | 1.222.000 | 1.303.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 1.460.000 | 1.590.000 | 1.900.000 |\n| Satış İndirimleri (-) | 20.000 | 30.000 | 60.000 |\n| Net Satışlar | 1.440.000 | 1.560.000 | 1.840.000 |\n| Satışların Maliyeti (-) | 1.020.000 | 1.110.000 | 1.320.000 |\n| Brüt Satış Kârı | 420.000 | 450.000 | 520.000 |\n| Faaliyet Giderleri (-) | 250.000 | 270.000 | 300.000 |\n| Faaliyet Kârı | 170.000 | 180.000 | 220.000 |\n| Finansman Giderleri (-) | 40.000 | 45.000 | 60.000 |\n| Dönem Kârı | 130.000 | 135.000 | 160.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 32.500 | 33.750 | 40.000 |\n| Dönem Net Kârı | 97.500 | 101.250 | 120.000 |",
+    "caption": "KRB A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-kars-krc",
+    "title": "KRC A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 1.000.000 | 1.120.000 | 1.155.000 |\n| Hazır Değerler | 55.000 | 80.000 | 65.000 |\n| Ticari Alacaklar | 500.000 | 560.000 | 540.000 |\n| Diğer Alacaklar | 25.000 | 20.000 | 30.000 |\n| Stoklar | 420.000 | 460.000 | 520.000 |\n| DURAN VARLIKLAR | 1.590.000 | 1.580.000 | 1.720.000 |\n| Maddi Duran Varlıklar | 1.500.000 | 1.450.000 | 1.600.000 |\n| Maddi Olmayan Duran Varlıklar | 90.000 | 130.000 | 120.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 2.590.000 | 2.700.000 | 2.875.000 |\n| KISA VADELİ YAB. KAY. | 622.500 | 725.000 | 772.500 |\n| Mali Borçlar | 262.500 | 315.000 | 332.500 |\n| Ticari Borçlar | 360.000 | 410.000 | 440.000 |\n| UZUN VADELİ YAB. KAY. | 600.000 | 560.000 | 650.000 |\n| Mali Borçlar | 600.000 | 560.000 | 650.000 |\n| ÖZ KAYNAKLAR | 1.367.500 | 1.415.000 | 1.452.500 |\n| Ödenmiş Sermaye | 1.100.000 | 1.100.000 | 1.100.000 |\n| Geçmiş Yıllar Kârları | 80.000 | 120.000 | 150.000 |\n| Dönem Net Kârı (Zararı) | 187.500 | 195.000 | 202.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 2.590.000 | 2.700.000 | 2.875.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 4.150.000 | 4.520.000 | 4.890.000 |\n| Satış İndirimleri (-) | 50.000 | 70.000 | 90.000 |\n| Net Satışlar | 4.100.000 | 4.450.000 | 4.800.000 |\n| Satışların Maliyeti (-) | 3.100.000 | 3.360.000 | 3.650.000 |\n| Brüt Satış Kârı | 1.000.000 | 1.090.000 | 1.150.000 |\n| Faaliyet Giderleri (-) | 600.000 | 660.000 | 690.000 |\n| Faaliyet Kârı | 400.000 | 430.000 | 460.000 |\n| Finansman Giderleri (-) | 150.000 | 170.000 | 190.000 |\n| Dönem Kârı | 250.000 | 260.000 | 270.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 62.500 | 65.000 | 67.500 |\n| Dönem Net Kârı | 187.500 | 195.000 | 202.500 |",
+    "caption": "KRC A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-kars-krd",
+    "title": "KRD A.Ş. — Özet Finansal Veriler",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 31.12.2022 | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|---|\n| Hazır Değerler | 64.000 | 48.000 | 72.000 | 54.000 |\n| Ticari Borçlar | 280.000 | 350.000 | 245.000 | 294.000 |\n| Kısa Vadeli Mali Borçlar | 150.000 | 200.000 | 242.000 | 190.000 |\n| Satış İndirimleri | 40.000 | 36.000 | 45.000 | 54.000 |\n| Faaliyet Giderleri | 520.000 | 598.000 | 650.000 | 715.000 |\n| Dönem Net Kârı | 96.000 | 72.000 | 90.000 | 117.000 |",
+    "caption": "KRD A.Ş.’ye ait soruları bu tabloya göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-nakit-nka",
+    "title": "NKA A.Ş. — Nakit Akışı Verileri",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2024 | 31.12.2025 |\n|---|---|---|\n| Hazır Değerler | 60.000 | 48.000 |\n| Ticari Alacaklar | 300.000 | 360.000 |\n| Stoklar | 250.000 | 290.000 |\n| Peşin Ödenmiş Giderler | 10.000 | 16.000 |\n| Maddi Duran Varlıklar (brüt) | 900.000 | 1.050.000 |\n| Birikmiş Amortismanlar (-) | 300.000 | 360.000 |\n| AKTİF TOPLAMI | 1.220.000 | 1.404.000 |\n| Ticari Borçlar | 200.000 | 230.000 |\n| Ödenecek Vergiler | 20.000 | 25.000 |\n| Gider Tahakkukları | 8.000 | 12.000 |\n| Kısa Vadeli Banka Kredileri | 100.000 | 80.000 |\n| Uzun Vadeli Banka Kredileri | 250.000 | 320.000 |\n| Ödenmiş Sermaye | 500.000 | 500.000 |\n| Geçmiş Yıllar ve Dönem Kârları | 142.000 | 237.000 |\n| PASİF TOPLAMI | 1.220.000 | 1.404.000 |\n\n**2025 Gelir Tablosu**\n\n| Kalem | Tutar |\n|---|---|\n| Net Satışlar | 2.000.000 |\n| Satışların Maliyeti (-) | 1.400.000 |\n| Faaliyet Giderleri (-) | 380.000 |\n| Finansman Giderleri (-) | 40.000 |\n| Vergi Gideri (-) | 45.000 |\n| Dönem Net Kârı | 135.000 |\n\n**Ek bilgiler:** Faaliyet giderlerinin 60.000 ₺’si amortismandır. Yıl içinde maddi duran varlık satışı olmamıştır. Finansman giderlerinin tamamı yıl içinde ödenmiş olup işletme faaliyetlerinde sınıflandırılmaktadır. Yıl içinde 40.000 ₺ kâr payı nakden ödenmiştir.",
+    "caption": "NKA A.Ş.’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-nakit-nkb",
+    "title": "NKB A.Ş. — Nakit Akışı Verileri",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2024 | 31.12.2025 |\n|---|---|---|\n| Hazır Değerler | 40.000 | 223.000 |\n| Ticari Alacaklar | 500.000 | 470.000 |\n| Stoklar | 320.000 | 380.000 |\n| Peşin Ödenmiş Giderler | 20.000 | 14.000 |\n| Maddi Duran Varlıklar (brüt) | 1.200.000 | 1.380.000 |\n| Birikmiş Amortismanlar (-) | 400.000 | 490.000 |\n| AKTİF TOPLAMI | 1.680.000 | 1.977.000 |\n| Ticari Borçlar | 260.000 | 300.000 |\n| Ödenecek Vergiler | 30.000 | 24.000 |\n| Gider Tahakkukları | 15.000 | 18.000 |\n| Kısa Vadeli Banka Kredileri | 150.000 | 190.000 |\n| Uzun Vadeli Banka Kredileri | 300.000 | 260.000 |\n| Ödenmiş Sermaye | 600.000 | 700.000 |\n| Geçmiş Yıllar ve Dönem Kârları | 325.000 | 485.000 |\n| PASİF TOPLAMI | 1.680.000 | 1.977.000 |\n\n**2025 Gelir Tablosu**\n\n| Kalem | Tutar |\n|---|---|\n| Net Satışlar | 3.100.000 |\n| Satışların Maliyeti (-) | 2.200.000 |\n| Faaliyet Giderleri (-) | 560.000 |\n| Finansman Giderleri (-) | 50.000 |\n| Vergi Gideri (-) | 70.000 |\n| Dönem Net Kârı | 220.000 |\n\n**Ek bilgiler:** Faaliyet giderlerinin 90.000 ₺’si amortismandır. Yıl içinde maddi duran varlık satışı olmamıştır. Finansman giderlerinin tamamı yıl içinde ödenmiş olup işletme faaliyetlerinde sınıflandırılmaktadır. Yıl içinde 60.000 ₺ kâr payı nakden ödenmiştir; ödenmiş sermaye nakden 100.000 ₺ artırılmıştır.",
+    "caption": "NKB A.Ş.’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-nakit-nkc",
+    "title": "NKC A.Ş. — Nakit Akışı Verileri",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2024 | 31.12.2025 |\n|---|---|---|\n| Hazır Değerler | 90.000 | 77.000 |\n| Ticari Alacaklar | 220.000 | 290.000 |\n| Stoklar | 180.000 | 150.000 |\n| Peşin Ödenmiş Giderler | 5.000 | 9.000 |\n| Maddi Duran Varlıklar (brüt) | 700.000 | 760.000 |\n| Birikmiş Amortismanlar (-) | 250.000 | 295.000 |\n| AKTİF TOPLAMI | 945.000 | 991.000 |\n| Ticari Borçlar | 140.000 | 120.000 |\n| Ödenecek Vergiler | 12.000 | 18.000 |\n| Gider Tahakkukları | 6.000 | 5.000 |\n| Kısa Vadeli Banka Kredileri | 80.000 | 110.000 |\n| Uzun Vadeli Banka Kredileri | 150.000 | 120.000 |\n| Ödenmiş Sermaye | 400.000 | 400.000 |\n| Geçmiş Yıllar ve Dönem Kârları | 157.000 | 218.000 |\n| PASİF TOPLAMI | 945.000 | 991.000 |\n\n**2025 Gelir Tablosu**\n\n| Kalem | Tutar |\n|---|---|\n| Net Satışlar | 1.500.000 |\n| Satışların Maliyeti (-) | 1.050.000 |\n| Faaliyet Giderleri (-) | 290.000 |\n| Finansman Giderleri (-) | 25.000 |\n| Vergi Gideri (-) | 34.000 |\n| Dönem Net Kârı | 101.000 |\n\n**Ek bilgiler:** Faaliyet giderlerinin 45.000 ₺’si amortismandır. Yıl içinde maddi duran varlık satışı olmamıştır. Finansman giderlerinin tamamı yıl içinde ödenmiş olup işletme faaliyetlerinde sınıflandırılmaktadır. Yıl içinde 40.000 ₺ kâr payı nakden ödenmiştir.",
+    "caption": "NKC A.Ş.’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-nakit-nkd",
+    "title": "NKD A.Ş. — Nakit Akışı Verileri",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2024 | 31.12.2025 |\n|---|---|---|\n| Hazır Değerler | 25.000 | 156.000 |\n| Ticari Alacaklar | 410.000 | 440.000 |\n| Stoklar | 360.000 | 420.000 |\n| Peşin Ödenmiş Giderler | 12.000 | 10.000 |\n| Maddi Duran Varlıklar (brüt) | 1.500.000 | 1.620.000 |\n| Birikmiş Amortismanlar (-) | 600.000 | 700.000 |\n| AKTİF TOPLAMI | 1.707.000 | 1.946.000 |\n| Ticari Borçlar | 330.000 | 390.000 |\n| Ödenecek Vergiler | 25.000 | 30.000 |\n| Gider Tahakkukları | 10.000 | 14.000 |\n| Kısa Vadeli Banka Kredileri | 200.000 | 170.000 |\n| Uzun Vadeli Banka Kredileri | 400.000 | 470.000 |\n| Ödenmiş Sermaye | 700.000 | 700.000 |\n| Geçmiş Yıllar ve Dönem Kârları | 42.000 | 172.000 |\n| PASİF TOPLAMI | 1.707.000 | 1.946.000 |\n\n**2025 Gelir Tablosu**\n\n| Kalem | Tutar |\n|---|---|\n| Net Satışlar | 3.800.000 |\n| Satışların Maliyeti (-) | 2.850.000 |\n| Faaliyet Giderleri (-) | 600.000 |\n| Finansman Giderleri (-) | 70.000 |\n| Vergi Gideri (-) | 70.000 |\n| Dönem Net Kârı | 210.000 |\n\n**Ek bilgiler:** Faaliyet giderlerinin 100.000 ₺’si amortismandır. Yıl içinde maddi duran varlık satışı olmamıştır. Finansman giderlerinin tamamı yıl içinde ödenmiş olup işletme faaliyetlerinde sınıflandırılmaktadır. Yıl içinde 80.000 ₺ kâr payı nakden ödenmiştir.",
+    "caption": "NKD A.Ş.’ye ait soruları bu tablolara göre ve TMS 7 hükümlerine göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-oran-klm",
+    "title": "KLM A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 600.000 | 715.000 | 790.000 |\n| Hazır Değerler | 40.000 | 55.000 | 30.000 |\n| Ticari Alacaklar | 260.000 | 300.000 | 340.000 |\n| Stoklar | 300.000 | 360.000 | 420.000 |\n| DURAN VARLIKLAR | 960.000 | 1.005.000 | 1.070.000 |\n| Maddi Duran Varlıklar | 900.000 | 950.000 | 1.020.000 |\n| Maddi Olmayan Duran Varlıklar | 60.000 | 55.000 | 50.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.560.000 | 1.720.000 | 1.860.000 |\n| KISA VADELİ YAB. KAY. | 522.500 | 650.000 | 790.000 |\n| Mali Borçlar | 342.500 | 430.000 | 530.000 |\n| Ticari Borçlar | 180.000 | 220.000 | 260.000 |\n| UZUN VADELİ YAB. KAY. | 400.000 | 380.000 | 340.000 |\n| Mali Borçlar | 400.000 | 380.000 | 340.000 |\n| ÖZ KAYNAKLAR | 637.500 | 690.000 | 730.000 |\n| Ödenmiş Sermaye | 500.000 | 500.000 | 500.000 |\n| Geçmiş Yıllar Kârları | 40.000 | 70.000 | 110.000 |\n| Dönem Net Kârı (Zararı) | 97.500 | 120.000 | 120.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.560.000 | 1.720.000 | 1.860.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.450.000 | 2.900.000 | 3.300.000 |\n| Satış İndirimleri (-) | 50.000 | 60.000 | 100.000 |\n| Net Satışlar | 2.400.000 | 2.840.000 | 3.200.000 |\n| Satışların Maliyeti (-) | 1.800.000 | 2.100.000 | 2.380.000 |\n| Brüt Satış Kârı | 600.000 | 740.000 | 820.000 |\n| Faaliyet Giderleri (-) | 380.000 | 470.000 | 540.000 |\n| Faaliyet Kârı | 220.000 | 270.000 | 280.000 |\n| Finansman Giderleri (-) | 90.000 | 110.000 | 120.000 |\n| Dönem Kârı | 130.000 | 160.000 | 160.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 32.500 | 40.000 | 40.000 |\n| Dönem Net Kârı | 97.500 | 120.000 | 120.000 |",
+    "caption": "KLM A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-oran-nop",
+    "title": "NOP A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 900.000 | 1.130.000 | 1.275.000 |\n| Hazır Değerler | 80.000 | 60.000 | 45.000 |\n| Menkul Kıymetler | 20.000 | 30.000 | 25.000 |\n| Ticari Alacaklar | 420.000 | 480.000 | 560.000 |\n| Diğer Alacaklar | 30.000 | 40.000 | 35.000 |\n| Stoklar | 350.000 | 520.000 | 610.000 |\n| DURAN VARLIKLAR | 1.300.000 | 1.380.000 | 1.410.000 |\n| Maddi Duran Varlıklar | 1.200.000 | 1.260.000 | 1.300.000 |\n| Maddi Olmayan Duran Varlıklar | 100.000 | 120.000 | 110.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 2.200.000 | 2.510.000 | 2.685.000 |\n| KISA VADELİ YAB. KAY. | 720.000 | 1.080.000 | 1.125.000 |\n| Mali Borçlar | 380.000 | 610.000 | 565.000 |\n| Ticari Borçlar | 300.000 | 420.000 | 500.000 |\n| Diğer Borçlar | 40.000 | 50.000 | 60.000 |\n| UZUN VADELİ YAB. KAY. | 500.000 | 450.000 | 520.000 |\n| Mali Borçlar | 500.000 | 450.000 | 520.000 |\n| ÖZ KAYNAKLAR | 980.000 | 980.000 | 1.040.000 |\n| Ödenmiş Sermaye | 800.000 | 800.000 | 800.000 |\n| Geçmiş Yıllar Kârları | 60.000 | 90.000 | 120.000 |\n| Dönem Net Kârı (Zararı) | 120.000 | 90.000 | 120.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 2.200.000 | 2.510.000 | 2.685.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 3.050.000 | 3.600.000 | 4.080.000 |\n| Satış İndirimleri (-) | 50.000 | 100.000 | 80.000 |\n| Net Satışlar | 3.000.000 | 3.500.000 | 4.000.000 |\n| Satışların Maliyeti (-) | 2.250.000 | 2.700.000 | 3.100.000 |\n| Brüt Satış Kârı | 750.000 | 800.000 | 900.000 |\n| Faaliyet Giderleri (-) | 450.000 | 520.000 | 560.000 |\n| Faaliyet Kârı | 300.000 | 280.000 | 340.000 |\n| Finansman Giderleri (-) | 140.000 | 160.000 | 180.000 |\n| Dönem Kârı | 160.000 | 120.000 | 160.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 40.000 | 30.000 | 40.000 |\n| Dönem Net Kârı | 120.000 | 90.000 | 120.000 |",
+    "caption": "NOP A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-oran-rst",
+    "title": "RST A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 265.000 | 295.000 | 350.000 |\n| Hazır Değerler | 25.000 | 15.000 | 20.000 |\n| Ticari Alacaklar | 150.000 | 170.000 | 190.000 |\n| Stoklar | 90.000 | 110.000 | 140.000 |\n| DURAN VARLIKLAR | 730.000 | 800.000 | 845.000 |\n| Maddi Duran Varlıklar | 700.000 | 760.000 | 800.000 |\n| Maddi Olmayan Duran Varlıklar | 30.000 | 40.000 | 45.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 995.000 | 1.095.000 | 1.195.000 |\n| KISA VADELİ YAB. KAY. | 300.000 | 410.000 | 525.000 |\n| Mali Borçlar | 180.000 | 230.000 | 315.000 |\n| Ticari Borçlar | 120.000 | 180.000 | 210.000 |\n| UZUN VADELİ YAB. KAY. | 200.000 | 160.000 | 120.000 |\n| Mali Borçlar | 200.000 | 160.000 | 120.000 |\n| ÖZ KAYNAKLAR | 495.000 | 525.000 | 550.000 |\n| Ödenmiş Sermaye | 400.000 | 400.000 | 400.000 |\n| Geçmiş Yıllar Kârları | 20.000 | 35.000 | 60.000 |\n| Dönem Net Kârı (Zararı) | 75.000 | 90.000 | 90.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 995.000 | 1.095.000 | 1.195.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 1.220.000 | 1.410.000 | 1.640.000 |\n| Satış İndirimleri (-) | 20.000 | 10.000 | 40.000 |\n| Net Satışlar | 1.200.000 | 1.400.000 | 1.600.000 |\n| Satışların Maliyeti (-) | 840.000 | 980.000 | 1.150.000 |\n| Brüt Satış Kârı | 360.000 | 420.000 | 450.000 |\n| Faaliyet Giderleri (-) | 210.000 | 240.000 | 260.000 |\n| Faaliyet Kârı | 150.000 | 180.000 | 190.000 |\n| Finansman Giderleri (-) | 50.000 | 60.000 | 70.000 |\n| Dönem Kârı | 100.000 | 120.000 | 120.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 25.000 | 30.000 | 30.000 |\n| Dönem Net Kârı | 75.000 | 90.000 | 90.000 |",
+    "caption": "RST A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-oran-tuv",
+    "title": "TUV Üretim A.Ş. — Maliyet Verileri",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 2024 | 2025 |\n|---|---|---|\n| Dönem sonu DİMM stoku | 60.000 | 40.000 |\n| DİMM giderleri | 560.000 | 600.000 |\n| Direkt işçilik giderleri | 470.000 | 500.000 |\n| Genel üretim giderleri | 700.000 | 740.000 |\n| Üretim giderleri toplamı | 1.730.000 | 1.840.000 |\n| Dönem başı yarı mamul | 80.000 | 90.000 |\n| Dönem sonu yarı mamul | 90.000 | 110.000 |\n| Dönemin üretim maliyeti | 1.720.000 | 1.820.000 |\n| Dönem başı mamul | 120.000 | 140.000 |\n| Dönem sonu mamul | 140.000 | 160.000 |\n| Satılan mamul maliyeti | 1.700.000 | 1.800.000 |\n| Dönem başı ticari mal | 40.000 | 50.000 |\n| Dönem sonu ticari mal | 50.000 | 70.000 |\n| Satılan ticari mal maliyeti | 1.300.000 | 1.440.000 |",
+    "caption": "TUV Üretim A.Ş.’ye ait soruları bu tabloya göre cevaplayınız. Devir hızı ve sürelerinde ortalama stok tutarlarını kullanınız ve bir yılı 360 gün kabul ediniz.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-tablo-mza",
+    "title": "MZA A.Ş. — 31.12.2025 Hesap Bakiyeleri",
+    "kind": "table",
+    "bodyMarkdown": "| Hesap | Tutar (₺) |\n|---|---|\n| 100 Kasa | 25.000 |\n| 102 Bankalar | 140.000 |\n| 103 Verilen Çekler ve Ödeme Emirleri (-) | 15.000 |\n| 110 Hisse Senetleri | 30.000 |\n| 120 Alıcılar | 260.000 |\n| 121 Alacak Senetleri | 60.000 |\n| 128 Şüpheli Ticari Alacaklar | 20.000 |\n| 129 Şüpheli Ticari Alacaklar Karşılığı (-) | 20.000 |\n| 153 Ticari Mallar | 310.000 |\n| 159 Verilen Sipariş Avansları | 25.000 |\n| 180 Gelecek Aylara Ait Giderler | 12.000 |\n| 190 Devreden KDV | 18.000 |\n| 220 Alıcılar (uzun vadeli) | 40.000 |\n| 252 Binalar | 600.000 |\n| 253 Tesis, Makine ve Cihazlar | 350.000 |\n| 254 Taşıtlar | 180.000 |\n| 257 Birikmiş Amortismanlar (-) | 330.000 |\n| 260 Haklar | 50.000 |\n| 268 Birikmiş Amortismanlar (-) (MODV) | 10.000 |\n| 280 Gelecek Yıllara Ait Giderler | 16.000 |\n| 300 Banka Kredileri | 180.000 |\n| 320 Satıcılar | 210.000 |\n| 321 Borç Senetleri | 40.000 |\n| 335 Personele Borçlar | 22.000 |\n| 340 Alınan Sipariş Avansları | 30.000 |\n| 360 Ödenecek Vergi ve Fonlar | 26.000 |\n| 361 Ödenecek Sosyal Güvenlik Kesintileri | 14.000 |\n| 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları | 45.000 |\n| 371 Dönem Kârının Peşin Ödenen Vergi ve Diğer Yükümlülükleri (-) | 30.000 |\n| 381 Gider Tahakkukları | 8.000 |\n| 400 Banka Kredileri (uzun vadeli) | 300.000 |\n| 472 Kıdem Tazminatı Karşılığı | 40.000 |\n| 500 Sermaye | 650.000 |\n| 540 Yasal Yedekler | 40.000 |\n| 590 Dönem Net Kârı | 135.000 |\n| 570 Geçmiş Yıllar Kârları | ? |",
+    "caption": "MZA A.Ş.’nin bilanço hesaplarının 31.12.2025 kalanları verilmiştir. Soruları MSUGT bilanço düzenine göre cevaplayınız; 570 hesabının kalanı bilanço denkliğinden bulunur.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-tablo-mzb",
+    "title": "MZB A.Ş. — 2025 Gelir Tablosu Hesap Bakiyeleri",
+    "kind": "table",
+    "bodyMarkdown": "| Hesap | Tutar (₺) |\n|---|---|\n| 600 Yurt İçi Satışlar | 3.200.000 |\n| 601 Yurt Dışı Satışlar | 800.000 |\n| 610 Satıştan İadeler (-) | 120.000 |\n| 611 Satış İskontoları (-) | 40.000 |\n| 612 Diğer İndirimler (-) | 20.000 |\n| 620 Satılan Mamuller Maliyeti (-) | 2.600.000 |\n| 630 Araştırma ve Geliştirme Giderleri (-) | 60.000 |\n| 631 Pazarlama, Satış ve Dağıtım Giderleri (-) | 280.000 |\n| 632 Genel Yönetim Giderleri (-) | 320.000 |\n| 640 İştiraklerden Temettü Gelirleri | 30.000 |\n| 642 Faiz Gelirleri | 25.000 |\n| 646 Kambiyo Kârları | 40.000 |\n| 649 Diğer Olağan Gelir ve Kârlar | 15.000 |\n| 653 Komisyon Giderleri (-) | 12.000 |\n| 654 Karşılık Giderleri (-) | 18.000 |\n| 656 Kambiyo Zararları (-) | 35.000 |\n| 660 Kısa Vadeli Borçlanma Giderleri (-) | 90.000 |\n| 661 Uzun Vadeli Borçlanma Giderleri (-) | 50.000 |\n| 671 Önceki Dönem Gelir ve Kârları | 20.000 |\n| 679 Diğer Olağandışı Gelir ve Kârlar | 10.000 |\n| 681 Önceki Dönem Gider ve Zararları (-) | 8.000 |\n| 689 Diğer Olağandışı Gider ve Zararlar (-) | 22.000 |",
+    "caption": "MZB A.Ş.’nin 2025 yılı gelir tablosu hesap kalanları verilmiştir. Soruları MSUGT gelir tablosu düzenine göre cevaplayınız; dönem kârı vergi karşılığı oranı %25 kabul edilecektir.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-tablo-mzc",
+    "title": "MZC A.Ş. — Öz Kaynak Hareketleri",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | Sermaye | Yeniden Değerleme Artışları | Birikmiş Kârlar |\n|---|---|---|---|\n| 1 Ocak 2025 bakiyesi | 1.000.000 | 100.000 | 400.000 |\n\n2025 yılında nakit karşılığı 200.000 ₺ sermaye artırımı yapılmış, ortaklara 120.000 ₺ kâr payı dağıtılmıştır. Yılın net kârı 260.000 ₺’dir; binaların yeniden değerlemesinden vergi sonrası 60.000 ₺ değer artışı diğer kapsamlı gelir olarak muhasebeleştirilmiştir.",
+    "caption": "MZC A.Ş.’ye ait soruları bu bilgilere ve TMS 1 hükümlerine göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-tra",
+    "title": "TRA A.Ş. — Özet Finansal Veriler",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 31.12.2021 | 31.12.2022 | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|---|---|\n| Net Satışlar | 800.000 | 920.000 | 1.040.000 | 1.200.000 | 1.360.000 |\n| Satışların Maliyeti | 560.000 | 660.000 | 770.000 | 900.000 | 1.040.000 |\n| Ticari Alacaklar | 120.000 | 150.000 | 170.000 | 210.000 | 250.000 |\n| Stoklar | 100.000 | 110.000 | 130.000 | 150.000 | 160.000 |\n| Dönen Varlıklar | 300.000 | 330.000 | 380.000 | 440.000 | 480.000 |\n| Kısa Vadeli Yabancı Kaynaklar | 200.000 | 230.000 | 260.000 | 310.000 | 350.000 |\n| Faaliyet Kârı | 90.000 | 96.000 | 100.000 | 110.000 | 118.000 |\n| Dönem Net Kârı | 50.000 | 52.000 | 60.000 | 58.000 | 66.000 |",
+    "caption": "TRA A.Ş.’ye ait soruları bu tabloya göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-tra-g1",
+    "title": "TRE A.Ş. — Net Satışlar ve Satışların Maliyeti (2021 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte TRE A.Ş.’nin net satışlar ve satışların maliyeti için 2021 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Net Satışlar",
+          "values": [
+            100,
+            112,
+            126,
+            138,
+            150
+          ]
+        },
+        {
+          "name": "Satışların Maliyeti",
+          "values": [
+            100,
+            118,
+            137,
+            155,
+            172
+          ]
+        }
+      ],
+      "altText": "2021'de iki seri 100'dür; net satışlar 2025'te 150'ye, satışların maliyeti 172'ye yükselmektedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trb",
+    "title": "TRB A.Ş. — Özet Finansal Veriler",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 31.12.2021 | 31.12.2022 | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|---|---|\n| Net Satışlar | 2.500.000 | 2.400.000 | 2.750.000 | 3.100.000 | 3.500.000 |\n| Satışların Maliyeti | 1.800.000 | 1.740.000 | 2.020.000 | 2.300.000 | 2.590.000 |\n| Hazır Değerler | 60.000 | 45.000 | 50.000 | 40.000 | 30.000 |\n| Ticari Alacaklar | 400.000 | 420.000 | 480.000 | 520.000 | 560.000 |\n| Stoklar | 350.000 | 380.000 | 400.000 | 470.000 | 540.000 |\n| Kısa Vadeli Yabancı Kaynaklar | 600.000 | 640.000 | 700.000 | 790.000 | 900.000 |\n| Faaliyet Giderleri | 350.000 | 360.000 | 400.000 | 450.000 | 500.000 |\n| Dönem Net Kârı | 150.000 | 120.000 | 140.000 | 160.000 | 180.000 |",
+    "caption": "TRB A.Ş.’ye ait soruları bu tabloya göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trb-g2",
+    "title": "TRF A.Ş. — Net Satışlar ve Ticari Alacaklar (2022 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte TRF A.Ş.’nin net satışlar ve ticari alacaklar için 2022 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Net Satışlar",
+          "values": [
+            100,
+            108,
+            115,
+            120
+          ]
+        },
+        {
+          "name": "Ticari Alacaklar",
+          "values": [
+            100,
+            125,
+            150,
+            170
+          ]
+        }
+      ],
+      "altText": "2022'de iki seri 100'dür; net satışlar 2025'te 120'ye, ticari alacaklar 170'e yükselmektedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trc",
+    "title": "TRC A.Ş. — Özet Finansal Veriler",
+    "kind": "table",
+    "bodyMarkdown": "| Kalem | 31.12.2022 | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|---|\n| Ticari Alacaklar | 200.000 | 230.000 | 260.000 | 240.000 |\n| Stoklar | 180.000 | 162.000 | 150.000 | 225.000 |\n| Net Satışlar | 500.000 | 575.000 | 640.000 | 700.000 |\n| Maddi Duran Varlıklar | 900.000 | 950.000 | 1.020.000 | 1.080.000 |\n| Öz Kaynaklar | 700.000 | 740.000 | 800.000 | 850.000 |",
+    "caption": "TRC A.Ş.’ye ait soruları bu tabloya göre cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trc-g3",
+    "title": "TRG A.Ş. — Dönen Varlıklar, KVYK ve Stoklar (2022 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte TRG A.Ş.’nin dönen varlıklar, KVYK ve stoklar için 2022 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Dönen Varlıklar",
+          "values": [
+            100,
+            115,
+            132,
+            150
+          ]
+        },
+        {
+          "name": "KVYK",
+          "values": [
+            100,
+            104,
+            110,
+            115
+          ]
+        },
+        {
+          "name": "Stoklar",
+          "values": [
+            100,
+            102,
+            105,
+            108
+          ]
+        }
+      ],
+      "altText": "2022'de üç seri 100'dür; 2025'te dönen varlıklar 150, KVYK 115, stoklar 108 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trd-g4",
+    "title": "TRH A.Ş. — Net Satışlar ve Dönem Net Kârı (2021 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte TRH A.Ş.’nin net satışlar ve dönem net kârı için 2021 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Net Satışlar",
+          "values": [
+            100,
+            120,
+            140,
+            165,
+            190
+          ]
+        },
+        {
+          "name": "Dönem Net Kârı",
+          "values": [
+            100,
+            104,
+            110,
+            112,
+            118
+          ]
+        }
+      ],
+      "altText": "2021'de iki seri 100'dür; 2025'te net satışlar 190, dönem net kârı 118 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-tre-g5",
+    "title": "TRJ A.Ş. — Stoklar ve Satışların Maliyeti (2022 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte TRJ A.Ş.’nin stoklar ve satışların maliyeti için 2022 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Stoklar",
+          "values": [
+            100,
+            130,
+            165,
+            200
+          ]
+        },
+        {
+          "name": "Satışların Maliyeti",
+          "values": [
+            100,
+            110,
+            118,
+            125
+          ]
+        }
+      ],
+      "altText": "2022'de iki seri 100'dür; 2025'te stoklar 200, satışların maliyeti 125 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trm",
+    "title": "TRM A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 520.000 | 600.000 | 670.000 |\n| Hazır Değerler | 70.000 | 50.000 | 90.000 |\n| Ticari Alacaklar | 240.000 | 290.000 | 330.000 |\n| Stoklar | 210.000 | 260.000 | 250.000 |\n| DURAN VARLIKLAR | 800.000 | 860.000 | 950.000 |\n| Maddi Duran Varlıklar | 750.000 | 800.000 | 880.000 |\n| Maddi Olmayan Duran Varlıklar | 50.000 | 60.000 | 70.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.320.000 | 1.460.000 | 1.620.000 |\n| KISA VADELİ YAB. KAY. | 335.000 | 377.500 | 502.500 |\n| Mali Borçlar | 175.000 | 187.500 | 272.500 |\n| Ticari Borçlar | 160.000 | 190.000 | 230.000 |\n| UZUN VADELİ YAB. KAY. | 300.000 | 330.000 | 290.000 |\n| Mali Borçlar | 300.000 | 330.000 | 290.000 |\n| ÖZ KAYNAKLAR | 685.000 | 752.500 | 827.500 |\n| Ödenmiş Sermaye | 550.000 | 550.000 | 550.000 |\n| Geçmiş Yıllar Kârları | 30.000 | 60.000 | 90.000 |\n| Dönem Net Kârı (Zararı) | 105.000 | 142.500 | 187.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.320.000 | 1.460.000 | 1.620.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 1.850.000 | 2.230.000 | 2.520.000 |\n| Satış İndirimleri (-) | 50.000 | 30.000 | 20.000 |\n| Net Satışlar | 1.800.000 | 2.200.000 | 2.500.000 |\n| Satışların Maliyeti (-) | 1.300.000 | 1.580.000 | 1.760.000 |\n| Brüt Satış Kârı | 500.000 | 620.000 | 740.000 |\n| Faaliyet Giderleri (-) | 290.000 | 350.000 | 400.000 |\n| Faaliyet Kârı | 210.000 | 270.000 | 340.000 |\n| Finansman Giderleri (-) | 70.000 | 80.000 | 90.000 |\n| Dönem Kârı | 140.000 | 190.000 | 250.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 35.000 | 47.500 | 62.500 |\n| Dönem Net Kârı | 105.000 | 142.500 | 187.500 |",
+    "caption": "TRM A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-trend-trn",
+    "title": "TRN A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 655.000 | 725.000 | 860.000 |\n| Hazır Değerler | 20.000 | 35.000 | 25.000 |\n| Menkul Kıymetler | 15.000 | 10.000 | 30.000 |\n| Ticari Alacaklar | 330.000 | 360.000 | 420.000 |\n| Diğer Alacaklar | 10.000 | 20.000 | 15.000 |\n| Stoklar | 280.000 | 300.000 | 370.000 |\n| DURAN VARLIKLAR | 1.050.000 | 1.130.000 | 1.190.000 |\n| Maddi Duran Varlıklar | 980.000 | 1.050.000 | 1.100.000 |\n| Maddi Olmayan Duran Varlıklar | 70.000 | 80.000 | 90.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.705.000 | 1.855.000 | 2.050.000 |\n| KISA VADELİ YAB. KAY. | 407.500 | 527.500 | 650.000 |\n| Mali Borçlar | 127.500 | 222.500 | 280.000 |\n| Ticari Borçlar | 250.000 | 270.000 | 330.000 |\n| Diğer Borçlar | 30.000 | 35.000 | 40.000 |\n| UZUN VADELİ YAB. KAY. | 420.000 | 400.000 | 450.000 |\n| Mali Borçlar | 420.000 | 400.000 | 450.000 |\n| ÖZ KAYNAKLAR | 877.500 | 927.500 | 950.000 |\n| Ödenmiş Sermaye | 700.000 | 700.000 | 700.000 |\n| Geçmiş Yıllar Kârları | 50.000 | 70.000 | 100.000 |\n| Dönem Net Kârı (Zararı) | 127.500 | 157.500 | 150.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.705.000 | 1.855.000 | 2.050.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.650.000 | 2.950.000 | 3.420.000 |\n| Satış İndirimleri (-) | 50.000 | 50.000 | 120.000 |\n| Net Satışlar | 2.600.000 | 2.900.000 | 3.300.000 |\n| Satışların Maliyeti (-) | 1.950.000 | 2.150.000 | 2.480.000 |\n| Brüt Satış Kârı | 650.000 | 750.000 | 820.000 |\n| Faaliyet Giderleri (-) | 380.000 | 420.000 | 480.000 |\n| Faaliyet Kârı | 270.000 | 330.000 | 340.000 |\n| Finansman Giderleri (-) | 100.000 | 120.000 | 140.000 |\n| Dönem Kârı | 170.000 | 210.000 | 200.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 42.500 | 52.500 | 50.000 |\n| Dönem Net Kârı | 127.500 | 157.500 | 150.000 |",
+    "caption": "TRN A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb1-g",
+    "title": "YBD A.Ş. — Net Satışlar ve Satışların Maliyeti (2021 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte YBD A.Ş.’nin net satışları ve satışların maliyeti için 2021 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Net Satışlar",
+          "values": [
+            100,
+            118,
+            135,
+            150,
+            170
+          ]
+        },
+        {
+          "name": "Satışların Maliyeti",
+          "values": [
+            100,
+            110,
+            121,
+            130,
+            140
+          ]
+        }
+      ],
+      "altText": "2021'de iki seri 100'dür; 2025'te net satışlar 170, satışların maliyeti 140 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb1-yba",
+    "title": "YBA A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 585.000 | 690.000 | 815.000 |\n| Hazır Değerler | 35.000 | 50.000 | 25.000 |\n| Ticari Alacaklar | 310.000 | 350.000 | 410.000 |\n| Stoklar | 240.000 | 290.000 | 380.000 |\n| DURAN VARLIKLAR | 790.000 | 840.000 | 910.000 |\n| Maddi Duran Varlıklar | 700.000 | 730.000 | 780.000 |\n| Maddi Olmayan Duran Varlıklar | 90.000 | 110.000 | 130.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.375.000 | 1.530.000 | 1.725.000 |\n| KISA VADELİ YAB. KAY. | 297.500 | 448.750 | 592.500 |\n| Mali Borçlar | 87.500 | 188.750 | 262.500 |\n| Ticari Borçlar | 210.000 | 260.000 | 330.000 |\n| UZUN VADELİ YAB. KAY. | 420.000 | 380.000 | 350.000 |\n| Mali Borçlar | 420.000 | 380.000 | 350.000 |\n| ÖZ KAYNAKLAR | 657.500 | 701.250 | 782.500 |\n| Ödenmiş Sermaye | 500.000 | 500.000 | 500.000 |\n| Geçmiş Yıllar Kârları | 30.000 | 55.000 | 80.000 |\n| Dönem Net Kârı (Zararı) | 127.500 | 146.250 | 202.500 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.375.000 | 1.530.000 | 1.725.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.350.000 | 2.880.000 | 3.460.000 |\n| Satış İndirimleri (-) | 50.000 | 80.000 | 60.000 |\n| Net Satışlar | 2.300.000 | 2.800.000 | 3.400.000 |\n| Satışların Maliyeti (-) | 1.720.000 | 2.100.000 | 2.550.000 |\n| Brüt Satış Kârı | 580.000 | 700.000 | 850.000 |\n| Faaliyet Giderleri (-) | 330.000 | 410.000 | 470.000 |\n| Faaliyet Kârı | 250.000 | 290.000 | 380.000 |\n| Finansman Giderleri (-) | 80.000 | 95.000 | 110.000 |\n| Dönem Kârı | 170.000 | 195.000 | 270.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 42.500 | 48.750 | 67.500 |\n| Dönem Net Kârı | 127.500 | 146.250 | 202.500 |",
+    "caption": "YBA A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb2-g",
+    "title": "YBE A.Ş. — Net Satışlar ve Ticari Alacaklar (2022 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte YBE A.Ş.’nin net satışları ve ticari alacakları için 2022 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Net Satışlar",
+          "values": [
+            100,
+            125,
+            150,
+            180
+          ]
+        },
+        {
+          "name": "Ticari Alacaklar",
+          "values": [
+            100,
+            110,
+            118,
+            126
+          ]
+        }
+      ],
+      "altText": "2022'de iki seri 100'dür; 2025'te net satışlar 180, ticari alacaklar 126 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb2-ybb",
+    "title": "YBB A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 510.000 | 600.000 | 620.000 |\n| Hazır Değerler | 45.000 | 25.000 | 40.000 |\n| Menkul Kıymetler | 10.000 | 15.000 | 5.000 |\n| Ticari Alacaklar | 260.000 | 300.000 | 290.000 |\n| Stoklar | 180.000 | 240.000 | 260.000 |\n| Diğer Dönen Varlıklar | 15.000 | 20.000 | 25.000 |\n| DURAN VARLIKLAR | 880.000 | 915.000 | 970.000 |\n| Maddi Duran Varlıklar | 820.000 | 860.000 | 900.000 |\n| Maddi Olmayan Duran Varlıklar | 60.000 | 55.000 | 70.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 1.390.000 | 1.515.000 | 1.590.000 |\n| KISA VADELİ YAB. KAY. | 272.500 | 420.000 | 390.000 |\n| Mali Borçlar | 57.500 | 160.000 | 120.000 |\n| Ticari Borçlar | 190.000 | 230.000 | 250.000 |\n| Diğer Borçlar | 25.000 | 30.000 | 20.000 |\n| UZUN VADELİ YAB. KAY. | 350.000 | 330.000 | 380.000 |\n| Mali Borçlar | 350.000 | 330.000 | 380.000 |\n| ÖZ KAYNAKLAR | 767.500 | 765.000 | 820.000 |\n| Ödenmiş Sermaye | 600.000 | 600.000 | 600.000 |\n| Geçmiş Yıllar Kârları | 40.000 | 60.000 | 85.000 |\n| Dönem Net Kârı (Zararı) | 127.500 | 105.000 | 135.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 1.390.000 | 1.515.000 | 1.590.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 2.030.000 | 2.260.000 | 2.590.000 |\n| Satış İndirimleri (-) | 30.000 | 60.000 | 90.000 |\n| Net Satışlar | 2.000.000 | 2.200.000 | 2.500.000 |\n| Satışların Maliyeti (-) | 1.460.000 | 1.650.000 | 1.850.000 |\n| Brüt Satış Kârı | 540.000 | 550.000 | 650.000 |\n| Faaliyet Giderleri (-) | 300.000 | 330.000 | 380.000 |\n| Faaliyet Kârı | 240.000 | 220.000 | 270.000 |\n| Finansman Giderleri (-) | 70.000 | 80.000 | 90.000 |\n| Dönem Kârı | 170.000 | 140.000 | 180.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 42.500 | 35.000 | 45.000 |\n| Dönem Net Kârı | 127.500 | 105.000 | 135.000 |",
+    "caption": "YBB A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb3-g",
+    "title": "YBF A.Ş. — Dönen Varlıklar, KVYK ve Stoklar (2022 = 100)",
+    "kind": "graph",
+    "bodyMarkdown": "Grafikte YBF A.Ş.’nin dönen varlıkları, kısa vadeli yabancı kaynakları ve stokları için 2022 yılı 100 kabul edilerek hesaplanan eğilim yüzdeleri gösterilmiştir.",
+    "chart": {
+      "labels": [
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "series": [
+        {
+          "name": "Dönen Varlıklar",
+          "values": [
+            100,
+            104,
+            108,
+            112
+          ]
+        },
+        {
+          "name": "KVYK",
+          "values": [
+            100,
+            115,
+            132,
+            150
+          ]
+        },
+        {
+          "name": "Stoklar",
+          "values": [
+            100,
+            118,
+            140,
+            165
+          ]
+        }
+      ],
+      "altText": "2022'de üç seri 100'dür; 2025'te dönen varlıklar 112, KVYK 150, stoklar 165 düzeyindedir."
+    },
+    "caption": "Grafiği yorumlayarak soruyu cevaplayınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
+  },
+  {
+    "id": "yet-fta-yb3-ybc",
+    "title": "YBC A.Ş. — Finansal Tablolar",
+    "kind": "table",
+    "bodyMarkdown": "**Bilanço**\n\n| Kalem | 31.12.2023 | 31.12.2024 | 31.12.2025 |\n|---|---|---|---|\n| DÖNEN VARLIKLAR | 920.000 | 1.035.000 | 1.160.000 |\n| Hazır Değerler | 60.000 | 40.000 | 55.000 |\n| Ticari Alacaklar | 450.000 | 520.000 | 610.000 |\n| Diğer Alacaklar | 20.000 | 25.000 | 15.000 |\n| Stoklar | 390.000 | 450.000 | 480.000 |\n| DURAN VARLIKLAR | 1.410.000 | 1.500.000 | 1.560.000 |\n| Maddi Duran Varlıklar | 1.300.000 | 1.380.000 | 1.420.000 |\n| Maddi Olmayan Duran Varlıklar | 110.000 | 120.000 | 140.000 |\n| AKTİF (VARLIKLAR) TOPLAMI | 2.330.000 | 2.535.000 | 2.720.000 |\n| KISA VADELİ YAB. KAY. | 552.500 | 660.000 | 755.000 |\n| Mali Borçlar | 212.500 | 260.000 | 285.000 |\n| Ticari Borçlar | 340.000 | 400.000 | 470.000 |\n| UZUN VADELİ YAB. KAY. | 520.000 | 600.000 | 560.000 |\n| Mali Borçlar | 520.000 | 600.000 | 560.000 |\n| ÖZ KAYNAKLAR | 1.257.500 | 1.275.000 | 1.405.000 |\n| Ödenmiş Sermaye | 1.000.000 | 1.000.000 | 1.000.000 |\n| Geçmiş Yıllar Kârları | 70.000 | 110.000 | 150.000 |\n| Dönem Net Kârı (Zararı) | 187.500 | 165.000 | 255.000 |\n| PASİF (KAYNAKLAR) TOPLAMI | 2.330.000 | 2.535.000 | 2.720.000 |\n\n**Gelir Tablosu**\n\n| Kalem | 2023 | 2024 | 2025 |\n|---|---|---|---|\n| Brüt Satışlar | 3.620.000 | 4.080.000 | 4.660.000 |\n| Satış İndirimleri (-) | 20.000 | 80.000 | 60.000 |\n| Net Satışlar | 3.600.000 | 4.000.000 | 4.600.000 |\n| Satışların Maliyeti (-) | 2.700.000 | 3.050.000 | 3.450.000 |\n| Brüt Satış Kârı | 900.000 | 950.000 | 1.150.000 |\n| Faaliyet Giderleri (-) | 520.000 | 580.000 | 640.000 |\n| Faaliyet Kârı | 380.000 | 370.000 | 510.000 |\n| Finansman Giderleri (-) | 130.000 | 150.000 | 170.000 |\n| Dönem Kârı | 250.000 | 220.000 | 340.000 |\n| Dönem Kârı Vergi Karşılığı (-) | 62.500 | 55.000 | 85.000 |\n| Dönem Net Kârı | 187.500 | 165.000 | 255.000 |",
+    "caption": "YBC A.Ş.’ye ait soruları bu tablolara göre cevaplayınız. Devir hızı ve sürelerinde ortalama değerleri kullanınız ve bir yılı 360 gün kabul ediniz; kârlılık ve mali yapı oranlarında dönem sonu değerlerini kullanınız.",
+    "updatedAt": "2026-09-30T00:00:00Z"
   }
 ]
