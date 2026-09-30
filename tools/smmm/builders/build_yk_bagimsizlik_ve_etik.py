@@ -152,7 +152,7 @@ P.q("Etik Kurallar 120.6 U4",
 P.q("Etik Kurallar 120.7 U1, 120.5 U9",
     f"{E}, tehditlerin “kabul edilebilir düzey”de olup olmadığının belirlenmesine ilişkin aşağıdakilerden hangisi "
     "doğrudur?",
-    "Makul üçüncü taraf testini kullanan denetçinin temel ilkelere uyduğu sonucuna varmasının daha muhtemel olduğu düzey",
+    "Makul üçüncü taraf testini kullanan denetçinin temel ilkelere uyduğu sonucuna varmasının daha muhtemel olduğu düzeydir.",
     ["Denetlenen işletmenin üst yönetiminin, denetçinin tarafsızlığından şüphe duymadığını yazılı olarak beyan ettiği düzeydir.",
      "Denetim şirketinin kalite yönetim sisteminde her tehdit türü için sayısal olarak belirlenen eşiğin altındaki düzeydir.",
      "Tehdidin ortadan kalktığının, bir başka denetim şirketinden alınan görüşle teyit edildiği düzeydir.",

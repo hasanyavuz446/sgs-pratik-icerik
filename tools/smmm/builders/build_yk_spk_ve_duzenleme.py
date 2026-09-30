@@ -520,7 +520,7 @@ P.q("6362 s. SPKn m. 65",
 P.q("6362 s. SPKn m. 65/4",
     "Kuruluş izni alan bir borsa, izni izleyen bir yıl içinde faaliyet izni için Kurula başvurmamıştır ve bunun kuruluşa "
     f"yüklenemeyecek bir sebebi de bulunmamaktadır. {K}, bu durumun sonucu aşağıdakilerden hangisidir?",
-    "Kuruluş izni iptal olur; Kurul süreyi ancak zorunlu sebeplerle uzatabilirdi.",
+    "Kuruluş izni iptal olur; Kurul süreyi ancak zorunlu sebeplerle uzatabilir.",
     ["Kuruluş izni bir yıl daha Kurul kararı aranmaksızın uzar.",
      "Borsaya idari para cezası verilir ve izin geçerliliğini korur.",
      "Borsa faaliyet izni olmaksızın faaliyete başlayabilir.",

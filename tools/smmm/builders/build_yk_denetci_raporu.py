@@ -86,7 +86,7 @@ P.q("BDS 700 prg. 49",
 P.q("BDS 700 prg. 33-34",
     f"{B700}, raporun yönetimin sorumluluklarını açıklayan bölümünde yer alan ifadeler arasında aşağıdakilerden hangisi "
     "bulunmaz?",
-    "Yönetimin, denetçinin yaptığı risk değerlendirmesini onayladığı",
+    "Yönetim, denetçinin yaptığı risk değerlendirmesini onaylar.",
     ["Tabloların geçerli çerçeveye uygun hazırlanması ve gerçeğe uygun sunumu yönetimin sorumluluğundadır.",
      "Hata veya hile kaynaklı önemli yanlışlık içermeyen tablolar için gerekli iç kontrol yönetimin sorumluluğundadır.",
      "Uygun hâllerde işletmenin sürekliliğini değerlendirme ve ilgili açıklamaları yapma yönetimin sorumluluğundadır.",

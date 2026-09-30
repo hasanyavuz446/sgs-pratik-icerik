@@ -398,10 +398,10 @@ P.q("BDS 570 prg. 21",
 # ================================================================ BDS 580: yazılı açıklamalar
 P.q("BDS 580 prg. 14",
     f"{B580}, yazılı açıklamaların tarihine ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Rapor tarihinden sonra olmamak üzere ona en yakın tarih",
+    "Rapor tarihinden sonra olmamak üzere ona en yakın tarihtir.",
     ["Finansal tabloların bilanço tarihiyle aynıdır.",
      "Denetim sözleşmesinin imzalandığı tarihtir.",
-     "Denetçi raporu tarihinden en az otuz gün sonrası; genel kurul tarihine kadar",
+     "Denetçi raporu tarihinden en az otuz gün sonrası ile genel kurul tarihi arasıdır.",
      "Genel kurul toplantısının yapıldığı tarihtir."],
     "BDS 580 prg. 14'e göre yazılı açıklamaların tarihi, denetçi raporu tarihinden sonra olmamakla birlikte bu tarihe "
     "mümkün olan en yakın tarihtir ve raporda atıf yapılan tüm tabloları ve dönemleri kapsar.")

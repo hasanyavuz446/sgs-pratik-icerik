@@ -75,7 +75,7 @@ P.sayisal("SGK md. 81",
 
 P.q("SGK md. 15",
     f"{K26}, analık hâlinin kapsamına ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Doğumdan sonraki ilk on altı haftaya kadar",
+    "Doğumdan sonraki ilk on altı haftaya kadar.",
     ["Sadece doğum günüyle sınırlıdır.",
      "Doğumdan sonraki ilk sekiz haftayla sınırlıdır.",
      "Sigortalı olmayan eşi kapsamaz.",

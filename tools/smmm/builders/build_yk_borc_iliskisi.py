@@ -165,7 +165,7 @@ P.q("TBK md. 142",
 
 P.q("TBK md. 143",
     f"{K}, takasın gerçekleşmesine ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Takas iradesinin bildirimiyle",
+    "Takas iradesinin bildirimiyle gerçekleşir.",
     ["Koşullar oluşunca bildirimsiz gerçekleşir.",
      "Mahkeme kararıyla gerçekleşir.",
      "Noter tespitiyle gerçekleşir.",

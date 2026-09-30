@@ -113,7 +113,7 @@ P.q("Etik İlkeler Birinci Kısım m. 17",
 
 # ================================================================ kavramsal çerçeve ve tehditler
 P.q("Etik İlkeler Birinci Kısım m. 3",
-    f"{Y} Ek-1’inde temel etik ilkelerine yönelik oluşabilecek tehditler olarak sayılan tehditlerden hangisi değildir?",
+    f"{Y}, aşağıdakilerden hangisi temel etik ilkelere yönelik oluşabilecek tehditlerden biri değildir?",
     "Kurumsal itibar tehdidi",
     ["Kişisel çıkar tehdidi", "Yeniden değerlendirme tehdidi", "Yıldırma amaçlı tehdit", "Taraf tutma tehdidi"],
     "Birinci Kısım m. 3 tehditleri kişisel çıkar, yeniden değerlendirme, taraf tutma, yakınlık ve yıldırma amaçlı "

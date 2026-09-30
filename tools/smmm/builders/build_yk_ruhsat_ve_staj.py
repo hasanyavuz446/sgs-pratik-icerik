@@ -25,7 +25,7 @@ GY = "Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler
 P.q("Staj Yön. m. 5",
     "TESMER şubesi, bölgesindeki staj uygulamalarını denetlerken Yönetmelikte sayılan ilkeleri esas almaktadır. "
     f"{SY}, staja ilişkin ilkeler arasında aşağıdakilerden hangisi yer almaz?",
-    "Stajın, meslek mensubunun büro iş yükünü karşılayacak biçimde planlanması",
+    "Staj, meslek mensubunun büro iş yükünü karşılayacak biçimde planlanır.",
     ["Stajın amacı, mesleki disiplin, bilgi ve deneyime sahip meslek mensubu yetiştirmektir.",
      "Staj, aday meslek mensubunun kendini yetiştirmesine imkân verecek biçimde uygulanır.",
      "Staj TESMER'in hazırladığı program çerçevesinde fiilen tamamlanır.",

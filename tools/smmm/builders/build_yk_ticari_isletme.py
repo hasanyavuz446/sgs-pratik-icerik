@@ -328,7 +328,7 @@ P.q("TTK md. 17",
 
 P.q("TTK md. 24",
     f"{K}, ticaret sicilinin tutulmasına ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Bakanlık denetiminde sicil müdürlüklerince",
+    "Bakanlık denetiminde sicil müdürlüklerince tutulur.",
     ["Asliye ticaret mahkemelerince tutulur.",
      "Vergi dairelerince mükellef kayıtlarıyla birlikte tutulur.",
      "Noterlerce tutulur.",

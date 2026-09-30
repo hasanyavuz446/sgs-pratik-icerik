@@ -159,6 +159,16 @@ class AuditTest(unittest.TestCase):
             issues,
         )
 
+    def test_punctuation_tell_is_warning(self):
+        items = clean_pack()
+        answer = items[0]["correctAnswer"]
+        for key in "ABCDE":
+            text = items[0]["choices"][key].rstrip(".")
+            items[0]["choices"][key] = text if key == answer else text + "."
+        issues = run_audit(items)
+        self.assertTrue(any(code == "şık-noktalama" for _, code, _ in issues), issues)
+        self.assertFalse(any(code == "şık-noktalama" for _, code, _ in run_audit(clean_pack())))
+
     def test_repeated_solution_is_fatal(self):
         items = clean_pack()
         items[1]["explanation"] = items[0]["explanation"]

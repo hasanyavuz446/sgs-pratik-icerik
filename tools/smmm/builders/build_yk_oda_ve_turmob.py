@@ -174,7 +174,7 @@ P.q("3568 s. Kanun m. 22; SMMM Odaları Yön. m. 11",
 P.q("3568 s. Kanun m. 24; SMMM Odaları Yön. m. 14",
     "Oda yönetim kurulu üyesi (A), ardı ardına üç olağan toplantıya özürsüz olarak katılmamış ve yönetim kurulu kararıyla "
     f"istifa etmiş sayılmıştır. {K}, (A)'nın bu karara karşı başvurabileceği yol aşağıdakilerden hangisidir?",
-    "Tebliğden itibaren on beş gün içinde Birliğe itiraz edebilir",
+    "Tebliğden itibaren on beş gün içinde TÜRMOB’a (Birliğe) itiraz",
     ["Tebliğden itibaren otuz gün içinde oda genel kuruluna itiraz",
      "Tebliğden itibaren on beş gün içinde oda disiplin kuruluna itiraz",
      "Tebliğden itibaren altmış gün içinde idare mahkemesine dava",

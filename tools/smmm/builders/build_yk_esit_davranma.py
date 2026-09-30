@@ -315,7 +315,7 @@ P.q("TİHEK md. 17",
 
 P.q("TİHEK md. 17",
     f"{T}, İş Kanunu md. 5 kapsamındaki ayrımcılık iddialarıyla Kuruma başvuruya ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Şikâyet usulü izlenip yaptırım çıkmazsa",
+    "Şikâyet usulü izlenip sonuç alınamazsa yapılır.",
     ["Doğrudan ve ilk olarak Kuruma yapılır.",
      "Kuruma başvuru yapılamaz.",
      "Sadece sendika aracılığıyla yapılır.",

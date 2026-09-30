@@ -77,7 +77,7 @@ P.sayisal("İYUK md. 6",
 P.q("İYUK md. 15",
     f"{K}, idari yargının görev alanına giren ancak yetkisiz idare mahkemesine açılan dava hakkında ilk incelemede ne "
     "yapılır?",
-    "Yetkiden ret ve dosyanın gönderilmesi",
+    "Yetkiden reddedilip dosya gönderilir.",
     ["Esastan reddedilir.",
      "Dilekçe görevli idareye tevdi edilir.",
      "Dava açılmamış sayılır.",

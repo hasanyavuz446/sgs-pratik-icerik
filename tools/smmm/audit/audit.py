@@ -284,6 +284,19 @@ def add_semantic_repeat_issues(qs, out):
                 ))
 
 
+def add_punctuation_tell_issues(qs, out):
+    """Doğru şık noktalamasıyla dört çeldiriciden ayrışıyorsa (hepsi nokta ile biterken doğru şık bitmiyorsa ya da
+    tersi) kör öğrenci cevabı okumadan bulur. 2026-09-30 havuz taramasında 4.667 soruda 12 örnek çıktı."""
+    for q in qs:
+        opts, ans = q["opts"], q["ans"]
+        if ans not in opts or len(opts) != 5 or str(opts[ans]).startswith("```"):
+            continue
+        nokta = {k: plain(v).rstrip().endswith(".") for k, v in opts.items()}
+        if all(nokta[k] != nokta[ans] for k in opts if k != ans):
+            out.append(("UYARI", "şık-noktalama",
+                        f"{q['id']}: doğru şık noktalamasıyla dört çeldiriciden ayrışıyor (cevabı ele verir)."))
+
+
 def add_length_profile_issues(rows, out):
     """Doğru cevabın uzunluğundan tahmin edilmesini paket düzeyinde engeller."""
     if not rows:
@@ -671,6 +684,7 @@ def audit(path):
         ))
 
     add_semantic_repeat_issues(qs, out)
+    add_punctuation_tell_issues(qs, out)
     add_length_profile_issues(length_rows, out)
 
     # Cevap anahtarı dağılımı

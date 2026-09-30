@@ -244,7 +244,7 @@ P.sayisal("SGK md. 102",
 P.q("SGK md. 9",
     f"{K}, hastalık ve analık hükümlerinin uygulanmasında sigortalılığın yitirilmesine ilişkin aşağıdakilerden "
     "hangisi doğrudur?",
-    "Takip eden onuncu günden itibaren",
+    "Takip eden onuncu günden itibaren yitirilir.",
     ["Sona erme tarihinde derhal yitirilir.",
      "Sona ermeden altı ay sonra yitirilir.",
      "Sadece ölüm hâlinde yitirilir.",

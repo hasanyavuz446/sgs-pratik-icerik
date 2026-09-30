@@ -459,7 +459,7 @@ P.q("TBK md. 125",
 P.q("TBK md. 126",
     f"{K}, ifasına başlanmış sürekli edimli sözleşmelerde borçlunun temerrüdü hâlinde alacaklı aşağıdakilerden hangisini "
     "yapabilir?",
-    "Fesih ve erken sona erme zararı",
+    "Sözleşmeyi feshedip erken sona erme zararını isteyebilir.",
     ["Sadece geçmişe etkili dönebilir.",
      "Sadece bekleyebilir.",
      "Sadece manevi tazminat isteyebilir.",

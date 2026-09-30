@@ -449,7 +449,7 @@ P.q("TTK md. 573",
 
 P.q("TTK md. 575",
     f"{K}, limited şirket sözleşmesinin imzalanmasına ilişkin aşağıdakilerden hangisi doğrudur?",
-    "Sicil müdürlüğü personeli huzurunda",
+    "Sicil müdürlüğü personeli huzurunda imzalanabilir.",
     ["Sözlü olarak yapılabilir.",
      "Noterde düzenleme şeklinde yapılır.",
      "Adi yazılı şekil yeterlidir.",
