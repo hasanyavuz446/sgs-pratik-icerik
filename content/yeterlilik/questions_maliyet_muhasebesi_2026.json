@@ -2,21 +2,21 @@
   {
     "id": "demo-maliyet-003",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_unsurlari",
-    "question": "Bir üretim döneminde direkt ilk madde ve malzeme gideri 120.000 TL, direkt işçilik gideri 60.000 TL ve genel üretim gideri 40.000 TL'dir. Birincil maliyet toplamı kaç TL'dir?",
+    "topicId": "maliyet_temelleri",
+    "question": "Bir çelik kapı üreticisinde mart ayında direkt ilk madde ve malzeme giderleri 184.500 ₺, direkt işçilik giderleri 62.000 ₺ ve genel üretim giderleri 91.500 ₺ olarak gerçekleşmiştir. Aynı ay pazarlama giderleri 28.000 ₺, genel yönetim giderleri 35.000 ₺’dir.\n\nİlk (asal) maliyet ve dönüştürme (şekillendirme) maliyeti sırasıyla kaç ₺’dir?",
     "choices": {
-      "A": "160.000",
-      "B": "100.000",
-      "C": "180.000",
-      "D": "220.000",
-      "E": "40.000"
+      "A": "184.500; 153.500",
+      "B": "246.500; 338.000",
+      "C": "153.500; 246.500",
+      "D": "338.000; 153.500",
+      "E": "246.500; 153.500"
     },
-    "correctAnswer": "C",
-    "explanation": "Birincil maliyet, direkt ilk madde ve malzeme ile direkt işçilik giderlerinin toplamıdır: 120.000 + 60.000 = 180.000 TL.",
+    "correctAnswer": "E",
+    "explanation": "İlk (asal) maliyet = DİMM + DİŞ = 184.500 + 62.000 = 246.500 ₺. Dönüştürme maliyeti = DİŞ + GÜG = 62.000 + 91.500 = 153.500 ₺. Pazarlama ve yönetim giderleri dönem gideridir, üretim maliyetine girmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – birincil maliyet"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -25,31 +25,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-004",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_unsurlari",
-    "question": "Direkt işçilik gideri 70.000 TL ve genel üretim gideri 50.000 TL olan bir işletmede dönüşüm maliyeti kaç TL'dir?",
+    "topicId": "maliyet_temelleri",
+    "question": "Bir endüstri işletmesinin nisan ayına ait maliyet verileri aşağıdaki tabloda verilmiştir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Direkt ilk madde ve malzeme | 300.000 |\n| Direkt işçilik | 150.000 |\n| Genel üretim giderleri | 210.000 |\n| Dönem başı yarı mamul | 40.000 |\n| Dönem sonu yarı mamul | 55.000 |\n| Dönem başı mamul | 80.000 |\n| Dönem sonu mamul | 70.000 |\n\nBu verilere göre satılan mamuller maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "20.000",
-      "B": "50.000",
-      "C": "70.000",
-      "D": "120.000",
-      "E": "150.000"
+      "A": "635.000",
+      "B": "645.000",
+      "C": "655.000",
+      "D": "660.000",
+      "E": "670.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Dönüşüm maliyeti, direkt işçilik ile genel üretim giderlerinin toplamıdır: 70.000 + 50.000 = 120.000 TL.",
+    "correctAnswer": "C",
+    "explanation": "Dönem üretim maliyeti = 300.000 + 150.000 + 210.000 = 660.000 ₺. Üretilen mamul maliyeti = 660.000 + 40.000 − 55.000 = 645.000 ₺. SMM = 645.000 + 80.000 − 70.000 = 655.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – dönüşüm maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -57,32 +57,32 @@
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-005",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "gider_dagitimlari",
-    "question": "Yıllık 240.000 TL genel üretim gideri makine saatine göre dağıtılmaktadır. Beklenen toplam kapasite 12.000 makine saati, X siparişinin kullandığı süre 350 makine saatidir. X siparişine yüklenecek genel üretim gideri kaç TL'dir?",
+    "topicId": "maliyet_temelleri",
+    "question": "Bir işletmenin muhasebe müdürü, maliyet muhasebesi ile finansal muhasebenin rollerini yeni çalışanlara anlatmaktadır. Hazırlanan sunumdaki ifadelerden biri hatalıdır.\n\nMaliyet muhasebesi ile finansal muhasebe arasındaki ilişkiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "A": "4.800",
-      "B": "7.000",
-      "C": "12.000",
-      "D": "20.000",
-      "E": "84.000"
+      "A": "Maliyet muhasebesi mamul ve gider yeri düzeyinde ayrıntılı bilgi üretir.",
+      "B": "Maliyet muhasebesi verileri stok değerlemesi yoluyla finansal tablolara girer.",
+      "C": "Maliyet muhasebesi yönetimin kararları için dönem içi raporlar sunar.",
+      "D": "Finansal muhasebe işletmenin bütününe ilişkin sonuçları raporlar.",
+      "E": "Maliyet muhasebesi raporları dış kullanıcılar için yasal biçimde hazırlanır."
     },
-    "correctAnswer": "B",
-    "explanation": "Yükleme oranı 240.000 / 12.000 = makine saati başına 20 TL'dir. X siparişine 350 × 20 = 7.000 TL yüklenir.",
+    "correctAnswer": "E",
+    "explanation": "Maliyet muhasebesi raporları esas olarak işletme içi kullanıcılara yöneliktir ve biçimi yönetimin ihtiyacına göre belirlenir. Dış kullanıcılara yönelik ve yasal biçim kurallarına bağlı raporlama finansal muhasebenin konusudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – genel üretim gideri yükleme oranı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -91,163 +91,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-006",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "gider_dagitimlari",
-    "question": "Bakım yardımcı gider yerinde toplanan 90.000 TL, üretim bölümlerinin bakım saatlerine göre doğrudan dağıtılacaktır. A üretim bölümü 1.800, B üretim bölümü 1.200 bakım saati kullanmıştır. A bölümüne dağıtılacak tutar kaç TL'dir?",
+    "topicId": "maliyet_unsurlari",
+    "question": "Hareketli (sürekli) ağırlıklı ortalama yöntemini kullanan bir işletmenin mart ayı hammadde hareketleri şöyledir: 1 Mart stok 1.000 kg × 20 ₺; 5 Mart alış 3.000 kg × 24 ₺; 10 Mart üretime çıkış 2.500 kg; 20 Mart alış 1.500 kg × 27 ₺; 25 Mart üretime çıkış 2.000 kg.\n\nMart ayında üretime verilen hammaddenin maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "30.000",
-      "B": "36.000",
-      "C": "45.000",
-      "D": "54.000",
-      "E": "60.000"
-    },
-    "correctAnswer": "D",
-    "explanation": "A bölümünün payı 1.800 / 3.000 = %60'tır. Dağıtılacak tutar 90.000 × %60 = 54.000 TL'dir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – yardımcı gider yeri dağıtımı"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Maliyet Muhasebesi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
-  },
-  {
-    "id": "demo-maliyet-007",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Müşteri taleplerine göre birbirinden farklı özelliklerde özel mobilya üreten bir işletme için en uygun maliyetleme sistemi hangisidir?",
-    "choices": {
-      "A": "Sipariş maliyet sistemi",
-      "B": "Safha maliyet sistemi",
-      "C": "Sadece standart maliyet sistemi",
-      "D": "Değişken maliyet sistemi",
-      "E": "Ortak ürün maliyet sistemi"
-    },
-    "correctAnswer": "A",
-    "explanation": "Birbirinden ayırt edilebilen ve müşteri özelliklerine göre üretilen işlerin maliyetleri sipariş bazında izlenir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – sipariş maliyet sistemi"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Maliyet Muhasebesi"
-    ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
-  },
-  {
-    "id": "demo-maliyet-008",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Safha maliyet sisteminde dönem sonu yarı mamul miktarı 800 birimdir. Bu birimler dönüşüm maliyetleri açısından %50 tamamlanmıştır. Dönem sonu yarı mamullerin dönüşüm maliyeti eşdeğer birim sayısı kaçtır?",
-    "choices": {
-      "A": "200",
-      "B": "300",
-      "C": "400",
-      "D": "800",
-      "E": "1.600"
+      "A": "102.000",
+      "B": "105.500",
+      "C": "107.500",
+      "D": "110.250",
+      "E": "112.500"
     },
     "correctAnswer": "C",
-    "explanation": "Eşdeğer birim sayısı 800 × %50 = 400 birimdir.",
+    "explanation": "5 Mart sonrası ortalama = (20.000 + 72.000) ÷ 4.000 = 23 ₺; 10 Mart çıkışı 2.500 × 23 = 57.500 ₺, kalan 1.500 kg × 23 = 34.500 ₺. 20 Mart sonrası ortalama = (34.500 + 40.500) ÷ 3.000 = 25 ₺; 25 Mart çıkışı 2.000 × 25 = 50.000 ₺. Toplam 107.500 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – dönüşüm eşdeğer birimi"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Maliyet Muhasebesi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
-  },
-  {
-    "id": "demo-maliyet-009",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Bir siparişe 40.000 TL direkt ilk madde ve malzeme ile 25.000 TL direkt işçilik gideri yüklenmiştir. Genel üretim giderleri direkt işçilik giderinin %80'i oranında yükleniyorsa siparişin toplam maliyeti kaç TL'dir?",
-    "choices": {
-      "A": "65.000",
-      "B": "72.000",
-      "C": "90.000",
-      "D": "85.000",
-      "E": "105.000"
-    },
-    "correctAnswer": "D",
-    "explanation": "Genel üretim gideri 25.000 × %80 = 20.000 TL'dir. Toplam sipariş maliyeti 40.000 + 25.000 + 20.000 = 85.000 TL olur.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – sipariş toplam maliyeti"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Bölüm Havuzu",
-      "Maliyet Muhasebesi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
-  },
-  {
-    "id": "demo-maliyet-010",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Dönem başı yarı mamulü bulunmayan bir safhada 5.000 birim üretime alınmış, 4.200 birim tamamlanmış ve 800 birim dönem sonunda kalmıştır. İlk madde ve malzeme üretime başlarken tamamen eklenmiş ve dönemin toplam ilk madde maliyeti 100.000 TL olmuştur. Ağırlıklı ortalama yöntemine göre ilk madde eşdeğer birim maliyeti kaç TL'dir?",
-    "choices": {
-      "A": "20",
-      "B": "12",
-      "C": "16",
-      "D": "18",
-      "E": "23,81"
-    },
-    "correctAnswer": "A",
-    "explanation": "İlk madde başta tamamen eklendiğinden eşdeğer birim 4.200 + 800 = 5.000'dir. Birim maliyet 100.000 / 5.000 = 20 TL'dir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – safha maliyeti ve eşdeğer birim"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -256,31 +124,163 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
+  },
+  {
+    "id": "demo-maliyet-007",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_temelleri",
+    "question": "Tekdüzen Muhasebe Sistemi Uygulama Genel Tebliği’nin 7/A seçeneğini uygulayan bir işletmede ay içinde direkt işçilik giderleri 720 hesabına fiili tutarla kaydedilmiş, üretime yüklenen tutarlar ise 721 hesabının alacağına yazılmıştır. Ay sonunda iki hesap arasında fark kalmamıştır.\n\nDönem sonunda 720 Direkt İşçilik Giderleri hesabı nasıl kapatılır?",
+    "choices": {
+      "A": "721 hesabı borçlandırılıp 720 hesabı alacaklandırılarak kapatılır.",
+      "B": "720 hesabının kalanı doğrudan 620 hesabının borcuna aktarılır.",
+      "C": "720 hesabının kalanı 152 Mamuller hesabının alacağına aktarılır.",
+      "D": "720 hesabı kapatılmaz, bilançoda gider tahakkuku olarak kalır.",
+      "E": "720 hesabının kalanı 770 Genel Yönetim Giderleri hesabına devredilir."
+    },
+    "correctAnswer": "A",
+    "explanation": "7/A seçeneğinde gider hesapları dönem sonunda karşılık gelen yansıtma hesaplarıyla kapatılır: 721 Direkt İşçilik Giderleri Yansıtma hesabı borçlandırılır, 720 hesabı alacaklandırılır. Böylece iki hesap da sıfırlanır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT 7/A: 720, 721"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Maliyet Muhasebesi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-maliyet-008",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_unsurlari",
+    "question": "Bir işletmede üretim işçileri ay içinde siparişlerden bağımsız olarak 400 saat normal ve 40 saat fazla mesai yapmıştır. Normal saat ücreti 150 ₺, fazla mesai zammı %50’dir; zam belirli bir siparişten kaynaklanmadığından genel üretim giderine yüklenmektedir. İşveren sigorta primi payının brüt ücretin %22,5’i olduğu varsayılmaktadır.\n\nDirekt işçilik gideri olarak kaydedilecek tutar kaç ₺’dir?",
+    "choices": {
+      "A": "66.000",
+      "B": "69.000",
+      "C": "73.500",
+      "D": "80.850",
+      "E": "84.525"
+    },
+    "correctAnswer": "D",
+    "explanation": "Fazla mesai saatleri normal ücretle direkt işçiliğe girer: 440 × 150 = 66.000 ₺; işveren payıyla 66.000 × 1,225 = 80.850 ₺. Zam kısmı (40 × 75 = 3.000 ₺ ve payı) siparişe özgü olmadığından GÜG’e yüklenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Maliyet Muhasebesi"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-maliyet-009",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "gider_dagitimlari",
+    "question": "Bir işletmenin gider yerlerine ait veriler aşağıdadır:\n\n| Gider yeri | Birincil giderler (₺) | Alan (m²) | Yardımcı hizmet saati |\n|---|---|---|---|\n| A esas üretim | 180.000 | 400 | 400 |\n| B esas üretim | 250.000 | 600 | 700 |\n| Y yardımcı üretim | 70.000 | 200 | – |\n\nAyrıca 240.000 ₺ fabrika kirası alan esasına göre gider yerlerine dağıtılacak, ardından Y yardımcı gider yerinin toplamı esas üretim gider yerlerine hizmet saati esasına göre aktarılacaktır.\n\nİkinci dağıtım sonunda B gider yerinin toplam gideri kaç ₺’dir?",
+    "choices": {
+      "A": "370.000",
+      "B": "410.000",
+      "C": "425.000",
+      "D": "440.000",
+      "E": "480.000"
+    },
+    "correctAnswer": "D",
+    "explanation": "Kira payları: A 80.000, B 120.000, Y 40.000 ₺. Y toplamı 70.000 + 40.000 = 110.000 ₺; B’nin payı 110.000 × 700 ÷ 1.100 = 70.000 ₺. B toplamı = 250.000 + 120.000 + 70.000 = 440.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Maliyet Muhasebesi"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "demo-maliyet-010",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_unsurlari",
+    "question": "Bir mobilya fabrikasında ay içinde kereste kesen marangozların, döşeme işçilerinin, ürünlere cila uygulayan işçilerin ve montaj hattındaki işçilerin ücretleri ödenmiştir. Ayrıca fabrika binasını koruyan bekçinin ücreti de aynı bordroda yer almaktadır.\n\nBu ücretlerden hangisi genel üretim gideri olarak izlenir?",
+    "choices": {
+      "A": "Kereste kesen marangozların ücreti",
+      "B": "Fabrika bekçisinin ücreti",
+      "C": "Döşeme işçilerinin ücreti",
+      "D": "Cila işçilerinin ücreti",
+      "E": "Montaj hattı işçilerinin ücreti"
+    },
+    "correctAnswer": "B",
+    "explanation": "Mamul üzerinde doğrudan çalışan ve mamulle ilişkisi kolayca izlenebilen işçilerin ücretleri direkt işçiliktir. Bekçi üretime dolaylı hizmet verir; ücreti endirekt işçilik olarak genel üretim giderleri içinde izlenir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Bölüm Havuzu",
+      "Maliyet Muhasebesi"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "demo-maliyet-011",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "uretim_kayiplari",
-    "question": "Üretime giren 10.000 kilogram hammaddenin normal fire oranı %5'tir. Fiilî fire de normal sınır içinde gerçekleştiğine göre normal fire miktarı kaç kilogramdır?",
+    "topicId": "gider_dagitimlari",
+    "question": "Faaliyet tabanlı maliyetleme uygulayan bir işletmede makine ayar faaliyetinin yıllık gideri 360.000 ₺, bütçelenen ayar sayısı 120’dir. Kalite kontrol faaliyetinin gideri 240.000 ₺, bütçelenen kontrol sayısı 400’dür. X ürünü dönem içinde 18 makine ayarı ve 50 kalite kontrol gerektirmiştir.\n\nX ürününe bu iki faaliyetten yüklenecek toplam gider kaç ₺’dir?",
     "choices": {
-      "A": "50",
-      "B": "950",
-      "C": "5.000",
-      "D": "9.500",
-      "E": "500"
+      "A": "30.000",
+      "B": "54.000",
+      "C": "78.000",
+      "D": "84.000",
+      "E": "90.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Normal fire miktarı 10.000 × %5 = 500 kilogramdır.",
+    "correctAnswer": "D",
+    "explanation": "Faaliyet oranları: ayar 360.000 ÷ 120 = 3.000 ₺/ayar; kalite kontrol 240.000 ÷ 400 = 600 ₺/kontrol. X’e yüklenen = 18 × 3.000 + 50 × 600 = 54.000 + 30.000 = 84.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – normal fire"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -288,32 +288,32 @@
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-012",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "standart_maliyet",
-    "question": "Bir hammaddenin standart fiyatı kilogram başına 10 TL'dir. Dönemde 1.000 kilogram hammadde kilogram başına 12 TL'den satın alınmıştır. İlk madde ve malzeme fiyat sapması kaç TL'dir?",
+    "topicId": "maliyet_sistemleri",
+    "question": "Bir çimento fabrikası kesintisiz ve tek tip üretim yapmakta; ürün kırma, öğütme ve paketleme bölümlerinden sırayla geçmektedir. Muhasebe birimi maliyet yöntemini açıklayan bir not hazırlamıştır.\n\nBu işletmenin uygulayacağı safha maliyet yöntemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "A": "1.000 TL olumlu",
-      "B": "2.000 TL olumsuz",
-      "C": "1.000 TL olumsuz",
-      "D": "2.000 TL olumlu",
-      "E": "12.000 TL olumsuz"
+      "A": "Maliyetler üretim bölümleri (safhalar) itibarıyla toplanır.",
+      "B": "Maliyetler siparişler itibarıyla sipariş maliyet kartlarında izlenir.",
+      "C": "Dönem sonu yarı mamuller için eşdeğer birim hesaplanır.",
+      "D": "Bir safhada tamamlanan ürünün maliyeti sonraki safhaya aktarılır.",
+      "E": "Birim maliyet, safha maliyetinin eşdeğer birime bölünmesiyle bulunur."
     },
     "correctAnswer": "B",
-    "explanation": "Fiyat sapması = Fiilî miktar × (Fiilî fiyat − Standart fiyat) = 1.000 × (12 − 10) = 2.000 TL olumsuzdur.",
+    "explanation": "Safha maliyet yönteminde maliyetler bölümler itibarıyla toplanır ve eşdeğer birimlere bölünür. Maliyetlerin sipariş maliyet kartlarında izlenmesi sipariş maliyet yönteminin özelliğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – malzeme fiyat sapması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -322,31 +322,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-013",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "standart_maliyet",
-    "question": "Gerçekleşen üretim için standart hammadde miktarı 800 kilogram, fiilî kullanım 900 kilogram ve standart fiyat kilogram başına 5 TL'dir. İlk madde ve malzeme miktar sapması kaç TL'dir?",
+    "topicId": "maliyet_sistemleri",
+    "question": "Ağırlıklı ortalama yöntemini uygulayan bir safha işletmesinde dönem başında 2.000 birim yarı mamul (dönüşüm %40) vardır; dönemde 18.000 birim üretime başlanmış, 17.000 birim tamamlanmıştır. Dönem sonunda 3.000 birim yarı mamul dönüşüm bakımından %60 tamamlanmıştır. Hammaddenin tamamı sürecin başında verilmektedir.\n\nDönüşüm maliyetleri için eşdeğer birim sayısı kaçtır?",
     "choices": {
-      "A": "100 TL olumlu",
-      "B": "100 TL olumsuz",
-      "C": "500 TL olumsuz",
-      "D": "500 TL olumlu",
-      "E": "4.500 TL olumsuz"
+      "A": "17.000 birim",
+      "B": "18.000 birim",
+      "C": "18.800 birim",
+      "D": "19.200 birim",
+      "E": "20.000 birim"
     },
     "correctAnswer": "C",
-    "explanation": "Miktar sapması = Standart fiyat × (Fiilî miktar − Standart miktar) = 5 × (900 − 800) = 500 TL olumsuzdur.",
+    "explanation": "Ağırlıklı ortalamada eşdeğer birim = tamamlanan + dönem sonu yarı mamulün eşdeğeri = 17.000 + 3.000 × %60 = 18.800 birim. Dönem başı stokun tamamlanma derecesi bu yöntemde düşülmez (FIFO’da 18.000 olurdu).",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – malzeme miktar sapması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -355,31 +355,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-maliyet-014",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_unsurlari",
-    "question": "Dönem başı yarı mamul stoku 10.000 TL, dönem üretim maliyetleri 90.000 TL ve dönem sonu yarı mamul stoku 15.000 TL'dir. Üretilen mamullerin maliyeti kaç TL'dir?",
+    "topicId": "uretim_kayiplari",
+    "question": "Sipariş maliyet yöntemini uygulayan bir matbaada K-8 siparişinde, müşterinin baskı sırasında renk tonunu değiştirmesi nedeniyle 300 adet katalog kullanılamaz hâle gelmiştir. Bozulan kataloglar hurda olarak satılamamaktadır ve müşteri değişikliğin maliyetini üstlenmeyi kabul etmiştir.\n\nBozulan katalogların maliyeti nasıl işlem görür?",
     "choices": {
-      "A": "75.000",
-      "B": "80.000",
-      "C": "90.000",
-      "D": "95.000",
-      "E": "85.000"
+      "A": "Genel üretim giderlerine eklenerek tüm siparişlere dağıtılır.",
+      "B": "Olağan dışı gider ve zarar olarak dönem gideri yazılır.",
+      "C": "Satılan mamuller maliyetine doğrudan aktarılır.",
+      "D": "Diğer siparişlerin maliyetlerine eşit olarak bölüştürülür.",
+      "E": "K-8 siparişinin maliyetinde bırakılır."
     },
     "correctAnswer": "E",
-    "explanation": "Üretilen mamul maliyeti = Dönem başı yarı mamul + Dönem üretim maliyetleri − Dönem sonu yarı mamul = 10.000 + 90.000 − 15.000 = 85.000 TL.",
+    "explanation": "Bozulma belirli bir siparişe özgü nedenden (müşteri isteği) doğduğunda maliyeti o siparişte bırakılır ve müşteriye yansıtılır. Tüm üretimde olağan olan bozulmalar ise GÜG yoluyla dağıtılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – üretilen mamul maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -388,31 +388,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-yonetim-003",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Bir ürünün satış fiyatı 50 TL, birim değişken maliyeti 30 TL ve toplam sabit maliyeti 80.000 TL'dir. Başabaş satış miktarı kaç birimdir?",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Sipariş maliyet yöntemini uygulayan bir işletmede 400 birimlik S-12 siparişi için 42.000 ₺ direkt ilk madde ve malzeme kullanılmış, 600 direkt işçilik saati çalışılmıştır. Saat ücreti 150 ₺’dir; genel üretim giderleri önceden belirlenmiş oranla direkt işçilik saati başına 80 ₺ olarak yüklenmektedir. Sipariş ay içinde tamamlanmıştır.\n\nS-12 siparişinin birim maliyeti kaç ₺’dir?",
     "choices": {
-      "A": "1.600",
-      "B": "2.667",
-      "C": "4.000",
-      "D": "6.000",
-      "E": "10.000"
+      "A": "105",
+      "B": "225",
+      "C": "330",
+      "D": "450",
+      "E": "570"
     },
-    "correctAnswer": "C",
-    "explanation": "Birim katkı payı 50 − 30 = 20 TL'dir. Başabaş miktarı 80.000 / 20 = 4.000 birimdir.",
+    "correctAnswer": "D",
+    "explanation": "Sipariş maliyeti = 42.000 + 600 × 150 + 600 × 80 = 42.000 + 90.000 + 48.000 = 180.000 ₺. Birim maliyet = 180.000 ÷ 400 = 450 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – başabaş satış miktarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -421,31 +421,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-yonetim-004",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Bir işletmenin gerçekleşen satışları 600.000 TL, başabaş satış tutarı 450.000 TL'dir. Güvenlik payı tutarı kaç TL'dir?",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "standart_maliyet",
+    "question": "Bir işletmede bir birim mamul için standart olarak 2 kg hammadde öngörülmüş, standart fiyat 18 ₺/kg’dır. Ay içinde 4.500 birim üretilmiş; 9.300 kg hammadde kilogramı 17,50 ₺’den kullanılmıştır.\n\nDirekt ilk madde ve malzeme fiyat ve miktar farkları sırasıyla aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "50.000",
-      "B": "450.000",
-      "C": "600.000",
-      "D": "1.050.000",
-      "E": "150.000"
+      "A": "4.650 ₺ olumlu; 5.400 ₺ olumsuz",
+      "B": "4.650 ₺ olumsuz; 5.400 ₺ olumlu",
+      "C": "4.500 ₺ olumlu; 5.250 ₺ olumsuz",
+      "D": "4.650 ₺ olumlu; 5.250 ₺ olumsuz",
+      "E": "750 ₺ olumsuz; 5.400 ₺ olumsuz"
     },
-    "correctAnswer": "E",
-    "explanation": "Güvenlik payı = Gerçekleşen satışlar − Başabaş satışları = 600.000 − 450.000 = 150.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Standart miktar = 4.500 × 2 = 9.000 kg. Fiyat farkı = (17,50 − 18) × 9.300 = 4.650 ₺ olumlu; miktar farkı = (9.300 − 9.000) × 18 = 5.400 ₺ olumsuz. Toplam fark 750 ₺ olumsuzdur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – güvenlik payı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -453,32 +453,32 @@
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-yonetim-005",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "karar_verme",
-    "question": "Atıl kapasitesi bulunan bir işletmeye birim fiyatı 45 TL olan özel sipariş gelmiştir. Siparişin birim değişken maliyeti 30 TL'dir; ek sabit maliyet ve fırsat maliyeti yoktur. Karara ilişkin doğru ifade hangisidir?",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Bir işletmede ortak üretim sürecinden ayrılma noktasında P ve R ürünleri elde edilmektedir. Ortak maliyet 240.000 ₺’dir. Ayrılma noktasında P’den 4.000 kg (satış fiyatı 45 ₺/kg), R’den 6.000 kg (satış fiyatı 20 ₺/kg) elde edilmiştir. İşletme ortak maliyeti ayrılma noktasındaki satış değerleri oranında dağıtmaktadır.\n\nR ürününe dağıtılacak ortak maliyet kaç ₺’dir?",
     "choices": {
-      "A": "Fiyat normal satış fiyatından düşükse sipariş her durumda reddedilir.",
-      "B": "Birim başına 15 TL katkı sağladığı için diğer koşullar uygunsa sipariş kabul edilebilir.",
-      "C": "Sabit maliyetlerin tamamı siparişe yüklendiği için sipariş reddedilir.",
-      "D": "Sipariş birim başına 30 TL zarar oluşturur.",
-      "E": "Kararda yalnız toplam sabit maliyet dikkate alınır."
+      "A": "80.000",
+      "B": "96.000",
+      "C": "120.000",
+      "D": "144.000",
+      "E": "160.000"
     },
     "correctAnswer": "B",
-    "explanation": "Atıl kapasitede ve ek sabit ya da fırsat maliyeti yokken 45 − 30 = 15 TL pozitif katkı payı oluşur. Nitel koşullar da uygunsa sipariş kabul edilebilir.",
+    "explanation": "Satış değerleri: P 4.000 × 45 = 180.000 ₺, R 6.000 × 20 = 120.000 ₺; toplam 300.000 ₺. R’nin payı = 240.000 × 120.000 ÷ 300.000 = 96.000 ₺. Fiziksel miktar esası (144.000 ₺) farklı sonuç verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – özel sipariş kararı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -487,31 +487,31 @@
       "Maliyet Muhasebesi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "demo-yonetim-006",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "karar_verme",
-    "question": "Bir parçanın işletmede üretilmesi hâlinde birim değişken maliyet 24 TL ve üretimden vazgeçilirse kaçınılabilecek sabit maliyet 4 TL'dir. Parça dışarıdan 32 TL'ye alınabilmektedir ve başka fırsat maliyeti yoktur. Hangi seçenek doğrudur?",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Bir işletmede ortak üretim maliyeti 500.000 ₺’dir. Ana ürünün yanında elde edilen yan ürünün satış değeri 40.000 ₺’dir; yan ürün için ayrılma noktasından sonra 6.000 ₺ işlem ve 4.000 ₺ satış gideri katlanılacak, satışlar üzerinden %10 normal kâr beklenmektedir. Yan ürün maliyeti satış fiyatından geriye doğru hesaplama yöntemiyle bulunmaktadır.\n\nAna ürüne kalan ortak maliyet kaç ₺’dir?",
     "choices": {
-      "A": "Satın alma, birim başına 8 TL avantajlıdır.",
-      "B": "İki seçenek arasında fark yoktur.",
-      "C": "Satın alma, birim başına 4 TL avantajlıdır.",
-      "D": "Üretim, birim başına 8 TL avantajlıdır.",
-      "E": "Üretim, birim başına 4 TL avantajlıdır."
+      "A": "460.000",
+      "B": "470.000",
+      "C": "474.000",
+      "D": "480.000",
+      "E": "500.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Üretmenin ilgili maliyeti 24 + 4 = 28 TL, satın alma maliyeti 32 TL'dir. Üretim birim başına 4 TL avantajlıdır.",
+    "correctAnswer": "C",
+    "explanation": "Yan ürünün ayrılma noktasındaki maliyeti = 40.000 − 6.000 − 4.000 − 4.000 (normal kâr) = 26.000 ₺. Ana ürün maliyeti = 500.000 − 26.000 = 474.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – üret veya satın al kararı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
     "tags": [
       "Özgün Soru",
@@ -519,144 +519,144 @@
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
-    "isActive": true,
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı"
+    "isActive": true
   },
   {
     "id": "yet-maliyet-t1-0017",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_temelleri",
-    "question": "Toplam maliyet 10.000 birim faaliyet düzeyinde 86.000 TL, 6.000 birim faaliyet düzeyinde 62.000 TL'dir. Yüksek-düşük yöntemine göre toplam sabit maliyet kaç TL'dir?",
+    "topicId": "standart_maliyet",
+    "question": "Tekdüzen Muhasebe Sistemi Uygulama Genel Tebliği’nin 7/A seçeneğini ve standart maliyet sistemini uygulayan bir işletmede ay içinde hem standarttan yüksek hem de standarttan düşük ücretle çalışılan dönemler olmuştur.\n\n722 Direkt İşçilik Ücret Farkları hesabıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "26.000 TL",
-      "B": "6.000 TL",
-      "C": "24.000 TL",
-      "D": "36.000 TL",
-      "E": "60.000 TL"
+      "A": "Olumsuz farklar borca, olumlu farklar alacağa yazılır; dönem sonunda stok ve satış maliyetine aktarılır.",
+      "B": "Olumlu ve olumsuz farklar alacağına yazılır; dönem sonunda 720 hesabına aktarılarak kapatılır.",
+      "C": "Olumsuz farklar alacağına, olumlu farklar borcuna yazılır; dönem sonunda 649 hesabına aktarılır.",
+      "D": "Ücret ve süre farkları aynı hesapta izlenir; dönem sonunda kapatılmayıp bilançoda gider tahakkuku olarak kalır.",
+      "E": "Olumsuz farklar borcuna yazılır; olumlu farklar 722 yerine 723 hesabının alacağında izlenir."
     },
     "correctAnswer": "A",
-    "explanation": "Birim değişken maliyet (86.000 − 62.000) / (10.000 − 6.000) = 6 TL'dir. Sabit maliyet 86.000 − 10.000 × 6 = 26.000 TL bulunur.",
+    "explanation": "722 hesabı direkt işçilik ücret farklarını izler; olumsuz farklar borca, olumlu farklar alacağa kaydedilir. Süre farkları ayrıca 723 hesabında izlenir; fark hesapları dönem sonunda ilgili stok ve satış maliyeti hesaplarına aktarılarak kapatılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – yüksek-düşük yöntemi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MSUGT 7/A: 722"
     },
-    "difficulty": "medium",
-    "isPremium": false,
-    "isActive": true,
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "yet-maliyet-t1-0018",
     "lessonId": "yonetim_muhasebesi",
-    "topicId": "butceleme_planlama_kontrol",
-    "question": "Nakit bütçesinde dönem başı nakit 40.000 TL, bütçelenen nakit tahsilatları 180.000 TL ve nakit ödemeleri 150.000 TL'dir. Finansman işlemi yoksa dönem sonu nakit kaç TL'dir?",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir işletmenin tek ürününün satış fiyatı 400 ₺, birim değişken maliyeti 260 ₺’dir. Yıllık sabit maliyetler 1.120.000 ₺ olup bunun 320.000 ₺’si amortismandır. Yönetim gelecek yıl zarar etmemek için ulaşılması gereken satış hasılatını bilmek istemektedir.\n\nBaşabaş satış hasılatı kaç ₺’dir?",
     "choices": {
-      "A": "70.000 TL",
-      "B": "30.000 TL",
-      "C": "40.000 TL",
-      "D": "110.000 TL",
-      "E": "370.000 TL"
+      "A": "1.723.077",
+      "B": "2.285.714",
+      "C": "2.800.000",
+      "D": "3.200.000",
+      "E": "3.600.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Dönem sonu nakit = 40.000 + 180.000 − 150.000 = 70.000 TL'dir.",
+    "correctAnswer": "D",
+    "explanation": "Katkı payı oranı = (400 − 260) ÷ 400 = %35. Başabaş satış hasılatı = 1.120.000 ÷ 0,35 = 3.200.000 ₺. Amortisman yalnız nakit başabaş hesabında düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – nakit bütçesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
-    "difficulty": "medium",
-    "isPremium": false,
-    "isActive": true,
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "yet-maliyet-t1-0019",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "butceleme_planlama_kontrol",
-    "question": "Gelecek dönem için satış tahmini 10.000 birim, istenen dönem sonu mamul stoku 1.400 birim ve dönem başı mamul stoku 1.100 birimdir. Üretim bütçesi kaç birimdir?",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "standart_maliyet",
+    "question": "Bir işletmede ay içinde mamullere yüklenen (standart) ve gerçekleşen genel üretim giderleri şöyledir: değişken GÜG yüklenen 245.000 ₺, gerçekleşen 251.300 ₺; sabit GÜG yüklenen 367.000 ₺, gerçekleşen 347.100 ₺.\n\nToplam GÜG’de ortaya çıkan fark ve niteliği aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "8.900",
-      "B": "9.700",
-      "C": "10.000",
-      "D": "10.300",
-      "E": "12.500"
+      "A": "13.600 ₺ eksik yükleme",
+      "B": "13.600 ₺ fazla yükleme",
+      "C": "26.200 ₺ fazla yükleme",
+      "D": "19.900 ₺ fazla yükleme",
+      "E": "6.300 ₺ eksik yükleme"
     },
-    "correctAnswer": "D",
-    "explanation": "Bütçelenen üretim = Satışlar + İstenen dönem sonu stoku − Dönem başı stoku = 10.000 + 1.400 − 1.100 = 10.300 birimdir.",
+    "correctAnswer": "B",
+    "explanation": "Değişken GÜG’de 251.300 − 245.000 = 6.300 ₺ eksik, sabit GÜG’de 367.000 − 347.100 = 19.900 ₺ fazla yükleme vardır. Toplamda yüklenen 612.000 ₺, gerçekleşen 598.400 ₺ olduğundan 13.600 ₺ fazla yükleme oluşur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – üretim bütçesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
-    "difficulty": "medium",
-    "isPremium": false,
-    "isActive": true,
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   },
   {
     "id": "yet-maliyet-t1-0020",
     "lessonId": "maliyet_muhasebesi",
-    "topicId": "uretim_kayiplari",
-    "question": "Üretime 20.000 birim girilmiş, normal kayıp oranı %2 ve fiilî kayıp 500 birim olmuştur. Anormal kayıp miktarı kaç birimdir?",
+    "topicId": "maliyet_temelleri",
+    "question": "Maliyet kavramlarına ilişkin aşağıdaki ifadeler verilmiştir:\n\nI. Dönem maliyetleri stoklarda aktifleştirilir ve mamul satılınca gidere dönüşür.\n\nII. Mamul maliyetleri mamul satıldığında satılan mamuller maliyeti olarak gider yazılır.\n\nIII. Genel yönetim giderleri oluştukları dönemin gideridir.\n\nIV. Fabrika binasının amortismanı mamul maliyetine girer.\n\nYukarıdaki ifadelerden hangileri doğrudur?",
     "choices": {
-      "A": "400",
-      "B": "100",
-      "C": "500",
-      "D": "600",
-      "E": "900"
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "I, II ve IV",
+      "D": "II, III ve IV",
+      "E": "I, III ve IV"
     },
-    "correctAnswer": "B",
-    "explanation": "Normal kayıp 20.000 × %2 = 400 birimdir. Fiilî kaybın normal sınırı aşan 500 − 400 = 100 birimi anormal kayıptır.",
+    "correctAnswer": "D",
+    "explanation": "II, III ve IV doğrudur. I yanlıştır: stoklarda aktifleştirilip satışla gidere dönüşen maliyetler mamul maliyetleridir; dönem maliyetleri oluştukları dönemde doğrudan gider yazılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "SMMM Maliyet Muhasebesi kapsamı – normal ve anormal üretim kayıpları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet muhasebesi esasları"
     },
-    "difficulty": "medium",
-    "isPremium": false,
-    "isActive": true,
     "tags": [
       "Özgün Soru",
       "2026 Formatı",
       "Bölüm Havuzu",
       "Maliyet Muhasebesi"
     ],
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "TFRS 2026 Seti (Mavi Kitap) ve 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z"
+    "legislationVersion": "MSUGT Tekdüzen Hesap Planı 7/A-7/B; TMS 2; maliyet ve yönetim muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
   }
 ]

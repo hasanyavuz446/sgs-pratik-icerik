@@ -244,6 +244,27 @@ Finansal Muhasebe dersinde (2026-09-30) öğrenilenler:
   kurallarda olayı iki süreyi de aşacak ya da açıkça birine düşecek biçimde kur; aradaki
   gecikme şıkkı tartışmalı yapar.
 
+Maliyet Muhasebesi dersinde (2026-09-30) öğrenilenler:
+- Gerçek bant (40 soru): medyan kök 308, veri/tablo %57,5, sayısal şık %37,5, olumsuz %12,5,
+  atıf %10, öncül ve yevmiye %2,5. Kitapçığın ağırlığı maliyet muhasebesindedir (kavram ve SMM
+  tablosu ~12, safha ~6, ortak/yan ürün ~6, standart maliyet ve 7/A fark hesapları ~10); yönetim
+  muhasebesi (MHK, karar, bütçe) yalnız 1-2 soru. Bölüm testlerinde bu dağılımı izle.
+- Hesap konularında (MHK, karar, bütçe) sayısal sorular art arda dizilir; sabit şıkların harfi
+  değerden çıktığından harf dizisi kurulamaz ("art arda aynı harfli sabit sorular"). Builder
+  sonunda `P.serpistir()` çağır: serbest sorular sabitlerin arasına eşit aralıkla dağıtılır.
+- Serbest soru az olan hesap paketlerinde (21-31 serbest) tek-en-uzun sınırı (%25) 1-2 soruyla
+  aşılır. Kısa kavram cevaplarında parantezli açıklama ("Karma (yarı değişken) maliyet") doğru
+  şıkkı tek başına en uzun yapar; parantezi çeldiriciye taşı ya da cevabı sadeleştir.
+- İki ölçüm tabanı olan hesaplarda (fiyat farkı kullanılan/satın alınan miktar; GÜG bütçe
+  farkı fiili/standart saat; ikili/üçlü analiz) kökte hangi tabanın kullanıldığını söyle. Diğer
+  taban doğal bir çeldirici olur; söylenmezse soru tartışmalı kalır.
+- MSUGT 7/A'da atıl kapasite giderleri 680'e de gidebildiğinden 734 kapasite farklarının dönem
+  sonu kapanışını soru yapma; 712-713, 722-723, 732 için "ilgili stok ve satış maliyeti
+  hesaplarına aktarılır" kalıbı güvenlidir.
+- Olumsuz kökü olan kavram sorularında (yanlış olan) mutlak dil yasağı çeldiriciyi daraltır;
+  "yalnız", "her durumda" en sık düşülen kelimelerdir. `Paket` ilk ihlalde durur; builder'ı
+  `_siklar_denetle` gevşetilmiş hâlde içe aktaran kısa bir tarama ile hepsini tek seferde listele.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için `build_<konu>.py` oluşturulur ve

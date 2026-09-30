@@ -3,20 +3,20 @@
     "id": "kh-mal-sistem-0001",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Müşteriye özgü teknik şartnameyle üretilen endüstriyel kalıplarda her işin kaynak tüketimi ayrı izlenebiliyorsa hangi maliyetleme yaklaşımı öncelikle uygundur?",
+    "question": "Sipariş maliyet sistemini uygulayan bir matbaada 500 adet katalogdan oluşan S-14 siparişi için 45.000 ₺ kâğıt ve mürekkep, 30.000 ₺ direkt işçilik harcanmıştır. Genel üretim giderleri direkt işçilik tutarının %120’si oranında siparişlere yüklenmektedir.\n\nS-14 siparişinin toplam maliyeti kaç ₺’dir?",
     "choices": {
-      "B": "Sipariş maliyetleme sistemi",
-      "A": "Safha maliyetleme sistemi",
-      "C": "Karma maliyetleme sistemi",
-      "D": "İşlem maliyetleme sistemi",
-      "E": "Standart maliyetleme sistemi"
+      "A": "66.000",
+      "B": "75.000",
+      "C": "81.000",
+      "D": "111.000",
+      "E": "129.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Birbirinden ayırt edilebilen ve müşteri özelliklerine göre yürütülen işlerin maliyeti sipariş bazında izlenir.",
+    "correctAnswer": "D",
+    "explanation": "Yüklenen GÜG = 30.000 × %120 = 36.000 ₺; sipariş maliyeti 45.000 + 30.000 + 36.000 = 111.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - dönüştürme maliyetlerinin maliyet nesnesine sistematik yüklenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -25,10 +25,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -36,20 +36,86 @@
     "id": "kh-mal-sistem-0002",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Aynı nitelikte kimyasal ürünün kesintisiz ve birbirini izleyen reaktörlerde üretilmesinde dönem maliyetinin çıktılara yüklenmesi için hangi sistem daha uygundur?",
+    "question": "Bir matbaanın S-14 siparişinin toplam maliyeti 111.000 ₺ olup sipariş 500 adet katalogdan oluşmaktadır. İşletme fiyatlandırmada birim maliyetin üzerine %25 kâr eklemekte, ayrıca müşteriden katalog başına 5 ₺ kargo bedeli almaktadır.\n\nKatalog başına birim maliyet ve kargo hariç birim satış fiyatı sırasıyla kaç ₺’dir?",
     "choices": {
-      "B": "Safha maliyetleme sistemi",
-      "A": "Sipariş maliyetleme sistemi",
-      "C": "Karma maliyetleme sistemi",
-      "D": "Proje maliyetleme sistemi",
-      "E": "Parti maliyetleme sistemi"
+      "A": "222; 282,50",
+      "B": "277,50; 333",
+      "C": "222; 277,50",
+      "D": "150; 187,50",
+      "E": "222; 247"
     },
-    "correctAnswer": "B",
-    "explanation": "Homojen ürünün sürekli ve aşamalı üretiminde maliyetler safhalarda toplanır ve eşdeğer üretime göre ortalanır.",
+    "correctAnswer": "C",
+    "explanation": "Birim maliyet 111.000 / 500 = 222 ₺; %25 kârla satış fiyatı 222 × 1,25 = 277,50 ₺. Kargo bedeli ayrıca faturalandığından fiyata dâhil edilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - sistematik üretim maliyeti dağıtımı; maliyet muhasebesi - safha sistemi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyetleme Sistemleri"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-mal-sistem-0003",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Sipariş maliyet sistemini uygulayan işletmede ay içindeki siparişler şöyledir:\n\n| Sipariş | DİMM (₺) | DİŞ (₺) | DİS | Durum |\n|---|---|---|---|---|\n| A | 60.000 | 40.000 | 3.000 | Tamamlandı, teslim edildi |\n| B | 35.000 | 22.000 | 1.600 | Tamamlandı, depoda |\n| C | 18.000 | 9.000 | 700 | Devam ediyor |\n\nGÜG direkt işçilik saati başına 20 ₺ oranla yüklenmekte, ay başında yarı mamul ve mamul stoku bulunmamaktadır. Ay sonu yarı mamul stoku kaç ₺’dir?",
+    "choices": {
+      "A": "27.000",
+      "B": "41.000",
+      "C": "89.000",
+      "D": "130.000",
+      "E": "160.000"
+    },
+    "correctAnswer": "B",
+    "explanation": "Ay sonunda tamamlanmamış tek sipariş C’dir: 18.000 + 9.000 + 700 × 20 = 41.000 ₺. B tamamlandığı için mamul stokunda, A ise satılan mamul maliyetindedir.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyetleme Sistemleri"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-mal-sistem-0004",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Sipariş maliyet sistemini uygulayan işletmede ay içindeki siparişler şöyledir:\n\n| Sipariş | DİMM (₺) | DİŞ (₺) | DİS | Durum |\n|---|---|---|---|---|\n| A | 60.000 | 40.000 | 3.000 | Tamamlandı, teslim edildi |\n| B | 35.000 | 22.000 | 1.600 | Tamamlandı, depoda |\n| C | 18.000 | 9.000 | 700 | Devam ediyor |\n\nGÜG direkt işçilik saati başına 20 ₺ oranla yüklenmektedir; ay başında stok yoktur. Ayın satılan mamuller maliyeti kaç ₺’dir?",
+    "choices": {
+      "A": "89.000",
+      "B": "100.000",
+      "C": "160.000",
+      "D": "249.000",
+      "E": "290.000"
+    },
+    "correctAnswer": "C",
+    "explanation": "Sadece teslim edilen A siparişi satılmıştır: 60.000 + 40.000 + 3.000 × 20 = 160.000 ₺. B mamul stokunda, C yarı mamul stokunda kalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -58,76 +124,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-mal-sistem-0003",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Sipariş maliyetlemede bir özel üretimin direkt malzeme, direkt işçilik ve yüklenen genel üretim giderlerini bir araya getiren temel maliyet nesnesi hangisidir?",
-    "choices": {
-      "E": "Belirli sipariş veya üretim partisi",
-      "A": "Üretim bölümünün dönemlik gider toplamı",
-      "B": "Tedarikçiye göre gruplanan hammadde alımları",
-      "C": "İşletmenin dönemlik toplam satış hacmi",
-      "D": "Dönem sonundaki bütün stokların toplamı"
-    },
-    "correctAnswer": "E",
-    "explanation": "Sipariş sisteminde maliyet nesnesi, diğer işlerden ayırt edilebilen belirli sipariş veya üretim partisidir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - stok maliyetinin üretimle ilişkilendirilmesi"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyetleme Sistemleri"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-mal-sistem-0004",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Maliyetleme sistemlerine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sipariş sisteminde maliyetler ayırt edilebilir işler itibarıyla toplanır\n\nII. Safha sisteminde dönem sonu yarı mamuller eşdeğer üretimle ölçülebilir\n\nIII. Safha sisteminde her müşteri için zorunlu olarak ayrı maliyet kartı açılır",
-    "choices": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
-    },
-    "correctAnswer": "B",
-    "explanation": "Sipariş sistemi işi, safha sistemi ise homojen süreç çıktısını maliyet nesnesi yapar. Safha sisteminde müşteri bazlı kart zorunlu değildir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - sistematik dağıtım; maliyet muhasebesi - sipariş ve safha sistemleri"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyetleme Sistemleri"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -135,20 +135,20 @@
     "id": "kh-mal-sistem-0005",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir ayakkabı işletmesinde taban hazırlama tüm modeller için ortak ve sürekli, son montaj ise model partileri itibarıyla izleniyorsa hangi yaklaşım bilgi ihtiyacını daha iyi karşılar?",
+    "question": "Bir işletmede her müşterinin talebine göre farklı özelliklerde yat üretilmekte, her yatın maliyeti ayrı bir kartta izlenmektedir. Başka bir işletmede ise çimento sürekli ve aynı özelliklerde üretilmekte, maliyetler üretim aşamalarına göre toplanmaktadır.\n\nİki işletmenin uygulaması gereken maliyet sistemleri sırasıyla hangileridir?",
     "choices": {
-      "E": "Ortak süreç ve modele özgü maliyetleri birleştiren karma maliyetleme",
-      "A": "Bütün üretimi tek safha ortalamasıyla ölçen safha maliyetleme",
-      "B": "Her ayakkabı teki için ayrı kart açan sipariş maliyetleme",
-      "C": "Üretim giderlerini yalnız satış bölümünde toplayan dönem yaklaşımı",
-      "D": "Bütün üretim maliyetlerini doğrudan giderleştiren dönem yaklaşımı"
+      "A": "Safha maliyet; sipariş maliyet",
+      "B": "Sipariş maliyet; sipariş maliyet",
+      "C": "Safha maliyet; safha maliyet",
+      "D": "Standart maliyet; faaliyet tabanlı maliyet",
+      "E": "Sipariş maliyet; safha maliyet"
     },
     "correctAnswer": "E",
-    "explanation": "Ortak süreç maliyetlerinin ortalama, modele özgü maliyetlerin parti bazında izlendiği karma yaklaşım bu üretim yapısına uygundur.",
+    "explanation": "Müşteriye özel, birbirinden farklı ürünlerde her iş ayrı izlenir (sipariş maliyet); sürekli ve homojen seri üretimde maliyetler üretim aşamalarında toplanıp eşdeğer birimlere bölünür (safha maliyet).",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - üretim koşullarına uygun maliyet ölçümü"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -156,11 +156,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -168,20 +168,20 @@
     "id": "kh-mal-sistem-0006",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Birbirinden ayrı yürütülen özel üretim işlerini karşılaştırmak isteyen yönetici, sipariş maliyet kartından öncelikle hangi bilgiyi elde eder?",
+    "question": "Sipariş maliyet sistemini yeni kuran bir mobilya atölyesi, her sipariş için tutulacak kayıtları tasarlamaktadır. Muhasebe bölümü sipariş maliyet kartında hangi bilgilerin yer alacağını belirlemek istemektedir.\n\nAşağıdakilerden hangisi sipariş maliyet kartında yer almaz?",
     "choices": {
-      "E": "İşe yüklenen üç maliyet unsurunu bir kayıtta toplamak",
-      "A": "Satışları tahsilat vadelerine göre sınıflandırmak",
-      "B": "Yarı mamulleri doğrudan mamul kabul etmek",
-      "C": "Finansman giderlerini işlere eşit dağıtmak",
-      "D": "Genel yönetim giderlerini ürünlere yüklemek"
+      "A": "Dönemin eşdeğer birim hesaplamaları",
+      "B": "Siparişe verilen direkt ilk madde tutarı",
+      "C": "Siparişe harcanan direkt işçilik tutarı",
+      "D": "Siparişe yüklenen genel üretim gideri",
+      "E": "Siparişin başlama ve bitiş tarihleri"
     },
-    "correctAnswer": "E",
-    "explanation": "Maliyet kartı, belirli işe ait direkt malzeme, direkt işçilik ve yüklenen genel üretim giderlerini izlenebilir biçimde birleştirir.",
+    "correctAnswer": "A",
+    "explanation": "Sipariş maliyet kartında siparişe ait DİMM, DİŞ, yüklenen GÜG ve sipariş bilgileri yer alır. Eşdeğer birim hesaplaması safha maliyet sisteminin aracıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 151, 710, 720 ve 730 hesapları; sipariş maliyet kartı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -190,10 +190,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -201,20 +201,20 @@
     "id": "kh-mal-sistem-0007",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Safha üretim raporunda fiziksel miktar akışıyla maliyet akışının birlikte uzlaştırılmasının temel amacı nedir?",
+    "question": "Bir işletmede genel üretim giderleri makine saatine göre yüklenmektedir. Yıllık bütçelenen GÜG 1.440.000 ₺, bütçelenen makine saati 36.000’dir. M-7 siparişi 250 makine saati kullanmış; siparişe 62.000 ₺ DİMM ve 28.000 ₺ DİŞ harcanmıştır.\n\nM-7 siparişinin toplam maliyeti kaç ₺’dir?",
     "choices": {
-      "D": "Birim ve maliyet akışının eksiksizliğini doğrulamak",
-      "A": "Satış fiyatlarındaki değişimi dönem kârına aktarmak",
-      "B": "Yarı mamulleri tamamlanmış birim kabul etmek",
-      "C": "Bütün maliyet unsurlarında aynı tamamlanma oranını kullanmak",
-      "E": "Devralınan maliyeti sonraki safhadan ayrı tutmak"
+      "A": "90.000",
+      "B": "100.000",
+      "C": "105.000",
+      "D": "110.000",
+      "E": "128.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Üretime giren ve çıkan fiziksel birimler ile dağıtılacak ve dağıtılan maliyetlerin eşitliği raporun kontrol temelidir.",
+    "correctAnswer": "B",
+    "explanation": "Yükleme oranı 1.440.000 / 36.000 = 40 ₺/makine saati; M-7’ye 250 × 40 = 10.000 ₺ GÜG yüklenir. Toplam 62.000 + 28.000 + 10.000 = 100.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - stok maliyetinin güvenilir ölçümü; safha maliyet raporu"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -223,10 +223,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -234,20 +234,20 @@
     "id": "kh-mal-sistem-0008",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Üretimde kullanılan direkt maliyetler önce yarı mamul hesabında toplanmış, iş tamamlanınca mamullere, satış gerçekleşince satılan mamul maliyetine aktarılmıştır. Bu sıra neyi gösterir?",
+    "question": "Sipariş maliyet sistemini uygulayan işletme, ay sonunda tamamlanan ancak henüz müşteriye teslim edilmeyen bir siparişin maliyetini (84.000 ₺) muhasebeleştirecektir. İşletme 7/A seçeneğini uygulamakta ve sürekli envanter yöntemini kullanmaktadır.\n\nBu tutar ay sonunda hangi hesapta yer alır?",
     "choices": {
-      "B": "Stok maliyetinin üretim ve satış akışını",
-      "A": "Üretim giderlerinin doğrudan dönem giderine aktarılmasını",
-      "C": "Maliyetlerin satış hasılatıyla netleştirilmesini",
-      "D": "Genel yönetim giderlerinin mamullere yüklenmesini",
-      "E": "Üretim maliyetlerinin kasa hesabında izlenmesini"
+      "A": "151 Yarı Mamuller – Üretim",
+      "B": "152 Mamuller",
+      "C": "620 Satılan Mamuller Maliyeti",
+      "D": "153 Ticari Mallar",
+      "E": "730 Genel Üretim Giderleri"
     },
     "correctAnswer": "B",
-    "explanation": "Üretim maliyeti devam eden işte 151, tamamlanınca 152, satılınca 620 hesabına akar.",
+    "explanation": "Tamamlanıp teslim edilmemiş sipariş mamul stokudur ve 152 Mamuller hesabında yer alır; tamamlanmamış siparişler 151’de, teslim edilenler 620’de izlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 151 Yarı Mamuller, 152 Mamuller ve 620 Satılan Mamuller Maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -255,11 +255,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -267,20 +267,20 @@
     "id": "kh-mal-sistem-0009",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İki ardışık safhalı üretimde birinci safhada tamamlanan birimlerin maliyeti ikinci safhada nasıl ele alınır?",
+    "question": "Sipariş maliyet sistemini uygulayan bir işletmenin muhasebe müdürü, sistemin temel özelliklerini yeni çalışanlara anlatmaktadır. Hazırlanan listede bir hata vardır.\n\nSipariş maliyet sistemi ile ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "B": "Devralınan maliyet olarak ikinci safhaya taşınır",
-      "A": "Birinci safhanın dönem gideri olarak kaydedilir",
-      "C": "İkinci safhanın direkt işçilik maliyetinden düşülür",
-      "D": "Doğrudan satılan mamul maliyetine aktarılır",
-      "E": "Finansman maliyeti olarak dönem sonucuna yüklenir"
+      "A": "Maliyetler dönem sonunda eşdeğer birimlere bölünür.",
+      "B": "Her siparişin maliyeti ayrı izlenir.",
+      "C": "Müşteri isteğine göre üretimde kullanılır.",
+      "D": "Siparişin maliyeti tamamlandığında belirlenir.",
+      "E": "GÜG siparişlere yükleme oranıyla yüklenir."
     },
-    "correctAnswer": "B",
-    "explanation": "Önceki safhanın çıktısı sonraki safhanın girdisidir; birikmiş maliyet devralınan maliyet olarak süreci izler.",
+    "correctAnswer": "A",
+    "explanation": "Sipariş maliyet sisteminde maliyetler siparişler bazında toplanır ve sipariş tamamlanınca birim maliyet bulunur; eşdeğer birim hesaplaması safha maliyet sisteminde yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - dönüştürme maliyetleri; çok safhalı maliyet akışı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -288,11 +288,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -300,20 +300,20 @@
     "id": "kh-mal-sistem-0010",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Homojen süreçte her bir birime fiilen harcanan işçilik süresini tek tek ölçmek ekonomik değilse safha sisteminin ortalama maliyet kullanması hangi gerekçeye dayanır?",
+    "question": "Sipariş maliyet sistemini uygulayan işletmede yıl boyunca siparişlere 980.000 ₺ GÜG yüklenmiş, gerçekleşen GÜG 1.010.000 ₺ olmuştur. Farkın önemsiz olduğu değerlendirilmiş ve siparişlerin tamamı yıl içinde teslim edilmiştir.\n\nYıl sonu düzeltmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "E": "Benzer birimlerin ortak kaynak tüketimine",
-      "A": "Maliyetlerin güvenilir biçimde ölçülememesine",
-      "B": "Birimlerin müşteri talebine göre farklılaşmasına",
-      "C": "Direkt işçiliğin dönem gideri kabul edilmesine",
-      "D": "Yarı mamul miktarlarının dönemler boyunca eşit kalmasına"
+      "A": "30.000 ₺ fazla yükleme SMM’den düşülür.",
+      "B": "30.000 ₺ siparişlere eşit dağıtılarak yeniden fiyatlanır.",
+      "C": "Fark mamul stoklarına eklenir.",
+      "D": "Fark gelecek yılın yükleme oranına eklenir.",
+      "E": "30.000 ₺ eksik yükleme SMM’ye eklenir."
     },
     "correctAnswer": "E",
-    "explanation": "Birbirine benzer birimlerin aynı süreç kaynaklarını tüketmesi, safha maliyetlerinin eşdeğer birimler üzerinden ortalanmasını anlamlı kılar.",
+    "explanation": "Gerçekleşen GÜG yüklenenden 30.000 ₺ fazladır (eksik yükleme); önemsiz fark satılan mamuller maliyetine eklenerek kapatılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - sistematik ve tutarlı maliyet dağıtımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -322,10 +322,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -333,20 +333,20 @@
     "id": "kh-mal-sistem-0011",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Aynı özellikte 500 parçadan oluşan tek bir müşteri partisi diğer partilerden ayrı izlenebiliyorsa maliyet kartı hangi düzeyde açılabilir?",
+    "question": "Safha maliyet sistemini ve ağırlıklı ortalama yöntemini uygulayan bir işletmenin karıştırma safhasına ait veriler şöyledir:\n\n| Kalem | Miktar (birim) | Tamamlanma (dönüşüm) |\n|---|---|---|\n| Dönem başı yarı mamul | 1.000 | %40 |\n| Dönemde üretime başlanan | 9.000 | — |\n| Tamamlanıp sonraki aşamaya devredilen | 8.000 | %100 |\n| Dönem sonu yarı mamul | 2.000 | %50 |\n\nDirekt ilk madde safha başında tamamen verilmekte, dönüşüm maliyetleri (DİŞ ve GÜG) üretim boyunca eşit oluşmaktadır. Direkt ilk madde ve dönüşüm maliyetleri açısından eşdeğer birim miktarları sırasıyla aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Parti düzeyinde",
-      "B": "Birim düzeyinde",
-      "C": "Bölüm düzeyinde",
-      "D": "İşletme düzeyinde",
-      "E": "Tedarikçi düzeyinde"
+      "A": "10.000; 9.000",
+      "B": "9.000; 8.600",
+      "C": "10.000; 10.000",
+      "D": "8.000; 9.000",
+      "E": "9.000; 9.000"
     },
     "correctAnswer": "A",
-    "explanation": "Aynı siparişe ait homojen parçalar tek üretim partisi olarak maliyet nesnesi yapılabilir; her parçaya ayrı kart gerekmez.",
+    "explanation": "Ağırlıklı ortalamada eşdeğer birim = tamamlanan + dönem sonu yarı mamulün eşdeğeri. DİMM: 8.000 + 2.000 × %100 = 10.000; dönüşüm: 8.000 + 2.000 × %50 = 9.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 23 - özel projeler için maliyetlerin ayrı belirlenmesi; sipariş maliyetleme"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -354,11 +354,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -366,20 +366,20 @@
     "id": "kh-mal-sistem-0012",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Sipariş sistemindeki belge akışına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Malzeme istek fişi kullanılan direkt malzemeyi işe bağlayabilir\n\nII. İşçi çalışma kartı direkt işçilik süresini işe bağlayabilir\n\nIII. Faaliyet ölçüsü genel üretim giderinin işe yüklenmesinde kullanılabilir",
+    "question": "Safha maliyet sistemini ve ağırlıklı ortalama yöntemini uygulayan bir işletmenin karıştırma safhasına ait veriler şöyledir:\n\n| Kalem | Miktar (birim) | Tamamlanma (dönüşüm) |\n|---|---|---|\n| Dönem başı yarı mamul | 1.000 | %40 |\n| Dönemde üretime başlanan | 9.000 | — |\n| Tamamlanıp sonraki aşamaya devredilen | 8.000 | %100 |\n| Dönem sonu yarı mamul | 2.000 | %50 |\n\nDirekt ilk madde safha başında tamamen verilmekte, dönüşüm maliyetleri (DİŞ ve GÜG) üretim boyunca eşit oluşmaktadır. Dönem başı yarı mamulde 20.000 ₺ DİMM ve 8.000 ₺ dönüşüm maliyeti, dönem içinde 180.000 ₺ DİMM ve 262.000 ₺ dönüşüm maliyeti vardır. Birim DİMM ve birim dönüşüm maliyeti sırasıyla kaç ₺’dir?",
     "choices": {
-      "C": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "20; 30",
+      "B": "18; 29,11",
+      "C": "20; 29,11",
+      "D": "22,5; 30",
+      "E": "18; 30"
     },
-    "correctAnswer": "C",
-    "explanation": "Üç belge/veri de sipariş kartındaki maliyetlerin kaynağını ve yükleme temelini oluşturur.",
+    "correctAnswer": "A",
+    "explanation": "Ağırlıklı ortalamada dönem başı maliyetler dönem maliyetleriyle birleştirilir: DİMM (20.000 + 180.000) / 10.000 = 20 ₺; dönüşüm (8.000 + 262.000) / 9.000 = 30 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 710, 720 ve 730 hesapları; sipariş maliyet belgeleri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -387,11 +387,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -399,20 +399,20 @@
     "id": "kh-mal-sistem-0013",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir süreçte aynı makineler kullanılsa da ürünler yüksek ölçüde müşteri tasarımına göre farklılaşıyor ve malzeme tüketimi iş bazında ölçülebiliyorsa sistem seçiminde hangi özellik ağır basar?",
+    "question": "Safha maliyet sistemini ve ağırlıklı ortalama yöntemini uygulayan bir işletmenin karıştırma safhasına ait veriler şöyledir:\n\n| Kalem | Miktar (birim) | Tamamlanma (dönüşüm) |\n|---|---|---|\n| Dönem başı yarı mamul | 1.000 | %40 |\n| Dönemde üretime başlanan | 9.000 | — |\n| Tamamlanıp sonraki aşamaya devredilen | 8.000 | %100 |\n| Dönem sonu yarı mamul | 2.000 | %50 |\n\nDirekt ilk madde safha başında tamamen verilmekte, dönüşüm maliyetleri (DİŞ ve GÜG) üretim boyunca eşit oluşmaktadır. Birim DİMM maliyeti 20 ₺, birim dönüşüm maliyeti 30 ₺ olarak hesaplanmıştır. Sonraki safhaya devredilen mamullerin maliyeti ve dönem sonu yarı mamul maliyeti sırasıyla kaç ₺’dir?",
     "choices": {
-      "E": "İşlerin ayırt edilebilir olması",
-      "A": "Makinelerin aynı özellikte olması",
-      "B": "Satış vadelerinin benzer olması",
-      "C": "Siparişlerin aynı gün tamamlanması",
-      "D": "Üretimin tek bölümde yürütülmesi"
+      "A": "400.000; 100.000",
+      "B": "400.000; 70.000",
+      "C": "450.000; 20.000",
+      "D": "360.000; 110.000",
+      "E": "420.000; 50.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Sistem seçiminin belirleyicisi fiziksel makine benzerliği değil, maliyet nesnelerinin ayırt edilebilirliği ve kaynakların ölçülebilmesidir.",
+    "correctAnswer": "B",
+    "explanation": "Devredilen 8.000 × (20 + 30) = 400.000 ₺. Dönem sonu yarı mamul: DİMM 2.000 × 20 = 40.000 ₺ + dönüşüm 1.000 × 30 = 30.000 ₺ = 70.000 ₺. Toplam 470.000 ₺ katlanılan maliyete eşittir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - stok maliyetinin üretim koşullarına uygun belirlenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -421,10 +421,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -432,20 +432,20 @@
     "id": "kh-mal-sistem-0014",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Kesim bölümü makine yoğun, montaj bölümü emek yoğunken iki bölüm için ayrı genel üretim gideri oranı kullanılması ne sağlar?",
+    "question": "Safha maliyet sistemini ve ilk giren ilk çıkar (FIFO) yöntemini uygulayan bir işletmenin şekillendirme safhası verileri şöyledir:\n\n| Kalem | Miktar (birim) | Dönüşüm tamamlanma |\n|---|---|---|\n| Dönem başı yarı mamul | 2.000 | %60 |\n| Dönemde üretime başlanan | 10.000 | — |\n| Tamamlanıp devredilen | 9.000 | %100 |\n| Dönem sonu yarı mamul | 3.000 | %40 |\n\nDirekt ilk madde safha başında tamamen verilmekte, dönüşüm maliyetleri üretim boyunca eşit oluşmaktadır. Dönemde yapılan iş açısından DİMM ve dönüşüm maliyetleri eşdeğer birim miktarları sırasıyla aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Bölümlerin farklı kaynak tüketimini yansıtır",
-      "B": "Direkt maliyetleri üretim maliyetinden çıkarır",
-      "C": "Her siparişe aynı tutarda genel gider yükler",
-      "D": "Yarı mamul tamamlanma derecesini gereksiz kılar",
-      "E": "Satış fiyatı yüksek siparişin maliyetini düşürür"
+      "A": "12.000; 10.200",
+      "B": "9.000; 9.000",
+      "C": "10.000; 10.200",
+      "D": "12.000; 9.000",
+      "E": "10.000; 9.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Bölüm oranları, siparişin makine ve işçilik faaliyetlerinden fiilen yararlanma biçimini ayrı ayrı maliyete dönüştürür.",
+    "correctAnswer": "E",
+    "explanation": "FIFO’da sadece bu dönemde yapılan iş sayılır. DİMM: dönem başı mamuller DİMM’i önceki dönemde almıştır; 9.000 − 2.000 + 3.000 = 10.000. Dönüşüm: 9.000 − 2.000 × %60 + 3.000 × %40 = 9.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - genel üretim giderlerinin sistematik dağıtımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -453,11 +453,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -465,20 +465,20 @@
     "id": "kh-mal-sistem-0015",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Maliyetleme sisteminin yalnız sektör adına bakılarak seçilmesi yerine üretim akışının incelenmesi neden gereklidir?",
+    "question": "Safha maliyet sistemini ve ilk giren ilk çıkar (FIFO) yöntemini uygulayan bir işletmenin şekillendirme safhası verileri şöyledir:\n\n| Kalem | Miktar (birim) | Dönüşüm tamamlanma |\n|---|---|---|\n| Dönem başı yarı mamul | 2.000 | %60 |\n| Dönemde üretime başlanan | 10.000 | — |\n| Tamamlanıp devredilen | 9.000 | %100 |\n| Dönem sonu yarı mamul | 3.000 | %40 |\n\nDirekt ilk madde safha başında tamamen verilmekte, dönüşüm maliyetleri üretim boyunca eşit oluşmaktadır. Dönem başı yarı mamulün maliyeti 60.000 ₺, dönem içinde katlanılan DİMM 250.000 ₺ ve dönüşüm maliyeti 324.000 ₺’dir. FIFO’ya göre birim DİMM ve birim dönüşüm maliyeti sırasıyla kaç ₺’dir?",
     "choices": {
-      "E": "Aynı işletmede farklı üretim yapıları bulunabilir",
-      "A": "Sektör bilgisi maliyetlemede kullanılamayabilir",
-      "B": "Bütün sektörlerde yalnız sipariş sistemi uygulanabilir",
-      "C": "Safha sistemi yalnız hizmet işletmelerine uygun olabilir",
-      "D": "Üretim akışı maliyet nesnesini her zaman etkilemeyebilir"
+      "A": "26; 36",
+      "B": "25; 31,76",
+      "C": "20,83; 27",
+      "D": "25,83; 36",
+      "E": "25; 36"
     },
     "correctAnswer": "E",
-    "explanation": "Aynı işletme sürekli ortak süreçler ile müşteriye özgü son işlemleri birlikte yürütebilir; seçim gerçek üretim ve ölçüm yapısına dayanmalıdır.",
+    "explanation": "FIFO’da dönem başı maliyet ayrı tutulur ve birim maliyetler sadece dönem maliyetlerinden bulunur: DİMM 250.000 / 10.000 = 25 ₺; dönüşüm 324.000 / 9.000 = 36 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - maliyetlerin koşullara uygun ve sistematik ölçümü"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -487,10 +487,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -498,20 +498,20 @@
     "id": "kh-mal-sistem-0016",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İşletme Makine İşleme bölümü için 600.000 TL/30.000 makine saati, Son Montaj için 360.000 TL/18.000 işçilik saati bütçelemiştir. Her bölümde tek faaliyet birimine düşen GÜG çifti nedir?",
+    "question": "FIFO yöntemini uygulayan bir şekillendirme safhasında dönem başında dönüşüm açısından %60 tamamlanmış 2.000 birim yarı mamul vardır ve maliyeti 60.000 ₺’dir. Bu dönem 9.000 birim tamamlanıp devredilmiştir; dönemin birim DİMM maliyeti 25 ₺, birim dönüşüm maliyeti 36 ₺ olarak hesaplanmış, DİMM safha başında verilmektedir.\n\nDevredilen 9.000 birimin toplam maliyeti kaç ₺’dir?",
     "choices": {
-      "B": "20 TL/makine saati ve 20 TL/işçilik saati",
-      "A": "33,33 TL/makine saati ve 12 TL/işçilik saati",
-      "C": "20 TL/makine saati ve 12 TL/işçilik saati",
-      "D": "40 TL/makine saati ve 20 TL/işçilik saati",
-      "E": "12 TL/makine saati ve 33,33 TL/işçilik saati"
+      "A": "427.000",
+      "B": "487.000",
+      "C": "515.800",
+      "D": "549.000",
+      "E": "609.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Kesim oranı 600.000 / 30.000 = 20; Montaj oranı 360.000 / 18.000 = 20 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Dönem başı 2.000 birim: 60.000 + kalan %40 dönüşüm 800 × 36 = 88.800 ₺. Dönemde başlanıp tamamlanan 7.000 birim: 7.000 × (25 + 36) = 427.000 ₺. Toplam 515.800 ₺; dönem sonu yarı mamul 118.200 ₺ ile toplam 634.000 ₺’dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - bölüm bazında sistematik GÜG dağıtımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -519,11 +519,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -531,20 +531,20 @@
     "id": "kh-mal-sistem-0017",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "A-17 iş kartında Makine İşleme için 450 saat × 20 TL; Son Montaj için 300 saat × 20 TL tüketim kaydı vardır. İki bölümden bu işe aktarılan GÜG toplamı nedir?",
+    "question": "Bir safhada dönem sonunda 3.000 birim yarı mamul kalmıştır. Direkt ilk madde safhanın başında tamamen verilmiş, dönüşüm maliyetleri açısından ise ürünler %40 tamamlanmıştır. FIFO ile hesaplanan dönem birim maliyetleri DİMM için 25 ₺, dönüşüm için 36 ₺’dir.\n\nDönem sonu yarı mamullerin maliyeti kaç ₺’dir?",
     "choices": {
-      "E": "15.000 TL",
-      "A": "9.000 TL",
-      "B": "6.000 TL",
-      "C": "30.000 TL",
-      "D": "7.500 TL"
+      "A": "75.000",
+      "B": "108.000",
+      "C": "118.200",
+      "D": "131.400",
+      "E": "183.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Kesim payı 450 × 20 = 9.000 TL; Montaj payı 300 × 20 = 6.000 TL'dir. Toplam 15.000 TL olur.",
+    "correctAnswer": "C",
+    "explanation": "Dönem sonu 3.000 birim: DİMM 3.000 × 25 = 75.000 ₺; dönüşüm 3.000 × %40 = 1.200 eşdeğer × 36 = 43.200 ₺; toplam 118.200 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - siparişe bölüm faaliyetleriyle GÜG yüklenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -552,11 +552,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -564,20 +564,20 @@
     "id": "kh-mal-sistem-0018",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "A-17 maliyet kartının üç satırı 85.000 TL doğrudan malzeme, 42.000 TL doğrudan emek ve 15.000 TL faaliyet oranlarıyla aktarılan fabrika gideridir. Kartın kapanış maliyeti nedir?",
+    "question": "Safha maliyet sistemi uygulayan bir işletmede eşdeğer birim tablosu hazırlanmaktadır. Stajyer, bu tablonun neden gerekli olduğunu ve safha maliyet raporundaki yerini sormaktadır.\n\nEşdeğer birim tablosu hangi amaçla düzenlenir?",
     "choices": {
-      "C": "142.000 TL",
-      "A": "127.000 TL",
-      "B": "100.000 TL",
-      "D": "57.000 TL",
-      "E": "112.000 TL"
+      "A": "Kısmen tamamlanmış ürünleri tam ürün cinsinden ifade etmek",
+      "B": "Siparişlerin maliyetlerini ayrı ayrı izlemek",
+      "C": "Standart ve gerçek maliyetleri karşılaştırmak",
+      "D": "Ortak maliyetleri ürünlere dağıtmak",
+      "E": "Satış fiyatlarını belirlemek"
     },
-    "correctAnswer": "C",
-    "explanation": "Toplam sipariş maliyeti 85.000 + 42.000 + 15.000 = 142.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Eşdeğer birim, dönem sonunda kısmen tamamlanmış ürünleri tamamlanmış birim cinsinden ifade eder ve dönem maliyetlerinin birim başına bölünmesini sağlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - satın alma ve dönüştürme maliyetleri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -585,11 +585,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -597,20 +597,20 @@
     "id": "kh-mal-sistem-0019",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Toplam üretim maliyeti 142.000 TL olan A-17 siparişinde kalite kontrolünden geçen 400 mamul elde edilmiştir. Siparişin mamul başına maliyeti kaç TL'dir?",
+    "question": "Safha maliyet sistemini uygulayan işletmede dönem başı yarı mamul 1.500 birim, dönemde üretime başlanan 12.000 birim, sonraki safhaya devredilen 11.200 birimdir. Dönem içinde üretim kaybı yaşanmamıştır.\n\nDönem sonu yarı mamul miktarı kaç birimdir?",
     "choices": {
-      "B": "355 TL",
-      "A": "284 TL",
-      "C": "317,50 TL",
-      "D": "473,33 TL",
-      "E": "392,50 TL"
+      "A": "800",
+      "B": "1.500",
+      "C": "2.300",
+      "D": "2.800",
+      "E": "13.500"
     },
-    "correctAnswer": "B",
-    "explanation": "Birim maliyet 142.000 / 400 = 355 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Miktar denkliği: dönem başı + başlanan = devredilen + dönem sonu → 1.500 + 12.000 = 11.200 + X; X = 2.300 birim.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 - üretim maliyetinin mamul birimlerine yüklenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -618,11 +618,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -630,20 +630,20 @@
     "id": "kh-mal-sistem-0020",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Normal maliyetleme ile yürütülen sipariş sistemine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Direkt malzeme siparişe fiilî tutarıyla yüklenebilir\n\nII. Genel üretim gideri önceden belirlenen oranla yüklenebilir\n\nIII. Dönem içindeki fiilî GÜG her siparişe kesinlikle doğrudan izlenir",
+    "question": "İki safhalı üretim yapan işletmede birinci safhada tamamlanan ürünler 400.000 ₺ maliyetle ikinci safhaya devredilmektedir. İkinci safhada ek malzeme sürecin sonunda eklenmekte, dönüşüm maliyetleri üretim boyunca oluşmaktadır.\n\nİkinci safhanın eşdeğer birim hesabında önceki safhadan devralınan maliyetlerin tamamlanma derecesi aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Dönüşüm derecesiyle aynı alınır.",
+      "B": "Sıfır kabul edilir.",
+      "C": "Sürecin sonunda eklendiği için sıfırdır.",
+      "D": "Dönem sonu yarı mamul için %50 kabul edilir.",
+      "E": "%100 kabul edilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Normal maliyetlemede direkt maliyetler fiilî, genel üretim giderleri önceden belirlenmiş oranla yüklenebilir. Fiilî GÜG'ün tamamı siparişlere doğrudan izlenmez.",
+    "correctAnswer": "E",
+    "explanation": "Önceki safhadan devralınan ürünler ikinci safhaya girdiği anda bu maliyet açısından tamamlanmıştır; devralınan maliyetin eşdeğer birim hesabında tamamlanma derecesi %100’dür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 ve 13 - genel üretim giderlerinin sistematik yüklenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -651,11 +651,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -663,20 +663,20 @@
     "id": "kh-mal-sistem-0021",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem sonunda tamamlanmamış J-21 ve J-22 sipariş kartlarında sırasıyla 62.000 ve 48.000 TL birikmiştir. Başka devam eden iş yoksa 151 Yarı Mamuller bakiyesi kaç TL olmalıdır?",
+    "question": "Bir işletmede ek malzeme ikinci safhanın sonunda (%100 tamamlanma noktasında) eklenmektedir. Dönem sonunda ikinci safhada dönüşüm açısından %70 tamamlanmış 1.000 birim yarı mamul bulunmaktadır.\n\nBu yarı mamuller için ek malzeme açısından eşdeğer birim sayısı kaçtır?",
     "choices": {
-      "A": "110.000 TL",
-      "B": "62.000 TL",
-      "C": "48.000 TL",
-      "D": "14.000 TL",
-      "E": "220.000 TL"
+      "A": "700",
+      "B": "1.000",
+      "C": "300",
+      "D": "0",
+      "E": "500"
     },
-    "correctAnswer": "A",
-    "explanation": "Tamamlanmamış işlerin kart toplamı 62.000 + 48.000 = 110.000 TL'dir ve 151 hesabında izlenir.",
+    "correctAnswer": "D",
+    "explanation": "Malzeme sürecin sonunda eklendiğinden henüz bitmemiş (%70) ürünler bu malzemeyi almamıştır; ek malzeme açısından eşdeğer birim sıfırdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 151 Yarı Mamuller-Üretim"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -684,11 +684,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -696,20 +696,20 @@
     "id": "kh-mal-sistem-0022",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "J-23 ve J-24 siparişleri dönemde tamamlanmış; kart maliyetleri 132.000 ve 96.000 TL'dir. Satış yapılmadan önce 152 Mamuller hesabına aktarılacak toplam kaç TL'dir?",
+    "question": "Safha maliyet sistemini uygulayan bir işletme ağırlıklı ortalama yöntemi ile FIFO yöntemini karşılaştırmaktadır. Dönem başı yarı mamul stoku bulunmakta ve girdi fiyatları dönemden döneme değişmektedir.\n\nİki yöntem arasındaki temel fark aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "228.000 TL",
-      "A": "132.000 TL",
-      "B": "96.000 TL",
-      "D": "36.000 TL",
-      "E": "456.000 TL"
+      "A": "Ağırlıklı ortalama dönem başı stoku dikkate almaz.",
+      "B": "FIFO dönem başı yarı mamul maliyetini dönem maliyetinden ayrı tutar.",
+      "C": "FIFO’da eşdeğer birim sayısı daha büyüktür.",
+      "D": "İki yöntemde toplam maliyet farklıdır.",
+      "E": "Ağırlıklı ortalama sadece sipariş maliyetinde kullanılır."
     },
-    "correctAnswer": "C",
-    "explanation": "Tamamlanan sipariş maliyetleri 132.000 + 96.000 = 228.000 TL olarak 152 hesabına aktarılır.",
+    "correctAnswer": "B",
+    "explanation": "Ağırlıklı ortalama dönem başı maliyetleri dönem maliyetleriyle birleştirir; FIFO ise bunları ayrı tutarak birim maliyeti sadece bu dönemde yapılan işe göre hesaplar. Dönem başı stok yoksa iki yöntem aynı sonucu verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 151 ve 152 hesapları arasındaki tamamlanma aktarımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -717,11 +717,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -729,20 +729,20 @@
     "id": "kh-mal-sistem-0023",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Maliyeti 160.000 TL olan tamamlanmış bir sipariş partisinin %75'i satılmıştır. Birimlerin maliyeti eşitse satılan kısma aktarılacak maliyet kaç TL'dir?",
+    "question": "Aynı dönemde dönem başı yarı mamul stoku bulunmayan bir safhada hem ağırlıklı ortalama hem FIFO yöntemiyle eşdeğer birim ve birim maliyet hesaplanmıştır.\n\nİki yöntemin sonuçları ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "120.000 TL",
-      "B": "40.000 TL",
-      "C": "160.000 TL",
-      "D": "280.000 TL",
-      "E": "213.333,33 TL"
+      "A": "FIFO daha yüksek birim maliyet verir.",
+      "B": "Ağırlıklı ortalama daha yüksek eşdeğer birim verir.",
+      "C": "FIFO’da eşdeğer birim sıfır çıkar.",
+      "D": "Ağırlıklı ortalamada dönem sonu stok sıfırdır.",
+      "E": "İki yöntem aynı sonucu verir."
     },
-    "correctAnswer": "A",
-    "explanation": "Satılan kısmın maliyeti 160.000 × %75 = 120.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "İki yöntem arasındaki fark dönem başı yarı mamulün işlenişinden doğar; dönem başı yarı mamul yoksa eşdeğer birimler ve birim maliyetler aynı çıkar.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 152 Mamuller ve 620 Satılan Mamuller Maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -750,11 +750,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -762,20 +762,20 @@
     "id": "kh-mal-sistem-0024",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir siparişte direkt malzeme 72.000 TL, direkt işçilik 48.000 TL ve yüklenen GÜG 36.000 TL'dir. Birincil maliyet ile dönüştürme maliyeti sırasıyla kaç TL'dir?",
+    "question": "Safha maliyet sistemini uygulayan işletmenin muhasebecisi, safha maliyet raporunun bölümlerini düzenlemektedir. Raporda miktar denkliği, eşdeğer birimler, birim maliyetler ve maliyetlerin dağıtımı yer alacaktır.\n\nSafha maliyet raporunda yer alan “maliyetlerin dağıtımı” bölümünde aşağıdakilerden hangisi gösterilir?",
     "choices": {
-      "D": "120.000 TL / 84.000 TL",
-      "A": "108.000 TL / 48.000 TL",
-      "B": "84.000 TL / 120.000 TL",
-      "C": "156.000 TL / 48.000 TL",
-      "E": "72.000 TL / 156.000 TL"
+      "A": "Devredilen ürünlerin ve dönem sonu yarı mamulün maliyetleri",
+      "B": "Siparişlerin sipariş maliyet kartları",
+      "C": "Standart maliyet sapmaları",
+      "D": "Faaliyet yükleme oranları",
+      "E": "Ortak maliyetin mamuller arasındaki payı"
     },
-    "correctAnswer": "D",
-    "explanation": "Birincil maliyet 72.000 + 48.000 = 120.000 TL; dönüştürme maliyeti 48.000 + 36.000 = 84.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Maliyetlerin dağıtımı bölümünde safhada katlanılan toplam maliyet, sonraki safhaya/mamul ambarına devredilen ürünler ile dönem sonu yarı mamulleri arasında paylaştırılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - satın alma ve dönüştürme maliyetleri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -784,10 +784,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -795,20 +795,20 @@
     "id": "kh-mal-sistem-0025",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bütçelenen GÜG 960.000 TL ve bütçelenen makine saati 48.000 olan işletmede J-30 siparişi 1.400 saat kullanmıştır. Önceden belirlenen oranla siparişe yüklenecek GÜG kaç TL'dir?",
+    "question": "Bir boya fabrikasında ürünler karıştırma, öğütme ve dolum safhalarından geçmektedir. Her safhanın maliyetleri ayrı toplanmakta ve safha sonunda tamamlanan ürünler bir sonraki safhaya aktarılmaktadır.\n\nSafha maliyet sistemi için aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "B": "28.000 TL",
-      "A": "20 TL",
-      "C": "685,71 TL",
-      "D": "28.020 TL",
-      "E": "0 TL"
+      "A": "Maliyetler üretim safhalarında toplanır.",
+      "B": "Homojen ve sürekli üretimde kullanılır.",
+      "C": "Maliyetler her müşteri siparişi için ayrı izlenir.",
+      "D": "Önceki safhanın maliyeti sonraki safhaya aktarılır.",
+      "E": "Birim maliyet eşdeğer birimle hesaplanır."
     },
-    "correctAnswer": "B",
-    "explanation": "Yükleme oranı 960.000 / 48.000 = 20 TL/saattir. J-30 payı 1.400 × 20 = 28.000 TL olur.",
+    "correctAnswer": "C",
+    "explanation": "Safha maliyet sisteminde maliyetler siparişlere göre değil üretim safhalarına göre toplanır; siparişe göre izleme sipariş maliyet sisteminin özelliğidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 ve 13 - önceden belirlenen normal kapasite esaslı GÜG oranı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -816,11 +816,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -828,20 +828,20 @@
     "id": "kh-mal-sistem-0026",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Yükleme oranı 20 TL/makine saati, fiilî faaliyet 52.000 saat ve fiilî GÜG 1.050.000 TL'dir. Dönem sonu yükleme farkı nedir?",
+    "question": "Safha maliyet sistemini ve ağırlıklı ortalama yöntemini uygulayan bir işletmede dönem sonu yarı mamul 4.000 birim olup dönüşüm açısından %25 tamamlanmıştır. Devredilen ürün 16.000 birimdir.\n\nDönüşüm maliyetleri açısından eşdeğer birim sayısı kaçtır?",
     "choices": {
-      "D": "10.000 TL eksik yükleme",
-      "A": "10.000 TL fazla yükleme",
-      "B": "1.040.000 TL eksik yükleme",
-      "C": "1.050.000 TL fazla yükleme",
-      "E": "2.090.000 TL eksik yükleme"
+      "A": "13.000",
+      "B": "16.000",
+      "C": "17.000",
+      "D": "19.000",
+      "E": "20.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Yüklenen GÜG 52.000 × 20 = 1.040.000 TL'dir. Fiilî gider 10.000 TL daha yüksek olduğundan eksik yükleme vardır.",
+    "correctAnswer": "C",
+    "explanation": "Ağırlıklı ortalamada eşdeğer birim = devredilen + dönem sonu yarı mamul × tamamlanma: 16.000 + 4.000 × %25 = 17.000.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 ve 13 - fiilî GÜG ile sistematik yükleme tutarının uzlaştırılması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -849,11 +849,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -861,20 +861,20 @@
     "id": "kh-mal-sistem-0027",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "30.000 TL eksik yükleme; 151, 152 ve 620 hesaplarındaki yüklenen GÜG bakiyeleri sırasıyla 150.000, 250.000 ve 600.000 TL'dir. Fark oransal dağıtılırsa 620 hesabının payı kaç TL'dir?",
+    "question": "FIFO yöntemini uygulayan işletmede dönem başı yarı mamuller dönüşüm açısından %30 tamamlanmış durumdadır. Bu yarı mamuller dönem içinde tamamlanıp devredilmiştir.\n\nBu yarı mamullerin dönem içinde dönüşüm açısından tamamlanma derecesi aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "18.000 TL",
-      "A": "10.000 TL",
-      "B": "4.500 TL",
-      "D": "7.500 TL",
-      "E": "45.000 TL"
+      "A": "%70",
+      "B": "%30",
+      "C": "%100",
+      "D": "%0",
+      "E": "%130"
     },
-    "correctAnswer": "C",
-    "explanation": "Toplam dağıtım bazı 1.000.000 TL'dir. 620 payı 30.000 × 600.000 / 1.000.000 = 18.000 TL olur.",
+    "correctAnswer": "A",
+    "explanation": "FIFO’da dönem başı yarı mamulün bu dönemde yapılan işi, tamamlanmak için gereken kısımdır: %100 − %30 = %70.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 ve 13 - yükleme farkının stoklar ve satış maliyetiyle uzlaştırılması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -882,11 +882,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -894,20 +894,20 @@
     "id": "kh-mal-sistem-0028",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bölüm oranlarıyla sipariş maliyetlemeye ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Makine yoğun bölümde makine saati uygun bir etken olabilir\n\nII. Emek yoğun bölümde direkt işçilik saati uygun bir etken olabilir\n\nIII. Bütün bölümlerde tek oran kullanmak her koşulda daha güvenilir sonuç verir",
+    "question": "İkinci safhada dönem başı stok yoktur. Birinci safhadan 5.000 birim 150.000 ₺ maliyetle devralınmış, dönem içinde 4.000 birim tamamlanmış, 1.000 birim %50 tamamlanmış olarak kalmıştır. İkinci safhanın dönüşüm maliyeti 135.000 ₺ olup safhada malzeme eklenmemektedir.\n\nİkinci safhada devralınan ve dönüşüm maliyeti için birim maliyetler sırasıyla kaç ₺’dir?",
     "choices": {
-      "B": "I ve II",
-      "A": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "30; 27",
+      "B": "30; 30",
+      "C": "37,5; 30",
+      "D": "30; 33,75",
+      "E": "25; 30"
     },
     "correctAnswer": "B",
-    "explanation": "Faaliyet yapısına uygun bölüm etkenleri maliyet tüketimini yansıtabilir. Tek oranın her koşulda üstünlüğü yoktur.",
+    "explanation": "Devralınan maliyet açısından eşdeğer birim 5.000 (tamamlanma %100): 150.000 / 5.000 = 30 ₺. Dönüşüm eşdeğeri 4.000 + 1.000 × %50 = 4.500: 135.000 / 4.500 = 30 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - genel üretim giderlerinin sistematik ve uygun etkenlerle dağıtımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -915,11 +915,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -927,20 +927,20 @@
     "id": "kh-mal-sistem-0029",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir işe 90.000 TL malzeme verilmiş, kullanılmayan 12.000 TL depoya iade edilmiştir. Ayrıca 8.000 TL endirekt malzeme bölüm için tüketilmiştir. Sipariş kartına yazılacak direkt malzeme kaç TL'dir?",
+    "question": "İkinci safhada birim devralınan maliyet 30 ₺, birim dönüşüm maliyeti 30 ₺’dir. Safhada 4.000 birim tamamlanıp mamul ambarına devredilmiş, 1.000 birim dönüşüm açısından %50 tamamlanmış olarak kalmıştır.\n\nİkinci safhanın dönem sonu yarı mamul maliyeti kaç ₺’dir?",
     "choices": {
-      "D": "78.000 TL",
-      "A": "90.000 TL",
-      "B": "98.000 TL",
-      "C": "86.000 TL",
-      "E": "20.000 TL"
+      "A": "15.000",
+      "B": "30.000",
+      "C": "45.000",
+      "D": "60.000",
+      "E": "240.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Siparişin direkt tüketimi verilen malzemeden iade çıkarılarak 90.000 − 12.000 = 78.000 TL bulunur. Endirekt malzeme GÜG havuzuna gider.",
+    "correctAnswer": "C",
+    "explanation": "Dönem sonu yarı mamul: devralınan 1.000 × 30 = 30.000 ₺ + dönüşüm 500 × 30 = 15.000 ₺ = 45.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 710 Direkt İlk Madde ve Malzeme ile 730 Genel Üretim Giderleri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -948,11 +948,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -960,20 +960,20 @@
     "id": "kh-mal-sistem-0030",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir işçi J-40 siparişinde 120 saat çalışmış, ayrıca üretim kesintisi nedeniyle 10 saat boş kalmıştır. Saat ücreti 320 TL ise siparişe direkt işçilik olarak kaç TL yazılır?",
+    "question": "Bir süt işletmesinde çiğ süt işlenerek aynı süreçten tereyağı ve ayran elde edilmektedir. Ayrılma noktasına kadar katlanılan ortak maliyet 240.000 ₺’dir; ayrılma noktasında 3.000 kg tereyağı ve 5.000 kg ayran elde edilmiştir.\n\nFiziksel miktar yöntemine göre tereyağı ve ayranın ortak maliyetten payları sırasıyla kaç ₺’dir?",
     "choices": {
-      "E": "38.400 TL",
-      "A": "41.600 TL",
-      "B": "3.200 TL",
-      "C": "35.200 TL",
-      "D": "44.800 TL"
+      "A": "Tereyağı 150.000, ayran 90.000",
+      "B": "Tereyağı 120.000, ayran 120.000",
+      "C": "Tereyağı 80.000, ayran 160.000",
+      "D": "Tereyağı 96.000, ayran 144.000",
+      "E": "Tereyağı 90.000, ayran 150.000"
     },
     "correctAnswer": "E",
-    "explanation": "Siparişe doğrudan izlenen süre 120 saattir; 120 × 320 = 38.400 TL yazılır. Boş zaman uygun GÜG değerlendirmesine tabidir.",
+    "explanation": "Fiziksel miktar yönteminde ortak maliyet miktara göre dağıtılır: 240.000 / 8.000 kg = 30 ₺/kg; tereyağı 3.000 × 30 = 90.000 ₺, ayran 5.000 × 30 = 150.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 720 Direkt İşçilik ve 730 Genel Üretim Giderleri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -981,11 +981,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -993,20 +993,20 @@
     "id": "kh-mal-sistem-0031",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Tamamlanan bir sipariş henüz satılmamışsa maliyet akışında hangi işlem yapılmalıdır?",
+    "question": "Bir işletmede ortak maliyet 168.000 ₺’dir. Ayrılma noktasında A mamulü 3.000 kg (satış fiyatı 40 ₺/kg), B mamulü 5.000 kg (satış fiyatı 18 ₺/kg) elde edilmiştir. Mamuller ayrılma noktasında satılabilmektedir.\n\nSatış değeri yöntemine göre A ve B mamullerinin ortak maliyetten payları sırasıyla kaç ₺’dir?",
     "choices": {
-      "C": "151'den 152 Mamuller hesabına aktarılmalıdır",
-      "A": "151 Yarı Mamuller hesabında bırakılmalıdır",
-      "B": "620 Satılan Mamuller Maliyetine aktarılmalıdır",
-      "D": "770 Genel Yönetim Giderlerine aktarılmalıdır",
-      "E": "120 Alıcılar hesabında izlenmelidir"
+      "A": "A 63.000, B 105.000",
+      "B": "A 72.000, B 96.000",
+      "C": "A 84.000, B 84.000",
+      "D": "A 96.000, B 72.000",
+      "E": "A 105.000, B 63.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Üretimi tamamlanan fakat satılmayan sipariş yarı mamul değil mamuldür; maliyeti 152 hesabında stoklanır.",
+    "correctAnswer": "D",
+    "explanation": "Satış değerleri: A 3.000 × 40 = 120.000 ₺, B 5.000 × 18 = 90.000 ₺, toplam 210.000 ₺. A payı 168.000 × 120/210 = 96.000 ₺, B payı 72.000 ₺. Fiziksel miktar yöntemi A’ya 63.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 151 Yarı Mamuller ve 152 Mamuller"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1014,11 +1014,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1026,20 +1026,20 @@
     "id": "kh-mal-sistem-0032",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "J-50 siparişi D1'de 300 makine saati, D2'de 400 işçilik saati kullanmıştır. D1 oranı 30 TL/makine saati, D2 oranı 18 TL/işçilik saati ise toplam GÜG payı kaç TL'dir?",
+    "question": "Bir işletmede ortak maliyet 150.000 ₺’dir. A mamulü ayrılma noktasından sonra 30.000 ₺ ek işlemle 150.000 ₺’ye, B mamulü 20.000 ₺ ek işlemle 100.000 ₺’ye satılabilmektedir; ayrılma noktasında satış değerleri bilinmemektedir.\n\nNet gerçekleşebilir değer yöntemine göre A ve B’nin ortak maliyetten payları sırasıyla kaç ₺’dir?",
     "choices": {
-      "D": "16.200 TL",
-      "A": "21.000 TL",
-      "B": "12.600 TL",
-      "C": "33.600 TL",
-      "E": "9.000 TL"
+      "A": "A 75.000, B 75.000",
+      "B": "A 60.000, B 90.000",
+      "C": "A 93.750, B 56.250",
+      "D": "A 100.000, B 50.000",
+      "E": "A 90.000, B 60.000"
     },
-    "correctAnswer": "D",
-    "explanation": "D1 payı 300 × 30 = 9.000 TL; D2 payı 400 × 18 = 7.200 TL'dir. Toplam 16.200 TL olur.",
+    "correctAnswer": "E",
+    "explanation": "NGD = nihai satış değeri − ayrılma sonrası maliyet: A 150.000 − 30.000 = 120.000 ₺, B 100.000 − 20.000 = 80.000 ₺; toplam 200.000 ₺. A payı 150.000 × 120/200 = 90.000 ₺, B 60.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 12 - bölüm oranlarıyla siparişe GÜG yüklenmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1047,11 +1047,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1059,20 +1059,20 @@
     "id": "kh-mal-sistem-0033",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Bir özel siparişin satış hasılatı 250.000 TL, sipariş maliyet kartındaki üretim maliyeti 185.000 TL'dir. Siparişin üretim maliyeti üzerinden brüt sonucu kaç TL'dir?",
+    "question": "Bir işletmede ana ürünle birlikte önemsiz değerde bir yan ürün elde edilmektedir. Ortak maliyet 500.000 ₺’dir. Yan ürünün satış değeri 50.000 ₺, ayrılma sonrası ek işlem maliyeti 8.000 ₺, satış giderleri 4.000 ₺ ve normal kâr payı 6.000 ₺’dir.\n\nSatış fiyatından geriye doğru hesaplama yöntemine göre yan ürüne düşen ortak maliyet ve ana ürünün maliyeti sırasıyla kaç ₺’dir?",
     "choices": {
-      "D": "65.000 TL kâr",
-      "A": "185.000 TL kâr",
-      "B": "250.000 TL kâr",
-      "C": "435.000 TL kâr",
-      "E": "65.000 TL zarar"
+      "A": "50.000; 450.000",
+      "B": "32.000; 468.000",
+      "C": "38.000; 462.000",
+      "D": "42.000; 458.000",
+      "E": "32.000; 500.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Siparişin brüt sonucu 250.000 − 185.000 = 65.000 TL kârdır.",
+    "correctAnswer": "B",
+    "explanation": "Yan ürün payı = satış değeri − ek işlem − satış gideri − normal kâr = 50.000 − 8.000 − 4.000 − 6.000 = 32.000 ₺; ana ürüne kalan 500.000 − 32.000 = 468.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - 600 Yurtiçi Satışlar ve 620 Satılan Mamuller Maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1080,11 +1080,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1092,20 +1092,20 @@
     "id": "kh-mal-sistem-0034",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Ortak standart işlemlerden geçen fakat modele özgü direkt malzemeler kullanan seri üretimde işlem maliyetleme yaklaşımı nasıl uygulanır?",
+    "question": "Bir un fabrikasında buğday öğütülerek un elde edilmekte, aynı süreçte satış değeri una göre çok düşük olan kepek de çıkmaktadır. İşletme kepek maliyetini ayrıca hesaplamamakta, kepek satış gelirini ana ürünün maliyetinden düşmektedir.\n\nBu durumla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Ortak işlem maliyetleri ortalanır, özgü malzeme modele yüklenir",
-      "B": "Bütün maliyetler satış fiyatına göre müşterilere dağıtılır",
-      "C": "Modele özgü malzeme bütün ürünlere eşit ortalanır",
-      "D": "Ortak işlem maliyetleri giderleştirilip yalnız malzeme stoklanır",
-      "E": "Her mamul birimi için bağımsız bir sipariş maliyet kartı açılır"
+      "A": "Kepek ortak mamuldür; satış değerine göre ortak maliyet alır.",
+      "B": "Kepek firedir; maliyetten düşülmez.",
+      "C": "Kepek ana üründür; un yan üründür.",
+      "D": "Kepek yan üründür; net değeri ana ürün maliyetinden düşülebilir.",
+      "E": "Kepek ıskarta mamuldür; dönem gideri yazılır."
     },
-    "correctAnswer": "A",
-    "explanation": "İşlem maliyetleme, ortak süreç maliyetlerinin ortalanmasını ve ayırt edilebilir maliyetlerin ürün/model bazında izlenmesini birleştirir.",
+    "correctAnswer": "D",
+    "explanation": "Satış değeri ana ürüne göre önemsiz olan ve ana ürünle birlikte ortaya çıkan ürün yan üründür; TMS 2’ye göre yan ürünler genellikle NGD’leriyle ölçülüp bu tutar ana ürünün maliyetinden düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - karma üretim yapısında uygun maliyet ölçümü"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1113,11 +1113,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1125,20 +1125,20 @@
     "id": "kh-mal-sistem-0035",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Sipariş maliyet kartı ile yardımcı belgeler arasındaki uzlaştırma yapılmadığında en önemli risk aşağıdakilerden hangisidir?",
+    "question": "Birlikte üretim yapan bir rafineride ham petrol işlenerek benzin, motorin ve fuel-oil aynı süreçte elde edilmekte, belirli bir aşamadan sonra ürünler ayrı ayrı tanımlanabilir hâle gelmektedir.\n\nÜrünlerin ayrı ayrı tanımlanabildiği bu aşamaya ne ad verilir?",
     "choices": {
-      "E": "Maliyetin yanlış işe veya döneme yüklenmesi",
-      "A": "Siparişlerin aynı ürüne dönüşmesi",
-      "B": "Satış hasılatının üretime eşitlenmesi",
-      "C": "Yarı mamullerin stok olarak raporlanamaması",
-      "D": "Genel giderlerin direkt malzeme niteliği kazanması"
+      "A": "Ayrılma noktası",
+      "B": "Başabaş noktası",
+      "C": "Sipariş noktası",
+      "D": "Kapasite sınırı",
+      "E": "Eşdeğer birim noktası"
     },
-    "correctAnswer": "E",
-    "explanation": "Malzeme fişi, zaman kaydı, faaliyet ölçüsü ve kart toplamı uzlaştırılmazsa maliyet başka işe, yanlış döneme veya iki kez yüklenebilir.",
+    "correctAnswer": "A",
+    "explanation": "Birlikte üretimde ürünlerin birbirinden ayrı olarak tanımlanabildiği aşama ayrılma noktasıdır; bu noktaya kadar katlanılan maliyetler ortak maliyettir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "1 Sıra No.lu MSUGT - maliyet hesaplarının belgeye dayanması ve hesaplar arası tutarlılık"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1146,11 +1146,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1158,20 +1158,20 @@
     "id": "kh-mal-sistem-0036",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Safha maliyetlemede eşdeğer üretim hesabına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Malzeme ve dönüştürme için ayrı tamamlanma derecesi kullanılabilir\n\nII. Ağırlıklı ortalama yöntemi dönem başı ile cari dönem maliyetlerini birleştirir\n\nIII. FIFO cari dönemin birim maliyetini dönem başı maliyetinden ayırır",
+    "question": "Ortak ürünlerden A, ayrılma noktasında 60.000 ₺’ye satılabilmekte ya da 25.000 ₺ ek işlem maliyetiyle 95.000 ₺’ye satılabilecek bir ürüne dönüştürülebilmektedir. A’nın ortak maliyetten payı 40.000 ₺’dir.\n\nEk işleme kararı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Ek işlem 30.000 ₺ fazla kâr sağlar; işlenmelidir.",
+      "B": "Ek işlem 10.000 ₺ fazla kâr sağlar; işlenmelidir.",
+      "C": "Ek işlem kârı 5.000 ₺ azaltır; işlenmemelidir.",
+      "D": "Karar ortak maliyet payına göre verilir; işlenmemelidir.",
+      "E": "Ek işlem kârı değiştirmez; farksızdır."
     },
-    "correctAnswer": "A",
-    "explanation": "Malzeme ve dönüştürme farklı tamamlanma derecelerinde olabilir; ağırlıklı ortalama maliyetleri birleştirirken FIFO cari dönem maliyetini önceki dönemden ayırır.",
+    "correctAnswer": "B",
+    "explanation": "Ortak maliyet her iki seçenekte de aynı olduğundan karar için ilgisizdir. Ek gelir 95.000 − 60.000 = 35.000 ₺, ek maliyet 25.000 ₺; ek işlem 10.000 ₺ fazla kâr sağlar.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - safha maliyetleme ve eşdeğer üretim"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1179,11 +1179,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1191,20 +1191,20 @@
     "id": "kh-mal-sistem-0037",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Ağırlıklı ortalama yönteminde dönem başı 1.000 birim, başlanıp üretime alınan 9.000 birim, tamamlanan 8.200 birim ve dönem sonu 1.800 birimdir. Malzeme safha başında ekleniyorsa malzeme eşdeğer birimi kaçtır?",
+    "question": "X, Y ve Z mamullerini birlikte üreten işletmede ortak maliyet 330.000 ₺’dir. Ayrılma noktasında X 2.000 kg, Y 4.000 kg, Z 5.000 kg elde edilmiştir. İşletme fiziksel miktar (ortalama birim maliyet) yöntemini kullanmaktadır.\n\nZ mamulünün ortak maliyetten kg başına alacağı pay kaç ₺’dir?",
     "choices": {
-      "A": "10.000",
-      "B": "8.200",
-      "C": "9.000",
-      "D": "1.800",
-      "E": "8.920"
+      "A": "27,50",
+      "B": "30",
+      "C": "33",
+      "D": "66",
+      "E": "150"
     },
-    "correctAnswer": "A",
-    "explanation": "Malzeme başlangıçta eklendiği için tamamlanan 8.200 ve son stoktaki 1.800 birimin tümü malzeme yönünden tamdır: 10.000 eşdeğer birim.",
+    "correctAnswer": "B",
+    "explanation": "Fiziksel miktar yönteminde tüm ürünler kg başına aynı payı alır: 330.000 / (2.000 + 4.000 + 5.000) = 30 ₺/kg. Z’nin toplam payı 5.000 × 30 = 150.000 ₺’dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama eşdeğer üretim"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1212,11 +1212,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1224,20 +1224,20 @@
     "id": "kh-mal-sistem-0038",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Aynı safhada 8.200 birim tamamlanmış, dönem sonu 1.800 birim dönüştürme bakımından %40 tamamlanmıştır. Ağırlıklı ortalama yönteminde dönüştürme eşdeğer birimi kaçtır?",
+    "question": "Bir işletme ortak ürünleri için katsayılı (ağırlıklı ortalama) dağıtım yöntemini kullanmaktadır. Ortak maliyet 176.000 ₺’dir; A mamulünden 3.000 birim (katsayı 2), B mamulünden 5.000 birim (katsayı 1) üretilmiştir.\n\nA ve B mamullerinin ortak maliyetten payları sırasıyla kaç ₺’dir?",
     "choices": {
-      "B": "8.920",
-      "A": "10.000",
-      "C": "8.200",
-      "D": "720",
-      "E": "4.000"
+      "A": "A 66.000, B 110.000",
+      "B": "A 88.000, B 88.000",
+      "C": "A 80.000, B 96.000",
+      "D": "A 105.600, B 70.400",
+      "E": "A 96.000, B 80.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Dönüştürme eşdeğer birimi 8.200 + 1.800 × %40 = 8.920 birimdir.",
+    "correctAnswer": "E",
+    "explanation": "Ağırlıklı birimler: A 3.000 × 2 = 6.000, B 5.000 × 1 = 5.000; toplam 11.000. Birim başına 176.000 / 11.000 = 16 ₺; A 6.000 × 16 = 96.000 ₺, B 5.000 × 16 = 80.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - dönüştürme eşdeğer üretimi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1245,11 +1245,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1257,20 +1257,20 @@
     "id": "kh-mal-sistem-0039",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem başı yarı mamulde 30.000 TL malzeme maliyeti, cari dönemde 170.000 TL malzeme maliyeti vardır. Malzeme eşdeğer birimi 10.000 ise ağırlıklı ortalama malzeme maliyeti kaç TL/birimdir?",
+    "question": "TMS 2 Stoklar’a göre birlikte üretilen ürünlerin dönüştürme maliyetleri her ürün için ayrı ayrı belirlenemiyorsa bu maliyetler ürünler arasında dağıtılmalıdır. Bir işletme ortak maliyetleri her dönem farklı bir yöntemle dağıtmayı düşünmektedir.\n\nTMS 2’ye göre bu dağıtım ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "D": "20 TL",
-      "A": "17 TL",
-      "B": "3 TL",
-      "C": "24,39 TL",
-      "E": "111,11 TL"
+      "A": "Her dönem en düşük maliyeti verecek yöntem seçilir.",
+      "B": "Ortak maliyetler dağıtılmaz, dönem gideri yazılır.",
+      "C": "Ortak maliyetler sadece ana ürüne yüklenir.",
+      "D": "Mantıklı ve tutarlı bir esasa göre dağıtılmalıdır.",
+      "E": "Dağıtım yöntemi her yıl vergi idaresince belirlenir."
     },
     "correctAnswer": "D",
-    "explanation": "Ağırlıklı ortalamada maliyetler birleştirilir: (30.000 + 170.000) / 10.000 = 20 TL/birim.",
+    "explanation": "TMS 2 md. 14’e göre birlikte üretilen ürünlerin maliyetleri mantıklı ve tutarlı bir esasa göre (örneğin ayrılma noktasındaki satış değerleri) dağıtılır; yöntem dönemden döneme keyfi değiştirilmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama birim maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1279,10 +1279,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1290,20 +1290,20 @@
     "id": "kh-mal-sistem-0040",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem başı yarı mamulde 16.000 TL, cari dönemde 162.400 TL dönüştürme maliyeti vardır. Eşdeğer üretim 8.920 ise ağırlıklı ortalama dönüştürme maliyeti kaç TL/birimdir?",
+    "question": "Bir işletmede ortak maliyet dağıtımı için fiziksel miktar yöntemi kullanılmaktadır. Ürünlerden birinin kg başına satış fiyatı diğerinin beş katı olmasına karşın iki ürün kg başına aynı ortak maliyeti almaktadır.\n\nBu yöntemin zayıf yönü aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "20 TL",
-      "A": "18,21 TL",
-      "B": "1,79 TL",
-      "D": "17,84 TL",
-      "E": "21,76 TL"
+      "A": "Ürünlerin gelir yaratma gücünü dikkate almaz.",
+      "B": "Hesaplaması çok karmaşıktır.",
+      "C": "Toplam ortak maliyeti değiştirir.",
+      "D": "Sadece yan ürünlere uygulanabilir.",
+      "E": "Miktar bilgisi gerektirmez."
     },
-    "correctAnswer": "C",
-    "explanation": "Toplam dönüştürme maliyeti 178.400 TL'dir. 8.920 eşdeğer birime bölününce 20 TL/birim bulunur.",
+    "correctAnswer": "A",
+    "explanation": "Fiziksel miktar yöntemi ortak maliyeti miktara göre dağıttığından değerli ürün ile değersiz ürüne kg başına aynı maliyeti yükler; değersiz ürün zararlı görünebilir. Satış değeri yöntemi gelir yaratma gücünü dikkate alır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama birim maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1312,10 +1312,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1323,20 +1323,20 @@
     "id": "kh-mal-sistem-0041",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Malzeme ve dönüştürme eşdeğer birim maliyetleri ayrı ayrı 20 TL'dir. Tamamlanan 8.200 birimin bir sonraki safhaya aktarılacak toplam maliyeti kaç TL'dir?",
+    "question": "Bir işletmede yan ürün satışlarından elde edilen 35.000 ₺, yan ürüne maliyet yüklenmeden doğrudan diğer olağan gelirler hesabına kaydedilmektedir. Yan ürün önemsiz tutardadır.\n\nBu uygulama ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "E": "328.000 TL",
-      "A": "164.000 TL",
-      "B": "40 TL",
-      "C": "400.000 TL",
-      "D": "378.400 TL"
+      "A": "Ana ürün tüm ortak maliyeti taşır.",
+      "B": "Yan ürün ortak maliyetin yarısını alır.",
+      "C": "Ana ürünün maliyeti 35.000 ₺ azalır.",
+      "D": "Ortak maliyet ikiye bölünerek dağıtılır.",
+      "E": "Yan ürün satışları ana ürün satışlarına eklenir."
     },
-    "correctAnswer": "E",
-    "explanation": "Tam birim maliyeti 20 + 20 = 40 TL'dir. 8.200 × 40 = 328.000 TL aktarılır.",
+    "correctAnswer": "A",
+    "explanation": "Yan ürün satışları gelir olarak kaydedildiğinde yan ürüne maliyet ayrılmaz; ortak maliyetin tamamı ana ürüne yüklenir. Alternatif yöntemde yan ürün NGD’si ana ürün maliyetinden düşülür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - tamamlanan üretimin maliyetinin sonraki safhaya aktarımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1344,11 +1344,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1356,20 +1356,20 @@
     "id": "kh-mal-sistem-0042",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem sonu 1.800 birim malzeme yönünden tam, dönüştürme yönünden %40 tamamlanmıştır. Her iki eşdeğer birim maliyeti 20 TL ise dönem sonu yarı mamul maliyeti kaç TL'dir?",
+    "question": "Bir işletme ortak mamul ve yan ürün ayrımı yapmaktadır. Aynı süreçte çıkan ürünlerden birinin satış değeri toplam satış değerinin %2’si, diğerlerininki ise %45 ve %53’üdür.\n\nBu ürünlerin sınıflandırılması ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "E": "50.400 TL",
-      "A": "72.000 TL",
-      "B": "28.800 TL",
-      "C": "36.000 TL",
-      "D": "14.400 TL"
+      "A": "Üçü de ortak mamuldür.",
+      "B": "%53’lük ürün ana ürün, diğer ikisi yan üründür.",
+      "C": "%2’lik ürün yan ürün, diğer ikisi ortak mamuldür.",
+      "D": "Üçü de yan üründür.",
+      "E": "%45 ve %2’lik ürünler yan üründür."
     },
-    "correctAnswer": "E",
-    "explanation": "Malzeme payı 1.800 × 20 = 36.000 TL; dönüştürme payı 1.800 × %40 × 20 = 14.400 TL'dir. Toplam 50.400 TL olur.",
+    "correctAnswer": "C",
+    "explanation": "Satış değerleri birbirine yakın ve önemli olan ürünler ortak mamul, satış değeri diğerlerine göre önemsiz olan ürün yan üründür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - dönem sonu yarı mamul maliyetinin eşdeğer üretimle ölçümü"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1378,10 +1378,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1389,20 +1389,20 @@
     "id": "kh-mal-sistem-0043",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Safhada dağıtılacak toplam maliyet 378.400 TL; tamamlananlara 328.000 TL ve dönem sonu yarı mamule 50.400 TL verilmiştir. Maliyet uzlaştırmasının sonucu nedir?",
+    "question": "İki ortak mamul üreten işletmede ortak maliyet 320.000 ₺’dir. Satış değeri yöntemine göre dağıtım yapılmakta olup A mamulünün ayrılma noktasındaki satış değeri 300.000 ₺, B mamulünün satış değeri 500.000 ₺’dir.\n\nB mamulüne düşen ortak maliyet payı kaç ₺’dir?",
     "choices": {
-      "C": "Maliyetlerin tamamı dağıtılmıştır",
-      "A": "50.400 TL dağıtılmadan kalmıştır",
-      "B": "328.000 TL fazla dağıtılmıştır",
-      "D": "Yalnız tamamlanan birimler uzlaştırılmıştır",
-      "E": "Yarı mamul maliyeti dönem giderine aktarılmıştır"
+      "A": "120.000",
+      "B": "160.000",
+      "C": "180.000",
+      "D": "187.500",
+      "E": "200.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Dağıtılan tutar 328.000 + 50.400 = 378.400 TL olup dağıtılacak toplamla aynıdır.",
+    "correctAnswer": "E",
+    "explanation": "Toplam satış değeri 800.000 ₺; B’nin payı 320.000 × 500.000 / 800.000 = 200.000 ₺, A’nın payı 120.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - stok maliyetlerinin güvenilir ölçümü ve uzlaştırılması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1411,10 +1411,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1422,20 +1422,20 @@
     "id": "kh-mal-sistem-0044",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Ağırlıklı ortalama yöntemine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem başı yarı mamul maliyeti cari maliyetle havuzlanır\n\nII. Malzeme ve dönüştürme için ayrı eşdeğer birim hesaplanabilir\n\nIII. Tamamlanıp devredilen birimler ilgili maliyet unsuru yönünden tam kabul edilir",
+    "question": "Bir işletmede ortak maliyet 260.000 ₺’dir. Yan ürünün net gerçekleşebilir değeri 20.000 ₺ olup bu tutar ortak maliyetten düşülmekte, kalan maliyet A ve B ortak mamullerine satış değerlerine (A 180.000 ₺, B 120.000 ₺) göre dağıtılmaktadır.\n\nA mamulüne düşen ortak maliyet payı kaç ₺’dir?",
     "choices": {
-      "D": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "96.000",
+      "B": "104.000",
+      "C": "120.000",
+      "D": "144.000",
+      "E": "156.000"
     },
     "correctAnswer": "D",
-    "explanation": "Ağırlıklı ortalamada dönem başı ve cari maliyetler birleşir; maliyet unsurlarının tamamlanma dereceleri ayrı ölçülebilir ve devredilen birimler tamdır.",
+    "explanation": "Dağıtılacak ortak maliyet 260.000 − 20.000 = 240.000 ₺; A payı 240.000 × 180.000 / 300.000 = 144.000 ₺, B payı 96.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama yöntemi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1443,11 +1443,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1455,20 +1455,20 @@
     "id": "kh-mal-sistem-0045",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İkinci safhada 7.000 birim tamamlanmış, 1.500 birim dönem sonunda kalmıştır. Birimler önceki safhadan bu safhaya girerken devralınan maliyeti taşıyorsa devralınan maliyet eşdeğer birimi kaçtır?",
+    "question": "Bir hazır giyim işletmesi mağazaları için standart ürünleri seri olarak üretirken, kurumsal müşterileri için logo baskılı ve özel ölçülü üniformaları müşteri talebine göre üretmektedir.\n\nBu işletme için uygun maliyet yaklaşımı aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "8.500",
-      "B": "7.000",
-      "C": "1.500",
-      "D": "7.750",
-      "E": "4.250"
+      "A": "Tüm üretime sipariş maliyet sistemi",
+      "B": "Standart ürünlere safha, özel siparişlere sipariş maliyet sistemi",
+      "C": "Tüm üretime safha maliyet sistemi",
+      "D": "Standart ürünlere sipariş, özel siparişlere safha maliyet sistemi",
+      "E": "Sadece standart maliyet sistemi"
     },
-    "correctAnswer": "A",
-    "explanation": "Önceki safhadan gelen maliyet ikinci safhaya girişte birimlerin tümünde mevcuttur; tamamlanan ve son stoktaki birimler tam eşdeğer sayılır.",
+    "correctAnswer": "B",
+    "explanation": "Aynı işletmede homojen seri üretime safha, müşteriye özel işlere sipariş maliyet sistemi uygulanabilir (karma sistem); sistem seçimi üretimin niteliğine göre yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - safhalar arası devralınan maliyet"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet sistemleri"
     },
     "tags": [
       "Özgün Soru",
@@ -1476,11 +1476,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1488,20 +1488,20 @@
     "id": "kh-mal-sistem-0046",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İkinci safhada dağıtılacak devralınan maliyet 255.000 TL ve devralınan maliyet eşdeğer birimi 8.500 ise birim başına devralınan maliyet kaç TL'dir?",
+    "question": "Sipariş maliyet sistemi ve safha maliyet sistemi karşılaştırılırken bir öğrenci iki sistemin ortak özelliklerini listelemiştir. Listedeki ifadelerden biri iki sistem için de geçerli değildir.\n\nAşağıdakilerden hangisi iki sistemin ortak özelliği değildir?",
     "choices": {
-      "D": "30 TL",
-      "A": "36,43 TL",
-      "B": "170 TL",
-      "C": "0,03 TL",
-      "E": "32,90 TL"
+      "A": "Maliyet unsurlarının DİMM, DİŞ ve GÜG olarak izlenmesi",
+      "B": "Tamamlanan ürünlerin mamul hesabına aktarılması",
+      "C": "GÜG’ün bir oranla yüklenebilmesi",
+      "D": "Birim maliyetin eşdeğer birimle bulunması",
+      "E": "Yarı mamul stokunun ortaya çıkabilmesi"
     },
     "correctAnswer": "D",
-    "explanation": "Birim devralınan maliyet 255.000 / 8.500 = 30 TL'dir.",
+    "explanation": "Her iki sistemde maliyet unsurları aynıdır, GÜG oranla yüklenebilir ve yarı mamul oluşabilir. Eşdeğer birimle birim maliyet hesaplama sadece safha maliyet sistemine özgüdür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - devralınan maliyetin ikinci safha birimlerine dağıtılması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet sistemleri"
     },
     "tags": [
       "Özgün Soru",
@@ -1509,11 +1509,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1521,20 +1521,20 @@
     "id": "kh-mal-sistem-0047",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İkinci safhada birim devralınan maliyet 30 TL, bu safhada eklenen malzeme 12 TL ve dönüştürme 18 TL'dir. Tamamlanan birimin toplam maliyeti kaç TL'dir?",
+    "question": "Ağırlıklı ortalama yöntemini uygulayan işletmede toplam DİMM (dönem başı dâhil) 330.000 ₺, DİMM eşdeğer birimi 11.000; toplam dönüşüm maliyeti 486.000 ₺, dönüşüm eşdeğer birimi 10.800’dür. Tamamlanan ürün 10.000 birimdir.\n\nTamamlanan ürünlerin toplam maliyeti kaç ₺’dir?",
     "choices": {
-      "D": "60 TL",
-      "A": "30 TL",
-      "B": "42 TL",
-      "C": "48 TL",
-      "E": "378 TL"
+      "A": "675.000",
+      "B": "720.000",
+      "C": "750.000",
+      "D": "780.000",
+      "E": "816.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Tamamlanan birim maliyeti 30 + 12 + 18 = 60 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Birim DİMM 330.000 / 11.000 = 30 ₺; birim dönüşüm 486.000 / 10.800 = 45 ₺. Tamamlanan 10.000 × 75 = 750.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - ardışık safhalarda biriken üretim maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1542,11 +1542,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1554,20 +1554,20 @@
     "id": "kh-mal-sistem-0048",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İkinci safhada tamamlanan 7.000 birimin tam maliyeti 60 TL/birimdir. Sonraki safhaya veya mamule aktarılacak tutar kaç TL'dir?",
+    "question": "Sipariş maliyet sistemini uygulayan bir inşaat firmasında bir villa projesinin maliyetleri izlenmektedir. Projede kullanılan çimento, projeye özgü mühendis ücreti ve şantiye genel giderlerinin projeye düşen payı toplanmaktadır.\n\nŞantiye genel giderlerinin projeye aktarılması ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "B": "420.000 TL",
-      "A": "210.000 TL",
-      "C": "60 TL",
-      "D": "510.000 TL",
-      "E": "496.500 TL"
+      "A": "Proje bittikten sonra gider yazılır.",
+      "B": "Doğrudan malzeme maliyeti olarak izlenir.",
+      "C": "Sadece en büyük projeye yüklenir.",
+      "D": "Projelere eşit tutarda dağıtılır.",
+      "E": "Önceden belirlenmiş yükleme oranıyla yüklenir."
     },
-    "correctAnswer": "B",
-    "explanation": "Aktarılacak maliyet 7.000 × 60 = 420.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "Siparişe doğrudan izlenemeyen genel giderler, sipariş maliyet sisteminde önceden belirlenmiş yükleme oranlarıyla siparişlere yüklenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - tamamlanan safha maliyetinin aktarımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1576,10 +1576,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1587,20 +1587,20 @@
     "id": "kh-mal-sistem-0049",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "İkinci safha sonundaki 1.500 birim; devralınan ve malzeme yönünden tam, dönüştürme yönünden %50'dir. Birim maliyetler sırasıyla 30, 12 ve 18 TL ise yarı mamul maliyeti kaç TL'dir?",
+    "question": "Safha maliyet sistemini uygulayan işletmede üretim tek safhadan oluşmakta, her ay sonunda tamamlanan ürünler mamul ambarına aktarılmaktadır. İşletme 7/A seçeneğini uygulamaktadır.\n\nTamamlanan ürünlerin ambara aktarılmasına ilişkin kayıtta borçlandırılan hesap aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "76.500 TL",
-      "B": "90.000 TL",
-      "C": "45.000 TL",
-      "D": "63.000 TL",
-      "E": "27.000 TL"
+      "A": "152 Mamuller",
+      "B": "151 Yarı Mamuller – Üretim",
+      "C": "620 Satılan Mamuller Maliyeti",
+      "D": "710 Direkt İlk Madde ve Malzeme Giderleri",
+      "E": "153 Ticari Mallar"
     },
     "correctAnswer": "A",
-    "explanation": "Devralınan pay 45.000, malzeme payı 18.000, dönüştürme payı 13.500 TL'dir. Toplam 76.500 TL olur.",
+    "explanation": "Tamamlanan ürünlerin maliyeti 151 Yarı Mamuller – Üretim hesabından 152 Mamuller hesabına aktarılır: 152 borç, 151 alacak.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10 ve 12 - ikinci safha dönem sonu yarı mamul maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1608,11 +1608,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1620,20 +1620,20 @@
     "id": "kh-mal-sistem-0050",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO safha maliyetinde dönem başı yarı mamul 1.200 birim, dönemde başlanan 8.800 birim ve tamamlanan 9.000 birimdir. Dönemde başlanıp tamamlanan birim sayısı kaçtır?",
+    "question": "Ağırlıklı ortalama yöntemini uygulayan işletmede dönem sonu yarı mamul miktarı ve tamamlanma derecesi yanlış sayılmış; gerçekte %40 tamamlanmış olan 2.000 birim %80 tamamlanmış olarak raporlanmıştır.\n\nBu hatanın etkisi aşağıdakilerden hangisidir?",
     "choices": {
-      "D": "7.800",
-      "A": "9.000",
-      "B": "8.800",
-      "C": "1.200",
-      "E": "10.200"
+      "A": "Dönüşüm eşdeğer birimi azalır, birim maliyet yükselir.",
+      "B": "Eşdeğer birim ve birim maliyet değişmez.",
+      "C": "Sadece DİMM eşdeğer birimi değişir.",
+      "D": "Toplam katlanılan maliyet artar.",
+      "E": "Dönüşüm eşdeğer birimi artar, birim dönüşüm maliyeti düşer."
     },
-    "correctAnswer": "D",
-    "explanation": "Tamamlanan 9.000 birimin 1.200 birimi dönem başından gelir. Cari dönemde başlanıp tamamlanan = 9.000 − 1.200 = 7.800 birimdir.",
+    "correctAnswer": "E",
+    "explanation": "Tamamlanma derecesinin fazla gösterilmesi dönüşüm eşdeğer birimini 800 birim artırır; aynı maliyet daha çok birime bölündüğünden birim dönüşüm maliyeti düşer ve dönem sonu yarı mamul fazla değerlenir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - safha maliyetleme (FIFO yöntemi)"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1641,11 +1641,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1653,20 +1653,20 @@
     "id": "kh-mal-sistem-0051",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO yönteminde dönem başı 1.200 birim dönüştürme yönünden %30, dönem sonu 1.000 birim %50 tamamdır; dönemde başlanıp tamamlanan 7.800 birimdir. Cari dönem dönüştürme eşdeğer birimi kaçtır?",
+    "question": "Bir işletmede sipariş K-3’e 38.000 ₺ DİMM ve 1.200 direkt işçilik saati (saat ücreti 150 ₺) harcanmıştır. GÜG direkt işçilik saati başına 55 ₺ yüklenmekte, sipariş 400 adet üründen oluşmaktadır.\n\nK-3 siparişinin birim maliyeti kaç ₺’dir?",
     "choices": {
-      "B": "9.140",
-      "A": "9.500",
-      "C": "8.300",
-      "D": "8.640",
-      "E": "10.000"
+      "A": "545",
+      "B": "615",
+      "C": "640",
+      "D": "710",
+      "E": "750"
     },
-    "correctAnswer": "B",
-    "explanation": "Dönem başını tamamlama 1.200 × %70 = 840; başlanıp tamamlanan 7.800; son stok 1.000 × %50 = 500 eşdeğer birimdir. Toplam 9.140 olur.",
+    "correctAnswer": "D",
+    "explanation": "Sipariş maliyeti 38.000 + 1.200 × 150 + 1.200 × 55 = 38.000 + 180.000 + 66.000 = 284.000 ₺; birim maliyet 284.000 / 400 = 710 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO eşdeğer üretimi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1674,11 +1674,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1686,20 +1686,20 @@
     "id": "kh-mal-sistem-0052",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO safha maliyetine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Dönem başı yarı mamulü tamamlamak için cari dönemde yapılan iş ayrı ölçülür\n\nII. Dönemde başlanıp tamamlanan birimler cari dönem eşdeğer üretimine tam girer\n\nIII. Dönem başı maliyeti cari dönem eşdeğer birim maliyetinin payına alınmaz",
+    "question": "Birlikte üretim yapan bir işletmede ortak maliyetin ürünlere dağıtımı için satış değeri yöntemi uygulanmaktadır. Yönetim, dağıtılan ortak maliyet paylarını bir ürünün üretimine devam edip etmeme kararında kullanmak istemektedir.\n\nBu yaklaşım ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "E": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "Ortak maliyet payı en yüksek ürünün üretimi durdurulur.",
+      "B": "Ortak maliyet payları kararın temel ölçütüdür.",
+      "C": "Ortak maliyet sadece zarar eden ürüne yüklenmelidir.",
+      "D": "Ortak maliyet payları bu karar için ilgili değildir.",
+      "E": "Karar fiziksel miktar yöntemine göre verilmelidir."
     },
-    "correctAnswer": "E",
-    "explanation": "FIFO cari dönemin işini ve maliyetini ayırır; dönem başı maliyeti cari dönem eşdeğer birim maliyetinin payına katılmaz.",
+    "correctAnswer": "D",
+    "explanation": "Ortak maliyet ürünlerin tümü birlikte üretildiği sürece değişmez; ürün bazında devam veya ek işlem kararlarında sadece ayrılma sonrası ek gelir ve maliyetler ilgilidir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO yönteminin dönem ayrımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1707,11 +1707,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1719,20 +1719,20 @@
     "id": "kh-mal-sistem-0053",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO yönteminde malzeme safha başında eklenmektedir. Dönem başı 1.200 birim malzemeyi önceki dönemde almış, dönemde başlanıp tamamlanan 7.800 ve dönem sonu 1.000 birim vardır. Cari dönem malzeme eşdeğer birimi kaçtır?",
+    "question": "Bir işletmede ortak maliyet 90.000 ₺’dir. A mamulünden 1.500 kg, B mamulünden 3.000 kg elde edilmiştir. A’nın kg satış fiyatı 50 ₺, B’nin 25 ₺’dir. Satış değeri yöntemi uygulanmaktadır.\n\nA mamulüne düşen ortak maliyet payı kaç ₺’dir?",
     "choices": {
-      "D": "8.800",
-      "A": "10.000",
-      "B": "7.800",
-      "C": "9.000",
-      "E": "1.000"
+      "A": "22.500",
+      "B": "30.000",
+      "C": "45.000",
+      "D": "50.000",
+      "E": "60.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Dönem başı birimler malzemeyi önceki dönemde almıştır. Cari malzeme eşdeğeri 7.800 + 1.000 = 8.800 birimdir.",
+    "correctAnswer": "C",
+    "explanation": "Satış değerleri A 1.500 × 50 = 75.000 ₺, B 3.000 × 25 = 75.000 ₺; eşit olduğundan ortak maliyet yarı yarıya dağıtılır: A 45.000 ₺. Fiziksel miktar yöntemi A’ya 30.000 ₺ verirdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO malzeme eşdeğer üretimi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1740,11 +1740,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1752,20 +1752,20 @@
     "id": "kh-mal-sistem-0054",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO yönteminde cari malzeme maliyeti 176.000 TL/8.800 eşdeğer birim; cari dönüştürme maliyeti 182.800 TL/9.140 eşdeğer birimdir. Cari birim maliyetler sırasıyla kaç TL'dir?",
+    "question": "Bir cam fabrikasında üretim ergitme ve şekillendirme safhalarından geçmektedir. Şekillendirme safhasının dönem sonunda 600 birim yarı mamulü vardır; bu birimler dönüşüm açısından %30 tamamlanmıştır ve ergitme safhasından devralınan maliyetleri tamdır.\n\nBu yarı mamuller için devralınan maliyet ve dönüşüm açısından eşdeğer birimler sırasıyla aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "20 TL / 20 TL",
-      "B": "19,26 TL / 20,77 TL",
-      "C": "40,77 TL / 40,77 TL",
-      "D": "19,56 TL / 20,31 TL",
-      "E": "0,05 TL / 0,05 TL"
+      "A": "180; 600",
+      "B": "600; 600",
+      "C": "600; 180",
+      "D": "180; 180",
+      "E": "0; 180"
     },
-    "correctAnswer": "A",
-    "explanation": "Malzeme 176.000 / 8.800 = 20 TL; dönüştürme 182.800 / 9.140 = 20 TL/birimdir.",
+    "correctAnswer": "C",
+    "explanation": "Devralınan maliyet açısından tamamlanma %100’dür: 600 eşdeğer birim; dönüşüm açısından 600 × %30 = 180 eşdeğer birim.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO cari dönem birim maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1773,11 +1773,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1785,20 +1785,20 @@
     "id": "kh-mal-sistem-0055",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem başı 1.200 birim dönüştürme yönünden %30 tamamdır. FIFO cari dönüştürme maliyeti 20 TL/eşdeğer birim ise bu stoku cari dönemde tamamlamak için eklenecek maliyet kaç TL'dir?",
+    "question": "Sipariş maliyet sisteminde bir siparişin üretimi sırasında, müşterinin sipariş sonrası talep ettiği tasarım değişikliği nedeniyle 12.000 ₺’lik malzeme yeniden işlenmiştir. Değişikliğin maliyetini müşteri üstlenmeyi kabul etmiştir.\n\nBu yeniden işleme maliyeti ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "C": "16.800 TL",
-      "A": "24.000 TL",
-      "B": "7.200 TL",
-      "D": "156.000 TL",
-      "E": "10.000 TL"
+      "A": "Tüm siparişlere GÜG olarak dağıtılır.",
+      "B": "İlgili siparişin maliyetine eklenir.",
+      "C": "Olağan dışı gider olarak yazılır.",
+      "D": "Genel yönetim gideri olarak yazılır.",
+      "E": "Mamul stoklarına eşit dağıtılır."
     },
-    "correctAnswer": "C",
-    "explanation": "Cari dönemde kalan iş %70'tir: 1.200 × %70 × 20 = 16.800 TL.",
+    "correctAnswer": "B",
+    "explanation": "Belirli bir siparişe ve müşterinin talebine bağlı yeniden işleme maliyeti o siparişin maliyetine yüklenir; tüm üretimin olağan sonucu olan yeniden işleme ise GÜG’e dâhil edilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO dönem başı yarı mamul maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1806,11 +1806,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1818,20 +1818,20 @@
     "id": "kh-mal-sistem-0056",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO yönteminde dönemde başlanıp tamamlanan 7.800 birim için cari malzeme ve dönüştürme maliyetleri ayrı ayrı 20 TL/birimdir. Bu birimlerin maliyeti kaç TL'dir?",
+    "question": "Safha maliyet sistemini uygulayan işletmenin iki safhası vardır. Birinci safha tamamlanan ürünleri 520.000 ₺ maliyetle ikinci safhaya devretmiştir. İşletme 7/A seçeneğini ve her safha için 151 hesabının ayrı alt hesabını kullanmaktadır.\n\nBu devrin kaydı ile ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "312.000 TL",
-      "B": "156.000 TL",
-      "C": "352.000 TL",
-      "D": "360.000 TL",
-      "E": "342.000 TL"
+      "A": "151.02 borç, 151.01 alacak 520.000 ₺ yazılır.",
+      "B": "152 borç, 151.01 alacak 520.000 ₺ yazılır.",
+      "C": "151.01 borç, 151.02 alacak 520.000 ₺ yazılır.",
+      "D": "620 borç, 151.01 alacak 520.000 ₺ yazılır.",
+      "E": "Kayıt yapılmaz, safhalar arası aktarım izlenmez."
     },
     "correctAnswer": "A",
-    "explanation": "Tam cari birim maliyeti 40 TL'dir. 7.800 × 40 = 312.000 TL olur.",
+    "explanation": "Safhalar arası aktarımda devralan safhanın yarı mamul alt hesabı borçlandırılır, devreden safhanın alt hesabı alacaklandırılır; mamul hesabına aktarım son safhadan sonra yapılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO başlanıp tamamlanan birim maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1839,11 +1839,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1851,20 +1851,86 @@
     "id": "kh-mal-sistem-0057",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "FIFO dönem sonu 1.000 birim malzeme yönünden tam, dönüştürme yönünden %50'dir. Cari birim maliyetler her unsur için 20 TL ise dönem sonu yarı mamul maliyeti kaç TL'dir?",
+    "question": "Bir işletme özel sipariş üzerine 200 adet ofis dolabı üretmiştir. Siparişin toplam maliyeti 84.000 ₺ olup işletme fiyatlandırmada birim maliyete %30 kâr eklemektedir. Müşteriye ayrıca KDV ve nakliye faturalanacaktır.\n\nKDV ve nakliye hariç dolap başına satış fiyatı kaç ₺’dir?",
     "choices": {
-      "C": "30.000 TL",
-      "A": "40.000 TL",
-      "B": "20.000 TL",
-      "D": "10.000 TL",
-      "E": "50.000 TL"
+      "A": "420",
+      "B": "504",
+      "C": "525",
+      "D": "546",
+      "E": "600"
     },
-    "correctAnswer": "C",
-    "explanation": "Malzeme 20.000 TL, dönüştürme 10.000 TL'dir; toplam 30.000 TL olur.",
+    "correctAnswer": "D",
+    "explanation": "Birim maliyet 84.000 / 200 = 420 ₺; %30 kârla satış fiyatı 420 × 1,30 = 546 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "TMS 2 par. 10-13; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO yarı mamul maliyeti"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyetleme Sistemleri"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-mal-sistem-0058",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Safha maliyet sistemini uygulayan işletmede dönem başı yarı mamul 800 birim, dönemde üretime başlanan 10.000 birimdir. Dönem içinde 9.500 birim sonraki safhaya devredilmiş, dönem sonunda 1.000 birim yarı mamul kalmıştır; aradaki fark üretim sürecinin olağan kaybıdır.\n\nDönemin normal kayıp miktarı kaç birimdir?",
+    "choices": {
+      "A": "200",
+      "B": "300",
+      "C": "500",
+      "D": "800",
+      "E": "1.300"
+    },
+    "correctAnswer": "B",
+    "explanation": "Miktar denkliği: dönem başı + başlanan = devredilen + dönem sonu + kayıp → 800 + 10.000 = 9.500 + 1.000 + kayıp; kayıp 300 birim.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Safha (evre) maliyet sistemi"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyetleme Sistemleri"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-mal-sistem-0059",
+    "lessonId": "maliyet_muhasebesi",
+    "topicId": "maliyet_sistemleri",
+    "question": "Bir zeytinyağı fabrikasında ana ürün olan zeytinyağıyla birlikte, satış değeri toplam içinde önemsiz kalan pirina elde edilmektedir. Fabrika finansal raporlamasında TMS 2 Stoklar standardını uygulamaktadır.\n\nTMS 2’ye göre önemsiz yan ürün olan pirinanın ölçümü ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Satış değerine göre ortak maliyetten eşit pay alır.",
+      "B": "Maliyeti ölçülmez, stoklarda gösterilmez.",
+      "C": "Ana ürünle aynı birim maliyetle ölçülür.",
+      "D": "NGD ile ölçülür, bu tutar ana ürün maliyetinden düşülür.",
+      "E": "Fiziksel miktarına göre ortak maliyetin yarısını alır."
+    },
+    "correctAnswer": "D",
+    "explanation": "TMS 2 md. 14’e göre önemsiz yan ürünler çoğunlukla net gerçekleşebilir değerleriyle ölçülür ve bu değer ana ürünün maliyetinden düşülür; böylece ana ürünün defter değeri maliyetinden önemli ölçüde farklılaşmaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "TMS 2 md. 14; ortak ve yan ürün maliyeti"
     },
     "tags": [
       "Özgün Soru",
@@ -1873,76 +1939,10 @@
       "Maliyetleme Sistemleri"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-mal-sistem-0058",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "FIFO raporunda dönem başı maliyeti 39.600 TL, bu birimleri tamamlama maliyeti 16.800 TL, başlanıp tamamlananların maliyeti 312.000 TL ve son stok maliyeti 30.000 TL'dir. Toplam dağıtılan maliyet kaç TL'dir?",
-    "choices": {
-      "A": "398.400 TL",
-      "B": "342.000 TL",
-      "C": "381.600 TL",
-      "D": "86.400 TL",
-      "E": "368.400 TL"
-    },
-    "correctAnswer": "A",
-    "explanation": "Dönem başından tamamlananların maliyeti 39.600 + 16.800 = 56.400 TL'dir. Buna 312.000 ve 30.000 eklenince 398.400 TL bulunur.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - FIFO maliyet uzlaştırması"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyetleme Sistemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-mal-sistem-0059",
-    "lessonId": "maliyet_muhasebesi",
-    "topicId": "maliyet_sistemleri",
-    "question": "Ağırlıklı ortalama ile FIFO karşılaştırmasına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Fiyatlar değiştiğinde iki yöntemin birim maliyetleri farklılaşabilir\n\nII. FIFO cari dönem performansını önceki dönem maliyetinden daha çok ayırır\n\nIII. Dönem başı yarı mamul yokken yöntemler mutlaka farklı sonuç verir",
-    "choices": {
-      "C": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
-    },
-    "correctAnswer": "C",
-    "explanation": "Maliyet düzeyi değiştiğinde havuzlama fark yaratabilir ve FIFO cari dönemi ayırır. Dönem başı yarı mamul yoksa yöntem sonuçları aynılaşabilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama ve FIFO karşılaştırması"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyetleme Sistemleri"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1950,20 +1950,20 @@
     "id": "kh-mal-sistem-0060",
     "lessonId": "maliyet_muhasebesi",
     "topicId": "maliyet_sistemleri",
-    "question": "Dönem başı yarı mamulün birim maliyeti cari dönem maliyetinden belirgin düşükse, diğer veriler aynı olmak üzere ağırlıklı ortalama yönteminin cari dönem FIFO maliyetine göre genel etkisi ne olabilir?",
+    "question": "MSUGT’nin 7/A seçeneğini uygulayan ve sipariş maliyet sistemi kullanan işletme, üretimdeki siparişlerin maliyetlerini ayrı ayrı izlemek istemektedir. Ay sonunda tamamlanmamış üç sipariş bulunmaktadır.\n\nTamamlanmamış siparişlerin maliyetleri muhasebede nasıl izlenir?",
     "choices": {
-      "C": "Birim maliyeti aşağı doğru yumuşatabilir",
-      "A": "Birim maliyeti cari FIFO maliyetine eşitleyebilir",
-      "B": "Üretim maliyetini zorunlu olarak artırabilir",
-      "D": "Tamamlananları yalnız dönem başı maliyetiyle değerleyebilir",
-      "E": "Maliyet uzlaştırmasını matematiksel olarak engelleyebilir"
+      "A": "152 hesabının sipariş numaralı alt hesaplarında",
+      "B": "730 hesabında tek tutar olarak",
+      "C": "620 hesabında dönem gideri olarak",
+      "D": "151 hesabının sipariş numaralı alt hesaplarında",
+      "E": "Nazım hesaplarda bilgi amaçlı olarak"
     },
-    "correctAnswer": "C",
-    "explanation": "Ağırlıklı ortalama düşük dönem başı maliyetini daha yüksek cari maliyetle birleştirdiğinden, birleşik birim maliyet cari dönem FIFO maliyetinin altında kalabilir.",
+    "correctAnswer": "D",
+    "explanation": "Sipariş maliyet sisteminde üretimdeki siparişlerin maliyetleri 151 Yarı Mamuller – Üretim hesabında, her sipariş için açılan alt hesaplarda izlenir; tamamlananlar 152’ye aktarılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı - ağırlıklı ortalama ve FIFO maliyet davranışı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Sipariş maliyet sistemi"
     },
     "tags": [
       "Özgün Soru",
@@ -1971,11 +1971,11 @@
       "Konu Havuzu",
       "Maliyetleme Sistemleri"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "KGK TFRS 2026 Seti (Mavi Kitap) – TMS 2; 2026 SMMM Yeterlilik Maliyet Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Sipariş ve safha maliyet sistemleri; TMS 2 md. 14; MSUGT 7/A; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   }

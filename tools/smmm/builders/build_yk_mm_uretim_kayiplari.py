@@ -1,0 +1,645 @@
+# -*- coding: utf-8 -*-
+"""Maliyet Muhasebesi · Üretim Kayıpları — 60 soru, 2026 test biçimi.
+
+Fire, artık, ıskarta (bozuk) ve kusurlu mamul kavramları; normal ve anormal kayıpların muhasebeleştirilmesi;
+safha maliyetinde kaybın eşdeğer birime ve maliyet dağıtımına etkisi; sipariş maliyetinde bozuk ve yeniden
+işlenen ürünler gerçek kitapçıklardaki gibi tutar veren olaylarla sorulur.
+
+Dayanak: TMS 2 md. 16(a) (anormal fire maliyete girmez); maliyet muhasebesinin genel kabul görmüş kayıp
+esasları; MSUGT Tekdüzen Hesap Planı (689 Diğer Olağandışı Gider ve Zararlar). Tutarlar builder içinde
+hesaplanır ve maliyet denkliği denetlenir.
+"""
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from yet_ortak import Paket
+from vergi_ortak import tl, secenekler
+from fm_ortak import kayit as K
+
+P = Paket("questions_topic_uretim_kayiplari_2026.json", lesson="maliyet_muhasebesi", topic="uretim_kayiplari",
+          konu_adi="Üretim Kayıpları", seed=2026093085,
+          surum="TMS 2 md. 16; üretim kayıplarının genel kabul görmüş esasları; MSUGT; 30.09.2026 kontrolü")
+
+R = "Üretim kayıpları"
+SF = "Safha maliyetinde üretim kayıpları"
+SP = "Sipariş maliyetinde üretim kayıpları"
+
+# ------------------------------------------------------------------ kavramlar
+P.q(R,
+    "Bir konfeksiyon atölyesinde dikim sonrası kontrolde bazı gömleklerde düğme iliklerinin hatalı açıldığı "
+    "görülmüştür. Bu gömlekler ek işçilik ve malzemeyle düzeltilip birinci kalite ürün olarak satılabilecek "
+    "durumdadır.\n\nBu gömlekler hangi üretim kaybı türüne girer?",
+    "Kusurlu mamul",
+    ["Fire", "Artık", "Iskarta (bozuk) mamul", "Hurda"],
+    "Ek işleme tabi tutularak birinci kalite mamul niteliğine dönüştürülebilen ürünler kusurlu mamuldür; ıskarta (bozuk) "
+    "mamul ise düzeltilemez ve ancak düşük fiyatla satılabilir.", zorluk="easy")
+
+P.q(R,
+    "Bir mobilya fabrikasında kereste kesimi sırasında satış değeri olan talaş ve küçük tahta parçaları ortaya "
+    "çıkmaktadır. Bu parçalar mamulün bünyesine girmemekte, ancak bir yonga levha üreticisine düşük bedelle "
+    "satılabilmektedir.\n\nBu kalıntılar hangi üretim kaybı türüne girer?",
+    "Artık",
+    ["Fire", "Kusurlu mamul", "Iskarta (bozuk) mamul", "Yan ürün"],
+    "Üretim sırasında hammaddeden arta kalan ve genellikle düşük satış değeri olan parçalar artıktır. Fire, buharlaşma veya "
+    "kırılma gibi nedenlerle değeri olmayan miktar kaybıdır.", zorluk="easy")
+
+P.q(R,
+    "Bir kimya fabrikasında çözücü üretiminde, işlem sırasında buharlaşma nedeniyle kullanılan hammaddenin bir kısmı "
+    "kaybolmaktadır. Kaybolan miktarın geri kazanımı mümkün değildir ve herhangi bir satış değeri "
+    "bulunmamaktadır.\n\nBu kayıp hangi üretim kaybı türüne girer?",
+    "Fire",
+    ["Artık", "Kusurlu mamul", "Iskarta mamul", "Hurda (satılabilir)"],
+    "Buharlaşma, sızma, kırılma gibi nedenlerle meydana gelen ve değeri olmayan miktar kayıpları firedir.", zorluk="easy")
+
+P.q(R,
+    "Bir porselen fabrikasında fırından çıkan tabakların bir kısmında çatlak ve renk hataları vardır. Bu tabaklar "
+    "onarılamamakta, ancak ikinci kalite ürün olarak birinci kalite fiyatının altında satılabilmektedir.\n\nBu tabaklar "
+    "hangi üretim kaybı türüne girer?",
+    "Iskarta mamul",
+    ["Kusurlu mamul", "Fire", "Artık", "Ortak mamul"],
+    "Kalite standartlarına uymayan, ek işlemle düzeltilemeyen ancak düşük fiyatla satılabilen ürünler ıskarta (bozuk) "
+    "mamuldür.")
+
+P.q(R,
+    "Maliyet muhasebesi eğitiminde üretim kayıplarının türleri tartışılmaktadır. Katılımcılar fire, artık, ıskarta ve "
+    "kusurlu mamulü tanımlamış, bir ifadede ise hata yapılmıştır.\n\nÜretim kayıpları ile ilgili aşağıdakilerden hangisi "
+    "yanlıştır?",
+    "Iskarta mamul ek işlemle birinci kalite olur.",
+    ["Fire değeri olmayan miktar kaybıdır.",
+     "Artık hammaddeden arta kalan parçalardır.",
+     "Kusurlu mamul yeniden işlenerek düzeltilebilir.",
+     "Normal kayıplar üretimin olağan sonucudur."],
+    "Ek işlemle birinci kaliteye dönüştürülebilen kusurlu mamuldür; ıskarta mamul düzeltilemez, ikinci kalite olarak "
+    "satılabilir.")
+
+P.q("TMS 2 md. 16",
+    "TMS 2 Stoklar standardını uygulayan bir işletmede üretim sürecinin olağan sonucu olan %2 fire ile, bir makine "
+    "arızası nedeniyle oluşan ve olağan düzeyi aşan ek %3 kayıp bulunmaktadır.\n\nBu kayıplarla ilgili aşağıdakilerden "
+    "hangisi doğrudur?",
+    "%2 maliyete girer, %3 dönem gideri yazılır.",
+    ["%5’in tamamı stok maliyetine girer.",
+     "%5’in tamamı dönem gideri yazılır.",
+     "%3 maliyete girer, %2 dönem gideri yazılır.",
+     "Kayıplar kaydedilmez, dipnotta açıklanır."],
+    "TMS 2 md. 16’ya göre anormal miktarda malzeme, işçilik veya diğer üretim maliyeti kayıpları stok maliyetine dâhil "
+    "edilmez, oluştuğu dönemde gider yazılır; olağan fire üretim maliyetinin parçasıdır.", zorluk="hard")
+
+# ------------------------------------------------------------------ normal fire birim maliyet
+P.sayisal(R,
+    "Bir işletmede 10.000 kg hammadde üretime verilmiş ve toplam 380.000 ₺ üretim maliyeti oluşmuştur. Üretim sürecinde "
+    "%5 normal fire gerçekleşmiş, kalan miktar tamamen mamule dönüşmüştür.\n\nNormal firenin maliyeti sağlam ürünlere "
+    "yüklendiğine göre mamulün kg başına maliyeti kaç ₺’dir?",
+    tl(380_000 / 9_500), secenekler(40, 38, 36.1, 42, 39.9),
+    "Sağlam ürün 10.000 × %95 = 9.500 kg’dır. Normal fire maliyeti ayrıca gider yazılmaz, sağlam ürünlere dağılır: "
+    "380.000 / 9.500 = 40 ₺/kg.", zorluk="easy")
+
+P.q(R,
+    "Bir işletmede 20.000 birim üretime başlanmış ve 1.150.000 ₺ maliyet oluşmuştur. Normal kayıp oranı %4 olup bu dönem "
+    "1.200 birim kayıp gerçekleşmiştir; kayıplar sürecin sonunda belirlenmekte ve satış değeri bulunmamaktadır.\n\n"
+    "Anormal kayıp miktarı ve maliyeti sırasıyla aşağıdakilerden hangisidir?",
+    "400 birim; 23.000 ₺",
+    ["1.200 birim; 69.000 ₺", "800 birim; 46.000 ₺", "400 birim; 24.468 ₺", "200 birim; 11.500 ₺"],
+    "Normal kayıp 20.000 × %4 = 800 birim, anormal kayıp 1.200 − 800 = 400 birimdir. Birim maliyet 1.150.000 / 20.000 = "
+    "57,5 ₺; anormal kayıp maliyeti 400 × 57,5 = 23.000 ₺ gider yazılır, normal kaybın maliyeti sağlam ürünlere "
+    "yüklenir.", zorluk="hard")
+
+P.q("MSUGT: 689 Diğer Olağandışı Gider ve Zararlar",
+    "Bir işletmede makine arızası nedeniyle oluşan 23.000 ₺ tutarındaki anormal üretim kaybı, 151 Yarı Mamuller – Üretim "
+    "hesabından çıkarılarak gider yazılacaktır. İşletme 7/A seçeneğini ve Tekdüzen Hesap Planını uygulamaktadır.\n\nBu "
+    "kayda ilişkin günlük defter kaydı aşağıdakilerden hangisidir?",
+    K([(689, 23_000)], [(151, 23_000)]),
+    [K([(730, 23_000)], [(151, 23_000)]),
+     K([(151, 23_000)], [(689, 23_000)]),
+     K([(620, 23_000)], [(152, 23_000)]),
+     K([(689, 23_000)], [(152, 23_000)])],
+    "Anormal kayıp üretim maliyetine girmez; yarı mamul hesabından çıkarılarak olağan dışı gider olarak kaydedilir: 689 "
+    "Diğer Olağandışı Gider ve Zararlar borç, 151 alacak 23.000 ₺.", zorluk="hard")
+
+# ------------------------------------------------------------------ safha: kayıplı veri seti
+kt = ("| Kalem | Miktar (birim) | Dönüşüm tamamlanma |\n|---|---|---|\n"
+      "| Dönemde üretime başlanan | 10.000 | — |\n| Tamamlanıp devredilen | 8.600 | %100 |\n"
+      "| Dönem sonu yarı mamul | 1.000 | %50 |\n| Normal kayıp | 300 | %100 |\n| Anormal kayıp | 100 | %100 |")
+KS = ("Bir safhada dönem başı stok yoktur. Kayıplar sürecin sonunda yapılan kalite kontrolde belirlenmektedir. Dönem "
+      "verileri şöyledir:\n\n" + kt + "\n\nDİMM safha başında verilmiş (200.000 ₺), dönüşüm maliyeti (190.000 ₺) üretim "
+      "boyunca eşit oluşmuştur. ")
+P.q(SF,
+    KS + "Kayıplar da eşdeğer birim hesabına ayrıca katılmaktadır. DİMM ve dönüşüm açısından eşdeğer birimler sırasıyla "
+    "aşağıdakilerden hangisidir?",
+    "10.000; 9.500",
+    ["9.600; 9.100", "10.000; 10.000", "9.600; 9.500", "9.700; 9.200"],
+    "Kayıplar sürecin sonunda belirlendiğinden tam tamamlanmıştır. DİMM: 8.600 + 1.000 + 300 + 100 = 10.000; dönüşüm: "
+    "8.600 + 1.000 × %50 + 300 + 100 = 9.500.", zorluk="hard")
+
+P.sayisal(SF,
+    "Kalite kontrolün sürecin sonunda yapıldığı bir safhada dönemde 8.600 birim tamamlanıp devredilmiş, 300 birim normal, "
+    "100 birim anormal kayıp oluşmuştur. Birim DİMM maliyeti 20 ₺, birim dönüşüm maliyeti 20 ₺’dir; normal kayıp maliyeti "
+    "tamamlanan ürünlere yüklenmektedir.\n\nSonraki safhaya devredilen ürünlerin toplam maliyeti kaç ₺’dir?",
+    tl(356_000), secenekler(356_000, 344_000, 360_000, 368_000, 348_000),
+    "Tamamlanan 8.600 × 40 = 344.000 ₺; normal kayıp 300 × 40 = 12.000 ₺ bunlara eklenir: 356.000 ₺. Anormal kayıp "
+    "(100 × 40 = 4.000 ₺) dönem gideri olur.", zorluk="hard")
+
+P.q(SF,
+    KS + "Birim DİMM ve birim dönüşüm maliyeti 20’şer ₺’dir. Anormal kayıp maliyeti ve dönem sonu yarı mamul maliyeti "
+    "sırasıyla kaç ₺’dir?",
+    "4.000; 30.000",
+    ["4.000; 40.000", "16.000; 30.000", "0; 30.000", "2.000; 20.000"],
+    "Anormal kayıp 100 × (20 + 20) = 4.000 ₺ dönem gideridir. Dönem sonu yarı mamul: DİMM 1.000 × 20 = 20.000 ₺ + dönüşüm "
+    "500 × 20 = 10.000 ₺ = 30.000 ₺. Toplam 356.000 + 4.000 + 30.000 = 390.000 ₺ katlanılan maliyete eşittir.",
+    zorluk="hard")
+
+P.q(SF,
+    "Safha maliyet sistemini uygulayan işletmede normal kayıplar üretim süreci boyunca eşit olarak oluşmakta, belirli bir "
+    "noktada tespit edilememektedir. Muhasebeci bu kayıpların eşdeğer birim hesabında nasıl ele alınacağını "
+    "değerlendirmektedir.\n\nBu durumda uygun yaklaşım aşağıdakilerden hangisidir?",
+    "Kayıp eşdeğer birime katılmaz, maliyeti sağlam ürünlere dağılır.",
+    ["Normal kayıp %100 tamamlanmış kabul edilir ve ayrıca maliyetlenir.",
+     "Normal kayıp dönem gideri yazılır.",
+     "Normal kayıp sadece dönem sonu yarı mamule yüklenir.",
+     "Normal kayıp anormal kayıp gibi ele alınır."],
+    "Kayıp süreç boyunca oluşuyorsa normal kayıp eşdeğer birim hesabından çıkarılır (yok sayılır); böylece maliyeti "
+    "tamamlanan ve yarı mamul tüm sağlam birimlere dağılır.",
+    zorluk="hard")
+
+P.q(SF,
+    "Bir safhada kalite kontrol sürecin %60’ında yapılmaktadır. Dönem sonunda dönüşüm açısından %40 tamamlanmış 1.500 "
+    "birim yarı mamul vardır; tespit edilen normal kaybın maliyeti kontrol noktasını geçen ürünler arasında "
+    "paylaştırılacaktır.\n\nDönem sonu yarı mamuller normal kayıptan pay alır mı?",
+    "Almaz; kontrol noktasına ulaşmamıştır.",
+    ["Alır; tüm yarı mamuller pay alır.",
+     "Alır; tamamlanma oranı kadar pay alır.",
+     "Normal kaybın tamamını yarı mamuller alır.",
+     "Normal kayıp dönem gideri olduğu için soru anlamsızdır."],
+    "Normal kayıp maliyeti sadece kontrol noktasını geçen ürünlere yüklenir. %40 tamamlanmış yarı mamuller %60’taki "
+    "kontrol noktasına ulaşmadığından normal kayıptan pay almaz.", zorluk="hard")
+
+P.sayisal(SF,
+    "Bir safhada dönemde 12.000 birim üretime başlanmış, 10.800 birim tamamlanmış, 800 birim dönem sonu yarı mamul olarak "
+    "kalmıştır; dönem başı stok yoktur. Normal kayıp oranı başlanan üretimin %2’sidir.\n\nAnormal kayıp miktarı kaç "
+    "birimdir?",
+    tl(12_000 - 10_800 - 800 - 240), secenekler(160, 400, 240, 0, 560),
+    "Toplam kayıp 12.000 − 10.800 − 800 = 400 birim; normal kayıp 12.000 × %2 = 240 birim; anormal kayıp 400 − 240 = "
+    "160 birim.", zorluk="easy")
+
+P.q(SF,
+    "Bir safhada normal kayıp oranı tamamlanan üretimin %5’i olarak belirlenmiştir. Bu dönem 7.600 birim tamamlanmış ve "
+    "320 birim kayıp oluşmuştur; kayıp sürecin sonunda belirlenmektedir.\n\nKaybın normal ve anormal kısımlarının dağılımı "
+    "aşağıdakilerden hangisidir?",
+    "Normal 320, anormal 0",
+    ["Normal 320, anormal 60", "Normal 300, anormal 20", "Normal 0, anormal 320", "Normal 380, anormal 60"],
+    "Normal kayıp sınırı 7.600 × %5 = 380 birimdir. Gerçekleşen 320 birim bu sınırın altında kaldığından kaybın tamamı "
+    "(320 birim) normaldir; anormal kayıp yoktur.", zorluk="hard")
+
+# ------------------------------------------------------------------ artık ve ıskarta satışı
+P.q(R,
+    "Bir metal eşya işletmesinde ay içinde üretimden çıkan sac kırpıntıları hurdacıya 18.000 ₺’ye satılmıştır. Kırpıntılar "
+    "belirli bir siparişle ilişkilendirilememekte ve tutar önemsiz kabul edilmektedir.\n\nArtık satış gelirinin maliyet "
+    "muhasebesindeki uygun işlemi aşağıdakilerden hangisidir?",
+    "Genel üretim giderlerinden düşülür.",
+    ["Belirli bir siparişin maliyetinden düşülür.",
+     "Satış hasılatına eklenir.",
+     "Özkaynaklarda yedek olarak ayrılır.",
+     "Artık satışları kaydedilmez."],
+    "Belirli bir siparişe izlenemeyen önemsiz artık satış gelirleri genel üretim giderlerinden düşülerek tüm üretime "
+    "yansıtılır (veya diğer olağan gelir yazılır); belirli bir siparişe aitse o siparişin maliyetinden düşülür.")
+
+P.q(R,
+    "Belirli bir müşteri siparişinin üretiminde kullanılan özel alaşımlı çelikten arta kalan kırpıntılar 6.500 ₺’ye "
+    "satılmıştır. Kırpıntılar sadece bu siparişten kaynaklanmaktadır.\n\nBu satış gelirinin işlemi ile ilgili "
+    "aşağıdakilerden hangisi doğrudur?",
+    "Siparişten düşülür.",
+    ["Tüm siparişlerin GÜG’ünden düşülür.",
+     "Olağan dışı gelir yazılır.",
+     "Siparişin satış fiyatına eklenir.",
+     "Diğer siparişlere eşit dağıtılır."],
+    "Belirli bir siparişe izlenebilen artık satış gelirleri o siparişin maliyetinden düşülür; böylece sipariş maliyeti "
+    "gerçekçi hesaplanır.")
+
+isk_sayi, isk_nsd = 50, 30
+P.sayisal(R,
+    "Bir işletmede 1.000 birim üretim için 250.000 ₺ maliyet oluşmuştur. Kalite kontrolde 50 birim ıskarta çıkmış, bunlar "
+    "birim başına 30 ₺ net satış değeriyle ikinci kalite olarak satılabilecektir; ıskarta oranı normal "
+    "kabul edilmektedir.\n\nSağlam ürünlerin birim maliyeti kaç ₺’dir?",
+    tl((250_000 - isk_sayi * isk_nsd) / 950), secenekler(261.58, 250, 263.16, 248.5, 235),
+    "Iskartalar net satış değeriyle (50 × 30 = 1.500 ₺) stoka alınır; kalan 248.500 ₺ sağlam 950 birime yüklenir: "
+    "248.500 / 950 ≈ 261,58 ₺.", zorluk="hard")
+
+P.q(R,
+    "Bir işletmede normal ıskarta ürünler net satış değerleriyle stoka alınmakta, anormal ıskartaların maliyeti ise ayrıca "
+    "izlenmektedir. Bu dönem ıskartaların bir kısmı hatalı hammadde partisi nedeniyle normal oranın üzerinde "
+    "gerçekleşmiştir.\n\nAnormal ıskartaların maliyeti ile net satış değeri arasındaki fark nasıl muhasebeleştirilir?",
+    "Olağan dışı zarar olarak yazılır.",
+    ["Sağlam ürünlerin maliyetine eklenir.",
+     "Genel üretim giderlerine eklenir.",
+     "Ikinci kalite stoklara eklenir.",
+     "Gelecek dönemlere ertelenir."],
+    "Anormal ıskartaların net satış değeri stoka alınır, maliyet ile net satış değeri arasındaki fark üretim maliyetine "
+    "yüklenmez; olağan dışı zarar olarak dönem gideri yazılır.", zorluk="hard")
+
+# ------------------------------------------------------------------ kusurlu mamul
+P.q(R,
+    "Bir işletmede üretimin olağan bir sonucu olarak her ay bazı ürünlerde kusur çıkmakta ve bunlar yeniden işlenmektedir. "
+    "Bu ay yeniden işleme için 14.000 ₺ malzeme ve 9.000 ₺ işçilik harcanmıştır; kusurlar belirli bir siparişle "
+    "ilişkili değildir.\n\nYeniden işleme maliyetleri nasıl muhasebeleştirilir?",
+    "GÜG’e eklenip tüm üretime dağıtılır.",
+    ["Kusurlu ürünlerin bulunduğu siparişe eklenir.",
+     "Olağan dışı gider olarak yazılır.",
+     "Genel yönetim gideri olarak yazılır.",
+     "Kusurlu ürünlerin satış fiyatından düşülür."],
+    "Üretimin olağan sonucu olan ve belirli bir siparişe bağlı olmayan kusurların yeniden işleme maliyeti GÜG’e dâhil "
+    "edilerek tüm üretime dağıtılır.")
+
+P.q(R,
+    "Bir işletmede bir makinenin yanlış ayarlanması sonucu bir partideki tüm ürünler kusurlu çıkmış ve yeniden işleme "
+    "için 42.000 ₺ harcanmıştır. Bu durum işletmenin olağan üretim koşullarının dışındadır.\n\nYeniden işleme maliyeti "
+    "ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Anormal kayıp olarak gider yazılır.",
+    ["GÜG’e eklenerek tüm üretime dağıtılır.",
+     "İlgili partinin mamul maliyetine eklenir.",
+     "Gelecek dönem gideri olarak ertelenir.",
+     "Ürünlerin satış fiyatına eklenir."],
+    "Olağan dışı nedenlerden kaynaklanan yeniden işleme maliyetleri anormal kayıp sayılır; üretim maliyetine "
+    "yüklenmez, oluştuğu dönemde gider yazılır.")
+
+P.sayisal(R,
+    "Bir işletmede 2.000 birimlik partide 100 birim kusurlu çıkmış, bunlar birim başına 25 ₺ ek maliyetle yeniden "
+    "işlenerek birinci kaliteye getirilmiştir. Kusurlar belirli bir müşterinin özel şartnamesinden kaynaklanmaktadır; "
+    "partinin ilk maliyeti 180.000 ₺’dir.\n\nPartinin birim maliyeti kaç ₺’dir?",
+    tl((180_000 + 100 * 25) / 2_000), secenekler(91.25, 90, 96.05, 92.5, 95),
+    "Belirli siparişe özgü yeniden işleme maliyeti o partiye yüklenir: 180.000 + 100 × 25 = 182.500 ₺; 2.000 birimin "
+    "tamamı birinci kalite olduğundan birim maliyet 182.500 / 2.000 = 91,25 ₺.", zorluk="hard")
+
+# ------------------------------------------------------------------ sipariş: bozuk ürün
+P.q(SP,
+    "Sipariş maliyet sistemini uygulayan işletmede tüm siparişlerde olağan olarak %2 bozuk ürün çıkmaktadır. İşletme "
+    "GÜG yükleme oranını belirlerken bozuk ürünlerin tahmini maliyetini de dikkate almıştır. Bu ay S-5 siparişinde "
+    "bozuk ürünlerin maliyeti 3.000 ₺ olmuştur.\n\nBu tutar ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "GÜG’e aktarılır; S-5’e ayrıca yüklenmez.",
+    ["S-5 siparişinin maliyetine eklenir.",
+     "Olağan dışı zarar olarak yazılır.",
+     "Tüm siparişlere eşit dağıtılır.",
+     "Müşteriye fatura edilir."],
+    "Tüm üretimin olağan sonucu olan bozuk ürün maliyeti GÜG yükleme oranına dâhil edildiğinden bozuk ürün maliyeti GÜG "
+    "hesabına aktarılır; aksi hâlde S-5’e hem oranla hem doğrudan iki kez yüklenmiş olurdu.", zorluk="hard")
+
+P.q(SP,
+    "Sipariş maliyet sisteminde bir müşteri, ürünlerin çok dar toleranslarla üretilmesini istemiş ve bu nedenle S-9 "
+    "siparişinde 6.000 ₺ maliyetli bozuk ürün çıkmıştır. Bu tür bozukluk diğer siparişlerde yaşanmamaktadır.\n\nBozuk ürün "
+    "maliyeti nasıl işlenir?",
+    "S-9 siparişinin maliyetinde bırakılır.",
+    ["GÜG’e aktarılarak tüm siparişlere dağıtılır.",
+     "Dönem gideri olarak yazılır.",
+     "Diğer siparişlerden düşülür.",
+     "Genel yönetim giderine aktarılır."],
+    "Belirli bir siparişin özel şartlarından kaynaklanan bozuk ürün maliyeti o siparişin maliyetinde kalır; müşteri "
+    "fiyatlandırmasında da dikkate alınır.")
+
+P.sayisal(SP,
+    "Sipariş maliyet sisteminde S-12 siparişinin maliyeti 96.000 ₺’dir. Siparişte olağan olarak 20 bozuk ürün çıkmış, "
+    "bunların net satış değeri toplam 2.000 ₺’dir. Bozukluk tüm siparişlerde görülmekte ve GÜG yükleme oranında dikkate "
+    "alınmaktadır; bozuk ürünlerin kalan maliyeti 3.000 ₺’dir.\n\nS-12 siparişinin düzeltilmiş maliyeti kaç ₺’dir?",
+    tl(96_000 - 2_000 - 3_000), secenekler(91_000, 94_000, 96_000, 93_000, 101_000),
+    "Bozuk ürünler net satış değeriyle (2.000 ₺) stoka, kalan maliyetleri (3.000 ₺) GÜG’e aktarılır; S-12’de 96.000 − "
+    "2.000 − 3.000 = 91.000 ₺ kalır.", zorluk="hard")
+
+# ------------------------------------------------------------------ çeşitli
+P.q(R,
+    "Bir işletmede normal kayıp düzeyi yönetim tarafından geçmiş verilere dayanarak belirlenmektedir. Yönetim, normal "
+    "kaybı olabildiğince yüksek belirleyerek birim maliyetleri daha yüksek, anormal kayıpları daha düşük göstermeyi "
+    "düşünmektedir.\n\nBu yaklaşım ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Verimsizliği maliyette gizler.",
+    ["Maliyetleri daha doğru hesaplar.",
+     "TMS 2’nin öngördüğü bir uygulamadır.",
+     "Anormal kayıpları gerçekçi gösterir.",
+     "Stok değerini düşürür."],
+    "Normal kayıp düzeyinin gerçek dışı yüksek belirlenmesi, aslında anormal olan kayıpları mamul maliyetine yükleyerek "
+    "verimsizliği gizler ve stokları şişirir; TMS 2 anormal kayıpların maliyete girmemesini öngörür.", zorluk="hard")
+
+P.sayisal(R,
+    "Bir şeker fabrikasında 50.000 kg şeker pancarından 7.500 kg şeker elde edilmesi beklenmektedir (normal verim %15). "
+    "Bu dönem 50.000 kg pancardan 7.200 kg şeker elde edilmiştir; toplam üretim maliyeti 216.000 ₺’dir.\n\nNormal verime "
+    "göre kg başına standart şeker maliyeti kaç ₺’dir?",
+    tl(216_000 / 7_500), secenekler(28.8, 30, 4.32, 30.6, 27.6),
+    "Normal verimle 7.500 kg şeker beklenir: 216.000 / 7.500 = 28,8 ₺/kg. Gerçekleşen 7.200 kg ile hesaplanan 30 ₺/kg "
+    "birim maliyet, verim düşüklüğünü (anormal kayıp) maliyete katmış olur.", zorluk="hard")
+
+P.q(R,
+    "Bir işletmenin üretim sürecinde hammadde tartılarak verilmekte ve mamul miktarı ölçülmektedir. Muhasebeci, üretime "
+    "verilen ve elde edilen miktarlar arasındaki farkın analizini yapmak istemektedir.\n\nBu analiz için yapılması gereken "
+    "temel işlem aşağıdakilerden hangisidir?",
+    "Kaybı normal ve anormal diye ayırmak",
+    ["Kaybın tamamını dönem gideri yazmak",
+     "Kaybın tamamını sağlam ürünlere yüklemek",
+     "Kaybı satış giderlerine aktarmak",
+     "Kaybı gelecek dönemlere ertelemek"],
+    "Kayıpların muhasebeleştirilmesinde ilk adım toplam kaybın normal (maliyete yüklenen) ve anormal (dönem gideri "
+    "yazılan) kısımlara ayrılmasıdır.", zorluk="easy")
+
+P.q(R,
+    "Bir ekmek fabrikasında hamurun pişirilmesi sırasında su kaybı nedeniyle 1.000 kg hamurdan 850 kg ekmek elde "
+    "edilmektedir. Bu oran sektörde olağandır ve her üretim partisinde benzer şekilde oluşmaktadır.\n\nBu kaybın "
+    "muhasebeleştirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Normal firedir; maliyeti sağlam ürünlere dağılır.",
+    ["Anormal kayıptır; dönem gideri yazılır.",
+     "Artıktır; satış geliri maliyetten düşülür.",
+     "Kusurlu mamuldür; yeniden işlenir.",
+     "Iskarta mamuldür; ikinci kalite satılır."],
+    "Üretim sürecinin doğasından kaynaklanan ve olağan oranda gerçekleşen su kaybı normal firedir; maliyeti ayrıca "
+    "gösterilmez, sağlam ürünlerin birim maliyetine dağılır.", zorluk="easy")
+
+P.q(SF,
+    "Safha maliyet sisteminde kalite kontrol sürecin sonunda yapılmaktadır. Dönem içinde tamamlanan ürünler ile dönem "
+    "sonu yarı mamuller bulunmaktadır; normal kayıp maliyeti paylaştırılacaktır.\n\nNormal kaybın maliyeti hangi ürünlere "
+    "yüklenir?",
+    "Sadece tamamlanan ürünlere",
+    ["Sadece dönem sonu yarı mamullere",
+     "Tamamlanan ve yarı mamullere eşit olarak",
+     "Ürünlere yüklenmez; dönem gideri yazılır",
+     "Anormal kayıplara"],
+    "Kontrol sürecin sonunda yapılıyorsa kontrol noktasını sadece tamamlanan ürünler geçmiştir; normal kayıp maliyeti "
+    "tamamen tamamlanan ürünlere yüklenir, yarı mamuller pay almaz.")
+
+P.sayisal(SF,
+    "Kalite kontrolün sürecin sonunda yapıldığı bir safhada normal kayıp 250 birimdir. Birim DİMM 16 ₺, birim dönüşüm "
+    "maliyeti 24 ₺’dir; kayıplar kontrol noktasında tamamen tamamlanmış durumdadır.\n\nNormal kaybın toplam maliyeti kaç "
+    "₺’dir?",
+    tl(250 * 40), secenekler(10_000, 4_000, 6_000, 5_000, 12_500),
+    "Kayıplar kontrol noktasında %100 tamamlanmıştır: 250 × (16 + 24) = 10.000 ₺; bu tutar tamamlanan ürünlere eklenir.",
+    zorluk="easy")
+
+P.q(R,
+    "Bir işletme üretim kayıplarını azaltmak için hammadde tedarikçisini değiştirmiş, kontrol noktasını sürecin başına "
+    "almış ve çalışanlara eğitim vermiştir. Bu önlemler için 120.000 ₺ harcanmıştır.\n\nBu harcamalar hangi kalite "
+    "maliyeti sınıfına girer?",
+    "Önleme maliyetleri",
+    ["İç başarısızlık maliyetleri", "Dış başarısızlık maliyetleri", "Anormal kayıp maliyetleri",
+     "Değerlendirme maliyetleri"],
+    "Kusurların oluşmasını baştan engellemeye yönelik tedarikçi seçimi, süreç iyileştirme ve eğitim harcamaları önleme "
+    "maliyetleridir.")
+
+P.q(R,
+    "Bir işletmede aynı dönem içinde üç tür kayıp yaşanmıştır: sürecin doğası gereği %3 fire, satış değeri olan kırpıntılar "
+    "ve düzeltilip birinci kaliteye dönüştürülen ürünler. Muhasebeci her birinin işlemini belirlemektedir.\n\nAşağıdaki "
+    "eşleştirmelerden hangisi yanlıştır?",
+    "Normal fire – dönem gideri olarak yazılır",
+    ["Artık – satış geliri maliyetten düşülür",
+     "Kusurlu mamul – yeniden işleme maliyeti eklenir",
+     "Anormal kayıp – dönem gideri yazılır",
+     "Iskarta – net satış değeriyle stoka alınır"],
+    "Normal fire üretimin olağan maliyetidir ve sağlam ürünlere dağılır; dönem gideri yazılan anormal kayıplardır.")
+
+P.sayisal(R,
+    "Bir işletmede 8.000 kg hammadde üretime verilmiş, kg fiyatı 45 ₺’dir. Normal fire oranı %2,5, gerçekleşen fire 300 "
+    "kg’dır; fire değersizdir ve tüm maliyet hammadde maliyetinden oluşmaktadır.\n\nAnormal firenin maliyeti kaç ₺’dir?",
+    tl((300 - 200) * 45), secenekler(4_500, 13_500, 9_000, 3_000, 0),
+    "Normal fire 8.000 × %2,5 = 200 kg; anormal fire 300 − 200 = 100 kg; maliyeti 100 × 45 = 4.500 ₺ dönem gideri "
+    "yazılır.", zorluk="easy")
+
+P.q(SF,
+    "Safha maliyet sisteminde FIFO yöntemi uygulanmaktadır. Kontrol noktası sürecin sonundadır ve bu dönem hem dönem "
+    "başı yarı mamulden gelen hem de dönemde başlanan ürünlerde normal kayıp oluşmuştur.\n\nFIFO’da normal kayıp "
+    "maliyeti ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Tamamlanan ürünlere yüklenir.",
+    ["Sadece dönem başı yarı mamule yüklenir.",
+     "Dönem sonu yarı mamule yüklenir.",
+     "Dönem gideri yazılır.",
+     "Eşdeğer birim hesabına katılmaz, ihmal edilir."],
+    "Yöntem FIFO da olsa normal kayıp maliyeti kontrol noktasını geçen ürünlere, yani sürecin sonunda kontrol "
+    "yapılıyorsa tamamlanan ürünlere yüklenir.")
+
+P.sayisal(R,
+    "Bir işletmede ıskarta ürünler ikinci kalite olarak satılmaktadır. Bu dönem 120 birim ıskartanın tahmini satış fiyatı "
+    "birim başına 60 ₺, satış için birim başına 8 ₺ gider öngörülmektedir.\n\nIskartaların stoka alınacağı net satış "
+    "değeri kaç ₺’dir?",
+    tl(120 * 52), secenekler(6_240, 7_200, 960, 6_000, 8_160),
+    "Net satış değeri = (satış fiyatı − satış gideri) × miktar = (60 − 8) × 120 = 6.240 ₺.", zorluk="easy")
+
+P.q(R,
+    "Bir gıda işletmesinde son kullanma tarihi geçtiği için imha edilen mamullerin maliyeti 38.000 ₺’dir. İmha tutanağa "
+    "bağlanmış ve olay olağan dışı bir depolama hatasından kaynaklanmıştır.\n\nBu tutarın muhasebeleştirilmesi ile ilgili "
+    "aşağıdakilerden hangisi doğrudur?",
+    "Olağan dışı gider ve zarar olarak kaydedilir.",
+    ["Satılan mamul maliyetine eklenir.",
+     "Kalan mamullerin maliyetine eklenir.",
+     "Genel üretim giderlerine eklenir.",
+     "Gelecek dönem gideri olarak ertelenir."],
+    "Olağan dışı nedenle imha edilen mamullerin maliyeti diğer ürünlere yüklenmez; olağan dışı gider ve zarar olarak (THP "
+    "689) kaydedilir.")
+
+P.q(R,
+    "Bir işletme artık, fire ve ıskartaların miktarını her ay raporlamakta, ancak bunları sadece toplam üretim maliyetinin "
+    "içinde bırakmaktadır. Yönetim bu uygulamanın zayıf yönünü sormaktadır.\n\nBu uygulamanın temel sakıncası "
+    "aşağıdakilerden hangisidir?",
+    "Anormal kayıplar maliyette gizlenir.",
+    ["Toplam maliyet eksik hesaplanır.",
+     "Sağlam ürün maliyeti düşük çıkar.",
+     "Artık satış gelirleri iki kez kaydedilir.",
+     "Normal fire dönem gideri yazılır."],
+    "Kayıpların normal ve anormal ayrımı yapılmadan maliyete bırakılması, verimsizlikten doğan anormal kayıpların mamul "
+    "maliyetine yüklenmesine ve gizlenmesine yol açar.")
+
+P.sayisal(SF,
+    "Kontrolün sürecin %50’sinde yapıldığı bir safhada dönem sonu yarı mamuller dönüşüm açısından %70 tamamlanmıştır. "
+    "Tamamlanan ürün 9.000 birim, dönem sonu yarı mamul 1.000 birim, normal kayıp 200 birimdir ve kayıp maliyeti 6.000 "
+    "₺’dir.\n\nNormal kaybın dönem sonu yarı mamullere düşen payı kaç ₺’dir?",
+    tl(6_000 * 1_000 // 10_000), secenekler(600, 0, 420, 3_000, 6_000),
+    "Yarı mamuller (%70) kontrol noktasını (%50) geçtiğinden normal kayıptan pay alır. Paylaştırma kontrolü geçen birim "
+    "sayısına göre: 6.000 × 1.000 / (9.000 + 1.000) = 600 ₺.", zorluk="hard")
+
+P.q(R,
+    "Bir işletmede üretimden çıkan kırpıntıların satış değeri önemli tutardadır ve her dönem düzenli olarak satılmaktadır. "
+    "Muhasebe müdürü bu kırpıntıların ortaya çıktığı anda stoka alınmasını önermektedir.\n\nBu yaklaşımda kırpıntılar "
+    "hangi değerle stoka alınır?",
+    "Net satış değeriyle",
+    ["Üretim maliyetiyle", "Sıfır değerle", "Hammadde alış fiyatıyla", "Ana ürün birim maliyetiyle"],
+    "Önemli satış değeri olan artıklar oluştukları anda net satış değeriyle stoka alınabilir ve bu tutar üretim "
+    "maliyetinden düşülür.", zorluk="easy")
+
+P.q(SP,
+    "Sipariş maliyet sisteminde normal bozukluk oranı bütün işlerde benzerdir ve GÜG yükleme oranına dâhil edilmiştir. "
+    "Muhasebeci bozuk ürünlerin net satış değerini stoka almış, kalan maliyeti yanlışlıkla ilgili siparişte bırakmıştır.\n\n"
+    "Bu hatanın sonucu aşağıdakilerden hangisidir?",
+    "Siparişe bozukluk maliyeti iki kez yüklenmiş olur.",
+    ["Sipariş maliyeti eksik hesaplanır.",
+     "Toplam GÜG eksik yüklenir.",
+     "Bozuk ürün stoku fazla gösterilir.",
+     "Anormal kayıp gizlenir."],
+    "Normal bozukluk maliyeti yükleme oranına dâhil edildiğinden sipariş GÜG yoluyla bu maliyeti zaten almıştır; kalan "
+    "maliyetin ayrıca siparişte bırakılması aynı maliyetin iki kez yüklenmesine yol açar.", zorluk="hard")
+
+P.sayisal(R,
+    "Bir işletmede 5.000 birim üretime başlanmıştır. Normal kayıp oranı %4 olup bu dönem 260 birim kayıp oluşmuştur; "
+    "birim maliyet 50 ₺’dir ve kayıplar sürecin sonunda tespit edilmektedir.\n\nSağlam ürünlere yüklenecek normal kayıp "
+    "maliyeti kaç ₺’dir?",
+    tl(200 * 50), secenekler(10_000, 13_000, 3_000, 12_000, 0),
+    "Normal kayıp 5.000 × %4 = 200 birim; maliyeti 200 × 50 = 10.000 ₺ sağlam ürünlere yüklenir. Anormal 60 birimin "
+    "maliyeti (3.000 ₺) dönem gideridir.")
+
+P.q(R,
+    "Bir işletmede ürün birim maliyeti 80 ₺ olarak hesaplanmaktadır. Bu hesaplamada normal fire maliyetinin sağlam "
+    "ürünlere dağıtılmasıyla birim maliyet 78 ₺’den 80 ₺’ye yükselmiştir.\n\nBu artışla ilgili aşağıdakilerden hangisi "
+    "doğrudur?",
+    "Olağan fire nedeniyle sağlam ürün maliyeti artar.",
+    ["Anormal kayıp nedeniyle birim maliyet artmıştır.",
+     "Birim maliyet 78 ₺ olarak raporlanmalıdır.",
+     "Artış dönem gideri olarak ayrılmalıdır.",
+     "Fire maliyeti satış giderine eklenmelidir."],
+    "Normal fire maliyeti ayrıca gider yazılmaz; sağlam ürünlerin birim maliyetini artırır. Bu nedenle 80 ₺ doğru birim "
+    "maliyettir.")
+
+P.q(SF,
+    "Safha maliyetinde bir işletme, kayıpları eşdeğer birim hesabında tamamen yok saymaktadır (ne normal ne anormal "
+    "kaybı ayrıca hesaplamaktadır). Bu dönem önemli tutarda anormal kayıp oluşmuştur.\n\nBu uygulamanın sonucu "
+    "aşağıdakilerden hangisidir?",
+    "Anormal kayıp sağlam ürünlere yüklenir.",
+    ["Anormal kayıp doğru biçimde gider yazılır.",
+     "Birim maliyet düşük hesaplanır.",
+     "Toplam maliyet azalır.",
+     "Normal kayıp dönem gideri olur."],
+    "Kayıplar eşdeğer birimden çıkarıldığında maliyetleri sağlam ürünlere dağılır; anormal kayıp da ayrı "
+    "hesaplanmadığı için dönem gideri yerine mamul maliyetine yüklenmiş olur.")
+
+P.sayisal(R,
+    "Bir işletmede 4.000 birim üretimin toplam maliyeti 320.000 ₺’dir. Üretimde 200 birim kusurlu çıkmış ve olağan kabul "
+    "edilen bu kusurların yeniden işleme maliyeti 6.000 ₺ olmuştur; kusurlular düzeltildikten sonra birinci kalite "
+    "ürüne dönüşmüştür.\n\nGenel yeniden işleme olarak GÜG’e yüklendiği varsayılırsa bu partinin birim maliyeti kaç "
+    "₺’dir?",
+    tl(326_000 / 4_000), secenekler(81.5, 80, 84.21, 85.79, 81),
+    "Yeniden işleme maliyeti üretim maliyetine (GÜG yoluyla) girer ve tüm ürünler birinci kalite olduğundan 4.000 birime "
+    "dağılır: (320.000 + 6.000) / 4.000 = 81,5 ₺.", zorluk="hard")
+
+P.q(R,
+    "Bir işletme kayıp analizini yaparken fire, artık, ıskarta ve kusurlu mamul arasındaki farkları gözden geçirmektedir. "
+    "Bunlardan biri, ürün tamamlandıktan sonra ortaya çıkan ve satış değeri olan ancak kalite düşük ürünleri "
+    "ifade etmektedir.\n\nBu tanım hangi kavrama aittir?",
+    "Iskarta mamul",
+    ["Fire", "Artık", "Kusurlu mamul", "Yan ürün"],
+    "Tamamlandıktan sonra kalite standardına uymadığı anlaşılan, düzeltilemeyen ancak düşük fiyatla satılabilen ürün "
+    "ıskarta mamuldür.", zorluk="easy")
+
+P.sayisal(SF,
+    "Kayıpların sürecin sonunda belirlendiği safhada dönemde 15.000 birim başlanmış, 13.800 birim tamamlanmış, 900 birim "
+    "yarı mamul kalmıştır (dönem başı stok yoktur). Normal kayıp tamamlanan ürünlerin %1,5’idir.\n\nAnormal kayıp miktarı "
+    "kaç birimdir?",
+    tl(300 - 207), secenekler(93, 300, 207, 225, 0),
+    "Toplam kayıp 15.000 − 13.800 − 900 = 300 birim; normal kayıp 13.800 × %1,5 = 207 birim; anormal kayıp 93 birim.",
+    zorluk="hard")
+
+P.q("TMS 2 md. 16",
+    "TMS 2 Stoklar’a göre stok maliyetine dâhil edilmeyen ve oluştuğu dönemde gider yazılması gereken kalemler "
+    "tartışılmaktadır. Bir üretim işletmesinde bu dönem olağan dışı bir sel nedeniyle ambarda hammadde kaybı ve normal "
+    "düzeyi aşan üretim hurdası oluşmuştur.\n\nBu kayıplar ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Anormal kayıplar olarak dönem gideri yazılır.",
+    ["Stok maliyetine eklenir.",
+     "Normal kapasite oranında maliyete girer.",
+     "Satış maliyetinin bir parçası olarak ertelenir.",
+     "Sadece dipnotta açıklanır."],
+    "TMS 2 md. 16’ya göre anormal miktarda hurda olmuş malzeme, işçilik veya diğer üretim maliyetleri stok maliyetine "
+    "dâhil edilmez, oluştuğu dönemde gider yazılır.")
+
+P.sayisal(R,
+    "Bir işletmede 12.000 litre çözücü üretimi için 480.000 ₺ maliyet oluşmuş, sürecin sonunda %4 normal buharlaşma "
+    "kaybı yaşanmıştır. Kayıp değersizdir ve tamamen normaldir.\n\nSağlam ürünün litre başına maliyeti kaç ₺’dir?",
+    tl(480_000 / 11_520), secenekler(41.67, 40, 38.4, 43.33, 41.6),
+    "Sağlam ürün 12.000 × %96 = 11.520 litre; birim maliyet 480.000 / 11.520 ≈ 41,67 ₺. Normal kayıp maliyeti sağlam "
+    "ürünlere dağılır.", zorluk="easy")
+
+P.q(R,
+    "Maliyet muhasebesi uygulamasında normal ve anormal kayıp ayrımının gerekçeleri tartışılmaktadır. Katılımcılar bu "
+    "ayrımın stok değerlemesi, fiyatlandırma ve performans değerlendirmesi üzerindeki etkilerini "
+    "değerlendirmiştir.\n\nNormal ve anormal kayıp ayrımının amacı aşağıdakilerden hangisi değildir?",
+    "Toplam üretim maliyetini azaltmak",
+    ["Stokların gerçekçi değerlenmesini sağlamak",
+     "Verimsizlikleri görünür kılmak",
+     "Maliyet kontrolüne bilgi sağlamak",
+     "Birim maliyetleri olağan koşullara göre ölçmek"],
+    "Ayrım toplam katlanılan maliyeti değiştirmez; sadece anormal kısmın mamul maliyeti yerine dönem gideri olarak "
+    "raporlanmasını sağlar. Amaç doğru stok değerlemesi, verimsizliğin görünür kılınması ve kontroldür.")
+
+P.q(SF,
+    "Kontrol sürecin %80’inde yapılan bir safhada kaybın tespit edildiği anda birimler dönüşüm açısından %80 "
+    "tamamlanmış durumdadır. 500 birim kayıp oluşmuştur ve DİMM safha başında verilmektedir.\n\nKayıpların DİMM ve dönüşüm "
+    "açısından eşdeğer birimleri sırasıyla aşağıdakilerden hangisidir?",
+    "500; 400",
+    ["400; 500", "500; 500", "0; 400", "400; 400"],
+    "DİMM safha başında verildiğinden kayıplar DİMM açısından tamdır: 500. Dönüşüm açısından kontrol noktası olan %80’de "
+    "tespit edildiğinden 500 × %80 = 400 eşdeğer birim.", zorluk="hard")
+
+P.sayisal(R,
+    "Bir işletmede toplam 600.000 ₺ maliyetle 10.000 birim üretime başlanmıştır. 9.600 birim sağlam ürün elde edilmiş, "
+    "normal kayıp 300 birim, anormal kayıp 100 birimdir; kayıplar sürecin sonunda tespit edilmekte ve değersizdir.\n\n"
+    "Sağlam ürünlerin toplam maliyeti kaç ₺’dir?",
+    tl(9_600 * 60 + 300 * 60), secenekler(594_000, 576_000, 600_000, 588_000, 582_000),
+    "Birim maliyet 600.000 / 10.000 = 60 ₺. Sağlam ürünler 9.600 × 60 = 576.000 ₺ + normal kayıp 300 × 60 = 18.000 ₺ = "
+    "594.000 ₺. Anormal kayıp 6.000 ₺ dönem gideridir.", zorluk="hard")
+
+P.q(R,
+    "Bir işletmede ürünler üretimin sonunda kontrol edilmektedir. Kusurlu çıkan ürünlerin düzeltilmesi mümkün olmakla "
+    "birlikte, düzeltme maliyeti ürünün ikinci kalite satış değerinden kazanılacak farktan fazladır.\n\nBu durumda "
+    "ekonomik açıdan uygun karar aşağıdakilerden hangisidir?",
+    "Ürünleri düzeltmeden ikinci kalite satmak",
+    ["Ürünleri maliyete bakmadan düzeltmek",
+     "Ürünleri imha edip dönem gideri yazmak",
+     "Ürünleri birinci kalite olarak satmak",
+     "Düzeltme maliyetini GÜG’e eklemek"],
+    "Düzeltmenin ek maliyeti, düzeltme sonucu elde edilecek ek gelirden fazlaysa düzeltme ekonomik değildir; ürünler "
+    "ıskarta olarak ikinci kalite satılır.")
+
+P.sayisal(R,
+    "Bir işletmede ay içinde üretimden 2.400 kg hurda çıkmış ve kg’ı 7,5 ₺’den satılmıştır. Hurda belirli bir siparişe ait "
+    "değildir ve satış geliri GÜG’den düşülmektedir. Ayın gerçekleşen GÜG’ü 410.000 ₺’dir.\n\nHurda satışı sonrası net GÜG "
+    "kaç ₺’dir?",
+    tl(410_000 - 18_000), secenekler(392_000, 410_000, 428_000, 402_500, 380_000),
+    "Hurda satış geliri 2.400 × 7,5 = 18.000 ₺ GÜG’den düşülür: 410.000 − 18.000 = 392.000 ₺.", zorluk="easy")
+
+P.q(SF,
+    "Kontrolün sürecin sonunda yapıldığı bir safhada normal kayıp maliyeti 12.000 ₺, anormal kayıp maliyeti 4.000 ₺ olarak "
+    "hesaplanmıştır. İşletme 7/A seçeneğini uygulamaktadır.\n\nBu tutarların muhasebeleştirilmesi ile ilgili "
+    "aşağıdakilerden hangisi doğrudur?",
+    "12.000 ₺ mamul maliyetine, 4.000 ₺ olağan dışı gidere yazılır.",
+    ["16.000 ₺’nin tamamı mamul maliyetine yazılır.",
+     "16.000 ₺’nin tamamı olağan dışı gidere yazılır.",
+     "4.000 ₺ mamul maliyetine, 12.000 ₺ olağan dışı gidere yazılır.",
+     "12.000 ₺ GÜG’e, 4.000 ₺ satış giderine yazılır."],
+    "Normal kayıp maliyeti tamamlanan ürünlerle birlikte 152 Mamuller hesabına aktarılır; anormal kayıp 151’den çıkarılıp "
+    "689 Diğer Olağandışı Gider ve Zararlar hesabına yazılır.", zorluk="hard")
+
+P.q(R,
+    "Bir işletmede bir parti üründe kontrol sırasında kusur tespit edilmiş, ancak kusurun nedeni olarak bir tedarikçiden "
+    "alınan hatalı hammadde gösterilmiştir. Tedarikçi, sözleşme gereği yeniden işleme maliyetini (25.000 ₺) karşılamayı "
+    "kabul etmiştir.\n\nBu yeniden işleme maliyeti ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "Tedarikçiden alacak yazılır.",
+    ["GÜG’e eklenerek tüm üretime dağıtılır.",
+     "İlgili partinin maliyetine eklenir.",
+     "Olağan dışı gider olarak yazılır.",
+     "Satılan mamul maliyetine eklenir."],
+    "Maliyeti tedarikçi karşılayacağından yeniden işleme tutarı işletmenin maliyeti olmaz; tedarikçiden alacak olarak "
+    "izlenir.")
+
+P.sayisal(SF,
+    "Kayıpların sürecin sonunda belirlendiği bir safhada DİMM eşdeğer birimi 12.500, dönüşüm eşdeğer birimi 12.000’dir "
+    "(kayıplar dâhil). Toplam DİMM 250.000 ₺, toplam dönüşüm maliyeti 420.000 ₺’dir.\n\nBir birimin tam maliyeti kaç "
+    "₺’dir?",
+    tl(250_000 / 12_500 + 420_000 / 12_000), secenekler(55, 53.6, 56, 35, 20),
+    "Birim DİMM 250.000 / 12.500 = 20 ₺; birim dönüşüm 420.000 / 12.000 = 35 ₺; tam birim maliyet 55 ₺.", zorluk="easy")
+
+P.q(R,
+    "Bir işletme hem normal hem anormal kayıpların satış değeri olan kısımlarını ayrı izlemektedir. Bu dönem anormal "
+    "kayıp olarak kaydedilen ürünlerin bir kısmı 3.000 ₺’ye satılabilmiştir.\n\nBu satış gelirinin işlemi ile ilgili "
+    "uygun uygulama aşağıdakilerden hangisidir?",
+    "Anormal kayıp zararından düşülür.",
+    ["Sağlam ürünlerin maliyetinden düşülür.",
+     "Normal kayıp maliyetine eklenir.",
+     "Satış hasılatına eklenir ve SMM’den düşülür.",
+     "Genel yönetim giderlerinden düşülür."],
+    "Anormal kayba ait ürünlerin satış değeri, anormal kayıp nedeniyle yazılan zararı azaltır; sağlam ürünlerin maliyetini "
+    "etkilemez.")
+
+P.sayisal(R,
+    "Bir işletmede hatalı hammadde partisi nedeniyle olağan oranın üzerinde 40 birim ıskarta çıkmıştır. Bu ıskartaların "
+    "üretim maliyeti toplam 5.000 ₺, ikinci kalite olarak net satış değeri toplam 1.800 ₺’dir; olay anormal kayıp "
+    "sayılmaktadır.\n\nAnormal ıskartalar için dönem gideri olarak yazılacak zarar kaç ₺’dir?",
+    tl(5_000 - 1_800), secenekler(3_200, 5_000, 1_800, 6_800, 0),
+    "Anormal ıskartalar net satış değeriyle (1.800 ₺) stoka alınır; maliyet ile net satış değeri arasındaki 5.000 − "
+    "1.800 = 3.200 ₺ olağan dışı zarar olarak dönem gideri yazılır.", zorluk="easy")
+
+if __name__ == "__main__":
+    sys.exit(P.yaz())

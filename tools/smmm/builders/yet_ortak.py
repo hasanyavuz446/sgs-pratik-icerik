@@ -130,6 +130,17 @@ class Paket:
         d.update(tur="sabit", siklar=list(secenekler), dogru=dogru_kume, oncul=True)
         self.S.append(d)
 
+    def serpistir(self):
+        """Hesap soruları konu sırasıyla art arda yazıldığında sabit (sayısal/öncüllü) şıkların harfi değerden
+        çıktığı için uzun sabit dizileri harf dağılımını kilitler; serbest sorular aralarına eşit aralıkla dağıtılır."""
+        sabit = [s for s in self.S if s["tur"] == "sabit"]
+        serbest = [s for s in self.S if s["tur"] != "sabit"]
+        adim = len(self.S) / len(sabit)
+        yer = {round(i * adim + adim / 2) for i in range(len(sabit))}
+        assert len(yer) == len(sabit)
+        i, j = iter(sabit), iter(serbest)
+        self.S = [next(i) if k in yer else next(j) for k in range(len(self.S))]
+
     # ------------------------------------------------------------------ harfler
     def _harfler(self):
         n = len(self.S)

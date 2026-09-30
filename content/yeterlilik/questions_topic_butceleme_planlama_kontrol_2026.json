@@ -3,20 +3,20 @@
     "id": "kh-butce-0001",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir işletme 1.200 birim satış ve birim başına 250 TL fiyat öngörmektedir. Satış bütçesi kaç TL'dir?",
+    "question": "Bir işletmenin mali işler müdürü aylık nakit bütçesini hazırlarken gelir tablosu bütçesindeki kalemleri tek tek incelemektedir. Bazı kalemler nakit hareketi doğurmakta, bazıları doğurmamaktadır.\n\nAşağıdakilerden hangisi nakit bütçesinde yer almaz?",
     "choices": {
-      "C": "300.000 TL",
-      "A": "250.000 TL",
-      "B": "275.000 TL",
-      "D": "325.000 TL",
-      "E": "360.000 TL"
+      "A": "Peşin satışlardan tahsilat",
+      "B": "Satıcılara yapılan borç ödemesi",
+      "C": "Banka kredisinin anapara geri ödemesi",
+      "D": "Peşin ödenen yıllık kira",
+      "E": "Makinelerin dönem amortismanı"
     },
-    "correctAnswer": "C",
-    "explanation": "Satış bütçesi, bütçelenen satış miktarı ile birim satış fiyatının çarpımıdır.",
+    "correctAnswer": "E",
+    "explanation": "Nakit bütçesi yalnız nakit giriş ve çıkışlarını içerir. Amortisman gider olmakla birlikte nakit çıkışı doğurmadığından nakit bütçesinde yer almaz; kredi anapara ödemesi ise gider olmasa da nakit çıkışıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - satış bütçesi"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -25,10 +25,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -36,20 +36,20 @@
     "id": "kh-butce-0002",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış bütçesi 10.000 birim. istenen dönem sonu mamul stoku 1.800 ve dönem başı stok 1.200 birimdir. Üretim bütçesi kaç birimdir?",
+    "question": "Bir işletme gelecek çeyrekte A ürününden 1.200 birimi 250 ₺’den, B ürününden 800 birimi 400 ₺’den satmayı öngörmektedir. Satışların %30’unun vadeli yapılacağı ve A ürününün dönem başında 150 birim stokunun bulunduğu bilinmektedir.\n\nİşletmenin çeyreklik satış bütçesi kaç ₺’dir?",
     "choices": {
-      "C": "10.600 birim",
-      "A": "9.400 birim",
-      "B": "10.000 birim",
-      "D": "11.200 birim",
-      "E": "13.000 birim"
+      "A": "300.000",
+      "B": "434.000",
+      "C": "582.500",
+      "D": "620.000",
+      "E": "1.300.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Üretim = satış + hedef dönem sonu mamul stoku - dönem başı mamul stokudur.",
+    "correctAnswer": "D",
+    "explanation": "Satış bütçesi = bütçelenen miktar × bütçelenen fiyat: 1.200 × 250 + 800 × 400 = 300.000 + 320.000 = 620.000 ₺. Vade yapısı nakit bütçesini, stok durumu üretim bütçesini etkiler; satış bütçesini değiştirmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - üretim bütçesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -58,10 +58,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -69,20 +69,20 @@
     "id": "kh-butce-0003",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "5.000 birim üretimde birim başına 3 kg madde kullanılacak; son madde stoku 2.000. ilk stok 1.500 kg'dır. Satın alma miktarı kaç kg'dır?",
+    "question": "Bir işletme ilk çeyrekte 2.000 birim ürünü birim 150 ₺’den satmayı planlamaktadır. İkinci çeyrekte satış fiyatının %10 artırılması ve satış miktarının 2.400 birime çıkması beklenmektedir.\n\nİlk iki çeyreğin toplam satış bütçesi kaç ₺’dir?",
     "choices": {
-      "D": "15.500 kg",
-      "A": "13.500 kg",
-      "B": "14.500 kg",
-      "C": "16.500 kg",
-      "E": "18.500 kg"
+      "A": "360.000",
+      "B": "660.000",
+      "C": "690.000",
+      "D": "696.000",
+      "E": "726.000"
     },
     "correctAnswer": "D",
-    "explanation": "Satın alma = üretimde kullanılacak madde + hedef son stok - ilk stoktur.",
+    "explanation": "Birinci çeyrek: 2.000 × 150 = 300.000 ₺. İkinci çeyrek: 2.400 × 165 = 396.000 ₺. Toplam 696.000 ₺. Fiyat artışı yok sayılırsa 660.000 ₺ bulunur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt ilk madde bütçesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -91,10 +91,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -102,20 +102,20 @@
     "id": "kh-butce-0004",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bütçelenen madde alımı 15.500 kg ve kilogram fiyatı 40 TL'dir. Satın alma bütçesi kaç TL'dir?",
+    "question": "Bir işletme üretim giderlerini 10.000 birimlik üretime göre 500.000 ₺ olarak bütçelemiştir (sabit 200.000 ₺, birim değişken 30 ₺). Ay içinde 9.000 birim üretilmiş ve 482.000 ₺ gider gerçekleşmiştir.\n\nEsnek bütçeye göre harcama sapması ve yorumu aşağıdakilerden hangisidir?",
     "choices": {
-      "B": "620.000 TL",
-      "A": "580.000 TL",
-      "C": "600.000 TL",
-      "D": "640.000 TL",
-      "E": "660.000 TL"
+      "A": "18.000 ₺ olumlu; giderler bütçenin altında kalmıştır.",
+      "B": "12.000 ₺ olumlu; giderler üretim düzeyine göre azdır.",
+      "C": "18.000 ₺ olumsuz; giderler statik bütçeyi aşmıştır.",
+      "D": "30.000 ₺ olumsuz; üretim hacmi bütçenin altındadır.",
+      "E": "12.000 ₺ olumsuz; giderler üretim düzeyine göre fazladır."
     },
-    "correctAnswer": "B",
-    "explanation": "Satın alma bütçesi miktar ile bütçelenen birim alış fiyatının çarpımıdır.",
+    "correctAnswer": "E",
+    "explanation": "Fiili hacme göre esnek bütçe = 200.000 + 30 × 9.000 = 470.000 ₺; harcama sapması = 482.000 − 470.000 = 12.000 ₺ olumsuz. Statik bütçeyle karşılaştırma (18.000 ₺ olumlu) hacim düşüşünü tasarruf gibi gösterir ve yanıltıcıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt ilk madde bütçesi"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -123,11 +123,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -135,20 +135,20 @@
     "id": "kh-butce-0005",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "6.000 birim üretim. birim başına 0.4 direkt işçilik saati ve saat ücreti 180 TL'dir. İşçilik bütçesi kaç TL'dir?",
+    "question": "Bir işletmenin gelecek yıl satış bütçesi 10.000 birimdir. Dönem başında 1.200 birim mamul stoku bulunmakta, yönetim dönem sonunda 1.800 birim mamul stoku bulundurmak istemektedir. Yarı mamul stoku yoktur.\n\nÜretim bütçesi kaç birimdir?",
     "choices": {
-      "E": "432.000 TL",
-      "A": "388.800 TL",
-      "B": "405.000 TL",
-      "C": "450.000 TL",
-      "D": "480.000 TL"
+      "A": "9.400 birim",
+      "B": "10.000 birim",
+      "C": "10.600 birim",
+      "D": "11.800 birim",
+      "E": "13.000 birim"
     },
-    "correctAnswer": "E",
-    "explanation": "Önce üretim miktarıyla standart saat çarpılır; bulunan toplam saat bütçelenen ücretle çarpılır.",
+    "correctAnswer": "C",
+    "explanation": "Üretim = satış + hedef dönem sonu stok − dönem başı stok = 10.000 + 1.800 − 1.200 = 10.600 birim.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt işçilik bütçesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -156,11 +156,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -168,20 +168,20 @@
     "id": "kh-butce-0006",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî faaliyet 8.000 birim. değişken genel üretim gideri birim başına 35 TL ve sabit gider 150.000 TL'dir. Esnek bütçe toplamı nedir?",
+    "question": "Bir fabrikada ay içinde fiili üretim bütçelenenden %15 yüksek gerçekleşmiş, üretim giderleri de statik bütçeyi aşmıştır. Üst yönetim fabrika müdürünü giderleri kontrol edememekle eleştirmektedir.\n\nFabrika müdürünün harcama performansı nasıl değerlendirilmelidir?",
     "choices": {
-      "E": "430.000 TL",
-      "A": "280.000 TL",
-      "B": "395.000 TL",
-      "C": "465.000 TL",
-      "D": "550.000 TL"
+      "A": "Fiili gider, dönem başındaki statik bütçeyle karşılaştırılmalıdır.",
+      "B": "Fiili gider, geçen yılın aynı ayıyla karşılaştırılmalıdır.",
+      "C": "Sapmanın tamamı üretim fazlalığından doğduğu için dikkate alınmaz.",
+      "D": "Sabit giderler de üretimle orantılı artırılarak karşılaştırılmalıdır.",
+      "E": "Fiili gider, fiili üretime göre esnek bütçeyle karşılaştırılmalıdır."
     },
     "correctAnswer": "E",
-    "explanation": "Esnek bütçede değişken gider fiilî hacme göre uyarlanır; sabit gider ilgili aralıkta aynı kalır.",
+    "explanation": "Üretim hacmi değiştiğinde değişken giderlerin de değişmesi doğaldır. Harcama performansı, fiili hacme uyarlanmış esnek bütçeyle ölçülür; statik bütçeyle karşılaştırma hacim etkisini verimsizlik gibi gösterir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -190,10 +190,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -201,20 +201,20 @@
     "id": "kh-butce-0007",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Cari ay satışlarının %60'ı olan 500.000 TL ile önceki aydan kalan 200.000 TL'nin %40'ı tahsil edilecektir. Nakit tahsilatı kaç TL'dir?",
+    "question": "Bir işletme her ay sonunda, izleyen ayın satışlarının %20’si kadar mamul stoku bulundurmaktadır. Ocak satışları 8.000 birim, şubat satışları 9.000 birim olarak bütçelenmiş; ocak başında 1.500 birim mamul stoku bulunmaktadır.\n\nOcak ayı üretim bütçesi kaç birimdir?",
     "choices": {
-      "D": "380.000 TL",
-      "A": "300.000 TL",
-      "B": "340.000 TL",
-      "C": "420.000 TL",
-      "E": "480.000 TL"
+      "A": "6.500 birim",
+      "B": "8.000 birim",
+      "C": "8.100 birim",
+      "D": "8.300 birim",
+      "E": "9.500 birim"
     },
     "correctAnswer": "D",
-    "explanation": "Cari dönem tahsilatı ile önceki alacaklardan tahsil edilecek tutar toplanır; oranlar kökte verilmiştir.",
+    "explanation": "Ocak sonu hedef stok = 9.000 × %20 = 1.800 birim. Üretim = 8.000 + 1.800 − 1.500 = 8.300 birim. Hedef stokun ocak satışına göre hesaplanması (1.600) 8.100 birim sonucunu verir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit bütçesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -223,10 +223,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -234,20 +234,20 @@
     "id": "kh-butce-0008",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Cari alımlar 400.000 TL ve bunun %70'i; önceki borç 150.000 TL ve bunun %30'u ödenecektir. Toplam nakit çıkışı nedir?",
+    "question": "Bir işletmenin maliyet muhasebecisi esnek bütçe hazırlama yöntemini yeni çalışanlara anlatmaktadır. Anlatımdaki ifadelerden biri hatalıdır.\n\nEsnek bütçeyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "D": "325.000 TL",
-      "A": "280.000 TL",
-      "B": "295.000 TL",
-      "C": "355.000 TL",
-      "E": "400.000 TL"
+      "A": "Değişken giderler fiili faaliyet düzeyine uyarlanır.",
+      "B": "Birden fazla faaliyet düzeyi için hazırlanabilir.",
+      "C": "Harcama sapmasını hacim etkisinden ayırmayı sağlar.",
+      "D": "Maliyetlerin sabit ve değişken olarak ayrılmasını gerektirir.",
+      "E": "Sabit giderler faaliyet hacmine göre orantılı değiştirilir."
     },
-    "correctAnswer": "D",
-    "explanation": "Cari alımların ödenecek kısmı ile önceki borçların ödenecek kısmı toplanır.",
+    "correctAnswer": "E",
+    "explanation": "Esnek bütçede değişken giderler fiili hacme göre ayarlanır, sabit giderler ise geçerli aralıkta aynı tutarda bırakılır. Sabit giderlerin orantılı değiştirilmesi esnek bütçenin mantığıyla çelişir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit ödemeleri bütçesi"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -256,10 +256,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -267,20 +267,20 @@
     "id": "kh-butce-0009",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Başlangıç nakdi 100.000. girişler 500.000. çıkışlar 650.000 TL; hedef asgari nakit 80.000 TL'dir. Gereken finansman kaç TL'dir?",
+    "question": "Bir işletmenin bütçelenen üretimi 5.000 birimdir ve her birim için 3 kg hammadde kullanılmaktadır. Dönem başında 1.500 kg hammadde stoku vardır; dönem sonunda 2.000 kg stok bulundurulması istenmektedir. Hammaddenin bütçelenen alış fiyatı kilogram başına 40 ₺’dir.\n\nHammadde satın alma bütçesi kaç ₺’dir?",
     "choices": {
-      "E": "130.000 TL",
-      "A": "50.000 TL",
-      "B": "80.000 TL",
-      "C": "100.000 TL",
-      "D": "180.000 TL"
+      "A": "540.000",
+      "B": "580.000",
+      "C": "600.000",
+      "D": "620.000",
+      "E": "680.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Finansman öncesi bakiye başlangıç artı girişler eksi çıkışlardır. Bu bakiyeyi hedef asgari tutara çıkaracak finansman gerekir.",
+    "correctAnswer": "D",
+    "explanation": "Kullanım = 5.000 × 3 = 15.000 kg. Satın alma = 15.000 + 2.000 − 1.500 = 15.500 kg; tutar = 15.500 × 40 = 620.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit bütçesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -288,11 +288,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -300,20 +300,20 @@
     "id": "kh-butce-0010",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî hacme göre esnek bütçe gideri 450.000 TL. gerçekleşen gider 470.000 TL'dir. Harcama sapması nedir?",
+    "question": "Bir işletme gelecek çeyrekte 6.000 birim üretim planlamaktadır. Her birim için standart olarak 0,4 direkt işçilik saati gerekmekte ve saat ücreti 180 ₺ olarak bütçelenmektedir. Satış bütçesi 5.600 birimdir.\n\nDirekt işçilik bütçesi kaç ₺’dir?",
     "choices": {
-      "E": "20.000 TL olumsuz",
-      "A": "20.000 TL olumlu",
-      "B": "40.000 TL olumsuz",
-      "C": "450.000 TL olumlu",
-      "D": "Sapma yoktur"
+      "A": "2.400",
+      "B": "403.200",
+      "C": "432.000",
+      "D": "450.000",
+      "E": "1.080.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Gerçek gider esnek bütçeyi aştığı için fark olumsuz harcama sapmasıdır.",
+    "correctAnswer": "C",
+    "explanation": "Direkt işçilik bütçesi üretim bütçesine dayanır: 6.000 × 0,4 = 2.400 saat × 180 = 432.000 ₺. Satış miktarıyla hesaplamak (5.600 birim) 403.200 ₺ verir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe sapması"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -321,11 +321,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -333,20 +333,20 @@
     "id": "kh-butce-0011",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî fiyat 22 TL. bütçe fiyatı 20 TL ve fiilî miktar 5.000 birimdir. Fiyat sapması nedir?",
+    "question": "Bir işletmenin montaj bölümü yöneticisi yalnızca bölümdeki malzeme kullanımı, işçilik ve bakım giderleri üzerinde yetki sahibidir. Bölüm dış müşterilere satış yapmamakta, yatırım kararları genel merkezde alınmaktadır.\n\nSorumluluk muhasebesi açısından montaj bölümü nasıl sınıflandırılır?",
     "choices": {
-      "A": "10.000 TL olumsuz",
-      "B": "10.000 TL olumlu",
-      "C": "20.000 TL olumsuz",
-      "D": "100.000 TL olumlu",
-      "E": "Sapma yoktur"
+      "A": "Maliyet merkezi",
+      "B": "Kâr merkezi",
+      "C": "Yatırım merkezi",
+      "D": "Gelir merkezi",
+      "E": "Hizmet satış merkezi"
     },
     "correctAnswer": "A",
-    "explanation": "Fiyat sapması, fiilî miktar ile fiilî ve bütçe fiyatı farkının çarpımıdır; yüksek fiilî fiyat olumsuzdur.",
+    "explanation": "Yöneticinin yalnız maliyetler üzerinde yetkili olduğu ve gelir yaratmayan birimler maliyet merkezidir; performansı bütçelenen maliyetlerle karşılaştırılarak ölçülür.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - fiyat sapması"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -354,11 +354,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -366,20 +366,20 @@
     "id": "kh-butce-0012",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî satış 11.000. bütçelenen satış 10.000 birim ve bütçe fiyatı 50 TL'dir. Hacim kaynaklı gelir sapması nedir?",
+    "question": "Bir işletmenin GÜG bütçesinde değişken GÜG oranı direkt işçilik saati başına 12 ₺, dönemlik sabit GÜG ise 180.000 ₺’dir. Sabit GÜG’ün 40.000 ₺’si makine amortismanıdır. Dönemde 2.400 direkt işçilik saati bütçelenmiştir.\n\nGÜG bütçesinin nakit ödeme gerektiren kısmı kaç ₺’dir?",
     "choices": {
-      "B": "50.000 TL olumlu",
-      "A": "50.000 TL olumsuz",
-      "C": "5.000 TL olumlu",
-      "D": "500.000 TL olumlu",
-      "E": "Sapma yoktur"
+      "A": "28.800",
+      "B": "140.000",
+      "C": "168.800",
+      "D": "208.800",
+      "E": "248.800"
     },
-    "correctAnswer": "B",
-    "explanation": "Fiilî hacim bütçeyi aştığından fark ile bütçe fiyatının çarpımı olumlu satış hacmi etkisidir.",
+    "correctAnswer": "C",
+    "explanation": "Toplam GÜG bütçesi = 12 × 2.400 + 180.000 = 208.800 ₺. Amortisman nakit çıkışı gerektirmediğinden nakit bütçesine aktarılacak tutar 208.800 − 40.000 = 168.800 ₺’dir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - satış hacmi sapması"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -388,10 +388,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -399,20 +399,20 @@
     "id": "kh-butce-0013",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî faaliyet 9.000 birim. birim değişken gider 28 TL ve sabit gider 120.000 TL'dir. Esnek bütçe toplamı nedir?",
+    "question": "Bir perakende zincirinin bölge müdürü; bölgedeki mağazaların satış fiyatlarını, kampanyalarını ve işletme giderlerini belirleyebilmektedir. Mağaza açma ve kapatma gibi yatırım kararları ise genel merkez tarafından alınmaktadır.\n\nSorumluluk muhasebesi açısından bu bölge nasıl sınıflandırılır?",
     "choices": {
-      "E": "372.000 TL",
-      "A": "252.000 TL",
-      "B": "344.000 TL",
-      "C": "400.000 TL",
-      "D": "492.000 TL"
+      "A": "Maliyet merkezi",
+      "B": "Yatırım merkezi",
+      "C": "Gelir merkezi",
+      "D": "Harcama merkezi",
+      "E": "Kâr merkezi"
     },
     "correctAnswer": "E",
-    "explanation": "Değişken gider fiilî hacme uyarlanır ve ilgili aralıktaki sabit gider eklenir.",
+    "explanation": "Yöneticinin hem gelirler hem maliyetler üzerinde yetkili olduğu, ancak yatırım tabanını belirleyemediği birim kâr merkezidir; performansı bölüm kârıyla ölçülür.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -421,10 +421,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -432,20 +432,20 @@
     "id": "kh-butce-0014",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir yatırım merkezi 360.000 TL faaliyet kârı ve 2.400.000 TL yatırım tabanı raporlamıştır. Yatırım getirisi kaçtır?",
+    "question": "Bir işletmenin bütçe verileri şöyledir: dönem başı mamul stoku 120.000 ₺, bütçelenen üretim maliyeti 1.450.000 ₺ ve hedef dönem sonu mamul stoku 170.000 ₺. Dönem başı ve sonu yarı mamul stoku yoktur; bütçelenen satışlar 2.100.000 ₺’dir.\n\nSatılan mamul maliyeti bütçesi kaç ₺’dir?",
     "choices": {
-      "C": "%15",
-      "A": "%10",
-      "B": "%12",
-      "D": "%18",
-      "E": "%24"
+      "A": "700.000",
+      "B": "1.400.000",
+      "C": "1.450.000",
+      "D": "1.500.000",
+      "E": "1.740.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Yatırım getirisi faaliyet kârının kullanılan yatırım tabanına bölünmesiyle hesaplanır.",
+    "correctAnswer": "B",
+    "explanation": "SMM = dönem başı mamul + üretim maliyeti − dönem sonu mamul = 120.000 + 1.450.000 − 170.000 = 1.400.000 ₺. Bütçelenen brüt kâr 2.100.000 − 1.400.000 = 700.000 ₺’dir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - yatırım merkezi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -454,10 +454,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -465,20 +465,20 @@
     "id": "kh-butce-0015",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Yatırım merkezi kârı 360.000 TL. yatırım tabanı 2.400.000 TL ve kökte verilen asgari getiri %12'dir. Artık gelir kaç TL'dir?",
+    "question": "Bir satış bütçesinde bir ürün için 480.000 ₺ satış hasılatı ve 1.600 birim satış miktarı öngörülmüştür. Pazarlama müdürü, bütçe hazırlanırken kullanılan birim fiyatı fiyat listesinde kontrol etmek istemektedir.\n\nBütçelenen birim satış fiyatı kaç ₺’dir?",
     "choices": {
-      "B": "72.000 TL",
-      "A": "24.000 TL",
-      "C": "48.000 TL",
-      "D": "288.000 TL",
-      "E": "432.000 TL"
+      "A": "250",
+      "B": "280",
+      "C": "300",
+      "D": "320",
+      "E": "360"
     },
-    "correctAnswer": "B",
-    "explanation": "Artık gelir, faaliyet kârından yatırım tabanının kökte verilen asgari getiri oranıyla çarpımının çıkarılmasıdır.",
+    "correctAnswer": "C",
+    "explanation": "Birim fiyat = satış bütçesi ÷ satış miktarı = 480.000 ÷ 1.600 = 300 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - artık gelir"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -486,11 +486,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -498,20 +498,20 @@
     "id": "kh-butce-0016",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış bütçesinin üretim ve satın alma bütçelerinden önce hazırlanmasının temel nedeni nedir?",
+    "question": "Bir holdingin bir iştiraki; ürün fiyatlarını, giderlerini ve yeni makine, depo gibi yatırımlarını kendisi belirlemektedir. Holding, iştirakin performansını kullandığı varlıklarla ilişkilendirerek ölçmek istemektedir.\n\nBu birim nasıl sınıflandırılır ve performansı hangi ölçütle değerlendirilir?",
     "choices": {
-      "A": "Satış bütçesi diğer faaliyet bütçelerine temel oluşturur",
-      "B": "Nakit bütçesi bütün faaliyet bütçelerinden önce hazırlanır",
-      "C": "Üretim bütçesi satış tahmininden tamamen bağımsız belirlenir",
-      "D": "Direkt işçilik bütçesi satış miktarını tek başına belirler",
-      "E": "Finansal tablo bütçeleri yalnız gerçekleşen sonuçları sınıflandırır"
+      "A": "Kâr merkezi; brüt satış kârı",
+      "B": "Maliyet merkezi; bütçe-fiili gider farkı",
+      "C": "Gelir merkezi; satış hacmi sapması",
+      "D": "Yatırım merkezi; yatırım getirisi ve artık gelir",
+      "E": "Kâr merkezi; birim başına katkı payı"
     },
-    "correctAnswer": "A",
-    "explanation": "Beklenen satış miktarı, üretilecek miktarı ve buna bağlı kaynak gereksinimlerini belirlediği için ana bütçe satış bütçesiyle başlar.",
+    "correctAnswer": "D",
+    "explanation": "Gelir, maliyet ve yatırım tabanı üzerinde yetkili yönetici yatırım merkezini yönetir. Performans, kârın kullanılan varlıklarla ilişkisini gösteren yatırım getirisi (ROI) ve artık gelir ile ölçülür.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - ana bütçe"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -519,11 +519,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -531,20 +531,20 @@
     "id": "kh-butce-0017",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Faaliyet hacmi değiştiğinde değişken giderleri gerçekleşen hacme uyarlayan karşılaştırma aracı hangisidir?",
+    "question": "Bir işletmenin üretim bütçesi 12.400 birim, satış bütçesi 12.000 birimdir. Dönem başında 900 birim mamul stoku bulunmaktadır. Yönetim, bütçede öngörülen dönem sonu stokunun depo kapasitesini aşıp aşmadığını kontrol etmektedir.\n\nBütçelenen dönem sonu mamul stoku kaç birimdir?",
     "choices": {
-      "B": "Esnek bütçe",
-      "A": "Statik bütçe",
-      "C": "Nakit bütçesi",
-      "D": "Sermaye bütçesi",
-      "E": "Satın alma bütçesi"
+      "A": "400 birim",
+      "B": "500 birim",
+      "C": "900 birim",
+      "D": "1.300 birim",
+      "E": "2.100 birim"
     },
-    "correctAnswer": "B",
-    "explanation": "Esnek bütçe, maliyet davranışını kullanarak bütçe tutarlarını fiilî faaliyet düzeyine uyarlar.",
+    "correctAnswer": "D",
+    "explanation": "Dönem sonu stok = dönem başı stok + üretim − satış = 900 + 12.400 − 12.000 = 1.300 birim.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -552,11 +552,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -564,20 +564,20 @@
     "id": "kh-butce-0018",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Her bütçe kaleminin yeni dönemde sıfırdan gerekçelendirilmesini isteyen yaklaşım hangisidir?",
+    "question": "Bir bölümün mevcut yatırım getirisi %18’dir. Bölüm yöneticisine, getirisi %14 olan yeni bir proje önerilmiştir; işletmenin sermaye maliyeti %12’dir. Yönetici primini bölümün ROI’sine göre almaktadır ve projeyi reddetmeyi düşünmektedir.\n\nBu durumla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "B": "Sıfır tabanlı bütçeleme",
-      "A": "Geleneksel artımlı bütçeleme",
-      "C": "Kayan bütçeleme",
-      "D": "Kaizen bütçeleme",
-      "E": "Katılımcı bütçeleme"
+      "A": "Proje ROI’yi düşürdüğü için işletme açısından da reddedilmelidir.",
+      "B": "Proje getirisi sermaye maliyetinin altında olduğu için reddedilmelidir.",
+      "C": "ROI ve artık gelir bu projede aynı kararı verdiğinden fark yoktur.",
+      "D": "Proje ancak getirisi %18’in üzerine çıkarsa artık geliri artırır.",
+      "E": "Proje işletme için kabul edilmeli; artık gelir ölçütü bu uyumu sağlar."
     },
-    "correctAnswer": "B",
-    "explanation": "Sıfır tabanlı bütçelemede faaliyet ve kaynak talepleri önceki ödenekten bağımsız yeniden gerekçelendirilir.",
+    "correctAnswer": "E",
+    "explanation": "Projenin getirisi (%14) sermaye maliyetinin (%12) üzerinde olduğundan artık geliri artırır ve işletme için yararlıdır. ROI’ye göre ödüllendirilen yönetici bölüm oranını düşüreceği için reddetmek ister; artık gelir bu amaç uyumsuzluğunu giderir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sıfır tabanlı bütçeleme"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -585,11 +585,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -597,20 +597,20 @@
     "id": "kh-butce-0019",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Kaynak tüketimini faaliyet sürücüleri üzerinden bütçelemeyi amaçlayan yöntem hangisidir?",
+    "question": "Bir işletme dönem için 18.200 kg hammadde satın almayı bütçelemiştir. Dönem başı hammadde stoku 1.000 kg, hedef dönem sonu stoku 2.200 kg’dır. Her birim mamul için 2 kg hammadde kullanılmaktadır.\n\nBütçelenen üretim miktarı kaç birimdir?",
     "choices": {
-      "C": "Faaliyet tabanlı bütçeleme",
-      "A": "Geleneksel artımlı bütçeleme",
-      "B": "Sıfır tabanlı bütçeleme",
-      "D": "Kaizen bütçeleme",
-      "E": "Statik bütçeleme"
+      "A": "8.000 birim",
+      "B": "8.500 birim",
+      "C": "9.100 birim",
+      "D": "9.700 birim",
+      "E": "17.000 birim"
     },
-    "correctAnswer": "C",
-    "explanation": "Faaliyet tabanlı bütçeleme, çıktılar için gereken faaliyetleri ve bu faaliyetlerin kaynak tüketimini planlar.",
+    "correctAnswer": "B",
+    "explanation": "Kullanılacak hammadde = 18.200 + 1.000 − 2.200 = 17.000 kg. Üretim = 17.000 ÷ 2 = 8.500 birim.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - faaliyet tabanlı bütçeleme"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -618,11 +618,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -630,20 +630,20 @@
     "id": "kh-butce-0020",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bütçe ufkuna her dönem yeni bir ay veya çeyrek eklenerek sabit uzunluk korunmaktadır. Bu yöntem hangisidir?",
+    "question": "Bir işletmenin 4.000 birimlik üretim için hazırladığı direkt işçilik bütçesi 504.000 ₺’dir. Bütçelenen saat ücreti 210 ₺’dir. Üretim planlama birimi, bütçede kullanılan birim başına işçilik süresini doğrulamak istemektedir.\n\nBirim başına bütçelenen direkt işçilik süresi kaç saattir?",
     "choices": {
-      "E": "Kayan bütçe",
-      "A": "Sabit bütçe",
-      "B": "Nakit bütçesi",
-      "C": "Proje bütçesi",
-      "D": "Sermaye bütçesi"
+      "A": "0,5",
+      "B": "0,6",
+      "C": "0,8",
+      "D": "1,2",
+      "E": "2,4"
     },
-    "correctAnswer": "E",
-    "explanation": "Kayan bütçede tamamlanan dönem çıkarılır ve ufka yeni dönem eklenerek plan güncel tutulur.",
+    "correctAnswer": "B",
+    "explanation": "Toplam saat = 504.000 ÷ 210 = 2.400 saat; birim başına süre = 2.400 ÷ 4.000 = 0,6 saat.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sürekli bütçeleme"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -652,10 +652,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -663,20 +663,20 @@
     "id": "kh-butce-0021",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Alt kademe yöneticilerinin kendi sorumluluk alanlarındaki hedeflerin hazırlanmasına katılması hangi yaklaşımı ifade eder?",
+    "question": "Bir bölüm müdürünün performans raporunda ay içinde önemli bir olumsuz sapma görülmüştür. İnceleme, sapmanın tamamının genel merkezin bölüme dağıttığı bilgi işlem giderindeki artıştan ve müdürün etkileyemediği bir yasal düzenlemeden kaynaklandığını göstermiştir.\n\nBu durumda uygulanması gereken sorumluluk muhasebesi ilkesi aşağıdakilerden hangisidir?",
     "choices": {
-      "E": "Katılımcı bütçeleme",
-      "A": "Merkezî bütçeleme",
-      "B": "Statik bütçeleme",
-      "C": "Artımlı bütçeleme",
-      "D": "Sıfır tabanlı bütçeleme"
+      "A": "İstisnalara göre yönetim ilkesi",
+      "B": "Tutarlılık ilkesi",
+      "C": "İhtiyatlılık ilkesi",
+      "D": "Dönemsellik ilkesi",
+      "E": "Kontrol edilebilirlik ilkesi"
     },
     "correctAnswer": "E",
-    "explanation": "Katılımcı bütçeleme, bütçeden sorumlu yöneticilerin hedef belirleme sürecine dâhil edilmesidir.",
+    "explanation": "Kontrol edilebilirlik ilkesine göre yöneticiler yalnızca etkileyebildikleri gelir ve maliyetlerden sorumlu tutulur; kontrol dışı kalemler raporda ayrı gösterilir ve performans değerlendirmesinde dışarıda bırakılır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - katılımcı bütçeleme"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -685,10 +685,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -696,20 +696,20 @@
     "id": "kh-butce-0022",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir bölüm yöneticisi yalnız kendi bölümündeki maliyetlerin düzeyi üzerinde yetki sahibidir. Bu birim nasıl sınıflanır?",
+    "question": "Bir işletme her ay sonunda, izleyen ayın hammadde ihtiyacının %25’i kadar stok bulundurmaktadır. Nisan ayı üretimi için 6.000 kg, mayıs ayı üretimi için 7.000 kg hammadde gerekmektedir. Nisan başında 1.500 kg hammadde stoku vardır.\n\nNisan ayında satın alınması gereken hammadde kaç kg’dır?",
     "choices": {
-      "A": "Maliyet merkezi",
-      "B": "Gelir merkezi",
-      "C": "Kâr merkezi",
-      "D": "Yatırım merkezi",
-      "E": "Harcama dışı merkez"
+      "A": "4.500 kg",
+      "B": "5.750 kg",
+      "C": "6.000 kg",
+      "D": "6.250 kg",
+      "E": "7.750 kg"
     },
-    "correctAnswer": "A",
-    "explanation": "Maliyet merkezinde yönetici esas olarak kendi kontrol alanındaki maliyetlerden sorumludur.",
+    "correctAnswer": "D",
+    "explanation": "Nisan sonu hedef stok = 7.000 × %25 = 1.750 kg. Satın alma = 6.000 + 1.750 − 1.500 = 6.250 kg.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sorumluluk muhasebesi"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -717,11 +717,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -729,20 +729,20 @@
     "id": "kh-butce-0023",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir bölüm yöneticisi hem gelirler hem bölüm maliyetleri üzerinde yetkilidir, fakat kullanılan yatırım tabanını belirlememektedir. Birim hangisidir?",
+    "question": "Bir işletmenin üretim bütçesi 7.500 birimdir. Her birim için 2,4 kg hammadde kullanılmakta ve hammaddenin bütçelenen fiyatı kilogram başına 15 ₺’dir. Dönem başı hammadde stoku 1.200 kg, hedef dönem sonu stoku 1.800 kg’dır.\n\nDirekt ilk madde ve malzeme kullanım bütçesi kaç ₺’dir?",
     "choices": {
-      "D": "Kâr merkezi",
-      "A": "Gelir merkezi",
-      "B": "Maliyet merkezi",
-      "C": "Yatırım merkezi",
-      "E": "Harcama merkezi"
+      "A": "36.000",
+      "B": "112.500",
+      "C": "261.000",
+      "D": "270.000",
+      "E": "279.000"
     },
     "correctAnswer": "D",
-    "explanation": "Kâr merkezinin yöneticisi gelir ve maliyet kararlarından sorumludur; yatırım merkezi ayrıca kullanılan varlıklardan sorumludur.",
+    "explanation": "Kullanım bütçesi üretimde tüketilecek miktara dayanır: 7.500 × 2,4 = 18.000 kg × 15 = 270.000 ₺. Stok değişimi satın alma bütçesini etkiler: satın alma 18.600 kg × 15 = 279.000 ₺ olur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sorumluluk merkezleri"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -751,10 +751,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -762,20 +762,20 @@
     "id": "kh-butce-0024",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bölüm yöneticisi gelir, maliyet ve faaliyette kullanılan varlıklar üzerinde karar yetkisine sahiptir. Birim nasıl sınıflanır?",
+    "question": "Bir işletmenin sorumluluk muhasebesi sistemi yeniden düzenlenmektedir. Proje ekibinin hazırladığı ilkeler listesinde bir hatalı madde bulunmaktadır.\n\nSorumluluk muhasebesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "C": "Yatırım merkezi",
-      "A": "Gelir merkezi",
-      "B": "Maliyet merkezi",
-      "D": "Kâr merkezi",
-      "E": "Hizmet merkezi"
+      "A": "Maliyet merkezi yöneticisi dağıtılan genel merkez giderlerinden sorumlu tutulur.",
+      "B": "Raporlar örgüt yapısındaki yetki ve sorumluluk düzeylerine göre hazırlanır.",
+      "C": "Kâr merkezi yöneticisi gelir ve giderlerden birlikte sorumludur.",
+      "D": "Yatırım merkezinin performansı kullanılan varlıklarla ilişkilendirilir.",
+      "E": "Kontrol edilemeyen kalemler raporda ayrı gösterilebilir."
     },
-    "correctAnswer": "C",
-    "explanation": "Yatırım merkezi yöneticisi kâr unsurlarının yanında kullanılan varlık ve yatırım kararlarından da sorumludur.",
+    "correctAnswer": "A",
+    "explanation": "Dağıtılan genel merkez giderleri maliyet merkezi yöneticisinin kontrolü dışındadır; performans değerlendirmesinde bu giderlerden sorumlu tutulmamalıdır. Diğer ifadeler sorumluluk muhasebesinin temel ilkeleridir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - yatırım merkezi"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -784,10 +784,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -795,20 +795,20 @@
     "id": "kh-butce-0025",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir yönetici performans raporunda kur ve mevzuat etkisi gibi kontrol edemediği sonuçlardan ayrıştırılmaktadır. Hangi ilke uygulanır?",
+    "question": "Bir işletmenin satışlarının %40’ı peşin tahsil edilmekte, %50’si izleyen ay, %10’u ise iki ay sonra tahsil edilmektedir; tahsil edilemeyen alacak beklenmemektedir. Ocak satışları 300.000 ₺, şubat 400.000 ₺ ve mart 500.000 ₺ olarak bütçelenmiştir.\n\nMart ayında bütçelenen nakit tahsilatı kaç ₺’dir?",
     "choices": {
-      "D": "Kontrol edilebilirlik ilkesi",
-      "A": "Tam maliyet ilkesi",
-      "B": "Dönemsellik ilkesi",
-      "C": "İhtiyatlılık ilkesi",
-      "E": "Tutarlılık ilkesi"
+      "A": "380.000",
+      "B": "400.000",
+      "C": "430.000",
+      "D": "460.000",
+      "E": "500.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Sorumluluk muhasebesinde yönetici esas olarak önemli ölçüde etkileyebildiği gelir, gider ve varlıklardan sorumlu tutulur.",
+    "correctAnswer": "C",
+    "explanation": "Mart tahsilatı = mart satışlarının %40’ı (200.000) + şubatın %50’si (200.000) + ocağın %10’u (30.000) = 430.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - kontrol edilebilirlik"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -817,10 +817,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -828,20 +828,20 @@
     "id": "kh-butce-0026",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Yönetici ulaşılması kolay hedef yaratmak için beklenen giderleri bilinçli biçimde yüksek göstermiştir. Bu davranış nasıl adlandırılır?",
+    "question": "Bir işletmenin bütçe komitesi ana bütçe takvimini hazırlamaktadır. Üretim, satın alma, işçilik ve nakit bütçelerinin hangi sırayla hazırlanacağı tartışılmakta; talebin kapasiteden düşük olduğu öngörülmektedir.\n\nAna bütçe sürecinde satış bütçesinin diğer faaliyet bütçelerinden önce hazırlanmasının nedeni aşağıdakilerden hangisidir?",
     "choices": {
-      "D": "Bütçe gevşekliği",
-      "A": "Bütçe fazlası",
-      "B": "Olumlu sapma",
-      "C": "Faaliyet kaldıracı",
-      "E": "Kapasite fazlası"
+      "A": "Nakit bütçesinin satış bütçesine veri sağlaması gerektiği için",
+      "B": "Satış bütçesinin vergi beyannamesi için zorunlu olduğu için",
+      "C": "Bütçelenmiş bilançonun satış bütçesinden önce hazırlandığı için",
+      "D": "Sabit giderlerin satış miktarına göre orantılı belirlendiği için",
+      "E": "Üretim ve gider bütçeleri satış miktarına dayandığı için"
     },
-    "correctAnswer": "D",
-    "explanation": "Bütçe gevşekliği, hedefi kolaylaştırmak amacıyla gelirlerin düşük veya giderlerin yüksek tahmin edilmesidir.",
+    "correctAnswer": "E",
+    "explanation": "Talep kısıtlayıcı faktör olduğunda üretim, hammadde, işçilik, GÜG ve pazarlama bütçeleri satış tahminine dayanır; bu nedenle ana bütçe satış bütçesiyle başlar. Nakit bütçesi ve bütçelenmiş tablolar en son hazırlanır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - bütçe davranışı"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -849,11 +849,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -861,20 +861,20 @@
     "id": "kh-butce-0027",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış bütçesi 480.000 TL ve satış miktarı 1.600 birimdir. Bütçelenen birim satış fiyatı kaç TL'dir?",
+    "question": "Bir işletme hammadde alımlarının %70’ini alım ayında, %30’unu izleyen ayda ödemektedir. Şubat alımları 350.000 ₺, mart alımları 400.000 ₺ olarak bütçelenmiştir. Mart ayında ayrıca 60.000 ₺ amortisman gideri bulunmaktadır.\n\nMart ayında hammadde alımları için bütçelenen nakit ödeme kaç ₺’dir?",
     "choices": {
-      "A": "300 TL",
-      "B": "240 TL",
-      "C": "280 TL",
-      "D": "320 TL",
-      "E": "360 TL"
+      "A": "280.000",
+      "B": "365.000",
+      "C": "385.000",
+      "D": "400.000",
+      "E": "445.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Birim satış fiyatı, toplam satış bütçesinin bütçelenen satış miktarına bölünmesiyle 480.000 / 1.600 = 300 TL bulunur.",
+    "correctAnswer": "C",
+    "explanation": "Mart ödemesi = mart alımlarının %70’i (280.000) + şubat alımlarının %30’u (105.000) = 385.000 ₺. Amortisman nakit çıkışı olmadığından ödemeye eklenmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - satış bütçesi"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -882,11 +882,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -894,20 +894,20 @@
     "id": "kh-butce-0028",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Üretim bütçesi 12.400 birim, satış bütçesi 12.000 birim ve dönem başı mamul stoku 900 birimdir. Hedef dönem sonu mamul stoku kaç birimdir?",
+    "question": "Bir işletmede talep yıllık 20.000 birim olmasına karşın darboğaz makinesi en çok 16.000 birim üretime izin vermektedir. Ek kapasite gelecek yıl içinde sağlanamayacaktır.\n\nAna bütçe hazırlanırken hangi yaklaşım izlenmelidir?",
     "choices": {
-      "E": "1.300 birim",
-      "A": "500 birim",
-      "B": "900 birim",
-      "C": "1.700 birim",
-      "D": "2.100 birim"
+      "A": "Bütçe, sınırlayıcı faktör olan üretim kapasitesine göre kurulmalıdır.",
+      "B": "Satış bütçesi talep tahmini olan 20.000 birime göre hazırlanmalıdır.",
+      "C": "Üretim bütçesi talep ile kapasitenin ortalamasına göre kurulmalıdır.",
+      "D": "Kapasite açığı nakit bütçesinde finansman ihtiyacı olarak gösterilmelidir.",
+      "E": "Darboğaz dikkate alınmadan bütçe dönem içinde revize edilmelidir."
     },
-    "correctAnswer": "E",
-    "explanation": "Üretim = satış + son stok - ilk stok eşitliğinden son stok 12.400 - 12.000 + 900 = 1.300 birimdir.",
+    "correctAnswer": "A",
+    "explanation": "Ana bütçe, işletmenin faaliyetini sınırlayan temel faktörden (bütçe kısıtı) başlatılır. Burada kısıt talep değil üretim kapasitesidir; satış ve diğer bütçeler 16.000 birime göre uyumlu hâle getirilmelidir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - üretim bütçesi"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -916,10 +916,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -927,20 +927,20 @@
     "id": "kh-butce-0029",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Dönemde 18.200 kg direkt madde satın alınmıştır. Dönem başı madde stoku 1.000 kg, hedef dönem sonu stok 2.200 kg ise üretimde kullanılacak madde kaç kg'dır?",
+    "question": "Bir işletmenin nakit bütçesinde ay başı nakit 100.000 ₺, bütçelenen nakit girişleri 500.000 ₺ ve nakit çıkışları 650.000 ₺’dir. İşletme politikası gereği ay sonunda en az 80.000 ₺ nakit bulundurulmalıdır; açık banka kredisiyle kapatılacaktır.\n\nAy içinde sağlanması gereken finansman kaç ₺’dir?",
     "choices": {
-      "C": "17.000 kg",
-      "A": "15.000 kg",
-      "B": "16.000 kg",
-      "D": "18.400 kg",
-      "E": "19.400 kg"
+      "A": "30.000",
+      "B": "50.000",
+      "C": "80.000",
+      "D": "130.000",
+      "E": "150.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Kullanım = satın alma + ilk stok - son stok olduğundan 18.200 + 1.000 - 2.200 = 17.000 kg'dır.",
+    "correctAnswer": "D",
+    "explanation": "Finansman öncesi nakit = 100.000 + 500.000 − 650.000 = −50.000 ₺. Asgari 80.000 ₺’ye ulaşmak için 50.000 + 80.000 = 130.000 ₺ finansman gerekir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt ilk madde bütçesi"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -949,10 +949,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -960,20 +960,53 @@
     "id": "kh-butce-0030",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "18.600 kg direkt maddenin satın alma bütçesi 744.000 TL'dir. Bütçelenen kilogram fiyatı kaç TL'dir?",
+    "question": "Bir işletmede bu ayın satışlarının %60’ı ay içinde, önceki ay sonundaki alacakların ise %25’i bu ay tahsil edilmiştir. Bu ayın satışları 600.000 ₺ ve toplam tahsilat 410.000 ₺’dir.\n\nÖnceki ay sonundaki alacak tutarı kaç ₺’dir?",
     "choices": {
-      "B": "40 TL",
-      "A": "36 TL",
-      "C": "38 TL",
-      "D": "42 TL",
-      "E": "44 TL"
+      "A": "50.000",
+      "B": "125.000",
+      "C": "164.000",
+      "D": "200.000",
+      "E": "240.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Bütçelenen birim alış fiyatı 744.000 TL'nin 18.600 kg'a bölünmesiyle 40 TL olarak hesaplanır.",
+    "correctAnswer": "D",
+    "explanation": "Bu ayın satışlarından tahsilat = 600.000 × %60 = 360.000 ₺. Önceki alacaktan tahsilat = 410.000 − 360.000 = 50.000 ₺; bu tutar önceki alacağın %25’i olduğundan alacak 50.000 ÷ 0,25 = 200.000 ₺’dir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt ilk madde bütçesi"
+      "legislationRef": "Nakit bütçesi"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Bütçeleme, Planlama ve Kontrol"
+    ],
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-butce-0031",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "butceleme_planlama_kontrol",
+    "question": "Bir işletmenin yönetim kurulu ana bütçe hazırlama sürecini gözden geçirmektedir. Bütçe uzmanının hazırladığı süreç notunda bir hatalı ifade yer almaktadır.\n\nAna bütçe süreciyle ilgili aşağıdakilerden hangisi yanlıştır?",
+    "choices": {
+      "A": "Nakit bütçesi, satış bütçesinden önce hazırlanır.",
+      "B": "Üretim bütçesi, satış bütçesi ve stok politikasına dayanır.",
+      "C": "Hammadde satın alma bütçesi üretim bütçesinden türetilir.",
+      "D": "Bütçelenmiş gelir tablosu faaliyet bütçelerinden sonra hazırlanır.",
+      "E": "Bütçelenmiş bilanço nakit bütçesinden veri alır."
+    },
+    "correctAnswer": "A",
+    "explanation": "Nakit bütçesi tahsilat ve ödemeleri gösterdiğinden satış, satın alma ve gider bütçelerinden sonra hazırlanan finansal bütçelerdendir. Satış bütçesinden önce hazırlanamaz.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -982,43 +1015,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-butce-0031",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "butceleme_planlama_kontrol",
-    "question": "4.000 birim üretimin direkt işçilik bütçesi 504.000 TL, saatlik ücret 210 TL'dir. Birim başına standart işçilik süresi kaç saattir?",
-    "choices": {
-      "D": "0,60 saat",
-      "A": "0,40 saat",
-      "B": "0,50 saat",
-      "C": "0,70 saat",
-      "E": "0,80 saat"
-    },
-    "correctAnswer": "D",
-    "explanation": "Toplam işçilik süresi 504.000 / 210 = 2.400 saattir; birim başına süre 2.400 / 4.000 = 0,60 saattir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - direkt işçilik bütçesi"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Bütçeleme, Planlama ve Kontrol"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1026,20 +1026,20 @@
     "id": "kh-butce-0032",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "12.000 birim faaliyet için esnek bütçe gideri 516.000 TL, toplam sabit gider 180.000 TL'dir. Birim başına değişken gider kaç TL'dir?",
+    "question": "Bir işletmenin nakit bütçesinde dönem başı nakit 120.000 ₺, nakit girişleri 560.000 ₺ ve sağlanan banka kredisi 90.000 ₺’dir. Dönem sonunda 100.000 ₺ nakit kalması öngörülmektedir.\n\nBütçelenen dönem içi nakit çıkışları kaç ₺’dir?",
     "choices": {
-      "A": "28 TL",
-      "B": "24 TL",
-      "C": "26 TL",
-      "D": "30 TL",
-      "E": "43 TL"
+      "A": "490.000",
+      "B": "580.000",
+      "C": "670.000",
+      "D": "760.000",
+      "E": "780.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Toplam değişken gider 516.000 - 180.000 = 336.000 TL; birim değişken gider 336.000 / 12.000 = 28 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Dönem sonu nakit = başı + girişler + finansman − çıkışlar: 100.000 = 120.000 + 560.000 + 90.000 − X; X = 670.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -1048,10 +1048,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1059,20 +1059,20 @@
     "id": "kh-butce-0033",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Cari ayın 600.000 TL'lik satışının %60'ı ve önceki ay alacağının %25'i tahsil edilmiştir. Toplam tahsilat 410.000 TL ise önceki ay alacağı kaç TL'dir?",
+    "question": "Bir işletmenin satışlarının %50’si peşin tahsil edilmekte, %48’i izleyen ay tahsil edilmekte ve %2’si tahsil edilemeyen alacak olarak kalmaktadır. Mart satışları 250.000 ₺, nisan satışları 300.000 ₺ olarak bütçelenmiştir.\n\nNisan ayında bütçelenen nakit tahsilatı kaç ₺’dir?",
     "choices": {
-      "E": "200.000 TL",
-      "A": "160.000 TL",
-      "B": "180.000 TL",
-      "C": "220.000 TL",
-      "D": "250.000 TL"
+      "A": "150.000",
+      "B": "270.000",
+      "C": "275.000",
+      "D": "294.000",
+      "E": "300.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Cari satıştan 360.000 TL tahsil edilir. Kalan 50.000 TL önceki alacağın %25'i olduğundan alacak 200.000 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Nisan tahsilatı = nisan satışlarının %50’si (150.000) + mart satışlarının %48’i (120.000) = 270.000 ₺. Tahsil edilemeyen %2 nakit girişi yaratmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit tahsilat bütçesi"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -1080,11 +1080,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1092,20 +1092,20 @@
     "id": "kh-butce-0034",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Cari ayın 500.000 TL'lik alımının %70'i ve önceki ay borcunun %35'i ödenmiştir. Toplam ödeme 420.000 TL ise önceki ay borcu kaç TL'dir?",
+    "question": "Bir belediye şirketi, her yıl bütçeyi bir önceki yılın tutarlarını enflasyon oranında artırarak hazırlamaktan vazgeçmiştir. Yeni sistemde her birim, bütçe talebindeki her kalemi yeni dönem için baştan gerekçelendirmek ve faaliyetlerin gerekliliğini kanıtlamak zorundadır.\n\nBu bütçeleme yaklaşımı aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "200.000 TL",
-      "A": "150.000 TL",
-      "B": "180.000 TL",
-      "D": "220.000 TL",
-      "E": "250.000 TL"
+      "A": "Sıfır tabanlı bütçeleme",
+      "B": "Artırımlı (geleneksel) bütçeleme",
+      "C": "Kayan (sürekli) bütçeleme",
+      "D": "Faaliyet tabanlı bütçeleme",
+      "E": "Esnek bütçeleme"
     },
-    "correctAnswer": "C",
-    "explanation": "Cari alımlar için 350.000 TL ödenir. Kalan 70.000 TL önceki borcun %35'i olduğundan borç 200.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Her bütçe kaleminin geçmiş tutarlardan bağımsız olarak sıfırdan gerekçelendirildiği yaklaşım sıfır tabanlı bütçelemedir. Önceki yıl tutarlarının artırılması ise artırımlı bütçelemedir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit ödemeleri bütçesi"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1113,11 +1113,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1125,20 +1125,20 @@
     "id": "kh-butce-0035",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Başlangıç nakdi 120.000 TL, dönem içi nakit girişi 560.000 TL ve sağlanan finansman 90.000 TL'dir. Dönem sonu nakdi 100.000 TL olduğuna göre nakit çıkışları kaç TL'dir?",
+    "question": "Bir işletmenin bütçelenmiş gelir tablosu verileri şöyledir: net satışlar 2.000.000 ₺, satılan mamul maliyeti 1.200.000 ₺, faaliyet giderleri 450.000 ₺ ve finansman gideri 50.000 ₺. Kurumlar vergisi oranının %25 olduğu varsayılmaktadır.\n\nBütçelenen dönem net kârı kaç ₺’dir?",
     "choices": {
-      "B": "670.000 TL",
-      "A": "570.000 TL",
-      "C": "590.000 TL",
-      "D": "650.000 TL",
-      "E": "770.000 TL"
+      "A": "225.000",
+      "B": "262.500",
+      "C": "300.000",
+      "D": "350.000",
+      "E": "600.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Nakit eşitliği 120.000 + 560.000 + 90.000 - çıkış = 100.000 biçimindedir; buradan çıkış 670.000 TL olur.",
+    "correctAnswer": "A",
+    "explanation": "Vergi öncesi kâr = 2.000.000 − 1.200.000 − 450.000 − 50.000 = 300.000 ₺. Net kâr = 300.000 × (1 − 0,25) = 225.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - nakit bütçesi"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -1146,11 +1146,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1158,20 +1158,20 @@
     "id": "kh-butce-0036",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Gerçekleşen gider 525.000 TL ve harcama sapması 25.000 TL olumsuzdur. Fiilî hacme göre esnek bütçe gideri kaç TL'dir?",
+    "question": "Bir işletme on iki aylık bütçesini her ay güncellemektedir: biten ay bütçeden çıkarılmakta ve bütçenin sonuna yeni bir ay eklenmektedir. Böylece bütçe her zaman önümüzdeki on iki ayı kapsamaktadır.\n\nBu bütçeleme yöntemi aşağıdakilerden hangisidir?",
     "choices": {
-      "C": "500.000 TL",
-      "A": "475.000 TL",
-      "B": "525.000 TL",
-      "D": "550.000 TL",
-      "E": "575.000 TL"
+      "A": "Sıfır tabanlı bütçeleme",
+      "B": "Kayan (sürekli) bütçeleme",
+      "C": "Statik bütçeleme",
+      "D": "Program bütçeleme",
+      "E": "Faaliyet tabanlı bütçeleme"
     },
-    "correctAnswer": "C",
-    "explanation": "Olumsuz harcama sapması, gerçekleşen giderin esnek bütçeyi aştığını gösterir; esnek bütçe 525.000 - 25.000 = 500.000 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Bütçe ufkunun her dönem yeni bir ay veya çeyrek eklenerek sabit uzunlukta tutulduğu yöntem kayan (sürekli) bütçelemedir; planların güncel kalmasını sağlar.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe sapması"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1180,10 +1180,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1191,20 +1191,20 @@
     "id": "kh-butce-0037",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî alış fiyatı 33 TL, fiilî miktar 6.000 birim ve fiyat sapması 18.000 TL olumsuzdur. Bütçelenen birim fiyat kaç TL'dir?",
+    "question": "Bir işletme GÜG bütçesini 10.000 birim üretime göre 500.000 ₺ olarak hazırlamıştır; değişken GÜG birim başına 35 ₺, sabit GÜG 150.000 ₺’dir. Ay içinde fiilen 8.000 birim üretilmiştir.\n\nFiili üretim düzeyine göre esnek bütçe tutarı kaç ₺’dir?",
     "choices": {
-      "A": "30 TL",
-      "B": "27 TL",
-      "C": "29 TL",
-      "D": "31 TL",
-      "E": "36 TL"
+      "A": "280.000",
+      "B": "400.000",
+      "C": "430.000",
+      "D": "460.000",
+      "E": "500.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Birim fiyat farkı 18.000 / 6.000 = 3 TL'dir. Sapma olumsuz olduğundan bütçe fiyatı fiilî fiyattan 3 TL düşük, yani 30 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Esnek bütçe = sabit GÜG + birim değişken GÜG × fiili hacim = 150.000 + 35 × 8.000 = 430.000 ₺. Toplam bütçenin hacimle orantılı küçültülmesi (400.000 ₺) sabit giderleri de değişken sayar.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - fiyat sapması"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1212,11 +1212,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1224,20 +1224,20 @@
     "id": "kh-butce-0038",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî satış 14.400 birim, bütçe fiyatı 70 TL ve satış hacmi sapması 84.000 TL olumludur. Bütçelenen satış miktarı kaç birimdir?",
+    "question": "Bir işletme gider bütçesini, sipariş işleme, makine ayarı ve kalite kontrol gibi faaliyetlerin öngörülen işlem sayılarından hareketle hazırlamaktadır. Bir süreç iyileştirmesi sonucunda gelecek yıl makine ayarı sayısının %30 azalması beklenmektedir.\n\nBu bütçeleme yaklaşımında iyileştirmenin bütçeye ilk yansıması aşağıdakilerden hangisidir?",
     "choices": {
-      "D": "13.200 birim",
-      "A": "12.000 birim",
-      "B": "12.600 birim",
-      "C": "13.800 birim",
-      "E": "15.600 birim"
+      "A": "Tüm GÜG’ler üretim hacmine göre %30 azaltılır.",
+      "B": "Satış bütçesi ayar sayısındaki azalış oranında düşer.",
+      "C": "Ayar gideri sabit sayıldığından bütçe değişmez.",
+      "D": "Yalın süreç nedeniyle nakit bütçesi hazırlanmaz.",
+      "E": "Ayar faaliyetinin kaynak ihtiyacı ve bütçesi azalır."
     },
-    "correctAnswer": "D",
-    "explanation": "Olumlu hacim farkı 84.000 / 70 = 1.200 birimdir; bütçelenen miktar 14.400 - 1.200 = 13.200 birimdir.",
+    "correctAnswer": "E",
+    "explanation": "Faaliyet tabanlı bütçelemede kaynak ihtiyacı faaliyet sürücülerinin öngörülen miktarından türetilir; ayar sayısı azalınca ayar faaliyetine ayrılan kaynaklar ve bütçesi azalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - satış hacmi sapması"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1245,11 +1245,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1257,20 +1257,20 @@
     "id": "kh-butce-0039",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "10.000 birim fiilî faaliyet için esnek bütçe toplamı 470.000 TL ve birim değişken gider 32 TL'dir. İlgili aralıktaki toplam sabit gider kaç TL'dir?",
+    "question": "Bir işletme ürününün birim satış fiyatını 50 ₺ olarak bütçelemiş, 10.000 birim satış öngörmüştür. Ay içinde rekabet nedeniyle birim fiyat 48 ₺’ye düşmüş ve 11.000 birim satılmıştır.\n\nSatış fiyat sapması kaç ₺’dir?",
     "choices": {
-      "A": "150.000 TL",
-      "B": "120.000 TL",
-      "C": "140.000 TL",
-      "D": "170.000 TL",
-      "E": "320.000 TL"
+      "A": "2.000",
+      "B": "20.000",
+      "C": "22.000",
+      "D": "28.000",
+      "E": "50.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Fiilî hacme uyarlanmış değişken gider 10.000 × 32 = 320.000 TL'dir; sabit gider 470.000 - 320.000 = 150.000 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Satış fiyat sapması = (fiili fiyat − bütçe fiyatı) × fiili miktar = (48 − 50) × 11.000 = 22.000 ₺ olumsuz. Bütçelenen miktarla hesaplamak (20.000 ₺) hacim etkisini karıştırır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1279,10 +1279,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1290,20 +1290,20 @@
     "id": "kh-butce-0040",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir yatırım merkezinin yatırım tabanı 3.000.000 TL ve yatırım getirisi %18'dir. Faaliyet kârı kaç TL'dir?",
+    "question": "Bir işletme 10.000 birim satış bütçelemiş; bütçelenen birim fiyat 50 ₺, bütçelenen birim değişken maliyet 30 ₺’dir. Ay içinde 11.000 birim satılmıştır. İşletme sapmaları katkı payı esasına göre analiz etmektedir.\n\nSatış hacmi sapması kaç ₺’dir?",
     "choices": {
-      "C": "540.000 TL",
-      "A": "360.000 TL",
-      "B": "450.000 TL",
-      "D": "600.000 TL",
-      "E": "660.000 TL"
+      "A": "2.000",
+      "B": "20.000",
+      "C": "30.000",
+      "D": "50.000",
+      "E": "220.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Faaliyet kârı yatırım tabanı ile yatırım getirisi oranının çarpımıdır: 3.000.000 × %18 = 540.000 TL.",
+    "correctAnswer": "B",
+    "explanation": "Katkı esaslı satış hacmi sapması = (fiili miktar − bütçe miktarı) × bütçelenen birim katkı = 1.000 × (50 − 30) = 20.000 ₺ olumlu. Gelir esasında 1.000 × 50 = 50.000 ₺ olurdu.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - yatırım getirisi"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1312,10 +1312,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1323,20 +1323,20 @@
     "id": "kh-butce-0041",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir yatırım merkezinin kârı 390.000 TL, yatırım tabanı 2.500.000 TL ve artık geliri 90.000 TL'dir. Kullanılan asgari getiri oranı kaçtır?",
+    "question": "Bir işletmede bölüm müdürleri kendi sorumluluk alanlarının bütçe hedeflerinin belirlenmesine aktif olarak katılmaktadır. Genel müdür, bu yöntemin güçlü ve zayıf yönlerini değerlendirmektedir.\n\nAşağıdakilerden hangisi katılımcı bütçelemenin yararlarından biri değildir?",
     "choices": {
-      "B": "%12",
-      "A": "%8",
-      "C": "%10",
-      "D": "%15",
-      "E": "%18"
+      "A": "Hedeflerin yöneticiler tarafından benimsenmesini artırması",
+      "B": "Alt kademenin sahadaki bilgisinden yararlanılması",
+      "C": "Yöneticilerin motivasyonunu ve bağlılığını güçlendirmesi",
+      "D": "Kademeler arası iletişimi ve koordinasyonu artırması",
+      "E": "Bütçe boşluğu yaratma riskini ortadan kaldırması"
     },
-    "correctAnswer": "B",
-    "explanation": "Sermaye yükü 390.000 - 90.000 = 300.000 TL'dir; 300.000 / 2.500.000 = %12 asgari getiri oranını verir.",
+    "correctAnswer": "E",
+    "explanation": "Katılımcı bütçeleme benimsemeyi, motivasyonu ve bilgi akışını artırır; ancak yöneticilerin hedefleri kolay ulaşılabilir kılmak için giderleri yüksek, gelirleri düşük göstermesi (bütçe boşluğu) riskini doğurur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - artık gelir"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1344,11 +1344,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1356,20 +1356,20 @@
     "id": "kh-butce-0042",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış tahmini 2.000 birim azaltılmış, hedef dönem sonu ve dönem başı mamul stokları değiştirilmemiştir. Üretim bütçesi nasıl etkilenir?",
+    "question": "Bir işletmenin ay içindeki fiili gideri 525.000 ₺ olup performans raporunda harcama sapması 25.000 ₺ olumsuz olarak gösterilmiştir. Sapma fiili faaliyet düzeyine göre hazırlanan esnek bütçeyle hesaplanmıştır.\n\nFiili faaliyet düzeyine göre esnek bütçe tutarı kaç ₺’dir?",
     "choices": {
-      "B": "2.000 birim azalır",
-      "A": "Değişmez",
-      "C": "1.000 birim azalır",
-      "D": "2.000 birim artar",
-      "E": "Stok bilgisi olmadan belirlenemez"
+      "A": "25.000",
+      "B": "475.000",
+      "C": "500.000",
+      "D": "525.000",
+      "E": "550.000"
     },
-    "correctAnswer": "B",
-    "explanation": "Stok hedefleri sabitken üretim bütçesindeki değişim satış bütçesindeki değişime eşittir; bu nedenle üretim 2.000 birim azalır.",
+    "correctAnswer": "C",
+    "explanation": "Olumsuz sapma fiili giderin bütçeyi aştığını gösterir: esnek bütçe = 525.000 − 25.000 = 500.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - ana bütçe ilişkileri"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1377,11 +1377,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1389,20 +1389,20 @@
     "id": "kh-butce-0043",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Fiilî üretim bütçelenenden yüksek gerçekleşmiştir. Maliyet yöneticisinin harcama performansını hacim etkisinden ayırmak için hangi karşılaştırma kullanılmalıdır?",
+    "question": "Bir satış müdürü, performans primine kolay hak kazanmak için güvenilir piyasa tahmini 12.000 birim iken satış bütçesini 10.500 birim olarak önermiştir. Üretim müdürü de gider bütçesini gerçekçi tahminin üzerinde sunmuştur.\n\nBu davranış aşağıdakilerden hangisiyle açıklanır?",
     "choices": {
-      "A": "Fiilî hacme göre hazırlanmış esnek bütçe ile gerçekleşen gider",
-      "B": "Statik bütçe ile önceki yıl gideri",
-      "C": "Satış bütçesi ile nakit tahsilatı",
-      "D": "Fiilî üretim ile bütçelenen satış fiyatı",
-      "E": "Sabit gider ile toplam satış geliri"
+      "A": "Kontrol edilebilirlik ilkesi",
+      "B": "İstisnalara göre yönetim",
+      "C": "Amaç uyumu",
+      "D": "Esnek bütçeleme",
+      "E": "Bütçe boşluğu (bütçe gevşekliği)"
     },
-    "correctAnswer": "A",
-    "explanation": "Esnek bütçe fiilî hacimde izin verilen gideri gösterir; gerçekleşen giderle karşılaştırılması hacim etkisini ayırarak harcama performansını ortaya koyar.",
+    "correctAnswer": "E",
+    "explanation": "Yöneticilerin hedeflere kolay ulaşmak için gelirleri düşük, giderleri yüksek tahmin etmesi bütçe boşluğudur (bütçe gevşekliği). Özellikle katılımcı bütçelemede ve prim sistemleri bütçeye bağlı olduğunda görülür.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe kontrolü"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1411,10 +1411,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1422,20 +1422,20 @@
     "id": "kh-butce-0044",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Sıfır tabanlı bütçelemeye geçen bir işletmede yönetsel iş yükünü en çok artırması beklenen uygulama hangisidir?",
+    "question": "Bir işletme hammaddeyi fiilen kilogram başına 33 ₺’den 6.000 kg olarak satın almıştır. Performans raporunda satın alma fiyat sapması 18.000 ₺ olumsuz olarak raporlanmıştır.\n\nBütçelenen kilogram fiyatı kaç ₺’dir?",
     "choices": {
-      "B": "Faaliyetler için karar paketlerinin hazırlanıp önceliklendirilmesi",
-      "A": "Önceki yıl bütçesinin otomatik olarak aynen aktarılması",
-      "C": "Yalnız nakit girişlerinin aylık toplamının alınması",
-      "D": "Sabit giderlerin bütün bölümlere eşit dağıtılması",
-      "E": "Gerçekleşen satışların dönem sonunda kaydedilmesi"
+      "A": "27",
+      "B": "30",
+      "C": "31",
+      "D": "33",
+      "E": "36"
     },
     "correctAnswer": "B",
-    "explanation": "Sıfır tabanlı bütçeleme her faaliyetin gerekliliğini ve kaynak talebini karar paketleriyle yeniden savunmayı gerektirdiğinden zaman ve analiz yükünü artırır.",
+    "explanation": "Fiyat sapması = (fiili fiyat − bütçe fiyatı) × fiili miktar; olumsuz sapma fiili fiyatın yüksek olduğunu gösterir: 18.000 ÷ 6.000 = 3 ₺. Bütçe fiyatı = 33 − 3 = 30 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sıfır tabanlı bütçeleme"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1444,10 +1444,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1455,20 +1455,20 @@
     "id": "kh-butce-0045",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Faaliyet tabanlı bütçelemede bir süreç iyileştirmesi işlem sayısını azaltmıştır. Diğer koşullar aynıysa bütçeye ilk yansıması hangisidir?",
+    "question": "Bir işletmede ay içinde 14.400 birim satılmıştır. Bütçelenen birim satış fiyatı 70 ₺’dir ve gelir esasına göre satış hacmi sapması 84.000 ₺ olumlu olarak raporlanmıştır.\n\nBütçelenen satış miktarı kaç birimdir?",
     "choices": {
-      "E": "Faaliyet sürücüsü miktarı ve buna bağlı kaynak ihtiyacı azalır",
-      "A": "Bütün sabit maliyetler kendiliğinden ortadan kalkar",
-      "B": "Satış fiyatı işlem sayısıyla aynı oranda zorunlu olarak artar",
-      "C": "Geçmiş dönem bütçesi hiçbir değişiklik olmadan korunur",
-      "D": "Yalnız finansman bütçesindeki faiz oranı değişir"
+      "A": "1.200 birim",
+      "B": "12.000 birim",
+      "C": "13.200 birim",
+      "D": "14.400 birim",
+      "E": "15.600 birim"
     },
-    "correctAnswer": "E",
-    "explanation": "Faaliyet tabanlı bütçeleme kaynak ihtiyacını faaliyet sürücüsü miktarından türetir; işlem sayısındaki azalma ilgili faaliyet ve kaynak talebini düşürür.",
+    "correctAnswer": "C",
+    "explanation": "Hacim sapması = (fiili miktar − bütçe miktarı) × bütçe fiyatı; 84.000 ÷ 70 = 1.200 birim fazla satılmıştır. Bütçe miktarı = 14.400 − 1.200 = 13.200 birim.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - faaliyet tabanlı bütçeleme"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1477,10 +1477,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1488,20 +1488,20 @@
     "id": "kh-butce-0046",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "On iki aylık kayan bütçede temmuz ayı tamamlanmış ve bütçe ufkunun uzunluğu korunmak istenmiştir. Yapılması gereken işlem hangisidir?",
+    "question": "Bir işletmenin bütçe raporlarında sıfır tabanlı, kayan ve faaliyet tabanlı bütçeleme yöntemleri karşılaştırılmaktadır. Karşılaştırma tablosundaki bir ifade hatalıdır.\n\nBütçe türleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "A": "Tamamlanan temmuz çıkarılıp sonraki yılın temmuz ayı bütçeye eklenir",
-      "B": "Kalan on bir ay değiştirilmeden bütçe dönemi kısaltılır",
-      "C": "Bütün bütçe gerçekleşen temmuz rakamlarına eşitlenir",
-      "D": "Yalnız tamamlanan aya ilişkin giderler yeniden tahmin edilir",
-      "E": "Bir sonraki bütçe hazırlığı on iki ay boyunca ertelenir"
+      "A": "Sıfır tabanlı bütçede geçmiş yıl tutarları başlangıç noktası alınır.",
+      "B": "Kayan bütçede bütçe ufku her dönem yeni bir dönem eklenerek korunur.",
+      "C": "Faaliyet tabanlı bütçede kaynak ihtiyacı faaliyet sürücülerinden türetilir.",
+      "D": "Sıfır tabanlı bütçeleme yönetsel iş yükünü artırabilir.",
+      "E": "Esnek bütçe birden fazla faaliyet düzeyi için hazırlanabilir."
     },
     "correctAnswer": "A",
-    "explanation": "Kayan bütçede tamamlanan dönem ufuktan çıkarılır ve en sona aynı uzunlukta yeni bir dönem eklenerek planlama ufku sürekli korunur.",
+    "explanation": "Sıfır tabanlı bütçede her kalem sıfırdan gerekçelendirilir; geçmiş yıl tutarlarını başlangıç alan yöntem artırımlı bütçelemedir. Diğer ifadeler doğrudur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - kayan bütçe"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1510,10 +1510,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1521,20 +1521,20 @@
     "id": "kh-butce-0047",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bölüm yöneticileri bütçe hedeflerinin hazırlanmasına katılmaktadır. Bu yöntemin birlikte doğurabileceği sonuç hangisidir?",
+    "question": "Bir işletmenin 10.000 birimlik fiili faaliyet için hazırlanan esnek bütçe toplamı 470.000 ₺’dir. Birim değişken gider 32 ₺ olup geçerli aralıkta değişmemektedir.\n\nGeçerli aralıktaki toplam sabit gider kaç ₺’dir?",
     "choices": {
-      "C": "Yerel bilginin kullanılması ve bütçe gevşekliği riskinin ortaya çıkması",
-      "A": "Bilgi paylaşımının azalması ve bütün hedeflerin merkezden dayatılması",
-      "B": "Yöneticilerin hedefleri benimsemesiyle sapmaların tamamen ortadan kalkması",
-      "D": "Sorumluluk merkezlerinin ve performans ölçümünün gereksiz hâle gelmesi",
-      "E": "Geçmiş yıl rakamlarının her koşulda değişmeden kabul edilmesi"
+      "A": "47.000",
+      "B": "138.000",
+      "C": "150.000",
+      "D": "320.000",
+      "E": "470.000"
     },
     "correctAnswer": "C",
-    "explanation": "Katılım, işi bilen yöneticilerin bilgisini ve hedef benimsemeyi artırabilir; aynı zamanda kolay hedef oluşturmak için bütçe gevşekliği yaratma riski taşır.",
+    "explanation": "Sabit gider = esnek bütçe − değişken gider = 470.000 − 32 × 10.000 = 150.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - katılımcı bütçeleme"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1542,11 +1542,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1554,20 +1554,20 @@
     "id": "kh-butce-0048",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir maliyet merkezi, bütçelenenden daha yüksek faaliyet hacminde çalışmıştır. Yöneticinin maliyet performansı öncelikle hangi ölçütle değerlendirilmelidir?",
+    "question": "Bir işletmede satış bölümü yüksek stok bulundurulmasını isterken üretim bölümü kapasite kısıtını, finans bölümü ise nakit sıkıntısını gerekçe göstermektedir. Bütçe komitesi bölümlerin planlarını ortak bir hedefte birleştirmek için ana bütçeyi kullanmaktadır.\n\nBütçenin burada öne çıkan işlevi aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Kontrol edilebilir fiilî maliyetlerin fiilî hacme göre esnek bütçeyle karşılaştırılması",
-      "B": "Toplam fiilî maliyetin statik bütçeyle doğrudan karşılaştırılması",
-      "C": "Bölüm satış gelirinin yatırım tabanına bölünmesi",
-      "D": "Şirket net kârının geçen yılın satış adediyle karşılaştırılması",
-      "E": "Kontrol edilemeyen kur farklarının yöneticiye bütünüyle yüklenmesi"
+      "A": "Koordinasyon",
+      "B": "Performans ölçümü",
+      "C": "Motivasyon",
+      "D": "Kontrol",
+      "E": "Yetkilendirme"
     },
     "correctAnswer": "A",
-    "explanation": "Maliyet merkezi yöneticisi, faaliyet hacmi uyarlanmış bütçeye göre ve etkileyebildiği maliyetler üzerinden değerlendirilmelidir.",
+    "explanation": "Bütçe, farklı bölümlerin plan ve hedeflerini birbiriyle uyumlu hâle getirerek koordinasyon sağlar; satış, üretim ve finans planları tek bir ana bütçede tutarlı kılınır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - maliyet merkezi performansı"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1576,10 +1576,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1587,20 +1587,20 @@
     "id": "kh-butce-0049",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir bölüm yöneticisi satış fiyatı, satış miktarı ve bölüm giderleri üzerinde yetkili; yatırım varlıkları üzerinde yetkisizdir. En uygun performans ölçüsü hangisidir?",
+    "question": "Bir işletmenin 12.000 birim fiili faaliyet düzeyi için hazırlanan esnek bütçe gideri 516.000 ₺’dir. Toplam sabit gider 180.000 ₺’dir ve geçerli aralıkta değişmemektedir.\n\nBirim başına bütçelenen değişken gider kaç ₺’dir?",
     "choices": {
-      "E": "Kontrol edilebilir bölüm kârı",
-      "A": "Yalnız üretim miktarı",
-      "B": "Şirketin toplam aktif kârlılığı",
-      "C": "Yalnız yatırım tabanı",
-      "D": "Merkez bankası faiz oranı"
+      "A": "15",
+      "B": "28",
+      "C": "30",
+      "D": "43",
+      "E": "58"
     },
-    "correctAnswer": "E",
-    "explanation": "Yetki alanı gelir ve maliyetleri kapsayan, fakat yatırımları kapsamayan birim kâr merkezidir; performans kontrol edilebilir bölüm kârıyla ilişkilendirilir.",
+    "correctAnswer": "B",
+    "explanation": "Değişken gider toplamı = 516.000 − 180.000 = 336.000 ₺; birim değişken gider = 336.000 ÷ 12.000 = 28 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - kâr merkezi performansı"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1609,10 +1609,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1620,20 +1620,20 @@
     "id": "kh-butce-0050",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Mevcut yatırım getirisi %18 olan bir bölüm, getirisi %14 ve sermaye maliyeti %12 olan projeyi yalnız bölüm oranını düşüreceği için reddetmektedir. Bu sorunu azaltan ölçü hangisidir?",
+    "question": "Esnek bütçe ve performans raporlarına ilişkin aşağıdaki ifadeler verilmiştir:\n\nI. Esnek bütçe fiili faaliyet düzeyine göre hazırlanır.\n\nII. Statik bütçe sapması satış hacmindeki değişimin etkisini de içerir.\n\nIII. Esnek bütçede sabit giderler fiili hacimle orantılı olarak artırılır.\n\nIV. Harcama sapması, fiili gider ile esnek bütçe arasındaki farktır.\n\nYukarıdaki ifadelerden hangileri doğrudur?",
     "choices": {
-      "E": "Artık gelir",
-      "A": "Satış adedi",
-      "B": "Brüt satışlar",
-      "C": "Direkt işçilik saati",
-      "D": "Statik bütçe sapması"
+      "A": "I ve IV",
+      "B": "II ve III",
+      "C": "I, II ve III",
+      "D": "I, II ve IV",
+      "E": "II, III ve IV"
     },
-    "correctAnswer": "E",
-    "explanation": "Proje asgari getiriyi aşsa da bölümün mevcut oranını düşürür. Artık gelir, asgari sermaye yükünün üzerindeki tutarı ölçerek bu tür eksik yatırım eğilimini azaltabilir.",
+    "correctAnswer": "D",
+    "explanation": "I, II ve IV doğrudur. III yanlıştır: sabit giderler geçerli aralıkta hacimden bağımsızdır ve esnek bütçede aynı tutarda kalır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - yatırım merkezi performansı"
+      "legislationRef": "Esnek bütçe ve sapmalar"
     },
     "tags": [
       "Özgün Soru",
@@ -1641,11 +1641,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1653,20 +1653,20 @@
     "id": "kh-butce-0051",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bir bölümün olumsuz sapmasının tamamı, yöneticinin etkileyemediği beklenmedik yasal düzenleme maliyetinden kaynaklanmıştır. Sorumluluk raporunda ne yapılmalıdır?",
+    "question": "Bir işletme, hammadde fiyatlarının üç ay sonra %25 artacağına ilişkin sektör tahminini dikkate alarak artış gerçekleşmeden alternatif tedarikçilerle anlaşmış ve bütçesini buna göre revize etmiştir.\n\nBu uygulama aşağıdaki kontrol türlerinden hangisine örnektir?",
     "choices": {
-      "B": "Dışsal etki ayrı gösterilip yönetici performansı kontrol edilebilir unsurlarla değerlendirilmelidir",
-      "A": "Sapmanın tamamı koşulsuz olarak bölüm yöneticisine yüklenmelidir",
-      "C": "Olumsuz sapma olduğu için neden incelemesi yapılmamalıdır",
-      "D": "Bölümün bütün bütçe hedefleri geçmiş yıl rakamlarına çevrilmelidir",
-      "E": "Yalnız şirket satışları kullanılarak maliyet sapması yok sayılmalıdır"
+      "A": "İleriye dönük (önleyici) kontrol",
+      "B": "Geriye dönük (sonuç) kontrolü",
+      "C": "Eş zamanlı kontrol",
+      "D": "Dış denetim",
+      "E": "Sapma analizi"
     },
-    "correctAnswer": "B",
-    "explanation": "Kontrol edilebilirlik ilkesi, yöneticinin önemli ölçüde etkileyemediği dışsal sonuçların raporda ayrıştırılmasını gerektirir.",
+    "correctAnswer": "A",
+    "explanation": "Sapma ortaya çıkmadan önce gelecekteki gelişmeleri öngörüp önlem alan kontrol ileriye dönük (önleyici) kontroldür. Geriye dönük kontrol ise gerçekleşen sonuçları bütçeyle karşılaştırır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - kontrol edilebilirlik ilkesi"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1675,10 +1675,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1686,20 +1686,20 @@
     "id": "kh-butce-0052",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış yöneticisi hedefe kolay ulaşmak için güvenilir piyasa tahmininden daha düşük satış bütçesi önermiştir. Bu davranışın sonucu hangisidir?",
+    "question": "Bir yatırım merkezinin dönem verileri şöyledir: satış hasılatı 3.000.000 ₺, faaliyet kârı 360.000 ₺ ve ortalama yatırım tabanı 2.400.000 ₺. Genel merkez bölümleri yatırım getirisiyle değerlendirmektedir.\n\nBölümün yatırım getirisi (ROI) yüzde kaçtır?",
     "choices": {
-      "D": "Gelir tahmininde bütçe gevşekliği oluşur",
-      "A": "Olumlu fiyat sapması kendiliğinden kesinleşir",
-      "B": "Sıfır tabanlı bütçeleme uygulanmış olur",
-      "C": "Üretim kapasitesi zorunlu olarak artar",
-      "E": "Kontrol edilebilirlik ilkesi tamamen sağlanır"
+      "A": "%12",
+      "B": "%15",
+      "C": "%18",
+      "D": "%80",
+      "E": "%125"
     },
-    "correctAnswer": "D",
-    "explanation": "Beklenen geliri bilinçli olarak düşük göstermek, ulaşılması kolay bir hedef yaratarak bütçe gevşekliğine neden olur.",
+    "correctAnswer": "B",
+    "explanation": "ROI = faaliyet kârı ÷ yatırım tabanı = 360.000 ÷ 2.400.000 = %15. Bu oran kâr marjı (%12) ile yatırım devir hızının (1,25) çarpımına eşittir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - bütçe davranışı"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1707,11 +1707,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1719,20 +1719,20 @@
     "id": "kh-butce-0053",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Ana bütçe hazırlanırken faaliyet bütçeleri tamamlandıktan sonra bu verileri finansal sonuçlara dönüştüren bütçeler grubu hangisidir?",
+    "question": "Bir işletme ana bütçenin son aşamasında bütçelenmiş gelir tablosunda dönem kârını, nakit bütçesinde ise dönem sonu nakdini hesaplamıştır. Bütçe uzmanı, bu verilerin bütçelenmiş bilançoya nasıl aktarılacağını açıklamaktadır.\n\nİki tablo arasındaki bağlantıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "Nakit bütçesi ile bütçelenmiş finansal tablolar",
-      "B": "Yalnız satış ve üretim bütçeleri",
-      "C": "Yalnız direkt madde ve işçilik bütçeleri",
-      "D": "Yalnız stok sayım ve mutabakat çizelgeleri",
-      "E": "Yalnız geçmiş dönem gerçekleşme raporları"
+      "A": "Dönem kârı özkaynaklara, dönem sonu nakdi hazır değerlere aktarılır.",
+      "B": "Dönem kârı hazır değerlere, dönem sonu nakdi özkaynaklara aktarılır.",
+      "C": "Dönem kârı ve nakit birbirine eşit olduğundan tek kalemde gösterilir.",
+      "D": "Dönem kârı yabancı kaynaklara, nakit dönen varlıklara aktarılır.",
+      "E": "Bütçelenmiş bilanço gelir tablosundan bağımsız olarak hazırlanır."
     },
     "correctAnswer": "A",
-    "explanation": "Faaliyet bütçelerinin sonuçları nakit bütçesine ve bütçelenmiş gelir tablosu ile bilanço gibi finansal bütçelere aktarılır.",
+    "explanation": "Bütçelenmiş gelir tablosundaki dönem kârı bilançonun özkaynaklar bölümüne, nakit bütçesinden gelen dönem sonu nakdi ise dönen varlıklardaki hazır değerlere aktarılır; kâr ile nakit tahakkuk esası nedeniyle farklıdır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - ana bütçe"
+      "legislationRef": "Bütçe türleri ve bütçe süreci"
     },
     "tags": [
       "Özgün Soru",
@@ -1741,10 +1741,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1752,20 +1752,20 @@
     "id": "kh-butce-0054",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Bütçelenmiş gelir tablosunda dönem kârı, bütçelenmiş bilançoda ise dönem sonu nakdi hesaplanmıştır. İki tablo arasındaki nakit tutarı farklıysa ilk kontrol edilmesi gereken yer neresidir?",
+    "question": "Bir yatırım merkezi 360.000 ₺ faaliyet kârı ve 2.400.000 ₺ yatırım tabanı raporlamıştır. Genel merkezin bölümlerden beklediği asgari getiri oranı %12’dir.\n\nBölümün artık geliri kaç ₺’dir?",
     "choices": {
-      "C": "Nakit bütçesi ile bütçelenmiş bilanço arasındaki aktarım",
-      "A": "Satış bütçesindeki birim satış fiyatının alfabetik sırası",
-      "B": "Üretim bütçesindeki mamul adlarının yazım biçimi",
-      "D": "Geçmiş yılın denetim görüşünün paragraf uzunluğu",
-      "E": "Sorumluluk merkezlerinin organizasyon şemasındaki rengi"
+      "A": "43.200",
+      "B": "72.000",
+      "C": "288.000",
+      "D": "360.000",
+      "E": "432.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Dönem sonu nakdi nakit bütçesinden bütçelenmiş bilançoya taşındığından farklılık, iki bütçe arasındaki bağlantı ve aktarım kayıtlarında aranır.",
+    "correctAnswer": "B",
+    "explanation": "Artık gelir = faaliyet kârı − yatırım tabanı × asgari getiri = 360.000 − 2.400.000 × %12 = 360.000 − 288.000 = 72.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - bütçelenmiş finansal tablolar"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1774,10 +1774,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1785,20 +1785,20 @@
     "id": "kh-butce-0055",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Talep 20.000 birim olmasına karşın darboğaz kapasitesi en çok 16.000 birim üretime izin vermektedir. Ana bütçede hangi yaklaşım izlenmelidir?",
+    "question": "Bir yatırım merkezinin faaliyet kârı 390.000 ₺, yatırım tabanı 2.500.000 ₺ ve artık geliri 90.000 ₺ olarak raporlanmıştır. Denetim ekibi hesaplamada kullanılan asgari getiri oranını doğrulamak istemektedir.\n\nKullanılan asgari getiri oranı yüzde kaçtır?",
     "choices": {
-      "D": "Üretim ve bağlantılı bütçeler uygulanabilir 16.000 birim kapasiteye göre eşgüdümlenmelidir",
-      "A": "Kapasite kısıtı yokmuş gibi bütün bütçeler 20.000 birimde bırakılmalıdır",
-      "B": "Satış tahmini doğrudan sıfırlanıp bütçe hazırlığı sona erdirilmelidir",
-      "C": "Yalnız sabit gider bütçesi 20.000 birimle çarpılmalıdır",
-      "E": "Darboğaz yalnız dönem sonunda gerçekleşen rapora eklenmelidir"
+      "A": "%3,6",
+      "B": "%10",
+      "C": "%12",
+      "D": "%15,6",
+      "E": "%18"
     },
-    "correctAnswer": "D",
-    "explanation": "Bütçe uygulanabilir olmalıdır; darboğaz üretim, madde, işçilik, satış zamanlaması ve nakit planlarını birlikte etkiler.",
+    "correctAnswer": "C",
+    "explanation": "Asgari getiri tutarı = 390.000 − 90.000 = 300.000 ₺; oran = 300.000 ÷ 2.500.000 = %12. Bölümün ROI’si ise %15,6’dır.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - kapasite kısıtı ve bütçeleme"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1807,10 +1807,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1818,20 +1818,20 @@
     "id": "kh-butce-0056",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Satış bölümü yüksek stok isterken üretim bölümü kapasite kısıtını gerekçe göstermektedir. Ana bütçenin tutarlılığını sağlama görevi öncelikle hangi yapıya aittir?",
+    "question": "Bir işletme yeni yıl satış tahminini 2.000 birim azaltmıştır. Hedef dönem sonu mamul stoku ve dönem başı mamul stoku değiştirilmemiş, birim başına hammadde kullanımı da aynı kalmıştır.\n\nBu değişikliğin bütçelere etkisi aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "Bütçe komitesi",
-      "B": "Yalnız kasa sorumlusu",
-      "C": "Yalnız dış denetçi",
-      "D": "Yalnız stok sayım ekibi",
-      "E": "Yalnız bilgi işlem servisi"
+      "A": "Üretim bütçesi değişmez, satış bütçesi 2.000 birim azalır.",
+      "B": "Üretim bütçesi 2.000 birim azalır, hammadde bütçesi de buna bağlı düşer.",
+      "C": "Üretim bütçesi 2.000 birim artar, dönem sonu stok artışı telafi edilir.",
+      "D": "Hammadde bütçesi değişmez, işçilik bütçesi azalır.",
+      "E": "Satış bütçesi azalırken dönem sonu mamul stoku 2.000 birim artar."
     },
-    "correctAnswer": "A",
-    "explanation": "Bütçe komitesi, bölümler arası varsayımları ve çatışan hedefleri uzlaştırarak ana bütçenin eşgüdümünü sağlar.",
+    "correctAnswer": "B",
+    "explanation": "Üretim = satış + hedef son stok − başlangıç stok. Stoklar değişmediğinden satıştaki 2.000 birimlik azalış üretimi de aynı miktarda azaltır; üretime bağlı hammadde, işçilik ve değişken GÜG bütçeleri de düşer.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - bütçe organizasyonu"
+      "legislationRef": "Faaliyet bütçeleri"
     },
     "tags": [
       "Özgün Soru",
@@ -1840,10 +1840,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1851,20 +1851,20 @@
     "id": "kh-butce-0057",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Hammadde fiyatındaki beklenen artış daha gerçekleşmeden alternatif tedarik planı hazırlanmıştır. Bu uygulama hangi kontrol türüne örnektir?",
+    "question": "Bir yatırım merkezinin ortalama yatırım tabanı 3.000.000 ₺ ve yatırım getirisi %18’dir. Bölümün satış hasılatı 4.500.000 ₺’dir.\n\nBölümün faaliyet kârı kaç ₺’dir?",
     "choices": {
-      "C": "İleriye yönelik kontrol",
-      "A": "Geri bildirim kontrolü",
-      "B": "Dönem sonu kayıt kontrolü",
-      "D": "Yalnız sonuç raporlaması",
-      "E": "Tarihsel maliyet sınıflaması"
+      "A": "166.667",
+      "B": "360.000",
+      "C": "450.000",
+      "D": "540.000",
+      "E": "810.000"
     },
-    "correctAnswer": "C",
-    "explanation": "Sonuç ortaya çıkmadan önce tahmin edilen sapmaya yönelik önlem alınması, ileriye yönelik kontrolün tipik özelliğidir.",
+    "correctAnswer": "D",
+    "explanation": "Faaliyet kârı = yatırım tabanı × ROI = 3.000.000 × %18 = 540.000 ₺. Kâr marjı %12, yatırım devir hızı 1,5’tir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - bütçe kontrolü"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1873,10 +1873,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1884,20 +1884,20 @@
     "id": "kh-butce-0058",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Ana bütçe süreciyle ilgili hangileri doğrudur?\n\nI. Satış bütçesi üretim planını etkiler\n\nII. Üretim planı madde ve işçilik gereksinimlerine temel olur\n\nIII. Nakit bütçesi tahsilat ve ödeme zamanlamasını birleştirir",
+    "question": "Bir işletmenin bölge satış ofisinin yöneticisi, satış fiyatları ve ürün maliyetleri genel merkezde belirlendiği için yalnızca bölgedeki satış hasılatını artırmaktan sorumlu tutulmaktadır. Ofisin küçük işletme giderleri ayrı bir bütçede izlenmektedir.\n\nSorumluluk muhasebesi açısından bu ofis nasıl sınıflandırılır?",
     "choices": {
-      "B": "I, II ve III",
-      "A": "Yalnız I",
-      "C": "Yalnız II",
-      "D": "I ve II",
-      "E": "II ve III"
+      "A": "Kâr merkezi",
+      "B": "Gelir merkezi",
+      "C": "Yatırım merkezi",
+      "D": "Maliyet merkezi",
+      "E": "Üretim merkezi"
     },
     "correctAnswer": "B",
-    "explanation": "Satış tahmini üretim ihtiyacını, üretim de kaynak bütçelerini belirler; nakit bütçesi bu planların tahsilat ve ödeme zamanlarını bütünleştirir.",
+    "explanation": "Yöneticinin performansının esas olarak elde edilen gelirle ölçüldüğü, fiyat ve ürün maliyetleri üzerinde yetkisi olmayan birimler gelir merkezidir. Performansı satış bütçesiyle karşılaştırılarak değerlendirilir.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - ana bütçe"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1905,11 +1905,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1917,20 +1917,20 @@
     "id": "kh-butce-0059",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Esnek bütçeyle ilgili hangileri doğrudur?\n\nI. Fiilî faaliyet düzeyine uyarlanır\n\nII. Değişken maliyet davranışını dikkate alır\n\nIII. Toplam sabit gider her faaliyet değişiminde aynı oranda değişir",
+    "question": "Bir işletmenin satıcı bölümü ürettiği bir parçayı dış pazarda 60 ₺’den satmakta ve dış satışlarda birim başına 3 ₺ satış gideri katlanmaktadır; iç satışlarda bu gider doğmamaktadır. Parçanın birim değişken maliyeti 42 ₺’dir ve bölüm tam kapasiteyle çalışmaktadır.\n\nSatıcı bölüm için asgari transfer fiyatı kaç ₺’dir?",
     "choices": {
-      "D": "I ve II",
-      "A": "Yalnız I",
-      "B": "Yalnız III",
-      "C": "I ve III",
-      "E": "I, II ve III"
+      "A": "42",
+      "B": "45",
+      "C": "57",
+      "D": "60",
+      "E": "63"
     },
-    "correctAnswer": "D",
-    "explanation": "İlk iki öncül esnek bütçeyi tanımlar. Toplam sabit gider, ilgili faaliyet aralığında hacimle orantılı değişmez.",
+    "correctAnswer": "C",
+    "explanation": "Asgari transfer fiyatı = birim değişken maliyet + vazgeçilen dış satış katkısı = 42 + (60 − 42 − 3) = 57 ₺. İç satışta 3 ₺ satış gideri doğmadığından piyasa fiyatının tamamı (60 ₺) gerekmez.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - esnek bütçe"
+      "legislationRef": "Sorumluluk muhasebesi ve performans ölçümü"
     },
     "tags": [
       "Özgün Soru",
@@ -1939,10 +1939,10 @@
       "Bütçeleme, Planlama ve Kontrol"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1950,20 +1950,20 @@
     "id": "kh-butce-0060",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "butceleme_planlama_kontrol",
-    "question": "Sorumluluk merkezleriyle ilgili hangileri doğrudur?\n\nI. Maliyet merkezi yöneticisi kontrol edebildiği maliyetlerden sorumludur\n\nII. Kâr merkezi gelir ve maliyetleri birlikte dikkate alır\n\nIII. Yatırım merkezi kullanılan varlıkları da performans ölçümüne katar",
+    "question": "Bir işletmenin nakit bütçesinde ay sonu finansman öncesi nakit mevcudu 260.000 ₺ olarak hesaplanmıştır. İşletme politikası gereği ay sonunda en az 100.000 ₺ nakit bulundurulmakta, fazla nakitle bankaya olan 200.000 ₺’lik kısa vadeli kredinin anaparası mümkün olduğu kadar geri ödenmektedir.\n\nAy sonunda geri ödenecek kredi anaparası kaç ₺’dir?",
     "choices": {
-      "D": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "Yalnız II",
-      "C": "I ve II",
-      "E": "II ve III"
+      "A": "60.000",
+      "B": "100.000",
+      "C": "160.000",
+      "D": "200.000",
+      "E": "260.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Maliyet, kâr ve yatırım merkezleri artan yetki alanlarını yansıtır; yatırım merkezinde gelir ve maliyetlere ek olarak kullanılan varlıklar da değerlendirilir.",
+    "correctAnswer": "C",
+    "explanation": "Kullanılabilir nakit fazlası = 260.000 − 100.000 = 160.000 ₺. Kredi bakiyesi (200.000 ₺) bu tutardan büyük olduğundan 160.000 ₺ anapara geri ödenir; kalan kredi 40.000 ₺ olur.",
     "source": {
       "kind": "generated",
       "styleRef": "2026 SMMM beş seçenekli test",
-      "legislationRef": "Yönetim muhasebesi - sorumluluk merkezleri"
+      "legislationRef": "Nakit bütçesi"
     },
     "tags": [
       "Özgün Soru",
@@ -1971,11 +1971,11 @@
       "Konu Havuzu",
       "Bütçeleme, Planlama ve Kontrol"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
     "examPeriod": "2026 test sistemine uyumlu özgün soru",
-    "legislationVersion": "SMMM kapsamına uyarlanmış yönetim muhasebesi esasları (2026)",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "legislationVersion": "Bütçeleme ve sorumluluk muhasebesi esasları; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   }

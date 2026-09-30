@@ -3,20 +3,20 @@
     "id": "kh-yon-mhk-0001",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Maliyet-Hacim-Kâr modelinde 'geçerli faaliyet aralığı' sınırlaması neden önemlidir?",
+    "question": "Bir çağrı merkezinin telefon gideri; hat sayısına bağlı olarak her ay ödenen 18.000 ₺ sabit abonelik ücreti ile konuşma süresine göre dakika başına 0,40 ₺ tutarındaki kullanım ücretinden oluşmaktadır. Konuşma süresi aydan aya önemli ölçüde değişmektedir.\n\nBu gider maliyet davranışı bakımından nasıl sınıflandırılır?",
     "choices": {
-      "B": "Maliyet davranışı varsayımları yalnız belirli hacim aralığında geçerlidir",
-      "A": "Satış fiyatı ve sabit maliyet her üretim düzeyinde aynı kalır",
-      "C": "İşletme yalnız başabaş noktasında üretim yapabilir",
-      "D": "Değişken maliyetler hacim arttıkça sıfıra iner",
-      "E": "Maliyet ilişkileri bütün kapasite düzeylerinde değişmez"
+      "A": "Basamaklı sabit maliyet",
+      "B": "Tam değişken maliyet",
+      "C": "Batık maliyet",
+      "D": "Kaçınılamaz sabit maliyet",
+      "E": "Yarı değişken (karma) gider"
     },
-    "correctAnswer": "B",
-    "explanation": "Birim değişken maliyetin ve toplam sabit maliyetin sabitliği, kapasite yapısının değişmediği belirli bir faaliyet aralığı için varsayılır.",
+    "correctAnswer": "E",
+    "explanation": "Bir kısmı faaliyet hacminden bağımsız (18.000 ₺ abonelik), bir kısmı hacimle orantılı (dakika ücreti) olan giderler karma (yarı değişken) maliyettir; MHK analizinde sabit ve değişken kısımlarına ayrılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - MHK analizinde geçerli faaliyet aralığı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
     },
     "tags": [
       "Özgün Soru",
@@ -25,10 +25,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -36,119 +36,20 @@
     "id": "kh-yon-mhk-0002",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Bakım gideri 5.000 makine saatinde 250.000 TL, 9.000 saatte 410.000 TL olmuştur. Yüksek-düşük noktalar yöntemiyle saat başına değişken bakım gideri kaç TL'dir?",
+    "question": "Bir tekstil işletmesinin son beş aylık makine saatleri ve bakım giderleri aşağıdaki tabloda verilmiştir:\n\n| Ay | Makine saati | Bakım gideri (₺) |\n|---|---|---|\n| Ocak | 6.200 | 318.000 |\n| Şubat | 7.800 | 366.000 |\n| Mart | 5.000 | 282.000 |\n| Nisan | 9.000 | 402.000 |\n| Mayıs | 8.100 | 381.000 |\n\nYüksek-düşük noktalar yöntemine göre makine saati başına değişken bakım gideri kaç ₺’dir?",
     "choices": {
-      "E": "40 TL",
-      "A": "45,56 TL",
-      "B": "50 TL",
-      "C": "17,78 TL",
-      "D": "47,14 TL"
-    },
-    "correctAnswer": "E",
-    "explanation": "Değişken gider, gider farkının hacim farkına bölünmesiyle bulunur: (410.000 − 250.000) / (9.000 − 5.000) = 40 TL/saat.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - yüksek-düşük noktalar yöntemiyle değişken maliyet tahmini"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0003",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Önceki bakım gideri verilerinde saat başına değişken gider 40 TL ise tahmini aylık sabit bakım gideri kaç TL'dir?",
-    "choices": {
-      "B": "50.000 TL",
-      "A": "245.000 TL",
-      "C": "160.000 TL",
-      "D": "200.000 TL",
-      "E": "401.000 TL"
+      "A": "24",
+      "B": "30",
+      "C": "33",
+      "D": "44,67",
+      "E": "56,40"
     },
     "correctAnswer": "B",
-    "explanation": "Yüksek düzey kullanılırsa sabit gider 410.000 − (9.000 × 40) = 50.000 TL'dir; düşük düzey de aynı sonucu verir.",
+    "explanation": "En yüksek (Nisan: 9.000 saat, 402.000 ₺) ve en düşük (Mart: 5.000 saat, 282.000 ₺) faaliyet düzeyleri alınır: (402.000 − 282.000) ÷ (9.000 − 5.000) = 30 ₺. Ara aylar yöntemde kullanılmaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - karma maliyet fonksiyonunda sabit bileşenin tahmini"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0004",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Doğrusal Maliyet-Hacim-Kâr modeline ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Birim satış fiyatının geçerli aralıkta sabit olduğu varsayılır\n\nII. Toplam sabit maliyetin geçerli aralıkta değişmediği varsayılır\n\nIII. Birim değişken maliyetin her ek birimde farklılaştığı varsayılır",
-    "choices": {
-      "D": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "E": "Yalnız III"
-    },
-    "correctAnswer": "D",
-    "explanation": "Basit doğrusal model, geçerli aralıkta satış fiyatını ve birim değişken maliyeti sabit; toplam sabit maliyeti değişmez kabul eder. Üçüncü ifade bu varsayımın tersidir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - doğrusal MHK analizinin temel varsayımları"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0005",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Katkı payı esaslı gelir tablosunda üretimle birlikte değişmeyen fabrika kirası hangi bölümde gösterilir?",
-    "choices": {
-      "D": "Toplam katkı payından sonra sabit maliyet olarak",
-      "A": "Satış gelirinden önce değişken satış indirimi olarak",
-      "B": "Birim değişken üretim maliyetinin içinde",
-      "C": "Yalnız dönem sonu stok maliyetinin içinde",
-      "E": "Değişken yönetim giderleri arasında"
-    },
-    "correctAnswer": "D",
-    "explanation": "Katkı yaklaşımında satışlardan bütün değişken maliyetler çıkarılarak katkı payı; ardından sabit maliyetler çıkarılarak faaliyet kârı bulunur.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - katkı payı esaslı gelir tablosu sınıflandırması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
     },
     "tags": [
       "Özgün Soru",
@@ -157,10 +58,109 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "easy",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0003",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir plastik enjeksiyon işletmesinin son beş dönemdeki üretim miktarları ve enerji giderleri aşağıdadır:\n\n| Dönem | Üretim (birim) | Enerji gideri (₺) |\n|---|---|---|\n| 1 | 12.000 | 195.000 |\n| 2 | 22.000 | 290.000 |\n| 3 | 16.000 | 232.000 |\n| 4 | 8.000 | 150.000 |\n| 5 | 20.000 | 268.000 |\n\nYüksek-düşük noktalar yöntemine göre dönemlik sabit enerji gideri kaç ₺’dir?",
+    "choices": {
+      "A": "68.000",
+      "B": "70.000",
+      "C": "80.000",
+      "D": "90.000",
+      "E": "150.000"
+    },
+    "correctAnswer": "B",
+    "explanation": "Değişken oran = (290.000 − 150.000) ÷ (22.000 − 8.000) = 10 ₺/birim. Sabit gider = 150.000 − 10 × 8.000 = 70.000 ₺ (sağlama: 290.000 − 10 × 22.000 = 70.000 ₺).",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0004",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir gıda işletmesinde her 2.000 birimlik aylık üretim için bir kalite kontrol uzmanı gerekmektedir. Uzmanlar aylık sabit maaşla çalışmakta; üretim 2.000 birimi her aştığında yeni bir uzman işe alınmaktadır. Üretim 1.500 birimden 1.900 birime çıktığında kalite kontrol gideri değişmemiştir.\n\nKalite kontrol uzmanlarının maaşları maliyet davranışı bakımından nasıl sınıflandırılır?",
+    "choices": {
+      "A": "Karma (yarı değişken) maliyet",
+      "B": "Tam değişken maliyet",
+      "C": "Doğrusal sabit maliyet",
+      "D": "Fırsat maliyeti",
+      "E": "Basamaklı sabit maliyet"
+    },
+    "correctAnswer": "E",
+    "explanation": "Belirli bir hacim aralığında sabit kalan, aralık aşılınca bir basamak yükselen maliyetler basamaklı sabit maliyettir. Basamak geniş olduğundan MHK analizinde her aralıkta sabit maliyet gibi ele alınır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0005",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir işletmenin maliyet uzmanı geçmiş verilerden bakım giderini Y = 84.000 + 12,5X (X: makine saati) denklemiyle tahmin etmiştir. Denklem 8.000-16.000 makine saati aralığındaki verilerden türetilmiştir. Gelecek ay 14.400 makine saati çalışılması planlanmaktadır.\n\nGelecek ayın tahmini bakım gideri kaç ₺’dir?",
+    "choices": {
+      "A": "180.000",
+      "B": "198.000",
+      "C": "254.400",
+      "D": "264.000",
+      "E": "276.000"
+    },
+    "correctAnswer": "D",
+    "explanation": "Planlanan hacim geçerli aralıkta olduğundan denklem kullanılabilir: 84.000 + 12,5 × 14.400 = 84.000 + 180.000 = 264.000 ₺.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -168,20 +168,20 @@
     "id": "kh-yon-mhk-0006",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Birim katkı payı 40 TL'dir. Toplam sabit maliyet 5.000 birime kadar 220.000 TL, bu düzey aşılırsa 260.000 TL olacaktır. Basamaklı kapasite dikkate alındığında geçerli başabaş miktarı kaç birimdir?",
+    "question": "Bir bisiklet üreticisi tek model üretmektedir. Bisikletin satış fiyatı 250 ₺, birim değişken maliyeti (malzeme, işçilik, değişken GÜG ve satış komisyonu dâhil) 160 ₺’dir. Aylık toplam sabit maliyet 540.000 ₺ olup bunun 360.000 ₺’si üretim, 180.000 ₺’si yönetim giderlerine aittir.\n\nBaşabaş satış miktarı kaç birimdir?",
     "choices": {
-      "A": "6.500 birim",
-      "B": "5.500 birim",
-      "C": "5.000 birim",
-      "D": "2.600 birim",
-      "E": "2.200 birim"
+      "A": "2.160 birim",
+      "B": "3.375 birim",
+      "C": "4.000 birim",
+      "D": "6.000 birim",
+      "E": "6.750 birim"
     },
-    "correctAnswer": "A",
-    "explanation": "Alt basamak hesabı 5.500 birimle 5.000 sınırını aştığı için tutarsızdır. Üst basamakta 260.000 / 40 = 6.500 birim geçerlidir.",
+    "correctAnswer": "D",
+    "explanation": "Birim katkı payı = 250 − 160 = 90 ₺. Başabaş miktarı = toplam sabit maliyet ÷ birim katkı payı = 540.000 ÷ 90 = 6.000 birim. Sabit maliyetin üretim ya da yönetim gideri olması sonucu değiştirmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - basamaklı sabit maliyet altında başabaş analizi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -189,11 +189,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -201,20 +201,20 @@
     "id": "kh-yon-mhk-0007",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Mevcut süreçte birim değişken maliyet 70 TL ve sabit maliyet 300.000 TL'dir. Otomasyon seçeneğinde değişken maliyet 40 TL'ye düşecek, sabit maliyet 480.000 TL olacaktır. Satış fiyatı 130 TL iken iki süreç hangi hacimde aynı faaliyet kârını verir?",
+    "question": "Bir işletmenin mevcut tesisinde tek vardiyayla aylık 6.000-12.000 birim arasında üretim yapılabilmektedir. Yönetim, gelecek yıl talebin 15.000 birime çıkacağını ve bunun için ikinci vardiya ile ek makine kiralanacağını öngörmektedir. MHK hesapları mevcut aralıktaki verilerle yapılmıştır.\n\nBu durumda MHK analizinin sonuçlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "A": "6.000 birim",
-      "B": "2.000 birim",
-      "C": "5.000 birim",
-      "D": "5.333,33 birim",
-      "E": "26.000 birim"
+      "A": "Sabit maliyetler 15.000 birimde de mevcut tutarında kalır.",
+      "B": "Birim değişken maliyet hacim arttıkça aynı oranda yükselir.",
+      "C": "Geçerli aralık dışındaki tahminler daha doğru sonuç verir.",
+      "D": "Ek vardiya maliyetleri değil birim satış fiyatını etkiler.",
+      "E": "Mevcut hesaplar 12.000 birimi aşan hacimde güvenilir olmaz."
     },
-    "correctAnswer": "A",
-    "explanation": "Eşitlikte yalnız farklılaşan maliyetler kullanılır: (480.000 − 300.000) / (70 − 40) = 6.000 birim.",
+    "correctAnswer": "E",
+    "explanation": "MHK ilişkileri geçerli faaliyet aralığında doğrusal kabul edilir. İkinci vardiya ve ek makine sabit maliyetleri (ve belki birim değişken maliyeti) değiştireceğinden 12.000 birimi aşan hacim için analiz yeniden yapılmalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - maliyet yapıları arasında kayıtsızlık hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
     },
     "tags": [
       "Özgün Soru",
@@ -222,11 +222,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -234,20 +234,20 @@
     "id": "kh-yon-mhk-0008",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Dağıtım seçeneği A'nın sabit gideri 90.000 TL, birim gideri 14 TL; B'nin sabit gideri 150.000 TL, birim gideri 8 TL'dir. İki seçeneğin toplam maliyetleri kaç birimde eşitlenir?",
+    "question": "Bir perakende işletmesinde değişken maliyetler net satış hasılatının %64’ünü oluşturmaktadır. Yıllık toplam sabit maliyet 450.000 ₺’dir; işletme birçok ürün sattığı ve satış karmasının dönem içinde değişmediği varsayılmaktadır.\n\nBaşabaş net satış hasılatı kaç ₺’dir?",
     "choices": {
-      "D": "10.000 birim",
-      "A": "4.285,71 birim",
-      "B": "7.500 birim",
-      "C": "40.000 birim",
-      "E": "15.000 birim"
+      "A": "703.125",
+      "B": "900.000",
+      "C": "1.125.000",
+      "D": "1.250.000",
+      "E": "1.500.000"
     },
     "correctAnswer": "D",
-    "explanation": "90.000 + 14Q = 150.000 + 8Q eşitliğinden Q = 60.000 / 6 = 10.000 birimdir.",
+    "explanation": "Katkı payı oranı = 1 − 0,64 = %36. Başabaş satış hasılatı = 450.000 ÷ 0,36 = 1.250.000 ₺. Değişken maliyet oranına bölmek (703.125 ₺) katkı payı yerine maliyet oranını kullanmak olur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - alternatif maliyet fonksiyonlarının kayıtsızlık noktası"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -256,10 +256,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -267,20 +267,20 @@
     "id": "kh-yon-mhk-0009",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Faaliyet kaldıracı ve maliyet yapısına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Sabit maliyet ağırlığı arttıkça başabaş yakınında faaliyet kaldıracı yükselebilir\n\nII. Satışlar başabaş noktasının üzerine çıktıkça faaliyet kaldıracı genellikle azalır\n\nIII. Yüksek faaliyet kaldıracı satış dalgalanmasının kâra etkisini azaltır",
+    "question": "Bir işletmenin dönem verileri şöyledir: net satışlar 2.400.000 ₺, değişken üretim maliyeti 1.080.000 ₺, değişken pazarlama gideri 240.000 ₺, sabit genel üretim gideri 420.000 ₺ ve sabit yönetim gideri 300.000 ₺. İşletme iç raporlamada katkı payı esaslı gelir tablosu düzenlemektedir.\n\nBu tabloda toplam katkı payı kaç ₺ olarak gösterilir?",
     "choices": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "360.000",
+      "B": "660.000",
+      "C": "900.000",
+      "D": "1.080.000",
+      "E": "1.320.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Sabit maliyet ağırlığı kârı satış değişimine daha duyarlı kılar. Başabaştan uzaklaştıkça kâr büyür ve katkı payı/kâr oranı düşer; yüksek kaldıraç etkiyi azaltmaz, büyütür.",
+    "correctAnswer": "D",
+    "explanation": "Katkı payı = net satışlar − tüm değişken maliyetler = 2.400.000 − 1.080.000 − 240.000 = 1.080.000 ₺. Sabit üretim ve yönetim giderleri (720.000 ₺) katkı payından sonra düşülür; faaliyet kârı 360.000 ₺’dir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - maliyet yapısı ve faaliyet kaldıracı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -289,10 +289,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -300,20 +300,20 @@
     "id": "kh-yon-mhk-0010",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Toplam sabit maliyet 360.000 TL olup bunun 120.000 TL'si nakit çıkışı yaratmayan amortismandır. Birim katkı payı 48 TL ise nakit başabaş miktarı kaç birimdir?",
+    "question": "Bir işletme iç raporlamada katkı payı esaslı gelir tablosu, dış raporlamada ise fonksiyon esaslı (tam maliyet) gelir tablosu kullanmaktadır. Fabrika binasının aylık 80.000 ₺ kira gideri üretim hacminden bağımsızdır.\n\nBu kira gideri katkı payı esaslı gelir tablosunda nerede gösterilir?",
     "choices": {
-      "A": "5.000 birim",
-      "B": "7.500 birim",
-      "C": "2.500 birim",
-      "D": "10.000 birim",
-      "E": "3.750 birim"
+      "A": "Satılan malın maliyeti içinde mamul maliyetine katılarak",
+      "B": "Değişken üretim maliyetleri arasında satışlardan önce",
+      "C": "Satış hasılatından indirim olarak brüt satışların altında",
+      "D": "Stok maliyetine eklenip satıldıkça gidere dönüşerek",
+      "E": "Katkı payından sonra dönem sabit giderleri arasında"
     },
-    "correctAnswer": "A",
-    "explanation": "Nakit sabit gider 360.000 − 120.000 = 240.000 TL'dir. Nakit başabaş 240.000 / 48 = 5.000 birim olur.",
+    "correctAnswer": "E",
+    "explanation": "Katkı payı esaslı tabloda satışlardan önce tüm değişken maliyetler düşülerek katkı payı bulunur; üretime ilişkin olanlar dâhil sabit maliyetler katkı payından sonra dönem gideri olarak toplu gösterilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - nakit başabaş noktası"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -322,10 +322,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -333,20 +333,20 @@
     "id": "kh-yon-mhk-0011",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Yüksek-düşük yöntemiyle bakım maliyeti Y = 50.000 + 40X biçiminde tahmin edilmiştir. 7.000 makine saatindeki toplam bakım maliyeti kaç TL'dir?",
+    "question": "Bir ev aletleri üreticisinin tek ürününün satış fiyatı 180 ₺, birim değişken maliyeti 108 ₺’dir. Yıllık sabit maliyetler 504.000 ₺’dir. Yönetim gelecek yıl için vergi öncesi 216.000 ₺ faaliyet kârı hedeflemektedir.\n\nHedef kâra ulaşmak için satılması gereken miktar kaç birimdir?",
     "choices": {
-      "B": "330.000 TL",
-      "A": "280.000 TL",
-      "C": "350.000 TL",
-      "D": "400.000 TL",
-      "E": "57.000 TL"
+      "A": "3.000 birim",
+      "B": "4.000 birim",
+      "C": "7.000 birim",
+      "D": "10.000 birim",
+      "E": "12.000 birim"
     },
-    "correctAnswer": "B",
-    "explanation": "Tahmini maliyet 50.000 + (40 × 7.000) = 330.000 TL'dir.",
+    "correctAnswer": "D",
+    "explanation": "Birim katkı payı = 180 − 108 = 72 ₺. Hedef miktar = (sabit maliyet + hedef kâr) ÷ birim katkı = (504.000 + 216.000) ÷ 72 = 10.000 birim. Başabaş miktarı 7.000 birimdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - karma maliyet fonksiyonuyla maliyet tahmini"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -355,10 +355,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -366,20 +366,20 @@
     "id": "kh-yon-mhk-0012",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "İşletme 5.400 birimi 120 TL'den satmakta, birim değişken maliyeti 72 TL'dir. Fiyat 108 TL'ye indirilirse aynı toplam katkı payını korumak için kaç birim satılmalıdır?",
+    "question": "Bir işletmenin ay sonu raporunda satış hasılatı ile toplam maliyetlerin birbirine eşit olduğu, dolayısıyla faaliyet kârının sıfır çıktığı görülmüştür. İşletmenin birim satış fiyatı ve birim değişken maliyeti ay içinde değişmemiştir.\n\nBu satış düzeyi için aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "E": "7.200 birim",
-      "A": "5.400 birim",
-      "B": "2.400 birim",
-      "C": "6.000 birim",
-      "D": "9.000 birim"
+      "A": "Toplam katkı payı toplam sabit maliyete eşittir.",
+      "B": "Toplam katkı payı sıfırdır.",
+      "C": "Toplam satış toplam değişken maliyete eşittir.",
+      "D": "Güvenlik payı oranı %100’dür.",
+      "E": "Faaliyet kaldıracı derecesi 1’e eşittir."
     },
-    "correctAnswer": "E",
-    "explanation": "Mevcut katkı 5.400 × (120 − 72) = 259.200 TL'dir. Yeni birim katkı 36 TL; gerekli hacim 259.200 / 36 = 7.200 birimdir.",
+    "correctAnswer": "A",
+    "explanation": "Başabaş noktasında kâr sıfırdır; bu da katkı payının sabit maliyetleri tam olarak karşıladığı anlamına gelir. Güvenlik payı sıfır olup faaliyet kaldıracı derecesi tanımsız (sonsuz) hâle gelir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - fiyat indirimi sonrası katkı payını koruyan satış hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -387,11 +387,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -399,20 +399,20 @@
     "id": "kh-yon-mhk-0013",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Fiyat 90 TL iken 8.000 birim satılmaktadır. Fiyat 96 TL'ye çıkarılırsa satışın 7.200 birime düşeceği tahmin edilmektedir. Birim değişken maliyet 54 TL ve sabit gider değişmiyorsa kâr nasıl etkilenir?",
+    "question": "Bir işletmenin katkı payı oranı %40, yıllık sabit maliyeti 600.000 ₺’dir. Kurumlar vergisi oranının %20 olduğu varsayılmaktadır. Yönetim, vergi sonrası 240.000 ₺ net kâr elde etmeyi hedeflemektedir.\n\nBu hedef için gerekli satış hasılatı kaç ₺’dir?",
     "choices": {
-      "E": "14.400 TL artar",
-      "A": "302.400 TL artar",
-      "B": "288.000 TL azalır",
-      "C": "43.200 TL artar",
-      "D": "28.800 TL azalır"
+      "A": "1.500.000",
+      "B": "2.100.000",
+      "C": "2.250.000",
+      "D": "2.400.000",
+      "E": "2.700.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Eski toplam katkı 288.000 TL, yeni toplam katkı 302.400 TL'dir. Sabit gider değişmediğinden kâr 14.400 TL artar.",
+    "correctAnswer": "C",
+    "explanation": "Vergi öncesi kâr = 240.000 ÷ (1 − 0,20) = 300.000 ₺. Gerekli hasılat = (600.000 + 300.000) ÷ 0,40 = 2.250.000 ₺. Vergi etkisi dikkate alınmazsa 2.100.000 ₺ bulunur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - fiyat-hacim değişiminin katkı payıyla değerlendirilmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -421,10 +421,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -432,20 +432,20 @@
     "id": "kh-yon-mhk-0014",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Maliyet-Hacim-Kâr modelinin kullanım sınırlarına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Geçerli aralık dışındaki kapasite değişimleri modeli bozabilir\n\nII. Satış karması değişse bile ağırlıklı katkı payı kesinlikle aynı kalır\n\nIII. Fiyat ve maliyetlerin doğrusal olmadığı durumda model uyarlanmalıdır",
+    "question": "Bir işletmenin ürününün satış fiyatı 200 ₺, birim değişken maliyeti 130 ₺ ve yıllık sabit maliyeti 360.000 ₺’dir. Yönetim, satış hasılatının %10’u kadar faaliyet kârı elde edilecek satış düzeyini belirlemek istemektedir.\n\nBu hedef için satılması gereken miktar kaç birimdir?",
     "choices": {
-      "D": "I ve III",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "E": "Yalnız II"
+      "A": "4.800 birim",
+      "B": "5.143 birim",
+      "C": "6.000 birim",
+      "D": "7.200 birim",
+      "E": "9.000 birim"
     },
     "correctAnswer": "D",
-    "explanation": "Kapasite basamakları ile doğrusal olmayan fiyat ve maliyetler basit modeli sınırlar. Çok ürünlü işletmede satış karması değişirse ağırlıklı katkı payı da değişebilir.",
+    "explanation": "Her birimden kâr olarak ayrılacak tutar 200 × %10 = 20 ₺’dir; bu tutar katkı payından düşülür: 70 − 20 = 50 ₺. Gerekli miktar = 360.000 ÷ 50 = 7.200 birim (hasılat 1.440.000 ₺, kâr 144.000 ₺).",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - MHK analizinin sınırlılıkları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -453,11 +453,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -465,20 +465,20 @@
     "id": "kh-yon-mhk-0015",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Hacim indirimi nedeniyle birim satış fiyatının satış miktarı arttıkça düşmesi, basit doğrusal MHK modelinde hangi varsayımı ihlal eder?",
+    "question": "Aynı sektörde faaliyet gösteren A ve B işletmelerinin satış hasılatı ve faaliyet kârı bu yıl eşittir. A işletmesinde maliyetlerin büyük kısmı değişken (parça başı ücret, fason üretim), B işletmesinde ise sabittir (otomasyon, kendi tesisleri).\n\nİki işletmenin satışları aynı oranda değiştiğinde aşağıdakilerden hangisi beklenir?",
     "choices": {
-      "C": "Birim satış fiyatının sabitliği varsayımını",
-      "A": "Toplam sabit maliyetin nakit giderlerden oluşması varsayımını",
-      "B": "Üretim miktarının başabaşa eşit olması varsayımını",
-      "D": "Katkı oranının sabit giderlerden hesaplanması varsayımını",
-      "E": "Bütün maliyetlerin batmış olması varsayımını"
+      "A": "A’nın kârı satış artışında daha hızlı artar, düşüşte daha yavaş azalır.",
+      "B": "İki işletmenin kârı her satış değişiminde aynı oranda değişir.",
+      "C": "B’nin başabaş noktası A’nınkinden daha düşük olduğu için risk azdır.",
+      "D": "A’nın faaliyet kaldıracı derecesi B’ninkinden daha yüksektir.",
+      "E": "B’nin kârı satış artışında daha hızlı artar, düşüşte daha hızlı azalır."
     },
-    "correctAnswer": "C",
-    "explanation": "Doğrusal model geçerli aralıkta birim satış fiyatını sabit kabul eder. Miktara bağlı fiyat basamakları için parçalı veya senaryolu analiz gerekir.",
+    "correctAnswer": "E",
+    "explanation": "Sabit maliyet ağırlığı yüksek olan B’nin katkı payı ve dolayısıyla faaliyet kaldıracı derecesi daha yüksektir; kârı satış değişimlerine daha duyarlıdır. Bu, satış artışında avantaj, düşüşte risk demektir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - doğrusal MHK modelinde sabit satış fiyatı varsayımı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -487,10 +487,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -498,20 +498,20 @@
     "id": "kh-yon-mhk-0016",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "İşletme yeni satış kanalında 5.000 mamul için toplam 1.000.000 TL gelir beklemektedir. Mamul başına üretim gideri 110 TL, kanal komisyonu gelirin %10'udur. Kanalın zarar etmemesi için kanala özgü sabit gider en çok kaç TL olabilir?",
+    "question": "Bir işletmenin yıllık sabit maliyetleri 720.000 ₺ olup bunun 180.000 ₺’si makine ve bina amortismanıdır. Ürünün satış fiyatı 90 ₺, birim değişken maliyeti 54 ₺’dir ve tüm değişken maliyetler peşin ödenmektedir.\n\nNakit başabaş satış miktarı kaç birimdir?",
     "choices": {
-      "B": "350.000 TL",
-      "A": "450.000 TL",
-      "C": "550.000 TL",
-      "D": "650.000 TL",
-      "E": "100.000 TL"
+      "A": "5.000 birim",
+      "B": "8.000 birim",
+      "C": "10.000 birim",
+      "D": "15.000 birim",
+      "E": "20.000 birim"
     },
-    "correctAnswer": "B",
-    "explanation": "Mamul başına komisyon 20 TL, katkı 200 − 110 − 20 = 70 TL'dir. 5.000 mamulün 350.000 TL katkısı sabit giderin üst sınırıdır.",
+    "correctAnswer": "D",
+    "explanation": "Nakit başabaş hesabında nakit çıkışı gerektirmeyen amortisman sabit maliyetten düşülür: (720.000 − 180.000) ÷ (90 − 54) = 540.000 ÷ 36 = 15.000 birim. Muhasebe başabaş noktası 20.000 birimdir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış komisyonu altında başabaş sabit gider sınırı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -520,10 +520,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -531,20 +531,20 @@
     "id": "kh-yon-mhk-0017",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Bir işletmenin sabit maliyeti 420.000 TL, birim katkı payı 70 TL'dir. Vergi öncesi 140.000 TL faaliyet kârı için gereken satış miktarı kaç birimdir?",
+    "question": "Bir işletmenin ürünü 150 ₺’ye satılmakta; birim değişken üretim maliyeti 80 ₺’dir. Ayrıca bayilere satış fiyatının %10’u oranında komisyon ödenmektedir. Yıllık sabit maliyetler 385.000 ₺’dir.\n\nBaşabaş satış miktarı kaç birimdir?",
     "choices": {
-      "B": "8.000 birim",
-      "A": "6.000 birim",
-      "C": "2.000 birim",
-      "D": "4.000 birim",
-      "E": "16.000 birim"
+      "A": "5.500 birim",
+      "B": "6.000 birim",
+      "C": "7.000 birim",
+      "D": "7.700 birim",
+      "E": "11.000 birim"
     },
-    "correctAnswer": "B",
-    "explanation": "Gerekli toplam katkı 420.000 + 140.000 = 560.000 TL'dir. 70 TL birim katkıyla 8.000 birim satılmalıdır.",
+    "correctAnswer": "C",
+    "explanation": "Satış komisyonu fiyatla orantılı değişken maliyettir: 150 × %10 = 15 ₺. Birim katkı = 150 − 80 − 15 = 55 ₺. Başabaş = 385.000 ÷ 55 = 7.000 birim.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - vergi öncesi hedef kâr için satış miktarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -553,10 +553,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -564,20 +564,20 @@
     "id": "kh-yon-mhk-0018",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Yönetim 9.000 birimlik planı değerlendirmektedir. Bu hacimde toplam katkı payı 540.000 TL, dönem sabit maliyeti 360.000 TL ve vergi oranı kökte verilen %30'dur. Planın sağlayabileceği vergi sonrası kâr kaç TL'dir?",
+    "question": "Bir işletmenin finans müdürü, yönetim kuruluna sunacağı risk raporunda güvenlik payı ve faaliyet kaldıracı kavramlarını açıklamaktadır.\n\nGüvenlik payı ve faaliyet kaldıracıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "E": "126.000 TL",
-      "A": "180.000 TL",
-      "B": "540.000 TL",
-      "C": "54.000 TL",
-      "D": "252.000 TL"
+      "A": "Başabaş noktasına yaklaştıkça faaliyet kaldıracı derecesi yükselir.",
+      "B": "Güvenlik payı oranı, faaliyet kaldıracı derecesinin tersine eşittir.",
+      "C": "Güvenlik payı, satışların zarara geçmeden düşebileceği tutarı gösterir.",
+      "D": "Faaliyet kaldıracı derecesi toplam katkı payının faaliyet kârına bölümüdür.",
+      "E": "Sabit maliyet payı arttıkça faaliyet kaldıracı derecesi düşer."
     },
     "correctAnswer": "E",
-    "explanation": "Vergi öncesi kâr 540.000 − 360.000 = 180.000 TL'dir. Vergi sonrası tutar 180.000 × (1 − %30) = 126.000 TL olur.",
+    "explanation": "Sabit maliyet payı arttıkça aynı kâr için daha yüksek katkı payı gerekir; bu da faaliyet kaldıracı derecesini yükseltir. Diğer ifadeler doğrudur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - planlanan hacmin desteklediği vergi sonrası kâr"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -585,11 +585,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -597,20 +597,20 @@
     "id": "kh-yon-mhk-0019",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Sabit maliyet 500.000 TL, katkı payı oranı %40 ve vergi oranı kökte verilen %30'dur. Vergi sonrası 210.000 TL kâr için gerekli satış hasılatı kaç TL'dir?",
+    "question": "Bir işletmenin birim katkı payı 50 ₺’dir. Yıllık sabit maliyetler 8.000 birimlik üretime kadar 350.000 ₺ olup bu düzey aşıldığında ek tesis kiralanacağından 470.000 ₺’ye yükselmektedir. Yönetim 100.000 ₺ faaliyet kârı hedeflemektedir.\n\nHedef kâr için satılması gereken miktar kaç birimdir?",
     "choices": {
-      "E": "2.000.000 TL",
-      "A": "1.775.000 TL",
-      "B": "1.250.000 TL",
-      "C": "480.000 TL",
-      "D": "3.000.000 TL"
+      "A": "7.000 birim",
+      "B": "9.000 birim",
+      "C": "9.400 birim",
+      "D": "11.400 birim",
+      "E": "13.000 birim"
     },
-    "correctAnswer": "E",
-    "explanation": "Vergi öncesi hedef 300.000 TL'dir. Gerekli satış (500.000 + 300.000) / %40 = 2.000.000 TL olur.",
+    "correctAnswer": "D",
+    "explanation": "Birinci aralıkta gerekli miktar (350.000 + 100.000) ÷ 50 = 9.000 birimdir; bu 8.000 birimlik sınırı aştığı için geçersizdir. İkinci aralıkta (470.000 + 100.000) ÷ 50 = 11.400 birim bulunur ve aralık içindedir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - vergi sonrası hedef kâr için satış tutarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -619,10 +619,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -630,20 +630,20 @@
     "id": "kh-yon-mhk-0020",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Başabaş ve hedef kâr analizine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi sonrası hedef kâr, verilen vergi oranıyla vergi öncesine çevrilir\n\nII. Başabaş noktasında toplam katkı payı toplam sabit maliyete eşittir\n\nIII. Hedef kâr hesabında sabit maliyet ile vergi öncesi hedef birlikte karşılanır",
+    "question": "Bir işletme ürününü 120 ₺’den satmakta, birim değişken maliyeti 75 ₺ ve yıllık sabit maliyeti 405.000 ₺’dir. İşletme bu yıl 7.500 birim satmış ve zarar etmiştir. Yönetim gelecek yıl fiyat ve maliyetler değişmeden 45.000 ₺ faaliyet kârı elde etmek istemektedir.\n\nBu yılki satışlara ek olarak kaç birim daha satılmalıdır?",
     "choices": {
-      "D": "I, II ve III",
-      "A": "Yalnız I",
-      "B": "I ve II",
-      "C": "II ve III",
-      "E": "Yalnız III"
+      "A": "1.000 birim",
+      "B": "1.500 birim",
+      "C": "2.500 birim",
+      "D": "3.500 birim",
+      "E": "10.000 birim"
     },
-    "correctAnswer": "D",
-    "explanation": "Vergi sonrası hedef önce brütleştirilir; başabaşta kâr sıfır olduğundan katkı sabit maliyeti karşılar; pozitif hedefte gerekli katkıya hedef kâr da eklenir.",
+    "correctAnswer": "C",
+    "explanation": "Bu yılki zarar = 7.500 × 45 − 405.000 = 67.500 ₺. Hedef miktar = (405.000 + 45.000) ÷ 45 = 10.000 birim; ek satış = 10.000 − 7.500 = 2.500 birim (1.500 birim zararı kapatır, 1.000 birim kârı sağlar).",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - başabaş ve vergi sonrası hedef kâr ilişkileri"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -652,10 +652,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -663,20 +663,20 @@
     "id": "kh-yon-mhk-0021",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Bütçelenen net satışlar 920.000 TL, toplam değişken maliyet 552.000 TL ve dönem sabit maliyeti 280.000 TL'dir. Bütçelenen satışların başabaş satış hasılatını aşan kısmı kaç TL'dir?",
+    "question": "Bir işletme her 3 adet A ürününe karşılık 2 adet B ürünü satmaktadır. A’nın birim katkı payı 40 ₺, B’nin 25 ₺’dir. Ortak sabit maliyetler yıllık 850.000 ₺ olup ürünlere dağıtılmamaktadır. Satış karmasının korunacağı varsayılmaktadır.\n\nBaşabaş noktasında A ve B satış miktarları sırasıyla kaçtır?",
     "choices": {
-      "B": "220.000 TL",
-      "A": "368.000 TL",
-      "C": "700.000 TL",
-      "D": "88.000 TL",
-      "E": "280.000 TL"
+      "A": "10.000 A; 15.000 B",
+      "B": "12.500 A; 12.500 B",
+      "C": "5.000 A; 5.000 B",
+      "D": "9.000 A; 6.000 B",
+      "E": "15.000 A; 10.000 B"
     },
-    "correctAnswer": "B",
-    "explanation": "Katkı oranı (920.000 − 552.000) / 920.000 = %40'tır. Başabaş satış 280.000 / %40 = 700.000 TL; aşan kısım 220.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "Bir paket (3A + 2B) katkı payı = 3 × 40 + 2 × 25 = 170 ₺. Başabaş paket = 850.000 ÷ 170 = 5.000; A = 5.000 × 3 = 15.000, B = 5.000 × 2 = 10.000 birim.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - bütçelenen satışlardan güvenlik payı tutarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -685,10 +685,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -696,20 +696,20 @@
     "id": "kh-yon-mhk-0022",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Mevcut sabit maliyet 300.000 TL iken yeni kapasite yıllık 60.000 TL ek sabit gider doğuracaktır. Birim katkı payı 45 TL ve hedef kâr 90.000 TL ise gereken satış miktarı kaç birimdir?",
+    "question": "Bir işletmenin bütçelenen yıllık satış hasılatı 1.800.000 ₺, katkı payı oranı %35 ve yıllık sabit maliyeti 441.000 ₺’dir. Yönetim, satışların olası bir daralmada zarara geçmeden ne kadar azalabileceğini bilmek istemektedir.\n\nİşletmenin güvenlik payı tutarı kaç ₺’dir?",
     "choices": {
-      "D": "10.000 birim",
-      "A": "8.666,67 birim",
-      "B": "3.333,33 birim",
-      "C": "8.000 birim",
-      "E": "7.333,33 birim"
+      "A": "189.000",
+      "B": "540.000",
+      "C": "630.000",
+      "D": "1.260.000",
+      "E": "1.359.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Gerekli katkı 300.000 + 60.000 + 90.000 = 450.000 TL'dir. 45 TL katkıyla 10.000 birim gerekir.",
+    "correctAnswer": "B",
+    "explanation": "Başabaş hasılatı = 441.000 ÷ 0,35 = 1.260.000 ₺. Güvenlik payı = bütçelenen satış − başabaş satış = 1.800.000 − 1.260.000 = 540.000 ₺ (oran %30).",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - kapasite artışı sonrası hedef kâr hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -718,10 +718,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -729,20 +729,20 @@
     "id": "kh-yon-mhk-0023",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Eski yapıda fiyat 150 TL, değişken maliyet 90 TL, sabit maliyet 360.000 TL'dir. Yeni yapıda değerler sırasıyla 144, 84 ve 420.000 TL olacaktır. Başabaş miktarı nasıl değişir?",
+    "question": "Bir işletmenin ürününün satış fiyatı 80 ₺, birim değişken maliyeti 50 ₺ ve yıllık sabit maliyeti 270.000 ₺’dir. İşletme bu yıl 12.000 birim satış yapmıştır.\n\nİşletmenin güvenlik payı oranı yüzde kaçtır?",
     "choices": {
-      "D": "1.000 birim artar",
-      "A": "6.000 birim artar",
-      "B": "7.000 birim artar",
-      "C": "1.000 birim azalır",
-      "E": "Değişmez"
+      "A": "%12,5",
+      "B": "%20",
+      "C": "%25",
+      "D": "%33,3",
+      "E": "%75"
     },
-    "correctAnswer": "D",
-    "explanation": "Eski başabaş 360.000 / 60 = 6.000; yeni başabaş 420.000 / 60 = 7.000 birimdir. Artış 1.000 birimdir.",
+    "correctAnswer": "C",
+    "explanation": "Başabaş = 270.000 ÷ 30 = 9.000 birim. Güvenlik payı = 12.000 − 9.000 = 3.000 birim; oranı = 3.000 ÷ 12.000 = %25. Güvenlik payını başabaş miktarına bölmek (%33,3) yanlış tabanı kullanmaktır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - fiyat, değişken ve sabit maliyet değişiminin başabaşa etkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -750,11 +750,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -762,20 +762,20 @@
     "id": "kh-yon-mhk-0024",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "İşletmenin nakit çıkışı yaratan sabit giderleri 270.000 TL, katkı payı oranı %45'tir. Nakit başabaş satış hasılatı kaç TL'dir?",
+    "question": "Bir işletme katkı payı oranı %45 olan X ve %20 olan Y ürünlerini satmaktadır. Yeni bir pazarlama kampanyası sonucunda toplam satış hasılatı değişmemiş, ancak satışların daha büyük kısmı X ürününe kaymıştır. Fiyatlar, birim değişken maliyetler ve sabit maliyetler değişmemiştir.\n\nBu durumun etkisi aşağıdakilerden hangisidir?",
     "choices": {
-      "B": "600.000 TL",
-      "A": "490.909,09 TL",
-      "C": "121.500 TL",
-      "D": "270.000 TL",
-      "E": "870.000 TL"
+      "A": "Ağırlıklı katkı oranı düşer, başabaş hasılatı yükselir.",
+      "B": "Ağırlıklı katkı oranı yükselir, başabaş hasılatı düşer.",
+      "C": "Toplam hasılat değişmediğinden kâr ve başabaş aynı kalır.",
+      "D": "Başabaş hasılatı değişmez, güvenlik payı azalır.",
+      "E": "Ağırlıklı katkı oranı yükselir, faaliyet kârı azalır."
     },
     "correctAnswer": "B",
-    "explanation": "Nakit başabaş satışları 270.000 / %45 = 600.000 TL'dir.",
+    "explanation": "Karma katkı oranı yüksek X’e kaydığında ağırlıklı katkı payı oranı yükselir; aynı sabit maliyet daha düşük hasılatla karşılanır. Hasılat değişmediğinden toplam katkı ve kâr artar, güvenlik payı genişler.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - katkı payı oranıyla nakit başabaş satış tutarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -784,10 +784,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -795,20 +795,20 @@
     "id": "kh-yon-mhk-0025",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "İşletme 800.000 TL yatırımı üzerinden %15 faaliyet kârı hedeflemektedir. Sabit maliyet 240.000 TL, birim katkı payı 45 TL ise hedef için kaç birim satılmalıdır?",
+    "question": "Bir işletmenin katkı payı esaslı gelir tablosunda toplam katkı payı 630.000 ₺, sabit maliyetler 450.000 ₺ ve faaliyet kârı 180.000 ₺ olarak raporlanmıştır. Yönetim satış değişikliklerinin kâra etkisini ölçmek istemektedir.\n\nİşletmenin faaliyet kaldıracı derecesi kaçtır?",
     "choices": {
-      "C": "8.000 birim",
-      "A": "5.333,33 birim",
-      "B": "2.666,67 birim",
-      "D": "10.666,67 birim",
-      "E": "23.111,11 birim"
+      "A": "0,29",
+      "B": "1,4",
+      "C": "2,5",
+      "D": "3,5",
+      "E": "4,5"
     },
-    "correctAnswer": "C",
-    "explanation": "Hedef kâr 800.000 × %15 = 120.000 TL'dir. Gereken hacim (240.000 + 120.000) / 45 = 8.000 birimdir.",
+    "correctAnswer": "D",
+    "explanation": "Faaliyet kaldıracı derecesi = toplam katkı payı ÷ faaliyet kârı = 630.000 ÷ 180.000 = 3,5. Satışlardaki %1’lik değişim kârı %3,5 değiştirir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - yatırım getirisi hedefi için satış hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -816,11 +816,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -828,20 +828,20 @@
     "id": "kh-yon-mhk-0026",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Fiyat 125 TL, değişken üretim maliyeti 65 TL ve satış komisyonu fiyatın %8'udur. Sabit maliyet 300.000 TL iken 100.000 TL hedef kâr için kaç birim satılmalıdır?",
+    "question": "Bir işletmenin mevcut satış düzeyinde faaliyet kaldıracı derecesi 4 ve faaliyet kârı 250.000 ₺’dir. Gelecek yıl satış miktarının, fiyat ve maliyet yapısı değişmeden %6 artacağı tahmin edilmektedir.\n\nFaaliyet kaldıracı yaklaşımına göre gelecek yılın faaliyet kârı kaç ₺’dir?",
     "choices": {
-      "A": "8.000 birim",
-      "B": "6.666,67 birim",
-      "C": "6.000 birim",
-      "D": "2.000 birim",
-      "E": "5.333,33 birim"
+      "A": "265.000",
+      "B": "274.000",
+      "C": "290.000",
+      "D": "310.000",
+      "E": "325.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Komisyon 10 TL ve birim katkı 50 TL'dir. Gereken hacim (300.000 + 100.000) / 50 = 8.000 birimdir.",
+    "correctAnswer": "D",
+    "explanation": "Kârdaki değişim = faaliyet kaldıracı derecesi × satıştaki değişim = 4 × %6 = %24. Yeni kâr = 250.000 × 1,24 = 310.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış komisyonu altında hedef kâr hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -850,10 +850,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -861,20 +861,20 @@
     "id": "kh-yon-mhk-0027",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Birim katkı 60 TL'dir. Sabit maliyet 6.000 birime kadar 270.000 TL, daha yüksek hacimde 390.000 TL olacaktır. 120.000 TL hedef kâr için geçerli satış miktarı kaç birimdir?",
+    "question": "Birden fazla ürün satan bir işletmenin yönetim muhasebecisi, bütçe toplantısında çok ürünlü başabaş analizinin varsayımlarını ve sonuçlarını açıklamaktadır.\n\nÇok ürünlü başabaş analiziyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "C": "8.500 birim",
-      "A": "6.500 birim",
-      "B": "7.500 birim",
-      "D": "2.785,71 birim",
-      "E": "4.500 birim"
+      "A": "Satış karması değişse de başabaş satış hasılatı aynı kalır.",
+      "B": "Analiz satış karmasının sabit kaldığını varsayar.",
+      "C": "Ortak sabit maliyetler ürünlere dağıtılmadan toplam olarak ele alınır.",
+      "D": "Ağırlıklı ortalama katkı payı oranı karmaya göre hesaplanır.",
+      "E": "Katkı oranı yüksek ürünün payı artarsa başabaş hasılatı düşer."
     },
-    "correctAnswer": "C",
-    "explanation": "Alt basamak sonucu 6.500 birimle 6.000 eşiğini aşar. Üst basamakta (390.000 + 120.000) / 60 = 8.500 birim gerekir.",
+    "correctAnswer": "A",
+    "explanation": "Ağırlıklı katkı payı oranı satış karmasına bağlı olduğundan karma değiştiğinde başabaş hasılatı da değişir. Diğer ifadeler çok ürünlü analizin temel özellikleridir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - basamaklı sabit maliyet altında hedef kâr"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -882,11 +882,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -894,20 +894,20 @@
     "id": "kh-yon-mhk-0028",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Değişken maliyetler net satışların %62'sidir ve toplam sabit maliyet 456.000 TL'dir. Başabaş net satış hasılatı kaç TL'dir?",
+    "question": "Tek ürünlü ve doğrusal maliyet yapısına sahip bir işletmenin güvenlik payı oranı %20’dir. Yönetim, satışlardaki dalgalanmaların faaliyet kârını ne ölçüde etkileyeceğini değerlendirmek istemektedir; fiyat ve maliyetlerin değişmeyeceği varsayılmaktadır.\n\nİşletmenin faaliyet kaldıracı derecesi kaçtır?",
     "choices": {
-      "E": "1.200.000 TL",
-      "A": "735.483,87 TL",
-      "B": "173.280 TL",
-      "C": "456.000 TL",
-      "D": "281.481,48 TL"
+      "A": "0,2",
+      "B": "1,25",
+      "C": "4",
+      "D": "5",
+      "E": "20"
     },
-    "correctAnswer": "E",
-    "explanation": "Katkı payı oranı %100 − %62 = %38'dir. Başabaş satış 456.000 / %38 = 1.200.000 TL olur.",
+    "correctAnswer": "D",
+    "explanation": "Doğrusal modelde faaliyet kaldıracı derecesi güvenlik payı oranının tersidir: 1 ÷ 0,20 = 5. Satışlar %20 düşerse kâr %100 azalır ve işletme başabaş noktasına iner.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - değişken maliyet oranından başabaş satış tutarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -915,11 +915,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -927,20 +927,20 @@
     "id": "kh-yon-mhk-0029",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Vergi ve hedef kâr analizine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Vergi sonrası hedef, oran kökte verildiğinde 1 eksi vergi oranına bölünür\n\nII. Vergi oranı yükseldikçe aynı net hedef için gereken vergi öncesi kâr artar\n\nIII. Vergi oranı değişikliği sıfır faaliyet kârlı temel başabaş miktarını artırır",
+    "question": "Bir işletme ürün dağıtımı için iki seçeneği değerlendirmektedir. A seçeneğinde (kendi araç filosu dışında kiralık araç) yıllık sabit gider 120.000 ₺ ve birim başına 22 ₺, B seçeneğinde (kendi filosu) yıllık sabit gider 204.000 ₺ ve birim başına 15 ₺ gider oluşmaktadır.\n\nİki seçeneğin toplam giderinin eşit olduğu dağıtım miktarı kaç birimdir?",
     "choices": {
-      "E": "I ve II",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "II ve III",
-      "D": "Yalnız III"
+      "A": "8.400 birim",
+      "B": "10.000 birim",
+      "C": "12.000 birim",
+      "D": "14.000 birim",
+      "E": "16.000 birim"
     },
-    "correctAnswer": "E",
-    "explanation": "Net hedefin brütleştirilmesi vergi oranına bağlıdır. Temel başabaş noktasında hedef faaliyet kârı sıfır olduğundan vergi sonrası hedef dönüşümü gerekmez.",
+    "correctAnswer": "C",
+    "explanation": "Kayıtsızlık noktasında 120.000 + 22X = 204.000 + 15X olur; 7X = 84.000 ve X = 12.000 birim. Bu miktarın üstünde birim gideri düşük olan B, altında sabit gideri düşük olan A daha ekonomiktir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - vergi sonrası hedef kârın brütleştirilmesi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
     },
     "tags": [
       "Özgün Soru",
@@ -949,10 +949,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -960,20 +960,20 @@
     "id": "kh-yon-mhk-0030",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "İşletme mevcut satış düzeyinde 72.000 TL zarar etmektedir. Birim başına ek katkı 24 TL olacaksa zararı kapatıp ayrıca 96.000 TL kâra ulaşmak için kaç ek birim satılmalıdır?",
+    "question": "Bir işletme ürününü 180 ₺’den satmakta, birim değişken maliyeti 110 ₺’dir ve yıllık 10.000 birim satış yapmaktadır. Pazarlama birimi 120.000 ₺’lik bir reklam kampanyasıyla satışların 11.500 birime çıkacağını öngörmektedir.\n\nKampanyanın faaliyet kârına etkisi ve karar aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "7.000 birim",
-      "B": "3.000 birim",
-      "C": "4.000 birim",
-      "D": "1.000 birim",
-      "E": "14.000 birim"
+      "A": "Kâr 105.000 ₺ artar; kampanya uygulanmalıdır.",
+      "B": "Kâr 150.000 ₺ artar; kampanya uygulanmalıdır.",
+      "C": "Kâr 15.000 ₺ artar; kampanya uygulanmalıdır.",
+      "D": "Kâr 120.000 ₺ azalır; kampanya uygulanmamalıdır.",
+      "E": "Kâr 15.000 ₺ azalır; kampanya uygulanmamalıdır."
     },
-    "correctAnswer": "A",
-    "explanation": "Ek katkı önce 72.000 TL zararı, sonra 96.000 TL hedefi karşılamalıdır. (72.000 + 96.000) / 24 = 7.000 birim gerekir.",
+    "correctAnswer": "E",
+    "explanation": "Ek katkı payı = 1.500 × (180 − 110) = 105.000 ₺. Kampanya maliyeti 120.000 ₺ olduğundan kâr 15.000 ₺ azalır. Ek hasılatın (270.000 ₺) reklam gideriyle karşılaştırılması değişken maliyetleri göz ardı eder.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - mevcut zarardan hedef kâra ek satış hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -982,10 +982,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -993,20 +993,20 @@
     "id": "kh-yon-mhk-0031",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Satış karması her 2 adet A'ya karşı 3 adet B'dir. A'nın birim katkısı 30 TL, B'nin 20 TL olduğuna göre bileşik paketin katkı payı kaç TL'dir?",
+    "question": "Bir işletme A ve B olmak üzere iki ürün satmaktadır. Toplam satış miktarının %40’ı birim katkı payı 50 ₺ olan A’dan, kalanı birim katkı payı 20 ₺ olan B’den oluşmaktadır. Satış karmasının değişmeyeceği varsayılmaktadır.\n\nAğırlıklı ortalama birim katkı payı kaç ₺’dir?",
     "choices": {
-      "A": "120 TL",
-      "B": "50 TL",
-      "C": "10 TL",
-      "D": "60 TL",
-      "E": "100 TL"
+      "A": "26",
+      "B": "30",
+      "C": "32",
+      "D": "35",
+      "E": "38"
     },
-    "correctAnswer": "A",
-    "explanation": "Bir bileşik paket 2 A ve 3 B içerir. Paket katkısı 2 × 30 + 3 × 20 = 120 TL'dir.",
+    "correctAnswer": "C",
+    "explanation": "Ağırlıklı ortalama birim katkı = 0,40 × 50 + 0,60 × 20 = 20 + 12 = 32 ₺. Basit ortalama (35 ₺) satış karmasını dikkate almaz.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - birim satış karmasında bileşik katkı payı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1014,11 +1014,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1026,20 +1026,20 @@
     "id": "kh-yon-mhk-0032",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Önceki 2 A : 3 B satış karması korunacaktır. Bileşik katkı 120 TL ve sabit maliyet 600.000 TL ise başabaşta A ve B satışları sırasıyla kaç birimdir?",
+    "question": "Bir mobilya üreticisinde ana hammaddenin fiyatı %20 artmış, rekabet nedeniyle satış fiyatları ise değiştirilememiştir. Sabit maliyetler ve satış miktarı da aynı kalmıştır.\n\nBu gelişmenin MHK göstergelerine etkisi aşağıdakilerden hangisidir?",
     "choices": {
-      "E": "10.000 A ve 15.000 B",
-      "A": "5.000 A ve 5.000 B",
-      "B": "15.000 A ve 10.000 B",
-      "C": "20.000 A ve 30.000 B",
-      "D": "25.000 A ve 0 B"
+      "A": "Katkı payı oranı yükselir, başabaş satış hasılatı düşer.",
+      "B": "Katkı payı oranı düşer, başabaş satış hasılatı yükselir.",
+      "C": "Katkı payı oranı değişmez, sabit maliyet oranı artar.",
+      "D": "Başabaş satış hasılatı düşer, güvenlik payı genişler.",
+      "E": "Birim katkı payı artar, faaliyet kaldıracı derecesi azalır."
     },
-    "correctAnswer": "E",
-    "explanation": "Başabaş paket sayısı 600.000 / 120 = 5.000'dir. Bunun 2 ve 3 katı sırasıyla 10.000 A ile 15.000 B verir.",
+    "correctAnswer": "B",
+    "explanation": "Değişken maliyet artıp fiyat sabit kalınca birim katkı ve katkı oranı düşer. Aynı sabit maliyeti karşılamak için daha yüksek hasılat gerekir; güvenlik payı daralır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - bileşik birimle çok ürünlü başabaş miktarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1047,11 +1047,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1059,20 +1059,20 @@
     "id": "kh-yon-mhk-0033",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Satış hasılatının %60'ı katkı oranı %50 olan A'dan, kalanı katkı oranı %25 olan B'den gelmektedir. Ağırlıklı ortalama katkı payı oranı nedir?",
+    "question": "Bir işletmenin satış hasılatının %60’ı katkı payı oranı %50 olan A ürününden, kalanı katkı payı oranı %25 olan B ürününden gelmektedir. Ortak sabit maliyetler yıllık 480.000 ₺’dir ve hasılat karmasının korunacağı varsayılmaktadır.\n\nİşletmenin ağırlıklı ortalama katkı payı oranı yüzde kaçtır?",
     "choices": {
-      "C": "%40",
-      "A": "%37,50",
-      "B": "%30",
-      "D": "%10",
-      "E": "%20"
+      "A": "%30",
+      "B": "%35",
+      "C": "%37,5",
+      "D": "%40",
+      "E": "%45"
     },
-    "correctAnswer": "C",
-    "explanation": "Ağırlıklı oran %60 × %50 + %40 × %25 = %40'tır.",
+    "correctAnswer": "D",
+    "explanation": "Ağırlıklı katkı payı oranı = 0,60 × %50 + 0,40 × %25 = %30 + %10 = %40. Basit ortalama %37,5, ağırlıkların ters kullanılması ise %35 sonucunu verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış hasılatı karmasında ağırlıklı katkı payı oranı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1081,10 +1081,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1092,20 +1092,20 @@
     "id": "kh-yon-mhk-0034",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Ağırlıklı katkı payı oranı %40 ve toplam ortak sabit maliyet 480.000 TL'dir. Satış karması korunursa çok ürünlü başabaş satış hasılatı kaç TL'dir?",
+    "question": "Bir işletmenin ağırlıklı ortalama katkı payı oranı %40, ortak sabit maliyetleri yıllık 600.000 ₺’dir. Satış hasılatının %60’ı A ürününden, %40’ı B ürününden elde edilmekte ve karmanın korunacağı varsayılmaktadır.\n\nBaşabaş noktasında A ürününden elde edilecek satış hasılatı kaç ₺’dir?",
     "choices": {
-      "C": "1.200.000 TL",
-      "A": "800.000 TL",
-      "B": "192.000 TL",
-      "D": "480.000 TL",
-      "E": "1.680.000 TL"
+      "A": "600.000",
+      "B": "750.000",
+      "C": "900.000",
+      "D": "1.200.000",
+      "E": "1.500.000"
     },
     "correctAnswer": "C",
-    "explanation": "Çok ürünlü başabaş satış 480.000 / %40 = 1.200.000 TL'dir.",
+    "explanation": "Toplam başabaş hasılatı = 600.000 ÷ 0,40 = 1.500.000 ₺. A’nın payı = 1.500.000 × %60 = 900.000 ₺; B’ye 600.000 ₺ düşer.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - ağırlıklı katkı oranıyla çok ürünlü başabaş satışı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1114,10 +1114,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1125,20 +1125,20 @@
     "id": "kh-yon-mhk-0035",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Çok ürünlü Maliyet-Hacim-Kâr analizine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Başabaş hesabı satış karmasının sabit kaldığını varsayar\n\nII. Adet karmasında bileşik birim katkısı kullanılabilir\n\nIII. Hasılat karmasında ağırlıklı katkı payı oranı kullanılabilir",
+    "question": "Bir işletmenin planlama birimi, bütçelenen kârın satış fiyatı, satış miktarı, birim değişken maliyet ve sabit maliyetlerdeki %5’lik değişimlere nasıl tepki verdiğini tek tek hesaplamakta ve kârı en çok etkileyen değişkeni belirlemektedir.\n\nBu çalışma aşağıdakilerden hangisidir?",
     "choices": {
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Faaliyet tabanlı maliyet analizi",
+      "B": "Yüksek-düşük noktalar analizi",
+      "C": "Standart maliyet fark analizi",
+      "D": "Dikey yüzdeler analizi",
+      "E": "Duyarlılık (ne olur-eğer) analizi"
     },
-    "correctAnswer": "A",
-    "explanation": "Çok ürünlü analiz, belirli satış karmasını temel alır. Karma adetle tanımlanıyorsa bileşik katkı; gelir paylarıyla tanımlanıyorsa ağırlıklı katkı oranı kullanılabilir.",
+    "correctAnswer": "E",
+    "explanation": "Model değişkenlerinden biri değiştirildiğinde sonucun nasıl etkilendiğini inceleyen yöntem duyarlılık analizidir; MHK modelinde belirsizliği yönetmek ve kritik değişkeni belirlemek için kullanılır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - çok ürünlü MHK analizinde satış karması"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1146,11 +1146,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1158,20 +1158,20 @@
     "id": "kh-yon-mhk-0036",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Diğer koşullar sabitken satış karmasının katkı payı oranı daha yüksek ürüne yönelmesi hangi sonucu doğurur?",
+    "question": "Bir işletme her 1 adet X ürününe karşılık 3 adet Y ürünü satmaktadır. X’in birim katkı payı 60 ₺, Y’nin 20 ₺’dir. Ortak sabit maliyetler 480.000 ₺ olup yönetim 120.000 ₺ faaliyet kârı hedeflemektedir.\n\nHedef kâr için kaç adet Y ürünü satılmalıdır?",
     "choices": {
-      "A": "Ağırlıklı katkı oranını yükseltip başabaş satışını düşürür",
-      "B": "Ağırlıklı katkı oranını düşürüp başabaş satışını yükseltir",
-      "C": "Sabit maliyeti sıfırlayıp başabaş analizini gereksiz kılar",
-      "D": "Birim değişken maliyetleri eşitleyip karmayı etkisiz kılar",
-      "E": "Katkı oranlarını değiştirmeden yalnız kayıt sırasını değiştirir"
+      "A": "4.000 birim",
+      "B": "5.000 birim",
+      "C": "12.000 birim",
+      "D": "15.000 birim",
+      "E": "20.000 birim"
     },
-    "correctAnswer": "A",
-    "explanation": "Yüksek katkı oranlı ürünün gelir payı arttığında ağırlıklı katkı oranı yükselir. Aynı sabit maliyet daha düşük toplam satışla karşılanabilir.",
+    "correctAnswer": "D",
+    "explanation": "Bir paket (1X + 3Y) katkı payı = 60 + 3 × 20 = 120 ₺. Gerekli paket = (480.000 + 120.000) ÷ 120 = 5.000; Y satışı = 5.000 × 3 = 15.000 adet.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış karması değişiminin başabaşa etkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1180,10 +1180,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1191,20 +1191,20 @@
     "id": "kh-yon-mhk-0037",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "A ürününün satışları 900.000 TL ve katkı oranı %40; B'nin satışları 600.000 TL ve katkı oranı %30'dur. Ortak sabit maliyet 420.000 TL ise toplam faaliyet kârı kaç TL'dir?",
+    "question": "Bir işletme A ve B ürünlerini satmaktadır; birim katkı payları sırasıyla 45 ₺ ve 15 ₺, ortak sabit maliyetler 360.000 ₺’dir. Satış karması bu yıl 1 A : 1 B iken rakip baskısı nedeniyle gelecek yıl 1 A : 3 B olacaktır.\n\nYeni satış karmasında toplam başabaş satış miktarı (A + B) kaç birimdir?",
     "choices": {
-      "C": "120.000 TL",
-      "A": "540.000 TL",
-      "B": "360.000 TL",
-      "D": "180.000 TL",
-      "E": "960.000 TL"
+      "A": "4.000 birim",
+      "B": "8.000 birim",
+      "C": "12.000 birim",
+      "D": "16.000 birim",
+      "E": "24.000 birim"
     },
-    "correctAnswer": "C",
-    "explanation": "A katkısı 360.000 TL, B katkısı 180.000 TL; toplam 540.000 TL'dir. 420.000 TL sabit maliyet sonrası kâr 120.000 TL olur.",
+    "correctAnswer": "D",
+    "explanation": "Yeni paket (1A + 3B) katkısı = 45 + 45 = 90 ₺; başabaş paket = 360.000 ÷ 90 = 4.000; toplam birim = 4.000 × 4 = 16.000. Eski karmada 12.000 birim yetiyordu; düşük katkılı ürüne kayış başabaş miktarını artırır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - çok ürünlü katkı payı gelir tablosu"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1212,11 +1212,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1224,20 +1224,20 @@
     "id": "kh-yon-mhk-0038",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Satış karması 1 X : 2 Y; birim katkılar sırasıyla 50 ve 25 TL'dir. Sabit maliyet 500.000 TL ve hedef kâr 200.000 TL ise kaç Y ürünü satılmalıdır?",
+    "question": "Bir işletmenin yönetim muhasebecisi MHK analizine başlamadan önce modelin dayandığı varsayımları listelemektedir. Liste, yeni bir çalışan tarafından hazırlanmış ve bir hatalı madde içermektedir.\n\nAşağıdakilerden hangisi doğrusal MHK analizinin varsayımlarından biri değildir?",
     "choices": {
-      "B": "14.000 birim",
-      "A": "7.000 birim",
-      "C": "28.000 birim",
-      "D": "10.000 birim",
-      "E": "21.000 birim"
+      "A": "Birim satış fiyatı satış miktarı arttıkça düşer.",
+      "B": "Maliyetler sabit ve değişken olarak ayrılabilir.",
+      "C": "Geçerli aralıkta birim değişken maliyet sabittir.",
+      "D": "Çok ürünlü işletmede satış karması sabittir.",
+      "E": "Üretilen miktar ile satılan miktar eşittir."
     },
-    "correctAnswer": "B",
-    "explanation": "Bileşik katkı 50 + 2 × 25 = 100 TL'dir. (500.000 + 200.000) / 100 = 7.000 paket; Y miktarı 14.000 birimdir.",
+    "correctAnswer": "A",
+    "explanation": "Doğrusal modelde birim satış fiyatı geçerli aralıkta sabittir; hasılat doğrusu bu nedenle düz bir çizgidir. Miktar arttıkça fiyatın düşmesi (hacim indirimi) doğrusal olmayan bir hasılat eğrisi doğurur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - bileşik birimle çok ürünlü hedef kâr"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1245,11 +1245,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1257,20 +1257,20 @@
     "id": "kh-yon-mhk-0039",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "A ve B'nin birim katkıları 60 ve 30 TL, sabit maliyet 540.000 TL'dir. Satış karması 1 A : 1 B'den 1 A : 2 B'ye dönerse yeni karmadaki başabaş toplam ürün adedi kaç olur?",
+    "question": "Bir işletmenin A ürününden satış hasılatı 1.200.000 ₺ ve katkı payı oranı %35; B ürününden satış hasılatı 800.000 ₺ ve katkı payı oranı %25’tir. İşletmenin ortak sabit maliyetleri 480.000 ₺ olup ürünlere dağıtılmamaktadır.\n\nİşletmenin toplam faaliyet kârı kaç ₺’dir?",
     "choices": {
-      "D": "13.500 birim",
-      "A": "4.500 birim",
-      "B": "12.000 birim",
-      "C": "9.000 birim",
-      "E": "18.000 birim"
+      "A": "100.000",
+      "B": "120.000",
+      "C": "140.000",
+      "D": "160.000",
+      "E": "620.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Yeni paketin katkısı 60 + 2 × 30 = 120 TL; 540.000 / 120 = 4.500 paket gerekir. Her paket 3 ürün olduğundan toplam 13.500 birimdir.",
+    "correctAnswer": "C",
+    "explanation": "Toplam katkı payı = 1.200.000 × 0,35 + 800.000 × 0,25 = 420.000 + 200.000 = 620.000 ₺. Faaliyet kârı = 620.000 − 480.000 = 140.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış karması değişince toplam başabaş adedi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1278,11 +1278,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1290,20 +1290,20 @@
     "id": "kh-yon-mhk-0040",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Satış karması 3 A : 2 B, katkılar 28 ve 18 TL, sabit maliyet 360.000 TL'dir. Başabaş satış miktarları hangi seçenekte doğru verilmiştir?",
+    "question": "Bir işletmenin hasılat karması %70 X ve %30 Y ürünüdür; katkı payı oranları sırasıyla %45 ve %30’dur. Ortak sabit maliyetler 486.000 ₺’dir. Kurumlar vergisi oranının %25 olduğu varsayılmakta ve yönetim vergi sonrası 243.000 ₺ net kâr hedeflemektedir.\n\nHedef için gerekli toplam satış hasılatı kaç ₺’dir?",
     "choices": {
-      "E": "9.000 A ve 6.000 B",
-      "A": "6.000 A ve 9.000 B",
-      "B": "3.000 A ve 3.000 B",
-      "C": "12.857 A ve 20.000 B",
-      "D": "15.000 A ve 0 B"
+      "A": "1.200.000",
+      "B": "1.800.000",
+      "C": "2.000.000",
+      "D": "2.160.000",
+      "E": "2.200.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Bileşik katkı 3 × 28 + 2 × 18 = 120 TL; başabaş 3.000 pakettir. Böylece 9.000 A ve 6.000 B satılır.",
+    "correctAnswer": "C",
+    "explanation": "Ağırlıklı katkı oranı = 0,70 × %45 + 0,30 × %30 = %40,5. Vergi öncesi kâr = 243.000 ÷ 0,75 = 324.000 ₺. Gerekli hasılat = (486.000 + 324.000) ÷ 0,405 = 2.000.000 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - adet satış karmasında ürün bazlı başabaş miktarları"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1311,11 +1311,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "hard",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1323,20 +1323,20 @@
     "id": "kh-yon-mhk-0041",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Hasılat karması %70 A ve %30 B; katkı oranları sırasıyla %45 ve %20'dir. Sabit maliyet 450.000 TL, hedef kâr 150.000 TL ise toplam satış hedefi kaç TL'dir?",
+    "question": "Bir işletme dönem içinde 10.000 birim üretmiş ve 8.500 birim satmıştır; dönem başı stok yoktur. Normal kapasite 10.000 birim olup sabit genel üretim giderleri 360.000 ₺’dir. Diğer tüm maliyetler değişkendir ve birim maliyetler dönem içinde değişmemiştir.\n\nTam maliyetleme ile değişken maliyetleme yöntemlerine göre hesaplanan faaliyet kârları arasındaki ilişki aşağıdakilerden hangisidir?",
     "choices": {
-      "D": "1.600.000 TL",
-      "A": "1.846.153,85 TL",
-      "B": "1.200.000 TL",
-      "C": "400.000 TL",
-      "E": "375.000 TL"
+      "A": "Tam maliyetleme kârı 54.000 ₺ fazladır.",
+      "B": "Değişken maliyetleme kârı 54.000 ₺ fazladır.",
+      "C": "Tam maliyetleme kârı 306.000 ₺ fazladır.",
+      "D": "İki yöntemde faaliyet kârı eşittir.",
+      "E": "Tam maliyetleme kârı 45.900 ₺ fazladır."
     },
-    "correctAnswer": "D",
-    "explanation": "Ağırlıklı oran %70 × %45 + %30 × %20 = %37,50'tir. Satış (450.000 + 150.000) / %37,50 = 1.600.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Birim sabit GÜG = 360.000 ÷ 10.000 = 36 ₺. Stok 1.500 birim arttığından tam maliyetlemede 1.500 × 36 = 54.000 ₺ sabit GÜG stokta kalır; bu yöntemde kâr 54.000 ₺ fazladır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - hasılat karmasında çok ürünlü hedef kâr"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Değişken ve tam maliyetleme"
     },
     "tags": [
       "Özgün Soru",
@@ -1345,10 +1345,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1356,20 +1356,20 @@
     "id": "kh-yon-mhk-0042",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Çok ürünlü başabaş analizine ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Satış karması değişirse ağırlıklı katkı payı değişebilir\n\nII. Toplam başabaş için ortak sabit giderin her ürüne keyfî dağıtılması zorunludur\n\nIII. Bileşik birim yaklaşımı adet bazlı sabit karmada kullanılabilir",
+    "question": "Bir işletme ürününü 120 ₺’den satmakta ve ayda 8.800 birim satış yapmaktadır; birim değişken maliyet 70 ₺’dir. Rakip baskısı nedeniyle fiyatın 110 ₺’ye indirilmesi düşünülmektedir. Sabit maliyetler değişmeyecektir.\n\nMevcut faaliyet kârını korumak için indirimli fiyatla kaç birim satılmalıdır?",
     "choices": {
-      "D": "I ve III",
-      "A": "I, II ve III",
-      "B": "Yalnız I",
-      "C": "I ve II",
-      "E": "Yalnız II"
+      "A": "2.200 birim",
+      "B": "8.800 birim",
+      "C": "9.600 birim",
+      "D": "10.000 birim",
+      "E": "11.000 birim"
     },
-    "correctAnswer": "D",
-    "explanation": "Karma, ağırlıklı katkıyı ve başabaşı etkiler. Toplam işletme başabaşı için ortak sabit gideri ürünlere keyfî dağıtmak gerekmez; sabit adet karmasında bileşik paket kullanılabilir.",
+    "correctAnswer": "E",
+    "explanation": "Mevcut katkı payı = 8.800 × 50 = 440.000 ₺. Yeni birim katkı = 110 − 70 = 40 ₺. Aynı katkıyı sağlamak için 440.000 ÷ 40 = 11.000 birim satılmalıdır; satışlar %25 artmalıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - çok ürünlü başabaşta karma ve ortak sabit maliyet"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1378,10 +1378,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1389,20 +1389,20 @@
     "id": "kh-yon-mhk-0043",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Toplam birim satışların %40'ı birim katkısı 50 TL olan A, kalanı katkısı 20 TL olan B'dir. Ağırlıklı ortalama birim katkı payı kaç TL'dir?",
+    "question": "Bir işletmenin ürününün satış fiyatı 200 ₺, birim değişken maliyeti 125 ₺ ve yıllık sabit maliyeti 600.000 ₺’dir. Tedarikçiyle yapılan yeni anlaşma sonucunda birim değişken maliyet 120 ₺’ye düşecektir.\n\nYeni maliyet yapısında başabaş satış miktarı kaç birimdir?",
     "choices": {
-      "C": "32 TL",
-      "A": "35 TL",
-      "B": "20 TL",
-      "D": "12 TL",
-      "E": "70 TL"
+      "A": "500 birim",
+      "B": "3.000 birim",
+      "C": "5.000 birim",
+      "D": "7.500 birim",
+      "E": "8.000 birim"
     },
-    "correctAnswer": "C",
-    "explanation": "Ağırlıklı birim katkı %40 × 50 + %60 × 20 = 32 TL'dir.",
+    "correctAnswer": "D",
+    "explanation": "Yeni birim katkı = 200 − 120 = 80 ₺. Başabaş = 600.000 ÷ 80 = 7.500 birim; eski yapıda 600.000 ÷ 75 = 8.000 birimdi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - birim satış paylarıyla ağırlıklı katkı payı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1410,11 +1410,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1422,20 +1422,20 @@
     "id": "kh-yon-mhk-0044",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Toplam satış 10.000 birimdir. A ve B katkıları 40 ve 20 TL'dir. A'nın satış payı %50'den %30'a düşerken toplam hacim ve sabit maliyet değişmezse faaliyet kârı nasıl etkilenir?",
+    "question": "Bir işletme iç raporlamada değişken maliyetleme yöntemini kullanmakta ve yıl sonunda finansal tablolarını hazırlamaktadır. Bağımsız denetçi, stokların TMS 2 Stoklar Standardı’na göre ölçülüp ölçülmediğini incelemektedir.\n\nTMS 2 ile değişken maliyetleme ilişkisi hakkında aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "B": "40.000 TL azalır",
-      "A": "300.000 TL azalır",
-      "C": "260.000 TL azalır",
-      "D": "80.000 TL azalır",
-      "E": "Değişmez"
+      "A": "Değişken maliyetle ölçülen stoklar finansal tablolarda doğrudan kullanılabilir.",
+      "B": "Sabit genel üretim giderleri normal kapasiteye göre dönüşüm maliyetlerine dağıtılır.",
+      "C": "Atıl kapasiteye düşen sabit genel üretim gideri oluştuğu dönemde gider yazılır.",
+      "D": "Değişken maliyetleme iç raporlamada karar desteği amacıyla kullanılabilir.",
+      "E": "Değişken genel üretim giderleri fiili kullanım düzeyine göre dağıtılır."
     },
-    "correctAnswer": "B",
-    "explanation": "Eski katkı 300.000 TL, yeni katkı 260.000 TL'dir. Sabit maliyet değişmediğinden kâr 40.000 TL azalır.",
+    "correctAnswer": "A",
+    "explanation": "TMS 2 md. 12-13’e göre sabit GÜG normal kapasite esas alınarak stok maliyetine dahil edilir; değişken maliyetleme sabit GÜG’ü stoka almadığından finansal raporlamada doğrudan kullanılamaz. İç raporlamada ise karar desteği için uygundur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - satış karması kaymasının faaliyet kârına etkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Değişken ve tam maliyetleme"
     },
     "tags": [
       "Özgün Soru",
@@ -1444,10 +1444,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1455,20 +1455,20 @@
     "id": "kh-yon-mhk-0045",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Çok ürünlü işletmenin beklenen toplam satışı 2.400.000 TL, ağırlıklı katkı oranı %35 ve sabit maliyeti 630.000 TL'dir. Satış karması korunursa güvenlik payı tutarı kaç TL'dir?",
+    "question": "Bir işletme ürününü 75 ₺’den satmakta ve yılda 12.000 birim satış yapmaktadır; birim değişken maliyet 50 ₺’dir. Fiyatın 80 ₺’ye çıkarılması hâlinde satışların 10.800 birime düşeceği tahmin edilmektedir. Sabit maliyetler değişmeyecektir.\n\nFiyat artışı faaliyet kârını kaç ₺ artırır?",
     "choices": {
-      "D": "600.000 TL",
-      "A": "1.800.000 TL",
-      "B": "840.000 TL",
-      "C": "1.770.000 TL",
-      "E": "1.230.000 TL"
+      "A": "24.000",
+      "B": "30.000",
+      "C": "36.000",
+      "D": "54.000",
+      "E": "60.000"
     },
-    "correctAnswer": "D",
-    "explanation": "Başabaş satış 630.000 / %35 = 1.800.000 TL'dir. Güvenlik payı 2.400.000 − 1.800.000 = 600.000 TL olur.",
+    "correctAnswer": "A",
+    "explanation": "Mevcut katkı = 12.000 × 25 = 300.000 ₺; yeni katkı = 10.800 × 30 = 324.000 ₺. Sabit maliyetler değişmediğinden kâr 24.000 ₺ artar.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - çok ürünlü işletmede güvenlik payı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1477,10 +1477,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1488,20 +1488,20 @@
     "id": "kh-yon-mhk-0046",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Başabaş satış hasılatı 1.200.000 TL'dir. İşletme satışlarının %25'i kadar güvenlik payı oranı istiyorsa toplam satış hasılatı kaç TL olmalıdır?",
+    "question": "Bir işletmenin yıllık satış hasılatı 2.000.000 ₺, katkı payı oranı %30 ve sabit maliyetleri 450.000 ₺’dir. Yeni bir depo kiralanması nedeniyle sabit maliyetler 510.000 ₺’ye çıkacak, satışlar ve katkı oranı değişmeyecektir.\n\nYeni durumda işletmenin güvenlik payı tutarı kaç ₺’dir?",
     "choices": {
-      "C": "1.600.000 TL",
-      "A": "4.800.000 TL",
-      "B": "1.500.000 TL",
-      "D": "300.000 TL",
-      "E": "960.000 TL"
+      "A": "60.000",
+      "B": "200.000",
+      "C": "300.000",
+      "D": "500.000",
+      "E": "1.700.000"
     },
     "correctAnswer": "C",
-    "explanation": "Güvenlik oranı = 1 − Başabaş/Satış olduğundan satış = 1.200.000 / (1 − %25) = 1.600.000 TL'dir.",
+    "explanation": "Yeni başabaş hasılatı = 510.000 ÷ 0,30 = 1.700.000 ₺. Güvenlik payı = 2.000.000 − 1.700.000 = 300.000 ₺. Eski yapıda güvenlik payı 2.000.000 − 1.500.000 = 500.000 ₺ idi.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - hedef güvenlik payı oranından satış tutarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1509,11 +1509,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1521,20 +1521,20 @@
     "id": "kh-yon-mhk-0047",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Başabaş miktarı 6.000 birim olan işletme, fiilî satış miktarının %40'ı kadar güvenlik payı hedeflemektedir. Bu oran için kaç birim satmalıdır?",
+    "question": "Bir işletmenin yönetim muhasebesi eğitiminde katılımcılardan katkı payı kavramıyla ilgili ifadeleri değerlendirmeleri istenmiştir. İfadelerden biri kavramı brüt satış kârıyla karıştırmaktadır.\n\nKatkı payıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "choices": {
-      "C": "10.000 birim",
-      "A": "15.000 birim",
-      "B": "8.400 birim",
-      "D": "2.400 birim",
-      "E": "4.285,71 birim"
+      "A": "Satışlardan satılan malın tam maliyeti düşülerek bulunur.",
+      "B": "Birim katkı payı fiyattan birim değişken maliyet düşülerek bulunur.",
+      "C": "Toplam katkı payı önce sabit maliyetleri karşılar, kalanı kârı oluşturur.",
+      "D": "Katkı payı oranı ile değişken maliyet oranının toplamı %100’dür.",
+      "E": "Başabaş noktasının üstünde her birim, katkı payı kadar kâr sağlar."
     },
-    "correctAnswer": "C",
-    "explanation": "Başabaş, satışların %60'ına eşit olmalıdır. 6.000 / %60 = 10.000 birimdir.",
+    "correctAnswer": "A",
+    "explanation": "Katkı payı satışlardan tüm değişken maliyetlerin (üretim ve üretim dışı) düşülmesiyle bulunur. Satılan malın tam maliyeti sabit GÜG’ü de içerdiğinden bu işlem brüt satış kârını verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - hedef güvenlik payı oranından satış miktarı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1542,11 +1542,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1554,20 +1554,20 @@
     "id": "kh-yon-mhk-0048",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Toplam katkı payı 420.000 TL, faaliyet kârı 140.000 TL'dir. İlgili aralıkta satışların %8 artması beklenirse faaliyet kaldıracı yaklaşımıyla kâr artışı kaç TL olur?",
+    "question": "Bir işletme ürününü 165 ₺’den satmakta ve gelecek yıl 12.000 birim satış beklemektedir. Yıllık sabit maliyetler 540.000 ₺’dir. Yönetim 300.000 ₺ faaliyet kârı hedeflemekte ve tedarikçilerle yapılacak pazarlıkta kabul edilebilecek en yüksek birim değişken maliyeti belirlemek istemektedir.\n\nBirim değişken maliyet en fazla kaç ₺ olabilir?",
     "choices": {
-      "A": "33.600 TL",
-      "B": "11.200 TL",
-      "C": "24.000 TL",
-      "D": "140.000 TL",
-      "E": "3.360 TL"
+      "A": "70",
+      "B": "95",
+      "C": "100",
+      "D": "110",
+      "E": "120"
     },
-    "correctAnswer": "A",
-    "explanation": "Faaliyet kaldıracı derecesi 420.000 / 140.000 = 3'tür. Satışlardaki %8 artış, faaliyet kârını 3 × %8 = %24 artırır; 140.000 × %24 = 33.600 TL'dir.",
+    "correctAnswer": "B",
+    "explanation": "Gerekli birim katkı = (540.000 + 300.000) ÷ 12.000 = 70 ₺. En yüksek birim değişken maliyet = 165 − 70 = 95 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - faaliyet kaldıracıyla kâr duyarlılığı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1575,11 +1575,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1587,20 +1587,20 @@
     "id": "kh-yon-mhk-0049",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Doğrusal ve tek ürünlü modelde güvenlik payı oranı %20 olan işletmenin faaliyet kaldıracı derecesi kaçtır?",
+    "question": "Yeni bir ürün için birim değişken maliyet 70 ₺, yıllık sabit maliyet 300.000 ₺ olarak tahmin edilmektedir. Pazar araştırması ilk yıl en az 6.000 birim satılabileceğini göstermektedir. Yönetim, bu miktarda zarar etmeyecek en düşük fiyatı belirlemek istemektedir.\n\nBu koşulu sağlayan en düşük birim satış fiyatı kaç ₺’dir?",
     "choices": {
-      "B": "5",
-      "A": "20",
-      "C": "0,80",
-      "D": "1,25",
-      "E": "0,20"
+      "A": "50",
+      "B": "100",
+      "C": "120",
+      "D": "125",
+      "E": "170"
     },
-    "correctAnswer": "B",
-    "explanation": "Tek ürünlü doğrusal modelde faaliyet kaldıracı derecesi güvenlik payı oranının tersidir: 1 / %20 = 5.",
+    "correctAnswer": "C",
+    "explanation": "Başabaşta birim katkı = 300.000 ÷ 6.000 = 50 ₺ olmalıdır. En düşük fiyat = 70 + 50 = 120 ₺.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - faaliyet kaldıracı ile güvenlik payı ilişkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1608,11 +1608,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1620,20 +1620,20 @@
     "id": "kh-yon-mhk-0050",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Faaliyet kaldıracına ilişkin aşağıdaki ifadelerden hangileri doğrudur?\n\nI. Faaliyet kaldıracı derecesi toplam katkı payının faaliyet kârına oranıdır\n\nII. Başabaş noktasına yaklaşıldıkça faaliyet kaldıracı yükselir\n\nIII. Yüksek sabit maliyetli işletmede faaliyet kaldıracı her durumda birden küçüktür",
+    "question": "Bir toptancı, belirli miktarın üzerinde alım yapan müşterilerine kademeli iskonto uygulamaktadır; sipariş büyüdükçe birim satış fiyatı düşmektedir. Yönetim buna rağmen başabaş hesabını tek bir fiyatla doğrusal MHK modeline göre yapmıştır.\n\nBu uygulama doğrusal MHK modelinin hangi varsayımını ihlal eder?",
     "choices": {
-      "A": "I ve II",
-      "B": "I, II ve III",
-      "C": "Yalnız I",
-      "D": "II ve III",
-      "E": "Yalnız III"
+      "A": "Satış karmasının sabit olduğu varsayımını",
+      "B": "Birim satış fiyatının sabit olduğu varsayımını",
+      "C": "Maliyetlerin sabit ve değişken ayrılabildiği varsayımını",
+      "D": "Üretim ve satış miktarının eşit olduğu varsayımını",
+      "E": "Birim değişken maliyetin sabit olduğu varsayımını"
     },
-    "correctAnswer": "A",
-    "explanation": "Faaliyet kaldıracı katkı/kâr oranıdır ve kâr sıfıra yaklaştıkça büyür. Yüksek sabit maliyet satış değişiminin kâra etkisini artırır; üçüncü ifade yanlıştır.",
+    "correctAnswer": "B",
+    "explanation": "Doğrusal modelde birim satış fiyatı geçerli aralıkta sabittir. Hacim arttıkça iskonto nedeniyle fiyatın düşmesi hasılat doğrusunu eğriye dönüştürür ve doğrusal başabaş hesabını yanıltır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - faaliyet kaldıracı derecesinin yorumu"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1642,10 +1642,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1653,20 +1653,20 @@
     "id": "kh-yon-mhk-0051",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Fiyat 100 TL'den 92 TL'ye indirilecektir. Birim değişken maliyet 60 TL ve mevcut hacim 9.000 birimdir. Sabit maliyet değişmezse aynı kârı korumak için toplam satış kaç birim olmalıdır?",
+    "question": "Bir işletme yeni üretim hattına 1.200.000 ₺ yatırım yapmıştır ve bu yatırım üzerinden yıllık %15 faaliyet kârı elde etmeyi hedeflemektedir. Hattın yıllık sabit maliyetleri 270.000 ₺, ürünün birim katkı payı 45 ₺’dir.\n\nHedef getiri için yıllık kaç birim satılmalıdır?",
     "choices": {
-      "B": "11.250 birim",
-      "A": "9.000 birim",
-      "C": "2.250 birim",
-      "D": "3.913,04 birim",
-      "E": "9.782,61 birim"
+      "A": "4.000 birim",
+      "B": "6.000 birim",
+      "C": "8.000 birim",
+      "D": "10.000 birim",
+      "E": "14.000 birim"
     },
-    "correctAnswer": "B",
-    "explanation": "Eski katkı 360.000 TL, yeni birim katkı 32 TL'dir. Aynı toplam katkı için 360.000 / 32 = 11.250 birim gerekir.",
+    "correctAnswer": "D",
+    "explanation": "Hedef kâr = 1.200.000 × %15 = 180.000 ₺. Gerekli miktar = (270.000 + 180.000) ÷ 45 = 10.000 birim.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - fiyat indiriminde kârı koruyan satış hacmi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1674,11 +1674,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1686,20 +1686,20 @@
     "id": "kh-yon-mhk-0052",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Birim değişken maliyet 100 TL'den 96 TL'ye düşecektir. Satış fiyatı 160 TL ve sabit maliyet 480.000 TL değişmezse başabaş miktarı kaç birim azalır?",
+    "question": "Bir işletmenin yönetimi, gelecek yıl başabaş satış miktarını düşürmek için alınabilecek önlemleri tartışmaktadır. Her önlem tek başına ve diğer koşullar sabitken değerlendirilecektir.\n\nAşağıdakilerden hangisi başabaş satış miktarını düşürmez?",
     "choices": {
-      "B": "500 birim",
-      "A": "7.500 birim",
-      "C": "8.000 birim",
-      "D": "120.000 birim",
-      "E": "1.000 birim"
+      "A": "Fabrika kira sözleşmesinin daha yüksek bedelle yenilenmesi",
+      "B": "Satış fiyatının rakiplerle uyumlu biçimde artırılması",
+      "C": "Hammadde tedarikçisinden daha düşük fiyat alınması",
+      "D": "Sabit yönetim giderlerinde tasarrufa gidilmesi",
+      "E": "Bayilere ödenen satış komisyonu oranının düşürülmesi"
     },
-    "correctAnswer": "B",
-    "explanation": "Eski başabaş 8.000, yeni başabaş 7.500 birimdir. Azalış 8.000 − 7.500 = 500 birimdir.",
+    "correctAnswer": "A",
+    "explanation": "Başabaş miktarı = sabit maliyet ÷ birim katkı. Kira artışı sabit maliyeti yükselttiği için başabaşı artırır. Fiyat artışı, değişken maliyet ve komisyon indirimi birim katkıyı yükseltir; sabit gider tasarrufu payı küçültür.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - değişken maliyet tasarrufunun başabaşa etkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1708,10 +1708,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1719,119 +1719,20 @@
     "id": "kh-yon-mhk-0053",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "90.000 TL reklam harcamasının satışları 6.000 birimden 7.200 birime çıkaracağı beklenmektedir. Fiyat 150 TL, birim değişken maliyet 90 TL ise reklamın faaliyet kârına net etkisi nedir?",
+    "question": "Bir işletme gelecek yıl için 3.000.000 ₺ satış hasılatı bütçelemiştir. Yıllık sabit maliyetler 840.000 ₺’dir ve yönetim 360.000 ₺ faaliyet kârı hedeflemektedir. Satın alma birimi, maliyet sözleşmelerinde uyulacak üst sınırı bilmek istemektedir.\n\nDeğişken maliyetlerin satış hasılatına oranı en fazla yüzde kaç olabilir?",
     "choices": {
-      "E": "18.000 TL azalır",
-      "A": "72.000 TL artar",
-      "B": "90.000 TL azalır",
-      "C": "90.000 TL artar",
-      "D": "18.000 TL artar"
-    },
-    "correctAnswer": "E",
-    "explanation": "Ek katkı (7.200 − 6.000) × (150 − 90) = 72.000 TL'dir. 90.000 TL reklam sonrası kâr 18.000 TL azalır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - reklam kararının artan katkı payıyla analizi"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0054",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "İşletme 8.000 birim satmayı, birim değişken maliyetin 72 TL ve sabit maliyetin 320.000 TL olmasını beklemektedir. 80.000 TL hedef kâr için gerekli asgari birim fiyat kaç TL'dir?",
-    "choices": {
-      "A": "122 TL",
-      "B": "112 TL",
-      "C": "50 TL",
-      "D": "82 TL",
-      "E": "102 TL"
-    },
-    "correctAnswer": "A",
-    "explanation": "Birim fiyat 72 + (320.000 + 80.000) / 8.000 = 122 TL olmalıdır.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - hedef kâra dayalı başabaş satış fiyatı"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0055",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Fiyat 140 TL, satış hacmi 10.000 birim ve sabit maliyet 360.000 TL'dir. 240.000 TL hedef faaliyet kârını korumak için birim değişken maliyet en çok kaç TL olabilir?",
-    "choices": {
-      "C": "80 TL",
-      "A": "104 TL",
-      "B": "116 TL",
-      "D": "60 TL",
-      "E": "200 TL"
-    },
-    "correctAnswer": "C",
-    "explanation": "Gerekli birim katkı (360.000 + 240.000) / 10.000 = 60 TL'dir. Değişken maliyet en çok 140 − 60 = 80 TL olabilir.",
-    "source": {
-      "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - hedef kâr için azami değişken maliyet"
-    },
-    "tags": [
-      "Özgün Soru",
-      "2026 Formatı",
-      "Konu Havuzu",
-      "Maliyet-Hacim-Kâr Analizi"
-    ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
-    "isPremium": false,
-    "isActive": true
-  },
-  {
-    "id": "kh-yon-mhk-0056",
-    "lessonId": "yonetim_muhasebesi",
-    "topicId": "maliyet_hacim_kar",
-    "question": "Duyarlılık analizinde başabaş sonucunun en kritik değişkenini belirlemek için hangi yaklaşım kullanılır?",
-    "choices": {
-      "D": "Her girdiyi makul aralıkta değiştirip sonuç etkisini karşılaştırmak",
-      "A": "Bütün varsayımları sabitleyip yalnız tek sonuç üretmek",
-      "B": "Batmış maliyetleri satış gelirine ekleyip katkıyı değiştirmek",
-      "C": "Yalnız en yüksek hacmi seçip maliyetleri dışlamak",
-      "E": "Başabaşı girdileri değiştirmeden yeniden ifade etmek"
+      "A": "%28",
+      "B": "%40",
+      "C": "%52",
+      "D": "%60",
+      "E": "%72"
     },
     "correctAnswer": "D",
-    "explanation": "Duyarlılık analizi, fiyat, hacim, değişken ve sabit maliyet gibi girdileri ayrı senaryolarda değiştirerek sonucun hangi varsayıma daha duyarlı olduğunu gösterir.",
+    "explanation": "Gerekli katkı = 840.000 + 360.000 = 1.200.000 ₺; katkı oranı = 1.200.000 ÷ 3.000.000 = %40. Değişken maliyet oranı en fazla 1 − %40 = %60 olabilir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - MHK modelinde duyarlılık analizi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "MHK duyarlılık analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1840,10 +1741,109 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "medium",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0054",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir işletmenin mevcut faaliyet kârı 400.000 ₺ ve faaliyet kaldıracı derecesi 3’tür. Ekonomik daralma nedeniyle gelecek yıl satış miktarının %10 azalacağı, fiyat ve maliyet yapısının ise değişmeyeceği tahmin edilmektedir.\n\nGelecek yılın tahmini faaliyet kârı kaç ₺’dir?",
+    "choices": {
+      "A": "120.000",
+      "B": "280.000",
+      "C": "300.000",
+      "D": "360.000",
+      "E": "520.000"
+    },
+    "correctAnswer": "B",
+    "explanation": "Kârdaki değişim = 3 × (−%10) = −%30. Yeni kâr = 400.000 × 0,70 = 280.000 ₺. Satışlardaki düşüş kâra kaldıraç derecesi kadar büyüyerek yansır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0055",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Bir işletme gelecek yılın planında satışların başabaş noktasının çok az üzerinde gerçekleşeceğini öngörmektedir. Finans müdürü, bu durumda satışlardaki küçük bir değişimin kârı nasıl etkileyeceğini açıklamaktadır.\n\nSatışların başabaş noktasına yakın olmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
+    "choices": {
+      "A": "Faaliyet kaldıracı derecesi yüksektir; küçük satış değişimi kârı büyük oranda değiştirir.",
+      "B": "Faaliyet kaldıracı derecesi düşüktür; satış değişimleri kârı az etkiler.",
+      "C": "Güvenlik payı oranı yüksektir; zarar riski azdır.",
+      "D": "Katkı payı sıfıra yaklaştığından kâr satıştan bağımsız hâle gelir.",
+      "E": "Faaliyet kaldıracı derecesi 1’e yaklaşır; kâr satışla aynı oranda değişir."
+    },
+    "correctAnswer": "A",
+    "explanation": "Başabaş noktasına yakın satışta kâr küçük, katkı payı ise büyüktür; bu nedenle faaliyet kaldıracı derecesi (katkı ÷ kâr) yüksek olur ve güvenlik payı dardır. Satışlardaki küçük değişimler kârı büyük oranda etkiler.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Güvenlik payı ve faaliyet kaldıracı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
+    "isPremium": false,
+    "isActive": true
+  },
+  {
+    "id": "kh-yon-mhk-0056",
+    "lessonId": "yonetim_muhasebesi",
+    "topicId": "maliyet_hacim_kar",
+    "question": "Geçerli faaliyet aralığında maliyet davranışına ilişkin aşağıdaki ifadeler verilmiştir:\n\nI. Toplam sabit maliyet üretim hacmi değişse de aynı kalır.\n\nII. Birim sabit maliyet üretim hacmi arttıkça azalır.\n\nIII. Birim değişken maliyet üretim hacmi arttıkça azalır.\n\nIV. Toplam değişken maliyet üretim hacmiyle doğru orantılı değişir.\n\nYukarıdaki ifadelerden hangileri doğrudur?",
+    "choices": {
+      "A": "I ve II",
+      "B": "II ve III",
+      "C": "I, II ve IV",
+      "D": "I, III ve IV",
+      "E": "II, III ve IV"
+    },
+    "correctAnswer": "C",
+    "explanation": "I, II ve IV doğrudur. III yanlıştır: geçerli aralıkta birim değişken maliyet sabittir; toplam değişken maliyet hacimle orantılı değişir. Birim sabit maliyet ise sabit tutarın daha çok birime yayılmasıyla azalır.",
+    "source": {
+      "kind": "generated",
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Maliyet davranışı"
+    },
+    "tags": [
+      "Özgün Soru",
+      "2026 Formatı",
+      "Konu Havuzu",
+      "Maliyet-Hacim-Kâr Analizi"
+    ],
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1851,20 +1851,20 @@
     "id": "kh-yon-mhk-0057",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "10.000 birim satışta manuel yapının katkısı 300.000 TL ve kârı 100.000 TL; otomasyon yapısının katkısı 500.000 TL ve kârı 100.000 TL'dir. Hangi yapının faaliyet kaldıracı daha yüksektir?",
+    "question": "Bir işletmenin bir birim mamul için maliyetleri şöyledir: direkt ilk madde ve malzeme 40 ₺, direkt işçilik 25 ₺, değişken GÜG 15 ₺, normal kapasiteye göre sabit GÜG 20 ₺ ve değişken pazarlama gideri 10 ₺.\n\nDeğişken maliyetleme yöntemine göre bir birim mamul stokunun maliyeti kaç ₺’dir?",
     "choices": {
-      "C": "Otomasyon yapısı; derece 5",
-      "A": "Manuel yapı; derece 3",
-      "B": "İki yapının derecesi eşittir",
-      "D": "Manuel yapı; derece 5",
-      "E": "Otomasyon yapısı; derece 3"
+      "A": "65",
+      "B": "80",
+      "C": "90",
+      "D": "100",
+      "E": "110"
     },
-    "correctAnswer": "C",
-    "explanation": "Faaliyet kaldıracı katkı/kârdır. Manuel yapıda 300.000 / 100.000 = 3, otomasyonda 500.000 / 100.000 = 5 olduğundan otomasyon daha duyarlıdır.",
+    "correctAnswer": "B",
+    "explanation": "Değişken maliyetlemede stok maliyeti değişken üretim maliyetlerinden oluşur: 40 + 25 + 15 = 80 ₺. Sabit GÜG dönem gideri yazılır; değişken pazarlama gideri üretim maliyeti olmadığından stoka girmez.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - alternatif maliyet yapılarında faaliyet kaldıracı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Değişken ve tam maliyetleme"
     },
     "tags": [
       "Özgün Soru",
@@ -1872,11 +1872,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1884,20 +1884,20 @@
     "id": "kh-yon-mhk-0058",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Plan A'nın sabit maliyeti 180.000 TL, katkı oranı %30; Plan B'nin sabit maliyeti 300.000 TL, katkı oranı %45'tir. İki plan hangi satış hasılatında aynı faaliyet kârını verir?",
+    "question": "Bir işletme A ve B ürünlerini satmaktadır. Ortak sabit maliyetler satış hasılatı oranında dağıtıldığında B ürünü 40.000 ₺ zararlı görünmektedir; oysa B’nin toplam katkı payı 110.000 ₺’dir. Ortak sabit maliyetler B üretimi durdurulsa da aynı kalacaktır.\n\nB ürününün üretiminin durdurulmasıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "choices": {
-      "C": "800.000 TL",
-      "A": "400.000 TL",
-      "B": "266.666,67 TL",
-      "D": "3.200.000 TL",
-      "E": "1.200.000 TL"
+      "A": "İşletmenin toplam kârı 40.000 ₺ artar.",
+      "B": "İşletmenin toplam kârı 70.000 ₺ artar.",
+      "C": "İşletmenin toplam kârı 150.000 ₺ azalır.",
+      "D": "Ortak sabit maliyetler ortadan kalktığından kâr değişmez.",
+      "E": "İşletmenin toplam kârı 110.000 ₺ azalır."
     },
-    "correctAnswer": "C",
-    "explanation": "Eşitlik 0,30S − 180.000 = 0,45S − 300.000 biçimindedir. Satış (300.000 − 180.000) / (%45 − %30) = 800.000 TL'dir.",
+    "correctAnswer": "E",
+    "explanation": "Ortak sabit maliyetler kaçınılamaz olduğundan B durdurulunca yalnızca katkı payı kaybedilir; toplam kâr 110.000 ₺ azalır. Dağıtılmış sabit maliyetlerle hesaplanan ürün zararı karar için yanıltıcıdır.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - katkı oranları farklı planlarda kayıtsızlık satışı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Çok ürünlü MHK analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1906,10 +1906,10 @@
       "Maliyet-Hacim-Kâr Analizi"
     ],
     "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1917,20 +1917,20 @@
     "id": "kh-yon-mhk-0059",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Satışlar 1.500.000 TL ve katkı oranı %40 iken sabit maliyet 420.000 TL'den 480.000 TL'ye çıkacaktır. Satışlar değişmezse güvenlik payı tutarı kaç TL azalır?",
+    "question": "Bir işletme dönem içinde ürettiği 8.000 birimin tamamını birim 150 ₺’den satmıştır. Birim değişken üretim maliyeti 80 ₺, birim değişken satış gideri 10 ₺’dir. Sabit genel üretim giderleri 240.000 ₺, sabit yönetim giderleri 160.000 ₺’dir.\n\nDeğişken maliyetleme yöntemine göre faaliyet kârı kaç ₺’dir?",
     "choices": {
-      "E": "150.000 TL",
-      "A": "300.000 TL",
-      "B": "450.000 TL",
-      "C": "60.000 TL",
-      "D": "210.000 TL"
+      "A": "80.000",
+      "B": "160.000",
+      "C": "240.000",
+      "D": "320.000",
+      "E": "480.000"
     },
-    "correctAnswer": "E",
-    "explanation": "Eski başabaş 1.050.000, yeni başabaş 1.200.000 TL'dir. Güvenlik payı 450.000 TL'den 300.000 TL'ye iner; azalış 150.000 TL'dir.",
+    "correctAnswer": "A",
+    "explanation": "Katkı payı = 8.000 × (150 − 80 − 10) = 480.000 ₺. Faaliyet kârı = 480.000 − 240.000 − 160.000 = 80.000 ₺. Üretim ve satış eşit olduğundan tam maliyetleme de aynı kârı verir.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - sabit maliyet artışının güvenlik payına etkisi"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Değişken ve tam maliyetleme"
     },
     "tags": [
       "Özgün Soru",
@@ -1938,11 +1938,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "medium",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   },
@@ -1950,20 +1950,20 @@
     "id": "kh-yon-mhk-0060",
     "lessonId": "yonetim_muhasebesi",
     "topicId": "maliyet_hacim_kar",
-    "question": "Hasılat karması %70 X ve %30 Y; katkı oranları %45 ve %30'dur. Sabit maliyet 567.000 TL, vergi oranı kökte verilen %30 ve vergi sonrası hedef 170.100 TL ise gereken toplam satış kaç TL'dir?",
+    "question": "Bir işletmenin ürününün satış fiyatı 95 ₺, birim değişken maliyeti 57 ₺ ve yıllık sabit maliyeti 418.000 ₺’dir. Satış birimi gelecek yıl 13.500 birim satış yapılacağını öngörmekte; fiyat ve maliyetlerin geçerli aralıkta değişmeyeceği varsayılmaktadır.\n\nBu satış düzeyinde beklenen faaliyet kârı kaç ₺’dir?",
     "choices": {
-      "A": "2.000.000 TL",
-      "B": "1.820.000 TL",
-      "C": "1.400.000 TL",
-      "D": "2.160.000 TL",
-      "E": "481.950 TL"
+      "A": "76.000",
+      "B": "95.000",
+      "C": "133.000",
+      "D": "418.000",
+      "E": "513.000"
     },
-    "correctAnswer": "A",
-    "explanation": "Ağırlıklı katkı oranı %40,50, vergi öncesi hedef 170.100 / (1 − %30) = 243.000 TL'dir. Satış (567.000 + 243.000) / %40,50 = 2.000.000 TL olur.",
+    "correctAnswer": "B",
+    "explanation": "Toplam katkı payı = 13.500 × (95 − 57) = 513.000 ₺. Faaliyet kârı = 513.000 − 418.000 = 95.000 ₺. Başabaş miktarı 11.000 birim olduğundan başabaşı aşan 2.500 birimin katkısı kârı oluşturur.",
     "source": {
       "kind": "generated",
-      "styleRef": "2026/1 beş seçenekli test biçimi",
-      "legislationRef": "Yönetim muhasebesi - çok ürünlü vergi sonrası hedef kâr satışı"
+      "styleRef": "2026 SMMM beş seçenekli test",
+      "legislationRef": "Başabaş ve hedef kâr analizi"
     },
     "tags": [
       "Özgün Soru",
@@ -1971,11 +1971,11 @@
       "Konu Havuzu",
       "Maliyet-Hacim-Kâr Analizi"
     ],
-    "difficulty": "hard",
-    "updatedAt": "2026-07-17T00:00:00Z",
-    "examPeriod": "2026/1 formatına uyumlu",
-    "legislationVersion": "2026 SMMM Yeterlilik Yönetim Muhasebesi kapsamı",
-    "sourceUpdatedAt": "2026-07-17T00:00:00Z",
+    "difficulty": "easy",
+    "updatedAt": "2026-09-30T00:00:00Z",
+    "examPeriod": "2026 test sistemine uyumlu özgün soru",
+    "legislationVersion": "Doğrusal MHK modeli; TMS 2 md. 12-13; 30.09.2026 kontrolü",
+    "sourceUpdatedAt": "2026-09-30T00:00:00Z",
     "isPremium": false,
     "isActive": true
   }
