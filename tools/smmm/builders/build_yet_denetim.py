@@ -2,6 +2,11 @@
 """Yeterlilik — Muhasebe Denetimi Test 2 + Test 3 (2×20 = 40 soru).
 BDS/TDS dayanaklı. Şıklar aynı kavramsal düzeyde ve doğal uzunlukta tutulur.
 explanation'da harf atıfı YOK. Yıla bağlı tutar/oran YOK."""
+import os as _os, sys as _sys
+if _os.environ.get("ESKI_BUILDER_CALISTIR") != "1":  # 2026-09-30: içerik yet_ortak/fta_ortak builder'larına geçti
+    _sys.exit("DURDURULDU: bu eski üretici, gerçek sınav profiline göre yeniden yazılmış Yeterlilik içeriğinin üzerine "
+              "eski sürümü yazar. Güncel üretici: tools/smmm/builders/build_yk_*.py / build_yb_*.py "
+              "(bkz. tools/smmm/URETIM_KURALLARI.md). Bilerek çalıştırmak için ESKI_BUILDER_CALISTIR=1 verin.")
 import json, random, re
 from pathlib import Path
 
