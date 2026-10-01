@@ -44,7 +44,7 @@ kavram ağırlıklı derslerde **profil kalibrasyonu** (olumsuz kök + öncül o
 | 13 | turkce | 3 | 0 | ⬜ (kör %28-30, öncüllü %0 — profil kalibrasyonu bekliyor) |
 | 14 | matematik | 5 | 2 | ✅ **KAPSAM AÇIĞI KAPATILDI** — 2 yeni konu / 120 soru (ileri matematik); mevcut 3 konu ölçüldü, zaten temiz (kör %19-21, boy 1/0) |
 | 15 | ataturk_ilkeleri | 3 | 0 | ⬜ |
-| 16 | yabanci_dil | 3 | 0 | ⬜ |
+| 16 | yabanci_dil | 3 | 3 | ✅ **1 Ekim: gerçek sınav profiliyle baştan yazıldı (v217 adayı)** — 16 kitapçıktan (160 soru) ölçülen profil: 21–27 akademik cümlede `----` boşluk (kök ~101), %12 çift boşluk, 28–30 cümle tamamlama; tanım/çeviri sorusu yok. grammar (zaman, kip, edilgen, ilgi zamiri, koşul, bağlaç, 11 çift boşluk) · vocabulary (aynı sözcük türünden seçenek, eşdizim, öbek fiil; "opposite of" soruları kaldırıldı) · reading_cloze → cümle tamamlama. Kök 43→89, tanım tipi %16→%0, cümle tamamlama %0→%33. Kör %25/%23/%23. |
 
 Canlı OTA: **v178** (`sosyal_guvenlik_hukuku` +
 `is_sozlesmesinin_sona_ermesi` yapısal kalibrasyonu).

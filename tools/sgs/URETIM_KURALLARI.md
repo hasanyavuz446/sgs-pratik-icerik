@@ -138,6 +138,25 @@ profil üretim matrisinin başlangıç noktasıdır:
 yalnız 2026'nın 30 hukuk sorusuna dayanıyordu ve örneklem çok küçüktü. Yeni bant
 **2014–2026 arşivinden çıkarılan 629 gerçek hukuk sorusuna** dayanır.
 
+### Yabancı Dil (21–30): tanım sorusu yok, cümle içi boşluk + cümle tamamlama
+
+2021–2026'nın 16 kitapçığından (160 soru) ölçüldü, 2026-10-01'de üç konu buna göre
+baştan yazıldı (`build_ing_*_sinav.py`):
+
+- **21–27:** akademik/iş bağlamlı tek cümle (medyan kök ~100 karakter), boşluk
+  **`----`** (alt çizgi değil). Ölçülen: zaman/kip/edilgen, ilgi zamiri, bağlaç,
+  aynı sözcük türünden beş seçenekli sözcük seçimi; **%12 çift boşluk**
+  (`for / to` biçiminde edat/bağlaç çifti).
+- **28–30:** cümle tamamlama; şıklar yan/temel cümle. Doğru şık anlam ilişkisi
+  (neden, karşıtlık, amaç, sonuç) **ve** zaman uyumuyla bulunur.
+- Sınavda **hiç yok:** "The opposite of … is", eş/zıt anlam, Türkçe çeviri, okuma
+  parçası. Eski havuzun %16'sı bu tipti.
+- ⚠️ Cümle tamamlamada doğal yazım doğru şıkkı en uzun yapar (ilk tasarım 48/60);
+  çeldiricilere gerçek içerik eklenince bu kez hep ortada kaldı (38/60, "iki ucu
+  ele"). Dağıtılmış hâli: en kısa 10 · en uzun 12 · kör %23.
+- Özgünlük kapısı: tasarım modülü gerçek sınav cümleleriyle **6-gram çakışmasını**
+  reddeder (telif).
+
 ### 🔴 Hukuk: gerçek sınav sorusu tanım sormaz, kural uygular
 
 Bu ders ailesinin kalite açığı biçimsel değil **yapısaldır** — 2026-08-13 ölçümü:
