@@ -313,6 +313,28 @@ Ayrıca ölçülür: çözüm birebir tekrarı (FATAL), yalnız sayı değişmi�
 
 ---
 
+
+### Denetim (73–88): standarda atıf, olay kökü, kısa şık
+
+2021–2026'nın 16 kitapçığından (256 denetim sorusu) ölçüldü; 2026-10-04/05'te yedi
+denetim paketinin tamamı buna göre baştan yazıldı (`build_denetim_*_sinav.py`):
+kök medyan **150**, olumsuz kök **%46**, köklerin **%29**'u standardı adıyla anar
+("BDS 530 Bağımsız Denetimde Örnekleme standardına göre…"), şık medyanı **41** karakter,
+parantezli şık **%1**, 200+ karakterlik olay kökü **%27**.
+
+- Konu ağırlığı: rapor ve görüş (BDS 700/705/706/701/720/570) > risk ve hile (BDS 315/320/240)
+  > kanıt ve teyit (BDS 500/505/520/501/580) > örnekleme (BDS 530) > iç kontrol (BDS 315/265)
+  > sözleşme, kalite ve etik (BDS 210/220, KYS, Etik Kurallar, TTK 400). BDS 210, 240 ve 265
+  sınavda sık sorulur; eski havuzda yoktu.
+- Büyük harfle vurgu (`YANLIŞTIR`, `DEĞİLDİR`), tırnaklı terim kökleri (`'Örnekleme riski' ile
+  ilgili…`) ve İngilizce parantez açıklamaları (`(going concern)`) ev üslubudur; kullanılmaz.
+- Hesaplı sorular (risk modeli, önemlilik, yansıtılan yanlışlık, analitik beklenti) her biri
+  farklı bağlamla yazılır; aynı veri setini iki soruda kullanma (yakın kopya UYARI'sı).
+- 🔴 Tasarımda iki yönlü boy tuzağı tekrar tekrar yaşandı: açıklayıcı doğru şık yazınca
+  %33-45 en uzun; her soruya bir uzun çeldirici koyunca %5 en uzun ("en uzunu asla seçme").
+  Doğru şıkkı kısa yaz, çeldirici boylarını soruya göre değiştir, `liste()` çıktısıyla %15-20
+  en uzun / %10-15 en kısa bandına getir.
+
 ## 3. Builder kullan; JSON'u elle yazma
 
 Sorular doğrudan JSON'a yazılmaz. Her konu için
