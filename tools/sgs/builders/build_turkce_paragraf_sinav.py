@@ -3,6 +3,8 @@
 """Türkçe — Paragraf (yeni konu) — gerçek sınav profiline göre yazıldı.
 
 YENİ KONU. 2021-2026'nın 16 kitapçığında Türkçe sorularının %38'i paragraf sorusu, havuzda karşılığı yoktu. 60 özgün paragraf: düşüncenin akışını bozan cümle, paragraf sıralama (ilk/üçüncü/dördüncü cümle), yer değiştirme, düşünceyi geliştirme yolları (tek ve ikili), anlatım biçimi, ana düşünce/vurgulanan düşünce, çıkarılabilir/söylenemez, paragraf tamamlama (baş, orta, son), nesnel/öznel yargı, paragraf içi noktalama ve kalın sözcüğün anlamı/türü. Numaralı şıklar (I-V, 'I ve II') gerçek sınavdaki gibi sıralı; harf doğru şıkkın sırasından gelir, kalan 45 soruda harf dengelenir. Serbest şıklarda doğru şık en uzun 6/45, en kısa 7/45.
+
+2026-10-05: paket 100 soruya çıkarıldı (0061-0100; Türkçe içindeki paragraf payı %25 → %36, gerçek sınav %38). Yeni 40 soru aynı tip dağılımıyla yazıldı; serbest şıklı 28 soruda doğru şık en uzun 3, en kısa 3; gerçek kitapçıklarla ortak 6'lı sözcük dizisi yalnız standart soru kalıbında.
 """
 from __future__ import annotations
 
@@ -806,6 +808,526 @@ _PATCHES = {
         },
         'C',
         'Parçada faturasız satış yapan işletmenin vergisini ödeyen rakibine karşı haksız fiyat avantajı kazandığı söyleniyor; buradan kurallara uyan işletmelerin rekabet gücünün zayıfladığı çıkarılır.',
+    ),
+    # düzey 3
+    '0061': patch(
+        '(I) Kent ağaçları, yaz aylarında caddelerin sıcaklığını birkaç derece düşürebilir. (II) Ağaç dikimi, Osmanlı döneminde vakıflar aracılığıyla da desteklenirdi. (III) Yaprakların gölgesi ve buharlaşma, asfaltın ısı biriktirmesini azaltır. (IV) Bu nedenle ağaçlıklı bir sokakta yürüyen biri, açıkta kalan bir meydana göre belirgin bir serinlik hisseder. (V) Belediyelerin yeşil alan planlarını iklime uyum açısından ele alması bu yüzden önemlidir.\n\nBu parçada numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'B',
+        'Parça kent ağaçlarının serinletici etkisini anlatıyor. II. cümle ağaç dikiminin tarihteki desteklenme biçimine geçerek konunun dışına çıkıyor.',
+    ),
+    # düzey 3
+    '0062': patch(
+        '(I) Sesli kitaplar son yıllarda okuma alışkanlığına yeni bir boyut kazandırdı. (II) Trafikte geçen süreyi ya da ev işlerini bir romanı dinleyerek değerlendirmek mümkün hâle geldi. (III) Bazı okurlar, iyi bir seslendirmenin metni daha canlı kıldığını düşünüyor. (IV) Eleştirmenlerin bir kısmı ise dinlemenin, okurun metinle kurduğu yavaş ve derin ilişkiyi zayıflattığını savunuyor. (V) Kâğıt fiyatlarındaki artış, yayınevlerinin baskı sayılarını düşürmesine yol açtı.\n\nBu parçada numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'E',
+        'Parça sesli kitapların okumaya getirdiği yenilikleri ve bunlara yöneltilen eleştirileri ele alıyor. V. cümle kâğıt fiyatlarından söz ederek konudan uzaklaşıyor.',
+    ),
+    # düzey 3
+    '0063': patch(
+        "(I) Arıcılık, Anadolu'da binlerce yıllık bir geçmişe sahiptir. (II) Kovanlar eskiden ağaç kütüklerinden ya da hasırdan yapılır, bal alınırken kovan çoğu zaman zarar görürdü. (III) Balın rengi ve tadı, arıların konduğu çiçeklere göre değişir. (IV) Çerçeveli modern kovanlar ise peteklerin kovana zarar vermeden alınmasını sağladı. (V) Bu yenilik, arıcılığı göçebe bir uğraştan planlı bir üretim dalına dönüştürdü.\n\nBu parçada numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?",
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'C',
+        'Parça kovan yapımındaki değişimi ve bunun arıcılığa etkisini anlatıyor. III. cümle balın rengi ve tadından söz ederek bu akışı kesiyor.',
+    ),
+    # düzey 3
+    '0064': patch(
+        '(I) Bir dili öğrenmenin en etkili yollarından biri, o dili konuşan insanlarla düzenli iletişim kurmaktır. (II) Ders kitaplarındaki kalıplar, gündelik konuşmanın hızını ve esnekliğini çoğu zaman yansıtmaz. (III) Karşılıklı konuşma ise öğrenciyi beklenmedik sorulara anında yanıt vermeye zorlar. (IV) Türkçe, eklemeli bir dil olarak sözcük türetmede oldukça zengindir. (V) Bu zorlanma, zamanla kişinin dili düşünmeden kullanabilmesini sağlar.\n\nBu parçada numaralanmış cümlelerden hangisi düşüncenin akışını bozmaktadır?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'D',
+        "Parça dil öğreniminde karşılıklı konuşmanın yararını anlatıyor. IV. cümle Türkçenin yapısına geçerek akışı bozuyor; V. cümledeki 'Bu zorlanma' da III. cümleye bağlanıyor.",
+    ),
+    # düzey 3
+    '0065': patch(
+        '(I) Bu nedenle sabah saatlerinde yapılan sulama hem tasarruf sağlar hem de bitkiyi korur. (II) Bahçe sulamasında en sık yapılan hata, suyu günün en sıcak saatlerinde vermektir. (III) Akşam sulaması ise yaprakların uzun süre ıslak kalmasına ve mantar hastalıklarına yol açabilir. (IV) Öğle güneşinde verilen suyun önemli bir kısmı köklere ulaşmadan buharlaşır. (V) Sabah serinliğinde verilen su ise toprağa yavaşça işler ve gün boyu bitkinin ihtiyacını karşılar.\n\nNumaralanmış cümlelerle anlamlı bir paragraf oluşturulursa paragrafın dördüncü cümlesi hangisi olur?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'E',
+        "Sıralama II-IV-III-V-I'dir: hata tanıtılır, öğle sulamasının sakıncası, akşam sulamasının sakıncası, sabah sulamasının yararı ve 'Bu nedenle' ile sonuç gelir. Dördüncü cümle V'tir.",
+    ),
+    # düzey 3
+    '0066': patch(
+        '(I) Ancak kısa sürede, telefonun iş görüşmelerini kolaylaştıran bir araç olduğu anlaşıldı. (II) Telefon ilk icat edildiğinde birçok kişi tarafından gereksiz bir oyuncak olarak görülmüştü. (III) Bugün ise cebimizdeki telefon, bankacılıktan sağlığa kadar pek çok işi yürüttüğümüz bir merkeze dönüştü. (IV) Yaygınlaştıkça evlerin de vazgeçilmez eşyası hâline geldi. (V) Bu dönüşüm, bir buluşun değerinin çoğu zaman ancak zamanla anlaşılabildiğini gösteriyor.\n\nNumaralanmış cümlelerle anlamlı bir paragraf oluşturulursa paragrafın ikinci cümlesi hangisi olur?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'A',
+        "Sıralama II-I-IV-III-V'tir: ilk algı, 'Ancak' ile gelen değişim, yaygınlaşma, bugünkü durum ve genel sonuç. İkinci cümle I'dir.",
+    ),
+    # düzey 3
+    '0067': patch(
+        '(I) Böylece okul bahçesi, ders saatleri dışında da mahalleye açık bir alana dönüştü. (II) Okulun boş duran bahçesi uzun süre yalnızca teneffüslerde kullanılıyordu. (III) Okul yönetimi, velilerle birlikte bahçeye bir sebze tarhı ve oturma alanı yapmaya karar verdi. (IV) Hafta sonları öğrencilerle birlikte gelen aileler, tarhların bakımını sırayla üstlendi. (V) Bu deneyim, küçük bir düzenlemenin bir mekânın işlevini nasıl değiştirebileceğini gösteriyor.\n\nNumaralanmış cümlelerle anlamlı bir paragraf oluşturulursa paragrafın üçüncü cümlesi hangisi olur?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'D',
+        "Sıralama II-III-IV-I-V'tir: eski durum, karar, uygulama, 'Böylece' ile ortaya çıkan sonuç ve genel yargı. Üçüncü cümle IV'tür.",
+    ),
+    # düzey 3
+    '0068': patch(
+        '(I) Oysa çoğu zaman bu yorgunluğun asıl nedeni beden değil, zihindir. (II) Uzun bir iş gününün sonunda kendimizi bitkin hissederiz. (III) Gün boyu verilen sayısız küçük karar, zihni fark ettirmeden tüketir. (IV) Bu yüzden akşamları kısa bir yürüyüş yapmak ya da sessiz bir ortamda oturmak, uzun bir uykudan daha dinlendirici olabilir. (V) Bunu çoğunlukla fiziksel bir yorgunluk sanırız.\n\nNumaralanmış cümlelerle anlamlı bir paragraf oluşturulursa paragrafın ilk cümlesi hangisi olur?',
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'B',
+        "Sıralama II-V-I-III-IV'tür: durum, yaygın yorum, 'Oysa' ile düzeltme, gerekçe ve öneri. İlk cümle II'dir.",
+    ),
+    # düzey 3
+    '0069': patch(
+        "(I) Kahvenin Avrupa'ya yayılması 17. yüzyılda gerçekleşti. (II) Kahvehaneler kısa sürede tüccarların, yazarların ve öğrencilerin buluşma yeri oldu. (III) Venedik ve Londra'da ilk kahvehaneler açıldı. (IV) Bu mekânlarda gazeteler okunuyor, haberler tartışılıyor, ticari anlaşmalar yapılıyordu. (V) Bu yüzden bazı tarihçiler kahvehaneleri kamusal tartışmanın doğduğu yerler olarak görür.\n\nBu parçadaki numaralanmış cümlelerden hangi ikisinin yeri değiştirilirse düşüncenin akışı düzelir?",
+        {
+            'A': 'I ve II',
+            'B': 'I ve III',
+            'C': 'II ve III',
+            'D': 'III ve IV',
+            'E': 'IV ve V',
+        },
+        'C',
+        'Kahvehanelerin buluşma yeri olması, önce açılmalarından sonra gelmelidir. II ile III yer değiştirince sıra I-III-II-IV-V olur.',
+    ),
+    # düzey 3
+    '0070': patch(
+        '(I) Uyku boyunca vücut ısıları belirgin biçimde düşer. (II) Kış geldiğinde korunaklı bir yuvaya çekilirler. (III) Kış uykusuna yatan hayvanlar, sonbaharda yoğun biçimde beslenerek vücutlarında yağ depolar. (IV) Isının düşmesiyle kalp atışları ve solunum yavaşlar, enerji tüketimi en aza iner. (V) Bahar geldiğinde depoladıkları yağın büyük kısmını tüketmiş olarak uyanırlar.\n\nBu parçadaki numaralanmış cümlelerden hangi ikisinin yeri değiştirilirse düşüncenin akışı düzelir?',
+        {
+            'A': 'I ve II',
+            'B': 'I ve III',
+            'C': 'II ve IV',
+            'D': 'III ve V',
+            'E': 'IV ve V',
+        },
+        'B',
+        'Parça sonbaharda yağ depolamayla başlamalıdır. I ile III yer değiştirince sıra yağ depolama, yuvaya çekilme, ısının düşmesi, kalbin yavaşlaması ve baharda uyanma olur.',
+    ),
+    # düzey 2
+    '0071': patch(
+        'Biyoçeşitlilik, belirli bir bölgede yaşayan canlı türlerinin, bu türlerin genetik farklılıklarının ve oluşturdukları ekosistemlerin bütününü ifade eder. Kavram yalnızca tür sayısını değil, türlerin birbirleriyle ve çevreleriyle kurduğu ilişkileri de kapsar. Bu nedenle bir ormandaki ağaç türlerinin sayısı kadar, o ağaçlara bağlı yaşayan böceklerin ve mantarların çeşitliliği de biyoçeşitliliğin parçasıdır.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
+        {
+            'A': 'Tanımlama',
+            'B': 'Karşılaştırma',
+            'C': 'Tanık gösterme',
+            'D': 'Sayısal verilerden yararlanma',
+            'E': 'Benzetme',
+        },
+        'A',
+        "Parça 'biyoçeşitlilik' kavramının ne olduğunu ve neleri kapsadığını açıklıyor; ağırlıklı yol tanımlamadır.",
+    ),
+    # düzey 2
+    '0072': patch(
+        'Usta bir öykücünün en önemli becerisi, söylemediklerini okura sezdirebilmesidir. Uzun yıllar öykü atölyeleri yöneten bir yazar, öğrencilerine sık sık "Öykünün gücü, yazmadığın cümlelerdedir." derdi. Gerçekten de iyi bir öykü bittiğinde okur, metinde açıkça yer almayan bir duyguyla baş başa kalır.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
+        {
+            'A': 'Tanımlama',
+            'B': 'Karşılaştırma',
+            'C': 'Sayısal verilerden yararlanma',
+            'D': 'Örneklendirme',
+            'E': 'Tanık gösterme',
+        },
+        'E',
+        'Yazar, düşüncesini desteklemek için deneyimli bir öykü yazarının sözüne başvuruyor; bu tanık göstermedir.',
+    ),
+    # düzey 2
+    '0073': patch(
+        'Kâğıt kitap, okura sayfalar arasında rahatça gidip gelme ve kenarına not alma imkânı verir. Elektronik kitap ise yüzlerce eseri tek bir cihazda taşımayı ve yazı boyutunu dilediğince ayarlamayı mümkün kılar. Biri dokunma ve sahiplenme duygusuyla, öteki pratikliğiyle öne çıkar.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
+        {
+            'A': 'Karşılaştırma',
+            'B': 'Tanımlama',
+            'C': 'Tanık gösterme',
+            'D': 'Sayısal verilerden yararlanma',
+            'E': 'Benzetme',
+        },
+        'A',
+        'Parça kâğıt kitapla elektronik kitabın özelliklerini karşılaştırıyor.',
+    ),
+    # düzey 3
+    '0074': patch(
+        'Ekonomide fırsat maliyeti, bir seçim yapılırken vazgeçilen en iyi alternatifin değeridir. Örneğin hafta sonunu sınava çalışarak geçiren bir öğrencinin fırsat maliyeti, o sürede yarı zamanlı bir işte kazanabileceği ücret ya da arkadaşlarıyla geçirebileceği zamandır. Kavram, her tercihin bir bedeli olduğunu hatırlatır.\n\nBu parçada düşünceyi geliştirme yollarından hangileri kullanılmıştır?',
+        {
+            'A': 'Karşılaştırma ve tanık gösterme',
+            'B': 'Tanımlama ve örneklendirme',
+            'C': 'Benzetme ve tanımlama',
+            'D': 'Örneklendirme ve sayısal veriler',
+            'E': 'Tanık gösterme ve benzetme',
+        },
+        'B',
+        "İlk cümle fırsat maliyetini tanımlıyor, ikinci cümle 'Örneğin' ile bir örnek veriyor.",
+    ),
+    # düzey 3
+    '0075': patch(
+        "İlçede 2015 yılında kişi başına günlük su tüketimi 210 litreydi. Akıllı sayaçların kullanılmaya başlanmasından sonra bu rakam 2024'te 165 litreye geriledi. Aynı dönemde sayaç uygulanmayan komşu ilçede tüketim neredeyse değişmedi ve 205 litre dolayında kaldı. Bu tablo, ölçmenin tasarrufun ilk adımı olduğunu gösteriyor.\n\nBu parçada düşünceyi geliştirme yollarından hangileri kullanılmıştır?",
+        {
+            'A': 'Tanımlama ve tanık gösterme',
+            'B': 'Benzetme ve örneklendirme',
+            'C': 'Sayısal verilerden yararlanma ve tanık gösterme',
+            'D': 'Tanımlama ve benzetme',
+            'E': 'Sayısal verilerden yararlanma ve karşılaştırma',
+        },
+        'E',
+        'Parça tüketim rakamlarını veriyor ve iki ilçeyi birbiriyle karşılaştırıyor.',
+    ),
+    # düzey 2
+    '0076': patch(
+        'Sabahın ilk ışıkları limana vurduğunda kayıklar, durgun suyun üstünde hafifçe sallanıyordu. Rıhtım boyunca dizilmiş ağların arasından tuz ve yosun kokusu yükseliyor, martılar balıkçıların başında halkalar çiziyordu. Uzakta, sisin içinden adanın gri silueti belli belirsiz seçiliyordu.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        {
+            'A': 'Öyküleme',
+            'B': 'Açıklama',
+            'C': 'Tartışma',
+            'D': 'Betimleme',
+            'E': 'Söyleşi',
+        },
+        'D',
+        'Parça limanı renk, koku, ses ve görüntü ayrıntılarıyla göz önünde canlandırıyor; betimleme ağır basıyor.',
+    ),
+    # düzey 2
+    '0077': patch(
+        'Kapıyı açtığında karşısında yıllardır görmediği okul arkadaşını buldu. Bir an ne diyeceğini bilemedi, sonra kenara çekilip onu içeri buyur etti. Mutfakta çay demlenirken eski fotoğrafları çıkardılar ve saatlerce o günleri konuştular. Gece yarısına doğru arkadaşı kalkarken yeniden görüşmek için birbirlerine söz verdiler.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        {
+            'A': 'Betimleme',
+            'B': 'Açıklama',
+            'C': 'Öyküleme',
+            'D': 'Tartışma',
+            'E': 'Söyleşi',
+        },
+        'C',
+        'Parça zaman sırasına göre birbirini izleyen olayları anlatıyor; öyküleme ağır basıyor.',
+    ),
+    # düzey 3
+    '0078': patch(
+        'Bir kenti tanımak için müzelerini gezmek yetmez. Asıl kent; pazar yerlerinde, mahalle kahvelerinde, akşamüstü dolan otobüslerde yaşar. Rehber kitaplar size kentin yıllar önce nasıl olduğunu anlatır, ama bugün nasıl soluk aldığını ancak sokaklarında dolaşırsanız öğrenebilirsiniz.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
+        {
+            'A': 'Kent, gündelik hayatında tanınır.',
+            'B': 'Müzeler, kentlerin en ilgi çekici yerleridir.',
+            'C': 'Rehber kitaplar güncel bilgi vermediği için gezilerde kullanılmamalıdır.',
+            'D': 'Kent yaşamı en çok toplu taşıma araçlarında hissedilir.',
+            'E': 'Kentlerin tarihî dokusu korunmalıdır.',
+        },
+        'A',
+        'Yazar, kentin gerçek yüzünün müzelerde değil gündelik hayatın aktığı yerlerde görüleceğini vurguluyor.',
+    ),
+    # düzey 3
+    '0079': patch(
+        'Usta bir çömlekçinin elinde çamur, birkaç dakikada zarif bir vazoya dönüşür. İzleyene bu iş kolay görünür. Oysa o birkaç dakikanın ardında, yüzlerce kez çöken çamurlar ve yılların sabrı vardır. Kolay görünen her ustalık, görünmeyen uzun bir emeğin ürünüdür.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
+        {
+            'A': 'Çömlekçilik kısa sürede öğrenilebilecek bir zanaattir.',
+            'B': 'Ustalık emekle kazanılır.',
+            'C': 'İzleyiciler ustaların işini çoğu zaman küçümser.',
+            'D': 'Çamurla çalışmak hem sabır hem de güçlü eller gerektiren zorlu bir iştir.',
+            'E': 'El sanatları günümüzde eskisi kadar ilgi görmemektedir.',
+        },
+        'B',
+        'Son cümle ana düşünceyi açıkça veriyor: kolay görünen ustalık uzun bir emeğe dayanır.',
+    ),
+    # düzey 3
+    '0080': patch(
+        'Bir yapıtı eleştirirken amaç onu küçümsemek değil, okura yapıtın güçlü ve zayıf yanlarını gösterebilmektir. İyi bir eleştirmen kişisel beğenisini gerekçeleriyle ortaya koyar ve okuru kendi yargısına ulaşması için donatır. Gerekçesiz övgü de gerekçesiz yergi de okura bir şey kazandırmaz.\n\nBu parçada asıl vurgulanan düşünce aşağıdakilerden hangisidir?',
+        {
+            'A': 'Eleştiri, gerekçelere dayanarak okuru aydınlatmalıdır.',
+            'B': 'Eleştirmenler yapıtların zayıf yanlarını öne çıkarmalıdır.',
+            'C': 'Okurlar eleştirmenlerin beğenilerini benimsemelidir.',
+            'D': 'Övgü, yergiden daha yararlı bir eleştiri biçimidir.',
+            'E': 'Eleştirmen kişisel beğenisini yazısına yansıtmamalıdır.',
+        },
+        'A',
+        'Parça eleştirinin değerini gerekçeye ve okura kazandırdığına bağlıyor; gerekçesiz övgü ve yergi reddediliyor.',
+    ),
+    # düzey 3
+    '0081': patch(
+        'Bildirim seslerinin gün boyu bölük pörçük ettiği bir zihin, derin düşünmeye zor geçer. Bir metni okurken ya da bir sorunu çözerken her kesinti, yeniden odaklanmak için ek bir çaba ister. Bu yüzden telefonu belirli saatlerde sessize almak, verimliliği artırmanın en ucuz yollarından biridir.\n\nBu parçanın ana düşüncesi aşağıdakilerden hangisidir?',
+        {
+            'A': 'Telefonlar insan zihnine kalıcı zarar verir.',
+            'B': 'Okuma alışkanlığı teknolojiyle birlikte azalmaktadır.',
+            'C': 'Sorun çözme becerisi, düzenli çalışmayla gelişir.',
+            'D': 'Bildirim sesleri, kişinin uyku düzenini olumsuz etkileyebilir.',
+            'E': 'Kesintileri azaltmak, odaklanmayı ve verimi artırır.',
+        },
+        'E',
+        'Parça kesintilerin odaklanmayı zorlaştırdığını ve telefonu sessize almanın verimi artırdığını savunuyor.',
+    ),
+    # düzey 3
+    '0082': patch(
+        'Lale, Osmanlı kültüründe bir çiçekten öte, zevk ve inceliğin simgesiydi. 18. yüzyılın başlarında lale soğanları yüksek fiyatlarla alınıp satılır, bahçelerde lale şenlikleri düzenlenirdi. Çinilerden kumaşlara kadar pek çok süsleme sanatında da lale motifi sıkça kullanıldı.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
+        {
+            'A': 'Lale soğanları yüksek fiyatlarla alınıp satılmıştır.',
+            'B': 'Bahçelerde lale şenlikleri düzenlendiği olmuştur.',
+            'C': 'Lale motifi süslemede pek kullanılmamıştır.',
+            'D': 'Lale, Osmanlı kültüründe incelik simgesi sayılmıştır.',
+            'E': 'Lale motifine çinilerde de rastlanır.',
+        },
+        'C',
+        'Parçada lale motifinin çinilerden kumaşlara kadar pek çok süsleme sanatında sıkça kullanıldığı belirtiliyor; tersi söylenemez.',
+    ),
+    # düzey 3
+    '0083': patch(
+        'Maraton koşucuları yarıştan önceki günlerde karbonhidrat ağırlıklı beslenir. Bunun amacı, kaslarda enerji kaynağı olarak kullanılan glikojen depolarını doldurmaktır. Yarışın son kilometrelerinde bu depolar tükendiğinde koşucu ani bir halsizlik yaşar; sporcular bu duruma "duvara çarpmak" der.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
+        {
+            'A': 'Glikojen kaslarda enerji kaynağı olarak kullanılır.',
+            'B': 'Depoların tükenmesi ani bir halsizliğe yol açabilir.',
+            'C': 'Sporcular bu halsizliği adlandırmak için özel bir deyim kullanır.',
+            'D': 'Koşucular yarıştan önce karbonhidratı azaltır.',
+            'E': 'Beslenme, yarış performansını etkileyebilir.',
+        },
+        'D',
+        'Parçaya göre koşucular yarış öncesinde karbonhidrat ağırlıklı beslenir; tüketimi azalttıkları söylenemez.',
+    ),
+    # düzey 3
+    '0084': patch(
+        "Çay, Türkiye'ye 20. yüzyılın başlarında Doğu Karadeniz'deki deneme üretimleriyle girdi. Bölgenin bol yağışlı iklimi ve asitli toprağı çay tarımına çok elverişliydi. Kısa sürede yaygınlaşan çay, bugün gündelik hayatın vazgeçilmez içeceği; misafir ağırlamanın ve sohbetin simgesi.\n\nBu parçada çayla ilgili aşağıdakilerden hangisine değinilmemiştir?",
+        {
+            'A': "Türkiye'ye geliş dönemine",
+            'B': 'Yetiştiği bölgeye',
+            'C': 'İhracattaki payına',
+            'D': 'Yetişmesi için uygun iklim ve toprak koşullarına',
+            'E': 'Toplumsal hayattaki yerine',
+        },
+        'C',
+        'Parçada çayın geliş dönemi, bölgesi, iklim ve toprak koşulları ile sosyal hayattaki yeri anlatılıyor; ihracattan söz edilmiyor.',
+    ),
+    # düzey 3
+    '0085': patch(
+        '"Yazmaya başladığımda bir planım olmaz. Karakterlerimi bir yere bırakır, ne yapacaklarını izlerim. Kimi zaman beni şaşırtırlar; sonunu bildiğim bir hikâyeyi yazmak bana sıkıcı gelir."\n\nBu sözleri söyleyen bir yazar için aşağıdakilerden hangisi söylenemez?',
+        {
+            'A': 'Öykülerinin sonunu baştan kurgulayarak yazar.',
+            'B': 'Yazarken karakterlerine hareket alanı tanır.',
+            'C': 'Yazma sürecinde kendisi de şaşırtıcı gelişmelerle karşılaşır.',
+            'D': 'Önceden belirlenmiş bir plana bağlı kalmaz.',
+            'E': 'Sonu belli bir hikâyeyi yazmaktan pek hoşlanmaz.',
+        },
+        'A',
+        'Yazar, sonunu bildiği hikâyeyi yazmanın kendisine sıkıcı geldiğini söylüyor; sonu baştan kurguladığı söylenemez.',
+    ),
+    # düzey 3
+    '0086': patch(
+        'Göç eden kuşlar yön bulmak için güneşin konumundan, yıldızlardan ve yerin manyetik alanından yararlanır. Araştırmacılar, bulutlu gecelerde bile yolunu şaşırmayan kuşların manyetik alanı algılayabildiğini gözlemlemiştir. Ancak şiddetli fırtınalar ve kentlerin yoğun ışıkları kuşların rotasından sapmasına yol açabilmektedir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        {
+            'A': 'Kuşlar göçlerini gündüz saatleriyle sınırlar.',
+            'B': 'Kent ışıkları kuşların yön bulmasını kolaylaştırır.',
+            'C': 'Fırtınalar kuşları göç etmekten vazgeçirir.',
+            'D': 'Kuşlar yön bulurken birden çok ipucu kullanır.',
+            'E': 'Bulutlu havalarda kuşlar göç etmez.',
+        },
+        'D',
+        'Parçada güneş, yıldızlar ve manyetik alan olmak üzere birden çok ipucu sayılıyor. Diğer seçenekler parçayla çelişiyor ya da parçada dayanağı yok.',
+    ),
+    # düzey 3
+    '0087': patch(
+        'Fiyatı düşen bir ürüne olan talebin artması beklenir. Ancak bazı lüks ürünlerde durum farklıdır: Fiyat düştüğünde ürün ayrıcalıklı olma niteliğini yitirdiği için bazı tüketiciler ondan uzaklaşır. Bu ürünlerde yüksek fiyat, tüketiciye bir statü göstergesi olarak çekici gelir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        {
+            'A': 'Lüks ürünlerin fiyatı düşürülmez.',
+            'B': 'Bazı ürünlerde fiyat, ürünün anlamının bir parçasıdır.',
+            'C': 'Fiyat düşüşü her ürünün talebini artırır.',
+            'D': 'Tüketiciler ucuz ürünleri tercih etmez.',
+            'E': 'Statü göstergesi olan ürünlerin kalitesi daha yüksektir.',
+        },
+        'B',
+        'Lüks ürünlerde yüksek fiyatın bir statü göstergesi olarak çekici gelmesi, fiyatın ürünün anlamının parçası olduğunu gösteriyor.',
+    ),
+    # düzey 3
+    '0088': patch(
+        'Antik çağda yazı, kil tabletlere sivri uçlu çubuklarla bastırılarak yazılırdı. Tabletler fırınlandığında binlerce yıl dayanabiliyordu. Bu sayede bugün o dönemin ticari anlaşmalarını, vergi kayıtlarını ve hatta öğrencilerin yazı alıştırmalarını okuyabiliyoruz.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        {
+            'A': 'Antik çağda yazı bilenlerin sayısı çok fazlaydı.',
+            'B': 'Kil tabletler devlet kayıtlarıyla sınırlı kalmıştır.',
+            'C': 'Fırınlanmayan tabletler daha uzun dayanmıştır.',
+            'D': 'Antik çağda vergi toplanmamıştır.',
+            'E': 'Yazı malzemesi, kayıtların korunmasını etkilemiştir.',
+        },
+        'E',
+        'Fırınlanan kil tabletlerin binlerce yıl dayanması sayesinde kayıtların bugün okunabildiği belirtiliyor.',
+    ),
+    # düzey 3
+    '0089': patch(
+        'Bir ülkenin yollarına, köprülerine ve limanlarına yapılan yatırımlar ilk bakışta yalnızca ulaşımı kolaylaştırır gibi görünür. Oysa iyi bir yol, köydeki üreticinin ürününü kente daha ucuza ulaştırmasını, bir fabrikanın hammaddeye daha hızlı erişmesini sağlar. ----\n\nBu parçada boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?',
+        {
+            'A': 'Köprü yapımında kullanılan malzemeler her geçen yıl pahalanmaktadır.',
+            'B': 'Kentlerde trafik sıkışıklığı giderek artmaktadır.',
+            'C': 'Bu yüzden altyapı yatırımları, ekonominin bütününe yayılan bir etki yaratır.',
+            'D': 'Limanlar deniz ticaretinin en eski yapılarındandır.',
+            'E': 'Köylerde üretim yapan kişi sayısı azalmaktadır.',
+        },
+        'C',
+        'Parça yol yatırımlarının etkisinin ulaşımla sınırlı kalmadığını anlatıyor; sona bu düşünceyi bağlayan sonuç cümlesi gelmelidir.',
+    ),
+    # düzey 3
+    '0090': patch(
+        '---- Kimimiz sabah erken saatlerde daha dinç ve yaratıcıyken kimimiz ancak akşam saatlerinde odaklanabiliriz. Bu farkı bilmek, zor işleri zihnin en açık olduğu saatlere bırakarak gün boyu daha verimli olmamızı sağlar.\n\nBu parçada boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?',
+        {
+            'A': 'Erken kalkmak başarının ilk koşuludur.',
+            'B': 'Herkesin en verimli olduğu saatler aynı değildir.',
+            'C': 'Akşam saatlerinde yapılan işler genellikle hatalı olur.',
+            'D': 'Düzenli uyku, sağlıklı yaşamın temelidir.',
+            'E': 'Zor işleri ertelemek verimliliği düşürür.',
+        },
+        'B',
+        'Sonraki cümleler kişiden kişiye değişen verimli saatleri anlatıyor; parçaya bu genel yargıyla başlanmalıdır.',
+    ),
+    # düzey 3
+    '0091': patch(
+        'Bir sözlük, sözcüklerin anlamlarını sıralayan bir kitaptan ibaret değildir. ---- Örneğin bir sözcüğün eski baskılarda yer alıp yenilerinde çıkarılması, o sözcüğün gündelik hayattan nasıl çekildiğini gösterir.\n\nBu parçada boş bırakılan yere aşağıdakilerden hangisi getirilmelidir?',
+        {
+            'A': 'Sözlükler genellikle alfabetik sıraya göre düzenlenir.',
+            'B': 'İyi bir sözlük okullarda ders aracı olarak kullanılmalıdır.',
+            'C': 'Sözcüklerin kökenini araştırmak uzmanlık gerektiren bir çalışmadır.',
+            'D': 'Her yeni baskısı, dilin zaman içindeki değişimine de tanıklık eder.',
+            'E': 'Elektronik sözlükler basılı sözlüklerin yerini almıştır.',
+        },
+        'D',
+        "Boşluktan sonraki 'Örneğin' cümlesi sözlük baskılarındaki değişimin dilin değişimini gösterdiğini örnekliyor; boşluğa bu yargı gelmelidir.",
+    ),
+    # düzey 3
+    '0092': patch(
+        'Bir kentin hafızası binalarında saklıdır. Yıkılan her eski yapıyla birlikte, o yapının çevresinde örülmüş anılar, alışkanlıklar ve ilişkiler de kaybolur.\n\nBu paragraf aşağıdakilerden hangisiyle sürdürülebilir?',
+        {
+            'A': 'Yeni binaların depreme dayanıklı olması büyük önem taşır.',
+            'B': 'Kentlerde yeşil alanların payı giderek azalmaktadır.',
+            'C': 'Mimarlık fakülteleri her yıl çok sayıda öğrenci mezun etmektedir.',
+            'D': 'Eski binaların bakımı yüksek maliyetlidir.',
+            'E': 'Bu nedenle eski yapıları korumak, kentin belleğini korumaktır.',
+        },
+        'E',
+        'Parça eski yapılarla birlikte anıların da kaybolduğunu söylüyor; bu düşünceyi koruma sonucuna bağlayan cümle akışa uygundur.',
+    ),
+    # düzey 3
+    '0093': patch(
+        '"Bir şiiri yazdıktan sonra çekmeceye koyar, aylar sonra yeniden okurum. O zaman artık şiirin yazarı değil, okuru olurum; fazla sözcükleri ancak o gözle görebilirim."\n\nBu sözleri söyleyen şair için aşağıdakilerden hangisi söylenebilir?',
+        {
+            'A': 'Şiirlerini zaman geçtikten sonra eleştirel bir gözle düzeltir.',
+            'B': 'Şiirlerini yazdığı gün yayımlamayı tercih eder.',
+            'C': 'Okurların eleştirilerini önemsemez.',
+            'D': 'Uzun şiirleri kısa şiirlere yeğler.',
+            'E': 'Şiirlerinde sözcük seçimine özen göstermez.',
+        },
+        'A',
+        'Şair, şiirini aylar sonra bir okur gözüyle okuyup fazla sözcükleri ayıkladığını söylüyor.',
+    ),
+    # düzey 3
+    '0094': patch(
+        '"Çocuklar için yazmak, büyükler için yazmaktan daha zordur. Çocuk okur sıkıldığında kitabı bırakır; nezaketen sayfa çevirmez."\n\nBu sözleri söyleyen yazar için aşağıdakilerden hangisi söylenebilir?',
+        {
+            'A': 'Büyükler için yazmayı daha zor bulur.',
+            'B': 'Çocukların kitap okumadığını düşünür.',
+            'C': 'İlgiyi canlı tutmayı önemser.',
+            'D': 'Çocuk kitaplarının kısa olması gerektiğini savunur.',
+            'E': 'Yetişkin okurların sabırsız olduğunu düşünür.',
+        },
+        'C',
+        'Yazar, sıkılan çocuk okurun kitabı bıraktığını söyleyerek ilgiyi canlı tutmanın önemine dikkat çekiyor.',
+    ),
+    # düzey 3
+    '0095': patch(
+        "(I) Kapadokya'daki peri bacaları, volkanik tüflerin rüzgâr ve yağmurla aşınmasıyla oluşmuştur. (II) Bölgede kayalara oyulmuş çok sayıda kilise ve yerleşim yeri bulunur. (III) Gün doğumunda gökyüzünü dolduran balonlar, insanın içini ısıtan eşsiz bir manzara oluşturur. (IV) Göreme ve çevresi, 1985 yılında UNESCO Dünya Mirası Listesi'ne alınmıştır. (V) Yaz aylarında bölgeyi ziyaret eden turist sayısı artar.\n\nBu parçadaki numaralanmış cümlelerden hangisinde öznel bir yargı vardır?",
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'C',
+        "'İnsanın içini ısıtan eşsiz bir manzara' ifadesi kişisel duygu ve değerlendirme içerir; III. cümle özneldir. Diğerleri doğrulanabilir bilgilerdir.",
+    ),
+    # düzey 3
+    '0096': patch(
+        "(I) Bu roman, son yılların en sürükleyici eserlerinden biri. (II) Yazarın akıcı dili, okuru ilk sayfadan yakalıyor. (III) Karakterlerin iç dünyaları o kadar ustaca işlenmiş ki her biri gerçek bir insan gibi. (IV) Roman, 1950'li yıllarda bir Ege kasabasında geçiyor. (V) Bence kitabın sonu, okurların çoğunu derinden etkileyecek.\n\nBu parçadaki numaralanmış cümlelerden hangisinde nesnel bir yargı vardır?",
+        {
+            'A': 'I',
+            'B': 'II',
+            'C': 'III',
+            'D': 'IV',
+            'E': 'V',
+        },
+        'D',
+        'Romanın geçtiği zaman ve yer doğrulanabilir bir bilgidir; IV. cümle nesneldir. Diğer cümleler kişisel beğeni ve tahmin içerir.',
+    ),
+    # düzey 2
+    '0097': patch(
+        'Dedem, bahçedeki **yaşlı** cevizin altında oturmayı severdi. **Akşamları** oraya bir sandalye taşır, **uzun uzun** gökyüzünü seyrederdi. Bazen **bize** eski günlerden hikâyeler anlatır, sesi **yavaş yavaş** kısılırdı.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi sıfat olarak kullanılmıştır?',
+        {
+            'A': 'Akşamları',
+            'B': 'uzun uzun',
+            'C': 'bize',
+            'D': 'yavaş yavaş',
+            'E': 'yaşlı',
+        },
+        'E',
+        "'yaşlı' sözcüğü 'ceviz' adını nitelediği için sıfattır. 'Akşamları', 'uzun uzun' ve 'yavaş yavaş' eylemi niteleyen zarflar, 'bize' ise zamirdir.",
+    ),
+    # düzey 2
+    '0098': patch(
+        'Kardeşim yeni işine **sıcak** bir sabah başladı. İlk gün **ağır** dosyaları arşive taşıdı. Öğle yemeğini iş yerinin **geniş** bahçesinde yedi. Başta çekingen davransa da akşama doğru iş arkadaşlarıyla arasındaki **buzlar** eridi. Eve **yorgun** ama mutlu döndü.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi mecaz anlamıyla kullanılmıştır?',
+        {
+            'A': 'sıcak',
+            'B': 'ağır',
+            'C': 'geniş',
+            'D': 'buzlar',
+            'E': 'yorgun',
+        },
+        'D',
+        "'buzların erimesi' kişiler arasındaki soğukluğun ve çekingenliğin ortadan kalkması anlamında mecazdır; diğer sözcükler gerçek anlamlarıyla kullanılmıştır.",
+    ),
+    # düzey 2
+    '0099': patch(
+        'Pazardan şunları aldık ( ) domates, biber, salatalık ve biraz peynir ( ) Eve dönerken annem sordu ( ) "Ekmek almayı unutmadınız, değil mi ( )"\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        {
+            'A': '(:) (.) (:) (?)',
+            'B': '(;) (.) (,) (?)',
+            'C': '(:) (,) (:) (.)',
+            'D': '(,) (.) (:) (!)',
+            'E': '(:) (...) (;) (?)',
+        },
+        'A',
+        'Açıklama ve sıralama öncesinde iki nokta, cümle sonunda nokta, alıntı öncesinde iki nokta, soru cümlesinin sonunda soru işareti kullanılır.',
+    ),
+    # düzey 2
+    '0100': patch(
+        "Toplantı saat 14 ( ) 30'da başladı ( ) Dr ( ) Ayşe Demir sunumunda üç konuya değindi ( ) maliyet, kalite ve teslim süresi ( )\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?",
+        {
+            'A': '(:) (.) (.) (:) (.)',
+            'B': '(.) (.) (.) (:) (.)',
+            'C': '(.) (,) (.) (;) (.)',
+            'D': '(.) (.) (,) (:) (...)',
+            'E': '(,) (.) (.) (:) (.)',
+        },
+        'B',
+        "Saat ile dakika arasına nokta, cümle sonuna nokta, kısaltma olan 'Dr'den sonra nokta, açıklama yapılacak sıralamadan önce iki nokta ve cümle sonuna nokta konur.",
     ),
 }
 
