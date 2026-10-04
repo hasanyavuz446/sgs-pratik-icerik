@@ -159,7 +159,6 @@ TAM = [
     "borclar_hukuku/borc_iliskisi_kaynaklari.json",
     "borclar_hukuku/borcun_ifasi_sona_ermesi.json",
     "borclar_hukuku/sozlesmenin_kurulmasi.json",
-    "denetim/denetim_kavrami.json",
     "ekonomi/makroekonomi.json",
     "ekonomi/mikroekonomi.json",
     "ekonomi/para_banka_dis_ekonomi.json",
