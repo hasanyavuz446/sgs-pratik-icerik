@@ -12,14 +12,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "denetim/denetim_riski.json": {
-        "den-risk-gen-0001": "Önemli yanlışlık varken uygun olmayan görüş verme riski",
-        "den-risk-gen-0002": "Yapısal risk × kontrol riski × tespit riski",
-        "den-risk-gen-0004": "İç kontrolün yanlışlığı önleyememe veya düzeltememe riski",
-        "den-risk-gen-0006": "Yapısal risk ile kontrol riski",
-        "den-risk-gen-0007": "Yapısal risk ile kontrol riskinin bileşimi",
-        "den-risk-gen-0016": "Kontrol riski düştükçe kabul edilebilir tespit riski yükseltilebilir",
-    },
 }
 
 
