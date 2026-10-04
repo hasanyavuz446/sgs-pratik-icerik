@@ -30,11 +30,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
     },
-    "content/denetim/denetim_kaniti.json": {
-        "den-kanit-gen-0041": {
-            "A": "Analitik prosedür (tutarın geçmiş dönem eğilimi ve önceki yıl tutarıyla karşılaştırılması)"
-        },
-    },
 }
 
 

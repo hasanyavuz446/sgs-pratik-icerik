@@ -12,22 +12,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "denetim/denetim_kaniti.json": {
-        "den-kanit-gen-0001": "Denetçi görüşüne dayanak oluşturan bilgi ve belgeler",
-        "den-kanit-gen-0003": "Kanıtın ilgili iddiayla ilgililiği ve güvenilirliği",
-        "den-kanit-gen-0004": "Bağımsız dış kaynaktan doğrudan alınan kanıt daha güvenilirdir",
-        "den-kanit-gen-0012": "Tek başına sınırlı kanıttır; başka tekniklerle doğrulanmalıdır",
-        "den-kanit-gen-0016": "Kayıt ve belgelerin içerik ve tutar yönünden incelenmesini",
-        "den-kanit-gen-0017": "Planlama, esas inceleme ve sonuçlandırma aşamalarında kullanılabilir",
-        "den-kanit-gen-0018": "Denetçinin elde ettiği veya bağımsız dış kaynaktan gelen kanıt",
-        "den-kanit-gen-0019": "Borçluya teyit gönderip doğrudan yazılı yanıt almak",
-        "den-kanit-gen-0024": "Maddi doğrulama bakiyeyi, kontrol testi kontrol etkinliğini sınar",
-        "den-kanit-gen-0027": "Kontrol riski düştükçe gereken esas prosedür kanıtı azalabilir",
-        "den-kanit-gen-0029": "Sonraki tahsilat ile sevk ve fatura belgelerini incelemek",
-        "den-kanit-gen-0030": "Kanıtın test edilen iddiayı destekleme veya çürütme gücü",
-        "den-kanit-gen-0034": "Kontrol testlerinde gözlem, inceleme, soruşturma ve yeniden uygulama kullanılabilir",
-        "den-kanit-gen-0057": "Tahminin varsayım, yöntem ve verilerinin makullüğünü kanıtla test etmek",
-    },
     "denetim/denetim_riski.json": {
         "den-risk-gen-0001": "Önemli yanlışlık varken uygun olmayan görüş verme riski",
         "den-risk-gen-0002": "Yapısal risk × kontrol riski × tespit riski",

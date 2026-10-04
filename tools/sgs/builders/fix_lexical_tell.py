@@ -159,7 +159,6 @@ TAM = [
     "borclar_hukuku/borc_iliskisi_kaynaklari.json",
     "borclar_hukuku/borcun_ifasi_sona_ermesi.json",
     "borclar_hukuku/sozlesmenin_kurulmasi.json",
-    "denetim/denetim_kaniti.json",
     "denetim/denetim_kavrami.json",
     "denetim/denetim_riski.json",
     "denetim/denetim_standartlari_etik.json",
