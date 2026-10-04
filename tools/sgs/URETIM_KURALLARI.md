@@ -138,6 +138,26 @@ profil üretim matrisinin başlangıç noktasıdır:
 yalnız 2026'nın 30 hukuk sorusuna dayanıyordu ve örneklem çok küçüktü. Yeni bant
 **2014–2026 arşivinden çıkarılan 629 gerçek hukuk sorusuna** dayanır.
 
+### Türkçe (1–7): paragraf ağırlıklı, olumsuz kök yüksek
+
+16 kitapçığın 112 Türkçe sorusundan ölçüldü (2026-10-04 yeniden yazımı bu profile göre):
+kök medyan **150**, olumsuz kök **%37**, numaralı cümle/öncül **%12**, paragraf **%38**,
+şıkta açıklayıcı parantez **%2**.
+
+- Paragraf tipleri: akışı bozan cümle, paragraf sıralama (ilk/üçüncü/dördüncü cümle),
+  iki cümlenin yerini değiştirme, düşünceyi geliştirme yolları (tek ya da ikili),
+  anlatım biçimi, ana düşünce, söylenebilir/söylenemez, paragraf tamamlama (baş/orta/son),
+  nesnel/öznel yargı, paragraf içi ayraç noktalama, altı çizili (kalın) sözcüğün anlamı/türü.
+- **Numaralı şıklar sıralı kalır** (`I, II, III...`, `I ve II...`); harf doğru şıkkın
+  sırasından gelir, kalan sorularla 12'şere dengelenir. `yapisal_pipeline.py` şıkları
+  karıştırdığı için paragraf konusu kendi üreticisiyle (`build_turkce_paragraf_sinav.py`) yazıldı.
+- 🔴 **Şıkta açıklama yasak:** "Sıfat-fiil (misafirleri niteliyor)", "Ünlem işareti (güçlü bir
+  duyguyu belirtmek için)" gibi parantezler cevabı ele verir; tasarım kapısı 12+ karakterlik
+  parantezi reddeder.
+- Noktalama sorularında aynı kural paket içinde **iki farklı biçimde** yanıtlanmamalı
+  (eski pakette zarf-fiil grubundan sonra virgül bir soruda yanlış, ötekinde doğru sayılıyordu).
+  Tartışmalı kullanımlar (zarf-fiilden sonra virgül, `bu yüzden` öncesi noktalı virgül) sorulmaz.
+
 ### Yabancı Dil (21–30): tanım sorusu yok, cümle içi boşluk + cümle tamamlama
 
 2021–2026'nın 16 kitapçığından (160 soru) ölçüldü, 2026-10-01'de üç konu buna göre
