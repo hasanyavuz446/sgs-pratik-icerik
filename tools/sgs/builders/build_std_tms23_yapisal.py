@@ -364,7 +364,7 @@ _PATCHES = {
     '0026': patch(
         "TMS 23'e göre aktifleştirmeye ara verilen dönemdeki borçlanma maliyetleri hangi tabloda sunulur?",
         {
-            'A': 'Dipnotlarda yalnız',
+            'A': 'Dipnotlarda gösterilir',
             'B': 'Finansal durum tablosu',
             'C': 'Kâr veya zarar tablosu',
             'D': 'Özkaynak değişim tablosu',
@@ -404,7 +404,7 @@ _PATCHES = {
         "Bir işletmenin belirli bir özellikli varlık için aldığı özel kredi, varlık kullanıma hazır hâle geldikten sonra da ödenmeyip açık kalmaktadır. İşletmenin başka özellikli varlıkları genel borçlanmalarla finanse edilmektedir.\n\nTMS 23'e göre açık kalan bu kredi aktifleştirme oranı hesabında nasıl dikkate alınır?",
         {
             'A': 'Hesaptan tamamen çıkarılır',
-            'B': 'Yalnız ilk varlığa yüklenir',
+            'B': 'İlk edinilen varlığa yüklenir',
             'C': 'Genel borçlanmaya dahil edilir',
             'D': 'Ağırlığı iki katına çıkarılır',
             'E': 'Faizi özkaynağa alınır',
@@ -599,7 +599,7 @@ _PATCHES = {
         "Bir işletme bazı özellikli varlıklarını genel borçlanmalarla finanse etmektedir. TMS 23'e göre genel borçlanmalardan aktifleştirilecek tutarla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Katlanılan maliyeti aşamaz',
-            'B': 'Yalnız özkaynakla sınırlıdır',
+            'B': 'Özkaynak tutarıyla sınırlıdır',
             'C': 'Sınırsız aktifleştirilir',
             'D': 'Faiz gelirine eşittir',
             'E': 'Vergi matrahına eşittir',
