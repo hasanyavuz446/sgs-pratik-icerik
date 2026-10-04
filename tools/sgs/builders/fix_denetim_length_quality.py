@@ -16,18 +16,6 @@ CORRECT = {
 
 
 DISTRACTORS = {
-    "denetim/denetim_standartlari_etik.json": {
-        "den-standart-gen-0007": {"B": "Vergi oranlarını saptamak"},
-        "den-standart-gen-0017": {"A": "Özen"},
-        "den-standart-gen-0019": {"A": "Özen"},
-        "den-standart-gen-0029": {"A": "Tehditleri yok saymak"},
-        "den-standart-gen-0039": {"A": "Gizlilik"},
-        "den-standart-gen-0043": {"A": "Yıldırma tehdidi; bağımsızlık ihlalidir"},
-        "den-standart-gen-0044": {"B": "Kararı yönetime bırakmalıdır"},
-        "den-standart-gen-0052": {"A": "İşletmenin iç yönetmeliği"},
-        "den-standart-gen-0053": {"C": "Yalnız gizlilik ilkesi"},
-        "den-standart-gen-0055": {"A": "Bağımsızlığı etkilemez"},
-    },
 }
 
 
