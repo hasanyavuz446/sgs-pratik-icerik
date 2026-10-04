@@ -208,7 +208,6 @@ TAM = [
     "ticaret_hukuku/anonim_sirket.json",
     "ticaret_hukuku/ticaret_sirketleri.json",
     "ticaret_hukuku/ticari_isletme_tacir.json",
-    "turkce/dil_bilgisi.json",
     "vergi_hukuku/amme_alacaklari.json",
     "vergi_hukuku/damga_vergisi.json",
     "vergi_hukuku/emlak_vergisi.json",

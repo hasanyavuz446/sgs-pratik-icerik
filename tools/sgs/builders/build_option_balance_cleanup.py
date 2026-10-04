@@ -55,10 +55,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/turkce/dil_bilgisi.json": {
-        "turkce-dilbilgisi-gen-0009": {"B": "Sınava kadar oldukça çok çalıştı."},
-        "turkce-dilbilgisi-gen-0018": {"B": "Dolaylı yer tümleci"},
-    },
     "content/ataturk_ilkeleri/ataturk_inkilaplari.json": {
         "ait-inkilap-gen-0010": {"A": "Millet Mektepleri teşkilatı"},
         "ait-inkilap-gen-0011": {"A": "1925 yılı"},

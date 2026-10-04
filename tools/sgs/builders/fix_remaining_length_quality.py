@@ -15,13 +15,6 @@ APP = ROOT.parent / "smmm_sgs_pratik" / "assets" / "content"
 
 
 CORRECT = {
-    "turkce/dil_bilgisi.json": {
-        "turkce-dilbilgisi-gen-0002": "alnı",
-        "turkce-dilbilgisi-gen-0003": "Zarf",
-        "turkce-dilbilgisi-gen-0008": "Edat",
-        "turkce-dilbilgisi-gen-0010": "Zarf-fiil",
-        "turkce-dilbilgisi-gen-0012": "Sıfat-fiil",
-    },
 }
 
 
