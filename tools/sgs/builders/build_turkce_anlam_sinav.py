@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Sozcukte ve Cumlede Anlam — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
+"""Türkçe — Sözcükte ve Cümlede Anlam — YAPISAL kalibrasyon (kalip kok -> kural uygulamasi).
 
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-60 soru korunarak onarildi: 16 mutlak ifadeli celdirici ayni dogruluk degerini koruyacak bicimde yeniden yazildi; ornek cumle secenekli sorularda dogru cumleyi kisaltmak yerine bir celdirici cumleye dogal sozcuk eklendi. Kor ogrenci %33 -> %26 (UYARI kapandi).
+Önceki onarımdan (build_turkce_anlam_onarim.py) 45 sağlam soru aynen korundu; 15 soru gerçek SGS 1-7 tiplerine göre değiştirildi: deyim ve atasözünün bağlama uygunluğu (olumsuz), yakın anlamlı ikileme, olasılık/kesinlik, kaç farklı anlam, gerekçeli yargı, dolaylama, ad aktarması, sözlük anlamı verilen sözcük, neden-sonuç/amaç ayrımı, sitem ve varsayım yokluğu, öznel yargı yokluğu, parçada mecaz sözcük çifti. Zıt anlamlı/soyut sözcük gibi düşük düzeyli ve belirsiz eş sesli sorusu çıkarıldı.
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
 
-Dayanak: Turkce - sozcukte ve cumlede anlam
+Dayanak: SGS Türkçe 2021-2026 kitapçıkları — biçim kalibrasyonu
 """
 from __future__ import annotations
 
@@ -21,7 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 RELATIVE_PATH = "content/turkce/sozcukte_cumlede_anlam.json"
-STYLE_REF = 'SGS Türkçe sözcükte anlam'
+STYLE_REF = 'SGS Türkçe (gerçek sınav 1-7 profili)'
 ONEK = "turkce-anlam-gen-"
 
 
@@ -35,15 +35,15 @@ def patch(stem, options, answer, solution, ref='Türkçe - sözcükte ve cümled
 
 
 _PATCHES = {
-    # düzey 2
+    # düzey 3
     '0001': patch(
         '"Bu ustanın yaptığı türküler, dinleyenin yüreğine **işliyor**." cümlesinde altı çizili sözcüğün kattığı anlam aşağıdakilerden hangisidir?',
         {
-            'A': 'Yavaş yavaş ilerlemek',
+            'A': 'Sıkça yinelenip durmak',
             'B': 'İnsanı derinden etkilemek',
-            'C': 'Ustalıkla süslenerek bezenmek',
-            'D': 'Sıkça yinelenip durmak',
-            'E': 'Bir yüzeye oyularak çizilmek',
+            'C': 'Bir yüzeye oyularak çizilmek',
+            'D': 'Ustalıkla süslenerek bezenmek',
+            'E': 'Yavaş yavaş ilerlemek',
         },
         'B',
         '"İşlemek" sözcüğü burada gerçek anlamıyla (bir yüzeyi oymak, nakış yapmak) değil, mecaz anlamıyla kullanılmıştır: türkünün insanı içten, derinden etkilemesi. Bu yüzden doğru karşılık "insanı derinden etkilemek"tir; diğer seçenekler sözcüğün gerçek anlamına ya da ilgisiz anlamlara yöneliktir.',
@@ -54,14 +54,14 @@ _PATCHES = {
         {
             'A': 'İç **açılar** toplamı 180°dir.',
             'B': 'Çocuğun **yüzü** sevinçle aydınlandı.',
-            'C': 'Sabah erkenden **yola** çıktılar.',
+            'C': 'Yorgunluktan **gözleri** kapanıyordu.',
             'D': 'Bahçedeki **gül**ler yeni açmıştı.',
-            'E': 'Yorgunluktan **gözleri** kapanıyordu.',
+            'E': 'Sabah erkenden **yola** çıktılar.',
         },
         'A',
         'Terim, bir bilim ya da sanat dalına özgü anlamdır. "Açı", geometriye özgü bir kavram olarak kullanıldığından terim anlamı taşır. Diğer seçeneklerdeki sözcükler günlük, gerçek anlamlarıyla geçmiştir.',
     ),
-    # düzey 2
+    # düzey 3
     '0003': patch(
         '"Onun **soğuk** tavırları herkesi rahatsız ediyordu." cümlesindeki "soğuk" sözcüğüyle aşağıdakilerden hangisinde "soğuk" aynı anlamda kullanılmıştır?',
         {
@@ -78,11 +78,11 @@ _PATCHES = {
     '0004': patch(
         '"Damlaya damlaya göl olur." atasözüyle aşağıdakilerden hangisi anlamca aynı doğrultudadır?',
         {
-            'A': 'Bugünün işini yarına bırakma.',
-            'B': 'Ateş düştüğü yeri yakar.',
+            'A': 'Bir elin nesi var, iki elin sesi var.',
+            'B': 'Sakla samanı, gelir zamanı.',
             'C': 'Küçük birikimler zamanla büyür.',
-            'D': 'Sakla samanı, gelir zamanı.',
-            'E': 'Bir elin nesi var, iki elin sesi var.',
+            'D': 'Bugünün işini yarına bırakma.',
+            'E': 'Ateş düştüğü yeri yakar.',
         },
         'C',
         '"Damlaya damlaya göl olur", küçük birikimlerin zamanla büyük bir bütün oluşturduğunu anlatır. Birikimin çoğalmasını vurgulayan seçenek anlamca aynı doğrultudadır; diğerleri farklı iletiler taşır.',
@@ -91,50 +91,50 @@ _PATCHES = {
     '0005': patch(
         'Aşağıdaki cümlelerin hangisinde altı çizili sözcük gerçek anlamıyla kullanılmıştır?',
         {
-            'A': 'Sözleri hepimizin içini **burktu**.',
-            'B': 'Bakışlarıyla beni resmen **dondurdu**.',
+            'A': 'Bu haber ağzımızın tadını **kaçırdı**.',
+            'B': 'Başarısı gözümüzde onu **büyüttü**.',
             'C': 'Çamaşırı iyice sıkıp ipe **astı**.',
-            'D': 'Bu haber ağzımızın tadını **kaçırdı**.',
-            'E': 'Başarısı gözümüzde onu **büyüttü**.',
+            'D': 'Bakışlarıyla beni resmen **dondurdu**.',
+            'E': 'Sözleri hepimizin içini **burktu**.',
         },
         'C',
         '"Çamaşırı ipe asmak" cümlesinde "asmak" sözcüğü gerçek (temel) anlamıyla kullanılmıştır. Diğer seçeneklerdeki altı çizili sözcükler mecaz anlam taşımaktadır.',
     ),
-    # düzey 2
+    # düzey 3
     '0006': patch(
-        '"Cömert" sözcüğünün karşıt (zıt) anlamlısı aşağıdakilerden hangisidir?',
+        'Aşağıdaki cümlelerin hangisinde deyim, anlamına uygun bir bağlamda kullanılmamıştır?',
         {
-            'A': 'Alçakgönüllü',
-            'B': 'Görgülü',
-            'C': 'Eli açık',
-            'D': 'Yardımsever',
-            'E': 'Cimri',
+            'A': 'Yeni işinde kısa sürede kendini gösterdi ve terfi aldı.',
+            'B': 'Yıllarca biriktirdiği parayı bir gecede har vurup harman savurdu.',
+            'C': 'Müdürünü kapıda görünce dili tutuldu, tek kelime edemedi.',
+            'D': 'Arkadaşının başarısını duyunca gözleri parladı.',
+            'E': 'Sınavı kazanınca etekleri tutuştu, havalara uçtu.',
         },
         'E',
-        '"Cömert", elindekini kolayca veren demektir; karşıtı, veremeyen-esirgeyen anlamındaki "cimri"dir. "Eli açık" ve "yardımsever" ise cömertle yakın anlamlıdır, karşıtı değildir.',
+        "'Etekleri tutuşmak' çok telaşlanmak, korkuya kapılmak demektir; sevinç bildiren bir bağlamda kullanılamaz. Diğer deyimler anlamlarına uygun kullanılmıştır.",
     ),
     # düzey 2
     '0007': patch(
-        'Aşağıdaki sözcüklerden hangisi soyut anlamlıdır?',
+        'Aşağıdaki cümlelerin hangisindeki ikileme, yakın anlamlı sözcüklerle oluşturulmuştur?',
         {
-            'A': 'Özgürlük',
-            'B': 'Deniz',
-            'C': 'Pencere',
-            'D': 'Kalem',
-            'E': 'Ağaç',
+            'A': 'Akşam yorgun argın döndüler.',
+            'B': 'Eğri büğrü bir yoldan geçtik.',
+            'C': 'Kapıyı yavaş yavaş araladı.',
+            'D': 'Aşağı yukarı iki saat bekledik.',
+            'E': 'Er geç her şey ortaya çıkar.',
         },
         'A',
-        'Soyut kavramlar, beş duyuyla algılanamayan; yalnızca akılla, düşünceyle kavranan varlıklardır. "Özgürlük" böyle bir kavramdır. Diğer seçenekler duyularla algılanabilen somut varlıklardır.',
+        "'Argın' da 'yorgun' anlamındadır; ikileme yakın anlamlı sözcüklerle kurulmuştur. 'Aşağı yukarı' ve 'er geç' karşıt anlamlı, 'yavaş yavaş' aynı sözcüğün tekrarı, 'eğri büğrü' anlamlı-anlamsız sözcükle kurulmuştur.",
     ),
     # düzey 3
     '0008': patch(
         '"Toplantıda herkes düşüncesini **açık** bir dille anlattı." cümlesindeki "açık" sözcüğüyle aşağıdakilerden hangisinde "açık" aynı anlamda kullanılmıştır?',
         {
             'A': 'Bugün hava açık ve güneşli.',
-            'B': 'Kapıyı açık bırakma, üşürüz.',
-            'C': 'Mağaza sabah dokuzda açık olur.',
+            'B': 'Üstüne açık renk bir gömlek giymişti.',
+            'C': 'Kapıyı açık bırakma, üşürüz.',
             'D': 'Anlaşmayı açık sözlerle yazdılar.',
-            'E': 'Üstüne açık renk bir gömlek giymişti.',
+            'E': 'Mağaza sabah dokuzda açık olur.',
         },
         'D',
         'Örnek cümlede "açık", anlaşılır-net anlamındadır. Aynı anlam "açık, anlaşılır sözler" kullanımında vardır. Diğerlerinde sözcük kapalı olmayan, bulutsuz, faal ya da koyu olmayan renk anlamlarıyla geçmiştir.',
@@ -143,8 +143,8 @@ _PATCHES = {
     '0009': patch(
         'Aşağıdaki cümlelerin hangisinde "göz" sözcüğü bir organ anlamı dışında kullanılmıştır?',
         {
-            'A': 'Yorgunluktan gözleri kızarmıştı.',
-            'B': 'Gözüne bir toz kaçmış olmalı.',
+            'A': 'Gözüne bir toz kaçmış olmalı.',
+            'B': 'Yorgunluktan gözleri kızarmıştı.',
             'C': 'Nöbet boyunca gözlerini bir an bile kapatmadı.',
             'D': 'Gözlerini kısarak uzağa baktı.',
             'E': 'Dolabın alt gözüne kitaplarını koydu.',
@@ -156,11 +156,11 @@ _PATCHES = {
     '0010': patch(
         '"Taşıma su ile değirmen dönmez." atasözünün anlamı aşağıdakilerden hangisidir?',
         {
-            'A': 'Herkes ancak kendi gücünün yettiği işe girişmeli, fazlasına kalkışmamalıdır.',
+            'A': 'Yeterince emek harcanmadan, çalışılmadan kalıcı başarı sağlanamaz.',
             'B': 'İnsanlar birlik olup güçlerini birleştirdiğinde her işin üstesinden gelir.',
-            'C': 'Sabırla bekleyip doğru zamanı kollayan kişi eninde sonunda amacına ulaşır.',
+            'C': 'Herkes ancak kendi gücünün yettiği işe girişmeli, fazlasına kalkışmamalıdır.',
             'D': 'Sürekli olmayan, dışarıdan sağlanan kaynakla bir iş yürütülemez.',
-            'E': 'Yeterince emek harcanmadan, çalışılmadan kalıcı başarı sağlanamaz.',
+            'E': 'Sabırla bekleyip doğru zamanı kollayan kişi eninde sonunda amacına ulaşır.',
         },
         'D',
         'Bu atasözü, kalıcı-kendine ait olmayan, dışarıdan taşınan kaynakla bir işin sürdürülemeyeceğini anlatır. Doğru yorum, süreksiz-dış kaynağın işi yürütemeyeceğini belirten seçenektir.',
@@ -169,10 +169,10 @@ _PATCHES = {
     '0011': patch(
         '"Sınavı kazanmış; ancak sonucu hâlâ öğrenememişti." cümlesinden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?',
         {
-            'A': 'Sonucu öğrenmek için çaba göstermemiştir.',
-            'B': 'Sınav çok zor bir sınavdır.',
-            'C': 'Sınav sonuçları geç açıklanmıştır.',
-            'D': 'Sonucu başkalarından öğrenecektir.',
+            'A': 'Sonucu başkalarından öğrenecektir.',
+            'B': 'Sonucu öğrenmek için çaba göstermemiştir.',
+            'C': 'Sınav çok zor bir sınavdır.',
+            'D': 'Sınav sonuçları geç açıklanmıştır.',
             'E': 'Kişi sınavda başarılı olmuştur.',
         },
         'E',
@@ -180,52 +180,52 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Aşağıdaki cümlelerin hangisi öznel bir yargı içerir?',
+        'Aşağıdaki cümlelerin hangisinde öznel bir yargı yoktur?',
         {
-            'A': 'Kitap, iki dile çevrilmiştir.',
-            'B': "Kitap, ilk kez 1998 yılında İstanbul'da yayımlanmış.",
-            'C': 'Yazarın en akıcı, en güzel eseri budur.',
-            'D': 'Eser, on iki bölüme ayrılmış.',
-            'E': 'Roman, üç yüz sayfadan oluşuyor.',
+            'A': 'Bu kitap her yaştan okura seslenebiliyor.',
+            'B': 'Romanın sonu fazlasıyla aceleye getirilmiş.',
+            'C': "Kitap 1998'de İstanbul'da yayımlandı.",
+            'D': 'Yazarın en akıcı eseri kuşkusuz budur.',
+            'E': 'Kahramanlar son derece inandırıcı çizilmiş.',
         },
         'C',
-        '"En akıcı, en güzel eser" değerlendirmesi kişiden kişiye değişebilen, kanıtlanamayan bir görüştür; bu yüzden özneldir. Diğer seçenekler sayı ve olgu bildiren, doğrulanabilir nesnel yargılardır.',
+        'Kitabın yayımlandığı yıl ve yer, doğruluğu araştırılarak kanıtlanabilecek nesnel bir bilgidir. Diğer cümleler kişisel değerlendirme içerir.',
     ),
     # düzey 2
     '0013': patch(
-        '"Sen de bir arasan, bir sorsan ne kaybederdin sanki?" cümlesinde ağır basan duygu aşağıdakilerden hangisidir?',
+        'Aşağıdaki cümlelerin hangisinde sitem yoktur?',
         {
-            'A': 'Sitem',
-            'B': 'Sevinç',
-            'C': 'Korku',
-            'D': 'Merak',
-            'E': 'Hayranlık',
+            'A': 'Bu güzel hediye için sana ne kadar teşekkür etsem az.',
+            'B': 'Bir telefon edecek kadar da mı vaktin olmadı?',
+            'C': 'Doğum günümü yine unutmuşsun, oysa ben seninkini hep hatırlarım.',
+            'D': 'Bunca yıllık dostluğumuzdan sonra bunu bana nasıl yaparsın?',
+            'E': 'Hastanede yatarken bir kez olsun arayıp sormadın.',
         },
         'A',
-        'Cümlede, karşıdaki kişinin ilgisizliğinden duyulan kırgınlık ve yakınma vardır; bu duygu sitemdir. Sevinç, korku ya da hayranlık sezdiren bir ifade bulunmaz.',
+        'Sitem, kırgınlığın yakınma yoluyla dile getirilmesidir. Teşekkür bildiren cümlede kırgınlık değil minnet vardır; diğerleri karşıdakinin ilgisizliğinden yakınır.',
     ),
     # düzey 2
     '0014': patch(
-        'Aşağıdaki cümlelerin hangisinde bir olasılık (ihtimal) anlamı vardır?',
+        'Aşağıdaki cümlelerden hangisi olasılık anlamı taşımaz?',
         {
-            'A': 'Kitabı dün akşam bitirdim.',
-            'B': 'Bu saatte gelmiş olmalı.',
-            'C': 'Toplantı iki saat sürdü.',
-            'D': 'Sabah tam sekizde yola çıktık.',
-            'E': 'Yarın yağmur yağacak.',
+            'A': 'Galiba anahtarı arabada unuttum.',
+            'B': 'Toplantı yarın saat üçte başlayacak.',
+            'C': 'Yağmur yağabilir, şemsiyeni al.',
+            'D': 'Yarın belki biz de size uğrarız.',
+            'E': 'Bu saatte çoktan yola çıkmış olmalı.',
         },
         'B',
-        '"Gelmiş olmalı" ifadesi kesinlik değil, tahmine dayalı bir olasılık bildirir. Diğer cümleler kesinlik ya da gerçekleşmiş olgu bildirir; olasılık taşımaz.',
+        "'Olmalı, belki, -abilir, galiba' ifadeleri cümlelere olasılık anlamı katar. Toplantının saatini bildiren cümlede olasılık değil kesinlik vardır.",
     ),
-    # düzey 3
+    # düzey 2
     '0015': patch(
         '"O, konuşmasıyla değil, yaptıklarıyla saygı gördü." cümlesinden aşağıdakilerden hangisi çıkarılabilir?',
         {
-            'A': 'Kişi, güzel ve etkili konuşmasıyla herkesçe tanınır.',
-            'B': 'Kişi, çevresinden gerçek bir saygı görmemiştir.',
-            'C': 'Kişi, çevresindeki insanlarla ve olup bitenlerle ilgilenmezdi.',
+            'A': 'Kişi konuşmayı sevmez, her ortamda susmayı yeğlerdi.',
+            'B': 'Kişi, çevresindeki insanlarla ve olup bitenlerle ilgilenmezdi.',
+            'C': 'Kişi, çevresinden gerçek bir saygı görmemiştir.',
             'D': 'Kişi, sözleriyle değil davranışlarıyla değer kazanmıştır.',
-            'E': 'Kişi konuşmayı sevmez, her ortamda susmayı yeğlerdi.',
+            'E': 'Kişi, güzel ve etkili konuşmasıyla herkesçe tanınır.',
         },
         'D',
         'Cümlede saygının kaynağı olarak konuşma değil, yapılan işler gösterilir. Doğru çıkarım, kişinin davranışlarıyla değer kazandığını belirten seçenektir; diğerleri cümleyle çelişir.',
@@ -260,55 +260,55 @@ _PATCHES = {
     '0018': patch(
         'Aşağıdaki cümlelerin hangisi hem neden hem sonuç bildiren bir yapıdadır?',
         {
-            'A': 'Bu kitabı geçen yaz okumuştum.',
-            'B': 'Yarın sabah güneş doğmadan erkenden yola çıkacağız.',
+            'A': 'Yarın sabah güneş doğmadan erkenden yola çıkacağız.',
+            'B': 'Odasını her gün düzenli tutardı.',
             'C': 'Denizin suyu bugün oldukça ılıktı.',
             'D': 'Sınava iyi hazırlandığı için yüksek puan aldı.',
-            'E': 'Odasını her gün düzenli tutardı.',
+            'E': 'Bu kitabı geçen yaz okumuştum.',
         },
         'D',
         'Cümlede "iyi hazırlanmak" neden, "yüksek puan almak" sonuçtur; "...için" bağlacı neden-sonuç ilişkisi kurar. Diğer cümlelerde böyle bir neden-sonuç bağı bulunmaz.',
     ),
-    # düzey 2
+    # düzey 3
     '0019': patch(
         '"Sözlerinde en küçük bir abartıya bile yer vermez, hep gördüğünü yazardı." cümlesinde yazarın hangi özelliği anlatılmaktadır?',
         {
             'A': 'Gerçekçi ve nesnel bir tutum benimsediği',
-            'B': 'Kendi yaşamını anlattığı',
-            'C': 'Hayal gücünün çok geniş olduğu',
-            'D': 'Eserlerini ağır bir dille yazdığı',
-            'E': 'Okurları kolayca etkilediği',
+            'B': 'Okurları kolayca etkilediği',
+            'C': 'Eserlerini ağır bir dille yazdığı',
+            'D': 'Kendi yaşamını anlattığı',
+            'E': 'Hayal gücünün çok geniş olduğu',
         },
         'A',
         'Yazarın abartıya yer vermeyip "hep gördüğünü" yazması, gerçeğe bağlı, nesnel bir tutum benimsediğini gösterir. Doğru seçenek bu gerçekçi tutumu belirtir; diğerleri cümlede yer almaz.',
     ),
-    # düzey 3
+    # düzey 2
     '0020': patch(
         'Aşağıdaki cümlelerin hangisinde bir "koşula bağlılık" söz konusu değildir?',
         {
             'A': 'Yağmur yağınca içeri girdik.',
-            'B': 'İznini alırsan gelebilirsin.',
-            'C': 'Acele etmezsen yetişemezsin.',
-            'D': 'Erken yatarsan sabah dinç kalkarsın.',
+            'B': 'Erken yatarsan sabah dinç kalkarsın.',
+            'C': 'İznini alırsan gelebilirsin.',
+            'D': 'Acele etmezsen yetişemezsin.',
             'E': 'Çalışırsan başarırsın.',
         },
         'A',
         'Diğer cümlelerde bir durum, bir koşulun gerçekleşmesine bağlanmıştır ("-sa/-se, -ırsan": yatarsan, çalışırsan, alırsan, etmezsen). "Yağmur yağınca içeri girdik" ise bir koşulu değil, gerçekleşmiş bir zaman-neden ilişkisini anlatır; koşula bağlılık yoktur.',
     ),
-    # düzey 2
+    # düzey 3
     '0021': patch(
-        'Aşağıdaki cümlelerin hangisinde "acı" sözcüğü mecaz anlamıyla kullanılmıştır?',
+        "I. Bu yıl domatesler çok **tuttu**.\nII. Çocuk annesinin elini sıkıca **tuttu**.\nIII. Ankara'dan Konya'ya yolculuk üç saat **tuttu**.\nIV. Kar yağdı ama yere **tutmadı**.\nV. Yaşlı adamın kolunu **tutup** karşıya geçirdi.\n\nNumaralanmış cümlelerde kalın yazılmış sözcük kaç farklı anlamda kullanılmıştır?",
         {
-            'A': 'Turşunun suyu acımış.',
-            'B': 'Acı haberle sarsıldık bugün.',
-            'C': 'Kahvesini hep acı içerdi.',
-            'D': 'Biberin acısı dilimi yaktı.',
-            'E': 'İlacın acı tadını zor bastırdı.',
+            'A': 'İki',
+            'B': 'Dört',
+            'C': 'Üç',
+            'D': 'Bir',
+            'E': 'Beş',
         },
         'B',
-        '"Acı haber" tamlamasında sözcük tat anlamını değil, üzücü-yürek yakan anlamını taşır; bu mecaz kullanımdır. Öteki seçeneklerde "acı" doğrudan tat (gerçek anlam) bildirir.',
+        "I'de 'verim vermek, iyi sonuç vermek', II ve V'te 'elle kavramak', III'te 'sürmek, zaman almak', IV'te 'yere yerleşmek, birikmek' anlamındadır. II ile V aynı anlamda olduğundan dört farklı anlam vardır.",
     ),
-    # düzey 2
+    # düzey 3
     '0022': patch(
         '"Uzun yıllar sonra memleketine dönünce **köklü** bir değişimle karşılaştı." cümlesindeki "köklü" sözcüğünün anlamı aşağıdakilerden hangisidir?',
         {
@@ -328,33 +328,33 @@ _PATCHES = {
             'A': 'Bir işi sürekli ertelemek',
             'B': 'Yolculuğa hazırlık yapmak',
             'C': 'Karışıklığı düzene sokmak',
-            'D': 'Herkesle tartışmaya girmek',
-            'E': 'Bir işi başkasına devretmek',
+            'D': 'Bir işi başkasına devretmek',
+            'E': 'Herkesle tartışmaya girmek',
         },
         'C',
         '"Yoluna koymak" deyimi, aksayan ya da karışık bir işi düzene sokmak, yolunda gitmesini sağlamak demektir. Bu nedenle doğru karşılık "karışık bir durumu düzene sokmak"tır.',
     ),
     # düzey 3
     '0024': patch(
-        '"İşten çıkarılınca **eli böğründe** kaldı." cümlesindeki altı çizili deyimin anlamı aşağıdakilerden hangisidir?',
+        'Yaşlı balıkçı sabah (I) **erkenden** kayığına bindi. Denizin (II) **sessizliği**, onun yorgun (III) **yüreğine** iyi geliyordu. Ağlarını attıktan sonra (IV) **kıyıya** baktı; yıllar önce kaybettiği eşinin (V) **gölgesi** hâlâ oradaydı sanki.\n\nBu parçada numaralanmış sözcüklerden hangi ikisi gerçek anlamı dışında kullanılmıştır?',
         {
-            'A': 'Çaresiz ve şaşkın kalmak',
-            'B': 'Sevincini gizleyememek',
-            'C': 'Başkalarına muhtaç olmamak',
-            'D': 'Bir işe hemen girişmek',
-            'E': 'Öfkeden ne yapacağını bilememek',
+            'A': 'III ve V',
+            'B': 'I ve II',
+            'C': 'II ve IV',
+            'D': 'IV ve V',
+            'E': 'I ve IV',
         },
         'A',
-        '"Eli böğründe kalmak", umduğunu bulamayıp çaresiz, ne yapacağını bilemez durumda kalmayı anlatır. Doğru karşılık, çaresizlik ve şaşkınlığı içeren seçenektir.',
+        "'Yorgun yüreği' sözünde yürek, organ anlamında değil 'gönül, duygular' anlamında; 'eşinin gölgesi' sözünde gölge 'hayali, anısı' anlamında kullanılmıştır. Diğer sözcükler gerçek anlamlarındadır.",
     ),
     # düzey 2
     '0025': patch(
         '"Sütten ağzı yanan yoğurdu üfleyerek yer." atasözünün anlamı aşağıdakilerden hangisidir?',
         {
-            'A': 'Küçük sorunlar zamanla büyür.',
-            'B': 'Tecrübeli kişi her işin üstesinden gelir.',
+            'A': 'Herkes kendi çıkarını düşünür.',
+            'B': 'Küçük sorunlar zamanla büyür.',
             'C': 'Zarar gören kişi daha temkinli olur.',
-            'D': 'Herkes kendi çıkarını düşünür.',
+            'D': 'Tecrübeli kişi her işin üstesinden gelir.',
             'E': 'Emek verilmeyen işten sonuç alınmaz.',
         },
         'C',
@@ -362,52 +362,52 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Aşağıdaki cümlelerin hangisinde eş sesli (sesteş) bir sözcük yoktur?',
+        'Aşağıdaki cümlelerin hangisinde gerekçeli bir yargı vardır?',
         {
-            'A': 'Kırdaki yürüyüşte ayağı taşa takıldı.',
-            'B': 'Bu yaz köye gitmeyi düşünüyoruz.',
-            'C': 'Gül dalından koparılınca solar.',
-            'D': 'Sınıfın en çalışkanı oydu.',
-            'E': 'Çayı bahçenin kenarından geçiyordu.',
+            'A': 'Yol, kar temizlendikten sonra ulaşıma açıldı.',
+            'B': 'Yolun kapanıp kapanmayacağını kimse bilmiyor.',
+            'C': 'Kışın bu yoldan geçmek isteyen pek az kişi olur.',
+            'D': 'Yol kışın kapanır, çünkü çok kar yağar.',
+            'E': 'Belediye yolu yarın yeniden açmayı planlıyor.',
         },
         'D',
-        '"Yaz" (mevsim/yazmak), "gül" (çiçek/gülmek), "çay" (dere/içecek), "taş" gibi sözcüklerin sesteşleri vardır. "Sınıfın en çalışkanı oydu" cümlesindeki sözcüklerin yazılışı-okunuşu aynı, anlamı farklı bir sesteşi yoktur.',
+        "Gerekçeli yargıda bir yargı nedeniyle birlikte verilir. Yolun kapanması yargısının gerekçesi 'çünkü çok kar yağar' sözüyle belirtilmiştir.",
     ),
     # düzey 2
     '0027': patch(
         '"Ağır" sözcüğü aşağıdaki cümlelerin hangisinde "ölçülü, ağırbaşlı" anlamında kullanılmıştır?',
         {
-            'A': 'Ağır yemekler midemi rahatsız etti.',
+            'A': 'Bu ağır sözler onu çok kırdı.',
             'B': 'Ağır bir hastalık geçirdi geçen yıl.',
-            'C': 'Bu ağır sözler onu çok kırdı.',
-            'D': 'Valizi o kadar ağırdı ki taşıyamadım.',
+            'C': 'Valizi o kadar ağırdı ki taşıyamadım.',
+            'D': 'Ağır yemekler midemi rahatsız etti.',
             'E': 'Çok ağır, oturaklı bir insandır o.',
         },
         'E',
         '"Ağır, oturaklı insan" tamlamasında sözcük, davranışları ölçülü, ağırbaşlı anlamındadır. Diğerlerinde "ağır", tartıca fazla, ciddi/şiddetli ya da kırıcı anlamlarıyla geçmiştir.',
     ),
-    # düzey 2
+    # düzey 3
     '0028': patch(
-        '"Kalabalık" sözcüğü aşağıdaki cümlelerin hangisinde ötekilerden farklı türde (nitelik olarak) kullanılmıştır?',
+        'Aşağıdaki cümlelerin hangisinde dolaylama vardır?',
         {
-            'A': 'Kalabalık bir aileden geliyordu.',
-            'B': 'Kalabalık sınıfları ikiye böldüler.',
-            'C': 'Kalabalığın arasında onu kaybettik.',
-            'D': 'Kalabalık sokaklardan geçtik.',
-            'E': 'Meydan bugün çok kalabalıktı.',
+            'A': 'Altın fiyatları bu hafta yeniden yükselişe geçti.',
+            'B': 'Bölgenin ekonomisi büyük ölçüde pamuk üretimine dayanıyor.',
+            'C': 'Bölgenin ekonomisi büyük ölçüde beyaz altına dayanıyor.',
+            'D': 'Tarlada çalışanların sayısı her yıl biraz daha azalıyor.',
+            'E': 'Beyaz eşya üretimi geçen yıl belirgin biçimde arttı.',
         },
         'C',
-        'Diğer cümlelerde "kalabalık" bir varlığı niteleyen sıfattır (kalabalık aile, kalabalık sokak gibi). "Kalabalığın arasında" kullanımında ise sözcük çok sayıda insan topluluğu anlamıyla ad olarak geçtiğinden diğerlerinden ayrılır.',
+        "Dolaylama, bir kavramı onu çağrıştıran birden çok sözcükle anlatmaktır. 'Beyaz altın' pamuğu dolaylı yoldan anlatır. 'Beyaz eşya' ve 'altın fiyatları' kendi anlamlarıyla kullanılmıştır.",
     ),
-    # düzey 2
+    # düzey 3
     '0029': patch(
         '"Onun için para, mutluluğun tek **anahtarı**ydı." cümlesindeki "anahtar" sözcüğünün kullanımı aşağıdakilerden hangisiyle özdeştir?',
         {
             'A': 'Yedek anahtarı komşuya bıraktık.',
             'B': 'Başarının anahtarı sabırlı çalışmaktır.',
             'C': 'Anahtarı çevirince motor çalıştı.',
-            'D': 'Evin kapısının anahtarını çantasında unutmuş.',
-            'E': 'Anahtarlığında birçok anahtar vardı.',
+            'D': 'Anahtarlığında birçok anahtar vardı.',
+            'E': 'Evin kapısının anahtarını çantasında unutmuş.',
         },
         'B',
         'Örnek cümlede "anahtar", bir sonuca ulaştıran yol-araç anlamında mecaz olarak kullanılmıştır. Aynı mecaz "başarının anahtarı" kullanımında vardır. Diğerlerinde sözcük gerçek anlamıyla (kilit açan araç) geçmiştir.',
@@ -429,8 +429,8 @@ _PATCHES = {
     '0031': patch(
         'Aşağıdaki cümlelerin hangisinde amaç-sonuç ilişkisi vardır?',
         {
-            'A': 'Hava soğuduğundan sobayı yaktık.',
-            'B': 'Yağmur yağınca sokaklar ıslandı.',
+            'A': 'Yağmur yağınca sokaklar ıslandı.',
+            'B': 'Hava soğuduğundan sobayı yaktık.',
             'C': 'Sınavı kazanmak için gece gündüz çalıştı.',
             'D': 'Çok çalıştığı için sınavı rahatlıkla kazandı.',
             'E': 'Yorulmuştu, bu yüzden erken yattı.',
@@ -443,9 +443,9 @@ _PATCHES = {
         'Aşağıdaki cümlelerin hangisi nesnel bir yargı içerir?',
         {
             'A': 'Bu yemek, ülkenin en lezzetli yemeğidir.',
-            'B': 'Bu şehrin en keyifli ve en renkli mevsimi ilkbahardır.',
-            'C': 'Onun sesi hepimizi büyüledi.',
-            'D': 'Filmin müzikleri insanın içini burkuyor.',
+            'B': 'Filmin müzikleri insanın içini burkuyor.',
+            'C': 'Bu şehrin en keyifli ve en renkli mevsimi ilkbahardır.',
+            'D': 'Onun sesi hepimizi büyüledi.',
             'E': 'Şehir, üç büyük akarsuyun kıyısına kurulmuştur.',
         },
         'E',
@@ -453,24 +453,24 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        'Aşağıdaki cümlelerin hangisinde bir karşılaştırma yapılmıştır?',
+        'Aşağıdaki cümlelerin hangisinde kesinlik anlamı vardır?',
         {
-            'A': 'Akşam olunca eve döndüler.',
-            'B': 'Bu yıl kışın çok kar yağdı.',
-            'C': 'Kitabı okuyup bitirince arkadaşına verdi.',
-            'D': 'Ablası, ondan daha sabırlı biriydi.',
-            'E': 'Sabahları erken kalkardı hep.',
+            'A': 'Sınav sanıldığı kadar zor olmayabilir.',
+            'B': 'Belki hafta sonu size uğrarız.',
+            'C': 'Bu saatte evde olmalı.',
+            'D': 'Su, deniz seviyesinde 100 derecede kaynar.',
+            'E': 'Galiba yarın yağmur yağacak.',
         },
         'D',
-        '"Ondan daha sabırlı" ifadesi iki kişiyi sabır yönünden karşılaştırır; "daha" sözcüğü karşılaştırma bildirir. Diğer cümlelerde bir kıyaslama yoktur.',
+        "Suyun kaynama sıcaklığı kesin bir bilgidir. Diğer cümlelerde 'galiba, olmalı, belki, -abilir' sözleriyle olasılık ya da tahmin anlatılır.",
     ),
-    # düzey 3
+    # düzey 2
     '0034': patch(
         '"Çalışkan olduğu kadar da alçakgönüllü bir öğrenciydi." cümlesinden aşağıdakilerden hangisi çıkarılabilir?',
         {
-            'A': 'Alçakgönüllülüğü çalışkanlığını gölgelemiştir.',
+            'A': 'Öğrenci çalışkandır ama alçakgönüllü değildir.',
             'B': 'Öğrenci çalışkan olsa da başarısızdır.',
-            'C': 'Öğrenci çalışkandır ama alçakgönüllü değildir.',
+            'C': 'Alçakgönüllülüğü çalışkanlığını gölgelemiştir.',
             'D': 'Öğrenci alçakgönüllü değil, kibirlidir.',
             'E': 'Öğrenci hem çalışkan hem alçakgönüllüdür.',
         },
@@ -479,39 +479,39 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Aşağıdaki cümlelerin hangisinde bir "varsayım" söz konusudur?',
+        'Aşağıdaki cümlelerin hangisinde varsayım yoktur?',
         {
-            'A': 'Sabahtan beri durmadan çalıştı.',
-            'B': 'Diyelim ki bu işi zamanında bitiremedik.',
-            'C': 'Bugün hava gerçekten çok güzel.',
-            'D': 'Bu kitabı geçen hafta okudum.',
-            'E': 'Toplantıya herkes katıldı.',
+            'A': 'Tut ki bu iş istediğin gibi gitmedi.',
+            'B': 'Yarın sabah erkenden yola çıkacağız.',
+            'C': 'Farz edelim ki bütün sorulara doğru cevap verdin.',
+            'D': 'Diyelim ki trene yetişemedik, ne yapacağız?',
+            'E': 'Varsayalım ki fiyatlar yarı yarıya düştü.',
         },
         'B',
-        '"Diyelim ki" ifadesi, gerçekleşmemiş bir durumu gerçekmiş gibi kabul etmeyi, yani varsayımı bildirir. Diğer cümleler gerçekleşmiş ya da gözlenen durumları anlatır.',
+        "'Diyelim ki, farz edelim ki, tut ki, varsayalım ki' ifadeleri bir durumu gerçekleşmiş gibi kabul ederek varsayım bildirir. Yola çıkma planını bildiren cümlede varsayım yoktur.",
     ),
-    # düzey 3
+    # düzey 2
     '0036': patch(
         '"Az konuşan, çok dinleyen biriydi; bu yüzden herkes ona güvenirdi." cümlesinden aşağıdakilerden hangisi çıkarılamaz?',
         {
-            'A': 'Kişi iyi bir dinleyicidir.',
-            'B': 'İnsanlar ona güven duyar.',
+            'A': 'Kişi az konuşan biridir.',
+            'B': 'Kişi iyi bir dinleyicidir.',
             'C': 'Güven, konuşkanlığından kaynaklanır.',
-            'D': 'Kişi az konuşan biridir.',
+            'D': 'İnsanlar ona güven duyar.',
             'E': 'Suskunluğu güven kazanmasında etkilidir.',
         },
         'C',
         'Cümleye göre güven, kişinin az konuşup çok dinlemesinden kaynaklanır; konuşkanlığından değil. "Güven konuşkanlığından kaynaklanır" yargısı cümleyle çelişir ve çıkarılamaz.',
     ),
-    # düzey 3
+    # düzey 2
     '0037': patch(
         '"Ödevini bitirdikten sonra dışarı çıkabilirsin." cümlesinden aşağıdakilerden hangisi çıkarılır?',
         {
             'A': 'Dışarı çıkmak yasaktır.',
-            'B': 'Dışarı çıkmak ödevden önce olmalıdır.',
+            'B': 'Ödev zaten bitirilmiştir.',
             'C': 'Ödev bitirilse de dışarı çıkılamaz.',
             'D': 'Dışarı çıkmak ödevin bitmesine bağlıdır.',
-            'E': 'Ödev zaten bitirilmiştir.',
+            'E': 'Dışarı çıkmak ödevden önce olmalıdır.',
         },
         'D',
         'Cümlede dışarı çıkma izni, ödevin bitirilmesi koşuluna bağlanmıştır. Doğru çıkarım, dışarı çıkmanın ödevin bitirilmesine bağlı olduğunu belirten seçenektir.',
@@ -521,49 +521,49 @@ _PATCHES = {
         '"Bu şiiri anlamak için birkaç kez okumak gerekir." cümlesinde şiirle ilgili aşağıdakilerden hangisi vurgulanır?',
         {
             'A': 'Kolayca anlaşılamayacak kadar kapalı olduğu',
-            'B': 'Yeni yazılmış olduğu',
-            'C': 'Sesli okunması gerektiği',
-            'D': 'Sözcüklerinin ezberlenmesinin son derece güç olduğu',
-            'E': 'Çok uzun olduğu',
+            'B': 'Sözcüklerinin ezberlenmesinin son derece güç olduğu',
+            'C': 'Yeni yazılmış olduğu',
+            'D': 'Çok uzun olduğu',
+            'E': 'Sesli okunması gerektiği',
         },
         'A',
         'Şiiri anlamak için birkaç kez okumanın gerekmesi, onun ilk okuyuşta kolayca çözülemeyen, kapalı bir anlatıma sahip olduğunu gösterir. Doğru seçenek bu kapalılığı belirtir.',
     ),
-    # düzey 2
+    # düzey 3
     '0039': patch(
-        '"İşi bilene sor." sözüyle anlatılmak istenen aşağıdakilerden hangisidir?',
+        'Aşağıdaki cümlelerin hangisinde ad aktarması (mecazımürsel) yapılmıştır?',
         {
-            'A': 'Soru sormanın zaman kaybı olduğu',
-            'B': 'Herkesin her işi bildiği',
-            'C': 'Her işte uzmana danışılması gerektiği',
-            'D': 'Bilgili kişilere güvenilemeyeceği',
-            'E': 'İşlerin tek başına yapılması gerektiği',
+            'A': 'Konser için bütün biletler önceden satılmıştı.',
+            'B': 'Sanatçı sahneye çıkınca ışıklar söndü.',
+            'C': 'Bütün salon ayağa kalkıp sanatçıyı alkışladı.',
+            'D': 'Salonda yüzlerce kişi vardı.',
+            'E': 'Salonun duvarları yeni boyanmıştı.',
         },
         'C',
-        'Bu söz, bir konuda doğru bilgiyi ancak o işi bilen-uzman kişiden almanın gerektiğini anlatır. Doğru yorum, işin uzmanına danışılması gerektiğini belirten seçenektir.',
+        "Ayağa kalkıp alkışlayan salon değil, salondaki insanlardır; 'salon' sözcüğü içinde bulunanları anlatmak için kullanılmıştır. Bu, benzetme amacı gütmeden yapılan ad aktarmasıdır.",
     ),
-    # düzey 3
+    # düzey 2
     '0040': patch(
         '"Bu başarıyı yalnız ona borçluyuz." cümlesinden kesin olarak çıkarılabilecek yargı aşağıdakilerden hangisidir?',
         {
-            'A': 'O kişi başarıya engel olmuştur.',
-            'B': 'Başarı beklenenden küçüktür.',
+            'A': 'Başarı beklenenden küçüktür.',
+            'B': 'Başarıya birçok kişi katkı sunmuştur.',
             'C': 'Başarı ekibin ortak emeğidir.',
             'D': 'Başarıda tek pay sahibi o kişidir.',
-            'E': 'Başarıya birçok kişi katkı sunmuştur.',
+            'E': 'O kişi başarıya engel olmuştur.',
         },
         'D',
         '"Yalnız ona borçluyuz" ifadesi, başarının tek nedeni-pay sahibi olarak o kişiyi gösterir. Doğru çıkarım, başarıda tek pay sahibinin o kişi olduğunu belirten seçenektir; diğerleri cümleyle çelişir.',
     ),
-    # düzey 2
+    # düzey 3
     '0041': patch(
         '"Dağın eteğinde kurulmuş küçük bir köydü burası." cümlesindeki "etek" sözcüğüyle aşağıdakilerden hangisinde "etek" aynı anlamda kullanılmıştır?',
         {
-            'A': 'Eteklerini toplayıp koşmaya başladı.',
-            'B': 'Ütüde eteğini biraz yaktı.',
-            'C': 'Masanın örtüsü eteklerinden sarkıyordu.',
+            'A': 'Yeni aldığı eteği çok yakışmış.',
+            'B': 'Masanın örtüsü eteklerinden sarkıyordu.',
+            'C': 'Eteklerini toplayıp koşmaya başladı.',
             'D': 'Tepenin eteğine kadar yürüdük.',
-            'E': 'Yeni aldığı eteği çok yakışmış.',
+            'E': 'Ütüde eteğini biraz yaktı.',
         },
         'D',
         'Örnek cümlede "etek", bir yükseltinin alt bölümü anlamındadır. Aynı anlam "tepenin eteği" kullanımında vardır. Diğerlerinde sözcük giysi ya da bir şeyin alt-sarkan kısmı anlamıyla geçmektedir.',
@@ -574,22 +574,22 @@ _PATCHES = {
         {
             'A': 'Suyun yüzünde yapraklar süzülüyordu.',
             'B': 'Masanın yüzü tozla kaplanmıştı.',
-            'C': 'Gölün yüzü ay ışığıyla parlıyordu.',
-            'D': 'Denizin yüzü bugün durgundu.',
+            'C': 'Denizin yüzü bugün durgundu.',
+            'D': 'Gölün yüzü ay ışığıyla parlıyordu.',
             'E': 'Yastığın yüzünü yeni değiştirdi.',
         },
         'E',
         'Diğer cümlelerde "yüz", bir şeyin üst-dış bölümü anlamındadır (suyun yüzü, denizin yüzü gibi). Yastığın "yüzü" ise üzerine geçirilen kılıf anlamındadır; bu kılıf anlamı sözcüğü diğerlerinden ayırır.',
     ),
-    # düzey 3
+    # düzey 2
     '0043': patch(
         'Aşağıdaki deyimlerden hangisinin açıklaması yanlış verilmiştir?',
         {
-            'A': 'Etekleri zil çalmak: çok sevinmek',
+            'A': 'Burun kıvırmak: küçümsemek, beğenmemek',
             'B': 'Ağzı kulaklarına varmak: çok üzülmek',
-            'C': 'Kulak kabartmak: gizlice dinlemeye çalışmak',
-            'D': 'Burun kıvırmak: küçümsemek, beğenmemek',
-            'E': 'Göz yummak: bir kusuru görmezden gelmek',
+            'C': 'Göz yummak: bir kusuru görmezden gelmek',
+            'D': 'Etekleri zil çalmak: çok sevinmek',
+            'E': 'Kulak kabartmak: gizlice dinlemeye çalışmak',
         },
         'B',
         '"Ağzı kulaklarına varmak" deyimi çok sevinmek, sevinçten yüzü gülmek anlamındadır; "çok üzülmek" açıklaması yanlıştır. Diğer seçeneklerdeki deyim-açıklama eşleştirmeleri doğrudur.',
@@ -599,8 +599,8 @@ _PATCHES = {
         '"Ağaç yaşken eğilir." atasözüyle anlatılmak istenen aşağıdakilerden hangisidir?',
         {
             'A': 'Eğitim küçük yaşta, karakter oturmadan verilmelidir.',
-            'B': 'Doğa koşulları insanı zorlar.',
-            'C': 'Acele edilen işten hayır gelmez.',
+            'B': 'Acele edilen işten hayır gelmez.',
+            'C': 'Doğa koşulları insanı zorlar.',
             'D': 'Yardımlaşmak insanı güçlü kılar.',
             'E': 'Herkes, yaptığı iyi ya da kötü her işin karşılığını mutlaka görür.',
         },
@@ -611,24 +611,24 @@ _PATCHES = {
     '0045': patch(
         'Aşağıdaki cümlelerin hangisinde bir deyim cümleye "çok dikkatli ve tedbirli davranmak" anlamı katmıştır?',
         {
-            'A': 'Bu konuda epey kafa yordu, uzun uzun düşündü.',
-            'B': 'İşi başından aşkın olduğunu söyledi.',
-            'C': 'Söylediklerine kulak asmadı bile.',
+            'A': 'Söylediklerine kulak asmadı bile.',
+            'B': 'Bu konuda epey kafa yordu, uzun uzun düşündü.',
+            'C': 'Ona güvenip bütün sırlarını açtı.',
             'D': 'Her adımını ölçüp biçerek atıyordu.',
-            'E': 'Ona güvenip bütün sırlarını açtı.',
+            'E': 'İşi başından aşkın olduğunu söyledi.',
         },
         'D',
         '"Adımını ölçüp biçmek", her hareketini dikkatle, tedbirli biçimde yapmayı anlatan bir deyimdir. Bu anlam yalnızca ilgili seçenekte vardır; diğer cümlelerdeki deyimler farklı anlamlar taşır.',
     ),
-    # düzey 2
+    # düzey 3
     '0046': patch(
         '"Bu roman, savaşın insan ruhunda açtığı **derin** yaraları anlatıyor." cümlesindeki "derin" sözcüğünün anlamı aşağıdakilerden hangisidir?',
         {
-            'A': 'Dibi yüzeyden çok aşağıda olan',
+            'A': 'Kolayca unutulup geçen',
             'B': 'Herkesçe bilinen, sıradan olan',
-            'C': 'Yeni ortaya çıkmış olan',
+            'C': 'Dibi yüzeyden çok aşağıda olan',
             'D': 'Etkisi güçlü ve kalıcı olan',
-            'E': 'Kolayca unutulup geçen',
+            'E': 'Yeni ortaya çıkmış olan',
         },
         'D',
         'Burada "derin", fiziksel bir ölçüyü değil, etkisi güçlü ve kalıcı olan anlamını taşır (mecaz). "Dibi yüzeyden aşağıda olan" gerçek anlam olduğu için bağlama uymaz; diğerleri de sözcüğü karşılamaz.',
@@ -637,11 +637,11 @@ _PATCHES = {
     '0047': patch(
         'Aşağıdaki cümlelerin hangisinde yakın anlamlı iki sözcük bir arada kullanılmıştır?',
         {
-            'A': 'İyi günde kötü günde yanımdaydı.',
+            'A': 'Er geç gerçek ortaya çıkacak.',
             'B': 'Sessiz sedasız gitti.',
-            'C': 'Az çok bu işten anlıyorum.',
-            'D': 'Er geç gerçek ortaya çıkacak.',
-            'E': 'İçeri girip dışarı çıktı durdu.',
+            'C': 'İçeri girip dışarı çıktı durdu.',
+            'D': 'İyi günde kötü günde yanımdaydı.',
+            'E': 'Az çok bu işten anlıyorum.',
         },
         'B',
         '"Sessiz" ile "sedasız" yakın (eş) anlamlı sözcüklerdir ve pekiştirme için bir arada kullanılmıştır. Diğer seçeneklerdeki ikililer (iyi-kötü, az-çok, içeri-dışarı, er-geç) karşıt anlamlıdır.',
@@ -651,62 +651,62 @@ _PATCHES = {
         'Aşağıdaki cümlelerin hangisinde "düşmek" sözcüğü "payına ayrılmak, isabet etmek" anlamında kullanılmıştır?',
         {
             'A': 'Mirastan ona küçük bir pay düştü.',
-            'B': 'Yapraklar bir bir yere düştü.',
-            'C': 'Yürürken buzda düştü.',
-            'D': 'Ateşi akşama doğru düştü.',
+            'B': 'Ateşi akşama doğru düştü.',
+            'C': 'Yapraklar bir bir yere düştü.',
+            'D': 'Yürürken buzda düştü.',
             'E': 'Sebze fiyatları geçen aya göre biraz düştü.',
         },
         'A',
         '"Mirastan pay düşmek" kullanımında "düşmek", birine ayrılmak, isabet etmek anlamındadır. Diğerlerinde sözcük yukarıdan aşağıya inmek, azalmak ya da yere kapanmak anlamlarıyla geçmiştir.',
     ),
-    # düzey 3
+    # düzey 2
     '0049': patch(
-        '"Bu kararı vermek benim **haddim** değil." cümlesindeki "had" sözcüğü aşağıdakilerden hangisiyle anlamca ilişkilidir?',
+        '**sürmek:** Bir süre devam etmek.\n\nYukarıda anlamı verilen sözcük aşağıdaki cümlelerin hangisinde bu anlamıyla kullanılmıştır?',
         {
-            'A': 'İstek ve dilek',
-            'B': 'Alışkanlık',
-            'C': 'Cesaret',
-            'D': 'Yorgunluk',
-            'E': 'Sınır, yetki',
+            'A': 'Yeni ürünlerini piyasaya sürdü.',
+            'B': 'Tarlayı sabah erkenden sürdüler.',
+            'C': 'Arabayı dikkatle sürüyordu.',
+            'D': 'Ekmeğine bolca tereyağı sürdü.',
+            'E': 'Toplantı çok uzun sürdü.',
         },
         'E',
-        '"Haddim değil" kullanımında "had", bir kişinin yetki ve sınırlarını anlatır. Bu nedenle sözcük "sınır, yetki" ile anlamca ilişkilidir; diğer seçenekler bu anlamı karşılamaz.',
+        "Toplantının uzun sürmesi, belli bir zaman devam etmesidir. Diğer cümlelerde 'sürmek' toprağı işlemek, yaymak, satışa çıkarmak ve araç kullanmak anlamlarındadır.",
     ),
     # düzey 2
     '0050': patch(
         '"Yıllarca bu konuda **kılı kırk yardı**." cümlesindeki altı çizili deyimin anlamı aşağıdakilerden hangisidir?',
         {
-            'A': 'Bir işi özensizce, baştan savma biçimde yapıp geçmek',
+            'A': 'Kolay yoldan sonuç almak',
             'B': 'Çok ince eleyip titizlikle davranmak',
-            'C': 'Herkesle didişip durmak',
-            'D': 'Kolay yoldan sonuç almak',
-            'E': 'Sürekli sözünden dönmek',
+            'C': 'Sürekli sözünden dönmek',
+            'D': 'Herkesle didişip durmak',
+            'E': 'Bir işi özensizce, baştan savma biçimde yapıp geçmek',
         },
         'B',
         '"Kılı kırk yarmak", bir işi çok ince ayrıntısına kadar, titizlikle ele almak anlamındadır. Doğru karşılık, incelik ve titizliği belirten seçenektir.',
     ),
     # düzey 2
     '0051': patch(
-        '"Yolları kapatan kar yüzünden okullar tatil edildi." cümlesinde aşağıdaki anlam ilişkilerinden hangisi vardır?',
+        'Aşağıdaki cümlelerin hangisinde neden-sonuç ilişkisi yoktur?',
         {
-            'A': 'Neden-sonuç',
-            'B': 'Olasılık',
-            'C': 'Karşılaştırma',
-            'D': 'Koşul-sonuç',
-            'E': 'Amaç-sonuç',
+            'A': 'Sınava girmek için sabah erkenden yola çıktı.',
+            'B': 'Yağmur yüzünden maç ertelendi.',
+            'C': 'Fiyatlar arttı, bu yüzden satışlar düştü.',
+            'D': 'Çok yorulduğundan akşam erkenden uyudu.',
+            'E': 'Yollar buz tuttuğu için okullar tatil edildi.',
         },
         'A',
-        'Cümlede okulların tatil edilmesi (sonuç), yolları kapatan kar (neden) yüzünden gerçekleşmiştir. "...yüzünden" ifadesi neden-sonuç ilişkisi kurar; koşul ya da amaç bildiren bir yapı yoktur.',
+        "'Sınava girmek için' erken çıkmanın amacını bildirir; cümlede amaç-sonuç ilişkisi vardır. Diğer cümlelerde eylemin nedeni verilmiştir.",
     ),
     # düzey 2
     '0052': patch(
         '"Bu kitabı okursan olayları çok daha iyi anlarsın." cümlesinde aşağıdaki anlam ilişkilerinden hangisi vardır?',
         {
-            'A': 'Neden-sonuç',
+            'A': 'Beğeni',
             'B': 'Koşul-sonuç',
             'C': 'Amaç-sonuç',
-            'D': 'Beğeni',
-            'E': 'Karşılaştırma',
+            'D': 'Karşılaştırma',
+            'E': 'Neden-sonuç',
         },
         'B',
         'Olayları daha iyi anlamanın gerçekleşmesi, kitabın okunması koşuluna bağlanmıştır ("...okursan..."). Bu, koşul-sonuç ilişkisidir; neden ya da amaç bildiren bir yapı yoktur.',
@@ -718,19 +718,19 @@ _PATCHES = {
             'A': 'Özlem',
             'B': 'Pişmanlık',
             'C': 'Umut',
-            'D': 'Öfke',
-            'E': 'Derin şaşkınlık',
+            'D': 'Derin şaşkınlık',
+            'E': 'Öfke',
         },
         'B',
         '"Keşke ... söylemeseydim" kalıbı, yapılan bir davranıştan duyulan üzüntüyü, yani pişmanlığı anlatır. Cümlede özlem, şaşkınlık ya da umut sezdiren bir öğe yoktur.',
     ),
-    # düzey 3
+    # düzey 2
     '0054': patch(
         '"Bu sözler bir yazara değil, ancak yılların ustasına yakışır." cümlesinde aşağıdakilerden hangisi vurgulanmaktadır?',
         {
-            'A': 'Sözlerin yanlış anlaşıldığı',
-            'B': 'Sözlerin sıradan olduğu',
-            'C': 'Ustalığın öğrenilemeyeceği',
+            'A': 'Ustalığın öğrenilemeyeceği',
+            'B': 'Sözlerin yanlış anlaşıldığı',
+            'C': 'Sözlerin sıradan olduğu',
             'D': 'Yazarlığın kolay bir uğraş olduğu',
             'E': 'Sözleri söyleyenin çok deneyimli olduğu',
         },
@@ -741,10 +741,10 @@ _PATCHES = {
     '0055': patch(
         '"Ne kadar erken çıkarsak, o kadar rahat ederiz." cümlesinde anlamca aşağıdakilerden hangisi vurgulanır?',
         {
-            'A': 'Erken çıkmanın gereksiz olduğu',
+            'A': 'Rahat etmenin olanaksız olduğu',
             'B': 'İki durum arasında doğru orantı bulunduğu',
-            'C': 'Yolculuğun çok uzun süreceği',
-            'D': 'Rahat etmenin olanaksız olduğu',
+            'C': 'Erken çıkmanın gereksiz olduğu',
+            'D': 'Yolculuğun çok uzun süreceği',
             'E': 'Geç çıkmanın yolculuk için daha uygun olacağı',
         },
         'B',
@@ -755,10 +755,10 @@ _PATCHES = {
         '"Denemelerinde yalın bir dil kullanır, süslü anlatımdan kaçınır." cümlesinde yazarın hangi yönü belirtilmiştir?',
         {
             'A': 'Yapmacıksız, sade bir anlatımı benimsediği',
-            'B': 'Eserlerini çok uzun tuttuğu',
-            'C': 'Konularını güncel olaylardan seçtiği',
+            'B': 'Okurları güldürmeyi amaçladığı',
+            'C': 'Eserlerini çok uzun tuttuğu',
             'D': 'Şiir türünde de ürünler verdiği',
-            'E': 'Okurları güldürmeyi amaçladığı',
+            'E': 'Konularını güncel olaylardan seçtiği',
         },
         'A',
         'Cümlede yazarın "yalın bir dil" kullandığı ve "süslü anlatımdan kaçındığı" belirtilir; bu, sade ve yapmacıksız bir anlatımı benimsediğini gösterir. Diğer seçenekler cümlede yer almayan bilgilerdir.',
@@ -776,40 +776,40 @@ _PATCHES = {
         'E',
         '"Görür görmez" kalıbı, görme eyleminin hemen ardından tanıma eyleminin gerçekleştiğini, iki eylemin art arda olduğunu anlatır. Doğru seçenek bu "hemen ardından olma" anlamını verir.',
     ),
-    # düzey 3
+    # düzey 2
     '0058': patch(
         '"Yalnız bu konuda değil, hemen her konuda titiz davranırdı." cümlesinden aşağıdakilerden hangisi çıkarılır?',
         {
             'A': 'Titizliği pek çok alanı kapsar.',
-            'B': 'Kişi bu konuda özensizdir.',
-            'C': 'Kişi titiz biri değildir.',
+            'B': 'Kişi titiz biri değildir.',
+            'C': 'Kişi bu konuda özensizdir.',
             'D': 'Kişi tek bir konuda titizdir.',
             'E': 'Kişi titizliği sonradan kazanmıştır.',
         },
         'A',
         '"Yalnız bu konuda değil, hemen her konuda" ifadesi, kişinin titizliğinin tek bir alanla sınırlı olmayıp geniş bir alanı kapsadığını anlatır. Doğru çıkarım bu yaygınlığı belirten seçenektir.',
     ),
-    # düzey 2
+    # düzey 3
     '0059': patch(
-        '"Ummadığın taş baş yarar." atasözünün anlamı aşağıdakilerden hangisidir?',
+        'Aşağıdaki cümlelerin hangisinde atasözü, anlamına uygun bir durumu anlatmak için kullanılmamıştır?',
         {
-            'A': 'İnsan kötü günde dostunu tanır.',
-            'B': 'Herkes ektiğini biçer.',
-            'C': 'Güçlü olan kazanır.',
-            'D': 'Zamanında yapılmayan iş sonradan yapılmaz.',
-            'E': 'Önemsiz sanılan şey beklenmedik zarar verebilir.',
+            'A': 'Çocuğuna kitap okuma alışkanlığını küçük yaşta kazandırdı; ağaç yaşken eğilir.',
+            'B': 'Önemsemediği küçük borç sonunda başını yaktı; ummadığın taş baş yarar.',
+            'C': 'Bir kez dolandırılınca her teklife şüpheyle bakar oldu; sütten ağzı yanan yoğurdu üfleyerek yer.',
+            'D': 'Her gün biraz biriktirerek sonunda ev sahibi oldu; damlaya damlaya göl olur.',
+            'E': 'Herkes ona yardım edince işi bir günde bitirdi; ağaç yaşken eğilir.',
         },
         'E',
-        'Bu atasözü, hiç önemsenmeyen, beklenmeyen bir şeyin insana büyük zarar verebileceğini anlatır. Doğru yorum, önemsiz sanılanın beklenmedik zarar verebileceğini belirten seçenektir.',
+        "'Ağaç yaşken eğilir' eğitimin küçük yaşta verilmesi gerektiğini anlatır; yardımlaşmayla işin çabuk bitmesi bu atasözüyle anlatılamaz. Diğer cümlelerde atasözleri anlamlarına uygun durumlar için kullanılmıştır.",
     ),
     # düzey 2
     '0060': patch(
         '"Ne yaparsan yap, onu bu kararından döndüremezsin." cümlesinde aşağıdakilerden hangisi vurgulanır?',
         {
-            'A': 'Kararın yanlış olduğu',
-            'B': 'Kişinin kararsız olduğu',
-            'C': 'Kişinin başkalarınca kolayca ikna edilebildiği',
-            'D': 'Kararın henüz verilmediği',
+            'A': 'Kişinin kararsız olduğu',
+            'B': 'Kişinin başkalarınca kolayca ikna edilebildiği',
+            'C': 'Kararın henüz verilmediği',
+            'D': 'Kararın yanlış olduğu',
             'E': 'Kişinin kararında son derece direndiği',
         },
         'E',
@@ -858,7 +858,7 @@ def main():
         for f in fark[:20]:
             print(f"- {f}")
         return 1
-    print(f"1 paket / {len(PATCHES)} soru ('Sozcukte ve Cumlede Anlam' yapisal kalibrasyon) iki repoda dogrulandi.")
+    print(f"1 paket / {len(PATCHES)} soru ('Türkçe — Sözcükte ve Cümlede Anlam' yapisal kalibrasyon) iki repoda dogrulandi.")
     return 0
 
 
