@@ -47,10 +47,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
         "ait-inkilap-gen-0010": {"A": "Millet Mektepleri teşkilatı"},
         "ait-inkilap-gen-0011": {"A": "1925 yılı"},
     },
-    "content/ataturk_ilkeleri/ataturk_ilkeleri_dis_politika.json": {
-        "ait-ilke-gen-0013": {"B": "Balkan Paktı"},
-        "ait-ilke-gen-0045": {"C": "Din temelli ümmet düzenini yeniden kurmak"},
-    },
 }
 
 

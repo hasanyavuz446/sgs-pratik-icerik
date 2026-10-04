@@ -29,18 +29,6 @@ FULL_OPTIONS = {
 }
 
 
-PRINCIPLE_QUESTIONS = [
-    "ait-ilke-gen-0001", "ait-ilke-gen-0002", "ait-ilke-gen-0003",
-    "ait-ilke-gen-0004", "ait-ilke-gen-0005", "ait-ilke-gen-0006",
-    "ait-ilke-gen-0007", "ait-ilke-gen-0008", "ait-ilke-gen-0009",
-    "ait-ilke-gen-0018", "ait-ilke-gen-0019",
-]
-PRINCIPLES = [
-    "Cumhuriyetçilik", "Halkçılık", "Laiklik",
-    "Devletçilik", "Milliyetçilik", "İnkılapçılık",
-]
-
-
 def fix(rel: str) -> int:
     source = ROOT / "content" / rel
     data = json.loads(source.read_text(encoding="utf-8"))
@@ -65,20 +53,6 @@ def fix(rel: str) -> int:
             if q["options"][letter] != new:
                 q["options"][letter] = new
                 changed += 1
-    if rel == "ataturk_ilkeleri/ataturk_ilkeleri_dis_politika.json":
-        for qid in PRINCIPLE_QUESTIONS:
-            q = by_id[qid]
-            answer = q["answer"]
-            correct = q["options"][answer]
-            assert correct in PRINCIPLES, (qid, correct)
-            distractors = [p for p in PRINCIPLES if p != correct][:4]
-            for letter, new in zip((x for x in "ABCDE" if x != answer), distractors):
-                if q["options"][letter] != new:
-                    q["options"][letter] = new
-                    changed += 1
-            if correct == "Laiklik" and q["options"][answer] != "Laiklik ilkesi":
-                q["options"][answer] = "Laiklik ilkesi"
-                changed += 1
     for q in data:
         assert set(q["options"]) == set("ABCDE"), q["id"]
         assert len(set(q["options"].values())) == 5, q["id"]
@@ -101,6 +75,5 @@ if __name__ == "__main__":
         print("Dogrulama icin git diff kullanin; yazmak icin argumansiz calistirin.")
         raise SystemExit(2)
     paths = set(CORRECT) | set(DISTRACTORS) | set(FULL_OPTIONS)
-    paths.add("ataturk_ilkeleri/ataturk_ilkeleri_dis_politika.json")
     for rel in sorted(paths):
         print(f"{rel}: {fix(rel)} doğal şık düzeltmesi")
