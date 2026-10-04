@@ -83,7 +83,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'Ah, ne çok şey biriktirmişiz ( ) Eski fotoğraflar, okul karneleri, sararmış mektuplar ( ) Saymakla bitmez. Annem hepsini tek tek katlayıp kutulara yerleştirirken bir yandan da soruyordu ( ) “Bunları gerçekten saklamak istiyor musun ( )”\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        'Ah, ne çok şey biriktirmişiz ( ) Eski fotoğraflar, okul karneleri, sararmış mektuplar ( ) Saymakla bitmez. Annem hepsini tek tek katlayıp kutulara yerleştirirken bir yandan da soruyordu ( ) “Bunları gerçekten saklamak istiyor musun ( )” Sonunda kutuların yarısını komşulara dağıttık, kalanını tavan arasına taşıdık.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
         {
             'A': '(!) (...) (:) (?)',
             'B': '(.) (:) (;) (?)',
@@ -213,7 +213,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        'Yazar, romanın ilk sayfalarında okuru **ağır** bir sessizliğin içine çeker. Kahraman, bir **kapı** aralığından kardeşinin evden ayrılışını izler. O an kalbi **taş** kesilmiş gibidir. Yıllar sonra aynı eve döndüğünde anılar içinde **dalga dalga** yükselir; değişenin ev değil, kendi **bakışı** olduğunu anlar.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi gerçek anlamıyla kullanılmıştır?',
+        'Yazar, romanın ilk sayfalarında okuru **ağır** bir sessizliğin içine çeker. Kahraman, bir **kapı** aralığından kardeşinin evden ayrılışını izler. O an kalbi **taş** kesilmiş gibidir. Yıllar sonra aynı eve döndüğünde anılar içinde **dalga dalga** yükselir; değişenin ev değil, kendi **bakışı** olduğunu anlar. Romanın son bölümünde ise çocukluğa ait bu ayrıntılar, sessiz bir hesaplaşmanın parçası hâline gelir.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi gerçek anlamıyla kullanılmıştır?',
         {
             'A': 'kapı',
             'B': 'ağır',
@@ -265,7 +265,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        'Kırk yıllık ustaydı. Tezgâhının başına geçmeden önce aletlerini tek tek siler, sonra sırayla dizerdi. Çırakları bu işi gereksiz bir tören sanır, gülüşürlerdi. Bir gün içlerinden biri nedenini sorunca usta, “Aleti temiz olmayanın işi de temiz olmaz.” dedi. O günden sonra kimse gülmedi.\n\nBu parçada asıl vurgulanan düşünce aşağıdakilerden hangisidir?',
+        'Kırk yıllık ustaydı. Tezgâhının başına geçmeden önce aletlerini tek tek siler, sonra sırayla dizerdi. Çırakları bu işi gereksiz bir tören sanır, gülüşürlerdi. Bir gün içlerinden biri nedenini sorunca usta, “Aleti temiz olmayanın işi de temiz olmaz.” dedi. O günden sonra kimse gülmedi. Çıraklar da artık işe başlamadan önce aletlerini özenle temizleyip yerli yerine koyuyordu.\n\nBu parçada asıl vurgulanan düşünce aşağıdakilerden hangisidir?',
         {
             'A': 'Kırk yıllık deneyim her sorunu çözmeye yeter.',
             'B': 'Meslek sırları çıraklardan saklanmalıdır.',
@@ -343,7 +343,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        'Kurulun gündemindeki maddeler şunlardı ( ) bütçe, personel ve yeni şube ( ) Toplantıyı Dr ( ) Selim Kaya yönetti ( ) Toplantının sonunda bir üye, kararların ne zaman uygulanacağını sordu ( )\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        'Kurulun gündemindeki maddeler şunlardı ( ) bütçe, personel ve yeni şube ( ) Toplantıyı Dr ( ) Selim Kaya yönetti ( ) Toplantının sonunda bir üye, kararların ne zaman uygulanacağını sordu ( ) Kararların bir hafta içinde bütün şubelere duyurulacağı bildirildi.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
         {
             'A': '(;) (.) (,) (.) (?)',
             'B': '(:) (.) (.) (.) (?)',
@@ -352,7 +352,7 @@ _PATCHES = {
             'E': '(,) (.) (.) (,) (?)',
         },
         'D',
-        "'Şunlardı' ile duyurulan sıralamadan önce iki nokta, cümle sonlarında nokta, 'Dr' kısaltmasından sonra nokta gelir. Son cümle soruyu dolaylı aktarır ('ne zaman uygulanacağını sordu'), soru cümlesi değildir; bu yüzden sonuna soru işareti değil nokta konur.",
+        "'Şunlardı' ile duyurulan sıralamadan önce iki nokta, cümle sonlarında nokta, 'Dr' kısaltmasından sonra nokta gelir. Üyenin sorusunu anlatan cümle soruyu dolaylı aktarır ('ne zaman uygulanacağını sordu'), soru cümlesi değildir; bu yüzden sonuna soru işareti değil nokta konur.",
     ),
     # düzey 3
     '0026': patch(
@@ -395,7 +395,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Tren istasyona girdiğinde peronda kimse yoktu. Elindeki valizi yere bırakıp saatine baktı; beklediği kişi en az yarım saat gecikmişti. Bir süre bankta oturdu, sonra büfeye gidip bir çay aldı. Tam çayını bitirmişti ki arkasından tanıdık bir ses adını seslendi.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        'Tren istasyona girdiğinde peronda kimse yoktu. Elindeki valizi yere bırakıp saatine baktı; beklediği kişi en az yarım saat gecikmişti. Bir süre bankta oturdu, sonra büfeye gidip bir çay aldı. Tam çayını bitirmişti ki arkasından tanıdık bir ses adını seslendi. Döndüğünde, yıllar önce aynı istasyonda vedalaştığı kardeşini karşısında buldu; ikisi de bir süre konuşamadan birbirine sarıldı.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
         {
             'A': 'Açıklama',
             'B': 'Karşılaştırma',
@@ -473,7 +473,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Sabahın **ilk** ışıklarıyla yola çıktık. Yol **uzun**du ama manzara her şeyi unutturuyordu. Köye **geç** vardık; ev sahibimiz bizi **sıcak** bir çorbayla karşıladı. **Bu** misafirperverliği hiç unutmadım.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi zarf (belirteç) olarak kullanılmıştır?',
+        'Sabahın **ilk** ışıklarıyla yola çıktık. Yol **uzun**du ama manzara her şeyi unutturuyordu. Köye **geç** vardık; ev sahibimiz bizi **sıcak** bir çorbayla karşıladı. **Bu** misafirperverliği hiç unutmadım. Ertesi sabah yola koyulmadan önce ev sahibimize teşekkür edip vedalaştık.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi zarf (belirteç) olarak kullanılmıştır?',
         {
             'A': 'sıcak',
             'B': 'uzun',
@@ -525,7 +525,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0039': patch(
-        'Bitkiler ışığa doğru yönelir; bu hareket, gövdenin gölgede kalan tarafındaki hücrelerin daha hızlı uzamasıyla gerçekleşir. Saksısını sık sık döndürdüğünüz bir bitkinin dik büyümesinin nedeni de budur. Saksı hiç döndürülmezse bitki, zamanla pencereye doğru belirgin biçimde eğilir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        'Bitkiler ışığa doğru yönelir; bu hareket, gövdenin gölgede kalan tarafındaki hücrelerin daha hızlı uzamasıyla gerçekleşir. Saksısını sık sık döndürdüğünüz bir bitkinin dik büyümesinin nedeni de budur. Saksı hiç döndürülmezse bitki, zamanla pencereye doğru belirgin biçimde eğilir. Bu tepkiye fototropizma adı verilir ve bitkinin fotosentez için gereken ışıktan daha iyi yararlanmasını sağlar.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
         {
             'A': 'Bitkinin eğilmesi, gövdedeki hücrelerin farklı hızlarda uzamasından kaynaklanır.',
             'B': 'Bitkiler karanlık ortamda büyümeyi tamamen durdurur.',
@@ -538,7 +538,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0040': patch(
-        'Kitabın sonunda yazar şu soruyu soruyor ( ) “İnsan, kaybettiği şeyin değerini neden ancak kaybettikten sonra anlar ( )” Bu soru, bütün roman boyunca farklı biçimlerde karşımıza çıkıyor ( ) kimi zaman bir mektupta, kimi zaman bir rüyada ( )\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        'Kitabın sonunda yazar şu soruyu soruyor ( ) “İnsan, kaybettiği şeyin değerini neden ancak kaybettikten sonra anlar ( )” Bu soru, bütün roman boyunca farklı biçimlerde karşımıza çıkıyor ( ) kimi zaman bir mektupta, kimi zaman bir rüyada ( ) Romanın sonunda okur da bu soruyla baş başa kalıyor.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
         {
             'A': '(:) (?) (:) (.)',
             'B': '(,) (?) (:) (...)',
@@ -616,7 +616,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        'Göç eden kuşların binlerce kilometrelik yolculuklarında yönlerini nasıl buldukları uzun süre merak konusu oldu. Araştırmalar, bu kuşların güneşin konumundan, yıldızlardan ve yerin manyetik alanından yararlandığını gösteriyor. Bulutlu gecelerde yıldızları göremeyen kuşların manyetik alana daha çok güvendiği düşünülüyor.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        'Göç eden kuşların binlerce kilometrelik yolculuklarında yönlerini nasıl buldukları uzun süre merak konusu oldu. Araştırmalar, bu kuşların güneşin konumundan, yıldızlardan ve yerin manyetik alanından yararlandığını gösteriyor. Bulutlu gecelerde yıldızları göremeyen kuşların manyetik alana daha çok güvendiği düşünülüyor. Genç kuşların ilk göçlerinde yollarını, sürüdeki deneyimli kuşları izleyerek de buldukları biliniyor.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
         {
             'A': 'Güneşin konumu kuşlar için yıldızlardan daha güvenilir bir ipucudur.',
             'B': 'Manyetik alan, kuşların gündüz yararlandığı başlıca ipucudur.',
@@ -655,7 +655,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        'Çocukken babam bana bisiklet sürmeyi öğretirken arkamdan tutuyormuş gibi yapardı. Bir gün arkama döndüğümde onun çoktan elini bıraktığını, metrelerce uzakta durduğunu gördüm. O ana kadar düşmemiştim; çünkü düşebileceğimi bilmiyordum. Bugün bile bir işe başlarken korktuğumda o anı hatırlarım.\n\nBu parçada anlatıcının vurguladığı düşünce aşağıdakilerden hangisidir?',
+        'Çocukken babam bana bisiklet sürmeyi öğretirken arkamdan tutuyormuş gibi yapardı. Bir gün arkama döndüğümde onun çoktan elini bıraktığını, metrelerce uzakta durduğunu gördüm. O ana kadar düşmemiştim; çünkü düşebileceğimi bilmiyordum. Bugün bile bir işe başlarken korktuğumda o anı hatırlarım. Çoğu zaman bizi durduranın yeteneğimiz değil, kendimize koyduğumuz sınırlar olduğunu o gün anlamıştım.\n\nBu parçada anlatıcının vurguladığı düşünce aşağıdakilerden hangisidir?',
         {
             'A': 'Çocuklara bisiklet sürmeyi öğretmek, anne babadan büyük bir sabır ister.',
             'B': 'Babalar çocuklarını aşırı korumaktan kaçınmalıdır.',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        'Ünlü ressamların atölyelerinde çalışan çıraklar, yıllarca boya hazırlar, tuvalleri gerer ve ustanın tablolarındaki arka planları boyarlardı. Ustanın imzasını taşıyan pek çok tablonun bazı bölümlerinin aslında çıraklar tarafından yapıldığı bugün biliniyor. O dönemde bu durum bir aldatmaca değil, olağan bir çalışma düzeni olarak görülüyordu.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
+        'Ünlü ressamların atölyelerinde çalışan çıraklar, yıllarca boya hazırlar, tuvalleri gerer ve ustanın tablolarındaki arka planları boyarlardı. Ustanın imzasını taşıyan pek çok tablonun bazı bölümlerinin aslında çıraklar tarafından yapıldığı bugün biliniyor. O dönemde bu durum bir aldatmaca değil, olağan bir çalışma düzeni olarak görülüyordu. Bu çıraklardan bazıları zamanla ustalaşıp kendi atölyelerini kurmuş, ustalarının izinden giden ünlü ressamlar olmuştur.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
         {
             'A': 'Çıraklar ustanın tablolarının bazı bölümlerini boyardı.',
             'B': 'Çırakların işleri arasında boya hazırlamak da vardı.',
@@ -690,7 +690,7 @@ _PATCHES = {
             'E': 'O dönemde çırakların tablolara katkısı ustaya karşı bir hile sayılırdı.',
         },
         'E',
-        'Son cümle bu durumun o dönemde aldatmaca değil, olağan bir çalışma düzeni olarak görüldüğünü söylüyor; hile sayıldığı yargısı parçayla çelişir.',
+        'Parçanın üçüncü cümlesi bu durumun o dönemde aldatmaca değil, olağan bir çalışma düzeni olarak görüldüğünü söylüyor; hile sayıldığı yargısı parçayla çelişir.',
     ),
     # düzey 3
     '0052': patch(
@@ -720,7 +720,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        'Faiz, ödünç alınan bir paranın kullanılması karşılığında ödenen bedeldir. Borç alan kişi, anaparanın yanında belirli bir oran üzerinden hesaplanan bu bedeli de geri öder. Faiz oranı yükseldikçe borçlanmanın maliyeti artar; düştükçe azalır.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        'Faiz, ödünç alınan bir paranın kullanılması karşılığında ödenen bedeldir. Borç alan kişi, anaparanın yanında belirli bir oran üzerinden hesaplanan bu bedeli de geri öder. Faiz oranı yükseldikçe borçlanmanın maliyeti artar; düştükçe azalır. Bu nedenle bankalar faiz oranını belirlerken enflasyonu, borç alanın geri ödeme gücünü ve kredinin vadesini dikkate alır.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
         {
             'A': 'Tartışma',
             'B': 'Açıklama',
@@ -746,7 +746,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        'Ankara ( ) İstanbul hattında yeni seferler başladı ( ) Biletler internetten, gişelerden ve mobil uygulamadan alınabiliyor ( ) Yetkililer, yoğunluk sürerse sefer sayısının artırılacağını açıkladı ( )\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        'Ankara ( ) İstanbul hattında yeni seferler başladı ( ) Biletler internetten, gişelerden ve mobil uygulamadan alınabiliyor ( ) Yetkililer, yoğunluk sürerse sefer sayısının artırılacağını açıkladı ( ) Seferlerin ilk haftasında biletlerin büyük bölümü satıldı.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
         {
             'A': '(-) (.) (...) (!)',
             'B': '(-) (;) (.) (.)',
@@ -772,7 +772,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0058': patch(
-        'Fabrikanın **bacası** sabahtan beri tütüyordu. İşçiler **ağır** kasaları kamyona taşıyor, ustabaşı listeyi kontrol ediyordu. Öğle arasında herkes bahçedeki **uzun** masaya oturdu. Yemekte, emekliliği yaklaşan usta herkese **tatlı** bir veda konuşması yaptı. Konuşmanın sonunda masadaki **ekmekleri** paylaştılar.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi mecaz anlamıyla kullanılmıştır?',
+        'Fabrikanın **bacası** sabahtan beri tütüyordu. İşçiler **ağır** kasaları kamyona taşıyor, ustabaşı listeyi kontrol ediyordu. Öğle arasında herkes bahçedeki **uzun** masaya oturdu. Yemekte, emekliliği yaklaşan usta herkese **tatlı** bir veda konuşması yaptı. Konuşmanın sonunda masadaki **ekmekleri** paylaştılar. Akşam olunca fabrikanın kapısında herkes ustayla tek tek vedalaştı.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi mecaz anlamıyla kullanılmıştır?',
         {
             'A': 'tatlı',
             'B': 'ekmekleri',
@@ -954,7 +954,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0072': patch(
-        'Usta bir öykücünün en önemli becerisi, söylemediklerini okura sezdirebilmesidir. Uzun yıllar öykü atölyeleri yöneten bir yazar, öğrencilerine sık sık "Öykünün gücü, yazmadığın cümlelerdedir." derdi. Gerçekten de iyi bir öykü bittiğinde okur, metinde açıkça yer almayan bir duyguyla baş başa kalır.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
+        'Usta bir öykücünün en önemli becerisi, söylemediklerini okura sezdirebilmesidir. Uzun yıllar öykü atölyeleri yöneten bir yazar, öğrencilerine sık sık "Öykünün gücü, yazmadığın cümlelerdedir." derdi. Gerçekten de iyi bir öykü bittiğinde okur, metinde açıkça yer almayan bir duyguyla baş başa kalır. Okurun zihninde yankılanan bu sessizlik, öykünün belki de en güçlü cümlesidir.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
         {
             'A': 'Tanımlama',
             'B': 'Karşılaştırma',
@@ -967,7 +967,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0073': patch(
-        'Kâğıt kitap, okura sayfalar arasında rahatça gidip gelme ve kenarına not alma imkânı verir. Elektronik kitap ise yüzlerce eseri tek bir cihazda taşımayı ve yazı boyutunu dilediğince ayarlamayı mümkün kılar. Biri dokunma ve sahiplenme duygusuyla, öteki pratikliğiyle öne çıkar.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
+        'Kâğıt kitap, okura sayfalar arasında rahatça gidip gelme ve kenarına not alma imkânı verir. Elektronik kitap ise yüzlerce eseri tek bir cihazda taşımayı ve yazı boyutunu dilediğince ayarlamayı mümkün kılar. Biri dokunma ve sahiplenme duygusuyla, öteki pratikliğiyle öne çıkar. Kâğıt kitap uzun ekran okumasının yarattığı göz yorgunluğuna yol açmazken elektronik kitap, uzun yolculuklarda çantayı ağırlaştırmadan bir kitaplığı yanınızda taşımanızı sağlar.\n\nBu parçada düşünceyi geliştirmek için ağırlıklı olarak aşağıdakilerden hangisine başvurulmuştur?',
         {
             'A': 'Karşılaştırma',
             'B': 'Tanımlama',
@@ -1006,7 +1006,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0076': patch(
-        'Sabahın ilk ışıkları limana vurduğunda kayıklar, durgun suyun üstünde hafifçe sallanıyordu. Rıhtım boyunca dizilmiş ağların arasından tuz ve yosun kokusu yükseliyor, martılar balıkçıların başında halkalar çiziyordu. Uzakta, sisin içinden adanın gri silueti belli belirsiz seçiliyordu.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        'Sabahın ilk ışıkları limana vurduğunda kayıklar, durgun suyun üstünde hafifçe sallanıyordu. Rıhtım boyunca dizilmiş ağların arasından tuz ve yosun kokusu yükseliyor, martılar balıkçıların başında halkalar çiziyordu. Uzakta, sisin içinden adanın gri silueti belli belirsiz seçiliyordu. İskelenin ucundaki yaşlı balıkçı, kırışık elleriyle ağlarını sabırla örüyor, arada bir başını kaldırıp ufka bakıyordu.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
         {
             'A': 'Öyküleme',
             'B': 'Açıklama',
@@ -1019,7 +1019,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0077': patch(
-        'Kapıyı açtığında karşısında yıllardır görmediği okul arkadaşını buldu. Bir an ne diyeceğini bilemedi, sonra kenara çekilip onu içeri buyur etti. Mutfakta çay demlenirken eski fotoğrafları çıkardılar ve saatlerce o günleri konuştular. Gece yarısına doğru arkadaşı kalkarken yeniden görüşmek için birbirlerine söz verdiler.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
+        'Kapıyı açtığında karşısında yıllardır görmediği okul arkadaşını buldu. Bir an ne diyeceğini bilemedi, sonra kenara çekilip onu içeri buyur etti. Mutfakta çay demlenirken eski fotoğrafları çıkardılar ve saatlerce o günleri konuştular. Gece yarısına doğru arkadaşı kalkarken yeniden görüşmek için birbirlerine söz verdiler. Ertesi sabah kapının önünde, arkadaşının bıraktığı küçük bir not ile eski bir fotoğraf buldu.\n\nBu parçanın anlatımında aşağıdakilerden hangisi ağır basmaktadır?',
         {
             'A': 'Betimleme',
             'B': 'Açıklama',
@@ -1032,7 +1032,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0078': patch(
-        'Bir kenti tanımak için müzelerini gezmek yetmez. Asıl kent; pazar yerlerinde, mahalle kahvelerinde, akşamüstü dolan otobüslerde yaşar. Rehber kitaplar size kentin yıllar önce nasıl olduğunu anlatır, ama bugün nasıl soluk aldığını ancak sokaklarında dolaşırsanız öğrenebilirsiniz.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
+        'Bir kenti tanımak için müzelerini gezmek yetmez. Asıl kent; pazar yerlerinde, mahalle kahvelerinde, akşamüstü dolan otobüslerde yaşar. Rehber kitaplar size kentin yıllar önce nasıl olduğunu anlatır, ama bugün nasıl soluk aldığını ancak sokaklarında dolaşırsanız öğrenebilirsiniz. Bir kentin sesini, kokusunu ve insanlarının birbirine nasıl davrandığını öğrenmek için bir fırının önünde sıraya girmek, çoğu zaman bir müzede saatler geçirmekten daha öğreticidir.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
         {
             'A': 'Kent, gündelik hayatında tanınır.',
             'B': 'Müzeler, kentlerin en ilgi çekici yerleridir.',
@@ -1045,7 +1045,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0079': patch(
-        'Usta bir çömlekçinin elinde çamur, birkaç dakikada zarif bir vazoya dönüşür. İzleyene bu iş kolay görünür. Oysa o birkaç dakikanın ardında, yüzlerce kez çöken çamurlar ve yılların sabrı vardır. Kolay görünen her ustalık, görünmeyen uzun bir emeğin ürünüdür.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
+        'Usta bir çömlekçinin elinde çamur, birkaç dakikada zarif bir vazoya dönüşür. İzleyene bu iş kolay görünür. Oysa o birkaç dakikanın ardında, yüzlerce kez çöken çamurlar ve yılların sabrı vardır. Ustanın parmakları, çamurun ne zaman direneceğini ne zaman teslim olacağını yıllar içinde öğrenmiştir. Kolay görünen her ustalık, görünmeyen uzun bir emeğin ürünüdür.\n\nBu parçada asıl anlatılmak istenen aşağıdakilerden hangisidir?',
         {
             'A': 'Çömlekçilik kısa sürede öğrenilebilecek bir zanaattir.',
             'B': 'Ustalık emekle kazanılır.',
@@ -1058,7 +1058,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0080': patch(
-        'Bir yapıtı eleştirirken amaç onu küçümsemek değil, okura yapıtın güçlü ve zayıf yanlarını gösterebilmektir. İyi bir eleştirmen kişisel beğenisini gerekçeleriyle ortaya koyar ve okuru kendi yargısına ulaşması için donatır. Gerekçesiz övgü de gerekçesiz yergi de okura bir şey kazandırmaz.\n\nBu parçada asıl vurgulanan düşünce aşağıdakilerden hangisidir?',
+        'Bir yapıtı eleştirirken amaç onu küçümsemek değil, okura yapıtın güçlü ve zayıf yanlarını gösterebilmektir. İyi bir eleştirmen kişisel beğenisini gerekçeleriyle ortaya koyar ve okuru kendi yargısına ulaşması için donatır. Gerekçesiz övgü de gerekçesiz yergi de okura bir şey kazandırmaz. Bir eleştirinin değeri, eleştirmenin yapıtı beğenip beğenmemesinden çok, okurun yapıta yeni bir gözle bakmasını sağlayıp sağlamamasıyla ölçülür.\n\nBu parçada asıl vurgulanan düşünce aşağıdakilerden hangisidir?',
         {
             'A': 'Eleştiri, gerekçelere dayanarak okuru aydınlatmalıdır.',
             'B': 'Eleştirmenler yapıtların zayıf yanlarını öne çıkarmalıdır.',
@@ -1071,7 +1071,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0081': patch(
-        'Bildirim seslerinin gün boyu bölük pörçük ettiği bir zihin, derin düşünmeye zor geçer. Bir metni okurken ya da bir sorunu çözerken her kesinti, yeniden odaklanmak için ek bir çaba ister. Bu yüzden telefonu belirli saatlerde sessize almak, verimliliği artırmanın en ucuz yollarından biridir.\n\nBu parçanın ana düşüncesi aşağıdakilerden hangisidir?',
+        'Bildirim seslerinin gün boyu bölük pörçük ettiği bir zihin, derin düşünmeye zor geçer. Bir metni okurken ya da bir sorunu çözerken her kesinti, yeniden odaklanmak için ek bir çaba ister. Araştırmalar, bir bildirimden sonra eldeki işe tam olarak geri dönmenin dakikalar sürebildiğini gösteriyor. Bu yüzden telefonu belirli saatlerde sessize almak, verimliliği artırmanın en ucuz yollarından biridir.\n\nBu parçanın ana düşüncesi aşağıdakilerden hangisidir?',
         {
             'A': 'Telefonlar insan zihnine kalıcı zarar verir.',
             'B': 'Okuma alışkanlığı teknolojiyle birlikte azalmaktadır.',
@@ -1084,7 +1084,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0082': patch(
-        'Lale, Osmanlı kültüründe bir çiçekten öte, zevk ve inceliğin simgesiydi. 18. yüzyılın başlarında lale soğanları yüksek fiyatlarla alınıp satılır, bahçelerde lale şenlikleri düzenlenirdi. Çinilerden kumaşlara kadar pek çok süsleme sanatında da lale motifi sıkça kullanıldı.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
+        'Lale, Osmanlı kültüründe bir çiçekten öte, zevk ve inceliğin simgesiydi. 18. yüzyılın başlarında lale soğanları yüksek fiyatlarla alınıp satılır, bahçelerde lale şenlikleri düzenlenirdi. Çinilerden kumaşlara kadar pek çok süsleme sanatında da lale motifi sıkça kullanıldı. Bu dönemde lale, şiirlerde ve minyatürlerde de sıkça işlenen bir konu oldu; dönemin adı bile sonradan bu çiçekle anılır hâle geldi.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
         {
             'A': 'Lale soğanları yüksek fiyatlarla alınıp satılmıştır.',
             'B': 'Bahçelerde lale şenlikleri düzenlendiği olmuştur.',
@@ -1097,7 +1097,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0083': patch(
-        'Maraton koşucuları yarıştan önceki günlerde karbonhidrat ağırlıklı beslenir. Bunun amacı, kaslarda enerji kaynağı olarak kullanılan glikojen depolarını doldurmaktır. Yarışın son kilometrelerinde bu depolar tükendiğinde koşucu ani bir halsizlik yaşar; sporcular bu duruma "duvara çarpmak" der.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
+        'Maraton koşucuları yarıştan önceki günlerde karbonhidrat ağırlıklı beslenir. Bunun amacı, kaslarda enerji kaynağı olarak kullanılan glikojen depolarını doldurmaktır. Yarışın son kilometrelerinde bu depolar tükendiğinde koşucu ani bir halsizlik yaşar; sporcular bu duruma "duvara çarpmak" der. Bu nedenle uzun mesafe koşucuları yarış sırasında da enerji içecekleri ve jellerle karbonhidrat almaya özen gösterir.\n\nBu parçaya göre aşağıdakilerden hangisi söylenemez?',
         {
             'A': 'Glikojen kaslarda enerji kaynağı olarak kullanılır.',
             'B': 'Depoların tükenmesi ani bir halsizliğe yol açabilir.',
@@ -1110,7 +1110,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0084': patch(
-        "Çay, Türkiye'ye 20. yüzyılın başlarında Doğu Karadeniz'deki deneme üretimleriyle girdi. Bölgenin bol yağışlı iklimi ve asitli toprağı çay tarımına çok elverişliydi. Kısa sürede yaygınlaşan çay, bugün gündelik hayatın vazgeçilmez içeceği; misafir ağırlamanın ve sohbetin simgesi.\n\nBu parçada çayla ilgili aşağıdakilerden hangisine değinilmemiştir?",
+        "Çay, Türkiye'ye 20. yüzyılın başlarında Doğu Karadeniz'deki deneme üretimleriyle girdi. Bölgenin bol yağışlı iklimi ve asitli toprağı çay tarımına çok elverişliydi. Kısa sürede yaygınlaşan çay, bugün gündelik hayatın vazgeçilmez içeceği; misafir ağırlamanın ve sohbetin simgesi. Rize başta olmak üzere bölgedeki pek çok ailenin geçimi bugün çay tarımına ve çay fabrikalarına bağlıdır.\n\nBu parçada çayla ilgili aşağıdakilerden hangisine değinilmemiştir?",
         {
             'A': "Türkiye'ye geliş dönemine",
             'B': 'Yetiştiği bölgeye',
@@ -1136,20 +1136,20 @@ _PATCHES = {
     ),
     # düzey 3
     '0086': patch(
-        'Göç eden kuşlar yön bulmak için güneşin konumundan, yıldızlardan ve yerin manyetik alanından yararlanır. Araştırmacılar, bulutlu gecelerde bile yolunu şaşırmayan kuşların manyetik alanı algılayabildiğini gözlemlemiştir. Ancak şiddetli fırtınalar ve kentlerin yoğun ışıkları kuşların rotasından sapmasına yol açabilmektedir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        'Ormandaki pek çok ağaç, kökleri çevresinde yaşayan mantarlarla bir ortaklık kurar. Mantarların topraktaki ince ağları, ağacın tek başına ulaşamayacağı su ve mineralleri köklere taşır. Ağaç da fotosentezle ürettiği şekerin bir kısmını mantarlarla paylaşır. Araştırmacılar, bu ağlar sayesinde bazı ağaçların zor durumdaki komşularına besin aktarabildiğini gözlemlemiştir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
         {
-            'A': 'Kuşlar göçlerini gündüz saatleriyle sınırlar.',
-            'B': 'Kent ışıkları kuşların yön bulmasını kolaylaştırır.',
-            'C': 'Fırtınalar kuşları göç etmekten vazgeçirir.',
-            'D': 'Kuşlar yön bulurken birden çok ipucu kullanır.',
-            'E': 'Bulutlu havalarda kuşlar göç etmez.',
+            'A': 'Mantarlar ağaçların köklerine zarar vererek beslenir.',
+            'B': 'Mantarlar fotosentez yaparak kendi şekerini üretir.',
+            'C': 'Bu ortaklık genç fidanlarla sınırlı kalır.',
+            'D': 'Ağaç ve mantar bu ortaklıktan karşılıklı yarar sağlar.',
+            'E': 'Ağaçlar suya köklerinin yardımı olmadan ulaşır.',
         },
         'D',
-        'Parçada güneş, yıldızlar ve manyetik alan olmak üzere birden çok ipucu sayılıyor. Diğer seçenekler parçayla çelişiyor ya da parçada dayanağı yok.',
+        'Parçada mantarların ağaca su ve mineral taşıdığı, ağacın da ürettiği şekeri mantarlarla paylaştığı anlatılıyor; ilişki iki taraf için de yararlıdır. Diğer seçenekler parçayla çelişiyor ya da parçada dayanağı yok.',
     ),
     # düzey 3
     '0087': patch(
-        'Fiyatı düşen bir ürüne olan talebin artması beklenir. Ancak bazı lüks ürünlerde durum farklıdır: Fiyat düştüğünde ürün ayrıcalıklı olma niteliğini yitirdiği için bazı tüketiciler ondan uzaklaşır. Bu ürünlerde yüksek fiyat, tüketiciye bir statü göstergesi olarak çekici gelir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        'Fiyatı düşen bir ürüne olan talebin artması beklenir. Ancak bazı lüks ürünlerde durum farklıdır: Fiyat düştüğünde ürün ayrıcalıklı olma niteliğini yitirdiği için bazı tüketiciler ondan uzaklaşır. Bu ürünlerde yüksek fiyat, tüketiciye bir statü göstergesi olarak çekici gelir. Pahalı bir saat ya da çanta, birçok tüketici için zamanı göstermekten ya da eşya taşımaktan çok sahibinin konumunu anlatan bir işarettir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
         {
             'A': 'Lüks ürünlerin fiyatı düşürülmez.',
             'B': 'Bazı ürünlerde fiyat, ürünün anlamının bir parçasıdır.',
@@ -1162,7 +1162,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0088': patch(
-        'Antik çağda yazı, kil tabletlere sivri uçlu çubuklarla bastırılarak yazılırdı. Tabletler fırınlandığında binlerce yıl dayanabiliyordu. Bu sayede bugün o dönemin ticari anlaşmalarını, vergi kayıtlarını ve hatta öğrencilerin yazı alıştırmalarını okuyabiliyoruz.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
+        'Antik çağda yazı, kil tabletlere sivri uçlu çubuklarla bastırılarak yazılırdı. Tabletler fırınlandığında binlerce yıl dayanabiliyordu. Bu sayede bugün o dönemin ticari anlaşmalarını, vergi kayıtlarını ve hatta öğrencilerin yazı alıştırmalarını okuyabiliyoruz. Aynı dönemde papirüs gibi daha dayanıksız malzemelere yazılan metinlerin ise çok azı günümüze ulaşabilmiştir.\n\nBu parçadan aşağıdakilerin hangisi çıkarılabilir?',
         {
             'A': 'Antik çağda yazı bilenlerin sayısı çok fazlaydı.',
             'B': 'Kil tabletler devlet kayıtlarıyla sınırlı kalmıştır.',
@@ -1279,7 +1279,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0097': patch(
-        'Dedem, bahçedeki **yaşlı** cevizin altında oturmayı severdi. **Akşamları** oraya bir sandalye taşır, **uzun uzun** gökyüzünü seyrederdi. Bazen **bize** eski günlerden hikâyeler anlatır, sesi **yavaş yavaş** kısılırdı.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi sıfat olarak kullanılmıştır?',
+        'Dedem, bahçedeki **yaşlı** cevizin altında oturmayı severdi. **Akşamları** oraya bir sandalye taşır, **uzun uzun** gökyüzünü seyrederdi. Bazen **bize** eski günlerden hikâyeler anlatır, sesi **yavaş yavaş** kısılırdı. Onun anlattıklarını dinlerken zamanın nasıl geçtiğini anlamazdık.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi sıfat olarak kullanılmıştır?',
         {
             'A': 'Akşamları',
             'B': 'uzun uzun',
@@ -1292,7 +1292,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0098': patch(
-        'Kardeşim yeni işine **sıcak** bir sabah başladı. İlk gün **ağır** dosyaları arşive taşıdı. Öğle yemeğini iş yerinin **geniş** bahçesinde yedi. Başta çekingen davransa da akşama doğru iş arkadaşlarıyla arasındaki **buzlar** eridi. Eve **yorgun** ama mutlu döndü.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi mecaz anlamıyla kullanılmıştır?',
+        'Kardeşim yeni işine **sıcak** bir sabah başladı. İlk gün **ağır** dosyaları arşive taşıdı. Öğle yemeğini iş yerinin **geniş** bahçesinde yedi. Başta çekingen davransa da akşama doğru iş arkadaşlarıyla arasındaki **buzlar** eridi. Eve **yorgun** ama mutlu döndü. Akşam yemeğinde bize ilk iş gününü bütün ayrıntılarıyla anlattı.\n\nBu parçadaki kalın yazılmış sözcüklerden hangisi mecaz anlamıyla kullanılmıştır?',
         {
             'A': 'sıcak',
             'B': 'ağır',
@@ -1305,7 +1305,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0099': patch(
-        'Pazardan şunları aldık ( ) domates, biber, salatalık ve biraz peynir ( ) Eve dönerken annem sordu ( ) "Ekmek almayı unutmadınız, değil mi ( )"\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
+        'Pazardan şunları aldık ( ) domates, biber, salatalık ve biraz peynir ( ) Eve dönerken annem sordu ( ) "Ekmek almayı unutmadınız, değil mi ( )" Akşam yemeğinde hep birlikte salata hazırladık.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?',
         {
             'A': '(:) (.) (:) (?)',
             'B': '(;) (.) (,) (?)',
@@ -1318,7 +1318,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0100': patch(
-        "Toplantı saat 14 ( ) 30'da başladı ( ) Dr ( ) Ayşe Demir sunumunda üç konuya değindi ( ) maliyet, kalite ve teslim süresi ( )\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?",
+        "Toplantı saat 14 ( ) 30'da başladı ( ) Dr ( ) Ayşe Demir sunumunda üç konuya değindi ( ) maliyet, kalite ve teslim süresi ( ) Toplantının sonunda her konu için bir çalışma grubu oluşturuldu.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?",
         {
             'A': '(:) (.) (.) (:) (.)',
             'B': '(.) (.) (.) (:) (.)',
