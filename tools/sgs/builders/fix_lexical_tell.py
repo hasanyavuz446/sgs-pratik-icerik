@@ -201,7 +201,6 @@ TAM = [
     "muhasebe_standartlari/tms_2_stoklar.json",
     "muhasebe_standartlari/tms_37_karsiliklar.json",
     "muhasebe_standartlari/tms_38_modv.json",
-    "muhasebe_standartlari/tms_40_yatirim_amacli.json",
     "muhasebe_standartlari/tms_7_nakit_akis.json",
     "muhasebe_standartlari/tms_8_politikalar.json",
     "ticaret_hukuku/anonim_sirket.json",

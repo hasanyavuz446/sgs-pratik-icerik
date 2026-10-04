@@ -637,67 +637,6 @@ KAVRAM_UZAT = {
 
 
 
-# ── TMS 40 · Yatırım Amaçlı Gayrimenkuller ────────────────────────────────────
-TMS40_OZEL = {
-    "std-tms40-gen-0001": "Üretimde, hizmet arzında veya idari amaçla kullanılmak üzere elde tutulan gayrimenkuldür",
-    "std-tms40-gen-0002": "Yatırım amaçlı gayrimenkul ile sahibi tarafından kullanılan gayrimenkul arasında fark yoktur; ikisi de aynı biçimde muhasebeleştirilir",
-    "std-tms40-gen-0003": "Yatırım amaçlı gayrimenkul, işletmenin diğer varlıklarıyla birlikte ortak nakit akışı yaratır; bağımsız nakit akışı üretmez",
-    "std-tms40-gen-0005": "Gelecekteki kullanımı belirlenmemiş arsa her hâlde stok olarak sınıflandırılır; yatırım amaçlı gayrimenkul sayılmaz",
-    "std-tms40-gen-0006": "Faaliyet kiralamasıyla kiraya verilen bina her hâlde TMS 16 kapsamında sahibi tarafından kullanılan gayrimenkul sayılır",
-    "std-tms40-gen-0007": "Kiraya verilmek üzere elde tutulan boş bina, kiralama fiilen başlayana kadar stok olarak muhasebeleştirilir",
-    "std-tms40-gen-0009": "Sahibi tarafından kullanılan gayrimenkul de yatırım amaçlı gayrimenkul kapsamında değerlendirilir",
-    "std-tms40-gen-0010": "Finansal kiralamayla verilen gayrimenkul, kiraya verenin yatırım amaçlı gayrimenkulü olarak bilançosunda kalmaya devam eder",
-    "std-tms40-gen-0011": "Bir gayrimenkulün kısımları farklı amaçlarla kullanılsa dahi tamamı her hâlde yatırım amaçlı gayrimenkul sayılır",
-    "std-tms40-gen-0012": "Sunulan tamamlayıcı hizmetlerin önemi ne olursa olsun gayrimenkul her hâlde yatırım amaçlı gayrimenkul olarak sınıflandırılır",
-    "std-tms40-gen-0013": "Ana ortaklığın bağlı ortaklığına kiraladığı bina hem bireysel hem konsolide tablolarda yatırım amaçlı gayrimenkul sayılır",
-    "std-tms40-gen-0016": "Gelecekteki ekonomik yarar ve güvenilir ölçüm koşulları aranmaz; edinilen her gayrimenkul doğrudan muhasebeleştirilir",
-    "std-tms40-gen-0017": "Gerçeğe uygun değeriyle ölçülür; edinimle ilgili işlem maliyetleri doğrudan gider olarak yazılır",
-    "std-tms40-gen-0018": "İşletme açılış giderleri ve normal kayıp niteliğindeki tutarlar da yatırım amaçlı gayrimenkulün maliyetine dâhil edilir",
-    "std-tms40-gen-0020": "İşletme her yatırım amaçlı gayrimenkul için ölçüm yöntemini serbestçe ve dönemden döneme değiştirerek seçebilir",
-    "std-tms40-gen-0021": "Seçilen ölçüm yöntemi yalnızca yeni edinilen gayrimenkullere uygulanır; mevcut gayrimenkuller eski yöntemle ölçülür",
-    "std-tms40-gen-0022": "Gerçeğe uygun değerdeki değişimden doğan kazanç veya kayıp diğer kapsamlı gelirde muhasebeleştirilir",
-    "std-tms40-gen-0023": "Gerçeğe uygun değer yönteminde gayrimenkul için ayrıca amortisman ayrılır ve dönem gideri olarak yazılır",
-    "std-tms40-gen-0024": "Maliyet yönteminde gayrimenkul her raporlama döneminde gerçeğe uygun değerine getirilerek yeniden ölçülür",
-    "std-tms40-gen-0025": "Gerçeğe uygun değer yönteminden maliyet yöntemine geçiş serbesttir ve her zaman daha uygun bir sunum sağlar",
-    "std-tms40-gen-0026": "Gerçeğe uygun değer güvenilir ölçülemese dahi gayrimenkul her hâlde gerçeğe uygun değer yöntemiyle ölçülmeye devam eder",
-    "std-tms40-gen-0030": "Uygulama doğrudur; gerçeğe uygun değer yönteminde amortisman ayrılması standarda tümüyle uygundur",
-    "std-tms40-gen-0033": "Transferler işletmenin yönetim niyetindeki değişikliğe göre yapılır; kullanımda fiili bir değişiklik aranmaz",
-    "std-tms40-gen-0034": "Sahibi tarafından kullanılmaya başlanan yatırım amaçlı gayrimenkul stoklara transfer edilir",
-    "std-tms40-gen-0035": "Satış amacıyla geliştirilmeye başlanan gayrimenkul TMS 16 kapsamındaki maddi duran varlıklara transfer edilir",
-    "std-tms40-gen-0036": "Sahibi tarafından kullanımına son verilen gayrimenkul her hâlde stoklara transfer edilir",
-    "std-tms40-gen-0037": "Bir yatırım amaçlı gayrimenkul satış amacıyla geliştirilmeye başlandığında hemen stoklara transfer edilir",
-    "std-tms40-gen-0038": "Yatırım amaçlıdan sahibi tarafından kullanılana transferde varlığın ilk maliyet bedeli sonraki muhasebeleştirmeye esas alınır",
-    "std-tms40-gen-0039": "Sahibi tarafından kullanılandan gerçeğe uygun değere transferde ortaya çıkan fark doğrudan kâr veya zarara yazılır",
-    "std-tms40-gen-0040": "Stoklardan yatırım amaçlıya transferde gerçeğe uygun değer ile önceki defter değeri farkı doğrudan özkaynağa yansıtılır",
-    "std-tms40-gen-0041": "Maliyet yöntemi uygulanan işletmede transferler gayrimenkulün defter değerini gerçeğe uygun değerine getirir",
-    "std-tms40-gen-0046": "Yönetimin ileride kullanma niyeti oluştuğu anda gayrimenkul, fiili kullanım başlamasa dahi TMS 16'ya transfer edilir",
-    "std-tms40-gen-0047": "Yatırım amaçlı gayrimenkul yalnızca fiziksel olarak yıkıldığında finansal tablo dışı bırakılır",
-    "std-tms40-gen-0048": "Elden çıkarmadan doğan kazanç veya kayıp doğrudan özkaynakta muhasebeleştirilir; kâr veya zarara yansıtılmaz",
-    "std-tms40-gen-0051": "Maliyet yöntemini uygulayan işletme, gerçeğe uygun değeri dipnotlarda hiçbir hâlde açıklamaz",
-    "std-tms40-gen-0052": "Yatırım amaçlı gayrimenkullerin ölçümünde bağımsız değerleme uzmanı kullanılması her durumda gereklidir",
-    "std-tms40-gen-0053": "Uygulama doğrudur; gerçeğe uygun değerdeki artışın özkaynakta gösterilmesi standarda uygundur",
-    "std-tms40-gen-0054": "TMS 40 ile TMS 16 gerçeğe uygun değer yaklaşımları aynıdır; ikisinde de değer değişimi diğer kapsamlı gelirde gösterilir",
-    "std-tms40-gen-0055": "Yatırım amaçlı gayrimenkulün gerçeğe uygun değeri işletmenin kendi iç tahminlerine göre ölçülür; TFRS 13 uygulanmaz",
-    "std-tms40-gen-0056": "Yatırım amaçlı gayrimenkulle ilgili tüm sonraki harcamalar oluştukları dönemde doğrudan gider olarak yazılır",
-    "std-tms40-gen-0057": "İnşa veya geliştirme aşamasındaki gayrimenkul her hâlde stok olarak sınıflandırılır; yatırım amaçlı sayılmaz",
-    "std-tms40-gen-0059": "Otel binası, sunulan konaklama hizmetleri önemli olsa dahi her hâlde yatırım amaçlı gayrimenkul sayılır",
-}
-
-# tms_40'ta uzun-atma doğruyu %36 en-kısa yaptı; 10 soruda doğrunun altına
-# kısa-çarpıcı yanlış eklenerek denge kuruldu (sayısal/kısa-kategori dokunulmadı).
-TMS40_KISALT = {
-    "std-tms40-gen-0003": {"A": "Diğer varlıklarla ortak nakit akışı yaratır"},
-    "std-tms40-gen-0004": {"A": "Stok olarak sınıflandırılır"},
-    "std-tms40-gen-0008": {"A": "Yatırım amaçlı gayrimenkuldür"},
-    "std-tms40-gen-0009": {"B": "Yatırım amaçlı gayrimenkuldür"},
-    "std-tms40-gen-0017": {"A": "Gerçeğe uygun değerle ölçülür"},
-    "std-tms40-gen-0021": {"A": "Yalnızca yeni edinilenlere uygulanır"},
-    "std-tms40-gen-0023": {"A": "Normal amortisman ayrılır"},
-    "std-tms40-gen-0033": {"A": "Her raporlama döneminde yapılır"},
-    "std-tms40-gen-0036": {"A": "Stoklara transfer edilir"},
-    "std-tms40-gen-0055": {"A": "İşletmenin iç tahminine göre ölçülür"},
-}
-
 # ── TMS 1 · Finansal Tabloların Sunuluşu ──────────────────────────────────────
 TMS1_OZEL = {
     "std-tms1-gen-0003": "Tam finansal tablo seti yalnızca finansal durum tablosu ile kâr veya zarar tablosundan oluşur; nakit akış tablosu ve dipnotlar zorunlu değildir",
@@ -767,7 +706,6 @@ TMS8_KISALT = {
 
 KONFIG: dict[str, dict] = {
     "tms_21_kur_degisimi": {"atma_ozel": TMS21_OZEL, "uzat": TMS21_UZAT},
-    "tms_40_yatirim_amacli": {"atma_ozel": TMS40_OZEL, "kisalt": TMS40_KISALT},
     "tms_38_modv": {"atma_ozel": TMS38_OZEL, "kisalt": TMS38_KISALT},
     "tms_36_deger_dusuklugu": {"atma_ozel": TMS36_OZEL},
     "tms_16_mdv": {"atma_ozel": TMS16_OZEL, "uzat": TMS16_UZAT, "kisalt": TMS16_KISALT},
