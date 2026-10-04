@@ -27,18 +27,6 @@ APP_ROOT = ROOT.parent / "smmm_sgs_pratik" / "assets"
 
 
 PATCHES: dict[str, dict[str, dict[str, str]]] = {
-    "content/turkce/yazim_noktalama_anlatim.json": {
-        "turkce-yazim-gen-0023": {"C": "Zarf-fiil ekinin kullanımı anlatımı bozmuştur."},
-        "turkce-yazim-gen-0027": {"D": "Sıralı yüklemler arasında zaman uyumsuzluğu vardır."},
-        "turkce-yazim-gen-0033": {"B": "Neden-sonuç ilişkisi yanlış kurulmuştur."},
-        "turkce-yazim-gen-0039": {"D": "“Dolayı” sözcüğü gereksiz kullanılmıştır."},
-        "turkce-yazim-gen-0044": {"A": "“Çok geç” sözünde gereksiz sözcük vardır."},
-        "turkce-yazim-gen-0057": {"D": "“Sık sık” sözü anlamca çelişkilidir."},
-        "turkce-yazim-gen-0059": {"A": "Sıralı yüklemler arasında zaman uyumsuzluğu vardır."},
-        "turkce-yazim-gen-0051": {
-            "A": "Özne-yüklem uyumsuzluğu (öznenin yüklemle sayı ve kişi yönünden birbiriyle uymaması)"
-        },
-    },
     "content/maliyet_muhasebesi/maliyet_hacim_kar.json": {
         "mmuh-mhk-gen-0011": {"C": "Birim katkı payı ÷ sabit maliyet"},
     },
