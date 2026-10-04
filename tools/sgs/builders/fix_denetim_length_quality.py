@@ -63,20 +63,6 @@ CORRECT = {
         "den-rapor-gen-0032": "Tablolar tüm önemli yönleriyle geçerli çerçeveye uygunsa",
         "den-rapor-gen-0033": "Tabloların çerçeveye uygun sunulup sunulmadığına ilişkin görüş",
     },
-    "denetim/denetim_ornekleme.json": {
-        "den-ornek-gen-0001": "Kütlenin tamamından azını test ederek bütünü hakkında sonuç çıkarma",
-        "den-ornek-gen-0003": "Örneklem nedeniyle tüm kütle incelenseydi ulaşılacak sonuçtan sapma riski",
-        "den-ornek-gen-0008": "Örneklem kütleyi temsil etmeli ve kütleye ilişkin sonuç sağlamalıdır",
-        "den-ornek-gen-0009": "Az sayıda, büyük tutarlı veya tek tek önemli birimlerin bulunduğu durumlarda",
-        "den-ornek-gen-0016": "Kabul edilebilir risk ve tolere edilebilir hata azaldıkça örneklem büyür",
-        "den-ornek-gen-0017": "Kütle sonucunu değiştirmeden kabul edilebilecek en yüksek sapma",
-        "den-ornek-gen-0018": "Kontrolün işleyip işlemediğini sınayan nitelik örneklemesi",
-        "den-ornek-gen-0019": "Parasal yanlışlığı sınayan değişken örneklemesi",
-        "den-ornek-gen-0023": "Kontrol riskini yükseltip maddi doğrulamayı artırabilir",
-        "den-ornek-gen-0029": "Örneklemin kütleyi temsil etmemesi",
-        "den-ornek-gen-0030": "Sapma oranı sınırın altındaysa kontrole güveni destekler",
-        "den-ornek-gen-0031": "Uygulanan prosedür, elde edilen kanıt ve sonuçları belgeleyen kayıtlar",
-    },
 }
 
 

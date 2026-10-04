@@ -35,14 +35,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "A": "Analitik prosedür (tutarın geçmiş dönem eğilimi ve önceki yıl tutarıyla karşılaştırılması)"
         },
     },
-    "content/denetim/denetim_ornekleme.json": {
-        "den-ornek-gen-0021": {
-            "B": "Kütlenin tabakalanması (benzer birimlere göre alt gruplara ayrılması ve ayrı değerlendirilmesi)"
-        },
-        "den-ornek-gen-0053": {
-            "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
-        },
-    },
 }
 
 
