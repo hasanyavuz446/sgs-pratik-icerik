@@ -198,7 +198,6 @@ TAM = [
     "muhasebe_standartlari/tms_16_mdv.json",
     "muhasebe_standartlari/tms_1_sunulus.json",
     "muhasebe_standartlari/tms_20_devlet_tesvik.json",
-    "muhasebe_standartlari/tms_23_borclanma_maliyetleri.json",
     "muhasebe_standartlari/tms_2_stoklar.json",
     "muhasebe_standartlari/tms_37_karsiliklar.json",
     "muhasebe_standartlari/tms_38_modv.json",
