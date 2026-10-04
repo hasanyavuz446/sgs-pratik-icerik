@@ -158,6 +158,18 @@ kök medyan **150**, olumsuz kök **%37**, numaralı cümle/öncül **%12**, par
   (eski pakette zarf-fiil grubundan sonra virgül bir soruda yanlış, ötekinde doğru sayılıyordu).
   Tartışmalı kullanımlar (zarf-fiilden sonra virgül, `bu yüzden` öncesi noktalı virgül) sorulmaz.
 
+- **Şık cümleleri gerçek sınav uzunluğunda** (2026-10-05 ölçümü): paragraf dışı Türkçe sorularının
+  %87'sinde şıklar tam cümledir ve medyanı ~68 karakterdir; 30 karakterlik basit cümleler aranan
+  özelliği tek bakışta gösterir. Cümleyi uzatırken aranan özelliğin ikinci bir şıkka sızmadığını
+  tek tek denetle (ör. "-dık" ekindeki yumuşama, "az önce"de zarfın zarfı nitelemesi, "birlikte" edatı).
+- Paragraf payı %38'dir; paragraf paketi 100 sorudur (diğer Türkçe paketleri 60).
+
+### Atatürk İlkeleri (16–20): şık kısa, kök bilgi girişli
+
+Gerçek profil (80 soru): kök medyanı 123, şık medyanı 18,5, köklerin %18'i bir bilgi cümlesiyle
+açılır ("… kurulmuştur. Buna göre …"). Bilgi girişi cevabı ele vermemeli; ad, yıl ya da
+kurum sayan girişler başka bir sorunun cevabını da sızdırabilir (Karışık Test).
+
 ### Yabancı Dil (21–30): tanım sorusu yok, cümle içi boşluk + cümle tamamlama
 
 2021–2026'nın 16 kitapçığından (160 soru) ölçüldü, 2026-10-01'de üç konu buna göre

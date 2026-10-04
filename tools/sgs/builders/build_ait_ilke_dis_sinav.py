@@ -102,7 +102,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        'Cumhuriyet döneminde kurulan ilk muhalefet partisi aşağıdakilerden hangisidir?',
+        "Cumhuriyetin ilk yıllarında çok partili hayata geçiş denemeleri yapılmış, bazı milletvekilleri Cumhuriyet Halk Fırkası'ndan ayrılarak yeni bir parti kurmuştur.\n\nCumhuriyet döneminde kurulan ilk muhalefet partisi aşağıdakilerden hangisidir?",
         {
             'A': 'Demokrat Parti',
             'B': 'Cumhuriyet Halk Fırkası',
@@ -128,7 +128,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        "Hatay Meclisi Türkiye'ye katılma kararını hangi yıl almıştır?",
+        "Fransa'nın Suriye'den çekilme kararı üzerine Hatay sorunu gündeme gelmiş ve 1938'de bağımsız Hatay Devleti kurulmuştu.\n\nHatay Meclisi Türkiye'ye katılma kararını hangi yıl almıştır?",
         {
             'A': '1936',
             'B': '1940',
@@ -141,7 +141,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        "Balkan Antantı'nın kurulmasında aşağıdakilerden hangisi etkili olmuştur?",
+        "Balkan Antantı, 1934 yılında Balkan devletleri arasında imzalanan ve bölgedeki mevcut sınırların korunmasını amaçlayan bir ittifaktır.\n\nBalkan Antantı'nın kurulmasında aşağıdakilerden hangisi etkili olmuştur?",
         {
             'A': 'Musul sorununun çözülmesi',
             'B': "Sovyetler Birliği'nin dağılması",
@@ -258,7 +258,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        'Montrö Boğazlar Sözleşmesi ile ilgili aşağıdakilerden hangisi söylenemez?',
+        "Lozan Antlaşması'yla Boğazlar uluslararası bir komisyonun denetimine bırakılmış ve bölge askerden arındırılmıştı. 1930'larda artan savaş tehlikesi, Türkiye'yi bu düzeni değiştirmek için girişimde bulunmaya yöneltti.\n\nMontrö Boğazlar Sözleşmesi ile ilgili aşağıdakilerden hangisi söylenemez?",
         {
             'A': 'Boğazlar bölgesinin silahlandırılmasına izin verilmiştir.',
             'B': 'Sözleşme 1936 yılında imzalanmıştır.',
@@ -336,7 +336,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        "Türkiye Milletler Cemiyeti'ne hangi yıl üye olmuştur?",
+        "Milletler Cemiyeti, I. Dünya Savaşı'ndan sonra uluslararası barışı korumak amacıyla kurulmuştu; Türkiye ise barışçı dış politikası doğrultusunda bu örgüte davet üzerine katıldı.\n\nTürkiye Milletler Cemiyeti'ne hangi yıl üye olmuştur?",
         {
             'A': '1932',
             'B': '1923',
@@ -362,7 +362,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Musul sorunu hangi antlaşmayla sonuçlanmıştır?',
+        "Lozan Barış Konferansı'nda çözülemeyen Musul sorununun İngiltere ile ikili görüşmelerle çözülmesi kararlaştırılmış, sonuç alınamayınca konu Milletler Cemiyeti'ne götürülmüştü.\n\nMusul sorunu hangi antlaşmayla sonuçlanmıştır?",
         {
             'A': 'Mudanya Ateşkes Antlaşması',
             'B': 'Lozan Barış Antlaşması',
@@ -388,7 +388,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Laiklik ilkesi hangi yıl anayasaya girmiştir?',
+        'Laiklik ilkesi, halifeliğin kaldırılmasıyla başlayan bir süreç sonunda devletin temel niteliklerinden biri olarak anayasada da yer aldı.\n\nLaiklik ilkesi hangi yıl anayasaya girmiştir?',
         {
             'A': '1934',
             'B': '1924',
@@ -531,7 +531,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        "Lozan'dan sonra gündeme gelen yabancı okullar sorunu nasıl çözülmüştür?",
+        "Kapitülasyonlar döneminde yabancı okullar Osmanlı Devleti'nin denetimi dışında kalmış, bazıları siyasi faaliyetlerin merkezi hâline gelmişti.\n\nLozan'dan sonra gündeme gelen yabancı okullar sorunu nasıl çözülmüştür?",
         {
             'A': 'Okullar uluslararası bir komisyona devredilmiştir.',
             'B': "Okullar Milletler Cemiyeti'nin denetimine bırakılmıştır.",
@@ -609,7 +609,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "Cumhuriyet'in ilk başbakanı aşağıdakilerden hangisidir?",
+        "29 Ekim 1923'te Cumhuriyetin ilan edilmesinin ardından Mustafa Kemal cumhurbaşkanı seçildi ve yeni hükümetin kurulması için çalışmalar başladı.\n\nCumhuriyet'in ilk başbakanı aşağıdakilerden hangisidir?",
         {
             'A': 'Refik Saydam',
             'B': 'Kâzım Karabekir',
@@ -622,7 +622,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "Mustafa Kemal'e yönelik İzmir Suikast Girişimi hangi yıl ortaya çıkarılmıştır?",
+        "Rejime karşı bazı çevreler, Mustafa Kemal'in bir yurt gezisi sırasında ona yönelik bir suikast planı hazırladı; plan, uygulanmadan önce ortaya çıkarıldı.\n\nMustafa Kemal'e yönelik İzmir Suikast Girişimi hangi yıl ortaya çıkarılmıştır?",
         {
             'A': '1934',
             'B': '1925',
@@ -687,7 +687,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        "Türk Medeni Kanunu'nun kabulü aşağıdaki ilkelerden hangisiyle en az ilgilidir?",
+        "Türk Medeni Kanunu, aile ve miras hukukunu dinî kurallardan ayırarak kadın ile erkeğe eşit haklar tanımıştır.\n\nTürk Medeni Kanunu'nun kabulü aşağıdaki ilkelerden hangisiyle en az ilgilidir?",
         {
             'A': 'Devletçilik',
             'B': 'Milliyetçilik',
@@ -791,7 +791,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        'Ankara hangi tarihte yeni Türk devletinin başkenti olmuştur?',
+        'Kurtuluş Savaşı boyunca millî mücadelenin merkezi olan Ankara, hem güvenli konumu hem de ulaşım imkânları nedeniyle yeni devletin yönetim merkezi olarak öne çıkıyordu.\n\nAnkara hangi tarihte yeni Türk devletinin başkenti olmuştur?',
         {
             'A': '3 Mart 1924',
             'B': '29 Ekim 1923',
@@ -804,7 +804,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0060': patch(
-        'Aşağıdakilerden hangisi halkçılık ilkesinin amaçlarından biri değildir?',
+        'Halkçılık, toplumda kişiye, aileye ya da zümreye ayrıcalık tanınmamasını ve devlet yönetiminin halkın yararına işlemesini esas alır.\n\nAşağıdakilerden hangisi halkçılık ilkesinin amaçlarından biri değildir?',
         {
             'A': 'Sınıf ayrıcalıklarını ortadan kaldırmak',
             'B': 'Toplumsal dayanışmayı güçlendirmek',

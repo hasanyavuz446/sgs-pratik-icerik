@@ -115,7 +115,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        'Latin alfabesine dayalı yeni Türk harfleri hangi yıl kabul edilmiştir?',
+        'Yeni Türk harfleri kabul edildikten sonra halka okuma yazma öğretmek amacıyla Millet Mektepleri açıldı.\n\nLatin alfabesine dayalı yeni Türk harfleri hangi yıl kabul edilmiştir?',
         {
             'A': '1928',
             'B': '1931',
@@ -206,7 +206,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        'Türk kadınlarına belediye seçimlerinde seçme ve seçilme hakkı hangi yıl tanınmıştır?',
+        'Kadınların siyasal haklarını kazanması aşamalı bir süreç içinde gerçekleşti; önce yerel yönetimlerde, ardından muhtarlık ve milletvekilliği seçimlerinde haklar tanındı.\n\nTürk kadınlarına belediye seçimlerinde seçme ve seçilme hakkı hangi yıl tanınmıştır?',
         {
             'A': '1928',
             'B': '1930',
@@ -284,7 +284,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0020': patch(
-        'Cumhuriyet döneminin ilk anayasası hangi yıl kabul edilmiştir?',
+        "Teşkilat-ı Esasiye Kanunu, Kurtuluş Savaşı koşullarında 1921'de hazırlanmış bir olağanüstü dönem anayasasıydı; Cumhuriyetin ilanından sonra yeni ve kapsamlı bir anayasa gerekli görüldü.\n\nBuna göre Cumhuriyet döneminin ilk anayasası hangi yıl kabul edilmiştir?",
         {
             'A': '1924',
             'B': '1928',
@@ -336,7 +336,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'Halifeliğin kaldırılmasının temel amacı aşağıdakilerden hangisidir?',
+        "Saltanatın kaldırılmasından sonra da varlığını sürdüren halifelik makamı, yeni rejime karşı olanların umut bağladığı bir odak hâline gelmişti.\n\nBuna göre 3 Mart 1924'te halifeliğin kaldırılmasının temel amacı aşağıdakilerden hangisidir?",
         {
             'A': 'Laik devlet düzenine geçişin önünü açmak',
             'B': 'Saltanatı ve halifeliği tek makamda birleştirmek',
@@ -375,7 +375,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        'Aşağıdakilerden hangisi hukuk alanındaki inkılaplardan biridir?',
+        "Osmanlı Devleti'nde hukuk alanında şer'i ve örfi hukuk ile Batı'dan alınan kanunlar bir arada uygulanıyor, bu durum hukuk birliğinin sağlanmasını zorlaştırıyordu.\n\nAşağıdakilerden hangisi hukuk alanındaki inkılaplardan biridir?",
         {
             'A': 'Latin harflerinin kabulü',
             'B': "Şapka Kanunu'nun çıkarılması",
@@ -388,7 +388,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Aşağıdakilerden hangisi siyasi alandaki inkılaplardan biridir?',
+        'Atatürk inkılapları siyasi, hukuki, eğitim-kültür, toplumsal ve ekonomik alanlarda gerçekleştirilmiş; siyasi alandaki düzenlemeler devletin yönetim biçimini ve egemenliğin kaynağını değiştirmeye yönelmiştir.\n\nAşağıdakilerden hangisi siyasi alandaki inkılaplardan biridir?',
         {
             'A': 'Ölçü ve tartıların değiştirilmesi',
             'B': 'Şapka Kanunu',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Aşağıdakilerden hangisi ekonomik alandaki inkılaplardan biridir?',
+        'Cumhuriyetin ilk yıllarında ekonomi büyük ölçüde tarıma dayanıyor, sanayi ve ticaret alanında ulusal sermaye yetersiz kalıyordu.\n\nAşağıdakilerden hangisi ekonomik alandaki inkılaplardan biridir?',
         {
             'A': 'Halifeliğin kaldırılması',
             'B': "Teşvik-i Sanayi Kanunu'nun çıkarılması",
@@ -466,7 +466,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0034': patch(
-        'Aşağıdaki inkılaplardan hangisi eğitim ve kültür alanıyla ilgilidir?',
+        'Atatürk, eğitim ve kültür alanındaki düzenlemelerle toplumun okuryazarlık düzeyini yükseltmeyi ve millî kültürü güçlendirmeyi amaçlamıştır.\n\nAşağıdaki inkılaplardan hangisi eğitim ve kültür alanıyla ilgilidir?',
         {
             'A': 'Kabotaj Kanunu',
             'B': 'Saltanatın kaldırılması',
@@ -505,7 +505,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        "Aşağıdakilerden hangisi Atatürk Dönemi'nde kurulan bir bankadır?",
+        "Cumhuriyetin ilk yıllarında ulusal sermayeyi güçlendirmek ve ekonomik kalkınmayı finanse etmek amacıyla millî bankalar kurulmasına önem verildi.\n\nAşağıdakilerden hangisi Atatürk Dönemi'nde kurulan bir bankadır?",
         {
             'A': 'Reji Bankası',
             'B': 'Galata Bankerleri',
@@ -544,7 +544,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        'Saltanatın kaldırılmasıyla aşağıdakilerden hangisi sona ermiştir?',
+        "1 Kasım 1922'de TBMM'nin aldığı kararla saltanat ile halifelik birbirinden ayrıldı ve saltanat kaldırıldı.\n\nBuna göre saltanatın kaldırılmasıyla aşağıdakilerden hangisi sona ermiştir?",
         {
             'A': 'Halifelik kurumu',
             'B': 'Bakanlar Kurulu',
@@ -557,7 +557,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Aşağıdaki inkılaplardan hangisi doğrudan laiklik ilkesiyle ilgilidir?',
+        'Laiklik, din ve devlet işlerinin birbirinden ayrılmasını ve devletin bütün inançlara eşit uzaklıkta durmasını ifade eder.\n\nAşağıdaki inkılaplardan hangisi doğrudan laiklik ilkesiyle ilgilidir?',
         {
             'A': 'Ölçü sisteminin değiştirilmesi',
             'B': 'Soyadı Kanunu',
@@ -570,7 +570,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "1924 Anayasası'nda benimsenen egemenlik anlayışı aşağıdakilerden hangisidir?",
+        '1924 Anayasası, Cumhuriyetin ilanından sonra devletin temel yapısını düzenleyen ilk kapsamlı anayasa olarak kabul edildi.\n\nBu anayasada benimsenen egemenlik anlayışı aşağıdakilerden hangisidir?',
         {
             'A': 'Egemenliğin yabancı devletlerde olması',
             'B': 'Egemenliğin padişah ve meclis arasında paylaşılması',
@@ -609,7 +609,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        'Tevhid-i Tedrisat Kanunu ile aşağıdakilerden hangisi sağlanmıştır?',
+        "Osmanlı Devleti'nin son döneminde medreseler, Batı tarzı okullar, azınlık ve yabancı okulları farklı anlayışlarla eğitim veriyor; bu durum toplumda düşünce birliğini zayıflatıyordu.\n\nBu sorunu çözmek amacıyla 3 Mart 1924'te kabul edilen Tevhid-i Tedrisat Kanunu ile aşağıdakilerden hangisi sağlanmıştır?",
         {
             'A': 'Yabancı okulların kapatılması',
             'B': 'Eğitimin dine bağlanması',
@@ -674,7 +674,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "Türk Medeni Kanunu'nun kabulüyle aşağıdakilerden hangisi sağlanmıştır?",
+        "17 Şubat 1926'da kabul edilen Türk Medeni Kanunu, aile hukukundan miras hukukuna kadar pek çok alanda yeni düzenlemeler getirmiştir.\n\nTürk Medeni Kanunu'nun kabulüyle aşağıdakilerden hangisi sağlanmıştır?",
         {
             'A': 'Medeni hukukta dinî kuralların korunması',
             'B': 'Hukukta birlik ve kadın-erkek eşitliği',
