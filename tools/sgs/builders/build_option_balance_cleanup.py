@@ -43,10 +43,6 @@ PATCHES: dict[str, dict[str, dict[str, str]]] = {
             "C": "Çalışma kâğıtlarının kamuoyuna eksiksiz açıklanmasını ve herkesçe erişilebilir olmasını sağlamak"
         },
     },
-    "content/ataturk_ilkeleri/ataturk_inkilaplari.json": {
-        "ait-inkilap-gen-0010": {"A": "Millet Mektepleri teşkilatı"},
-        "ait-inkilap-gen-0011": {"A": "1925 yılı"},
-    },
 }
 
 
