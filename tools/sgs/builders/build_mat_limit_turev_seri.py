@@ -138,17 +138,15 @@ q("lim(x→∞) (√(x² + 3x) − x) limitinin değeri kaçtır?",
   verify=(sp.limit(sp.sqrt(x**2 + 3*x) - x, x, oo), sp.Rational(3, 2)))
 
 # ══ C. Trigonometrik limit (5) ═══════════════════════════════════════════════
-q("lim(x→0) (sin 3x)/x limitinin değeri kaçtır?",
-  "3", ["1", "0", "1/3", "Limit yoktur"],
-  "sin u / u ifadesinin u → 0 limiti 1'dir. İfade (sin 3x)/(3x) · 3 biçiminde yazılır; "
-  "birinci çarpanın limiti 1 olduğundan sonuç 3'tür.",
-  verify=(sp.limit(sp.sin(3*x)/x, x, 0), 3))
+q("a bir gerçel sayı olmak üzere lim(x→0) (sin ax)/(x² + 2x) = 3 olduğuna göre a kaçtır?",
+  "6", ["3", "3/2", "9", "12"],
+  "x → 0 iken sin ax ≈ ax ve x² + 2x = x(x + 2). Limit a/(0 + 2) = a/2 = 3, buradan a = 6.",
+  verify=(sp.limit(sp.sin(6*x)/(x**2 + 2*x), x, 0), 3))
 
-q("lim(x→0) (tan 5x)/(2x) limitinin değeri kaçtır?",
-  "5/2", ["2/5", "5", "1/2", "0"],
-  "tan u / u ifadesinin u → 0 limiti 1'dir. İfade (tan 5x)/(5x) · (5/2) biçiminde yazılır; "
-  "birinci çarpanın limiti 1 olduğundan sonuç 5/2'dir.",
-  verify=(sp.limit(sp.tan(5*x)/(2*x), x, 0), sp.Rational(5, 2)))
+q("lim(x→0) (tan 5x + sin 3x)/(2x) limitinin değeri kaçtır?",
+  "4", ["5/2", "3/2", "8", "15/2"],
+  "x → 0 iken tan 5x ≈ 5x ve sin 3x ≈ 3x. Limit (5x + 3x)/(2x) = 8/2 = 4.",
+  verify=(sp.limit((sp.tan(5*x) + sp.sin(3*x))/(2*x), x, 0), 4))
 
 q("lim(x→0) (1 − cos 2x)/x² limitinin değeri kaçtır?",
   "2", ["1/2", "0", "1", "4"],
@@ -169,22 +167,20 @@ q("lim(x→0) (x · sin x)/(1 − cos x) limitinin değeri kaçtır?",
   verify=(sp.limit(x*sp.sin(x)/(1 - sp.cos(x)), x, 0), 2))
 
 # ══ D. Üstel ve logaritmik limit (5) ═════════════════════════════════════════
-q("lim(x→0) (e³ˣ − 1)/x limitinin değeri kaçtır?",
-  "3", ["1", "0", "1/3", "e³"],
-  "(eᵘ − 1)/u ifadesinin u → 0 limiti 1'dir. İfade (e³ˣ − 1)/(3x) · 3 biçiminde yazılır; "
-  "birinci çarpanın limiti 1 olduğundan sonuç 3'tür.",
-  verify=(sp.limit((sp.exp(3*x) - 1)/x, x, 0), 3))
+q("a bir gerçel sayı olmak üzere lim(x→0) (eᵃˣ − 1)/sin 2x = 2 olduğuna göre a kaçtır?",
+  "4", ["2", "1", "6", "8"],
+  "x → 0 iken eᵃˣ − 1 ≈ ax ve sin 2x ≈ 2x. Limit a/2 = 2, buradan a = 4.",
+  verify=(sp.limit((sp.exp(4*x) - 1)/sp.sin(2*x), x, 0), 2))
 
-q("lim(x→∞) (1 + 2/x)ˣ limitinin değeri kaçtır?",
-  "e²", ["e", "1", "2e", "∞"],
-  "(1 + a/x)ˣ ifadesinin x → ∞ limiti eᵃ'dır. Burada a = 2 olduğundan sonuç e²'dir.",
-  verify=(sp.limit((1 + 2/x)**x, x, oo), sp.exp(2)))
+q("a bir gerçel sayı olmak üzere lim(x→∞) (1 + a/x)^(3x) = e⁶ olduğuna göre a kaçtır?",
+  "2", ["3", "6", "1/2", "18"],
+  "lim(x→∞) (1 + a/x)ˣ = eᵃ olduğundan verilen limit e^(3a)'dır. 3a = 6 ve a = 2.",
+  verify=(sp.limit((1 + 2/x)**(3*x), x, oo), sp.exp(6)))
 
-q("lim(x→0) ln(1 + 5x)/x limitinin değeri kaçtır?",
-  "5", ["1", "0", "1/5", "ln5"],
-  "ln(1 + u)/u ifadesinin u → 0 limiti 1'dir. İfade ln(1 + 5x)/(5x) · 5 biçiminde yazılır; "
-  "birinci çarpanın limiti 1 olduğundan sonuç 5'tir.",
-  verify=(sp.limit(sp.log(1 + 5*x)/x, x, 0), 5))
+q("f(x) = ln(1 + 5x) ve g(x) = eˣ − 1 fonksiyonları için lim(x→0) f(x)/g(x) limitinin değeri kaçtır?",
+  "5", ["1/5", "1", "0", "e⁵"],
+  "x → 0 iken ln(1 + 5x) ≈ 5x ve eˣ − 1 ≈ x. Limit 5x/x = 5.",
+  verify=(sp.limit(sp.log(1 + 5*x)/(sp.exp(x) - 1), x, 0), 5))
 
 q("lim(x→1) (ln x)/(x − 1) limitinin değeri kaçtır?",
   "1", ["0", "e", "∞", "−1"],
@@ -216,11 +212,10 @@ q("f(x) = |x − 2| / (x − 2) fonksiyonunun x = 2 noktasındaki limiti için a
   "x < 2 için |x − 2| = 2 − x olduğundan soldan limit −1; x > 2 için |x − 2| = x − 2 "
   "olduğundan sağdan limit 1'dir. İki tek yönlü limit eşit olmadığından limit yoktur.")
 
-q("lim(x→0⁺) 1/x limitinin değeri kaçtır?",
-  "∞", ["0", "−∞", "1", "Limit 1'e eşittir"],
-  "x sıfıra sağdan yaklaşırken pozitif ve giderek küçülür; 1/x sınırsız büyür. "
-  "Bu nedenle sağdan limit ∞'dur.",
-  verify=(sp.limit(1/x, x, 0, "+"), oo))
+q("f(x) = (x + 1)/(x² − 1) fonksiyonu için lim(x→1⁺) f(x) ve lim(x→−1) f(x) limitleri sırasıyla aşağıdakilerden hangisidir?",
+  "∞ ve −1/2", ["−∞ ve −1/2", "∞ ve 0", "1/2 ve −1/2", "−∞ ve 1/2"],
+  "x ≠ −1 için f(x) = 1/(x − 1)'dir. x 1'e sağdan yaklaşırken payda pozitif kalarak sıfıra gider, limit ∞ olur. x → −1 için 1/(−1 − 1) = −1/2.",
+  verify=(sp.limit((x + 1)/(x**2 - 1), x, 1, "+"), oo))
 
 q("x ≠ 3 için f(x) = (x² − 9)/(x − 3) ve f(3) = k biçiminde tanımlanan f fonksiyonu x = 3 "
   "noktasında sürekli olduğuna göre k kaçtır?",
@@ -246,10 +241,10 @@ q("Bir f fonksiyonunun x = a noktasında sürekli olması için aşağıdakilerd
   "o noktadaki limiti vardır ve limit değeri fonksiyon değerine eşittir.")
 
 # ══ F. Türev kuralları (12) ══════════════════════════════════════════════════
-q("f(x) = x⁴ − 3x² + 5 olduğuna göre f′(2) kaçtır?",
-  "20", ["32", "12", "8", "44"],
-  "Kuvvet kuralı uygulanır: f′(x) = 4x³ − 6x. x = 2 yerine konur: 4·8 − 6·2 = 32 − 12 = 20.",
-  verify=(sp.diff(x**4 - 3*x**2 + 5, x).subs(x, 2), 20))
+q("f(x) = x⁴ − 3x² + 5 fonksiyonunun türevinin sıfır olduğu noktalardaki fonksiyon değerlerinin toplamı kaçtır?",
+  "21/2", ["5", "11/4", "13/2", "27/4"],
+  "f′(x) = 4x³ − 6x = 2x(2x² − 3) = 0 ise x = 0 veya x² = 3/2. f(0) = 5; x² = 3/2 için f = 9/4 − 9/2 + 5 = 11/4. İki simetrik nokta olduğundan toplam 5 + 2 · 11/4 = 21/2.",
+  verify=(sum((x**4 - 3*x**2 + 5).subs(x, r) for r in sp.solve(sp.diff(x**4 - 3*x**2 + 5, x), x)), sp.Rational(21, 2)))
 
 q("f(x) = (2x + 1)(x − 3) olduğuna göre f′(1) kaçtır?",
   "−1", ["1", "3", "−3", "5"],
@@ -263,29 +258,25 @@ q("f(x) = (3x − 1)/(x + 2) olduğuna göre f′(1) kaçtır?",
   "x = 1 yerine konur: 7/9.",
   verify=(sp.diff((3*x - 1)/(x + 2), x).subs(x, 1), sp.Rational(7, 9)))
 
-q("f(x) = (x² + 1)⁵ olduğuna göre f′(1) kaçtır?",
-  "160", ["80", "32", "10", "320"],
-  "Zincir kuralı uygulanır: f′(x) = 5(x² + 1)⁴ · 2x = 10x(x² + 1)⁴. "
-  "x = 1 yerine konur: 10·1·2⁴ = 10·16 = 160.",
-  verify=(sp.diff((x**2 + 1)**5, x).subs(x, 1), 160))
+q("f(x) = (x² + 1)⁵ ve g(x) = f(x)/(x² + 1)⁴ olduğuna göre f′(1) + g′(1) toplamı kaçtır?",
+  "162", ["160", "164", "82", "322"],
+  "f′(x) = 5(x² + 1)⁴ · 2x, f′(1) = 5 · 16 · 2 = 160. g(x) = x² + 1 olduğundan g′(1) = 2. Toplam 162.",
+  verify=(sp.diff((x**2 + 1)**5, x).subs(x, 1) + sp.diff(x**2 + 1, x).subs(x, 1), 162))
 
-q("f(x) = √(3x + 4) olduğuna göre f′(4) kaçtır?",
-  "3/8", ["3/4", "1/8", "4", "8/3"],
-  "Zincir kuralı uygulanır: f′(x) = 3 / (2√(3x + 4)). x = 4 için içerideki ifade 16 olur ve "
-  "karekökü 4'tür: f′(4) = 3/(2·4) = 3/8.",
-  verify=(sp.diff(sp.sqrt(3*x + 4), x).subs(x, 4), sp.Rational(3, 8)))
+q("f(x) = √(3x + 4) olmak üzere f(a) = 5 olduğuna göre f′(a) kaçtır?",
+  "3/10", ["3/8", "1/10", "3/5", "5/3"],
+  "3a + 4 = 25 olduğundan a = 7. f′(x) = 3/(2√(3x + 4)) ve f′(7) = 3/(2 · 5) = 3/10.",
+  verify=(sp.diff(sp.sqrt(3*x + 4), x).subs(x, 7), sp.Rational(3, 10)))
 
-q("f(x) = x³(x − 2) olduğuna göre f′(2) kaçtır?",
-  "8", ["24", "12", "0", "32"],
-  "İfade açılır: f(x) = x⁴ − 2x³ ve türevi f′(x) = 4x³ − 6x²'dir. "
-  "x = 2 yerine konur: 32 − 24 = 8.",
-  verify=(sp.diff(x**3*(x - 2), x).subs(x, 2), 8))
+q("f(x) = x³(x − 2) fonksiyonunun yerel minimum değeri kaçtır?",
+  "−27/16", ["−1", "0", "−27/8", "3/2"],
+  "f′(x) = 4x³ − 6x² = 2x²(2x − 3). x = 0'da türev işaret değiştirmez; x = 3/2'de negatiften pozitife geçer. f(3/2) = (27/8)(−1/2) = −27/16.",
+  verify=((x**3*(x - 2)).subs(x, sp.Rational(3, 2)), sp.Rational(-27, 16)))
 
-q("f(x) = 1/x² olduğuna göre f′(2) kaçtır?",
-  "−1/4", ["1/4", "−1/2", "−4", "1/8"],
-  "İfade üslü biçimde yazılır: f(x) = x⁻². Kuvvet kuralı: f′(x) = −2x⁻³ = −2/x³. "
-  "x = 2 yerine konur: −2/8 = −1/4.",
-  verify=(sp.diff(x**-2, x).subs(x, 2), sp.Rational(-1, 4)))
+q("f(x) = 1/x² eğrisine x = 1 apsisli noktada çizilen teğetin eğimi m, x = 2 apsisli noktada çizilen teğetin eğimi n olduğuna göre m/n oranı kaçtır?",
+  "8", ["4", "−8", "1/8", "2"],
+  "f′(x) = −2/x³. m = f′(1) = −2 ve n = f′(2) = −1/4. m/n = (−2)/(−1/4) = 8.",
+  verify=(sp.diff(1/x**2, x).subs(x, 1) / sp.diff(1/x**2, x).subs(x, 2), 8))
 
 q("f(x) = (x − 1)/(x + 1) olduğuna göre f′(0) kaçtır?",
   "2", ["1", "−1", "1/2", "−2"],
@@ -311,40 +302,36 @@ q("f(x) = √x · (x + 3) olduğuna göre f′(1) kaçtır?",
   "4/2 + 1 = 2 + 1 = 3.",
   verify=(sp.diff(sp.sqrt(x)*(x + 3), x).subs(x, 1), 3))
 
-q("f(x) = (2x² − x)³ olduğuna göre f′(1) kaçtır?",
-  "9", ["3", "27", "6", "12"],
-  "Zincir kuralı uygulanır: f′(x) = 3(2x² − x)²·(4x − 1). x = 1 için parantez içi 1, "
-  "son çarpan 3 olur: 3·1·3 = 9.",
+q("f(x) = (2x² − x)³ fonksiyonunun grafiğine x = 1 apsisli noktada çizilen teğetin denklemi aşağıdakilerden hangisidir?",
+  "y = 9x − 8", ["y = 9x + 1", "y = 3x − 2", "y = 9x − 1", "y = x + 8"],
+  "f(1) = 1. f′(x) = 3(2x² − x)²(4x − 1) ve f′(1) = 3 · 1 · 3 = 9. Teğet y − 1 = 9(x − 1), yani y = 9x − 8.",
   verify=(sp.diff((2*x**2 - x)**3, x).subs(x, 1), 9))
 
 # ══ G. Üstel/logaritmik/trigonometrik türev, teğet, ekstremum (8) ════════════
-q("y = e²ˣ olduğuna göre y′(0) kaçtır?",
-  "2", ["1", "0", "e²", "2e"],
-  "Zincir kuralı uygulanır: y′ = 2e²ˣ. x = 0 için e⁰ = 1 olduğundan y′(0) = 2'dir.",
-  verify=(sp.diff(sp.exp(2*x), x).subs(x, 0), 2))
+q("f(x) = e²ˣ fonksiyonunun grafiğine x = 0 apsisli noktada çizilen teğet doğrusunun y eksenini kestiği noktanın ordinatı ile x eksenini kestiği noktanın apsisinin toplamı kaçtır?",
+  "1/2", ["1", "3/2", "−1/2", "2"],
+  "f(0) = 1 ve f′(x) = 2e²ˣ olduğundan f′(0) = 2. Teğet y = 2x + 1'dir. y eksenini 1'de, x eksenini −1/2'de keser. Toplam 1 − 1/2 = 1/2.",
+  verify=(1 - sp.exp(0) / sp.diff(sp.exp(2*x), x).subs(x, 0), sp.Rational(1, 2)))
 
-q("y = ln(3x) olduğuna göre y′(2) kaçtır?",
-  "1/2", ["3/2", "1/6", "3", "1/3"],
-  "Logaritma özelliğinden ln(3x) = ln3 + ln x yazılır; sabitin türevi sıfırdır ve y′ = 1/x "
-  "olur. x = 2 yerine konur: 1/2.",
-  verify=(sp.diff(sp.log(3*x), x).subs(x, 2), sp.Rational(1, 2)))
+q("a bir gerçel sayı olmak üzere f(x) = ln(3x) + a·x fonksiyonu için f′(2) = 5/2 olduğuna göre a kaçtır?",
+  "2", ["5/2", "3", "1", "3/2"],
+  "ln(3x) = ln 3 + ln x olduğundan türevi 1/x'tir. f′(x) = 1/x + a ve f′(2) = 1/2 + a = 5/2, buradan a = 2.",
+  verify=(sp.solve(sp.diff(sp.log(3*x) + a*x, x).subs(x, 2) - sp.Rational(5, 2), a)[0], 2))
 
-q("y = x·eˣ olduğuna göre y′(0) kaçtır?",
-  "1", ["0", "2", "e", "−1"],
-  "Çarpım kuralı uygulanır: y′ = eˣ + x·eˣ = eˣ(1 + x). x = 0 için e⁰ = 1 ve parantez 1 "
-  "olduğundan y′(0) = 1'dir.",
-  verify=(sp.diff(x*sp.exp(x), x).subs(x, 0), 1))
+q("f(x) = x·eˣ fonksiyonunun azalan olduğu en geniş aralık aşağıdakilerden hangisidir?",
+  "(−∞, −1)", ["(−1, ∞)", "(−∞, 0)", "(0, ∞)", "(−∞, 1)"],
+  "f′(x) = eˣ + x·eˣ = (x + 1)eˣ. eˣ her zaman pozitif olduğundan f′(x) < 0 koşulu x + 1 < 0, yani x < −1 ile sağlanır.",
+  verify=(sp.solve(sp.diff(x*sp.exp(x), x), x)[0], -1))
 
-q("y = x²·ln x olduğuna göre y′(1) kaçtır?",
-  "1", ["0", "2", "e", "1/2"],
-  "Çarpım kuralı uygulanır: y′ = 2x·ln x + x²·(1/x) = 2x·ln x + x. x = 1 için ln1 = 0 "
-  "olduğundan y′(1) = 0 + 1 = 1'dir.",
-  verify=(sp.diff(x**2*sp.log(x), x).subs(x, 1), 1))
+q("f(x) = x²·ln x fonksiyonunun yerel minimum noktasının apsisi aşağıdakilerden hangisidir?",
+  "1/√e", ["1/e", "√e", "e", "1"],
+  "f′(x) = 2x·ln x + x = x(2ln x + 1). x > 0 için f′(x) = 0 ise ln x = −1/2 ve x = e^(−1/2) = 1/√e. Bu noktada türev negatiften pozitife geçtiği için yerel minimumdur.",
+  verify=(sp.solve(2*sp.log(x) + 1, x)[0], sp.exp(-sp.Rational(1, 2))))
 
-q("y = sin 2x olduğuna göre y′(0) kaçtır?",
-  "2", ["0", "1", "−2", "1/2"],
-  "Zincir kuralı uygulanır: y′ = 2cos 2x. x = 0 için cos0 = 1 olduğundan y′(0) = 2'dir.",
-  verify=(sp.diff(sp.sin(2*x), x).subs(x, 0), 2))
+q("f(x) = sin 2x + cos 2x fonksiyonunun [0, π/2] aralığındaki en büyük değeri kaçtır?",
+  "√2", ["1", "2", "√3", "1/2"],
+  "f′(x) = 2cos 2x − 2sin 2x = 0 ise tan 2x = 1 ve x = π/8. f(π/8) = √2/2 + √2/2 = √2; uç noktalarda f(0) = 1 ve f(π/2) = −1 olduğundan en büyük değer √2'dir.",
+  verify=(sp.sin(2*sp.pi/8) + sp.cos(2*sp.pi/8), sp.sqrt(2)))
 
 q("y = x² + 3x eğrisine (1, 4) noktasında çizilen teğetin eğimi kaçtır?",
   "5", ["4", "2", "3", "7"],
@@ -357,10 +344,10 @@ q("f(x) = x³ − 3x fonksiyonunun yerel maksimum değeri kaçtır?",
   "negatiftir; bu nokta yerel maksimumdur. Değer f(−1) = −1 + 3 = 2'dir.",
   verify=((x**3 - 3*x).subs(x, -1), 2))
 
-q("y = e^(x²) olduğuna göre y′(1) kaçtır?",
-  "2e", ["e", "2", "e²", "2e²"],
-  "Zincir kuralı uygulanır: y′ = 2x·e^(x²). x = 1 yerine konur: 2·1·e¹ = 2e.",
-  verify=(sp.diff(sp.exp(x**2), x).subs(x, 1), 2*sp.E))
+q("g(x) = e^(x²) ve h(x) = g(2x − 1) olduğuna göre h′(1) kaçtır?",
+  "4e", ["2e", "e", "4", "8e"],
+  "Zincir kuralıyla h′(x) = 2·g′(2x − 1) ve g′(t) = 2t·e^(t²). x = 1 için t = 1: h′(1) = 2 · 2 · 1 · e = 4e.",
+  verify=(sp.diff(sp.exp((2*x - 1)**2), x).subs(x, 1), 4*sp.E))
 
 # ══ H. Kısmi türev (4) ═══════════════════════════════════════════════════════
 q("z = x³y² olduğuna göre ∂z/∂x kısmi türevinin (1, 2) noktasındaki değeri kaçtır?",
@@ -388,29 +375,25 @@ q("z = e^(xy) olduğuna göre ∂z/∂x kısmi türevinin (0, 3) noktasındaki d
   verify=(sp.diff(sp.exp(x*y), x).subs({x: 0, y: 3}), 3))
 
 # ══ I. Seriler (4) ═══════════════════════════════════════════════════════════
-q("∑(n=1→∞) 1/2ⁿ toplamının değeri kaçtır?",
-  "1", ["2", "1/2", "∞", "3/2"],
-  "Bu, ilk terimi 1/2 ve ortak oranı 1/2 olan sonsuz geometrik seridir. |r| < 1 olduğundan "
-  "toplam a/(1 − r) formülüyle bulunur: (1/2)/(1 − 1/2) = 1.",
-  verify=(sp.summation(sp.Rational(1, 2)**n, (n, 1, oo)), 1))
+q("Yerden 9 m yükseklikten serbest bırakılan bir top, yere her çarpışından sonra bir önceki düşüş yüksekliğinin 1/3'ü kadar yükselmektedir. Top duruncaya kadar düşey doğrultuda toplam kaç metre yol alır?",
+  "18", ["27", "27/2", "12", "15"],
+  "İlk düşüş 9 m'dir. Sonraki her yükseliş ve düşüş eşittir: 3 + 1 + 1/3 + … = 3/(1 − 1/3) = 9/2. Toplam 9 + 2 · 9/2 = 18 m.",
+  verify=(9 + 2*sp.summation(9*sp.Rational(1, 3)**n, (n, 1, oo)), 18))
 
-q("∑(n=0→∞) (1/3)ⁿ toplamının değeri kaçtır?",
-  "3/2", ["1/2", "3", "2/3", "1"],
-  "İlk terim n = 0 için 1, ortak oran 1/3'tür. Sonsuz geometrik seri toplamı "
-  "a/(1 − r) = 1/(1 − 1/3) = 3/2 olur.",
-  verify=(sp.summation(sp.Rational(1, 3)**n, (n, 0, oo)), sp.Rational(3, 2)))
+q("0,272727… biçiminde 27 devreden ondalık sayı ∑(n=1→∞) 27/100ⁿ toplamı olarak yazılabilir. Bu sayının rasyonel karşılığı aşağıdakilerden hangisidir?",
+  "3/11", ["27/100", "9/11", "3/10", "1/4"],
+  "Geometrik seri: ilk terim 27/100, ortak oran 1/100. Toplam (27/100)/(1 − 1/100) = 27/99 = 3/11.",
+  verify=(sp.summation(27/sp.Integer(100)**n, (n, 1, oo)), sp.Rational(3, 11)))
 
-q("∑(n=1→∞) 2/3ⁿ toplamının değeri kaçtır?",
-  "1", ["2/3", "3", "2", "1/3"],
-  "Sabit 2 toplam dışına alınır: 2·∑(1/3)ⁿ (n = 1'den başlar). Bu serinin toplamı "
-  "(1/3)/(1 − 1/3) = 1/2'dir. Sonuç 2·(1/2) = 1 olur.",
-  verify=(sp.summation(2*sp.Rational(1, 3)**n, (n, 1, oo)), 1))
+q("a bir gerçel sayı olmak üzere ∑(n=1→∞) a/3ⁿ = 3 olduğuna göre ∑(n=1→∞) a/4ⁿ toplamı kaçtır?",
+  "2", ["3/2", "3", "6", "9/4"],
+  "∑(n=1→∞) 1/3ⁿ = (1/3)/(1 − 1/3) = 1/2 olduğundan a/2 = 3 ve a = 6. ∑(n=1→∞) 1/4ⁿ = 1/3 olduğundan istenen toplam 6/3 = 2.",
+  verify=(sp.summation(6/sp.Integer(4)**n, (n, 1, oo)), 2))
 
-q("∑(k=1→5) (2k − 1) toplamının değeri kaçtır?",
-  "25", ["24", "20", "30", "15"],
-  "Terimler yazılır: 1 + 3 + 5 + 7 + 9. Bu ilk beş tek sayının toplamıdır ve "
-  "sonucu 25'tir.",
-  verify=(sp.summation(2*k - 1, (k, 1, 5)), 25))
+q("Bir amfitiyatronun ilk sırasında 12 koltuk vardır ve her sırada bir önceki sıradan 3 fazla koltuk bulunmaktadır. Amfitiyatroda 10 sıra olduğuna göre toplam koltuk sayısı kaçtır?",
+  "255", ["225", "240", "270", "285"],
+  "Koltuk sayıları ilk terimi 12, ortak farkı 3 olan aritmetik dizidir. ∑(k=1→10) (12 + 3(k − 1)) = 10/2 · (2·12 + 9·3) = 5 · 51 = 255.",
+  verify=(sp.summation(12 + 3*(k - 1), (k, 1, 10)), 255))
 
 
 if __name__ == "__main__":

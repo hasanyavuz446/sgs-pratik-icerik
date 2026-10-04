@@ -35,26 +35,26 @@ q("(a − 2)x + 3 = 2x + a denkleminin çözüm kümesi boş küme olduğuna gö
   "4", ["2", "3", "0", "−4"],
   "Denklem (a − 4)x = a − 3 biçimine gelir. Çözüm kümesinin boş olması için x'in katsayısı 0, sağ taraf 0'dan farklı olmalıdır: a = 4 (a − 3 = 1 ≠ 0).",
   verify=(kok(a - 4, a), 4))
-q("2(x − 3) − 3(1 − x) = 4x + 1 denkleminin çözümü kaçtır?",
-  "10", ["8", "−10", "4", "2"],
-  "Parantezler açılır: 2x − 6 − 3 + 3x = 4x + 1 → 5x − 9 = 4x + 1 → x = 10.",
-  verify=(kok(2*(x - 3) - 3*(1 - x) - 4*x - 1), 10))
-q("(x + 2)/2 − (x − 1)/3 = 3 denkleminin çözümü kaçtır?",
-  "10", ["4", "8", "12", "6"],
-  "Payda 6'ya göre: 3(x + 2) − 2(x − 1) = 18 → 3x + 6 − 2x + 2 = 18 → x = 10.",
-  verify=(kok((x + 2)/2 - (x - 1)/3 - 3), 10))
+q("Bir konserde öğrenci bileti 150 ₺, tam bilet 250 ₺'dir. Konsere 200 kişi katılmış ve bilet geliri 41.000 ₺ olmuştur. Buna göre kaç öğrenci bileti satılmıştır?",
+  "90", ["80", "100", "110", "120"],
+  "Öğrenci bileti sayısı s ise 150s + 250(200 − s) = 41.000; 50.000 − 100s = 41.000 ve s = 90.",
+  verify=(sp.solve(150*x + 250*(200 - x) - 41000, x)[0], 90))
+q("Bir babanın yaşı iki çocuğunun yaşları toplamının 3 katıdır. Çocukların yaş farkı 4'tür ve 6 yıl sonra babanın yaşı çocukların yaşları toplamının 2 katı olacaktır. Büyük çocuk bugün kaç yaşındadır?",
+  "11", ["7", "9", "13", "14"],
+  "Çocukların yaşları toplamı S ise 3S + 6 = 2(S + 12), S = 18. Büyük çocuk (18 + 4)/2 = 11 yaşındadır.",
+  verify=((sp.solve(3*x + 6 - 2*(x + 12), x)[0] + 4) / 2, 11))
 q("ax + 4 = 2x + b denkleminin çözüm kümesi gerçel sayılar kümesi olduğuna göre a + b kaçtır?",
   "6", ["2", "4", "8", "−2"],
   "Her x için sağlanması için iki taraf özdeş olmalıdır: a = 2 ve b = 4. a + b = 6.",
   verify=(2 + 4, 6))
-q("x/2 + x/3 + x/6 = 18 denkleminin çözümü kaçtır?",
-  "18", ["9", "6", "36", "12"],
-  "Kesirler toplanır: 3x/6 + 2x/6 + x/6 = x. Buradan x = 18.",
-  verify=(kok(x/2 + x/3 + x/6 - 18), 18))
-q("3 − (2 − x)/4 = (x + 6)/2 denkleminin çözümü kaçtır?",
-  "−2", ["2", "−4", "6", "0"],
-  "Her iki taraf 4 ile çarpılır: 12 − (2 − x) = 2x + 12 → 10 + x = 2x + 12 → x = −2.",
-  verify=(kok(3 - (2 - x)/4 - (x + 6)/2), -2))
+q("Bir miras üç kardeş arasında paylaştırılmıştır. Büyük kardeş mirasın 1/2'sini, ortanca kardeş 1/3'ünü, küçük kardeş ise kalan 60.000 ₺'yi almıştır. Mirasın tamamı kaç ₺'dir?",
+  "360.000", ["180.000", "240.000", "300.000", "420.000"],
+  "Küçük kardeşe kalan pay 1 − 1/2 − 1/3 = 1/6'dır. Miras 60.000 : (1/6) = 360.000 ₺.",
+  verify=(60000 / (1 - R(1, 2) - R(1, 3)), 360000))
+q("Bir işi Ali tek başına 12 günde, Ayşe tek başına 18 günde bitirebilmektedir. İkisi birlikte 4 gün çalıştıktan sonra Ali işi bırakmıştır. Kalan işi Ayşe kaç günde bitirir?",
+  "8", ["4", "6", "9", "10"],
+  "Birlikte günlük iş 1/12 + 1/18 = 5/36'dır; 4 günde 20/36 = 5/9 biter. Kalan 4/9'luk işi Ayşe 4/9 · 18 = 8 günde bitirir.",
+  verify=((1 - 4*(R(1, 12) + R(1, 18))) * 18, 8))
 
 # ══ İkinci derece (10) ══════════════════════════════════════════════════════
 q("x² − 7x + 10 = 0 denkleminin kökleri x₁ ve x₂ olduğuna göre x₁² + x₂² kaçtır?",
@@ -85,14 +85,14 @@ q("2x² − 8x + m = 0 denkleminin kökleri arasında x₁ = 3x₂ bağıntısı
   "6", ["3", "8", "12", "4"],
   "Kökler toplamı 4: 3x₂ + x₂ = 4 → x₂ = 1, x₁ = 3. Kökler çarpımı m/2 = 3 → m = 6.",
   verify=(2 * 3 * 1, 6))
-q("(x − 2)(x + 3) = 14 denkleminin pozitif kökü kaçtır?",
-  "4", ["5", "2", "16", "7"],
-  "x² + x − 6 = 14 → x² + x − 20 = 0 → (x + 5)(x − 4) = 0. Pozitif kök 4'tür.",
-  verify=(max(sp.solve((x - 2)*(x + 3) - 14, x)), 4))
-q("x⁴ − 13x² + 36 = 0 denkleminin pozitif köklerinin toplamı kaçtır?",
-  "5", ["13", "6", "10", "4"],
-  "x² = t dönüşümüyle t² − 13t + 36 = 0 → t = 4 ya da t = 9. Pozitif kökler 2 ve 3; toplam 5.",
-  verify=(sum(r for r in sp.solve(x**4 - 13*x**2 + 36, x) if r > 0), 5))
+q("Bir dikdörtgenin kısa kenarı uzun kenarından 5 cm kısadır. Dikdörtgenin alanı 84 cm² olduğuna göre çevresi kaç cm'dir?",
+  "38", ["34", "40", "42", "46"],
+  "Kısa kenar x ise x(x + 5) = 84, x² + 5x − 84 = 0 ve (x − 7)(x + 12) = 0. x = 7, uzun kenar 12; çevre 2(7 + 12) = 38 cm.",
+  verify=(2 * (max(sp.solve(x*(x + 5) - 84, x)) * 2 + 5), 38))
+q("x⁴ − 13x² + 36 = 0 denkleminin gerçel kökleri sayı doğrusunda işaretlendiğinde en büyük kök ile en küçük kök arasındaki uzaklık kaç birimdir?",
+  "6", ["1", "4", "5", "13"],
+  "x² = t dönüşümüyle t² − 13t + 36 = 0, t = 4 veya t = 9. Kökler −3, −2, 2, 3; uzaklık 3 − (−3) = 6.",
+  verify=(max(sp.solve(x**4 - 13*x**2 + 36, x)) - min(sp.solve(x**4 - 13*x**2 + 36, x)), 6))
 q("x² + bx + c = 0 denkleminin kökleri 1 − √2 ve 1 + √2 olduğuna göre b + c kaçtır?",
   "−3", ["1", "−1", "3", "−2"],
   "Kökler toplamı 2 = −b → b = −2. Kökler çarpımı 1 − 2 = −1 = c. b + c = −3.",
@@ -107,18 +107,18 @@ q("P(x) = 2x³ + x² − 5x + 7 polinomunun x + 1 ile bölümünden kalan kaçt�
   "11", ["5", "3", "7", "−1"],
   "Kalan P(−1) = −2 + 1 + 5 + 7 = 11.",
   verify=(sp.rem(2*x**3 + x**2 - 5*x + 7, x + 1, x), 11))
-q("P(x) = (2x − 1)³ + (x + 2)² polinomunun katsayılar toplamı kaçtır?",
-  "10", ["9", "8", "12", "5"],
-  "Katsayılar toplamı P(1) = 1³ + 3² = 10.",
-  verify=(((2*x - 1)**3 + (x + 2)**2).subs(x, 1), 10))
+q("P(x) = (2x − 1)³ + (x + 2)² polinomunun katsayılar toplamı a, sabit terimi b olduğuna göre a − b farkı kaçtır?",
+  "7", ["3", "6", "10", "13"],
+  "Katsayılar toplamı P(1) = 1 + 9 = 10, sabit terim P(0) = −1 + 4 = 3. Fark 7.",
+  verify=(((2*x - 1)**3 + (x + 2)**2).subs(x, 1) - ((2*x - 1)**3 + (x + 2)**2).subs(x, 0), 7))
 q("P(x) = (a − 2)x² + (b + 3)x + 5 bir sabit polinom olduğuna göre a + b kaçtır?",
   "−1", ["5", "1", "−5", "2"],
   "Sabit polinomda x'li terimlerin katsayıları 0'dır: a = 2, b = −3. a + b = −1.",
   verify=(2 + (-3), -1))
-q("P(x + 1) = x² + 3x + 4 olduğuna göre P(2) kaçtır?",
-  "8", ["14", "4", "10", "6"],
-  "P(2) için x + 1 = 2 → x = 1 yazılır: 1 + 3 + 4 = 8.",
-  verify=((x**2 + 3*x + 4).subs(x, 1), 8))
+q("P(x + 1) = x² + 3x + 4 olduğuna göre P(x) polinomunun x − 3 ile bölümünden kalan kaçtır?",
+  "14", ["4", "8", "18", "22"],
+  "Kalan P(3)'tür. x + 1 = 3 için x = 2: P(3) = 4 + 6 + 4 = 14.",
+  verify=((x**2 + 3*x + 4).subs(x, 2), 14))
 q("P(x) polinomunun x − 3 ile bölümünden kalan 5'tir. Buna göre P(2x + 1) polinomunun x − 1 ile bölümünden kalan kaçtır?",
   "5", ["3", "11", "1", "7"],
   "Kalan, x = 1 yazılarak bulunur: P(2·1 + 1) = P(3) = 5.",
@@ -141,26 +141,26 @@ q("x² − 3x + 2 ve x² − 4 polinomlarının ortak çarpanı aşağıdakilerd
   verify=(sp.gcd(x**2 - 3*x + 2, x**2 - 4) - (x - 2), 0))
 
 # ══ Denklem sistemleri (6) ══════════════════════════════════════════════════
-q("2x + 3y = 13 ve 3x − y = 3 olduğuna göre x + y kaçtır?",
-  "5", ["6", "4", "7", "3"],
-  "İkinci denklemden y = 3x − 3. Birinciye yazılır: 2x + 9x − 9 = 13 → x = 2, y = 3. x + y = 5.",
-  verify=(sum(sp.solve([2*x + 3*y - 13, 3*x - y - 3], [x, y]).values()), 5))
+q("Bir kafede 2 çay ile 3 simidin toplam fiyatı 130 ₺, 3 çay ile 1 simidin toplam fiyatı 90 ₺'dir. Buna göre 1 çay ile 1 simidin toplam fiyatı kaç ₺'dir?",
+  "50", ["40", "45", "55", "60"],
+  "2ç + 3s = 130 ve 3ç + s = 90. İkinciden s = 90 − 3ç; yerine yazılırsa 7ç = 140, ç = 20 ve s = 30. Toplam 50 ₺.",
+  verify=(sum(sp.solve([2*x + 3*y - 130, 3*x + y - 90], [x, y]).values()), 50))
 q("a, b ve c pozitif gerçel sayılardır. a·b = 12, b·c = 20 ve a·c = 15 olduğuna göre a + b + c kaçtır?",
   "12", ["47", "10", "15", "60"],
   "Üç eşitlik çarpılır: (abc)² = 3.600 → abc = 60. a = 60/20 = 3, b = 60/15 = 4, c = 60/12 = 5. Toplam 12.",
   verify=(R(60, 20) + R(60, 15) + R(60, 12), 12))
-q("x + y = 10, y + z = 14 ve x + z = 12 olduğuna göre x·y·z kaçtır?",
-  "192", ["18", "120", "144", "216"],
-  "Üç eşitlik toplanır: 2(x + y + z) = 36 → x + y + z = 18. x = 4, y = 6, z = 8; çarpım 192.",
-  verify=((lambda s: s[x]*s[y]*s[z])(sp.solve([x + y - 10, y + z - 14, x + z - 12], [x, y, z])), 192))
-q("1/x + 1/y = 3/4 ve x + y = 6 olduğuna göre x·y kaçtır?",
-  "8", ["4", "9/2", "12", "18"],
-  "1/x + 1/y = (x + y)/(x·y) = 6/(x·y) = 3/4 → x·y = 8.",
-  verify=(kok(6/a - R(3, 4), a), 8))
-q("3ˣ · 9ʸ = 81 ve x − y = 1 olduğuna göre x kaçtır?",
-  "2", ["1", "3", "4", "0"],
-  "3ˣ · 3²ʸ = 3⁴ → x + 2y = 4. x − y = 1 ile çözülürse 3y = 3 → y = 1, x = 2.",
-  verify=(sp.solve([x + 2*y - 4, x - y - 1], [x, y])[x], 2))
+q("Ali, Berk ve Can'ın yaşları toplamı 36'dır. Ali ile Berk'in yaşları toplamı 22, Berk ile Can'ın yaşları toplamı 26 olduğuna göre Ali kaç yaşındadır?",
+  "10", ["8", "11", "12", "14"],
+  "Can'ın yaşı 36 − 22 = 14, Berk'in yaşı 26 − 14 = 12, Ali'nin yaşı 22 − 12 = 10.",
+  verify=(sp.solve([x + y + z - 36, x + y - 22, y + z - 26], [x, y, z])[x], 10))
+q("Aralarında 360 km bulunan iki şehirden iki araç aynı anda birbirine doğru hareket etmiştir. Araçlardan birinin hızı diğerinden 20 km/sa fazladır. Araçlar 3 saat sonra karşılaştığına göre hızlı aracın hızı kaç km/sa'tir?",
+  "70", ["50", "60", "65", "80"],
+  "Yavaş aracın hızı v ise 3(v + v + 20) = 360, 2v + 20 = 120 ve v = 50. Hızlı aracın hızı 70 km/sa.",
+  verify=(sp.solve(3*(2*x + 20) - 360, x)[0] + 20, 70))
+q("3ˣ · 9ʸ = 81 ve 2ˣ : 4ʸ = 1/2 olduğuna göre x · y çarpımı kaçtır?",
+  "15/8", ["3/2", "5/4", "2", "15/4"],
+  "3ˣ⁺²ʸ = 3⁴ ise x + 2y = 4; 2ˣ⁻²ʸ = 2⁻¹ ise x − 2y = −1. Toplanırsa 2x = 3, x = 3/2 ve y = 5/4. Çarpım 15/8.",
+  verify=(sp.Rational(3, 2) * sp.Rational(5, 4), R(15, 8)))
 q("Bir otoparkta bulunan otomobil ve motosikletlerin toplam sayısı 40, tekerlek sayısı 130'dur. Otoparkta kaç otomobil vardır?",
   "25", ["15", "20", "30", "35"],
   "Otomobil o, motosiklet 40 − o: 4o + 2(40 − o) = 130 → 2o = 50 → o = 25.",
@@ -171,14 +171,14 @@ q("3 − 2x ≥ 7 eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidi
   "(−∞, −2]", ["[−2, ∞)", "(−∞, −2)", "(−∞, 2]", "[2, ∞)"],
   "−2x ≥ 4 → x ≤ −2 (negatif sayıyla bölünce yön değişir). Çözüm kümesi (−∞, −2].",
   verify=(aralik(3 - 2*x >= 7) == sp.Interval(-oo, -2), True))
-q("−3 < 2x + 1 ≤ 9 eşitsizliğini sağlayan tam sayıların toplamı kaçtır?",
-  "9", ["10", "7", "14", "4"],
-  "−4 < 2x ≤ 8 → −2 < x ≤ 4. Tam sayılar −1, 0, 1, 2, 3, 4; toplam 9.",
-  verify=(sum(t for t in range(-20, 20) if -3 < 2*t + 1 <= 9), 9))
-q("x² − x − 6 < 0 eşitsizliğini sağlayan kaç tam sayı vardır?",
-  "4", ["5", "6", "3", "2"],
-  "x² − x − 6 = (x − 3)(x + 2). Kökler arasında ifade negatiftir: −2 < x < 3. Tam sayılar −1, 0, 1, 2: dört tane.",
-  verify=(len([t for t in range(-20, 20) if t**2 - t - 6 < 0]), 4))
+q("Bir otopark ilk saat için 60 ₺, sonraki her saat için 25 ₺ ücret almaktadır. Ödenen ücretin 160 ₺'den fazla ve 260 ₺'den az olması için araç otoparkta kaç farklı tam saat süre kalmış olabilir?",
+  "3", ["2", "4", "5", "6"],
+  "n saatlik ücret 60 + 25(n − 1) = 25n + 35'tir. 160 < 25n + 35 < 260 ise 5 < n < 9; n = 6, 7, 8 olmak üzere 3 farklı süre vardır.",
+  verify=(len([n_ for n_ in range(1, 30) if 160 < 25*n_ + 35 < 260]), 3))
+q("Yerden atılan bir topun t saniye sonraki yüksekliği h(t) = −5t² + 20t + 25 metredir. Topun yüksekliğinin 40 metreden fazla olduğu zaman aralığı kaç saniye sürer?",
+  "2", ["1", "3", "4", "5/2"],
+  "−5t² + 20t + 25 > 40 ise t² − 4t + 3 < 0, yani (t − 1)(t − 3) < 0 ve 1 < t < 3. Süre 2 saniyedir.",
+  verify=(max(sp.solve(-5*x**2 + 20*x + 25 - 40, x)) - min(sp.solve(-5*x**2 + 20*x + 25 - 40, x)), 2))
 q("(x − 1)/(x + 3) ≤ 0 eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?",
   "(−3, 1]", ["[−3, 1]", "(−3, 1)", "(−∞, −3) ∪ [1, ∞)", "[−3, 1)"],
   "Pay ile payda zıt işaretli ya da pay sıfır olmalıdır: −3 < x ≤ 1. Payda sıfır olamayacağından −3 dâhil değildir.",
@@ -213,18 +213,18 @@ q("√(x + 7) = x + 1 denkleminin çözüm kümesi aşağıdakilerden hangisidir
   "{2}", ["{−3, 2}", "{−3}", "{3}", "∅"],
   "Kare alınır: x + 7 = x² + 2x + 1 → x² + x − 6 = 0 → x = 2 ya da x = −3. x = −3 için sağ taraf −2 olur ve kök negatif olamaz; çözüm kümesi {2}.",
   verify=(kok(sp.sqrt(x + 7) - (x + 1)), 2))
-q("3/(x − 1) − 2/(x + 1) = 1 denkleminin pozitif kökü kaçtır?",
-  "3", ["2", "6", "1", "5"],
-  "Payda eşitlenir: 3(x + 1) − 2(x − 1) = x² − 1 → x + 5 = x² − 1 → x² − x − 6 = 0. Kökler 3 ve −2; pozitif kök 3.",
-  verify=(max(sp.solve(3/(x - 1) - 2/(x + 1) - 1, x)), 3))
+q("3/(x − 1) − 2/(x + 1) = 1 denkleminin kökleri x₁ ve x₂ olduğuna göre x₁² + x₂² toplamı kaçtır?",
+  "13", ["1", "5", "9", "25"],
+  "Paydalar eşitlenirse 3(x + 1) − 2(x − 1) = x² − 1, yani x² − x − 6 = 0. Kökler 3 ve −2'dir; ikisi de paydayı sıfır yapmaz. 9 + 4 = 13.",
+  verify=(sum(r**2 for r in sp.solve(3/(x - 1) - 2/(x + 1) - 1, x)), 13))
 q("√(2x − 1) + 3 = x denkleminin kökü aşağıdakilerden hangisidir?",
   "4 + √6", ["4 − √6", "5", "2 + √6", "3"],
   "√(2x − 1) = x − 3 → 2x − 1 = x² − 6x + 9 → x² − 8x + 10 = 0 → x = 4 ± √6. Kökün sağ tarafı x − 3 ≥ 0 olmalıdır; 4 − √6 < 3 olduğundan yalnız 4 + √6 sağlar.",
   verify=(sp.solve(sp.sqrt(2*x - 1) + 3 - x, x)[0], 4 + sp.sqrt(6)))
-q("(x + 2)/(x − 2) = (x − 1)/(x − 3) denkleminin çözümü kaçtır?",
-  "4", ["2", "3", "−4", "8"],
-  "İçler-dışlar çarpımı: (x + 2)(x − 3) = (x − 1)(x − 2) → x² − x − 6 = x² − 3x + 2 → 2x = 8 → x = 4.",
-  verify=(kok((x + 2)/(x - 2) - (x - 1)/(x - 3)), 4))
+q("İki basamaklı bir sayının rakamları toplamı 11'dir. Rakamların yerleri değiştirildiğinde elde edilen sayı ilk sayıdan 27 fazladır. Buna göre ilk sayı kaçtır?",
+  "47", ["29", "38", "56", "74"],
+  "Sayı 10a + b ise a + b = 11 ve (10b + a) − (10a + b) = 9(b − a) = 27, yani b − a = 3. a = 4, b = 7; sayı 47.",
+  verify=(10*sp.solve([x + y - 11, y - x - 3], [x, y])[x] + sp.solve([x + y - 11, y - x - 3], [x, y])[y], 47))
 
 # ══ Denklem kurma (14) ══════════════════════════════════════════════════════
 q("Bir davette misafirler masalara 5'er kişi oturduğunda 8 kişi ayakta kalıyor; 7'şer kişi oturduğunda ise 2 masa boş kalıyor. Davette kaç misafir vardır?",
