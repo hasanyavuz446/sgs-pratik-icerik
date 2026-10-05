@@ -149,17 +149,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        'Borcunu tamamen ödemek isteyen borçluya alacaklı, borç senedini kaybettiğini söylemiştir. Borçlunun istemi hakkında aşağıdakilerden hangisi doğrudur?',
+        "Borcunu tamamen ödemek isteyen borçluya alacaklı, borç senedini kaybettiğini söylemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Borç, senet bulununcaya kadar askıda kalır',
-            'B': 'Borçlu makbuzla yetinmelidir',
-            'C': 'Borçlu senet bulunmadan ödeme yapmakla yükümlü değildir, borç düşer',
-            'D': 'Alacaklı yeni bir senet düzenlemekle yükümlüdür',
-            'E': 'Alacaklı, borcun sona erdiğini gösteren onaylı belge vermelidir',
+            'A': 'Borçlu, senedin iptalini gösteren bir belge isteyebilir',
+            'B': 'Belge resmen düzenlenmiş ya da usulüne göre onaylanmış olmalıdır',
+            'C': 'Belge borcun sona erdiğini de göstermelidir',
+            'D': 'Belge borçlunun istemi üzerine verilir',
+            'E': 'Senet bulunmadıkça borçlu ödeme yapamaz; borç askıda kalır',
         },
         'E',
-        "TBK m. 105'e göre alacaklı borç senedini kaybettiğini iddia ederse, borçlunun istemi üzerine, ödeme sırasında **borç senedinin iptalini ve borcun sona ermiş olduğunu gösteren resmen düzenlenmiş veya usulüne göre onaylanmış bir belge** vermek zorundadır.",
-        '6098 sayılı TBK m. 105',
+        'TBK m. 105: alacaklı borç senedini kaybettiğini iddia ederse borçlu, ödeme sırasında alacaklıdan senedin iptalini ve borcun sona ermiş olduğunu gösteren, resmen düzenlenmiş veya usulüne göre onaylanmış bir belge vermesini isteyebilir; borç askıda kalmaz.',
     ),
     # düzey 3
     '0010': patch(
@@ -625,17 +624,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        "Para borcunun alacaklısı, borç doğduktan sonra İzmir'den yurt dışında ulaşılması güç bir yere taşınmış; bu durum ödemeyi önemli ölçüde güçleştirmiştir. Borçlunun durumu hakkında aşağıdakilerden hangisi doğrudur?",
+        "Para borcunun alacaklısı, borç doğduktan sonra İzmir'den yurt dışında ulaşılması güç bir yere taşınmış; bu durum ödemeyi önemli ölçüde güçleştirmiştir.\n\nTBK'ya göre ifa yeriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Borç, ifa yeri belirsizleştiği için sona erer',
-            'B': 'Borcu alacaklının yeni yerleşim yerinde ifa etmekle yükümlüdür',
-            'C': 'Borcu kendi yerleşim yerinde ifa etmekle yükümlüdür',
-            'D': 'İfa yerini hâkim belirleyinceye kadar borç askıda kalır',
-            'E': 'Borçlu önceki yerleşim yerinde ifa edebilir',
+            'A': 'Para borçları kural olarak alacaklının yerleşim yerinde ödenir',
+            'B': 'Bu olayda borç alacaklının önceki yerleşim yerinde ifa edilebilir',
+            'C': 'Kural, ifanın önemli ölçüde güçleşmesi koşuluna bağlıdır',
+            'D': 'Taraflar ifa yerini sözleşmeyle ayrıca belirleyebilir',
+            'E': 'Borçlu borcu alacaklının yeni yerleşim yerinde ödemekle yükümlüdür',
         },
         'E',
-        "TBK m. 89/2'ye göre **alacaklının yerleşim yerinde ifası gereken bir borcun doğumundan sonra alacaklının yerleşim yerini değiştirmesi sebebiyle ifa önemli ölçüde güçleşmişse**, borç alacaklının **önceki yerleşim yerinde** ifa edilebilir.",
-        '6098 sayılı TBK m. 89/2',
+        'TBK m. 89: para borçları alacaklının ödeme zamanındaki yerleşim yerinde ödenir; ancak alacaklının yerleşim yerini borcun doğumundan sonra değiştirmesi ifayı önemli ölçüde güçleştirmişse borç alacaklının önceki yerleşim yerinde ifa edilebilir. Taraflar ifa yerini açıkça veya örtülü olarak kararlaştırabilir.',
     ),
     # düzey 2
     '0044': patch(
@@ -681,17 +679,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "Sözleşmede 'aynen ödeme' kaydı bulunmayan 5.000 EUR'luk borcun vadesinde borçlu, ödeme günündeki rayiçle Türk lirası ödemek istemektedir. Aşağıdakilerden hangisi doğrudur?",
+        "Sözleşmede 'aynen ödeme' kaydı bulunmayan 5.000 EUR'luk borcun vadesinde borçlu, Türk lirası ödemek istemektedir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Borçlu avro dışında bir parayla ödeme yapamaz',
-            'B': 'Borçlu sözleşme günündeki kurla ödemelidir',
-            'C': 'Kur farkı alacaklıyla yarı yarıya paylaşılır',
-            'D': 'Alacaklı rıza göstermedikçe Türk lirası ödeme yapılamaz',
-            'E': 'Ödeme günündeki rayiçle Türk lirası ödenebilir',
+            'A': 'Yabancı parayla ödeme kararlaştırılabilir',
+            'B': 'Aynen ödeme kaydı yoksa borç Türk lirasıyla da ödenebilir',
+            'C': 'Ödeme, ödeme günündeki rayiç üzerinden yapılır',
+            'D': 'Aynen ödeme kaydı bulunsaydı borç avro olarak ödenirdi',
+            'E': 'Türk lirasıyla ödeme için alacaklının rızası gerekir',
         },
         'E',
-        "TBK m. 99/2'ye göre yabancı para ile ödeme kararlaştırılmışsa, **sözleşmede aynen ödeme veya bu anlama gelen bir ifade bulunmadıkça borç, ödeme günündeki rayiç üzerinden Ülke parasıyla da ödenebilir**.",
-        '6098 sayılı TBK m. 99/2',
+        'TBK m. 99/2: yabancı para ile ödeme kararlaştırılmışsa, sözleşmede aynen ödeme veya bu anlama gelen bir ifade bulunmadıkça borç, ödeme günündeki rayiç üzerinden Ülke parasıyla da ödenebilir; alacaklının rızası aranmaz.',
     ),
     # düzey 3
     '0048': patch(
@@ -779,17 +776,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        "A, B ile yaptığı sözleşmede B'nin kızı C'ye her ay para ödemeyi üstlenmiştir (üçüncü kişi yararına sözleşme). A'nın da B'den muaccel bir alacağı vardır. A, C'ye ödeyeceği parayı B'den olan alacağıyla takas etmek istemektedir. Aşağıdakilerden hangisi doğrudur?",
+        "A, B ile yaptığı sözleşmede B'nin kızı C'ye her ay para ödemeyi üstlenmiştir (üçüncü kişi yararına sözleşme). A'nın da B'den muaccel bir alacağı vardır.\n\nTBK'ya göre takasla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Takas faiz kısmıyla sınırlı yapılabilir',
-            'B': "Takas C'nin rızasıyla gerçekleşir",
-            'C': "A, C'ye olan borcunu takas edemez",
-            'D': 'Borçlar karşılıklı olduğundan takas mümkündür',
-            'E': "A takas edebilir; C, B'ye başvurur",
+            'A': 'Takas için karşılıklı ve muaccel alacaklar aranır',
+            'B': 'Takas, karşı tarafa yapılan bildirimle gerçekleşir',
+            'C': "A, C'ye olan borcunu B'den olan alacağıyla takas edebilir",
+            'D': 'Üçüncü kişi yararına borçlanan bu borcu takas edemez',
+            'E': "Bu olayda C'ye ödeme borcu sürer",
         },
         'C',
-        "TBK m. 141'e göre **üçüncü kişi yararına borçlanan kişi, bu borcu ile sözleşmenin diğer tarafından olan alacağını takas edemez**.",
-        '6098 sayılı TBK m. 141',
+        "TBK m. 139-141: takas karşılıklı, aynı türden ve muaccel alacaklar arasında bildirimle gerçekleşir; ancak m. 141'e göre üçüncü kişi yararına borçlanan kişi, bu borcu ile sözleşmenin diğer tarafından olan alacağını takas edemez.",
     ),
     # düzey 3
     '0055': patch(

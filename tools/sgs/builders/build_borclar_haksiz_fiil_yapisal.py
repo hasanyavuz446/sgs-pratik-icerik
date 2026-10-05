@@ -93,17 +93,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        "Bir davette içeceğine haberi olmadan uyuşturucu madde katılan A, ayırt etme gücünü geçici olarak yitirmiş ve bu sırada B'nin arabasına zarar vermiştir. A'nın sorumluluğu hakkında aşağıdakilerden hangisi doğrudur?",
+        "Bir davette içeceğine haberi olmadan uyuşturucu madde katılan A, ayırt etme gücünü geçici olarak yitirmiş ve bu sırada B'nin arabasına zarar vermiştir.\n\nTBK'ya göre A'nın sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kusursuz sorumlu olduğundan kurtuluş imkânı olmadan tazminat öder',
-            'B': 'Tazminatı, içeceğe maddeyi katan kişiyle birlikte ve yarı yarıya olmak üzere öder',
-            'C': 'Ayırt etme gücü bulunmadığından sorumluluk söz konusu olmaz',
-            'D': 'Sorumluluğu hakkaniyet sorumluluğu olarak yarıya indirilir',
-            'E': 'Ayırt etme gücünü kaybetmede kusuru olmadığını ispat ederse sorumlu olmaz',
+            'A': 'Ayırt etme gücünü geçici kaybeden kural olarak zarardan sorumludur',
+            'B': 'Kaybetmede kusursuzluğunu ispat eden sorumluluktan kurtulur',
+            'C': "Kusursuzluğu ispat yükü A'ya aittir",
+            'D': 'İçeceğe habersiz madde katılması kusursuzluğu gösterebilir',
+            'E': 'Ayırt etme gücü bulunmadığından sorumluluk hiç doğmaz',
         },
         'E',
-        "TBK m. 59'a göre **ayırt etme gücünü geçici olarak kaybeden kişi**, bu sırada verdiği zararları gidermekle yükümlüdür; ancak **ayırt etme gücünü kaybetmede kusuru olmadığını ispat ederse sorumluluktan kurtulur**.",
-        '6098 sayılı TBK m. 59',
+        'TBK m. 59: ayırt etme gücünü geçici olarak kaybeden kişi, bu sırada verdiği zararları gidermekle yükümlüdür; ancak ayırt etme gücünü kaybetmede kusuru olmadığını ispat ederse sorumluluktan kurtulur. İspat yükü zarar verendedir.',
     ),
     # düzey 3
     '0006': patch(
@@ -597,17 +596,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Bir kafede yangın çıkmasına kusuruyla sebep olan kişi aleyhine açılan davada, kafenin yangında yok olan stoklarının tam tutarı belgelenememiştir. Hâkim zarar miktarını nasıl belirler?',
+        "Bir kafede yangın çıkmasına kusuruyla sebep olan kişi aleyhine açılan davada, kafenin yangında yok olan stoklarının tam tutarı belgelenememiştir.\n\nTBK'ya göre zararın belirlenmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Zarar verenin kabul ettiği tutarla sınırlı kalır',
-            'B': 'Bilirkişinin en yüksek tahmini esas alınır',
-            'C': 'İspat edilemeyen zarar tazmin edilmez',
-            'D': 'Olayların olağan akışı ve zarar görenin önlemlerine göre hakkaniyetle',
-            'E': 'Zarar gören yemin ederse beyan ettiği tutar esas alınır',
+            'A': 'Zarar gören zararını ispat eder',
+            'B': 'Zarar gören zarar verenin kusurunu ispat eder',
+            'C': 'Miktar tam ispat edilemezse hâkim hakkaniyete göre belirler',
+            'D': 'Tam ispat edilemeyen zarar tazmin edilmez',
+            'E': 'Hâkim olayların olağan akışını göz önünde tutar',
         },
         'D',
-        "TBK m. 50'ye göre zarar gören zararını ve zarar verenin kusurunu ispat eder; ancak **zararın miktarı tam olarak ispat edilemiyorsa hâkim, olayların olağan akışını ve zarar görenin aldığı önlemleri göz önünde tutarak zararın miktarını hakkaniyete uygun olarak belirler**.",
-        '6098 sayılı TBK m. 50',
+        'TBK m. 50: zarar gören zararını ve zarar verenin kusurunu ispat eder; ancak zararın miktarı tam olarak ispat edilemiyorsa hâkim, olayların olağan akışını ve zarar görenin aldığı önlemleri göz önünde tutarak zararın miktarını hakkaniyete uygun olarak belirler.',
     ),
     # düzey 2
     '0042': patch(
@@ -751,17 +749,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        "Komşu binanın çatısındaki gevşek kiremitler, rüzgârlı havalarda A'nın bahçesine düşme tehlikesi yaratmaktadır. Henüz bir zarar doğmamıştır. A ne isteyebilir?",
+        "Komşu binanın çatısındaki gevşek kiremitler, rüzgârlı havalarda A'nın bahçesine düşme tehlikesi yaratmaktadır. Henüz bir zarar doğmamıştır.\n\nTBK'ya göre A'nın haklarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Binanın kendisine devrini',
-            'B': 'Zarar doğmadan bir istemde bulunamaz',
-            'C': 'Binanın yıkılmasını',
-            'D': 'Tehlikenin giderilmesi için gerekli önlemlerin alınmasını',
-            'E': 'Olası zarar için peşin tazminat',
+            'A': 'A tehlikenin giderilmesi için önlem alınmasını isteyebilir',
+            'B': 'İstem bina üzerinde hak sahibi olanlara yöneltilir',
+            'C': 'İstem için zararın doğması beklenmez',
+            'D': 'Zarar doğmadan A bir istemde bulunamaz',
+            'E': 'Kural bina ve yapı eserlerinden doğan tehlikelere ilişkindir',
         },
         'D',
-        "TBK m. 70'e göre **bir başkasına ait bina veya yapı eserlerinden zarar görme tehlikesiyle karşılaşan kişi, bu tehlikenin giderilmesi için gerekli önlemlerin alınmasını** hak sahiplerinden isteyebilir.",
-        '6098 sayılı TBK m. 70',
+        'TBK m. 70: bir başkasına ait bina veya yapı eserlerinden zarar görme tehlikesiyle karşılaşan kişi, bu tehlikenin giderilmesi için gerekli önlemlerin alınmasını hak sahiplerinden isteyebilir; zararın doğması beklenmez.',
     ),
     # düzey 3
     '0053': patch(
@@ -821,17 +818,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0057': patch(
-        'Hâkim, sürekli iş göremezlik tazminatının toplu ödeme yerine aylık irat biçiminde ödenmesine karar vermiştir. Tazminat yükümlüsü hakkında aşağıdakilerden hangisi doğrudur?',
+        "Hâkim, sürekli iş göremezlik tazminatının toplu ödeme yerine aylık irat biçiminde ödenmesine karar vermiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İradı dilediği zaman durdurabilir',
-            'B': 'İradı zarar görenin mirasçılarına ödemez',
-            'C': 'Toplu ödemeye kendi iradesiyle dönemez ve faiz ödemez',
-            'D': 'Güvence göstermekle yükümlüdür',
-            'E': 'Ek bir yükümlülüğü bulunmaz',
+            'A': 'Hâkim tazminatın irat biçiminde ödenmesine karar verebilir',
+            'B': 'İrat hükmedilirse borçlu güvence göstermekle yükümlüdür',
+            'C': 'Borçlu iradı kendi iradesiyle durduramaz',
+            'D': 'İrat hükmedilen borçlunun ek bir yükümlülüğü bulunmaz',
+            'E': 'Güvence, iradın ödenmesini teminat altına alır',
         },
         'D',
-        "TBK m. 51/2'ye göre **tazminatın irat biçiminde ödenmesine hükmedilirse, borçlu güvence göstermekle yükümlüdür**.",
-        '6098 sayılı TBK m. 51/2',
+        'TBK m. 51/2: hâkim, tazminatın ödenme biçimini belirler ve tazminatın irat biçiminde ödenmesine hükmedebilir; bu durumda borçlu güvence göstermekle yükümlüdür.',
     ),
     # düzey 3
     '0058': patch(
@@ -849,17 +845,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0059': patch(
-        'Bir binanın bakım eksikliği ile tamircinin kusurlu işçiliği birlikte bir yayanın yaralanmasına yol açmıştır. Bina maliki yapı maliki sorumluluğuna, tamirci ise kusur sorumluluğuna göre sorumludur. Aşağıdakilerden hangisi doğrudur?',
+        "Bir binanın bakım eksikliği ile tamircinin kusurlu işçiliği birlikte bir yayanın yaralanmasına yol açmıştır. Bina maliki yapı maliki sorumluluğuna, tamirci ise kusur sorumluluğuna göre sorumludur.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Farklı sebeplerle sorumlu olsalar da yayaya karşı müteselsilen sorumludurlar',
-            'B': 'Yaya önce kusurlu tamirciye başvurmalıdır',
-            'C': 'Farklı sebeplerle sorumlu olduklarından her biri ancak kendi payından sorumludur',
-            'D': 'Zarar malik ile tamirci arasında yaya lehine eşit bölünür',
-            'E': 'Kusursuz sorumlu olan malik, kusurlu olan tamirci varken sorumlu tutulamaz',
+            'A': 'Farklı sebeplerle sorumlu olduklarından her biri kendi payından sorumludur',
+            'B': 'Aynı zarardan farklı sebeplerle sorumlu olanlar müteselsilen sorumludur',
+            'C': 'Yaya sorumlulardan dilediğine başvurabilir',
+            'D': 'İç ilişkide paylaştırma ayrıca yapılır',
+            'E': 'Malikin sorumluluğu tamircinin kusuruyla ortadan kalkmaz',
         },
         'A',
-        "TBK m. 61'e göre birden çok kişi birlikte bir zarara sebebiyet verir **veya aynı zarardan çeşitli sebeplerden dolayı sorumlu olursa** müteselsil sorumluluk hükümleri uygulanır; iç ilişkide paylaştırma m. 62'ye göre yapılır.",
-        '6098 sayılı TBK m. 61',
+        "TBK m. 61: birden çok kişi birlikte bir zarara sebebiyet verir veya aynı zarardan çeşitli sebeplerden dolayı sorumlu olursa müteselsil sorumluluk hükümleri uygulanır; zarar gören dilediğine başvurur, iç ilişkide paylaştırma m. 62'ye göre yapılır.",
     ),
     # düzey 3
     '0060': patch(

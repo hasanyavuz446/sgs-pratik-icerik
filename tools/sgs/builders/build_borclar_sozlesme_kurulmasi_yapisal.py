@@ -79,17 +79,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0004': patch(
-        'A, arkadaşının banka kredisine sözlü olarak kefil olmuştur. Kefalet sözleşmesi için kanunda yazılı şekil öngörülmüştür. Aşağıdakilerden hangisi doğrudur?',
+        "A, arkadaşının banka kredisine sözlü olarak kefil olmuştur. Kefalet sözleşmesi için kanunda yazılı şekil öngörülmüştür.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kefalet kurulmuş, ancak iptal edilebilir niteliktedir',
-            'B': 'Sözlü kefalet geçerlidir; şekil ispat içindir',
-            'C': 'Şekil eksikliği banka onayıyla giderilir',
-            'D': 'Kefalet, şekle uyulmadığından hüküm doğurmaz',
-            'E': 'Kefil, borcun yarısından sorumlu olur',
+            'A': 'Kanunda öngörülen şekil kural olarak geçerlilik şeklidir',
+            'B': 'Şekle uyulmadan kurulan sözleşme hüküm doğurmaz',
+            'C': 'Kefalet sözleşmesi yazılı şekle tabidir',
+            'D': 'Sözlü kefalet geçerlidir; şekil ispat içindir',
+            'E': 'Şekil eksikliği bankanın onayıyla giderilmez',
         },
         'D',
-        "TBK m. 12'ye göre kanunda sözleşmeler için öngörülen şekil **kural olarak geçerlilik şeklidir**; öngörülen şekle uyulmaksızın kurulan sözleşmeler **hüküm doğurmaz**. Kefalet sözleşmesi m. 583'e göre yazılı şekle tabidir.",
-        '6098 sayılı TBK m. 12, 583',
+        "TBK m. 12: kanunda sözleşmeler için öngörülen şekil kural olarak geçerlilik şeklidir; öngörülen şekle uyulmaksızın kurulan sözleşmeler hüküm doğurmaz. Kefalet sözleşmesi m. 583'e göre yazılı şekle tabidir; şekil eksikliği tarafların onayıyla giderilemez.",
     ),
     # düzey 3
     '0005': patch(
@@ -107,17 +106,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        "Taraflar, bir malın mülkiyetini bedel karşılığında devretmek istemiş, ancak belgeye yanlışlıkla 'kira sözleşmesi' başlığı yazmışlardır. Sözleşmenin türü nasıl belirlenir?",
+        "Taraflar, bir malın mülkiyetini bedel karşılığında devretmek istemiş, ancak belgeye yanlışlıkla 'kira sözleşmesi' başlığı yazmışlardır.\n\nTBK'ya göre sözleşmenin türünün belirlenmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Gerçek ve ortak iradeleri esas alınarak satış olarak',
-            'B': 'Hâkimin takdirine göre karma sözleşme olarak',
-            'C': 'Belgedeki başlık esas alınarak kira olarak',
-            'D': 'Başlık ile içerik çeliştiğinden kesin hükümsüz olarak',
-            'E': 'Taraflardan zayıf olanın lehine',
+            'A': 'Sözleşmenin türü belgedeki başlığa göre belirlenir',
+            'B': 'Tarafların gerçek ve ortak iradesi esas alınır',
+            'C': 'Yanlışlıkla kullanılan sözcükler belirleyici değildir',
+            'D': 'Gerçek amacı gizlemek için kullanılan sözcükler de belirleyici değildir',
+            'E': 'Bu sözleşme satış olarak nitelendirilir',
         },
         'A',
-        "TBK m. 19/1'e göre sözleşmenin türünün ve içeriğinin belirlenmesinde, tarafların **yanlışlıkla veya gerçek amaçlarını gizlemek için kullandıkları sözcüklere bakılmaksızın, gerçek ve ortak iradeleri** esas alınır.",
-        '6098 sayılı TBK m. 19/1',
+        'TBK m. 19/1: sözleşmenin türünün ve içeriğinin belirlenmesinde, tarafların yanlışlıkla veya gerçek amaçlarını gizlemek için kullandıkları sözcüklere bakılmaksızın, gerçek ve ortak iradeleri esas alınır. Bu nedenle sözleşme satıştır.',
     ),
     # düzey 3
     '0007': patch(
@@ -191,17 +189,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        "Zor durumda kalarak 2019'da aşırı yararlanmaya maruz kalan bir satıcının zor durumu 10 Ocak 2025'te ortadan kalkmıştır. Satıcı 1 Mart 2025'te hakkını kullanmak istemektedir. Aşağıdakilerden hangisi doğrudur?",
+        "Zor durumda kalarak 2019'da aşırı yararlanmaya maruz kalan bir satıcının zor durumu 10 Ocak 2025'te ortadan kalkmıştır. Satıcı 1 Mart 2025'te hakkını kullanmak istemektedir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hak on yıl içinde kullanılabilir',
-            'B': 'Sözleşmeden itibaren beş yıl geçtiğinden hak kullanılamaz',
-            'C': 'Zor durumun kalktığı tarihten bir yıl geçmediğinden hak kullanılabilir',
-            'D': 'Hak ancak dava yoluyla ve iki yıl içinde kullanılabilir',
-            'E': 'Zor durumda süre işlemediğinden hak süresiz kullanılabilir',
+            'A': 'Zor durumda kalmada bir yıllık süre durumun kalktığı tarihten başlar',
+            'B': 'Bir yıl geçmediğinden satıcı hakkını kullanabilir',
+            'C': 'Hak en geç sözleşmeden itibaren beş yıl içinde kullanılır',
+            'D': 'Bu olayda beş yıllık süre dolmuştur',
+            'E': 'İki süreden önce dolan, hakkın kullanılmasını engeller',
         },
         'B',
-        "TBK m. 28/2'ye göre zor durumda kalmada bir yıllık süre zor durumun ortadan kalktığı tarihten başlar; ancak hak **her hâlde sözleşmenin kurulduğu tarihten başlayarak beş yıl** içinde kullanılmalıdır. 2019'daki sözleşmeden itibaren beş yıl 2024'te dolmuştur.",
-        '6098 sayılı TBK m. 28/2',
+        "TBK m. 28/2: zor durumda kalmada bir yıllık süre zor durumun ortadan kalktığı tarihten başlar; ancak hak her hâlde sözleşmenin kurulduğu tarihten başlayarak beş yıl içinde kullanılmalıdır. 2019'daki sözleşmeden itibaren beş yıl 2024'te dolmuştur; bir yıllık sürenin dolmamış olması sonucu değiştirmez.",
     ),
     # düzey 3
     '0013': patch(
@@ -233,17 +230,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        "İşveren B, çalışanı A'nın 20.000 ₺ zimmete para geçirdiğini öğrenmiş ve savcılığa şikâyet edeceğini söyleyerek A'ya 60.000 ₺'lik bir borç senedi imzalatmıştır. Aşağıdakilerden hangisi doğrudur?",
+        "İşveren B, çalışanı A'nın 20.000 ₺ zimmete para geçirdiğini öğrenmiş ve savcılığa şikâyet edeceğini söyleyerek A'ya 60.000 ₺'lik bir borç senedi imzalatmıştır.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'A sözleşmeyle bağlıdır; ancak tazminat isteyebilir',
-            'B': 'Senet zimmet tutarı kadar geçerli, fazlası kesin hükümsüzdür',
-            'C': 'Bu durumda korkutmanın varlığı kabul edilir',
-            'D': 'Korkutma ancak şiddet tehdidiyle gerçekleşir',
-            'E': 'Şikâyet bir hak olduğundan korkutma söz konusu olamaz',
+            'A': 'Şikâyet bir hak olduğundan bu olayda korkutma söz konusu olamaz',
+            'B': 'Hakkın kullanılacağı korkutması tek başına korkutma sayılmaz',
+            'C': 'Aşırı menfaat sağlanmışsa korkutmanın varlığı kabul edilir',
+            'D': 'Zararın üç katı tutarındaki senet aşırı menfaattir',
+            'E': 'Korkutulan taraf sözleşmeyle bağlı olmayabilir',
         },
         'C',
-        "TBK m. 38/2'ye göre **bir hakkın veya kanundan doğan bir yetkinin kullanılacağı korkutmasıyla** sözleşme yapıldığında, bunu açıklayanın **diğer tarafın zor durumda kalmasından aşırı bir menfaat sağlamış olması hâlinde korkutmanın varlığı kabul edilir**. Zararın üç katı tutarında senet aşırı menfaattir.",
-        '6098 sayılı TBK m. 38/2',
+        'TBK m. 38/2: bir hakkın veya kanundan doğan bir yetkinin kullanılacağı korkutmasıyla sözleşme yapıldığında, bunu açıklayanın diğer tarafın zor durumda kalmasından aşırı bir menfaat sağlamış olması hâlinde korkutmanın varlığı kabul edilir. Zararın üç katı tutarında senet aşırı menfaattir.',
     ),
     # düzey 2
     '0016': patch(
@@ -667,17 +663,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "A, B'ye imzaladığı bir belgede '50.000 ₺ borçluyum' yazmış, ancak borcun hangi sebepten doğduğunu belirtmemiştir. Bu borç tanıması hakkında aşağıdakilerden hangisi doğrudur?",
+        "A, B'ye imzaladığı bir belgede '50.000 ₺ borçluyum' yazmış, ancak borcun hangi sebepten doğduğunu belirtmemiştir.\n\nTBK'ya göre bu borç tanımasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sebep sonradan ispat edilinceye kadar askıdadır',
-            'B': 'Borcun sebebini içermese de geçerlidir',
-            'C': 'Sebep gösterilmediğinden kesin hükümsüzdür',
-            'D': 'Ancak noterde düzenlenirse geçerlidir',
-            'E': 'Tacirler arasında geçerli, diğer kişiler arasında geçersizdir',
+            'A': 'Borç tanıması borcun sebebini içermese de geçerlidir',
+            'B': 'Borç tanıması sebep ispat edilinceye kadar askıdadır',
+            'C': 'Sebep gösterilmemesi kesin hükümsüzlük doğurmaz',
+            'D': 'Borç tanımasının noterde yapılması şart değildir',
+            'E': 'Kural tacir olmayanlar için de geçerlidir',
         },
         'B',
-        "TBK m. 18'e göre **borcun sebebini içermemiş olsa bile borç tanıması geçerlidir**.",
-        '6098 sayılı TBK m. 18',
+        'TBK m. 18: borcun sebebini içermemiş olsa bile borç tanıması geçerlidir; geçerlilik sebebin ispatına, noter onayına ya da tacir sıfatına bağlı değildir.',
     ),
     # düzey 2
     '0047': patch(
@@ -821,17 +816,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0057': patch(
-        "Aldatılarak sözleşme yapan A, bir yıllık süre içinde bağlı olmadığını bildirmemiş ve sözleşmeyi onamış sayılmıştır. A'nın aldatmadan doğan zararları hakkında aşağıdakilerden hangisi doğrudur?",
+        "Aldatılarak sözleşme yapan A, bir yıllık süre içinde bağlı olmadığını bildirmemiş ve sözleşmeyi onamış sayılmıştır.\n\nTBK'ya göre A'nın aldatmadan doğan zararlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Onama ile tazminat hakkı da düşer',
-            'B': 'A ancak sözleşmeyi iptal ederse tazminat isteyebilir',
-            'C': "A'nın zararı sebepsiz zenginleşme hükümlerine göre giderilir",
-            'D': 'Tazminat hakkı bir yıl daha uzar',
-            'E': 'Onama, tazminat hakkını ortadan kaldırmaz',
+            'A': 'Aldatılan bir yıl içinde bildirmezse sözleşmeyi onamış sayılır',
+            'B': 'Onanan sözleşme geçerlilik kazanır',
+            'C': 'Onama tazminat hakkını ortadan kaldırmaz',
+            'D': 'Tazminat için sözleşmenin iptali şart değildir',
+            'E': 'Onama ile tazminat hakkı da düşer',
         },
         'E',
-        "TBK m. 39/2'ye göre **aldatma veya korkutmadan dolayı bağlayıcılığı olmayan bir sözleşmenin onanmış sayılması, tazminat hakkını ortadan kaldırmaz**.",
-        '6098 sayılı TBK m. 39/2',
+        'TBK m. 39: aldatılan, öğrenmeden itibaren bir yıl içinde bağlı olmadığını bildirmezse sözleşmeyi onamış sayılır. m. 39/2: aldatma veya korkutmadan dolayı bağlayıcılığı olmayan bir sözleşmenin onanmış sayılması tazminat hakkını ortadan kaldırmaz.',
     ),
     # düzey 3
     '0058': patch(

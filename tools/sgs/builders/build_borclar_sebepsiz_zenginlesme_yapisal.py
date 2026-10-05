@@ -37,17 +37,16 @@ def patch(stem, options, answer, solution, ref='6098 sayili Turk Borclar Kanunu'
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        "A, bankacılık uygulamasında hesap numarasını yanlış yazarak kiracısına göndereceği 15.000 ₺'yi tanımadığı B'nin hesabına göndermiştir. A'nın bu parayı geri isteme hakkı hakkında aşağıdakilerden hangisi doğrudur?",
+        "A, bankacılık uygulamasında hesap numarasını yanlış yazarak kiracısına göndereceği 15.000 ₺'yi tanımadığı B'nin hesabına göndermiştir.\n\nTBK'ya göre A'nın geri isteme hakkıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "Para banka aracılığıyla gittiğinden A'nın istemi bankaya yöneltilir",
-            'B': 'B haklı bir sebep olmaksızın zenginleştiğinden A geri isteyebilir',
-            'C': "A ancak B'nin kötüniyetli olduğunu ispat ederse geri isteyebilir",
-            'D': "Havale A'nın kusuruyla yapıldığından geri istenemez",
-            'E': 'B parayı istemediğinden zenginleşme gerçekleşmemiştir',
+            'A': 'Haklı sebep olmaksızın zenginleşen geri vermekle yükümlüdür',
+            'B': "Havale A'nın kusuruyla yapıldığından geri istenemez",
+            'C': 'Zenginleşenin kötüniyetli olması şart değildir',
+            'D': "İstem zenginleşen B'ye yöneltilir",
+            'E': 'Zenginleşme banka aracılığıyla gerçekleşse de istem doğar',
         },
         'B',
-        "TBK m. 77'ye göre **haklı bir sebep olmaksızın bir başkasının malvarlığından zenginleşen, bu zenginleşmeyi geri vermekle yükümlüdür**. Fakirleşenin kusuru veya zenginleşenin bilgisi bu yükümlülüğün şartı değildir.",
-        '6098 sayılı TBK m. 77',
+        "TBK m. 77: haklı bir sebep olmaksızın bir başkasının malvarlığından zenginleşen, bu zenginleşmeyi geri vermekle yükümlüdür. Fakirleşenin kusuru veya zenginleşenin kötüniyeti bu yükümlülüğün şartı değildir; istem zenginleşen B'ye yöneltilir.",
     ),
     # düzey 2
     '0002': patch(
@@ -177,17 +176,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        "A, geçersiz bir sözleşme nedeniyle B'ye bir bono vermiştir. A'nın bonoyu geri isteme hakkı zamanaşımına uğradıktan sonra B, bonoya dayanarak ödeme istemiştir. Aşağıdakilerden hangisi doğrudur?",
+        "A, geçersiz bir sözleşme nedeniyle B'ye bir bono vermiştir. A'nın bonoyu geri isteme hakkı zamanaşımına uğradıktan sonra B, bonoya dayanarak ödeme istemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'A ancak bononun yarısını ödemekten kaçınabilir',
-            'B': "B'nin istemi de aynı anda zamanaşımına uğramış sayılır",
-            'C': 'A, geri isteme hakkı zamanaşımına uğrasa da ödemeden kaçınabilir',
-            'D': 'A ödemeden kaçınmak için yeniden dava açmalıdır',
-            'E': 'Geri isteme hakkı zamanaşımına uğradığından A ödemekle yükümlüdür',
+            'A': 'Zenginleşme bir alacak hakkı kazanılmasıyla da gerçekleşebilir',
+            'B': 'Bu hâlde A borcunu ifadan kaçınabilir',
+            'C': 'Geri isteme hakkı zamanaşımına uğradığından A ödemekle yükümlüdür',
+            'D': 'Kaçınma hakkı geri isteme hakkı zamanaşımına uğrasa da kullanılır',
+            'E': 'Geçersiz sözleşme bononun haklı sebebi olamaz',
         },
         'C',
-        "TBK m. 82/2'ye göre **zenginleşme, zenginleşenin bir alacak hakkı kazanması suretiyle gerçekleşmişse** diğer taraf, istem hakkı zamanaşımına uğramış olsa bile, **her zaman bu borcunu ifadan kaçınabilir**.",
-        '6098 sayılı TBK m. 82/2',
+        'TBK m. 82/2: zenginleşme, zenginleşenin bir alacak hakkı kazanması suretiyle gerçekleşmişse diğer taraf, istem hakkı zamanaşımına uğramış olsa bile her zaman bu borcunu ifadan kaçınabilir.',
     ),
     # düzey 3
     '0012': patch(
@@ -569,17 +567,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        'Sebepsiz zenginleşen B, geri verme borcunu ödemeden ölmüştür. Mirası reddetmeyen mirasçılarının durumu hakkında aşağıdakilerden hangisi doğrudur?',
+        'Sebepsiz zenginleşen B, geri verme borcunu ödemeden ölmüştür.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Borç Devlete intikal eder',
-            'B': 'Borç yarı oranda mirasçılara geçer',
-            'C': 'Geri verme borcu mirasçılara geçer',
-            'D': 'Geri verme borcu ölümle sona erer',
-            'E': 'Mirasçılar ancak kötüniyetliyse sorumludur',
+            'A': 'Geri verme borcu malvarlığına ilişkin bir borçtur',
+            'B': 'Borç mirası reddetmeyen mirasçılara geçer',
+            'C': 'Geri verme borcu zenginleşenin ölümüyle sona erer',
+            'D': 'Borç kişiye sıkı sıkıya bağlı bir yükümlülük değildir',
+            'E': 'Mirasçıların sorumluluğu külli halefiyete dayanır',
         },
         'C',
-        'Sebepsiz zenginleşmeden doğan geri verme borcu malvarlığına ilişkin bir borçtur; zenginleşenin ölümüyle sona ermez ve **külli halefiyet** gereği mirası reddetmeyen mirasçılara geçer. Kişiye sıkı sıkıya bağlı bir yükümlülük değildir.',
-        '6098 sayılı TBK m. 77',
+        'Sebepsiz zenginleşmeden doğan geri verme borcu malvarlığına ilişkin bir borçtur; zenginleşenin ölümüyle sona ermez ve külli halefiyet gereği mirası reddetmeyen mirasçılara geçer. Kişiye sıkı sıkıya bağlı bir yükümlülük değildir.',
     ),
     # düzey 3
     '0040': patch(
@@ -695,17 +692,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "İyiniyetli zenginleşen H, geri vermesi gereken bir eve duvara vidalı, zarar vermeden sökülebilen bir dekoratif lamba takmıştır. Geri isteyen taraf lamba için bir bedel önermemiştir. H'nin hakkı hakkında aşağıdakilerden hangisi doğrudur?",
+        "İyiniyetli zenginleşen H, geri vermesi gereken bir eve duvara vidalı, zarar vermeden sökülebilen bir dekoratif lamba takmıştır. Geri isteyen taraf lamba için bir bedel önermemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Lamba eve bağlandığından sökemez',
-            'B': 'Lambanın bedelini geri isteyenden talep edebilir',
-            'C': 'Evi geri vermeden önce lambayı sökerek alabilir',
-            'D': 'Lambanın yarı değerini isteyebilir',
-            'E': 'Lambayı sökebilmek için mahkeme izni alır',
+            'A': 'İyiniyetli zenginleşen zorunlu ve yararlı giderlerini isteyebilir',
+            'B': 'Zenginleşen diğer giderlerinin ödenmesini isteyemez',
+            'C': 'Lamba eve bağlandığından H onu sökemez',
+            'D': 'Karşılık önerilmezse zararsızca ayrılabilen ekleme alınabilir',
+            'E': 'H lambayı evi geri vermeden önce sökebilir',
         },
         'C',
-        "TBK m. 80/3'e göre zenginleşen, zorunlu ve yararlı giderler dışındaki **diğer giderlerinin ödenmesini isteyemez**; ancak **kendisine karşılık önerilmezse**, o şey ile birleştirdiği ve **zararsızca ayrılması mümkün** eklemeleri geri vermeden önce ayırıp alabilir.",
-        '6098 sayılı TBK m. 80/3',
+        'TBK m. 80: iyiniyetli zenginleşen zorunlu ve yararlı giderlerin ödenmesini isteyebilir; diğer giderlerinin ödenmesini isteyemez. Ancak kendisine karşılık önerilmezse, o şey ile birleştirdiği ve zararsızca ayrılması mümkün eklemeleri geri vermeden önce ayırıp alabilir.',
     ),
     # düzey 3
     '0049': patch(
@@ -821,17 +817,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        "Aldatılarak bir sözleşme yapan A, aldatmayı öğrenmesine rağmen kanuni süre içinde sözleşmeyi iptal etmemiştir. A'nın ödediği bedeli sebepsiz zenginleşmeye dayanarak geri istemesi hakkında aşağıdakilerden hangisi doğrudur?",
+        "Aldatılarak bir sözleşme yapan A, aldatmayı öğrenmesine rağmen kanuni süre içinde sözleşmeyi iptal etmemiştir.\n\nTBK'ya göre A'nın ödediği bedelle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Aldatma bulunduğundan, iptal süresi geçmiş olsa da bedel sebepsiz zenginleşme hükümlerine göre geri istenebilir',
-            'B': 'Bedelin yarısı geri istenebilir',
-            'C': 'İstem on yıllık süre içinde ileri sürülebilir',
-            'D': 'İptal süresi geçtiğinden sözleşme geçerli sayılır; bedel haklı sebebe dayanır',
-            'E': 'Aldatan kötüniyetli olduğundan iptal süresi işlemez',
+            'A': 'Aldatılan, öğrendiği andan itibaren bir yıl içinde bağlı olmadığını bildirebilir',
+            'B': 'Süre geçerse sözleşme onaylanmış sayılır',
+            'C': 'Onaylanan sözleşme ödemenin haklı sebebidir',
+            'D': 'Süre geçse de bedel sebepsiz zenginleşme yoluyla geri istenebilir',
+            'E': 'Bu durumda sebepsiz zenginleşme istemi doğmaz',
         },
         'D',
-        "TBK m. 39'a göre aldatma nedeniyle yanılan taraf, aldatmayı öğrendiği andan başlayarak **bir yıl içinde** sözleşmeyle bağlı olmadığını bildirmezse sözleşmeyi **onaylamış sayılır**. Geçerli hâle gelen sözleşme ödemenin **haklı sebebidir**; sebepsiz zenginleşme istemi doğmaz.",
-        '6098 sayılı TBK m. 39, 77',
+        'TBK m. 39: aldatma nedeniyle yanılan taraf, aldatmayı öğrendiği andan başlayarak bir yıl içinde sözleşmeyle bağlı olmadığını bildirmezse sözleşmeyi onaylamış sayılır. Geçerli hâle gelen sözleşme ödemenin haklı sebebidir; sebepsiz zenginleşme istemi doğmaz.',
     ),
     # düzey 2
     '0058': patch(

@@ -163,17 +163,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        "Bir alacağın A'ya mı yoksa C'ye mi ait olduğu mahkemede çekişmelidir ve borç muacceldir. Borçlu B'nin durumu hakkında aşağıdakilerden hangisi doğrudur?",
+        "Bir alacağın A'ya mı yoksa C'ye mi ait olduğu mahkemede çekişmelidir ve borç muacceldir.\n\nTBK'ya göre borçlu B'nin durumuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'B, çekişme bitene kadar temerrüt faizi öder',
-            'B': 'B, dilediği alacaklıya ödeyerek sorumluluktan kurtulur',
-            'C': 'B, alacağın yarısını her birine ödemelidir',
-            'D': 'B, çekişme nedeniyle borçtan kurtulmuş sayılır',
-            'E': 'B, edimi hâkimin belirlediği yere tevdi ederek borçtan kurtulabilir',
+            'A': 'Çekişmeli alacağın borçlusu ifadan kaçınabilir',
+            'B': 'Tevdi hâkimin belirlediği yere yapılır',
+            'C': 'Tevdi ile borçlu borcundan kurtulur',
+            'D': 'Taraflardan her biri borçluyu tevdie zorlayabilir',
+            'E': 'B ifadan kaçınamaz; alacaklılardan birine ödemelidir',
         },
         'E',
-        "TBK m. 187'ye göre kime ait olduğu çekişmeli bulunan bir alacağın borçlusu **ifadan kaçınabilir ve alacağın konusunu hâkim tarafından belirlenen yere tevdi etmekle borçtan kurtulur**; borç muaccelse taraflardan her biri borçluyu tevdie zorlayabilir.",
-        '6098 sayılı TBK m. 187',
+        'TBK m. 187: kime ait olduğu çekişmeli bulunan bir alacağın borçlusu ifadan kaçınabilir ve alacağın konusunu hâkim tarafından belirlenen yere tevdi etmekle borçtan kurtulur; borç muaccelse taraflardan her biri borçluyu tevdie zorlayabilir.',
     ),
     # düzey 3
     '0011': patch(
@@ -373,17 +372,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        "C, arkadaşı B'nin A'ya olan borcu için kendi otomobilini rehin vermiştir. B ödemeyince C, otomobilini rehinden kurtarmak için borcu A'ya ödemiştir. Aşağıdakilerden hangisi doğrudur?",
+        "C, arkadaşı B'nin A'ya olan borcu için kendi otomobilini rehin vermiştir. B ödemeyince C, otomobilini rehinden kurtarmak için borcu A'ya ödemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "C, ancak sebepsiz zenginleşme hükümleriyle B'den isteyebilir",
-            'B': "C, B'nin onayı olmadıkça halef olamaz",
-            'C': "A, C'nin ödemesini reddetmekle yükümlüdür",
-            'D': "C'nin ödemesi bağışlama sayılır",
-            'E': "C, ödediği ölçüde A'nın haklarına halef olur",
+            'A': 'Rehnedilen şeyi kurtaran malik alacaklıya halef olur',
+            'B': 'Halefiyet ödeme ölçüsünde gerçekleşir',
+            'C': "C'nin otomobil üzerinde mülkiyet hakkı vardır",
+            'D': "Halefiyetle A'nın alacağı C'ye kanunen geçer",
+            'E': "C, B'nin onayı olmadan A'nın haklarına halef olamaz",
         },
         'E',
-        "TBK m. 127/1-1'e göre **başkasının borcu için rehnedilen bir şeyi rehinden kurtaran ve bu şey üzerinde mülkiyet veya başka bir ayni hakkı bulunan** üçüncü kişi, ifası ölçüsünde alacaklının haklarına halef olur.",
-        '6098 sayılı TBK m. 127',
+        'TBK m. 127/1-1: başkasının borcu için rehnedilen bir şeyi rehinden kurtaran ve bu şey üzerinde mülkiyet veya başka bir ayni hakkı bulunan üçüncü kişi, ifası ölçüsünde alacaklının haklarına kanunen halef olur; borçlunun onayı aranmaz.',
     ),
     # düzey 2
     '0026': patch(
@@ -597,17 +595,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Bir boyacı, sözleşmeyle boyamayı üstlendiği evde çalışırken dikkatsizliğiyle hem ev sahibinin mobilyasını hem de sokakta park hâlindeki bir yayanın aracını boyamıştır. Boyacının sorumluluğu hakkında aşağıdakilerden hangisi doğrudur?',
+        'Bir boyacı, sözleşmeyle boyamayı üstlendiği evde çalışırken dikkatsizliğiyle hem ev sahibinin mobilyasını hem de sokakta park hâlindeki bir yayanın aracını boyamıştır.\n\nBoyacının sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Her ikisine karşı sebepsiz zenginleşmeden sorumludur',
-            'B': 'Her ikisine vekâletsiz iş görme hükümleri uygulanır',
-            'C': 'Her ikisine karşı sözleşmeye aykırılıktan sorumludur',
-            'D': 'Yayaya karşı sorumluluk ev sahibine aittir',
-            'E': 'Ev sahibine karşı sözleşmeye aykırılıktan, yayaya karşı haksız fiilden sorumludur',
+            'A': 'Mobilya zararı borca aykırılık hükümlerine tabidir',
+            'B': 'Yaya ile boyacı arasında sözleşme ilişkisi yoktur',
+            'C': 'Yayanın zararı haksız fiil hükümlerine göre giderilir',
+            'D': 'Borca aykırılıkta boyacı kusursuzluğunu ispat etmelidir',
+            'E': 'Ev sahibine karşı sorumluluk da haksız fiil hükümlerine tabidir',
         },
         'E',
-        'Ev sahibiyle boyacı arasında sözleşme bulunduğundan mobilya zararı **borca aykırılık** (TBK m. 112) hükümlerine tabidir. Yaya ile boyacı arasında bir sözleşme yoktur; kusurlu ve hukuka aykırı fiille verilen zarar **haksız fiil** (TBK m. 49) hükümlerine göre giderilir.',
-        '6098 sayılı TBK m. 49, 112',
+        'Ev sahibiyle boyacı arasında sözleşme bulunduğundan mobilya zararı borca aykırılık (TBK m. 112) hükümlerine tabidir ve kusur karine olarak kabul edilir. Yaya ile boyacı arasında sözleşme yoktur; bu zarar haksız fiil (TBK m. 49) hükümlerine göre giderilir.',
     ),
     # düzey 3
     '0042': patch(
@@ -681,17 +678,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "A, çiçekçi B'den arkadaşı C'nin evine çiçek gönderilmesini sipariş etmiştir. C'nin ifayı isteme hakkı kararlaştırılmamış; tarafların amacı ve örf de bunu gerektirmemektedir. Aşağıdakilerden hangisi doğrudur?",
+        "A, çiçekçi B'den arkadaşı C'nin evine çiçek gönderilmesini sipariş etmiştir. C'nin ifayı isteme hakkı kararlaştırılmamış; tarafların amacı ve örf de bunu gerektirmemektedir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "Edimin C'ye ifasını A isteyebilir",
-            'B': 'A, çiçeklerin kendisine teslimini isteyebilir',
-            'C': 'C, edimin kendisine ifasını dava edebilir',
-            'D': "Sözleşme C'nin onayıyla kurulmuş olur",
-            'E': "Çiçekçi ancak C'nin rızasıyla ifa edebilir",
+            'A': 'C, çiçeklerin kendisine teslimini bağımsız olarak dava edebilir',
+            'B': "A, edimin C'ye ifa edilmesini isteyebilir",
+            'C': "C'nin bağımsız istem hakkı tarafların amacına bağlıdır",
+            'D': 'Örf ve âdet uygun düşseydi C de istem hakkı kazanabilirdi',
+            'E': 'Bu olay eksik üçüncü kişi yararına sözleşmedir',
         },
         'A',
-        "TBK m. 129/1'e göre **kendi adına sözleşme yapan kişi, sözleşmeye üçüncü kişi yararına bir edim yükümlülüğü koydurmuşsa, edimin üçüncü kişiye ifa edilmesini isteyebilir**. Üçüncü kişinin bağımsız istem hakkı ancak tarafların amacı veya örf ve âdet uygun düşerse doğar (eksik üçüncü kişi yararına sözleşme).",
-        '6098 sayılı TBK m. 129/1',
+        'TBK m. 129: kendi adına sözleşme yapan kişi, üçüncü kişi yararına bir edim yükümlülüğü koydurmuşsa edimin üçüncü kişiye ifa edilmesini isteyebilir. Üçüncü kişinin bağımsız istem hakkı ancak tarafların amacı veya örf ve âdet uygun düşerse doğar; burada eksik üçüncü kişi yararına sözleşme vardır.',
     ),
     # düzey 3
     '0048': patch(

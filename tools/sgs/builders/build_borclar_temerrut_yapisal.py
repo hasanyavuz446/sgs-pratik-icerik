@@ -93,17 +93,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        'Evin boyanması için anlaşılan usta, defalarca uyarılmasına rağmen işe başlamamıştır. Ev sahibinin hakları hakkında aşağıdakilerden hangisi doğrudur?',
+        "Evin boyanması için anlaşılan usta, defalarca uyarılmasına rağmen işe başlamamıştır.\n\nTBK'ya göre ev sahibinin haklarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İşi masrafı ustaya ait olmak üzere başkasına yaptırabilir',
-            'B': 'İşi başkasına yaptırması için ustanın onayı gerekir',
-            'C': 'Ancak sözleşmeden dönebilir, başka hakkı yoktur',
-            'D': 'Ustayı zorla çalıştırmak için icraya başvurur',
-            'E': 'İşi başkasına yaptırırsa masrafı kendisi karşılar',
+            'A': 'İşi başkasına yaptırırsa masrafı ev sahibi karşılar',
+            'B': 'Ev sahibi edimin başkasınca ifasına izin verilmesini isteyebilir',
+            'C': 'Masraf yapma borcunu ifa etmeyen ustaya aittir',
+            'D': 'Ev sahibinin giderim isteme hakkı saklıdır',
+            'E': 'İfaya izin için ustanın onayı gerekmez',
         },
         'A',
-        "TBK m. 113/1'e göre **yapma borcu** borçlu tarafından ifa edilmezse alacaklı, **masrafı borçluya ait olmak üzere edimin kendisi veya başkası tarafından ifasına izin verilmesini** isteyebilir; her türlü giderim isteme hakkı saklıdır.",
-        '6098 sayılı TBK m. 113/1',
+        'TBK m. 113/1: yapma borcu borçlu tarafından ifa edilmezse alacaklı, masrafı borçluya ait olmak üzere edimin kendisi veya başkası tarafından ifasına izin verilmesini isteyebilir; her türlü giderim isteme hakkı saklıdır.',
     ),
     # düzey 2
     '0006': patch(
@@ -219,17 +218,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        'Bir para borcunun sözleşmesinde ne akdi faiz ne de temerrüt faizi kararlaştırılmıştır. Borçlu temerrüde düşmüştür. Uygulanacak temerrüt faizi oranı nasıl belirlenir?',
+        "Bir para borcunun sözleşmesinde ne akdi faiz ne de temerrüt faizi kararlaştırılmıştır. Borçlu temerrüde düşmüştür.\n\nTBK'ya göre temerrüt faiziyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hâkimin serbest takdirine göre',
-            'B': 'Sözleşme tarihindeki piyasa faizine göre',
-            'C': 'Temerrüt faizi istenemez',
-            'D': 'Borcun doğduğu tarihteki mevzuata göre',
-            'E': 'Alacaklının belirleyeceği orana göre',
+            'A': 'Temerrüt faizi oranı sözleşmede kararlaştırılabilir',
+            'B': 'Kararlaştırılmamışsa borcun doğduğu tarihteki mevzuat uygulanır',
+            'C': 'Temerrüde düşen borçlu temerrüt faizi öder',
+            'D': 'Oran alacaklının belirleyeceği orandır',
+            'E': 'Oran hâkimin serbest takdirine bırakılmamıştır',
         },
         'D',
-        "TBK m. 120/1'e göre uygulanacak yıllık temerrüt faizi oranı, **sözleşmede kararlaştırılmamışsa faiz borcunun doğduğu tarihte yürürlükte olan mevzuat hükümlerine** göre belirlenir.",
-        '6098 sayılı TBK m. 120/1',
+        'TBK m. 120/1: uygulanacak yıllık temerrüt faizi oranı, sözleşmede kararlaştırılmamışsa faiz borcunun doğduğu tarihte yürürlükte olan mevzuat hükümlerine göre belirlenir; alacaklının ya da hâkimin takdirine bırakılmamıştır.',
     ),
     # düzey 2
     '0015': patch(
@@ -387,17 +385,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        'Kiralanan aracın frenlerinin arızalı teslim edilmesi nedeniyle kiracı kaza yapmış; kiracının da hız sınırını aşarak zararın artmasına katkıda bulunduğu anlaşılmıştır. Kiracının sözleşmeye dayanan tazminat istemi hakkında aşağıdakilerden hangisi doğrudur?',
+        "Kiralanan aracın frenlerinin arızalı teslim edilmesi nedeniyle kiracı kaza yapmış; kiracının da hız sınırını aşarak zararın artmasına katkıda bulunduğu anlaşılmıştır.\n\nTBK'ya göre kiracının sözleşmeye dayanan tazminat istemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hâkim tazminatta indirim yapabilir, kaldırabilir',
-            'B': 'Tazminat ancak kiracının kusur oranı kadar artırılır',
-            'C': 'Kiracı kusurlu olduğundan tazminat alamaz',
-            'D': 'Sözleşmeye aykırılıkta indirim sebepleri uygulanmaz',
-            'E': 'Kiraya veren kusursuz sayılır',
+            'A': 'Sözleşmeye aykırılıkta indirim sebepleri uygulanmaz',
+            'B': 'Haksız fiil hükümleri sözleşmeye aykırılığa kıyasen uygulanır',
+            'C': 'Zarar görenin zararın artmasına katkısı indirim sebebidir',
+            'D': 'Hâkim tazminatta indirim yapabilir',
+            'E': 'Koşulları varsa hâkim tazminatı kaldırabilir',
         },
         'A',
-        "TBK m. 114/2'ye göre **haksız fiil sorumluluğuna ilişkin hükümler, kıyas yoluyla sözleşmeye aykırılık hâllerine de uygulanır**; zarar görenin zararın artmasında etkili olması m. 52'ye göre indirim sebebidir.",
-        '6098 sayılı TBK m. 114/2, 52',
+        "TBK m. 114/2: haksız fiil sorumluluğuna ilişkin hükümler kıyas yoluyla sözleşmeye aykırılık hâllerine de uygulanır; zarar görenin zararın artmasında etkili olması m. 52'ye göre hâkime tazminatı indirme ya da kaldırma imkânı veren bir sebeptir.",
     ),
     # düzey 3
     '0027': patch(
@@ -499,31 +496,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0034': patch(
-        'Bağışlama vaadine, bağışlayanın ödemede gecikmesi hâlinde ihtar tarihinden itibaren temerrüt faizi işleyeceğine dair bir hüküm konulmuştur. Bu hüküm hakkında aşağıdakilerden hangisi doğrudur?',
+        "Bağışlama vaadine, bağışlayanın ödemede gecikmesi hâlinde ihtar tarihinden itibaren temerrüt faizi işleyeceğine dair bir hüküm konulmuştur.\n\nTBK'ya göre bu hükümle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Faiz ancak dava gününden istenir; hüküm yok sayılır',
-            'B': 'Hüküm bağışlamanın tamamını geçersiz kılar',
-            'C': 'Anlaşma ceza koşulu hükümlerine tabidir',
-            'D': 'Kesin hükümsüzdür ve sonuç doğurmaz',
-            'E': 'Geçerlidir ve m. 121 uygulanmaz',
+            'A': 'Bağışlanan paranın temerrüt faizi takip veya dava gününden işler',
+            'B': 'Bu kurala aykırı anlaşma ceza koşulu hükümlerine tabidir',
+            'C': 'Anlaşma geçerlidir ve m. 121 uygulanmaz',
+            'D': 'Hâkimin ceza koşulunu indirme yetkisi uygulanabilir',
+            'E': 'Anlaşma bağışlamanın tamamını geçersiz kılmaz',
         },
         'C',
-        "TBK m. 121/1'e göre bağışlanan paranın ödenmesinde temerrüt faizi **icra takibi veya dava gününden** işler; m. 121/2'ye göre **buna aykırı olarak yapılan anlaşmalar ceza koşulu hükümlerine tabi olur** ve hâkimin indirim yetkisi gibi kurallar uygulanır.",
-        '6098 sayılı TBK m. 121/2',
+        'TBK m. 121/1: bağışlanan paranın ödenmesinde temerrüt faizi icra takibi veya dava gününden işler. m. 121/2: buna aykırı olarak yapılan anlaşmalar ceza koşulu hükümlerine tabi olur; hâkimin indirim yetkisi gibi kurallar uygulanır ve bağışlama geçerliliğini korur.',
     ),
     # düzey 2
     '0035': patch(
-        'Bir mağaza, yaz sezonu için sipariş ettiği mayoların sezon sonunda, eylül ayında teslim edilmek istendiğini görmüştür. Mayoların satış imkânı kalmamıştır. Aşağıdakilerden hangisi doğrudur?',
+        "Bir mağaza, yaz sezonu için sipariş ettiği mayoların sezon sonunda, eylül ayında teslim edilmek istendiğini görmüştür. Mayoların satış imkânı kalmamıştır.\n\nTBK'ya göre mağazanın haklarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Süre vermeden seçimlik haklarını kullanabilir',
-            'B': 'Ancak hâkimden süre isteyebilir',
-            'C': 'Mayoları kabul etmek ve bedeli ödemekle yükümlüdür',
-            'D': 'Sözleşme sezon bitince sona ermiştir',
-            'E': 'Önce uygun bir süre vermelidir',
+            'A': 'Mağaza mayoları kabul etmek ve bedelini ödemekle yükümlüdür',
+            'B': 'Kural olarak alacaklı borçluya uygun bir süre verir',
+            'C': 'İfa alacaklı için yararsız kalmışsa süre verilmesi gerekmez',
+            'D': 'Sezon sonu teslim alacaklı için yararsız olabilir',
+            'E': 'Mağaza süre vermeden seçimlik haklarını kullanabilir',
         },
         'A',
-        "TBK m. 124/2'ye göre **borçlunun temerrüdü sonucunda borcun ifası alacaklı için yararsız kalmışsa** süre verilmesine gerek yoktur.",
-        '6098 sayılı TBK m. 124/2',
+        "TBK m. 123-125: borçlunun temerrüdünde alacaklı kural olarak uygun bir süre verir; ancak m. 124/2'ye göre borçlunun temerrüdü sonucunda borcun ifası alacaklı için yararsız kalmışsa süre verilmesine gerek yoktur ve alacaklı seçimlik haklarını doğrudan kullanabilir.",
     ),
     # düzey 2
     '0036': patch(
@@ -779,31 +774,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0054': patch(
-        'Teslim gününde ağır bir hastalık nedeniyle hastaneye kaldırılan ve bu nedenle teslimi geciktiren satıcının deposundaki mallar, gecikme sırasında sel sonucu zarar görmüştür. Satıcı, temerrüde düşmekte kusuru olmadığını ispat etmiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Teslim gününde ağır bir hastalık nedeniyle hastaneye kaldırılan ve bu nedenle teslimi geciktiren satıcının deposundaki mallar, gecikme sırasında sel sonucu zarar görmüştür. Satıcı, temerrüde düşmekte kusuru olmadığını ispat etmiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Satıcı beklenmedik hâlden doğan zarardan sorumlu değildir',
-            'B': 'Hastalık temerrüdü değil sözleşmeyi sona erdirir',
-            'C': 'Satıcı ancak selin mallara ulaşmayacağını ispat ederse kurtulur',
-            'D': 'Temerrütteki borçlu beklenmedik hâlden kusursuz olsa da sorumludur',
-            'E': 'Satıcı zararın yarısından sorumludur',
+            'A': 'Temerrütteki borçlu kusursuz olsa da beklenmedik hâlden sorumludur',
+            'B': 'Temerrütteki borçlu kural olarak beklenmedik hâlden de sorumludur',
+            'C': 'Temerrüde düşmekte kusursuzluğunu ispat eden borçlu kurtulur',
+            'D': 'Zamanında ifada da zararın doğacağını ispat eden borçlu kurtulur',
+            'E': 'Bu olayda satıcı beklenmedik hâlden doğan zarardan sorumlu değildir',
         },
         'A',
-        "TBK m. 119/2'ye göre temerrüde düşen borçlu, **temerrüde düşmekte kusuru olmadığını** veya zamanında ifa etseydi de beklenmedik hâlin zarar vereceğini ispat ederek beklenmedik hâlden doğan sorumluluktan kurtulabilir.",
-        '6098 sayılı TBK m. 119',
+        'TBK m. 119: temerrüde düşen borçlu beklenmedik hâlden doğan zararlardan da sorumludur; ancak temerrüde düşmekte kusuru olmadığını veya zamanında ifa etseydi de beklenmedik hâlin zarar vereceğini ispat ederek bu sorumluluktan kurtulabilir.',
     ),
     # düzey 2
     '0055': patch(
-        'Temerrüt faizini aşan zararın miktarı, görülmekte olan alacak davasında bilirkişi incelemesiyle belirlenebilmektedir. Davacı bu zararın da hüküm altına alınmasını istemiştir. Hâkim hakkında aşağıdakilerden hangisi doğrudur?',
+        "Temerrüt faizini aşan zararın miktarı, görülmekte olan alacak davasında bilirkişi incelemesiyle belirlenebilmektedir. Davacı bu zararın da hüküm altına alınmasını istemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Aşkın zararı temerrüt faiziyle sınırlar',
-            'B': 'İstem üzerine aşkın zarara da hükmeder',
-            'C': 'Aşkın zarar için ayrı dava açılmasını bekler',
-            'D': 'Aşkın zarara ancak borçlunun onayıyla hükmeder',
-            'E': 'Aşkın zarar istemini dinlemeden reddeder',
+            'A': 'Temerrüt faizini aşan zarar istenebilir',
+            'B': 'Hâkim aşkın zararı temerrüt faiziyle sınırlar',
+            'C': 'Aşkın zarar görülmekte olan davada belirlenebiliyorsa hükme bağlanır',
+            'D': 'Hüküm davacının istemi üzerine verilir',
+            'E': 'Aşkın zarar için ayrı dava açılması beklenmez',
         },
         'B',
-        "TBK m. 122/2'ye göre **temerrüt faizini aşan zarar miktarı görülmekte olan davada belirlenebiliyorsa, davacının istemi üzerine hâkim, esas hakkında karar verirken bu zararın miktarına da hükmeder**.",
-        '6098 sayılı TBK m. 122/2',
+        'TBK m. 122/2: temerrüt faizini aşan zarar miktarı görülmekte olan davada belirlenebiliyorsa, davacının istemi üzerine hâkim, esas hakkında karar verirken bu zararın miktarına da hükmeder.',
     ),
     # düzey 3
     '0056': patch(

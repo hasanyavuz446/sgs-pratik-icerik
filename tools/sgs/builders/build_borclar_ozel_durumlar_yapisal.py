@@ -191,31 +191,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        'Alıcı, satış sözleşmesi yapılırken satıcıya 30.000 ₺ vermiş; bunun cayma parası olduğu kararlaştırılmamıştır. Alıcı daha sonra bu parayı bırakarak sözleşmeden caymak istemektedir. Aşağıdakilerden hangisi doğrudur?',
+        "Alıcı, satış sözleşmesi yapılırken satıcıya 30.000 ₺ vermiş; bunun cayma parası olduğu kararlaştırılmamıştır. Alıcı daha sonra bu parayı bırakarak sözleşmeden caymak istemektedir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "Satıcı cayarsa aldığının iki katını, 60.000 ₺'yi öder",
-            'B': "Alıcı 30.000 ₺'yi bırakarak sözleşmeden cayabilir",
-            'C': 'Para bağlanma parasıdır; cayma hakkı vermez',
-            'D': 'Para cayma parası sayılır',
-            'E': 'Sözleşme kesin hükümsüz olur',
+            'A': 'Sözleşme yapılırken verilen para kural olarak bağlanma parasıdır',
+            'B': 'Bağlanma parası kural olarak esas alacaktan düşülür',
+            'C': 'Verilen para alıcıya parayı bırakarak cayma hakkı verir',
+            'D': 'Cayma parası kararlaştırılsaydı alıcı parayı bırakıp cayabilirdi',
+            'E': 'Cayma parasını alan taraf cayarsa iki katını geri verir',
         },
         'C',
-        "TBK m. 177'ye göre sözleşme yapılırken verilen para **kural olarak cayma parası değil, bağlanma parasıdır**; sözleşmenin yapıldığına kanıt olarak verilmiş sayılır. Cayma hakkı ancak m. 178 uyarınca cayma parası kararlaştırılmışsa doğar.",
-        '6098 sayılı TBK m. 177, 178',
+        'TBK m. 177: sözleşme yapılırken verilen para cayma parası değil bağlanma parası sayılır ve aksine hüküm yoksa esas alacaktan düşülür. m. 178: cayma parası kararlaştırılmışsa parayı veren onu bırakarak, alan ise iki katını geri vererek sözleşmeden cayabilir.',
     ),
     # düzey 2
     '0013': patch(
-        'İnşaat sözleşmesinde, her gün gecikme için 5.000 ₺ ceza kararlaştırılmıştır. Yüklenici binayı on gün geç teslim etmiş; iş sahibi binayı hiçbir çekince koymadan teslim almıştır. Gecikme cezası hakkında aşağıdakilerden hangisi doğrudur?',
+        "İnşaat sözleşmesinde, her gün gecikme için 5.000 ₺ ceza kararlaştırılmıştır. Yüklenici binayı on gün geç teslim etmiş; iş sahibi binayı hiçbir çekince koymadan teslim almıştır.\n\nTBK'ya göre gecikme cezasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İş sahibi binayı iade ederek cezayı isteyebilir',
-            'B': 'Ceza ancak zarar ispat edilirse istenebilir',
-            'C': 'İş sahibi binayı almış olsa da 50.000 ₺ cezayı ayrıca isteyebilir',
-            'D': 'Ceza yarı oranda istenebilir',
-            'E': 'Çekincesiz kabul nedeniyle gecikme cezası istenemez',
+            'A': 'Ceza, borcun zamanında ifa edilmemesi için kararlaştırılabilir',
+            'B': 'Gecikme cezası kural olarak ifayla birlikte istenebilir',
+            'C': 'Açık feragat da ceza isteme hakkını ortadan kaldırır',
+            'D': 'Çekince konsaydı ceza ifayla birlikte istenebilirdi',
+            'E': 'Çekincesiz kabul, ceza istemeye engel olmaz',
         },
         'E',
-        "TBK m. 179/2'ye göre ceza borcun belirlenen **zaman veya yerde** ifa edilmemesi için kararlaştırılmışsa alacaklı asıl borçla birlikte cezayı da isteyebilir; ancak **hakkından açıkça feragat etmiş veya ifayı çekincesiz olarak kabul etmiş** ise isteyemez.",
-        '6098 sayılı TBK m. 179/2',
+        'TBK m. 179/2: ceza, borcun belirlenen zaman veya yerde ifa edilmemesi için kararlaştırılmışsa alacaklı, hakkından açıkça feragat etmiş veya ifayı çekince ileri sürmeksizin kabul etmiş olmadıkça, asıl borcun ifasıyla birlikte cezayı da isteyebilir.',
     ),
     # düzey 3
     '0014': patch(
@@ -653,17 +651,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "A, B ve C, 90.000 ₺'lik bir borçtan müteselsilen sorumludur. Alacaklı, borcun tamamını yalnız B'den istemiştir. Aşağıdakilerden hangisi doğrudur?",
+        "A, B ve C, 90.000 ₺'lik bir borçtan müteselsilen sorumludur. Alacaklı, borcun tamamını B'den istemiştir.\n\nTBK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "B, kendi payı olan 30.000 ₺'yi öder",
-            'B': "B'nin sorumluluğu payını ödeyince sona erer",
-            'C': 'Alacaklı tamamını dilediği borçludan isteyebilir',
-            'D': "Alacaklı önce A'ya başvurmalıdır",
-            'E': 'Alacaklı borcu üçe bölerek istemelidir',
+            'A': 'Borçluların her biri borcun tamamından sorumludur',
+            'B': 'Alacaklı borcun bir kısmını da isteyebilir',
+            'C': "Alacaklı B'den payı olan 30.000 ₺'yi isteyebilir, fazlasını isteyemez",
+            'D': "B'nin ödemesi diğer borçluları da alacaklıya karşı kurtarır",
+            'E': 'B, payını aşan ödeme için diğerlerine rücu edebilir',
         },
         'C',
-        "TBK m. 163'e göre **alacaklı, borcun tamamının veya bir kısmının ifasını, dilerse borçluların hepsinden, dilerse yalnız birinden** isteyebilir; borçluların sorumluluğu borcun tamamı ödeninceye kadar devam eder.",
-        '6098 sayılı TBK m. 163',
+        'TBK m. 163: alacaklı, müteselsil borçlulardan her birinden borcun tamamını veya bir kısmını isteyebilir; borcun tamamı ödenmedikçe bütün borçluların sorumluluğu devam eder. m. 166-167: ödeme diğerlerini de kurtarır; payını aşan ödeme yapan borçlu diğerlerine rücu eder.',
     ),
     # düzey 3
     '0046': patch(
@@ -695,17 +692,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "Baba, oğluna 'üniversite sınavını kazanırsan sana bir otomobil alacağım' diyerek yazılı bir bağışlama vaadinde bulunmuştur. Vaadin hükmü hakkında aşağıdakilerden hangisi doğrudur?",
+        "Baba, oğluna 'üniversite sınavını kazanırsan sana bir otomobil alacağım' diyerek yazılı bir bağışlama vaadinde bulunmuştur.\n\nTBK'ya göre bu vaatle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Vaat hemen hüküm doğurur, koşul yok sayılır',
-            'B': 'Vaat sınav tarihinde düşer',
-            'C': 'Geciktirici koşula bağlıdır; kazanılınca hüküm doğurur',
-            'D': 'Koşul kesin hükümsüzdür',
-            'E': 'Bozucu koşula bağlıdır; kazanılınca sona erer',
+            'A': 'Vaat geciktirici koşula bağlıdır',
+            'B': 'Koşul gerçekleşmeden vaat hüküm doğurmaz',
+            'C': 'Vaat hemen hüküm doğurur; sınav kaybedilirse sona erer',
+            'D': 'Koşul gerçekleşince hüküm kural olarak o andan doğar',
+            'E': 'Bağışlama vaadi yazılı şekle tabidir',
         },
         'C',
-        "TBK m. 170'e göre bir sözleşmenin hüküm ifade etmesi **gerçekleşip gerçekleşmeyeceği bilinmeyen bir olguya** bırakılmışsa geciktirici koşul vardır; aksi kararlaştırılmamışsa sözleşme **koşulun gerçekleştiği andan** başlayarak hüküm ifade eder.",
-        '6098 sayılı TBK m. 170',
+        "TBK m. 170: bir sözleşmenin hüküm doğurması gerçekleşip gerçekleşmeyeceği belli olmayan bir olguya bağlanmışsa sözleşme geciktirici koşula bağlıdır; koşulun gerçekleşmesiyle, kural olarak o andan itibaren hüküm doğurur. Bağışlama vaadi m. 288'e göre yazılı şekle tabidir.",
     ),
     # düzey 2
     '0049': patch(
