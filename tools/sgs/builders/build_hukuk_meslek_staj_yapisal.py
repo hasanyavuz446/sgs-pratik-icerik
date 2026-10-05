@@ -157,13 +157,13 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        'Bir aday, stajına ara vermiş ve bir süre sonra kaldığı yerden devam etmek istemektedir. Buna göre staj süresinin hesabı bakımından aşağıdakilerden hangisi doğrudur?',
+        'Bir aday, stajına ara vermiş ve bir süre sonra kaldığı yerden devam etmek istemektedir. Buna göre staj süresinin hesabı bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Staj süresi meslek mensubunun takdirine bırakılmıştır',
-            'B': 'Staj süresi mevzuatta öngörülen esaslara göre hesaplanır; ara verilen dönemler süreye eklenmez',
-            'C': 'Staj süresi adayın beyanına göre belirlenir',
-            'D': 'Staja ara veren aday, önceki süreleri geçersiz sayılarak stajını baştan yapar',
-            'E': 'Staj süresi takvim yılı esasına göre kesintisiz işler; ara verilen dönemler de süreye dâhil edilir',
+            'A': 'Staj süresi fiilen geçen süreler üzerinden hesaplanır',
+            'B': 'Staja ara veren aday stajını baştan yapar',
+            'C': 'Ara verilen dönemler süreye eklenmez',
+            'D': 'Süre adayın beyanına göre belirlenmez',
+            'E': 'Süre meslek mensubunun takdirine bırakılmamıştır',
         },
         'B',
         'Staj yönetmeliği: staj süresi fiilen çalışılan süreler üzerinden hesaplanır; ara verilen dönemler süreye dâhil edilmez. Ara verme stajı baştan yapmayı gerektirmez; aday kaldığı yerden devam eder. Süre ne adayın beyanına ne de meslek mensubunun takdirine bırakılmıştır.',
@@ -209,16 +209,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        'Meslek sınavında başarısız olan bir aday, yeniden sınava girmek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Meslek sınavında başarısız olan bir aday, yeniden sınava girmek istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Başarısız olan adayın sınav hakkı tümüyle sona erer',
-            'B': 'Adaya mevzuatta öngörülen sayı ve süre sınırları içinde yeniden sınav hakkı tanınır',
-            'C': 'Aday sınırsız sayıda ve süresiz olarak sınava girebilir',
-            'D': 'Aday yeniden sınava girmek için stajını tekrarlamalıdır',
-            'E': 'Yeniden sınava girme hakkı yalnızca oda yönetim kurulunun izniyle kullanılabilir',
+            'A': 'Başarısızlık sınav hakkını ortadan kaldırmaz',
+            'B': 'Aday sınırsız sayıda ve süresiz olarak sınava girebilir',
+            'C': 'Yeniden sınava girmek için stajın tekrarı gerekmez',
+            'D': 'Hakkın kullanılması oda yönetim kurulunun iznine bağlı değildir',
+            'E': 'Yeniden sınav hakkı mevzuattaki esaslara göre kullanılır',
         },
         'B',
-        'Sınav yönetmeliği: başarısız olan adaya belirlenen sayı ve süre sınırları içinde yeniden sınav hakkı tanınır. Hak ne tümüyle sona erer ne de sınırsızdır; stajın tekrarı da gerekmez.',
+        'Sınav yönetmeliği: başarısız olan adaya belirlenen sayı ve süre sınırları içinde yeniden sınav hakkı tanınır. Hak ne tümüyle sona erer ne de sınırsızdır; stajın tekrarı ya da oda izni gerekmez.',
     ),
     # düzey 2
     '0014': patch(
@@ -248,16 +248,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        'Sekiz yıldır SMMM olarak çalışan bir meslek mensubu, yeminli mali müşavir olmak için başvurmak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Sekiz yıldır SMMM olarak çalışan bir meslek mensubu, yeminli mali müşavir olmak için başvurmak istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'On yıllık çalışma süresi şartı yalnızca lisansüstü diploması bulunmayan adaylar için aranır',
-            'B': 'YMM olmak için çalışma süresi aranmaz; yalnızca sınav yeterlidir',
-            'C': 'En az on yıllık çalışma şartı gerçekleşmediğinden başvuru koşulları henüz oluşmamıştır',
-            'D': 'Sekiz yıllık çalışma yeterlidir; aday doğrudan YMM sınavına girebilir',
-            'E': 'On yıllık süre, adayın stajda geçirdiği süreyi de kapsar',
+            'A': 'Süre, SMMM olarak fiilen çalışılan süredir',
+            'B': 'Sekiz yıllık çalışma başvuru için yetmez',
+            'C': 'On yıllık süre, adayın stajda geçirdiği süreyi de kapsar',
+            'D': 'YMM ruhsatı alınmadan YMM unvanı kullanılamaz',
+            'E': 'Çalışma süresi şartı lisansüstü diplomayla kalkmaz',
         },
         'C',
-        '3568 md. 6: yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak, YMM sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. Süre, SMMM olarak FİİLEN çalışılan süredir; stajda geçen süre buna dâhil değildir.',
+        '3568 md. 6: yeminli mali müşavir olabilmek için en az on yıl serbest muhasebeci mali müşavirlik yapmış olmak, YMM sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. Süre SMMM olarak fiilen çalışılan süredir; stajda geçen süre buna dâhil değildir ve lisansüstü diploma şartı kaldırmaz.',
     ),
     # düzey 3
     '0017': patch(
@@ -300,29 +300,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0020': patch(
-        'Yeminli mali müşavirlik ruhsatını alan bir meslek mensubu, yemin etmeden tasdik işlerine başlamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Yeminli mali müşavirlik ruhsatını alan bir meslek mensubu, yemin etmeden tasdik işlerine başlamıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yemin yükümlülüğü ruhsat alındıktan sonra beş yıl içinde yerine getirilir',
-            'B': 'Yemin yükümlülüğü serbest muhasebeci mali müşavirler için de öngörülmüş olup ruhsat öncesinde yerine getirilir',
-            'C': 'Yeminli mali müşavirler mesleki faaliyete başlamadan önce yemin etmekle yükümlüdür',
-            'D': 'Yemin yükümlülüğü kaldırılmış olup yerini yazılı taahhüt almıştır',
-            'E': 'Yemin, her tasdik işi için ayrı ayrı edilir',
+            'A': 'Yeminli mali müşavirler faaliyete başlamadan önce yemin eder',
+            'B': "Yemin yükümlülüğü SMMM'ler için öngörülmemiştir",
+            'C': 'Yemin her tasdik işi için ayrı ayrı edilir',
+            'D': 'Yemin yükümlülüğü yazılı taahhütle değiştirilmemiştir',
+            'E': 'Yemin etmeden tasdik işine başlanması mevzuata aykırıdır',
         },
         'C',
-        '3568 md. 11: yeminli mali müşavirler mesleki faaliyete başlamadan ÖNCE yemin ederler. Yemin bir kez edilir, YMM unvanına özgüdür ve serbest muhasebeci mali müşavirler için öngörülmemiştir.',
+        '3568 md. 11: yeminli mali müşavirler mesleki faaliyete başlamadan önce yemin ederler. Yemin bir kez edilir, YMM unvanına bağlıdır ve serbest muhasebeci mali müşavirler için öngörülmemiştir.',
     ),
     # düzey 2
     '0021': patch(
-        'Bir kişi, mesleğe yeni girmek için serbest muhasebeci unvanını kullanmak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir kişi, mesleğe yeni girmek için serbest muhasebeci unvanını kullanmak istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Bu unvanla mesleğe giriş sürmekte olup unvan yalnızca lisans mezunu olmayan adaylar tarafından kullanılmaktadır',
-            'B': 'Bu unvanla mesleğe yeni giriş kapanmış olup mevcut serbest muhasebecilerin kazanılmış hakları korunmuştur',
-            'C': 'Bu unvanla mesleğe giriş hâlen mümkündür',
-            'D': 'Unvan tümüyle kaldırılmış olup kazanılmış hak tanınmamıştır',
-            'E': 'Unvan, yeminli mali müşavirliğe geçiş için ara basamak olarak korunmuştur',
+            'A': 'Bu unvanla mesleğe yeni giriş kapanmıştır',
+            'B': 'Unvan, yeminli mali müşavirliğe geçiş için ara basamak olarak korunmuştur',
+            'C': 'Mevcut serbest muhasebecilerin kazanılmış hakları korunmuştur',
+            'D': 'Şartları taşıyanlara SMMM unvanına geçiş imkânı tanınmıştır',
+            'E': "Değişiklik 5786 sayılı Kanun'la yapılmıştır",
         },
         'B',
-        "5786 sayılı Kanun'la 3568 sayılı Kanun'da yapılan değişiklikten sonra SERBEST MUHASEBECİ unvanıyla mesleğe YENİ GİRİŞ kapanmıştır. O tarihte unvanı taşıyanların kazanılmış hakları korunmuş; şartları taşıyanlara SMMM unvanına geçiş imkânı tanınmıştır.",
+        "5786 sayılı Kanun'la 3568 sayılı Kanun'da yapılan değişiklikten sonra serbest muhasebeci unvanıyla mesleğe yeni giriş kapanmıştır. O tarihte unvanı taşıyanların kazanılmış hakları korunmuş, şartları taşıyanlara SMMM unvanına geçiş imkânı tanınmıştır. Unvan YMM'liğe geçiş için bir ara basamak değildir.",
     ),
     # düzey 3
     '0022': patch(
@@ -547,16 +547,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0039': patch(
-        'Stajını sürdüren bir aday, staj kayıtlarının kim tarafından tutulduğunu ve sürecin kimin denetiminde yürüdüğünü öğrenmek istemektedir. Buna göre meslek stajının denetimi ve kaydı bakımından aşağıdakilerden hangisi doğrudur?',
+        'Stajını sürdüren bir aday, staj kayıtlarının kim tarafından tutulduğunu ve sürecin kimin denetiminde yürüdüğünü öğrenmek istemektedir. Buna göre meslek stajının denetimi ve kaydı bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Staj denetimi Kamu Gözetimi Kurumuna aittir',
-            'B': 'Staj için herhangi bir kayıt tutulmaz',
-            'C': 'Staj yalnızca yanında staj yapılan meslek mensubunca izlenir',
-            'D': 'Staj denetimi Hazine ve Maliye Bakanlığınca yürütülür',
-            'E': 'Staj, TESMER/TÜRMOB tarafından izlenir ve kayıt altına alınır',
+            'A': 'Staj TESMER/TÜRMOB tarafından izlenir',
+            'B': 'Staj kayıt altına alınır',
+            'C': 'Yanında staj yapılan meslek mensubu izlemede rol alır',
+            'D': 'Staj denetimi Kamu Gözetimi Kurumuna ait değildir',
+            'E': 'Staj denetimi Hazine ve Maliye Bakanlığınca yürütülür',
         },
         'E',
-        'Staj yönetmeliği: staj TESMER/TÜRMOB tarafından izlenir, değerlendirilir ve kayıt altına alınır. Yanında staj yapılan meslek mensubu da izlemede rol alır; ancak denetim münhasıran ona bırakılmamıştır.',
+        'Staj yönetmeliği: staj TESMER/TÜRMOB tarafından izlenir, değerlendirilir ve kayıt altına alınır. Yanında staj yapılan meslek mensubu da izlemede rol alır. Denetim Kamu Gözetimi Kurumuna ya da Bakanlığa ait değildir.',
     ),
     # düzey 1
     '0040': patch(
@@ -599,16 +599,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0043': patch(
-        'Lisans öğrenimini yeni tamamlayan bir aday, staja giriş sınavına başvurabilmek için gereken öğrenim koşulunu araştırmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Lisans öğrenimini yeni tamamlayan bir aday, staja giriş sınavına başvurabilmek için gereken öğrenim koşulunu araştırmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Herhangi bir öğrenim şartı aranmaz',
-            'B': 'Adayın ilgili dallarda en az lisans düzeyinde öğrenim şartını taşıması gerekir',
-            'C': 'Lisansüstü diploma zorunludur',
-            'D': 'Ön lisans mezunu olmak yeterlidir',
-            'E': 'Yalnızca muhasebe lisansı kabul edilir; diğer lisans dalları öğrenim şartını karşılamaz',
+            'A': 'İlgili dallarda en az lisans öğrenimi aranır',
+            'B': 'Öğrenim şartını muhasebe lisansı karşılar, diğer dallar karşılamaz',
+            'C': 'Hukuk ve iktisat lisansı öğrenim şartını karşılar',
+            'D': 'İşletme ve maliye lisansı öğrenim şartını karşılar',
+            'E': 'Ön lisans mezuniyeti yeterli sayılmaz',
         },
         'B',
-        '3568 md. 5/A-a: hukuk, iktisat, maliye, işletme, muhasebe, bankacılık, kamu yönetimi ve siyasal bilimler dallarında en az LİSANS düzeyinde öğrenim ya da bu dallar dışındaki lisansın ardından bu alanlarda lisansüstü diploma aranır.',
+        '3568 md. 5/A-a: hukuk, iktisat, maliye, işletme, muhasebe, bankacılık, kamu yönetimi ve siyasal bilimler dallarında en az lisans düzeyinde öğrenim ya da bu dallar dışındaki lisansın ardından bu alanlarda lisansüstü diploma aranır. Ön lisans yetmez; şart muhasebe lisansına özgü değildir.',
     ),
     # düzey 2
     '0044': patch(
@@ -651,16 +651,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0047': patch(
-        'Stajına yeni başlayan bir aday, staj döneminde hangi işleri kendi başına yürütebileceğini sormaktadır. Buna göre meslek stajı süresince adayın temel yükümlülüğü aşağıdakilerden hangisidir?',
+        'Stajına yeni başlayan bir aday, staj döneminde hangi işleri kendi başına yürütebileceğini sormaktadır. Buna göre meslek stajı bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Bağımsız olarak beyanname imzalamak',
-            'B': 'Kendi adına müşteri kabul etmek',
-            'C': 'Tasdik işlerini yürütmek',
-            'D': 'Yanında staj yaptığı meslek mensubunun gözetiminde mesleki uygulamayı öğrenmek',
-            'E': 'Kendi bürosunu açarak bağımsız biçimde mesleki faaliyet gösterip müşteri kabul etmek',
+            'A': 'Stajyer kendi adına müşteri kabul edemez',
+            'B': 'Stajyer kendi bürosunu açamaz',
+            'C': 'Staj, meslek mensubunun gözetiminde yürür',
+            'D': 'Stajyer, stajın ikinci yılında bağımsız iş alabilir',
+            'E': 'Staj dönemi mesleki uygulamayı öğrenmeye ayrılmıştır',
         },
         'D',
-        'Staj, adayın meslek mensubunun GÖZETİMİNDE mesleki bilgi ve uygulama kazandığı dönemdir. Müşteri kabulü, imza, büro açma ve tasdik yetkileri ruhsatlı meslek mensubuna aittir (3568 md. 3, 12).',
+        'Staj, adayın meslek mensubunun gözetiminde mesleki bilgi ve uygulama kazandığı dönemdir. Müşteri kabulü, büro açma ve bağımsız iş alma ruhsatlı meslek mensubuna ait olup staj süresinin ilerlemesiyle doğmaz (3568 md. 3).',
     ),
     # düzey 1
     '0048': patch(
@@ -677,16 +677,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0049': patch(
-        'Meslek yeterlilik sınavını kazanan bir aday, genel şartlardan birini taşımadığı hâlde ruhsat verileceğini düşünmektedir. Buna göre ruhsatın verilmesi bakımından aşağıdakilerden hangisi doğrudur?',
+        'Meslek yeterlilik sınavını kazanan bir aday, genel şartlardan birini taşımadığı hâlde ruhsat verileceğini düşünmektedir. Buna göre ruhsatın verilmesi bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Ruhsat, genel ve özel şartların tamamını taşıyanlara verilir',
-            'B': 'Ruhsat, staj tamamlandığında kendiliğinden doğar',
-            'C': 'Ruhsat sınavı kazanan herkese başkaca şart aranmaksızın verilir',
-            'D': 'Ruhsat yalnızca yeminli mali müşavirler için düzenlenir',
-            'E': 'Ruhsat doğrudan Bakanlıkça resen düzenlenir',
+            'A': 'Ruhsat, Bakanlıkça başvuru aranmaksızın düzenlenir',
+            'B': 'Ruhsat genel ve özel şartları taşıyanlara verilir',
+            'C': 'Genel şartlardan birini taşımayan adaya ruhsat verilmez',
+            'D': 'Stajın tamamlanması ruhsat için yeterli değildir',
+            'E': 'Ruhsat serbest muhasebeci mali müşavirler için de düzenlenir',
         },
         'A',
-        '3568 md. 4 ve 5: ruhsat, Kanunda aranan GENEL ve ÖZEL şartların tamamını taşıyanlara verilir. Sınavı kazanmak tek başına yeterli değildir; genel şartlar da aranır.',
+        '3568 md. 4 ve 5: ruhsat, Kanunda aranan genel ve özel şartların tamamını taşıyanlara başvuru üzerine verilir; genel şartlardan birini taşımayana verilmez. Staj tamamlanınca kendiliğinden doğmaz ve hem SMMM hem YMM için düzenlenir.',
     ),
     # düzey 1
     '0050': patch(

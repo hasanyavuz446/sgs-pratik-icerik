@@ -82,16 +82,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0003': patch(
-        'Bir meslek mensubu, özensiz davranarak müşterisinin defterlerini hatalı tutmuş; hata nedeniyle müşteri idari para cezasına muhatap olmuştur. Meslek mensubu, sözleşmede sorumluluğunu kaldıran bir kayıt bulunduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, özensiz davranarak müşterisinin defterlerini hatalı tutmuş; hata nedeniyle müşteri idari para cezasına muhatap olmuştur. Meslek mensubu, sözleşmede sorumluluğunu kaldıran bir kayıt bulunduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Zarardan yalnızca müşteri sorumludur; meslek mensubuna başvurulamaz',
-            'B': 'Sorumluluğu kaldıran sözleşme kaydı geçerli olduğundan meslek mensubunun bu olayda hiçbir sorumluluğu doğmaz',
-            'C': 'Meslek mensubu kusuruyla verdiği zarardan sorumludur; kanuni sorumluluğu kaldıran sözleşme kaydı geçersizdir',
-            'D': 'Meslek mensubu ancak kastı bulunması hâlinde sorumlu tutulabilir',
-            'E': 'Sorumluluk yalnızca beyanname imzalanmışsa doğar',
+            'A': 'Meslek mensubu ile iş sahibi arasındaki ilişki bir vekâlet ilişkisidir',
+            'B': 'Meslek mensubu işi özenle görmekle yükümlüdür',
+            'C': 'Sözleşmedeki sorumsuzluk kaydı sorumluluğu kaldırır',
+            'D': 'Sorumluluk için kast aranmaz; kusur yeterlidir',
+            'E': 'Sorumluluk beyanname imzalanmasına bağlı değildir',
         },
         'C',
-        "Meslek mensubu ile iş sahibi arasındaki ilişki vekâlettir (TBK md. 502 vd.); meslek mensubu işi ÖZENLE görmekle yükümlüdür ve kusuruyla verdiği zarardan sorumludur. Sorumluluk kast koşuluna bağlı değildir; VUK mükerrer md. 227 ve 3568'den doğan KANUNİ sorumluluk ise sözleşmeyle kaldırılamaz.",
+        'Meslek mensubu ile iş sahibi arasındaki ilişki vekâlettir (TBK md. 502 vd.); meslek mensubu işi özenle görmekle yükümlüdür ve kusuruyla verdiği zarardan sorumludur. Sorumluluk kast koşuluna ya da beyanname imzasına bağlı değildir; kanuni sorumluluk sözleşmeyle kaldırılamaz.',
     ),
     # düzey 2
     '0004': patch(
@@ -147,16 +147,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Bir vergi alacağı için hem mükellefe hem de beyannameyi imzalayan meslek mensubuna başvurulabileceği belirtilmiştir. Buna göre müşterek ve müteselsil sorumluluk bakımından aşağıdakilerden hangisi doğrudur?',
+        'Bir vergi alacağı için hem mükellefe hem de beyannameyi imzalayan meslek mensubuna başvurulabileceği belirtilmiştir. Buna göre müşterek ve müteselsil sorumluluk bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Müteselsil sorumluluk yalnızca yeminli mali müşavirler için öngörülmüştür',
-            'B': 'Alacak, borçlular arasında eşit paylara bölünerek talep edilir',
-            'C': 'Alacaklı, borcun tamamı için borçlulardan dilediğine başvurabilir; sıra gözetmesi gerekmez',
-            'D': 'Alacaklı önce mükellefe başvurur; ondan sonuç alamazsa ikinci derecede meslek mensubuna yönelebilir',
-            'E': 'Meslek mensubu ödeme yaparsa mükellefe rücu edemez',
+            'A': 'Alacaklı borcun tamamı için borçlulardan herhangi birine başvurabilir',
+            'B': 'Alacaklı borçluların hepsine birden başvurabilir',
+            'C': 'Alacaklı önce mükellefe, sonuç alamazsa meslek mensubuna başvurur',
+            'D': 'Ödeme yapan borçlu diğerlerine rücu edebilir',
+            'E': 'Alacak borçlular arasında eşit paylara bölünmeden istenebilir',
         },
         'C',
-        "Müteselsil sorumlulukta alacaklı, borcun tamamı için borçlulardan HERHANGİ BİRİNE ya da hepsine birden başvurabilir; sıra ya da eşit paylaşım söz konusu değildir (TBK md. 162 vd.). Ödeyen borçlu diğerlerine rücu edebilir. Sorumluluk VUK mükerrer md. 227 uyarınca SMMM'leri, 3568 md. 12 uyarınca YMM'leri kapsar.",
+        'Müteselsil sorumlulukta alacaklı, borcun tamamı için borçlulardan herhangi birine ya da hepsine birden başvurabilir; sıra ya da eşit paylaşım söz konusu değildir (TBK md. 162 vd.). Ödeyen borçlu diğerlerine rücu edebilir.',
     ),
     # düzey 2
     '0009': patch(
@@ -199,16 +199,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        'Bir meslek mensubu; bir anonim şirkete sermaye ortağı olmayı, kendi adına bir kırtasiye işletmesi açmayı ve bir limited şirkette ticari vekil sıfatıyla görev almayı planlamaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu; bir anonim şirkete sermaye ortağı olmayı, kendi adına bir kırtasiye işletmesi açmayı ve bir limited şirkette ticari vekil sıfatıyla görev almayı planlamaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Kırtasiye işletebilir ancak şirkete ortak olamaz ve ticari vekil olamaz',
-            'B': 'Ticari vekil olarak çalışabilir; ortaklık ve ticaret ise yasaktır',
-            'C': 'Meslek mensubu üçünü de yapabilir; meslek mevzuatı ortaklık ve ticareti serbest bırakmıştır',
-            'D': 'Anonim şirkete ortak olabilir; kırtasiye işletemez ve ticari vekil olarak çalışamaz',
-            'E': 'Üçü de yasaktır; meslek mensubu hiçbir şirkete ortak olamaz',
+            'A': 'Meslek mensubu anonim şirkete ortak olabilir',
+            'B': 'Meslek mensubu kendi adına kırtasiye işletemez',
+            'C': 'Meslek mensubu ticari vekil olarak çalışamaz',
+            'D': 'Meslek mensubu acente olarak çalışabilir',
+            'E': 'Meslek mensubu limited şirkete de ortak olabilir',
         },
         'D',
-        '3568 md. 45: meslek mensupları meslek icrası sırasında TİCARİ FAALİYETTE bulunamaz ve ticari mümessil, ticari vekil ya da acente olarak çalışamazlar. Ancak sermayesi paylara bölünmüş komandit şirketlerde komanditer, limited ve anonim şirketlerde ORTAK olabilirler; sermaye ortaklığı bizzat ticaret yapmaktan farklıdır.',
+        '3568 md. 45: meslek mensupları meslek icrası sırasında ticari faaliyette bulunamaz ve ticari mümessil, ticari vekil ya da acente olarak çalışamazlar. Ancak sermayesi paylara bölünmüş komandit şirketlerde komanditer, limited ve anonim şirketlerde ortak olabilirler.',
     ),
     # düzey 2
     '0013': patch(
@@ -355,16 +355,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'Bir meslek mensubu, iş sahibinden aldığı defter ve belgeleri iş ilişkisi sona erdikten sonra ücret alacağı ödenene kadar teslim etmeyeceğini bildirmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, iş sahibinden aldığı defter ve belgeleri iş ilişkisi sona erdikten sonra ücret alacağı ödenene kadar teslim etmeyeceğini bildirmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Belgeler yalnızca vergi dairesinin talebi üzerine geri verilir',
-            'B': 'Defter ve belgeleri geri verme yükümlülüğü yalnızca yeminli mali müşavirler için öngörülmüştür',
-            'C': 'Meslek mensubu belgeleri geri vermek yerine imha edebilir',
-            'D': 'Meslek mensubu ücreti ödenene kadar belgeleri alıkoyabilir',
-            'E': 'Defter ve belgeler talep hâlinde tutanakla geri verilir; ücret alacağı alıkoyma hakkı vermez',
+            'A': 'Defter ve belgeler iş ilişkisi sona erince tutanakla geri verilir',
+            'B': 'Belgeler iş ilişkisi boyunca özenle saklanır',
+            'C': 'Ücret alacağı genel hükümlere göre takip edilebilir',
+            'D': "Belgeleri geri verme yükümlülüğü SMMM'leri de bağlar",
+            'E': 'Meslek mensubu ücreti ödenene kadar belgeleri alıkoyabilir',
         },
         'E',
-        'Meslek mevzuatı: iş sahibine ait defter ve belgeler özenle saklanır ve iş ilişkisi sona erdiğinde TUTANAKLA geri verilir. Yasal saklama yükümlülüğü bulunan bu belgeler üzerinde ücret alacağı alıkoyma (hapis) hakkı vermez; alacak genel hükümlere göre takip edilir.',
+        'Meslek mevzuatı: iş sahibine ait defter ve belgeler özenle saklanır ve iş ilişkisi sona erdiğinde tutanakla geri verilir; yükümlülük tüm meslek mensuplarını bağlar. Ücret alacağı bu belgeler üzerinde alıkoyma (hapis) hakkı vermez; alacak genel hükümlere göre takip edilir.',
     ),
     # düzey 3
     '0025': patch(
@@ -381,16 +381,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Bir meslek mensubu, mesleki yeterliği bulunmayan karmaşık bir işi kabul etmiş ve hatalı bir rapor düzenlemiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, mesleki yeterliği bulunmayan karmaşık bir işi kabul etmiş ve hatalı bir rapor düzenlemiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yeterlik değerlendirmesi yalnızca tasdik işlerinde aranır',
-            'B': 'Meslek mensubu yeterliği bulunmayan işi kabul etmemeli ya da uzman desteği almalıydı; hatadan sorumludur',
-            'C': 'Meslek mensubu sorumluluğu sözleşmeyle iş sahibine devredebilir',
-            'D': 'Sorumluluk yalnızca iş sahibinin işi doğru anlatmamasından doğar',
-            'E': 'Meslek mensubu ruhsat sahibi olduğu için her işi kabul etmekte serbesttir ve hatadan sorumluluğu doğmaz',
+            'A': 'Yeterliği bulunmayan iş kabul edilmemelidir',
+            'B': 'Ruhsat sahibi meslek mensubu her işi kabul etmekte serbesttir',
+            'C': 'İş kabul edilecekse uzman desteği alınmalıdır',
+            'D': 'Özen borcunun ihlali hukuki sorumluluk doğurur',
+            'E': 'Sorumluluk sözleşmeyle iş sahibine devredilemez',
         },
         'B',
-        'Meslek Ahlak Kuralları (mesleki yeterlik ve özen): meslek mensubu gerekli bilgi, beceri ve deneyime sahip olmadığı işleri kabul etmemeli, kabul edecekse uzman desteği almalıdır. Özen borcunun ihlali hukuki sorumluluk doğurur (TBK md. 506) ve sorumluluk devredilemez.',
+        'Meslek Ahlak Kuralları (mesleki yeterlik ve özen): meslek mensubu gerekli bilgi, beceri ve deneyime sahip olmadığı işleri kabul etmemeli, kabul edecekse uzman desteği almalıdır; ruhsat tek başına yeterlik anlamına gelmez. Özen borcunun ihlali hukuki sorumluluk doğurur (TBK md. 506) ve sorumluluk devredilemez.',
     ),
     # düzey 2
     '0027': patch(
@@ -498,29 +498,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Bir meslek mensubu, mesleki sorumluluk sigortası yaptırmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, mesleki sorumluluk sigortası yaptırmıştır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Sigorta, tasdikten doğan müteselsil sorumluluğu iş sahibine devreder',
-            'B': "Mesleki sorumluluk sigortası yalnızca yeminli mali müşavirler için mümkün olup SMMM'ler bu sigortayı yaptıramaz",
-            'C': 'Sigorta meslek mensubunun tüm sorumluluklarını ortadan kaldırır',
-            'D': 'Sigorta doğan zararın karşılanmasına yöneliktir; kanuni, disiplin ve cezai sorumluluğu ortadan kaldırmaz',
-            'E': 'Sigorta yaptıran meslek mensubu disiplin sorumluluğundan kurtulur',
+            'A': 'Sigorta mesleki faaliyetten doğan zararın karşılanmasına yöneliktir',
+            'B': 'Sigorta kanuni sorumluluğu ortadan kaldırmaz',
+            'C': 'Sigorta cezai sorumluluğu etkilemez',
+            'D': 'Sigorta yaptıran meslek mensubu disiplin sorumluluğundan kurtulur',
+            'E': "SMMM'ler de mesleki sorumluluk sigortası yaptırabilir",
         },
         'D',
-        "Mesleki sorumluluk sigortası, mesleki faaliyetten doğan ZARARIN karşılanmasına yöneliktir. Meslek mensubunun 3568 md. 12 ve VUK mükerrer md. 227'den doğan KANUNİ sorumluluğunu ortadan kaldırmaz; disiplin ve cezai sorumluluğu ise hiç etkilemez.",
+        'Mesleki sorumluluk sigortası, mesleki faaliyetten doğan zararın karşılanmasına yöneliktir ve tüm meslek mensuplarınca yaptırılabilir. Meslek mensubunun kanuni sorumluluğunu ortadan kaldırmaz; disiplin ve cezai sorumluluğu ise etkilemez.',
     ),
     # düzey 2
     '0036': patch(
-        'Bir meslek mensubu, sorumluluğunun zamanaşımına uğradığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, sorumluluğunun zamanaşımına uğradığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek mensubunun sorumluluğunda zamanaşımı işlemez',
-            'B': 'Zamanaşımı süreleri taraflarca sözleşmeyle belirlenir',
-            'C': 'Disiplin, hukuki ve cezai sorumluluk için tek ve ortak bir zamanaşımı süresi uygulanır',
-            'D': 'Disiplin, hukuki ve cezai sorumluluk için ayrı zamanaşımı rejimleri uygulanır',
-            'E': 'Zamanaşımı yalnızca cezai sorumluluk için öngörülmüştür',
+            'A': 'Disiplin zamanaşımı Disiplin Yönetmeliğinde düzenlenmiştir',
+            'B': "Hukuki sorumluluğun zamanaşımı TBK'da düzenlenmiştir",
+            'C': 'Zamanaşımı süreleri sözleşmeyle belirlenmez',
+            'D': 'Üç sorumluluk türü için tek ve ortak bir zamanaşımı süresi uygulanır',
+            'E': 'Cezai sorumluluğun zamanaşımı ceza mevzuatında düzenlenmiştir',
         },
         'D',
-        "Her sorumluluk türü kendi rejimine tabidir: disiplin zamanaşımı Disiplin Yönetmeliğinde, hukuki sorumluluk zamanaşımı TBK'da (vekâlet ve haksız fiil hükümleri), cezai sorumluluk zamanaşımı ise TCK ve VUK'ta düzenlenmiştir. Süreler kanunla belirlenir; sözleşmeye bırakılmaz.",
+        "Her sorumluluk türü kendi rejimine tabidir: disiplin zamanaşımı Disiplin Yönetmeliğinde, hukuki sorumluluk zamanaşımı TBK'da, cezai sorumluluk zamanaşımı ise TCK ve VUK'ta düzenlenmiştir. Süreler kanunla belirlenir; sözleşmeye bırakılmaz.",
     ),
     # düzey 2
     '0037': patch(
@@ -602,29 +602,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        'Bir meslek mensubu, aynı ihalede karşı karşıya gelen iki şirkete de danışmanlık vermektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, aynı ihalede karşı karşıya gelen iki şirkete de danışmanlık vermektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Çıkar çatışması ancak müşterilerden biri şikâyet ederse sonuç doğurur',
-            'B': 'Çıkar çatışması yalnızca tasdik işlerinde söz konusu olur',
-            'C': 'Çıkar çatışması doğmuştur; taraflar bilgilendirilmeli, önlem yeterli olmuyorsa işlerden biri bırakılmalıdır',
-            'D': 'İki müşteriye hizmet vermek serbest olduğundan etik sorun doğmaz',
-            'E': 'Meslek mensubu iki işi de sürdürebilir; ücretleri ayrı ayrı faturalandırması ve ayrı kayıt tutması yeterlidir',
+            'A': 'Meslek mensubu çıkar çatışmasını belirlemelidir',
+            'B': 'Taraflar durumdan bilgilendirilmelidir',
+            'C': 'Ayrı faturalandırma çatışmayı giderir',
+            'D': 'Önlem yetmezse işlerden biri bırakılır',
+            'E': 'Sonuç doğması için müşteri şikâyeti aranmaz',
         },
         'C',
-        'Meslek Ahlak Kuralları: çıkar çatışması tarafsızlığı doğrudan tehdit eder. Meslek mensubu çatışmayı belirler, ilgilileri bilgilendirir ve önlem alır (ayrı ekip, bilgi bariyeri, gözden geçirme); önlemler yeterli olmuyorsa işlerden biri ya da her ikisi bırakılır.',
+        'Meslek Ahlak Kuralları: çıkar çatışması tarafsızlığı doğrudan tehdit eder. Meslek mensubu çatışmayı belirler, ilgilileri bilgilendirir ve önlem alır (ayrı ekip, bilgi bariyeri, gözden geçirme); önlemler yetmezse işlerden biri ya da her ikisi bırakılır. Faturalandırma biçimi bir önlem değildir.',
     ),
     # düzey 2
     '0044': patch(
-        'Bir meslek mensubuna, tasdik hizmeti verdiği müşterisi tarafından yüksek değerli bir hediye sunulmuştur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubuna, tasdik hizmeti verdiği müşterisi tarafından yüksek değerli bir hediye sunulmuştur. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Hediye ancak nakit olarak verildiğinde etik sorun doğurur',
-            'B': 'Hediye kabulü meslek mensubunun kişisel takdirinde olup bağımsızlık bakımından sorun doğurmaz',
-            'C': 'Hediye, değeri odaya bildirilirse kabul edilebilir',
-            'D': 'Hediye yasağı yalnızca kamu görevlileri için öngörülmüştür',
-            'E': 'Önemsiz sayılamayacak hediyeler kişisel çıkar tehdidi doğurduğundan kabul edilmemelidir',
+            'A': 'Değerli hediye kişisel çıkar tehdidi doğurur',
+            'B': 'Kısıt nakit hediyelerle sınırlı değildir',
+            'C': 'Önemsiz ve makul ağırlamalar tehdit oluşturmayabilir',
+            'D': 'Değerli hediye kabul edilmemelidir',
+            'E': 'Odaya bildirilen hediye kabul edilebilir',
         },
         'E',
-        'Meslek Ahlak Kuralları: müşteriden alınan hediye ve ağırlamalar önemsiz ve makul düzeyi aşıyorsa KİŞİSEL ÇIKAR ve YAKINLIK tehdidi doğurur; kabul edilmemelidir. Yasak nakitle sınırlı değildir ve odaya bildirim bir önlem oluşturmaz.',
+        'Meslek Ahlak Kuralları: müşteriden alınan hediye ve ağırlamalar önemsiz ve makul düzeyi aşıyorsa kişisel çıkar ve yakınlık tehdidi doğurur; kabul edilmemelidir. Kısıt nakitle sınırlı değildir ve odaya bildirim bir önlem oluşturmaz.',
     ),
     # düzey 0
     '0045': patch(
@@ -693,13 +693,13 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        'Bir meslek mensubu, hakkında yürütülen disiplin soruşturmasında savunma hakkı tanınmadan ceza verildiğini ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, hakkında yürütülen disiplin soruşturmasında savunma hakkı tanınmadan ceza verildiğini ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek mensubuna savunma hakkı tanınması, cezanın ağırlığına göre disiplin kurulunun takdirindedir',
-            'B': 'Savunma hakkı tanınmadan disiplin cezası verilemez; bu bir anayasal güvencedir',
-            'C': 'Savunma hakkı yalnızca ağır cezalarda aranır',
-            'D': 'Savunma hakkı yalnızca ceza yargılamasında geçerlidir',
-            'E': 'Savunma alınmaması cezayı geçerli kılmaya engel değildir',
+            'A': 'Savunma hakkı anayasal bir güvencedir',
+            'B': 'Savunma alınmaması cezanın geçerliliğini etkilemez',
+            'C': 'Güvence cezanın ağırlığına bağlı değildir',
+            'D': 'Savunma hakkı disiplin kurulunun takdirine bırakılmamıştır',
+            'E': 'Savunmanın alınmaması iptal davasında ileri sürülebilir',
         },
         'B',
         "Anayasa md. 129: 'savunma hakkı tanınmadıkça disiplin cezası verilemez.' Bu güvence cezanın ağırlığına ya da kurulun takdirine bağlı değildir; ihlali kesinleşen cezaya karşı açılacak iptal davasında iptal sebebidir.",

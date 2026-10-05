@@ -51,17 +51,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        'Bir oda genel kurulu toplanmış; yönetim kurulunun bu kararı değiştirebileceği ileri sürülmüştür. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir oda genel kurulu toplanmış; yönetim kurulunun bu kararı değiştirebileceği ileri sürülmüştür. Buna göre oda genel kurulu bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yönetim kurulu, genel kurulun kararlarını değiştiremez',
-            'B': 'Yönetim kurulu odanın en yetkili organı olup genel kurulun aldığı kararları değiştirebilir',
-            'C': 'Genel kurul bir danışma organıdır; bağlayıcı karar alamaz',
-            'D': 'Genel kurul kararları ancak Birlik yönetim kurulunun onayıyla yürürlüğe girer',
-            'E': 'Disiplin kurulu genel kurul kararlarını denetleyip iptal edebilir',
+            'A': 'Yönetim kurulu, genel kurulun aldığı kararları değiştirebilir',
+            'B': 'Genel kurul odanın en yetkili karar organıdır',
+            'C': 'Genel kurul odanın bütçesini görüşüp karara bağlar',
+            'D': 'Genel kurul kesin hesabı görüşür',
+            'E': 'Genel kurul yönetim kurulunu ibra eder',
         },
         'A',
-        '3568 md. 18 ve 19: genel kurul odanın EN YETKİLİ KARAR ORGANIDIR; oda organlarını seçer, bütçeyi ve kesin hesabı görüşüp karara bağlar, yönetim kurulunu ibra eder. Yönetim kurulu genel kurulun icra organıdır ve onun kararlarını değiştiremez.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 18 ve 19: genel kurul odanın en yetkili karar organıdır; bütçeyi ve kesin hesabı görüşüp karara bağlar, yönetim kurulunu ibra eder. Yönetim kurulu genel kurulun icra organıdır ve onun kararlarını değiştiremez.',
     ),
     # düzey 1
     '0003': patch(
@@ -93,17 +92,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'Bir yeminli mali müşavir hakkında yeminli sıfatının kaldırılması cezası uygulanmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir yeminli mali müşavir hakkında yeminli sıfatının kaldırılması cezası uygulanmıştır. Buna göre bu ceza bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Ceza serbest muhasebeci mali müşavirlere uygulanır',
-            'B': 'Ceza tüm meslek mensuplarına uygulanabilir',
-            'C': 'Ceza tasdik yetkisini geçici olarak durdurur',
-            'D': 'Ceza, tasdik yetkisiyle birlikte tüm mesleki faaliyeti kalıcı olarak sona erdirir',
-            'E': "Ceza YMM'lere özgüdür; YMM unvanı ve tasdik yetkisi kaybedilir",
+            'A': 'Ceza, yeminli mali müşavirlere uygulanabilen bir disiplin cezasıdır',
+            'B': 'Ceza sonucunda YMM unvanı kaybedilir',
+            'C': 'Cezayla birlikte tasdik yetkisi de sona erer',
+            'D': "Ceza, 3568 sayılı Kanun'da sayılan disiplin cezalarındandır",
+            'E': 'Ceza tasdik yetkisini belirli bir süre için durdurur',
         },
         'E',
-        "3568 md. 48: YEMİNLİ SIFATININ KALDIRILMASI cezası, niteliği gereği yalnızca YEMİNLİ MALİ MÜŞAVİRLERE uygulanabilir; meslek mensubu YMM unvanını ve buna bağlı TASDİK yetkisini kaybeder. Tüm mesleki faaliyeti sona erdiren ceza ise MESLEKTEN ÇIKARMA'dır.",
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 48: yeminli sıfatının kaldırılması cezası, niteliği gereği yeminli mali müşavirlere uygulanabilir; meslek mensubu YMM unvanını ve buna bağlı tasdik yetkisini kalıcı olarak kaybeder. Belirli bir süre için faaliyeti durduran ceza ise geçici olarak meslekî faaliyetten alıkoymadır.',
     ),
     # düzey 3
     '0006': patch(
@@ -205,31 +203,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0013': patch(
-        'Bir meslek mensubu, daha önce kınama cezası aldığı bir kural ihlalini tekrar işlemiştir. Buna göre tekerrür bakımından aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, daha önce kınama cezası aldığı bir kural ihlalini tekrar işlemiştir. Buna göre tekerrür bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Aynı veya benzer ihlalin tekrarı, bir derece ağır cezanın uygulanması sonucunu doğurabilir',
-            'B': 'Tekerrür hâlinde önceki ceza ortadan kalkar ve yeni ceza uygulanır',
-            'C': 'Tekerrür, yeminli mali müşavirlere özgü ağırlaştırıcı bir sonuç doğurur',
-            'D': 'Tekerrür hâlinde ceza doğrudan meslekten çıkarmaya dönüşür',
-            'E': 'Tekerrür disiplin hukukunda dikkate alınmaz; her fiil önceki cezalardan bağımsız olarak değerlendirilir',
+            'A': 'Tekerrür hâlinde ceza doğrudan meslekten çıkarmaya dönüşür',
+            'B': 'Aynı ihlalin tekrarı bir derece ağır ceza uygulanmasına yol açabilir',
+            'C': 'Tekerrür hâlinde önceki ceza ortadan kalkmaz',
+            'D': 'Tekerrür kuralı serbest muhasebeci mali müşavirlere de uygulanır',
+            'E': 'Önceki ceza, yeni fiilde ağırlaştırıcı olarak dikkate alınır',
         },
         'A',
-        'Disiplin Yönetmeliği: disiplin cezası verilmesine karar verilen bir fiilin tekrarlanması hâlinde BİR DERECE AĞIR ceza uygulanır. Tekerrür otomatik olarak en ağır cezayı doğurmaz ve unvana göre değişmez; ayrıca önceki ceza ortadan kalkmaz, ağırlaştırıcı olarak dikkate alınır.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Disiplin Yönetmeliği: disiplin cezası verilmesine karar verilen bir fiilin tekrarlanması hâlinde bir derece ağır ceza uygulanır. Tekerrür otomatik olarak en ağır cezayı doğurmaz ve unvana göre değişmez; önceki ceza ortadan kalkmaz, ağırlaştırıcı olarak dikkate alınır.',
     ),
     # düzey 1
     '0014': patch(
-        "TESMER'in (Temel Eğitim ve Staj Merkezi) işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?",
+        "TESMER'in (Temel Eğitim ve Staj Merkezi) işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'TESMER, Hazine ve Maliye Bakanlığına bağlı bir genel müdürlüktür',
-            'B': 'TESMER, meslek mensuplarına disiplin cezası vermekle görevli bağımsız bir kuruldur',
-            'C': 'TESMER, meslek mensuplarının ücret tarifesini belirleyen kuruldur',
-            'D': 'TESMER, TÜRMOB bünyesinde staj ve mesleki eğitim faaliyetlerini yürüten birimdir',
-            'E': 'TESMER, bağımsız denetim kuruluşlarını yetkilendiren kurumdur',
+            'A': 'TESMER, TÜRMOB bünyesinde kurulmuştur',
+            'B': 'TESMER meslek stajına ilişkin faaliyetleri yürütür',
+            'C': 'TESMER sınavlara hazırlık eğitimleri düzenler',
+            'D': 'TESMER meslek mensuplarına disiplin cezası verir',
+            'E': 'TESMER temel eğitim programları düzenler',
         },
         'D',
-        'TESMER, TÜRMOB bünyesinde kurulmuş olup staj, temel eğitim, sınav hazırlığı ve sürekli mesleki eğitim faaliyetlerini yürütür. Disiplin yetkisi disiplin kurullarına, bağımsız denetim yetkilendirmesi Kamu Gözetimi Kurumuna, ücret tarifesi ise ilgili mevzuat sürecine aittir.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'TESMER, TÜRMOB bünyesinde kurulmuş olup staj, temel eğitim, sınav hazırlığı ve mesleki eğitim faaliyetlerini yürütür. Disiplin cezası verme yetkisi oda disiplin kurullarına ve itiraz merci olarak Birlik disiplin kuruluna aittir.',
     ),
     # düzey 2
     '0015': patch(
@@ -275,17 +271,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        'Bir meslek mensubu, odanın mesleki denetim kapsamında istediği bilgi ve belgeleri, müşteri sırrı gerekçesiyle vermeyi reddetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir meslek mensubu, odanın mesleki denetim kapsamında istediği bilgi ve belgeleri, müşteri sırrı gerekçesiyle vermeyi reddetmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek mensubu bilgi ve belge vermekle yükümlüdür; buna karşılık oda bakımından herhangi bir gizlilik yükümlülüğü öngörülmemiştir',
-            'B': 'Meslek mensubu odaya karşı bilgi ve belge verme yükümlülüğü altındadır; oda da bu bilgilerin gizliliğini korumakla yükümlüdür',
-            'C': 'Odaya bilgi ve belge verme yükümlülüğü, hakkında disiplin soruşturması açılmışsa doğar',
-            'D': 'Bilgi verme yükümlülüğü yeminli mali müşavirlere özgüdür',
-            'E': 'Meslek mensubu müşteri sırrı gerekçesiyle bilgi vermeyi reddedebilir',
+            'A': 'Meslek mensubu odanın istediği bilgi ve belgeleri vermekle yükümlüdür',
+            'B': 'Meslek mensubu müşteri sırrı gerekçesiyle odaya bilgi vermeyi reddedebilir',
+            'C': 'Oda, edindiği bilgilerin gizliliğini korumakla yükümlüdür',
+            'D': 'Yükümlülük mesleki denetimin işlemesi için öngörülmüştür',
+            'E': 'Yükümlülük, disiplin soruşturması açılmamış olsa da vardır',
         },
         'B',
-        "Meslek mevzuatı: meslek mensubu, mesleki faaliyetiyle ilgili olarak odanın istediği bilgi ve belgeleri VERMEKLE yükümlüdür; bu yükümlülük mesleki denetimin işlemesi için gereklidir. Odanın kendisi de bu bilgiler bakımından gizlilik yükümlülüğü altındadır; 3568 md. 43'teki sır saklama meslek kuruluşu içinde de geçerlidir.",
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Meslek mevzuatı: meslek mensubu, mesleki faaliyetiyle ilgili olarak odanın istediği bilgi ve belgeleri vermekle yükümlüdür; bu yükümlülük mesleki denetimin işlemesi için gereklidir ve bir disiplin soruşturmasına bağlı değildir. Oda da bu bilgilerin gizliliğini korur; bu nedenle müşteri sırrı ret gerekçesi olamaz.',
     ),
     # düzey 2
     '0019': patch(
@@ -303,31 +298,29 @@ _PATCHES = {
     ),
     # düzey 1
     '0020': patch(
-        'Meslek örgütünün, meslekle ilgili mevzuatın hazırlanmasına katkı sağlaması tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Meslek örgütünün, meslekle ilgili mevzuatın hazırlanmasına katkı sağlaması tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek örgütü meslekle ilgili kanunları doğrudan çıkarma yetkisine sahiptir',
-            'B': 'Mevzuat çalışmalarında görüş bildirme yetkisi odalara ait olup Birlik bu yetkiyi kullanamaz',
-            'C': 'Meslek örgütünün mevzuat hazırlık süreçlerine katkı sağlama imkânı bulunmaz',
-            'D': 'Meslek örgütü, meslekle ilgili mevzuat çalışmalarında görüş bildirebilir ve öneri sunabilir',
-            'E': 'Meslek örgütü yürürlükteki mevzuatı uygular; görüş bildiremez',
+            'A': 'Birlik, mevzuat çalışmalarında görüş bildirebilir',
+            'B': 'Meslek örgütü mevzuat önerisi sunabilir',
+            'C': 'Kanun çıkarma yetkisi yasama organına aittir',
+            'D': 'Meslek örgütü meslekle ilgili kanunları doğrudan çıkarabilir',
+            'E': 'Meslek örgütü ilgili kurumlarla iş birliği yapabilir',
         },
         'D',
         '3568 md. 29 ve 32: Birlik, mesleğin gelişmesi için mevzuat çalışmalarında görüş bildirir, öneri sunar ve ilgili kurumlarla iş birliği yapar. Kanun çıkarma yetkisi yasama organına aittir; meslek kuruluşu yalnızca katkı sağlar.',
-        '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
     '0021': patch(
-        'Ruhsatını yeni alan bir meslek mensubu, mesleki faaliyete başlamadan önce odaya kaydolmanın isteğe bağlı olduğunu düşünmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Ruhsatını yeni alan bir meslek mensubu, mesleki faaliyete başlamadan önce odaya kaydolmanın isteğe bağlı olduğunu düşünmektedir. Buna göre odaya kayıt bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Odaya kayıt yeminli mali müşavirler için şarttır, SMMM için değil',
-            'B': 'Odaya kayıt, mesleki faaliyete başlandıktan bir yıl sonra yapılır',
-            'C': 'Meslek mensubu dilediği bölgedeki odaya kaydolabilir',
-            'D': 'Odaya kayıt isteğe bağlıdır; ruhsat tek başına faaliyet için yeterlidir',
-            'E': 'Meslek mensubu, bölgesindeki odaya kaydolmadan mesleki faaliyette bulunamaz',
+            'A': 'Meslek mensubu bölgesindeki odaya kaydolmalıdır',
+            'B': 'Kayıt yükümlülüğü yeminli mali müşavirleri de kapsar',
+            'C': 'Meslek mensubu oda seçiminde serbest değildir',
+            'D': 'Kayıt, mesleki faaliyete başlamadan önce yapılır',
+            'E': 'Ruhsat tek başına faaliyet için yeterlidir; kayıt isteğe bağlıdır',
         },
         'E',
-        '3568 md. 19: meslek mensupları, mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları ODAYA KAYDOLMAK zorundadır. Kayıt isteğe bağlı değildir ve unvana göre değişmez; ayrıca meslek mensubu işyerinin bulunduğu bölgenin odasına kaydolur, oda seçiminde serbest değildir.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 19: meslek mensupları, mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları odaya kaydolmak zorundadır. Kayıt isteğe bağlı değildir, faaliyete başlamadan önce yapılır ve unvana göre değişmez; meslek mensubu işyerinin bulunduğu bölgenin odasına kaydolur.',
     ),
     # düzey 1
     '0022': patch(
@@ -429,17 +422,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0029': patch(
-        "TÜRMOB bünyesindeki Yüksek Danışma Kurulu'nun işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?",
+        "TÜRMOB bünyesindeki Yüksek Danışma Kurulu'nun işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kurul meslek mensuplarına disiplin cezası verir',
-            'B': 'Kurul, oda genel kurullarının yerine geçerek seçim yapar',
-            'C': 'Kurul, mesleğe ilişkin konularda görüş ve öneri oluşturan danışma organıdır',
-            'D': 'Kurul, meslek mensuplarının ruhsat başvurularını inceleyerek karara bağlayan yürütme organıdır',
-            'E': 'Kurul Birliğin en yetkili karar organıdır',
+            'A': 'Kurul bir danışma organıdır',
+            'B': 'Kurul mesleğe ilişkin konularda görüş ve öneri oluşturur',
+            'C': 'Kurul Birliğin en yetkili karar organıdır',
+            'D': 'Kurulun görüşleri bağlayıcı karar niteliği taşımaz',
+            'E': 'Kurul TÜRMOB bünyesinde yer alır',
         },
         'C',
-        'Yüksek Danışma Kurulu, mesleğe ve meslek örgütüne ilişkin konularda görüş ve öneri oluşturmakla görevli DANIŞMA organıdır; bağlayıcı karar almaz. Birliğin en yetkili karar organı Birlik Genel Kurulu, ceza organı Birlik Disiplin Kuruludur (md. 30).',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Yüksek Danışma Kurulu, mesleğe ve meslek örgütüne ilişkin konularda görüş ve öneri oluşturmakla görevli danışma organıdır; bağlayıcı karar almaz. Birliğin en yetkili karar organı Birlik Genel Kuruludur (md. 30).',
     ),
     # düzey 3
     '0030': patch(
@@ -513,17 +505,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'İki meslek mensubu arasında iş devri ve ücret paylaşımı konusunda bir uyuşmazlık doğmuştur. Buna göre meslek örgütünün konumu bakımından aşağıdakilerden hangisi doğrudur?',
+        'İki meslek mensubu arasında iş devri ve ücret paylaşımı konusunda bir uyuşmazlık doğmuştur. Buna göre meslek örgütünün konumu bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek örgütü uyuşmazlıkta taraflardan biri lehine karar vermekle yükümlüdür',
-            'B': 'Meslek örgütünün meslek mensupları arasındaki uyuşmazlıklarda işlevi bulunmaz',
-            'C': 'Meslek örgütü uyuşmazlıkta arabuluculuk yapabilir; yargı yolu ise açık kalır',
-            'D': 'Uyuşmazlık Hazine ve Maliye Bakanlığınca çözülür',
-            'E': 'Meslek örgütünün kararı kesin olup yargı yoluna başvurulamaz',
+            'A': 'Meslek örgütü taraflar arasında uzlaşma sağlamaya çalışabilir',
+            'B': 'Taraflar uyuşmazlık için yargı yoluna başvurabilir',
+            'C': 'Meslek örgütünün kararı kesin olup yargı yolu kapalıdır',
+            'D': 'Örgüt taraflardan biri lehine karar vermekle yükümlü değildir',
+            'E': 'Örgüt uyuşmazlığın disiplin boyutunu değerlendirebilir',
         },
         'C',
-        'Meslek örgütü, meslek mensupları arasındaki mesleki uyuşmazlıklarda taraflar arasında uzlaşma sağlamaya çalışır ve gerektiğinde disiplin boyutunu değerlendirir. Bu bir arabuluculuk işlevidir; tarafların YARGI YOLUNA başvurma hakkını ortadan kaldırmaz ve örgüt taraf tutmakla yükümlü değildir.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Meslek örgütü, meslek mensupları arasındaki mesleki uyuşmazlıklarda uzlaşma sağlamaya çalışır ve gerektiğinde disiplin boyutunu değerlendirir. Bu arabuluculuk işlevi tarafların yargı yoluna başvurma hakkını ortadan kaldırmaz; örgüt taraf tutmakla yükümlü değildir.',
     ),
     # düzey 1
     '0036': patch(
@@ -555,31 +546,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0038': patch(
-        'Meslek örgütünün siyasi ve mesleki tarafsızlığı tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Meslek örgütünün siyasi ve mesleki tarafsızlığı tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Siyasi tarafsızlık yükümlülüğü meslek mensuplarını bağlar; meslek kuruluşunun kendisini bağlamaz',
-            'B': 'Meslek kuruluşları üyelerinin oy tercihini belirleme yetkisine sahiptir',
-            'C': 'Meslek kuruluşları kuruluş amaçları dışında faaliyet gösteremez ve siyasi tarafsızlığını korur',
-            'D': 'Meslek kuruluşları siyasi parti faaliyeti yürütebilir ve seçim çalışması yapabilir',
-            'E': 'Meslek kuruluşları kuruluş amaçları dışında da faaliyet gösterebilir',
+            'A': 'Meslek kuruluşları kuruluş amaçları dışında faaliyet gösteremez',
+            'B': 'Meslek kuruluşları siyasi tarafsızlığını korur',
+            'C': 'Meslek kuruluşları siyasi parti faaliyeti yürütebilir',
+            'D': 'Tarafsızlık yükümlülüğü kuruluşun kendisini bağlar',
+            'E': 'Kuruluşlar üyelerinin oy tercihine müdahale edemez',
         },
         'C',
-        'Anayasa md. 135 ve 3568: kamu kurumu niteliği taşıyan meslek kuruluşları KURULUŞ AMAÇLARI DIŞINDA faaliyet gösteremez; siyasi tarafsızlıklarını korumakla yükümlüdür. Yükümlülük kuruluşun kendisini bağlar ve üyelerin siyasi tercihine müdahale yetkisi vermez.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Anayasa md. 135 ve 3568: kamu kurumu niteliği taşıyan meslek kuruluşları kuruluş amaçları dışında faaliyet gösteremez ve siyasi tarafsızlıklarını korumakla yükümlüdür. Yükümlülük kuruluşun kendisini bağlar; üyelerin siyasi tercihine müdahale yetkisi vermez.',
     ),
     # düzey 2
     '0039': patch(
-        'Disiplin cezalarında zamanaşımı tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Disiplin cezalarında zamanaşımı tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Zamanaşımı süresi ceza yargılamasındaki sürelerle aynıdır',
-            'B': 'Disiplin fiilleri için zamanaşımı öngörülmüştür; süre geçince soruşturma yapılamaz',
-            'C': 'Disiplin hukukunda zamanaşımı öngörülmemiş olup fiil, işlendiği tarihten ne kadar süre geçmiş olursa olsun soruşturulabilir',
-            'D': 'Zamanaşımı süreleri meslekten çıkarma cezasına özgüdür',
-            'E': 'Zamanaşımı, cezanın kesinleşmesinden sonra işlemeye başlar',
+            'A': 'Disiplin fiilleri için zamanaşımı süreleri öngörülmüştür',
+            'B': 'Zamanaşımı, cezanın kesinleşmesinden sonra işlemeye başlar',
+            'C': 'Süre geçtikten sonra soruşturma açılamaz',
+            'D': 'Süre geçtikten sonra disiplin cezası verilemez',
+            'E': 'Disiplin zamanaşımı ceza yargılamasındaki zamanaşımından ayrıdır',
         },
         'B',
-        'Disiplin Yönetmeliği, disiplin cezasını gerektiren fiiller bakımından soruşturma ve ceza zamanaşımı süreleri öngörür; bu süreler geçtikten sonra soruşturma açılamaz ve ceza verilemez. Süreler fiilin işlenmesinden ya da öğrenilmesinden itibaren işler; cezanın kesinleşmesinden sonra değil. Ceza yargılamasındaki zamanaşımı ise ayrı bir rejimdir.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        'Disiplin Yönetmeliği, disiplin cezasını gerektiren fiiller için soruşturma ve ceza zamanaşımı süreleri öngörür; bu süreler geçince soruşturma açılamaz ve ceza verilemez. Süreler fiilin işlenmesinden ya da öğrenilmesinden itibaren işler; cezanın kesinleşmesinden sonra değil. Ceza yargılamasındaki zamanaşımı ayrı bir rejimdir.',
     ),
     # düzey 3
     '0040': patch(
@@ -597,17 +586,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0041': patch(
-        'Odaların bir araya gelerek oluşturduğu ulusal üst kuruluş belirlenmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Odaların bir araya gelerek oluşturduğu ulusal üst kuruluş belirlenmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': "Odaların üye olduğu üst kuruluş Kamu Gözetimi Kurumu'dur",
-            'B': "Odaların üye olduğu üst kuruluş, Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği'dir",
-            'C': "Odaların üye olduğu üst kuruluş Türkiye Bankalar Birliği'dir",
-            'D': "Odaların bağlı olduğu üst kuruluş Hazine ve Maliye Bakanlığı'dır",
-            'E': "Odaların üye olduğu üst kuruluş, ticaret ve sanayi odalarını da çatısı altında toplayan Türkiye Odalar ve Borsalar Birliği'dir",
+            'A': "Odaların üye olduğu üst kuruluş TÜRMOB'dur",
+            'B': "Odaların üye olduğu üst kuruluş Kamu Gözetimi Kurumu'dur",
+            'C': 'Hazine ve Maliye Bakanlığı meslek örgütünü gözetir ve denetler',
+            'D': 'Hazine ve Maliye Bakanlığı odaların üst kuruluşu değildir',
+            'E': 'TOBB, meslek odalarının üst kuruluşu değildir',
         },
         'B',
-        "3568 md. 29: odaların üye olduğu üst kuruluş TÜRMOB kısaltmasıyla anılan Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği'dir. Hazine ve Maliye Bakanlığı üst kuruluş değil, mesleğin ve meslek örgütünün GENEL GÖZETİM VE DENETİMİNDEN sorumlu bakanlıktır (md. 1 ve 49).",
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 29: odaların üye olduğu üst kuruluş TÜRMOB (Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği) adıyla anılır. Hazine ve Maliye Bakanlığı üst kuruluş değil, meslek örgütünün genel gözetim ve denetiminden sorumlu bakanlıktır; Kamu Gözetimi Kurumu ise bağımsız denetim alanını düzenler.',
     ),
     # düzey 2
     '0042': patch(
@@ -709,17 +697,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        'Bir bölgede yeni bir meslek odası kurulması gündeme gelmiştir. Bölgede kayıtlı meslek mensubu sayısı yeterli görülmemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir bölgede yeni bir meslek odası kurulması gündeme gelmiştir. Bölgede kayıtlı meslek mensubu sayısı yeterli görülmemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Oda kurulması Birlik genel kurulunun takdirine bağlıdır; üye sayısı aranmaz',
-            'B': 'Her ilde meslek mensubu sayısına bakılmaksızın oda kurulur',
-            'C': 'Oda kurulması için meslek mensubu sayısı bakımından bir koşul aranmaz',
-            'D': 'Oda kurulabilmesi için bölgede kanunda öngörülen sayıda meslek mensubu bulunması gerekir',
-            'E': 'Oda kurulması için bölgede kayıtlı en az bir yeminli mali müşavir bulunması yeterli sayılır',
+            'A': 'Sayı koşulu gerçekleşmeyen yerlerdeki meslek mensupları en yakın odaya kaydolur',
+            'B': 'Oda kuruluşu kanuni koşula bağlıdır',
+            'C': 'Oda kurulması Birlik genel kurulunun serbest takdirine bırakılmamıştır',
+            'D': 'Oda kurulması için meslek mensubu sayısı bakımından koşul aranmaz',
+            'E': 'Oda, kamu kurumu statüsünde bir meslek kuruluşudur',
         },
         'D',
-        '3568 md. 14: odalar, bölgelerinde kanunda öngörülen sayıda meslek mensubunun bulunması hâlinde kurulur. Sayı koşulu gerçekleşmeyen yerlerdeki meslek mensupları en yakın odaya kaydolur. Kuruluş kanuni koşula bağlıdır; takdire ya da tek bir meslek mensubunun varlığına bırakılmamıştır.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 14: odalar, bölgelerinde kanunda öngörülen sayıda meslek mensubunun bulunması hâlinde kurulur. Sayı koşulu gerçekleşmeyen yerlerdeki meslek mensupları en yakın odaya kaydolur. Kuruluş kanuni koşula bağlıdır ve takdire bırakılmamıştır; odalar kamu kurumu niteliğindeki meslek kuruluşlarıdır.',
     ),
     # düzey 2
     '0050': patch(
@@ -737,17 +724,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        "TÜRMOB Genel Kurulunca usulüne uygun olarak alınan ve Resmî Gazete'de yayımlanan bir mecburi meslek kararı bulunmaktadır. Bir meslek mensubu bu karara uymamıştır. Buna göre aşağıdakilerden hangisi doğrudur?",
+        "TÜRMOB Genel Kurulunca usulüne uygun olarak alınan ve Resmî Gazete'de yayımlanan bir mecburi meslek kararı bulunmaktadır. Bir meslek mensubu bu karara uymamıştır. Buna göre aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "Mecburi meslek kararları yeminli mali müşavirleri bağlar; SMMM'ler için tavsiye değeri taşır",
-            'B': 'Kararlara uymamak odaya bildirim yükümlülüğü doğurur, disiplin sorumluluğu doğurmaz',
-            'C': 'Mecburi meslek kararları meslek mensuplarını bağlar; uymamak disiplin sorumluluğu doğurur',
-            'D': 'Mecburi meslek kararları bağlayıcı olmayıp tavsiye değeri taşır',
-            'E': 'Kararlar, oylamada kabul oyu veren meslek mensuplarını bağlar',
+            'A': 'Mecburi meslek kararlarını Birlik Genel Kurulu alır',
+            'B': "Kararlar Resmî Gazete'de yayımlanarak yürürlüğe girer",
+            'C': 'Karara uymamak disiplin sorumluluğu doğurmaz',
+            'D': 'Kararlar serbest muhasebeci mali müşavirleri de bağlar',
+            'E': 'Kararlar tavsiye değil, bağlayıcı düzenlemedir',
         },
         'C',
-        "3568 md. 33: Birlik Genel Kurulu, meslek mensuplarının uyacağı MECBURİ MESLEK KARARLARI alır; bu kararlar Resmî Gazete'de yayımlanarak yürürlüğe girer ve TÜM meslek mensuplarını bağlar. Uymamak md. 48 uyarınca disiplin cezası gerektirir; kararlar tavsiye niteliğinde değildir.",
-        '3568 sayili SMMM ve YMM Kanunu',
+        "3568 md. 33: Birlik Genel Kurulu, meslek mensuplarının uyacağı mecburi meslek kararlarını alır; bu kararlar Resmî Gazete'de yayımlanarak yürürlüğe girer ve tüm meslek mensuplarını bağlar. Kararlar tavsiye niteliğinde değildir; uymamak md. 48 uyarınca disiplin cezası gerektirir.",
     ),
     # düzey 2
     '0052': patch(
@@ -765,17 +751,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0053': patch(
-        'Meslek örgütünün üyelerini temsil etme işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Meslek örgütünün üyelerini temsil etme işlevi tartışılmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Meslek örgütü, üyelerini yurt içinde ve gerektiğinde yurt dışında temsil eder',
-            'B': 'Meslek örgütü üyelerini disiplin süreçleriyle sınırlı olarak temsil eder',
-            'C': 'Meslek örgütünün temsil yetkisi bulunmaz; her meslek mensubu kendini temsil eder',
-            'D': 'Temsil yetkisi yeminli mali müşavirlere özgüdür',
-            'E': 'Temsil yetkisi Hazine ve Maliye Bakanlığı tarafından kullanılır',
+            'A': 'Temsil yetkisi Hazine ve Maliye Bakanlığı tarafından kullanılır',
+            'B': 'Odalar ve Birlik mesleği ve meslek mensuplarını temsil eder',
+            'C': 'Meslek örgütü gerektiğinde uluslararası kuruluşlar nezdinde de temsil yapar',
+            'D': 'Temsil yetkisi disiplin süreçleriyle sınırlı değildir',
+            'E': 'Temsil, serbest muhasebeci mali müşavirleri de kapsar',
         },
         'A',
-        '3568 md. 14 ve 29: odalar ve Birlik, mesleği ve meslek mensuplarını temsil eden kuruluşlardır; üyelerini yurt içinde ve gerektiğinde uluslararası kuruluşlar nezdinde temsil eder. Temsil yetkisi unvana ya da disiplin süreçlerine sınırlı değildir.',
-        '3568 sayili SMMM ve YMM Kanunu',
+        '3568 md. 14 ve 29: odalar ve Birlik, mesleği ve meslek mensuplarını temsil eden kuruluşlardır; üyelerini yurt içinde ve gerektiğinde uluslararası kuruluşlar nezdinde temsil eder. Temsil yetkisi unvana ya da disiplin süreçlerine sınırlı değildir ve bakanlık tarafından kullanılmaz.',
     ),
     # düzey 2
     '0054': patch(
