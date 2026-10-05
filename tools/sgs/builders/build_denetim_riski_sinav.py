@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; risk ikinci, hile BDS 240 sık sorulan alan). Paket baştan yazıldı: BDS 200 (denetim riski modeli, tespit riski, mesleki şüphecilik, yapısal kısıtlar), BDS 315 (yapısal risk faktörleri, risk değerlendirme prosedürleri, önemli risk, ekip görüşmesi), BDS 320 ve 450 (önemlilik, performans önemliliği, biriktirme ve düzeltilmemiş yanlışlıklar), BDS 240 (hile türleri, hile üçgeni, hasılat karinesi, kontrollerin ihlali, öngörülemezlik, bildirim), BDS 300 (genel strateji ve plan) ve BDS 330 (genel yanıtlar, kontrollerin üç yılda bir testi). Risk modeli ve önemlilik hesapları kesirli aritmetikle.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; risk ikinci, hile BDS 240 sık sorulan alan). Paket baştan yazıldı: BDS 200, 315, 320 ve 450, 240, 300 ve 330. 2026-10-05: gerçek sınavda denetim köklerinin %46'sı olumsuz; 6 soru dört doğru ifadeli olumsuz köke çevrildi (öncüllü soruların cevabını sızdıracak ve mevcut olumsuz soruları tekrar edecek adaylar elendi).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -89,16 +89,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        "BDS 320'ye göre performans önemliliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 320'ye göre performans önemliliği ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bütün için önemlilikten daha düşük belirlenir',
-            'B': 'Raporlama aşamasında belirlenir',
-            'C': 'Önemlilikle aynı tutardadır',
-            'D': 'Her denetimde önemliliğin yarısıdır',
-            'E': 'Bütün için önemlilikten daha yüksek belirlenir',
+            'A': 'Bütün için önemlilikten daha yüksek tutulur',
+            'B': 'Belirli kalemler için ayrıca belirlenebilir',
+            'C': 'Denetim sırasında revize edilebilir',
+            'D': 'Mesleki muhakemeyle belirlenir',
+            'E': 'Toplulaştırma riskini azaltmak amacıyla belirlenir',
         },
         'A',
-        'Performans önemliliği, düzeltilmemiş ve tespit edilmemiş yanlışlıkların toplamının bütün için önemliliği aşma olasılığını uygun düşük düzeye indirmek amacıyla bütün için önemlilikten daha düşük bir tutar olarak belirlenir.',
+        'Performans önemliliği, düzeltilmemiş ve tespit edilmemiş yanlışlıkların toplamının bütün için önemliliği aşma olasılığını düşürmek amacıyla bütün için önemlilikten daha düşük bir tutar olarak belirlenir.',
     ),
     # düzey 2
     '0006': patch(
@@ -284,16 +284,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0020': patch(
-        'Aşağıdakilerden hangisi varlıkların kötüye kullanılmasına örnektir?',
+        'Aşağıdakilerden hangisi varlıkların kötüye kullanılmasına örnek değildir?',
         {
-            'A': 'Satış tahsilatlarının kasiyerce zimmete geçirilmesi',
-            'B': 'Gerçek dışı satış faturası düzenlenmesi',
-            'C': 'Hasılatın erken muhasebeleştirilmesi',
-            'D': 'Karşılıkların bilerek düşük ayrılması',
-            'E': 'Dipnotlarda bilgi saklanması',
+            'A': 'Karşılıkların bilerek düşük ayrılması',
+            'B': 'Şirket kaynaklarıyla kişisel harcama yapılması',
+            'C': 'Satış tahsilatlarının kasiyerce zimmete geçirilmesi',
+            'D': 'Stokların çalışanlarca çalınması',
+            'E': 'Hayali tedarikçilere ödeme yapılması',
         },
         'A',
-        'Varlıkların kötüye kullanılması, çalışanlar ya da yönetim tarafından işletme varlıklarının çalınmasıdır; tahsilatların zimmete geçirilmesi buna örnektir. Diğerleri hileli finansal raporlamadır.',
+        'Varlıkların kötüye kullanılması işletme varlıklarının çalınmasıdır. Karşılıkların bilerek düşük ayrılması ise tabloları olduğundan iyi göstermeye yönelik hileli finansal raporlamadır.',
     ),
     # düzey 2
     '0021': patch(
@@ -336,29 +336,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0024': patch(
-        "Denetim sırasında beklenmedik bir olay nedeniyle risk değerlendirmesi önemli ölçüde değişmiştir.\n\nBDS 300'e göre denetçi ne yapar?",
+        "Denetim sırasında beklenmedik bir olay nedeniyle risk değerlendirmesi önemli ölçüde değişmiştir.\n\nBDS 300'e göre aşağıdakilerden hangisi denetçinin bu durumda yapması gerekenlerden biri değildir?",
         {
-            'A': 'İlk planı aynen uygular',
-            'B': 'Strateji ve planı günceller',
-            'C': 'Denetimi sonlandırır',
-            'D': 'Önemliliği sıfırlar',
-            'E': 'Değişikliği bir sonraki yıla bırakır',
+            'A': 'Genel denetim stratejisini güncellemek',
+            'B': 'Değişikliği bir sonraki yılın denetimine bırakmak',
+            'C': 'Denetim planını değiştirmek',
+            'D': 'Ekibi yeni duruma göre yönlendirmek',
+            'E': 'Değişikliği ve nedenlerini belgelemek',
         },
         'B',
-        'Denetçi gerektiğinde genel stratejiyi ve denetim planını güncelleyip değiştirir; önemli değişiklikleri ve nedenlerini belgeler.',
+        'Denetçi gerektiğinde genel stratejiyi ve denetim planını güncelleyip değiştirir, önemli değişiklikleri ve nedenlerini belgeler; ekibi buna göre yönlendirir.',
     ),
     # düzey 2
     '0025': patch(
-        "BDS 200'e göre denetçinin mesleki şüphecilik göstermesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 200'e göre denetçinin mesleki şüphecilik göstermesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Önceki deneyimine göre yönetime güvenir',
-            'B': 'Yönetimin dürüst olmadığını varsayar',
-            'C': 'Belgelerin sahte olduğunu varsayar',
-            'D': 'Kanıtı sorgulayıcı bir zihinle değerlendirir',
-            'E': 'Sözlü açıklamaları yeterli kabul eder',
+            'A': 'Çelişen kanıtlara karşı uyanık olmayı gerektirir',
+            'B': 'Sorgulayıcı bir zihin yapısını ifade eder',
+            'C': 'Kanıtın eleştirel değerlendirilmesini gerektirir',
+            'D': 'Yönetimin dürüst olmadığını varsaymayı gerektirir',
+            'E': 'Belgelerin güvenilirliğini sorgulamayı içerir',
         },
         'D',
-        'Mesleki şüphecilik, sorgulayıcı bir zihin yapısı ve kanıtın eleştirel değerlendirilmesidir; ne yönetimin dürüst olmadığını varsaymayı ne de geçmiş deneyime dayanarak sorgusuz güvenmeyi ifade eder.',
+        'Mesleki şüphecilik, sorgulayıcı bir zihin yapısı ve kanıtın eleştirel değerlendirilmesidir; yönetimin dürüst olmadığını varsaymayı gerektirmez.',
     ),
     # düzey 3
     '0026': patch(
@@ -414,16 +414,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        "BDS 300'e göre denetim planında yer alan unsurlardan biri aşağıdakilerden hangisidir?",
+        "BDS 300'e göre aşağıdakilerden hangisi denetim planında yer alan unsurlardan biri değildir?",
         {
-            'A': 'Risk değerlendirme prosedürlerinin niteliği',
-            'B': 'Denetim ücretinin tahsil takvimi',
-            'C': 'Yönetim kurulunun toplantı gündemi ve karar defteri',
-            'D': 'İşletmenin bütçe hedefleri',
-            'E': 'Önceki denetçinin ücreti',
+            'A': 'Denetim ücretinin tahsil takvimi',
+            'B': 'Risk değerlendirme prosedürlerinin niteliği ve kapsamı',
+            'C': 'İleri denetim prosedürlerinin zamanlaması',
+            'D': 'Yönetim beyanı düzeyinde planlanan prosedürler',
+            'E': 'Diğer planlanan denetim prosedürleri',
         },
         'A',
-        'Denetim planı; planlanan risk değerlendirme prosedürlerinin ve yönetim beyanı düzeyindeki ileri denetim prosedürlerinin niteliğini, zamanlamasını ve kapsamını ve diğer planlanan prosedürleri içerir.',
+        'Denetim planı; planlanan risk değerlendirme prosedürlerinin, yönetim beyanı düzeyindeki ileri denetim prosedürlerinin niteliğini, zamanlamasını ve kapsamını ve diğer planlanan prosedürleri içerir. Ücretin tahsili denetim planının konusu değildir.',
     ),
     # düzey 2
     '0031': patch(
@@ -544,16 +544,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        "BDS 240'a göre aşağıdakilerden hangisi standardın amaçlarından biridir?",
+        "BDS 240'a göre aşağıdakilerden hangisi standardın amaçlarından biri değildir?",
         {
-            'A': 'Hile yapanları cezalandırmak',
-            'B': 'Hileye ilişkin hukuki karar vermek',
-            'C': 'İşletmedeki tüm hileleri tespit etmeyi ve önlemeyi garanti etmek',
-            'D': 'Hileyi önlemek ve işletmede ortadan kaldırmak',
-            'E': 'Hile kaynaklı riskleri belirleyip değerlendirmek',
+            'A': 'Bu risklere uygun karşılık vererek kanıt elde etmek',
+            'B': 'Hile şüphesine uygun biçimde karşılık vermek',
+            'C': 'Tespit edilen hileye uygun karşılık vermek',
+            'D': 'Hile kaynaklı önemli yanlışlık risklerini belirlemek',
+            'E': 'Hileyi önlemek ve işletmede ortadan kaldırmak',
         },
         'E',
-        'Denetçinin amaçları; hile kaynaklı önemli yanlışlık risklerini belirlemek ve değerlendirmek, bunlara uygun karşılık vererek yeterli kanıt elde etmek ve tespit edilen hile ya da şüphesine uygun karşılık vermektir. Hileyi önlemek ve tespit etmek öncelikle yönetimin sorumluluğudur.',
+        'Denetçinin amaçları; hile kaynaklı önemli yanlışlık risklerini belirlemek ve değerlendirmek, bunlara karşılık vererek yeterli kanıt elde etmek ve tespit edilen hile ya da şüpheye uygun karşılık vermektir. Hileyi önlemek öncelikle yönetimin sorumluluğudur.',
     ),
     # düzey 2
     '0041': patch(

@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; BDS 210 sözleşme ve kalite yönetimi sık soruluyor, havuzda yoktu). Paket baştan yazıldı: geleneksel GKGDS sınıflaması, BDS 200 (genel amaç, makul ve sınırlı güvence, mesleki muhakeme), Etik Kurallar (beş temel ilke, sır saklamanın istisnaları, özde ve görünüşte bağımsızlık, beş tehdit türü ve önlemler, koşullu ücret), TTK 400 denetçi olamayacaklar, BDS 210 (ön şartlar, sözleşme içeriği, kabul öncesi sınırlama, şartların değiştirilmesi), BDS 220 ve KYS 1-2 (sorumlu denetçi, sözleşme kalite gözden geçirmesi, danışma, görüş ayrılığı), müşteri kabulü ve önceki denetçiyle iletişim.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; BDS 210 sözleşme ve kalite yönetimi sık soruluyor, havuzda yoktu). Paket baştan yazıldı: GKGDS, BDS 200, Etik Kurallar, TTK 400, BDS 210, BDS 220 ve KYS 1-2, müşteri kabulü. 2026-10-05: 3 soru dört doğru ifadeli olumsuz köke çevrildi; öncüllü soruların cevabını sızdıracak çeldiriciler kullanılmadı.
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -544,13 +544,13 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        "BDS 200'e göre makul güvence ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 200'e göre makul güvence ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sınırlı güvenceyle aynıdır',
-            'B': 'Tüm işlemlerin tek tek incelenmesiyle elde edilen kesin güvencedir',
-            'C': 'Yüksek ama mutlak olmayan güvencedir',
-            'D': 'Güvence vermeme anlamına gelir',
-            'E': 'Mutlak güvencedir',
+            'A': 'Denetimin yapısal kısıtları nedeniyle mutlak değildir',
+            'B': 'Denetim riskinin kabul edilebilir düzeye indirilmesiyle sağlanır',
+            'C': 'Mutlak güvence düzeyindedir',
+            'D': 'Yeterli ve uygun kanıtla elde edilir',
+            'E': 'Yüksek düzeyde bir güvencedir',
         },
         'C',
         'Makul güvence yüksek düzeyde bir güvencedir; denetimin yapısal kısıtları nedeniyle mutlak güvence değildir.',
@@ -635,29 +635,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "BDS 210'a göre denetim sözleşmesinin şekliyle ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 210'a göre denetim sözleşmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yönetimin tek taraflı beyanıdır',
-            'B': 'Denetim ücretini ve ödeme takvimini içeren kısa bir mektuptur',
-            'C': 'Sözlü yapılabilir',
-            'D': 'Rapordan sonra imzalanır',
-            'E': 'Yazılı olarak düzenlenir',
+            'A': 'Taraflarca kabul edildiğini gösterecek biçimde düzenlenir',
+            'B': 'İmzalanmadan önce denetimin ön şartları değerlendirilir',
+            'C': 'Uygun bir yazılı anlaşma biçiminde de düzenlenebilir',
+            'D': 'Tekrarlanan denetimlerde yeniden değerlendirilebilir',
+            'E': 'Sözlü olarak yapılması yeterlidir',
         },
         'E',
-        'Denetim sözleşmesinin şartları denetim sözleşmesinde ya da uygun başka bir yazılı anlaşma biçiminde kayıt altına alınır.',
+        'Denetim sözleşmesinin şartları denetim sözleşmesinde ya da uygun başka bir yazılı anlaşma biçiminde kayıt altına alınır; sözlü mutabakat yeterli değildir.',
     ),
     # düzey 2
     '0048': patch(
-        'Geleneksel genel kabul görmüş denetim standartları sınıflamasına göre raporlama standartlarından biri aşağıdakilerden hangisidir?',
+        'Geleneksel genel kabul görmüş denetim standartları sınıflamasına göre aşağıdakilerden hangisi raporlama standartlarından biri değildir?',
         {
-            'A': 'Yeterli açıklama',
-            'B': 'Bağımsızlık',
-            'C': 'İç kontrolün değerlendirilmesi',
-            'D': 'Mesleki özen',
-            'E': 'İşin planlanması ve yardımcıların gözetimi',
+            'A': 'Mesleki özen',
+            'B': 'Yeterli açıklama',
+            'C': 'Genel kabul görmüş muhasebe ilkelerine uygunluk',
+            'D': 'Tutarlılık',
+            'E': 'Görüşün bildirilmesi',
         },
         'A',
-        'Raporlama standartları; genel kabul görmüş muhasebe ilkelerine uygunluk, tutarlılık, yeterli açıklama ve görüş bildirmeye ilişkindir.',
+        'Raporlama standartları; genel kabul görmüş muhasebe ilkelerine uygunluk, tutarlılık, yeterli açıklama ve görüş bildirmedir. Mesleki özen genel standartlar arasındadır.',
     ),
     # düzey 2
     '0049': patch(

@@ -342,6 +342,12 @@ parantezli şık **%1**, 200+ karakterlik olay kökü **%27**.
   ilgili…`) ve İngilizce parantez açıklamaları (`(going concern)`) ev üslubudur; kullanılmaz.
 - Hesaplı sorular (risk modeli, önemlilik, yansıtılan yanlışlık, analitik beklenti) her biri
   farklı bağlamla yazılır; aynı veri setini iki soruda kullanma (yakın kopya UYARI'sı).
+- **Olumsuz köke çevirirken sızıntı kuralı (2026-10-05):** "hangisi yanlıştır" sorusunun dört
+  çeldiricisi doğru ifadedir ve öğrenciye bilgi verir. Bu doğru ifadelerden biri aynı paketteki başka bir
+  sorunun cevabını (ör. "Tip 2 rapor işleyiş etkinliğini kapsar", "yanıt gelmeyen teyitte alternatif
+  prosedür uygulanır", bir öncüllü sorunun doğru öncülleri) açıkça söylüyorsa, 20'lik testte iki soru
+  yan yana geldiğinde biri ötekini ele verir. Çeldirici yazarken paketteki diğer soruların cevaplarını tara.
+  Havuzda olumsuz kök %22'den %30'a çıkarıldı; gerçek %46, kalan açık terim-etiket sorularından.
 - 🔴 Tasarımda iki yönlü boy tuzağı tekrar tekrar yaşandı: açıklayıcı doğru şık yazınca
   %33-45 en uzun; her soruya bir uzun çeldirici koyunca %5 en uzun ("en uzunu asla seçme").
   Doğru şıkkı kısa yaz, çeldirici boylarını soruya göre değiştir, `liste()` çıktısıyla %15-20

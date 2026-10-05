@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü). Paket baştan yazıldı: denetimin tanımı ve bilgi riski, yapısal kısıtlar, konusuna ve denetçinin statüsüne göre denetim türleri, iç denetim, güvence hizmetleri (makul ve sınırlı güvence, üzerinde mutabık kalınan prosedürler, derleme), denetim sürecinin aşamaları ve risk odaklı yaklaşım, önemliliğin kullanıldığı aşamalar, toplulaştırma riski, tamamlama aşaması, TTK ve KGK düzenlemesi, hata-hile ve denetçinin sorumluluğu.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü). Paket baştan yazıldı: denetimin tanımı ve bilgi riski, yapısal kısıtlar, denetim türleri, iç denetim, güvence hizmetleri, denetim süreci ve risk odaklı yaklaşım, önemlilik ve toplulaştırma riski, tamamlama aşaması, TTK ve KGK, hata-hile. 2026-10-05: 4 soru dört doğru ifadeli olumsuz köke çevrildi (gerçek sınavda denetim köklerinin %46'sı olumsuz).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -180,16 +180,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Makul güvence ile sınırlı güvence arasındaki fark için aşağıdakilerden hangisi doğrudur?',
+        'Makul güvence ve sınırlı güvence denetimleriyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Sınırlı güvence mutlak güvencedir',
-            'B': 'Makul güvence olumsuz ifadeyle bildirilir',
-            'C': 'Sınırlı güvence daha yüksek güvencedir',
-            'D': 'Sınırlı güvencede prosedürler daha dardır',
-            'E': 'İkisinde uygulanan prosedürler aynıdır',
+            'A': 'İkisi de güvence denetimi türüdür',
+            'B': 'Makul güvence yüksek ama mutlak olmayan güvencedir',
+            'C': 'Sınırlı güvencede prosedürler daha dardır',
+            'D': 'Sınırlı güvencede sonuç olumlu görüşle bildirilir',
+            'E': 'Bağımsız denetim makul güvence sağlar',
         },
         'D',
-        'Sınırlı güvence denetiminde prosedürler, çoğunlukla sorgulama ve analitik prosedürlerle sınırlı olup makul güvence denetimine göre daha dardır; sonuç olumsuz ifadeyle bildirilir.',
+        'Sınırlı güvence denetiminde sonuç olumsuz ifade biçiminde bildirilir; olumlu görüş makul güvence denetimine özgüdür.',
     ),
     # düzey 2
     '0013': patch(
@@ -271,13 +271,13 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        'İç denetim ile bağımsız denetim karşılaştırıldığında aşağıdakilerden hangisi doğrudur?',
+        'İç denetim ile bağımsız denetim karşılaştırıldığında aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Bağımsız denetçi yönetime danışmanlık için atanır',
-            'B': 'İkisinin amacı tamamen aynıdır',
-            'C': 'İç denetçi işletmenin çalışanıdır',
-            'D': 'Bağımsız denetçi işletmenin çalışanıdır',
-            'E': 'İç denetçi finansal tablolar hakkında kamuya görüş verir',
+            'A': 'İki denetimin amacı birbirinden farklıdır',
+            'B': 'İç denetim yönetime hizmet eder',
+            'C': 'Bağımsız denetçi işletmenin çalışanıdır',
+            'D': 'İç denetçi işletmenin çalışanıdır',
+            'E': 'Bağımsız denetçi tablolar hakkında görüş bildirir',
         },
         'C',
         'İç denetçi işletme bünyesinde çalışır ve yönetime hizmet eder; bağımsız denetçi işletme dışındadır ve finansal tablolar hakkında kullanıcılara görüş bildirir.',
@@ -609,16 +609,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        'Bağımsız denetimin işletme dışındaki kullanıcılara sağladığı temel fayda aşağıdakilerden hangisidir?',
+        'Aşağıdakilerden hangisi bağımsız denetimin işletme dışındaki kullanıcılara sağladığı yararlardan biri değildir?',
         {
-            'A': 'Finansal bilginin güvenilirliğini artırmak',
-            'B': 'Tabloların hazırlanmasındaki yönetim sorumluluğunu kaldırmak',
-            'C': 'İşletmenin kârını artırmak',
-            'D': 'Hileyi önlemek',
-            'E': 'Vergi yükünü azaltmak',
+            'A': 'Yönetimin tabloları hazırlama sorumluluğunu kaldırması',
+            'B': 'Yatırım kararlarına güvenli dayanak oluşturması',
+            'C': 'Finansal bilginin güvenilirliğini artırması',
+            'D': 'Kredi değerlendirmelerinde güveni artırması',
+            'E': 'Kaynakların daha doğru yönlendirilmesine katkı sağlaması',
         },
         'A',
-        'Bağımsız denetim, tarafsız bir uzmanın görüşüyle finansal tablolardaki bilginin güvenilirliğini artırarak kullanıcıların bilgi riskini azaltır.',
+        'Bağımsız denetim finansal bilginin güvenilirliğini artırır ve kullanıcı kararlarını destekler; ancak tabloları hazırlama sorumluluğu yönetimde kalır.',
     ),
     # düzey 2
     '0046': patch(
@@ -687,16 +687,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        'Bağımsız denetçinin hileye ilişkin sorumluluğu ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bağımsız denetçinin hileye ilişkin sorumluluğu ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Hileyi araştırmakla yükümlü değildir',
-            'B': 'Hileye ilişkin hukuki karar verir',
-            'C': 'Hile kaynaklı önemli yanlışlık için makul güvence elde eder',
-            'D': 'Hileyi önlemekle sorumludur',
-            'E': 'İşletmedeki tüm hileleri tespit etmeyi ve önlemeyi garanti eder',
+            'A': 'Tespit ettiği hileyi uygun kademeye bildirir',
+            'B': 'Hile riskini değerlendirirken yönetimi sorgular',
+            'C': 'Tüm hileleri tespit etmeyi garanti eder',
+            'D': 'Denetim boyunca mesleki şüphecilik gösterir',
+            'E': 'Hile kaynaklı önemli yanlışlık için makul güvence elde eder',
         },
         'C',
-        'Denetçi, finansal tabloların bütün olarak hata ya da hile kaynaklı önemli yanlışlık içermediğine dair makul güvence elde etmekle sorumludur; hileyi önlemek ve her hileyi tespit etmek sorumluluğunda değildir.',
+        'Denetçi, tabloların hata ya da hile kaynaklı önemli yanlışlık içermediğine dair makul güvence elde etmekle sorumludur; her hileyi tespit etmeyi garanti etmez.',
     ),
     # düzey 2
     '0052': patch(

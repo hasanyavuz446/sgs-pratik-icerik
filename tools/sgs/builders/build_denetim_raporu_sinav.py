@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; raporlama en sık sorulan alan). Paket baştan yazıldı: BDS 700 (rapor bölümleri ve sırası, Görüşün Dayanağı unsurları, sorumluluk bölümleri, rapor tarihi, mevzuattan kaynaklanan yükümlülükler, görüş oluşturma), BDS 705 (önemli/yaygın matrisi, yaygınlık tanımı, kapsam sınırlaması ve çekilme, kaçınmada KDK ve Diğer Bilgiler bölümünün olmaması, parçalı görüş yasağı, birden fazla belirsizlik), BDS 706 (dikkat çeken husus ve diğer husus), BDS 701 (KDK), BDS 720 (diğer bilgiler), BDS 570 (süreklilik ve rapor), BDS 710 ve BDS 560. Önemlilik karşılaştırmalı olay soruları kesirli aritmetikle.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; raporlama en sık sorulan alan). Paket baştan yazıldı: BDS 700, 705, 706, 701, 720, 570, 710 ve 560. 2026-10-05: gerçek sınavda denetim köklerinin %46'sı olumsuz; 4 soru dört doğru ifadeli olumsuz köke çevrildi (sızıntı riski taşıyan adaylar elendi).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -89,16 +89,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        "BDS 700'e göre denetçi raporunun başlığıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 700'e göre denetçi raporunda yer alan unsurlarla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bağımsız denetçi raporu olduğu açıkça belirtilir',
-            'B': 'Başlık kullanılması isteğe bağlıdır',
-            'C': 'Başlıkta yönetim kurulunun onayı belirtilir',
-            'D': 'Başlıkta işletmenin unvanı yer almaz',
-            'E': 'Görüş türü başlıkta belirtilir',
+            'A': 'Başlıkta verilen görüşün türü belirtilir',
+            'B': 'Raporda denetçinin bulunduğu yer belirtilir',
+            'C': 'Raporda denetçinin imzası yer alır',
+            'D': 'Rapor, sözleşmede belirlenen muhataba hitaben düzenlenir',
+            'E': 'Başlıkta bağımsız denetçi raporu olduğu açıkça belirtilir',
         },
         'A',
-        'Denetçi raporunun, bağımsız bir denetçinin raporu olduğunu açıkça gösteren bir başlığı bulunur.',
+        'Denetçi raporunun başlığı, raporun bağımsız bir denetçiye ait olduğunu gösterir; görüşün türü başlıkta değil Görüş bölümünde yer alır.',
     ),
     # düzey 3
     '0006': patch(
@@ -180,16 +180,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "BDS 720'ye göre denetçinin diğer bilgilere ilişkin sorumluluğu aşağıdakilerden hangisidir?",
+        "BDS 720'ye göre diğer bilgilerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Okuyup önemli tutarsızlık olup olmadığını değerlendirmek',
-            'B': 'Diğer bilgileri yönetim adına onaylamak',
-            'C': 'Diğer bilgileri hazırlamak',
-            'D': 'Diğer bilgileri denetleyip ayrıca makul güvence içeren görüş vermek',
-            'E': 'Diğer bilgiler hakkında güvence vermek',
+            'A': 'Denetçinin görüşü diğer bilgileri de kapsar',
+            'B': 'Denetimde edinilen bilgilerle tutarlılığı da gözetilir',
+            'C': 'Tablolarla önemli tutarsızlık olup olmadığı değerlendirilir',
+            'D': 'Denetçi diğer bilgileri okur',
+            'E': 'Yıllık faaliyet raporu diğer bilgilere örnektir',
         },
         'A',
-        'Denetçinin görüşü diğer bilgileri kapsamaz. Denetçi diğer bilgileri okur; tablolar ve denetimde edindiği bilgilerle önemli bir tutarsızlık bulunup bulunmadığını ve diğer bilgilerde önemli yanlışlık olup olmadığını değerlendirir.',
+        'Denetçinin görüşü diğer bilgileri kapsamaz. Denetçi diğer bilgileri okur ve tablolar ile denetimde edindiği bilgilerle önemli bir tutarsızlık olup olmadığını değerlendirir.',
     ),
     # düzey 2
     '0013': patch(
@@ -453,16 +453,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        "Denetçi, yatırım amaçlı gayrimenkullerin gerçeğe uygun değer ölçümünü kilit denetim konusu olarak belirlemiştir.\n\nBDS 701'e göre raporda bu konunun açıklamasında aşağıdakilerden hangisi yer alır?",
+        "Denetçi, yatırım amaçlı gayrimenkullerin gerçeğe uygun değer ölçümünü kilit denetim konusu olarak belirlemiştir.\n\nBDS 701'e göre bu konunun raporda açıklanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sınırlı olumlu görüş gerekçesi',
-            'B': 'Değerleme uzmanının ücreti',
-            'C': 'Yönetimin onay imzası',
-            'D': 'Konunun nasıl ele alındığı',
-            'E': 'Gayrimenkuller hakkında ayrı görüş',
+            'A': 'Konu, üst yönetime bildirilen konular arasından seçilmiştir',
+            'B': 'Tablolardaki ilgili açıklamalara atıf yapılır',
+            'C': 'Konunun denetimde nasıl ele alındığı açıklanır',
+            'D': 'Konu hakkında ayrı bir görüş verilir',
+            'E': 'Konunun neden önemli görüldüğü açıklanır',
         },
         'D',
-        'Her kilit denetim konusu için konunun neden en önemli konulardan biri sayıldığı, denetimde nasıl ele alındığı ve varsa tablolardaki ilgili açıklamalara atıf yer alır. Kilit denetim konuları hakkında ayrı görüş verilmez.',
+        'Her kilit denetim konusu için konunun neden en önemli konulardan biri sayıldığı, denetimde nasıl ele alındığı ve tablolardaki ilgili açıklamalara atıf yer alır. Kilit denetim konuları hakkında ayrı görüş verilmez.',
     ),
     # düzey 3
     '0034': patch(
@@ -778,16 +778,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0058': patch(
-        'Olumlu görüş içeren bir denetçi raporunda görüş cümlesinin özü aşağıdakilerden hangisidir?',
+        'Olumlu görüş içeren bir denetçi raporuyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Tüm önemli yönleriyle gerçeğe uygun sunulduğu',
-            'B': 'Tüm işlemlerin incelendiği',
-            'C': 'Yanlışlık içermediği',
-            'D': 'İç kontrolün etkin olduğu',
-            'E': 'Vergi mevzuatına uyulduğu',
+            'A': 'Tabloların hiç yanlışlık içermediğini garanti eder',
+            'B': 'Makul güvenceye dayanır',
+            'C': 'Tabloların tüm önemli yönleriyle gerçeğe uygun sunulduğunu bildirir',
+            'D': 'Önemlilik çerçevesinde verilir',
+            'E': 'Uygulanabilir finansal raporlama çerçevesine atıf yapar',
         },
         'A',
-        'Olumlu görüş, finansal tabloların tüm önemli yönleriyle uygulanabilir finansal raporlama çerçevesine uygun olarak gerçeğe uygun biçimde sunulduğunu ifade eder; tabloların hiç yanlışlık içermediği anlamına gelmez.',
+        'Olumlu görüş, tabloların tüm önemli yönleriyle çerçeveye uygun ve gerçeğe uygun sunulduğunu bildirir; makul güvenceye ve önemlilik kavramına dayandığından tabloların hiç yanlışlık içermediğini garanti etmez.',
     ),
     # düzey 3
     '0059': patch(
