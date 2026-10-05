@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        "BDS 200'e göre bağımsız denetimin genel amacı aşağıdakilerden hangisidir?",
+        "BDS 200'e göre bağımsız denetimin genel amacıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yönetimin yerine finansal tabloları hazırlayarak kullanıcılara sunmak',
-            'B': 'İşletmenin geleceğini garanti etmek',
-            'C': 'Makul güvence elde edip görüş bildirmek',
-            'D': 'Tüm hileleri ortaya çıkarmak',
-            'E': 'Mutlak güvence sağlamak',
+            'A': 'Denetçi makul güvence elde etmeyi amaçlar',
+            'B': 'Güvence tabloların bütününe ilişkindir',
+            'C': 'Denetçi tablolara mutlak güvence sağlar',
+            'D': 'Hata ve hile kaynaklı yanlışlıklar dikkate alınır',
+            'E': 'Denetçi bulgularına göre rapor verir',
         },
         'C',
-        'Denetçinin genel amacı, tabloların bütün olarak hata veya hile kaynaklı önemli yanlışlık içermediğine dair makul güvence elde etmek ve bulgularına göre rapor vermektir.',
+        'BDS 200: denetçinin genel amacı, tabloların bütün olarak hata veya hile kaynaklı önemli yanlışlık içermediğine dair makul güvence elde etmek ve bulgularına göre rapor vermektir. Denetimin yapısal kısıtları nedeniyle mutlak güvence sağlanamaz.',
     ),
     # düzey 3
     '0016': patch(
@@ -440,16 +440,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0032': patch(
-        "Önceki yıl aynı şirketin sorumlu denetçisi olan kişinin bu yıl sözleşme kalite gözden geçireni olarak atanması düşünülmektedir.\n\nKYS 2'ye göre bu atama için hangisi doğrudur?",
+        "Önceki yıl aynı şirketin sorumlu denetçisi olan kişinin bu yıl sözleşme kalite gözden geçireni olarak atanması düşünülmektedir.\n\nKYS 2'ye göre bu atamayla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hemen atanabilir',
-            'B': 'Yönetimin onayı alınırsa soğuma süresi aranmaz',
-            'C': 'Sorumlu denetçiyle birlikte atanabilir',
-            'D': 'Ücreti artırılarak atanabilir',
-            'E': 'Soğuma süresi geçmeden atanamaz',
+            'A': 'Soğuma süresi geçmeden atama yapılamaz',
+            'B': 'Soğuma süresi tarafsızlık tehdidini azaltır',
+            'C': 'Ücret artışı soğuma şartını kaldırmaz',
+            'D': 'Gözden geçiren tarafsız olmalıdır',
+            'E': 'Yönetimin onayıyla soğuma süresi aranmaz',
         },
         'E',
-        'Önceki dönemde sorumlu denetçi olan kişinin aynı denetimde sözleşme kalite gözden geçireni olabilmesi için soğuma süresi geçmesi gerekir; bu, tarafsızlık tehditlerini azaltır.',
+        'KYS 2: önceki dönemde sorumlu denetçi olan kişinin aynı denetimde sözleşme kalite gözden geçireni olabilmesi için soğuma süresinin geçmesi gerekir; bu, tarafsızlık tehditlerini azaltır. Gözden geçiren tarafsız olmalıdır; yönetimin onayı ya da ücret bu şartı kaldırmaz.',
     ),
     # düzey 2
     '0033': patch(
@@ -505,16 +505,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0037': patch(
-        'Denetim ekibi üyesinin eşi, denetlenen şirkette finansal tabloların hazırlanmasından sorumlu mali işler müdürü olarak çalışmaya başlamıştır.\n\nBu duruma uygun önlem aşağıdakilerden hangisidir?',
+        'Denetim ekibi üyesinin eşi, denetlenen şirkette finansal tabloların hazırlanmasından sorumlu mali işler müdürü olarak çalışmaya başlamıştır.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Üyeyi ekipten çıkarmak',
-            'B': 'Durumu dipnotlarda açıklamak',
-            'C': 'Üyenin ekipte kalıp belirli hesapları denetlemesine izin vermek',
-            'D': 'Eşin yazılı beyanını almak',
-            'E': 'Ücreti düşürmek',
+            'A': 'Üye ekipte kalıp belirli hesapları denetleyebilir',
+            'B': 'Durum önemli bir yakınlık tehdidi oluşturur',
+            'C': 'Durum kişisel çıkar tehdidi de doğurabilir',
+            'D': 'Dipnot açıklaması uygun bir önlem değildir',
+            'E': 'Eşin yazılı beyanı tehdidi gidermez',
         },
         'A',
-        'Yakın aile üyesinin tabloların hazırlanmasında önemli etkisi olan bir pozisyonda bulunması önemli bir yakınlık ve kişisel çıkar tehdidi oluşturur; ekip üyesinin denetim ekibinden çıkarılması gerekir.',
+        'Yakın aile üyesinin tabloların hazırlanmasında önemli etkisi olan bir pozisyonda bulunması önemli bir yakınlık ve kişisel çıkar tehdidi oluşturur. Açıklama ya da yazılı beyan tehdidi gidermez; üyenin denetim ekibinden çıkarılması gerekir.',
     ),
     # düzey 3
     '0038': patch(
@@ -583,16 +583,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        "Bir denetçi, son beş yılda mesleki faaliyetlerinden elde ettiği toplam gelirin %35'ini denetlemeye aday olduğu şirketten ve bu şirketin önemli payına sahip olduğu şirketlerden elde etmiştir.\n\nTürk Ticaret Kanunu'na göre bu durum için aşağıdakilerden hangisi doğrudur?",
+        "Bir denetçi, son beş yılda mesleki faaliyetlerinden elde ettiği toplam gelirin %35'ini denetlemeye aday olduğu şirketten ve bu şirketin önemli payına sahip olduğu şirketlerden elde etmiştir.\n\nTürk Ticaret Kanunu'na göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yönetim kurulunun onayıyla seçilebilir',
-            'B': 'Denetçi seçilemez',
-            'C': 'Genel kurulda oybirliği sağlanırsa engel ortadan kalkar',
-            'D': 'Denetçi seçilebilir',
-            'E': 'Gelirin açıklanmasıyla seçilebilir',
+            'A': 'Değerlendirme son beş yıllık gelire göre yapılır',
+            'B': 'Gelir açıklanırsa denetçi seçilebilir',
+            'C': 'Şirketin önemli payına sahip olduğu şirketlerden gelir de sayılır',
+            'D': 'Genel kurulda oybirliği engeli kaldırmaz',
+            'E': "Sınırlama TTK'da düzenlenmiştir",
         },
         'B',
-        "TTK 400'e göre son beş yılda mesleki faaliyetlerinden elde ettiği toplam gelirin yüzde otuzundan fazlasını denetlenecek şirketten ve onun önemli paylarına sahip olduğu şirketlerden elde eden kişi denetçi olamaz.",
+        'TTK 400: son beş yılda mesleki faaliyetlerinden elde ettiği toplam gelirin yüzde otuzundan fazlasını denetlenecek şirketten ve onun önemli paylarına sahip olduğu şirketlerden elde eden kişi denetçi olamaz. Açıklama ya da genel kurul kararı bu engeli kaldırmaz.',
     ),
     # düzey 2
     '0044': patch(
@@ -661,16 +661,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        "Etik Kurallar'a göre tarafsızlık ilkesi aşağıdakilerden hangisini ifade eder?",
+        "Etik Kurallar'a göre aşağıdakilerden hangisi tarafsızlık ilkesinin gereklerinden biri değildir?",
         {
-            'A': 'Ücreti sonuca bağlamak',
-            'B': 'Müşteriyle yakın dostluk kurmak',
-            'C': 'Yönetimin tercihlerine uymak',
-            'D': 'Önyargı ve çıkar çatışmasından etkilenmemek',
-            'E': 'Müşterinin görüşünü benimsemek',
+            'A': 'Önyargıdan etkilenmemek',
+            'B': 'Çıkar çatışmasından etkilenmemek',
+            'C': 'Başkalarının aşırı etkisi altında kalmamak',
+            'D': 'Yönetimin tercihlerine uymak',
+            'E': 'Mesleki muhakemeyi bağımsız kullanmak',
         },
         'D',
-        'Tarafsızlık, mesleki ya da ticari muhakemenin önyargı, çıkar çatışması veya başkalarının aşırı etkisi altında kalmamasıdır.',
+        'Tarafsızlık, mesleki ya da ticari muhakemenin önyargı, çıkar çatışması veya başkalarının aşırı etkisi altında kalmamasıdır. Yönetimin tercihlerine uymak bu ilkeyle bağdaşmaz.',
     ),
     # düzey 2
     '0050': patch(
@@ -739,29 +739,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        'Denetim ücretinin, şirketin vergi incelemesinde elde edeceği vergi tasarrufunun belirli bir yüzdesi olarak belirlenmesi teklif edilmiştir.\n\nBu düzenleme için aşağıdakilerden hangisi doğrudur?',
+        'Denetim ücretinin, şirketin vergi incelemesinde elde edeceği vergi tasarrufunun belirli bir yüzdesi olarak belirlenmesi teklif edilmiştir.\n\nBu düzenlemeyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yönetimin onayıyla uygundur',
-            'B': 'Koşullu ücret olduğundan kabul edilemez',
-            'C': 'Ücretin artmasını sağladığı için uygundur',
-            'D': 'Sözleşmeye yazılırsa uygundur',
-            'E': 'Ücret sonuç ne olursa olsun bağımsızlığı etkilemediğinden uygundur',
+            'A': 'Düzenleme koşullu ücrettir',
+            'B': 'Sözleşmeye yazılırsa düzenleme uygundur',
+            'C': 'Yönetimin onayı düzenlemeyi uygun kılmaz',
+            'D': 'Ücret işin sonucuna bağlanmıştır',
+            'E': 'Tehdidi giderecek bir önlem bulunmaz',
         },
         'B',
-        'Denetim ücretinin işin sonucuna bağlanması koşullu ücrettir ve kişisel çıkar tehdidini kabul edilebilir düzeye indirecek önlem bulunmadığından denetim sözleşmelerinde kabul edilemez.',
+        'Denetim ücretinin işin sonucuna bağlanması koşullu ücrettir; doğurduğu tehdidi kabul edilebilir düzeye indirecek önlem bulunmadığından denetim sözleşmelerinde kabul edilemez. Sözleşmeye yazılması ya da yönetimin onayı bu sonucu değiştirmez.',
     ),
     # düzey 3
     '0056': patch(
-        'Müşteri, yeni denetçinin önceki denetçiyle görüşmesine izin vermemiştir.\n\nBu durumun yeni denetçi açısından anlamı aşağıdakilerden hangisidir?',
+        'Müşteri, yeni denetçinin önceki denetçiyle görüşmesine izin vermemiştir.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Önceki denetçiye habersiz başvurulur',
-            'B': 'Önemsiz bir ayrıntıdır',
-            'C': 'Sözleşmeyi kabulü ciddi biçimde sorgulanır',
-            'D': 'Önceki raporun kopyasıyla yetinilir',
-            'E': 'Ücret artırılarak telafi edilir',
+            'A': 'Durum önemli bir uyarı işaretidir',
+            'B': 'Yeni denetçi bunun nedenlerini değerlendirir',
+            'C': 'Önceki raporun kopyası iletişimin yerine geçer',
+            'D': 'Önceki denetçiye habersiz başvurulmaz',
+            'E': 'Ücret artışı durumu telafi etmez',
         },
         'C',
-        'Müşterinin önceki denetçiyle iletişime izin vermemesi önemli bir uyarı işaretidir; yeni denetçi bunun nedenlerini değerlendirir ve sözleşmeyi kabul edip etmeyeceğini ciddi biçimde sorgular.',
+        'Müşterinin önceki denetçiyle iletişime izin vermemesi önemli bir uyarı işaretidir; yeni denetçi bunun nedenlerini değerlendirir ve sözleşmeyi kabul edip etmeyeceğini ciddi biçimde sorgular. Önceki raporun kopyası ya da ücret iletişimin yerini tutmaz; habersiz başvuru da yapılmaz.',
     ),
     # düzey 2
     '0057': patch(
@@ -791,16 +791,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        'Geleneksel genel kabul görmüş denetim standartları sınıflamasına göre aşağıdakilerden hangisi çalışma alanı standartları kapsamındadır?',
+        'Geleneksel genel kabul görmüş denetim standartları sınıflamasına göre aşağıdakilerden hangisi çalışma alanı standartlarından biri değildir?',
         {
-            'A': 'Muhasebe ilkelerine uygunluğun raporda belirtilmesi',
-            'B': 'Bağımsızlık',
-            'C': 'Yeterli ve uygun kanıt toplanması',
-            'D': 'Görüşün açıkça bildirilmesi',
-            'E': 'Mesleki eğitim ve yeterlilik',
+            'A': 'İşin planlanması',
+            'B': 'Yardımcıların gözetimi',
+            'C': 'Bağımsızlık',
+            'D': 'İç kontrolün anlaşılması',
+            'E': 'Yeterli ve uygun kanıt toplanması',
         },
         'C',
-        'Çalışma alanı standartları; işin planlanması ve gözetimi, iç kontrolün anlaşılması ve yeterli kanıt toplanmasıdır. Eğitim-yeterlilik ve bağımsızlık genel standartlar, görüş bildirme raporlama standartlarıdır.',
+        'Çalışma alanı standartları; işin planlanması ve yardımcıların gözetimi, iç kontrolün anlaşılması ve yeterli kanıt toplanmasıdır. Bağımsızlık ile eğitim ve yeterlilik genel standartlar, görüş bildirme ise raporlama standartları arasındadır.',
     ),
     # düzey 3
     '0060': patch(

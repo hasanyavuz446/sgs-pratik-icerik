@@ -310,16 +310,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        "BDS 450'ye göre denetçi, biriktirdiği yanlışlıklarla ilgili olarak öncelikle aşağıdakilerden hangisini yapar?",
+        "BDS 450'ye göre denetçinin biriktirdiği yanlışlıklarla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yönetime bildirip düzeltilmesini ister',
-            'B': 'Yanlışlıkları kendisi düzeltir',
-            'C': 'Yanlışlıkları ilan eder',
-            'D': 'Yanlışlıkları vergi idaresine bildirir',
-            'E': 'Yanlışlıkları gelecek yıla devreder',
+            'A': 'Denetçi biriktirdiği yanlışlıkları kendisi düzeltir',
+            'B': 'Denetçi denetim sırasında belirlenen yanlışlıkları biriktirir',
+            'C': 'Yanlışlıklar uygun yönetim kademesine bildirilir',
+            'D': 'Yanlışlıkların düzeltilmesi yönetimden talep edilir',
+            'E': 'Bildirim zamanında yapılır',
         },
         'A',
-        'Denetçi biriktirdiği yanlışlıkları zamanında uygun yönetim kademesine bildirir ve düzeltilmelerini talep eder.',
+        'BDS 450: denetçi, açıkça önemsiz olanlar dışında denetim sırasında belirlenen yanlışlıkları biriktirir, zamanında uygun yönetim kademesine bildirir ve düzeltilmelerini talep eder. Tabloları düzeltmek yönetimin sorumluluğudur; denetçi düzeltme yapmaz.',
     ),
     # düzey 3
     '0023': patch(
@@ -401,16 +401,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        "BDS 315'e göre önemli risk aşağıdakilerden hangisidir?",
+        "BDS 315'e göre önemli riskle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Önemlilik tutarını aşan her yanlışlık',
-            'B': 'Yapısal risk yelpazesinin üst ucuna yakın risk',
-            'C': 'Kontrol riskinin sıfır olduğu risk',
-            'D': 'Yönetimin önemli bulduğu risk',
-            'E': 'Tespit riskinin en yüksek olduğu risk',
+            'A': 'Yapısal risk yelpazesinin üst ucuna yakın değerlendirilir',
+            'B': 'Önemlilik tutarını aşan her yanlışlık önemli risktir',
+            'C': 'Yanlışlığın olasılığı ve büyüklüğü birlikte dikkate alınır',
+            'D': 'Yönetimin önemli bulması tek başına belirleyici değildir',
+            'E': 'Değerlendirmede yapısal risk faktörleri esas alınır',
         },
         'B',
-        'Önemli risk, yapısal risk faktörlerinin yanlışlığın olasılığını ve büyüklüğünü etkileme derecesi nedeniyle yapısal riskin yelpazenin üst ucuna yakın değerlendirildiği risktir.',
+        'BDS 315: önemli risk, yapısal risk faktörlerinin yanlışlığın olasılığını ve büyüklüğünü etkileme derecesi nedeniyle yapısal riskin yelpazenin üst ucuna yakın değerlendirildiği risktir. Bir yanlışlığın tutarı önemliliği aşıyor olması onu önemli risk yapmaz; değerlendirme yönetimin görüşüne de bırakılmaz.',
     ),
     # düzey 2
     '0030': patch(
@@ -466,16 +466,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0034': patch(
-        "Bir bankanın finansal tablolarında üst yönetime yapılan ödemeler, toplam tutarı önemlilik düzeyinin altında olmasına rağmen kullanıcılar için özel önem taşımaktadır.\n\nBDS 320'ye göre denetçi ne yapabilir?",
+        "Bir bankanın finansal tablolarında üst yönetime yapılan ödemeler, toplam tutarı önemlilik düzeyinin altında olmasına rağmen kullanıcılar için özel önem taşımaktadır.\n\nBDS 320'ye göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Performans önemliliğini kaldırır',
-            'B': 'Bu açıklama için daha düşük önemlilik belirler',
-            'C': 'Bütün için önemliliği yükseltir',
-            'D': 'Bu açıklamayı denetim dışında bırakır',
-            'E': 'Bu tutarı açıkça önemsiz sayar',
+            'A': 'Bu açıklama için daha düşük bir önemlilik belirlenebilir',
+            'B': 'Bütün için önemlilik yükseltilir',
+            'C': 'Kullanıcılar için özel önem taşıyan kalemler dikkate alınır',
+            'D': 'Kalem denetim dışında bırakılmaz',
+            'E': 'Bütün için önemliliğin altındaki yanlışlıklar da önemli olabilir',
         },
         'B',
-        'Belirli işlem sınıfları, hesap bakiyeleri veya açıklamalarda, bütün için önemliliğin altındaki yanlışlıkların da kullanıcı kararlarını etkilemesi bekleniyorsa denetçi bu kalemler için daha düşük önemlilik düzeyleri belirler.',
+        'BDS 320: belirli işlem sınıfları, hesap bakiyeleri veya açıklamalarda bütün için önemliliğin altındaki yanlışlıkların da kullanıcı kararlarını etkilemesi bekleniyorsa denetçi bu kalemler için daha düşük önemlilik düzeyleri belirler. Bütün için önemliliği yükseltmek bu amaçla bağdaşmaz.',
     ),
     # düzey 2
     '0035': patch(
@@ -505,16 +505,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        "BDS 240'a göre hasılatın muhasebeleştirilmesinde hile riski bulunduğu karinesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 240'a göre hasılatın muhasebeleştirilmesinde hile riski bulunduğu karinesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Karine çürütülemez',
-            'B': 'Yönetimin beyanıyla çürütülür',
-            'C': 'Kontrol testleriyle ortadan kalkar',
-            'D': 'Halka açık şirketlerle sınırlıdır',
-            'E': 'Denetçi gerekçesini belgeleyerek çürütebilir',
+            'A': 'Denetçi hasılatta hile riski bulunduğunu varsayar',
+            'B': 'Karine belirli durumlarda çürütülebilir',
+            'C': 'Çürütme gerekçesi belgelenir',
+            'D': 'Karine halka açık şirketlerle sınırlı değildir',
+            'E': 'Karine yönetimin beyanıyla çürütülür',
         },
         'E',
-        'Denetçi hasılatın muhasebeleştirilmesinde hile riski bulunduğunu varsayar; bu karineyi çürüttüğü sonucuna varırsa gerekçelerini belgeler.',
+        'BDS 240: denetçi hasılatın muhasebeleştirilmesinde hile riski bulunduğunu varsayar; bu karineyi kendi değerlendirmesiyle çürüttüğü sonucuna varırsa gerekçelerini belgeler. Karine işletme türüyle sınırlı değildir ve yönetimin beyanı onu çürütmeye yetmez.',
     ),
     # düzey 2
     '0038': patch(
@@ -557,16 +557,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "BDS 300'e göre denetimin kapsamını, zamanlamasını ve yönünü belirleyen ve denetim planının geliştirilmesine rehberlik eden çalışma aşağıdakilerden hangisidir?",
+        "BDS 300'e göre genel denetim stratejisiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kalite kontrol incelemesi',
-            'B': 'Risk değerlendirme prosedürü',
-            'C': 'Denetim planı',
-            'D': 'Denetim sözleşmesi',
-            'E': 'Genel denetim stratejisi',
+            'A': 'Denetimin kapsamını belirler',
+            'B': 'Denetimin zamanlamasını belirler',
+            'C': 'Denetimin yönünü belirler',
+            'D': 'Denetim planının geliştirilmesine rehberlik eder',
+            'E': 'Denetim planı tamamlandıktan sonra hazırlanır',
         },
         'E',
-        'Genel denetim stratejisi denetimin kapsamını, zamanlamasını ve yönünü belirler ve denetim planının geliştirilmesine rehberlik eder.',
+        'BDS 300: genel denetim stratejisi denetimin kapsamını, zamanlamasını ve yönünü belirler ve denetim planının geliştirilmesine rehberlik eder. Bu nedenle strateji plandan önce oluşturulur; ikisi denetim boyunca güncellenebilir.',
     ),
     # düzey 2
     '0042': patch(
@@ -622,16 +622,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "BDS 240'a göre hileden kaynaklanan önemli yanlışlığın tespit edilememe riski, hatadan kaynaklananınkinden neden daha yüksektir?",
+        "BDS 240'a göre hileden kaynaklanan önemli yanlışlığın tespit edilememe riski, hatadan kaynaklananınkinden daha yüksektir.\n\nBunun nedenleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hatalar daha karmaşık olduğu için',
-            'B': 'Hile nakit işlemlerle sınırlı olduğu için',
-            'C': 'Hile tutarları daha küçük olduğu için',
-            'D': 'Denetçi hileyi aramadığı için',
-            'E': 'Gizleme amaçlı muvazaa ve sahtecilik içerebildiği için',
+            'A': 'Hile belgelerde sahtecilik içerebilir',
+            'B': 'Hile birden fazla kişinin muvazaasını içerebilir',
+            'C': 'Hile gizlemeye yönelik ayrıntılı planlar içerebilir',
+            'D': 'Hile denetçiye yanlış beyan verilmesini içerebilir',
+            'E': 'Hile tutarları hatalardan daha küçüktür',
         },
         'E',
-        'Hile; sahtecilik, kasıtlı kayıt atlanması, muvazaa ve kasıtlı yanlış beyan gibi gizlemeye yönelik ayrıntılı planlar içerebildiğinden tespit edilememe riski hatadan daha yüksektir.',
+        'BDS 240: hile; sahtecilik, kayıtların bilerek atlanması, muvazaa ve denetçiye kasıtlı yanlış beyan gibi gizlemeye yönelik ayrıntılı planlar içerebildiğinden tespit edilememe riski hatadan daha yüksektir. Bu farkın nedeni tutarların küçüklüğü değildir.',
     ),
     # düzey 3
     '0047': patch(
@@ -648,16 +648,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "BDS 315'e göre denetim ekibi üyeleri arasında yapılan görüşmenin amacı aşağıdakilerden hangisidir?",
+        "BDS 315'e göre denetim ekibi üyeleri arasında yapılan görüşmeyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Raporun dilini belirlemek',
-            'B': 'Denetim ücretini paylaştırmak',
-            'C': 'Önemli yanlışlık açıklığını görüşmek',
-            'D': 'Yönetimin performansını değerlendirmek',
-            'E': 'Önceki yılın görüşünü yeniden tartışmak',
+            'A': 'Sorumlu denetçi ve kilit ekip üyeleri katılır',
+            'B': 'Tabloların önemli yanlışlığa açıklığı görüşülür',
+            'C': 'Görüşmenin amacı denetim ücretini paylaştırmaktır',
+            'D': 'Raporlama çerçevesinin uygulanışı görüşülür',
+            'E': 'Hile kaynaklı yanlışlığa açıklık da ele alınır',
         },
         'C',
-        'Sorumlu denetçi ve kilit ekip üyeleri, uygulanacak finansal raporlama çerçevesinin uygulanışını ve finansal tabloların önemli yanlışlığa açıklığını görüşür.',
+        'BDS 315 (ve BDS 240): sorumlu denetçi ve kilit ekip üyeleri, uygulanacak finansal raporlama çerçevesinin uygulanışını ve finansal tabloların hile ya da hata kaynaklı önemli yanlışlığa açıklığını görüşür.',
     ),
     # düzey 2
     '0049': patch(

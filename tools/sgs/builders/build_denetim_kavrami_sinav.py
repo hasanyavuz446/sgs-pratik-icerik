@@ -63,16 +63,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        'Bir meslek mensubunun, işletme yönetiminin sağladığı bilgilerle finansal tabloları hazırlamasına yardım ettiği ve güvence vermediği hizmet aşağıdakilerden hangisidir?',
+        'Bir meslek mensubu, işletme yönetiminin sağladığı bilgilerle finansal tabloların hazırlanmasına yardım edecektir.\n\nDerleme hizmetiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Sınırlı bağımsız denetim',
-            'B': 'Bağımsız denetim',
-            'C': 'Derleme hizmeti',
-            'D': 'Üzerinde mutabık kalınan prosedürler',
-            'E': 'İç denetim',
+            'A': 'Finansal bilginin hazırlanmasına yardım edilir',
+            'B': 'Güvence verilmez',
+            'C': 'Tablolar hakkında makul güvence sağlanır',
+            'D': 'Yönetimin sağladığı bilgiler kullanılır',
+            'E': 'Finansal bilginin sunulmasına yardım edilir',
         },
         'C',
-        'Derleme hizmetinde meslek mensubu finansal bilginin hazırlanmasında ve sunulmasında yönetime yardım eder; güvence vermez.',
+        'Derleme hizmetinde meslek mensubu, yönetimin sağladığı bilgileri kullanarak finansal bilginin hazırlanmasında ve sunulmasında yönetime yardım eder; herhangi bir güvence vermez. Makul güvence bağımsız denetime özgüdür.',
     ),
     # düzey 2
     '0004': patch(
@@ -193,16 +193,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        'İç denetçinin bağımsızlığı ile bağımsız denetçinin bağımsızlığı arasındaki farkla ilgili aşağıdakilerden hangisi doğrudur?',
+        'İç denetçinin bağımsızlığı ile bağımsız denetçinin bağımsızlığı karşılaştırılmaktadır.\n\nBu karşılaştırmayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İç denetçi işletmeden tamamen bağımsızdır',
-            'B': 'İç denetçinin bağımsızlığı örgütsel konumuna dayanır',
-            'C': 'Bağımsız denetçinin bağımsızlığı ücretinden kaynaklanır',
-            'D': 'Bağımsız denetçi yönetime bağlıdır',
-            'E': 'İkisinin bağımsızlık düzeyi aynıdır',
+            'A': 'İç denetçi işletmenin çalışanıdır',
+            'B': 'İkisinin bağımsızlık düzeyi aynıdır',
+            'C': 'İç denetçinin bağımsızlığı örgütsel konumuna dayanır',
+            'D': 'Bağımsız denetçi işletmeden ayrı bir meslek mensubudur',
+            'E': 'Bağımsız denetçinin bağımsızlığı yönetime bağlı değildir',
         },
         'B',
-        'İç denetçi işletmenin çalışanı olduğundan bağımsızlığı denetim komitesine raporlama gibi örgütsel düzenlemelere dayanır; bağımsız denetçi ise işletmeden tümüyle ayrı bir meslek mensubudur.',
+        'İç denetçi işletmenin çalışanı olduğundan bağımsızlığı denetim komitesine raporlama gibi örgütsel düzenlemelere dayanır; bağımsız denetçi ise işletmeden ayrı bir meslek mensubudur ve yönetime bağlı değildir. Bu nedenle iki bağımsızlığın düzeyi aynı değildir.',
     ),
     # düzey 2
     '0014': patch(
@@ -310,16 +310,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        'Finansal tablolardaki hileyi önleme ve tespit etme sorumluluğu öncelikle kime aittir?',
+        'Finansal tablolardaki hileye ilişkin sorumluluklarla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yönetime ve üst yönetimden sorumlu olanlara',
-            'B': 'Bağımsız denetçiye ve denetim kuruluşunun sorumlu ortağına',
-            'C': 'Vergi müfettişine',
-            'D': 'Kamu Gözetimi Kurumuna',
-            'E': 'Pay sahiplerine',
+            'A': 'Hileyi önleme sorumluluğu öncelikle bağımsız denetçiye aittir',
+            'B': 'Hileyi önleme ve tespit etme sorumluluğu yönetime aittir',
+            'C': 'Üst yönetimden sorumlu olanlar da bu sorumluluğu taşır',
+            'D': 'Denetçi hile kaynaklı önemli yanlışlık için makul güvence arar',
+            'E': 'Denetçi denetim boyunca mesleki şüphecilik gösterir',
         },
         'A',
-        'Hileyi önleme ve tespit etmenin temel sorumluluğu yönetime ve üst yönetimden sorumlu olanlara aittir; denetçi hile kaynaklı önemli yanlışlık bulunmadığına dair makul güvence elde etmekle sorumludur.',
+        'Hileyi önleme ve tespit etmenin temel sorumluluğu yönetime ve üst yönetimden sorumlu olanlara aittir. Denetçi, mesleki şüphecilikle, tabloların bütün olarak hile kaynaklı önemli yanlışlık içermediğine dair makul güvence elde etmekle sorumludur.',
     ),
     # düzey 2
     '0023': patch(
@@ -388,16 +388,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0028': patch(
-        'Halka açık bir şirketin denetiminde kamu yararı nedeniyle bağımsız denetçiden beklenen aşağıdakilerden hangisidir?',
+        'Halka açık bir şirketin denetimi, kamu yararını ilgilendiren kuruluş denetimi olarak yürütülmektedir.\n\nBu denetimle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Raporu yönetime onaylatması',
-            'B': 'Daha sıkı bağımsızlık kurallarına uyması',
-            'C': 'Yönetimle daha yakın çalışıp danışmanlık da vermesi',
-            'D': 'Ücretini sonuca bağlaması',
-            'E': 'Gözetimden muaf olması',
+            'A': 'Bağımsızlık kuralları daha sıkıdır',
+            'B': 'Denetçi yönetime danışmanlık da verebilir',
+            'C': 'Kilit denetim ortaklarının rotasyonu öngörülür',
+            'D': 'Bazı denetim dışı hizmetler yasaklanır',
+            'E': 'Denetçiden beklenen özen düzeyi artar',
         },
         'B',
-        'Kamu yararını ilgilendiren kuruluşların denetiminde bağımsızlık kuralları daha sıkıdır; örneğin kilit denetim ortaklarının rotasyonu ve bazı denetim dışı hizmetlerin yasaklanması öngörülür.',
+        'Kamu yararını ilgilendiren kuruluşların denetiminde bağımsızlık kuralları daha sıkıdır: kilit denetim ortaklarının rotasyonu öngörülür ve bazı denetim dışı hizmetler (yönetime danışmanlık gibi) yasaklanır.',
     ),
     # düzey 2
     '0029': patch(
@@ -492,16 +492,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0036': patch(
-        'İç Denetim Enstitüsü tanımına göre iç denetim aşağıdakilerden hangisidir?',
+        'İç Denetim Enstitüsü tanımına göre iç denetimle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Finansal tabloları hazırlama faaliyeti',
-            'B': 'Yönetimden bağımsız dış denetim',
-            'C': 'Değer katmaya yönelik güvence ve danışmanlık faaliyeti',
-            'D': 'Kamu adına yürütülen vergi incelemesi',
-            'E': 'Pay sahipleri adına yapılan ve kamuya görüş bildirilen yasal denetim',
+            'A': 'Kurumun faaliyetlerine değer katmayı amaçlar',
+            'B': 'Güvence faaliyetlerini kapsar',
+            'C': 'Kamuya görüş bildirilen yasal bir denetimdir',
+            'D': 'Danışmanlık faaliyetlerini kapsar',
+            'E': 'Bağımsız ve objektif biçimde yürütülür',
         },
         'C',
-        'İç denetim, kurumun faaliyetlerine değer katmak ve geliştirmek için bağımsız ve objektif güvence ve danışmanlık faaliyetidir.',
+        'İç denetim, kurumun faaliyetlerine değer katmak ve geliştirmek için bağımsız ve objektif güvence ve danışmanlık faaliyetidir. Pay sahipleri adına kamuya görüş bildirilen yasal denetim bağımsız denetimdir.',
     ),
     # düzey 3
     '0037': patch(
@@ -531,16 +531,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        'Denetimin genel kabul gören tanımına göre denetçinin, iddiaların uygunluk derecesini araştırırken esas aldığı dayanak aşağıdakilerden hangisidir?',
+        'Denetimin genel kabul gören tanımıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Sektördeki yaygın uygulamalar',
-            'B': 'Denetçinin kişisel tercihleri',
-            'C': 'Önceden belirlenmiş ölçütler',
-            'D': 'Pay sahiplerinin talepleri',
-            'E': 'Yönetimin beklentileri',
+            'A': 'Denetim sistematik bir süreçtir',
+            'B': 'Ekonomik faaliyet ve olaylarla ilgili iddialar araştırılır',
+            'C': 'Ölçütü denetçi kişisel tercihine göre belirler',
+            'D': 'Kanıt tarafsız biçimde toplanır ve değerlendirilir',
+            'E': 'Sonuçlar ilgililere bildirilir',
         },
         'C',
-        'Denetim; ekonomik faaliyet ve olaylarla ilgili iddiaların önceden belirlenmiş ölçütlere uygunluk derecesini araştırmak ve sonuçları ilgililere bildirmek amacıyla tarafsız olarak kanıt toplayıp değerleyen sistematik bir süreçtir.',
+        'Denetim; ekonomik faaliyet ve olaylarla ilgili iddiaların önceden belirlenmiş ölçütlere uygunluk derecesini araştırmak ve sonuçları ilgililere bildirmek amacıyla tarafsız olarak kanıt toplayıp değerleyen sistematik bir süreçtir. Ölçüt denetçinin kişisel tercihine bırakılmaz.',
     ),
     # düzey 3
     '0040': patch(
@@ -713,16 +713,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0053': patch(
-        'Aşağıdakilerden hangisi bağımsız denetimin yapısal kısıtlarından finansal raporlamanın niteliğiyle ilgili olanıdır?',
+        'Aşağıdakilerden hangisi bağımsız denetimin yapısal kısıtlarından biri değildir?',
         {
             'A': 'Yönetimin bilgi saklayabilmesi',
-            'B': 'Muvazaa ve sahtecilik',
-            'C': 'Denetçinin yasal yetkilerinin sınırlı olması',
-            'D': 'Tahmin ve muhakemelerin bulunması',
-            'E': 'Makul süre ve maliyet sınırı',
+            'B': 'Denetçinin yasal yetkilerinin sınırlı olması',
+            'C': 'Makul süre ve maliyet sınırı',
+            'D': 'Denetçinin mesleki şüphecilik göstermesi',
+            'E': 'Tahmin ve muhakemelerin bulunması',
         },
         'D',
-        'Finansal tabloların hazırlanması yönetimin muhakemesini ve sübjektif kararlar ile tahminleri içerir; bu, finansal raporlamanın niteliğinden kaynaklanan bir kısıttır. Bilgi saklama, muvazaa ve yetki sınırı prosedürlerin niteliğiyle, süre-maliyet ise zamanlılıkla ilgilidir.',
+        'Yapısal kısıtlar finansal raporlamanın niteliğinden (tahmin ve muhakemeler), denetim prosedürlerinin niteliğinden (bilgi saklama, muvazaa, sınırlı yasal yetki) ve zamanlılık ile maliyetten kaynaklanır. Mesleki şüphecilik bir kısıt değil, denetçinin uyması gereken bir tutumdur.',
     ),
     # düzey 3
     '0054': patch(
@@ -739,16 +739,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0055': patch(
-        'Muhasebe süreci ile denetim süreci arasındaki ilişki için aşağıdakilerden hangisi doğrudur?',
+        'Muhasebe süreci ile denetim süreci arasındaki ilişki için aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Denetim, tablolardan belgelere doğru ilerler',
-            'B': 'Muhasebe denetimden sonra yapılır',
-            'C': 'Denetim, muhasebe kayıtlarını oluşturur ve tabloları hazırlar',
-            'D': 'İkisi aynı yönde ilerler',
-            'E': 'Denetim, yönetimin yerine kayıt tutar',
+            'A': 'Denetim, muhasebe kayıtlarını oluşturur',
+            'B': 'Muhasebe belgelerden tablolara doğru ilerler',
+            'C': 'Denetim tablolardaki iddialardan başlar',
+            'D': 'Denetim kayıt ve belgelere doğru geriye gider',
+            'E': 'Tabloları hazırlamak yönetimin sorumluluğudur',
         },
         'A',
-        'Muhasebe belgelerden kayıtlara ve finansal tablolara doğru ilerler; denetim ise finansal tablolardaki iddialardan başlayarak kayıt ve belgelere doğru geriye giden bir süreçtir.',
+        'Muhasebe belgelerden kayıtlara ve finansal tablolara doğru ilerler; tabloları hazırlamak yönetimin sorumluluğudur. Denetim ise tablolardaki iddialardan başlayarak kayıt ve belgelere doğru geriye giden bir süreçtir; kayıt oluşturmaz.',
     ),
     # düzey 3
     '0056': patch(

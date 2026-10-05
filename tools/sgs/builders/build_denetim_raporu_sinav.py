@@ -258,16 +258,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        "BDS 705'e göre denetçi olumlu görüş dışında bir görüş vermeyi öngördüğünde üst yönetimden sorumlu olanlara aşağıdakilerden hangisini bildirir?",
+        "BDS 705'e göre denetçinin olumlu görüş dışında bir görüş vermeyi öngördüğünde üst yönetimden sorumlu olanlarla iletişimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Denetim ücretindeki değişikliği',
-            'B': 'Diğer müşterilerdeki benzer durumları',
-            'C': 'Koşulları ve önerilen ifadeleri',
-            'D': 'Önemlilik hesaplama ayrıntılarını',
-            'E': 'Ekibin çalışma saatlerini',
+            'A': 'Görüşe yol açan koşullar bildirilir',
+            'B': 'Görüşün öngörülen ifadesi bildirilir',
+            'C': 'Bildirim rapor yayımlandıktan sonra yapılır',
+            'D': 'Bildirimin muhatabı üst yönetimden sorumlu olanlardır',
+            'E': 'Bildirim, görüşün değiştirilmesi öngörüldüğünde yapılır',
         },
         'C',
-        'Denetçi olumlu görüş dışında bir görüş vermeyi öngördüğünde, buna yol açan koşulları ve görüşün öngörülen ifadesini üst yönetimden sorumlu olanlara bildirir.',
+        'BDS 705: denetçi olumlu görüş dışında bir görüş vermeyi öngördüğünde, buna yol açan koşulları ve görüşün öngörülen ifadesini üst yönetimden sorumlu olanlara bildirir. Bildirim rapor yayımlanmadan, görüşün değiştirilmesi öngörüldüğü aşamada yapılır.',
     ),
     # düzey 2
     '0019': patch(
@@ -310,16 +310,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0022': patch(
-        "Finansal tablo tarihi 31 Aralık 2025 olan bir şirkette yönetimin işletmenin sürekliliğine ilişkin değerlendirmesi 30 Haziran 2026'ya kadar olan dönemi kapsamaktadır.\n\nBDS 570'e göre denetçi ne yapar?",
+        "Finansal tablo tarihi 31 Aralık 2025 olan bir şirkette yönetimin işletmenin sürekliliğine ilişkin değerlendirmesi 30 Haziran 2026'ya kadar olan dönemi kapsamaktadır.\n\nBDS 570'e göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Altı aylık değerlendirmeyi yeterli kabul ederek devam eder',
-            'B': 'Değerlendirmeyi kendisi hazırlar',
-            'C': 'Görüş vermekten kaçınır',
-            'D': 'Değerlendirmenin en az on iki aya uzatılmasını ister',
-            'E': 'Olumsuz görüş verir',
+            'A': 'Değerlendirme yönetimin sorumluluğudur',
+            'B': 'Denetçi değerlendirmeyi yönetim yerine hazırlamaz',
+            'C': 'Değerlendirme dönemi tablo tarihinden itibaren hesaplanır',
+            'D': 'Altı aylık değerlendirme yeterli kabul edilir',
+            'E': 'Denetçi değerlendirme döneminin uzatılmasını ister',
         },
         'D',
-        'Yönetimin değerlendirmesi finansal tablo tarihinden itibaren on iki aydan kısa bir dönemi kapsıyorsa denetçi, değerlendirme dönemini en az on iki aya uzatmasını yönetimden ister.',
+        'BDS 570: yönetimin süreklilik değerlendirmesi finansal tablo tarihinden itibaren on iki aydan kısa bir dönemi kapsıyorsa denetçi, değerlendirme dönemini en az on iki aya uzatmasını yönetimden ister. Değerlendirme yönetimin sorumluluğudur; denetçi bunu yönetim yerine hazırlamaz.',
     ),
     # düzey 3
     '0023': patch(
@@ -362,16 +362,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        "Denetçi sözleşmeyi kabul ettikten sonra yönetim, önemli bir şube ile ilgili kayıtların incelenmesine izin vermeyeceğini bildirmiştir.\n\nBDS 705'e göre denetçinin ilk olarak yapması gereken aşağıdakilerden hangisidir?",
+        "Denetçi sözleşmeyi kabul ettikten sonra yönetim, önemli bir şube ile ilgili kayıtların incelenmesine izin vermeyeceğini bildirmiştir.\n\nBDS 705'e göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Şubeyi denetim kapsamından çıkarmak',
-            'B': 'Hemen olumsuz görüş vermek',
-            'C': 'Raporu sınırlamadan söz etmeden olumlu görüşle yayımlamak',
-            'D': 'Kamu Gözetimi Kurumuna şikâyette bulunmak',
-            'E': 'Yönetimden sınırlamayı kaldırmasını istemek',
+            'A': 'Denetçi önce sınırlamanın kaldırılmasını ister',
+            'B': 'Kaldırılmazsa üst yönetimden sorumlu olanlara bildirir',
+            'C': 'Alternatif prosedürlerle kanıt elde edilip edilemeyeceği belirlenir',
+            'D': 'Şube denetçinin kararıyla kapsam dışı bırakılmaz',
+            'E': 'Denetçi ilk adım olarak olumsuz görüş verir',
         },
         'E',
-        'Yönetim kapsamı sınırladığında ve bunun sınırlı olumlu görüşe ya da görüş vermekten kaçınmaya yol açması muhtemelse denetçi önce yönetimden sınırlamayı kaldırmasını ister; kaldırılmazsa üst yönetimden sorumlu olanlara bildirir ve alternatif prosedürlerle kanıt elde edip edemeyeceğini belirler.',
+        'BDS 705: yönetim kapsamı sınırladığında ve bunun sınırlı olumlu görüşe ya da görüş vermekten kaçınmaya yol açması muhtemelse denetçi önce yönetimden sınırlamayı kaldırmasını ister; kaldırılmazsa üst yönetimden sorumlu olanlara bildirir ve alternatif prosedürlerle kanıt elde edip edemeyeceğini belirler. Olumsuz görüş kanıt sınırlamasının değil, önemli ve yaygın yanlışlığın sonucudur.',
     ),
     # düzey 3
     '0027': patch(
@@ -388,16 +388,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0028': patch(
-        "Denetçi raporunu 15 Mart 2026'da tarihlemiştir. Tablolar yayımlanmadan önce 22 Mart 2026'da önemli bir müşterinin iflas ettiği öğrenilmiş, yönetim tabloları değiştirmiş ve değişikliği 28 Mart 2026'da onaylamıştır.\n\nBDS 560'a göre denetçinin yeni raporuyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Denetçi raporunu 15 Mart 2026'da tarihlemiştir. Tablolar yayımlanmadan önce 22 Mart 2026'da önemli bir müşterinin iflas ettiği öğrenilmiş, yönetim tabloları değiştirmiş ve değişikliği 28 Mart 2026'da onaylamıştır.\n\nBDS 560'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "28 Mart 2026'dan önceki bir tarih taşıyamaz",
-            'B': 'Tarihsiz düzenlenir',
-            'C': '15 Mart 2026 tarihini korur',
-            'D': '22 Mart 2026 tarihli olur',
-            'E': 'Önceki raporun ekine konur',
+            'A': 'Yeni rapor 15 Mart 2026 tarihini korur',
+            'B': 'Denetçi değişikliğe ilişkin prosedürleri uygular',
+            'C': 'Değiştirilmiş tablolar için yeni bir rapor verilir',
+            'D': 'Mevzuat izin veriyorsa çift tarih kullanılabilir',
+            'E': 'Yeni rapor tarihsiz düzenlenmez',
         },
         'A',
-        'Tablolar değiştirildiğinde denetçi değişikliğe ilişkin gerekli prosedürleri uygular ve yeni bir rapor verir; yeni rapor, değiştirilmiş tabloların onaylandığı tarihten önceki bir tarihi taşıyamaz. Mevzuat izin veriyorsa yalnız değişikliğe ilişkin çift tarih uygulaması da mümkündür.',
+        'BDS 560: tablolar değiştirildiğinde denetçi değişikliğe ilişkin gerekli prosedürleri uygular ve yeni bir rapor verir; yeni rapor, değiştirilmiş tabloların onaylandığı tarihten önceki bir tarihi taşıyamaz. Mevzuat izin veriyorsa yalnız değişikliğe ilişkin çift tarih uygulaması da mümkündür.',
     ),
     # düzey 2
     '0029': patch(
@@ -596,16 +596,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        "BDS 560'a göre denetçi raporu tarihinden sonra, ancak tablolar yayımlanmadan önce öğrenilen ve rapor tarihinde bilinseydi raporu değiştirebilecek bir olgu karşısında denetçinin ilk yapması gereken aşağıdakilerden hangisidir?",
+        "Denetçi, rapor tarihinden sonra ancak tablolar yayımlanmadan önce, rapor tarihinde bilinseydi raporu değiştirebilecek bir olgu öğrenmiştir.\n\nBDS 560'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kamuoyuna duyuru yapmak',
-            'B': 'Konuyu yönetimle görüşmek',
-            'C': 'Raporu geri çekmek',
-            'D': 'Sözleşmeyi feshetmek',
-            'E': 'Olumsuz görüş vermek',
+            'A': 'Denetçi ilk olarak kamuoyuna duyuru yapar',
+            'B': 'Denetçi konuyu yönetimle görüşür',
+            'C': 'Gerektiğinde üst yönetimden sorumlu olanlarla görüşülür',
+            'D': 'Tabloların değiştirilmesi gerekip gerekmediği belirlenir',
+            'E': 'Yönetimin konuyu nasıl ele alacağı sorgulanır',
         },
         'B',
-        'Denetçi böyle bir olgudan haberdar olursa konuyu yönetimle ve gerektiğinde üst yönetimden sorumlu olanlarla görüşür, tabloların değiştirilmesi gerekip gerekmediğini belirler ve değiştirilecekse yönetimin bunu nasıl ele alacağını sorgular.',
+        'BDS 560: denetçi böyle bir olgudan haberdar olursa konuyu yönetimle ve gerektiğinde üst yönetimden sorumlu olanlarla görüşür, tabloların değiştirilmesi gerekip gerekmediğini belirler ve değiştirilecekse yönetimin bunu nasıl ele alacağını sorgular. Kamuoyuna duyuru ilk adım değildir.',
     ),
     # düzey 3
     '0045': patch(
@@ -804,16 +804,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0060': patch(
-        "Denetçi, denetlenen şirketle ilgili olarak Türk Ticaret Kanunu'nun ayrıca öngördüğü bildirim yükümlülüklerini de raporunda yerine getirmektedir.\n\nBDS 700'e göre bu bildirimler raporda nasıl sunulur?",
+        "Denetçi, denetlenen şirketle ilgili olarak Türk Ticaret Kanunu'nun ayrıca öngördüğü bildirim yükümlülüklerini de raporunda yerine getirmektedir.\n\nBDS 700'e göre bu bildirimlerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ayrı bir rapor bölümünde',
-            'B': 'Görüşün Dayanağı bölümünde',
-            'C': 'Kilit Denetim Konuları bölümünde',
-            'D': 'Dikkat Çeken Hususlar bölümünde',
-            'E': 'Görüş bölümünün içinde',
+            'A': 'Bildirimler Görüşün Dayanağı bölümünde sunulur',
+            'B': 'Bildirimler raporun ayrı bir bölümünde sunulur',
+            'C': "BDS'lerin gerektirdiklerine ek sorumluluklardır",
+            'D': 'Bölüm mevzuattan kaynaklanan yükümlülüklere ilişkindir',
+            'E': 'Bildirimler Görüş bölümünün içinde yer almaz',
         },
         'A',
-        'BDS\'lerin gerektirdiklerine ek olarak mevzuattan kaynaklanan raporlama sorumlulukları, raporun ayrı bir bölümünde, "Mevzuattan Kaynaklanan Diğer Yükümlülüklere İlişkin Rapor" gibi bir başlıkla sunulur.',
+        "BDS 700: BDS'lerin gerektirdiklerine ek olarak mevzuattan kaynaklanan raporlama sorumlulukları, raporun ayrı bir bölümünde, 'Mevzuattan Kaynaklanan Diğer Yükümlülüklere İlişkin Rapor' gibi bir başlıkla sunulur; Görüş ya da Dayanak bölümüne konmaz.",
     ),
 }
 

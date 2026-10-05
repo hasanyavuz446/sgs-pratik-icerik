@@ -37,16 +37,16 @@ def patch(stem, options, answer, solution, ref='BDS 315; BDS 265; BDS 610; BDS 4
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        'Stokların sayımının, stokları koruyan depo sorumlusu dışındaki bir ekip tarafından yapılmasının temel nedeni aşağıdakilerden hangisidir?',
+        'Bir şirkette stokların sayımı, stokları koruyan depo sorumlusu dışındaki bir ekip tarafından yapılmaktadır.\n\nBu uygulamayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Sayım maliyetini düşürmek',
-            'B': 'Stokların satış fiyatlarını güncellemek ve indirim kampanyalarını planlamak',
-            'C': 'Görevler ayrılığını sağlamak',
-            'D': 'Depo sorumlusunun iş yükünü artırmak',
-            'E': 'Sayım süresini kısaltmak',
+            'A': 'Uygulama görevler ayrılığının gereğidir',
+            'B': 'Sayım sonuçları kayıtlarla karşılaştırılır',
+            'C': 'Uygulamanın temel amacı sayım maliyetini düşürmektir',
+            'D': 'Varlığı koruyanın sayım yapması eksikliği gizleyebilir',
+            'E': 'Sayım farkları araştırılır',
         },
         'C',
-        'Varlığı koruyan kişinin sayımı da yapması eksiklikleri gizleme imkânı verir; bağımsız sayım görevler ayrılığının gereğidir.',
+        'Varlığı koruyan kişinin sayımı da yapması eksiklikleri gizleme imkânı verir; bu nedenle sayım bağımsız bir ekipçe yapılır, sonuçlar kayıtlarla karşılaştırılır ve farklar araştırılır. Uygulama görevler ayrılığının gereğidir; amacı maliyet düşürmek değildir.',
     ),
     # düzey 3
     '0002': patch(
@@ -102,16 +102,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        'Bir şirkette satın alma siparişini veren, malı teslim alan ve faturayı ödeyen kişi aynı çalışandır.\n\nBu durum aşağıdakilerden hangisine yol açabilir?',
+        'Bir şirkette satın alma siparişini veren, malı teslim alan ve faturayı ödeyen kişi aynı çalışandır.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Vergi yükünün azalmasına',
-            'B': 'Satışların artmasına',
-            'C': 'Stok devir hızının artmasına',
-            'D': 'Pazarlık gücünün artmasına',
-            'E': 'Hayali alımların gizlenmesine',
+            'A': 'Birbiriyle çatışan görevler aynı kişide toplanmıştır',
+            'B': 'Hayali alımlar gizlenebilir',
+            'C': 'Varlıkların kötüye kullanılması riski artar',
+            'D': 'Görevler ayrılığı ilkesine aykırıdır',
+            'E': 'Durum iç kontrolü güçlendiren bir uygulamadır',
         },
         'E',
-        'Birbiriyle çatışan görevlerin aynı kişide toplanması, hayali alım ve ödemelerin ya da varlıkların kötüye kullanılmasının gizlenmesine imkân verir.',
+        'Birbiriyle çatışan görevlerin aynı kişide toplanması görevler ayrılığı ilkesine aykırıdır; hayali alım ve ödemelerin ya da varlıkların kötüye kullanılmasının gizlenmesine imkân vererek iç kontrolü zayıflatır.',
     ),
     # düzey 3
     '0007': patch(
@@ -167,16 +167,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        'Belgelerin önceden müteselsil sıra numarasıyla basılması ve kullanılmayan numaraların açıklanması aşağıdakilerden hangisinin sağlanmasına yardımcı olur?',
+        'Bir şirkette belgeler önceden müteselsil sıra numarasıyla basılmakta ve kullanılmayan numaraların açıklaması istenmektedir.\n\nBu uygulamayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Personelin performans primlerinin hesaplanması',
-            'B': 'Satış fiyatlarının artırılması',
-            'C': 'Vergi borcunun azaltılması',
-            'D': 'Stokların değerlenmesi',
-            'E': 'İşlemlerin tam kaydedilmesi',
+            'A': 'Eksik belgelerin tespitini kolaylaştırır',
+            'B': 'İşlemlerin tam kaydedilmesine katkıda bulunur',
+            'C': 'Atlanan belgelerin araştırılmasını sağlar',
+            'D': 'Kullanılmayan numaraların izlenmesini gerektirir',
+            'E': 'Stokların değerlenmesini sağlar',
         },
         'E',
-        'Sıra numaralı belgelerin izlenmesi, eksik ya da atlanan belgelerin tespitini sağlayarak işlemlerin tamlığına katkıda bulunur.',
+        'Sıra numaralı belgelerin izlenmesi, eksik ya da atlanan belgelerin tespitini sağlayarak işlemlerin tamlığına katkıda bulunur; kullanılmayan numaraların açıklanması bu izlemenin parçasıdır. Stok değerlemesiyle ilgisi yoktur.',
     ),
     # düzey 2
     '0012': patch(
@@ -349,16 +349,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        'Personel sayısı az olan küçük bir şirkette görevler ayrılığı yeterince sağlanamamaktadır.\n\nBu eksikliği telafi etmek için en uygun kontrol aşağıdakilerden hangisidir?',
+        'Personel sayısı az olan küçük bir şirkette görevler ayrılığı yeterince sağlanamamaktadır.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Personelin sürekli değiştirilmesi',
-            'B': 'Bağımsız denetimden vazgeçilmesi',
-            'C': 'Kontrollerin tamamen kaldırılması',
-            'D': 'Her işlemin müşteriye teyit ettirilmesiyle gözetimin dışarıya devredilmesi',
-            'E': 'Sahibin doğrudan gözetimi',
+            'A': 'Küçük işletmelerde görevler ayrılığı sınırlı olabilir',
+            'B': 'Sahibin işlemlere doğrudan katılımı telafi edici kontroldür',
+            'C': 'Yöneticinin gözetimi riski azaltır',
+            'D': 'Telafi edici kontroller eksikliği kısmen giderebilir',
+            'E': 'En uygun çözüm mevcut kontrollerin kaldırılmasıdır',
         },
         'E',
-        'Küçük işletmelerde görevler ayrılığının eksikliği, sahip ya da yöneticinin işlemlere doğrudan katılımı ve gözetimiyle kısmen telafi edilebilir.',
+        'Küçük işletmelerde görevler ayrılığının eksikliği, sahip ya da yöneticinin işlemlere doğrudan katılımı ve gözetimiyle kısmen telafi edilebilir. Kontrollerin kaldırılması riski artırır; çözüm değildir.',
     ),
     # düzey 3
     '0026': patch(
@@ -544,16 +544,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        'Stok kayıtlarının dönemsel olarak fiziki sayımla karşılaştırılması ve farkların araştırılması hangi amaca hizmet eder?',
+        'Bir şirkette stok kayıtları dönemsel olarak fiziki sayımla karşılaştırılmakta ve farklar araştırılmaktadır.\n\nBu kontrolle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Önemliliği belirlemek',
-            'B': 'Kayıtlarla varlıkların uyumunu sağlamak',
-            'C': 'Denetçi sayımını gereksiz kılmak',
-            'D': 'Vergi matrahını düşürmek',
-            'E': 'Satış fiyatını belirlemek',
+            'A': 'Varlıkların korunmasına katkı sağlar',
+            'B': 'Vergi matrahını düşürmeye yöneliktir',
+            'C': 'Kayıtların doğruluğunu destekler',
+            'D': 'Kayıtlarla varlıkların uyumunu sağlar',
+            'E': 'Denetçinin sayıma katılımını gereksiz kılmaz',
         },
         'B',
-        'Kayıtlı tutarların fiili varlıklarla karşılaştırılması, varlıkların korunmasına ve kayıtların doğruluğuna yönelik bir kontroldür.',
+        'Kayıtlı tutarların fiili varlıklarla karşılaştırılması, varlıkların korunmasına ve kayıtların doğruluğuna yönelik bir kontroldür; kayıtlarla varlıkların uyumunu sağlar. Denetçinin sayıma katılımını gereksiz kılmaz ve vergi matrahıyla ilgisi yoktur.',
     ),
     # düzey 2
     '0041': patch(
@@ -648,16 +648,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0048': patch(
-        'Bir şirket, yazılımında yapılan değişikliklerin canlı sisteme alınmadan önce test edilmesini ve yetkili kişilerce onaylanmasını şart koşmaktadır.\n\nBu uygulama hangi kontrol türüne örnektir?',
+        'Bir şirket, yazılımında yapılan değişikliklerin canlı sisteme alınmadan önce test edilmesini ve yetkili kişilerce onaylanmasını şart koşmaktadır.\n\nBu uygulamayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Program değişikliği kontrolü',
-            'B': 'Performans incelemesi',
-            'C': 'Uygulama girdi kontrolü',
-            'D': 'Fiziki sayım kontrolü',
-            'E': 'Sonuç raporlarının elle karşılaştırılmasına dayalı çıktı kontrolü',
+            'A': 'Uygulama bir uygulama girdi kontrolüdür',
+            'B': 'Değişiklikler canlıya alınmadan test edilir',
+            'C': 'Değişiklikler yetkili kişilerce onaylanır',
+            'D': 'Uygulama program değişikliği yönetimine ilişkindir',
+            'E': 'Uygulama kontrollerinin sürekliliğini destekler',
         },
         'A',
-        'Program değişikliklerinin test edilip onaylanması, BT genel kontrolleri içinde program değişikliği yönetimi kontrolüdür.',
+        'Program değişikliklerinin test edilip onaylanması, BT genel kontrolleri içindeki program değişikliği yönetimi kontrolüdür ve uygulama kontrollerinin sürekli işleyişini destekler. Uygulama girdi kontrolleri ise tek tek işlemlerin girişine ilişkindir.',
     ),
     # düzey 3
     '0049': patch(
@@ -674,16 +674,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0050': patch(
-        'Bir şirkette yönetim, aylık satış raporlarını bütçe ve önceki dönemlerle karşılaştırarak beklenmedik sapmaları araştırmaktadır.\n\nBu uygulama aşağıdakilerden hangisine örnektir?',
+        'Bir şirkette yönetim, aylık satış raporlarını bütçe ve önceki dönemlerle karşılaştırarak beklenmedik sapmaları araştırmaktadır.\n\nBu uygulamayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Kontrol çevresi',
-            'B': 'İşletme dışı bağımsız denetim prosedürü',
-            'C': 'Performans incelemesi',
-            'D': 'Fiziki kontrol',
-            'E': 'Görevler ayrılığı',
+            'A': 'Gerçekleşen sonuçlar bütçeyle karşılaştırılır',
+            'B': 'Önceki dönemlerle karşılaştırma yapılır',
+            'C': 'Uygulama bir fiziki kontrol örneğidir',
+            'D': 'Beklenmedik sapmalar araştırılır',
+            'E': 'Uygulama bir performans incelemesidir',
         },
         'C',
-        'Gerçekleşen sonuçların bütçe, tahmin ve önceki dönemlerle karşılaştırılması performans incelemesi niteliğindeki kontrol faaliyetidir.',
+        'Gerçekleşen sonuçların bütçe, tahmin ve önceki dönemlerle karşılaştırılıp sapmaların araştırılması performans incelemesi türündeki kontrol faaliyetidir. Fiziki kontroller ise varlıklara erişimin sınırlandırılması ve varlıkların korunmasıyla ilgilidir.',
     ),
     # düzey 2
     '0051': patch(
@@ -739,16 +739,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0055': patch(
-        'Bir şirkette satış iadeleri ancak yetkili müdürün yazılı onayıyla kabul edilmektedir.\n\nBu uygulama hangi tür kontrol faaliyetidir?',
+        'Bir şirkette satış iadeleri ancak yetkili müdürün yazılı onayıyla kabul edilmektedir.\n\nBu uygulamayla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Performans incelemesi',
-            'B': 'Fiziki kontrol',
-            'C': 'Mutabakat',
-            'D': 'Bilgi sistemlerinde program değişikliği kontrolü',
-            'E': 'Yetkilendirme ve onay',
+            'A': 'İşlem yetkili kişinin onayına bağlanmıştır',
+            'B': 'Yetkisiz iadelerin kabulünü önlemeye yöneliktir',
+            'C': 'Onay yetkisi belirli kişilere verilmiştir',
+            'D': 'Kontrol yazılı onayla belgelenir',
+            'E': 'Uygulama bir mutabakat kontrolü örneğidir',
         },
         'E',
-        'İşlemlerin yetkili kişilerce onaylanması yetkilendirme ve onay türündeki kontrol faaliyetidir.',
+        'İşlemlerin yetkili kişilerce onaylanması yetkilendirme ve onay türündeki kontrol faaliyetidir; yetkisiz iadelerin kabulünü önlemeye yöneliktir ve yazılı onayla belgelenir. Mutabakat ise iki kaynağın karşılaştırılmasıdır.',
     ),
     # düzey 3
     '0056': patch(

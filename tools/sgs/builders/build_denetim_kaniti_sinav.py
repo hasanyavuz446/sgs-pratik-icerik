@@ -89,29 +89,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        'Aşağıdakilerden hangisi menkul kıymetlerin denetiminde bir kontrol testidir?',
+        'Aşağıdakilerden hangisi menkul kıymetlerin denetiminde bir maddi doğrulama prosedürü değildir?',
         {
             'A': 'Faiz gelirini yeniden hesaplamak',
             'B': 'Alım emirlerinin yetkili kişilerce onaylandığını incelemek',
-            'C': 'Saklama kuruluşu hesap ekstresini dönem sonu mizanıyla karşılaştırmak',
+            'C': 'Saklama kuruluşu ekstresini mizanla karşılaştırmak',
             'D': 'Menkul kıymetleri borsa fiyatıyla değerlemek',
             'E': 'Aracı kurumdan bakiye teyidi almak',
         },
         'B',
-        'Alım emirlerinin onaylanması bir iç kontroldür; bu kontrolün uygulandığının incelenmesi kontrol testidir. Teyit, değerleme ve yeniden hesaplama maddi doğrulama prosedürleridir.',
+        'Teyit, değerleme, karşılaştırma ve yeniden hesaplama hesap bakiyesine ilişkin doğrudan kanıt sağlayan maddi doğrulama prosedürleridir. Alım emirlerinin onaylanması bir iç kontroldür; bu kontrolün uygulandığının incelenmesi kontrol testidir.',
     ),
     # düzey 3
     '0006': patch(
-        "Yönetim, önemli bir müşteriye alacak teyit mektubu gönderilmesine izin vermemiştir.\n\nBDS 505'e göre denetçinin ilk yapması gereken aşağıdakilerden hangisidir?",
+        "Yönetim, önemli bir müşteriye alacak teyit mektubu gönderilmesine izin vermemiştir.\n\nBDS 505'e göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Reddin nedenlerini sorgulamak',
-            'B': 'Alacağı sıfır kabul etmek',
-            'C': 'Mektubu yönetimden habersiz göndermek',
-            'D': 'Hemen görüş vermekten kaçınmak',
-            'E': 'Sözleşmeyi feshetmek',
+            'A': 'Denetçi mektubu yönetimden habersiz gönderir',
+            'B': 'Denetçi reddin nedenlerini sorgular',
+            'C': 'Reddin makullüğüne ilişkin kanıt aranır',
+            'D': 'Reddin hile riskine etkisi değerlendirilir',
+            'E': 'Ret makul değilse üst yönetime bildirilir',
         },
         'A',
-        'Yönetim teyit gönderilmesine izin vermezse denetçi reddin nedenlerini sorgular, geçerliliği ve makullüğüne ilişkin kanıt arar, hile riskine etkisini değerlendirir ve alternatif prosedürler uygular. Ret makul değilse üst yönetimden sorumlu olanlara bildirir.',
+        'BDS 505: yönetim teyit gönderilmesine izin vermezse denetçi reddin nedenlerini sorgular, geçerliliği ve makullüğüne ilişkin kanıt arar ve hile riski dâhil önemli yanlışlık risklerine etkisini değerlendirir. Ret makul değilse üst yönetimden sorumlu olanlara bildirir. Yönetimden habersiz gönderim söz konusu değildir.',
     ),
     # düzey 2
     '0007': patch(
@@ -180,16 +180,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        "Denetçi, öngörülemeyen bir olay nedeniyle stok sayımına katılamamıştır.\n\nBDS 501'e göre denetçi ne yapar?",
+        "Denetçi, öngörülemeyen bir olay nedeniyle stok sayımına katılamamıştır.\n\nBDS 501'e göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Önceki yılın sayımını kullanır',
-            'B': 'Stokları sıfır kabul eder',
-            'C': 'Görüş vermekten kaçınır',
-            'D': 'Alternatif bir tarihte sayım yapar veya gözlemler',
-            'E': 'Yönetimin yazılı beyanıyla yetinir',
+            'A': 'Denetçi alternatif bir tarihte sayım yapabilir',
+            'B': 'Denetçi alternatif bir tarihte sayımı gözlemleyebilir',
+            'C': 'Önceki yılın sayımı kanıt olarak kullanılmaz',
+            'D': 'Stoklar sıfır kabul edilerek denetime devam edilir',
+            'E': 'Yönetimin yazılı beyanı tek başına yetmez',
         },
         'D',
-        'Öngörülemeyen durumlar nedeniyle sayıma katılamayan denetçi alternatif bir tarihte fiziki sayım yapar veya gözlemler ve aradaki işlemler için prosedürler uygular.',
+        'BDS 501: öngörülemeyen durumlar nedeniyle sayıma katılamayan denetçi alternatif bir tarihte fiziki sayım yapar veya gözlemler ve aradaki işlemler için prosedürler uygular. Önceki yıl sayımı ya da yazılı beyan bunun yerine geçmez; stokların sıfır kabul edilmesi söz konusu değildir.',
     ),
     # düzey 3
     '0013': patch(
@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        "BDS 520'ye göre denetimin sonuna yakın uygulanan analitik prosedürlerin amacı aşağıdakilerden hangisidir?",
+        "BDS 520'ye göre denetimin sonuna yakın uygulanan analitik prosedürlerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İç kontrolü tasarlamak',
-            'B': 'Genel tutarlılık sonucuna varmak',
-            'C': 'Denetim ücretini belirlemek',
-            'D': 'Örneklem büyüklüğünü hesaplamak',
-            'E': 'Önemlilik düzeyini ilk kez belirlemek',
+            'A': 'Genel bir tutarlılık sonucuna varmaya yardımcı olur',
+            'B': 'Amaç önemlilik düzeyini ilk kez belirlemektir',
+            'C': 'Tablolar denetçinin işletme anlayışıyla karşılaştırılır',
+            'D': 'Denetimin tamamlanma aşamasında uygulanır',
+            'E': 'Önceden tanınmamış bir riskin belirlenmesine yol açabilir',
         },
         'B',
-        'Denetimin sonuna yakın analitik prosedürler, finansal tabloların denetçinin işletmeye ilişkin anlayışıyla tutarlı olup olmadığı hakkında genel bir sonuca varmasına yardımcı olur.',
+        'BDS 520: denetimin sonuna yakın uygulanan analitik prosedürler, tabloların denetçinin işletmeye ilişkin anlayışıyla tutarlı olup olmadığı hakkında genel bir sonuca varmasına yardımcı olur ve önceden tanınmamış bir önemli yanlışlık riskini ortaya çıkarabilir. Önemlilik planlama aşamasında belirlenir.',
     ),
     # düzey 3
     '0016': patch(
@@ -245,16 +245,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'BDS 500 Bağımsız Denetim Kanıtları standardına göre denetim kanıtının uygunluğu aşağıdakilerden hangisini ifade eder?',
+        'BDS 500 Bağımsız Denetim Kanıtları standardına göre denetim kanıtının uygunluğuyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Kanıtın ilgililiği ve güvenilirliği',
-            'B': 'Kanıtın miktarı',
-            'C': 'Kanıtın elde edilme maliyeti',
-            'D': 'Kanıtın elde edilme hızı',
-            'E': 'Kanıtın yönetimce onaylanması',
+            'A': 'Uygunluk kanıtın elde edilme maliyetiyle ölçülür',
+            'B': 'Uygunluk kanıtın kalitesinin ölçüsüdür',
+            'C': 'Uygunluk kanıtın ilgililiğini kapsar',
+            'D': 'Uygunluk kanıtın güvenilirliğini kapsar',
+            'E': 'Kanıtın miktarı yeterlilikle ilgilidir',
         },
         'A',
-        'Uygunluk kanıtın kalitesinin ölçüsüdür; görüşe dayanak oluşturan sonuçları desteklemedeki ilgililiğini ve güvenilirliğini ifade eder. Kanıtın miktarı yeterliliktir.',
+        'BDS 500: uygunluk kanıtın kalitesinin ölçüsüdür; görüşe dayanak oluşturan sonuçları desteklemedeki ilgililiğini ve güvenilirliğini ifade eder. Kanıtın miktarı yeterliliktir. Maliyet, kanıt aramamanın geçerli bir gerekçesi değildir ve uygunluğun ölçüsü olamaz.',
     ),
     # düzey 2
     '0018': patch(
@@ -310,16 +310,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0022': patch(
-        'Denetçi bir kontrolün uygulanışını mart ayında bizzat izlemiştir.\n\nBu yolla elde edilen kanıtın temel sınırlılığı aşağıdakilerden hangisidir?',
+        'Denetçi bir kontrolün uygulanışını mart ayında bizzat izlemiştir.\n\nGözlem yoluyla elde edilen bu kanıtla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Dış kaynaklı olmaması',
-            'B': 'Yazılı olmaması',
-            'C': 'Yeniden hesaplama gerektirmesi',
-            'D': 'Yönetimin onayına bağlı olması',
-            'E': 'İzlendiği anla sınırlı olması',
+            'A': 'Sürecin yürütülüşüne ilişkin kanıt sağlar',
+            'B': 'Yapıldığı ana özgüdür',
+            'C': 'Gözlemlenme durumu yürütülüşü etkileyebilir',
+            'D': 'Denetçinin bizzat izlemesine dayanır',
+            'E': 'Dönem boyunca işleyişi tek başına kanıtlar',
         },
         'E',
-        'Gözlem, sürecin ya da prosedürün yürütülüşüne ilişkin kanıt sağlar; ancak gözlem yapıldığı ana özgüdür ve gözlemlenme durumu prosedürün yürütülüşünü etkileyebilir.',
+        'Gözlem, denetçinin bizzat izlediği bir sürecin ya da prosedürün yürütülüşüne ilişkin kanıt sağlar; ancak gözlem yapıldığı ana özgüdür ve gözlemlenme durumu prosedürün yürütülüşünü etkileyebilir. Bu nedenle dönem boyunca işleyiş etkinliğini tek başına kanıtlamaz.',
     ),
     # düzey 2
     '0023': patch(
@@ -622,16 +622,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        "Denetçi, işletmenin ürettiği yaşlandırılmış alacak listesini şüpheli alacak karşılığını test etmek için kullanacaktır.\n\nBDS 500'e göre denetçinin bu bilgi için yapması gereken aşağıdakilerden hangisidir?",
+        "Denetçi, işletmenin ürettiği yaşlandırılmış alacak listesini şüpheli alacak karşılığını test etmek için kullanacaktır.\n\nBDS 500'e göre bu bilgiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Doğruluğu ve tamlığı hakkında kanıt elde etmek',
-            'B': 'Listeyi kanıt olarak kullanmamak',
-            'C': 'Listeyi yönetime yeniden imzalatmak',
-            'D': 'Listeyi doğrudan kabul etmek',
-            'E': 'Listeyi dış uzmana hazırlatmak',
+            'A': 'Liste denetçi tarafından doğrudan kabul edilir',
+            'B': 'Listenin doğruluğu hakkında kanıt elde edilir',
+            'C': 'Listenin tamlığı hakkında kanıt elde edilir',
+            'D': 'Yeterince kesin ve ayrıntılı olup olmadığı değerlendirilir',
+            'E': 'Liste uygun prosedürlerle kanıt olarak kullanılabilir',
         },
         'A',
-        'Denetçi, işletmenin ürettiği bilgiyi kanıt olarak kullanırken bilginin doğruluğu ve tamlığı hakkında kanıt elde eder ve amaçlarına göre yeterince kesin ve ayrıntılı olup olmadığını değerlendirir.',
+        'BDS 500: denetçi, işletmenin ürettiği bilgiyi kanıt olarak kullanırken bilginin doğruluğu ve tamlığı hakkında kanıt elde eder ve amaçlarına göre yeterince kesin ve ayrıntılı olup olmadığını değerlendirir; bilgi doğrudan kabul edilmez.',
     ),
     # düzey 3
     '0047': patch(
