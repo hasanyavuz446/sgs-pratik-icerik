@@ -65,17 +65,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0003': patch(
-        'Bir tacir, ticari işletmesiyle ilgili faaliyetlerinde ortalama bir kişinin göstereceği özeni yeterli saydığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir tacir, ticari işletmesiyle ilgili faaliyetlerinde ortalama bir kişinin göstereceği özeni yeterli saydığını ileri sürmektedir.\n\nTTK'ya göre tacirin özen yükümlülüğüyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tacir için özel bir özen ölçüsü öngörülmemiştir',
-            'B': 'Özen ölçüsü taraflarca sözleşmeyle belirlenir',
-            'C': 'Tacirin her türlü faaliyetinde basiretli bir iş adamı gibi hareket etmesi gerekir',
-            'D': 'Basiretli iş adamı ölçüsü tüzel kişi tacirlere özgü olup gerçek kişi tacirleri bağlamaz',
-            'E': 'Tacir, ortalama bir kişinin özenini göstermekle yeterli sayılır',
+            'A': 'Tacir ticari faaliyetlerinde basiretli iş adamı gibi hareket eder',
+            'B': 'Bu ölçü ortalama bir kişiden beklenenden ağırdır',
+            'C': 'Tacir ortalama bir kişinin özenini göstermekle yeterli sayılır',
+            'D': 'Basiret ölçüsü gerçek kişi tacirleri de bağlar',
+            'E': 'Basiret ölçüsü sözleşmeyle hafifletilemez',
         },
         'C',
-        'TTK md. 18/2: her tacirin, ticaretine ait bütün faaliyetlerinde BASİRETLİ BİR İŞ ADAMI GİBİ hareket etmesi gerekir. Bu, ortalama bir kişiden beklenenden AĞIR bir özen ölçüsüdür ve tüm tacirleri bağlar; sözleşmeyle hafifletilemez.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 18/2: her tacirin, ticaretine ait bütün faaliyetlerinde basiretli bir iş adamı gibi hareket etmesi gerekir. Bu, ortalama bir kişiden beklenenden ağır bir özen ölçüsüdür, tüm tacirleri bağlar ve sözleşmeyle hafifletilemez.',
     ),
     # düzey 3
     '0004': patch(
@@ -93,17 +92,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'Bir tacir, ticari işletmesiyle ilgili işlemleri kendi ad ve soyadıyla yapmakta, ticaret unvanını kullanmamaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir tacir, ticari işletmesiyle ilgili işlemleri kendi ad ve soyadıyla yapmakta, ticaret unvanını kullanmamaktadır.\n\nTTK'ya göre ticaret unvanıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ticaret unvanı sicile kayıt amacıyla kullanılır, işlemlerde kullanılmaz',
-            'B': 'Ticaret unvanı tüzel kişi tacirler için zorunlu, gerçek kişiler için isteğe bağlıdır',
-            'C': 'Tacir, işlemlerini dilerse ad ve soyadıyla yapabilir; ayrıca ticaret unvanı kullanma yükümlülüğü bulunmaz',
-            'D': 'Ticaret unvanının işletmede görünür biçimde yazılması gerekmez',
-            'E': 'İşlemlerini ticaret unvanıyla yapar ve unvanı işletmede görünür biçimde yazar',
+            'A': 'Tacir işletmesine ilişkin işlemleri ticaret unvanıyla yapar',
+            'B': 'İşletmeye ilişkin belgeler unvan altında imzalanır',
+            'C': 'Tescil edilen unvan işletmenin görülebilecek yerine yazılır',
+            'D': 'Unvan kullanma yükümlülüğü gerçek kişi tacirleri de bağlar',
+            'E': 'Tacir işlemlerini dilerse ad ve soyadıyla yapabilir',
         },
         'E',
-        'TTK md. 39: her tacir, ticari işletmesine ilişkin işlemleri TİCARET UNVANIYLA yapmak ve işletmesiyle ilgili senetlerle diğer belgeleri bu unvan altında imzalamak zorundadır. Tescil edilen ticaret unvanı, işletmenin görülebilecek bir yerine okunaklı biçimde YAZILIR. Yükümlülük gerçek ve tüzel kişi tacirlerin tamamını bağlar.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 39: her tacir, ticari işletmesine ilişkin işlemleri ticaret unvanıyla yapmak ve işletmesiyle ilgili senetlerle diğer belgeleri bu unvan altında imzalamak zorundadır. Tescil edilen ticaret unvanı, işletmenin görülebilecek bir yerine okunaklı biçimde yazılır. Yükümlülük gerçek ve tüzel kişi tacirlerin tamamını bağlar.',
     ),
     # düzey 3
     '0006': patch(
@@ -121,17 +119,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        'Bir tacir, ticari işletmesini teslim etmeksizin teminat olarak göstermek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir tacir, ticari işletmesini teslim etmeksizin teminat olarak göstermek istemektedir.\n\nTicari işletme rehniyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Ticari işletme, ancak zilyetliği alacaklıya devredilmek suretiyle rehnedilebilir',
-            'B': 'Ticari işletme rehni ancak noterde düzenlenirse geçerli olur',
-            'C': 'Ticari işletme, bir bütün olarak rehne konu edilemez',
-            'D': 'İşletme, zilyetlik devredilmeksizin sicile tescille rehnedilebilir',
-            'E': 'Ticari işletme rehni taşınmazlarla sınırlıdır',
+            'A': 'İşletme zilyetlik devredilmeden rehnedilebilir',
+            'B': 'Rehin, rehin siciline tescille kurulur',
+            'C': 'Rehin işletmenin faaliyetini sürdürmesine imkân verir',
+            'D': 'Rehin ancak zilyetliğin alacaklıya devriyle kurulur',
+            'E': 'İşletme bir bütün olarak rehne konu olabilir',
         },
         'D',
-        'Ticari işlemlerde taşınır rehni mevzuatı: ticari işletme, zilyetliğin devredilmesine gerek olmaksızın rehin sicilinde TESCİL edilmek suretiyle rehnedilebilir. Bu, işletmenin faaliyetini sürdürerek kredi temin etmesine imkân verir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'Ticari işlemlerde taşınır rehni mevzuatı: ticari işletme, zilyetliğin devredilmesine gerek olmaksızın rehin sicilinde tescil edilmek suretiyle bir bütün olarak rehnedilebilir. Bu, işletmenin faaliyetini sürdürerek kredi temin etmesine imkân verir.',
     ),
     # düzey 2
     '0008': patch(
@@ -261,17 +258,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0017': patch(
-        'Ticari hükümlerle düzenlenmemiş bir konuda hâkimin başvuracağı kaynak sırası bakımından aşağıdakilerden hangisi doğrudur?',
+        "Ticari hükümlerle düzenlenmemiş bir konuda hâkimin başvuracağı kaynaklar tartışılmaktadır.\n\nTTK'ya göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Uyuşmazlık hakkında karar verilemez',
-            'B': 'Hâkim, kanundaki kaynak sırasıyla bağlı olmaksızın uygulanacak kuralı belirler',
-            'C': 'Önce ticari örf ve âdete, bulunmazsa genel hükümlere başvurulur',
-            'D': 'Doğrudan genel hükümlere başvurulur',
-            'E': 'Ticari örf ve âdet uygulanır, genel hükümlere gidilmez',
+            'A': 'Öncelikle ticari hükümler uygulanır',
+            'B': 'Ticari hüküm yoksa ticari örf ve âdete başvurulur',
+            'C': 'Ticari hüküm yoksa doğrudan genel hükümlere başvurulur',
+            'D': 'Ticari örf ve âdet de yoksa genel hükümler uygulanır',
+            'E': 'Hâkim kanunda öngörülen kaynak sırasıyla bağlıdır',
         },
         'C',
-        'TTK md. 1 ve 2: ticari hükümlerle düzenlenmemiş konularda TİCARİ ÖRF VE ÂDETE, bu da yoksa genel hükümlere göre karar verilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 1 ve 2: ticari işlerde önce ticari hükümler uygulanır; ticari hükümlerle düzenlenmemiş konularda ticari örf ve âdete, bu da yoksa genel hükümlere göre karar verilir. Ticari örf ve âdet atlanarak doğrudan genel hükümlere gidilemez.',
     ),
     # düzey 2
     '0018': patch(
@@ -331,17 +327,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0022': patch(
-        'Bir belediye kendi tüzel kişiliği altında bir ticari işletme işletmektedir. Ayrıca bir ticaret şirketi ve amacına ulaşmak için ticari işletme işleten bir dernek bulunmaktadır. Buna göre tacir sıfatı bakımından aşağıdakilerden hangisi doğrudur?',
+        "Bir belediye kendi tüzel kişiliği altında bir ticari işletme işletmektedir. Ayrıca bir ticaret şirketi ve amacına ulaşmak için ticari işletme işleten bir dernek bulunmaktadır.\n\nTTK'ya göre tacir sıfatıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Belediye tacirdir; ticaret şirketi ve dernek tacir sayılmaz',
-            'B': 'Üçü de tacirdir',
-            'C': 'Şirket ve dernek tacirdir; belediye değildir, ancak işletmesine ticari hükümler uygulanır',
-            'D': 'Üçü de tacir sayılmaz',
-            'E': 'Ticaret şirketleri tacirdir; amacına varmak için ticari işletme işleten dernek ile belediye ise tacir sayılmaz',
+            'A': 'Ticaret şirketi tacirdir',
+            'B': 'Amacına varmak için ticari işletme işleten dernek tacirdir',
+            'C': 'Belediye işlettiği ticari işletme nedeniyle tacir sayılır',
+            'D': 'Belediyenin işlettiği işletmeye ticari hükümler uygulanır',
+            'E': 'Kamuya yararlı dernekler tacir sayılmaz',
         },
         'C',
-        'TTK md. 16: ticaret şirketleri ile amacına varmak için ticari bir işletme işleten dernekler ve kendi kuruluş kanunları gereğince özel hukuk hükümleri dairesinde yönetilmek üzere kurulan kamu tüzel kişileri tacir sayılır. md. 16/2: DEVLET, il özel idaresi, BELEDİYE, köy ve diğer kamu tüzel kişileri ile kamuya yararlı dernekler TACİR SAYILMAZ; ancak işlettikleri ticari işletmelere ticari hükümler uygulanır.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 16: ticaret şirketleri ile amacına varmak için ticari bir işletme işleten dernekler tacir sayılır. Devlet, il özel idaresi, belediye, köy ve diğer kamu tüzel kişileri ile kamuya yararlı dernekler tacir sayılmaz; ancak işlettikleri ticari işletmelere ticari hükümler uygulanır.',
     ),
     # düzey 3
     '0023': patch(
@@ -429,17 +424,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0029': patch(
-        'Bir tacir adına, ticari işletmeyi yönetme ve işletmeye ilişkin işlemleri yapma konusunda geniş yetkiyle donatılmış bir kişi görevlendirilmiştir. Bir diğeri ise yalnızca belirli işlerde yetkilendirilmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir tacir adına, ticari işletmeyi yönetme ve işletmeye ilişkin işlemleri yapma konusunda geniş yetkiyle donatılmış bir kişi görevlendirilmiştir. Bir diğeri ise belirli işlerde yetkilendirilmiştir.\n\nTacir yardımcılarıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Her ikisi de tacir sıfatını kazanır',
-            'B': 'Her ikisi de acente sayılır',
-            'C': 'Birincisi ticari temsilci, ikincisi ticari vekildir',
-            'D': 'Her ikisi de pazarlamacı sayılır',
-            'E': 'Birincisi ticari vekil, ikincisi ticari temsilcidir',
+            'A': 'İşletmeyi yönetme yetkisi verilen kişi ticari temsilcidir',
+            'B': 'Ticari temsilci ticaret unvanı altında temsil eder',
+            'C': 'Belirli işlerde yetkilendirilen kişi ticari temsilcidir',
+            'D': 'Ticari vekil temsilci sıfatı olmaksızın yetkilendirilir',
+            'E': 'Tacir yardımcıları bu sıfatla tacir olmaz',
         },
         'C',
-        'TBK md. 547 vd.: TİCARİ TEMSİLCİ, işletme sahibinin işletmeyi yönetme ve işletmeyle ilgili işlemlerde ticaret unvanı altında temsil yetkisi verdiği kişidir. TİCARİ VEKİL ise temsilci sıfatı olmaksızın işletmenin bütün işleri veya belirli bazı işleri için yetkilendirilen kişidir. Tacir yardımcıları bu sıfatla tacir olmaz.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TBK md. 547 vd.: ticari temsilci, işletme sahibinin işletmeyi yönetme ve işletmeyle ilgili işlemlerde ticaret unvanı altında temsil yetkisi verdiği kişidir. Ticari vekil ise temsilci sıfatı olmaksızın işletmenin bütün işleri veya belirli bazı işleri için yetkilendirilen kişidir. Tacir yardımcıları bu sıfatla tacir olmaz.',
     ),
     # düzey 2
     '0030': patch(
@@ -597,17 +591,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0041': patch(
-        'Bir ticari işletme, on beş yaşındaki bir çocuğa miras yoluyla geçmiş ve işletme vasi tarafından çocuk adına işletilmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir ticari işletme, on beş yaşındaki bir çocuğa miras yoluyla geçmiş ve işletme vasi tarafından çocuk adına işletilmektedir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Küçük tacir sayılır ve işletmeden doğan ceza ile disiplin sorumluluğu da bizzat kendisine aittir',
-            'B': 'Küçük tacir sayılır; ceza ve disiplin sorumluluğu kanuni temsilcidedir',
-            'C': 'Ne küçük ne vasi tacir sayılır; işletme tacirsiz işletilir',
-            'D': 'Küçük ancak ergin olduğunda tacir sıfatını kazanır',
-            'E': 'Küçük tacir sayılmaz; tacir sıfatı vasiye aittir',
+            'A': 'Tacir sıfatı küçüğe aittir',
+            'B': 'Küçük ancak ergin olduğunda tacir sıfatını kazanır',
+            'C': 'Vasi işletmenin sahibi olmadığından tacir sayılmaz',
+            'D': 'Ceza sorumluluğu yasal temsilciye aittir',
+            'E': 'Disiplin sorumluluğu yasal temsilciye aittir',
         },
         'B',
-        'TTK md. 13: küçük ve kısıtlılara ait ticari işletmeyi bunların adına işleten yasal temsilci, ticari işletmenin sahibi olmadığı hâlde tacir sayılmaz; TACİR SIFATI temsil edilene aittir. Ancak ceza ve disiplin sorumlulukları bakımından yasal temsilci sorumlu olur.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 13: küçük ve kısıtlılara ait ticari işletmeyi bunların adına işleten yasal temsilci, işletmenin sahibi olmadığı için tacir sayılmaz; tacir sıfatı temsil edilene aittir ve erginliği beklemez. Ceza ve disiplin sorumlulukları bakımından ise yasal temsilci sorumludur.',
     ),
     # düzey 3
     '0042': patch(
@@ -625,17 +618,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        'İki kişi, yalnızca biri için ticari nitelik taşıyan bir iş dolayısıyla birlikte borç altına girmiş; sözleşmede sorumluluk biçimi düzenlenmemiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "İki kişi, yalnızca biri için ticari nitelik taşıyan bir iş dolayısıyla birlikte borç altına girmiş; sözleşmede sorumluluk biçimi düzenlenmemiştir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sorumluluk biçimi mahkemece takdir edilir',
-            'B': 'Ticari işlerde müteselsil sorumluluk karinesi bulunmaz',
-            'C': 'Borçlular eşit paylarla sorumlu olur',
-            'D': 'Müteselsil sorumluluk için işin alacaklı bakımından da ticari olması gerekir',
-            'E': 'Aksi kararlaştırılmadıkça borçlular müteselsilen sorumlu olur',
+            'A': 'Ticari işte birlikte borçlanma müteselsil sorumluluk doğurur',
+            'B': 'İşin borçlulardan birisi için ticari olması yeterlidir',
+            'C': 'Kanunda veya sözleşmede aksi öngörülebilir',
+            'D': 'Müteselsil sorumluluk karinesi ticari işlerde geçerlidir',
+            'E': 'Borçlular eşit paylarla sorumlu olur',
         },
         'E',
-        'TTK md. 7: iki veya daha fazla kişi, içlerinden yalnız biri veya hepsi için ticari nitelikte bir iş dolayısıyla diğer bir kimseye karşı birlikte borç altına girerse, kanunda veya sözleşmede aksi öngörülmemişse MÜTESELSİLEN sorumlu olur. Karine ticari işlerde geçerlidir; işin her iki taraf için ticari olması şart değildir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 7: iki veya daha fazla kişi, içlerinden yalnız biri veya hepsi için ticari nitelikte bir iş dolayısıyla diğer bir kimseye karşı birlikte borç altına girerse, kanunda veya sözleşmede aksi öngörülmemişse müteselsilen sorumlu olur; eşit paylı sorumluluk söz konusu değildir.',
     ),
     # düzey 2
     '0044': patch(
@@ -709,17 +701,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        'İki tacir, karşılıklı alacaklarını tek tek istemeyip belirli dönemlerde bakiyeyi talep etmek üzere anlaşmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "İki tacir, karşılıklı alacaklarını tek tek istemeyip belirli dönemlerde bakiyeyi talep etmek üzere anlaşmıştır.\n\nTTK'ya göre cari hesap sözleşmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Cari hesap sözleşmesi ancak bir bankayla kurulabilir',
-            'B': 'Cari hesapta taraflar alacaklarını dönem beklemeden tek tek isteyebilir',
-            'C': 'Cari hesap sözleşmesi ticaret siciline tescil ve ilan edilmedikçe geçersiz sayılır',
-            'D': 'Cari hesap sözleşmesi kurulmuştur; sözleşmenin yazılı yapılması geçerlilik koşuludur',
-            'E': 'Cari hesap sözleşmesi sözlü olarak da geçerli biçimde kurulabilir',
+            'A': 'Taraflar alacaklarını tek tek istemekten vazgeçer',
+            'B': 'Bakiye hesabın kesilmesinden sonra istenir',
+            'C': 'Sözleşmenin yazılı yapılması geçerlilik koşuludur',
+            'D': 'Cari hesap sözleşmesi sözlü olarak da geçerli kurulabilir',
+            'E': 'Sözleşmenin taraflarından birinin banka olması gerekmez',
         },
         'D',
-        'TTK md. 89: iki kişinin herhangi bir hukuki sebep veya ilişkiden doğan alacaklarını teker teker ve ayrı ayrı istemekten karşılıklı olarak vazgeçip bunları kalem kalem alacak ve borç şekline çevirerek hesabın kesilmesinden sonra çıkacak bakiyeyi isteyebileceklerine ilişkin sözleşme CARİ HESAP sözleşmesidir. md. 90: sözleşme YAZILI yapılmadıkça geçerli olmaz.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 89: alacakları teker teker istemekten vazgeçip bunları kalem kalem alacak ve borç şekline çevirerek hesabın kesilmesinden sonra çıkacak bakiyeyi isteme sözleşmesi cari hesap sözleşmesidir; taraflar banka olmak zorunda değildir. md. 90: sözleşme yazılı yapılmadıkça geçerli olmaz.',
     ),
     # düzey 2
     '0050': patch(

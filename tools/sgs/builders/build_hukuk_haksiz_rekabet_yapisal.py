@@ -134,16 +134,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        'Bir işletme, rakibinin haksız rekabet oluşturan davranışı nedeniyle açtığı davayı kazanmıştır. İşletme, kararın kamuoyuna duyurulmasını istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir işletme, rakibinin haksız rekabet oluşturan davranışı nedeniyle açtığı davayı kazanmış ve kararın kamuoyuna duyurulmasını istemektedir.\n\nTTK'ya göre kararın ilanıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İlan istemi yalnızca ceza mahkemesince verilen mahkûmiyet kararları bakımından ileri sürülebilir',
-            'B': 'Mahkeme, kazanan tarafın istemiyle masrafı diğer tarafa ait olmak üzere ilana karar verebilir',
-            'C': 'Kararın ilanına ancak davalının bu yönde açık rızası bulunması hâlinde karar verilebilir',
-            'D': 'Kararın ilan masrafları kural olarak ilanı isteyen kazanan tarafa yükletilmektedir',
-            'E': 'Mahkeme kararlarının ilanı kişilik haklarını zedelediğinden bu yönde istemde bulunulamaz',
+            'A': 'Mahkeme kararın ilanına karar verebilir',
+            'B': 'İlan masrafı ilanı isteyen tarafa yükletilir',
+            'C': 'İlan davayı kazanan tarafın istemiyle yapılır',
+            'D': 'İlan masrafı karşı tarafa aittir',
+            'E': 'İlan kararın kesinleşmesinden sonra yapılır',
         },
         'B',
-        'TTK md. 59 uyarınca mahkeme, davayı kazanan tarafın istemiyle masrafı diğer tarafa ait olmak üzere kararın kesinleşmesinden sonra ilan edilmesine karar verebilir.',
+        'TTK md. 59: mahkeme, davayı kazanan tarafın istemiyle, masrafı diğer tarafa ait olmak üzere kararın kesinleşmesinden sonra ilan edilmesine karar verebilir.',
     ),
     # düzey 3
     '0007': patch(
@@ -485,16 +485,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        'Bir tüzel kişinin faaliyeti çerçevesinde, organları tarafından haksız rekabet oluşturan ve cezai yaptırıma bağlanmış bir fiil işlenmiştir. Şikâyet üzerine soruşturma başlatılmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir tüzel kişinin faaliyeti çerçevesinde, organları tarafından haksız rekabet oluşturan ve cezai yaptırıma bağlanmış bir fiil işlenmiştir.\n\nTTK'ya göre ceza sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tüzel kişi adına hareket eden veya etmesi gereken kişiler cezalandırılır',
-            'B': 'Tüzel kişilerin ceza sorumluluğu bulunduğundan tüzel kişi hapis cezasıyla cezalandırılır',
-            'C': 'Tüzel kişi hakkında yalnızca hukuk davası açılabilir, ceza soruşturması yürütülemez',
-            'D': 'Ceza sorumluluğu yalnızca fiili bizzat işleyen çalışana yüklenebilen kişisel bir sorumluluktur',
-            'E': 'Tüzel kişinin faaliyeti çerçevesinde işlenen fiiller bakımından ceza sorumluluğu doğmaz',
+            'A': 'Tüzel kişi hapis cezasıyla cezalandırılır',
+            'B': 'Tüzel kişi adına hareket eden gerçek kişiler cezalandırılır',
+            'C': 'Tüzel kişi adına hareket etmesi gereken kişiler de cezalandırılır',
+            'D': 'Bazı haksız rekabet fiilleri cezai yaptırıma bağlanmıştır',
+            'E': 'Ceza sorumluluğu fiili bizzat işleyen çalışanla sınırlı değildir',
         },
         'A',
-        'TTK md. 63 uyarınca haksız rekabet fiili bir tüzel kişinin faaliyeti çerçevesinde işlenmişse, tüzel kişi adına hareket eden veya etmesi gerekli olan gerçek kişiler hakkında ceza hükümleri uygulanır.',
+        'TTK md. 63: haksız rekabet fiili bir tüzel kişinin faaliyeti çerçevesinde işlenmişse, tüzel kişi adına hareket eden veya etmesi gerekli olan gerçek kişiler hakkında ceza hükümleri uygulanır; tüzel kişiye hapis cezası verilemez.',
     ),
     # düzey 2
     '0034': patch(
@@ -537,29 +537,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Bir gazetede, yazarın izni olmaksızın ve içeriği değiştirilerek yayımlanan bir yazı haksız rekabet oluşturmaktadır. Zarar gören işletme kime karşı dava açacağını araştırmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir gazetede, yazarın izni olmaksızın ve içeriği değiştirilerek yayımlanan bir yazı haksız rekabet oluşturmaktadır.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yazının izinsiz yayımlanması yalnızca yazar ile yayın kuruluşu arasındaki ilişkiyi ilgilendirir',
-            'B': 'Yayın kuruluşları basın özgürlüğü kapsamında bu davaların dışında tutulmuştur',
-            'C': 'Dava, istisnasız biçimde öncelikle yazının sahibine karşı açılabilen bir davadır',
-            'D': 'Yazı sahibinin izni olmaksızın yayımlanmışsa dava yayın sahibi ve yayımlayana yöneltilebilir',
-            'E': 'Yayın kuruluşuna karşı dava açılabilmesi yazı sahibinin belirlenememesine bağlıdır',
+            'A': 'Dava yayın sahibine karşı da açılabilir',
+            'B': 'Dava yayımlayana karşı da yöneltilebilir',
+            'C': 'Kural içeriği değiştirilerek yayımlanan yazılara da uygulanır',
+            'D': 'Yayın kuruluşuna dava ancak yazı sahibi belirlenemezse açılır',
+            'E': 'Yayın kuruluşları bu davaların dışında tutulmamıştır',
         },
         'D',
-        'TTK md. 58 uyarınca yazı sahibinin izni olmaksızın veya yazı içeriği değiştirilerek yayımlanmışsa dava, yayın sahibine ve yayımlayana karşı da açılabilir.',
+        'TTK md. 58: yazı sahibinin izni olmaksızın veya yazı içeriği değiştirilerek yayımlanmışsa dava, yayın sahibine ve yayımlayana karşı da açılabilir; bu, yazı sahibinin belirlenememesine bağlı değildir.',
     ),
     # düzey 3
     '0038': patch(
-        'Bir işletme, rakibinin ürünleriyle kendi ürünlerini karşılaştıran bir reklam yayımlamıştır. Karşılaştırma somut, doğru ve objektif verilere dayanmaktadır. Rakip işletme reklamın haksız rekabet oluşturduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir işletme, rakibinin ürünleriyle kendi ürünlerini karşılaştıran bir reklam yayımlamıştır.\n\nTTK'ya göre karşılaştırmalı reklamla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Doğru ve objektif verilere dayanan karşılaştırma kural olarak haksız rekabet oluşturmaz',
-            'B': 'Karşılaştırmalı reklam kanunda mutlak biçimde yasaklanmış bir reklam biçimidir',
-            'C': 'Karşılaştırmanın hukuka uygun sayılması rakibin önceden yazılı onayına bağlıdır',
-            'D': 'Karşılaştırmalı reklam yalnızca fiyat unsuru bakımından yapılabilen sınırlı bir uygulamadır',
-            'E': 'Rakibin adının veya ürünlerinin reklamda anılması başlı başına haksız rekabet sayılır',
+            'A': 'Doğru ve objektif verilere dayanan karşılaştırma da haksız rekabettir',
+            'B': 'Gerçek dışı karşılaştırma haksız rekabettir',
+            'C': 'Yanıltıcı karşılaştırma haksız rekabettir',
+            'D': 'Gereksiz yere incitici karşılaştırma haksız rekabettir',
+            'E': 'Rakibin tanınmışlığından yararlanan karşılaştırma haksız rekabettir',
         },
         'A',
-        'TTK md. 55/1-a-5 uyarınca haksız rekabet oluşturan, gerçek dışı, yanıltıcı, gereksiz yere incitici veya rakibin tanınmışlığından yararlanan karşılaştırmalardır; doğru ve objektif karşılaştırma bu kapsamda değildir.',
+        'TTK md. 55/1-a-5: kendisini, mallarını, iş ürünlerini, faaliyetlerini, fiyatlarını gerçeğe aykırı, yanıltıcı, gereksiz yere incitici veya rakibin tanınmışlığından yararlanan bir şekilde karşılaştırmak haksız rekabettir. Doğru ve objektif verilere dayanan karşılaştırma bu kapsamda değildir.',
     ),
     # düzey 2
     '0039': patch(

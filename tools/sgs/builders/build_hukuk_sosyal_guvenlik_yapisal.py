@@ -1158,6 +1158,132 @@ for _start in (1, 21, 41):
     assert len(_block & DIFFICULTY_LEVELS[2]) >= 8
     assert len(_block & DIFFICULTY_LEVELS[3]) >= 4
 
+# Olumsuz kök turu (2026-10-06): gerçek sınav oranına yaklaşmak için olumlu kökler
+# 'hangisi yanlıştır'a çevrildi; önceki sözlüklerdeki aynı kimlikli kayıtları geçersiz kılar.
+_OLUMSUZ_TUR = {
+    '0008': patch(
+        "Bir sigortalı, işverenin sağladığı servis aracıyla işyerine giderken trafik kazası geçirmiştir. Aynı işyerinde bir başka sigortalı, işveren tarafından görevle başka bir ile gönderildiği sırada, asıl işini yapmaksızın geçen zamanda yaralanmıştır.\n\n5510 sayılı Kanun'a göre iş kazasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'İşverenin sağladığı taşıtla toplu götürülürken olan kaza iş kazasıdır',
+            'B': 'İş kazası için olayın işyeri sınırları içinde olması gerekir',
+            'C': 'Görevle gönderilmede asıl iş yapılmadan geçen sürede olan olay iş kazasıdır',
+            'D': 'Emziren sigortalının süt verme zamanında olan olay iş kazasıdır',
+            'E': 'İş kazası sayılması için işverenin kusuru aranmaz',
+        },
+        'B',
+        '5510 md. 13: iş kazası; sigortalının işyerinde bulunduğu sırada, işveren tarafından yürütülen iş nedeniyle, görevli olarak işyeri dışına gönderilmesi nedeniyle asıl işini yapmaksızın geçen zamanlarda, emziren kadın sigortalının çocuğuna süt vermek için ayrılan zamanlarda ve işverence sağlanan taşıtla toplu götürülüp getirilmeleri sırasında meydana gelen olaydır. İşyeri sınırı ya da işveren kusuru koşul değildir.',
+    ),
+    '0009': patch(
+        "Bir işverenin işyerinde 4/1-(a) kapsamındaki bir sigortalı 4 Mart Salı günü iş kazası geçirmiştir.\n\n5510 sayılı Kanun'a göre kazanın bildirimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': '4/1-(a) sigortalıları için bildirim işverence yapılır',
+            'B': 'Bildirim kazadan sonraki üç iş günü içinde yapılır',
+            'C': 'Kolluğa yapılan bildirim Kuruma bildirimi ortadan kaldırmaz',
+            'D': '4/1-(b) sigortalılarında bildirimi sigortalının kendisi yapar',
+            'E': 'İşveren kazayı takip eden ayın sonuna kadar bildirebilir',
+        },
+        'E',
+        '5510 md. 13/2: iş kazası, 4/1-(a) kapsamındaki sigortalılar bakımından işverence kazadan sonraki üç iş günü içinde Kuruma bildirilir; 4/1-(b) kapsamındakiler bakımından bildirimi sigortalının kendisi yapar. Kolluğa bildirim Kuruma bildirim yükümlülüğünü ortadan kaldırmaz.',
+    ),
+    '0014': patch(
+        "Bir sigortalı, yaşlılık aylığı bağlanması için Kuruma başvurmuş; yalnızca prim gün sayısı koşulunu karşıladığını, yaş koşulunun aranmaması gerektiğini ileri sürmüştür.\n\n5510 sayılı Kanun'a göre yaşlılık aylığıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Kural olarak belirli bir yaşın doldurulması aranır',
+            'B': 'Yeterli sigortalılık süresi aranır',
+            'C': 'Yeterli prim gün sayısı aranır',
+            'D': 'Prim gün sayısının karşılanması tek başına yeterlidir',
+            'E': 'Koşulların birlikte gerçekleşmesi gerekir',
+        },
+        'D',
+        '5510 md. 28: yaşlılık aylığından yararlanmak için kural olarak belirli bir yaşı doldurmak, yeterli sigortalılık süresine ve prim gün sayısına sahip olmak koşulları birlikte aranır; tek bir koşulun karşılanması aylık hakkı doğurmaz.',
+    ),
+    '0017': patch(
+        "Bir işveren 10 Nisan günü imalat işyerinde A'yı, aynı gün başladığı tarım işyerinde ise B'yi ilk kez çalıştıracaktır.\n\nSigortalı işe giriş bildirgesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': '4/1-(a) sigortalısı kural olarak çalışmaya başlamadan önce bildirilir',
+            'B': 'Tarım işyerlerinde bildirge en geç çalışmaya başlanılan gün verilebilir',
+            'C': 'A için 10 Nisan gün sonuna kadar bildirim yapılması yeterlidir',
+            'D': 'Aynı istisna inşaat işyerleri için de uygulanır',
+            'E': 'Aynı istisna balıkçılık işyerleri için de uygulanır',
+        },
+        'C',
+        '4/1-(a) sigortalısı kural olarak çalışmaya başlamadan önce bildirilir. İnşaat, balıkçılık ve tarım işyerlerinde işe başlatılacak kişiler için bildirgenin en geç çalışmaya başlanılan gün verilmesi istisnadır. İmalat işyerindeki A genel kurala tabidir; bildirim 10 Nisandan önce yapılmalıdır.',
+    ),
+    '0024': patch(
+        "İş kazası geçiren bir sigortalıya ayakta tedavi uygulanmış; günlük kazancı 1.200 ₺ olarak hesaplanmıştır. Aynı işyerinde başka bir sigortalı ise hastanede yatarak tedavi görmüştür.\n\n5510 sayılı Kanun'a göre geçici iş göremezlik ödeneğiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Yatarak tedavide günlük kazancın yarısı ödenir',
+            'B': 'Her iki hâlde de günlük kazancın yarısı ödenir',
+            'C': 'Ayakta tedavide günlük kazancın üçte ikisi ödenir',
+            'D': 'İş kazasında ödenek ilk günden itibaren ödenir',
+            'E': 'Ayakta tedavi gören sigortalıya günlük 800 ₺ ödenir',
+        },
+        'B',
+        '5510 md. 18: geçici iş göremezlik ödeneği yatarak tedavide günlük kazancın yarısı, ayakta tedavide üçte ikisi tutarındadır. İş kazası ve meslek hastalığında ilk günden itibaren ödenir. 1.200 ₺ günlük kazançta ayakta tedavi için günlük 800 ₺ ödenir.',
+    ),
+    '0026': patch(
+        "Kanun koyucu, sosyal güvenlik hakkının kapsamını düzenleyen bir değişiklik yaparken bir grup bakımından hakkın özüne dokunan ölçüsüz bir sınırlama getirmiştir.\n\nAnayasa'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Sosyal güvenlik prim ödeyenlere tanınmış sözleşmesel bir haktır',
+            'B': 'Herkes sosyal güvenlik hakkına sahiptir',
+            'C': 'Devlet sosyal güvenliği sağlayacak tedbirleri alır',
+            'D': 'Kanuni düzenlemeler ölçülülük denetimine tabidir',
+            'E': 'Hakkın kanunla somutlaştırılması anayasal denetimi dışlamaz',
+        },
+        'A',
+        'Anayasa md. 60: herkes sosyal güvenlik hakkına sahiptir; devlet bu güvenliği sağlayacak gerekli tedbirleri alır ve teşkilatı kurar. Hak sözleşmesel değil anayasal niteliktedir; kanunla somutlaştırılması kanun koyucuyu anayasal güvencelerden ve ölçülülük denetiminden bağımsız kılmaz.',
+    ),
+    '0032': patch(
+        'Sosyal Güvenlik Kurumunun bir prim alacağı işlemi ile özel hukuk sözleşmesinden doğan kira uyuşmazlığı birlikte değerlendirilmektedir.\n\nKurumun hukuki niteliğiyle ilgili aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Kurum kamu tüzel kişiliğine sahiptir',
+            'B': 'Kurumun özerkliği işlemlerini yargısal denetim dışında bırakır',
+            'C': 'Kurum idari ve mali bakımdan özerktir',
+            'D': 'Kurum özel hukuk sözleşmesi yapabilir',
+            'E': 'Kurumun taraf olması her uyuşmazlığı idari yargıya taşımaz',
+        },
+        'B',
+        'SGK kamu tüzel kişiliğini haiz, idari ve mali açıdan özerk bir kurumdur. Bu nitelik Kurumun özel hukuk sözleşmesi yapmasına engel değildir; Kurumun taraf olması tek başına bütün uyuşmazlıkları idari yargıya taşımaz. Özerklik işlemleri yargısal denetim dışında bırakmaz.',
+    ),
+    '0037': patch(
+        "Bir işverenin Kuruma ödenmemiş prim borcu ile kesinleşmiş idari para cezası borcu bulunmaktadır. İşveren, bu borçların genel hükümlere göre takip edilmesi gerektiğini ileri sürmektedir.\n\n5510 sayılı Kanun'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': 'Prim alacakları genel hükümlere göre ilamsız icrayla takip edilir',
+            'B': "Prim alacakları 6183 sayılı Kanun'a göre tahsil edilir",
+            'C': "Kesinleşmiş idari para cezaları da 6183 sayılı Kanun'a göre tahsil edilir",
+            'D': 'Kurum bu tahsilatta alacaklı amme idaresi sayılır',
+            'E': 'Kurum alacakları için cebri takip yapılabilir',
+        },
+        'A',
+        '5510 md. 88 ve 89: Kurumun süresi içinde ödenmeyen prim ve diğer alacakları ile kesinleşmiş idari para cezaları, 6183 sayılı Amme Alacaklarının Tahsil Usulü Hakkında Kanun hükümlerine göre tahsil edilir; Kurum bu Kanunun uygulanmasında alacaklı amme idaresi sayılır.',
+    ),
+    '0047': patch(
+        'Sosyal sigorta sisteminin finansmanı tartışılmaktadır. Bir görüşe göre sistem devlet bütçesinden karşılanmakta olup prim tahsili biçimseldir.\n\nBu konuyla ilgili aşağıdakilerden hangisi yanlıştır?',
+        {
+            'A': 'Sosyal sigorta prim esasına dayanır',
+            'B': 'Primler sigortalı ve işveren hisselerinden oluşur',
+            'C': 'Devlet katkısı prim finansmanını tamamlar',
+            'D': 'Primsiz rejim doğrudan bütçeden finanse edilir',
+            'E': 'Sistem bütçeden karşılanır; prim tahsili biçimseldir',
+        },
+        'E',
+        'Sosyal sigorta, karşılığında prim ödenen bir güvence sistemidir: 5510 md. 79 ve 81 uyarınca primler sigortalı ve işveren hisselerinden oluşur; devlet katkısı bu finansmanı tamamlar. Primsiz rejim (sosyal yardım ve hizmetler) ise doğrudan bütçeden finanse edilir.',
+    ),
+    '0049': patch(
+        "Zorunlu sigortalılığı sona eren ve başka bir sigortalının bakmakla yükümlü olduğu kişi sayılmayan A, Türkiye'de ikamet etmeye devam etmektedir. Gelir testi sonucunda aile içindeki kişi başına düşen geliri kanuni eşiğin üzerinde belirlenmiştir.\n\nGenel sağlık sigortasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
+        {
+            'A': "Türkiye'de ikamet eden A genel sağlık sigortalısı olarak tescil edilir",
+            'B': 'Geliri eşiğin altında olanların primi devletçe ödenir',
+            'C': 'Geliri eşiğin üzerinde olan A primini kendisi öder',
+            'D': 'Zorunlu sigortalılığı sona eren A sigorta kapsamı dışında kalır',
+            'E': 'Gelir testi primi kimin ödeyeceğini belirler',
+        },
+        'D',
+        "5510 md. 60: zorunlu sigortalı veya bakmakla yükümlü olunan kişi olmayan Türkiye'de ikamet eden kişi genel sağlık sigortalısı olur. Geliri kanuni eşiğin altında kalanların primi devletçe karşılanırken eşik üzerindeki kişi primini kendisi öder.",
+    ),
+}
+_PATCHES.update(_OLUMSUZ_TUR)
+
 PATCHES = {ONEK + k: v for k, v in _PATCHES.items()}
 
 

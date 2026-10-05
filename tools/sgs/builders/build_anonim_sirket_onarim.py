@@ -37,17 +37,16 @@ def patch(stem, options, answer, solution, ref='6102 sayili Turk Ticaret Kanunu'
 _PATCHES = {
     # düzey 3
     '0001': patch(
-        'Bir anonim şirket kurulurken sermayenin bir bölümü nakit, bir bölümü ise kurucu ortağın vereceği danışmanlık hizmeti olarak taahhüt edilmiştir. Ayrıca bir ortak vadesi gelmemiş bir alacağını sermaye olarak koymak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirket kurulurken sermayenin bir bölümü nakit, bir bölümü ise kurucu ortağın vereceği danışmanlık hizmeti olarak taahhüt edilmiştir. Ayrıca bir ortak vadesi gelmemiş bir alacağını sermaye olarak koymak istemektedir.\n\nTTK'ya göre sermaye olarak konulabilecek değerlerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Üç kalem de sermaye olarak konulabilir',
-            'B': 'Ayni sermaye konulabilir; nakit sermaye için ayrıca özel bir izin alınması gerekir',
-            'C': 'Vadesi gelmemiş alacak konulabilir ancak hizmet edimi konulamaz',
-            'D': 'Nakit konulabilir; hizmet edimi ve vadesi gelmemiş alacak konulamaz',
-            'E': 'Hizmet edimi konulabilir ancak vadesi gelmemiş alacak konulamaz',
+            'A': 'Nakit sermaye olarak konulabilir',
+            'B': 'Devredilebilen ve ekonomik değeri olan unsurlar ayni sermaye olabilir',
+            'C': 'Hizmet edimleri sermaye olarak konulamaz',
+            'D': 'Kurucunun danışmanlık hizmeti sermaye olarak konulabilir',
+            'E': 'Vadesi gelmemiş alacaklar sermaye olarak konulamaz',
         },
         'D',
-        'TTK md. 342: paradan başka, ekonomik değeri olan ve devrolunabilen malvarlığı unsurları ayni sermaye olarak konulabilir. Ancak HİZMET EDİMLERİ, KİŞİSEL EMEK, ticari itibar ve VADESİ GELMEMİŞ ALACAKLAR sermaye olamaz.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 342: paradan başka, ekonomik değeri olan ve devrolunabilen malvarlığı unsurları ayni sermaye olarak konulabilir. Ancak hizmet edimleri, kişisel emek, ticari itibar ve vadesi gelmemiş alacaklar sermaye olamaz.',
     ),
     # düzey 2
     '0002': patch(
@@ -93,31 +92,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        'Bir anonim şirkette yönetim kurulu üyesi, şirketle kendi adına işlem yapmak ve şirketin faaliyet konusuna giren bir işi kendi hesabına yürütmek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirkette yönetim kurulu üyesi, şirketle kendi adına işlem yapmak ve şirketin faaliyet konusuna giren bir işi kendi hesabına yürütmek istemektedir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yasak ancak esas sözleşmede yazılıysa uygulanır',
-            'B': 'Yasak mutlak olup genel kurul izniyle dahi aşılamaz',
-            'C': 'Yasak vardır; genel kurulun izniyle bu işlemler yapılabilir',
-            'D': 'Yasak murahhas üyelere özgüdür',
-            'E': 'Yönetim kurulu üyesi, genel kurulun izni aranmaksızın hem şirketle işlem yapabilir hem de rekabet edebilir',
+            'A': 'Üye genel kurulun izni olmadan şirketle işlem yapamaz',
+            'B': 'Üye izinsiz olarak şirketle rekabet edemez',
+            'C': 'Bu yasaklar murahhas üyelere özgüdür',
+            'D': 'Yasaklar kanundan doğar',
+            'E': 'Genel kurulun izniyle bu işlemler yapılabilir',
         },
         'C',
-        'TTK md. 395-396: yönetim kurulu üyesi, GENEL KURULUN İZNİ olmaksızın şirketle kendisi veya başkası adına işlem yapamaz ve şirketin işletme konusuna giren ticari iş türünden bir işlemi kendi veya başkası hesabına yapamaz. Yasak kanundan doğar; izinle aşılabilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 395-396: yönetim kurulu üyesi, genel kurulun izni olmaksızın şirketle kendisi veya başkası adına işlem yapamaz ve şirketin işletme konusuna giren ticari iş türünden bir işlemi kendi veya başkası hesabına yapamaz. Yasaklar kanundan doğar, tüm üyeleri bağlar ve genel kurul izniyle aşılabilir.',
     ),
     # düzey 3
     '0006': patch(
-        'Bir anonim şirkette genel kurul, kâr elde edilmiş olmasına rağmen kanuni yedek akçeleri ayırmadan kâr dağıtımına karar vermiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirkette genel kurul, kâr elde edilmiş olmasına rağmen kanuni yedek akçeleri ayırmadan kâr dağıtımına karar vermiştir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yedek akçe ancak esas sözleşmede öngörülmüşse ayrılır',
-            'B': 'Kanuni yedek akçe ayırma yükümlülüğü halka açık anonim şirketlere özgüdür',
-            'C': 'Genel kurul kârı dilediği gibi dağıtabilir; yedek akçe zorunlu değildir',
-            'D': 'Yedek akçeler kâr dağıtımından sonra ayrılır',
-            'E': 'Kanuni yedek akçe ayrılmadıkça kâr payı dağıtılamaz',
+            'A': 'Yıllık kârın belirli bir oranı genel kanuni yedek akçeye ayrılır',
+            'B': 'Kanuni yedek akçe ayrılmadıkça kâr payı dağıtılamaz',
+            'C': 'Esas sözleşmede öngörülen yedek akçeler de ayrılmalıdır',
+            'D': 'Aksi yöndeki genel kurul kararı iptale tabidir',
+            'E': 'Yedek akçeler kâr dağıtımından sonra ayrılır',
         },
         'E',
-        'TTK md. 519 ve 523: yıllık kârın belirli bir oranı genel kanuni yedek akçeye ayrılır; kanun ve esas sözleşmede öngörülen yedek akçeler AYRILMADIKÇA kâr payı dağıtılamaz. Aksi yöndeki genel kurul kararı iptale tabidir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 519 ve 523: yıllık kârın belirli bir oranı genel kanuni yedek akçeye ayrılır; kanun ve esas sözleşmede öngörülen yedek akçeler ayrılmadıkça kâr payı dağıtılamaz. Aksi yöndeki genel kurul kararı iptale tabidir.',
     ),
     # düzey 2
     '0007': patch(
@@ -233,17 +230,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0015': patch(
-        'Bir anonim şirkette imtiyazlı pay çıkarılması gündeme gelmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirkette imtiyazlı pay çıkarılması gündeme gelmiştir.\n\nTTK'ya göre imtiyazla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İmtiyaz tasfiye payı bakımından tanınabilir; kâr payı ve oy hakkı bakımından tanınamaz',
-            'B': 'İmtiyazlı pay çıkarılamaz',
-            'C': 'İmtiyaz yönetim kurulu kararıyla tanınır',
-            'D': 'İmtiyaz esas sözleşmeyle kâr payı, oy hakkı gibi konularda tanınabilir',
-            'E': 'İmtiyazlı paylar oy hakkından yoksundur',
+            'A': 'İmtiyaz esas sözleşmeyle tanınır',
+            'B': 'İmtiyaz kâr payı bakımından tanınabilir',
+            'C': 'İmtiyaz oy hakkı bakımından tanınabilir',
+            'D': 'İmtiyaz yönetim kurulu kararıyla tanınır',
+            'E': 'İmtiyaz tasfiye payı bakımından tanınabilir',
         },
         'D',
-        'TTK md. 478: imtiyaz; kâr payı, tasfiye payı, rüçhan ve oy hakkı gibi haklarda paya tanınan üstün bir hak veya kanunda öngörülmemiş yeni bir pay sahipliği hakkıdır ve ESAS SÖZLEŞMEYLE tanınır.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 478: imtiyaz; kâr payı, tasfiye payı, rüçhan ve oy hakkı gibi haklarda paya tanınan üstün bir hak veya kanunda öngörülmemiş yeni bir pay sahipliği hakkıdır ve esas sözleşmeyle tanınır; yönetim kurulu kararıyla tanınamaz.',
     ),
     # düzey 1
     '0016': patch(
@@ -345,17 +341,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0023': patch(
-        'Bir anonim şirket sermaye artırımına gitmiş; mevcut pay sahiplerinden biri yeni paylardan öncelikle alma hakkını kullanmak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirket sermaye artırımına gitmiş; mevcut pay sahiplerinden biri yeni paylardan öncelikle alma hakkını kullanmak istemektedir.\n\nTTK'ya göre rüçhan hakkıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Rüçhan hakkı imtiyazlı pay sahiplerine özgüdür',
-            'B': 'Rüçhan hakkı bulunmaz; yeni paylar dilenen kişiye satılır',
-            'C': 'Pay sahiplerinin rüçhan hakkı, haklı sebep aranmaksızın yönetim kurulu kararıyla kaldırılabilir',
-            'D': 'Rüçhan hakkı, haklı sebep bulunsa bile sınırlandırılamaz',
-            'E': 'Rüçhan hakkı vardır; ancak haklı sebeple ve nitelikli çoğunlukla sınırlanır',
+            'A': 'Pay sahibi yeni payları mevcut payı oranında alma hakkına sahiptir',
+            'B': 'Rüçhan hakkı haklı sebeplerin varlığında sınırlandırılabilir',
+            'C': 'Sınırlama genel kurulun nitelikli çoğunluk kararıyla yapılır',
+            'D': 'Haklı sebep varsa rüçhan hakkı kaldırılabilir',
+            'E': 'Rüçhan hakkı yönetim kurulu kararıyla sebepsiz kaldırılabilir',
         },
         'E',
-        'TTK md. 461: her pay sahibi, yeni çıkarılan payları mevcut paylarının sermayeye oranına göre alma hakkını haizdir. RÜÇHAN HAKKI, ancak HAKLI SEBEPLERİN varlığında ve genel kurulun nitelikli çoğunlukla alacağı kararla sınırlandırılabilir ya da kaldırılabilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 461: her pay sahibi yeni çıkarılan payları mevcut paylarının sermayeye oranına göre alma hakkını haizdir. Rüçhan hakkı ancak haklı sebeplerin varlığında ve genel kurulun nitelikli çoğunlukla alacağı kararla sınırlandırılabilir ya da kaldırılabilir; sebepsiz kaldırılamaz.',
     ),
     # düzey 3
     '0024': patch(
@@ -513,17 +508,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0035': patch(
-        'Bir anonim şirkette pay sahibi, taahhüt ettiği sermaye payını ödememiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirkette pay sahibi, taahhüt ettiği sermaye payını ödememiştir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Pay sahibi temerrüde düşer; şirket kanunda öngörülen yollarla payı iptal edebilir',
-            'B': 'Ödenmeyen sermaye borcu, şirketteki diğer pay sahiplerinden payları oranında istenir',
-            'C': 'Pay sahibi başka bir işleme gerek olmadan ortaklıktan çıkar',
-            'D': 'Şirket doğrudan iflas bildiriminde bulunur',
-            'E': 'Şirketin başvurabileceği bir yol bulunmaz',
+            'A': 'Pay sahibi başka bir işleme gerek olmadan ortaklıktan çıkar',
+            'B': 'Süresinde ödemeyen pay sahibi temerrüt faizi öder',
+            'C': 'Şirket pay sahibini haklarından yoksun bırakabilir',
+            'D': 'Şirket payı iptal edebilir',
+            'E': 'Ödenmeyen borç diğer pay sahiplerine yüklenmez',
         },
         'A',
-        'TTK md. 482-483: sermaye borcunu süresinde ödemeyen pay sahibi temerrüt faizi ödemekle yükümlüdür; şirket ayrıca pay sahibini haklarından yoksun bırakabilir ve payını İPTAL edebilir (ıskat).',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 482-483: sermaye borcunu süresinde ödemeyen pay sahibi temerrüt faizi ödemekle yükümlüdür; şirket ayrıca kanunda öngörülen usulle pay sahibini haklarından yoksun bırakabilir ve payını iptal edebilir (ıskat). Ortaklıktan çıkma kendiliğinden gerçekleşmez.',
     ),
     # düzey 1
     '0036': patch(
@@ -681,17 +675,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0047': patch(
-        'Bir anonim şirkette azınlık pay sahipleri, şirketin belirli olaylarının aydınlatılması için özel denetçi atanmasını istemektedir. Genel kurul talebi reddetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirkette azınlık pay sahipleri, şirketin belirli olaylarının aydınlatılması için özel denetçi atanmasını istemektedir. Genel kurul talebi reddetmiştir.\n\nTTK'ya göre özel denetimle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Özel denetim kurumu kanunda öngörülmemiştir',
-            'B': 'Red hâlinde başvurulacak bir yol bulunmaz',
-            'C': 'Talep reddedilirse azınlık, mahkemeden özel denetçi atanmasını isteyebilir',
-            'D': 'Özel denetçi ancak genel kurulun olumlu kararıyla atanabilir; başka yol yoktur',
-            'E': 'Özel denetçiyi yönetim kurulu atar',
+            'A': 'Pay sahibi özel denetim isteminde bulunabilir',
+            'B': 'İstem önce genel kurula yöneltilir',
+            'C': 'Özel denetçiyi yönetim kurulu atar',
+            'D': 'Genel kurul reddederse azınlık mahkemeye başvurabilir',
+            'E': 'Özel denetçi mahkemece atanabilir',
         },
         'C',
-        'TTK md. 438-439: her pay sahibi, pay sahipliği haklarının kullanılabilmesi için gerekliyse belirli olayların özel bir denetimle açıklığa kavuşturulmasını genel kuruldan isteyebilir. Talep REDDEDİLİRSE, sermayenin kanunda öngörülen oranını temsil eden pay sahipleri MAHKEMEDEN özel denetçi atanmasını isteyebilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 438-439: her pay sahibi, belirli olayların özel bir denetimle açıklığa kavuşturulmasını genel kuruldan isteyebilir. Talep reddedilirse, sermayenin kanunda öngörülen oranını temsil eden pay sahipleri mahkemeden özel denetçi atanmasını isteyebilir; yönetim kurulunun atama yetkisi yoktur.',
     ),
     # düzey 2
     '0048': patch(

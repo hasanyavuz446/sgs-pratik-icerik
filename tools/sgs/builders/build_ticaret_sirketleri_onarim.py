@@ -107,17 +107,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        'Bir limited şirket ortağı, esas sermaye payını üçüncü bir kişiye devretmek istemekte; devrin sözlü anlaşmayla geçerli olacağını düşünmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir limited şirket ortağı, esas sermaye payını üçüncü bir kişiye devretmek istemekte; devrin sözlü anlaşmayla geçerli olacağını düşünmektedir.\n\nTTK'ya göre limited şirkette pay devriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yazılı şekil ve noter onayı gerekir; aksi öngörülmedikçe genel kurul onayı aranır',
-            'B': 'Limited şirkette esas sermaye payı devredilemez; ortaklık ancak şirketin sona ermesiyle biter',
-            'C': 'Pay devri sözlü anlaşmayla geçerli olarak yapılabilir',
-            'D': 'Pay devri için ticaret siciline tescil yeterlidir',
-            'E': 'Pay devri için yazılı şekil yeterlidir; noter onayı aranmaz',
+            'A': 'Pay devri sözlü anlaşmayla geçerli olarak yapılabilir',
+            'B': 'Devir işlemi yazılı şekilde yapılır',
+            'C': 'Tarafların imzaları noterce onaylanır',
+            'D': 'Sözleşmede aksi yoksa devir için genel kurul onayı gerekir',
+            'E': 'Devir genel kurulun onayıyla geçerlilik kazanır',
         },
         'A',
-        'TTK md. 595: esas sermaye payının devri ve devir borcunu doğuran işlemler YAZILI şekilde yapılır ve tarafların imzaları NOTERCE ONAYLANIR. Şirket sözleşmesinde aksi öngörülmemişse devir için GENEL KURULUN ONAYI şarttır; devir bu onayla geçerli olur.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 595: esas sermaye payının devri ve devir borcunu doğuran işlemler yazılı şekilde yapılır ve tarafların imzaları noterce onaylanır. Şirket sözleşmesinde aksi öngörülmemişse devir için genel kurulun onayı şarttır; devir bu onayla geçerli olur.',
     ),
     # düzey 2
     '0007': patch(
@@ -135,17 +134,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Bir limited şirkette yönetim ve temsil yetkisinin hangi organda olduğu tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir limited şirkette yönetim ve temsil yetkisinin hangi organda olduğu tartışılmaktadır.\n\nTTK'ya göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Limited şirket yönetim kurulu tarafından yönetilir',
-            'B': 'Müdür veya müdürlerce yönetilir; en az bir ortağın yönetim hakkı bulunur',
-            'C': 'Limited şirkette müdür ortak olmayan üçüncü kişilerden seçilir; ortaklar müdür olamaz',
-            'D': 'Limited şirkette yönetim yetkisi doğrudan genel kuruldadır',
-            'E': 'Limited şirkette temsil yetkisi ticaret siciline tescil edilmez',
+            'A': 'Limited şirket müdür veya müdürlerce yönetilir',
+            'B': 'Limited şirket yönetim kurulu tarafından yönetilir',
+            'C': 'Müdürlerden en az biri şirket ortağı olmalıdır',
+            'D': 'Ortak olmayan kişiler de müdür seçilebilir',
+            'E': 'Temsil yetkisi ticaret siciline tescil edilir',
         },
         'B',
-        'TTK md. 623: limited şirketin yönetimi ve temsili şirket sözleşmesiyle düzenlenir; şirketin müdürlerinden en az birinin şirket ORTAĞI olması ve yönetim hakkına sahip bulunması gerekir. Müdürler ortak olmayan kişilerden de seçilebilir; temsil yetkisi tescil ve ilan edilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 623: limited şirketin yönetimi ve temsili şirket sözleşmesiyle düzenlenir ve müdür veya müdürlerce yürütülür; müdürlerden en az birinin şirket ortağı olması ve yönetim hakkına sahip bulunması gerekir. Müdürler ortak olmayan kişilerden de seçilebilir; temsil yetkisi tescil ve ilan edilir. Yönetim kurulu anonim şirketin organıdır.',
     ),
     # düzey 2
     '0009': patch(
@@ -415,17 +413,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0028': patch(
-        'Bir kollektif şirket ortağı, şirketin faaliyet konusuna giren bir işi kendi hesabına yapmaya başlamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir kollektif şirket ortağı, şirketin faaliyet konusuna giren bir işi kendi hesabına yapmaya başlamıştır.\n\nTTK'ya göre kollektif şirkette rekabet yasağıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Rekabet yasağı ancak şirket sözleşmesinde yazılıysa uygulanır',
-            'B': 'Ortaklar izinsiz olarak şirket konusundaki işleri yapamaz',
-            'C': 'Rekabet yasağı anonim şirket yöneticilerine özgüdür; kollektif şirket ortaklarını bağlamaz',
-            'D': 'Ortak, faaliyeti ticaret siciline tescil ettirirse yasak uygulanmaz',
-            'E': 'Ortak, şirket dışındaki faaliyetlerinde bir sınırlamaya tabi değildir',
+            'A': 'Ortak izinsiz olarak şirket konusundaki işi kendi hesabına yapamaz',
+            'B': 'Rekabet yasağı şirket sözleşmesinde yazılıysa uygulanır',
+            'C': 'Ortak aynı tür işle uğraşan şirkete sınırsız sorumlu ortak olamaz',
+            'D': 'Yasak kanundan doğar',
+            'E': 'Diğer ortakların izniyle yasak kalkar',
         },
         'B',
-        'TTK md. 230: kollektif şirket ortakları, diğer ortakların izni olmaksızın şirketin işletme konusuna giren bir ticari işi kendi veya başkası hesabına yapamaz ve aynı tür işle uğraşan bir şirkete sorumluluğu sınırlandırılmamış ortak olarak giremez. Yasak kanundan doğar; sözleşmeye yazılması ya da tescil koşuluna bağlı değildir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 230: kollektif şirket ortakları, diğer ortakların izni olmaksızın şirketin işletme konusuna giren bir ticari işi kendi veya başkası hesabına yapamaz ve aynı tür işle uğraşan bir şirkete sorumluluğu sınırlandırılmamış ortak olarak giremez. Yasak kanundan doğar; sözleşmeye yazılması koşuluna bağlı değildir.',
     ),
     # düzey 2
     '0029': patch(
@@ -541,17 +538,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0037': patch(
-        'Bir anonim şirketin sona ermesinden sonra tüzel kişiliğinin durumu bakımından aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirketin sona ermesinden sonra tüzel kişiliğinin durumu incelenmektedir.\n\nTTK'ya göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Şirket tasfiye hâline girer ve tüzel kişiliğini tasfiye sonuna kadar korur',
-            'B': 'Tasfiye hâlinde şirketi genel kurul temsil eder',
-            'C': 'Şirketin tüzel kişiliği, sona erme kararının alınmasıyla birlikte derhâl ortadan kalkar',
-            'D': 'Şirket tasfiyesiz olarak sicilden terkin edilir',
-            'E': 'Tasfiye hâlinde ticaret unvanı değiştirilemez',
+            'A': 'Şirketin tüzel kişiliği sona erme kararıyla derhâl ortadan kalkar',
+            'B': 'Sona eren şirket tasfiye hâline girer',
+            'C': 'Şirket tüzel kişiliğini tasfiye sonuna kadar korur',
+            'D': "Şirket unvanına 'tasfiye hâlinde' ibaresi eklenir",
+            'E': 'Tasfiye hâlindeki şirketi tasfiye memurları temsil eder',
         },
         'A',
-        "TTK md. 533 vd.: sona eren anonim şirket tasfiye hâline girer, tüzel kişiliğini TASFİYE SONUNA KADAR korur ve unvanına 'tasfiye hâlinde' ibaresi eklenir. Tasfiye hâlindeki şirketi TASFİYE MEMURLARI temsil eder.",
-        '6102 sayili Turk Ticaret Kanunu',
+        "TTK md. 533 vd.: sona eren anonim şirket tasfiye hâline girer, tüzel kişiliğini tasfiye sonuna kadar korur ve unvanına 'tasfiye hâlinde' ibaresi eklenir. Tasfiye hâlindeki şirketi tasfiye memurları temsil eder.",
     ),
     # düzey 2
     '0038': patch(
@@ -667,17 +663,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        'Bir anonim şirketin yönetim kurulu, esas sözleşmedeki işletme konusu dışında kalan bir işlem yapmıştır. Karşı taraf iyiniyetlidir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir anonim şirketin yönetim kurulu, esas sözleşmedeki işletme konusu dışında kalan bir işlem yapmıştır. Karşı taraf iyiniyetlidir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İşlem, ticaret siciline tescil edilirse şirketi bağlar',
-            'B': 'Konu dışındaki işlemler de şirketi bağlar',
-            'C': 'İşlem yok hükmünde olup şirketi bağlamaz; karşı tarafın iyiniyeti sonucu değiştirmez',
-            'D': 'İşlem şirketi değil yönetim kurulu üyelerini bağlar',
-            'E': 'İşlem ancak genel kurul onaylarsa şirketi bağlar',
+            'A': '6102 sayılı TTK ile ultra vires ilkesi kaldırılmıştır',
+            'B': 'İşletme konusu dışındaki işlem yok hükmündedir',
+            'C': 'İşletme konusu dışındaki işlemler de şirketi bağlar',
+            'D': 'Yönetim kurulunun şirkete karşı iç sorumluluğu saklıdır',
+            'E': 'Ticaret şirketleri bütün haklardan yararlanabilir',
         },
         'B',
-        'TTK md. 125/2: ticaret şirketleri, TMK md. 48 çerçevesinde bütün haklardan yararlanabilir ve borçları üstlenebilir. 6102 sayılı TTK ile ULTRA VIRES ilkesi kaldırılmıştır; işletme konusu dışındaki işlemler de şirketi bağlar. Yönetim kurulunun iç sorumluluğu ise saklıdır.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 125/2: ticaret şirketleri, TMK md. 48 çerçevesinde bütün haklardan yararlanabilir ve borçları üstlenebilir. 6102 sayılı TTK ile ultra vires ilkesi kaldırılmıştır; işletme konusu dışındaki işlemler de şirketi bağlar. Yönetim kurulunun iç sorumluluğu saklıdır.',
     ),
     # düzey 2
     '0047': patch(

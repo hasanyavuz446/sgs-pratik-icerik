@@ -275,17 +275,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        'İş sözleşmesi 1 Temmuz 2026’da sona eren işçi kıdem, ihbar ve kullanılmayan yıllık izin ücreti alacaklarını talep etmektedir. Zamanaşımı bakımından aşağıdakilerden hangisi doğrudur?',
+        "İş sözleşmesi 1 Temmuz 2026'da sona eren işçi kıdem, ihbar ve kullanılmayan yıllık izin ücreti alacaklarını talep etmektedir.\n\nZamanaşımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bütün işçilik alacaklarında süre yüz yıldır ve taraflarca değiştirilemez',
-            'B': 'Bu alacaklarda zamanaşımı kural olarak beş yıldır; muacceliyet ve süreyi etkileyen nedenler ayrıca değerlendirilir',
-            'C': 'İşçilik alacakları zamanaşımına tabi değildir',
-            'D': 'Zamanaşımı dolunca borç ifa edilmiş sayılır; sonradan yapılan ödeme geri istenebilir',
-            'E': 'Kıdem, ihbar ve izin alacağı ceza davasında talep edilir',
+            'A': 'Kıdem tazminatında zamanaşımı kural olarak beş yıldır',
+            'B': 'İşçilik alacakları zamanaşımına tabi değildir',
+            'C': 'İhbar tazminatında zamanaşımı kural olarak beş yıldır',
+            'D': 'Yıllık izin ücretinde zamanaşımı kural olarak beş yıldır',
+            'E': 'Zamanaşımını kesen ve durduran nedenler ayrıca değerlendirilir',
         },
         'B',
-        'Kıdem ve ihbar tazminatı ile yıllık izin ücreti dâhil kanunda sayılan işçilik alacaklarında zamanaşımı kural olarak beş yıldır. Muacceliyet, geçiş hükümleri ve zamanaşımını kesen veya durduran nedenler ayrıca değerlendirilir.',
-        '4857 sayılı İş Kanunu ek md. 3; 7036 sayılı Kanun geçici md. 8',
+        'Kıdem ve ihbar tazminatı ile yıllık izin ücreti dâhil kanunda sayılan işçilik alacaklarında zamanaşımı kural olarak beş yıldır. Muacceliyet ve zamanaşımını kesen veya durduran nedenler ayrıca değerlendirilir; bu alacaklar zamanaşımına tabidir.',
     ),
     # düzey 2
     '0019': patch(
@@ -345,17 +344,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0023': patch(
-        'İşveren 1 Martta gerçekleşen ve işçiye maddi çıkar sağlamayan hırsızlığı 10 Martta öğrenmiş, fesih bildirimini 19 Martta yapmıştır. Başka bir olayda işçinin davranıştan maddi çıkar sağladığı belirlenmiştir. Ahlak ve iyi niyet kurallarına aykırılığa dayalı fesih süresi bakımından aşağıdakilerden hangisi doğrudur?',
+        "İşveren 1 Martta gerçekleşen ve işçiye maddi çıkar sağlamayan hırsızlığı 10 Martta öğrenmiş, fesih bildirimini 19 Martta yapmıştır. Başka bir olayda işçinin davranıştan maddi çıkar sağladığı belirlenmiştir.\n\n4857 sayılı Kanun'a göre haklı fesih süresiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İlk olayda altı iş günlük süre geçmiş; maddi çıkarlı olayda bir yıllık sınır uygulanmaz',
-            'B': 'Haklı fesih hakkı on yıllık genel zamanaşımı içinde kullanılabilir',
-            'C': 'Altı iş günlük süre olay tarihinden, bir yıllık süre öğrenme tarihinden başlar',
-            'D': 'İlk fesih öğrenmeden itibaren bir ay içinde yapıldığı için süresindedir',
-            'E': 'Altı iş günlük süre işçinin feshine özgüdür; işveren öğrenmeden başlayarak bir yıl içinde feshedebilir',
+            'A': 'Altı iş günlük süre olayın gerçekleştiği tarihten başlar',
+            'B': 'Fesih hakkı öğrenmeden itibaren altı iş günü içinde kullanılır',
+            'C': 'Kural olarak fiilden itibaren bir yıllık üst sınır vardır',
+            'D': 'İşçi maddi çıkar sağlamışsa bir yıllık sınır uygulanmaz',
+            'E': 'İlk olayda 19 Mart tarihli fesih süresi dışındadır',
         },
         'A',
-        'Ahlak ve iyi niyet kurallarına aykırılıkta fesih hakkı, olayın öğrenilmesinden başlayarak altı iş günü ve kural olarak fiilden itibaren bir yıl içinde kullanılmalıdır. İşçinin olaydan maddi çıkar sağlaması hâlinde bir yıllık üst sınır uygulanmaz. İlk olayda 19 Mart tarihli fesih altı iş günlük süreyi aşmıştır.',
-        '4857 sayılı İş Kanunu md. 26',
+        '4857 md. 26: ahlak ve iyi niyet kurallarına aykırılıkta fesih hakkı, olayın öğrenilmesinden başlayarak altı iş günü ve kural olarak fiilden itibaren bir yıl içinde kullanılmalıdır; işçinin olaydan maddi çıkar sağlaması hâlinde bir yıllık sınır uygulanmaz. Öğrenme 10 Mart olduğundan 19 Mart tarihli fesih altı iş günlük süreyi aşmıştır.',
     ),
     # düzey 3
     '0024': patch(
@@ -415,17 +413,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'İşveren, ayrılan işçiye verdiği çalışma belgesinde işin türünü gerçeğe aykırı yazmış; bu nedenle işçi yeni işe alınmamış ve yeni işveren de yanıltıcı bilgi nedeniyle zarara uğramıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'İşveren, ayrılan işçiye verdiği çalışma belgesinde işin türünü gerçeğe aykırı yazmış; bu nedenle işçi yeni işe alınmamış ve yeni işveren de yanıltıcı bilgi nedeniyle zarara uğramıştır.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Çalışma belgesi işçinin ücretini içerir; işin türü ve süresi yazılamaz',
-            'B': 'Gerçeğe aykırı çalışma belgesi, işverenin yönetim hakkı kapsamında kaldığından zarar doğursa bile eski işverenin işçiye veya yanıltılan yeni işverene karşı sorumluluğuna yol açmaz',
-            'C': 'Belge verme yükümlülüğü ancak işçi en az beş yıl çalışmışsa doğar',
-            'D': 'İşveren gerçeğe aykırı veya zamanında verilmeyen belge nedeniyle zarar gören işçi ve yeni işverene karşı sorumlu olabilir',
-            'E': 'Çalışma belgesini işveren değil, işçinin üyesi olduğu sendika düzenler',
+            'A': 'Çalışma belgesinde işin çeşidi ve süresi gösterilir',
+            'B': 'Zarar gören işçi eski işverenden tazminat isteyebilir',
+            'C': 'Yanıltılan yeni işveren de tazminat isteyebilir',
+            'D': 'Belge verme yükümlülüğü en az beş yıllık çalışmaya bağlıdır',
+            'E': 'Çalışma belgesini işveren düzenler',
         },
         'D',
-        'İşten ayrılan işçiye işinin çeşidini ve süresini gösteren belge verilir. Belgenin zamanında verilmemesi veya yanlış bilgi içermesi nedeniyle zarar gören işçi ya da işçiyi işe alan yeni işveren eski işverenden tazminat isteyebilir.',
-        '4857 sayılı İş Kanunu md. 28',
+        'İşten ayrılan işçiye işinin çeşidini ve süresini gösteren belge verilir; belgeyi işveren düzenler ve yükümlülük çalışma süresine bağlı değildir. Belgenin zamanında verilmemesi veya yanlış bilgi içermesi nedeniyle zarar gören işçi ya da işçiyi işe alan yeni işveren eski işverenden tazminat isteyebilir.',
     ),
     # düzey 3
     '0029': patch(
@@ -527,17 +524,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0036': patch(
-        'İşçi işe iade ile birlikte kıdem ve ihbar tazminatı alacaklarını da talep etmek istemektedir. Dava şartı arabuluculuk bakımından aşağıdakilerden hangisi doğrudur?',
+        'İşçi işe iade ile birlikte kıdem ve ihbar tazminatı alacaklarını da talep etmek istemektedir.\n\nDava şartı arabuluculukla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İşe iade talebinde arabuluculuk isteğe bağlı, tazminat alacaklarında yasaktır',
-            'B': 'İşçi ancak işveren kabul ederse arabulucuya başvurabilir',
-            'C': 'Arabuluculuk ceza uyuşmazlıklarında uygulanır',
-            'D': 'İşe iade ve işçilik alacağı davalarında arabulucuya başvuru dava şartıdır',
-            'E': 'Arabulucuya başvurulmadan açılan davalar doğrudan esastan incelenir',
+            'A': 'İşe iade davasında arabulucuya başvuru dava şartıdır',
+            'B': 'İşçilik alacağı davalarında da arabuluculuk dava şartıdır',
+            'C': 'Kanuni istisnalar saklıdır',
+            'D': 'Arabulucuya başvurmadan açılan dava doğrudan esastan incelenir',
+            'E': 'Arabulucuya başvuru işverenin kabulüne bağlı değildir',
         },
         'D',
-        'İşe iade talebi ile bireysel veya toplu iş sözleşmesine dayanan işçi ya da işveren alacağı ve tazminatı davalarında, kanuni istisnalar dışında arabulucuya başvuru dava şartıdır.',
-        '7036 sayılı İş Mahkemeleri Kanunu md. 3; 4857 sayılı İş Kanunu md. 20',
+        'İşe iade talebi ile bireysel veya toplu iş sözleşmesine dayanan işçi ya da işveren alacağı ve tazminatı davalarında, kanuni istisnalar dışında arabulucuya başvuru dava şartıdır. Başvuru yapılmadan açılan dava, dava şartı yokluğundan usulden reddedilir; esasa girilmez.',
     ),
     # düzey 2
     '0037': patch(
@@ -723,17 +719,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        'İşveren, iki yıl kıdemli ve iş güvencesi kapsamındaki işçinin sözleşmesini işletmesel nedenle feshetmiş; altı haftalık bildirim süresine ait ücreti peşin ödeyip işçiyi hemen işten ayırmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'İşveren, iki yıl kıdemli ve iş güvencesi kapsamındaki işçinin sözleşmesini işletmesel nedenle feshetmiş; altı haftalık bildirim süresine ait ücreti peşin ödeyip işçiyi hemen işten ayırmıştır.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İşveren bildirim ücretini peşin ödeyebilir; iş güvencesi koşulları yine uygulanır',
-            'B': 'Bildirim ücreti peşin ödendiğinden işçi işe iade talep edemez',
-            'C': 'Peşin ödeme ancak işçinin yazılı kabulüyle mümkündür',
-            'D': 'Peşin ödeme feshi haklı nedenle derhal feshe dönüştürür ve geçerli neden incelemesini kaldırır',
-            'E': 'Bildirim süresi ücretinin peşin ödenmesiyle işçinin o tarihe kadar doğmuş kıdem tazminatı ve kullanılmayan yıllık izin ücreti alacakları sona erer; ayrıca ödeme yapılmaz',
+            'A': 'Peşin ödeme feshi haklı nedenle derhal feshe dönüştürür',
+            'B': 'İşveren bildirim süresine ait ücreti peşin ödeyebilir',
+            'C': 'Peşin ödeme iş güvencesi hükümlerini bertaraf etmez',
+            'D': 'Fesih yine geçerli bir nedene dayanmalıdır',
+            'E': 'Kıdem ve izin hakları ayrıca değerlendirilir',
         },
         'A',
-        'İşveren bildirim süresine ait ücreti peşin vererek sözleşmeyi sona erdirebilir. Bu yöntem iş güvencesi hükümlerini bertaraf etmez; fesih geçerli nedene ve usule uygun olmalıdır. Kıdem ve izin gibi diğer haklar ayrıca değerlendirilir.',
-        '4857 sayılı İş Kanunu md. 17-19',
+        'İşveren bildirim süresine ait ücreti peşin vererek sözleşmeyi sona erdirebilir. Bu yöntem feshin niteliğini değiştirmez ve iş güvencesi hükümlerini bertaraf etmez; fesih geçerli nedene ve usule uygun olmalıdır. Kıdem ve izin gibi diğer haklar ayrıca değerlendirilir.',
     ),
     # düzey 3
     '0051': patch(

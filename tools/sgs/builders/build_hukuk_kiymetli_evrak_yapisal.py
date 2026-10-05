@@ -147,16 +147,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0008': patch(
-        'Bir emre yazılı senedin arkasına yalnızca cirantanın imzası atılmış, lehtar gösterilmemiştir. Bir diğerinde ise devralanın adı açıkça yazılmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir emre yazılı senedin arkasına yalnızca cirantanın imzası atılmış, lehtar gösterilmemiştir. Bir diğerinde ise devralanın adı açıkça yazılmıştır.\n\nTTK'ya göre ciroyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ciroda lehtarın gösterilmesi geçerlilik koşuludur',
-            'B': 'Birincisi beyaz ciro, ikincisi tam cirodur',
-            'C': 'Birincisi tam ciro, ikincisi beyaz cirodur',
-            'D': 'Her ikisi de geçersizdir',
-            'E': 'Her ikisi de tam cirodur',
+            'A': 'Ciro lehtar gösterilerek yapılabilir',
+            'B': 'Ciroda lehtarın gösterilmesi geçerlilik koşuludur',
+            'C': 'Lehtar gösterilmeden yapılan ciro beyaz cirodur',
+            'D': 'Devralanın adı yazılan ciro tam cirodur',
+            'E': 'Beyaz ciro geçerli bir ciro türüdür',
         },
         'B',
-        'TTK md. 683: ciro, lehine ciro yapılan kişi gösterilerek (TAM CİRO) ya da yalnız cirantanın imzasıyla (BEYAZ CİRO) yapılabilir. Beyaz ciro geçerlidir; senedin arka yüzüne ya da alonj üzerine yazılması gerekir.',
+        'TTK md. 683: ciro, lehine ciro yapılan kişi gösterilerek (tam ciro) ya da cirantanın imzasıyla, lehtar gösterilmeden (beyaz ciro) yapılabilir. Beyaz ciro geçerlidir; lehtarın gösterilmesi geçerlilik koşulu değildir.',
     ),
     # düzey 3
     '0009': patch(
@@ -264,16 +264,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0017': patch(
-        'Bir emre yazılı senedi beyaz ciro ile devralan hamil, senedi bir başkasına devretmek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir emre yazılı senedi beyaz ciro ile devralan hamil, senedi bir başkasına devretmek istemektedir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Beyaz ciro ile devralan hamil senedi devredemez',
-            'B': 'Beyaz ciro senedi hamiline yazılı hâle getirir',
-            'C': 'Beyaz ciro ile devralan hamil senedi teslimle, yeni bir ciroyla veya boşluğu doldurarak devredebilir',
-            'D': 'Beyaz ciro geçersiz olup senedi hükümsüz kılar',
-            'E': 'Beyaz ciro ile devralan hamil, senedi ancak lehtarı göstererek tam ciro yapmak suretiyle devredebilir',
+            'A': 'Hamil beyaz cirodaki boşluğu kendi adıyla doldurabilir',
+            'B': 'Hamil senedi yeniden ciro ederek devredebilir',
+            'C': 'Beyaz ciro senedi hamiline yazılı senede dönüştürür',
+            'D': 'Hamil senedi ciro etmeden teslimle devredebilir',
+            'E': 'Senet emre yazılı niteliğini korur',
         },
         'C',
-        'TTK md. 684: beyaz ciro ile senedi devralan hamil; beyaz cirodaki boşluğu kendi ya da bir başkasının adıyla doldurabilir, senedi yeniden beyaz veya tam ciroyla devredebilir ya da doldurmaksızın ve ciro etmeksizin TESLİMLE başkasına verebilir. Senet hamiline yazılı hâle GELMEZ; emre yazılı niteliğini korur.',
+        'TTK md. 684: beyaz ciro ile senedi devralan hamil, boşluğu kendi ya da bir başkasının adıyla doldurabilir, senedi yeniden beyaz veya tam ciroyla devredebilir ya da doldurmaksızın ve ciro etmeksizin teslimle başkasına verebilir. Senet hamiline yazılı hâle gelmez; emre yazılı niteliğini korur.',
     ),
     # düzey 2
     '0018': patch(
@@ -576,16 +576,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Bir hamil, senedin arka yüzünde yer kalmadığı için ciroyu senede eklenmiş bir kâğıt üzerine yazmıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir hamil, senedin arka yüzünde yer kalmadığı için ciroyu senede eklenmiş bir kâğıt üzerine yazmıştır.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ciro için ayrıca noter onayı gerekir',
-            'B': 'Ciro, senede yapıştırılan alonj üzerine de yazılabilir',
-            'C': 'Ciro senedin ön yüzüne yazılmalıdır',
-            'D': 'Ayrı kâğıda yazılan ciro geçersizdir',
-            'E': 'Ciro yalnızca senedin arka yüzüne yazılabilir; alonj kullanılamaz',
+            'A': 'Ciro senedin üzerine yazılabilir',
+            'B': 'Ayrı kâğıda yazılan ciro geçersizdir',
+            'C': 'Ciro senede bağlanan alonj üzerine de yazılabilir',
+            'D': 'Ciro ciranta tarafından imzalanır',
+            'E': 'Ciro için noter onayı aranmaz',
         },
         'B',
-        'TTK md. 683: ciro, senet veya senede bağlı olan ve ALONJ denilen bir kâğıt üzerine yazılır ve ciranta tarafından imzalanır. Alonja yazılan ciro geçerlidir; noter onayı aranmaz.',
+        'TTK md. 683: ciro, senet veya senede bağlı olan ve alonj denilen bir kâğıt üzerine yazılır ve ciranta tarafından imzalanır. Alonja yazılan ciro geçerlidir; noter onayı aranmaz.',
     ),
     # düzey 2
     '0042': patch(
@@ -719,16 +719,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'Emre yazılı senette ciro zincirinin önemi tartışılmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Emre yazılı senette ciro zincirinin önemi tartışılmaktadır.\n\nTTK'ya göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ciro zinciri yalnızca nama yazılı senetlerde aranır',
-            'B': 'Ciro zinciri aranmaz; hamilin senedi fiilen elinde bulundurması tek başına yeterlidir',
-            'C': 'Ciro zincirindeki kopukluk senedi geçersiz kılar',
-            'D': 'Ciro zinciri ticaret siciline tescil edilir',
-            'E': 'Hamil, hakkını birbirine bağlanan kesintisiz ciro zinciriyle ispat eder',
+            'A': 'Hamil hakkını kesintisiz ciro zinciriyle ispat eder',
+            'B': 'Son ciro beyaz ciro olsa da zincir kesintisiz sayılabilir',
+            'C': 'Zincirdeki kopukluk senedi geçersiz kılmaz',
+            'D': 'Zincirdeki kopukluk hamilin yetkisini etkiler',
+            'E': 'Senedi elinde bulundurmak tek başına yetkili hamil olmaya yeter',
         },
         'E',
-        'TTK md. 686: senedi elinde bulunduran kişi, birbirine bağlanan ve son ciro beyaz ciro olsa bile aralıksız devam eden CİRO ZİNCİRİ ile hakkını ispatlarsa yetkili hamil sayılır. Zincirdeki kopukluk senedi geçersiz kılmaz; hamilin yetkisini etkiler.',
+        'TTK md. 686: senedi elinde bulunduran kişi, birbirine bağlanan ve son ciro beyaz ciro olsa bile aralıksız devam eden ciro zinciri ile hakkını ispatlarsa yetkili hamil sayılır. Zincirdeki kopukluk senedi geçersiz kılmaz, hamilin yetkisini etkiler; zilyetlik tek başına yetmez.',
     ),
     # düzey 2
     '0053': patch(

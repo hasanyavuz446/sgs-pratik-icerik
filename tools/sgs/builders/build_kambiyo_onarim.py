@@ -317,31 +317,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0021': patch(
-        'Bir kambiyo senedinde üç imza bulunmaktadır: birincisi ehliyetsiz bir kişiye, ikincisi sahte bir imzaya, üçüncüsü ise geçerli bir imzaya aittir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir kambiyo senedinde üç imza bulunmaktadır: birincisi ehliyetsiz bir kişiye, ikincisi sahte bir imzaya, üçüncüsü ise geçerli bir imzaya aittir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Geçerli imza sahibi, ancak senetteki bütün diğer imzalar da geçerli olduğu takdirde sorumlu olur',
-            'B': 'Ehliyetsizlik hâlinde tüm imza sahipleri sorumluluktan kurtulur',
-            'C': 'Bir imzanın geçersizliği senedin tamamını geçersiz kılar',
-            'D': 'Sahte imza bulunması hâlinde senet hükümsüz olur',
-            'E': 'Geçersiz imzalar diğerlerinin geçerliliğini etkilemez; geçerli imza sahibi sorumlu kalır',
+            'A': 'Ehliyetsiz kişinin imzası diğer imzaları etkilemez',
+            'B': 'Sahte imza diğer imzaların geçerliliğini etkilemez',
+            'C': 'Geçerli imza sahibi senetten sorumlu kalır',
+            'D': 'Hayali kişilerin imzası da diğerlerini etkilemez',
+            'E': 'Bir imzanın geçersizliği senedin tamamını geçersiz kılar',
         },
         'E',
-        'TTK md. 677 (imzaların bağımsızlığı): kambiyo senedi, borç altına girme ehliyeti bulunmayan kişilerin imzasını, sahte imzaları, hayali kişilerin imzalarını veya imzalayanı bağlamayan imzaları taşırsa, DİĞER İMZALARIN GEÇERLİLİĞİ bundan etkilenmez.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 677 (imzaların bağımsızlığı): kambiyo senedi, borç altına girme ehliyeti bulunmayan kişilerin imzasını, sahte imzaları, hayali kişilerin imzalarını veya imzalayanı bağlamayan imzaları taşırsa, diğer imzaların geçerliliği bundan etkilenmez; geçerli imza sahibi sorumlu kalır.',
     ),
     # düzey 3
     '0022': patch(
-        'Bir bonoyu düzenleyen, iki ciranta ve bir aval veren bulunmaktadır. Hamil vadede ödeme alamamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir bonoyu düzenleyen, iki ciranta ve bir aval veren bulunmaktadır. Hamil vadede ödeme alamamıştır.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hamil önce düzenleyene başvurur; ondan sonuç alamadığı takdirde cirantalara yönelebilir',
-            'B': 'Cirantalar hamile karşı sorumlu değildir',
-            'C': 'Hepsi hamile karşı müteselsilen sorumludur; hamil dilediğine başvurabilir',
-            'D': 'Sorumluluk imza sırasına göre tek tek işler',
-            'E': 'Aval verenin sorumluluğu ancak düzenleyen ödeme yapmazsa doğar',
+            'A': 'Düzenleyen hamile karşı sorumludur',
+            'B': 'Cirantalar hamile karşı sorumludur',
+            'C': 'Hamil önce düzenleyene, sonuç alamazsa cirantalara başvurur',
+            'D': 'Aval veren hamile karşı sorumludur',
+            'E': 'Hamil borç altına giriş sırasına bağlı kalmaz',
         },
         'C',
-        'TTK md. 724: bir poliçeyi düzenleyen, kabul eden, ciro eden veya aval veren kişiler hamile karşı MÜTESELSİLEN borçludur. Hamil bunlardan birine, birkaçına veya hepsine, borç altına girişlerindeki sıraya bağlı kalmaksızın başvurabilir.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 724: kambiyo senedini düzenleyen, kabul eden, ciro eden veya aval veren kişiler hamile karşı müteselsilen borçludur. Hamil bunlardan birine, birkaçına veya hepsine, borç altına girişlerindeki sıraya bağlı kalmaksızın başvurabilir.',
     ),
     # düzey 2
     '0023': patch(
@@ -387,31 +385,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        'Bir bonoya aval veren kişi, lehine aval verdiği cirantanın imzasının sahte olduğunu öğrenmiş ve kendi taahhüdünün de geçersiz olduğunu ileri sürmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir bonoya aval veren kişi, lehine aval verdiği cirantanın imzasının sahte olduğunu öğrenmiş ve kendi taahhüdünün de geçersiz olduğunu ileri sürmektedir.\n\nTTK'ya göre avalle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Aval poliçeye özgüdür',
-            'B': 'Lehine aval verilen kişinin borcu herhangi bir sebeple geçersiz sayılırsa aval taahhüdü de geçersiz olur',
-            'C': 'Aval veren lehtara karşı sorumlu olur, hamillere karşı değil',
-            'D': 'Şekil noksanlığı dışında, asıl borç geçersiz olsa da aval geçerlidir',
-            'E': 'Aval verenin sorumluluğu lehine aval verilenden daha hafiftir',
+            'A': 'Aval veren, kimin için taahhüt altına girmişse onun gibi sorumludur',
+            'B': 'Aval bonoda da verilebilir',
+            'C': 'Asıl borç şekil dışı bir sebeple geçersiz olsa da aval geçerlidir',
+            'D': 'Lehine aval verilenin borcu geçersizse aval de geçersiz olur',
+            'E': 'Aval veren hamillere karşı sorumludur',
         },
         'D',
-        'TTK md. 702: aval veren kişi, kimin için taahhüt altına girmişse tam olarak onun GİBİ sorumlu olur. Aval verenin taahhüdü, lehine taahhüt altına girdiği kişinin borcu ŞEKLE İLİŞKİN noksanlık dışında herhangi bir sebeple geçersiz olsa da GEÇERLİDİR.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 702: aval veren kişi, kimin için taahhüt altına girmişse tam olarak onun gibi sorumlu olur. Aval verenin taahhüdü, lehine taahhüt altına girdiği kişinin borcu şekle ilişkin noksanlık dışında herhangi bir sebeple geçersiz olsa da geçerlidir.',
     ),
     # düzey 3
     '0027': patch(
-        'Bir hamil, kambiyo senedinden doğan hakkını zamanaşımı nedeniyle kaybetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir hamil, kambiyo senedinden doğan hakkını zamanaşımı nedeniyle kaybetmiştir.\n\nTTK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hamil, kambiyo hakkıyla birlikte temel ilişkiye dayanan talep haklarını da kaybeder',
-            'B': 'Hamil, düzenleyen ve kabul edene karşı sebepsiz zenginleşme davası açabilir',
-            'C': 'Zamanaşımı sonrası talep hakkı kalmaz',
-            'D': 'Hamil cirantalara başvurabilir, düzenleyene başvuramaz',
-            'E': 'Zamanaşımı kambiyo senetlerinde işlemez',
+            'A': 'Kambiyo senedinden doğan haklar zamanaşımıyla düşebilir',
+            'B': 'Zamanaşımından sonra hamilin talep hakkı kalmaz',
+            'C': 'Düzenleyen sebepsiz zenginleştiği ölçüde borçlu kalır',
+            'D': 'Kabul eden de sebepsiz zenginleştiği ölçüde borçlu kalır',
+            'E': 'Temel ilişkiden doğan talepler ayrıca değerlendirilir',
         },
         'B',
-        'TTK md. 732: zamanaşımı veya kambiyo hukukuna özgü işlemlerin yapılmasına gerekli sürelerin geçmesi nedeniyle poliçeden doğan haklar düşmüş olsa bile, düzenleyen ve KABUL EDEN, hamilin zararına SEBEPSİZ ZENGİNLEŞTİKLERİ ölçüde borçlu kalır.',
-        '6102 sayili Turk Ticaret Kanunu',
+        'TTK md. 732: zamanaşımı veya kambiyo hukukuna özgü işlemlerin yapılmasına gerekli sürelerin geçmesi nedeniyle senetten doğan haklar düşmüş olsa bile, düzenleyen ve kabul eden, hamilin zararına sebepsiz zenginleştikleri ölçüde borçlu kalır. Temel ilişkiden doğan talepler ayrıca değerlendirilir.',
     ),
     # düzey 2
     '0028': patch(
@@ -541,17 +537,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0037': patch(
-        'Bir cirantanın sorumluluğu incelenmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        "Bir kambiyo senedini ciro eden kişinin sorumluluğu incelenmektedir.\n\nTTK'ya göre cirantanın sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ciranta sorumluluk üstlenmez',
-            'B': 'Ciranta, aksi kararlaştırılmadıkça kabul edilmeme ve ödenmemeden sorumludur',
-            'C': 'Cirantanın sorumluluğu senet üzerinde açıkça yazılmadıkça doğmaz',
-            'D': 'Ciranta ancak asıl borçlu ödeme yapmazsa ve mahkeme kararıyla sorumlu olur',
-            'E': 'Ciranta kendisinden sonraki hamillere karşı sorumsuzdur',
+            'A': 'Ciranta senedin kabul edilmemesinden sorumludur',
+            'B': 'Cirantanın sorumluluğu senette yazılmadıkça doğmaz',
+            'C': 'Ciranta senedin ödenmemesinden sorumludur',
+            'D': 'Cirantanın sorumluluğu kanundan doğar',
+            'E': "Ciranta 'ciro edilemez' kaydıyla sorumluluğunu sınırlayabilir",
         },
         'B',
-        "TTK md. 685: ciranta, aksi kararlaştırılmadıkça poliçenin KABUL EDİLMEMESİNDEN ve ÖDENMEMESİNDEN sorumludur; sorumluluk kanundan doğar. Ciranta 'ciro edilemez' kaydıyla sonraki hamillere karşı sorumluluğunu kaldırabilir.",
-        '6102 sayili Turk Ticaret Kanunu',
+        "TTK md. 685: ciranta, aksi kararlaştırılmadıkça senedin kabul edilmemesinden ve ödenmemesinden sorumludur; sorumluluk kanundan doğar, senette ayrıca yazılması aranmaz. Ciranta 'ciro edilemez' kaydıyla, senedin sonradan ciro edildiği kişilere karşı sorumluluğunu kaldırabilir.",
     ),
     # düzey 3
     '0038': patch(
@@ -667,17 +662,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "Bir kambiyo senedinin arkasına 'bedeli teminattır' kaydıyla ciro yapılmıştır. Buna göre aşağıdakilerden hangisi doğrudur?",
+        "Bir kambiyo senedinin arkasına 'bedeli teminattır' kaydıyla ciro yapılmıştır.\n\nTTK'ya göre bu ciroyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tahsil cirosudur; hamile senedin mülkiyeti geçmeksizin tahsil yetkisi verilir',
-            'B': 'Temlik cirosudur; mülkiyet ciro edilene geçer',
-            'C': 'Beyaz cirodur; lehtar gösterilmemiştir',
-            'D': 'Rehin cirosudur; hamil hakları kullanır, mülkiyeti kazanmaz',
-            'E': 'Kayıt geçersiz olup ciro temlik cirosu sayılır',
+            'A': 'Kayıt rehin cirosunu gösterir',
+            'B': 'Hamil senetten doğan hakları kullanabilir',
+            'C': 'Hamil senedin mülkiyetini kazanmaz',
+            'D': 'Bu ciroyla senedin mülkiyeti ciro edilene geçer',
+            'E': 'Hamilin yapacağı ciro tahsil cirosu hükmündedir',
         },
         'D',
-        "TTK md. 689: 'bedeli teminattır', 'bedeli rehindir' veya rehni ifade eden diğer kayıtları taşıyan ciro REHİN CİROSUDUR. Hamil poliçeden doğan bütün hakları kullanabilir; ancak mülkiyeti kazanmadığından yaptığı ciro tahsil cirosu hükmündedir.",
-        '6102 sayili Turk Ticaret Kanunu',
+        "TTK md. 689: 'bedeli teminattır', 'bedeli rehindir' veya rehni ifade eden diğer kayıtları taşıyan ciro rehin cirosudur. Hamil senetten doğan bütün hakları kullanabilir; ancak mülkiyeti kazanmadığından yaptığı ciro tahsil cirosu hükmündedir.",
     ),
     # düzey 3
     '0047': patch(
