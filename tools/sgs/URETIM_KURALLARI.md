@@ -708,6 +708,24 @@ sınıflandırmayı gerektiriyorsa kullanılır.
 Olumsuz kökte doğru seçenek yanlış ifadeyi taşır; diğer dördünden uzunluk, ayrıntı
 veya dil bakımından ayrılmaz (§5).
 
+**Var olan soruyu olumsuz köke çevirme (6 Ekim turu, 160+ soru):**
+
+- Cevap harfi korunur: yanlış ifade eski cevabın harfine yazılır, diğer dört şık
+  doğru ifadedir. Pakette harf dağılımı böylece bozulmaz.
+- Doğru ifadeler bu kez **çeldiricidir** — `ELEME_ISARETI` sözcükleri (yalnız, hiç,
+  her hâlde, kendiliğinden, niteliğinde…) onlarda da yasaktır.
+- **Sızıntı kuralı:** doğru ifadeler aynı paketteki başka bir sorunun cevabını
+  vermemelidir. Konu kümelerini (ör. alacağın devri, 64/65 hesap grupları, kur farkı
+  yönü) önce listele; kümeli sorulardan çevirme, yalnız yalıtık olanları seç.
+- "Hangisi X'tir" sorusunu "hangisi X değildir"e çevirirken dört üye, başka bir
+  sorunun cevabı olan kalemlerden seçilmez (ör. 646'yı 64 grubunda saymak, 646'yı
+  soran soruyu ele verir).
+- Yalnız kökü çevirmek ancak diğer dört şık gerçekten üyeyse geçerlidir; her birini
+  tek tek doğrula (gelir vergisi turunda yalnız kök çevrilen bir sorunun cevabı
+  yanlış çıktı).
+- Her paketten sonra kör öğrenci ve boy dağılımını ölç; yanlış ifade iki uçta da
+  sistematik kalmamalı. Tek bir uzun yanlış ifade paketi %26'dan %31'e taşıyabildi.
+
 ---
 
 ## 8. Hesap ve yevmiye soruları

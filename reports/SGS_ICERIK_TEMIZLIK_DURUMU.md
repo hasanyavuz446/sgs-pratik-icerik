@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 27 Eylül 2026 (havuz geneli FATAL 0 kontrol noktası)
+Son güncelleme: 6 Ekim 2026 (olumsuz kök turu, v231)
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -8,6 +8,21 @@ Son güncelleme: 27 Eylül 2026 (havuz geneli FATAL 0 kontrol noktası)
 > soru biçim karşılaştırması → düzeltme (idempotent builder / güvenli yama) → zorunlu
 > doğrulamalar. Kaynaklar: `tools/sgs/URETIM_KURALLARI.md`,
 > `reports/SGS_CIKMIS_SORULAR_ANALIZI_2026-07-22.md`, `~/Desktop/sgs çıkmış sorular/`.
+
+## 6 Ekim 2026 — olumsuz kök turu (v228–v231, hepsi canlı)
+
+16-17 gerçek kitapçıkla ölçülen olumsuz kök oranına ders ders yaklaşıldı; cevap
+harfi korunarak var olan sorular 'yanlıştır / değildir / yer almaz' köküne çevrildi
+(yöntem `URETIM_KURALLARI.md` §7). Bizim / gerçek: meslek 60/63 · denetim 44/46 ·
+vergi 31/32 · iş-SGK 50/49 · ticaret 51/52 · borçlar 49/50 · **finansal muhasebe
+15/15** · standartlar 17/19 · maliye 16/16. Havuz FATAL 0 · UYARI 0, en yüksek kör
+%30. Çok sahipli standart paketlerine (tms_16, tms_21, tms_36, tms_38) dokunulmadı.
+
+**Kalan yapısal açık — kök derinliği** (medyan karakter, bizim / gerçek): finansal
+muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
+281/544 (MHK 149 — sınavda 0 soru, ürün kararı kullanıcıda; diğer paketler 257-428),
+MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
+ister; ayrı tur.
 
 ## Genel SGS tamamlanma
 
