@@ -79,17 +79,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0004': patch(
-        'Vergi dairesi, bir hekimden ve bir avukattan bilgi istemiştir. Aşağıdaki bilgilerden hangisi istenebilir?',
+        "Vergi dairesi, bir hekimden ve bir avukattan bilgi istemiştir.\n\nVUK'a göre bilgi verme ödeviyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Avukatın müvekkilinin davası nedeniyle dosyadan öğrendiği ticari sırlar',
-            'B': 'Hekimin hastalarının hastalık türleri',
-            'C': 'Avukatın müvekkil adları ve aldığı vekâlet ücretleri',
-            'D': 'Hekimin hastalarına koyduğu teşhisler',
-            'E': "PTT'nin tuttuğu haberleşme içerikleri",
+            'A': 'Özel kanunlardaki mahremiyet hükümleri ileri sürülemez',
+            'B': 'Hekimlerden hastalık türüne ilişkin bilgi istenemez',
+            'C': 'Avukatların aldığı vekâlet ücretleri de istenemez',
+            'D': 'Avukatlardan görevleri gereği öğrendikleri hususlar istenemez',
+            'E': 'Avukatların müvekkil adları istenebilir',
         },
         'C',
-        "m. 151'e göre özel kanunlardaki mahremiyet hükümleri ileri sürülerek bilgi vermekten kaçınılamaz; ancak hekimlerden **hastalık türüne** ilişkin bilgi, avukatlardan **görevleri dolayısıyla öğrendikleri hususlar** istenemez. Bu yasak **müvekkil adlarıyla vekâlet ücretlerine ve giderlerine** şamil değildir.",
-        '213 sayılı Vergi Usul Kanunu m. 151',
+        'VUK m. 151: özel kanunlardaki mahremiyet hükümleri ileri sürülerek bilgi vermekten kaçınılamaz; ancak hekimlerden hastalık türüne ilişkin bilgi, avukatlardan görevleri dolayısıyla öğrendikleri hususlar istenemez. Bu yasak müvekkil adlarıyla vekâlet ücretlerine ve giderlerine şamil değildir.',
     ),
     # düzey 2
     '0005': patch(
@@ -177,17 +176,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        'Vergi incelemesinde mükelleften, elektronik ortamda tuttuğu kayıtlar ile bunlara erişim için gerekli şifreler istenmiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Vergi incelemesinde mükelleften, elektronik ortamda tuttuğu kayıtlar ile bunlara erişim için gerekli şifreler istenmiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sadece kâğıt ortamındaki belgeler ibraz edilir',
-            'B': 'Kayıtlarla birlikte erişim bilgi ve şifreleri de ibraz edilmelidir',
-            'C': 'Şifre yerine kayıtların çıktısı verilmesi yeterlidir',
-            'D': 'Elektronik kayıtlar ancak mahkeme kararıyla istenebilir',
-            'E': 'Şifreler kişisel veri olduğundan verilmez',
+            'A': 'Elektronik kayıtlar muhafaza süresi içinde ibraz edilir',
+            'B': 'Şifre yerine kayıtların çıktısını vermek yeterlidir',
+            'C': 'Erişim için gerekli şifreler de ibraz edilir',
+            'D': 'Kayıtları okunabilir hâle getirecek bilgiler verilir',
+            'E': 'İbraz yetkililerin talebi üzerine yapılır',
         },
         'B',
-        "m. 256'ya göre muhafaza zorunluluğu olanlar, defter ve belgeleri ile manyetik ve benzeri ortamlardaki kayıtlarını ve **bu kayıtlara erişim veya kayıtları okunabilir hâle getirmek için gerekli tüm bilgi ve şifreleri** muhafaza süresi içinde yetkililerin talebi üzerine ibraz etmek zorundadır.",
-        '213 sayılı Vergi Usul Kanunu m. 256',
+        'VUK m. 256: muhafaza zorunluluğu olanlar, defter ve belgeleri ile manyetik ve benzeri ortamlardaki kayıtlarını ve bu kayıtlara erişim veya kayıtları okunabilir hâle getirmek için gerekli tüm bilgi ve şifreleri muhafaza süresi içinde yetkililerin talebi üzerine ibraz etmek zorundadır; çıktı vermek bu ödevi karşılamaz.',
     ),
     # düzey 3
     '0012': patch(
@@ -205,17 +203,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0013': patch(
-        'Bir işletme, vadesi gelmemiş alacak senetlerini değerleme gününün değerine indirgemiş (reeskont) ancak borç senetlerine aynı işlemi uygulamamıştır. Aşağıdakilerden hangisi doğrudur?',
+        "Bir işletme, vadesi gelmemiş alacak senetlerini değerleme gününün değerine indirgemiş (reeskont) ancak borç senetlerine aynı işlemi uygulamamıştır.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Alacak senedi reeskontu da geçersiz hâle gelir',
-            'B': 'Borç senetleri itibari değerle değerlenir',
-            'C': 'Borç senetlerine de reeskont uygulanması zorunludur',
-            'D': 'Alacak ve borç senetleri birbirinden bağımsız olarak ayrı ayrı değerlenebilir',
-            'E': 'Reeskont sadece bankalar için mümkündür',
+            'A': 'Vadesi gelmemiş alacak senetleri reeskonta tabi tutulabilir',
+            'B': 'Reeskont senetleri değerleme günü değerine indirger',
+            'C': 'Alacak ve borç senetleri birbirinden bağımsız değerlenebilir',
+            'D': 'Alacak senedine reeskont uygulayan borç senedine de uygular',
+            'E': 'Reeskont uygulaması bankalara özgü değildir',
         },
         'C',
-        "m. 281'e göre vadesi gelmemiş senetli alacaklar değerleme günü kıymetine irca olunabilir. m. 285'e göre **alacak senetlerini değerleme gününün kıymetine irca eden mükellefler, borç senetlerini de aynı şekilde işleme tabi tutmak zorundadır**.",
-        '213 sayılı Vergi Usul Kanunu m. 281, 285',
+        'VUK m. 281: vadesi gelmemiş senetli alacaklar değerleme günü kıymetine irca olunabilir. VUK m. 285: alacak senetlerini değerleme gününün kıymetine irca eden mükellefler borç senetlerini de aynı şekilde işleme tabi tutmak zorundadır; iki taraf bağımsız değerlenemez.',
     ),
     # düzey 2
     '0014': patch(
@@ -373,17 +370,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        'Bir lokanta işletmecisi tadilat nedeniyle işyerini üç ay kapatmış, bu sürede hiç satış yapmamıştır. Aşağıdakilerden hangisi doğrudur?',
+        "Bir lokanta işletmecisi tadilat nedeniyle işyerini üç ay kapatmış, bu sürede hiç satış yapmamıştır.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yeniden açılışta işe başlama bildirimi verilir',
-            'B': 'Faaliyet durdurulduğu için defter tutma ödevi kalkar',
-            'C': 'İşi bırakma sayılır; bir ay içinde bildirilir',
-            'D': 'Geçici durdurma olduğundan işi bırakma sayılmaz',
-            'E': "Mükellefiyet re'sen terkin edilir",
+            'A': 'İşi bırakma muamelelerin tamamen durdurulmasıdır',
+            'B': 'Geçici durdurma işi bırakma sayılmaz',
+            'C': 'Tadilat nedeniyle kapatma geçici bir durdurmadır',
+            'D': 'Üç aylık kapatma işi bırakma sayılır',
+            'E': 'Mükellefiyet bu nedenle terkin edilmez',
         },
         'D',
-        "m. 161'e göre işi bırakma, vergiye tabi olmayı gerektiren muamelelerin **tamamen durdurulması ve sona ermesidir**; **işlerin herhangi bir sebeple geçici bir süre için durdurulması işi bırakma sayılmaz**.",
-        '213 sayılı Vergi Usul Kanunu m. 161',
+        'VUK m. 161: işi bırakma, vergiye tabi olmayı gerektiren muamelelerin tamamen durdurulması ve sona ermesidir; işlerin herhangi bir sebeple geçici bir süre için durdurulması işi bırakma sayılmaz. Tadilat nedeniyle kapatma geçici durdurmadır.',
     ),
     # düzey 2
     '0026': patch(
@@ -597,17 +593,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Bir mükellefin 2024 hesap dönemi daha önce incelenmiş ve matrah farkı bulunmuştur. Aynı dönem için yeni bir ihbar üzerine ikinci kez inceleme yapılmak istenmektedir. Aşağıdakilerden hangisi doğrudur?',
+        "Bir mükellefin 2024 hesap dönemi daha önce incelenmiş ve matrah farkı bulunmuştur. Aynı dönem için yeni bir ihbar üzerine ikinci kez inceleme yapılmak istenmektedir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yeniden inceleme için mahkeme kararı gerekir',
-            'B': 'İkinci inceleme mükellefin iznine bağlıdır',
-            'C': 'Aynı dönem, önceki rapor kesinleştiği için tarh zamanaşımı içinde ikinci kez incelenemez',
-            'D': 'Önceki raporda değinilmeyen hesaplarla sınırlı inceleme yapılır',
-            'E': 'Önceki inceleme, yeniden inceleme ve ikmal tarhiyatına engel değildir',
+            'A': 'İnceleme tarh zamanaşımı sonuna kadar yapılabilir',
+            'B': 'Önceki inceleme yeniden incelemeye engel değildir',
+            'C': 'Gerekirse ikmal tarhiyatı yapılabilir',
+            'D': "Re'sen takdir de yeniden incelemeye engel değildir",
+            'E': 'Yeniden inceleme mükellefin iznine bağlıdır',
         },
         'E',
-        "m. 138'e göre inceleme, tarh zamanaşımı süresi sonuna kadar her zaman yapılabilir ve **evvelce inceleme yapılmış veya matrahın re'sen takdir edilmiş olması yeniden inceleme yapılmasına ve gerekirse tarhiyatın ikmaline mani değildir**.",
-        '213 sayılı Vergi Usul Kanunu m. 138',
+        "VUK m. 138: inceleme, tarh zamanaşımı süresi sonuna kadar her zaman yapılabilir; evvelce inceleme yapılmış veya matrahın re'sen takdir edilmiş olması yeniden inceleme yapılmasına ve gerekirse tarhiyatın ikmaline mani değildir. Mükellefin izni aranmaz.",
     ),
     # düzey 3
     '0042': patch(
@@ -625,17 +620,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        'Bir ihbar üzerine mükellefin işyerinde arama yapılmış, ancak ihbarın doğru olmadığı anlaşılmıştır. Mükellef ihbarı yapanın adını öğrenmek istemektedir. Aşağıdakilerden hangisi doğrudur?',
+        "Bir ihbar üzerine mükellefin işyerinde arama yapılmış, ancak ihbarın doğru olmadığı anlaşılmıştır. Mükellef ihbarı yapanın adını öğrenmek istemektedir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Muhbirin adı istihbarat arşivinde saklanır ve verilmez',
-            'B': 'Mükellef isterse vergi dairesi muhbirin adını bildirir',
-            'C': 'Muhbirin adı mahkeme kararıyla açıklanabilir',
-            'D': 'Muhbirin kimliği vergi mahremiyeti gereği gizli tutulur',
-            'E': 'Muhbir adı ancak ceza soruşturmasında açıklanır',
+            'A': 'Arama sulh ceza hâkiminin kararıyla yapılır',
+            'B': 'Muhbirin kimliği vergi mahremiyeti gereği gizli tutulur',
+            'C': 'Arama için yetkilinin gerekçeli istemi gerekir',
+            'D': 'İhbar sabit olmazsa muhbirin adı istenebilir',
+            'E': 'Vergi dairesi muhbirin adını bildirmeye mecburdur',
         },
         'B',
-        "m. 142'ye göre arama, vergi incelemesine yetkili olanın gerekçeli yazıyla istemi ve **sulh ceza hâkiminin kararıyla** yapılır. **İhbar üzerine yapılan aramada ihbar sabit olmazsa**, nezdinde arama yapılan kimse muhbirin adının bildirilmesini isteyebilir ve **vergi dairesi muhbirin ismini bildirmeye mecburdur**.",
-        '213 sayılı Vergi Usul Kanunu m. 142',
+        'VUK m. 142: arama, vergi incelemesine yetkili olanın gerekçeli yazıyla istemi ve sulh ceza hâkiminin kararıyla yapılır. İhbar üzerine yapılan aramada ihbar sabit olmazsa, nezdinde arama yapılan kimse muhbirin adının bildirilmesini isteyebilir ve vergi dairesi muhbirin ismini bildirmeye mecburdur.',
     ),
     # düzey 2
     '0044': patch(

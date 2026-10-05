@@ -191,17 +191,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Mülkiyeti ihtilaflı bir araziye ait arazi vergisini, mutasarrıfı olmayan bir kişi ödemiştir. Mülkiyet davası ödeme yapan aleyhine sonuçlanmıştır. Ödenen vergi hakkında aşağıdakilerden hangisi doğrudur?',
+        "Mülkiyeti ihtilaflı bir araziye ait arazi vergisini, mutasarrıfı olmayan bir kişi ödemiştir. Mülkiyet davası ödeme yapan aleyhine sonuçlanmıştır.\n\nEmlak Vergisi Kanunu'na göre ödenen vergiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İade edilmez',
-            'B': 'Başvuru aranmadan faiziyle birlikte iade edilir',
-            'C': 'Karar tarihinden itibaren bir yıl içinde başvurulursa iade edilir',
-            'D': 'Kazanan tarafın borcuna mahsup edilir',
-            'E': 'Ödeme tarihinden itibaren beş yıl içinde başvurulursa zamanaşımı içinde iade edilir',
+            'A': 'Ödenen vergi iade edilebilir',
+            'B': 'İade için başvuru gerekir',
+            'C': 'Vergi başvuru aranmadan faiziyle iade edilir',
+            'D': 'Başvuru süresi karar tarihinden başlar',
+            'E': 'Başvuru süresi bir yıldır',
         },
         'C',
-        "m. 13/3'e göre mülkiyeti ihtilaflı arazi için mutasarrıfı bulunmayan kişilerce ödenen arazi vergileri, ihtilafın ödeme yapan aleyhine sonuçlanması hâlinde, ilgililerin **karar tarihinden itibaren bir yıl içinde** başvurmaları şartıyla ret ve iade olunur.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 13/3',
+        'EVK m. 13/3: mülkiyeti ihtilaflı arazi için mutasarrıfı bulunmayan kişilerce ödenen arazi vergileri, ihtilafın ödeme yapan aleyhine sonuçlanması hâlinde, ilgililerin karar tarihinden itibaren bir yıl içinde başvurmaları şartıyla ret ve iade olunur. İade kendiliğinden yapılmaz.',
     ),
     # düzey 3
     '0013': patch(
@@ -261,17 +260,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0017': patch(
-        'Bir mükellefin binası yıllarca bildirim dışı kalmış ve belediye bu durumu 2026 yılında öğrenmiştir. Bu binanın vergi ve cezalarında zamanaşımı ne zaman başlar?',
+        "Bir mükellefin binası yıllarca bildirim dışı kalmış ve belediye bu durumu 2026 yılında öğrenmiştir.\n\nEmlak Vergisi Kanunu'na göre bu binanın vergi ve cezalarında zamanaşımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Belediyenin öğrendiği gün',
-            'B': 'Dört yıllık takdir döneminin başında',
-            'C': 'Binanın inşa edildiği yılı izleyen yıl başında',
-            'D': '1 Ocak 2027',
-            'E': '1 Ocak 2026',
+            'A': 'Zamanaşımı idarenin öğrendiği tarihi izleyen yıl başlar',
+            'B': "Bu olayda zamanaşımı 1 Ocak 2027'de başlar",
+            'C': 'Kural bildirim dışı kalan bina ve araziye ilişkindir',
+            'D': 'Zamanaşımı binanın inşa edildiği yılı izleyen yıl başlar',
+            'E': 'Kural vergi ile birlikte cezalar için de geçerlidir',
         },
         'D',
-        "m. 40'a göre **bildirim dışı kalan bina ve arazinin vergi ve cezalarında zamanaşımı, bildirim dışı bırakıldığının idarece öğrenildiği tarihi takip eden yılın başından** itibaren başlar. Öğrenme 2026'da olduğundan zamanaşımı **1 Ocak 2027**'de başlar.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 40',
+        "EVK m. 40: bildirim dışı kalan bina ve arazinin vergi ve cezalarında zamanaşımı, bildirim dışı bırakıldığının idarece öğrenildiği tarihi takip eden yılın başından itibaren başlar. Öğrenme 2026'da olduğundan zamanaşımı 1 Ocak 2027'de başlar; inşa tarihi esas alınmaz.",
     ),
     # düzey 3
     '0018': patch(
@@ -485,17 +483,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0033': patch(
-        'Bina ve arazi vergileriyle ilgili yeni bir muaflık nasıl düzenlenebilir?',
+        "Bina ve arazi vergileriyle ilgili yeni bir muaflık getirilmesi düşünülmektedir.\n\nEmlak Vergisi Kanunu'na göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Herhangi bir özel kanunla',
-            'B': 'Valilik genelgesiyle',
-            'C': 'Belediye meclisi kararıyla',
-            'D': "Emlak Vergisi Kanunu'na hüküm eklenerek",
-            'E': 'Maliye Bakanlığı tebliğiyle',
+            'A': 'Muaflık bu Kanuna hüküm eklenerek düzenlenir',
+            'B': 'Muaflık bu Kanunda değişiklik yapılarak düzenlenebilir',
+            'C': 'Özel kanunlardaki muaflıklar kaldırılmıştır',
+            'D': 'Tebliğle muaflık getirilebilir',
+            'E': 'Belediye meclisi kararıyla muaflık getirilemez',
         },
         'D',
-        "m. 22'ye göre bina ve arazi vergileriyle ilgili **muaflık ve istisna hükümleri bu Kanuna eklenmek veya bu Kanunda değişiklik yapılmak suretiyle** düzenlenir; özel kanunlardaki muaflıklar m. 41 uyarınca kaldırılmıştır.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 22',
+        'EVK m. 22: bina ve arazi vergileriyle ilgili muaflık ve istisna hükümleri bu Kanuna eklenmek veya bu Kanunda değişiklik yapılmak suretiyle düzenlenir; özel kanunlardaki muaflıklar m. 41 uyarınca kaldırılmıştır. Tebliğ ya da meclis kararıyla muaflık getirilemez.',
     ),
     # düzey 3
     '0034': patch(
@@ -513,17 +510,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Emlak vergisi borcu bulunan bir taşınmazın tapuda devri hangi durumda yapılabilir?',
+        "Emlak vergisi borcu bulunan bir taşınmazın tapuda devri söz konusudur.\n\nEmlak Vergisi Kanunu'na göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Taraflar borcu sonra ödemeyi taahhüt ederse',
-            'B': 'Mirasçılara intikalinde',
-            'C': 'Alıcı borcu üstlendiğini beyan ederse',
-            'D': 'Belediye başkanı yazılı izin verirse',
-            'E': 'Satış bedeli borçtan yüksekse',
+            'A': 'Borç bulunan taşınmazın devir ve ferağı kural olarak yapılmaz',
+            'B': 'Alıcının borcu üstlendiğini beyan etmesi devre imkân verir',
+            'C': 'Mirasçılara intikalde bu yasak uygulanmaz',
+            'D': 'Mahkeme kararıyla devirde bu yasak uygulanmaz',
+            'E': 'Cebri icra yoluyla satışta bu yasak uygulanmaz',
         },
         'B',
-        "7327 sayılı Kanunla değişen m. 30/8'e göre **emlak vergisi borcu bulunan bina ve arazinin devir ve ferağı yapılmaz**; ancak **miras, mahkeme kararı, cebri icra, kamulaştırma** ve özel kanunlarda öngörülen diğer hâller bu yasağın dışındadır.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 30/8',
+        'EVK m. 30/8 (7327 sayılı Kanunla değişik): emlak vergisi borcu bulunan bina ve arazinin devir ve ferağı yapılmaz; ancak miras, mahkeme kararı, cebri icra, kamulaştırma ve özel kanunlarda öngörülen diğer hâller bu yasağın dışındadır. Alıcının borcu üstlenmesi yasağı kaldırmaz.',
     ),
     # düzey 2
     '0036': patch(
@@ -541,17 +537,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0037': patch(
-        'Emlak vergisi bildirimini süresinde vermeyen mükellef hakkında aşağıdakilerden hangisi uygulanır?',
+        "Emlak vergisi bildirimini süresinde vermeyen bir mükellef bulunmaktadır.\n\nEmlak Vergisi Kanunu'na göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bina vergiden muaf sayılır',
-            'B': 'Mükellefiyet başlamaz',
-            'C': 'Vergi mükellefin sonraki beyanına bırakılır',
-            'D': 'Vergi bir yıl ertelenir',
-            'E': 'Vergi idarece tarh edilir',
+            'A': 'Vergi idarece tarh edilir',
+            'B': 'Her yılın vergi değeri kanundaki esaslara göre hesaplanır',
+            'C': 'Bildirim yapılmaması mükellefiyeti ortadan kaldırmaz',
+            'D': 'Vergi mükellefin sonraki beyanına bırakılmaz',
+            'E': 'Bildirimi yapılmayan bina vergiden muaf sayılır',
         },
         'E',
-        "m. 32'ye göre bildirimin süresinde verilmemesi hâlinde **vergi idarece tarh edilir**; idarece tarhiyatta her yıla ilişkin vergi değeri m. 29 dikkate alınarak hesaplanır.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 32',
+        'EVK m. 32: bildirimin süresinde verilmemesi hâlinde vergi idarece tarh edilir; idarece tarhiyatta her yıla ilişkin vergi değeri m. 29 dikkate alınarak hesaplanır. Bildirim yapılmaması mükellefiyeti ortadan kaldırmaz ve muaflık doğurmaz.',
     ),
     # düzey 3
     '0038': patch(
@@ -597,17 +592,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "Bir dairenin mülkiyeti A'ya, bu daire üzerindeki intifa hakkı ise B'ye aittir. Dairenin bina vergisini kim öder?",
+        "Bir dairenin mülkiyeti A'ya, bu daire üzerindeki intifa hakkı ise B'ye aittir.\n\nEmlak Vergisi Kanunu'na göre bina vergisinin mükellefiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İntifa hakkı sahibi B',
-            'B': 'A ile B müteselsilen',
-            'C': 'Malik A',
-            'D': 'A ile B yarı yarıya',
-            'E': 'Daireyi kullanan kiracı',
+            'A': 'Vergiyi malik A ile intifa hakkı sahibi B müteselsilen öder',
+            'B': 'Bina vergisini kural olarak bina maliki öder',
+            'C': 'İntifa hakkı varsa vergiyi intifa hakkı sahibi öder',
+            'D': "Bu olayda mükellef intifa hakkı sahibi B'dir",
+            'E': 'Daireyi kullanan kiracı vergi mükellefi değildir',
         },
         'A',
-        "m. 3'e göre bina vergisini **binanın maliki, varsa intifa hakkı sahibi**, her ikisi de yoksa binaya malik gibi tasarruf edenler öder. İntifa hakkı bulunduğundan mükellef B'dir.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 3',
+        "EVK m. 3: bina vergisini binanın maliki, varsa intifa hakkı sahibi, her ikisi de yoksa binaya malik gibi tasarruf edenler öder. İntifa hakkı bulunduğundan mükellef B'dir; malik ile müteselsil sorumluluk ya da kiracının mükellefiyeti söz konusu değildir.",
     ),
     # düzey 3
     '0042': patch(
@@ -709,17 +703,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        "Emlak Vergisi Kanunu'na göre belediye sınırları içinde belediyece parsellenmiş arazi, arazi vergisi bakımından nasıl nitelendirilir?",
+        "Emlak Vergisi Kanunu'na göre arsa ve arazinin nitelendirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tarım arazisi sayılır',
-            'B': 'Cumhurbaşkanı kararıyla arsa sayılabilir',
-            'C': 'Arsa sayılır',
-            'D': 'Vergi dışı kalır',
-            'E': 'Bina sayılır',
+            'A': 'Belediye sınırları içinde belediyece parsellenmiş arazi arsa sayılır',
+            'B': 'Parsellenmemiş araziden arsa sayılacaklar Cumhurbaşkanınca belirlenir',
+            'C': 'Belediyece parsellenmiş arazi tarım arazisi sayılır',
+            'D': 'Arsa ve araziler arazi vergisine tabidir',
+            'E': 'Arsa sayılma kuralı belediye sınırları içindeki araziye ilişkindir',
         },
         'C',
-        "m. 12'ye göre **belediye sınırları içinde belediyece parsellenmiş arazi arsa sayılır**. Parsellenmemiş araziden hangilerinin arsa sayılacağı ise Cumhurbaşkanı kararıyla belirlenir.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 12',
+        'EVK m. 12: belediye sınırları içinde belediyece parsellenmiş arazi arsa sayılır; parsellenmemiş araziden hangilerinin arsa sayılacağı Cumhurbaşkanı kararıyla belirlenir. Arsa ve araziler arazi vergisinin konusunu oluşturur.',
     ),
     # düzey 1
     '0050': patch(
@@ -793,17 +786,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        'Bir apartmanın zemin katındaki dairelerden biri mağazaya dönüştürülmüştür. Vergi değerini tadil eden sebep hangi bölüm için geçerlidir?',
+        "Bir apartmanın zemin katındaki dairelerden biri mağazaya dönüştürülmüştür.\n\nEmlak Vergisi Kanunu'na göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Apartmanın arsası için',
-            'B': 'Mağazaya dönüştürülen daire için',
-            'C': 'Zemin kattaki bütün daireler için',
-            'D': 'Apartmanın tamamı için',
-            'E': 'Mağazanın bitişiğindeki daireler için',
+            'A': 'Kullanış tarzının değişmesi vergi değerini tadil eder',
+            'B': 'Tadil tüm apartmana uygulanır',
+            'C': 'Bu hükmün uygulanmasında her daire bir bina sayılır',
+            'D': 'Tadil sebebi kullanış tarzı değişen daire için geçerlidir',
+            'E': 'Daireyi mağazaya dönüştürmek tadil sebebidir',
         },
         'B',
-        "m. 33/3'e göre bir binanın kullanış tarzının değiştirilmesi veya ikamete mahsus kısımların dükkân, mağaza gibi mahallere dönüştürülmesi vergi değerini tadil eder. Bu hükmün uygulanmasında **bir apartmanın her dairesi bir bina sayılır** ve tadil sebebi **kullanış tarzı değişen daire** için geçerli olur.",
-        '1319 sayılı Emlak Vergisi Kanunu m. 33/3',
+        'EVK m. 33/3: bir binanın kullanış tarzının değiştirilmesi veya ikamete mahsus kısımların dükkân, mağaza gibi mahallere dönüştürülmesi vergi değerini tadil eder. Bu hükmün uygulanmasında bir apartmanın her dairesi bir bina sayılır ve tadil sebebi kullanış tarzı değişen daire için geçerli olur.',
     ),
     # düzey 2
     '0056': patch(

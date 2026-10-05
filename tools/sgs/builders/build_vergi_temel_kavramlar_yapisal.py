@@ -93,45 +93,42 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        "Vergi incelemesinde, bir mükellefin piyasa değeri yaklaşık 1.000.000 ₺ olan bir iş makinesini tanıdığı birine 100.000 ₺'ye sattığını beyan ettiği görülmüştür. Mükellef bedelin gerçekten bu olduğunu ileri sürmektedir. İspat yükü kime aittir?",
+        "Vergi incelemesinde, bir mükellefin piyasa değeri yaklaşık 1.000.000 ₺ olan bir iş makinesini tanıdığı birine 100.000 ₺'ye sattığını beyan ettiği görülmüştür. Mükellef bedelin gerçekten bu olduğunu ileri sürmektedir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Vergi idaresine',
-            'B': 'Değeri belirleyecek olan takdir komisyonuna',
-            'C': 'Vergi mahkemesine',
-            'D': 'Makineyi satın alan kişiye',
-            'E': 'Olağan dışı durumu iddia eden mükellefe',
+            'A': 'Piyasa değerinin çok altında satış olağan dışı bir durumdur',
+            'B': 'Olağan dışı durumu iddia eden ispat yükünü taşır',
+            'C': 'Vergi idaresi mükellefin beyanıyla bağlı değildir',
+            'D': 'İspat için yemin dışındaki deliller kullanılabilir',
+            'E': 'İspat yükü vergi idaresine aittir',
         },
         'E',
-        "VUK m. 3/B'ye göre vergilendirmede olayın gerçek mahiyeti esastır ve **iktisadi, ticari ve teknik icaplara uymayan veya olayın özelliğine göre normal ve mutat olmayan bir durumun iddia olunması hâlinde ispat külfeti bunu iddia eden tarafa** aittir. Piyasa değerinin onda birine satış olağan dışı olduğundan ispat mükellefe düşer.",
-        '213 sayılı VUK m. 3/B',
+        'VUK m. 3/B: iktisadi, ticari ve teknik icaplara uymayan veya olayın özelliğine göre normal ve mutat olmayan bir durumun iddia olunması hâlinde ispat külfeti bunu iddia eden tarafa aittir; ispatta yemin hariç her türlü delil kullanılabilir. Piyasa değerinin onda birine satış olağan dışı olduğundan ispat yükü mükellefe düşer.',
     ),
     # düzey 2
     '0006': patch(
-        'Bir işyeri kira sözleşmesinde, emlak vergisinin kiracı tarafından ödeneceği kararlaştırılmıştır. Vergi süresinde ödenmemiştir. Vergi dairesi vergiyi kimden aramalıdır?',
+        "Bir işyeri kira sözleşmesinde, emlak vergisinin kiracı tarafından ödeneceği kararlaştırılmıştır. Vergi süresinde ödenmemiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Mükellef olan mal sahibinden',
-            'B': 'Sözleşmeyi onaylayan noterden',
-            'C': 'Sözleşme gereği kiracıdan',
-            'D': 'Kiracı ile mal sahibinden yarı yarıya',
-            'E': 'Kiracının kefilinden',
+            'A': 'Vergi dairesi vergiyi sözleşme gereği kiracıdan arar',
+            'B': 'Mükellefiyete ilişkin özel sözleşmeler vergi dairesini bağlamaz',
+            'C': 'Emlak vergisinin mükellefi bina sahibidir',
+            'D': 'Kiracıyla yapılan anlaşma taraflar arasında hüküm doğurur',
+            'E': 'Vergi kanunlarıyla kabul edilen hâller saklıdır',
         },
         'A',
-        "VUK m. 8/3'e göre vergi kanunlarıyla kabul edilen hâller dışında **mükellefiyete veya vergi sorumluluğuna ilişkin özel sözleşmeler vergi dairelerini bağlamaz**. Emlak vergisinin mükellefi bina sahibidir; kiracıyla yapılan anlaşma yalnız taraflar arasında hüküm doğurur.",
-        '213 sayılı VUK m. 8',
+        'VUK m. 8/3: vergi kanunlarıyla kabul edilen hâller dışında mükellefiyete veya vergi sorumluluğuna ilişkin özel sözleşmeler vergi dairelerini bağlamaz. Emlak vergisinin mükellefi bina sahibidir; kiracıyla yapılan anlaşma yalnız taraflar arasında hüküm doğurur ve vergi mal sahibinden aranır.',
     ),
     # düzey 2
     '0007': patch(
-        'Kanunen yasak olan ruhsatsız bir faaliyetten kazanç elde eden kişinin vergisel durumu nedir?',
+        'Kanunen yasak olan ruhsatsız bir faaliyetten kazanç elde eden kişinin vergisel durumuyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Önce ruhsat alması şartıyla vergilenir',
-            'B': 'Faaliyet yasak olduğu için vergi doğmaz',
-            'C': 'Kazanç vergilenmez; faaliyet için ayrıca idari para cezası uygulanır',
-            'D': 'Mükellefiyeti doğar; faaliyetin yasak olması engel değildir',
-            'E': 'Kazanç müsadere edildiği için vergilenmez',
+            'A': 'Vergiyi doğuran olayın yasak olması mükellefiyeti kaldırmaz',
+            'B': 'Ruhsat alınmamış olması vergiyi ortadan kaldırmaz',
+            'C': 'Faaliyetin başka kanunlardaki yaptırımları ayrıca uygulanır',
+            'D': 'Faaliyet yasak olduğu için vergi doğmaz',
+            'E': 'Yasak faaliyetten elde edilen kazanç vergilendirilir',
         },
         'D',
-        "VUK m. 9/2'ye göre **vergiyi doğuran olayın kanunlarla yasak edilmiş bulunması mükellefiyeti ve vergi sorumluluğunu kaldırmaz**. Yasak faaliyetin başka kanunlardaki yaptırımları vergilendirmeye engel değildir.",
-        '213 sayılı VUK m. 9/2',
+        'VUK m. 9/2: vergiyi doğuran olayın kanunlarla yasak edilmiş bulunması mükellefiyeti ve vergi sorumluluğunu kaldırmaz. Yasak faaliyetin başka kanunlardaki yaptırımları ayrıca uygulanır ve vergilendirmeye engel değildir.',
     ),
     # düzey 3
     '0008': patch(
@@ -219,17 +216,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        "Bir vergi müfettişi, beş yıl önce boşandığı eşine ait işletmenin vergi incelemesiyle görevlendirilmiştir. VUK'a göre bu durumda aşağıdakilerden hangisi doğrudur?",
+        "Bir vergi müfettişi, beş yıl önce boşandığı eşine ait işletmenin vergi incelemesiyle görevlendirilmiştir.\n\nVUK'a göre inceleme ve takdir yasağıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Takdir işlemini yapamaz, incelemeyi yapabilir',
-            'B': 'Boşanma gerçekleştiği için incelemeyi yapabilir',
-            'C': 'Mükellef yazılı onay verirse ve grup başkanı uygun görürse yapabilir',
-            'D': 'İncelemeyi yapamaz; yasak boşanmış eşi de kapsar',
-            'E': 'Beş yıl geçtiği için yapabilir',
+            'A': 'Yasak inceleme elemanının kendisine ait işleri kapsar',
+            'B': 'Yasak nişanlıya ait işleri kapsar',
+            'C': 'Yasak belirli derecelere kadar hısımları kapsar',
+            'D': 'Mükellef yazılı onay verirse inceleme yapılabilir',
+            'E': 'Yasak temsilcisi olunan kişileri kapsar',
         },
         'D',
-        "VUK m. 6'ya göre m. 5'te sayılanlar kendilerine, nişanlılarına ve **boşanmış olsalar bile eşlerine** ait vergi inceleme ve takdir işleriyle uğraşamaz. Yasak ayrıca belirli derecelere kadar kan ve sıhri hısımları ile temsilcisi veya vekili olunan kişileri de kapsar.",
-        '213 sayılı VUK m. 6',
+        "VUK m. 6: m. 5'te sayılanlar kendilerine, nişanlılarına, boşanmış olsalar bile eşlerine, belirli derecelere kadar kan ve sıhri hısımlarına ve temsilcisi veya vekili oldukları kişilere ait vergi inceleme ve takdir işleriyle uğraşamaz. Mükellefin onayı yasağı kaldırmaz.",
     ),
     # düzey 2
     '0015': patch(
@@ -387,17 +383,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'On yaşındaki bir çocuk, mirasla edindiği dairelerden kira geliri elde etmektedir. Vergi hukuku bakımından aşağıdakilerden hangisi doğrudur?',
+        'On yaşındaki bir çocuk, mirasla edindiği dairelerden kira geliri elde etmektedir.\n\nVergi hukuku bakımından aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Çocuk mükelleftir; ödevlerini kanuni temsilcisi yerine getirir',
-            'B': 'Mükellef velisidir; çocuğun kira geliri velinin beyannamesinde gösterilir',
-            'C': 'Fiil ehliyeti olmadığı için mükellef değildir',
-            'D': 'Gelir vergiden istisna edilir',
-            'E': 'Mükellefiyet reşit olunca başlar',
+            'A': 'Mükellef velidir; gelir velinin beyannamesinde gösterilir',
+            'B': 'Mükellefiyet için kanuni ehliyet şart değildir',
+            'C': 'Çocuğun ödevlerini kanuni temsilcisi yerine getirir',
+            'D': 'Kira geliri çocuğun kendi geliridir',
+            'E': 'Mükellefiyetin başlaması reşit olmayı beklemez',
         },
         'A',
-        "VUK m. 9'a göre **mükellefiyet ve vergi sorumluluğu için kanuni ehliyet şart değildir**; çocuk mükelleftir. m. 10'a göre küçüklerin mükellef olması hâlinde bunlara düşen ödevler **kanuni temsilcileri** tarafından yerine getirilir.",
-        '213 sayılı VUK m. 9-10',
+        'VUK m. 9: mükellefiyet ve vergi sorumluluğu için kanuni ehliyet şart değildir; çocuk kendi kira gelirinin mükellefidir. VUK m. 10: küçüklerin mükellef olması hâlinde bunlara düşen ödevler kanuni temsilcileri tarafından yerine getirilir; gelir velinin beyannamesine eklenmez.',
     ),
     # düzey 3
     '0027': patch(
@@ -541,17 +536,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Yabancı diplomatların gelir vergisinden muaf olması ile konut kira gelirinin belli tutarının gelir vergisinden istisna edilmesi arasındaki fark aşağıdakilerden hangisidir?',
+        'Yabancı diplomatların gelir vergisinden muaf olması ve konut kira gelirinin belli tutarının gelir vergisinden istisna edilmesi örnekleri verilmiştir.\n\nMuafiyet ve istisna ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Muafiyet kişiye, istisna vergi konusuna ilişkindir',
-            'B': 'Aralarında hukuki bir fark yoktur',
-            'C': 'Muafiyet geçicidir, istisna süreklidir',
-            'D': 'İkisi de kurumlar vergisine özgü kavramlardır',
-            'E': 'Muafiyet konuya, istisna kişiye ilişkindir',
+            'A': 'Muafiyet vergi konusuna, istisna kişiye ilişkindir',
+            'B': 'Diplomatların durumu bir muafiyettir',
+            'C': 'Konut kira gelirine tanınan indirim bir istisnadır',
+            'D': 'Muafiyet belirli kişilerin vergi dışında bırakılmasıdır',
+            'E': 'İstisna belirli konuların vergi dışında bırakılmasıdır',
         },
         'A',
-        '**Muafiyet**, vergi kanununun kapsamına giren belirli **kişilerin** vergi dışında bırakılmasıdır (diplomat muaflığı). **İstisna** ise belirli **konuların** (gelir, işlem veya değer) vergi dışında bırakılmasıdır (konut kira geliri istisnası).',
-        'Vergi hukuku temel kavramlar: muafiyet ve istisna',
+        'Muafiyet, vergi kanununun kapsamına giren belirli kişilerin vergi dışında bırakılmasıdır (diplomat muaflığı). İstisna ise belirli konuların (gelir, işlem veya değer) vergi dışında bırakılmasıdır (konut kira geliri istisnası). Yani muafiyet kişiye, istisna konuya ilişkindir.',
     ),
     # düzey 2
     '0038': patch(
@@ -611,31 +605,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'Anayasa Mahkemesi bir vergi kanunu hükmünü iptal etmiş ve iptalin yürürlüğe gireceği tarih için ayrıca karar vermemiştir. Bu iptal kararının sonuçlarına ilişkin aşağıdakilerden hangisi doğrudur?',
+        "Anayasa Mahkemesi bir vergi kanunu hükmünü iptal etmiştir.\n\nAnayasa'ya göre iptal kararlarının sonuçlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "Hüküm kararın Resmî Gazete'de yayımlandığı tarihte yürürlükten kalkar",
-            'B': 'Karar yayımından bir yıl sonra yürürlüğe girer',
-            'C': 'Hüküm yürürlüğe girdiği tarihten itibaren geçersiz sayılır',
-            'D': 'Hüküm, TBMM boşluğu dolduracak yeni düzenlemeyi yapıncaya kadar yürürlükte kalır',
-            'E': 'Karar davanın taraflarını bağlar, idareyi bağlamaz',
+            'A': 'İptal edilen hüküm yürürlüğe girdiği tarihten itibaren geçersiz sayılır',
+            'B': 'İptal kararları geriye yürümez',
+            'C': 'Mahkeme yürürlük tarihini ayrıca kararlaştırabilir',
+            'D': 'Ertelenen yürürlük süresi bir yılı geçemez',
+            'E': 'İptal kararları idareyi de bağlar',
         },
         'A',
-        "Anayasa m. 153'e göre kanun hükümleri **iptal kararlarının Resmî Gazete'de yayımlandığı tarihte yürürlükten kalkar**; Mahkeme gerekli hâllerde yürürlük tarihini ayrıca kararlaştırabilir, bu süre bir yılı geçemez. **İptal kararları geriye yürümez** ve yasama, yürütme, yargı organlarını, idareyi, gerçek ve tüzel kişileri bağlar.",
-        'Anayasa m. 153',
+        "Anayasa m. 153: kanun hükümleri iptal kararlarının Resmî Gazete'de yayımlandığı tarihte yürürlükten kalkar; Mahkeme gerekli hâllerde yürürlük tarihini ayrıca kararlaştırabilir, bu süre bir yılı geçemez. İptal kararları geriye yürümez ve yasama, yürütme, yargı organlarını, idareyi, gerçek ve tüzel kişileri bağlar.",
     ),
     # düzey 3
     '0043': patch(
-        'Bir mükellef, Gelir İdaresi Başkanlığından aldığı özelgeye uyarak beyanda bulunmuş; özelgenin hatalı olduğu sonradan anlaşılmış ve eksik vergi tespit edilmiştir. Bu durumda aşağıdakilerden hangisi doğrudur?',
+        "Bir mükellef, Gelir İdaresi Başkanlığından aldığı özelgeye uyarak beyanda bulunmuş; özelgenin hatalı olduğu sonradan anlaşılmış ve eksik vergi tespit edilmiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Vergi de ceza da aranmaz',
-            'B': 'Ceza kesilir, gecikme faizi hesaplanmaz',
-            'C': 'Vergi yarı oranda tarh edilir',
-            'D': 'Vergi tarh edilir ve vergi ziyaı cezası kesilir',
-            'E': 'Vergi tarh edilir; ceza kesilmez ve gecikme faizi hesaplanmaz',
+            'A': 'Kanunen doğması gereken vergi aranır',
+            'B': 'Vergi ziyaı cezası kesilmez',
+            'C': 'Gecikme faizi hesaplanmaz',
+            'D': 'Koruma, idarenin yazılı izahatına dayanır',
+            'E': 'Hatalı özelge nedeniyle vergi de aranmaz',
         },
         'E',
-        "VUK m. 369/1'e göre yetkili makamların mükellefin kendisine **yazı ile yanlış izahat vermiş olmaları** hâlinde **vergi cezası kesilmez ve gecikme faizi hesaplanmaz**. Kanunen doğması gereken vergi asıl olarak aranır; korunan yalnız mükellefin ceza ve faiz yönünden güvenidir.",
-        '213 sayılı VUK m. 369/1',
+        'VUK m. 369/1: yetkili makamların mükellefin kendisine yazı ile yanlış izahat vermiş olmaları hâlinde vergi cezası kesilmez ve gecikme faizi hesaplanmaz. Kanunen doğması gereken vergi ise asıl olarak aranır; korunan yalnız mükellefin ceza ve faiz yönünden güvenidir.',
     ),
     # düzey 2
     '0044': patch(

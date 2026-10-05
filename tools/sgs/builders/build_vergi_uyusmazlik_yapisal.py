@@ -135,17 +135,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Bir kira sözleşmesine ait damga vergisi cezasından hem kiraya veren hem kiracı sorumludur. Aşağıdakilerden hangisi doğrudur?',
+        "Bir kira sözleşmesine ait damga vergisi cezasından hem kiraya veren hem kiracı sorumludur.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Birden fazla sorumlu varsa ceza kesilmez',
-            'B': 'Müteselsilen sorumludurlar; birbirlerine rücu hakları saklıdır',
-            'C': 'Ceza yarı yarıya bölünür',
-            'D': 'Sadece sözleşmeyi son imzalayan sorumludur',
-            'E': 'Sadece kiraya veren sorumludur; kiracıya ödenmeyen kısım için başvurulur',
+            'A': 'Sorumlular müteselsilen sorumludur',
+            'B': 'Ceza sözleşmeyi son imzalayana kesilir',
+            'C': 'Sorumlulardan biri cezanın tamamını ödeyebilir',
+            'D': 'Ödeyen sorumlu diğerine rücu edebilir',
+            'E': 'Ceza sorumlular arasında bölünerek istenmez',
         },
         'B',
-        "m. 334'e göre damga vergisi uygulamalarında cezadan sorumlu olanlar birden fazla ise **birbirlerine müracaat hakları saklı kalmak üzere müteselsilen sorumlu** tutulur.",
-        '213 sayılı VUK m. 334',
+        'VUK m. 334: damga vergisi uygulamalarında cezadan sorumlu olanlar birden fazla ise birbirlerine müracaat hakları saklı kalmak üzere müteselsilen sorumlu tutulur. Ceza bölünmez; sorumlulardan birinden tamamı istenebilir ve ödeyen diğerine rücu eder.',
     ),
     # düzey 3
     '0009': patch(
@@ -177,17 +176,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        'Bir mükellef 2024 yılında fatura düzenlememiş (özel usulsüzlük) ve aynı yıl defterlerini tasdik ettirmemiştir (usulsüzlük). Bu fiiller için ceza en geç hangi yılların sonuna kadar kesilebilir?',
+        "Bir mükellef 2024 yılında fatura düzenlememiş (özel usulsüzlük) ve aynı yıl defterlerini tasdik ettirmemiştir (usulsüzlük).\n\nVUK'a göre ceza kesmede zamanaşımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İkisi için de 2026',
-            'B': 'Fatura için 2026, tasdik için 2029',
-            'C': 'Fatura için 2029, tasdik için 2026',
-            'D': 'İkisi için de 2029',
-            'E': 'Fatura için 2034, tasdik için 2027',
+            'A': 'Özel usulsüzlükte süre beş yıldır',
+            'B': 'Usulsüzlükte süre iki yıldır',
+            'C': 'Defter tasdiki için ceza 2029 sonuna kadar kesilebilir',
+            'D': 'Süre fiilin yapıldığı yılı izleyen yılbaşından başlar',
+            'E': 'Fatura için ceza 2029 sonuna kadar kesilebilir',
         },
         'C',
-        "m. 374'e göre **m. 353 kapsamındaki özel usulsüzlüklerde** usulsüzlüğün yapıldığı yılı takip eden yılın birinci gününden başlayarak **beş yıl** (2025-2029), **usulsüzlükte** ise **iki yıl** (2025-2026) geçtikten sonra ceza kesilmez.",
-        '213 sayılı VUK m. 374',
+        'VUK m. 374: m. 353 kapsamındaki özel usulsüzlüklerde usulsüzlüğün yapıldığı yılı takip eden yılın birinci gününden başlayarak beş yıl (2025-2029), usulsüzlükte ise iki yıl (2025-2026) geçtikten sonra ceza kesilmez. Defter tasdiki için süre 2026 sonunda dolar.',
     ),
     # düzey 2
     '0012': patch(
@@ -401,17 +399,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0027': patch(
-        'Bir limited şirketin müdürü, şirket adına verilmesi gereken beyannameyi vermemiş ve vergi ziyaı doğmuştur. Ceza hakkında aşağıdakilerden hangisi doğrudur?',
+        "Bir limited şirketin müdürü, şirket adına verilmesi gereken beyannameyi vermemiş ve vergi ziyaı doğmuştur.\n\nVUK'a göre ceza sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ceza doğrudan müdür adına kesilir',
-            'B': 'Tüzel kişilere vergi cezası kesilemez',
-            'C': 'Ceza, şirket ortakları adına sermaye payları oranında ayrı ayrı kesilir',
-            'D': 'Ceza şirket ile müdüre ayrı ayrı iki kez kesilir',
-            'E': 'Ceza şirket adına kesilir; tahsil edilemeyen kısım müdürden aranabilir',
+            'A': 'Vergi cezası tüzel kişi adına kesilir',
+            'B': 'Tahsil edilemeyen ceza kanuni temsilciden aranabilir',
+            'C': 'Ceza ortaklara sermaye payları oranında bölünmez',
+            'D': 'Ceza şirkete ve müdüre ayrı ayrı iki kez kesilmez',
+            'E': 'Ceza doğrudan müdür adına kesilir',
         },
         'E',
-        "m. 333'e göre tüzel kişilerin idaresinde vergi kanununa aykırı hareketlerden doğan **vergi cezaları tüzel kişiler adına kesilir**; kanuni temsilcilerin sorumluluğuna ilişkin **m. 10 hükmü vergi cezaları hakkında da uygulanır**, yani tüzel kişiden alınamayan ceza kanuni temsilcinin varlığından alınır.",
-        '213 sayılı VUK m. 333',
+        'VUK m. 333: tüzel kişilerin idaresinde vergi kanununa aykırı hareketlerden doğan vergi cezaları tüzel kişiler adına kesilir; kanuni temsilcilerin sorumluluğuna ilişkin m. 10 hükmü vergi cezaları hakkında da uygulanır, yani tüzel kişiden alınamayan ceza kanuni temsilcinin varlığından alınır.',
     ),
     # düzey 2
     '0028': patch(
@@ -569,31 +566,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        'Vergi mahkemesi mükellef lehine karar vermiş ve karar idareye tebliğ edilmiştir. İdare kararın gereğini en geç ne kadar sürede yerine getirmelidir?',
+        "Vergi mahkemesi mükellef lehine karar vermiş ve karar idareye tebliğ edilmiştir.\n\nİYUK'a göre kararın uygulanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Karar kesinleşinceye kadar bekleyerek',
-            'B': 'Tebliğden itibaren otuz gün içinde',
-            'C': 'Tebliğden itibaren on beş gün içinde',
-            'D': 'Bir sonraki mali yıl içinde',
-            'E': 'Tebliğden itibaren altmış gün içinde',
+            'A': 'İdare gecikmeksizin işlem tesis etmelidir',
+            'B': 'İdare kararın kesinleşmesini bekleyebilir',
+            'C': 'Süre kararın tebliğinden başlar',
+            'D': 'Süre otuz günü geçemez',
+            'E': 'Kural yürütmenin durdurulması kararları için de geçerlidir',
         },
         'B',
-        "İYUK m. 28/1'e göre idare, mahkemelerin esasa ve yürütmenin durdurulmasına ilişkin kararlarının gereğine göre gecikmeksizin işlem tesis etmeye mecburdur; bu süre **kararın idareye tebliğinden başlayarak otuz günü geçemez**.",
-        '2577 sayılı İYUK m. 28',
+        'İYUK m. 28/1: idare, mahkemelerin esasa ve yürütmenin durdurulmasına ilişkin kararlarının gereğine göre gecikmeksizin işlem tesis etmeye mecburdur; bu süre kararın idareye tebliğinden başlayarak otuz günü geçemez. Kesinleşmenin beklenmesi söz konusu değildir.',
     ),
     # düzey 3
     '0040': patch(
-        'Mükellef lehine verilen ve istinaf incelemesinden geçmeden kesinleşen bir vergi mahkemesi kararı, Danıştay Başsavcısının başvurusu üzerine kanun yararına bozulmuştur. Mükellefin durumu hakkında aşağıdakilerden hangisi doğrudur?',
+        'Mükellef lehine verilen ve istinaf incelemesinden geçmeden kesinleşen bir vergi mahkemesi kararı, Danıştay Başsavcısının başvurusu üzerine kanun yararına bozulmuştur.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Mükellefin kazandığı hak ortadan kalkar',
-            'B': 'Mükellef bozma kararına itiraz etmelidir',
-            'C': 'Bozma, kesinleşmiş kararın hukuki sonuçlarını kaldırmaz',
-            'D': 'Vergi yeniden tarh edilir',
-            'E': 'Dava yeniden görülür',
+            'A': 'Başsavcı kesinleşmiş kararı kanun yararına temyiz edebilir',
+            'B': 'Bozma kesinleşmiş kararın hukuki sonuçlarını kaldırmaz',
+            'C': 'Bozma üzerine vergi yeniden tarh edilir',
+            'D': 'Mükellefin kazandığı hak korunur',
+            'E': 'Başvuru ilgili bakanlığın lüzum göstermesi üzerine de yapılabilir',
         },
         'C',
-        "İYUK m. 51'e göre kesin olarak verilen veya istinaf ya da temyizden geçmeden kesinleşen kararlar, ilgili bakanlıkların göstereceği lüzum üzerine veya kendiliğinden **Başsavcı tarafından kanun yararına temyiz** edilebilir; **bu bozma kararı, daha önce kesinleşmiş kararın hukuki sonuçlarını kaldırmaz**.",
-        '2577 sayılı İYUK m. 51',
+        'İYUK m. 51: kesin olarak verilen veya istinaf ya da temyizden geçmeden kesinleşen kararlar, ilgili bakanlıkların göstereceği lüzum üzerine veya kendiliğinden Başsavcı tarafından kanun yararına temyiz edilebilir; bu bozma kararı daha önce kesinleşmiş kararın hukuki sonuçlarını kaldırmaz.',
     ),
     # düzey 3
     '0041': patch(
@@ -667,17 +662,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        'Kendisine izaha davet yazısı tebliğ edilen mükellef, davet konusu tespitle ilgili olarak pişmanlık dilekçesi vermiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Kendisine izaha davet yazısı tebliğ edilen mükellef, davet konusu tespitle ilgili olarak pişmanlık dilekçesi vermiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Pişmanlıktan yararlanır ve ceza kesilmez',
-            'B': 'Davet konusu tespit için pişmanlıktan yararlanamaz',
-            'C': 'Pişmanlık dilekçesi izaha daveti ortadan kaldırır',
-            'D': 'Hem izaha davet hem pişmanlık hükümleri birlikte uygulanır',
-            'E': 'Pişmanlık zammı yerine gecikme faizi uygulanır',
+            'A': "İzaha davet m. 370'te düzenlenmiştir",
+            'B': 'Pişmanlık dilekçesi izaha daveti ortadan kaldırır',
+            'C': 'Davet konusu tespit için pişmanlıktan yararlanılamaz',
+            'D': 'Sınırlama davet konusu tespitle ilgilidir',
+            'E': "Pişmanlık hükümleri m. 371'de düzenlenmiştir",
         },
         'B',
-        "m. 370/a'ya göre kendisine izaha davet yazısı tebliğ edilen mükellefler, **davet konusu tespitle sınırlı olarak m. 371'deki pişmanlık hükümlerinden yararlanamaz**.",
-        '213 sayılı VUK m. 370',
+        "VUK m. 370/a: kendisine izaha davet yazısı tebliğ edilen mükellefler, davet konusu tespitle sınırlı olarak m. 371'deki pişmanlık hükümlerinden yararlanamaz; pişmanlık dilekçesi izaha davetin sonuçlarını ortadan kaldırmaz.",
     ),
     # düzey 2
     '0047': patch(
@@ -709,31 +703,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        'Cumhuriyet başsavcılığı, bir mükellefin sahte belge kullandığını basın haberlerinden öğrenmiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Cumhuriyet başsavcılığı, bir mükellefin sahte belge kullandığını basın haberlerinden öğrenmiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Olayı vergi mahkemesine bildirmekle yetinir',
-            'B': 'Konuyu uzlaşma komisyonuna gönderir',
-            'C': 'Doğrudan kamu davası açar',
-            'D': 'Vergi dairesinden inceleme ister; dava inceleme sonucuna bağlıdır',
-            'E': 'Mükellefin yazılı rızasını alarak vergi incelemesini beklemeden soruşturma başlatır',
+            'A': 'Başsavcılık vergi dairesinden inceleme yapılmasını ister',
+            'B': 'Kamu davasının açılması inceleme sonucuna bağlıdır',
+            'C': 'İnceleme sonucu başsavcılığa bildirilir',
+            'D': 'Mükellefin rızası alınarak incelemeden önce dava açılır',
+            'E': 'Başsavcılık ilgili vergi dairesini haberdar eder',
         },
         'D',
-        "m. 367'ye göre m. 359'daki suçların işlendiğini sair suretlerle öğrenen Cumhuriyet başsavcılığı **hemen ilgili vergi dairesini haberdar ederek inceleme yapılmasını talep eder**; **kamu davasının açılması, inceleme neticesinin başsavcılığa bildirilmesine talik olunur**.",
-        '213 sayılı VUK m. 367',
+        "VUK m. 367: m. 359'daki suçların işlendiğini sair suretlerle öğrenen Cumhuriyet başsavcılığı hemen ilgili vergi dairesini haberdar ederek inceleme yapılmasını talep eder; kamu davasının açılması, inceleme neticesinin başsavcılığa bildirilmesine talik olunur. Mükellefin rızası bu sırayı değiştirmez.",
     ),
     # düzey 2
     '0050': patch(
-        'Hakkında vergi ziyaı cezası kesilen mükellef, ceza ödenmeden vefat etmiştir; mirasçılar mirası reddetmemiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Hakkında vergi ziyaı cezası kesilen mükellef, ceza ödenmeden vefat etmiştir; mirasçılar mirası reddetmemiştir.\n\nVUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ceza düşer; vergi aslı mirasçılardan aranabilir',
-            'B': 'Vergi aslı da ölümle düşer',
-            'C': 'Ceza ancak kesinleşmemişse düşer',
-            'D': 'Ceza ve vergi mirasçılardan aranır',
-            'E': 'Ceza yarı oranda mirasçılardan alınır',
+            'A': 'Ölümle vergi aslı da düşer',
+            'B': 'Ölüm hâlinde vergi cezası düşer',
+            'C': 'Vergi aslı mirası reddetmeyen mirasçılara geçer',
+            'D': 'Ceza mirasçılardan aranmaz',
+            'E': 'Mirası reddeden mirasçıya vergi borcu geçmez',
         },
         'A',
-        "m. 372'ye göre **ölüm hâlinde vergi cezası düşer**. Vergi borcu ise m. 12 uyarınca mirası reddetmemiş kanuni ve mansup mirasçılara geçer.",
-        '213 sayılı VUK m. 372',
+        'VUK m. 372: ölüm hâlinde vergi cezası düşer. Vergi borcu ise m. 12 uyarınca mirası reddetmemiş kanuni ve mansup mirasçılara geçer; mirası reddedenlere geçmez.',
     ),
     # düzey 2
     '0051': patch(
@@ -807,17 +799,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        'Bir vergi davasında mahkeme, tarafların dosyaya sunmadığı banka kayıtlarını ilgili bankadan istemiştir. Aşağıdakilerden hangisi doğrudur?',
+        "Bir vergi davasında mahkeme, tarafların dosyaya sunmadığı banka kayıtlarını ilgili bankadan istemiştir.\n\nİYUK'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Belgeler ancak bilirkişi aracılığıyla istenebilir',
-            'B': "Mahkeme gerekli bilgi ve belgeleri re'sen isteyebilir",
-            'C': 'Bu işlem için davacının onayı gerekir',
-            'D': 'Mahkeme ancak taraflarca sunulan delillerle bağlıdır',
-            'E': 'Mahkeme bu belgeleri isteyemez; dava reddedilir',
+            'A': "Mahkeme gerekli incelemeyi re'sen yapar",
+            'B': 'Belgeler ancak bilirkişi aracılığıyla istenebilir',
+            'C': 'Mahkeme ilgili diğer yerlerden belge isteyebilir',
+            'D': 'Mahkeme tarafların sunduğu delillerle sınırlı değildir',
+            'E': 'Belge istemek için davacının onayı gerekmez',
         },
         'B',
-        "İYUK m. 20'ye göre mahkemeler **bakmakta oldukları davalara ait her türlü incelemeyi kendiliğinden yapar**; lüzum gördükleri evrakın gönderilmesini ve bilgilerin verilmesini taraflardan ve **ilgili diğer yerlerden** isteyebilirler (re'sen araştırma ilkesi).",
-        '2577 sayılı İYUK m. 20',
+        "İYUK m. 20: mahkemeler bakmakta oldukları davalara ait her türlü incelemeyi kendiliğinden yapar; lüzum gördükleri evrakın gönderilmesini ve bilgilerin verilmesini taraflardan ve ilgili diğer yerlerden isteyebilirler (re'sen araştırma ilkesi). Bunun için bilirkişi aracılığı ya da tarafların onayı gerekmez.",
     ),
     # düzey 3
     '0057': patch(

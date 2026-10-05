@@ -163,17 +163,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        'Damga vergisi ödenmemiş bir sözleşmeyi bir işlem için bankaya ibraz eden kişinin sorumluluğu nedir?',
+        "Damga vergisi ödenmemiş bir sözleşme, bir işlem için bankaya ibraz edilmiştir.\n\nDamga Vergisi Kanunu'na göre ibraz edenin sorumluluğuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Mükellef olmadığı için sorumlu değildir',
-            'B': 'Banka ibrazı kabul ettiği için sorumluluk bankadadır',
-            'C': 'Vergiden değil, cezadan sorumludur',
-            'D': 'Vergi ve cezadan sorumludur; ödediklerini mükelleflerden isteyemez',
-            'E': 'Mükelleflere rücu hakkıyla vergi ve cezadan sorumludur',
+            'A': 'İbraz eden vergiden sorumludur',
+            'B': 'İbraz eden cezadan da sorumludur',
+            'C': 'İbraz edenin mükelleflere rücu hakkı vardır',
+            'D': 'Mükellef olmaması ibraz edenin sorumluluğunu kaldırmaz',
+            'E': 'Banka ibrazı kabul ettiği için sorumluluk bankaya geçer',
         },
         'E',
-        "m. 24'e göre vergiye tabi kâğıtların damga vergisinin ödenmemesinden veya noksan ödenmesinden doğan vergi ve cezadan, **mükelleflere rücu hakkı olmak üzere kâğıtları ibraz edenler** sorumludur.",
-        '488 sayılı Damga Vergisi Kanunu m. 24',
+        'DVK m. 24: vergiye tabi kâğıtların damga vergisinin ödenmemesinden veya noksan ödenmesinden doğan vergi ve cezadan, mükelleflere rücu hakkı olmak üzere kâğıtları ibraz edenler sorumludur; ibrazın kabul edilmesi sorumluluğu bankaya geçirmez.',
     ),
     # düzey 2
     '0011': patch(
@@ -317,31 +316,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        "İmzalanmış olmakla birlikte Damga Vergisi Kanunu'na ekli (1) sayılı tabloda yer almayan bir kâğıt hakkında aşağıdakilerden hangisi doğrudur?",
+        "İmzalanmış olmakla birlikte Damga Vergisi Kanunu'na ekli (1) sayılı tabloda yer almayan bir kâğıt bulunmaktadır.\n\nBu kâğıtla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Maktu vergiye tabidir',
-            'B': 'Damga vergisine tabi değildir',
-            'C': 'En yüksek nispi orana tabidir',
-            'D': 'Resmî daireye ibraz edilince nispi vergiye tabi olur',
-            'E': 'Vergisi emsal bedelle hesaplanır',
+            'A': 'Damga vergisinin konusu (1) sayılı tabloyla sınırlıdır',
+            'B': 'Tabloda yer almayan imzalı kâğıt maktu vergiye tabidir',
+            'C': 'Tabloda yazılı kâğıtlar damga vergisine tabidir',
+            'D': 'İmzalı olmak tek başına vergiyi doğurmaz',
+            'E': 'Bu kâğıt damga vergisine tabi değildir',
         },
         'B',
-        "m. 1/1'e göre **Kanuna ekli (1) sayılı tabloda yazılı kâğıtlar** damga vergisine tabidir. Damga vergisinin konusu tabloyla sınırlı olduğundan, imzalı olsa da tabloda yer almayan bir kâğıt vergiye tabi değildir.",
-        '488 sayılı Damga Vergisi Kanunu m. 1',
+        'DVK m. 1/1: Kanuna ekli (1) sayılı tabloda yazılı kâğıtlar damga vergisine tabidir. Verginin konusu tabloyla sınırlı olduğundan, imzalı olsa da tabloda yer almayan bir kâğıt nispi ya da maktu vergiye tabi değildir.',
     ),
     # düzey 3
     '0022': patch(
-        "Tarafların 'kira sözleşmesi' başlığıyla imzaladıkları bir kâğıtta, aslında taşınır bir malın mülkiyetinin bedel karşılığında kesin olarak devri düzenlenmiştir. Kâğıdın tabi olacağı vergi nasıl belirlenir?",
+        "Tarafların 'kira sözleşmesi' başlığıyla imzaladıkları bir kâğıtta, aslında taşınır bir malın mülkiyetinin bedel karşılığında kesin olarak devri düzenlenmiştir.\n\nDamga Vergisi Kanunu'na göre bu kâğıtla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Maktu vergi olarak',
-            'B': 'Her iki mahiyete göre ayrı ayrı',
-            'C': 'Kâğıdın başlığına, yani kira sözleşmesi olarak ve süreye göre kira bedeli üzerinden',
-            'D': 'Taraflarının seçeceği mahiyete göre',
-            'E': 'Kâğıdın içerdiği hükme, yani satış mahiyetine göre',
+            'A': 'Verginin tayininde kâğıdın mahiyetine bakılır',
+            'B': 'Şekli belirtilmemiş kâğıtlarda yazının içerdiği hükme bakılır',
+            'C': 'Kâğıda tarafların verdiği ad belirleyici değildir',
+            'D': 'Kâğıt satış mahiyetine göre vergilendirilir',
+            'E': 'Kâğıt başlığına göre kira sözleşmesi olarak vergilenir',
         },
         'E',
-        "m. 4'e göre bir kâğıdın tabi olacağı verginin tayini için **o kâğıdın mahiyetine** bakılır. Şekli kanunlarda belirtilmemiş kâğıtlarda **üzerlerindeki yazının içerdiği hüküm ve manaya** bakılır; başlığın kira sözleşmesi olması sonucu değiştirmez.",
-        '488 sayılı Damga Vergisi Kanunu m. 4',
+        'DVK m. 4: bir kâğıdın tabi olacağı verginin tayini için o kâğıdın mahiyetine bakılır; şekli kanunlarda belirtilmemiş kâğıtlarda üzerlerindeki yazının içerdiği hüküm ve manaya bakılır. Başlığın kira sözleşmesi olması sonucu değiştirmez; kâğıt satış olarak vergilenir.',
     ),
     # düzey 2
     '0023': patch(
@@ -611,17 +608,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'Damga vergisine tabi bir sözleşmenin süresini uzatmak için taraflar arasında yazışılan ve imzalanan mektup hakkında aşağıdakilerden hangisi doğrudur?',
+        "Damga vergisine tabi bir sözleşmenin süresini uzatmak için taraflar arasında yazışılan ve imzalanan bir mektup bulunmaktadır.\n\nDamga Vergisi Kanunu'na göre bu mektupla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Resmî daireye verilmedikçe vergilenmez',
-            'B': 'Asıl sözleşme vergilendiğinden vergilenmez',
-            'C': 'Postayla gönderilmişse vergilenmez',
-            'D': 'Damga vergisine tabidir',
-            'E': 'Mektup olduğu için vergi dışıdır',
+            'A': 'Sözleşmenin uzatılmasına ilişkin mektuplar vergiye tabidir',
+            'B': 'Sözleşmenin değiştirilmesine ilişkin mektuplar vergiye tabidir',
+            'C': 'Vergiye tabi kâğıtların yerini alan mektuplar vergiye tabidir',
+            'D': 'Mektup biçiminde olduğu için vergi dışıdır',
+            'E': 'Asıl sözleşmenin vergilenmiş olması mektubu vergi dışı bırakmaz',
         },
         'D',
-        "m. 2'ye göre vergiye tabi kâğıtlar mahiyetinde bulunan veya onların yerini alan mektup ve şerhlerle, bu kâğıtların hükümlerinin **yenilenmesine, uzatılmasına, değiştirilmesine, devrine veya bozulmasına** ilişkin mektup ve şerhler de damga vergisine tabidir.",
-        '488 sayılı Damga Vergisi Kanunu m. 2',
+        'DVK m. 2: vergiye tabi kâğıtlar mahiyetinde bulunan veya onların yerini alan mektup ve şerhlerle, bu kâğıtların hükümlerinin yenilenmesine, uzatılmasına, değiştirilmesine, devrine veya bozulmasına ilişkin mektup ve şerhler de damga vergisine tabidir.',
     ),
     # düzey 3
     '0043': patch(
@@ -639,17 +635,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        'Bir satış sözleşmesinde, taraflardan biri yükümlülüğünü yerine getirmezse karşı tarafa ödeyeceği cezai şart kararlaştırılmıştır. Cezai şart için damga vergisi alınır mı?',
+        "Bir satış sözleşmesinde, taraflardan biri yükümlülüğünü yerine getirmezse karşı tarafa ödeyeceği cezai şart kararlaştırılmıştır.\n\nDamga Vergisi Kanunu'na göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sözleşme bedelinin yarısı üzerinden alınır',
-            'B': 'Maktu vergi olarak alınır',
-            'C': 'Asıl sözleşmeye ek olarak ayrıca alınır',
-            'D': 'Ayrı bir sözleşmeye konu olmadıkça alınmaz',
-            'E': 'Cezai şart ödendiğinde alınır',
+            'A': 'Cezai şart ayrı bir sözleşmeye konu değilse vergi alınmaz',
+            'B': 'Aynı kural pey akçesi için de uygulanır',
+            'C': 'Aynı kural cayma tazminatı için de uygulanır',
+            'D': 'Cezai şart için asıl sözleşmeye ek olarak ayrıca vergi alınır',
+            'E': 'Asıl satış sözleşmesi vergiye tabidir',
         },
         'D',
-        "6728 sayılı Kanunla eklenen m. 6/4'e göre **pey akçesi, cayma tazminatı, ücret tevkifi, cezai şart** gibi bir sözleşmenin müeyyidesi mahiyetindeki taahhütlerden, **başlı başına bir sözleşmeye konu olmadıkça** damga vergisi alınmaz.",
-        '488 sayılı Damga Vergisi Kanunu m. 6/4',
+        'DVK m. 6/4 (6728 sayılı Kanunla eklenen): pey akçesi, cayma tazminatı, ücret tevkifi, cezai şart gibi bir sözleşmenin müeyyidesi mahiyetindeki taahhütlerden, başlı başına bir sözleşmeye konu olmadıkça damga vergisi alınmaz; asıl sözleşme ise vergilenir.',
     ),
     # düzey 2
     '0045': patch(
@@ -751,7 +746,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'Aşağıdaki kira sözleşmelerinden hangisi damga vergisine tabidir?',
+        'Aşağıdaki kira sözleşmelerinden hangisi damga vergisinden istisna edilenlerden biri değildir?',
         {
             'A': 'Sabit üretim araçlarına ait kira sözleşmesi',
             'B': 'Basit usule tabi terzinin iş yeri kira sözleşmesi',
@@ -849,17 +844,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        'Aynı kâğıtta, birbirinden tamamen bağımsız bir makine satış sözleşmesi ile bir depo kira sözleşmesi yer almaktadır. Damga vergisi nasıl alınır?',
+        "Aynı kâğıtta, birbirinden tamamen bağımsız bir makine satış sözleşmesi ile bir depo kira sözleşmesi yer almaktadır.\n\nDamga Vergisi Kanunu'na göre bu kâğıtla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kâğıt başına bir maktu vergi alınır',
-            'B': 'Her sözleşmeden ayrı ayrı vergi alınır',
-            'C': 'İki sözleşmenin ortalama oranı uygulanır',
-            'D': 'En yüksek vergiyi gerektiren sözleşmeden vergi alınır',
-            'E': 'Tutarı büyük olan sözleşmeden vergi alınır',
+            'A': 'Bağımsız akitlerin her birinden ayrı vergi alınır',
+            'B': 'Kâğıt başına tek bir maktu vergi alınır',
+            'C': 'Bağlı akitlerde en yüksek vergiyi gerektiren işlem esas alınır',
+            'D': 'Akitlerin aynı kâğıtta bulunması vergiyi birleştirmez',
+            'E': 'Bu kâğıtta iki ayrı vergi hesaplanır',
         },
         'B',
-        "m. 6/1'e göre bir kâğıtta **birbirinden tamamen ayrı birden fazla akit ve işlem** bulunduğunda bunların **her birinden ayrı ayrı** vergi alınır. Akit ve işlemler birbirine bağlı ve bir asıldan doğmuşsa vergi en yüksek vergiyi gerektiren işlem üzerinden alınır.",
-        '488 sayılı Damga Vergisi Kanunu m. 6/1',
+        'DVK m. 6/1: bir kâğıtta birbirinden tamamen ayrı birden fazla akit ve işlem bulunduğunda bunların her birinden ayrı ayrı vergi alınır. Akit ve işlemler birbirine bağlı ve bir asıldan doğmuşsa vergi en yüksek vergiyi gerektiren işlem üzerinden alınır.',
     ),
     # düzey 2
     '0060': patch(

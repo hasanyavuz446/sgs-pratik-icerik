@@ -93,17 +93,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0005': patch(
-        'Motorlu taşıtlar vergisine ilişkin yeni bir istisna nasıl getirilebilir?',
+        "Motorlu taşıtlar vergisine ilişkin yeni bir istisna getirilmesi düşünülmektedir.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Cumhurbaşkanı kararıyla',
-            'B': "Motorlu Taşıtlar Vergisi Kanunu'na hüküm eklenerek",
-            'C': 'Hazine ve Maliye Bakanlığı tebliğiyle',
-            'D': 'Herhangi bir özel kanunla',
-            'E': 'Valilik kararıyla',
+            'A': 'İstisna bu Kanuna hüküm eklenerek düzenlenir',
+            'B': 'Yeni istisna Cumhurbaşkanı kararıyla getirilebilir',
+            'C': 'İstisna bu Kanunda değişiklik yapılarak düzenlenebilir',
+            'D': 'Bu Kanunda yer almayan istisnalar hükümsüzdür',
+            'E': 'Uluslararası anlaşma hükümleri saklıdır',
         },
         'B',
-        'm. 4 son fıkrasına göre MTV ile ilgili muaflık ve istisna hükümleri **bu Kanuna hüküm eklenmek veya bu Kanunda değişiklik yapılmak** suretiyle düzenlenir; bu Kanunda yer almayan istisna ve muaflıklar hükümsüzdür. Uluslararası anlaşma hükümleri saklıdır.',
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 4 son fıkra',
+        'MTVK m. 4 son fıkrası: motorlu taşıtlar vergisiyle ilgili muaflık ve istisna hükümleri bu Kanuna hüküm eklenmek veya bu Kanunda değişiklik yapılmak suretiyle düzenlenir; bu Kanunda yer almayan istisna ve muaflıklar hükümsüzdür. Uluslararası anlaşma hükümleri saklıdır.',
     ),
     # düzey 2
     '0006': patch(
@@ -191,17 +190,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        "Tescilli bir otomobil 12 Ocak 2026'da satılacaktır. 2026 yılının birinci taksiti henüz ödenmemiştir. Bu taksit hakkında aşağıdakilerden hangisi doğrudur?",
+        "Tescilli bir otomobil 12 Ocak 2026'da satılacaktır. 2026 yılının birinci taksiti henüz ödenmemiştir.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre bu taksitle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ocak sonuna kadar alıcı tarafından ödenir',
-            'B': 'Temmuz taksitiyle birlikte ödenir',
-            'C': 'Satıştan sonra satıcı adına ödenir',
-            'D': 'Malik değişikliği yapılmadan önce ödenmelidir',
-            'E': 'Alıcı ile satıcı arasında yarı yarıya bölünür',
+            'A': 'Taksit ayında yapılan devirde vergi devirden önce ödenir',
+            'B': 'Ödeme malik değişikliği yapılmadan önce yapılır',
+            'C': 'Kural satış nedeniyle malik değişikliğine uygulanır',
+            'D': 'Birinci taksit satıştan sonra alıcı tarafından ödenir',
+            'E': 'Bu olayda birinci taksit devirden önce ödenmelidir',
         },
         'D',
-        "m. 9'a göre **devir ve temlik sebebiyle Ocak ve Temmuz ayları içinde** yapılacak kayıt ve tescil veya satış nedeniyle malik değişikliğinde vergi, **bu değişikliğin yapılmasından önce** ödenir.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 9',
+        'MTVK m. 9: devir ve temlik sebebiyle Ocak ve Temmuz ayları içinde yapılacak kayıt ve tescil veya satış nedeniyle malik değişikliğinde vergi, bu değişikliğin yapılmasından önce ödenir. Bu nedenle birinci taksitin alıcıya bırakılması mümkün değildir.',
     ),
     # düzey 1
     '0013': patch(
@@ -233,17 +231,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        'Bir noter, geçmiş yıllara ait motorlu taşıtlar vergisinin ödendiğini gösteren belgeyi aramadan otomobilin satışını yapmıştır. Ödenmemiş vergi hakkında aşağıdakilerden hangisi doğrudur?',
+        "Bir noter, geçmiş yıllara ait motorlu taşıtlar vergisinin ödendiğini gösteren belgeyi aramadan otomobilin satışını yapmıştır.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Noterin sorumluluğu disiplin cezasıyla sınırlıdır',
-            'B': 'Noter mükellefle birlikte müteselsilen sorumludur; ödediğini mükellefe rücu edebilir',
-            'C': 'Borç satışla birlikte alıcıya geçer',
-            'D': 'Noter vergiden mükellefle birlikte sorumludur ancak ödediği tutarı mükelleften isteyemez',
-            'E': 'Borç terkin edilir',
+            'A': 'Noter satıştan önce vergi ödendi belgesini aramalıdır',
+            'B': 'Ödenmemiş vergi borcu satışla alıcıya geçer',
+            'C': 'Belgeyi aramayan noter mükellefle müteselsilen sorumludur',
+            'D': 'Noter ödediği vergi için mükellefe rücu edebilir',
+            'E': 'Sorumluluk gecikme zammı ve cezaları da kapsar',
         },
         'B',
-        "m. 13/c'ye göre noterler, taşıtların satış veya devir işlemlerini yapmadan önce ödenmemiş MTV, gecikme zammı, gecikme faizi ve cezaların ödendiğini gösteren belgeyi aramak zorundadır. m. 13/e'ye göre bu zorunluluğa uymadan işlem yapanlar **mükelleflerle birlikte müteselsilen sorumludur** ve ödedikleri vergiler için **mükellefe rücu hakkına** sahiptir.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 13/c, e',
+        'MTVK m. 13/c-e: noterler taşıtların satış veya devir işlemlerini yapmadan önce ödenmemiş vergi, gecikme zammı, gecikme faizi ve cezaların ödendiğini gösteren belgeyi aramak zorundadır; bu zorunluluğa uymadan işlem yapanlar mükelleflerle birlikte müteselsilen sorumludur ve ödedikleri için mükellefe rücu edebilir. Geçmiş yıllar borcu alıcıya geçmez.',
     ),
     # düzey 2
     '0016': patch(
@@ -485,17 +482,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        "Yıllık motorlu taşıtlar vergisi 10.000 ₺ olan sıfır kilometre bir otomobil 20 Eylül'de ilk kez tescil edilmiştir. O yıl ödenecek vergi ve süresi hakkında aşağıdakilerden hangisi doğrudur?",
+        "Yıllık motorlu taşıtlar vergisi 10.000 ₺ olan sıfır kilometre bir otomobil 20 Eylül'de ilk kez tescil edilmiştir.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre o yılın vergisiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': '5.000 ₺, izleyen Ocak ayında',
-            'B': "5.000 ₺, 20 Ekim'e kadar",
-            'C': "10.000 ₺, 20 Ekim'e kadar",
-            'D': "2.500 ₺, 20 Ekim'e kadar",
-            'E': '10.000 ₺, izleyen yılın taksitleriyle',
+            'A': 'İlk altı aydan sonraki tescilde ikinci yarının vergisi doğar',
+            'B': 'Yıllık verginin tamamı tahakkuk eder',
+            'C': "Bu olayda ödenecek vergi 5.000 ₺'dir",
+            'D': 'Temmuz süresi geçtiğinden vergi bir ay içinde ödenir',
+            'E': "Ödeme süresi 20 Ekim'de dolar",
         },
         'B',
-        "m. 9'a göre **ilk altı aylık dönem geçtikten sonra** yapılan tescillerde **sadece ikinci altı aylık döneme ilişkin vergi** tahakkuk eder: 10.000 / 2 = 5.000 ₺. Temmuz taksit süresi geçmiş olduğundan bu tutar **tescilden itibaren bir ay içinde** (20 Ekim) ödenir.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 9',
+        "MTVK m. 9: ilk altı aylık dönem geçtikten sonra yapılan tescillerde sadece ikinci altı aylık döneme ilişkin vergi tahakkuk eder: 10.000 / 2 = 5.000 ₺. Temmuz taksit süresi geçmiş olduğundan bu tutar tescilden itibaren bir ay içinde, yani 20 Ekim'e kadar ödenir.",
     ),
     # düzey 1
     '0034': patch(
@@ -653,17 +649,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0045': patch(
-        "Karşılıklılık şartının bulunduğu bir ülkenin İzmir'deki fahri konsolosu adına tescilli otomobil hakkında aşağıdakilerden hangisi doğrudur?",
+        "Karşılıklılık şartının bulunduğu bir ülkenin İzmir'deki fahri konsolosu adına tescilli bir otomobil bulunmaktadır.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Dışişleri onayıyla istisna kapsamına girer',
-            'B': 'Görev süresince yarı oranda vergilenir',
-            'C': 'Vergiye tabidir; fahri konsoloslar istisna dışıdır',
-            'D': 'İstisna, taşıt resmî plakalıysa uygulanır',
-            'E': 'Karşılıklılık şartı sağlandığından konsolosluk taşıtı gibi istisnadır',
+            'A': 'Elçilik taşıtları karşılıklılık şartıyla istisnadır',
+            'B': 'Konsolosluk taşıtları karşılıklılık şartıyla istisnadır',
+            'C': 'Karşılıklılık varsa fahri konsolosun taşıtı da istisnadır',
+            'D': 'Fahri konsoloslar istisna kapsamı dışındadır',
+            'E': 'Bu istisnada karşılıklılık şartı aranır',
         },
         'C',
-        "m. 4/b'ye göre karşılıklı olmak şartıyla yabancı devletlerin elçilik ve konsoloslukları ile elçi, maslahatgüzar ve **konsoloslarına (fahri konsoloslar hariç)** ait taşıtlar istisnadır. Fahri konsolos adına tescilli otomobil vergiye tabidir.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 4/b',
+        'MTVK m. 4/b: karşılıklı olmak şartıyla yabancı devletlerin elçilik ve konsoloslukları ile elçi, maslahatgüzar ve konsoloslarına (fahri konsoloslar hariç) ait taşıtlar istisnadır. Fahri konsolos adına tescilli otomobil, karşılıklılık bulunsa da vergiye tabidir.',
     ),
     # düzey 2
     '0046': patch(
@@ -709,17 +704,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        "Bir yıl için ilan edilen yeniden değerleme oranı %40'tır. Cumhurbaşkanı motorlu taşıtlar vergisi tutarlarının artış oranını hangi aralıkta belirleyebilir?",
+        "Bir yıl için ilan edilen yeniden değerleme oranı %40'tır.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre vergi tutarlarının artırılmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': '%20 ile %50 arasında',
-            'B': '%32 ile %48 arasında',
-            'C': '%8 ile %60 arasında',
-            'D': '%20 ile %60 arasında',
-            'E': '%8 ile %40 arasında',
+            'A': 'Vergi kural olarak yeniden değerleme oranında artırılır',
+            'B': 'Cumhurbaşkanı farklı bir artış oranı belirleyebilir',
+            'C': "Bu olayda Cumhurbaşkanı artışı %70'e çıkarabilir",
+            'D': "Alt sınır yeniden değerleme oranının %20'sidir",
+            'E': 'Üst sınır yeniden değerleme oranının %50 fazlasıdır',
         },
         'C',
-        "m. 10'a göre vergi miktarları kural olarak yeniden değerleme oranında artırılır; Cumhurbaşkanı **yeniden değerleme oranının %50 fazlasını geçmemek, %20'sinden az olmamak** üzere yeni oran belirleyebilir: alt sınır 40 × %20 = **%8**, üst sınır 40 × 1,5 = **%60**.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 10',
+        "MTVK m. 10: vergi miktarları kural olarak yeniden değerleme oranında artırılır; Cumhurbaşkanı yeniden değerleme oranının %50 fazlasını geçmemek, %20'sinden az olmamak üzere yeni oran belirleyebilir. %40 için aralık %8 ile %60'tır; %70 üst sınırı aşar.",
     ),
     # düzey 2
     '0050': patch(
@@ -793,17 +787,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        "Motorlu taşıtlar vergisi borcu 6183 sayılı Kanun'un 48. maddesine göre taksitlendirilmiş bir taşıtın fenni muayenesi hakkında aşağıdakilerden hangisi doğrudur?",
+        "Motorlu taşıtlar vergisi borcu 6183 sayılı Kanun'un 48. maddesine göre taksitlendirilmiş bir taşıt fenni muayeneye götürülmüştür.\n\nMotorlu Taşıtlar Vergisi Kanunu'na göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Borç tamamen ödenmeden muayene yapılamaz',
-            'B': 'Teminat gösterilirse muayene yapılır',
-            'C': 'Taksitlerin yarısı ödenince muayene yapılır',
-            'D': 'Muayene yapılır, ancak belge verilmez',
-            'E': 'Taksitlendirme bulunduğundan muayene yapılabilir',
+            'A': 'Vergisi ödenmemiş taşıta kural olarak muayene yapılmaz',
+            'B': 'Taksitlendirilmiş borç muayeneye engel değildir',
+            'C': "Taksitlendirme 6183 sayılı Kanun'un 48. maddesine göre olmalıdır",
+            'D': 'Borcun tamamının ödenmesi beklenmez',
+            'E': 'Taksitlerin yarısı ödenmeden muayene yapılamaz',
         },
         'E',
-        "m. 13/d'ye göre **vergisi ödenmemiş veya 6183 sayılı Kanun'un 48. maddesine göre taksitlendirilmemiş** taşıtlara fenni muayene yapılamaz. Borç m. 48'e göre taksitlendirilmişse muayene engeli yoktur.",
-        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 13/d',
+        "MTVK m. 13/d: vergisi ödenmemiş veya 6183 sayılı Kanun'un 48. maddesine göre taksitlendirilmemiş taşıtlara fenni muayene yapılamaz. Borç m. 48'e göre taksitlendirilmişse ödenen taksit oranına bakılmaksızın muayene engeli yoktur.",
     ),
     # düzey 3
     '0056': patch(

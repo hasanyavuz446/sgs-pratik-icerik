@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0007': patch(
-        'Aşağıdaki çiftçilerden hangisinin zirai kazancı, işletme büyüklüğü ölçülerine bakılmaksızın gerçek usulde vergilendirilir?',
+        'Aşağıdaki çiftçilerden hangisi, zirai kazancı hasılatından tevkifat yoluyla vergilendirilen çiftçilerden biri değildir?',
         {
             'A': 'On beş yaşında üç traktöre sahip çiftçi',
             'B': 'Hasılatından tevkifat yapılan çiftçi',
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "Aşağıdaki durumların hangisinde GVK m. 73'teki emsal kira bedeli esası uygulanır?",
+        "Aşağıdaki durumlardan hangisi GVK m. 73'teki emsal kira bedeli esasının istisnalarından biri değildir?",
         {
             'A': 'Konutun annesinin ikametine bedelsiz tahsisi',
             'B': 'Konutun belediyeye düşük bedelle kiralanması',
@@ -359,7 +359,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0024': patch(
-        'Ticari kazancını gerçek usulde tespit eden bir tacirin aşağıdaki ödemelerinden hangisi ticari kazancın tespitinde gider olarak indirilebilir?',
+        'Ticari kazancını gerçek usulde tespit eden bir tacirin aşağıdaki ödemelerinden hangisi kanunen kabul edilmeyen giderlerden biri değildir?',
         {
             'A': 'İşletmede çalışan küçük çocuğuna ödenen ücret',
             'B': 'İşletme aracı için ödenen trafik para cezası',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0036': patch(
-        'Aşağıdaki kişilerden hangisi, diğer şartları taşıdığı varsayımıyla genç girişimcilerde kazanç istisnasından yararlanabilir?',
+        'Diğer şartların taşındığı varsayımıyla aşağıdakilerden hangisi, genç girişimcilerde kazanç istisnasından yararlanmaya engel durumlardan biri değildir?',
         {
             'A': 'Babasının ölümüyle işletmeyi devralan 25 yaşındaki kişi',
             'B': 'Mükellefiyet başlangıcında 30 yaşında olan kişi',
@@ -709,31 +709,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        'Bir avukat, müvekkilinden dava harcı ve bilirkişi ücreti için para almış ve bu paranın tamamını bu amaçlarla harcamıştır. Alınan para serbest meslek kazancının tespitinde nasıl dikkate alınır?',
+        "Bir avukat, müvekkilinden dava harcı ve bilirkişi ücreti için para almış ve bu paranın tamamını bu amaçlarla harcamıştır.\n\nGVK'ya göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yarısı kazanç sayılır',
-            'B': 'Hasılata eklenir',
-            'C': 'Kazanç sayılmaz',
-            'D': 'Arızi kazanç olarak beyan edilir',
-            'E': 'Ertesi yılın hasılatı sayılır',
+            'A': 'Harç için alınıp tamamen harcanan para kazanç sayılmaz',
+            'B': 'Bilirkişi ücreti için alınan para da bu kapsamdadır',
+            'C': 'Alınan para hasılata eklenerek vergilendirilir',
+            'D': 'Faaliyetle ilgili diğer gider karşılıkları kazanca eklenir',
+            'E': 'Kural serbest meslek kazancına ilişkindir',
         },
         'C',
-        "m. 67'ye göre vergi, resim, harç, keşif, şahitlik, bilirkişilik ve ekspertiz gibi hususlara harcanmak üzere müşteri veya müvekkilden alınan ve **tamamen bu hususlara sarf edilen** para ve ayınlar kazanç sayılmaz. Buna karşılık faaliyetle ilgili olarak alınan diğer gider karşılıkları kazanca eklenir.",
-        '193 sayılı Gelir Vergisi Kanunu m. 67',
+        'GVK m. 67: vergi, resim, harç, keşif, şahitlik, bilirkişilik ve ekspertiz gibi hususlara harcanmak üzere müşteri veya müvekkilden alınan ve tamamen bu hususlara sarf edilen para ve ayınlar serbest meslek kazancının tespitinde kazanç sayılmaz. Faaliyetle ilgili olarak alınan diğer gider karşılıkları ise kazanca eklenir.',
     ),
     # düzey 2
     '0050': patch(
-        'Bir yazar, yeni romanının yayın hakkını bir yayınevine devretmiştir. Yazarın bu kapsamdaki kazançları tarifenin dördüncü gelir dilimi tutarını aşmamaktadır. Bu hasılat hakkında aşağıdakilerden hangisi doğrudur?',
+        "Bir yazar, yeni romanının yayın hakkını bir yayınevine devretmiştir. Yazarın bu kapsamdaki kazançları tarifenin dördüncü gelir dilimi tutarını aşmamaktadır.\n\nGVK'ya göre bu hasılatla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İstisnadır; tevkifat da yapılmaz',
-            'B': 'Ticari kazanç olarak vergilenir',
-            'C': 'Ücret olarak vergilenir',
-            'D': 'Arızi kazanç olarak beyan edilir',
-            'E': 'İstisnadır; ancak tevkifat yapılır',
+            'A': 'Eser hakkının devrinden doğan hasılat istisnadır',
+            'B': 'İstisna, tevkifatı kapsamaz',
+            'C': 'Yayınevi ödeme sırasında tevkifat yapar',
+            'D': 'Dördüncü dilimi aşan kazançlar istisnadan yararlanamaz',
+            'E': 'Hasılat ticari kazanç olarak vergilendirilir',
         },
         'E',
-        "m. 18'e göre müelliflerin eserlerini satmak veya üzerindeki haklarını devretmek suretiyle elde ettikleri hasılat **gelir vergisinden müstesnadır**. Ancak bu istisnanın m. 94 uyarınca yapılacak **tevkifata şümulü yoktur**; yayınevi ödemeden tevkifat yapar. Bu kapsamdaki kazançları tarifenin dördüncü gelir dilimini aşanlar ise istisnadan yararlanamaz.",
-        '193 sayılı Gelir Vergisi Kanunu m. 18',
+        'GVK m. 18: müelliflerin eserlerini satmak veya üzerindeki haklarını devretmek suretiyle elde ettikleri hasılat gelir vergisinden müstesnadır; ancak bu istisnanın m. 94 uyarınca yapılacak tevkifata şümulü yoktur, yayınevi ödemeden tevkifat yapar. Bu kapsamdaki kazançları tarifenin dördüncü gelir dilimini aşanlar istisnadan yararlanamaz.',
     ),
     # düzey 3
     '0051': patch(
@@ -835,7 +833,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0058': patch(
-        "GVK'ya göre aşağıdaki gelirlerden hangisi için yıllık beyanname verilmesi gerekir?",
+        "GVK'ya göre aşağıdakilerden hangisi yıllık beyanname ile bildirilmeyen gelirlerden biri değildir?",
         {
             'A': 'İstisna haddi içinde kalan konut kira geliri',
             'B': 'Dar mükellefin tevkifata tabi mevduat faizi',
