@@ -723,16 +723,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "Bir işletme 2026 yılında, 2025 yılına ait önemli bir hatayı geriye dönük olarak düzeltmiştir. TMS 8'e göre işletmenin açıklaması gereken bilgilerden biri aşağıdakilerden hangisidir?",
+        "Bir işletme 2026 yılında, 2025 yılına ait önemli bir hatayı geriye dönük olarak düzeltmiştir.\n\nTMS 8'e göre aşağıdakilerden hangisinin açıklanması gerekmez?",
         {
-            'A': 'Denetçinin görüşü',
-            'B': 'Hatayı yapan çalışanın adı',
-            'C': 'Yönetim kurulu kararı',
-            'D': 'Hatanın niteliği',
-            'E': 'Vergi cezası tutarı',
+            'A': 'Hatanın niteliği',
+            'B': 'Etkilenen her finansal tablo kalemi için düzeltme tutarı',
+            'C': 'Sunulan en erken dönemin başındaki düzeltme tutarı',
+            'D': 'Hatadan sorumlu çalışanların adları',
+            'E': 'Yeniden düzenleme uygulanamıyorsa bunun nedenleri',
         },
         'D',
-        "TMS 8 p. 49'a göre işletme; **önceki dönem hatasının niteliğini**, sunulan her önceki dönem için etkilenen kalemlerdeki düzeltme tutarını, sunulan en erken dönemin başındaki düzeltme tutarını ve gerekirse uygulanabilir olmama nedenlerini açıklar.",
+        "TMS 8.49'a göre önceki dönem hatası için hatanın niteliği, sunulan her önceki dönem için etkilenen her finansal tablo kalemindeki düzeltme tutarı (ve hisse başına kazanç), sunulan en erken dönemin başındaki düzeltme tutarı ve geriye dönük yeniden düzenleme uygulanamıyorsa bunun nedenleri açıklanır. Sorumlu kişilerin adları istenmez.",
         'TMS 8 p. 49',
     ),
     # düzey 3

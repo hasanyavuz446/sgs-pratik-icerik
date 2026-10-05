@@ -596,16 +596,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        "Bir işletme bazı özellikli varlıklarını genel borçlanmalarla finanse etmektedir. TMS 23'e göre genel borçlanmalardan aktifleştirilecek tutarla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir işletme bazı özellikli varlıklarını genel borçlanmalarla finanse etmektedir.\n\nTMS 23'e göre genel borçlanmalardan aktifleştirilecek tutarla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Katlanılan maliyeti aşamaz',
-            'B': 'Özkaynak tutarıyla sınırlıdır',
-            'C': 'Sınırsız aktifleştirilir',
-            'D': 'Faiz gelirine eşittir',
-            'E': 'Vergi matrahına eşittir',
+            'A': 'Aktifleştirilen tutar dönemde katlanılan borçlanma maliyetini aşabilir',
+            'B': 'Aktifleştirme oranı ağırlıklı ortalama borçlanma maliyetidir',
+            'C': 'Hesaplanan tutar özellikli varlığın maliyetine eklenir',
+            'D': 'Oran, özellikli varlığa yapılan harcamalara uygulanır',
+            'E': 'Genel borçlanma birden fazla özellikli varlığı finanse edebilir',
         },
         'A',
-        'Bir dönemde aktifleştirilen borçlanma maliyeti tutarı, o dönemde katlanılan borçlanma maliyeti tutarını aşamaz.',
+        'TMS 23.14: genel amaçlı borçlanılan fonlarda aktifleştirilecek tutar, özellikli varlığa yapılan harcamalara bir aktifleştirme oranı (genel borçlanmaların ağırlıklı ortalama maliyeti) uygulanarak bulunur ve varlığın maliyetine eklenir. Bir dönemde aktifleştirilen tutar o dönemde katlanılan borçlanma maliyetini aşamaz.',
     ),
     # düzey 3
     '0045': patch(
@@ -648,16 +648,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "TMS 23'e göre bir varlığın özellikli varlık sayılıp sayılmamasında belirleyici ölçüt aşağıdakilerden hangisidir?",
+        "TMS 23'e göre özellikli varlıkla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Varlığın fiziksel büyüklüğü',
-            'B': 'Varlığın satın alma fiyatı',
-            'C': 'Finansman kaynağının türü',
-            'D': 'Hazırlık süresinin uzunluğu',
-            'E': 'Kredinin para birimi',
+            'A': 'Kullanıma hazır hâle gelmesi uzun süre gerektiren varlıktır',
+            'B': 'Fabrikalar ve enerji santralleri özellikli varlık olabilir',
+            'C': 'Edinildiğinde kullanıma hazır olan varlıklar özellikli değildir',
+            'D': 'Belirleyici ölçüt, varlığın maliyetinin yüksekliğidir',
+            'E': 'Maddi olmayan duran varlıklar da özellikli varlık olabilir',
         },
         'D',
-        'Özellikli varlık, amaçlanan kullanıma ya da satışa hazır hâle gelmesi zorunlu olarak uzun bir süre gerektiren varlıktır; ölçüt hazırlık süresidir.',
+        'TMS 23.5-7: özellikli varlık, amaçlanan kullanıma veya satışa hazır hâle gelmesi uzun bir süreyi gerektiren varlıktır; fabrikalar, enerji santralleri ve maddi olmayan duran varlıklar bu niteliği taşıyabilir. Edinildiğinde kullanıma hazır olan varlıklar özellikli değildir. Belirleyici olan maliyet değil hazırlık süresidir.',
     ),
     # düzey 3
     '0049': patch(

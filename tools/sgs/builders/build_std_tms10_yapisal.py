@@ -233,16 +233,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        "TMS 10'a göre işletmenin, finansal tabloların yayımlanmak üzere onaylandığı tarihi açıklaması kullanıcılar için hangi bilgiyi sağlar?",
+        "TMS 10'a göre finansal tabloların yayımlanmak üzere onaylandığı tarihin açıklanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Vergi beyan tarihini',
-            'B': 'Kâr dağıtım tarihini',
-            'C': 'Denetçinin görüş tarihini',
-            'D': 'Genel kurul tarihini',
-            'E': 'Olayların yansıtıldığı son tarihi',
+            'A': 'Onay tarihi ve onayı veren organ açıklanır',
+            'B': 'Ortakların tabloları değiştirme yetkisi varsa bu durum açıklanır',
+            'C': 'Kullanıcılar tabloların hangi tarihe kadarki olayları yansıttığını öğrenir',
+            'D': "Bu açıklama TMS 10'un zorunlu açıklamaları arasındadır",
+            'E': 'Onay tarihinden sonraki olaylar da tablolara yansıtılmış sayılır',
         },
         'E',
-        "TMS 10 p. 18'e göre tabloların onay tarihinin bilinmesi kullanıcılar için önemlidir; çünkü finansal tablolar **bu tarihten sonraki olayları yansıtmaz**.",
+        'TMS 10.17-18: işletme finansal tabloların yayımlanmak üzere onaylandığı tarihi ve onayı vereni açıklar; ortakların veya başkalarının tabloları yayımlandıktan sonra değiştirme yetkisi varsa bunu da açıklar. Kullanıcılar için bu tarih, tabloların onay tarihinden sonraki olayları yansıtmadığını gösterir.',
         'TMS 10 p. 18',
     ),
     # düzey 3
@@ -695,16 +695,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "Bir işletme, raporlama döneminden sonra meydana gelen ve dönem sonunda var olan koşullara ilişkin kanıt sağlayan bir olayı tespit etmiştir. TMS 10'a göre bu tür bir olay karşısında işletme ne yapar?",
+        "Bir işletme, raporlama döneminden sonra meydana gelen ve dönem sonunda var olan koşullara ilişkin kanıt sağlayan bir olayı tablolar onaylanmadan önce tespit etmiştir.\n\nTMS 10'a göre bu olayla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tabloların onayını geri çeker',
-            'B': "Olayı 2026'ya kaydeder",
-            'C': 'Tanınan tutarları düzeltir',
-            'D': 'Olayı açıklamakla yetinir',
-            'E': 'Olayı yok sayar',
+            'A': 'Düzeltme gerektiren olay olarak nitelendirilir',
+            'B': 'Olay, dönem sonu koşullarına ilişkin ek kanıt sağlar',
+            'C': 'Tanınan tutarlar değiştirilmez; olay dipnotta açıklanır',
+            'D': 'Olayın tablolar onaylanmadan önce gerçekleşmiş olması gerekir',
+            'E': 'Gerekirse daha önce tanınmamış kalemler de tanınır',
         },
         'C',
-        "TMS 10 p. 8'e göre işletme, **düzeltme gerektiren olayları** yansıtmak için finansal tablolarında muhasebeleştirdiği tutarları düzeltir ve daha önce tanımadığı kalemleri tanır.",
+        'TMS 10.3 ve 10.8: raporlama dönemi sonunda var olan koşullara ilişkin kanıt sağlayan ve tablolar onaylanmadan önce gerçekleşen olaylar düzeltme gerektiren olaylardır; işletme tanınan tutarları düzeltir ve daha önce tanınmamış kalemleri de tanır. Yalnızca açıklama yapılması düzeltme gerektirmeyen olaylara özgüdür.',
         'TMS 10 p. 8',
     ),
     # düzey 2

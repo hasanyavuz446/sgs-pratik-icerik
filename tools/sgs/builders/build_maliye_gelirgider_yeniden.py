@@ -541,16 +541,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Kamu projelerinin değerlendirilmesinde kullanılan sosyal iskonto oranının yükseltilmesi aşağıdakilerden hangisine yol açar?',
+        'Kamu projelerinin değerlendirilmesinde kullanılan sosyal iskonto oranının yükseltilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Faydası uzak gelecekte ortaya çıkan projelerin net bugünkü değeri azalır',
-            'B': 'Faydası bugün, maliyeti gelecekte olan projeler dezavantajlı hâle gelir',
-            'C': 'Uzun vadeli projeler kısa vadelilere göre daha cazip hâle gelir',
-            'D': 'Net bugünkü değer iskonto oranından bağımsız hâle gelir',
-            'E': 'Projelerin maliyetlerinin bugünkü değeri artar',
+            'A': 'Faydası uzak gelecekte ortaya çıkan projelerin net bugünkü değeri artar',
+            'B': 'Uzun vadeli projeler kısa vadelilere göre dezavantajlı hâle gelir',
+            'C': 'Gelecekteki fayda ve maliyetlerin bugünkü değeri azalır',
+            'D': 'Kabul edilebilir proje sayısı azalabilir',
+            'E': 'Oran, toplumun zaman tercihini yansıtır',
         },
         'A',
-        'İskonto oranı yükseldikçe gelecekteki tutarların bugünkü değeri düşer; bu etki zaman ne kadar uzaksa o kadar güçlüdür. Bu nedenle faydaları uzak gelecekte, maliyetleri bugün ortaya çıkan altyapı ve çevre projelerinin **net bugünkü değeri azalır**. Maliyeti gelecekte olan projeler ise görece avantajlı hâle gelir.',
+        'Sosyal iskonto oranı toplumun bugünkü tüketimi geleceğe tercih etme derecesini yansıtır. Oran yükseldikçe gelecekteki fayda ve maliyetlerin bugünkü değeri düşer; faydası uzak gelecekte ortaya çıkan projelerin net bugünkü değeri azalır ve kabul edilebilir proje sayısı daralır.',
         'Kamu maliyesi teorisi: fayda-maliyet analizi',
     ),
     # düzey 2
@@ -597,30 +597,30 @@ _PATCHES = {
     ),
     # düzey 1
     '0041': patch(
-        'Kamu iç borçlanmasını vergiden ayıran temel özellik aşağıdakilerden hangisidir?',
+        'Kamu iç borçlanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Cebri olarak tahsil edilmesi',
-            'B': 'Geri ödeme ve faiz yükümlülüğü doğurması',
-            'C': 'Genel bütçe dışında izlenmesi',
-            'D': 'Kanuni bir dayanak gerektirmemesi',
-            'E': 'Toplanan tutarın ödeme gücüne göre dağıtılması',
+            'A': 'İç borçlanma kural olarak isteğe bağlıdır',
+            'B': 'İç borçlanma, vergi gibi geri ödenmeyen bir gelirdir',
+            'C': 'İç borçlanma gelecek dönemlere faiz yükü aktarır',
+            'D': 'Kaynak yurt içindeki tasarruf sahiplerinden sağlanır',
+            'E': 'Devlet tahvili ve hazine bonosu iç borçlanma araçlarıdır',
         },
         'B',
-        'Vergi karşılıksız ve geri ödenmeyen bir kamu geliridir. **Borçlanma** ise gönüllü (kural olarak) sağlanan, vadesinde anaparasıyla geri ödenen ve faiz yükümlülüğü doğuran bir finansman kaynağıdır; bu nedenle bugünün harcamasını geleceğin vergi yüküne dönüştürür. Borçlanma da kanuni yetkiye dayanır ve bütçe içinde izlenir.',
+        'Kamu iç borcu, devletin yurt içindeki tasarruf sahiplerinden kural olarak isteğe bağlı biçimde sağladığı ve geri ödeme ile faiz yükümlülüğü doğuran bir gelirdir; başlıca araçları devlet tahvili ve hazine bonosudur. Vergiyi ondan ayıran temel özellik, verginin karşılıksız ve geri ödenmeyen olmasıdır.',
         'Kamu maliyesi teorisi: kamu borçlanması',
     ),
     # düzey 2
     '0042': patch(
-        'Harcı vergiden ayıran temel özellik aşağıdakilerden hangisidir?',
+        'Bir kamu geliri türü olan harçla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Belirli bir kamu hizmetinden yararlanan kişiden o hizmet karşılığında alınması',
-            'B': 'Kanunla konulmasının gerekmemesi',
-            'C': 'Tutarının hizmetin maliyetine eşit belirlenmesi',
-            'D': 'Cebri nitelik taşımaması',
-            'E': 'Genel bütçe dışındaki kurumlarca toplanması',
+            'A': 'Harç, belirli bir hizmetle ilişkilendirilmeden alınan karşılıksız bir gelirdir',
+            'B': 'Harç, cebrî nitelikte bir kamu geliridir',
+            'C': 'Harç, kamu hizmetinden yararlanan kişiden alınır',
+            'D': 'Harç tutarı hizmetin maliyetini tam karşılamayabilir',
+            'E': 'Pasaport ve noter işlemlerinde alınan bedeller harca örnektir',
         },
         'A',
-        "Harç, tapu, yargı veya noter işlemi gibi **özel bir kamu hizmetinden yararlanan** kişiden bu hizmetin karşılığı olarak alınır; vergi ise karşılıksızdır. Harç da vergi gibi cebridir ve Anayasa'nın 73. maddesi gereği kanunla konulur; tutarının hizmetin maliyetine eşit olması gerekmez.",
+        'Harç, belirli bir kamu hizmetinden yararlanan kişiden o hizmet karşılığında cebren alınan bir kamu geliridir; tutarı hizmetin maliyetiyle birebir örtüşmeyebilir. Karşılıksız alınması vergiye özgü bir özelliktir.',
         'Kamu maliyesi teorisi: harç ve vergi',
     ),
     # düzey 2

@@ -443,16 +443,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        "TMS 20'nin devlet teşvikleri için benimsediği temel yaklaşım ve gerekçesi hangisidir?",
+        "TMS 20'nin devlet teşvikleri için benimsediği yaklaşımla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Vergi yaklaşımı; teşvik vergi avantajıdır',
-            'B': 'Gelir yaklaşımı; teşvik hissedar katkısı değildir',
-            'C': 'Özkaynak yaklaşımı; teşvik ortaklara aittir',
-            'D': 'Sermaye yaklaşımı; teşvik finansman aracıdır',
-            'E': 'Nakit yaklaşımı; teşvik tahsilde kesinleşir',
+            'A': 'TMS 20 gelir yaklaşımını benimser',
+            'B': 'Teşvikler hissedar katkısı gibi doğrudan özkaynağa alınır',
+            'C': 'Teşvik, ilgili maliyetlerle eşleştirilerek gelire aktarılır',
+            'D': 'Teşvik, hissedarlar dışındaki bir kaynaktan elde edilir',
+            'E': 'Teşvik, koşullara uyumla kazanıldığından gelir sayılır',
         },
         'B',
-        "TMS 20 p. 13-15'e göre teşvikler hissedarlar dışında bir kaynaktan elde edildiğinden doğrudan özkaynağa alınmaz; koşullara uyularak kazanıldığından ilgili maliyetlerle eşleştirilerek **gelir yaklaşımıyla** kâr veya zararda muhasebeleştirilir.",
+        'TMS 20.13-16: standart gelir yaklaşımını benimser. Teşvik hissedarlar dışındaki bir kaynaktan elde edildiği ve koşullara uyumla kazanıldığı için doğrudan özkaynağa alınmaz; karşılamayı amaçladığı maliyetlerle eşleştirilerek sistematik biçimde kâr veya zarara yansıtılır.',
         'TMS 20 p. 13-14',
     ),
     # düzey 3
@@ -555,16 +555,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0038': patch(
-        'Bir işletme varlıkla ilgili bir teşvik için ertelenmiş gelir yöntemi ile varlıktan indirim yöntemini karşılaştırmaktadır. İki yöntem arasındaki farka ilişkin aşağıdakilerden hangisi doğrudur?',
+        'Bir işletme varlıkla ilgili bir teşvik için ertelenmiş gelir yöntemi ile varlıktan indirim yöntemini karşılaştırmaktadır.\n\nİki yöntemle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İndirim yönteminde kâr daha yüksektir',
-            'B': 'İndirim yönteminde teşvik gelire yansımaz',
-            'C': 'Toplam kâr yöntemlere göre farklıdır',
-            'D': 'Ertelenmiş gelir yönteminde kâr daha yüksektir',
-            'E': 'Her dönemin kârı aynıdır',
+            'A': 'Ertelenmiş gelir yönteminde varlık brüt tutarıyla gösterilir',
+            'B': 'Varlıktan indirim yönteminde amortisman daha düşük hesaplanır',
+            'C': 'İki yöntemde finansal durum tablosundaki sunum farklıdır',
+            'D': 'Varlıktan indirim yönteminde teşvik amortisman yoluyla kâra yansır',
+            'E': 'Ertelenmiş gelir yönteminde dönem kârları daha yüksek çıkar',
         },
         'E',
-        'İki yöntem arasındaki fark **sunumdadır**: ertelenmiş gelir yönteminde brüt amortisman ve ayrı teşvik geliri, indirim yönteminde azaltılmış amortisman gösterilir; **dönem kâr veya zararı her iki yöntemde de aynıdır**.',
+        'TMS 20.24-27: ertelenmiş gelir yönteminde varlık brüt tutarla gösterilir ve teşvik sistematik olarak gelire aktarılır; varlıktan indirim yönteminde teşvik varlığın defter değerinden düşülür, daha düşük amortisman yoluyla kâra yansır. Sunum farklı olsa da her dönemin kârı aynıdır.',
         'TMS 20 p. 24-27',
     ),
     # düzey 2

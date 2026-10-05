@@ -205,16 +205,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        "Bir işletmenin tedarikçiye olan borcunun ödeme günü gelmiş ve işletme borcu tamamen ödemiştir. TFRS 9'a göre finansal yükümlülük hangi durumda finansal durum tablosundan çıkarılır?",
+        "TFRS 9'a göre finansal yükümlülüklerin finansal durum tablosu dışı bırakılmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Karşılık ayrıldığında',
-            'B': 'Tedarikçi onayladığında',
-            'C': 'Yükümlülük sona erdiğinde',
-            'D': 'Vade yaklaştığında',
-            'E': 'Ödeme planlandığında',
+            'A': 'Yükümlülük, sözleşmedeki borç ifa edildiğinde sona erer',
+            'B': 'Borcun iptal edilmesi tablo dışı bırakmaya yol açar',
+            'C': 'Vadesi gelen yükümlülük ödenmemiş olsa da tablo dışı bırakılır',
+            'D': 'Borcun zamanaşımına uğraması da sona erme sayılır',
+            'E': 'Defter değeri ile ödenen bedel arasındaki fark kâr veya zarara yansıtılır',
         },
         'C',
-        "TFRS 9 p. 3.3.1'e göre finansal yükümlülük yalnızca **sona erdiğinde**, yani sözleşmede belirtilen yükümlülük yerine getirildiğinde, iptal edildiğinde veya zamanaşımına uğradığında finansal tablo dışı bırakılır.",
+        'TFRS 9.3.3.1-3.3.3: finansal yükümlülük ancak sona erdiğinde (sözleşmedeki borç ifa edildiğinde, iptal edildiğinde veya zamanaşımına uğradığında) tablo dışı bırakılır; vadenin gelmesi tek başına yeterli değildir. Defter değeri ile ödenen bedel arasındaki fark kâr veya zarara yansıtılır.',
         'TFRS 9 p. 3.3.1',
     ),
     # düzey 3

@@ -653,16 +653,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "Bir işletme, enflasyon döneminde vergi yükünü azaltmak amacıyla stoklarını 'son giren ilk çıkar' (LIFO) yöntemiyle değerlemek istemektedir. TMS 2'ye göre bu yöntem hakkında aşağıdakilerden hangisi doğrudur?",
+        "TMS 2'ye göre stok maliyet yöntemleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kullanılamaz',
-            'B': 'Mamullerde kullanılır',
-            'C': 'Perakendecilerce kullanılır',
-            'D': 'Kullanılabilir',
-            'E': 'Açıklama yapılarak kullanılır',
+            'A': 'Vergi avantajı sağlıyorsa LIFO yöntemi kullanılabilir',
+            'B': 'İlk giren ilk çıkar (FIFO) yöntemi kullanılabilir',
+            'C': 'Ağırlıklı ortalama maliyet yöntemi kullanılabilir',
+            'D': 'Birbirinin yerine kullanılamayan kalemlerde özel tanımlama uygulanır',
+            'E': 'Benzer nitelik ve kullanımdaki stoklarda aynı yöntem kullanılır',
         },
         'A',
-        "TMS 2 p. 25'e göre stokların maliyeti **FIFO veya ağırlıklı ortalama maliyet** formülüyle belirlenir (özel tanımlama gerektirmeyenler için); LIFO yöntemine izin verilmez.",
+        "TMS 2.23-25: birbirinin yerine kullanılamayan kalemlerde maliyetler özel tanımlama yöntemiyle; diğerlerinde FIFO veya ağırlıklı ortalama maliyet yöntemiyle belirlenir ve benzer nitelik ve kullanımdaki stoklar için aynı yöntem kullanılır. LIFO yöntemine TMS 2'de izin verilmez.",
         'TMS 2 p. 25',
     ),
     # düzey 3
@@ -765,16 +765,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        "Bir işletme sabit genel üretim giderlerini dağıtmak için normal kapasiteyi belirlemektedir. TMS 2'ye göre normal kapasite nasıl tanımlanır?",
+        "Bir işletme sabit genel üretim giderlerini dağıtmak için normal kapasiteyi belirlemektedir.\n\nTMS 2'ye göre bu konuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Planlı bakım dâhil beklenen ortalama üretim',
-            'B': 'Bir önceki yılın üretimi',
-            'C': 'Satış bütçesindeki miktar',
-            'D': 'Tesisin teorik azami üretimi',
-            'E': 'Cari dönemin fiilî üretimi',
+            'A': 'Normal kapasite, tesisin teorik azami üretim düzeyidir',
+            'B': 'Planlı bakımdan doğan kapasite kayıpları dikkate alınır',
+            'C': 'Fiilî üretim normal kapasiteye yakınsa fiilî düzey kullanılabilir',
+            'D': 'Düşük üretim nedeniyle dağıtılamayan sabit GÜG gider yazılır',
+            'E': 'Olağandışı yüksek üretimde birim başına sabit GÜG azaltılır',
         },
         'A',
-        "TMS 2 p. 13'e göre normal kapasite, planlı bakımlardan kaynaklanan kapasite kaybı da dikkate alınarak **normal koşullarda birkaç dönem ya da mevsim boyunca ortalama olarak ulaşılması beklenen üretimdir**; fiilî üretim normale yakınsa kullanılabilir.",
+        'TMS 2.13: normal kapasite, planlı bakımdan kaynaklanan kapasite kayıpları dikkate alınarak birkaç dönem veya mevsim boyunca normal koşullarda ulaşılması beklenen ortalama üretimdir; teorik azami düzey değildir. Fiilî üretim normal kapasiteye yakınsa fiilî düzey kullanılabilir; dağıtılamayan sabit GÜG gider yazılır, olağandışı yüksek üretimde birim başına tutar azaltılır.',
         'TMS 2 p. 13',
     ),
     # düzey 3

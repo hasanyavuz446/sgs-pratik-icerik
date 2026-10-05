@@ -223,16 +223,16 @@
     "id": "std-tfrs16-gen-0011",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir kiracı, kiralamanın fiilen başladığı tarihte finansal tablolarına hangi iki kalemi yansıtır?",
+    "stem": "TFRS 16'ya göre kiracının kiralamanın fiilen başladığı tarihteki muhasebeleştirmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Maddi duran varlık ve özkaynak",
-      "B": "Peşin ödenmiş gider ve karşılık",
-      "C": "Kira gideri ve kira borcu",
-      "D": "Kira alacağı ve kira geliri",
-      "E": "Kullanım hakkı varlığı ve kira yükümlülüğü"
+      "A": "Kullanım hakkı varlığı maliyet bedeliyle ölçülür",
+      "B": "Kira yükümlülüğü ödenmemiş kira ödemelerinin bugünkü değeriyle ölçülür",
+      "C": "Başlangıçtaki doğrudan maliyetler kullanım hakkı varlığına eklenir",
+      "D": "Kullanım hakkı varlığı, kira yükümlülüğünün ilk ölçüm tutarını içerir",
+      "E": "Kiracı tabloya kalem almaz; kira ödemelerini gider yazar"
     },
     "answer": "E",
-    "solution": "TFRS 16 p. 22'ye göre kiracı, kiralamanın fiilen başladığı tarihte finansal tablolarına bir **kullanım hakkı varlığı** ve bir **kira yükümlülüğü** yansıtır; kısa vadeli ve düşük değerli kiralama muafiyetleri hariç.",
+    "solution": "TFRS 16.22-26: kiracı fiilî başlama tarihinde bir kullanım hakkı varlığı ve bir kira yükümlülüğü muhasebeleştirir. Kira yükümlülüğü ödenmemiş kira ödemelerinin bugünkü değeriyle; kullanım hakkı varlığı ise kira yükümlülüğünün ilk ölçüm tutarı ile başlangıçtaki doğrudan maliyetler vb. kalemleri içeren maliyet bedeliyle ölçülür.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",
@@ -795,16 +795,16 @@
     "id": "std-tfrs16-gen-0037",
     "ders": "muhasebe_standartlari",
     "konu": "tfrs_16_kiralamalar",
-    "stem": "Bir işletme kısa vadeli kiralama ve düşük değerli varlık muafiyetlerini uygulamak istemektedir. Bu muafiyetlerin seçim düzeyi hakkında aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme kısa vadeli kiralama ve düşük değerli varlık muafiyetlerini uygulamak istemektedir.\n\nTFRS 16'ya göre bu muafiyetlerle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "İkisi de kiraya veren bazında",
-      "B": "Kısa vadede sınıf, düşük değerde kiralama bazında",
-      "C": "İkisi de işletme bazında",
-      "D": "İkisi de sınıf bazında",
-      "E": "Kısa vadede kiralama, düşük değerde sınıf bazında"
+      "A": "Muafiyetlerin uygulanması kiracı için isteğe bağlıdır",
+      "B": "Kısa vade muafiyeti kiralama bazında, düşük değer muafiyeti varlık sınıfı bazında seçilir",
+      "C": "Kısa vadeli kiralamada kiralama süresi 12 ay veya daha kısadır",
+      "D": "Muafiyet uygulanırsa ödemeler genellikle doğrusal esasla gider yazılır",
+      "E": "Bu muafiyetler kiraya veren için değil kiracı için tanınmıştır"
     },
     "answer": "B",
-    "solution": "TFRS 16 p. 8'e göre kısa vadeli kiralama muafiyeti **kullanım hakkının ilişkili olduğu dayanak varlık sınıfı bazında**, düşük değerli varlık muafiyeti ise **her bir kiralama bazında** seçilir.",
+    "solution": "TFRS 16.5-8: kiracı, kısa vadeli kiralamalar (12 ay veya daha kısa) ve dayanak varlığın düşük değerli olduğu kiralamalar için muafiyet uygulamayı seçebilir; ödemeler genellikle doğrusal esasla gider yazılır. Kısa vade muafiyeti dayanak varlık SINIFI bazında, düşük değer muafiyeti ise KİRALAMA bazında seçilir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Muhasebe Standartlari (gercek sinav profiline kalibre: senaryo kok + kisa sik)",

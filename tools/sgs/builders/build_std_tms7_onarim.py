@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        'Yatırım ve finansman faaliyetlerindeki nakit giriş ve çıkışları için genel sunum kuralı hangisidir?',
+        "TMS 7'ye göre nakit giriş ve çıkışlarının brüt veya net sunumuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kural olarak brüt raporlanır; standartta sayılan hâllerde net gösterilebilir',
-            'B': 'Tüm nakit akışları net tutar üzerinden gösterilir; brüt gösterim yasaktır',
-            'C': 'Nakit akışları dönem sonunda tek bir net toplam olarak raporlanır',
-            'D': 'Nakit akışları kural olarak netleştirilerek tek bir tutar hâlinde raporlanır; brüt gösterim istisnadır',
-            'E': 'Brüt gösterim işletme faaliyetlerine özgü olup diğer bölümlerde uygulanmaz',
+            'A': 'Yatırım ve finansman akışları kural olarak net raporlanır',
+            'B': 'Müşteri adına yapılan tahsilat ve ödemeler net gösterilebilir',
+            'C': 'Devir hızı yüksek, tutarı büyük ve vadesi kısa kalemler net gösterilebilir',
+            'D': 'Net sunum standartta sayılan hâllerle sınırlıdır',
+            'E': 'Finansal kuruluşlarda bazı akışlar net gösterilebilir',
         },
         'A',
-        'TMS 7: yatırım ve finansman faaliyetlerinden kaynaklanan brüt nakit girişleri ve brüt nakit çıkışları ana gruplar itibarıyla ayrı ayrı raporlanır. Ancak müşteri adına yapılan tahsilat/ödemeler ile devir hızı yüksek, tutarı büyük ve vadesi kısa kalemler net olarak raporlanabilir.',
+        'TMS 7.21-24: yatırım ve finansman faaliyetlerinden doğan brüt nakit giriş ve çıkışlarının ana grupları ayrı ayrı raporlanır. Müşteri adına yapılan tahsilat ve ödemeler ile devir hızı yüksek, tutarı büyük ve vadesi kısa kalemler net gösterilebilir; finansal kuruluşlar için de ayrıca net sunum hâlleri sayılmıştır.',
         'TMS 7 - brüt gösterim',
     ),
     # düzey 3
@@ -443,16 +443,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        'Esas faaliyetlerden kaynaklanan nakit akışları hangi yöntemlerle sunulabilir?',
+        "TMS 7'ye göre esas faaliyetlerden kaynaklanan nakit akışlarının sunum yöntemleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İki yöntem de aynı anda ve birlikte kullanılır; tek yöntem yeterli görülmemektedir',
-            'B': 'Doğrudan yöntem kullanılır; dolaylı yöntem yasaklanmıştır',
-            'C': "Dolaylı yöntem kullanılır; doğrudan yöntem TMS 7'de kabul edilmez",
-            'D': 'Doğrudan veya dolaylı yöntem kullanılabilir; doğrudan yöntem teşvik edilir',
-            'E': 'Büyük işletmeler dolaylı, küçük işletmeler doğrudan yöntemi kullanır',
+            'A': 'Doğrudan yöntem kullanılabilir',
+            'B': 'Dolaylı yöntem kullanılabilir',
+            'C': 'Doğrudan yöntem gelecekteki nakit akışlarının tahminine daha yararlı bilgi sağlar',
+            'D': 'TMS 7, dolaylı yöntemin kullanılmasını teşvik eder',
+            'E': 'Doğrudan yöntemde brüt tahsilat ve ödemelerin ana grupları gösterilir',
         },
         'D',
-        'TMS 7: işletme, işletme faaliyetlerinden nakit akışlarını doğrudan yöntem (brüt nakit giriş ve çıkış sınıflarının belirtildiği) veya dolaylı yöntem (kâr/zararın düzeltildiği) kullanarak raporlar. Standart doğrudan yöntemin kullanılmasını teşvik eder.',
+        'TMS 7.18-19: esas faaliyetlerden kaynaklanan nakit akışları doğrudan veya dolaylı yöntemle sunulabilir. Doğrudan yöntem brüt tahsilat ve ödemelerin ana gruplarını gösterir ve gelecekteki nakit akışlarının tahminine dolaylı yöntemle elde edilemeyen yararlı bilgiler sağladığından teşvik edilen yöntemdir.',
         'TMS 7 - yöntemler',
     ),
     # düzey 2
@@ -653,16 +653,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        'Stok tedarikçilerine yapılan nakit ödemeler nasıl sınıflandırılır?',
+        "TMS 7'ye göre aşağıdakilerden hangisi esas (işletme) faaliyetlerinden kaynaklanan bir nakit akışı değildir?",
         {
-            'A': 'Finansman faaliyetlerinden nakit çıkışı olarak raporlanan bir hareketi ifade eder',
-            'B': 'İşletme faaliyetlerinden nakit çıkışı olarak sınıflandırılır',
-            'C': 'Nakit akış tablosunda değil, bilançoda borç azalışı olarak izlenir',
-            'D': 'İşletme faaliyetlerinden nakit girişi olarak gösterilir; ödeme nakit artışı doğurmaktadır',
-            'E': 'Yatırım faaliyetlerinden nakit çıkışı olarak sınıflandırılır',
+            'A': 'Çalışanlara yapılan ücret ödemeleri',
+            'B': 'Başka işletmelere verilen kredilerin tahsil edilmesi',
+            'C': 'Royalti, ücret ve komisyon gelirlerinden tahsilatlar',
+            'D': 'Sigorta şirketinin prim tahsilatları',
+            'E': 'Hizmet sağlayıcılara yapılan nakit ödemeler',
         },
         'B',
-        'TMS 7: mal ve hizmet alımları için satıcılara yapılan ödemeler işletmenin esas faaliyetiyle ilgili olduğundan işletme faaliyetlerinden nakit çıkışıdır.',
+        "TMS 7.14: çalışanlara ve çalışanlar adına yapılan ödemeler, royalti, ücret ve komisyon gelirleri, sigorta şirketlerinin prim tahsilatları ve mal-hizmet sağlayıcılara yapılan ödemeler esas faaliyet nakit akışlarıdır. Başka taraflara verilen avans ve kredilerin tahsili (finansal kuruluş değilse) TMS 7.16'ya göre yatırım faaliyetidir.",
         'TMS 7 - işletme faaliyeti',
     ),
     # düzey 2

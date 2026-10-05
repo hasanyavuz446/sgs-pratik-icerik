@@ -387,16 +387,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Negatif dışsallık yaratan bir faaliyete marjinal dışsal maliyet kadar Pigou vergisi konulduğunda aşağıdakilerden hangisi beklenir?',
+        'Negatif dışsallık yaratan bir faaliyete marjinal dışsal maliyet kadar Pigou vergisi konulmuştur.\n\nBu uygulamanın sonuçlarıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Firmanın özel maliyeti toplumsal maliyete eşitlenir, üretim azalır',
-            'B': 'Dışsal maliyet tüketicilerden üçüncü kişilere aktarılır',
-            'C': 'Toplumsal marjinal fayda yükselir, üretim değişmez',
-            'D': 'Firmanın ortalama maliyeti düşer, kârı artar',
-            'E': 'Üretim artar ve piyasa fiyatı düşer',
+            'A': 'Firmanın üretimi artar ve dışsallık büyür',
+            'B': 'Firmanın özel maliyeti toplumsal maliyete eşitlenir',
+            'C': 'Üretim toplumsal optimum düzeye yaklaşır',
+            'D': 'Dışsallık içselleştirilmiş olur',
+            'E': 'Vergi hasılatı kamu geliri olarak elde edilir',
         },
         'A',
-        'Pigou vergisi dışsal maliyeti firmanın maliyetine ekler (içselleştirme). Özel marjinal maliyet toplumsal marjinal maliyete eşitlenince firma üretimi toplumsal optimum düzeyine indirir; fiyat yükselir, üretim azalır.',
+        'Pigou vergisi, marjinal dışsal maliyet kadar konulduğunda firmanın özel marjinal maliyetini toplumsal marjinal maliyete eşitler; dışsallık içselleştirilir, üretim azalarak toplumsal optimuma iner ve devlet vergi hasılatı elde eder.',
         'Kamu maliyesi teorisi: Pigou vergisinin etkisi',
     ),
     # düzey 2
@@ -681,16 +681,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        'Ortalama maliyetin geniş bir üretim aralığında azaldığı bir doğal tekelde fiyat marjinal maliyete eşit belirlenirse aşağıdakilerden hangisi ortaya çıkar?',
+        'Ortalama maliyetin geniş bir üretim aralığında azaldığı bir doğal tekelde fiyat marjinal maliyete eşit belirlenmiştir.\n\nBu durumla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Ortalama maliyet yükselmeye başlar',
-            'B': 'Üretim toplumsal optimumun altında kalır',
-            'C': 'Tüketici rantı ortadan kalkar',
-            'D': 'Firma olağanüstü kâr elde eder',
-            'E': 'Firma zarar eder; açık sübvansiyonla karşılanmalıdır',
+            'A': 'Fiyat ortalama maliyetin altında kalır',
+            'B': 'Kaynak dağılımı bakımından etkin fiyatlama sağlanır',
+            'C': 'Oluşan zarar açık sübvansiyonla karşılanabilir',
+            'D': 'Ortalama maliyet fiyatlaması bu zararı önlemenin bir yoludur',
+            'E': 'Firma kâr eder; sübvansiyona gerek kalmaz',
         },
         'E',
-        'Ortalama maliyet azalıyorsa marjinal maliyet ortalama maliyetin altındadır. Fiyat marjinal maliyete eşitlenince etkin miktar üretilir, ancak fiyat ortalama maliyeti karşılamadığından firma **zarar** eder. Bu nedenle ya açık sübvansiyonla kapatılır ya da ortalama maliyet veya Ramsey fiyatlandırmasına başvurulur.',
+        'Ortalama maliyetin azaldığı bölgede marjinal maliyet ortalama maliyetin altındadır. Fiyat marjinal maliyete eşitlenirse etkin kaynak dağılımı sağlanır ancak fiyat ortalama maliyeti karşılamadığından firma zarar eder; zarar açık sübvansiyonla kapatılabilir ya da ortalama maliyet fiyatlamasına geçilebilir.',
         'Kamu maliyesi teorisi: doğal tekel',
     ),
     # düzey 1
