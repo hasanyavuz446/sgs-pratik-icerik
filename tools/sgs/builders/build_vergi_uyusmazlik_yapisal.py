@@ -152,7 +152,7 @@ _PATCHES = {
         "Bir fiil nedeniyle önce 3.000 ₺ usulsüzlük cezası kesilmiş, sonradan aynı fiille 12.000 ₺ vergi ziyaı cezasını gerektiren vergi ziyaına sebebiyet verildiği anlaşılmıştır. İkmalen kesilecek ceza kaç ₺'dir?",
         {
             'A': '12.000',
-            'B': '15.000',
+            'B': '6.000',
             'C': '3.000',
             'D': '0',
             'E': '9.000',
@@ -376,7 +376,7 @@ _PATCHES = {
         "İkmalen tarh edilen 100.000 ₺ vergi ve kesilen 100.000 ₺ vergi ziyaı cezası için mükellef, ihbarnamenin tebliğinden itibaren 30 gün içinde m. 376'ya göre başvurmuştur. Şartları yerine getirirse toplam kaç ₺ öder?",
         {
             'A': '200.000',
-            'B': '125.000',
+            'B': '225.000',
             'C': '175.000',
             'D': '150.000',
             'E': '100.000',
@@ -393,7 +393,7 @@ _PATCHES = {
             'B': '25.000',
             'C': '0',
             'D': '50.000',
-            'E': '5.000',
+            'E': '15.000',
         },
         'A',
         "m. 370/a-2'ye göre izahın yeterli bulunmaması hâlinde, değerlendirme yazısının tebliğinden itibaren otuz gün içinde beyanın tamamlanması ve verginin gecikme zammı oranında zamla ödenmesi şartıyla **vergi ziyaı cezası, ziyaa uğratılan vergi üzerinden %20** oranında kesilir: 50.000 × %20 = **10.000 ₺**.",
@@ -865,8 +865,8 @@ _PATCHES = {
     '0060': patch(
         'Karara esas alınan bir belgenin sahte olduğu, karar kesinleştikten sonra verilen bir mahkeme kararıyla belirlenmiş ve istemde bulunacak taraf bunu öğrenmiştir. Yargılamanın yenilenmesi kaç gün içinde istenebilir?',
         {
-            'A': '15',
-            'B': '30',
+            'A': '105',
+            'B': '100',
             'C': '365',
             'D': '60',
             'E': '90',

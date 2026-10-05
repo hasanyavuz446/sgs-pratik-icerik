@@ -85,7 +85,7 @@ q("(a² − b²)/(a + b) + (a² + 2ab + b²)/(a + b) ifadesinin eşiti aşağıd
   "İlk kesir (a − b)(a + b)/(a + b) = a − b; ikinci kesir (a + b)²/(a + b) = a + b. Toplam 2a'dır.",
   verify=ayni((a**2 - b**2) / (a + b) + (a**2 + 2*a*b + b**2) / (a + b), 2*a))
 q("(x³ − 8)/(x − 2) ifadesinin x = 3 için değeri kaçtır?",
-  "19", ["13", "17", "25", "7"],
+  "19", ["13", "17", "11", "7"],
   "x³ − 8 = (x − 2)(x² + 2x + 4) olduğundan ifade x² + 2x + 4'e eşittir. x = 3 için 9 + 6 + 4 = 19.",
   verify=(sp.cancel((x**3 - 8) / (x - 2)).subs(x, 3), 19))
 q("(1 − 1/x) · x²/(x − 1) ifadesinin en sade hâli aşağıdakilerden hangisidir?",
@@ -97,7 +97,7 @@ q("(x² + 5x + 6)/(x² + 2x − 3) : (x + 2)/(x − 1) ifadesinin en sade hâli 
   "İlk kesir (x + 2)(x + 3)/((x + 3)(x − 1)) = (x + 2)/(x − 1). Aynı kesire bölündüğü için sonuç 1'dir.",
   verify=ayni((x**2 + 5*x + 6) / (x**2 + 2*x - 3) / ((x + 2) / (x - 1)), 1))
 q("a = 2,5 ve b = 1,5 olmak üzere (a² − b²)/(a − b) + a·b ifadesinin değeri kaçtır?",
-  "7,75", ["4", "6,25", "3,75", "8,5"],
+  "7,75", ["4", "6,25", "3,75", "7"],
   "(a² − b²)/(a − b) = a + b = 4. a·b = 2,5 · 1,5 = 3,75. Toplam 7,75.",
   verify=((lambda A, B: (A**2 - B**2) / (A - B) + A * B)(R(5, 2), R(3, 2)), R(31, 4)))
 q("(x − 1/x)/(1 − 1/x) ifadesinin en sade hâli aşağıdakilerden hangisidir?",
@@ -135,17 +135,17 @@ q("x ve y pozitif gerçel sayılar, x² + y² = 20 ve x·y = 8 olduğuna göre x
   "(x + y)² = x² + y² + 2xy = 20 + 16 = 36. x + y pozitif olduğundan 6'dır.",
   verify=(sp.sqrt(20 + 2*8), 6))
 q("Kenar uzunluğu 101 cm olan kare biçimli bir levhanın ortasından kenar uzunluğu 99 cm olan kare biçimli bir parça kesilip çıkarılmıştır. Levhanın kalan kısmının alanı kaç cm²'dir?",
-  "400", ["4", "200", "396", "404"],
+  "400", ["4", "200", "396", "392"],
   "Kalan alan 101² − 99² = (101 − 99)(101 + 99) = 2 · 200 = 400 cm².",
   verify=(101**2 - 99**2, 400))
 
 # ══ Üslü ve köklü ifadeler (8) ══════════════════════════════════════════════
 q("Bir bakteri kolonisinde bakteri sayısı her saat iki katına çıkmaktadır. Başlangıçta 3 bakteri bulunan kolonide x saat sonra ve (x + 1) saat sonra sayılan bakteri sayılarının toplamı 288 olduğuna göre x kaçtır?",
-  "5", ["3", "4", "6", "7"],
+  "5", ["3", "4", "2", "1"],
   "x saat sonra 3·2ˣ, (x + 1) saat sonra 3·2ˣ⁺¹ bakteri vardır. Toplam 3·2ˣ(1 + 2) = 9·2ˣ = 288, 2ˣ = 32 ve x = 5.",
   verify=(9 * 2**5, 288))
 q("3ˣ⁺² − 3ˣ = 72 olduğuna göre 9ˣ + 3ˣ⁻¹ ifadesinin değeri kaçtır?",
-  "84", ["82", "90", "27", "108"],
+  "84", ["86", "90", "141", "108"],
   "3ˣ(9 − 1) = 72 olduğundan 3ˣ = 9 ve x = 2. 9² + 3¹ = 81 + 3 = 84.",
   verify=(9**2 + 3**1, 84))
 q("a = √12, b = √27 ve c = √48 olmak üzere (a + b − c)·(a + b + c) çarpımı kaçtır?",
@@ -196,7 +196,7 @@ q("Dört basamaklı 3A4B sayısı 5 ve 9 ile tam bölünebildiğine göre A'nın
   "5 ile bölünebilme için B = 0 ya da 5. B = 0 ise 7 + A, 9'un katı → A = 2. B = 5 ise 12 + A → A = 6. Toplam 8.",
   verify=(sum({A for A in range(10) for B in (0, 5) if (3000 + 100*A + 40 + B) % 45 == 0}), 8))
 q("EBOB(84, 120) + EKOK(12, 18) işleminin sonucu kaçtır?",
-  "48", ["42", "60", "24", "72"],
+  "48", ["54", "60", "78", "72"],
   "EBOB(84, 120) = 12, EKOK(12, 18) = 36. Toplam 48.",
   verify=(sp.gcd(84, 120) + sp.lcm(12, 18), 48))
 q("Kenar uzunlukları 84 m ve 60 m olan dikdörtgen biçimli bir arazinin çevresine, her köşeye birer tane gelecek ve aralıkları eşit olacak biçimde ağaç dikilecektir. Buna göre en az kaç ağaç gerekir?",

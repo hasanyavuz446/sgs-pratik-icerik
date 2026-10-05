@@ -57,7 +57,7 @@ _PATCHES = {
             'B': '7.840',
             'C': '7.600',
             'D': '8.400',
-            'E': '7.000',
+            'E': '8.200',
         },
         'C',
         "FIFO'da önce giren stok önce satılır. 350 birimin maliyeti: 200 × 20 = 4.000 ve kalan 150 × 24 = 3.600 → **4.000 + 3.600 = 7.600 ₺**. Dönem sonu stok = 150 × 24 = 3.600 ₺.",
@@ -125,7 +125,7 @@ _PATCHES = {
         {
             'A': '2.900',
             'B': '4.200',
-            'C': '2.500',
+            'C': '3.300',
             'D': '7.100',
             'E': '3.000',
         },
@@ -151,7 +151,7 @@ _PATCHES = {
     '0009': patch(
         "Bir ticari mal kaleminde dönem başı stok 100 birim × 10 ₺, dönem içi alışlar 200 birim × 13 ₺ ve 100 birim × 16 ₺'dir. Dönemde 250 birim satılmıştır. FIFO yöntemine göre satılan malın maliyeti kaç ₺'dir?",
         {
-            'A': '2.500',
+            'A': '3.400',
             'B': '3.900',
             'C': '2.950',
             'D': '3.550',
@@ -207,7 +207,7 @@ _PATCHES = {
     '0013': patch(
         "Tartılı ortalama maliyet yöntemini kullanan işletmede dönem başı stok 200 br × 25 ₺, dönem içi alış 200 br × 35 ₺'dir. Dönemde 250 birim satılmıştır.\n\nBuna göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
         {
-            'A': '5.250',
+            'A': '3.000',
             'B': '4.500',
             'C': '7.500',
             'D': '3.750',
@@ -251,7 +251,7 @@ _PATCHES = {
         {
             'A': '2.650 ₺',
             'B': '2.700 ₺',
-            'C': '2.000 ₺',
+            'C': '3.000 ₺',
             'D': '3.450 ₺',
             'E': '2.500 ₺',
         },
@@ -264,7 +264,7 @@ _PATCHES = {
         "İşletme liste fiyatı 400.000 ₺ olan ticari malı fatura üzerinde %5 iskontoyla satın almıştır. Mal depoya gelinceye kadar 12.000 ₺ nakliye, 3.000 ₺ yolda sigorta ödenmiş ve alımda aracılık eden kişiye 4.000 ₺ komisyon verilmiştir. Mal depoya girdikten sonra satılana kadar 5.000 ₺ depolama gideri oluşmuştur (KDV ihmal). Buna göre ticari malın maliyet bedeli kaç ₺'dir?",
         {
             'A': '419.000 ₺',
-            'B': '404.000 ₺',
+            'B': '394.000 ₺',
             'C': '478.800 ₺',
             'D': '399.000 ₺',
             'E': '395.000 ₺',
@@ -291,10 +291,10 @@ _PATCHES = {
     '0019': patch(
         "Bir işletmenin dönem bilgileri şöyledir: yurt içi satışlar 900.000 ₺, satıştan iadeler 40.000 ₺, satış iskontoları 20.000 ₺, satılan ticari mallar maliyeti 520.000 ₺ ve genel yönetim giderleri 70.000 ₺. Buna göre brüt satış kârı kaç ₺'dir?",
         {
-            'A': '340.000 ₺',
+            'A': '300.000 ₺',
             'B': '320.000 ₺',
             'C': '250.000 ₺',
-            'D': '380.000 ₺',
+            'D': '260.000 ₺',
             'E': '840.000 ₺',
         },
         'B',
@@ -320,8 +320,8 @@ _PATCHES = {
         "Aralıklı envanter yöntemini kullanan bir işletmenin dönem başı ticari mal mevcudu 40.000 ₺, dönem içi ticari mal alışları toplamı 260.000 ₺ ve fiilî sayımla belirlenen dönem sonu ticari mal mevcudu 55.000 ₺'dir.\n\nBuna göre dönemde satılan ticari malların maliyeti (SMM) kaç ₺'dir?",
         {
             'A': '245.000',
-            'B': '355.000',
-            'C': '300.000',
+            'B': '135.000',
+            'C': '190.000',
             'D': '215.000',
             'E': '260.000',
         },

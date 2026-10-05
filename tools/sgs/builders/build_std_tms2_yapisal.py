@@ -55,7 +55,7 @@ _PATCHES = {
         {
             'A': '28',
             'B': '37',
-            'C': '42',
+            'C': '32',
             'D': '27',
             'E': '15',
         },
@@ -81,7 +81,7 @@ _PATCHES = {
     '0004': patch(
         "Bir işletmenin dönem başı stoku 1.000 birim × 10 ₺'dir. Dönemde 2.000 birim 10 ₺'den ve 1.000 birim 12 ₺'den alınmış, 2.500 birim satılmıştır. Dönem sonunda tek seferde hesaplanan ağırlıklı ortalama maliyet yöntemine göre satışların maliyeti kaç ₺'dir?",
         {
-            'A': '25.000',
+            'A': '27.500',
             'B': '26.250',
             'C': '30.000',
             'D': '42.000',
@@ -140,8 +140,8 @@ _PATCHES = {
             'A': '70.000',
             'B': '280.000',
             'C': '90.000',
-            'D': '20.000',
-            'E': '50.000',
+            'D': '120.000',
+            'E': '100.000',
         },
         'A',
         "TMS 2 p. 32'ye göre hammadde fiyatındaki düşüş mamullerin **maliyetin altında satılacağını** gösteriyorsa hammaddeler NGD'ye indirilir; bu durumda **yenileme maliyeti** hammaddenin NGD'sinin en uygun ölçüsü olabilir: **70.000 ₺**.",
@@ -183,7 +183,7 @@ _PATCHES = {
             'B': '1.050.000',
             'C': '1.230.000',
             'D': '870.000',
-            'E': '720.000',
+            'E': '1.020.000',
         },
         'D',
         "TMS 2 p. 34'e göre satılan stokların defter değeri hasılatın tanındığı dönemde gider yazılır: 150.000 + 900.000 − 180.000 = **870.000 ₺**.",
@@ -601,9 +601,9 @@ _PATCHES = {
         {
             'A': '392.000',
             'B': '380.000',
-            'C': '428.000',
+            'C': '388.000',
             'D': '408.000',
-            'E': '488.000',
+            'E': '328.000',
         },
         'D',
         "TMS 2 p. 11'e göre satın alma maliyeti; alış fiyatı, ithalat vergileri ve **vergi idaresinden geri alınamayan** diğer vergiler, nakliye ve doğrudan ilişkili diğer maliyetlerden oluşur; **ticari iskontolar düşülür**. İndirilecek KDV maliyete girmez: 400.000 − 20.000 + 16.000 + 9.000 + 3.000 = **408.000 ₺**.",
@@ -697,8 +697,8 @@ _PATCHES = {
     '0048': patch(
         "Bir işletmenin elindeki 1.000 birim ürünün birim maliyeti 48 ₺'dir. Bunların 600 birimi için birim fiyatı 52 ₺ olan kesin satış sözleşmesi vardır; kalan birimlerin piyasa satış fiyatı 44 ₺'ye düşmüştür. Satış maliyeti yoktur. Stoklar kaç ₺ ile gösterilir?",
         {
-            'A': '48.800',
-            'B': '48.000',
+            'A': '43.200',
+            'B': '44.800',
             'C': '46.400',
             'D': '44.000',
             'E': '45.600',

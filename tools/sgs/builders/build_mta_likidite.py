@@ -82,8 +82,8 @@ _PATCHES = {
         "Nakit oranı 0,25 olan bir işletmenin hazır değerleri 9.000 ₺, menkul kıymetleri 6.000 ₺'dir. Net çalışma sermayesi 36.000 ₺ olduğuna göre cari oran kaçtır?",
         {
             'A': '3,40',
-            'B': '0,60',
-            'C': '1,36',
+            'B': '2,60',
+            'C': '1,84',
             'D': '1,60',
             'E': '2,40',
         },
@@ -96,7 +96,7 @@ _PATCHES = {
         "Kısa vadeli yabancı kaynakları 80.000 ₺ olan bir işletmenin cari oranı 1,50'dir. İşletme 20.000 ₺ uzun vadeli kredi alıp bunun tamamıyla kısa vadeli borç öderse yeni cari oranı kaç olur?",
         {
             'A': '1,50',
-            'B': '2,50',
+            'B': '1,00',
             'C': '2',
             'D': '1,75',
             'E': '1,25',
@@ -109,7 +109,7 @@ _PATCHES = {
     '0006': patch(
         "Asit-test oranı 1,20 olan bir işletmenin stokları 30.000 ₺, dönen varlıkları 90.000 ₺'dir. Buna göre cari oran kaçtır?",
         {
-            'A': '3',
+            'A': '0,6',
             'B': '1,80',
             'C': '1,50',
             'D': '1,20',
@@ -139,7 +139,7 @@ _PATCHES = {
         {
             'A': '0,90',
             'B': '1,10',
-            'C': '4',
+            'C': '0,8',
             'D': '0,40',
             'E': '1,40',
         },
@@ -292,9 +292,9 @@ _PATCHES = {
         "Devamlı sermayesinin %25'i dönen varlıkların finansmanında kullanılan bir işletmenin devamlı sermayesi 400.000 ₺ ve kısa vadeli yabancı kaynakları 200.000 ₺'dir. Buna göre cari oran kaçtır?",
         {
             'A': '3',
-            'B': '0,50',
+            'B': '2,50',
             'C': '1,50',
-            'D': '1,25',
+            'D': '1,75',
             'E': '2',
         },
         'C',
@@ -322,7 +322,7 @@ _PATCHES = {
             'A': '1,50',
             'B': '1,35',
             'C': '2,25',
-            'D': '0,90',
+            'D': '1,80',
             'E': '2,10',
         },
         'B',
@@ -334,10 +334,10 @@ _PATCHES = {
         "Bir işletmenin hazır değerleri 24.000 ₺, menkul kıymetleri 16.000 ₺, ticari alacakları 60.000 ₺ ve kısa vadeli yabancı kaynakları 80.000 ₺'dir. Buna göre nakit oranı kaçtır?",
         {
             'A': '0,75',
-            'B': '0,20',
+            'B': '0,80',
             'C': '1,25',
             'D': '0,50',
-            'E': '0,30',
+            'E': '0,70',
         },
         'D',
         'Nakit oranı = (hazır değerler + menkul kıymetler) ÷ KVYK = 40.000 ÷ 80.000 = **0,50**. Ticari alacaklar asit-test oranına girer, nakit oranına girmez.',
@@ -389,9 +389,9 @@ _PATCHES = {
     '0026': patch(
         "Net satışları 900.000 ₺ olan bir işletmenin net çalışma sermayesi devir hızı 6, cari oranı 2,50'dir. Buna göre dönen varlıkları kaç ₺'dir?",
         {
-            'A': '375.000',
+            'A': '125.000',
             'B': '250.000',
-            'C': '360.000',
+            'C': '140.000',
             'D': '150.000',
             'E': '100.000',
         },
@@ -407,7 +407,7 @@ _PATCHES = {
             'B': '20.000',
             'C': '18.000',
             'D': '48.000',
-            'E': '12.000',
+            'E': '24.000',
         },
         'C',
         "(30.000 + x) ÷ 120.000 = 0,40 → x = **18.000 ₺**. Uzun vadeli kredi KVYK'yı değiştirmez; yalnız pay artar.",
@@ -417,7 +417,7 @@ _PATCHES = {
     '0028': patch(
         "Aktif toplamı 400.000 ₺ olan bir işletmede duran varlıklar dönen varlıkların 3 katıdır. Devamlı sermaye 350.000 ₺ olduğuna göre net çalışma sermayesi kaç ₺'dir?",
         {
-            'A': '−50.000',
+            'A': '150.000',
             'B': '250.000',
             'C': '100.000',
             'D': '50.000',
@@ -449,7 +449,7 @@ _PATCHES = {
             'B': '1,17',
             'C': '0,75',
             'D': '1,33',
-            'E': '0,43',
+            'E': '1,07',
         },
         'C',
         'Dönen varlıklar %30 (150.000 ₺), KVYK %40 (200.000 ₺). Cari oran = 150.000 ÷ 200.000 = **0,75**; NÇS −50.000 ₺. Duran varlıkların bir kısmı kısa vadeli kaynakla finanse edilmektedir.',

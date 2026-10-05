@@ -104,7 +104,7 @@ _PATCHES = {
     '0006': patch(
         "Gerçeğe uygun değer modelini uygulayan Mert A.Ş.'nin kiraya verdiği arsanın 31 Aralık 2025'teki gerçeğe uygun değeri 6.000.000 ₺'dir. Şirket 1 Temmuz 2026'da arsa üzerinde satmak amacıyla konut projesi geliştirmeye başlamıştır; bu tarihte arsanın gerçeğe uygun değeri 6.450.000 ₺'dir.\n\nTMS 40'a göre arsanın stoklara aktarılan maliyeti kaç ₺'dir?",
         {
-            'A': '6.900.000 ₺',
+            'A': '5.850.000 ₺',
             'B': '450.000 ₺',
             'C': '6.000.000 ₺',
             'D': '6.450.000 ₺',
@@ -131,7 +131,7 @@ _PATCHES = {
         "Ada A.Ş. kiraya vermek amacıyla bir iş merkezi satın almıştır. Bilgiler:\n\n- Satın alma bedeli: 8.000.000 ₺\n- Tapu harcı: 240.000 ₺\n- Hukuki danışmanlık ücreti: 60.000 ₺\n- Binanın açılış töreni gideri: 50.000 ₺\n- Kiracı bulunana kadar boş kalan sürede oluşan işletme zararı: 120.000 ₺\n\nTMS 40'a göre iş merkezinin ilk maliyeti kaç ₺'dir?",
         {
             'A': '8.000.000 ₺',
-            'B': '8.240.000 ₺',
+            'B': '8.360.000 ₺',
             'C': '8.300.000 ₺',
             'D': '8.350.000 ₺',
             'E': '8.470.000 ₺',
@@ -157,9 +157,9 @@ _PATCHES = {
         "Gerçeğe uygun değer modelini uygulayan Pınar A.Ş., kiraya verdiği binayı 1 Ocak 2026'da kendi genel müdürlüğü olarak kullanmaya başlamıştır. Bina 2018'de 3.000.000 ₺'ye alınmış olup bedelin tamamı binaya aittir. Transfer tarihindeki gerçeğe uygun değeri 3.600.000 ₺, kalan faydalı ömrü 30 yıl, kalıntı değeri sıfırdır.\n\nTMS 16'ya göre binanın 2026 yılı amortismanı kaç ₺'dir?",
         {
             'A': '600.000 ₺',
-            'B': '20.000 ₺',
+            'B': '220.000 ₺',
             'C': '120.000 ₺',
-            'D': '100.000 ₺',
+            'D': '140.000 ₺',
             'E': '0 ₺',
         },
         'C',
@@ -741,9 +741,9 @@ _PATCHES = {
     '0055': patch(
         "Değer artışı amacıyla bir arsa alan Bahar A.Ş., 5.000.000 ₺ satın alma bedelinin yanında 150.000 ₺ tapu harcı ve 100.000 ₺ emlakçı komisyonu ödemiştir. Arsanın tanıtımı için 40.000 ₺ reklam gideri yapılmış, arsanın ilk aylarında oluşan güvenlik giderleri ise 30.000 ₺ tutmuştur.\n\nArsa TMS 40'a göre ilk kayda hangi tutarla alınır?",
         {
-            'A': '5.320.000 ₺',
+            'A': '5.180.000 ₺',
             'B': '5.000.000 ₺',
-            'C': '5.290.000 ₺',
+            'C': '5.210.000 ₺',
             'D': '5.250.000 ₺',
             'E': '5.150.000 ₺',
         },

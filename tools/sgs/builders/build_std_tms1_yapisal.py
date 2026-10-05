@@ -53,7 +53,7 @@ _PATCHES = {
     '0002': patch(
         "Bir işletmenin dönem başı özkaynağı 2.000.000 ₺'dir. Dönem içinde 350.000 ₺ net kâr elde edilmiş, diğer kapsamlı gelir olarak 60.000 ₺ yeniden değerleme artışı doğmuş, 400.000 ₺ nakit sermaye artırımı yapılmış, ortaklara 150.000 ₺ kâr payı dağıtılmış ve işletme kendi paylarından 80.000 ₺ tutarında geri almıştır. Dönem sonu özkaynak toplamı kaç ₺'dir?",
         {
-            'A': '2.660.000',
+            'A': '2.500.000',
             'B': '2.580.000',
             'C': '2.520.000',
             'D': '2.180.000',
@@ -180,7 +180,7 @@ _PATCHES = {
         "Giderlerini fonksiyon esasına göre sunan bir işletmenin dönem verileri şöyledir: hasılat 3.000.000 ₺, satışların maliyeti 1.800.000 ₺, pazarlama giderleri 250.000 ₺, genel yönetim giderleri 320.000 ₺, araştırma ve geliştirme giderleri 90.000 ₺, finansman giderleri 140.000 ₺. Finansman giderinden önceki esas faaliyet kârı kaç ₺'dir?",
         {
             'A': '1.200.000',
-            'B': '400.000',
+            'B': '680.000',
             'C': '540.000',
             'D': '950.000',
             'E': '630.000',
@@ -208,8 +208,8 @@ _PATCHES = {
         "Bir işletmenin cari dönem diğer kapsamlı gelir kalemleri şöyledir: maddi duran varlık yeniden değerleme artışı 200.000 ₺, tanımlanmış fayda planlarının yeniden ölçüm kaybı 50.000 ₺, gerçeğe uygun değer değişimi diğer kapsamlı gelire yansıtılan özkaynak araçlarından kazanç 30.000 ₺, yurt dışı işletmenin çevrim farkı kazancı 80.000 ₺, nakit akış riskinden korunmanın etkin kısmından kazanç 40.000 ₺. Sonradan kâr veya zarara yeniden sınıflandırılmayacak kalemlerin net toplamı kaç ₺'dir?",
         {
             'A': '300.000',
-            'B': '280.000',
-            'C': '230.000',
+            'B': '80.000',
+            'C': '130.000',
             'D': '180.000',
             'E': '120.000',
         },
@@ -334,8 +334,8 @@ _PATCHES = {
         "Bir işletmenin cari dönem verileri şöyledir: dönem net kârı 850.000 ₺, maddi duran varlık yeniden değerleme artışı 120.000 ₺, yurt dışı işletmenin çevriminden doğan kur farkı kaybı 40.000 ₺, nakit sermaye artırımı 300.000 ₺ ve ortaklara dağıtılan kâr payı 100.000 ₺. İşletmenin toplam kapsamlı geliri kaç ₺'dir?",
         {
             'A': '930.000',
-            'B': '1.230.000',
-            'C': '1.010.000',
+            'B': '630.000',
+            'C': '810.000',
             'D': '830.000',
             'E': '850.000',
         },
@@ -389,10 +389,10 @@ _PATCHES = {
     '0026': patch(
         "Normal faaliyet döngüsü 18 ay olan bir üretim işletmesinin raporlama dönemi sonundaki bakiyeleri şöyledir: kasa ve banka 150.000 ₺ (kullanım kısıtı yok), 10 ay vadeli ticari alacaklar 320.000 ₺, ticari amaçla elde tutulan hisse senetleri 90.000 ₺, 15 ayda satılması beklenen stoklar 410.000 ₺, personele verilen 30 ay vadeli borçlar 200.000 ₺, yatırım amaçlı gayrimenkuller 750.000 ₺ ve ertelenmiş vergi varlığı 60.000 ₺. İşletmenin dönen varlık toplamı kaç ₺'dir?",
         {
-            'A': '1.170.000',
+            'A': '770.000',
             'B': '880.000',
             'C': '970.000',
-            'D': '1.030.000',
+            'D': '910.000',
             'E': '560.000',
         },
         'C',

@@ -82,9 +82,9 @@ _PATCHES = {
         "Bir işletmenin cari oranı 2,50, likidite (asit-test) oranı 0,90'dur. Stoklarının değeri 48.000 ₺ olduğuna göre kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
         {
             'A': '75.000',
-            'B': '19.200',
+            'B': '40.800',
             'C': '76.800',
-            'D': '27.000',
+            'D': '33.000',
             'E': '30.000',
         },
         'E',
@@ -123,7 +123,7 @@ _PATCHES = {
     '0007': patch(
         'Bir işletmenin bilanço verileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Hazır değerler | 12.000 |\n| Menkul kıymetler | 8.000 |\n| Kısa vadeli ticari alacaklar | 30.000 |\n| Stoklar | 50.000 |\n| Kısa vadeli yabancı kaynaklar | 100.000 |\n\nBuna göre işletmenin stok bağımlılık oranı kaçtır?',
         {
-            'A': '0,50',
+            'A': '1,50',
             'B': '2',
             'C': '1,60',
             'D': '1',
@@ -222,10 +222,10 @@ _PATCHES = {
         'Bir işletmenin döneme ait bilgileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı stoklar | 400.000 |\n| Dönem başı ticari alacaklar | 700.000 |\n| Brüt satış kârı | 3.600.000 |\n| Dönem sonu ticari alacaklar | 800.000 |\n| Dönem sonu stoklar | 500.000 |\n| Net satışlar | 9.000.000 |\n\nBuna göre işletmenin stok devir hızı kaçtır?',
         {
             'A': '12',
-            'B': '8',
+            'B': '16',
             'C': '13,50',
             'D': '20',
-            'E': '10,80',
+            'E': '13,20',
         },
         'A',
         'Satışların maliyeti = 9.000.000 − 3.600.000 = 5.400.000 ₺. Ortalama stok = (400.000 + 500.000) ÷ 2 = 450.000 ₺. Stok devir hızı = 5.400.000 ÷ 450.000 = **12**. Alacak verileri bu oran için gerekmez.',
@@ -418,8 +418,8 @@ _PATCHES = {
         'Pasif toplamı 30.000 ₺ olan bir işletmenin duran varlıkları dönen varlıklarının 4 katıdır. Devamlı (sürekli) sermayesi 27.000 ₺ olduğuna göre işletmenin cari oranı kaçtır?',
         {
             'A': '2,50',
-            'B': '1,50',
-            'C': '0,50',
+            'B': '3,00',
+            'C': '3,50',
             'D': '2',
             'E': '8',
         },
@@ -641,10 +641,10 @@ _PATCHES = {
     '0044': patch(
         "Bir işletmenin hazır değerleri 3.000 ₺, menkul kıymetleri 5.000 ₺, stokları 16.000 ₺; cari oranı 1,75 ve nakit oranı 0,25'tir. Buna göre işletmenin likidite (asit-test) oranı kaçtır?",
         {
-            'A': '0,50',
+            'A': '2,00',
             'B': '1,75',
             'C': '1,50',
-            'D': '1',
+            'D': '1,5',
             'E': '1,25',
         },
         'E',
@@ -712,10 +712,10 @@ _PATCHES = {
         "Bir işletmenin özkaynak kalemleri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Sermaye | 3.000.000 |\n| Ödenmemiş sermaye | 500.000 |\n| Hisse senedi ihraç primleri | 400.000 |\n| Kâr yedekleri | 900.000 |\n| Geçmiş yıllar zararları | 700.000 |\n| Dönem net kârı | 350.000 |\n\nBuna göre işletmenin özkaynakları kaç ₺'dir?",
         {
             'A': '3.450.000',
-            'B': '4.450.000',
+            'B': '2.450.000',
             'C': '3.100.000',
             'D': '3.050.000',
-            'E': '4.850.000',
+            'E': '2.050.000',
         },
         'A',
         'Özkaynak = sermaye − ödenmemiş sermaye + ihraç primi + kâr yedekleri − geçmiş yıl zararları + dönem net kârı = 3.000.000 − 500.000 + 400.000 + 900.000 − 700.000 + 350.000 = **3.450.000 ₺**. Ödenmemiş sermaye ve geçmiş yıl zararları indirim kalemidir.',

@@ -264,7 +264,7 @@ _PATCHES = {
         "İşletmenin kasasında 1 € = 36 ₺ kuruyla kaydedilmiş 3.000 € bulunmaktadır. Yıl içinde bunun 1.000 €'su 1 € = 38 ₺'den bozdurularak Türk lirası olarak kasaya alınmıştır. Dönem sonunda kalan dövizler 1 € = 39 ₺ kuruyla değerlenmiştir. Buna göre bu işlemlerden doğan toplam kambiyo kârı kaç ₺'dir?",
         {
             'A': '4.000 ₺',
-            'B': '9.000 ₺',
+            'B': '7.000 ₺',
             'C': '2.000 ₺',
             'D': '6.000 ₺',
             'E': '8.000 ₺',

@@ -155,7 +155,7 @@ _PATCHES = {
             'B': '1.234.567',
             'C': '1.234.500',
             'D': '1.230.000',
-            'E': '1.235.000',
+            'E': '1.233.000',
         },
         'C',
         "m. 10/4'e göre **taşıt değerlerinin hesabında yüz Türk lirasına**, ödenmesi gereken vergi miktarlarında ise **bir Türk lirasına** kadar olan kesirler dikkate alınmaz: 1.234.567 → **1.234.500 ₺**.",

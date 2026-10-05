@@ -259,7 +259,7 @@ q("f(x) = (3x − 1)/(x + 2) olduğuna göre f′(1) kaçtır?",
   verify=(sp.diff((3*x - 1)/(x + 2), x).subs(x, 1), sp.Rational(7, 9)))
 
 q("f(x) = (x² + 1)⁵ ve g(x) = f(x)/(x² + 1)⁴ olduğuna göre f′(1) + g′(1) toplamı kaçtır?",
-  "162", ["160", "164", "82", "322"],
+  "162", ["160", "158", "82", "2"],
   "f′(x) = 5(x² + 1)⁴ · 2x, f′(1) = 5 · 16 · 2 = 160. g(x) = x² + 1 olduğundan g′(1) = 2. Toplam 162.",
   verify=(sp.diff((x**2 + 1)**5, x).subs(x, 1) + sp.diff(x**2 + 1, x).subs(x, 1), 162))
 
@@ -334,7 +334,7 @@ q("f(x) = sin 2x + cos 2x fonksiyonunun [0, π/2] aralığındaki en büyük de�
   verify=(sp.sin(2*sp.pi/8) + sp.cos(2*sp.pi/8), sp.sqrt(2)))
 
 q("y = x² + 3x eğrisine (1, 4) noktasında çizilen teğetin eğimi kaçtır?",
-  "5", ["4", "2", "3", "7"],
+  "5", ["4", "2", "3", "1"],
   "Teğetin eğimi o noktadaki türev değeridir: y′ = 2x + 3. x = 1 yerine konur: 2 + 3 = 5.",
   verify=(sp.diff(x**2 + 3*x, x).subs(x, 1), 5))
 
@@ -391,7 +391,7 @@ q("a bir gerçel sayı olmak üzere ∑(n=1→∞) a/3ⁿ = 3 olduğuna göre �
   verify=(sp.summation(6/sp.Integer(4)**n, (n, 1, oo)), 2))
 
 q("Bir amfitiyatronun ilk sırasında 12 koltuk vardır ve her sırada bir önceki sıradan 3 fazla koltuk bulunmaktadır. Amfitiyatroda 10 sıra olduğuna göre toplam koltuk sayısı kaçtır?",
-  "255", ["225", "240", "270", "285"],
+  "255", ["315", "300", "270", "285"],
   "Koltuk sayıları ilk terimi 12, ortak farkı 3 olan aritmetik dizidir. ∑(k=1→10) (12 + 3(k − 1)) = 10/2 · (2·12 + 9·3) = 5 · 51 = 255.",
   verify=(sp.summation(12 + 3*(k - 1), (k, 1, 10)), 255))
 

@@ -112,8 +112,8 @@ _PATCHES = {
             'A': '340.000',
             'B': '3.000',
             'C': '37.000',
-            'D': '40.000',
-            'E': '43.000',
+            'D': '34.000',
+            'E': '31.000',
         },
         'C',
         "GUDKZ dışındaki bu varlıkta komisyon ilk ölçüme eklenir: 300.000 + 3.000 = 303.000 ₺. Yıl sonu değer artışı DKG'ye yansır: 340.000 − 303.000 = **37.000 ₺**.",
@@ -319,10 +319,10 @@ _PATCHES = {
     '0021': patch(
         "Bir işletmenin borçları şunlardır: tedarikçilere ticari borçlar, banka kredisi, çıkarılmış tahviller, ödenecek kurumlar vergisi ve müşteriden alınan sipariş avansı (karşılığında mal teslim edilecek). Bunlardan kaç tanesi TMS 32'ye göre finansal yükümlülüktür?",
         {
-            'A': '2',
+            'A': '6',
             'B': '5',
             'C': '3',
-            'D': '1',
+            'D': '7',
             'E': '4',
         },
         'C',
@@ -432,7 +432,7 @@ _PATCHES = {
         "Bir bankanın 1.000.000 ₺ tutarındaki kredisinde kredi riski ilk muhasebeleştirmeden bu yana önemli ölçüde artmıştır; kredi henüz değer düşüklüğüne uğramamıştır. Kredinin ömrü boyunca temerrüt olasılığı %10, temerrüt hâlinde kayıp oranı %40'tır. Ayrılacak zarar karşılığı kaç ₺'dir?",
         {
             'A': '60.000',
-            'B': '8.000',
+            'B': '72.000',
             'C': '100.000',
             'D': '40.000',
             'E': '400.000',
@@ -601,8 +601,8 @@ _PATCHES = {
         {
             'A': '500.000',
             'B': '495.000',
-            'C': '510.000',
-            'D': '505.000',
+            'C': '480.000',
+            'D': '490.000',
             'E': '5.000',
         },
         'A',
@@ -711,9 +711,9 @@ _PATCHES = {
     '0049': patch(
         "Bir bankanın brüt defter değeri 800.000 ₺ olan bir kredisi kredi değer düşüklüğüne uğramıştır (3. aşama); kredi için 300.000 ₺ zarar karşılığı ayrılmıştır. Etkin faiz oranı %10'dur. Kredi için tanınacak yıllık faiz geliri kaç ₺'dir?",
         {
-            'A': '110.000',
+            'A': '10.000',
             'B': '50.000',
-            'C': '80.000',
+            'C': '20.000',
             'D': '0',
             'E': '30.000',
         },

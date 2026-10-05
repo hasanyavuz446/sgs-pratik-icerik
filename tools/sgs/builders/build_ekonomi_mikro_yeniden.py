@@ -111,7 +111,7 @@ _PATCHES = {
         {
             'A': '20',
             'B': '40',
-            'C': '10',
+            'C': '30',
             'D': '25',
             'E': '50',
         },
@@ -348,7 +348,7 @@ _PATCHES = {
         "Bir piyasada arz fonksiyonu P = 4 + 2Q biçimindedir. Piyasa fiyatı 16 ₺ ise üretici fazlası kaç ₺'dir?",
         {
             'A': '36',
-            'B': '24',
+            'B': '60',
             'C': '48',
             'D': '72',
             'E': '96',
@@ -615,9 +615,9 @@ _PATCHES = {
         {
             'A': '450',
             'B': '600',
-            'C': '150',
+            'C': '1050',
             'D': '900',
-            'E': '300',
+            'E': '750',
         },
         'A',
         'P = 20 iken Q = 30. Tüketici fazlası, talep eğrisinin altında ve fiyat çizgisinin üzerinde kalan üçgendir: ½ × (50 − 20) × 30 = **450**. 900 üçgen yerine dikdörtgen alınmasının sonucudur.',

@@ -109,10 +109,10 @@ _PATCHES = {
     '0006': patch(
         "İşletme bir ayda üç alış yapmıştır: 40.000 ₺'lik mal (%20), 25.000 ₺'lik mal (%20) ve 30.000 ₺'lik mal (%10). Tümü belgeli olduğuna göre bu ay 191 İndirilecek KDV hesabında biriken toplam tutar kaç ₺'dir?",
         {
-            'A': '9.500 ₺',
+            'A': '22.500 ₺',
             'B': '19.000 ₺',
             'C': '95.000 ₺',
-            'D': '13.000 ₺',
+            'D': '20.000 ₺',
             'E': '16.000 ₺',
         },
         'E',
@@ -180,7 +180,7 @@ _PATCHES = {
         "Bir mal imalatçıdan 100.000 ₺ + %20 KDV ile alınıp, 150.000 ₺ + %20 KDV ile satılmıştır. İşletmenin bu iki işlem sonucu vergi dairesine ödeyeceği net KDV kaç ₺'dir?",
         {
             'A': '20.000 ₺',
-            'B': '5.000 ₺',
+            'B': '15.000 ₺',
             'C': '30.000 ₺',
             'D': '50.000 ₺',
             'E': '10.000 ₺',
@@ -193,11 +193,11 @@ _PATCHES = {
     '0012': patch(
         "İşletme 12.000 ₺ + %20 KDV bedelle danışmanlık hizmeti almış, bedeli banka ile ödemiştir (tevkifat yoktur). 191 İNDİRİLECEK KDV'ye alınacak tutar kaç ₺'dir?",
         {
-            'A': '2.000 ₺',
+            'A': '2.800 ₺',
             'B': '2.400 ₺',
             'C': '14.400 ₺',
             'D': '12.000 ₺',
-            'E': '1.200 ₺',
+            'E': '3.600 ₺',
         },
         'B',
         "Yüklenilen KDV = matrah × oran = 12.000 × %20 = **2.400 ₺** (191'in borcuna). 14.400 ₺ KDV dahil ödenen toplamdır.",
@@ -264,7 +264,7 @@ _PATCHES = {
         "Bir işletme ay içinde %10 KDV'ye tabi malları KDV dâhil 110.000 ₺'ye, %20 KDV'ye tabi malları KDV dâhil 60.000 ₺'ye satmıştır. Buna göre bu satışlar nedeniyle 391 Hesaplanan KDV hesabına yazılacak toplam tutar kaç ₺'dir?",
         {
             'A': '34.000 ₺',
-            'B': '23.000 ₺',
+            'B': '16.000 ₺',
             'C': '20.000 ₺',
             'D': '15.000 ₺',
             'E': '17.000 ₺',

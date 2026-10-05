@@ -54,9 +54,9 @@ _PATCHES = {
         "Finansal kaldıraç oranı 0,70 olan bir işletmenin özkaynakları 90.000 ₺'dir. Buna göre toplam borçları kaç ₺'dir?",
         {
             'A': '210.000',
-            'B': '63.000',
+            'B': '357.000',
             'C': '300.000',
-            'D': '129.000',
+            'D': '291.000',
             'E': '90.000',
         },
         'A',
@@ -67,7 +67,7 @@ _PATCHES = {
     '0003': patch(
         "Bir işletmenin vergi öncesi kârı 360.000 ₺, faiz giderleri 90.000 ₺'dir. Buna göre faiz karşılama oranı kaçtır?",
         {
-            'A': '6',
+            'A': '2',
             'B': '0,25',
             'C': '5',
             'D': '3',
@@ -82,7 +82,7 @@ _PATCHES = {
         'Kısa vadeli yabancı kaynakları 180.000 ₺, uzun vadeli yabancı kaynakları 120.000 ₺ olan bir işletmede kısa vadeli borçların toplam borçlar içindeki payı yüzde kaçtır?',
         {
             'A': '%66,67',
-            'B': '%40',
+            'B': '%80',
             'C': '%30',
             'D': '%150',
             'E': '%60',
@@ -151,7 +151,7 @@ _PATCHES = {
     '0009': patch(
         "Satışların maliyeti 2.400.000 ₺ ve ortalama stokta kalma süresi 45 gün olan bir işletmenin ortalama stokları kaç ₺'dir? (1 yıl = 360 gün)",
         {
-            'A': '360.000',
+            'A': '230.000',
             'B': '240.000',
             'C': '108.000',
             'D': '300.000',
@@ -195,7 +195,7 @@ _PATCHES = {
         {
             'A': '%24',
             'B': '%12',
-            'C': '%27,27',
+            'C': '%20,73',
             'D': '%21,43',
             'E': '%20',
         },
@@ -221,8 +221,8 @@ _PATCHES = {
     '0014': patch(
         'Faiz ve vergi öncesi kârı 150.000 ₺, toplam aktifleri 1.000.000 ₺ olan bir işletmenin faiz ve vergi öncesi aktif kârlılığı yüzde kaçtır?',
         {
-            'A': '%10',
-            'B': '%6,67',
+            'A': '%20',
+            'B': '%23,33',
             'C': '%15',
             'D': '%150',
             'E': '%1,50',
@@ -235,11 +235,11 @@ _PATCHES = {
     '0015': patch(
         "Aktif toplamı 2.000.000 ₺ ve finansal kaldıraç oranı 0,60 olan bir işletmenin özkaynak kârlılığı %25'tir. Buna göre net kârı kaç ₺'dir?",
         {
-            'A': '80.000',
+            'A': '320.000',
             'B': '200.000',
             'C': '300.000',
             'D': '500.000',
-            'E': '120.000',
+            'E': '280.000',
         },
         'B',
         'Özkaynak = 2.000.000 × 0,40 = 800.000 ₺. Net kâr = 800.000 × %25 = **200.000 ₺** (aktif kârlılığı %10).',
@@ -249,8 +249,8 @@ _PATCHES = {
     '0016': patch(
         "Vergi öncesi kârı 200.000 ₺ olan bir işletmenin kurumlar vergisi oranı %20, özkaynakları 800.000 ₺'dir. Buna göre özkaynak kârlılığı yüzde kaçtır?",
         {
-            'A': '%5',
-            'B': '%16',
+            'A': '%35',
+            'B': '%24',
             'C': '%20',
             'D': '%30',
             'E': '%25',

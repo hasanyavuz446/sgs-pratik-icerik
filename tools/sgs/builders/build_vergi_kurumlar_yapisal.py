@@ -153,7 +153,7 @@ _PATCHES = {
         {
             'A': '2027',
             'B': '2026',
-            'C': '2031',
+            'C': '2021',
             'D': '2024',
             'E': '2025',
         },
@@ -711,9 +711,9 @@ _PATCHES = {
     '0049': patch(
         "(A) A.Ş.'nin 2026 hesap dönemi kurum kazancı 4.000.000 ₺'dir. Şirket yıl içinde bir belediyeye makbuz karşılığı 300.000 ₺ nakdi bağış yapmıştır; başka bağış ve yardımı yoktur. Bu bağıştan kurum kazancından indirilebilecek tutar kaçtır?",
         {
-            'A': '150.000 ₺',
+            'A': '250.000 ₺',
             'B': '400.000 ₺',
-            'C': '120.000 ₺',
+            'C': '280.000 ₺',
             'D': '200.000 ₺',
             'E': '300.000 ₺',
         },
@@ -868,8 +868,8 @@ _PATCHES = {
             'A': '2025',
             'B': '2026',
             'C': '2027',
-            'D': '2028',
-            'E': '2029',
+            'D': '2024',
+            'E': '2023',
         },
         'C',
         "KVK m. 32/C/5'e göre ilk defa faaliyete başlayan kurumlar hakkında faaliyete başlanılan hesap döneminden itibaren **üç hesap dönemi** boyunca asgari kurumlar vergisi hükümleri uygulanmaz: 2024, 2025 ve 2026 dışarıda kalır; ilk uygulama dönemi 2027'dir.",

@@ -110,8 +110,8 @@ _PATCHES = {
         'Turizm müessesesi belgesi alan bir otelin binası, belgenin alındığı yılı takip eden bütçe yılından itibaren kaç yıl geçici muaflıktan yararlanır?',
         {
             'A': '10',
-            'B': '3',
-            'C': '2',
+            'B': '7',
+            'C': '8',
             'D': '15',
             'E': '5',
         },
@@ -334,7 +334,7 @@ _PATCHES = {
         "Bir daireye paylı mülkiyetle malik olan kişinin payı 1/4'tür. Dairenin yıllık bina vergisi 8.000 ₺ ise bu kişinin mükellef olduğu tutar kaç ₺'dir?",
         {
             'A': '2.000',
-            'B': '1.600',
+            'B': '2.400',
             'C': '6.000',
             'D': '8.000',
             'E': '4.000',
@@ -476,7 +476,7 @@ _PATCHES = {
             'A': '5',
             'B': '2',
             'C': '10',
-            'D': '1',
+            'D': '4',
             'E': '3',
         },
         'B',

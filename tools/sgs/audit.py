@@ -98,6 +98,23 @@ ELEME_ISARETI = re.compile(
 ONCUL = re.compile(r"(?m)^\s*(IV|I{1,3}|V)[\.\)]\s")
 
 
+SAYI = re.compile(r"(%?)\s*(-?\d{1,3}(?:\.\d{3})+|-?\d+)(,\d+)?\s*(₺|TL|adet|gün|saat|ay|yıl|kg|birim|kişi)?")
+
+
+def sayisal_degerler(options: dict) -> dict | None:
+    """Beş şık da yalnız bir sayıdan (ve aynı birimden) oluşuyorsa {harf: değer}, değilse None."""
+    out, birim = {}, set()
+    for k, v in options.items():
+        m = SAYI.fullmatch(v.strip().replace("−", "-"))
+        if not m:
+            return None
+        out[k] = float(m.group(2).replace(".", "") + (m.group(3) or "").replace(",", "."))
+        birim.add((m.group(1), m.group(4)))
+    if len(birim) != 1 or len(set(out.values())) != len(out):
+        return None
+    return out
+
+
 def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
     """Soruyu HİÇ OKUMADAN alınabilen EN İYİ puan (%) ve onu veren strateji.
 
@@ -116,7 +133,8 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
       | 4 strateji, dar dolgu kümesi   | %23 | %30 | — | %38 |
       | 6 strateji, dar dolgu kümesi   | %24 | %30 | %33 | %36 |
       | 6 strateji, geniş küme         | %24 | %31 | %35 | %41 |
-      | 6 strateji, 2026-09-26 kümesi  | %25 | %31 | %33 | %43 |  ← şimdi
+      | 6 strateji, 2026-09-26 kümesi  | %25 | %31 | %33 | %43 |
+      | 8 strateji (+2 sayısal sıra)   | %24 | %30 | %35 | %38 |  ← şimdi (2026-10-05)
 
       · %32 UYARI  → 95. yüzdelik %31; bir üstü. (Önce %28 demiştim; rastgelenin
                      %14'ü aşıyordu, yani her yedi temiz dosyadan biri boşuna uyarı
@@ -146,6 +164,20 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
         enb, enk = max(len(v) for v in o.values()), min(len(v) for v in o.values())
         return {k for k in o if enk < len(o[k]) < enb} or set(o)
 
+    def sayisal_orta(o):
+        """Beş şık da aynı birimde sayıysa büyüklük olarak iki ucu ele (en küçük, en büyük)."""
+        d = sayisal_degerler(o)
+        if not d:
+            return set(o)
+        sirali = sorted(d, key=d.get)
+        return set(sirali[1:-1])
+
+    def sayisal_ortanca(o):
+        d = sayisal_degerler(o)
+        if not d:
+            return set(o)
+        return {sorted(d, key=d.get)[2]}
+
     # Her strateji bir ADAY KÜMESİ döndürür; puan = küme doğruyu içeriyorsa 1/|küme|.
     # ⚠ Çerçeve önce tek şık seçiyordu ve "daraltma" stratejilerini modelleyemiyordu:
     # aday iki ucu eleyip 3 şıkta kalırsa %33 eder (taban %20), ama tek-şık çerçevesi
@@ -163,6 +195,13 @@ def kor_ogrenci(questions: list[dict]) -> tuple[int, str]:
         # 2026-07-28 temizliğinden ÖNCEKİ havuzda 11 paketi FATAL'la yakalıyordu
         # (muhasebe_standartlari'nın çoğu, %35-42); temizlikten sonra hepsi %21-26.
         "işaretliyi ele, kalandan tahmin et": isaretsiz,
+        # Sayısal şıklarda boy çoğunlukla eşittir; ipucu BÜYÜKLÜK sırasında doğar.
+        # Çeldiriciler "doğru değerin biraz altı / biraz üstü" diye üretilince doğru
+        # değer ortanca kalır. 2026-10-05 ölçümü: havuzun 1.117 sayısal sorusunda doğru
+        # cevabın büyüklük sırası [74, 293, 398, 274, 78] — uçlar %13 (beklenen %40),
+        # ortanca %36 (beklenen %20). Boy stratejileri bunu GÖREMİYORDU.
+        "sayısal: uçları ele, ortadan tahmin et": sayisal_orta,
+        "sayısal: ortanca değeri seç": sayisal_ortanca,
     }
     en_iyi = (0, "-")
     for ad, sec in stratejiler.items():

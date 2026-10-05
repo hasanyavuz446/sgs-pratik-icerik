@@ -139,7 +139,7 @@ _PATCHES = {
         {
             'A': '2.370',
             'B': '4.740',
-            'C': '18.960',
+            'C': '7.110',
             'D': '9.480',
             'E': '0',
         },
@@ -152,9 +152,9 @@ _PATCHES = {
         "Basılı damga konulacak kâğıtlar için hesaplanan damga vergisi 100.000 ₺'dir. Vergi basılı damga şekliyle peşin ödenirse ödenecek tutar kaç ₺'dir?",
         {
             'A': '95.000',
-            'B': '90.000',
+            'B': '110.000',
             'C': '100.000',
-            'D': '85.000',
+            'D': '115.000',
             'E': '105.000',
         },
         'A',

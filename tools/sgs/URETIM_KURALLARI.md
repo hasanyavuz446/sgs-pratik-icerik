@@ -551,6 +551,18 @@ bunu boydan göremez; tasarımda ayrıca sayılmalı. Çare: anlamlı çeldirici
 hatanın sonucu) önce kullan, doğru cevabın sırasını 0-4 arasında döngüyle hedefle, eksik
 kalan tarafı doğru değerden adımlı dolguyla tamamla. Sonuç dağılımı 6/5/5/7/6.
 
+**Havuz ölçümü (2026-10-05) — tell her yerdeydi.** 1.268 sayısal soruda doğru cevabın
+sırası [74, 293, 398, 274, 78]: uçlar %13 (beklenen %40), ortanca %31-36 (beklenen %20).
+`audit.kor_ogrenci`'ye iki strateji eklendi ("sayısal: uçları ele" / "sayısal: ortanca
+değeri seç"); null model yeniden ölçüldü (ort. %24, p95 %30, p99 %35 → eşikler 32/36
+geçerli). Yeni stratejiyle 3 paket FATAL çıktı (oran-orantı **%57**, safha %39, birleşik
+%38), 2 paket %31-35. Onarım `tools/sgs/sayisal_sira_dengele.py`: çeldirici doğru değere
+göre aynalanır (yeni = 2·doğru − eski); çözümde ara değer olarak geçen çeldirici, 0 ve
+negatif sonuç korunur. 51 pakette 418 şık değişti; havuz [203, 291, 292, 262, 160]
+(uçlar %30, ortanca %24). Dışarıda kalan: maliyet_hacim_kar (çok sahipli), vergi/kdv
+(iki builder), hukuk ve Atatürk (yıl/süre şıklarında aynalanan değer başka olaya denk
+gelebilir; n küçük).
+
 ⚠️ **Çare doğru şıkkı kısaltmak değil, çeldiriciye gerçek içerik eklemektir** —
 yanlış iddianın kendi sonucunu yazdır ("…kaydedilir **ve varlık 455.000 ₺'ye
 indirilir**"). Mekanik kısaltma boyu düzeltir, bilgiyi götürür.

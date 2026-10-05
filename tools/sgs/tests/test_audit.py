@@ -178,6 +178,38 @@ class KorOgrenciTest(unittest.TestCase):
         uzun, kisa, olcum = audit.boy_egilimi(havuz([20, 20, 20, 20, 20], answer_index=0))
         self.assertEqual((uzun, kisa, olcum), (0, 0, 30))
 
+    def test_sayisal_ortanca_deger_yakalanir(self):
+        """Tutar şıklarında boy eşittir; ipucu büyüklük sırasındadır.
+
+        Çeldiriciler doğru değerin altına ve üstüne ikişer yazılınca doğru cevap hep
+        ortanca kalır. Boy stratejileri bunu göremez (bütün şıklar aynı uzunlukta).
+        """
+        questions = []
+        for i in range(30):
+            dogru = 40_000 + i * 1_000
+            degerler = [dogru - 4_000, dogru - 2_000, dogru, dogru + 2_000, dogru + 4_000]
+            rnd = [2, 0, 4, 1, 3]
+            sira = rnd[i % 5:] + rnd[:i % 5]
+            options = {h: f"{degerler[j]:,} ₺".replace(",", ".") for h, j in zip("ABCDE", sira)}
+            harf = "ABCDE"[sira.index(2)]
+            questions.append(soru(f"q{i}", f"{i}. işletmenin tutarı kaç ₺'dir?", options, answer=harf))
+        fatals = audit_et(questions)
+        self.assertTrue(any("kör öğrenci" in f and "sayısal" in f for f in fatals), fatals)
+
+    def test_sayisal_sira_dagiliminda_temiz(self):
+        """Doğru değer sıralamada gezinirse sayısal strateji yanlış alarm vermez."""
+        questions = []
+        for i in range(30):
+            dogru = 140_000 + i * 1_000
+            r = i % 5
+            degerler = [dogru + (j - r) * 2_000 for j in range(5)]
+            sira = [(j + 2 * i) % 5 for j in range(5)]
+            options = {h: f"{degerler[j]:,} ₺".replace(",", ".") for h, j in zip("ABCDE", sira)}
+            harf = "ABCDE"[sira.index(r)]
+            questions.append(soru(f"q{i}", f"{i}. işletmenin tutarı kaç ₺'dir?", options, answer=harf))
+        fatals = audit_et(questions)
+        self.assertEqual([f for f in fatals if "kör öğrenci" in f], [])
+
     def test_dolgu_yalniz_celdiricideyse_yakalanir(self):
         """Dolgu kalıbı yalnız çeldiricilerde ise kalıp 'yanlış' işareti olur."""
         questions = []

@@ -99,7 +99,7 @@ _PATCHES = {
             'B': '350.000',
             'C': '290.000',
             'D': '0',
-            'E': '410.000',
+            'E': '280.000',
         },
         'B',
         "TMS 37 p. 51'e göre varlıkların beklenen elden çıkarılmasından doğacak kazançlar, elden çıkarma karşılığa neden olan olayla yakından ilişkili olsa bile **karşılığın ölçümünde dikkate alınmaz**: **350.000 ₺**; kazanç ilgili standarda göre gerçekleşince tanınır.",
@@ -138,7 +138,7 @@ _PATCHES = {
         "Bir işletme bir bölümünü kapatma kararını ilan etmiş ve zımni mükellefiyet doğmuştur. Beklenen harcamalar: işten çıkarılacak personelin kıdem tazminatı 300.000 ₺, boşaltılacak binanın kira sözleşmesi fesih cezası 50.000 ₺, kalan personelin yeniden eğitimi 80.000 ₺, yeni ürünlerin pazarlaması 40.000 ₺, yeni bilgi sistemine yatırım 100.000 ₺. Yeniden yapılandırma karşılığı kaç ₺'dir?",
         {
             'A': '430.000',
-            'B': '380.000',
+            'B': '320.000',
             'C': '350.000',
             'D': '300.000',
             'E': '570.000',
@@ -249,7 +249,7 @@ _PATCHES = {
     '0016': patch(
         "Bir işletmenin dava karşılıkları dönem başında 100.000 ₺'dir. Dönem içinde karşılığın 70.000 ₺'si ödemelerde kullanılmış, bir davanın kazanılması nedeniyle 30.000 ₺'si iptal edilmiş ve yeni davalar için 50.000 ₺ karşılık ayrılmıştır. Dönem sonu dava karşılıkları kaç ₺'dir?",
         {
-            'A': '20.000',
+            'A': '90.000',
             'B': '150.000',
             'C': '120.000',
             'D': '50.000',
@@ -363,7 +363,7 @@ _PATCHES = {
         {
             'A': '1.000.000',
             'B': '714.286',
-            'C': '600.000',
+            'C': '761.166',
             'D': '680.583',
             'E': '925.926',
         },
@@ -629,7 +629,7 @@ _PATCHES = {
         {
             'A': '250.000',
             'B': '100.000',
-            'C': '20.000',
+            'C': '60.000',
             'D': '40.000',
             'E': '500.000',
         },

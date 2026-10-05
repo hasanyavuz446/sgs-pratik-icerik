@@ -46,14 +46,14 @@ q("f(x) = √(x − 3) / (x − 5) fonksiyonunun en geniş tanım kümesi aşağ
   "İki koşul birlikte alınır: x ≥ 3 ve x ≠ 5, yani [3, 5) ∪ (5, ∞).")
 
 q("f: ℝ → ℝ, f(x) = (a − 3)x² + (b + 2)x + 5 fonksiyonu sabit fonksiyon olduğuna göre a + b kaçtır?",
-  "1", ["5", "−1", "3", "7"],
+  "1", ["5", "9", "3", "7"],
   "Sabit fonksiyonda x'li bütün terimlerin katsayısı sıfırdır: a − 3 = 0 → a = 3 ve "
   "b + 2 = 0 → b = −2. Buradan a + b = 3 + (−2) = 1.",
   verify=(3 + (-2), 1))
 
 q("f(x) = 3x − 1 (x ≥ 2) ve f(x) = x² + 1 (x < 2) biçiminde tanımlanan f fonksiyonu için "
   "f(5) + f(−1) toplamı kaçtır?",
-  "16", ["18", "14", "20", "12"],
+  "16", ["10", "14", "20", "12"],
   "5 ≥ 2 olduğundan birinci kural geçerlidir: f(5) = 3·5 − 1 = 14. "
   "−1 < 2 olduğundan ikinci kural geçerlidir: f(−1) = (−1)² + 1 = 2. Toplam 14 + 2 = 16.",
   verify=(3*5 - 1 + ((-1)**2 + 1), 16))
@@ -71,7 +71,7 @@ q("f(x) = ax + b doğrusal fonksiyonunda f(1) = 5 ve f(3) = 11 olduğuna göre f
 
 q("Tanım kümesi {−1, 0, 2} olan f(x) = 3x + 1 fonksiyonunun görüntü kümesindeki elemanların "
   "toplamı kaçtır?",
-  "6", ["9", "3", "12", "5"],
+  "6", ["2", "3", "1", "5"],
   "Her elemanın görüntüsü hesaplanır: f(−1) = −2, f(0) = 1, f(2) = 7. "
   "Görüntü kümesi {−2, 1, 7} olup elemanlar toplamı −2 + 1 + 7 = 6.",
   verify=(3*(-1)+1 + 1 + (3*2+1), 6))
@@ -107,7 +107,7 @@ q("f(x) = 3x − 2 ve g(x) = x + 4 olmak üzere (g∘f)(a) = (f∘g)(a) − 2a e
   verify=(sp.solve((3*x - 2 + 4) - (3*(x + 4) - 2 - 2*x), x)[0], 4))
 
 q("f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayılar toplamı kaçtır?",
-  "5", ["3", "9", "4", "7"],
+  "5", ["3", "1", "4", "2"],
   "(f∘g)(x) = f(2x) = (2x)² + 1 = 4x² + 1 elde edilir. Katsayılar toplamı, ifadede x yerine 1 "
   "yazılarak bulunur: 4 + 1 = 5.",
   verify=(( (2*x)**2 + 1 ).subs(x, 1), 5))
@@ -123,7 +123,7 @@ q("h(x) = x² − 1 ve g(x) = 3x + 2 olmak üzere (h∘g)(x) = 0 denklemini sağ
   verify=(sum(sp.solve((3*x + 2)**2 - 1, x)), sp.Rational(-4, 3)))
 
 q("f(x) = 1/(x − 2) ve g(x) = x + 3 olmak üzere (f∘g)(x) fonksiyonunun tanımsız olduğu x değeri kaçtır?",
-  "−1", ["−3", "1", "2", "5"],
+  "−1", ["3", "1", "2", "5"],
   "(f∘g)(x) = 1/(x + 3 − 2) = 1/(x + 1); payda x = −1 için sıfır olur.",
   verify=(sp.solve(x + 3 - 2, x)[0], -1))
 
@@ -144,7 +144,7 @@ q("f(x) = (2x + 1)/(x − 3) fonksiyonu için f⁻¹(a) = 4 olduğuna göre a + 
   verify=(((2*x + 1)/(x - 3)).subs(x, 4) + sp.solve((2*x + 1) - 3*(x - 3), x)[0], 19))
 
 q("f(x) = x³ + 2 olmak üzere f⁻¹(a) = 3 ve f(b) = 10 olduğuna göre a + b toplamı kaçtır?",
-  "31", ["27", "29", "32", "35"],
+  "31", ["27", "29", "30", "26"],
   "f⁻¹(a) = 3 ise a = f(3) = 29. f(b) = 10 ise b³ = 8 ve b = 2. Toplam 31.",
   verify=((x**3 + 2).subs(x, 3) + sp.real_root(8, 3), 31))
 
@@ -160,13 +160,13 @@ q("f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹ fonksiyonunun gr
 
 # ══ D. Tanımlı (özel) işlem (4) ══════════════════════════════════════════════
 q("Her a, b gerçel sayısı için a ⊗ b = a² − 2b biçiminde tanımlanan işleme göre 3 ⊗ 5 kaçtır?",
-  "−1", ["19", "1", "−4", "11"],
+  "−1", ["19", "1", "2", "11"],
   "Tanımda a yerine 3, b yerine 5 yazılır: 3 ⊗ 5 = 3² − 2·5 = 9 − 10 = −1.",
   verify=(3**2 - 2*5, -1))
 
 q("a △ b işlemi, a > b için a² + b; a ≤ b için 2b − a biçiminde tanımlanmıştır. "
   "Buna göre (5 △ 2) + (1 △ 4) toplamı kaçtır?",
-  "34", ["30", "36", "27", "41"],
+  "34", ["30", "32", "27", "26"],
   "5 > 2 olduğundan birinci kural: 5 △ 2 = 5² + 2 = 27. 1 ≤ 4 olduğundan ikinci kural: "
   "1 △ 4 = 2·4 − 1 = 7. Toplam 27 + 7 = 34.",
   verify=((5**2 + 2) + (2*4 - 1), 34))
@@ -208,7 +208,7 @@ q("5ˣ = 3 olduğuna göre 25ˣ⁺¹ − 5ˣ⁺² ifadesinin değeri kaçtır?",
   verify=(25 * 3**2 - 25 * 3, 150))
 
 q("Bir ilacın kandaki miktarı her saatin sonunda bir önceki saatteki miktarın yarısına inmektedir. Başlangıçta 400 mg olan ilacın miktarı kaçıncı saatin sonunda ilk kez 30 mg'ın altına düşer?",
-  "4", ["3", "5", "6", "8"],
+  "4", ["7", "5", "6", "8"],
   "Miktar n saat sonra 400 · (1/2)ⁿ olur: 200, 100, 50, 25. 30 mg'ın altına ilk kez 4. saatin sonunda düşer.",
   verify=(next(m for m in range(20) if sp.Integer(400) / 2**m < 30), 4))
 
@@ -219,7 +219,7 @@ q("4ˣ⁺¹ = 8ˣ⁻¹ eşitliğini sağlayan x değeri için logₓ125 ifadesin
 
 # ══ F. Logaritma ve doğal logaritma (11) ═════════════════════════════════════
 q("log₂(3x − 2) = 4 ve log₃(y + 1) = 2 olduğuna göre x + y toplamı kaçtır?",
-  "14", ["10", "12", "15", "16"],
+  "14", ["18", "17", "15", "16"],
   "3x − 2 = 16 ise x = 6. y + 1 = 9 ise y = 8. Toplam 14.",
   verify=(sp.solve(3*x - 2 - 16, x)[0] + sp.solve(y + 1 - 9, y)[0], 14))
 
@@ -259,7 +259,7 @@ q("log₆2 = a olduğuna göre log₆54 ifadesinin a türünden eşiti aşağıd
   verify=(sp.simplify(sp.log(54, 6) - (3 - 2*sp.log(2, 6))), 0))
 
 q("Ses şiddeti düzeyi L = 10·log(I/I₀) desibel formülüyle hesaplanmaktadır. Şiddeti I₀ değerinin 10⁶ katı olan bir sesin şiddeti 100 katına çıkarılırsa yeni ses düzeyi kaç desibel olur?",
-  "80", ["62", "70", "160", "600"],
+  "80", ["98", "90", "160", "600"],
   "Yeni şiddet I₀ · 10⁶ · 10² = I₀ · 10⁸'dir. L = 10 · log 10⁸ = 10 · 8 = 80 desibel.",
   verify=(10 * sp.log(10**8, 10), 80))
 

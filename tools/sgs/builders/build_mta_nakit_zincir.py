@@ -209,7 +209,7 @@ _PATCHES = {
         {
             'A': '350.000',
             'B': '340.000',
-            'C': '260.000',
+            'C': '360.000',
             'D': '330.000',
             'E': '310.000',
         },
@@ -277,9 +277,9 @@ _PATCHES = {
     '0018': patch(
         "Bir işletme dönemde 300.000 ₺ nakitle makine satın almış, defter değeri 60.000 ₺ olan bir aracı 80.000 ₺ nakit karşılığında satmış ve 50.000 ₺ nakit ödeyerek bir iştirak payı edinmiştir. Buna göre yatırım faaliyetlerinden net nakit akışı kaç ₺'dir?",
         {
-            'A': '−350.000',
+            'A': '−170.000',
             'B': '−270.000',
-            'C': '−290.000',
+            'C': '−230.000',
             'D': '−250.000',
             'E': '−190.000',
         },
@@ -515,7 +515,7 @@ _PATCHES = {
     '0035': patch(
         "Bir işletmenin faiz giderleri 50.000 ₺'dir. Tahakkuk etmiş faiz borçları dönem başında 8.000 ₺, dönem sonunda 12.000 ₺'dir. Buna göre dönemde ödenen faiz kaç ₺'dir?",
         {
-            'A': '42.000',
+            'A': '58.000',
             'B': '50.000',
             'C': '46.000',
             'D': '54.000',
@@ -754,9 +754,9 @@ _PATCHES = {
         "Bir işletmenin döneme ait bilgileri şöyledir: dönem net kârı 180.000 ₺, amortisman giderleri 50.000 ₺, ticari alacaklardaki artış 35.000 ₺, stoklardaki azalış 15.000 ₺, satıcılardaki artış 10.000 ₺. Dolaylı yönteme göre işletme faaliyetlerinden sağlanan nakit akışı kaç ₺'dir?",
         {
             'A': '220.000',
-            'B': '240.000',
+            'B': '200.000',
             'C': '170.000',
-            'D': '230.000',
+            'D': '210.000',
             'E': '120.000',
         },
         'A',

@@ -96,9 +96,9 @@ _PATCHES = {
         "Bir işletmede dönemde 1.000 birim üretilmiş (birim standart DİMM 4 kg, standart fiyat 15 ₺/kg) ve fiilen 4.200 kg malzeme kullanılmıştır. DİMM fiyat sapması 4.200 ₺ olumsuz olarak hesaplandığına göre malzemenin fiili alış fiyatı kaç ₺/kg'dır?",
         {
             'A': '15',
-            'B': '16,05',
+            'B': '15,95',
             'C': '16',
-            'D': '17',
+            'D': '13',
             'E': '14',
         },
         'C',
@@ -237,9 +237,9 @@ _PATCHES = {
         {
             'A': '672.000',
             'B': '696.000',
-            'C': '608.000',
+            'C': '736.000',
             'D': '720.000',
-            'E': '616.000',
+            'E': '728.000',
         },
         'A',
         'Kapanış kaydında borç ve alacak eşittir. Borç: 721 640.000 + 723 56.000 = 696.000 ₺. Alacak: 720 x + 722 24.000. x = 696.000 − 24.000 = **672.000 ₺** (fiili direkt işçilik gideri). Süre farkı olumsuz (borç), ücret farkı olumlu (alacak).',
@@ -263,7 +263,7 @@ _PATCHES = {
     '0017': patch(
         "Tek malzemeden tek işçilik operasyonuyla tek çeşit mamul üreten ve standart maliyet sistemini kullanan bir işletmede dönem sonunda üretim giderlerine ilişkin toplam fark 12.000 ₺ olumsuzdur. Direkt ilk madde ve malzeme toplam farkı 18.000 ₺ olumlu, genel üretim giderleri toplam farkı 21.000 ₺ olumsuzdur. Dönemde 900 direkt işçilik saati çalışılmış; fiili üretim için standart süre 750 saattir. Direkt işçilik ücret farkı sıfır olduğuna göre standart saat ücreti kaç ₺'dir?",
         {
-            'A': '80',
+            'A': '40',
             'B': '20',
             'C': '60',
             'D': '12',

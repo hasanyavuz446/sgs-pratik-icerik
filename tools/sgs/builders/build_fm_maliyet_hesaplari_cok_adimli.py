@@ -137,11 +137,11 @@ _PATCHES = {
     '0008': patch(
         "Standart maliyet yöntemini uygulayan işletmede 711 Direkt İlk Madde ve Malzeme Giderleri Yansıtma Hesabı 500.000 ₺'dir. Dönemde 20.000 ₺ olumlu fiyat farkı ve 35.000 ₺ olumsuz miktar farkı oluşmuştur.\n\n710 Direkt İlk Madde ve Malzeme Giderleri hesabının fiilî tutarı kaç ₺'dir?",
         {
-            'A': '555.000',
+            'A': '475.000',
             'B': '500.000',
             'C': '515.000',
             'D': '485.000',
-            'E': '535.000',
+            'E': '495.000',
         },
         'C',
         "Fiilî maliyet = standart maliyet − olumlu fark + olumsuz fark olarak bulunur. 500.000 − 20.000 + 35.000 = **515.000 ₺**'dir. Olumlu fiyat farkı maliyeti azaltırken olumsuz miktar farkı artırır.",
@@ -179,7 +179,7 @@ _PATCHES = {
     '0011': patch(
         "Bir üretim işletmesinin dönem başı yarı mamul maliyeti 80.000 ₺, dönemin üretim giderleri 520.000 ₺ ve dönem sonu yarı mamul maliyeti 100.000 ₺'dir. Dönemde 2.000 birim mamul tamamlanmıştır.\n\nTamamlanan mamullerin birim maliyeti kaç ₺'dir?",
         {
-            'A': '300',
+            'A': '100',
             'B': '200',
             'C': '250',
             'D': '240',
@@ -223,8 +223,8 @@ _PATCHES = {
         {
             'A': '41,60',
             'B': '46,40',
-            'C': '32,00',
-            'D': '38,40',
+            'C': '51,20',
+            'D': '44,80',
             'E': '44,00',
         },
         'A',

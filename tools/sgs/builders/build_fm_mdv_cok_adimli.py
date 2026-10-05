@@ -54,7 +54,7 @@ _PATCHES = {
         "İşletme fabrika kurmak amacıyla üzerinde kullanılamaz durumda eski bir yapı bulunan arsayı 800.000 ₺'ye satın almış, alım için emlak aracısına 20.000 ₺ komisyon ödemiştir. Eski yapı 40.000 ₺ harcanarak yıktırılmış, yıkımdan çıkan enkaz 15.000 ₺'ye satılmıştır. Buna göre arsanın maliyet bedeli kaç ₺'dir?",
         {
             'A': '845.000 ₺',
-            'B': '860.000 ₺',
+            'B': '830.000 ₺',
             'C': '825.000 ₺',
             'D': '805.000 ₺',
             'E': '875.000 ₺',
@@ -125,7 +125,7 @@ _PATCHES = {
         {
             'A': '16.000 ₺',
             'B': '10.000 ₺',
-            'C': '2.000 ₺',
+            'C': '14.000 ₺',
             'D': '8.000 ₺',
             'E': '12.000 ₺',
         },

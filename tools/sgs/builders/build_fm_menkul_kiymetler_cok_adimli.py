@@ -193,7 +193,7 @@ _PATCHES = {
     '0012': patch(
         "İşletme, aynı şirketin hisse senetlerinden önce 100 adedini toplam 4.000 ₺'ye, sonra 100 adedini toplam 5.000 ₺'ye almıştır. Bu hisse senetlerinin ağırlıklı ortalama birim maliyeti kaç ₺'dir?",
         {
-            'A': '40',
+            'A': '60',
             'B': '90',
             'C': '9.000',
             'D': '50',
@@ -487,7 +487,7 @@ _PATCHES = {
     '0033': patch(
         "İşletme, maliyeti 75.000 ₺ olan hisse senetlerini 90.000 ₺'ye peşin satmıştır. Bu satıştan doğan menkul kıymet satış kârı kaç ₺'dir?",
         {
-            'A': '12.000',
+            'A': '18.000',
             'B': '15.000',
             'C': '75.000',
             'D': '90.000',

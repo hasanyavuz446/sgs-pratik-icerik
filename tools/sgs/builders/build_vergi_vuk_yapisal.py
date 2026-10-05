@@ -55,7 +55,7 @@ _PATCHES = {
         {
             'A': '9',
             'B': '12',
-            'C': '24',
+            'C': '6',
             'D': '15',
             'E': '18',
         },
@@ -166,7 +166,7 @@ _PATCHES = {
         'Bir mükellefin 2025 yılına ait defter ve belgelerinin muhafaza süresi hangi yılın sonunda dolar?',
         {
             'A': '2031',
-            'B': '2029',
+            'B': '2032',
             'C': '2030',
             'D': '2027',
             'E': '2035',
@@ -265,9 +265,9 @@ _PATCHES = {
         {
             'A': '1.800',
             'B': '1.500',
-            'C': '2.400',
+            'C': '900',
             'D': '1.200',
-            'E': '3.600',
+            'E': '300',
         },
         'A',
         "m. 337'ye göre ayrı ayrı yapılan usulsüzlüklerden ayrı ayrı ceza kesilir; ancak m. 352'deki usulsüzlüklerden **aynı takvim yılında aynı neviden birden fazla yapılırsa, birden fazlasının her biri için birincisine ait cezanın dörtte biri** kesilir: 1.200 + 300 + 300 = **1.800 ₺**.",
@@ -753,8 +753,8 @@ _PATCHES = {
     '0052': patch(
         'Değerleme günündeki mevcudu 1.000 adet olan bir malın emsal bedeli belirlenecektir. Birinci sıradaki ortalama fiyat esasının uygulanabilmesi için ilgili ayda en az kaç adet satış yapılmış olmalıdır?',
         {
-            'A': '150',
-            'B': '100',
+            'A': '350',
+            'B': '400',
             'C': '1.000',
             'D': '500',
             'E': '250',

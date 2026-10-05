@@ -126,7 +126,7 @@ _PATCHES = {
             'A': '530.000',
             'B': '560.000',
             'C': '500.000',
-            'D': '470.000',
+            'D': '620.000',
             'E': '590.000',
         },
         'A',
@@ -461,8 +461,8 @@ _PATCHES = {
         {
             'A': '400.000',
             'B': '420.000',
-            'C': '440.000',
-            'D': '460.000',
+            'C': '360.000',
+            'D': '340.000',
             'E': '380.000',
         },
         'B',
@@ -865,9 +865,9 @@ _PATCHES = {
     '0060': patch(
         "İşletme %30 pay sahibi olduğu iştirakini özkaynak yöntemiyle 900.000 ₺ ile kayda almıştır. İştirak dönem içinde 400.000 ₺ net kâr elde etmiş, 150.000 ₺ temettü dağıtmış ve 50.000 ₺ diğer kapsamlı gelir muhasebeleştirmiştir. Buna göre dönem sonunda yatırımın defter değeri kaç ₺'dir?",
         {
-            'A': '975.000 ₺',
+            'A': '1.005.000 ₺',
             'B': '1.035.000 ₺',
-            'C': '870.000 ₺',
+            'C': '1.110.000 ₺',
             'D': '990.000 ₺',
             'E': '1.020.000 ₺',
         },

@@ -239,7 +239,7 @@ _PATCHES = {
             'B': '192.500',
             'C': '205.000',
             'D': '200.000',
-            'E': '220.000',
+            'E': '190.000',
         },
         'C',
         'Vergilendirilebilir kâr: 800.000 + 50.000 (henüz indirilemeyen karşılık) − 30.000 (fazla vergi amortismanı) = 820.000 ₺. Cari vergi: 820.000 × %25 = **205.000 ₺**.',
@@ -249,7 +249,7 @@ _PATCHES = {
     '0016': patch(
         "Bir işletmenin kâr veya zarar tablosundaki toplam vergi gideri 280.000 ₺, vergi öncesi muhasebe kârı 1.000.000 ₺'dir. TMS 12'ye göre açıklanabilecek ortalama etkin vergi oranı yüzde kaçtır?",
         {
-            'A': '30',
+            'A': '26',
             'B': '28',
             'C': '25',
             'D': '22',

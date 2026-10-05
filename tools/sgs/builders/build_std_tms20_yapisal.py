@@ -81,7 +81,7 @@ _PATCHES = {
     '0004': patch(
         "Bir işletme 1.000.000 ₺'lik makine için aldığı 200.000 ₺ teşviki makinenin defter değerinden düşerek sunmaktadır. Makinenin yararlı ömrü 5 yıl, kalıntı değeri sıfırdır. Yıllık amortisman gideri kaç ₺'dir?",
         {
-            'A': '40.000',
+            'A': '280.000',
             'B': '160.000',
             'C': '200.000',
             'D': '800.000',
@@ -97,7 +97,7 @@ _PATCHES = {
         {
             'A': '15.000',
             'B': '0',
-            'C': '30.000',
+            'C': '10.000',
             'D': '300.000',
             'E': '6.000',
         },
@@ -167,7 +167,7 @@ _PATCHES = {
         {
             'A': '75.000',
             'B': '900.000',
-            'C': '300.000',
+            'C': '100.000',
             'D': '0',
             'E': '150.000',
         },
@@ -193,8 +193,8 @@ _PATCHES = {
     '0012': patch(
         "Bir işletme 1 Nisan'da kullanıma aldığı makine için 240.000 ₺ teşvik almış ve ertelenmiş gelir olarak sunmaktadır; makinenin yararlı ömrü 4 yıldır ve kıst amortisman uygulanır. Hesap dönemi takvim yılıdır. İlk yıl gelire aktarılacak teşvik kaç ₺'dir?",
         {
-            'A': '15.000',
-            'B': '30.000',
+            'A': '90.000',
+            'B': '75.000',
             'C': '240.000',
             'D': '45.000',
             'E': '60.000',
@@ -207,11 +207,11 @@ _PATCHES = {
     '0013': patch(
         "Bir işletme yeni istihdam ettiği personelin brüt ücretinin %30'unun bir yıl boyunca devlet tarafından karşılanacağı bir teşvikten yararlanmaktadır. Bu personele her ay 50.000 ₺ ücret tahakkuk etmiştir ve koşullar sağlanmıştır. Yıllık teşvik geliri kaç ₺'dir?",
         {
-            'A': '90.000',
+            'A': '270.000',
             'B': '180.000',
             'C': '420.000',
             'D': '600.000',
-            'E': '15.000',
+            'E': '345.000',
         },
         'B',
         'Teşvik, karşıladığı ücret giderleriyle aynı dönemde gelir yazılır: 50.000 × 12 × %30 = **180.000 ₺**.',
@@ -235,7 +235,7 @@ _PATCHES = {
     '0015': patch(
         "Bir işletmenin faizsiz devlet kredisinden doğan ve teşvik olarak ele alınan fayda 248.685 ₺'dir. Kredi, iki yıl boyunca eşit tutarda gerçekleşecek AR-GE giderlerini finanse etmek koşuluyla verilmiştir. Birinci yıl gelire aktarılacak teşvik yaklaşık kaç ₺'dir?",
         {
-            'A': '165.790',
+            'A': '82.896',
             'B': '0',
             'C': '248.685',
             'D': '82.895',
@@ -473,7 +473,7 @@ _PATCHES = {
     '0032': patch(
         "Bir işletme 500.000 ₺'lik bir makine için 100.000 ₺ teşvik almıştır; makine %40 oranla azalan bakiyeler yöntemiyle amortismana tabi tutulmaktadır. Teşvik ertelenmiş gelir olarak sunulmaktadır. İlk yıl gelire aktarılacak teşvik kaç ₺'dir?",
         {
-            'A': '20.000',
+            'A': '80.000',
             'B': '200.000',
             'C': '60.000',
             'D': '100.000',
@@ -503,7 +503,7 @@ _PATCHES = {
         {
             'A': '71.331',
             'B': '428.669',
-            'C': '40.000',
+            'C': '102.662',
             'D': '500.000',
             'E': '80.000',
         },
