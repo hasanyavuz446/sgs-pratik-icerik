@@ -69,16 +69,16 @@
     "id": "mat-fonk-gen-0004",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 2x − 7 fonksiyonunda f(a) = 9 olduğuna göre a kaçtır?",
+    "stem": "Doğrusal bir f fonksiyonu için f(1) = −5 ve f(4) = 1'dir. f fonksiyonunun grafiğinin x eksenini kestiği nokta ile y eksenini kestiği nokta arasındaki uzaklık kaç birimdir?",
     "options": {
-      "A": "1",
-      "B": "11",
-      "C": "2",
-      "D": "16",
-      "E": "8"
+      "A": "7√5",
+      "B": "7/2",
+      "C": "√53",
+      "D": "49/4",
+      "E": "7√5/2"
     },
     "answer": "E",
-    "solution": "f(a) = 2a − 7 = 9 yazılır. İki tarafa 7 eklenir: 2a = 16. İki taraf 2'ye bölünür: a = 8.",
+    "solution": "Eğim (1 − (−5))/(4 − 1) = 2 ve f(x) = 2x − 7. Grafik x eksenini (7/2, 0), y eksenini (0, −7) noktasında keser. Uzaklık √((7/2)² + 7²) = √(245/4) = 7√5/2.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -135,16 +135,16 @@
     "id": "mat-fonk-gen-0007",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = x² − 4x + 7 fonksiyonunun alabileceği en küçük değer kaçtır?",
+    "stem": "Bir fabrikanın günlük üretim maliyeti, üretilen ürün sayısı x olmak üzere M(x) = x² − 40x + 700 bin ₺ olarak modellenmiştir. Maliyetin en düşük olduğu üretim düzeyinde günlük maliyet kaç bin ₺'dir?",
     "options": {
-      "A": "7",
-      "B": "2",
-      "C": "4",
-      "D": "−3",
-      "E": "3"
+      "A": "20",
+      "B": "100",
+      "C": "400",
+      "D": "700",
+      "E": "300"
     },
     "answer": "E",
-    "solution": "İfade tam kareye tamamlanır: x² − 4x + 7 = (x − 2)² + 3. Kare terim en küçük değerini x = 2 için sıfır olarak alır; bu durumda fonksiyonun değeri 3 olur.",
+    "solution": "Parabolün tepe noktası x = 40/2 = 20'dir. M(20) = 400 − 800 + 700 = 300 bin ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -201,16 +201,16 @@
     "id": "mat-fonk-gen-0010",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 2x + 1 ve g(x) = x² − 3 olduğuna göre (f∘g)(2) değeri kaçtır?",
+    "stem": "f(x) = 2x + 1 ve g(x) = x² − 3 fonksiyonları veriliyor. Buna göre (g∘f)(2) ile (f∘g)(2) değerleri arasındaki fark kaçtır?",
     "options": {
-      "A": "7",
-      "B": "22",
-      "C": "3",
-      "D": "6",
-      "E": "11"
+      "A": "0",
+      "B": "3",
+      "C": "19",
+      "D": "22",
+      "E": "25"
     },
     "answer": "C",
-    "solution": "Önce içteki fonksiyon hesaplanır: g(2) = 2² − 3 = 1. Sonuç dıştaki fonksiyonda kullanılır: f(1) = 2·1 + 1 = 3.",
+    "solution": "(f∘g)(2) = f(1) = 3 ve (g∘f)(2) = g(5) = 22. Fark 22 − 3 = 19.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -223,16 +223,16 @@
     "id": "mat-fonk-gen-0011",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 3x − 2 ve g(x) = x + 4 olduğuna göre (g∘f)(5) değeri kaçtır?",
+    "stem": "f(x) = 3x − 2 ve g(x) = x + 4 olmak üzere (g∘f)(a) = (f∘g)(a) − 2a eşitliğini sağlayan a değeri kaçtır?",
     "options": {
-      "A": "23",
-      "B": "13",
-      "C": "27",
-      "D": "11",
-      "E": "17"
+      "A": "−4",
+      "B": "2",
+      "C": "5",
+      "D": "8",
+      "E": "4"
     },
     "answer": "E",
-    "solution": "İçteki fonksiyon f'tir: f(5) = 3·5 − 2 = 13. Bu değer g'de yerine konur: g(13) = 13 + 4 = 17.",
+    "solution": "(g∘f)(a) = 3a + 2 ve (f∘g)(a) = 3(a + 4) − 2 = 3a + 10. 3a + 2 = 3a + 10 − 2a ise 2a = 8 ve a = 4.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -267,16 +267,16 @@
     "id": "mat-fonk-gen-0013",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "(f∘g)(x) = 6x + 7 ve g(x) = 2x + 1 olduğuna göre f(2) kaçtır?",
+    "stem": "f ve g fonksiyonları için g(x) = 2x + 1 ve (f∘g)(x) = 6x + 7 veriliyor. Buna göre f fonksiyonunun grafiğinin y eksenini kestiği noktanın ordinatı kaçtır?",
     "options": {
-      "A": "19",
-      "B": "13",
+      "A": "1",
+      "B": "3",
       "C": "7",
-      "D": "16",
-      "E": "10"
+      "D": "10",
+      "E": "4"
     },
     "answer": "E",
-    "solution": "f(2x + 1) = 6x + 7 yazılır. İçerideki ifadenin 2 olması için 2x + 1 = 2 → x = 1/2 alınır. Bu değer sağ tarafta yerine konur: f(2) = 6·(1/2) + 7 = 10.",
+    "solution": "g(x) = t ise x = (t − 1)/2 ve f(t) = 6(t − 1)/2 + 7 = 3t + 4. Grafik y eksenini f(0) = 4 noktasında keser.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -289,16 +289,16 @@
     "id": "mat-fonk-gen-0014",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "h(x) = x² − 1 ve g(x) = 3x + 2 olduğuna göre (h∘g)(−1) değeri kaçtır?",
+    "stem": "h(x) = x² − 1 ve g(x) = 3x + 2 olmak üzere (h∘g)(x) = 0 denklemini sağlayan x değerlerinin toplamı kaçtır?",
     "options": {
-      "A": "4",
-      "B": "0",
-      "C": "−1",
-      "D": "3",
-      "E": "8"
+      "A": "−1",
+      "B": "−4/3",
+      "C": "−1/3",
+      "D": "0",
+      "E": "4/3"
     },
     "answer": "B",
-    "solution": "İçteki fonksiyon hesaplanır: g(−1) = 3·(−1) + 2 = −1. Bu değer h'de yerine konur: h(−1) = (−1)² − 1 = 0.",
+    "solution": "(h∘g)(x) = (3x + 2)² − 1 = 0 ise 3x + 2 = 1 veya 3x + 2 = −1; x = −1/3 veya x = −1. Toplam −4/3.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -311,16 +311,16 @@
     "id": "mat-fonk-gen-0015",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 1 / (x − 2) ve g(x) = x + 3 olduğuna göre (f∘g)(4) değeri kaçtır?",
+    "stem": "f(x) = 1/(x − 2) ve g(x) = x + 3 olmak üzere (f∘g)(x) fonksiyonunun tanımsız olduğu x değeri kaçtır?",
     "options": {
-      "A": "1/2",
-      "B": "1/7",
-      "C": "1/5",
-      "D": "5",
-      "E": "1/4"
+      "A": "−3",
+      "B": "1",
+      "C": "−1",
+      "D": "2",
+      "E": "5"
     },
     "answer": "C",
-    "solution": "İçteki fonksiyon hesaplanır: g(4) = 4 + 3 = 7. Bu değer f'te yerine konur: f(7) = 1 / (7 − 2) = 1/5.",
+    "solution": "(f∘g)(x) = 1/(x + 3 − 2) = 1/(x + 1); payda x = −1 için sıfır olur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -333,16 +333,16 @@
     "id": "mat-fonk-gen-0016",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 2x ve g(x) = x − 5 olduğuna göre (f∘g∘f)(3) değeri kaçtır?",
+    "stem": "f(x) = 2x ve g(x) = x − 5 fonksiyonları veriliyor. (f∘g∘f)(a) = 2 eşitliğini sağlayan a değeri için (g∘f∘g)(a) kaçtır?",
     "options": {
-      "A": "2",
-      "B": "8",
-      "C": "−4",
-      "D": "1",
-      "E": "12"
+      "A": "−9",
+      "B": "−6",
+      "C": "3",
+      "D": "6",
+      "E": "0"
     },
     "answer": "A",
-    "solution": "Bileşke içten dışa uygulanır: f(3) = 6, ardından g(6) = 6 − 5 = 1, en son f(1) = 2·1 = 2.",
+    "solution": "(f∘g∘f)(a) = f(g(2a)) = 2(2a − 5) = 4a − 10 = 2 ise a = 3. (g∘f∘g)(3) = g(f(−2)) = g(−4) = −9.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -377,16 +377,16 @@
     "id": "mat-fonk-gen-0018",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = (2x + 1) / (x − 3) olduğuna göre f⁻¹(3) değeri kaçtır?",
+    "stem": "f(x) = (2x + 1)/(x − 3) fonksiyonu için f⁻¹(a) = 4 olduğuna göre a + f⁻¹(3) toplamı kaçtır?",
     "options": {
-      "A": "7",
-      "B": "2",
-      "C": "−10",
-      "D": "10",
-      "E": "5"
+      "A": "9",
+      "B": "10",
+      "C": "13",
+      "D": "19",
+      "E": "22"
     },
     "answer": "D",
-    "solution": "f(x) = 3 denklemi kurulur: (2x + 1) / (x − 3) = 3. İçler dışlar çarpılır: 2x + 1 = 3x − 9. Buradan x = 10 bulunur.",
+    "solution": "f⁻¹(a) = 4 ise a = f(4) = 9/1 = 9. f⁻¹(3) = b ise (2b + 1)/(b − 3) = 3, 2b + 1 = 3b − 9 ve b = 10. Toplam 19.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -421,16 +421,16 @@
     "id": "mat-fonk-gen-0020",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 2x + 7 olduğuna göre f⁻¹(x) aşağıdakilerden hangisidir?",
+    "stem": "Bir kırtasiye fotokopi için 7 ₺ sabit ücret ve sayfa başına 2 ₺ almaktadır. Ödenen ücreti sayfa sayısına bağlayan fonksiyon f olduğuna göre f⁻¹(x) aşağıdakilerden hangisidir?",
     "options": {
       "A": "(x + 7) / 2",
       "B": "(x − 7) / 2",
       "C": "2x − 7",
-      "D": "1 / (2x + 7)",
-      "E": "(7 − x) / 2"
+      "D": "(x − 2) / 7",
+      "E": "x / 2 − 7"
     },
     "answer": "B",
-    "solution": "y = 2x + 7 eşitliğinde x çekilir: 2x = y − 7 → x = (y − 7) / 2. Değişken adı x'e çevrilir: f⁻¹(x) = (x − 7) / 2.",
+    "solution": "Sayfa sayısı x ise ücret f(x) = 2x + 7'dir. y = 2x + 7 eşitliğinden x = (y − 7)/2 bulunur; f⁻¹(x) = (x − 7)/2. Bu fonksiyon ödenen ücretten sayfa sayısını verir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -443,16 +443,16 @@
     "id": "mat-fonk-gen-0021",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹(21) değeri kaçtır?",
+    "stem": "f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹ fonksiyonunun grafiğinin x eksenini kestiği noktanın apsisi kaçtır?",
     "options": {
-      "A": "3",
-      "B": "5",
+      "A": "6",
+      "B": "−6/5",
       "C": "1",
-      "D": "7",
-      "E": "9"
+      "D": "3",
+      "E": "21"
     },
     "answer": "A",
-    "solution": "Önce bileşke yazılır: (f∘g)(x) = 5(x + 2) − 4 = 5x + 6. Sonra 5x + 6 = 21 denklemi çözülür: 5x = 15 → x = 3.",
+    "solution": "(f∘g)(x) = 5(x + 2) − 4 = 5x + 6, tersi (x − 6)/5'tir. Bu ifade x = 6 için sıfır olur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -1059,16 +1059,16 @@
     "id": "mat-fonk-gen-0049",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "Analitik düzlemde A(2, −1) ve B(6, 2) noktaları arasındaki uzaklık kaç birimdir?",
+    "stem": "Analitik düzlemde A(2, −1) ve B(6, 2) noktaları veriliyor. [AB] doğru parçasını çap kabul eden çemberin alanı kaç birim karedir?",
     "options": {
-      "A": "7",
-      "B": "5",
-      "C": "√7",
-      "D": "25",
-      "E": "√13"
+      "A": "5π/2",
+      "B": "25π/4",
+      "C": "5π",
+      "D": "25π/2",
+      "E": "25π"
     },
     "answer": "B",
-    "solution": "Uzaklık formülü uygulanır: |AB| = √((6 − 2)² + (2 − (−1))²) = √(16 + 9) = √25 = 5.",
+    "solution": "|AB| = √(4² + 3²) = 5, yarıçap 5/2'dir. Alan π(5/2)² = 25π/4.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -1147,16 +1147,16 @@
     "id": "mat-fonk-gen-0053",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "P(2, 3) noktasının 3x + 4y − 11 = 0 doğrusuna uzaklığı kaç birimdir?",
+    "stem": "Analitik düzlemde A(1, 2) ve B(5, 5) noktalarından geçen doğrunun C(4, −2) noktasına uzaklığı kaç birimdir?",
     "options": {
-      "A": "7/5",
-      "B": "7",
-      "C": "5/7",
-      "D": "1/5",
-      "E": "7/25"
+      "A": "5",
+      "B": "3",
+      "C": "4",
+      "D": "7/5",
+      "E": "25"
     },
     "answer": "A",
-    "solution": "Noktadan doğruya uzaklık formülü uygulanır: |3·2 + 4·3 − 11| / √(3² + 4²) = |6 + 12 − 11| / 5 = 7/5.",
+    "solution": "AB'nin eğimi 3/4'tür; doğru 3x − 4y + 5 = 0 olur. C noktasının uzaklığı |3·4 − 4·(−2) + 5| / √(9 + 16) = 25/5 = 5.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -1235,16 +1235,16 @@
     "id": "mat-fonk-gen-0057",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "y = x² − 6x + 5 parabolünün tepe noktasının koordinatları hangisidir?",
+    "stem": "y = x² − 6x + 5 parabolünün tepe noktası ile parabolün x eksenini kestiği noktaların oluşturduğu üçgenin alanı kaç birim karedir?",
     "options": {
-      "A": "(3, 4)",
-      "B": "(3, −4)",
-      "C": "(−3, −4)",
-      "D": "(6, 5)",
-      "E": "(3, 5)"
+      "A": "4",
+      "B": "8",
+      "C": "10",
+      "D": "12",
+      "E": "16"
     },
     "answer": "B",
-    "solution": "Tepe noktasının apsisi x = −b/(2a) = 6/2 = 3'tür. Ordinat için x = 3 yerine konur: y = 9 − 18 + 5 = −4. Tepe noktası (3, −4) olur.",
+    "solution": "x² − 6x + 5 = 0 ise x = 1 veya x = 5; taban 4 birimdir. Tepe noktası (3, −4) olduğundan yükseklik 4'tür. Alan 4 · 4 / 2 = 8.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -1301,16 +1301,16 @@
     "id": "mat-fonk-gen-0060",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "2x + 3y = 12 doğrusunun eksenlerle oluşturduğu üçgenin alanı kaç birim karedir?",
+    "stem": "Analitik düzlemde 2x + 3y = 12 doğrusu ile x − y = 1 doğrusunun kesişim noktasının orijine uzaklığı kaç birimdir?",
     "options": {
-      "A": "24",
-      "B": "6",
-      "C": "12",
-      "D": "10",
-      "E": "18"
+      "A": "3",
+      "B": "√5",
+      "C": "√13",
+      "D": "5",
+      "E": "13"
     },
     "answer": "C",
-    "solution": "y = 0 için 2x = 12 → x = 6; x = 0 için 3y = 12 → y = 4. Dik kenarları 6 ve 4 olan üçgenin alanı (6·4)/2 = 12 birim karedir.",
+    "solution": "x = y + 1 ilk denklemde yerine yazılırsa 2y + 2 + 3y = 12, y = 2 ve x = 3. Kesişim (3, 2) noktasıdır; orijine uzaklığı √(9 + 4) = √13.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",

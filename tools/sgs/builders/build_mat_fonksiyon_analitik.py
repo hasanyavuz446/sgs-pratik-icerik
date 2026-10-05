@@ -58,10 +58,10 @@ q("f(x) = 3x − 1 (x ≥ 2) ve f(x) = x² + 1 (x < 2) biçiminde tanımlanan f 
   "−1 < 2 olduğundan ikinci kural geçerlidir: f(−1) = (−1)² + 1 = 2. Toplam 14 + 2 = 16.",
   verify=(3*5 - 1 + ((-1)**2 + 1), 16))
 
-q("f(x) = 2x − 7 fonksiyonunda f(a) = 9 olduğuna göre a kaçtır?",
-  "8", ["1", "11", "2", "16"],
-  "f(a) = 2a − 7 = 9 yazılır. İki tarafa 7 eklenir: 2a = 16. İki taraf 2'ye bölünür: a = 8.",
-  verify=(sp.solve(sp.Eq(2*a - 7, 9), a)[0], 8))
+q("Doğrusal bir f fonksiyonu için f(1) = −5 ve f(4) = 1'dir. f fonksiyonunun grafiğinin x eksenini kestiği nokta ile y eksenini kestiği nokta arasındaki uzaklık kaç birimdir?",
+  "7√5/2", ["7√5", "7/2", "√53", "49/4"],
+  "Eğim (1 − (−5))/(4 − 1) = 2 ve f(x) = 2x − 7. Grafik x eksenini (7/2, 0), y eksenini (0, −7) noktasında keser. Uzaklık √((7/2)² + 7²) = √(245/4) = 7√5/2.",
+  verify=(sp.sqrt(sp.Rational(7, 2)**2 + 7**2), 7*sp.sqrt(5)/2))
 
 q("f(x) = ax + b doğrusal fonksiyonunda f(1) = 5 ve f(3) = 11 olduğuna göre f(6) kaçtır?",
   "20", ["17", "23", "18", "14"],
@@ -76,11 +76,10 @@ q("Tanım kümesi {−1, 0, 2} olan f(x) = 3x + 1 fonksiyonunun görüntü küme
   "Görüntü kümesi {−2, 1, 7} olup elemanlar toplamı −2 + 1 + 7 = 6.",
   verify=(3*(-1)+1 + 1 + (3*2+1), 6))
 
-q("f(x) = x² − 4x + 7 fonksiyonunun alabileceği en küçük değer kaçtır?",
-  "3", ["7", "2", "4", "−3"],
-  "İfade tam kareye tamamlanır: x² − 4x + 7 = (x − 2)² + 3. Kare terim en küçük değerini "
-  "x = 2 için sıfır olarak alır; bu durumda fonksiyonun değeri 3 olur.",
-  verify=(sp.minimum(x**2 - 4*x + 7, x, sp.Reals), 3))
+q("Bir fabrikanın günlük üretim maliyeti, üretilen ürün sayısı x olmak üzere M(x) = x² − 40x + 700 bin ₺ olarak modellenmiştir. Maliyetin en düşük olduğu üretim düzeyinde günlük maliyet kaç bin ₺'dir?",
+  "300", ["20", "100", "400", "700"],
+  "Parabolün tepe noktası x = 40/2 = 20'dir. M(20) = 400 − 800 + 700 = 300 bin ₺.",
+  verify=((x**2 - 40*x + 700).subs(x, 20), 300))
 
 q("f(2x − 1) = 6x + 5 olduğuna göre f fonksiyonunun grafiğinin x eksenini kestiği noktanın apsisi kaçtır?",
   "−8/3", ["−5/6", "8/3", "−5/2", "−3"],
@@ -97,16 +96,15 @@ q("Bir f fonksiyonunun birebir olması ile ilgili aşağıdakilerden hangisi do�
   "eşit olması örtenliktir; her elemanın aynı görüntüye gitmesi ise sabit fonksiyondur.")
 
 # ══ B. Bileşke fonksiyon (7) ═════════════════════════════════════════════════
-q("f(x) = 2x + 1 ve g(x) = x² − 3 olduğuna göre (f∘g)(2) değeri kaçtır?",
-  "3", ["7", "22", "6", "11"],
-  "Önce içteki fonksiyon hesaplanır: g(2) = 2² − 3 = 1. Sonuç dıştaki fonksiyonda kullanılır: "
-  "f(1) = 2·1 + 1 = 3.",
-  verify=(2*(2**2 - 3) + 1, 3))
+q("f(x) = 2x + 1 ve g(x) = x² − 3 fonksiyonları veriliyor. Buna göre (g∘f)(2) ile (f∘g)(2) değerleri arasındaki fark kaçtır?",
+  "19", ["0", "3", "22", "25"],
+  "(f∘g)(2) = f(1) = 3 ve (g∘f)(2) = g(5) = 22. Fark 22 − 3 = 19.",
+  verify=(((2*x + 1)**2 - 3).subs(x, 2) - (2*(x**2 - 3) + 1).subs(x, 2), 19))
 
-q("f(x) = 3x − 2 ve g(x) = x + 4 olduğuna göre (g∘f)(5) değeri kaçtır?",
-  "17", ["23", "13", "27", "11"],
-  "İçteki fonksiyon f'tir: f(5) = 3·5 − 2 = 13. Bu değer g'de yerine konur: g(13) = 13 + 4 = 17.",
-  verify=((3*5 - 2) + 4, 17))
+q("f(x) = 3x − 2 ve g(x) = x + 4 olmak üzere (g∘f)(a) = (f∘g)(a) − 2a eşitliğini sağlayan a değeri kaçtır?",
+  "4", ["−4", "2", "5", "8"],
+  "(g∘f)(a) = 3a + 2 ve (f∘g)(a) = 3(a + 4) − 2 = 3a + 10. 3a + 2 = 3a + 10 − 2a ise 2a = 8 ve a = 4.",
+  verify=(sp.solve((3*x - 2 + 4) - (3*(x + 4) - 2 - 2*x), x)[0], 4))
 
 q("f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayılar toplamı kaçtır?",
   "5", ["3", "9", "4", "7"],
@@ -114,28 +112,25 @@ q("f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayıl
   "yazılarak bulunur: 4 + 1 = 5.",
   verify=(( (2*x)**2 + 1 ).subs(x, 1), 5))
 
-q("(f∘g)(x) = 6x + 7 ve g(x) = 2x + 1 olduğuna göre f(2) kaçtır?",
-  "10", ["19", "13", "7", "16"],
-  "f(2x + 1) = 6x + 7 yazılır. İçerideki ifadenin 2 olması için 2x + 1 = 2 → x = 1/2 alınır. "
-  "Bu değer sağ tarafta yerine konur: f(2) = 6·(1/2) + 7 = 10.",
-  verify=(6*sp.Rational(1, 2) + 7, 10))
+q("f ve g fonksiyonları için g(x) = 2x + 1 ve (f∘g)(x) = 6x + 7 veriliyor. Buna göre f fonksiyonunun grafiğinin y eksenini kestiği noktanın ordinatı kaçtır?",
+  "4", ["1", "3", "7", "10"],
+  "g(x) = t ise x = (t − 1)/2 ve f(t) = 6(t − 1)/2 + 7 = 3t + 4. Grafik y eksenini f(0) = 4 noktasında keser.",
+  verify=((6*((t - 1)/2) + 7).subs(t, 0), 4))
 
-q("h(x) = x² − 1 ve g(x) = 3x + 2 olduğuna göre (h∘g)(−1) değeri kaçtır?",
-  "0", ["4", "−1", "3", "8"],
-  "İçteki fonksiyon hesaplanır: g(−1) = 3·(−1) + 2 = −1. Bu değer h'de yerine konur: "
-  "h(−1) = (−1)² − 1 = 0.",
-  verify=((3*(-1) + 2)**2 - 1, 0))
+q("h(x) = x² − 1 ve g(x) = 3x + 2 olmak üzere (h∘g)(x) = 0 denklemini sağlayan x değerlerinin toplamı kaçtır?",
+  "−4/3", ["−1", "−1/3", "0", "4/3"],
+  "(h∘g)(x) = (3x + 2)² − 1 = 0 ise 3x + 2 = 1 veya 3x + 2 = −1; x = −1/3 veya x = −1. Toplam −4/3.",
+  verify=(sum(sp.solve((3*x + 2)**2 - 1, x)), sp.Rational(-4, 3)))
 
-q("f(x) = 1 / (x − 2) ve g(x) = x + 3 olduğuna göre (f∘g)(4) değeri kaçtır?",
-  "1/5", ["1/2", "1/7", "5", "1/4"],
-  "İçteki fonksiyon hesaplanır: g(4) = 4 + 3 = 7. Bu değer f'te yerine konur: "
-  "f(7) = 1 / (7 − 2) = 1/5.",
-  verify=(sp.Rational(1, (4 + 3) - 2), sp.Rational(1, 5)))
+q("f(x) = 1/(x − 2) ve g(x) = x + 3 olmak üzere (f∘g)(x) fonksiyonunun tanımsız olduğu x değeri kaçtır?",
+  "−1", ["−3", "1", "2", "5"],
+  "(f∘g)(x) = 1/(x + 3 − 2) = 1/(x + 1); payda x = −1 için sıfır olur.",
+  verify=(sp.solve(x + 3 - 2, x)[0], -1))
 
-q("f(x) = 2x ve g(x) = x − 5 olduğuna göre (f∘g∘f)(3) değeri kaçtır?",
-  "2", ["8", "−4", "1", "12"],
-  "Bileşke içten dışa uygulanır: f(3) = 6, ardından g(6) = 6 − 5 = 1, en son f(1) = 2·1 = 2.",
-  verify=(2*((2*3) - 5), 2))
+q("f(x) = 2x ve g(x) = x − 5 fonksiyonları veriliyor. (f∘g∘f)(a) = 2 eşitliğini sağlayan a değeri için (g∘f∘g)(a) kaçtır?",
+  "−9", ["−6", "3", "6", "0"],
+  "(f∘g∘f)(a) = f(g(2a)) = 2(2a − 5) = 4a − 10 = 2 ise a = 3. (g∘f∘g)(3) = g(f(−2)) = g(−4) = −9.",
+  verify=((2*(3 - 5)) - 5, -9))
 
 # ══ C. Ters fonksiyon (5) ════════════════════════════════════════════════════
 q("f(x) = 3x − 9 ve g(x) = f⁻¹(x) + 2 olduğuna göre g(6) + f(g(6)) toplamı kaçtır?",
@@ -143,27 +138,25 @@ q("f(x) = 3x − 9 ve g(x) = f⁻¹(x) + 2 olduğuna göre g(6) + f(g(6)) toplam
   "f⁻¹(x) = (x + 9)/3 olduğundan f⁻¹(6) = 5 ve g(6) = 7. f(7) = 12. Toplam 7 + 12 = 19.",
   verify=((6 + 9)/sp.Integer(3) + 2 + 3*((6 + 9)/sp.Integer(3) + 2) - 9, 19))
 
-q("f(x) = (2x + 1) / (x − 3) olduğuna göre f⁻¹(3) değeri kaçtır?",
-  "10", ["7", "2", "−10", "5"],
-  "f(x) = 3 denklemi kurulur: (2x + 1) / (x − 3) = 3. İçler dışlar çarpılır: 2x + 1 = 3x − 9. "
-  "Buradan x = 10 bulunur.",
-  verify=(sp.solve(sp.Eq((2*x + 1)/(x - 3), 3), x)[0], 10))
+q("f(x) = (2x + 1)/(x − 3) fonksiyonu için f⁻¹(a) = 4 olduğuna göre a + f⁻¹(3) toplamı kaçtır?",
+  "19", ["9", "10", "13", "22"],
+  "f⁻¹(a) = 4 ise a = f(4) = 9/1 = 9. f⁻¹(3) = b ise (2b + 1)/(b − 3) = 3, 2b + 1 = 3b − 9 ve b = 10. Toplam 19.",
+  verify=(((2*x + 1)/(x - 3)).subs(x, 4) + sp.solve((2*x + 1) - 3*(x - 3), x)[0], 19))
 
 q("f(x) = x³ + 2 olmak üzere f⁻¹(a) = 3 ve f(b) = 10 olduğuna göre a + b toplamı kaçtır?",
   "31", ["27", "29", "32", "35"],
   "f⁻¹(a) = 3 ise a = f(3) = 29. f(b) = 10 ise b³ = 8 ve b = 2. Toplam 31.",
   verify=((x**3 + 2).subs(x, 3) + sp.real_root(8, 3), 31))
 
-q("f(x) = 2x + 7 olduğuna göre f⁻¹(x) aşağıdakilerden hangisidir?",
-  "(x − 7) / 2", ["(x + 7) / 2", "2x − 7", "1 / (2x + 7)", "(7 − x) / 2"],
-  "y = 2x + 7 eşitliğinde x çekilir: 2x = y − 7 → x = (y − 7) / 2. Değişken adı x'e çevrilir: "
-  "f⁻¹(x) = (x − 7) / 2.")
+q("Bir kırtasiye fotokopi için 7 ₺ sabit ücret ve sayfa başına 2 ₺ almaktadır. Ödenen ücreti sayfa sayısına bağlayan fonksiyon f olduğuna göre f⁻¹(x) aşağıdakilerden hangisidir?",
+  "(x − 7) / 2", ["(x + 7) / 2", "2x − 7", "(x − 2) / 7", "x / 2 − 7"],
+  "Sayfa sayısı x ise ücret f(x) = 2x + 7'dir. y = 2x + 7 eşitliğinden x = (y − 7)/2 bulunur; f⁻¹(x) = (x − 7)/2. Bu fonksiyon ödenen ücretten sayfa sayısını verir.",
+  verify=(sp.solve(2*y + 7 - x, y)[0], (x - 7)/2))
 
-q("f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹(21) değeri kaçtır?",
-  "3", ["5", "1", "7", "9"],
-  "Önce bileşke yazılır: (f∘g)(x) = 5(x + 2) − 4 = 5x + 6. Sonra 5x + 6 = 21 denklemi çözülür: "
-  "5x = 15 → x = 3.",
-  verify=(sp.solve(sp.Eq(5*(x + 2) - 4, 21), x)[0], 3))
+q("f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹ fonksiyonunun grafiğinin x eksenini kestiği noktanın apsisi kaçtır?",
+  "6", ["−6/5", "1", "3", "21"],
+  "(f∘g)(x) = 5(x + 2) − 4 = 5x + 6, tersi (x − 6)/5'tir. Bu ifade x = 6 için sıfır olur.",
+  verify=(sp.solve((x - 6)/5, x)[0], 6))
 
 # ══ D. Tanımlı (özel) işlem (4) ══════════════════════════════════════════════
 q("Her a, b gerçel sayısı için a ⊗ b = a² − 2b biçiminde tanımlanan işleme göre 3 ⊗ 5 kaçtır?",
@@ -311,10 +304,10 @@ q("Bir işletmenin x adet ürün için toplam maliyeti M(x) = 2x² + 40x + 600 �
   verify=(sp.solve(sp.diff(140*x - (2*x**2 + 40*x + 600), x), x)[0], 25))
 
 # ══ H. Analitik geometri (12) ════════════════════════════════════════════════
-q("Analitik düzlemde A(2, −1) ve B(6, 2) noktaları arasındaki uzaklık kaç birimdir?",
-  "5", ["7", "√7", "25", "√13"],
-  "Uzaklık formülü uygulanır: |AB| = √((6 − 2)² + (2 − (−1))²) = √(16 + 9) = √25 = 5.",
-  verify=(sp.sqrt((6 - 2)**2 + (2 - (-1))**2), 5))
+q("Analitik düzlemde A(2, −1) ve B(6, 2) noktaları veriliyor. [AB] doğru parçasını çap kabul eden çemberin alanı kaç birim karedir?",
+  "25π/4", ["5π/2", "5π", "25π/2", "25π"],
+  "|AB| = √(4² + 3²) = 5, yarıçap 5/2'dir. Alan π(5/2)² = 25π/4.",
+  verify=(sp.pi*(sp.sqrt(4**2 + 3**2)/2)**2, 25*sp.pi/4))
 
 q("Analitik düzlemde A(−3, 4) ve B(5, −2) noktalarını birleştiren doğru parçasının orta "
   "noktasının koordinatları hangisidir?",
@@ -334,11 +327,10 @@ q("Analitik düzlemde (0, 3) ve (−2, 0) noktalarından geçen doğrunun denkle
   "yazılır. İki taraf 2 ile çarpılıp düzenlenirse 3x − 2y + 6 = 0 elde edilir.",
   verify=(sp.Rational(3 - 0, 0 - (-2)), sp.Rational(3, 2)))
 
-q("P(2, 3) noktasının 3x + 4y − 11 = 0 doğrusuna uzaklığı kaç birimdir?",
-  "7/5", ["7", "5/7", "1/5", "7/25"],
-  "Noktadan doğruya uzaklık formülü uygulanır: |3·2 + 4·3 − 11| / √(3² + 4²) = "
-  "|6 + 12 − 11| / 5 = 7/5.",
-  verify=(sp.Abs(3*2 + 4*3 - 11)/sp.sqrt(3**2 + 4**2), sp.Rational(7, 5)))
+q("Analitik düzlemde A(1, 2) ve B(5, 5) noktalarından geçen doğrunun C(4, −2) noktasına uzaklığı kaç birimdir?",
+  "5", ["3", "4", "7/5", "25"],
+  "AB'nin eğimi 3/4'tür; doğru 3x − 4y + 5 = 0 olur. C noktasının uzaklığı |3·4 − 4·(−2) + 5| / √(9 + 16) = 25/5 = 5.",
+  verify=(sp.Abs(3*4 - 4*(-2) + 5)/sp.sqrt(3**2 + 4**2), 5))
 
 q("y = 2x − 5 doğrusuna paralel olan ve (1, 4) noktasından geçen doğrunun y eksenini kestiği "
   "noktanın ordinatı kaçtır?",
@@ -357,11 +349,10 @@ q("x² + y² − 6x + 8y = 0 çemberinin merkezinin 3x + 4y + 2 = 0 doğrusuna u
   "Çember (x − 3)² + (y + 4)² = 25 biçiminde yazılır; merkez (3, −4). Uzaklık |3·3 + 4·(−4) + 2| / √(9 + 16) = 5/5 = 1.",
   verify=(sp.Abs(3*3 + 4*(-4) + 2) / sp.sqrt(3**2 + 4**2), 1))
 
-q("y = x² − 6x + 5 parabolünün tepe noktasının koordinatları hangisidir?",
-  "(3, −4)", ["(3, 4)", "(−3, −4)", "(6, 5)", "(3, 5)"],
-  "Tepe noktasının apsisi x = −b/(2a) = 6/2 = 3'tür. Ordinat için x = 3 yerine konur: "
-  "y = 9 − 18 + 5 = −4. Tepe noktası (3, −4) olur.",
-  verify=((x**2 - 6*x + 5).subs(x, 3), -4))
+q("y = x² − 6x + 5 parabolünün tepe noktası ile parabolün x eksenini kestiği noktaların oluşturduğu üçgenin alanı kaç birim karedir?",
+  "8", ["4", "10", "12", "16"],
+  "x² − 6x + 5 = 0 ise x = 1 veya x = 5; taban 4 birimdir. Tepe noktası (3, −4) olduğundan yükseklik 4'tür. Alan 4 · 4 / 2 = 8.",
+  verify=((5 - 1) * sp.Abs((x**2 - 6*x + 5).subs(x, 3)) / 2, 8))
 
 q("y = x² − 4 parabolünün x eksenini kestiği iki nokta arasındaki uzaklık kaç birimdir?",
   "4", ["2", "8", "16", "√4"],
@@ -375,11 +366,10 @@ q("Köşeleri A(1, 2), B(5, 2) ve C(5, 6) olan üçgenin alanı kaç birim kared
   "Bu iki kenar B köşesinde diktir, dolayısıyla alan (4·4)/2 = 8 birim karedir.",
   verify=(sp.Rational((5 - 1)*(6 - 2), 2), 8))
 
-q("2x + 3y = 12 doğrusunun eksenlerle oluşturduğu üçgenin alanı kaç birim karedir?",
-  "12", ["24", "6", "10", "18"],
-  "y = 0 için 2x = 12 → x = 6; x = 0 için 3y = 12 → y = 4. Dik kenarları 6 ve 4 olan üçgenin "
-  "alanı (6·4)/2 = 12 birim karedir.",
-  verify=(sp.Rational(6*4, 2), 12))
+q("Analitik düzlemde 2x + 3y = 12 doğrusu ile x − y = 1 doğrusunun kesişim noktasının orijine uzaklığı kaç birimdir?",
+  "√13", ["3", "√5", "5", "13"],
+  "x = y + 1 ilk denklemde yerine yazılırsa 2y + 2 + 3y = 12, y = 2 ve x = 3. Kesişim (3, 2) noktasıdır; orijine uzaklığı √(9 + 4) = √13.",
+  verify=(sp.sqrt(sum(v**2 for v in sp.solve([2*x + 3*y - 12, x - y - 1], [x, y]).values())), sp.sqrt(13)))
 
 
 if __name__ == "__main__":
