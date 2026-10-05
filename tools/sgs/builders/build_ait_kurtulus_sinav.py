@@ -37,16 +37,16 @@ def patch(stem, options, answer, solution, ref='Atatürk İlkeleri ve İnkılap 
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        "I. Dünya Savaşı'nı sona erdiren ve Osmanlı Devleti'nin fiilen sona ermesine zemin hazırlayan ateşkes antlaşması aşağıdakilerden hangisidir?",
+        "30 Ekim 1918'de imzalanan Mondros Ateşkes Antlaşması ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Ankara Antlaşması',
-            'B': 'Mondros Ateşkes Antlaşması',
-            'C': 'Gümrü Antlaşması',
-            'D': 'Uşi Antlaşması',
-            'E': 'Mudanya Ateşkes Antlaşması',
+            'A': "Osmanlı Devleti'nin I. Dünya Savaşı'ndan çekilmesini sağladı.",
+            'B': "İtilaf Devletleri'ne Anadolu'da hiçbir yeri işgal etme hakkı tanımadı.",
+            'C': '7. maddesi, güvenliği tehdit eden durumlarda stratejik noktaların işgaline olanak verdi.',
+            'D': 'Osmanlı ordusunun terhis edilmesini öngördü.',
+            'E': "Boğazların İtilaf Devletleri'nin gemilerine açılmasını öngördü.",
         },
         'B',
-        "Osmanlı Devleti I. Dünya Savaşı'ndan 30 Ekim 1918'de imzaladığı Mondros Ateşkes Antlaşması ile çekilmiştir. Bu antlaşmanın maddeleri, ülkenin işgaline zemin hazırlamıştır.",
+        "Mondros Ateşkes Antlaşması, özellikle 7. maddesiyle İtilaf Devletleri'ne güvenliklerini tehdit eden durumlarda istedikleri stratejik noktayı işgal etme hakkı tanıdı; bu nedenle Anadolu'nun işgaline zemin hazırladı. Diğer ifadeler antlaşmanın hükümleriyle örtüşür.",
     ),
     # düzey 2
     '0002': patch(
@@ -258,16 +258,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        "II. Abdülhamit'in Meclis-i Mebusan'ı tatil etmesinde gerekçe olarak gösterdiği gelişme aşağıdakilerden hangisidir?",
+        'I. Meşrutiyet dönemiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Kırım Savaşı',
-            'B': 'I. Balkan Savaşı',
-            'C': '31 Mart Vakası',
-            'D': '1877-1878 Osmanlı-Rus Savaşı',
-            'E': 'Trablusgarp Savaşı',
+            'A': "Kanun-i Esasi, Osmanlı Devleti'nin ilk anayasası olarak 1876'da ilan edildi.",
+            'B': "Meclis-i Mebusan ve Ayan Meclisi'nden oluşan iki kanatlı bir meclis kuruldu.",
+            'C': "II. Abdülhamit, 1877-1878 Osmanlı-Rus Savaşı'nı gerekçe göstererek meclisi tatil etti.",
+            'D': 'Meclis-i Mebusan üyelerinin tamamı padişah tarafından atanıyordu.',
+            'E': 'Anayasaya rağmen padişahın yetkileri geniş tutuldu.',
         },
         'D',
-        "II. Abdülhamit, 93 Harbi olarak bilinen 1877-1878 Osmanlı-Rus Savaşı'nı gerekçe göstererek meclisi 1878'de tatil etmiştir.",
+        "I. Meşrutiyet'te Ayan Meclisi üyeleri padişah tarafından atanır, Meclis-i Mebusan üyeleri ise seçimle belirlenirdi. Kanun-i Esasi 1876'da ilan edilmiş, II. Abdülhamit 93 Harbi'ni gerekçe göstererek meclisi tatil etmiştir; padişahın yetkileri geniş tutulmuştur.",
     ),
     # düzey 3
     '0019': patch(
@@ -297,16 +297,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0021': patch(
-        "Mustafa Kemal'in Samsun'dan sonra geçtiği ve halkı işgallere karşı mitinglerle uyardığı, ilk genelgeyi yayımladığı yer aşağıdakilerden hangisidir?",
+        "Mustafa Kemal'in 19 Mayıs 1919'da Samsun'a çıkmasından sonraki gelişmelerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Sivas',
-            'B': 'Havza',
-            'C': 'Amasya',
-            'D': 'Erzurum',
-            'E': 'Ankara',
+            'A': "Havza'da halkı mitinglerle işgallere karşı tepki göstermeye çağırdı.",
+            'B': "Samsun'dan doğrudan Ankara'ya geçerek aynı ay içinde TBMM'yi açtı.",
+            'C': "Amasya'da yayımlanan genelgeyle Sivas'ta bir kongre toplanacağını duyurdu.",
+            'D': "Erzurum Kongresi'ne katılabilmek için askerlik görevinden istifa etti.",
+            'E': "Sivas Kongresi'nde Temsil Heyeti'nin başkanlığına seçildi.",
         },
         'B',
-        "Mustafa Kemal, Samsun'dan sonra Havza'ya geçmiş; 28 Mayıs 1919'da Havza Genelgesi'ni yayımlayarak halkı mitingler yoluyla işgallere karşı harekete geçirmeye çalışmıştır.",
+        "Mustafa Kemal Samsun'dan sonra Havza ve Amasya'ya geçmiş, Erzurum ve Sivas kongrelerine katılmış, Ankara'ya ancak Aralık 1919'da gelmiştir. TBMM 23 Nisan 1920'de açılmıştır.",
     ),
     # düzey 2
     '0022': patch(
@@ -427,16 +427,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0031': patch(
-        "İtalya ile yapılan Trablusgarp Savaşı'nın sonunda imzalanan antlaşma aşağıdakilerden hangisidir?",
+        '1911-1912 Trablusgarp Savaşı ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Londra Antlaşması',
-            'B': 'Bükreş Antlaşması',
-            'C': 'Uşi Antlaşması',
-            'D': 'İstanbul Antlaşması',
-            'E': 'Atina Antlaşması',
+            'A': "İtalya'nın Osmanlı Devleti'nin Kuzey Afrika'daki son toprağına saldırmasıyla başladı.",
+            'B': 'Osmanlı Devleti bölgeye kara yoluyla yeterli asker gönderemedi.',
+            'C': "Savaş, Osmanlı Devleti'nin bölgeyi geri almasıyla sona erdi.",
+            'D': 'Mustafa Kemal gibi gönüllü subaylar bölgede yerel halkı örgütledi.',
+            'E': "Savaş sırasında İtalya, On İki Ada'yı işgal etti.",
         },
         'C',
-        "Trablusgarp Savaşı 1912'de imzalanan Uşi (Ouchy) Antlaşması'yla sona ermiştir. Londra Antlaşması I. Balkan Savaşı'nı sonlandırmıştır.",
+        "Savaş, Balkan Savaşları'nın başlaması üzerine imzalanan Uşi Antlaşması ile sona ermiş ve Trablusgarp İtalya'ya bırakılmıştır. Diğer ifadeler doğrudur.",
     ),
     # düzey 3
     '0032': patch(
@@ -479,29 +479,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        "Mustafa Kemal'in Trablusgarp Savaşı sırasında görev yaptığı yerlerden biri aşağıdakilerden hangisidir?",
+        "Mustafa Kemal'in Kurtuluş Savaşı öncesinde görev yaptığı yerlerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Anafartalar',
-            'B': 'Derne',
-            'C': "Kut'ül Amare",
-            'D': 'Sarıkamış',
-            'E': 'Edirne',
+            'A': "Çanakkale Savaşı'nda Anafartalar'da önemli bir başarı kazandı.",
+            'B': "Balkan Savaşları sırasında Kanal Cephesi'nde Süveyş'e saldırı düzenledi.",
+            'C': "I. Dünya Savaşı'nda Kafkas Cephesi'nde Muş ve Bitlis'i geri aldı.",
+            'D': "Trablusgarp Savaşı'nda Tobruk ve Derne'de görev yaptı.",
+            'E': "Suriye-Filistin Cephesi'nde Yıldırım Orduları Grubu'na bağlı bir orduya komuta etti.",
         },
         'B',
-        "Mustafa Kemal Trablusgarp'ta Tobruk ve Derne'de görev yapmıştır. Anafartalar Çanakkale, Sarıkamış Kafkas, Kut'ül Amare Irak cephesindedir.",
+        "Kanal Cephesi I. Dünya Savaşı'nda açılmıştır ve Mustafa Kemal bu cephede görev almamıştır. Anafartalar, Muş ve Bitlis, Tobruk ve Derne ile Suriye-Filistin Cephesi'ndeki görevleri doğrudur.",
     ),
     # düzey 2
     '0036': patch(
-        "II. Balkan Savaşı sırasında Osmanlı Devleti'nin geri aldığı kent aşağıdakilerden hangisidir?",
+        'Balkan Savaşları ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yanya',
-            'B': 'Selanik',
-            'C': 'Edirne',
-            'D': 'Manastır',
-            'E': 'Üsküp',
+            'A': "I. Balkan Savaşı'nda Osmanlı Devleti Rumeli'deki topraklarının büyük bölümünü kaybetti.",
+            'B': 'II. Balkan Savaşı, Balkan devletleri arasındaki toprak paylaşımı anlaşmazlığından çıktı.',
+            'C': "Osmanlı Devleti II. Balkan Savaşı'nda Selanik'i geri aldı.",
+            'D': "Osmanlı Devleti II. Balkan Savaşı sırasında Edirne'yi geri aldı.",
+            'E': 'Balkan Savaşları sürecinde Arnavutluk bağımsızlığını kazandı.',
         },
         'C',
-        "II. Balkan Savaşı'nda Balkan devletleri arasındaki anlaşmazlıktan yararlanan Osmanlı Devleti Edirne'yi geri almıştır.",
+        "Osmanlı Devleti II. Balkan Savaşı'nda yalnızca Edirne ve Kırklareli'yi geri alabilmiştir; Selanik Yunanistan'da kalmıştır. Diğer ifadeler doğrudur.",
     ),
     # düzey 3
     '0037': patch(
@@ -531,16 +531,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        "I. Dünya Savaşı'nda Osmanlı Devleti'nin taarruz amacıyla açtığı cephelerden biri aşağıdakilerden hangisidir?",
+        "Osmanlı Devleti'nin I. Dünya Savaşı'nda savaştığı cephelerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Suriye-Filistin Cephesi',
-            'B': 'Irak Cephesi',
-            'C': 'Kanal Cephesi',
-            'D': 'Hicaz-Yemen Cephesi',
-            'E': 'Çanakkale Cephesi',
+            'A': "Kafkas Cephesi'nde Sarıkamış Harekâtı ağır kayıplarla sonuçlandı.",
+            'B': 'Kanal Cephesi, İngilizlerin Hindistan ile bağlantısını kesmek amacıyla açıldı.',
+            'C': "Çanakkale Cephesi, Osmanlı Devleti'nin taarruz amacıyla açtığı bir cepheydi.",
+            'D': "Irak Cephesi'nde Kut'ül Amare'de bir İngiliz birliği teslim alındı.",
+            'E': "Çanakkale'deki başarı, savaşın uzamasında etkili oldu.",
         },
         'C',
-        'Osmanlı Devleti Kafkas ve Kanal cephelerinde taarruz amacıyla savaşmıştır. Çanakkale, Irak, Suriye-Filistin ve Hicaz-Yemen cephelerinde savunma yapılmıştır.',
+        "Çanakkale Cephesi, İtilaf Devletleri'nin Boğazları geçme girişimine karşı açılmış bir savunma cephesidir. Kafkas ve Kanal cepheleri taarruz amaçlıdır; diğer ifadeler doğrudur.",
     ),
     # düzey 2
     '0040': patch(
@@ -791,16 +791,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        'Kurtuluş Savaşı\'nda "düzenli ordu"ya geçiş kararının alınmasının temel nedeni aşağıdakilerden hangisidir?',
+        "Kurtuluş Savaşı'nda düzenli orduya geçişle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kaldırılan saltanat düzeninin yeniden geri getirilmek istenmesi',
-            'B': 'Halkın cepheye gitmeyi ve savaşa katılmayı tümüyle reddetmesi',
-            'C': "İtilaf Devletleri'nin savaşı tümüyle bırakıp koşulsuz barış yapmak istemesi",
-            'D': 'Ordunun elindeki silah, cephane ve donanımın fazlasıyla yeterli olması',
-            'E': "Kuva-yi Milliye'nin düzenli Yunan ordusunu durdurmakta yetersiz kalması",
+            'A': "Kuva-yi Milliye'nin disiplin ve koordinasyon eksiklikleri bu kararda etkili oldu.",
+            'B': 'Çerkez Ethem gibi bazı Kuva-yi Milliye liderleri düzenli orduya katılmayı reddetti.',
+            'C': "Düzenli ordunun kurulması TBMM'nin otoritesini güçlendirdi.",
+            'D': 'Düzenli ordu, cephelerde merkezî bir komuta altında savaştı.',
+            'E': "Düzenli orduya geçiş kararı Büyük Taarruz'dan sonra alındı.",
         },
         'E',
-        'Dağınık ve merkezî komutadan yoksun Kuva-yi Milliye, ilerleyen düzenli Yunan ordusunu durdurmakta yetersiz kalınca TBMM düzenli orduya geçme kararı almıştır.',
+        "Düzenli orduya geçiş TBMM'nin açılmasından sonra, 1920 sonlarında başlamış; düzenli ordu ilk başarısını 1921 başında kazanmıştır. Büyük Taarruz ise 1922'dedir; bu nedenle karar Büyük Taarruz'dan sonra alınmış olamaz.",
     ),
     # düzey 2
     '0060': patch(
