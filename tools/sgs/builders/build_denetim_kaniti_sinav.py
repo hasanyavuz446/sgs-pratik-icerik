@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü). Paket baştan yazıldı: BDS 500 (yeterlilik ve uygunluk, güvenilirlik genellemeleri, işletmece üretilen bilgi, yönetimin uzmanı, tutarsız kanıt, sorgulama ve gözlemin sınırları), kanıt toplama prosedürleri, yönetim beyanları ve izleme yönleri, BDS 505 (pozitif/negatif teyit, yönetimin reddi, yanıtsızlık, istisnalar), BDS 520 (zorunlu aşamalar, beklenti ve kabul edilebilir fark hesapları), BDS 501 (stok sayımı, davalar), BDS 580 (yazılı beyanlar) ve BDS 330 (kontrol testleri, önemli riskte ayrıntı testi). Hesaplar kesirli aritmetikle.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü). Paket baştan yazıldı: BDS 500, kanıt toplama prosedürleri, yönetim beyanları, BDS 505, BDS 520, BDS 501, BDS 580 ve BDS 330. 2026-10-05: gerçek sınavda denetim köklerinin %46'sı olumsuz; 7 soru dört doğru ifadeli olumsuz köke çevrildi, aynı paketteki başka soruların cevaplarını sızdıran çeldiriciler ayıklandı.
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -63,16 +63,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        "BDS 330'a göre kontrol testlerinin amacı aşağıdakilerden hangisidir?",
+        "BDS 330'a göre kontrol testleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hesap bakiyesindeki yanlışlığı doğrudan ölçmek',
-            'B': 'İç kontrolü tasarlamak',
-            'C': 'Önemlilik düzeyini belirlemek',
-            'D': 'Yönetimin dürüstlüğünü test etmek',
-            'E': 'Kontrollerin işleyiş etkinliğini değerlendirmek',
+            'A': 'Kontrollerin işleyiş etkinliğini değerlendirir',
+            'B': 'Kontrollere dayanılması planlanıyorsa uygulanır',
+            'C': 'Yeniden uygulama ve tetkik gibi tekniklerle yürütülür',
+            'D': 'Dönem boyunca işleyişe ilişkin kanıt sağlamayı amaçlar',
+            'E': 'Hesaptaki parasal yanlışlığı doğrudan ölçer',
         },
         'E',
-        'Kontrol testleri, yönetim beyanı düzeyindeki önemli yanlışlıkları önlemede ya da tespit edip düzeltmede kontrollerin işleyiş etkinliğini değerlendirmek üzere tasarlanır.',
+        'Kontrol testleri, kontrollerin işleyiş etkinliğini değerlendirir ve kontrollere dayanılacaksa uygulanır. Hesap bakiyesindeki parasal yanlışlığı doğrudan ölçmek maddi doğrulama prosedürlerinin işidir.',
     ),
     # düzey 3
     '0004': patch(
@@ -80,7 +80,7 @@ _PATCHES = {
         {
             'A': 'Yanıtı negatif teyit sayar',
             'B': 'Yanıtın güvenilirliğini sorgulayıp ek kanıt arar',
-            'C': 'Teyit verenin kimliğini işletmeye sorup yanıtı kabul eder',
+            'C': 'Teyit verenin kimliğini işletmeye sorar',
             'D': 'Yanıtı doğrudan kabul eder',
             'E': 'Yanıtı imha eder',
         },
@@ -154,22 +154,22 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        "BDS 500'e göre sorgulama yoluyla elde edilen kanıtla ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 500'e göre sorgulama yoluyla elde edilen kanıtla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Belgeye dayalı kanıttan üstündür',
-            'B': 'Kontrol testinin yerine geçer',
-            'C': 'En güvenilir kanıt türüdür',
-            'D': 'Dış teyit kadar güvenilirdir',
-            'E': 'Tek başına yeterli kanıt sağlamaz',
+            'A': 'Yanıtlar denetçiye yeni bilgiler kazandırabilir',
+            'B': 'Diğer prosedürlerle desteklenmesi gerekir',
+            'C': 'Denetim boyunca yaygın biçimde kullanılır',
+            'D': 'Yazılı ya da sözlü olarak yapılabilir',
+            'E': 'Kontrollerin işleyiş etkinliği için tek başına yeterlidir',
         },
         'E',
-        'Sorgulama denetim boyunca yaygın biçimde kullanılır ancak tek başına yönetim beyanı düzeyinde önemli yanlışlık bulunmadığına ya da kontrollerin işleyiş etkinliğine ilişkin yeterli kanıt sağlamaz.',
+        'Sorgulama denetim boyunca yaygın biçimde kullanılır; ancak tek başına yönetim beyanı düzeyinde önemli yanlışlık bulunmadığına ya da kontrollerin işleyiş etkinliğine ilişkin yeterli kanıt sağlamaz.',
     ),
     # düzey 3
     '0011': patch(
         "Denetçi, yönetimin dürüstlüğü hakkında ciddi şüphe duymasına yol açan bulgular elde etmiştir.\n\nBDS 580'e göre bu durumun yazılı beyanlara etkisi aşağıdakilerden hangisidir?",
         {
-            'A': 'Beyanlar ayrıntılandırılarak tek başına yeterli kanıt sayılır',
+            'A': 'Beyanlar yeterli kanıt sayılır',
             'B': 'Beyanlar daha güvenilir sayılır',
             'C': 'Beyan alınmasına gerek kalmaz',
             'D': 'Beyanlar sözlü olarak alınır',
@@ -186,23 +186,23 @@ _PATCHES = {
             'B': 'Stokları sıfır kabul eder',
             'C': 'Görüş vermekten kaçınır',
             'D': 'Alternatif bir tarihte sayım yapar veya gözlemler',
-            'E': 'Yönetimin sayım sonuçlarına ilişkin yazılı beyanıyla yetinir',
+            'E': 'Yönetimin yazılı beyanıyla yetinir',
         },
         'D',
         'Öngörülemeyen durumlar nedeniyle sayıma katılamayan denetçi alternatif bir tarihte fiziki sayım yapar veya gözlemler ve aradaki işlemler için prosedürler uygular.',
     ),
     # düzey 3
     '0013': patch(
-        "Bir kaynaktan elde edilen kanıt, başka bir kaynaktan elde edilen kanıtla tutarsızdır.\n\nBDS 500'e göre denetçinin yapması gereken aşağıdakilerden hangisidir?",
+        "Bir kaynaktan elde edilen kanıt, başka bir kaynaktan elde edilen kanıtla tutarsızdır.\n\nBDS 500'e göre aşağıdakilerden hangisi denetçinin bu durumda yapması beklenenlerden biri değildir?",
         {
-            'A': 'Prosedürlerde gereken değişikliği belirlemek',
-            'B': 'Daha güvenilir görüneni seçip diğerini dikkate almadan devam etmek',
-            'C': 'Yönetimin tercih ettiği kanıtı kabul etmek',
-            'D': 'Tutarsız kanıtların ikisini de yok saymak',
-            'E': 'Konuyu bir sonraki yıla bırakmak',
+            'A': 'Güvenilir görüneni seçip diğerini dikkate almamak',
+            'B': 'Tutarsızlığın nedenini araştırmak',
+            'C': 'Gerekirse risk değerlendirmesini gözden geçirmek',
+            'D': 'Ek denetim prosedürleri uygulamak',
+            'E': 'Diğer kanıtların güvenilirliğine etkisini değerlendirmek',
         },
         'A',
-        'Kanıtlar tutarsızsa ya da güvenilirlik konusunda şüphe varsa denetçi konuyu çözmek için prosedürlerde hangi değişiklik veya ilavelerin gerektiğini belirler ve konunun denetimin diğer yönlerine etkisini değerlendirir.',
+        'Kanıtlar tutarsızsa denetçi konuyu çözmek için prosedürlerde gereken değişiklik ya da ilaveleri belirler ve durumun denetimin diğer yönlerine etkisini değerlendirir; kanıtlardan birini gerekçesiz yok sayamaz.',
     ),
     # düzey 2
     '0014': patch(
@@ -321,18 +321,18 @@ _PATCHES = {
         'E',
         'Gözlem, sürecin ya da prosedürün yürütülüşüne ilişkin kanıt sağlar; ancak gözlem yapıldığı ana özgüdür ve gözlemlenme durumu prosedürün yürütülüşünü etkileyebilir.',
     ),
-    # düzey 3
+    # düzey 2
     '0023': patch(
-        "BDS 330'a göre önemli yanlışlık riski düşük değerlendirilen bir hesap bakiyesi için aşağıdakilerden hangisi doğrudur?",
+        "BDS 330'a göre maddi doğrulama prosedürleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Maddi doğrulama gerekmez',
-            'B': 'Hesap önemliyse maddi doğrulama uygulanır',
-            'C': 'Kontroller etkinse kontrol testi tek başına yeterlidir',
-            'D': 'Hesap denetim dışında bırakılır',
-            'E': 'Sorgulama tek başına yeterlidir',
+            'A': 'Ayrıntı testleri ve maddi doğrulama amaçlı analitik prosedürlerden oluşur',
+            'B': 'Riski düşük önemli hesaplarda uygulanmaz',
+            'C': 'Niteliği ve kapsamı değerlendirilen riske göre belirlenir',
+            'D': 'Dönem sonu finansal raporlama sürecine ilişkin prosedürleri içerir',
+            'E': 'Ara dönemde uygulanmışsa kalan dönem için ek prosedür gerekir',
         },
         'B',
-        'Değerlendirilen riskten bağımsız olarak denetçi, önemli her işlem sınıfı, hesap bakiyesi ve açıklama için maddi doğrulama prosedürleri tasarlar ve uygular.',
+        'Değerlendirilen riskten bağımsız olarak önemli her işlem sınıfı, hesap bakiyesi ve açıklama için maddi doğrulama prosedürleri tasarlanır ve uygulanır.',
     ),
     # düzey 3
     '0024': patch(
@@ -375,16 +375,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        "BDS 500'e göre aşağıdakilerden hangisi denetim kanıtının tanımına uygundur?",
+        "BDS 500'e göre denetim kanıtıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Denetçinin ücret teklifi',
-            'B': 'Görüşe dayanak olarak kullanılan bilgiler',
-            'C': 'Denetim sözleşmesinin şartları',
-            'D': 'Kamu Gözetimi Kurumu kararları',
-            'E': 'Yönetimin hazırladığı finansal tablolar ve dipnotları',
+            'A': 'Hem destekleyici hem çelişen bilgileri kapsar',
+            'B': 'Muhasebe kayıtları dışındaki bilgileri kapsamaz',
+            'C': 'Önceki denetimlerden elde edilen bilgileri de içerebilir',
+            'D': 'Yönetimin uzmanının çalışmasından da elde edilebilir',
+            'E': 'Görüşe dayanak sonuçlara ulaşırken kullanılan bilgilerdir',
         },
         'B',
-        'Denetim kanıtı, denetçinin görüşüne dayanak oluşturan sonuçlara ulaşırken kullandığı bilgilerdir; muhasebe kayıtlarındaki bilgileri ve diğer bilgileri kapsar.',
+        'Denetim kanıtı, muhasebe kayıtlarındaki bilgilerle birlikte diğer kaynaklardan elde edilen bilgileri de kapsar; destekleyici ve çelişen bilgileri içerir.',
     ),
     # düzey 3
     '0028': patch(
@@ -406,7 +406,7 @@ _PATCHES = {
             'A': 'Farkı ihmal eder',
             'B': 'Teyidi geçersiz sayar',
             'C': 'Farkın yanlışlık olup olmadığını araştırır',
-            'D': 'Yanıtı düzeltilmek üzere müşteriye geri gönderir',
+            'D': 'Yanıtı müşteriye geri gönderir',
             'E': 'Farkı kendisi düzeltir',
         },
         'C',
@@ -432,7 +432,7 @@ _PATCHES = {
             'A': 'Kayıtlı tutar yükseltilir',
             'B': 'Fark kabul edilebilir, ek iş yapılmaz',
             'C': 'Analitik prosedür terk edilir',
-            'D': 'Fark araştırılmadan tolere edilebilir yanlışlığa eklenir',
+            'D': 'Fark tolere edilebilir yanlışlığa eklenir',
             'E': 'Farkı yönetimle sorgulayıp ek prosedür uygular',
         },
         'E',
@@ -490,18 +490,18 @@ _PATCHES = {
         'E',
         'Kayıttan varlığa gidiş kayıtlı varlığın gerçekte bulunduğunu, yani varlık beyanını; varlıktan kayda gidiş ise var olan varlığın kaydedildiğini, yani tamlık beyanını test eder.',
     ),
-    # düzey 2
+    # düzey 3
     '0036': patch(
-        'BDS 505 Dış Teyitler standardına göre pozitif teyit talebi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'BDS 505 Dış Teyitler standardına göre teyit talepleriyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yanıt sözlü olarak alınabilir',
-            'B': 'Mutabık değilse yanıt istenir',
-            'C': 'Her durumda yanıt verilmesi istenir',
-            'D': 'Yanıt işletmeye gönderilir',
-            'E': 'Yanıtsızlık mutabakat sayılır',
+            'A': 'Teyit verenin yanıtı denetçiye doğrudan gönderilir',
+            'B': 'Pozitif teyitte, bilgi doğru olsa da yanıt istenir',
+            'C': 'Negatif teyitte yanıtsızlık bakiyenin doğruluğunu kanıtlar',
+            'D': 'Teyit sürecinin denetçinin kontrolünde olması gerekir',
+            'E': 'Talepler kâğıt ya da elektronik ortamda gönderilebilir',
         },
         'C',
-        'Pozitif teyit talebinde teyit verenin, bilgiye katılsa da katılmasa da ya da istenen bilgiyi sağlayarak, her durumda denetçiye doğrudan yanıt vermesi istenir.',
+        'Negatif teyitte yanıt gelmemesi, teyit verenin talebi aldığını ve bilgiyi doğruladığını açıkça göstermez; bu nedenle negatif teyit, pozitif teyide göre daha az ikna edici kanıt sağlar.',
     ),
     # düzey 3
     '0037': patch(
@@ -626,7 +626,7 @@ _PATCHES = {
         {
             'A': 'Doğruluğu ve tamlığı hakkında kanıt elde etmek',
             'B': 'Listeyi kanıt olarak kullanmamak',
-            'C': 'Listeyi yönetime yeniden imzalatıp olduğu gibi kullanmak',
+            'C': 'Listeyi yönetime yeniden imzalatmak',
             'D': 'Listeyi doğrudan kabul etmek',
             'E': 'Listeyi dış uzmana hazırlatmak',
         },
@@ -726,16 +726,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        "BDS 520'ye göre maddi doğrulama amaçlı analitik prosedürler en çok hangi tür işlemler için uygundur?",
+        "BDS 520'ye göre maddi doğrulama amaçlı analitik prosedürlerle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Hacmi büyük ve zaman içinde öngörülebilir işlemler',
-            'B': 'Yönetimin onaylamadığı işlemler',
-            'C': 'Tek seferlik büyük tutarlı işlemler',
-            'D': 'Hile şüphesi bulunan işlemler',
-            'E': 'Dönem sonundan sonra yapılan işlemler',
+            'A': 'Kullanılan verilerin güvenilirliği değerlendirilmez',
+            'B': 'Kabul edilebilir fark tutarı önceden belirlenir',
+            'C': 'Hacmi büyük ve öngörülebilir işlemlerde daha etkilidir',
+            'D': 'Denetçi yeterince kesin bir beklenti geliştirir',
+            'E': 'Beklentiden önemli sapmalar araştırılır',
         },
         'A',
-        'Maddi doğrulama amaçlı analitik prosedürler genellikle zaman içinde öngörülebilir olma eğiliminde olan büyük hacimli işlemlere uygulanır.',
+        "Denetçi, beklentiyi geliştirirken kullandığı verilerin kaynağını, karşılaştırılabilirliğini ve güvenilirliğini değerlendirir. Diğer ifadeler BDS 520'nin gerekleridir.",
     ),
     # düzey 2
     '0055': patch(

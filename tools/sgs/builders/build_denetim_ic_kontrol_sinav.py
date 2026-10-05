@@ -5,7 +5,7 @@
 Hukuk ailesi yapisal kalibrasyon turu. Paketin 60 sorusunun TAMAMI yeniden
 yazildi. tools/sgs/yapisal_pipeline.py ile uretildi.
 
-Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; BDS 265 eksiklik bildirimi ve BDS 610/402 havuzda yoktu). Paket baştan yazıldı: iç kontrolün amaçları ve sorumluluk, BDS 315'teki beş bileşen (kontrol çevresi, risk değerlendirme süreci, izleme süreci, bilgi sistemi ve iletişim, kontrol faaliyetleri), BT genel ve uygulama kontrolleri, görevler ayrılığı ve kontrol türleri, yapısal kısıtlar, BDS 265 (eksiklik, önemli eksiklik, değerlendirme ölçütleri, yazılı bildirim), BDS 610 (iç denetimden yararlanma, doğrudan yardım), BDS 402 (Tip 1 ve Tip 2 raporlar) ve denetçinin kontrol değerlendirmesinin sonuçları.
+Denetim turu (gerçek denetim bloğu 73-88 ile ölçüldü; BDS 265 eksiklik bildirimi ve BDS 610/402 havuzda yoktu). Paket baştan yazıldı: iç kontrolün amaçları ve sorumluluk, BDS 315'teki beş bileşen, BT genel ve uygulama kontrolleri, görevler ayrılığı ve kontrol türleri, yapısal kısıtlar, BDS 265, BDS 610, BDS 402 ve denetçinin kontrol değerlendirmesinin sonuçları. 2026-10-05: gerçek sınavda denetim köklerinin %46'sı olumsuz; 11 soru dört doğru ifadeli olumsuz köke çevrildi (aynı paketteki başka sorunun cevabını sızdıran çeldiriciler ayıklandı).
 
 IKI KAPI: §5 boy (beraberlik + oncul secicileri DAHIL) · §1 bilissel duzey
 (60'lik pakette duzey 0 <=6, duzey 0+1 <=24, duzey 2 >=24, duzey 3 >=12).
@@ -50,16 +50,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0002': patch(
-        'Kontrol testleri, iç kontrollerin etkin işlemediğini göstermiştir.\n\nBu sonucun denetim üzerindeki etkisi aşağıdakilerden hangisidir?',
+        'Kontrol testleri, iç kontrollerin etkin işlemediğini göstermiştir.\n\nBu sonucun denetime etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Maddi doğrulama azaltılır',
-            'B': 'Denetim kontrol testleriyle tamamlanır ve maddi doğrulama yapılmaz',
-            'C': 'Önemlilik yükseltilir',
-            'D': 'Maddi doğrulama genişletilir',
-            'E': 'Kontrollere planlandığı gibi dayanılır',
+            'A': 'Kontrol riski yüksek değerlendirilir',
+            'B': 'Eksiklikler yönetime bildirilebilir',
+            'C': 'Prosedürler dönem sonuna yakın uygulanabilir',
+            'D': 'Kabul edilebilir tespit riski yükseltilir',
+            'E': 'Maddi doğrulama prosedürleri genişletilir',
         },
         'D',
-        'Kontroller etkin işlemiyorsa kontrol riski yüksek değerlendirilir; kabul edilebilir tespit riski düşer ve maddi doğrulama prosedürlerinin kapsamı genişletilir.',
+        'Kontroller etkin işlemiyorsa kontrol riski yüksek değerlendirilir; bu durumda kabul edilebilir tespit riski düşer ve maddi doğrulama kapsamı genişletilir. Tespit riskinin yükseltilmesi tersi bir sonuçtur.',
     ),
     # düzey 3
     '0003': patch(
@@ -180,16 +180,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'İç denetimin örgütsel bağımsızlığını güçlendirmek için aşağıdakilerden hangisi en uygundur?',
+        'Aşağıdakilerden hangisi iç denetimin örgütsel bağımsızlığını güçlendiren düzenlemelerden biri değildir?',
         {
-            'A': 'İç denetçilerin denetledikleri birimlerin performans primlerinden pay almaları',
-            'B': 'Satış müdürüne bağlanması',
-            'C': 'Muhasebe müdürüne bağlanması',
-            'D': 'Denetim komitesine raporlaması',
-            'E': 'Denetlenen birimlerin bütçesinden ödenmesi',
+            'A': 'Kayıtlara ve personele erişim hakkı tanınması',
+            'B': 'Atama ve görevden almanın yönetim kurulunca yapılması',
+            'C': 'Denetim komitesine doğrudan raporlaması',
+            'D': 'İç denetimin muhasebe müdürüne bağlanması',
+            'E': 'Denetim planının denetim komitesince onaylanması',
         },
         'D',
-        'İç denetimin üst yönetimden sorumlu olanlara ya da denetim komitesine doğrudan raporlaması tarafsızlığını güçlendirir.',
+        'İç denetimin denetlediği birimlerden birine, örneğin muhasebe müdürüne bağlanması tarafsızlığını zayıflatır. Denetim komitesine raporlama, atamanın üst yönetimce yapılması ve erişim hakkı bağımsızlığı güçlendirir.',
     ),
     # düzey 3
     '0013': patch(
@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        "BDS 315'e göre BT genel kontrolleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 315'e göre BT genel kontrolleri ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Satış faturasındaki tutarı doğrudan hesaplayan sistem içi hesaplamalardır',
-            'B': 'Denetçi tarafından yürütülür',
-            'C': 'Elle yapılan kontrollerdir',
-            'D': 'Uygulama kontrollerinin sürekli işleyişini destekler',
-            'E': 'Tek bir işlemin doğruluğunu sağlar',
+            'A': 'Uygulama kontrollerinin sürekli işleyişini destekler',
+            'B': 'BT operasyonlarına ilişkin kontrolleri içerir',
+            'C': 'Veri yedekleme ve kurtarma işlemlerini içerir',
+            'D': 'Tek bir işlemin tutarını denetler',
+            'E': 'Kullanıcı erişimlerinin yönetimini kapsar',
         },
         'D',
-        'BT genel kontrolleri; erişim yönetimi, program değişikliklerinin yönetimi ve BT operasyonları gibi, bilgi sisteminin ve uygulama kontrollerinin sürekli düzgün işlemesini destekleyen kontrollerdir.',
+        'BT genel kontrolleri; erişim yönetimi, program değişiklikleri, yedekleme ve BT operasyonları gibi bilgi sisteminin bütününe ilişkin kontrollerdir ve uygulama kontrollerinin sürekli işleyişini destekler. Tek bir işlemin tutarını denetleyen kontroller uygulama kontrolüdür.',
     ),
     # düzey 2
     '0016': patch(
@@ -245,29 +245,29 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'Bağımsız denetçinin finansal tablo denetiminde iç kontrolü anlaması ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bağımsız denetçinin finansal tablo denetiminde iç kontrolü anlaması ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İç kontrolün etkinliği hakkında ayrı görüş vermek için yapılır',
-            'B': 'İç kontrolü yeniden tasarlamak için yapılır',
-            'C': 'Risk değerlendirmesi ve prosedür tasarımı için yapılır',
-            'D': 'Personelin performansını ölçmek için yapılır',
-            'E': 'Yönetimin yerine kontrolleri yürütmek için yapılır',
+            'A': 'Önemli yanlışlık risklerinin belirlenmesine yardımcı olur',
+            'B': 'İleri denetim prosedürlerinin tasarımına dayanak oluşturur',
+            'C': 'İç kontrol hakkında ayrı görüş vermek için yapılır',
+            'D': 'Kontrollerin tasarımının değerlendirilmesini kapsar',
+            'E': 'Kontrollerin uygulanıp uygulanmadığının belirlenmesini içerir',
         },
         'C',
-        'Denetçi, önemli yanlışlık risklerini belirlemek ve değerlendirmek ve ileri denetim prosedürlerini tasarlamak için iç kontrolü anlar; iç kontrolün etkinliği hakkında görüş vermez.',
+        'Denetçi iç kontrolü riskleri belirlemek ve ileri prosedürleri tasarlamak için anlar; kontrollerin tasarımını ve uygulanıp uygulanmadığını değerlendirir. Finansal tablo denetiminde iç kontrolün etkinliği hakkında ayrı bir görüş verilmez.',
     ),
     # düzey 2
     '0018': patch(
-        "BDS 265'e göre iç kontrol eksikliği aşağıdakilerden hangisini ifade eder?",
+        "BDS 265'e göre aşağıdakilerden hangisi bir iç kontrol eksikliği sayılmaz?",
         {
-            'A': 'Önemlilik düzeyinin aşılması',
-            'B': 'Düzeltmelerin reddedilmesi',
-            'C': 'Denetim ücretinin yetersizliği',
-            'D': 'Kontrolün yanlışlığı zamanında önleyememesi',
-            'E': 'Denetçinin kanıt toplayamaması',
+            'A': 'Kontrolün yanlış tasarlanması',
+            'B': 'Kontrolü yürüten kişinin yeterli yetkinliğe sahip olmaması',
+            'C': 'Kontrolün tasarlandığı gibi uygulanmaması',
+            'D': 'Denetçinin zamanının yetersiz kalması',
+            'E': 'Gerekli bir kontrolün bulunmaması',
         },
         'D',
-        'Eksiklik; bir kontrolün tasarımının, uygulanmasının ya da işleyişinin yanlışlıkları zamanında önlemeye veya tespit edip düzeltmeye elverişli olmaması ya da gerekli bir kontrolün bulunmamasıdır.',
+        'Eksiklik; bir kontrolün tasarımının, uygulanmasının ya da işleyişinin yanlışlıkları zamanında önlemeye veya tespit edip düzeltmeye elverişli olmaması ya da gerekli bir kontrolün bulunmamasıdır. Denetçinin zaman kısıtı işletmenin iç kontrolüyle ilgili değildir.',
     ),
     # düzey 3
     '0019': patch(
@@ -310,16 +310,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        "BDS 315'e göre iç kontrol sistemini tasarlama, uygulama ve sürdürme sorumluluğu kime aittir?",
+        'İç kontrol sistemine ilişkin sorumluluklarla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Bağımsız denetçiye',
-            'B': 'Kamu Gözetimi Kurumuna',
-            'C': 'Vergi müfettişlerine',
-            'D': 'Yönetime ve üst yönetimden sorumlu olanlara',
-            'E': 'Denetçi ve iç denetçiye',
+            'A': 'Yönetim iç kontrolün tasarlanmasından sorumludur',
+            'B': 'Üst yönetimden sorumlu olanlar iç kontrolü gözetir',
+            'C': 'Diğer personel de iç kontrolün işleyişinde rol alır',
+            'D': 'Tasarlama sorumluluğu bağımsız denetçiye aittir',
+            'E': 'Denetçi iç kontrolü risk değerlendirmesi amacıyla anlar',
         },
         'D',
-        'İç kontrol sistemi, üst yönetimden sorumlu olanlar, yönetim ve diğer personel tarafından tasarlanır, uygulanır ve sürdürülür. Denetçi iç kontrolü anlar ve değerlendirir.',
+        'İç kontrol sistemi üst yönetimden sorumlu olanlar, yönetim ve diğer personel tarafından tasarlanır, uygulanır ve sürdürülür. Bağımsız denetçi iç kontrolü anlar ve değerlendirir, ancak tasarlamaz.',
     ),
     # düzey 3
     '0023': patch(
@@ -492,16 +492,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0036': patch(
-        'Denetçinin iç kontrolde tespit ettiği bir eksiklik, ilgili hesapta önemli yanlışlık riskini artırmaktadır.\n\nDenetçinin bu durumda yapması beklenen aşağıdakilerden hangisidir?',
+        'Denetçinin iç kontrolde tespit ettiği bir eksiklik, ilgili hesapta önemli yanlışlık riskini artırmaktadır.\n\nAşağıdakilerden hangisi bu durumda denetçinin yapması beklenenlerden biri değildir?',
         {
-            'A': 'Önemliliği yükseltmek',
-            'B': 'Eksikliği görmezden gelmek',
-            'C': 'Görüşü hemen olumsuza çevirmek',
-            'D': 'Planı değiştirmeden devam etmek',
-            'E': 'İleri prosedürleri buna göre değiştirmek',
+            'A': 'Eksikliğin bildirilmesi gerekip gerekmediğini değerlendirmek',
+            'B': 'Risk değerlendirmesini gözden geçirmek',
+            'C': 'İleri prosedürlerin kapsamını genişletmek',
+            'D': 'Etkilenen hesaplarda daha güvenilir kanıt aramak',
+            'E': 'Eksikliği dikkate almadan aynı planla devam etmek',
         },
         'E',
-        'Eksiklik risk değerlendirmesini etkiliyorsa denetçi ileri denetim prosedürlerinin niteliğini, zamanlamasını ve kapsamını değiştirir ve eksikliğin bildirilmesi gerekip gerekmediğini değerlendirir.',
+        'Eksiklik risk değerlendirmesini etkiliyorsa denetçi değerlendirmesini gözden geçirir, ileri prosedürleri değiştirir ya da genişletir ve eksikliğin bildirilmesi gerekip gerekmediğini değerlendirir.',
     ),
     # düzey 2
     '0037': patch(
@@ -557,16 +557,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Aşağıdakilerden hangisi önleyici kontrole örnektir?',
+        'Aşağıdakilerden hangisi önleyici kontrole örnek değildir?',
         {
-            'A': 'Dönem sonunda müşteri bakiyelerinin karşılaştırılıp farkların sonradan araştırılması',
-            'B': 'İç denetim raporlarının incelenmesi',
-            'C': 'Ödemenin yetkili onayı olmadan yapılamaması',
-            'D': 'Ay sonu banka mutabakatı',
-            'E': 'Stok sayım farklarının araştırılması',
+            'A': 'Mükerrer fatura numarasının girişte reddedilmesi',
+            'B': 'Görevlerin farklı çalışanlara dağıtılması',
+            'C': 'Faturaların ekstrelerle sonradan karşılaştırılması',
+            'D': 'Ödemenin yetkili onayı olmadan yapılamaması',
+            'E': 'Kredi limitini aşan siparişin sistemce durdurulması',
         },
         'C',
-        'Önleyici kontroller hata ya da hilenin gerçekleşmesini baştan engeller; onaysız ödeme yapılamaması bu niteliktedir. Mutabakat ve farkların araştırılması tespit edici kontrollerdir.',
+        'Önleyici kontroller hata ya da hilenin gerçekleşmesini baştan engeller. Gerçekleşmiş işlemlerin sonradan karşılaştırılması ise farkları ortaya çıkaran tespit edici bir kontroldür.',
     ),
     # düzey 2
     '0042': patch(
@@ -596,16 +596,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        'İç kontrolün sağladığı güvence ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'İç kontrolün sağladığı güvence ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Hataların ve hilelerin tamamını önler',
-            'B': 'Mutlak güvence sağlar',
-            'C': 'Denetimi gereksiz kılar',
-            'D': 'Yönetimin kontrolleri ihlal etmesini olanaksız kılar',
-            'E': 'Makul güvence sağlar',
+            'A': 'İyi tasarlanmış olsa da yapısal sınırları vardır',
+            'B': 'Amaçlara ulaşılacağına dair makul düzeyde güvence verir',
+            'C': 'Etkinliği zaman içinde değişebilir',
+            'D': 'İşleyişi kişilerin dikkat ve özenine bağlıdır',
+            'E': 'Hata ve hilelerin tamamını önlemeyi garanti eder',
         },
         'E',
-        'İç kontrol ne kadar iyi tasarlanmış olursa olsun yapısal kısıtları nedeniyle amaçlara ulaşılacağına dair ancak makul güvence sağlar.',
+        'İç kontrol, ne kadar iyi tasarlanmış olursa olsun yapısal kısıtları nedeniyle amaçlara ulaşılacağına dair ancak makul güvence sağlar; hata ve hilelerin tamamını önlemeyi garanti edemez.',
     ),
     # düzey 2
     '0045': patch(
@@ -622,16 +622,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "BDS 402'ye göre Tip 1 raporla ilgili aşağıdakilerden hangisi doğrudur?",
+        "BDS 402'ye göre hizmet kuruluşu denetçisinin Tip 1 raporuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Kontrollerin bir yıl boyunca etkin işlediğine dair test sonuçlarını içerir',
-            'B': 'Belirli bir tarihteki tasarımı kapsar',
-            'C': 'Finansal tablo görüşü içerir',
-            'D': 'Dönem boyunca işleyişi kapsar',
-            'E': 'Kullanıcı işletmenin yönetimince hazırlanır',
+            'A': 'Kullanıcı işletmenin denetçisine kanıt sağlayabilir',
+            'B': 'Bir yıllık işleyiş testlerini içerir',
+            'C': 'Kontrollerin tasarımının uygunluğunu kapsar',
+            'D': 'Hizmet kuruluşunun sistemine ilişkin açıklamayı içerir',
+            'E': 'Kontrollerin belirli bir tarihte uygulandığını kapsar',
         },
         'B',
-        'Tip 1 rapor, hizmet kuruluşunun sistemine ilişkin açıklamayı ve kontrollerin belirli bir tarihteki tasarımının ve uygulanmasının uygunluğunu kapsar.',
+        'Tip 1 rapor, hizmet kuruluşunun sistemine ilişkin açıklamayı ve kontrollerin belirli bir tarihteki tasarımı ile uygulanmasının uygunluğunu kapsar; dönem boyunca işleyiş etkinliğine ilişkin test sonuçlarını içermez.',
     ),
     # düzey 3
     '0047': patch(
@@ -687,16 +687,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        "Denetçi iç denetim fonksiyonunun çalışmalarından yararlanmıştır.\n\nBDS 610'a göre bu durum denetçinin sorumluluğunu nasıl etkiler?",
+        "BDS 610'a göre denetçinin iç denetim fonksiyonunun çalışmalarından yararlanmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Yararlanılan alanlarda sorumluluk iç denetim birimine devredilir',
-            'B': 'Sorumluluğu azaltmaz',
-            'C': 'Raporda iç denetçi de imza atar',
-            'D': 'Sorumluluk yarı yarıya paylaşılır',
-            'E': 'Sorumluluğu iç denetime geçer',
+            'A': 'Yararlanma kararı denetim dosyasında belgelendirilir',
+            'B': 'Yararlanılan alanlarda denetçinin sorumluluğu iç denetime geçer',
+            'C': 'Denetçi kullanılan çalışmalara kendi prosedürlerini uygular',
+            'D': 'İç denetimin çalışmaları denetçi tarafından değerlendirilir',
+            'E': 'Denetçi görüşüne ilişkin sorumluluk denetçide kalır',
         },
         'B',
-        'Denetçi görüşü ile ilgili tüm sorumluluk denetçiye aittir; iç denetimin çalışmalarından yararlanılması bu sorumluluğu azaltmaz.',
+        'Denetçi görüşü ile ilgili tüm sorumluluk denetçiye aittir; iç denetimin çalışmalarından yararlanılması bu sorumluluğu azaltmaz ve iç denetime devretmez.',
     ),
     # düzey 2
     '0052': patch(
