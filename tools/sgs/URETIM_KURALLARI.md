@@ -543,6 +543,14 @@ FATAL 0 / UYARI 0, kör %24 (rastgele taban) ile geçti — hiç yeniden çalı�
 Doğrusu **dağılımdır**: doğru şık bazen en uzun, bazen en kısa, çoğunlukla arada.
 `tms_36`'da ulaşılan dağılım — en uzun 9 · 2. 23 · 3. 13 · 4. 6 · en kısa 9.
 
+**Sayısal şıklarda aynı tuzak BÜYÜKLÜK sırasında doğar.** Tutar şıklarında boy çoğunlukla
+eşittir, ama çeldiriciler doğru cevabın "biraz altı / biraz üstü" diye üretilince doğru
+değer **ortanca** kalır. `gider_dagitimi` ilk tasarımında 29 sayısal sorunun **14'ünde**
+doğru cevap ortanca değerdi ("en büyüğü ve en küçüğü ele, ortadakini seç"). Kör ölçütü
+bunu boydan göremez; tasarımda ayrıca sayılmalı. Çare: anlamlı çeldiricileri (yaygın
+hatanın sonucu) önce kullan, doğru cevabın sırasını 0-4 arasında döngüyle hedefle, eksik
+kalan tarafı doğru değerden adımlı dolguyla tamamla. Sonuç dağılımı 6/5/5/7/6.
+
 ⚠️ **Çare doğru şıkkı kısaltmak değil, çeldiriciye gerçek içerik eklemektir** —
 yanlış iddianın kendi sonucunu yazdır ("…kaydedilir **ve varlık 455.000 ₺'ye
 indirilir**"). Mekanik kısaltma boyu düzeltir, bilgiyi götürür.
