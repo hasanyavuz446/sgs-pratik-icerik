@@ -65,16 +65,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        "Aşağıdakilerden hangisi '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubunda yer alır?",
+        "Aşağıdaki hesaplardan hangisi '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubunda yer almaz?",
         {
-            'A': '642 Faiz Gelirleri',
-            'B': '621 Satılan Ticari Mallar Maliyeti (-)',
-            'C': '600 Yurt İçi Satışlar',
-            'D': '660 Kısa Vadeli Borçlanma Giderleri (-)',
-            'E': '689 Diğer Olağandışı Gider ve Zararlar (-)',
+            'A': '602 Diğer Gelirler',
+            'B': '640 İştiraklerden Temettü Gelirleri',
+            'C': '642 Faiz Gelirleri',
+            'D': '643 Komisyon Gelirleri',
+            'E': '645 Menkul Kıymet Satış Kârları',
         },
         'A',
-        '**642 Faiz Gelirleri**, esas faaliyet dışı ama olağan nitelikli gelirlerdendir → **64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar** grubundadır (645 Menkul Kıymet Satış Kârları, 646 Kambiyo Kârları, 647 Reeskont Faiz Gelirleri de bu gruptadır).',
+        '640, 642, 643 ve 645 hesapları 64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar grubundadır. 602 Diğer Gelirler ise esas faaliyetle ilgili olup 60 Brüt Satışlar grubunda yer alır.',
         "1 Sıra No'lu MSUGT - 64 / 642",
     ),
     # düzey 3
@@ -149,16 +149,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        'Esas faaliyet konusu taşınmaz kiralama olmayan işletmenin, başka bir işletmeye kiraya verdiği deposuna ait 18.000 ₺ tutarındaki cari dönem kira geliri dönem sonunda tahakkuk etmiş; bedel henüz tahsil edilmemiştir.\n\nYapılacak kayıt hangisidir?',
+        'Esas faaliyet konusu taşınmaz kiralama olmayan işletmenin, başka bir işletmeye kiraya verdiği deposuna ait 18.000 ₺ tutarındaki cari dönem kira geliri dönem sonunda tahakkuk etmiş; bedel henüz tahsil edilmemiştir.\n\nBu tahakkukun muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': '649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ borç / 181 Gelir Tahakkukları 18.000 ₺ alacak',
-            'B': '181 Gelir Tahakkukları 18.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ alacak',
-            'C': '180 Gelecek Aylara Ait Giderler 18.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 18.000 ₺ alacak',
-            'D': '102 Bankalar 18.000 ₺ borç / 600 Yurt İçi Satışlar 18.000 ₺ alacak',
-            'E': '181 Gelir Tahakkukları 18.000 ₺ borç / 679 Diğer Olağandışı Gelir ve Kârlar 18.000 ₺ alacak',
+            'A': '181 Gelir Tahakkukları hesabı 18.000 ₺ borçlandırılır',
+            'B': "Kira geliri 600 Yurt İçi Satışlar'a alacak yazılır",
+            'C': 'Gelir 649 Diğer Olağan Gelir ve Kârlar hesabına yazılır',
+            'D': 'Tahakkuk kaydı dönemsellik kavramının gereğidir',
+            'E': 'Kira tahsil edildiğinde 181 hesabı alacaklandırılır',
         },
         'B',
-        'Cari döneme ait fakat henüz tahsil edilmemiş gelir **181 Gelir Tahakkukları** hesabında varlık olarak izlenir. Esas faaliyet dışında olmakla birlikte olağan nitelikteki kira geliri **649 Diğer Olağan Gelir ve Kârlar** hesabına alacak yazılır.',
+        "Cari döneme ait olup tahsil edilmemiş gelir 181 Gelir Tahakkukları hesabına borç kaydedilir. Kira, esas faaliyet dışı olduğundan 600'e değil 649 Diğer Olağan Gelir ve Kârlar hesabına alacak yazılır. Tahsilde 181 kapatılır.",
         "1 Sıra No'lu MSUGT - 181/649",
     ),
     # düzey 2
@@ -345,16 +345,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        "Aşağıdakilerden hangisi '65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)' grubunda yer alır?",
+        "Aşağıdaki hesaplardan hangisi '65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)' grubunda yer almaz?",
         {
-            'A': '600 Yurt İçi Satışlar',
-            'B': '642 Faiz Gelirleri',
-            'C': '654 Karşılık Giderleri (-)',
-            'D': '679 Diğer Olağandışı Gelir ve Kârlar',
-            'E': '631 Pazarlama, Satış ve Dağıtım Giderleri (-)',
+            'A': '653 Komisyon Giderleri (-)',
+            'B': '654 Karşılık Giderleri (-)',
+            'C': '620 Satılan Mamuller Maliyeti (-)',
+            'D': '655 Menkul Kıymet Satış Zararları (-)',
+            'E': '659 Diğer Olağan Gider ve Zararlar (-)',
         },
         'C',
-        '**654 Karşılık Giderleri (-)**, esas faaliyet dışı olağan giderlerdendir → **65 Diğer Faaliyetlerden Olağan Gider ve Zararlar (-)** grubundadır (655 Menkul Kıymet Satış Zararları, 656 Kambiyo Zararları, 657 Reeskont Faiz Giderleri de bu gruptadır).',
+        '653, 654, 655 ve 659 hesapları 65 Diğer Faaliyetlerden Olağan Gider ve Zararlar grubundadır. 620 Satılan Mamuller Maliyeti ise 62 Satışların Maliyeti grubunda yer alır.',
         "1 Sıra No'lu MSUGT - 65 / 654",
     ),
     # düzey 2
@@ -695,16 +695,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "'631 Pazarlama, Satış ve Dağıtım Giderleri' ile '632 Genel Yönetim Giderleri' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'631 Pazarlama, Satış ve Dağıtım Giderleri' ile '632 Genel Yönetim Giderleri' hesaplarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': '631 ürünlerin pazarlanması-satışı-dağıtımıyla ilgili giderleri; 632 ise işletmenin genel yönetimiyle ilgili giderleri izler. İkisi de 63 Faaliyet Giderleri grubundadır.',
-            'B': 'İkisi de satışların maliyetine (62 grubu) dâhildir ve brüt satış kârının hesaplanmasında net satışlardan doğrudan düşülerek gösterilir.',
-            'C': 'İkisi de 68 Olağandışı Gider ve Zararlar grubunda yer alır ve olağan kâr kademesinden sonra dönem kârından düşülerek raporlanır.',
-            'D': '631 satılan ürünlerin üretim maliyetini, 632 ise satın alınan ticari malların alış maliyetini izler; dolayısıyla her ikisi de 62 Satışların Maliyeti (-) grubunda yer alır.',
-            'E': '631 bir gelir, 632 ise bir borç hesabıdır; ikisi de dönem sonunda kapatılmadan kalanlarıyla bilançoda ayrı ayrı gösterilir.',
+            'A': '632 satış personelinin, 631 yönetimin giderlerini izler',
+            'B': '631, ürünlerin pazarlanması ve dağıtımıyla ilgili giderleri izler',
+            'C': '632, işletmenin genel yönetimine ilişkin giderleri izler',
+            'D': 'İki hesap da 63 Faaliyet Giderleri grubundadır',
+            'E': 'İki hesap da brüt satış kârından düşülerek faaliyet kârına ulaşılır',
         },
         'A',
-        '**631** ürünlerin pazarlanması, satışı ve dağıtımıyla ilgili giderleri; **632** işletmenin genel yönetimiyle ilgili giderleri izler. Her ikisi de **63 Faaliyet Giderleri (-)** grubundadır ve brüt satış kârından düşülür.',
+        '631 ürünlerin pazarlanması, satışı ve dağıtımıyla ilgili giderleri; 632 işletmenin genel yönetimiyle ilgili giderleri izler. İkisi de 63 Faaliyet Giderleri grubundadır ve brüt satış kârından düşülerek faaliyet kârı bulunur. A şıkkı hesapların içeriğini yer değiştirmiştir.',
         "1 Sıra No'lu MSUGT - 631 / 632",
     ),
     # düzey 3

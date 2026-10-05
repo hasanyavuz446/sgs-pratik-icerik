@@ -513,16 +513,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        "Tekdüzen Hesap Planı'ndaki 408 Menkul Kıymetler İhraç Farkları hesabıyla ilgili hangisi doğrudur?",
+        "Tekdüzen Hesap Planı'ndaki 408 Menkul Kıymetler İhraç Farkları hesabıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Tahviller nominal değerinin üzerinde ihraç edildiğinde oluşan geliri gösteren bir özkaynak hesabıdır.',
-            'B': 'Hisse senedi ihraç primlerini izleyen sermaye yedeği hesabıdır.',
-            'C': 'Nominal değer ile ihraç bedeli arasındaki iskonto farkını izleyen pasifi düzenleyici hesaptır; dönemsel kısmı itfa edilerek finansman giderine aktarılır.',
-            'D': 'İşletmenin yatırım amacıyla satın aldığı tahvilleri izleyen aktif menkul kıymet hesabıdır.',
-            'E': 'Çıkarılmış tahvillerin anapara ödemesini izleyen banka hesabıdır.',
+            'A': 'Tahvillerin nominal değerin altında ihracında kullanılır',
+            'B': 'Pasifi düzenleyici nitelikte bir hesaptır',
+            'C': 'Tahvillerin nominal değerin üzerinde ihracında oluşan primi izler',
+            'D': 'Dönemsel kısmı itfa edilerek finansman giderine aktarılır',
+            'E': 'Nominal değer ile ihraç bedeli arasındaki farkı izler',
         },
         'C',
-        '**408 Menkul Kıymetler İhraç Farkları**, tahvil ve benzeri borçlanma araçlarının nominal değerinden daha düşük bedelle ihracında oluşan farkı izleyen pasifi düzenleyici hesaptır. Farkın döneme düşen kısmı itfa edilerek finansman giderlerine aktarılır.',
+        '408 Menkul Kıymetler İhraç Farkları, tahvillerin nominal değerin altında (iskontolu) ihracında nominal değer ile ihraç bedeli arasındaki farkı izleyen pasifi düzenleyici hesaptır; dönemsel kısmı itfa edilerek finansman giderine aktarılır. Prim değil iskonto farkını izler.',
         "1 Sıra No'lu MSUGT - 408/780",
     ),
     # düzey 3
@@ -639,16 +639,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        'İşletme 300.000 ₺ tutarındaki ticari malı iki yıl vadeli borçlanarak satın almıştır. KDV ve vade farkı ihmal edilirse işlem anında temel muhasebe eşitliğinde nasıl bir değişim olur?',
+        'İşletme 300.000 ₺ tutarındaki ticari malı iki yıl vadeli borçlanarak satın almıştır. KDV ve vade farkı ihmal edilmektedir.\n\nBu işlemin işlem anındaki etkisiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Yabancı kaynaklar 300.000 ₺ azalır, özkaynak aynı tutarda artar.',
-            'B': 'Varlıklar ve yabancı kaynaklar 300.000 ₺ azalır.',
-            'C': 'Duran varlıklar artar; pasif toplamı değişmez.',
-            'D': 'Varlıklar 300.000 ₺ artar, özkaynak 300.000 ₺ azalır; borç değişmez.',
-            'E': 'Varlıklar ve yabancı kaynaklar 300.000 ₺ artar; özkaynak değişmez.',
+            'A': 'Varlıklar 300.000 ₺ artar',
+            'B': 'Yabancı kaynaklar 300.000 ₺ artar',
+            'C': 'Özkaynak tutarı değişmez',
+            'D': 'Borç uzun vadeli yabancı kaynaklarda izlenir',
+            'E': 'Özkaynaklar 300.000 ₺ azalır',
         },
         'E',
-        'Kredili mal alımında stok varlığı **300.000 ₺ artar**; ödeme yapılmadığı için aynı tutarda uzun vadeli ticari borç doğar. İşlem gelir veya gider yaratmadığından özkaynak değişmez ve eşitlik korunur.',
+        'Vadeli mal alışı varlıkları (stok) ve yabancı kaynakları aynı tutarda artırır; özkaynak değişmez (Varlıklar = Yabancı Kaynaklar + Özkaynaklar eşitliği korunur). Vadesi bir yılı aşan borç işlem anında uzun vadeli yabancı kaynaklarda izlenir.',
         "Temel muhasebe eşitliği; 1 Sıra No'lu MSUGT - 153/420",
     ),
     # düzey 2
@@ -723,16 +723,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "'320 Satıcılar' hesabının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'320 Satıcılar' hesabının işleyişiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bir gelir hesabıdır; dönem içinde alacaklandırılır, dönem sonunda 690 Dönem Kârı veya Zararı hesabına devredilerek kapatılır.',
-            'B': 'Bir aktif (varlık) hesabıdır; borç doğduğunda borçlandırılır, tahsil edildiğinde alacaklandırılır ve normalde borç kalanı verir.',
-            'C': 'Bir gider hesabıdır; oluştukça borçlandırılır, dönem sonunda sonuç hesaplarına aktarılarak kapatıldığından bilançoda kalan vermez.',
-            'D': 'Bir pasif (kaynak) hesabıdır; borç doğduğunda alacaklandırılır, ödendiğinde borçlandırılır ve alacak kalanı verir.',
-            'E': 'Bir nazım (kayıt dışı) hesaptır; bilanço toplamına dahil edilmez, izleme amacıyla çift taraflı çalıştırılır.',
+            'A': 'Senetsiz ticari borçları izler',
+            'B': 'Borç doğduğunda alacaklandırılır',
+            'C': 'Borç ödendiğinde borçlandırılır',
+            'D': 'Aktif nitelikli olup borç kalanı verir',
+            'E': 'Kural olarak alacak kalanı verir',
         },
         'D',
-        '**320 Satıcılar** bir **pasif (kaynak)** hesabıdır; ticari borç doğduğunda **alacaklandırılır (alacak)**, borç ödendiğinde **borçlandırılır (borç)** ve normalde **alacak kalanı** verir.',
+        '320 Satıcılar, senetsiz ticari borçları izleyen pasif (kaynak) hesabıdır; borç doğduğunda alacaklandırılır, ödendiğinde borçlandırılır ve alacak kalanı verir.',
         "1 Sıra No'lu MSUGT - 320",
     ),
     # düzey 3

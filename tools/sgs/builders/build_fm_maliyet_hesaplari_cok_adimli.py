@@ -317,16 +317,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        'Direkt gider ile endirekt gider arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Direkt gider ile endirekt gider ayrımıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Direkt giderler genel yönetim bölümünde, endirekt giderler ise pazarlama bölümünde oluşan giderlerdir.',
-            'B': 'Direkt giderler mamule doğrudan yüklenemez, dağıtım anahtarıyla pay edilir; endirekt giderler ise anahtara gerek olmadan mamule doğrudan yüklenir.',
-            'C': 'Direkt ve endirekt giderlerin ikisi de bilanço hesabıdır; dönem sonunda varlık olarak aktifleştirilip amortismana tabi tutulur.',
-            'D': 'Endirekt giderler dönem içinde elde edilen satış hasılatının bir unsuru olarak gelir tablosunda gösterilir.',
-            'E': 'Direkt giderler (direkt ilk madde, direkt işçilik) mamule doğrudan yüklenebilir; endirekt giderler ise ancak dağıtım anahtarlarıyla mamullere yüklenebilir.',
+            'A': 'Direkt ilk madde ve malzeme bir direkt giderdir',
+            'B': 'Direkt işçilik mamule doğrudan yüklenebilir',
+            'C': 'Endirekt giderler mamullere dağıtım anahtarlarıyla yüklenir',
+            'D': 'İşletme malzemesi genellikle endirekt gider sayılır',
+            'E': 'Direkt giderler mamullere dağıtım anahtarıyla yüklenir',
         },
         'E',
-        '**Direkt giderler** (direkt ilk madde ve malzeme, direkt işçilik) mamule **doğrudan** yüklenebilir; **endirekt giderler** (genel üretim giderleri) ise doğrudan yüklenemez, **dağıtım anahtarlarıyla** mamullere pay edilir.',
+        'Direkt giderler (direkt ilk madde ve malzeme, direkt işçilik) mamule doğrudan yüklenebilir; endirekt giderler (işletme malzemesi, endirekt işçilik vb.) ise ancak dağıtım anahtarlarıyla mamullere yüklenir. Dağıtım anahtarı endirekt giderler için kullanılır.',
         "1 Sıra No'lu MSUGT - 710/720/730",
     ),
     # düzey 3
@@ -639,16 +639,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        "Maliyet muhasebesinde 'gider yeri' kavramı ile anlatılmak istenen aşağıdakilerden hangisidir?",
+        "Maliyet muhasebesinde 'gider yeri' kavramıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Üretilen mamulün piyasada geçerli satış fiyatını ve buna eklenen kâr marjını ifade eden bir kavramdır.',
-            'B': 'Giderin dönem sonunda bilançoda gösterilen kayıtlı (net defter) değerini ifade eden bir ölçüdür.',
-            'C': 'Giderin oluştuğu/katlanıldığı bölüm, kısım veya faaliyet birimi (ör. üretim yeri, montaj bölümü, yönetim)',
-            'D': 'Giderin niteliğine göre türü; yani malzeme, işçilik, amortisman gibi gider çeşidini ifade eden sınıflamadır.',
-            'E': 'Giderin nakden ödendiği veya tahakkuk ettiği tarihi gösteren, kayıt zamanına ilişkin bir belirlemedir.',
+            'A': 'Gider yeri, giderin oluştuğu bölüm veya faaliyet birimidir',
+            'B': 'Üretim, montaj ve yönetim bölümleri birer gider yeridir',
+            'C': 'Gider yeri, giderlerin türlerine göre ayrılmasıdır',
+            'D': 'Gider yerleri esas ve yardımcı gider yerleri olarak ayrılabilir',
+            'E': 'Endirekt giderler önce gider yerlerine dağıtılabilir',
         },
         'C',
-        '**Gider yeri**; giderin oluştuğu/katlanıldığı **bölüm, kısım veya faaliyet birimidir** (üretim yeri, montaj, yönetim vb.). Giderin çeşidi (malzeme/işçilik) ise ayrı bir sınıflamadır.',
+        "Gider yeri, giderin oluştuğu veya katlanıldığı bölüm, kısım ya da faaliyet birimidir (üretim, montaj, yönetim vb.); esas ve yardımcı gider yerleri olarak ayrılır, endirekt giderler önce gider yerlerine dağıtılır. Giderin türüne göre sınıflandırılması 'gider çeşidi' kavramıdır.",
         "1 Sıra No'lu MSUGT - gider yeri/çeşidi",
     ),
     # düzey 2
@@ -849,16 +849,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        '7/B seçeneğini uygulayan bir işletmenin maliyet hesapları incelenmektedir. Buna göre aşağıdaki hesaplardan hangisi 7/B seçeneğinde kullanılır?',
+        '7/B seçeneğini uygulayan bir işletmenin maliyet hesapları incelenmektedir.\n\nBuna göre aşağıdaki hesaplardan hangisi 7/B seçeneğinde kullanılmaz?',
         {
-            'A': '760 Pazarlama Satış ve Dağıtım Giderleri',
-            'B': '730 Genel Üretim Giderleri',
-            'C': '793 Dışarıdan Sağlanan Fayda ve Hizmetler',
-            'D': '770 Genel Yönetim Giderleri',
-            'E': '720 Direkt İşçilik Giderleri',
+            'A': '791 İşçi Ücret ve Giderleri',
+            'B': '792 Memur Ücret ve Giderleri',
+            'C': '730 Genel Üretim Giderleri',
+            'D': '795 Vergi, Resim ve Harçlar',
+            'E': '796 Amortisman ve Tükenme Payları',
         },
         'C',
-        "7/B'de giderler **çeşit esasına** göre 790-797 hesaplarında izlenir (ör. 793). 710-780 hesapları fonksiyon esasına dayanan 7/A seçeneğine aittir.",
+        '7/B seçeneğinde giderler çeşit esasına göre 790-797 gider çeşidi hesaplarında izlenir; 791, 792, 795 ve 796 bu hesaplardandır. 730 Genel Üretim Giderleri ise fonksiyon esasına dayanan 7/A seçeneğine aittir.',
         'THP 7/B Gider Çeşitleri',
     ),
     # düzey 3

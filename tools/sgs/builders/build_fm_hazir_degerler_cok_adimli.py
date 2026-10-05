@@ -471,16 +471,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0032': patch(
-        'Çek ve senet (bono) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Çek ve senet (bono) ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Çek de senet de elden nakit para ödemesinde kullanılan, ciro edilemeyen belgelerdir.',
-            'B': 'Senet (bono) yabancı para cinsinden düzenlenir; Türk Lirası üzerinden senet düzenlenemez.',
-            'C': 'Çek esas olarak bir ödeme aracıdır; senet (bono) ise bir kredi (vade) aracıdır.',
-            'D': 'Çek, bankaların kendi aralarında düzenleyebildiği, gerçek kişilerce kullanılamayan bir kıymetli evraktır.',
-            'E': 'Çek esas olarak bir kredi (vade) aracıdır; senet (bono) ise görüldüğünde ödenen bir ödeme aracıdır.',
+            'A': 'Çek görüldüğünde ödenir',
+            'B': 'Bono belirli bir vadede ödenmek üzere düzenlenir',
+            'C': 'Çek bir kredi aracı, bono ise bir ödeme aracıdır',
+            'D': 'Alınan çekler 101 Alınan Çekler hesabında izlenir',
+            'E': 'Senetli ticari alacaklar 121 hesabında izlenir',
         },
         'C',
-        '**Çek** esas olarak bir **ödeme aracıdır** (bankaya hitaben, görüldüğünde ödenmek üzere). **Senet (bono)** ise belirli bir vadede ödeme taahhüdü içeren bir **kredi (vade) aracıdır**.',
+        'Çek esas olarak bir ödeme aracıdır ve görüldüğünde ödenir; bono (senet) ise belirli bir vadede ödenmek üzere düzenlenen bir kredi aracıdır. Alınan çekler 101, senetli ticari alacaklar 121 hesabında izlenir.',
         'Kıymetli evrak - çek/bono ayrımı',
     ),
     # düzey 3
@@ -667,16 +667,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        'Banka mutabakatında aşağıdaki işlemlerden hangisi doğrudur?',
+        'Banka mutabakatıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Henüz bankaya ulaşmamış mevduat, işletmenin defter bakiyesinden düşülür.',
-            'B': 'Bankanın doğrudan tahsil ettiği müşteri borcu, banka hesap özetinden düşülür.',
-            'C': 'Bankanın kestiği ve işletmenin kaydetmediği masraf, banka hesap özeti bakiyesine eklenir.',
-            'D': 'Henüz bankaya ibraz edilmemiş çekler, işletmenin defter bakiyesine eklenir.',
-            'E': 'Yoldaki mevduat banka hesap özeti bakiyesine eklenir; ödenmemiş çekler bu bakiyeden düşülür.',
+            'A': 'Mutabakatın amacı iki bakiye arasındaki farkları açıklamaktır',
+            'B': 'Bankanın kestiği ancak işletmenin bilmediği masraf işletme kaydına işlenir',
+            'C': 'Bankanın tahsil ettiği ancak işletmenin bilmediği tutar işletme kaydına eklenir',
+            'D': 'Hatalı kayıtlar ilgili tarafın bakiyesinde düzeltilir',
+            'E': 'Yoldaki mevduat banka bakiyesinden düşülür, ödenmemiş çekler eklenir',
         },
         'E',
-        '**Yoldaki mevduat** işletmece kaydedilmiş fakat bankaca henüz kaydedilmemiştir; bu nedenle banka hesap özeti bakiyesine eklenir. **Ödenmemiş çekler** de işletmece kaydedilmiş fakat bankaca henüz ödenmemiştir; banka hesap özeti bakiyesinden düşülür. Banka masrafı ve bankanın doğrudan tahsilatı ise işletmenin defter bakiyesini düzeltir.',
+        'Banka mutabakatında yoldaki mevduat banka hesap özeti bakiyesine EKLENİR, ödenmemiş çekler bu bakiyeden DÜŞÜLÜR. İşletmenin henüz bilmediği banka masrafları ve tahsilatlar işletme kayıtlarına işlenir; hatalar ilgili tarafın bakiyesinde düzeltilir.',
         'Muhasebe Süreci - 102 Bankalar hesabı ve banka mutabakatı',
     ),
     # düzey 2
@@ -695,16 +695,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "'135 Personelden Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'135 Personelden Alacaklar' hesabıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bir dönen varlık (aktif) hesabıdır; personelden olan alacakları izler, borç kalanı verir.',
-            'B': 'Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve bilançoda varlıklardan (-) düşülür.',
-            'C': 'Bir özkaynak hesabıdır; personele dağıtılacak kâr paylarını izler ve alacak kalanı verir.',
-            'D': 'Bir gelir tablosu hesabıdır; personelden tahsil edilen tutarları gelir olarak izler ve alacak kalanı verir.',
-            'E': 'Bir kaynak (pasif) hesabıdır; personele olan borçları izler ve normalde alacak kalanı verir.',
+            'A': 'Pasif bir hesaptır; personele olan borçları izler',
+            'B': 'Personele verilen borç paraları izler',
+            'C': 'Dönen varlıklar arasında yer alır',
+            'D': 'Personelden tahsil edildiğinde alacaklandırılır',
+            'E': 'Personelin kasa ve sayım açıkları da burada izlenebilir',
         },
         'A',
-        '**135 Personelden Alacaklar**, işletmenin personelinden olan (avans dışı) alacaklarını izleyen bir **dönen varlık (aktif)** hesabıdır; normalde **borç kalanı** verir.',
+        '135 Personelden Alacaklar, personele verilen borç paralar ile personelin zimmet, kasa ve sayım açıkları gibi alacakları izleyen bir dönen varlık hesabıdır; borç kalanı verir, tahsilde alacaklandırılır. Personele olan borçlar 335 Personele Borçlar hesabında izlenir.',
         "1 Sıra No'lu MSUGT - 135 Personelden Alacaklar",
     ),
     # düzey 2

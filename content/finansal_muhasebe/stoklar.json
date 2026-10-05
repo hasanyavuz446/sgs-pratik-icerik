@@ -113,16 +113,16 @@
     "id": "finmuh-stok-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Stok maliyet akış yöntemlerinden 'hareketli ağırlıklı ortalama' yöntemi için aşağıdakilerden hangisi doğrudur?",
+    "stem": "Stok maliyet akış yöntemlerinden 'hareketli ağırlıklı ortalama' yöntemiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "En son giren birimler ilk çıkmış varsayılır ve satışlar en yeni alış fiyatları üzerinden maliyetlendirilir.",
-      "B": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir.",
-      "C": "Dönem içinde satışlar maliyetlendirilmez; dönem sonunda tek bir ortalama birim maliyet hesaplanarak uygulanır.",
-      "D": "Stoktaki miktar dikkate alınmadan alış fiyatlarının basit aritmetik ortalaması alınarak maliyet bulunur.",
-      "E": "İlk giren birimler ilk çıkmış varsayılır ve satışlar en eski alış fiyatları üzerinden maliyetlendirilir."
+      "A": "Her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır",
+      "B": "Ortalama birim maliyet dönem sonunda bir kez hesaplanır",
+      "C": "Satışlar o anki ortalama birim maliyetle maliyetlendirilir",
+      "D": "Yöntem sürekli envanter sistemiyle birlikte uygulanır",
+      "E": "Ortalama, alışların miktar ve tutar ağırlığını dikkate alır"
     },
     "answer": "B",
-    "solution": "**Hareketli ağırlıklı ortalama**, her yeni alıştan sonra eldeki stokun toplam maliyetini toplam miktara bölerek ortalamayı **günceller**; satışlar o anki güncel ortalama ile maliyetlendirilir. Dönem sonunda tek ortalama hesaplayan yöntem ise 'tartılı (dönem sonu) ortalama'dır.",
+    "solution": "Hareketli ağırlıklı ortalama yönteminde her yeni alıştan sonra ortalama birim maliyet yeniden hesaplanır ve satışlar o anki ortalamayla maliyetlendirilir; bu nedenle sürekli envanter sistemiyle uygulanır. Dönem sonunda tek bir ortalama hesaplanması (dönemsel) tartılı ortalama yöntemidir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -201,16 +201,16 @@
     "id": "finmuh-stok-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir işletmenin dönem sonu stokları 18.000 ₺ fazla sayılmıştır. Alışlar ve satışlar doğru kaydedilmiş, hata izleyen dönemde tekrarlanmamıştır. Bu hatanın cari ve izleyen dönem kârlarına etkisi hangisidir?",
+    "stem": "Bir işletmenin dönem sonu stokları 18.000 ₺ fazla sayılmıştır. Alışlar ve satışlar doğru kaydedilmiş, hata izleyen dönemde tekrarlanmamıştır.\n\nBu hatanın etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Hata satılan malın maliyetini ve dönem kârlarını etkilemez.",
-      "B": "Cari dönem satış hasılatı 18.000 ₺ azalır; kâr etkilenmez.",
-      "C": "Cari dönem kârı 18.000 ₺ eksik, izleyen dönem kârı 18.000 ₺ fazla hesaplanır.",
-      "D": "Her iki dönemin kârı da 18.000 ₺ fazla hesaplanır.",
-      "E": "Cari dönem kârı 18.000 ₺ fazla, izleyen dönem kârı 18.000 ₺ eksik hesaplanır."
+      "A": "Cari dönemin satılan mal maliyeti 18.000 ₺ eksik hesaplanır",
+      "B": "Cari dönem kârı 18.000 ₺ fazla hesaplanır",
+      "C": "İzleyen dönemin dönem başı stoku 18.000 ₺ fazla olur",
+      "D": "İzleyen dönem kârı 18.000 ₺ eksik hesaplanır",
+      "E": "İki dönemin toplam kârı 18.000 ₺ fazla hesaplanır"
     },
     "answer": "E",
-    "solution": "Dönem sonu stokunun 18.000 ₺ fazla gösterilmesi cari dönemde satılan malın maliyetini aynı tutarda **eksik**, kârı **fazla** gösterir. Hatalı dönem sonu stoku izleyen dönemin dönem başı stoku olduğundan, hata tekrarlanmazsa izleyen dönemin maliyeti 18.000 ₺ fazla ve kârı 18.000 ₺ eksik çıkar.",
+    "solution": "Dönem sonu stok fazlalığı cari dönemde SMM'yi 18.000 ₺ azaltır, kârı 18.000 ₺ artırır. Bu stok izleyen dönemin dönem başı stoku olduğundan izleyen dönemde SMM 18.000 ₺ fazla, kâr 18.000 ₺ eksik çıkar. Hata kendiliğinden dengelenir; iki dönemin toplam kârı doğrudur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -245,16 +245,16 @@
     "id": "finmuh-stok-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "İşletme, ileride teslim alacağı ticari mallar için satıcısına 40.000 ₺ sipariş avansını banka yoluyla ödemiştir (mallar henüz teslim alınmamıştır).\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, ileride teslim alacağı ticari mallar için satıcısına 40.000 ₺ sipariş avansını banka yoluyla ödemiştir (mallar henüz teslim alınmamıştır).\n\nBu işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "159 Verilen Sipariş Avansları (borç) 40.000 / 102 Bankalar (alacak) 40.000",
-      "B": "320 Satıcılar (borç) 40.000 / 102 Bankalar (alacak) 40.000",
-      "C": "159 Verilen Sipariş Avansları (borç) 40.000 / 320 Satıcılar (alacak) 40.000",
-      "D": "153 Ticari Mallar (borç) 40.000 / 102 Bankalar (alacak) 40.000",
-      "E": "102 Bankalar (borç) 40.000 / 159 Verilen Sipariş Avansları (alacak) 40.000"
+      "A": "Ödeme gününde 153 Ticari Mallar hesabı 40.000 ₺ borçlandırılır",
+      "B": "159 Verilen Sipariş Avansları hesabı 40.000 ₺ borçlandırılır",
+      "C": "102 Bankalar hesabı 40.000 ₺ alacaklandırılır",
+      "D": "Mallar teslim alındığında 159 hesabı alacaklandırılır",
+      "E": "Verilen avans bilançoda stoklar grubunda yer alır"
     },
     "answer": "A",
-    "solution": "Mal henüz teslim alınmadığından 153 çalışmaz. Verilen avans bir alacak niteliğindedir: **159 Verilen Sipariş Avansları (borç) 40.000 / 102 Bankalar (alacak) 40.000**. Mallar geldiğinde 153 borçlanıp 159 kapatılır.",
+    "solution": "Mallar teslim alınmadan ödenen avans 159 Verilen Sipariş Avansları hesabına borç, 102 Bankalar hesabına alacak yazılır; 159 stoklar grubunda (15) yer alır. Mallar teslim alındığında 153 borçlandırılır, 159 kapatılır. Ödeme gününde 153 çalışmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -949,16 +949,16 @@
     "id": "finmuh-stok-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir işletme, satılmak üzere kendisine bırakılan (konsinye) malları satıcı işletme adına elinde bulundurmaktadır. Bu konsinye mallarla ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Bir işletme, satılmak üzere kendisine bırakılan (konsinye) malları satıcı işletme adına elinde bulundurmaktadır.\n\nBu konsinye mallarla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Her iki işletmenin de stoklarında ayrı ayrı gösterilir.",
-      "B": "Malı elinde bulunduran (konsinyi) işletmenin stoklarında gösterilir.",
-      "C": "Mülkiyet devredilmediği için malı gönderen (konsinyatör) işletmenin stoklarında kalır.",
-      "D": "Satış gerçekleşene kadar iki işletmenin stoğunda da gösterilmez.",
-      "E": "Malı elinde bulunduran işletmenin satışları arasında gösterilir."
+      "A": "Mülkiyet, mallar satılıncaya kadar gönderende kalır",
+      "B": "Konsinye alan işletme malları nazım hesaplarda izleyebilir",
+      "C": "Mallar, konsinye alan işletmenin stoklarına dâhil edilir",
+      "D": "Mal satıldığında hasılatı gönderen işletme kaydeder",
+      "E": "Konsinye alan işletme satıştan komisyon elde eder"
     },
     "answer": "C",
-    "solution": "Konsinye malların **mülkiyeti** satılana kadar gönderen (konsinyatör) işletmededir; dolayısıyla malı elinde bulunduran işletmenin değil, **malı gönderen işletmenin stoklarında** izlenir. Bu, özün önceliği kavramıyla da uyumludur.",
+    "solution": "Konsinye mallarda mülkiyet devredilmediğinden mallar gönderenin (konsinyatör) stoklarında kalır; konsinye alan işletme bunları kendi stoklarına almaz, nazım hesaplarda izleyebilir. Mal üçüncü kişiye satıldığında hasılat gönderende doğar, konsinye alan komisyon geliri elde eder.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

@@ -261,16 +261,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'İhtiyatlılık Kavramı ile ilgili aşağıdaki ifadelerden hangisi doğrudur?',
+        'İhtiyatlılık Kavramı ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Muhtemel gider ve zararlar için karşılık ayrılır; gerçekleşmemiş gelirler ise kaydedilmez.',
-            'B': 'Gerçekleşmemiş gelir ve kârlar dönem içinde erkenden gelir olarak kayda alınır; karşılık ayrılmaz.',
-            'C': 'İşletme ile sahibi aynı kişi sayıldığından tüm zararlar doğrudan sahibin hesabına aktarılır.',
-            'D': 'Muhtemel gelirler kayda alınır; buna karşılık muhtemel gider ve zararlar dikkate alınmaz.',
-            'E': 'Hem muhtemel gelirler hem muhtemel giderler eşit ölçüde ve aynı anda kayıtlara yansıtılır.',
+            'A': 'Gerçekleşmesi muhtemel gelirler de kayıtlara alınır',
+            'B': 'Muhtemel giderler için karşılık ayrılır',
+            'C': 'İşletme ileride karşılaşabileceği risklere karşı temkinli davranır',
+            'D': 'Kavram, gizli yedek ayrılmasına imkân vermez',
+            'E': 'Muhtemel zararlar dönem sonucuna yansıtılır',
         },
         'A',
-        '**İhtiyatlılık**, muhtemel **gider ve zararların** kayda alınmasını, buna karşın **gerçekleşmemiş gelir ve kârların** kaydedilmemesini gerektirir; asimetrik (temkinli) bir yaklaşımdır.',
+        "1 Sıra No'lu MSUGT'ye göre ihtiyatlılık kavramı, işletmenin karşılaşabileceği risklere karşı temkinli davranmasını; muhtemel gider ve zararlar için karşılık ayrılmasını, gerçekleşmemiş gelirlerin ise kaydedilmemesini gerektirir. Kavram gizli yedek veya gereğinden fazla karşılık ayrılmasına imkân vermez.",
         "1 Sıra No'lu MSUGT - İhtiyatlılık",
     ),
     # düzey 2
@@ -485,16 +485,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        'Özün Önceliği Kavramı ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Özün Önceliği Kavramı ile ilgili aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Her muhasebe işlemi borç ve alacak ayrımı gözetmeksizin tek bir hesapta izlenir.',
-            'B': 'İşlemler ekonomik özüne bakılmadan hukuki biçimlerine göre kayda alınır.',
-            'C': 'İşlemlerin muhasebeleştirilmesinde biçimden çok ekonomik öz esas alınır.',
-            'D': 'Varlıklar edinme bedeliyle değil, her dönem sonunda tasfiye değeriyle değerlenir.',
-            'E': 'Henüz gerçekleşmemiş gelir ve kârlar dönem sonunda erkenden gelir yazılır.',
+            'A': 'İşlemler hukuki biçimden çok ekonomik özüne göre kaydedilir',
+            'B': "Kavram, MSUGT'deki temel muhasebe kavramlarından biridir",
+            'C': 'Muhasebeleştirmede ekonomik öz yerine hukuki biçim esas alınır',
+            'D': 'Biçim ile öz ayrıştığında kayıt ekonomik öze göre yapılır',
+            'E': 'Kavram, gerçeğe uygun sunumu desteklemeye yöneliktir',
         },
         'C',
-        '**Özün Önceliği Kavramı**, işlemlerin muhasebeleştirilmesinde ve raporlanmasında hukuki **biçimden çok ekonomik özün** esas alınmasını gerektirir (ör. finansal kiralamada varlığın kiracıda gösterilmesi).',
+        "1 Sıra No'lu MSUGT'ye göre özün önceliği kavramı, işlemlerin muhasebeye yansıtılmasında ve değerlemede biçimden çok özün esas alınmasını ifade eder; böylece mali tablolar gerçeğe uygun bilgi sunar.",
         "1 Sıra No'lu MSUGT - Özün Önceliği",
     ),
     # düzey 2

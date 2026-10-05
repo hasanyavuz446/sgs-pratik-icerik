@@ -345,30 +345,30 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        "'119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)' hesabıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Bir maliyet hesabıdır; borç kalanı verir ve dönem sonunda ilgili gider hesaplarına yansıtılarak kapatılır.',
-            'B': 'Bir gelir hesabıdır; alacak kalanı verir ve dönem sonunda gelir tablosuna aktarılarak kâra eklenir.',
-            'C': 'Bir nazım hesaptır; bilançoyu etkilemez ve izleme amacıyla borç-alacak dengesinde tutulur.',
-            'D': 'Bir kaynak (pasif) hesabıdır; borç kalanı verir ve bilançonun pasifinde borçlar arasında gösterilir.',
-            'E': 'Aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve menkul kıymetlerden (-) düşülür.',
+            'A': 'Aktifi düzenleyici nitelikte bir hesaptır',
+            'B': 'Kural olarak alacak kalanı verir',
+            'C': 'Bilançoda menkul kıymetlerden (-) olarak düşülür',
+            'D': 'Değer düşüklüğü ortadan kalkınca 644 ile kapatılır',
+            'E': 'Menkul kıymetler grubunda borç kalanı veren bir hesaptır',
         },
         'E',
-        '**119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)**, aktifi düzenleyici bir hesaptır; **alacak kalanı** verir ve bilançoda menkul kıymetlerden **(-)** düşülerek net değeri gösterir.',
+        '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı aktifi düzenleyici (kontr aktif) bir hesaptır; alacak kalanı verir ve bilançoda menkul kıymetlerden (-) düşülür. Karşılık konusu kalmadığında 644 Konusu Kalmayan Karşılıklar ile kapatılır.',
         "1 Sıra No'lu MSUGT - 119",
     ),
     # düzey 2
     '0024': patch(
-        "Katma Değer Vergisi Kanunu'na göre hisse senedi ve tahvil teslimleri ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Katma Değer Vergisi Kanunu'na göre hisse senedi ve tahvil teslimleriyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': "İthalatta KDV'ye tabidir, yurt içinde tabi değildir.",
-            'B': "KDV'den istisnadır (KDV hesaplanmaz).",
-            'C': "%20 KDV'ye tabidir.",
-            'D': "%1 KDV'ye tabidir.",
-            'E': "%10 KDV'ye tabidir.",
+            'A': "Bu teslimler KDV'den istisnadır",
+            'B': 'Bu teslimlerde %20 oranında KDV hesaplanır',
+            'C': 'Satış belgesinde KDV hesaplanmaz',
+            'D': 'İstisna, satış kazancının gelir veya kurumlar vergisini kaldırmaz',
+            'E': 'Hisse senedi ve tahvil teslimleri aynı istisna hükmüne tabidir',
         },
         'B',
-        "Hisse senedi ve tahvil teslimleri **KDV'den istisnadır**; menkul kıymet alım-satımında KDV hesaplanmaz (3065 s. KDVK md. 17/4-g).",
+        "KDVK m. 17/4-g'ye göre hisse senedi ve tahvil teslimleri KDV'den istisnadır; KDV hesaplanmaz. İstisna yalnız KDV bakımındandır; satıştan doğan kazanç gelir veya kurumlar vergisine tabi olmaya devam eder.",
         '3065 s. KDVK md. 17/4-g (menkul kıymet istisnası)',
     ),
     # düzey 2
@@ -807,16 +807,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        "Bir menkul kıymetin 'nominal (itibari) değeri' ile 'alış bedeli' arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir menkul kıymetin 'nominal (itibari) değeri' ile 'alış bedeli' ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Nominal değer, menkul kıymetin satışında elde edilen fiyattır; alış bedeli ise üzerinde yazılı olan itibari değeridir ve ikisi birbirine eşittir.',
-            'B': 'Nominal değer ile alış bedeli birbirine eşittir; üzerinde yazılı tutar ne ise fiilen o tutar ödenir.',
-            'C': 'Nominal değer, menkul kıymetin üzerinde yazılı değeridir; alış bedeli ise onu edinmek için fiilen ödenen tutardır (ikisi farklı olabilir).',
-            'D': 'Alış bedeli, menkul kıymetin üzerinde yazılı olan değeridir; nominal değer ise onu edinmek için piyasada fiilen ödenen güncel tutarı ifade eden değerdir.',
-            'E': 'Nominal değer de alış bedeli de menkul kıymetin dönem sonundaki güncel piyasa (borsa) değerini gösterir; ikisi de değerleme günündeki cari fiyata eşittir.',
+            'A': 'Nominal değer, menkul kıymetin üzerinde yazılı değeridir',
+            'B': 'Alış bedeli ile nominal değer farklı olabilir',
+            'C': 'Nominal değer, menkul kıymeti edinmek için fiilen ödenen tutardır',
+            'D': 'Menkul kıymetler kayıtlara alış bedeliyle alınır',
+            'E': 'Tahvil nominal değerinin altında da satın alınabilir',
         },
         'C',
-        '**Nominal (itibari) değer**, menkul kıymetin üzerinde yazılı değerdir; **alış bedeli** ise onu edinmek için fiilen ödenen tutardır. Menkul kıymet nominalin altında (iskontolu) veya üstünde (primli) alınabildiğinden ikisi farklı olabilir.',
+        'Nominal değer menkul kıymetin üzerinde yazılı değeridir; fiilen ödenen tutar alış bedelidir ve ikisi farklı olabilir (ör. iskontolu tahvil alımı). Menkul kıymetler kayıtlara alış bedeliyle alınır.',
         "1 Sıra No'lu MSUGT / VUK - nominal değer vs alış bedeli",
     ),
     # düzey 3

@@ -471,16 +471,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0032': patch(
-        "KDV'nin indirilebilmesinin şekil şartları bakımından aşağıdakilerden hangisi doğrudur?",
+        "KDV'nin indirilebilmesinin şekil şartlarıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İndirim için ödemenin banka yoluyla yapılmış olması yeterlidir.',
-            'B': "İndirim, KDV'nin malın satış fiyatına gizlenmiş biçimde dahil edilmesiyle yapılır.",
-            'C': "İndirim için KDV'nin belgede gösterilmesi ve defterlere kaydedilmesi gerekir.",
-            'D': 'Belge olmasa da defter kaydı yeterlidir; fatura aranmaz.',
-            'E': 'İndirim hakkı, teslimden sonraki beşinci yıla kadar belgesiz kullanılabilir.',
+            'A': 'KDV fatura veya benzeri belgede ayrıca gösterilmelidir',
+            'B': 'Belge kanuni defterlere kaydedilmelidir',
+            'C': "Defter kaydı yeterlidir; KDV'nin belgede gösterilmesi gerekmez",
+            'D': 'Gerçek bir işleme dayanmayan belgedeki KDV indirilemez',
+            'E': 'İndirilecek KDV 191 hesabında izlenir',
         },
         'C',
-        "İndirim hakkının kullanılması için KDV'nin **fatura/benzeri belgede ayrıca gösterilmesi** ve bu belgelerin **yasal defterlere kaydedilmesi** gerekir (md 29, 34, 54). Belgesiz KDV indirilemez; tek başına banka ödemesi indirim için yeterli değildir.",
+        "KDVK m. 29/3'e göre indirim hakkı, KDV'nin fatura veya benzeri vesikalarda ayrıca gösterilmesi ve bu belgelerin kanuni defterlere kaydedilmesi şartıyla kullanılabilir. Gerçek bir işleme dayanmayan belgedeki KDV indirilemez; indirilecek KDV 191 hesabında izlenir.",
         "3065 sayılı KDVK md 34; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 191",
     ),
     # düzey 3
@@ -723,16 +723,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "İndirilebilen KDV'nin malın maliyetine eklenmemesinin temel gerekçesi aşağıdakilerden hangisidir?",
+        "İndirilebilen KDV'nin malın maliyetine eklenmemesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'KDV bir özkaynak kalemi olduğu için maliyete girmez.',
-            'B': "İndirilebilen KDV nihai maliyet değildir; hesaplanan KDV'den indirilir.",
-            'C': 'İndirilecek KDV ihracat işlemlerinde ortaya çıktığından yurtiçi mal maliyetiyle ilgisi bulunmaz.',
-            'D': 'KDV satış fiyatının içinde gösterildiği için ayrı izlenmez.',
-            'E': 'KDV bir finansman gideri olduğu için doğrudan 660 hesabına yazılır.',
+            'A': 'İndirilebilen KDV 191 hesabında izlenir',
+            'B': 'İndirilebilen KDV malın nihai maliyetinin bir parçasıdır',
+            'C': "İndirilecek KDV hesaplanan KDV'den mahsup edilir",
+            'D': 'İndirimi mümkün olmayan KDV maliyete eklenebilir',
+            'E': "KDV'nin yükü kural olarak nihai tüketiciye aittir",
         },
         'B',
-        "İndirilebilen KDV, satışta hesaplanan KDV'den düşüleceğinden işletmeye **kalıcı bir maliyet yüklemez**; bu nedenle mal/hizmet bedelinden ayrı olarak 191'de izlenir ve maliyete eklenmez. Yalnızca indirilemeyen KDV maliyet/gider olur.",
+        "İndirilebilen KDV işletme için nihai bir maliyet değildir; 191'de izlenir ve hesaplanan KDV'den indirilir. Vergi yükü nihai tüketiciye aittir. İndirimi mümkün olmayan KDV (KDVK m. 30) ise maliyete veya gidere eklenebilir.",
         '3065 s. KDVK md 29/58',
     ),
     # düzey 2

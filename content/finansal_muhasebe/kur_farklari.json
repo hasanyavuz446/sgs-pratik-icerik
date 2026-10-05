@@ -113,16 +113,16 @@
     "id": "finmuh-kur-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "kur_farklari",
-    "stem": "Kur farklarında 'gerçekleşmiş (realize)' ile 'gerçekleşmemiş (değerleme)' kur farkı ayrımı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kur farklarında 'gerçekleşmiş (realize)' ile 'gerçekleşmemiş (değerleme)' kur farkı ayrımıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Gerçekleşmemiş kur farkı kayda alınmaz; bilanço dipnotlarında açıklanır ve dönem gelir tablosunu etkilemez.",
-      "B": "Gerçekleşmiş kur farkı tahsilat/ödeme (kapanış) anında; gerçekleşmemiş kur farkı ise henüz kapanmamış döviz kalemlerinin dönem sonu değerlemesiyle doğar.",
-      "C": "Gerçekleşmiş kur farkı dönem sonu değerlemesinde, gerçekleşmemiş kur farkı ise tahsilat/ödeme anında doğar.",
-      "D": "Her iki kur farkı da bilanço hesabı olarak izlenir; dönem kâr veya zararına yansıtılmaz, özkaynakta gösterilir.",
-      "E": "Gerçekleşmiş de gerçekleşmemiş de döviz alacağının veya borcunun tahsil/ödeme anında ortaya çıkar; değerleme farkı doğmaz."
+      "A": "Gerçekleşmiş kur farkı, döviz kaleminin tahsil ya da ödenmesiyle doğar",
+      "B": "Gerçekleşmemiş kur farkı, tahsilat veya ödeme anında ortaya çıkan farktır",
+      "C": "Kapanmamış döviz kalemlerinin dönem sonu değerlemesi gerçekleşmemiş fark doğurur",
+      "D": "Her iki tür fark da 646 veya 656 hesaplarında izlenir",
+      "E": "Her iki tür fark da dönemin kâr veya zararını etkiler"
     },
     "answer": "B",
-    "solution": "**Gerçekleşmiş** kur farkı, döviz alacağı/borcunun **tahsil/ödeme (kapanış)** anında; **gerçekleşmemiş** kur farkı ise henüz kapanmamış döviz kalemlerinin **dönem sonu değerlemesiyle** doğar. İkisi de 646/656 ile sonuç hesaplarına yansır.",
+    "solution": "Gerçekleşmiş kur farkı döviz kaleminin kapanışında (tahsilat/ödeme) doğar; gerçekleşmemiş kur farkı ise henüz kapanmamış döviz kalemlerinin dönem sonunda VUK m. 280'e göre değerlenmesiyle ortaya çıkar. İkisi de 646 Kambiyo Kârları veya 656 Kambiyo Zararları hesaplarında izlenir ve dönem sonucunu etkiler. B şıkkı gerçekleşmiş kur farkının tanımını gerçekleşmemiş için vermektedir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (mevzuat-çeldirici; sınav stiline kalibre)",
@@ -1037,16 +1037,16 @@
     "id": "finmuh-kur-gen-0048",
     "ders": "finansal_muhasebe",
     "konu": "kur_farklari",
-    "stem": "Doruk Elektronik A.Ş., kasasındaki 6.000 USD efektifi (kayıt 30,00 ₺/USD) kurun 31,80 ₺/USD olduğu gün bankaya bozdurarak TL hesabına almıştır. Bu işlemin yevmiye kaydında aşağıdakilerden hangisi yer alır?",
+    "stem": "Doruk Elektronik A.Ş., kasasındaki 6.000 USD efektifi (kayıt 30,00 ₺/USD) kurun 31,80 ₺/USD olduğu gün bankaya bozdurarak TL hesabına almıştır.\n\nBu işlemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "102 Bankalar (borç) 180.000; 100 Kasa (alacak) 180.000",
-      "B": "102 Bankalar (borç) 190.800; 100 Kasa (alacak) 180.000 ve 656 Kambiyo Zararları (alacak) 10.800",
-      "C": "100 Kasa (borç) 180.000; 102 Bankalar (alacak) 180.000",
-      "D": "102 Bankalar (borç) 190.800; 100 Kasa (alacak) 180.000 ve 646 Kambiyo Kârları (alacak) 10.800",
-      "E": "102 Bankalar (borç) 190.800; 100 Kasa (alacak) 190.800"
+      "A": "102 Bankalar hesabı 190.800 ₺ borçlandırılır",
+      "B": "100 Kasa hesabı 180.000 ₺ alacaklandırılır",
+      "C": "646 Kambiyo Kârları hesabı 10.800 ₺ alacaklandırılır",
+      "D": "656 Kambiyo Zararları hesabı 10.800 ₺ borçlandırılır",
+      "E": "Kasadan çıkan efektif kayıtlı değeriyle alacaklandırılır"
     },
     "answer": "D",
-    "solution": "TL girişi 6.000 × 31,80 = 190.800 ₺ → 102 Bankalar (borç). Kasadan çıkan döviz kayıtlı değeriyle 6.000 × 30,00 = 180.000 ₺ → 100 Kasa (alacak). Aradaki 6.000 × 1,80 = **10.800 ₺** kur yükselişi olduğundan lehte → 646 Kambiyo Kârları (alacak). Elden çıkarmada kur yükseldiği için kambiyo kârıdır (zarar değil).",
+    "solution": "TL girişi 6.000 × 31,80 = 190.800 ₺ (102 borç); kasadan çıkan efektif kayıtlı değeriyle 6.000 × 30,00 = 180.000 ₺ (100 alacak); aradaki 10.800 ₺ lehte farktır ve 646 Kambiyo Kârları'na alacak yazılır. Kur yükseldiği için zarar doğmaz; 656 çalışmaz.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (mevzuat-çeldirici; sınav stiline kalibre)",
@@ -1081,16 +1081,16 @@
     "id": "finmuh-kur-gen-0050",
     "ders": "finansal_muhasebe",
     "konu": "kur_farklari",
-    "stem": "Kur farkı ile reeskont arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Kur farkı ile reeskont arasındaki farkla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Kur farkı, döviz cinsi kalemlerin kur değişiminden (646/656); reeskont ise senetli alacak/borçların vade (faiz) unsurunun bugünkü değere indirgenmesinden (647/657) doğar.",
-      "B": "Kur farkı da reeskont da aynı işlemi ifade eder; ikisi de senetli döviz işlemlerinde eşanlamlı olarak 646/656 hesaplarında birlikte izlenir.",
-      "C": "Reeskont döviz cinsi işlemlerde doğar; kur farkı ise TL cinsi senetli alacak ve borçların değerlemesinden kaynaklanır.",
-      "D": "Kur farkı senetli alacak ve borçların bugünkü değere indirgenmesinden (647/657), reeskont ise döviz kalemlerinin kur değişiminden (646/656) doğar.",
-      "E": "Kur farkı senetli işlemlerde, reeskont ise senetsiz (açık hesap) işlemlerde doğar; ikisi de finansman gideri sayılır."
+      "A": "Reeskont, döviz cinsi kalemlerin kur değişiminden doğar ve 646/656'da izlenir",
+      "B": "Kur farkı, döviz cinsi kalemlerin kur değişiminden doğar",
+      "C": "Reeskont, senetli alacak ve borçlardaki faiz unsurunu ayıklar",
+      "D": "Alacak senetleri reeskontu 657 Reeskont Faiz Giderleri'ne yazılır",
+      "E": "Borç senetleri reeskontu 647 Reeskont Faiz Gelirleri'ne yazılır"
     },
     "answer": "A",
-    "solution": "**Kur farkı** döviz cinsi kalemlerin **kur değişiminden** doğar (646/656). **Reeskont** ise senetli alacak/borçların **vade farkının (faiz)** bugünkü değere indirgenmesinden doğar (647/657). İkisi farklı kavramlardır.",
+    "solution": "Kur farkı döviz cinsi kalemlerin kur değişiminden doğar ve 646/656'da izlenir. Reeskont ise senetli alacak ve borçların vade (faiz) unsurunun bugünkü değere indirgenmesidir: alacak senetleri reeskontu 657 Reeskont Faiz Giderleri'ne, borç senetleri reeskontu 647 Reeskont Faiz Gelirleri'ne yazılır. A şıkkı kur farkının tanımını reeskonta yüklemektedir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (mevzuat-çeldirici; sınav stiline kalibre)",
@@ -1103,16 +1103,16 @@
     "id": "finmuh-kur-gen-0051",
     "ders": "finansal_muhasebe",
     "konu": "kur_farklari",
-    "stem": "Işık Ambalaj A.Ş.'nin aynı dönemde 12.000 USD döviz kasası ve 12.000 USD döviz cinsi satıcı borcu bulunmaktadır (ikisi de aynı kurla kayıtlıdır). Bu iki kalemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Işık Ambalaj A.Ş.'nin aynı dönemde 12.000 USD döviz kasası ve 12.000 USD döviz cinsi satıcı borcu bulunmaktadır (ikisi de aynı kurla kayıtlıdır).\n\nBu iki kalemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "İkisi tek bir 320 Satıcılar hesabında birleştirilerek gösterilir.",
-      "B": "Borç kasadan düşülüp aradaki net fark 100 Kasa'da izlenir.",
-      "C": "İki kalem ayrı hesaplarda izlenir; netleştirilmez, dönem sonunda her biri ayrı değerlenir.",
-      "D": "Eşit tutarlı oldukları için netleştirilir; kur farkı doğmaz.",
-      "E": "Eşit oldukları için iki kalem de kayıtlardan çıkarılır."
+      "A": "Döviz kasası dönem sonunda efektif alış kuruyla değerlenir",
+      "B": "Satıcı borcu dönem sonunda MB döviz alış kuruyla değerlenir",
+      "C": "Tutarlar eşit olduğundan iki kalem netleştirilir ve değerlenmez",
+      "D": "Döviz kasası ile döviz borcu bilançoda ayrı kalemlerde yer alır",
+      "E": "Kur değişiminin etkisi her kalem için ayrı hesaplanır"
     },
     "answer": "C",
-    "solution": "Döviz kasası (100) bir varlık, satıcı borcu (320) bir yabancı kaynaktır; tutarları eşit olsa da farklı hesaplarda **ayrı** izlenir ve netleştirilemez. Dönem sonunda her biri ayrı değerlenir: kasa lehte fark verirken borç aleyhte fark verebilir. Eşitlik, kur farkı doğmayacağı anlamına gelmez.",
+    "solution": "Varlık ve kaynak kalemleri netleştirilmez (brüt esas). Döviz kasası VUK m. 280'e göre MB efektif alış kuruyla, döviz cinsi borç MB döviz alış kuruyla ayrı ayrı değerlenir; her kalemin kur farkı ayrı hesaplanır ve bilançoda ayrı kalemlerde gösterilir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (mevzuat-çeldirici; sınav stiline kalibre)",

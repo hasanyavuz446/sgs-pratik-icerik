@@ -191,16 +191,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "'T hesabı' düzeni ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'T hesabı' düzeniyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Her iki taraf da borç tarafıdır.',
-            'B': 'Sol taraf borç, sağ taraf alacak tarafıdır.',
-            'C': 'Borç ve alacak tarafları hesabın türüne göre yer değiştirir.',
-            'D': 'Hesabın tek tarafı kullanılır.',
-            'E': 'Sol taraf alacak, sağ taraf borç tarafıdır.',
+            'A': "Hesabın adı T'nin üst çizgisine yazılır",
+            'B': 'Sol taraf alacak, sağ taraf borç tarafıdır',
+            'C': 'Her işlem tutarı hesabın ilgili tarafına yazılır',
+            'D': 'Aktif hesaplardaki artışlar borç tarafına yazılır',
+            'E': 'Pasif hesaplardaki artışlar alacak tarafına yazılır',
         },
         'B',
-        "Muhasebede hesaplar 'T' biçiminde gösterilir: **sol taraf borç**, **sağ taraf alacak** tarafıdır. Bu, hesabın türünden bağımsız olarak sabittir.",
+        'T hesabında hesabın adı üst çizgiye yazılır; sol taraf BORÇ, sağ taraf ALACAK tarafıdır. Aktif hesaplar artışlarda borçlandırılır, pasif hesaplar artışlarda alacaklandırılır.',
         "1 Sıra No'lu MSUGT - Hesap kavramı (T hesabı)",
     ),
     # düzey 2
@@ -387,16 +387,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Tekdüzen Hesap Planı'nda '9 - Nazım Hesaplar' ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Dönem kârını doğrudan artıran gelir ve hasılat işlemlerini izleyen; kalanı 690 hesabına devredilerek kapatılan bir sonuç hesabıdır.',
-            'B': 'İşletmenin varlık/kaynak yapısını etkilemeyen; ancak takip edilmesi gereken (teminat, emanet vb.) bilgileri izler ve kendi içinde borç-alacak dengesi kurulur.',
-            'C': 'İşletmenin aktif ve pasif yapısını doğrudan değiştiren varlık ve kaynak işlemlerini kaydeden; kalanları dönem sonunda bilançoya aktarılan asıl (esas) hesap sınıfıdır.',
-            'D': 'Duran varlıklar için amortisman ayırmak amacıyla kullanılan; dönem sonunda ilgili gider hesabına devredilerek kapatılan hesaptır.',
-            'E': 'Dönem sonunda gelir tablosuna devredilerek işletmenin faaliyet sonucunu (kâr veya zararı) belirleyen; kalan vermeyen bir sonuç hesabıdır.',
+            'A': 'Teminat ve emanet gibi bilgileri izler',
+            'B': 'Varlık ve kaynak yapısını doğrudan etkileyen işlemleri izler',
+            'C': 'Kendi içinde borç–alacak dengesi kurulur',
+            'D': 'İşletmenin bilanço büyüklüğünü değiştirmez',
+            'E': "Hesap Planı'nda 9 numaralı sınıfta yer alır",
         },
         'B',
-        '**Nazım hesaplar (9)**, aktif-pasif yapısını doğrudan etkilemeyen fakat izlenmesi gereken kıymetleri (alınan/verilen teminatlar, emanetler vb.) gösterir; kendi içinde borç-alacak dengesi kurulur ve mali tablo sonucunu değiştirmez.',
+        'Nazım hesaplar (9. sınıf), işletmenin varlık ve kaynak yapısını etkilemeyen ancak izlenmesi gereken teminat, emanet vb. bilgileri kaydeder; kendi içinde borç–alacak dengesi kurulur ve bilanço büyüklüğünü değiştirmez.',
         "1 Sıra No'lu MSUGT - Nazım hesaplar",
     ),
     # düzey 3
@@ -807,16 +807,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        "Tekdüzen Hesap Planı'nda bir varlığın 'dönen' mi yoksa 'duran' varlık mı olduğunu belirleyen temel ölçüt aşağıdakilerden hangisidir?",
+        "Tekdüzen Hesap Planı'nda bir varlığın 'dönen' mi yoksa 'duran' varlık mı olduğunun belirlenmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Varlığın sigortalanmış olup olmadığı; sigortalı varlıklar duran, sigortasız olan varlıklar ise dönen varlık sayılır',
-            'B': 'Varlığın bir yıl (veya normal faaliyet dönemi) içinde paraya çevrilmesinin/tüketilmesinin beklenip beklenmemesi',
-            'C': 'Varlığın yurt içinden mi yoksa yurt dışından mı satın alındığı; ithal edilen varlıklar duran varlık sayılır',
-            'D': 'Varlığın parasal büyüklüğü; tutarı yüksek olan varlıklar duran, tutarı düşük kalan varlıklar ise dönen varlık sayılır',
-            'E': 'Varlığın fiziki bir yapısının olup olmadığı; elle tutulan varlıklar dönen, elle tutulamayan varlıklar duran sayılır',
+            'A': 'Bir yıl içinde paraya çevrilmesi beklenen varlıklar dönendir',
+            'B': 'Temel ölçüt, varlığın edinme maliyetinin büyüklüğüdür',
+            'C': 'Faaliyet dönemi bir yılı aşan işletmelerde bu dönem esas alınabilir',
+            'D': 'Bir yıldan uzun süre kullanılacak makineler duran varlıktır',
+            'E': 'Vadesi bir yılı aşan alacaklar duran varlıklarda izlenir',
         },
         'B',
-        'Bir varlık, **bir yıl (veya normal faaliyet dönemi) içinde** paraya çevrilecek/tüketilecekse **dönen varlık**, daha uzun süre işletmede kalacaksa **duran varlık** sayılır.',
+        'Dönen–duran ayrımının ölçütü, varlığın bir yıl (veya bir yılı aşan normal faaliyet dönemi) içinde paraya çevrilmesinin ya da tüketilmesinin beklenip beklenmemesidir. Tutarın büyüklüğü bir ölçüt değildir.',
         "1 Sıra No'lu MSUGT - Dönen/Duran varlık ayrımı",
     ),
     # düzey 2

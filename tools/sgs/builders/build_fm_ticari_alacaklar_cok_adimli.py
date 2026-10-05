@@ -37,16 +37,16 @@ def patch(stem, options, answer, solution, ref='VUK m. 323; Tekduzen Hesap Plani
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        "Tekdüzen Hesap Planı'nda '12 Ticari Alacaklar' grubu ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Tekdüzen Hesap Planı'nda '12 Ticari Alacaklar' grubu ile ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'İşletmenin bir yıldan uzun sürede kullanacağı maddi duran varlıklarını ve bunların amortismanını izleyen bir aktif grubudur.',
-            'B': 'İşletmenin bankalardaki vadesiz ve vadeli mevduatı ile kasadaki nakit mevcudunu izleyen hazır değerler grubudur.',
-            'C': 'İşletmenin ana faaliyet konusuyla (mal/hizmet satışı) ilgili, bir yıl içinde tahsil edilecek alacaklarını izler.',
-            'D': 'İşletmenin ortaklarından ve iştiraklerinden olan, esas faaliyet dışı alacaklarını izleyen bir gruptur.',
-            'E': 'İşletmenin esas faaliyetiyle ilgili satıcılara olan senetli ve senetsiz borçlarını izleyen bir kaynak (pasif) grubudur.',
+            'A': 'Ana faaliyet konusuyla ilgili alacakları izler',
+            'B': 'Vadesi bir yılı aşan ticari alacaklar duran varlıklarda izlenir',
+            'C': 'Ortaklardan ve personelden olan alacaklar da bu grupta izlenir',
+            'D': 'Senetsiz alacaklar 120 Alıcılar hesabında izlenir',
+            'E': 'Grup, dönen varlıklar sınıfında yer alır',
         },
         'C',
-        '**12 Ticari Alacaklar** grubu, işletmenin esas faaliyeti (mal/hizmet satışı) nedeniyle doğan ve bir yıl içinde tahsil edilecek alacaklarını (120 Alıcılar, 121 Alacak Senetleri vb.) izler.',
+        '12 Ticari Alacaklar grubu, ana faaliyet konusuyla ilgili ve bir yıl içinde tahsil edilecek alacakları izler; dönen varlıklardadır. Vadesi bir yılı aşanlar 22 grubunda izlenir. Ortaklardan ve personelden alacaklar ise 13 Diğer Alacaklar grubundadır (131, 135).',
         "1 Sıra No'lu MSUGT - Ticari Alacaklar (12)",
     ),
     # düzey 2
@@ -107,16 +107,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        "VUK'a göre vadesi gelmemiş bir alacak senedinin reeskontunda kullanılacak faiz oranıyla ilgili aşağıdaki ifadelerden hangisi doğrudur?",
+        "VUK'a göre vadesi gelmemiş bir alacak senedinin reeskontuyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Senette faiz oranı açıklanmışsa bu oran, açıklanmamışsa Türkiye Cumhuriyet Merkez Bankasının resmî iskonto oranı kullanılır.',
-            'B': 'Senette yazılı oran dikkate alınmaz; enflasyon oranı kullanılır.',
-            'C': 'Faiz oranı bulunmayan senetlere reeskont uygulanamaz.',
-            'D': 'Senette oran yazsa bile işletmenin banka kredi faizi kullanılır.',
-            'E': 'Alacaklının kendi belirlediği oran kullanılır.',
+            'A': 'Senette yazılı faiz oranı dikkate alınmaz; TCMB oranı kullanılır',
+            'B': 'Reeskont, vadesi gelmemiş senetli alacaklar için yapılır',
+            'C': 'Senette faiz oranı yoksa TCMB resmî iskonto oranı kullanılır',
+            'D': 'Reeskont uygulaması işletmenin tercihine bırakılmıştır',
+            'E': 'Reeskontta senedin vadesine kalan gün sayısı dikkate alınır',
         },
         'A',
-        'VUK 281 uyarınca senette faiz oranı açıklanmışsa **senetteki oran** esas alınır. Oran açıklanmamışsa değerleme gününde geçerli **TCMB resmî iskonto oranı** kullanılır.',
+        "VUK m. 281'e göre vadesi gelmemiş senetli alacaklar değerleme gününün kıymetine irca edilebilir (isteğe bağlı). Senette faiz oranı açıklanmışsa bu oran, açıklanmamışsa TCMB resmî iskonto oranı kullanılır; hesapta vadeye kalan gün sayısı esas alınır.",
         '213 sayılı VUK md. 281',
     ),
     # düzey 3
@@ -611,16 +611,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "'128 Şüpheli Ticari Alacaklar' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "'128 Şüpheli Ticari Alacaklar' hesabıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Şüpheli alacaktan tahsil edilen tutarları izleyen bir gelir tablosu hesabıdır.',
-            'B': 'Tahsili şüpheli hâle gelmiş ticari alacakların izlendiği bir aktif hesaptır.',
-            'C': 'İşletmenin senetli borçlarını izleyen, alacak kalanı veren bir kaynak hesabıdır.',
-            'D': 'Aktifi düzenleyici bir hesaptır; alacak kalanı verir ve şüpheli alacaklardan düşülür.',
-            'E': 'Bir yıldan uzun vadeli senetli alacakları izleyen bir duran varlık hesabıdır.',
+            'A': 'Tahsili şüpheli hâle gelen ticari alacakları izler',
+            'B': 'Şüpheli alacak karşılıklarının izlendiği düzenleyici hesaptır',
+            'C': 'Alacak 120 veya 121 hesabından bu hesaba aktarılır',
+            'D': 'Aktif karakterli olup borç kalanı verir',
+            'E': 'Bilançoda ilgili karşılık hesabıyla birlikte gösterilir',
         },
         'B',
-        "**128 Şüpheli Ticari Alacaklar**, tahsili şüpheli hâle gelen ticari alacakların izlendiği bir **aktif** hesaptır; borç kalanı verir. Karşılığı ise 129'da (aktifi düzenleyici) takip edilir.",
+        "128 Şüpheli Ticari Alacaklar, tahsili şüpheli hâle gelen ticari alacakların 120 veya 121'den aktarılarak izlendiği aktif bir hesaptır ve borç kalanı verir. Karşılıklar ise ayrı bir düzenleyici hesapta (129) izlenir.",
         "1 Sıra No'lu MSUGT - 128 Şüpheli Ticari Alacaklar",
     ),
     # düzey 2
