@@ -159,6 +159,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 105: alacaklı borç senedini kaybettiğini iddia ederse borçlu, ödeme sırasında alacaklıdan senedin iptalini ve borcun sona ermiş olduğunu gösteren, resmen düzenlenmiş veya usulüne göre onaylanmış bir belge vermesini isteyebilir; borç askıda kalmaz.',
+        '6098 sayılı TBK m. 105',
     ),
     # düzey 3
     '0010': patch(
@@ -634,6 +635,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 89: para borçları alacaklının ödeme zamanındaki yerleşim yerinde ödenir; ancak alacaklının yerleşim yerini borcun doğumundan sonra değiştirmesi ifayı önemli ölçüde güçleştirmişse borç alacaklının önceki yerleşim yerinde ifa edilebilir. Taraflar ifa yerini açıkça veya örtülü olarak kararlaştırabilir.',
+        '6098 sayılı TBK m. 89/2',
     ),
     # düzey 2
     '0044': patch(
@@ -689,6 +691,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 99/2: yabancı para ile ödeme kararlaştırılmışsa, sözleşmede aynen ödeme veya bu anlama gelen bir ifade bulunmadıkça borç, ödeme günündeki rayiç üzerinden Ülke parasıyla da ödenebilir; alacaklının rızası aranmaz.',
+        '6098 sayılı TBK m. 99/2',
     ),
     # düzey 3
     '0048': patch(
@@ -786,6 +789,7 @@ _PATCHES = {
         },
         'C',
         "TBK m. 139-141: takas karşılıklı, aynı türden ve muaccel alacaklar arasında bildirimle gerçekleşir; ancak m. 141'e göre üçüncü kişi yararına borçlanan kişi, bu borcu ile sözleşmenin diğer tarafından olan alacağını takas edemez.",
+        '6098 sayılı TBK m. 141',
     ),
     # düzey 3
     '0055': patch(

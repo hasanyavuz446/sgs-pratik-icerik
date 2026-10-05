@@ -201,6 +201,7 @@ _PATCHES = {
         },
         'C',
         'EVK m. 13/3: mülkiyeti ihtilaflı arazi için mutasarrıfı bulunmayan kişilerce ödenen arazi vergileri, ihtilafın ödeme yapan aleyhine sonuçlanması hâlinde, ilgililerin karar tarihinden itibaren bir yıl içinde başvurmaları şartıyla ret ve iade olunur. İade kendiliğinden yapılmaz.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 13/3',
     ),
     # düzey 3
     '0013': patch(
@@ -270,6 +271,7 @@ _PATCHES = {
         },
         'D',
         "EVK m. 40: bildirim dışı kalan bina ve arazinin vergi ve cezalarında zamanaşımı, bildirim dışı bırakıldığının idarece öğrenildiği tarihi takip eden yılın başından itibaren başlar. Öğrenme 2026'da olduğundan zamanaşımı 1 Ocak 2027'de başlar; inşa tarihi esas alınmaz.",
+        '1319 sayılı Emlak Vergisi Kanunu m. 40',
     ),
     # düzey 3
     '0018': patch(
@@ -493,6 +495,7 @@ _PATCHES = {
         },
         'D',
         'EVK m. 22: bina ve arazi vergileriyle ilgili muaflık ve istisna hükümleri bu Kanuna eklenmek veya bu Kanunda değişiklik yapılmak suretiyle düzenlenir; özel kanunlardaki muaflıklar m. 41 uyarınca kaldırılmıştır. Tebliğ ya da meclis kararıyla muaflık getirilemez.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 22',
     ),
     # düzey 3
     '0034': patch(
@@ -520,6 +523,7 @@ _PATCHES = {
         },
         'B',
         'EVK m. 30/8 (7327 sayılı Kanunla değişik): emlak vergisi borcu bulunan bina ve arazinin devir ve ferağı yapılmaz; ancak miras, mahkeme kararı, cebri icra, kamulaştırma ve özel kanunlarda öngörülen diğer hâller bu yasağın dışındadır. Alıcının borcu üstlenmesi yasağı kaldırmaz.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 30/8',
     ),
     # düzey 2
     '0036': patch(
@@ -547,6 +551,7 @@ _PATCHES = {
         },
         'E',
         'EVK m. 32: bildirimin süresinde verilmemesi hâlinde vergi idarece tarh edilir; idarece tarhiyatta her yıla ilişkin vergi değeri m. 29 dikkate alınarak hesaplanır. Bildirim yapılmaması mükellefiyeti ortadan kaldırmaz ve muaflık doğurmaz.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 32',
     ),
     # düzey 3
     '0038': patch(
@@ -602,6 +607,7 @@ _PATCHES = {
         },
         'A',
         "EVK m. 3: bina vergisini binanın maliki, varsa intifa hakkı sahibi, her ikisi de yoksa binaya malik gibi tasarruf edenler öder. İntifa hakkı bulunduğundan mükellef B'dir; malik ile müteselsil sorumluluk ya da kiracının mükellefiyeti söz konusu değildir.",
+        '1319 sayılı Emlak Vergisi Kanunu m. 3',
     ),
     # düzey 3
     '0042': patch(
@@ -713,6 +719,7 @@ _PATCHES = {
         },
         'C',
         'EVK m. 12: belediye sınırları içinde belediyece parsellenmiş arazi arsa sayılır; parsellenmemiş araziden hangilerinin arsa sayılacağı Cumhurbaşkanı kararıyla belirlenir. Arsa ve araziler arazi vergisinin konusunu oluşturur.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 12',
     ),
     # düzey 1
     '0050': patch(
@@ -796,6 +803,7 @@ _PATCHES = {
         },
         'B',
         'EVK m. 33/3: bir binanın kullanış tarzının değiştirilmesi veya ikamete mahsus kısımların dükkân, mağaza gibi mahallere dönüştürülmesi vergi değerini tadil eder. Bu hükmün uygulanmasında bir apartmanın her dairesi bir bina sayılır ve tadil sebebi kullanış tarzı değişen daire için geçerli olur.',
+        '1319 sayılı Emlak Vergisi Kanunu m. 33/3',
     ),
     # düzey 2
     '0056': patch(

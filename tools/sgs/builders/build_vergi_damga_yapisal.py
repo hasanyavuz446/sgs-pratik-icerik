@@ -173,6 +173,7 @@ _PATCHES = {
         },
         'E',
         'DVK m. 24: vergiye tabi kâğıtların damga vergisinin ödenmemesinden veya noksan ödenmesinden doğan vergi ve cezadan, mükelleflere rücu hakkı olmak üzere kâğıtları ibraz edenler sorumludur; ibrazın kabul edilmesi sorumluluğu bankaya geçirmez.',
+        '488 sayılı Damga Vergisi Kanunu m. 24',
     ),
     # düzey 2
     '0011': patch(
@@ -326,6 +327,7 @@ _PATCHES = {
         },
         'B',
         'DVK m. 1/1: Kanuna ekli (1) sayılı tabloda yazılı kâğıtlar damga vergisine tabidir. Verginin konusu tabloyla sınırlı olduğundan, imzalı olsa da tabloda yer almayan bir kâğıt nispi ya da maktu vergiye tabi değildir.',
+        '488 sayılı Damga Vergisi Kanunu m. 1',
     ),
     # düzey 3
     '0022': patch(
@@ -339,6 +341,7 @@ _PATCHES = {
         },
         'E',
         'DVK m. 4: bir kâğıdın tabi olacağı verginin tayini için o kâğıdın mahiyetine bakılır; şekli kanunlarda belirtilmemiş kâğıtlarda üzerlerindeki yazının içerdiği hüküm ve manaya bakılır. Başlığın kira sözleşmesi olması sonucu değiştirmez; kâğıt satış olarak vergilenir.',
+        '488 sayılı Damga Vergisi Kanunu m. 4',
     ),
     # düzey 2
     '0023': patch(
@@ -618,6 +621,7 @@ _PATCHES = {
         },
         'D',
         'DVK m. 2: vergiye tabi kâğıtlar mahiyetinde bulunan veya onların yerini alan mektup ve şerhlerle, bu kâğıtların hükümlerinin yenilenmesine, uzatılmasına, değiştirilmesine, devrine veya bozulmasına ilişkin mektup ve şerhler de damga vergisine tabidir.',
+        '488 sayılı Damga Vergisi Kanunu m. 2',
     ),
     # düzey 3
     '0043': patch(
@@ -645,6 +649,7 @@ _PATCHES = {
         },
         'D',
         'DVK m. 6/4 (6728 sayılı Kanunla eklenen): pey akçesi, cayma tazminatı, ücret tevkifi, cezai şart gibi bir sözleşmenin müeyyidesi mahiyetindeki taahhütlerden, başlı başına bir sözleşmeye konu olmadıkça damga vergisi alınmaz; asıl sözleşme ise vergilenir.',
+        '488 sayılı Damga Vergisi Kanunu m. 6/4',
     ),
     # düzey 2
     '0045': patch(
@@ -854,6 +859,7 @@ _PATCHES = {
         },
         'B',
         'DVK m. 6/1: bir kâğıtta birbirinden tamamen ayrı birden fazla akit ve işlem bulunduğunda bunların her birinden ayrı ayrı vergi alınır. Akit ve işlemler birbirine bağlı ve bir asıldan doğmuşsa vergi en yüksek vergiyi gerektiren işlem üzerinden alınır.',
+        '488 sayılı Damga Vergisi Kanunu m. 6/1',
     ),
     # düzey 2
     '0060': patch(

@@ -173,6 +173,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 187: kime ait olduğu çekişmeli bulunan bir alacağın borçlusu ifadan kaçınabilir ve alacağın konusunu hâkim tarafından belirlenen yere tevdi etmekle borçtan kurtulur; borç muaccelse taraflardan her biri borçluyu tevdie zorlayabilir.',
+        '6098 sayılı TBK m. 187',
     ),
     # düzey 3
     '0011': patch(
@@ -382,6 +383,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 127/1-1: başkasının borcu için rehnedilen bir şeyi rehinden kurtaran ve bu şey üzerinde mülkiyet veya başka bir ayni hakkı bulunan üçüncü kişi, ifası ölçüsünde alacaklının haklarına kanunen halef olur; borçlunun onayı aranmaz.',
+        '6098 sayılı TBK m. 127',
     ),
     # düzey 2
     '0026': patch(
@@ -605,6 +607,7 @@ _PATCHES = {
         },
         'E',
         'Ev sahibiyle boyacı arasında sözleşme bulunduğundan mobilya zararı borca aykırılık (TBK m. 112) hükümlerine tabidir ve kusur karine olarak kabul edilir. Yaya ile boyacı arasında sözleşme yoktur; bu zarar haksız fiil (TBK m. 49) hükümlerine göre giderilir.',
+        '6098 sayılı TBK m. 49, 112',
     ),
     # düzey 3
     '0042': patch(
@@ -688,6 +691,7 @@ _PATCHES = {
         },
         'A',
         'TBK m. 129: kendi adına sözleşme yapan kişi, üçüncü kişi yararına bir edim yükümlülüğü koydurmuşsa edimin üçüncü kişiye ifa edilmesini isteyebilir. Üçüncü kişinin bağımsız istem hakkı ancak tarafların amacı veya örf ve âdet uygun düşerse doğar; burada eksik üçüncü kişi yararına sözleşme vardır.',
+        '6098 sayılı TBK m. 129/1',
     ),
     # düzey 3
     '0048': patch(

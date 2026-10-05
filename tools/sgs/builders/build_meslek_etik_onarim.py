@@ -103,6 +103,7 @@ _PATCHES = {
         },
         'E',
         'İş sahibinin baskısı yıldırma (intimidation) tehdidi oluşturur. Meslek mensubu dürüstlük ve tarafsızlık ilkeleri gereği hukuka aykırı talebi reddeder; önlemler yetersizse iş ilişkisini sona erdirir. Yazılı talimat ya da sonradan bildirim sorumluluğu kaldırmaz; gerçeğe aykırı kayıt ayrıca VUK ve TCK sorumluluğu doğurur.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0006': patch(
@@ -130,6 +131,7 @@ _PATCHES = {
         },
         'D',
         'Meslek Ahlak Kuralları ve 3568 md. 45: hizmet verilen işletmenin yönetiminde görev almak, meslek mensubunu kendi işlemlerini değerlendiren ve işletmenin çıkarını savunan bir konuma sokar. Bildirim, ücretsiz olma ya da ortaklık bulunmaması bu sakatlığı gidermez; görev alınmamalıdır.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0008': patch(
@@ -157,6 +159,7 @@ _PATCHES = {
         },
         'E',
         'VUK mükerrer md. 227 meslek mensubunu imzaladığı beyannamedeki bilgilerin defter kayıtlarına ve belgelere uygunluğundan sorumlu tutar; 3568 md. 48 disiplin, genel hükümler ise cezai sorumluluk doğurur. İş sahibinin talebi sorumluluğu kaldırmaz, sorumluluk sözleşmeyle devredilemez ve ücretle sınırlı değildir.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0010': patch(
@@ -170,6 +173,7 @@ _PATCHES = {
         },
         'C',
         '3568 md. 43: meslek mensupları ve yanlarında çalışanlar, işleri dolayısıyla öğrendikleri bilgi ve sırları ifşa edemezler. Meslek mensubu büro düzeni içinde gizliliği sağlayacak önlemleri almakla yükümlüdür; yazılı sözleşme koşulu aranmaz ve fiile bizzat katılmamak yükümlülüğü ortadan kaldırmaz.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0011': patch(
@@ -295,6 +299,7 @@ _PATCHES = {
         },
         'E',
         'Meslek Ahlak Kuralları: meslek mensubu bağımsızlığını ve tarafsızlığını koruyamayacağı işleri kabul etmemekle yükümlüdür. Red bir yükümlülüğün yerine getirilmesi olup oda iznine bağlı değildir, gerekçesi açıklanabilir, haksız rekabet oluşturmaz ve disiplin soruşturması gerektirmez.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 1
     '0020': patch(
@@ -364,6 +369,7 @@ _PATCHES = {
         },
         'B',
         'Bağımsızlık değerlendirmesi üç aşamalıdır: tehdidin belirlenmesi, önemliliğinin değerlendirilmesi ve önlem alınması. Uzun süreli ya da yakın ilişkiler yakınlık tehdidi doğurur ve değerlendirmede dikkate alınır. Önlemler tehdidi kabul edilebilir düzeye indirmiyorsa iş kabul edilmez; bildirim tek başına yeterli değildir.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0025': patch(
@@ -377,6 +383,7 @@ _PATCHES = {
         },
         'E',
         'Meslek Ahlak Kuralları: müşteriden alınan hediye ve ağırlamalar önemsiz ve makul düzeyi aşıyorsa kişisel çıkar ve yakınlık tehdidi doğurur; bu nedenle kabul edilmemelidir. Kısıt nakitle sınırlı değildir ve odaya bildirim bir önlem oluşturmaz.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0026': patch(
@@ -404,6 +411,7 @@ _PATCHES = {
         },
         'E',
         'Meslek Ahlak Kuralları: çıkar çatışması tarafsızlığı doğrudan tehdit eder. Meslek mensubu çatışmayı belirler, ilgilileri bilgilendirir ve ayrı ekipler, bilgi bariyerleri, gözden geçirme gibi önlemler alır. Önlemler yeterli olmuyorsa işlerden biri ya da her ikisi bırakılır; şikâyet koşulu aranmaz.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0028': patch(
@@ -431,6 +439,7 @@ _PATCHES = {
         },
         'C',
         '3568 md. 1: mesleğin amacı, faaliyet sonuçlarının gerçek durumunu ilgililerin ve resmî mercilerin istifadesine tarafsız biçimde sunmaktır. Meslek mensubu iş sahibinin çıkarını gözetirken kamu yararını da gözetir; çatışma hâlinde iş sahibinin çıkarı değil, mevzuat ve mesleki ilkeler esas alınır.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0030': patch(
@@ -640,6 +649,7 @@ _PATCHES = {
         },
         'C',
         'Meslek Ahlak Kuralları: koşullu (sonuca bağlı) ücret, meslek mensubunun mesleki yargısını sonuca bağladığı için kişisel çıkar tehdidi doğurur ve tasdik gibi güvence gerektiren işlerde bağımsızlıkla bağdaşmaz. İş sahibinin onayı bu sakatlığı gidermez; 3568 md. 46 ayrıca tarifenin altında iş kabulünü yasaklar.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0045': patch(
@@ -681,6 +691,7 @@ _PATCHES = {
         },
         'E',
         'Meslek Ahlak Kuralları: ikinci görüş verme, eksik olgu ve varsayımlara dayanma riski nedeniyle mesleki yeterlik ve özen bakımından tehdit doğurur. Görüş verilebilir ve unvana özgü değildir; ancak aynı olgu ve varsayımlar esas alınmalı, iş sahibinin izniyle ilk meslek mensubuyla iletişim kurulmalıdır.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0048': patch(
@@ -694,6 +705,7 @@ _PATCHES = {
         },
         'C',
         "3568 md. 44: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı ya da dolaysız reklam sayılabilecek faaliyetlerde bulunamazlar; yasak mecra ayrımı yapmaz ve tüm meslek mensuplarını bağlar. Ücret indirimiyle iş çağrısı ayrıca md. 46 ve 47'ye aykırıdır.",
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0049': patch(
@@ -707,6 +719,7 @@ _PATCHES = {
         },
         'D',
         'Meslek Ahlak Kuralları (mesleki yeterlik ve özen): meslek mensubu yeterli düzeyde hizmet verebilmek için bilgi ve becerisini sürekli güncel tutmakla yükümlüdür; yükümlülük tüm meslek mensuplarını bağlar ve ruhsatla sona ermez. Mevzuatı bilmemek mazeret değildir; VUK mükerrer md. 227 uyarınca imzalanan beyannameden doğan sorumluluk meslek mensubuna aittir.',
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0050': patch(
@@ -832,6 +845,7 @@ _PATCHES = {
         },
         'A',
         "Mesleğe uygun davranış ilkesi, meslek mensubunun ilgili mevzuata uymasını ve mesleğin itibarını zedeleyebilecek davranışlardan kaçınmasını gerektirir (3568 md. 45'teki 'mesleğin gereği ve onuruyla bağdaşmayan işler' yasağıyla bağlantılı). İlke faaliyet saatleriyle sınırlı değildir, tüm meslek mensuplarını bağlar ve şikâyete bağlı değildir.",
+        '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
     '0059': patch(

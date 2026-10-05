@@ -89,6 +89,7 @@ _PATCHES = {
         },
         'C',
         'VUK m. 151: özel kanunlardaki mahremiyet hükümleri ileri sürülerek bilgi vermekten kaçınılamaz; ancak hekimlerden hastalık türüne ilişkin bilgi, avukatlardan görevleri dolayısıyla öğrendikleri hususlar istenemez. Bu yasak müvekkil adlarıyla vekâlet ücretlerine ve giderlerine şamil değildir.',
+        '213 sayılı Vergi Usul Kanunu m. 151',
     ),
     # düzey 2
     '0005': patch(
@@ -186,6 +187,7 @@ _PATCHES = {
         },
         'B',
         'VUK m. 256: muhafaza zorunluluğu olanlar, defter ve belgeleri ile manyetik ve benzeri ortamlardaki kayıtlarını ve bu kayıtlara erişim veya kayıtları okunabilir hâle getirmek için gerekli tüm bilgi ve şifreleri muhafaza süresi içinde yetkililerin talebi üzerine ibraz etmek zorundadır; çıktı vermek bu ödevi karşılamaz.',
+        '213 sayılı Vergi Usul Kanunu m. 256',
     ),
     # düzey 3
     '0012': patch(
@@ -213,6 +215,7 @@ _PATCHES = {
         },
         'C',
         'VUK m. 281: vadesi gelmemiş senetli alacaklar değerleme günü kıymetine irca olunabilir. VUK m. 285: alacak senetlerini değerleme gününün kıymetine irca eden mükellefler borç senetlerini de aynı şekilde işleme tabi tutmak zorundadır; iki taraf bağımsız değerlenemez.',
+        '213 sayılı Vergi Usul Kanunu m. 281, 285',
     ),
     # düzey 2
     '0014': patch(
@@ -380,6 +383,7 @@ _PATCHES = {
         },
         'D',
         'VUK m. 161: işi bırakma, vergiye tabi olmayı gerektiren muamelelerin tamamen durdurulması ve sona ermesidir; işlerin herhangi bir sebeple geçici bir süre için durdurulması işi bırakma sayılmaz. Tadilat nedeniyle kapatma geçici durdurmadır.',
+        '213 sayılı Vergi Usul Kanunu m. 161',
     ),
     # düzey 2
     '0026': patch(
@@ -603,6 +607,7 @@ _PATCHES = {
         },
         'E',
         "VUK m. 138: inceleme, tarh zamanaşımı süresi sonuna kadar her zaman yapılabilir; evvelce inceleme yapılmış veya matrahın re'sen takdir edilmiş olması yeniden inceleme yapılmasına ve gerekirse tarhiyatın ikmaline mani değildir. Mükellefin izni aranmaz.",
+        '213 sayılı Vergi Usul Kanunu m. 138',
     ),
     # düzey 3
     '0042': patch(
@@ -630,6 +635,7 @@ _PATCHES = {
         },
         'B',
         'VUK m. 142: arama, vergi incelemesine yetkili olanın gerekçeli yazıyla istemi ve sulh ceza hâkiminin kararıyla yapılır. İhbar üzerine yapılan aramada ihbar sabit olmazsa, nezdinde arama yapılan kimse muhbirin adının bildirilmesini isteyebilir ve vergi dairesi muhbirin ismini bildirmeye mecburdur.',
+        '213 sayılı Vergi Usul Kanunu m. 142',
     ),
     # düzey 2
     '0044': patch(

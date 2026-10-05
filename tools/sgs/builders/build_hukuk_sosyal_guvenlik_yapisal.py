@@ -1208,6 +1208,7 @@ _OLUMSUZ_TUR = {
         },
         'C',
         '4/1-(a) sigortalısı kural olarak çalışmaya başlamadan önce bildirilir. İnşaat, balıkçılık ve tarım işyerlerinde işe başlatılacak kişiler için bildirgenin en geç çalışmaya başlanılan gün verilmesi istisnadır. İmalat işyerindeki A genel kurala tabidir; bildirim 10 Nisandan önce yapılmalıdır.',
+        '5510 sayılı Kanun md. 8',
     ),
     '0024': patch(
         "İş kazası geçiren bir sigortalıya ayakta tedavi uygulanmış; günlük kazancı 1.200 ₺ olarak hesaplanmıştır. Aynı işyerinde başka bir sigortalı ise hastanede yatarak tedavi görmüştür.\n\n5510 sayılı Kanun'a göre geçici iş göremezlik ödeneğiyle ilgili aşağıdakilerden hangisi yanlıştır?",
@@ -1232,6 +1233,7 @@ _OLUMSUZ_TUR = {
         },
         'A',
         'Anayasa md. 60: herkes sosyal güvenlik hakkına sahiptir; devlet bu güvenliği sağlayacak gerekli tedbirleri alır ve teşkilatı kurar. Hak sözleşmesel değil anayasal niteliktedir; kanunla somutlaştırılması kanun koyucuyu anayasal güvencelerden ve ölçülülük denetiminden bağımsız kılmaz.',
+        'Türkiye Cumhuriyeti Anayasası md. 13, 60',
     ),
     '0032': patch(
         'Sosyal Güvenlik Kurumunun bir prim alacağı işlemi ile özel hukuk sözleşmesinden doğan kira uyuşmazlığı birlikte değerlendirilmektedir.\n\nKurumun hukuki niteliğiyle ilgili aşağıdakilerden hangisi yanlıştır?',
@@ -1244,6 +1246,7 @@ _OLUMSUZ_TUR = {
         },
         'B',
         'SGK kamu tüzel kişiliğini haiz, idari ve mali açıdan özerk bir kurumdur. Bu nitelik Kurumun özel hukuk sözleşmesi yapmasına engel değildir; Kurumun taraf olması tek başına bütün uyuşmazlıkları idari yargıya taşımaz. Özerklik işlemleri yargısal denetim dışında bırakmaz.',
+        '5502 sayılı Kanun md. 1; 5510 sayılı Kanun md. 101',
     ),
     '0037': patch(
         "Bir işverenin Kuruma ödenmemiş prim borcu ile kesinleşmiş idari para cezası borcu bulunmaktadır. İşveren, bu borçların genel hükümlere göre takip edilmesi gerektiğini ileri sürmektedir.\n\n5510 sayılı Kanun'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
@@ -1280,6 +1283,7 @@ _OLUMSUZ_TUR = {
         },
         'D',
         "5510 md. 60: zorunlu sigortalı veya bakmakla yükümlü olunan kişi olmayan Türkiye'de ikamet eden kişi genel sağlık sigortalısı olur. Geliri kanuni eşiğin altında kalanların primi devletçe karşılanırken eşik üzerindeki kişi primini kendisi öder.",
+        '5510 sayılı Kanun md. 60, 61, 80',
     ),
 }
 _PATCHES.update(_OLUMSUZ_TUR)

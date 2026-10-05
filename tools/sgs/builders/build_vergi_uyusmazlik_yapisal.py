@@ -145,6 +145,7 @@ _PATCHES = {
         },
         'B',
         'VUK m. 334: damga vergisi uygulamalarında cezadan sorumlu olanlar birden fazla ise birbirlerine müracaat hakları saklı kalmak üzere müteselsilen sorumlu tutulur. Ceza bölünmez; sorumlulardan birinden tamamı istenebilir ve ödeyen diğerine rücu eder.',
+        '213 sayılı VUK m. 334',
     ),
     # düzey 3
     '0009': patch(
@@ -186,6 +187,7 @@ _PATCHES = {
         },
         'C',
         'VUK m. 374: m. 353 kapsamındaki özel usulsüzlüklerde usulsüzlüğün yapıldığı yılı takip eden yılın birinci gününden başlayarak beş yıl (2025-2029), usulsüzlükte ise iki yıl (2025-2026) geçtikten sonra ceza kesilmez. Defter tasdiki için süre 2026 sonunda dolar.',
+        '213 sayılı VUK m. 374',
     ),
     # düzey 2
     '0012': patch(
@@ -409,6 +411,7 @@ _PATCHES = {
         },
         'E',
         'VUK m. 333: tüzel kişilerin idaresinde vergi kanununa aykırı hareketlerden doğan vergi cezaları tüzel kişiler adına kesilir; kanuni temsilcilerin sorumluluğuna ilişkin m. 10 hükmü vergi cezaları hakkında da uygulanır, yani tüzel kişiden alınamayan ceza kanuni temsilcinin varlığından alınır.',
+        '213 sayılı VUK m. 333',
     ),
     # düzey 2
     '0028': patch(
@@ -576,6 +579,7 @@ _PATCHES = {
         },
         'B',
         'İYUK m. 28/1: idare, mahkemelerin esasa ve yürütmenin durdurulmasına ilişkin kararlarının gereğine göre gecikmeksizin işlem tesis etmeye mecburdur; bu süre kararın idareye tebliğinden başlayarak otuz günü geçemez. Kesinleşmenin beklenmesi söz konusu değildir.',
+        '2577 sayılı İYUK m. 28',
     ),
     # düzey 3
     '0040': patch(
@@ -589,6 +593,7 @@ _PATCHES = {
         },
         'C',
         'İYUK m. 51: kesin olarak verilen veya istinaf ya da temyizden geçmeden kesinleşen kararlar, ilgili bakanlıkların göstereceği lüzum üzerine veya kendiliğinden Başsavcı tarafından kanun yararına temyiz edilebilir; bu bozma kararı daha önce kesinleşmiş kararın hukuki sonuçlarını kaldırmaz.',
+        '2577 sayılı İYUK m. 51',
     ),
     # düzey 3
     '0041': patch(
@@ -672,6 +677,7 @@ _PATCHES = {
         },
         'B',
         "VUK m. 370/a: kendisine izaha davet yazısı tebliğ edilen mükellefler, davet konusu tespitle sınırlı olarak m. 371'deki pişmanlık hükümlerinden yararlanamaz; pişmanlık dilekçesi izaha davetin sonuçlarını ortadan kaldırmaz.",
+        '213 sayılı VUK m. 370',
     ),
     # düzey 2
     '0047': patch(
@@ -713,6 +719,7 @@ _PATCHES = {
         },
         'D',
         "VUK m. 367: m. 359'daki suçların işlendiğini sair suretlerle öğrenen Cumhuriyet başsavcılığı hemen ilgili vergi dairesini haberdar ederek inceleme yapılmasını talep eder; kamu davasının açılması, inceleme neticesinin başsavcılığa bildirilmesine talik olunur. Mükellefin rızası bu sırayı değiştirmez.",
+        '213 sayılı VUK m. 367',
     ),
     # düzey 2
     '0050': patch(
@@ -726,6 +733,7 @@ _PATCHES = {
         },
         'A',
         'VUK m. 372: ölüm hâlinde vergi cezası düşer. Vergi borcu ise m. 12 uyarınca mirası reddetmemiş kanuni ve mansup mirasçılara geçer; mirası reddedenlere geçmez.',
+        '213 sayılı VUK m. 372',
     ),
     # düzey 2
     '0051': patch(
@@ -809,6 +817,7 @@ _PATCHES = {
         },
         'B',
         "İYUK m. 20: mahkemeler bakmakta oldukları davalara ait her türlü incelemeyi kendiliğinden yapar; lüzum gördükleri evrakın gönderilmesini ve bilgilerin verilmesini taraflardan ve ilgili diğer yerlerden isteyebilirler (re'sen araştırma ilkesi). Bunun için bilirkişi aracılığı ya da tarafların onayı gerekmez.",
+        '2577 sayılı İYUK m. 20',
     ),
     # düzey 3
     '0057': patch(

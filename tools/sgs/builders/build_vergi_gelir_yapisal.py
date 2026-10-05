@@ -719,6 +719,7 @@ _PATCHES = {
         },
         'C',
         'GVK m. 67: vergi, resim, harç, keşif, şahitlik, bilirkişilik ve ekspertiz gibi hususlara harcanmak üzere müşteri veya müvekkilden alınan ve tamamen bu hususlara sarf edilen para ve ayınlar serbest meslek kazancının tespitinde kazanç sayılmaz. Faaliyetle ilgili olarak alınan diğer gider karşılıkları ise kazanca eklenir.',
+        '193 sayılı Gelir Vergisi Kanunu m. 67',
     ),
     # düzey 2
     '0050': patch(
@@ -732,6 +733,7 @@ _PATCHES = {
         },
         'E',
         'GVK m. 18: müelliflerin eserlerini satmak veya üzerindeki haklarını devretmek suretiyle elde ettikleri hasılat gelir vergisinden müstesnadır; ancak bu istisnanın m. 94 uyarınca yapılacak tevkifata şümulü yoktur, yayınevi ödemeden tevkifat yapar. Bu kapsamdaki kazançları tarifenin dördüncü gelir dilimini aşanlar istisnadan yararlanamaz.',
+        '193 sayılı Gelir Vergisi Kanunu m. 18',
     ),
     # düzey 3
     '0051': patch(

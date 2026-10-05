@@ -103,6 +103,7 @@ _PATCHES = {
         },
         'A',
         'TBK m. 113/1: yapma borcu borçlu tarafından ifa edilmezse alacaklı, masrafı borçluya ait olmak üzere edimin kendisi veya başkası tarafından ifasına izin verilmesini isteyebilir; her türlü giderim isteme hakkı saklıdır.',
+        '6098 sayılı TBK m. 113/1',
     ),
     # düzey 2
     '0006': patch(
@@ -228,6 +229,7 @@ _PATCHES = {
         },
         'D',
         'TBK m. 120/1: uygulanacak yıllık temerrüt faizi oranı, sözleşmede kararlaştırılmamışsa faiz borcunun doğduğu tarihte yürürlükte olan mevzuat hükümlerine göre belirlenir; alacaklının ya da hâkimin takdirine bırakılmamıştır.',
+        '6098 sayılı TBK m. 120/1',
     ),
     # düzey 2
     '0015': patch(
@@ -395,6 +397,7 @@ _PATCHES = {
         },
         'A',
         "TBK m. 114/2: haksız fiil sorumluluğuna ilişkin hükümler kıyas yoluyla sözleşmeye aykırılık hâllerine de uygulanır; zarar görenin zararın artmasında etkili olması m. 52'ye göre hâkime tazminatı indirme ya da kaldırma imkânı veren bir sebeptir.",
+        '6098 sayılı TBK m. 114/2, 52',
     ),
     # düzey 3
     '0027': patch(
@@ -506,6 +509,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 121/1: bağışlanan paranın ödenmesinde temerrüt faizi icra takibi veya dava gününden işler. m. 121/2: buna aykırı olarak yapılan anlaşmalar ceza koşulu hükümlerine tabi olur; hâkimin indirim yetkisi gibi kurallar uygulanır ve bağışlama geçerliliğini korur.',
+        '6098 sayılı TBK m. 121/2',
     ),
     # düzey 2
     '0035': patch(
@@ -519,6 +523,7 @@ _PATCHES = {
         },
         'A',
         "TBK m. 123-125: borçlunun temerrüdünde alacaklı kural olarak uygun bir süre verir; ancak m. 124/2'ye göre borçlunun temerrüdü sonucunda borcun ifası alacaklı için yararsız kalmışsa süre verilmesine gerek yoktur ve alacaklı seçimlik haklarını doğrudan kullanabilir.",
+        '6098 sayılı TBK m. 124/2',
     ),
     # düzey 2
     '0036': patch(
@@ -784,6 +789,7 @@ _PATCHES = {
         },
         'A',
         'TBK m. 119: temerrüde düşen borçlu beklenmedik hâlden doğan zararlardan da sorumludur; ancak temerrüde düşmekte kusuru olmadığını veya zamanında ifa etseydi de beklenmedik hâlin zarar vereceğini ispat ederek bu sorumluluktan kurtulabilir.',
+        '6098 sayılı TBK m. 119',
     ),
     # düzey 2
     '0055': patch(
@@ -797,6 +803,7 @@ _PATCHES = {
         },
         'B',
         'TBK m. 122/2: temerrüt faizini aşan zarar miktarı görülmekte olan davada belirlenebiliyorsa, davacının istemi üzerine hâkim, esas hakkında karar verirken bu zararın miktarına da hükmeder.',
+        '6098 sayılı TBK m. 122/2',
     ),
     # düzey 3
     '0056': patch(

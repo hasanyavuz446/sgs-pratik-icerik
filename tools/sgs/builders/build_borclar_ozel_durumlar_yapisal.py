@@ -201,6 +201,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 177: sözleşme yapılırken verilen para cayma parası değil bağlanma parası sayılır ve aksine hüküm yoksa esas alacaktan düşülür. m. 178: cayma parası kararlaştırılmışsa parayı veren onu bırakarak, alan ise iki katını geri vererek sözleşmeden cayabilir.',
+        '6098 sayılı TBK m. 177, 178',
     ),
     # düzey 2
     '0013': patch(
@@ -214,6 +215,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 179/2: ceza, borcun belirlenen zaman veya yerde ifa edilmemesi için kararlaştırılmışsa alacaklı, hakkından açıkça feragat etmiş veya ifayı çekince ileri sürmeksizin kabul etmiş olmadıkça, asıl borcun ifasıyla birlikte cezayı da isteyebilir.',
+        '6098 sayılı TBK m. 179/2',
     ),
     # düzey 3
     '0014': patch(
@@ -661,6 +663,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 163: alacaklı, müteselsil borçlulardan her birinden borcun tamamını veya bir kısmını isteyebilir; borcun tamamı ödenmedikçe bütün borçluların sorumluluğu devam eder. m. 166-167: ödeme diğerlerini de kurtarır; payını aşan ödeme yapan borçlu diğerlerine rücu eder.',
+        '6098 sayılı TBK m. 163',
     ),
     # düzey 3
     '0046': patch(
@@ -702,6 +705,7 @@ _PATCHES = {
         },
         'C',
         "TBK m. 170: bir sözleşmenin hüküm doğurması gerçekleşip gerçekleşmeyeceği belli olmayan bir olguya bağlanmışsa sözleşme geciktirici koşula bağlıdır; koşulun gerçekleşmesiyle, kural olarak o andan itibaren hüküm doğurur. Bağışlama vaadi m. 288'e göre yazılı şekle tabidir.",
+        '6098 sayılı TBK m. 170',
     ),
     # düzey 2
     '0049': patch(

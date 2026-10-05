@@ -103,6 +103,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 59: ayırt etme gücünü geçici olarak kaybeden kişi, bu sırada verdiği zararları gidermekle yükümlüdür; ancak ayırt etme gücünü kaybetmede kusuru olmadığını ispat ederse sorumluluktan kurtulur. İspat yükü zarar verendedir.',
+        '6098 sayılı TBK m. 59',
     ),
     # düzey 3
     '0006': patch(
@@ -606,6 +607,7 @@ _PATCHES = {
         },
         'D',
         'TBK m. 50: zarar gören zararını ve zarar verenin kusurunu ispat eder; ancak zararın miktarı tam olarak ispat edilemiyorsa hâkim, olayların olağan akışını ve zarar görenin aldığı önlemleri göz önünde tutarak zararın miktarını hakkaniyete uygun olarak belirler.',
+        '6098 sayılı TBK m. 50',
     ),
     # düzey 2
     '0042': patch(
@@ -759,6 +761,7 @@ _PATCHES = {
         },
         'D',
         'TBK m. 70: bir başkasına ait bina veya yapı eserlerinden zarar görme tehlikesiyle karşılaşan kişi, bu tehlikenin giderilmesi için gerekli önlemlerin alınmasını hak sahiplerinden isteyebilir; zararın doğması beklenmez.',
+        '6098 sayılı TBK m. 70',
     ),
     # düzey 3
     '0053': patch(
@@ -828,6 +831,7 @@ _PATCHES = {
         },
         'D',
         'TBK m. 51/2: hâkim, tazminatın ödenme biçimini belirler ve tazminatın irat biçiminde ödenmesine hükmedebilir; bu durumda borçlu güvence göstermekle yükümlüdür.',
+        '6098 sayılı TBK m. 51/2',
     ),
     # düzey 3
     '0058': patch(
@@ -855,6 +859,7 @@ _PATCHES = {
         },
         'A',
         "TBK m. 61: birden çok kişi birlikte bir zarara sebebiyet verir veya aynı zarardan çeşitli sebeplerden dolayı sorumlu olursa müteselsil sorumluluk hükümleri uygulanır; zarar gören dilediğine başvurur, iç ilişkide paylaştırma m. 62'ye göre yapılır.",
+        '6098 sayılı TBK m. 61',
     ),
     # düzey 3
     '0060': patch(

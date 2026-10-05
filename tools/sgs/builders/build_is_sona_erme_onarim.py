@@ -285,6 +285,7 @@ _PATCHES = {
         },
         'B',
         'Kıdem ve ihbar tazminatı ile yıllık izin ücreti dâhil kanunda sayılan işçilik alacaklarında zamanaşımı kural olarak beş yıldır. Muacceliyet ve zamanaşımını kesen veya durduran nedenler ayrıca değerlendirilir; bu alacaklar zamanaşımına tabidir.',
+        '4857 sayılı İş Kanunu ek md. 3; 7036 sayılı Kanun geçici md. 8',
     ),
     # düzey 2
     '0019': patch(
@@ -354,6 +355,7 @@ _PATCHES = {
         },
         'A',
         '4857 md. 26: ahlak ve iyi niyet kurallarına aykırılıkta fesih hakkı, olayın öğrenilmesinden başlayarak altı iş günü ve kural olarak fiilden itibaren bir yıl içinde kullanılmalıdır; işçinin olaydan maddi çıkar sağlaması hâlinde bir yıllık sınır uygulanmaz. Öğrenme 10 Mart olduğundan 19 Mart tarihli fesih altı iş günlük süreyi aşmıştır.',
+        '4857 sayılı İş Kanunu md. 26',
     ),
     # düzey 3
     '0024': patch(
@@ -423,6 +425,7 @@ _PATCHES = {
         },
         'D',
         'İşten ayrılan işçiye işinin çeşidini ve süresini gösteren belge verilir; belgeyi işveren düzenler ve yükümlülük çalışma süresine bağlı değildir. Belgenin zamanında verilmemesi veya yanlış bilgi içermesi nedeniyle zarar gören işçi ya da işçiyi işe alan yeni işveren eski işverenden tazminat isteyebilir.',
+        '4857 sayılı İş Kanunu md. 28',
     ),
     # düzey 3
     '0029': patch(
@@ -534,6 +537,7 @@ _PATCHES = {
         },
         'D',
         'İşe iade talebi ile bireysel veya toplu iş sözleşmesine dayanan işçi ya da işveren alacağı ve tazminatı davalarında, kanuni istisnalar dışında arabulucuya başvuru dava şartıdır. Başvuru yapılmadan açılan dava, dava şartı yokluğundan usulden reddedilir; esasa girilmez.',
+        '7036 sayılı İş Mahkemeleri Kanunu md. 3; 4857 sayılı İş Kanunu md. 20',
     ),
     # düzey 2
     '0037': patch(
@@ -729,6 +733,7 @@ _PATCHES = {
         },
         'A',
         'İşveren bildirim süresine ait ücreti peşin vererek sözleşmeyi sona erdirebilir. Bu yöntem feshin niteliğini değiştirmez ve iş güvencesi hükümlerini bertaraf etmez; fesih geçerli nedene ve usule uygun olmalıdır. Kıdem ve izin gibi diğer haklar ayrıca değerlendirilir.',
+        '4857 sayılı İş Kanunu md. 17-19',
     ),
     # düzey 3
     '0051': patch(

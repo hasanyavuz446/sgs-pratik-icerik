@@ -47,6 +47,7 @@ _PATCHES = {
         },
         'B',
         "TBK m. 77: haklı bir sebep olmaksızın bir başkasının malvarlığından zenginleşen, bu zenginleşmeyi geri vermekle yükümlüdür. Fakirleşenin kusuru veya zenginleşenin kötüniyeti bu yükümlülüğün şartı değildir; istem zenginleşen B'ye yöneltilir.",
+        '6098 sayılı TBK m. 77',
     ),
     # düzey 2
     '0002': patch(
@@ -186,6 +187,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 82/2: zenginleşme, zenginleşenin bir alacak hakkı kazanması suretiyle gerçekleşmişse diğer taraf, istem hakkı zamanaşımına uğramış olsa bile her zaman bu borcunu ifadan kaçınabilir.',
+        '6098 sayılı TBK m. 82/2',
     ),
     # düzey 3
     '0012': patch(
@@ -577,6 +579,7 @@ _PATCHES = {
         },
         'C',
         'Sebepsiz zenginleşmeden doğan geri verme borcu malvarlığına ilişkin bir borçtur; zenginleşenin ölümüyle sona ermez ve külli halefiyet gereği mirası reddetmeyen mirasçılara geçer. Kişiye sıkı sıkıya bağlı bir yükümlülük değildir.',
+        '6098 sayılı TBK m. 77',
     ),
     # düzey 3
     '0040': patch(
@@ -702,6 +705,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 80: iyiniyetli zenginleşen zorunlu ve yararlı giderlerin ödenmesini isteyebilir; diğer giderlerinin ödenmesini isteyemez. Ancak kendisine karşılık önerilmezse, o şey ile birleştirdiği ve zararsızca ayrılması mümkün eklemeleri geri vermeden önce ayırıp alabilir.',
+        '6098 sayılı TBK m. 80/3',
     ),
     # düzey 3
     '0049': patch(
@@ -827,6 +831,7 @@ _PATCHES = {
         },
         'D',
         'TBK m. 39: aldatma nedeniyle yanılan taraf, aldatmayı öğrendiği andan başlayarak bir yıl içinde sözleşmeyle bağlı olmadığını bildirmezse sözleşmeyi onaylamış sayılır. Geçerli hâle gelen sözleşme ödemenin haklı sebebidir; sebepsiz zenginleşme istemi doğmaz.',
+        '6098 sayılı TBK m. 39, 77',
     ),
     # düzey 2
     '0058': patch(

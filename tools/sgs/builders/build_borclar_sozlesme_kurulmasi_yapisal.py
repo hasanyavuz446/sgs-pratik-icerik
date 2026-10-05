@@ -89,6 +89,7 @@ _PATCHES = {
         },
         'D',
         "TBK m. 12: kanunda sözleşmeler için öngörülen şekil kural olarak geçerlilik şeklidir; öngörülen şekle uyulmaksızın kurulan sözleşmeler hüküm doğurmaz. Kefalet sözleşmesi m. 583'e göre yazılı şekle tabidir; şekil eksikliği tarafların onayıyla giderilemez.",
+        '6098 sayılı TBK m. 12, 583',
     ),
     # düzey 3
     '0005': patch(
@@ -116,6 +117,7 @@ _PATCHES = {
         },
         'A',
         'TBK m. 19/1: sözleşmenin türünün ve içeriğinin belirlenmesinde, tarafların yanlışlıkla veya gerçek amaçlarını gizlemek için kullandıkları sözcüklere bakılmaksızın, gerçek ve ortak iradeleri esas alınır. Bu nedenle sözleşme satıştır.',
+        '6098 sayılı TBK m. 19/1',
     ),
     # düzey 3
     '0007': patch(
@@ -199,6 +201,7 @@ _PATCHES = {
         },
         'B',
         "TBK m. 28/2: zor durumda kalmada bir yıllık süre zor durumun ortadan kalktığı tarihten başlar; ancak hak her hâlde sözleşmenin kurulduğu tarihten başlayarak beş yıl içinde kullanılmalıdır. 2019'daki sözleşmeden itibaren beş yıl 2024'te dolmuştur; bir yıllık sürenin dolmamış olması sonucu değiştirmez.",
+        '6098 sayılı TBK m. 28/2',
     ),
     # düzey 3
     '0013': patch(
@@ -240,6 +243,7 @@ _PATCHES = {
         },
         'C',
         'TBK m. 38/2: bir hakkın veya kanundan doğan bir yetkinin kullanılacağı korkutmasıyla sözleşme yapıldığında, bunu açıklayanın diğer tarafın zor durumda kalmasından aşırı bir menfaat sağlamış olması hâlinde korkutmanın varlığı kabul edilir. Zararın üç katı tutarında senet aşırı menfaattir.',
+        '6098 sayılı TBK m. 38/2',
     ),
     # düzey 2
     '0016': patch(
@@ -673,6 +677,7 @@ _PATCHES = {
         },
         'B',
         'TBK m. 18: borcun sebebini içermemiş olsa bile borç tanıması geçerlidir; geçerlilik sebebin ispatına, noter onayına ya da tacir sıfatına bağlı değildir.',
+        '6098 sayılı TBK m. 18',
     ),
     # düzey 2
     '0047': patch(
@@ -826,6 +831,7 @@ _PATCHES = {
         },
         'E',
         'TBK m. 39: aldatılan, öğrenmeden itibaren bir yıl içinde bağlı olmadığını bildirmezse sözleşmeyi onamış sayılır. m. 39/2: aldatma veya korkutmadan dolayı bağlayıcılığı olmayan bir sözleşmenin onanmış sayılması tazminat hakkını ortadan kaldırmaz.',
+        '6098 sayılı TBK m. 39/2',
     ),
     # düzey 3
     '0058': patch(

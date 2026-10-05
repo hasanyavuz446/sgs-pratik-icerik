@@ -103,6 +103,7 @@ _PATCHES = {
         },
         'B',
         'MTVK m. 4 son fıkrası: motorlu taşıtlar vergisiyle ilgili muaflık ve istisna hükümleri bu Kanuna hüküm eklenmek veya bu Kanunda değişiklik yapılmak suretiyle düzenlenir; bu Kanunda yer almayan istisna ve muaflıklar hükümsüzdür. Uluslararası anlaşma hükümleri saklıdır.',
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 4 son fıkra',
     ),
     # düzey 2
     '0006': patch(
@@ -200,6 +201,7 @@ _PATCHES = {
         },
         'D',
         'MTVK m. 9: devir ve temlik sebebiyle Ocak ve Temmuz ayları içinde yapılacak kayıt ve tescil veya satış nedeniyle malik değişikliğinde vergi, bu değişikliğin yapılmasından önce ödenir. Bu nedenle birinci taksitin alıcıya bırakılması mümkün değildir.',
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 9',
     ),
     # düzey 1
     '0013': patch(
@@ -241,6 +243,7 @@ _PATCHES = {
         },
         'B',
         'MTVK m. 13/c-e: noterler taşıtların satış veya devir işlemlerini yapmadan önce ödenmemiş vergi, gecikme zammı, gecikme faizi ve cezaların ödendiğini gösteren belgeyi aramak zorundadır; bu zorunluluğa uymadan işlem yapanlar mükelleflerle birlikte müteselsilen sorumludur ve ödedikleri için mükellefe rücu edebilir. Geçmiş yıllar borcu alıcıya geçmez.',
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 13/c, e',
     ),
     # düzey 2
     '0016': patch(
@@ -492,6 +495,7 @@ _PATCHES = {
         },
         'B',
         "MTVK m. 9: ilk altı aylık dönem geçtikten sonra yapılan tescillerde sadece ikinci altı aylık döneme ilişkin vergi tahakkuk eder: 10.000 / 2 = 5.000 ₺. Temmuz taksit süresi geçmiş olduğundan bu tutar tescilden itibaren bir ay içinde, yani 20 Ekim'e kadar ödenir.",
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 9',
     ),
     # düzey 1
     '0034': patch(
@@ -659,6 +663,7 @@ _PATCHES = {
         },
         'C',
         'MTVK m. 4/b: karşılıklı olmak şartıyla yabancı devletlerin elçilik ve konsoloslukları ile elçi, maslahatgüzar ve konsoloslarına (fahri konsoloslar hariç) ait taşıtlar istisnadır. Fahri konsolos adına tescilli otomobil, karşılıklılık bulunsa da vergiye tabidir.',
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 4/b',
     ),
     # düzey 2
     '0046': patch(
@@ -714,6 +719,7 @@ _PATCHES = {
         },
         'C',
         "MTVK m. 10: vergi miktarları kural olarak yeniden değerleme oranında artırılır; Cumhurbaşkanı yeniden değerleme oranının %50 fazlasını geçmemek, %20'sinden az olmamak üzere yeni oran belirleyebilir. %40 için aralık %8 ile %60'tır; %70 üst sınırı aşar.",
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 10',
     ),
     # düzey 2
     '0050': patch(
@@ -797,6 +803,7 @@ _PATCHES = {
         },
         'E',
         "MTVK m. 13/d: vergisi ödenmemiş veya 6183 sayılı Kanun'un 48. maddesine göre taksitlendirilmemiş taşıtlara fenni muayene yapılamaz. Borç m. 48'e göre taksitlendirilmişse ödenen taksit oranına bakılmaksızın muayene engeli yoktur.",
+        '197 sayılı Motorlu Taşıtlar Vergisi Kanunu m. 13/d',
     ),
     # düzey 3
     '0056': patch(

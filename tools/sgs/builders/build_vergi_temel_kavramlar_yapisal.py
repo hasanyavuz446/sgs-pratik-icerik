@@ -103,6 +103,7 @@ _PATCHES = {
         },
         'E',
         'VUK m. 3/B: iktisadi, ticari ve teknik icaplara uymayan veya olayın özelliğine göre normal ve mutat olmayan bir durumun iddia olunması hâlinde ispat külfeti bunu iddia eden tarafa aittir; ispatta yemin hariç her türlü delil kullanılabilir. Piyasa değerinin onda birine satış olağan dışı olduğundan ispat yükü mükellefe düşer.',
+        '213 sayılı VUK m. 3/B',
     ),
     # düzey 2
     '0006': patch(
@@ -116,6 +117,7 @@ _PATCHES = {
         },
         'A',
         'VUK m. 8/3: vergi kanunlarıyla kabul edilen hâller dışında mükellefiyete veya vergi sorumluluğuna ilişkin özel sözleşmeler vergi dairelerini bağlamaz. Emlak vergisinin mükellefi bina sahibidir; kiracıyla yapılan anlaşma yalnız taraflar arasında hüküm doğurur ve vergi mal sahibinden aranır.',
+        '213 sayılı VUK m. 8',
     ),
     # düzey 2
     '0007': patch(
@@ -129,6 +131,7 @@ _PATCHES = {
         },
         'D',
         'VUK m. 9/2: vergiyi doğuran olayın kanunlarla yasak edilmiş bulunması mükellefiyeti ve vergi sorumluluğunu kaldırmaz. Yasak faaliyetin başka kanunlardaki yaptırımları ayrıca uygulanır ve vergilendirmeye engel değildir.',
+        '213 sayılı VUK m. 9/2',
     ),
     # düzey 3
     '0008': patch(
@@ -226,6 +229,7 @@ _PATCHES = {
         },
         'D',
         "VUK m. 6: m. 5'te sayılanlar kendilerine, nişanlılarına, boşanmış olsalar bile eşlerine, belirli derecelere kadar kan ve sıhri hısımlarına ve temsilcisi veya vekili oldukları kişilere ait vergi inceleme ve takdir işleriyle uğraşamaz. Mükellefin onayı yasağı kaldırmaz.",
+        '213 sayılı VUK m. 6',
     ),
     # düzey 2
     '0015': patch(
@@ -393,6 +397,7 @@ _PATCHES = {
         },
         'A',
         'VUK m. 9: mükellefiyet ve vergi sorumluluğu için kanuni ehliyet şart değildir; çocuk kendi kira gelirinin mükellefidir. VUK m. 10: küçüklerin mükellef olması hâlinde bunlara düşen ödevler kanuni temsilcileri tarafından yerine getirilir; gelir velinin beyannamesine eklenmez.',
+        '213 sayılı VUK m. 9-10',
     ),
     # düzey 3
     '0027': patch(
@@ -546,6 +551,7 @@ _PATCHES = {
         },
         'A',
         'Muafiyet, vergi kanununun kapsamına giren belirli kişilerin vergi dışında bırakılmasıdır (diplomat muaflığı). İstisna ise belirli konuların (gelir, işlem veya değer) vergi dışında bırakılmasıdır (konut kira geliri istisnası). Yani muafiyet kişiye, istisna konuya ilişkindir.',
+        'Vergi hukuku temel kavramlar: muafiyet ve istisna',
     ),
     # düzey 2
     '0038': patch(
@@ -615,6 +621,7 @@ _PATCHES = {
         },
         'A',
         "Anayasa m. 153: kanun hükümleri iptal kararlarının Resmî Gazete'de yayımlandığı tarihte yürürlükten kalkar; Mahkeme gerekli hâllerde yürürlük tarihini ayrıca kararlaştırabilir, bu süre bir yılı geçemez. İptal kararları geriye yürümez ve yasama, yürütme, yargı organlarını, idareyi, gerçek ve tüzel kişileri bağlar.",
+        'Anayasa m. 153',
     ),
     # düzey 3
     '0043': patch(
@@ -628,6 +635,7 @@ _PATCHES = {
         },
         'E',
         'VUK m. 369/1: yetkili makamların mükellefin kendisine yazı ile yanlış izahat vermiş olmaları hâlinde vergi cezası kesilmez ve gecikme faizi hesaplanmaz. Kanunen doğması gereken vergi ise asıl olarak aranır; korunan yalnız mükellefin ceza ve faiz yönünden güvenidir.',
+        '213 sayılı VUK m. 369/1',
     ),
     # düzey 2
     '0044': patch(
