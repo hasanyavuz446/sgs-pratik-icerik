@@ -233,16 +233,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        "Stoklarını aralıklı envanter yöntemiyle izleyen ve fire bulunmayan bir işletmenin dönem bilgileri şöyledir: dönem başı ticari mal 210.000 ₺, dönem içi alışlar 790.000 ₺, alış giderleri 50.000 ₺, alış iadeleri 150.000 ₺, alış iskontoları 20.000 ₺, satış iadeleri 60.000 ₺ ve dönem sonu sayımla belirlenen ticari mal 400.000 ₺. Buna göre satılan ticari malların maliyeti kaç ₺'dir?",
+        "Stoklarını aralıklı envanter yöntemiyle izleyen ve fire bulunmayan bir işletmenin dönem bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı ticari mal | 210.000 |\n| Dönem içi alışlar | 790.000 |\n| Alış giderleri | 50.000 |\n| Alış iadeleri | 150.000 |\n| Alış iskontoları | 20.000 |\n| Satıştan iadeler | 60.000 |\n| Satış iskontoları | 25.000 |\n| Dönem sonu ticari mal (sayım) | 400.000 |\n\nBuna göre satılan ticari malların maliyeti kaç ₺'dir?",
         {
             'A': '420.000 ₺',
-            'B': '430.000 ₺',
+            'B': '455.000 ₺',
             'C': '500.000 ₺',
             'D': '480.000 ₺',
             'E': '780.000 ₺',
         },
         'D',
-        'SMM = dönem başı + alışlar + alış giderleri − alış iadeleri − alış iskontoları − dönem sonu = 210.000 + 790.000 + 50.000 − 150.000 − 20.000 − 400.000 = **480.000 ₺**. Satış iadeleri hasılatı düzelttiği için SMM hesabına girmez.',
+        "SMM = dönem başı + alışlar + alış giderleri − alış iadeleri − alış iskontoları − dönem sonu = 210.000 + 790.000 + 50.000 − 150.000 − 20.000 − 400.000 = **480.000 ₺**. Satıştan iadeler ve satış iskontoları net satışları düzeltir; ikisi de SMM'ye girmez.",
         'Aralıklı envanter; THP 153, 621',
     ),
     # düzey 3
@@ -289,16 +289,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        "Bir işletmenin dönem bilgileri şöyledir: yurt içi satışlar 900.000 ₺, satıştan iadeler 40.000 ₺, satış iskontoları 20.000 ₺, satılan ticari mallar maliyeti 520.000 ₺ ve genel yönetim giderleri 70.000 ₺. Buna göre brüt satış kârı kaç ₺'dir?",
+        "Bir ticaret işletmesinin dönem bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Yurt içi satışlar | 900.000 |\n| Satıştan iadeler | 40.000 |\n| Satış iskontoları | 20.000 |\n| Satılan ticari mallar maliyeti | 520.000 |\n| Pazarlama, satış ve dağıtım giderleri | 45.000 |\n| Genel yönetim giderleri | 70.000 |\n| Faiz gelirleri | 18.000 |\n\nBuna göre brüt satış kârı kaç ₺'dir?",
         {
             'A': '300.000 ₺',
             'B': '320.000 ₺',
             'C': '250.000 ₺',
-            'D': '260.000 ₺',
+            'D': '205.000 ₺',
             'E': '840.000 ₺',
         },
         'B',
-        'Net satışlar 900.000 − 40.000 − 20.000 = 840.000 ₺; brüt satış kârı 840.000 − 520.000 = **320.000 ₺**. Genel yönetim giderleri faaliyet giderleridir; brüt satış kârından sonra düşülür.',
+        'Net satışlar 900.000 − 40.000 − 20.000 = 840.000 ₺; brüt satış kârı 840.000 − 520.000 = **320.000 ₺**. Pazarlama ve genel yönetim giderleri faaliyet giderleridir, brüt satış kârından sonra düşülür (faaliyet kârı 205.000 ₺); faiz gelirleri ise diğer olağan gelirdir.',
         'Gelir tablosu; THP 60, 61, 62',
     ),
     # düzey 2

@@ -415,16 +415,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0028': patch(
-        "Bir üretim işletmesinde fabrika müdürü ücreti 70.000 ₺, bakım işçiliği 30.000 ₺, üretim makinelerinin amortismanı 40.000 ₺, fabrika elektrik gideri 25.000 ₺ ve pazarlama bölümü kirası 35.000 ₺'dir.\n\nGenel üretim giderleri toplamı kaç ₺'dir?",
+        "Bir üretim işletmesinin döneme ait giderleri aşağıdaki gibidir:\n\n| Gider | Tutar (₺) |\n|---|---|\n| Direkt ilk madde ve malzeme | 180.000 |\n| Direkt işçilik ücretleri | 110.000 |\n| Fabrika müdürü ücreti | 70.000 |\n| Bakım işçiliği | 30.000 |\n| Üretim makinelerinin amortismanı | 40.000 |\n| Fabrika elektrik gideri | 25.000 |\n| Yönetim binası amortismanı | 15.000 |\n| Pazarlama bölümü kirası | 35.000 |\n\nBuna göre '730 Genel Üretim Giderleri' hesabında toplanacak tutar kaç ₺'dir?",
         {
             'A': '140.000',
-            'B': '200.000',
+            'B': '275.000',
             'C': '165.000',
             'D': '150.000',
             'E': '130.000',
         },
         'C',
-        "Fabrika müdürü, bakım işçiliği, üretim makinesi amortismanı ve fabrika elektriği GÜG'dür: 70.000 + 30.000 + 40.000 + 25.000 = **165.000 ₺**. Pazarlama bölümü kirası 760 hesapta dönem gideridir.",
+        "Fabrika müdürü ücreti, bakım işçiliği, üretim makinelerinin amortismanı ve fabrika elektriği genel üretim gideridir: 70.000 + 30.000 + 40.000 + 25.000 = **165.000 ₺**. Direkt ilk madde 710'da, direkt işçilik 720'de izlenir; yönetim binası amortismanı 770'e, pazarlama bölümü kirası 760'a yazılan dönem gideridir.",
         "1 Sıra No'lu MSUGT - 730/760",
     ),
     # düzey 2
@@ -513,16 +513,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0035': patch(
-        "Bir üretim işletmesinin dönemin üretim giderleri 780.000 ₺, dönem başı ve sonu yarı mamul stokları sırasıyla 90.000 ve 70.000 ₺, dönem başı ve sonu mamul stokları ise sırasıyla 60.000 ve 110.000 ₺'dir.\n\nTamamlanan mamul maliyeti ile satılan mamuller maliyeti sırasıyla kaç ₺'dir?",
+        "Bir üretim işletmesinin dönem bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Direkt ilk madde ve malzeme giderleri | 380.000 |\n| Direkt işçilik giderleri | 250.000 |\n| Genel üretim giderleri | 150.000 |\n| Genel yönetim giderleri | 85.000 |\n| Dönem başı yarı mamul | 90.000 |\n| Dönem sonu yarı mamul | 70.000 |\n| Dönem başı mamul | 60.000 |\n| Dönem sonu mamul | 110.000 |\n\nBuna göre tamamlanan mamul maliyeti ile satılan mamuller maliyeti sırasıyla kaç ₺'dir?",
         {
             'A': '820.000 ve 770.000',
             'B': '800.000 ve 750.000',
             'C': '800.000 ve 850.000',
             'D': '780.000 ve 730.000',
-            'E': '760.000 ve 810.000',
+            'E': '885.000 ve 835.000',
         },
         'B',
-        "Tamamlanan mamul maliyeti = 90.000 + 780.000 − 70.000 = **800.000 ₺**'dir. Satılan mamuller maliyeti = 60.000 + 800.000 − 110.000 = **750.000 ₺** olur.",
+        "Dönemin üretim giderleri 380.000 + 250.000 + 150.000 = 780.000 ₺'dir. Tamamlanan mamul maliyeti = 90.000 + 780.000 − 70.000 = **800.000 ₺**; satılan mamuller maliyeti = 60.000 + 800.000 − 110.000 = **750.000 ₺** olur. Genel yönetim giderleri dönem gideridir, üretim maliyetine girmez.",
         "1 Sıra No'lu MSUGT - Satışların Maliyeti Tablosu; 18 Nisan 2026 SGS iki dönemli tablo soru örüntüsü",
     ),
     # düzey 2
@@ -555,16 +555,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0038': patch(
-        "7/A seçeneğini uygulayan bir üretim işletmesinde dönem içinde 710 hesabında 300.000 ₺, 720 hesabında 200.000 ₺ ve 730 hesabında 150.000 ₺ gider toplanmıştır. Dönem başı yarı mamul stoku 50.000 ₺, dönem sonu yarı mamul stoku 80.000 ₺'dir. Buna göre dönemde tamamlanarak 152 Mamuller hesabına aktarılan üretim maliyeti kaç ₺'dir?",
+        "7/A seçeneğini uygulayan bir üretim işletmesinin dönem sonu bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| 710 Direkt İlk Madde ve Malzeme Giderleri | 300.000 |\n| 720 Direkt İşçilik Giderleri | 200.000 |\n| 730 Genel Üretim Giderleri | 150.000 |\n| 760 Pazarlama Satış ve Dağıtım Giderleri | 45.000 |\n| 770 Genel Yönetim Giderleri | 60.000 |\n| Dönem başı yarı mamul | 50.000 |\n| Dönem sonu yarı mamul | 80.000 |\n| Dönem başı mamul | 70.000 |\n\nBuna göre dönemde tamamlanarak '152 Mamuller' hesabına aktarılan üretim maliyeti kaç ₺'dir?",
         {
             'A': '680.000 ₺',
             'B': '650.000 ₺',
             'C': '620.000 ₺',
             'D': '570.000 ₺',
-            'E': '700.000 ₺',
+            'E': '725.000 ₺',
         },
         'C',
-        "Üretim giderleri yansıtma hesaplarıyla 151'e aktarılır: 650.000 ₺. Tamamlanan üretim = dönem başı yarı mamul + dönem giderleri − dönem sonu yarı mamul = 50.000 + 650.000 − 80.000 = **620.000 ₺** (152 borç / 151 alacak).",
+        "Yalnız 710, 720 ve 730 yansıtma hesaplarıyla 151'e aktarılır: 650.000 ₺. Tamamlanan üretim = 50.000 + 650.000 − 80.000 = **620.000 ₺** (152 borç / 151 alacak). 760 ve 770 dönem gideridir (631, 632); dönem başı mamul stoku ise tamamlanan üretimi değil satılan mamuller maliyetini etkiler.",
         'THP 710-731, 151, 152',
     ),
     # düzey 3
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0041': patch(
-        "Bir üretim işletmesinde döneme ait giderler şöyledir: endirekt malzeme 55.000 ₺, endirekt işçilik 90.000 ₺, fabrika binası kirası 70.000 ₺, üretim makinelerinin amortismanı 45.000 ₺ ve genel müdürlük personeli ücreti 60.000 ₺.\n\n730 Genel Üretim Giderleri hesabında toplanacak tutar kaç ₺'dir?",
+        "7/A seçeneğini uygulayan bir üretim işletmesinde döneme ait giderler aşağıdaki gibidir:\n\n| Gider | Tutar (₺) |\n|---|---|\n| Direkt ilk madde ve malzeme | 240.000 |\n| Endirekt malzeme | 55.000 |\n| Endirekt işçilik | 90.000 |\n| Fabrika binası kirası | 70.000 |\n| Üretim makinelerinin amortismanı | 45.000 |\n| Genel müdürlük personeli ücreti | 60.000 |\n| Satış mağazası kirası | 28.000 |\n| Banka kredisi faizi | 16.000 |\n\nBuna göre '730 Genel Üretim Giderleri' hesabında toplanacak tutar kaç ₺'dir?",
         {
             'A': '275.000',
             'B': '320.000',
@@ -606,7 +606,7 @@ _PATCHES = {
             'E': '260.000',
         },
         'E',
-        'Endirekt malzeme, endirekt işçilik, fabrika kirası ve üretim makinelerinin amortismanı genel üretim gideridir: 55.000 + 90.000 + 70.000 + 45.000 = **260.000 ₺**. Genel müdürlük personeli ücreti 770 Genel Yönetim Giderlerinde izlenir.',
+        "Endirekt malzeme, endirekt işçilik, fabrika binası kirası ve üretim makinelerinin amortismanı genel üretim gideridir: 55.000 + 90.000 + 70.000 + 45.000 = **260.000 ₺**. Direkt ilk madde 710'da; genel müdürlük personeli ücreti 770'te, satış mağazası kirası 760'ta, kredi faizi 780'de izlenir.",
         "1 Sıra No'lu MSUGT - 730 Genel Üretim Giderleri; 18 Nisan 2026 SGS gider sınıflandırma soru örüntüsü",
     ),
     # düzey 2

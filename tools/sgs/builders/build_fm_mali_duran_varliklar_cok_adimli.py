@@ -849,16 +849,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0059': patch(
-        "Bir işletmenin dönem sonu mizanında şu kalanlar vardır: 240 Bağlı Menkul Kıymetler 150.000 ₺, 242 İştirakler 500.000 ₺, 243 İştiraklere Sermaye Taahhütleri 200.000 ₺, 244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı 50.000 ₺, 245 Bağlı Ortaklıklar 800.000 ₺ ve 110 Hisse Senetleri 90.000 ₺. Buna göre bilançoda gösterilecek mali duran varlıklar toplamı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu mizanından alınan bazı hesap kalanları aşağıdaki gibidir:\n\n| Hesap | Kalan (₺) |\n|---|---|\n| 240 Bağlı Menkul Kıymetler | 150.000 |\n| 242 İştirakler | 500.000 |\n| 243 İştiraklere Sermaye Taahhütleri | 200.000 |\n| 244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı | 50.000 |\n| 245 Bağlı Ortaklıklar | 900.000 |\n| 246 Bağlı Ortaklıklara Sermaye Taahhütleri | 100.000 |\n| 110 Hisse Senetleri | 90.000 |\n\nBuna göre bilançoda '24 Mali Duran Varlıklar' grubunda gösterilecek tutar kaç ₺'dir?",
         {
-            'A': '1.700.000 ₺',
+            'A': '1.550.000 ₺',
             'B': '1.200.000 ₺',
             'C': '1.290.000 ₺',
-            'D': '1.400.000 ₺',
-            'E': '1.250.000 ₺',
+            'D': '1.300.000 ₺',
+            'E': '1.050.000 ₺',
         },
         'B',
-        '150.000 + 500.000 − 200.000 (243) − 50.000 (244) + 800.000 = **1.200.000 ₺**. 243 ve 244 aktifi düzenleyici hesaplardır; 110 Hisse Senetleri dönen varlıktır.',
+        '24 Mali Duran Varlıklar = 150.000 + 500.000 − 200.000 − 50.000 + 900.000 − 100.000 = **1.200.000 ₺**. 243, 244 ve 246 aktifi düzenleyici hesaplardır ve düşülür; 110 Hisse Senetleri 11 Menkul Kıymetler grubundadır.',
         'THP 24 Mali Duran Varlıklar',
     ),
     # düzey 3

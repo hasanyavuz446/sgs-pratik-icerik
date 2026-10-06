@@ -24,6 +24,30 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — uzun FM senaryoları tablolu (v240 canlı)
+
+9 paketten 22 uzun hesap sorusu, satır içi veri listesinden iki sütunlu tabloya taşındı (biri üç sütunlu).
+Tablolara cevabı değiştirmeyen gerçekçi tuzak kalemler eklendi; bir şık bu tuzağı dâhil eden tutara çevrildi.
+Örnekler: faaliyet kârı sorusunda faiz/komisyon geliri, SMM sorusunda satış iadesi, kısa vadeli yabancı kaynakta 159 ve 400,
+özkaynakta toplam kapsamlı gelirin içindeki net kâr ve diğer kapsamlı gelir.
+Dört soru yeni veriyle derinleşti:
+- gt 0025 alış iskontosu eklendi: 370.000 → 364.000.
+- gt 0016 artık dönem net kârını soruyor (0057 ile aynı şeyi sormasın diye).
+- ta 0019 çek alınması eklendi.
+- yk 0059 303 hesabı eklendi.
+- ozk 0011 522 ve 541 eklendi.
+
+Cevap harfleri ve dayanaklar değişmedi; paket başına değişen kimlikler tasarımla birebir.
+Tuzak seçerken sızıntı denetimi üç tuzağı geri çevirdi:
+- "Yedeklerin sermayeye eklenmesi toplamı değiştirmez" bilgisi ozk 0008, 0033 ve 0050'nin cevabıydı.
+- "331 yabancı kaynaktır" bilgisi ozk 0019'un cevabıydı.
+- Satış nakliyesinin 760'a yazılması stok 0039 ve 0020'nin cevabıydı.
+
+FM'de tablolu kök 7'den 29'a çıktı. Uzunluk etkisi küçük kaldı: Q3 311'den 316'ya çıktı; tablo işaretleri hariç 310'dan 315'e çıktı.
+Medyan 248'de, 250+ payı %49'da kaldı (gerçek değerler: 346 ve %62).
+Tabloya taşımak metni uzatmıyor. Üst yarıdaki açık, 200-250 bandındaki soruların yeni veri kalemiyle genişletilmesini istiyor.
+Tablo genişlik testi (360 dp, 197 kök) temiz.
+
 ## 6 Ekim 2026 — FM kavram soruları olayla kuruldu (v239 canlı)
 
 65 sorunun yalnız kökü değişti (şık, cevap, çözüm, dayanak aynı; doğrulandı). Kısa kavram ve hesap

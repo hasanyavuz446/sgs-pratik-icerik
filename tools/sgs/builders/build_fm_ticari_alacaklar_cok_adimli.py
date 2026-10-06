@@ -289,16 +289,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        "Bir işletmenin 120 Alıcılar hesabının dönem başı borç kalanı 80.000 ₺'dir. Dönem içinde KDV dâhil 360.000 ₺ kredili satış yapılmış, KDV dâhil 24.000 ₺'lik mal iade alınmış, müşterilerden 250.000 ₺ tahsilat yapılmış ve 30.000 ₺'lik senetsiz alacak için müşteriden senet alınmıştır. Buna göre 120 Alıcılar hesabının dönem sonu kalanı kaç ₺'dir?",
+        "Bir işletmenin '120 Alıcılar' hesabının dönem başı borç kalanı 80.000 ₺'dir. Dönem içindeki işlemler (KDV dâhil tutarlarla) aşağıdaki gibidir:\n\n| İşlem | Tutar (₺) |\n|---|---|\n| Kredili satışlar | 360.000 |\n| Peşin satışlar | 48.000 |\n| Kredili satışlardan iadeler | 24.000 |\n| Müşterilerden nakit tahsilat | 250.000 |\n| Senede bağlanan alacaklar | 30.000 |\n| Alacağa karşılık müşteriden alınan çek | 12.000 |\n\nBuna göre '120 Alıcılar' hesabının dönem sonu kalanı kaç ₺'dir?",
         {
-            'A': '160.000 ₺',
-            'B': '136.000 ₺',
-            'C': '184.000 ₺',
-            'D': '166.000 ₺',
-            'E': '56.000 ₺',
+            'A': '136.000 ₺',
+            'B': '124.000 ₺',
+            'C': '172.000 ₺',
+            'D': '154.000 ₺',
+            'E': '76.000 ₺',
         },
         'B',
-        "80.000 + 360.000 − 24.000 − 250.000 − 30.000 = **136.000 ₺**. İade ve tahsilat alacağı azaltır; senet alınan kısım 121'e aktarıldığı için 120'den düşülür.",
+        "120 Alıcılar = 80.000 + 360.000 − 24.000 − 250.000 − 30.000 − 12.000 = **124.000 ₺**. Senede bağlanan alacak 121'e aktarılır; alacağa karşılık alınan çek 101 hesabına girer ve 120'yi kapatır. Peşin satış doğrudan kasaya/bankaya girer; 120 hesabı hiç kullanılmaz.",
         'THP 120',
     ),
     # düzey 2
@@ -807,16 +807,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0056': patch(
-        "Bir işletmenin dönem sonu itibarıyla 120 Alıcılar 400.000 ₺, 121 Alacak Senetleri 300.000 ₺, 122 Alacak Senetleri Reeskontu 30.000 ₺, 128 Şüpheli Ticari Alacaklar 50.000 ₺ ve 129 Şüpheli Ticari Alacaklar Karşılığı 50.000 ₺'dir. Bu verilere göre kısa vadeli ticari alacakların bilançodaki net tutarı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu mizanından alınan bazı hesap kalanları aşağıdaki gibidir:\n\n| Hesap | Kalan (₺) |\n|---|---|\n| 120 Alıcılar | 400.000 |\n| 121 Alacak Senetleri | 300.000 |\n| 122 Alacak Senetleri Reeskontu | 30.000 |\n| 128 Şüpheli Ticari Alacaklar | 50.000 |\n| 129 Şüpheli Ticari Alacaklar Karşılığı | 50.000 |\n| 131 Ortaklardan Alacaklar | 25.000 |\n| 220 Alıcılar | 90.000 |\n\nBuna göre bilançoda '12 Ticari Alacaklar' grubunda gösterilecek net tutar kaç ₺'dir?",
         {
             'A': '700.000',
-            'B': '720.000',
+            'B': '760.000',
             'C': '670.000',
             'D': '780.000',
             'E': '630.000',
         },
         'C',
-        'Net ticari alacaklar = 120 (400.000) + 121 (300.000) − 122 (30.000) + 128 (50.000) − 129 (50.000) = 400.000 + 300.000 − 30.000 + 0 = **670.000 ₺**. Düzenleyici hesaplar (122, 129) düşülür.',
+        '12 Ticari Alacaklar = 400.000 + 300.000 − 30.000 + 50.000 − 50.000 = **670.000 ₺**. Düzenleyici hesaplar (122, 129) düşülür. 131 Ortaklardan Alacaklar 13 Diğer Alacaklar grubunda; 220 Alıcılar ise vadesi bir yılı aşan alacak olarak duran varlıklarda gösterilir.',
         "1 Sıra No'lu MSUGT - Ticari alacakların net gösterimi",
     ),
     # düzey 3

@@ -247,16 +247,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Bir işletmenin ay içindeki işlemleri şöyledir: %20 KDV'ye tabi 300.000 ₺ ve %10 KDV'ye tabi 100.000 ₺ satış; %20 KDV'ye tabi satışlardan 20.000 ₺'lik iade alınması; %20 KDV'ye tabi 200.000 ₺ ve %1 KDV'ye tabi 50.000 ₺ alış. Önceki aydan devreden KDV 7.000 ₺'dir. Buna göre bu ay ödenecek KDV kaç ₺'dir?",
+        "Bir işletmenin ay içindeki işlemleri (KDV hariç tutarlarla) aşağıdaki gibidir:\n\n| İşlem | Tutar (₺) | KDV oranı |\n|---|---|---|\n| Satış | 300.000 | %20 |\n| Satış | 100.000 | %10 |\n| Satış iadesi | 20.000 | %20 |\n| İhracat | 80.000 | İstisna |\n| Alış | 200.000 | %20 |\n| Alış | 50.000 | %1 |\n\nSatış iadesi %20 KDV'ye tabi satışlardan alınmıştır; ihracat teslimi KDV'den tam istisnadır. Önceki aydan devreden KDV 7.000 ₺'dir.\n\nBuna göre bu ay ödenecek KDV kaç ₺'dir?",
         {
             'A': '11.500 ₺',
             'B': '25.500 ₺',
-            'C': '19.000 ₺',
+            'C': '34.500 ₺',
             'D': '18.500 ₺',
             'E': '22.500 ₺',
         },
         'D',
-        'Hesaplanan: 60.000 + 10.000 − iade 4.000 = 66.000 ₺. İndirilecek: 40.000 + 500 = 40.500 ₺. Ödenecek: 66.000 − 40.500 − devreden 7.000 = **18.500 ₺**.',
+        'Hesaplanan KDV: 60.000 + 10.000 − iade 4.000 = 66.000 ₺; ihracat istisna olduğundan KDV hesaplanmaz. İndirilecek KDV: 40.000 + 500 = 40.500 ₺. Ödenecek KDV: 66.000 − 40.500 − devreden 7.000 = **18.500 ₺**.',
         '3065 sayılı KDVK m. 29, 35; THP 191, 391, 190, 360',
     ),
     # düzey 3

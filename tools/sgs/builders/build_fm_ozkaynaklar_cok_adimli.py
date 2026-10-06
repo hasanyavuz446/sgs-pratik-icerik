@@ -177,16 +177,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        "Bir işletmenin özkaynak kalemleri şöyledir: 500 Sermaye 900.000 ₺, 501 Ödenmemiş Sermaye (-) 100.000 ₺, 520 Hisse Senetleri İhraç Primleri 60.000 ₺, 540 Yasal Yedekler 80.000 ₺, 570 Geçmiş Yıllar Kârları 40.000 ₺, 580 Geçmiş Yıllar Zararları (-) 30.000 ₺ ve 591 Dönem Net Zararı (-) 50.000 ₺.\n\nToplam özkaynak kaç ₺'dir?",
+        "Bir anonim şirketin dönem sonu bilançosuna esas mizanından alınan özkaynak hesaplarının kalanları aşağıdaki gibidir:\n\n| Hesap | Kalan (₺) |\n|---|---|\n| 500 Sermaye | 900.000 |\n| 501 Ödenmemiş Sermaye (-) | 100.000 |\n| 520 Hisse Senetleri İhraç Primleri | 60.000 |\n| 522 MDV Yeniden Değerleme Artışları | 35.000 |\n| 540 Yasal Yedekler | 80.000 |\n| 541 Statü Yedekleri | 25.000 |\n| 570 Geçmiş Yıllar Kârları | 40.000 |\n| 580 Geçmiş Yıllar Zararları (-) | 30.000 |\n| 591 Dönem Net Zararı (-) | 50.000 |\n\nBuna göre bilançoda gösterilecek özkaynak toplamı kaç ₺'dir?",
         {
-            'A': '930.000',
-            'B': '800.000',
-            'C': '900.000',
-            'D': '1.060.000',
-            'E': '1.000.000',
+            'A': '1.060.000',
+            'B': '865.000',
+            'C': '960.000',
+            'D': '1.010.000',
+            'E': '1.320.000',
         },
         'C',
-        'Toplam özkaynak = 900.000 − 100.000 + 60.000 + 80.000 + 40.000 − 30.000 − 50.000 = **900.000 ₺**dir. 501, 580 ve 591 negatif özkaynak kalemleri olduğu için düşülür.',
+        'Özkaynak = 900.000 − 100.000 + 60.000 + 35.000 + 80.000 + 25.000 + 40.000 − 30.000 − 50.000 = **960.000 ₺**dir. Adında (-) işareti taşıyan 501, 580 ve 591 negatif özkaynak kalemleridir ve toplamdan düşülür; diğer kalemlerin tamamı eklenir.',
         "1 Sıra No'lu MSUGT - 5 Özkaynaklar grubu",
     ),
     # düzey 3
@@ -471,7 +471,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0032': patch(
-        '570 Geçmiş Yıllar Kârları hesabındaki 800.000 ₺ için genel kurul; 50.000 ₺ yasal yedek, 150.000 ₺ statü yedeği, 100.000 ₺ olağanüstü yedek ve 500.000 ₺ ortaklara kâr payı ayırmıştır.\n\nKâr dağıtım kaydıyla ilgili aşağıdakilerden hangisi yanlıştır?',
+        "Bir anonim şirketin '570 Geçmiş Yıllar Kârları' hesabındaki 800.000 ₺ için genel kurulun aldığı dağıtım kararı aşağıdaki gibidir:\n\n| Dağıtım kalemi | Tutar (₺) |\n|---|---|\n| Yasal yedek | 50.000 |\n| Statü yedeği | 150.000 |\n| Olağanüstü yedek | 100.000 |\n| Ortaklara kâr payı | 500.000 |\n| Toplam | 800.000 |\n\nKâr payları genel kurul tarihinden bir ay sonra bankadan ödenecektir. Genel kurul tarihinde yapılan kâr dağıtım kaydıyla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
             'A': '541 Statü Yedekleri hesabı 150.000 ₺ alacaklandırılır.',
             'B': '331 Ortaklara Borçlar hesabı 500.000 ₺ borçlandırılır.',
@@ -480,7 +480,7 @@ _PATCHES = {
             'E': '540 Yasal Yedekler hesabı 50.000 ₺ alacaklandırılır.',
         },
         'B',
-        'Dağıtılan geçmiş yıl kârı 570 hesabın borcuna; yedekler ile ortaklara ödenecek kâr payı ilgili hesapların **alacağına** yazılır. Bu nedenle 331 Ortaklara Borçlar hesabının borçlandırılacağı ifadesi yanlıştır; hesap **500.000 ₺ alacaklandırılır**.',
+        'Dağıtılan geçmiş yıl kârı 570 hesabın borcuna; yedekler ile ortaklara ödenecek kâr payı ilgili hesapların **alacağına** yazılır. Bu nedenle 331 Ortaklara Borçlar hesabının borçlandırılacağı ifadesi yanlıştır; hesap genel kurul tarihinde **500.000 ₺ alacaklandırılır**, bir ay sonraki ödemede borçlandırılır (102 alacak).',
         "1 Sıra No'lu MSUGT - 570/540/541/542/331",
     ),
     # düzey 3
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        "Dönem başı özkaynağı 1.200.000 ₺ olan işletmenin dönem içinde toplam kapsamlı geliri 220.000 ₺, ortakların sermaye katkısı 150.000 ₺ ve ortaklara dağıtımı 90.000 ₺'dir. Ayrıca 40.000 ₺ ödenerek işletmenin kendi payları geri alınmıştır.\n\nDönem sonu özkaynak kaç ₺'dir?",
+        "Dönem başı özkaynağı 1.200.000 ₺ olan bir işletmenin dönem içindeki özkaynak hareketleri aşağıdaki gibidir:\n\n| Hareket | Tutar (₺) |\n|---|---|\n| Dönem net kârı | 190.000 |\n| Diğer kapsamlı gelir (MDV yeniden değerleme artışı) | 30.000 |\n| Toplam kapsamlı gelir | 220.000 |\n| Ortakların nakdi sermaye katkısı | 150.000 |\n| Ortaklara kâr payı dağıtımı | 90.000 |\n| Geri alınan kendi payları (nakden) | 40.000 |\n\nBuna göre dönem sonu özkaynak toplamı kaç ₺'dir?",
         {
             'A': '1.440.000',
             'B': '1.400.000',
             'C': '1.480.000',
             'D': '1.350.000',
-            'E': '1.520.000',
+            'E': '1.470.000',
         },
         'A',
-        'Dönem sonu özkaynak = 1.200.000 + 220.000 + 150.000 − 90.000 − 40.000 = **1.440.000 ₺**dir. Toplam kapsamlı gelir ve ortak katkısı artırır; dağıtım ve geri alınan kendi payları azaltır.',
+        'Toplam kapsamlı gelir, dönem net kârı ile diğer kapsamlı geliri zaten içerir (190.000 + 30.000 = 220.000 ₺); bunlar ayrıca eklenmez. Dönem sonu özkaynak = 1.200.000 + 220.000 + 150.000 − 90.000 − 40.000 = **1.440.000 ₺**dir. Ortak katkısı artırır; dağıtım ve geri alınan kendi payları azaltır.',
         'TMS 1, par. 106(d); TMS 32, par. 33',
     ),
     # düzey 2
@@ -793,16 +793,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        "Bir işletmenin dönem başında varlık toplamı 800.000 ₺, yabancı kaynak toplamı 300.000 ₺; dönem sonunda varlık toplamı 1.100.000 ₺, yabancı kaynak toplamı 420.000 ₺'dir. Dönem içinde ortaklar 60.000 ₺ nakit sermaye koymuş, ortaklara 40.000 ₺ kâr payı ödenmiştir. Başka özkaynak hareketi yoktur. Buna göre işletmenin dönem kâr veya zararı aşağıdakilerden hangisidir?",
+        'Bir işletmenin bilanço toplamlarına ilişkin bilgiler aşağıdaki gibidir:\n\n| Kalem | Dönem başı | Dönem sonu |\n|---|---|---|\n| Varlıklar | 800.000 | 1.100.000 |\n| Yabancı kaynaklar | 300.000 | 420.000 |\n\nDönem içinde ortaklar 60.000 ₺ nakit sermaye koymuş, ortaklara 40.000 ₺ kâr payı ödenmiş, ayrıca 50.000 ₺ uzun vadeli banka kredisi kullanılmıştır. Başka özkaynak hareketi yoktur.\n\nBuna göre işletmenin dönem kâr veya zararı aşağıdakilerden hangisidir?',
         {
             'A': '120.000 ₺ kâr',
             'B': '220.000 ₺ kâr',
             'C': '180.000 ₺ kâr',
-            'D': '80.000 ₺ zarar',
+            'D': '110.000 ₺ kâr',
             'E': '160.000 ₺ kâr',
         },
         'E',
-        'Özkaynak: dönem başı 800.000 − 300.000 = 500.000 ₺; dönem sonu 1.100.000 − 420.000 = 680.000 ₺; artış 180.000 ₺. Sermaye katkısı kârdan kaynaklanmadığından düşülür, dağıtılan kâr payı ise eklenir: 180.000 − 60.000 + 40.000 = **160.000 ₺ kâr**.',
+        'Özkaynak: dönem başı 800.000 − 300.000 = 500.000 ₺; dönem sonu 1.100.000 − 420.000 = 680.000 ₺; artış 180.000 ₺. Sermaye katkısı kârdan kaynaklanmadığından düşülür, dağıtılan kâr payı ise eklenir: 180.000 − 60.000 + 40.000 = **160.000 ₺ kâr**. Banka kredisi yabancı kaynakları artırır; dönem sonu yabancı kaynak toplamına zaten yansımıştır ve özkaynak hesabını etkilemez.',
         'Temel bilanço eşitliği; özkaynak hareketleri',
     ),
     # düzey 2

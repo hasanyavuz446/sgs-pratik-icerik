@@ -555,16 +555,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0038': patch(
-        "Bir işletmenin dönem sonu mizanında şu kalanlar vardır: 100 Kasa 12.000 ₺, 101 Alınan Çekler 30.000 ₺, 102 Bankalar 150.000 ₺, 103 Verilen Çekler ve Ödeme Emirleri 25.000 ₺, 108 Diğer Hazır Değerler 8.000 ₺ ve 110 Hisse Senetleri 40.000 ₺. Buna göre bilançoda gösterilecek hazır değerler toplamı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu mizanından alınan bazı hesap kalanları aşağıdaki gibidir:\n\n| Hesap | Kalan (₺) |\n|---|---|\n| 100 Kasa | 12.000 |\n| 101 Alınan Çekler | 30.000 |\n| 102 Bankalar | 150.000 |\n| 103 Verilen Çekler ve Ödeme Emirleri | 25.000 |\n| 108 Diğer Hazır Değerler | 8.000 |\n| 110 Hisse Senetleri | 40.000 |\n| 121 Alacak Senetleri | 35.000 |\n| 300 Banka Kredileri | 60.000 |\n\nBuna göre bilançoda '10 Hazır Değerler' grubunda gösterilecek tutar kaç ₺'dir?",
         {
             'A': '175.000 ₺',
-            'B': '225.000 ₺',
+            'B': '115.000 ₺',
             'C': '145.000 ₺',
             'D': '200.000 ₺',
             'E': '215.000 ₺',
         },
         'A',
-        '12.000 + 30.000 + 150.000 − 25.000 (103 aktifi düzenleyicidir) + 8.000 = **175.000 ₺**. 110 Hisse Senetleri 11 Menkul Kıymetler grubundadır.',
+        '10 Hazır Değerler = 12.000 + 30.000 + 150.000 − 25.000 + 8.000 = **175.000 ₺**. 103 Verilen Çekler ve Ödeme Emirleri aktifi düzenleyicidir ve düşülür. 110 Hisse Senetleri 11 Menkul Kıymetler, 121 Alacak Senetleri 12 Ticari Alacaklar grubundadır; 300 Banka Kredileri kısa vadeli yabancı kaynaktır, hazır değerlerden mahsup edilmez.',
         'THP 10 Hazır Değerler',
     ),
     # düzey 2

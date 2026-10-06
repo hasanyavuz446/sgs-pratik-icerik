@@ -247,16 +247,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Bir işletmenin brüt satışları 700.000 ₺, satıştan iadeleri 30.000 ₺, satış iskontoları 20.000 ₺ ve satışların maliyeti 390.000 ₺'dir. Faaliyet giderleri 120.000 ₺, faiz gelirleri 20.000 ₺, kambiyo kârları 10.000 ₺, reeskont faiz giderleri 5.000 ₺ ve finansman giderleri 35.000 ₺'dir.\n\nİşletmenin olağan kârı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu gelir tablosu hesaplarının kalanları aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Yurt içi satışlar | 700.000 |\n| Satıştan iadeler | 30.000 |\n| Satış iskontoları | 20.000 |\n| Satılan ticari mallar maliyeti | 390.000 |\n| Pazarlama, satış ve dağıtım giderleri | 70.000 |\n| Genel yönetim giderleri | 50.000 |\n| Faiz gelirleri | 20.000 |\n| Kambiyo kârları | 10.000 |\n| Reeskont faiz giderleri | 5.000 |\n| Finansman giderleri | 35.000 |\n| Önceki dönem gelir ve kârları | 15.000 |\n| Dönem kârı vergi karşılığı | 36.250 |\n\nBuna göre işletmenin dönem net kârı kaç ₺'dir?",
         {
-            'A': '140.000',
-            'B': '160.000',
-            'C': '260.000',
-            'D': '135.000',
-            'E': '130.000',
+            'A': '130.000',
+            'B': '145.000',
+            'C': '93.750',
+            'D': '140.000',
+            'E': '108.750',
         },
         'E',
-        "Net satışlar 700.000 − 30.000 − 20.000 = 650.000 ₺; brüt kâr 650.000 − 390.000 = 260.000 ₺ ve faaliyet kârı 260.000 − 120.000 = 140.000 ₺'dir. Olağan kâr 140.000 + 20.000 + 10.000 − 5.000 − 35.000 = **130.000 ₺** olur.",
+        "Net satışlar 650.000 ₺; brüt satış kârı 650.000 − 390.000 = 260.000 ₺; faaliyet kârı 260.000 − 70.000 − 50.000 = 140.000 ₺. Olağan kâr 140.000 + 20.000 + 10.000 − 5.000 − 35.000 = 130.000 ₺; önceki dönem gelir ve kârları (671) olağandışı gelirdir, dönem kârı 130.000 + 15.000 = 145.000 ₺ olur. Dönem net kârı 145.000 − 36.250 = **108.750 ₺**'dir.",
         "1 Sıra No'lu MSUGT - 60/61/62/63/64/65/66 hesap grupları",
     ),
     # düzey 3
@@ -373,16 +373,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        "Aralıklı envanter yöntemini kullanan bir ticaret işletmesinin dönem başı mal mevcudu 70.000 ₺, dönem içi mal alışları 400.000 ₺, alış iadeleri 20.000 ₺ ve alışlara ait taşıma giderleri 10.000 ₺'dir. Dönem sonu mal mevcudu 90.000 ₺'dir.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
+        "Aralıklı envanter yöntemini kullanan bir ticaret işletmesinin dönem bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı ticari mal | 70.000 |\n| Dönem içi mal alışları | 400.000 |\n| Alış iadeleri | 20.000 |\n| Alış iskontoları | 6.000 |\n| Alışlara ait taşıma giderleri | 10.000 |\n| Satışlara ait nakliye giderleri | 12.000 |\n| Satıştan iadeler | 15.000 |\n| Dönem sonu ticari mal (sayım) | 90.000 |\n\nBuna göre satılan ticari mallar maliyeti kaç ₺'dir?",
         {
-            'A': '390.000',
-            'B': '460.000',
-            'C': '410.000',
-            'D': '350.000',
-            'E': '370.000',
+            'A': '384.000',
+            'B': '454.000',
+            'C': '354.000',
+            'D': '370.000',
+            'E': '364.000',
         },
         'E',
-        "Net alışlar = 400.000 − 20.000 + 10.000 = 390.000 ₺'dir. Satılan ticari mallar maliyeti = 70.000 + 390.000 − 90.000 = **370.000 ₺** olarak hesaplanır.",
+        "Net alışlar = 400.000 − 20.000 − 6.000 + 10.000 = 384.000 ₺'dir. Satılan ticari mallar maliyeti = 70.000 + 384.000 − 90.000 = **364.000 ₺** olur. Satışlara ait nakliye 760 hesabında faaliyet gideridir; satıştan iadeler ise net satışları düzeltir, maliyete girmez.",
         "1 Sıra No'lu MSUGT - 153/621; aralıklı envanter maliyet akışı",
     ),
     # düzey 3
@@ -569,16 +569,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0039': patch(
-        "Aralıklı envanter yöntemini kullanan bir ticaret işletmesinin dönem başı mal mevcudu 100.000 ₺, dönem içi net alışları 500.000 ₺, dönem sonu mal mevcudu 150.000 ₺, net satışları 800.000 ₺ ve faaliyet giderleri 120.000 ₺'dir. Buna göre faaliyet kârı kaç ₺'dir?",
+        "Aralıklı envanter yöntemini kullanan bir ticaret işletmesinin dönem bilgileri aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Dönem başı ticari mal | 100.000 |\n| Net alışlar | 500.000 |\n| Dönem sonu ticari mal | 150.000 |\n| Net satışlar | 800.000 |\n| Pazarlama, satış ve dağıtım giderleri | 70.000 |\n| Genel yönetim giderleri | 50.000 |\n| Faiz gelirleri | 14.000 |\n| Finansman giderleri | 22.000 |\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
             'A': '350.000 ₺',
             'B': '80.000 ₺',
-            'C': '110.000 ₺',
+            'C': '222.000 ₺',
             'D': '230.000 ₺',
             'E': '330.000 ₺',
         },
         'D',
-        'SMM = 100.000 + 500.000 − 150.000 = 450.000 ₺; brüt satış kârı 350.000 ₺; faaliyet kârı 350.000 − 120.000 = **230.000 ₺**.',
+        'SMM = 100.000 + 500.000 − 150.000 = 450.000 ₺; brüt satış kârı 800.000 − 450.000 = 350.000 ₺; faaliyet kârı 350.000 − 70.000 − 50.000 = **230.000 ₺**. Faiz gelirleri (642) ve finansman giderleri (660) faaliyet kârından sonra yer alır.',
         'Aralıklı envanter; kâr kademeleri',
     ),
     # düzey 3
@@ -653,16 +653,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0045': patch(
-        "Bir işletmenin brüt satışları 500.000 ₺, satıştan iadeleri 20.000 ₺, satış iskontoları 10.000 ₺ ve satışların maliyeti 300.000 ₺'dir. Pazarlama, satış ve dağıtım giderleri 60.000 ₺; genel yönetim giderleri 40.000 ₺'dir.\n\nİşletmenin faaliyet kârı kaç ₺'dir?",
+        "Bir ticaret işletmesinin dönem sonu gelir tablosu hesaplarının kalanları aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Yurt içi satışlar | 500.000 |\n| Satıştan iadeler | 20.000 |\n| Satış iskontoları | 10.000 |\n| Satılan ticari mallar maliyeti | 300.000 |\n| Pazarlama, satış ve dağıtım giderleri | 60.000 |\n| Genel yönetim giderleri | 40.000 |\n| Faiz gelirleri | 12.000 |\n| Komisyon gelirleri | 9.000 |\n| Finansman giderleri | 18.000 |\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
             'A': '40.000',
             'B': '70.000',
             'C': '170.000',
-            'D': '100.000',
-            'E': '30.000',
+            'D': '52.000',
+            'E': '73.000',
         },
         'B',
-        "Net satışlar 500.000 − 20.000 − 10.000 = 470.000 ₺; brüt satış kârı 470.000 − 300.000 = 170.000 ₺'dir. Faaliyet kârı 170.000 − 60.000 − 40.000 = **70.000 ₺** olur.",
+        "Net satışlar 500.000 − 20.000 − 10.000 = 470.000 ₺; brüt satış kârı 470.000 − 300.000 = 170.000 ₺'dir. Faaliyet kârı 170.000 − 60.000 − 40.000 = **70.000 ₺** olur. Faiz ve komisyon gelirleri diğer faaliyetlerden olağan gelir (64), finansman giderleri 66 grubundadır; faaliyet kârından sonra dikkate alınır ve olağan kârı 73.000 ₺ yapar. Finansman giderini faaliyet gideri sayan, faaliyet kârını 52.000 ₺ bulur.",
         "1 Sıra No'lu MSUGT - Net satışlardan faaliyet kârına geçiş",
     ),
     # düzey 2
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        "Faaliyet kârı 120.000 ₺ olan işletmenin diğer faaliyetlerden olağan gelirleri 30.000 ₺, diğer faaliyetlerden olağan giderleri 10.000 ₺ ve finansman giderleri 25.000 ₺'dir. Ayrıca 8.000 ₺ olağandışı gelir ve 3.000 ₺ olağandışı gider bulunmaktadır.\n\nİşletmenin olağan kârı ile vergi öncesi dönem kârı sırasıyla kaç ₺'dir?",
+        "Faaliyet kârı 120.000 ₺ olan bir işletmenin gelir tablosunun alt bölümüne ilişkin bilgiler aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Diğer faaliyetlerden olağan gelir ve kârlar | 30.000 |\n| Diğer faaliyetlerden olağan gider ve zararlar | 10.000 |\n| Finansman giderleri | 25.000 |\n| Olağandışı gelir ve kârlar | 8.000 |\n| Olağandışı gider ve zararlar | 3.000 |\n| Dönem kârı vergi ve diğer yasal yükümlülük karşılıkları | 24.000 |\n\nBuna göre işletmenin olağan kârı ile dönem kârı (vergi öncesi) sırasıyla kaç ₺'dir?",
         {
-            'A': '115.000 ve 112.000',
+            'A': '115.000 ve 96.000',
             'B': '145.000 ve 150.000',
             'C': '120.000 ve 115.000',
             'D': '140.000 ve 145.000',
             'E': '115.000 ve 120.000',
         },
         'E',
-        "Olağan kâr = 120.000 + 30.000 − 10.000 − 25.000 = **115.000 ₺**'dir. Vergi öncesi dönem kârı = 115.000 + 8.000 − 3.000 = **120.000 ₺** olur.",
+        "Olağan kâr = 120.000 + 30.000 − 10.000 − 25.000 = **115.000 ₺**'dir. Dönem kârı (vergi öncesi) = 115.000 + 8.000 − 3.000 = **120.000 ₺** olur. 24.000 ₺ vergi karşılığı bu tutardan sonra düşülür ve dönem net kârını 96.000 ₺ yapar.",
         "1 Sıra No'lu MSUGT - Gelir tablosu kâr basamakları",
     ),
     # düzey 3

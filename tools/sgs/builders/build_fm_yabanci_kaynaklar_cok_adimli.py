@@ -807,7 +807,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0056': patch(
-        "Yönetim personelinin aylık brüt ücreti 60.000 ₺'dir. Ücretten SGK işçi payı 8.400 ₺, işsizlik sigortası işçi payı 600 ₺, gelir vergisi 5.000 ₺ ve damga vergisi 400 ₺ kesilmiştir. İşveren SGK payı 9.300 ₺, işsizlik sigortası işveren payı 1.200 ₺'dir. Buna göre ücret tahakkuk kaydında 361 Ödenecek Sosyal Güvenlik Kesintileri hesabına alacak yazılacak tutar kaç ₺'dir?",
+        "Yönetim personelinin aylık ücret bordrosuna ilişkin bilgiler aşağıdaki gibidir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| Brüt ücret | 60.000 |\n| SGK işçi payı | 8.400 |\n| İşsizlik sigortası işçi payı | 600 |\n| Gelir vergisi | 5.000 |\n| Damga vergisi | 400 |\n| Personel avansı mahsubu | 3.000 |\n| SGK işveren payı | 9.300 |\n| İşsizlik sigortası işveren payı | 1.200 |\n\nBuna göre ücret tahakkuk kaydında '361 Ödenecek Sosyal Güvenlik Kesintileri' hesabına alacak yazılacak tutar kaç ₺'dir?",
         {
             'A': '9.000 ₺',
             'B': '19.500 ₺',
@@ -816,7 +816,7 @@ _PATCHES = {
             'E': '24.900 ₺',
         },
         'B',
-        "361'e işçi ve işveren payları birlikte yazılır: 8.400 + 600 + 9.300 + 1.200 = **19.500 ₺**. Gelir ve damga vergisi (5.400 ₺) 360'a, net ücret (45.600 ₺) 335'e yazılır; işveren payları ayrıca 770'e gider olarak kaydedilir.",
+        "361'e işçi ve işveren payları birlikte yazılır: 8.400 + 600 + 9.300 + 1.200 = **19.500 ₺**. Gelir ve damga vergisi (5.400 ₺) 360'a yazılır; personel avansı 196 hesabın alacağına mahsup edilir ve 335'e yazılan net ücret 60.000 − 9.000 − 5.400 − 3.000 = 42.600 ₺ olur. İşveren payları ayrıca 770'e gider olarak kaydedilir.",
         'THP 335, 360, 361, 770',
     ),
     # düzey 3
@@ -849,16 +849,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0059': patch(
-        "Bir işletmenin dönem sonu mizanında şu kalanlar vardır: 300 Banka Kredileri 150.000 ₺, 320 Satıcılar 80.000 ₺, 321 Borç Senetleri 60.000 ₺, 322 Borç Senetleri Reeskontu 5.000 ₺, 340 Alınan Sipariş Avansları 40.000 ₺, 360 Ödenecek Vergi ve Fonlar 20.000 ₺ ve 400 Banka Kredileri 300.000 ₺. Buna göre bilançodaki kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu mizanından alınan bazı hesap kalanları aşağıdaki gibidir:\n\n| Hesap | Kalan (₺) |\n|---|---|\n| 300 Banka Kredileri | 150.000 |\n| 303 Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri | 70.000 |\n| 320 Satıcılar | 80.000 |\n| 321 Borç Senetleri | 60.000 |\n| 322 Borç Senetleri Reeskontu | 5.000 |\n| 340 Alınan Sipariş Avansları | 40.000 |\n| 360 Ödenecek Vergi ve Fonlar | 20.000 |\n| 159 Verilen Sipariş Avansları | 25.000 |\n| 400 Banka Kredileri | 300.000 |\n\nBuna göre bilançodaki kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
         {
-            'A': '495.000 ₺',
-            'B': '355.000 ₺',
-            'C': '345.000 ₺',
-            'D': '385.000 ₺',
-            'E': '645.000 ₺',
+            'A': '425.000 ₺',
+            'B': '375.000 ₺',
+            'C': '415.000 ₺',
+            'D': '345.000 ₺',
+            'E': '715.000 ₺',
         },
         'C',
-        '150.000 + 80.000 + 60.000 − 5.000 (322 pasifi düzenleyicidir) + 40.000 + 20.000 = **345.000 ₺**. 400 uzun vadelidir.',
+        '150.000 + 70.000 + 80.000 + 60.000 − 5.000 (322 pasifi düzenleyicidir) + 40.000 + 20.000 = **415.000 ₺**. 303, uzun vadeli kredinin bir yıl içinde ödenecek kısmıdır ve kısa vadededir. 400 uzun vadeli yabancı kaynaktır; 159 Verilen Sipariş Avansları ise stoklar grubunda bir varlıktır.',
         'THP 3 Kısa Vadeli Yabancı Kaynaklar',
     ),
     # düzey 2
