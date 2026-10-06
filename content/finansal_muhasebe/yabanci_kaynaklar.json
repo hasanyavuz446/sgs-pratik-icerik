@@ -91,16 +91,16 @@
     "id": "finmuh-yk-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "İşletme 1 Ekim'de yıllık %24 faizli 400.000 ₺ banka kredisi kullanmıştır. Faiz vade sonunda ödenecektir. 31 Aralık'ta yapılacak üç aylık faiz tahakkuku kaydı hangisidir?",
+    "stem": "İşletmenin iki banka kredisi bulunmaktadır. A kredisi 1 Ekim'de kullanılan, yıllık %24 basit faizli 400.000 ₺'lik kredidir; faiz vade sonunda ödenecektir. B kredisi 1 Haziran'da kullanılan, yıllık %30 basit faizli 300.000 ₺'lik kredidir; faizi altı ayda bir ödenmekte olup ilk altı aylık faiz 1 Aralık'ta ödenmiştir. İşletme 7/A seçeneğini uygulamaktadır.\n\n31 Aralık'ta yapılacak faiz tahakkuku kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "780 Finansman Giderleri 96.000 borç; 381 Gider Tahakkukları 96.000 alacak",
-      "B": "381 Gider Tahakkukları 24.000 borç; 780 Finansman Giderleri 24.000 alacak",
-      "C": "780 Finansman Giderleri 24.000 borç; 381 Gider Tahakkukları 24.000 alacak",
-      "D": "180 Gelecek Aylara Ait Giderler 24.000 borç; 102 Bankalar 24.000 alacak",
-      "E": "300 Banka Kredileri 24.000 borç; 642 Faiz Gelirleri 24.000 alacak"
+      "A": "780 Finansman Giderleri 24.000 ₺ borç / 381 Gider Tahakkukları 24.000 ₺ alacak",
+      "B": "780 Finansman Giderleri 61.500 ₺ borç / 381 Gider Tahakkukları 61.500 ₺ alacak",
+      "C": "780 Finansman Giderleri 31.500 ₺ borç / 381 Gider Tahakkukları 31.500 ₺ alacak",
+      "D": "381 Gider Tahakkukları 31.500 ₺ borç / 780 Finansman Giderleri 31.500 ₺ alacak",
+      "E": "780 Finansman Giderleri 31.500 ₺ borç / 300 Banka Kredileri 31.500 ₺ alacak"
     },
     "answer": "C",
-    "solution": "Üç aylık faiz 400.000 × %24 × 3/12 = **24.000 ₺**dir. Faiz dönemin gideri olduğundan **780 Finansman Giderleri** borç; henüz ödenmediği için **381 Gider Tahakkukları** alacak çalışır.",
+    "solution": "A kredisi: 400.000 × %24 × 3/12 = 24.000 ₺ (Ekim–Aralık). B kredisinin 1 Aralık'a kadarki faizi ödenmiştir; tahakkuk edecek kısım yalnız Aralık ayıdır: 300.000 × %30 × 1/12 = 7.500 ₺. Toplam 31.500 ₺: 780 borç / 381 Gider Tahakkukları alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -575,16 +575,16 @@
     "id": "finmuh-yk-gen-0027",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "İşletme, 320 Satıcılar hesabındaki 40.000 ₺'lik borcunu banka havalesiyle ödemiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin bir satıcıya 40.000 ₺ senetsiz borcu vardır. İşletme 5 Mart'ta borcun 25.000 ₺'sini banka havalesiyle ödemiş, banka 20 ₺ havale masrafını ayrıca hesaptan kesmiştir. Kalan 15.000 ₺ için aynı gün kendi banka hesabına bağlı bir çek düzenleyip satıcıya vermiştir; işletme verdiği çekleri 103 hesabında izlemektedir. Satıcı çeki 20 Mart'ta bankaya ibraz etmiş ve çek işletmenin hesabından ödenmiştir.\n\nBu işlemlerin kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "153 Ticari Mallar (borç) 40.000 / 320 Satıcılar (alacak) 40.000",
-      "B": "320 Satıcılar (borç) 40.000 / 600 Yurt İçi Satışlar (alacak) 40.000",
-      "C": "320 Satıcılar (borç) 40.000 / 102 Bankalar (alacak) 40.000",
-      "D": "780 Finansman Giderleri (borç) 40.000 / 102 Bankalar (alacak) 40.000",
-      "E": "102 Bankalar (borç) 40.000 / 320 Satıcılar (alacak) 40.000"
+      "A": "320 Satıcılar hesabı 5 Mart'ta 40.020 ₺ borçlandırılır",
+      "B": "102 Bankalar hesabı 5 Mart'ta 40.000 ₺ alacaklandırılır",
+      "C": "103 Verilen Çekler hesabı 20 Mart'ta 15.000 ₺ borçlandırılır",
+      "D": "101 Alınan Çekler hesabı 5 Mart'ta 15.000 ₺ alacaklandırılır",
+      "E": "653 Komisyon Giderleri hesabı 20 ₺ alacaklandırılır"
     },
     "answer": "C",
-    "solution": "Borç ödendiğinde borç hesabı azalır → **320 Satıcılar (borç) 40.000**; banka çıkışı → **102 Bankalar (alacak) 40.000**.",
+    "solution": "5 Mart: 320 Satıcılar 40.000 ₺ ve 653 Komisyon Giderleri 20 ₺ borç / 102 Bankalar 25.020 ₺ ve 103 Verilen Çekler ve Ödeme Emirleri 15.000 ₺ alacak. 20 Mart: çek ödendiğinde 103 Verilen Çekler ve Ödeme Emirleri 15.000 ₺ borç / 102 Bankalar 15.000 ₺ alacak. İşletmenin kendi çeki 101'den değil 103'ten izlenir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -729,16 +729,16 @@
     "id": "finmuh-yk-gen-0034",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "İşletmenin bilançosunda 300 Banka Kredileri 150.000 ₺, 320 Satıcılar 80.000 ₺ ve 360 Ödenecek Vergi ve Fonlar 20.000 ₺ olarak yer almaktadır. Başka borç bulunmadığına göre işletmenin toplam yabancı kaynağı (borcu) kaç ₺'dir?",
+    "stem": "Bir işletmenin dönem sonu kesin mizanından alınan kalanlar şöyledir: 300 Banka Kredileri 150.000 ₺, 320 Satıcılar 80.000 ₺, 321 Borç Senetleri 40.000 ₺, 322 Borç Senetleri Reeskontu 2.000 ₺, 340 Alınan Sipariş Avansları 30.000 ₺, 360 Ödenecek Vergi ve Fonlar 20.000 ₺, 400 Banka Kredileri 300.000 ₺, 405 Çıkarılmış Tahviller 500.000 ₺, 426 Alınan Depozito ve Teminatlar 60.000 ₺, 159 Verilen Sipariş Avansları 25.000 ₺, 501 Ödenmemiş Sermaye 50.000 ₺.\n\nBuna göre işletmenin toplam yabancı kaynakları kaç ₺'dir?",
     "options": {
-      "A": "250.000",
-      "B": "100.000",
-      "C": "50.000",
-      "D": "230.000",
-      "E": "150.000"
+      "A": "1.178.000",
+      "B": "1.203.000",
+      "C": "1.180.000",
+      "D": "1.128.000",
+      "E": "1.228.000"
     },
     "answer": "A",
-    "solution": "Toplam yabancı kaynak = 150.000 + 80.000 + 20.000 = **250.000 ₺** (üç hesap da borç/yabancı kaynak niteliğindedir).",
+    "solution": "Yabancı kaynaklar: 300 150.000 + 320 80.000 + 321 40.000 − 322 2.000 + 340 30.000 + 360 20.000 + 400 300.000 + 405 500.000 + 426 60.000 = 1.178.000 ₺. 322 borç senetlerini düzenleyen (borç kalanlı) hesaptır ve düşülür. 159 Verilen Sipariş Avansları dönen varlık, 501 Ödenmemiş Sermaye özkaynakları düzenleyen hesaptır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -993,16 +993,16 @@
     "id": "finmuh-yk-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "Bir dönemde işletmenin hesapladığı KDV (391 Hesaplanan KDV) 50.000 ₺, indirilecek KDV'si (191 İndirilecek KDV) 30.000 ₺'dir. Dönem sonunda mahsuplaşma sonucu vergi dairesine ödenecek KDV kaç ₺'dir?",
+    "stem": "7/A seçeneğini uygulayan bir anonim şirket 1 Ocak'ta 1.000.000 ₺ nominal değerli, beş yıl vadeli ve yıllık %20 kuponlu tahvilleri 950.000 ₺'ye ihraç etmiştir. Kupon faizi her yıl sonunda ödenmektedir. İhraç farkı vade boyunca eşit tutarlarla itfa edilmekte ve '408 Menkul Kıymetler İhraç Farkları' hesabında izlenmektedir.\n\nBuna göre ilk yılın sonunda finansman gideri olarak kaydedilecek toplam tutar kaç ₺'dir?",
     "options": {
-      "A": "50.000",
-      "B": "30.000",
-      "C": "80.000",
-      "D": "20.000",
-      "E": "0"
+      "A": "200.000",
+      "B": "190.000",
+      "C": "205.000",
+      "D": "210.000",
+      "E": "180.000"
     },
     "answer": "D",
-    "solution": "Ödenecek KDV = Hesaplanan KDV − İndirilecek KDV = 50.000 − 30.000 = **20.000 ₺** → 360 Ödenecek Vergi ve Fonlar'a aktarılır.",
+    "solution": "Kupon faizi = 1.000.000 × %20 = 200.000 ₺ (780 borç / 102 alacak). İhraç farkı 1.000.000 − 950.000 = 50.000 ₺, beş yılda eşit itfa: yıllık 10.000 ₺ (780 borç / 408 alacak). Toplam finansman gideri 210.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -1037,16 +1037,16 @@
     "id": "finmuh-yk-gen-0048",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "Bir personelin aylık brüt ücreti 30.000 ₺'dir. Bu ücretten toplam 7.500 ₺ yasal kesinti (SGK işçi payı + gelir vergisi + damga vb.) yapılmıştır. Personele ödenecek net ücret (335 Personele Borçlar) kaç ₺'dir?",
+    "stem": "Bir personelin aylık brüt ücreti 60.000 ₺'dir. Ücretten SGK işçi payı 8.400 ₺, işsizlik sigortası işçi payı 600 ₺, gelir vergisi 6.900 ₺ ve damga vergisi 450 ₺ kesilmiştir. İşveren SGK payı 9.300 ₺, işsizlik sigortası işveren payı 1.200 ₺'dir. Personele ay ortasında ücretinden düşülmek üzere 5.000 ₺ avans verilmiş ve ilgili avans hesabında izlenmiştir.\n\nBuna göre ay sonunda personelin banka hesabına ödenecek tutar kaç ₺'dir?",
     "options": {
-      "A": "15.000",
-      "B": "37.500",
-      "C": "7.500",
-      "D": "22.500",
-      "E": "30.000"
+      "A": "43.650",
+      "B": "28.150",
+      "C": "33.650",
+      "D": "38.650",
+      "E": "39.100"
     },
     "answer": "D",
-    "solution": "Net ücret = Brüt − Yasal kesintiler = 30.000 − 7.500 = **22.500 ₺** → 335 Personele Borçlar. Kesintiler ise 360 ve 361'de izlenir.",
+    "solution": "İşçiden yapılan kesintiler 8.400 + 600 + 6.900 + 450 = 16.350 ₺; net ücret 60.000 − 16.350 = 43.650 ₺. Daha önce verilen 5.000 ₺ avans mahsup edilir: ödenecek tutar 38.650 ₺. İşveren payları (10.500 ₺) işletmenin gideridir; personelin net ücretinden düşülmez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -1125,16 +1125,16 @@
     "id": "finmuh-yk-gen-0052",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "Bir personelin aylık brüt ücreti 40.000 ₺'dir. Toplam yasal kesintiler 10.000 ₺ olduğuna göre, '335 Personele Borçlar' hesabına yazılacak net ücret kaç ₺'dir?",
+    "stem": "İşletmenin '321 Borç Senetleri' hesabında izlenen 80.000 ₺'lik bonosu vadesinde ödenememiştir. Alacaklıyla yapılan anlaşma uyarınca senet on beş gün sonra, gecikme süresi için hesaplanan 1.200 ₺ faizle birlikte bankadan ödenmiş ve senet geri alınmıştır. İşletme 7/A seçeneğini uygulamaktadır.\n\nÖdeme kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "20.000",
-      "B": "10.000",
-      "C": "40.000",
-      "D": "50.000",
-      "E": "30.000"
+      "A": "321 Borç Senetleri hesabı 81.200 ₺ borçlandırılır",
+      "B": "102 Bankalar hesabı 80.000 ₺ alacaklandırılır",
+      "C": "656 Kambiyo Zararları hesabı gecikme için 1.200 ₺ borçlandırılır",
+      "D": "320 Satıcılar hesabı 80.000 ₺ borçlandırılır",
+      "E": "780 Finansman Giderleri hesabı 1.200 ₺ borçlandırılır"
     },
     "answer": "E",
-    "solution": "Net ücret = Brüt − Yasal kesintiler = 40.000 − 10.000 = **30.000 ₺** → 335 Personele Borçlar.",
+    "solution": "Senet nominal değeriyle kapanır: 321 Borç Senetleri 80.000 ₺ borç. Gecikme için ödenen faiz bir finansman maliyetidir: 780 Finansman Giderleri 1.200 ₺ borç. Bankadan çıkan toplam 81.200 ₺ (102 alacak).",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
