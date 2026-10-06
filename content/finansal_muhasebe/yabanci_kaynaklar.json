@@ -729,16 +729,16 @@
     "id": "finmuh-yk-gen-0034",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "Bir işletmenin dönem sonu kesin mizanından alınan kalanlar şöyledir: 300 Banka Kredileri 150.000 ₺, 320 Satıcılar 80.000 ₺, 321 Borç Senetleri 40.000 ₺, 322 Borç Senetleri Reeskontu 2.000 ₺, 340 Alınan Sipariş Avansları 30.000 ₺, 360 Ödenecek Vergi ve Fonlar 20.000 ₺, 400 Banka Kredileri 300.000 ₺, 405 Çıkarılmış Tahviller 500.000 ₺, 426 Alınan Depozito ve Teminatlar 60.000 ₺, 159 Verilen Sipariş Avansları 25.000 ₺, 501 Ödenmemiş Sermaye 50.000 ₺.\n\nBuna göre işletmenin toplam yabancı kaynakları kaç ₺'dir?",
+    "stem": "Bir anonim şirketin dönem sonu bilançosunda aktif toplamı 3.150.000 ₺'dir. Özkaynak kalemleri şunlardır: 500 Sermaye 1.500.000 ₺, 501 Ödenmemiş Sermaye 200.000 ₺, 540 Yasal Yedekler 120.000 ₺, 580 Geçmiş Yıllar Zararları 70.000 ₺ ve 590 Dönem Net Kârı 230.000 ₺. Uzun vadeli yabancı kaynakların toplamı 900.000 ₺'dir.\n\nBuna göre şirketin kısa vadeli yabancı kaynakları toplamı kaç ₺'dir?",
     "options": {
-      "A": "1.178.000",
-      "B": "1.203.000",
-      "C": "1.180.000",
-      "D": "1.128.000",
-      "E": "1.228.000"
+      "A": "670.000",
+      "B": "470.000",
+      "C": "530.000",
+      "D": "900.000",
+      "E": "1.570.000"
     },
     "answer": "A",
-    "solution": "Yabancı kaynaklar: 300 150.000 + 320 80.000 + 321 40.000 − 322 2.000 + 340 30.000 + 360 20.000 + 400 300.000 + 405 500.000 + 426 60.000 = 1.178.000 ₺. 322 borç senetlerini düzenleyen (borç kalanlı) hesaptır ve düşülür. 159 Verilen Sipariş Avansları dönen varlık, 501 Ödenmemiş Sermaye özkaynakları düzenleyen hesaptır.",
+    "solution": "Özkaynak = 1.500.000 − 200.000 + 120.000 − 70.000 + 230.000 = 1.580.000 ₺ (501 ve 580 özkaynakları azaltır). Toplam yabancı kaynak = 3.150.000 − 1.580.000 = 1.570.000 ₺. Kısa vadeli yabancı kaynaklar = 1.570.000 − 900.000 = 670.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -1037,16 +1037,16 @@
     "id": "finmuh-yk-gen-0048",
     "ders": "finansal_muhasebe",
     "konu": "yabanci_kaynaklar",
-    "stem": "Bir personelin aylık brüt ücreti 60.000 ₺'dir. Ücretten SGK işçi payı 8.400 ₺, işsizlik sigortası işçi payı 600 ₺, gelir vergisi 6.900 ₺ ve damga vergisi 450 ₺ kesilmiştir. İşveren SGK payı 9.300 ₺, işsizlik sigortası işveren payı 1.200 ₺'dir. Personele ay ortasında ücretinden düşülmek üzere 5.000 ₺ avans verilmiş ve ilgili avans hesabında izlenmiştir.\n\nBuna göre ay sonunda personelin banka hesabına ödenecek tutar kaç ₺'dir?",
+    "stem": "Satış bölümünde çalışan bir personelin aylık brüt ücreti 75.000 ₺'dir. Ücretten SGK işçi payı 10.500 ₺, işsizlik sigortası işçi payı 750 ₺, gelir vergisi 9.200 ₺ ve damga vergisi 570 ₺ kesilmiştir. İşveren SGK payı 11.625 ₺, işsizlik sigortası işveren payı 1.500 ₺'dir. Personele ay ortasında ücretinden düşülmek üzere 6.000 ₺ avans verilmiş ve ilgili avans hesabında izlenmiştir.\n\nBuna göre ay sonunda personelin banka hesabına ödenecek tutar kaç ₺'dir?",
     "options": {
-      "A": "43.650",
-      "B": "28.150",
-      "C": "33.650",
-      "D": "38.650",
-      "E": "39.100"
+      "A": "53.980",
+      "B": "34.855",
+      "C": "41.980",
+      "D": "47.980",
+      "E": "48.550"
     },
     "answer": "D",
-    "solution": "İşçiden yapılan kesintiler 8.400 + 600 + 6.900 + 450 = 16.350 ₺; net ücret 60.000 − 16.350 = 43.650 ₺. Daha önce verilen 5.000 ₺ avans mahsup edilir: ödenecek tutar 38.650 ₺. İşveren payları (10.500 ₺) işletmenin gideridir; personelin net ücretinden düşülmez.",
+    "solution": "İşçiden yapılan kesintiler 10.500 + 750 + 9.200 + 570 = 21.020 ₺; net ücret 75.000 − 21.020 = 53.980 ₺. Daha önce verilen 6.000 ₺ avans mahsup edilir: ödenecek tutar 47.980 ₺. İşveren payları (13.125 ₺) işletmenin gideridir; personelin net ücretinden düşülmez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

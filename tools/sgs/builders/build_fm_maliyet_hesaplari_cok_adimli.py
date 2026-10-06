@@ -387,16 +387,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        "7/A seçeneğini uygulayan bir üretim işletmesinde dönem sonunda gider hesaplarının borç kalanları şöyledir: 710 Direkt İlk Madde ve Malzeme Giderleri 300.000 ₺, 720 Direkt İşçilik Giderleri 180.000 ₺, 730 Genel Üretim Giderleri 120.000 ₺, 760 Pazarlama Satış ve Dağıtım Giderleri 50.000 ₺, 770 Genel Yönetim Giderleri 70.000 ₺, 780 Finansman Giderleri 40.000 ₺. Dönem başında yarı mamul ve mamul stoku yoktur; dönemde başlanan üretimin tamamı tamamlanmış ve tamamlanan mamullerin %80'i satılmıştır.\n\nBuna göre yansıtma ve aktarma kayıtlarından sonra '620 Satılan Mamuller Maliyeti' hesabının kalanı kaç ₺'dir?",
+        "7/A seçeneğini uygulayan bir üretim işletmesinde dönem sonunda gider hesaplarının borç kalanları şöyledir: 710 Direkt İlk Madde ve Malzeme Giderleri 360.000 ₺, 720 Direkt İşçilik Giderleri 210.000 ₺, 730 Genel Üretim Giderleri 150.000 ₺, 760 Pazarlama Satış ve Dağıtım Giderleri 45.000 ₺, 770 Genel Yönetim Giderleri 65.000 ₺, 780 Finansman Giderleri 35.000 ₺. Dönem başında yarı mamul ve mamul stoku yoktur; dönemde başlanan üretimin tamamı tamamlanmış ve tamamlanan mamullerin %80'i satılmıştır.\n\nBuna göre yansıtma ve aktarma kayıtlarından sonra '620 Satılan Mamuller Maliyeti' hesabının kalanı kaç ₺'dir?",
         {
-            'A': '480.000',
-            'B': '600.000',
-            'C': '576.000',
-            'D': '520.000',
-            'E': '384.000',
+            'A': '576.000',
+            'B': '720.000',
+            'C': '456.000',
+            'D': '624.000',
+            'E': '672.000',
         },
         'A',
-        "Üretim maliyeti yalnız 710, 720 ve 730'dan oluşur: 300.000 + 180.000 + 120.000 = 600.000 ₺ (151'e yansıtılır, tamamlanınca 152'ye aktarılır). Satılan %80: 600.000 × 0,80 = 480.000 ₺ (620 borç / 152 alacak). 760, 770 ve 780 dönem gideridir; 631, 632 ve 66 grubuna yansıtılır.",
+        "Üretim maliyeti yalnız 710, 720 ve 730'dan oluşur: 360.000 + 210.000 + 150.000 = 720.000 ₺ (151'e yansıtılır, tamamlanınca 152'ye aktarılır). Satılan %80: 720.000 × 0,80 = 576.000 ₺ (620 borç / 152 alacak). 760, 770 ve 780 dönem gideridir; 631, 632 ve 66 grubuna yansıtılır.",
         "1 Sıra No'lu MSUGT - 770/771 → 632",
     ),
     # düzey 2

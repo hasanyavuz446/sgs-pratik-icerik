@@ -443,16 +443,16 @@
     "id": "finmuh-hazirdeg-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletmenin kasasında 2.000 USD bulunmakta olup bu tutar kayıtlara 30 ₺/USD kurundan alınmıştır. Dönem sonu değerleme günündeki kur 33 ₺/USD'dir.\n\nBuna göre yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
+    "stem": "Bir işletmenin dönem sonu kesin mizanından alınan kalanlar şöyledir: 100 Kasa 12.000 ₺, 101 Alınan Çekler 30.000 ₺, 102 Bankalar 180.000 ₺ (80.000 ₺ vadesiz, 100.000 ₺ üç ay vadeli mevduat), 103 Verilen Çekler ve Ödeme Emirleri 25.000 ₺, 108 Diğer Hazır Değerler 15.000 ₺, 110 Hisse Senetleri 20.000 ₺, 121 Alacak Senetleri 50.000 ₺, 196 Personel Avansları 4.000 ₺.\n\nBuna göre bilançoda '10 Hazır Değerler' grubunun net tutarı kaç ₺'dir?",
     "options": {
-      "A": "646 Kambiyo Kârları (borç) 6.000 / 100 Kasa (alacak) 6.000",
-      "B": "100 Kasa (borç) 6.000 / 646 Kambiyo Kârları (alacak) 6.000",
-      "C": "100 Kasa (borç) 3.000 / 642 Faiz Gelirleri (alacak) 3.000",
-      "D": "100 Kasa (borç) 66.000 / 646 Kambiyo Kârları (alacak) 66.000",
-      "E": "656 Kambiyo Zararları (borç) 6.000 / 100 Kasa (alacak) 6.000"
+      "A": "237.000",
+      "B": "212.000",
+      "C": "262.000",
+      "D": "112.000",
+      "E": "232.000"
     },
     "answer": "B",
-    "solution": "Kur farkı = 2.000 × (33 − 30) = 2.000 × 3 = **6.000 ₺** lehte. Yabancı para kasası değer kazandığından **100 Kasa (borç) 6.000 / 646 Kambiyo Kârları (alacak) 6.000** kaydı yapılır.",
+    "solution": "Hazır değerler: 100 12.000 + 101 30.000 + 102 180.000 (vadeli mevduat da 102'de izlenir) − 103 25.000 (düzenleyici) + 108 15.000 = 212.000 ₺. 110 Hisse Senetleri menkul kıymetler (11), 121 Alacak Senetleri ticari alacaklar (12), 196 Personel Avansları diğer dönen varlıklar (19) grubundadır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -465,16 +465,16 @@
     "id": "finmuh-hazirdeg-gen-0022",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletmenin kasasında 5.000 USD bulunmakta olup bu tutar 34 ₺/USD kurundan kayıtlıdır. Dönem sonu değerleme kuru 31 ₺/USD'ye gerilemiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletme, yurt dışı seyahatlerde kullanılmak üzere TL vadesiz hesabından bankanın efektif satış kuru olan 37,00 ₺/EUR üzerinden 2.000 EUR efektif satın alarak kasasına koymuştur. Dönem sonuna kadar bu efektif kullanılmamıştır. Dönem sonunda T.C. Merkez Bankası efektif alış kuru 36,00 ₺/EUR'dur.\n\nDönem sonu değerleme kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "100 Kasa (borç) 15.000 / 656 Kambiyo Zararları (alacak) 15.000",
-      "B": "100 Kasa (borç) 15.000 / 646 Kambiyo Kârları (alacak) 15.000",
-      "C": "656 Kambiyo Zararları (borç) 15.000 / 100 Kasa (alacak) 15.000",
-      "D": "780 Finansman Giderleri (borç) 15.000 / 100 Kasa (alacak) 15.000",
-      "E": "656 Kambiyo Zararları (borç) 3.000 / 100 Kasa (alacak) 3.000"
+      "A": "656 Kambiyo Zararları 4.000 ₺ borç / 100 Kasa 4.000 ₺ alacak",
+      "B": "100 Kasa 2.000 ₺ borç / 646 Kambiyo Kârları 2.000 ₺ alacak",
+      "C": "656 Kambiyo Zararları 2.000 ₺ borç / 100 Kasa 2.000 ₺ alacak",
+      "D": "Değerleme farkı doğmaz; kasa 74.000 ₺'de kalır",
+      "E": "656 Kambiyo Zararları 2.000 ₺ borç / 102 Bankalar 2.000 ₺ alacak"
     },
     "answer": "C",
-    "solution": "Kur farkı = 5.000 × (34 − 31) = 5.000 × 3 = **15.000 ₺** aleyhte. Yabancı para kasası değer kaybettiğinden **656 Kambiyo Zararları (borç) 15.000 / 100 Kasa (alacak) 15.000** kaydı yapılır.",
+    "solution": "Efektif, ödenen tutarla (2.000 × 37,00 = 74.000 ₺) kasaya alınır. Dönem sonunda VUK m. 280'e göre MB efektif alış kuruyla değerlenir: 2.000 × 36,00 = 72.000 ₺. Aradaki 2.000 ₺ kambiyo zararıdır: 656 borç / 100 Kasa alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -663,16 +663,16 @@
     "id": "finmuh-hazirdeg-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "hazir_degerler",
-    "stem": "İşletmenin döviz banka hesabında 5.000 USD bulunmakta ve 35 ₺/USD kurundan kayıtlıdır. Değerleme günü kuru 32 ₺/USD'ye gerilemiştir. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme 30,00 ₺/USD kurundan kayıtlı 10.000 USD'yi bankada üç ay vadeli döviz mevduatına yatırmıştır. Vade sonunda banka 150 USD faizi anaparaya ekleyerek 10.150 USD'yi işletmenin vadesiz döviz hesabına aktarmıştır; vade günü kur 32,00 ₺/USD'dir. Faiz tahakkuku yapılmamış, stopaj ihmal edilecektir. Arada bir dönem sonu değerlemesi yapılmamıştır.\n\nVade sonu kaydında 646 Kambiyo Kârları ve 642 Faiz Gelirleri hesaplarına yazılacak tutarlar aşağıdakilerden hangisidir?",
     "options": {
-      "A": "780 Finansman Giderleri (borç) 15.000 / 102 Bankalar (alacak) 15.000",
-      "B": "102 Bankalar (borç) 15.000 / 646 Kambiyo Kârları (alacak) 15.000",
-      "C": "102 Bankalar (borç) 15.000 / 656 Kambiyo Zararları (alacak) 15.000",
-      "D": "656 Kambiyo Zararları (borç) 15.000 / 102 Bankalar (alacak) 15.000",
-      "E": "656 Kambiyo Zararları (borç) 3.000 / 102 Bankalar (alacak) 3.000"
+      "A": "646: 24.800 ₺; 642 hesabı kullanılmaz",
+      "B": "642: 24.800 ₺; 646 hesabı kullanılmaz",
+      "C": "646: 20.000 ₺; 642: 4.500 ₺",
+      "D": "646: 20.000 ₺; 642: 4.800 ₺",
+      "E": "646: 20.300 ₺; 642: 4.500 ₺"
     },
     "answer": "D",
-    "solution": "Kur farkı = 5.000 × (35 − 32) = **15.000 ₺ aleyhte**. Döviz banka hesabı değer kaybettiğinden: **656 Kambiyo Zararları (borç) 15.000 / 102 Bankalar (alacak) 15.000**.",
+    "solution": "Anapara 30,00'dan kayıtlıdır; vade günü değeri 10.000 × 32,00 = 320.000 ₺; fark 20.000 ₺ kambiyo kârı (646). Faiz geliri tahsil günü kuruyla ölçülür: 150 × 32,00 = 4.800 ₺ (642). Kayıt: 102 (vadesiz döviz) 324.800 ₺ borç / 102 (vadeli döviz) 300.000 ₺, 646 20.000 ₺ ve 642 4.800 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

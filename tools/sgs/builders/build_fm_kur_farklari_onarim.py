@@ -51,16 +51,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        'Döviz cinsinden bir ALACAĞI bulunan işletmede, işlem tarihinden tahsil/değerleme tarihine kadar döviz kuru YÜKSELMİŞSE oluşan kur farkının işletme açısından niteliği ve hesabı aşağıdakilerden hangisidir?',
+        "İşletmenin kasasında 30,00 ₺/USD kurundan kayıtlı 5.000 USD efektif bulunmaktadır. İşletme bu efektifin tamamıyla, daha önce 31,00 ₺/USD kurundan kaydettiği 5.000 USD tutarındaki satıcı borcunu ödemiştir. Ödeme günü kur 32,00 ₺/USD'dir. İşletme kasadaki efektifi ve borcu ödeme günü kuruna göre ayrı ayrı değerleyerek kaydetmektedir.\n\nBuna göre bu işlem nedeniyle kambiyo hesaplarına yazılacak tutarlar aşağıdakilerden hangisidir?",
         {
-            'A': 'Kur farkı kârı — 646 Kambiyo Kârları',
-            'B': 'Kur farkı zararı — 656 Kambiyo Zararları',
-            'C': 'Etkisi yoktur',
-            'D': 'Reeskont gideri — 657 Reeskont Faiz Giderleri',
-            'E': 'Faiz gideri — 780 Finansman Giderleri',
+            'A': '646: 10.000 ₺; 656: 5.000 ₺',
+            'B': '646: 5.000 ₺ (net); 656 kullanılmaz',
+            'C': '656: 5.000 ₺; 646 kullanılmaz',
+            'D': '646: 15.000 ₺; 656: 5.000 ₺',
+            'E': 'Aynı döviz kullanıldığından kur farkı doğmaz',
         },
         'A',
-        "Alacak dövizdeyken kur YÜKSELİRSE, aynı döviz daha çok TL'ye karşılık gelir → işletme lehine **kur farkı kârı (646 Kambiyo Kârları)** doğar. (Borçta ise tersi olur.)",
+        "Efektif 30,00'dan kayıtlıdır; ödeme günü değeri 32,00 olduğundan 5.000 × 2,00 = 10.000 ₺ kambiyo kârı (646). Borç 31,00'den kayıtlıdır; 32,00'den ödendiğinden 5.000 × 1,00 = 5.000 ₺ kambiyo zararı (656). Kalemler ayrı değerlenir; 320 160.000 ₺ borç / 100 160.000 ₺ alacak kaydıyla ödeme tamamlanır.",
         "1 Sıra No'lu MSUGT - 646; VUK md. 280",
     ),
     # düzey 3
@@ -317,30 +317,30 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        "Döviz cinsi bir işlemden doğan lehte (olumlu) kur farkı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "İşletme yurt içindeki bir müşterisine 10.000 USD + %20 KDV tutarında mal satmıştır; fatura günü kur 30,00 ₺/USD'dir ve faturadaki KDV Türk lirası olarak tahsil edilmiştir. Mal bedeli 10.000 USD, kurun 32,00 ₺/USD olduğu gün tahsil edilmiş; işletme lehine oluşan kur farkı için müşteriye kur farkı faturası düzenlenmiştir.\n\nBuna göre kur farkı faturası nedeniyle '391 Hesaplanan KDV' hesabına yazılacak tutar kaç ₺'dir?",
         {
-            'A': '647 Reeskont Faiz Gelirleri',
-            'B': '646 Kambiyo Kârları',
-            'C': '679 Diğer Olağandışı Gelir ve Kârlar',
-            'D': '642 Faiz Gelirleri',
-            'E': '649 Diğer Olağan Gelir ve Kârlar',
+            'A': '24.000',
+            'B': '4.000',
+            'C': '6.000',
+            'D': '20.000',
+            'E': '2.000',
         },
         'B',
-        'Lehte kur farkı **646 Kambiyo Kârları** (64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar) hesabında izlenir. 642 faiz, 647 reeskont geliridir — kur farkı değildir.',
+        'Tahsilde 10.000 × (32,00 − 30,00) = 20.000 ₺ kur farkı geliri doğar (646). Satıcı lehine oluşan kur farkı KDV matrahına eklenir ve fatura düzenlenir: 20.000 × %20 = 4.000 ₺ hesaplanan KDV (120 borç / 391 alacak).',
         "1 Sıra No'lu MSUGT - 646",
     ),
     # düzey 2
     '0022': patch(
-        'Döviz cinsinden bir BORCU bulunan işletmede, işlem tarihinden ödeme/değerleme tarihine kadar döviz kuru YÜKSELMİŞSE oluşan kur farkının niteliği ve hesabı aşağıdakilerden hangisidir?',
+        "İşletme 1 Temmuz'da 30,00 ₺/USD kurundan 20.000 USD, bir yıl vadeli ve yıllık %6 faizli kredi kullanmıştır; faiz ve anapara vade sonunda ödenecektir. 31 Aralık'ta kredi ve altı aylık faiz tahakkuku (600 USD) MB döviz alış kuru 32,00 ₺/USD üzerinden kayıtlara alınmıştır. Ertesi yıl 1 Temmuz'da anapara ile bir yıllık faiz, kurun 33,00 ₺/USD olduğu gün bankadan ödenmiştir.\n\nÖdeme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': 'Reeskont geliri — 647 Reeskont Faiz Gelirleri',
-            'B': 'Kur farkı kârı — 646 Kambiyo Kârları',
-            'C': 'Faiz geliri — 642 Faiz Gelirleri',
-            'D': 'Etkisi yoktur',
-            'E': 'Kur farkı zararı — 656 Kambiyo Zararları',
+            'A': '780 Finansman Giderleri hesabı 39.600 ₺ borçlandırılır',
+            'B': '656 Kambiyo Zararları hesabı 20.000 ₺ borçlandırılır',
+            'C': '300 Banka Kredileri hesabı 660.000 ₺ borçlandırılır',
+            'D': '102 Bankalar hesabı 680.400 ₺ alacaklandırılır',
+            'E': '656 Kambiyo Zararları hesabı 20.600 ₺ borçlandırılır',
         },
         'E',
-        'Borç dövizdeyken kur YÜKSELİRSE, borcun TL karşılığı artar → işletme aleyhine **kur farkı zararı (656 Kambiyo Zararları)** doğar. Alacaktaki durumun tersidir; bu yön çeldiricisine dikkat.',
+        "Kredi 640.000 ₺, faiz tahakkuku 19.200 ₺ ile kayıtlıdır. Ödemede anapara 20.000 × 33 = 660.000 ₺, toplam faiz 1.200 × 33 = 39.600 ₺, bankadan çıkış 699.600 ₺'dir. Kur farkı: anapara 20.000 × 1 = 20.000 ₺ ve tahakkuk etmiş faiz 600 × 1 = 600 ₺, toplam 20.600 ₺ (656). İkinci altı aylık faiz 600 × 33 = 19.800 ₺ (780). Kayıt: 300 640.000 ₺, 381 19.200 ₺, 656 20.600 ₺ ve 780 19.800 ₺ borç / 102 699.600 ₺ alacak.",
         "1 Sıra No'lu MSUGT - 656; VUK md. 280",
     ),
     # düzey 3
@@ -597,16 +597,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "Döviz cinsi bir işlemden doğan aleyhte (olumsuz) kur farkı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "İşletme bir müşterisinden 35,00 ₺/EUR kurundan kaydettiği 8.000 EUR'luk bir alacak senedi almıştır. Senedin 3.000 EUR'luk kısmı kurun 36,50 ₺/EUR olduğu gün nakden tahsil edilmiş, kalan 5.000 EUR için yeni bir senet düzenlenmeden mevcut senet portföyde tutulmuştur. Dönem sonunda MB döviz alış kuru 37,00 ₺/EUR'dur.\n\nBuna göre bu senet nedeniyle dönem içinde '646 Kambiyo Kârları' hesabına yazılan toplam tutar kaç ₺'dir?",
         {
-            'A': '657 Reeskont Faiz Giderleri',
-            'B': '656 Kambiyo Zararları',
-            'C': '689 Diğer Olağandışı Gider ve Zararlar',
-            'D': '659 Diğer Olağan Gider ve Zararlar',
-            'E': '780 Finansman Giderleri',
+            'A': '16.000',
+            'B': '14.500',
+            'C': '10.000',
+            'D': '4.500',
+            'E': '12.000',
         },
         'B',
-        'Aleyhte kur farkı **656 Kambiyo Zararları** (65 Diğer Faaliyetlerden Olağan Gider ve Zararlar) hesabında izlenir. 657 reeskont, 780 finansman gideridir — kur farkı zararı değildir.',
+        "Kısmi tahsil: 3.000 × (36,50 − 35,00) = 4.500 ₺ kâr. Dönem sonunda kalan 5.000 EUR 37,00'den değerlenir: 5.000 × (37,00 − 35,00) = 10.000 ₺ kâr. Toplam 14.500 ₺; döviz cinsi senetler de VUK m. 280'e göre MB döviz alış kuruyla değerlenir.",
         "1 Sıra No'lu MSUGT - 656",
     ),
     # düzey 3

@@ -331,16 +331,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        "Bir işletmenin dönem sonu gelir tablosu hesaplarının kalanları şöyledir: 600 Yurt İçi Satışlar 1.200.000 ₺, 610 Satıştan İadeler 50.000 ₺, 611 Satış İskontoları 30.000 ₺, 621 Satılan Ticari Mallar Maliyeti 680.000 ₺, 630 Araştırma ve Geliştirme Giderleri 20.000 ₺, 631 Pazarlama, Satış ve Dağıtım Giderleri 90.000 ₺, 632 Genel Yönetim Giderleri 110.000 ₺, 642 Faiz Gelirleri 25.000 ₺, 656 Kambiyo Zararları 15.000 ₺, 660 Kısa Vadeli Borçlanma Giderleri 40.000 ₺, 671 Önceki Dönem Gelir ve Kârları 12.000 ₺, 689 Diğer Olağandışı Gider ve Zararlar 7.000 ₺.\n\nBuna göre işletmenin olağan kârı kaç ₺'dir?",
+        "Aralıklı envanter yöntemini uygulayan bir ticaret işletmesinin dönem verileri şöyledir: dönem başı ticari mal stoku 80.000 ₺, dönem içi alışlar 520.000 ₺, alışlara ilişkin nakliye giderleri 12.000 ₺, satıcılara yapılan alış iadeleri 20.000 ₺, satıcılardan sonradan alınan alış iskontoları 8.000 ₺ ve dönem sonu sayımla belirlenen stok 110.000 ₺'dir. KDV ihmal edilecektir.\n\nBuna göre gelir tablosunda '621 Satılan Ticari Mallar Maliyeti' olarak gösterilecek tutar kaç ₺'dir?",
         {
-            'A': '195.000',
-            'B': '220.000',
-            'C': '175.000',
-            'D': '270.000',
-            'E': '190.000',
+            'A': '462.000',
+            'B': '502.000',
+            'C': '584.000',
+            'D': '494.000',
+            'E': '474.000',
         },
         'E',
-        'Net satışlar = 1.200.000 − 50.000 − 30.000 = 1.120.000 ₺; brüt satış kârı = 1.120.000 − 680.000 = 440.000 ₺; faaliyet kârı = 440.000 − 220.000 = 220.000 ₺. Olağan kâr = 220.000 + 25.000 (64) − 15.000 (65) − 40.000 (66) = 190.000 ₺. 671 ve 689 olağandışı kalemlerdir; dönem kârının hesabında dikkate alınır (195.000 ₺).',
+        'Net alışlar = 520.000 + 12.000 (alış nakliyesi maliyete girer) − 20.000 (alış iadesi) − 8.000 (alış iskontosu) = 504.000 ₺. Satılan ticari mallar maliyeti = dönem başı stok 80.000 + net alışlar 504.000 − dönem sonu stok 110.000 = 474.000 ₺.',
         "1 Sıra No'lu MSUGT - Brüt satış kârı; 2024-2025 SGS dikey yüzde soru örüntüsü",
     ),
     # düzey 2

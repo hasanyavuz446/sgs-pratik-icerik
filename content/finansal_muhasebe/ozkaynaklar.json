@@ -113,16 +113,16 @@
     "id": "finmuh-ozk-gen-0006",
     "ders": "finansal_muhasebe",
     "konu": "ozkaynaklar",
-    "stem": "Bir anonim şirketin dönem sonu kesin mizanından alınan kalanlar şöyledir: 500 Sermaye 2.000.000 ₺, 501 Ödenmemiş Sermaye 300.000 ₺, 502 Sermaye Düzeltmesi Olumlu Farkları 120.000 ₺, 520 Hisse Senedi İhraç Primleri 80.000 ₺, 522 MDV Yeniden Değerleme Artışları 60.000 ₺, 540 Yasal Yedekler 150.000 ₺, 541 Statü Yedekleri 40.000 ₺, 542 Olağanüstü Yedekler 90.000 ₺, 570 Geçmiş Yıllar Kârları 70.000 ₺, 580 Geçmiş Yıllar Zararları 110.000 ₺, 591 Dönem Net Zararı 50.000 ₺, 331 Ortaklara Borçlar 100.000 ₺, 242 İştirakler 400.000 ₺.\n\nBuna göre şirketin özkaynak toplamı kaç ₺'dir?",
+    "stem": "Dönem başında özkaynak toplamı 1.500.000 ₺ olan bir anonim şirkette yıl içinde şu işlemler olmuştur: nominal değeri 250.000 ₺ olan paylar 300.000 ₺'ye nakden ihraç edilmiş ve bedel tahsil edilmiştir; olağanüstü yedeklerden 100.000 ₺ sermayeye eklenmiştir; geçmiş yıl kârından ortaklara 120.000 ₺ nakit kâr payı dağıtılmış ve ödenmiştir; yılın sonucu 80.000 ₺ dönem net zararıdır.\n\nBuna göre şirketin dönem sonu özkaynak toplamı kaç ₺'dir?",
     "options": {
-      "A": "2.250.000",
-      "B": "2.450.000",
-      "C": "2.370.000",
-      "D": "2.150.000",
-      "E": "2.050.000"
+      "A": "1.700.000",
+      "B": "1.720.000",
+      "C": "1.550.000",
+      "D": "1.600.000",
+      "E": "1.760.000"
     },
     "answer": "D",
-    "solution": "Özkaynaklar: 2.000.000 − 300.000 (501) + 120.000 + 80.000 + 60.000 + 150.000 + 40.000 + 90.000 + 70.000 − 110.000 (580) − 50.000 (591) = 2.150.000 ₺. 501, 580 ve 591 borç kalanlı, özkaynakları azaltan hesaplardır. 331 Ortaklara Borçlar yabancı kaynak, 242 İştirakler mali duran varlıktır.",
+    "solution": "Nakdi artırım özkaynağı tahsil edilen tutar kadar artırır: +300.000 ₺ (250.000 sermaye + 50.000 ihraç primi). İç kaynaklardan artırım özkaynak içinde yer değiştirmedir: 0. Kâr payı dağıtımı −120.000 ₺, dönem net zararı −80.000 ₺. Dönem sonu özkaynak = 1.500.000 + 300.000 − 120.000 − 80.000 = 1.600.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

@@ -443,16 +443,16 @@
     "id": "finmuh-dsi-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemini kapsayan 18 aylık sigorta için 180.000 ₺ peşin ödemiştir. Aylık sigorta giderleri eşittir.\n\n31 Aralık 2025 tarihinde bu ödemeye ilişkin hesap bakiyeleri nasıl olmalıdır?",
+    "stem": "Bir işletme dönem sonunda şu envanter işlemlerini yapmıştır: stoklar için 12.000 ₺ değer düşüklüğü karşılığı ayrılmış; döviz cinsi alacaklar değerlenerek 8.000 ₺ kur farkı kaydedilmiş; alacak senetleri için 3.000 ₺, borç senetleri için 2.000 ₺ reeskont hesaplanmış; tahakkuk etmiş ancak ödenmemiş 5.000 ₺ elektrik gideri ile tahsil edilmemiş 4.000 ₺ mevduat faizi kaydedilmiştir.\n\nBuna göre bu envanter işlemlerinin dönem kârına net etkisi aşağıdakilerden hangisidir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 170.000 ₺",
-      "B": "280 Gelecek Yıllara Ait Giderler 180.000 ₺",
-      "C": "770 Genel Yönetim Giderleri 10.000 ₺; 180 Gelecek Aylara Ait Giderler 120.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺",
-      "D": "180 Gelecek Aylara Ait Giderler 60.000 ₺; 280 Gelecek Yıllara Ait Giderler 120.000 ₺",
-      "E": "770 Genel Yönetim Giderleri 20.000 ₺; 180 Gelecek Aylara Ait Giderler 110.000 ₺; 280 Gelecek Yıllara Ait Giderler 50.000 ₺"
+      "A": "6.000 ₺ artırır",
+      "B": "10.000 ₺ azaltır",
+      "C": "6.000 ₺ azaltır",
+      "D": "2.000 ₺ azaltır",
+      "E": "Dönem kârını etkilemez"
     },
     "answer": "C",
-    "solution": "Aylık tutar 180.000 / 18 = 10.000 ₺'dir. Aralık ayına düşen 10.000 ₺ giderleşir. Ocak-Aralık 2026'ya ait 120.000 ₺ **180 Gelecek Aylara Ait Giderler**, Ocak-Mayıs 2027'ye ait 50.000 ₺ ise **280 Gelecek Yıllara Ait Giderler** hesabında kalır.",
+    "solution": "Etkiler: stok karşılığı −12.000 (654), döviz alacak değerlemesi +8.000 (646), alacak senedi reeskontu −3.000 (657), borç senedi reeskontu +2.000 (647), gider tahakkuku −5.000, gelir tahakkuku +4.000 (642). Net etki = −12.000 + 8.000 − 3.000 + 2.000 − 5.000 + 4.000 = −6.000 ₺; dönem kârı 6.000 ₺ azalır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -861,16 +861,16 @@
     "id": "finmuh-dsi-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "31 Aralık 2025 itibarıyla 180 Gelecek Aylara Ait Giderler hesabında 60.000 ₺ bulunmaktadır. İncelemede bu tutarın 20.000 ₺'lik kısmının 2025 yılına ait yönetim gideri olduğu, 40.000 ₺'lik kısmının ise 2027 yılına ait olduğu belirlenmiştir. Buna göre yapılacak kayıtla ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "İşletme 31 Aralık'ta, faturası henüz gelmeyen aralık ayı yönetim binası elektrik tüketimi için tahmini 18.000 ₺ gider tahakkuku yapmıştır. Ocak ayında gelen faturada aralık tüketimi 19.500 ₺ + %20 KDV olarak belirlenmiş ve fatura bankadan ödenmiştir. Fark önemsiz olduğundan cari dönemin gideri olarak kaydedilecektir.\n\nOcak ayındaki ödeme kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler hesabı 40.000 ₺ borçlandırılır",
-      "B": "770 Genel Yönetim Giderleri hesabı 60.000 ₺ borçlandırılır",
-      "C": "180 Gelecek Aylara Ait Giderler hesabı 20.000 ₺ borçlandırılır",
-      "D": "280 Gelecek Yıllara Ait Giderler hesabı 40.000 ₺ borçlandırılır",
-      "E": "280 Gelecek Yıllara Ait Giderler hesabı 60.000 ₺ borçlandırılır"
+      "A": "770 Genel Yönetim Giderleri hesabı 19.500 ₺ borçlandırılır",
+      "B": "191 İndirilecek KDV hesabı 3.600 ₺ borçlandırılır",
+      "C": "102 Bankalar hesabı 19.500 ₺ alacaklandırılır",
+      "D": "381 Gider Tahakkukları hesabı 18.000 ₺ borçlandırılır",
+      "E": "180 Gelecek Aylara Ait Giderler 18.000 ₺ alacaklandırılır"
     },
     "answer": "D",
-    "solution": "Kayıt: 770 (borç) 20.000 + **280 (borç) 40.000** / 180 (alacak) 60.000. Cari yıla ait kısım gider yazılır; izleyen yıldan sonraki yıla ait kısım uzun vadeli 280'e aktarılır.",
+    "solution": "Tahakkuk edilmiş tutar ödemede 381'den kapatılır: 381 18.000 ₺ borç. Tahminle gerçek tutar arasındaki 1.500 ₺ fark gider yazılır (770), KDV gerçek fatura üzerinden 19.500 × %20 = 3.900 ₺ (191). Bankadan çıkan 23.400 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

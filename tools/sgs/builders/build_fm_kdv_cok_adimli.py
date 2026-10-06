@@ -863,16 +863,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0060': patch(
-        "Ay sonunda 391 Hesaplanan KDV hesabının alacak kalanı 45.000 ₺, 191 İndirilecek KDV hesabının borç kalanı 52.000 ₺'dir. 190 Devreden KDV hesabında önceki aylardan 6.000 ₺ bulunmaktadır. Buna göre ay sonu mahsubundan sonra 190 Devreden KDV hesabının kalanı kaç ₺'dir?",
+        "İhracat da yapan bir ticaret işletmesinin ay içindeki işlemleri şöyledir: yurt dışındaki bir alıcıya 500.000 ₺ tutarında mal ihraç edilmiştir (KDV'den istisna), yurt içinde 100.000 ₺ + %20 KDV mal satılmıştır, 300.000 ₺ + %20 KDV ticari mal alınmıştır. Önceki aydan devreden KDV yoktur ve işletme bu ay KDV iadesi talep etmeyecektir.\n\nBuna göre ay sonu mahsubundan sonra izleyen aya devreden KDV kaç ₺'dir?",
         {
-            'A': '1.000 ₺',
-            'B': '58.000 ₺',
-            'C': '7.000 ₺',
-            'D': '6.000 ₺',
-            'E': '13.000 ₺',
+            'A': '20.000',
+            'B': '60.000',
+            'C': '80.000',
+            'D': '100.000',
+            'E': '40.000',
         },
         'E',
-        "İndirilecek KDV hesaplanan KDV'yi 7.000 ₺ aşar; bu fark devreden KDV'ye eklenir: 391 (borç) 45.000 + 190 (borç) 7.000 / 191 (alacak) 52.000. 190 kalanı 6.000 + 7.000 = **13.000 ₺**.",
+        "İhracat KDV'den istisnadır; hesaplanan KDV yalnız yurt içi satıştan doğar: 20.000 ₺. İstisnalı işlemlere ait yüklenilen KDV de indirilebilir; indirilecek KDV 60.000 ₺. 60.000 − 20.000 = 40.000 ₺ izleyen aya devreder (iade talep edilmediği için).",
         '3065 sayılı KDVK m. 29; THP 391, 191, 190',
     ),
 }

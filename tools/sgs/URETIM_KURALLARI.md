@@ -672,6 +672,17 @@ yakalamak içindir; amaç doğal ve dengeli şık yazmaktır.
 
 ---
 
+### Küme ayıklama ve veri tekrarı (6 Ekim)
+
+Paket içinde aynı alt konuyu soran soru kümeleri (ör. 6 'yansıtma eşlemesi', 9 'kur
+yönü', 5 aynı döviz değerlemesi) hem tekrar hem sızıntı kaynağıdır: kümeden birini
+derinleştirmek ötekinin cevabını verir. Kümenin bir temsilcisini koru, diğerlerini
+paketin hiç işlemediği alt konulara taşı. Yeni soru yazmadan önce
+`python3 tools/sgs/veri_tekrari.py` çalıştır: aynı paketteki iki soru 5+ ortak tutar
+paylaşıyorsa (farklı şey sorsalar da) veri seti kopyalanmıştır; audit.py'nin metin
+benzerliği bunu görmez. Çözüm metninde aynı paketteki başka bir sorunun cevabını açıkça
+yazma.
+
 ## 6. Cevap harfleri
 
 - Harfler **seed'li ve örüntüsüz** karıştırılır (`gen_letters`, §3).

@@ -79,16 +79,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0004': patch(
-        "İşletme, 6 yıllığına kiraladığı bir dükkâna 60.000 ₺'lik kalıcı değer artırıcı harcama yapmış ve bunu '264 Özel Maliyetler' hesabına kaydetmiştir. Kira süresi boyunca eşit itfa edildiğine göre, yıllık itfa payı kaç ₺'dir?",
+        "İşletme bir restoran zincirinin franchise (bayilik) hakkını beş yıllığına edinmiş ve 500.000 ₺ giriş bedelini peşin ödemiştir. Sözleşmeye göre ayrıca her yıl net satışların %3'ü oranında kullanım ücreti (royalti) ödenecektir. İlk yılın net satışları 2.000.000 ₺'dir. Hak yıl başında edinilmiş olup süresi boyunca eşit tutarlarla itfa edilmektedir.\n\nBuna göre bu sözleşme nedeniyle ilk yılın sonucuna yansıyan toplam gider kaç ₺'dir?",
         {
-            'A': '12.000',
-            'B': '14.000',
-            'C': '20.000',
-            'D': '60.000',
-            'E': '10.000',
+            'A': '100.000',
+            'B': '60.000',
+            'C': '560.000',
+            'D': '500.000',
+            'E': '160.000',
         },
         'E',
-        'Özel maliyet kira süresi boyunca itfa edilir: 60.000 ÷ 6 = **10.000 ₺/yıl**.',
+        'Peşin ödenen giriş bedeli 260 Haklar hesabında aktifleştirilir ve beş yılda itfa edilir: 500.000 / 5 = 100.000 ₺. Satışa bağlı royalti dönemin gideridir: 2.000.000 × %3 = 60.000 ₺. İlk yılın toplam gideri 160.000 ₺.',
         'VUK md. 327',
     ),
     # düzey 2
@@ -611,16 +611,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "'264 Özel Maliyetler' hesabında aşağıdakilerden hangisi izlenir?",
+        "İşletme beş yıl kullanma hakkı veren bir yazılım lisansını 250.000 ₺'ye almış ve iki yıl boyunca doğrusal yöntemle itfa etmiştir. Üçüncü yılın başında lisansı veren firma faaliyetini durdurmuş, lisans artık kullanılamaz ve devredilemez hâle gelmiştir. İşletme varlığı kayıtlardan çıkarmaya karar vermiştir.\n\nBu işleme ilişkin kayıt (hesap kodlarıyla) aşağıdakilerden hangisidir?",
         {
-            'A': 'İşletmenin dönem içinde satmak amacıyla dışarıdan satın aldığı ticari mallar ile ilk madde ve malzeme alımları',
-            'B': 'İşletmenin kendi mülkiyetindeki binaya yaptığı ve o binanın değerini kalıcı biçimde artıran, duran varlık hesabına eklenen harcamalar',
-            'C': 'İşletmenin kiraladığı iş yeri için her ay düzenli olarak ödediği ve dönem gideri yazılan kira bedelleri ile aidatlar',
-            'D': "İşletmenin bir bedel ödeyerek dışarıdan satın aldığı patent, marka ve lisans gibi hakların 260 Haklar'da izlenen bedelleri",
-            'E': 'Kiralanan bir gayrimenkule, kiracı tarafından yapılan ve kira süresi boyunca yararlanılacak değer artırıcı harcamalar',
+            'A': '689 250.000 ₺ borç / 260 250.000 ₺ alacak',
+            'B': '770 150.000 ₺ borç / 268 150.000 ₺ alacak',
+            'C': '268 150.000 ₺ borç / 260 150.000 ₺ alacak',
+            'D': '260 250.000 ₺ borç / 268 100.000 ₺ ve 689 150.000 ₺ alacak',
+            'E': '268 100.000 ₺ ve 689 150.000 ₺ borç / 260 250.000 ₺ alacak',
         },
         'E',
-        '**264 Özel Maliyetler**; **kiralanan** bir gayrimenkul veya varlığa, **kiracı** tarafından yapılan ve kira süresince yararlanılacak değer artırıcı harcamaları izler. Kira süresi boyunca itfa edilir. (Kendi mülke yapılan harcama ise ilgili MDV hesabına eklenir.)',
+        "İki yıllık itfa 250.000 / 5 × 2 = 100.000 ₺ 268'de birikmiştir; kalan net değer 150.000 ₺'dir. Kullanılamaz hâle gelen hak kayıtlardan çıkarılırken birikmiş itfa kapatılır ve kalan değer olağandışı zarar yazılır: 268 100.000 ₺ ve 689 150.000 ₺ borç / 260 250.000 ₺ alacak.",
         "1 Sıra No'lu MSUGT - 264; VUK md. 272/327",
     ),
     # düzey 2
@@ -863,16 +863,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0060': patch(
-        "İşletme dokuz yıllığına kiraladığı depoya 180.000 ₺ özel maliyet harcaması yapmış ve kira süresine göre itfa etmektedir. Buna göre dört yıllık itfadan sonra özel maliyetin bilançodaki net değeri kaç ₺'dir?",
+        "TMS 38'e göre raporlama yapan işletme kendi kullanımı için bir yazılım geliştirmektedir. Ocak–Mart döneminde araştırma safhasında 90.000 ₺ harcanmıştır. 1 Nisan'da teknik uygulanabilirlik dâhil aktifleştirme koşullarının tamamı sağlanmış; Nisan–Eylül döneminde projede çalışan personelin ücretleri 240.000 ₺, dışarıdan alınan danışmanlık 60.000 ₺, genel yönetim giderlerinden ayrılan pay 30.000 ₺ ve kullanıcı eğitimi 10.000 ₺ olmuştur. Yazılım 1 Ekim'de kullanıma hazır hâle gelmiştir; yararlı ömrü 5 yıl, kalıntı değeri sıfırdır.\n\nBuna göre yazılımın yıl sonundaki net defter değeri kaç ₺'dir?",
         {
-            'A': '108.000 ₺',
-            'B': '36.000 ₺',
-            'C': '180.000 ₺',
-            'D': '80.000 ₺',
-            'E': '100.000 ₺',
+            'A': '300.000',
+            'B': '240.000',
+            'C': '313.500',
+            'D': '370.500',
+            'E': '285.000',
         },
         'E',
-        'Yıllık itfa 180.000 / 9 = 20.000 ₺; dört yılda 80.000 ₺. Net değer 180.000 − 80.000 = **100.000 ₺**.',
+        'Araştırma harcamaları gider yazılır. Geliştirme safhasında doğrudan ilişkilendirilebilen personel ücretleri ve danışmanlık aktifleştirilir: 240.000 + 60.000 = 300.000 ₺; genel yönetim payı ve eğitim aktifleştirilmez. İtfa kullanıma hazır olunca başlar: 300.000 / 5 × 3/12 = 15.000 ₺. Net defter değeri 285.000 ₺.',
         'VUK m. 327; THP 264, 268',
     ),
 }
