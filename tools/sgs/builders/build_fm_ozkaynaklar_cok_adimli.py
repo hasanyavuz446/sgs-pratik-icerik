@@ -107,16 +107,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        "Bir işletmenin özkaynak kalemleri şöyledir: 500 Sermaye 400.000 ₺, 540 Yasal Yedekler 50.000 ₺, 590 Dönem Net Kârı 150.000 ₺. Başka özkaynak kalemi bulunmadığına göre toplam özkaynak kaç ₺'dir?",
+        "Bir anonim şirketin dönem sonu kesin mizanından alınan kalanlar şöyledir: 500 Sermaye 2.000.000 ₺, 501 Ödenmemiş Sermaye 300.000 ₺, 502 Sermaye Düzeltmesi Olumlu Farkları 120.000 ₺, 520 Hisse Senedi İhraç Primleri 80.000 ₺, 522 MDV Yeniden Değerleme Artışları 60.000 ₺, 540 Yasal Yedekler 150.000 ₺, 541 Statü Yedekleri 40.000 ₺, 542 Olağanüstü Yedekler 90.000 ₺, 570 Geçmiş Yıllar Kârları 70.000 ₺, 580 Geçmiş Yıllar Zararları 110.000 ₺, 591 Dönem Net Zararı 50.000 ₺, 331 Ortaklara Borçlar 100.000 ₺, 242 İştirakler 400.000 ₺.\n\nBuna göre şirketin özkaynak toplamı kaç ₺'dir?",
         {
-            'A': '200.000',
-            'B': '550.000',
-            'C': '450.000',
-            'D': '600.000',
-            'E': '400.000',
+            'A': '2.250.000',
+            'B': '2.450.000',
+            'C': '2.370.000',
+            'D': '2.150.000',
+            'E': '2.050.000',
         },
         'D',
-        'Toplam özkaynak = 400.000 + 50.000 + 150.000 = **600.000 ₺** (üç kalem de özkaynağı artıran unsurlardır).',
+        'Özkaynaklar: 2.000.000 − 300.000 (501) + 120.000 + 80.000 + 60.000 + 150.000 + 40.000 + 90.000 + 70.000 − 110.000 (580) − 50.000 (591) = 2.150.000 ₺. 501, 580 ve 591 borç kalanlı, özkaynakları azaltan hesaplardır. 331 Ortaklara Borçlar yabancı kaynak, 242 İştirakler mali duran varlıktır.',
         "1 Sıra No'lu MSUGT - 5 grubu",
     ),
     # düzey 2
@@ -191,16 +191,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        "Bir işletmenin özkaynak kalemleri: 500 Sermaye 600.000 ₺, 501 Ödenmemiş Sermaye (-) 100.000 ₺, 540 Yasal Yedekler 80.000 ₺, 590 Dönem Net Kârı 120.000 ₺'dir. Başka kalem yoktur. Toplam özkaynak kaç ₺'dir?",
+        "Bir anonim şirketin dönem sonu bilançosunda aktif toplamı 3.400.000 ₺, kısa vadeli yabancı kaynakları 900.000 ₺, uzun vadeli yabancı kaynakları 1.100.000 ₺'dir. Özkaynak kalemleri şunlardır: 500 Sermaye 1.000.000 ₺, 501 Ödenmemiş Sermaye 100.000 ₺, 540 Yasal Yedekler 60.000 ₺, 542 Olağanüstü Yedekler 90.000 ₺, 580 Geçmiş Yıllar Zararları 50.000 ₺ ve tutarı verilmeyen dönem net kârı.\n\nBuna göre şirketin dönem net kârı kaç ₺'dir?",
         {
             'A': '300.000',
-            'B': '700.000',
-            'C': '500.000',
-            'D': '400.000',
-            'E': '600.000',
+            'B': '400.000',
+            'C': '350.000',
+            'D': '250.000',
+            'E': '500.000',
         },
         'B',
-        'Toplam özkaynak = 600.000 − 100.000 (ödenmemiş sermaye, -) + 80.000 + 120.000 = **700.000 ₺**. 501 negatif (düzenleyici) kalem olduğundan düşülür.',
+        'Özkaynak toplamı = aktif − yabancı kaynaklar = 3.400.000 − 2.000.000 = 1.400.000 ₺. Bilinen özkaynak kalemleri: 1.000.000 − 100.000 + 60.000 + 90.000 − 50.000 = 1.000.000 ₺ (501 ve 580 özkaynakları azaltır). Dönem net kârı = 1.400.000 − 1.000.000 = 400.000 ₺.',
         "1 Sıra No'lu MSUGT - 5 grubu",
     ),
     # düzey 2
@@ -345,16 +345,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0023': patch(
-        "Genel kurul, 80.000 ₺ tutarındaki 580 Geçmiş Yıllar Zararları'nı 542 Olağanüstü Yedekler hesabından karşılamıştır. Başka işlem yoktur.\n\nBu kararın toplam özkaynak üzerindeki etkisi hangisidir?",
+        "Bir anonim şirketin bilançosunda 580 Geçmiş Yıllar Zararları 300.000 ₺, 542 Olağanüstü Yedekler 120.000 ₺ ve 590 Dönem Net Kârı 250.000 ₺ olarak yer almaktadır. Genel kurul, geçmiş yıllar zararının önce olağanüstü yedeklerin tamamıyla, kalanının da cari dönem net kârından karşılanmasına karar vermiş ve kayıtlar yapılmıştır.\n\nBuna göre bu işlemlerden sonra 590 Dönem Net Kârı hesabının kalanı kaç ₺'dir?",
         {
-            'A': 'Toplam özkaynak 80.000 ₺ artar; geçmiş yıl zararı ortadan kalkar.',
-            'B': 'Toplam özkaynak değişmez; zarar ve yedek aynı tutarda kapanır.',
-            'C': 'Yabancı kaynaklar 80.000 ₺ azalır; özkaynak etkilenmez.',
-            'D': 'Toplam özkaynak 160.000 ₺ artar; çünkü iki hesap da kapanır.',
-            'E': 'Toplam özkaynak 80.000 ₺ azalır; olağanüstü yedek düşer.',
+            'A': '250.000',
+            'B': '70.000',
+            'C': '30.000',
+            'D': '130.000',
+            'E': '50.000',
         },
         'B',
-        'Kayıt 542 Olağanüstü Yedekler borç / 580 Geçmiş Yıllar Zararları alacak şeklindedir. Pozitif yedek **80.000 ₺ azalırken** negatif zarar kalemi de **80.000 ₺ azalır**; bu nedenle toplam özkaynak değişmez, yalnız bileşimi değişir.',
+        "Olağanüstü yedeklerle kapatma: 542 120.000 ₺ borç / 580 120.000 ₺ alacak; zararın kalanı 180.000 ₺. Cari kârdan kapatma: 590 180.000 ₺ borç / 580 180.000 ₺ alacak. 590'da kalan 250.000 − 180.000 = 70.000 ₺. Bu işlemler toplam özkaynağı değiştirmez.",
         "1 Sıra No'lu MSUGT - 542/580",
     ),
     # düzey 2
@@ -639,16 +639,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0044': patch(
-        "Türk Ticaret Kanunu'na göre, dönem net kârı 300.000 ₺ olan bir anonim şirket, I. tertip genel kanuni yedek akçeyi kârın %5'i oranında ayıracaktır (üst sınıra ulaşılmamıştır). Ayrılacak I. tertip yasal yedek tutarı kaç ₺'dir?",
+        "Ödenmiş sermayesi 1.000.000 ₺ ve daha önce ayrılmış genel kanuni yedek akçesi 100.000 ₺ olan bir anonim şirketin dönem net kârı 400.000 ₺'dir. Genel kurul, TTK'ya göre ayrılması gereken birinci ve ikinci tertip genel kanuni yedek akçeleri ayırmaya, ortaklara (sermayenin %5'i oranındaki birinci kâr payı dâhil) toplam 150.000 ₺ kâr payı dağıtmaya ve kalan tutarı olağanüstü yedeklere aktarmaya karar vermiştir. Başka dağıtım yoktur.\n\nBuna göre '542 Olağanüstü Yedekler' hesabına aktarılacak tutar kaç ₺'dir?",
         {
-            'A': '30.000',
-            'B': '6.000',
-            'C': '3.000',
-            'D': '15.000',
-            'E': '60.000',
+            'A': '230.000',
+            'B': '250.000',
+            'C': '215.000',
+            'D': '220.000',
+            'E': '210.000',
         },
         'D',
-        'I. tertip yasal yedek = Dönem kârı × %5 = 300.000 × 0,05 = **15.000 ₺** → 540 Yasal Yedekler.',
+        "Birinci tertip: kârın %5'i = 20.000 ₺ (mevcut 100.000 + 20.000, sermayenin %20'si olan 200.000 ₺'yi aşmaz). İkinci tertip: pay sahiplerine %5 kâr payı (50.000 ₺) ödendikten sonra kâr payı alacaklara dağıtılacak tutarın %10'u = (150.000 − 50.000) × %10 = 10.000 ₺. Olağanüstü yedek = 400.000 − 20.000 − 150.000 − 10.000 = 220.000 ₺.",
         "TTK md. 519 (I. tertip %5); 1 Sıra No'lu MSUGT - 540",
     ),
     # düzey 2
@@ -737,16 +737,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        "Genel kurul, 542 Olağanüstü Yedekler hesabındaki 150.000 ₺ ile 570 Geçmiş Yıllar Kârları hesabındaki 100.000 ₺'yi sermayeye eklemiştir.\n\nİç kaynaklardan sermaye artırım kaydı hangisidir?",
+        "Sermayesi 1.000.000 ₺ olan bir anonim şirket sermayesini 1.600.000 ₺'ye çıkarmıştır. Artırılan tutarın 200.000 ₺'si olağanüstü yedeklerden (iç kaynaklardan), 400.000 ₺'si nakden karşılanmıştır. Nakden karşılanan kısım için 400.000 ₺ nominal değerli paylar 500.000 ₺'ye ihraç edilmiş ve bedelin tamamı bankaya yatırılmıştır.\n\nBuna göre bu işlemler sonucunda şirketin toplam özkaynakları kaç ₺ artar?",
         {
-            'A': '102 Bankalar 250.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak',
-            'B': '542 Olağanüstü Yedekler 250.000 ₺ borç / 501 Ödenmemiş Sermaye 250.000 ₺ alacak',
-            'C': '542 Olağanüstü Yedekler 150.000 ₺ ve 570 Geçmiş Yıllar Kârları 100.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak',
-            'D': '500 Sermaye 250.000 ₺ borç / 542 Olağanüstü Yedekler 150.000 ₺, 570 Geçmiş Yıllar Kârları 100.000 ₺ alacak',
-            'E': '501 Ödenmemiş Sermaye 250.000 ₺ borç / 500 Sermaye 250.000 ₺ alacak',
+            'A': '600.000',
+            'B': '700.000',
+            'C': '500.000',
+            'D': '400.000',
+            'E': '800.000',
         },
         'C',
-        'İç kaynaklar sermayeye aktarılırken kullanılan yedek ve geçmiş yıl kârı hesapları **borçlandırılır**; 500 Sermaye **250.000 ₺ alacaklandırılır**. İşletmeye dışarıdan varlık girmediği için 102 veya 501 kullanılmaz ve toplam özkaynak değişmez.',
+        'İç kaynaklardan artırım (542 borç / 500 alacak) özkaynak içinde yer değiştirmedir, toplamı değiştirmez. Nakdi artırımda bankaya giren 500.000 ₺ özkaynağı artırır: 500 Sermaye 400.000 ₺ ve 520 Hisse Senedi İhraç Primleri 100.000 ₺ alacak. Toplam artış 500.000 ₺.',
         "1 Sıra No'lu MSUGT - 542/570/500; TTK md. 462",
     ),
     # düzey 2

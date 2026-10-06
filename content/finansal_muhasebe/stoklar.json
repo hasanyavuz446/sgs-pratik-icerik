@@ -69,16 +69,16 @@
     "id": "finmuh-stok-gen-0004",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "İşletmenin dönem sonu stoklarının maliyet bedeli 120.000 ₺, net gerçekleşebilir değeri ise 104.000 ₺ olarak belirlenmiştir. Değer düşüklüğü için karşılık ayrılacaktır.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletmenin dönem sonunda üç stok kalemi bulunmaktadır: X malının maliyeti 50.000 ₺, net gerçekleşebilir değeri 44.000 ₺; Y malının maliyeti 30.000 ₺, net gerçekleşebilir değeri 33.000 ₺; Z malının maliyeti 40.000 ₺, net gerçekleşebilir değeri 35.000 ₺'dir. Önceki dönemde X ve Z malları için toplam 4.000 ₺ stok değer düşüklüğü karşılığı ayrılmıştır ve mallar hâlâ eldedir. Karşılık kalem bazında belirlenmektedir.\n\nBuna göre dönem sonunda yapılacak kayıt aşağıdakilerden hangisidir?",
     "options": {
-      "A": "621 Satılan Ticari Malların Maliyeti (borç) 104.000 / 153 Ticari Mallar (alacak) 104.000",
-      "B": "654 Karşılık Giderleri (borç) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (alacak) 16.000",
-      "C": "158 Stok Değer Düşüklüğü Karşılığı (borç) 16.000 / 153 Ticari Mallar (alacak) 16.000",
-      "D": "153 Ticari Mallar (borç) 16.000 / 644 Konusu Kalmayan Karşılıklar (alacak) 16.000",
-      "E": "689 Diğer Olağandışı Gider (borç) 120.000 / 158 Stok Değer Düşüklüğü Karşılığı (alacak) 120.000"
+      "A": "654 Karşılık Giderleri (borç) 11.000 / 158 Stok Değer Düşüklüğü Karşılığı (alacak) 11.000",
+      "B": "654 Karşılık Giderleri (borç) 7.000 / 158 Stok Değer Düşüklüğü Karşılığı (alacak) 7.000",
+      "C": "654 Karşılık Giderleri (borç) 4.000 / 158 Stok Değer Düşüklüğü Karşılığı (alacak) 4.000",
+      "D": "158 Stok Değer Düşüklüğü Karşılığı (borç) 7.000 / 644 Konusu Kalmayan Karşılıklar (alacak) 7.000",
+      "E": "654 Karşılık Giderleri (borç) 7.000 / 153 Ticari Mallar (alacak) 7.000"
     },
     "answer": "B",
-    "solution": "Değer düşüklüğü = 120.000 − 104.000 = 16.000 ₺. Gider tahakkuk ettirilip karşılık ayrılır: **654 Karşılık Giderleri (borç) 16.000 / 158 Stok Değer Düşüklüğü Karşılığı (-) (alacak) 16.000**. 158 aktifi düzenleyici hesaptır.",
+    "solution": "Kalem bazında gereken karşılık: X 6.000 ₺, Z 5.000 ₺, toplam 11.000 ₺; Y'nin NGD'si maliyetin üzerinde olduğundan artış dikkate alınmaz ve düşüşlerle netleştirilmez. Mevcut karşılık 4.000 ₺ olduğundan 7.000 ₺ ek karşılık ayrılır: 654 borç / 158 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -179,16 +179,16 @@
     "id": "finmuh-stok-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir ticari mal kaleminde dönem başı stok 100 birim × 10 ₺, dönem içi alışlar 200 birim × 13 ₺ ve 100 birim × 16 ₺'dir. Dönemde 250 birim satılmıştır. FIFO yöntemine göre satılan malın maliyeti kaç ₺'dir?",
+    "stem": "Sürekli envanter ve FIFO yöntemini uygulayan işletmenin bir ticari mal kalemindeki hareketler şöyledir: dönem başı stok 200 birim × 20 ₺; 5 Mart'ta 300 birim × 24 ₺ alış; 10 Nisan'da 350 birim satış; 20 Mayıs'ta 400 birim × 27 ₺ alış; 15 Haziran'da 20 Mayıs alışından 50 birimin kusurlu olduğu için satıcıya iadesi; 1 Ekim'de 300 birim satış.\n\nBuna göre dönem sonu stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "3.400",
-      "B": "3.900",
-      "C": "2.950",
-      "D": "3.550",
-      "E": "3.250"
+      "A": "5.200",
+      "B": "4.800",
+      "C": "5.400",
+      "D": "6.750",
+      "E": "5.000"
     },
     "answer": "C",
-    "solution": "FIFO'da önce giren satılır: 100×10 + 150×13 = 1.000 + 1.950 = **2.950 ₺**. (Fiyatlar yükseldiği için FIFO maliyeti, ortalama maliyetten 3.250 ₺'den düşüktür.)",
+    "solution": "10 Nisan satışı: 200 × 20 + 150 × 24 = 7.600 ₺; elde 150 birim × 24 ₺ kalır. 20 Mayıs alışından 50 birim iade edilince bu katman 350 birim × 27 ₺ olur. 1 Ekim satışı: 150 × 24 + 150 × 27 = 7.650 ₺. Dönem sonunda 200 birim × 27 ₺ = 5.400 ₺ kalır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -267,16 +267,16 @@
     "id": "finmuh-stok-gen-0013",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Tartılı ortalama maliyet yöntemini kullanan işletmede dönem başı stok 200 br × 25 ₺, dönem içi alış 200 br × 35 ₺'dir. Dönemde 250 birim satılmıştır.\n\nBuna göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
+    "stem": "Aralıklı envanter ve dönemsel tartılı ortalama maliyet yöntemini uygulayan işletmenin bir ticari mal kaleminde dönem başı stoku 200 birim × 25 ₺'dir. Dönem içinde 300 birim × 30 ₺ ve 500 birim × 33 ₺ olmak üzere iki alış yapılmış, toplam 700 birim satılmıştır.\n\nBuna göre dönem sonu stok mevcudunun değeri kaç ₺'dir?",
     "options": {
-      "A": "3.000",
-      "B": "4.500",
-      "C": "7.500",
-      "D": "3.750",
-      "E": "12.000"
+      "A": "9.900",
+      "B": "9.150",
+      "C": "8.000",
+      "D": "8.700",
+      "E": "9.300"
     },
     "answer": "B",
-    "solution": "Ortalama birim maliyet = (200×25 + 200×35) ÷ 400 = 12.000 ÷ 400 = 30 ₺. Dönem sonu stok = 400 − 250 = 150 br. Değeri = 150 × 30 = **4.500 ₺**.",
+    "solution": "Satışa hazır mal: 1.000 birim, 5.000 + 9.000 + 16.500 = 30.500 ₺; tartılı ortalama birim maliyet 30,50 ₺. Dönem sonu mevcut 1.000 − 700 = 300 birim; değeri 300 × 30,50 = 9.150 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -487,16 +487,16 @@
     "id": "finmuh-stok-gen-0023",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Sürekli envanter yöntemini kullanan işletme, tanesi KDV hariç 50.000 ₺ tutarında ticari malı %20 KDV ile veresiye satın almıştır.\n\nBu alış işleminde '191 İndirilecek KDV' hesabına yazılacak tutar ve tarafı aşağıdakilerden hangisidir?",
+    "stem": "Sürekli envanter yöntemini kullanan işletme tanesi 1.000 ₺ liste fiyatlı 50 adet ticari malı, faturada gösterilen %10 ticari iskonto ve %20 KDV ile veresiye satın almıştır. Malların depoya taşınması için nakliyeciye 2.000 ₺ + %20 KDV ödenmiştir. Ertesi gün 5 adet malın kusurlu olduğu anlaşılmış ve bunlar satıcıya iade edilmiştir; nakliye bedeli iade edilmemiştir.\n\nBuna göre bu işlemlerden sonra '153 Ticari Mallar' hesabının bu mallara ilişkin kalanı kaç ₺'dir?",
     "options": {
-      "A": "10.000 ₺ alacak",
-      "B": "10.000 ₺ borç",
-      "C": "60.000 ₺ borç",
-      "D": "50.000 ₺ borç",
-      "E": "12.000 ₺ borç"
+      "A": "45.000",
+      "B": "42.500",
+      "C": "47.000",
+      "D": "42.700",
+      "E": "40.500"
     },
     "answer": "B",
-    "solution": "KDV = 50.000 × %20 = 10.000 ₺ ve indirilecek KDV alışta **borç** yazılır. Kayıt: 153 Ticari Mallar (borç) 50.000 + **191 İndirilecek KDV (borç) 10.000** / 320 Satıcılar (alacak) 60.000.",
+    "solution": "Alış: 50 × 1.000 × 0,90 = 45.000 ₺; alış nakliyesi maliyete eklenir: +2.000 ₺. İade edilen 5 adet iskontolu bedelle çıkarılır: 5 × 900 = 4.500 ₺ (320 borç / 153 ve 191 alacak). 153 kalanı = 45.000 + 2.000 − 4.500 = 42.500 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -641,16 +641,16 @@
     "id": "finmuh-stok-gen-0030",
     "ders": "finansal_muhasebe",
     "konu": "stoklar",
-    "stem": "Bir ticari mal kaleminde dönem başı mevcut 400 birim, dönem içi alışlar 1.200 birim ve dönem içi satışlar 1.300 birimdir (fire yoktur).\n\nDönem sonu stok mevcudu kaç birimdir?",
+    "stem": "Bir ticari mal kaleminde dönem başı mevcut 400 birimdir. Dönem içinde 1.200 birim alınmış, 1.300 birim satılmış, satılan mallardan 50 birim müşterilerce iade edilmiş, alınan mallardan 30 birim satıcıya iade edilmiş ve 20 birim normal fire olarak kayıtlardan çıkarılmıştır. Dönem sonu fiilî sayımda 290 birim mal bulunmuştur.\n\nBuna göre kayıtlara göre olması gereken mevcut ve sayım farkı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "500",
-      "B": "900",
-      "C": "1.300",
-      "D": "300",
-      "E": "100"
+      "A": "320 birim olmalı; 30 birim sayım noksanı vardır",
+      "B": "270 birim olmalı; 20 birim sayım fazlası vardır",
+      "C": "250 birim olmalı; 40 birim sayım fazlası vardır",
+      "D": "300 birim olmalı; 10 birim sayım noksanı vardır",
+      "E": "300 birim olmalı; 10 birim sayım fazlası vardır"
     },
     "answer": "D",
-    "solution": "Miktar dengesi: Dönem sonu = Dönem başı + Alışlar − Satışlar = 400 + 1.200 − 1.300 = **300 birim**.",
+    "solution": "Olması gereken mevcut = 400 + 1.200 − 1.300 + 50 (satış iadesi) − 30 (alış iadesi) − 20 (fire) = 300 birim. Sayımda 290 birim bulunduğundan 10 birimlik sayım noksanı vardır; nedeni araştırılıncaya kadar 197 Sayım ve Tesellüm Noksanları'nda izlenir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
