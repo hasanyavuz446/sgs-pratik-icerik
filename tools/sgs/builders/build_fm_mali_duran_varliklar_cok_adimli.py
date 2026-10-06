@@ -65,16 +65,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        "İşletme, ödenmiş sermayesi 1.000.000 ₺ olan bir şirketin paylarının 50.000 ₺'lik kısmını uzun vadeli amaçla elde tutmaktadır. Bu pay hangi hesapta izlenmelidir?",
+        "İşletme dönem içinde şu ortaklık paylarını uzun süre elde tutmak amacıyla edinmiştir: X A.Ş.'nin sermayesinin %4'ü için 50.000 ₺, Y A.Ş.'nin %20'si için 300.000 ₺, Z A.Ş.'nin %70'i için 900.000 ₺ ve W A.Ş.'nin %35'i için 450.000 ₺. Ayrıca borsada kısa sürede satmak üzere V A.Ş.'nin %8'ini temsil eden hisseler 60.000 ₺'ye alınmıştır.\n\nTekdüzen Hesap Planı'na göre '242 İştirakler' hesabına kaydedilecek toplam tutar kaç ₺'dir?",
         {
-            'A': '245 Bağlı Ortaklıklar',
-            'B': '242 İştirakler',
-            'C': '240 Bağlı Menkul Kıymetler',
-            'D': '300 Banka Kredileri',
-            'E': '120 Alıcılar',
+            'A': '1.700.000',
+            'B': '800.000',
+            'C': '750.000',
+            'D': '1.200.000',
+            'E': '1.650.000',
         },
         'C',
-        "Sahiplik oranı = 50.000 ÷ 1.000.000 = **%5**. %10'un altında ve uzun vadeli tutulduğundan pay **240 Bağlı Menkul Kıymetler** hesabında izlenir.",
+        "Sermayesine %10 ile %50 arasında katılınan işletmeler iştiraktir: Y (%20) 300.000 ₺ + W (%35) 450.000 ₺ = 750.000 ₺. %50'nin üzerindeki Z payı 245 Bağlı Ortaklıklar, %10'un altındaki uzun vadeli X payı 240 Bağlı Menkul Kıymetler, kısa vadeli satış amaçlı V hisseleri 110 Hisse Senetleri hesabında izlenir.",
         "1 Sıra No'lu MSUGT - 240 Bağlı Menkul Kıymetler",
     ),
     # düzey 2
@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        'Aşağıdakilerden hangisi maddi duran varlık (25), maddi olmayan duran varlık (26) ve mali duran varlık (24) ayrımı bakımından doğrudur?',
+        "Bir işletmenin dönem sonu kalanlarından bazıları şöyledir: 252 Binalar 900.000 ₺, 257 Birikmiş Amortismanlar 300.000 ₺, 260 Haklar 120.000 ₺, 268 Birikmiş Amortismanlar 40.000 ₺, 242 İştirakler 500.000 ₺, 240 Bağlı Menkul Kıymetler 100.000 ₺, 280 Gelecek Yıllara Ait Giderler 30.000 ₺, 110 Hisse Senetleri 80.000 ₺, 153 Ticari Mallar 200.000 ₺.\n\nBuna göre bu kalemlerden bilançonun duran varlıklar bölümünde yer alanların net toplamı kaç ₺'dir?",
         {
-            'A': "Bina başka bir ortaklığa yapılan yatırım sayıldığından mali duran varlık (24) grubunda 245 Bağlı Ortaklıklar'da izlenir.",
-            'B': 'İştirak payı fiziki bir kıymet sayıldığından maddi duran varlık (25) grubunda izlenir ve yararlı ömrü boyunca amortismana tabi tutulur.',
-            'C': 'Patent uzun vadeli bir finansal yatırım kabul edildiğinden mali duran varlık (24) grubunda izlenir ve değer düşüklüğü için karşılık ayrılabilir.',
-            'D': 'İştirak payı fiziki olmayan bir hak sayıldığından maddi olmayan duran varlık (26) grubunda izlenir ve itfa edilir.',
-            'E': 'Bina bir maddi duran varlık (25), patent bir maddi olmayan duran varlık (26), iştirak payı ise bir mali duran varlıktır (24).',
+            'A': '1.280.000',
+            'B': '1.350.000',
+            'C': '1.390.000',
+            'D': '1.210.000',
+            'E': '1.310.000',
         },
         'E',
-        '**Bina** fiziki varlıktır → 25 Maddi Duran Varlık; **patent** fiziki olmayan bir haktır → 26 Maddi Olmayan Duran Varlık; **iştirak payı** uzun vadeli finansal yatırımdır → 24 Mali Duran Varlık.',
+        'Duran varlıklar: maddi duran varlık 900.000 − 300.000 = 600.000 ₺; maddi olmayan duran varlık 120.000 − 40.000 = 80.000 ₺; mali duran varlıklar 500.000 + 100.000 = 600.000 ₺; gelecek yıllara ait giderler 30.000 ₺. Toplam 1.310.000 ₺. 110 Hisse Senetleri ve 153 Ticari Mallar dönen varlıktır.',
         "1 Sıra No'lu MSUGT - 24/25/26",
     ),
     # düzey 2
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        'İştiraklerden temettü (kâr payı) geliri işletme açısından ne zaman tahakkuk eder (gelir yazılır)?',
+        "Hesap dönemi takvim yılı olan işletme, X A.Ş.'nin sermayesinin %25'ine sahiptir ve payı '242 İştirakler' hesabında maliyetle izlemektedir. X A.Ş.'nin genel kurulu 20 Mart 2026'da 2025 yılı kârından toplam 400.000 ₺ nakit kâr payı dağıtılmasına karar vermiş; ödeme 15 Mayıs 2026'da yapılmıştır.\n\nBuna göre işletmenin bu kâr payını muhasebeleştirmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': 'İştirak edilen şirketin genel kurulunca kâr dağıtım kararı alındığında (kâr payına hak kazanıldığında)',
-            'B': 'İştirak ilişkisi devam ettiği sürece temettü geliri gelir olarak tahakkuk ettirilmez',
-            'C': 'İştirak payının satın alınıp bedelinin ödendiği anda, edinim maliyetinin tamamı üzerinden peşin olarak',
-            'D': 'İştirak edilen şirket kâr etsin veya zarar etsin, her ayın sonunda düzenli ve eşit tutarlarla tahakkuk ederek',
-            'E': 'İştirak payının üçüncü kişilere satıldığı anda, satış bedeli ile kayıtlı değer arasındaki fark kadar',
+            'A': "20 Mart 2026'da 100.000 ₺ temettü geliri kaydedilir",
+            'B': "31 Aralık 2025'te 100.000 ₺ gelir tahakkuk ettirilir",
+            'C': "Gelir 15 Mayıs 2026'da tahsil edildiğinde kaydedilir",
+            'D': "20 Mart 2026'da 400.000 ₺ temettü geliri kaydedilir",
+            'E': "X A.Ş. kârının %25'i 2025 yılında gelir yazılır",
         },
         'A',
-        'Temettü geliri, iştirak edilen şirketin **genel kurulunca kâr dağıtım kararı alınıp** işletmenin kâr payına hak kazandığı anda tahakkuk eder (gelir yazılır).',
+        'Kâr payı alacağı, iştirak edilen şirketin genel kurulunun dağıtım kararıyla doğar; gelir bu tarihte ve payı oranında kaydedilir: 400.000 × %25 = 100.000 ₺ (640 İştiraklerden Temettü Gelirleri). Bilanço tarihinde henüz dağıtım kararı olmadığından tahakkuk yapılmaz; tahsil tarihi gelirin doğuşunu belirlemez.',
         "1 Sıra No'lu MSUGT - 640; dönemsellik",
     ),
     # düzey 2
