@@ -3,16 +3,16 @@
     "id": "finmuh-surec-gen-0001",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisinin bakiyesi artırılırken hesabın alacak tarafına kayıt yapılır?",
+    "stem": "Bir işletmenin 320 Satıcılar hesabı mart ayı başında 85.000 ₺ alacak kalanı vermektedir. Ay içinde satıcılarla ilgili şu işlemler yapılmıştır:\n\n(1) 40.000 ₺ + %20 KDV tutarında ticari mal veresiye alınmıştır.\n\n(2) Bir satıcıya 30.000 ₺ banka havalesi yapılmıştır.\n\n(3) Bir satıcıya olan senetsiz borcun 20.000 ₺'lik kısmı için bono düzenlenip verilmiştir.\n\n(4) Veresiye alınan mallardan 6.000 ₺ + %20 KDV tutarındaki kısım kusurlu olduğu için satıcıya iade edilmiştir.\n\nBuna göre 320 Satıcılar hesabı mart ayı sonunda kaç ₺ alacak kalanı verir?",
     "options": {
-      "A": "255 Demirbaşlar",
-      "B": "153 Ticari Mallar",
-      "C": "320 Satıcılar",
-      "D": "100 Kasa",
-      "E": "120 Alıcılar"
+      "A": "83.000",
+      "B": "67.800",
+      "C": "75.800",
+      "D": "95.800",
+      "E": "77.000"
     },
     "answer": "C",
-    "solution": "**320 Satıcılar** bir kaynak (pasif) hesabıdır; pasif hesaplarda artışlar **alacak** tarafına yazılır. Diğer şıklar aktif (varlık) hesaptır ve artışları borç tarafına kaydedilir.",
+    "solution": "320 Satıcılar, senetsiz ticari borçları izleyen pasif hesaptır; borç doğunca alacaklandırılır, azalınca borçlandırılır. Alış KDV dâhil 48.000 ₺ alacağa yazılır; havale (30.000 ₺), bono verilmesi (borç 321'e aktarılır, 20.000 ₺) ve KDV dâhil iade (7.200 ₺) borca yazılır. Kalan = 85.000 + 48.000 − 30.000 − 20.000 − 7.200 = 75.800 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -47,16 +47,16 @@
     "id": "finmuh-surec-gen-0003",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisi bir aktifi düzenleyici (kontr aktif) hesaptır ve normalde alacak kalanı verir?",
+    "stem": "Bir işletmenin dönem sonu kesin mizanından alınan kalanlar şöyledir: 100 Kasa 40.000 ₺, 102 Bankalar 160.000 ₺, 103 Verilen Çekler ve Ödeme Emirleri 20.000 ₺, 120 Alıcılar 250.000 ₺, 129 Şüpheli Ticari Alacaklar Karşılığı 30.000 ₺, 153 Ticari Mallar 300.000 ₺, 254 Taşıtlar 400.000 ₺, 257 Birikmiş Amortismanlar 150.000 ₺, 320 Satıcılar 220.000 ₺.\n\nBuna göre işletmenin bilançosunda dönen varlıklar toplamı kaç ₺ olur?",
     "options": {
-      "A": "100 Kasa; borç kalanı verir",
-      "B": "257 Birikmiş Amortismanlar (-)",
-      "C": "600 Yurt İçi Satışlar; gider hesabı",
-      "D": "320 Satıcılar; borç kalanlı varlık",
-      "E": "153 Ticari Mallar; aktif hesaptır"
+      "A": "750.000",
+      "B": "700.000",
+      "C": "720.000",
+      "D": "950.000",
+      "E": "730.000"
     },
     "answer": "B",
-    "solution": "**257 Birikmiş Amortismanlar (-)** aktifi düzenleyici bir hesaptır; bilançoda duran varlığın altında eksi (-) gösterilir ve **alacak kalanı** verir; ilgili varlığın net defter değerini düşürür.",
+    "solution": "103 Verilen Çekler ve Ödeme Emirleri hazır değerleri, 129 Şüpheli Ticari Alacaklar Karşılığı ticari alacakları düzenleyen (alacak kalanı veren) aktif düzenleyici hesaplardır ve dönen varlıklardan düşülür. Dönen varlıklar = 40.000 + 160.000 − 20.000 + 250.000 − 30.000 + 300.000 = 700.000 ₺. 254 Taşıtlar ile 257 Birikmiş Amortismanlar duran varlık grubundadır; 320 Satıcılar ise kısa vadeli yabancı kaynaktır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -91,16 +91,16 @@
     "id": "finmuh-surec-gen-0005",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, satıcısına olan 30.000 ₺'lik senetsiz ticari borcuna karşılık bir borç senedi (bono) düzenleyip vermiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, satıcısına olan 90.000 ₺ senetsiz ticari borcunu şu şekilde kapatmıştır: 30.000 ₺'yi bankadan havale etmiş, 40.000 ₺ için üç ay vadeli bir bono düzenleyip vermiş, kalan tutar için de portföyündeki bir müşteri çekini ciro ederek satıcıya teslim etmiştir.\n\nBu işlemin yevmiye kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "321 Borç Senetleri (borç) 30.000 / 320 Satıcılar (alacak) 30.000",
-      "B": "320 Satıcılar (borç) 30.000 / 321 Borç Senetleri (alacak) 30.000",
-      "C": "120 Alıcılar (borç) 30.000 / 121 Alacak Senetleri (alacak) 30.000",
-      "D": "320 Satıcılar (borç) 30.000 / 100 Kasa (alacak) 30.000",
-      "E": "321 Borç Senetleri (borç) 30.000 / 100 Kasa (alacak) 30.000"
+      "A": "320 Satıcılar hesabı 70.000 ₺ borçlandırılır",
+      "B": "321 Borç Senetleri hesabı 40.000 ₺ alacaklandırılır",
+      "C": "101 Alınan Çekler hesabı 20.000 ₺ borçlandırılır",
+      "D": "103 Verilen Çekler ve Ödeme Emirleri hesabı 20.000 ₺ alacaklandırılır",
+      "E": "102 Bankalar hesabı 30.000 ₺ borçlandırılır"
     },
     "answer": "B",
-    "solution": "Senetsiz borç (320 Satıcılar) senetli borca (321 Borç Senetleri) dönüşür. Borç aynı kalır, yalnızca niteliği değişir: **320 Satıcılar (borç) 30.000 / 321 Borç Senetleri (alacak) 30.000**. Nakit çıkışı yoktur (mahsup işlemi).",
+    "solution": "Kayıt: 320 Satıcılar 90.000 ₺ borç; 102 Bankalar 30.000 ₺, 321 Borç Senetleri 40.000 ₺ ve 101 Alınan Çekler 20.000 ₺ alacak. Ciro edilen çek işletmenin kendi çeki olmadığından 103 değil 101 hesabından çıkar; bankadan yapılan ödeme 102'yi azaltır (alacak).",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -135,16 +135,16 @@
     "id": "finmuh-surec-gen-0007",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Temel muhasebe (bilanço) eşitliği aşağıdakilerden hangisidir?",
+    "stem": "Dönem başında varlıkları 900.000 ₺, yabancı kaynakları 350.000 ₺ olan bir işletmede dönem içinde şu işlemler yapılmıştır (KDV ihmal edilecektir):\n\n(1) 120.000 ₺'lik ticari mal veresiye alınmıştır.\n\n(2) Maliyeti 80.000 ₺ olan ticari mal 110.000 ₺'ye peşin satılmıştır.\n\n(3) 50.000 ₺ banka kredisi anaparası geri ödenmiştir.\n\n(4) İşletme sahibi kişisel ihtiyacı için kasadan 60.000 ₺ çekmiştir.\n\n(5) Döneme ait 25.000 ₺ kira gideri nakden ödenmiştir.\n\nBuna göre işletmenin dönem sonu özkaynak tutarı kaç ₺'dir?",
     "options": {
-      "A": "Borçlar = Varlıklar + Özkaynaklar",
-      "B": "Varlıklar = Gelirler − Giderler",
-      "C": "Varlıklar = Yabancı Kaynaklar + Özkaynaklar",
-      "D": "Özkaynaklar = Varlıklar + Borçlar",
-      "E": "Gelirler = Varlıklar + Özkaynaklar"
+      "A": "445.000",
+      "B": "520.000",
+      "C": "495.000",
+      "D": "465.000",
+      "E": "415.000"
     },
     "answer": "C",
-    "solution": "Bilanço eşitliği **Varlıklar = Kaynaklar**, yani **Aktif = Yabancı Kaynaklar + Özkaynaklar**'dır. İşletmenin sahip olduğu varlıklar, bu varlıkların finansman kaynağına eşittir.",
+    "solution": "Başlangıç özkaynağı = 900.000 − 350.000 = 550.000 ₺. Veresiye alış ve kredi ödemesi varlık ile yabancı kaynağı birlikte değiştirir, özkaynağı etkilemez. Satış kârı (110.000 − 80.000 = 30.000 ₺) özkaynağı artırır; sahibin çektiği 60.000 ₺ ve 25.000 ₺ kira gideri azaltır. Dönem sonu özkaynak = 550.000 + 30.000 − 60.000 − 25.000 = 495.000 ₺ (kontrol: varlıklar 915.000 − yabancı kaynaklar 420.000).",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -201,16 +201,16 @@
     "id": "finmuh-surec-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme sahibi, işletmeye kuruluş sermayesi olarak 500.000 ₺ nakit koymuş ve tutar işletme kasasına girmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "Üç ortak, her birinin payı eşit olmak üzere 900.000 ₺ sermayeli bir anonim şirket kurmuştur. Ortak A payını tamamen nakit olarak bankaya yatırmış, ortak B payı karşılığında 300.000 ₺ değerindeki bir taşıtı şirkete devretmiş, ortak C ise nakit payının yarısını tescilden önce bankaya yatırmış, kalanını yirmi dört ay içinde ödemeyi taahhüt etmiştir.\n\nTaahhüt ve ödeme kayıtları yapıldıktan sonra aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "100 Kasa (borç) 500.000 / 600 Yurt İçi Satışlar (alacak) 500.000",
-      "B": "100 Kasa (borç) 500.000 / 300 Banka Kredileri (alacak) 500.000",
-      "C": "500 Sermaye (borç) 500.000 / 100 Kasa (alacak) 500.000",
-      "D": "131 Ortaklardan Alacaklar (borç) 500.000 / 100 Kasa (alacak) 500.000",
-      "E": "100 Kasa (borç) 500.000 / 500 Sermaye (alacak) 500.000"
+      "A": "500 Sermaye hesabı 750.000 ₺ alacaklandırılmıştır",
+      "B": "254 Taşıtlar hesabı 150.000 ₺ borçlandırılmıştır",
+      "C": "102 Bankalar hesabı 600.000 ₺ borçlandırılmıştır",
+      "D": "501 Ödenmemiş Sermaye hesabı 900.000 ₺ alacaklandırılmıştır",
+      "E": "501 Ödenmemiş Sermaye hesabı 150.000 ₺ borç kalanı verir"
     },
     "answer": "E",
-    "solution": "Kasa (varlık) artar → **100 Kasa (borç)**; işletmenin sahibine karşı sermaye kaynağı doğar → **500 Sermaye (alacak)**. Kayıt: 100 Kasa (borç) 500.000 / 500 Sermaye (alacak) 500.000.",
+    "solution": "Taahhüt kaydı: 501 Ödenmemiş Sermaye 900.000 ₺ borç / 500 Sermaye 900.000 ₺ alacak. Ödemeler: 102 Bankalar 450.000 ₺ (A'nın 300.000 + C'nin 150.000) ve 254 Taşıtlar 300.000 ₺ borç / 501 Ödenmemiş Sermaye 750.000 ₺ alacak. 501, özkaynakları düzenleyen borç kalanlı hesaptır; C'nin ödenmemiş 150.000 ₺'si borç kalanı olarak kalır. TTK m. 344'e göre nakdî payların en az dörtte biri tescilden önce ödenir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -223,16 +223,16 @@
     "id": "finmuh-surec-gen-0011",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisi bir gelir tablosu (6'lı sınıf) hesabı değildir?",
+    "stem": "Bir ticaret işletmesinin dönem sonunda gelir tablosu hesaplarının kalanları şöyledir: 600 Yurt İçi Satışlar 900.000 ₺ alacak, 610 Satıştan İadeler 40.000 ₺ borç, 621 Satılan Ticari Mallar Maliyeti 500.000 ₺ borç, 632 Genel Yönetim Giderleri 90.000 ₺ borç, 642 Faiz Gelirleri 15.000 ₺ alacak, 689 Diğer Olağandışı Gider ve Zararlar 5.000 ₺ borç.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına aktarılmasıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "621 Satılan Ticari Malların Maliyeti",
-      "B": "600 Yurt İçi Satışlar",
-      "C": "642 Faiz Gelirleri",
-      "D": "320 Satıcılar",
-      "E": "660 Kısa Vadeli Borçlanma Giderleri"
+      "A": "600 hesabı 900.000 ₺ borçlandırılarak kapatılır",
+      "B": "610 hesabı 40.000 ₺ alacaklandırılarak kapatılır",
+      "C": "621 hesabının kalanı 690 hesabının borcuna aktarılır",
+      "D": "Aktarmalardan sonra 690, 230.000 ₺ alacak kalanı verir",
+      "E": "642 hesabının kalanı 690 hesabının alacağına aktarılır"
     },
     "answer": "D",
-    "solution": "**320 Satıcılar**, kodun ilk rakamı **3** olan bir bilanço (Kısa Vadeli Yabancı Kaynaklar) hesabıdır; gelir tablosu hesabı değildir. Diğerleri 6'lı sınıf (gelir tablosu) hesaplarıdır.",
+    "solution": "Gelir hesapları (600, 642) borçlandırılıp 690'ın alacağına, gider ve indirim hesapları (610, 621, 632, 689) alacaklandırılıp 690'ın borcuna aktarılır. 690 alacak toplamı 915.000 ₺, borç toplamı 635.000 ₺'dir; hesap 280.000 ₺ alacak kalanı (dönem kârı) verir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -289,16 +289,16 @@
     "id": "finmuh-surec-gen-0014",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, %20 KDV ile 60.000 ₺'lik (KDV hariç) ticari malı veresiye satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "Sürekli envanter yöntemini uygulayan işletme, liste fiyatı 80.000 ₺ olan ticari malı %10 ticari iskontoyla ve %20 KDV ile satın almıştır. KDV dâhil bedelin 30.000 ₺'si peşin ödenmiş, kalanı veresiyedir. Malın işletmenin deposuna taşınması için nakliyeciye ayrıca 2.000 ₺ + %20 KDV nakit ödenmiştir.\n\nBu işlemlerin kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "153 Ticari Mallar (borç) 60.000 + 391 Hesaplanan KDV (borç) 12.000 / 320 Satıcılar (alacak) 72.000",
-      "B": "153 Ticari Mallar (borç) 60.000 + 191 İndirilecek KDV (borç) 12.000 / 320 Satıcılar (alacak) 72.000",
-      "C": "153 Ticari Mallar (borç) 48.000 + 191 İndirilecek KDV (borç) 12.000 / 320 Satıcılar (alacak) 60.000",
-      "D": "320 Satıcılar (borç) 72.000 / 153 Ticari Mallar (alacak) 60.000 + 191 İndirilecek KDV (alacak) 12.000",
-      "E": "153 Ticari Mallar (borç) 72.000 / 320 Satıcılar (alacak) 72.000"
+      "A": "320 Satıcılar hesabı 86.400 ₺ alacaklandırılır",
+      "B": "153 Ticari Mallar hesabı toplam 74.000 ₺ borçlandırılır",
+      "C": "191 İndirilecek KDV hesabı 16.000 ₺ borçlandırılır",
+      "D": "760 Pazarlama Satış ve Dağıtım Giderleri 2.000 ₺ borçlandırılır",
+      "E": "100 Kasa hesabı toplam 30.000 ₺ alacaklandırılır"
     },
     "answer": "B",
-    "solution": "KDV = 60.000 × %20 = 12.000 ₺ (alışta **191 İndirilecek KDV**, borç). Kayıt: 153 Ticari Mallar (borç) 60.000 + 191 İndirilecek KDV (borç) 12.000 / 320 Satıcılar (alacak) 72.000.",
+    "solution": "Ticari iskonto faturada düşülür: mal bedeli 72.000 ₺, KDV 14.400 ₺. Alış nakliyesi malın maliyetine eklenir: 153 = 72.000 + 2.000 = 74.000 ₺; 191 = 14.400 + 400 = 14.800 ₺. Kasadan çıkan 30.000 + 2.400 = 32.400 ₺; 320 Satıcılar = 86.400 − 30.000 = 56.400 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -311,16 +311,16 @@
     "id": "finmuh-surec-gen-0015",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, elindeki 25.000 ₺ nominal değerli bir alacak senedini vadesinde nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, portföyündeki 60.000 ₺ nominal değerli müşteri senedini vadesinde tahsil edilmek üzere bankaya vermiştir. Banka senedi vadesinde tahsil etmiş, 300 ₺ tahsil komisyonunu keserek kalan tutarı işletmenin vadesiz hesabına aktarmış ve dekontu göndermiştir.\n\nTahsilat kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "121 Alacak Senetleri (borç) 25.000 / 100 Kasa (alacak) 25.000",
-      "B": "100 Kasa (borç) 25.000 / 600 Yurt İçi Satışlar (alacak) 25.000",
-      "C": "321 Borç Senetleri (borç) 25.000 / 100 Kasa (alacak) 25.000",
-      "D": "100 Kasa (borç) 25.000 / 121 Alacak Senetleri (alacak) 25.000",
-      "E": "100 Kasa (borç) 25.000 / 120 Alıcılar (alacak) 25.000"
+      "A": "102 Bankalar hesabı 60.000 ₺ borçlandırılır",
+      "B": "121 Alacak Senetleri hesabı 59.700 ₺ alacaklandırılır",
+      "C": "780 Finansman Giderleri hesabı 300 ₺ borçlandırılır",
+      "D": "653 Komisyon Giderleri hesabı 300 ₺ borçlandırılır",
+      "E": "120 Alıcılar hesabı 60.000 ₺ alacaklandırılır"
     },
     "answer": "D",
-    "solution": "Kasa (varlık) artar → **100 Kasa (borç)**; eldeki alacak senedi (varlık) tahsille çıkar → **121 Alacak Senetleri (alacak)**. Kayıt: 100 Kasa (borç) 25.000 / 121 Alacak Senetleri (alacak) 25.000.",
+    "solution": "Kayıt: 102 Bankalar 59.700 ₺ ve 653 Komisyon Giderleri 300 ₺ borç / 121 Alacak Senetleri 60.000 ₺ alacak. Senet nominal değeriyle 121'den çıkar; bankanın kestiği tahsil komisyonu bir finansman maliyeti değil, diğer olağan gider niteliğindeki komisyon gideridir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -333,16 +333,16 @@
     "id": "finmuh-surec-gen-0016",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdakilerden hangisi bir özkaynak düzenleyici (kontr özkaynak) hesaptır ve normalde borç kalanı vererek özkaynaklardan (-) düşülür?",
+    "stem": "Bir anonim şirketin dönem sonu bilançosuna esas kalanlar şöyledir: 500 Sermaye 1.000.000 ₺, 501 Ödenmemiş Sermaye 200.000 ₺, 520 Hisse Senedi İhraç Primleri 30.000 ₺, 540 Yasal Yedekler 80.000 ₺, 580 Geçmiş Yıllar Zararları 120.000 ₺, 590 Dönem Net Kârı 90.000 ₺. Ayrıca 320 Satıcılar hesabının 150.000 ₺ alacak kalanı bulunmaktadır.\n\nBuna göre şirketin özkaynak toplamı kaç ₺'dir?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "320 Satıcılar",
-      "C": "103 Verilen Çekler ve Ödeme Emirleri (-)",
-      "D": "257 Birikmiş Amortismanlar (-)",
-      "E": "501 Ödenmemiş Sermaye (-)"
+      "A": "760.000",
+      "B": "850.000",
+      "C": "700.000",
+      "D": "800.000",
+      "E": "880.000"
     },
     "answer": "E",
-    "solution": "**501 Ödenmemiş Sermaye (-)**, taahhüt edilip henüz ödenmemiş sermayeyi gösterir; **borç kalanı** verir ve özkaynaklar içinde 500 Sermaye'den **(-)** düşülür. 257 ve 103 ise aktifi düzenleyici hesaplardır.",
+    "solution": "501 Ödenmemiş Sermaye ve 580 Geçmiş Yıllar Zararları özkaynakları düzenleyen, borç kalanı veren hesaplardır ve (−) olarak gösterilir. Özkaynak = 1.000.000 − 200.000 + 30.000 + 80.000 − 120.000 + 90.000 = 880.000 ₺. 320 Satıcılar yabancı kaynaktır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -399,16 +399,16 @@
     "id": "finmuh-surec-gen-0019",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 Kasa | 50.000 | |\n| 131 Ortaklardan Alacaklar | | 50.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "Bir işletmenin yevmiye defterindeki bir maddede 153 Ticari Mallar hesabına 40.000 ₺ ve 191 İndirilecek KDV hesabına 8.000 ₺ borç; 159 Verilen Sipariş Avansları hesabına 18.000 ₺ ve 320 Satıcılar hesabına 30.000 ₺ alacak kaydedilmiştir.\n\nBu yevmiye maddesi aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Ortağa işletme kasasından nakit borç para verilmesi işlemidir",
-      "B": "Ortağın işletmeye nakit sermaye koyması (sermaye artışı)",
-      "C": "İşletmenin bankadan nakit kredi kullanması işlemidir",
-      "D": "İşletmenin ortağına nakit olarak kâr payı dağıtması işlemi",
-      "E": "Ortağın işletmeye olan borcunu nakden ödemesi (tahsilat)"
+      "A": "Satıcıya 48.000 ₺ sipariş avansı verilmesi, bunun 18.000 ₺'sinin peşin ödenmesi",
+      "B": "Müşteriden 18.000 ₺ avans alınarak 40.000 ₺'lik mal satılması",
+      "C": "Satıcıya iade edilen malın bedelinin avanstan düşülmesi",
+      "D": "Avansın 30.000 ₺'lik kısmının satıcıdan geri alınması",
+      "E": "Avans verilen malın teslim alınması, kalan bedelin veresiye bırakılması"
     },
     "answer": "E",
-    "solution": "Kasaya nakit girişi (100 borç) ve ortaklardan alacağın azalması (131 alacak), **ortağın işletmeye olan borcunu nakden ödemesi** (işletmenin tahsilatı) anlamına gelir.",
+    "solution": "Borçta 153 ve 191'in bulunması KDV'li bir mal alışını gösterir: KDV dâhil bedel 48.000 ₺. Bunun 18.000 ₺'si daha önce verilen sipariş avansından mahsup edilmiş (159 alacak), kalan 30.000 ₺ satıcıya borç yazılmıştır (320 alacak). Avans alınması 340 hesabını, mal satışı 600 ve 391 hesaplarını çalıştırırdı.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -443,16 +443,16 @@
     "id": "finmuh-surec-gen-0021",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 100 Kasa | 24.000 | |\n| 600 Yurt İçi Satışlar | | 20.000 |\n| 391 Hesaplanan KDV | | 4.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir? (KDV %20)",
+    "stem": "Bir işletmenin yevmiye defterindeki bir maddede 100 Kasa hesabına 36.000 ₺ ve 121 Alacak Senetleri hesabına 84.000 ₺ borç; 600 Yurt İçi Satışlar hesabına 100.000 ₺ ve 391 Hesaplanan KDV hesabına 20.000 ₺ alacak kaydedilmiştir.\n\nBu yevmiye maddesi aşağıdaki işlemlerden hangisine aittir?",
     "options": {
-      "A": "Veresiye mal satışı",
-      "B": "Peşin mal alışı",
-      "C": "Peşin (nakit) mal satışı",
-      "D": "Alacak senedinin tahsili",
-      "E": "Banka kredisi kullanımı"
+      "A": "120.000 ₺'lik mal alınıp bedelin bir kısmının senetle ödenmesi",
+      "B": "Müşteriden 84.000 ₺'lik senet ve 36.000 ₺ nakit tahsil edilmesi",
+      "C": "Mal satışı; KDV dâhil bedelin bir kısmı peşin, kalanı senetle",
+      "D": "Senetli satışta müşteriye 20.000 ₺ iskonto yapılması",
+      "E": "Müşteriden alınan 100.000 ₺'lik avansın satışla mahsup edilmesi"
     },
     "answer": "C",
-    "solution": "Kasanın borçlanması nakit girişini, 600 ve 391'in alacaklanması ise satış hasılatı + hesaplanan KDV'yi gösterir. 20.000 × %20 = 4.000 KDV ile toplam 24.000 ₺ **nakit (peşin) satış** yapılmıştır.",
+    "solution": "600 ve 391'in alacaklandırılması KDV'li bir satışı gösterir: matrah 100.000 ₺, KDV 20.000 ₺, toplam 120.000 ₺. Bedelin 36.000 ₺'si nakit (100 borç), 84.000 ₺'si için alacak senedi alınmıştır (121 borç). Yalnız alacak tahsili gelir hesabı çalıştırmaz; iskonto 611'i, avans mahsubu 340'ı borçlandırırdı.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -465,16 +465,16 @@
     "id": "finmuh-surec-gen-0022",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir hesabın dönem içi borç toplamı 45.000 ₺, alacak toplamı 32.000 ₺'dir. Bu hesabın kalanı ile ilgili aşağıdakilerden hangisi doğrudur?",
+    "stem": "Verdiği çekleri 103 Verilen Çekler ve Ödeme Emirleri hesabında izleyen bir işletmenin 102 Bankalar hesabı ay başında 120.000 ₺ borç kalanı vermektedir. Ay içindeki işlemler:\n\n(1) Bir müşteri 85.000 ₺ borcunu havale ile ödemiştir.\n\n(2) Bir satıcıya 60.000 ₺ havale yapılmıştır.\n\n(3) Bankadan 100.000 ₺ kredi kullanılmış; banka 1.500 ₺ dosya masrafını keserek kalanı hesaba aktarmıştır.\n\n(4) Geçen ay bir satıcıya verilen 25.000 ₺'lik çek bankaya ibraz edilerek hesaptan ödenmiştir.\n\n(5) Kasadaki paranın 15.000 ₺'si bankaya yatırılmıştır.\n\nBuna göre 102 Bankalar hesabı ay sonunda kaç ₺ borç kalanı verir?",
     "options": {
-      "A": "13.000 ₺ borç kalanı",
-      "B": "13.000 ₺ alacak kalanı",
-      "C": "32.000 ₺ borç kalanı",
-      "D": "Kalan vermez (kapalı hesap)",
-      "E": "77.000 ₺ borç kalanı"
+      "A": "233.500",
+      "B": "258.500",
+      "C": "235.000",
+      "D": "218.500",
+      "E": "208.500"
     },
     "answer": "A",
-    "solution": "Kalan = Borç toplamı − Alacak toplamı = 45.000 − 32.000 = **13.000 ₺**. Borç tarafı büyük olduğundan hesap **13.000 ₺ borç kalanı** verir.",
+    "solution": "Bankaya giren tutarlar borca, çıkanlar alacağa yazılır: 120.000 + 85.000 − 60.000 + 98.500 − 25.000 + 15.000 = 233.500 ₺ borç kalanı. Kredide hesaba net 98.500 ₺ girer. Verilen çek, verildiği gün 103'e alacak yazılmıştı; bankaya ibraz edilip ödendiğinde 103 borç / 102 alacak kaydı yapılır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -641,16 +641,16 @@
     "id": "finmuh-surec-gen-0030",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, bankadan 150.000 ₺ nakit kredi kullanmış ve tutar banka hesabına geçmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "7/A seçeneğini uygulayan işletme 1 Kasım'da bankadan altı ay vadeli 300.000 ₺ kredi kullanmıştır. Banka, kredinin 18.000 ₺ faizini peşin, 1.200 ₺ dosya masrafını da keserek kalan tutarı işletmenin hesabına aktarmıştır. İşletme peşin ödenen faizi dönemsellik gereği önce gelecek aylara ait gider olarak izlemektedir.\n\nKredi kullanım kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "300 Banka Kredileri (borç) 150.000 / 600 Yurt İçi Satışlar (alacak) 150.000",
-      "B": "102 Bankalar (borç) 150.000 / 300 Banka Kredileri (alacak) 150.000",
-      "C": "102 Bankalar (borç) 150.000 / 500 Sermaye (alacak) 150.000",
-      "D": "300 Banka Kredileri (borç) 150.000 / 102 Bankalar (alacak) 150.000",
-      "E": "100 Kasa (borç) 150.000 / 300 Banka Kredileri (alacak) 150.000"
+      "A": "300 Banka Kredileri hesabı 280.800 ₺ alacaklandırılır",
+      "B": "180 Gelecek Aylara Ait Giderler hesabı 18.000 ₺ borçlandırılır",
+      "C": "102 Bankalar hesabı kredi tutarı olan 300.000 ₺ borçlandırılır",
+      "D": "780 Finansman Giderleri hesabı 19.200 ₺ borçlandırılır",
+      "E": "400 Banka Kredileri hesabı 300.000 ₺ alacaklandırılır"
     },
     "answer": "B",
-    "solution": "Banka mevduatı (varlık) artar → **102 Bankalar (borç)**; kredi borcu (kaynak) doğar → **300 Banka Kredileri (alacak)**. Kayıt: 102 (borç) 150.000 / 300 (alacak) 150.000.",
+    "solution": "Kayıt: 102 Bankalar 280.800 ₺, 180 Gelecek Aylara Ait Giderler 18.000 ₺ ve 780 Finansman Giderleri 1.200 ₺ borç / 300 Banka Kredileri 300.000 ₺ alacak. Kredi anapara tutarıyla ve vadesi bir yılı aşmadığından 300'de izlenir; peşin faiz döneme düşen kısmı kadar sonradan gidere aktarılır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -663,16 +663,16 @@
     "id": "finmuh-surec-gen-0031",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, müşterisinden olan senetsiz ticari alacağını nakden tahsil etmiştir. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, bir müşterisinden olan 90.000 ₺ senetsiz ticari alacağın 40.000 ₺'si için müşterinin çekini, 30.000 ₺'si için iki ay vadeli bir bono almış; kalan tutar müşteri tarafından işletmenin banka hesabına havale edilmiştir.\n\nBu işlemin yevmiye kaydıyla ilgili aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "121 Alacak Senetleri (borç) / 120 Alıcılar (alacak)",
-      "B": "120 Alıcılar (borç) / 100 Kasa (alacak)",
-      "C": "100 Kasa (borç) / 320 Satıcılar (alacak)",
-      "D": "100 Kasa (borç) / 600 Yurt İçi Satışlar (alacak)",
-      "E": "100 Kasa (borç) / 120 Alıcılar (alacak)"
+      "A": "101 Alınan Çekler hesabı 40.000 ₺ borçlandırılır",
+      "B": "121 Alacak Senetleri hesabı 30.000 ₺ borçlandırılır",
+      "C": "102 Bankalar hesabı 20.000 ₺ borçlandırılır",
+      "D": "120 Alıcılar hesabı 90.000 ₺ alacaklandırılır",
+      "E": "103 Verilen Çekler hesabı 40.000 ₺ borçlandırılır"
     },
     "answer": "E",
-    "solution": "Kasa (varlık) artar → **100 Kasa (borç)**; alıcılardan olan alacak (varlık) azalır → **120 Alıcılar (alacak)**. Kayıt: 100 Kasa (borç) / 120 Alıcılar (alacak). Satış hasılatı bu aşamada tekrar kaydedilmez.",
+    "solution": "Kayıt: 101 Alınan Çekler 40.000 ₺, 121 Alacak Senetleri 30.000 ₺ ve 102 Bankalar 20.000 ₺ borç / 120 Alıcılar 90.000 ₺ alacak. Müşteriden alınan çek 101'de izlenir; 103 işletmenin kendi düzenleyip verdiği çekler içindir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -685,16 +685,16 @@
     "id": "finmuh-surec-gen-0032",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir alış işlemi yevmiye defterine hiç kaydedilmemiştir. İşlemin hem borç hem alacak tarafı birlikte eksik kaldığından dönem sonunda düzenlenen mizanın borç ve alacak toplamları yine eşit çıkmıştır.\n\nBu durum mizan kontrolü bakımından neyi gösterir?",
+    "stem": "Bir işletmenin ay sonu geçici mizanında borç toplamı 2.480.000 ₺, alacak toplamı 2.450.000 ₺'dir. İnceleme sonunda şu hatalar bulunmuştur:\n\n(1) Bir müşteriden yapılan 30.000 ₺'lik nakit tahsilat 100 Kasa hesabına borç yazılmış, 120 Alıcılar hesabına alacak kaydı unutulmuştur.\n\n(2) 12.000 ₺'lik veresiye bir hizmet alımı hiç kaydedilmemiştir.\n\n(3) 8.000 ₺'lik bir yönetim gideri 770 yerine 760 hesabına kaydedilmiştir.\n\nHatalar düzeltildikten sonra mizanın borç ve alacak toplamları kaçar ₺ olur?",
     "options": {
-      "A": "Mizan eşitse bütün işlemlerin eksiksiz kaydedildiği kesinleşir.",
-      "B": "İki tarafı birlikte etkileyen eksiklikler eşitliği bozmayabilir; mizan tek başına tam doğruluk kanıtı değildir.",
-      "C": "Borç ve alacak toplamlarının eşit olması muhasebe sisteminde hata bulunduğunu gösterir.",
-      "D": "Mizan kasa hesabındaki hataları ortaya çıkarır, diğer hataları göstermez.",
-      "E": "Eşitlik, her hesabın doğru hesap koduyla kullanıldığını kanıtlar."
+      "A": "2.480.000",
+      "B": "2.492.000",
+      "C": "2.504.000",
+      "D": "2.510.000",
+      "E": "2.522.000"
     },
     "answer": "B",
-    "solution": "Bir işlem tamamen atlanırsa borç ve alacak tarafları aynı tutarda eksik kalır; bu nedenle mizan eşitliği bozulmayabilir. Mizan, aritmetik eşitliği sınar ancak **işlem atlama, yanlış hesap kullanma veya iki tarafı eşit etkileyen hataları tek başına ortaya çıkaramaz**.",
+    "solution": "(1) Tek taraflı kayıt eksikliği alacak toplamını 30.000 ₺ eksik bırakmıştır. (2) Hiç kaydedilmeyen işlem iki tarafı da 12.000 ₺ eksik bırakır; mizan eşitliğini bozmaz ama toplamları etkiler. (3) Yanlış hesaba kayıt toplamları değiştirmez. Düzeltilmiş borç = 2.480.000 + 12.000 = 2.492.000 ₺; alacak = 2.450.000 + 30.000 + 12.000 = 2.492.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -707,16 +707,16 @@
     "id": "finmuh-surec-gen-0033",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletmenin sahip veya ortaklarına dağıtmayı kararlaştırdığı kâr payı için doğan borç aşağıdaki hesaplardan hangisinde izlenir?",
+    "stem": "Bir anonim şirketin genel kurulu, 590 Dönem Net Kârı hesabındaki 500.000 ₺'nin %5'inin birinci tertip yasal yedek olarak ayrılmasına, 100.000 ₺'nin ortaklara nakit kâr payı olarak dağıtılmasına ve kalanın olağanüstü yedeklere aktarılmasına karar vermiştir. Kâr payı henüz ödenmemiştir; stopaj ihmal edilecektir.\n\nKâr dağıtım kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "331 Ortaklara Borçlar",
-      "B": "500 Sermaye",
-      "C": "770 Genel Yönetim Giderleri",
-      "D": "131 Ortaklardan Alacaklar",
-      "E": "120 Alıcılar"
+      "A": "540 Yasal Yedekler hesabı 25.000 ₺ alacaklandırılır",
+      "B": "331 Ortaklara Borçlar hesabı 125.000 ₺ alacaklandırılır",
+      "C": "590 Dönem Net Kârı hesabı 500.000 ₺ alacaklandırılır",
+      "D": "542 Olağanüstü Yedekler hesabı 400.000 ₺ alacaklandırılır",
+      "E": "500 Sermaye hesabı 100.000 ₺ alacaklandırılır"
     },
     "answer": "A",
-    "solution": "İşletmenin ortaklarına olan borçları (dağıtılacak kâr payı, ortakların işletmeye verdiği borçlar vb.) **331 Ortaklara Borçlar** hesabında izlenir. 131 ise tersine, ortaklardan olan alacaklardır.",
+    "solution": "Kayıt: 590 Dönem Net Kârı 500.000 ₺ borç / 540 Yasal Yedekler 25.000 ₺, 331 Ortaklara Borçlar 100.000 ₺ ve 542 Olağanüstü Yedekler 375.000 ₺ alacak. Dağıtılan kâr, ödeninceye kadar ortaklara borç olarak izlenir; 590 dağıtımla kapatılacağı için borçlandırılır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -751,16 +751,16 @@
     "id": "finmuh-surec-gen-0035",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme yönetim biriminde kullanmak üzere 20.000 ₺ + %20 KDV bedelle peşin (nakit) demirbaş satın almıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme, yönetim katında kullanılmak üzere 40.000 ₺ + %20 KDV bedelle büro mobilyası satın almıştır. KDV dâhil bedelin yarısı için işletmenin kendi banka hesabına bağlı bir çek düzenlenip verilmiş, kalan yarısı için de iki ay vadeli bir bono düzenlenmiştir. İşletme verdiği çekleri 103 hesabında izlemektedir.\n\nBu işlemin yevmiye kaydında aşağıdakilerden hangisi yer almaz?",
     "options": {
-      "A": "255 Demirbaşlar (borç) 20.000 + 391 Hesaplanan KDV (borç) 4.000 / 100 Kasa (alacak) 24.000",
-      "B": "770 Genel Yönetim Giderleri (borç) 24.000 / 100 Kasa (alacak) 24.000",
-      "C": "153 Ticari Mallar (borç) 20.000 + 191 İndirilecek KDV (borç) 4.000 / 100 Kasa (alacak) 24.000",
-      "D": "255 Demirbaşlar (borç) 20.000 + 191 İndirilecek KDV (borç) 4.000 / 100 Kasa (alacak) 24.000",
-      "E": "255 Demirbaşlar (borç) 24.000 / 100 Kasa (alacak) 24.000"
+      "A": "255 Demirbaşlar hesabına 40.000 ₺ borç",
+      "B": "191 İndirilecek KDV hesabına 8.000 ₺ borç",
+      "C": "103 Verilen Çekler ve Ödeme Emirleri hesabına 24.000 ₺ alacak",
+      "D": "770 Genel Yönetim Giderleri hesabına 40.000 ₺ borç",
+      "E": "321 Borç Senetleri hesabına 24.000 ₺ alacak"
     },
     "answer": "D",
-    "solution": "Demirbaş bir duran varlıktır → **255 Demirbaşlar (borç) 20.000**; alışta KDV **191 İndirilecek KDV (borç) 4.000** (20.000×%20); nakit çıkışı **100 Kasa (alacak) 24.000**. Ticari mal (153) değildir; satış amacıyla değil kullanım amacıyla alınmıştır.",
+    "solution": "Büro mobilyası birden fazla dönem kullanılacağı için gider değil 255 Demirbaşlar hesabına aktifleştirilir. Kayıt: 255 Demirbaşlar 40.000 ₺ ve 191 İndirilecek KDV 8.000 ₺ borç / 103 Verilen Çekler ve Ödeme Emirleri 24.000 ₺ ve 321 Borç Senetleri 24.000 ₺ alacak. Yönetim gideri ancak amortisman yoluyla oluşur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -839,16 +839,16 @@
     "id": "finmuh-surec-gen-0039",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, 30.000 ₺ + %20 KDV tutarındaki ticari malı, karşılığında müşteriden alacak senedi alarak (senetli) satmıştır. Bu satışın kaydında borçlandırılacak hesap aşağıdakilerden hangisidir?",
+    "stem": "Aralıklı envanter yöntemini uygulayan işletme, daha önce 50.000 ₺ + %20 KDV ile veresiye sattığı malın 10.000 ₺'lik kısmını kusurlu olduğu için geri almıştır. Kalan alacak için müşteriye KDV hariç tutar üzerinden %2 erken ödeme iskontosu yapılmış (iskonto KDV'yi de düzeltmektedir) ve kalan bedel banka havalesiyle tahsil edilmiştir.\n\nBu işlemlerin kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "600 Yurt İçi Satışlar",
-      "B": "321 Borç Senetleri",
-      "C": "100 Kasa",
-      "D": "121 Alacak Senetleri",
-      "E": "120 Alıcılar"
+      "A": "610 Satıştan İadeler hesabı 12.000 ₺ borçlandırılır",
+      "B": "611 Satış İskontoları hesabı 960 ₺ borçlandırılır",
+      "C": "120 Alıcılar hesabı iade nedeniyle 12.000 ₺ borçlandırılır",
+      "D": "102 Bankalar hesabı tahsilatta 47.040 ₺ borçlandırılır",
+      "E": "391 Hesaplanan KDV hesabı iade nedeniyle 2.000 ₺ alacaklandırılır"
     },
     "answer": "D",
-    "solution": "Senet karşılığı satışta işletmenin senetli alacağı doğar → **121 Alacak Senetleri (borç) 36.000**. Karşılığında 600 Yurt İçi Satışlar (alacak) 30.000 ve 391 Hesaplanan KDV (alacak) 6.000 alacaklanır.",
+    "solution": "İade: 610 Satıştan İadeler 10.000 ₺ ve 391 Hesaplanan KDV 2.000 ₺ borç / 120 Alıcılar 12.000 ₺ alacak. Kalan alacak 48.000 ₺ (40.000 + 8.000 KDV). İskonto 40.000 × %2 = 800 ₺, KDV düzeltmesi 160 ₺. Tahsilat: 102 Bankalar 47.040 ₺, 611 Satış İskontoları 800 ₺ ve 391 Hesaplanan KDV 160 ₺ borç / 120 Alıcılar 48.000 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -861,16 +861,16 @@
     "id": "finmuh-surec-gen-0040",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme 120.000 ₺ tutarındaki bir makineyi satın almış; bedelin 40.000 ₺'sini bankadan ödemiş, kalan 80.000 ₺ için satıcıya borçlanmıştır. KDV ihmal edilecektir.\n\nBu işlemin temel muhasebe eşitliğine etkisi hangisidir?",
+    "stem": "Dönem başında aktif toplamı 2.000.000 ₺ olan bir işletmede dönem içinde şu işlemler yapılmıştır (KDV ihmal edilecektir):\n\n(1) 300.000 ₺'lik bir makine alınmış, bedelin 100.000 ₺'si bankadan ödenmiş, kalanı veresiyedir.\n\n(2) Müşterilerden 80.000 ₺ alacak tahsil edilmiştir.\n\n(3) Satıcılara 50.000 ₺ borç ödenmiştir.\n\n(4) Ortaklar 200.000 ₺ nakit sermaye artırımında bulunmuştur.\n\n(5) Maliyeti 60.000 ₺ olan ticari mal 90.000 ₺'ye veresiye satılmıştır.\n\nBuna göre işletmenin dönem sonu aktif toplamı kaç ₺'dir?",
     "options": {
-      "A": "Varlıklar net 80.000 ₺, yabancı kaynaklar 80.000 ₺ artar; özkaynaklar değişmez.",
-      "B": "Varlıklar 40.000 ₺ azalır, borçlar 80.000 ₺ artar; özkaynaklar 120.000 ₺ azalır.",
-      "C": "Varlıkların bileşimi değişir; toplam varlık ve borçlar değişmez.",
-      "D": "Varlıklar ve borçlar 120.000 ₺ artar; banka hesabındaki azalış dikkate alınmaz.",
-      "E": "Varlıklar 120.000 ₺, özkaynaklar 120.000 ₺ artar; borçlar değişmez."
+      "A": "2.380.000",
+      "B": "2.430.000",
+      "C": "2.460.000",
+      "D": "2.480.000",
+      "E": "2.440.000"
     },
     "answer": "A",
-    "solution": "Makine 120.000 ₺ artarken banka 40.000 ₺ azalır; varlıklardaki **net artış 80.000 ₺**dir. Satıcıya 80.000 ₺ borç doğduğundan yabancı kaynaklar da 80.000 ₺ artar. İşlem gelir veya gider yaratmadığı için özkaynak değişmez.",
+    "solution": "(1) Makine +300.000, banka −100.000: net +200.000. (2) Alacak tahsili aktif içi değişimdir: 0. (3) Borç ödemesi aktifi 50.000 azaltır. (4) Sermaye artırımı aktifi 200.000 artırır. (5) Stok −60.000, alacak +90.000: net +30.000. Aktif toplamı = 2.000.000 + 200.000 − 50.000 + 200.000 + 30.000 = 2.380.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -927,16 +927,16 @@
     "id": "finmuh-surec-gen-0043",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, ortağı Ayşe Yıldız'a işletmeden 50.000 ₺ nakit borç para vermiştir. Bu işlemin yevmiye kaydı aşağıdakilerden hangisidir?",
+    "stem": "İşletme ay başında ortağı A'ya 50.000 ₺ nakit borç para vermiştir. Ay ortasında A bu borcun 20.000 ₺'sini nakden geri ödemiştir. Ay sonunda işletmenin nakit ihtiyacı nedeniyle ortağı B, sermaye taahhüdü dışında işletmeye 30.000 ₺ borç vermiş ve tutar banka hesabına yatırılmıştır. Ay başında bu hesapların kalanı yoktur.\n\nAy sonunda ilgili hesapların kalanlarıyla ilgili aşağıdakilerden hangisi doğrudur?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri (borç) 50.000 / 100 Kasa (alacak) 50.000",
-      "B": "500 Sermaye (borç) 50.000 / 100 Kasa (alacak) 50.000",
-      "C": "100 Kasa (borç) 50.000 / 131 Ortaklardan Alacaklar (alacak) 50.000",
-      "D": "331 Ortaklara Borçlar (borç) 50.000 / 100 Kasa (alacak) 50.000",
-      "E": "131 Ortaklardan Alacaklar (borç) 50.000 / 100 Kasa (alacak) 50.000"
+      "A": "131 Ortaklardan Alacaklar 50.000 ₺; 331 Ortaklara Borçlar 30.000 ₺",
+      "B": "131 Ortaklardan Alacaklar 30.000 ₺ alacak; 331 Ortaklara Borçlar 30.000 ₺ borç",
+      "C": "131 Ortaklardan Alacaklar 30.000 ₺; 500 Sermaye 30.000 ₺ artmıştır",
+      "D": "131 Ortaklardan Alacaklar 20.000 ₺; 331 Ortaklara Borçlar 30.000 ₺",
+      "E": "131 Ortaklardan Alacaklar 30.000 ₺ borç; 331 Ortaklara Borçlar 30.000 ₺ alacak"
     },
     "answer": "E",
-    "solution": "İşletmenin ortağından alacağı doğar → **131 Ortaklardan Alacaklar** borçlanır; nakit çıktığı için **100 Kasa** alacaklanır. Ortağa borç para verme, gider ya da sermaye azalışı değildir.",
+    "solution": "A'ya verilen borç 131 Ortaklardan Alacaklar hesabına 50.000 ₺ borç yazılır; geri ödenen 20.000 ₺ alacağa yazılır, kalan 30.000 ₺ borç kalanıdır. B'nin sermaye dışında verdiği borç 331 Ortaklara Borçlar hesabına 30.000 ₺ alacak yazılır. Alacak ve borç farklı ortaklara ait olduğundan netleştirilmez; sermaye taahhüdü olmadığından 500 değişmez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -949,16 +949,16 @@
     "id": "finmuh-surec-gen-0044",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme bankadaki mevduatından 20.000 ₺ çekerek kasasına koymuştur. Bu işlemin bilanço büyüklüğüne (aktif toplamına) etkisi nedir?",
+    "stem": "Dönem başında aktif toplamı 1.500.000 ₺ olan bir işletmede aşağıdaki işlemlerden yalnız biri gerçekleşmiş ve bunun sonucunda aktif toplamı da pasif toplamı da 1.560.000 ₺'ye yükselmiştir. KDV ihmal edilecektir.\n\nGerçekleşen işlem aşağıdakilerden hangisidir?",
     "options": {
-      "A": "Pasif toplamı 20.000 ₺ artar, çünkü yeni bir kaynak doğmuştur",
-      "B": "Aktif toplamı değişmez, varlık bileşimi değişir",
-      "C": "Aktif toplamı 20.000 ₺ artar, çünkü kasaya nakit girmiştir",
-      "D": "Özkaynaklar 20.000 ₺ artar, çünkü işletmeye değer eklenmiştir",
-      "E": "Aktif toplamı 20.000 ₺ azalır, çünkü bankadan para çıkmıştır"
+      "A": "60.000 ₺'lik senetsiz alacağın nakden tahsil edilmesi",
+      "B": "60.000 ₺'lik ticari malın veresiye satın alınması",
+      "C": "Bankadaki mevduattan kasaya 60.000 ₺ çekilmesi",
+      "D": "60.000 ₺'lik satıcı borcunun bankadan ödenmesi",
+      "E": "60.000 ₺'lik bir makinenin peşin satın alınması"
     },
     "answer": "B",
-    "solution": "Kayıt **100 Kasa (borç) 20.000 / 102 Bankalar (alacak) 20.000**'dir. Bir varlık artarken eşit tutarda başka bir varlık azaldığından **aktif toplamı değişmez**; yalnızca varlıkların bileşimi değişir.",
+    "solution": "Veresiye mal alışı varlıkları (153) ve yabancı kaynakları (320) aynı tutarda artırır; iki toplam 1.560.000 ₺ olur. Alacak tahsili, bankadan kasaya para çekme ve peşin makine alımı aktif içinde değişimdir, toplamı değiştirmez; borç ödemesi iki toplamı da azaltır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -971,16 +971,16 @@
     "id": "finmuh-surec-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki hesaplardan hangisi Tekdüzen Hesap Planı'nda '3 - Kısa Vadeli Yabancı Kaynaklar' sınıfında yer alır?",
+    "stem": "Bir işletmenin dönem sonu kalanlarından bazıları şöyledir: 300 Banka Kredileri 150.000 ₺, 320 Satıcılar 210.000 ₺, 321 Borç Senetleri 90.000 ₺, 322 Borç Senetleri Reeskontu 6.000 ₺, 340 Alınan Sipariş Avansları 40.000 ₺, 381 Gider Tahakkukları 12.000 ₺, 159 Verilen Sipariş Avansları 30.000 ₺, 400 Banka Kredileri 500.000 ₺. Uzun vadeli kredilerden izleyen yıl ödenecek taksit bulunmamaktadır.\n\nBuna göre kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
     "options": {
-      "A": "153 Ticari Mallar",
-      "B": "500 Sermaye",
-      "C": "300 Banka Kredileri",
-      "D": "120 Alıcılar",
-      "E": "255 Demirbaşlar"
+      "A": "456.000",
+      "B": "484.000",
+      "C": "496.000",
+      "D": "406.000",
+      "E": "490.000"
     },
     "answer": "C",
-    "solution": "**300 Banka Kredileri**, kodun ilk rakamı **3** olduğundan Kısa Vadeli Yabancı Kaynaklar sınıfındadır (bir yıl içinde ödenecek kredi borcu). 120 ve 153 aktif, 500 özkaynak, 255 duran varlıktır.",
+    "solution": "Kısa vadeli yabancı kaynaklar: 300 + 320 + 321 + 340 + 381 = 502.000 ₺; 322 Borç Senetleri Reeskontu borç senetlerini düzenleyen, borç kalanı veren hesaptır ve düşülür: 502.000 − 6.000 = 496.000 ₺. 159 Verilen Sipariş Avansları dönen varlıktır; 400 Banka Kredileri uzun vadeli yabancı kaynaktır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -993,16 +993,16 @@
     "id": "finmuh-surec-gen-0046",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Aşağıdaki yevmiye kaydı bir işletmenin dönem sonu işlemlerine aittir:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 600 Yurt İçi Satışlar | 500.000 | |\n| 690 DÖNEM KÂRI VEYA ZARARI | | 500.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "Bir kurumun dönem sonu aktarmalarından sonra 690 Dönem Kârı veya Zararı hesabı 400.000 ₺ alacak kalanı vermektedir. Dönem kârının hesaplanmasında 20.000 ₺ kanunen kabul edilmeyen gider dikkate alınmış, ayrıca 40.000 ₺ vergiden istisna iştirak kazancı elde edilmiştir. Kurum yıl içinde 70.000 ₺ geçici vergi ödemiştir. Soruda kullanılacak kurumlar vergisi oranı %25'tir.\n\nBuna göre 692 Dönem Net Kârı veya Zararı hesabına aktarılacak dönem net kârı kaç ₺'dir?",
     "options": {
-      "A": "Peşin mal satışının kasa hesabı borçlandırılarak kaydedilmesi işlemidir",
-      "B": "Satılan malın maliyetinin 621 hesabına aktarılması işlemidir",
-      "C": "Satıştan iadenin 610 hesabı kullanılarak kaydedilmesi işlemidir",
-      "D": "Ortaklara dağıtılacak kâr payının 331 hesabında izlenmesidir",
-      "E": "Gelir hesabının dönem sonunda 690 hesabına devredilerek kapatılması"
+      "A": "300.000",
+      "B": "375.000",
+      "C": "235.000",
+      "D": "285.000",
+      "E": "305.000"
     },
     "answer": "E",
-    "solution": "Bir gelir hesabı olan **600 Yurt İçi Satışlar** (alacak kalanı verir) dönem sonunda **borçlandırılarak** 690'a **devredilir** ve kapatılır. Bu, gelir hesaplarının dönem sonunda sonuç hesabına aktarılması işlemidir.",
+    "solution": "Mali kâr = 400.000 + 20.000 − 40.000 = 380.000 ₺; vergi karşılığı = 380.000 × %25 = 95.000 ₺ (691 borç / 370 alacak). Dönem net kârı = 400.000 − 95.000 = 305.000 ₺. Geçici vergi 371 hesabıyla 370'ten mahsup edilir; dönem net kârını etkilemez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -1081,16 +1081,16 @@
     "id": "finmuh-surec-gen-0050",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "Bir işletmede aşağıdaki yevmiye kaydı yapılmıştır:\n\n| Hesap | Borç | Alacak |\n|---|---|---|\n| 320 Satıcılar | 40.000 | |\n| 100 Kasa | | 40.000 |\n\nBu kayıt aşağıdaki işlemlerden hangisine aittir?",
+    "stem": "Bir satıcıya banka hesabından yapılan 40.000 ₺'lik havale, muhasebe servisince yanlışlıkla 120 Alıcılar hesabına borç, 100 Kasa hesabına alacak olarak kaydedilmiştir. Hata, ters kayıt yapılmadan tek bir düzeltme maddesiyle giderilecektir.\n\nDüzeltme kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "Satıcıya olan borcun nakit ödenmesi",
-      "B": "Satıcıdan veresiye mal alınması",
-      "C": "Müşteriden tahsilat yapılması",
-      "D": "Banka kredisi kullanılması",
-      "E": "Peşin mal satışı"
+      "A": "320 Satıcılar hesabı 40.000 ₺ borçlandırılır",
+      "B": "120 Alıcılar hesabı 40.000 ₺ borçlandırılır",
+      "C": "100 Kasa hesabı 40.000 ₺ alacaklandırılır",
+      "D": "102 Bankalar hesabı 40.000 ₺ borçlandırılır",
+      "E": "320 Satıcılar hesabı 40.000 ₺ alacaklandırılır"
     },
     "answer": "A",
-    "solution": "Satıcılara olan borcun azalması (320 borç) ve kasadan nakit çıkışı (100 alacak), **satıcıya olan borcun nakit olarak ödenmesi**ni gösterir.",
+    "solution": "Doğru kayıt 320 Satıcılar borç / 102 Bankalar alacak olmalıydı. Düzeltme maddesi: 320 Satıcılar 40.000 ₺ ve 100 Kasa 40.000 ₺ borç / 120 Alıcılar 40.000 ₺ ve 102 Bankalar 40.000 ₺ alacak. Yanlış çalışan hesaplar ters yönde, çalışması gereken hesaplar doğru yönde kaydedilir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
@@ -1169,16 +1169,16 @@
     "id": "finmuh-surec-gen-0054",
     "ders": "finansal_muhasebe",
     "konu": "muhasebe_sureci_hesap_plani",
-    "stem": "İşletme, yönetim biriminde kullanılan bir demirbaş için dönem sonunda 8.000 ₺ amortisman ayırmıştır. Birikmiş amortisman hesabının kullanıldığı yönteme ve gider yerine göre bu işlemin kaydı aşağıdakilerden hangisidir?",
+    "stem": "7/A seçeneğini uygulayan ve bilanço esasına göre defter tutan işletme, 1 Temmuz'da yönetim biriminde kullanılmak üzere 120.000 ₺'ye büro mobilyası almıştır. Mobilyanın faydalı ömrü 5 yıl olup normal (doğrusal) amortisman yöntemi uygulanmaktadır ve birikmiş amortisman hesabı kullanılmaktadır.\n\nDönem sonu amortisman kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "255 Demirbaşlar (borç) 8.000 / 770 Genel Yönetim Giderleri (alacak) 8.000",
-      "B": "770 Genel Yönetim Giderleri (borç) 8.000 / 255 Demirbaşlar (alacak) 8.000",
-      "C": "770 Genel Yönetim Giderleri (borç) 8.000 / 257 Birikmiş Amortismanlar (alacak) 8.000",
-      "D": "257 Birikmiş Amortismanlar (borç) 8.000 / 770 Genel Yönetim Giderleri (alacak) 8.000",
-      "E": "689 Diğer Olağandışı Gider (borç) 8.000 / 257 Birikmiş Amortismanlar (alacak) 8.000"
+      "A": "257 Birikmiş Amortismanlar hesabı 12.000 ₺ alacaklandırılır",
+      "B": "255 Demirbaşlar hesabı 24.000 ₺ alacaklandırılır",
+      "C": "770 Genel Yönetim Giderleri hesabı 24.000 ₺ borçlandırılır",
+      "D": "730 Genel Üretim Giderleri hesabı 24.000 ₺ borçlandırılır",
+      "E": "257 Birikmiş Amortismanlar hesabı 24.000 ₺ borçlandırılır"
     },
     "answer": "C",
-    "solution": "Amortisman bir giderdir → **770 Genel Yönetim Giderleri (borç)**; varlığın değeri doğrudan azaltılmaz, düzenleyici hesap çalışır → **257 Birikmiş Amortismanlar (alacak)**. Kayıt: 770 (borç) 8.000 / 257 (alacak) 8.000.",
+    "solution": "Amortisman oranı 1/5 = %20; yıllık amortisman 120.000 × %20 = 24.000 ₺. VUK'a göre kıst amortisman yalnız binek otomobillerinde uygulandığından yıl ortasında alınan mobilya için tam yıllık amortisman ayrılır. Kayıt: 770 Genel Yönetim Giderleri 24.000 ₺ borç / 257 Birikmiş Amortismanlar 24.000 ₺ alacak; dolaylı yöntemde 255 hesabı değişmez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (uygulama; sınav stiline kalibre)",
