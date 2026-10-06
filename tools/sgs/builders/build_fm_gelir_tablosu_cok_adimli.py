@@ -331,16 +331,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        "Net satışları 600.000 ₺ olan işletmenin brüt satış kârı oranı %30'dur.\n\nİşletmenin satışlarının maliyeti kaç ₺'dir?",
+        "Bir işletmenin dönem sonu gelir tablosu hesaplarının kalanları şöyledir: 600 Yurt İçi Satışlar 1.200.000 ₺, 610 Satıştan İadeler 50.000 ₺, 611 Satış İskontoları 30.000 ₺, 621 Satılan Ticari Mallar Maliyeti 680.000 ₺, 630 Araştırma ve Geliştirme Giderleri 20.000 ₺, 631 Pazarlama, Satış ve Dağıtım Giderleri 90.000 ₺, 632 Genel Yönetim Giderleri 110.000 ₺, 642 Faiz Gelirleri 25.000 ₺, 656 Kambiyo Zararları 15.000 ₺, 660 Kısa Vadeli Borçlanma Giderleri 40.000 ₺, 671 Önceki Dönem Gelir ve Kârları 12.000 ₺, 689 Diğer Olağandışı Gider ve Zararlar 7.000 ₺.\n\nBuna göre işletmenin olağan kârı kaç ₺'dir?",
         {
-            'A': '780.000',
-            'B': '390.000',
-            'C': '180.000',
-            'D': '300.000',
-            'E': '420.000',
+            'A': '195.000',
+            'B': '220.000',
+            'C': '175.000',
+            'D': '270.000',
+            'E': '190.000',
         },
         'E',
-        "Brüt satış kârı 600.000 × %30 = 180.000 ₺'dir. Satışların maliyeti = net satışlar − brüt satış kârı olduğundan 600.000 − 180.000 = **420.000 ₺** bulunur.",
+        'Net satışlar = 1.200.000 − 50.000 − 30.000 = 1.120.000 ₺; brüt satış kârı = 1.120.000 − 680.000 = 440.000 ₺; faaliyet kârı = 440.000 − 220.000 = 220.000 ₺. Olağan kâr = 220.000 + 25.000 (64) − 15.000 (65) − 40.000 (66) = 190.000 ₺. 671 ve 689 olağandışı kalemlerdir; dönem kârının hesabında dikkate alınır (195.000 ₺).',
         "1 Sıra No'lu MSUGT - Brüt satış kârı; 2024-2025 SGS dikey yüzde soru örüntüsü",
     ),
     # düzey 2
@@ -429,16 +429,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        "Bir işletmenin satışlarının maliyeti 90.000 ₺, brüt satış kârı oranı %25 ve faaliyet giderleri 18.000 ₺'dir. Başka faaliyet geliri veya gideri yoktur.\n\nİşletmenin faaliyet kârı kaç ₺'dir?",
+        "Aralıklı envanter yöntemini uygulayan bir ticaret işletmesinin dönem verileri şöyledir: brüt satışlar 800.000 ₺, satıştan iadeler 40.000 ₺, dönem başı ticari mal stoku 120.000 ₺, dönem içi net alışlar 500.000 ₺, dönem sonu sayımla belirlenen stok 140.000 ₺, faaliyet giderleri toplamı 110.000 ₺, komisyon gelirleri 10.000 ₺ ve kredi faiz giderleri 30.000 ₺. Olağandışı kalem ve kanunen kabul edilmeyen gider yoktur; soruda kullanılacak vergi oranı %25'tir.\n\nBuna göre işletmenin dönem net kârı kaç ₺'dir?",
         {
-            'A': '30.000',
-            'B': '22.500',
-            'C': '18.000',
-            'D': '12.000',
-            'E': '7.500',
+            'A': '150.000',
+            'B': '127.500',
+            'C': '142.500',
+            'D': '112.500',
+            'E': '120.000',
         },
         'D',
-        "Brüt kâr oranı %25 ise maliyet net satışların %75'idir. Net satışlar 90.000 / %75 = 120.000 ₺, brüt kâr 30.000 ₺ olur. Faaliyet kârı 30.000 − 18.000 = **12.000 ₺**'dir.",
+        'Satılan ticari mallar maliyeti = 120.000 + 500.000 − 140.000 = 480.000 ₺. Net satışlar 760.000 ₺; brüt satış kârı 280.000 ₺; faaliyet kârı 170.000 ₺. Dönem kârı = 170.000 + 10.000 − 30.000 = 150.000 ₺; vergi karşılığı 37.500 ₺; dönem net kârı 112.500 ₺.',
         "1 Sıra No'lu MSUGT - Brüt ve faaliyet kârı; 2024-2025 SGS dikey yüzde soru örüntüsü",
     ),
     # düzey 3
@@ -597,16 +597,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "Bir işletmenin brüt satışları 920.000 ₺, satıştan iadeleri 46.000 ₺ ve satış iskontoları 24.000 ₺'dir. Başka satış indirimi bulunmamaktadır.\n\nİşletmenin net satışları kaç ₺'dir?",
+        "Ticaret ve bakım hizmeti sunan bir işletmenin dönem sonu kalanları şöyledir: 600 Yurt İçi Satışlar 1.500.000 ₺, 601 Yurt Dışı Satışlar 300.000 ₺, 610 Satıştan İadeler 60.000 ₺, 611 Satış İskontoları 20.000 ₺, 612 Diğer İndirimler 10.000 ₺, 621 Satılan Ticari Mallar Maliyeti 900.000 ₺, 622 Satılan Hizmet Maliyeti 50.000 ₺, 631 Pazarlama, Satış ve Dağıtım Giderleri 120.000 ₺, 632 Genel Yönetim Giderleri 140.000 ₺, 649 Diğer Olağan Gelir ve Kârlar 30.000 ₺, 653 Komisyon Giderleri 5.000 ₺.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
-            'A': '874.000',
-            'B': '896.000',
-            'C': '966.000',
-            'D': '850.000',
-            'E': '990.000',
+            'A': '525.000',
+            'B': '460.000',
+            'C': '480.000',
+            'D': '500.000',
+            'E': '490.000',
         },
         'D',
-        'Net satışlar = brüt satışlar − satıştan iadeler − satış iskontolarıdır. Buna göre 920.000 − 46.000 − 24.000 = **850.000 ₺** net satışa ulaşılır.',
+        'Brüt satışlar = 1.500.000 + 300.000 = 1.800.000 ₺; satış indirimleri 90.000 ₺; net satışlar 1.710.000 ₺. Satışların maliyeti 900.000 + 50.000 = 950.000 ₺; brüt satış kârı 760.000 ₺. Faaliyet kârı = 760.000 − 120.000 − 140.000 = 500.000 ₺. 649 ve 653 diğer faaliyetlerden olağan kalemlerdir; faaliyet kârından sonra dikkate alınır.',
         "1 Sıra No'lu MSUGT - Gelir tablosu biçimi ve 60/61 hesap grupları",
     ),
     # düzey 2
