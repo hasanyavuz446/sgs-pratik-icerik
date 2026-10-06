@@ -24,6 +24,14 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — FM kök derinliği 3. tur (v238 canlı)
+
+16 soru, 10 paket. Ders medyanı 231→233; çeyrekler bizde 155 / 233 / 301, gerçekte 187 / 285 / 346;
+250+ payı %43 (gerçek %62-63). Gerçek FM köklerinde ortak veri bloğu yok (288 sorunun 0'ı), %62'si çok
+satırlı veri taşıyor: açık gerçek. Kısa ve sayısal tek adımlı soru neredeyse kalmadı; kalan açık
+dağılımın tamamında (alt çeyrek de 32 karakter kısa). Sonraki kaldıraç: kısa kavram sorularını
+somut olayla kurmak (gerçek sınavda kavram soruları da çoğunlukla olaydan yola çıkıyor).
+
 ## 6 Ekim 2026 — küme ayıklama (v236–v237 canlı)
 
 FM'de 14 soru tekrar kümelerinden (kur yönü, döviz değerleme, özel maliyet, KDV mahsubu,
