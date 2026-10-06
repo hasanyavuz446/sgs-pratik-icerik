@@ -37,16 +37,16 @@ def patch(stem, options, answer, solution, ref='VUK m. 327; Tekduzen Hesap Plani
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        'Maddi olmayan duran varlıklar ile ilgili aşağıdakilerden hangisi doğrudur?',
+        "Bir işletmenin dönem sonu kayıtlarında şu kalemler bulunmaktadır: satın alınan patent 90.000 ₺, aktifleştirilen araştırma ve geliştirme gideri 60.000 ₺, kiralanan mağazaya yapılan özel maliyet 45.000 ₺, kayıtlarda izlenen şerefiye 100.000 ₺, bir yazılım lisansının alımı için satıcıya verilen avans 20.000 ₺, maddi olmayan duran varlıklar için ayrılmış birikmiş itfa payları 40.000 ₺, yeni bir makinenin alımı için verilen avans 25.000 ₺ ve bilgisayar donanımı 50.000 ₺.\n\nBuna göre bilançoda '26 Maddi Olmayan Duran Varlıklar' grubunun net tutarı kaç ₺ olur?",
         {
-            'A': 'Fiziki (maddi) bir varlığı olmayan, işletmeye bir hak veya üstünlük sağlayan ve bir yıldan uzun süre yararlanılan varlıklardır.',
-            'B': 'İşletmenin satmak amacıyla elde tuttuğu, fiziki varlığı bulunan ticari mallar, ilk madde ve üretilen mamullerden oluşan varlıklardır.',
-            'C': 'İşletmenin bir yıl içinde ödemesi gereken, kısa vadeli yabancı kaynaklar grubunda gösterilen borç kalemleridir.',
-            'D': 'Kasadaki nakit ile bankadaki mevduattan oluşan, nakde kolayca çevrilebilen hazır değerlerdir.',
-            'E': 'Bir yıl içinde ya da normal faaliyet dönemi içinde paraya çevrilmesi beklenen, dönen varlıklar arasında sınıflandırılan kalemlerdir.',
+            'A': '275.000',
+            'B': '300.000',
+            'C': '255.000',
+            'D': '315.000',
+            'E': '325.000',
         },
         'A',
-        '**26 Maddi Olmayan Duran Varlıklar**; herhangi bir fiziki varlığı bulunmayan, işletmeye bir **hak veya üstünlük** sağlayan ve bir yıldan uzun süre yararlanılan varlıklardır (haklar, şerefiye, özel maliyetler vb.).',
+        '26 grubu: 260 Haklar 90.000 + 263 Araştırma ve Geliştirme Giderleri 60.000 + 264 Özel Maliyetler 45.000 + 261 Şerefiye 100.000 + 269 Verilen Avanslar 20.000 − 268 Birikmiş Amortismanlar 40.000 = 275.000 ₺. Makine alımı için verilen avans 259 Verilen Avanslar (25 grubu), bilgisayar donanımı 255 Demirbaşlar hesabında izlenir.',
         "1 Sıra No'lu MSUGT - 26 Maddi Olmayan Duran Varlıklar",
     ),
     # düzey 2
@@ -191,44 +191,44 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        "Aşağıdakilerden hangisi '24 Mali Duran Varlıklar' grubunda yer alır ve maddi olmayan duran varlık (26 grubu) değildir?",
+        "İşletme muhasebe biriminde kullanmak üzere 60.000 ₺'ye bir bilgisayar sunucusu satın almıştır. Sunucunun çalışması için zorunlu olan ve onunla birlikte faturalanan işletim sistemi 6.000 ₺'dir. Ayrıca sunucudan bağımsız olarak lisanslanan ve başka bilgisayarlara da kurulabilen bir muhasebe paket programı 24.000 ₺'ye alınmıştır. KDV ihmal edilecektir.\n\nBuna göre bu kalemler hangi hesaplara hangi tutarlarla kaydedilir?",
         {
-            'A': '261 Şerefiye',
-            'B': '245 Bağlı Ortaklıklar',
-            'C': '263 Araştırma ve Geliştirme Giderleri',
-            'D': '260 Haklar',
-            'E': '264 Özel Maliyetler',
+            'A': '255 Demirbaşlar 60.000 ₺; 260 Haklar 30.000 ₺',
+            'B': '255 Demirbaşlar 66.000 ₺; 260 Haklar 24.000 ₺',
+            'C': '255 Demirbaşlar 90.000 ₺; 260 Haklar hesabı çalışmaz',
+            'D': '255 Demirbaşlar 60.000 ₺; 263 Araştırma ve Geliştirme 30.000 ₺',
+            'E': '253 Tesis, Makine ve Cihazlar 66.000 ₺; 260 Haklar 24.000 ₺',
         },
         'B',
-        '**245 Bağlı Ortaklıklar**, başka şirketlere yapılan uzun vadeli ortaklık/yatırımı izleyen bir **24 Mali Duran Varlıklar** hesabıdır; maddi olmayan duran varlık değildir. Diğerleri 26 grubundadır.',
+        'Donanımın ayrılmaz parçası olan ve o olmadan donanımın çalışamadığı işletim sistemi donanımla birlikte maddi duran varlık olarak kaydedilir: 255 Demirbaşlar 66.000 ₺ (büro donanımı). Donanımdan bağımsız kullanılabilen paket program maddi olmayan duran varlıktır: 260 Haklar 24.000 ₺ (TMS 38.4 ile aynı yaklaşım).',
         "1 Sıra No'lu MSUGT - 24 / 26 grupları",
     ),
     # düzey 2
     '0013': patch(
-        'Maddi olmayan duran varlıkların itfası ne zaman başlar?',
+        "TMS 38'e göre raporlama yapan bir işletme 1 Nisan'da 240.000 ₺'ye bir üretim planlama yazılımı satın almıştır. Yazılım, işletmenin sistemlerine uyarlanarak 1 Temmuz'da yönetimin amaçladığı biçimde kullanılabilir hâle gelmiş ve aynı tarihte kullanılmaya başlanmıştır. Yararlı ömrü 5 yıl, kalıntı değeri sıfırdır ve doğrusal itfa uygulanmaktadır.\n\nBuna göre cari yılda ayrılacak itfa payı kaç ₺'dir?",
         {
-            'A': 'Varlık üçüncü kişilere satıldığında, satışın gerçekleştiği dönemde geriye dönük olarak',
-            'B': 'Varlığın bedelinin tamamı satıcıya nakden ödendiğinde, ödemenin yapıldığı tarihte',
-            'C': 'Varlık kullanıma hazır hâle geldiğinde (işletmenin yararlanmaya başladığı dönemde)',
-            'D': 'Varlık faydalı ömrünü doldurup kayıtlardan çıkarıldığında, son dönem içinde',
-            'E': 'Varlığın satın alınması için siparişin verildiği ve sözleşmenin imzalandığı dönemde',
+            'A': '36.000',
+            'B': '48.000',
+            'C': '24.000',
+            'D': '30.000',
+            'E': '40.000',
         },
         'C',
-        'Maddi olmayan duran varlıkların itfası, varlık **kullanıma hazır hâle geldiğinde** (işletme ondan yararlanmaya başladığında) başlar.',
+        'TMS 38.97: sınırlı yararlı ömürlü bir varlığın itfası, varlık kullanıma hazır olduğunda (yönetimin amaçladığı biçimde çalışabilir duruma geldiğinde) başlar; satın alma tarihi belirleyici değildir. Yıllık itfa 240.000 / 5 = 48.000 ₺; 1 Temmuz–31 Aralık için 48.000 × 6/12 = 24.000 ₺.',
         'VUK md. 326; TMS 38 (itfanın başlangıcı)',
     ),
     # düzey 2
     '0014': patch(
-        "Aşağıdakilerden hangisi '264 Özel Maliyetler' hesabının kapsamına girer?",
+        "Kiracı işletme, sekiz yıllığına kiraladığı ofis katında şu harcamaları yapmıştır: kira süresi sonunda mal sahibine kalacak bir asansör tesisatı 80.000 ₺, taşınırken sökülüp götürülebilecek büro mobilyası 30.000 ₺, olağan bakım niteliğindeki boya-badana 6.000 ₺ ve binaya kalıcı olarak eklenen bölme duvarlar 24.000 ₺. KDV ihmal edilecektir.\n\nBuna göre '264 Özel Maliyetler' hesabına kaydedilecek toplam tutar kaç ₺'dir?",
         {
-            'A': 'İşletmede çalışan personele dönem içinde ödenen ücret ve maaşlar ile bunlara bağlı sigorta primi ve vergi kesintilerinin tutarı',
-            'B': 'İşletmenin satmak amacıyla dışarıdan satın aldığı ticari malların alış bedeli ile alışa ilişkin nakliye ve sigorta giderleri',
-            'C': 'İşletmenin kendi kullanımı için satın aldığı ve üzerine bina inşa ettiği arsanın satın alma bedeli ile ödenen tapu harçları',
-            'D': 'Kiralanan bir iş yerine kiracının yaptığı ve kira süresince yararlanacağı asansör/klima tesisatı gibi kalıcı harcamalar',
-            'E': 'İşletmenin kiraladığı iş yeri için her ay düzenli olarak ödediği ve dönem gideri olarak kaydedilen aylık kira bedelleri ve aidatları',
+            'A': '110.000',
+            'B': '134.000',
+            'C': '80.000',
+            'D': '104.000',
+            'E': '24.000',
         },
         'D',
-        "**Kiralanan** bir yere kiracının yaptığı, sökülüp götürülemeyecek ve kira süresince yararlanılacak **kalıcı değer artırıcı harcamalar** (tesisat, bölme, asansör vb.) 264 Özel Maliyetler'de izlenir. Aylık kira gideri ise dönem gideridir (770/730).",
+        "Özel maliyet, kiralanan gayrimenkule kiracının yaptığı ve kira süresi sonunda mal sahibine kalan kalıcı nitelikteki harcamalardır: asansör tesisatı ve bölme duvarlar, 80.000 + 24.000 = 104.000 ₺. Sökülüp götürülebilen mobilya 255 Demirbaşlar'da izlenir; olağan bakım niteliğindeki boya-badana dönem gideridir.",
         "1 Sıra No'lu MSUGT - 264; VUK md. 272",
     ),
     # düzey 2
@@ -429,16 +429,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Maddi olmayan duran varlıklarda maliyetin dönemlere dağıtılması işlemine ne ad verilir?',
+        "TMS 38'e göre raporlama yapan işletme, dört yıl kullanmayı planladığı bir yayın lisansını 500.000 ₺'ye satın almıştır. Bağımsız bir yayın kuruluşu, dört yılın sonunda lisansı 100.000 ₺'ye satın almayı yazılı olarak taahhüt etmiştir. İşletme doğrusal itfa yöntemini uygulamaktadır.\n\nBuna göre lisans için ayrılacak yıllık itfa payı kaç ₺'dir?",
         {
-            'A': 'Yeniden değerleme',
-            'B': 'Karşılık ayırma',
-            'C': 'Reeskont',
-            'D': 'Konsolidasyon',
-            'E': 'İtfa (amortisman)',
+            'A': '75.000',
+            'B': '80.000',
+            'C': '62.500',
+            'D': '50.000',
+            'E': '100.000',
         },
         'E',
-        'Maddi olmayan duran varlıkların maliyetinin yararlanılan dönemlere dağıtılmasına **itfa (amortisman)** denir; maddi duran varlıklardaki amortismanın maddi olmayan varlıklardaki karşılığıdır.',
+        'TMS 38.100: sınırlı ömürlü maddi olmayan varlığın kalıntı değeri kural olarak sıfırdır; ancak yararlı ömür sonunda varlığı satın almak için üçüncü bir tarafın taahhüdü varsa kalıntı değer dikkate alınır. Yıllık itfa = (500.000 − 100.000) / 4 = 100.000 ₺.',
         'VUK md. 326; TMS 38',
     ),
     # düzey 3
@@ -625,16 +625,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        'İşletme, aktifindeki bir hak için dönem sonunda 20.000 ₺ itfa payı ayırmıştır (idari kullanım varsayımıyla). Bu işlemin kaydı aşağıdakilerden hangisidir?',
+        "7/A seçeneğini uygulayan işletmenin haklar hesabında üç varlık bulunmaktadır: üretimde kullanılan ve 10 yıl itfa edilen 300.000 ₺'lik patent, satış bölümünce kullanılan ve kalan sözleşme süresi 5 yıl olan 120.000 ₺'lik bayilik hakkı, yönetim biriminde kullanılan ve 3 yılda itfa edilen 60.000 ₺'lik yazılım lisansı. Varlıkların tamamı dönem başında aktifleştirilmiştir ve itfa doğrusal olarak yapılmaktadır.\n\nDönem sonu itfa kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '770 Genel Yönetim Giderleri (borç) 20.000 / 268 Birikmiş Amortismanlar (alacak) 20.000',
-            'B': '260 Haklar (borç) 20.000 / 770 Genel Yönetim Giderleri (alacak) 20.000',
-            'C': '268 Birikmiş Amortismanlar (borç) 20.000 / 770 Genel Yönetim Giderleri (alacak) 20.000',
-            'D': '770 Genel Yönetim Giderleri (borç) 20.000 / 260 Haklar (alacak) 20.000',
-            'E': '654 Karşılık Giderleri (borç) 20.000 / 268 Birikmiş Amortismanlar (alacak) 20.000',
+            'A': '730 Genel Üretim Giderleri hesabı 30.000 ₺ borçlandırılır',
+            'B': '760 Pazarlama Satış ve Dağıtım Giderleri 20.000 ₺ borçlandırılır',
+            'C': '770 Genel Yönetim Giderleri hesabı 30.000 ₺ borçlandırılır',
+            'D': '257 Birikmiş Amortismanlar hesabı 74.000 ₺ alacaklandırılır',
+            'E': '268 Birikmiş Amortismanlar hesabı 74.000 ₺ borçlandırılır',
         },
         'A',
-        'İtfa payı bir giderdir → **770 Genel Yönetim Giderleri (borç) 20.000** (idari); varlık doğrudan azaltılmaz, düzenleyici hesap çalışır → **268 Birikmiş Amortismanlar (alacak) 20.000**. (Gider yerine göre 730/760/750 de kullanılabilir.)',
+        "İtfa payları: patent 300.000 / 10 = 30.000 ₺ (730), bayilik hakkı 120.000 / 5 = 24.000 ₺ (760), yazılım 60.000 / 3 = 20.000 ₺ (770). Kayıt: 730 30.000 ₺, 760 24.000 ₺ ve 770 20.000 ₺ borç / 268 Birikmiş Amortismanlar 74.000 ₺ alacak. Maddi olmayan varlıkların itfası 257'de değil 268'de birikir.",
         "1 Sıra No'lu MSUGT - 268 / gider hesapları",
     ),
     # düzey 2
@@ -653,16 +653,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "İşletmenin aktifleştirdiği 50.000 ₺ tutarındaki kuruluş ve örgütlenme gideri, VUK'a göre 5 yılda eşit tutarlarla itfa edilmektedir. Yıllık itfa payı kaç ₺'dir?",
+        "Yeni kurulan bir anonim şirket, aktifleştirmeyi seçtiği 50.000 ₺ kuruluş ve örgütlenme giderini VUK'a göre beş yılda eşit tutarlarla itfa etmektedir. Şirket aynı tarihte kalan koruma süresi altı yıl olan bir patenti 60.000 ₺'ye satın almış ve bu süre boyunca eşit tutarlarla itfa etmektedir. İki varlık da ilk yılın başında aktifleştirilmiştir.\n\nBuna göre üçüncü yılın sonunda bu iki varlığın net defter değerleri toplamı kaç ₺'dir?",
         {
-            'A': '50.000',
-            'B': '10.000',
-            'C': '5.000',
-            'D': '25.000',
-            'E': '12.500',
+            'A': '70.000',
+            'B': '50.000',
+            'C': '30.000',
+            'D': '20.000',
+            'E': '44.000',
         },
         'B',
-        'Yıllık itfa payı = 50.000 ÷ 5 = **10.000 ₺**. Kuruluş ve örgütlenme giderleri (262) genellikle 5 yılda eşit tutarlarla itfa edilir.',
+        'Kuruluş gideri: yıllık 50.000 / 5 = 10.000 ₺; üç yıl sonunda kalan 50.000 − 30.000 = 20.000 ₺. Patent: yıllık 60.000 / 6 = 10.000 ₺; üç yıl sonunda kalan 60.000 − 30.000 = 30.000 ₺. Toplam net defter değeri 20.000 + 30.000 = 50.000 ₺.',
         "VUK md. 326; 1 Sıra No'lu MSUGT - 262",
     ),
     # düzey 2
@@ -681,16 +681,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "TMS 38'e göre yararlı ömrü sınırsız kabul edilen bir lisansın sonraki dönem muhasebesiyle ilgili doğru ifade hangisidir?",
+        "TMS 38'e göre raporlama yapan işletmenin 400.000 ₺'ye aldığı yayın lisansı on yıllıktır; ancak lisans önemli bir maliyete katlanmadan sınırsız sayıda yenilenebilmekte ve işletmenin yenileme niyeti ile imkânı bulunmaktadır. Yönetim varlığın nakit akışı sağlayacağı sürenin öngörülebilir bir sınırı olmadığını değerlendirmiştir. Dönem sonunda lisansın geri kazanılabilir tutarı 360.000 ₺ olarak hesaplanmıştır.\n\nBuna göre dönem sonu muhasebeleştirmeyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': 'Değer düşüklüğü ancak lisans satılırken hesaplanır.',
-            'B': 'Her yıl zorunlu olarak %20 itfa edilir.',
-            'C': 'Sınırsız ömür değerlendirmesi ilk muhasebeleştirmede kesinleşir; teknolojik, hukuki ve ticari koşullar değişse bile daha sonra sınırlı ömre çevrilemez ve değer düşüklüğü göstergesi sayılmaz.',
-            'D': 'İtfa edilmez; yıllık ve belirti olduğunda değer düşüklüğü testine alınır, ömür değerlendirmesi her dönem gözden geçirilir.',
-            'E': 'Defter değeri her yıl satış hasılatına aktarılır.',
+            'A': '40.000 ₺ itfa payı ayrılır; değer düşüklüğü testi yapılmaz',
+            'B': 'Değer düşüklüğü testi belirti olmadıkça yapılmaz, itfa ayrılmaz',
+            'C': 'İtfa ayrılmaz; değer kaybı olsa da kayıt yapılmaz',
+            'D': 'İtfa ayrılmaz; 40.000 ₺ değer düşüklüğü zararı kaydedilir',
+            'E': '40.000 ₺ itfa ve 40.000 ₺ değer düşüklüğü zararı kaydedilir',
         },
         'D',
-        'Sınırsız yararlı ömürlü maddi olmayan duran varlık **itfa edilmez**. Geri kazanılabilir tutarı yıllık olarak ve değer düşüklüğü belirtisi doğduğunda defter değeriyle karşılaştırılır; sınırsız ömrü destekleyen koşullar da her dönem yeniden değerlendirilir.',
+        'TMS 38.88-90 ve 94-96: önemli maliyet olmadan yenilenebilen ve nakit akışı süresinin öngörülebilir sınırı olmayan lisansın yararlı ömrü sınırsızdır; itfa edilmez. TMS 38.108 ve TMS 36: sınırsız ömürlü varlık her yıl ve belirti olduğunda değer düşüklüğü testine tabidir. Defter değeri 400.000 ₺, geri kazanılabilir tutar 360.000 ₺ olduğundan 40.000 ₺ değer düşüklüğü zararı muhasebeleştirilir.',
         'TMS 38, par. 107-109; TMS 36',
     ),
     # düzey 2
@@ -765,16 +765,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        "TMS 38'e göre sınırlı yararlı ömre sahip bir maddi olmayan duran varlığın kalıntı değeri hangi durumda sıfırdan farklı kabul edilebilir?",
+        "TMS 38'e göre raporlama yapan bir taksi işletmesi, aktif bir piyasada alınıp satılan taksi plakalarını (lisans) yeniden değerleme modeliyle ölçmektedir. Daha önce hiç yeniden değerlenmemiş ve itfa edilmeyen bir plakanın defter değeri 800.000 ₺'dir. Dönem sonunda aktif piyasadaki fiyatı 1.000.000 ₺'dir.\n\nBuna göre yeniden değerlemeyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': 'Varlığın reklamı yapıldığında',
-            'B': 'Üçüncü tarafın satın alma taahhüdü varsa veya ömür sonunda da bulunması muhtemel aktif piyasa değeri varsa',
-            'C': 'Yönetim gelecekte varlığı elden çıkarmayı düşünüyorsa, üçüncü taraf taahhüdü veya aktif piyasa kanıtı aranmadan her maddi olmayan duran varlıkta zorunlu olarak',
-            'D': 'Varlık işletme içinde oluşturulduğunda',
-            'E': 'Yönetim gelecekte yüksek kâr beklediğinde',
+            'A': '200.000 ₺ artış dönemin kâr veya zararına gelir olarak yazılır',
+            'B': '200.000 ₺ diğer kapsamlı gelire alınıp özkaynakta birikir',
+            'C': 'Artış, varlık satılıncaya kadar kayıtlara alınmaz',
+            'D': "Plakanın defter değeri 1.000.000 ₺'ye çıkarılmaz; artış dipnotta açıklanır",
+            'E': '200.000 ₺ artış şerefiye hesabına eklenir',
         },
         'B',
-        'Sınırlı ömürlü maddi olmayan duran varlığın kalıntı değeri kural olarak **sıfırdır**. Ancak üçüncü tarafın satın alma taahhüdü varsa veya değer aktif piyasadan belirlenebiliyor ve piyasanın yararlı ömür sonunda da bulunması muhtemelse sıfırdan farklı olabilir.',
+        'TMS 38.75 ve 85: yeniden değerleme modelinde gerçeğe uygun değer aktif piyasaya göre belirlenir. Defter değerindeki artış, daha önce kâr veya zararda muhasebeleştirilmiş bir azalışı tersine çevirmiyorsa diğer kapsamlı gelirde muhasebeleştirilir ve özkaynakta yeniden değerleme artışı adı altında birikir: 1.000.000 − 800.000 = 200.000 ₺.',
         'TMS 38, par. 100',
     ),
     # düzey 3
@@ -807,16 +807,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        "İşletmenin bir bedel ödeyerek edindiği işletme (imtiyaz) hakkı Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        'Bir işletme, belediyenin açtığı ihaleyi kazanarak bir kamu otoparkını on yıl süreyle işletme hakkını (imtiyaz) 500.000 ₺ bedelle edinmiş ve bedeli banka havalesiyle ödemiştir. Hak, işletmeye on yıl boyunca otopark gelirlerini elde etme imkânı vermektedir. KDV ihmal edilecektir.\n\nHakkın edinilmesine ilişkin kayıtta aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '260 Haklar',
-            'B': '264 Özel Maliyetler',
-            'C': '261 Şerefiye',
-            'D': '262 Kuruluş ve Örgütlenme Giderleri',
-            'E': '245 Bağlı Ortaklıklar',
+            'A': '260 Haklar hesabı hak bedeli olan 500.000 ₺ borçlandırılır',
+            'B': '264 Özel Maliyetler hesabı 500.000 ₺ borçlandırılır',
+            'C': '280 Gelecek Yıllara Ait Giderler 500.000 ₺ borçlandırılır',
+            'D': '770 Genel Yönetim Giderleri hesabı 500.000 ₺ borçlandırılır',
+            'E': '262 Kuruluş ve Örgütlenme Giderleri 500.000 ₺ borçlandırılır',
         },
         'A',
-        'Bir bedel ödenerek edinilen **işletme/imtiyaz hakkı**, patent-marka-lisans gibi diğer haklarla birlikte **260 Haklar** hesabında izlenir.',
+        'Bedel ödenerek edinilen işletme (imtiyaz) hakkı, birden fazla dönem ekonomik yarar sağlayan maddi olmayan duran varlıktır ve 260 Haklar hesabında izlenir: 260 Haklar 500.000 ₺ borç / 102 Bankalar 500.000 ₺ alacak. Hak süresi boyunca (on yıl) itfa edilir.',
         "1 Sıra No'lu MSUGT - 260 Haklar",
     ),
     # düzey 3
