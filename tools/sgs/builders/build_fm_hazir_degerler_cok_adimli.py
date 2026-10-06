@@ -79,16 +79,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0004': patch(
-        "İşletme, müşterisinden aldığı 12.000 ₺'lik çeki bir satıcısına borcuna karşılık ciro etmiştir.\n\nBu işlemin kaydı aşağıdakilerden hangisidir?",
+        "İşletme, müşterisinden aldığı ve keşide tarihine 60 gün bulunan 50.000 ₺'lik bir çeki nakit ihtiyacı nedeniyle bankada iskonto ettirmiştir. Banka 1.500 ₺ iskonto faizi ile 50 ₺ işlem masrafını keserek kalan tutarı işletmenin vadesiz hesabına aktarmıştır. İşletme 7/A seçeneğini uygulamaktadır.\n\nBu işlemin kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '103 Verilen Çekler ve Ödeme Emirleri (borç) 12.000 / 101 Alınan Çekler (alacak) 12.000',
-            'B': '320 Satıcılar (borç) 12.000 / 101 Alınan Çekler (alacak) 12.000',
-            'C': '100 Kasa (borç) 12.000 / 101 Alınan Çekler (alacak) 12.000',
-            'D': '101 Alınan Çekler (borç) 12.000 / 320 Satıcılar (alacak) 12.000',
-            'E': '320 Satıcılar (borç) 12.000 / 102 Bankalar (alacak) 12.000',
+            'A': '101 Alınan Çekler hesabı 48.450 ₺ alacaklandırılır',
+            'B': '780 Finansman Giderleri hesabı 1.500 ₺ borçlandırılır',
+            'C': '656 Kambiyo Zararları hesabı 1.500 ₺ borçlandırılır',
+            'D': '121 Alacak Senetleri hesabı 50.000 ₺ alacaklandırılır',
+            'E': '102 Bankalar hesabı 50.000 ₺ borçlandırılır',
         },
         'B',
-        'Elde tutulan çek (101) ciro ile çıkar → **101 Alınan Çekler alacaklanır**; satıcıya olan borç azaldığı için **320 Satıcılar borçlanır**: 320 (borç) 12.000 / 101 (alacak) 12.000. Ciro edilen çek işletmenin kendi çeki olmadığından 103 kullanılmaz.',
+        'Çek nominal değeriyle portföyden çıkar (101 alacak 50.000 ₺). Bankanın kestiği iskonto faizi finansman maliyetidir (780 borç 1.500 ₺), işlem masrafı komisyon gideridir (653 borç 50 ₺). Hesaba geçen 48.450 ₺ (102 borç).',
         "1 Sıra No'lu MSUGT - 101 Alınan Çekler (ciro)",
     ),
     # düzey 3

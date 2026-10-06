@@ -359,16 +359,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'İşletme, 100.000 ₺ + %20 KDV tutarında ticari malı peşin (nakit) satmıştır. Bu satışın hasılat kaydı aşağıdakilerden hangisidir? (Maliyet kaydı ayrıca yapılır.)',
+        "Ticari mal satan bir işletme aynı gün iki satış yapmıştır: yurt dışındaki bir alıcıya 10.000 USD tutarında mal ihraç edilmiş, gümrük çıkış tarihindeki kur 32,00 ₺/USD olup bedel henüz tahsil edilmemiştir; yurt içinde bir müşteriye 50.000 ₺ + %20 KDV mal veresiye satılmıştır. İhracat teslimi KDV'den istisnadır. Satışların maliyet kayıtları ayrıca yapılacaktır.\n\nHasılat kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '600 Yurt İçi Satışlar (borç) 100.000, 391 Hesaplanan KDV (borç) 20.000 / 100 Kasa (alacak) 120.000',
-            'B': '100 Kasa (borç) 120.000 / 600 Yurt İçi Satışlar (alacak) 100.000, 391 Hesaplanan KDV (alacak) 20.000',
-            'C': '120 Alıcılar (borç) 120.000 / 600 Yurt İçi Satışlar (alacak) 120.000',
-            'D': '100 Kasa (borç) 120.000 / 649 Diğer Olağan Gelir ve Kârlar (alacak) 100.000, 391 Hesaplanan KDV (alacak) 20.000',
-            'E': '100 Kasa (borç) 120.000 / 600 Yurt İçi Satışlar (alacak) 120.000',
+            'A': '600 Yurt İçi Satışlar hesabı toplam 370.000 ₺ alacaklandırılır',
+            'B': '601 Yurt Dışı Satışlar hesabı 320.000 ₺ alacaklandırılır',
+            'C': '391 Hesaplanan KDV hesabı 74.000 ₺ alacaklandırılır',
+            'D': '601 Yurt Dışı Satışlar hesabı 10.000 ₺ alacaklandırılır',
+            'E': '120 Alıcılar hesabı toplam 370.000 ₺ borçlandırılır',
         },
         'B',
-        'Peşin satışta nakit girişi **100 Kasa (borç) 120.000**; satış hasılatı **600 Yurt İçi Satışlar (alacak) 100.000**; satış üzerinden hesaplanan KDV **391 Hesaplanan KDV (alacak) 20.000**.',
+        "İhracat 601 Yurt Dışı Satışlar hesabına Türk lirası karşılığıyla yazılır: 10.000 × 32,00 = 320.000 ₺; istisna olduğundan KDV hesaplanmaz. Yurt içi satış 600'e 50.000 ₺, KDV 391'e 10.000 ₺ yazılır. 120 Alıcılar toplam 320.000 + 60.000 = 380.000 ₺ borçlandırılır.",
         "1 Sıra No'lu MSUGT - 600 / 391",
     ),
     # düzey 3

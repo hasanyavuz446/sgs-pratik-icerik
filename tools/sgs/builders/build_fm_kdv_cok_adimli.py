@@ -65,16 +65,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        'İşletme 8.000 ₺ + %20 KDV tutarında danışmanlık (yönetim) hizmeti almış, bedeli henüz ödememiştir. Doğru kayıt hangisidir?',
+        'İşletme, genel yönetimle ilgili bir dava için serbest meslek erbabı bir avukattan 20.000 ₺ + %20 KDV tutarında hizmet almış ve serbest meslek makbuzunu kayıtlarına almıştır. Avukatlık ücreti üzerinden soruda kullanılacak %20 oranında gelir vergisi stopajı yapılmış; kalan tutar henüz ödenmemiştir. KDV tevkifatı yoktur.\n\nBu hizmet alımının kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '153 TİCARİ MALLAR 8.000 ₺ (borç) / 191 İNDİRİLECEK KDV 1.600 ₺ (borç) / 320 SATICILAR 9.600 ₺ (alacak)',
-            'B': '770 GENEL YÖNETİM GİD. 8.000 ₺ (borç) / 191 İNDİRİLECEK KDV 1.600 ₺ (borç) / 320 SATICILAR 9.600 ₺ (alacak)',
-            'C': '320 SATICILAR 9.600 ₺ (borç) / 770 GENEL YÖNETİM GİD. 8.000 ₺ (alacak) / 191 İND. KDV 1.600 ₺ (alacak)',
-            'D': '770 GENEL YÖNETİM GİD. 8.000 ₺ (borç) / 391 HESAPLANAN KDV 1.600 ₺ (alacak) / 320 SATICILAR 8.000 ₺ (alacak)',
-            'E': '770 GENEL YÖNETİM GİD. 9.600 ₺ (borç) / 320 SATICILAR 9.600 ₺ (alacak)',
+            'A': '191 İndirilecek KDV hesabı 3.200 ₺ borçlandırılır',
+            'B': '360 Ödenecek Vergi ve Fonlar hesabı 4.000 ₺ alacaklandırılır',
+            'C': '770 Genel Yönetim Giderleri hesabı KDV dâhil 24.000 ₺ borçlandırılır',
+            'D': '320 Satıcılar hesabı 24.000 ₺ alacaklandırılır',
+            'E': '391 Hesaplanan KDV hesabı 4.000 ₺ alacaklandırılır',
         },
         'B',
-        "Hizmet gideri **770 (borç) 8.000 ₺**, yüklenilen KDV **191 (borç) 1.600 ₺**, ödenmediği için **320 SATICILAR (alacak) 9.600 ₺**. KDV giderle birleştirilip 770'e yazılmaz (indirilebilir), alışta 391 değil 191 çalışır.",
+        "Gider brüt ücret üzerinden yazılır: 770 20.000 ₺; KDV 4.000 ₺ indirilecek KDV'dir (191). Stopaj 20.000 × %20 = 4.000 ₺ işletmenin sorumlu sıfatıyla ödeyeceği vergidir (360 alacak). Avukata ödenecek tutar 20.000 + 4.000 − 4.000 = 20.000 ₺ (320 veya 336 alacak).",
         '3065 s. KDVK md 29 / TDHP 770-191-320',
     ),
     # düzey 2

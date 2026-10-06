@@ -443,16 +443,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        'İşletme, 40.000 ₺ + %20 KDV tutarındaki malı, karşılığında alıcıdan senet alarak (senetli) satmıştır. Bu satışın kaydı aşağıdakilerden hangisidir?',
+        "İşletme 40.000 ₺ tutarındaki ticari malı üç ay vadeyle satmış; vade farkı olarak 2.000 ₺'yi satış faturasına eklemiştir. Faturadaki tüm tutarlar %20 KDV'ye tabidir. Müşteri fatura toplamı kadar bir bono düzenleyerek işletmeye vermiştir.\n\nBu satışın kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '121 Alacak Senetleri (borç) 48.000 / 600 Yurt İçi Satışlar (alacak) 40.000 + 391 Hesaplanan KDV (alacak) 8.000',
-            'B': '121 Alacak Senetleri (borç) 40.000 / 600 Yurt İçi Satışlar (alacak) 40.000',
-            'C': '600 Yurt İçi Satışlar (borç) 48.000 / 121 Alacak Senetleri (alacak) 48.000',
-            'D': '120 Alıcılar (borç) 48.000 / 600 Yurt İçi Satışlar (alacak) 40.000 + 391 Hesaplanan KDV (alacak) 8.000',
-            'E': '121 Alacak Senetleri (borç) 48.000 / 600 Yurt İçi Satışlar (alacak) 48.000',
+            'A': '121 Alacak Senetleri hesabı 50.400 ₺ borçlandırılır',
+            'B': '600 Yurt İçi Satışlar hesabı 42.000 ₺ alacaklandırılır',
+            'C': '391 Hesaplanan KDV hesabı 8.000 ₺ alacaklandırılır',
+            'D': '120 Alıcılar hesabı 50.400 ₺ borçlandırılır',
+            'E': '642 Faiz Gelirleri hesabı 2.400 ₺ alacaklandırılır',
         },
         'A',
-        'Senet karşılığı satışta senetli alacak KDV dâhil doğar: **121 Alacak Senetleri (borç) 48.000** (40.000 + %20 KDV 8.000) / 600 Yurt İçi Satışlar (alacak) 40.000 + 391 Hesaplanan KDV (alacak) 8.000.',
+        'Faturada gösterilen vade farkı KDV matrahına dâhildir: (40.000 + 2.000) × %20 = 8.400 ₺. Senet fatura toplamı kadar alınır: 50.400 ₺. Kayıt: 121 Alacak Senetleri 50.400 ₺ borç / 600 Yurt İçi Satışlar 40.000 ₺, vade farkı geliri 2.000 ₺ ve 391 Hesaplanan KDV 8.400 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 121; 3065 s. KDVK",
     ),
     # düzey 2

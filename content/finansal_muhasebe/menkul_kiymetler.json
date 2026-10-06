@@ -179,16 +179,16 @@
     "id": "finmuh-menkul-gen-0009",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, elindeki hisse senetlerinden 6.000 ₺ temettü (kâr payı) yerine, elinde bulundurduğu tahvillerden 6.000 ₺ faiz geliri elde etmiştir. Faiz gelirinin doğru hesabı aşağıdakilerden hangisidir?",
+    "stem": "İşletme 1 Ekim'de, kısa vadeli değerlendirme amacıyla 200.000 ₺ nominal değerli, yıllık %24 faizli ve kuponları 1 Nisan ile 1 Ekim'de ödenen bir şirket tahvilini, kupon ödemesinin yapıldığı gün satın almıştır. 31 Aralık'ta dönemsellik gereği üç aylık faiz tahakkuk ettirilmiştir. İzleyen yıl 1 Nisan'da altı aylık kupon, soruda kullanılacak %10 oranında stopaj kesilerek banka hesabına geçmiştir.\n\n1 Nisan'daki kupon tahsilatı kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
     "options": {
-      "A": "645 Menkul Kıymet Satış Kârları",
-      "B": "679 Diğer Olağandışı Gelir ve Kârlar",
-      "C": "640 İştiraklerden Temettü Gelirleri",
-      "D": "642 Faiz Gelirleri",
-      "E": "600 Yurt İçi Satışlar"
+      "A": "642 Faiz Gelirleri hesabı 24.000 ₺ alacaklandırılır",
+      "B": "181 Gelir Tahakkukları hesabı 12.000 ₺ borçlandırılır",
+      "C": "102 Bankalar hesabı 24.000 ₺ borçlandırılır",
+      "D": "642 Faiz Gelirleri hesabı 12.000 ₺ alacaklandırılır",
+      "E": "193 Peşin Ödenen Vergiler ve Fonlar 1.200 ₺ borçlandırılır"
     },
     "answer": "D",
-    "solution": "Tahvilden elde edilen faiz geliri **642 Faiz Gelirleri**ne yazılır. Temettü (hisse senedinden kâr payı) ise iştirak niteliğindeyse 640'a yazılır; ikisi farklı gelir türleridir.",
+    "solution": "Altı aylık kupon 200.000 × %24 × 6/12 = 24.000 ₺. Ekim–Aralık'a ait 12.000 ₺ geçen yıl 181'e tahakkuk ettirilmişti; cari yıla ait kısım 12.000 ₺'dir. Stopaj 24.000 × %10 = 2.400 ₺. Kayıt: 102 Bankalar 21.600 ₺ ve 193 Peşin Ödenen Vergiler ve Fonlar 2.400 ₺ borç / 181 Gelir Tahakkukları 12.000 ₺ ve 642 Faiz Gelirleri 12.000 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -245,16 +245,16 @@
     "id": "finmuh-menkul-gen-0012",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "İşletme, aynı şirketin hisse senetlerinden önce 100 adedini toplam 4.000 ₺'ye, sonra 100 adedini toplam 5.000 ₺'ye almıştır. Bu hisse senetlerinin ağırlıklı ortalama birim maliyeti kaç ₺'dir?",
+    "stem": "Hisse senetlerini hareketli ağırlıklı ortalama maliyetle izleyen işletme, aynı şirketin hisselerinden önce 100 adedi 40 ₺'den, sonra 200 adedi 46 ₺'den almıştır. Ardından 150 adedi 50 ₺'den satmış, 100 adet daha 52 ₺'den almış ve son olarak 120 adedi 55 ₺'den satmıştır. Komisyon ve vergiler ihmal edilecektir.\n\nBuna göre iki satış nedeniyle '645 Menkul Kıymet Satış Kârları' hesabına yazılan toplam tutar kaç ₺'dir?",
     "options": {
-      "A": "60",
-      "B": "90",
-      "C": "9.000",
-      "D": "50",
-      "E": "45"
+      "A": "2.100",
+      "B": "900",
+      "C": "1.560",
+      "D": "2.236",
+      "E": "1.836"
     },
     "answer": "E",
-    "solution": "Toplam maliyet = 4.000 + 5.000 = 9.000 ₺; toplam adet = 200. Ortalama birim maliyet = 9.000 ÷ 200 = **45 ₺**.",
+    "solution": "İlk ortalama: (4.000 + 9.200) ÷ 300 = 44 ₺; ilk satış kârı 150 × (50 − 44) = 900 ₺. Kalan 150 adede 100 adet 52 ₺'den eklenince yeni ortalama (6.600 + 5.200) ÷ 250 = 47,20 ₺; ikinci satış kârı 120 × (55 − 47,20) = 936 ₺. Toplam 1.836 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -773,16 +773,16 @@
     "id": "finmuh-menkul-gen-0036",
     "ders": "finansal_muhasebe",
     "konu": "menkul_kiymetler",
-    "stem": "Aşağıdaki gelir–hesap eşleştirmelerinden hangisi doğrudur?",
+    "stem": "Bir işletmenin dönem içinde elde ettiği menkul kıymet sonuçları şöyledir: elde tuttuğu tahvillerden 18.000 ₺ kupon faizi, kısa vadeli hisse satışından 12.000 ₺ kâr, başka bir hisse satışından 5.000 ₺ zarar, %25 payına sahip olduğu iştirakinden 20.000 ₺ ve %70 payına sahip olduğu bağlı ortaklığından 30.000 ₺ kâr payı.\n\nBuna göre bu sonuçlar nedeniyle gelir tablosunun '64 Diğer Faaliyetlerden Olağan Gelir ve Kârlar' grubuna yazılacak toplam tutar kaç ₺'dir?",
     "options": {
-      "A": "İştirak temettüsü → 655 Menkul Kıymet Satış Zararları; tahvil faiz geliri → 600 Yurt İçi Satışlar; menkul kıymet satış kârı → 642 Faiz Gelirleri",
-      "B": "Tahvil faiz geliri → 645 Menkul Kıymet Satış Kârları; iştirak temettüsü → 642 Faiz Gelirleri; menkul kıymet satış kârı → 640 İştiraklerden Temettü Gelirleri",
-      "C": "Menkul kıymet satış kârı → 645 Menkul Kıymet Satış Kârları; tahvil faiz geliri → 642 Faiz Gelirleri; iştirak temettüsü → 640 İştiraklerden Temettü Gelirleri",
-      "D": "Menkul kıymet satış kârı → 642 Faiz Gelirleri; tahvil faiz geliri → 645 Menkul Kıymet Satış Kârları; iştirak temettüsü → 655 Menkul Kıymet Satış Zararları",
-      "E": "Menkul kıymet satış kârı → 600 Yurt İçi Satışlar; tahvil faiz geliri → 649 Diğer Olağan Gelirler; iştirak temettüsü → 645 Menkul Kıymet Satış Kârları"
+      "A": "75.000",
+      "B": "30.000",
+      "C": "80.000",
+      "D": "50.000",
+      "E": "85.000"
     },
     "answer": "C",
-    "solution": "Doğru eşleştirme **C**'dir: menkul kıymet satış kârı **645**, tahvil faiz geliri **642 Faiz Gelirleri**, iştiraklerden temettü **640 İştiraklerden Temettü Gelirleri** hesabında izlenir.",
+    "solution": "64 grubu: tahvil faizi 18.000 ₺ (642), hisse satış kârı 12.000 ₺ (645), iştirak kâr payı 20.000 ₺ (640), bağlı ortaklık kâr payı 30.000 ₺ (641); toplam 80.000 ₺. Hisse satış zararı 65 grubunda (655) ayrıca gösterilir; gelirlerle netleştirilmez.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",

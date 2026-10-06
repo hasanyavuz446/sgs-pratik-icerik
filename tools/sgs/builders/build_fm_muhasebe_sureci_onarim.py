@@ -261,16 +261,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'Bir hesap dönemi başında, önceki dönemden devreden bilanço kalemlerinin yevmiye defterine kaydedilmesi işlemine ne ad verilir?',
+        "Bir işletmenin önceki dönem kapanış bilançosunda şu kalemler yer almaktadır: Kasa 20.000 ₺, Alıcılar 80.000 ₺, Ticari Mallar 150.000 ₺, Demirbaşlar 100.000 ₺, Birikmiş Amortismanlar 30.000 ₺, Satıcılar 70.000 ₺, Banka Kredileri 50.000 ₺, Sermaye 200.000 ₺. İşletme yeni dönemin ilk günü bu kalanları yevmiye defterine açılış kaydıyla aktarmaktadır.\n\nBuna göre açılış kaydının borç tarafının toplamı kaç ₺'dir?",
         {
-            'A': 'Açılış kaydı',
-            'B': 'Mahsup kaydı',
-            'C': 'Virman kaydı',
-            'D': 'Kapanış kaydı',
-            'E': 'Düzeltme kaydı',
+            'A': '350.000',
+            'B': '380.000',
+            'C': '420.000',
+            'D': '400.000',
+            'E': '370.000',
         },
         'A',
-        'Dönem başında, önceki dönem sonu bilançosundaki varlık ve kaynakların yevmiyeye aktarılmasına **açılış kaydı** denir. Aktif kalemler borç, pasif kalemler alacak tarafında yer alır.',
+        'Açılış kaydında borç kalanı veren aktif hesaplar borca, alacak kalanı veren hesaplar alacağa yazılır. Birikmiş Amortismanlar aktifi düzenleyen ve alacak kalanı veren bir hesap olduğundan alacak tarafındadır. Borç: 20.000 + 80.000 + 150.000 + 100.000 = 350.000 ₺; alacak: 30.000 + 70.000 + 50.000 + 200.000 = 350.000 ₺.',
         "1 Sıra No'lu MSUGT - Açılış kaydı",
     ),
     # düzey 2
@@ -541,16 +541,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Bir borç ve birden fazla alacak (ya da birden fazla borç ve bir alacak) hesabından oluşan yevmiye maddesine ne ad verilir?',
+        'Bir işletme veresiye ve kısmen peşin mal alışını yevmiye defterine şu şekilde kaydetmiştir: 153 Ticari Mallar hesabına 50.000 ₺ ve 191 İndirilecek KDV hesabına 10.000 ₺ borç; 100 Kasa hesabına 20.000 ₺ ve 320 Satıcılar hesabına 40.000 ₺ alacak.\n\nBirden fazla borçlu ve birden fazla alacaklı hesabın yer aldığı bu tür yevmiye maddesine ne ad verilir?',
         {
             'A': 'Bileşik madde',
-            'B': 'Açılış maddesi',
-            'C': 'Basit madde',
-            'D': 'Karma madde',
-            'E': 'Nazım madde',
+            'B': 'Basit madde',
+            'C': 'Ters kayıt',
+            'D': 'Açılış kaydı',
+            'E': 'Düzeltme kaydı',
         },
         'A',
-        'Bir tarafta tek, diğer tarafta birden fazla hesap bulunan yevmiye maddesi **bileşik madde**dir. Bir borç–bir alacaktan oluşan madde ise **basit madde**dir.',
+        "Yalnız bir borçlu ve bir alacaklı hesaptan oluşan maddeye basit madde, birden fazla borçlu ya da alacaklı hesabın yer aldığı maddeye bileşik madde denir. Bu maddede iki borçlu (153, 191) ve iki alacaklı (100, 320) hesap vardır; toplamlar 60.000 ₺'de eşittir.",
         "1 Sıra No'lu MSUGT - Yevmiye maddesi türleri",
     ),
     # düzey 3
@@ -835,16 +835,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0058': patch(
-        'Bir ana hesabın ayrıntılarının (ör. her bir müşteri, her bir satıcı) ayrı ayrı izlendiği hesaplara ne ad verilir?',
+        'İşletme 120 Alıcılar hesabını müşteri bazında ayrı ayrı izlemektedir. Dönem sonunda bu ayrıntı hesaplarda A Ltd. 30.000 ₺ borç, B A.Ş. 45.000 ₺ borç ve fazla ödeme yaptığı için C Ltd. 5.000 ₺ alacak kalanı vermektedir.\n\nBuna göre bu hesaplarla ilgili aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Sonuç (kâr/zarar) hesapları',
-            'B': 'Geçici (asma) hesaplar',
-            'C': 'Düzenleyici (kontr) hesaplar',
-            'D': 'Nazım (izleme) hesapları',
-            'E': 'Muavin (yardımcı) hesaplar',
+            'A': 'Ana hesap 80.000 ₺ borç kalanı verir',
+            'B': 'Ayrıntı hesaplar nazım hesaplardır; ana hesaba katılmaz',
+            'C': "C Ltd.'nin kalanı ana hesaba eklenir: 85.000 ₺ borç",
+            'D': 'Ayrıntı hesaplar büyük defter hesaplarıdır; ana hesap tutulmaz',
+            'E': 'Muavin hesaplardır; ana hesap 70.000 ₺ borç kalanı verir',
         },
         'E',
-        'Bir ana hesabın ayrıntısını gösteren (ör. 120 Alıcılar altında her müşteri) hesaplar **muavin (yardımcı) hesaplar**dır; ana hesap bakiyesi, muavin hesapların toplamına eşittir.',
+        'Bir ana hesabın ayrıntılarının izlendiği hesaplar muavin (yardımcı) hesaplardır ve kalanlarının toplamı ana hesabın kalanına eşittir: 30.000 + 45.000 − 5.000 = 70.000 ₺ borç. Alacak kalanı veren müşteri, ana hesabın kalanını azaltır.',
         "1 Sıra No'lu MSUGT - Muavin hesaplar",
     ),
     # düzey 2

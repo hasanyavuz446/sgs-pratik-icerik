@@ -583,16 +583,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0040': patch(
-        'Aşağıdakilerden hangisi muhasebenin temel kavramlarından biri değildir?',
+        "Bir işletmenin dönem sonunda şu durumları bulunmaktadır: (1) kazanılması kuvvetle muhtemel görülen 50.000 ₺'lik bir tazminat davası; (2) kaybedilmesi muhtemel olan ve tutarı güvenilir biçimde 30.000 ₺ olarak ölçülen bir dava; (3) piyasa değeri kayıtlı maliyetinin 20.000 ₺ üzerine çıkan bir arsa; (4) karşılık ayrılma koşulları oluşmuş, tahsili şüpheli 12.000 ₺'lik bir ticari alacak.\n\n1 Sıra No'lu Muhasebe Sistemi Uygulama Genel Tebliği'ndeki temel kavramlara göre yapılması gereken kayıtlar dönem kârını nasıl etkiler?",
         {
-            'A': 'Gizlilik',
-            'B': 'Tutarlılık',
-            'C': 'Özün Önceliği',
-            'D': 'Tam Açıklama',
-            'E': 'Önemlilik',
+            'A': '42.000 ₺ azaltır',
+            'B': '28.000 ₺ artırır',
+            'C': '12.000 ₺ azaltır',
+            'D': '22.000 ₺ azaltır',
+            'E': 'Dönem kârını etkilemez',
         },
         'A',
-        "'**Gizlilik**' MSUGT'de sayılan muhasebe temel kavramlarından biri değildir. Tam Açıklama, Özün Önceliği, Tutarlılık ve Önemlilik ise temel kavramlar arasındadır.",
+        'Muhtemel gider ve zararlar için karşılık ayrılır, gerçekleşmemiş gelir ve değer artışları kaydedilmez: kaybedilmesi muhtemel dava için 30.000 ₺ ve şüpheli alacak için 12.000 ₺ gider yazılır; kazanılması muhtemel dava ve arsadaki değer artışı kayda alınmaz. Dönem kârı 42.000 ₺ azalır.',
         "1 Sıra No'lu MSUGT - Temel kavramlar listesi",
     ),
     # düzey 2

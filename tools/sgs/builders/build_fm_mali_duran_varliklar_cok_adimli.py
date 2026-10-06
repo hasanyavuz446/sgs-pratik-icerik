@@ -681,16 +681,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "İşletme, iştirak payında oluşan 30.000 ₺'lik kalıcı değer düşüklüğü için karşılık ayırmıştır. Bu işlemin kaydı aşağıdakilerden hangisidir?",
+        'İşletmenin maliyeti 400.000 ₺ olan iştirak payında dönem sonu itibarıyla toplam 30.000 ₺, maliyeti 900.000 ₺ olan bağlı ortaklık payında 50.000 ₺ kalıcı değer düşüklüğü belirlenmiştir. İştirak payı için önceki dönemde 10.000 ₺ karşılık ayrılmıştır; bağlı ortaklık için daha önce karşılık ayrılmamıştır.\n\nDönem sonu karşılık kaydı aşağıdakilerden hangisidir?',
         {
-            'A': '244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (borç) 30.000 / 654 Karşılık Giderleri (alacak) 30.000',
-            'B': '242 İştirakler (borç) 30.000 / 654 Karşılık Giderleri (alacak) 30.000',
-            'C': '654 Karşılık Giderleri (borç) 30.000 / 244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (alacak) 30.000',
-            'D': '654 Karşılık Giderleri (borç) 30.000 / 242 İştirakler (alacak) 30.000',
-            'E': '640 İştiraklerden Temettü Gelirleri (borç) 30.000 / 244 ... Karşılığı (alacak) 30.000',
+            'A': '654 Karşılık Giderleri 80.000 ₺ borç / 244 30.000 ₺ ve 247 50.000 ₺ alacak',
+            'B': '654 Karşılık Giderleri 70.000 ₺ borç / 242 20.000 ₺ ve 245 50.000 ₺ alacak',
+            'C': '654 Karşılık Giderleri 70.000 ₺ borç / 244 20.000 ₺ ve 247 50.000 ₺ alacak',
+            'D': '654 Karşılık Giderleri 70.000 ₺ borç / 244 70.000 ₺ alacak',
+            'E': '244 20.000 ₺ ve 247 50.000 ₺ borç / 654 Karşılık Giderleri 70.000 ₺ alacak',
         },
         'C',
-        'Değer düşüklüğü bir giderdir → **654 Karşılık Giderleri (borç) 30.000**; varlık doğrudan azaltılmaz, düzenleyici hesap çalışır → **244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı (alacak) 30.000**.',
+        'İştirak için gereken toplam karşılık 30.000 ₺, mevcut 10.000 ₺; ek karşılık 20.000 ₺ (244 İştirakler Sermaye Payları Değer Düşüklüğü Karşılığı). Bağlı ortaklık için 50.000 ₺ (247). Kayıt: 654 70.000 ₺ borç / 244 20.000 ₺ ve 247 50.000 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 654 / 244",
     ),
     # düzey 2
@@ -737,16 +737,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        "Kayıtlı (maliyet) değeri 300.000 ₺ olan bir iştirak için 40.000 ₺ değer düşüklüğü karşılığı (244) ayrılmıştır. İştirakin bilançoda görüneceği net değer kaç ₺'dir?",
+        "İşletmenin maliyeti 300.000 ₺ olan iştirak payı için daha önce 40.000 ₺ değer düşüklüğü karşılığı ayrılmıştır. İşletme bu payın yarısını 170.000 ₺'ye satmış ve bedeli banka hesabına almıştır. Satılan paya isabet eden karşılık da satış kaydında kapatılmaktadır. Vergi istisnaları ve satış giderleri ihmal edilecektir.\n\nBuna göre bu satıştan doğan kâr kaç ₺'dir?",
         {
-            'A': '40.000',
-            'B': '300.000',
-            'C': '260.000',
-            'D': '340.000',
-            'E': '0',
+            'A': '20.000',
+            'B': '60.000',
+            'C': '40.000',
+            'D': '170.000',
+            'E': '30.000',
         },
         'C',
-        'Net değer = Kayıtlı değer − Değer düşüklüğü karşılığı = 300.000 − 40.000 = **260.000 ₺** (242 − 244).',
+        'Satılan yarının maliyeti 150.000 ₺, buna isabet eden karşılık 20.000 ₺; net defter değeri 130.000 ₺. Satış kârı = 170.000 − 130.000 = 40.000 ₺. Kayıt: 102 170.000 ₺ ve 244 20.000 ₺ borç / 242 150.000 ₺ ve satış kârı 40.000 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 242 / 244",
     ),
     # düzey 2

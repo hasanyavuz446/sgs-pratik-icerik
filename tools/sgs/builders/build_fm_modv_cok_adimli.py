@@ -737,16 +737,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        "Kayıtlı maliyeti 100.000 ₺, birikmiş itfası (268) 60.000 ₺ olan bir hak 55.000 ₺'ye satılmıştır. Bu satıştan doğan kâr veya zarar kaç ₺'dir?",
+        "İşletme altı yıl süreli bir bayilik hakkını 150.000 ₺'ye edinmiş ve süresi boyunca eşit tutarlarla itfa etmiştir. Dört yıllık itfa ayrıldıktan sonra, beşinci yılın başında hakkın kalan iki yılı başka bir işletmeye 40.000 ₺'ye devredilmiş ve bedel banka hesabına geçmiştir. Vergiler ihmal edilecektir.\n\nBuna göre devirden doğan sonuç aşağıdakilerden hangisidir?",
         {
-            'A': '15.000 ₺ kâr',
-            'B': '15.000 ₺ zarar',
-            'C': '40.000 ₺ kâr',
-            'D': '45.000 ₺ kâr',
-            'E': '5.000 ₺ zarar',
+            'A': '10.000 ₺ zarar',
+            'B': '40.000 ₺ kâr',
+            'C': '10.000 ₺ kâr',
+            'D': '110.000 ₺ zarar',
+            'E': 'Kâr veya zarar doğmaz',
         },
         'A',
-        'Net defter değeri = 100.000 − 60.000 = 40.000 ₺. Satış 55.000 ₺ > NDD 40.000 ₺ → **15.000 ₺ kâr** (679 Diğer Olağandışı Gelir ve Kârlar).',
+        'Yıllık itfa 150.000 / 6 = 25.000 ₺; dört yılda 100.000 ₺ birikmiştir (268). Net defter değeri 50.000 ₺; devir bedeli 40.000 ₺ olduğundan 10.000 ₺ zarar doğar. Kayıt: 102 40.000 ₺, 268 100.000 ₺ ve 689 10.000 ₺ borç / 260 Haklar 150.000 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 260/268/679",
     ),
     # düzey 2
