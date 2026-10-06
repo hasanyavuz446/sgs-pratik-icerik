@@ -24,6 +24,14 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — FM kavram soruları olayla kuruldu (v239 canlı)
+
+65 sorunun yalnız kökü değişti (şık, cevap, çözüm, dayanak aynı; doğrulandı). Kısa kavram ve hesap
+planı soruları kavramı uygulatan somut olaylarla kuruldu; başka bir sorunun senaryosunu tekrar
+eden ya da cevabını açığa vuracak olanlara ve formül sorularına dokunulmadı. FM: medyan 233→248,
+çeyrekler 178 / 248 / 311 (gerçek 187 / 285 / 346), 150 altı %17 (gerçek %20), 250+ %49 (gerçek
+%62), kökte 3+ tutar %50 (gerçek %52). Alt uç gerçeğe ulaştı; kalan açık üst yarıda.
+
 ## 6 Ekim 2026 — FM kök derinliği 3. tur (v238 canlı)
 
 16 soru, 10 paket. Ders medyanı 231→233; çeyrekler bizde 155 / 233 / 301, gerçekte 187 / 285 / 346;
