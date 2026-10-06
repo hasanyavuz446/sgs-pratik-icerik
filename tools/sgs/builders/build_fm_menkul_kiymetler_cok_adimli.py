@@ -93,16 +93,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'İşletmenin menkul kıymetleri bilançoda hangi değerle (net) gösterilir?',
+        "İşletmenin kısa vadeli kâr amacıyla elde tuttuğu iki farklı hisse senedi bulunmaktadır. X A.Ş. hisselerinin maliyeti 80.000 ₺, dönem sonu borsa değeri 70.000 ₺; Y A.Ş. hisselerinin maliyeti 50.000 ₺, dönem sonu borsa değeri 62.000 ₺'dir. Önceki dönemde X A.Ş. hisseleri için 4.000 ₺ değer düşüklüğü karşılığı ayrılmıştır. İşletme karşılığı her menkul kıymet için ayrı ayrı belirlemektedir.\n\nBuna göre dönem sonunda ayrılacak ek karşılık ve menkul kıymetlerin bilançodaki net tutarı aşağıdakilerden hangisidir?",
         {
-            'A': '119 Menkul Kıymetler Değer Düşüklüğü Karşılığı tutarı tek başına gösterilir',
-            'B': 'Menkul kıymetlerin nominal değeri ile üzerine işlemiş faiz getirisinin toplamı',
-            'C': 'Menkul kıymetlerin kayıtlı değeri − 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)',
-            'D': 'Menkul kıymetlerin kayıtlı değeri + 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)',
-            'E': 'Menkul kıymetlerin dönem sonundaki güncel satış (borsa) fiyatı esas alınarak',
+            'A': '10.000 ₺ ek karşılık; net tutar 120.000 ₺',
+            'B': 'Karşılık gerekmez; net tutar 130.000 ₺',
+            'C': '6.000 ₺ ek karşılık; net tutar 120.000 ₺',
+            'D': '6.000 ₺ ek karşılık; net tutar 132.000 ₺',
+            'E': '2.000 ₺ karşılık iptali; net tutar 132.000 ₺',
         },
         'C',
-        'Menkul kıymetler bilançoda **kayıtlı değer − 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı (-)** biçiminde net gösterilir; 119 aktifi düzenleyici olduğundan düşülür.',
+        "Karşılık kalem bazında belirlendiğinden Y A.Ş. hisselerindeki değer artışı X A.Ş.'deki düşüşle dengelenmez ve kayda alınmaz. X için gereken karşılık 80.000 − 70.000 = 10.000 ₺; mevcut 4.000 ₺ olduğundan 6.000 ₺ ek karşılık ayrılır (654 borç / 119 alacak). Net tutar = (80.000 + 50.000) − 10.000 = 120.000 ₺.",
         "1 Sıra No'lu MSUGT - 11/119 net gösterim",
     ),
     # düzey 2
@@ -317,16 +317,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        'İşletmenin kısa vadede kâr amacıyla edindiği hisse senetleri hangi hesapta izlenir?',
+        "İşletme dönem içinde şu menkul kıymetleri satın almıştır:\n\n(1) Borsada kısa sürede satmak amacıyla X A.Ş. hisseleri, 120.000 ₺.\n\n(2) Yönetimde söz sahibi olmak amacıyla Y A.Ş.'nin sermayesinin %30'unu temsil eden hisseler, 900.000 ₺.\n\n(3) Z A.Ş.'nin sermayesinin %60'ını temsil eden hisseler, 2.000.000 ₺.\n\n(4) Vadesine kadar elde tutulacak üç yıl vadeli bir şirket tahvili, 150.000 ₺.\n\n(5) Fon fazlasını kısa süre değerlendirmek için alınan altı ay vadeli devlet tahvili, 80.000 ₺.\n\nBuna göre bu alımlardan '11 Menkul Kıymetler' grubuna kaydedilen toplam tutar kaç ₺'dir?",
         {
-            'A': '120 Alıcılar',
-            'B': '242 İştirakler',
-            'C': '240 Bağlı Menkul Kıymetler',
-            'D': '320 Satıcılar',
-            'E': '110 Hisse Senetleri',
+            'A': '350.000',
+            'B': '230.000',
+            'C': '1.100.000',
+            'D': '270.000',
+            'E': '200.000',
         },
         'E',
-        "Kısa vadeli kâr amacıyla elde tutulan hisse senetleri **110 Hisse Senetleri** (11 Menkul Kıymetler) hesabında izlenir. Uzun vadeli ortaklık amaçlılar 242 İştirakler / 245 Bağlı Ortaklıklar'dadır.",
+        "11 grubunda kısa vadeli (geçici yatırım) amaçla edinilen menkul kıymetler izlenir: X A.Ş. hisseleri (110) 120.000 ₺ ve altı ay vadeli devlet tahvili (112) 80.000 ₺; toplam 200.000 ₺. Yönetime katılma amaçlı %30'luk pay 242 İştirakler, %60'lık pay 245 Bağlı Ortaklıklar, vadeye kadar elde tutulacak üç yıllık tahvil 240 Bağlı Menkul Kıymetler hesabında izlenir.",
         "1 Sıra No'lu MSUGT - 110 Hisse Senetleri",
     ),
     # düzey 2
@@ -485,16 +485,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        "İşletme, maliyeti 75.000 ₺ olan hisse senetlerini 90.000 ₺'ye peşin satmıştır. Bu satıştan doğan menkul kıymet satış kârı kaç ₺'dir?",
+        "İşletme kısa vadeli kâr amacıyla adedini 45 ₺'den 1.200 adet hisse senedi almıştır. Daha sonra bu hisselerin 800 adedini aracı kurum kanalıyla adedi 58 ₺'den satmış; aracı kurum satış tutarı üzerinden %0,25 komisyon keserek kalanı işletmenin banka hesabına aktarmıştır. İşletme komisyonu ayrı bir gider hesabında izlemektedir.\n\nBuna göre '645 Menkul Kıymet Satış Kârları' hesabına alacak kaydedilecek tutar kaç ₺'dir?",
         {
-            'A': '18.000',
-            'B': '15.000',
-            'C': '75.000',
-            'D': '90.000',
-            'E': '165.000',
+            'A': '15.600',
+            'B': '10.400',
+            'C': '46.400',
+            'D': '12.400',
+            'E': '10.284',
         },
         'B',
-        'Kâr = Satış − Maliyet = 90.000 − 75.000 = **15.000 ₺** (645 Menkul Kıymet Satış Kârları).',
+        "Satış tutarı 800 × 58 = 46.400 ₺; satılan hisselerin maliyeti 800 × 45 = 36.000 ₺; satış kârı 10.400 ₺ (645 alacak). Komisyon 46.400 × %0,25 = 116 ₺ ayrı gider olarak 653 Komisyon Giderleri'ne yazılır; kayıt: 102 Bankalar 46.284 ₺ ve 653 116 ₺ borç / 110 Hisse Senetleri 36.000 ₺ ve 645 10.400 ₺ alacak.",
         "1 Sıra No'lu MSUGT - 645",
     ),
     # düzey 2
@@ -541,16 +541,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Menkul kıymet satışından doğan zararın işletmenin dönem sonucuna etkisi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        "İşletme dönem içinde kısa vadeli menkul kıymetlerinden şu satışları yapmıştır: maliyeti 40.000 ₺ olan X A.Ş. hisselerini 46.000 ₺'ye, maliyeti 30.000 ₺ olan ve karşılık ayrılmamış Y A.Ş. hisselerini 27.000 ₺'ye, maliyeti 20.000 ₺ olan bir şirket tahvilini 19.000 ₺'ye. Satışların tamamı peşindir; vergi ve komisyon ihmal edilecektir.\n\nBuna göre bu satışlar sonucunda gelir tablosu hesaplarına kaydedilecek tutarlar aşağıdakilerden hangisidir?",
         {
-            'A': 'İşletmenin ödenmiş sermayesini doğrudan artıran bir kalemdir.',
-            'B': 'Dönem kârını artırır (645 ile gelir yazıldığı için).',
-            'C': 'Dönem sonucunu etkilemez, kâr aynı kalır.',
-            'D': 'Bilançoyu etkiler; gelir tablosunu etkilemez.',
-            'E': 'Dönem kârını azaltır (655 ile gider/zarar yazıldığı için).',
+            'A': '645: 2.000 ₺; 655 hesabı kullanılmaz',
+            'B': '645: 6.000 ₺; 655: 3.000 ₺',
+            'C': '645: 7.000 ₺; 655: 3.000 ₺',
+            'D': '642: 6.000 ₺; 655: 4.000 ₺',
+            'E': '645: 6.000 ₺; 655: 4.000 ₺',
         },
         'E',
-        'Menkul kıymet satış zararı **655 Menkul Kıymet Satış Zararları** ile gider/zarar yazıldığından dönem kârını **azaltır** (diğer faaliyetlerden olağan gider).',
+        "Her satışın sonucu ayrı belirlenir ve kâr ile zarar netleştirilmez. X A.Ş.: 46.000 − 40.000 = 6.000 ₺ kâr (645). Y A.Ş.: 27.000 − 30.000 = 3.000 ₺ zarar; tahvil: 19.000 − 20.000 = 1.000 ₺ zarar; ikisi 655 Menkul Kıymet Satış Zararları'na toplam 4.000 ₺ yazılır. Satış kârı faiz geliri değildir; 642 kullanılmaz.",
         "1 Sıra No'lu MSUGT - 655",
     ),
     # düzey 3
