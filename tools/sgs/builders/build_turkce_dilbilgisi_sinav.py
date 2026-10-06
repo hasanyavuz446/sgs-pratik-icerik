@@ -37,7 +37,7 @@ def patch(stem, options, answer, solution, ref='Türkçe - dil bilgisi'):
 _PATCHES = {
     # düzey 3
     '0001': patch(
-        'Aşağıdaki cümlelerin hangisinde yer-yön zarfı vardır?',
+        '“Akşam olunca kuşlar dallardan aşağı süzüldü.”\n\nBu cümlede “aşağı” sözcüğü hangi türdeyse aşağıdaki cümlelerin hangisinde de aynı türde bir sözcük kullanılmıştır?',
         {
             'A': 'Sınav günü sabahleyin erkenden kalkıp kahvaltımızı aceleyle yaptık.',
             'B': 'Zil çalar çalmaz çocuklar koşarak merdivenlerden yukarı çıktı.',
@@ -102,7 +102,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        "Aşağıdaki cümlelerin hangisinde 'ki' bağlaç olarak kullanılmıştır?",
+        '“Kar o kadar çok yağmıştı ki köy yolu günlerce açılamadı.”\n\nAşağıdaki cümlelerin hangisinde “ki” yukarıdaki cümledeki göreviyle kullanılmıştır?',
         {
             'A': 'Yarınki proje toplantısına bizim bölümden kimler katılacak?',
             'B': 'Senin bisikletin güzelmiş ama benimki biraz daha yeni.',
@@ -245,7 +245,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'Aşağıdaki cümlelerin hangisinde özne, eylemi yapan değil eylemden etkilenendir?',
+        '“Mahalledeki eski konak, geçen yıl aslına uygun biçimde onarıldı.”\n\nAşağıdaki cümlelerin hangisinde özne, yukarıdaki cümlede olduğu gibi eylemi yapan değil eylemden etkilenendir?',
         {
             'A': 'Çocuklar okul çıkışında bahçede saatlerce top oynuyor.',
             'B': 'Annem, misafirler için bize lezzetli bir kek yaptı.',
@@ -336,7 +336,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        "Aşağıdaki cümlelerin hangisinde 'gibi' sözcüğü benzerlik anlamında kullanılmamıştır?",
+        '“Haberi aldığı gibi hastaneye koştu.”\n\nAşağıdaki cümlelerin hangisinde “gibi” sözcüğü yukarıdaki cümledeki anlamıyla kullanılmıştır?',
         {
             'A': 'Kızı da tıpkı annesi gibi yavaş ve tatlı konuşuyordu.',
             'B': 'Bütün gün koşturan bebek akşam bir melek gibi uyuyordu.',
@@ -453,7 +453,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        'Aşağıdaki cümlelerin hangisinde ek fiil, isim soylu bir sözcüğü yüklem yapmıştır?',
+        '“Kasabanın en eski yapısı bu taş köprüydü.”\n\nBu cümlede ek fiil hangi görevle kullanılmışsa aşağıdaki cümlelerin hangisinde de aynı görevle kullanılmıştır?',
         {
             'A': 'Sabahki toplantıya müdür de geç kalacakmış.',
             'B': 'Dedem eskiden her gece yatmadan önce kitap okurdu.',
@@ -531,7 +531,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        "Aşağıdaki cümlelerin hangisinde 'de' bağlaç olarak kullanılmıştır?",
+        '“Bu yıl kardeşim de üniversite sınavına girecek.”\n\nAşağıdaki cümlelerin hangisinde “de” yukarıdaki cümledeki göreviyle kullanılmıştır?',
         {
             'A': 'Bu akşam sen de bize gel, birlikte yemek yiyelim.',
             'B': 'Sınav başlayınca sınıfta herkes sessizce bekledi.',
@@ -544,7 +544,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0040': patch(
-        'Aşağıdaki cümlelerin hangisinde zarf, başka bir zarfı nitelemiştir?',
+        '“Yaşlı adam, merdivenleri oldukça yavaş çıkıyordu.”\n\nBu cümlede bir zarf, başka bir zarfı nitelemektedir. Aşağıdaki cümlelerin hangisinde de bu niteleme ilişkisi vardır?',
         {
             'A': 'Konserde genç sanatçı çok güzel bir şarkı söyledi.',
             'B': 'Taşındığımız evin salonu oldukça büyük ve aydınlık.',
@@ -609,7 +609,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        'Aşağıdaki cümlelerden hangisi soru eki taşıdığı hâlde soru anlamı taşımaz?',
+        '“Akşam eve geldi mi önce bahçeyi sular.”\n\nBu cümlede “mi” eki soru anlamı taşımamaktadır. Aşağıdaki cümlelerden hangisinde de soru eki bu biçimde kullanılmıştır?',
         {
             'A': 'Sınav zor muydu?',
             'B': 'Eve geldi mi hemen yatağa uzanır.',
@@ -622,7 +622,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "Aşağıdaki cümlelerin hangisinde 'bir' sözcüğü belgisiz sıfat olarak kullanılmıştır?",
+        '“Bir akşam eski dostum ansızın kapımı çaldı.”\n\nAşağıdaki cümlelerin hangisinde “bir” sözcüğü yukarıdaki cümledeki göreviyle kullanılmıştır?',
         {
             'A': 'Bir gün mutlaka bu kasabaya yeniden döneceğim.',
             'B': 'Bu konuda hepimiz aynı fikirde biriz, tartışmaya gerek yok.',
@@ -674,7 +674,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        'Aşağıdaki cümlelerin hangisinde bağlaç, cümleler arasında neden-sonuç ilişkisi kurmuştur?',
+        '“Yollar buz tuttu, bu yüzden okullar bir gün tatil edildi.”\n\nBu cümlede bağlaç iki yargı arasında hangi ilişkiyi kurmuşsa aşağıdaki cümlelerin hangisinde de bağlaç aynı ilişkiyi kurmuştur?',
         {
             'A': 'Aylarca çok çalıştı ama sınavı yine de kazanamadı.',
             'B': 'Hafta sonu pikniğe sen de bizimle gel.',
@@ -687,7 +687,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        "Aşağıdaki cümlelerin hangisinde 'ancak' sözcüğü bağlaç olarak kullanılmıştır?",
+        '“Projeyi zamanında bitirmek için çok uğraştık ancak bazı eksikler kaldı.”\n\nAşağıdaki cümlelerin hangisinde “ancak” sözcüğü yukarıdaki cümledeki göreviyle kullanılmıştır?',
         {
             'A': 'Toplantıya gelmek istedim ancak son anda işim çıktı.',
             'B': 'Bu kadar kısa sürede ancak bu kadarını yapabilirim.',
@@ -752,7 +752,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        'Aşağıdaki cümlelerin hangisinde ikileme, karşıt anlamlı sözcüklerle oluşturulmuştur?',
+        '“Bahçenin köşesinde irili ufaklı taşlar birikmişti.”\n\nBu cümledeki ikileme hangi yolla oluşturulmuşsa aşağıdaki cümlelerin hangisinde de ikileme aynı yolla oluşturulmuştur?',
         {
             'A': 'Bütün gün çalışan işçiler akşam yorgun argın eve döndü.',
             'B': 'Akşam serinliğinde yavaş yavaş eve doğru yürüdük.',
@@ -778,7 +778,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0058': patch(
-        'Aşağıdaki cümlelerin hangisinde kalın yazılmış sözcük zarf olarak kullanılmıştır?',
+        '“Öğrenciler sınav sorularını **dikkatli** okudu.”\n\nBu cümlede kalın yazılmış sözcük hangi görevle kullanılmışsa aşağıdaki cümlelerin hangisinde de kalın yazılmış sözcük aynı görevle kullanılmıştır?',
         {
             'A': 'Bu **güzeli** herkes çok sevdi.',
             'B': 'Dün **güzel** bir gün geçirdik.',
@@ -804,7 +804,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0060': patch(
-        'Aşağıdaki cümlelerin hangisinde kalın yazılmış sözcük adlaşmış bir sıfat-fiildir?',
+        '“Bu yarışmada **kazananlar** ödüllerini cuma günü alacak.”\n\nBu cümlede kalın yazılmış sözcük hangi türdeyse aşağıdaki cümlelerin hangisinde de kalın yazılmış sözcük aynı türdedir?',
         {
             'A': '**Okuyan** bir adım öndedir.',
             'B': 'Kitapları **okuyarak** öğrendi.',

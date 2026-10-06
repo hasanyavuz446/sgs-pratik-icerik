@@ -89,7 +89,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'Aşağıdaki cümlelerin hangisinde özne-yüklem uyumsuzluğundan kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Sen ve arkadaşların bu işi zamanında bitireceksin.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Bu yıl düzenli çalışırsak sen ve ben üniversite sınavını mutlaka başaracaksınız.',
             'B': 'Ali ile Ayşe, dün akşam yeni açılan sinemaya birlikte gitti.',
@@ -115,7 +115,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        "Aşağıdaki cümlelerin hangisinde '-ken' ekinin yazımı yanlıştır?",
+        'Ek fiil olan “-ken” eki, eklendiği sözcüğe bitişik yazılır ve ünlü uyumlarına girmez.\n\nAşağıdaki cümlelerin hangisinde “-ken” ekinin yazımı bu kurala uymamaktadır?',
         {
             'A': 'Babam, yemek yerken televizyon izlemeyi pek sevmezdi.',
             'B': 'İşten eve dönerken fırına uğrayıp sıcak ekmek aldı.',
@@ -154,7 +154,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0010': patch(
-        'Aşağıdaki cümlelerin hangisinde farklı tümleç isteyen yüklemlerin ortak tümleçle kullanılmasından kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Yeni müdürü bütün çalışanlar çok sayıyor ve güveniyor.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Kardeşim bu yazarın kitaplarını çok seviyor ve her fırsatta sık sık bahsediyor.',
             'B': 'Kurul, öğrencilerin hazırladığı projeyi ayrıntılı biçimde inceledi ve onayladı.',
@@ -245,7 +245,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'Aşağıdaki cümlelerin hangisinde bağlacın yanlış kullanılmasından kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Hava çok güzeldi ama hep birlikte pikniğe gittik.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Sınavdan önceki haftalarda çok çalıştı ama sınavı rahatlıkla kazandı.',
             'B': 'Sınavdan önceki haftalarda çok çalıştığı için sınavı kazandı.',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        "Aşağıdaki cümlelerin hangisinde 'de'nin yazımı yanlıştır?",
+        'Bağlaç olan “de” her zaman ayrı yazılır ve kendinden önceki sözcüğün son ünlüsüne göre “da” ya da “de” biçimini alır; bulunma durumu eki olan “-de” ise bitişik yazılır.\n\nAşağıdaki cümlelerin hangisinde “de”nin yazımı bu kurala uymamaktadır?',
         {
             'A': 'Annem kitapları da defterleri de çantama özenle yerleştirdi.',
             'B': 'Dün yapılan toplantıda önemli kararlar alındı.',
@@ -427,7 +427,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0031': patch(
-        "Aşağıdaki cümlelerin hangisinde 'ki'nin yazımı yanlıştır?",
+        'Bağlaç olan “ki” ayrı, ilgi eki olan “-ki” ise bitişik yazılır. Kalıplaşmış bazı sözlerde bağlaç olan “ki” de bitişik yazılır.\n\nAşağıdaki cümlelerin hangisinde “ki”nin yazımı bu kurallara uymamaktadır?',
         {
             'A': 'Konuşma bitince salona öyleki bir sessizlik çöktü, kimse sesini çıkaramadı.',
             'B': 'Yarınki toplantıya önemli bir işim çıktığı için katılamayacağım.',
@@ -466,7 +466,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0034': patch(
-        'Aşağıdaki cümlelerin hangisinde zaman uyumsuzluğundan kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Dün akşam markete gittim ve bol bol meyve alacağım.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Babam her sabah erkenden yürüyüş yapar, sonra kahvaltı eder.',
             'B': 'Dün akşam yoğun trafik yüzünden eve geç döndüm.',
@@ -622,7 +622,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        'Aşağıdaki cümlelerin hangisinde nesne eksikliğinden kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Bu konuya çok önem veriyor ve sürekli araştırıyor.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Ödevini akşam bitirdi, sabah da öğretmenine teslim etti.',
             'B': 'Arkadaşlarını çok sever ve zor günlerde onlara güvenir.',
@@ -661,7 +661,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        'Aşağıdaki cümlelerin hangisinde dolaylı tümleç eksikliğinden kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Bu işi gerçekten seviyor ve yıllardır uğraşıyor.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Yeni evlerine geçen ay taşındılar ve orayı çok sevdiler.',
             'B': 'Sınava aylarca iyi hazırlandı ve sonunda başarılı oldu.',
@@ -674,7 +674,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        'Aşağıdaki cümlelerin hangisinde soru ekinin yazımı yanlıştır?',
+        'Soru eki “mı, mi, mu, mü” kendinden önceki sözcükten ayrı yazılır; soru ekinden sonra gelen ekler ise soru ekine bitişik yazılır.\n\nAşağıdaki cümlelerin hangisinde soru ekinin yazımı bu kurala uymamaktadır?',
         {
             'A': 'Geldi mi hemen bana haber ver, birlikte çıkarız.',
             'B': 'Güzel mi güzel, bahçeli bir evde oturuyorlardı.',
@@ -687,7 +687,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        'Aşağıdaki cümlelerin hangisinde çatı uyumsuzluğundan kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Yeni yol belediye tarafından yapıldı ve geçen hafta trafiğe açtı.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Sınav sorunsuz biçimde yapıldı, sonuçlar ertesi gün açıklandı.',
             'B': 'Proje öğrenciler tarafından hazırlandı ve kurula sundu.',
@@ -765,7 +765,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        'Aşağıdaki cümlelerin hangisinde yüklem eksikliğinden kaynaklanan bir anlatım bozukluğu vardır?',
+        '“Kardeşim hem çok çalışkan hem de her gün kütüphaneye gidiyor.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Kardeşim hem yetenekliydi hem de derslerine çok çalışırdı.',
             'B': 'Uzun süre hazırlandığı sınavı kazandı ve çok sevindi.',
@@ -778,7 +778,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0058': patch(
-        'Aşağıdaki cümlelerin hangisinde bir sözcüğün yanlış anlamda kullanılmasından kaynaklanan anlatım bozukluğu vardır?',
+        '“Mahallemizdeki kütüphane maalesef yenilenerek yeniden hizmete açıldı.”\n\nBu cümledeki anlatım bozukluğunun benzeri aşağıdaki cümlelerin hangisinde vardır?',
         {
             'A': 'Sabahtan beri yağan yağmur sonunda öğleye doğru dindi.',
             'B': 'Durakta saatlerce bekledik ama otobüs nihayet gelmedi.',

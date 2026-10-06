@@ -180,7 +180,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Aşağıdaki cümlelerin hangisinde öznel bir yargı yoktur?',
+        'Kişinin görüşüne, duygusuna ya da beğenisine dayanan, doğruluğu kişiden kişiye değişebilen yargılara öznel yargı denir.\n\nAşağıdaki cümlelerin hangisinde böyle bir yargı yoktur?',
         {
             'A': 'Yazarın son romanı, sade diliyle her yaştan okura seslenebilen bir eser olmuş.',
             'B': 'Romanın son bölümleri, ilk bölümlerin aksine fazlasıyla aceleye getirilmiş.',
@@ -193,7 +193,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        'Aşağıdaki cümlelerin hangisinde sitem yoktur?',
+        'Sevilen ya da yakın bilinen birine, davranışından duyulan kırgınlığı yumuşak bir dille hissettirmeye sitem denir.\n\nAşağıdaki cümlelerin hangisinde sitem yoktur?',
         {
             'A': 'Bu güzel hediye için sana ne kadar teşekkür etsem az.',
             'B': 'Bir telefon edecek kadar da mı vaktin olmadı?',
@@ -206,7 +206,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        'Aşağıdaki cümlelerden hangisi olasılık anlamı taşımaz?',
+        '“Trafik yoğun olursa toplantıya biraz gecikebiliriz.” cümlesinde bir yargının gerçekleşmesi kesin değil, olası olarak bildirilmiştir.\n\nAşağıdaki cümlelerden hangisi böyle bir anlam taşımaz?',
         {
             'A': 'Arabanın kapısını kilitledim ama galiba anahtarı kontakta unuttum.',
             'B': 'Yönetim kurulu toplantısı yarın saat üçte şirketin merkez binasında başlayacak.',
@@ -245,7 +245,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        'Aşağıdaki cümlelerin hangisinde "abartma" söz konusudur?',
+        'Bir durumu, olayı ya da özelliği olduğundan çok daha büyük veya etkili göstererek anlatıma güç katmaya abartma denir.\n\nAşağıdaki cümlelerin hangisinde abartma söz konusudur?',
         {
             'A': 'Sınav haftası olduğu için bugün kütüphanede iki saat aralıksız çalıştım.',
             'B': 'Sabah servisi kalabalık olduğundan otobüs durakta beş dakika fazla bekledi.',
@@ -284,7 +284,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0020': patch(
-        'Aşağıdaki cümlelerin hangisinde bir "koşula bağlılık" söz konusu değildir?',
+        '“Erken gelirsen seni de konsere götürürüz.” cümlesinde bir eylemin gerçekleşmesi başka bir eylemin gerçekleşmesine bağlanmıştır.\n\nAşağıdaki cümlelerin hangisinde böyle bir koşula bağlılık söz konusu değildir?',
         {
             'A': 'Yağmur başlayınca bahçedeki masayı toplayıp hep birlikte içeri girdik.',
             'B': 'Bu gece erken yatarsan sabah sınava çok daha dinç kalkarsın.',
@@ -362,7 +362,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Aşağıdaki cümlelerin hangisinde gerekçeli bir yargı vardır?',
+        'Bir yargının, dayandığı neden ya da kanıtla birlikte bildirilmesine gerekçeli anlatım denir.\n\nAşağıdaki cümlelerin hangisinde yargı gerekçesiyle birlikte verilmiştir?',
         {
             'A': 'Yol, belediye ekiplerinin karı temizlemesinin ardından ulaşıma açıldı.',
             'B': 'Fırtınanın ardından yolun yeniden kapanıp kapanmayacağını kimse bilmiyor.',
@@ -388,7 +388,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0028': patch(
-        'Aşağıdaki cümlelerin hangisinde dolaylama vardır?',
+        'Bir varlığı ya da kavramı, kendi adını kullanmadan onu tanıtan birkaç sözcükle anlatmaya dolaylama denir.\n\nAşağıdaki cümlelerin hangisinde bu anlatım biçimine başvurulmuştur?',
         {
             'A': 'Altın fiyatları bu hafta yeniden yükselişe geçti.',
             'B': 'Bölgenin ekonomisi büyük ölçüde pamuk üretimine dayanıyor.',
@@ -427,7 +427,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0031': patch(
-        'Aşağıdaki cümlelerin hangisinde amaç-sonuç ilişkisi vardır?',
+        '“Kilo vermek için her sabah sahilde yürüyüş yapıyor.” cümlesinde eylemin hangi amaçla yapıldığı belirtilmiştir.\n\nAşağıdaki cümlelerin hangisinde de yukarıdaki cümlede olduğu gibi amaç-sonuç ilişkisi vardır?',
         {
             'A': 'Gece boyunca yağan yağmur yüzünden sabah bütün sokaklar ıslaktı.',
             'B': 'Hava akşamüstü iyice soğuduğundan salondaki sobayı yaktık.',
@@ -440,7 +440,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0032': patch(
-        'Aşağıdaki cümlelerin hangisi nesnel bir yargı içerir?',
+        'Kişiden kişiye değişmeyen, doğruluğu ya da yanlışlığı kanıtlanabilen yargılara nesnel yargı denir.\n\nAşağıdaki cümlelerin hangisi bu tür bir yargı içermektedir?',
         {
             'A': 'Annemin yaptığı bu yemek, bence ülkenin en lezzetli yemeklerinden biridir.',
             'B': 'Filmin hüzünlü müzikleri, izleyen herkesin içini derinden burkuyor.',
@@ -453,7 +453,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        'Aşağıdaki cümlelerin hangisinde kesinlik anlamı vardır?',
+        'Bir yargının hiçbir kuşkuya ve tahmine yer bırakmadan, her durumda geçerli olacak biçimde bildirilmesi cümleye kesinlik anlamı katar.\n\nAşağıdaki cümlelerin hangisinde bu anlam vardır?',
         {
             'A': 'Herkesin korktuğu bu sınav, sanıldığı kadar zor olmayabilir.',
             'B': 'İşlerimiz yetişirse belki hafta sonu size de uğrayabiliriz.',
@@ -479,7 +479,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Aşağıdaki cümlelerin hangisinde varsayım yoktur?',
+        'Gerçekleşmemiş bir durumun, üzerinde düşünmek amacıyla gerçekleşmiş gibi kabul edilmesine varsayım denir.\n\nAşağıdaki cümlelerin hangisinde varsayım yoktur?',
         {
             'A': 'Tut ki bu iş planladığın gibi gitmedi, o zaman ne yapacaksın?',
             'B': 'Yarın sabah erkenden yola çıkacağız, akşama doğru köye varmış oluruz.',
@@ -531,7 +531,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0039': patch(
-        'Aşağıdaki cümlelerin hangisinde ad aktarması (mecazımürsel) yapılmıştır?',
+        'Bir sözcüğün, benzetme amacı gütmeden, aralarındaki ilgiden yararlanılarak başka bir sözcüğün yerine kullanılmasına ad aktarması (mecazımürsel) denir.\n\nAşağıdaki cümlelerin hangisinde ad aktarması yapılmıştır?',
         {
             'A': 'Konser için satışa çıkarılan biletler günler önceden tükenmişti.',
             'B': 'Sanatçı sahneye çıktığı anda salonun ışıkları yavaşça söndü.',
@@ -687,7 +687,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        'Aşağıdaki cümlelerin hangisinde neden-sonuç ilişkisi yoktur?',
+        '“Rüzgâr çok sert estiği için feribot seferleri iptal edildi.” cümlesinde yargılardan biri ötekinin nedenidir.\n\nAşağıdaki cümlelerin hangisinde böyle bir neden-sonuç ilişkisi yoktur?',
         {
             'A': 'Sınava zamanında yetişmek için sabah erkenden evden çıktı.',
             'B': 'Gece boyunca yağan yoğun yağmur yüzünden maç ertelendi.',

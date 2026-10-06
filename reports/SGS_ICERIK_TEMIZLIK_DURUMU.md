@@ -24,6 +24,23 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 7 Ekim 2026 — Türkçe orta bant: örnek cümleli ve kurallı kökler (v243 canlı)
+
+Gerçek Türkçe dağılımı iki tepelidir: kısa kavram soruları ve uzun paragraf soruları. Arada %12'lik bir orta bant vardır: tırnak içinde örnek cümle ya da kural tanımı, ardından "yukarıdaki göreviyle / bu kurala uygun / benzeri" sorusu.
+Bizde bu bant %4'tü; 40 kısa soru bu biçime çevrildi (dil bilgisi 14, anlam 13, yazım-anlatım 13).
+Yalnız kök değişti; şık, cevap ve çözüm aynı. Örnek cümleler özgündür.
+Her soruda örnek cümlenin özelliğinin yalnız doğru şıkla örtüştüğü şıklar okunarak doğrulandı.
+Örneğin varsayım tanımına "tut ki / farz edelim" yazılmadı; çeldiricileri ele verirdi. Bir neden-sonuç örneği bir şıkla çakıştığı için değiştirildi.
+Sorular kısaltılmadı ama zorlaştı: öğrenci artık kavramın adını değil, örnekteki görevi tanımak zorunda.
+
+| Türkçe | Bizim (önce → sonra) | Gerçek (113) |
+|---|---|---|
+| Çeyrekler | 73 / 113 / 402 → 86 / 150 / 402 | 75 / 150 / 418 |
+| 150–249 | %4 → %14 | %12 |
+| 250+ | %36 | %39 |
+
+Kalan fark ters yöndedir: gerçek kısa sorular daha kısadır (<100 karakter: gerçek %41, bizde %29). Bu bir derinlik açığı değildir.
+
 ## 7 Ekim 2026 — MTA kök derinliği gerçeğe oturdu + çözüm harfi dedektörü genişletildi (v242 canlı)
 
 Mali tablolar analizinin 6 paketinden 77 sorunun yalnız kökü değişti; şık, cevap ve dayanak aynı.
