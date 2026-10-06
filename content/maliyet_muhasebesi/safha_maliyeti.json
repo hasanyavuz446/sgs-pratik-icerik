@@ -223,16 +223,16 @@
     "id": "mmuh-safha-gen-0011",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 2.000 |\n| Dönemde üretime başlanan | 18.000 |\n| Dönemde tamamlanan | 16.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 29.000 | 288.000 |\n| Direkt işçilik | 10.200 | 168.000 |\n| Genel üretim | 15.300 | 252.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %60, DSYM %50 oranında tamamlanmıştır.\n\nİşletme FIFO yerine ağırlıklı ortalama maliyet yöntemini kullansaydı dönemde tamamlanan mamullerin toplam maliyeti nasıl değişirdi?",
+    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 3.000 |\n| Dönemde üretime başlanan | 15.000 |\n| Dönemde tamamlanan | 14.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 42.000 | 300.000 |\n| Direkt işçilik | 9.600 | 194.400 |\n| Genel üretim | 14.400 | 291.600 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %50, DSYM %25 oranında tamamlanmıştır.\n\nİşletme FIFO yerine ağırlıklı ortalama maliyet yöntemini kullansaydı dönemde tamamlanan mamullerin toplam maliyeti nasıl değişirdi?",
     "options": {
-      "A": "54.500 ₺ artardı",
-      "B": "114.000 ₺ azalırdı",
+      "A": "6.000 ₺ azalırdı",
+      "B": "24.000 ₺ artardı",
       "C": "Değişmezdi; toplam maliyet aynı kalır",
-      "D": "1.100 ₺ azalırdı",
-      "E": "1.100 ₺ artardı"
+      "D": "8.000 ₺ artardı",
+      "E": "6.000 ₺ artardı"
     },
     "answer": "E",
-    "solution": "FIFO: tamamlanan 648.500 ₺, DSYM 114.000 ₺. Ortalama: tamamlanan 16.000 × (15,85 + 24,75) = 649.600 ₺, DSYM 112.900 ₺. Toplam maliyet (762.500 ₺) iki yöntemde aynıdır; değişen, bu toplamın tamamlananlar ile DSYM arasındaki bölüşümüdür. Tamamlananlar 649.600 − 648.500 = **1.100 ₺ artar**, DSYM aynı tutarda azalır. DBYM daha ucuz olduğundan ortalama yöntem DSYM'yi düşük, tamamlananları yüksek değerler.",
+    "solution": "FIFO: DİMM 300.000 ÷ (14.000 − 3.000 + 4.000 = 15.000) = 20 ₺; şekillendirme 486.000 ÷ (14.000 − 1.500 + 1.000 = 13.500) = 36 ₺; DSYM 4.000 × 20 + 1.000 × 36 = 116.000 ₺; tamamlanan 852.000 − 116.000 = 736.000 ₺. Ortalama: DİMM 342.000 ÷ 18.000 = 19 ₺; şekillendirme 510.000 ÷ 15.000 = 34 ₺; tamamlanan 14.000 × 53 = 742.000 ₺, DSYM 110.000 ₺. Toplam maliyet aynıdır; tamamlananlar 6.000 ₺ artar, DSYM aynı tutarda azalır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -399,16 +399,16 @@
     "id": "mmuh-safha-gen-0019",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmede üretim kaybı yoktur. Dönem başında 800 ton yarı mamul bulunan işletmede dönemde 6.000 tonun üretimine başlanmış, 5.800 ton tamamlanmıştır. DİMM üretimin başında verilmektedir; şekillendirme açısından DBYM %25, DSYM %60 tamamlanmıştır. Maliyet bilgileri:\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 19.200 | 150.000 |\n| Direkt işçilik | 2.400 | 105.400 |\n| Genel üretim | 3.200 | 142.600 |\n\nBuna göre aşağıdaki ifadelerden hangileri doğrudur?\n\nI. DİMM açısından eşdeğer birim sayısı 6.000 tondur.\n\nII. Dönem başı yarı mamullerin şekillendirme açısından tamamlanması için bu dönemde 600 ton eşdeğer birim gerekmiştir.\n\nIII. Dönemde üretimine başlanıp aynı dönemde tamamlanan miktar 5.800 tondur.",
+    "stem": "Tek safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmede üretim kaybı yoktur. Dönem başında 1.200 ton yarı mamul bulunan işletmede dönemde 9.000 tonun üretimine başlanmış, 8.700 ton tamamlanmıştır. DİMM üretimin başında verilmektedir; şekillendirme açısından DBYM %30, DSYM %40 tamamlanmıştır. Maliyet bilgileri:\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 30.000 | 234.000 |\n| Direkt işçilik | 3.600 | 196.800 |\n| Genel üretim | 5.400 | 295.200 |\n\nBuna göre aşağıdaki ifadelerden hangileri doğrudur?\n\nI. DİMM açısından eşdeğer birim sayısı 9.000 tondur.\n\nII. Dönem başı yarı mamullerin şekillendirme açısından tamamlanması için bu dönemde 360 ton eşdeğer birim gerekmiştir.\n\nIII. Dönemde üretimine başlanıp aynı dönemde tamamlanan miktar 7.500 tondur.",
     "options": {
       "A": "II ve III",
       "B": "I, II ve III",
       "C": "Yalnız III",
       "D": "Yalnız I",
-      "E": "I ve II"
+      "E": "I ve III"
     },
     "answer": "E",
-    "solution": "**I doğrudur:** 5.800 − 800 + 1.000 = 6.000. **II doğrudur:** DBYM şekillendirme yönünden %25 tamamdır; kalan %75 için 800 × %75 = 600 ton. **III yanlıştır:** 5.800 tonun 800 tonu dönem başı yarı mamuldür; başlanıp tamamlanan 5.000 tondur.",
+    "solution": "I doğrudur: 8.700 − 1.200 + 1.500 = 9.000. II yanlıştır: DBYM şekillendirme yönünden %30 tamamdır; 360 ton önceki dönemde yapılmış kısımdır, bu dönem tamamlanması için kalan %70 gerekir: 1.200 × %70 = 840 ton. III doğrudur: 8.700 tonun 1.200 tonu dönem başı yarı mamuldür; başlanıp tamamlanan 7.500 tondur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -663,16 +663,16 @@
     "id": "mmuh-safha-gen-0031",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 2.000 |\n| Dönemde üretime başlanan | 18.000 |\n| Dönemde tamamlanan | 16.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 29.000 | 288.000 |\n| Direkt işçilik | 10.200 | 168.000 |\n| Genel üretim | 15.300 | 252.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %60, DSYM %50 oranında tamamlanmıştır. Buna göre aşağıdakilerden hangisi yanlıştır?",
+    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 2.500 |\n| Dönemde üretime başlanan | 12.500 |\n| Dönemde tamamlanan | 12.000 |\n| Dönem sonu yarı mamul (DSYM) | 3.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 40.000 | 200.000 |\n| Direkt işçilik | 10.000 | 128.000 |\n| Genel üretim | 15.000 | 192.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %40, DSYM %60 oranında tamamlanmıştır. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "FIFO yöntemine göre şekillendirme açısından eşdeğer birim sayısı 18.000'dir.",
-      "B": "Ortalama yönteme göre tamamlanan mamullerin maliyeti 649.600 ₺'dir.",
-      "C": "FIFO yönteminde şekillendirme eşdeğer birim maliyeti 25 ₺ olarak bulunur.",
-      "D": "FIFO yöntemine göre dönem sonu yarı mamul stoku 114.000 ₺ ile değerlenir.",
-      "E": "Ortalama yönteme göre DİMM açısından eşdeğer birim sayısı 20.000'dir."
+      "A": "FIFO'ya göre şekillendirme eşdeğer birim sayısı 13.800'dür.",
+      "B": "Ortalama yönteme göre tamamlanan mamullerin maliyeti 492.000 ₺'dir.",
+      "C": "FIFO yönteminde DİMM açısından eşdeğer birim sayısı 12.500'dür.",
+      "D": "Ortalama yönteme göre dönem sonu yarı mamul stoku 93.000 ₺'dir.",
+      "E": "Ortalama yönteme göre DİMM eşdeğer birim maliyeti 16 ₺'dir."
     },
     "answer": "A",
-    "solution": "FIFO'da şekillendirme eşdeğeri 16.000 − 1.200 + 2.000 = 16.800'dir; 18.000 ortalama yöntemin sonucudur, ifade yanlıştır. Diğerleri doğrudur: ortalama DİMM eşdeğeri 20.000; FIFO şekillendirme birim maliyeti 420.000 ÷ 16.800 = 25 ₺; FIFO DSYM 64.000 + 50.000 = 114.000 ₺; ortalama tamamlanan 16.000 × 40,60 = 649.600 ₺.",
+    "solution": "FIFO'da şekillendirme eşdeğeri 12.000 − (2.500 × %40) + (3.000 × %60) = 12.800'dür; 13.800 ortalama yöntemin sonucudur, ifade yanlıştır. Diğerleri doğrudur: FIFO DİMM eşdeğeri 12.000 − 2.500 + 3.000 = 12.500; ortalama DİMM birim maliyeti 240.000 ÷ 15.000 = 16 ₺, şekillendirme 345.000 ÷ 13.800 = 25 ₺; tamamlanan 12.000 × 41 = 492.000 ₺; DSYM 3.000 × 16 + 1.800 × 25 = 93.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -795,16 +795,16 @@
     "id": "mmuh-safha-gen-0037",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmede üretim kaybı yoktur. Dönem başında 800 ton yarı mamul bulunan işletmede dönemde 6.000 tonun üretimine başlanmış, 5.800 ton tamamlanmıştır. DİMM üretimin başında verilmektedir; şekillendirme açısından DBYM %25, DSYM %60 tamamlanmıştır. Maliyet bilgileri:\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 19.200 | 150.000 |\n| Direkt işçilik | 2.400 | 105.400 |\n| Genel üretim | 3.200 | 142.600 |\n\nBuna göre, dönem başındaki 800 ton yarı mamulün tamamlanmasıyla elde edilen mamullerin toplam maliyeti kaç ₺'dir?",
+    "stem": "Tek safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmede üretim kaybı yoktur. Dönem başında 600 ton yarı mamul bulunan işletmede dönemde 7.000 tonun üretimine başlanmış, 6.800 ton tamamlanmıştır. DİMM üretimin başında verilmektedir; şekillendirme açısından DBYM %20, DSYM %50 tamamlanmıştır. Maliyet bilgileri:\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 15.000 | 175.000 |\n| Direkt işçilik | 1.800 | 141.600 |\n| Genel üretim | 2.400 | 212.400 |\n\nBuna göre, dönem başındaki 600 ton yarı mamulün tamamlanmasıyla elde edilen mamullerin toplam maliyeti kaç ₺'dir?",
     "options": {
-      "A": "76.800",
-      "B": "24.800",
-      "C": "56.800",
-      "D": "48.800",
-      "E": "52.000"
+      "A": "19.200",
+      "B": "49.200",
+      "C": "38.400",
+      "D": "43.200",
+      "E": "24.000"
     },
     "answer": "D",
-    "solution": "FIFO'da DBYM ayrı bir parti gibi izlenir: devreden maliyeti 19.200 + 2.400 + 3.200 = 24.800 ₺. Malzeme başta verildiğinden bu dönem yalnız şekillendirme eklenir: 800 × %75 = 600 ton × 40 ₺ = 24.000 ₺. Toplam **48.800 ₺**.",
+    "solution": "FIFO'da DBYM ayrı bir parti gibi izlenir: devreden maliyeti 15.000 + 1.800 + 2.400 = 19.200 ₺. Şekillendirme eşdeğeri 6.800 − 120 + 400 = 7.080; birim maliyet 354.000 ÷ 7.080 = 50 ₺. Malzeme başta verildiğinden bu dönem yalnız şekillendirme eklenir: 600 × %80 = 480 ton × 50 ₺ = 24.000 ₺. Toplam 43.200 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -1059,16 +1059,16 @@
     "id": "mmuh-safha-gen-0049",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 2.000 |\n| Dönemde üretime başlanan | 18.000 |\n| Dönemde tamamlanan | 16.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 29.000 | 288.000 |\n| Direkt işçilik | 10.200 | 168.000 |\n| Genel üretim | 15.300 | 252.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %60, DSYM %50 oranında tamamlanmıştır.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre şekillendirme açısından eşdeğer birim sayısı kaçtır?",
+    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 3.000 |\n| Dönemde üretime başlanan | 25.000 |\n| Dönemde tamamlanan | 24.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 66.000 | 575.000 |\n| Direkt işçilik | 9.000 | 258.000 |\n| Genel üretim | 13.500 | 387.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %40, DSYM %75 oranında tamamlanmıştır.\n\nİlk giren ilk çıkar (FIFO) yöntemine göre şekillendirme açısından eşdeğer birim sayısı kaçtır?",
     "options": {
-      "A": "16.800",
-      "B": "16.000",
-      "C": "18.000",
-      "D": "17.200",
-      "E": "18.800"
+      "A": "25.800",
+      "B": "27.000",
+      "C": "24.000",
+      "D": "26.200",
+      "E": "28.000"
     },
     "answer": "A",
-    "solution": "FIFO'da DBYM'nin önceki dönemde yapılmış kısmı düşülür: 16.000 − (2.000 × %60) + (4.000 × %50) = 16.000 − 1.200 + 2.000 = **16.800**. Aynı sonuç: DBYM'yi tamamlama 800 + başlanıp tamamlanan 14.000 + DSYM 2.000. Ortalama yöntemde düşme yapılmaz ve sonuç 18.000 olur.",
+    "solution": "FIFO'da DBYM'nin önceki dönemde yapılmış kısmı düşülür: 24.000 − (3.000 × %40) + (4.000 × %75) = 24.000 − 1.200 + 3.000 = 25.800. Aynı sonuç: DBYM'yi tamamlama 1.800 + başlanıp tamamlanan 21.000 + DSYM 3.000. Ortalama yöntemde düşme yapılmaz ve sonuç 27.000 olur.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -1081,16 +1081,16 @@
     "id": "mmuh-safha-gen-0050",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 2.000 |\n| Dönemde üretime başlanan | 18.000 |\n| Dönemde tamamlanan | 16.000 |\n| Dönem sonu yarı mamul (DSYM) | 4.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 29.000 | 288.000 |\n| Direkt işçilik | 10.200 | 168.000 |\n| Genel üretim | 15.300 | 252.000 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %60, DSYM %50 oranında tamamlanmıştır.\n\nAğırlıklı ortalama maliyet yöntemine göre dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
+    "stem": "Tek safhada tek tip mamul üreten ve üretim kaybı bulunmayan bir işletmenin döneme ait bilgileri aşağıdaki gibidir:\n\n| Miktar verileri | Birim |\n|---|---|\n| Dönem başı yarı mamul (DBYM) | 1.500 |\n| Dönemde üretime başlanan | 13.500 |\n| Dönemde tamamlanan | 12.000 |\n| Dönem sonu yarı mamul (DSYM) | 3.000 |\n\n| Maliyet unsuru | DBYM maliyeti (₺) | Dönem maliyeti (₺) |\n|---|---|---|\n| Direkt ilk madde ve malzeme | 21.000 | 204.000 |\n| Direkt işçilik | 6.000 | 99.600 |\n| Genel üretim | 9.000 | 149.400 |\n\nDirekt ilk madde ve malzeme üretimin başında verilmektedir. Şekillendirme (direkt işçilik + genel üretim) açısından DBYM %50, DSYM %40 oranında tamamlanmıştır.\n\nAğırlıklı ortalama maliyet yöntemine göre dönem sonu yarı mamul stokunun maliyeti kaç ₺'dir?",
     "options": {
-      "A": "114.000",
-      "B": "112.900",
-      "C": "162.400",
-      "D": "81.200",
-      "E": "122.800"
+      "A": "105.000",
+      "B": "69.000",
+      "C": "45.000",
+      "D": "72.000",
+      "E": "60.000"
     },
     "answer": "B",
-    "solution": "Ortalama birim maliyetler: DİMM (29.000 + 288.000) ÷ 20.000 = 15,85 ₺; şekillendirme (25.500 + 420.000) ÷ 18.000 = 24,75 ₺. DSYM: DİMM 4.000 × 15,85 = 63.400 ₺ + şekillendirme 2.000 × 24,75 = 49.500 ₺ = **112.900 ₺**. DBYM'nin tamamlanma derecesi ortalama yöntemde hesaba girmez.",
+    "solution": "Ortalama birim maliyetler: DİMM (21.000 + 204.000) ÷ 15.000 = 15 ₺; şekillendirme (15.000 + 249.000) ÷ (12.000 + 1.200) = 20 ₺. DSYM: DİMM 3.000 × 15 = 45.000 ₺ + şekillendirme 1.200 × 20 = 24.000 ₺ = 69.000 ₺. Sağlama: tamamlanan 12.000 × 35 = 420.000 ₺; 420.000 + 69.000 = 489.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -1213,16 +1213,16 @@
     "id": "mmuh-safha-gen-0056",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "İki safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Tutar |\n|---|---|\n| Dönem başı yarı mamul miktarı | 1.000 birim |\n| DBYM'nin önceki safha maliyeti | 38.000 ₺ |\n| DBYM'nin şekillendirme maliyeti | 6.000 ₺ |\n| I. safhadan devralınan miktar | 9.000 birim |\n| Devralınan birimlerin maliyeti | 378.000 ₺ |\n| II. safhanın şekillendirme gideri | 264.000 ₺ |\n\nDönemde 8.000 birim tamamlanarak mamul ambarına aktarılmış, 2.000 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %40, DSYM %50 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada önceki safha maliyeti ve şekillendirme açısından eşdeğer birim sayıları sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
+    "stem": "İki safhada üretim yapan ve ilk giren ilk çıkar (FIFO) yöntemini kullanan bir işletmenin II. safhasına ait bilgiler şöyledir:\n\n| Veri | Tutar |\n|---|---|\n| Dönem başı yarı mamul miktarı | 1.500 birim |\n| DBYM'nin önceki safha maliyeti | 63.000 ₺ |\n| DBYM'nin şekillendirme maliyeti | 9.000 ₺ |\n| I. safhadan devralınan miktar | 12.000 birim |\n| Devralınan birimlerin maliyeti | 504.000 ₺ |\n| II. safhanın şekillendirme gideri | 325.500 ₺ |\n\nDönemde 11.000 birim tamamlanarak mamul ambarına aktarılmış, 2.500 birim yarı mamul kalmıştır. II. safhada yarı mamuller şekillendirme açısından DBYM %60, DSYM %30 tamamlanmıştır; II. safhada ayrıca malzeme verilmemektedir.\n\nBuna göre, II. safhada önceki safha maliyeti ve şekillendirme açısından eşdeğer birim sayıları sırasıyla aşağıdakilerin hangisinde doğru verilmiştir?",
     "options": {
-      "A": "9.000 ve 8.600",
-      "B": "9.000 ve 9.000",
-      "C": "10.000 ve 8.600",
-      "D": "8.000 ve 8.600",
-      "E": "10.000 ve 9.000"
+      "A": "12.000 ve 10.850",
+      "B": "12.000 ve 12.000",
+      "C": "13.500 ve 10.850",
+      "D": "11.000 ve 10.850",
+      "E": "13.500 ve 11.750"
     },
     "answer": "A",
-    "solution": "Önceki safha maliyeti açısından DBYM ve DSYM %100 tamamdır: 8.000 − 1.000 + 2.000 = 9.000 (devralınan miktara eşittir). Şekillendirme: 8.000 − (1.000 × %40) + (2.000 × %50) = 8.000 − 400 + 1.000 = 8.600. Cevap **9.000 ve 8.600**.",
+    "solution": "Önceki safha maliyeti açısından DBYM ve DSYM %100 tamamdır: 11.000 − 1.500 + 2.500 = 12.000 (devralınan miktara eşittir). Şekillendirme: 11.000 − (1.500 × %60) + (2.500 × %30) = 11.000 − 900 + 750 = 10.850. Cevap 12.000 ve 10.850.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
@@ -1279,16 +1279,16 @@
     "id": "mmuh-safha-gen-0059",
     "ders": "maliyet_muhasebesi",
     "konu": "safha_maliyeti",
-    "stem": "Ağırlıklı ortalama maliyet yöntemini kullanan, tek safhada üretim yapan bir işletmede üretim kaybı yoktur. Dönem başında 3.000 birim yarı mamul bulunmakta olup bunların DİMM maliyeti 60.000 ₺, şekillendirme maliyeti 21.000 ₺'dir. Dönemde 9.000 birimin üretimine başlanmış, 10.000 birim tamamlanmıştır. Dönem giderleri DİMM 204.000 ₺, direkt işçilik 78.000 ₺, genel üretim 117.000 ₺'dir. DİMM üretimin başında verilmekte; yarı mamuller şekillendirme açısından DBYM %50, DSYM %40 tamamlanmış bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
+    "stem": "Ağırlıklı ortalama maliyet yöntemini kullanan, tek safhada üretim yapan bir işletmede üretim kaybı yoktur. Dönem başında 2.000 birim yarı mamul bulunmakta olup bunların DİMM maliyeti 50.000 ₺, şekillendirme maliyeti 18.000 ₺'dir. Dönemde 10.000 birimin üretimine başlanmış, 9.000 birim tamamlanmıştır. Dönem giderleri DİMM 262.000 ₺, direkt işçilik 100.800 ₺, genel üretim 151.200 ₺'dir. DİMM üretimin başında verilmekte; yarı mamuller şekillendirme açısından DBYM %40, DSYM %60 tamamlanmış bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?",
     "options": {
-      "A": "Dönem sonu yarı mamul stokunun maliyeti 60.000 ₺'dir.",
+      "A": "Dönem sonu yarı mamul stokunun maliyeti 123.000 ₺'dir.",
       "B": "DİMM açısından eşdeğer birim sayısı 12.000'dir.",
-      "C": "Tamamlanan mamullerin toplam maliyeti 441.000 ₺'dir.",
+      "C": "Tamamlanan mamullerin toplam maliyeti 477.000 ₺'dir.",
       "D": "Şekillendirme açısından eşdeğer birim sayısı 10.800'dür.",
-      "E": "Şekillendirme açısından eşdeğer birim maliyeti 20 ₺'dir."
+      "E": "Şekillendirme açısından eşdeğer birim maliyeti 25 ₺'dir."
     },
     "answer": "C",
-    "solution": "Tamamlanan mamuller 10.000 × (22 + 20) = 420.000 ₺'dir; 441.000 ₺ DBYM şekillendirme maliyetinin iki kez sayılmasıyla bulunur, ifade yanlıştır. Diğerleri doğrudur: DİMM eşdeğeri 10.000 + 2.000 = 12.000; şekillendirme eşdeğeri 10.000 + 800 = 10.800; şekillendirme birim maliyeti 216.000 ÷ 10.800 = 20 ₺; DSYM 60.000 ₺. Sağlama: 420.000 + 60.000 = 480.000 ₺.",
+    "solution": "Tamamlanan mamuller 9.000 × (26 + 25) = 459.000 ₺'dir; 477.000 ₺ DBYM şekillendirme maliyetinin iki kez sayılmasıyla bulunur, ifade yanlıştır. Diğerleri doğrudur: DİMM eşdeğeri 9.000 + 3.000 = 12.000, birim 312.000 ÷ 12.000 = 26 ₺; şekillendirme eşdeğeri 9.000 + 1.800 = 10.800, birim 270.000 ÷ 10.800 = 25 ₺; DSYM 3.000 × 26 + 1.800 × 25 = 123.000 ₺. Sağlama: 459.000 + 123.000 = 582.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Maliyet Muhasebesi (tablolu çok adımlı; gerçek sınav profiline kalibre)",
