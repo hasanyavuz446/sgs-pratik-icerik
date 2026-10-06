@@ -135,16 +135,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        "Bengi Kimya A.Ş.'nin bankadaki döviz mevduat hesabında 15.000 USD bulunmaktadır ve 30,00 ₺/USD ile kayıtlıdır. Dönem sonunda MB döviz alış kuru 31,20 ₺/USD olduğuna göre yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
+        "Bengi Kimya A.Ş. 1 Mart'ta TL hesabındaki parayla 30,00 ₺/USD kurundan 15.000 USD satın alarak döviz tevdiat hesabına yatırmıştır. 1 Haziran'da bu dövizin 5.000 USD'sini 31,00 ₺/USD kurundan bozdurarak TL hesabına aktarmış ve kur farkını kaydetmiştir. Dönem sonunda T.C. Merkez Bankası döviz alış kuru 31,20 ₺/USD'dir.\n\nDönem sonu değerleme kaydı aşağıdakilerden hangisidir?",
         {
-            'A': '102 Bankalar (borç) 468.000; 646 Kambiyo Kârları (alacak) 468.000',
-            'B': '102 Bankalar (borç) 18.000; 646 Kambiyo Kârları (alacak) 18.000',
-            'C': '646 Kambiyo Kârları (borç) 18.000; 102 Bankalar (alacak) 18.000',
-            'D': '656 Kambiyo Zararları (borç) 18.000; 102 Bankalar (alacak) 18.000',
-            'E': '102 Bankalar (borç) 18.000; 642 Faiz Gelirleri (alacak) 18.000',
+            'A': '102 Bankalar (borç) 18.000; 646 Kambiyo Kârları (alacak) 18.000',
+            'B': '102 Bankalar (borç) 12.000; 646 Kambiyo Kârları (alacak) 12.000',
+            'C': '646 Kambiyo Kârları (borç) 12.000; 102 Bankalar (alacak) 12.000',
+            'D': '102 Bankalar (borç) 17.000; 646 Kambiyo Kârları (alacak) 17.000',
+            'E': '102 Bankalar (borç) 2.000; 646 Kambiyo Kârları (alacak) 2.000',
         },
         'B',
-        'Kur farkı = 15.000 × (31,20 − 30,00) = 15.000 × 1,20 = **18.000 ₺**. Döviz mevduatı (varlık) + kur yükselişi → hesabın TL değeri artar: 102 Bankalar (borç) 18.000 / 646 Kambiyo Kârları (alacak) 18.000. Kaydedilen yalnız **fark**tır; toplam yeni değer (468.000) değil. Bu bir kambiyo kârıdır, faiz geliri (642) değil.',
+        "Döviz satın alınması kur farkı doğurmaz. Haziran'da bozdurulan 5.000 USD için 5.000 × (31,00 − 30,00) = 5.000 ₺ kâr o tarihte kaydedilmiştir. Dönem sonunda hesapta kalan 10.000 USD, 30,00 ₺'den kayıtlıdır: 10.000 × (31,20 − 30,00) = 12.000 ₺ değer artışı → 102 borç / 646 alacak.",
         "213 sayılı VUK md. 280; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 102/646",
     ),
     # düzey 2
@@ -359,16 +359,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0024': patch(
-        'Kayıtlı değeri 525.000 ₺ (15.000 EUR × 35,00) olan bir satıcı borcu, kurun 37,00 ₺/EUR olduğu gün banka aracılığıyla ödenmiştir. Bu ödemenin kaydında aşağıdakilerden hangisi yer alır?',
+        'İşletme yurt dışından aldığı ticari mal için 15.000 EUR satıcı borcunu, malın girişindeki 35,00 ₺/EUR kurundan kaydetmiştir. Borç ilk dönem sonunda MB döviz alış kuru 36,20 ₺/EUR üzerinden değerlenmiştir. İzleyen dönemde kurun 37,00 ₺/EUR olduğu gün borç banka aracılığıyla ödenmiştir.\n\nÖdeme kaydında aşağıdakilerden hangisi yer alır?',
         {
-            'A': '320 Satıcılar (borç) 525.000 ve 646 Kambiyo Kârları (borç) 30.000; 102 Bankalar (alacak) 555.000',
-            'B': '320 Satıcılar (borç) 525.000 ve 656 Kambiyo Zararları (borç) 30.000; 102 Bankalar (alacak) 555.000',
+            'A': '320 Satıcılar (borç) 525.000 ve 656 Kambiyo Zararları (borç) 30.000; 102 Bankalar (alacak) 555.000',
+            'B': '320 Satıcılar (borç) 543.000 ve 656 Kambiyo Zararları (borç) 12.000; 102 Bankalar (alacak) 555.000',
             'C': '320 Satıcılar (borç) 555.000; 102 Bankalar (alacak) 555.000',
-            'D': '102 Bankalar (borç) 555.000; 320 Satıcılar (alacak) 525.000 ve 646 Kambiyo Kârları (alacak) 30.000',
-            'E': '320 Satıcılar (borç) 525.000 ve 780 Finansman Giderleri (borç) 30.000; 102 Bankalar (alacak) 555.000',
+            'D': '320 Satıcılar (borç) 543.000; 102 Bankalar (alacak) 543.000',
+            'E': '320 Satıcılar (borç) 525.000 ve 656 Kambiyo Zararları (borç) 18.000; 102 Bankalar (alacak) 543.000',
         },
         'B',
-        'Ödenen = 15.000 × 37,00 = 555.000 ₺. Kur farkı = 15.000 × (37,00 − 35,00) = 30.000 ₺. Borç + kur yükselişi → **zarar**: **320 Satıcılar (borç) 525.000; 656 Kambiyo Zararları (borç) 30.000 / 102 Bankalar (alacak) 555.000**.',
+        "İlk dönem sonunda borç 15.000 × 36,20 = 543.000 ₺'ye çıkarılmış, 18.000 ₺ o dönemin kambiyo zararı olmuştur. Ödemede borç bu kayıtlı değerle kapanır; bankadan 15.000 × 37,00 = 555.000 ₺ çıkar, aradaki 12.000 ₺ ödeme döneminin kambiyo zararıdır (656).",
         "1 Sıra No'lu MSUGT - 320/656/102",
     ),
     # düzey 3
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0049': patch(
-        'Bir işletmenin aynı anda 10.000 USD döviz alacağı ve 6.000 USD döviz borcu vardır (ikisi de 30,00 ₺/USD kayıtlı). Dönem sonu MB döviz alış kuru 32,00 ₺/USD olduğunda, kur farklarının dönem sonucuna NET etkisi nedir?',
+        "Bir işletmenin dönem sonunda 30,00 ₺/USD kurundan kayıtlı 10.000 USD alacağı, 35,00 ₺/EUR kurundan kayıtlı 6.000 EUR satıcı borcu ve kasasında 40,00 ₺/GBP kurundan kayıtlı 2.000 GBP efektifi vardır. Değerleme gününde MB döviz alış kurları 32,00 ₺/USD ve 36,50 ₺/EUR, efektif alış kuru 39,00 ₺/GBP'dir.\n\nBuna göre dönem sonu değerlemesinin dönem sonucuna net etkisi aşağıdakilerden hangisidir?",
         {
             'A': '20.000 ₺ net kâr',
-            'B': '8.000 ₺ net kâr',
-            'C': '8.000 ₺ net zarar',
-            'D': '32.000 ₺ net kâr',
-            'E': '12.000 ₺ net zarar',
+            'B': '9.000 ₺ net kâr',
+            'C': '7.000 ₺ net kâr',
+            'D': '31.000 ₺ net kâr',
+            'E': '13.000 ₺ net kâr',
         },
         'B',
-        'Kur artışı 2,00 ₺. Alacak: 10.000 × 2,00 = 20.000 ₺ KÂR (646). Borç: 6.000 × 2,00 = 12.000 ₺ ZARAR (656). Net = 20.000 − 12.000 = **8.000 ₺ net kâr**.',
+        'USD alacak: 10.000 × 2,00 = 20.000 ₺ kâr (646). EUR borç: kur yükseldiği için 6.000 × 1,50 = 9.000 ₺ zarar (656). GBP efektif: kur düştüğü için 2.000 × 1,00 = 2.000 ₺ zarar (656). Kalemler ayrı kaydedilir; dönem sonucuna net etki 20.000 − 9.000 − 2.000 = 9.000 ₺ kârdır.',
         "1 Sıra No'lu MSUGT - 646/656",
     ),
     # düzey 2
@@ -765,16 +765,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        "Lale İnşaat A.Ş.'nin kasasında 8.000 EUR efektif bulunmakta ve 36,00 ₺/EUR ile kayıtlıdır. Dönem sonunda MB efektif alış kuru 34,50 ₺/EUR olduğuna göre yapılacak değerleme kaydı aşağıdakilerden hangisidir?",
+        "Lale İnşaat A.Ş.'nin kasasında 36,00 ₺/EUR kurundan kayıtlı 8.000 EUR efektif bulunmaktadır. Yıl içinde bu efektifin 3.000 EUR'su 35,00 ₺/EUR kurundan bankaya bozdurularak TL hesabına alınmıştır. Dönem sonunda MB efektif alış kuru 34,50 ₺/EUR'dur.\n\nBuna göre bu efektifle ilgili olarak dönem içinde '656 Kambiyo Zararları' hesabına borç yazılan toplam tutar kaç ₺'dir?",
         {
-            'A': '780 Finansman Giderleri (borç) 12.000; 100 Kasa (alacak) 12.000',
-            'B': '656 Kambiyo Zararları (borç) 276.000; 100 Kasa (alacak) 276.000',
-            'C': '100 Kasa (borç) 12.000; 646 Kambiyo Kârları (alacak) 12.000',
-            'D': '656 Kambiyo Zararları (borç) 12.000; 100 Kasa (alacak) 12.000',
-            'E': '100 Kasa (borç) 12.000; 656 Kambiyo Zararları (alacak) 12.000',
+            'A': '12.000',
+            'B': '7.500',
+            'C': '13.500',
+            'D': '10.500',
+            'E': '15.000',
         },
         'D',
-        'Kur farkı = 8.000 × (36,00 − 34,50) = 8.000 × 1,50 = **12.000 ₺**. Döviz kasası (varlık) + kur düşüşü → kasanın TL değeri azalır: 656 Kambiyo Zararları (borç) 12.000 / 100 Kasa (alacak) 12.000. Kaydedilen yalnız azalış tutarıdır (yeni toplam değer 276.000 değil); bu bir kambiyo zararıdır, finansman gideri değil.',
+        "Bozdurma: 3.000 × (36,00 − 35,00) = 3.000 ₺ zarar. Kalan 5.000 EUR dönem sonunda 34,50'den değerlenir: 5.000 × (36,00 − 34,50) = 7.500 ₺ zarar. 656'ya yazılan toplam 10.500 ₺.",
         "213 sayılı VUK md. 280; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 100/656",
     ),
     # düzey 3
@@ -863,16 +863,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0060': patch(
-        "İşletme 10.000 USD tutarında ticari malı, fatura ve mal giriş günü kuru 30,00 ₺/USD iken ithal etmiştir. '153 Ticari Mallar' hesabına kaydedilecek maliyet kaç ₺'dir? (Ödeme sonraki döneme bırakılmıştır.)",
+        "İşletme 10.000 USD tutarında ticari malı ithal etmiştir; malın gümrükten çekilip işletmeye girdiği gün kur 30,00 ₺/USD'dir. İthalat sırasında 15.000 ₺ gümrük vergisi ödenmiş, malın gümrükten depoya taşınması için nakliyeciye 3.000 ₺ ödenmiştir. Satıcıya olan döviz borcu sonraki döneme bırakılmıştır. KDV ihmal edilecektir.\n\nBuna göre '153 Ticari Mallar' hesabına kaydedilecek maliyet kaç ₺'dir?",
         {
-            'A': '10.000',
-            'B': '330.000',
-            'C': '300.000',
-            'D': '270.000',
-            'E': 'Ödeme yapılmadığı için henüz kaydedilmez',
+            'A': '300.000',
+            'B': '303.000',
+            'C': '318.000',
+            'D': '315.000',
+            'E': '330.000',
         },
         'C',
-        'Mal, giriş günü kuruyla değerlenir: 10.000 × 30,00 = **300.000 ₺** → 153 Ticari Mallar. Ödeme sonraki dönemde farklı kurdan yapılırsa oluşacak kur farkı, mal girişi tamamlandığından maliyete değil kambiyo gider/geliri (656/646) hesabına yazılır.',
+        'İthal edilen malın maliyeti, malın işletmeye girdiği günkü kurla hesaplanan bedel ile malı kullanıma hazır hâle getiren giderlerden oluşur: 10.000 × 30,00 = 300.000 ₺ + gümrük vergisi 15.000 ₺ + nakliye 3.000 ₺ = 318.000 ₺.',
         "VUK md. 280; 1 Sıra No'lu MSUGT - 153",
     ),
 }
