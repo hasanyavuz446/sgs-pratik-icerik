@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0007': patch(
-        'Aşağıdaki durumlardan hangilerinde işletme lehine (kambiyo KÂRI, 646) kur farkı doğar?\n\nI. Döviz cinsi alacak varken kurun yükselmesi\n\nII. Döviz cinsi borç varken kurun yükselmesi\n\nIII. Döviz cinsi alacak varken kurun düşmesi',
+        'İhracat ve ithalat yapan bir işletmenin dönem içinde döviz cinsinden alacakları, borçları ve kasasında döviz mevcudu bulunmaktadır. Yönetim, kur hareketlerinin dönem sonucuna etkisini değerlendirmek için aşağıdaki durumları incelemektedir:\n\nI. Döviz cinsi alacak varken kurun yükselmesi\n\nII. Döviz cinsi borç varken kurun yükselmesi\n\nIII. Döviz cinsi alacak varken kurun düşmesi\n\nBu durumlardan hangilerinde işletme lehine (kambiyo kârı, 646) kur farkı doğar?',
         {
             'A': 'II ve III',
             'B': 'I ve II',
@@ -163,7 +163,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0010': patch(
-        'Aşağıdaki durumlardan hangilerinde işletme aleyhine (kambiyo ZARARI, 656) kur farkı doğar?\n\nI. Kasadaki döviz mevcudu varken kurun yükselmesi\n\nII. Döviz cinsi alacak varken kurun düşmesi\n\nIII. Döviz cinsi borç varken kurun yükselmesi',
+        'Dış ticaretle uğraşan bir işletmenin muhasebe müdürü, dönem sonu değerlemesinden önce döviz cinsi kalemlerin kur değişimlerinden nasıl etkileneceğini aşağıdaki durumlar üzerinden incelemektedir:\n\nI. Kasadaki döviz mevcudu varken kurun yükselmesi\n\nII. Döviz cinsi alacak varken kurun düşmesi\n\nIII. Döviz cinsi borç varken kurun yükselmesi\n\nBu durumlardan hangilerinde işletme aleyhine (kambiyo zararı, 656) kur farkı doğar?',
         {
             'A': 'II ve III',
             'B': 'Yalnız I',
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "Hera Kozmetik A.Ş. 8.000 USD tutarında ticari malı, fatura ve mal giriş günü kuru 30,00 ₺/USD iken ithal etmiştir. Borç, kurun 31,25 ₺/USD olduğu gün ödenmiştir. '153 Ticari Mallar' maliyeti ile ödeme sırasında oluşan kur farkı sırasıyla kaç ₺'dir?",
+        "Hera Kozmetik A.Ş. yurt dışındaki tedarikçisinden 8.000 USD tutarında ticari mal ithal etmiştir. Fatura tarihinde ve malların depoya girdiği gün kur 30,00 ₺/USD'dir; bedel 60 gün vadelidir. Borç, aynı hesap dönemi içinde vadesinde, kurun 31,25 ₺/USD olduğu gün bankadan ödenmiştir (gümrük vergisi ve KDV ihmal).\n\n'153 Ticari Mallar' maliyeti ile ödeme sırasında oluşan kur farkı sırasıyla kaç ₺'dir?",
         {
             'A': '250.000 ₺ maliyet — 10.000 ₺ zarar',
             'B': '240.000 ₺ maliyet — 10.000 ₺ kâr',
@@ -219,7 +219,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        "50.000 USD tutarındaki alacak işlem günü 28,00 ₺/USD ile kaydedilmiş; birinci dönem sonu MB alış kuru 30,00 ₺/USD ile değerlenmiştir. Alacak, ikinci dönemde kur 31,50 ₺/USD iken tahsil edilmiştir. İKİNCİ dönemde oluşan kur farkı kârı kaç ₺'dir?",
+        "Ege Tekstil A.Ş. bir ihracat müşterisinden olan 50.000 USD tutarındaki alacağını işlem günü kuru 28,00 ₺/USD ile kaydetmiştir. Birinci dönem sonunda alacak MB döviz alış kuru 30,00 ₺/USD ile değerlenmiştir. Alacak, ikinci dönemin Mart ayında kur 31,50 ₺/USD iken bankaya tahsil edilmiştir.\n\nİkinci dönemde oluşan kur farkı kârı kaç ₺'dir?",
         {
             'A': '75.000',
             'B': '100.000',
@@ -233,7 +233,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        "Nazar Gıda A.Ş., 25.000 USD tutarındaki döviz borcunun (işlem günü kuru 30,00 ₺/USD) 15.000 USD'lik kısmını, kur 32,00 ₺/USD iken banka aracılığıyla ödemiştir. Bu kısmi ödemenin yevmiye kaydında aşağıdakilerden hangisi yer alır?",
+        "Nazar Gıda A.Ş. yurt dışından aldığı hammadde nedeniyle 25.000 USD tutarında döviz borcu kaydetmiştir (işlem günü kuru 30,00 ₺/USD). Aynı dönem içinde borcun 15.000 USD'lik kısmı kur 32,00 ₺/USD iken banka aracılığıyla ödenmiş, kalan 10.000 USD'nin vadesi izleyen aydadır.\n\nBu kısmi ödemenin yevmiye kaydında aşağıdakilerden hangisi yer alır?",
         {
             'A': '320 Satıcılar (borç) 750.000 ve 656 Kambiyo Zararları (borç) 50.000; 102 Bankalar (alacak) 800.000',
             'B': '102 Bankalar (borç) 480.000; 320 Satıcılar (alacak) 450.000 ve 656 Kambiyo Zararları (alacak) 30.000',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        "Umut Ambalaj A.Ş.'nin döviz cinsi bir alacağının dönem sonu değerlemesinde 27.000 ₺ kambiyo zararı doğmuş; kur 1,80 ₺ değişmiştir. Buna göre alacağın döviz tutarı kaç USD'dir ve kur ne yönde değişmiştir?",
+        "Umut Ambalaj A.Ş.'nin bir ihracat müşterisinden olan döviz cinsi alacağı dönem sonunda MB döviz alış kuruyla değerlenmiştir. Değerleme sonucunda 27.000 ₺ kambiyo zararı doğmuş; alacağın kayıtlı kuru ile değerleme kuru arasındaki fark 1,80 ₺ olarak hesaplanmıştır.\n\nBuna göre alacağın döviz tutarı kaç USD'dir ve kur ne yönde değişmiştir?",
         {
             'A': '15.000 USD — kur düşmüştür',
             'B': '15.000 USD — kur değişmemiştir',
@@ -443,7 +443,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        'Bir makine döviz cinsi kredi ile alınıp AKTİFLEŞTİRİLDİKTEN (kullanıma hazır olduktan) SONRA, kredinin döviz kurundaki artıştan doğan kur farkları ile ilgili genel uygulama aşağıdakilerden hangisidir?',
+        'Bir işletme yurt dışından alacağı bir üretim makinesini döviz cinsi yatırım kredisiyle finanse etmiştir. Makine montaj ve deneme çalışmalarından sonra Haziran ayında kullanıma hazır hâle gelmiş ve aktifleştirilmiştir; kredinin geri ödemesi üç yıl sürecektir ve kur bu süre içinde yükselmeye devam etmektedir.\n\nAktifleştirmeden sonra kredinin döviz kurundaki artıştan doğan kur farklarıyla ilgili genel uygulama aşağıdakilerden hangisidir?',
         {
             'A': 'Bu kur farkları sonuç hesaplarına yansıtılmaz; sermaye yedekleri içinde bilançoda bekletilir.',
             'B': 'Aktifleştirmeden sonraki dönemlerde de kur farkları, makinenin (253) maliyetine kesintisiz olarak eklenmeye devam edilir ve amortismana tabi tutulur.',
@@ -452,7 +452,7 @@ _PATCHES = {
             'E': 'Aktifleştirme sonrası kur farklarının tamamı 280 Gelecek Yıllara Ait Giderler hesabına aktarılır.',
         },
         'C',
-        "Kur farkları yalnızca **aktifleştirmeye kadar** maliyete eklenir. Aktifleştirmeden **sonraki** dönemlere ait kur farkları, maliyete eklenmeyip **kambiyo gideri/geliri (656/646)** olarak yazılabilir. (0016'daki durumun tersi — zamanlama belirleyicidir.)",
+        'Kur farkları yalnızca **aktifleştirmeye kadar** maliyete eklenir. Aktifleştirmeden **sonraki** dönemlere ait kur farkları, maliyete eklenmeyip **kambiyo gideri/geliri (656/646)** olarak yazılabilir. Belirleyici olan zamanlamadır.',
         'VUK md. 280; MDV kur farkı',
     ),
     # düzey 2
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0035': patch(
-        'Bir işletmenin dönem sonunda 20.000 USD alacağı, 8.000 USD borcu ve kasasında 5.000 USD efektifi vardır (hepsi 30,00 ₺/USD kayıtlı). Dönem sonu MB alış kuru 31,00 ₺/USD olduğuna göre kur farklarının dönem sonucuna NET etkisi nedir?',
+        "Dış ticaret yapan bir işletmenin dönem sonunda müşterilerinden 20.000 USD alacağı, satıcılarına 8.000 USD borcu ve kasasında 5.000 USD efektifi vardır; hepsi 30,00 ₺/USD kurla kayıtlıdır. Dönem sonunda MB döviz alış kuru ve efektif alış kuru 31,00 ₺/USD'dir.\n\nKur farklarının dönem sonucuna net etkisi nedir?",
         {
             'A': '25.000 ₺ net kâr',
             'B': '33.000 ₺ net kâr',
@@ -555,7 +555,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0038': patch(
-        "Rüzgar Otomotiv A.Ş.'nin 20.000 USD tutarındaki alacağı 32,00 ₺/USD ile kayıtlıdır. Dönem sonunda MB döviz alış kuru 30,50 ₺/USD'ye gerilemiştir. Bu değerlemenin yevmiye kaydında aşağıdakilerden hangisi yer alır?",
+        "Rüzgar Otomotiv A.Ş. yurt dışındaki bir bayisine yaptığı yedek parça ihracatından doğan 20.000 USD tutarındaki alacağını 32,00 ₺/USD ile kaydetmiştir. Dönem sonuna kadar tahsilat yapılmamış; dönem sonunda MB döviz alış kuru 30,50 ₺/USD'ye gerilemiştir.\n\nBu değerlemenin yevmiye kaydında aşağıdakilerden hangisi yer alır?",
         {
             'A': '120 Alıcılar (borç) 30.000; 656 Kambiyo Zararları (alacak) 30.000',
             'B': '656 Kambiyo Zararları (borç) 30.000; 642 Faiz Gelirleri (alacak) 30.000',
@@ -583,7 +583,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        'İşletme 25.000 USD tutarındaki borcunu, işlem günü 30,00 ₺/USD iken kaydetmiş; ödeme günü kur 30,00 ₺/USD olarak değişmeden kalmıştır. Bu durumda kur farkı ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir ithalatçı, yurt dışındaki tedarikçisine olan 25.000 USD tutarındaki ticari borcunu işlem günü 30,00 ₺/USD kuruyla kaydetmiştir. Aynı ay içinde, kurun yine 30,00 ₺/USD olduğu bir günde borcun tamamı bankadan ödenmiştir; arada dönem sonu değerlemesi yapılmamıştır.\n\nBu durumda kur farkı ile ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Ödenen tutar üzerinden 656 Kambiyo Zararları çalışır.',
             'B': 'Kayıtlı borç tutarı kadar 646 Kambiyo Kârları yazılır.',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0047': patch(
-        "Selen Gıda A.Ş., 30.000 USD tutarındaki döviz alacağının (işlem günü kuru 30,00 ₺/USD) 18.000 USD'lik kısmını, kurun 31,50 ₺/USD olduğu gün banka aracılığıyla tahsil etmiştir. Bu kısmi tahsilatın yevmiye kaydında aşağıdakilerden hangisi yer alır?",
+        "Selen Gıda A.Ş. yurt dışına sattığı kuru meyveler nedeniyle 30.000 USD tutarında döviz alacağı kaydetmiştir (işlem günü kuru 30,00 ₺/USD). Aynı dönem içinde alacağın 18.000 USD'lik kısmı, kurun 31,50 ₺/USD olduğu gün banka aracılığıyla TL olarak tahsil edilmiş, kalan kısmın vadesi izleyen aydadır.\n\nBu kısmi tahsilatın yevmiye kaydında aşağıdakilerden hangisi yer alır?",
         {
             'A': '120 Alıcılar (borç) 567.000; 102 Bankalar (alacak) 540.000 ve 646 Kambiyo Kârları (alacak) 27.000',
             'B': '102 Bankalar (borç) 540.000; 120 Alıcılar (alacak) 540.000',
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        'Doruk Elektronik A.Ş., kasasındaki 6.000 USD efektifi (kayıt 30,00 ₺/USD) kurun 31,80 ₺/USD olduğu gün bankaya bozdurarak TL hesabına almıştır.\n\nBu işlemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?',
+        'Doruk Elektronik A.Ş., yurt dışı fuar dönüşü kasasında kalan 6.000 USD efektifi (kayıtlı kur 30,00 ₺/USD) aynı dönem içinde, kurun 31,80 ₺/USD olduğu gün bankaya bozdurarak TL vadesiz hesabına yatırmıştır (masraf ihmal).\n\nBu işlemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': '102 Bankalar hesabı 190.800 ₺ borçlandırılır',
             'B': '100 Kasa hesabı 180.000 ₺ alacaklandırılır',
@@ -737,7 +737,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        "Işık Ambalaj A.Ş.'nin aynı dönemde 12.000 USD döviz kasası ve 12.000 USD döviz cinsi satıcı borcu bulunmaktadır (ikisi de aynı kurla kayıtlıdır).\n\nBu iki kalemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        "Işık Ambalaj A.Ş.'nin dönem sonunda kasasında 12.000 USD efektif bulunmakta, ayrıca yurt dışındaki bir hammadde tedarikçisine 12.000 USD tutarında satıcı borcu vardır. İki kalem de aynı kurla kayıtlıdır ve dönem içinde kur yükselmiştir.\n\nBu iki kalemin muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
             'A': 'Döviz kasası dönem sonunda efektif alış kuruyla değerlenir',
             'B': 'Satıcı borcu dönem sonunda MB döviz alış kuruyla değerlenir',
@@ -849,7 +849,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0059': patch(
-        "Toros Mermer A.Ş., ihracattan gelen ve döviz mevduat hesabında 30,00 ₺/USD ile izlediği 20.000 USD'nin tamamını, kur 31,90 ₺/USD iken bozdurarak TL hesabına almıştır. Bu işlemde oluşan kambiyo kârı ile TL girişi sırasıyla kaç ₺'dir?",
+        "Toros Mermer A.Ş. ihracat bedellerini döviz tevdiat hesabında tutmaktadır. Bu hesapta 30,00 ₺/USD ile izlenen 20.000 USD'nin tamamı, vergi ödemeleri için kurun 31,90 ₺/USD olduğu gün bozdurularak TL vadesiz hesaba aktarılmıştır (masraf ihmal).\n\nBu işlemde oluşan kambiyo kârı ile TL girişi sırasıyla kaç ₺'dir?",
         {
             'A': '380.000 ₺ kâr — 638.000 ₺ giriş',
             'B': '38.000 ₺ kâr — 600.000 ₺ giriş',

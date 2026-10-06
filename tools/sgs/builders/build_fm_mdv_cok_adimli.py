@@ -93,7 +93,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        "Bir işletme faydalı ömrü 3 yıl olarak belirlenmiş bir bilgisayar sistemi için azalan bakiyeler yöntemini seçmiştir. Normal amortisman oranı %33,33'tür. Buna göre uygulanacak azalan bakiyeler oranı yüzde kaçtır?",
+        "Bir mimarlık bürosu, faydalı ömrü Hazine ve Maliye Bakanlığınca ilan edilen listeye göre 3 yıl olan bir bilgisayar sistemini 180.000 ₺'ye satın almış ve bu varlık için azalan bakiyeler yöntemini seçmiştir. Normal amortisman oranı %33,33'tür.\n\nBuna göre uygulanacak azalan bakiyeler oranı yüzde kaçtır?",
         {
             'A': '%33,33',
             'B': '%66,67',
@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0009': patch(
-        "Maliyet bedeli 300.000 ₺ ve faydalı ömrü 10 yıl olan bir makine için normal amortisman yöntemiyle dört tam yıl amortisman ayrılmıştır. Beşinci yıl içinde makine 200.000 ₺'ye (KDV hariç) satılmıştır. Buna göre satış sonucu aşağıdakilerden hangisidir?",
+        "Bir tekstil işletmesi 300.000 ₺'ye satın aldığı ve faydalı ömrü 10 yıl olan bir dokuma makinesi için normal amortisman yöntemiyle dört tam yıl amortisman ayırmıştır. Beşinci yılın Haziran ayında makine 200.000 ₺'ye (KDV hariç) peşin satılmıştır; yenileme fonu ayrılmayacaktır.\n\nBuna göre satış sonucu aşağıdakilerden hangisidir?",
         {
             'A': '20.000 ₺ zarar',
             'B': '80.000 ₺ kâr',
@@ -205,7 +205,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        'Bir işletme dönem içinde kullandığı makineler için yıl sonunda amortisman ayırmamış, makinelerin maliyetinin tamamını satıldıkları yılda gider yazmayı tercih etmiştir. Bu uygulama aşağıdaki temel kavramlardan hangisine aykırıdır?',
+        'Kuruluşunun ilk yıllarında olan bir işletme, dönem içinde kullandığı 600.000 ₺ maliyetli üretim makineleri için yıl sonunda amortisman ayırmamıştır. Muhasebe müdürü, en az on yıl kullanılacak makinelerin maliyetinin tamamını satıldıkları yılda gider yazmayı önermiş ve yönetim bu öneriyi kabul etmiştir.\n\nBu uygulama aşağıdaki temel kavramlardan hangisine aykırıdır?',
         {
             'A': 'Parayla ölçülme',
             'B': 'Sosyal sorumluluk',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        'İşletme kayıtlı değeri 160.000 ₺, birikmiş amortismanı 100.000 ₺ olan bir makineyi 70.000 ₺ + %20 KDV bedelle satmış, bedel banka hesabına yatırılmıştır (yenileme fonu ayrılmayacaktır). Buna göre satış kaydında aşağıdakilerden hangisi yer almaz?',
+        'Bir gıda üreticisi, üretim hattından çıkardığı ve kayıtlı değeri 160.000 ₺, birikmiş amortismanı 100.000 ₺ olan bir paketleme makinesini başka bir işletmeye 70.000 ₺ + %20 KDV bedelle satmış; bedel aynı gün banka hesabına yatırılmıştır. Yenileme fonu ayrılmayacaktır.\n\nBuna göre satış kaydında aşağıdakilerden hangisi yer almaz?',
         {
             'A': '679 Diğer Olağandışı Gelir ve Kârlar hesabı 10.000 ₺ alacaklandırılır',
             'B': '257 Birikmiş Amortismanlar hesabı 100.000 ₺ borçlandırılır',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        "İşletme 1 Ekim'de satın aldığı binek otomobil için ilk yıl kıst amortisman ayırmıştır. Faydalı ömür 5 yıl olup normal amortisman uygulanmaktadır. İlk yıl ayrılamayan dokuz aylık amortisman tutarıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir danışmanlık şirketi 1 Ekim'de genel müdürünün kullanımı için bir binek otomobil satın almış ve ilk yıl kıst amortisman ayırmıştır. Taşıtın faydalı ömrü 5 yıl olup normal amortisman yöntemi uygulanmaktadır; şirketin hesap dönemi takvim yılıdır.\n\nİlk yıl ayrılamayan dokuz aylık amortisman tutarıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Beş yıla eşit dağıtılarak her yıla eklenir',
             'B': 'İkinci yılın amortismanına eklenir',
@@ -303,7 +303,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0020': patch(
-        'Kayıtlı değeri 320.000 ₺, birikmiş amortismanı 200.000 ₺ olan bir kamyon 100.000 ₺ + %20 KDV bedelle satılmış, bedelin tamamı için alıcıdan üç ay vadeli senet alınmıştır. Buna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir nakliye şirketi, filosunu yenilerken kayıtlı değeri 320.000 ₺, birikmiş amortismanı 200.000 ₺ olan bir kamyonu 100.000 ₺ + %20 KDV bedelle başka bir şirkete satmıştır. Bedelin tamamı için alıcıdan üç ay vadeli senet alınmış, yenileme fonu ayrılmayacaktır.\n\nBuna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '121 Alacak Senetleri hesabı 120.000 ₺ borçlandırılır',
             'B': '121 Alacak Senetleri hesabı 100.000 ₺ borçlandırılır',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0027': patch(
-        'Kayıtlı değeri 400.000 ₺, birikmiş amortismanı 280.000 ₺ olan bir makine 150.000 ₺ + %20 KDV bedelle satılmış; karşılığında müşteriden çek alınmıştır (yenileme fonu ayrılmayacaktır). Satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir mobilya üreticisi, kullanım dışı kalan ve kayıtlı değeri 400.000 ₺, birikmiş amortismanı 280.000 ₺ olan bir CNC makinesini 150.000 ₺ + %20 KDV bedelle satmış; karşılığında müşteriden ileri tarihli bir çek almıştır. Yenileme fonu ayrılmayacaktır.\n\nSatış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '679 Diğer Olağandışı Gelir ve Kârlar hesabı 30.000 ₺ alacaklandırılır',
             'B': '391 Hesaplanan KDV hesabı 30.000 ₺ borçlandırılır',
@@ -443,7 +443,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0030': patch(
-        "İşletme kayıtlı değeri 180.000 ₺, birikmiş amortismanı 120.000 ₺ olan bir makineyi yenilemek amacıyla 85.000 ₺'ye (KDV hariç) satmıştır. Satış kârı yenileme fonuna alınacaktır. Satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir matbaa, eskiyen bir baskı makinesini daha yeni bir modelle değiştirmek amacıyla, kayıtlı değeri 180.000 ₺ ve birikmiş amortismanı 120.000 ₺ iken 85.000 ₺'ye (KDV hariç) satmıştır. Yeni makinenin üç ay içinde alınması planlanmakta ve satış kârının yenileme fonuna alınmasına karar verilmiştir.\n\nSatış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '522 MDV Yeniden Değerleme Artışları hesabı 25.000 ₺ alacaklandırılır',
             'B': '679 Diğer Olağandışı Gelir ve Kârlar hesabı 25.000 ₺ alacaklandırılır',
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        "İşletme kullanmadığı bir makineyi %20 KDV'li olarak satmış, aynı ay içinde yeni bir makineyi de %20 KDV'li olarak satın almıştır. Bu iki işlemin KDV'sinin kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir plastik üreticisi kullanmadığı eski bir enjeksiyon makinesini 150.000 ₺ + %20 KDV bedelle satmış, aynı ay içinde 600.000 ₺ + %20 KDV bedelle yeni bir makine satın almıştır. Her iki işlem için fatura düzenlenmiştir ve işletme genel hükümlere tabi bir KDV mükellefidir.\n\nBu iki işlemin KDV'sinin kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': "İki işlemin KDV'si de 391'in alacağına yazılır",
             'B': "İki işlemin KDV'si de 191'in borcuna yazılır",
@@ -541,7 +541,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0037': patch(
-        'Kayıtlı değeri 220.000 ₺, birikmiş amortismanı 160.000 ₺ olan bir makine sel sonucu kullanılamaz hâle gelmiştir. Sigorta şirketi 45.000 ₺ tazminat ödeyeceğini bildirmiştir. Buna göre yapılacak kayıtta aşağıdakilerden hangisi yer almaz?',
+        'Bir gıda işletmesinin depo bölgesini basan sel sonucu, kayıtlı değeri 220.000 ₺ ve birikmiş amortismanı 160.000 ₺ olan bir soğutma makinesi kullanılamaz hâle gelmiş ve kayıtlardan çıkarılmasına karar verilmiştir. Makine sigortalıdır; sigorta şirketi hasar tespitinden sonra 45.000 ₺ tazminat ödeyeceğini bildirmiştir.\n\nBuna göre yapılacak kayıtta aşağıdakilerden hangisi yer almaz?',
         {
             'A': '689 Diğer Olağandışı Gider ve Zararlar hesabı 15.000 ₺ borçlandırılır',
             'B': '136 Diğer Çeşitli Alacaklar hesabı 45.000 ₺ borçlandırılır',
@@ -583,7 +583,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        'Yeni yönetim binası inşaatını üstlenen yüklenici 400.000 ₺ + %20 KDV tutarında hakediş faturası düzenlemiş, işletme bedeli banka havalesiyle ödemiştir. İnşaat sürmektedir. Buna göre hakediş kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir ticaret işletmesi yeni yönetim binasının inşaatını bir yükleniciye vermiştir. Yüklenici tamamlanan ilk aşama için 400.000 ₺ + %20 KDV tutarında hakediş faturası düzenlemiş, işletme bedeli banka havalesiyle ödemiştir. İnşaatın tamamlanmasına yaklaşık bir yıl vardır.\n\nBuna göre hakediş kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '252 Binalar hesabı 400.000 ₺ borçlandırılır',
             'B': '258 Yapılmakta Olan Yatırımlar hesabı 400.000 ₺ borçlandırılır',
@@ -653,7 +653,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0045': patch(
-        "Faydalı ömrü 10 yıl olan ve 500.000 ₺'ye alınan bir tesis için azalan bakiyeler yöntemiyle amortisman ayrılmaktadır. Buna göre dört yıllık amortisman ayrıldıktan sonra tesisin net defter değeri kaç ₺'dir?",
+        "Bir çimento fabrikası, faydalı ömrü 10 yıl olan ve 500.000 ₺'ye satın alınan bir kırma tesisi için azalan bakiyeler yöntemiyle amortisman ayırmaktadır. Tesis yıl başında aktifleştirilmiş ve her yıl tam yıl amortisman ayrılmıştır.\n\nBuna göre dört yıllık amortisman ayrıldıktan sonra tesisin net defter değeri kaç ₺'dir?",
         {
             'A': '100.000 ₺',
             'B': '163.840 ₺',
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0048': patch(
-        'Kayıtlı değeri 90.000 ₺ ve birikmiş amortismanı 54.000 ₺ olan bir demirbaş 30.000 ₺ + %20 KDV bedelle peşin satılmıştır. Buna göre satıştan doğan sonuç ve kullanılacak hesap aşağıdakilerden hangisidir?',
+        'Bir muhasebe bürosu, ofis yenilemesi kapsamında kayıtlı değeri 90.000 ₺ ve birikmiş amortismanı 54.000 ₺ olan bir mobilya takımını (demirbaş) ikinci el alıcısına 30.000 ₺ + %20 KDV bedelle peşin olarak satmıştır. Yenileme fonu ayrılmayacaktır.\n\nBuna göre satıştan doğan sonuç ve kullanılacak hesap aşağıdakilerden hangisidir?',
         {
             'A': '36.000 ₺ zarar; 689 borçlandırılır',
             'B': 'Kâr veya zarar doğmaz; 391 alacaklandırılır',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'İşletme, ileride teslim alacağı bir kaynak makinesi için sözleşme imzalamış ve bedelin bir kısmını satıcıya peşin ödemiştir. Makine henüz teslim alınmamıştır. Ödenen tutar teslimata kadar hangi hesapta izlenir?',
+        "Bir metal işleme işletmesi, dört ay sonra teslim alacağı bir kaynak makinesi için üreticisiyle 750.000 ₺ + KDV bedelli sözleşme imzalamış ve bedelin 200.000 ₺'lik kısmını satıcıya peşin ödemiştir. Makine henüz teslim alınmamış, satıcı fatura düzenlememiştir.\n\nÖdenen tutar teslimata kadar hangi hesapta izlenir?",
         {
             'A': '159 Verilen Sipariş Avansları',
             'B': '340 Alınan Sipariş Avansları',
@@ -779,7 +779,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        'Maliyetinin tamamı amortisman yoluyla itfa edilmiş bir demirbaş işletmede kullanılmaya devam etmektedir. İşletme varlığın kayıtlarda görünmesini sağlamak için sembolik bir tutar bırakmak istemektedir. Bu sembolik tutara ne ad verilir?',
+        'Bir otel işletmesinin yıllar önce aldığı bir mutfak ekipmanının maliyetinin tamamı amortisman yoluyla itfa edilmiştir; ekipman bakımlı olduğu için kullanılmaya devam etmektedir. İşletme, varlığın envanterde ve kayıtlarda görünmeye devam etmesi için sembolik bir tutar bırakmak istemektedir.\n\nBu sembolik tutara ne ad verilir?',
         {
             'A': 'Yeniden değerleme artışı',
             'B': 'Hurda değeri',

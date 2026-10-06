@@ -24,6 +24,28 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — FM 200-249 bandı genişletildi, 250+ payı gerçeğe ulaştı (v241 canlı)
+
+9 paketten 126 sorunun yalnız kökü değişti; şık, cevap ve dayanak aynı (paket başına doğrulandı).
+Soyut kökler somut işletme ve olayla kuruldu: sektör, tarih, vade, ödeme biçimi, cevabı değiştirmeyen ek veri.
+Paketler: stoklar 17, yabancı kaynaklar 17, dönem sonu 16, MDV 15, kur 14, KDV 14, MODV 12, özkaynak 11, menkul 10.
+İki çözüm bilerek değişti:
+- kur 0030 başka bir soruya numarayla atıf yapıyordu ("0016'daki durum"); atıf kaldırıldı. Havuzda başka atıf yok.
+- KDV 0035'in verisi 0015'in cevabını (264, 100.000 ₺) açık ediyordu; 80.000 ₺ / 4 yıla çevrildi.
+
+Tasarımda geri çevrilen genişletmeler:
+- ikiz sorular farklı adıma çevrilmedi, çünkü pakette başka soruların cevabını açık edecekti (dönem sonu 0024/0029 ve 0002/0047);
+- "340'a kaydedilmiştir" ifadesi yazılmadı (yk 0053'ün cevabı);
+- 0057'de kredinin kullanım ayı faiz tahakkukuyla tutarlı olacak biçimde seçildi.
+
+| FM | Bizim (önce → sonra) | Gerçek |
+|---|---|---|
+| Çeyrekler | 178 / 248 / 316 → 178 / 279 / 343 | 187 / 285 / 346 |
+| 250+ payı | %49 → %62 | %62 |
+| 150 altı | %17 | %20 |
+
+Paylaşılan veri çifti 14'te kaldı. Kök derinliğinde FM açığı kapandı.
+
 ## 6 Ekim 2026 — uzun FM senaryoları tablolu (v240 canlı)
 
 9 paketten 22 uzun hesap sorusu, satır içi veri listesinden iki sütunlu tabloya taşındı (biri üç sütunlu).

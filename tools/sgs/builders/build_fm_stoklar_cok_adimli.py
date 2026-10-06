@@ -163,7 +163,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        'Bir işletmenin dönem sonu stokları 18.000 ₺ fazla sayılmıştır. Alışlar ve satışlar doğru kaydedilmiş, hata izleyen dönemde tekrarlanmamıştır.\n\nBu hatanın etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?',
+        'Aralıklı envanter yöntemini kullanan bir ticaret işletmesinde dönem sonu sayımında bir ürün grubunun miktarı sayım listesine yanlışlıkla iki kez yazılmış ve dönem sonu ticari mal stoku 18.000 ₺ fazla belirlenmiştir. Alışlar ve satışlar doğru kaydedilmiştir; hata izleyen dönemde fark edilmemiş, ancak izleyen dönemin sayımında tekrarlanmamıştır.\n\nBu hatanın etkileriyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Cari dönemin satılan mal maliyeti 18.000 ₺ eksik hesaplanır',
             'B': 'Cari dönem kârı 18.000 ₺ fazla hesaplanır',
@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        '7/A seçeneğini uygulayan bir üretim işletmesinde, üretim bölümünün malzeme istek fişiyle ambardan 80.000 ₺ tutarında hammadde üretime sevk edilmiştir.\n\nİlk madde ve malzemenin ambardan üretime sevk edilmesiyle ilgili aşağıdakilerden hangisi doğrudur?',
+        "7/A seçeneğini uygulayan bir mobilya üretim işletmesinde, üretim bölümünün düzenlediği malzeme istek fişiyle ambardan 80.000 ₺ tutarında hammadde üretime sevk edilmiştir. Sevk edilen malzemenin 70.000 ₺'si doğrudan mamule giren kereste, 10.000 ₺'si ise endirekt malzeme olarak izlenen tutkal ve vidadır.\n\nİlk madde ve malzemenin ambardan üretime sevk edilmesiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '600 Yurt İçi Satışlar hesabı alacaklandırılır; 150 İlk Madde ve Malzeme hesabı borçlandırılır.',
             'B': '150 İlk Madde ve Malzeme hesabı borçlandırılır; ilgili gider/maliyet hesabı alacaklandırılır.',
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'İşletme, ileride teslim alacağı ticari mallar için satıcısına 40.000 ₺ sipariş avansını banka yoluyla ödemiştir (mallar henüz teslim alınmamıştır).\n\nBu işlemle ilgili aşağıdakilerden hangisi yanlıştır?',
+        'Mobilya aksesuarı satan bir işletme, iki ay sonra teslim alacağı ticari mallar için satıcısıyla 120.000 ₺ + KDV tutarında bir alım sözleşmesi imzalamış ve sözleşme gereği 40.000 ₺ sipariş avansını banka yoluyla ödemiştir. Mallar henüz teslim alınmamış, satıcı fatura düzenlememiştir.\n\nBu işlemle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Ödeme gününde 153 Ticari Mallar hesabı 40.000 ₺ borçlandırılır',
             'B': '159 Verilen Sipariş Avansları hesabı 40.000 ₺ borçlandırılır',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        "İşletme dönem içinde 200.000 ₺'lik ticari mal satın almış; bu mallar için 6.000 ₺ nakliye (navlun) gideri ödemiş ve satın aldığı malların 10.000 ₺'lik kısmını satıcıya iade etmiştir.\n\nBuna göre stok maliyetine giren net alış tutarı kaç ₺'dir?",
+        "İşletme dönem içinde satıcısından 200.000 ₺'lik (KDV hariç) ticari mal satın almıştır. Malların işletme deposuna getirilmesi için 6.000 ₺ nakliye (navlun) gideri ödenmiş, malların 10.000 ₺'lik kısmı ayıplı çıktığı için satıcıya iade edilmiştir. Alışlara ilişkin KDV, indirilecek KDV olarak ayrıca kaydedilmiştir.\n\nBuna göre stok maliyetine giren net alış tutarı kaç ₺'dir?",
         {
             'A': '196.000',
             'B': '200.000',
@@ -429,7 +429,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Aşağıdakilerden hangileri satın alınan ticari malın stok maliyetine dâhil edilir?\n\nI. İşletmenin genel yönetim giderleri\n\nII. Alışa ilişkin navlun ve sigorta giderleri\n\nIII. Satış ve pazarlama giderleri\n\nIV. İthalatta ödenen gümrük vergisi',
+        'Bir ticaret işletmesi yurt dışından ithal ettiği malları gümrükten çekerek deposuna getirmiş ve aynı ay içinde bu malların bir kısmını yurt içinde satmıştır. Dönem içinde aşağıdaki harcamalar yapılmıştır:\n\nI. İşletmenin genel yönetim giderleri\n\nII. Alışa ilişkin navlun ve sigorta giderleri\n\nIII. Satış ve pazarlama giderleri\n\nIV. İthalatta ödenen gümrük vergisi\n\nBu harcamalardan hangileri satın alınan ticari malın stok maliyetine dâhil edilir?',
         {
             'A': 'Yalnız I',
             'B': 'I ve II',
@@ -457,7 +457,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0031': patch(
-        "Satıcı, 28 Aralık'ta malları FOB varış (teslim) noktası koşuluyla müşteriye göndermiştir. Mallar 31 Aralık'ta hâlâ yolda olup müşteriye 3 Ocak'ta teslim edilmiştir. Dönem sonu stok kesimi bakımından en uygun işlem hangisidir?",
+        "Bir toptancı, 28 Aralık'ta maliyeti 45.000 ₺ olan malları FOB varış (teslim) noktası koşuluyla karayoluyla müşterisine göndermiştir. Müşteri bedelin %30'unu 20 Aralık'ta avans olarak ödemiştir. Mallar 31 Aralık'ta hâlâ yolda olup müşteriye 3 Ocak'ta teslim edilmiştir.\n\nSatıcının dönem sonu stok kesimi bakımından en uygun işlem hangisidir?",
         {
             'A': 'Mallar taşıma süresince iki işletmenin stokunda da gösterilmez.',
             'B': "Teslim 3 Ocak'ta gerçekleştiğinden mallar 31 Aralık'ta satıcının stoklarında kalır.",
@@ -485,7 +485,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        "Dönem başı ticari mal stoku 60.000 ₺, net alışlar 340.000 ₺ ve net satışlar 500.000 ₺'dir. İşletmenin satışlar üzerinden brüt kâr oranı %30'dur. Brüt kâr yöntemine göre tahmini dönem sonu stok tutarı kaç ₺'dir?",
+        "Yıl sonunda deposunda yangın çıktığı için fiilî sayım yapamayan bir ticaret işletmesi, dönem sonu stokunu brüt kâr yöntemiyle tahmin edecektir. Kayıtlara göre dönem başı ticari mal stoku 60.000 ₺, net alışlar 340.000 ₺ ve net satışlar 500.000 ₺'dir. İşletmenin son yıllarda satışlar üzerinden brüt kâr oranı istikrarlı biçimde %30'dur.\n\nBrüt kâr yöntemine göre tahmini dönem sonu stok tutarı kaç ₺'dir?",
         {
             'A': '50.000 ₺',
             'B': '350.000 ₺',
@@ -569,7 +569,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0039': patch(
-        'Bir ticaret işletmesi sattığı malların müşterinin deposuna teslimi için nakliye firmasına kendi hesabına 5.000 ₺ + %20 KDV nakit ödemiştir. Buna göre bu ödemenin kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        "Bir ticaret işletmesi, teslim masrafı kendisine ait olmak üzere sattığı malların müşterinin deposuna teslimi için anlaşmalı nakliye firmasına 5.000 ₺ + %20 KDV'yi nakit ödemiş ve faturasını almıştır. Satılan malların maliyeti 42.000 ₺'dir ve işletme sürekli envanter yöntemini uygulamaktadır.\n\nBuna göre bu ödemenin kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '760 Pazarlama Satış ve Dağıtım Giderleri hesabı 6.000 ₺ borçlandırılır',
             'B': '760 Pazarlama Satış ve Dağıtım Giderleri hesabı 5.000 ₺ borçlandırılır',
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Sürekli envanter yöntemini uygulayan işletme, maliyeti 18.000 ₺ olan ticari malı 25.000 ₺ + %20 KDV bedelle veresiye satmıştır.\n\nBuna göre satışın maliyetine ilişkin yapılması gereken kayıt aşağıdakilerden hangisidir?',
+        'Sürekli envanter yöntemini uygulayan bir beyaz eşya satıcısı, depodaki maliyeti 18.000 ₺ olan bir buzdolabını 25.000 ₺ + %20 KDV bedelle 60 gün vadeyle müşterisine satmış ve malı aynı gün teslim etmiştir. Satış faturası düzenlenmiş, hasılat kaydı ayrıca yapılmıştır.\n\nBuna göre satışın maliyetine ilişkin yapılması gereken kayıt aşağıdakilerden hangisidir?',
         {
             'A': '600 Yurt İçi Satışlar (borç) 25.000 / 153 Ticari Mallar (alacak) 25.000',
             'B': '621 Satılan Ticari Malların Maliyeti (borç) 25.000 / 153 Ticari Mallar (alacak) 25.000',
@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        "Sürekli envanter yöntemini kullanan işletme, daha önce %20 KDV ile veresiye aldığı 8.000 ₺'lik (KDV hariç) ticari malı satıcısına iade etmiş; tutar borcundan düşülmüştür.\n\nBu iade işleminin kaydı aşağıdakilerden hangisidir?",
+        "Sürekli envanter yöntemini kullanan işletme, bir hafta önce %20 KDV ile veresiye aldığı ticari malların 8.000 ₺'lik (KDV hariç) kısmını, sipariş edilen modelden farklı olduğu için satıcısına iade etmiştir. İşletme iade faturası düzenlemiş, tutar satıcıya olan borcundan düşülmüştür.\n\nBu iade işleminin kaydı aşağıdakilerden hangisidir?",
         {
             'A': '320 Satıcılar (borç) 9.600 / 153 Ticari Mallar (alacak) 8.000 + 191 İndirilecek KDV (alacak) 1.600',
             'B': '320 Satıcılar (borç) 8.000 / 153 Ticari Mallar (alacak) 8.000',
@@ -653,7 +653,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "Aralıklı envanter yöntemini kullanan işletme dönem içi alışlarını '153 Ticari Mallar' hesabının borcunda izlemektedir. Dönem sonunda satılan malın maliyetini belirlemek için yapılan işlem aşağıdakilerden hangisidir?",
+        "Aralıklı envanter yöntemini kullanan bir kırtasiye toptancısı dönem içi alışlarını '153 Ticari Mallar' hesabının borcunda izlemekte, satışlarda yalnız hasılat kaydı yapmaktadır. Dönem başı stok 70.000 ₺, dönem içi alışlar 410.000 ₺'dir.\n\nDönem sonunda satılan malın maliyetini belirlemek için yapılan işlem aşağıdakilerden hangisidir?",
         {
             'A': "'153 Ticari Mallar' hesabı dönem içinde kullanılmaz; alışlar doğrudan gider olarak sonuç hesaplarına yazılır.",
             'B': "Dönem sonu fiilî sayımla belirlenen mevcut esas alınarak satılan malın maliyeti hesaplanır ve '621 (borç) / 153 (alacak)' kaydı yapılır.",
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        'Sürekli envanter yöntemini uygulayan işletmeye, daha önce sattığı maliyeti 4.000 ₺ olan mal müşteri tarafından iade edilmiştir. Bu iadenin maliyet yönünü ilgilendiren kaydı aşağıdakilerden hangisidir?',
+        'Sürekli envanter yöntemini uygulayan işletme, geçen hafta 5.500 ₺ + %20 KDV bedelle veresiye sattığı ve maliyeti 4.000 ₺ olan bir malın, ambalajı hasarlı olduğu gerekçesiyle müşteri tarafından iadesini kabul etmiştir. Mal satılabilir durumdadır ve depoya geri alınmıştır.\n\nBu iadenin maliyet yönünü ilgilendiren kaydı aşağıdakilerden hangisidir?',
         {
             'A': '153 Ticari Mallar (borç) 4.000 / 600 Yurt İçi Satışlar (alacak) 4.000',
             'B': '621 Satılan Ticari Malların Maliyeti (borç) 4.000 / 620 Satılan Mamuller Maliyeti (alacak) 4.000',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'Bir üretim işletmesinin imal ettiği mamulün stok maliyetine aşağıdakilerden hangileri dâhil edilir?\n\nI. Direkt ilk madde ve malzeme giderleri\n\nII. Direkt işçilik giderleri\n\nIII. Üretimle ilgili genel üretim giderleri\n\nIV. Satış ve pazarlama giderleri',
+        'Masa ve sandalye üreten bir işletme, dönem içinde ürettiği mamullerin bir kısmını bayileri aracılığıyla satmıştır. Dönemde üretim ve satış faaliyetleriyle ilgili aşağıdaki giderler oluşmuştur:\n\nI. Direkt ilk madde ve malzeme giderleri\n\nII. Direkt işçilik giderleri\n\nIII. Üretimle ilgili genel üretim giderleri\n\nIV. Satış ve pazarlama giderleri\n\nBu giderlerden hangileri imal edilen mamulün stok maliyetine dâhil edilir?',
         {
             'A': 'I, II ve III',
             'B': 'I ve II',
@@ -779,7 +779,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        "Dönem sonunda net gerçekleşebilir değeri maliyetinin altına düşen ticari mallar için 20.000 ₺ stok değer düşüklüğü karşılığı ayrılmış; gider '654 Karşılık Giderleri' hesabına yazılmıştır.\n\nBu karşılık gideri gelir tablosunda hangi bölümde raporlanır?",
+        "Elektronik ürün satan bir işletmenin deposundaki bir model televizyonun dönem sonu maliyeti 120.000 ₺'dir. Yeni modelin piyasaya çıkması nedeniyle bu stokun tahmini satış fiyatı 110.000 ₺'ye düşmüş, satış için 10.000 ₺ gider beklenmektedir. İşletme 20.000 ₺ stok değer düşüklüğü karşılığı ayırmış ve gideri '654 Karşılık Giderleri' hesabına yazmıştır.\n\nBu karşılık gideri gelir tablosunda hangi bölümde raporlanır?",
         {
             'A': 'Brüt satış kârının hesaplanmasında satış hasılatına eklenerek',
             'B': 'Finansman giderleri bölümünde',
@@ -807,7 +807,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0056': patch(
-        "Stoklarını sürekli envanter yöntemiyle izleyen işletme, maliyeti 75.000 ₺ olan ticari malı maliyet üzerinden %20 kârla ve %20 KDV'li olarak kredili satmıştır. Buna göre satışa ilişkin kayıtlarla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Stoklarını sürekli envanter yöntemiyle izleyen bir yapı malzemesi satıcısı, maliyeti 75.000 ₺ olan seramik partisini maliyet üzerinden %20 kârla ve %20 KDV'li olarak 30 gün vadeyle bir müteahhide satmış, malları aynı gün teslim etmiştir.\n\nBuna göre satışa ilişkin kayıtlarla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '600 Yurt İçi Satışlar hesabı 108.000 ₺ alacaklandırılır',
             'B': '153 Ticari Mallar hesabı 90.000 ₺ alacaklandırılır',
@@ -821,7 +821,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        "Sürekli envanter yöntemini kullanan işletmede 153 Ticari Mallar hesabının kaydi kalanı 90.000 ₺, dönem sonu sayımında belirlenen mevcut 84.000 ₺'dir. Farkın nedeninin araştırılmasına karar verilmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?",
+        'Sürekli envanter yöntemini kullanan işletmede dönem sonu sayımı yapılmış; 153 Ticari Mallar hesabının kaydi kalanı 90.000 ₺, sayım tutanağına göre fiilî mevcut 84.000 ₺ bulunmuştur. Farkın hırsızlıktan mı yoksa kayıt hatasından mı kaynaklandığı belirlenemediği için yönetim konunun araştırılmasına karar vermiştir.\n\nBuna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': '153 hesabı 6.000 ₺ borçlandırılır',
             'B': "Nedeni bulunamayan fark dönem sonunda 689'a aktarılır",
@@ -849,7 +849,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0059': patch(
-        "Stoklarını sürekli envanter yöntemiyle izleyen işletme, satın aldığı ticari malların deposuna taşınması için nakliye firmasına 8.000 ₺ + %20 KDV'yi bankadan ödemiştir. Buna göre ödeme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Stoklarını sürekli envanter yöntemiyle izleyen işletme, yurt içindeki bir üreticiden satın aldığı 150.000 ₺ + KDV tutarındaki ticari malların fabrikadan deposuna taşınması için nakliye firmasına 8.000 ₺ + %20 KDV'yi bankadan ödemiştir. Mallar depoya ulaşmış ve henüz satılmamıştır.\n\nBuna göre ödeme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '153 Ticari Mallar hesabı 9.600 ₺ borçlandırılır',
             'B': '153 Ticari Mallar hesabı 8.000 ₺ borçlandırılır',

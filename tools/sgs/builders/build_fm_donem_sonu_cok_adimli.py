@@ -51,7 +51,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        "Dönem sonunda gelir hesaplarının alacak toplamı 680.000 ₺, gider ve maliyet hesaplarının borç toplamı 510.000 ₺'dir. Henüz vergi karşılığı hesaplanmamıştır.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına devrinden sonra ortaya çıkan sonuç nedir?",
+        'Bir ticaret işletmesinde dönem sonu kapanış işlemleri sırasında, yansıtma hesapları kapatıldıktan sonra gelir hesaplarının alacak toplamı 680.000 ₺, gider ve maliyet hesaplarının borç toplamı 510.000 ₺ olarak belirlenmiştir. Henüz vergi karşılığı hesaplanmamıştır.\n\nBu hesapların 690 Dönem Kârı veya Zararı hesabına devrinden sonra ortaya çıkan sonuç nedir?',
         {
             'A': '170.000 ₺ dönem zararı',
             'B': '510.000 ₺ borç kalanı',
@@ -65,7 +65,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0003': patch(
-        'İşletme 1 Aralık 2025 tarihinde, 1 Aralık 2025-31 Mayıs 2027 dönemine ait 18 aylık depo kirasını 180.000 ₺ peşin tahsil etmiştir.\n\n31 Aralık 2025 tarihli finansal tablolarda bu tutar nasıl sınıflandırılmalıdır?',
+        'Ticari mal satan bir işletme, ihtiyaç fazlası deposunu kiraya vermiş ve 1 Aralık 2025 tarihinde 1 Aralık 2025-31 Mayıs 2027 dönemine ait 18 aylık kirayı 180.000 ₺ olarak peşin tahsil etmiştir. Kira tutarı aylık olarak eşittir ve sözleşme süresince değişmeyecektir.\n\n31 Aralık 2025 tarihli finansal tablolarda bu tutar nasıl sınıflandırılmalıdır?',
         {
             'A': '380 Gelecek Aylara Ait Gelirler 170.000 ₺; gelir kaydı yapılmaz',
             'B': '649 Diğer Olağan Gelir ve Kârlar 20.000 ₺; 380 Gelecek Aylara Ait Gelirler 110.000 ₺; 480 Gelecek Yıllara Ait Gelirler 50.000 ₺',
@@ -93,7 +93,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'İşletme 1 Ekim 2025 tarihinde 12 aylık danışmanlık hizmeti almış; toplam 240.000 ₺ bedelin hizmet süresi sonunda ödenmesi kararlaştırılmıştır. Aylık hizmet tutarları eşittir.\n\n31 Aralık 2025 tarihinde yapılacak tahakkuk kaydı hangisidir?',
+        'Bir ticaret işletmesi 1 Ekim 2025 tarihinde yönetim süreçlerinin iyileştirilmesi için bir danışmanlık şirketiyle 12 aylık sözleşme imzalamıştır. Toplam 240.000 ₺ (KDV hariç) bedelin hizmet süresi sonunda tek seferde ödenmesi kararlaştırılmıştır; aylık hizmet tutarları eşittir ve fatura sözleşme sonunda düzenlenecektir.\n\n31 Aralık 2025 tarihinde yapılacak tahakkuk kaydı hangisidir?',
         {
             'A': '381 Gider Tahakkukları 60.000 ₺ borç / 770 Genel Yönetim Giderleri 60.000 ₺ alacak',
             'B': '770 Genel Yönetim Giderleri 60.000 ₺ borç / 381 Gider Tahakkukları 60.000 ₺ alacak',
@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        "İşletme, maliyeti 100.000 ₺ olan hisse senetleri için önceki dönemde 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Hisse senetlerinin tamamı cari dönemde 90.000 ₺'ye banka aracılığıyla satılmıştır.\n\nSatış kaydı hangisidir?",
+        "Bir işletme, kısa vadeli değer artışı beklentisiyle aldığı ve maliyeti 100.000 ₺ olan borsada işlem gören hisse senetleri için, önceki dönem sonunda borsa değerinin düşmesi nedeniyle 20.000 ₺ değer düşüklüğü karşılığı ayırmıştır. Hisse senetlerinin tamamı cari dönemde 90.000 ₺'ye banka aracılığıyla satılmıştır (komisyon ihmal).\n\nSatış kaydı hangisidir?",
         {
             'A': '102 Bankalar 90.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 20.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ ve 644 Konusu Kalmayan Karşılıklar 10.000 ₺ alacak',
             'B': '102 Bankalar 90.000 ₺ ve 655 Menkul Kıymet Satış Zararları 10.000 ₺ borç / 110 Hisse Senetleri 100.000 ₺ alacak',
@@ -205,7 +205,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0013': patch(
-        "İşletme 1 Ağustos 2025'te bankaya bir yıl vadeli, yıllık %24 faizli 600.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir (stopaj ihmal). Buna göre 31 Aralık 2025 tarihinde tahakkuk ettirilecek faiz geliri kaç ₺'dir?",
+        "Nakit fazlası bulunan bir işletme 1 Ağustos 2025'te bankaya bir yıl vadeli, yıllık %24 faizli 600.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tek seferde tahsil edilecektir (stopaj ihmal). İşletmenin hesap dönemi takvim yılıdır.\n\nBuna göre 31 Aralık 2025 tarihinde tahakkuk ettirilecek faiz geliri kaç ₺'dir?",
         {
             'A': '84.000 ₺',
             'B': '144.000 ₺',
@@ -261,7 +261,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0017': patch(
-        "Danışmanlık hizmeti veren bir işletme Aralık 2025'te tamamladığı bir hizmetin 90.000 ₺ tutarındaki faturasını Ocak 2026'da düzenleyecektir (KDV ihmal). Buna göre 31 Aralık 2025 tarihindeki işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
+        "Danışmanlık hizmeti veren bir işletme, bir müşterisi için yürüttüğü proje çalışmasını Aralık 2025'te tamamlamış ve raporu teslim etmiştir. Sözleşme gereği 90.000 ₺ tutarındaki hizmet faturası Ocak 2026'da düzenlenecek ve bedel faturayla birlikte tahsil edilecektir (KDV ihmal).\n\nBuna göre 31 Aralık 2025 tarihindeki işlemle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
             'A': '381 Gider Tahakkukları hesabı 90.000 ₺ alacaklandırılır',
             'B': '600 Yurt İçi Satışlar hesabı 90.000 ₺ alacaklandırılır',
@@ -359,7 +359,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        "Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 240.000 ₺, dönem sonu fiilî stok tutarı 252.000 ₺'dir. Farkın nedeni henüz belirlenememiştir.\n\nİlk envanter kaydı hangisidir?",
+        "Sürekli envanter yöntemini kullanan ve fire bulunmayan bir hırdavat toptancısında dönem sonu sayımı yapılmıştır. 153 Ticari Mallar hesabının borç kalanı 240.000 ₺, sayım tutanağına göre fiilî stok tutarı 252.000 ₺'dir. Farkın nedeni henüz belirlenememiş, araştırma izleyen döneme kalmıştır.\n\nİlk envanter kaydı hangisidir?",
         {
             'A': '153 Ticari Mallar 252.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 252.000 ₺ alacak',
             'B': '397 Sayım ve Tesellüm Fazlaları 12.000 ₺ borç / 153 Ticari Mallar 12.000 ₺ alacak',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        'İşletmenin değerleme gününden 90 gün sonra vadesi dolacak 126.000 ₺ nominal değerli alacak senedi vardır. Senette faiz oranı yazılı değildir; yıllık %20 oran ve iç iskonto yöntemi kullanılacaktır.\n\nReeskont tutarı ve dönem sonu kaydı hangisidir?',
+        'Bir toptancının portföyünde, müşterisinden aldığı ve değerleme gününden 90 gün sonra vadesi dolacak 126.000 ₺ nominal değerli bir alacak senedi bulunmaktadır. İşletme senetli alacaklarını reeskonta tabi tutmayı seçmiştir. Senette faiz oranı yazılı değildir; yıllık %20 oran ve iç iskonto yöntemi kullanılacaktır.\n\nReeskont tutarı ve dönem sonu kaydı hangisidir?',
         {
             'A': '6.300 ₺; 657 Reeskont Faiz Giderleri borç / 121 Alacak Senetleri alacak',
             'B': '6.000 ₺; 657 Reeskont Faiz Giderleri borç / 122 Alacak Senetleri Reeskontu alacak',
@@ -429,7 +429,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Sürekli envanter yöntemini kullanan ve fire bulunmayan işletmede 153 Ticari Mallar hesabının borç kalanı 150.000 ₺, dönem sonu fiilî stok tutarı 172.000 ₺ olarak belirlenmiştir. Farkın nedeni araştırılacaktır.\n\nYapılacak ilk kayıt hangisidir?',
+        'Sürekli envanter yöntemini kullanan ve fire bulunmayan bir kırtasiye işletmesinde yıl sonu sayımında 153 Ticari Mallar hesabının borç kalanı 150.000 ₺, fiilî stok tutarı 172.000 ₺ olarak belirlenmiştir. Fazlalığın bir kayıt hatasından mı yoksa teslim fazlasından mı kaynaklandığı araştırılacaktır.\n\nYapılacak ilk kayıt hangisidir?',
         {
             'A': '153 Ticari Mallar 172.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 172.000 ₺ alacak',
             'B': '621 Satılan Ticari Mallar Maliyeti 22.000 ₺ borç / 153 Ticari Mallar 22.000 ₺ alacak',
@@ -457,7 +457,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0031': patch(
-        "Dönem sonunda 380 Gelecek Aylara Ait Gelirler hesabında 120.000 ₺ bulunmaktadır. İncelemede bu tutarın 50.000 ₺'lik kısmına ilişkin hizmetin cari dönemde tamamlandığı belirlenmiştir.\n\nYapılacak düzeltme kaydı hangisidir?",
+        "Ticari mal satan bir işletme, sahibi olduğu bir salonu dönem içinde etkinlikler için kiraya vermiş ve peşin tahsil ettiği kira bedellerini 380 Gelecek Aylara Ait Gelirler hesabına kaydetmiştir. Dönem sonunda bu hesapta 120.000 ₺ bulunmaktadır. İncelemede bu tutarın 50.000 ₺'lik kısmına ilişkin etkinliklerin cari dönemde gerçekleştiği belirlenmiştir.\n\nYapılacak düzeltme kaydı hangisidir?",
         {
             'A': '181 Gelir Tahakkukları 50.000 ₺ borç / 380 Gelecek Aylara Ait Gelirler 50.000 ₺ alacak',
             'B': '380 Gelecek Aylara Ait Gelirler 70.000 ₺ borç / 649 Diğer Olağan Gelir ve Kârlar 70.000 ₺ alacak',
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0041': patch(
-        'İşletme 1 Ekim 2025 tarihinde, 1 Ekim 2025-30 Eylül 2027 dönemini kapsayan 24 aylık iş yeri kirasını 240.000 ₺ olarak peşin tahsil etmiştir. Aylık kira tutarları eşittir.\n\n31 Aralık 2025 tarihinde tahsilatın dağılımı nasıl olmalıdır?',
+        'Bir üretim işletmesi, fabrika arazisindeki kullanmadığı bir iş yerini kiraya vermiş ve 1 Ekim 2025 tarihinde 1 Ekim 2025-30 Eylül 2027 dönemini kapsayan 24 aylık kirayı 240.000 ₺ olarak peşin tahsil etmiştir. Aylık kira tutarları eşittir.\n\n31 Aralık 2025 tarihinde tahsilatın dağılımı nasıl olmalıdır?',
         {
             'A': '649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 210.000 ₺',
             'B': '649 Diğer Olağan Gelir ve Kârlar 30.000 ₺; 380 Gelecek Aylara Ait Gelirler 120.000 ₺; 480 Gelecek Yıllara Ait Gelirler 90.000 ₺',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0042': patch(
-        "31 Aralık 2025 tarihinde 280 Gelecek Yıllara Ait Giderler hesabında 300.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına ait olduğu belirlenmiştir.\n\nDönem sonunda yapılması gereken sınıflandırma kaydı hangisidir?",
+        "Bir işletme, yazılım bakım ve sunucu kiralama sözleşmeleri için yaptığı peşin ödemelerin bir yıldan sonraki dönemlere düşen kısmını 280 Gelecek Yıllara Ait Giderler hesabında izlemektedir. 31 Aralık 2025 tarihinde 280 hesabında 300.000 ₺ bulunmaktadır. İncelemede bu tutarın 120.000 ₺'lik kısmının 2026 yılına ait olduğu belirlenmiştir.\n\nDönem sonunda yapılması gereken sınıflandırma kaydı hangisidir?",
         {
             'A': '280 Gelecek Yıllara Ait Giderler 120.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 120.000 ₺ alacak',
             'B': '280 Gelecek Yıllara Ait Giderler 180.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 180.000 ₺ alacak',
@@ -639,7 +639,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0044': patch(
-        "Stoklarını aralıklı envanter yöntemiyle izleyen işletmede dönem sonunda 153 Ticari Mallar hesabının borç toplamı 720.000 ₺, alacak toplamı 70.000 ₺ ve fiilî stok tutarı 250.000 ₺'dir. Fire bulunmamaktadır.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
+        "Stoklarını aralıklı envanter yöntemiyle izleyen bir ticaret işletmesinde dönem sonunda 153 Ticari Mallar hesabının borç toplamı (dönem başı stok ve alışlar) 720.000 ₺, alacak toplamı (alış iadeleri ve iskontoları) 70.000 ₺, sayımla belirlenen fiilî stok tutarı 250.000 ₺'dir. Fire bulunmamaktadır.\n\nSatılan ticari malların maliyeti kaç ₺'dir?",
         {
             'A': '250.000',
             'B': '400.000',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0047': patch(
-        "Gelir hesaplarının alacak toplamı 700.000 ₺, gider ve maliyet hesaplarının borç toplamı 520.000 ₺'dir. Tüm gelir ve gider hesapları 690 Dönem Kârı veya Zararı hesabına devredilmiştir.\n\nDevir işlemleri sonunda 690 hesabın durumu nedir?",
+        'Bir hizmet işletmesinde dönem sonu envanter ve değerleme kayıtları tamamlandıktan sonra gelir hesaplarının alacak toplamı 700.000 ₺, gider ve maliyet hesaplarının borç toplamı 520.000 ₺ bulunmuştur. Tüm gelir ve gider hesapları 690 Dönem Kârı veya Zararı hesabına devredilmiştir.\n\nDevir işlemleri sonunda 690 hesabın durumu nedir?',
         {
             'A': '1.220.000 ₺ alacak kalanı verir.',
             'B': '520.000 ₺ borç kalanı verir.',
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        'İşletme 1 Temmuz 2025 tarihinde 30 aylık sigorta için 300.000 ₺ peşin ödemiştir. Aylık sigorta tutarları eşittir.\n\n31 Aralık 2025 tarihinde giderleştirilmemiş tutarın kısa ve uzun vadeli dağılımı nedir?',
+        "Bir ticaret işletmesi 1 Temmuz 2025 tarihinde deposu ve stokları için 30 aylık yangın ve hırsızlık sigortası yaptırmış, poliçe bedeli olan 300.000 ₺'yi peşin ödemiştir. Aylık sigorta tutarları eşittir; sigorta gideri genel yönetim gideri olarak izlenmektedir.\n\n31 Aralık 2025 tarihinde giderleştirilmemiş tutarın kısa ve uzun vadeli dağılımı nedir?",
         {
             'A': '280 Gelecek Yıllara Ait Giderler 240.000 ₺; kısa vadeli tutar yoktur.',
             'B': '180 Gelecek Aylara Ait Giderler 240.000 ₺; uzun vadeli tutar yoktur.',
@@ -723,7 +723,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "İşletmenin 20.000 $ tutarındaki ticari borcu işlem tarihinde 1 $ = 32 ₺ kuru üzerinden 640.000 ₺ olarak kaydedilmiştir. Dönem sonu değerleme kuru 1 $ = 34 ₺'dir. Borç henüz ödenmemiştir.\n\nDönem sonu değerleme kaydı hangisidir?",
+        "Bir ithalatçı işletme, ABD'deki satıcısından veresiye aldığı mallar nedeniyle 20.000 $ tutarındaki ticari borcunu işlem tarihinde 1 $ = 32 ₺ kuru üzerinden 640.000 ₺ olarak kaydetmiştir. Dönem sonunda değerlemede kullanılacak kur 1 $ = 34 ₺'dir. Borcun vadesi izleyen dönemdedir ve henüz ödenmemiştir.\n\nDönem sonu değerleme kaydı hangisidir?",
         {
             'A': '320 Satıcılar 40.000 ₺ borç / 646 Kambiyo Kârları 40.000 ₺ alacak',
             'B': '656 Kambiyo Zararları 680.000 ₺ borç / 320 Satıcılar 680.000 ₺ alacak',

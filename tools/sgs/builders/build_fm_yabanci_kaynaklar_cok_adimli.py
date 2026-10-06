@@ -65,7 +65,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        "İşletme 1 Mart'ta, 18 ay sonra teslim edeceği özel üretim makine için müşteriden avans almış ve tutarı 440 Alınan Sipariş Avansları hesabına kaydetmiştir. 31 Aralık'ta teslimata dokuz ay kalmıştır. Tekdüzen Hesap Planı'na göre hangi aktarma yapılır?",
+        "Bir tersane 1 Mart'ta, 18 ay sonra teslim edeceği özel yapım bir tekne için müşterisinden 250.000 ₺ avans almış ve tutarı 440 Alınan Sipariş Avansları hesabına kaydetmiştir. Üretim planlandığı gibi sürmektedir; 31 Aralık'ta teslimata dokuz ay kalmıştır.\n\nTekdüzen Hesap Planı'na göre dönem sonunda hangi aktarma yapılır?",
         {
             'A': '102 Bankalar borçlandırılır, 340 Alınan Sipariş Avansları alacaklandırılır.',
             'B': '340 Alınan Sipariş Avansları borçlandırılır, 440 Alınan Sipariş Avansları alacaklandırılır.',
@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        "İşletmenin vergi öncesi dönem kârı 500.000 ₺, soruda uygulanacağı belirtilen vergi oranı %25 ve yıl içinde peşin ödediği vergi 70.000 ₺'dir. Dönem sonu kayıtlarından sonra finansal durum tablosunda net vergi karşılığı kaç ₺ görünür?",
+        "Bir anonim şirketin vergi öncesi dönem kârı 500.000 ₺'dir; kanunen kabul edilmeyen gider ve indirim bulunmamaktadır. Soruda uygulanacağı belirtilen vergi oranı %25'tir. Şirket yıl içinde geçici vergi olarak toplam 70.000 ₺ peşin vergi ödemiştir.\n\nDönem sonu kayıtlarından sonra finansal durum tablosunda net vergi karşılığı kaç ₺ görünür?",
         {
             'A': '70.000 ₺; peşin ödenen vergiler yükümlülük sayılır.',
             'B': '0 ₺; peşin vergi ödendiğinde dönem kârı için karşılık ayrılmaz.',
@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        'İşletmenin daha önce ihraç ettiği 300.000 ₺ nominal değerli hisse senedine dönüştürülebilir tahvillerin tamamı, sözleşme koşullarına uygun olarak sermaye payına dönüştürülmüştür. Basitleştirilmiş Tekdüzen Hesap Planı kaydı hangisidir?',
+        "Bir anonim şirket üç yıl önce 300.000 ₺ nominal değerli, hisse senedine dönüştürülebilir tahvilleri nominal değeriyle ihraç etmiş ve tutarı 405 Çıkarılmış Tahviller hesabına kaydetmiştir. Bu yıl tahvil sahiplerinin tamamı dönüştürme hakkını kullanmış; tahviller sözleşme koşullarına uygun olarak eşit nominal değerli paylara dönüştürülmüştür.\n\nBu dönüşümün Tekdüzen Hesap Planı'na göre kaydı hangisidir?",
         {
             'A': '500 Sermaye 300.000 borç; 405 Çıkarılmış Tahviller 300.000 alacak',
             'B': '405 Çıkarılmış Tahviller 300.000 borç; 500 Sermaye 300.000 alacak',
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Nominal değeri 200.000 ₺ olan borç senedi önceki dönem sonunda 10.000 ₺ reeskonta tabi tutulmuştur. Yeni dönem başında reeskont ters çevrilmiş, senet vadesinde bankadan ödenmiştir. Vade ödeme kaydıyla ilgili hangisi doğrudur?',
+        'Bir ticaret işletmesinin satıcısına verdiği 200.000 ₺ nominal değerli, dört ay vadeli borç senedi önceki dönem sonunda değerlemeye tabi tutulmuş ve 10.000 ₺ reeskont ayrılmıştır. Yeni dönem başında bu reeskont ters kayıtla kapatılmış, senet vade tarihinde nominal değeri üzerinden bankadan ödenmiştir.\n\nVade tarihindeki ödeme kaydıyla ilgili hangisi doğrudur?',
         {
             'A': '321 Borç Senetleri tasarruf değeri olan 190.000 ₺ kadar borçlandırılır.',
             'B': '322 Borç Senetleri Reeskontu 10.000 borçlandırılır; 102 Bankalar 10.000 alacaklandırılır.',
@@ -219,7 +219,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0014': patch(
-        'İşletme 100.000 ₺ + 20.000 ₺ KDV tutarındaki malı müşteriye teslim etmiştir. Müşteriden daha önce alınan 30.000 ₺ avans mahsup edilmiş, kalan 90.000 ₺ banka yoluyla tahsil edilmiştir. Satış kaydı hangisidir?',
+        'Bir mobilya üreticisi, iki ay önce sipariş alırken müşterisinden 30.000 ₺ avans tahsil etmiştir. Bu ay 100.000 ₺ + 20.000 ₺ KDV tutarındaki mobilyalar müşteriye teslim edilmiş ve faturası düzenlenmiştir. Avans fatura bedelinden mahsup edilmiş, kalan 90.000 ₺ banka yoluyla tahsil edilmiştir.\n\nTeslim tarihindeki satış kaydı hangisidir?',
         {
             'A': '340 Alınan Sipariş Avansları 30.000 borç; 600 Yurt İçi Satışlar 30.000 alacak',
             'B': '340 Alınan Sipariş Avansları 30.000 ve 102 Bankalar 90.000 borç; 600 Yurt İçi Satışlar 100.000 ve 391 Hesaplanan KDV 20.000 alacak',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Bir personelin brüt ücreti 50.000 ₺, ücretinden kesilen SGK işçi payı 7.500 ₺, gelir ve damga vergisi toplamı 5.000 ₺, işletmenin SGK işveren payı 10.000 ₺'dir. Ücret tahakkukunda doğru hesap tutarları hangisidir?",
+        "Bir üretim işletmesinin muhasebe bölümünde çalışan bir personelin aylık bordrosuna göre brüt ücreti 50.000 ₺'dir. Ücretten kesilen SGK işçi payı 7.500 ₺, gelir vergisi ve damga vergisi toplamı 5.000 ₺, işletmenin üstlendiği SGK işveren payı 10.000 ₺'dir. Ücret ay sonunda ödenecektir.\n\nÜcret tahakkukunda doğru hesap tutarları hangisidir?",
         {
             'A': '335 Personele Borçlar 27.500; 360 Ödenecek Vergi ve Fonlar 5.000; 361 Ödenecek Sosyal Güvenlik Kesintileri 27.500',
             'B': '335 Personele Borçlar 37.500; 360 Ödenecek Vergi ve Fonlar 12.500; 361 Ödenecek Sosyal Güvenlik Kesintileri 10.000',
@@ -261,7 +261,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0017': patch(
-        'İşletme bankadan bir yıl vadeli 500.000 ₺ kredi kullanmıştır. Banka 2.000 ₺ dosya masrafını keserek kalan tutarı işletmenin vadesiz hesabına aktarmıştır. Buna göre kredi kullanım kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir ticaret işletmesi işletme sermayesi ihtiyacı için bankadan bir yıl vadeli, anapara ve faizi vade sonunda ödenecek 500.000 ₺ kredi kullanmıştır. Banka kredi tutarından 2.000 ₺ dosya masrafını keserek kalan tutarı işletmenin vadesiz hesabına aktarmıştır.\n\nBuna göre kredi kullanım kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '300 Banka Kredileri hesabı 498.000 ₺ alacaklandırılır',
             'B': '102 Bankalar hesabı 500.000 ₺ borçlandırılır',
@@ -275,7 +275,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0018': patch(
-        "İşletme satıcısına olan 30.000 ₺ senetsiz borcunu kapatmak için 12.000 ₺'lik bir bono düzenleyip vermiş, kalan 18.000 ₺ için de portföyündeki bir müşteri senedini ciro etmiştir. Buna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+        "İşletme bir satıcısından veresiye aldığı mallardan doğan 30.000 ₺ senetsiz borcunu kapatmak için satıcıyla anlaşmıştır. Borcun 12.000 ₺'si için işletme üç ay vadeli bir bono düzenleyip satıcıya vermiş, kalan 18.000 ₺ için de portföyündeki iki ay vadeli bir müşteri senedini satıcıya ciro etmiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
         {
             'A': '320 (borç) 30.000 / 121 (alacak) 12.000 + 321 (alacak) 18.000',
             'B': '320 (borç) 30.000 / 103 (alacak) 12.000 + 121 (alacak) 18.000',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        'Makine üreten bir işletme, 14 ay sonra teslim edeceği özel bir makine için müşterisinden 300.000 ₺ avans almıştır. Makine teslim edildiğinde avans satış bedelinden düşülecektir.\n\nAlınan sipariş avanslarıyla ilgili aşağıdakilerden hangisi yanlıştır?',
+        'Makine üreten bir işletme, 14 ay sonra teslim edeceği özel bir makine için müşterisiyle 900.000 ₺ + KDV bedelli sözleşme imzalamış ve sözleşme gereği 300.000 ₺ avansı banka yoluyla tahsil etmiştir. Makine teslim edildiğinde avans satış bedelinden düşülecek, kalan tutar teslimde tahsil edilecektir.\n\nAlınan sipariş avanslarıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': "Avans 340'ın alacağına yazılır",
             'B': "Teslim bir yıldan sonra olacaksa avans 440'ta izlenir",
@@ -303,7 +303,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0020': patch(
-        "İşletme 1 Mart 2025'te bankadan bir yıl vadeli, yıllık %36 basit faizli 600.000 ₺ kredi kullanmıştır. Faiz ve anapara vade sonunda ödenecektir. Buna göre 31 Aralık 2025'te tahakkuk ettirilecek faiz gideri kaç ₺'dir?",
+        "Bir ticaret işletmesi stok finansmanı için 1 Mart 2025'te bankadan bir yıl vadeli, yıllık %36 basit faizli 600.000 ₺ kredi kullanmıştır. Faiz ve anapara vade sonunda tek seferde ödenecektir. İşletmenin hesap dönemi takvim yılıdır.\n\nBuna göre 31 Aralık 2025'te tahakkuk ettirilecek faiz gideri kaç ₺'dir?",
         {
             'A': '180.000 ₺',
             'B': '216.000 ₺',
@@ -387,7 +387,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'Banker ve sigorta şirketi olmayan bir işletme, VUK kapsamında vadesi gelmemiş senetli alacaklarını dönem sonunda tasarruf değeriyle değerlemeyi seçmiştir. Aynı nitelikte vadesi gelmemiş borç senetleri de bulunmaktadır. Hangisi doğrudur?',
+        'Banker ve sigorta şirketi olmayan bir toptancı, VUK kapsamında vadesi gelmemiş senetli alacaklarını dönem sonunda tasarruf değeriyle değerlemeyi seçmiştir. Portföyünde 400.000 ₺ alacak senedi, ayrıca satıcılarına verdiği aynı nitelikte 250.000 ₺ vadesi gelmemiş borç senedi bulunmaktadır.\n\nBu değerlemeyle ilgili hangisi doğrudur?',
         {
             'A': 'Borç senetleri reeskontu uygulanırsa alacak senetlerinde reeskont yapılması yasaktır.',
             'B': 'Senette faiz oranı yazmıyorsa işletmenin tahmin ettiği herhangi bir oran kullanılabilir.',
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "İşletme 10.000 ABD doları tutarındaki banka kredisini işlem tarihindeki 1 ABD doları = 32 ₺ kuruyla kaydetmiştir. Raporlama tarihinde kur 34 ₺'dir. Ödeme yapılmamış ve korunma muhasebesi uygulanmamıştır. TMS 21'e göre dönem sonu işlemi hangisidir?",
+        "Bir ithalatçı işletme 10.000 ABD doları tutarındaki iki yıl vadeli banka kredisini, kullandığı tarihteki 1 ABD doları = 32 ₺ kuruyla kaydetmiştir. Raporlama tarihinde kapanış kuru 34 ₺'dir. Kredinin henüz hiçbir taksiti ödenmemiş ve korunma muhasebesi uygulanmamıştır.\n\nTMS 21'e göre dönem sonu işlemi hangisidir?",
         {
             'A': "Kredi 300.000 ₺'ye indirilir ve 20.000 ₺ kambiyo kârı muhasebeleştirilir.",
             'B': "Kredi 340.000 ₺'ye çıkarılır; 20.000 ₺ fark 780 Finansman Giderlerine değil 102 Bankalara kaydedilir.",
@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        'İşletmenin 100.000 ₺ nominal değerli borç senedinin vadesi gelmiştir. Alacaklıyla anlaşarak borç üç ay vadeli yeni bir senede bağlanmış, 5.000 ₺ finansman faizi yeni senedin tutarına eklenmiştir. Doğru kayıt hangisidir?',
+        'İşletmenin bir satıcısına verdiği 100.000 ₺ nominal değerli borç senedinin vadesi gelmiş, ancak işletme nakit sıkışıklığı nedeniyle ödeme yapamamıştır. Alacaklıyla anlaşılarak borç üç ay vadeli yeni bir senede bağlanmış, 5.000 ₺ finansman faizi yeni senedin tutarına eklenmiştir.\n\nDoğru kayıt hangisidir?',
         {
             'A': '321 Borç Senetleri 105.000 borç; 100 Kasa 5.000 ve 321 Borç Senetleri 100.000 alacak',
             'B': '320 Satıcılar 100.000 ve 780 Finansman Giderleri 5.000 borç; 321 Borç Senetleri 105.000 alacak',
@@ -639,7 +639,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        'İşletme 300.000 ₺ tutarındaki ticari malı iki yıl vadeli borçlanarak satın almıştır. KDV ve vade farkı ihmal edilmektedir.\n\nBu işlemin işlem anındaki etkisiyle ilgili aşağıdakilerden hangisi yanlıştır?',
+        'Bir ticaret işletmesi 300.000 ₺ tutarındaki ticari malı, bedeli iki yıl sonra tek seferde ödenmek üzere satıcıdan borçlanarak satın almış ve depoya almıştır. Bu borç için senet düzenlenmemiştir; KDV ve vade farkı ihmal edilmektedir.\n\nBu işlemin işlem anındaki etkisiyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Varlıklar 300.000 ₺ artar',
             'B': 'Yabancı kaynaklar 300.000 ₺ artar',
@@ -765,7 +765,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        'İşletme, üç ay sonra teslim edeceği ürün için müşteriden 60.000 ₺ tahsil etmiştir. Ürün henüz teslim edilmemiş ve gelir için edim yükümlülüğü yerine getirilmemiştir. En uygun değerlendirme hangisidir?',
+        'Bir donanım satıcısı, üç ay sonra teslim edeceği özel yapım sunucu dolapları için müşterisinden sözleşme bedelinin bir kısmı olarak 60.000 ₺ tahsil etmiştir. Ürünler henüz üretim aşamasındadır; teslim gerçekleşmediği için edim yükümlülüğü yerine getirilmemiştir.\n\nBu tahsilatla ilgili en uygun değerlendirme hangisidir?',
         {
             'A': 'Nakit tahsil edildiği anda 600 Yurt İçi Satışlar hesabına gelir yazılır ve borç doğmaz.',
             'B': 'Tahsilat 340 Alınan Sipariş Avanslarında bir yükümlülük olarak izlenir; teslimden önce satış geliri kaydedilmez.',
@@ -779,7 +779,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0054': patch(
-        'Vergi beyannamesinin verilmesi sırasında 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabında 150.000 ₺, bunu düzenleyen 371 hesabında 110.000 ₺ bulunmaktadır. Net vergi borcunun 360 hesaba aktarım kaydı hangisidir?',
+        'Bir anonim şirketin dönem kârı üzerinden hesapladığı 150.000 ₺ vergi, 370 Dönem Kârı Vergi ve Diğer Yasal Yükümlülük Karşılıkları hesabında izlenmektedir. Yıl içinde ödenen geçici vergiler toplamı 110.000 ₺ olup bunu düzenleyen 371 hesabında bulunmaktadır. Kurumlar vergisi beyannamesi verilmiştir.\n\nNet vergi borcunun 360 hesaba aktarım kaydı hangisidir?',
         {
             'A': '370 hesabı 150.000 borç; 371 hesabı 110.000 ve 360 hesabı 40.000 alacak',
             'B': '193 hesabı 110.000 borç; 360 hesabı 110.000 alacak',
@@ -821,7 +821,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        "İşletme vadesi gelen 200.000 ₺ banka kredisini 18.000 ₺ faiziyle birlikte bankadan ödemiştir. Faizin 12.000 ₺'lik kısmı önceki dönem sonunda 381 Gider Tahakkukları hesabına alınmıştı. Buna göre ödeme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir işletme vadesi gelen bir yıl vadeli 200.000 ₺ banka kredisini 18.000 ₺ faiziyle birlikte bankadan ödemiştir. Kredi önceki dönemin Mayıs ayı başında kullanılmış; faizin önceki döneme düşen 12.000 ₺'lik kısmı dönem sonunda 381 Gider Tahakkukları hesabına alınmıştı.\n\nBuna göre ödeme kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '300 Banka Kredileri hesabı 218.000 ₺ borçlandırılır',
             'B': '381 Gider Tahakkukları hesabı 18.000 ₺ borçlandırılır',

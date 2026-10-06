@@ -163,7 +163,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        'Ortak, daha önce kaydedilmiş 400.000 ₺ tutarındaki ayni sermaye taahhüdünü, işletmede kullanılacak ve bu değer üzerinden kabul edilen bir makineyi teslim ederek yerine getirmiştir.\n\nTeslim kaydı hangisidir?',
+        'Bir anonim şirketin kuruluşunda ortaklardan biri sermaye payına karşılık 400.000 ₺ tutarında ayni sermaye taahhüt etmiş ve taahhüt kayda alınmıştır. Ortak, bilirkişi raporuyla bu değer üzerinden kabul edilen ve şirketin üretim hattında kullanılacak bir makineyi teslim ederek taahhüdünü yerine getirmiştir.\n\nTeslim kaydı hangisidir?',
         {
             'A': '253 Tesis, Makine ve Cihazlar borç / 500 Sermaye alacak',
             'B': '253 Tesis, Makine ve Cihazlar borç / 501 Ödenmemiş Sermaye alacak',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        'Aşağıdaki ifadelerden hangileri doğrudur?\n\nI. 580 Geçmiş Yıllar Zararları bilançoda özkaynaklarda pozitif tutar olarak gösterilir.\n\nII. 331 Ortaklara Borçlar bir yabancı kaynak hesabıdır.\n\nIII. 591 Dönem Net Zararı özkaynakları artırır.',
+        'Bir anonim şirketin stajyer muhasebecisi, bilanço hazırlığı sırasında özkaynak ve yabancı kaynak hesaplarının sınıflandırılmasıyla ilgili aşağıdaki notları almıştır:\n\nI. 580 Geçmiş Yıllar Zararları bilançoda özkaynaklarda pozitif tutar olarak gösterilir.\n\nII. 331 Ortaklara Borçlar bir yabancı kaynak hesabıdır.\n\nIII. 591 Dönem Net Zararı özkaynakları artırır.\n\nBu notlardan hangileri doğrudur?',
         {
             'A': 'I ve III',
             'B': 'II ve III',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0027': patch(
-        "Sermaye taahhüdünü yerine getirmeyen ortağın 800.000 ₺ nominal değerli payları iptal edilmiş; aynı nominal tutarlı yeni paylar 900.000 ₺'ye başka bir ortağa satılmıştır. Aradaki 100.000 ₺ fark hangi hesapta izlenir?",
+        "Bir anonim şirkette sermaye taahhüdünü süresinde yerine getirmeyen bir ortağın 800.000 ₺ nominal değerli payları, esas sözleşme ve kanun hükümlerine göre iptal edilmiştir. Aynı nominal tutarlı yeni paylar 900.000 ₺'ye başka bir yatırımcıya satılmış ve bedel bankaya yatırılmıştır.\n\nAradaki 100.000 ₺ fark hangi hesapta izlenir?",
         {
             'A': '542 Olağanüstü Yedekler',
             'B': '590 Dönem Net Kârı',
@@ -415,7 +415,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Şirketin 300.000 ₺ sermaye azaltımı tescil edilmiş ve ortaklara ödenecek tutar 331 Ortaklara Borçlar hesabına aktarılmıştır. Tutar daha sonra şirketin banka hesabından ödenmiştir.\n\nÖdeme tarihinde yapılacak kayıt hangisidir?',
+        'Faaliyetlerini küçültmeye karar veren bir anonim şirkette genel kurul 300.000 ₺ sermaye azaltımına karar vermiş; karar tescil edilmiş ve ortaklara iade edilecek tutar 331 Ortaklara Borçlar hesabına aktarılmıştır. Alacaklılara çağrı süresi dolduktan sonra tutar şirketin banka hesabından ortaklara ödenmiştir.\n\nÖdeme tarihinde yapılacak kayıt hangisidir?',
         {
             'A': '102 Bankalar borç / 331 Ortaklara Borçlar alacak',
             'B': '331 Ortaklara Borçlar borç / 102 Bankalar alacak',
@@ -443,7 +443,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0030': patch(
-        '500 Sermaye hesabı 1.000.000 ₺, 501 Ödenmemiş Sermaye (-) hesabı 200.000 ₺ olan şirkette, henüz ödenmemiş kısım kadar sermaye azaltımı tescil edilmiştir.\n\nAzaltım kaydı ve toplam özkaynak etkisi hangisidir?',
+        '500 Sermaye hesabı 1.000.000 ₺, 501 Ödenmemiş Sermaye (-) hesabı 200.000 ₺ olan bir anonim şirkette, ortaklardan tahsil edilmemiş kısım kadar sermaye azaltımına genel kurulca karar verilmiş ve karar tescil edilmiştir. Şirketin dönem içinde başka bir sermaye hareketi yoktur.\n\nAzaltım kaydı ve toplam özkaynak etkisi hangisidir?',
         {
             'A': '501 borç / 500 alacak; toplam özkaynak 200.000 ₺ artar.',
             'B': '501 borç / 331 alacak; toplam özkaynak 200.000 ₺ azalır.',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0036': patch(
-        "Genel kurul, 520 Hisse Senedi İhraç Primleri hesabındaki 150.000 ₺ ile 542 Olağanüstü Yedekler hesabındaki 100.000 ₺'nin sermayeye eklenmesine karar vermiş ve artırım tescil edilmiştir. Buna göre yapılacak kayıt aşağıdakilerden hangisidir?",
+        "Sermayesi 1.000.000 ₺ olan bir anonim şirkette genel kurul, 520 Hisse Senedi İhraç Primleri hesabındaki 150.000 ₺ ile 542 Olağanüstü Yedekler hesabındaki 100.000 ₺'nin sermayeye eklenmesine karar vermiş ve artırım tescil edilmiştir. Yeni paylar mevcut ortaklara payları oranında bedelsiz dağıtılacaktır.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?",
         {
             'A': '102 (borç) 250.000 / 500 (alacak) 250.000',
             'B': '520 (borç) 150.000 + 542 (borç) 100.000 / 500 (alacak) 250.000',
@@ -555,7 +555,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0038': patch(
-        'Bir işletmenin dönem sonunda 690 Dönem Kârı veya Zararı hesabı 500.000 ₺ alacak kalanı vermektedir. Dönem kârı üzerinden 125.000 ₺ vergi karşılığı ayrılmıştır. Dönem sonu kapanış işlemleriyle ilgilire aşağıdakilerden hangisi yanlıştır?',
+        'Bir anonim şirketin dönem sonunda gelir ve gider hesapları kapatıldıktan sonra 690 Dönem Kârı veya Zararı hesabı 500.000 ₺ alacak kalanı vermektedir. Kanunen kabul edilmeyen gider ve indirim bulunmamakta olup dönem kârı üzerinden 125.000 ₺ vergi karşılığı ayrılmıştır.\n\nDönem sonu kapanış işlemleriyle ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': '691 hesabı 125.000 ₺ borçlandırılır',
             'B': '590 hesabı 375.000 ₺ alacaklandırılır',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0042': patch(
-        "Dönem başı özkaynağı 900.000 ₺ olan işletmede dönem içinde ortaklar 120.000 ₺ nakit sermaye koymuş, 180.000 ₺ kapsamlı gelir oluşmuş ve ortaklara 70.000 ₺ kâr payı dağıtılmıştır. Başka özkaynak hareketi yoktur.\n\nDönem sonu özkaynak kaç ₺'dir?",
+        "Dönem başı özkaynağı 900.000 ₺ olan bir limited şirkette dönem içinde ortaklar 120.000 ₺ nakit sermaye koymuş ve bu tutar bankaya yatırılmıştır. Dönemde 180.000 ₺ toplam kapsamlı gelir oluşmuş, geçmiş yıl kârlarından ortaklara 70.000 ₺ kâr payı dağıtılarak ödenmiştir. Başka özkaynak hareketi yoktur.\n\nDönem sonu özkaynak kaç ₺'dir?",
         {
             'A': '1.130.000',
             'B': '1.270.000',
@@ -667,7 +667,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0046': patch(
-        "Ödenmiş sermayesi 1.000.000 ₺, daha önce ayrılmış genel kanuni yedek akçesi 195.000 ₺ ve yıllık kârı 200.000 ₺ olan anonim şirkette, üst sınıra ulaşılıncaya kadar ayrılması gereken I. tertip genel kanuni yedek akçe kaç ₺'dir?",
+        "Ödenmiş sermayesi 1.000.000 ₺ olan bir anonim şirketin geçmiş yıllarda ayırdığı genel kanuni yedek akçesi 195.000 ₺'dir. Şirketin bu yılki kârı 200.000 ₺'dir; esas sözleşmede yedek akçeye ilişkin ayrı bir hüküm bulunmamaktadır.\n\nÜst sınıra ulaşılıncaya kadar ayrılması gereken I. tertip genel kanuni yedek akçe kaç ₺'dir?",
         {
             'A': '5.000',
             'B': '10.000',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        'Şirket, ortaklardan nakden karşılanmak üzere 450.000 ₺ sermaye artırmış; taahhüt ve ödeme işlemleri aynı dönem içinde tamamlanmıştır. İşlem öncesine göre finansal durum tablosundaki değişim hangisidir?',
+        'Bir anonim şirket, yeni bir üretim hattının finansmanı için ortaklardan nakden karşılanmak üzere 450.000 ₺ sermaye artırımı yapmıştır. Taahhüt edilen tutarın tamamı aynı dönem içinde şirketin banka hesabına yatırılmış ve artırım tescil edilmiştir; ihraç primi yoktur.\n\nİşlem öncesine göre finansal durum tablosundaki değişim hangisidir?',
         {
             'A': 'Varlıklar 450.000 ₺ azalır, özkaynak değişmez.',
             'B': 'Varlıklar ve yabancı kaynaklar 450.000 ₺ artar.',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        "Sermayesi 1.500.000 ₺ olan anonim şirket sermayesini %20 artırmıştır. Artırılan sermayeyi temsil eden payların tamamı nominal değerinin %10 fazlasına satılmış ve bedel banka hesabına yatırılmıştır.\n\nBanka hesabına yatırılan toplam tutar kaç ₺'dir?",
+        "Sermayesi 1.500.000 ₺ olan bir anonim şirket, yeni yatırımlarını finanse etmek amacıyla sermayesini nakden %20 artırmıştır. Artırılan sermayeyi temsil eden payların tamamı nominal değerinin %10 fazlasına satılmış ve bedel banka hesabına yatırılmıştır; ihraç masrafları ihmal edilmektedir.\n\nBanka hesabına yatırılan toplam tutar kaç ₺'dir?",
         {
             'A': '150.000',
             'B': '300.000',

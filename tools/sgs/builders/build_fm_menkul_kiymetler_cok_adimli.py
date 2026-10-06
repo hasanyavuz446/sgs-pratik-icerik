@@ -51,7 +51,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0002': patch(
-        "İşletmenin VUK kayıtlarında 2.000.000 ₺ değerle izlenen 1 kilogram külçe altının değerleme günündeki kıymetli madenler borsası rayici 2.300.000 ₺'dir. VUK 274/A'ya göre dönem sonu değeri ve değerleme farkı sırasıyla kaç ₺'dir?",
+        "Nakit fazlasını değerlendirmek isteyen bir ticaret işletmesi 1 kilogram külçe altın satın almış ve VUK kayıtlarında 2.000.000 ₺ değerle izlemektedir. Altın dönem sonunda işletmenin kasasında bulunmaktadır; değerleme günündeki kıymetli madenler borsası rayici 2.300.000 ₺'dir.\n\nVUK 274/A'ya göre dönem sonu değeri ve değerleme farkı sırasıyla kaç ₺'dir?",
         {
             'A': '300.000 ₺ ve 2.000.000 ₺ gelir',
             'B': '2.000.000 ₺ ve 0 ₺',
@@ -79,7 +79,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0004': patch(
-        'İşletmenin uzun vadeli olarak, bir şirkete ortak olup yönetimine katılmak (kontrol/etkinlik) amacıyla edindiği hisse senetleri ile kısa vadeli kâr amacıyla edindiği hisse senetleri sırasıyla hangi hesaplarda izlenir?',
+        "Bir holding şirketi dönem içinde iki ayrı hisse senedi alımı yapmıştır: bir şirketin sermayesinin %25'ini uzun vadede ortak olup yönetimine katılmak (önemli etki) amacıyla edinmiş, borsada işlem gören başka bir şirketin hisselerini ise birkaç ay içinde fiyat artışından yararlanıp satmak amacıyla almıştır.\n\nBu hisse senetleri sırasıyla hangi hesaplarda izlenir?",
         {
             'A': '242 İştirakler – 110 Hisse Senetleri',
             'B': '120 Alıcılar – 110 Hisse Senetleri',
@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        "İşletmenin 100 gram gümüş cinsinden mevduatı vardır. Değerleme gününe kadar 5 gram gümüş faiz tahakkuk etmiş, gümüşün borsa rayici gram başına 30 ₺ olmuştur. VUK 274/A'ya göre faiz dâhil mevduatın değerleme tutarı kaç ₺'dir?",
+        "Bir ticaret işletmesinin bankada 100 gram gümüş cinsinden vadeli mevduatı vardır. Mevduat gümüş cinsinden faiz getirmekte olup değerleme gününe kadar 5 gram gümüş faiz tahakkuk etmiştir. Değerleme gününde gümüşün borsa rayici gram başına 30 ₺'dir.\n\nVUK 274/A'ya göre faiz dâhil mevduatın değerleme tutarı kaç ₺'dir?",
         {
             'A': '3.100 ₺',
             'B': '3.500 ₺',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "İşletme 40.000 ₺'ye aldığı hisse senetleri için dönem sonunda 6.000 ₺ değer düşüklüğü karşılığı ayırmış; izleyen dönem bu hisseleri 37.000 ₺'ye satmıştır. Satış anında ayrılan karşılık ne olur? (Karşılık iptali ayrıca yapılacaktır.)",
+        "Bir işletme kısa vadeli değerlendirme amacıyla 40.000 ₺'ye aldığı borsada işlem gören hisse senetleri için, dönem sonunda borsa değerinin düşmesi nedeniyle 6.000 ₺ değer düşüklüğü karşılığı ayırmıştır. İzleyen dönemde bu hisselerin tamamı 37.000 ₺'ye satılmış ve bedel bankaya yatırılmıştır.\n\nSatış anında ayrılan karşılık ne olur? (Karşılık iptali ayrıca yapılacaktır.)",
         {
             'A': "Ayrılan 6.000 ₺'lik karşılık 654 Karşılık Giderleri hesabına yeniden gider yazılır; satış kâr/zararı ise satış bedeli ile nominal değer farkından bulunur.",
             'B': 'Karşılık (119) konusu kalmadığından iptal edilir (119 / 644); satış kâr/zararı ise satış (37.000) ile kayıtlı maliyet (40.000) farkından belirlenir.',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        "İşletme 90.000 ₺'ye aldığı ve değer düşüklüğü karşılığı ayırmadığı hisse senetlerinin tamamını 82.000 ₺'ye satmış, bedel banka hesabına aktarılmıştır. Buna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "Bir işletme kısa vadeli kâr amacıyla 90.000 ₺'ye aldığı ve değer düşüklüğü karşılığı ayırmadığı borsada işlem gören hisse senetlerinin tamamını, fiyatların düşmeye devam edeceği beklentisiyle 82.000 ₺'ye satmıştır; bedel aracı kurum tarafından banka hesabına aktarılmıştır.\n\nBuna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '655 Menkul Kıymet Satış Zararları hesabı 8.000 ₺ alacaklandırılır',
             'B': '689 Diğer Olağandışı Gider ve Zararlar hesabı 8.000 ₺ borçlandırılır',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        "İşletme, sermayesinin %30'una sahip olduğu ve uzun vadeli olarak elde tuttuğu X A.Ş.'nin genel kurul kararıyla dağıttığı 120.000 ₺ kâr payından payına düşen 36.000 ₺'yi banka hesabına tahsil etmiştir.\n\nBu kâr payı geliri hangi hesaba alacak yazılır?",
+        "Bir işletme, sermayesinin %30'una sahip olduğu ve uzun vadeli olarak elde tuttuğu X A.Ş.'nin genel kurul kararıyla dağıttığı 120.000 ₺ kâr payından payına düşen 36.000 ₺'yi banka hesabına tahsil etmiştir. İşletme X A.Ş.'nin yönetiminde temsil edilmekte, ancak kontrol gücüne sahip bulunmamaktadır.\n\nBu kâr payı geliri hangi hesaba alacak yazılır?",
         {
             'A': '600 Yurt İçi Satışlar',
             'B': '645 Menkul Kıymet Satış Kârları',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'İşletme, kısa vadeli değerlendirme amacıyla 100.000 ₺ nominal bedelli devlet tahvilini banka aracılığıyla peşin satın almıştır (nominal bedelle, komisyon ihmal). Bu işlemin kaydı aşağıdakilerden hangisidir?',
+        'Nakit fazlası bulunan bir işletme, kısa vadeli değerlendirme amacıyla 100.000 ₺ nominal bedelli ve 9 ay vadeli devlet tahvilini banka aracılığıyla nominal bedelle peşin satın almıştır (komisyon ihmal). Tahvil vadesinde faiziyle birlikte itfa edilecektir.\n\nBu işlemin kaydı aşağıdakilerden hangisidir?',
         {
             'A': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 100.000 / 642 Faiz Gelirleri (alacak) 100.000',
             'B': '112 Kamu Kesimi Tahvil, Senet ve Bonoları (borç) 100.000 / 102 Bankalar (alacak) 100.000',
@@ -639,7 +639,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0044': patch(
-        "İşletmenin 100 gram altın cinsinden senetsiz alacağı kayıtlarda 300.000 ₺'dir. Değerleme gününde altının borsa rayici gram başına 3.200 ₺'dir. VUK 274/A'ya göre alacağın dönem sonu değeri ve olumlu değerleme farkı sırasıyla kaç ₺'dir?",
+        "Bir kuyum toptancısına mal satan bir işletmenin, müşterisinden 100 gram altın cinsinden senetsiz alacağı bulunmakta ve bu alacak kayıtlarda 300.000 ₺ ile izlenmektedir. Değerleme gününde altının borsa rayici gram başına 3.200 ₺'dir.\n\nVUK 274/A'ya göre alacağın dönem sonu değeri ve olumlu değerleme farkı sırasıyla kaç ₺'dir?",
         {
             'A': '300.000 ₺ ve 0 ₺',
             'B': '20.000 ₺ ve 300.000 ₺',
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "Portföyünün önemli bölümü Türkiye'de kurulmuş şirketlerin hisse senetlerinden oluşan yatırım fonu katılma belgeleri, işletme tarafından kısa vadeli değerlendirme amacıyla alınmışsa hangi hesapta izlenir?",
+        "Bir işletme nakit fazlasını değerlendirmek için kısa vadeli olarak bir portföy yönetim şirketinin kurduğu yatırım fonuna ait katılma belgelerini satın almıştır. Fonun portföyünün önemli bölümü Türkiye'de kurulmuş şirketlerin hisse senetlerinden oluşmaktadır.\n\nBu katılma belgeleri hangi hesapta izlenir?",
         {
             'A': '118 Diğer Menkul Kıymetler',
             'B': '112 Kamu Kesimi Tahvil, Senet ve Bonoları',
@@ -723,7 +723,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0050': patch(
-        "İşletmenin dönem sonu itibarıyla 110 Hisse Senetleri 200.000 ₺, 112 Kamu Kesimi Tahvil, Senet ve Bonoları 100.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺'dir. Menkul kıymetlerin bilançodaki net tutarı kaç ₺'dir?",
+        "Bir işletmenin dönem sonu mizanında 110 Hisse Senetleri 200.000 ₺, 112 Kamu Kesimi Tahvil, Senet ve Bonoları 100.000 ₺ ve 119 Menkul Kıymetler Değer Düşüklüğü Karşılığı 15.000 ₺ kalanları bulunmaktadır. Karşılık, borsa değeri maliyetinin altına düşen hisse senetleri için ayrılmıştır.\n\nMenkul kıymetlerin bilançodaki net tutarı kaç ₺'dir?",
         {
             'A': '185.000',
             'B': '315.000',

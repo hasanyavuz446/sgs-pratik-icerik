@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        "Bir yazılımın dönem başı defter değeri 180.000 ₺, kalıntı değeri sıfırdır. Teknolojik gelişmeler nedeniyle kalan yararlı ömür 3 yıl olarak revize edilmiştir. TMS 38 ve TMS 8'e göre cari yıl itfa payı kaç ₺ olur ve değişiklik nasıl uygulanır?",
+        "Bir lojistik şirketinin depo yönetim yazılımının dönem başı defter değeri 180.000 ₺, kalıntı değeri sıfırdır ve yazılım eşit tutarlarla itfa edilmektedir. Sektöre yeni bulut tabanlı sistemlerin girmesi nedeniyle yönetim, dönem başında yazılımın kalan yararlı ömrünü 5 yıldan 3 yıla indirmiştir.\n\nTMS 38 ve TMS 8'e göre cari yıl itfa payı kaç ₺ olur ve değişiklik nasıl uygulanır?",
         {
             'A': '180.000 ₺; geçmiş dönemlere geriye dönük',
             'B': '90.000 ₺; geçmiş yıllar düzeltilerek',
@@ -331,7 +331,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        "İşletme, kendi markasının tanınırlığını artırmak için 400.000 ₺ reklam harcaması yapmış ve marka değerinin yükseldiğini güvenilir bir değerleme raporuyla ileri sürmüştür. TMS 38'e göre nasıl işlem yapılır?",
+        "Bir kozmetik üreticisi, kendi geliştirdiği markanın tanınırlığını artırmak için yıl boyunca televizyon ve dijital mecralarda toplam 400.000 ₺ reklam harcaması yapmıştır. Yönetim, yıl sonunda aldığı bağımsız değerleme raporuna dayanarak marka değerinin yükseldiğini ileri sürmekte ve bunun finansal tablolara yansıtılmasını istemektedir.\n\nTMS 38'e göre nasıl işlem yapılır?",
         {
             'A': 'Aktif piyasa bulunup bulunmadığı araştırılmadan, değerleme raporundaki tahmini marka artışının tamamı diğer kapsamlı gelire ve özkaynağa alınır.',
             'B': 'İşletme içi yaratılan marka aktifleştirilmez; reklam harcaması gerçekleştiğinde gider yazılır.',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        "İşletme, satın aldığı benzersiz bir markayı dönem sonunda bağımsız değerleme raporundaki gerçeğe uygun değerine yükseltmek istemektedir. Marka için aktif piyasa bulunmamaktadır. TMS 38'e göre doğru işlem hangisidir?",
+        "Bir gıda işletmesi iki yıl önce başka bir şirketten 600.000 ₺'ye benzersiz bir marka satın almıştır. Dönem sonunda alınan bağımsız değerleme raporu markanın gerçeğe uygun değerini 900.000 ₺ olarak göstermekte, yönetim markayı bu tutara yükseltmek istemektedir. Marka için aktif piyasa bulunmamaktadır.\n\nTMS 38'e göre doğru işlem hangisidir?",
         {
             'A': 'Marka finansal tablo dışı bırakılır.',
             'B': 'Artış 261 Şerefiye hesabına aktarılır.',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        'İşletme, kendi mülkiyetindeki yönetim binasına binanın ekonomik ömrünü uzatan ve değerini artıran 250.000 ₺ tutarında asansör ve dış cephe yalıtımı yaptırmıştır. Bina kiralanmış değildir.\n\nBu kalıcı değer artırıcı harcama nasıl muhasebeleştirilir?',
+        'Bir sigorta şirketi, kendi mülkiyetindeki ve 20 yıl önce inşa edilen yönetim binasına, binanın ekonomik ömrünü uzatan ve değerini artıran 250.000 ₺ tutarında asansör ve dış cephe yalıtımı yaptırmıştır. Bina kiralanmış değildir; bedel yükleniciye bankadan ödenmiştir.\n\nBu kalıcı değer artırıcı harcama nasıl muhasebeleştirilir?',
         {
             'A': 'Harcama işletmeye bir hak sağladığından 260 Haklar hesabına kaydedilir ve yasal koruma süresi boyunca eşit tutarlarla itfa edilir.',
             'B': "Değer artışı işletmeye üstünlük sağladığından 261 Şerefiye hesabına kaydedilir ve VUK'a göre 5 yılda eşit tutarlarla itfa edilir.",
@@ -415,7 +415,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        "İşletme, aktif piyasası bulunan üretim kotalarında yeniden değerleme modelini uygulamaktadır. Aynı sınıftaki yalnız değeri yükselen iki kotayı yeniden değerlemek istemektedir. TMS 38'e göre doğru işlem hangisidir?",
+        "Bir tarım işletmesi, aktif piyasası bulunan ve alınıp satılabilen üretim kotalarını yeniden değerleme modeliyle izlemektedir. Dönem sonunda aynı sınıftaki beş kotadan ikisinin piyasa değeri yükselmiş, üçünün değeri ise düşmüştür. Yönetim yalnız değeri yükselen iki kotayı yeniden değerlemek istemektedir.\n\nTMS 38'e göre doğru işlem hangisidir?",
         {
             'A': 'Seçici uygulama yapılamaz; aktif piyasası bulunan ilgili sınıftaki varlıklar aynı yöntemle ve eş zamanlı değerlenir.',
             'B': 'Bütün kotalar stok hesabına aktarılır.',
@@ -471,7 +471,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0032': patch(
-        "İşletme, kendi pazarlama faaliyetleriyle oluşturduğu müşteri listesinin gelecekte gelir sağlayacağını öngörmektedir. Liste sözleşmeye veya devredilebilir bir hakka dayanmamaktadır. TMS 38'e göre nasıl işlem yapılır?",
+        "Bir e-ticaret şirketi, yıllar içinde kendi pazarlama faaliyetleri ve kampanyalarıyla 50.000 kişilik bir müşteri listesi oluşturmuştur. Yönetim bu listenin gelecekte önemli gelir sağlayacağını öngörmektedir; ancak liste herhangi bir sözleşmeye veya devredilebilir bir hakka dayanmamaktadır.\n\nTMS 38'e göre nasıl işlem yapılır?",
         {
             'A': 'Yönetim kurulu gelecekteki müşteri gelirlerini güvenilir bir bütçeyle tahmin ettiği anda, ayrılabilirlik veya kontrol koşulu aranmaksızın bu tahmini tutarla aktifleştirilir.',
             'B': 'İşletme içi yaratılan müşteri listesi maddi olmayan duran varlık olarak muhasebeleştirilmez.',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0036': patch(
-        "İşletme sekiz yıllığına kiraladığı fabrika binasına, kira süresi sonunda mal sahibine kalacak 240.000 ₺ tutarında kalıcı tesisat harcaması yapmış ve 264 Özel Maliyetler hesabında aktifleştirmiştir. Buna göre yıllık itfa payı kaç ₺'dir?",
+        "Bir mobilya üreticisi sekiz yıllığına kiraladığı fabrika binasına, sökülmesi mümkün olmayan ve kira süresi sonunda mal sahibine kalacak 240.000 ₺ tutarında elektrik ve havalandırma tesisatı yaptırmış, harcamayı 264 Özel Maliyetler hesabında aktifleştirmiştir. Tesisatın teknik ömrü 15 yıl olarak tahmin edilmektedir.\n\nBuna göre yıllık itfa payı kaç ₺'dir?",
         {
             'A': '48.000 ₺',
             'B': '30.000 ₺',
@@ -569,7 +569,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0039': patch(
-        'İşletme muhasebe biriminde kullanmak üzere bir yazılımın üç yıllık kullanım lisansını 90.000 ₺ + %20 KDV bedelle banka havalesiyle satın almıştır. Buna göre alış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
+        'Bir ticaret işletmesi muhasebe biriminde kullanmak üzere bir muhasebe yazılımının üç yıllık kullanım lisansını 90.000 ₺ + %20 KDV bedelle satın almış, bedeli banka havalesiyle ödemiştir. Yazılımın kurulumu yazılım firması tarafından ücretsiz yapılmıştır.\n\nBuna göre alış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '770 Genel Yönetim Giderleri hesabı 90.000 ₺ borçlandırılır',
             'B': '260 Haklar hesabı 108.000 ₺ borçlandırılır',
@@ -583,7 +583,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0040': patch(
-        "İşletmenin kiraladığı binaya yaptığı özel maliyetin yıllık itfa payı 50.000 ₺'dir. Binanın %70'i üretimde, %30'u yönetim işlerinde kullanılmaktadır (7/A seçeneği). Buna göre itfa kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "7/A seçeneğini uygulayan bir üretim işletmesi kiraladığı binaya yaptığı özel maliyet için yıllık 50.000 ₺ itfa payı ayırmaktadır. Binanın %70'i üretim bölümünce, %30'u yönetim birimlerince kullanılmaktadır; itfa payı kullanım oranlarına göre dağıtılmaktadır.\n\nBuna göre itfa kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': '257 Birikmiş Amortismanlar hesabı 50.000 ₺ alacaklandırılır',
             'B': '730 Genel Üretim Giderleri hesabı 50.000 ₺ borçlandırılır',
@@ -667,7 +667,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        "Bir proje için geçen yıl araştırma safhasında yapılan 80.000 ₺ harcama gider yazılmıştır. Bu yıl proje geliştirme ölçütlerini sağlamış ve başarı beklentisi yükselmiştir. TMS 38'e göre geçen yıl gider yazılan 80.000 ₺ için ne yapılır?",
+        "Bir ilaç firması yeni bir etken madde projesi için geçen yıl araştırma safhasında 80.000 ₺ harcama yapmış ve bu tutarı gider yazmıştır. Bu yıl proje, teknik uygulanabilirlik ve satış niyeti dâhil geliştirme ölçütlerinin tamamını sağlamış; başarı beklentisi belirgin biçimde yükselmiştir.\n\nTMS 38'e göre geçen yıl gider yazılan 80.000 ₺ için ne yapılır?",
         {
             'A': 'Geçmişte gider yazılan tutar sonradan varlık maliyetine geri alınamaz.',
             'B': 'Projenin geliştirme aşamasında başarılı olması geçmişteki araştırma harcamasının niteliğini değiştirir; tutar önce dönem geliri yazılıp ardından yeni varlığın maliyetine aktarılır.',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        "İşletme, 5 yıllığına kiraladığı bir mağazaya 100.000 ₺'lik özel maliyet harcaması yapmış ve kira süresi boyunca eşit itfa etmektedir. 2 tam yıl itfa ayrıldıktan sonra '264 Özel Maliyetler'in net defter değeri kaç ₺'dir?",
+        "Bir giyim perakendecisi 5 yıllığına kiraladığı bir mağazaya vitrin, raf ve aydınlatma düzenlemesi için kira başlangıcında 100.000 ₺'lik özel maliyet harcaması yapmış ve bu tutarı kira süresi boyunca eşit tutarlarla itfa etmektedir.\n\n2 tam yıl itfa ayrıldıktan sonra '264 Özel Maliyetler'in net defter değeri kaç ₺'dir?",
         {
             'A': '20.000',
             'B': '80.000',
@@ -793,7 +793,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0055': patch(
-        "Maliyeti 120.000 ₺, kalıntı değeri sıfır olan bir yazılımdan yararlı ömrü boyunca 240.000 işlem gerçekleştirilmesi beklenmektedir. Cari dönemde 60.000 işlem yapıldığına göre üretim birimleri yönteminde itfa payı kaç ₺'dir?",
+        "Bir ödeme kuruluşu, kullanım hacmine bağlı olarak tükenen bir işlem yazılımı lisansını 120.000 ₺'ye satın almıştır. Lisanstan yararlı ömrü boyunca toplam 240.000 işlem gerçekleştirilmesi beklenmekte, kalıntı değer öngörülmemektedir. Cari dönemde 60.000 işlem yapılmıştır.\n\nÜretim birimleri yöntemine göre cari dönem itfa payı kaç ₺'dir?",
         {
             'A': '120.000',
             'B': '20.000',
