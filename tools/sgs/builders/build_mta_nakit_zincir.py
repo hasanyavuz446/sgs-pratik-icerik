@@ -51,7 +51,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        'Aşağıdakilerden hangisi bir nakit ÇIKIŞIdır?',
+        'Bir ticaret işletmesinin muhasebe birimi, dönem içindeki nakit hareketlerini giriş ve çıkış olarak ayırarak nakit akış tablosuna hazırlık yapmaktadır.\n\nAşağıdakilerden hangisi bir nakit çıkışıdır?',
         {
             'A': 'Nakit sermaye artırımı',
             'B': 'Satışlardan tahsilat',
@@ -93,7 +93,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        'Tedarikçilere mal bedeli için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        "Bir hırdavat toptancısı dönem içinde tedarikçilerinden aldığı ticari mallar için 1.200.000 ₺ nakit ödemiş; aynı dönemde depo raf sistemi için 150.000 ₺ ödemiş ve ortaklarına 90.000 ₺ kâr payı dağıtmıştır. İşletme nakit akış tablosunu TMS 7'ye göre hazırlamaktadır.\n\nTedarikçilere mal bedeli için yapılan nakit ödeme, nakit akış tablosunda hangi faaliyet grubunda yer alır?",
         {
             'A': 'Yatırım faaliyetleri (nakit çıkışı)',
             'B': 'Finansman faaliyetleri (nakit girişi)',
@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        'Ortaklara ödenen nakit kâr payı (temettü), nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        'Bir anonim şirketin genel kurulu, geçmiş yıl kârlarından ortaklara 600.000 ₺ nakit kâr payı dağıtılmasına karar vermiş ve tutarın tamamı aynı dönem içinde ortakların banka hesaplarına ödenmiştir. Şirket aynı dönemde bir iştirakinden 90.000 ₺ kâr payı tahsil etmiştir.\n\nOrtaklara ödenen nakit kâr payı, nakit akış tablosunda genel uygulamada hangi faaliyet grubunda yer alır?',
         {
             'A': 'İşletme faaliyetleri (nakit girişi)',
             'B': 'Finansman faaliyetleri (nakit girişi)',
@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Uzun vadeli banka kredisinin anaparasının geri ödenmesi, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        "Bir otomotiv yan sanayi şirketi, üç yıl önce kullandığı yatırım kredisinin bu yıl vadesi gelen 1.000.000 ₺'lik anapara taksitini ve 240.000 ₺ faizini bankaya ödemiştir. Kredi, şirketin üretim tesisinin finansmanı için kullanılmıştı.\n\nKredinin anapara taksitinin geri ödenmesi, nakit akış tablosunda hangi faaliyet grubunda yer alır?",
         {
             'A': 'İşletme faaliyetleri (nakit girişi)',
             'B': 'Finansman faaliyetleri (nakit çıkışı)',
@@ -172,7 +172,7 @@ _PATCHES = {
             'E': 'Tedarikçilere ödeme → İşletme faaliyeti',
         },
         'A',
-        "**YANLIŞ olan D'dir:** Ortaklara temettü ödemesi genel uygulamada **finansman faaliyetidir**, işletme faaliyeti değil. Diğer eşleştirmeler doğrudur.",
+        '**Yanlış eşleştirme temettü ödemesidir:** Ortaklara temettü ödemesi genel uygulamada **finansman faaliyetidir**, işletme faaliyeti değil. Diğer eşleştirmeler doğrudur.',
         'TMS 7 - faaliyet sınıflaması',
     ),
     # düzey 2
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Bir işletmenin makine (maddi duran varlık) satışından elde ettiği nakit, hangi faaliyet grubunda ve hangi yönde gösterilir?',
+        "Bir matbaa, yeni teknolojiye geçiş nedeniyle kullanmadığı bir baskı makinesini 350.000 ₺'ye peşin satmış ve bedeli banka hesabına tahsil etmiştir. Makinenin satış tarihindeki net defter değeri 280.000 ₺ olup satıştan 70.000 ₺ kâr elde edilmiştir.\n\nBu satıştan elde edilen nakit, nakit akış tablosunda hangi faaliyet grubunda ve hangi yönde gösterilir?",
         {
             'A': 'Yatırım faaliyeti - çıkış',
             'B': 'Finansman faaliyeti - çıkış',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        'Maddi duran varlık satın alınması için yapılan nakit ödeme, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        'Bir gıda üreticisi kapasite artırımı kapsamında yeni bir paketleme hattı satın almış ve 2.400.000 ₺ bedelin tamamını bankadan ödemiştir. Hat, montajı tamamlanarak dönem sonunda kullanıma alınmıştır.\n\nBu maddi duran varlık alımı için yapılan nakit ödeme, nakit akış tablosunda hangi faaliyet grubunda yer alır?',
         {
             'A': 'Finansman faaliyetleri (nakit girişi)',
             'B': 'Yatırım faaliyetleri (nakit çıkışı)',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        'Personele ödenen nakit ücretler, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        'Bir çağrı merkezi işletmesi dönem içinde çalışanlarına toplam 3.600.000 ₺ net ücret ödemiş, ayrıca ücretlerden kesilen vergi ve SGK primlerini ilgili kurumlara yatırmıştır. Ödemelerin tamamı banka hesabından yapılmıştır.\n\nPersonele ödenen nakit ücretler, nakit akış tablosunda hangi faaliyet grubunda yer alır?',
         {
             'A': 'Yatırım faaliyetleri (nakit girişi)',
             'B': 'Finansman faaliyetleri (nakit çıkışı)',
@@ -415,7 +415,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Ödenen kurumlar/gelir vergisi, nakit akım tablosunda genel olarak hangi faaliyet grubunda yer alır?',
+        "Bir anonim şirket, önceki yılın kârı üzerinden hesaplanan kurumlar vergisinin geçici vergi mahsubundan sonra kalan 350.000 ₺'lik kısmını beyanname döneminde vergi dairesine ödemiştir. Ödeme belirli bir yatırım veya finansman işlemiyle ilişkilendirilmemiştir.\n\nÖdenen kurumlar vergisi, nakit akış tablosunda genel olarak hangi faaliyet grubunda yer alır?",
         {
             'A': 'Yatırım faaliyetleri (nakit girişi)',
             'B': 'Yatırım faaliyetleri (nakit çıkışı)',
@@ -443,7 +443,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        'Bir marka (maddi olmayan duran varlık) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        "Bir kozmetik şirketi pazar payını artırmak amacıyla rakip bir firmanın tescilli markasını 1.500.000 ₺'ye satın almış ve bedeli peşin ödemiştir. Marka, maddi olmayan duran varlık olarak aktifleştirilmiştir.\n\nBu marka için ödenen nakit, nakit akış tablosunda hangi faaliyet grubunda yer alır?",
         {
             'A': 'İşletme faaliyetleri (nakit girişi)',
             'B': 'Yatırım faaliyetleri (nakit çıkışı)',
@@ -583,7 +583,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        "Satıcıya olan 50.000 ₺'lik ticari borcun vadesinde ödenmeyip borç senediyle değiştirilmesi nakit akış tablosunda nasıl gösterilir?",
+        "Nakit sıkışıklığı yaşayan bir ticaret işletmesi, satıcısına olan 50.000 ₺'lik ticari borcunu vadesinde ödeyememiştir. Satıcıyla anlaşarak bu borç için üç ay vadeli bir borç senedi düzenleyip vermiştir.\n\nBu işlem nakit akış tablosunda nasıl gösterilir?",
         {
             'A': 'Finansman faaliyetlerinde 50.000 ₺ nakit girişi olarak gösterilir.',
             'B': 'İşletme faaliyetlerinde 50.000 ₺ nakit çıkışı olarak gösterilir.',
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        'Aşağıdakilerden hangisi bir nakit GİRİŞİdir?',
+        'Bir hizmet işletmesi, aylık nakit bütçesini hazırlarken dönem içindeki nakit hareketlerini giriş ve çıkış olarak sınıflandırmaktadır.\n\nAşağıdakilerden hangisi bir nakit girişidir?',
         {
             'A': 'Personele ücret ödenmesi',
             'B': 'Satışlardan nakit tahsilat yapılması',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'Net nakit akışı nasıl hesaplanır?',
+        'Bir işletmenin nakit akış tablosunda dönem içindeki tüm faaliyetlerden doğan nakit girişleri ve nakit çıkışları ayrı ayrı toplanmıştır.\n\nBu tabloda net nakit akışı nasıl hesaplanır?',
         {
             'A': 'Toplam Nakit Girişleri − Toplam Nakit Çıkışları',
             'B': 'Dönem Sonu Nakit + Dönem Başı Nakit',
@@ -653,7 +653,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        'Nakit sermaye artırımından sağlanan nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        'Bir enerji şirketi yeni santral yatırımını finanse etmek için 5.000.000 ₺ tutarında nakdi sermaye artırımı yapmıştır. Ortaklar taahhüt ettikleri tutarın tamamını aynı dönem içinde şirketin banka hesabına yatırmış ve artırım tescil edilmiştir.\n\nNakit sermaye artırımından sağlanan nakit, nakit akış tablosunda hangi faaliyet grubunda yer alır?',
         {
             'A': 'İşletme faaliyetleri (nakit girişi)',
             'B': 'Yatırım faaliyetleri (nakit girişi)',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        'Bir iştirak (uzun vadeli pay) satın almak için ödenen nakit, nakit akım tablosunda hangi faaliyet grubunda yer alır?',
+        "Bir inşaat şirketi, yapı malzemesi tedarikçisi olan bir firmanın sermayesinin %30'unu uzun vadeli olarak elde tutmak ve yönetiminde söz sahibi olmak amacıyla 4.000.000 ₺'ye satın almış, bedeli peşin ödemiştir.\n\nBu iştirak payı için ödenen nakit, nakit akış tablosunda hangi faaliyet grubunda yer alır?",
         {
             'A': 'Finansman faaliyetleri (nakit çıkışı)',
             'B': 'İşletme faaliyetleri (nakit girişi)',
@@ -821,7 +821,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        'Dolaylı yöntemle işletme faaliyetlerinden nakit akışı hesaplanırken aşağıdakilerden hangisi dönem net kârına eklenir?',
+        "Bir ticaret işletmesinin dönem net kârı 400.000 ₺'dir. İşletme nakit akış tablosunu dolaylı yöntemle hazırlamakta; işletme faaliyetlerinden nakit akışını bulmak için net kârı nakit dışı kalemlere ve işletme sermayesindeki değişimlere göre düzeltmektedir.\n\nBu hesaplamada aşağıdakilerden hangisi dönem net kârına eklenir?",
         {
             'A': 'Peşin ödenmiş giderlerdeki artış',
             'B': 'Maddi duran varlık satış kârı',

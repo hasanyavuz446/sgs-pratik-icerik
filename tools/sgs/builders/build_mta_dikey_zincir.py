@@ -93,7 +93,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        "Satışların maliyetinin dikey yüzdesi %35 ve faaliyet giderlerinin dikey yüzdesi %25 olan bir işletmenin net satışları 2.400.000 ₺ ise faaliyet kârı kaç ₺'dir?",
+        "Bir giyim perakendecisinin gelir tablosuna uygulanan dikey analizde satışların maliyetinin net satışlara oranı %35, faaliyet giderlerinin oranı %25 olarak bulunmuştur. İşletmenin yıllık net satışları 2.400.000 ₺, finansman giderleri ise 120.000 ₺'dir.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
             'A': '960.000',
             'B': '1.440.000',
@@ -107,7 +107,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        "Satışlarının maliyeti 900.000 ₺ olan bir işletmenin brüt satış kârı 300.000 ₺, faaliyet kârı 60.000 ₺'dir. Buna göre faaliyet giderlerinin dikey yüzdesi kaçtır?",
+        "Bir oyuncak toptancısının yıllık gelir tablosunda satışların maliyeti 900.000 ₺, brüt satış kârı 300.000 ₺ ve faaliyet kârı 60.000 ₺'dir. Faaliyet giderlerinin tamamı pazarlama ve genel yönetim giderlerinden oluşmaktadır.\n\nBuna göre faaliyet giderlerinin net satışlara göre dikey yüzdesi kaçtır?",
         {
             'A': '%25',
             'B': '%35',
@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        "Vergi öncesi kârının dikey yüzdesi %12 olan bir işletmede kurumlar vergisi oranı %25'tir. Buna göre dönem net kârının dikey yüzdesi kaçtır?",
+        "Bir ambalaj üreticisinin gelir tablosu dikey analizinde vergi öncesi kârının net satışlara oranı %12 olarak hesaplanmıştır. İşletmenin kanunen kabul edilmeyen gideri ve vergi indirimi bulunmamaktadır; soruda kullanılacak vergi oranı %25'tir.\n\nBuna göre dönem net kârının dikey yüzdesi kaçtır?",
         {
             'A': '%3',
             'B': '%10',
@@ -275,7 +275,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0018': patch(
-        "Aktif toplamı içinde kısa vadeli yabancı kaynakların dikey yüzdesi %25, uzun vadeli yabancı kaynakların %20'dir. Özkaynakları 330.000 ₺ olan işletmenin toplam borçları kaç ₺'dir?",
+        "Bir otel işletmesinin bilançosuna uygulanan dikey analizde kısa vadeli yabancı kaynakların aktif toplamına oranı %25, uzun vadeli yabancı kaynakların oranı %20 olarak bulunmuştur. İşletmenin duran varlıkları aktifin %75'ini oluşturmakta, özkaynakları ise 330.000 ₺'dir.\n\nBuna göre işletmenin toplam borçları kaç ₺'dir?",
         {
             'A': '270.000',
             'B': '391.500',
@@ -359,7 +359,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'Bir işletmenin dikey analizinde özkaynaklar %70, toplam yabancı kaynaklar %30 çıkmıştır. Mali yapı açısından bu en olası olarak neyi gösterir?',
+        'Bir aile şirketinin bilançosuna uygulanan dikey analizde özkaynakların pasif toplamına oranı %70, toplam yabancı kaynakların oranı %30 çıkmıştır. Şirket kuruluşundan bu yana kârının büyük bölümünü dağıtmayıp işletmede bırakmaktadır.\n\nMali yapı açısından bu en olası olarak neyi gösterir?',
         {
             'A': 'Yabancı kaynak ağırlıklı, aşırı borçlu ve mali açıdan riskli bir yapıyı',
             'B': 'Stokların toplam varlıklar içinde aşırı biriktiğini',
@@ -387,7 +387,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        "Brüt satış kârının dikey yüzdesi %30, faaliyet giderlerinin dikey yüzdesi %18 ve faaliyet kârı 180.000 ₺ olan bir işletmenin net satışları kaç ₺'dir?",
+        "Bir mobilya üreticisinin gelir tablosu dikey analizinde brüt satış kârının net satışlara oranı %30, faaliyet giderlerinin oranı %18 olarak hesaplanmıştır. İşletmenin faaliyet kârı 180.000 ₺, olağan kârı ise 150.000 ₺'dir.\n\nBuna göre işletmenin net satışları kaç ₺'dir?",
         {
             'A': '600.000',
             'B': '1.500.000',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0027': patch(
-        "Bir işletmenin faaliyet giderleri 90.000 ₺ ve faaliyet giderlerinin dikey yüzdesi %30'dur. Aynı yıl satışların maliyeti 150.000 ₺ olduğuna göre faaliyet kârının dikey yüzdesi kaçtır?",
+        "Bir kırtasiye toptancısının yıllık gelir tablosunda faaliyet giderleri 90.000 ₺'dir ve dikey analizde bu giderlerin net satışlara oranı %30 olarak hesaplanmıştır. Aynı yıl satışların maliyeti 150.000 ₺'dir; işletmenin finansman gideri bulunmamaktadır.\n\nBuna göre faaliyet kârının dikey yüzdesi kaçtır?",
         {
             'A': '%70',
             'B': '%30',
@@ -485,7 +485,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        "Bilanço genel toplamına göre yapılan dikey analizde dönen varlıkların tutarı 90.000 ₺ ve dikey yüzdesi %30'dur. Kısa vadeli yabancı kaynakların dikey yüzdesi %20 ise cari oran kaçtır?",
+        "Bir bilgisayar donanımı satıcısının bilanço genel toplamına göre yapılan dikey analizinde dönen varlıkların tutarı 90.000 ₺ ve dikey yüzdesi %30'dur. Aynı analizde kısa vadeli yabancı kaynakların dikey yüzdesi %20, özkaynakların %55'tir.\n\nBuna göre işletmenin cari oranı kaçtır?",
         {
             'A': '1,50',
             'B': '3',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "İki dönem karşılaştırıldığında, satışların maliyetinin net satışlara dikey oranı %60'tan %68'e çıkmıştır. Bu bulgu en olası olarak neyi gösterir?",
+        "Bir süt ürünleri üreticisinin iki dönemlik gelir tablolarına uygulanan dikey analizde satışların maliyetinin net satışlara oranı %60'tan %68'e çıkmıştır. Bu dönemde çiğ süt alış fiyatları belirgin biçimde yükselmiştir.\n\nBu bulgu en olası olarak neyi gösterir?",
         {
             'A': 'Net satışların tamamen durduğunu ve gelir yaratılamadığını',
             'B': 'Özkaynakların arttığını ve borçluluğun azaldığını gösterir',
@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        'Bir işletmenin dikey analizinde dönen varlıkların toplam aktife oranı %70 çıkmıştır. Bu yapı en olası olarak neyi gösterir?',
+        'Bir toptan gıda dağıtıcısının bilançosuna uygulanan dikey analizde dönen varlıkların toplam aktife oranı %70 çıkmıştır. İşletmenin depoları kiralıktır ve dağıtım araçlarının bir kısmı da kiralama yoluyla kullanılmaktadır.\n\nBu yapı en olası olarak neyi gösterir?',
         {
             'A': 'Kaynak yapısında özkaynakların payının %70 olduğunu',
             'B': 'Net satışlar içinde dönem net kârının payının %70 olduğunu',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "Net satışları 450.000 ₺ olan bir işletmenin brüt satış kârlılığı %35, faaliyet giderlerinin dikey yüzdesi %15'tir. Buna göre işletmenin faaliyet kârı kaç ₺'dir?",
+        "Bir oto yedek parça satıcısının yıllık net satışları 450.000 ₺'dir. Gelir tablosu analizine göre brüt satış kârlılığı %35, faaliyet giderlerinin net satışlara göre dikey yüzdesi %15, finansman giderlerinin dikey yüzdesi ise %4'tür.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
             'A': '292.500',
             'B': '90.000',
@@ -849,7 +849,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0059': patch(
-        'Aktif toplamı içinde hazır değerlerin dikey yüzdesi %6, menkul kıymetlerin %4 ve kısa vadeli yabancı kaynakların %25 olan bir işletmenin nakit oranı kaçtır?',
+        "Bir ilaç deposunun bilançosuna uygulanan dikey analizde aktif toplamı içinde hazır değerlerin yüzdesi %6, menkul kıymetlerin %4, ticari alacakların %30 ve kısa vadeli yabancı kaynakların %25 olarak bulunmuştur. İşletmenin aktif toplamı 5.000.000 ₺'dir.\n\nBuna göre işletmenin nakit oranı kaçtır?",
         {
             'A': '0,10',
             'B': '0,40',

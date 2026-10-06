@@ -79,7 +79,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0004': patch(
-        'Bir işletmenin stokları %35 artarken net satışları neredeyse hiç değişmemiştir (%2). Bu karşılaştırmalı bulgu en olası olarak neyi gösterir?',
+        'Bir ev tekstili üreticisinin iki yıllık mali tablolarından alınan bazı kalemler aşağıdaki gibidir (₺):\n\n| Kalem | 2024 | 2025 |\n|---|---|---|\n| Stoklar | 400.000 | 540.000 |\n| Net satışlar | 2.000.000 | 2.040.000 |\n| Ticari alacaklar | 300.000 | 306.000 |\n\nStokların %35, net satışların %2 arttığını gösteren bu karşılaştırmalı bulgu en olası olarak neyi gösterir?',
         {
             'A': 'Satışlar artmadan stokların birikmesini; olası stok fazlalığı/satış yavaşlaması riskini',
             'B': 'İşletmenin stoksuz (stok bulundurmadan) çalışmaya geçtiğini ve tüm mamulü anında sattığını',
@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0009': patch(
-        'Önceki yıla göre cari yılda faaliyet kâr marjı, brüt kâr marjına göre daha yüksek oranda artan bir işletme için aşağıdakilerden hangisi söylenebilir?',
+        'Bir ev aletleri üreticisinin gelir tablolarına uygulanan analiz sonuçlarına göre, önceki yıla göre cari yılda faaliyet kâr marjı brüt kâr marjına göre daha yüksek oranda artmıştır. Aynı dönemde işletmenin net satışları %18 artmıştır.\n\nBu işletme için aşağıdakilerden hangisi söylenebilir?',
         {
             'A': 'Faaliyet giderleri tutar olarak azalmıştır.',
             'B': 'Faaliyet giderlerinin net satışlara oranı azalmıştır.',
@@ -219,7 +219,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0014': patch(
-        "2024'te stok devir hızı 6 olan bir işletmede 2025'te satışların maliyeti %5, ortalama stoklar %40 artmıştır. Buna göre 2025 yılı stok devir hızı kaçtır?",
+        "Bir hırdavat toptancısında 2024 yılında stok devir hızı 6'dır. 2025 yılında yeni bir depo açılması nedeniyle ortalama stoklar %40 artmış, satışların maliyeti ise yalnız %5 artmıştır. Yönetim, stok yönetiminin etkinliğini değerlendirmektedir.\n\nBuna göre 2025 yılı stok devir hızı kaçtır?",
         {
             'A': '2,10',
             'B': '4,29',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        "Borç/özkaynak oranı 2024'te 0,80 olan bir işletmede 2025'te yabancı kaynaklar %20, özkaynaklar %50 artmıştır. Buna göre 2025 yılı borç/özkaynak oranı kaçtır?",
+        "Bir inşaat şirketinin borç/özkaynak oranı 2024'te 0,80'dir. 2025 yılında şirket bedelli sermaye artırımı yapmış ve dönemi kârla kapatmıştır; bu yıl yabancı kaynaklar %20, özkaynaklar %50 artmıştır.\n\nBuna göre 2025 yılı borç/özkaynak oranı kaçtır?",
         {
             'A': '0,64',
             'B': '1',
@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        'Bir işletmenin ticari alacakları %40 artarken net satışları %10 artmıştır. Bu karşılaştırmalı bulgu en olası olarak neyi düşündürür?',
+        "Bir tıbbi cihaz distribütörünün ticari alacakları bir yılda 500.000 ₺'den 700.000 ₺'ye (%40), net satışları ise 4.000.000 ₺'den 4.400.000 ₺'ye (%10) yükselmiştir. İşletme bu dönemde satış politikasında yaptığı değişiklikleri henüz açıklamamıştır.\n\nBu karşılaştırmalı bulgu en olası olarak neyi düşündürür?",
         {
             'A': 'İşletmenin tüm satışlarını peşine çevirdiğini, bu nedenle ticari alacak bakiyesinin artık büyümediğini',
             'B': 'Alacaklar satışlardan hızlı büyüdüğü için tahsilat performansının belirgin biçimde iyileştiğini ve alacakların hızla nakde döndüğünü',
@@ -359,7 +359,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'Bir işletmenin özkaynakları %20 artarken toplam yabancı kaynakları %10 azalmıştır. Bu karşılaştırmalı bulgu mali yapı açısından neyi gösterir?',
+        'Bir gıda şirketinin iki yıllık bilançolarına uygulanan yatay analizde özkaynakların %20 arttığı, toplam yabancı kaynakların ise %10 azaldığı görülmüştür. Şirket bu dönemde kârının tamamını işletmede bırakmış ve vadesi gelen banka kredilerini geri ödemiştir.\n\nBu karşılaştırmalı bulgu mali yapı açısından neyi gösterir?',
         {
             'A': 'Borçların hızla büyüyüp işletmenin ödeme güçlüğüne (borç batağına) girdiğini işaret ettiğini',
             'B': 'Özkaynaktaki artışın doğrudan net satışların düşmesinden kaynaklandığını ortaya koyduğunu',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        'Bir işletmenin net satışları %25 artarken dönem net kârı %60 artmıştır. Bu karşılaştırmalı bulgu en olası olarak neyi gösterir?',
+        'Bir yazılım şirketinin yatay analiz raporuna göre net satışları önceki yıla göre %25, dönem net kârı ise %60 artmıştır. Şirketin bu dönemde borçlanma düzeyinde önemli bir değişiklik olmamış ve olağandışı bir gelir elde edilmemiştir.\n\nBu karşılaştırmalı bulgu en olası olarak neyi gösterir?',
         {
             'A': 'Kâr artışının kaynağının borçlanmadaki yükseliş olduğunu ve mali yapının borç ağırlıklı hâle geldiğini',
             'B': 'Net kârın net satışlardan daha yavaş büyümesi nedeniyle net kâr marjının gerilediğini ve kârlılığın kötüleştiğini',
@@ -485,7 +485,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        "Aktif devir hızı 2024'te 2 olan bir işletmede 2025'te net satışlar %32, toplam aktifler %10 artmıştır. Buna göre 2025 yılı aktif devir hızı kaçtır?",
+        "Bir perakende zincirinin aktif devir hızı 2024'te 2'dir. 2025'te şirket mevcut mağazalarında satışlarını artırmış ve yalnız sınırlı sayıda yeni yatırım yapmıştır: net satışlar %32, toplam aktifler %10 artmıştır.\n\nBuna göre 2025 yılı aktif devir hızı kaçtır?",
         {
             'A': '2,40',
             'B': '2,44',
@@ -555,7 +555,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0038': patch(
-        "Özkaynak kârlılığı 2024'te %30 olan bir işletmede 2025'te net kâr %20, özkaynaklar %50 artmıştır. Buna göre özkaynak kârlılığı nasıl değişmiştir?",
+        "Özkaynak kârlılığı 2024'te %30 olan bir mobilya üreticisi 2025'te bedelli sermaye artırımı yapmış; bu yıl net kârı %20, özkaynakları ise %50 artmıştır. Ortaklar, artırımın kârlılığa etkisini görmek istemektedir.\n\nBuna göre özkaynak kârlılığı nasıl değişmiştir?",
         {
             'A': '6 puan azalmıştır.',
             'B': '6 puan artmıştır.',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'Bir işletmenin net satışları %20, satışların maliyeti ise %35 artmıştır. Bu karşılaştırmalı analiz bulgusu en olası olarak neyi gösterir?',
+        'Bir fırın ürünleri üreticisinin iki yıllık gelir tabloları karşılaştırıldığında net satışlarının %20, satışların maliyetinin ise %35 arttığı görülmüştür. Bu dönemde un ve enerji fiyatlarında belirgin artışlar yaşanmıştır.\n\nBu karşılaştırmalı analiz bulgusu en olası olarak neyi gösterir?',
         {
             'A': 'Faaliyet dışı gelirlerin artması nedeniyle özkaynakların güçlendiğini ve borçluluğun azaldığını',
             'B': 'Satışların maliyetlerden daha hızlı arttığını ve bu nedenle brüt kâr marjının belirgin biçimde iyileştiğini',
@@ -863,7 +863,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0060': patch(
-        'Genel fiyat düzeyinin hızla arttığı bir dönemde yapılan karşılaştırmalı analizle ilgili aşağıdakilerden hangisi doğrudur?',
+        'Genel fiyat düzeyinin hızla arttığı bir dönemde bir analist, enflasyon düzeltmesi yapılmamış ve cari fiyatlarla hazırlanmış iki yıllık mali tablolara karşılaştırmalı analiz uygulamıştır. Analiz sonucunda satışlar ve kârlarda yüksek oranlı artışlar görülmüştür.\n\nBu analizle ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Tutar artışları reel büyümeye eşit kabul edilir.',
             'B': 'Fiyat artışları yüzde değişimleri etkilemez, tutar değişimlerini etkiler.',

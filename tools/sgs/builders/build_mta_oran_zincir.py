@@ -79,7 +79,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0004': patch(
-        "Bir işletmenin cari oranı 2,50, likidite (asit-test) oranı 0,90'dur. Stoklarının değeri 48.000 ₺ olduğuna göre kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
+        "Bir hazır giyim toptancısının dönem sonu bilançosuna göre cari oranı 2,50, likidite (asit-test) oranı 0,90'dır. Sezon sonu nedeniyle depoda tutulan stokların değeri 48.000 ₺'dir; işletmenin uzun vadeli yabancı kaynakları 20.000 ₺, özkaynakları 85.000 ₺'dir.\n\nBuna göre kısa vadeli yabancı kaynaklar toplamı kaç ₺'dir?",
         {
             'A': '75.000',
             'B': '40.800',
@@ -107,7 +107,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        'Cari oranı 2,40 ve asit-test oranı 0,80 olan bir işletme için aşağıdakilerden hangisi kesinlikle doğrudur?',
+        'Bir bankanın kredi analisti, kısa vadeli kredi başvurusunda bulunan bir toptancının son bilançosundan cari oranı 2,40, asit-test oranını 0,80 olarak hesaplamıştır. Analist, işletmenin dönen varlıklarının bileşimi ve kısa vadeli borç ödeme gücü hakkında rapor hazırlayacaktır.\n\nBu iki orana göre aşağıdakilerden hangisi kesinlikle doğrudur?',
         {
             'A': 'Stoklar, kısa vadeli yabancı kaynakların 1,6 katıdır.',
             'B': 'İşletme kısa vadeli borçlarını stok satmadan tamamen ödeyebilir.',
@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        "Aktif devir hızı 2,50, net satışları 750.000 ₺ ve finansal kaldıraç oranı 0,35 olan bir işletmenin özkaynakları kaç ₺'dir?",
+        "Bir yatırım danışmanı, halka arz hazırlığındaki bir perakende şirketinin finansal yapısını incelemektedir. Şirketin yıllık net satışları 750.000 ₺, aktif devir hızı 2,50 ve finansal kaldıraç oranı (yabancı kaynaklar/toplam varlıklar) 0,35'tir. Şirketin net kâr marjı %6'dır.\n\nBuna göre şirketin özkaynakları kaç ₺'dir?",
         {
             'A': '487.500',
             'B': '105.000',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Faaliyet kârı 600.000 ₺ olan bir işletmenin aktif devir hızı 0,40 ve faaliyet kâr marjı %30'dur. Buna göre işletmenin aktif toplamı kaç ₺'dir?",
+        "Bir enerji ekipmanı üreticisinin yıllık faaliyet raporunda faaliyet kârı 600.000 ₺, faaliyet kâr marjı %30 ve aktif devir hızı 0,40 olarak açıklanmıştır. Sermaye yoğun bir sektörde faaliyet gösteren işletmenin aktif devir hızı sektör ortalamasının (0,55) altındadır.\n\nBuna göre işletmenin aktif toplamı kaç ₺'dir?",
         {
             'A': '5.000.000',
             'B': '2.600.000',
@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0019': patch(
-        'Toplam aktifleri 16.000.000 ₺ ve özkaynak/borç oranı 0,60 olan bir işletmenin dolaşımda, piyasa fiyatı 8 ₺ olan 1.500.000 adet hisse senedi bulunmaktadır. Buna göre PD/DD oranı kaçtır?',
+        "Borsada işlem gören bir lojistik şirketinin dönem sonu bilançosunda toplam aktifleri 16.000.000 ₺, özkaynak/borç oranı 0,60'tır. Şirketin dolaşımdaki 1.500.000 adet payının borsa fiyatı 8 ₺'dir; şirket dönem içinde 1.200.000 ₺ net kâr elde etmiştir.\n\nBuna göre şirketin piyasa değeri/defter değeri (PD/DD) oranı kaçtır?",
         {
             'A': '1,25',
             'B': '0,75',
@@ -387,7 +387,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        'Dönen varlıkları 400.000 ₺, kısa vadeli yabancı kaynakları 500.000 ₺ olan bir işletmede aşağıdaki işlemlerden hangisi cari oranı artırır?',
+        'Dönen varlıkları 400.000 ₺, kısa vadeli yabancı kaynakları 500.000 ₺ olan bir işletmenin yönetimi, bankayla yaptığı kredi sözleşmesindeki cari oranı yükseltme şartını yerine getirmek istemektedir. Muhasebe müdürü dönem sonundan önce yapılabilecek işlemleri değerlendirmektedir.\n\nAşağıdaki işlemlerden hangisi işletmenin cari oranını artırır?',
         {
             'A': 'Kısa vadeli banka kredisiyle makine satın alınması',
             'B': 'Kısa vadeli borçların bir kısmının kasadaki nakitle ödenmesi',
@@ -429,7 +429,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0029': patch(
-        'Cari oranı 1,8 olan bir işletmede aşağıdaki işlemlerden hangisi cari oranı azaltır?',
+        'Cari oranı 1,8 olan bir işletmenin yönetimi, dönem sonuna kadar yapmayı planladığı işlemlerin likidite oranlarına etkisini önceden görmek istemektedir.\n\nAşağıdaki işlemlerden hangisi cari oranı azaltır?',
         {
             'A': 'Ortakların nakit sermaye artırımına katılması',
             'B': 'Kısa vadeli banka kredisiyle üretim makinesi satın alınması',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0036': patch(
-        'Finansal kaldıraç oranı %60, aktif kârlılık oranı %18 ve aktif toplamı 3.000.000 ₺ olan bir işletmenin özsermaye kârlılık oranı yüzde kaçtır?',
+        "Bir sanayi şirketinin aktif toplamı 3.000.000 ₺'dir. Şirket varlıklarının %60'ını yabancı kaynakla finanse etmekte (finansal kaldıraç oranı %60), aktif kârlılık oranı ise %18'dir. Yönetim, ortaklara özkaynak getirisini açıklamak için DuPont analizinden yararlanacaktır.\n\nBuna göre şirketin özsermaye kârlılık oranı yüzde kaçtır?",
         {
             'A': '%30',
             'B': '%7,20',
@@ -639,7 +639,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0044': patch(
-        "Bir işletmenin hazır değerleri 3.000 ₺, menkul kıymetleri 5.000 ₺, stokları 16.000 ₺; cari oranı 1,75 ve nakit oranı 0,25'tir. Buna göre işletmenin likidite (asit-test) oranı kaçtır?",
+        "Bir kırtasiye toptancısının dönem sonu bilançosunda hazır değerler 3.000 ₺, menkul kıymetler 5.000 ₺ ve stoklar 16.000 ₺'dir. İşletmenin cari oranı 1,75, nakit oranı 0,25'tir; dönen varlıklar arasında peşin ödenmiş gider bulunmamaktadır.\n\nBuna göre işletmenin likidite (asit-test) oranı kaçtır?",
         {
             'A': '2,00',
             'B': '1,75',
@@ -779,7 +779,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0054': patch(
-        "Bir işletmenin faaliyet giderleri toplamı 30.000 ₺, brüt satış kârı oranı %40 ve ortalama stokları 45.000 ₺'dir. Stok devir hızı 3 olduğuna göre işletmenin faaliyet kârı kaç ₺'dir?",
+        "Bir beyaz eşya bayisinin yıllık verilerine göre ortalama stokları 45.000 ₺, stok devir hızı 3, brüt satış kârı oranı %40 ve faaliyet giderleri toplamı 30.000 ₺'dir. Aynı dönemde işletmenin finansman giderleri 12.000 ₺'dir.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
             'A': '60.000',
             'B': '90.000',
@@ -807,7 +807,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        "Aktif devir hızı 2,50 olan bir işletmede aktif kârlılık oranı %20 ve net kâr 80.000 ₺'dir. Buna göre işletmenin net satışları kaç ₺'dir?",
+        "Bir mobilya perakendecisinin yıl sonu verilerine göre net kârı 80.000 ₺, aktif kârlılık oranı %20 ve aktif devir hızı 2,50'dir. Aynı dönemde işletmenin brüt satış kârı oranı %35, faaliyet giderleri ise net satışların %25'idir.\n\nBuna göre işletmenin net satışları kaç ₺'dir?",
         {
             'A': '1.000.000',
             'B': '400.000',

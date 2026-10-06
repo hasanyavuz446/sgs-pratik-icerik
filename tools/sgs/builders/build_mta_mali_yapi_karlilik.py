@@ -65,7 +65,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0003': patch(
-        "Bir işletmenin vergi öncesi kârı 360.000 ₺, faiz giderleri 90.000 ₺'dir. Buna göre faiz karşılama oranı kaçtır?",
+        "Bir inşaat malzemesi üreticisi kapasite artırımı için yüksek tutarlı banka kredisi kullanmıştır. Dönem sonu gelir tablosuna göre işletmenin vergi öncesi kârı 360.000 ₺, kredilere ilişkin faiz giderleri 90.000 ₺'dir. Kredi veren banka, işletmenin faiz ödeme gücünü faiz karşılama oranıyla izlemektedir.\n\nBuna göre işletmenin faiz karşılama oranı kaçtır?",
         {
             'A': '2',
             'B': '0,25',
@@ -107,7 +107,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        'Finansal kaldıracın özkaynak kârlılığını olumlu etkilemesi için aşağıdaki koşullardan hangisi sağlanmalıdır?',
+        'Bir işletmenin yönetimi, yeni bir yatırımın özkaynakla mı yoksa banka kredisiyle mi finanse edileceğini değerlendirmektedir. Finans müdürü, borçla finansmanın ortakların özkaynak kârlılığını artırabileceğini, ancak bunun belirli bir koşula bağlı olduğunu belirtmiştir.\n\nFinansal kaldıracın özkaynak kârlılığını olumlu etkilemesi için aşağıdaki koşullardan hangisi sağlanmalıdır?',
         {
             'A': 'Özkaynaklar toplam borçlardan büyük olmalıdır.',
             'B': 'Borçlanma maliyeti aktif kârlılığından yüksek olmalıdır.',
@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        "Satışların maliyeti 2.400.000 ₺ ve ortalama stokta kalma süresi 45 gün olan bir işletmenin ortalama stokları kaç ₺'dir? (1 yıl = 360 gün)",
+        "Bir beyaz eşya toptancısının yıllık satışlarının maliyeti 2.400.000 ₺'dir. İşletmenin stok politikasına göre mallar depoda ortalama 45 gün kalmakta, ticari alacaklar ise ortalama 60 günde tahsil edilmektedir.\n\nBuna göre işletmenin ortalama stokları kaç ₺'dir? (1 yıl = 360 gün)",
         {
             'A': '230.000',
             'B': '240.000',
@@ -163,7 +163,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0010': patch(
-        "Aktif devir hızı 1,6 ve net satışları 800.000 ₺ olan bir işletmenin finansal kaldıraç oranı 0,40'tır. Buna göre toplam borçları kaç ₺'dir?",
+        "Bir ofis mobilyası üreticisinin yıllık net satışları 800.000 ₺, aktif devir hızı 1,6'dır. İşletme varlıklarının %40'ını yabancı kaynakla finanse etmektedir (finansal kaldıraç oranı 0,40); kısa vadeli yabancı kaynakları 120.000 ₺'dir.\n\nBuna göre işletmenin toplam borçları kaç ₺'dir?",
         {
             'A': '320.000',
             'B': '500.000',
@@ -205,7 +205,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0013': patch(
-        "Aktif kârlılığı %9 ve aktif devir hızı 1,5 olan bir işletmenin net kârı 45.000 ₺'dir. Buna göre net satışları kaç ₺'dir?",
+        "Bir kozmetik perakendecisinin yıllık net kârı 45.000 ₺'dir. Yatırımcılara sunulan raporda işletmenin aktif kârlılığı %9, aktif devir hızı 1,5 ve finansal kaldıraç oranı 0,45 olarak açıklanmıştır.\n\nBuna göre işletmenin net satışları kaç ₺'dir?",
         {
             'A': '300.000',
             'B': '750.000',
@@ -233,7 +233,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        "Aktif toplamı 2.000.000 ₺ ve finansal kaldıraç oranı 0,60 olan bir işletmenin özkaynak kârlılığı %25'tir. Buna göre net kârı kaç ₺'dir?",
+        "Bir lojistik şirketinin aktif toplamı 2.000.000 ₺'dir ve varlıklarının %60'ı yabancı kaynakla finanse edilmektedir (finansal kaldıraç oranı 0,60). Şirketin özkaynak kârlılığı %25, aktif devir hızı ise 1,2'dir.\n\nBuna göre şirketin net kârı kaç ₺'dir?",
         {
             'A': '320.000',
             'B': '200.000',
@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        "Vergi öncesi kârı 200.000 ₺ olan bir işletmenin kurumlar vergisi oranı %20, özkaynakları 800.000 ₺'dir. Buna göre özkaynak kârlılığı yüzde kaçtır?",
+        "Bir tekstil işletmesinin yıllık vergi öncesi kârı 200.000 ₺, özkaynakları 800.000 ₺'dir. İşletmenin kanunen kabul edilmeyen gideri bulunmamaktadır ve soruda kullanılacak vergi oranı %20'dir. Ortaklar vergi sonrası kâr üzerinden özkaynak getirisini öğrenmek istemektedir.\n\nBuna göre işletmenin özkaynak kârlılığı yüzde kaçtır?",
         {
             'A': '%35',
             'B': '%24',
@@ -261,7 +261,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0017': patch(
-        "Pay başına 0,60 ₺ nakit kâr payı dağıtan bir işletmenin pay fiyatı 12 ₺'dir. Buna göre temettü verimi yüzde kaçtır?",
+        "Bir enerji şirketi bu yıl pay başına 0,60 ₺ nakit kâr payı dağıtmıştır. Şirketin paylarının borsadaki fiyatı 12 ₺'dir.\n\nBuna göre temettü verimi yüzde kaçtır?",
         {
             'A': '%0,60',
             'B': '%12',
@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        'Duran varlıkları 480.000 ₺, özkaynakları 400.000 ₺ olan bir işletmenin duran varlıkların özkaynaklara oranı kaçtır?',
+        "Bir sanayi işletmesinin dönem sonu bilançosunda duran varlıkları 480.000 ₺, özkaynakları 400.000 ₺, uzun vadeli yabancı kaynakları 150.000 ₺'dir. Kredi analisti, duran varlıkların finansmanında özkaynakların yeterliliğini incelemektedir.\n\nBuna göre işletmenin duran varlıkların özkaynaklara oranı kaçtır?",
         {
             'A': '2,20',
             'B': '1,20',
@@ -415,7 +415,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Net satışları 1.500.000 ₺ ve ortalama özkaynakları 500.000 ₺ olan bir işletmenin özkaynak devir hızı kaçtır?',
+        "Bir danışmanlık şirketinin yıllık net satışları 1.500.000 ₺'dir; özkaynakları dönem başında 450.000 ₺, dönem sonunda 550.000 ₺'dir.\n\nOrtalama özkaynak kullanılarak hesaplanan özkaynak devir hızı kaçtır?",
         {
             'A': '0,33',
             'B': '4',
@@ -429,7 +429,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Stok devir hızı önceki yıllara göre sürekli düşen bir işletme için aşağıdakilerden hangisi söylenebilir?',
+        'Bir hazır giyim üreticisinin son beş yıllık verileri incelendiğinde stok devir hızının her yıl bir önceki yıla göre düştüğü görülmüştür. Aynı dönemde işletmenin satışları yaklaşık aynı düzeyde kalmış, satış fiyatlarında önemli bir değişiklik olmamıştır.\n\nBu işletme için aşağıdakilerden hangisi söylenebilir?',
         {
             'A': 'Stokta kalma süresi kısalmaktadır.',
             'B': 'Stoklar satışlara göre birikmekte; stokta kalma süresi uzamaktadır.',
@@ -485,7 +485,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        "Faaliyet kâr marjı %15 ve brüt kâr marjı %30 olan bir işletmenin faaliyet giderleri 90.000 ₺'dir. Buna göre satışların maliyeti kaç ₺'dir?",
+        "Bir mutfak eşyası üreticisinin gelir tablosu analizine göre brüt kâr marjı %30, faaliyet kâr marjı %15'tir. İşletmenin faaliyet giderleri toplamı 90.000 ₺, finansman giderleri ise 25.000 ₺'dir.\n\nBuna göre işletmenin satışların maliyeti kaç ₺'dir?",
         {
             'A': '180.000',
             'B': '420.000',
@@ -555,7 +555,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0038': patch(
-        "Aynı sektördeki iki şirketten A'nın F/K oranı 20, B'ninki 8'dir. Diğer koşullar benzer kabul edildiğinde aşağıdakilerden hangisi söylenebilir?",
+        "Borsada işlem gören ve aynı sektörde faaliyet gösteren iki gıda şirketinden A'nın fiyat/kazanç (F/K) oranı 20, B'ninki 8'dir. İki şirketin büyüklükleri, borçluluk düzeyleri ve muhasebe politikaları birbirine benzemektedir.\n\nDiğer koşullar benzer kabul edildiğinde aşağıdakilerden hangisi söylenebilir?",
         {
             'A': "A'nın özkaynak kârlılığı B'ninkinden düşüktür.",
             'B': "Yatırımcılar A'nın kazançlarının B'ninkinden daha hızlı büyümesini bekliyor olabilir.",
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "Kredili satışları 1.500.000 ₺ ve ortalama alacak tahsil süresi 72 gün olan bir işletmenin ortalama ticari alacakları kaç ₺'dir? (1 yıl = 360 gün)",
+        "Bir medikal ürün toptancısının yıllık net satışları 2.100.000 ₺ olup bunun 1.500.000 ₺'si kredili satışlardan oluşmaktadır. İşletmenin ortalama alacak tahsil süresi 72 gündür.\n\nBuna göre işletmenin ortalama ticari alacakları kaç ₺'dir? (1 yıl = 360 gün)",
         {
             'A': '5',
             'B': '360.000',
@@ -863,7 +863,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0060': patch(
-        'Aktif kârlılığı %8, özkaynak kârlılığı %20 olan bir işletme için aşağıdakilerden hangisi doğrudur?',
+        'Bir analist, borsada işlem gören bir perakende şirketinin finansal tablolarını inceleyerek aktif kârlılığını %8, özkaynak kârlılığını %20 olarak hesaplamıştır. Şirketin dönem içinde sermaye hareketi olmamıştır.\n\nBu şirket için aşağıdakilerden hangisi doğrudur?',
         {
             'A': "Özsermaye çarpanı 1,60'tır.",
             'B': "Net kâr marjı %12'dir.",

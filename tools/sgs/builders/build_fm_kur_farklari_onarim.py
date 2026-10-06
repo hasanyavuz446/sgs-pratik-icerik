@@ -788,7 +788,7 @@ _PATCHES = {
             'E': 'Dönem sonu değerlemede kural olarak MB döviz alış kuru kullanılır.',
         },
         'A',
-        "**YANLIŞ olan D'dir:** Döviz cinsi BORÇTA kur yükselirse borcun TL karşılığı artar → kambiyo **ZARARI (656)** doğar, kâr değil. Diğer ifadeler doğrudur.",
+        '**Yanlış ifade, borçla ilgili olandır:** Döviz cinsi BORÇTA kur yükselirse borcun TL karşılığı artar → kambiyo **ZARARI (656)** doğar, kâr değil. Diğer ifadeler doğrudur.',
         "VUK md. 280; 1 Sıra No'lu MSUGT - 646/656",
     ),
     # düzey 2

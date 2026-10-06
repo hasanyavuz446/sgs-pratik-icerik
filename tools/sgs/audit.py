@@ -25,6 +25,9 @@ SOLUTION_LETTER = re.compile(r"Doğru\s+(?:cevap|seçenek)\s+([A-E])\b")
 # anar. Builder harfleri yeniden dağıtınca bu atıf sessizce başka şıkkı gösterir (2026-09-27'de 4
 # soruda yakalandı, biri yayındaydı). "Doğru cevap X" kalıbı bunu görmüyordu.
 SOLUTION_LETTER_BOLD = re.compile(r"\*\*([A-E])\s+(?:yanlıştır|doğrudur)")
+# "**YANLIŞ olan D'dir:**" — aynı kusurun üçüncü kalıbı; 2026-10-07'de iki soruda (biri FM) cevap A
+# iken çözüm D'yi gösteriyordu ve yukarıdaki iki kalıp bunu görmüyordu.
+SOLUTION_LETTER_OLAN = re.compile(r"\b(?:YANLIŞ|Yanlış|yanlış|DOĞRU|Doğru|doğru)\s+olan\s+(?:şık\s+|seçenek\s+)?\**([A-E])\**\s*['’]")
 # Uygulamada geçmişte seçeneklerin başında ham "```text" görünmüştü. Kod çiti
 # içerik şemasının değil render katmanının işaretidir ve kullanıcıya taşınamaz.
 DISPLAY_CODE_FENCE = re.compile(r"```(?:\s*(?:text|plain|plaintext))?", re.IGNORECASE)
@@ -558,7 +561,8 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         harf = SOLUTION_LETTER.search(question["solution"])
         if harf and harf.group(1) != answer:
             issues.append(("FATAL", f"{qid}: çözüm “{harf.group(1)}” diyor, cevap “{answer}”"))
-        for harf in SOLUTION_LETTER_BOLD.finditer(question["solution"]):
+        for harf in (*SOLUTION_LETTER_BOLD.finditer(question["solution"]),
+                     *SOLUTION_LETTER_OLAN.finditer(question["solution"])):
             if harf.group(1) != answer:
                 issues.append(("FATAL", f"{qid}: çözüm “{harf.group(1)}” şıkkını anıyor, cevap “{answer}”"))
 

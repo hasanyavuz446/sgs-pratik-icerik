@@ -140,6 +140,14 @@ class CozumHarfiTest(unittest.TestCase):
         q["solution"] = "Gerekçe burada; bu nedenle **C yanlıştır**."
         self.assertEqual([f for f in audit_et([q]) if "şıkkını anıyor" in f], [])
 
+    def test_yanlis_olan_harf_atfi_yakalanir(self):
+        # "**YANLIŞ olan D'dir:**" yazılmış, cevap A (iki soruda canlıda bulundu).
+        q = soru("q1", "Hangisi yanlıştır?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="A")
+        q["solution"] = "**YANLIŞ olan D'dir:** Gerekçe burada."
+        self.assertTrue(any("şıkkını anıyor" in f for f in audit_et([q])), audit_et([q]))
+        q["solution"] = "**Yanlış olan A'dır:** Gerekçe burada."
+        self.assertEqual([f for f in audit_et([q]) if "şıkkını anıyor" in f], [])
+
 
 class GorunumTest(unittest.TestCase):
     def test_ham_kod_citi_kullaniciya_tasinamaz(self):

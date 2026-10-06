@@ -186,7 +186,7 @@ _PATCHES = {
             'E': 'Birleşik maliyet ayrım noktasına kadarki ortak maliyettir',
         },
         'D',
-        "Yanlış olan **C**'dir: dağıtım yöntemi değişse de ürünlere düşen paylar değişebilir ama **toplam birleşik maliyet DEĞİŞMEZ**. Diğer ifadeler doğrudur.",
+        'Yanlış ifade, dağıtım yöntemiyle ilgili olandır: dağıtım yöntemi değişse de ürünlere düşen paylar değişebilir ama **toplam birleşik maliyet DEĞİŞMEZ**. Diğer ifadeler doğrudur.',
         'Maliyet muhasebesi - birleşik maliyet',
     ),
     # düzey 2

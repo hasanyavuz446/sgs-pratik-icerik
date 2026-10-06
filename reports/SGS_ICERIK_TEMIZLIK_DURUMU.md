@@ -24,6 +24,28 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 7 Ekim 2026 — MTA kök derinliği gerçeğe oturdu + çözüm harfi dedektörü genişletildi (v242 canlı)
+
+Mali tablolar analizinin 6 paketinden 77 sorunun yalnız kökü değişti; şık, cevap ve dayanak aynı.
+Paketler: oran 11, likidite 13, mali yapı 15, karşılaştırmalı 11, dikey 12, nakit akım 15.
+Sayısal zincir soruları bir analiz durumuna oturtuldu: işletme türü, analistin amacı, cevabı değiştirmeyen ek veri (sektör ortalaması, net kâr, finansman gideri, kısa vadeli yabancı kaynak).
+Nakit akımın 14 soruluk "X hangi faaliyet grubunda" yığınından 11 soru somut işleme çevrildi.
+Karşılaştırmalı 0004'te yüzde bulgusu iki yıllık tutar tablosuyla verildi.
+İki kökte yıla bağlı vergi oranı vardı ("kurumlar vergisi oranı %20/%25"); "soruda kullanılacak vergi oranı" olarak düzeltildi (mali yapı 0016, dikey 0011).
+
+| MTA | Bizim (önce → sonra) | Gerçek (125 soru) |
+|---|---|---|
+| Çeyrekler | 117 / 160 / 207 → 145 / 193 / 277 | 135 / 201 / 281 |
+| 250+ payı | %14 → %33 | %32 |
+| 150 altı | %42 → %27 | %34 |
+
+**Çözüm harfi kusuru (3 soru, üçü de yayındaydı):**
+- Çözüm "YANLIŞ olan D'dir" diyordu, cevap başka harfti: kur farkları 0054 (cevap A), nakit akım 0010 (cevap A), birleşik maliyet 0011 (cevap D).
+- `audit.py` yalnız "Doğru cevap X" ve "**X yanlıştır**" kalıplarını görüyordu.
+- Üçüncü kalıp `SOLUTION_LETTER_OLAN` eklendi ve teste bağlandı. Üç çözümde harf atfı kaldırıldı.
+
+Bilinen test kırılganlığı: uygulamadaki `progress_features_test` "tekrar" testi 00:00–00:10 arasında kırılıyor. Test şimdiki zamanı kullanıyor, vade ise takvim gününe göre hesaplanıyor. İçerikle ilgisiz, ayrı iş olarak işaretlendi.
+
 ## 6 Ekim 2026 — FM 200-249 bandı genişletildi, 250+ payı gerçeğe ulaştı (v241 canlı)
 
 9 paketten 126 sorunun yalnız kökü değişti; şık, cevap ve dayanak aynı (paket başına doğrulandı).
