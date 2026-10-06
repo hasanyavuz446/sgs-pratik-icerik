@@ -91,16 +91,16 @@
     "id": "mat-fonk-gen-0005",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = ax + b doğrusal fonksiyonunda f(1) = 5 ve f(3) = 11 olduğuna göre f(6) kaçtır?",
+    "stem": "Bir su deposundaki su miktarı zamanla doğrusal olarak azalmaktadır. Depoda 2. saatin sonunda 1.280 litre, 5. saatin sonunda 800 litre su bulunmaktadır. Depodaki su miktarını saate bağlayan doğrusal fonksiyona göre depo kaçıncı saatin sonunda tamamen boşalır?",
     "options": {
-      "A": "20",
-      "B": "17",
-      "C": "23",
-      "D": "18",
-      "E": "14"
+      "A": "10",
+      "B": "8",
+      "C": "12",
+      "D": "11",
+      "E": "9"
     },
     "answer": "A",
-    "solution": "f(1) = a + b = 5 ve f(3) = 3a + b = 11 denklemleri taraf tarafa çıkarılır: 2a = 6 → a = 3. Buradan b = 5 − 3 = 2 bulunur. f(6) = 3·6 + 2 = 20.",
+    "solution": "Saatlik azalma (1.280 − 800) / 3 = 160 litredir. Başlangıçtaki su 1.280 + 2 · 160 = 1.600 litre; depo 1.600 / 160 = 10. saatin sonunda boşalır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -245,16 +245,16 @@
     "id": "mat-fonk-gen-0012",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayılar toplamı kaçtır?",
+    "stem": "Gerçel sayılar kümesinde f(x) = 2ˣ − 1 ve g(x) = x² − 4x + 5 ile tanımlı f ve g fonksiyonları veriliyor. Buna göre (f∘g)(3) + (g∘f)(2) toplamı kaçtır?",
     "options": {
-      "A": "3",
-      "B": "1",
+      "A": "7",
+      "B": "4",
       "C": "5",
-      "D": "4",
-      "E": "2"
+      "D": "9",
+      "E": "3"
     },
     "answer": "C",
-    "solution": "(f∘g)(x) = f(2x) = (2x)² + 1 = 4x² + 1 elde edilir. Katsayılar toplamı, ifadede x yerine 1 yazılarak bulunur: 4 + 1 = 5.",
+    "solution": "g(3) = 9 − 12 + 5 = 2 ve f(2) = 4 − 1 = 3 olduğundan (f∘g)(3) = 3. f(2) = 3 ve g(3) = 2 olduğundan (g∘f)(2) = 2. Toplam 5.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -465,16 +465,16 @@
     "id": "mat-fonk-gen-0022",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "Her a, b gerçel sayısı için a ⊗ b = a² − 2b biçiminde tanımlanan işleme göre 3 ⊗ 5 kaçtır?",
+    "stem": "f: ℝ → ℝ olmak üzere f(x) = |x − 2| + |x + 1| biçiminde tanımlanan f fonksiyonunun alabileceği en küçük değer m'dir. f fonksiyonunun bu değeri aldığı tam sayıların sayısı n olduğuna göre m + n toplamı kaçtır?",
     "options": {
-      "A": "19",
-      "B": "1",
-      "C": "2",
-      "D": "−1",
-      "E": "11"
+      "A": "6",
+      "B": "3",
+      "C": "5",
+      "D": "7",
+      "E": "8"
     },
     "answer": "D",
-    "solution": "Tanımda a yerine 3, b yerine 5 yazılır: 3 ⊗ 5 = 3² − 2·5 = 9 − 10 = −1.",
+    "solution": "−1 ≤ x ≤ 2 için f(x) = (2 − x) + (x + 1) = 3'tür; bu aralığın dışında f daha büyüktür. m = 3; bu değeri alan tam sayılar −1, 0, 1, 2 → n = 4. Toplam 7.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -509,16 +509,16 @@
     "id": "mat-fonk-gen-0024",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "x ≠ y olmak üzere x ✻ y = (x + y) / (x − y) biçiminde tanımlanan işleme göre 7 ✻ 3 kaçtır?",
+    "stem": "Bir otopark, park süresi t saat olmak üzere ücreti 0 < t ≤ 2 için f(t) = 50 ₺, 2 < t ≤ 8 için f(t) = 50 + 20(t − 2) ₺ ve t > 8 için f(t) = 200 ₺ biçiminde hesaplamaktadır. Bir sürücü aynı gün otoparkı iki kez kullanmış; ilkinde 5 saat, ikincisinde 10 saat park etmiştir. Buna göre sürücünün ödediği toplam ücret kaç ₺'dir?",
     "options": {
-      "A": "2/5",
-      "B": "10",
-      "C": "4/10",
-      "D": "−5/2",
-      "E": "5/2"
+      "A": "320",
+      "B": "250",
+      "C": "330",
+      "D": "400",
+      "E": "310"
     },
     "answer": "E",
-    "solution": "Tanımda x yerine 7, y yerine 3 yazılır: 7 ✻ 3 = (7 + 3) / (7 − 3) = 10/4 = 5/2.",
+    "solution": "f(5) = 50 + 20 · 3 = 110 ₺. 10 > 8 olduğundan f(10) = 200 ₺ (ikinci kuralı uygulamak 210 ₺ verir). Toplam 110 + 200 = 310 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",
@@ -1103,16 +1103,16 @@
     "id": "mat-fonk-gen-0051",
     "ders": "matematik",
     "konu": "fonksiyon_ustel_logaritma_analitik",
-    "stem": "3x − 4y + 12 = 0 doğrusunun koordinat eksenleriyle oluşturduğu üçgenin alanı kaç birim karedir?",
+    "stem": "Analitik düzlemde 3x − 4y + 12 = 0 doğrusu ile koordinat eksenleri arasında kalan üçgensel bölge bir park alanı olarak planlanmıştır (birim uzunluk 1 metredir). Parkın çevresine tel çekilecek ve iç kısmı çimle kaplanacaktır. Çekilecek telin metre cinsinden uzunluğu ile çimlenecek alanın metrekare cinsinden değerinin toplamı kaçtır?",
     "options": {
-      "A": "6",
-      "B": "5",
-      "C": "7",
-      "D": "12",
-      "E": "24"
+      "A": "18",
+      "B": "12",
+      "C": "6",
+      "D": "24",
+      "E": "15"
     },
     "answer": "A",
-    "solution": "y = 0 için x = −4, x = 0 için y = 3. Eksenlerle oluşan dik üçgenin dik kenarları 4 ve 3 birimdir; alan 4 · 3 / 2 = 6.",
+    "solution": "Doğru eksenleri (−4, 0) ve (0, 3) noktalarında keser; dik kenarlar 4 ve 3, hipotenüs 5'tir. Çevre 12 m, alan 4 · 3 / 2 = 6 m²; toplam 18.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik fonksiyon-logaritma-analitik",

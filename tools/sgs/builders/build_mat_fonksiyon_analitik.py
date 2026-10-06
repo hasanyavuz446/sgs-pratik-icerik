@@ -63,11 +63,10 @@ q("Doğrusal bir f fonksiyonu için f(1) = −5 ve f(4) = 1'dir. f fonksiyonunun
   "Eğim (1 − (−5))/(4 − 1) = 2 ve f(x) = 2x − 7. Grafik x eksenini (7/2, 0), y eksenini (0, −7) noktasında keser. Uzaklık √((7/2)² + 7²) = √(245/4) = 7√5/2.",
   verify=(sp.sqrt(sp.Rational(7, 2)**2 + 7**2), 7*sp.sqrt(5)/2))
 
-q("f(x) = ax + b doğrusal fonksiyonunda f(1) = 5 ve f(3) = 11 olduğuna göre f(6) kaçtır?",
-  "20", ["17", "23", "18", "14"],
-  "f(1) = a + b = 5 ve f(3) = 3a + b = 11 denklemleri taraf tarafa çıkarılır: 2a = 6 → a = 3. "
-  "Buradan b = 5 − 3 = 2 bulunur. f(6) = 3·6 + 2 = 20.",
-  verify=(3*6 + 2, 20))
+q("Bir su deposundaki su miktarı zamanla doğrusal olarak azalmaktadır. Depoda 2. saatin sonunda 1.280 litre, 5. saatin sonunda 800 litre su bulunmaktadır. Depodaki su miktarını saate bağlayan doğrusal fonksiyona göre depo kaçıncı saatin sonunda tamamen boşalır?",
+  "10", ["8", "12", "11", "9"],
+  "Saatlik azalma (1.280 − 800) / 3 = 160 litredir. Başlangıçtaki su 1.280 + 2 · 160 = 1.600 litre; depo 1.600 / 160 = 10. saatin sonunda boşalır.",
+  verify=(sp.solve(sp.Eq(1280 + (t - 2) * sp.Rational(800 - 1280, 3), 0), t)[0], 10))
 
 q("Tanım kümesi {−1, 0, 2} olan f(x) = 3x + 1 fonksiyonunun görüntü kümesindeki elemanların "
   "toplamı kaçtır?",
@@ -106,11 +105,10 @@ q("f(x) = 3x − 2 ve g(x) = x + 4 olmak üzere (g∘f)(a) = (f∘g)(a) − 2a e
   "(g∘f)(a) = 3a + 2 ve (f∘g)(a) = 3(a + 4) − 2 = 3a + 10. 3a + 2 = 3a + 10 − 2a ise 2a = 8 ve a = 4.",
   verify=(sp.solve((3*x - 2 + 4) - (3*(x + 4) - 2 - 2*x), x)[0], 4))
 
-q("f(x) = x² + 1 ve g(x) = 2x olduğuna göre (f∘g)(x) ifadesindeki katsayılar toplamı kaçtır?",
-  "5", ["3", "1", "4", "2"],
-  "(f∘g)(x) = f(2x) = (2x)² + 1 = 4x² + 1 elde edilir. Katsayılar toplamı, ifadede x yerine 1 "
-  "yazılarak bulunur: 4 + 1 = 5.",
-  verify=(( (2*x)**2 + 1 ).subs(x, 1), 5))
+q("Gerçel sayılar kümesinde f(x) = 2ˣ − 1 ve g(x) = x² − 4x + 5 ile tanımlı f ve g fonksiyonları veriliyor. Buna göre (f∘g)(3) + (g∘f)(2) toplamı kaçtır?",
+  "5", ["7", "4", "9", "3"],
+  "g(3) = 9 − 12 + 5 = 2 ve f(2) = 4 − 1 = 3 olduğundan (f∘g)(3) = 3. f(2) = 3 ve g(3) = 2 olduğundan (g∘f)(2) = 2. Toplam 5.",
+  verify=((2**(3**2 - 4 * 3 + 5) - 1) + ((2**2 - 1)**2 - 4 * (2**2 - 1) + 5), 5))
 
 q("f ve g fonksiyonları için g(x) = 2x + 1 ve (f∘g)(x) = 6x + 7 veriliyor. Buna göre f fonksiyonunun grafiğinin y eksenini kestiği noktanın ordinatı kaçtır?",
   "4", ["1", "3", "7", "10"],
@@ -159,10 +157,10 @@ q("f(x) = 5x − 4 ve g(x) = x + 2 olduğuna göre (f∘g)⁻¹ fonksiyonunun gr
   verify=(sp.solve((x - 6)/5, x)[0], 6))
 
 # ══ D. Tanımlı (özel) işlem (4) ══════════════════════════════════════════════
-q("Her a, b gerçel sayısı için a ⊗ b = a² − 2b biçiminde tanımlanan işleme göre 3 ⊗ 5 kaçtır?",
-  "−1", ["19", "1", "2", "11"],
-  "Tanımda a yerine 3, b yerine 5 yazılır: 3 ⊗ 5 = 3² − 2·5 = 9 − 10 = −1.",
-  verify=(3**2 - 2*5, -1))
+q("f: ℝ → ℝ olmak üzere f(x) = |x − 2| + |x + 1| biçiminde tanımlanan f fonksiyonunun alabileceği en küçük değer m'dir. f fonksiyonunun bu değeri aldığı tam sayıların sayısı n olduğuna göre m + n toplamı kaçtır?",
+  "7", ["6", "3", "5", "8"],
+  "−1 ≤ x ≤ 2 için f(x) = (2 − x) + (x + 1) = 3'tür; bu aralığın dışında f daha büyüktür. m = 3; bu değeri alan tam sayılar −1, 0, 1, 2 → n = 4. Toplam 7.",
+  verify=(min(abs(k - 2) + abs(k + 1) for k in range(-10, 11)) + sum(1 for k in range(-10, 11) if abs(k - 2) + abs(k + 1) == 3), 7))
 
 q("a △ b işlemi, a > b için a² + b; a ≤ b için 2b − a biçiminde tanımlanmıştır. "
   "Buna göre (5 △ 2) + (1 △ 4) toplamı kaçtır?",
@@ -171,10 +169,10 @@ q("a △ b işlemi, a > b için a² + b; a ≤ b için 2b − a biçiminde tanı
   "1 △ 4 = 2·4 − 1 = 7. Toplam 27 + 7 = 34.",
   verify=((5**2 + 2) + (2*4 - 1), 34))
 
-q("x ≠ y olmak üzere x ✻ y = (x + y) / (x − y) biçiminde tanımlanan işleme göre 7 ✻ 3 kaçtır?",
-  "5/2", ["2/5", "10", "4/10", "−5/2"],
-  "Tanımda x yerine 7, y yerine 3 yazılır: 7 ✻ 3 = (7 + 3) / (7 − 3) = 10/4 = 5/2.",
-  verify=(sp.Rational(7 + 3, 7 - 3), sp.Rational(5, 2)))
+q("Bir otopark, park süresi t saat olmak üzere ücreti 0 < t ≤ 2 için f(t) = 50 ₺, 2 < t ≤ 8 için f(t) = 50 + 20(t − 2) ₺ ve t > 8 için f(t) = 200 ₺ biçiminde hesaplamaktadır. Bir sürücü aynı gün otoparkı iki kez kullanmış; ilkinde 5 saat, ikincisinde 10 saat park etmiştir. Buna göre sürücünün ödediği toplam ücret kaç ₺'dir?",
+  "310", ["320", "250", "330", "400"],
+  "f(5) = 50 + 20 · 3 = 110 ₺. 10 > 8 olduğundan f(10) = 200 ₺ (ikinci kuralı uygulamak 210 ₺ verir). Toplam 110 + 200 = 310 ₺.",
+  verify=(50 + 20 * (5 - 2) + 200, 310))
 
 q("a ⊙ b = 3a − 2b biçiminde tanımlanan işlemde a ⊙ 4 = 7 olduğuna göre a kaçtır?",
   "5", ["1", "3", "−5", "15"],
@@ -316,10 +314,10 @@ q("Analitik düzlemde A(−3, 4) ve B(5, −2) noktalarını birleştiren doğru
   "y = (4 + (−2))/2 = 1. Orta nokta (1, 1) olur.",
   verify=(sp.Rational(-3 + 5, 2) + sp.Rational(4 - 2, 2), 2))
 
-q("3x − 4y + 12 = 0 doğrusunun koordinat eksenleriyle oluşturduğu üçgenin alanı kaç birim karedir?",
-  "6", ["5", "7", "12", "24"],
-  "y = 0 için x = −4, x = 0 için y = 3. Eksenlerle oluşan dik üçgenin dik kenarları 4 ve 3 birimdir; alan 4 · 3 / 2 = 6.",
-  verify=(sp.Abs(sp.solve(3*x + 12, x)[0]) * sp.Abs(sp.solve(-4*y + 12, y)[0]) / 2, 6))
+q("Analitik düzlemde 3x − 4y + 12 = 0 doğrusu ile koordinat eksenleri arasında kalan üçgensel bölge bir park alanı olarak planlanmıştır (birim uzunluk 1 metredir). Parkın çevresine tel çekilecek ve iç kısmı çimle kaplanacaktır. Çekilecek telin metre cinsinden uzunluğu ile çimlenecek alanın metrekare cinsinden değerinin toplamı kaçtır?",
+  "18", ["12", "6", "24", "15"],
+  "Doğru eksenleri (−4, 0) ve (0, 3) noktalarında keser; dik kenarlar 4 ve 3, hipotenüs 5'tir. Çevre 12 m, alan 4 · 3 / 2 = 6 m²; toplam 18.",
+  verify=(4 + 3 + sp.sqrt(4**2 + 3**2) + sp.Rational(4 * 3, 2), 18))
 
 q("Analitik düzlemde (0, 3) ve (−2, 0) noktalarından geçen doğrunun denklemi hangisidir?",
   "3x − 2y + 6 = 0", ["3x + 2y − 6 = 0", "2x − 3y + 6 = 0", "3x − 2y − 6 = 0", "2x + 3y − 6 = 0"],

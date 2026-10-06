@@ -35,26 +35,26 @@ q("(a − 2)x + 3 = 2x + a denkleminin çözüm kümesi boş küme olduğuna gö
   "4", ["2", "3", "0", "−4"],
   "Denklem (a − 4)x = a − 3 biçimine gelir. Çözüm kümesinin boş olması için x'in katsayısı 0, sağ taraf 0'dan farklı olmalıdır: a = 4 (a − 3 = 1 ≠ 0).",
   verify=(kok(a - 4, a), 4))
-q("Bir konserde öğrenci bileti 150 ₺, tam bilet 250 ₺'dir. Konsere 200 kişi katılmış ve bilet geliri 41.000 ₺ olmuştur. Buna göre kaç öğrenci bileti satılmıştır?",
-  "90", ["130", "100", "110", "120"],
-  "Öğrenci bileti sayısı s ise 150s + 250(200 − s) = 41.000; 50.000 − 100s = 41.000 ve s = 90.",
-  verify=(sp.solve(150*x + 250*(200 - x) - 41000, x)[0], 90))
-q("Bir babanın yaşı iki çocuğunun yaşları toplamının 3 katıdır. Çocukların yaş farkı 4'tür ve 6 yıl sonra babanın yaşı çocukların yaşları toplamının 2 katı olacaktır. Büyük çocuk bugün kaç yaşındadır?",
-  "11", ["16", "15", "13", "14"],
-  "Çocukların yaşları toplamı S ise 3S + 6 = 2(S + 12), S = 18. Büyük çocuk (18 + 4)/2 = 11 yaşındadır.",
-  verify=((sp.solve(3*x + 6 - 2*(x + 12), x)[0] + 4) / 2, 11))
+q("Bir müzede tam bilet 200 ₺, öğrenci bileti 120 ₺'dir; 65 yaş üstü ziyaretçiler ise ücretsiz girmektedir. Bir günde müzeyi 210 kişi ziyaret etmiş, bunların 30'u 65 yaş üstüdür ve günlük bilet geliri 28.800 ₺ olmuştur. Buna göre o gün kaç öğrenci bileti satılmıştır?",
+  "90", ["165", "72", "108", "60"],
+  "Bilet alan 210 − 30 = 180 kişidir. Öğrenci sayısı s ise 200(180 − s) + 120s = 28.800 → 36.000 − 80s = 28.800 → s = 90. Ücretsiz girenleri de bilet alan saymak 165 verir.",
+  verify=(R(200 * 180 - 28800, 80), 90))
+q("Bir annenin bugünkü yaşı, iki çocuğunun yaşları toplamının 3 katıdır. Büyük çocuk küçük çocuktan 4 yaş büyüktür. 6 yıl sonra annenin yaşı, çocuklarının o zamanki yaşları toplamının 2 katından 2 fazla olacaktır. Buna göre küçük çocuğun bugünkü yaşı kaçtır?",
+  "8", ["12", "10", "6", "9"],
+  "Çocukların yaşları toplamı S olsun; anne 3S'dir. 6 yıl sonra: 3S + 6 = 2(S + 12) + 2 → S = 20. Küçük çocuk k ise k + (k + 4) = 20 → k = 8.",
+  verify=((R(2 * 12 + 2 - 6, 1) - 4) / 2, 8))
 q("ax + 4 = 2x + b denkleminin çözüm kümesi gerçel sayılar kümesi olduğuna göre a + b kaçtır?",
   "6", ["2", "4", "−4", "−2"],
   "Her x için sağlanması için iki taraf özdeş olmalıdır: a = 2 ve b = 4. a + b = 6.",
   verify=(2 + 4, 6))
-q("Bir miras üç kardeş arasında paylaştırılmıştır. Büyük kardeş mirasın 1/2'sini, ortanca kardeş 1/3'ünü, küçük kardeş ise kalan 60.000 ₺'yi almıştır. Mirasın tamamı kaç ₺'dir?",
-  "360.000", ["180.000", "240.000", "300.000", "120.000"],
-  "Küçük kardeşe kalan pay 1 − 1/2 − 1/3 = 1/6'dır. Miras 60.000 : (1/6) = 360.000 ₺.",
-  verify=(60000 / (1 - R(1, 2) - R(1, 3)), 360000))
-q("Bir işi Ali tek başına 12 günde, Ayşe tek başına 18 günde bitirebilmektedir. İkisi birlikte 4 gün çalıştıktan sonra Ali işi bırakmıştır. Kalan işi Ayşe kaç günde bitirir?",
-  "8", ["4", "6", "9", "10"],
-  "Birlikte günlük iş 1/12 + 1/18 = 5/36'dır; 4 günde 20/36 = 5/9 biter. Kalan 4/9'luk işi Ayşe 4/9 · 18 = 8 günde bitirir.",
-  verify=((1 - 4*(R(1, 12) + R(1, 18))) * 18, 8))
+q("Bir miras üç kardeş arasında paylaştırılmıştır. Büyük kardeş mirasın 2/5'ini, ortanca kardeş kalanın 1/3'ünü almıştır. Küçük kardeş ise kendi payından 40.000 ₺'yi vergi ve masraflara ayırdıktan sonra elinde 104.000 ₺ kalmıştır. Buna göre ortanca kardeşin payı kaç ₺'dir?",
+  "72.000", ["144.000", "360.000", "96.000", "52.000"],
+  "Büyük kardeşten sonra mirasın 3/5'i kalır; ortanca bunun 1/3'ünü, yani mirasın 1/5'ini alır. Küçük kardeşin payı 2/5'tir ve 104.000 + 40.000 = 144.000 ₺'dir. Miras 360.000 ₺, ortancanın payı 72.000 ₺.",
+  verify=(R(144000, 1) / R(2, 5) * R(1, 5), 72000))
+q("Bir duvarı usta tek başına 12 günde, çırak tek başına 20 günde örebilmektedir. Usta ile çırak birlikte 3 gün çalıştıktan sonra usta başka bir işe geçmiş, çırak 2 gün tek başına çalışmıştır. Ardından usta geri dönmüş ve kalan işi ikisi birlikte bitirmiştir. Buna göre duvar toplam kaç günde tamamlanmıştır?",
+  "8,75", ["7,5", "8", "9,5", "10"],
+  "Birlikte günlük hız 1/12 + 1/20 = 2/15. İlk 3 günde 2/5, çırağın 2 gününde 1/10 biter; toplam 1/2. Kalan 1/2 için (1/2) / (2/15) = 3,75 gün gerekir. Toplam 3 + 2 + 3,75 = 8,75 gün.",
+  verify=(3 + 2 + (1 - 3 * (R(1, 12) + R(1, 20)) - 2 * R(1, 20)) / (R(1, 12) + R(1, 20)), R(35, 4)))
 
 # ══ İkinci derece (10) ══════════════════════════════════════════════════════
 q("x² − 7x + 10 = 0 denkleminin kökleri x₁ ve x₂ olduğuna göre x₁² + x₂² kaçtır?",
@@ -153,18 +153,18 @@ q("Ali, Berk ve Can'ın yaşları toplamı 36'dır. Ali ile Berk'in yaşları to
   "10", ["8", "11", "12", "14"],
   "Can'ın yaşı 36 − 22 = 14, Berk'in yaşı 26 − 14 = 12, Ali'nin yaşı 22 − 12 = 10.",
   verify=(sp.solve([x + y + z - 36, x + y - 22, y + z - 26], [x, y, z])[x], 10))
-q("Aralarında 360 km bulunan iki şehirden iki araç aynı anda birbirine doğru hareket etmiştir. Araçlardan birinin hızı diğerinden 20 km/sa fazladır. Araçlar 3 saat sonra karşılaştığına göre hızlı aracın hızı kaç km/sa'tir?",
-  "70", ["50", "60", "65", "80"],
-  "Yavaş aracın hızı v ise 3(v + v + 20) = 360, 2v + 20 = 120 ve v = 50. Hızlı aracın hızı 70 km/sa.",
-  verify=(sp.solve(3*(2*x + 20) - 360, x)[0] + 20, 70))
+q("Bir bisikletli A noktasından B noktasına saatte 18 km hızla gitmiş, B'de beklemeden aynı güzergâhı izleyerek saatte 12 km hızla geri dönmüştür. Dönüşü, gidişinden 1 saat 40 dakika uzun sürmüştür. Buna göre bisikletlinin gidiş-dönüş boyunca aldığı toplam yol kaç km'dir?",
+  "120", ["60", "100", "144", "90"],
+  "A ile B arası d km olsun: d/12 − d/18 = 5/3 saat → d/36 = 5/3 → d = 60 km. Gidiş-dönüş toplam 120 km'dir; tek yön uzaklık 60 km'dir.",
+  verify=(2 * kok(x / 12 - x / 18 - R(5, 3)), 120))
 q("3ˣ · 9ʸ = 81 ve 2ˣ : 4ʸ = 1/2 olduğuna göre x · y çarpımı kaçtır?",
   "15/8", ["3/2", "5/4", "2", "15/4"],
   "3ˣ⁺²ʸ = 3⁴ ise x + 2y = 4; 2ˣ⁻²ʸ = 2⁻¹ ise x − 2y = −1. Toplanırsa 2x = 3, x = 3/2 ve y = 5/4. Çarpım 15/8.",
   verify=(sp.Rational(3, 2) * sp.Rational(5, 4), R(15, 8)))
-q("Bir otoparkta bulunan otomobil ve motosikletlerin toplam sayısı 40, tekerlek sayısı 130'dur. Otoparkta kaç otomobil vardır?",
-  "25", ["45", "40", "30", "35"],
-  "Otomobil o, motosiklet 40 − o: 4o + 2(40 − o) = 130 → 2o = 50 → o = 25.",
-  verify=(kok(4*x + 2*(40 - x) - 130), 25))
+q("Bir otoparkta otomobil, motosiklet ve üç tekerlekli araçlar bulunmaktadır. Araçların toplam sayısı 50, toplam tekerlek sayısı 170'tir. Üç tekerlekli araçların sayısı motosikletlerin sayısının yarısı kadar olduğuna göre otoparkta kaç otomobil vardır?",
+  "32", ["28", "36", "30", "26"],
+  "Motosiklet sayısı m, üç tekerlekli m/2, otomobil 50 − 1,5m olsun. 4(50 − 1,5m) + 2m + 3(m/2) = 170 → 200 − 2,5m = 170 → m = 12. Otomobil sayısı 50 − 18 = 32.",
+  verify=(50 - R(3, 2) * kok(4 * (50 - R(3, 2) * x) + 2 * x + 3 * x / 2 - 170), 32))
 
 # ══ Eşitsizlikler (10) ══════════════════════════════════════════════════════
 q("3 − 2x ≥ 7 eşitsizliğinin çözüm kümesi aşağıdakilerden hangisidir?",
@@ -227,18 +227,18 @@ q("İki basamaklı bir sayının rakamları toplamı 11'dir. Rakamların yerleri
   verify=(10*sp.solve([x + y - 11, y - x - 3], [x, y])[x] + sp.solve([x + y - 11, y - x - 3], [x, y])[y], 47))
 
 # ══ Denklem kurma (14) ══════════════════════════════════════════════════════
-q("Bir davette misafirler masalara 5'er kişi oturduğunda 8 kişi ayakta kalıyor; 7'şer kişi oturduğunda ise 2 masa boş kalıyor. Davette kaç misafir vardır?",
-  "63", ["55", "56", "49", "48"],
-  "Masa sayısı m: 5m + 8 = 7(m − 2) → 2m = 22 → m = 11. Misafir sayısı 5 · 11 + 8 = 63.",
-  verify=(5 * kok(5*x + 8 - 7*(x - 2)) + 8, 63))
+q("Bir düğün salonunda misafirler 8'er kişilik masalara oturtulduğunda 12 kişi ayakta kalmaktadır. Misafirler 10'ar kişilik oturtulduğunda ise 3 masa tamamen boş kalmakta, bir masada 4 kişi oturmakta ve diğer masalar tam dolu olmaktadır. Buna göre salonda kaç misafir vardır?",
+  "204", ["196", "212", "180", "240"],
+  "Masa sayısı n olsun: 8n + 12 = 10(n − 4) + 4 → 2n = 48 → n = 24. Misafir sayısı 8 · 24 + 12 = 204.",
+  verify=(8 * kok(8 * x + 12 - (10 * (x - 4) + 4)) + 12, 204))
 q("Ardışık üç çift sayının toplamı 78 olduğuna göre bu sayıların en büyüğü kaçtır?",
   "28", ["26", "24", "30", "32"],
   "Sayılar n − 2, n, n + 2: 3n = 78 → n = 26. En büyüğü 28.",
   verify=(R(78, 3) + 2, 28))
-q("Bir kitapçı tanesi 40 ₺ olan romanlardan ve tanesi 25 ₺ olan dergilerden toplam 30 adet satarak 1.020 ₺ gelir elde etmiştir. Kaç roman satılmıştır?",
-  "18", ["12", "20", "15", "24"],
-  "40r + 25(30 − r) = 1.020 → 15r + 750 = 1.020 → r = 18.",
-  verify=(kok(40*x + 25*(30 - x) - 1020), 18))
+q("Bir kitapçı tanesi 40 ₺'den roman, tanesi 25 ₺'den dergi ve tanesi 15 ₺'den kitap ayracı satmaktadır. Bir günde toplam 60 ürün satılmış ve 1.620 ₺ gelir elde edilmiştir. Satılan ayraç sayısı dergi sayısının 2 katı olduğuna göre o gün kaç roman satılmıştır?",
+  "24", ["18", "30", "12", "20"],
+  "Dergi d, ayraç 2d, roman 60 − 3d olsun: 40(60 − 3d) + 25d + 30d = 1.620 → 2.400 − 65d = 1.620 → d = 12. Roman sayısı 60 − 36 = 24.",
+  verify=(60 - 3 * kok(40 * (60 - 3 * x) + 25 * x + 30 * x - 1620), 24))
 q("Bir sınıftaki öğrenciler sıralara 2'şer oturursa 6 öğrenci ayakta kalıyor, 3'er oturursa 4 sıra boş kalıyor. Sınıfta kaç öğrenci vardır?",
   "42", ["36", "48", "40", "54"],
   "Sıra sayısı s: 2s + 6 = 3(s − 4) → s = 18. Öğrenci sayısı 2 · 18 + 6 = 42.",
@@ -247,18 +247,18 @@ q("İki doğal sayının toplamı 50'dir. Büyük sayı küçük sayıya bölün
   "38", ["36", "12", "40", "37"],
   "Küçük k ise büyük 3k + 2'dir. 4k + 2 = 50 → k = 12; büyük sayı 38.",
   verify=(3 * kok(4*x + 2 - 50) + 2, 38))
-q("Bir otobüsteki kadın yolcuların sayısı erkek yolcuların sayısının 2 katıdır. Bir durakta 6 kadın inip 3 erkek bindiğinde kadın ve erkek yolcu sayıları eşitleniyor. Başlangıçta otobüste kaç yolcu vardı?",
-  "27", ["18", "24", "30", "36"],
-  "Erkek e, kadın 2e: 2e − 6 = e + 3 → e = 9. Başlangıçta 9 + 18 = 27 yolcu vardı.",
-  verify=(3 * kok(2*x - 6 - (x + 3)), 27))
-q("Bir sınavda her doğru cevap 4 puan kazandırmakta, her yanlış cevap 1 puan götürmektedir. 50 sorunun tamamını cevaplayan bir öğrenci 125 puan almıştır. Öğrenci kaç soruyu doğru cevaplamıştır?",
-  "35", ["30", "40", "25", "32"],
-  "4d − (50 − d) = 125 → 5d = 175 → d = 35.",
-  verify=(kok(4*x - (50 - x) - 125), 35))
-q("Bir kumbarada yalnız 1 ₺'lik ve 5 ₺'lik madeni paralar vardır. 1 ₺'liklerin sayısı 5 ₺'liklerin sayısının 3 katıdır. Kumbaradaki toplam para 96 ₺ olduğuna göre kaç tane 5 ₺'lik vardır?",
-  "12", ["36", "16", "24", "8"],
-  "5 ₺'lik sayısı f ise 1 ₺'likler 3f'dir: 3f + 5f = 8f = 96 → f = 12.",
-  verify=(kok(3*x + 5*x - 96), 12))
+q("Bir otobüsteki kadın yolcuların sayısı erkek yolcuların sayısının 2 katıdır. İlk durakta 6 kadın inip 3 erkek, ikinci durakta ise 4 erkek inip 5 kadın binmiştir. Son durumda kadın yolcuların sayısı erkek yolcuların sayısının 3 katından 13 eksik olduğuna göre başlangıçta otobüste kaç yolcu vardı?",
+  "45", ["42", "48", "36", "51"],
+  "Başlangıçta e erkek, 2e kadın olsun. Son durumda kadın 2e − 6 + 5 = 2e − 1, erkek e + 3 − 4 = e − 1'dir. 2e − 1 = 3(e − 1) − 13 → e = 15. Başlangıçtaki yolcu sayısı 3e = 45.",
+  verify=(3 * kok(2 * x - 1 - (3 * (x - 1) - 13)), 45))
+q("Bir sınavda her doğru cevap 4 puan kazandırmakta, her yanlış cevap 1 puan götürmekte, boş bırakılan sorular ise puanı etkilememektedir. 60 soruluk bu sınavda bir öğrenci 8 soruyu boş bırakmış ve 158 puan almıştır. Buna göre öğrencinin doğru cevap sayısı kaçtır?",
+  "42", ["40", "44", "38", "47"],
+  "Cevaplanan soru 52'dir: d + y = 52 ve 4d − y = 158 → 5d = 210 → d = 42 (yanlış 10). Boş soruları yanlış saymak farklı sonuç verir.",
+  verify=(kok(4 * x - (52 - x) - 158), 42))
+q("Bir kumbarada yalnız 1 ₺'lik, 5 ₺'lik ve 10 ₺'lik paralar vardır. 1 ₺'liklerin sayısı 5 ₺'liklerin sayısının 3 katı, 10 ₺'liklerin sayısı ise 5 ₺'liklerin sayısından 4 eksiktir. Kumbaradaki toplam para 248 ₺ olduğuna göre kumbarada toplam kaç tane para vardır?",
+  "76", ["64", "72", "80", "60"],
+  "5 ₺'lik sayısı f olsun: 3f · 1 + 5f + 10(f − 4) = 248 → 18f = 288 → f = 16. Para sayısı 48 + 16 + 12 = 76.",
+  verify=(5 * kok(3 * x + 5 * x + 10 * (x - 4) - 248) - 4, 76))
 q("Bir sayının 3 katının 7 eksiği, aynı sayının 2 katının 5 fazlasına eşittir. Bu sayının karesi kaçtır?",
   "144", ["12", "24", "36", "121"],
   "3n − 7 = 2n + 5 → n = 12. Karesi 144.",
@@ -275,10 +275,10 @@ q("Ardışık iki tek sayının karelerinin farkı 56 olduğuna göre küçük s
   "13", ["15", "11", "14", "7"],
   "(n + 2)² − n² = 4n + 4 = 56 → n = 13.",
   verify=(kok((x + 2)**2 - x**2 - 56), 13))
-q("Bir depodaki yükün yarısının 20 kg fazlası alınıyor; ardından kalanın yarısının 10 kg fazlası daha alınıyor. Depoda 25 kg yük kaldığına göre başlangıçta kaç kg yük vardı?",
-  "180", ["140", "160", "200", "120"],
-  "Sondan başa: ikinci alımdan önce kalan K için K/2 − 10 = 25 → K = 70. İlk alımda L/2 − 20 = 70 → L = 180 kg.",
-  verify=(kok((x/2 - 20)/2 - 10 - 25), 180))
+q("Bir depodaki buğdayın önce 1/4'ünün 30 ton fazlası satılmıştır. Ardından kalan buğdayın 2/5'inin 10 ton fazlası bir fabrikaya gönderilmiş, son olarak kalanın yarısı başka bir depoya aktarılmıştır. Depoda 40 ton buğday kaldığına göre başlangıçta depoda kaç ton buğday vardı?",
+  "240", ["200", "280", "320", "160"],
+  "Geriye doğru gidilir: aktarımdan önce 80 ton vardı. Fabrikaya gönderimden sonra kalan (3/5)K − 10 = 80 → K = 150 ton. İlk satıştan sonra kalan (3/4)B − 30 = 150 → B = 240 ton.",
+  verify=(kok((R(3, 5) * (R(3, 4) * x - 30) - 10) / 2 - 40), 240))
 q("x ve y pozitif tam sayılardır. 3x + 5y = 47 eşitliğini sağlayan kaç farklı (x, y) ikilisi vardır?",
   "3", ["2", "4", "5", "9"],
   "y = 1 → x = 14; y = 4 → x = 9; y = 7 → x = 4. y = 10 için x negatif olur. Üç ikili vardır.",

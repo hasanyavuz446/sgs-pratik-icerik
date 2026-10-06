@@ -24,6 +24,25 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 7 Ekim 2026 — matematik kök derinliği gerçeğe oturdu (v244 canlı)
+
+Gerçek sınavdaki uzun matematik soruları çok adımlı sözel problemlerdir: yüzde-kâr zinciri, karışım, iş-havuz, yaş, bilet geliri.
+Orta bant soruları ise parçalı tanımlı işlem, tek-çift öncüllü, modüler sıra, tanımlı bileşke ve analitik uygulamalardır.
+Kökü anlatıyla uzatmak burada dolgu olurdu; bu yüzden 44 soru yeni veriyle yeniden yazıldı:
+- Oran-yüzde 12 ve denklem 12: çok adımlı problemler.
+- Sayılar 9 ve fonksiyon 5: orta bant soruları.
+- Limit 6: aynı kalıptaki 16 limit hesabından 6'sı uygulama sorusuna çevrildi (marjinal maliyet, hız-ivme, duvara dayalı alan, uzun vadeli satış, ilaç yoğunluğu, kutu hacmi).
+
+Her sonuç builder içinde sympy/kesirli aritmetikle bağımsız doğrulandı. Cevap harfleri değişmedi.
+Yeni metinlerde ASCII `*` ve `_` yok; matematik gösterim testi geçti.
+Kurgular gerçek kitapçıktakilerden bilerek farklı tutuldu: işe alınan mühendis oranı, kafile bileti ve yolun %60'ında hız düşürme yapıları kopyalanmadı.
+
+| Matematik | Bizim (önce → sonra) | Gerçek (127) |
+|---|---|---|
+| Çeyrekler | 75 / 94 / 133 → 78 / 109 / 152 | 71 / 111 / 155 |
+| 150–249 | %15 → %18 | %20 |
+| 250+ | %0 → %9 | %8 |
+
 ## 7 Ekim 2026 — Türkçe orta bant: örnek cümleli ve kurallı kökler (v243 canlı)
 
 Gerçek Türkçe dağılımı iki tepelidir: kısa kavram soruları ve uzun paragraf soruları. Arada %12'lik bir orta bant vardır: tırnak içinde örnek cümle ya da kural tanımı, ardından "yukarıdaki göreviyle / bu kurala uygun / benzeri" sorusu.

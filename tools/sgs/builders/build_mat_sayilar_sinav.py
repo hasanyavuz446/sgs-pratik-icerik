@@ -114,14 +114,17 @@ q("x pozitif bir gerçel sayı olmak üzere x − 1/x = 3 olduğuna göre x + 1/
   "√13", ["√11", "3", "√7", "13"],
   "(x + 1/x)² = (x − 1/x)² + 4 = 9 + 4 = 13. x pozitif olduğundan x + 1/x = √13.",
   verify=(sp.simplify((x + 1 / x).subs(x, (3 + sp.sqrt(13)) / 2)), sp.sqrt(13)))
-q("a − b = 5 ve a·b = 6 olduğuna göre a² + b² kaçtır?",
-  "37", ["13", "31", "25", "19"],
-  "(a − b)² = a² + b² − 2ab = 25. a² + b² = 25 + 12 = 37.",
-  verify=(5**2 + 2*6, 37))
-q("a + b = 7 ve a² + b² = 29 olduğuna göre a·b kaçtır?",
-  "10", ["20", "22", "11", "9"],
-  "(a + b)² = a² + b² + 2ab → 49 = 29 + 2ab → ab = 10.",
-  verify=(R(7**2 - 29, 2), 10))
+q("a, b ve c pozitif tam sayılardır. a + 2b sayısı tek, a + c sayısı tek ve b · c sayısı çift olduğu bilinmektedir. Buna göre aşağıdaki ifadelerden hangisinin değeri kesinlikle çift sayıdır?",
+  "a · c", ["a + b", "b + c", "a + b + c", "a² + c"],
+  "a + 2b tek ise a tektir. a + c tek ise c çifttir; bu durumda b · c her b için çifttir ve b hakkında bilgi vermez. a · c (tek · çift) kesinlikle çifttir; a² + c tektir; b'ye bağlı ifadeler kesin değildir.",
+  verify=(sp.true if all((a_ * c_) % 2 == 0 for a_ in range(1, 9) for b_ in range(1, 9) for c_ in range(1, 9)
+                          if (a_ + 2 * b_) % 2 == 1 and (a_ + c_) % 2 == 1 and (b_ * c_) % 2 == 0)
+          and not all((a_ + b_) % 2 == 0 for a_ in range(1, 9) for b_ in range(1, 9) for c_ in range(1, 9)
+                      if (a_ + 2 * b_) % 2 == 1 and (a_ + c_) % 2 == 1 and (b_ * c_) % 2 == 0) else sp.false, sp.true))
+q("Bir marangoz dikdörtgen biçimli bir masa tablası hazırlamıştır. Tablanın uzun ve kısa kenarlarının uzunlukları toplamı 17 dm, bir köşeden karşı köşeye ölçülen köşegen uzunluğu ise 13 dm'dir. Buna göre masa tablasının alanı kaç dm²'dir?",
+  "60", ["120", "72", "84", "30"],
+  "Kenarlar a ve b olsun: a + b = 17 ve a² + b² = 13² = 169. (a + b)² = a² + b² + 2ab → 289 = 169 + 2ab → ab = 60 dm² (kenarlar 12 ve 5).",
+  verify=(R(17**2 - 13**2, 2), 60))
 q("İki pozitif tam sayının karelerinin farkı 45, kendilerinin farkı 5'tir. Buna göre büyük sayı küçük sayının kaç katıdır?",
   "7/2", ["2", "3", "5/2", "9/2"],
   "a² − b² = (a − b)(a + b) olduğundan a + b = 45 / 5 = 9. a − b = 5 ile a = 7, b = 2 bulunur. Oran 7/2.",
@@ -130,10 +133,10 @@ q("x pozitif bir gerçel sayı olmak üzere x² + 1/x² = 7 olduğuna göre x³ 
   "18", ["21", "24", "27", "343"],
   "(x + 1/x)² = 7 + 2 = 9 ve x pozitif olduğundan x + 1/x = 3. x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x) = 27 − 9 = 18.",
   verify=(sp.simplify((x**3 + 1 / x**3).subs(x, (3 + sp.sqrt(5)) / 2)), 18))
-q("x ve y pozitif gerçel sayılar, x² + y² = 20 ve x·y = 8 olduğuna göre x + y kaçtır?",
-  "6", ["4", "2√7", "36", "√20"],
-  "(x + y)² = x² + y² + 2xy = 20 + 16 = 36. x + y pozitif olduğundan 6'dır.",
-  verify=(sp.sqrt(20 + 2*8), 6))
+q("Dikdörtgen biçimli bir bahçenin alanı 48 m², kenar uzunluklarının kareleri toplamı ise 100'dür. Bahçenin çevresine, köşelere de birer tane gelecek biçimde aralarında 1'er metre boşluk bırakılarak çit direkleri dikilecektir. Buna göre kaç direk gerekir?",
+  "28", ["14", "24", "30", "26"],
+  "Kenarlar a ve b ise (a + b)² = a² + b² + 2ab = 100 + 96 = 196 → a + b = 14 m. Çevre 28 m'dir; kapalı bir çevrede 1 m aralıkla 28 direk gerekir.",
+  verify=(2 * sp.sqrt(100 + 2 * 48), 28))
 q("Kenar uzunluğu 101 cm olan kare biçimli bir levhanın ortasından kenar uzunluğu 99 cm olan kare biçimli bir parça kesilip çıkarılmıştır. Levhanın kalan kısmının alanı kaç cm²'dir?",
   "400", ["4", "200", "396", "392"],
   "Kalan alan 101² − 99² = (101 − 99)(101 + 99) = 2 · 200 = 400 cm².",
@@ -195,10 +198,10 @@ q("Dört basamaklı 3A4B sayısı 5 ve 9 ile tam bölünebildiğine göre A'nın
   "8", ["6", "2", "11", "13"],
   "5 ile bölünebilme için B = 0 ya da 5. B = 0 ise 7 + A, 9'un katı → A = 2. B = 5 ise 12 + A → A = 6. Toplam 8.",
   verify=(sum({A for A in range(10) for B in (0, 5) if (3000 + 100*A + 40 + B) % 45 == 0}), 8))
-q("EBOB(84, 120) + EKOK(12, 18) işleminin sonucu kaçtır?",
-  "48", ["54", "60", "78", "72"],
-  "EBOB(84, 120) = 12, EKOK(12, 18) = 36. Toplam 48.",
-  verify=(sp.gcd(84, 120) + sp.lcm(12, 18), 48))
+q("Bir kırtasiye, elindeki 84 kalem ile 120 silgiyi hiç artmayacak biçimde paketlemek istemektedir. Her pakette eşit sayıda kalem ve eşit sayıda silgi bulunacak, paket sayısı da olabildiğince çok olacaktır. Buna göre bir paketteki kalem ve silgi sayılarının toplamı kaçtır?",
+  "17", ["12", "22", "19", "34"],
+  "Paket sayısı 84 ile 120'nin ortak böleni olmalı ve en çok olmalıdır: EBOB(84, 120) = 12 paket. Her pakette 84/12 = 7 kalem ve 120/12 = 10 silgi vardır; toplam 17.",
+  verify=(R(84, sp.gcd(84, 120)) + R(120, sp.gcd(84, 120)), 17))
 q("Kenar uzunlukları 84 m ve 60 m olan dikdörtgen biçimli bir arazinin çevresine, her köşeye birer tane gelecek ve aralıkları eşit olacak biçimde ağaç dikilecektir. Buna göre en az kaç ağaç gerekir?",
   "24", ["12", "48", "25", "22"],
   "Aralık 84 ile 60'ın ortak böleni olmalı; en az ağaç için en büyüğü alınır: EBOB = 12 m. Kapalı çevrede ağaç sayısı çevre/aralık = 288/12 = 24.",
@@ -217,10 +220,10 @@ q("a ve b pozitif tam sayılar, a < b, EBOB(a, b) = 6 ve EKOK(a, b) = 72 olduğu
   verify=(min(A + B for A in range(1, 73) for B in range(A + 1, 73) if sp.gcd(A, B) == 6 and sp.lcm(A, B) == 72), 42))
 
 # ══ Mutlak değer ve bölme (6) ═══════════════════════════════════════════════
-q("|x − 3| = 5 denklemini sağlayan x değerlerinin toplamı kaçtır?",
-  "6", ["8", "−2", "10", "16"],
-  "x − 3 = 5 → x = 8; x − 3 = −5 → x = −2. Toplam 6.",
-  verify=(sum(sp.solve(sp.Abs(sp.Symbol('t', real=True) - 3) - 5)), 6))
+q("Bir termostat, oda sıcaklığını 22 °C hedef değerinden en fazla 3 °C sapacak biçimde tutmaktadır. Oda sıcaklığı x °C olmak üzere bu koşul |x − 22| ≤ 3 eşitsizliğiyle ifade edilmektedir. Buna göre termostatın izin verdiği tam sayı sıcaklık değerlerinin toplamı kaçtır?",
+  "154", ["110", "147", "175", "7"],
+  "|x − 22| ≤ 3 → 19 ≤ x ≤ 25. Bu aralıktaki tam sayılar 19, 20, …, 25'tir (7 tane); toplamları 7 · 22 = 154. Uç değerleri dışarıda bırakmak 110 verir.",
+  verify=(sum(range(19, 26)), 154))
 q("x < 0 < y olmak üzere |x − y| + |x| − |y| ifadesinin eşiti aşağıdakilerden hangisidir?",
   "−2x", ["2y", "0", "2x − 2y", "−2y"],
   "x − y negatif olduğundan |x − y| = y − x; |x| = −x; |y| = y. Toplam y − x − x − y = −2x.",
@@ -233,24 +236,24 @@ q("|x + 2| + |x − 4| ifadesinin alabileceği en küçük değer kaçtır?",
   "6", ["2", "4", "0", "8"],
   "İki mutlak değerin toplamı, x sayı doğrusunda −2 ile 4 arasındayken en küçüktür ve bu aralığın uzunluğuna eşittir: 4 − (−2) = 6.",
   verify=(min(abs(R(t, 10) + 2) + abs(R(t, 10) - 4) for t in range(-100, 100)), 6))
-q("n bir doğal sayıdır. n'nin 6 ile bölümünden kalan 4 olduğuna göre 2n + 5 sayısının 6 ile bölümünden kalan kaçtır?",
-  "1", ["3", "5", "2", "4"],
-  "n = 6k + 4 → 2n + 5 = 12k + 13 = 6(2k + 2) + 1. Kalan 1.",
-  verify=((2*4 + 5) % 6, 1))
-q("x pozitif tam sayı olmak üzere 72/x ifadesi tam sayı olacak biçimde x'in alabileceği kaç farklı değer vardır?",
-  "12", ["10", "11", "8", "6"],
-  "x, 72'nin pozitif bölenlerinden biri olmalıdır. 72 = 2³ · 3² → bölen sayısı (3 + 1)(2 + 1) = 12.",
-  verify=(len(sp.divisors(72)), 12))
+q("Bir hastanede A, B, C, D, E ve F adlı altı doktor bu sırayla birer gün nöbet tutmakta, sıra bitince yeniden A'dan başlanmaktadır. Nöbet çizelgesinin ilk günü bir pazartesidir ve ilk nöbeti A tutmuştur. Buna göre 100. günün nöbetini hangi doktor tutar ve bu gün haftanın hangi günüdür?",
+  "D — Salı", ["D — Pazartesi", "C — Salı", "E — Çarşamba", "D — Çarşamba"],
+  "Birinci günden 100. güne 99 gün ilerlenir. 99 = 6 · 16 + 3 olduğundan sıra A'dan 3 adım sonra D'ye gelir. 99 = 7 · 14 + 1 olduğundan gün pazartesiden 1 adım sonra salıdır.",
+  verify=((99 % 6) * 10 + 99 % 7, 31))
+q("Bir bahçıvan 72 fidanı, her sırada eşit sayıda fidan bulunacak ve hiç fidan artmayacak biçimde sıralara dikecektir. Hem sıra sayısı hem de bir sıradaki fidan sayısı 1'den büyük olmalıdır. Buna göre bahçıvan kaç farklı düzen oluşturabilir?",
+  "10", ["12", "6", "11", "8"],
+  "Sıra sayısı 72'nin bir böleni olmalıdır; 72 = 2³ · 3² olduğundan 4 · 3 = 12 pozitif böleni vardır. Sıra sayısı 1 ve 72 olamaz (bir sırada 1 fidan da olamaz), 12 − 2 = 10 düzen kalır.",
+  verify=(len(sp.divisors(72)) - 2, 10))
 
 # ══ İşlem tanımı (6) ════════════════════════════════════════════════════════
 q("Gerçel sayılar kümesinde a ∗ b = a + b − 2ab işlemi tanımlanıyor. Buna göre 3 ∗ (1 ∗ 2) kaçtır?",
   "8", ["−1", "4", "−8", "2"],
   "1 ∗ 2 = 1 + 2 − 4 = −1. 3 ∗ (−1) = 3 − 1 + 6 = 8.",
   verify=((lambda f: f(3, f(1, 2)))(lambda p, r: p + r - 2*p*r), 8))
-q("a △ b = a² − 3b işlemi tanımlanıyor. Buna göre (2 △ 1) △ 3 kaçtır?",
-  "−8", ["8", "−2", "1", "−5"],
-  "2 △ 1 = 4 − 3 = 1. 1 △ 3 = 1 − 9 = −8.",
-  verify=((lambda f: f(f(2, 1), 3))(lambda p, r: p**2 - 3*r), -8))
+q("a ve b gerçel sayılar olmak üzere a ∗ b işlemi; a · b > 0 ise a² − 2b, a · b ≤ 0 ise 3a + b² biçiminde tanımlanıyor. Buna göre (−2) ∗ (1 ∗ 3) işleminin sonucu kaçtır?",
+  "14", ["19", "−1", "4", "10"],
+  "1 · 3 > 0 olduğundan 1 ∗ 3 = 1 − 6 = −5. (−2) · (−5) = 10 > 0 olduğundan (−2) ∗ (−5) = 4 + 10 = 14. İkinci adımda yanlış kural seçmek 19 verir.",
+  verify=((-2)**2 - 2 * (1**2 - 2 * 3), 14))
 q("a ⊕ b = (a + b)/(a − b) işlemi tanımlanıyor. x ⊕ 2 = 3 olduğuna göre x kaçtır?",
   "4", ["2", "6", "8", "3"],
   "(x + 2)/(x − 2) = 3 → x + 2 = 3x − 6 → 2x = 8 → x = 4.",
@@ -259,10 +262,10 @@ q("Gerçel sayılar kümesinde a ∗ b = a + b + ab işlemi tanımlanıyor. Bu i
   "−2/3", ["2/3", "−1/2", "−2", "1/3"],
   "Etkisiz eleman e: a + e + ae = a → e(1 + a) = 0 → e = 0. 2'nin tersi t: 2 + t + 2t = 0 → t = −2/3.",
   verify=(sp.solve(2 + x + 2*x, x)[0], R(-2, 3)))
-q("x ⊗ y = x·y − x − y + 2 işlemi tanımlanıyor. Buna göre 3 ⊗ (2 ⊗ 4) kaçtır?",
-  "7", ["4", "9", "5", "6"],
-  "2 ⊗ 4 = 8 − 2 − 4 + 2 = 4. 3 ⊗ 4 = 12 − 3 − 4 + 2 = 7.",
-  verify=((lambda f: f(3, f(2, 4)))(lambda p, r: p*r - p - r + 2), 7))
+q("Gerçel sayılar kümesinde x ⊗ y = x · y − 2x − 2y + 6 işlemi tanımlanıyor. Bu işlemin etkisiz elemanı e olduğuna göre 5 ⊗ e işleminin sonucu ile e'nin toplamı kaçtır?",
+  "8", ["5", "11", "6", "3"],
+  "x ⊗ e = x her x için sağlanmalıdır: xe − 2x − 2e + 6 = x → x(e − 3) = 2(e − 3) → e = 3. Etkisiz eleman tanımı gereği 5 ⊗ 3 = 5; toplam 5 + 3 = 8.",
+  verify=(5 * 3 - 2 * 5 - 2 * 3 + 6 + 3, 8))
 q("Pozitif tam sayılar kümesinde a ∗ b = EKOK(a, b) − EBOB(a, b) işlemi tanımlanıyor. Buna göre (6 ∗ 8) ∗ 10 kaçtır?",
   "108", ["22", "110", "106", "88"],
   "6 ∗ 8 = 24 − 2 = 22. 22 ∗ 10 = EKOK(22, 10) − EBOB(22, 10) = 110 − 2 = 108.",

@@ -68,10 +68,10 @@ q("Ayşe'nin parasının %25 eksiği, Can'ın parasının %50 fazlasına eşitti
   "600", ["300", "450", "500", "675"],
   "0,75A = 1,5C → A = 2C. A + C = 3C = 900 → C = 300, A = 600 ₺.",
   verify=(2 * R(900, 3), 600))
-q("Bir sayının %30'unun %40'ı 36 olduğuna göre bu sayı kaçtır?",
-  "300", ["120", "360", "240", "270"],
-  "%30'un %40'ı, sayının 0,3 · 0,4 = 0,12'sidir. 0,12n = 36 → n = 300.",
-  verify=(coz(R(3, 10) * R(4, 10) * x - 36), 300))
+q("Bir mağaza tanesi 400 ₺'ye aldığı 50 gömleği %50 kârla etiketleyip 30'unu etiket fiyatından satmıştır. Kalan gömleklerin yarısını etiket fiyatı üzerinden %20 indirimle, geri kalanını ise bu indirimli fiyat üzerinden ayrıca %25 indirimle satmıştır. Buna göre mağazanın bu gömleklerden elde ettiği toplam kâr kaç ₺'dir?",
+  "6.400", ["7.600", "10.000", "6.100", "26.400"],
+  "Etiket fiyatı 400 · 1,5 = 600 ₺. Gelir: 30 · 600 = 18.000; 10 · 480 = 4.800; 10 · 360 = 3.600 → 26.400 ₺. Maliyet 50 · 400 = 20.000 ₺; kâr 6.400 ₺. İkinci indirim etiket fiyatına değil indirimli fiyata uygulanır.",
+  verify=(30 * 600 + 10 * 600 * R(4, 5) + 10 * 600 * R(4, 5) * R(3, 4) - 50 * 400, 6400))
 q("Bir ürünün fiyatı önce %20 artırılmış, ardından yeni fiyat üzerinden %20 indirim yapılmıştır. Ürünün son fiyatı ilk fiyatına göre nasıl değişmiştir?",
   "%4 azalmıştır", ["Değişmemiştir", "%4 artmıştır", "%2 azalmıştır", "%40 azalmıştır"],
   "İlk fiyat 100 alınırsa 120'ye çıkar, sonra %20 indirimle 96 olur. Son fiyat ilk fiyattan %4 azdır.",
@@ -88,10 +88,10 @@ q("Bir kentin nüfusu iki yıl üst üste %10 artarak 72.600 olmuştur. Kentin i
   "60.000", ["58.080", "60.500", "66.000", "60.600"],
   "İki yıllık çarpan 1,1 · 1,1 = 1,21'dir. 72.600 / 1,21 = 60.000.",
   verify=(R(72600) / R(121, 100), 60000))
-q("Bir sayının %15 fazlası ile %15 eksiğinin farkı 42 olduğuna göre bu sayı kaçtır?",
-  "140", ["280", "70", "154", "210"],
-  "1,15n − 0,85n = 0,3n = 42 → n = 140.",
-  verify=(coz(R(3, 10) * x - 42), 140))
+q("Bir üniversitede bir dersin başarı notu, iki ara sınavın aritmetik ortalamasının %60'ı ile dönem projesi notunun %40'ı toplanarak hesaplanmaktadır. Başarı notu 76 ve üzeri olan öğrenciler bir üst seviyedeki derse doğrudan kayıt yaptırabilmektedir. Ara sınavlardan 64 ve 80 alan bir öğrencinin bu hakkı kazanabilmesi için projeden en az kaç alması gerekir?",
+  "82", ["76", "79", "88", "85"],
+  "Ara sınav ortalaması (64 + 80) / 2 = 72; katkısı 72 · 0,60 = 43,2. Kalan 76 − 43,2 = 32,8 puan projeden gelmeli: proje · 0,40 ≥ 32,8 → proje ≥ 82.",
+  verify=((76 - R(64 + 80, 2) * R(3, 5)) / R(2, 5), 82))
 q("Boş bırakılan sorunun olmadığı 60 soruluk bir sınavda bir öğrencinin doğru sayısı, yanlış sayısının %150'si kadardır. Öğrencinin doğru sayısı kaçtır?",
   "36", ["48", "40", "42", "45"],
   "D = 1,5Y ve D + Y = 60 → 2,5Y = 60 → Y = 24, D = 36.",
@@ -102,10 +102,10 @@ q("Maliyeti 800 ₺ olan bir ürünün etiket fiyatı %25 kârla belirlenmiş, a
   "Ne kâr ne zarar edilmiştir", ["40 ₺ kâr edilmiştir", "40 ₺ zarar edilmiştir", "200 ₺ kâr edilmiştir", "160 ₺ zarar edilmiştir"],
   "Etiket fiyatı 800 · 1,25 = 1.000 ₺. %20 indirimle satış fiyatı 800 ₺ olur; bu maliyete eşittir.",
   verify=(800 * R(125, 100) * R(8, 10) - 800, 0))
-q("Bir satıcı bir malı %20 zararla 960 ₺'ye satmıştır. Bu malı %15 kârla satsaydı kaç ₺'ye satardı?",
-  "1.380", ["1.104", "1.150", "1.440", "1.320"],
-  "Maliyet 960 / 0,8 = 1.200 ₺. %15 kârla satış fiyatı 1.200 · 1,15 = 1.380 ₺.",
-  verify=(R(960) / R(8, 10) * R(115, 100), 1380))
+q("Bir elektronik mağazası, KDV hariç maliyeti 2.000 ₺ olan bir ürünün KDV hariç satış fiyatını %40 kârla belirlemekte ve bu fiyata %20 KDV eklemektedir. Kampanya döneminde ürün, KDV dâhil fiyat üzerinden %25 indirimle satılmıştır. Buna göre indirimli satışta mağazanın KDV hariç kâr oranı yüzde kaçtır?",
+  "5", ["15", "26", "20", "10"],
+  "KDV hariç fiyat 2.800 ₺, KDV dâhil 3.360 ₺. İndirimli KDV dâhil fiyat 3.360 · 0,75 = 2.520 ₺; KDV hariç 2.520 / 1,2 = 2.100 ₺. Kâr 100 ₺ → 100 / 2.000 = %5. KDV dâhil tutarla hesaplamak %26 verir.",
+  verify=((2000 * R(7, 5) * R(6, 5) * R(3, 4) / R(6, 5) - 2000) * 100 / 2000, 5))
 q("Bir mağaza etiket fiyatı üzerinden önce %20, ardından kalan fiyat üzerinden %10 indirim yapmaktadır. Toplam indirim oranı yüzde kaçtır?",
   "28", ["26", "25", "24", "18"],
   "100 ₺'lik ürün önce 80 ₺'ye, sonra 72 ₺'ye iner. Toplam indirim 28 ₺, yani %28.",
@@ -126,24 +126,24 @@ q("Bir satıcı elindeki malların 1/3'ünü %30 kârla, kalanını %12 zararla 
   "%2 kâr", ["%18 kâr", "%2 zarar", "%9 kâr", "%6 kâr"],
   "Toplam maliyet 300 alınırsa 100'lük kısım 130'a, 200'lük kısım 176'ya satılır. Gelir 306; kâr 6/300 = %2.",
   verify=(100 * R(13, 10) + 200 * R(88, 100) - 300, 6))
-q("%20 KDV dâhil satış fiyatı 1.200 ₺ olan bir ürünün KDV hariç fiyatı kaç ₺'dir?",
-  "1.000", ["960", "560", "980", "900"],
-  "KDV dâhil fiyat, KDV hariç fiyatın 1,2 katıdır: 1.200 / 1,2 = 1.000 ₺. 1.200'ün %20'sini düşmek (960) yanlış olur.",
-  verify=(R(1200) / R(12, 10), 1000))
-q("Etiket fiyatı üzerinden %30 indirimle 1.050 ₺'ye satılan bir ürünün etiket fiyatı kaç ₺'dir?",
-  "1.500", ["1.365", "1.400", "1.350", "1.600"],
-  "İndirimli fiyat etiket fiyatının %70'idir: 1.050 / 0,7 = 1.500 ₺.",
-  verify=(R(1050) / R(7, 10), 1500))
+q("Üç arkadaş bir iş kurmak için sırasıyla 120.000 ₺, 180.000 ₺ ve 200.000 ₺ sermaye koymuştur. Yıl sonunda elde edilen kârın %20'si işletmede yedek olarak bırakılmış, kalan kısım sermayelerle doğru orantılı olarak paylaştırılmıştır. En fazla sermaye koyan arkadaşın payına 96.000 ₺ düştüğüne göre işletmenin yıl sonu kârı kaç ₺'dir?",
+  "300.000", ["240.000", "288.000", "250.000", "360.000"],
+  "Sermayeler 6 : 9 : 10 oranındadır. 10 pay = 96.000 → 1 pay = 9.600 ₺; dağıtılan kâr 25 · 9.600 = 240.000 ₺. Bu tutar kârın %80'idir: kâr = 240.000 / 0,8 = 300.000 ₺.",
+  verify=(96000 * R(25, 10) / R(4, 5), 300000))
+q("Bir kütüphanedeki kitapların %60'ı roman, kalanı bilim kitabıdır. Kütüphaneye 120 yeni kitap eklenmiş ve bunların 1/3'ü roman olmuştur. Son durumda romanların tüm kitaplar içindeki oranı %55'e düştüğüne göre kütüphanede başlangıçta kaç kitap vardı?",
+  "520", ["640", "480", "600", "400"],
+  "Başlangıç N olsun: 0,6N + 40 = 0,55(N + 120) → 0,05N = 26 → N = 520. Son durumdaki toplam (640) sorulmamaktadır.",
+  verify=(coz(R(3, 5) * x + 40 - R(11, 20) * (x + 120)), 520))
 q("Bir satıcı etiket fiyatını maliyetin %50 fazlası olarak belirlemekte ve etiket fiyatı üzerinden %20 indirim yapmaktadır. Satıcının kâr oranı yüzde kaçtır?",
   "20", ["30", "25", "10", "70"],
   "Maliyet 100 ise etiket 150, indirimli satış 120 olur. Kâr 20, oranı %20.",
   verify=(100 * R(15, 10) * R(8, 10) - 100, 20))
 
 # ══ Karışım (6) ═════════════════════════════════════════════════════════════
-q("Tuz oranı %20 olan 40 kg tuzlu suya 10 kg su ekleniyor. Yeni karışımın tuz oranı yüzde kaçtır?",
-  "16", ["14", "15", "12", "7"],
-  "Tuz miktarı 40 · 0,2 = 8 kg'dır ve değişmez. Yeni oran 8/50 = %16.",
-  verify=(R(8, 50) * 100, 16))
+q("Bir gıda fabrikasında turşu suyu hazırlamak için tuz oranı %20 olan 60 kg tuzlu su kaynatılarak 20 kg'ı buharlaştırılıyor. Soğuyan karışıma, tuz oranı %5 olan 40 kg hafif tuzlu su ekleniyor. Buna göre son karışımın tuz oranı yüzde kaçtır?",
+  "17,5", ["14", "30", "12,5", "22,5"],
+  "Tuz miktarı 60 · 0,20 = 12 kg; buharlaşmada tuz kaybolmaz, karışım 40 kg olur. Eklenen suda 40 · 0,05 = 2 kg tuz vardır. Son karışım 80 kg, tuz 14 kg → 14 / 80 = %17,5.",
+  verify=(R(60 * 20, 100) + R(40 * 5, 100), R(175, 1000) * 80))
 q("Şeker oranı %30 olan 60 litre şerbetten kaç litre su buharlaştırılırsa şeker oranı %45 olur?",
   "20", ["35", "30", "25", "40"],
   "Şeker 18 litredir. 18/(60 − x) = 0,45 → 60 − x = 40 → x = 20.",
@@ -156,10 +156,10 @@ q("Kilogramı 80 ₺ olan çaydan 30 kg ile kilogramı 120 ₺ olan çaydan 20 k
   "96", ["100", "102", "104", "112"],
   "Toplam tutar 2.400 + 2.400 = 4.800 ₺, toplam 50 kg. Kilogram fiyatı 4.800 / 50 = 96 ₺.",
   verify=(R(30 * 80 + 20 * 120, 50), 96))
-q("%25'i un olan 40 kg'lık bir karışıma kaç kg un eklenirse karışımdaki un oranı %40 olur?",
-  "10", ["6", "5", "8", "7"],
-  "(10 + x)/(40 + x) = 0,4 → 10 + x = 16 + 0,4x → 0,6x = 6 → x = 10.",
-  verify=(coz(10 + x - R(4, 10) * (40 + x)), 10))
+q("Boş bir havuzu A musluğu 10 saatte, B musluğu 15 saatte doldurmaktadır. İki musluk birlikte 4 saat açık kaldıktan sonra A musluğu arızalanıp kapanmış ve aynı anda dolu havuzu 30 saatte boşaltan C vanası açılmıştır. Havuzun tamamen dolması için B ve C birlikte kaç saat daha açık kalmalıdır?",
+  "10", ["5", "8", "12", "15"],
+  "A ve B birlikte saatte 1/10 + 1/15 = 1/6 doldurur; 4 saatte havuzun 2/3'ü dolar. Kalan 1/3 için B ve C'nin net hızı 1/15 − 1/30 = 1/30'dur: (1/3) / (1/30) = 10 saat.",
+  verify=((1 - 4 * (R(1, 10) + R(1, 15))) / (R(1, 15) - R(1, 30)), 10))
 q("Süt ve sudan oluşan 50 litrelik bir karışımda süt miktarının su miktarına oranı 3/2'dir. Karışıma kaç litre su eklenirse süt ile su miktarı eşit olur?",
   "10", ["5", "15", "20", "30"],
   "Süt 30, su 20 litredir. Su 30 litreye çıkmalıdır: 10 litre eklenir.",
@@ -212,10 +212,10 @@ q("Akıntı hızının saatte 3 km olduğu bir nehirde bir kayık, akıntı yön
   "5", ["4", "2", "3", "2,5"],
   "Akıntı yönündeki hız 15 km/sa → kayığın durgun sudaki hızı 12 km/sa. Akıntıya karşı hız 9 km/sa; 45/9 = 5 saat.",
   verify=(R(45, (R(45, 3) - 3) - 3), 5))
-q("Bir bisikletli 2 saatte 30 km yol almaktadır. Hızını %20 artırırsa 54 km'lik yolu kaç saatte alır?",
-  "3", ["3,6", "3,5", "4", "3,3"],
-  "Hız 15 km/sa; %20 artışla 18 km/sa olur. 54/18 = 3 saat.",
-  verify=(R(54, R(30, 2) * R(12, 10)), 3))
+q("Aralarında 510 km bulunan A ve B kentlerinden, saat 08.00'de A'dan saatte 60 km hızla bir otobüs, saat 09.00'da B'den saatte 90 km hızla bir otomobil birbirine doğru yola çıkıyor. Otomobil karşılaşmadan önce yolda 30 dakika mola veriyor. Otobüs hiç durmadığına göre iki araç saat kaçta karşılaşır?",
+  "12.18", ["12.00", "11.24", "12.30", "12.48"],
+  "Saat 09.00'a kadar otobüs 60 km yol alır, aradaki uzaklık 450 km kalır. Otomobil t saatin yarım saatinde durur: 60t + 90(t − 0,5) = 450 → 150t = 495 → t = 3,3 saat = 3 saat 18 dakika. Karşılaşma 09.00 + 3.18 = 12.18'dedir.",
+  verify=(coz(60 * x + 90 * (x - R(1, 2)) - 450) * 60, 198))
 
 # ══ Yaş (4) ═════════════════════════════════════════════════════════════════
 q("Bir annenin yaşı kızının yaşının 4 katıdır. 6 yıl sonra annenin yaşı kızının yaşının 2,5 katı olacaktır. Annenin bugünkü yaşı kaçtır?",
@@ -236,10 +236,10 @@ q("Ali'nin bugünkü yaşı, Veli'nin 3 yıl önceki yaşına eşittir. İkisini
   verify=(coz(2*x - 3 - 47), 25))
 
 # ══ Faiz ve ortalama (6) ════════════════════════════════════════════════════
-q("Yıllık %40 basit faizle bankaya yatırılan 25.000 ₺, 9 ayın sonunda kaç ₺ faiz getirir?",
-  "7.500", ["10.000", "7.000", "6.000", "9.000"],
-  "Basit faiz = anapara · oran · süre = 25.000 · 0,40 · 9/12 = 7.500 ₺.",
-  verify=(25000 * R(40, 100) * R(9, 12), 7500))
+q("Bir kişi birikiminin 2/5'ini yıllık %30 basit faizle bir bankaya, kalanını yıllık %20 basit faizle başka bir bankaya yatırmıştır. 9 ayın sonunda iki hesaptan toplam 12.600 ₺ faiz aldığına göre kişinin toplam birikimi kaç ₺'dir?",
+  "70.000", ["52.500", "63.000", "84.000", "56.000"],
+  "Yıllık ağırlıklı faiz 0,4 · 0,30 + 0,6 · 0,20 = 0,24; 9 ayda 0,24 · 9/12 = 0,18. Birikim 12.600 / 0,18 = 70.000 ₺. Süreyi bir yıl almak 52.500 ₺ verir.",
+  verify=(coz(x * (R(2, 5) * R(3, 10) + R(3, 5) * R(1, 5)) * R(9, 12) - 12600), 70000))
 q("Yıllık %30 basit faiz uygulanan bir hesaba yatırılan para 2 yılda 9.000 ₺ faiz getirmiştir. Yatırılan para kaç ₺'dir?",
   "15.000", ["13.500", "18.000", "30.000", "12.000"],
   "Faiz = A · 0,30 · 2 = 0,6A = 9.000 → A = 15.000 ₺.",
@@ -256,10 +256,10 @@ q("Bir çalışan yılın ilk 3 ayında aylık 24.000 ₺, kalan 9 ayında aylı
   "27.000", ["26.000", "25.000", "27.500", "28.000"],
   "Yıllık toplam 3 · 24.000 + 9 · 28.000 = 324.000 ₺. 12 aya bölününce 27.000 ₺. Basit ortalama (26.000) ayların sayısını dikkate almaz.",
   verify=(R(3 * 24000 + 9 * 28000, 12), 27000))
-q("Bir mağazanın üç aylık satış adetleri 120, 150 ve x'tir. Aylık ortalama satış 140 adet olduğuna göre x kaçtır?",
-  "150", ["140", "135", "160", "145"],
-  "Üç ayın toplamı 3 · 140 = 420. x = 420 − 120 − 150 = 150.",
-  verify=(3 * 140 - 120 - 150, 150))
+q("Bir şirketteki 12 çalışanın yaş ortalaması 34'tür. Yaş ortalaması 50 olan 2 çalışan emekli olmuş, yerlerine 3 yeni çalışan alınmıştır. Son durumda şirketteki çalışanların yaş ortalaması 29 olduğuna göre yeni alınan çalışanların yaş ortalaması kaçtır?",
+  "23", ["29", "25", "21", "27"],
+  "Başlangıç yaş toplamı 12 · 34 = 408; emekli olanlar 100 → 308 (10 kişi). Son durumda 13 · 29 = 377. Yeni gelenlerin yaş toplamı 377 − 308 = 69 → ortalama 23.",
+  verify=(R(13 * 29 - (12 * 34 - 2 * 50), 3), 23))
 
 # ══ Kesir problemleri (6) ═══════════════════════════════════════════════════
 q("Bir öğrenci 240 sayfalık bir kitabın ilk gün 1/4'ünü, ikinci gün kalanın 1/3'ünü okumuştur. Kitabın okunmayan kısmı kaç sayfadır?",
@@ -270,10 +270,10 @@ q("Bir kişi aylık gelirinin 2/5'ini kiraya, kalanın 1/3'ünü mutfak giderler
   "30.000", ["20.000", "36.000", "24.000", "40.000"],
   "Kiradan sonra gelirin 3/5'i kalır; bunun 2/3'ü geriye kalır: 3/5 · 2/3 = 2/5. Gelirin 2/5'i 12.000 ₺ → gelir 30.000 ₺.",
   verify=(R(12000) / (R(3, 5) * R(2, 3)), 30000))
-q("3/4'ü dolu olan bir depodan 30 litre su kullanılınca deponun 1/3'ü dolu kalıyor. Deponun tamamı kaç litre su alır?",
-  "72", ["60", "90", "48", "80"],
-  "Kullanılan su deponun 3/4 − 1/3 = 5/12'sidir. (5/12)·V = 30 → V = 72 litre.",
-  verify=(R(30) / (R(3, 4) - R(1, 3)), 72))
+q("Bir öğrenci harçlığının 1/4'ünü kitaba, kalanın 2/5'ini yemeğe harcamıştır. Ertesi gün annesinden 300 ₺ daha harçlık almış ve elindeki paranın yarısını ulaşım kartına yüklemiştir. Son durumda öğrencinin 690 ₺'si kaldığına göre başlangıçtaki harçlığı kaç ₺'dir?",
+  "2.400", ["2.000", "2.760", "3.200", "1.840"],
+  "Harcamalardan sonra harçlığın 3/4 · 3/5 = 9/20'si kalır. 300 ₺ eklenip yarısı harcanınca 690 ₺ kaldığına göre öncesinde 1.380 ₺ vardı: (9/20)H + 300 = 1.380 → H = 2.400 ₺.",
+  verify=(coz((R(9, 20) * x + 300) / 2 - 690), 2400))
 q("Bir sınıftaki öğrencilerin 3/7'si kızdır. Erkek öğrencilerin sayısı kızlarınkinden 6 fazla olduğuna göre sınıfın mevcudu kaçtır?",
   "42", ["36", "48", "35", "28"],
   "Erkekler 4/7, kızlar 3/7'dir; fark mevcudun 1/7'si kadardır. Mevcut 6 · 7 = 42.",
@@ -282,10 +282,10 @@ q("Bir bidondaki zeytinyağının 1/3'ü satıldıktan sonra kalanın yarısı d
   "60", ["40", "80", "30", "120"],
   "Satışlardan sonra başlangıcın 2/3 · 1/2 = 1/3'ü kalır. 1/3 = 20 litre → başlangıç 60 litre.",
   verify=(R(20) / (R(2, 3) * R(1, 2)), 60))
-q("Bir sayının 2/3'ünün 5 fazlası, aynı sayının 3/4'ünden 2 eksiktir. Bu sayı kaçtır?",
-  "84", ["72", "60", "96", "48"],
-  "(2/3)n + 5 = (3/4)n − 2 → 7 = n/12 → n = 84.",
-  verify=(coz(R(2, 3) * x + 5 - (R(3, 4) * x - 2)), 84))
+q("Bir kırtasiye, defterlerin satış fiyatına %25 zam yaptığında günlük satış adedi %20 azalmıştır. Bir hafta sonra zamlı fiyat üzerinden %10 indirim yapılınca günlük satış adedi zamdan önceki düzeyin %90'ına çıkmıştır. Buna göre son durumda günlük satış geliri, zamdan önceki gelire göre nasıl değişmiştir?",
+  "%1,25 artmıştır", ["%12,5 artmıştır", "%1,25 azalmıştır", "Değişmemiştir", "%10 artmıştır"],
+  "Son fiyat ilk fiyatın 1,25 · 0,90 = 1,125 katı, satış adedi 0,90 katıdır. Gelir 1,125 · 0,90 = 1,0125 katına çıkar: %1,25 artış.",
+  verify=(R(5, 4) * R(9, 10) * R(9, 10), R(10125, 10000)))
 
 assert len(Q) == 60, len(Q)
 

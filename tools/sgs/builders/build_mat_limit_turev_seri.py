@@ -41,11 +41,10 @@ x, y, n, k, a = sp.symbols("x y n k a")
 oo = sp.oo
 
 # ══ A. 0/0 belirsizliği (11) ═════════════════════════════════════════════════
-q("lim(x→2) (x² − 4)/(x − 2) limitinin değeri kaçtır?",
-  "4", ["0", "2", "8", "Limit yoktur"],
-  "Doğrudan yerine koymada 0/0 belirsizliği çıkar. Pay iki kare farkıdır: "
-  "x² − 4 = (x − 2)(x + 2). Ortak çarpan sadeleşir ve x + 2 kalır; x → 2 için değer 4 olur.",
-  verify=(sp.limit((x**2 - 4)/(x - 2), x, 2), 4))
+q("Bir ilacın kandaki yoğunluğu, ilaç alındıktan t saat sonra C(t) = 12t / (t² + 4) mg/L olarak modellenmektedir (t > 0). Buna göre kandaki ilaç yoğunluğunun en yüksek olduğu andaki yoğunluk kaç mg/L'dir?",
+  "3", ["2", "6", "4", "12/5"],
+  "C′(t) = 12(4 − t²) / (t² + 4)² = 0 → t = 2 saat. Bu anda C(2) = 24 / 8 = 3 mg/L'dir; t = 2 değerini yoğunluk sanmak 2 verir.",
+  verify=(sp.Rational(12, 1) * 2 / (2**2 + 4) if sp.solve(sp.diff(12 * x / (x**2 + 4), x), x) == [-2, 2] else 0, 3))
 
 q("lim(x→3) (x² − 5x + 6)/(x − 3) limitinin değeri kaçtır?",
   "1", ["0", "3", "−1", "6"],
@@ -53,11 +52,10 @@ q("lim(x→3) (x² − 5x + 6)/(x − 3) limitinin değeri kaçtır?",
   "Ortak çarpan sadeleşir ve x − 2 kalır; x → 3 için değer 1 olur.",
   verify=(sp.limit((x**2 - 5*x + 6)/(x - 3), x, 3), 1))
 
-q("lim(x→1) (x³ − 1)/(x − 1) limitinin değeri kaçtır?",
-  "3", ["1", "0", "2", "Limit yoktur"],
-  "0/0 belirsizliği vardır. Pay küp farkıdır: x³ − 1 = (x − 1)(x² + x + 1). Ortak çarpan "
-  "sadeleşir ve x² + x + 1 kalır; x → 1 için 1 + 1 + 1 = 3 olur.",
-  verify=(sp.limit((x**3 - 1)/(x - 1), x, 1), 3))
+q("Bir fabrikanın x adet ürün için toplam maliyeti M(x) = x³ − 6x² + 15x + 100 ₺ olarak modellenmiştir. Marjinal maliyet M′(x) ile ifade edildiğine göre marjinal maliyetin en düşük olduğu üretim miktarındaki marjinal maliyet kaç ₺'dir?",
+  "3", ["2", "15", "6", "12"],
+  "M′(x) = 3x² − 12x + 15 bir paraboldür; en küçük değeri M″(x) = 6x − 12 = 0 → x = 2'de alır. M′(2) = 12 − 24 + 15 = 3 ₺.",
+  verify=(sp.diff(x**3 - 6 * x**2 + 15 * x + 100, x).subs(x, sp.solve(sp.diff(x**3 - 6 * x**2 + 15 * x + 100, x, 2), x)[0]), 3))
 
 q("lim(x→−2) (x² + 5x + 6)/(x² − 4) limitinin değeri kaçtır?",
   "−1/4", ["1", "1/4", "−4", "0"],
@@ -84,11 +82,10 @@ q("lim(x→1) (x² − 1)/(x² + 3x − 4) limitinin değeri kaçtır?",
   "ayrılır. Ortak çarpan sadeleşir ve (x + 1)/(x + 4) kalır; x → 1 için 2/5 olur.",
   verify=(sp.limit((x**2 - 1)/(x**2 + 3*x - 4), x, 1), sp.Rational(2, 5)))
 
-q("lim(x→0) (x² + 3x)/(2x) limitinin değeri kaçtır?",
-  "3/2", ["0", "3", "1/2", "2/3"],
-  "0/0 belirsizliği vardır. Payda ortak x parantezine alınır: x(x + 3)/(2x). "
-  "x sadeleşir ve (x + 3)/2 kalır; x → 0 için 3/2 olur.",
-  verify=(sp.limit((x**2 + 3*x)/(2*x), x, 0), sp.Rational(3, 2)))
+q("Doğrusal bir yolda hareket eden bir aracın t. saniyedeki konumu s(t) = t³ − 9t² + 24t metre olarak verilmiştir (t ≥ 0). Buna göre aracın hızının sıfır olduğu anlardan ikincisinde aracın ivmesi kaç m/s²'dir?",
+  "6", ["−6", "0", "4", "16"],
+  "Hız v(t) = s′(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4); hız t = 2 ve t = 4 saniyede sıfırdır. İvme a(t) = 6t − 18; t = 4 için a = 6 m/s². Birinci anda ivme −6'dır.",
+  verify=(sp.diff(x**3 - 9 * x**2 + 24 * x, x, 2).subs(x, max(sp.solve(sp.diff(x**3 - 9 * x**2 + 24 * x, x), x))), 6))
 
 q("lim(x→2) (x³ − 8)/(x² − 4) limitinin değeri kaçtır?",
   "3", ["12", "4", "0", "6"],
@@ -97,11 +94,10 @@ q("lim(x→2) (x³ − 8)/(x² − 4) limitinin değeri kaçtır?",
   "x → 2 için 12/4 = 3 olur.",
   verify=(sp.limit((x**3 - 8)/(x**2 - 4), x, 2), 3))
 
-q("lim(x→−1) (x² + 2x + 1)/(x + 1) limitinin değeri kaçtır?",
-  "0", ["1", "−1", "2", "Limit yoktur"],
-  "0/0 belirsizliği vardır. Pay tam karedir: x² + 2x + 1 = (x + 1)². Sadeleşme sonrası "
-  "x + 1 kalır; x → −1 için 0 olur.",
-  verify=(sp.limit((x**2 + 2*x + 1)/(x + 1), x, -1), 0))
+q("Bir çiftçi elindeki 40 m tel ile dikdörtgen biçimli bir alanı çevirecektir. Alanın bir kenarı bir duvara dayanacağı için o kenara tel çekilmeyecek, telin tamamı diğer üç kenarda kullanılacaktır. Buna göre çevrilebilecek en büyük alan kaç m²'dir?",
+  "200", ["100", "400", "150", "225"],
+  "Duvara dik kenarlar y, duvara paralel kenar 40 − 2y olsun. A(y) = y(40 − 2y); A′(y) = 40 − 4y = 0 → y = 10. En büyük alan 10 · 20 = 200 m². Duvar olmasaydı kare için 100 m² bulunurdu.",
+  verify=(sp.maximum(x * (40 - 2 * x), x, sp.Interval(0, 20)), 200))
 
 q("lim(x→1) (√x − 1)/(x − 1) limitinin değeri kaçtır?",
   "1/2", ["2", "1", "0", "1/4"],
@@ -116,15 +112,15 @@ q("lim(x→∞) (3x² + 2x − 1)/(x² − 5) limitinin değeri kaçtır?",
   "katsayıları oranına eşittir: 3/1 = 3.",
   verify=(sp.limit((3*x**2 + 2*x - 1)/(x**2 - 5), x, oo), 3))
 
-q("lim(x→∞) (2x + 7)/(5x − 3) limitinin değeri kaçtır?",
-  "2/5", ["5/2", "0", "∞", "7/3"],
-  "Pay ve payda birinci derecedendir. Limit, baş katsayıların oranıdır: 2/5.",
-  verify=(sp.limit((2*x + 7)/(5*x - 3), x, oo), sp.Rational(2, 5)))
+q("Bir ürünün t. aydaki satış miktarı S(t) = (900t + 400) / (3t + 2) bin adet olarak modellenmektedir. Uzun vadede (t → ∞) aylık satışın yaklaşacağı değer ile ilk aydaki (t = 1) satış miktarı arasındaki fark kaç bin adettir?",
+  "40", ["300", "260", "200", "60"],
+  "lim(t→∞) (900t + 400)/(3t + 2) = 900/3 = 300 bin adettir. S(1) = 1.300 / 5 = 260 bin adet. Fark 300 − 260 = 40 bin adet.",
+  verify=(sp.limit((900 * x + 400) / (3 * x + 2), x, sp.oo) - sp.Rational(900 + 400, 3 + 2), 40))
 
-q("lim(x→∞) (x² + 1)/(x³ − 4) limitinin değeri kaçtır?",
-  "0", ["1", "∞", "−1/4", "1/3"],
-  "Paydanın derecesi paydan büyüktür. Bu durumda oran sonsuzda sıfıra yaklaşır; limit 0'dır.",
-  verify=(sp.limit((x**2 + 1)/(x**3 - 4), x, oo), 0))
+q("Kenar uzunluğu 12 cm olan kare biçimli bir kartonun her köşesinden kenar uzunluğu x cm olan eş kareler kesilip kenarlar yukarı katlanarak üstü açık bir kutu yapılacaktır. Kutunun hacminin en büyük olması için x kaç cm olmalıdır?",
+  "2", ["3", "6", "4", "1"],
+  "V(x) = x(12 − 2x)², 0 < x < 6. V′(x) = (12 − 2x)(12 − 6x) = 0 → x = 2 (x = 6 kutuyu yok eder). En büyük hacim V(2) = 2 · 64 = 128 cm³'tür.",
+  verify=(sp.solve(sp.diff(x * (12 - 2 * x)**2, x), x)[0], 2))
 
 q("lim(x→∞) (4x³ − x)/(2x² + 9) limitinin değeri kaçtır?",
   "∞", ["2", "0", "−∞", "4/9"],

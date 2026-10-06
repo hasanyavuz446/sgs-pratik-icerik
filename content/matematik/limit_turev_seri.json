@@ -3,16 +3,16 @@
     "id": "mat-lts-gen-0001",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→2) (x² − 4)/(x − 2) limitinin değeri kaçtır?",
+    "stem": "Bir ilacın kandaki yoğunluğu, ilaç alındıktan t saat sonra C(t) = 12t / (t² + 4) mg/L olarak modellenmektedir (t > 0). Buna göre kandaki ilaç yoğunluğunun en yüksek olduğu andaki yoğunluk kaç mg/L'dir?",
     "options": {
-      "A": "0",
-      "B": "2",
-      "C": "8",
-      "D": "4",
-      "E": "Limit yoktur"
+      "A": "2",
+      "B": "6",
+      "C": "4",
+      "D": "3",
+      "E": "12/5"
     },
     "answer": "D",
-    "solution": "Doğrudan yerine koymada 0/0 belirsizliği çıkar. Pay iki kare farkıdır: x² − 4 = (x − 2)(x + 2). Ortak çarpan sadeleşir ve x + 2 kalır; x → 2 için değer 4 olur.",
+    "solution": "C′(t) = 12(4 − t²) / (t² + 4)² = 0 → t = 2 saat. Bu anda C(2) = 24 / 8 = 3 mg/L'dir; t = 2 değerini yoğunluk sanmak 2 verir.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
@@ -47,16 +47,16 @@
     "id": "mat-lts-gen-0003",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→1) (x³ − 1)/(x − 1) limitinin değeri kaçtır?",
+    "stem": "Bir fabrikanın x adet ürün için toplam maliyeti M(x) = x³ − 6x² + 15x + 100 ₺ olarak modellenmiştir. Marjinal maliyet M′(x) ile ifade edildiğine göre marjinal maliyetin en düşük olduğu üretim miktarındaki marjinal maliyet kaç ₺'dir?",
     "options": {
-      "A": "1",
-      "B": "0",
-      "C": "2",
-      "D": "Limit yoktur",
+      "A": "2",
+      "B": "15",
+      "C": "6",
+      "D": "12",
       "E": "3"
     },
     "answer": "E",
-    "solution": "0/0 belirsizliği vardır. Pay küp farkıdır: x³ − 1 = (x − 1)(x² + x + 1). Ortak çarpan sadeleşir ve x² + x + 1 kalır; x → 1 için 1 + 1 + 1 = 3 olur.",
+    "solution": "M′(x) = 3x² − 12x + 15 bir paraboldür; en küçük değeri M″(x) = 6x − 12 = 0 → x = 2'de alır. M′(2) = 12 − 24 + 15 = 3 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
@@ -157,16 +157,16 @@
     "id": "mat-lts-gen-0008",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→0) (x² + 3x)/(2x) limitinin değeri kaçtır?",
+    "stem": "Doğrusal bir yolda hareket eden bir aracın t. saniyedeki konumu s(t) = t³ − 9t² + 24t metre olarak verilmiştir (t ≥ 0). Buna göre aracın hızının sıfır olduğu anlardan ikincisinde aracın ivmesi kaç m/s²'dir?",
     "options": {
-      "A": "0",
-      "B": "3",
-      "C": "1/2",
-      "D": "2/3",
-      "E": "3/2"
+      "A": "−6",
+      "B": "0",
+      "C": "4",
+      "D": "16",
+      "E": "6"
     },
     "answer": "E",
-    "solution": "0/0 belirsizliği vardır. Payda ortak x parantezine alınır: x(x + 3)/(2x). x sadeleşir ve (x + 3)/2 kalır; x → 0 için 3/2 olur.",
+    "solution": "Hız v(t) = s′(t) = 3t² − 18t + 24 = 3(t − 2)(t − 4); hız t = 2 ve t = 4 saniyede sıfırdır. İvme a(t) = 6t − 18; t = 4 için a = 6 m/s². Birinci anda ivme −6'dır.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
@@ -201,16 +201,16 @@
     "id": "mat-lts-gen-0010",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→−1) (x² + 2x + 1)/(x + 1) limitinin değeri kaçtır?",
+    "stem": "Bir çiftçi elindeki 40 m tel ile dikdörtgen biçimli bir alanı çevirecektir. Alanın bir kenarı bir duvara dayanacağı için o kenara tel çekilmeyecek, telin tamamı diğer üç kenarda kullanılacaktır. Buna göre çevrilebilecek en büyük alan kaç m²'dir?",
     "options": {
-      "A": "0",
-      "B": "1",
-      "C": "−1",
-      "D": "2",
-      "E": "Limit yoktur"
+      "A": "200",
+      "B": "100",
+      "C": "400",
+      "D": "150",
+      "E": "225"
     },
     "answer": "A",
-    "solution": "0/0 belirsizliği vardır. Pay tam karedir: x² + 2x + 1 = (x + 1)². Sadeleşme sonrası x + 1 kalır; x → −1 için 0 olur.",
+    "solution": "Duvara dik kenarlar y, duvara paralel kenar 40 − 2y olsun. A(y) = y(40 − 2y); A′(y) = 40 − 4y = 0 → y = 10. En büyük alan 10 · 20 = 200 m². Duvar olmasaydı kare için 100 m² bulunurdu.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
@@ -267,16 +267,16 @@
     "id": "mat-lts-gen-0013",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→∞) (2x + 7)/(5x − 3) limitinin değeri kaçtır?",
+    "stem": "Bir ürünün t. aydaki satış miktarı S(t) = (900t + 400) / (3t + 2) bin adet olarak modellenmektedir. Uzun vadede (t → ∞) aylık satışın yaklaşacağı değer ile ilk aydaki (t = 1) satış miktarı arasındaki fark kaç bin adettir?",
     "options": {
-      "A": "5/2",
-      "B": "0",
-      "C": "∞",
-      "D": "7/3",
-      "E": "2/5"
+      "A": "300",
+      "B": "260",
+      "C": "200",
+      "D": "60",
+      "E": "40"
     },
     "answer": "E",
-    "solution": "Pay ve payda birinci derecedendir. Limit, baş katsayıların oranıdır: 2/5.",
+    "solution": "lim(t→∞) (900t + 400)/(3t + 2) = 900/3 = 300 bin adettir. S(1) = 1.300 / 5 = 260 bin adet. Fark 300 − 260 = 40 bin adet.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
@@ -289,16 +289,16 @@
     "id": "mat-lts-gen-0014",
     "ders": "matematik",
     "konu": "limit_turev_seri",
-    "stem": "lim(x→∞) (x² + 1)/(x³ − 4) limitinin değeri kaçtır?",
+    "stem": "Kenar uzunluğu 12 cm olan kare biçimli bir kartonun her köşesinden kenar uzunluğu x cm olan eş kareler kesilip kenarlar yukarı katlanarak üstü açık bir kutu yapılacaktır. Kutunun hacminin en büyük olması için x kaç cm olmalıdır?",
     "options": {
-      "A": "1",
-      "B": "0",
-      "C": "∞",
-      "D": "−1/4",
-      "E": "1/3"
+      "A": "3",
+      "B": "2",
+      "C": "6",
+      "D": "4",
+      "E": "1"
     },
     "answer": "B",
-    "solution": "Paydanın derecesi paydan büyüktür. Bu durumda oran sonsuzda sıfıra yaklaşır; limit 0'dır.",
+    "solution": "V(x) = x(12 − 2x)², 0 < x < 6. V′(x) = (12 − 2x)(12 − 6x) = 0 → x = 2 (x = 6 kutuyu yok eder). En büyük hacim V(2) = 2 · 64 = 128 cm³'tür.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Matematik limit-türev-seri",
