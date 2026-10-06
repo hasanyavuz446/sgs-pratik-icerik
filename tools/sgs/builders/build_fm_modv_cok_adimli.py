@@ -177,7 +177,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        "TMS/TFRS'ye göre satın alınan (devralmadan doğan) şerefiyenin sonraki dönemlerde muhasebeleştirilmesi ile ilgili aşağıdakilerden hangisi doğrudur?",
+        'TFRS uygulayan işletme iki yıl önce bir işletmeyi devralmış ve 600.000 ₺ şerefiye muhasebeleştirmiştir. Şerefiyenin dağıtıldığı nakit üreten birimin performansı beklentilere uygundur ve dönem içinde değer düşüklüğüne işaret eden bir olay yaşanmamıştır.\n\nSatın alınan bu şerefiyenin sonraki dönemlerde muhasebeleştirilmesiyle ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Şerefiye her dönem sonunda rayiç değeriyle yeniden ölçülür ve değerindeki artış dönem geliri olarak yazılır.',
             'B': 'Şerefiye tahsil edilecek bir tutar sayıldığından doğrudan özkaynaklara eklenir ve orada izlenir.',
@@ -401,7 +401,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0027': patch(
-        'İşletmenin, kendi mülkiyetindeki (kiralanmamış) binasına yaptığı kalıcı değer artırıcı harcama nasıl muhasebeleştirilir?',
+        'İşletme, kendi mülkiyetindeki yönetim binasına binanın ekonomik ömrünü uzatan ve değerini artıran 250.000 ₺ tutarında asansör ve dış cephe yalıtımı yaptırmıştır. Bina kiralanmış değildir.\n\nBu kalıcı değer artırıcı harcama nasıl muhasebeleştirilir?',
         {
             'A': 'Harcama işletmeye bir hak sağladığından 260 Haklar hesabına kaydedilir ve yasal koruma süresi boyunca eşit tutarlarla itfa edilir.',
             'B': "Değer artışı işletmeye üstünlük sağladığından 261 Şerefiye hesabına kaydedilir ve VUK'a göre 5 yılda eşit tutarlarla itfa edilir.",
@@ -597,7 +597,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0041': patch(
-        "Tekdüzen Hesap Planı'nda '261 Şerefiye' hesabı ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "İşletme, tanımlanabilir net varlıklarının gerçeğe uygun değeri 2.400.000 ₺ olan bir işletmeyi bütün varlık ve borçlarıyla birlikte 3.000.000 ₺ ödeyerek devralmıştır.\n\nTekdüzen Hesap Planı'nda '261 Şerefiye' hesabıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'İşletmenin kendi faaliyetleriyle içsel olarak oluşturduğu markanın tahmini değerini, her dönem sonunda yeniden hesaplayarak bulunan tutarla bilançoya alır ve orada izler.',
             'B': 'Ortakların işletmeye getirmeyi taahhüt ettikleri ancak henüz nakden ya da ayni olarak ödemedikleri sermaye tutarlarını ayrıntılı olarak izler.',

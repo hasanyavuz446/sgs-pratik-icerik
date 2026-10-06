@@ -499,7 +499,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0034': patch(
-        'Bir işletme demirbaşlarının faydalı ömürlerini ve amortisman oranlarını belirlemek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Yeni kurulan bir tasarım işletmesi yönetim birimi için bilgisayar, büro mobilyası ve bir endüstriyel üç boyutlu yazıcı satın almıştır. İşletme bu demirbaşlar için uygulayacağı faydalı ömürleri ve amortisman oranlarını belirlemek istemektedir.\n\nVergi Usul Kanunu uygulaması bakımından aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Tüm varlıklara %20 oran uygulanır',
             'B': 'Faydalı ömürler Bakanlıkça ilan edilen listelere göre belirlenir',
@@ -765,7 +765,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        "VUK'ta kıst (ay esasına göre) amortisman uygulaması aşağıdaki varlıklardan hangisi için öngörülmüştür?",
+        "Bilanço esasına göre defter tutan bir işletme 1 Ekim'de satış ekibi için bir binek otomobil, depo için bir kamyonet, yönetim katı için büro mobilyası ve üretim için bir makine satın almıştır.\n\nVUK'ta kıst (ay esasına göre) amortisman uygulaması bu varlıklardan hangisi için öngörülmüştür?",
         {
             'A': 'Kamyon ve kamyonetler',
             'B': 'Binek otomobiller',

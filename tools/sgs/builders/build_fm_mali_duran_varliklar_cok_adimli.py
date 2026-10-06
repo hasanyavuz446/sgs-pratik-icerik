@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        'İştirakler ve bağlı ortaklıklar için ayrılan değer düşüklüğü karşılığı hesaplarının (244, 247) ortak niteliği aşağıdakilerden hangisidir?',
+        'İşletme dönem sonunda, maliyeti 500.000 ₺ olan iştirak payında 25.000 ₺, maliyeti 1.200.000 ₺ olan bağlı ortaklık payında 60.000 ₺ kalıcı değer düşüklüğü belirlemiş ve bu tutarları sırasıyla 244 ve 247 numaralı karşılık hesaplarına kaydetmiştir.\n\nBu karşılık hesaplarının (244, 247) ortak niteliği aşağıdakilerden hangisidir?',
         {
             'A': 'İştiraklerden sağlanan temettüleri gösteren gelir hesaplarıdır; alacak kalanı verir ve gelir tablosuna aktarılır.',
             'B': 'Bir yıl içinde ödenecek kısa vadeli borç hesaplarıdır; alacak kalanı verir ve bilançonun pasifinde yer alır.',
@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        "'242 İştirakler' hesabının işleyişi ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "İşletme yıl içinde Y A.Ş.'nin sermayesinin %30'unu temsil eden payları 450.000 ₺'ye satın almış ve yönetime katılmak amacıyla elde tutmaya başlamıştır. Yıl sonunda bu payların üçte birini 160.000 ₺'ye satmıştır.\n\nBu işlemlerin izlendiği '242 İştirakler' hesabının işleyişiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Bir gelir hesabıdır; iştirakten sağlanan temettüler tahsil edildikçe alacaklandırılır ve gelir tablosuna aktarılır.',
             'B': 'Bir pasif (kaynak) hesabıdır; iştirak payı edinildiğinde alacaklandırılır ve dönem sonunda alacak kalanı verir.',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        'Mali duran varlıklar bilançoda hangi değerle (net) gösterilir?',
+        'İşletmenin kayıtlarında maliyeti 800.000 ₺ olan bir iştirak payı bulunmaktadır ve önceki dönemlerde bu pay için 120.000 ₺ değer düşüklüğü karşılığı ayrılmıştır. İşletme dönem sonu bilançosunu hazırlarken payın hangi tutarla gösterileceğini belirlemektedir.\n\nMali duran varlıklar bilançoda hangi değerle (net) gösterilir?',
         {
             'A': 'Maliyet (kayıtlı) bedeli − Ayrılan değer düşüklüğü karşılığı (244/247 vb.)',
             'B': 'Payların ihraç sırasındaki nominal (itibari) değerleri toplamı üzerinden',
@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0036': patch(
-        "VUK'un menkul kıymetlerin değerlemesine ilişkin hükmüne göre, iştirak amacıyla elde tutulan hisse senetleri dönem sonunda hangi değerle değerlenir?",
+        "İşletme iki yıl önce borsada işlem gören X A.Ş.'nin sermayesinin %15'ini temsil eden payları 600.000 ₺'ye satın almış ve yönetime katılmak amacıyla elde tutmaktadır. Dönem sonunda bu payların borsa değeri 750.000 ₺, nominal değeri 300.000 ₺'dir.\n\nVergi Usul Kanunu'nun menkul kıymetlerin değerlemesine ilişkin hükmüne göre bu paylar dönem sonunda hangi değerle değerlenir?",
         {
             'A': 'Tasarruf değeriyle',
             'B': 'Borsa rayiciyle',
@@ -723,7 +723,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "'240 Bağlı Menkul Kıymetler' ile '110 Hisse Senetleri' arasındaki temel fark aşağıdakilerden hangisidir?",
+        'İşletme aynı gün iki yatırım yapmıştır: birkaç ay içinde fiyat artışından yararlanıp satmayı planladığı A A.Ş. hisseleri ile vadesi olan dört yıl boyunca elde tutmayı planladığı B A.Ş. tahvilleri. Muhasebe birimi hisseleri 110 Hisse Senetleri, tahvilleri 240 Bağlı Menkul Kıymetler hesabında izlemiştir.\n\nBu iki hesap arasındaki temel fark aşağıdakilerden hangisidir?',
         {
             'A': 'İki hesap birbirinin tamamen aynısıdır; aralarında vade veya amaç yönünden bir fark bulunmadığından biri diğerinin yerine kullanılabilir.',
             'B': '240 bir yabancı kaynak (borç) hesabı, 110 ise bir gelir hesabıdır; ikisi de bilançonun aktifinde değil, farklı bölümlerinde raporlanır.',

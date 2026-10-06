@@ -51,7 +51,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        "'580 Geçmiş Yıllar Zararları (-)' hesabının özkaynaklar üzerindeki etkisi ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Kuruluşundan bu yana ilk iki yılını zararla kapatan bir anonim şirketin bu zararları, genel kurul kararıyla kapatılıncaya kadar '580 Geçmiş Yıllar Zararları (-)' hesabında toplam 140.000 ₺ olarak izlenmektedir.\n\nBu hesabın özkaynaklar üzerindeki etkisiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Bir yıl içinde ödenecek satıcı borçlarını izleyen kısa vadeli bir yabancı kaynaktır.',
             'B': 'Paraya çevrilebilir bir dönen varlık hesabıdır ve bilançonun aktifinde gösterilir.',
@@ -93,7 +93,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0005': patch(
-        "Türk Ticaret Kanunu'na göre I. tertip genel kanuni yedek akçe (yasal yedek), hangi tutara ulaşıncaya kadar ayrılır?",
+        "Ödenmiş sermayesi 2.000.000 ₺ olan bir anonim şirketin bugüne kadar ayırdığı genel kanuni yedek akçe 360.000 ₺'dir. Şirket bu yıl 500.000 ₺ dönem net kârı elde etmiştir ve kâr dağıtım tablosunu hazırlamaktadır.\n\nTürk Ticaret Kanunu'na göre I. tertip genel kanuni yedek akçe (yasal yedek) hangi tutara ulaşıncaya kadar ayrılır?",
         {
             'A': "Toplam varlıkların %50'sine ulaşıncaya kadar",
             'B': "Ödenmiş sermayenin %5'ine ulaşıncaya kadar",
@@ -205,7 +205,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0013': patch(
-        'İşletmenin geçmiş yıl kârlarını ortaklara nakit temettü olarak dağıtmasının özkaynaklar üzerindeki etkisi aşağıdakilerden hangisidir?',
+        "Genel kurul, 570 Geçmiş Yıllar Kârları hesabındaki 300.000 ₺'nin 120.000 ₺'sini ortaklara nakit kâr payı olarak dağıtmaya karar vermiş ve tutar aynı gün banka hesabından ödenmiştir.\n\nGeçmiş yıl kârlarının ortaklara nakit temettü olarak dağıtılmasının özkaynaklar üzerindeki etkisi aşağıdakilerden hangisidir?",
         {
             'A': 'Dağıtılan kısım kadar özkaynağı (geçmiş yıl kârlarını) azaltır ve işletmeden nakit çıkışı olur.',
             'B': 'Dağıtılan kısım kadar geçmiş yıl kârlarını sermayeye ekleyerek toplam özkaynağı artırır ve varlıkları yükseltir.',
@@ -317,7 +317,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        "'501 Ödenmemiş Sermaye (-)' hesabının niteliği ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "Yeni kurulan bir anonim şirkette ortaklar 1.000.000 ₺ sermaye taahhüt etmiş, bunun 400.000 ₺'sini tescilden önce şirketin banka hesabına yatırmıştır. Kalan tutar yirmi dört ay içinde ödenecektir.\n\nBu süreçte kullanılan '501 Ödenmemiş Sermaye (-)' hesabının niteliğiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'İşletmenin sahip olduğu bina, makine ve taşıtları maliyet bedeliyle izleyen, amortismana tabi tutulan bir maddi duran varlık hesabıdır.',
             'B': 'Ortaklara sermaye taahhüdü için yapılan ödemeleri gösteren, dönem sonunda sonuç hesaplarına aktarılan bir faaliyet gideri hesabıdır.',
@@ -387,7 +387,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        "Emisyon (hisse senetleri ihraç) priminin bir 'sermaye yedeği' sayılmasının nedeni aşağıdakilerden hangisidir?",
+        "Bir anonim şirket sermaye artırımında 25 ₺ nominal değerli paylarını 32 ₺'den satmış ve her pay için oluşan 7 ₺'lik farkı '520 Hisse Senedi İhraç Primleri' hesabına kaydetmiştir.\n\nEmisyon (hisse senedi ihraç) priminin bir 'sermaye yedeği' sayılmasının nedeni aşağıdakilerden hangisidir?",
         {
             'A': 'Bir sermaye hareketi olan hisse senedi ihracından (nominalin üzerinde satıştan) doğması; faaliyet kârıyla ilgisi olmaması',
             'B': 'İşletmenin dönem içindeki olağan faaliyet kârından, tıpkı yasal yedekler gibi belirli bir oranda ayrılarak oluşması ve bir kâr yedeği olması',

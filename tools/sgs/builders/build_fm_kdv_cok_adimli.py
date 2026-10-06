@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        "İşletme KDV dahil 108.000 ₺ bedelle (%20 KDV'ye tabi) mal satmıştır. Bu satış nedeniyle 391 Hesaplanan KDV hesabına yazılacak tutar kaç ₺'dir?",
+        "Ev eşyası satan bir mağaza, KDV dâhil etiket fiyatı 108.000 ₺ olan bir mutfak takımını bir müşterisine satmış ve bedeli kredi kartıyla tahsil etmiştir. Ürün %20 oranında KDV'ye tabidir.\n\nBu satış nedeniyle 391 Hesaplanan KDV hesabına yazılacak tutar kaç ₺'dir?",
         {
             'A': '18.000 ₺',
             'B': '20.000 ₺',
@@ -653,7 +653,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0045': patch(
-        "Bir mal KDV dahil 36.000 ₺ bedelle (%20 KDV) satılmıştır. 600 YURTİÇİ SATIŞLAR'a yazılacak hasılat (matrah) kaç ₺'dir?",
+        "Bir giyim mağazasının gün sonu ödeme kaydedici cihaz raporunda, tamamı %20 KDV'ye tabi ürünlerden oluşan KDV dâhil 36.000 ₺ nakit hasılat yer almaktadır.\n\nBu hasılat nedeniyle 600 YURTİÇİ SATIŞLAR'a yazılacak tutar (matrah) kaç ₺'dir?",
         {
             'A': '36.000 ₺',
             'B': '43.200 ₺',
@@ -737,7 +737,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0051': patch(
-        '190 Devreden KDV ile 360 Ödenecek Vergi ve Fonlar hesaplarının niteliği bakımından aşağıdakilerden hangisi doğrudur?',
+        "Mart ayı sonunda indirilecek KDV hesaplanan KDV'yi aştığı için işletmenin 190 Devreden KDV hesabında 12.000 ₺ kalmıştır. Nisan ayında ise hesaplanan KDV, indirimleri aştığından 8.000 ₺ ödenecek KDV 360 Ödenecek Vergi ve Fonlar hesabına aktarılmıştır.\n\n190 Devreden KDV ile 360 Ödenecek Vergi ve Fonlar hesaplarının niteliği bakımından aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'İkisi de pasif hesaptır ve vergi dairesine olan borcu gösterir.',
             'B': 'İkisi de gelir tablosu hesabıdır ve dönem kârını doğrudan etkiler.',

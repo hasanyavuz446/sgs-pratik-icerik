@@ -527,7 +527,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0036': patch(
-        'Tutarlılık Kavramının mali tablolar açısından sağladığı temel yarar aşağıdakilerden hangisidir?',
+        'Bir işletme son beş yıldır stoklarını ilk giren ilk çıkar yöntemiyle, maddi duran varlıklarını normal amortisman yöntemiyle değerlemekte ve bu yöntemleri her yıl aynı biçimde uygulamaktadır. Bir yatırım analisti işletmenin beş yıllık mali tablolarını yan yana koyarak kârlılık eğilimini inceleyebilmektedir.\n\nTutarlılık Kavramının mali tablolar açısından sağladığı temel yarar aşağıdakilerden hangisidir?',
         {
             'A': 'Varlıkların her dönem güncel piyasa değeriyle yeniden gösterilmesini sağlaması',
             'B': 'İşletme varlıklarının sahibin kişisel varlıklarından ayrı tutulmasını sağlaması',
@@ -541,7 +541,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0037': patch(
-        'Önemlilik Kavramının değerlendirilmesinde esas alınan temel ölçüt aşağıdakilerden hangisidir?',
+        "Toplam aktifi 50 milyon ₺ olan bir işletmede dönem sonunda 40.000 ₺'lik bir sınıflandırma hatası bulunmuştur. Tutar toplam aktife göre küçüktür; ancak düzeltilmezse kısa vadeli borçların bir kısmı uzun vadeli görünecek ve kredi verenlerin likidite değerlendirmesi değişebilecektir.\n\nÖnemlilik Kavramının değerlendirilmesinde esas alınan temel ölçüt aşağıdakilerden hangisidir?",
         {
             'A': 'İşletmenin kaç ortağı bulunduğu ve bu ortakların sermaye içindeki paylarının yüzde olarak dağılımı',
             'B': 'Bir bilginin gösterilmemesinin ya da yanlış gösterilmesinin, mali tablo kullanıcılarının kararlarını etkileyip etkilemeyeceği',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'İşletmenin, tahsilinde şüphe doğan bir ticari alacağı için karşılık ayırması hangi kavramla açıklanır?',
+        "Bir müşteri hakkında icra takibi başlatılmış ve 40.000 ₺'lik alacağın tahsili şüpheli hâle gelmiştir. İşletme henüz kesin bir kayıp oluşmamasına rağmen dönem sonunda alacağın tamamı için karşılık ayırmış ve gideri cari döneme yansıtmıştır.\n\nBu uygulama öncelikle hangi temel kavramla açıklanır?",
         {
             'A': 'İhtiyatlılık',
             'B': 'Maliyet Esası',

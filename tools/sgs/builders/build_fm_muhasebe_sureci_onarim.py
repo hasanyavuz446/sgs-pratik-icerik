@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Malın bir yerden başka bir yere taşınması (sevki) sırasında düzenlenen ve malın yanında bulunması gereken belge aşağıdakilerden hangisidir?',
+        'Bir toptancı, müşterisine satılan 200 koli malı kendi kamyonuyla teslim etmek üzere depodan çıkarmıştır. Satış faturası ertesi gün düzenlenecektir; mallar yolda denetime takılabilir.\n\nMalın bir yerden başka bir yere taşınması (sevki) sırasında düzenlenen ve malın yanında bulunması gereken belge aşağıdakilerden hangisidir?',
         {
             'A': 'Ödeme kaydedici cihaz fişi',
             'B': 'Fatura',
@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        'Kasayı ilgilendirmeyen (nakit giriş-çıkışı olmayan) muhasebe işlemleri için düzenlenen fiş türü aşağıdakilerden hangisidir?',
+        'İşletme muhasebe biriminde gün içinde şu işlemler kaydedilecektir: veresiye mal alışı, bir müşteri senedinin satıcıya ciro edilmesi ve dönem sonu amortisman ayrılması. Bu işlemlerin hiçbirinde kasaya para girişi veya kasadan para çıkışı yoktur.\n\nKasayı ilgilendirmeyen (nakit giriş-çıkışı olmayan) bu tür muhasebe işlemleri için düzenlenen fiş türü aşağıdakilerden hangisidir?',
         {
             'A': 'Tahsil Fişi',
             'B': 'Tediye Fişi',
@@ -429,7 +429,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0029': patch(
-        'Defter tutmayan çiftçilerden satın alınan zirai ürünler için düzenlenen belge aşağıdakilerden hangisidir?',
+        "Bir un fabrikası, defter tutmayan ve vergiden muaf bir çiftçiden 40 ton buğdayı 400.000 ₺'ye satın almış ve bedeli banka havalesiyle ödemiştir. Çiftçi herhangi bir satış belgesi düzenlememiştir.\n\nDefter tutmayan çiftçilerden satın alınan zirai ürünler için düzenlenen belge aşağıdakilerden hangisidir?",
         {
             'A': 'Sevk irsaliyesi',
             'B': 'Gider pusulası',

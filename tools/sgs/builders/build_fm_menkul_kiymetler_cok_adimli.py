@@ -107,7 +107,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        "Vergi Usul Kanunu'na göre işletmenin elindeki hisse senetleri dönem sonunda hangi değerle değerlenir?",
+        "İşletme yıl içinde borsada işlem gören hisse senetlerini kısa vadeli kâr amacıyla 50.000 ₺'ye satın almıştır. Dönem sonunda hisselerin borsa değeri 62.000 ₺, üzerlerinde yazılı nominal değer 20.000 ₺'dir ve hisseler henüz satılmamıştır.\n\nVergi Usul Kanunu'na göre bu hisse senetleri dönem sonunda hangi değerle değerlenir?",
         {
             'A': 'Tasfiye değeri',
             'B': 'Alış bedeli',
@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'Menkul kıymetler için dönem sonunda değer düşüklüğü karşılığı ayrılması hangi temel muhasebe kavramıyla açıklanır?',
+        "İşletmenin kısa vadeli amaçla elde tuttuğu ve maliyeti 80.000 ₺ olan hisselerinin borsa değeri dönem sonunda 68.000 ₺'ye düşmüştür. İşletme hisseleri satmadığı hâlde aradaki 12.000 ₺ için karşılık ayırıp gider yazmış; aynı dönemde değeri maliyetinin üzerine çıkan başka hisseleri için ise herhangi bir gelir kaydetmemiştir.\n\nBu uygulama hangi temel muhasebe kavramıyla açıklanır?",
         {
             'A': 'Parayla Ölçülme',
             'B': 'İhtiyatlılık',
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        'İştirak niteliğindeki (uzun vadeli) hisse senetlerinden elde edilen temettü (kâr payı) geliri hangi hesaba alacak yazılır?',
+        "İşletme, sermayesinin %30'una sahip olduğu ve uzun vadeli olarak elde tuttuğu X A.Ş.'nin genel kurul kararıyla dağıttığı 120.000 ₺ kâr payından payına düşen 36.000 ₺'yi banka hesabına tahsil etmiştir.\n\nBu kâr payı geliri hangi hesaba alacak yazılır?",
         {
             'A': '600 Yurt İçi Satışlar',
             'B': '645 Menkul Kıymet Satış Kârları',
@@ -779,7 +779,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0054': patch(
-        'Menkul kıymetler grubunu (11) elde bulundurmanın işletme açısından temel amacı aşağıdakilerden hangisidir?',
+        "Mevsimsel satış yapan bir işletmenin yaz aylarında elinde biriken ve sonbahara kadar ihtiyaç duymayacağı 2.000.000 ₺ nakdi vardır. İşletme bu tutarın bir kısmıyla altı ay vadeli devlet tahvili, bir kısmıyla da borsada işlem gören hisse senetleri almış ve bunları '11 Menkul Kıymetler' grubunda izlemiştir.\n\nMenkul kıymetler grubunu (11) elde bulundurmanın işletme açısından temel amacı aşağıdakilerden hangisidir?",
         {
             'A': 'İşletmenin üretim faaliyetinde doğrudan hammadde ve yardımcı malzeme olarak tüketmek üzere stok bulundurmak',
             'B': 'İşletmenin personeline ait ücret, prim ve yasal kesintileri zamanında ödeyerek yükümlülüklerini yerine getirmek',

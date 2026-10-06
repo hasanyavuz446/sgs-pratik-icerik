@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        "Dönem sonunda '600 Yurt İçi Satışlar' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+        "Bir ticaret işletmesinin dönem sonunda 600 Yurt İçi Satışlar hesabı 1.450.000 ₺ alacak kalanı vermektedir. İşletme dönem sonucunu belirlemek için gelir tablosu hesaplarını kapatmaktadır.\n\n600 Yurt İçi Satışlar hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
         {
             'A': '600 Yurt İçi Satışlar (borç) / 590 Dönem Net Kârı (alacak)',
             'B': '690 Dönem Kârı veya Zararı (borç) / 600 Yurt İçi Satışlar (alacak)',
@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        "Dönem sonunda '621 Satılan Ticari Mallar Maliyeti (-)' hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
+        "Bir ticaret işletmesinin dönem sonunda 621 Satılan Ticari Mallar Maliyeti hesabı 870.000 ₺ borç kalanı vermektedir. İşletme dönem sonucunu belirlemek için gelir tablosu hesaplarını kapatmaktadır.\n\n621 Satılan Ticari Mallar Maliyeti (-) hesabının 690'a devredilerek kapatılmasında yapılan kayıt aşağıdakilerden hangisidir?",
         {
             'A': '690 Dönem Kârı veya Zararı (borç) / 621 Satılan Ticari Mallar Maliyeti (alacak)',
             'B': '621 Satılan Ticari Mallar Maliyeti (borç) / 153 Ticari Mallar (alacak)',

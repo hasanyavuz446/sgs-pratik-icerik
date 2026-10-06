@@ -289,7 +289,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0019': patch(
-        'Bir işletme müşterilerinden sipariş avansı almaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Makine üreten bir işletme, 14 ay sonra teslim edeceği özel bir makine için müşterisinden 300.000 ₺ avans almıştır. Makine teslim edildiğinde avans satış bedelinden düşülecektir.\n\nAlınan sipariş avanslarıyla ilgili aşağıdakilerden hangisi yanlıştır?',
         {
             'A': "Avans 340'ın alacağına yazılır",
             'B': "Teslim bir yıldan sonra olacaksa avans 440'ta izlenir",
@@ -373,7 +373,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0025': patch(
-        "İşletmenin kullandığı banka kredisine ilişkin ödediği/tahakkuk eden faizler Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "7/A seçeneğini uygulayan işletme, işletme sermayesi ihtiyacı için kullandığı 500.000 ₺'lik banka kredisinin döneme isabet eden 30.000 ₺ faizini dönem sonunda tahakkuk ettirmiştir.\n\nBanka kredisine ilişkin ödenen veya tahakkuk eden faizler Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
         {
             'A': '780 Finansman Giderleri',
             'B': '642 Faiz Gelirleri',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "İşletmenin ortaklarına olan (sermaye dışındaki) borçları Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "Nakit sıkıntısı yaşayan bir anonim şirkete ortaklardan biri, sermaye taahhüdü dışında ve üç ay sonra geri almak üzere 100.000 ₺ borç vermiş; tutar şirketin banka hesabına yatırılmıştır.\n\nŞirketin ortaklarına olan (sermaye dışındaki) bu borcu Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
         {
             'A': '500 Sermaye',
             'B': '335 Personele Borçlar',
@@ -793,7 +793,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0055': patch(
-        'İşletme çalıştırdığı personel için ücret tahakkuku yaparken, personelin ücretinden kestiği gelir vergisi ve damga vergisini hangi hesapta izler?',
+        'İşletmenin aralık ayı ücret bordrosunda personelin brüt ücretlerinden 14.000 ₺ gelir vergisi ve 760 ₺ damga vergisi kesilmiştir; bu tutarlar ocak ayında muhtasar beyanname ile vergi dairesine ödenecektir.\n\nİşletmenin personel ücretinden kestiği gelir vergisi ve damga vergisi hangi hesapta izlenir?',
         {
             'A': '193 Peşin Ödenen Vergiler ve Fonlar',
             'B': '770 Genel Yönetim Giderleri',

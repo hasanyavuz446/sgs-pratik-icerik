@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0007': patch(
-        "Satılan mamullerin üretim maliyeti gelir tablosunda Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "Mobilya üreten bir işletme dönem içinde ürettiği masalardan üretim maliyeti 360.000 ₺ olanları 520.000 ₺ + KDV bedelle satmıştır. İşletme 7/A seçeneğini uygulamaktadır.\n\nSatılan mamullerin üretim maliyeti gelir tablosunda Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
         {
             'A': '620 Satılan Mamuller Maliyeti (-)',
             'B': '152 Mamuller',
@@ -345,7 +345,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0023': patch(
-        'İşletmenin finansman fonksiyonuyla ilgili giderleri, 7/A seçeneğinde önce hangi maliyet hesabında izlenir?',
+        '7/A seçeneğini uygulayan bir üretim işletmesi, hammadde alımlarını finanse etmek için kullandığı banka kredisinin 45.000 ₺ faizini dönem içinde ödemiştir. Faiz, maliyet hesaplarından gelir tablosuna dönem sonunda yansıtılacaktır.\n\nİşletmenin finansman fonksiyonuyla ilgili bu tür giderleri 7/A seçeneğinde önce hangi maliyet hesabında izlenir?',
         {
             'A': '710 Direkt İlk Madde ve Malzeme Giderleri',
             'B': '730 Genel Üretim Giderleri',
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "Üretimi tamamlanan mamullerin, üretim maliyetiyle stoklara alınması Tekdüzen Hesap Planı'nda hangi hesaba yapılır?",
+        "Sandalye üreten işletmede ay içinde üretimi tamamlanan 2.000 adet sandalyenin 180.000 ₺ tutarındaki üretim maliyeti, ambar giriş fişiyle üretim bölümünden mamul deposuna alınmıştır.\n\nÜretimi tamamlanan mamullerin üretim maliyetiyle stoklara alınması Tekdüzen Hesap Planı'nda hangi hesaba yapılır?",
         {
             'A': '152 Mamuller',
             'B': '151 Yarı Mamuller - Üretim',
@@ -695,7 +695,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0048': patch(
-        "7/A seçeneğinde '750 Araştırma ve Geliştirme Giderleri', dönem sonunda 751 yansıtma hesabı aracılığıyla gelir tablosundaki hangi hesaba aktarılır?",
+        '7/A seçeneğini uygulayan bir ilaç üreticisinin yeni bir ürün geliştirmeye yönelik olarak yaptığı ve aktifleştirme koşullarını taşımayan 90.000 ₺ araştırma harcaması dönem içinde 750 Araştırma ve Geliştirme Giderleri hesabında toplanmıştır.\n\nBu hesap dönem sonunda 751 yansıtma hesabı aracılığıyla gelir tablosundaki hangi hesaba aktarılır?',
         {
             'A': '263 Araştırma ve Geliştirme Giderleri',
             'B': '660 Kısa Vadeli Borçlanma Giderleri (-)',
@@ -807,7 +807,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0056': patch(
-        'Fabrika makinelerinin elektrik tüketimine ait gider, 7/A ve 7/B seçeneklerinde sırasıyla hangi hesaplarda izlenir?',
+        "Bir üretim işletmesinin aylık elektrik faturasının 24.000 ₺'lik kısmı fabrikadaki üretim makinelerinin tüketimine aittir. İşletme bu gideri maliyet hesaplarında izleyecektir.\n\nFabrika makinelerinin elektrik tüketimine ait gider, 7/A ve 7/B seçeneklerinde sırasıyla hangi hesaplarda izlenir?",
         {
             'A': '760 Pazarlama, Satış ve Dağıtım Giderleri; 794 Çeşitli Giderler',
             'B': '730 Genel Üretim Giderleri; 793 Dışarıdan Sağlanan Fayda ve Hizmetler',

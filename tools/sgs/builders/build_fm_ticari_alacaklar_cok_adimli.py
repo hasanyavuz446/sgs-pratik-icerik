@@ -121,7 +121,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0007': patch(
-        "Vergi Usul Kanunu'na göre bir ticari alacağın 'şüpheli alacak' sayılıp karşılık ayrılabilmesi için aşağıdaki koşullardan hangisi gerekli değildir?",
+        "İşletmenin ticari faaliyetinden doğan ve X Ltd.'den olan 48.000 ₺'lik alacağı vadesinde ödenmemiştir. İşletme borçluya yazılı olarak iki kez başvurmuş, sonuç alamayınca icra takibi başlatmıştır. Alacak için herhangi bir teminat alınmamıştır.\n\nVergi Usul Kanunu'na göre bu alacağın şüpheli sayılıp karşılık ayrılabilmesi için aşağıdaki koşullardan hangisi gerekli değildir?",
         {
             'A': 'Alacağın belirli (tahakkuk etmiş) bir alacak olması',
             'B': 'Alacağın teminatsız (teminata bağlanmamış) kısmının bulunması',
@@ -149,7 +149,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        "Vergi Usul Kanunu'na göre 'değersiz alacak' ile ilgili aşağıdakilerden hangisi doğrudur?",
+        "İşletmenin 25.000 ₺'lik bir alacağı için yürütülen icra takibi, borçlunun haczedilebilecek malı bulunmadığına dair aciz vesikasıyla sonuçlanmış; mahkeme de alacağın tahsil imkânının kalmadığını kararına bağlamıştır.\n\nVergi Usul Kanunu'na göre bu tür 'değersiz alacak' ile ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'İşletmenin ortaklarına ve iştiraklerine olan, esas faaliyet dışı nitelikteki senetsiz borcudur.',
             'B': 'Dava veya icra safhasında bulunan ve bu nedenle tahsili şüpheli hâle gelmiş ticari alacaktır.',
@@ -191,7 +191,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        'Bir işletmenin şüpheli hâle gelen alacağı için ayıracağı karşılık tutarı ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'İşletme 50.000 ₺ + %20 KDV tutarında veresiye sattığı malın bedelini vadesinde tahsil edememiş; borçlu hakkında icra takibi başlatılınca alacak şüpheli hâle gelmiştir. Satışa ait KDV daha önce beyan edilip ödenmiştir.\n\nBu alacak için ayrılacak karşılık tutarıyla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Karşılık, senetli alacaklar için ayrılabilir, senetsizler için ayrılamaz.',
             'B': 'Karşılık, satış hasılatı üzerinden ayrılır.',
@@ -317,7 +317,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0021': patch(
-        'İşletmenin esas faaliyetinden doğan, herhangi bir senede bağlanmamış (senetsiz) ticari alacakları hangi hesapta izlenir?',
+        "İşletme bir müşterisine 30 gün vadeyle 48.000 ₺'lik ticari mal satmıştır; müşteri bedel için senet veya çek vermemiş, ödemeyi vade sonunda havale ile yapacağını bildirmiştir.\n\nİşletmenin esas faaliyetinden doğan bu senetsiz ticari alacak hangi hesapta izlenir?",
         {
             'A': '101 Alınan Çekler',
             'B': '136 Diğer Çeşitli Alacaklar',
@@ -513,7 +513,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        'Karşılık ayrılmamış bir alacağın değersiz hâle gelmesi durumunda, doğrudan zarar yazılması işletmenin dönem sonucunu nasıl etkiler?',
+        "İşletme, daha önce karşılık ayırmadığı 18.000 ₺'lik bir ticari alacağın, borçlunun iflasının kapanması ve mahkeme kararıyla tahsil imkânının kalmadığını öğrenmiş ve alacağı doğrudan zarar yazmıştır.\n\nBu kaydın işletmenin dönem sonucuna etkisi aşağıdakilerden hangisidir?",
         {
             'A': 'Dönem kârını azaltır (gider/zarar yazıldığı için).',
             'B': 'Dönem sonucunu etkilemez; bir bilanço aktarımıdır.',
@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        "Vadesine bir yıldan uzun süre kalan senetli ticari alacaklar Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
+        "İşletme bir müşterisine 18 ay vadeyle özel üretim bir makine satmış ve karşılığında 240.000 ₺'lik bir bono almıştır. Dönem sonunda senedin vadesine 15 ay kalmıştır.\n\nVadesine bir yıldan uzun süre kalan bu senetli ticari alacak Tekdüzen Hesap Planı'nda hangi hesapta izlenir?",
         {
             'A': '221 Alacak Senetleri',
             'B': '136 Diğer Çeşitli Alacaklar',
@@ -639,7 +639,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0044': patch(
-        'İşletmenin bilançosunda senetli ticari alacakların net tutarı nasıl gösterilir?',
+        'İşletmenin dönem sonu kayıtlarında 121 Alacak Senetleri hesabı 300.000 ₺ borç kalanı vermekte, vadesi gelmemiş bu senetler için hesaplanan 18.000 ₺ reeskont 122 Alacak Senetleri Reeskontu hesabında yer almaktadır.\n\nİşletmenin bilançosunda senetli ticari alacakların net tutarı nasıl gösterilir?',
         {
             'A': '121 Alacak Senetleri + 122 Alacak Senetleri Reeskontu',
             'B': '120 Alıcılar − 121 Alacak Senetleri',
@@ -765,7 +765,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0053': patch(
-        'İşletmenin, esas faaliyeti dışındaki bir işlemden doğan ve personelinden olan (ticari olmayan) senetsiz alacağı hangi hesapta izlenir?',
+        'İşletme, muhasebe biriminde çalışan bir personeline acil bir sağlık gideri için 10.000 ₺ borç para vermiştir. Tutar ücret avansı değildir; personel parayı üç ay içinde nakden geri ödeyecektir.\n\nİşletmenin esas faaliyeti dışındaki bu işlemden doğan ve personelden olan (ticari olmayan) senetsiz alacağı hangi hesapta izlenir?',
         {
             'A': '320 Satıcılar',
             'B': '135 Personelden Alacaklar',

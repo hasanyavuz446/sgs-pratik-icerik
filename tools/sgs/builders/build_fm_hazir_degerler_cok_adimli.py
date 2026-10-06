@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'İşletmenin bankası, hesap işletim ve havale masrafı olarak hesaptan 500 ₺ kesmiştir. Bu banka masrafının kaydı aşağıdakilerden hangisidir?',
+        'İşletmenin bankası, ay sonu dekontuyla vadesiz hesaptan 300 ₺ hesap işletim ücreti ve 200 ₺ EFT masrafı olmak üzere toplam 500 ₺ kestiğini bildirmiştir. Masraflar işletmenin esas faaliyeti dışındaki banka hizmetleri için alınmıştır.\n\nBu banka masrafının kaydı aşağıdakilerden hangisidir?',
         {
             'A': '102 Bankalar (borç) 500 / 600 Yurt İçi Satışlar (alacak) 500',
             'B': '642 Faiz Gelirleri (borç) 500 / 102 Bankalar (alacak) 500',
@@ -163,7 +163,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0010': patch(
-        "İşletmenin kasasından çalınan 5.000 ₺'nin, sigortası bulunmadığından tazmin edilemeyeceği kesinleşmiştir. Bu kaybın kaydı aşağıdakilerden hangisidir?",
+        "Hafta sonu işyerine giren hırsızlar kasadaki 5.000 ₺'yi çalmıştır. Polis tutanağı düzenlenmiş, kasa için sigorta bulunmadığı ve faillerden tahsil imkânı olmadığı anlaşılmıştır; kayıp herhangi bir çalışanın sorumluluğunda değildir.\n\nBu kaybın kaydı aşağıdakilerden hangisidir?",
         {
             'A': '100 Kasa (borç) 5.000 / 679 Diğer Olağandışı Gelir (alacak) 5.000',
             'B': '100 Kasa (borç) 5.000 / 689 Diğer Olağandışı Gider ve Zararlar (alacak) 5.000',
@@ -359,7 +359,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0024': patch(
-        'Kasa sayımında fiili mevcut, kayıtlı mevcuttan 800 ₺ fazla çıkmış ve nedeni belirlenememiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?',
+        'Ay sonu kasa sayımında 100 Kasa hesabının kayıtlı mevcudu 12.300 ₺, fiilî mevcudu 13.100 ₺ bulunmuştur. Gün içindeki tahsilat ve ödeme belgeleri incelenmiş, farkın nedeni belirlenememiştir.\n\nBuna göre yapılacak kayıt aşağıdakilerden hangisidir?',
         {
             'A': '197 Sayım ve Tesellüm Noksanları (borç) 800 / 100 Kasa (alacak) 800',
             'B': '100 Kasa (borç) 800 / 679 Diğer Olağandışı Gelir (alacak) 800',
@@ -611,7 +611,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        'İşletme, satıcısına olan borcunu ödemek için kendi çekini düzenleyip vermiştir. Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?',
+        "İşletme satıcısına olan 25.000 ₺'lik senetsiz borcu için, banka hesabına bağlı çek karnesinden keşide tarihi on gün sonra olan bir çek yazarak satıcıya teslim etmiştir. Çek henüz bankaya ibraz edilmemiştir.\n\nBu işlemle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Çek verildiği anda nakit çıkışı olduğundan 100 Kasa hesabı doğrudan alacaklandırılır.',
             'B': '103 Verilen Çekler ve Ödeme Emirleri (-) hesabı alacaklandırılır.',
@@ -723,7 +723,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        'Etkin bir kasa iç kontrolü için aşağıdakilerden hangisi en uygun uygulamadır?',
+        'Küçük bir işletmede tahsilat ve ödemeleri yapan kasa sorumlusu, kasa defterini ve muhasebe kayıtlarını da kendisi tutmaktadır. Kasa sayımı yalnız yıl sonunda yapılmakta, ortaya çıkan küçük fazlalar kaydedilmeden kasada bırakılmaktadır. İşletme yönetimi bu yapıyı düzeltmek istemektedir.\n\nEtkin bir kasa iç kontrolü için aşağıdakilerden hangisi en uygun uygulamadır?',
         {
             'A': 'Zaman kaybını önlemek amacıyla dönem içinde ve dönem sonunda fiili kasa sayımı yapılmaması',
             'B': 'Kayıtları sade tutmak için kasa fazlalarının kaydedilmeyip veznedarın uhdesinde bırakılması',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        "Vergi Usul Kanunu'na göre yabancı paralar değerlenirken; borsa rayici yoksa hangi kur esas alınır?",
+        "İşletmenin kasasında ihracat müşterisinden nakden alınan ve Türkiye'de borsada işlem görmeyen bir yabancı para bulunmaktadır. Dönem sonu değerlemesinde bu para için borsa rayici bulunmadığı belirlenmiştir.\n\nVergi Usul Kanunu'na göre yabancı paralar değerlenirken borsa rayici yoksa hangi kur esas alınır?",
         {
             'A': 'Bir önceki hesap döneminin on iki aylık ortalama döviz kuru',
             'B': 'Dövizin edinildiği faturada satıcı tarafından gösterilen işlem kuru',

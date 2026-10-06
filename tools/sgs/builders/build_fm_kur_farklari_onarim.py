@@ -247,7 +247,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0016': patch(
-        'Kambiyo kârı (646) ile menkul kıymet satış kârı (645) arasındaki fark ile ilgili aşağıdakilerden hangisi doğrudur?',
+        'İşletme yıl içinde döviz cinsinden bir alacağın tahsilinde 18.000 ₺ lehte kur farkı elde etmiş, kısa vadeli amaçla elde tuttuğu hisse senetlerini de maliyetinin 12.000 ₺ üzerinde bir bedelle satmıştır.\n\nBu sonuçların izlendiği kambiyo kârı (646) ile menkul kıymet satış kârı (645) arasındaki farkla ilgili aşağıdakilerden hangisi doğrudur?',
         {
             'A': '646 bir gider, 645 ise bir gelir hesabı olduğundan biri kambiyo zararını diğeri menkul kıymet satış kârını gösterir ve netleştirilir.',
             'B': '645 döviz kurundaki değişimden doğan kur farkını, 646 ise menkul kıymet satış kârını ifade eden birbirine bağlı iki hesaptır.',
@@ -387,7 +387,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        'İşletmenin kasasında bulunan efektif (nakit döviz) mevcudu dönem sonunda değerlenirken hangi kur kullanılır?',
+        "İşletmenin kasasında yurt dışı seyahatlerden artan 3.000 GBP efektif bulunmaktadır. Değerleme gününde T.C. Merkez Bankası'nın ilan ettiği efektif alış, efektif satış, döviz alış ve döviz satış kurları birbirinden farklıdır.\n\nKasadaki efektif (nakit döviz) mevcudu dönem sonunda değerlenirken hangi kur kullanılır?",
         {
             'A': 'MB efektif alış kuru',
             'B': 'MB döviz satış kuru',
@@ -751,7 +751,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        'Bir işletme döviz cinsi BORCUNU öderken kambiyo KÂRI elde etmiştir. Buna göre, işlem gününden ödeme gününe kadar döviz kuru ne yönde değişmiştir?',
+        'İşletme yurt dışındaki bir satıcıya olan 20.000 USD tutarındaki borcunu ödediğinde 30.000 ₺ kambiyo kârı kaydetmiştir. Borç ödeme gününe kadar değerlemeye tabi tutulmamıştır.\n\nBuna göre işlem gününden ödeme gününe kadar döviz kuru ne yönde değişmiştir?',
         {
             'A': 'Yönü belirlenemez',
             'B': 'Düşmüştür',

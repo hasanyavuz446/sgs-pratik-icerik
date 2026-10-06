@@ -135,7 +135,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0008': patch(
-        'İşletmenin dövizli işlemlerinden doğan kur farkı kârları (kambiyo kârları) ve zararları (kambiyo zararları) gelir tablosunda hangi gruplarda izlenir?',
+        'İşletme yıl içinde döviz cinsinden alacaklarının tahsilinde 40.000 ₺ kur farkı kârı, döviz cinsinden satıcı borcunun ödenmesinde ise 25.000 ₺ kur farkı zararı elde etmiştir.\n\nBu kambiyo kârları ve zararları gelir tablosunda hangi gruplarda izlenir?',
         {
             'A': 'Kambiyo kârları 645 Menkul Kıymet Satış Kârları, kambiyo zararları ise 655 Menkul Kıymet Satış Zararları grubunda izlenir.',
             'B': 'Kambiyo kârları 679 Diğer Olağandışı Gelir ve Kârlar (67), kambiyo zararları ise 689 Diğer Olağandışı Gider (68) grubunda izlenir.',
@@ -415,7 +415,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Reeskont işlemlerinden doğan faiz gelir ve giderleri gelir tablosunda hangi hesaplarda izlenir?',
+        'Dönem sonunda işletme vadesi gelmemiş alacak senetleri için 6.000 ₺, borç senetleri için 4.000 ₺ reeskont hesaplayarak kayıtlarına almıştır.\n\nReeskont işlemlerinden doğan faiz gelir ve giderleri gelir tablosunda hangi hesaplarda izlenir?',
         {
             'A': 'Her ikisi de 66 Finansman Giderleri grubunda; gelirler 660, giderler 661 hesabındadır.',
             'B': 'Reeskont faiz gelirleri 600 Yurt İçi Satışlar, giderleri 621 Mallar Maliyeti hesabında izlenir.',
@@ -485,7 +485,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        'Satıştan iadeler (610) ve satış iskontolarının (611) gelir tablosundaki etkisi ile ilgili aşağıdakilerden hangisi doğrudur?',
+        "Dönem içinde 900.000 ₺ brüt satış yapan işletmenin müşterileri kusurlu bulunan 40.000 ₺'lik malı iade etmiş, bir müşteriye de erken ödeme nedeniyle sonradan 15.000 ₺ iskonto yapılmıştır.\n\nSatıştan iadeler (610) ve satış iskontolarının (611) gelir tablosundaki etkisiyle ilgili aşağıdakilerden hangisi doğrudur?",
         {
             'A': 'Satışların maliyetine eklenerek brüt satış kârını azaltan gider unsurudur.',
             'B': 'Brüt satışlara eklenerek net satışları ve brüt satış kârını artıran gelir kalemleridir.',
@@ -793,7 +793,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0055': patch(
-        'Dönem sonunda belirlenen dönem net kârı (692), bilançoda hangi hesaba aktarılır?',
+        'Dönem sonu kapanış kayıtlarından sonra 692 Dönem Net Kârı veya Zararı hesabı 260.000 ₺ alacak kalanı vermiştir. İşletme bu sonucu, genel kurul kararıyla dağıtılıncaya kadar bilançoda göstermek üzere aktaracaktır.\n\nDönem sonunda belirlenen dönem net kârı (692) bilançoda hangi hesaba aktarılır?',
         {
             'A': '540 Yasal Yedekler',
             'B': '500 Sermaye',
