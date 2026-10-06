@@ -24,6 +24,16 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — küme ayıklama (v236–v237 canlı)
+
+FM'de 14 soru tekrar kümelerinden (kur yönü, döviz değerleme, özel maliyet, KDV mahsubu,
+180/280 ayrımı, aynı stok hareket tablosu) paketin işlemediği alt konulara taşındı. Yeni araç
+`tools/sgs/veri_tekrari.py` (paket içi ortak tutar raporu) bu turda yazdığım 5 sorunun mevcut
+sorularla aynı veri setini kullandığını gösterdi; düzeltildi. Araç maliyet muhasebesinde de
+6/4/3/3 soruluk ortak tablo grupları buldu; sınavdaki ikili kalıba indirildi (safha 8, standart
+1 soru yeni veriyle). Rapor 40 → 14 çift (kalanlar ikili gruplar ve yuvarlak tutar tesadüfleri).
+FM kök medyanı 226→231.
+
 ## 6 Ekim 2026 — FM kök derinliği 2. tur (v234–v235 canlı)
 
 42 soru daha (9 pakete ilk kez, 3 pakete ikinci kez): yabancı kaynaklar 6, kur farkları 5, stoklar 5,
