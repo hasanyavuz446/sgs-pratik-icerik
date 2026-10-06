@@ -177,16 +177,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0011': patch(
-        "Bir mal imalatçıdan 100.000 ₺ + %20 KDV ile alınıp, 150.000 ₺ + %20 KDV ile satılmıştır. İşletmenin bu iki işlem sonucu vergi dairesine ödeyeceği net KDV kaç ₺'dir?",
+        "İşletme, yönetim binasının temizliği için bir firmadan 50.000 ₺ + %20 KDV tutarında hizmet almıştır. Hizmet kısmi tevkifat kapsamındadır ve soruda kullanılacak tevkifat oranı 9/10'dur; işletme tevkif ettiği KDV'yi sorumlu sıfatıyla beyan edip ödeyecektir. Bedel henüz satıcıya ödenmemiştir.\n\nHizmet alımının kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '20.000 ₺',
-            'B': '15.000 ₺',
-            'C': '30.000 ₺',
-            'D': '50.000 ₺',
-            'E': '10.000 ₺',
+            'A': '191 İndirilecek KDV hesabı 1.000 ₺ borçlandırılır',
+            'B': '320 Satıcılar hesabı 60.000 ₺ alacaklandırılır',
+            'C': '391 Hesaplanan KDV hesabı tevkifat için 9.000 ₺ alacaklandırılır',
+            'D': '320 Satıcılar hesabı 50.000 ₺ alacaklandırılır',
+            'E': '360 Ödenecek Vergi ve Fonlar hesabı 9.000 ₺ alacaklandırılır',
         },
         'E',
-        "Hesaplanan KDV = 150.000 × %20 = 30.000; indirilecek KDV = 100.000 × %20 = 20.000. Ödenecek = 30.000 − 20.000 = **10.000 ₺** — bu, eklenen değerin (150.000 − 100.000 = 50.000) %20'sidir. KDV yalnızca katma değer üzerinden alınır.",
+        "Hesaplanan KDV 10.000 ₺; bunun 9/10'u (9.000 ₺) alıcı tarafından tevkif edilir ve sorumlu sıfatıyla ödeneceğinden 360'a alacak yazılır. Satıcıya 50.000 + 1.000 = 51.000 ₺ borçlanılır. Yüklenilen KDV'nin tamamı (10.000 ₺) 191'e alınır. Kayıt: 770 50.000 ₺ ve 191 10.000 ₺ borç / 320 51.000 ₺ ve 360 9.000 ₺ alacak.",
         '3065 s. KDVK md 29 (katma değer)',
     ),
     # düzey 2

@@ -303,16 +303,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0020': patch(
-        "Bir işletmenin net satışları 900.000 ₺, net satışlar üzerinden brüt satış kârı oranı %35 ve faaliyet giderleri 150.000 ₺'dir. Buna göre faaliyet kârı kaç ₺'dir?",
+        "Bir işletmenin dönem içinde brüt satışları 1.000.000 ₺, satıştan iadeleri 50.000 ₺ ve satış iskontoları 30.000 ₺'dir. Net satışlar üzerinden brüt satış kârı oranı %35'tir. Dönemin pazarlama, satış ve dağıtım giderleri 90.000 ₺, genel yönetim giderleri 120.000 ₺, araştırma ve geliştirme giderleri 20.000 ₺ ve kısa vadeli borçlanma giderleri 15.000 ₺'dir.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
         {
-            'A': '165.000 ₺',
-            'B': '750.000 ₺',
-            'C': '315.000 ₺',
-            'D': '465.000 ₺',
-            'E': '435.000 ₺',
+            'A': '92.000',
+            'B': '77.000',
+            'C': '120.000',
+            'D': '109.500',
+            'E': '72.000',
         },
         'A',
-        'Brüt satış kârı 900.000 × %35 = 315.000 ₺; satışların maliyeti 585.000 ₺. Faaliyet kârı 315.000 − 150.000 = **165.000 ₺**.',
+        'Net satışlar = 1.000.000 − 50.000 − 30.000 = 920.000 ₺; brüt satış kârı = 920.000 × %35 = 322.000 ₺. Faaliyet giderleri 90.000 + 120.000 + 20.000 = 230.000 ₺. Faaliyet kârı = 322.000 − 230.000 = 92.000 ₺. Borçlanma giderleri 66 grubundadır; faaliyet kârından sonra düşülür.',
         'Gelir tablosu; brüt kâr oranı',
     ),
     # düzey 2
@@ -611,16 +611,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0042': patch(
-        "Bir işletmenin ortalama stokları 40.000 ₺, stok devir hızı 3 ve brüt satış kârı oranı %40'tır. Dönemin faaliyet giderleri toplamı 35.000 ₺'dir.\n\nBuna göre işletmenin faaliyet kârı kaç ₺'dir?",
+        "Bir ticaret işletmesinin dönem başı stoku 30.000 ₺, dönem sonu stoku 50.000 ₺'dir. Ortalama stoka göre hesaplanan stok devir hızı 3, net satışlar üzerinden brüt satış kârı oranı %40'tır. Dönemin faaliyet giderleri 35.000 ₺, diğer faaliyetlerden olağan gelirleri 5.000 ₺, finansman giderleri 8.000 ₺'dir.\n\nBuna göre işletmenin olağan kârı kaç ₺'dir?",
         {
-            'A': '80.000',
-            'B': '45.000',
-            'C': '35.000',
-            'D': '85.000',
-            'E': '65.000',
+            'A': '45.000',
+            'B': '42.000',
+            'C': '50.000',
+            'D': '37.000',
+            'E': '58.000',
         },
         'B',
-        "Satışların maliyeti = 40.000 × 3 = 120.000 ₺'dir. Brüt kâr oranı %40 ise maliyet net satışların %60'ıdır; net satışlar 120.000 / %60 = 200.000 ₺, brüt kâr 80.000 ₺ olur. Faaliyet kârı 80.000 − 35.000 = **45.000 ₺**'dir.",
+        "Ortalama stok = (30.000 + 50.000) / 2 = 40.000 ₺; satışların maliyeti = 40.000 × 3 = 120.000 ₺. Maliyet net satışların %60'ı olduğundan net satışlar 200.000 ₺, brüt satış kârı 80.000 ₺. Faaliyet kârı 80.000 − 35.000 = 45.000 ₺; olağan kâr = 45.000 + 5.000 − 8.000 = 42.000 ₺.",
         "1 Sıra No'lu MSUGT - Faaliyet kârı; 2025 SGS stok devir hızı ve brüt kâr oranı soru örüntüsü",
     ),
     # düzey 2

@@ -625,16 +625,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0043': patch(
-        'İşletmenin bankadaki vadeli mevduatına dönem içinde 3.000 ₺ faiz tahakkuk edip hesaba geçmiştir (stopaj ihmal edilecektir). Bu işlemle ilgili aşağıdakilerden hangisi doğrudur?',
+        "İşletme 1 Mart'ta altı ay vadeli ve yıllık %40 faizli bir vadeli hesaba 300.000 ₺ yatırmıştır. Nakit ihtiyacı nedeniyle hesap 1 Temmuz'da vadesinden önce bozulmuş; sözleşme gereği banka, geçen dört ay için yalnız yıllık %5 vadesiz faiz oranını uygulayarak anapara ile faizi vadesiz hesaba aktarmıştır. Faiz basit faizle hesaplanır, stopaj ihmal edilecektir. Daha önce faiz tahakkuku yapılmamıştır.\n\nBu işlemin kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': '642 Faiz Gelirleri hesabı 3.000 ₺ alacaklandırılır.',
-            'B': '102 Bankalar hesabı 3.000 ₺ alacaklandırılır.',
-            'C': '600 Yurt İçi Satışlar hesabı 3.000 ₺ alacaklandırılır.',
-            'D': '660 Kısa Vadeli Borçlanma Giderleri hesabı 3.000 ₺ borçlandırılır.',
-            'E': '646 Kambiyo Kârları hesabı 3.000 ₺ alacaklandırılır.',
+            'A': '642 Faiz Gelirleri hesabı 5.000 ₺ alacaklandırılır',
+            'B': '642 Faiz Gelirleri hesabı 40.000 ₺ alacaklandırılır',
+            'C': '181 Gelir Tahakkukları hesabı 5.000 ₺ borçlandırılır',
+            'D': '102 Bankalar (vadeli) 305.000 ₺ alacaklandırılır',
+            'E': '642 Faiz Gelirleri hesabı 60.000 ₺ alacaklandırılır',
         },
         'A',
-        'Mevduat faizi olağan bir finansal gelirdir: **102 Bankalar (borç) 3.000 / 642 Faiz Gelirleri (alacak) 3.000**. Dolayısıyla 642 Faiz Gelirleri alacaklandırılır.',
+        'Vade bozulduğu için sözleşmedeki %40 değil %5 uygulanır: 300.000 × %5 × 4/12 = 5.000 ₺. Kayıt: 102 Bankalar (vadesiz) 305.000 ₺ borç / 102 Bankalar (vadeli) 300.000 ₺ ve 642 Faiz Gelirleri 5.000 ₺ alacak. Önceden tahakkuk yapılmadığından 181 çalışmaz.',
         "1 Sıra No'lu MSUGT - 642 Faiz Gelirleri",
     ),
     # düzey 2
