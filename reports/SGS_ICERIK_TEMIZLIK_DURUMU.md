@@ -24,6 +24,17 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — FM kök derinliği 2. tur (v234–v235 canlı)
+
+42 soru daha (9 pakete ilk kez, 3 pakete ikinci kez): yabancı kaynaklar 6, kur farkları 5, stoklar 5,
+özkaynaklar 5, dönem sonu 5, maliyet hesapları 3, mali duran 3, temel kavramlar 3, maddi duran 3,
+gelir tablosu 2, KDV 1, hazır değerler 1. Ders medyanı 216→226, 250+ payı %38→%40 (gerçek 285 / %63).
+**Düzeltilen anahtar hatası:** dönem sonu 0034 alacak senedi reeskontunun yeni dönemde iptalini
+122/657 veriyordu; doğrusu 122/647 (şıklarda vardı, işaretli değildi). Dönem sonu 0030'da banka
+komisyonu 780'den havuzla tutarlı 653'e alındı. **Kalan kaldıraç:** paketlerdeki aynı alt konuyu
+tekrar eden soru kümeleri (ör. 6 'yansıtma eşlemesi', 9 'kur yönü', 5 azalan bakiyeler); kümeden
+birini derinleştirmek diğerinin cevabını ele verdiği için bir sonraki tur önce kümeleri ayıklamalı.
+
 ## 6 Ekim 2026 — FM kök derinliği 1. tur (v233 canlı)
 
 59 soru, 8 paket: muhasebe süreci 24 (kök 128→228), MODV 10 (166→212), hazır değerler 7,
