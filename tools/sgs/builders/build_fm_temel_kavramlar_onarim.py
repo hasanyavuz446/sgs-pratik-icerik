@@ -93,16 +93,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0005': patch(
-        "İşletmenin yurt dışından ithal ettiği makineyi, işlem tarihindeki döviz kuru üzerinden TL'ye çevirip edinme bedeliyle kaydetmesi öncelikle hangi iki kavramla birlikte açıklanır?",
+        "İşletme yurt dışından 20.000 EUR'ya bir üretim makinesi satın almıştır; makinenin işletmeye teslim edildiği gün kur 36,00 ₺/EUR'dur. Makine için 36.000 ₺ gümrük vergisi, 14.000 ₺ montaj bedeli ve makine çalışır hâle gelmeden önce yapılan deneme üretimi için 5.000 ₺ ödenmiştir. Makineyi kullanacak personelin eğitimi için de 8.000 ₺ harcanmıştır. KDV ihmal edilecektir.\n\nBuna göre makinenin kayıtlara alınacağı maliyet kaç ₺'dir?",
         {
-            'A': 'Tarafsızlık ve Belgelendirme ile Sosyal Sorumluluk',
-            'B': 'Özün Önceliği ve Kişilik',
-            'C': 'Önemlilik ve Tam Açıklama',
-            'D': 'Süreklilik ve Dönemsellik',
-            'E': 'Parayla Ölçülme ve Maliyet Esası',
+            'A': '720.000',
+            'B': '783.000',
+            'C': '756.000',
+            'D': '770.000',
+            'E': '775.000',
         },
         'E',
-        "İşlem tarihindeki kurla TL'ye çevirme **Parayla Ölçülme**, edinme (maliyet) bedeliyle kaydetme **Maliyet Esası** kavramının örneğidir; bu iki kavram burada birlikte uygulanır.",
+        'Döviz cinsinden bedel işlem günü kuruyla Türk lirasına çevrilir: 20.000 × 36,00 = 720.000 ₺. Varlığı kullanıma hazır hâle getiren gümrük vergisi, montaj ve deneme üretimi maliyete eklenir: 720.000 + 36.000 + 14.000 + 5.000 = 775.000 ₺. Personel eğitimi varlığı kullanıma hazır hâle getiren bir harcama değildir, gider yazılır.',
         "1 Sıra No'lu MSUGT - Parayla Ölçülme ve Maliyet Esası",
     ),
     # düzey 2
@@ -443,16 +443,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        'İşletmenin kullandığı bir kredi için döneme ait olup henüz ödenmemiş faiz giderinin, ödeme gelecek dönemde yapılacak olsa bile cari döneme gider olarak kaydedilmesi hangi kavramla açıklanır?',
+        "Hesap dönemi takvim yılı olan işletmenin aralık ayıyla ilgili bilgileri şöyledir: 1 Aralık'ta 36 aylık işyeri sigortası için 36.000 ₺ peşin ödenmiştir; aralık ayına ait 4.000 ₺ elektrik faturası ocak ayında gelecek ve ödenecektir; kullanılan kredinin aralık ayına isabet eden 6.000 ₺ faizi vade sonunda ödenecektir; ocak ayı işyeri kirası 10.000 ₺ aralık ayında peşin ödenmiştir.\n\nBuna göre aralık ayının sonucuna yansıması gereken toplam gider kaç ₺'dir?",
         {
-            'A': 'Maliyet Esası ve Edinme Bedeli',
-            'B': 'Özün Önceliği Kavramı',
-            'C': 'Dönemsellik (tahakkuk esası)',
-            'D': 'Parayla Ölçülme İlkesi',
-            'E': 'Tam Açıklama ve Dipnotlar',
+            'A': '46.000',
+            'B': '21.000',
+            'C': '11.000',
+            'D': '5.000',
+            'E': '15.000',
         },
         'C',
-        '**Dönemsellik (tahakkuk esası)** gereği giderler, nakit ödemeden bağımsız olarak ait oldukları dönemde kaydedilir. Döneme ait tahakkuk etmiş faiz, ödeme sonraki dönemde olsa da cari döneme gider yazılır.',
+        'Gider, ödendiği değil ait olduğu döneme yazılır. Sigortanın aralığa düşen kısmı 36.000 / 36 = 1.000 ₺; elektrik 4.000 ₺ ve kredi faizi 6.000 ₺ ödenmemiş olsa da aralığa aittir. Ocak kirası aralıkta ödense de ocak ayının gideridir. Toplam 1.000 + 4.000 + 6.000 = 11.000 ₺.',
         "1 Sıra No'lu MSUGT - Dönemsellik/tahakkuk",
     ),
     # düzey 2
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        'Tasfiyeye girmesine karar verilen bir işletmede, varlıkların artık maliyet ve amortisman esasına göre değil, elden çıkarılabilecekleri (tasfiye) değerine göre değerlenmesi hangi kavramın geçerliliğini yitirmesiyle ilgilidir?',
+        "Faaliyetlerine son verip tasfiyeye girmeye karar veren bir işletmenin varlıkları artık elden çıkarılabilecekleri değerlerle raporlanacaktır. Kayıtlarda maliyeti 2.000.000 ₺, birikmiş amortismanı 800.000 ₺ olan binanın tasfiye değeri 900.000 ₺; maliyeti 300.000 ₺ olan stokların satılabilir değeri 250.000 ₺'dir. Ayrıca net defter değeri 40.000 ₺ olan aktifleştirilmiş kuruluş giderleri bulunmaktadır ve bunların tasfiyede bir karşılığı yoktur.\n\nBuna göre bu üç kalemin tasfiye esasına göre raporlanacak toplam tutarı kaç ₺'dir?",
         {
-            'A': 'Önemlilik',
-            'B': 'Süreklilik',
-            'C': 'Tutarlılık',
-            'D': 'Tam Açıklama',
-            'E': 'Kişilik',
+            'A': '1.540.000',
+            'B': '1.150.000',
+            'C': '1.190.000',
+            'D': '1.200.000',
+            'E': '1.500.000',
         },
         'B',
-        'Değerlemenin maliyet/amortisman yerine tasfiye değeriyle yapılması, işletmenin faaliyetini sürdüreceği varsayımının (yani **Süreklilik Kavramı**nın) artık geçerli olmamasından kaynaklanır.',
+        'Süreklilik varsayımı ortadan kalkınca varlıklar maliyet ve amortisman esası yerine tasfiye (elden çıkarma) değerleriyle ölçülür: bina 900.000 ₺, stoklar 250.000 ₺, karşılığı olmayan kuruluş giderleri sıfır. Toplam 1.150.000 ₺ (net defter değerleri toplamı 1.540.000 ₺ olurdu).',
         "1 Sıra No'lu MSUGT - Süreklilik",
     ),
     # düzey 2
