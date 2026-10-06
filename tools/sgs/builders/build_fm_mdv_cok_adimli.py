@@ -79,16 +79,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0004': patch(
-        "İşletme 400.000 ₺'ye aldığı ve faydalı ömrü 5 yıl olan bir makine için azalan bakiyeler yöntemini uygulamaktadır. Buna göre ikinci yıl ayrılacak amortisman tutarı kaç ₺'dir?",
+        "İşletme yılbaşında 400.000 ₺'ye aldığı ve faydalı ömrü 5 yıl olan bir makine için azalan bakiyeler yöntemini uygulamış ve üç yıl boyunca amortisman ayırmıştır. Makine dördüncü yılın başında 150.000 ₺ + %20 KDV bedelle peşin satılmıştır. Satış yılında amortisman ayrılmamıştır.\n\nBuna göre makinenin satışından doğan kâr kaç ₺'dir?",
         {
-            'A': '48.000 ₺',
-            'B': '80.000 ₺',
-            'C': '96.000 ₺',
-            'D': '57.600 ₺',
-            'E': '160.000 ₺',
+            'A': '6.000',
+            'B': '86.400',
+            'C': '63.600',
+            'D': '30.000',
+            'E': '53.600',
         },
         'C',
-        "Normal oran 1/5 = %20; azalan bakiyelerde oran bunun iki katı **%40**'tır (%50'yi aşamaz) ve her yıl kalan değere uygulanır. 1. yıl: 400.000 × %40 = 160.000 ₺. 2. yıl: (400.000 − 160.000) × %40 = **96.000 ₺**.",
+        "Azalan bakiyeler oranı normal oranın iki katıdır: %20 × 2 = %40. Amortismanlar: 1. yıl 160.000 ₺, 2. yıl 240.000 × %40 = 96.000 ₺, 3. yıl 144.000 × %40 = 57.600 ₺; birikmiş 313.600 ₺. Net defter değeri 86.400 ₺; satış kârı 150.000 − 86.400 = 63.600 ₺ (679). KDV satış bedelinin parçası değildir, 391'e yazılır.",
         'VUK m. 316',
     ),
     # düzey 2
@@ -485,16 +485,16 @@ _PATCHES = {
     ),
     # düzey 1
     '0033': patch(
-        "Bir işletme kendi kullanımı için yeni bir üretim tesisi kurmaktadır. Kurulum sürmekte olup tesis henüz kullanıma hazır değildir. Bu süreçte yapılan harcamalar Tekdüzen Hesap Planı'nda hangi hesapta toplanır?",
+        "İşletme kendi kullanımı için bir üretim tesisi kurmaktadır ve tesis yıl sonunda henüz kullanıma hazır değildir. Yıl içinde müteahhide 900.000 ₺ hakediş ödenmiş, yatırımın finansmanı için kullanılan özel krediye ait 60.000 ₺ faiz tahakkuk etmiş, tesisin projelendirilmesi için mühendislik firmasına 40.000 ₺ ödenmiştir. Ayrıca temel atma töreni için 15.000 ₺ ve tesiste çalışacak personelin eğitimi için 10.000 ₺ harcanmıştır. KDV ihmal edilecektir.\n\nBuna göre yıl sonunda '258 Yapılmakta Olan Yatırımlar' hesabının kalanı kaç ₺'dir?",
         {
-            'A': '258 Yapılmakta Olan Yatırımlar',
-            'B': '730 Genel Üretim Giderleri',
-            'C': '253 Tesis, Makine ve Cihazlar',
-            'D': '259 Verilen Avanslar',
-            'E': '256 Diğer Maddi Duran Varlıklar',
+            'A': '1.000.000',
+            'B': '1.025.000',
+            'C': '940.000',
+            'D': '1.015.000',
+            'E': '960.000',
         },
         'A',
-        "Kullanıma hazır olmayan MDV yatırımlarının harcamaları **258**'de toplanır; varlık tamamlanınca ilgili MDV hesabına aktarılır ve amortisman o zaman başlar.",
+        "Tesis kullanıma hazır hâle gelene kadar onu bu duruma getiren harcamalar 258'de birikir: hakediş 900.000 ₺, yatırım dönemine ait kredi faizi 60.000 ₺ ve proje bedeli 40.000 ₺; toplam 1.000.000 ₺. Tören ve personel eğitimi tesisi kullanıma hazır hâle getiren harcamalar değildir, dönem gideridir.",
         'THP 258 Yapılmakta Olan Yatırımlar',
     ),
     # düzey 2
@@ -723,16 +723,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0050': patch(
-        "Kayıtlı değeri 200.000 ₺ olan ve işletmenin faaliyetinde kullanmadığı bir arsa 260.000 ₺'ye banka havalesiyle satılmıştır (KDV ihmal). Buna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
+        "İşletme, kayıtlı değeri 200.000 ₺ olan arsası ile üzerindeki maliyeti 800.000 ₺, birikmiş amortismanı 320.000 ₺ olan binasını birlikte 900.000 ₺'ye satmış ve bedeli banka havalesiyle tahsil etmiştir. Satış sözleşmesinde bedelin 300.000 ₺'si arsaya, 600.000 ₺'si binaya ayrılmıştır. Vergi ihmal edilecektir.\n\nBuna göre satış kaydıyla ilgili aşağıdakilerden hangisi doğrudur?",
         {
-            'A': '257 hesabı 200.000 ₺ borçlandırılır',
-            'B': "60.000 ₺ kâr 679'un alacağına yazılır",
-            'C': "260.000 ₺ 600 Yurt İçi Satışlar'a yazılır",
-            'D': "60.000 ₺ kâr 549'un alacağına yazılır",
-            'E': "60.000 ₺ 522'nin alacağına yazılır",
+            'A': '679 Diğer Olağandışı Gelir ve Kârlar hesabına 100.000 ₺ alacak yazılır',
+            'B': '679 Diğer Olağandışı Gelir ve Kârlar hesabına 220.000 ₺ alacak yazılır',
+            'C': '252 Binalar hesabı 480.000 ₺ alacaklandırılır',
+            'D': '257 Birikmiş Amortismanlar hesabı 320.000 ₺ alacaklandırılır',
+            'E': '102 Bankalar hesabı 680.000 ₺ borçlandırılır',
         },
         'B',
-        'Arsa amortismana tabi olmadığından birikmiş amortisman yoktur. Kayıt: 102 Bankalar (borç) 260.000 / 250 Arazi ve Arsalar (alacak) 200.000 + 679 Diğer Olağandışı Gelir ve Kârlar (alacak) **60.000**. Yenileme amacı olmadığından özel fon ayrılmaz; ana faaliyet satışı olmadığından 600 kullanılmaz.',
+        'Arsa: 300.000 − 200.000 = 100.000 ₺ kâr. Bina: net defter değeri 800.000 − 320.000 = 480.000 ₺; 600.000 − 480.000 = 120.000 ₺ kâr. Kayıt: 102 Bankalar 900.000 ₺ ve 257 Birikmiş Amortismanlar 320.000 ₺ borç / 250 Arazi ve Arsalar 200.000 ₺, 252 Binalar 800.000 ₺ ve 679 220.000 ₺ alacak.',
         'THP 250; 679',
     ),
     # düzey 3
