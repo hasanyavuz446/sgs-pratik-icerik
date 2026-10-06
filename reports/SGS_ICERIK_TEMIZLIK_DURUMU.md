@@ -24,6 +24,19 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
 
+## 6 Ekim 2026 — FM kök derinliği 1. tur (v233 canlı)
+
+59 soru, 8 paket: muhasebe süreci 24 (kök 128→228), MODV 10 (166→212), hazır değerler 7,
+KDV 6, menkul 4, ticari alacaklar 4, gelir tablosu 3, yabancı kaynaklar 1. Ders medyanı
+203→216, kökte 3+ tutar %41→%45 (gerçek 285 / %52). **Ölçüm bulgusu:** 150 karakter altı
+soru payı gerçeğe yakın (bizde %26, gerçek %20); fark 250+ bandında (bizde %34, gerçek %63).
+Yani kavram sorusunu silmek değil, **orta boy tek adımlı kayıt/hesap sorularını çok kalemli
+işleme çevirmek** gerekiyor. Paketlerdeki konu kümeleri (aynı formülü soran 3 reeskont, 5
+döviz değerleme, 14 özel maliyet sorusu) hem tekrar hem sızıntı kaynağı; yeni senaryolar
+paketin işlemediği alt konulara yöneltildi. **Düzeltilen hata:** KDV 0022'de üretim makinesi
+bakımı 770'e yazılıyordu (doğrusu 730). Sıradaki: mali duran varlıklar, temel kavramlar,
+dönem sonu, maliyet hesapları, özkaynaklar, stoklar ve 2. tur.
+
 ## Genel SGS tamamlanma
 
 **16 ders · 107 konu · 6420 soru.** Tamamlanan: **93 / 107 konu = %86,9**
