@@ -583,16 +583,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0040': patch(
-        'Müşteri, daha önce işletmeye 30.000 ₺ avans ödediği siparişini iptal etmiş ve işletme avansı banka havalesiyle iade etmiştir. Buna göre iade kaydı aşağıdakilerden hangisidir?',
+        "Esas faaliyeti kiralama olmayan işletme 1 Ekim'de deposunu üç yıllığına kiraya vermiş ve üç yıllık kira bedeli olan 360.000 ₺'yi peşin tahsil etmiştir. Tahsil edilen kira, dönemsellik ilkesine göre ilgili dönemlere aktarılacak şekilde gelecek dönemlere ait gelir olarak izlenmektedir. KDV ihmal edilecektir.\n\nBuna göre 31 Aralık itibarıyla bilançoda '380 Gelecek Aylara Ait Gelirler' ve '480 Gelecek Yıllara Ait Gelirler' hesaplarının kalanları aşağıdakilerden hangisidir?",
         {
-            'A': '600 (borç) 30.000 / 102 (alacak) 30.000',
-            'B': '340 (borç) 30.000 / 649 (alacak) 30.000',
-            'C': '102 (borç) 30.000 / 340 (alacak) 30.000',
-            'D': '340 (borç) 30.000 / 102 (alacak) 30.000',
-            'E': '159 (borç) 30.000 / 102 (alacak) 30.000',
+            'A': '380: 90.000 ₺; 480: 240.000 ₺',
+            'B': '380: 120.000 ₺; 480: 240.000 ₺',
+            'C': '380: 360.000 ₺; 480 hesabı kullanılmaz',
+            'D': '380: 120.000 ₺; 480: 210.000 ₺',
+            'E': '380: 30.000 ₺; 480: 300.000 ₺',
         },
         'D',
-        "Alınan avans bir yükümlülük olarak 340'ta durmaktadır; iade edildiğinde yükümlülük kapanır: **340 (borç) / 102 (alacak)**. Satış gerçekleşmediği için hasılat hesabı kullanılmaz; 159 verilen avanslar içindir.",
+        "Aylık kira 360.000 / 36 = 10.000 ₺. Ekim–Aralık'a düşen 30.000 ₺ cari dönem geliridir (649 Diğer Olağan Gelir ve Kârlar). İzleyen 12 aya ait 120.000 ₺ 380'de, daha sonraki 21 aya ait 210.000 ₺ 480'de izlenir: 120.000 + 210.000 + 30.000 = 360.000 ₺.",
         'THP 340, 102',
     ),
     # düzey 2

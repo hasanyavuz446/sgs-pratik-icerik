@@ -107,16 +107,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0006': patch(
-        "İşletme bir ayda üç alış yapmıştır: 40.000 ₺'lik mal (%20), 25.000 ₺'lik mal (%20) ve 30.000 ₺'lik mal (%10). Tümü belgeli olduğuna göre bu ay 191 İndirilecek KDV hesabında biriken toplam tutar kaç ₺'dir?",
+        "Bir ticaret işletmesinin ay içindeki alışları şöyledir: 40.000 ₺ + %20 KDV ticari mal, 30.000 ₺ + %10 KDV ticari mal, 25.000 ₺ + %20 KDV büro mobilyası ve işyeri olarak kullanılan dükkân için 10.000 ₺ + %20 KDV kira. Ay sonunda %20 KDV'li mallardan 5.000 ₺'lik kısım kusurlu olduğu için satıcıya iade edilmiştir. Önceki aydan devreden KDV yoktur ve tüm belgeler usulüne uygundur.\n\nBuna göre ay sonunda '191 İndirilecek KDV' hesabının borç kalanı kaç ₺'dir?",
         {
-            'A': '22.500 ₺',
-            'B': '19.000 ₺',
-            'C': '95.000 ₺',
-            'D': '20.000 ₺',
-            'E': '16.000 ₺',
+            'A': '18.000',
+            'B': '13.000',
+            'C': '21.000',
+            'D': '16.000',
+            'E': '17.000',
         },
         'E',
-        "Her alışın KDV'si kendi oranıyla hesaplanıp 191'in borcunda birikir: (40.000 × %20) + (25.000 × %20) + (30.000 × %10) = 8.000 + 5.000 + 3.000 = **16.000 ₺**. Üç malı da %20 saymak (19.000) veya matrahları toplamak (95.000) yanlıştır.",
+        "Yüklenilen KDV: 8.000 + 3.000 + 5.000 + 2.000 = 18.000 ₺. Alış iadesinde iade edilen malın KDV'si 191'den çıkarılır: 5.000 × %20 = 1.000 ₺ (320 borç / 153 ve 191 alacak). 191 borç kalanı = 18.000 − 1.000 = 17.000 ₺. Demirbaş ve işyeri kirasının KDV'si de indirilebilir.",
         "3065 sayılı KDVK md 28; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 191",
     ),
     # düzey 2
@@ -149,16 +149,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        "Önceki dönem devreden KDV 10.000 ₺, bu ay hesaplanan KDV 12.000 ₺, indirilecek KDV 8.000 ₺'dir. Bu ay sonunda sonraki döneme devreden KDV kaç ₺ olur?",
+        "Önceki aydan 10.000 ₺ devreden KDV'si bulunan işletmenin ay içindeki işlemleri şöyledir: 150.000 ₺ + %20 KDV ve 40.000 ₺ + %10 KDV satış; %20 oranlı satışlardan 10.000 ₺ + KDV tutarındaki malın müşteri tarafından iadesi; 120.000 ₺ + %20 KDV ve 30.000 ₺ + %10 KDV alış.\n\nBuna göre ay sonu mahsubundan sonra izleyen aya devreden KDV kaç ₺'dir?",
         {
-            'A': '4.000 ₺',
-            'B': '0 ₺',
-            'C': '6.000 ₺',
-            'D': '10.000 ₺',
-            'E': '8.000 ₺',
+            'A': '3.000',
+            'B': '2.000',
+            'C': '5.000',
+            'D': '15.000',
+            'E': '1.000',
         },
         'C',
-        'Toplam indirilebilir = 8.000 ₺ + 10.000 ₺ = 18.000 ₺; hesaplanan 12.000 ₺ bundan küçük olduğundan ödeme çıkmaz. Yeni devreden = 18.000 ₺ − 12.000 ₺ = **6.000 ₺**.',
+        "Hesaplanan KDV = 30.000 + 4.000 − 2.000 (satış iadesi 391'e borç) = 32.000 ₺. İndirilecek KDV = 24.000 + 3.000 = 27.000 ₺. İndirim toplamı 27.000 + 10.000 = 37.000 ₺ hesaplanan KDV'yi 5.000 ₺ aştığından ödenecek KDV çıkmaz; 5.000 ₺ izleyen aya devreder.",
         '3065 s. KDVK md 29/2 / TDHP 190',
     ),
     # düzey 2
@@ -331,16 +331,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0022': patch(
-        'İşletme, üretim makineleri için dışarıdan 15.000 ₺ + %20 KDV tutarında bakım-onarım hizmeti almış ve bedeli kasadan peşin ödemiştir. Bu işlemin yevmiye kaydında aşağıdakilerden hangisi yer alır?',
+        '7/A seçeneğini uygulayan bir üretim işletmesi, fabrikadaki üretim makineleri için 15.000 ₺ + %20 KDV, yönetim binasındaki iklimlendirme sistemi için 5.000 ₺ + %20 KDV tutarında dışarıdan bakım-onarım hizmeti almış ve bedellerin tamamını kasadan peşin ödemiştir.\n\nBu işlemin yevmiye kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '770 Genel Yönetim Giderleri (borç) 15.000 ve 191 İndirilecek KDV (borç) 3.000; 320 Satıcılar (alacak) 18.000',
-            'B': '770 Genel Yönetim Giderleri (borç) 15.000 ve 391 Hesaplanan KDV (borç) 3.000; 100 Kasa (alacak) 18.000',
-            'C': '770 Genel Yönetim Giderleri (borç) 15.000 ve 191 İndirilecek KDV (borç) 3.000; 100 Kasa (alacak) 18.000',
-            'D': '770 Genel Yönetim Giderleri (borç) 18.000; 100 Kasa (alacak) 18.000',
-            'E': '153 Ticari Mallar (borç) 15.000 ve 191 İndirilecek KDV (borç) 3.000; 100 Kasa (alacak) 18.000',
+            'A': '770 Genel Yönetim Giderleri hesabı 20.000 ₺ borçlandırılır',
+            'B': '391 Hesaplanan KDV hesabı 4.000 ₺ borçlandırılır',
+            'C': '730 Genel Üretim Giderleri hesabı 15.000 ₺ borçlandırılır',
+            'D': '100 Kasa hesabı 20.000 ₺ alacaklandırılır',
+            'E': '153 Ticari Mallar hesabı 15.000 ₺ borçlandırılır',
         },
         'C',
-        "Alınan hizmet gider (770) yazılır; yüklenilen KDV ayrıca 191'e alınır (maliyete/gidere gömülmez): 770 (borç) 15.000 ₺, 191 (borç) 15.000 × %20 = 3.000 ₺, peşin ödeme 100 (alacak) 18.000 ₺. Hizmet mal olmadığından 153'e, peşin olduğundan 320'ye yazılmaz; alışta 391 değil 191 çalışır.",
+        "7/A'da gider oluştuğu yere göre izlenir: üretim makinelerinin bakımı 730 Genel Üretim Giderleri (15.000 ₺), yönetim binasındaki bakım 770 Genel Yönetim Giderleri (5.000 ₺). Yüklenilen KDV 191'e alınır (4.000 ₺); kasadan çıkan toplam 24.000 ₺. Kayıt: 730 15.000 ₺, 770 5.000 ₺ ve 191 4.000 ₺ borç / 100 Kasa 24.000 ₺ alacak.",
         "3065 sayılı KDVK md 29; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 770/191/100",
     ),
     # düzey 2
@@ -387,16 +387,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0026': patch(
-        "İşletme bir ayda üç satış yapmıştır: 60.000 ₺ (%20), 20.000 ₺ (%20) ve 50.000 ₺ (%10). Bu ay 391 Hesaplanan KDV hesabında biriken toplam tutar kaç ₺'dir?",
+        "Bir işletmenin ay içindeki satışları 60.000 ₺ + %20 KDV ve 50.000 ₺ + %10 KDV'dir. Ay içinde %20 oranlı satışlardan 5.000 ₺'lik mal iade alınmış, %10 oranlı satış için müşteriye sonradan 2.000 ₺ iskonto yapılmış ve %20 oranlı vadeli satış için müşteriye 3.000 ₺ vade farkı faturası düzenlenmiştir. İade ve iskontolarda KDV de düzeltilmektedir.\n\nBuna göre ay sonunda '391 Hesaplanan KDV' hesabının alacak kalanı kaç ₺'dir?",
         {
-            'A': '26.000 ₺',
-            'B': '21.000 ₺',
-            'C': '13.000 ₺',
-            'D': '130.000 ₺',
-            'E': '16.000 ₺',
+            'A': '14.800',
+            'B': '16.400',
+            'C': '17.400',
+            'D': '15.800',
+            'E': '16.000',
         },
         'B',
-        "Her satışın KDV'si kendi oranıyla 391'in alacağında birikir: (60.000 × %20) + (20.000 × %20) + (50.000 × %10) = 12.000 + 4.000 + 5.000 = **21.000 ₺**. Hepsini %20 saymak (26.000) ya da matrahları toplamak (130.000) yanlıştır.",
+        "Satışlar: 12.000 + 5.000 = 17.000 ₺. Satış iadesi 5.000 × %20 = 1.000 ₺ ve sonradan iskonto 2.000 × %10 = 200 ₺ KDV'yi azaltır (391 borç). Vade farkı satılan malın oranıyla KDV'ye tabidir: 3.000 × %20 = 600 ₺ (391 alacak). Kalan = 17.000 − 1.000 − 200 + 600 = 16.400 ₺.",
         "3065 sayılı KDVK md 28; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 391",
     ),
     # düzey 2
@@ -415,16 +415,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        "Önceki dönemden devreden KDV 7.000 ₺'dir. Bu ay hesaplanan KDV 25.000 ₺, indirilecek KDV 13.000 ₺'dir. Bu ay ödenecek KDV kaç ₺'dir?",
+        'Bir işletmenin ay sonu mizanında 391 Hesaplanan KDV hesabı 20.000 ₺ alacak, 191 İndirilecek KDV hesabı 23.000 ₺ borç ve önceki aydan gelen 190 Devreden KDV hesabı 4.000 ₺ borç kalanı vermektedir. İşletme ay sonunda KDV hesaplarını mahsup etmektedir.\n\nMahsup kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '0 ₺',
-            'B': '18.000 ₺',
-            'C': '5.000 ₺',
-            'D': '19.000 ₺',
-            'E': '12.000 ₺',
+            'A': '360 Ödenecek Vergi ve Fonlar hesabı 7.000 ₺ alacaklandırılır',
+            'B': '391 Hesaplanan KDV hesabı 20.000 ₺ alacaklandırılır',
+            'C': '190 Devreden KDV hesabı 7.000 ₺ olarak borçlandırılır',
+            'D': '191 İndirilecek KDV hesabı 23.000 ₺ borçlandırılır',
+            'E': '190 Devreden KDV hesabı net fark olan 3.000 ₺ borçlandırılır',
         },
         'C',
-        "Önceki dönem devreden KDV, bu ayın indirilecekleri gibi hesaplanan KDV'den düşülür: 25.000 − (13.000 + 7.000) = **5.000 ₺** ödenecek KDV (360). Devreden dikkate alınmazsa yanlışlıkla 12.000 ₺ bulunur.",
+        "İndirim toplamı 23.000 + 4.000 = 27.000 ₺, hesaplanan KDV 20.000 ₺'den büyük olduğundan ödenecek KDV yoktur; 7.000 ₺ izleyen aya devreder. Kayıt: 391 20.000 ₺ ve 190 (yeni devir) 7.000 ₺ borç / 191 23.000 ₺ ve 190 (eski devir) 4.000 ₺ alacak.",
         "3065 sayılı KDVK md 29/2; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 360/190",
     ),
     # düzey 2
@@ -751,16 +751,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0052': patch(
-        "Önceki dönemden devreden KDV 8.000 ₺'dir. Bu ay hesaplanan KDV 15.000 ₺, indirilecek KDV 14.000 ₺'dir. Bu ay sonunda sonraki döneme devreden KDV kaç ₺ olur?",
+        "Önceki aydan 3.000 ₺ devreden KDV'si bulunan işletme ay içinde CIF değeri 100.000 ₺ olan bir ticari malı ithal etmiş; ithalat sırasında 10.000 ₺ gümrük vergisi ödenmiş ve KDV gümrükte ödenmiştir. Ayrıca yurt içinden 50.000 ₺ + %20 KDV mal alınmış, 200.000 ₺ + %20 KDV satış yapılmıştır. Tüm işlemler %20 KDV'ye tabidir.\n\nBuna göre ay sonunda ödenecek KDV kaç ₺'dir?",
         {
-            'A': '22.000 ₺',
-            'B': '7.000 ₺',
-            'C': '8.000 ₺',
-            'D': '1.000 ₺',
-            'E': '0 ₺',
+            'A': '7.000',
+            'B': '5.000',
+            'C': '8.000',
+            'D': '27.000',
+            'E': '2.000',
         },
         'B',
-        'Toplam indirilebilir = 14.000 + 8.000 = 22.000 ₺; hesaplanan 15.000 ₺ bundan küçük olduğundan ödeme çıkmaz. Yeni devreden KDV = 22.000 − 15.000 = **7.000 ₺** (190). Devreden ihmal edilirse yanlışlıkla ödeme çıkıyormuş gibi görünür.',
+        "İthalatta KDV matrahı CIF değer ile gümrük vergisinin toplamıdır: (100.000 + 10.000) × %20 = 22.000 ₺; gümrükte ödenen KDV 191'e alınır. Hesaplanan KDV 40.000 ₺; indirimler 22.000 + 10.000 + 3.000 = 35.000 ₺; ödenecek KDV 5.000 ₺.",
         "3065 sayılı KDVK md 29/2; 1 Sıra No'lu MSUGT (Tekdüzen Hesap Planı) - 190",
     ),
     # düzey 3
