@@ -201,16 +201,16 @@
     "id": "finmuh-dsi-gen-0010",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "Dönem sonunda üretim makineleri için 40.000 ₺, genel yönetimde kullanılan demirbaşlar için 10.000 ₺ amortisman hesaplanmıştır. İşletme 7/A seçeneğini kullanmaktadır.\n\nAmortisman kaydı hangisidir?",
+    "stem": "7/A seçeneğini uygulayan ve bilanço esasına göre defter tutan işletmenin dönem sonunda amortismana tabi üç varlığı vardır: yıl başında alınan 600.000 ₺'lik üretim makinesi (faydalı ömür 10 yıl), yıl başından beri kullanılan 1.000.000 ₺'lik yönetim binası (faydalı ömür 50 yıl) ve 1 Ekim'de satış bölümü için alınan 900.000 ₺'lik binek otomobil (faydalı ömür 5 yıl). Normal amortisman yöntemi ve dolaylı kayıt yöntemi uygulanmaktadır.\n\nDönem sonu amortisman kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "720 Direkt İşçilik Giderleri 40.000 ₺ ve 760 Pazarlama, Satış ve Dağıtım Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "B": "730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "C": "257 Birikmiş Amortismanlar 50.000 ₺ borç / 730 Genel Üretim Giderleri 40.000 ₺ ve 770 Genel Yönetim Giderleri 10.000 ₺ alacak",
-      "D": "730 Genel Üretim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak",
-      "E": "770 Genel Yönetim Giderleri 50.000 ₺ borç / 257 Birikmiş Amortismanlar 50.000 ₺ alacak"
+      "A": "730 60.000, 760 180.000 ve 770 20.000 ₺ borç / 257 260.000 ₺ alacak",
+      "B": "730 60.000, 760 45.000 ve 770 20.000 ₺ borç / 257 125.000 ₺ alacak",
+      "C": "730 60.000 ve 770 65.000 ₺ borç / 257 125.000 ₺ alacak",
+      "D": "730 60.000, 760 45.000 ve 770 20.000 ₺ borç / 254 125.000 ₺ alacak",
+      "E": "257 125.000 ₺ borç / 730 60.000, 760 45.000 ve 770 20.000 ₺ alacak"
     },
     "answer": "B",
-    "solution": "Üretim makinelerinin amortismanı **730 hesaba 40.000 ₺**, yönetim demirbaşının amortismanı **770 hesaba 10.000 ₺ borç** yazılır. Toplam 50.000 ₺ birikmiş amortisman 257 hesaba alacak kaydedilir.",
+    "solution": "Makine: 600.000 × %10 = 60.000 ₺ (730). Bina: 1.000.000 × %2 = 20.000 ₺ (770). Binek otomobilde VUK m. 320'ye göre kıst amortisman uygulanır: 900.000 × %20 × 3/12 = 45.000 ₺ (satış bölümü, 760). Dolaylı yöntemde karşı hesap 257 Birikmiş Amortismanlar: toplam 125.000 ₺ alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -465,16 +465,16 @@
     "id": "finmuh-dsi-gen-0022",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Ekim 2025 tarihinde yıllık iş yeri sigortası için 120.000 ₺ ödemiş ve tutarın tamamını 180 Gelecek Aylara Ait Giderler hesabına kaydetmiştir.\n\n31 Aralık 2025 tarihinde yapılacak düzeltme kaydı hangisidir?",
+    "stem": "İşletme yıl içinde şu peşin ödemeleri yapmıştır: 1 Ekim'de bir yıllık işyeri sigortası için 120.000 ₺, 1 Kasım'da 24 aylık reklam panosu kiralaması için 240.000 ₺ ve 1 Aralık'ta altı aylık depo kirası için 60.000 ₺. Aylık tutarlar eşittir. Dönem sonunda cari döneme ait kısımlar gider yazılmış, izleyen on iki aydan sonraki döneme ait kısımlar da '280 Gelecek Yıllara Ait Giderler' hesabına ayrılmıştır.\n\nBuna göre 31 Aralık'ta '180 Gelecek Aylara Ait Giderler' hesabının kalanı kaç ₺'dir?",
     "options": {
-      "A": "770 Genel Yönetim Giderleri 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak",
-      "B": "770 Genel Yönetim Giderleri 30.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 30.000 ₺ alacak",
-      "C": "Dönem sonunda herhangi bir düzeltme kaydı yapılmaz.",
-      "D": "280 Gelecek Yıllara Ait Giderler 90.000 ₺ borç / 180 Gelecek Aylara Ait Giderler 90.000 ₺ alacak",
-      "E": "180 Gelecek Aylara Ait Giderler 30.000 ₺ borç / 770 Genel Yönetim Giderleri 30.000 ₺ alacak"
+      "A": "360.000",
+      "B": "260.000",
+      "C": "300.000",
+      "D": "210.000",
+      "E": "240.000"
     },
     "answer": "B",
-    "solution": "Aylık sigorta 10.000 ₺, Ekim-Aralık dönemine düşen tutar 30.000 ₺'dir. Kullanılan kısım **770 Genel Yönetim Giderleri borç / 180 Gelecek Aylara Ait Giderler alacak** kaydıyla giderleştirilir.",
+    "solution": "Sigorta: 3 ay gider (30.000 ₺), 9 ay 180'de (90.000 ₺). Reklam: aylık 10.000 ₺; 2 ay gider (20.000 ₺), izleyen 12 ay 180'de (120.000 ₺), kalan 10 ay 280'de (100.000 ₺). Kira: aylık 10.000 ₺; 1 ay gider, 5 ay 180'de (50.000 ₺). 180 kalanı = 90.000 + 120.000 + 50.000 = 260.000 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -641,16 +641,16 @@
     "id": "finmuh-dsi-gen-0030",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletmenin 31 Aralık tarihli 102 Bankalar hesabı bakiyesi 130.000 ₺, banka ekstresi bakiyesi 126.000 ₺'dir. Farkın, bankanın hesaptan kestiği ve henüz kayda alınmamış 4.000 ₺ komisyon olduğu belirlenmiştir.\n\nDüzeltme kaydı hangisidir?",
+    "stem": "İşletmenin 31 Aralık tarihli 102 Bankalar hesabının kayıtlı kalanı 130.000 ₺'dir. Banka hesap özetiyle yapılan karşılaştırmada henüz kayda alınmamış şu işlemler belirlenmiştir: bankanın hesaptan kestiği 400 ₺ hesap işletim ücreti, bankanın işletme adına tahsil edip hesaba geçirdiği 15.000 ₺'lik müşteri senedi ve hesaba yatırılmış olup karşılıksız çıktığı için banka tarafından geri alınan 6.000 ₺'lik müşteri çeki.\n\nİşletmenin gerekli düzeltme kayıtlarını yapmasından sonra 102 Bankalar hesabının kalanı kaç ₺ olur?",
     "options": {
-      "A": "102 Bankalar 4.000 ₺ borç / 780 Finansman Giderleri 4.000 ₺ alacak",
-      "B": "780 Finansman Giderleri 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
-      "C": "102 Bankalar 126.000 ₺ borç / 397 Sayım ve Tesellüm Fazlaları 126.000 ₺ alacak",
-      "D": "197 Sayım ve Tesellüm Noksanları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak",
-      "E": "656 Kambiyo Zararları 4.000 ₺ borç / 102 Bankalar 4.000 ₺ alacak"
+      "A": "144.600",
+      "B": "138.600",
+      "C": "139.000",
+      "D": "123.600",
+      "E": "150.600"
     },
     "answer": "B",
-    "solution": "Banka komisyonu işletmenin finansman gideridir ve banka varlığını azaltır. Bu nedenle **780 Finansman Giderleri borçlandırılır, 102 Bankalar alacaklandırılır**; kayıtlı bakiye 126.000 ₺'ye iner.",
+    "solution": "Düzeltmeler: hesap işletim ücreti 653 borç / 102 alacak 400 ₺; tahsil edilen senet 102 borç / 121 alacak 15.000 ₺; karşılıksız çek 120 borç / 102 alacak 6.000 ₺. Düzeltilmiş kalan = 130.000 − 400 + 15.000 − 6.000 = 138.600 ₺.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -729,16 +729,16 @@
     "id": "finmuh-dsi-gen-0034",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme önceki dönem sonunda alacak senetleri için 12.000 ₺ reeskont ayırmış ve 122 Alacak Senetleri Reeskontu hesabını alacaklandırmıştır. Yeni dönemin başında bu reeskontun iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
+    "stem": "İşletme önceki dönem sonunda portföyündeki alacak senetleri için 12.000 ₺ reeskont ayırmış; 657 Reeskont Faiz Giderleri hesabını borçlandırıp 122 Alacak Senetleri Reeskontu hesabını alacaklandırmıştır. 657 hesabı dönem sonunda 690 hesabına devredilerek kapatılmıştır. İşletme reeskontu yeni dönemin ilk günü iptal etmektedir.\n\nReeskontun iptaline ilişkin kayıt aşağıdakilerden hangisidir?",
     "options": {
       "A": "657 (borç) 12.000 / 122 (alacak) 12.000",
-      "B": "122 (borç) 12.000 / 657 (alacak) 12.000",
-      "C": "122 (borç) 12.000 / 647 (alacak) 12.000",
+      "B": "122 (borç) 12.000 / 647 (alacak) 12.000",
+      "C": "122 (borç) 12.000 / 657 (alacak) 12.000",
       "D": "122 (borç) 12.000 / 121 (alacak) 12.000",
       "E": "121 (borç) 12.000 / 122 (alacak) 12.000"
     },
     "answer": "B",
-    "solution": "Önceki dönem ayrılan reeskont yeni dönemin başında **ters kayıtla** kapatılır: 122 borçlandırılır, önceki kayıttaki gider hesabı 657 alacaklandırılır. Böylece faiz, senedin tahsil edildiği dönemde doğru tutarla sonuçlara yansır.",
+    "solution": "Önceki dönemde gider yazılan 657 kapanmış olduğundan iptal kaydında gider hesabı alacaklandırılmaz; reeskont tutarı yeni dönemde gelir olarak kaydedilir: 122 Alacak Senetleri Reeskontu borç / 647 Reeskont Faiz Gelirleri alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
@@ -971,16 +971,16 @@
     "id": "finmuh-dsi-gen-0045",
     "ders": "finansal_muhasebe",
     "konu": "donem_sonu_islemleri",
-    "stem": "İşletme 1 Ekim 2025 tarihinde bankaya yıllık %18 faizli 800.000 ₺ vadeli mevduat yatırmıştır. Faiz ve anapara vade sonunda tahsil edilecektir.\n\n31 Aralık 2025 tarihinde yapılacak faiz tahakkuk kaydı hangisidir?",
+    "stem": "İşletmenin bankada iki vadeli mevduat hesabı vardır. Birincisi 1 Ekim'de yatırılan, yıllık %18 basit faizli 800.000 ₺'dir; faizi vade sonunda tahsil edilecektir. İkincisi 1 Haziran'da yatırılan, yıllık %24 basit faizli 500.000 ₺'dir; faizi altı ayda bir tahsil edilmekte olup ilk altı aylık faiz 1 Aralık'ta hesaba geçmiştir.\n\n31 Aralık'ta yapılacak faiz tahakkuku kaydı aşağıdakilerden hangisidir?",
     "options": {
-      "A": "180 Gelecek Aylara Ait Giderler 36.000 ₺ borç / 102 Bankalar 36.000 ₺ alacak",
-      "B": "181 Gelir Tahakkukları 144.000 ₺ borç / 642 Faiz Gelirleri 144.000 ₺ alacak",
-      "C": "642 Faiz Gelirleri 36.000 ₺ borç / 181 Gelir Tahakkukları 36.000 ₺ alacak",
-      "D": "102 Bankalar 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak",
-      "E": "181 Gelir Tahakkukları 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak"
+      "A": "181 Gelir Tahakkukları 36.000 ₺ borç / 642 Faiz Gelirleri 36.000 ₺ alacak",
+      "B": "181 Gelir Tahakkukları 106.000 ₺ borç / 642 Faiz Gelirleri 106.000 ₺ alacak",
+      "C": "642 Faiz Gelirleri 46.000 ₺ borç / 181 Gelir Tahakkukları 46.000 ₺ alacak",
+      "D": "102 Bankalar 46.000 ₺ borç / 642 Faiz Gelirleri 46.000 ₺ alacak",
+      "E": "181 Gelir Tahakkukları 46.000 ₺ borç / 642 Faiz Gelirleri 46.000 ₺ alacak"
     },
     "answer": "E",
-    "solution": "Üç aylık faiz 800.000 × %18 × 3/12 = **36.000 ₺**'dir. Henüz tahsil edilmediği için 181 Gelir Tahakkukları borçlandırılır; döneme ait faiz geliri 642 hesaba alacak kaydedilir.",
+    "solution": "Birinci mevduat: 800.000 × %18 × 3/12 = 36.000 ₺. İkinci mevduatın 1 Aralık'a kadarki faizi tahsil edilmiştir; tahakkuk edecek kısım Aralık ayıdır: 500.000 × %24 × 1/12 = 10.000 ₺. Toplam 46.000 ₺: 181 borç / 642 alacak.",
     "source": {
       "kind": "generated",
       "styleRef": "SGS Finansal Muhasebe (çok adımlı; gerçek sınav profiline kalibre)",
