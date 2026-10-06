@@ -37,16 +37,16 @@ def patch(stem, options, answer, solution, ref='Tekduzen Hesap Plani 10 Hazir De
 _PATCHES = {
     # düzey 2
     '0001': patch(
-        'Gün sonu kasa sayımında kayıtlı kasa mevcudu, fiili mevcuttan 500 ₺ fazla çıkmıştır (kasada 500 ₺ eksik vardır) ve nedeni henüz bilinmemektedir.\n\nBuna göre yapılması gereken kayıtla ilgili aşağıdakilerden hangisi doğrudur?',
+        "Ay sonu kasa sayımında 100 Kasa hesabının kayıtlı mevcudu 48.300 ₺, fiilî mevcudu 47.100 ₺ bulunmuştur. İncelemede, satılan malların müşterilere gönderimi için kargo firmasına nakden ödenen 900 ₺'nin belgesi bulunduğu hâlde kayda alınmadığı anlaşılmış; kalan farkın nedeni ise belirlenememiştir. KDV ihmal edilecektir.\n\nBuna göre yapılacak kayıtlarda aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '100 Kasa hesabı 500 ₺ borçlandırılır.',
-            'B': '679 Diğer Olağandışı Gelir hesabı 500 ₺ alacaklandırılır.',
-            'C': '197 Sayım ve Tesellüm Noksanları hesabı 500 ₺ borçlandırılır.',
-            'D': '397 Sayım ve Tesellüm Fazlaları hesabı 500 ₺ borçlandırılır.',
-            'E': '689 Diğer Olağandışı Gider hesabı 500 ₺ borçlandırılır.',
+            'A': '197 Sayım ve Tesellüm Noksanları hesabı 1.200 ₺ borçlandırılır',
+            'B': '760 Pazarlama Satış ve Dağıtım Giderleri hesabı 900 ₺ alacaklandırılır',
+            'C': '197 Sayım ve Tesellüm Noksanları hesabı 300 ₺ borçlandırılır',
+            'D': '100 Kasa hesabı 300 ₺ borçlandırılır',
+            'E': '689 Diğer Olağandışı Gider ve Zararlar hesabı 1.200 ₺ borçlandırılır',
         },
         'C',
-        'Fiili kasa, kayıttan **az** (noksan) olduğundan nedeni bulunana kadar **197 Sayım ve Tesellüm Noksanları (borç) 500 / 100 Kasa (alacak) 500** kaydı yapılır; kasa fiili duruma indirilir. Neden bulununca 197 kapatılır.',
+        "Kasa noksanı 48.300 − 47.100 = 1.200 ₺'dir. Nedeni belli olan 900 ₺ satış gönderim gideri olarak kaydedilir: 760 borç / 100 alacak. Nedeni bilinmeyen 300 ₺ araştırma sonuçlanıncaya kadar 197 Sayım ve Tesellüm Noksanları'nda izlenir: 197 borç / 100 alacak.",
         "1 Sıra No'lu MSUGT - 197 Sayım ve Tesellüm Noksanları",
     ),
     # düzey 2
@@ -149,16 +149,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0009': patch(
-        "İşletmenin döviz cinsinden banka mevduatı bulunmaktadır: 2.000 EUR, 40 ₺/EUR kurundan kayıtlıdır. Değerleme günü kuru 43 ₺/EUR'dur. Bu değerlemenin kaydı aşağıdakilerden hangisidir?",
+        "İşletmenin kasasında 30 ₺/USD kurundan kayıtlı 2.000 USD efektif, bankadaki döviz tevdiat hesabında ise 40 ₺/EUR kurundan kayıtlı 3.000 EUR bulunmaktadır. Değerleme gününde T.C. Merkez Bankası efektif alış kuru 32 ₺/USD, döviz alış kuru 38 ₺/EUR'dur.\n\nVUK'a göre yapılacak değerleme kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '102 Bankalar (borç) 86.000 / 646 Kambiyo Kârları (alacak) 86.000',
-            'B': '100 Kasa (borç) 6.000 / 646 Kambiyo Kârları (alacak) 6.000',
-            'C': '656 Kambiyo Zararları (borç) 6.000 / 102 Bankalar (alacak) 6.000',
-            'D': '102 Bankalar (borç) 6.000 / 642 Faiz Gelirleri (alacak) 6.000',
-            'E': '102 Bankalar (borç) 6.000 / 646 Kambiyo Kârları (alacak) 6.000',
+            'A': '100 Kasa hesabı 4.000 ₺ alacaklandırılır',
+            'B': '646 Kambiyo Kârları hesabı net 2.000 ₺ alacaklandırılır',
+            'C': '102 Bankalar hesabı 6.000 ₺ borçlandırılır',
+            'D': '646 Kambiyo Kârları hesabı 10.000 ₺ alacaklandırılır',
+            'E': '656 Kambiyo Zararları hesabı 6.000 ₺ borçlandırılır',
         },
         'E',
-        'Kur farkı = 2.000 × (43 − 40) = **6.000 ₺ lehte**. Döviz banka hesabı değer kazandığından: **102 Bankalar (borç) 6.000 / 646 Kambiyo Kârları (alacak) 6.000**.',
+        'Efektif: 2.000 × (32 − 30) = 4.000 ₺ artış → 100 Kasa borç / 646 Kambiyo Kârları alacak. Döviz mevduatı: 3.000 × (38 − 40) = 6.000 ₺ azalış → 656 Kambiyo Zararları borç / 102 Bankalar alacak. Her kalem ayrı değerlenir; kâr ile zarar netleştirilmez.',
         'VUK md. 280; 646 Kambiyo Kârları',
     ),
     # düzey 2
@@ -191,16 +191,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0012': patch(
-        "İşletmenin daha önce müşterisinden aldığı 15.000 ₺'lik çek, bankaya ibraz edildiğinde karşılıksız çıkmıştır. Çek bedelinin yeniden müşteriden (alıcıdan) alacak olarak izlenmesine ilişkin kayıt aşağıdakilerden hangisidir?",
+        "İşletme, müşterisinden aldığı 15.000 ₺'lik çeki satıcısına olan borcuna karşılık ciro etmiş ve kaydını yapmıştır. Satıcı çeki bankaya ibraz ettiğinde çek karşılıksız çıkmış; satıcı çeki işletmeye iade ederek alacağını yeniden talep etmiş, işletme de çek bedelini müşterisinden tahsil etmek üzere alacak olarak izlemeye karar vermiştir.\n\nÇekin iadesine ilişkin kayıt aşağıdakilerden hangisidir?",
         {
-            'A': '120 Alıcılar (borç) 15.000 / 101 Alınan Çekler (alacak) 15.000',
-            'B': '101 Alınan Çekler (borç) 15.000 / 120 Alıcılar (alacak) 15.000',
-            'C': '102 Bankalar (borç) 15.000 / 101 Alınan Çekler (alacak) 15.000',
-            'D': '689 Diğer Olağandışı Gider (borç) 15.000 / 101 Alınan Çekler (alacak) 15.000',
-            'E': '103 Verilen Çekler ve Ödeme Emirleri (borç) 15.000 / 101 Alınan Çekler (alacak) 15.000',
+            'A': '120 Alıcılar 15.000 ₺ borç / 320 Satıcılar 15.000 ₺ alacak',
+            'B': '101 Alınan Çekler 15.000 ₺ borç / 320 Satıcılar 15.000 ₺ alacak',
+            'C': '320 Satıcılar 15.000 ₺ borç / 101 Alınan Çekler 15.000 ₺ alacak',
+            'D': '120 Alıcılar 15.000 ₺ borç / 101 Alınan Çekler 15.000 ₺ alacak',
+            'E': '320 Satıcılar 15.000 ₺ borç / 120 Alıcılar 15.000 ₺ alacak',
         },
         'A',
-        'Karşılıksız çıkan çek tahsil edilemediğinden çek portföyünden çıkarılır ve tutar yeniden alacak olarak izlenir: **120 Alıcılar (borç) 15.000 / 101 Alınan Çekler (alacak) 15.000**.',
+        'Ciro sırasında 320 Satıcılar borç / 101 Alınan Çekler alacak kaydı yapılmış, çek portföyden çıkmıştı. Karşılıksız çek iade edilince satıcıya olan borç yeniden doğar (320 alacak) ve çek bedeli müşteriden alacak olarak izlenir (120 borç). Çek portföyde olmadığından 101 yeniden çalışmaz.',
         "1 Sıra No'lu MSUGT - 101 Alınan Çekler (karşılıksız çek)",
     ),
     # düzey 2
@@ -219,16 +219,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0014': patch(
-        "İşletme, satıcısına yaptığı 12.000 ₺'lik havale için bankaya 100 ₺ havale masrafı ödemiştir (masraf ayrıca banka hesabından kesilmiştir). Yalnızca havale masrafına ilişkin kayıt aşağıdakilerden hangisidir?",
+        'İşletme aynı gün satıcısına 12.000 ₺ EFT yapmış, banka bunun için hesaptan ayrıca 100 ₺ masraf kesmiştir. Yine aynı gün bir müşteri 8.500 ₺ borcunu havale etmiş, banka gelen havale için 50 ₺ masraf keserek kalan tutarı hesaba geçirmiştir. Masraflara ilişkin vergiler ihmal edilecektir.\n\nBu işlemlerin kayıtlarında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '653 Komisyon Giderleri (borç) 100 / 102 Bankalar (alacak) 100',
-            'B': '600 Yurt İçi Satışlar (borç) 100 / 102 Bankalar (alacak) 100',
-            'C': '102 Bankalar (borç) 100 / 653 Komisyon Giderleri (alacak) 100',
-            'D': '780 Finansman Giderleri (borç) 100 / 100 Kasa (alacak) 100',
-            'E': '320 Satıcılar (borç) 100 / 102 Bankalar (alacak) 100',
+            'A': '653 Komisyon Giderleri hesabı toplam 150 ₺ borçlandırılır',
+            'B': '102 Bankalar hesabı EFT için toplam 12.100 ₺ borçlandırılır',
+            'C': '320 Satıcılar hesabı 12.100 ₺ borçlandırılır',
+            'D': '120 Alıcılar hesabı 8.450 ₺ alacaklandırılır',
+            'E': '780 Finansman Giderleri hesabı 150 ₺ borçlandırılır',
         },
         'A',
-        'Havale masrafı bir hizmet gideridir: **653 Komisyon Giderleri (borç) 100 / 102 Bankalar (alacak) 100**. Satıcıya olan borcun ödenmesi ise ayrı bir kayıtta 320/102 ile yapılır.',
+        'EFT: 320 Satıcılar 12.000 ₺ ve 653 Komisyon Giderleri 100 ₺ borç / 102 Bankalar 12.100 ₺ alacak. Gelen havale: 102 Bankalar 8.450 ₺ ve 653 50 ₺ borç / 120 Alıcılar 8.500 ₺ alacak. Müşterinin borcu tam tutarıyla kapanır; banka masrafları toplam 150 ₺ komisyon gideridir, kredi faizi gibi bir finansman gideri değildir.',
         "1 Sıra No'lu MSUGT - 653 Komisyon Giderleri",
     ),
     # düzey 3
@@ -415,16 +415,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0028': patch(
-        'Perakende satış yapan işletme, gün sonunda ödeme kaydedici cihaz (yazar kasa) raporuna göre 5.000 ₺ + %20 KDV tutarında nakit hasılat elde etmiştir. Bu günlük hasılatın kaydı aşağıdakilerden hangisidir?',
+        "Perakende satış yapan işletmenin gün sonu ödeme kaydedici cihaz (Z) raporuna göre KDV dâhil hasılat 19.900 ₺'dir. Hasılatın 14.400 ₺'si %20, 5.500 ₺'si %10 oranlı mallara aittir. Tahsilatın 7.900 ₺'si kredi kartıyla yapılmış olup tutarlar henüz banka hesabına geçmemiştir; kalanı nakittir.\n\nGün sonu hasılat kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '102 Bankalar (borç) 6.000 / 600 Yurt İçi Satışlar (alacak) 5.000 + 391 Hesaplanan KDV (alacak) 1.000',
-            'B': '100 Kasa (borç) 6.000 / 600 Yurt İçi Satışlar (alacak) 5.000 + 391 Hesaplanan KDV (alacak) 1.000',
-            'C': '100 Kasa (borç) 6.000 / 649 Diğer Olağan Gelir ve Kârlar (alacak) 5.000 + 391 Hesaplanan KDV (alacak) 1.000',
-            'D': '600 Yurt İçi Satışlar (borç) 5.000 + 391 Hesaplanan KDV (borç) 1.000 / 100 Kasa (alacak) 6.000',
-            'E': '100 Kasa (borç) 6.000 / 600 Yurt İçi Satışlar (alacak) 6.000 (KDV ayrıca hesaplanıp ayrıştırılmaz)',
+            'A': '600 Yurt İçi Satışlar hesabı 19.900 ₺ alacaklandırılır',
+            'B': '391 Hesaplanan KDV hesabı 2.900 ₺ alacaklandırılır',
+            'C': '100 Kasa hesabı 19.900 ₺ borçlandırılır',
+            'D': '108 Diğer Hazır Değerler hesabı 7.900 ₺ alacaklandırılır',
+            'E': '391 Hesaplanan KDV hesabı 3.980 ₺ alacaklandırılır',
         },
         'B',
-        'Nakit hasılat kasaya girer: **100 Kasa (borç) 6.000** (5.000 + %20 KDV 1.000) / 600 Yurt İçi Satışlar (alacak) 5.000 + 391 Hesaplanan KDV (alacak) 1.000.',
+        "%20'li hasılat: matrah 14.400 / 1,20 = 12.000 ₺, KDV 2.400 ₺; %10'lu hasılat: matrah 5.500 / 1,10 = 5.000 ₺, KDV 500 ₺. Kayıt: 100 Kasa 12.000 ₺ ve 108 Diğer Hazır Değerler 7.900 ₺ borç / 600 Yurt İçi Satışlar 17.000 ₺ ve 391 Hesaplanan KDV 2.900 ₺ alacak.",
         "1 Sıra No'lu MSUGT; VUK md. 233 (ÖKC fişi)",
     ),
     # düzey 2
@@ -513,16 +513,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0035': patch(
-        "İşletmenin bankadaki vadeli mevduatının vadesi dolmuş; anapara ve faizi vadesiz mevduat hesabına geçmiştir. Anapara 100.000 ₺, faiz 9.000 ₺'dir (stopaj ihmal edilecektir). Faize ilişkin kısım için aşağıdakilerden hangisi doğrudur?",
+        "İşletme 1 Kasım'da bankada 200.000 ₺ tutarında, yıllık %30 faizli ve altı ay vadeli bir vadeli mevduat hesabı açmıştır. 31 Aralık'ta dönemsellik gereği iki aylık faiz tahakkuk ettirilmiştir. 30 Nisan'da vade dolmuş; anapara ile faiz, faiz üzerinden %15 stopaj kesilerek vadesiz hesaba aktarılmıştır. Faiz basit faiz yöntemiyle hesaplanacaktır.\n\nVade sonu kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '600 Yurt İçi Satışlar hesabı 9.000 ₺ alacaklandırılır.',
-            'B': '102 Bankalar hesabı 9.000 ₺ alacaklandırılır.',
-            'C': '642 Faiz Gelirleri hesabı 9.000 ₺ alacaklandırılır.',
-            'D': '780 Finansman Giderleri hesabı 9.000 ₺ borçlandırılır.',
-            'E': '646 Kambiyo Kârları hesabı 9.000 ₺ alacaklandırılır.',
+            'A': '642 Faiz Gelirleri hesabı 30.000 ₺ alacaklandırılır',
+            'B': '181 Gelir Tahakkukları hesabı 10.000 ₺ borçlandırılır',
+            'C': '642 Faiz Gelirleri hesabı 20.000 ₺ alacaklandırılır',
+            'D': '193 Peşin Ödenen Vergiler ve Fonlar 3.000 ₺ borçlandırılır',
+            'E': '102 Bankalar hesabı vadesiz hesaba 230.000 ₺ borçlandırılır',
         },
         'C',
-        'Anapara zaten işletmenindir (hesaplar arası aktarım). Kazanılan faiz ise gelirdir: **642 Faiz Gelirleri 9.000 ₺ alacaklandırılır** (102 Bankalar borçlanır).',
+        'Toplam faiz 200.000 × %30 × 6/12 = 30.000 ₺; geçen yıl tahakkuk eden iki aylık kısım 10.000 ₺, cari yıla düşen kısım 20.000 ₺. Stopaj 30.000 × %15 = 4.500 ₺. Kayıt: 102 Bankalar (vadesiz) 225.500 ₺ ve 193 Peşin Ödenen Vergiler ve Fonlar 4.500 ₺ borç / 102 Bankalar (vadeli) 200.000 ₺, 181 Gelir Tahakkukları 10.000 ₺ ve 642 Faiz Gelirleri 20.000 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 642 Faiz Gelirleri",
     ),
     # düzey 3
@@ -709,16 +709,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0049': patch(
-        'İşletmenin banka hesabından, verdiği otomatik ödeme talimatı gereği elektrik faturası 1.500 ₺ (KDV ihmal) ödenmiştir. Bu ödemenin kaydı aşağıdakilerden hangisidir?',
+        "7/A seçeneğini uygulayan bir üretim işletmesinin banka hesabından, otomatik ödeme talimatı gereği 6.000 ₺ + %20 KDV tutarındaki elektrik faturası ödenmiştir. Ölçümlere göre tüketimin %70'i fabrikada, %30'u yönetim binasında gerçekleşmiştir.\n\nBu ödemenin kaydında aşağıdaki hesaplardan hangisinin kullanımı doğrudur?",
         {
-            'A': '102 Bankalar (borç) 1.500 / 770 Genel Yönetim Giderleri (alacak) 1.500',
-            'B': '770 Genel Yönetim Giderleri (borç) 1.500 / 102 Bankalar (alacak) 1.500',
-            'C': '320 Satıcılar (borç) 1.500 / 102 Bankalar (alacak) 1.500',
-            'D': '770 Genel Yönetim Giderleri (borç) 1.500 / 100 Kasa (alacak) 1.500',
-            'E': '100 Kasa (borç) 1.500 / 770 Genel Yönetim Giderleri (alacak) 1.500',
+            'A': '770 Genel Yönetim Giderleri hesabı 6.000 ₺ borçlandırılır',
+            'B': '730 Genel Üretim Giderleri hesabı 4.200 ₺ borçlandırılır',
+            'C': '191 İndirilecek KDV hesabı 1.440 ₺ borçlandırılır',
+            'D': '102 Bankalar hesabı 6.000 ₺ alacaklandırılır',
+            'E': '760 Pazarlama Satış ve Dağıtım Giderleri 1.800 ₺ borçlandırılır',
         },
         'B',
-        'Elektrik gideri gider hesabına yazılır ve banka mevduatı azalır: **770 Genel Yönetim Giderleri (borç) 1.500 / 102 Bankalar (alacak) 1.500** (idari birim varsayımıyla).',
+        'Gider, oluştuğu yere göre dağıtılır: fabrika payı 6.000 × %70 = 4.200 ₺ (730), yönetim payı 6.000 × %30 = 1.800 ₺ (770). Kayıt: 730 4.200 ₺, 770 1.800 ₺ ve 191 İndirilecek KDV 1.200 ₺ borç / 102 Bankalar 7.200 ₺ alacak.',
         "1 Sıra No'lu MSUGT - 102 Bankalar / gider hesabı",
     ),
     # düzey 2
