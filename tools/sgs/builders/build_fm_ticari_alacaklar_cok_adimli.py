@@ -51,16 +51,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0002': patch(
-        "İşletme, KDV hariç 50.000 ₺'lik malı %20 KDV ile veresiye (senetsiz) satmıştır. Bu satıştan doğan ve '120 Alıcılar' hesabına yazılacak alacak tutarı kaç ₺'dir?",
+        "İşletme, liste fiyatı 80.000 ₺ olan ticari malı faturada gösterilen %5 ticari iskonto ve %20 KDV ile bir müşterisine satmıştır. Müşteri bu sipariş için daha önce 20.000 ₺ avans ödemiş ve avans '340 Alınan Sipariş Avansları' hesabına kaydedilmiştir. Avans mahsup edilmiş, kalan bedel için senet alınmamıştır.\n\nBuna göre satış kaydında '120 Alıcılar' hesabına borç yazılacak tutar kaç ₺'dir?",
         {
-            'A': '10.000',
-            'B': '60.000',
-            'C': '70.000',
-            'D': '50.000',
-            'E': '40.000',
+            'A': '91.200',
+            'B': '71.200',
+            'C': '56.000',
+            'D': '66.400',
+            'E': '51.200',
         },
         'B',
-        'Alıcının borcu KDV dâhil toplamdır: 50.000 + (50.000 × %20 = 10.000) = **60.000 ₺**. Kayıt: 120 Alıcılar (borç) 60.000 / 600 Yurt İçi Satışlar (alacak) 50.000 + 391 Hesaplanan KDV (alacak) 10.000.',
+        "Ticari iskonto faturada düşülür: matrah 80.000 × 0,95 = 76.000 ₺, KDV 15.200 ₺, toplam 91.200 ₺. Alınan avans mahsup edilir: 340 Alınan Sipariş Avansları 20.000 ₺ borç. Kalan 91.200 − 20.000 = 71.200 ₺ senetsiz alacak olarak 120 Alıcılar'a borç yazılır; 600 76.000 ₺ ve 391 15.200 ₺ alacak.",
         "1 Sıra No'lu MSUGT - 120 Alıcılar; 3065 s. KDVK",
     ),
     # düzey 2
@@ -177,16 +177,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0011': patch(
-        "Nominal değeri 240.000 ₺, vadesine 200 gün kalan bir alacak senedi için yıllık %36 faiz oranıyla iç iskonto yöntemine göre reeskont tutarı kaç ₺'dir?\n\n(Reeskont = Nominal × Faiz × Gün ÷ [36.000 + (Faiz × Gün)])",
+        "Senetlerini reeskonta tabi tutan işletmenin dönem sonunda portföyünde şu müşteri senetleri bulunmaktadır: vadesine 120 gün kalan 170.000 ₺, vadesine 90 gün kalan 110.000 ₺, vadesine 150 gün kalan 70.000 ₺ nominal değerli senetler ile vadesi 31 Aralık'ta gelmiş ancak henüz ödenmemiş 60.000 ₺'lik bir senet. Senetlerde faiz oranı yazılı değildir; kullanılacak yıllık oran %40'tır ve iç iskonto yöntemi uygulanmaktadır (Reeskont = Nominal × Faiz × Gün ÷ [36.000 + (Faiz × Gün)]).\n\nBuna göre '122 Alacak Senetleri Reeskontu' hesabına alacak kaydedilecek toplam tutar kaç ₺'dir?",
         {
             'A': '40.000',
-            'B': '43.200',
-            'C': '20.000',
-            'D': '48.000',
-            'E': '36.000',
+            'B': '30.000',
+            'C': '52.000',
+            'D': '60.000',
+            'E': '45.000',
         },
         'A',
-        'Faiz × Gün = 36 × 200 = 7.200. Reeskont = 240.000 × 7.200 ÷ (36.000 + 7.200) = 240.000 × 7.200 ÷ 43.200 = 240.000 ÷ 6 = **40.000 ₺**. Peşin değer = 200.000 ₺.',
+        'Reeskont yalnız vadesi gelmemiş senetlere uygulanır; vadesi gelmiş senet reeskonta konu olmaz. 170.000 × 40 × 120 ÷ (36.000 + 4.800) = 20.000 ₺; 110.000 × 40 × 90 ÷ (36.000 + 3.600) = 10.000 ₺; 70.000 × 40 × 150 ÷ (36.000 + 6.000) = 10.000 ₺. Toplam 40.000 ₺: 657 Reeskont Faiz Giderleri borç / 122 Alacak Senetleri Reeskontu alacak.',
         'VUK md. 281 - iç iskonto formülü',
     ),
     # düzey 2
@@ -387,16 +387,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0026': patch(
-        "Nominal değeri 200.000 ₺, vadesine 100 gün kalan bir alacak senedi için yıllık %40 faiz oranıyla iç iskonto yöntemine göre reeskont tutarı kaç ₺'dir?\n\n(İç iskonto: Reeskont = Nominal × Faiz × Gün ÷ [36.000 + (Faiz × Gün)])",
+        'Önceki dönem sonunda nominal değeri 200.000 ₺ olan bir müşteri senedi için 20.000 ₺ reeskont ayrılmıştır. İşletme yeni dönemin ilk günü bu reeskontu iptal etmiştir. Senet vadesinde bankaya tahsile verilmiş; banka senedi tahsil ederek 300 ₺ tahsil komisyonunu kesmiş ve kalanı işletmenin hesabına aktarmıştır.\n\nYeni dönemde yapılan kayıtlarda aşağıdaki hesaplardan hangisinin kullanımı doğrudur?',
         {
-            'A': '16.000',
-            'B': '8.000',
-            'C': '18.000',
-            'D': '14.000',
-            'E': '20.000',
+            'A': '657 Reeskont Faiz Giderleri hesabı 20.000 ₺ alacaklandırılır',
+            'B': '121 Alacak Senetleri hesabı 180.000 ₺ alacaklandırılır',
+            'C': '122 Alacak Senetleri Reeskontu hesabı 20.000 ₺ alacaklandırılır',
+            'D': '102 Bankalar hesabı 200.000 ₺ borçlandırılır',
+            'E': '647 Reeskont Faiz Gelirleri hesabı 20.000 ₺ alacaklandırılır',
         },
         'E',
-        'Reeskont = 200.000 × 40 × 100 ÷ [36.000 + (40 × 100)] = 200.000 × 4.000 ÷ 40.000 = **20.000 ₺**. Senedin peşin (tasarruf) değeri = 200.000 − 20.000 = 180.000 ₺.',
+        'Önceki dönemde 657 borç / 122 alacak kaydı yapılmıştı; 657 dönem sonunda kapandığından iptal kaydı 122 Alacak Senetleri Reeskontu 20.000 ₺ borç / 647 Reeskont Faiz Gelirleri 20.000 ₺ alacak şeklindedir. Tahsil: 102 Bankalar 199.700 ₺ ve 653 Komisyon Giderleri 300 ₺ borç / 121 Alacak Senetleri 200.000 ₺ alacak; senet nominal değeriyle kapanır.',
         'VUK md. 281 - iç iskonto (reeskont) formülü',
     ),
     # düzey 2
@@ -863,16 +863,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0060': patch(
-        'İşletme, müşterisinden aldığı 25.000 ₺ tutarındaki çeki tahsil için bankaya vermiş; banka çeki tahsil ederek tutarı işletmenin hesabına aktarmıştır. Buna göre tahsil kaydı aşağıdakilerden hangisidir?',
+        "İşletmenin portföyündeki üç müşteri çekiyle ilgili ay içinde şu işlemler olmuştur: 25.000 ₺'lik çek bankaya tahsile verilmiş, banka 50 ₺ masraf keserek kalanı hesaba aktarmıştır; 18.000 ₺'lik çek satıcıya olan borca karşılık ciro edilmiştir; 12.000 ₺'lik çek bankaya ibraz edildiğinde karşılıksız çıkmış ve bedeli müşteriden yeniden alacak olarak izlenmeye başlanmıştır.\n\nBuna göre bu işlemler nedeniyle '101 Alınan Çekler' hesabına toplam kaç ₺ alacak kaydedilir?",
         {
-            'A': '101 (borç) 25.000 / 102 (alacak) 25.000',
-            'B': '102 (borç) 25.000 / 103 (alacak) 25.000',
-            'C': '102 (borç) 25.000 / 121 (alacak) 25.000',
-            'D': '102 (borç) 25.000 / 120 (alacak) 25.000',
-            'E': '102 (borç) 25.000 / 101 (alacak) 25.000',
+            'A': '43.000',
+            'B': '25.000',
+            'C': '37.000',
+            'D': '54.950',
+            'E': '55.000',
         },
         'E',
-        "Müşteri çeki alındığında 101 Alınan Çekler'e kaydedilmiştir; tahsilde banka hesabı artar, 101 kapatılır: **102 (borç) / 101 (alacak)**. 103 işletmenin kendi keşide ettiği çekler içindir.",
+        "Üç çekin üçü de portföyden çıktığından her biri nominal değeriyle 101'e alacak yazılır: tahsil (102 24.950 ₺ ve 653 50 ₺ borç / 101 25.000 ₺), ciro (320 borç / 101 18.000 ₺), karşılıksız çek (120 borç / 101 12.000 ₺). Toplam 55.000 ₺; banka masrafı çekin kayıtlı değerini değiştirmez.",
         'THP 101, 102',
     ),
 }
