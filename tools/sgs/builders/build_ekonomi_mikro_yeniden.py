@@ -480,7 +480,7 @@ _PATCHES = {
             'E': '1.225',
         },
         'B',
-        'Monopol dengesi Q = 25, P = 70; tam rekabet dengesi P = MC = 20 → Q = 50. Dara kaybı, iki miktar arasındaki üçgendir: ½ × (70 − 20) × (50 − 25) = ½ × 50 × 25 = **625**. 1.250 üçgen yerine dikdörtgen alınmasının; 1.250 aynı zamanda monopolün tüketiciden aktardığı rantın (50 × 25) tutarıdır.',
+        'Monopol dengesi Q = 25, P = 70; tam rekabet dengesi P = MC = 20 → Q = 50. Dara kaybı, iki miktar arasındaki üçgendir: ½ × (70 − 20) × (50 − 25) = ½ × 50 × 25 = **625**. 1.250, üçgen yerine dikdörtgen alınmasının sonucudur ve monopolün tüketiciden aktardığı rantın (50 × 25) tutarına eşittir.',
         'Mikroekonomi: monopolün refah kaybı',
     ),
     # düzey 2

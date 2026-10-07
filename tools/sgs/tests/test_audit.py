@@ -140,6 +140,11 @@ class CozumHarfiTest(unittest.TestCase):
         q["solution"] = "Gerekçe burada; bu nedenle **C yanlıştır**."
         self.assertEqual([f for f in audit_et([q]) if "şıkkını anıyor" in f], [])
 
+    def test_tek_basina_kalin_harf_atfi_yakalanir(self):
+        q = soru("q1", "Hangisi doğrudur?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="D")
+        q["solution"] = "Doğru eşleştirme **B**'dir: gerekçe."
+        self.assertTrue(any("şıkkını anıyor" in f for f in audit_et([q])), audit_et([q]))
+
     def test_yanlis_olan_harf_atfi_yakalanir(self):
         # "**YANLIŞ olan D'dir:**" yazılmış, cevap A (iki soruda canlıda bulundu).
         q = soru("q1", "Hangisi yanlıştır?", {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="A")
@@ -150,6 +155,22 @@ class CozumHarfiTest(unittest.TestCase):
 
 
 class GorunumTest(unittest.TestCase):
+    def test_tablo_satirina_yapisan_soru_yakalanir(self):
+        kok = "Bilgiler:\n\n| Kalem | Tutar |\n|---|---|\n| Satış | 280 | Buna göre hangisi yanlıştır?"
+        q = soru("q1", kok, {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"}, answer="C")
+        self.assertTrue(any("tablo" in f for f in audit_et([q])), audit_et([q]))
+        q["stem"] = "Bilgiler:\n\n| Kalem | Tutar |\n|---|---|\n| Satış | 280 |\n\nBuna göre hangisi yanlıştır?"
+        self.assertEqual([f for f in audit_et([q]) if "tablo" in f], [])
+        q["stem"] = "|x − 2| ≤ 5 koşulunu sağlayan kaç tam sayı vardır?"
+        self.assertEqual([f for f in audit_et([q]) if "tablo" in f], [])
+
+    def test_isaretsiz_alti_cizili_atfi_yakalanir(self):
+        q = soru("q1", "\"Eve koşarak geldi.\" cümlesinde altı çizili bölümün anlamı nedir?",
+                 {"A": "a", "B": "b", "C": "c", "D": "d", "E": "e"})
+        self.assertTrue(any("işaretli" in f for f in audit_et([q])), audit_et([q]))
+        q["stem"] = "\"Eve **koşarak** geldi.\" cümlesinde altı çizili sözcüğün anlamı nedir?"
+        self.assertEqual([f for f in audit_et([q]) if "işaretli" in f], [])
+
     def test_ham_kod_citi_kullaniciya_tasinamaz(self):
         q = soru("q1", "Kök?", {"A": "```text\n100 KASA  1.000\n```", "B": "b",
                                   "C": "c", "D": "d", "E": "e"})

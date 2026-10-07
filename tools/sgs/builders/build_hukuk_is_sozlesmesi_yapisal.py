@@ -276,7 +276,7 @@ _PATCHES = {
     '0019': patch(
         'Bir işyerinde haftalık çalışma süresi 45 saat olarak uygulanmakta ve işyeri haftada altı gün faaliyet göstermektedir. İşveren, günlük çalışma süresini bir gün 12 saat olacak biçimde düzenlemek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Haftalık süre, aksi kararlaştırılmadıkça işyerinde çalışılan günlere eşit olmayan biçimde bölünemez',
+            'A': 'Haftalık süre, tarafların yazılı anlaşmasıyla dahi çalışılan günlere farklı biçimde bölünemez',
             'B': 'Günlük çalışma süresi en çok dokuz saat olup taraf anlaşmasıyla dahi artırılamaz',
             'C': 'Haftalık 45 saat aşılmadığı sürece günlük sürede bir sınır bulunmaz',
             'D': 'Günlük on bir saatlik sınır yalnızca denkleştirme uygulanan işyerlerinde geçerlidir',

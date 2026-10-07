@@ -27,7 +27,43 @@ SOLUTION_LETTER = re.compile(r"Doğru\s+(?:cevap|seçenek)\s+([A-E])\b")
 SOLUTION_LETTER_BOLD = re.compile(r"\*\*([A-E])\s+(?:yanlıştır|doğrudur)")
 # "**YANLIŞ olan D'dir:**" — aynı kusurun üçüncü kalıbı; 2026-10-07'de iki soruda (biri FM) cevap A
 # iken çözüm D'yi gösteriyordu ve yukarıdaki iki kalıp bunu görmüyordu.
+# "Doğru eşleştirme **B**'dir" — tek başına kalın şık harfi (2026-10-08, ücretsiz katmanda bulundu).
+SOLUTION_LETTER_KALIN = re.compile(r"\*\*([A-E])\*\*")
 SOLUTION_LETTER_OLAN = re.compile(r"\b(?:YANLIŞ|Yanlış|yanlış|DOĞRU|Doğru|doğru)\s+olan\s+(?:şık\s+|seçenek\s+)?\**([A-E])\**\s*['’]")
+# Markdown tablosunun son satırına yapışan soru cümlesi ("| 280.000 | Buna göre …") GFM'de fazla
+# hücre sayılıp ATILIR: kullanıcı soruyu hiç göremez. 2026-10-08'de ücretsiz katmandaki bir soruda
+# (1 yıldızlı "bariz hata" yorumunun ardından) ve bir MTA sorusunda bulundu.
+TABLO_AYRAC = re.compile(r"^\s*\|?\s*:?-{3,}")
+
+
+def tablo_kusuru(metin: str) -> str | None:
+    satirlar = metin.split("\n")
+    if not any("|" in l and TABLO_AYRAC.match(l) for l in satirlar):
+        return None  # tablo yok (|x − 2| gibi mutlak değer satırları tablo değildir)
+    for i, l in enumerate(satirlar):
+        s = l.strip()
+        if not s.startswith("|"):
+            continue
+        if s.count("|") >= 3 and not s.endswith("|"):
+            return f"tablo satırı | ile bitmiyor: …{s[-40:]}"
+        sonraki = satirlar[i + 1].strip() if i + 1 < len(satirlar) else ""
+        if sonraki and not sonraki.startswith("|"):
+            return "tablodan sonra boş satır yok"
+    return None
+
+
+# Kök "altı çizili/kalın yazılmış bölüm" diye bir yere işaret ediyorsa o bölüm
+# kökte ya da şıklarda ** ile işaretli olmalı; yoksa öğrenci neyin sorulduğunu
+# göremez (ücretsiz Türkçe paketinde böyle bir soru yayında kalmıştı).
+ISARET_ATFI = re.compile(r"(altı çizili|altı çizilmiş|kalın yazılmış|koyu yazılmış)", re.I)
+
+
+def isaret_eksik(question: dict) -> bool:
+    if not ISARET_ATFI.search(question["stem"]):
+        return False
+    return "**" not in " ".join((question["stem"], *question["options"].values()))
+
+
 # Uygulamada geçmişte seçeneklerin başında ham "```text" görünmüştü. Kod çiti
 # içerik şemasının değil render katmanının işaretidir ve kullanıcıya taşınamaz.
 DISPLAY_CODE_FENCE = re.compile(r"```(?:\s*(?:text|plain|plaintext))?", re.IGNORECASE)
@@ -554,6 +590,11 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
             issues.append(("FATAL", f"{qid}: kullanıcıya görünen demo ifadesi"))
         if DISPLAY_CODE_FENCE.search(visible):
             issues.append(("FATAL", f"{qid}: kullanıcıya görünecek ham kod çiti/format etiketi"))
+        if isaret_eksik(question):
+            issues.append(("FATAL", f"{qid}: kök işaretli bölüme atıf yapıyor ama işaretli (**) bölüm yok"))
+        for alan in ("stem", "solution"):
+            if kusur := tablo_kusuru(question.get(alan, "")):
+                issues.append(("FATAL", f"{qid}: {alan} {kusur}"))
 
         # Çözümdeki harf atfı, şık harfleriyle kırılgan biçimde eşleşir: harf ataması
         # sonradan değişince çözüm sessizce yanlış kalır (bir konuda 46 soru böyle
@@ -562,7 +603,8 @@ def audit(path: str) -> tuple[int, list[tuple[str, str]]]:
         if harf and harf.group(1) != answer:
             issues.append(("FATAL", f"{qid}: çözüm “{harf.group(1)}” diyor, cevap “{answer}”"))
         for harf in (*SOLUTION_LETTER_BOLD.finditer(question["solution"]),
-                     *SOLUTION_LETTER_OLAN.finditer(question["solution"])):
+                     *SOLUTION_LETTER_OLAN.finditer(question["solution"]),
+                     *SOLUTION_LETTER_KALIN.finditer(question["solution"])):
             if harf.group(1) != answer:
                 issues.append(("FATAL", f"{qid}: çözüm “{harf.group(1)}” şıkkını anıyor, cevap “{answer}”"))
 

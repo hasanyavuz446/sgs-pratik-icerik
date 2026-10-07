@@ -364,11 +364,11 @@ _PATCHES = {
             'A': 'Tutarlılık',
             'B': 'Toplulaştırma',
             'C': 'Anlaşılabilirlik',
-            'D': 'İhtiyaca uygunluk',
+            'D': 'Gerçeğe uygun sunum',
             'E': 'Zamanında sunum',
         },
         'D',
-        "Kavramsal Çerçeve 2.19 ve 2.22'ye göre ölçüm belirsizliği, bir ekonomik olgunun **ihtiyaca uygunluğunu etkileyebilecek** faktörlerden biridir; bazen en ihtiyaca uygun bilgi ölçüm belirsizliği yüksek bir tahmin olabilir.",
+        "Kavramsal Çerçeve 2.19'a göre parasal tutarlar doğrudan gözlemlenemeyip tahmin edildiğinde ölçüm belirsizliği doğar ve Çerçeve bunu **gerçeğe uygun sunum** başlığı altında ele alır; tahmin açıkça tanımlanıp açıklandıkça bilginin faydasını zedelemez. 2.22'ye göre belirsizlik çok yüksekse tahminin olguyu yeterince gerçeğe uygun sunup sunmadığı sorgulanır ve daha az ihtiyaca uygun ama belirsizliği düşük bilgiyle arada denge kurulur. Tutarlılık karşılaştırılabilirliğe yardım eder; anlaşılabilirlik ve zamanında sunum destekleyici özelliklerdir, toplulaştırma ise bir sunum kararıdır.",
         'Kavramsal Çerçeve (2018) 2.19',
     ),
     # düzey 3
@@ -681,7 +681,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0047': patch(
-        "A işletmesi, B işletmesini kontrol etmektedir; ancak A ile B arasında ana ortaklık-bağlı ortaklık ilişkisi olmayan C işletmesi de aynı raporlama setine dâhil edilmek istenmektedir. Kavramsal Çerçeve'ye göre aralarında ana ortaklık-bağlı ortaklık ilişkisi bulunmayan işletmelerin finansal tabloları nasıl adlandırılır?",
+        "A işletmesi B işletmesini kontrol etmektedir. A ve B ile arasında ana ortaklık-bağlı ortaklık ilişkisi bulunmayan C işletmesinin de aynı raporlama setine dâhil edilmesi istenmektedir. Kavramsal Çerçeve'ye göre aralarında ana ortaklık-bağlı ortaklık ilişkisi bulunmayan işletmelerin finansal tabloları nasıl adlandırılır?",
         {
             'A': 'Birleşik finansal tablolar',
             'B': 'Bireysel finansal tablolar',

@@ -107,7 +107,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        'Bir üretim işletmesinin döneme ait bilgileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| DİMM dönem başı stoku | 20.000 |\n| DİMM alışları | 90.000 |\n| DİMM dönem sonu stoku | 15.000 |\n| Direkt işçilik giderleri | 60.000 |\n| Genel üretim giderleri | 45.000 |\n| Dönem başı yarı mamul | 10.000 |\n| Dönem sonu yarı mamul | 25.000 |\n| Dönem başı mamul | 30.000 |\n| Dönem sonu mamul | 20.000 |\n| Net satışlar | 280.000 | Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Bir üretim işletmesinin döneme ait bilgileri şöyledir:\n\n| Kalem | Tutar (₺) |\n|---|---|\n| DİMM dönem başı stoku | 20.000 |\n| DİMM alışları | 90.000 |\n| DİMM dönem sonu stoku | 15.000 |\n| Direkt işçilik giderleri | 60.000 |\n| Genel üretim giderleri | 45.000 |\n| Dönem başı yarı mamul | 10.000 |\n| Dönem sonu yarı mamul | 25.000 |\n| Dönem başı mamul | 30.000 |\n| Dönem sonu mamul | 20.000 |\n| Net satışlar | 280.000 |\n\nBuna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': "Satılan mamuller maliyeti 195.000 ₺'dir.",
             'B': "Brüt satış kârı 85.000 ₺'dir.",

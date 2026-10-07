@@ -79,13 +79,13 @@ _PATCHES = {
         '"Damlaya damlaya göl olur." atasözüyle aşağıdakilerden hangisi anlamca aynı doğrultudadır?',
         {
             'A': 'Bir elin nesi var, iki elin sesi var.',
-            'B': 'Sakla samanı, gelir zamanı.',
-            'C': 'Küçük birikimler zamanla büyür.',
+            'B': 'Dost kara günde belli olur.',
+            'C': 'Azar azar öğrenen âlim olur.',
             'D': 'Bugünün işini yarına bırakma.',
             'E': 'Ateş düştüğü yeri yakar.',
         },
         'C',
-        '"Damlaya damlaya göl olur", küçük birikimlerin zamanla büyük bir bütün oluşturduğunu anlatır. Birikimin çoğalmasını vurgulayan seçenek anlamca aynı doğrultudadır; diğerleri farklı iletiler taşır.',
+        '"Damlaya damlaya göl olur", küçük birikimlerin zamanla büyük bir bütün oluşturduğunu anlatır. "Azar azar öğrenen âlim olur" da küçük kazanımların birikerek büyük bir sonuca ulaştığını söylediği için aynı doğrultudadır. Diğer atasözleri yardımlaşmayı, dostluğun sınanmasını, işi ertelememeyi ve acıyı en çok yaşayanın hissetmesini anlatır.',
     ),
     # düzey 2
     '0005': patch(
@@ -232,7 +232,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0016': patch(
-        '"Bu filmi izlemek için sinemaya değil, adeta bir yarışa gider gibi koştu." cümlesinde altı çizili bölümle anlatılmak istenen aşağıdakilerden hangisidir?',
+        '"Bu filmi izlemek için sinemaya değil, **adeta bir yarışa gider gibi koştu**." cümlesinde altı çizili bölümle anlatılmak istenen aşağıdakilerden hangisidir?',
         {
             'A': 'Sinemanın çok uzak olduğu',
             'B': 'Spor yapmayı çok sevdiği',
@@ -267,7 +267,7 @@ _PATCHES = {
             'E': 'Bu kitabı geçen yaz tatilinde, sahildeki küçük bir kafede okumuştum.',
         },
         'D',
-        'Cümlede "iyi hazırlanmak" neden, "yüksek puan almak" sonuçtur; "...için" bağlacı neden-sonuç ilişkisi kurar. Diğer cümlelerde böyle bir neden-sonuç bağı bulunmaz.',
+        'Cümlede "düzenli çalışmak" neden, "yüksek puan almak" sonuçtur; "...için" bağlacı neden-sonuç ilişkisi kurar. Diğer cümlelerde böyle bir neden-sonuç bağı bulunmaz.',
     ),
     # düzey 3
     '0019': patch(
@@ -436,7 +436,7 @@ _PATCHES = {
             'E': 'Uzun yolculuktan çok yorulmuştu, bu yüzden akşam erkenden yattı.',
         },
         'C',
-        '"Sınavı kazanmak için" ifadesi bir amacı, "gece gündüz çalıştı" bunun için yapılan eylemi verir; böylece amaç-sonuç ilişkisi kurulur. Diğer cümlelerde neden-sonuç ya da koşul ilişkisi bulunur.',
+        '"Sınavı kazanmak için" ifadesi bir amacı, "gece gündüz çalıştı" bunun için yapılan eylemi verir; böylece amaç-sonuç ilişkisi kurulur. Diğer cümlelerde ise eylemin nedeni verilmiştir; neden-sonuç ilişkisi bulunur.',
     ),
     # düzey 2
     '0032': patch(

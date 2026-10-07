@@ -144,7 +144,7 @@ _PATCHES = {
             'E': 'İhtiyatlılık (Muhafazakârlık)',
         },
         'B',
-        "'**Vergi kanunlarına mutlak uygunluk**' muhasebenin temel kavramlarından değildir. Kişilik, İhtiyatlılık, Özün Önceliği ve Dönemsellik MSUGT'deki temel kavramlar arasındadır.",
+        "'**Vergi kanunlarına mutlak uygunluk**' muhasebenin temel kavramlarından değildir. Parayla Ölçülme, Sosyal Sorumluluk, Tarafsızlık ve Belgelendirme ile İhtiyatlılık ise MSUGT'deki temel kavramlar arasındadır.",
         "1 Sıra No'lu MSUGT - Temel kavramlar listesi",
     ),
     # düzey 2
@@ -774,7 +774,7 @@ _PATCHES = {
             'E': 'Önemlilik → Varlıkların edinme bedeliyle kaydedilmesi',
         },
         'D',
-        "Doğru eşleştirme **B**'dir: **Parayla Ölçülme**, işlemlerin ortak ölçü birimi olan ulusal para ile ifade edilmesidir. Diğer şıklarda kavramlar yanlış açıklamalarla eşleştirilmiştir.",
+        "Doğru eşleştirme: **Parayla Ölçülme**, işlemlerin ortak ölçü birimi olan ulusal para ile ifade edilmesidir. Diğer şıklarda kavramlar yanlış açıklamalarla eşleştirilmiştir.",
         "1 Sıra No'lu MSUGT - Temel Kavramlar",
     ),
     # düzey 2

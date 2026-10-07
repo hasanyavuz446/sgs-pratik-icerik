@@ -414,7 +414,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0030': patch(
-        "TBMM'ye karşı çıkan iç ayaklanmaları bastırmak amacıyla çıkarılan ve mahkemeler kuran kanun aşağıdakilerden hangisidir?",
+        "TBMM'nin açılışından kısa süre sonra, Meclis'e karşı yapılan eylemleri vatana ihanet sayarak iç ayaklanmalara karşı otoritesini korumak amacıyla çıkarılan kanun aşağıdakilerden hangisidir?",
         {
             'A': 'Takrir-i Sükûn Kanunu',
             'B': 'Teşkilat-ı Esasiye Kanunu',
@@ -423,7 +423,7 @@ _PATCHES = {
             'E': 'Kabotaj Kanunu',
         },
         'C',
-        "TBMM, kendisine karşı çıkan ayaklanmaları bastırmak için 29 Nisan 1920'de Hıyanet-i Vataniye Kanunu'nu çıkarmış; bu kanuna dayanarak İstiklal Mahkemeleri kurmuştur.",
+        "TBMM, kendisine karşı çıkan ayaklanmalar karşısında 29 Nisan 1920'de Hıyanet-i Vataniye Kanunu'nu çıkarmış ve Meclis'in meşruiyetine karşı yapılan eylemleri vatana ihanet saymıştır. İstiklal Mahkemeleri ise Eylül 1920'de, asker kaçaklarına ilişkin ayrı bir kanunla kurulmuştur. Takrir-i Sükûn Kanunu 1925, Tevhid-i Tedrisat ve Teşkilat-ı Esasiye ise farklı amaçlı düzenlemelerdir.",
     ),
     # düzey 2
     '0031': patch(
@@ -453,7 +453,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0033': patch(
-        'Mustafa Kemal\'e Büyük Taarruz öncesinde ordunun başına geçme yetkisi veren "Başkomutanlık Kanunu" hangi savaştan önce çıkarılmıştır?',
+        'Mustafa Kemal\'e ordunun başına geçme ve TBMM\'nin yetkilerini kullanma imkânı veren "Başkomutanlık Kanunu" hangi savaştan hemen önce çıkarılmıştır?',
         {
             'A': 'Dumlupınar Muharebesi',
             'B': 'Gümrü Muharebesi',
@@ -583,7 +583,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        'Mustafa Kemal\'in askerlik görevinden istifa ederek "artık sine-i millette bir ferd-i millet olarak" çalışacağını açıkladığı olay hangi kongre sırasında gerçekleşmiştir?',
+        'Mustafa Kemal\'in Temmuz 1919\'da askerlik görevinden istifa ederek mücadeleye sivil olarak devam edeceğini açıklamasının ardından katıldığı ve başkanlığına seçildiği ilk kongre aşağıdakilerden hangisidir?',
         {
             'A': 'Amasya görüşmeleri',
             'B': 'Erzurum Kongresi',
@@ -592,7 +592,7 @@ _PATCHES = {
             'E': 'Balıkesir Kongresi',
         },
         'B',
-        'Mustafa Kemal, Erzurum Kongresi öncesinde/sırasında askerlik görevinden istifa etmiş ve mücadeleye bir sivil (ferd-i millet) olarak devam edeceğini açıklamıştır.',
+        'Mustafa Kemal, 8-9 Temmuz 1919 gecesi Erzurum\'da askerlik görevinden istifa etmiş ve mücadeleye sivil olarak devam edeceğini açıklamıştır. İstifa, 23 Temmuz\'da toplanan Erzurum Kongresi\'ne katılıp başkanlığına seçilmesinin önünü açmıştır.',
     ),
     # düzey 2
     '0044': patch(

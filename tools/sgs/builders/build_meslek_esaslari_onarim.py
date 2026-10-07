@@ -41,12 +41,12 @@ _PATCHES = {
         {
             'A': 'Yeminli mali müşavirler muhasebe ile ilgili defterleri tutamaz ve muhasebe bürosuna ortak olamaz',
             'B': 'Üç işin tamamı tek bir yeminli mali müşavir tarafından yürütülebilir',
-            'C': 'Hizmet verilen şirkete ortak olmak tarafsızlığı zedelediğinden mesleki hizmet verilemez',
+            'C': 'Meslek mensupları anonim ve limited şirketlere ortak olabilir',
             'D': 'Beyannamenin tasdiki yeminli mali müşavire ait bir yetkidir',
             'E': 'Defter tutma ve mali tablo düzenleme işleri serbest muhasebeci mali müşavirin görev alanındadır',
         },
         'B',
-        "3568 md. 2/A defter tutma ve tablo düzenlemeyi SMMM'nin, md. 2/B ile md. 12 tasdiki YMM'nin görev alanına verir. md. 45 YMM'nin defter tutmasını ve muhasebe bürosuna ortak olmasını yasaklar; bu nedenle üç iş tek bir YMM tarafından YÜRÜTÜLEMEZ. Ayrıca hizmet verilen işletmeye ortaklık meslek ahlak kuralları uyarınca tarafsızlığı ortadan kaldırır.",
+        "3568 md. 2/A defter tutma ve tablo düzenlemeyi SMMM'nin, md. 2/B ile md. 12 tasdiki YMM'nin görev alanına verir. md. 45 YMM'nin defter tutmasını ve muhasebe bürosuna ortak olmasını yasaklar; bu nedenle üç iş tek bir YMM tarafından YÜRÜTÜLEMEZ. Aynı madde meslek mensuplarının anonim ve limited şirketlere ortak olmasına ise izin verir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -227,7 +227,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0015': patch(
-        'Aşağıdakilerden hangisi serbest muhasebeci mali müşavir olmanın özel şartlarından biri değildir?',
+        'Aşağıdakilerden hangisi serbest muhasebeci mali müşavir unvanıyla mesleği yapabilmek için aranan şartlardan biri değildir?',
         {
             'A': 'Serbest muhasebeci mali müşavirlik sınavını kazanmış olmak',
             'B': 'Serbest muhasebeci mali müşavirlik ruhsatını almış olmak',
@@ -236,7 +236,7 @@ _PATCHES = {
             'E': 'Staj amacıyla üç yıl çalışmış olmak',
         },
         'C',
-        "3568 md. 5/A: SMMM'nin özel şartları öğrenim, üç yıllık staj, sınav ve ruhsattır. ON YILLIK çalışma şartı md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir koşuldur; SMMM için böyle bir şart yoktur.",
+        "3568 md. 5/A: SMMM'nin özel şartları ilgili dallarda öğrenim, üç yıllık staj ve sınavdır; bu şartları taşıyanlara ruhsat verilir ve mesleği yapabilmek için ruhsat gerekir. ON YILLIK çalışma şartı md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir koşuldur; SMMM için böyle bir şart yoktur.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -401,7 +401,7 @@ _PATCHES = {
             'E': 'Meslek mensubu bağımlı çalışırken kendi adına serbest meslek faaliyetini de sürdürebilir',
         },
         'E',
-        '3568 md. 45: meslek mensupları gerçek ve tüzel kişilere tabi ve onların işyerlerine bağlı olarak hizmet akdiyle çalışamazlar. Bağımlı çalışan SMMM ruhsatını korur ancak aynı anda kendi adına SERBEST MESLEK FAALİYETİ yürütemez; iki çalışma biçimi bir arada olamaz.',
+        'Meslek mevzuatı uyarınca SMMM bir işletmede hizmet akdiyle (bağımlı) çalışabilir; bu durumda ruhsatını korur ancak aynı anda kendi adına SERBEST MESLEK FAALİYETİ yürütemez, iki çalışma biçimi bir arada olamaz. Ticari mümessillik, ticari vekillik ve acentelik yasaktır; yeminli mali müşavirler ise mesleklerini yalnızca bağımsız olarak yürütür (md. 45).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -547,14 +547,14 @@ _PATCHES = {
     '0038': patch(
         'Bir serbest muhasebeci mali müşavir, defterlerini tuttuğu bir limited şirkete ortak olmayı planlamaktadır. Meslek mensubu, şirkette yönetici sıfatı almayacağını belirtmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Ortaklık ilişkisi odaya bildirilirse mesleki hizmet verilebilir',
+            'A': 'Ortak olabilir; ancak defter tutmayı sürdürmesi odaya bildirim yapılmasına bağlıdır',
             'B': 'Meslek mensubu limited şirketlere ortak olamaz',
-            'C': 'Ortaklık ilişkisi tarafsızlığı zedelediğinden meslek mensubu bu şirkete mesleki hizmet veremez',
-            'D': 'Meslek mensubu yönetici sıfatı almadığı için ortaklık ilişkisi mesleki hizmet vermeye engel oluşturmaz',
-            'E': 'Ortaklık ancak yeminli mali müşavirler için engel oluşturur',
+            'C': 'Ortak olabilir; ortaklık, bu şirkete mesleki hizmet vermesine engel oluşturmaz',
+            'D': 'Ortaklık ilişkisi tarafsızlığı zedelediğinden meslek mensubu bu şirkete mesleki hizmet veremez',
+            'E': 'Ortaklık, meslek mensubunun bu şirkette ticari vekil olarak çalışmasına da imkân verir',
         },
         'C',
-        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir; ancak meslek ahlak kuralları, hizmet verilen işletmeyle ortaklık ilişkisi bulunmasını TARAFSIZLIĞA aykırı sayar. Yani ortaklık genel olarak serbest, fakat aynı işletmeye mesleki hizmet vermek bağdaşmaz. Bildirim bu sakatlığı gidermez.',
+        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; bu nedenle SMMM için ortaklık, aynı şirketin defterlerini tutmaya engel değildir ve odaya bildirim gibi ek bir koşul da aranmaz. Ortaklık ticari vekillik yasağını kaldırmaz (md. 45). Ortağı olunan şirkette sınırlama bağımsız denetimde doğar: ortaklar o şirkette denetçi olamaz (TTK md. 400).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2

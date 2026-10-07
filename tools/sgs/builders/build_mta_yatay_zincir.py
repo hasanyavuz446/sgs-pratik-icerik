@@ -233,7 +233,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0015': patch(
-        'Bir işletmenin gelir tablosu kalemleri şöyledir:\n\n| Kalem | 2024 (₺) | 2025 (₺) |\n|---|---|---|\n| Net satışlar | 900.000 | 1.080.000 |\n| Satışların maliyeti | 540.000 | 702.000 |\n| Faaliyet giderleri | 200.000 | 210.000 | Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Bir işletmenin gelir tablosu kalemleri şöyledir:\n\n| Kalem | 2024 (₺) | 2025 (₺) |\n|---|---|---|\n| Net satışlar | 900.000 | 1.080.000 |\n| Satışların maliyeti | 540.000 | 702.000 |\n| Faaliyet giderleri | 200.000 | 210.000 |\n\nBuna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': "Faaliyet kârı 2025'te azalmıştır.",
             'B': 'Satışların maliyeti %30 artmıştır.',

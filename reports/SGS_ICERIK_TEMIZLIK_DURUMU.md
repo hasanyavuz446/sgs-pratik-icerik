@@ -1,6 +1,6 @@
 # SGS içerik kalite temizliği — PROGRAM DURUMU (tüm SGS)
 
-Son güncelleme: 6 Ekim 2026 (olumsuz kök turu, v231)
+Son güncelleme: 8 Ekim 2026 (ücretsiz katman tam okuma, v245)
 
 > Bu rapor artık yalnız Finansal Muhasebe değil, **manifestteki tüm SGS programının**
 > (`content/v2/manifest.json`, programIds=["sgs"]) kalite temizliği ilerleme kaydıdır.
@@ -23,6 +23,45 @@ muhasebe 203/285 (en kısa: muhasebe_sureci 128, modv 166, menkul 177), maliyet
 281/544 (MHK 149 — sınavda 0 soru, ürün kararı kullanıcıda; diğer paketler 257-428),
 MTA 160/201, Türkçe 113/150, matematik 94/111. Bunlar yeni veriyle yeniden yazım
 ister; ayrı tur.
+
+## 8 Ekim 2026 — ücretsiz katman tam okuma (v245)
+
+App Store'da 1 yıldızlı bir yorum geldi: "ücretsiz soruları çözerken bariz hatalar fark ettim".
+Bunun üzerine ücretsiz katmanın 16 paketi (960 soru) baştan sona okundu; her şık, anahtar ve çözüm kontrol edildi.
+Sayısal sorular yeniden hesaplandı, mevzuat ve tarih iddiaları kaynağa karşı doğrulandı.
+Ücretli pakette de aynı hatayı taşıyan bir soru bulundu ve düzeltildi.
+
+**Yanlış anahtar ya da çift doğru cevap:**
+- Meslek esasları 0038 ve 0001; ücretli pakette sorumluluk_ve_yasaklar 0023. Bu sorular "SMMM ortağı olduğu şirkete hizmet veremez" diyordu, böyle bir kural yok. 3568 md. 45'teki "ortağı olduğu firmaların işlerine bakamaz" yasağı yalnız YMM içindir.
+- Kavramsal Çerçeve 0024. Çözüm, ölçüm belirsizliğini "ihtiyaca uygunluk" faktörü sayan 2015 taslak görüşünü kullanıyordu. 2018 KÇ 2.19 ve 2.22 bunu gerçeğe uygun sunum altında ele alır; doğru cevap şıklarda yoktu.
+- İş hukuku 0019: A şıkkı da doğruydu (4857 md. 63).
+- Ticaret 0011 ve 0025: çift doğru cevap.
+- Ticaret 0045, 0051 ve 0060: mutlak ifadeler TTK 36/2'deki istisnayı yok sayıyordu.
+
+**Görünmeyen ya da yanlış atıflı soru:**
+- Maliyet üretim 0006 ve MTA yatay 0015: soru cümlesi tablonun son satırına yapışıktı ve uygulamada görünmüyordu.
+- Türkçe anlam 0016: kök "altı çizili bölüm" diyordu ama işaretli bölüm yoktu.
+- FM temel kavramlar 0053: çözüm yanlış harfi gösteriyordu.
+
+**Tarih ve kök kusurları:**
+- Atatürk 0030: İstiklal Mahkemelerini Hıyanet-i Vataniye Kanunu kurmadı; mahkemeler Eylül 1920'de ayrı bir kanunla kuruldu.
+- Atatürk 0033: kök Dumlupınar'ı da doğru cevap yapıyordu.
+- Atatürk 0043: istifa kongre sırasında değil, 8-9 Temmuz'da oldu. Doğrulanamayan alıntı kökten çıkarıldı.
+- Meslek 0015: ruhsat, md. 5'teki özel şartlar arasında gösterilmişti.
+- Türkçe 0004: atasözü sorusunda doğru şık atasözü değil, düz açıklama cümlesiydi.
+- Kavramsal Çerçeve 0047: kök bozuk kurulmuştu.
+- Çözüm metni düzeltmeleri: FM 0008, meslek 0027, Türkçe 0018 ve 0031, ekonomi 0032.
+
+**Temiz çıkan paketler:**
+- Paketin tamamı temiz: ekonomi mikro, maliye temel, matematik sayılar (60 soru elle hesaplandı), İngilizce gramer.
+- Hata bulunanlar dışında temiz: denetim kavramı, vergi temel kavramlar, borç ilişkisi, MTA oran.
+
+**Yeni denetim kapıları (havuz geneli FATAL):**
+- `tablo_kusuru`: `|` ile bitmeyen tablo satırını ve tablodan sonra boş satır bırakılmamasını yakalar.
+- `SOLUTION_LETTER_KALIN`: çözümde tek başına duran `**B**` atfını yakalar.
+- `isaret_eksik`: kök "altı çizili/kalın" diyorsa ama hiçbir yerde `**` yoksa yakalar.
+
+Yeterlilik'in 4.835 sorusu bu iki görünüm kusuru için de tarandı; temiz çıktı.
 
 ## 7 Ekim 2026 — matematik kök derinliği gerçeğe oturdu (v244 canlı)
 

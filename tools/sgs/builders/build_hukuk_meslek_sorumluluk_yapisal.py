@@ -342,16 +342,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0023': patch(
-        'Bir meslek mensubu, defterlerini tuttuğu şirkete aynı dönemde ortak olmuş; ortaklığını odaya bildirmiş ve mesleki hizmeti sürdürmüştür. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir serbest muhasebeci mali müşavir, defterlerini tuttuğu limited şirkete aynı dönemde ortak olmuş ve şirkete mesleki hizmet vermeyi sürdürmüştür. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Ortaklık yalnızca yeminli mali müşavirler için engel oluşturur',
-            'B': 'Şirkete ortak olmak serbest olmakla birlikte aynı şirkete mesleki hizmet vermek tarafsızlıkla bağdaşmaz',
+            'A': 'Ortaklık, meslek mensubunun bu şirkette ticari vekil olarak çalışmasına da imkân verir',
+            'B': 'Ortaklık serbesttir ve ortağı olunan şirketin defterlerini tutmaya engel oluşturmaz',
             'C': 'Meslek mensubu hiçbir limited veya anonim şirkete ortak olamaz',
             'D': 'Hizmet verilen şirkete ortak olmak, meslek mensubunun ruhsatının kendiliğinden düşmesi sonucunu doğurur',
-            'E': 'Ortaklık ve mesleki hizmet birlikte yürütülebilir; bildirim yeterlidir',
+            'E': 'Ortaklık tarafsızlığı zedelediğinden şirkete mesleki hizmet verilemez; bildirim bunu gidermez',
         },
         'B',
-        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir; ancak Meslek Ahlak Kuralları, hizmet verilen işletmeyle ortaklık ilişkisini TARAFSIZLIĞA aykırı sayar. Bildirim bu sakatlığı gidermez ve ruhsat kendiliğinden düşmez.',
+        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; serbest muhasebeci mali müşavir ortağı olduğu şirketin defterlerini tutabilir. Ortaklık ruhsatı düşürmez ve ticari vekillik yasağını (md. 45) kaldırmaz.',
     ),
     # düzey 2
     '0024': patch(
