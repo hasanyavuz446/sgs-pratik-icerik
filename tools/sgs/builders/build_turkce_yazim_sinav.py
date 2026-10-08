@@ -171,7 +171,7 @@ _PATCHES = {
         {
             'A': "Mahallemizdeki eski sinema binası 1950'li yıllarda yapılmış.",
             'B': "Türkiye Büyük Millet Meclisi 23 Nisan 1920'de Ankara'da açıldı.",
-            'C': 'Veli toplantısı 5 Mayıs Pazartesi günü saat on dörtte okulda yapılacak.',
+            'C': 'Veli toplantısı 4 Mayıs Pazartesi günü saat on dörtte okulda yapılacak.',
             'D': 'Okullar her yıl eylül ayında açılır, haziran ayında kapanır.',
             'E': "29 ekim 1923'te Cumhuriyet ilan edildi ve bu gün her yıl coşkuyla kutlanır.",
         },

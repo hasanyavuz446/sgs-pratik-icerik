@@ -117,11 +117,11 @@ _PATCHES = {
             'E': 'Birlik tespit, men ve düzeltme davası açabilir, ancak tazminat isteyemez',
         },
         'E',
-        'TTK md. 56/2-3 uyarınca ekonomik menfaatleri zarar gören müşteriler ile mesleki ve ekonomik birlikler tespit, men ve eski hâle getirme davalarını açabilir; tazminat davası açma hakkı bunlara tanınmamıştır.',
+        'TTK md. 56/3 uyarınca üyelerinin ekonomik menfaatlerini korumaya yetkili mesleki ve ekonomik birlikler yalnızca md. 56/1-a, b ve c bentlerindeki tespit, men ve maddi durumun ortadan kaldırılması/düzeltme davalarını açabilir; tazminat davası açma hakkı bunlara tanınmamıştır.',
     ),
     # düzey 3
     '0005': patch(
-        'Bir işletme sahibi, rakibinin haksız rekabet oluşturan davranışını iki yıl önce öğrenmiş, ancak dava açmamıştır. Fiil bir buçuk yıl önce gerçekleşmiştir. İşletme sahibi şimdi dava açmak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir işletme sahibi, rakibinin haksız rekabet oluşturan davranışını bir buçuk yıl önce öğrenmiş, ancak dava açmamıştır. Fiil iki yıl önce gerçekleşmiştir. İşletme sahibi şimdi dava açmak istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Zamanaşımı süresi öğrenmeden itibaren iki yıl olduğundan dava süresinde sayılır',
             'B': 'Öğrenmeden itibaren bir yıllık süre dolduğundan dava hakkı zamanaşımına uğramıştır',
@@ -247,7 +247,7 @@ _PATCHES = {
             'E': 'Taksitli satış ilanlarında hangi bilgilerin verileceği işletmenin takdirine bırakılmıştır',
         },
         'A',
-        'TTK md. 55/1-a uyarınca taksitle satım sözleşmelerinde kanunen belirtilmesi gereken bilgileri açıklamamak dürüstlük kuralına aykırı reklam ve satış yöntemleri arasındadır.',
+        'TTK md. 55/1-a-10 uyarınca taksitle satım sözleşmelerinde kanunen belirtilmesi gereken bilgileri açıklamamak dürüstlük kuralına aykırı reklam ve satış yöntemleri arasındadır.',
     ),
     # düzey 3
     '0015': patch(
@@ -295,11 +295,11 @@ _PATCHES = {
             'A': 'İstihdam edene karşı tespit, men ve düzeltme davaları yöneltilebilir',
             'B': 'Çalışanın kişisel davranışından yalnızca çalışanın kendisi sorumlu tutulabilir',
             'C': 'Haksız rekabet çalışanlar tarafından işlenmişse istihdam edene karşı da dava açılabilir',
-            'D': 'İstihdam eden aleyhine tazminat davası açılabilmesi kusur koşuluna bağlıdır',
+            'D': 'İstihdam edene karşı açılan tazminat davalarında Türk Borçlar Kanunu hükümleri uygulanır',
             'E': 'Zarar gören, dilerse hem çalışana hem istihdam edene karşı dava açabilir',
         },
         'B',
-        'TTK md. 57 uyarınca haksız rekabet, hizmetlerini veya işlerini gördükleri sırada çalışanlar tarafından işlenmişse davalar istihdam edene karşı da açılabilir.',
+        'TTK md. 57/1 uyarınca haksız rekabet, hizmetlerini veya işlerini gördükleri sırada çalışanlar tarafından işlenmişse md. 56/1-a, b ve c bentlerindeki davalar çalıştırana karşı da açılabilir; md. 57/2 uyarınca tazminat davalarında Türk Borçlar Kanunu hükümleri uygulanır.',
     ),
     # düzey 3
     '0019': patch(
@@ -307,7 +307,7 @@ _PATCHES = {
         {
             'A': 'Basın yoluyla işlenen haksız rekabette dava öncelikle yayın kuruluşuna karşı açılır',
             'B': 'Dava öncelikle yazının sahibi veya ilan veren aleyhine açılır',
-            'C': 'Zarar gören, yayın kuruluşundan düzeltmenin yayımlanmasını da isteyebilir',
+            'C': 'Yazı sahibinin kim olduğu bildirilmezse dava yayın sorumlularına yöneltilebilir',
             'D': 'Yayın sahibi ve yayımlayan aleyhine dava kanunda sayılan hâllerle sınırlıdır',
             'E': 'Yazı sahibinin izni olmaksızın yayımlanan yazılarda sorumluluk kuralı farklı işler',
         },
@@ -351,7 +351,7 @@ _PATCHES = {
             'E': 'Zararın miktarı kesin olarak ispat edilemiyorsa tazminat istemi tümüyle reddedilir',
         },
         'E',
-        'TTK md. 56/1-e uyarınca mahkeme tazminat olarak, haksız rekabet sonucunda davalının elde etmesi mümkün görülen menfaatin karşılığına da karar verebilir.',
+        'TTK md. 56/1 (son cümle) uyarınca mahkeme, (d) bendindeki tazminat olarak, haksız rekabet sonucunda davalının elde etmesi mümkün görülen menfaatin karşılığına da karar verebilir.',
     ),
     # düzey 3
     '0023': patch(
@@ -390,7 +390,7 @@ _PATCHES = {
             'E': 'Ödül ve paye beyanları öznel tanıtım ifadesi sayıldığından haksız rekabet dışında kalır',
         },
         'E',
-        'TTK md. 55/1-a-3 uyarınca paye, diploma veya ödüle sahip olmadığı hâlde sahipmiş gibi hareket etmek; md. 55/1-a-12 uyarınca malın tehlikelerini gizleyerek müşteriyi yanıltmak haksız rekabet hâlleridir.',
+        'TTK md. 55/1-a-3 uyarınca paye, diploma veya ödüle sahip olmadığı hâlde sahipmiş gibi hareket etmek; md. 55/1-a-9 uyarınca malın tehlikelerini gizleyerek müşteriyi yanıltmak haksız rekabet hâlleridir.',
     ),
     # düzey 2
     '0026': patch(
@@ -429,7 +429,7 @@ _PATCHES = {
             'E': 'Mahkeme, haksız rekabetin işlenmesinde etkili olan araçların ve bu yolla üretilen malların imhasına karar verebilir',
         },
         'C',
-        'TTK md. 56/1-b ve 56/2 uyarınca haksız rekabetin işlenmesinde etkili olan araçların ve malların imhası istenebilir.',
+        'TTK md. 56/1-c uyarınca haksız rekabetin sonucu olan maddi durumun ortadan kaldırılması, yanlış beyanların düzeltilmesi ve tecavüzün önlenmesi için kaçınılmazsa haksız rekabetin işlenmesinde etkili olan araçların ve malların imhası istenebilir; bu istemler kusura bağlı değildir.',
     ),
     # düzey 3
     '0029': patch(
@@ -442,7 +442,7 @@ _PATCHES = {
             'E': 'Müşterilerin dava açabilmesi ilgili mesleki birliğin bu yönde onay vermesine bağlıdır',
         },
         'B',
-        'TTK md. 56/1 ve 56/2 uyarınca haksız rekabet sebebiyle ekonomik menfaatleri zarar gören müşteriler de tespit, men ve eski hâle getirme davalarını açabilir.',
+        'TTK md. 56/1 ve 56/2 uyarınca ekonomik çıkarları zarar gören müşteriler de, araçların ve malların imhası dışında, birinci fıkradaki bütün davaları açabilir.',
     ),
     # düzey 2
     '0030': patch(
@@ -546,7 +546,7 @@ _PATCHES = {
             'E': 'Yayın kuruluşları bu davaların dışında tutulmamıştır',
         },
         'D',
-        'TTK md. 58: yazı sahibinin izni olmaksızın veya yazı içeriği değiştirilerek yayımlanmışsa dava, yayın sahibine ve yayımlayana karşı da açılabilir; bu, yazı sahibinin belirlenememesine bağlı değildir.',
+        'TTK md. 58/1-a uyarınca yazı, sahibinin haberi olmaksızın ya da onayına aykırı olarak yayımlanmışsa davalar yazı işleri müdürü, genel yayın yönetmeni, ilan servisi şefi gibi yayın sorumlularına, bunlar gösterilemiyorsa işletme sahibine karşı açılabilir. Bu imkân yalnızca yazı sahibinin belirlenememesi (md. 58/1-c) hâline bağlı değildir.',
     ),
     # düzey 3
     '0038': patch(
@@ -572,7 +572,7 @@ _PATCHES = {
             'E': 'Bu davranış yalnızca rekabetin korunmasına ilişkin idari denetimin konusunu oluşturur',
         },
         'A',
-        'TTK md. 55/1-a-7 uyarınca seçilmiş bazı malları tedarik fiyatının altında satışa sunmak, bunu reklamlarda vurgulamak ve böylece müşteriyi yanıltmak haksız rekabet hâlidir.',
+        'TTK md. 55/1-a-6 uyarınca seçilmiş bazı malları tedarik fiyatının altında satışa sunmak, bunu reklamlarda vurgulamak ve böylece müşteriyi yanıltmak haksız rekabet hâlidir.',
     ),
     # düzey 3
     '0040': patch(
@@ -585,7 +585,7 @@ _PATCHES = {
             'E': 'Stok ve kampanya biçimine ilişkin açıklamalar reklam serbestisi kapsamında denetim dışıdır',
         },
         'E',
-        'TTK md. 55/1-a-2 ve 55/1-a-9 uyarınca stoklar ve kampanya biçimi hakkında gerçek dışı açıklama ile ek edimlerle yanıltma açıkça haksız rekabet hâlleri arasında sayılmıştır.',
+        'TTK md. 55/1-a-2 ve 55/1-a-7 uyarınca stoklar ve kampanya biçimi hakkında gerçek dışı açıklama ile ek edimlerle yanıltma açıkça haksız rekabet hâlleri arasında sayılmıştır.',
     ),
     # düzey 2
     '0041': patch(
@@ -611,7 +611,7 @@ _PATCHES = {
             'E': 'İmha kararı verilebilmesi davalının ağır kusurunun ispat edilmesine bağlıdır',
         },
         'D',
-        'TTK md. 56/1-b ve 56/2 uyarınca haksız rekabetin işlenmesinde etkili olan araçların ve malların imhası dava konusu yapılabilir.',
+        'TTK md. 56/1-c uyarınca tecavüzün önlenmesi için kaçınılmazsa haksız rekabetin işlenmesinde etkili olan araçların ve malların imhası dava konusu yapılabilir.',
     ),
     # düzey 2
     '0043': patch(
@@ -676,7 +676,7 @@ _PATCHES = {
             'E': 'I ve III',
         },
         'C',
-        'TTK md. 56/1-b, 56/1-c ve 56/2 uyarınca maddi durumun ortadan kaldırılması, beyanların düzeltilmesi ve araçların imhası istenebilir; bu nedenle I yanlış, II ve III doğrudur.',
+        'TTK md. 56/1-c uyarınca maddi durumun ortadan kaldırılması, beyanların düzeltilmesi ve araçların imhası istenebilir; bu nedenle I yanlış, II ve III doğrudur.',
     ),
     # düzey 3
     '0048': patch(
@@ -758,29 +758,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0054': patch(
-        'Bir işletme, üretim sırlarını hukuka aykırı yolla ele geçirdiği rakibine karşı açılan davada, sırları yalnızca öğrendiğini ancak kullanmadığını savunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Bir işletme, rakibinin çalışanlarını üretim sırlarını kendisine açıklamaya yöneltmiş ve sırları bu yolla öğrenmiştir. Açılan davada sırları yalnızca öğrendiğini, ancak kullanmadığını savunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Sırların kullanılmamış olması haksız rekabetin oluşmasını engelleyen bir savunmadır',
             'B': 'Ele geçirilen sırların değerlendirilmesi ayrıca haksız rekabet oluşturur',
             'C': 'Kusur bulunması hâlinde ayrıca tazminat istenebilir',
             'D': 'Zarar tehlikesiyle karşılaşan işletme önleme davası açabilir',
-            'E': 'Sırları hukuka aykırı biçimde ele geçirmek başlı başına haksız rekabet hâlidir',
+            'E': 'Çalışanları üretim sırlarını ifşa etmeye yöneltmek başlı başına haksız rekabet hâlidir',
         },
         'A',
-        'TTK md. 55/1-d uyarınca üretim ve iş sırlarını hukuka aykırı biçimde ele geçirmek ile değerlendirmek ayrı ayrı haksız rekabet hâlleridir.',
+        'TTK md. 55/1-b-3 uyarınca işçileri, işverenlerinin üretim ve iş sırlarını ifşa etmeye veya ele geçirmeye yöneltmek tek başına haksız rekabet hâlidir; md. 55/1-d uyarınca bu yolla öğrenilen sırların değerlendirilmesi ise ayrıca haksız rekabet oluşturur. Sırların henüz kullanılmamış olması sorumluluğu ortadan kaldırmaz.',
     ),
     # düzey 2
     '0055': patch(
         'Bir işletme, haksız rekabet oluşturan davranışın kendi çalışanınca ve görev sırasında işlendiğini, bu nedenle sorumluluğunun doğmadığını ileri sürmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'İstihdam eden aleyhine tazminat istenebilmesi kusur koşuluna bağlıdır',
+            'A': 'İstihdam edene karşı tazminat istemlerinde Borçlar Kanunu hükümleri uygulanır',
             'B': 'Çalışanın görev sırasında işlediği fiilden istihdam eden sorumlu tutulamaz',
             'C': 'İstihdam edene tespit, men ve düzeltme davaları yöneltilebilir',
             'D': 'Haksız rekabet çalışanlarca işlenmişse istihdam edene karşı da dava açılabilir',
             'E': 'Zarar gören, çalışan ve istihdam eden aleyhine birlikte dava açabilir',
         },
         'B',
-        'TTK md. 57 uyarınca haksız rekabet, hizmetlerini gördükleri sırada çalışanlarca işlenmişse davalar istihdam edene karşı da açılır.',
+        'TTK md. 57/1 uyarınca haksız rekabet, hizmetlerini gördükleri sırada çalışanlarca işlenmişse tespit, men ve düzeltme davaları çalıştırana karşı da açılabilir; md. 57/2 uyarınca tazminat davalarında Türk Borçlar Kanunu hükümleri uygulanır.',
     ),
     # düzey 3
     '0056': patch(

@@ -211,7 +211,7 @@ _PATCHES = {
             'E': 'I ve II',
         },
         'A',
-        'I YANLIŞ: TTK md. 15 uyarınca esnafın faaliyeti sermayesinden çok bedeni çalışmasına dayanır ve geliri sınırı aşmaz; ticari işletme işletmez. III YANLIŞ: ticari işletme rehni zilyetlik devredilmeksizin sicile tescille kurulur. II (md. 13) ve IV (md. 90) doğrudur.',
+        'I YANLIŞ: TTK md. 15 uyarınca esnafın faaliyeti sermayesinden çok bedeni çalışmasına dayanır ve geliri sınırı aşmaz; ticari işletme işletmez. III YANLIŞ: ticari işletme rehni zilyetlik devredilmeksizin sicile tescille kurulur. II (md. 13) ve IV (md. 89/2) doğrudur.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 0
@@ -710,7 +710,7 @@ _PATCHES = {
             'E': 'Sözleşmenin taraflarından birinin banka olması gerekmez',
         },
         'D',
-        'TTK md. 89: alacakları teker teker istemekten vazgeçip bunları kalem kalem alacak ve borç şekline çevirerek hesabın kesilmesinden sonra çıkacak bakiyeyi isteme sözleşmesi cari hesap sözleşmesidir; taraflar banka olmak zorunda değildir. md. 90: sözleşme yazılı yapılmadıkça geçerli olmaz.',
+        'TTK md. 89: alacakları teker teker istemekten vazgeçip bunları kalem kalem alacak ve borç şekline çevirerek hesabın kesilmesinden sonra çıkacak bakiyeyi isteme sözleşmesi cari hesap sözleşmesidir; taraflar banka olmak zorunda değildir. md. 89/2: sözleşme yazılı yapılmadıkça geçerli olmaz.',
     ),
     # düzey 2
     '0050': patch(

@@ -186,7 +186,7 @@ _PATCHES = {
         '5510 md. 13: iş kazası; sigortalının işyerinde bulunduğu sırada, işveren tarafından yürütülmekte olan iş nedeniyle, bir işverene bağlı olarak çalışan sigortalının görevli olarak işyeri dışında başka bir yere gönderilmesi nedeniyle asıl işini yapmaksızın geçen zamanlarda, emziren kadın sigortalının çocuğuna süt vermek için ayrılan zamanlarda ve işverence sağlanan bir taşıtla işin yapıldığı yere toplu olarak götürülüp getirilmeleri sırasında meydana gelen olaydır. İşverenin kusuru koşul değildir.',
     ),
     '0009': patch(
-        'Bir işverenin işyerinde 4/1-(a) kapsamındaki bir sigortalı 4 Mart Salı günü iş kazası geçirmiştir. İşveren, kazayı Sosyal Güvenlik Kurumuna bildirmek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir işverenin işyerinde 4/1-(a) kapsamındaki bir sigortalı bir iş günü iş kazası geçirmiştir. İşveren, kazayı Sosyal Güvenlik Kurumuna bildirmek istemektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'İşveren, kazayı takip eden ayın sonuna kadar Kuruma bildirmelidir',
             'B': 'Bildirim yükümlülüğü işverene değil, doğrudan sigortalının kendisine aittir',
@@ -270,16 +270,16 @@ _PATCHES = {
         "5510 md. 25: sigortalının veya işverenin talebi üzerine Kurumca yetkilendirilen sağlık hizmeti sunucularının raporlarına göre çalışma gücünün ya da iş kazası veya meslek hastalığı sonucu meslekte kazanma gücünün EN AZ %60'ını kaybettiği Kurum Sağlık Kurulunca tespit edilen sigortalı MALUL sayılır. %55'lik kayıp bu eşiğin altındadır. md. 26'daki en az 10 yıl sigortalılık ve 1800 gün prim koşulu ancak malullük tespit edildikten sonra aranır (başkasının sürekli bakımına muhtaç olanlarda sigortalılık süresi aranmaz).",
     ),
     '0016': patch(
-        'Vefat eden bir sigortalının geride eşi, 16 yaşında öğrenim gören bir çocuğu ve geçiminin sigortalı tarafından sağlandığı belgelenen annesi kalmıştır. Buna göre ölüm aylığı bakımından aşağıdakilerden hangisi yanlıştır?',
+        'Vefat eden bir sigortalının geride eşi, 16 yaşında öğrenim gören bir çocuğu ve her türlü kazanç ve iratlarından elde ettiği geliri asgari ücretin net tutarından az olan annesi kalmıştır. Buna göre ölüm aylığı bakımından aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Ölüm aylığından yalnızca sağ kalan eş yararlanabilir; çocuk ve ana-baba hak sahibi sayılmaz',
             'B': 'Hak sahiplerine bağlanacak aylıkların toplamı sigortalıya ait aylığı geçemez',
             'C': 'Hak sahipleri sağ kalan eş, çocuklar ile ana ve babadır',
-            'D': 'Ana ve babaya aylık bağlanması, geçiminin sigortalı tarafından sağlandığının belgelenmesine bağlıdır',
+            'D': 'Ana ve babaya aylık bağlanması, gelirlerinin asgari ücretin net tutarından az olması koşuluna bağlıdır',
             'E': 'Aylık bağlanabilmesi için sigortalının belirli bir prim gün sayısı koşulunu karşılaması gerekir',
         },
         'A',
-        '5510 md. 32-34: ölüm aylığı; sağ kalan EŞ, ÇOCUKLAR ile ANA ve BABAYA bağlanır. Aylık için en az 1800 gün malullük, yaşlılık ve ölüm sigortaları primi bildirilmiş olması ya da 4/1-(a) kapsamındakiler için en az 5 yıl sigortalılık süresiyle birlikte toplam 900 gün prim aranır. Ana ve babaya aylık, geçiminin sigortalı tarafından sağlandığının belgelenmesi ve diğer koşulların gerçekleşmesi hâlinde bağlanır. Hak sahiplerinin hisseleri toplamı sigortalıya ait aylığı geçemez.',
+        '5510 md. 32-34: ölüm aylığı; sağ kalan EŞ, ÇOCUKLAR ile ANA ve BABAYA bağlanır. Aylık için en az 1800 gün malullük, yaşlılık ve ölüm sigortaları primi bildirilmiş olması ya da 4/1-(a) kapsamındakiler için en az 5 yıl sigortalılık süresiyle birlikte toplam 900 gün prim aranır. Ana ve babaya aylık, her türlü kazanç ve iratlarından elde ettiği gelirin asgari ücretin net tutarından az olması ve diğer koşulların gerçekleşmesi hâlinde bağlanır. Hak sahiplerinin hisseleri toplamı sigortalıya ait aylığı geçemez.',
     ),
     '0017': patch(
         'Bir işveren, imalat işi yapan işyerinde çalıştırmak üzere bir işçiyi 10 Nisan günü işe başlatmayı planlamaktadır. İşveren, sigortalı işe giriş bildirgesini işe başlama tarihinden sonra vermeyi düşünmektedir. Buna göre aşağıdakilerden hangisi doğrudur?',
@@ -1174,7 +1174,7 @@ _OLUMSUZ_TUR = {
         '5510 md. 13: iş kazası; sigortalının işyerinde bulunduğu sırada, işveren tarafından yürütülen iş nedeniyle, görevli olarak işyeri dışına gönderilmesi nedeniyle asıl işini yapmaksızın geçen zamanlarda, emziren kadın sigortalının çocuğuna süt vermek için ayrılan zamanlarda ve işverence sağlanan taşıtla toplu götürülüp getirilmeleri sırasında meydana gelen olaydır. İşyeri sınırı ya da işveren kusuru koşul değildir.',
     ),
     '0009': patch(
-        "Bir işverenin işyerinde 4/1-(a) kapsamındaki bir sigortalı 4 Mart Salı günü iş kazası geçirmiştir.\n\n5510 sayılı Kanun'a göre kazanın bildirimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
+        "Bir işverenin işyerinde 4/1-(a) kapsamındaki bir sigortalı bir iş günü iş kazası geçirmiştir.\n\n5510 sayılı Kanun'a göre kazanın bildirimiyle ilgili aşağıdakilerden hangisi yanlıştır?",
         {
             'A': '4/1-(a) sigortalıları için bildirim işverence yapılır',
             'B': 'Bildirim kazadan sonraki üç iş günü içinde yapılır',

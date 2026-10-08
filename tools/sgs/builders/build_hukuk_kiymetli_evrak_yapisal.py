@@ -15,7 +15,7 @@ Icerik TTK kiymetli evrak genel hukumlerini OLAYA uygulatiyor: hakkin senetten
 ayri ileri surulememesi (md. 645), uc devir usulu (teslim / ciro+teslim /
 yazili devir beyani+teslim), def'i rejimindeki fark (nama yazilida def'iler
 devam ederken emre ve hamilinede iyiniyetli hamile karsi ileri surulemez,
-md. 659), ciro turleri (tam/beyaz, temlik/tahsil/rehin), ciro zinciri,
+md. 659 ve 825), ciro turleri (tam/beyaz, temlik/tahsil/rehin), ciro zinciri,
 zayi ve iptal, emtia senetleri ile kambiyo senetleri ayrimi.
 
 ⚠️ SAHIPLIK DEVRI: DORT builder bu pakette soru tutuyordu —
@@ -95,16 +95,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0004': patch(
-        "Nama yazılı olarak düzenlenmiş bir senede sonradan 'emrine' kaydı eklenmiştir. Buna göre senedin niteliği bakımından aşağıdakilerden hangisi doğrudur?",
+        "Bir senet belirli bir kişi adına düzenlenmiş; düzenleyen, senet metnine 'veya emrine' kaydını da koymuştur. Buna göre senedin niteliği bakımından aşağıdakilerden hangisi doğrudur?",
         {
-            'A': 'Senedin türü yalnızca ilk düzenlenme anındaki kayıtlara göre belirlenir ve sonradan değiştirilemez',
+            'A': 'Senet, lehtarın adı yazılı olduğu için emre kaydına bakılmaksızın nama yazılı sayılır',
             'B': 'Senet nama yazılı olarak kalır; emre kaydı sonuç doğurmaz',
             'C': 'Senet hamiline yazılı hâle gelir',
             'D': 'Emre kaydı taşıyan senet emre yazılı sayılır; devri ciro ve teslimle gerçekleşir',
             'E': 'Senet geçersiz hâle gelir',
         },
         'D',
-        'TTK md. 653 ve 824: senedin türü, üzerindeki kayıtlara göre belirlenir. Belirli bir kişiye ödenmesi öngörülen ancak EMRE KAYDI taşıyan senet emre yazılı sayılır ve devri CİRO ve teslimle gerçekleşir.',
+        'TTK md. 654 ve 824: senedin türü, üzerindeki kayıtlara göre belirlenir. Belirli bir kişiye ödenmesi öngörülen ancak EMRE KAYDI taşıyan senet emre yazılı sayılır ve devri CİRO ve teslimle gerçekleşir.',
     ),
     # düzey 2
     '0005': patch(
@@ -130,7 +130,7 @@ _PATCHES = {
             'E': "Def'i ileri sürme yalnızca nama yazılı senetlerde yasaktır",
         },
         'A',
-        "TTK md. 659: borçlu, senetten anlaşılan def'ilerle senedin geçersizliğine ilişkin def'ileri ve kendisinin hamile karşı doğrudan sahip olduğu def'ileri ileri sürebilir. Önceki hamillerle arasındaki KİŞİSEL ilişkilere dayanan def'iler ise, hamil senedi devralırken bilerek borçlunun zararına hareket etmiş olmadıkça ileri sürülemez.",
+        "TTK md. 659 ve 825: borçlu, senetten anlaşılan def'ilerle senedin geçersizliğine ilişkin def'ileri ve kendisinin hamile karşı doğrudan sahip olduğu def'ileri ileri sürebilir. Önceki hamillerle arasındaki KİŞİSEL ilişkilere dayanan def'iler ise, hamil senedi devralırken bilerek borçlunun zararına hareket etmiş olmadıkça ileri sürülemez.",
     ),
     # düzey 3
     '0007': patch(
@@ -221,7 +221,7 @@ _PATCHES = {
             'E': 'Senet çelişkili kayıt nedeniyle geçersizdir',
         },
         'A',
-        'TTK md. 653 ve 824: senedin türü üzerindeki kayıtlarla belirlenir; EMRE KAYDI taşıyan senet emre yazılı sayılır ve ciro ile devredilir. Çelişkili kayıt senedi geçersiz kılmaz.',
+        'TTK md. 654 ve 824: senedin türü üzerindeki kayıtlarla belirlenir; EMRE KAYDI taşıyan senet emre yazılı sayılır ve ciro ile devredilir. Çelişkili kayıt senedi geçersiz kılmaz.',
     ),
     # düzey 2
     '0014': patch(
@@ -229,7 +229,7 @@ _PATCHES = {
         {
             'A': 'Bono',
             'B': 'Çek',
-            'C': 'Deniz taşımasında düzenlenen ve taşınan malı temsil eden konşimento',
+            'C': 'Emre yazılı olarak düzenlenen bono',
             'D': 'Deniz taşımasında düzenlenen ve taşınan emtiayı temsil eden konşimento',
             'E': 'Poliçe',
         },
@@ -260,7 +260,7 @@ _PATCHES = {
             'E': "Def'iler hiçbir hamile karşı ileri sürülemez",
         },
         'A',
-        "TTK md. 659: borçlu, önceki hamillerle arasındaki kişisel ilişkilere dayanan def'ileri, hamil senedi devralırken BİLEREK BORÇLUNUN ZARARINA HAREKET ETMİŞ olmadıkça ileri süremez. Bu koşul gerçekleşince kişisel def'iler ileri sürülebilir hâle gelir.",
+        "TTK md. 659 ve 825: borçlu, önceki hamillerle arasındaki kişisel ilişkilere dayanan def'ileri, hamil senedi devralırken BİLEREK BORÇLUNUN ZARARINA HAREKET ETMİŞ olmadıkça ileri süremez. Bu koşul gerçekleşince kişisel def'iler ileri sürülebilir hâle gelir.",
     ),
     # düzey 3
     '0017': patch(
@@ -338,7 +338,7 @@ _PATCHES = {
             'E': "Borçlu senedin geçersizliğine ilişkin def'ileri ileri sürebilir",
         },
         'C',
-        "TTK md. 659: kişisel ilişkilere dayanan def'iler, hamil senedi devralırken bilerek borçlunun zararına hareket etmiş olmadıkça İLERİ SÜRÜLEMEZ. İYİNİYETLİ hamil bu def'ilerden etkilenmez; kıymetli evrakın tedavül güvenliği bu kuralla sağlanır.",
+        "TTK md. 659 ve 825: kişisel ilişkilere dayanan def'iler, hamil senedi devralırken bilerek borçlunun zararına hareket etmiş olmadıkça İLERİ SÜRÜLEMEZ. İYİNİYETLİ hamil bu def'ilerden etkilenmez; kıymetli evrakın tedavül güvenliği bu kuralla sağlanır.",
     ),
     # düzey 2
     '0023': patch(
@@ -390,7 +390,7 @@ _PATCHES = {
             'E': 'Nama yazılı senet alacağın temliki yoluyla devredilir',
         },
         'A',
-        "Nama yazılı senet alacağın temliki hükümlerine tabidir; borçlu devir anındaki def'ilerini yeni alacaklıya karşı da ileri sürebilir. Def'i SINIRLAMASI emre ve hamiline yazılı senetlere özgüdür (TTK md. 659).",
+        "Nama yazılı senet alacağın temliki hükümlerine tabidir; borçlu devir anındaki def'ilerini yeni alacaklıya karşı da ileri sürebilir. Def'i SINIRLAMASI emre ve hamiline yazılı senetlere özgüdür (TTK md. 659 ve 825).",
     ),
     # düzey 2
     '0027': patch(
@@ -546,7 +546,7 @@ _PATCHES = {
             'E': "Senedin geçersizliğine ilişkin def'iler",
         },
         'B',
-        "TTK md. 659: borçlu; senetten anlaşılan, senedin geçersizliğine ilişkin ve hamile karşı doğrudan sahip olduğu def'ileri ileri sürebilir. Önceki hamillerle arasındaki KİŞİSEL def'ileri ise iyiniyetli hamile karşı ileri süremez.",
+        "TTK md. 659 ve 825: borçlu; senetten anlaşılan, senedin geçersizliğine ilişkin ve hamile karşı doğrudan sahip olduğu def'ileri ileri sürebilir. Önceki hamillerle arasındaki KİŞİSEL def'ileri ise iyiniyetli hamile karşı ileri süremez.",
     ),
     # düzey 1
     '0039': patch(
@@ -598,7 +598,7 @@ _PATCHES = {
             'E': 'Senedin türü, yalnızca borçlunun sonradan yaptığı yazılı beyana göre belirlenir',
         },
         'A',
-        'TTK md. 653, 658 ve 824: senedin türü üzerindeki kayıtlarla ve kanunda öngörülen karinelerle belirlenir; emre kaydı taşıyan senet emre yazılı, hamiline ödenecek senet ise hamiline yazılı sayılır.',
+        'TTK md. 654, 658 ve 824: senedin türü üzerindeki kayıtlarla ve kanunda öngörülen karinelerle belirlenir; emre kaydı taşıyan senet emre yazılı, hamiline ödenecek senet ise hamiline yazılı sayılır.',
     ),
     # düzey 2
     '0043': patch(
@@ -637,7 +637,7 @@ _PATCHES = {
             'E': "Emre ve hamiline yazılı senetlerde def'iler sınırlandırılmıştır",
         },
         'D',
-        "TTK md. 659: tedavül güvenliği, borçlunun kişisel def'ilerini İYİNİYETLİ hamile karşı ileri SÜREMEMESİYLE sağlanır. Tüm def'ilerin ileri sürülebilmesi tedavülü güçleştirir; nitekim nama yazılı senedin tedavül kabiliyeti bu nedenle düşüktür.",
+        "TTK md. 659 ve 825: tedavül güvenliği, borçlunun kişisel def'ilerini İYİNİYETLİ hamile karşı ileri SÜREMEMESİYLE sağlanır. Tüm def'ilerin ileri sürülebilmesi tedavülü güçleştirir; nitekim nama yazılı senedin tedavül kabiliyeti bu nedenle düşüktür.",
     ),
     # düzey 3
     '0046': patch(
@@ -650,7 +650,7 @@ _PATCHES = {
             'E': 'II ve III',
         },
         'B',
-        'II YANLIŞ: nama yazılı senet ciro ile değil, yazılı devir beyanı ve teslimle devredilir (TTK md. 647). IV YANLIŞ: tahsil cirosu mülkiyeti DEVRETMEZ, yalnızca tahsil yetkisi verir (md. 688). I (md. 645) ve III (md. 659) doğrudur.',
+        'II YANLIŞ: nama yazılı senet ciro ile değil, yazılı devir beyanı ve teslimle devredilir (TTK md. 647). IV YANLIŞ: tahsil cirosu mülkiyeti DEVRETMEZ, yalnızca tahsil yetkisi verir (md. 688). I (md. 645) ve III (md. 659 ve 825) doğrudur.',
     ),
     # düzey 3
     '0047': patch(
@@ -676,7 +676,7 @@ _PATCHES = {
             'E': 'II ve III',
         },
         'C',
-        "II YANLIŞ: TTK md. 659 uyarınca kişisel def'iler iyiniyetli hamile karşı ileri SÜRÜLEMEZ. IV YANLIŞ: def'i rejimi türe göre değişir; nama yazılı senette def'iler devam ederken emre ve hamiline yazılı senetlerde sınırlıdır. I ve III doğrudur.",
+        "II YANLIŞ: TTK md. 659 ve 825 uyarınca kişisel def'iler iyiniyetli hamile karşı ileri SÜRÜLEMEZ. IV YANLIŞ: def'i rejimi türe göre değişir; nama yazılı senette def'iler devam ederken emre ve hamiline yazılı senetlerde sınırlıdır. I ve III doğrudur.",
     ),
     # düzey 2
     '0049': patch(
@@ -793,7 +793,7 @@ _PATCHES = {
             'E': "Hamiline yazılı senette borçlu, tüm kişisel def'ilerini her hamile karşı ileri sürebilir",
         },
         'E',
-        "TTK md. 659: hamiline yazılı senetlerde de kişisel def'iler İYİNİYETLİ hamile karşı ileri sürülemez; bu, senedin tedavül güvenliğini sağlar.",
+        "TTK md. 659 ve 825: hamiline yazılı senetlerde de kişisel def'iler İYİNİYETLİ hamile karşı ileri sürülemez; bu, senedin tedavül güvenliğini sağlar.",
     ),
     # düzey 2
     '0058': patch(

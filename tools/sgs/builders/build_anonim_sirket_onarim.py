@@ -354,7 +354,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0024': patch(
-        'Bir anonim şirkette sermayenin yirmide birini oluşturan pay sahipleri, genel kurulun toplantıya çağrılmasını istemektedir. Yönetim kurulu talebi reddetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Halka açık olmayan bir anonim şirkette sermayenin onda birini oluşturan pay sahipleri, genel kurulun toplantıya çağrılmasını istemektedir. Yönetim kurulu talebi reddetmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Çağrı hakkı sermayenin çoğunluğunu temsil edenlere tanınmıştır',
             'B': 'Talep reddedilirse başvurulacak bir yol bulunmaz',
@@ -363,7 +363,7 @@ _PATCHES = {
             'E': 'Azınlık doğrudan genel kurulu toplayabilir',
         },
         'D',
-        'TTK md. 411: sermayenin en az yirmide birini oluşturan pay sahipleri (halka kapalı şirketlerde), yönetim kurulundan genel kurulu toplantıya çağırmasını isteyebilir. md. 412: talep yönetim kurulunca reddedilir veya yedi iş günü içinde olumlu yanıt verilmezse, MAHKEMEDEN çağrı izni istenebilir.',
+        'TTK md. 411: sermayenin en az onda birini (halka açık şirketlerde yirmide birini) oluşturan pay sahipleri, yönetim kurulundan genel kurulu toplantıya çağırmasını isteyebilir. md. 412: talep yönetim kurulunca reddedilir veya yedi iş günü içinde olumlu yanıt verilmezse, MAHKEMEDEN çağrı izni istenebilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -614,7 +614,7 @@ _PATCHES = {
             'E': 'Her ikisi de ciro aranmaksızın zilyetliğin devriyle devredilir',
         },
         'B',
-        'TTK md. 489-490: HAMİLİNE yazılı pay senetlerinin devri, zilyetliğin geçirilmesiyle şirkete ve üçüncü kişilere karşı hüküm ifade eder. NAMA yazılı pay senetleri ise ciro edilmiş nama yazılı pay senedinin zilyetliğinin geçirilmesiyle devredilir.',
+        'TTK md. 489-490: HAMİLİNE yazılı pay senetleri zilyetliğin geçirilmesiyle devredilir; devir, payı devralanın Merkezi Kayıt Kuruluşuna yapacağı bildirimle şirkete ve üçüncü kişilere karşı hüküm ifade eder. NAMA yazılı pay senetleri ise ciro edilmiş nama yazılı pay senedinin zilyetliğinin geçirilmesiyle devredilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -711,7 +711,7 @@ _PATCHES = {
             'E': 'Hamiline yazılı pay senetleri ancak noter onaylı sözleşmeyle devredilir',
         },
         'E',
-        'TTK md. 489: HAMİLİNE yazılı pay senetlerinin devri, zilyetliğin geçirilmesiyle hüküm ifade eder; noter onayı aranmaz.',
+        'TTK md. 489: HAMİLİNE yazılı pay senetleri zilyetliğin geçirilmesiyle devredilir; devir, devralanın Merkezi Kayıt Kuruluşuna bildirimiyle şirkete ve üçüncü kişilere karşı hüküm ifade eder. Noter onaylı sözleşme aranmaz.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -767,7 +767,7 @@ _PATCHES = {
             'E': 'Genel kurul ve yönetim kurulu',
         },
         'E',
-        'TTK md. 364 vd. ve 407 vd.: anonim şirketin zorunlu organları GENEL KURUL ve YÖNETİM KURULUDUR; denetçi 6102 sayılı TTK ile organ olmaktan çıkarılmıştır.',
+        'TTK md. 359 ve 407 vd.: anonim şirketin zorunlu organları GENEL KURUL ve YÖNETİM KURULUDUR; denetçi 6102 sayılı TTK ile organ olmaktan çıkarılmıştır.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 0
@@ -809,7 +809,7 @@ _PATCHES = {
             'E': 'Genel kurulu toplantıya çağırma talebi hakkı halka açık şirketlere özgüdür',
         },
         'B',
-        'TTK md. 411: sermayenin en az yirmide birini oluşturan pay sahipleri (halka açık şirketlerde kırkta bir), yönetim kurulundan genel kurulu toplantıya çağırmasını isteyebilir.',
+        'TTK md. 411: sermayenin en az onda birini (halka açık şirketlerde yirmide birini) oluşturan pay sahipleri, yönetim kurulundan genel kurulu toplantıya çağırmasını isteyebilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 1

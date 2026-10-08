@@ -164,29 +164,29 @@ _PATCHES = {
     ),
     # düzey 3
     '0009': patch(
-        'Bir limited şirket ortağının ölümü üzerine esas sermaye payı mirasçılarına geçmiştir. Şirket, mirasçıları ortak olarak kabul etmek istememektedir. Şirket sözleşmesinde bu konuda hüküm bulunmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir limited şirket ortağının ölümü üzerine esas sermaye payı mirasçılarına geçmiştir. Şirket, mirasçıları ortak olarak kabul etmek istememektedir. Şirket sözleşmesinde konuya ilişkin özel bir hüküm yoktur. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Mirasçıların ortak sıfatı kazanması ancak genel kurulun oybirliğiyle onayına bağlıdır',
             'B': 'Şirket, gerçek değeri önermeksizin ve süreye bağlı olmaksızın geçişi reddedebilir',
             'C': 'Şirketin ret hakkı yalnızca icra yoluyla yapılan devirlerde kullanılabilir, mirasta kullanılamaz',
-            'D': 'Şirket, mirasçılara payların gerçek değerini önermek koşuluyla geçişi başvurudan itibaren üç ay içinde reddedebilir',
+            'D': 'Şirket, payları gerçek değeri üzerinden devralmayı önererek geçişi, iktisabı öğrenmesinden itibaren üç ay içinde reddedebilir',
             'E': 'Miras yoluyla geçişte şirkete tanınmış bir ret hakkı bulunmadığından mirasçılar payı edinmekle kendiliğinden ortak sıfatı kazanır',
         },
         'D',
-        'TTK md. 596 uyarınca miras, eşler arasındaki mal rejimi ve icra yoluyla geçişlerde şirket, payların gerçek değerini önererek geçişi başvurudan itibaren üç ay içinde reddedebilir.',
+        'TTK md. 596 uyarınca miras, eşler arasındaki mal rejimi ve icra yoluyla geçişlerde haklar ve borçlar genel kurulun onayı aranmaksızın iktisap edene geçer; ancak şirket, payları gerçek değeri üzerinden devralmayı önermek koşuluyla, iktisabı öğrenmesinden itibaren üç ay içinde geçişi onaylamayı reddedebilir.',
     ),
     # düzey 2
     '0010': patch(
-        'Bir limited şirkette esas sermaye payı devredilmiş ve devralan pay defterine kaydedilmiştir. Devreden ortağın şirkete ödenmemiş sermaye borcu bulunmaktadır. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Bir limited şirketin kuruluşunda esas sermaye payını taahhüt eden ortak, bedelin bir kısmını ödemeden payını devretmiş; devralan pay defterine kaydedilmiştir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Devrin tescili ile devredenin sermaye borcuna ilişkin sorumluluğu tümüyle sona erer',
-            'B': 'Devralan, ödenmemiş sermaye borcundan şirkete karşı sorumlu olur',
+            'A': 'Devrin tescili ile devredenin ödenmemiş bedele ilişkin sorumluluğu her durumda tümüyle sona erer',
+            'B': 'Devralan, pay defterine kaydedilmekle ödenmemiş bedelden şirkete karşı sorumlu olur',
             'C': 'Ödenmemiş sermaye borcu bulunması payın devrine kanunen engel oluşturmaz',
-            'D': 'Devreden ortak, ödenmemiş sermaye borcundan belirli bir süre daha sorumlu kalır',
-            'E': 'Devreden ortağın sorumluluğu devrin tescilinden itibaren iki yılla sınırlıdır',
+            'D': 'Kuruluştan itibaren iki yıl içinde şirket iflas eder ve devralan haklarından yoksun bırakılırsa devredene başvurulabilir',
+            'E': 'Bedeli tamamen ödenmemiş payların devrinde anonim şirket hükümleri kıyasen uygulanır',
         },
         'A',
-        'TTK md. 596/4 uyarınca devreden ortağın ödenmemiş sermaye borcundan sorumluluğu devrin tescilinden itibaren iki yıl daha sürer; devir sorumluluğu kendiliğinden sona erdirmez.',
+        'TTK md. 585 uyarınca bedelleri tamamen ödenmemiş payların devrinde anonim şirket hükümleri kıyasen uygulanır. md. 501 uyarınca devralan, pay defterine kaydedilmekle kalan bedeli ödemekle yükümlü olur; kuruluşta taahhütte bulunan devreden ise kuruluştan itibaren iki yıl içinde şirket iflas eder ve devralan paydan doğan haklarından yoksun bırakılırsa ödenmemiş bedelden sorumlu tutulabilir. Bu nedenle sorumluluğun her durumda sona erdiği söylenemez.',
     ),
     # düzey 2
     '0011': patch(
@@ -203,16 +203,16 @@ _PATCHES = {
     ),
     # düzey 3
     '0012': patch(
-        'Bir limited şirket genel kurulunda şirket merkezinin yurt dışına taşınması, şirket sözleşmesinin değiştirilmesi ve şirket işletme konusunun genişletilmesi görüşülecektir. Buna göre aşağıdakilerden hangisi yanlıştır?',
+        'Bir limited şirket genel kurulunda şirket merkezinin başka bir ile taşınması, şirket sözleşmesinin değiştirilmesi ve şirket işletme konusunun genişletilmesi görüşülecektir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Şirket sözleşmesinin değiştirilmesi kural olarak genel kurulun yetkisindedir',
-            'B': 'Merkezin yurt dışına taşınması tüm ortakların oybirliğini gerektiren bir karardır',
+            'B': 'Şirket merkezinin değiştirilmesi kanunda sayılan önemli kararlar arasında yer alır',
             'C': 'Ağırlaştırılmış yeter sayı gerektiren kararlarda sermayenin salt çoğunluğu da aranır',
             'D': 'İşletme konusunun değiştirilmesi ağırlaştırılmış yeter sayıya tabi bir karardır',
-            'E': 'Merkezin yurt dışına taşınması temsil edilen oyların salt çoğunluğuyla kararlaştırılır',
+            'E': 'Şirket merkezinin değiştirilmesi temsil edilen oyların salt çoğunluğuyla kararlaştırılır',
         },
         'E',
-        'TTK md. 621 uyarınca işletme konusunun değiştirilmesi ağırlaştırılmış yeter sayıya, merkezin yurt dışına taşınması ise tüm ortakların oybirliğine tabidir.',
+        'TTK md. 621/1 uyarınca işletme konusunun değiştirilmesi (a) ve şirket merkezinin değiştirilmesi (f), temsil edilen oyların en az üçte ikisinin ve oy hakkı bulunan esas sermayenin tamamının salt çoğunluğunun bir arada bulunmasını gerektiren önemli kararlardandır; salt çoğunluk yeterli değildir.',
     ),
     # düzey 2
     '0013': patch(
@@ -368,7 +368,7 @@ _PATCHES = {
             'E': 'Esas sermaye payı haczedilip icra yoluyla paraya çevrilebilir; şirketin gerçek değeri önererek reddetme hakkı saklıdır',
         },
         'E',
-        'TTK md. 133 ve 596 uyarınca sermaye şirketlerinde ortağın esas sermaye payı haczedilip paraya çevrilebilir; icra yoluyla geçişte şirketin gerçek değeri önererek reddetme hakkı saklıdır.',
+        'TTK md. 596 uyarınca limited şirkette ortağın esas sermaye payı haczedilip paraya çevrilebilir; icra yoluyla geçişte şirketin gerçek değeri önererek reddetme hakkı saklıdır.',
     ),
     # düzey 2
     '0025': patch(
@@ -485,7 +485,7 @@ _PATCHES = {
             'E': 'Ortağın kişisel alacaklısı şirketin malvarlığına doğrudan haciz koydurabilir',
         },
         'D',
-        'TTK md. 254 uyarınca ortağın kişisel alacaklısı, borçlu ortağa ait kâr payından ve tasfiye sonunda ona düşecek paydan alacağını alabilir; şirket malvarlığına başvuramaz.',
+        'TTK md. 133 uyarınca ortağın kişisel alacaklısı, borçlu ortağa ait kâr payından ve tasfiye sonunda ona düşecek paydan alacağını alabilir; şirket malvarlığına başvuramaz.',
     ),
     # düzey 2
     '0034': patch(
@@ -511,7 +511,7 @@ _PATCHES = {
             'E': 'Sonradan katılan ortağın sorumluluğu katılma anından başladığından, bu tarihten önce doğmuş şirket borçlarından sorumlu tutulamaz',
         },
         'D',
-        'TTK md. 238 uyarınca şirkete sonradan giren ortak, girmesinden önce doğmuş borçlardan da diğer ortaklarla birlikte sorumludur; ayrılan ortağın sorumluluğu ise zamanaşımı süresiyle sınırlı olarak devam eder.',
+        'TTK md. 236/2 uyarınca şirkete sonradan giren ortak, girmesinden önce doğmuş borçlardan da diğer ortaklarla birlikte sorumludur; ayrılan ortağın sorumluluğu ise md. 264 uyarınca ayrılmanın ilanından itibaren üç yıllık zamanaşımı süresince devam eder.',
     ),
     # düzey 2
     '0036': patch(
@@ -583,7 +583,7 @@ _PATCHES = {
         'Bir adi komandit şirkette komanditer ortak, sermaye koyduğu gerekçesiyle şirketin günlük işlerini yürütmek ve üçüncü kişilerle sözleşme imzalamak istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
             'A': 'Komanditer ortak yıl sonunda bilanço ve gelir tablosunu inceleyebilir',
-            'B': 'Önemli sebeplerin varlığında mahkeme defterlerin incelenmesine izin verebilir',
+            'B': 'Haklı sebeplerin varlığında mahkeme defterlerin incelenmesine izin verebilir',
             'C': 'Şirketin yönetimi ve temsili komandite ortaklara aittir',
             'D': 'Komanditer ortak sermaye koyduğundan yönetim ve temsil yetkisini kullanabilir',
             'E': 'Komanditer ortak şirketin işleri hakkında bilgi alabilir',
@@ -602,7 +602,7 @@ _PATCHES = {
             'E': 'Unvanda ad bulunması yalnızca ticaret sicili bakımından bir düzeltme sebebi sayılır',
         },
         'C',
-        'TTK md. 311 uyarınca adının şirket unvanında yer almasına izin veren komanditer ortak, üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
+        'TTK md. 320 uyarınca adının şirket unvanında yer almasına izin veren komanditer ortak, üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
     ),
     # düzey 2
     '0043': patch(
@@ -615,7 +615,7 @@ _PATCHES = {
             'E': 'Komanditer ortak rekabet yasağına tabi olup aykırılık şirketin feshini gerektiren bir sebeptir',
         },
         'C',
-        'TTK md. 313 uyarınca şirket sözleşmesinde aksi öngörülmedikçe komanditer ortak rekabet yasağına tabi değildir; yasak komandite ortaklar bakımından uygulanır.',
+        'TTK md. 311 uyarınca kollektif ortaklara ilişkin rekabet yasağı (md. 230) komanditerler hakkında uygulanmaz; şirket sözleşmesinde aksi öngörülmedikçe komanditer bu işi yapabilir. Ancak rakip bir işletme açarsa şirketin belge ve defterlerini inceleme hakkını kaybeder.',
     ),
     # düzey 2
     '0044': patch(
@@ -641,7 +641,7 @@ _PATCHES = {
             'E': 'Komanditer ortak da şirket alacaklılarına karşı, sermayesini ödemiş olup olmadığına bakılmaksızın borçların tamamından sorumludur',
         },
         'C',
-        'TTK md. 304 uyarınca komanditer ortağın sorumluluğu koymayı taahhüt ettiği sermaye ile sınırlıdır; ödenmemiş kısım oranında alacaklılara karşı sorumluluğu sürer.',
+        'TTK md. 319 ve 322 uyarınca komanditer ortağın sorumluluğu koymayı taahhüt ettiği sermaye ile sınırlıdır; ödenmemiş kısım oranında alacaklılara karşı sorumluluğu sürer.',
     ),
     # düzey 2
     '0046': patch(
@@ -662,25 +662,25 @@ _PATCHES = {
         {
             'A': 'İnceleme talebi ancak komandite ortakların çoğunluğunun onayıyla kabul edilebilir',
             'B': 'Komanditer ortak yönetim yetkisi taşımadığından defterleri inceleme yönünde herhangi bir talep hakkına da sahip değildir',
-            'C': 'Komanditer ortak yıl sonu tablolarını inceleyebilir; önemli sebep varsa mahkeme defterlerin incelenmesine izin verebilir',
+            'C': 'Komanditer ortak yıl sonu tablolarını inceleyebilir; haklı sebep varsa mahkeme defterlerin incelenmesine izin verebilir',
             'D': 'Komanditer ortak inceleme hakkını yalnızca yıl sonu bilançosunun onayı sırasında kullanır',
             'E': 'Komanditer ortak defterleri her zaman ve izne bağlı olmaksızın serbestçe inceleyebilir',
         },
         'C',
-        'TTK md. 310 uyarınca komanditer ortak yıl sonunda bilanço ve gelir tablosunu inceleyebilir; önemli sebeplerin varlığında mahkeme, defterlerin ve belgelerin incelenmesine izin verebilir.',
+        'TTK md. 310 uyarınca komanditer ortak yıl sonunda bilanço ve gelir tablosunu inceleyebilir; haklı sebeplerin varlığında mahkeme, defterlerin ve belgelerin incelenmesine izin verebilir.',
     ),
     # düzey 3
     '0048': patch(
-        'Bir adi komandit şirkette komanditer ortak, komandite ortağın verdiği açık yetkiye dayanarak bir işlemde şirketi temsil etmiş ve bu sıfatı üçüncü kişiye bildirmiştir. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Bir adi komandit şirkette ticari vekil olarak atanmamış olan komanditer ortak, bu yönde herhangi bir sıfat bildirmeksizin şirket adına iyiniyetli bir üçüncü kişiyle sözleşme imzalamıştır. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
             'A': 'Komanditer ortak temsil yetkisini kullanamayacağından işlem yalnızca kendisini bağlar',
-            'B': 'İşlem yetkiye dayandığından geçersiz sayılır ve üçüncü kişi şirkete başvuramaz',
-            'C': 'İşlemden doğan sorumluluk yalnızca yetkiyi veren komandite ortağa yüklenir',
-            'D': 'Komanditer ortağın yetkiye dayanarak işlem yapması sorumluluğunu genişletmeyen bir davranıştır',
-            'E': 'Komanditer ortak, temsilci sıfatıyla yaptığı bu işlemden sınırsız sorumlu olur',
+            'B': 'İşlem yetkisiz yapıldığından geçersiz sayılır ve üçüncü kişi hiçbir ortağa başvuramaz',
+            'C': 'İşlemden doğan sorumluluk yalnızca şirketi yöneten komandite ortaklara yüklenir',
+            'D': 'Komanditerin sorumluluğu bu işlemde de taahhüt ettiği sermaye tutarıyla sınırlı kalır',
+            'E': 'Komanditer ortak, bu işlem nedeniyle iyiniyetli üçüncü kişiye karşı komandite gibi sorumlu olur',
         },
         'E',
-        'TTK md. 312 uyarınca komanditer ortak, ticari mümessil veya vekil sıfatıyla değil de şirket adına işlem yaparsa üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
+        'TTK md. 318/2 uyarınca komanditer ortak sıfatıyla şirketi temsile yetkili değildir. md. 321/1 uyarınca ticari mümessil, ticari vekil veya seyyar tacir memuru olarak hareket ettiğini açıkça bildirmeksizin şirket adına işlem yapan komanditer, bu işlemler nedeniyle iyiniyetli üçüncü kişilere karşı komandite ortak gibi sorumlu olur.',
     ),
     # düzey 3
     '0049': patch(
@@ -745,7 +745,7 @@ _PATCHES = {
             'E': 'I, II ve III',
         },
         'D',
-        'TTK md. 304 ve 311 uyarınca II ve III doğrudur; md. 309 uyarınca şirketin yönetimi komandite ortaklara ait olduğundan I yanlıştır.',
+        'TTK md. 304/3 ve 320 uyarınca II ve III doğrudur; md. 309 uyarınca şirketin yönetimi komandite ortaklara ait olduğundan I yanlıştır.',
     ),
     # düzey 3
     '0054': patch(
@@ -757,8 +757,8 @@ _PATCHES = {
             'D': 'Yalnız I',
             'E': 'Yalnız III',
         },
-        'E',
-        "TTK md. 595 uyarınca devir sözleşmesinde imzaların noterce onaylanması da gerektiğinden I yanlıştır. Devir kural olarak genel kurulun onayına bağlıdır ve genel kurul sebep göstermeksizin reddedebilir; ancak II'de yer alan kural şirket sözleşmesiyle kaldırılabildiği hâlde bu şirkette devir yasaklanmış olduğundan yalnız III doğrudur.",
+        'C',
+        'TTK md. 595/1 uyarınca devir sözleşmesi yazılı yapılır ve imzalar noterce onanır; adi yazılı şekil yeterli olmadığından I yanlıştır. md. 595/2-3 uyarınca şirket sözleşmesinde aksi öngörülmedikçe devir genel kurulun onayına bağlıdır ve genel kurul sebep göstermeksizin onayı reddedebilir; II ve III doğrudur.',
     ),
     # düzey 3
     '0055': patch(
@@ -784,7 +784,7 @@ _PATCHES = {
             'E': 'I ve III',
         },
         'B',
-        'TTK md. 236 ve 238 uyarınca II ve III doğrudur; ortakların sorumluluğu sınırsız olduğundan I yanlıştır.',
+        'TTK md. 236 uyarınca II ve III doğrudur; ortakların sorumluluğu sınırsız olduğundan I yanlıştır.',
     ),
     # düzey 3
     '0057': patch(

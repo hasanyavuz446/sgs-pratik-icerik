@@ -616,7 +616,7 @@ _PATCHES = {
             'E': 'Komanditer ortak tüzel kişi olabilir',
         },
         'A',
-        'TTK md. 304: komandit şirkette şirket alacaklılarına karşı ortaklardan bir veya birkaçının sorumluluğu sınırlandırılmamış (KOMANDİTE), diğerlerininki belirli bir sermaye ile sınırlandırılmıştır (KOMANDİTER). md. 305: komandite ortakların GERÇEK KİŞİ olması gerekir; komanditer ortak tüzel kişi de olabilir.',
+        'TTK md. 304: komandit şirkette şirket alacaklılarına karşı ortaklardan bir veya birkaçının sorumluluğu sınırlandırılmamış (KOMANDİTE), diğerlerininki belirli bir sermaye ile sınırlandırılmıştır (KOMANDİTER). md. 304/3: komandite ortakların GERÇEK KİŞİ olması gerekir; komanditer ortak tüzel kişi de olabilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -644,7 +644,7 @@ _PATCHES = {
             'E': 'Tek zorunlu organ yönetim kuruludur',
         },
         'C',
-        'TTK md. 364 vd. ve 407 vd.: anonim şirketin zorunlu organları GENEL KURUL ve YÖNETİM KURULUDUR. 6102 sayılı TTK ile denetçi organ olmaktan çıkarılmış, bağımsız denetim ayrı bir rejime bağlanmıştır. Müdürler kurulu ise limited şirkete özgüdür.',
+        'TTK md. 359 ve 407 vd.: anonim şirketin zorunlu organları GENEL KURUL ve YÖNETİM KURULUDUR. 6102 sayılı TTK ile denetçi organ olmaktan çıkarılmış, bağımsız denetim ayrı bir rejime bağlanmıştır. Müdürler kurulu ise limited şirkete özgüdür.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 3
@@ -713,7 +713,7 @@ _PATCHES = {
             'E': 'Şirket başka bir karara gerek olmadan sona erer ve tasfiyeye girer',
         },
         'D',
-        'TTK md. 574 ve 584: limited şirket tek ortakla kurulabilir ve varlığını sürdürebilir. Ortak sayısı bire düşerse bu durum, sonucu doğuran işlem tarihinden itibaren müdürlere yazıyla bildirilir ve müdürler tarafından ticaret siciline TESCİL ve İLAN ettirilir.',
+        'TTK md. 574: limited şirket tek ortakla kurulabilir ve varlığını sürdürebilir. Ortak sayısı bire düşerse bu durum, sonucu doğuran işlem tarihinden itibaren müdürlere yazıyla bildirilir ve müdürler tarafından ticaret siciline TESCİL ve İLAN ettirilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -755,7 +755,7 @@ _PATCHES = {
             'E': 'I ve II',
         },
         'E',
-        'I doğrudur (TTK md. 364, 407 vd.). II doğrudur (md. 408). III YANLIŞTIR: md. 359 uyarınca yönetim kurulu üyesinin pay sahibi olması ŞART DEĞİLDİR; tüzel kişiler de üye seçilebilir.',
+        'I doğrudur (TTK md. 359, 407 vd.). II doğrudur (md. 408). III YANLIŞTIR: md. 359 uyarınca yönetim kurulu üyesinin pay sahibi olması ŞART DEĞİLDİR; tüzel kişiler de üye seçilebilir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 3

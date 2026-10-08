@@ -88,7 +88,7 @@ _PATCHES = {
             'E': 'Kabul eden muhatap poliçenin asıl borçlusu hâline gelir',
         },
         'E',
-        'TTK md. 691: muhatap kabul ile poliçe bedelini vadesinde ödemek yükümlülüğü altına girer; poliçenin ASIL BORÇLUSU olur. Düzenleyenin sorumluluğu sona ermez; kabul etmeme ya da ödememe hâlinde müracaat hakkı için protesto gerekir.',
+        'TTK md. 698: muhatap kabul ile poliçe bedelini vadesinde ödemek yükümlülüğü altına girer; poliçenin ASIL BORÇLUSU olur. Düzenleyenin sorumluluğu sona ermez; kabul etmeme ya da ödememe hâlinde müracaat hakkı için protesto gerekir.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 3
@@ -116,7 +116,7 @@ _PATCHES = {
             'E': 'Protesto çekilmesi gerekmez; hamil müracaat hakkını doğrudan bütün cirantalara karşı kullanabilir',
         },
         'A',
-        "TTK md. 714 ve 725: kabul etmeme veya ödememe, PROTESTO adı verilen resmî bir belgeyle belirlenir; hamilin cirantalara, düzenleyene ve diğer borçlulara müracaat hakkı protestonun çekilmesine bağlıdır. 'PROTESTOSUZ' kaydı bu külfeti kaldırır. Bono düzenleyeni asıl borçlu olduğundan ona başvuru için protesto gerekmez.",
+        "TTK md. 713 ve 714: kabul etmeme veya ödememe, PROTESTO adı verilen resmî bir belgeyle belirlenir; hamilin cirantalara, düzenleyene ve diğer borçlulara müracaat hakkı protestonun çekilmesine bağlıdır. 'PROTESTOSUZ' kaydı bu külfeti kaldırır. Bono düzenleyeni asıl borçlu olduğundan ona başvuru için protesto gerekmez.",
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -242,7 +242,7 @@ _PATCHES = {
             'E': 'Kabul etmeme protestosu çekerek müracaat hakkını kullanmak',
         },
         'E',
-        'TTK md. 714 ve 716: muhatap kabulden kaçınırsa hamil KABUL ETMEME PROTESTOSU çekerek vadeden önce müracaat hakkını kullanabilir; muhatabı kabule zorlama imkânı yoktur.',
+        'TTK md. 713 ve 714: muhatap kabulden kaçınırsa hamil KABUL ETMEME PROTESTOSU çekerek vadeden önce müracaat hakkını kullanabilir; muhatabı kabule zorlama imkânı yoktur.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 1
@@ -476,7 +476,7 @@ _PATCHES = {
             'E': 'Kabulle birlikte düzenleyenin sorumluluğu sona erer',
         },
         'E',
-        'TTK md. 691 ve 725: muhatap kabul ile asıl borçlu olur; ancak DÜZENLEYENİN sorumluluğu SONA ERMEZ, müracaat borçlusu olarak devam eder.',
+        'TTK md. 698 ve 724: muhatap kabul ile asıl borçlu olur; ancak DÜZENLEYENİN sorumluluğu SONA ERMEZ, müracaat borçlusu olarak devam eder.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 0
@@ -518,7 +518,7 @@ _PATCHES = {
             'E': 'Düzenleyenin sorumluluğu vadeyle sona erer',
         },
         'B',
-        'TTK md. 778/3: bono düzenleyeni poliçeyi KABUL EDEN MUHATAP gibi sorumludur; asıl borçlu olduğundan ona başvurmak için protesto çekilmesi gerekmez.',
+        'TTK md. 779: bono düzenleyeni poliçeyi KABUL EDEN MUHATAP gibi sorumludur; asıl borçlu olduğundan ona başvurmak için protesto çekilmesi gerekmez.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 1
@@ -559,7 +559,7 @@ _PATCHES = {
             'E': 'II ve IV',
         },
         'E',
-        'II YANLIŞ: protesto geçerlilik şartı değil, müracaat hakkının korunması için gereken bir işlemdir. IV YANLIŞ: bono düzenleyeni asıl borçludur, ona başvuru için protesto gerekmez (TTK md. 778/3). I (md. 749) ve III (md. 732) doğrudur.',
+        'II YANLIŞ: protesto geçerlilik şartı değil, müracaat hakkının korunması için gereken bir işlemdir. IV YANLIŞ: bono düzenleyeni asıl borçludur, ona başvuru için protesto gerekmez (TTK md. 779). I (md. 749) ve III (md. 732) doğrudur.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
@@ -629,7 +629,7 @@ _PATCHES = {
             'E': 'Bono düzenleyeni, poliçeyi kabul eden muhatap gibi sorumludur',
         },
         'E',
-        'TTK md. 778/3: bononun düzenleyeni, POLİÇEYİ KABUL EDEN MUHATAP GİBİ sorumludur. Yani asıl borçludur; sorumluluğu için protesto çekilmesi gerekmez ve tüm hamillere karşı devam eder.',
+        'TTK md. 779: bononun düzenleyeni, POLİÇEYİ KABUL EDEN MUHATAP GİBİ sorumludur. Yani asıl borçludur; sorumluluğu için protesto çekilmesi gerekmez ve tüm hamillere karşı devam eder.',
         '6102 sayili Turk Ticaret Kanunu',
     ),
     # düzey 2
