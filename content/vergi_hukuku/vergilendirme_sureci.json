@@ -317,7 +317,7 @@
       "B": "Tarh zamanaşımına uğrayan bir vergi artık tarh ve tebliğ edilemez",
       "C": "Tarh zamanaşımı ve tahsil zamanaşımı aynı anda işlemeye başlar; her ikisi de vergi alacağının doğduğu takvim yılını izleyen yılın başından itibaren hesaplanır",
       "D": "Tahsil zamanaşımı, alacağın vadesinin rastladığı takvim yılını takip eden yıl başından itibaren beş yıldır",
-      "E": "Tarh zamanaşımı ve tahsil zamanaşımı süreleri farklı uzunluktadır; tarh zamanaşımı beş, tahsil zamanaşımı on yıl olduğundan iki alacak için ayrı ayrı hesap yapılması gerekir"
+      "E": "Tarh zamanaşımı da tahsil zamanaşımı da beş yıldır; ancak başlangıç anları farklı olduğundan iki alacak için süre hesabının ayrı ayrı yapılması gerekir"
     },
     "answer": "C",
     "solution": "**VUK m. 114** tarh zamanaşımını alacağın **doğduğu** yılı, **6183 m. 102** ise tahsil zamanaşımını alacağın **vadesinin rastladığı** yılı izleyen yıl başından başlatır. İki sürenin başlangıcı farklı olduğundan aynı anda işlemeye başladıklarını söyleyen ifade yanlıştır.",
@@ -424,7 +424,7 @@
     "stem": "Vadesinde ödenmeyen bir amme alacağı için tahsil dairesi ödeme emri düzenlemiştir. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
       "A": "Ödeme müddeti içinde ödenmeyen amme alacağı tahsil dairesince cebren tahsil olunur",
-      "B": "Ödeme emri tebliğ edilen borçluya borcunu ödemesi için altmış günlük bir süre tanınır; bu süre dolmadan cebri takip işlemlerine başlanamayacağından haciz uygulanamaz",
+      "B": "Ödeme emrinde, borç süresinde ödenmez veya mal bildiriminde bulunulmazsa cebren tahsil edileceği ve borçlunun hapisle tazyik olunabileceği belirtilir",
       "C": "Ödeme emrinde borcun ödenmesi veya mal bildiriminde bulunulması istenir",
       "D": "Ödeme emri tebliğ edilen borçluya, borcunu ödemesi için otuz günlük bir süre tanınır",
       "E": "Ödeme emrine karşı tebliğ tarihinden itibaren on beş gün içinde dava açılabilir"
@@ -467,7 +467,7 @@
     "konu": "vergilendirme_sureci",
     "stem": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürecektir. Borçlu tahsil dairesine başvurmuştur. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
-      "A": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürse dahi tecil istenemez; kanun ödeme güçlüğünü bir erteleme sebebi saymadığından başvuru reddedilir",
+      "A": "Amme borcunun vadesinde ödenmesi borçluyu çok zor duruma düşürecekse borçlu yazıyla tecil isteyebilir; tecil faiz alınarak ve kanuni azami süreyi aşmamak üzere yapılır",
       "B": "Tecil kural olarak teminat karşılığında yapılır",
       "C": "Tecil kararı verilmesi hâlinde amme alacağı sona erer ve borçlunun ödeme yükümlülüğü ortadan kalkar",
       "D": "Tecil, borcun ödenme zamanını erteleyen bir işlemdir",
@@ -557,7 +557,7 @@
     "options": {
       "A": "Mükellefler beyan ettikleri matrahlara karşı serbestçe dava açabilirler; beyan mükellefi bağlamadığından bir sınırlama yoktur",
       "B": "Dava açılabilmesi için verginin tarh edilmiş veya cezanın kesilmiş olması gerekir",
-      "C": "Beyana karşı dava ancak verginin ödenmesinden sonra açılabilir; ödeme yapılmadığı sürece dava şartı gerçekleşmediğinden mahkeme işin esasına giremez ve istem usulden reddedilir",
+      "C": "Beyana karşı dava yasağı mükellefin kendi iradesiyle bildirdiği matraha dayanır; ihtirazi kayıtla verilen beyannameler üzerine tarh edilen vergilere karşı ise dava açılabilir",
       "D": "Vergi hatalarına ilişkin hükümler beyana karşı dava yasağının istisnasını oluşturur",
       "E": "Mükellefler ve kendilerine ceza kesilenler tarh edilen vergilere karşı dava açabilirler"
     },
@@ -734,7 +734,7 @@
       "A": "Dava açılması verginin tarhını ortadan kaldırır; idarenin aynı dönem için yeniden tarhiyat yapması gerekir",
       "B": "Mükellefler tarh edilen vergilere karşı vergi mahkemesinde dava açabilirler",
       "C": "Tahakkuk, tarh ve tebliğ edilen verginin ödenmesi gereken safhaya gelmesidir",
-      "D": "İhbarnameye bağlı tarhiyatta süresinde açılan dava tahakkuku ertelemez; vergi tebliğ anında ödenmesi gereken safhaya geldiğinden idare yargılama sürerken cebri takibe geçebilir",
+      "D": "İhbarnameye bağlı tarhiyatta süresinde açılan dava tahakkuku erteler; dava konusu edilen kısım için tahsil işlemleri durur ve vergi yargı kararına göre tahakkuk eder",
       "E": "Dava açma süresi dava açılmaksızın geçerse vergi tahakkuk eder"
     },
     "answer": "A",
@@ -952,7 +952,7 @@
     "stem": "Bir mükellefin bilinen adresleri arasında hem işe başlamada bildirdiği işyeri adresi hem de adres kayıt sistemindeki yerleşim yeri adresi bulunmaktadır. Buna göre aşağıdaki ifadelerden hangisi yanlıştır?",
     "options": {
       "A": "Adres kayıt sistemindeki yerleşim yeri adresi bilinen adreslerdendir",
-      "B": "Mükellef tarafından işe başlamada bildirilen işyeri adresleri bilinen adres sayılmaz; bu adrese yapılan tebligat usulsüz olduğundan süreler işlemeye başlamaz ve tarhiyat askıda kalır",
+      "B": "Mükellefin işe başlamada bildirdiği işyeri adresi de bilinen adreslerdendir; bu tür adreslerden tebligat yapacak makama en son bildirilmiş olanı dikkate alınır",
       "C": "Bilinen adres kavramı kanunda tanımlanmadığından tebligatın hangi adrese yapılacağı tümüyle idarenin takdirindedir",
       "D": "Tebliğ, kanunda sayılan bilinen adreslere yapılır",
       "E": "Bilinen adreste tebliğ yapılamayan hâllerde ilan yoluna başvurulabilir"
