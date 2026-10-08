@@ -46,7 +46,7 @@ _PATCHES = {
             'E': 'Kuruluş ve işleyişleri kanunla düzenlenmiştir',
         },
         'B',
-        '3568 md. 14 ve 29: odalar ile Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği, tüzel kişiliğe sahip KAMU KURUMU NİTELİĞİNDE MESLEK KURULUŞLARIDIR (Anayasa md. 135). Merkezî idarenin hiyerarşik alt birimi değildirler; idari ve mali özerklikleri vardır. İşlemleri idari işlem olduğundan idari yargı denetimine tabidir.',
+        '3568 md. 14 ve 28: odalar ile Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği, tüzel kişiliğe sahip KAMU KURUMU NİTELİĞİNDE MESLEK KURULUŞLARIDIR (Anayasa md. 135). Merkezî idarenin hiyerarşik alt birimi değildirler; idari ve mali özerklikleri vardır. İşlemleri idari işlem olduğundan idari yargı denetimine tabidir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -73,7 +73,7 @@ _PATCHES = {
             'E': 'Disiplin kurulu odanın hesaplarını denetlemekle görevlidir',
         },
         'C',
-        '3568 md. 18 ve 21: disiplin kurulu, meslek mensupları hakkında disiplin kovuşturması yapmak ve ceza vermekle görevlidir. Tüm oda organları GENEL KURULCA seçilir; hesap denetimi denetleme kuruluna, icra ise yönetim kuruluna aittir.',
+        '3568 md. 17, 25 ve 26: disiplin kurulu, meslek mensupları hakkında disiplin kovuşturması yapmak ve ceza vermekle görevlidir. Tüm oda organları GENEL KURULCA seçilir; hesap denetimi denetleme kuruluna, icra ise yönetim kuruluna aittir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 1
@@ -114,7 +114,7 @@ _PATCHES = {
             'E': 'Meslek mensubu doğrudan idare mahkemesinde iptal davası açar; meslek örgütü içinde bir itiraz yolu bulunmaz',
         },
         'A',
-        '3568 md. 48 ve Disiplin Yönetmeliği: oda disiplin kurulu kararlarına karşı BİRLİK DİSİPLİN KURULUNA itiraz edilir. İtiraz üzerine verilen kararla ceza kesinleşir; kesinleşen disiplin cezası bir idari işlem olduğundan 2577 sayılı İYUK uyarınca İDARİ YARGIDA iptal davasına konu edilebilir.',
+        '3568 md. 25: oda disiplin kurulu kararlarına karşı tebliğden itibaren otuz gün içinde BİRLİK DİSİPLİN KURULUNA itiraz edilir. Birlik Disiplin Kurulunun itirazı reddeden kararı Maliye Bakanlığının tasdiki ile kesinleşir (md. 38); kesinleşen disiplin cezası bir idari işlem olduğundan 2577 sayılı İYUK uyarınca İDARİ YARGIDA iptal davasına konu edilebilir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -128,7 +128,7 @@ _PATCHES = {
             'E': 'Birlik denetleme kurulu',
         },
         'D',
-        "3568 md. 30: Birliğin organları BİRLİK GENEL KURULU, BİRLİK YÖNETİM KURULU, BİRLİK DİSİPLİN KURULU ve BİRLİK DENETLEME KURULU'dur. Oda genel kurulu ise ODA düzeyindeki bir organdır ve Birliğin organı değildir.",
+        "3568 md. 31: Birliğin organları BİRLİK GENEL KURULU, BİRLİK YÖNETİM KURULU, BİRLİK DİSİPLİN KURULU ve BİRLİK DENETLEME KURULU'dur. Oda genel kurulu ise ODA düzeyindeki bir organdır ve Birliğin organı değildir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -142,7 +142,7 @@ _PATCHES = {
             'E': 'Meslek mensubunun iş elde etmek amacıyla reklam yapması',
         },
         'B',
-        "3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA açıkça izin verir; bu tek başına disiplin suçu değildir (hizmet verilen işletmeye ortaklık ise ayrı bir tarafsızlık sorunudur). Diğer seçenekler md. 46, 44, 43 ve 47'ye aykırılık oluşturur ve md. 48 uyarınca disiplin cezası gerektirir.",
+        "Çalışma Usul ve Esasları Yönetmeliği md. 43 limited ve anonim şirketlere ORTAK olmayı yasaklamaz; bu tek başına disiplin suçu değildir (ortağı olunan firmanın işlerine bakma yasağı ise yalnız yeminli mali müşavirler içindir). Diğer seçenekler md. 46, 45, 43 ve Haksız Rekabet Yönetmeliğine aykırılık oluşturur ve md. 48 uyarınca disiplin cezası gerektirir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -156,7 +156,7 @@ _PATCHES = {
             'E': 'Meslek mensuplarının odaya karşı herhangi bir mali yükümlülüğü bulunmaz',
         },
         'E',
-        '3568 md. 24 ve ilgili düzenlemeler: meslek mensupları odaya GİRİŞ AİDATI ve YILLIK AİDAT ödemekle yükümlüdür. Aidat, odanın temel gelir kaynaklarındandır; ödenmemesi takip ve disiplin sonuçları doğurur.',
+        '3568 md. 16 ve 19/h: meslek mensupları odaya GİRİŞ ÜCRETİ ve YILLIK AİDAT ödemekle yükümlüdür. Aidat, odanın temel gelir kaynaklarındandır; ödenmemesi takip ve disiplin sonuçları doğurur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -212,7 +212,7 @@ _PATCHES = {
             'E': 'Önceki ceza, yeni fiilde ağırlaştırıcı olarak dikkate alınır',
         },
         'A',
-        'Disiplin Yönetmeliği: disiplin cezası verilmesine karar verilen bir fiilin tekrarlanması hâlinde bir derece ağır ceza uygulanır. Tekerrür otomatik olarak en ağır cezayı doğurmaz ve unvana göre değişmez; önceki ceza ortadan kalkmaz, ağırlaştırıcı olarak dikkate alınır.',
+        '3568 md. 48: üç yıllık bir dönem içinde iki veya daha fazla disiplin cezasını gerektiren davranışta bulunan meslek mensubuna her yeni fiili için bir öncekinden daha ağır ceza uygulanabilir; disiplin kurulları bir derece ağır ya da hafif ceza uygulanmasına karar verebilir. Tekerrür otomatik olarak en ağır cezayı doğurmaz ve unvana göre değişmez; önceki ceza ortadan kalkmaz, ağırlaştırıcı olarak dikkate alınır.',
     ),
     # düzey 1
     '0014': patch(
@@ -252,7 +252,7 @@ _PATCHES = {
             'E': 'Meslek mensuplarının odaya kayıtta ödediği giriş aidatı',
         },
         'A',
-        '3568 md. 24: oda gelirleri giriş ve yıllık aidatlar, belge ve yayın gelirleri, eğitim faaliyeti gelirleri, bağış ve yardımlar ile faiz gelirlerinden oluşur. Meslek mensubunun müşterisinden aldığı HİZMET ÜCRETİ kendi mesleki kazancıdır; odanın geliri değildir.',
+        '3568 md. 16: oda gelirleri giriş ücreti, yıllık üye aidatları, yardım ve bağışlar ile mesleki eğitime yönelik kurs ve staj ücretleri ve diğer çeşitli gelirlerden oluşur. Meslek mensubunun müşterisinden aldığı HİZMET ÜCRETİ kendi mesleki kazancıdır; odanın geliri değildir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -293,7 +293,7 @@ _PATCHES = {
             'E': 'Meslek kuruluşları, kuruluş amaçları dışında da faaliyet gösterebilir',
         },
         'E',
-        'Anayasa md. 135: kamu kurumu niteliği taşıyan meslek kuruluşları KURULUŞ AMAÇLARI DIŞINDA FAALİYET GÖSTEREMEZ. Diğer seçenekler doğrudur: kuruluş niteliği (3568 md. 14, 29), organların seçimle oluşması (md. 18-22), mecburi meslek kararlarının bağlayıcılığı (md. 33) ve idari yargı denetimi (Anayasa md. 125).',
+        'Anayasa md. 135: kamu kurumu niteliği taşıyan meslek kuruluşları KURULUŞ AMAÇLARI DIŞINDA FAALİYET GÖSTEREMEZ. Diğer seçenekler doğrudur: kuruluş niteliği (3568 md. 14, 28), organların seçimle oluşması (md. 19, 21, 25 ve 27), mecburi meslek kararlarının bağlayıcılığı (md. 33) ve idari yargı denetimi (Anayasa md. 125).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 1
@@ -307,7 +307,7 @@ _PATCHES = {
             'E': 'Meslek örgütü ilgili kurumlarla iş birliği yapabilir',
         },
         'D',
-        '3568 md. 29 ve 32: Birlik, mesleğin gelişmesi için mevzuat çalışmalarında görüş bildirir, öneri sunar ve ilgili kurumlarla iş birliği yapar. Kanun çıkarma yetkisi yasama organına aittir; meslek kuruluşu yalnızca katkı sağlar.',
+        '3568 md. 29: Birlik, mesleğin gelişmesi için mevzuat çalışmalarında görüş bildirir, öneri sunar ve ilgili kurumlarla iş birliği yapar. Kanun çıkarma yetkisi yasama organına aittir; meslek kuruluşu yalnızca katkı sağlar.',
     ),
     # düzey 2
     '0021': patch(
@@ -320,7 +320,7 @@ _PATCHES = {
             'E': 'Ruhsat tek başına faaliyet için yeterlidir; kayıt isteğe bağlıdır',
         },
         'E',
-        '3568 md. 19: meslek mensupları, mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları odaya kaydolmak zorundadır. Kayıt isteğe bağlı değildir, faaliyete başlamadan önce yapılır ve unvana göre değişmez; meslek mensubu işyerinin bulunduğu bölgenin odasına kaydolur.',
+        '3568 md. 15: odalara üye olmayan meslek mensupları mesleki faaliyette bulunamaz; meslek mensupları, mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları odaya kaydolmak zorundadır. Kayıt isteğe bağlı değildir, faaliyete başlamadan önce yapılır ve unvana göre değişmez; meslek mensubu işyerinin bulunduğu bölgenin odasına kaydolur.',
     ),
     # düzey 1
     '0022': patch(
@@ -333,7 +333,7 @@ _PATCHES = {
             'E': 'Yönetim kurulu odanın en yetkili karar organı olup genel kurulun kararlarını değiştirebilir',
         },
         'C',
-        '3568 md. 18 ve 20: yönetim kurulu, genel kurulca seçilen ve odanın işlerini yürüten İCRA organıdır; odayı temsil eder ve genel kurul kararlarını uygular. Karar organı genel kurul, ceza organı disiplin kurulu, denetim organı ise denetleme kuruludur.',
+        '3568 md. 17, 21 ve 23: yönetim kurulu, genel kurulca seçilen ve odanın işlerini yürüten İCRA organıdır; odayı temsil eder ve genel kurul kararlarını uygular. Karar organı genel kurul, ceza organı disiplin kurulu, denetim organı ise denetleme kuruludur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -347,7 +347,7 @@ _PATCHES = {
             'E': 'Bakanlık, meslek örgütünün organlarının yerine geçerek karar alamaz',
         },
         'A',
-        '3568 md. 1 ve 49: mesleğin ve meslek örgütünün genel gözetim ve denetimi HAZİNE VE MALİYE BAKANLIĞINCA yürütülür. Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu ise BAĞIMSIZ DENETİM alanını düzenler; 3568 meslek örgütü üzerinde genel gözetim yetkisi yoktur. Gözetim yetkisi vesayet niteliğindedir ve organların yerine geçmeye izin vermez.',
+        '3568 md. 41: mesleğin ve meslek örgütünün genel gözetim ve denetimi HAZİNE VE MALİYE BAKANLIĞINCA yürütülür. Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu ise BAĞIMSIZ DENETİM alanını düzenler; 3568 meslek örgütü üzerinde genel gözetim yetkisi yoktur. Gözetim yetkisi vesayet niteliğindedir ve organların yerine geçmeye izin vermez.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -375,7 +375,7 @@ _PATCHES = {
             'E': 'II ve III',
         },
         'D',
-        'I doğrudur (3568 md. 14, 29; Anayasa md. 135). II doğrudur (md. 19). III YANLIŞTIR: odanın en yetkili karar organı GENEL KURULDUR; yönetim kurulu genel kurul kararlarını uygulayan icra organıdır (md. 18-20).',
+        'I doğrudur (3568 md. 14, 28; Anayasa md. 135). II doğrudur (md. 15). III YANLIŞTIR: odanın en yetkili karar organı GENEL KURULDUR; yönetim kurulu genel kurul kararlarını uygulayan icra organıdır (md. 18, 21 ve 23).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -431,7 +431,7 @@ _PATCHES = {
             'E': 'Kurul TÜRMOB bünyesinde yer alır',
         },
         'C',
-        'Yüksek Danışma Kurulu, mesleğe ve meslek örgütüne ilişkin konularda görüş ve öneri oluşturmakla görevli danışma organıdır; bağlayıcı karar almaz. Birliğin en yetkili karar organı Birlik Genel Kuruludur (md. 30).',
+        'Yüksek Danışma Kurulu, mesleğe ve meslek örgütüne ilişkin konularda görüş ve öneri oluşturmakla görevli danışma organıdır; bağlayıcı karar almaz. Birliğin en yetkili karar organı Birlik Genel Kuruludur (md. 31-33).',
     ),
     # düzey 3
     '0030': patch(
@@ -500,7 +500,7 @@ _PATCHES = {
             'E': 'Organ üyeleri idare mahkemesi kararıyla belirlenir',
         },
         'A',
-        "3568 md. 18-22 ve 30-33: oda ve Birlik organları, ilgili GENEL KURULLARDA yapılan SEÇİMLE göreve gelir. Kamu kurumu niteliği taşıyan meslek kuruluşlarında organların seçimle oluşması Anayasa md. 135'in gereğidir; atama ya da kıdem esası uygulanmaz.",
+        "3568 md. 19, 21, 25, 27 ve 31-33: oda ve Birlik organları, ilgili GENEL KURULLARDA yapılan SEÇİMLE göreve gelir. Kamu kurumu niteliği taşıyan meslek kuruluşlarında organların seçimle oluşması Anayasa md. 135'in gereğidir; atama ya da kıdem esası uygulanmaz.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -541,7 +541,7 @@ _PATCHES = {
             'E': 'Yönetim kurulunun çalışma raporunu inceleyerek ibra etmek',
         },
         'A',
-        '3568 md. 19: genel kurul organları seçer, bütçe ve kesin hesabı karara bağlar, yönetim kurulunu ibra eder ve taşınmaz işlemleri gibi konularda yetki verir. DİSİPLİN CEZASI verme yetkisi ise md. 21 uyarınca DİSİPLİN KURULUNA aittir.',
+        '3568 md. 19: genel kurul organları seçer, bütçe ve kesin hesabı karara bağlar, yönetim kurulunu ibra eder ve taşınmaz işlemleri gibi konularda yetki verir. DİSİPLİN CEZASI verme yetkisi ise md. 26 uyarınca DİSİPLİN KURULUNA aittir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -595,7 +595,7 @@ _PATCHES = {
             'E': 'TOBB, meslek odalarının üst kuruluşu değildir',
         },
         'B',
-        '3568 md. 29: odaların üye olduğu üst kuruluş TÜRMOB (Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği) adıyla anılır. Hazine ve Maliye Bakanlığı üst kuruluş değil, meslek örgütünün genel gözetim ve denetiminden sorumlu bakanlıktır; Kamu Gözetimi Kurumu ise bağımsız denetim alanını düzenler.',
+        '3568 md. 28: odaların üye olduğu üst kuruluş TÜRMOB (Türkiye Serbest Muhasebeci Mali Müşavirler ve Yeminli Mali Müşavirler Odaları Birliği) adıyla anılır. Hazine ve Maliye Bakanlığı üst kuruluş değil, meslek örgütünün genel gözetim ve denetiminden sorumlu bakanlıktır; Kamu Gözetimi Kurumu ise bağımsız denetim alanını düzenler.',
     ),
     # düzey 2
     '0042': patch(
@@ -608,7 +608,7 @@ _PATCHES = {
             'E': 'Genel kurul',
         },
         'A',
-        "3568 md. 18: odanın organları GENEL KURUL, YÖNETİM KURULU, DİSİPLİN KURULU ve DENETLEME KURULU'dur. Yüksek danışma kurulu oda düzeyinde değil, Birlik bünyesinde öngörülmüş bir danışma organıdır.",
+        "3568 md. 17: odanın organları GENEL KURUL, YÖNETİM KURULU, DİSİPLİN KURULU ve DENETLEME KURULU'dur. Yüksek danışma kurulu oda düzeyinde değil, Birlik bünyesinde öngörülmüş bir danışma organıdır.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -664,7 +664,7 @@ _PATCHES = {
             'E': 'Disiplin cezasını ilk derecede oda yönetim kurulu verir',
         },
         'B',
-        '3568 md. 18, 21 ve 48: disiplin cezası verme yetkisi ilk derecede meslek mensubunun kayıtlı olduğu ODANIN DİSİPLİN KURULUNA aittir. Birlik disiplin kurulu itiraz mercii olarak görev yapar; yönetim kurulu soruşturmayı başlatır ancak ceza vermez.',
+        '3568 md. 25, 26 ve 48: disiplin cezası verme yetkisi ilk derecede meslek mensubunun kayıtlı olduğu ODANIN DİSİPLİN KURULUNA aittir. Birlik disiplin kurulu itiraz mercii olarak görev yapar; yönetim kurulu soruşturmayı başlatır ancak ceza vermez.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -678,7 +678,7 @@ _PATCHES = {
             'E': 'Denetleme kurulu odanın işlem ve hesaplarını denetler; disiplin cezası verme yetkisi bulunmaz',
         },
         'E',
-        '3568 md. 18 ve 22: denetleme kurulu, odanın işlemlerini ve hesaplarını denetleyerek genel kurula rapor sunar. Disiplin cezası verme yetkisi DİSİPLİN KURULUNA, icra yetkisi YÖNETİM KURULUNA aittir. Tüm oda organları genel kurulca seçilir.',
+        '3568 md. 17 ve 27: denetleme kurulu, odanın işlemlerini ve hesaplarını denetleyerek genel kurula rapor sunar. Disiplin cezası verme yetkisi DİSİPLİN KURULUNA, icra yetkisi YÖNETİM KURULUNA aittir. Tüm oda organları genel kurulca seçilir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -719,7 +719,7 @@ _PATCHES = {
             'E': 'I ve III',
         },
         'A',
-        "Üç ifade de doğrudur. 3568 md. 18-19 genel kurulu odanın en yetkili karar organı sayar, md. 29 odaların üst kuruluşu olarak TÜRMOB'u düzenler, md. 1 ve 49 ise mesleğin ve meslek örgütünün genel gözetim ve denetimini Bakanlığa bırakır.",
+        "Üç ifade de doğrudur. 3568 md. 18 genel kurulu odanın en yetkili karar organı sayar, md. 28 odaların üst kuruluşu olarak TÜRMOB'u düzenler, md. 41 ise mesleğin ve meslek örgütünün genel gözetim ve denetimini Bakanlığa bırakır.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -787,7 +787,7 @@ _PATCHES = {
             'E': 'I, II ve III',
         },
         'D',
-        'I doğrudur (3568 md. 18). II doğrudur (md. 18-22). III YANLIŞTIR: disiplin cezası verme yetkisi DİSİPLİN KURULUNA aittir; denetleme kurulu odanın işlem ve hesaplarını denetler (md. 21-22).',
+        'I doğrudur (3568 md. 17). II doğrudur (md. 19, 21, 25 ve 27). III YANLIŞTIR: disiplin cezası verme yetkisi DİSİPLİN KURULUNA aittir; denetleme kurulu odanın işlem ve hesaplarını denetler (md. 26-27).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -815,7 +815,7 @@ _PATCHES = {
             'E': 'İki unvan ayrı odalarda örgütlenir; her iki oda türü de aynı Birliğe üyedir',
         },
         'E',
-        "3568 md. 14 ve 29: serbest muhasebeci mali müşavirler odaları ile yeminli mali müşavirler odaları AYRI AYRI kurulur; ancak her iki oda türü de tek bir üst kuruluş olan TÜRMOB'a üyedir. Odalar arasında ast-üst ilişkisi yoktur ve her iki unvan için de odaya kayıt zorunludur.",
+        "3568 md. 14 ve 28: serbest muhasebeci mali müşavirler odaları ile yeminli mali müşavirler odaları AYRI AYRI kurulur; ancak her iki oda türü de tek bir üst kuruluş olan TÜRMOB'a üyedir. Odalar arasında ast-üst ilişkisi yoktur ve her iki unvan için de odaya kayıt zorunludur.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -843,7 +843,7 @@ _PATCHES = {
             'E': 'Genel kurula katılım oda yönetim kurulu üyelerine açıktır',
         },
         'C',
-        '3568 md. 19 ve ilgili yönetmelikler: genel kurula katılma ve oy kullanma hakkı odaya kayıtlı meslek mensuplarına aittir; ancak aidat gibi oda yükümlülüklerinin yerine getirilmesi koşulu getirilebilir. Aidat borcu ruhsatı kendiliğinden düşürmez; ödenmemesi disiplin ve takip sonuçları doğurur.',
+        '3568 md. 18 ve ilgili yönetmelikler: genel kurula katılma ve oy kullanma hakkı odaya kayıtlı meslek mensuplarına aittir; ancak aidat gibi oda yükümlülüklerinin yerine getirilmesi koşulu getirilebilir. Aidat borcu ruhsatı kendiliğinden düşürmez; ödenmemesi disiplin ve takip sonuçları doğurur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3

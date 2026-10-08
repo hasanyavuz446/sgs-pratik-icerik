@@ -46,7 +46,7 @@ _PATCHES = {
             'E': 'Defter tutma ve mali tablo düzenleme işleri serbest muhasebeci mali müşavirin görev alanındadır',
         },
         'B',
-        "3568 md. 2/A defter tutma ve tablo düzenlemeyi SMMM'nin, md. 2/B ile md. 12 tasdiki YMM'nin görev alanına verir. md. 45 YMM'nin defter tutmasını ve muhasebe bürosuna ortak olmasını yasaklar; bu nedenle üç iş tek bir YMM tarafından YÜRÜTÜLEMEZ. Aynı madde meslek mensuplarının anonim ve limited şirketlere ortak olmasına ise izin verir.",
+        "3568 md. 2/A defter tutma ve tablo düzenlemeyi SMMM'nin, md. 2/B ile md. 12 tasdiki YMM'nin görev alanına verir. md. 2/B YMM'nin defter tutmasını, muhasebe bürosu açmasını ve muhasebe bürolarına ortak olmasını yasaklar; bu nedenle üç iş tek bir YMM tarafından YÜRÜTÜLEMEZ. Meslek mensuplarının anonim ve limited şirketlere ortak olması ise serbesttir (Çalışma Usul ve Esasları Yönetmeliği md. 43).",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -101,7 +101,7 @@ _PATCHES = {
             'E': "YMM'ler muhasebe defterlerini tutamaz ve muhasebe bürosu açamaz",
         },
         'E',
-        "3568 md. 45: yeminli mali müşavirler, md. 2/A'nın (a) bendinde belirtilen işleri (defter tutmak vb.) YAPAMAZLAR; muhasebe bürosu açamaz ve muhasebe bürolarına ortak olamazlar. Yasak geneldir; tasdik ilişkisine ya da vergi inceleme yetkisine bağlı değildir.",
+        "3568 md. 2/B: yeminli mali müşavirler, md. 2/A'nın (a) bendinde belirtilen işleri (defter tutmak vb.) YAPAMAZLAR; muhasebe bürosu açamaz ve muhasebe bürolarına ortak olamazlar. Yasak geneldir; tasdik ilişkisine ya da vergi inceleme yetkisine bağlı değildir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -141,7 +141,7 @@ _PATCHES = {
             'E': 'Ticari vekil olarak çalışabilir; market işletme ve ortaklık ise yasaktır',
         },
         'B',
-        '3568 md. 45: meslek mensupları meslek icrası sırasında TİCARİ FAALİYETTE bulunamazlar ve ticari mümessil, ticari vekil ya da acente olarak çalışamazlar. Ancak sermayesi paylara bölünmüş komandit şirketlerde komanditer ortak, limited ve anonim şirketlerde ORTAK olabilirler. Sermaye ortaklığı ile bizzat ticaret yapmak farklı şeylerdir.',
+        '3568 md. 45 meslek mensuplarının TİCARİ FAALİYETTE bulunmasını yasaklar; Çalışma Usul ve Esasları Yönetmeliği md. 43 ayrıca ticari mümessil, ticari vekil ya da acente olarak çalışmayı yasaklar. Aynı hüküm yalnız adi ve kolektif şirketlerde ortaklığı ve komandit şirkette komandite ortaklığı yasakladığından meslek mensupları limited ve anonim şirketlerde ORTAK, komandit şirkette komanditer ortak olabilir. Sermaye ortaklığı ile bizzat ticaret yapmak farklı şeylerdir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -168,7 +168,7 @@ _PATCHES = {
             'E': 'Meslek mensupları işleri dolayısıyla öğrendikleri sırları ifşa edemez',
         },
         'C',
-        '3568 md. 44 iş elde etmek amacıyla REKLAM sayılabilecek faaliyetleri açıkça yasaklar. Diğer seçenekler doğrudur: md. 45 ticaret yasağını, md. 46 asgari ücret tarifesini, md. 47 haksız rekabet yasağını, md. 43 ise sır saklama yükümlülüğünü düzenler.',
+        '3568 md. 45 iş elde etmek amacıyla REKLAM sayılabilecek faaliyetleri açıkça yasaklar. Diğer seçenekler doğrudur: aynı madde ticaret yasağını, md. 46 asgari ücret tarifesini, Haksız Rekabet Yönetmeliği haksız rekabet yasağını, md. 43 ise sır saklama yükümlülüğünü düzenler.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -236,7 +236,7 @@ _PATCHES = {
             'E': 'Staj amacıyla üç yıl çalışmış olmak',
         },
         'C',
-        "3568 md. 5/A: SMMM'nin özel şartları ilgili dallarda öğrenim, üç yıllık staj ve sınavdır; bu şartları taşıyanlara ruhsat verilir ve mesleği yapabilmek için ruhsat gerekir. ON YILLIK çalışma şartı md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir koşuldur; SMMM için böyle bir şart yoktur.",
+        "3568 md. 5/A: SMMM'nin özel şartları ilgili dallarda öğrenim, en az üç yıl staj, SMMM sınavını kazanmak ve SMMM ruhsatını almaktır (md. 5/A-a, b, c, d). ON YILLIK çalışma şartı md. 9'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir koşuldur; SMMM için böyle bir şart yoktur.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -320,7 +320,7 @@ _PATCHES = {
             'E': 'Mesleğe yeni girecekler serbest muhasebeci unvanını kullanabilir',
         },
         'E',
-        "3568 md. 1: Kanun serbest muhasebeci mali müşavirlik ve yeminli mali müşavirlik mesleklerini düzenler. 5786 sayılı Kanun'la serbest muhasebeci unvanıyla mesleğe yeni giriş kapanmış, mevcut serbest muhasebecilerin kazanılmış hakları korunmuştur. YMM unvanı ilk girişte kazanılamaz; md. 6'daki çalışma süresi ve sınav şartları aranır.",
+        "3568 md. 1: Kanun serbest muhasebeci mali müşavirlik ve yeminli mali müşavirlik mesleklerini düzenler. 5786 sayılı Kanun'la serbest muhasebeci unvanıyla mesleğe yeni giriş kapanmış, mevcut serbest muhasebecilerin kazanılmış hakları korunmuştur. YMM unvanı ilk girişte kazanılamaz; md. 9'daki çalışma süresi ve sınav şartları aranır.",
     ),
     # düzey 3
     '0022': patch(
@@ -347,7 +347,7 @@ _PATCHES = {
             'E': 'İlgili dallarda lisans düzeyinde öğrenim görmüş olmak',
         },
         'A',
-        "3568 md. 4, 5 ve 8: SMMM olmanın aşamaları öğrenim, staja giriş sınavı, üç yıllık staj, SMMM sınavı, ruhsat ve odaya kayıttır. ON YILLIK çalışma md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir şarttır; SMMM için böyle bir aşama yoktur.",
+        "3568 md. 4, 5, 6 ve 15: SMMM olmanın aşamaları öğrenim, staja giriş sınavı, üç yıllık staj, SMMM sınavı, ruhsat ve odaya kayıttır. ON YILLIK çalışma md. 9'da YEMİNLİ MALİ MÜŞAVİR olmak için aranan bir şarttır; SMMM için böyle bir aşama yoktur.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -388,7 +388,7 @@ _PATCHES = {
             'E': 'Yasak, dolaylı yollarla yapılan tanıtımı da kapsar',
         },
         'C',
-        '3568 md. 44: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı olarak reklam sayılabilecek faaliyetlerde bulunamazlar; gazeteye iş elde etme amaçlı ilan bu kapsamdadır. Tabela ve kartvizit gibi mesleki tanıtım araçları, yönetmelikte belirlenen ölçüler içinde kalmak koşuluyla reklam sayılmaz.',
+        '3568 md. 45: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı olarak reklam sayılabilecek faaliyetlerde bulunamazlar; gazeteye iş elde etme amaçlı ilan bu kapsamdadır. Tabela ve kartvizit gibi mesleki tanıtım araçları, yönetmelikte belirlenen ölçüler içinde kalmak koşuluyla reklam sayılmaz.',
     ),
     # düzey 3
     '0027': patch(
@@ -401,7 +401,7 @@ _PATCHES = {
             'E': 'Meslek mensubu bağımlı çalışırken kendi adına serbest meslek faaliyetini de sürdürebilir',
         },
         'E',
-        'Meslek mevzuatı uyarınca SMMM bir işletmede hizmet akdiyle (bağımlı) çalışabilir; bu durumda ruhsatını korur ancak aynı anda kendi adına SERBEST MESLEK FAALİYETİ yürütemez, iki çalışma biçimi bir arada olamaz. Ticari mümessillik, ticari vekillik ve acentelik yasaktır; yeminli mali müşavirler ise mesleklerini yalnızca bağımsız olarak yürütür (md. 45).',
+        'Meslek mevzuatı uyarınca SMMM bir işletmede hizmet akdiyle (bağımlı) çalışabilir; bu durumda ruhsatını korur ancak aynı anda kendi adına SERBEST MESLEK FAALİYETİ yürütemez, iki çalışma biçimi bir arada olamaz. Ticari mümessillik, ticari vekillik ve acentelik yasaktır (Çalışma Usul ve Esasları Yönetmeliği md. 43); yeminli mali müşavirler ise unvan ve tasdik yetkisiyle hizmet akdine bağlı çalışamaz (md. 45).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -415,7 +415,7 @@ _PATCHES = {
             'E': 'Defter tutma ve tasdik tekliflerini kabul edebilir',
         },
         'D',
-        "3568 md. 2/B: yeminli mali müşavirlik mesleğinin konusu, md. 2/A'nın (b) ve (c) bentlerindeki işler (muhasebe sistemi kurmak, müşavirlik yapmak, inceleme-tahlil-denetim, yazılı görüş, tahkim ve bilirkişilik) ile TASDİK işidir. (a) bendindeki DEFTER TUTMA işi YMM'ye kapalıdır (md. 45).",
+        "3568 md. 2/B: yeminli mali müşavirlik mesleğinin konusu, md. 2/A'nın (b) ve (c) bentlerindeki işler (muhasebe sistemi kurmak, müşavirlik yapmak, inceleme-tahlil-denetim, yazılı görüş, tahkim ve bilirkişilik) ile TASDİK işidir. (a) bendindeki DEFTER TUTMA işi YMM'ye kapalıdır; aynı fıkra YMM'nin defter tutamayacağını açıkça belirtir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -429,7 +429,7 @@ _PATCHES = {
             'E': 'I ve III',
         },
         'C',
-        'I doğrudur (3568 md. 5/A-a). II doğrudur (md. 5/A-b). III YANLIŞTIR: md. 6 uyarınca yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak gerekir.',
+        'I doğrudur (3568 md. 5/A-a). II doğrudur (md. 5/A-b). III YANLIŞTIR: md. 9 uyarınca yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak gerekir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -499,7 +499,7 @@ _PATCHES = {
             'E': 'Meslek mensubu, işleri dolayısıyla öğrendiği bilgi ve sırları üçüncü kişilere ifşa edemez',
         },
         'A',
-        "3568 md. 43: yükümlülük 'işleri dolayısıyla öğrenilen' tüm bilgi ve sırları kapsar; bilginin aktarıldığı kişinin de müşteri olması ifşayı hukuka uygun hâle GETİRMEZ. Yükümlülük meslek mensubunun yanında çalışanları da bağlar. Fiil ayrıca md. 47 anlamında haksız rekabet ve md. 48 uyarınca disiplin sorumluluğu doğurabilir.",
+        "3568 md. 43: yükümlülük 'işleri dolayısıyla öğrenilen' tüm bilgi ve sırları kapsar; bilginin aktarıldığı kişinin de müşteri olması ifşayı hukuka uygun hâle GETİRMEZ. Yükümlülük meslek mensubunun yanında çalışanları da bağlar. Fiil ayrıca Haksız Rekabet Yönetmeliği anlamında haksız rekabet ve md. 48 uyarınca disiplin sorumluluğu doğurabilir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 1
@@ -554,7 +554,7 @@ _PATCHES = {
             'E': 'Ortaklık, meslek mensubunun bu şirkette ticari vekil olarak çalışmasına da imkân verir',
         },
         'C',
-        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; bu nedenle SMMM için ortaklık, aynı şirketin defterlerini tutmaya engel değildir ve odaya bildirim gibi ek bir koşul da aranmaz. Ortaklık ticari vekillik yasağını kaldırmaz (md. 45). Ortağı olunan şirkette sınırlama bağımsız denetimde doğar: ortaklar o şirkette denetçi olamaz (TTK md. 400).',
+        'Meslek mevzuatı (Çalışma Usul ve Esasları Yönetmeliği md. 43) yalnız adi ve kolektif şirket ortaklığını ve komandite ortaklığı yasaklar; meslek mensupları limited ve anonim şirketlere ORTAK olabilir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; bu nedenle SMMM için ortaklık, aynı şirketin defterlerini tutmaya engel değildir ve odaya bildirim gibi ek bir koşul da aranmaz. Ortaklık ticari vekillik yasağını kaldırmaz (Çalışma Usul ve Esasları Yönetmeliği md. 43). Ortağı olunan şirkette sınırlama bağımsız denetimde doğar: ortaklar o şirkette denetçi olamaz (TTK md. 400).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -568,7 +568,7 @@ _PATCHES = {
             'E': 'Meslek mensubu kendisine teklif edilen işi reddedemez',
         },
         'B',
-        'Meslek ahlak kuralları: meslek mensubu, bağımsızlığını ve tarafsızlığını koruyamayacağı ya da mesleki yeterliğinin yetmediği işleri KABUL ETMEMELİDİR. İşin reddi mesleki bir yükümlülüktür; oda izni gerekmez ve md. 47 anlamında haksız rekabet oluşturmaz.',
+        'Meslek ahlak kuralları: meslek mensubu, bağımsızlığını ve tarafsızlığını koruyamayacağı ya da mesleki yeterliğinin yetmediği işleri KABUL ETMEMELİDİR. İşin reddi mesleki bir yükümlülüktür; oda izni gerekmez ve haksız rekabet oluşturmaz.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -582,7 +582,7 @@ _PATCHES = {
             'E': 'Serbest muhasebeci mali müşavirler mali tablo ve beyannameleri tasdik etmeye yetkilidir',
         },
         'E',
-        "3568 md. 2/B ve md. 12: TASDİK yetkisi yalnızca yeminli mali müşavirlere aittir; SMMM'nin böyle bir yetkisi yoktur. Diğer seçenekler doğrudur: md. 45 YMM'nin defter tutma yasağını, md. 6 on yıllık çalışma şartını, md. 5 üç yıllık staj şartını düzenler.",
+        "3568 md. 2/B ve md. 12: TASDİK yetkisi yalnızca yeminli mali müşavirlere aittir; SMMM'nin böyle bir yetkisi yoktur. Diğer seçenekler doğrudur: md. 2/B YMM'nin defter tutma yasağını, md. 9 on yıllık çalışma şartını, md. 5 üç yıllık staj şartını düzenler.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -596,7 +596,7 @@ _PATCHES = {
             'E': 'YMM, muhasebe bürosuna ortak olmak koşuluyla defter tutabilir',
         },
         'B',
-        "3568 md. 2/B ve md. 45: yeminli mali müşavirler, md. 2/A'nın (a) bendinde belirtilen MUHASEBE İLE İLGİLİ DEFTERLERİ TUTAMAZLAR, muhasebe bürosu açamazlar ve muhasebe bürolarına ORTAK OLAMAZLAR. Bu yasak tasdik ettikleri mükelleflerle sınırlı değil, genel bir yasaktır. Tasdik yetkisi ise md. 12 uyarınca yalnızca YMM'ye aittir.",
+        "3568 md. 2/B: yeminli mali müşavirler, md. 2/A'nın (a) bendinde belirtilen MUHASEBE İLE İLGİLİ DEFTERLERİ TUTAMAZLAR, muhasebe bürosu açamazlar ve muhasebe bürolarına ORTAK OLAMAZLAR. Bu yasak tasdik ettikleri mükelleflerle sınırlı değil, genel bir yasaktır. Tasdik yetkisi ise md. 12 uyarınca yalnızca YMM'ye aittir.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -624,7 +624,7 @@ _PATCHES = {
             'E': 'On yıllık SMMM çalışma şartı gerçekleşmediğinden henüz başvuramaz',
         },
         'E',
-        '3568 md. 6: yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak, yeminli mali müşavirlik sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. md. 9 bazı gruplara SINAV muafiyeti tanır; ancak çalışma süresi şartı bu muafiyetle karışmaz.',
+        '3568 md. 9: yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak, yeminli mali müşavirlik sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. Vergi inceleme yetkisini almış olanlar da YMM ruhsatı için on yıllık süreyi tamamlamak zorundadır (md. 9 son fıkra).',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -679,7 +679,7 @@ _PATCHES = {
             'E': 'II ve IV',
         },
         'E',
-        'II YANLIŞ: 3568 md. 2/B ve md. 12 uyarınca tasdik yetkisi yalnızca YEMİNLİ MALİ MÜŞAVİRLERE aittir. IV YANLIŞ: md. 44 iş elde etmek amacıyla reklam sayılabilecek faaliyetleri yasaklar. I ve III (md. 1 ve md. 45) doğrudur.',
+        'II YANLIŞ: 3568 md. 2/B ve md. 12 uyarınca tasdik yetkisi yalnızca YEMİNLİ MALİ MÜŞAVİRLERE aittir. IV YANLIŞ: md. 45 iş elde etmek amacıyla reklam sayılabilecek faaliyetleri yasaklar. I ve III (md. 1 ve md. 45) doğrudur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -721,7 +721,7 @@ _PATCHES = {
             'E': 'SMMM sınavını kazanma → üç yıllık staj → ruhsat alma → odaya kayıt',
         },
         'A',
-        '3568 md. 5 ve md. 8: staja giriş sınavını kazanan aday üç yıllık stajını tamamlar, ardından serbest muhasebeci mali müşavirlik sınavını kazanır. Bu şartları taşıyanlara ruhsat verilir ve meslek mensubu, mesleki faaliyette bulunabilmek için bağlı olduğu odaya kaydolur.',
+        '3568 md. 5, 6 ve 15: staja giriş sınavını kazanan aday üç yıllık stajını tamamlar, ardından serbest muhasebeci mali müşavirlik sınavını kazanır. Bu şartları taşıyanlara ruhsat verilir ve meslek mensubu, mesleki faaliyette bulunabilmek için bağlı olduğu odaya kaydolur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -735,7 +735,7 @@ _PATCHES = {
             'E': 'Tarifenin altında ücret teklifi haksız rekabettir, olumsuz beyan değildir',
         },
         'C',
-        '3568 md. 47: meslek mensupları arasında haksız rekabet yasaktır. Diğer meslek mensubunun müşterisini elde etmeye yönelik girişimler, tarifenin altında ücret teklif ederek iş almaya çalışmak (md. 46) ve meslektaşı hakkında küçük düşürücü beyanda bulunmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
+        'Haksız Rekabet Yönetmeliği: meslek mensupları arasında haksız rekabet yasaktır. Diğer meslek mensubunun müşterisini elde etmeye yönelik girişimler, tarifenin altında ücret teklif ederek iş almaya çalışmak (md. 46) ve meslektaşı hakkında küçük düşürücü beyanda bulunmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 2
@@ -749,7 +749,7 @@ _PATCHES = {
             'E': 'I ve II',
         },
         'E',
-        'I doğrudur (3568 md. 45). II doğrudur: md. 45 meslek mensuplarının sermayesi paylara bölünmüş komandit şirketlerde komanditer ortak, limited ve anonim şirketlerde ortak olmasına izin verir. III YANLIŞTIR: aynı madde meslek mensuplarının ticari mümessil, ticari vekil veya acente olarak çalışmasını yasaklar.',
+        'I doğrudur (3568 md. 2/B). II doğrudur: Çalışma Usul ve Esasları Yönetmeliği md. 43 yalnız adi ve kolektif şirketlerde ortaklığı ve komandite ortaklığı yasaklar; limited ve anonim şirketlerde ortaklık serbesttir. III YANLIŞTIR: Çalışma Usul ve Esasları Yönetmeliği md. 43 meslek mensuplarının ticari mümessil, ticari vekil veya acente olarak çalışmasını yasaklar.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -818,7 +818,7 @@ _PATCHES = {
             'E': 'Önceki meslek mensubunun ücret alacağı işi devralana geçer',
         },
         'E',
-        'Meslek ahlak kuralları ve md. 47: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce önceki meslek mensubuna yazılı bildirimde bulunur ve ücret alacağının bulunup bulunmadığını araştırır. Oda kararı gerekmez; önceki meslek mensubunun alacağı ise yeni meslek mensubuna geçmez.',
+        'Meslek ahlak kuralları ve Haksız Rekabet Yönetmeliği: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce önceki meslek mensubuna yazılı bildirimde bulunur ve ücret alacağının bulunup bulunmadığını araştırır. Oda kararı gerekmez; önceki meslek mensubunun alacağı ise yeni meslek mensubuna geçmez.',
     ),
     # düzey 2
     '0058': patch(
@@ -845,7 +845,7 @@ _PATCHES = {
             'E': "Her ikisi de 3568 sayılı Kanun'a tabi olup ruhsat alır ve odaya kaydolur",
         },
         'C',
-        "SMMM ve YMM aynı Kanuna tabidir, ruhsat alır, odaya kaydolur ve md. 43-47'deki yasaklara uyar. Ancak yetkiler AYRIDIR: TASDİK yalnızca YMM'ye (md. 2/B, md. 12), DEFTER TUTMA ise yalnızca SMMM'ye aittir (md. 2/A, md. 45). Hiçbir unvan iki yetkiyi birden taşımaz.",
+        "SMMM ve YMM aynı Kanuna tabidir, ruhsat alır, odaya kaydolur ve md. 43, 45 ve 46'daki yükümlülüklere uyar. Ancak yetkiler AYRIDIR: TASDİK yalnızca YMM'ye (md. 2/B, md. 12), DEFTER TUTMA ise yalnızca SMMM'ye aittir (md. 2/A ve 2/B). Hiçbir unvan iki yetkiyi birden taşımaz.",
         '3568 sayili SMMM ve YMM Kanunu',
     ),
     # düzey 3
@@ -859,7 +859,7 @@ _PATCHES = {
             'E': 'I ve IV',
         },
         'C',
-        'II YANLIŞ: 3568 md. 43 uyarınca adli veya idari inceleme ve soruşturmalar sır saklama hükmünün kapsamı dışındadır ve TANIKLIK sırrın ifşası sayılmaz. III YANLIŞ: md. 47 meslek mensupları arasında haksız rekabeti yasaklar. I (md. 43) ve IV (md. 45) doğrudur.',
+        'II YANLIŞ: 3568 md. 43 uyarınca adli veya idari inceleme ve soruşturmalar sır saklama hükmünün kapsamı dışındadır ve TANIKLIK sırrın ifşası sayılmaz. III YANLIŞ: Haksız Rekabet Yönetmeliği meslek mensupları arasında haksız rekabeti yasaklar. I (md. 43) ve IV (md. 45) doğrudur.',
         '3568 sayili SMMM ve YMM Kanunu',
     ),
 }

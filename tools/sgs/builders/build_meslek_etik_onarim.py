@@ -424,7 +424,7 @@ _PATCHES = {
             'E': 'Haksız rekabet ticari işletmeler arasında söz konusu olup meslek mensuplarını kapsamaz',
         },
         'D',
-        '3568 md. 46 tarifenin altında iş kabul edilemeyeceğini, md. 47 ise meslek mensupları arasında haksız rekabetin yasak olduğunu düzenler. Meslektaşı küçük düşüren beyanlar ve tarifenin altında fiyatla iş almaya çalışmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
+        '3568 md. 46 tarifenin altında iş kabul edilemeyeceğini, Haksız Rekabet Yönetmeliği ise meslek mensupları arasında haksız rekabetin yasak olduğunu düzenler. Meslektaşı küçük düşüren beyanlar ve tarifenin altında fiyatla iş almaya çalışmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
@@ -466,7 +466,7 @@ _PATCHES = {
             'E': 'Tabela ve kartvizit gibi tanıtım araçları belirlenen ölçüler içinde kullanılabilir',
         },
         'D',
-        '3568 md. 44: meslek mensupları iş elde etmek için AÇIK VEYA KAPALI, DOLAYLI YA DA DOLAYSIZ reklam sayılabilecek faaliyetlerde bulunamazlar. Yasak dolaylı yolları da kapsar; tabela ve kartvizit gibi araçlar ise yönetmelikte belirlenen ölçüler içinde reklam sayılmaz.',
+        '3568 md. 45: meslek mensupları iş elde etmek için AÇIK VEYA KAPALI, DOLAYLI YA DA DOLAYSIZ reklam sayılabilecek faaliyetlerde bulunamazlar. Yasak dolaylı yolları da kapsar; tabela ve kartvizit gibi araçlar ise yönetmelikte belirlenen ölçüler içinde reklam sayılmaz.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 3
@@ -550,7 +550,7 @@ _PATCHES = {
             'E': 'Bağımsızlık sorunu, iki hizmetin ücretinin aynı faturada gösterilmesinden doğar',
         },
         'A',
-        "Meslek mensubunun kendi tuttuğu kayıtları sonradan tasdik etmesi, kendi işini denetlemesi anlamına gelir ve KENDİ KENDİNİ DENETLEME tehdidi doğurur. Ayrıca 3568 md. 45 uyarınca YMM'ler defter tutamaz; tasdik ve kayıt işleri unvan bakımından da ayrıdır. Bildirim ya da faturalandırma biçimi bu sakatlığı gidermez.",
+        "Meslek mensubunun kendi tuttuğu kayıtları sonradan tasdik etmesi, kendi işini denetlemesi anlamına gelir ve KENDİ KENDİNİ DENETLEME tehdidi doğurur. Ayrıca 3568 md. 2/B uyarınca YMM'ler defter tutamaz; tasdik ve kayıt işleri unvan bakımından da ayrıdır. Bildirim ya da faturalandırma biçimi bu sakatlığı gidermez.",
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
@@ -662,7 +662,7 @@ _PATCHES = {
             'E': 'Yalnız I',
         },
         'B',
-        'I doğrudur: tehditler kişisel çıkar, kendi kendini denetleme, taraf tutma, yakınlık ve yıldırmadır. II doğrudur: bağımsızlık özellikle güvence gerektiren denetim ve tasdik işlerinde kurucu koşuldur. III YANLIŞTIR: 3568 md. 44 iş elde etmek amacıyla reklamı YASAKLAR; bu bir etik ilke değil yasaklanan davranıştır.',
+        'I doğrudur: tehditler kişisel çıkar, kendi kendini denetleme, taraf tutma, yakınlık ve yıldırmadır. II doğrudur: bağımsızlık özellikle güvence gerektiren denetim ve tasdik işlerinde kurucu koşuldur. III YANLIŞTIR: 3568 md. 45 iş elde etmek amacıyla reklamı YASAKLAR; bu bir etik ilke değil yasaklanan davranıştır.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 3
@@ -676,7 +676,7 @@ _PATCHES = {
             'E': 'Ücret alacağının bulunup bulunmadığı araştırılmalıdır',
         },
         'B',
-        'Meslek Ahlak Kuralları ve 3568 md. 47: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce ÖNCEKİ MESLEK MENSUBUNA yazılı bildirimde bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önler; ancak alacak yeni meslek mensubuna geçmez.',
+        'Meslek Ahlak Kuralları ve Haksız Rekabet Yönetmeliği: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce ÖNCEKİ MESLEK MENSUBUNA yazılı bildirimde bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önler; ancak alacak yeni meslek mensubuna geçmez.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
@@ -704,7 +704,7 @@ _PATCHES = {
             'E': 'Sosyal medya paylaşımları yasak kapsamına girebilir',
         },
         'C',
-        "3568 md. 44: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı ya da dolaysız reklam sayılabilecek faaliyetlerde bulunamazlar; yasak mecra ayrımı yapmaz ve tüm meslek mensuplarını bağlar. Ücret indirimiyle iş çağrısı ayrıca md. 46 ve 47'ye aykırıdır.",
+        "3568 md. 45: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı ya da dolaysız reklam sayılabilecek faaliyetlerde bulunamazlar; yasak mecra ayrımı yapmaz ve tüm meslek mensuplarını bağlar. Ücret indirimiyle iş çağrısı ayrıca md. 46'ya ve Haksız Rekabet Yönetmeliğine aykırıdır.",
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
@@ -760,7 +760,7 @@ _PATCHES = {
             'E': 'I, II ve III',
         },
         'E',
-        "I mesleki yeterlik ilkesinin, II 3568 md. 46'nın, III md. 44'ün gereğidir. IV YANLIŞTIR: iş sahibine ait defter ve belgeler talep hâlinde tutanakla geri verilir; ücret alacağı bunlar üzerinde alıkoyma (hapis) hakkı vermez.",
+        "I mesleki yeterlik ilkesinin, II 3568 md. 46'nın, III md. 45'in gereğidir. IV YANLIŞTIR: iş sahibine ait defter ve belgeler talep hâlinde tutanakla geri verilir; ücret alacağı bunlar üzerinde alıkoyma (hapis) hakkı vermez.",
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2
@@ -788,7 +788,7 @@ _PATCHES = {
             'E': 'İş sahibinin dürüstlüğüne ilişkin ciddi kuşkular tehdit oluşturur',
         },
         'B',
-        'Meslek Ahlak Kuralları ve 3568 md. 47: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce önceki meslek mensubuna YAZILI BİLDİRİMDE bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önlemeye yöneliktir.',
+        'Meslek Ahlak Kuralları ve Haksız Rekabet Yönetmeliği: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce önceki meslek mensubuna YAZILI BİLDİRİMDE bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önlemeye yöneliktir.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 1
@@ -830,7 +830,7 @@ _PATCHES = {
             'E': 'Meslek mensubu, iş almak amacıyla meslektaşının yeterliği hakkında olumsuz beyanda bulunabilir',
         },
         'E',
-        '3568 md. 47 meslek mensupları arasında haksız rekabeti YASAKLAR; meslektaşı küçük düşüren ya da yeterliğini kötüleyen beyanlarla iş almaya çalışmak haksız rekabet sayılır ve md. 48 uyarınca disiplin cezası gerektirir.',
+        'Haksız Rekabet Yönetmeliği meslek mensupları arasında haksız rekabeti YASAKLAR; meslektaşı küçük düşüren ya da yeterliğini kötüleyen beyanlarla iş almaya çalışmak haksız rekabet sayılır ve md. 48 uyarınca disiplin cezası gerektirir.',
         '3568 sayili Kanun / Meslek Ahlak Kurallari',
     ),
     # düzey 2

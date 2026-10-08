@@ -114,20 +114,20 @@ _PATCHES = {
             'E': 'II ve III',
         },
         'A',
-        "I ve II doğrudur (3568 md. 5/A-a ve b). III YANLIŞTIR: on yıllık çalışma şartı md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranır; SMMM için böyle bir şart yoktur.",
+        "I ve II doğrudur (3568 md. 5/A-a ve b). III YANLIŞTIR: on yıllık çalışma şartı md. 9'da YEMİNLİ MALİ MÜŞAVİR olmak için aranır; SMMM için böyle bir şart yoktur.",
     ),
     # düzey 2
     '0006': patch(
         'Bir aday, meslek stajını nerede yapabileceğini araştırmaktadır. Buna göre aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Staj, yeminli mali müşavir veya belirli kıdeme sahip serbest muhasebeci mali müşavir yanında yapılabilir',
+            'A': 'Staj, bağımsız çalışan serbest muhasebeci mali müşavir veya yeminli mali müşavir yanında ya da şirketlerinde yapılır',
             'B': 'Staj yeri konusunda bir sınırlama bulunmaz',
             'C': 'Staj yalnızca kamu kurumlarında yapılabilir',
             'D': 'Staj, yanında meslek mensubu bulunmasa dahi herhangi bir ticari işletmenin muhasebe biriminde yapılabilir',
             'E': 'Staj yalnızca yeminli mali müşavir yanında yapılabilir',
         },
         'A',
-        '3568 md. 6 ve staj yönetmeliği: staj, yeminli mali müşavir ya da belirli kıdeme sahip serbest muhasebeci mali müşavir yanında yapılır; ayrıca mevzuatta öngörülen kurum ve kuruluşlarda geçen mesleki içerikli hizmetler stajdan sayılabilir. Herhangi bir işletmenin muhasebe biriminde geçen süre kendiliğinden staj sayılmaz.',
+        '3568 md. 6: serbest muhasebeci mali müşavirlik stajı, BAĞIMSIZ ÇALIŞAN serbest muhasebeci mali müşavir veya yeminli mali müşavir yanında ya da şirketlerinde yapılır. Ayrıca aynı maddede sayılan hizmetlerde (vergi inceleme yetkisiyle kamuda geçen süre, öğretim üyeliği gibi) geçen süreler stajdan sayılır. Yanında meslek mensubu bulunmayan herhangi bir işletmenin muhasebe biriminde geçen süre kendiliğinden staj sayılmaz.',
     ),
     # düzey 2
     '0007': patch(
@@ -140,7 +140,7 @@ _PATCHES = {
             'E': 'Staja giriş sınavı TESMER aracılığıyla düzenlenir',
         },
         'D',
-        "TESMER (Temel Eğitim ve Staj Merkezi), TÜRMOB bünyesinde staj, temel eğitim, sınav ve sürekli mesleki eğitim faaliyetlerini yürütür. DİSİPLİN yetkisi ise oda ve Birlik DİSİPLİN KURULLARINA aittir (3568 md. 21, 48); TESMER'in böyle bir yetkisi yoktur.",
+        "TESMER (Temel Eğitim ve Staj Merkezi), TÜRMOB bünyesinde staj, temel eğitim, sınav ve sürekli mesleki eğitim faaliyetlerini yürütür. DİSİPLİN yetkisi ise oda ve Birlik DİSİPLİN KURULLARINA aittir (3568 md. 26, 38 ve 48); TESMER'in böyle bir yetkisi yoktur.",
     ),
     # düzey 2
     '0008': patch(
@@ -244,7 +244,7 @@ _PATCHES = {
             'E': 'Yalnız III',
         },
         'A',
-        'III YANLIŞ: mesleki faaliyet için ruhsat ve oda kaydı gerekir (3568 md. 5, 19). IV YANLIŞ: staja giriş sınavı yalnızca stajın başlangıcına kapı açar; unvan için staj ve meslek yeterlilik sınavı gerekir. I ve II doğrudur.',
+        'III YANLIŞ: mesleki faaliyet için ruhsat ve oda kaydı gerekir (3568 md. 5/A-d ve 15). IV YANLIŞ: staja giriş sınavı yalnızca stajın başlangıcına kapı açar; unvan için staj ve meslek yeterlilik sınavı gerekir. I ve II doğrudur.',
     ),
     # düzey 3
     '0016': patch(
@@ -257,20 +257,20 @@ _PATCHES = {
             'E': 'Çalışma süresi şartı lisansüstü diplomayla kalkmaz',
         },
         'C',
-        '3568 md. 6: yeminli mali müşavir olabilmek için en az on yıl serbest muhasebeci mali müşavirlik yapmış olmak, YMM sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. Süre SMMM olarak fiilen çalışılan süredir; stajda geçen süre buna dâhil değildir ve lisansüstü diploma şartı kaldırmaz.',
+        '3568 md. 9: yeminli mali müşavir olabilmek için en az on yıl serbest muhasebeci mali müşavirlik yapmış olmak, YMM sınavını vermiş olmak ve YMM ruhsatını almış olmak gerekir. Süre SMMM olarak fiilen çalışılan süredir; stajda geçen süre buna dâhil değildir ve lisansüstü diploma şartı kaldırmaz.',
     ),
     # düzey 3
     '0017': patch(
-        'Kanunları uyarınca vergi inceleme yetkisini almış ve bu yetkiyi uzun süre kullanmış bir kişi ile hukuk alanında profesör unvanı almış bir akademisyen, YMM olmak için başvurmuştur. Buna göre aşağıdakilerden hangisi doğrudur?',
+        'Kanunları uyarınca vergi inceleme yetkisini almış ve mesleki yeterlilik sınavını vermiş bir vergi müfettişi ile hukuk alanında profesör unvanı almış bir akademisyen, bugün YMM olmak istemektedir. Buna göre 3568 sayılı Kanun\'un yürürlükteki hükümleri bakımından aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'YMM sınavından muafiyet yalnızca vergi inceleme yetkisini almış olanlar için öngörülmüştür',
-            'B': 'Muafiyet yalnızca profesör unvanı alanlar için öngörülmüştür',
-            'C': 'Kanunda sayılan koşulları taşımaları hâlinde her ikisi de YMM sınavından muaf tutulabilir',
-            'D': 'YMM sınavından muafiyet hiçbir grup için öngörülmemiştir',
-            'E': "Muafiyet, on yıllık SMMM'lik şartını da ortadan kaldırır",
+            'A': 'Vergi müfettişi kamuda geçirdiği süre nedeniyle YMM sınavından muaftır; profesör ise sınava girmek zorundadır',
+            'B': 'Profesör unvanı YMM sınavından muafiyet sağlar; vergi müfettişi ise sınava girmek zorundadır',
+            'C': 'İkisi de YMM sınavını genel hükümlere göre vermek zorundadır; bugün için genel bir sınav muafiyeti yoktur',
+            'D': "İkisi de hem YMM sınavından hem de on yıllık SMMM'lik süresinden muaf tutulur",
+            'E': 'Vergi müfettişi YMM sınavını kazanınca on yıllık süreyi beklemeden ruhsat alabilir',
         },
         'C',
-        '3568 md. 9: kanunları uyarınca vergi inceleme yetkisini almış olup belirtilen süreyi tamamlayanlar ile hukuk, iktisat, maliye, işletme, muhasebe, bankacılık, kamu yönetimi ve siyasal bilimler dallarında PROFESÖRLÜK unvanı almış olanlar YMM SINAVINDAN muaf tutulur. Muafiyet yalnızca sınava ilişkindir; diğer şartlar ayrıca aranır.',
+        "3568 md. 9 uyarınca YMM olmak için en az on yıl SMMM'lik, YMM sınavı ve YMM ruhsatı gerekir. Vergi inceleme yetkisini almış ve mesleki yeterlilik sınavını vermiş olanlar YMM sınavına GENEL HÜKÜMLERE göre katılır ve ruhsat için on yıllık süreyi tamamlamak zorundadır (md. 9 son fıkra); yetkiyi aldıkları tarihten sonra kamuda geçen süreleri SMMM'likte geçmiş sayılır. Profesörler ve vergi inceleme yetkilileri için sınav şartı aranmaması, Geçici Madde 9 ile yalnızca 2008'de o tarihte koşulları taşıyanlara tanınmış bir GEÇİŞ hükmüdür; bugün başvuranlar için genel bir muafiyet yoktur.",
     ),
     # düzey 3
     '0018': patch(
@@ -283,7 +283,7 @@ _PATCHES = {
             'E': 'Mesleki faaliyet için ruhsat ve oda kaydı gerektiğinden bu faaliyet hukuka aykırıdır',
         },
         'E',
-        '3568 md. 5 ve 19: sınavı kazanan ve genel şartları taşıyan adaya RUHSAT verilir; meslek mensubu mesleki faaliyette bulunabilmek için ayrıca bölgesindeki ODAYA KAYDOLUR. İki adım da tamamlanmadan mesleki faaliyet yürütülemez; md. 3 unvan ve yetkilerin ruhsatsız kullanılmasını yasaklar.',
+        '3568 md. 5 ve 15: sınavı kazanan ve genel şartları taşıyan adaya RUHSAT verilir; meslek mensubu mesleki faaliyette bulunabilmek için ayrıca bölgesindeki ODAYA KAYDOLUR. İki adım da tamamlanmadan mesleki faaliyet yürütülemez; md. 3 unvan ve yetkilerin ruhsatsız kullanılmasını yasaklar.',
     ),
     # düzey 2
     '0019': patch(
@@ -296,7 +296,7 @@ _PATCHES = {
             'E': 'Öğrenim → staja giriş sınavı → üç yıllık staj → meslek yeterlilik sınavı → ruhsat ve oda kaydı',
         },
         'E',
-        '3568 md. 4, 5 ve 8: aday önce öğrenim şartını karşılar, staja giriş sınavını kazanır, üç yıllık stajı tamamlar, meslek yeterlilik sınavını kazanır ve son olarak ruhsat alıp odaya kaydolur.',
+        '3568 md. 4, 5, 6 ve 15: aday önce öğrenim şartını karşılar, staja giriş sınavını kazanır, üç yıllık stajı tamamlar, meslek yeterlilik sınavını kazanır ve son olarak ruhsat alıp odaya kaydolur.',
     ),
     # düzey 2
     '0020': patch(
@@ -374,7 +374,7 @@ _PATCHES = {
             'E': 'SMMM olabilmek için kanunda sayılan dallarda en az lisans düzeyinde öğrenim görmüş olmak gerekir',
         },
         'C',
-        "3568 md. 5: SMMM'nin özel şartları öğrenim, ÜÇ YILLIK staj, sınav ve ruhsattır. ON YILLIK çalışma şartı md. 6'da YEMİNLİ MALİ MÜŞAVİR olmak için aranır.",
+        "3568 md. 5: SMMM'nin özel şartları öğrenim, ÜÇ YILLIK staj, sınav ve ruhsattır. ON YILLIK çalışma şartı md. 9'da YEMİNLİ MALİ MÜŞAVİR olmak için aranır.",
     ),
     # düzey 2
     '0026': patch(
@@ -397,7 +397,7 @@ _PATCHES = {
             'B': 'Staj süresi üç yıldır',
             'C': 'Mevzuatta öngörülen mesleki hizmetler stajdan sayılabilir',
             'D': 'Staj süresi iki yıl olup staja giriş sınavı aranmaz',
-            'E': 'Staj, yeminli mali müşavir veya belirli kıdeme sahip SMMM yanında yapılabilir',
+            'E': 'Staj, bağımsız çalışan SMMM veya YMM yanında ya da şirketlerinde yapılır',
         },
         'D',
         '3568 md. 5/A-b: staj amacıyla ÜÇ YIL çalışmış olmak gerekir; staja başlamak için ayrıca staja giriş sınavının kazanılması aranır.',
@@ -419,14 +419,14 @@ _PATCHES = {
     '0029': patch(
         'On yıldır serbest muhasebeci mali müşavir olarak çalışan bir meslek mensubu ile mesleğe yeni giren bir aday, yeminli mali müşavirlik koşullarını değerlendirmektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Kanunda sayılan bazı gruplar YMM sınavından muaf tutulabilir',
+            'A': "Vergi inceleme yetkisi alanların bu yetkiden sonra kamuda geçen süreleri SMMM'likte geçmiş sayılır",
             'B': 'Yeminli mali müşavirlik unvanı, staj tamamlandıktan sonra doğrudan kazanılabilir',
             'C': "YMM'ler mesleki faaliyete başlamadan önce yemin eder",
             'D': 'Yeminli mali müşavir olmak için en az on yıl SMMM olarak çalışmış olmak gerekir',
             'E': 'YMM olmak için YMM sınavını vermiş olmak gerekir',
         },
         'B',
-        '3568 md. 6: yeminli mali müşavirlik doğrudan kazanılamaz; en az ON YIL SMMM olarak çalışmış olmak, YMM sınavını vermek ve ruhsat almak gerekir. md. 9 bazı gruplara yalnızca SINAV muafiyeti tanır.',
+        '3568 md. 9: yeminli mali müşavirlik doğrudan kazanılamaz; en az ON YIL SMMM olarak çalışmış olmak, YMM sınavını vermek ve ruhsat almak gerekir. Vergi inceleme yetkisi alanların bu yetkiden sonra kamuda geçen süreleri SMMM\'likte geçmiş sayılır (md. 9).',
     ),
     # düzey 2
     '0030': patch(
@@ -439,7 +439,7 @@ _PATCHES = {
             'E': 'Ruhsat hem SMMM hem YMM için düzenlenir',
         },
         'C',
-        '3568 md. 19: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları ODAYA KAYDOLMAK zorundadır. Ruhsat tek başına faaliyet için yeterli değildir.',
+        '3568 md. 15: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları ODAYA KAYDOLMAK zorundadır. Ruhsat tek başına faaliyet için yeterli değildir.',
     ),
     # düzey 2
     '0031': patch(
@@ -478,7 +478,7 @@ _PATCHES = {
             'E': 'İki yıl',
         },
         'A',
-        "3568 md. 5/A-b: serbest muhasebeci mali müşavir olabilmek için staj amacıyla ÜÇ YIL çalışmış olmak gerekir. On yıl ise md. 6'da YMM olmak için aranan SMMM'lik süresidir.",
+        "3568 md. 5/A-b: serbest muhasebeci mali müşavir olabilmek için staj amacıyla ÜÇ YIL çalışmış olmak gerekir. On yıl ise md. 9'da YMM olmak için aranan SMMM'lik süresidir.",
     ),
     # düzey 0
     '0034': patch(
@@ -491,7 +491,7 @@ _PATCHES = {
             'E': 'Yedi yıl',
         },
         'D',
-        '3568 md. 6: yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak gerekir.',
+        '3568 md. 9: yeminli mali müşavir olabilmek için en az ON YIL serbest muhasebeci mali müşavirlik yapmış olmak gerekir.',
     ),
     # düzey 0
     '0035': patch(
@@ -517,7 +517,7 @@ _PATCHES = {
             'E': 'Bölgesindeki odaya kaydolmak',
         },
         'E',
-        '3568 md. 19: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları ODAYA KAYDOLMAK zorundadır. Ruhsat tek başına yeterli değildir.',
+        '3568 md. 15: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları ODAYA KAYDOLMAK zorundadır. Ruhsat tek başına yeterli değildir.',
     ),
     # düzey 0
     '0037': patch(
@@ -638,16 +638,16 @@ _PATCHES = {
     ),
     # düzey 2
     '0046': patch(
-        'Vergi inceleme yetkisini uzun süre kullanmış bir kişi, YMM sınavından muaf tutulacağını ve başka hiçbir koşul aranmayacağını düşünmektedir. Buna göre YMM sınavından muafiyet bakımından aşağıdakilerden hangisi yanlıştır?',
+        'Kanunları uyarınca vergi inceleme yetkisini almış ve mesleki yeterlilik sınavını vermiş bir vergi müfettişi, yeminli mali müşavir olmak istemektedir. Buna göre aşağıdakilerden hangisi yanlıştır?',
         {
-            'A': 'Muafiyet için kanunda öngörülen koşulların taşınması gerekir',
-            'B': 'Muafiyet, on yıllık serbest muhasebeci mali müşavirlik şartını da ortadan kaldırır',
-            'C': 'Kanunları uyarınca vergi inceleme yetkisi almış olanlar için muafiyet öngörülmüştür',
-            'D': 'İlgili dallarda profesörlük unvanı almış olanlar için muafiyet öngörülmüştür',
-            'E': 'Muafiyet yalnızca sınava ilişkindir',
+            'A': 'YMM sınavına genel hükümlere göre katılabilir',
+            'B': 'YMM sınavını kazandığında on yıllık süreyi tamamlamadan ruhsat alabilir',
+            'C': "Vergi inceleme yetkisini aldıktan sonra kamuda geçen süreleri SMMM'likte geçmiş sayılır",
+            'D': 'YMM sınavını vermişse ayrıca SMMM sınavını kazanma şartı aranmaz',
+            'E': 'Ruhsat alabilmesi için en az on yıllık süreyi tamamlaması gerekir',
         },
         'B',
-        '3568 md. 9: sayılan gruplar YMM SINAVINDAN muaf tutulur. Muafiyet yalnızca sınava ilişkindir; diğer şartlar (ruhsat, yemin ve ilgili hâllerde çalışma süresi) ayrıca aranır.',
+        "3568 md. 9 son fıkrası: vergi inceleme yetkisini almış ve mesleki yeterlilik sınavını vermiş olanlar YMM sınavına genel hükümlere göre katılabilir; ancak YMM RUHSATINI alabilmeleri için on yıllık süreyi (md. 9/1-a) TAMAMLAMALARI ŞARTTIR. Yetkiyi aldıkları tarihten itibaren kamuda geçen süreleri SMMM'likte geçmiş sayılır (md. 9). md. 5/A'ya göre YMM sınavını vermiş bu kişilerde ayrıca SMMM sınavını kazanma şartı aranmaz.",
     ),
     # düzey 1
     '0047': patch(
@@ -699,20 +699,20 @@ _PATCHES = {
             'E': 'Meslek yeterlilik sınavına başvurusunu yaptığı aşamada, sınav sonucundan önce',
         },
         'C',
-        '3568 md. 19: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları odaya kaydolur. Bu, ruhsat alındıktan sonraki son adımdır; staj döneminde meslek mensubu sıfatı doğmadığı için oda kaydı da söz konusu olmaz.',
+        '3568 md. 15: meslek mensupları mesleki faaliyette bulunabilmek için bölgesi içinde bulundukları odaya kaydolur. Bu, ruhsat alındıktan sonraki son adımdır; staj döneminde meslek mensubu sıfatı doğmadığı için oda kaydı da söz konusu olmaz.',
     ),
     # düzey 1
     '0051': patch(
         'Bir aday, tanıdığı herhangi bir meslek mensubunun yanında staj yapabileceğini düşünmektedir. Buna göre staj yapılacak meslek mensubunun niteliği bakımından aşağıdakilerden hangisi doğrudur?',
         {
-            'A': 'Meslek mensubunun mevzuatta öngörülen unvan ve kıdem koşullarını taşıması gerekir',
+            'A': 'Yanında staj yapılacak kişinin bağımsız çalışan bir SMMM ya da YMM olması gerekir',
             'B': 'Staj yeri adayın serbest seçimine bırakılmıştır',
             'C': 'Herhangi bir meslek mensubu yanında staj yapılabilir',
             'D': 'Staj yalnızca yeminli mali müşavir yanında yapılabilir; SMMM yanında yapılamaz',
-            'E': 'Meslek mensubunun kıdemi önemli değildir',
+            'E': 'Bir işyerine hizmet akdiyle bağlı çalışan SMMM yanında da staj yapılabilir',
         },
         'A',
-        '3568 md. 6 ve staj yönetmeliği: staj, yeminli mali müşavir ya da mevzuatta öngörülen kıdeme sahip serbest muhasebeci mali müşavir yanında yapılır. Ne herhangi bir meslek mensubu ne de serbest seçim söz konusudur.',
+        '3568 md. 6: staj, BAĞIMSIZ ÇALIŞAN serbest muhasebeci mali müşavir veya yeminli mali müşavir yanında ya da şirketlerinde yapılır. Bir işyerine bağlı çalışan meslek mensubu yanında staj yapılamaz; staj yeri adayın serbest seçimine de bırakılmamıştır. SMMM yanında staj mümkündür.',
     ),
     # düzey 2
     '0052': patch(
@@ -751,7 +751,7 @@ _PATCHES = {
             'E': "SMMM için üç yıllık staj, YMM için ise en az on yıllık SMMM'lik süresi aranır",
         },
         'A',
-        '3568 md. 4: genel şartlar mesleğe girecek HERKES için aranır; unvan ayrımı yapmaz. Özel şartlar ise md. 5 (SMMM) ve md. 6 (YMM) ile ayrı ayrı düzenlenmiştir.',
+        '3568 md. 4: genel şartlar mesleğe girecek HERKES için aranır; unvan ayrımı yapmaz. Özel şartlar ise md. 5 (SMMM) ve md. 9 (YMM) ile ayrı ayrı düzenlenmiştir.',
     ),
     # düzey 3
     '0055': patch(
@@ -764,7 +764,7 @@ _PATCHES = {
             'E': 'Aday henüz meslek mensubu değildir; unvan için sınavı kazanıp ruhsat alması gerekir',
         },
         'E',
-        '3568 md. 5/A: SMMM unvanı için öğrenim, staj VE meslek yeterlilik sınavı koşullarının tamamı gerçekleşmelidir. Sınav kazanılmadan ruhsat verilmez; ruhsat ve oda kaydı olmadan mesleki faaliyet yürütülemez (md. 3, 19).',
+        '3568 md. 5/A: SMMM unvanı için öğrenim, staj VE meslek yeterlilik sınavı koşullarının tamamı gerçekleşmelidir. Sınav kazanılmadan ruhsat verilmez; ruhsat ve oda kaydı olmadan mesleki faaliyet yürütülemez (md. 3, 15).',
     ),
     # düzey 2
     '0056': patch(
@@ -790,7 +790,7 @@ _PATCHES = {
             'E': 'Yalnız I',
         },
         'B',
-        'Üç ifade de doğrudur. 3568 md. 5/A staja giriş ve meslek yeterlilik sınavlarını sıralı koşullar olarak belirler; md. 3 ve 19 ise unvan kullanımı ve mesleki faaliyet için ruhsat ile oda kaydını arar.',
+        'Üç ifade de doğrudur. 3568 md. 5/A staja giriş ve meslek yeterlilik sınavlarını sıralı koşullar olarak belirler; md. 3 ve 15 ise unvan kullanımı ve mesleki faaliyet için ruhsat ile oda kaydını arar.',
     ),
     # düzey 2
     '0058': patch(
@@ -803,7 +803,7 @@ _PATCHES = {
             'E': 'Staj süresi üç yıldır',
         },
         'A',
-        'Staj bir öğrenme dönemidir; adaya meslek mensubu sıfatı KAZANDIRMAZ. Unvan ve imza yetkisi için meslek yeterlilik sınavının kazanılması, ruhsat alınması ve odaya kaydolunması gerekir (3568 md. 3, 5, 19).',
+        'Staj bir öğrenme dönemidir; adaya meslek mensubu sıfatı KAZANDIRMAZ. Unvan ve imza yetkisi için meslek yeterlilik sınavının kazanılması, ruhsat alınması ve odaya kaydolunması gerekir (3568 md. 3, 5 ve 15).',
     ),
     # düzey 2
     '0059': patch(
@@ -816,7 +816,7 @@ _PATCHES = {
             'E': 'Staj süresi üç yıldır',
         },
         'D',
-        'Doğru sıra: öğrenim → staja giriş sınavı → üç yıllık staj → meslek yeterlilik sınavı → ruhsat ve oda kaydı (3568 md. 4, 5, 19). Meslek yeterlilik sınavı staja giriş sınavından SONRA ve staj tamamlandıktan sonra girilir.',
+        'Doğru sıra: öğrenim → staja giriş sınavı → üç yıllık staj → meslek yeterlilik sınavı → ruhsat ve oda kaydı (3568 md. 4, 5, 6 ve 15). Meslek yeterlilik sınavı staja giriş sınavından SONRA ve staj tamamlandıktan sonra girilir.',
     ),
     # düzey 3
     '0060': patch(
@@ -829,7 +829,7 @@ _PATCHES = {
             'E': 'Yalnız II',
         },
         'A',
-        "II YANLIŞ: 3568 md. 6 en az ON YIL SMMM'lik arar. III YANLIŞ: staja giriş sınavı yalnızca stajın başlangıcına kapı açar; unvan için staj ve meslek yeterlilik sınavı gerekir. I (md. 5/A-b) ve IV (md. 4-5) doğrudur.",
+        "II YANLIŞ: 3568 md. 9 en az ON YIL SMMM'lik arar. III YANLIŞ: staja giriş sınavı yalnızca stajın başlangıcına kapı açar; unvan için staj ve meslek yeterlilik sınavı gerekir. I (md. 5/A-b) ve IV (md. 4-5) doğrudur.",
     ),
 }
 

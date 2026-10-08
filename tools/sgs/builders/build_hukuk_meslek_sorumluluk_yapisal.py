@@ -195,7 +195,7 @@ _PATCHES = {
             'E': 'Tabela reklam sayılmaz; iş elde etmeye yönelik gazete ilanı reklam yasağını ihlal eder',
         },
         'E',
-        "3568 md. 44: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı ya da dolaysız REKLAM SAYILABİLECEK faaliyetlerde bulunamazlar. Yönetmelikte belirlenen ölçüler içindeki tabela ve kartvizit reklam sayılmaz; ücret vurgusuyla iş çağrısı ise ayrıca md. 46 ve 47'ye de aykırıdır.",
+        "3568 md. 45: meslek mensupları iş elde etmek için açık veya kapalı, dolaylı ya da dolaysız REKLAM SAYILABİLECEK faaliyetlerde bulunamazlar. Yönetmelikte belirlenen ölçüler içindeki tabela ve kartvizit reklam sayılmaz; ücret vurgusuyla iş çağrısı ise ayrıca md. 46'ya ve Haksız Rekabet Yönetmeliğine de aykırıdır.",
     ),
     # düzey 3
     '0012': patch(
@@ -208,7 +208,7 @@ _PATCHES = {
             'E': 'Meslek mensubu limited şirkete de ortak olabilir',
         },
         'D',
-        '3568 md. 45: meslek mensupları meslek icrası sırasında ticari faaliyette bulunamaz ve ticari mümessil, ticari vekil ya da acente olarak çalışamazlar. Ancak sermayesi paylara bölünmüş komandit şirketlerde komanditer, limited ve anonim şirketlerde ortak olabilirler.',
+        '3568 md. 45 meslek mensuplarının ticari faaliyette bulunmasını yasaklar; Çalışma Usul ve Esasları Yönetmeliği md. 43 ayrıca ticari mümessil, ticari vekil ya da acente olarak çalışmayı yasaklar. Aynı hüküm yalnız adi ve kolektif şirket ortaklığını ve komandite ortaklığı yasakladığından limited ve anonim şirketlere ortak olunabilir.',
     ),
     # düzey 2
     '0013': patch(
@@ -234,7 +234,7 @@ _PATCHES = {
             'E': 'Her iki davranış da haksız rekabet oluşturur ve disiplin sorumluluğu doğurur',
         },
         'E',
-        '3568 md. 46 tarifenin altında iş kabul edilemeyeceğini, md. 47 ise meslek mensupları arasında haksız rekabetin yasak olduğunu düzenler. Meslektaşı küçük düşüren beyanlar ve tarifenin altında fiyatla iş almaya çalışmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
+        '3568 md. 46 tarifenin altında iş kabul edilemeyeceğini, Haksız Rekabet Yönetmeliği ise meslek mensupları arasında haksız rekabetin yasak olduğunu düzenler. Meslektaşı küçük düşüren beyanlar ve tarifenin altında fiyatla iş almaya çalışmak haksız rekabet sayılır; md. 48 uyarınca disiplin cezası gerektirir.',
     ),
     # düzey 3
     '0015': patch(
@@ -247,7 +247,7 @@ _PATCHES = {
             'E': 'II ve III',
         },
         'D',
-        'I, II ve IV doğrudur (3568 md. 45 ve 44). III YANLIŞTIR: md. 45 meslek mensuplarının sermayesi paylara bölünmüş komandit şirketlerde komanditer ortak, limited ve anonim şirketlerde ORTAK olmasına açıkça izin verir.',
+        'I ve IV 3568 md. 45 uyarınca, II Çalışma Usul ve Esasları Yönetmeliği md. 43 uyarınca doğrudur. III YANLIŞTIR: aynı yönetmelik yalnız adi ve kolektif şirket ortaklığını ve komandite ortaklığı yasaklar; limited ve anonim şirketlere ORTAK olmak serbesttir.',
     ),
     # düzey 3
     '0016': patch(
@@ -351,7 +351,7 @@ _PATCHES = {
             'E': 'Ortaklık tarafsızlığı zedelediğinden şirkete mesleki hizmet verilemez; bildirim bunu gidermez',
         },
         'B',
-        '3568 md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; serbest muhasebeci mali müşavir ortağı olduğu şirketin defterlerini tutabilir. Ortaklık ruhsatı düşürmez ve ticari vekillik yasağını (md. 45) kaldırmaz.',
+        'Meslek mevzuatı (Çalışma Usul ve Esasları Yönetmeliği md. 43) yalnız adi ve kolektif şirket ortaklığını ve komandite ortaklığı yasaklar; meslek mensupları limited ve anonim şirketlere ORTAK olabilir. Ortağı olunan firmaların işlerine bakma yasağı yalnızca YEMİNLİ MALİ MÜŞAVİRLER için öngörülmüştür; serbest muhasebeci mali müşavir ortağı olduğu şirketin defterlerini tutabilir. Ortaklık ruhsatı düşürmez ve ticari vekillik yasağını (Çalışma Usul ve Esasları Yönetmeliği md. 43) kaldırmaz.',
     ),
     # düzey 2
     '0024': patch(
@@ -429,7 +429,7 @@ _PATCHES = {
             'E': 'Meslek mensubu hizmet akdiyle bağlı çalışırken serbest meslek faaliyeti yapamaz',
         },
         'A',
-        '3568 md. 45: meslek mensupları TİCARİ MÜMESSİL, ticari vekil ya da acente olarak ÇALIŞAMAZLAR. Buna karşılık aynı madde limited ve anonim şirketlere ortak olmalarına izin verir; ticaret ve bağımlı çalışma ise yasaktır.',
+        'Çalışma Usul ve Esasları Yönetmeliği md. 43: meslek mensupları TİCARİ MÜMESSİL, ticari vekil ya da acente olarak ÇALIŞAMAZLAR. Buna karşılık aynı hüküm limited ve anonim şirketlere ortak olmayı yasaklamaz; ticari faaliyet ise 3568 md. 45 uyarınca yasaktır.',
     ),
     # düzey 2
     '0030': patch(
@@ -446,7 +446,7 @@ _PATCHES = {
     ),
     # düzey 1
     '0031': patch(
-        'Meslek mensubunun mesleki faaliyeti nedeniyle uğradığı zararı tazmin borcu doğuran sorumluluk türü aşağıdakilerden hangisidir?',
+        'Meslek mensubunun mesleki faaliyetinde kusuruyla başkasına verdiği zararı tazmin borcu doğuran sorumluluk türü aşağıdakilerden hangisidir?',
         {
             'A': 'Disiplin sorumluluğu türü',
             'B': 'Cezai sorumluluk',
@@ -533,7 +533,7 @@ _PATCHES = {
             'E': 'Kendi tuttuğu kayıtları tasdik etmek kendi kendini denetleme tehdidi doğurur; ayrıca YMM defter tutamaz',
         },
         'E',
-        'Kendi tuttuğu kayıtları sonradan tasdik etmek KENDİ KENDİNİ DENETLEME tehdidi doğurur. Ayrıca 3568 md. 45 uyarınca yeminli mali müşavirler muhasebe ile ilgili defterleri TUTAMAZ; tasdik ve defter tutma işleri unvan bakımından da ayrılmıştır.',
+        'Kendi tuttuğu kayıtları sonradan tasdik etmek KENDİ KENDİNİ DENETLEME tehdidi doğurur. Ayrıca 3568 md. 2/B uyarınca yeminli mali müşavirler muhasebe ile ilgili defterleri TUTAMAZ; tasdik ve defter tutma işleri unvan bakımından da ayrılmıştır.',
     ),
     # düzey 2
     '0038': patch(
@@ -546,7 +546,7 @@ _PATCHES = {
             'E': 'Önceki meslek mensubunun ücret alacağı araştırılır',
         },
         'B',
-        'Meslek Ahlak Kuralları ve 3568 md. 47: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce ÖNCEKİ MESLEK MENSUBUNA yazılı bildirimde bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önlemeye yöneliktir.',
+        'Meslek Ahlak Kuralları ve Haksız Rekabet Yönetmeliği: bir meslektaşın işini devralmak isteyen meslek mensubu, işi kabul etmeden önce ÖNCEKİ MESLEK MENSUBUNA yazılı bildirimde bulunur ve ücret alacağı durumunu araştırır. Bu yükümlülük haksız rekabeti önlemeye yöneliktir.',
     ),
     # düzey 2
     '0039': patch(
@@ -559,7 +559,7 @@ _PATCHES = {
             'E': 'Meslek mensubu, iş elde etmek amacıyla dolaylı yollarla tanıtım yapabilir',
         },
         'E',
-        '3568 md. 44: meslek mensupları iş elde etmek için AÇIK VEYA KAPALI, DOLAYLI YA DA DOLAYSIZ reklam sayılabilecek faaliyetlerde bulunamazlar. Yasak dolaylı yolları da kapsar.',
+        '3568 md. 45: meslek mensupları iş elde etmek için AÇIK VEYA KAPALI, DOLAYLI YA DA DOLAYSIZ reklam sayılabilecek faaliyetlerde bulunamazlar. Yasak dolaylı yolları da kapsar.',
     ),
     # düzey 2
     '0040': patch(
@@ -585,7 +585,7 @@ _PATCHES = {
             'E': 'Meslek mensubu iş almak amacıyla asgari ücret tarifesinin altında fiyat verebilir',
         },
         'E',
-        '3568 md. 46: meslek mensupları tarifede yazılı ASGARİ ücretin altında iş kabul edemezler; aksi davranış md. 48 uyarınca disiplin cezası gerektirir ve md. 47 anlamında haksız rekabet oluşturur.',
+        '3568 md. 46: meslek mensupları tarifede yazılı ASGARİ ücretin altında iş kabul edemezler; aksi davranış md. 48 uyarınca disiplin cezası gerektirir ve Haksız Rekabet Yönetmeliği anlamında haksız rekabet oluşturur.',
     ),
     # düzey 2
     '0042': patch(
@@ -676,7 +676,7 @@ _PATCHES = {
             'E': "3568 sayılı Kanun'un 12. maddesi",
         },
         'C',
-        '3568 md. 45: meslek mensupları meslek icrası sırasında ticari faaliyette bulunamaz, hizmet akdiyle çalışamaz ve ticari mümessil, ticari vekil ya da acente olarak görev alamazlar; ancak limited ve anonim şirketlere ortak olabilirler.',
+        '3568 md. 45 meslek mensuplarının ticari faaliyette bulunmasını ve unvanlarıyla hizmet akdiyle çalışmasını yasaklar; Çalışma Usul ve Esasları Yönetmeliği md. 43 ayrıca ticari mümessil, ticari vekil ya da acente olarak görev almayı yasaklar. Limited ve anonim şirketlere ortak olmak ise serbesttir.',
     ),
     # düzey 2
     '0049': patch(
@@ -689,7 +689,7 @@ _PATCHES = {
             'E': 'Red serbesttir ancak gerekçenin iş sahibine açıklanması yasaktır',
         },
         'C',
-        'Meslek Ahlak Kuralları: meslek mensubu bağımsızlığını ve tarafsızlığını koruyamayacağı ya da yeterliğinin yetmediği işleri KABUL ETMEMEKLE yükümlüdür. Red bir yükümlülüğün yerine getirilmesidir; oda iznine bağlı değildir ve md. 47 anlamında haksız rekabet oluşturmaz.',
+        'Meslek Ahlak Kuralları: meslek mensubu bağımsızlığını ve tarafsızlığını koruyamayacağı ya da yeterliğinin yetmediği işleri KABUL ETMEMEKLE yükümlüdür. Red bir yükümlülüğün yerine getirilmesidir; oda iznine bağlı değildir ve haksız rekabet oluşturmaz.',
     ),
     # düzey 2
     '0050': patch(
@@ -767,7 +767,7 @@ _PATCHES = {
             'E': 'Yalnızca ücret teklifi aykırılık oluşturur',
         },
         'B',
-        "3568 md. 47 meslek mensupları arasında haksız rekabeti yasaklar; meslektaşı küçük düşüren beyanlar ve md. 46'ya aykırı tarife altı teklif birlikte aykırılık oluşturur ve md. 48 uyarınca disiplin cezası gerektirir.",
+        "Haksız Rekabet Yönetmeliği meslek mensupları arasında haksız rekabeti yasaklar; meslektaşı küçük düşüren beyanlar ve md. 46'ya aykırı tarife altı teklif birlikte aykırılık oluşturur ve md. 48 uyarınca disiplin cezası gerektirir.",
     ),
     # düzey 2
     '0056': patch(
@@ -806,7 +806,7 @@ _PATCHES = {
             'E': 'Disiplin cezasını ilk derecede Birlik disiplin kurulu verir; oda disiplin kurulu itiraz merciidir',
         },
         'D',
-        '3568 md. 18, 21 ve 48: disiplin cezası verme yetkisi ilk derecede meslek mensubunun kayıtlı olduğu ODANIN DİSİPLİN KURULUNA aittir; Birlik disiplin kurulu itiraz merciidir. Kesinleşen cezaya karşı idari yargı yolu açıktır.',
+        '3568 md. 25, 26 ve 48: disiplin cezası verme yetkisi ilk derecede meslek mensubunun kayıtlı olduğu ODANIN DİSİPLİN KURULUNA aittir; Birlik disiplin kurulu itiraz merciidir. Kesinleşen cezaya karşı idari yargı yolu açıktır.',
     ),
     # düzey 2
     '0059': patch(
@@ -832,7 +832,7 @@ _PATCHES = {
             'E': 'Yalnız I',
         },
         'B',
-        "I YANLIŞ: VUK mükerrer md. 227 ve 3568'den doğan kanuni sorumluluk sözleşmeyle kaldırılamaz. III YANLIŞ: md. 45 meslek mensuplarının limited ve anonim şirketlere ORTAK OLMASINA izin verir. II (md. 12/4) ve IV (md. 43) doğrudur.",
+        "I YANLIŞ: VUK mükerrer md. 227 ve 3568'den doğan kanuni sorumluluk sözleşmeyle kaldırılamaz. III YANLIŞ: meslek mensupları limited ve anonim şirketlere ORTAK olabilir (Çalışma Usul ve Esasları Yönetmeliği md. 43). II (md. 12/4) ve IV (md. 43) doğrudur.",
     ),
 }
 
