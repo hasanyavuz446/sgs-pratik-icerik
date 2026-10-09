@@ -340,7 +340,7 @@ _PATCHES = {
             'E': '2.500',
         },
         'C',
-        "Para çarpanı m = (1 + c) / (c + rr)'dir. Başlangıçta m = 1,30 / 0,50 = 2,6 ve para arzı 2,6 × 500 = 1.300; indirimden sonra m = 1,30 / 0,40 = 3,25 ve para arzı 1.625 olur. Artış 1.625 − 1.300 = **325** birimdir. 1.625 yeni para arzı düzeyidir; 2.500 nakit oranını ihmal eden 1/rr çarpanıyla, 250 ise payda (1 + c) unutularak bulunur.",
+        "Para çarpanı m = (1 + c) / (c + rr)'dir. Başlangıçta m = 1,30 / 0,50 = 2,6 ve para arzı 2,6 × 500 = 1.300; indirimden sonra m = 1,30 / 0,40 = 3,25 ve para arzı 1.625 olur. Artış 1.625 − 1.300 = **325** birimdir. 1.625 yeni para arzı düzeyidir; 2.500 nakit oranını ihmal eden 1/rr çarpanıyla, 250 ise paydaki (1 + c) unutularak (1 / (c + rr)) bulunur.",
         'Para, banka ve dış ekonomi: para çarpanı',
     ),
     # düzey 1

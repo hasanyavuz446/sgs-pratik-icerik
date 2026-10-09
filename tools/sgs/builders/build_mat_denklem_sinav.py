@@ -175,7 +175,7 @@ q("Bir otopark ilk saat için 60 ₺, sonraki her saat için 25 ₺ ücret almak
   "3", ["2", "4", "5", "6"],
   "n saatlik ücret 60 + 25(n − 1) = 25n + 35'tir. 160 < 25n + 35 < 260 ise 5 < n < 9; n = 6, 7, 8 olmak üzere 3 farklı süre vardır.",
   verify=(len([n_ for n_ in range(1, 30) if 160 < 25*n_ + 35 < 260]), 3))
-q("Yerden atılan bir topun t saniye sonraki yüksekliği h(t) = −5t² + 20t + 25 metredir. Topun yüksekliğinin 40 metreden fazla olduğu zaman aralığı kaç saniye sürer?",
+q("Yerden 25 metre yükseklikteki bir noktadan yukarı doğru atılan bir topun t saniye sonraki yüksekliği h(t) = −5t² + 20t + 25 metredir. Topun yüksekliğinin 40 metreden fazla olduğu zaman aralığı kaç saniye sürer?",
   "2", ["1", "3", "4", "5/2"],
   "−5t² + 20t + 25 > 40 ise t² − 4t + 3 < 0, yani (t − 1)(t − 3) < 0 ve 1 < t < 3. Süre 2 saniyedir.",
   verify=(max(sp.solve(-5*x**2 + 20*x + 25 - 40, x)) - min(sp.solve(-5*x**2 + 20*x + 25 - 40, x)), 2))

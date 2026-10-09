@@ -353,7 +353,7 @@ q("y = x² − 6x + 5 parabolünün tepe noktası ile parabolün x eksenini kest
   verify=((5 - 1) * sp.Abs((x**2 - 6*x + 5).subs(x, 3)) / 2, 8))
 
 q("y = x² − 4 parabolünün x eksenini kestiği iki nokta arasındaki uzaklık kaç birimdir?",
-  "4", ["2", "8", "16", "√4"],
+  "4", ["2", "8", "16", "2√2"],
   "x eksenini kesim için y = 0 alınır: x² − 4 = 0 → x = −2 ve x = 2. İki nokta arasındaki "
   "uzaklık |2 − (−2)| = 4 birimdir.",
   verify=(max(sp.solve(x**2 - 4, x)) - min(sp.solve(x**2 - 4, x)), 4))

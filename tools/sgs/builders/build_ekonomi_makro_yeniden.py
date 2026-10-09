@@ -60,7 +60,7 @@ _PATCHES = {
             'E': '150',
         },
         'A',
-        'Y = C + I + G + NX ve özel tasarruf S = Y − T − C olduğundan S = I + (G − T) + NX olur. S = 200 + (300 − 250) + (−30) = **220**. Özel tasarruf yatırımları, bütçe açığını (50) ve dış fazlayı finanse eder; dış açık (−30) ise yurt dışı tasarrufun kullanıldığını gösterir.',
+        'Y = C + I + G + NX ve özel tasarruf S = Y − T − C olduğundan S = I + (G − T) + NX olur. S = 200 + (300 − 250) + (−30) = **220**. Özel tasarruf (220) ile yurt dışı tasarruf (dış açık, 30) birlikte yatırımları (200) ve bütçe açığını (50) finanse eder: 220 + 30 = 200 + 50.',
         'Makroekonomi: milli gelir özdeşliği',
     ),
     # düzey 2

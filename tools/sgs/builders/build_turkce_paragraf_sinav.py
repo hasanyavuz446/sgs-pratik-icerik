@@ -1320,7 +1320,7 @@ _PATCHES = {
     '0100': patch(
         "Toplantı saat 14 ( ) 30'da başladı ( ) Dr ( ) Ayşe Demir sunumunda üç konuya değindi ( ) maliyet, kalite ve teslim süresi ( ) Toplantının sonunda her konu için bir çalışma grubu oluşturuldu.\n\nBu parçada ayraçlarla ( ) belirtilen yerlere aşağıdaki noktalama işaretlerinden hangileri sırasıyla getirilmelidir?",
         {
-            'A': '(:) (.) (.) (:) (.)',
+            'A': '(:) (.) (.) (;) (.)',
             'B': '(.) (.) (.) (:) (.)',
             'C': '(.) (,) (.) (;) (.)',
             'D': '(.) (.) (,) (:) (...)',
