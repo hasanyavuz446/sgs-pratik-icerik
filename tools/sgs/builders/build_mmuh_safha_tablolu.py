@@ -872,7 +872,7 @@ _PATCHES = {
             'E': '%30',
         },
         'E',
-        "DSYM miktarı = 4.000 + 12.500 − 14.000 = 2.500 adet (DSYM tamamlanma derecesi 1.500 ÷ 2.500 = %60). FIFO: 14.000 − (4.000 × x) + 1.500 = 14.300 → 4.000x = 1.200 → x = **%30**. Yani DBYM'nin %70'u bu dönemde tamamlanmıştır.",
+        "DSYM miktarı = 4.000 + 12.500 − 14.000 = 2.500 adet (DSYM tamamlanma derecesi 1.500 ÷ 2.500 = %60). FIFO: 14.000 − (4.000 × x) + 1.500 = 14.300 → 4.000x = 1.200 → x = **%30**. Yani DBYM'nin %70'i bu dönemde tamamlanmıştır.",
         'Maliyet muhasebesi - safha maliyeti (FIFO)',
     ),
 }

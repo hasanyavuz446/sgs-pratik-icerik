@@ -317,7 +317,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0021': patch(
-        'Bir işletme dönem sonunda şu envanter işlemlerini yapmıştır: stoklar için 12.000 ₺ değer düşüklüğü karşılığı ayrılmış; döviz cinsi alacaklar değerlenerek 8.000 ₺ kur farkı kaydedilmiş; alacak senetleri için 3.000 ₺, borç senetleri için 2.000 ₺ reeskont hesaplanmış; tahakkuk etmiş ancak ödenmemiş 5.000 ₺ elektrik gideri ile tahsil edilmemiş 4.000 ₺ mevduat faizi kaydedilmiştir.\n\nBuna göre bu envanter işlemlerinin dönem kârına net etkisi aşağıdakilerden hangisidir?',
+        'Bir işletme dönem sonunda şu envanter işlemlerini yapmıştır: stoklar için 12.000 ₺ değer düşüklüğü karşılığı ayrılmış; döviz cinsi alacaklar kurun yükselmesi nedeniyle değerlenerek 8.000 ₺ kambiyo kârı kaydedilmiş; alacak senetleri için 3.000 ₺, borç senetleri için 2.000 ₺ reeskont hesaplanmış; tahakkuk etmiş ancak ödenmemiş 5.000 ₺ elektrik gideri ile tahsil edilmemiş 4.000 ₺ mevduat faizi kaydedilmiştir.\n\nBuna göre bu envanter işlemlerinin dönem kârına net etkisi aşağıdakilerden hangisidir?',
         {
             'A': '6.000 ₺ artırır',
             'B': '10.000 ₺ azaltır',

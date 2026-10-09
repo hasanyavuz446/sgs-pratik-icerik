@@ -111,7 +111,7 @@ _PATCHES = {
             'E': '3.000 ₺ fazla yükleme',
         },
         'C',
-        "S-21'a tahmini olarak 9.000 ₺ yüklenmiştir. Fiili payı 24.000 ₺ × 500 / 1.200 = 10.000 ₺'dir. Fark 1.000 ₺; yüklenen tutar fiiliden az olduğundan eksik yükleme vardır.",
+        "S-21'e tahmini olarak 9.000 ₺ yüklenmiştir. Fiili payı 24.000 ₺ × 500 / 1.200 = 10.000 ₺'dir. Fark 1.000 ₺; yüklenen tutar fiiliden az olduğundan eksik yükleme vardır.",
     ),
     # düzey 3
     '0007': patch(
@@ -206,7 +206,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0014': patch(
-        "Arı Elektronik işletmesinde Kantin yardımcı gider yerinin birinci dağıtım toplamı 24.000 ₺, Bakım yardımcı gider yerininki 30.000 ₺'dir. Kantin giderleri çalışan sayısına göre dağıtılmaktadır; işletmede toplam 116 çalışan bulunmakta olup bunların 12'i Bakım'da, 20'si Kantin'de çalışmaktadır.\n\nKademeli yöntemde Kantin önce dağıtıldığına göre Bakım'ın dağıtacağı toplam tutar kaç ₺'dir?",
+        "Arı Elektronik işletmesinde Kantin yardımcı gider yerinin birinci dağıtım toplamı 24.000 ₺, Bakım yardımcı gider yerininki 30.000 ₺'dir. Kantin giderleri çalışan sayısına göre dağıtılmaktadır; işletmede toplam 116 çalışan bulunmakta olup bunların 12'si Bakım'da, 20'si Kantin'de çalışmaktadır.\n\nKademeli yöntemde Kantin önce dağıtıldığına göre Bakım'ın dağıtacağı toplam tutar kaç ₺'dir?",
         {
             'A': '33.000 ₺',
             'B': '29.000 ₺',
@@ -319,7 +319,7 @@ _PATCHES = {
             'E': 'Z = 52.000 + 0,20Y',
         },
         'B',
-        "Her yardımcı gider yerinin toplamı, kendi birinci dağıtım tutarı ile diğerinden aldığı payın toplamıdır. Y, Z'nin hizmetinin %20'ini aldığından Y = 64.000 + 0,20Z yazılır.",
+        "Her yardımcı gider yerinin toplamı, kendi birinci dağıtım tutarı ile diğerinden aldığı payın toplamıdır. Y, Z'nin hizmetinin %20'sini aldığından Y = 64.000 + 0,20Z yazılır.",
     ),
     # düzey 3
     '0023': patch(
@@ -349,7 +349,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0025': patch(
-        "Sipariş maliyet sistemini uygulayan Nehir Mobilya işletmesinde dönemde iki sipariş üretilmiştir:\n\n|  | S-07 | S-08 |\n|---|---|---|\n| DİMM (₺) | 9.000 | 14.000 |\n| DİG (₺) | 10.000 | 25.000 |\n| Makine saati | 300 | 500 |\n\nDönem içinde genel üretim giderleri her siparişe direkt işçilik giderinin %80'ı oranında tahmini olarak yüklenmiştir. Dönem sonunda fiili genel üretim gideri 28.800 ₺ olarak gerçekleşmiş ve bu tutar siparişlere makine saatine göre dağıtılmıştır.\n\nBuna göre S-08 için genel üretim gideri yükleme farkı aşağıdakilerden hangisidir?",
+        "Sipariş maliyet sistemini uygulayan Nehir Mobilya işletmesinde dönemde iki sipariş üretilmiştir:\n\n|  | S-07 | S-08 |\n|---|---|---|\n| DİMM (₺) | 9.000 | 14.000 |\n| DİG (₺) | 10.000 | 25.000 |\n| Makine saati | 300 | 500 |\n\nDönem içinde genel üretim giderleri her siparişe direkt işçilik giderinin %80'i oranında tahmini olarak yüklenmiştir. Dönem sonunda fiili genel üretim gideri 28.800 ₺ olarak gerçekleşmiş ve bu tutar siparişlere makine saatine göre dağıtılmıştır.\n\nBuna göre S-08 için genel üretim gideri yükleme farkı aşağıdakilerden hangisidir?",
         {
             'A': '800 ₺ fazla yükleme',
             'B': '2.000 ₺ fazla yükleme',
@@ -358,11 +358,11 @@ _PATCHES = {
             'E': '3.000 ₺ fazla yükleme',
         },
         'B',
-        "S-08'a tahmini olarak 20.000 ₺ yüklenmiştir. Fiili payı 28.800 ₺ × 500 / 800 = 18.000 ₺'dir. Fark 2.000 ₺; yüklenen tutar fiiliden fazla olduğundan fazla yükleme vardır.",
+        "S-08'e tahmini olarak 20.000 ₺ yüklenmiştir. Fiili payı 28.800 ₺ × 500 / 800 = 18.000 ₺'dir. Fark 2.000 ₺; yüklenen tutar fiiliden fazla olduğundan fazla yükleme vardır.",
     ),
     # düzey 3
     '0026': patch(
-        "Kaya Mobilya işletmesinde Kesim gider yerinde genel üretim gideri makine saati başına 20 ₺, Montaj gider yerinde ise direkt işçilik giderinin %60'i oranında yüklenmektedir. D mamulünden 500 adet üretilmiş; mamul Kesim'de 1.500 makine saati çalışmış, Montaj'da 40.000 ₺ direkt işçilik gideri almıştır. Mamulün toplam direkt ilk madde ve malzeme gideri 70.000 ₺, toplam direkt işçilik gideri 65.000 ₺'dir.\n\nD mamulünün birim üretim maliyeti kaç ₺'dir?",
+        "Kaya Mobilya işletmesinde Kesim gider yerinde genel üretim gideri makine saati başına 20 ₺, Montaj gider yerinde ise direkt işçilik giderinin %60'ı oranında yüklenmektedir. D mamulünden 500 adet üretilmiş; mamul Kesim'de 1.500 makine saati çalışmış, Montaj'da 40.000 ₺ direkt işçilik gideri almıştır. Mamulün toplam direkt ilk madde ve malzeme gideri 70.000 ₺, toplam direkt işçilik gideri 65.000 ₺'dir.\n\nD mamulünün birim üretim maliyeti kaç ₺'dir?",
         {
             'A': '398 ₺',
             'B': '330 ₺',
@@ -683,7 +683,7 @@ _PATCHES = {
             'E': 'Y = 100.000 + 0,10Z',
         },
         'D',
-        "Her yardımcı gider yerinin toplamı, kendi birinci dağıtım tutarı ile diğerinden aldığı payın toplamıdır. Y, Z'nin hizmetinin %10'ini aldığından Y = 120.000 + 0,10Z yazılır.",
+        "Her yardımcı gider yerinin toplamı, kendi birinci dağıtım tutarı ile diğerinden aldığı payın toplamıdır. Y, Z'nin hizmetinin %10'unu aldığından Y = 120.000 + 0,10Z yazılır.",
     ),
     # düzey 3
     '0051': patch(
@@ -804,7 +804,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0060': patch(
-        "Kuzey Plastik işletmesinin dönem elektrik faturası 96.000 ₺'dir ve sayaç ölçümlerine göre dağıtılmaktadır.\n\n| Gider yeri | Tüketim (kWh) |\n|---|---|\n| Kalıp | 6.000 |\n| Montaj | 3.000 |\n| Enerji | 2.000 |\n| Depo | 1.000 |\n\nelektrik gideri birinci dağıtımında Montaj gider yerinin payı kaç ₺'dir?",
+        "Kuzey Plastik işletmesinin dönem elektrik faturası 96.000 ₺'dir ve sayaç ölçümlerine göre dağıtılmaktadır.\n\n| Gider yeri | Tüketim (kWh) |\n|---|---|\n| Kalıp | 6.000 |\n| Montaj | 3.000 |\n| Enerji | 2.000 |\n| Depo | 1.000 |\n\nElektrik giderinin birinci dağıtımında Montaj gider yerinin payı kaç ₺'dir?",
         {
             'A': '48.000 ₺',
             'B': '32.000 ₺',
@@ -813,7 +813,7 @@ _PATCHES = {
             'E': '16.000 ₺',
         },
         'C',
-        "Dağıtım anahtarı tüketim (kwh) toplamı 12.000'dir. Montaj gider yerinin payı 96.000 ₺ × 3.000 / 12.000 = 24.000 ₺.",
+        "Dağıtım anahtarı tüketim (kWh) toplamı 12.000'dir. Montaj gider yerinin payı 96.000 ₺ × 3.000 / 12.000 = 24.000 ₺.",
     ),
 }
 

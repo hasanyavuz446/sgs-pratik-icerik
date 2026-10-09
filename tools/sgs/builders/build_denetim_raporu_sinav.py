@@ -598,8 +598,8 @@ _PATCHES = {
     '0044': patch(
         "Denetçi, rapor tarihinden sonra ancak tablolar yayımlanmadan önce, rapor tarihinde bilinseydi raporu değiştirebilecek bir olgu öğrenmiştir.\n\nBDS 560'a göre bu durumla ilgili aşağıdakilerden hangisi yanlıştır?",
         {
-            'A': 'Denetçi ilk olarak kamuoyuna duyuru yapar',
-            'B': 'Denetçi konuyu yönetimle görüşür',
+            'A': 'Denetçi konuyu yönetimle görüşür',
+            'B': 'Denetçi ilk olarak kamuoyuna duyuru yapar',
             'C': 'Gerektiğinde üst yönetimden sorumlu olanlarla görüşülür',
             'D': 'Tabloların değiştirilmesi gerekip gerekmediği belirlenir',
             'E': 'Yönetimin konuyu nasıl ele alacağı sorgulanır',

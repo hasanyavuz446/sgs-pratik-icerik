@@ -635,7 +635,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0047': patch(
-        'Denetçi. 7.200 kalemlik alım faturası anakütlesinden sistematik seçimle 120 kalem seçecektir. Rastgele belirlenen başlangıç noktası 23. kalemdir.\n\nSeçilecek 4. kalem anakütlenin kaçıncı kalemidir?',
+        'Denetçi, 7.200 kalemlik alım faturası anakütlesinden sistematik seçimle 120 kalem seçecektir. Rastgele belirlenen başlangıç noktası 23. kalemdir.\n\nSeçilecek 4. kalem anakütlenin kaçıncı kalemidir?',
         {
             'A': '203',
             'B': '143',

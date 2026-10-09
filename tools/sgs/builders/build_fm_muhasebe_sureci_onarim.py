@@ -377,12 +377,12 @@ _PATCHES = {
         {
             'A': 'İşletmenin uzun vadeli banka kredilerini ve çıkardığı tahvil borçlarını dönem boyunca ayrıntılı biçimde izleyen sınıftır.',
             'B': 'Ticaret işletmelerinde kullanılır; üretim yapan sanayi işletmelerinde açılmaz.',
-            'C': 'Giderlerin çeşit (7/A) veya yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.',
+            'C': 'Giderlerin fonksiyon (7/A) veya çeşit (7/B) esasına göre izlenip mamul/hizmet maliyetlerine yüklenmesini sağlar.',
             'D': 'İşletmenin özkaynak hareketlerini, sermaye artış ve azalışlarını izlemek için kullanılır.',
             'E': 'Nazım hesaplarla aynı işlevi görür; mali tablo dengesini etkilemez.',
         },
         'C',
-        '**7 Maliyet Hesapları**, giderlerin çeşitlerine (7/A) veya gider yerlerine göre izlenip mamul/hizmet maliyetlerine yüklenmesi içindir. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.',
+        '**7 Maliyet Hesapları**, giderlerin fonksiyon esasına (7/A, yansıtma hesaplarıyla) veya çeşit esasına (7/B, 790-799) göre izlenip mamul/hizmet maliyetlerine yüklenmesi içindir. İşletmeler 7/A veya 7/B seçeneğinden birini uygular.',
         "1 Sıra No'lu MSUGT - Maliyet hesapları (7/A-7/B)",
     ),
     # düzey 2

@@ -687,7 +687,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0051': patch(
-        'Hesap bakiyelerine ilişkin yönetim beyanı ile bu beyanı test eden prosedür aşağıdakilerden hangisinde yanlış eşleştirilmiştir?',
+        'Yönetim beyanı ile bu beyanı test eden prosedür aşağıdakilerden hangisinde yanlış eşleştirilmiştir?',
         {
             'A': 'Dönem ayırımı – Yıl sonu sevkiyatların incelenmesi',
             'B': 'Haklar – Tapu kayıtlarının incelenmesi',

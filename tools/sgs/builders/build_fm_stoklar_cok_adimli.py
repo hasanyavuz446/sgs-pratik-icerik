@@ -65,7 +65,7 @@ _PATCHES = {
     ),
     # düzey 2
     '0003': patch(
-        "İşletme liste fiyatı 100.000 ₺ olan ticari malı üç ay vadeyle 106.000 ₺'ye satın almıştır. Mal için ayrıca 2.000 ₺ nakliye, 500 ₺ taşıma sigortası ve 800 ₺ yükleme-boşaltma ücreti ödenmiştir.\n\nAşağıdakilerden hangisi satın alınan ticari malın stok maliyetine dâhil edilmez?",
+        "İşletme liste fiyatı 100.000 ₺ olan ticari malı üç ay vadeyle 106.000 ₺'ye satın almıştır. Mal için ayrıca 2.000 ₺ nakliye, 500 ₺ taşıma sigortası ve 800 ₺ yükleme-boşaltma ücreti ödenmiştir.\n\nTMS 2'ye göre aşağıdakilerden hangisi satın alınan ticari malın stok maliyetine dâhil edilmez?",
         {
             'A': 'Alışa ilişkin yükleme-boşaltma giderleri',
             'B': 'Malın alış bedeli',
