@@ -124,13 +124,13 @@ _PATCHES = {
         'Bir kiracının finansal tablolarının sunumuna ilişkin olarak aşağıdakilerden hangisi söylenemez?',
         {
             'A': 'Kullanım hakkı varlıkları ayrı sunulur veya dipnotta açıklanır',
-            'B': 'Kira ödemelerinin tamamı faaliyet faaliyetlerinde gösterilir',
+            'B': 'Kira ödemelerinin tamamı işletme faaliyetlerinde gösterilir',
             'C': 'Anapara ödemeleri finansman faaliyetlerinde sınıflandırılır',
-            'D': 'Kısa vadeli kiralama ödemeleri faaliyet faaliyetlerinde gösterilir',
+            'D': 'Kısa vadeli kiralama ödemeleri işletme faaliyetlerinde gösterilir',
             'E': 'Kira yükümlülüğündeki faiz gideri finansman gideridir',
         },
         'B',
-        "TFRS 16 p. 47-50'ye göre kullanım hakkı varlıkları ve kira yükümlülükleri ayrı sunulur veya açıklanır; faiz finansman gideridir. Nakit akış tablosunda **anapara kısmı finansman faaliyetlerinde**, faiz TMS 7'ye göre, kısa vadeli ve düşük değerli kiralama ödemeleri ile yükümlülüğe dâhil edilmeyen değişken ödemeler **faaliyet faaliyetlerinde** sınıflandırılır.",
+        "TFRS 16 p. 47-50'ye göre kullanım hakkı varlıkları ve kira yükümlülükleri ayrı sunulur veya açıklanır; faiz finansman gideridir. Nakit akış tablosunda **anapara kısmı finansman faaliyetlerinde**, faiz TMS 7'ye göre, kısa vadeli ve düşük değerli kiralama ödemeleri ile yükümlülüğe dâhil edilmeyen değişken ödemeler **işletme faaliyetlerinde** sınıflandırılır.",
         'TFRS 16 p. 47-50',
     ),
     # düzey 2

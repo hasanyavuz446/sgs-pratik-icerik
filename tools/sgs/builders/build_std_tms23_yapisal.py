@@ -102,7 +102,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0006': patch(
-        "İzmir A.Ş. özellikli bir varlığın inşası için 1 Ocak 2026'da 100.000 Avro tutarında. yıllık %5 faizli bir kredi kullanmıştır. Kredi tarihinde kur 40 ₺, yıl sonunda 50 ₺'dir; yıllık faiz yıl sonu kuruyla ödenmiştir. İşletme aynı tutarı Türk lirasıyla %30 faizle borçlanabilirdi. İnşaat yıl boyunca sürmüştür ve kur farkının, TL borçlanmaya göre katlanılmayan faiz kadar olan kısmı faiz maliyetine düzeltme sayılmaktadır.\n\nBuna göre 2026 yılında aktifleştirilecek toplam borçlanma maliyeti kaç ₺'dir?",
+        "İzmir A.Ş. özellikli bir varlığın inşası için 1 Ocak 2026'da 100.000 Avro tutarında, yıllık %5 faizli bir kredi kullanmıştır. Kredi tarihinde kur 40 ₺, yıl sonunda 50 ₺'dir; yıllık faiz yıl sonu kuruyla ödenmiştir. İşletme aynı tutarı Türk lirasıyla %30 faizle borçlanabilirdi. İnşaat yıl boyunca sürmüştür ve kur farkının, TL borçlanmaya göre katlanılmayan faiz kadar olan kısmı faiz maliyetine düzeltme sayılmaktadır.\n\nBuna göre 2026 yılında aktifleştirilecek toplam borçlanma maliyeti kaç ₺'dir?",
         {
             'A': '1.200.000 ₺',
             'B': '1.000.000 ₺',
@@ -297,7 +297,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0021': patch(
-        "Zirve A.Ş. yıl boyunca inşası süren bir özellikli varlık için genel borçlanmalarından 1 Ocak 2026'da 1.000.000 ₺, 1 Temmuz 2026'da 800.000 ₺ harcama yapmıştır. Aktifleştirme oranı %30'dir ve katlanılan toplam borçlanma maliyeti hesaplanan tutardan fazladır.\n\nTMS 23'e göre 2026 yılında aktifleştirilecek borçlanma maliyeti kaç ₺'dir?",
+        "Zirve A.Ş. yıl boyunca inşası süren bir özellikli varlık için genel borçlanmalarından 1 Ocak 2026'da 1.000.000 ₺, 1 Temmuz 2026'da 800.000 ₺ harcama yapmıştır. Aktifleştirme oranı %30'dur ve katlanılan toplam borçlanma maliyeti hesaplanan tutardan fazladır.\n\nTMS 23'e göre 2026 yılında aktifleştirilecek borçlanma maliyeti kaç ₺'dir?",
         {
             'A': '300.000 ₺',
             'B': '420.000 ₺',
@@ -375,7 +375,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0027': patch(
-        "Orman A.Ş. özellikli bir varlık için genel borçlanmalarından 2.400.000 ₺ harcama yapmıştır; harcama yılın 6. ayının sonunda yapılmış ve varlık yıl sonuna kadar inşa hâlinde kalmıştır. Genel borçlanmaların aktifleştirme oranı %25'dir ve işletmenin yıl içinde katlandığı toplam borçlanma maliyeti 900.000 ₺'dir.\n\nTMS 23'e göre aktifleştirilecek borçlanma maliyeti kaç ₺'dir?",
+        "Orman A.Ş. özellikli bir varlık için genel borçlanmalarından 2.400.000 ₺ harcama yapmıştır; harcama yılın 6. ayının sonunda yapılmış ve varlık yıl sonuna kadar inşa hâlinde kalmıştır. Genel borçlanmaların aktifleştirme oranı %25'tir ve işletmenin yıl içinde katlandığı toplam borçlanma maliyeti 900.000 ₺'dir.\n\nTMS 23'e göre aktifleştirilecek borçlanma maliyeti kaç ₺'dir?",
         {
             'A': '150.000 ₺',
             'B': '900.000 ₺',
@@ -414,7 +414,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0030': patch(
-        "Volkan A.Ş. inşası yıl boyunca süren bir özellikli varlık için 1 Ocak 2026'da 2.000.000 ₺ tutarında, yıllık %30 faizli özel bir kredi kullanmış ve bu tutarı aynı gün harcamıştır. Varlık için ayrıca yılın son 6 ayında varlıkta kalan 1.200.000 ₺ tutarında ek harcama genel borçlanmalardan karşılanmıştır. Genel borçlanmaların aktifleştirme oranı %25'dir ve sınırı aşan bir durum yoktur.\n\nTMS 23'e göre 2026 yılında aktifleştirilecek toplam borçlanma maliyeti kaç ₺'dir?",
+        "Volkan A.Ş. inşası yıl boyunca süren bir özellikli varlık için 1 Ocak 2026'da 2.000.000 ₺ tutarında, yıllık %30 faizli özel bir kredi kullanmış ve bu tutarı aynı gün harcamıştır. Varlık için ayrıca yılın son 6 ayında varlıkta kalan 1.200.000 ₺ tutarında ek harcama genel borçlanmalardan karşılanmıştır. Genel borçlanmaların aktifleştirme oranı %25'tir ve sınırı aşan bir durum yoktur.\n\nTMS 23'e göre 2026 yılında aktifleştirilecek toplam borçlanma maliyeti kaç ₺'dir?",
         {
             'A': '600.000 ₺',
             'B': '900.000 ₺',
@@ -440,7 +440,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0032': patch(
-        "Yayla A.Ş.'nin yıl boyunca inşası süren hastane projesi iki kaynaktan finanse edilmiştir: yıl başında alınıp hemen harcanan 3.000.000 ₺ tutarındaki %20 faizli proje kredisi ve yılın son 3 ayında varlıkta kalan, genel fonlardan karşılanan 2.400.000 ₺. Genel fonların aktifleştirme oranı %30'dir.\n\nHastanenin maliyetine eklenecek toplam borçlanma maliyeti kaç ₺'dir?",
+        "Yayla A.Ş.'nin yıl boyunca inşası süren hastane projesi iki kaynaktan finanse edilmiştir: yıl başında alınıp hemen harcanan 3.000.000 ₺ tutarındaki %20 faizli proje kredisi ve yılın son 3 ayında varlıkta kalan, genel fonlardan karşılanan 2.400.000 ₺. Genel fonların aktifleştirme oranı %30'dur.\n\nHastanenin maliyetine eklenecek toplam borçlanma maliyeti kaç ₺'dir?",
         {
             'A': '600.000 ₺',
             'B': '1.620.000 ₺',
@@ -765,7 +765,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0057': patch(
-        "Akdeniz A.Ş.'nin bir liman yapımı için genel fonlardan yaptığı harcamalar şöyledir:\n\n- 1 Ocak 2026: 2.400.000 ₺\n- 1 Temmuz 2026: 1.200.000 ₺\n\nLiman yıl sonunda tamamlanmamıştır. Aktifleştirme oranı %25'dir ve katlanılan borçlanma maliyeti sınırı aşılmamaktadır.\n\nLimanın maliyetine eklenecek tutar kaç ₺'dir?",
+        "Akdeniz A.Ş.'nin bir liman yapımı için genel fonlardan yaptığı harcamalar şöyledir:\n\n- 1 Ocak 2026: 2.400.000 ₺\n- 1 Temmuz 2026: 1.200.000 ₺\n\nLiman yıl sonunda tamamlanmamıştır. Aktifleştirme oranı %25'tir ve katlanılan borçlanma maliyeti sınırı aşılmamaktadır.\n\nLimanın maliyetine eklenecek tutar kaç ₺'dir?",
         {
             'A': '900.000 ₺',
             'B': '600.000 ₺',

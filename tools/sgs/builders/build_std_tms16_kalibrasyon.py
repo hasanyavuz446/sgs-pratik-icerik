@@ -454,6 +454,17 @@ PATCHES = {
         'C',
         'TMS 16 par. 73: açıklanacaklar; ölçüm esasları, amortisman yöntemleri, faydalı ömürler veya oranlar, dönem başı ve sonu brüt defter değeri ile birikmiş amortisman ve dönem içi hareketlerin mutabakatıdır. Tedarikçi unvanları standartta yer almaz.',
     ),
+    # A şıkkı yalnız 'Aktifleştirilir' idi (eski kısaltma artığı, soruyla ilgisiz);
+    # par. 17(b) saha hazırlama maliyetiyle değiştirildi — maliyete DÂHİL edilen bir kalem.
+    'std-tms16-gen-0006': {
+        'options': {
+            'D': 'Yeni ürünün tanıtımına ilişkin reklam maliyetleri',
+            'A': 'Kurulum alanının hazırlanmasına ilişkin maliyetler',
+            'B': 'Varlığın işletmeye taşınmasına ilişkin olarak katlanılan nakliye ve sigorta niteliğindeki maliyetler',
+            'C': 'Varlığın gerektiği gibi çalışıp çalışmadığının sınanmasına ilişkin test niteliğindeki maliyet tutarları',
+            'E': 'Varlığın kurulumunda görev alan çalışanlara sağlanan faydalardan doğan maliyet niteliğindeki tutarlar',
+        },
+    },
 }
 
 

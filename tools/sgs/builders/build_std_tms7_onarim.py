@@ -685,7 +685,7 @@ _PATCHES = {
         {
             'A': 'Gelir vergisi ödemeleri yatırım faaliyeti olarak sınıflandırılır',
             'B': 'Kural olarak işletme faaliyeti olarak sınıflandırılır; yatırım veya finansmanla ilişkilendirilebiliyorsa o bölümde gösterilir',
-            'C': 'Gelir vergisi ödemeleri ve istisnasız finansman faaliyeti olarak sınıflandırılır; işletme faaliyetiyle ilişkilendirilmeleri mümkün değildir',
+            'C': 'Gelir vergisi ödemeleri finansman faaliyeti olarak sınıflandırılır; işletme faaliyetiyle ilişkilendirilmeleri mümkün değildir',
             'D': 'Gelir vergisi ödemeleri tabloda gösterilmez, gelir tablosunda yer alır',
             'E': 'Gelir vergisi ödemeleri üç bölüme eşit olarak paylaştırılarak raporlanır',
         },

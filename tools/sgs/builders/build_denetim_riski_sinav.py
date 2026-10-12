@@ -453,7 +453,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0033': patch(
-        "Denetçi, satış hasılatı için yapısal riski %80, kontrol riskini %50 olarak değerlendirmiştir. Kabul edilebilir denetim riski %4'tir.\n\nDenetim riski modeline göre kabul edilebilir tespit riski yüzde kaçtır?",
+        "Denetçi, satış hasılatı için yapısal riski %80, kontrol riskini %50 olarak değerlendirmiştir. Kabul edilebilir denetim riski %4'tür.\n\nDenetim riski modeline göre kabul edilebilir tespit riski yüzde kaçtır?",
         {
             'A': '%60',
             'B': '%40',

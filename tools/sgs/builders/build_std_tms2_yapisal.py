@@ -46,7 +46,7 @@ _PATCHES = {
             'E': 'Satılmak üzere alınan giysiler',
         },
         'B',
-        "TMS 2 p. 2(c)'ye göre **tarımsal faaliyetle ilgili biyolojik varlıklar** ve hasat noktasındaki tarımsal ürünler TMS 41 kapsamındadır; hasattan sonraki ürünler TMS 2'ye girer. Satmak için inşa edilen konutlar gayrimenkul şirketinin stokudur.",
+        "TMS 2 p. 2(c)'ye göre **tarımsal faaliyetle ilgili biyolojik varlıklar** (meyve ağaçları gibi taşıyıcı bitkiler TMS 16, diğerleri TMS 41) ve hasat noktasındaki tarımsal ürünler TMS 2'nin kapsamı dışındadır; hasattan sonraki ürünler TMS 2'ye girer. Satmak için inşa edilen konutlar gayrimenkul şirketinin stokudur.",
         'TMS 2 p. 2-3',
     ),
     # düzey 3
@@ -368,7 +368,7 @@ _PATCHES = {
             'E': '12.000',
         },
         'C',
-        "Dönem sonunda 1.500 birim kalır. FIFO'da ilk giren ilk çıktığından kalan birimler **en son alışlardan** oluşur: 1.500 × 12 = **17.000 ₺**.",
+        "Dönem sonunda 1.500 birim kalır. FIFO'da ilk giren ilk çıktığından kalan birimler **en son alışlardan** oluşur: 1.000 × 12 + 500 × 10 = **17.000 ₺**.",
         'TMS 2 p. 25-27',
     ),
     # düzey 2

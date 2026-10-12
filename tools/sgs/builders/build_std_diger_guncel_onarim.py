@@ -494,7 +494,7 @@ _PATCHES = {
             'E': 'Şerefiyeden indirim olarak',
         },
         'A',
-        'TFRS 3 par. 34-36: edinilen net tanımlanabilir varlıkların gerçeğe uygun değeri transfer edilen bedeli aşıyorsa fark pazarlıklı satın alım kazancıdır. Edenen işletme önce ölçüm ve tanımlamaları yeniden gözden geçirir, kazanç doğruluyorsa edinim tarihinde kâr veya zarara yansıtır.',
+        'TFRS 3 par. 34-36: edinilen net tanımlanabilir varlıkların gerçeğe uygun değeri transfer edilen bedeli aşıyorsa fark pazarlıklı satın alım kazancıdır. Edinen işletme önce ölçüm ve tanımlamaları yeniden gözden geçirir, kazanç doğruluyorsa edinim tarihinde kâr veya zarara yansıtır.',
         'TFRS 3 par. 34-36',
     ),
     # düzey 3

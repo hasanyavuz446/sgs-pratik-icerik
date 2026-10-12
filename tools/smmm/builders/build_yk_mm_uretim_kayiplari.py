@@ -229,7 +229,7 @@ P.q(R,
     "Olağan dışı zarar olarak yazılır.",
     ["Sağlam ürünlerin maliyetine eklenir.",
      "Genel üretim giderlerine eklenir.",
-     "Ikinci kalite stoklara eklenir.",
+     "İkinci kalite stoklara eklenir.",
      "Gelecek dönemlere ertelenir."],
     "Anormal ıskartaların net satış değeri stoka alınır, maliyet ile net satış değeri arasındaki fark üretim maliyetine "
     "yüklenmez; olağan dışı zarar olarak dönem gideri yazılır.", zorluk="hard")

@@ -66,9 +66,24 @@ HERHALDE = re.compile(r"^[Hh]er\s+hâlde\s+|^[Hh]er\s+halde\s+")
 # Cümle içinde de geçiyor (866 çeldirici / 5 doğru şık = 173x asimetri).
 # Zarf tümleci olduğu için silinmesi dilbilgisel olarak güvenlidir.
 HERHALDE_ICI = re.compile(r"\s+[Hh]er\s+(?:hâlde|halde)\s+")
+# 'Her hâlde ve istisnasız X' kalıbında yalnız 'her hâlde' silinince şık
+# 'Ve istisnasız X' / 'Artış ve istisnasız X' diye bozuk kalıyordu (9 şık,
+# 2026-10-09 ücretli içerik taramasında bulundu). Artık ikisi birlikte gider.
+VE_ISTISNASIZ = re.compile(r"^[Vv]e\s+istisnasız\s+|\s+ve\s+istisnasız\s+")
 NITELIK = re.compile(r"\s+niteliğinde(?:ki)?\s+\w+\s+kalemlerinin\s+(?:tümü|tamamı)\b")
 NITELIK2 = re.compile(r"\s+niteliğinde(?:ki)?\s+(?:varlık|kaynak|kalem)\w*\s+(?:kalemler|kalemleri)?\s*")
 ZORUNDA_SON = re.compile(r"\s+zorunda\s+(?:tutulmuş bulunur|bırakılmış bulunur|tutulmuştur|bırakılmıştır)\.?$")
+
+
+def _buyut(c: str) -> str:
+    """Türkçe büyük harf: Python 'i'.upper() → 'I' verir, doğrusu 'İ'."""
+    return {"i": "İ", "ı": "I"}.get(c, c.upper())
+
+
+# _buyut'tan önce 'i' ile başlayan şıklar 'I' ile büyütülmüştü (Iki, Işletmenin,
+# Itfa — 2026-10-09 taramasında bulundu). Yalnız bu bozuk başlangıçlar onarılır;
+# 'Irak', 'Işık', 'Islak' gibi doğru I'lı sözcüklere dokunulmaz.
+NOKTASIZ_I = re.compile(r"^I(?=(?:ki|şletme|tfa)\b|(?:şletme|tfa)\w)")
 
 
 def temizle(s: str, tam: bool = True) -> tuple[str, list[str]]:
@@ -94,14 +109,14 @@ def temizle(s: str, tam: bool = True) -> tuple[str, list[str]]:
         yeni = re.sub(r"\s{2,}", " ", yeni)
         yeni = re.sub(r"\s+([;,.])", r"\1", yeni)
         if yeni and yeni[0].islower():
-            yeni = yeni[0].upper() + yeni[1:]
+            yeni = _buyut(yeni[0]) + yeni[1:]
         o = yeni
         kurallar.append("pekiştireç")
 
     if HERHALDE.search(o):
         yeni = HERHALDE.sub("", o).strip()
         if yeni and yeni[0].islower():
-            yeni = yeni[0].upper() + yeni[1:]
+            yeni = _buyut(yeni[0]) + yeni[1:]
         o = yeni
         kurallar.append("her-hâlde")
 
@@ -109,12 +124,23 @@ def temizle(s: str, tam: bool = True) -> tuple[str, list[str]]:
         o = HERHALDE_ICI.sub(" ", o).strip()
         kurallar.append("her-hâlde-içi")
 
+    if VE_ISTISNASIZ.search(o):
+        yeni = VE_ISTISNASIZ.sub(" ", o).strip()
+        if yeni and yeni[0].islower():
+            yeni = _buyut(yeni[0]) + yeni[1:]
+        o = yeni
+        kurallar.append("ve-istisnasız")
+
     if NITELIK.search(o):
         o = NITELIK.sub("", o)
         kurallar.append("nitelik")
     elif NITELIK2.search(o):
         o = NITELIK2.sub(" ", o)
         kurallar.append("nitelik2")
+
+    if NOKTASIZ_I.search(o):
+        o = NOKTASIZ_I.sub("İ", o)
+        kurallar.append("noktasız-I")
 
     o = re.sub(r"\s{2,}", " ", o).strip()
     return o, kurallar

@@ -466,6 +466,16 @@ PATCHES = {
         'A',
         "TMS 21 par. 11 ve 39: her işletmenin geçerli para birimi kendi işlem koşullarına göre belirlenir; bağlı ortaklık ana ortaklığın para birimini benimsemek durumunda değildir. Konsolidasyonda tablolar par. 39'a göre çevrilir ve farklar diğer kapsamlı gelire alınır.",
     ),
+    # C şıkkında 'yapır' yazım hatası (eski dolgu temizliği artığı).
+    'std-tms21-gen-0016': {
+        'options': {
+            'E': 'Değişiklik tarihindeki kur kullanılarak tüm kalemler yeni para birimine çevrilir; ileriye dönük uygulanır',
+            'A': 'Değişiklik geriye dönük uygulanır ve karşılaştırmalı tutarlar yeniden düzenlenir',
+            'B': 'Değişiklik hâlinde geçmişe dönük tam bir yeniden düzenleme yapılır; önceki tüm dönemlerin tutarları yeni geçerli para birimi cinsinden baştan hesaplanır',
+            'C': 'Değişiklik hâlinde işletme her hâlde önceki dönem hatası düzeltmesi yapar',
+            'D': 'Geçmiş dönem karşılaştırmalı tutarları da yeni para birimine çevrilir',
+        },
+    },
 }
 
 

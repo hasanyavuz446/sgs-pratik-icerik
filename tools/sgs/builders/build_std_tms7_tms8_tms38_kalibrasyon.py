@@ -163,6 +163,20 @@ FULL_PATCHES = {
 }
 
 
+# Eski kısaltma turundan (rebalance_standartlar) kalan, soruya cevap olmayan
+# tek-sözcüklük çeldiriciler (2026-10-09 ücretli içerik taraması). Yerlerine
+# aynı soruya ait, standarda dayalı gerçek çeldiriciler konur.
+OPTION_PATCHES = {
+    "tms_38_modv": {
+        # Kök: maliyete DÂHİL EDİLMEYEN hangisi? Hukuki tescil harcaması dâhildir (par. 28).
+        "std-tms38-gen-0011": {"A": "Varlığın tescili için ödenen hukuki harcamalar"},
+        "std-tms38-gen-0012": {"B": "Eğitim harcamaları aktifleştirilir"},
+        # Kök: geliştirme faaliyeti örneği hangisi? Yeni bilgi arayışı araştırmadır (par. 56).
+        "std-tms38-gen-0026": {"A": "Yeni bilgi elde etmeye yönelik laboratuvar çalışmaları"},
+    },
+}
+
+
 def transformed(question: dict, topic: str) -> dict:
     result = json.loads(json.dumps(question, ensure_ascii=False))
     qid = result["id"]
@@ -171,6 +185,8 @@ def transformed(question: dict, topic: str) -> dict:
         result["stem"] = STEMS[topic][qid]
     if qid in FULL_PATCHES[topic]:
         result.update(FULL_PATCHES[topic][qid])
+    for letter, text in OPTION_PATCHES.get(topic, {}).get(qid, {}).items():
+        result["options"][letter] = text
 
     result["stem"] = TL_WORD.sub("₺", TL.sub(r"\1 ₺", result["stem"]))
     result["solution"] = ANSWER_TAIL.sub(

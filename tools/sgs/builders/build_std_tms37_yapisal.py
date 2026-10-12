@@ -625,7 +625,7 @@ _PATCHES = {
     ),
     # düzey 3
     '0043': patch(
-        "Bir işletme dönem içinde 1.000.000 ₺ garantili satış yapmıştır. Geçmiş deneyime göre ürünlerin %75'i kusursuz olacak, %20'inde küçük kusurlar çıkacak (tamamında küçük kusur olsaydı onarım maliyeti 100.000 ₺ olurdu), %5'inde büyük kusurlar çıkacaktır (tamamında büyük kusur olsaydı maliyet 400.000 ₺ olurdu). Garanti karşılığı kaç ₺'dir?",
+        "Bir işletme dönem içinde 1.000.000 ₺ garantili satış yapmıştır. Geçmiş deneyime göre ürünlerin %75'i kusursuz olacak, %20'sinde küçük kusurlar çıkacak (tamamında küçük kusur olsaydı onarım maliyeti 100.000 ₺ olurdu), %5'inde büyük kusurlar çıkacaktır (tamamında büyük kusur olsaydı maliyet 400.000 ₺ olurdu). Garanti karşılığı kaç ₺'dir?",
         {
             'A': '250.000',
             'B': '100.000',

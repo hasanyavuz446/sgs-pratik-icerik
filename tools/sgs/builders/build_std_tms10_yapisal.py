@@ -60,7 +60,7 @@ _PATCHES = {
             'E': '30.000',
         },
         'E',
-        "TMS 10 p. 9(b)(ii)'ye göre raporlama döneminden sonra stokların satışı, dönem sonundaki net gerçekleşebilir değere ilişkin kanıt sağlayan **düzeltme gerektiren olaydır**. NGD 215.000 − 5.000 = 210.000 ₺; karşılık 240.000 − 210.000 = **30.000 ₺** olmalıdır (ayrılan karşılık -10.000 ₺ azaltılır).",
+        "TMS 10 p. 9(b)(ii)'ye göre raporlama döneminden sonra stokların satışı, dönem sonundaki net gerçekleşebilir değere ilişkin kanıt sağlayan **düzeltme gerektiren olaydır**. NGD 215.000 − 5.000 = 210.000 ₺; karşılık 240.000 − 210.000 = **30.000 ₺** olmalıdır (ayrılan 40.000 ₺ karşılık 10.000 ₺ azaltılır).",
         'TMS 10 p. 9(b)(ii); TMS 2 p. 30',
     ),
     # düzey 3
